@@ -1,0 +1,94 @@
+Debugging log of Inform 7
+Inform called as: /Applications/Inform.app_old.app/Contents/MacOS/ni -internal /Applications/Inform.app_old.app/Contents/Resources/Internal -external /Users/rileypb/Library/Inform -project /Users/rileypb/dev/Inform/BOSH/BOSH1_v10.inform -format=ulx
+Found language bundle 'German' (built in)
+Found language bundle 'Italian' (built in)
+Found language bundle 'English' (built in)
+Found language bundle 'French' (built in)
+Found language bundle 'Swedish' (built in)
+Found language bundle 'Spanish' (built in)
+Reading language definition from </Applications/Inform.app_old.app/Contents/Resources/Internal/Languages/English/Syntax.preform>
+720 declarations read (14183 words)
+
+
+-----------------------------------------------------
+Phase I ... Lexical analysis
+-----------------------------------------------------
+
+I've now read your source text, which is 8206 words long.
+
+
+-----------------------------------------------------
+Phase II ... Semantic analysis Ia
+-----------------------------------------------------
+
+I've also read Standard Rules by Graham Nelson, which is 42655 words long.
+I've also read English Language by Graham Nelson, which is 2297 words long.
+I've also read Epistemology by Eric Eve, which is 1500 words long.
+I've also read Conversation Framework by Eric Eve, which is 5136 words long.
+I've also read Conversation Responses by Eric Eve, which is 1855 words long.
+I've also read Conversational Defaults by Eric Eve, which is 2247 words long.
+I've also read Basic Screen Effects by Emily Short, which is 2218 words long.
+I've also read Punctuation Removal by Emily Short, which is 906 words long.
+I've also read Glulx Text Effects by Emily Short, which is 2182 words long.
+I've also read Formatting Capture by Daniel Stelzer, which is 670 words long.
+I've also read Essentials by Philip Riley, which is 849 words long.
+I've also read Facts by Philip Riley, which is 175 words long.
+I've also read Phones by Philip Riley, which is 1845 words long.
+I've also read Commerce by Philip Riley, which is 665 words long.
+I've also read Texting by Philip Riley, which is 770 words long.
+I've also read Computers by Philip Riley, which is 388 words long.
+I've also read Furniture by Philip Riley, which is 74 words long.
+I've also read Third Person Narration by Philip Riley, which is 670 words long.
+I've also read Door Utils by Philip Riley, which is 41 words long.
+I've also read Real People by Philip Riley, which is 397 words long.
+I've also read Early Declarations by Philip Riley, which is 16 words long.
+I've also read Cars by Philip Riley, which is 438 words long.
+I've also read Farseeing by Philip Riley, which is 78 words long.
+I've also read House by Philip Riley, which is 1188 words long.
+I've also read Basics by Philip Riley, which is 158 words long.
+I've also read Memories by Philip Riley, which is 220 words long.
+I've also read Hyperspace by Philip Riley, which is 1969 words long.
+I've also read BOSH Facts by Philip Riley, which is 94 words long.
+I've also read Image Strip by Philip Riley, which is 2080 words long.
+I've also read Simple Conversation by Philip Riley, which is 1687 words long.
+I've also read Swamp Park by Philip Riley, which is 1910 words long.
+I've also read Conversations General by Philip Riley, which is 129 words long.
+I've also read Margaret by Philip Riley, which is 949 words long.
+Author: philip riley
+Title: inclusive gender options
+Problem PM_BogusExtension issued from inform7/Chapter 12/Read Source Text.w, line 143
+
+  >--> I can't find the extension 'Inclusive Gender Options by Philip Riley',
+    which seems not to be installed, but was requested by: 'Include Inclusive
+    Gender Options by Philip Riley' (source text, line 46). You can get hold
+    of extensions which people have made public at the Inform website,
+    www.inform7.com, or by using the Public Library in the Extensions panel.
+
+
+
+-----------------------------------------------------
+Phase III ... Compilation now complete
+-----------------------------------------------------
+
+Total of 3 files written as streams.
+CPU time: 17 centiseconds
+
+
+That concludes the debugging log from this run of Inform.
+Its contents were as follows, and can be changed by placing
+text like 'Include property creations in the debugging log.'
+or 'Omit everything from the debugging log.' in the source.
+
+Included:
+  debugging log contents  debugging log inclusions
+Omitted:
+  action creations   action pattern compilation  action pattern parsing  assemblies    assertions    case insensitive filehandling
+  conditions    constructed past participles  constructed plurals   description compilation   excerpt meanings   excerpt parsing 
+  expressions    extensions census   figure creations   grammar    grammar construction   headings  
+  implications    inferences    kind changes   kind checking   kind creations   lexical output 
+  local variables   matching    meaning list allocation  memory allocation   noun resolution   object compilation 
+  object creations   object tree   phrase comparisons   phrase compilation   phrase creations   phrase registration 
+  phrase usage   predicate calculus   predicate calculus workings  pronouns    property creations   property provision 
+  property translations   relation definitions   rule attachments   rulebook compilation   spatial map   spatial map workings
+  specification permissions   specification usage   specificities    table construction   template reading   text substitutions 
+  time periods   variable creations   verifications    vocabulary  
