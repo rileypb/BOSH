@@ -73,10 +73,12 @@ Carry out accounting:
 	repeat with card running through cards:
 		now B is B plus the balance of card;
 	say "You have [B]."
+	
+To belong is a verb.
 
 Check taking something (called target):
 	if someone owns the target and the player does not own the target:
-		say "That's not yours." instead;
+		say "[regarding the target][Those] [belong] to [the owner of the noun]." instead;
 		
 Attributing it is an action applying to one visible thing. Understand "Who owns [thing]" as Attributing it.
 

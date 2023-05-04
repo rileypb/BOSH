@@ -72,9 +72,9 @@ An availability rule for for-a-screwdriver:
 		
 to unlock the backdoor is a questioning quip. 
 	Understand "back/door" as to unlock the backdoor.
-	It mentions the back door.
+	It mentions the BOSH back door.
 	The comment is "[We] [ask], 'Could you unlock the back door, Margaret?'".
-	The reply is "'Sorry, too busy right now. What do you want back there anyway? There's only a dumpster.'"
+	The reply is "'Sorry, too busy right now. What do you want back there anyway? There's only a dumpster.' She pauses for a moment and mutters to herself. 'Which reminds me, I need to get these boxes broken down.'"
 	It quip-supplies Margaret.
 	
 An availability rule for to unlock the backdoor:
@@ -102,18 +102,18 @@ Rule for behaving as Margaret when the current behavior of Margaret is throw out
 			try margaret going east;
 	otherwise if Margaret is in Biff's Office:
 		if margaret carries margaret-flattened-boxes:
-			 if back door is locked:
-				try margaret unlocking the back door with the white key;
+			 if BOSH back door is locked:
+				try margaret unlocking the BOSH back door with the white key;				
 			otherwise:
 				try margaret going west;
 		otherwise:
-			if the back door is closed and the back door is locked:
+			if the BOSH back door is closed and the BOSH back door is locked:
 				try margaret going north;
 			otherwise:
-				if the back door is open:
-					try margaret closing the back door;
+				if the BOSH back door is open:
+					try margaret closing the BOSH back door;
 				if the door is unlocked:
-					try margaret locking the back door with the white key;
+					try margaret locking the BOSH back door with the white key;
 	otherwise if margaret is in the office hallway:
 		if margaret carries margaret-flattened-boxes:
 			try margaret going south;

@@ -34,6 +34,7 @@ picture 18 "/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.materials/Figures/location_
 picture 19 "/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.materials/Figures/location_bosh.png"
 picture 20 "/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.materials/Figures/location_lil_nectarine.png"
 picture 21 "/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.materials/Figures/location_laundromat.png"
+picture 22 "/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.materials/Figures/location_white_tunnel.png"
 
 ! Placeholder variables
 
@@ -64,9 +65,9 @@ template path "/Users/rileypb/Library/Inform/Templates"
 template path "/Applications/Inform.app_old.app/Contents/Resources/Internal/Templates"
 css
 website "Standard"
-status instruction ||&nbsp;<a href="source:story.ni#line47"><img border=0 src=inform:/doc_images/Reveal.tif></a>||
-status instruction ||&nbsp;<a href="source:story.ni#line48"><img border=0 src=inform:/doc_images/Reveal.tif></a>||
 status instruction ||&nbsp;<a href="source:story.ni#line49"><img border=0 src=inform:/doc_images/Reveal.tif></a>||
+status instruction ||&nbsp;<a href="source:story.ni#line50"><img border=0 src=inform:/doc_images/Reveal.tif></a>||
+status instruction ||&nbsp;<a href="source:story.ni#line51"><img border=0 src=inform:/doc_images/Reveal.tif></a>||
 status alternative ||Using 'Release along with a file of "Such-and-Such" called "whatever.pdf"', perhaps to add a manual, or a welcoming note&nbsp;<a href=inform:/doc401.html><img border=0 src=inform:/doc_images/help.png></a>||
 status alternative ||Using 'Release along with the source text'&nbsp;<a href=inform:/doc412.html><img border=0 src=inform:/doc_images/help.png></a>||
 status alternative ||Using 'Release along with a solution'&nbsp;<a href=inform:/doc411.html><img border=0 src=inform:/doc_images/help.png></a>||

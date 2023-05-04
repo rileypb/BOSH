@@ -24,6 +24,8 @@ Include Third Person Narration by Philip Riley.
 Include Door Utils by Philip Riley.
 Include Real People by Philip Riley.
 
+Include New Light by Philip Riley.
+
 Include Early Declarations by Philip Riley.
  
 Include Farseeing by Philip Riley.
@@ -64,15 +66,15 @@ Ezra Gaunt is a man in the Room of Stuff. The description is "[regarding Ezra Ga
 Petula Goldberg is a woman in the Room of Stuff. The description is "[regarding Petula Goldberg]Agent [we] [have] lots of dogs, a fact which can be inferred by the inevitable fur somewhere on [our] person. The last front office worker at the Bureau left due to an extreme allergic reaction to [Goldberg].".
 Larch Faraji is a nonbinary in the Room of Stuff. The third singular pronoun is singular-they-pronoun. The description is "[regarding Larch Faraji]Agent [we]". 
  
- 
+  
   
 Play mode is a kind of value. The play modes are _startup, _normal, and picking character.
 The current play mode is a play mode that varies. The current play mode is initially _startup. 
 
 [If we put all the subjects in the world, we can refer to them.]
-When play begins: 
+When play begins:  
 	now the story viewpoint is third person singular;
-	Repeat with S running through subjects: 
+	Repeat with S running through subjects:  
 		move S to the Room of Subjects;
 	[Repeat with F running through facts:
 		move F to the Room of Subjects; ]
@@ -80,9 +82,9 @@ When play begins:
 	say "Open on a drab office with decor dating to the mid-eighties. The DHS assistant to the associate sub-director looks longingly at the office clock nearing five, then leans across the desk and impatiently states his demands:[paragraph break]";
 	say "'First name, last name, pronouns, biographical trivia?'[paragraph break]";  
 	say "(1) Ezra Gaunt (he/him), winner of the 2006 Baltimore County Edgar Allan Poe Trivia Competition;[paragraph break]";
-	say "(2) Petula Clark Goldberg (she/her), former award-winning dog trainer of the avant-garde school;[paragraph break]";
-	say "or (3) Larch Faraji (they/them), lead singer of the third-wave-neo-old-school-punk band DC Trash.";
-	now current play mode is picking character;
+	say "(2) Petula Clark Goldberg (she/her), former award-winning dog groomer of the avant-garde school;[paragraph break]";
+	say "or (3) Larch Faraji (they/them), lead singer of the third wave neo-old-school punk band DC Trash.";
+	now current play mode is picking character; 
 	follow the current graphics drawing rule;
 	[now the quip-suggestion-phrase is "[special style 2][Player's surname] could ";]
 	if DEBUG is false:		
@@ -106,7 +108,7 @@ To survey is a verb. To wrinkle is a verb.
 
 Intro Text is always "As an agent of the Bureau of Strange Happenings (BOSH), it is Agent [player's full name]'s job to investigate unexplained phenomena throughout the United States and its territories. Recently, however, business hasn't been good. Once a bustling office with a dozen Agents, the Bureau's been reduced to just three: [Player's surname], Moira Zin, and Chief Huffton Klimp. The Bureau's expansive and well-appointed office suite was taken over by the State Department Book Club, and now the agents are consigned to a tiny suite in a strip mall in the remote D.C. suburb of Swamp Park, Maryland.
 	
-	We open on a decrepit strip mall just as an aging Hyundai pulls into the potholed parking lot. [agent] steps out of the car. [We] [survey] the area and [wrinkle] [our] nose.[paragraph break]"
+	We open on a decrepit strip mall just as an aging Hyundai pulls into the potholed parking lot. [agent] steps out of the car. [We] [survey] the area and [wrinkle] [our] nose.[paragraph break]".
 
 	
 [
@@ -125,7 +127,7 @@ After reading a command when current play mode is picking character:
 		now the player is Ezra Gaunt;
 		now player's forename is "Ezra";
 		now player's full name is "Ezra Gaunt";
-		now player's surname is "Gaunt"; 
+		now player's surname is "Gaunt";  
 	otherwise if the player's command matches "2":
 		now the player is Petula Goldberg;
 		now player's forename is "Petula";
@@ -311,8 +313,8 @@ Report knocking on a door:
 
 Book 8 - Script
 
-[After the phone call is a scene. After the phone call begins when the] 
-
+Klimp in the office is a scene. Klimp in the office begins when Chief Huffton Klimp is in BOSH chief's office.
+Moira in the office is a scene. Moira in the office begins when Moira Zin is in Moira's office.
 
 Book 9 - Concepts
 
@@ -366,6 +368,10 @@ Response of Klimp when asked about the Bureau of Strange Happenings:
 
 Response of Klimp when asked about Senator Savra:
 	say "Klimp stops short of actually spitting. 'The lowest of the low.'";
+	
+[Every turn when the location is BOSH chief's office for the first time:
+	say "Klimp looks annoyed. 'What's with that phone ringing? Someone answer it.'"
+	continue the action;]
 
 klimp is familiar. The help text of klimp is "Chief Huffton Klimp, the erstwhile head of [our] poor little bureau.".
 
@@ -516,20 +522,22 @@ Section 2 - Back Lot
 
 The back lot is a room. It is in BOSH HQ.
 
-The back door is a door. The printed name is "white metal door". Understand "backdoor/white/metal" as back door. It is west of biff's office and east of back lot. It is scenery. It is closed, locked, lockable, and openable. "An unremarkable metal door painted white. [state of back door][run paragraph on]".
+The BOSH back door is a door. The printed name is "white metal door". Understand "backdoor/white/metal" as BOSH back door. It is west of biff's office and east of back lot. It is scenery. It is closed, locked, lockable, and openable. "An unremarkable metal door painted white. [state of BOSH back door][run paragraph on]".
 
-Before opening back door when back door is locked:
+Before opening BOSH back door when BOSH back door is locked:
 	now player knows back-door-is-locked;
 
 The white key is in the room of stuff.
 
-The back door has matching key the white key.
+The BOSH back door has matching key the white key.
 When play begins:
 	now Margaret carries the white key.
 	
-The description of the back lot is "This is a small area of asphalt between building and a chain link fence looking in on an industrial property. There is a blue dumpster here."
+The laundromat back door is a door. It is north of back lot and south of the laundromat back room. It is scenery. It is closed, locked, lockable, and openable. "An unremarkable metal door painted white. It is closed.[run paragraph on]" 
 
-The dumpster is scenery in the back lot. "An everyday blue dumpster, about seven feet high."
+The description of the back lot is "This is a small area of asphalt between the building and a chain link fence looking in on an industrial property. A door to east leads into the BOSH offices, and one to the north enters the laundromat. There is a blue dumpster here."
+
+The dumpster is scenery in the back lot. "An everyday blue dumpster, about six feet high."
 
 Instead of an actor inserting biff-flattened-boxes into the dumpster:
 	now the biff-flattened-boxes are in the room of stuff;
@@ -548,10 +556,10 @@ Instead of an actor inserting margaret-flattened-boxes into the dumpster:
 locking-back-door is a behavior. waiting-for-player is a behavior.
 		
 Rule for behaving as margaret when the the current behavior of margaret is locking-back-door:
-	if back door is open:
-		try margaret closing back door;
-	if back door is unlocked:
-		try margaret locking back door with the white key;
+	if BOSH back door is open:
+		try margaret closing BOSH back door;
+	if BOSH back door is unlocked:
+		try margaret locking BOSH back door with the white key;
 	remove behavior from margaret;
 	
 Rule for behaving as margaret when the the current behavior of margaret is waiting-for-player:
@@ -559,30 +567,28 @@ Rule for behaving as margaret when the the current behavior of margaret is waiti
 	if the location is not the back lot: 
 		remove behavior from margaret;
 
-Carry out knocking on the back door when the location is the back lot and the back door is locked:
+Carry out knocking on the BOSH back door when the location is the back lot and the BOSH back door is locked:
 	move margaret to biff's office;
-	try margaret unlocking the back door with the white key; 
-	try margaret opening the back door;
+	try margaret unlocking the BOSH back door with the white key; 
+	try margaret opening the BOSH back door;
 	now the target location of margaret is the front office;
 	clear behavior of margaret;
 	add behavior walking-to to margaret;
 	add behavior locking-back-door to margaret;
 	add behavior waiting-for-player to margaret;
 	
-Report knocking on the back door when the location is the back lot and the back door was locked:
+Report knocking on the BOSH back door when the location is the back lot and the BOSH back door was locked:
 	say "You hear the door being unlocked, and then Margaret pops her head out. 'Seriously, [Agent]? You got yourself locked out? Be more careful!'";
 	rule succeeds;
  
 Section 3 - Hallway
 
-Biff's door is a door. It is privately-named. It is scenery. The printed name is "[our] door". It is north of Biff's Office and south of the office hallway. [It is scenery.] It is open. Understand "Faraji's/Goldberg's/Gaunt's/Larch's/Petula's/Ezra's/office/door" as Biff's door. 
-
-Biff's door can be broken. Biff's door is not broken.
+Biff's door is a door. It is privately-named. It is scenery. The printed name is "[our] door". It is north of Biff's Office and south of the BOSH office hallway. It is open. Understand "Faraji's/Goldberg's/Gaunt's/Larch's/Petula's/Ezra's/office/door" as Biff's door. 
 		
-Klimp's door is a door. It is west of the office hallway and east of the Chief's office. It is scenery. It is closed and locked. It is openable and lockable.
-Moira's door is a door. It is north of the office hallway and south of Moira's office. It is scenery. It is closed and locked. It is openable and lockable.
+Klimp's door is a door. It is west of the BOSH office hallway and east of the BOSH chief's office. It is scenery. It is closed and locked. It is openable and lockable.
+Moira's door is a door. It is north of the BOSH office hallway and south of Moira's office. It is scenery. It is closed and locked. It is openable and lockable.
 
-the office hallway is in BOSH HQ. The printed name is "hallway". "[Our] office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east."
+the BOSH office hallway is in BOSH HQ. The printed name is "hallway". "[Our] office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east."
  
  
   
@@ -649,12 +655,14 @@ Instead of opening the heating vent when the heating vent is locked:
 The can't reach inside closed containers rule response (A) is "[if the noun is the heating vent][Our] fingers won't fit through the openings in the vent. [We]'ll have to open it first[otherwise][The noun] [aren't] open[end if]."
 
 
-Section 5 - Chief's Office 
+Section 5 - BOSH chief's office 
 
-the Chief's office is in BOSH HQ.
-"[If the chief's office is not visited]Looks like the Chief [regarding Chief Huffton Klimp]has already moved in.[paragraph break][end if][Chief Huffton Klimp]'s office is full of personality. Shelves strewn with knick-knacks abut a cozy armchair and a mahogany side table supporting a large globe. A bookcase on the north wall is packed with books on paranormal happenings. Garish prints adorn the remaining wall space.  Under one of these is a modernistic desk of glass and chrome, behind which is a very nice black leather swivel chair. There is a computer on the desk, and to its side is an antique wooden file cabinet. To tell the truth, it's all a bit much, but it matches Klimp's personality perfectly. There is an exit to the east."
+the BOSH Chief's office is in BOSH HQ.
+"[If the BOSH chief's office is not visited]Looks like the Chief has already moved in.[paragraph break][end if]Chief Klimp's office is full of character. Shelves strewn with knick-knacks abut a cozy armchair and a mahogany side table supporting a large globe. A bookcase on the north wall is packed with books on paranormal happenings. Garish prints adorn the remaining wall space.  Under one of these is a modernistic desk of glass and chrome, behind which is a very nice black leather swivel chair. There is a computer on the desk, and to its side is an antique wooden file cabinet. To tell the truth, it's all a bit much, but it matches Klimp's personality perfectly. There is an exit to the east.[if klimp is in the location][first time]
 
-The Chief's desk is a supporter in Chief's Office. It is scenery. "This desk is a beautiful assembly of smokey glass and chrome framing. The 'legs' form shelves where Klimp keeps yet more curios. One might wonder where Klimp gets the money."
+[Klimp] says 'What's with that ringing? Someone answer it!'[only]"
+
+The Chief's desk is a supporter in BOSH Chief's Office. It is scenery. "This desk is a beautiful assembly of smokey glass and chrome framing. The 'legs' form shelves where Klimp keeps yet more curios. One might wonder where Klimp gets the money."
 
 Klimp's Computer is a thing on the chief's desk. It is scenery.
 
@@ -662,32 +670,32 @@ The desk shelves are a supporter. They are part of the Chief's desk. They suppor
 
 Klimp owns the dodecahedron.
 
-The black leather swivel chair is a supporter in Chief's Office. It is enterable. It is scenery. "Nice chair. Good lumbar support."
+The black leather swivel chair is a supporter in BOSH Chief's Office. It is enterable. It is scenery. "Nice chair. Good lumbar support."
 
-The globe is a thing in the Chief's office. It is scenery. "The globe is very handsome with lots of intriguing detail. Unfortunately, Klimp has marred it with thumbtacks and string marking the world's 'leylines'."
+The globe is a thing in the BOSH Chief's office. It is scenery. "The globe is very handsome with lots of intriguing detail. Unfortunately, Klimp has marred it with thumbtacks and string marking the world's 'leylines'."
 
-The armchair is a supporter in Chief's Office. It is enterable. It is scenery. "Plush and comfortable with a yellow and red striped design. Absolutely hideous.". Understand "chair" as the armchair.
+The armchair is a supporter in BOSH Chief's Office. It is enterable. It is scenery. "Plush and comfortable with a yellow and red striped design. Absolutely hideous.". Understand "chair" as the armchair.
 
-The mahogany side table is a thing in Chief's Office. It is scenery. "This is a nice piece, quite out of place in the BOSH offices. Flame mahogany with very pretty inlays."
+The mahogany side table is a thing in BOSH Chief's Office. It is scenery. "This is a nice piece, quite out of place in the BOSH offices. Flame mahogany with very pretty inlays."
  
-The bookcase is a thing in Chief's Office. It is scenery. "The Chief's library boasts many interesting titles, from Alton Cherry's [italic type]Waiting for the Aliens[roman type] to Debi Bosworth's [italic type]My Travels in Time[roman type]." Understand "books" as bookcase.
+The bookcase is a thing in BOSH Chief's Office. It is scenery. "The Chief's library boasts many interesting titles, from Alton Cherry's [italic type]Waiting for the Aliens[roman type] to Debi Bosworth's [italic type]My Travels in Time[roman type]." Understand "books" as bookcase.
 
-Waiting-for-the-Aliens is a thing in Chief's Office. The printed name is "Waiting for the Aliens". It is scenery. Understand "Alton/Cherry" as Waiting-for-the-Aliens. "Alton Cherry's [italic type]Waiting for the Aliens[roman type] is a classic of the genre. More a history of publicly-known material than an argument for or against the existence of aliens on earth, it is accessible to believers and non-believers alike."
+Waiting-for-the-Aliens is a thing in BOSH Chief's Office. The printed name is "Waiting for the Aliens". It is scenery. Understand "Alton/Cherry" as Waiting-for-the-Aliens. "Alton Cherry's [italic type]Waiting for the Aliens[roman type] is a classic of the genre. More a history of publicly-known material than an argument for or against the existence of aliens on earth, it is accessible to believers and non-believers alike."
  
-Travels in Time is a thing in Chief's Office. It is scenery. Understand "My Travels in Time" as Travels in Time. Understand "Debi/Bosworth" as Travels in Time. "Debi Bosworth's [italic type]My Travels in Time[roman type] is the account of Ms. Bosworth's alleged travels to the past and future. She is careful to point out that she has never known a man in a blue box."
+Travels in Time is a thing in BOSH Chief's Office. It is scenery. Understand "My Travels in Time" as Travels in Time. Understand "Debi/Bosworth" as Travels in Time. "Debi Bosworth's [italic type]My Travels in Time[roman type] is the account of Ms. Bosworth's alleged travels to the past and future. She is careful to point out that she has never known a man in a blue box."
 
-The Chief's shelves are a supporter in Chief's Office. They are scenery. "These shelves sport an array of oddities and memorabilia."
+The Chief's shelves are a supporter in BOSH Chief's Office. They are scenery. "These shelves sport an array of oddities and memorabilia."
   
 The juvenile sasquatch skull is a thing on the chief's shelves. Chief Klimp owns the skull. The description of the skull is "It looks a bit Neanderthal, actually." 
  
-The antique wooden file cabinet is a container in the Chief's office. It is closed and locked. It is scenery. "Looks like it was taken out of an old library somewhere."
+The antique wooden file cabinet is a container in the BOSH Chief's office. It is closed and locked. It is scenery. "Looks like it was taken out of an old library somewhere."
 
-The prints are scenery in the Chief's office. The description is "There are three prints, the most striking of which is a neon-hued abstract by Diego Ernesto Diaz, the late Mexican painter, titled 'Hora de la Muerte'.".
-
+The prints are scenery in the BOSH Chief's office. The description is "There are three prints, the most striking of which is a neon-hued abstract by Diego Ernesto Diaz, the late Mexican painter, titled 'Hora de la Muerte'.".
+ 
 The oddities are on the chief's shelves. They are scenery. The description is "This and that piece of junk that Klimp thinks is funny or interesting.". Understand "memorabilia", "junk", "stuff" as the oddities.
 
-Every turn when the player is regionally in BOSH HQ and Klimp is regionally in BOSH HQ:
-	say "FOO";
+Some astral lenses are on the chief's shelves. They are plural-named. Chief Klimp owns the astral lenses. The description of the astral lenses is "To all appearances an ordinary pair of glasses, the astral lenses allegedly reveal the existence of extra-dimensional pathways." The astral lenses are wearable.
+Understand "glasses/lens/glass" as astral lenses.
 
 Section 6 - Moira's office
 				 
@@ -746,7 +754,7 @@ After going from a room (called R1) to a room (called R2):
 
 Chapter 1 - Leaving the Front Office
 
-After going from the Front Office to the Office Hallway for the first time:
+After going from the Front Office to the BOSH office hallway for the first time:
 	If the current interlocutor was Margaret: 
 		say "[We] [extricate] [ourselves] from talking with Margaret.";
 	continue the action;
@@ -789,6 +797,7 @@ Figure Pawn Shop is the file "location_pawn_shop.png".
 Figure BOSH is the file "location_bosh.png".
 Figure Store is the file "location_lil_nectarine.png".
 Figure Laundromat is the file "location_laundromat.png".
+Figure White Tunnel is the file "location_white_tunnel.png".
 
 Ezra Gaunt has portrait Figure Gaunt.
 Petula Goldberg has portrait Figure Goldberg.
@@ -811,6 +820,7 @@ To decide which figure name is the picture of the location:
 	if location is in BOSH HQ, now result is Figure BOSH;
 	if location is Li'l Nectarine Convenience Store, now result is Figure Store;
 	if location is in Laundromat-region, now result is Figure Laundromat;
+	If location is astral-tunnel-1 or location is astral-tunnel-2 or location is astral-tunnel-3, now result is Figure White Tunnel;
 	decide on result;
 	
 
@@ -837,8 +847,10 @@ The first glulx picture selection rule (this is the bosh picture selection rule)
 				if the portrait of C is not listed in characters:
 					add the portrait of C to characters;
 			repeat with T running through audible sounds:
-				if the portrait of T is not Figure Null:
-					add the portrait of T to characters;					
+				if the portrait of T is not Figure Null:					
+					add the portrait of T to characters;
+			if could see hypertunnels and the player wears the astral lenses:
+				add Figure White Tunnel to characters;					
 	if the number of entries of characters > 0:
 		now the internally selected picture 1 is entry 1 of characters;
 	if the number of entries of characters > 1:
@@ -872,7 +884,7 @@ Every turn:
 				now bubble count is local count;
 		draw speech bubble;				
 		
-To draw speech bubble:
+To draw speech bubble: 
 	(- DrawSpeechBubble(); -)
 	
 To draw phone handset:
@@ -892,7 +904,7 @@ To call resize function:
 	
 Book 20 - Not For Release
 
-DEBUG is false.
+DEBUG is true.
 
 The access through barriers rule response (A) is "you have run afoul of the access through barriers rule!";
 

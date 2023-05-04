@@ -136,7 +136,7 @@ Chapter 2 - Who is / What is
 A thing has a text called help text.
 
 Identifying is an action applying to one thing.
-Understand "who is [any person]" as identifying.
+Understand "who is [any thing]" as identifying.
 Understand "what is/are [any thing]" as identifying.
 Understand "what is/are [any subject]" as identifying.
 

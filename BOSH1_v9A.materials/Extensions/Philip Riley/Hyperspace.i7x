@@ -2,20 +2,22 @@ Hyperspace by Philip Riley begins here.
 
 Include Third Person Narration by Philip Riley.
 
+Volume 1 - Basics
+
 Hyperspace is a region.
 
-Back is a direction.  The opposite of back is forth. Forth is a direction. The opposite of forth is back. Understand "f" as forth. Understand "b" as back.
+A direction can be hyperspatial.
 
+back is a direction.  It is hyperspatial. The opposite of back is forth. forth is a direction. It is hyperspatial. The opposite of forth is back. Understand "f" as forth. Understand "b" as back.
 
-forthnorth is a direction. Understand "fn" as forthnorth.
-fortheast is a direction. Understand "fe" as fortheast.
-forthsouth is a direction. Understand "fs" as forthsouth.
-forthwest is a direction. Understand "fw" as forthwest.
-backnorth is a direction. Understand "bn" as backnorth.
-backeast is a direction. Understand "be" as backeast.
-backsouth is a direction. Understand "bs" as backsouth.
-backwest is a direction. Understand "bw" as backwest.
-
+forthnorth is a direction. Understand "fn" as forthnorth. It is hyperspatial.
+fortheast is a direction. Understand "fe" as fortheast. It is hyperspatial.
+forthsouth is a direction. Understand "fs" as forthsouth. It is hyperspatial.
+forthwest is a direction. Understand "fw" as forthwest. It is hyperspatial.
+backnorth is a direction. Understand "bn" as backnorth. It is hyperspatial.
+backeast is a direction. Understand "be" as backeast. It is hyperspatial.
+backsouth is a direction. Understand "bs" as backsouth. It is hyperspatial.
+backwest is a direction. Understand "bw" as backwest. It is hyperspatial.
 
 The opposite of forthnorth is backsouth.
 The opposite of fortheast is backwest.
@@ -25,8 +27,6 @@ The opposite of backnorth is forthsouth.
 The opposite of backeast is forthwest.
 The opposite of backsouth is forthnorth.
 The opposite of backwest is fortheast.
-
-test hyper with "test voice / gonear Featureless Hyperplane".
 
 Coordinates of Pillar is always {7, 8, 9}.
 
@@ -40,22 +40,74 @@ After going to hyperspace:
 	now visited hyperspace is true;
 	continue the action.
 
-Check going back:
+[Check going back:
 	if visited hyperspace is true and player is not in hyperspace:
 		say "That direction only exists in hyperspace." instead;
 	otherwise if player is not in hyperspace and player's command includes "go":
 		say "[text of parser error internal rule response (E)][line break]" instead;
 	otherwise if player is not in hyperspace:
-		say "[text of parser error internal rule response (N)][line break]" instead;
+		say "[text of parser error internal rule response (N)][line break]" instead;]
 
-Check going forth:
+[Check going a hyperspatial direction:
 	if visited hyperspace is true and player is not in hyperspace:
 		say "That direction only exists in hyperspace." instead;
 	otherwise if player is not in hyperspace and player's command includes "go":
 		say "[text of parser error internal rule response (E)][line break]" instead;
 	otherwise if player is not in hyperspace:
-		say "[text of parser error internal rule response (N)][line break]" instead;
+		say "[text of parser error internal rule response (N)][line break]" instead;]
+		
+Check going a hyperspatial direction:
+	if player is not in hyperspace and player is not wearing the astral lenses:
+		say "[text of can't go that way rule response (A)][line break]" instead;
+		
+To decide if could see hypertunnels:
+	if the location is not in hyperspace:
+		repeat with D running through hyperspatial directions:
+			if the room D from the location is somewhere:
+				decide yes;
+	decide no;
+		
+		
+Encountered astral passages is a truth state that varies.
+
+To branch is a verb. To lead is a verb.
+
+this is the room description astral passages rule:
+	if the player wears the astral lenses and the location is not in hyperspace:
+		let directions be a list of texts;
+		repeat with D running through hyperspatial directions:
+			if the room D from the location is somewhere:
+				add "'[D]'" to directions;
+		if directions is not empty:
+			if encountered astral passages is false:
+				now encountered astral passages is true;
+				let C be number of entries of directions;
+				say "[if C is 1]A s[otherwise]S[end if]trange sparkly white [regarding C]passage[if C > 1]s[end if] [branch] off in [if C is 1]an impossible direction[otherwise]impossible directions[end if] from here.
+				
+				[Player's surname] [have] discovered [if C is 1]a hyperspatial tunnel[otherwise]hyperspatial tunnels[end if]! [regarding C][They] [lead] in the hyperspatial [regarding C]direction[if C > 1]s[end if] of [directions]."; 
+				say "For help regarding hyperspace, enter [bold type]HELP HYPERSPACE[roman type].";
+			otherwise:
+				let C be number of entries of directions;
+				say "[if C is 1]A hyperspatial tunnel[otherwise]Hyperspatial tunnels[end if] [regarding C][lead] in the [regarding C]direction[if C > 1]s[end if] of [directions]."; 
+				
+[After wearing the astral lenses when could see hypertunnels:
+	try looking;
+	continue the action;
+				
+After taking off the astral lenses when could see hypertunnels:
+	try looking;
+	continue the action;]
 	
+Carry out wearing the astral lenses:
+	now the hyperlight is lit;
+	
+Carry out taking off the astral lenses:
+	now the hyperlight is unlit;
+			
+	
+The room description astral passages rule is listed before the room description paragraphs about objects rule in the carry out looking rules.
+
+Volume 2 - Featureless Hyperplane	
 
 Visited Pillar is a truth state that varies. Visited Pillar is false;
 
@@ -284,7 +336,7 @@ To decide which real number is the distance:
 	now nsdiff is the absolute value of nsdiff;
 	now wediff is the absolute value of wediff;
 	now fbdiff is the absolute value of fbdiff;
-	let dsq be nsdiff * nsdiff + wediff * wediff + fbdiff * fbdiff;
+	let dsq be (nsdiff * nsdiff) + (wediff * wediff) + (fbdiff * fbdiff);
 	decide on the real square root of dsq;
 	
 
@@ -302,11 +354,28 @@ After printing the locale description when the location is Featureless Hyperplan
 		otherwise if dist > 0:
 			say "Close by is some kind of structure to the [t].";
 
-the bottom of the staircase is below Featureless Hyperplane. The preposition is "at". "Hooray you made it!".
-
 Check going down from Featureless Hyperplane:
 	if hyperplane coords is not staircase coords:
-		try going up instead; [forces 'you can't go that way.']
+		say "[text of the can't go that way rule response (A)][line break]" instead; 		
 
+Volume 3 - Hyperspace Field Office
+
+field office reception is below Featureless Hyperplane. The preposition is "at". "Hooray you made it!".
+
+the field office hallway is west of field office reception. "Hallway".
+
+the field office chief's office is west of the field office hallway. "Doris's office".
+
+
+
+
+Volume 4 - Other Stuff
+
+Book 1 - Help
+
+helping about hyperspace is an action out of world. Understand "help hyperspace" as helping about hyperspace. 
+
+Carry out helping about hyperspace:
+	say "Hyperspace is a four-dimensional plane of being overlaying our own three-dimensional plane. The familiar directions (north, south, up, northeast, etc.) work there, as do two new directions 'back' and 'forth', and their combinations with our compass directions: forthnorth, backeast, etc. These can be abbreviated just as compass directions can: b, f, fn, be, and so on."
 
 Hyperspace ends here.

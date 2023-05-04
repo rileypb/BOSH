@@ -1,5 +1,7 @@
 Swamp Park by Philip Riley begins here.
 
+Include New Light by Philip Riley.                             
+
 Book 1 - Outside HQ 
 
 Swamp Park is a region. 
@@ -14,6 +16,8 @@ Instead of entering the office_:
 Understand "office", "bosh" as the office_.
 
 Car 1 is a thing in Strip Mall Parking Lot South. It is privately-named. The printed name is "[our] Hyundai". Understand "car", "hyundai" as car 1. The initial appearance of car 1 is "[Our] Hyundai is parked nearby." It is fixed in place. The description is "An old bright red Hyundai Accent, it's been [our] personal means of transportation for years. And since the Bureau lost its fleet, it's [our] work car too.".
+
+Car 2 is a thing. It is privately-named. The printed name is "Klimp's Porsche". Understand "car/Klimp's/Porsche" as car 2. The initial appearance of car 2 is "Klimp's Porsche takes up two spots." It is fixed in place. The description is "Klimp drives an impeccably-maintained 2017 Porsche 911 Turbo Cabriolet."
 
 	
 To make is a verb.
@@ -112,8 +116,12 @@ about the laundromat owner is a questioning quip.
 	It quip-supplies the pawn shop owner.
 	It follows for-a-screwdriver-pawn.
 	
-After discussing about the laundromat:
+After discussing about the laundromat owner:
 	now player knows break-in-to-laundromat;
+	move Chief Klimp to Chief's office;
+	now klimp's door is unlocked;
+	now klimp's door is open;
+	move car 2 to Strip Mall Parking Lot North;
 	continue the action;
 	
 [An availability rule for about the laundromat owner:
@@ -122,18 +130,89 @@ After discussing about the laundromat:
 ]
 Book 3 - Laundromat
 
+Chapter 1 - The Astral Tunnel
+
+The astral-tunnel-1 is back of the back lot. It is privately-named. The printed name is "astral tunnel". It is in hyperspace. "It is featureless white, or what passes for white here. It bends 'forth' to north.";
+
+The astral-tunnel-2 is north of astral-tunnel-1. It is privately-named. The printed name is "astral tunnel". It is in hyperspace. "It is featureless white, or what passes for white here. It bends south to 'forth.'";
+
+Chapter 2 - The Laundromat Proper
+
 laundromat-region is a region. It is in Swamp Park.
 
 The laundromat-store is northwest of strip mall parking lot south. "This is the laundromat.".
 It is privately-named. The printed name is "laundromat". Understand "laundromat" as the laundromat-store. It is in laundromat-region.
 
+The handtruck is in the laundromat-store. It is pushable between rooms.
+
+Instead of taking the handtruck:
+	say "The handtruck is a bit unwieldy to carry. Better push it instead.";
+
+
+
 The laundromat back room is west of the laundromat-store. It is in laundromat-region.
+It is forth of astral-tunnel-2.
 
 The laundromat basement is below the laundromat back room. It is in laundromat-region.
 
 The back basement is south of the laundromat basement. It is in laundromat-region.
 
-The door to nowhere is a door. It is east of the back basement.
+laundromat back room is dark.
+laundromat basement is dark.
+back basement is dark.
+There is a fluorescent light source in laundromat-store called ls-light.
+There is a fluorescent light source in laundromat back room called lbr-light.
+There is a fluorescent light source in laundromat basement called lb-light.
+There is a fluorescent light source in back basement called bb-light.
+
+The broken washing machine is an enterable, closed, openable container.
+
+moving it with is an action applying to two things. Understand "move [something] with [something]" as moving it with.
+
+Some filing cabinets are scenery in the back basement.
+
+Check moving something with:
+	say "That isn't very helpful.";
+	
+Instead of moving the filing cabinets with the handtruck:
+	if the broken washing machine is nowhere:
+		say "You move the filing cabinets out of the way and uncover an old front-loading washing machine. There is a strange glow inside the drum.";
+		now the broken washing machine is in the back basement;
+	otherwise:
+		say "There's no point in moving the cabinets around any further.";
+
+After entering the broken washing machine:
+	say "There is a flash of light and you find yourself somewhere else...";
+	move the player to the featureless hyperplane;
+	
+The light switch is a scenery device in the back basement. It is switched on.
+
+After switching off the light switch:
+	now ls-light is not lit;
+	now lbr-light is not lit;
+	now lb-light is not lit;
+	now bb-light is not lit;
+	continue the action;
+
+After switching on the light switch:
+	now ls-light is lit;
+	now lbr-light is lit;
+	now lb-light is lit;
+	now bb-light is lit;
+	continue the action;
+
+To remove is a verb.
+
+Every turn:
+	if the location is fluorescent-lit and the player is wearing the astral lenses and not in darkness:
+		say "Wearing the astral lenses in fluorescent light is blinding. [We] quickly [remove] the glasses.";
+		now the hyperlight is unlit;
+		now the player carries the astral lenses;
+		
+	
+The astral-tunnel-3 is forth of back basement and backsouth of the laundromat-store. It is privately-named. The printed name is "astral tunnel". It is in hyperspace. "It is featureless white, or what passes for white here. It bends 'back' to 'forthnorth.'";
+
+
 
 Book 4 - Convenience Store
 
