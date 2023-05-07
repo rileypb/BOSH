@@ -28,20 +28,21 @@ Include New Light by Philip Riley.
 
 Include Early Declarations by Philip Riley.
  
-Include Farseeing by Philip Riley.
+[Include Farseeing by Philip Riley.]
 Include Basics by Philip Riley.
-Include Memories by Philip Riley. 
+Include Memories by Philip Riley.
+ 
 Include Hyperspace by Philip Riley.
-
 Include BOSH Facts by Philip Riley.
 Include Image Strip by Philip Riley.
 Include Simple Conversation by Philip Riley.
 Include Swamp Park by Philip Riley.
 Include Conversations General by Philip Riley.
 Include Margaret by Philip Riley.
+Include Enigma Lake by Philip Riley.
 
 Include Gender Options by Nathanael Nerode.  
-
+ 
 
 
 Work Title is always "The Bureau of Strange Happenings".  
@@ -283,7 +284,7 @@ The describe what's on scenery supporters in room descriptions rule does nothing
 the can't take what's fixed in place rule response (A) is "That can't be picked up.".
 the can't switch on unless switchable rule response (A) is "That can't be switched on and off.".  
 
-the can't touch rule does nothing when the action name part of the current action is identifying action.
+[the can't touch rule does nothing when the action name part of the current action is identifying action.]
  
 [Book 5 - Tweaks to Threaded Conversation
 
@@ -432,7 +433,7 @@ Book 13 - Places
 
 Chapter 1 - BOSH HQ and Swamp Park
  
-
+ 
 BOSH HQ is a region. 
 
 Section 1 - Your Office
@@ -680,7 +681,7 @@ The mahogany side table is a thing in BOSH Chief's Office. It is scenery. "This 
  
 The bookcase is a thing in BOSH Chief's Office. It is scenery. "The Chief's library boasts many interesting titles, from Alton Cherry's [italic type]Waiting for the Aliens[roman type] to Debi Bosworth's [italic type]My Travels in Time[roman type]." Understand "books" as bookcase.
 
-Waiting-for-the-Aliens is a thing in BOSH Chief's Office. The printed name is "Waiting for the Aliens". It is scenery. Understand "Alton/Cherry" as Waiting-for-the-Aliens. "Alton Cherry's [italic type]Waiting for the Aliens[roman type] is a classic of the genre. More a history of publicly-known material than an argument for or against the existence of aliens on earth, it is accessible to believers and non-believers alike."
+Waiting-for-the-Aliens is a thing in BOSH Chief's Office. It is privately-named. The printed name is "Waiting for the Aliens". It is scenery. Understand "Waiting/for/aliens/Alton/Cherry" as Waiting-for-the-Aliens. "Alton Cherry's [italic type]Waiting for the Aliens[roman type] is a classic of the genre. More a history of publicly-known material than an argument for or against the existence of aliens on earth, it is accessible to believers and non-believers alike."
  
 Travels in Time is a thing in BOSH Chief's Office. It is scenery. Understand "My Travels in Time" as Travels in Time. Understand "Debi/Bosworth" as Travels in Time. "Debi Bosworth's [italic type]My Travels in Time[roman type] is the account of Ms. Bosworth's alleged travels to the past and future. She is careful to point out that she has never known a man in a blue box."
 
@@ -713,15 +714,52 @@ An openable container called Moira's drawer is part of Moira's desk.
 	
 Moira's chair is an enterable supporter in Moira's office. It is scenery. The description is "It's a testament to Moira's competence and taste that she managed to acquire such a nice chair with the funds available.".
 
-The bookshelves are scenery in Moira's office. The description is "FILL THIS IN".
-Understand "shelves/books" as bookshelves.
+Moira's bookshelves are a scenery supporter in Moira's office. The description is "FILL THIS IN".
+Understand "shelves/books" as Moira's bookshelves.
+
+Native Tribes of Upstate New York is a thing on Moira's bookshelves.
+
+The closet door is a door. It is east of Moira's office and west of the utility closet. It is closed, openable, locked, and lockable. It is scenery.
+
+The utility closet is dark.
+
+Instead of knocking on the closet door when the location is the utility closet and the closet door is locked and the closet door is closed:
+	move Moira Zin to Moira's Office;
+	if Moira Zin is in Moira's Office:
+		say "After a few seconds, someone inserts a key in the lock and opens the door. It's [player's surname]'s colleague Moira Zin. 'How'd you get in there, [player's forename]?'
+		
+		You exit the closet.";
+		move the player to Moira's Office;
+		queue Moira Zin with about the hyperdimensional portal;
+		queue Moira Zin with to wait for the report;
+		now the current interlocutor is Moira Zin;
+		now the closet door is unlocked;
+		now the closet door is open;
+		
+about the hyperdimensional portal is an informative quip.
+	The comment is "1.".
+	The reply is "2.".
+	It is ubiquitous.
+	It quip-supplies Moira Zin.
+	It rules out to wait for the report.
+			
+to wait for the report is an informative quip.
+	The comment is "[We] [say] '[EG]Uh, thanks, Moira. Hmm. I'm not quite sure. I ought to talk to the Chief about it first[PCG]You wouldn't believe me if I told you, Moira. I'm sure Huffton will catch you up after I talk to him[LF]Strange things are afoot around here, Agent Zin[end say].'[line break]".
+	The reply is "[EG]Moira raises her eyebrows. 'You do that. I'd like to know why a strange man was hiding in my closet.' Ezra stammers and blushes.[PCG]'Well hurry!' says Moira. 'I can't wait to hear what's going on.'[LF]'Do tell,' says Moira.
+	
+	'After I talk to Klimp.'[end say][line break]".
+	It is ubiquitous.
+	It quip-supplies Moira Zin.
+	It rules out about the hyperdimensional portal.
+	
+	
 
 Book 14 - The Phone Call
 
 [fill this in]
 
 The unknown voice is a person.
-The mysterious phone is a phone.  It is owned by the unknown voice.
+The mysterious phone is a phone. It is owned by the unknown voice.
 
 Book 15 - Moving Between Rooms 
 
@@ -798,6 +836,8 @@ Figure BOSH is the file "location_bosh.png".
 Figure Store is the file "location_lil_nectarine.png".
 Figure Laundromat is the file "location_laundromat.png".
 Figure White Tunnel is the file "location_white_tunnel.png".
+Figure Moira is the file "moira_portrait.png".
+Figure Hyperspace is the file "location_hyperspace.png".
 
 Ezra Gaunt has portrait Figure Gaunt.
 Petula Goldberg has portrait Figure Goldberg.
@@ -810,6 +850,7 @@ Doris has portrait Figure Doris.
 The pawn shop owner has portrait Figure Pawn Owner.
 The unknown voice has portrait Figure Caller.
 The blue flipphone has portrait Figure Phone.
+Moira Zin has portrait Figure Moira.
 
 Characters is a list of figure names that varies.
 
@@ -821,6 +862,7 @@ To decide which figure name is the picture of the location:
 	if location is Li'l Nectarine Convenience Store, now result is Figure Store;
 	if location is in Laundromat-region, now result is Figure Laundromat;
 	If location is astral-tunnel-1 or location is astral-tunnel-2 or location is astral-tunnel-3, now result is Figure White Tunnel;
+	if location is Featureless Hyperplane, now result is Figure Hyperspace;
 	decide on result;
 	
 
@@ -910,6 +952,18 @@ The access through barriers rule response (A) is "you have run afoul of the acce
 
 test screwdriver with "w/x vent/ask for screwdriver/e/n/e/buy screwdriver/ask for screwdriver/w/s/sw/hello/ask for screwdriver/ask about laundromat owner/out/nw".
 
+test closet with "gonear closet/purloin glasses/wear them/knock on door".
+
 Volume 2 - The Story
 
+
+Book 1 - The Thumb Drive
+
+The thumb-drive-story is always "Biff found the thumb drive in an ancient Onandaga root cellar on a farm in upstate New York. He was never able to read it.".
+
+[turns out the message is scratched on the side of the thumb drive, the data is of course gone]
+
+Doris-story-about-the-thumb-drive is always "We lost one of our New York agents to a slingshot effect that threw him far back in time. We're always monitoring for artifacts that are out of place or anachronistic to lead us to lost agents."
+
+Message-on-the-thumbdrive is always "They found me out and sent me back. 14th century. Enigma Lake. Savra is going to move on the Dragon."
 

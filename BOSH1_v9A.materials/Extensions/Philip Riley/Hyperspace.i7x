@@ -107,7 +107,20 @@ Carry out taking off the astral lenses:
 	
 The room description astral passages rule is listed before the room description paragraphs about objects rule in the carry out looking rules.
 
-Volume 2 - Featureless Hyperplane	
+Volume 2 - Featureless Hyperplane
+
+Book 1 - The Mystic Compass
+
+The mystic compass is a thing.
+
+After dropping the mystic compass when the Ethereal Pillar is nowhere:
+	say "The mystic compass vanishes!";
+	now the mystic compass is nowhere;
+
+After dropping the mystic compass when the Ethereal Pillar is in the Featureless Hyperplane:
+	say "The mystic compass vanishes and reappears, dangling from the pillar!";
+
+Book 2 - Geography	
 
 Visited Pillar is a truth state that varies. Visited Pillar is false;
 
@@ -117,9 +130,7 @@ It is backwest of it.
 It is back of it. It is in Hyperspace.
 "[If featureless hyperplane is not visited][We] [rub] [our] eyes as [we] [try] to take in [our] surroundings.[end if] In addition to the usual directions of north and south and east and west, two new directions exist here: [italic type]back[roman type] and [italic type]forth[roman type]. As a result, the 'surface' [we're] standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
 
-As far as one can see, the hyperplane extends infinitely in all six directions, all but featureless.".
-
-The ethereal display is here. It is scenery.
+As far as one can see, the hyperplane extends infinitely in all six directions."
 
 To say symbol for (N - a number):
 	if N is 0:
@@ -192,14 +203,20 @@ Carry out going a direction (called D) from Featureless Hyperplane:
 		increment entry 2 of hyperplane coords;
 		increment entry 3 of hyperplane coords;		
 	if hyperplane coords is Coordinates of Pillar:
+		if the player does not carry the mystic compass:
+			move the mystic compass to Featureless Hyperplane;
 		now the printed name of Featureless Hyperplane is "ethereal pillar";
 		now the preposition of Featureless Hyperplane is "next to";
 		move Ethereal Pillar to Featureless Hyperplane;
 	otherwise if hyperplane coords is Staircase Coords:
+		if the player does not carry the mystic compass:
+			remove the mystic compass from play;
 		now the printed name of Featureless Hyperplane is "descending stair";
 		now the preposition of Featureless Hyperplane is "at the top of";
 		move Descending Stair to Featureless Hyperplane;
 	otherwise:
+		if the player does not carry the mystic compass:
+			remove the mystic compass from play;
 		now the printed name of Featureless Hyperplane is "featureless hyperplane";
 		now the preposition of Featureless Hyperplane is "on";
 		now the Ethereal Pillar is nowhere;
@@ -292,9 +309,18 @@ To decide which text is the dirstring:
 		decide on dir;
 	decide on dir;
 
-Staircase coords is always {-6, 13, 5}.
+Staircase coords is always {0, 0, 0}.
 
 Rule for writing a paragraph about the Ethereal Pillar:
+	now visited pillar is true;
+	say "There is an ethereal pillar here. A message carved into the pillar says 'Seek the origin. -Doris'[line break]";
+	
+Rule for writing a paragraph about the mystic compass:
+	say "A mystic compass dangles from an outcropping of the pillar.";	
+	
+
+
+[Rule for writing a paragraph about the Ethereal Pillar:
 	now visited pillar is true;
 	say "There is an ethereal pillar here, carved with puzzling shapes:[fixed letter spacing][paragraph break]
 	 [fixed letter spacing]O---------O[line break]
@@ -313,7 +339,7 @@ Rule for writing a paragraph about the Ethereal Pillar:
 	 [fixed letter spacing] ||-----||[line break]
 	 [fixed letter spacing] | | | | |[line break]
 	 [fixed letter spacing] | | | | |[line break]
-	 [fixed letter spacing]/---------\[paragraph break][variable letter spacing]";
+	 [fixed letter spacing]/---------\[paragraph break][variable letter spacing]";]
 	
 To say symbol for (N - a number):
 	if N is 0:
@@ -339,9 +365,12 @@ To decide which real number is the distance:
 	let dsq be (nsdiff * nsdiff) + (wediff * wediff) + (fbdiff * fbdiff);
 	decide on the real square root of dsq;
 	
+Instead of examining the mystic compass when the location is Featureless Hyperplane:
+	if player carries the mystic compass:
+		say "On the readout of the mystic compass floats a set of ethereal symbols: [symbols for convert entry 1 of hyperplane coords to base five] : [symbols for convert entry 2 of hyperplane coords to base five] : [symbols for convert entry 3 of hyperplane coords to base five][paragraph break]";
 
 After printing the locale description when the location is Featureless Hyperplane:
-	say "In the floor [if first time in hyperspace is true](if it can be called that, considering that it extends in six directions from here) [end if]floats a set of ethereal symbols: [symbols for convert entry 1 of hyperplane coords to base five] : [symbols for convert entry 2 of hyperplane coords to base five] : [symbols for convert entry 3 of hyperplane coords to base five][paragraph break]";
+	try examining the mystic compass;
 	if Hyperplane Coords is not Coordinates of Pillar:
 		let t be the dirstring;
 		let dist be the distance;

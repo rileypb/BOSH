@@ -46,6 +46,10 @@
             <string>Figures/location_laundromat.png</string>
             <key>22</key>
             <string>Figures/location_white_tunnel.png</string>
+            <key>23</key>
+            <string>Figures/moira_portrait.png</string>
+            <key>24</key>
+            <string>Figures/location_hyperspace.png</string>
         </dict>
     </dict>
 </plist>
