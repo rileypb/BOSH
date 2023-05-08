@@ -1,5 +1,6 @@
 Hyperspace by Philip Riley begins here.
 
+Include Simple Conversation by Philip Riley.
 Include Third Person Narration by Philip Riley.
 
 Volume 1 - Basics
@@ -128,9 +129,9 @@ a featureless hyperplane is a room. A featureless hyperplane is always-indefinit
 It is backnorth of it. It is backeast of it. It is backsouth of it. 
 It is backwest of it.  
 It is back of it. It is in Hyperspace.
-"[If featureless hyperplane is not visited][We] [rub] [our] eyes as [we] [try] to take in [our] surroundings.[end if] In addition to the usual directions of north and south and east and west, two new directions exist here: [italic type]back[roman type] and [italic type]forth[roman type]. As a result, the 'surface' [we're] standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
+"[If featureless hyperplane is not visited][We] [rub] [our] eyes as [we] [try] to take in [our] surroundings. [end if][if Descending Stair is not in Featureless Hyperplane]In addition to the usual directions of north and south and east and west, two new directions exist here: [italic type]back[roman type] and [italic type]forth[roman type]. As a result, the 'surface' [we're] standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
 
-As far as one can see, the hyperplane extends infinitely in all six directions."
+As far as one can see, the hyperplane extends infinitely in all six directions[otherwise]It is made of the same gossamer, questionably real stuff as the ground, the pillar, and the readouts. You can't see past the first turn of the stairs, unfortunately[end if]."
 
 To say symbol for (N - a number):
 	if N is 0:
@@ -223,9 +224,9 @@ Carry out going a direction (called D) from Featureless Hyperplane:
 		now Descending Stair is nowhere;
 
 
-Descending Stair is a thing. 
-Rule for writing a paragraph about the descending stair:
-	say "A spiraling staircase disappears into the ground here. It is made of the same gossamer, questionably real stuff as the ground,[if visited pillar is true] the pillar,[end if] and the readouts. You can't see past the first turn of the stairs, unfortunately.";
+Descending Stair is scenery. 
+[Rule for writing a paragraph about the descending stair:
+	say "A spiraling staircase disappears into the ground here. It is made of the same gossamer, questionably real stuff as the ground,[if visited pillar is true] the pillar,[end if] and the readouts. You can't see past the first turn of the stairs, unfortunately.";]
 
 The Ethereal Pillar is a thing. 
 
@@ -393,14 +394,74 @@ field office area is a region. It is in hyperspace.
 
 field office reception is below Featureless Hyperplane. The preposition is "at". It is in field office area. "Hooray you made it!".
 
+Maggie is a woman in field office reception.
+
 the field office hallway is west of field office reception. It is in field office area. "Hallway".
+
+Minerva's office is north of the field office hallway. It is in field office area.
+Minerva is a woman in Minerva's office.
 
 the field office chief's office is west of the field office hallway. It is in field office area. "Doris's office".
 
+Doris is a man in the field office chief's office.
+The initial appearance is "Doris is sitting cross-legged in a chair, tapping his foot lazily on the desk."
+
+Christy's office is south of the field office hallway. It is in field office area.
+Christy is a nonbinary in Christy's office.
+
+Volume 4 - Characters
+
+Book 1 - Doris
+
+how to get home is a repeatable questioning quip.
+	The comment is "[We] [ask], 'Just how can I get home from here?'".
+	The reply is "Doris hardly looks up from his work. 'Go ask Maggie; she can help you.'".
+	It quip-supplies Doris.
+	It is ubiquitous.
+	It is always-available.
+	
+To shake is a verb.
+
+no-thumb-drive is an informative quip. 
+	It is privately-named.
+	It mentions the thumb drive.
+	The printed name is "[force pronoun for player][we] [don't] have the thumb drive".
+	Understand "he/she/they/don't/doesn't/have/thumb/drive" as no-thumb-drive.
+	The comment is "[if the thumb drive is familiar][We] [shake] [our] head. 'Sorry, no.'[otherwise][We] [look] quizzical. 'What thumb drive?'".
+	The reply is "[if the thumb drive is familiar]'Well, you'll just have to go back and get it, won't you? We can't be fooling around when the fate of the timeline is at stake!' Doris says[otherwise]'Huh. Thought you would have found it by now. I'm almost certain it's in your Swamp Park office. Go find it and bring it here.' Doris busies himself at his desk, pointedly ignoring you[end if].".
+	it quip-supplies Doris.
+	It rules out yes-thumb-drive.
+	
+An availability rule for no-thumb-drive:
+	if the player does not carry the thumb drive:
+		always available;
+	
+yes-thumb-drive is an informative quip. 
+	It is privately-named.
+	It mentions the thumb drive.
+	The printed name is "[force pronoun for player][we] [have] the thumb drive".
+	Understand "he/she/they/has/have/thumb/drive" as no-thumb-drive.
+	The comment is "[if the thumb drive is familiar][We] [shake] [our] head. 'Sorry, no.'[otherwise][We] [look] quizzical. 'What thumb drive?'".
+	The reply is "[if the thumb drive is familiar]'Well, you'll just have to go back and get it, won't you? We can't be fooling around when the fate of the timeline is at stake!' Doris says[otherwise]'Huh. Thought you would have found it by now. I'm almost certain it's in your Swamp Park office. Go find it and bring it here.' Doris busies himself at his desk, pointedly ignoring you[end if].".
+	it quip-supplies Doris.
+	It rules out no-thumb-drive.
+	
+An availability rule for yes-thumb-drive:
+	if the player carries the thumb drive:
+		always available;
+	
+
+Doris greeted the player is a truth state that varies.
+After printing the locale description when player is in the field office chief's office and Doris greeted the player is false:
+	now Doris greeted the player is true;
+	say "'Ah, [player's forename],' Doris exclaims, standing up to shake [our] hand. 'I've been waiting for you to pay us a visit. Did you bring the thumb drive?'";
+	if player carries the thumb drive:
+		queue Doris with yes-thumb-drive;
+	otherwise:
+		queue Doris with no-thumb-drive;
 
 
-
-Volume 4 - Other Stuff
+Volume 5 - Other Stuff
 
 Book 1 - Help
 

@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 8437 words long.
+I've now read your source text, which is 8500 words long.
 
 
 -----------------------------------------------------
@@ -43,18 +43,18 @@ I've also read New Light by Philip Riley, which is 111 words long.
 I've also read Early Declarations by Philip Riley, which is 16 words long.
 I've also read Basics by Philip Riley, which is 195 words long.
 I've also read Memories by Philip Riley, which is 220 words long.
-I've also read Hyperspace by Philip Riley, which is 2339 words long.
+I've also read Simple Conversation by Philip Riley, which is 1715 words long.
+I've also read Hyperspace by Philip Riley, which is 2831 words long.
 I've also read BOSH Facts by Philip Riley, which is 94 words long.
 I've also read Image Strip by Philip Riley, which is 2080 words long.
-I've also read Simple Conversation by Philip Riley, which is 1715 words long.
 I've also read Swamp Park by Philip Riley, which is 2345 words long.
 I've also read Conversations General by Philip Riley, which is 129 words long.
 I've also read Margaret by Philip Riley, which is 951 words long.
 I've also read Enigma Lake by Philip Riley, which is 380 words long.
-I've also read Gender Options by Nathanael Nerode, which is 7665 words long.
+I've also read Gender Options by Nathanael Nerode, which is 7687 words long.
 I've also read Hearing by Philip Riley, which is 1116 words long.
-I've also read Glulx Entry Points by Emily Short, which is 2682 words long.
 I've also read Complex Listing by Emily Short, which is 3410 words long.
+I've also read Glulx Entry Points by Emily Short, which is 2682 words long.
 
 
 -----------------------------------------------------
@@ -141,13 +141,13 @@ Phase XII ... Code generation
 
                                 0 = action. 1 = object
                                 0 = action. 1 = object
-        Regional: CONSTANT_VNT'hyperspace'-region(I192_hyperspace)(I110'hyperspace')
+        Regional: CONSTANT_VNT'hyperspace'-region(I216_hyperspace)(I129'hyperspace')
          == region
-        Regional: CONSTANT_VNT'hyperspace'-region(I192_hyperspace)(I110'hyperspace')
+        Regional: CONSTANT_VNT'hyperspace'-region(I216_hyperspace)(I129'hyperspace')
          == region
-        Regional: CONSTANT_VNT'hyperspace'-region(I192_hyperspace)(I110'hyperspace')
+        Regional: CONSTANT_VNT'hyperspace'-region(I216_hyperspace)(I129'hyperspace')
          == region
-        Regional: CONSTANT_VNT'hyperspace'-region(I192_hyperspace)(I110'hyperspace')
+        Regional: CONSTANT_VNT'hyperspace'-region(I216_hyperspace)(I129'hyperspace')
          == region
 0 = object. 1 = number
 0 = object. 1 = number
@@ -202,25 +202,25 @@ Phase XII ... Code generation
                                                             Fail: list of numbers (~) number = nothing
                                             Fail: nothing (~) real number = nothing
                                             Fail: list of numbers (~) real number = nothing
-        Regional: CONSTANT_VNT'bosh hq'-region(I358_bosh_hq)(I265'bosh hq')
+        Regional: CONSTANT_VNT'bosh hq'-region(I368_bosh_hq)(I275'bosh hq')
          == region
-        Regional: CONSTANT_VNT'bosh hq'-region(I358_bosh_hq)(I265'bosh hq')
+        Regional: CONSTANT_VNT'bosh hq'-region(I368_bosh_hq)(I275'bosh hq')
          == region
-        Regional: CONSTANT_VNT'laundromat-region'-region(I267_laundromat_region)(I178'laundromat-region')
+        Regional: CONSTANT_VNT'laundromat-region'-region(I277_laundromat_region)(I188'laundromat-region')
          == region
-        Regional: CONSTANT_VNT'laundromat-region'-region(I267_laundromat_region)(I178'laundromat-region')
+        Regional: CONSTANT_VNT'laundromat-region'-region(I277_laundromat_region)(I188'laundromat-region')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I306_elr)(I217'elr')
+        Regional: CONSTANT_VNT'elr'-region(I316_elr)(I227'elr')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I306_elr)(I217'elr')
+        Regional: CONSTANT_VNT'elr'-region(I316_elr)(I227'elr')
          == region
-        Regional: CONSTANT_VNT'field office area'-region(I207_field_office_area)(I125'field office area')
+        Regional: CONSTANT_VNT'field office area'-region(I231_field_office_area)(I144'field office area')
          == region
-        Regional: CONSTANT_VNT'field office area'-region(I207_field_office_area)(I125'field office area')
+        Regional: CONSTANT_VNT'field office area'-region(I231_field_office_area)(I144'field office area')
          == region
-        Regional: CONSTANT_VNT'hyperspace'-region(I192_hyperspace)(I110'hyperspace')
+        Regional: CONSTANT_VNT'hyperspace'-region(I216_hyperspace)(I129'hyperspace')
          == region
-        Regional: CONSTANT_VNT'hyperspace'-region(I192_hyperspace)(I110'hyperspace')
+        Regional: CONSTANT_VNT'hyperspace'-region(I216_hyperspace)(I129'hyperspace')
          == region
                                         Fail: scene (~) number = nothing
                                         Fail: scene (~) number = nothing
@@ -264,7 +264,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 195 files written as streams.
-CPU time: 374 centiseconds
+CPU time: 379 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

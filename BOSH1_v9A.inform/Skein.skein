@@ -20,7 +20,7 @@ or (3) Larch Faraji (they/them), lead singer of the third wave neo-old-school pu
 
 The Bureau of Strange Happenings
 An Interactive Phenomenon by Phil Riley
-Release 1 / Serial number 230507 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
+Release 1 / Serial number 230508 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
 
 Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
 
@@ -462,6 +462,8 @@ A phone is ringing to the south.
         <command xml:space="preserve">gonear reception</command>
         <result xml:space="preserve">Agent Faraji is at field office reception. Hooray you made it!
 
+Also here is Maggie.
+
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1314"></child>
@@ -473,13 +475,532 @@ A phone is ringing to the south.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1315"></child>
+        <children><child nodeId="node-3255"></child>
+            <child nodeId="node-2459"></child>
         </children>
     </item>
-    <item nodeId="node-1315">
+    <item nodeId="node-2459">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">Agent Faraji is in the field office chief's office. Doris's office
 
+Doris is sitting cross-legged in a chair, tapping his foot lazily on the desk.
+
+"Ah, Larch," Doris exclaims, standing up to shake their hand. "I've been waiting for you to pay us a visit. Did you bring us the thumb drive?"
+
+They can ask how to get home, tell Doris they don't have the thumb drive or tell Doris they have the thumb drive.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2968"></child>
+            <child nodeId="node-2838"></child>
+            <child nodeId="node-2460"></child>
+        </children>
+    </item>
+    <item nodeId="node-2460">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Agent Faraji is in the field office chief's office. Doris's office
+
+Doris is sitting cross-legged in a chair, tapping his foot lazily on the desk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2461"></child>
+        </children>
+    </item>
+    <item nodeId="node-2461">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Agent Faraji is in the field office chief's office. Doris's office
+
+Doris is sitting cross-legged in a chair, tapping his foot lazily on the desk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2462"></child>
+        </children>
+    </item>
+    <item nodeId="node-2462">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Agent Faraji is in the field office hallway. Hallway
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2463"></child>
+        </children>
+    </item>
+    <item nodeId="node-2463">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Agent Faraji is in the field office chief's office. Doris's office
+
+Doris is sitting cross-legged in a chair, tapping his foot lazily on the desk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2464"></child>
+        </children>
+    </item>
+    <item nodeId="node-2464">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Agent Faraji is in the field office chief's office. Doris's office
+
+Doris is sitting cross-legged in a chair, tapping his foot lazily on the desk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2465"></child>
+        </children>
+    </item>
+    <item nodeId="node-2465">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Agent Faraji is in the field office chief's office. Doris's office
+
+Doris is sitting cross-legged in a chair, tapping his foot lazily on the desk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2838">
+        <command xml:space="preserve">faraki doesn't have the thumb drive</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2839"></child>
+        </children>
+    </item>
+    <item nodeId="node-2839">
+        <command xml:space="preserve">faraji doesn't have the thumb drive</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2840"></child>
+        </children>
+    </item>
+    <item nodeId="node-2840">
+        <command xml:space="preserve">she doesn't have the thumb drive</command>
+        <result xml:space="preserve">Faraji shakes their head. "Sorry, no."
+
+"Well, you'll just have to go back and get it, won't you? We can't be fooling around when the fate of the timeline is at stake!" Doris says.
+
+They can ask how to get home.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2841"></child>
+        </children>
+    </item>
+    <item nodeId="node-2841">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">Faraji is carrying:
+  some astral lenses (being worn)
+  a thumb drive
+  the Bureau credit card
+
+They can ask how to get home.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2842"></child>
+        </children>
+    </item>
+    <item nodeId="node-2842">
+        <command xml:space="preserve">give thumb drive to doris</command>
+        <result xml:space="preserve">Doris does not respond.
+
+Faraji can ask how to get home.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2843"></child>
+        </children>
+    </item>
+    <item nodeId="node-2843">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">Faraji is carrying:
+  some astral lenses (being worn)
+  a thumb drive
+  the Bureau credit card
+
+They can ask how to get home.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2886"></child>
+        </children>
+    </item>
+    <item nodeId="node-2886">
+        <command xml:space="preserve">ask how to get home</command>
+        <result xml:space="preserve">Faraji asks, "Just how can I get home from here?"
+
+Doris hardly looks up from his work. "Go ask Maggie; she can help you."
+
+They can ask how to get home.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2887"></child>
+        </children>
+    </item>
+    <item nodeId="node-2887">
+        <command xml:space="preserve">ask how to get home</command>
+        <result xml:space="preserve">Faraji asks, "Just how can I get home from here?"
+
+Doris hardly looks up from his work. "Go ask Maggie; she can help you."
+
+They can ask how to get home.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2968">
+        <command xml:space="preserve">ask how to get home</command>
+        <result xml:space="preserve">Faraji asks, "Just how can I get home from here?"
+
+Doris hardly looks up from his work. "Go ask Maggie; she can help you."
+
+They can ask how to get home, tell Doris they don't have the thumb drive or tell Doris they have the thumb drive.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2969"></child>
+        </children>
+    </item>
+    <item nodeId="node-2969">
+        <command xml:space="preserve">say they have the thumb drive</command>
+        <result xml:space="preserve">Faraji shakes their head. "Sorry, no."
+
+"Well, you'll just have to go back and get it, won't you? We can't be fooling around when the fate of the timeline is at stake!" Doris says.
+
+They can ask how to get home.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2970"></child>
+        </children>
+    </item>
+    <item nodeId="node-2970">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">field office chief's office
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2971"></child>
+        </children>
+    </item>
+    <item nodeId="node-2971">
+        <command xml:space="preserve">say faraji has the thumb drive</command>
+        <result xml:space="preserve">(to Doris)
+Doris does not respond.
+
+Faraji can ask how to get home, tell Doris they don't have the thumb drive or tell Doris they have the thumb drive.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2972"></child>
+        </children>
+    </item>
+    <item nodeId="node-2972">
+        <command xml:space="preserve">say they have the thumb drive</command>
+        <result xml:space="preserve">Faraji shakes their head. "Sorry, no."
+
+"Well, you'll just have to go back and get it, won't you? We can't be fooling around when the fate of the timeline is at stake!" Doris says.
+
+They can ask how to get home.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2973"></child>
+        </children>
+    </item>
+    <item nodeId="node-2973">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">field office chief's office
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3058"></child>
+        </children>
+    </item>
+    <item nodeId="node-3058">
+        <command xml:space="preserve">they don't have the thumb drive</command>
+        <result xml:space="preserve">Faraji shakes their head. "Sorry, no."
+
+"Well, you'll just have to go back and get it, won't you? We can't be fooling around when the fate of the timeline is at stake!" Doris says.
+
+They can ask how to get home.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3059"></child>
+        </children>
+    </item>
+    <item nodeId="node-3059">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">field office chief's office
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3060"></child>
+        </children>
+    </item>
+    <item nodeId="node-3060">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">field office chief's office
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3061"></child>
+        </children>
+    </item>
+    <item nodeId="node-3061">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">field office chief's office
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3062"></child>
+        </children>
+    </item>
+    <item nodeId="node-3062">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">field office hallway
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3063"></child>
+        </children>
+    </item>
+    <item nodeId="node-3063">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Agent Faraji is in the field office chief's office. Doris's office
+
+Doris is sitting cross-legged in a chair, tapping his foot lazily on the desk.
+
+"Ah, Larch," Doris exclaims, standing up to shake their hand. "I've been waiting for you to pay us a visit. Did you bring us the thumb drive?"
+
+They can ask how to get home, tell Doris they don't have the thumb drive or tell Doris they have the thumb drive.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3064"></child>
+        </children>
+    </item>
+    <item nodeId="node-3064">
+        <command xml:space="preserve">they don't have the thumb drive</command>
+        <result xml:space="preserve">Faraji shakes their head. "Sorry, no."
+
+"Well, you'll just have to go back and get it, won't you? We can't be fooling around when the fate of the timeline is at stake!" Doris says.
+
+They can ask how to get home.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3065"></child>
+        </children>
+    </item>
+    <item nodeId="node-3065">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">field office chief's office
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3066"></child>
+        </children>
+    </item>
+    <item nodeId="node-3066">
+        <command xml:space="preserve">they have the thumb drive</command>
+        <result xml:space="preserve">Faraji shakes their head. "Sorry, no."
+
+"Well, you'll just have to go back and get it, won't you? We can't be fooling around when the fate of the timeline is at stake!" Doris says.
+
+They can ask how to get home.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-3255">
+        <command xml:space="preserve">rules</command>
+        <result xml:space="preserve">Rules tracing now switched on. Type "rules off" to switch it off again, or "rules all" to include even rules which do not apply.
+
+[Rule "clear LPR rule" applies.]
+[Rule "reset skip sounds rule" applies.]
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3256"></child>
+        </children>
+    </item>
+    <item nodeId="node-3256">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">[Rule "redirect to GEP line input rule" applies.]
+[Rule "ordinary checking for content rule" applies.]
+[Rule "After reading a command" applies.]
+[Rule "declare everything initially unmentioned rule" applies.]
+[Rule "standard set going variables rule" applies.]
+[Rule "announce items from multiple object lists rule" applies.]
+[Rule "set pronouns from items from multiple object lists rule" applies.]
+[Rule "before stage rule" applies.]
+[Rule "instead stage rule" applies.]
+[Rule "investigate player's awareness before action rule" applies.]
+[Rule "player aware of his own actions rule" applies.]
+[Rule "check stage rule" applies.]
+[Rule "can't travel in what's not a vehicle rule" applies.]
+[Rule "can't go through undescribed doors rule" applies.]
+[Rule "can't go through closed doors rule" applies.]
+[Rule "determine map connection rule" applies.]
+[Rule "can't go that way rule" applies.]
+[Rule "carry out stage rule" applies.]
+[Rule "say goodbye when moving rule" applies.]
+[Rule "move player and vehicle rule" applies.]
+[Rule "move floating objects rule" applies.]
+[Rule "check light in new location rule" applies.]
+[Rule "after stage rule" applies.]
+[Rule "After going from a room ( called R1 ) to a room ( called R2 )" applies.]
+[Rule "After going to hyperspace" applies.]
+[Rule "After going to a room" applies.]
+[Rule "clear current interlocutor on going rule" applies.]
+[Rule "investigate player's awareness after action rule" applies.]
+[Rule "report stage rule" applies.]
+[Rule "describe room gone into rule" applies.]
+[Rule "determine visibility ceiling rule" applies.]
+[Rule "investigate player's awareness before action rule" applies.]
+[Rule "player aware of his own actions rule" applies.]
+[Rule "check stage rule" applies.]
+[Rule "carry out stage rule" applies.]
+[Rule "declare everything unmentioned rule" applies.]
+[Rule "new room description heading rule" applies.]
+Agent Faraji is in the field office chief's office. [Rule "room description body text rule" applies.]
+Doris's office
+
+[Rule "room description astral passages rule" applies.]
+[Rule "room description paragraphs about objects rule" applies.]
+[Rule "initialise locale description rule" applies.]
+[Rule "find notable locale objects rule" applies.]
+[Rule "standard notable locale objects rule" applies.]
+[Rule "interesting locale paragraphs rule" applies.]
+[Rule "don't mention player's supporter in room descriptions rule" applies.]
+[Rule "don't mention scenery in room descriptions rule" applies.]
+[Rule "don't mention undescribed items in room descriptions rule" applies.]
+[Rule "set pronouns from items in room descriptions rule" applies.]
+[Rule "offer items to writing a paragraph about rule" applies.]
+[Rule "use initial appearance in room descriptions rule" applies.]
+[Rule "describe what's on mentioned supporters in room descriptions rule" applies.]
+[Rule "don't mention player's supporter in room descriptions rule" applies.]
+[Rule "don't mention scenery in room descriptions rule" applies.]
+[Rule "don't mention undescribed items in room descriptions rule" applies.]
+[Rule "set pronouns from items in room descriptions rule" applies.]
+[Rule "offer items to writing a paragraph about rule" applies.]
+[Rule "use initial appearance in room descriptions rule" applies.]
+[Rule "describe what's on mentioned supporters in room descriptions rule" applies.]
+[Rule "don't mention player's supporter in room descriptions rule" applies.]
+[Rule "don't mention scenery in room descriptions rule" applies.]
+[Rule "don't mention undescribed items in room descriptions rule" applies.]
+[Rule "set pronouns from items in room descriptions rule" applies.]
+[Rule "offer items to writing a paragraph about rule" applies.]
+[Rule "use initial appearance in room descriptions rule" applies.]
+Doris is sitting cross-legged in a chair, tapping his foot lazily on the desk.
+
+[Rule "describe what's on mentioned supporters in room descriptions rule" applies.]
+[Rule "new you-can-also-see rule" applies.]
+[Rule "After printing the locale description when player is in the field office chief's office and Doris greeted the player is false" applies.]
+"Ah, Larch," Doris exclaims, standing up to shake their hand. "I've been waiting for you to pay us a visit. Did you bring the thumb drive?"
+[Rule "After printing the locale description" applies.]
+[Rule "Rule for printing background sounds" applies.]
+
+[Rule "check new arrival rule" applies.]
+[Rule "mark items as seen when looking rule" applies.]
+[Rule "after stage rule" applies.]
+[Rule "investigate player's awareness after action rule" applies.]
+[Rule "report stage rule" applies.]
+[Rule "other people looking rule" applies.]
+[Rule "last specific action-processing rule" applies.]
+[Rule "last specific action-processing rule" applies.]
+[Rule "A first turn sequence rule" applies.]
+[Rule "every turn stage rule" applies.]
+[Rule "reset protocol rule" applies.]
+[Rule "Every turn" applies.]
+[Rule "Rule for printing insistent sounds" applies.]
+[Rule "phone noisiness rule" applies.]
+[Rule "phone noisiness rule" applies.]
+[Rule "Rule for determining the subjective volume for something ( called T )" applies.]
+[Rule "Audibility of a thing ( called T ) when location is indoors" applies.]
+[Rule "default sound description rule" applies.]
+[Rule "Audibility of a thing ( called T ) when location is indoors" applies.]
+[Rule "phone noisiness rule" applies.]
+[Rule "phone noisiness rule" applies.]
+[Rule "Every turn" applies.]
+[Rule "run behavior rule" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Every turn" applies.]
+[Rule "Every turn" applies.]
+[Rule "Every turn" applies.]
+[Rule "standard placement rule" applies.]
+[Rule "centered scaled drawing rule" applies.]
+[Rule "bosh picture selection rule" applies.]
+[Rule "queue quips rule" applies.]
+[Rule "For queueing quips following a quip ( called Q )" applies.]
+[Rule "ruling out quips rule" applies.]
+[Rule "For ruling out quips following a quip ( called Q )" applies.]
+[Rule "A last turn sequence rule" applies.]
+[Rule "display available quips rule" applies.]
+[Rule "For listing the available quips" applies.]
+[Rule "basic plausibility rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "ubiquity rule" applies.]
+[Rule "always-available rule" applies.]
+[Rule "basic plausibility rule" applies.]
+[Rule "An availability rule for no-thumb-drive" applies.]
+[Rule "basic availability rule" applies.]
+[Rule "basic plausibility rule" applies.]
+[Rule "queued quip rule" applies.]
+[Rule "basic plausibility rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "basic plausibility rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "basic plausibility rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "A plausibility rule for how-are-you" applies.]
+[Rule "basic plausibility rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "basic plausibility rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "basic plausibility rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "basic plausibility rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "basic plausibility rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "ubiquity rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "ubiquity rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+They can [Rule "Rule for list arranging" applies.]
+ask how to get home[Rule "standard delimiting rule" applies.]
+ or tell Doris they have the thumb drive[Rule "standard delimiting rule" applies.]
+.
+
+[Rule "notify score changes rule" applies.]
+[Rule "clear LPR rule" applies.]
+[Rule "reset skip sounds rule" applies.]
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>

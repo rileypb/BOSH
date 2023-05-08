@@ -660,6 +660,10 @@ Before printing the name of a person (called P):
 To say reset LPR:
 	if not expanding text for comparison purposes:
 		now last person referenced is nothing;
+		
+To say force pronoun for (P - a person):
+	if not expanding text for comparison purposes:
+		now last person referenced is P;
 
 To say we:
 	if the last person referenced is not the player:

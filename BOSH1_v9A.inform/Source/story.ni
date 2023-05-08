@@ -32,10 +32,10 @@ Include Early Declarations by Philip Riley.
 Include Basics by Philip Riley.
 Include Memories by Philip Riley.
  
+Include Simple Conversation by Philip Riley.
 Include Hyperspace by Philip Riley.
 Include BOSH Facts by Philip Riley.
 Include Image Strip by Philip Riley.
-Include Simple Conversation by Philip Riley.
 Include Swamp Park by Philip Riley.
 Include Conversations General by Philip Riley.
 Include Margaret by Philip Riley.
@@ -291,6 +291,15 @@ the can't switch on unless switchable rule response (A) is "That can't be switch
 the standard listing subject changes rule response (A) is "[italic type][quip-suggestion-phrase][the prepared list delimited in disjunctive style].[roman type]".
 the standard quip plausibility rule response (A) is "[italic type][quip-suggestion-phrase][the prepared list delimited in disjunctive style].[roman type]"]
 
+Book 5 - Automatic greeting
+
+After going to a room:
+	repeat with P running through the people in the location:
+		if P is not the player:
+			now the current interlocutor is P;
+			continue the activity;
+	continue the activity;
+
 Book 6 - Messages
 
 The parser error internal rule response (R) is "I[']m not sure what you're trying to say. I might just not recognize the words you're using."
@@ -314,8 +323,8 @@ Report knocking on a door:
 
 Book 8 - Script
 
-Klimp in the office is a scene. Klimp in the office begins when Chief Huffton Klimp is in BOSH chief's office.
-Moira in the office is a scene. Moira in the office begins when Moira Zin is in Moira's office.
+Klimp in-the-office is a scene. Klimp in-the-office begins when Chief Huffton Klimp is in BOSH chief's office.
+Moira in-the-office is a scene. Moira in-the-office begins when Moira Zin is in Moira's office.
 
 Book 9 - Concepts
 
@@ -798,13 +807,13 @@ After going from the Front Office to the BOSH office hallway for the first time:
 		say "[We] [extricate] [ourselves] from talking with Margaret.";
 	continue the action;
    
-Book 17 - Sound
+Book 16 - Sound
 
-Book 18 - Verbs
+Book 17 - Verbs
  
 To shake is a verb. To smile is a verb. To sigh is a verb. To peer is a verb. To turn is a verb. To observe is a verb. To gaze is a verb. To trudge is a verb. To walk is a verb. To step is a verb. To enter is a verb. To exit is a verb. To pause is a verb. To survey is a verb. To hand is a verb. To try is a verb. To see is a verb. To squeal is a verb. To tap is a verb. To curse is a verb. To rap is a verb. To explain is a verb. To gasp is a verb. To return is a verb. To ask is a verb. To think is a verb. To scrunch is a verb. To grimace is a verb. To mutter is a verb. To leave is a verb. To stand is a verb. To mount is a verb. To stammer is a verb. To polish is a verb. To interrupt is a verb. To raise is a verb. To chuckle is a verb. To lean is a verb. To consider is a verb. To nod is a verb. To extricate is a verb. To toss is a verb. To pick is a verb. To flatten is a verb. To remember is a verb.
 
-Book 19 - Images 
+Book 18 - Images 
 
 Figure Null is the file "clerk_portrait.png".
 
@@ -842,7 +851,10 @@ Figure Hyperspace is the file "location_hyperspace.png".
 Figure Enigma Lake is the file "location_enigma_lake.png".
 Figure Enigma Park is the file "location_enigma_park.png".
 Figure Field Office is the file "location_field_office.png".
-
+Figure Maggie is the file "maggie_portrait.png".
+Figure Minerva is the file "minerva_portrait.png".
+Figure Christy is the file "christy_portrait.png".
+ 
 Ezra Gaunt has portrait Figure Gaunt.
 Petula Goldberg has portrait Figure Goldberg.
 Larch Faraji has portrait Figure Faraji.
@@ -855,6 +867,9 @@ The pawn shop owner has portrait Figure Pawn Owner.
 The unknown voice has portrait Figure Caller.
 The blue flipphone has portrait Figure Phone.
 Moira Zin has portrait Figure Moira.
+Minerva has portrait Figure Minerva.
+Maggie has portrait Figure Maggie.
+Christy has portrait Figure Christy.
 
 Characters is a list of figure names that varies.
 
@@ -949,17 +964,17 @@ To resize windows:
 		draw speech bubble;
 	
 To call resize function:
-	(- ResizeGraphicsWindow(); -);
+	(- ResizeGraphicsWindow(); -); 
 	
-Book 20 - Not For Release
-
+Book 19 - Not For Release
+ 
 DEBUG is true.
 
 The access through barriers rule response (A) is "you have run afoul of the access through barriers rule!";
 
 test screwdriver with "w/x vent/ask for screwdriver/e/n/e/buy screwdriver/ask for screwdriver/w/s/sw/hello/ask for screwdriver/ask about laundromat owner/out/nw".
 
-test closet with "gonear closet/purloin glasses/wear them/knock on door".
+test closet with "gonear closet/purloin glasses/wear them/knock on door". 
 
 Volume 2 - The Story
 
