@@ -280,9 +280,168 @@ A phone is ringing not too far away.
     </item>
     <item nodeId="node-1158">
         <command xml:space="preserve">look behind desk</command>
-        <result xml:space="preserve">Faraji looks, but there is nothing behind the front desk.
+        <result xml:space="preserve">There are a number of shelves of office supplies behind the desk. There is also a heating vent on the floor here.
 
 A phone is ringing not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1179"></child>
+        </children>
+    </item>
+    <item nodeId="node-1179">
+        <command xml:space="preserve">x vent</command>
+        <result xml:space="preserve">A typical vent with a grill which one would hope would stop things like, say, a hex wrench from falling through. It's set in the floor behind the front desk. The vent is held closed by four screws.
+
+In the heating vent is a hex wrench.
+
+A phone is ringing not too far away.
+
+Faraji can ask for a screwdriver.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1180"></child>
+        </children>
+    </item>
+    <item nodeId="node-1180">
+        <command xml:space="preserve">take wrench</command>
+        <result xml:space="preserve">Faraji's fingers won't fit through the openings in the vent. They"ll have to open it first.
+
+A phone is ringing not too far away.
+
+They can ask for a screwdriver.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1181"></child>
+        </children>
+    </item>
+    <item nodeId="node-1181">
+        <command xml:space="preserve">ask for screwdriver</command>
+        <result xml:space="preserve">Faraji asks, "Margaret, where's the screwdriver?"
+
+"Umm... I think it was in a box we had to leave behind." Margaret looks embarrassed. "What? I never thought we'd need it. This isn't a construction site after all. Maybe if Klimp had paid for the bigger UHaul..." She stares past Faraji awkwardly.
+
+A phone is ringing not too far away.
+
+They can ask for a screwdriver.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1182"></child>
+        </children>
+    </item>
+    <item nodeId="node-1182">
+        <command xml:space="preserve">x margaret</command>
+        <result xml:space="preserve">Margaret is the latest occupant of the rapidly revolving post of office manager. Most of her job involves ordering stationery and office supplies, shredding documents, and keeping track of office equipment.
+
+A phone is ringing not too far away.
+
+Faraji can ask for a screwdriver.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1207"></child>
+        </children>
+    </item>
+    <item nodeId="node-1207">
+        <command xml:space="preserve">gonear closet</command>
+        <result xml:space="preserve">(the utility closet)
+Agent Faraji is in the dark. 
+
+It is pitch dark, and they can't see a thing.
+
+They can ask for a screwdriver.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1208"></child>
+        </children>
+    </item>
+    <item nodeId="node-1208">
+        <command xml:space="preserve">knock on door</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1209"></child>
+        </children>
+    </item>
+    <item nodeId="node-1209">
+        <command xml:space="preserve">purloin glasses</command>
+        <result xml:space="preserve">[Purloined.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1210"></child>
+        </children>
+    </item>
+    <item nodeId="node-1210">
+        <command xml:space="preserve">wear them</command>
+        <result xml:space="preserve">Faraji puts on the astral lenses.
+
+Agent Faraji is in the utility closet. 
+
+They can ask for a screwdriver.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1211"></child>
+        </children>
+    </item>
+    <item nodeId="node-1211">
+        <command xml:space="preserve">knock on door</command>
+        <result xml:space="preserve">After a few seconds, someone inserts a key in the lock and opens the door. It's Faraji's colleague Moira Zin. "How'd you get in there, Larch?"
+
+You exit the closet.
+
+Agent Faraji is in Moira's office. It is, like Moira herself, neat and orderly. She's clearly made the most of the meager funds she had for furnishing her office. Behind a modest yet functional desk is a modest yet functional office chair. Her bookshelves are filled with titles relating to investigative techniques, law, and skepticism. In the east wall is a closet door. The exit is to the south.
+
+Also here is Moira Zin.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1212"></child>
+        </children>
+    </item>
+    <item nodeId="node-1212">
+        <command xml:space="preserve">tell her about the portal</command>
+        <result xml:space="preserve">1.
+
+2.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1213"></child>
+        </children>
+    </item>
+    <item nodeId="node-1213">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Agent Faraji is in Moira's office. It is, like Moira herself, neat and orderly. She's clearly made the most of the meager funds she had for furnishing her office. Behind a modest yet functional desk is a modest yet functional office chair. Her bookshelves are filled with titles relating to investigative techniques, law, and skepticism. In the east wall is a closet door. The exit is to the south.
+
+Also here is Moira Zin.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1245"></child>
+        </children>
+    </item>
+    <item nodeId="node-1245">
+        <command xml:space="preserve">x zin</command>
+        <result xml:space="preserve">Agent Moira Zin is the very model of a competent Bureau agent. Hard-working, serious, no-nonsense but open-minded, she's the sober counter-balance to Klimp's sometimes childish credulity. Moira would clearly be a rising star if it weren't for the Bureau's pending dissolution.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1246"></child>
+        </children>
+    </item>
+    <item nodeId="node-1246">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">(first opening Moira's door)
+It seems to be locked.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
