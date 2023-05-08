@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 8500 words long.
+I've now read your source text, which is 8658 words long.
 
 
 -----------------------------------------------------
@@ -202,9 +202,9 @@ Phase XII ... Code generation
                                                             Fail: list of numbers (~) number = nothing
                                             Fail: nothing (~) real number = nothing
                                             Fail: list of numbers (~) real number = nothing
-        Regional: CONSTANT_VNT'bosh hq'-region(I368_bosh_hq)(I275'bosh hq')
+        Regional: CONSTANT_VNT'bosh hq'-region(I372_bosh_hq)(I279'bosh hq')
          == region
-        Regional: CONSTANT_VNT'bosh hq'-region(I368_bosh_hq)(I275'bosh hq')
+        Regional: CONSTANT_VNT'bosh hq'-region(I372_bosh_hq)(I279'bosh hq')
          == region
         Regional: CONSTANT_VNT'laundromat-region'-region(I277_laundromat_region)(I188'laundromat-region')
          == region
@@ -264,7 +264,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 195 files written as streams.
-CPU time: 379 centiseconds
+CPU time: 367 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

@@ -34,11 +34,11 @@ Include Memories by Philip Riley.
  
 Include Simple Conversation by Philip Riley.
 Include Hyperspace by Philip Riley.
-Include BOSH Facts by Philip Riley.
+Include BOSH Facts by Philip Riley. 
 Include Image Strip by Philip Riley.
 Include Swamp Park by Philip Riley.
 Include Conversations General by Philip Riley.
-Include Margaret by Philip Riley.
+Include Margaret by Philip Riley. 
 Include Enigma Lake by Philip Riley.
 
 Include Gender Options by Nathanael Nerode.  
@@ -384,6 +384,31 @@ Response of Klimp when asked about Senator Savra:
 	continue the action;]
 
 klimp is familiar. The help text of klimp is "Chief Huffton Klimp, the erstwhile head of [our] poor little bureau.".
+
+to borrow the skull is a questioning quip. 
+	Understand "juvenile/sasquatch" as to borrow the skull.
+	It mentions the juvenile sasquatch skull.
+	The comment is "[We] [ask], 'Chief, mind if I borrow the skull?'". 
+	The reply is "He looks pained for a moment. 'Uh, I'd rather you didn't. It's fragile.'".
+	It quip-supplies Chief Klimp.
+	
+After examining the juvenile sasquatch skull:
+	queue Chief Klimp with to borrow the skull;
+
+to borrow the lenses is a questioning quip. 
+	Understand "lens/glass/glasses" as to borrow the lenses.
+	It mentions the astral lenses.
+	The comment is "[We] [ask], 'Would it be okay if I borrowed the astral lenses for a while?'".
+	The reply is "'Sure! Why don't you scout the locality for astral phenomena?'".
+	It quip-supplies Chief Klimp.
+	
+After examining the astral lenses:  
+	queue Chief Klimp with to borrow the lenses;
+	
+After discussing to borrow the lenses:
+	now the player owns the astral lenses;
+	try taking the astral lenses;
+	
 
 Moira Zin is a woman. The description is "Agent Moira Zin is the very model of a competent Bureau agent. Hard-working, serious, no-nonsense but open-minded, she's the sober counter-balance to Klimp's sometimes childish credulity. Moira would clearly be a rising star if it weren't for the Bureau's pending dissolution."
 
@@ -973,6 +998,8 @@ DEBUG is true.
 The access through barriers rule response (A) is "you have run afoul of the access through barriers rule!";
 
 test screwdriver with "w/x vent/ask for screwdriver/e/n/e/buy screwdriver/ask for screwdriver/w/s/sw/hello/ask for screwdriver/ask about laundromat owner/out/nw".
+
+test laundry with "test screwdriver/w/w/w".
 
 test closet with "gonear closet/purloin glasses/wear them/knock on door". 
 
