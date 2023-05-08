@@ -15,7 +15,6 @@ A light source can be fluorescent.
 Definition: a room is fluorescent-lit:
 	if it contains a fluorescent light source (called F):
 		if F is lit:
-			say "Fluorescent: [the F].";
 			decide yes;
 	decide no;
 	

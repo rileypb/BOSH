@@ -407,7 +407,10 @@ After examining the astral lenses:
 	
 After discussing to borrow the lenses:
 	now the player owns the astral lenses;
-	try taking the astral lenses;
+	silently try taking the astral lenses;
+	if the player carries the astral lenses:
+		say "[We] [take] the astral lenses.";
+	continue the activity;
 	
 
 Moira Zin is a woman. The description is "Agent Moira Zin is the very model of a competent Bureau agent. Hard-working, serious, no-nonsense but open-minded, she's the sober counter-balance to Klimp's sometimes childish credulity. Moira would clearly be a rising star if it weren't for the Bureau's pending dissolution."
