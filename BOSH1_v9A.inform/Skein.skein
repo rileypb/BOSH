@@ -400,6 +400,8 @@ Agent Faraji is in Moira's office. It is, like Moira herself, neat and orderly. 
 
 Also here is Moira Zin.
 
+A phone is ringing not too far away.
+
 Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
 
 &gt;</result>
@@ -413,6 +415,8 @@ Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to
 
 2.
 
+A phone is ringing not too far away.
+
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1213"></child>
@@ -424,6 +428,8 @@ Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to
 
 Also here is Moira Zin.
 
+A phone is ringing not too far away.
+
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1245"></child>
@@ -433,6 +439,8 @@ Also here is Moira Zin.
         <command xml:space="preserve">x zin</command>
         <result xml:space="preserve">Agent Moira Zin is the very model of a competent Bureau agent. Hard-working, serious, no-nonsense but open-minded, she's the sober counter-balance to Klimp's sometimes childish credulity. Moira would clearly be a rising star if it weren't for the Bureau's pending dissolution.
 
+A phone is ringing not too far away.
+
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1246"></child>
@@ -441,7 +449,36 @@ Also here is Moira Zin.
     <item nodeId="node-1246">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">(first opening Moira's door)
-It seems to be locked.
+Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
+
+A phone is ringing to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1313"></child>
+        </children>
+    </item>
+    <item nodeId="node-1313">
+        <command xml:space="preserve">gonear reception</command>
+        <result xml:space="preserve">Agent Faraji is at field office reception. Hooray you made it!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1314"></child>
+        </children>
+    </item>
+    <item nodeId="node-1314">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Agent Faraji is in the field office hallway. Hallway
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1315"></child>
+        </children>
+    </item>
+    <item nodeId="node-1315">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Agent Faraji is in the field office chief's office. Doris's office
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>

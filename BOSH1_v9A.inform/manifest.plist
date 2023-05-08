@@ -54,6 +54,8 @@
             <string>Figures/location_enigma_lake.png</string>
             <key>26</key>
             <string>Figures/location_enigma_park.png</string>
+            <key>27</key>
+            <string>Figures/location_field_office.png</string>
         </dict>
     </dict>
 </plist>

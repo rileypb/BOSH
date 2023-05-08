@@ -840,7 +840,8 @@ Figure White Tunnel is the file "location_white_tunnel.png".
 Figure Moira is the file "moira_portrait.png".
 Figure Hyperspace is the file "location_hyperspace.png".
 Figure Enigma Lake is the file "location_enigma_lake.png".
-Figure Enigma Park is the file "location_enigma_park.png"
+Figure Enigma Park is the file "location_enigma_park.png".
+Figure Field Office is the file "location_field_office.png".
 
 Ezra Gaunt has portrait Figure Gaunt.
 Petula Goldberg has portrait Figure Goldberg.
@@ -868,6 +869,7 @@ To decide which figure name is the picture of the location:
 	if location is Featureless Hyperplane, now result is Figure Hyperspace;
 	if location is in ELR, now result is Figure Enigma Lake; 
 	if location is Enigma Park, now result is Figure Enigma Park;
+	if location is in field office area, now result is Figure Field Office;
 	decide on result;
 	
 

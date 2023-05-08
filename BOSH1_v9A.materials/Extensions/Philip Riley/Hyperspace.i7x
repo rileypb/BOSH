@@ -389,11 +389,13 @@ Check going down from Featureless Hyperplane:
 
 Volume 3 - Hyperspace Field Office
 
-field office reception is below Featureless Hyperplane. The preposition is "at". "Hooray you made it!".
+field office area is a region. It is in hyperspace.
 
-the field office hallway is west of field office reception. "Hallway".
+field office reception is below Featureless Hyperplane. The preposition is "at". It is in field office area. "Hooray you made it!".
 
-the field office chief's office is west of the field office hallway. "Doris's office".
+the field office hallway is west of field office reception. It is in field office area. "Hallway".
+
+the field office chief's office is west of the field office hallway. It is in field office area. "Doris's office".
 
 
 
