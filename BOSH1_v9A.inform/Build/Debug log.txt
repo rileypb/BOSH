@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 8315 words long.
+I've now read your source text, which is 8412 words long.
 
 
 -----------------------------------------------------
@@ -41,7 +41,7 @@ I've also read Door Utils by Philip Riley, which is 41 words long.
 I've also read Real People by Philip Riley, which is 397 words long.
 I've also read New Light by Philip Riley, which is 111 words long.
 I've also read Early Declarations by Philip Riley, which is 16 words long.
-I've also read Basics by Philip Riley, which is 158 words long.
+I've also read Basics by Philip Riley, which is 195 words long.
 I've also read Memories by Philip Riley, which is 220 words long.
 I've also read Hyperspace by Philip Riley, which is 2311 words long.
 I've also read BOSH Facts by Philip Riley, which is 94 words long.
@@ -210,6 +210,10 @@ Phase XII ... Code generation
          == region
         Regional: CONSTANT_VNT'laundromat-region'-region(I266_laundromat_region)(I177'laundromat-region')
          == region
+        Regional: CONSTANT_VNT'elr'-region(I305_elr)(I216'elr')
+         == region
+        Regional: CONSTANT_VNT'elr'-region(I305_elr)(I216'elr')
+         == region
         Regional: CONSTANT_VNT'hyperspace'-region(I192_hyperspace)(I110'hyperspace')
          == region
         Regional: CONSTANT_VNT'hyperspace'-region(I192_hyperspace)(I110'hyperspace')
@@ -255,8 +259,8 @@ Providing for a total heap of 8192, given requirement of 8192
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 193 files written as streams.
-CPU time: 360 centiseconds
+Total of 195 files written as streams.
+CPU time: 365 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

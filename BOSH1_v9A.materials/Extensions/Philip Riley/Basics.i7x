@@ -4,11 +4,13 @@ Volume 1 - Spatial relationships
 
 Behindness relates various things to one thing. The verb to be behind means the behindness relation.
 
+A thing has a text called the behind description.
+
 Looking behind is an action applying to one thing. Understand "look behind [something]" as looking behind.
 
 Looking behind action has a list of things called hidden.
 
-Check looking behind something when nothing is behind the noun:
+Check looking behind something when nothing is behind the noun and the behind description of the noun is "":
 	if the noun is the player:
 		say "[We] [look], but there is nothing behind [us]." instead;
 	say "[We] [look], but there is nothing behind [the noun]." instead;
@@ -19,6 +21,9 @@ Carry out looking behind something:
 			now X is not behind the noun;
 			now X is in the location;
 			add X to hidden;
+			
+Report looking behind something when the behind description of the noun is not "":
+	say "[behind description of the noun][line break]";
 
 Report looking behind something:
 	if hidden is not empty:

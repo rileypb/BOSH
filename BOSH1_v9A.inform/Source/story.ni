@@ -613,8 +613,9 @@ A beat-up cardboard box is a thing. It is in the room of stuff. It is behind the
 
 The shelves of office supplies are in the front office. They are plural-named. They are scenery. "Pens, paper, nothing [we're] really concerned with now."
 
-The thumb drive is a thing in the room of stuff.
-finding the drive before is a memory in the room of stuff. The description is "what is the story of the thumb drive?".
+The thumb drive is a thing in the room of stuff. The description of the thumb drive is "It's a red plastic thumb drive, with what look like symbols scratched on the surface, but they're like no symbols you've ever seen. The metal USB end is somewhat corroded."
+
+finding the drive before is a memory in the room of stuff. The description is "[We] [remember] finding the drive in an ancient Onandaga root cellar on a farm in upstate New York. [We] [have] never been able to read it.".
 
 some cardboard boxes are scenery in the front office. "There is a stack of boxes in the corner.".
 some biff-flattened-boxes are a thing in the room of stuff. They are privately-named. The printed name is "flattened boxes". Understand "flattened/boxes" as biff-flattened-boxes. The description is "Some cardboard boxes that have been broken down flat for recycling.".
@@ -637,8 +638,7 @@ Instead of examining Biff's computer when the thumb drive is not seen:
 	now the thumb drive is seen;
 	remember finding the drive before for the player;
 
-Report looking behind the front desk:
-	say "There are a number of shelves of office supplies behind the desk. There is also a heating vent on the floor here.";
+The behind description of the front desk is "There are a number of shelves of office supplies behind the desk. There is also a heating vent on the floor here.";
 
 The heating vent is a scenery container in the front office. It is openable, closed, lockable, transparent and locked. "A typical vent with a grill which one would hope would stop things like, say, a hex wrench from falling through. It's set in the floor behind the front desk. The vent is held closed by four screws."
 The hex wrench is in the heating vent.
@@ -801,7 +801,7 @@ Book 17 - Sound
 
 Book 18 - Verbs
  
-To shake is a verb. To smile is a verb. To sigh is a verb. To peer is a verb. To turn is a verb. To observe is a verb. To gaze is a verb. To trudge is a verb. To walk is a verb. To step is a verb. To enter is a verb. To exit is a verb. To pause is a verb. To survey is a verb. To hand is a verb. To try is a verb. To see is a verb. To squeal is a verb. To tap is a verb. To curse is a verb. To rap is a verb. To explain is a verb. To gasp is a verb. To return is a verb. To ask is a verb. To think is a verb. To scrunch is a verb. To grimace is a verb. To mutter is a verb. To leave is a verb. To stand is a verb. To mount is a verb. To stammer is a verb. To polish is a verb. To interrupt is a verb. To raise is a verb. To chuckle is a verb. To lean is a verb. To consider is a verb. To nod is a verb. To extricate is a verb. To toss is a verb. To pick is a verb. To flatten is a verb.
+To shake is a verb. To smile is a verb. To sigh is a verb. To peer is a verb. To turn is a verb. To observe is a verb. To gaze is a verb. To trudge is a verb. To walk is a verb. To step is a verb. To enter is a verb. To exit is a verb. To pause is a verb. To survey is a verb. To hand is a verb. To try is a verb. To see is a verb. To squeal is a verb. To tap is a verb. To curse is a verb. To rap is a verb. To explain is a verb. To gasp is a verb. To return is a verb. To ask is a verb. To think is a verb. To scrunch is a verb. To grimace is a verb. To mutter is a verb. To leave is a verb. To stand is a verb. To mount is a verb. To stammer is a verb. To polish is a verb. To interrupt is a verb. To raise is a verb. To chuckle is a verb. To lean is a verb. To consider is a verb. To nod is a verb. To extricate is a verb. To toss is a verb. To pick is a verb. To flatten is a verb. To remember is a verb.
 
 Book 19 - Images 
 
@@ -838,6 +838,8 @@ Figure Laundromat is the file "location_laundromat.png".
 Figure White Tunnel is the file "location_white_tunnel.png".
 Figure Moira is the file "moira_portrait.png".
 Figure Hyperspace is the file "location_hyperspace.png".
+Figure Enigma Lake is the file "location_enigma_lake.png".
+Figure Enigma Park is the file "location_enigma_park.png"
 
 Ezra Gaunt has portrait Figure Gaunt.
 Petula Goldberg has portrait Figure Goldberg.
@@ -863,6 +865,8 @@ To decide which figure name is the picture of the location:
 	if location is in Laundromat-region, now result is Figure Laundromat;
 	If location is astral-tunnel-1 or location is astral-tunnel-2 or location is astral-tunnel-3, now result is Figure White Tunnel;
 	if location is Featureless Hyperplane, now result is Figure Hyperspace;
+	if location is in ELR, now result is Figure Enigma Lake; 
+	if location is Enigma Park, now result is Figure Enigma Park;
 	decide on result;
 	
 

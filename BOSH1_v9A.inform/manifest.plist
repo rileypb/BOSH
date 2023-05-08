@@ -50,6 +50,10 @@
             <string>Figures/moira_portrait.png</string>
             <key>24</key>
             <string>Figures/location_hyperspace.png</string>
+            <key>25</key>
+            <string>Figures/location_enigma_lake.png</string>
+            <key>26</key>
+            <string>Figures/location_enigma_park.png</string>
         </dict>
     </dict>
 </plist>
