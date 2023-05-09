@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 8675 words long.
+I've now read your source text, which is 8620 words long.
 
 
 -----------------------------------------------------
@@ -43,8 +43,8 @@ I've also read New Light by Philip Riley, which is 107 words long.
 I've also read Early Declarations by Philip Riley, which is 16 words long.
 I've also read Basics by Philip Riley, which is 195 words long.
 I've also read Memories by Philip Riley, which is 220 words long.
-I've also read Simple Conversation by Philip Riley, which is 1712 words long.
-I've also read Hyperspace by Philip Riley, which is 2831 words long.
+I've also read Simple Conversation by Philip Riley, which is 1783 words long.
+I've also read Hyperspace by Philip Riley, which is 2946 words long.
 I've also read BOSH Facts by Philip Riley, which is 94 words long.
 I've also read Image Strip by Philip Riley, which is 2080 words long.
 I've also read Swamp Park by Philip Riley, which is 2345 words long.
@@ -202,17 +202,17 @@ Phase XII ... Code generation
                                                             Fail: list of numbers (~) number = nothing
                                             Fail: nothing (~) real number = nothing
                                             Fail: list of numbers (~) real number = nothing
-        Regional: CONSTANT_VNT'bosh hq'-region(I372_bosh_hq)(I279'bosh hq')
+        Regional: CONSTANT_VNT'bosh hq'-region(I376_bosh_hq)(I283'bosh hq')
          == region
-        Regional: CONSTANT_VNT'bosh hq'-region(I372_bosh_hq)(I279'bosh hq')
+        Regional: CONSTANT_VNT'bosh hq'-region(I376_bosh_hq)(I283'bosh hq')
          == region
-        Regional: CONSTANT_VNT'laundromat-region'-region(I277_laundromat_region)(I188'laundromat-region')
+        Regional: CONSTANT_VNT'laundromat-region'-region(I281_laundromat_region)(I192'laundromat-region')
          == region
-        Regional: CONSTANT_VNT'laundromat-region'-region(I277_laundromat_region)(I188'laundromat-region')
+        Regional: CONSTANT_VNT'laundromat-region'-region(I281_laundromat_region)(I192'laundromat-region')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I316_elr)(I227'elr')
+        Regional: CONSTANT_VNT'elr'-region(I320_elr)(I231'elr')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I316_elr)(I227'elr')
+        Regional: CONSTANT_VNT'elr'-region(I320_elr)(I231'elr')
          == region
         Regional: CONSTANT_VNT'field office area'-region(I231_field_office_area)(I144'field office area')
          == region
@@ -263,8 +263,8 @@ Providing for a total heap of 8192, given requirement of 8192
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 195 files written as streams.
-CPU time: 354 centiseconds
+Total of 196 files written as streams.
+CPU time: 362 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

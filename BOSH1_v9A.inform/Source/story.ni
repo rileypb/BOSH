@@ -378,10 +378,6 @@ Response of Klimp when asked about the Bureau of Strange Happenings:
 
 Response of Klimp when asked about Senator Savra:
 	say "Klimp stops short of actually spitting. 'The lowest of the low.'";
-	
-[Every turn when the location is BOSH chief's office for the first time:
-	say "Klimp looks annoyed. 'What's with that phone ringing? Someone answer it.'"
-	continue the action;]
 
 klimp is familiar. The help text of klimp is "Chief Huffton Klimp, the erstwhile head of [our] poor little bureau.".
 
@@ -646,7 +642,7 @@ Understand "newspaper", "paper", "news" as the Washington Herald.
 
 The front desk is a scenery supporter in the front office. Understand "sales", "counter" as the front desk. The description is "The former sales counter now functions as a desk for the office manager (currently [Margaret]). Behind it are a number of shelves holding office supplies."
 
-A beat-up cardboard box is a thing. It is in the room of stuff. It is behind the front desk. The description is "Crushed and bent, it's holding together, but just barely[if biff's computer is in the beat-up cardboard box and biff's computer is not seen]. There seems to be something inside[end if]." It is closed and openable.
+[A beat-up cardboard box is a thing. It is in the room of stuff. It is behind the front desk. The description is "Crushed and bent, it's holding together, but just barely[if biff's computer is in the beat-up cardboard box and biff's computer is not seen]. There seems to be something inside[end if]." It is closed and openable.]
 
 The shelves of office supplies are in the front office. They are plural-named. They are scenery. "Pens, paper, nothing [we're] really concerned with now."
 
@@ -667,13 +663,13 @@ Instead of taking the cardboard boxes:
 		if Margaret is in the location:
 			initiate Margaret's box routine;
 
-Biff's computer is in the beat-up cardboard box. It is privately-named. The printed name is "[our] computer". Understand "computer" as biff's computer. The description is "[Our] computer has been damaged beyond repair.".
+Biff's computer is a thing. It is privately-named. It is behind the front desk. The printed name is "[our] computer". Understand "computer" as biff's computer. The description is "[Our] computer has been damaged beyond repair.".
  
 Instead of examining Biff's computer when the thumb drive is not seen:
 	say "[description of biff's computer] But [we] [do] find a thumb drive and [take] it.";
 	now the player carries the thumb drive;
 	now the thumb drive is seen;
-	remember finding the drive before for the player;
+	remember finding the drive before for the player;	
 
 The behind description of the front desk is "There are a number of shelves of office supplies behind the desk. There is also a heating vent on the floor here.";
 

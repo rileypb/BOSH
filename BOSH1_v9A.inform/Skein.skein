@@ -20,7 +20,7 @@ or (3) Larch Faraji (they/them), lead singer of the third wave neo-old-school pu
 
 The Bureau of Strange Happenings
 An Interactive Phenomenon by Phil Riley
-Release 1 / Serial number 230508 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
+Release 1 / Serial number 230509 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
 
 Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
 
@@ -28,11 +28,11 @@ Their Hyundai is parked nearby.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1188"></child>
-            <child nodeId="node-1294"></child>
+        <children><child nodeId="node-1313"></child>
+            <child nodeId="node-1003"></child>
         </children>
     </item>
-    <item nodeId="node-1294">
+    <item nodeId="node-1003">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">Just like in the store this once was, the door chimes as Faraji walks in.
 
@@ -46,10 +46,12 @@ A phone is ringing not too far away.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1295"></child>
+        <children><child nodeId="node-1076"></child>
+            <child nodeId="node-1004"></child>
+            <child nodeId="node-1092"></child>
         </children>
     </item>
-    <item nodeId="node-1295">
+    <item nodeId="node-1092">
         <command xml:space="preserve">x vent</command>
         <result xml:space="preserve">A typical vent with a grill which one would hope would stop things like, say, a hex wrench from falling through. It's set in the floor behind the front desk. The vent is held closed by four screws.
 
@@ -61,28 +63,11 @@ Faraji can ask for a screwdriver.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1300"></child>
-            <child nodeId="node-1297"></child>
+        <children><child nodeId="node-1093"></child>
         </children>
     </item>
-    <item nodeId="node-1297">
-        <command xml:space="preserve">rules</command>
-        <result xml:space="preserve">Rules tracing now switched on. Type "rules off" to switch it off again, or "rules all" to include even rules which do not apply.
-
-[Rule "clear LPR rule" applies.]
-[Rule "reset skip sounds rule" applies.]
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1296"></child>
-        </children>
-    </item>
-    <item nodeId="node-1296">
-        <command xml:space="preserve">ask for screwdriver</command>
-        <result xml:space="preserve"></result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1300">
-        <command xml:space="preserve">ask for screwdriver</command>
+    <item nodeId="node-1093">
+        <command xml:space="preserve">ask for a screwdriver</command>
         <result xml:space="preserve">Faraji asks, "Margaret, where's the screwdriver?"
 
 "Umm... I think it was in a box we had to leave behind." Margaret looks embarrassed. "What? I never thought we'd need it. This isn't a construction site after all. Maybe if Klimp had paid for the bigger UHaul..." She stares past Faraji awkwardly.
@@ -93,27 +78,1106 @@ They can ask for a screwdriver.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1094"></child>
+        </children>
     </item>
-    <item nodeId="node-1188">
-        <command xml:space="preserve">test laundry</command>
-        <result xml:space="preserve">(Testing.)
+    <item nodeId="node-1094">
+        <command xml:space="preserve">ask about thumb</command>
+        <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
 
-&gt;[1] test screwdriver
-(Testing.)
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1095"></child>
+        </children>
+    </item>
+    <item nodeId="node-1095">
+        <command xml:space="preserve">ask for thumb</command>
+        <result xml:space="preserve">There's nothing like that nearby.
 
-&gt;[2] w
-Just like in the store this once was, the door chimes as Faraji walks in.
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1096"></child>
+        </children>
+    </item>
+    <item nodeId="node-1096">
+        <command xml:space="preserve">ask about drive</command>
+        <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
 
-Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1097"></child>
+        </children>
+    </item>
+    <item nodeId="node-1097">
+        <command xml:space="preserve">look behind desk</command>
+        <result xml:space="preserve">There are a number of shelves of office supplies behind the desk. There is also a heating vent on the floor here.
 
-The Bureau's latest office manager, Margaret Chao is bustling around with unrestrained enthusiasm, unpacking boxes and assembling an approximation of a respectable front office, all as if the Bureau isn't going to be shut down before the year is out. She sees Faraji and practically squeals. "Agent Faraji! I'm sorry -- Larch! How are you? I hope you don't mind -- I took the liberty of putting your desk together. I just love hex wrenches, don't you? Also, your new phone is here. I put it in your desk. Good timing! Now I just need you to give me your old phone so I can deactivate it."
-
-Faraji hands Margaret their old phone. Margaret taps a few keys on her computer and says "There! All settled. Hey, what are you doing for lunch? Let me know when you get hungry!"
+Faraji finds their computer and pulls it out.
 
 A phone is ringing not too far away.
 
-&gt;[3] x vent
-A typical vent with a grill which one would hope would stop things like, say, a hex wrench from falling through. It's set in the floor behind the front desk. The vent is held closed by four screws.
+They can ask for a screwdriver.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1098"></child>
+        </children>
+    </item>
+    <item nodeId="node-1098">
+        <command xml:space="preserve">x computer</command>
+        <result xml:space="preserve">Faraji's computer has been damaged beyond repair. But they do find a thumb drive and take it.
+
+A phone is ringing not too far away.
+
+They can remember finding the drive before.
+
+They can ask for a screwdriver.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1099"></child>
+        </children>
+    </item>
+    <item nodeId="node-1099">
+        <command xml:space="preserve">ask about thumb</command>
+        <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1100"></child>
+        </children>
+    </item>
+    <item nodeId="node-1100">
+        <command xml:space="preserve">x thum</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1101"></child>
+        </children>
+    </item>
+    <item nodeId="node-1101">
+        <command xml:space="preserve">x thumb</command>
+        <result xml:space="preserve">It's a red plastic thumb drive, with what look like symbols scratched on the surface, but they're like no symbols you've ever seen. The metal USB end is somewhat corroded.
+
+A phone is ringing not too far away.
+
+Faraji can ask for a screwdriver.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1102"></child>
+        </children>
+    </item>
+    <item nodeId="node-1102">
+        <command xml:space="preserve">ask margaret about thumb drive</command>
+        <result xml:space="preserve">That doesn't seem to be a topic of conversation at the moment.
+
+A phone is ringing not too far away.
+
+Faraji can ask for a screwdriver.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1115"></child>
+            <child nodeId="node-1142"></child>
+        </children>
+    </item>
+    <item nodeId="node-1142">
+        <command xml:space="preserve">ask margaret about dskj</command>
+        <result xml:space="preserve">That doesn't seem to be a topic of conversation at the moment.
+
+A phone is ringing not too far away.
+
+Faraji can ask for a screwdriver.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1156"></child>
+            <child nodeId="node-1192"></child>
+        </children>
+    </item>
+    <item nodeId="node-1192">
+        <command xml:space="preserve">tell margaret about alsdfqwer</command>
+        <result xml:space="preserve">That doesn't seem to be a topic of conversation at the moment.
+
+A phone is ringing not too far away.
+
+Faraji can ask for a screwdriver.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1221"></child>
+        </children>
+    </item>
+    <item nodeId="node-1221">
+        <command xml:space="preserve">gonear reception</command>
+        <result xml:space="preserve">Agent Faraji is at field office reception. Hooray you made it!
+
+Also here is Maggie.
+
+Faraji can ask for a screwdriver.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1222"></child>
+        </children>
+    </item>
+    <item nodeId="node-1222">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Agent Faraji is in the field office hallway. Hallway
+
+They can ask for a screwdriver.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1223"></child>
+        </children>
+    </item>
+    <item nodeId="node-1223">
+        <command xml:space="preserve">gonear margaret</command>
+        <result xml:space="preserve">Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
+
+The Bureau's latest office manager, Margaret Chao is bustling around with unrestrained enthusiasm.
+
+Also here is their computer.
+
+A phone is ringing not too far away.
+
+They can ask for a screwdriver.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1224"></child>
+        </children>
+    </item>
+    <item nodeId="node-1224">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Faraji extricates themself from talking with Margaret.
+
+Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
+
+A phone is ringing to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1225"></child>
+        </children>
+    </item>
+    <item nodeId="node-1225">
+        <command xml:space="preserve">gonear reception</command>
+        <result xml:space="preserve">Agent Faraji is at field office reception. Hooray you made it!
+
+Also here is Maggie.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1226"></child>
+        </children>
+    </item>
+    <item nodeId="node-1226">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Agent Faraji is in the field office hallway. Hallway
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1227"></child>
+        </children>
+    </item>
+    <item nodeId="node-1227">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Agent Faraji is in the field office chief's office. Doris's office
+
+Doris is sitting cross-legged in a chair, tapping his foot lazily on the desk.
+
+"Ah, Larch," Doris exclaims, standing up to shake their hand. "I've been waiting for you to pay us a visit. Did you bring the thumb drive?"
+
+They can ask how to get home or tell Doris they brought the thumb drive.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1228"></child>
+        </children>
+    </item>
+    <item nodeId="node-1228">
+        <command xml:space="preserve">they have the thumb drive</command>
+        <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1229"></child>
+        </children>
+    </item>
+    <item nodeId="node-1229">
+        <command xml:space="preserve">tell doris about the thumb drive</command>
+        <result xml:space="preserve">That doesn't seem to be a topic of conversation at the moment.
+
+Faraji can ask how to get home or tell Doris they brought the thumb drive.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1230"></child>
+        </children>
+    </item>
+    <item nodeId="node-1230">
+        <command xml:space="preserve">tell doris they have the thumb drive</command>
+        <result xml:space="preserve">Doris does not respond.
+
+Faraji can ask how to get home or tell Doris they brought the thumb drive.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1231"></child>
+        </children>
+    </item>
+    <item nodeId="node-1231">
+        <command xml:space="preserve">ask about home</command>
+        <result xml:space="preserve">Faraji asks, "Just how can I get home from here?"
+
+Doris hardly looks up from his work. "Go ask Maggie; she can help you."
+
+They can ask how to get home or tell Doris they brought the thumb drive.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1232"></child>
+        </children>
+    </item>
+    <item nodeId="node-1232">
+        <command xml:space="preserve">ask about drive</command>
+        <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1233"></child>
+        </children>
+    </item>
+    <item nodeId="node-1233">
+        <command xml:space="preserve">she has drive</command>
+        <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1234"></child>
+        </children>
+    </item>
+    <item nodeId="node-1234">
+        <command xml:space="preserve">tell she has drive</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1263"></child>
+        </children>
+    </item>
+    <item nodeId="node-1263">
+        <command xml:space="preserve">tell doris drive</command>
+        <result xml:space="preserve">"Yes!"
+
+"Well, you'll just have to go back and get it, won't you? We can't be fooling around when the fate of the timeline is at stake!" Doris says.
+
+Faraji can ask how to get home.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1264"></child>
+        </children>
+    </item>
+    <item nodeId="node-1264">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">field office chief's office
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1265"></child>
+        </children>
+    </item>
+    <item nodeId="node-1265">
+        <command xml:space="preserve">tell doris they have the thumb drive</command>
+        <result xml:space="preserve">Doris does not respond.
+
+Faraji can ask how to get home or tell Doris they brought the thumb drive.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1266"></child>
+        </children>
+    </item>
+    <item nodeId="node-1266">
+        <command xml:space="preserve">actions</command>
+        <result xml:space="preserve">Actions listing on.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1267"></child>
+        </children>
+    </item>
+    <item nodeId="node-1267">
+        <command xml:space="preserve">tell doris they have the thumb drive</command>
+        <result xml:space="preserve">[answering Doris that "they have the thumb drive"]
+Doris does not respond.
+[answering Doris that "they have the thumb drive" - succeeded]
+
+Faraji can ask how to get home or tell Doris they brought the thumb drive.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1268"></child>
+        </children>
+    </item>
+    <item nodeId="node-1268">
+        <command xml:space="preserve">tell doris drive</command>
+        <result xml:space="preserve">[discussing they brought the thumb drive with Doris]
+[(1) discussing they brought the thumb drive]
+"Yes!"
+
+"Well, you'll just have to go back and get it, won't you? We can't be fooling around when the fate of the timeline is at stake!" Doris says.
+
+[(1) discussing they brought the thumb drive - succeeded]
+
+[discussing they brought the thumb drive with Doris - succeeded]
+
+Faraji can ask how to get home.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1269"></child>
+        </children>
+    </item>
+    <item nodeId="node-1269">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">field office chief's office
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1270"></child>
+        </children>
+    </item>
+    <item nodeId="node-1270">
+        <command xml:space="preserve">tell doris they have thumb drive</command>
+        <result xml:space="preserve">[answering Doris that "they have thumb drive"]
+Doris does not respond.
+[answering Doris that "they have thumb drive" - succeeded]
+
+Faraji can ask how to get home or tell Doris they brought the thumb drive.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1271"></child>
+        </children>
+    </item>
+    <item nodeId="node-1271">
+        <command xml:space="preserve">tell doris have thumb drive</command>
+        <result xml:space="preserve">[answering Doris that "have thumb drive"]
+Doris does not respond.
+[answering Doris that "have thumb drive" - succeeded]
+
+Faraji can ask how to get home or tell Doris they brought the thumb drive.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1272"></child>
+        </children>
+    </item>
+    <item nodeId="node-1272">
+        <command xml:space="preserve">tell doris  thumb drive</command>
+        <result xml:space="preserve">[discussing they brought the thumb drive with Doris]
+[(1) discussing they brought the thumb drive]
+"Yes!"
+
+"Well, you'll just have to go back and get it, won't you? We can't be fooling around when the fate of the timeline is at stake!" Doris says.
+
+[(1) discussing they brought the thumb drive - succeeded]
+
+[discussing they brought the thumb drive with Doris - succeeded]
+
+Faraji can ask how to get home.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1273"></child>
+        </children>
+    </item>
+    <item nodeId="node-1273">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">field office chief's office
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1156">
+        <command xml:space="preserve">actions</command>
+        <result xml:space="preserve">Actions listing on.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1157"></child>
+        </children>
+    </item>
+    <item nodeId="node-1157">
+        <command xml:space="preserve">ask margaret about dskj</command>
+        <result xml:space="preserve">[asking Margaret about "dskj"]
+That doesn't seem to be a topic of conversation at the moment.
+[asking Margaret about "dskj" - failed the check asking someone about something]
+
+A phone is ringing not too far away.
+
+Faraji can ask for a screwdriver.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1158"></child>
+        </children>
+    </item>
+    <item nodeId="node-1158">
+        <command xml:space="preserve">actions off</command>
+        <result xml:space="preserve">Actions listing off.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1159"></child>
+        </children>
+    </item>
+    <item nodeId="node-1159">
+        <command xml:space="preserve">rules</command>
+        <result xml:space="preserve">Rules tracing now switched on. Type "rules off" to switch it off again, or "rules all" to include even rules which do not apply.
+
+[Rule "clear LPR rule" applies.]
+[Rule "reset skip sounds rule" applies.]
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1160"></child>
+        </children>
+    </item>
+    <item nodeId="node-1160">
+        <command xml:space="preserve">ask margaret about dskj</command>
+        <result xml:space="preserve">[Rule "redirect to GEP line input rule" applies.]
+[Rule "ordinary checking for content rule" applies.]
+[Rule "After reading a command" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "universal availability rule" applies.]
+[Rule "An availability rule for about the whereabouts of the desk key" applies.]
+[Rule "basic availability rule" applies.]
+[Rule "An availability rule for about the status of the computer" applies.]
+[Rule "basic availability rule" applies.]
+[Rule "An availability rule for for the wrench" applies.]
+[Rule "basic availability rule" applies.]
+[Rule "queued quip rule" applies.]
+[Rule "An availability rule for to unlock the backdoor" applies.]
+[Rule "basic availability rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "Rule for deciding the concealed possessions of margaret" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "universal availability rule" applies.]
+[Rule "An availability rule for about the whereabouts of the desk key" applies.]
+[Rule "basic availability rule" applies.]
+[Rule "An availability rule for about the status of the computer" applies.]
+[Rule "basic availability rule" applies.]
+[Rule "An availability rule for for the wrench" applies.]
+[Rule "basic availability rule" applies.]
+[Rule "queued quip rule" applies.]
+[Rule "An availability rule for to unlock the backdoor" applies.]
+[Rule "basic availability rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "Rule for deciding the concealed possessions of margaret" applies.]
+[Rule "Rule for deciding the concealed possessions of margaret" applies.]
+[Rule "Rule for deciding the concealed possessions of margaret" applies.]
+[Rule "declare everything initially unmentioned rule" applies.]
+[Rule "announce items from multiple object lists rule" applies.]
+[Rule "set pronouns from items from multiple object lists rule" applies.]
+[Rule "before stage rule" applies.]
+[Rule "instead stage rule" applies.]
+[Rule "investigate player's awareness before action rule" applies.]
+[Rule "player aware of his own actions rule" applies.]
+[Rule "check stage rule" applies.]
+[Rule "check asking someone about something" applies.]
+That doesn't seem to be a topic of conversation at the moment.
+
+[Rule "A first turn sequence rule" applies.]
+[Rule "every turn stage rule" applies.]
+[Rule "reset protocol rule" applies.]
+[Rule "Every turn" applies.]
+[Rule "Rule for printing insistent sounds" applies.]
+[Rule "phone noisiness rule" applies.]
+[Rule "phone noisiness rule" applies.]
+[Rule "Rule for determining the subjective volume for something ( called T )" applies.]
+[Rule "Audibility of a thing ( called T ) when location is indoors" applies.]
+[Rule "Rule for deciding the concealed possessions of margaret" applies.]
+[Rule "default sound description rule" applies.]
+[Rule "Audibility of a thing ( called T ) when location is indoors" applies.]
+A phone is [Rule "Rule for printing the sound action for a phone" applies.]
+ringing not too far away.
+[Rule "phone noisiness rule" applies.]
+[Rule "phone noisiness rule" applies.]
+
+[Rule "Every turn" applies.]
+[Rule "run behavior rule" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Every turn" applies.]
+[Rule "Every turn" applies.]
+[Rule "Every turn" applies.]
+[Rule "standard placement rule" applies.]
+[Rule "centered scaled drawing rule" applies.]
+[Rule "bosh picture selection rule" applies.]
+[Rule "queue quips rule" applies.]
+[Rule "For queueing quips following a quip ( called Q )" applies.]
+[Rule "ruling out quips rule" applies.]
+[Rule "For ruling out quips following a quip ( called Q )" applies.]
+[Rule "A last turn sequence rule" applies.]
+[Rule "display available quips rule" applies.]
+[Rule "For listing the available quips" applies.]
+[Rule "basic plausibility rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "ubiquity rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "basic plausibility rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "basic plausibility rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "basic plausibility rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "basic plausibility rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "basic plausibility rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "A plausibility rule for how-are-you" applies.]
+[Rule "basic plausibility rule" applies.]
+[Rule "An availability rule for about the whereabouts of the desk key" applies.]
+[Rule "basic availability rule" applies.]
+[Rule "basic plausibility rule" applies.]
+[Rule "An availability rule for about the status of the computer" applies.]
+[Rule "basic availability rule" applies.]
+[Rule "basic plausibility rule" applies.]
+[Rule "An availability rule for for the wrench" applies.]
+[Rule "basic availability rule" applies.]
+[Rule "basic plausibility rule" applies.]
+[Rule "queued quip rule" applies.]
+[Rule "basic plausibility rule" applies.]
+[Rule "An availability rule for to unlock the backdoor" applies.]
+[Rule "basic availability rule" applies.]
+[Rule "basic plausibility rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "basic plausibility rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "ubiquity rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "ubiquity rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+Faraji can [Rule "Rule for list arranging" applies.]
+ask for a screwdriver[Rule "standard delimiting rule" applies.]
+.
+
+[Rule "notify score changes rule" applies.]
+[Rule "clear LPR rule" applies.]
+[Rule "reset skip sounds rule" applies.]
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1115">
+        <command xml:space="preserve">ask for a screwdriver</command>
+        <result xml:space="preserve">Faraji asks, "Are you sure we don't have one?"
+
+Margaret just looks at Faraji darkly.
+
+A phone is ringing not too far away.
+
+They can ask for a screwdriver.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1116"></child>
+        </children>
+    </item>
+    <item nodeId="node-1116">
+        <command xml:space="preserve">rules</command>
+        <result xml:space="preserve">Rules tracing now switched on. Type "rules off" to switch it off again, or "rules all" to include even rules which do not apply.
+
+[Rule "clear LPR rule" applies.]
+[Rule "reset skip sounds rule" applies.]
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1117"></child>
+        </children>
+    </item>
+    <item nodeId="node-1117">
+        <command xml:space="preserve">ask margaret about thumb drive</command>
+        <result xml:space="preserve">[Rule "redirect to GEP line input rule" applies.]
+[Rule "ordinary checking for content rule" applies.]
+[Rule "After reading a command" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "universal availability rule" applies.]
+[Rule "An availability rule for about the whereabouts of the desk key" applies.]
+[Rule "basic availability rule" applies.]
+[Rule "An availability rule for about the status of the computer" applies.]
+[Rule "basic availability rule" applies.]
+[Rule "An availability rule for for the wrench" applies.]
+[Rule "basic availability rule" applies.]
+[Rule "queued quip rule" applies.]
+[Rule "An availability rule for to unlock the backdoor" applies.]
+[Rule "basic availability rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "Rule for deciding the concealed possessions of margaret" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "universal availability rule" applies.]
+[Rule "An availability rule for about the whereabouts of the desk key" applies.]
+[Rule "basic availability rule" applies.]
+[Rule "An availability rule for about the status of the computer" applies.]
+[Rule "basic availability rule" applies.]
+[Rule "An availability rule for for the wrench" applies.]
+[Rule "basic availability rule" applies.]
+[Rule "queued quip rule" applies.]
+[Rule "An availability rule for to unlock the backdoor" applies.]
+[Rule "basic availability rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "Rule for deciding the concealed possessions of margaret" applies.]
+[Rule "Rule for deciding the concealed possessions of margaret" applies.]
+[Rule "declare everything initially unmentioned rule" applies.]
+[Rule "announce items from multiple object lists rule" applies.]
+[Rule "set pronouns from items from multiple object lists rule" applies.]
+[Rule "before stage rule" applies.]
+[Rule "instead stage rule" applies.]
+[Rule "investigate player's awareness before action rule" applies.]
+[Rule "player aware of his own actions rule" applies.]
+[Rule "check stage rule" applies.]
+[Rule "carry out stage rule" applies.]
+[Rule "after stage rule" applies.]
+[Rule "investigate player's awareness after action rule" applies.]
+[Rule "report stage rule" applies.]
+[Rule "standard response rule" applies.]
+[Rule "default quizzing rule" applies.]
+[Rule "try default ask-tell response rule" applies.]
+[Rule "try default response rule" applies.]
+[Rule "unresponsive rule" applies.]
+Margaret does not respond.
+[Rule "last specific action-processing rule" applies.]
+
+[Rule "A first turn sequence rule" applies.]
+[Rule "every turn stage rule" applies.]
+[Rule "reset protocol rule" applies.]
+[Rule "Every turn" applies.]
+[Rule "Rule for printing insistent sounds" applies.]
+[Rule "phone noisiness rule" applies.]
+[Rule "phone noisiness rule" applies.]
+[Rule "Rule for determining the subjective volume for something ( called T )" applies.]
+[Rule "Audibility of a thing ( called T ) when location is indoors" applies.]
+[Rule "Rule for deciding the concealed possessions of margaret" applies.]
+[Rule "default sound description rule" applies.]
+[Rule "Audibility of a thing ( called T ) when location is indoors" applies.]
+A phone is [Rule "Rule for printing the sound action for a phone" applies.]
+ringing not too far away.
+[Rule "phone noisiness rule" applies.]
+[Rule "phone noisiness rule" applies.]
+
+[Rule "Every turn" applies.]
+[Rule "run behavior rule" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Every turn" applies.]
+[Rule "Every turn" applies.]
+[Rule "Every turn" applies.]
+[Rule "standard placement rule" applies.]
+[Rule "centered scaled drawing rule" applies.]
+[Rule "bosh picture selection rule" applies.]
+[Rule "queue quips rule" applies.]
+[Rule "For queueing quips following a quip ( called Q )" applies.]
+[Rule "ruling out quips rule" applies.]
+[Rule "For ruling out quips following a quip ( called Q )" applies.]
+[Rule "A last turn sequence rule" applies.]
+[Rule "display available quips rule" applies.]
+[Rule "For listing the available quips" applies.]
+[Rule "basic plausibility rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "ubiquity rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "basic plausibility rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "basic plausibility rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "basic plausibility rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "basic plausibility rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "basic plausibility rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "A plausibility rule for how-are-you" applies.]
+[Rule "basic plausibility rule" applies.]
+[Rule "An availability rule for about the whereabouts of the desk key" applies.]
+[Rule "basic availability rule" applies.]
+[Rule "basic plausibility rule" applies.]
+[Rule "An availability rule for about the status of the computer" applies.]
+[Rule "basic availability rule" applies.]
+[Rule "basic plausibility rule" applies.]
+[Rule "An availability rule for for the wrench" applies.]
+[Rule "basic availability rule" applies.]
+[Rule "basic plausibility rule" applies.]
+[Rule "queued quip rule" applies.]
+[Rule "basic plausibility rule" applies.]
+[Rule "An availability rule for to unlock the backdoor" applies.]
+[Rule "basic availability rule" applies.]
+[Rule "basic plausibility rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "basic plausibility rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "ubiquity rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+[Rule "ubiquity rule" applies.]
+[Rule "can't talk to the wrong person rule" applies.]
+Faraji can [Rule "Rule for list arranging" applies.]
+ask for a screwdriver[Rule "standard delimiting rule" applies.]
+.
+
+[Rule "notify score changes rule" applies.]
+[Rule "clear LPR rule" applies.]
+[Rule "reset skip sounds rule" applies.]
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1004">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Faraji extricates themself from talking with Margaret.
+
+Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
+
+A phone is ringing to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1005"></child>
+        </children>
+    </item>
+    <item nodeId="node-1005">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Agent Faraji is in their office. They pause and survey the scene. It's not much -- four white walls, grey industrial carpet. Margaret has helpfully assembled Faraji's desk and chair, though how sturdily is an open question. She also took the time to put up some of Agent Faraji's office decor -- their degree in Nonstandard Investigative Techniques, an original pencil drawing of the Pitfall snake by semi-acclaimed Washington DC artist Darius 5200, and a photo of their softball team. At the very least the wall coverings help compensate for the lack of windows. There's a disconnected landline on the desk. The office door is to the north, and there's a white metal door to the west.
+
+Faraji mutters, "Where's my computer?"
+
+A phone is ringing inside their desk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1006"></child>
+        </children>
+    </item>
+    <item nodeId="node-1006">
+        <command xml:space="preserve">open desk</command>
+        <result xml:space="preserve">Faraji tries to open the desk to answer the phone, but it seems to be locked. They sigh. "Margaret must have the key."
+
+A phone is ringing inside their desk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1007"></child>
+        </children>
+    </item>
+    <item nodeId="node-1007">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
+
+A phone is ringing to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1008"></child>
+        </children>
+    </item>
+    <item nodeId="node-1008">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
+
+The Bureau's latest office manager, Margaret Chao is bustling around with unrestrained enthusiasm.
+
+A phone is ringing not too far away.
+
+They can ask about the whereabouts of the desk key or ask about the status of the computer.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1009"></child>
+        </children>
+    </item>
+    <item nodeId="node-1009">
+        <command xml:space="preserve">ask about key</command>
+        <result xml:space="preserve">Faraji says, "Hey Margaret, do you know anything about my desk key?"
+
+"Sure I do -- I put it in your desk." She furrows her brow. "What's the matter?"
+
+A phone is ringing not too far away.
+
+They can ask about the status of the computer.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1010"></child>
+        </children>
+    </item>
+    <item nodeId="node-1010">
+        <command xml:space="preserve">ask about lenses</command>
+        <result xml:space="preserve">That is not a topic of conversation at the moment.
+
+A phone is ringing not too far away.
+
+Faraji can ask about the status of the computer.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1011"></child>
+        </children>
+    </item>
+    <item nodeId="node-1011">
+        <command xml:space="preserve">tell her about moira</command>
+        <result xml:space="preserve">Margaret does not respond.
+
+A phone is ringing not too far away.
+
+Faraji can ask about the status of the computer.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1012"></child>
+        </children>
+    </item>
+    <item nodeId="node-1012">
+        <command xml:space="preserve">ask for lenses</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1013"></child>
+        </children>
+    </item>
+    <item nodeId="node-1013">
+        <command xml:space="preserve">ask about computer</command>
+        <result xml:space="preserve">"Margaret", Faraji says, "what's up with my computer?"
+
+"Oh, it got busted up during the move. I have the box behind my desk -- you can see it if you want. We'll have to get you a new one."
+
+A phone is ringing not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1014"></child>
+        </children>
+    </item>
+    <item nodeId="node-1014">
+        <command xml:space="preserve">x desk</command>
+        <result xml:space="preserve">The former sales counter now functions as a desk for the office manager (currently Margaret). Behind it are a number of shelves holding office supplies.
+
+A phone is ringing not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1015"></child>
+        </children>
+    </item>
+    <item nodeId="node-1015">
+        <command xml:space="preserve">look behind desk</command>
+        <result xml:space="preserve">There are a number of shelves of office supplies behind the desk. There is also a heating vent on the floor here.
+
+Faraji finds a beat-up cardboard box and pulls it out.
+
+A phone is ringing not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1016"></child>
+        </children>
+    </item>
+    <item nodeId="node-1016">
+        <command xml:space="preserve">open box</command>
+        <result xml:space="preserve">Faraji opens the beat-up cardboard box, revealing their computer.
+
+A phone is ringing not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1017"></child>
+        </children>
+    </item>
+    <item nodeId="node-1017">
+        <command xml:space="preserve">x computer</command>
+        <result xml:space="preserve">Faraji's computer has been damaged beyond repair. But they do find a thumb drive and take it.
+
+A phone is ringing not too far away.
+
+They can remember finding the drive before.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1018"></child>
+        </children>
+    </item>
+    <item nodeId="node-1018">
+        <command xml:space="preserve">remember drive</command>
+        <result xml:space="preserve">Faraji remembers finding the drive in an ancient Onandaga root cellar on a farm in upstate New York. They have never been able to read it.
+
+A phone is ringing not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1019"></child>
+        </children>
+    </item>
+    <item nodeId="node-1019">
+        <command xml:space="preserve">x it</command>
+        <result xml:space="preserve">Faraji can't see 'it' (nothing) at the moment.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1020"></child>
+        </children>
+    </item>
+    <item nodeId="node-1020">
+        <command xml:space="preserve">x drive</command>
+        <result xml:space="preserve">It's a red plastic thumb drive, with what look like symbols scratched on the surface, but they're like no symbols you've ever seen. The metal USB end is somewhat corroded.
+
+A phone is ringing not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1021"></child>
+        </children>
+    </item>
+    <item nodeId="node-1021">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
+
+A phone is ringing to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1022"></child>
+        </children>
+    </item>
+    <item nodeId="node-1022">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Agent Faraji is in their office. It's basically four white walls and grey carpet. There's a cheap desk and chair, and a disconnected phone on the desk. In lieu of windows, there are a few things on the wall: their degree in Nonstandard Investigative Techniques, a pencil drawing of the Pitfall snake, and a photo of their softball team. The office door is to the north, and there's a white metal door to the west.
+
+A phone is ringing inside their desk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1023"></child>
+        </children>
+    </item>
+    <item nodeId="node-1023">
+        <command xml:space="preserve">x desk</command>
+        <result xml:space="preserve">The desk is a cheap DIY piece held together with hex screws. It has a single drawer which is closed.
+
+A phone is ringing inside Faraji's desk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1024"></child>
+        </children>
+    </item>
+    <item nodeId="node-1024">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
+
+A phone is ringing to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1025"></child>
+        </children>
+    </item>
+    <item nodeId="node-1025">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
+
+The Bureau's latest office manager, Margaret Chao is bustling around with unrestrained enthusiasm.
+
+Also here is a beat-up cardboard box (in which is their computer).
+
+A phone is ringing not too far away.
+
+They can ask for the hex wrench.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1026"></child>
+        </children>
+    </item>
+    <item nodeId="node-1026">
+        <command xml:space="preserve">ask about hex</command>
+        <result xml:space="preserve">Faraji says, "Do you happen to have the hex wrench from putting together my desk?"
+
+"Well, I did, but I dropped it down a heating vent behind my desk."
+
+A phone is ringing not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1027"></child>
+        </children>
+    </item>
+    <item nodeId="node-1027">
+        <command xml:space="preserve">x vent</command>
+        <result xml:space="preserve">A typical vent with a grill which one would hope would stop things like, say, a hex wrench from falling through. It's set in the floor behind the front desk. The vent is held closed by four screws.
 
 In the heating vent is a hex wrench.
 
@@ -121,8 +1185,14 @@ A phone is ringing not too far away.
 
 Faraji can ask for a screwdriver.
 
-&gt;[4] ask for screwdriver
-Faraji asks, "Margaret, where's the screwdriver?"
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1028"></child>
+        </children>
+    </item>
+    <item nodeId="node-1028">
+        <command xml:space="preserve">ask for a screwdriver</command>
+        <result xml:space="preserve">Faraji asks, "Margaret, where's the screwdriver?"
 
 "Umm... I think it was in a box we had to leave behind." Margaret looks embarrassed. "What? I never thought we'd need it. This isn't a construction site after all. Maybe if Klimp had paid for the bigger UHaul..." She stares past Faraji awkwardly.
 
@@ -130,20 +1200,47 @@ A phone is ringing not too far away.
 
 They can ask for a screwdriver.
 
-&gt;[5] e
-Faraji steps out of the office into the parking lot.
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1029"></child>
+        </children>
+    </item>
+    <item nodeId="node-1029">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Faraji steps out of the office into the parking lot.
 
 Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
 
 Their Hyundai is parked nearby.
 
-&gt;[6] n
-Faraji trudges to the other end of the parking lot. It's much like where they left.
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1030"></child>
+        </children>
+    </item>
+    <item nodeId="node-1030">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Faraji trudges to the other end of the parking lot. It's much like where they left.
 
 Agent Faraji is at the north end of the strip mall parking lot.. This end is no more auspicious than the other. A convenience store lies to the east. To the west is a military recruitment center. North of here the parking lot exits onto a busy road. There is a rusty sign by the road naming the shopping center: Park Place. South is BOSH headquarters, among other things.
 
-&gt;[7] e
-Faraji is greeted by a blast of music as they enter the store.
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1031"></child>
+        </children>
+    </item>
+    <item nodeId="node-1031">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Faraji will think about joining the military once the Bureau shuts down.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1032"></child>
+        </children>
+    </item>
+    <item nodeId="node-1032">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Faraji is greeted by a blast of music as they enter the store.
 
 Agent Faraji is in the Li'l Nectarine Convenience Store. Li'l Nectarine offers great service and low prices, or so they say. This one's cluttered aisles and sparse shelves could make one wonder if that's true. Behind the counter is the typical array of cigarettes and lottery tickets. Under the counter is a glass case containing various useful items.
 
@@ -151,33 +1248,51 @@ The clerk, a scruffy man in his mid-twenties, is leaning against the counter, lo
 
 They can ask for a screwdriver.
 
-&gt;[8] buy screwdriver
-(with the Bureau credit card)
-The store clerk runs the Bureau credit card, but it's declined. You might want to call the bank.
-
-Faraji can ask for a screwdriver.
-
-&gt;[9] ask for screwdriver
-Faraji asks, "Would you happen to have a screwdriver I could borrow?"
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1033"></child>
+        </children>
+    </item>
+    <item nodeId="node-1033">
+        <command xml:space="preserve">ask for a screwdriver</command>
+        <result xml:space="preserve">Faraji asks, "Would you happen to have a screwdriver I could borrow?"
 
 The clerk looks at you skeptically. "Sorry, no. Try the pawn shop guy."
 
 They can ask for a screwdriver.
 
-&gt;[10] w
-Faraji exits the store into the relative quiet of the nearby traffic.
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1034"></child>
+        </children>
+    </item>
+    <item nodeId="node-1034">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Faraji exits the store into the relative quiet of the nearby traffic.
 
 Agent Faraji is at the north end of the strip mall parking lot.. This end is no more auspicious than the other. A convenience store lies to the east. To the west is a military recruitment center. North of here the parking lot exits onto a busy road. There is a rusty sign by the road naming the shopping center: Park Place. South is BOSH headquarters, among other things.
 
-&gt;[11] s
-Faraji walks back to the south end of the parking lot.
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1035"></child>
+        </children>
+    </item>
+    <item nodeId="node-1035">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Faraji walks back to the south end of the parking lot.
 
 Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
 
 Their Hyundai is parked nearby.
 
-&gt;[12] sw
-"Cha-ching!" rings the electronic chime as Faraji steps into the store.
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1036"></child>
+        </children>
+    </item>
+    <item nodeId="node-1036">
+        <command xml:space="preserve">sw</command>
+        <result xml:space="preserve">"Cha-ching!" rings the electronic chime as Faraji steps into the store.
 
 Agent Faraji is in the pawn shop. This is more the seedy, gloomy stereotype of a pawn shop than the glitzy santized version of TV reality shows. The blinds in the windows are closed to only allow the barest slant of sunlight in, leaving the sickly fluorescent lights to illuminate the room. There is the distinct smell of cigar smoke. The glass counter is filled with a large collection of possibly valuable items. Behind it is an impressive array of firearms.
 
@@ -185,53 +1300,270 @@ Also here is the pawn shop owner.
 
 Faraji can ask for a screwdriver.
 
-&gt;[13] hello
-Faraji is already talking to the pawn shop owner.
-
-Faraji can ask for a screwdriver.
-
-&gt;[14] ask for screwdriver
-Faraji leans on the counter. "Hey, do you have a screwdriver? Can't find mine and I really need one."
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1037"></child>
+        </children>
+    </item>
+    <item nodeId="node-1037">
+        <command xml:space="preserve">ask for a screwdriver</command>
+        <result xml:space="preserve">Faraji leans on the counter. "Hey, do you have a screwdriver? Can't find mine and I really need one."
 
 The man shakes his head and says, "Sorry, miss. I had one, but the guy who runs the laundromat borrowed it and didn't bring it back."
 
 Faraji can ask about the laundromat owner.
 
-&gt;[15] ask about laundromat owner
-Faraji nods. "Okay, then, how do I get in touch with this laundromat guy?"
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1038"></child>
+        </children>
+    </item>
+    <item nodeId="node-1038">
+        <command xml:space="preserve">ask about owner</command>
+        <result xml:space="preserve">Faraji nods. "Okay, then, how do I get in touch with this laundromat guy?"
 
 "Well, that's a tricky one. Laundromat's been closed for almost two weeks now, since the owner just split for some reason he didn't bother to share. Not likely to get ahold of him. If you're not averse to a little trespassing, though, see if you come across a watch. Another thing he borrowed."
 
-&gt;[16] out
-Once again -- "Cha-ching!" -- as Faraji leaves the store.
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1039"></child>
+        </children>
+    </item>
+    <item nodeId="node-1039">
+        <command xml:space="preserve">ne</command>
+        <result xml:space="preserve">Once again -- "Cha-ching!" -- as Faraji leaves the store.
 
 Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
 
 Their Hyundai is parked nearby.
 
-&gt;[17] nw
-Predictably, the laundromat door is locked.
-
-&gt;[18] w
-Just like in the store this once was, the door chimes as Faraji walks in.
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1040"></child>
+        </children>
+    </item>
+    <item nodeId="node-1040">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Just like in the store this once was, the door chimes as Faraji walks in.
 
 Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
 
 The Bureau's latest office manager, Margaret Chao is bustling around with unrestrained enthusiasm.
 
+Also here is a beat-up cardboard box (in which is their computer).
+
 A phone is ringing not too far away.
 
 They can ask for a screwdriver.
 
-&gt;[19] w
-Faraji extricates themself from talking with Margaret.
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1041"></child>
+        </children>
+    </item>
+    <item nodeId="node-1041">
+        <command xml:space="preserve">take box</command>
+        <result xml:space="preserve">Taken.
 
-Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
+A phone is ringing not too far away.
+
+Faraji can ask for a screwdriver.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1042"></child>
+        </children>
+    </item>
+    <item nodeId="node-1042">
+        <command xml:space="preserve">take boxes</command>
+        <result xml:space="preserve">Faraji picks up a couple of boxes and flattens them.
+
+Margaret says, "Hey, what are you doing with those boxes, Agent Faraji? You don't have to worry about that -- I'll get them." She takes the flattened boxes from Faraji and hustles off.
+
+A phone is ringing not too far away.
+
+Margaret goes west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1043"></child>
+        </children>
+    </item>
+    <item nodeId="node-1043">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
+
+Also here is Margaret.
 
 A phone is ringing to the south.
 
-&gt;[20] w
-Agent Faraji is in the BOSH chief's office. Looks like the Chief has already moved in.
+Margaret goes south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1044"></child>
+        </children>
+    </item>
+    <item nodeId="node-1044">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Agent Faraji is in their office. It's basically four white walls and grey carpet. There's a cheap desk and chair, and a disconnected phone on the desk. In lieu of windows, there are a few things on the wall: their degree in Nonstandard Investigative Techniques, a pencil drawing of the Pitfall snake, and a photo of their softball team. The office door is to the north, and there's a white metal door to the west.
+
+Also here is Margaret.
+
+A phone is ringing inside Faraji's desk.
+
+Margaret unlocks the white metal door.
+
+Faraji can ask for a screwdriver.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1045"></child>
+        </children>
+    </item>
+    <item nodeId="node-1045">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Faraji stands around and waits.
+
+A phone is ringing inside their desk.
+
+Margaret goes west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1046"></child>
+        </children>
+    </item>
+    <item nodeId="node-1046">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Agent Faraji is in the back lot. This is a small area of asphalt between the building and a chain link fence looking in on an industrial property. A door to east leads into the BOSH offices, and one to the north enters the laundromat. There is a blue dumpster here.
+
+Also here is Margaret.
+
+A phone is ringing to the east.
+
+Margaret tosses the flattened boxes over the edge of the dumpster.
+
+Faraji can ask for a screwdriver.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1047"></child>
+        </children>
+    </item>
+    <item nodeId="node-1047">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Agent Faraji is in their office. It's basically four white walls and grey carpet. There's a cheap desk and chair, and a disconnected phone on the desk. In lieu of windows, there are a few things on the wall: their degree in Nonstandard Investigative Techniques, a pencil drawing of the Pitfall snake, and a photo of their softball team. The office door is to the north, and there's a white metal door to the west.
+
+A phone is ringing inside their desk.
+
+Margaret arrives from the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1048"></child>
+        </children>
+    </item>
+    <item nodeId="node-1048">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Agent Faraji is in the back lot. This is a small area of asphalt between the building and a chain link fence looking in on an industrial property. A door to east leads into the BOSH offices, and one to the north enters the laundromat. There is a blue dumpster here.
+
+A phone is ringing to the east.
+
+The white metal door closes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1049"></child>
+        </children>
+    </item>
+    <item nodeId="node-1049">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">(first opening the white metal door)
+It seems to be locked.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1050"></child>
+        </children>
+    </item>
+    <item nodeId="node-1050">
+        <command xml:space="preserve">knock on door</command>
+        <result xml:space="preserve">Which do you mean, the white metal door or the laundromat back door?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1051"></child>
+        </children>
+    </item>
+    <item nodeId="node-1051">
+        <command xml:space="preserve">white</command>
+        <result xml:space="preserve">The white metal door opens.
+
+You hear the door being unlocked, and then Margaret pops her head out. "Seriously, Agent Faraji? You got yourself locked out? Be more careful!"
+
+A phone is ringing to the east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1052"></child>
+        </children>
+    </item>
+    <item nodeId="node-1052">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Agent Faraji is in their office. It's basically four white walls and grey carpet. There's a cheap desk and chair, and a disconnected phone on the desk. In lieu of windows, there are a few things on the wall: their degree in Nonstandard Investigative Techniques, a pencil drawing of the Pitfall snake, and a photo of their softball team. The office door is to the north, and there's a white metal door to the west.
+
+Also here is Margaret.
+
+A phone is ringing inside Faraji's desk.
+
+They can ask for a screwdriver or ask to unlock the backdoor.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1053"></child>
+        </children>
+    </item>
+    <item nodeId="node-1053">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
+
+A phone is ringing to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1054"></child>
+        </children>
+    </item>
+    <item nodeId="node-1054">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Faraji stands around and waits.
+
+A phone is ringing to the south.
+
+Margaret arrives from the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1055"></child>
+        </children>
+    </item>
+    <item nodeId="node-1055">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Faraji stands around and waits.
+
+A phone is ringing to the south.
+
+Margaret goes east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1056"></child>
+        </children>
+    </item>
+    <item nodeId="node-1056">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Agent Faraji is in the BOSH chief's office. Looks like the Chief has already moved in.
 
 Chief Klimp's office is full of character. Shelves strewn with knick-knacks abut a cozy armchair and a mahogany side table supporting a large globe. A bookcase on the north wall is packed with books on paranormal happenings. Garish prints adorn the remaining wall space.  Under one of these is a modernistic desk of glass and chrome, behind which is a very nice black leather swivel chair. There is a computer on the desk, and to its side is an antique wooden file cabinet. To tell the truth, it's all a bit much, but it matches Klimp's personality perfectly. There is an exit to the east.
 
@@ -240,43 +1572,11 @@ Chief Klimp says "What's with that ringing? Someone answer it!"
 A phone is ringing not too far away.
 
 &gt;</result>
-        <commentary xml:space="preserve">[1] test screwdriver
-[2] w
-[3] x vent
-[4] ask for screwdriver
-[5] e
-[6] n
-[7] e
-[8] buy screwdriver
-[9] ask for screwdriver
-[10] w
-[11] s
-[12] sw
-[13] hello
-[14] ask for screwdriver
-[15] ask about laundromat owner
-[16] out
-[17] nw
-[18] w
-[19] w
-[20] w
-</commentary>
-        <children><child nodeId="node-1501"></child>
-            <child nodeId="node-1209"></child>
-        </children>
-    </item>
-    <item nodeId="node-1209">
-        <command xml:space="preserve">z</command>
-        <result xml:space="preserve">Faraji stands around and waits.
-
-A phone is ringing not too far away.
-
-&gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1210"></child>
+        <children><child nodeId="node-1057"></child>
         </children>
     </item>
-    <item nodeId="node-1210">
+    <item nodeId="node-1057">
         <command xml:space="preserve">x shelves</command>
         <result xml:space="preserve">(the Chief's shelves)
 These shelves sport an array of oddities and memorabilia.
@@ -287,32 +1587,10 @@ A phone is ringing not too far away.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1211"></child>
+        <children><child nodeId="node-1058"></child>
         </children>
     </item>
-    <item nodeId="node-1211">
-        <command xml:space="preserve">ask chief about skull</command>
-        <result xml:space="preserve">That is not a topic of conversation at the moment.
-
-A phone is ringing not too far away.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1212"></child>
-        </children>
-    </item>
-    <item nodeId="node-1212">
-        <command xml:space="preserve">ask chief about lenses</command>
-        <result xml:space="preserve">That is not a topic of conversation at the moment.
-
-A phone is ringing not too far away.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1213"></child>
-        </children>
-    </item>
-    <item nodeId="node-1213">
+    <item nodeId="node-1058">
         <command xml:space="preserve">x lenses</command>
         <result xml:space="preserve">To all appearances an ordinary pair of glasses, the astral lenses allegedly reveal the existence of extra-dimensional pathways.
 
@@ -322,198 +1600,11 @@ Faraji can ask to borrow the lenses.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1214"></child>
+        <children><child nodeId="node-1059"></child>
         </children>
     </item>
-    <item nodeId="node-1214">
-        <command xml:space="preserve">take lenses</command>
-        <result xml:space="preserve">Those belong to Chief Klimp.
-
-A phone is ringing not too far away.
-
-Faraji can ask to borrow the lenses.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1215"></child>
-        </children>
-    </item>
-    <item nodeId="node-1215">
-        <command xml:space="preserve">wear them</command>
-        <result xml:space="preserve">(first taking the astral lenses)
-Those belong to Chief Klimp.
-
-A phone is ringing not too far away.
-
-Faraji can ask to borrow the lenses.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1216"></child>
-        </children>
-    </item>
-    <item nodeId="node-1216">
-        <command xml:space="preserve">x oddities</command>
-        <result xml:space="preserve">This and that piece of junk that Klimp thinks is funny or interesting.
-
-A phone is ringing not too far away.
-
-Faraji can ask to borrow the lenses.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1217"></child>
-        </children>
-    </item>
-    <item nodeId="node-1217">
-        <command xml:space="preserve">x memorabilia</command>
-        <result xml:space="preserve">This and that piece of junk that Klimp thinks is funny or interesting.
-
-A phone is ringing not too far away.
-
-Faraji can ask to borrow the lenses.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1218"></child>
-        </children>
-    </item>
-    <item nodeId="node-1218">
-        <command xml:space="preserve">x desk</command>
-        <result xml:space="preserve">(the Chief's desk)
-This desk is a beautiful assembly of smokey glass and chrome framing. The "legs" form shelves where Klimp keeps yet more curios. One might wonder where Klimp gets the money.
-
-A phone is ringing not too far away.
-
-Faraji can ask to borrow the lenses.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1219"></child>
-        </children>
-    </item>
-    <item nodeId="node-1219">
-        <command xml:space="preserve">x legs</command>
-        <result xml:space="preserve">On the desk shelves is a polished orange marble dodecahedron.
-
-A phone is ringing not too far away.
-
-Faraji can ask to borrow the lenses.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1220"></child>
-        </children>
-    </item>
-    <item nodeId="node-1220">
-        <command xml:space="preserve">x dodecahedron</command>
-        <result xml:space="preserve">A relic of the Chief's sacred geometry phase.
-
-A phone is ringing not too far away.
-
-Faraji can ask to borrow the lenses.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1221"></child>
-        </children>
-    </item>
-    <item nodeId="node-1221">
-        <command xml:space="preserve">x globe</command>
-        <result xml:space="preserve">The globe is very handsome with lots of intriguing detail. Unfortunately, Klimp has marred it with thumbtacks and string marking the world's "leylines".
-
-A phone is ringing not too far away.
-
-Faraji can ask to borrow the lenses.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1222"></child>
-        </children>
-    </item>
-    <item nodeId="node-1222">
-        <command xml:space="preserve">x tacks</command>
-        <result xml:space="preserve">There's nothing like that nearby.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1223"></child>
-        </children>
-    </item>
-    <item nodeId="node-1223">
-        <command xml:space="preserve">x leylines</command>
-        <result xml:space="preserve">There's nothing like that nearby.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1224"></child>
-        </children>
-    </item>
-    <item nodeId="node-1224">
-        <command xml:space="preserve">ask klimp about margaret</command>
-        <result xml:space="preserve">He rolls his eyes. "You take what you can get."
-
-A phone is ringing not too far away.
-
-Faraji can ask to borrow the lenses.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1225"></child>
-        </children>
-    </item>
-    <item nodeId="node-1225">
-        <command xml:space="preserve">who is asdfs</command>
-        <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1226"></child>
-        </children>
-    </item>
-    <item nodeId="node-1226">
-        <command xml:space="preserve">who is klimp</command>
-        <result xml:space="preserve">Chief Huffton Klimp, the erstwhile head of Faraji's poor little bureau.
-
-A phone is ringing not too far away.
-
-They can ask to borrow the lenses.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1266"></child>
-        </children>
-    </item>
-    <item nodeId="node-1266">
-        <command xml:space="preserve">x skull</command>
-        <result xml:space="preserve">It looks a bit Neanderthal, actually.
-
-A phone is ringing not too far away.
-
-Faraji can ask to borrow the skull or ask to borrow the lenses.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1267"></child>
-        </children>
-    </item>
-    <item nodeId="node-1267">
-        <command xml:space="preserve">ask to borrow the skull</command>
-        <result xml:space="preserve">Faraji asks, "Chief, mind if I borrow the skull?"
-
-He looks pained for a moment. "Uh, I'd rather you didn't. It's fragile."
-
-A phone is ringing not too far away.
-
-They can ask to borrow the lenses.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1424"></child>
-        </children>
-    </item>
-    <item nodeId="node-1424">
-        <command xml:space="preserve">ask to borrow the lenses</command>
+    <item nodeId="node-1059">
+        <command xml:space="preserve">ask to borrow</command>
         <result xml:space="preserve">Faraji asks, "Would it be okay if I borrowed the astral lenses for a while?"
 
 "Sure! Why don't you scout the locality for astral phenomena?"
@@ -524,106 +1615,10 @@ A phone is ringing not too far away.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1684"></child>
-            <child nodeId="node-1425"></child>
+        <children><child nodeId="node-1060"></child>
         </children>
     </item>
-    <item nodeId="node-1425">
-        <command xml:space="preserve">x lenses</command>
-        <result xml:space="preserve">To all appearances an ordinary pair of glasses, the astral lenses allegedly reveal the existence of extra-dimensional pathways.
-
-A phone is ringing not too far away.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1426"></child>
-        </children>
-    </item>
-    <item nodeId="node-1426">
-        <command xml:space="preserve">l</command>
-        <result xml:space="preserve">Agent Faraji is in the BOSH chief's office. Chief Klimp's office is full of character. Shelves strewn with knick-knacks abut a cozy armchair and a mahogany side table supporting a large globe. A bookcase on the north wall is packed with books on paranormal happenings. Garish prints adorn the remaining wall space.  Under one of these is a modernistic desk of glass and chrome, behind which is a very nice black leather swivel chair. There is a computer on the desk, and to its side is an antique wooden file cabinet. To tell the truth, it's all a bit much, but it matches Klimp's personality perfectly. There is an exit to the east.
-
-Also here is Chief Klimp.
-
-A phone is ringing not too far away.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1427"></child>
-        </children>
-    </item>
-    <item nodeId="node-1427">
-        <command xml:space="preserve">x shelves</command>
-        <result xml:space="preserve">(the Chief's shelves)
-These shelves sport an array of oddities and memorabilia.
-
-On the Chief's shelves is a juvenile sasquatch skull.
-
-A phone is ringing not too far away.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1428"></child>
-        </children>
-    </item>
-    <item nodeId="node-1428">
-        <command xml:space="preserve">i</command>
-        <result xml:space="preserve">Faraji is carrying:
-  some astral lenses
-  the Bureau credit card
-
-A phone is ringing not too far away.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1429"></child>
-        </children>
-    </item>
-    <item nodeId="node-1429">
-        <command xml:space="preserve">showme astral lenses</command>
-        <result xml:space="preserve">(the astral lenses)
-astral lenses - thing
-location: carried by Faraji in the BOSH chief's office
-plural-named, improper-named, unmarked for special listing; unlit, inedible, portable, wearable, handled, neuter, seen, familiar, quiet, background
-list grouping key: none
-printed name: "astral lenses"
-printed plural name: none
-indefinite article: none
-most recent reference: nominal
-third singular pronoun: It-pronoun
-summary: none
-description: "To all appearances an ordinary pair of glasses, the astral lenses allegedly reveal the existence of extra-dimensional pathways."
-initial appearance: none
-dark description: none
-help text: none
-hearability: very loud
-volume: 0.0
-price: $0
-behind description: none
-third-plural-pronoun: They-pronoun
-possessive: none
-portrait: Figure Null
-owner: Faraji
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1477"></child>
-        </children>
-    </item>
-    <item nodeId="node-1477">
-        <command xml:space="preserve">i</command>
-        <result xml:space="preserve">Faraji is carrying:
-  some astral lenses
-  the Bureau credit card
-
-A phone is ringing not too far away.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1478"></child>
-        </children>
-    </item>
-    <item nodeId="node-1478">
+    <item nodeId="node-1060">
         <command xml:space="preserve">wear lenses</command>
         <result xml:space="preserve">Faraji puts on the astral lenses.
 
@@ -631,497 +1626,21 @@ A phone is ringing not too far away.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1479"></child>
+        <children><child nodeId="node-1061"></child>
         </children>
     </item>
-    <item nodeId="node-1479">
-        <command xml:space="preserve">i</command>
-        <result xml:space="preserve">Faraji is carrying:
-  some astral lenses (being worn)
-  the Bureau credit card
-
-A phone is ringing not too far away.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1684">
-        <command xml:space="preserve">undo</command>
-        <result xml:space="preserve">BOSH chief's office
-[Previous turn undone.]
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1685"></child>
-        </children>
-    </item>
-    <item nodeId="node-1685">
-        <command xml:space="preserve">ask to borrow the astral lenses</command>
-        <result xml:space="preserve">Faraji asks, "Would it be okay if I borrowed the astral lenses for a while?"
-
-"Sure! Why don't you scout the locality for astral phenomena?"
-
-They take the astral lenses.
-
-A phone is ringing not too far away.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1686"></child>
-        </children>
-    </item>
-    <item nodeId="node-1686">
-        <command xml:space="preserve">wear them</command>
-        <result xml:space="preserve">Faraji puts on the astral lenses.
-
-A phone is ringing not too far away.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1687"></child>
-        </children>
-    </item>
-    <item nodeId="node-1687">
-        <command xml:space="preserve">l</command>
-        <result xml:space="preserve">Agent Faraji is in the BOSH chief's office. Chief Klimp's office is full of character. Shelves strewn with knick-knacks abut a cozy armchair and a mahogany side table supporting a large globe. A bookcase on the north wall is packed with books on paranormal happenings. Garish prints adorn the remaining wall space.  Under one of these is a modernistic desk of glass and chrome, behind which is a very nice black leather swivel chair. There is a computer on the desk, and to its side is an antique wooden file cabinet. To tell the truth, it's all a bit much, but it matches Klimp's personality perfectly. There is an exit to the east.
-
-Also here is Chief Klimp.
-
-A phone is ringing not too far away.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1688"></child>
-        </children>
-    </item>
-    <item nodeId="node-1688">
-        <command xml:space="preserve">gonear back lot</command>
-        <result xml:space="preserve">Agent Faraji is in the back lot. This is a small area of asphalt between the building and a chain link fence looking in on an industrial property. A door to east leads into the BOSH offices, and one to the north enters the laundromat. There is a blue dumpster here.
-
-A strange sparkly white passage branches off in an impossible direction from here.
-
-Faraji has discovered a hyperspatial tunnel! It leads in the hyperspatial direction of "back".
-For help regarding hyperspace, enter HELP HYPERSPACE.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1689"></child>
-        </children>
-    </item>
-    <item nodeId="node-1689">
-        <command xml:space="preserve">goodbye</command>
-        <result xml:space="preserve">Faraji isn't talking to anyone.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1690"></child>
-        </children>
-    </item>
-    <item nodeId="node-1690">
-        <command xml:space="preserve">gonear klimp</command>
-        <result xml:space="preserve">Agent Faraji is in the BOSH chief's office. Chief Klimp's office is full of character. Shelves strewn with knick-knacks abut a cozy armchair and a mahogany side table supporting a large globe. A bookcase on the north wall is packed with books on paranormal happenings. Garish prints adorn the remaining wall space.  Under one of these is a modernistic desk of glass and chrome, behind which is a very nice black leather swivel chair. There is a computer on the desk, and to its side is an antique wooden file cabinet. To tell the truth, it's all a bit much, but it matches Klimp's personality perfectly. There is an exit to the east.
-
-Also here is Chief Klimp.
-
-A phone is ringing not too far away.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1691"></child>
-        </children>
-    </item>
-    <item nodeId="node-1691">
-        <command xml:space="preserve">goodbye</command>
-        <result xml:space="preserve">Faraji says goodbye to Chief Klimp.
-
-A phone is ringing not too far away.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1692"></child>
-        </children>
-    </item>
-    <item nodeId="node-1692">
-        <command xml:space="preserve">gonear back lot</command>
-        <result xml:space="preserve">Agent Faraji is in the back lot. This is a small area of asphalt between the building and a chain link fence looking in on an industrial property. A door to east leads into the BOSH offices, and one to the north enters the laundromat. There is a blue dumpster here.
-
-A hyperspatial tunnel leads in the direction of "back".
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1693"></child>
-        </children>
-    </item>
-    <item nodeId="node-1693">
-        <command xml:space="preserve">b</command>
-        <result xml:space="preserve">Agent Faraji is in the astral tunnel. It is featureless white, or what passes for white here. It bends "forth" to north.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1694"></child>
-        </children>
-    </item>
-    <item nodeId="node-1694">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">Agent Faraji is in the astral tunnel. It is featureless white, or what passes for white here. It bends south to "forth."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1695"></child>
-        </children>
-    </item>
-    <item nodeId="node-1695">
-        <command xml:space="preserve">f</command>
-        <result xml:space="preserve">Agent Faraji is in the laundromat back room. 
-
-A hyperspatial tunnel leads in the direction of "back".
-
-Wearing the astral lenses in fluorescent light is blinding. They quickly remove the glasses.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1750"></child>
-        </children>
-    </item>
-    <item nodeId="node-1750">
-        <command xml:space="preserve"> b</command>
-        <result xml:space="preserve">Faraji can't go that way.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1751"></child>
-        </children>
-    </item>
-    <item nodeId="node-1751">
-        <command xml:space="preserve">d</command>
-        <result xml:space="preserve">Agent Faraji is in the laundromat basement. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1752"></child>
-        </children>
-    </item>
-    <item nodeId="node-1752">
+    <item nodeId="node-1061">
         <command xml:space="preserve">e</command>
-        <result xml:space="preserve">Faraji can't go that way.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1753"></child>
-        </children>
-    </item>
-    <item nodeId="node-1753">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">Faraji can't go that way.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1754"></child>
-        </children>
-    </item>
-    <item nodeId="node-1754">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">Faraji can't go that way.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1755"></child>
-        </children>
-    </item>
-    <item nodeId="node-1755">
-        <command xml:space="preserve">s</command>
-        <result xml:space="preserve">Agent Faraji is in the back basement. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1756"></child>
-        </children>
-    </item>
-    <item nodeId="node-1756">
-        <command xml:space="preserve">turn off light</command>
-        <result xml:space="preserve">Faraji switches the light switch off.
-
-It is now pitch dark in here!
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1757"></child>
-        </children>
-    </item>
-    <item nodeId="node-1757">
-        <command xml:space="preserve">wear glasses</command>
-        <result xml:space="preserve">Faraji puts on the astral lenses.
-
-Agent Faraji is in the back basement. 
-
-A hyperspatial tunnel leads in the direction of "forth".
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1758"></child>
-        </children>
-    </item>
-    <item nodeId="node-1758">
-        <command xml:space="preserve">f</command>
-        <result xml:space="preserve">Agent Faraji is in the astral tunnel. It is featureless white, or what passes for white here. It bends "back" to "forthnorth."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1759"></child>
-        </children>
-    </item>
-    <item nodeId="node-1759">
-        <command xml:space="preserve">fn</command>
-        <result xml:space="preserve">Agent Faraji is in the laundromat. This is the laundromat.
-
-A hyperspatial tunnel leads in the direction of "backsouth".
-
-Also here is a handtruck.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1760"></child>
-        </children>
-    </item>
-    <item nodeId="node-1760">
-        <command xml:space="preserve">push handtruck w</command>
-        <result xml:space="preserve">Agent Faraji is in the laundromat back room. 
-
-A hyperspatial tunnel leads in the direction of "back".
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1761"></child>
-        </children>
-    </item>
-    <item nodeId="node-1761">
-        <command xml:space="preserve">push handtruck d</command>
-        <result xml:space="preserve">The handtruck cannot be pushed up or down.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1762"></child>
-        </children>
-    </item>
-    <item nodeId="node-1762">
-        <command xml:space="preserve">push handtruck e</command>
-        <result xml:space="preserve">Agent Faraji is in the laundromat. This is the laundromat.
-
-A hyperspatial tunnel leads in the direction of "backsouth".
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1763"></child>
-        </children>
-    </item>
-    <item nodeId="node-1763">
-        <command xml:space="preserve">push handtruck bs</command>
-        <result xml:space="preserve">Agent Faraji is in the astral tunnel. It is featureless white, or what passes for white here. It bends "back" to "forthnorth."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1764"></child>
-        </children>
-    </item>
-    <item nodeId="node-1764">
-        <command xml:space="preserve">push handtruck b</command>
-        <result xml:space="preserve">Agent Faraji is in the back basement. 
-
-A hyperspatial tunnel leads in the direction of "forth".
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1765"></child>
-        </children>
-    </item>
-    <item nodeId="node-1765">
-        <command xml:space="preserve">move cabinets with handtruck</command>
-        <result xml:space="preserve">You move the filing cabinets out of the way and uncover an old front-loading washing machine. There is a strange glow inside the drum.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1766"></child>
-        </children>
-    </item>
-    <item nodeId="node-1766">
-        <command xml:space="preserve">open washing machine</command>
-        <result xml:space="preserve">Faraji opens the broken washing machine.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1767"></child>
-        </children>
-    </item>
-    <item nodeId="node-1767">
-        <command xml:space="preserve">enter it</command>
-        <result xml:space="preserve">There is a flash of light and you find yourself somewhere else...
-
-Agent Faraji is on a featureless hyperplane. They rub their eyes as they try to take in their surroundings. In addition to the usual directions of north and south and east and west, two new directions exist here: back and forth. As a result, the "surface" they're standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
-
-As far as one can see, the hyperplane extends infinitely in all six directions.
-
-In the middle distance is some kind of structure, roughly to the forth.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1768"></child>
-        </children>
-    </item>
-    <item nodeId="node-1768">
-        <command xml:space="preserve">f</command>
-        <result xml:space="preserve">Agent Faraji is on a featureless hyperplane. In addition to the usual directions of north and south and east and west, two new directions exist here: back and forth. As a result, the "surface" they're standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
-
-As far as one can see, the hyperplane extends infinitely in all six directions.
-
-In the middle distance is some kind of structure, roughly to the forth.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1501">
-        <command xml:space="preserve">test screwdriver</command>
-        <result xml:space="preserve">(Testing.)
-
-&gt;[1] w
-Faraji can't go that way.
-
-A phone is ringing not too far away.
-
-&gt;[2] x vent
-There's nothing like that nearby.
-
-&gt;[3] ask for screwdriver
-Which do you mean, for a screwdriver, for a screwdriver or for a screwdriver?
-
-&gt;[4] e
-There's nothing like that nearby.
-
-&gt;[5] n
-Faraji can't go that way.
-
-A phone is ringing not too far away.
-
-&gt;[6] e
-Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
-
-A phone is ringing to the south.
-
-&gt;[7] buy screwdriver
-There's nothing like that nearby.
-
-&gt;[8] ask for screwdriver
-Which do you mean, for a screwdriver, for a screwdriver or for a screwdriver?
-
-&gt;[9] w
-There's nothing like that nearby.
-
-&gt;[10] s
-Agent Faraji is in their office. They pause and survey the scene. It's not much -- four white walls, grey industrial carpet. Margaret has helpfully assembled Faraji's desk and chair, though how sturdily is an open question. She also took the time to put up some of Agent Faraji's office decor -- their degree in Nonstandard Investigative Techniques, an original pencil drawing of the Pitfall snake by semi-acclaimed Washington DC artist Darius 5200, and a photo of their softball team. At the very least the wall coverings help compensate for the lack of windows. There's a disconnected landline on the desk. The office door is to the north, and there's a white metal door to the west.
-
-Faraji mutters, "Where's my computer?"
-
-A phone is ringing inside their desk.
-
-&gt;[11] sw
-Faraji can't go that way.
-
-A phone is ringing inside their desk.
-
-&gt;[12] hello
-There's no one here but Faraji.
-
-A phone is ringing inside their desk.
-
-&gt;[13] ask for screwdriver
-Which do you mean, for a screwdriver, for a screwdriver or for a screwdriver?
-
-&gt;[14] ask about laundromat owner
-That is not a topic of conversation at the moment.
-
-A phone is ringing inside Faraji's desk.
-
-&gt;[15] out
-But Faraji isn't in anything at the moment.
-
-A phone is ringing inside their desk.
-
-&gt;[16] nw
-Faraji can't go that way.
-
-A phone is ringing inside their desk.
-
-&gt;</result>
-        <commentary xml:space="preserve">[1] w
-[2] x vent
-[3] ask for screwdriver
-[4] e
-[5] n
-[6] e
-[7] buy screwdriver
-[8] ask for screwdriver
-[9] w
-[10] s
-[11] sw
-[12] hello
-[13] ask for screwdriver
-[14] ask about laundromat owner
-[15] out
-[16] nw
-</commentary>
-        <children><child nodeId="node-1518"></child>
-        </children>
-    </item>
-    <item nodeId="node-1518">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">(first opening the white metal door)
-It seems to be locked.
-
-A phone is ringing inside Faraji's desk.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1519"></child>
-        </children>
-    </item>
-    <item nodeId="node-1519">
-        <command xml:space="preserve">x vent</command>
-        <result xml:space="preserve">There's nothing like that nearby.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1520"></child>
-        </children>
-    </item>
-    <item nodeId="node-1520">
-        <command xml:space="preserve">ask for screwdriver</command>
-        <result xml:space="preserve">Which do you mean, for a screwdriver, for a screwdriver or for a screwdriver?
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1521"></child>
-        </children>
-    </item>
-    <item nodeId="node-1521">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">There's nothing like that nearby.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1522"></child>
-        </children>
-    </item>
-    <item nodeId="node-1522">
-        <command xml:space="preserve">n</command>
         <result xml:space="preserve">Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
 
 A phone is ringing to the south.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1523"></child>
+        <children><child nodeId="node-1062"></child>
         </children>
     </item>
-    <item nodeId="node-1523">
+    <item nodeId="node-1062">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
 
@@ -1129,352 +1648,554 @@ The Bureau's latest office manager, Margaret Chao is bustling around with unrest
 
 A phone is ringing not too far away.
 
-They can ask about the status of the computer, ask for a screwdriver or ask to unlock the backdoor.
+They can ask for a screwdriver or ask to unlock the backdoor.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1524"></child>
+        <children><child nodeId="node-1063"></child>
         </children>
     </item>
-    <item nodeId="node-1524">
-        <command xml:space="preserve">buy screwdriver</command>
-        <result xml:space="preserve">There's nothing like that nearby.
+    <item nodeId="node-1063">
+        <command xml:space="preserve">take boxes</command>
+        <result xml:space="preserve">Faraji picks up a couple of boxes and flattens them.
 
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1525"></child>
-        </children>
-    </item>
-    <item nodeId="node-1525">
-        <command xml:space="preserve">ask for screwdriver</command>
-        <result xml:space="preserve">Faraji asks, "Are you sure we don't have one?"
-
-Margaret just looks at Faraji darkly.
+Margaret says, "Hey, what are you doing with those boxes, Agent Faraji? You don't have to worry about that -- I'll get them." She takes the flattened boxes from Faraji and hustles off.
 
 A phone is ringing not too far away.
 
-They can ask about the status of the computer, ask for a screwdriver or ask to unlock the backdoor.
+Margaret goes west.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1526"></child>
+        <children><child nodeId="node-1064"></child>
         </children>
     </item>
-    <item nodeId="node-1526">
+    <item nodeId="node-1064">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
 
+Also here is Margaret.
+
 A phone is ringing to the south.
+
+Margaret goes south.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1527"></child>
+        <children><child nodeId="node-1065"></child>
         </children>
     </item>
-    <item nodeId="node-1527">
+    <item nodeId="node-1065">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">Agent Faraji is in their office. It's basically four white walls and grey carpet. There's a cheap desk and chair, and a disconnected phone on the desk. In lieu of windows, there are a few things on the wall: their degree in Nonstandard Investigative Techniques, a pencil drawing of the Pitfall snake, and a photo of their softball team. The office door is to the north, and there's a white metal door to the west.
 
-A phone is ringing inside their desk.
+Also here is Margaret.
+
+A phone is ringing inside Faraji's desk.
+
+Margaret unlocks the white metal door.
+
+Faraji can ask for a screwdriver or ask to unlock the backdoor.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1528"></child>
+        <children><child nodeId="node-1066"></child>
         </children>
     </item>
-    <item nodeId="node-1528">
-        <command xml:space="preserve">sw</command>
+    <item nodeId="node-1066">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">(first opening the white metal door)
+Agent Faraji is in the back lot. This is a small area of asphalt between the building and a chain link fence looking in on an industrial property. A door to east leads into the BOSH offices, and one to the north enters the laundromat. There is a blue dumpster here.
+
+A strange sparkly white passage branches off in an impossible direction from here.
+
+Faraji has discovered a hyperspatial tunnel! It leads in the hyperspatial direction of "back".
+For help regarding hyperspace, enter HELP HYPERSPACE.
+
+A phone is ringing to the east.
+
+Margaret arrives from the east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1067"></child>
+        </children>
+    </item>
+    <item nodeId="node-1067">
+        <command xml:space="preserve">b</command>
+        <result xml:space="preserve">Agent Faraji is in the astral tunnel. It is featureless white, or what passes for white here. It bends "forth" to north.
+
+A phone is ringing not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1068"></child>
+        </children>
+    </item>
+    <item nodeId="node-1068">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Agent Faraji is in the astral tunnel. It is featureless white, or what passes for white here. It bends south to "forth."
+
+A phone is ringing faintly nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1069"></child>
+        </children>
+    </item>
+    <item nodeId="node-1069">
+        <command xml:space="preserve">f</command>
+        <result xml:space="preserve">Agent Faraji is in the laundromat back room. 
+
+A hyperspatial tunnel leads in the direction of "back".
+
+A phone is ringing faintly nearby.
+
+Wearing the astral lenses in fluorescent light is blinding. They quickly remove the glasses.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1070"></child>
+        </children>
+    </item>
+    <item nodeId="node-1070">
+        <command xml:space="preserve">u</command>
         <result xml:space="preserve">Faraji can't go that way.
 
-A phone is ringing inside their desk.
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1071"></child>
+        </children>
+    </item>
+    <item nodeId="node-1071">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Faraji can't go that way.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1529"></child>
+        <children><child nodeId="node-1072"></child>
         </children>
     </item>
-    <item nodeId="node-1529">
-        <command xml:space="preserve">hello</command>
-        <result xml:space="preserve">There's no one here but Faraji.
-
-A phone is ringing inside their desk.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1530"></child>
-        </children>
-    </item>
-    <item nodeId="node-1530">
-        <command xml:space="preserve">ask for screwdriver</command>
-        <result xml:space="preserve">Which do you mean, for a screwdriver, for a screwdriver or for a screwdriver?
+    <item nodeId="node-1072">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">(first opening the laundromat back door)
+It seems to be locked.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1531"></child>
+        <children><child nodeId="node-1073"></child>
         </children>
     </item>
-    <item nodeId="node-1531">
-        <command xml:space="preserve">ask about laundromat owner</command>
+    <item nodeId="node-1073">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">Agent Faraji is in the laundromat basement. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1074"></child>
+        </children>
+    </item>
+    <item nodeId="node-1074">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Agent Faraji is in the back basement. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1075"></child>
+        </children>
+    </item>
+    <item nodeId="node-1075">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Agent Faraji is in the back basement. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1076">
+        <command xml:space="preserve">look behind desk</command>
+        <result xml:space="preserve">There are a number of shelves of office supplies behind the desk. There is also a heating vent on the floor here.
+
+Faraji finds their computer and pulls it out.
+
+A phone is ringing not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1077"></child>
+        </children>
+    </item>
+    <item nodeId="node-1077">
+        <command xml:space="preserve">x computer</command>
+        <result xml:space="preserve">Faraji's computer has been damaged beyond repair. But they do find a thumb drive and take it.
+
+A phone is ringing not too far away.
+
+They can remember finding the drive before.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1078"></child>
+        </children>
+    </item>
+    <item nodeId="node-1078">
+        <command xml:space="preserve">x drive</command>
+        <result xml:space="preserve">It's a red plastic thumb drive, with what look like symbols scratched on the surface, but they're like no symbols you've ever seen. The metal USB end is somewhat corroded.
+
+A phone is ringing not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1083"></child>
+            <child nodeId="node-1079"></child>
+        </children>
+    </item>
+    <item nodeId="node-1079">
+        <command xml:space="preserve">scope</command>
+        <result xml:space="preserve">1: Faraji's computer (959607)
+2: Hyperlight (956439)
+3: Faraji (959351)
+4: Margaret (957719)
+5: a coffee table (957751)
+6: a copy of the Washington Herald (957783)
+7: a couch (957815)
+8: a front desk (957847)
+9: some shelves of office supplies (957879)
+10: some cardboard boxes (957911)
+11: a heating vent (957943)
+12: a hex wrench (957975)
+13: a thumb drive (959223)
+14: the Bureau credit card (961559)
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1080"></child>
+        </children>
+    </item>
+    <item nodeId="node-1080">
+        <command xml:space="preserve">take wrench</command>
+        <result xml:space="preserve">Faraji's fingers won't fit through the openings in the vent. They"ll have to open it first.
+
+A phone is ringing not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1081"></child>
+        </children>
+    </item>
+    <item nodeId="node-1081">
+        <command xml:space="preserve">x vent</command>
+        <result xml:space="preserve">A typical vent with a grill which one would hope would stop things like, say, a hex wrench from falling through. It's set in the floor behind the front desk. The vent is held closed by four screws.
+
+In the heating vent is a hex wrench.
+
+A phone is ringing not too far away.
+
+Faraji can ask for a screwdriver.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1082"></child>
+        </children>
+    </item>
+    <item nodeId="node-1082">
+        <command xml:space="preserve">scope</command>
+        <result xml:space="preserve">1: Faraji's computer (959607)
+2: Hyperlight (956439)
+3: Faraji (959351)
+4: Margaret (957719)
+5: a coffee table (957751)
+6: a copy of the Washington Herald (957783)
+7: a couch (957815)
+8: a front desk (957847)
+9: some shelves of office supplies (957879)
+10: some cardboard boxes (957911)
+11: a heating vent (957943)
+12: a hex wrench (957975)
+13: a thumb drive (959223)
+14: the Bureau credit card (961559)
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1083">
+        <command xml:space="preserve">ask margaret about drive</command>
+        <result xml:space="preserve">Which do you mean, they don't have the thumb drive or they have the thumb drive?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1084"></child>
+        </children>
+    </item>
+    <item nodeId="node-1084">
+        <command xml:space="preserve">gonear reception</command>
+        <result xml:space="preserve">Agent Faraji is at field office reception. Hooray you made it!
+
+Also here is Maggie.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1085"></child>
+        </children>
+    </item>
+    <item nodeId="node-1085">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Agent Faraji is in the field office hallway. Hallway
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1086"></child>
+        </children>
+    </item>
+    <item nodeId="node-1086">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Agent Faraji is in the field office chief's office. Doris's office
+
+Doris is sitting cross-legged in a chair, tapping his foot lazily on the desk.
+
+"Ah, Larch," Doris exclaims, standing up to shake their hand. "I've been waiting for you to pay us a visit. Did you bring the thumb drive?"
+
+They can ask how to get home or tell Doris they have the thumb drive.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1087"></child>
+        </children>
+    </item>
+    <item nodeId="node-1087">
+        <command xml:space="preserve">tell doris they have the thumb drive</command>
         <result xml:space="preserve">That is not a topic of conversation at the moment.
 
-A phone is ringing inside Faraji's desk.
+Faraji can ask how to get home or tell Doris they have the thumb drive.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1532"></child>
+        <children><child nodeId="node-1088"></child>
         </children>
     </item>
-    <item nodeId="node-1532">
-        <command xml:space="preserve">out</command>
-        <result xml:space="preserve">But Faraji isn't in anything at the moment.
+    <item nodeId="node-1088">
+        <command xml:space="preserve">tell doris they don't have the thumb drive</command>
+        <result xml:space="preserve">That is not a topic of conversation at the moment.
 
-A phone is ringing inside their desk.
+Faraji can ask how to get home or tell Doris they have the thumb drive.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1533"></child>
-        </children>
     </item>
-    <item nodeId="node-1533">
-        <command xml:space="preserve">nw</command>
-        <result xml:space="preserve">Faraji can't go that way.
-
-A phone is ringing inside their desk.
+    <item nodeId="node-1313">
+        <command xml:space="preserve">purloin thumb drive</command>
+        <result xml:space="preserve">Which do you mean, they have no thumb drive, they brought the thumb drive, hand over the thumb drive or the thumb drive?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1534"></child>
+        <children><child nodeId="node-1314"></child>
         </children>
     </item>
-    <item nodeId="node-1534">
+    <item nodeId="node-1314">
+        <command xml:space="preserve">the thumb drive</command>
+        <result xml:space="preserve">Which do you mean, they have no thumb drive, they brought the thumb drive, hand over the thumb drive or the thumb drive?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1315"></child>
+        </children>
+    </item>
+    <item nodeId="node-1315">
         <command xml:space="preserve">w</command>
-        <result xml:space="preserve">(first opening the white metal door)
-It seems to be locked.
-
-A phone is ringing inside Faraji's desk.
+        <result xml:space="preserve">I only understood you as far as wanting to purloin west.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1535"></child>
+        <children><child nodeId="node-1316"></child>
         </children>
     </item>
-    <item nodeId="node-1535">
+    <item nodeId="node-1316">
         <command xml:space="preserve">w</command>
-        <result xml:space="preserve">(first opening the white metal door)
-It seems to be locked.
+        <result xml:space="preserve">Just like in the store this once was, the door chimes as Faraji walks in.
 
-A phone is ringing inside Faraji's desk.
+Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
+
+The Bureau's latest office manager, Margaret Chao is bustling around with unrestrained enthusiasm, unpacking boxes and assembling an approximation of a respectable front office, all as if the Bureau isn't going to be shut down before the year is out. She sees Faraji and practically squeals. "Agent Faraji! I'm sorry -- Larch! How are you? I hope you don't mind -- I took the liberty of putting your desk together. I just love hex wrenches, don't you? Also, your new phone is here. I put it in your desk. Good timing! Now I just need you to give me your old phone so I can deactivate it."
+
+Faraji hands Margaret their old phone. Margaret taps a few keys on her computer and says "There! All settled. Hey, what are you doing for lunch? Let me know when you get hungry!"
+
+A phone is ringing not too far away.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1536"></child>
+        <children><child nodeId="node-1317"></child>
         </children>
     </item>
-    <item nodeId="node-1536">
+    <item nodeId="node-1317">
+        <command xml:space="preserve">look behind desk</command>
+        <result xml:space="preserve">There are a number of shelves of office supplies behind the desk. There is also a heating vent on the floor here.
+
+Faraji finds their computer and pulls it out.
+
+A phone is ringing not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1318"></child>
+        </children>
+    </item>
+    <item nodeId="node-1318">
+        <command xml:space="preserve">x computer</command>
+        <result xml:space="preserve">Faraji's computer has been damaged beyond repair. But they do find a thumb drive and take it.
+
+A phone is ringing not too far away.
+
+They can remember finding the drive before.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1319"></child>
+        </children>
+    </item>
+    <item nodeId="node-1319">
+        <command xml:space="preserve">gonear reception</command>
+        <result xml:space="preserve">Agent Faraji is at field office reception. Hooray you made it!
+
+Also here is Maggie.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1320"></child>
+        </children>
+    </item>
+    <item nodeId="node-1320">
         <command xml:space="preserve">w</command>
-        <result xml:space="preserve">(first opening the white metal door)
-It seems to be locked.
-
-A phone is ringing inside Faraji's desk.
+        <result xml:space="preserve">Agent Faraji is in the field office hallway. Hallway
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1537"></child>
+        <children><child nodeId="node-1321"></child>
         </children>
     </item>
-    <item nodeId="node-1537">
-        <command xml:space="preserve">z</command>
-        <result xml:space="preserve">Faraji stands around and waits.
+    <item nodeId="node-1321">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Agent Faraji is in the field office chief's office. Doris's office
 
-A phone is ringing inside their desk.
+Doris is sitting cross-legged in a chair, tapping his foot lazily on the desk.
+
+"Ah, Larch," Doris exclaims, standing up to shake their hand. "I've been waiting for you to pay us a visit. Did you bring the thumb drive?"
+
+They can ask how to get home, tell Doris they brought the thumb drive or hand over the thumb drive.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1538"></child>
+        <children><child nodeId="node-1352"></child>
+            <child nodeId="node-1322"></child>
         </children>
     </item>
-    <item nodeId="node-1538">
-        <command xml:space="preserve">x shelves</command>
-        <result xml:space="preserve">There's nothing like that nearby.
+    <item nodeId="node-1322">
+        <command xml:space="preserve">tell doris we brought</command>
+        <result xml:space="preserve">Doris does not respond.
+
+Faraji can ask how to get home or tell Doris they brought the thumb drive.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1539"></child>
+        <children><child nodeId="node-1323"></child>
         </children>
     </item>
-    <item nodeId="node-1539">
-        <command xml:space="preserve">ask chief about skull</command>
-        <result xml:space="preserve">There's nothing like that nearby.
+    <item nodeId="node-1323">
+        <command xml:space="preserve">tell doris they brought</command>
+        <result xml:space="preserve">"Yes!"
+
+"Well, you'll just have to go back and get it, won't you? We can't be fooling around when the fate of the timeline is at stake!" Doris says.
+
+Faraji can ask how to get home.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1540"></child>
+        <children><child nodeId="node-1324"></child>
         </children>
     </item>
-    <item nodeId="node-1540">
-        <command xml:space="preserve">ask chief about lenses</command>
-        <result xml:space="preserve">There's nothing like that nearby.
+    <item nodeId="node-1324">
+        <command xml:space="preserve">tell doris they brought the thumb drive</command>
+        <result xml:space="preserve">That is not a topic of conversation at the moment.
+
+Faraji can ask how to get home.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1541"></child>
+        <children><child nodeId="node-1325"></child>
         </children>
     </item>
-    <item nodeId="node-1541">
-        <command xml:space="preserve">x lenses</command>
-        <result xml:space="preserve">There's nothing like that nearby.
+    <item nodeId="node-1325">
+        <command xml:space="preserve">actions</command>
+        <result xml:space="preserve">Actions listing on.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1542"></child>
+        <children><child nodeId="node-1326"></child>
         </children>
     </item>
-    <item nodeId="node-1542">
-        <command xml:space="preserve">take lenses</command>
-        <result xml:space="preserve">There's nothing like that nearby.
+    <item nodeId="node-1326">
+        <command xml:space="preserve">tell doris they brought the thumb drive</command>
+        <result xml:space="preserve">[discussing they brought the thumb drive with Doris]
+[(1) discussing they brought the thumb drive]
+That is not a topic of conversation at the moment.
+[(1) discussing they brought the thumb drive - failed the block exhausted one-shot quips rule]
+
+[discussing they brought the thumb drive with Doris - succeeded]
+
+Faraji can ask how to get home.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1543"></child>
+        <children><child nodeId="node-1327"></child>
         </children>
     </item>
-    <item nodeId="node-1543">
-        <command xml:space="preserve">wear them</command>
-        <result xml:space="preserve">I'm not sure what 'them' refers to.
+    <item nodeId="node-1327">
+        <command xml:space="preserve">tell doris they brought thumb drive</command>
+        <result xml:space="preserve">[discussing they brought the thumb drive with Doris]
+[(1) discussing they brought the thumb drive]
+That is not a topic of conversation at the moment.
+[(1) discussing they brought the thumb drive - failed the block exhausted one-shot quips rule]
+
+[discussing they brought the thumb drive with Doris - succeeded]
+
+Faraji can ask how to get home.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1544"></child>
-        </children>
     </item>
-    <item nodeId="node-1544">
-        <command xml:space="preserve">x oddities</command>
-        <result xml:space="preserve">There's nothing like that nearby.
+    <item nodeId="node-1352">
+        <command xml:space="preserve">say we brought the thumb drive</command>
+        <result xml:space="preserve">Faraji "Fantastic! Hand it here.", "Yes, I have it."
+
+"Fantastic! Hand it here."
+
+They can ask how to get home or hand over the thumb drive.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1545"></child>
+        <children><child nodeId="node-1373"></child>
         </children>
     </item>
-    <item nodeId="node-1545">
-        <command xml:space="preserve">x memorabilia</command>
-        <result xml:space="preserve">There's nothing like that nearby.
+    <item nodeId="node-1373">
+        <command xml:space="preserve">hand over the thumb drive</command>
+        <result xml:space="preserve">Faraji gives the thumb drive to Doris.
+
+"Great, great." He peruses the drive. "We lost one of our New York agents to a slingshot effect that threw him far back in time. We're always monitoring for artifacts that are out of place or anachronistic to lead us to lost agents.
+
+He continues, "The scratch marks here say 'They found me out and sent me back. 14th century. Enigma Lake. Savra is going to move on the Dragon.'"
+
+They can ask how to get home, ask what about Savra or ask about the Dragon.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1546"></child>
+        <children><child nodeId="node-1407"></child>
         </children>
     </item>
-    <item nodeId="node-1546">
-        <command xml:space="preserve">x desk</command>
-        <result xml:space="preserve">The desk is a cheap DIY piece held together with hex screws. It has a single drawer which is closed.
+    <item nodeId="node-1407">
+        <command xml:space="preserve">ask what about savra</command>
+        <result xml:space="preserve">
 
-A phone is ringing inside Faraji's desk.
 
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1547"></child>
-        </children>
-    </item>
-    <item nodeId="node-1547">
-        <command xml:space="preserve">x legs</command>
-        <result xml:space="preserve">There's nothing like that nearby.
 
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1548"></child>
-        </children>
-    </item>
-    <item nodeId="node-1548">
-        <command xml:space="preserve">x dodecahedron</command>
-        <result xml:space="preserve">There's nothing like that nearby.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1549"></child>
-        </children>
-    </item>
-    <item nodeId="node-1549">
-        <command xml:space="preserve">x globe</command>
-        <result xml:space="preserve">There's nothing like that nearby.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1550"></child>
-        </children>
-    </item>
-    <item nodeId="node-1550">
-        <command xml:space="preserve">x tacks</command>
-        <result xml:space="preserve">There's nothing like that nearby.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1551"></child>
-        </children>
-    </item>
-    <item nodeId="node-1551">
-        <command xml:space="preserve">x leylines</command>
-        <result xml:space="preserve">There's nothing like that nearby.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1552"></child>
-        </children>
-    </item>
-    <item nodeId="node-1552">
-        <command xml:space="preserve">ask klimp about margaret</command>
-        <result xml:space="preserve">There's nothing like that nearby.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1553"></child>
-        </children>
-    </item>
-    <item nodeId="node-1553">
-        <command xml:space="preserve">who is asdfs</command>
-        <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1554"></child>
-        </children>
-    </item>
-    <item nodeId="node-1554">
-        <command xml:space="preserve">who is klimp</command>
-        <result xml:space="preserve">Chief Huffton Klimp, the erstwhile head of Faraji's poor little bureau.
-
-A phone is ringing inside their desk.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1555"></child>
-        </children>
-    </item>
-    <item nodeId="node-1555">
-        <command xml:space="preserve">x skull</command>
-        <result xml:space="preserve">There's nothing like that nearby.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1556"></child>
-        </children>
-    </item>
-    <item nodeId="node-1556">
-        <command xml:space="preserve">ask to borrow the skull</command>
-        <result xml:space="preserve">Faraji isn't talking to anyone right now.
-
-A phone is ringing inside their desk.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1557"></child>
-        </children>
-    </item>
-    <item nodeId="node-1557">
-        <command xml:space="preserve">ask to borrow the lenses</command>
-        <result xml:space="preserve">Faraji isn't talking to anyone right now.
-
-A phone is ringing inside their desk.
+Faraji can ask how to get home or ask about the Dragon.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>

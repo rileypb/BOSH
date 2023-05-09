@@ -425,8 +425,8 @@ To shake is a verb.
 no-thumb-drive is an informative quip. 
 	It is privately-named.
 	It mentions the thumb drive.
-	The printed name is "[force pronoun for player][we] [don't] have the thumb drive".
-	Understand "he/she/they/don't/doesn't/have/thumb/drive" as no-thumb-drive.
+	The printed name is "[force pronoun for player][we] [have] no thumb drive".
+	Understand "he/she/they/we/have/has/have/no/thumb/drive" as no-thumb-drive.
 	The comment is "[if the thumb drive is familiar][We] [shake] [our] head. 'Sorry, no.'[otherwise][We] [look] quizzical. 'What thumb drive?'".
 	The reply is "[if the thumb drive is familiar]'Well, you'll just have to go back and get it, won't you? We can't be fooling around when the fate of the timeline is at stake!' Doris says[otherwise]'Huh. Thought you would have found it by now. I'm almost certain it's in your Swamp Park office. Go find it and bring it here.' Doris busies himself at his desk, pointedly ignoring you[end if].".
 	it quip-supplies Doris.
@@ -439,16 +439,51 @@ An availability rule for no-thumb-drive:
 yes-thumb-drive is an informative quip. 
 	It is privately-named.
 	It mentions the thumb drive.
-	The printed name is "[force pronoun for player][we] [have] the thumb drive".
-	Understand "he/she/they/has/have/thumb/drive" as no-thumb-drive.
-	The comment is "[if the thumb drive is familiar][We] [shake] [our] head. 'Sorry, no.'[otherwise][We] [look] quizzical. 'What thumb drive?'".
-	The reply is "[if the thumb drive is familiar]'Well, you'll just have to go back and get it, won't you? We can't be fooling around when the fate of the timeline is at stake!' Doris says[otherwise]'Huh. Thought you would have found it by now. I'm almost certain it's in your Swamp Park office. Go find it and bring it here.' Doris busies himself at his desk, pointedly ignoring you[end if].".
+	The printed name is "[force pronoun for player][we] brought the thumb drive".
+	Understand "he/she/they/we/has/brought/thumb/drive" as yes-thumb-drive.
+	The comment is "[We] [reply], 'Yes, I have it.'".
+	The reply is "'Fantastic! Hand it here.'".
 	it quip-supplies Doris.
 	It rules out no-thumb-drive.
 	
 An availability rule for yes-thumb-drive:
 	if the player carries the thumb drive:
 		always available;
+		
+After discussing yes-thumb-drive:
+	queue Doris with hand over the thumb drive;
+
+hand over the thumb drive is a performative quip.
+	The comment is "[We] [give] the thumb drive to Doris.".
+	The reply is "'Great, great.' He peruses the drive. 'We lost one of our New York agents to a slingshot effect that threw him far back in time. We're always monitoring for artifacts that are out of place or anachronistic to lead us to lost agents.
+	
+	He continues, 'The scratch marks here say [']They found me out and sent me back. 14th century. Enigma Lake. Savra is going to move on the Dragon.[']'".
+	it quip-supplies Doris.
+	
+An availability rule for hand over the thumb drive:
+	if the player carries the thumb drive:
+		always available;
+		
+After discussing hand over the thumb drive:
+	silently try giving the thumb drive to Doris;
+
+about Savra is a questioning quip.
+	it quip-supplies Doris.
+	It follows hand over the thumb drive;
+
+about the Dragon is a questioning quip.
+	it quip-supplies Doris.
+	It follows hand over the thumb drive;
+	
+about time travel is a questioning quip.
+	it quip-supplies Doris.
+	It follows hand over the thumb drive;
+	
+[An availability rule for what savra has to do with it:
+	always available;]
+
+	
+
 	
 
 Doris greeted the player is a truth state that varies.
