@@ -55,12 +55,14 @@
             <key>26</key>
             <string>Figures/location_enigma_park.png</string>
             <key>27</key>
-            <string>Figures/location_field_office.png</string>
+            <string>Figures/location_lake_shore.png</string>
             <key>28</key>
-            <string>Figures/maggie_portrait.png</string>
+            <string>Figures/location_field_office.png</string>
             <key>29</key>
-            <string>Figures/minerva_portrait.png</string>
+            <string>Figures/maggie_portrait.png</string>
             <key>30</key>
+            <string>Figures/minerva_portrait.png</string>
+            <key>31</key>
             <string>Figures/christy_portrait.png</string>
         </dict>
     </dict>

@@ -3,7 +3,7 @@ Texting by Philip Riley begins here.
 Include Basic Screen Effects by Emily Short.
 Include Glulx Text Effects by Emily Short.
 
-Include Essentials by Philip Riley.
+[Include Essentials by Philip Riley.]
 Include Phones by Philip Riley.
 
 Current Textee is a person which varies.

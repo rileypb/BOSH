@@ -13,12 +13,19 @@ Rule for printing the name of Margaret Chao: say "Margaret".
 
 Margaret Chao is familiar.
 
-The help text of Margaret is "[Margaret] is the latest office manager.".
+[The help text of Margaret is "[Margaret] is the latest office manager.".]
 
 Book 2 - Margaret's Dialogue
 
 [rule for beat-producing when the current interlocutor is Margaret:
 	say "[one of][Margaret] scrunches up her mouth[or][Margaret] pauses for a second[at random].[run paragraph on]"]
+	
+about the new phone is a questioning quip.
+	It mentions the blue flipphone.
+	the comment is "[We] [say], '[EG]Hmm. Where...[PCG]And where would I find my new phone?[LF]Can't wait to get my hands on that new phone, Margaret.[end say]'[line break]".
+	the reply is "'Oh yes. It's in your desk!' Margaret says, literally bouncing up and down.".
+	It quip-supplies margaret.
+	It stocks Margaret.
 
 looking for the desk key is a truth state that varies. 
 

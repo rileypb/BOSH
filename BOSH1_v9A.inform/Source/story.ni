@@ -16,7 +16,7 @@ Include Glulx Text Effects by Emily Short.
 Include Formatting Capture by Daniel Stelzer.
  
 Include Essentials by Philip Riley.
-Include Facts by Philip Riley. 
+Include Facts by Philip Riley.  
 Include Phones by Philip Riley.
 Include Commerce by Philip Riley.
 Include Furniture by Philip Riley. 	
@@ -63,9 +63,9 @@ The Room of Stuff is a room.
   
 Yourself is in the room of stuff.
 
-Ezra Gaunt is a man in the Room of Stuff. The description is "[regarding Ezra Gaunt]Agent [our] last name describes [us] well. [We] [are] a perpetually worried-looking individual, a look emphasized by [our] thinness and [our] severe black suits.".
-Petula Goldberg is a woman in the Room of Stuff. The description is "[regarding Petula Goldberg]Agent [we] [have] lots of dogs, a fact which can be inferred by the inevitable fur somewhere on [our] person. The last front office worker at the Bureau left due to an extreme allergic reaction to [Goldberg].".
-Larch Faraji is a nonbinary in the Room of Stuff. The third singular pronoun is singular-they-pronoun. The description is "[regarding Larch Faraji]Agent [we]". 
+Ezra Gaunt is a man in the Room of Stuff. The description is "Agent Gaunt's last name describes him well. He is a perpetually worried-looking individual, a look emphasized by his thinness and his thick-rimmed glasses.".
+Petula Goldberg is a woman in the Room of Stuff. The description is "Agent Goldberg has lots of dogs, a fact which can be inferred by the inevitable fur somewhere on her person. The last front office worker at the Bureau left due to an extreme allergic reaction to Goldberg.".
+Larch Faraji is a nonbinary in the Room of Stuff. The third singular pronoun is singular-they-pronoun. The description is "Agent Faraji ". 
  
   
   
@@ -326,17 +326,22 @@ Book 8 - Script
 Klimp in-the-office is a scene. Klimp in-the-office begins when Chief Huffton Klimp is in BOSH chief's office.
 Moira in-the-office is a scene. Moira in-the-office begins when Moira Zin is in Moira's office.
 
+Denouement is a scene.	
+After printing the locale description when the location is the front office for the first time during denouement:
+	say "[We] [trip] over a newspaper left up against the door. [We] [pick] it up.";
+	now the player carries the copy of the Washington Herald.
+
 Book 9 - Concepts
 
 Chapter 1 - Subjects and Facts
 
-Senator Savra is a man. he is in the Room of Stuff. Savra is familiar. The help text of senator savra is "Our nemesis, intent on the abolition of BOSH.".
+Senator Savra is a man. he is in the Room of Stuff. Savra is familiar. [The help text of senator savra is "Our nemesis, intent on the abolition of BOSH.".]
 
-spacetime is a subject. Understand "time" as spacetime. The printed name is "Time". the help text of SpaceTime is "According to Wikipedia, time is the continued sequence of existence and events that occurs in an apparently irreversible succession from the past, through the present, into the future.".
+spacetime is a subject. Understand "time" as spacetime. The printed name is "Time". [the help text of SpaceTime is "According to Wikipedia, time is the continued sequence of existence and events that occurs in an apparently irreversible succession from the past, through the present, into the future.".]
 
 aliens is a subject. Understand "UFO/UFOs" as aliens.
 
-The Bureau of Strange Happenings is a subject. Understand "BOSH" as The Bureau of Strange Happenings. The help text of The Bureau of Strange Happenings is "[Our] employer, The Bureau of Strange Happenings.".
+The Bureau of Strange Happenings is a subject. Understand "BOSH" as The Bureau of Strange Happenings. [The help text of The Bureau of Strange Happenings is "[Our] employer, The Bureau of Strange Happenings."].
 
 Book 10 - Kinds
 
@@ -379,7 +384,7 @@ Response of Klimp when asked about the Bureau of Strange Happenings:
 Response of Klimp when asked about Senator Savra:
 	say "Klimp stops short of actually spitting. 'The lowest of the low.'";
 
-klimp is familiar. The help text of klimp is "Chief Huffton Klimp, the erstwhile head of [our] poor little bureau.".
+klimp is familiar. [The help text of klimp is "Chief Huffton Klimp, the erstwhile head of [our] poor little bureau.".]
 
 to borrow the skull is a questioning quip. 
 	Understand "juvenile/sasquatch" as to borrow the skull.
@@ -411,12 +416,12 @@ After discussing to borrow the lenses:
 
 Moira Zin is a woman. The description is "Agent Moira Zin is the very model of a competent Bureau agent. Hard-working, serious, no-nonsense but open-minded, she's the sober counter-balance to Klimp's sometimes childish credulity. Moira would clearly be a rising star if it weren't for the Bureau's pending dissolution."
 
-The help text of Moira is "[Moira] is [our] colleague at BOSH.".
+[The help text of Moira is "[Moira] is [our] colleague at BOSH.".]
 
 moira is familiar.
 
 Rule for writing a paragraph about Margaret Chao when the location is the front office:
-	say "The Bureau's latest office manager, Margaret Chao is bustling around with unrestrained enthusiasm";
+	say "The Bureau's latest office manager, [Margaret Chao] is bustling around with unrestrained enthusiasm";
 	if the front office is not visited:
 		say ", unpacking boxes and assembling an approximation of a respectable front office, all as if the Bureau isn't going to be shut down before the year is out";
 		say ". She sees [player's surname] and practically [squeal]. '[agent]! I'm sorry -- [player's forename]! How are you? I hope you don't mind -- I took the liberty of putting your desk together. I just love hex wrenches, don't you? Also, your new phone is here. I put it in your desk. Good timing! Now I just need you to give me your old phone so I can deactivate it.'[paragraph break]";
@@ -508,7 +513,7 @@ Biff's desk's drawer contains a money card called the Bureau credit card.
 The Bureau credit card is disabled.
 
 The balance of the bureau credit card is $300. The player owns the Bureau credit card.
-The help text of the bureau credit card is "The pre-paid credit card issued to [us] by the Bureau. Its balance is currently [balance of the bureau credit card].".
+[The help text of the bureau credit card is "The pre-paid credit card issued to [us] by the Bureau. Its balance is currently [balance of the bureau credit card]."].
 	
 The photo of Pluto is here. It is scenery. Understand "her/dog/pluto/photo/picture" as Photo of Pluto. The description is "It's a picture of [our] best friend, Pluto.".
 
@@ -567,7 +572,7 @@ The BOSH back door has matching key the white key.
 When play begins:
 	now Margaret carries the white key.
 	
-The laundromat back door is a door. It is north of back lot and south of the laundromat back room. It is scenery. It is closed, locked, lockable, and openable. "An unremarkable metal door painted white. It is closed.[run paragraph on]" 
+The laundromat back door is a door. It is north of back lot and south of the laundromat back room. It is scenery. It is closed, locked, lockable, and openable. "An unremarkable metal door painted white. It is closed.". 	 
 
 The description of the back lot is "This is a small area of asphalt between the building and a chain link fence looking in on an industrial property. A door to east leads into the BOSH offices, and one to the north enters the laundromat. There is a blue dumpster here."
 
@@ -835,7 +840,7 @@ Book 16 - Sound
 
 Book 17 - Verbs
  
-To shake is a verb. To smile is a verb. To sigh is a verb. To peer is a verb. To turn is a verb. To observe is a verb. To gaze is a verb. To trudge is a verb. To walk is a verb. To step is a verb. To enter is a verb. To exit is a verb. To pause is a verb. To survey is a verb. To hand is a verb. To try is a verb. To see is a verb. To squeal is a verb. To tap is a verb. To curse is a verb. To rap is a verb. To explain is a verb. To gasp is a verb. To return is a verb. To ask is a verb. To think is a verb. To scrunch is a verb. To grimace is a verb. To mutter is a verb. To leave is a verb. To stand is a verb. To mount is a verb. To stammer is a verb. To polish is a verb. To interrupt is a verb. To raise is a verb. To chuckle is a verb. To lean is a verb. To consider is a verb. To nod is a verb. To extricate is a verb. To toss is a verb. To pick is a verb. To flatten is a verb. To remember is a verb.
+To shake is a verb. To smile is a verb. To sigh is a verb. To peer is a verb. To turn is a verb. To observe is a verb. To gaze is a verb. To trudge is a verb. To walk is a verb. To step is a verb. To enter is a verb. To exit is a verb. To pause is a verb. To survey is a verb. To hand is a verb. To try is a verb. To see is a verb. To squeal is a verb. To tap is a verb. To curse is a verb. To rap is a verb. To explain is a verb. To gasp is a verb. To return is a verb. To ask is a verb. To think is a verb. To scrunch is a verb. To grimace is a verb. To mutter is a verb. To leave is a verb. To stand is a verb. To mount is a verb. To stammer is a verb. To polish is a verb. To interrupt is a verb. To raise is a verb. To chuckle is a verb. To lean is a verb. To consider is a verb. To nod is a verb. To extricate is a verb. To toss is a verb. To pick is a verb. To flatten is a verb. To remember is a verb. To trip is a verb. 
 
 Book 18 - Images 
 
@@ -874,6 +879,7 @@ Figure Moira is the file "moira_portrait.png".
 Figure Hyperspace is the file "location_hyperspace.png".
 Figure Enigma Lake is the file "location_enigma_lake.png".
 Figure Enigma Park is the file "location_enigma_park.png".
+Figure Engima Shore is the file "location_lake_shore.png".
 Figure Field Office is the file "location_field_office.png".
 Figure Maggie is the file "maggie_portrait.png".
 Figure Minerva is the file "minerva_portrait.png".
@@ -908,6 +914,7 @@ To decide which figure name is the picture of the location:
 	if location is Featureless Hyperplane, now result is Figure Hyperspace;
 	if location is in ELR, now result is Figure Enigma Lake; 
 	if location is Enigma Park, now result is Figure Enigma Park;
+	if location is lake shore north of the park or location is lake shore west, now result is Figure Engima Shore;
 	if location is in field office area, now result is Figure Field Office;
 	decide on result;
 	

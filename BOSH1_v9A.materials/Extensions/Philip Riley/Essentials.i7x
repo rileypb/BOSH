@@ -131,13 +131,14 @@ Helping is an action out of world. Understand "help" as helping.
 	   - who owns something
 	"]
 
-Chapter 2 - Who is / What is
+[Chapter 2 - Who is / What is
 
 A thing has a text called help text.
+A thing can be knowable.
 
 Identifying is an action applying to one thing.
-Understand "who is [any thing]" as identifying.
-Understand "what is/are [any thing]" as identifying.
+Understand "who is [any person]" as identifying.
+Understand "what is/are [any knowable thing]" as identifying.
 Understand "what is/are [any subject]" as identifying.
 
 [Rule for printing a parser error when the latest parser error is the noun did not make sense in that context error:
@@ -154,7 +155,7 @@ Carry out identifying:
 		otherwise:
 			say "[the help text of the noun][paragraph break]";
 	otherwise:
-		say "I really couldn't say.";
+		say "I really couldn't say.";]
 		
 
 Book 4 - Outdoors / Indoors

@@ -1,6 +1,6 @@
 Scheduled People by Philip Riley begins here.
 
-Include Essentials by Philip Riley.
+[Include Essentials by Philip Riley.]
 
 Book 1 - Schedules
 
