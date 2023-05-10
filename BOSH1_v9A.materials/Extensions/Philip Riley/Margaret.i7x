@@ -47,7 +47,7 @@ After discussing the whereabouts of the desk key:
 about the status of the computer is a questioning quip.
 	it mentions Biff's computer.
 	the comment is "'Margaret', [we] [say], 'what's up with my computer?'".
-	the reply is "'Oh, it got busted up during the move. I have the box behind my desk -- you can see it if you want. We'll have to get you a new one.'".
+	the reply is "'Oh, it got busted up during the move. I have it behind my desk -- you can see it if you want. We'll have to get you a new one.'".
 	It quip-supplies Margaret.
 	
 An availability rule for about the status of the computer:

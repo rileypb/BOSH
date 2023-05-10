@@ -8,18 +8,29 @@ Book 1 - Outside HQ
 
 Swamp Park is a region. 
 
-The Strip Mall Parking Lot South is a room. The printed name is "south end of the strip mall parking lot". It is east of The Front Office. It is in Swamp Park. It is outdoors.  The preposition is "at". The front office is inside from the Strip Mall Parking Lot South. 
+Chapter 1 - Strip Mall Parking Lot South
+
+The Strip Mall Parking Lot South is a room. The printed name is "south end of the strip mall parking lot". It is east of The Front Office. It is in Swamp Park. It is outdoors.  The preposition is "at". The front office is inside from the Strip Mall Parking Lot South. Understand "end/of/the" as the Strip Mall Parking Lot South.
 The description of the Strip Mall Parking Lot South is "From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north."
 
-The Office_ is an unenterable room in Parking Lot South. The printed name is "office". "[We] [gaze] stoically at the sad little storefront that is the new BOSH office. The sign from the previous tenant is still up: 'Angel[']s Department Store'. Through the front window can be seen Margaret the temp, in her usual manic work mode.".
+Index map with Strip Mall Parking Lot South mapped east of The Front Office.
+
+The Office_ is an unenterable room in Parking Lot South. The printed name is "office". "[We] [gaze] stoically at the sad little storefront that is the new BOSH office. The sign from the previous tenant is still up: 'Angel[']s Department Store'. Through the front window can be seen Margaret, in her usual manic work mode.".
 Instead of entering the office_:
 	try going west;
+	
+Margaret at a distance is a part of the Office_. The description is "Even from here you can sense her irrepressible energy."
+	
+The department store sign is a part of the office_. Understand "angel/angel's" as the department store sign. The description is "It's adorned with a pair of angel's wings."
 	 
 Understand "office", "bosh" as the office_.
 
-Car 1 is a thing in Strip Mall Parking Lot South. It is privately-named. The printed name is "[our] Hyundai". Understand "car", "hyundai" as car 1. The initial appearance of car 1 is "[Our] Hyundai is parked nearby." It is fixed in place. The description is "An old bright red Hyundai Accent, it's been [our] personal means of transportation for years. And since the Bureau lost its fleet, it's [our] work car too.".
+Car 1 is a thing in Strip Mall Parking Lot South. It is privately-named. The printed name is "[our] Hyundai". Understand "car", "hyundai", "automobile", "auto" as car 1. The initial appearance of car 1 is "[Our] Hyundai is parked nearby." It is fixed in place. The description is "An old bright red Hyundai Accent, it's been [our] personal means of transportation for years. And since the Bureau lost its fleet, it's [our] work car too.".
 
-Car 2 is a thing. It is privately-named. The printed name is "Klimp's Porsche". Understand "car/Klimp's/Porsche" as car 2. The initial appearance of car 2 is "Klimp's Porsche takes up two spots." It is fixed in place. The description is "Klimp drives an impeccably-maintained 2017 Porsche 911 Turbo Cabriolet."
+Instead of entering car 1:
+	say "[Our] job is here for now.";
+
+Car 2 is a thing. It is privately-named. The printed name is "Klimp's Porsche". Understand "car/Klimp's/Porsche/automobile/auto" as car 2. The initial appearance of car 2 is "Klimp's Porsche takes up two spots." It is fixed in place. The description is "Klimp drives an impeccably-maintained 2017 Porsche 911 Turbo Cabriolet."
 
 	
 To make is a verb.
@@ -30,9 +41,13 @@ Check pushing car 1:
 Check turning car 1: 
 	say "It's not clear what you mean for [us] to do." instead;
  
-The Laundromat-facade is a privately-named unenterable room in Parking Lot South. Understand "laundromat" as the laundromat-facade. "[We] [peer] through the windows of the laundromat at the rows of aging machines. A sign on the door says 'Closed for renovations'. [We] [turn] away, unimpressed." 
+The Laundromat-facade is a privately-named unenterable room in Parking Lot South. The printed name is "laundromat". Understand "laundromat" as the laundromat-facade. "[We] [peer] through the windows of the laundromat at the rows of aging machines. A sign on the door says 'Closed for renovations'. [We] [turn] away, unimpressed." 
 Instead of entering the laundromat-facade:
 	try going northwest;
+	
+The laundromat sign is a part of the Laundromat-facade. The description is "It's just a piece of stationery marked up with Sharpie and taped to the door."
+	
+The laundromat door is a closed and locked door. It is northwest of the parking lot south and southeast of the laundromat-store. The description is "It's a typical glass door. Taped to it is a sign that says 'Closed for renovations'."
 	
 Check going northwest from the strip mall parking lot south when the player does not know break-in-to-laundromat: 
 	say "A sign on the laundromat door says 'Closed for renovations'." instead;
@@ -40,12 +55,24 @@ Check going northwest from the strip mall parking lot south when the player does
 Check going northwest from the strip mall parking lot south when the player knows break-in-to-laundromat: 
 	say "Predictably, the laundromat door is locked." instead;
 	
-The Pawn-Shop-facade is an unenterable room in Parking Lot South. Understand "pawn", "shop" as the pawn-shop-facade. "[We] [observe] the pawn shop with obvious distaste. The flashing neon sign in the window advertises 'Cash for gold!'".
+The swamp-facade is a privately-named unenterable room in Parking Lot South. The printed name is "swamp". Understand "swamp/marsh/water/wetland/wet/land" as the swamp-facade. "Swamp Park is, as one might expect, dotted with these little bits of wetland."
+
+Instead of entering the swamp-facade:
+	try going south;
+	
+The Pawn-Shop-facade is a privately-named unenterable room in Parking Lot South. The printed name is "pawn shop". Understand "pawn", "shop" as the pawn-shop-facade. "[We] [observe] the pawn shop with obvious distaste. The flashing neon sign in the window advertises 'Cash for gold!'".
+
+The flashing neon sign is part of the Pawn-Shop-facade. Understand "pawn/shop/cash/gold" as flashing neon sign. The description is "Its flash rate is just a bit over the threshold of irritating."
+	
+The pawn-shop-door is a closed door. It is southwest of the parking lot south and northeast of the pawn shop. It is privately-named. The printed name is "pawn shop door". Understand "pawn/shop/door" as the pawn-shop-door. The description is "It's a typical glass door. The light within is too dim to see much."
 	
 Instead of entering the pawn-shop-facade:
 	try going southwest;
 	
 Check going southwest from the strip mall parking lot south when the player does not know pawn-shop-screwdriver:
+	say "[We're] not that desperate -- yet." instead;
+	
+Instead of opening the pawn-shop-door when the player does not know pawn-shop-screwdriver:
 	say "[We're] not that desperate -- yet." instead;
 
 Instead of going nowhere from the Parking Lot South:
@@ -58,9 +85,18 @@ Instead of going nowhere from the Parking Lot South:
 		continue the action;
 	stop the action.
 	
+The automatic car wash is an unenterable room in Strip Mall Parking Lot South. The description is "Much like any other automatic car wash."
+
+Instead of entering the automatic car wash:
+	try going east;
+	
+The interstate is scenery in Strip Mall Parking Lot South. Understand "highway/road/expressway/freeway" as the interstate. "A ways off past the swamp, the highway carries most travelers right past this glum little village."
+	
 strip mall parking lot south is outside from the pawn shop.
 
-The Strip Mall Parking Lot North is a room. It is north of The Strip Mall Parking Lot South. It is in Swamp Park. It is outdoors. The printed name is "north end of the strip mall parking lot.". The preposition is "at".
+Chapter 2 - Strip Mall Parking Lot North
+
+The Strip Mall Parking Lot North is a room. It is north of The Strip Mall Parking Lot South. It is in Swamp Park. It is outdoors. The printed name is "north end of the strip mall parking lot". Understand "end/of/the" as the Strip Mall Parking Lot North. The preposition is "at".
 "This end is no more auspicious than the other. A convenience store lies to the east. To the west is a military recruitment center. North of here the parking lot exits onto a busy road. There is a rusty sign by the road naming the shopping center: Park Place. South is BOSH headquarters, among other things." 
 
 Instead of going nowhere from the Parking Lot North:
@@ -75,7 +111,9 @@ Instead of going nowhere from the Parking Lot North:
 	
 Book 2 - Pawn Shop
 	
-The pawn shop is southwest of strip mall parking lot south. "This is more the seedy, gloomy stereotype of a pawn shop than the glitzy santized version of TV reality shows. The blinds in the windows are closed to only allow the barest slant of sunlight in, leaving the sickly fluorescent lights to illuminate the room. There is the distinct smell of cigar smoke. The glass counter is filled with a large collection of possibly valuable items. Behind it is an impressive array of firearms."
+The pawn shop is a room. "This is more the seedy, gloomy stereotype of a pawn shop than the glitzy sanitized version of TV reality shows. The blinds in the windows are closed to only allow the barest slant of sunlight in, leaving the sickly fluorescent lights to illuminate the room. There is the distinct smell of cigar smoke. The glass counter is filled with a large collection of possibly valuable items. Behind it is an impressive array of firearms."
+
+The pawn shop is in Swamp Park.
 
 A man called the pawn shop owner is in the pawn shop. Understand "dave" as the pawn shop owner.
 
@@ -142,7 +180,7 @@ Chapter 2 - The Laundromat Proper
 
 laundromat-region is a region. It is in Swamp Park.
 
-The laundromat-store is northwest of strip mall parking lot south. "This is the laundromat.".
+The laundromat-store is a room. "This is the laundromat.".
 It is privately-named. The printed name is "laundromat". Understand "laundromat" as the laundromat-store. It is in laundromat-region.
 
 The handtruck is in the laundromat-store. It is pushable between rooms.

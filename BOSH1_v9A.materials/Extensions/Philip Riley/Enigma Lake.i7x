@@ -22,6 +22,8 @@ Lake Street by the Courthouse is north of Main at Lake. It is in ELR.
 
 Lake Street by the Park is north of Lake Street by the Courthouse and east of Enigma Park. It is in ELR.
 
+First Unitarian Church of Enigma Lake is east of Lake Street by the Park. It is in ELR.
+
 Lake at Ridge is north of Lake Street by the Park. It is in ELR.
 
 the lake shore north of the park is west of Lake at Ridge and north of Enigma Park. It is in ELR. The preposition is "on".
@@ -40,6 +42,6 @@ Henry's Hot Skillet is south of Main at Solvay. It is in ELR.
 
 Rolle's Department Store is south of Main Street 200 Block. It is in ELR.
 
-The Courthouse is east of Lake Street by the Courthouse.
+The Municipal Courthouse is east of Lake Street by the Courthouse. It is in ELR.
 
 Enigma Lake ends here.

@@ -23,6 +23,7 @@ Include Furniture by Philip Riley.
 Include Third Person Narration by Philip Riley.
 Include Door Utils by Philip Riley.
 Include Real People by Philip Riley.
+Include Visible Rooms by Philip Riley.
 
 Include New Light by Philip Riley.
 
@@ -33,7 +34,7 @@ Include Basics by Philip Riley.
 Include Memories by Philip Riley.
  
 Include Simple Conversation by Philip Riley.
-Include Hyperspace by Philip Riley.
+Include Hyperspace by Philip Riley.	
 Include BOSH Facts by Philip Riley. 
 Include Image Strip by Philip Riley.
 Include Swamp Park by Philip Riley.
@@ -81,7 +82,7 @@ When play begins:
 		move F to the Room of Subjects; ]
 	say "[bold type]Department of Homeland Security, Washington, DC[roman type][line break]";
 	say "Open on a drab office with decor dating to the mid-eighties. The DHS assistant to the associate sub-director looks longingly at the office clock nearing five, then leans across the desk and impatiently states his demands:[paragraph break]";
-	say "'First name, last name, pronouns, biographical trivia?'[paragraph break]";  
+	say "'First name, last name, pronouns?'[paragraph break]";  
 	say "(1) Ezra Gaunt (he/him), winner of the 2006 Baltimore County Edgar Allan Poe Trivia Competition;[paragraph break]";
 	say "(2) Petula Clark Goldberg (she/her), former award-winning dog groomer of the avant-garde school;[paragraph break]";
 	say "or (3) Larch Faraji (they/them), lead singer of the third wave neo-old-school punk band DC Trash.";
@@ -149,12 +150,12 @@ After reading a command when current play mode is picking character:
 	follow the current graphics drawing rule;
 	say line break;
 	say "The government functionary cracks, 'You can hold the life story.' He punches a few keys on his computer, stands up and says 'Thank you, Agent [player's surname]. You're all processed for the move to the new BOSH offices. Now if you'll excuse me, it's time to go home.'[paragraph break]";
-	say "[Player] stands in turn, and collecting [our] briefcase, turns and strides out of the office.[paragraph break]"; 
+	say "[Player] stands, and collecting [our] briefcase, turns and strides out of the office.[paragraph break]"; 
 	continue; 
-	say "The screen cuts to a shot of expensive leather oxfords as their wearer, otherwise out-of-frame, strides along a polished marble floor. The tap, tap, tap of their heels echoes in the empty hallway. There is something sinister in that reverberation, something not right, a sibilance perhaps that shouldn't be there. One could imagine chills up a listener's spine, if only there were someone there to listen.[paragraph break]";
+[	say "The screen cuts to a shot of expensive leather oxfords as their wearer, otherwise out-of-frame, strides along a polished marble floor. The tap, tap, tap of their heels echoes in the empty hallway. There is something sinister in that reverberation, something not right, a sibilance perhaps that shouldn't be there. One could imagine chills up a listener's spine, if only there were someone there to listen.[paragraph break]";
 	say "The shoes stop at a gray utility door. A moment later the door opens and the shoes continue, now outside, tap tap tapping on a cement driveway. A black car pulls up close, tires crunching on the dirty pavement. The shoes take an involuntary step backwards, then forwards again as a window hisses open. Someone speaks, their voice strange and the words unknown.[paragraph break]";
 	say "The camera focuses on the driver's side window. It is dark inside, too dark to see. Someone thrusts a manila folder out of the window. A hand quickly grabs the folder, and the car speeds off. Now the camera zooms on the folder. At the top it reads '[bold type][player's full name][roman type]'. The screen cuts to black.[paragraph break]";
-	continue;
+	continue;]
 	say “[banner text][line break]”;
 	continue;  
 	say Intro Text; 
@@ -280,7 +281,7 @@ Book 4 - Special Tweaks
 
 the can't greet current interlocutor rule response (A) is "[We] [don't] generally talk to [ourselves].".
 the can't greet yourself rule response (A) is "[We] [don't] generally talk to [ourselves].".
-The describe what's on scenery supporters in room descriptions rule does nothing.
+[The describe what's on scenery supporters in room descriptions rule does nothing.]
 the can't take what's fixed in place rule response (A) is "That can't be picked up.".
 the can't switch on unless switchable rule response (A) is "That can't be switched on and off.".  
 
@@ -642,7 +643,7 @@ The couch is a scenery supporter in the front office. It is enterable. "Apparent
 
 Margaret Chao is in The Front Office.  
 
-There is a copy of the Washington Herald on the coffee table. The description is "The front page story is an account of the disappearance of the grandson of Senate Homeland Security Committee chairman Englund Fryes. His parents, including the Senator's son, were brutally murdered in their home, but the boy, Draco Fryes, is missing and presumed kidnapped. So far there has been no ransom demand.". 
+There is a copy of the Washington Herald. The description is "The front page story is an account of the disappearance of the grandson of Senate Homeland Security Committee chairman Englund Fryes. His parents, including the Senator's son, were brutally murdered in their home, but the boy, Draco Fryes, is missing and presumed kidnapped. So far there has been no ransom demand.". 
 Understand "newspaper", "paper", "news" as the Washington Herald.
 
 The front desk is a scenery supporter in the front office. Understand "sales", "counter" as the front desk. The description is "The former sales counter now functions as a desk for the office manager (currently [Margaret]). Behind it are a number of shelves holding office supplies."
@@ -652,6 +653,8 @@ The front desk is a scenery supporter in the front office. Understand "sales", "
 The shelves of office supplies are in the front office. They are plural-named. They are scenery. "Pens, paper, nothing [we're] really concerned with now."
 
 The thumb drive is a thing in the room of stuff. The description of the thumb drive is "It's a red plastic thumb drive, with what look like symbols scratched on the surface, but they're like no symbols you've ever seen. The metal USB end is somewhat corroded."
+
+Some strange symbols are part of the thumb drive. The description is "They look like some kind of language, but none you recognize."
 
 finding the drive before is a memory in the room of stuff. The description is "[We] [remember] finding the drive in an ancient Onandaga root cellar on a farm in upstate New York. [We] [have] never been able to read it.".
 
@@ -759,7 +762,7 @@ Native Tribes of Upstate New York is a thing on Moira's bookshelves.
 
 The closet door is a door. It is east of Moira's office and west of the utility closet. It is closed, openable, locked, and lockable. It is scenery.
 
-The utility closet is dark.
+The utility closet is dark. It is in BOSH HQ.
 
 Instead of knocking on the closet door when the location is the utility closet and the closet door is locked and the closet door is closed:
 	move Moira Zin to Moira's Office;
@@ -1004,10 +1007,12 @@ DEBUG is true.
 The access through barriers rule response (A) is "you have run afoul of the access through barriers rule!";
 
 test screwdriver with "w/x vent/ask for screwdriver/e/n/e/buy screwdriver/ask for screwdriver/w/s/sw/hello/ask for screwdriver/ask about laundromat owner/out/nw".
-
+  
 test laundry with "test screwdriver/w/w/w".
 
-test closet with "gonear closet/purloin glasses/wear them/knock on door". 
+test closet with "gonear closet/p`urloin glasses/wear them/knock on door". 
+
+test audit-parking-lot-south with "x bosh/x sign/department/x pawn shop/x neon/x margaret/x laundromat/x sign/laundromat/x swamp/x wetland/x interstate/x lot/x wash/x car/x hyundai/enter wash/e/x laundromat door/x pawn shop door/open laundromat door/open pawn shop door"
 
 Volume 2 - The Story
 
