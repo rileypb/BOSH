@@ -23,7 +23,7 @@ Include Furniture by Philip Riley.
 Include Third Person Narration by Philip Riley.
 Include Door Utils by Philip Riley.
 Include Real People by Philip Riley.
-Include Visible Rooms by Philip Riley.
+Include Visible Rooms by Philip Riley. 
 
 Include New Light by Philip Riley.
 
@@ -47,9 +47,9 @@ Include Gender Options by Nathanael Nerode.
 
 
 Work Title is always "The Bureau of Strange Happenings".  
-
+ 
 Release along with a website.
-Release along with an interpreter.
+Release along with an interpreter. 
 Release along with cover art.
 
 Table of User styles (continued)
@@ -103,16 +103,16 @@ When play begins:
 		try unknown voice calling the blue flipphone on mysterious phone;
 		move klimp to the Room of Stuff;
 		move moira to the Room of Stuff;
-		now the current play mode is _normal;
+		now the current play mode is _normal; 
 		set possessives;
-
+ 
 To survey is a verb. To wrinkle is a verb.
 
 Intro Text is always "As an agent of the Bureau of Strange Happenings (BOSH), it is Agent [player's full name]'s job to investigate unexplained phenomena throughout the United States and its territories. Recently, however, business hasn't been good. Once a bustling office with a dozen Agents, the Bureau's been reduced to just three: [Player's surname], Moira Zin, and Chief Huffton Klimp. The Bureau's expansive and well-appointed office suite was taken over by the State Department Book Club, and now the agents are consigned to a tiny suite in a strip mall in the remote D.C. suburb of Swamp Park, Maryland.
 	
 	We open on a decrepit strip mall just as an aging Hyundai pulls into the potholed parking lot. [agent] steps out of the car. [We] [survey] the area and [wrinkle] [our] nose.[paragraph break]".
 
-	
+	 
 [
 	
 	The reason? The venomous Senator Savra, whose crusade against all things he considers unwholesome is the scourge of Washington. To him, BOSH is nothing more than the devil's megaphone, giving credence to Satan's lies by giving them a hearing. Now Savra is at it again, pushing to cut BOSH entirely from next year's Federal budget.
@@ -808,28 +808,37 @@ Book 15 - Moving Between Rooms
  
  
 Table of Transitions
-source room (a room)	target room (a room)	transition text (a text)
-Strip Mall Parking Lot South	Strip Mall Parking Lot North	"[We] [trudge] to the other end of the parking lot. It's much like where [we] left."
+source room (a room)	target room (a room)	transition text (a text)	used (a truth state)
+Strip Mall Parking Lot South	Strip Mall Parking Lot North	"[We] [trudge] to the other end of the parking lot. It's much like where [we] left."	--
 Strip Mall Parking Lot North	Strip Mall Parking Lot South	"[We] [walk] back to the south end of the parking lot."
 Strip Mall Parking Lot South	Front Office	"Just like in the store this once was, the door chimes as [we] [walk] in."
 Front Office	Strip Mall Parking Lot South	"[We] [step] out of the office into the parking lot."
 Strip Mall Parking Lot North	Li'l Nectarine Convenience Store	"[We] [are] greeted by a blast of music as [we] [enter] the store."
 Li'l Nectarine Convenience Store	Strip Mall Parking Lot North	"[We] [exit] the store into the relative quiet of the nearby traffic."
-Strip Mall Parking Lot South	pawn shop	"'Cha-ching!'[first time] rings the electronic chime as [we] [step] into the store.[only]"
-pawn shop	Strip Mall Parking Lot South	"[one of]Once again -- 'Cha-ching!' -- as [we] [leave] the store.[or]'Cha-ching!'[stopping]"
+Strip Mall Parking Lot South	Dave's pawn shop	"'Cha-ching!'[first time] rings the electronic chime as [we] [step] into the store.[only]"
+Dave's pawn shop	Strip Mall Parking Lot South	"[one of]Once again -- 'Cha-ching!' -- as [we] [leave] the store.[or]'Cha-ching!'[stopping]"
 
 
 
 To decide which text is the transition for (source - a room) to (target - a room):
 	repeat through the Table of Transitions:
 		if (source room entry is source) and (target room entry is target):
-			decide on transition text entry;
+			if there is a used entry and used entry is false:
+				decide on transition text entry;
+			if there is no used entry:
+				decide on transition text entry;
 	decide on "none";
-
+	
+To mark transition from (source - a room) to (target - a room) as used:
+	repeat through the Table of Transitions:
+		if (source room entry is source) and (target room entry is target):
+			now used entry is true;
+ 
 After going from a room (called R1) to a room (called R2): 
 	let transition text be the transition for R1 to R2;
 	if transition text is not "none":
 		say "[transition text][paragraph break]";
+		mark transition from R1 to R2 as used;
 	continue the action;
 
 Chapter 1 - Leaving the Front Office
@@ -875,11 +884,11 @@ Figure Caller is the file "caller_portrait_2.png".
 Figure Parking Lot is the file "location_parking_lot.png". 
 Figure Pawn Shop is the file "location_pawn_shop.png".
 Figure BOSH is the file "location_bosh.png".
-Figure Store is the file "location_lil_nectarine.png".
+Figure Store is the file "location_nectarine.png".
 Figure Laundromat is the file "location_laundromat.png".
 Figure White Tunnel is the file "location_white_tunnel.png".
 Figure Moira is the file "moira_portrait.png".
-Figure Hyperspace is the file "location_hyperspace.png".
+Figure Hyperspace is the file "location_hyperspace.png". 
 Figure Enigma Lake is the file "location_enigma_lake.png".
 Figure Enigma Park is the file "location_enigma_park.png".
 Figure Engima Shore is the file "location_lake_shore.png".
@@ -894,14 +903,14 @@ Larch Faraji has portrait Figure Faraji.
 Margaret Chao has portrait Figure Margaret.
 The Store Clerk has portrait Figure Clerk.
 Chief Klimp has portrait Figure Klimp.
-Draco has portrait Figure Draco.
+Draco has portrait Figure Draco. 
 Doris has portrait Figure Doris. 
 The pawn shop owner has portrait Figure Pawn Owner.
 The unknown voice has portrait Figure Caller.
 The blue flipphone has portrait Figure Phone.
 Moira Zin has portrait Figure Moira.
 Minerva has portrait Figure Minerva.
-Maggie has portrait Figure Maggie.
+Maggie has portrait Figure Maggie. 
 Christy has portrait Figure Christy.
 
 Characters is a list of figure names that varies.
@@ -909,7 +918,7 @@ Characters is a list of figure names that varies.
 To decide which figure name is the picture of the location:
 	let result be Figure Null;
 	if location is Parking Lot South or location is Parking Lot North, now result is Figure Parking Lot;
-	if location is Pawn Shop, now result is Figure Pawn Shop;
+	if location is Dave's Pawn Shop, now result is Figure Pawn Shop;
 	if location is in BOSH HQ, now result is Figure BOSH;
 	if location is Li'l Nectarine Convenience Store, now result is Figure Store;
 	if location is in Laundromat-region, now result is Figure Laundromat;
@@ -919,8 +928,8 @@ To decide which figure name is the picture of the location:
 	if location is Enigma Park, now result is Figure Enigma Park;
 	if location is lake shore north of the park or location is lake shore west, now result is Figure Engima Shore;
 	if location is in field office area, now result is Figure Field Office;
-	decide on result;
-	
+	decide on result; 
+		
 
 The first glulx picture selection rule (this is the bosh picture selection rule):
 	remove characters from characters;
@@ -928,11 +937,11 @@ The first glulx picture selection rule (this is the bosh picture selection rule)
 		add Figure Gaunt to characters;
 		add Figure Goldberg to characters;
 		add Figure Faraji to characters;  
-	otherwise: 
+	otherwise:  
 		if the player is yourself:
 			rule succeeds with result 0;
 		let PoL be picture of the location;
-		if PoL is not Figure Null:
+		if PoL is not Figure Null: 
 			add PoL to characters;
 		add the portrait of the player to characters; 
 		if current play mode is _normal:
@@ -950,7 +959,7 @@ The first glulx picture selection rule (this is the bosh picture selection rule)
 			if could see hypertunnels and the player wears the astral lenses:
 				add Figure White Tunnel to characters;					
 	if the number of entries of characters > 0:
-		now the internally selected picture 1 is entry 1 of characters;
+		now the internally selected picture 1 is entry 1 of characters; 
 	if the number of entries of characters > 1:
 		now the internally selected picture 2 is entry 2 of characters; 
 	if the number of entries of characters > 2:
@@ -1002,6 +1011,8 @@ To call resize function:
 	
 Book 19 - Not For Release
  
+[Include BOSH Tests by Philip Riley.]
+
 DEBUG is true.
 
 The access through barriers rule response (A) is "you have run afoul of the access through barriers rule!";
@@ -1010,13 +1021,18 @@ test screwdriver with "w/x vent/ask for screwdriver/e/n/e/buy screwdriver/ask fo
   
 test laundry with "test screwdriver/w/w/w".
 
-test closet with "gonear closet/p`urloin glasses/wear them/knock on door". 
+test closet with "gonear closet/purloin glasses/wear them/knock on door". 
 
-test audit-parking-lot-south with "x bosh/x sign/department/x pawn shop/x neon/x margaret/x laundromat/x sign/laundromat/x swamp/x wetland/x interstate/x lot/x wash/x car/x hyundai/enter wash/e/x laundromat door/x pawn shop door/open laundromat door/open pawn shop door"
+test lotsouth with "x bosh/x sign/department/x pawn shop/x neon/x margaret/x laundromat/x sign/laundromat/x swamp/x wetland/x interstate/x lot/x wash/x car/x hyundai/enter wash/e/x laundromat door/x pawn shop door/open laundromat door/open pawn shop door"
+
+test lotnorth with "gonear parking lot north"
+
+	
+
 
 Volume 2 - The Story
 
-
+ 
 Book 1 - The Thumb Drive
 
 The thumb-drive-story is always "Biff found the thumb drive in an ancient Onandaga root cellar on a farm in upstate New York. He was never able to read it.".

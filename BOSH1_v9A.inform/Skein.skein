@@ -1,10 +1,1909 @@
 <?xml version="1.0"?>
 
-<Skein rootNode="node-1002">
+<Skein rootNode="node-1288">
     <generator>Inform Mac Client (Inform version )</generator>
-    <item nodeId="node-1002">
+    <item nodeId="node-1288">
         <command xml:space="preserve">BOSH1_v9A</command>
         <result xml:space="preserve">
+
+
+Department of Homeland Security, Washington, DC
+Open on a drab office with decor dating to the mid-eighties. The DHS assistant to the associate sub-director looks longingly at the office clock nearing five, then leans across the desk and impatiently states his demands:
+
+"First name, last name, pronouns?"
+
+(1) Ezra Gaunt (he/him), winner of the 2006 Baltimore County Edgar Allan Poe Trivia Competition;
+
+(2) Petula Clark Goldberg (she/her), former award-winning dog groomer of the avant-garde school;
+
+or (3) Larch Faraji (they/them), lead singer of the third wave neo-old-school punk band DC Trash.
+
+The Bureau of Strange Happenings
+An Interactive Phenomenon by Phil Riley
+Release 1 / Serial number 230515 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
+
+Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Their Hyundai is parked nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1500"></child>
+            <child nodeId="node-1602"></child>
+            <child nodeId="node-1498"></child>
+            <child nodeId="node-1466"></child>
+            <child nodeId="node-1410"></child>
+            <child nodeId="node-1408"></child>
+            <child nodeId="node-1406"></child>
+            <child nodeId="node-1397"></child>
+            <child nodeId="node-1393"></child>
+            <child nodeId="node-1387"></child>
+            <child nodeId="node-1385"></child>
+            <child nodeId="node-1375"></child>
+            <child nodeId="node-1371"></child>
+            <child nodeId="node-1366"></child>
+            <child nodeId="node-1361"></child>
+            <child nodeId="node-1355"></child>
+            <child nodeId="node-1345"></child>
+            <child nodeId="node-1340"></child>
+            <child nodeId="node-1337"></child>
+            <child nodeId="node-1327"></child>
+            <child nodeId="node-1324"></child>
+            <child nodeId="node-1289"></child>
+        </children>
+    </item>
+    <item nodeId="node-1289">
+        <command xml:space="preserve">x storefront</command>
+        <result xml:space="preserve">Faraji gazes stoically at the sad little storefront that is the new BOSH office. The sign from the previous tenant is still up: "Angel's Department Store". Through the front window can be seen Margaret, in her usual manic work mode.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1290"></child>
+        </children>
+    </item>
+    <item nodeId="node-1290">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Faraji trudges to the other end of the parking lot. It's much like where they left.
+
+Agent Faraji is at the north end of the strip mall parking lot. This end is no more auspicious than the other. A convenience store lies to the east. To the west is a military recruitment center. North of here the parking lot exits onto a busy road. There is a rusty sign by the road naming the shopping center: Park Place. South is BOSH headquarters, among other things.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1291"></child>
+        </children>
+    </item>
+    <item nodeId="node-1291">
+        <command xml:space="preserve">x hq</command>
+        <result xml:space="preserve">The BOSH headquarters are to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1292"></child>
+        </children>
+    </item>
+    <item nodeId="node-1292">
+        <command xml:space="preserve">x store</command>
+        <result xml:space="preserve">It's marked by a sign with a big nectarine on it.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1293"></child>
+        </children>
+    </item>
+    <item nodeId="node-1293">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Faraji is greeted by a blast of music as they enter the store.
+
+Agent Faraji is in the Li'l Nectarine Convenience Store. Li'l Nectarine offers great service and low prices, or so they say. This one's cluttered aisles and sparse shelves could make one wonder if that's true. Behind the counter is the typical array of cigarettes and lottery tickets. Under the counter is a glass case containing various useful items.
+
+The clerk, a scruffy man in his mid-twenties, is leaning against the counter, looking bored.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1294"></child>
+        </children>
+    </item>
+    <item nodeId="node-1294">
+        <command xml:space="preserve">x aisle</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1295"></child>
+        </children>
+    </item>
+    <item nodeId="node-1295">
+        <command xml:space="preserve">x aisles</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1296"></child>
+        </children>
+    </item>
+    <item nodeId="node-1296">
+        <command xml:space="preserve">x shelves</command>
+        <result xml:space="preserve">Faraji hardly needs bread, ketchup, or potato chips.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1297"></child>
+        </children>
+    </item>
+    <item nodeId="node-1297">
+        <command xml:space="preserve">x counter</command>
+        <result xml:space="preserve">There seems to be nothing special about it.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1298"></child>
+        </children>
+    </item>
+    <item nodeId="node-1298">
+        <command xml:space="preserve">x cigarettes</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1299"></child>
+        </children>
+    </item>
+    <item nodeId="node-1299">
+        <command xml:space="preserve">x tickets</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1300"></child>
+        </children>
+    </item>
+    <item nodeId="node-1300">
+        <command xml:space="preserve">x counter</command>
+        <result xml:space="preserve">There seems to be nothing special about it.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1301"></child>
+        </children>
+    </item>
+    <item nodeId="node-1301">
+        <command xml:space="preserve">x case</command>
+        <result xml:space="preserve">In the glass case are a flashlight, a red screwdriver, a laptop computer, some wireless earbuds and a black smart phone.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1302"></child>
+        </children>
+    </item>
+    <item nodeId="node-1302">
+        <command xml:space="preserve">break glass</command>
+        <result xml:space="preserve">Violence isn't the answer to this one.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1303"></child>
+        </children>
+    </item>
+    <item nodeId="node-1303">
+        <command xml:space="preserve">restart</command>
+        <result xml:space="preserve">Are you sure you want to restart? </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1304"></child>
+        </children>
+    </item>
+    <item nodeId="node-1304">
+        <command xml:space="preserve">y</command>
+        <result xml:space="preserve">
+
+
+
+Department of Homeland Security, Washington, DC
+Open on a drab office with decor dating to the mid-eighties. The DHS assistant to the associate sub-director looks longingly at the office clock nearing five, then leans across the desk and impatiently states his demands:
+
+"First name, last name, pronouns?"
+
+(1) Ezra Gaunt (he/him), winner of the 2006 Baltimore County Edgar Allan Poe Trivia Competition;
+
+(2) Petula Clark Goldberg (she/her), former award-winning dog groomer of the avant-garde school;
+
+or (3) Larch Faraji (they/them), lead singer of the third wave neo-old-school punk band DC Trash.
+
+The Bureau of Strange Happenings
+An Interactive Phenomenon by Phil Riley
+Release 1 / Serial number 230513 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
+
+Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Their Hyundai is parked nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1305"></child>
+        </children>
+    </item>
+    <item nodeId="node-1305">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Faraji trudges to the other end of the parking lot. It's much like where they left.
+
+Agent Faraji is at the north end of the strip mall parking lot. This end is no more auspicious than the other. A convenience store lies to the east. To the west is a military recruitment center. North of here the parking lot exits onto a busy road. There is a rusty sign by the road naming the shopping center: Park Place. South is BOSH headquarters, among other things.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1306"></child>
+        </children>
+    </item>
+    <item nodeId="node-1306">
+        <command xml:space="preserve">x parking lot</command>
+        <result xml:space="preserve">Agent Faraji is at the north end of the strip mall parking lot. This end is no more auspicious than the other. A convenience store lies to the east. To the west is a military recruitment center. North of here the parking lot exits onto a busy road. There is a rusty sign by the road naming the shopping center: Park Place. South is BOSH headquarters, among other things.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1307"></child>
+        </children>
+    </item>
+    <item nodeId="node-1307">
+        <command xml:space="preserve">x store</command>
+        <result xml:space="preserve">It's marked by a sign with a big nectarine on it.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1308"></child>
+        </children>
+    </item>
+    <item nodeId="node-1308">
+        <command xml:space="preserve">x center</command>
+        <result xml:space="preserve">Patriotic posters paper the windows.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1309"></child>
+        </children>
+    </item>
+    <item nodeId="node-1309">
+        <command xml:space="preserve">x road</command>
+        <result xml:space="preserve">The main business thoroughfare of Swamp Park.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1310"></child>
+        </children>
+    </item>
+    <item nodeId="node-1310">
+        <command xml:space="preserve">x sign</command>
+        <result xml:space="preserve">It says "Park Place".
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1311"></child>
+        </children>
+    </item>
+    <item nodeId="node-1311">
+        <command xml:space="preserve">x park place</command>
+        <result xml:space="preserve">Agent Faraji is at the north end of the strip mall parking lot. This end is no more auspicious than the other. A convenience store lies to the east. To the west is a military recruitment center. North of here the parking lot exits onto a busy road. There is a rusty sign by the road naming the shopping center: Park Place. South is BOSH headquarters, among other things.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1312"></child>
+        </children>
+    </item>
+    <item nodeId="node-1312">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Faraji has things to do here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1313"></child>
+        </children>
+    </item>
+    <item nodeId="node-1313">
+        <command xml:space="preserve">x postetrs</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1314"></child>
+        </children>
+    </item>
+    <item nodeId="node-1314">
+        <command xml:space="preserve">x posters</command>
+        <result xml:space="preserve">The new slogan is "Answer the Call!"
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1315"></child>
+        </children>
+    </item>
+    <item nodeId="node-1315">
+        <command xml:space="preserve">x nectarine</command>
+        <result xml:space="preserve">It's marked by a sign with a big nectarine on it.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1316"></child>
+        </children>
+    </item>
+    <item nodeId="node-1316">
+        <command xml:space="preserve">x park place</command>
+        <result xml:space="preserve">Agent Faraji is at the north end of the strip mall parking lot. This end is no more auspicious than the other. A convenience store lies to the east. To the west is a military recruitment center. North of here the parking lot exits onto a busy road. There is a rusty sign by the road naming the shopping center: Park Place. South is BOSH headquarters, among other things.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1317"></child>
+        </children>
+    </item>
+    <item nodeId="node-1317">
+        <command xml:space="preserve">x bosh</command>
+        <result xml:space="preserve">The BOSH headquarters are to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1318"></child>
+        </children>
+    </item>
+    <item nodeId="node-1318">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Faraji will think about joining the military once the Bureau shuts down.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1319"></child>
+        </children>
+    </item>
+    <item nodeId="node-1319">
+        <command xml:space="preserve">enter military</command>
+        <result xml:space="preserve">Faraji will think about joining the military once the Bureau shuts down.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1320"></child>
+        </children>
+    </item>
+    <item nodeId="node-1320">
+        <command xml:space="preserve">center</command>
+        <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1321"></child>
+        </children>
+    </item>
+    <item nodeId="node-1321">
+        <command xml:space="preserve">enter store</command>
+        <result xml:space="preserve">Faraji is greeted by a blast of music as they enter the store.
+
+Agent Faraji is in the Li'l Nectarine Convenience Store. Li'l Nectarine offers great service and low prices, or so they say. This one's cluttered aisles and sparse shelves could make one wonder if that's true. Behind the counter is the typical array of cigarettes and lottery tickets. Under the counter is a glass case containing various useful items.
+
+The clerk, a scruffy man in his mid-twenties, is leaning against the counter, looking bored.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1322"></child>
+        </children>
+    </item>
+    <item nodeId="node-1322">
+        <command xml:space="preserve">out</command>
+        <result xml:space="preserve">Faraji exits the store into the relative quiet of the nearby traffic.
+
+Agent Faraji is at the north end of the strip mall parking lot. This end is no more auspicious than the other. A convenience store lies to the east. To the west is a military recruitment center. North of here the parking lot exits onto a busy road. There is a rusty sign by the road naming the shopping center: Park Place. South is BOSH headquarters, among other things.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1323"></child>
+        </children>
+    </item>
+    <item nodeId="node-1323">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Faraji is greeted by a blast of music as they enter the store.
+
+Agent Faraji is in the Li'l Nectarine Convenience Store. Li'l Nectarine offers great service and low prices, or so they say. This one's cluttered aisles and sparse shelves could make one wonder if that's true. Behind the counter is the typical array of cigarettes and lottery tickets. Under the counter is a glass case containing various useful items.
+
+The clerk, a scruffy man in his mid-twenties, is leaning against the counter, looking bored.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1324">
+        <command xml:space="preserve">x sign</command>
+        <result xml:space="preserve">&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1325"></child>
+        </children>
+    </item>
+    <item nodeId="node-1325">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1326"></child>
+        </children>
+    </item>
+    <item nodeId="node-1326">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Their Hyundai is parked nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1327">
+        <command xml:space="preserve">x shop</command>
+        <result xml:space="preserve">Which do you mean, the pawn shop door or the Dave's pawn shop?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1328"></child>
+        </children>
+    </item>
+    <item nodeId="node-1328">
+        <command xml:space="preserve">x pawn shop</command>
+        <result xml:space="preserve">Which do you mean, the pawn shop door or the Dave's pawn shop?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1329"></child>
+        </children>
+    </item>
+    <item nodeId="node-1329">
+        <command xml:space="preserve">enter pawn shop</command>
+        <result xml:space="preserve">Which do you mean, the pawn shop door or the Dave's pawn shop?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1330"></child>
+        </children>
+    </item>
+    <item nodeId="node-1330">
+        <command xml:space="preserve">door</command>
+        <result xml:space="preserve">(first opening the pawn shop door)
+Faraji's not that desperate -- yet.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1331"></child>
+        </children>
+    </item>
+    <item nodeId="node-1331">
+        <command xml:space="preserve">showme</command>
+        <result xml:space="preserve">south end of the strip mall parking lot - room
+    Hyperlight - backdrop
+    Faraji - nonbinary
+        Bureau credit card - money card
+        green smartphone - phone
+    pawn shop door - closed door
+    laundromat door - locked door
+    office - unenterable room
+        Margaret at a distance (part of office)
+        department store sign (part of office)
+    their Hyundai
+    laundromat - unenterable room
+        laundromat sign (part of laundromat)
+    swamp - unenterable room
+    Dave's pawn shop - unenterable room
+        flashing neon sign (part of Dave's pawn shop)
+    automatic car wash - unenterable room
+    interstate
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1332"></child>
+        </children>
+    </item>
+    <item nodeId="node-1332">
+        <command xml:space="preserve">x margaret at a distance</command>
+        <result xml:space="preserve">Even from here you can sense her irrepressible energy.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1333"></child>
+        </children>
+    </item>
+    <item nodeId="node-1333">
+        <command xml:space="preserve">enter pawn shop</command>
+        <result xml:space="preserve">Which do you mean, the pawn shop door or the Dave's pawn shop?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1334"></child>
+        </children>
+    </item>
+    <item nodeId="node-1334">
+        <command xml:space="preserve">dave's</command>
+        <result xml:space="preserve">Faraji's not that desperate -- yet.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1335"></child>
+        </children>
+    </item>
+    <item nodeId="node-1335">
+        <command xml:space="preserve">x shop</command>
+        <result xml:space="preserve">Which do you mean, the pawn shop door or the Dave's pawn shop?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1336"></child>
+        </children>
+    </item>
+    <item nodeId="node-1336">
+        <command xml:space="preserve">dave's</command>
+        <result xml:space="preserve">Faraji observes the pawn shop with obvious distaste. The flashing neon sign in the window advertises "Cash for gold!"
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1337">
+        <command xml:space="preserve">x pawn shop</command>
+        <result xml:space="preserve">Which do you mean, the door or the pawn shop?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1338"></child>
+        </children>
+    </item>
+    <item nodeId="node-1338">
+        <command xml:space="preserve">shop</command>
+        <result xml:space="preserve">Which do you mean, the door or the pawn shop?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1339"></child>
+        </children>
+    </item>
+    <item nodeId="node-1339">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Their Hyundai is parked nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1340">
+        <command xml:space="preserve">x new</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1341"></child>
+        </children>
+    </item>
+    <item nodeId="node-1341">
+        <command xml:space="preserve">x new office</command>
+        <result xml:space="preserve">Faraji gazes stoically at the sad little storefront that is the new BOSH office. The sign from the previous tenant is still up: "Angel's Department Store". Through the front window can be seen Margaret, in her usual manic work mode.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1342"></child>
+        </children>
+    </item>
+    <item nodeId="node-1342">
+        <command xml:space="preserve">x window</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1343"></child>
+        </children>
+    </item>
+    <item nodeId="node-1343">
+        <command xml:space="preserve">x angel</command>
+        <result xml:space="preserve">It's adorned with a pair of angel's wings.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1344"></child>
+        </children>
+    </item>
+    <item nodeId="node-1344">
+        <command xml:space="preserve">x storefront</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1345">
+        <command xml:space="preserve">x margaret</command>
+        <result xml:space="preserve">Even from here you can sense her irrepressible energy.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1346"></child>
+        </children>
+    </item>
+    <item nodeId="node-1346">
+        <command xml:space="preserve">pronouns</command>
+        <result xml:space="preserve">At the moment, "it" means Faraji's Hyundai, "him" is unset, "her" means Margaret, "them" is unset and "me" means Larch Faraji.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1347"></child>
+        </children>
+    </item>
+    <item nodeId="node-1347">
+        <command xml:space="preserve">x it</command>
+        <result xml:space="preserve">An old bright red Hyundai Accent, it's been Faraji's personal means of transportation for years. And since the Bureau lost its fleet, it's their work car too.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1348"></child>
+        </children>
+    </item>
+    <item nodeId="node-1348">
+        <command xml:space="preserve">x her</command>
+        <result xml:space="preserve">Even from here you can sense her irrepressible energy.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1349"></child>
+        </children>
+    </item>
+    <item nodeId="node-1349">
+        <command xml:space="preserve">x her hyundai</command>
+        <result xml:space="preserve">An old bright red Hyundai Accent, it's been Faraji's personal means of transportation for years. And since the Bureau lost its fleet, it's their work car too.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1350"></child>
+        </children>
+    </item>
+    <item nodeId="node-1350">
+        <command xml:space="preserve">x their hyundai</command>
+        <result xml:space="preserve">An old bright red Hyundai Accent, it's been Faraji's personal means of transportation for years. And since the Bureau lost its fleet, it's their work car too.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1351"></child>
+        </children>
+    </item>
+    <item nodeId="node-1351">
+        <command xml:space="preserve">x his hyundai</command>
+        <result xml:space="preserve">An old bright red Hyundai Accent, it's been Faraji's personal means of transportation for years. And since the Bureau lost its fleet, it's their work car too.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1352"></child>
+        </children>
+    </item>
+    <item nodeId="node-1352">
+        <command xml:space="preserve">x its hyundai</command>
+        <result xml:space="preserve">An old bright red Hyundai Accent, it's been Faraji's personal means of transportation for years. And since the Bureau lost its fleet, it's their work car too.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1353"></child>
+        </children>
+    </item>
+    <item nodeId="node-1353">
+        <command xml:space="preserve">x our hyundai</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1354"></child>
+        </children>
+    </item>
+    <item nodeId="node-1354">
+        <command xml:space="preserve">x a hyundai</command>
+        <result xml:space="preserve">An old bright red Hyundai Accent, it's been Faraji's personal means of transportation for years. And since the Bureau lost its fleet, it's their work car too.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1355">
+        <command xml:space="preserve">x door</command>
+        <result xml:space="preserve">Which do you mean, the pawn shop door or the laundromat door?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1356"></child>
+        </children>
+    </item>
+    <item nodeId="node-1356">
+        <command xml:space="preserve">pawn</command>
+        <result xml:space="preserve">It's a typical glass door. The light within is too dim to see much.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1357"></child>
+        </children>
+    </item>
+    <item nodeId="node-1357">
+        <command xml:space="preserve">x pawn</command>
+        <result xml:space="preserve">Which do you mean, the pawn shop door or the pawn shop?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1358"></child>
+        </children>
+    </item>
+    <item nodeId="node-1358">
+        <command xml:space="preserve">shop</command>
+        <result xml:space="preserve">Which do you mean, the pawn shop door or the pawn shop?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1359"></child>
+        </children>
+    </item>
+    <item nodeId="node-1359">
+        <command xml:space="preserve">x pawn shop</command>
+        <result xml:space="preserve">Which do you mean, the pawn shop door or the pawn shop?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1360"></child>
+        </children>
+    </item>
+    <item nodeId="node-1360">
+        <command xml:space="preserve">showme</command>
+        <result xml:space="preserve">south end of the strip mall parking lot - room
+    Hyperlight - backdrop
+    Faraji - nonbinary
+        Bureau credit card - money card
+        green smartphone - phone
+    pawn shop door - closed door
+    laundromat door - locked door
+    office - unenterable room
+        Margaret at a distance (part of office)
+        department store sign (part of office)
+    their Hyundai
+    laundromat - unenterable room
+        laundromat sign (part of laundromat)
+    swamp - unenterable room
+    pawn shop - unenterable room
+        flashing neon sign (part of pawn shop)
+    automatic car wash - unenterable room
+    interstate
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1361">
+        <command xml:space="preserve">x car wash</command>
+        <result xml:space="preserve">Much like any other automatic car wash.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1362"></child>
+        </children>
+    </item>
+    <item nodeId="node-1362">
+        <command xml:space="preserve">scp[e</command>
+        <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1363"></child>
+        </children>
+    </item>
+    <item nodeId="node-1363">
+        <command xml:space="preserve">scope</command>
+        <result xml:space="preserve">1: Hyperlight (969846)
+2: Faraji (973302)
+3: a pawn shop door (971894)
+4: a laundromat door (971734)
+5: an office (971094)
+6: Margaret (971606)
+7: a department store sign (971638)
+8: their Hyundai (971126)
+9: an A-plus laundromat (971158)
+10: a laundromat sign (971702)
+11: a swamp (971190)
+12: a Dave's pawn shop (971222)
+13: a flashing neon sign (971862)
+14: an automatic car wash (971254)
+15: an interstate (971286)
+16: the Bureau credit card (975606)
+17: a green smartphone (975670)
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1364"></child>
+        </children>
+    </item>
+    <item nodeId="node-1364">
+        <command xml:space="preserve">x hyperlight</command>
+        <result xml:space="preserve">There seems to be nothing special about it.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1365"></child>
+        </children>
+    </item>
+    <item nodeId="node-1365">
+        <command xml:space="preserve">x faraji</command>
+        <result xml:space="preserve">Agent Faraji 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1366">
+        <command xml:space="preserve">unit</command>
+        <result xml:space="preserve">Starting test: x bosh...
+Evaluating: x bosh
+Assertion failed: produced "Faraji gazes stoically at the sad little storefront that is the new BOSH office. The sign from the previous tenant is still up: "Angel's Department Store". Through the front window can be seen Margaret, in her usual manic work mode.", not "blah"!
+Starting test: x sign...
+Evaluating: x laundromat sign
+Assertion failed: produced "It's just a piece of stationery marked up with Sharpie and taped to the door.", not "foobar"!
+
+Results: 0/2 assertions passed.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1367"></child>
+        </children>
+    </item>
+    <item nodeId="node-1367">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Faraji stands around and waits.
+
+Evaluating: laundromat
+Assertion failed: produced "I'm not sure what you're trying to say. I might just not recognize the words you're using.", not "foobar"!
+
+Results: 0/2 assertions passed.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1368"></child>
+        </children>
+    </item>
+    <item nodeId="node-1368">
+        <command xml:space="preserve">laundromat</command>
+        <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1369"></child>
+        </children>
+    </item>
+    <item nodeId="node-1369">
+        <command xml:space="preserve">x sign</command>
+        <result xml:space="preserve">Which do you mean, the department store sign, the laundromat sign or the flashing neon sign?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1370"></child>
+        </children>
+    </item>
+    <item nodeId="node-1370">
+        <command xml:space="preserve">laundromat</command>
+        <result xml:space="preserve">It's just a piece of stationery marked up with Sharpie and taped to the door.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1371">
+        <command xml:space="preserve">test me</command>
+        <result xml:space="preserve">&gt;--&gt; The following tests are available:
+'test screwdriver'
+'test laundry'
+'test closet'
+'test audit-parking-lot-south'
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1372"></child>
+        </children>
+    </item>
+    <item nodeId="node-1372">
+        <command xml:space="preserve">test audit-parking-lot-south</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] x bosh
+Faraji gazes stoically at the sad little storefront that is the new BOSH office. The sign from the previous tenant is still up: "Angel's Department Store". Through the front window can be seen Margaret, in her usual manic work mode.
+
+&gt;[2] x sign
+Which do you mean, the department store sign, the laundromat sign or the flashing neon sign?
+
+&gt;[3] department
+It's adorned with a pair of angel's wings.
+
+&gt;[4] x pawn shop
+Which do you mean, the pawn shop door or the Dave's pawn shop?
+
+&gt;[5] x neon
+Its flash rate is just a bit over the threshold of irritating.
+
+&gt;[6] x margaret
+Even from here you can sense Margaret's irrepressible energy.
+
+&gt;[7] x laundromat
+Which do you mean, the laundromat door, the A-plus laundromat or the laundromat sign?
+
+&gt;[8] x sign
+Which do you mean, the department store sign, the laundromat sign or the flashing neon sign?
+
+&gt;[9] laundromat
+It's just a piece of stationery marked up with Sharpie and taped to the door. It says "Closed for renovations".
+
+&gt;[10] x swamp
+Swamp Park is, as one might expect, dotted with these little bits of wetland.
+
+&gt;[11] x wetland
+Swamp Park is, as one might expect, dotted with these little bits of wetland.
+
+&gt;[12] x interstate
+A ways off past the swamp, the highway carries most travelers right past this glum little village.
+
+&gt;[13] x lot
+Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Their Hyundai is parked nearby.
+
+&gt;[14] x wash
+Much like any other automatic car wash.
+
+&gt;[15] x car
+(Faraji's Hyundai)
+An old bright red Hyundai Accent, it's been their personal means of transportation for years. And since the Bureau lost its fleet, it's their work car too.
+
+&gt;[16] x hyundai
+An old bright red Hyundai Accent, it's been Faraji's personal means of transportation for years. And since the Bureau lost its fleet, it's their work car too.
+
+&gt;[17] enter wash
+An automatic car wash isn't of much use when one is on foot.
+
+&gt;[18] e
+An automatic car wash isn't of much use when one is on foot.
+
+&gt;[19] x laundromat door
+It's a typical glass door. Taped to it is a sign that says "Closed for renovations".
+
+&gt;[20] x pawn shop door
+It's a typical glass door. The light within is too dim to see much.
+
+&gt;[21] open laundromat door
+It seems to be locked.
+
+&gt;[22] open pawn shop door
+Faraji's not that desperate -- yet.
+
+&gt;</result>
+        <commentary xml:space="preserve">[1] x bosh
+[2] x sign
+[3] department
+[4] x pawn shop
+[5] x neon
+[6] x margaret
+[7] x laundromat
+[8] x sign
+[9] laundromat
+[10] x swamp
+[11] x wetland
+[12] x interstate
+[13] x lot
+[14] x wash
+[15] x car
+[16] x hyundai
+[17] enter wash
+[18] e
+[19] x laundromat door
+[20] x pawn shop door
+[21] open laundromat door
+[22] open pawn shop door
+</commentary>
+        <children><child nodeId="node-1373"></child>
+        </children>
+    </item>
+    <item nodeId="node-1373">
+        <command xml:space="preserve">x pawn</command>
+        <result xml:space="preserve">Which do you mean, the pawn shop door or the Dave's pawn shop?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1374"></child>
+        </children>
+    </item>
+    <item nodeId="node-1374">
+        <command xml:space="preserve">door</command>
+        <result xml:space="preserve">It's a typical glass door. The light within is too dim to see much.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1375">
+        <command xml:space="preserve">test lotnorth</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] gonear parking lot north
+Agent Faraji is at the north end of the strip mall parking lot. This end is no more auspicious than the other. A convenience store lies to the east. To the west is a military recruitment center. North of here the parking lot exits onto a busy road. There is a rusty sign by the road naming the shopping center: Park Place. South is BOSH headquarters, among other things.
+
+&gt;</result>
+        <commentary xml:space="preserve">[1] gonear parking lot north
+</commentary>
+        <children><child nodeId="node-1376"></child>
+        </children>
+    </item>
+    <item nodeId="node-1376">
+        <command xml:space="preserve">x lot</command>
+        <result xml:space="preserve">Agent Faraji is at the north end of the strip mall parking lot. This end is no more auspicious than the other. A convenience store lies to the east. To the west is a military recruitment center. North of here the parking lot exits onto a busy road. There is a rusty sign by the road naming the shopping center: Park Place. South is BOSH headquarters, among other things.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1377"></child>
+        </children>
+    </item>
+    <item nodeId="node-1377">
+        <command xml:space="preserve">x stor</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1378"></child>
+        </children>
+    </item>
+    <item nodeId="node-1378">
+        <command xml:space="preserve">x store</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1379"></child>
+        </children>
+    </item>
+    <item nodeId="node-1379">
+        <command xml:space="preserve">x center</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1380"></child>
+        </children>
+    </item>
+    <item nodeId="node-1380">
+        <command xml:space="preserve">x road</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1381"></child>
+        </children>
+    </item>
+    <item nodeId="node-1381">
+        <command xml:space="preserve">x sign</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1382"></child>
+        </children>
+    </item>
+    <item nodeId="node-1382">
+        <command xml:space="preserve">x park place</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1383"></child>
+        </children>
+    </item>
+    <item nodeId="node-1383">
+        <command xml:space="preserve">x headquarters</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1384"></child>
+        </children>
+    </item>
+    <item nodeId="node-1384">
+        <command xml:space="preserve">x hq</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1385">
+        <command xml:space="preserve">test audit-parking-lot-south</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] x bosh
+Faraji gazes stoically at the sad little storefront that is the new BOSH office. The sign from the previous tenant is still up: "Angel's Department Store". Through the front window can be seen Margaret, in her usual manic work mode.
+
+&gt;[2] x sign
+Which do you mean, the department store sign, the laundromat sign or the flashing neon sign?
+
+&gt;[3] department
+It's adorned with a pair of angel's wings.
+
+&gt;[4] x pawn shop
+Which do you mean, the pawn shop door or the Dave's pawn shop?
+
+&gt;[5] x neon
+Its flash rate is just a bit over the threshold of irritating.
+
+&gt;[6] x margaret
+Even from here you can sense Margaret's irrepressible energy.
+
+&gt;[7] x laundromat
+Which do you mean, the laundromat door, the A-plus laundromat or the laundromat sign?
+
+&gt;[8] x sign
+Which do you mean, the department store sign, the laundromat sign or the flashing neon sign?
+
+&gt;[9] laundromat
+It's just a piece of stationery marked up with Sharpie and taped to the door. It says "Closed for renovations".
+
+&gt;[10] x swamp
+Swamp Park is, as one might expect, dotted with these little bits of wetland.
+
+&gt;[11] x wetland
+Swamp Park is, as one might expect, dotted with these little bits of wetland.
+
+&gt;[12] x interstate
+A ways off past the swamp, the highway carries most travelers right past this glum little village.
+
+&gt;[13] x lot
+Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Their Hyundai is parked nearby.
+
+&gt;[14] x wash
+Much like any other automatic car wash.
+
+&gt;[15] x car
+(Faraji's Hyundai)
+An old bright red Hyundai Accent, it's been their personal means of transportation for years. And since the Bureau lost its fleet, it's their work car too.
+
+&gt;[16] x hyundai
+An old bright red Hyundai Accent, it's been Faraji's personal means of transportation for years. And since the Bureau lost its fleet, it's their work car too.
+
+&gt;[17] enter wash
+An automatic car wash isn't of much use when one is on foot.
+
+&gt;[18] e
+An automatic car wash isn't of much use when one is on foot.
+
+&gt;[19] x laundromat door
+It's a typical glass door. Taped to it is a sign that says "Closed for renovations".
+
+&gt;[20] x pawn shop door
+It's a typical glass door. The light within is too dim to see much.
+
+&gt;[21] open laundromat door
+It seems to be locked.
+
+&gt;[22] open pawn shop door
+Faraji's not that desperate -- yet.
+
+&gt;</result>
+        <commentary xml:space="preserve">[1] x bosh
+[2] x sign
+[3] department
+[4] x pawn shop
+[5] x neon
+[6] x margaret
+[7] x laundromat
+[8] x sign
+[9] laundromat
+[10] x swamp
+[11] x wetland
+[12] x interstate
+[13] x lot
+[14] x wash
+[15] x car
+[16] x hyundai
+[17] enter wash
+[18] e
+[19] x laundromat door
+[20] x pawn shop door
+[21] open laundromat door
+[22] open pawn shop door
+</commentary>
+        <children><child nodeId="node-1386"></child>
+        </children>
+    </item>
+    <item nodeId="node-1386">
+        <command xml:space="preserve">test audit-parking-lot-north</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] x bosh
+Faraji gazes stoically at the sad little storefront that is the new BOSH office. The sign from the previous tenant is still up: "Angel's Department Store". Through the front window can be seen Margaret, in her usual manic work mode.
+
+&gt;[2] x sign
+Which do you mean, the department store sign, the laundromat sign or the flashing neon sign?
+
+&gt;[3] department
+It's adorned with a pair of angel's wings.
+
+&gt;[4] x pawn shop
+Which do you mean, the pawn shop door or the Dave's pawn shop?
+
+&gt;[5] x neon
+Its flash rate is just a bit over the threshold of irritating.
+
+&gt;[6] x margaret
+Even from here you can sense Margaret's irrepressible energy.
+
+&gt;[7] x laundromat
+Which do you mean, the laundromat door, the A-plus laundromat or the laundromat sign?
+
+&gt;[8] x sign
+Which do you mean, the department store sign, the laundromat sign or the flashing neon sign?
+
+&gt;[9] laundromat
+It's just a piece of stationery marked up with Sharpie and taped to the door. It says "Closed for renovations".
+
+&gt;[10] x swamp
+Swamp Park is, as one might expect, dotted with these little bits of wetland.
+
+&gt;[11] x wetland
+Swamp Park is, as one might expect, dotted with these little bits of wetland.
+
+&gt;[12] x interstate
+A ways off past the swamp, the highway carries most travelers right past this glum little village.
+
+&gt;[13] x lot
+Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Their Hyundai is parked nearby.
+
+&gt;[14] x wash
+Much like any other automatic car wash.
+
+&gt;[15] x car
+(Faraji's Hyundai)
+An old bright red Hyundai Accent, it's been their personal means of transportation for years. And since the Bureau lost its fleet, it's their work car too.
+
+&gt;[16] x hyundai
+An old bright red Hyundai Accent, it's been Faraji's personal means of transportation for years. And since the Bureau lost its fleet, it's their work car too.
+
+&gt;[17] enter wash
+An automatic car wash isn't of much use when one is on foot.
+
+&gt;[18] e
+An automatic car wash isn't of much use when one is on foot.
+
+&gt;[19] x laundromat door
+It's a typical glass door. Taped to it is a sign that says "Closed for renovations".
+
+&gt;[20] x pawn shop door
+It's a typical glass door. The light within is too dim to see much.
+
+&gt;[21] open laundromat door
+It seems to be locked.
+
+&gt;[22] open pawn shop door
+Faraji's not that desperate -- yet.
+
+&gt;</result>
+        <commentary xml:space="preserve">[1] x bosh
+[2] x sign
+[3] department
+[4] x pawn shop
+[5] x neon
+[6] x margaret
+[7] x laundromat
+[8] x sign
+[9] laundromat
+[10] x swamp
+[11] x wetland
+[12] x interstate
+[13] x lot
+[14] x wash
+[15] x car
+[16] x hyundai
+[17] enter wash
+[18] e
+[19] x laundromat door
+[20] x pawn shop door
+[21] open laundromat door
+[22] open pawn shop door
+</commentary>
+        <children></children>
+    </item>
+    <item nodeId="node-1387">
+        <command xml:space="preserve">taste me</command>
+        <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1388"></child>
+        </children>
+    </item>
+    <item nodeId="node-1388">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Faraji trudges to the other end of the parking lot. It's much like where they left.
+
+Agent Faraji is at the north end of the strip mall parking lot. This end is no more auspicious than the other. A convenience store lies to the east. To the west is a military recruitment center. North of here the parking lot exits onto a busy road. There is a rusty sign by the road naming the shopping center: Park Place. South is BOSH headquarters, among other things.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1389"></child>
+        </children>
+    </item>
+    <item nodeId="node-1389">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Faraji is greeted by a blast of music as they enter the store.
+
+Agent Faraji is in the Li'l Nectarine Convenience Store. Li'l Nectarine offers great service and low prices, or so they say. This one's cluttered aisles and sparse shelves could make one wonder if that's true. Behind the counter is the typical array of cigarettes and lottery tickets. Under the counter is a glass case containing various useful items.
+
+The clerk, a scruffy man in his mid-twenties, is leaning against the counter, looking bored.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1390"></child>
+        </children>
+    </item>
+    <item nodeId="node-1390">
+        <command xml:space="preserve">ask for a screwdriver</command>
+        <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1391"></child>
+        </children>
+    </item>
+    <item nodeId="node-1391">
+        <command xml:space="preserve">x case</command>
+        <result xml:space="preserve">In the glass case are a flashlight, a red screwdriver, a laptop computer, some wireless earbuds and a black smart phone.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1392"></child>
+        </children>
+    </item>
+    <item nodeId="node-1392">
+        <command xml:space="preserve">ask about screwdriver</command>
+        <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1393">
+        <command xml:space="preserve">scope</command>
+        <result xml:space="preserve">1: Hyperlight (969846)
+2: Faraji (973302)
+3: a pawn shop door (971894)
+4: a laundromat door (971734)
+5: an office (971094)
+6: Margaret (971606)
+7: a department store sign (971638)
+8: their Hyundai (971126)
+9: an A-plus laundromat (971158)
+10: a laundromat sign (971702)
+11: a swamp (971190)
+12: a Dave's pawn shop (971222)
+13: a flashing neon sign (971862)
+14: an automatic car wash (971254)
+15: an interstate (971286)
+16: the Bureau credit card (975606)
+17: a green smartphone (975670)
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1394"></child>
+        </children>
+    </item>
+    <item nodeId="node-1394">
+        <command xml:space="preserve">x hyperlight</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1395"></child>
+        </children>
+    </item>
+    <item nodeId="node-1395">
+        <command xml:space="preserve">x office</command>
+        <result xml:space="preserve">Faraji gazes stoically at the sad little storefront that is the new BOSH office. The sign from the previous tenant is still up: "Angel's Department Store". Through the front window can be seen Margaret, in her usual manic work mode.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1396"></child>
+        </children>
+    </item>
+    <item nodeId="node-1396">
+        <command xml:space="preserve">x hq</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1397">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">The swamp would just muck up Agent Faraji's clothes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1398"></child>
+        </children>
+    </item>
+    <item nodeId="node-1398">
+        <command xml:space="preserve">restart</command>
+        <result xml:space="preserve">Are you sure you want to restart? </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1399"></child>
+        </children>
+    </item>
+    <item nodeId="node-1399">
+        <command xml:space="preserve">y</command>
+        <result xml:space="preserve">
+
+
+
+Department of Homeland Security, Washington, DC
+Open on a drab office with decor dating to the mid-eighties. The DHS assistant to the associate sub-director looks longingly at the office clock nearing five, then leans across the desk and impatiently states his demands:
+
+"First name, last name, pronouns?"
+
+(1) Ezra Gaunt (he/him), winner of the 2006 Baltimore County Edgar Allan Poe Trivia Competition;
+
+(2) Petula Clark Goldberg (she/her), former award-winning dog groomer of the avant-garde school;
+
+or (3) Larch Faraji (they/them), lead singer of the third wave neo-old-school punk band DC Trash.
+
+The Bureau of Strange Happenings
+An Interactive Phenomenon by Phil Riley
+Release 1 / Serial number 230512 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
+
+Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Their Hyundai is parked nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1400"></child>
+        </children>
+    </item>
+    <item nodeId="node-1400">
+        <command xml:space="preserve">x sign</command>
+        <result xml:space="preserve">Which do you mean, the department store sign, the laundromat sign or the flashing neon sign?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1401"></child>
+        </children>
+    </item>
+    <item nodeId="node-1401">
+        <command xml:space="preserve">neon</command>
+        <result xml:space="preserve">Its flash rate is just a bit over the threshold of irritating.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1402"></child>
+        </children>
+    </item>
+    <item nodeId="node-1402">
+        <command xml:space="preserve">x department sign</command>
+        <result xml:space="preserve">It's adorned with a pair of angel's wings.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1403"></child>
+        </children>
+    </item>
+    <item nodeId="node-1403">
+        <command xml:space="preserve">x pawn shop sign</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1404"></child>
+        </children>
+    </item>
+    <item nodeId="node-1404">
+        <command xml:space="preserve">sw</command>
+        <result xml:space="preserve">Faraji's not that desperate -- yet.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1405"></child>
+        </children>
+    </item>
+    <item nodeId="node-1405">
+        <command xml:space="preserve">nw</command>
+        <result xml:space="preserve">A sign on the laundromat door says "Closed for renovations".
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1406">
+        <command xml:space="preserve">plytest</command>
+        <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1407"></child>
+        </children>
+    </item>
+    <item nodeId="node-1407">
+        <command xml:space="preserve">playtest</command>
+        <result xml:space="preserve">&gt;&gt; x bosh
+Faraji gazes stoically at the sad little storefront that is the new BOSH office. The sign from the previous tenant is still up: "Angel's Department Store". Through the front window can be seen Margaret, in her usual manic work mode.
+&gt;&gt; x sign
+&gt; laundromat
+
+[** Programming error: tried to write to -&gt;264 in the buffer array "buffer", which has entries 4 up to 263 **]
+
+[** Programming error: tried to write to -&gt;265 in the buffer array "buffer", which has entries 4 up to 263 **]
+
+[** Programming error: tried to read from -&gt;264 in the buffer array "buffer2", which has entries 4 up to 263 **]
+
+[** Programming error: tried to write to -&gt;266 in the buffer array "buffer", which has entries 4 up to 263 **]
+
+[** Programming error: tried to write to -&gt;266 in the buffer array "buffer", which has entries 4 up to 263 **]
+There's nothing like that nearby.
+&gt;&gt; x dave's pawn shop
+Faraji observes the pawn shop with obvious distaste. The flashing neon sign in the window advertises "Cash for gold!"
+&gt;&gt; x neon sign
+Its flash rate is just a bit over the threshold of irritating.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1408">
+        <command xml:space="preserve">playtet</command>
+        <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1409"></child>
+        </children>
+    </item>
+    <item nodeId="node-1409">
+        <command xml:space="preserve">playtest</command>
+        <result xml:space="preserve">&gt;&gt; x bosh ✓
+&gt;&gt; x laundromat sign ✓
+&gt;&gt; x dave's pawn shop ✓
+&gt;&gt; x neon sign ✓
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1410">
+        <command xml:space="preserve">playtest</command>
+        <result xml:space="preserve">&gt;&gt; x bosh✓
+&gt;&gt; x laundromat sign✓
+&gt;&gt; x dave's pawn shop✓
+&gt;&gt; x neon sign✓
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1439"></child>
+            <child nodeId="node-1438"></child>
+            <child nodeId="node-1432"></child>
+            <child nodeId="node-1429"></child>
+            <child nodeId="node-1416"></child>
+            <child nodeId="node-1414"></child>
+            <child nodeId="node-1411"></child>
+        </children>
+    </item>
+    <item nodeId="node-1411">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Faraji stands around and waits.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1412"></child>
+        </children>
+    </item>
+    <item nodeId="node-1412">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Their Hyundai is parked nearby.
+
+Also here are a pawn shop door and a laundromat door.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1413"></child>
+        </children>
+    </item>
+    <item nodeId="node-1413">
+        <command xml:space="preserve">playtest</command>
+        <result xml:space="preserve">&gt;&gt; x bosh
+Faraji gazes stoically at the sad little storefront that is the new BOSH office. The sign from the previous tenant is still up: "Angel's Department Store". Through the front window can be seen Margaret, in her usual manic work mode.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1414">
+        <command xml:space="preserve">x sign</command>
+        <result xml:space="preserve">Which do you mean, the department store sign, the laundromat sign or the flashing neon sign?
+foo982040
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1415"></child>
+        </children>
+    </item>
+    <item nodeId="node-1415">
+        <command xml:space="preserve">neon</command>
+        <result xml:space="preserve">Its flash rate is just a bit over the threshold of irritating.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1416">
+        <command xml:space="preserve">x pawn</command>
+        <result xml:space="preserve">(the pawn shop door)
+It's a typical glass door. The light within is too dim to see much.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1417"></child>
+        </children>
+    </item>
+    <item nodeId="node-1417">
+        <command xml:space="preserve">x pawn shop store</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1418"></child>
+        </children>
+    </item>
+    <item nodeId="node-1418">
+        <command xml:space="preserve">showme</command>
+        <result xml:space="preserve">south end of the strip mall parking lot - room
+    Hyperlight - backdrop
+    Faraji - nonbinary
+        Bureau credit card - money card
+        green smartphone - phone
+    pawn shop door - closed door
+    laundromat door - locked door
+    office - unenterable room
+        Margaret at a distance (part of office)
+        department store sign (part of office)
+    their Hyundai
+    laundromat - unenterable room
+        laundromat sign (part of laundromat)
+    swamp - unenterable room
+    pawn shop - unenterable room
+        flashing neon sign (part of pawn shop)
+    automatic car wash - unenterable room
+    interstate
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1419"></child>
+        </children>
+    </item>
+    <item nodeId="node-1419">
+        <command xml:space="preserve">x sign</command>
+        <result xml:space="preserve">Which do you mean, the department store sign, the laundromat sign or the flashing neon sign?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1420"></child>
+        </children>
+    </item>
+    <item nodeId="node-1420">
+        <command xml:space="preserve">neon</command>
+        <result xml:space="preserve">Its flash rate is just a bit over the threshold of irritating.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1421"></child>
+        </children>
+    </item>
+    <item nodeId="node-1421">
+        <command xml:space="preserve">x flashing</command>
+        <result xml:space="preserve">Its flash rate is just a bit over the threshold of irritating.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1422"></child>
+        </children>
+    </item>
+    <item nodeId="node-1422">
+        <command xml:space="preserve">x gold</command>
+        <result xml:space="preserve">Its flash rate is just a bit over the threshold of irritating.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1423"></child>
+        </children>
+    </item>
+    <item nodeId="node-1423">
+        <command xml:space="preserve">x car wasj</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1424"></child>
+        </children>
+    </item>
+    <item nodeId="node-1424">
+        <command xml:space="preserve">x car wash</command>
+        <result xml:space="preserve">Much like any other automatic car wash.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1425"></child>
+        </children>
+    </item>
+    <item nodeId="node-1425">
+        <command xml:space="preserve">enter it</command>
+        <result xml:space="preserve">An automatic car wash isn't of much use when one is on foot.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1426"></child>
+        </children>
+    </item>
+    <item nodeId="node-1426">
+        <command xml:space="preserve">enter pawn shop</command>
+        <result xml:space="preserve">(the pawn shop door)
+(first opening the pawn shop door)
+Faraji's not that desperate -- yet.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1427"></child>
+        </children>
+    </item>
+    <item nodeId="node-1427">
+        <command xml:space="preserve">x laundromat</command>
+        <result xml:space="preserve">(the laundromat door)
+It's a typical glass door. Taped to it is a sign that says "Closed for renovations".
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1428"></child>
+        </children>
+    </item>
+    <item nodeId="node-1428">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Their Hyundai is parked nearby.
+
+Also here are a pawn shop door and a laundromat door.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1429">
+        <command xml:space="preserve">x laundromat</command>
+        <result xml:space="preserve">Which do you mean, the laundromat door, the A-plus laundromat or the laundromat sign?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1430"></child>
+        </children>
+    </item>
+    <item nodeId="node-1430">
+        <command xml:space="preserve">laundromat</command>
+        <result xml:space="preserve">Which do you mean, the laundromat door, the A-plus laundromat or the laundromat sign?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1431"></child>
+        </children>
+    </item>
+    <item nodeId="node-1431">
+        <command xml:space="preserve">sign</command>
+        <result xml:space="preserve">It's just a piece of stationery marked up with Sharpie and taped to the door. It says "Closed for renovations".
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1432">
+        <command xml:space="preserve">playtest</command>
+        <result xml:space="preserve">Assertion failed: produced "Which do you mean, the department store sign, the laundromat sign or the flashing neon sign?[paragraph break]&gt;", not "Faraji gazes stoically at the sad little storefront that is the new BOSH office. The sign from the previous tenant is still up: "Angel's Department Store". Through the front window can be seen Margaret, in her usual manic work mode."!
+Evaluating: x bosh
+Faraji gazes stoically at the sad little storefront that is the new BOSH office. The sign from the previous tenant is still up: "Angel's Department Store". Through the front window can be seen Margaret, in her usual manic work mode.
+Evaluating: x sign
+</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1433"></child>
+        </children>
+    </item>
+    <item nodeId="node-1433">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1434"></child>
+        </children>
+    </item>
+    <item nodeId="node-1434">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1435"></child>
+        </children>
+    </item>
+    <item nodeId="node-1435">
+        <command xml:space="preserve">rules</command>
+        <result xml:space="preserve">Rules tracing now switched on. Type "rules off" to switch it off again, or "rules all" to include even rules which do not apply.
+
+[Rule "Command Unit Testing process current assertion after the command finishes rule" applies.]
+Assertion failed: produced "Which do you mean, the department store sign, the laundromat sign or the flashing neon sign?[paragraph break]&gt;", not "Faraji gazes stoically at the sad little storefront that is the new BOSH office. The sign from the previous tenant is still up: "Angel's Department Store". Through the front window can be seen Margaret, in her usual manic work mode."!
+[Rule "For post "x sign"" applies.]
+[Rule "clear LPR rule" applies.]
+[Rule "reset skip sounds rule" applies.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1436"></child>
+        </children>
+    </item>
+    <item nodeId="node-1436">
+        <command xml:space="preserve">playtest</command>
+        <result xml:space="preserve">[Rule "redirect to GEP line input rule" applies.]
+[Rule "ordinary checking for content rule" applies.]
+[Rule "After reading a command" applies.]
+[Rule "declare everything initially unmentioned rule" applies.]
+[Rule "investigate player's awareness before action rule" applies.]
+[Rule "player aware of his own actions rule" applies.]
+[Rule "check stage rule" applies.]
+[Rule "carry out stage rule" applies.]
+[Rule "Carry out ptesting" applies.]
+[Rule "for playtesting" applies.]
+[Rule "after stage rule" applies.]
+[Rule "investigate player's awareness after action rule" applies.]
+[Rule "report stage rule" applies.]
+[Rule "last specific action-processing rule" applies.]
+[Rule "clear LPR rule" applies.]
+[Rule "reset skip sounds rule" applies.]
+[Rule "Command Unit Testing execute queued commands rule" applies.]
+Evaluating: x bosh
+Assertion failed: produced "[Rule "After reading a command" applies.][line break][Rule "place the room in scope while looking rule" applies.][line break][Rule "declare everything initially unmentioned rule" applies.][line break][Rule "announce items from multiple object lists rule" applies.][line break][Rule "set pronouns from", not "Faraji gazes stoically at the sad little storefront that is the new BOSH office. The sign from the previous tenant is still up: "Angel's Department Store". Through the front window can be seen Margaret, in her usual manic work mode."!
+[Rule "For post "x bosh"" applies.]
+[Rule "clear LPR rule" applies.]
+[Rule "reset skip sounds rule" applies.]
+[Rule "Command Unit Testing execute queued commands rule" applies.]
+Evaluating: x sign
+</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1437"></child>
+        </children>
+    </item>
+    <item nodeId="node-1437">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">[Rule "redirect to GEP line input rule" applies.]
+[Rule "ordinary checking for content rule" applies.]
+I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1438">
+        <command xml:space="preserve">laundromat</command>
+        <result xml:space="preserve">It's just a piece of stationery marked up with Sharpie and taped to the door.
+
+processing started.
+Assertion failed: produced "", not "Faraji gazes stoically at the sad little storefront that is the new BOSH office. The sign from the previous tenant is still up: "Angel's Department Store". Through the front window can be seen Margaret, in her usual manic work mode."!
+Evaluating: laundromat
+I'm not sure what you're trying to say. I might just not recognize the words you're using.
+processing started.
+Assertion failed: produced "", not "foo"!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1439">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1457"></child>
+            <child nodeId="node-1456"></child>
+            <child nodeId="node-1455"></child>
+            <child nodeId="node-1454"></child>
+            <child nodeId="node-1451"></child>
+            <child nodeId="node-1440"></child>
+        </children>
+    </item>
+    <item nodeId="node-1440">
+        <command xml:space="preserve">restart</command>
+        <result xml:space="preserve">Are you sure you want to restart? </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1441"></child>
+        </children>
+    </item>
+    <item nodeId="node-1441">
+        <command xml:space="preserve">y</command>
+        <result xml:space="preserve">
+
 
 
 Department of Homeland Security, Washington, DC
@@ -30,135 +1929,1000 @@ Also here are a pawn shop door and a laundromat door.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3070"></child>
+        <children><child nodeId="node-1442"></child>
         </children>
     </item>
-    <item nodeId="node-3070">
-        <command xml:space="preserve">test audit-parking-lot-south</command>
-        <result xml:space="preserve">(Testing.)
+    <item nodeId="node-1442">
+        <command xml:space="preserve">rules</command>
+        <result xml:space="preserve">Rules tracing now switched on. Type "rules off" to switch it off again, or "rules all" to include even rules which do not apply.
 
-&gt;[1] x bosh
-Faraji gazes stoically at the sad little storefront that is the new BOSH office. The sign from the previous tenant is still up: "Angel's Department Store". Through the front window can be seen Margaret, in her usual manic work mode.
+[Rule "clear LPR rule" applies.]
+[Rule "reset skip sounds rule" applies.]
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1443"></child>
+        </children>
+    </item>
+    <item nodeId="node-1443">
+        <command xml:space="preserve">playtest</command>
+        <result xml:space="preserve">[Rule "redirect to GEP line input rule" applies.]
+[Rule "ordinary checking for content rule" applies.]
+[Rule "After reading a command" applies.]
+[Rule "declare everything initially unmentioned rule" applies.]
+[Rule "investigate player's awareness before action rule" applies.]
+[Rule "player aware of his own actions rule" applies.]
+[Rule "check stage rule" applies.]
+[Rule "carry out stage rule" applies.]
+[Rule "Carry out ptesting" applies.]
+[Rule "for playtesting" applies.]
+[Rule "after stage rule" applies.]
+[Rule "investigate player's awareness after action rule" applies.]
+[Rule "report stage rule" applies.]
+[Rule "last specific action-processing rule" applies.]
+[Rule "clear LPR rule" applies.]
+[Rule "reset skip sounds rule" applies.]
+[Rule "Command Unit Testing execute queued commands rule" applies.]
+Evaluating: x bosh
+processing started.
+Assertion failed: produced "[Rule "After reading a command" applies.][line break][Rule "place the room in scope while looking rule" applies.][line break][Rule "declare everything initially unmentioned rule" applies.][line break][Rule "announce items from multiple object lists rule" applies.][line break][Rule "set pronouns from items from multiple object lists rule" applies.][line break][Rule "before stage rule" applies.][line break][Rule "can't act in the dark rule" applies.][line break][Rule "instead stage rule" applies.][line break][Rule "investigate player's awareness before action rule" applies.][line break][Rule "player aware ", not "Faraji gazes stoically at the sad little storefront that is the new BOSH office. The sign from the previous tenant is still up: "Angel's Department Store". Through the front window can be seen Margaret, in her usual manic work mode."!
+[Rule "For post "x bosh"" applies.]
+1.
+[Rule "clear LPR rule" applies.]
+[Rule "reset skip sounds rule" applies.]
+[Rule "Command Unit Testing execute queued commands rule" applies.]
+Evaluating: x sign
+</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1444"></child>
+        </children>
+    </item>
+    <item nodeId="node-1444">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">[Rule "redirect to GEP line input rule" applies.]
+[Rule "ordinary checking for content rule" applies.]
+I beg your pardon?
 
-&gt;[2] x sign
-Which do you mean, the department store sign, the laundromat sign or the flashing neon sign?
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1445"></child>
+        </children>
+    </item>
+    <item nodeId="node-1445">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">[Rule "redirect to GEP line input rule" applies.]
+[Rule "ordinary checking for content rule" applies.]
+[Rule "After reading a command" applies.]
+[Rule "declare everything initially unmentioned rule" applies.]
+[Rule "announce items from multiple object lists rule" applies.]
+[Rule "set pronouns from items from multiple object lists rule" applies.]
+[Rule "before stage rule" applies.]
+[Rule "instead stage rule" applies.]
+[Rule "investigate player's awareness before action rule" applies.]
+[Rule "player aware of his own actions rule" applies.]
+[Rule "check stage rule" applies.]
+[Rule "carry out stage rule" applies.]
+[Rule "print empty inventory rule" applies.]
+[Rule "print standard inventory rule" applies.]
+Faraji is carrying:
+  the Bureau credit card
+  a green smartphone
+[Rule "after stage rule" applies.]
 
-&gt;[3] department
-It's adorned with a pair of angel's wings.
+[Rule "investigate player's awareness after action rule" applies.]
+[Rule "report stage rule" applies.]
+[Rule "report other people taking inventory rule" applies.]
+[Rule "last specific action-processing rule" applies.]
+[Rule "A first turn sequence rule" applies.]
+[Rule "every turn stage rule" applies.]
+[Rule "reset protocol rule" applies.]
+[Rule "Every turn" applies.]
+[Rule "Rule for printing insistent sounds" applies.]
+[Rule "phone noisiness rule" applies.]
+[Rule "phone noisiness rule" applies.]
+[Rule "Rule for determining the subjective volume for something ( called T )" applies.]
+[Rule "Audibility of a thing ( called T ) when location is outdoors" applies.]
+[Rule "default sound description rule" applies.]
+[Rule "Audibility of a thing ( called T ) when location is outdoors" applies.]
+[Rule "phone noisiness rule" applies.]
+[Rule "phone noisiness rule" applies.]
+[Rule "Every turn" applies.]
+[Rule "run behavior rule" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Every turn" applies.]
+[Rule "Every turn" applies.]
+[Rule "Every turn" applies.]
+[Rule "standard placement rule" applies.]
+[Rule "centered scaled drawing rule" applies.]
+[Rule "bosh picture selection rule" applies.]
+[Rule "queue quips rule" applies.]
+[Rule "For queueing quips following a quip ( called Q )" applies.]
+[Rule "ruling out quips rule" applies.]
+[Rule "For ruling out quips following a quip ( called Q )" applies.]
+[Rule "A last turn sequence rule" applies.]
+[Rule "display available quips rule" applies.]
+[Rule "notify score changes rule" applies.]
+[Rule "Command Unit Testing process current assertion after the command finishes rule" applies.]
+processing started.
+Assertion failed: produced "[Rule "After reading a command" applies.][line break][Rule "place the room in scope while looking rule" applies.][line break]Which do you mean, the department store sign, the laundromat sign or the flashing neon sign?[paragraph break]&gt;", not "Faraji gazes stoically at the sad little storefront that is the new BOSH office. The sign from the previous tenant is still up: "Angel's Department Store". Through the front window can be seen Margaret, in her usual manic work mode."!
+[Rule "For post "x sign"" applies.]
+2.
+[Rule "clear LPR rule" applies.]
+[Rule "reset skip sounds rule" applies.]
 
-&gt;[4] x pawn shop
-(the pawn shop door)
-It's a typical glass door. The light within is too dim to see much.
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1446"></child>
+        </children>
+    </item>
+    <item nodeId="node-1446">
+        <command xml:space="preserve">restart</command>
+        <result xml:space="preserve">[Rule "redirect to GEP line input rule" applies.]
+[Rule "ordinary checking for content rule" applies.]
+[Rule "After reading a command" applies.]
+[Rule "declare everything initially unmentioned rule" applies.]
+[Rule "investigate player's awareness before action rule" applies.]
+[Rule "player aware of his own actions rule" applies.]
+[Rule "check stage rule" applies.]
+[Rule "carry out stage rule" applies.]
+Are you sure you want to restart? </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1447"></child>
+        </children>
+    </item>
+    <item nodeId="node-1447">
+        <command xml:space="preserve">y</command>
+        <result xml:space="preserve">[Rule "redirect to GEP line input rule" applies.]
 
-&gt;[5] x neon
-Its flash rate is just a bit over the threshold of irritating.
+[Rule "ordinary checking for content rule" applies.]
 
-&gt;[6] x margaret
-Even from here you can sense her irrepressible energy.
 
-&gt;[7] x laundromat
-(the laundromat door)
-It's a typical glass door. Taped to it is a sign that says "Closed for renovations".
 
-&gt;[8] x sign
-Which do you mean, the department store sign, the laundromat sign or the flashing neon sign?
+Department of Homeland Security, Washington, DC
+Open on a drab office with decor dating to the mid-eighties. The DHS assistant to the associate sub-director looks longingly at the office clock nearing five, then leans across the desk and impatiently states his demands:
 
-&gt;[9] laundromat
-It's just a piece of stationery marked up with Sharpie and taped to the door.
+"First name, last name, pronouns?"
 
-&gt;[10] x swamp
-Swamp Park is, as one might expect, dotted with these little bits of wetland.
+(1) Ezra Gaunt (he/him), winner of the 2006 Baltimore County Edgar Allan Poe Trivia Competition;
 
-&gt;[11] x wetland
-Swamp Park is, as one might expect, dotted with these little bits of wetland.
+(2) Petula Clark Goldberg (she/her), former award-winning dog groomer of the avant-garde school;
 
-&gt;[12] x interstate
-A ways off past the swamp, the highway carries most travelers right past this glum little village.
+or (3) Larch Faraji (they/them), lead singer of the third wave neo-old-school punk band DC Trash.
 
-&gt;[13] x lot
+The Bureau of Strange Happenings
+An Interactive Phenomenon by Phil Riley
+Release 1 / Serial number 230510 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
+
 Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
 
 Their Hyundai is parked nearby.
 
 Also here are a pawn shop door and a laundromat door.
 
-&gt;[14] x wash
-Much like any other automatic car wash.
-
-&gt;[15] x car
-(Faraji's Hyundai)
-An old bright red Hyundai Accent, it's been their personal means of transportation for years. And since the Bureau lost its fleet, it's their work car too.
-
-&gt;[16] x hyundai
-An old bright red Hyundai Accent, it's been Faraji's personal means of transportation for years. And since the Bureau lost its fleet, it's their work car too.
-
-&gt;[17] enter wash
-An automatic car wash isn't of much use when one is on foot.
-
-&gt;[18] e
-An automatic car wash isn't of much use when one is on foot.
-
-&gt;[19] x laundromat door
-It's a typical glass door. Taped to it is a sign that says "Closed for renovations".
-
-&gt;[20] x pawn shop door
-It's a typical glass door. The light within is too dim to see much.
-
 &gt;</result>
-        <commentary xml:space="preserve">[1] x bosh
-[2] x sign
-[3] department
-[4] x pawn shop
-[5] x neon
-[6] x margaret
-[7] x laundromat
-[8] x sign
-[9] laundromat
-[10] x swamp
-[11] x wetland
-[12] x interstate
-[13] x lot
-[14] x wash
-[15] x car
-[16] x hyundai
-[17] enter wash
-[18] e
-[19] x laundromat door
-[20] x pawn shop door
-</commentary>
-        <children><child nodeId="node-3242"></child>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1448"></child>
         </children>
     </item>
-    <item nodeId="node-3242">
-        <command xml:space="preserve">open it</command>
-        <result xml:space="preserve">Faraji's not that desperate -- yet.
+    <item nodeId="node-1448">
+        <command xml:space="preserve">playtest</command>
+        <result xml:space="preserve">Evaluating: x bosh
+processing started.
+Faraji gazes stoically at the sad little storefront that is the new BOSH office. The sign from the previous tenant is still up: "Angel's Department Store". Through the front window can be seen Margaret, in her usual manic work mode.
+1.
+Evaluating: x sign
+</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1449"></child>
+        </children>
+    </item>
+    <item nodeId="node-1449">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3243"></child>
+        <children><child nodeId="node-1450"></child>
         </children>
     </item>
-    <item nodeId="node-3243">
-        <command xml:space="preserve">open laundromat doo</command>
+    <item nodeId="node-1450">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Their Hyundai is parked nearby.
+
+Also here are a pawn shop door and a laundromat door.
+
+processing started.
+Assertion failed: produced "Which do you mean, the department store sign, the laundromat sign or the flashing neon sign?[paragraph break]&gt;", not "Faraji gazes stoically at the sad little storefront that is the new BOSH office. The sign from the previous tenant is still up: "Angel's Department Store". Through the front window can be seen Margaret, in her usual manic work mode."!
+2.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1451">
+        <command xml:space="preserve">read sign</command>
+        <result xml:space="preserve">foo bar&gt; enter bosh
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1452"></child>
+        </children>
+    </item>
+    <item nodeId="node-1452">
+        <command xml:space="preserve">read sign</command>
+        <result xml:space="preserve">foo bar&gt;&gt; ask about phone
+</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1453"></child>
+        </children>
+    </item>
+    <item nodeId="node-1453">
+        <command xml:space="preserve">read sign</command>
+        <result xml:space="preserve"></result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1454">
+        <command xml:space="preserve">playtest</command>
+        <result xml:space="preserve">processing started.
+Assertion failed: produced "[line break]Which do you mean, the department store sign, the laundromat sign or the flashing neon sign?[paragraph break]&gt;", not "Faraji gazes stoically at the sad little storefront that is the new BOSH office. The sign from the previous tenant is still up: "Angel's Department Store". Through the front window can be seen Margaret, in her usual manic work mode."!
+2.
+Evaluating: x bosh
+expected: Faraji gazes stoically at the sad little storefront that is the new BOSH office. The sign from the previous tenant is still up: "Angel's Department Store". Through the front window can be seen Margaret, in her usual manic work mode..
+processing started.
+Assertion failed: produced "[line break]Faraji gazes stoically at the sad little storefront that is the new BOSH office. The sign from the previous tenant is still up: "Angel's Department Store". Through the front window can be seen Margaret, in her usual manic work mode.", not "Faraji gazes stoically at the sad little storefront that is the new BOSH office. The sign from the previous tenant is still up: "Angel's Department Store". Through the front window can be seen Margaret, in her usual manic work mode."!
+1.
+Evaluating: x sign
+expected: Faraji gazes stoically at the sad little storefront that is the new BOSH office. The sign from the previous tenant is still up: "Angel's Department Store". Through the front window can be seen Margaret, in her usual manic work mode..
+</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1455">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Their Hyundai is parked nearby.
+
+Also here are a pawn shop door and a laundromat door.
+
+processing started.
+Assertion failed: produced "Faraji gazes stoically at the sad little storefront that is the new BOSH office. The sign from the previous tenant is still up: "Angel's Department Store". Through the front window can be seen Margaret, in her usual manic work mode.", not "foo"!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1456">
+        <command xml:space="preserve">;</command>
+        <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
+processing started.
+&gt;
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1457">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1461"></child>
+            <child nodeId="node-1460"></child>
+            <child nodeId="node-1458"></child>
+        </children>
+    </item>
+    <item nodeId="node-1458">
+        <command xml:space="preserve">playtest</command>
+        <result xml:space="preserve">Assertion failed: produced "Which do you mean, the department store sign, the laundromat sign or the flashing neon sign?[paragraph break]&gt;", not "Faraji gazes stoically at the sad little storefront that is the new BOSH office. The sign from the previous tenant is still up: "Angel's Department Store". Through the front window can be seen Margaret, in her usual manic work mode."!
+Evaluating: x bosh
+Faraji gazes stoically at the sad little storefront that is the new BOSH office. The sign from the previous tenant is still up: "Angel's Department Store". Through the front window can be seen Margaret, in her usual manic work mode.
+Evaluating: x sign
+</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1459"></child>
+        </children>
+    </item>
+    <item nodeId="node-1459">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1460">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Their Hyundai is parked nearby.
+
+Also here are a pawn shop door and a laundromat door.
+
+processing started.
+Assertion failed: produced "&gt;", not "foo"!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1461">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1465"></child>
+            <child nodeId="node-1462"></child>
+        </children>
+    </item>
+    <item nodeId="node-1462">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Their Hyundai is parked nearby.
+
+Assertion failed: produced "&gt;", not "Faraji observes the pawn shop with obvious distaste. The flashing neon sign in the window advertises "Cash for gold!""!
+&gt;&gt; x neon sign
+Its flash rate is just a bit over the threshold of irritating.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1463"></child>
+        </children>
+    </item>
+    <item nodeId="node-1463">
+        <command xml:space="preserve">;</command>
+        <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1464"></child>
+        </children>
+    </item>
+    <item nodeId="node-1464">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Their Hyundai is parked nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1465">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1466">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Faraji trudges to the other end of the parking lot. It's much like where they left.
+
+Agent Faraji is at the north end of the strip mall parking lot. This end is no more auspicious than the other. A convenience store lies to the east. To the west is a military recruitment center. North of here the parking lot exits onto a busy road. There is a rusty sign by the road naming the shopping center: Park Place. South is BOSH headquarters, among other things.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1491"></child>
+            <child nodeId="node-1488"></child>
+            <child nodeId="node-1486"></child>
+            <child nodeId="node-1475"></child>
+            <child nodeId="node-1471"></child>
+            <child nodeId="node-1467"></child>
+        </children>
+    </item>
+    <item nodeId="node-1467">
+        <command xml:space="preserve">x store</command>
+        <result xml:space="preserve">There seems to be nothing special about it.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1468"></child>
+        </children>
+    </item>
+    <item nodeId="node-1468">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Faraji is greeted by a blast of music as they enter the store.
+
+Agent Faraji is in the Li'l Nectarine Convenience Store. Li'l Nectarine offers great service and low prices, or so they say. This one's cluttered aisles and sparse shelves could make one wonder if that's true. Behind the counter is the typical array of cigarettes and lottery tickets. Under the counter is a glass case containing various useful items.
+
+The clerk, a scruffy man in his mid-twenties, is leaning against the counter, looking bored.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1469"></child>
+        </children>
+    </item>
+    <item nodeId="node-1469">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Faraji exits the store into the relative quiet of the nearby traffic.
+
+Agent Faraji is at the north end of the strip mall parking lot. This end is no more auspicious than the other. A convenience store lies to the east. To the west is a military recruitment center. North of here the parking lot exits onto a busy road. There is a rusty sign by the road naming the shopping center: Park Place. South is BOSH headquarters, among other things.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1470"></child>
+        </children>
+    </item>
+    <item nodeId="node-1470">
+        <command xml:space="preserve">enter store</command>
+        <result xml:space="preserve">You can't enter that.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1471">
+        <command xml:space="preserve">x bosh</command>
+        <result xml:space="preserve">The BOSH headquarters are to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1472"></child>
+        </children>
+    </item>
+    <item nodeId="node-1472">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Faraji walks back to the south end of the parking lot.
+
+Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Their Hyundai is parked nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1473"></child>
+        </children>
+    </item>
+    <item nodeId="node-1473">
+        <command xml:space="preserve">x bosh</command>
+        <result xml:space="preserve">Faraji gazes stoically at the sad little storefront that is the new BOSH office. The sign from the previous tenant is still up: "Angel's Department Store". Through the front window can be seen Margaret, in her usual manic work mode.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1474"></child>
+        </children>
+    </item>
+    <item nodeId="node-1474">
+        <command xml:space="preserve">x margaret</command>
+        <result xml:space="preserve">Even from here you can sense Margaret's irrepressible energy.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1475">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Faraji has things to do here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1476"></child>
+        </children>
+    </item>
+    <item nodeId="node-1476">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Faraji will think about joining the military once the Bureau shuts down.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1477"></child>
+        </children>
+    </item>
+    <item nodeId="node-1477">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Faraji is greeted by a blast of music as they enter the store.
+
+Agent Faraji is in the Li'l Nectarine Convenience Store. Li'l Nectarine offers great service and low prices, or so they say. This one's cluttered aisles and sparse shelves could make one wonder if that's true. Behind the counter is the typical array of cigarettes and lottery tickets. Under the counter is a glass case containing various useful items.
+
+The clerk, a scruffy man in his mid-twenties, is leaning against the counter, looking bored.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1478"></child>
+        </children>
+    </item>
+    <item nodeId="node-1478">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Faraji exits the store into the relative quiet of the nearby traffic.
+
+Agent Faraji is at the north end of the strip mall parking lot. This end is no more auspicious than the other. A convenience store lies to the east. To the west is a military recruitment center. North of here the parking lot exits onto a busy road. There is a rusty sign by the road naming the shopping center: Park Place. South is BOSH headquarters, among other things.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1479"></child>
+        </children>
+    </item>
+    <item nodeId="node-1479">
+        <command xml:space="preserve">x sign</command>
+        <result xml:space="preserve">It says "Park Place".
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1480"></child>
+        </children>
+    </item>
+    <item nodeId="node-1480">
+        <command xml:space="preserve">hit sign</command>
+        <result xml:space="preserve">Violence isn't the answer to this one.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1481"></child>
+        </children>
+    </item>
+    <item nodeId="node-1481">
+        <command xml:space="preserve">hit military</command>
+        <result xml:space="preserve">Violence isn't the answer to this one.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1482"></child>
+        </children>
+    </item>
+    <item nodeId="node-1482">
+        <command xml:space="preserve">lick it</command>
+        <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1483"></child>
+        </children>
+    </item>
+    <item nodeId="node-1483">
+        <command xml:space="preserve">tast military</command>
+        <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1484"></child>
+        </children>
+    </item>
+    <item nodeId="node-1484">
+        <command xml:space="preserve">taste military</command>
+        <result xml:space="preserve">Faraji tastes nothing unexpected.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1485"></child>
+        </children>
+    </item>
+    <item nodeId="node-1485">
+        <command xml:space="preserve">feel military</command>
+        <result xml:space="preserve">Faraji feels nothing unexpected.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1486">
+        <command xml:space="preserve">enter store</command>
+        <result xml:space="preserve">Faraji is greeted by a blast of music as they enter the store.
+
+Agent Faraji is in the Li'l Nectarine Convenience Store. Li'l Nectarine offers great service and low prices, or so they say. This one's cluttered aisles and sparse shelves could make one wonder if that's true. Behind the counter is the typical array of cigarettes and lottery tickets. Under the counter is a glass case containing various useful items.
+
+The clerk, a scruffy man in his mid-twenties, is leaning against the counter, looking bored.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1487"></child>
+        </children>
+    </item>
+    <item nodeId="node-1487">
+        <command xml:space="preserve">out</command>
+        <result xml:space="preserve">But Faraji isn't in anything at the moment.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1488">
+        <command xml:space="preserve">enter military</command>
+        <result xml:space="preserve">Faraji will think about joining the military once the Bureau shuts down.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1489"></child>
+        </children>
+    </item>
+    <item nodeId="node-1489">
+        <command xml:space="preserve">fuck</command>
+        <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1490"></child>
+        </children>
+    </item>
+    <item nodeId="node-1490">
+        <command xml:space="preserve">xyzzy</command>
+        <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1491">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Faraji is greeted by a blast of music as they enter the store.
+
+Agent Faraji is in the Li'l Nectarine Convenience Store. Li'l Nectarine offers great service and low prices, or so they say. This one's cluttered aisles and sparse shelves could make one wonder if that's true. Behind the counter is the typical array of cigarettes and lottery tickets. Under the counter is a glass case containing various useful items.
+
+The clerk, a scruffy man in his mid-twenties, is leaning against the counter, looking bored.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1573"></child>
+            <child nodeId="node-1494"></child>
+            <child nodeId="node-1492"></child>
+            <child nodeId="node-1616"></child>
+        </children>
+    </item>
+    <item nodeId="node-1616">
+        <command xml:space="preserve">x cigarettes</command>
+        <result xml:space="preserve">Which do you mean, the assorted goods or the cigarettes?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1617"></child>
+        </children>
+    </item>
+    <item nodeId="node-1617">
+        <command xml:space="preserve">cigarettes</command>
+        <result xml:space="preserve">Which do you mean, the assorted goods or the cigarettes?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1492">
+        <command xml:space="preserve">x aisles</command>
         <result xml:space="preserve">There's nothing like that nearby.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3244"></child>
+        <children><child nodeId="node-1493"></child>
         </children>
     </item>
-    <item nodeId="node-3244">
-        <command xml:space="preserve">open laundromat door</command>
-        <result xml:space="preserve">It seems to be locked.
+    <item nodeId="node-1493">
+        <command xml:space="preserve">x shelves</command>
+        <result xml:space="preserve">Faraji hardly needs bread, ketchup, or potato chips.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3245"></child>
+    </item>
+    <item nodeId="node-1494">
+        <command xml:space="preserve">out</command>
+        <result xml:space="preserve">Faraji exits the store into the relative quiet of the nearby traffic.
+
+Agent Faraji is at the north end of the strip mall parking lot. This end is no more auspicious than the other. A convenience store lies to the east. To the west is a military recruitment center. North of here the parking lot exits onto a busy road. There is a rusty sign by the road naming the shopping center: Park Place. South is BOSH headquarters, among other things.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1497"></child>
+            <child nodeId="node-1495"></child>
         </children>
     </item>
-    <item nodeId="node-3245">
-        <command xml:space="preserve">x it</command>
-        <result xml:space="preserve">It's a typical glass door. Taped to it is a sign that says "Closed for renovations".
+    <item nodeId="node-1495">
+        <command xml:space="preserve">x center</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1496"></child>
+        </children>
+    </item>
+    <item nodeId="node-1496">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Faraji will think about joining the military once the Bureau shuts down.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1497">
+        <command xml:space="preserve">out</command>
+        <result xml:space="preserve">But Faraji isn't in anything at the moment.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1573">
+        <command xml:space="preserve">ask about case</command>
+        <result xml:space="preserve">"You want something? Name it."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1574"></child>
+        </children>
+    </item>
+    <item nodeId="node-1574">
+        <command xml:space="preserve">ask clerk about case</command>
+        <result xml:space="preserve">"You want something? Name it."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1575"></child>
+            <child nodeId="node-1581"></child>
+        </children>
+    </item>
+    <item nodeId="node-1581">
+        <command xml:space="preserve">ask clerk about card</command>
+        <result xml:space="preserve">That doesn't seem to be a topic of conversation at the moment.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1587"></child>
+        </children>
+    </item>
+    <item nodeId="node-1587">
+        <command xml:space="preserve">ask about screwdriver</command>
+        <result xml:space="preserve">That doesn't seem to be a topic of conversation at the moment.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1594"></child>
+        </children>
+    </item>
+    <item nodeId="node-1594">
+        <command xml:space="preserve">tell clerk about case</command>
+        <result xml:space="preserve">That doesn't seem to be a topic of conversation at the moment.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1595"></child>
+        </children>
+    </item>
+    <item nodeId="node-1595">
+        <command xml:space="preserve">ask clerk for case</command>
+        <result xml:space="preserve">That doesn't seem to be a topic of conversation at the moment.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1596"></child>
+        </children>
+    </item>
+    <item nodeId="node-1596">
+        <command xml:space="preserve">x aisle</command>
+        <result xml:space="preserve">Faraji hardly needs bread, ketchup, or potato chips.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1597"></child>
+        </children>
+    </item>
+    <item nodeId="node-1597">
+        <command xml:space="preserve">x bread</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1598"></child>
+        </children>
+    </item>
+    <item nodeId="node-1598">
+        <command xml:space="preserve">x flashlight</command>
+        <result xml:space="preserve">The flashlight is currently switched off.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1599"></child>
+        </children>
+    </item>
+    <item nodeId="node-1599">
+        <command xml:space="preserve">x torc</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1600"></child>
+        </children>
+    </item>
+    <item nodeId="node-1600">
+        <command xml:space="preserve">x torch</command>
+        <result xml:space="preserve">The flashlight is currently switched off.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1601"></child>
+        </children>
+    </item>
+    <item nodeId="node-1601">
+        <command xml:space="preserve">take it</command>
+        <result xml:space="preserve">The glass case isn't open.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1575">
+        <command xml:space="preserve">actions</command>
+        <result xml:space="preserve">Actions listing on.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1576"></child>
+        </children>
+    </item>
+    <item nodeId="node-1576">
+        <command xml:space="preserve">ask clerk about case</command>
+        <result xml:space="preserve">[quizzing the store clerk about the glass case]
+That doesn't seem to be a topic of conversation at the moment.
+[quizzing the store clerk about the glass case - failed the check quizzing someone about something]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1498">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Their Hyundai is parked nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1499"></child>
+        </children>
+    </item>
+    <item nodeId="node-1499">
+        <command xml:space="preserve">x hq</command>
+        <result xml:space="preserve">Faraji gazes stoically at the sad little storefront that is the new BOSH office. The sign from the previous tenant is still up: "Angel's Department Store". Through the front window can be seen Margaret, in her usual manic work mode.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1602">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">Faraji is carrying:
+  the Bureau credit card
+  a green smartphone
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1603"></child>
+        </children>
+    </item>
+    <item nodeId="node-1603">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">Faraji is carrying:
+  the Bureau credit card
+  a green smartphone
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1604"></child>
+        </children>
+    </item>
+    <item nodeId="node-1604">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Their Hyundai is parked nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1605"></child>
+        </children>
+    </item>
+    <item nodeId="node-1605">
+        <command xml:space="preserve">showme your former self</command>
+        <result xml:space="preserve">There seems to be no such object anywhere in the model world.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1606"></child>
+        </children>
+    </item>
+    <item nodeId="node-1606">
+        <command xml:space="preserve">showme ten-dollar</command>
+        <result xml:space="preserve">ten-dollar bill - thing
+location: carried by Faraji's former self in the Room of Stuff
+singular-named, improper-named, unmarked for special listing; unlit, inedible, portable, handled, neuter, unseen, unfamiliar, quiet, background
+list grouping key: none
+printed name: "ten-dollar bill"
+printed plural name: none
+indefinite article: none
+most recent reference: nominal
+third singular pronoun: It-pronoun
+summary: none
+description: none
+initial appearance: none
+dark description: none
+hearability: very loud
+volume: 0.0
+price: $0
+behind description: none
+third-plural-pronoun: They-pronoun
+possessive: none
+portrait: Figure Null
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1607"></child>
+        </children>
+    </item>
+    <item nodeId="node-1607">
+        <command xml:space="preserve">who owns the case</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1608"></child>
+        </children>
+    </item>
+    <item nodeId="node-1608">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Faraji trudges to the other end of the parking lot. It's much like where they left.
+
+Agent Faraji is at the north end of the strip mall parking lot. This end is no more auspicious than the other. A convenience store lies to the east. To the west is a military recruitment center. North of here the parking lot exits onto a busy road. There is a rusty sign by the road naming the shopping center: Park Place. South is BOSH headquarters, among other things.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1609"></child>
+        </children>
+    </item>
+    <item nodeId="node-1609">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Faraji is greeted by a blast of music as they enter the store.
+
+Agent Faraji is in the Li'l Nectarine Convenience Store. Li'l Nectarine offers great service and low prices, or so they say. This one's cluttered aisles and sparse shelves could make one wonder if that's true. Behind the counter is the typical array of cigarettes and lottery tickets. Under the counter is a glass case containing various useful items.
+
+The clerk, a scruffy man in his mid-twenties, is leaning against the counter, looking bored.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1610"></child>
+        </children>
+    </item>
+    <item nodeId="node-1610">
+        <command xml:space="preserve">who owns clerk</command>
+        <result xml:space="preserve">No one owns the store clerk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1611"></child>
+        </children>
+    </item>
+    <item nodeId="node-1611">
+        <command xml:space="preserve">who owns the case</command>
+        <result xml:space="preserve">No one owns the glass case.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1612"></child>
+        </children>
+    </item>
+    <item nodeId="node-1612">
+        <command xml:space="preserve">who owns the flashlight</command>
+        <result xml:space="preserve">The store clerk owns the flashlight.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1613"></child>
+        </children>
+    </item>
+    <item nodeId="node-1613">
+        <command xml:space="preserve">x counter</command>
+        <result xml:space="preserve">There seems to be nothing special about it.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1500">
+        <command xml:space="preserve">1</command>
+        <result xml:space="preserve">Agent Gaunt is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+His Hyundai is parked nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1501"></child>
+        </children>
+    </item>
+    <item nodeId="node-1501">
+        <command xml:space="preserve">x car</command>
+        <result xml:space="preserve">(Gaunt's Hyundai)
+An old bright red Hyundai Accent, it's been his personal means of transportation for years. And since the Bureau lost its fleet, it's his work car too.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>

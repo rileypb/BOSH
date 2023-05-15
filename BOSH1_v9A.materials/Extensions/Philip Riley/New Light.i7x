@@ -18,6 +18,6 @@ Definition: a room is fluorescent-lit:
 			decide yes;
 	decide no;
 	
-Hyperlight is a backdrop. It is everywhere. It is unlit.
+Hyperlight is a backdrop. It is everywhere. It is unlit. It is privately-named. It is undescribed.
 
 New Light ends here.

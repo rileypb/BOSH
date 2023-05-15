@@ -70,7 +70,7 @@ implicit-telling is an action applying to one topic.
 [Understand "t [text]" as implicit-telling.]
 
 implicit-quizzing is an action applying to one visible thing.
-  [Understand "ask about [any known thing]" or "a [any known thing]" as implicit-quizzing.]
+  Understand "ask about [any known thing]" or "a [any known thing]" as implicit-quizzing.
 
 implicit-informing is an action applying to one visible thing.
   [Understand "t [any known thing]" or "talk about [any known thing]" as implicit-informing.]

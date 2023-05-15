@@ -19,11 +19,11 @@ The Office_ is an unenterable room in Parking Lot South. The printed name is "of
 Instead of entering the office_:
 	try going west;
 	
-Margaret at a distance is a part of the Office_. The description is "Even from here you can sense her irrepressible energy."
+Margaret at a distance is a part of the Office_.  She is privately-named. The printed name is "Margaret". The description is "Even from here one can sense [Margaret]'s irrepressible energy." Understand "Margaret/Chao" as Margaret at a distance. She is female. She is not neuter.
 	
 The department store sign is a part of the office_. Understand "angel/angel's" as the department store sign. The description is "It's adorned with a pair of angel's wings."
 	 
-Understand "office", "bosh" as the office_.
+Understand "office/bosh/hq/headquarters/bureau/storefront", "new office" as the office_.
 
 Car 1 is a thing in Strip Mall Parking Lot South. It is privately-named. The printed name is "[our] Hyundai". Understand "car", "hyundai", "automobile", "auto" as car 1. The initial appearance of car 1 is "[Our] Hyundai is parked nearby." It is fixed in place. The description is "An old bright red Hyundai Accent, it's been [our] personal means of transportation for years. And since the Bureau lost its fleet, it's [our] work car too.".
 
@@ -41,13 +41,13 @@ Check pushing car 1:
 Check turning car 1: 
 	say "It's not clear what you mean for [us] to do." instead;
  
-The Laundromat-facade is a privately-named unenterable room in Parking Lot South. The printed name is "laundromat". Understand "laundromat" as the laundromat-facade. "[We] [peer] through the windows of the laundromat at the rows of aging machines. A sign on the door says 'Closed for renovations'. [We] [turn] away, unimpressed." 
+The Laundromat-facade is a privately-named unenterable room in Parking Lot South. The printed name is "A-plus laundromat". Understand "A-plus/plus/laundromat" as the laundromat-facade. "[We] [peer] through the windows of the laundromat at the rows of aging machines. A sign on the door says 'Closed for renovations'. [We] [turn] away, unimpressed." 
 Instead of entering the laundromat-facade:
 	try going northwest;
 	
-The laundromat sign is a part of the Laundromat-facade. The description is "It's just a piece of stationery marked up with Sharpie and taped to the door."
+The laundromat sign is a part of the Laundromat-facade. The description is "It's just a piece of stationery marked up with Sharpie and taped to the door. It says 'Closed for renovations'."
 	
-The laundromat door is a closed and locked door. It is northwest of the parking lot south and southeast of the laundromat-store. The description is "It's a typical glass door. Taped to it is a sign that says 'Closed for renovations'."
+The laundromat door is a closed and locked scenery door. It is northwest of the parking lot south and southeast of the laundromat-store. The description is "It's a typical glass door. Taped to it is a sign that says 'Closed for renovations'."
 	
 Check going northwest from the strip mall parking lot south when the player does not know break-in-to-laundromat: 
 	say "A sign on the laundromat door says 'Closed for renovations'." instead;
@@ -60,12 +60,12 @@ The swamp-facade is a privately-named unenterable room in Parking Lot South. The
 Instead of entering the swamp-facade:
 	try going south;
 	
-The Pawn-Shop-facade is a privately-named unenterable room in Parking Lot South. The printed name is "pawn shop". Understand "pawn", "shop" as the pawn-shop-facade. "[We] [observe] the pawn shop with obvious distaste. The flashing neon sign in the window advertises 'Cash for gold!'".
+The Pawn-Shop-facade is a privately-named unenterable room in Parking Lot South. The printed name is "Dave's pawn shop". Understand "dave's", "dave", "pawn", "shop" as the pawn-shop-facade. "[We] [observe] the pawn shop with obvious distaste. The flashing neon sign in the window advertises 'Cash for gold!'".
 
-The flashing neon sign is part of the Pawn-Shop-facade. Understand "pawn/shop/cash/gold" as flashing neon sign. The description is "Its flash rate is just a bit over the threshold of irritating."
+The flashing neon sign is part of the Pawn-Shop-facade. [Understand "pawn/shop/cash/gold" as flashing neon sign.] The description is "Its flash rate is just a bit over the threshold of irritating."
 	
-The pawn-shop-door is a closed door. It is southwest of the parking lot south and northeast of the pawn shop. It is privately-named. The printed name is "pawn shop door". Understand "pawn/shop/door" as the pawn-shop-door. The description is "It's a typical glass door. The light within is too dim to see much."
-	
+The pawn-shop-door is a closed scenery door. It is southwest of the parking lot south and northeast of the Dave's pawn shop. It is privately-named. The printed name is "pawn shop door". Understand "pawn/shop/door" as the pawn-shop-door. The description is "It's a typical glass door. The light within is too dim to see much."
+
 Instead of entering the pawn-shop-facade:
 	try going southwest;
 	
@@ -92,28 +92,48 @@ Instead of entering the automatic car wash:
 	
 The interstate is scenery in Strip Mall Parking Lot South. Understand "highway/road/expressway/freeway" as the interstate. "A ways off past the swamp, the highway carries most travelers right past this glum little village."
 	
-strip mall parking lot south is outside from the pawn shop.
+strip mall parking lot south is outside from the Dave's pawn shop.
 
 Chapter 2 - Strip Mall Parking Lot North
 
 The Strip Mall Parking Lot North is a room. It is north of The Strip Mall Parking Lot South. It is in Swamp Park. It is outdoors. The printed name is "north end of the strip mall parking lot". Understand "end/of/the" as the Strip Mall Parking Lot North. The preposition is "at".
 "This end is no more auspicious than the other. A convenience store lies to the east. To the west is a military recruitment center. North of here the parking lot exits onto a busy road. There is a rusty sign by the road naming the shopping center: Park Place. South is BOSH headquarters, among other things." 
 
+Understand "Park/place" as Strip Mall Parking Lot North.
+
 Instead of going nowhere from the Parking Lot North:
 	let dir be noun part of current action;
 	if dir is north:
-		say "Not on foot.";
+		say "[We] [have] things to do here.";
 	otherwise if dir is west:
 		say "[We] will think about joining the military once the Bureau shuts down.";
 	otherwise:
 		continue the action;
 	stop the action.
 	
-Book 2 - Pawn Shop
-	
-The pawn shop is a room. "This is more the seedy, gloomy stereotype of a pawn shop than the glitzy sanitized version of TV reality shows. The blinds in the windows are closed to only allow the barest slant of sunlight in, leaving the sickly fluorescent lights to illuminate the room. There is the distinct smell of cigar smoke. The glass counter is filled with a large collection of possibly valuable items. Behind it is an impressive array of firearms."
+The convenience-store-facade is an unenterable room in strip mall parking lot north. It is privately-named. The printed name is "Li'l Nectarine Convenience Store". Understand "li'l/nectarine/convenience/store" as the convenience-store-facade. "It's marked by a sign with a big nectarine on it."
 
-The pawn shop is in Swamp Park.
+Instead of entering the convenience-store-facade:
+	try going east;
+	
+The military-facade is an unenterable room in strip mall parking lot north. It is privately-named. The printed name is "Military Recruitment Center". Understand "military/recruitment/center" as the military-facade. "Patriotic posters paper the windows."
+
+Patriotic posters are scenery in the strip mall parking lot north. Understand "military posters", "poster" as patriotic posters. "The new slogan is 'Answer the Call!'".
+
+Instead of entering the military-facade:
+	try going west;
+	
+The busy road is scenery in strip mall parking lot north. "The main business thoroughfare of Swamp Park."
+
+The rusty sign is scenery in strip mall parking lot north. "It says 'Park Place'."
+
+BOSH-headquarters-to-the-south is scenery in strip mall parking lot north. It is privately-named. The printed name is "BOSH headquarters". Understand "bosh/headquarters/HQ/office" as BOSH-headquarters-to-the-south. "The BOSH headquarters are to the south."
+	
+Book 2 - Dave's pawn shop
+	
+Dave's pawn shop is a room. "This is more the seedy, gloomy stereotype of a pawn shop than the glitzy sanitized version of TV reality shows. The blinds in the windows are closed to only allow the barest slant of sunlight in, leaving the sickly fluorescent lights to illuminate the room. There is the distinct smell of cigar smoke. The glass counter is filled with a large collection of possibly valuable items. Behind it is an impressive array of firearms."
+
+The Dave's pawn shop is in Swamp Park.
 
 A man called the pawn shop owner is in the pawn shop. Understand "dave" as the pawn shop owner.
 
@@ -180,8 +200,8 @@ Chapter 2 - The Laundromat Proper
 
 laundromat-region is a region. It is in Swamp Park.
 
-The laundromat-store is a room. "This is the laundromat.".
-It is privately-named. The printed name is "laundromat". Understand "laundromat" as the laundromat-store. It is in laundromat-region.
+The laundromat-store is a room. "This is A-plus laundromat.".
+It is privately-named. The printed name is "laundromat". Understand "A-plus/plus/laundromat" as the laundromat-store. It is in laundromat-region.
 
 The handtruck is in the laundromat-store. It is pushable between rooms.
 
@@ -260,11 +280,20 @@ The Li'l Nectarine Convenience Store is east of the Parking Lot North. It is in 
 "Li'l Nectarine offers great service and low prices, or so they say. This one's cluttered aisles and sparse shelves could make one wonder if that's true. Behind the counter is the typical array of cigarettes and lottery tickets. Under the counter is a glass case containing various useful items."
  
 The store clerk is a man in the Convenience Store. "The clerk, a scruffy man in his mid-twenties, is leaning against the counter, looking bored."
-The shop counter is a supporter in the nectarine store. It is scenery.
+The shop counter is a supporter in the nectarine store. It is scenery. "The counter is arrayed with displays of CBD oil, antacids, and the like."
 
-The store shelves are a thing in the Convenience Store. They are scenery. "[We] hardly [need] bread, ketchup, or potato chips."
+Some CBD oil is scenery in the convenience store. "[We] [don't] need any of this stuff." 
 
-The flashlight is a device. Understand "light" as the flashlight.
+Some antacids are scenery in the convenience store. "[We] [feel] fine for now."
+
+Some cigarettes are scenery in the convenience store. "[We] [have] no interest in smoking." Understand "smokes/smoke/packs/pack" as cigarettes.
+Some lottery tickets are scenery in the convenience store. "[We] [feel] no urge to gamble." Understand "scratch-off/scratch-offs/ticket" as lottery tickets.
+
+The store shelves are a thing in the Convenience Store. They are scenery. "[We] hardly [need] bread, ketchup, or potato chips." Understand "aisle/aisles/shelf" as store shelves.
+
+Some groceries are a thing in the Convenience Store. They are scenery. "We're not here to go grocery shopping." Understand "bread/ketchup/catsup/potato/chips" as groceries.
+
+The flashlight is a device. Understand "light/torch" as the flashlight.
 Instead of switching on the flashlight:
 	now the flashlight is lit.
 	
@@ -304,6 +333,8 @@ An availability rule for for-a-screwdriver-clerk:
 	if the player knows vent-screws and the screwdriver is not seen:
 		always available;
 	
+strip mall parking lot north is outside from the the Li'l Nectarine Convenience Store.
 
+Faraji carries a ten-dollar bill.
 
 Swamp Park ends here.

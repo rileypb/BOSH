@@ -14,17 +14,17 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 8417 words long.
+I've now read your source text, which is 8500 words long.
 
 
 -----------------------------------------------------
 Phase II ... Semantic analysis Ia
 -----------------------------------------------------
 
-I've also read Standard Rules by Graham Nelson, which is 42655 words long.
+I've also read Standard Rules by Graham Nelson, which is 40707 words long.
 I've also read English Language by Graham Nelson, which is 2297 words long.
 I've also read Epistemology by Eric Eve, which is 1500 words long.
-I've also read Conversation Framework by Eric Eve, which is 5136 words long.
+I've also read Conversation Framework by Eric Eve, which is 5149 words long.
 I've also read Conversation Responses by Eric Eve, which is 1855 words long.
 I've also read Conversational Defaults by Eric Eve, which is 2247 words long.
 I've also read Basic Screen Effects by Emily Short, which is 2218 words long.
@@ -40,15 +40,15 @@ I've also read Third Person Narration by Philip Riley, which is 669 words long.
 I've also read Door Utils by Philip Riley, which is 41 words long.
 I've also read Real People by Philip Riley, which is 397 words long.
 I've also read Visible Rooms by Philip Riley, which is 63 words long.
-I've also read New Light by Philip Riley, which is 107 words long.
+I've also read New Light by Philip Riley, which is 113 words long.
 I've also read Early Declarations by Philip Riley, which is 16 words long.
 I've also read Basics by Philip Riley, which is 195 words long.
 I've also read Memories by Philip Riley, which is 220 words long.
-I've also read Simple Conversation by Philip Riley, which is 1783 words long.
+I've also read Simple Conversation by Philip Riley, which is 1785 words long.
 I've also read Hyperspace by Philip Riley, which is 2946 words long.
 I've also read BOSH Facts by Philip Riley, which is 94 words long.
 I've also read Image Strip by Philip Riley, which is 2080 words long.
-I've also read Swamp Park by Philip Riley, which is 2748 words long.
+I've also read Swamp Park by Philip Riley, which is 3092 words long.
 I've also read Conversations General by Philip Riley, which is 129 words long.
 I've also read Margaret by Philip Riley, which is 999 words long.
 I've also read Enigma Lake by Philip Riley, which is 403 words long.
@@ -203,17 +203,17 @@ Phase XII ... Code generation
                                                             Fail: list of numbers (~) number = nothing
                                             Fail: nothing (~) real number = nothing
                                             Fail: list of numbers (~) real number = nothing
-        Regional: CONSTANT_VNT'bosh hq'-region(I390_bosh_hq)(I297'bosh hq')
+        Regional: CONSTANT_VNT'bosh hq'-region(I403_bosh_hq)(I310'bosh hq')
          == region
-        Regional: CONSTANT_VNT'bosh hq'-region(I390_bosh_hq)(I297'bosh hq')
+        Regional: CONSTANT_VNT'bosh hq'-region(I403_bosh_hq)(I310'bosh hq')
          == region
-        Regional: CONSTANT_VNT'laundromat-region'-region(I291_laundromat_region)(I202'laundromat-region')
+        Regional: CONSTANT_VNT'laundromat-region'-region(I297_laundromat_region)(I208'laundromat-region')
          == region
-        Regional: CONSTANT_VNT'laundromat-region'-region(I291_laundromat_region)(I202'laundromat-region')
+        Regional: CONSTANT_VNT'laundromat-region'-region(I297_laundromat_region)(I208'laundromat-region')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I331_elr)(I242'elr')
+        Regional: CONSTANT_VNT'elr'-region(I344_elr)(I255'elr')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I331_elr)(I242'elr')
+        Regional: CONSTANT_VNT'elr'-region(I344_elr)(I255'elr')
          == region
         Regional: CONSTANT_VNT'field office area'-region(I231_field_office_area)(I144'field office area')
          == region
@@ -264,8 +264,8 @@ Providing for a total heap of 8192, given requirement of 8192
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 196 files written as streams.
-CPU time: 391 centiseconds
+Total of 183 files written as streams.
+CPU time: 375 centiseconds
 
 
 That concludes the debugging log from this run of Inform.
