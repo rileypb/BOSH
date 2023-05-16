@@ -63,23 +63,23 @@ The current interlocutor is nothing.
 
 Implicit-asking is an action applying to one topic.
 
-[Understand "ask about [text]" or "a [text]" as implicit-asking.]
+Understand "ask about [text]" or "a [text]" as implicit-asking.
 
 implicit-telling is an action applying to one topic.
 
-[Understand "t [text]" as implicit-telling.]
+Understand "t [text]" as implicit-telling.
 
 implicit-quizzing is an action applying to one visible thing.
   Understand "ask about [any known thing]" or "a [any known thing]" as implicit-quizzing.
 
 implicit-informing is an action applying to one visible thing.
-  [Understand "t [any known thing]" or "talk about [any known thing]" as implicit-informing.]
+  Understand "t [any known thing]" or "talk about [any known thing]" as implicit-informing.
 
 implicit-requesting is an action applying to one visible thing.
-  [Understand "ask for [any known thing]" as implicit-requesting.]
+  Understand "ask for [any known thing]" as implicit-requesting.
 
 implicit-imploring is an action applying to one topic.
-  [Understand "ask for [text]" as implicit-imploring.]
+  Understand "ask for [text]" as implicit-imploring.
 
 implicit-asking is implicit-conversing. 
 implicit-telling is implicit-conversing. 

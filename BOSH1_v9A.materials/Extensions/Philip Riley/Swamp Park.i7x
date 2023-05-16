@@ -2,7 +2,9 @@ Swamp Park by Philip Riley begins here.
 
 Include Essentials by Philip Riley.
 
-Include New Light by Philip Riley.                             
+Include New Light by Philip Riley.    
+
+Include Door Varieties by Philip Riley.                         
 
 Book 1 - Outside HQ 
 
@@ -47,7 +49,7 @@ Instead of entering the laundromat-facade:
 	
 The laundromat sign is a part of the Laundromat-facade. The description is "It's just a piece of stationery marked up with Sharpie and taped to the door. It says 'Closed for renovations'."
 	
-The laundromat door is a closed and locked scenery door. It is northwest of the parking lot south and southeast of the laundromat-store. The description is "It's a typical glass door. Taped to it is a sign that says 'Closed for renovations'."
+The laundromat door is a closed and locked scenery shop door. It is northwest of the parking lot south and southeast of the laundromat-store. The description is "It's a typical glass door. Taped to it is a sign that says 'Closed for renovations'." The frontside is the strip mall parking lot south.
 	
 Check going northwest from the strip mall parking lot south when the player does not know break-in-to-laundromat: 
 	say "A sign on the laundromat door says 'Closed for renovations'." instead;
@@ -64,16 +66,16 @@ The Pawn-Shop-facade is a privately-named unenterable room in Parking Lot South.
 
 The flashing neon sign is part of the Pawn-Shop-facade. [Understand "pawn/shop/cash/gold" as flashing neon sign.] The description is "Its flash rate is just a bit over the threshold of irritating."
 	
-The pawn-shop-door is a closed scenery door. It is southwest of the parking lot south and northeast of the Dave's pawn shop. It is privately-named. The printed name is "pawn shop door". Understand "pawn/shop/door" as the pawn-shop-door. The description is "It's a typical glass door. The light within is too dim to see much."
+The pawn-shop-door is a closed scenery shop door. It is southwest of the parking lot south and northeast of the Dave's pawn shop. It is privately-named. The printed name is "pawn shop door". Understand "pawn/shop/door" as the pawn-shop-door. The description is "It's a typical glass door. The light within is too dim to see much." The frontside is the strip mall parking lot south.
 
 Instead of entering the pawn-shop-facade:
 	try going southwest;
 	
-Check going southwest from the strip mall parking lot south when the player does not know pawn-shop-screwdriver:
+[Check going southwest from the strip mall parking lot south when the player does not know pawn-shop-screwdriver:
 	say "[We're] not that desperate -- yet." instead;
 	
 Instead of opening the pawn-shop-door when the player does not know pawn-shop-screwdriver:
-	say "[We're] not that desperate -- yet." instead;
+	say "[We're] not that desperate -- yet." instead;]
 
 Instead of going nowhere from the Parking Lot South:
 	let dir be noun part of current action;
@@ -118,7 +120,7 @@ Instead of entering the convenience-store-facade:
 	
 The military-facade is an unenterable room in strip mall parking lot north. It is privately-named. The printed name is "Military Recruitment Center". Understand "military/recruitment/center" as the military-facade. "Patriotic posters paper the windows."
 
-Patriotic posters are scenery in the strip mall parking lot north. Understand "military posters", "poster" as patriotic posters. "The new slogan is 'Answer the Call!'".
+Patriotic posters are scenery in the strip mall parking lot north. Understand "military posters", "poster/slogan/slogans" as patriotic posters. "The new slogan is 'Answer the Call!'".
 
 Instead of entering the military-facade:
 	try going west;
@@ -131,23 +133,25 @@ BOSH-headquarters-to-the-south is scenery in strip mall parking lot north. It is
 	
 Book 2 - Dave's pawn shop
 	
-Dave's pawn shop is a room. "This is more the seedy, gloomy stereotype of a pawn shop than the glitzy sanitized version of TV reality shows. The blinds in the windows are closed to only allow the barest slant of sunlight in, leaving the sickly fluorescent lights to illuminate the room. There is the distinct smell of cigar smoke. The glass counter is filled with a large collection of possibly valuable items. Behind it is an impressive array of firearms."
+Dave's pawn shop is a room. It is proper-named. "This is more the seedy, gloomy stereotype of a pawn shop than the glitzy sanitized version of TV reality shows. The blinds in the windows are closed to only allow the barest slant of sunlight in, leaving the sickly fluorescent lights to illuminate the room. There is the distinct smell of cigar smoke. The glass counter is filled with a large collection of possibly valuable items. Behind it is an impressive array of firearms."
 
-The Dave's pawn shop is in Swamp Park.
+There is a fluorescent light source in Dave's pawn shop called pawn-light.
 
-A man called the pawn shop owner is in the pawn shop. Understand "dave" as the pawn shop owner.
+Dave's pawn shop is in Swamp Park.
 
-Greeting response for the Pawn Shop Owner:
-	say "The pawn shop owner grunts hello.";
+A man called Dave is in the pawn shop. Understand "owner" as Dave. "A man, presumably Dave, stands behind the main counter eyeing [Player]." The description is "He's dressed in polyester, as if he were still wearing last night's bowling shirt. A bit of tattoo peeks out from his open collar."
+
+Greeting response for Dave:
+	say "[Dave] grunts hello.";
 	
-The how-are-you-reply of the pawn shop owner is "Been better.".
+The how-are-you-reply of Dave is "Been better.".
 	
 for-a-screwdriver-pawn is a questioning quip.
 	It is privately-named. The printed name is "for a screwdriver". [The true-name is "for-a-screwdriver-pawn".] Understand "for/a/screwdriver" as for-a-screwdriver-pawn.
 	It mentions the screwdriver.
 	The comment is "[We] [EG][stammer] 'Excuse me, I was wondering, I'm from the office next door...'
 	
-	[The pawn shop owner] [polish] a spot on the glass counter and [say], 'Spit it out, buddy.'
+	[Dave] [polish] a spot on the glass counter and [say], 'Spit it out, buddy.'
 	
 	'Uh, yes, by the way, nice establishment you have here...'
 	
@@ -155,16 +159,19 @@ for-a-screwdriver-pawn is a questioning quip.
 	
 	[EG]'Anyway, is there any chance that maybe you, um, have a screwdriver? That I could borrow, just for a few minutes of course.'[PCG][smile] warmly and [say], 'Hi, I[']m Petula from next door -- '
 	
-	'[italic type]Very[roman type] pleased to meet you, Petula,' [regarding the pawn shop owner][interrupt] [the pawn shop owner].
+	'[italic type]Very[roman type] pleased to meet you, Petula,' [regarding Dave][interrupt] [Dave].
 	
 	[We] [raise] one eyebrow. 'Of course. Likewise. Anyway, as I was saying, I'm Agent Goldberg from the Bureau next door --'[PCG]
 	
-	'Agent, Bureau, really?' [regarding the pawn shop owner][They] [chuckle]. 'In this hole? Who'd you piss off?'
+	'Agent, Bureau, really?' [regarding Dave][They] [chuckle]. 'In this hole? Who'd you piss off?'
 	
 	'You couldn't imagine, sir. But to why I came here: do you happen to have a screwdriver I could borrow?'[LF][lean] on the counter. 'Hey, do you have a screwdriver? Can't find mine and I really need one.'[end say]".
-	The reply is "[EG][The pawn shop owner] [look] exasperated. 'Is that all? [PCG]The shopkeeper rolls his eyes. '[LF]The man shakes his head and says, 'Sorry, miss. [end say]I had one, but the guy who runs the laundromat borrowed it and didn't bring it back.'[line break]".
-	It quip-supplies the pawn shop owner.
-	It stocks the pawn shop owner.
+	The reply is "[EG][Dave] [look] exasperated. 'Is that all? [PCG]The shopkeeper rolls his eyes. '[LF]The man shakes his head and says, 'Sorry, miss. [end say]I had one, but the guy who runs the laundromat borrowed it and didn't bring it back.'[line break]".
+	It quip-supplies Dave.
+	
+An availability rule for for-a-screwdriver-pawn:
+	if the player knows vent-screws and the screwdriver is not seen:
+		always available;
 	
 After discussing for-a-screwdriver-pawn:
 	now player knows screwdriver-in-laundromat;
@@ -173,7 +180,7 @@ After discussing for-a-screwdriver-pawn:
 about the laundromat owner is a questioning quip.
 	The comment is "[We] [EG][say], 'Huh, um. Do you know how I could, uh, find the laundromat owner -- was it owner, or manager? I don't suppose it really matters. Anyway, do you know where he, um, or she I guess, is?'[PCG][consider] for a moment and [say], 'How do you suppose I might get in touch with this man who runs the laundromat? I really could use a screwdriver.'[LF][nod]. 'Okay, then, how do I get in touch with this laundromat guy?'[end say]".
 	The reply is "'Well, that's a tricky one. Laundromat's been closed for almost two weeks now, since the owner just split for some reason he didn't bother to share. Not likely to get ahold of him. If you're not averse to a little trespassing, though, see if you come across a watch. Another thing he borrowed.'".
-	It quip-supplies the pawn shop owner.
+	It quip-supplies Dave.
 	It follows for-a-screwdriver-pawn.
 	
 After discussing about the laundromat owner:
@@ -279,7 +286,7 @@ Book 4 - Convenience Store
 The Li'l Nectarine Convenience Store is east of the Parking Lot North. It is in Swamp Park. It is indoors. 
 "Li'l Nectarine offers great service and low prices, or so they say. This one's cluttered aisles and sparse shelves could make one wonder if that's true. Behind the counter is the typical array of cigarettes and lottery tickets. Under the counter is a glass case containing various useful items."
  
-The store clerk is a man in the Convenience Store. "The clerk, a scruffy man in his mid-twenties, is leaning against the counter, looking bored."
+The store clerk is a man in the Convenience Store. "The clerk, a scruffy man in his mid-twenties, is leaning against the counter, looking bored." The description is "The clerk looks as if he'd rather be anywhere else. He's wearing jeans and a white t-shirt with something inscrutable scrawled on it. His hair sticks up every which way."
 The shop counter is a supporter in the nectarine store. It is scenery. "The counter is arrayed with displays of CBD oil, antacids, and the like."
 
 Some CBD oil is scenery in the convenience store. "[We] [don't] need any of this stuff." 
@@ -300,7 +307,8 @@ Instead of switching on the flashlight:
 Instead of switching off the flashlight:
 	now the flashlight is not lit. 
 
-The glass case is a container in the Convenience Store. it is openable. It is closed and locked. it is scenery. It is transparent. In the glass case is the flashlight, a red screwdriver, a laptop computer, some wireless earbuds, and a black smart phone. The wireless earbuds are plural-named.
+The glass case is a container in the Convenience Store. it is openable. It is closed and locked. it is scenery. It is transparent. In the glass case is the flashlight, a red screwdriver, a laptop computer, and some wireless earbuds. The wireless earbuds are plural-named. 
+Understand "useful/items" as the glass case.
 	
 The clerk owns the flashlight. The clerk is willing to sell the flashlight.
 The price of the flashlight is $5.
@@ -310,9 +318,12 @@ The clerk owns the laptop. The clerk is willing to sell the laptop.
 The price of the laptop is $1200.  
 The clerk owns the earbuds. The clerk is willing to sell the earbuds. 
 The price of the earbuds is $85.
-The clerk owns the smart phone. The clerk is willing to sell the smart phone.
-The price of the smart phone is $305.
    
+The description of the red screwdriver is "A medium-length flat head screwdriver with a red plastic handle."
+Understand "flat/head/plastic/handle" as the red screwdriver.
+The description of the laptop computer is "A knockoff of a fancy gaming laptop." Understand "notebook/computer" as the laptop computer.
+The description of the wireless earbuds is "Some no-name brand." Understand "airpods/air/pods/ear/earphones/headphones" as the wireless earbuds.  
+
  
 [Carry out imploring the clerk for something when the flashlight is nowhere during blackout:
 	if the topic understood includes "light/flashlight":

@@ -2,7 +2,7 @@
 
 The story title is "The Bureau of Strange Happenings".
 The story author is "Phil Riley".
-The story headline is "An Interactive Phenomenon".
+®The story headline is "An Interactive Phenomenon".
 The story genre is "Science Fiction".The release number is 1.
 The story creation year is 2023.
 
@@ -45,6 +45,7 @@ Include Enigma Lake by Philip Riley.
 Include Gender Options by Nathanael Nerode.  
  
 
+Use MAX_OBJ_PROP_COUNT of 128.
 
 Work Title is always "The Bureau of Strange Happenings".  
  
@@ -297,10 +298,22 @@ Book 5 - Automatic greeting
 After going to a room:
 	repeat with P running through the people in the location:
 		if P is not the player:
-			now the current interlocutor is P;
-			continue the activity;
+			postpone saying hello to P;
+			continue the activity; 
 	continue the activity;
+	
+The postponed action is an action that varies.
 
+To postpone (act - an action):
+	now the postponed action is act;
+	
+This is the postponement rule:
+	if the postponed action is not waiting:
+		try the postponed action;
+		now the postponed action is waiting;
+	
+The postponement rule is listed before the every turn stage rule in the turn sequence rules.
+ 
 Book 6 - Messages
 
 The parser error internal rule response (R) is "I[']m not sure what you're trying to say. I might just not recognize the words you're using."
@@ -681,12 +694,15 @@ Instead of examining Biff's computer when the thumb drive is not seen:
 
 The behind description of the front desk is "There are a number of shelves of office supplies behind the desk. There is also a heating vent on the floor here.";
 
-The heating vent is a scenery container in the front office. It is openable, closed, lockable, transparent and locked. "A typical vent with a grill which one would hope would stop things like, say, a hex wrench from falling through. It's set in the floor behind the front desk. The vent is held closed by four screws."
-The hex wrench is in the heating vent.
+The heating vent is a scenery container in the front office. It is openable, closed, lockable, transparent and locked. "A typical air register with a grill which one would hope would stop things like, say, a hex wrench from falling through. It's set in the floor behind the front desk. The vent is held closed by four screws." Understand "heat/air/conditioning/register" as the heating vent.
+
+The hex wrench is in the heating vent. Understand "key/allen" as the hex wrench. The description is "The ubiquitous flat pack furniture tool."
+
+Some screws are a part of the vent. The description is "Four plain flat head screws."
 
 Before examining the heating vent (this is the now you know vent-screws rule):
 	now the player knows vent-screws.
-
+ 
 Instead of removing hex wrench from heating vent when the heating vent is closed:
 	say "[Our] fingers won't fit through the openings in the vent. [We]'ll have to open it first."; 
 	
@@ -905,7 +921,7 @@ The Store Clerk has portrait Figure Clerk.
 Chief Klimp has portrait Figure Klimp.
 Draco has portrait Figure Draco. 
 Doris has portrait Figure Doris. 
-The pawn shop owner has portrait Figure Pawn Owner.
+Dave has portrait Figure Pawn Owner.
 The unknown voice has portrait Figure Caller.
 The blue flipphone has portrait Figure Phone.
 Moira Zin has portrait Figure Moira.
@@ -1028,7 +1044,10 @@ test lotsouth with "x bosh/x sign/department/x pawn shop/x neon/x margaret/x lau
 test lotnorth with "gonear parking lot north"
 
 	
+lensing is an action applying to nothing. Understand "lens" as lensing.
 
+Carry out lensing:
+	now the player wears the astral lenses;
 
 Volume 2 - The Story
 

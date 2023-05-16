@@ -160,7 +160,7 @@ Carry out identifying:
 
 Book 4 - Outdoors / Indoors
 
-A room can be either indoors or outdoors. A room is usually indoors.
+A room can be indoors, outdoors or floating. A room is usually indoors.
 The weather is a thing. The weather can be either rainy or sunny. The weather is sunny.
 A room can be outdoor-adjacent.
 
