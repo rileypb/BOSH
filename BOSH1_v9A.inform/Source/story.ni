@@ -57,6 +57,9 @@ Table of User styles (continued)
 style name    	justification    	italic    	indentation    	first line indentation        	color
 special-style-2    	left-justified    	true    	0    	0    	"#888888"
 
+To lb:
+	say line break;
+
 Volume 1 - The Game
 
 Book 1 - Beginning
@@ -314,7 +317,7 @@ To postpone (act - an action):
 	
 This is the postponement rule:
 	if the postponed action is not waiting:
-		try the postponed action;
+		silently try the postponed action;
 		now the postponed action is waiting;
 	
 The postponement rule is listed before the every turn stage rule in the turn sequence rules.
@@ -444,7 +447,9 @@ Rule for writing a paragraph about Margaret Chao when the location is the front 
 	if the front office is not visited:
 		say ", unpacking boxes and assembling an approximation of a respectable front office, all as if the Bureau isn't going to be shut down before the year is out";
 		say ". She sees [player's surname] and practically [squeal]. '[agent]! I'm sorry -- [player's forename]! How are you? I hope you don't mind -- I took the liberty of putting your desk together. I just love hex wrenches, don't you? Also, your new phone is here. I put it in your desk. Good timing! Now I just need you to give me your old phone so I can deactivate it.'[paragraph break]";
-		say "[Player] [hand] Margaret [our] old phone. [Margaret] [tap] a few keys on [their] computer and [say] 'There! All settled. Hey, what are you doing for lunch? Let me know when you get hungry!'";
+		say "[Player] [hand] Margaret [our] old phone. [Margaret] [tap] a few keys on [their] computer and [say] 'There! All settled.'";
+		lb;
+		say "'Oh, good', [we] [say]. 'Our phone downgrades have arrived from our bureaucratic betters.'";
 		[now the current interlocutor is margaret;]
 		now the green smartphone is nowhere;
 		now biff's mobile number reaches the blue flipphone;

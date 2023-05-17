@@ -28,56 +28,57 @@ Their Hyundai is parked nearby.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1520"></child>
+        <children><child nodeId="node-1026"></child>
+            <child nodeId="node-1003"></child>
         </children>
     </item>
-    <item nodeId="node-1520">
+    <item nodeId="node-1003">
         <command xml:space="preserve">x bosh</command>
         <result xml:space="preserve">Faraji gazes stoically at the sad little storefront that is the new BOSH office. The sign from the previous tenant is still up: "Angel's Department Store". Through the front window can be seen Margaret, in her usual manic work mode.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1521"></child>
+        <children><child nodeId="node-1004"></child>
         </children>
     </item>
-    <item nodeId="node-1521">
+    <item nodeId="node-1004">
         <command xml:space="preserve">x sign</command>
         <result xml:space="preserve">Which do you mean, the department store sign, the laundromat sign or the flashing neon sign?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1522"></child>
+        <children><child nodeId="node-1005"></child>
         </children>
     </item>
-    <item nodeId="node-1522">
+    <item nodeId="node-1005">
         <command xml:space="preserve">department</command>
         <result xml:space="preserve">It's adorned with a pair of angel's wings.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1523"></child>
+        <children><child nodeId="node-1006"></child>
         </children>
     </item>
-    <item nodeId="node-1523">
+    <item nodeId="node-1006">
         <command xml:space="preserve">x pawn shop</command>
         <result xml:space="preserve">Which do you mean, the pawn shop door or Dave's pawn shop?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1867"></child>
-            <child nodeId="node-1524"></child>
+        <children><child nodeId="node-1019"></child>
+            <child nodeId="node-1007"></child>
         </children>
     </item>
-    <item nodeId="node-1524">
+    <item nodeId="node-1007">
         <command xml:space="preserve">trace 5</command>
         <result xml:space="preserve">[Parser tracing set to level 5.]
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1525"></child>
+        <children><child nodeId="node-1008"></child>
         </children>
     </item>
-    <item nodeId="node-1525">
+    <item nodeId="node-1008">
         <command xml:space="preserve">x pawn shop</command>
         <result xml:space="preserve">[ "x" x / "pawn" pawn / "shop" shop ]
 [Parsing for the verb 'x' (1 lines)]
@@ -239,10 +240,10 @@ You can't use multiple objects with that verb.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1538"></child>
+        <children><child nodeId="node-1009"></child>
         </children>
     </item>
-    <item nodeId="node-1538">
+    <item nodeId="node-1009">
         <command xml:space="preserve">x door</command>
         <result xml:space="preserve">[ "x" x / "door" door ]
 [Parsing for the verb 'x' (1 lines)]
@@ -391,10 +392,10 @@ Which do you mean, the pawn shop door or the laundromat door?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1546"></child>
+        <children><child nodeId="node-1010"></child>
         </children>
     </item>
-    <item nodeId="node-1546">
+    <item nodeId="node-1010">
         <command xml:space="preserve"> x pawn</command>
         <result xml:space="preserve">  [token resulted in re-parse request]
 [ "x" x / "pawn" pawn ]
@@ -544,10 +545,10 @@ Which do you mean, the pawn shop door or Dave's pawn shop?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1854"></child>
+        <children><child nodeId="node-1011"></child>
         </children>
     </item>
-    <item nodeId="node-1854">
+    <item nodeId="node-1011">
         <command xml:space="preserve">x pawn shop</command>
         <result xml:space="preserve">  [token resulted in re-parse request]
 [ "x" x / "pawn" pawn / "shop" shop ]
@@ -710,10 +711,10 @@ You can't use multiple objects with that verb.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1855"></child>
+        <children><child nodeId="node-1012"></child>
         </children>
     </item>
-    <item nodeId="node-1855">
+    <item nodeId="node-1012">
         <command xml:space="preserve">showme dave's pawn shop</command>
         <result xml:space="preserve">[ "showme" showme / "dave's" dave's / "pawn" pawn / "shop" shop ]
 [Parsing for the verb 'showme' (2 lines)]
@@ -1765,10 +1766,10 @@ room condition: indoors
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1856"></child>
+        <children><child nodeId="node-1013"></child>
         </children>
     </item>
-    <item nodeId="node-1856">
+    <item nodeId="node-1013">
         <command xml:space="preserve">rules off</command>
         <result xml:space="preserve">[ "rules" rules / "off" off ]
 [Parsing for the verb 'rules' (4 lines)]
@@ -1791,10 +1792,10 @@ Rules tracing now switched off. Type "rules" to switch it on again.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1857"></child>
+        <children><child nodeId="node-1014"></child>
         </children>
     </item>
-    <item nodeId="node-1857">
+    <item nodeId="node-1014">
         <command xml:space="preserve">showme dave's pawn shop</command>
         <result xml:space="preserve">[ "showme" showme / "dave's" dave's / "pawn" pawn / "shop" shop ]
 [Parsing for the verb 'showme' (2 lines)]
@@ -2846,10 +2847,10 @@ room condition: indoors
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1858"></child>
+        <children><child nodeId="node-1015"></child>
         </children>
     </item>
-    <item nodeId="node-1858">
+    <item nodeId="node-1015">
         <command xml:space="preserve">                trace off</command>
         <result xml:space="preserve">[ "trace" trace / "off" off ]
 [Parsing for the verb 'trace' (4 lines)]
@@ -2873,10 +2874,10 @@ Trace off.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1859"></child>
+        <children><child nodeId="node-1016"></child>
         </children>
     </item>
-    <item nodeId="node-1859">
+    <item nodeId="node-1016">
         <command xml:space="preserve">showme dave's pawn shop</command>
         <result xml:space="preserve">Dave's pawn shop - unenterable room
     flashing neon sign (part of Dave's pawn shop)
@@ -2919,10 +2920,10 @@ room condition: indoors
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1861"></child>
+        <children><child nodeId="node-1017"></child>
         </children>
     </item>
-    <item nodeId="node-1861">
+    <item nodeId="node-1017">
         <command xml:space="preserve">showme pawn shop</command>
         <result xml:space="preserve">Dave's pawn shop - unenterable room
     flashing neon sign (part of Dave's pawn shop)
@@ -2994,10 +2995,10 @@ room condition: indoors
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1862"></child>
+        <children><child nodeId="node-1018"></child>
         </children>
     </item>
-    <item nodeId="node-1862">
+    <item nodeId="node-1018">
         <command xml:space="preserve">showme pawn shop door</command>
         <result xml:space="preserve">pawn shop door - shop door
 location: in the south end of the strip mall parking lot
@@ -3032,46 +3033,65 @@ close countdown: -1
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1867">
+    <item nodeId="node-1019">
         <command xml:space="preserve">neon</command>
         <result xml:space="preserve">I only understood you as far as wanting to examine the flashing neon sign.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1868"></child>
+        <children><child nodeId="node-1020"></child>
         </children>
     </item>
-    <item nodeId="node-1868">
+    <item nodeId="node-1020">
         <command xml:space="preserve">neon</command>
         <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1869"></child>
+        <children><child nodeId="node-1021"></child>
         </children>
     </item>
-    <item nodeId="node-1869">
+    <item nodeId="node-1021">
         <command xml:space="preserve">x neon</command>
         <result xml:space="preserve">Its flash rate is just a bit over the threshold of irritating.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1870"></child>
+        <children><child nodeId="node-1022"></child>
         </children>
     </item>
-    <item nodeId="node-1870">
+    <item nodeId="node-1022">
         <command xml:space="preserve">x laundromat door</command>
         <result xml:space="preserve">It's a typical glass door. Taped to it is a sign that says "Closed for renovations".
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1879"></child>
+        <children><child nodeId="node-1023"></child>
         </children>
     </item>
-    <item nodeId="node-1879">
+    <item nodeId="node-1023">
         <command xml:space="preserve">open laundromat door</command>
         <result xml:space="preserve">(first unlocking the laundromat door)
 Faraji lacks a key that fits the laundromat door.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1026">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Just like in the store this once was, the door chimes as Faraji walks in.
+
+Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
+
+The Bureau's latest office manager, Margaret is bustling around with unrestrained enthusiasm, unpacking boxes and assembling an approximation of a respectable front office, all as if the Bureau isn't going to be shut down before the year is out. She sees Faraji and practically squeals. "Agent Faraji! I'm sorry -- Larch! How are you? I hope you don't mind -- I took the liberty of putting your desk together. I just love hex wrenches, don't you? Also, your new phone is here. I put it in your desk. Good timing! Now I just need you to give me your old phone so I can deactivate it."
+
+Faraji hands Margaret their old phone. Margaret taps a few keys on her computer and says "There! All settled."
+
+"Oh, good", Faraji says. "Our phone downgrades have arrived from our bureaucratic betters."
+
+They say hello to Margaret.
+
+A phone is ringing not too far away.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
