@@ -31,7 +31,7 @@ Which do you mean, the department store sign, the laundromat sign or the flashin
 It's adorned with a pair of angel's wings.
 
 > x pawn shop
-Which do you mean, the pawn shop door or the Dave's pawn shop?
+Which do you mean, the pawn shop door or Dave's pawn shop?
 
 > x neon
 Its flash rate is just a bit over the threshold of irritating.
@@ -88,7 +88,9 @@ It's a typical glass door. The light within is too dim to see much.
 It seems to be locked.
 
 > open pawn shop door
-Faraji's not that desperate -- yet.
+Faraji opens the pawn shop door.
+
+The pawn shop door closes.
 
 * audit-parking-lot-north
 
@@ -117,17 +119,11 @@ Agent Faraji is at the north end of the strip mall parking lot. This end is no m
 >n
 Faraji has things to do here.
 
->x postetrs
-There's nothing like that nearby.
-
 >x posters
 The new slogan is "Answer the Call!"
 
 >x nectarine
 It's marked by a sign with a big nectarine on it.
-
->x park place
-Agent Faraji is at the north end of the strip mall parking lot. This end is no more auspicious than the other. A convenience store lies to the east. To the west is a military recruitment center. North of here the parking lot exits onto a busy road. There is a rusty sign by the road naming the shopping center: Park Place. South is BOSH headquarters, among other things.
 
 >x bosh
 The BOSH headquarters are to the south.

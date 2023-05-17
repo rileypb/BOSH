@@ -49,7 +49,7 @@ Instead of entering the laundromat-facade:
 	
 The laundromat sign is a part of the Laundromat-facade. The description is "It's just a piece of stationery marked up with Sharpie and taped to the door. It says 'Closed for renovations'."
 	
-The laundromat door is a closed and locked scenery shop door. It is northwest of the parking lot south and southeast of the laundromat-store. The description is "It's a typical glass door. Taped to it is a sign that says 'Closed for renovations'." The frontside is the strip mall parking lot south.
+The laundromat door is a closed and locked scenery shop-door. It is northwest of the parking lot south and southeast of the laundromat-store. The front description is "It's a typical glass door. Taped to it is a sign that says 'Closed for renovations'." The frontside is the strip mall parking lot south. The back description is "It's a typical glass door."
 	
 Check going northwest from the strip mall parking lot south when the player does not know break-in-to-laundromat: 
 	say "A sign on the laundromat door says 'Closed for renovations'." instead;
@@ -62,11 +62,11 @@ The swamp-facade is a privately-named unenterable room in Parking Lot South. The
 Instead of entering the swamp-facade:
 	try going south;
 	
-The Pawn-Shop-facade is a privately-named unenterable room in Parking Lot South. The printed name is "Dave's pawn shop". Understand "dave's", "dave", "pawn", "shop" as the pawn-shop-facade. "[We] [observe] the pawn shop with obvious distaste. The flashing neon sign in the window advertises 'Cash for gold!'".
+Pawn-Shop-facade is a privately-named unenterable room in Parking Lot South. It is proper-named. The printed name is "Dave's pawn shop". Understand "dave's", "dave", "pawn", "shop" as the pawn-shop-facade. "[We] [observe] the pawn shop with obvious distaste. The flashing neon sign in the window advertises 'Cash for gold!'".
 
 The flashing neon sign is part of the Pawn-Shop-facade. [Understand "pawn/shop/cash/gold" as flashing neon sign.] The description is "Its flash rate is just a bit over the threshold of irritating."
 	
-The pawn-shop-door is a closed scenery shop door. It is southwest of the parking lot south and northeast of the Dave's pawn shop. It is privately-named. The printed name is "pawn shop door". Understand "pawn/shop/door" as the pawn-shop-door. The description is "It's a typical glass door. The light within is too dim to see much." The frontside is the strip mall parking lot south.
+The pawn-shop-door is a closed scenery shop-door. It is southwest of the parking lot south and northeast of the Dave's pawn shop. It is privately-named. The printed name is "pawn shop door". Understand "pawn/shop/door" as the pawn-shop-door. The front description is "It's a typical glass door. The light within is too dim to see much." The frontside is the strip mall parking lot south. The back description is "It's a typical glass door."
 
 Instead of entering the pawn-shop-facade:
 	try going southwest;

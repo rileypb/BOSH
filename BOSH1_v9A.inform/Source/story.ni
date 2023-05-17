@@ -98,6 +98,10 @@ When play begins:
 		now player's full name is "Larch Faraji";
 		now player's surname is "Faraji";
 		now the player is Larch Faraji; 
+[		now player's forename is "Ezra";
+		now player's full name is "Ezra Gaunt";
+		now player's surname is "Gaunt";
+		now the player is Ezra Gaunt;]
 		init player;
 		init office;
 		move the player to the Strip Mall Parking Lot South;
@@ -296,10 +300,11 @@ the standard quip plausibility rule response (A) is "[italic type][quip-suggesti
 Book 5 - Automatic greeting
 
 After going to a room:
-	repeat with P running through the people in the location:
-		if P is not the player:
-			postpone saying hello to P;
-			continue the activity; 
+	if the current interlocutor is nothing:
+		repeat with P running through the people in the location:
+			if P is not the player:
+				postpone saying hello to P;
+				continue the activity; 
 	continue the activity;
 	
 The postponed action is an action that varies.
@@ -440,13 +445,13 @@ Rule for writing a paragraph about Margaret Chao when the location is the front 
 		say ", unpacking boxes and assembling an approximation of a respectable front office, all as if the Bureau isn't going to be shut down before the year is out";
 		say ". She sees [player's surname] and practically [squeal]. '[agent]! I'm sorry -- [player's forename]! How are you? I hope you don't mind -- I took the liberty of putting your desk together. I just love hex wrenches, don't you? Also, your new phone is here. I put it in your desk. Good timing! Now I just need you to give me your old phone so I can deactivate it.'[paragraph break]";
 		say "[Player] [hand] Margaret [our] old phone. [Margaret] [tap] a few keys on [their] computer and [say] 'There! All settled. Hey, what are you doing for lunch? Let me know when you get hungry!'";
-		now the current interlocutor is margaret;
+		[now the current interlocutor is margaret;]
 		now the green smartphone is nowhere;
 		now biff's mobile number reaches the blue flipphone;
 	otherwise:
 		say ".";
 		[make it easy to talk to Margaret.]
-		if the current interlocutor is not a person, now the current interlocutor is Margaret Chao;
+		[if the current interlocutor is not a person, now the current interlocutor is Margaret Chao;]
 		
 The how-are-you-reply of Margaret Chao is "I'm great! Thanks!".
 The how-are-you-reply of Moira Zin is "Very well, thanks.".
@@ -652,7 +657,10 @@ The front office is a room. The printed name is "the front office". It is east o
 The description of the front office is "It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.".
 
 The coffee table is a scenery supporter in the front office. "This doesn't look like government-issue furniture. More like thrift store. It's scuffed, but at least it's sturdy."
-The couch is a scenery supporter in the front office. It is enterable. "Apparently the bureau did make off with at least one piece of government furniture. A bland, institutional piece with fake leather seats, it's at least preferable to second-hand upholstery."
+The couch is an enterable scenery supporter in the front office. "Apparently the bureau did make off with at least one piece of government furniture. A bland, institutional piece with fake leather seats, it's at least preferable to second-hand upholstery."
+The seating area is scenery in the front office. "A coffee table and couch greet visitors to the office, as if any are expected."
+
+The coatrack is scenery in the front office. "It's an old clothing rack from the department store which formerly occupied this space." Understand "old/clothing/rack" as the coatrack.
 
 Margaret Chao is in The Front Office.  
 
@@ -663,7 +671,7 @@ The front desk is a scenery supporter in the front office. Understand "sales", "
 
 [A beat-up cardboard box is a thing. It is in the room of stuff. It is behind the front desk. The description is "Crushed and bent, it's holding together, but just barely[if biff's computer is in the beat-up cardboard box and biff's computer is not seen]. There seems to be something inside[end if]." It is closed and openable.]
 
-The shelves of office supplies are in the front office. They are plural-named. They are scenery. "Pens, paper, nothing [we're] really concerned with now."
+The shelves of office supplies are in the front office. They are plural-named. They are scenery. "Pens, paper, nothing [we're] really concerned with now." Understand "drawers" as the shelves of office supplies.
 
 The thumb drive is a thing in the room of stuff. The description of the thumb drive is "It's a red plastic thumb drive, with what look like symbols scratched on the surface, but they're like no symbols you've ever seen. The metal USB end is somewhat corroded."
 

@@ -25,238 +25,238 @@
     </dict>
     <key>3</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>194</integer>
+        <key>Line</key><integer>198</integer>
         <key>Title</key><string>Chapter 1 - Player's Name</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>4</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>225</integer>
+        <key>Line</key><integer>229</integer>
         <key>Title</key><string>Section 1 - Special text substitution code</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>5</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>239</integer>
+        <key>Line</key><integer>243</integer>
         <key>Title</key><string>Book 2 - Helping the Player</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>6</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>241</integer>
+        <key>Line</key><integer>245</integer>
         <key>Title</key><string>Chapter 1 - Accessibility</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>7</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>245</integer>
+        <key>Line</key><integer>249</integer>
         <key>Title</key><string>Chapter 2 - Tipping</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>8</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>273</integer>
+        <key>Line</key><integer>277</integer>
         <key>Title</key><string>Book 3 - Special Tweaks for Implicit Greeting</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>9</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>281</integer>
+        <key>Line</key><integer>285</integer>
         <key>Title</key><string>Book 4 - Special Tweaks</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>10</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>296</integer>
+        <key>Line</key><integer>300</integer>
         <key>Title</key><string>Book 5 - Automatic greeting</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>11</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>317</integer>
+        <key>Line</key><integer>322</integer>
         <key>Title</key><string>Book 6 - Messages</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>12</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>322</integer>
+        <key>Line</key><integer>327</integer>
         <key>Title</key><string>Book 7 - Actions</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>13</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>324</integer>
+        <key>Line</key><integer>329</integer>
         <key>Title</key><string>Chapter 1 - Knocking</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>14</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>338</integer>
+        <key>Line</key><integer>343</integer>
         <key>Title</key><string>Book 8 - Script</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>15</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>348</integer>
+        <key>Line</key><integer>353</integer>
         <key>Title</key><string>Book 9 - Concepts</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>16</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>350</integer>
+        <key>Line</key><integer>355</integer>
         <key>Title</key><string>Chapter 1 - Subjects and Facts</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>17</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>360</integer>
+        <key>Line</key><integer>365</integer>
         <key>Title</key><string>Book 10 - Kinds</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>18</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>363</integer>
+        <key>Line</key><integer>368</integer>
         <key>Title</key><string>Book 11 - The Players</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>19</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>456</integer>
+        <key>Line</key><integer>461</integer>
         <key>Title</key><string>Book 12 - Some Speech Phrases</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>20</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>484</integer>
+        <key>Line</key><integer>489</integer>
         <key>Title</key><string>Book 13 - Places</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>21</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>486</integer>
+        <key>Line</key><integer>491</integer>
         <key>Title</key><string>Chapter 1 - BOSH HQ and Swamp Park</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>22</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>491</integer>
+        <key>Line</key><integer>496</integer>
         <key>Title</key><string>Section 1 - Your Office</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>23</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>574</integer>
+        <key>Line</key><integer>579</integer>
         <key>Title</key><string>Section 2 - Back Lot</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>24</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>637</integer>
+        <key>Line</key><integer>642</integer>
         <key>Title</key><string>Section 3 - Hallway</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>25</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>648</integer>
+        <key>Line</key><integer>653</integer>
         <key>Title</key><string>Section 4 - Front Office</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>26</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>716</integer>
+        <key>Line</key><integer>724</integer>
         <key>Title</key><string>Section 5 - BOSH chief's office</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>27</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>758</integer>
+        <key>Line</key><integer>766</integer>
         <key>Title</key><string>Section 6 - Moira's office</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>28</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>815</integer>
+        <key>Line</key><integer>823</integer>
         <key>Title</key><string>Book 14 - The Phone Call</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>29</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>822</integer>
+        <key>Line</key><integer>830</integer>
         <key>Title</key><string>Book 15 - Moving Between Rooms</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>30</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>860</integer>
+        <key>Line</key><integer>868</integer>
         <key>Title</key><string>Chapter 1 - Leaving the Front Office</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>31</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>867</integer>
+        <key>Line</key><integer>875</integer>
         <key>Title</key><string>Book 16 - Sound</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>32</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>869</integer>
+        <key>Line</key><integer>877</integer>
         <key>Title</key><string>Book 17 - Verbs</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>33</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>873</integer>
+        <key>Line</key><integer>881</integer>
         <key>Title</key><string>Book 18 - Images</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>34</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1028</integer>
+        <key>Line</key><integer>1036</integer>
         <key>Title</key><string>Book 19 - Not For Release</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>35</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1052</integer>
+        <key>Line</key><integer>1060</integer>
         <key>Title</key><string>Volume 2 - The Story</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>36</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1055</integer>
+        <key>Line</key><integer>1063</integer>
         <key>Title</key><string>Book 1 - The Thumb Drive</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
@@ -2655,104 +2655,6 @@
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>379</key><dict>
-        <key>Filename</key><string>/Applications/Inform.app_old.app/Contents/Resources/Internal/Extensions/emily short/locksmith.i7x</string>
-        <key>Line</key><integer>1</integer>
-        <key>Title</key><string>Version 12 of Locksmith by Emily Short begins here</string>
-        <key>Level</key><integer>0</integer>
-        <key>Indentation</key><integer>0</integer>
-    </dict>
-    <key>380</key><dict>
-        <key>Filename</key><string>/Applications/Inform.app_old.app/Contents/Resources/Internal/Extensions/emily short/locksmith.i7x</string>
-        <key>Line</key><integer>9</integer>
-        <key>Title</key><string>Volume 1 - Automatic locking and unlocking with necessary actions</string>
-        <key>Level</key><integer>1</integer>
-        <key>Indentation</key><integer>1</integer>
-    </dict>
-    <key>381</key><dict>
-        <key>Filename</key><string>/Applications/Inform.app_old.app/Contents/Resources/Internal/Extensions/emily short/locksmith.i7x</string>
-        <key>Line</key><integer>61</integer>
-        <key>Title</key><string>Volume 2 - Default locking and unlocking</string>
-        <key>Level</key><integer>1</integer>
-        <key>Indentation</key><integer>1</integer>
-    </dict>
-    <key>382</key><dict>
-        <key>Filename</key><string>/Applications/Inform.app_old.app/Contents/Resources/Internal/Extensions/emily short/locksmith.i7x</string>
-        <key>Line</key><integer>63</integer>
-        <key>Title</key><string>Part 1 - The matching key rule</string>
-        <key>Level</key><integer>3</integer>
-        <key>Indentation</key><integer>2</integer>
-    </dict>
-    <key>383</key><dict>
-        <key>Filename</key><string>/Applications/Inform.app_old.app/Contents/Resources/Internal/Extensions/emily short/locksmith.i7x</string>
-        <key>Line</key><integer>89</integer>
-        <key>Title</key><string>Part 2 - Unlocking</string>
-        <key>Level</key><integer>3</integer>
-        <key>Indentation</key><integer>2</integer>
-    </dict>
-    <key>384</key><dict>
-        <key>Filename</key><string>/Applications/Inform.app_old.app/Contents/Resources/Internal/Extensions/emily short/locksmith.i7x</string>
-        <key>Line</key><integer>91</integer>
-        <key>Title</key><string>Section 1 - Regular unlocking</string>
-        <key>Level</key><integer>5</integer>
-        <key>Indentation</key><integer>3</integer>
-    </dict>
-    <key>385</key><dict>
-        <key>Filename</key><string>/Applications/Inform.app_old.app/Contents/Resources/Internal/Extensions/emily short/locksmith.i7x</string>
-        <key>Line</key><integer>115</integer>
-        <key>Title</key><string>Section 2 - Keylessly</string>
-        <key>Level</key><integer>5</integer>
-        <key>Indentation</key><integer>3</integer>
-    </dict>
-    <key>386</key><dict>
-        <key>Filename</key><string>/Applications/Inform.app_old.app/Contents/Resources/Internal/Extensions/emily short/locksmith.i7x</string>
-        <key>Line</key><integer>139</integer>
-        <key>Title</key><string>Part 3 - Locking</string>
-        <key>Level</key><integer>3</integer>
-        <key>Indentation</key><integer>2</integer>
-    </dict>
-    <key>387</key><dict>
-        <key>Filename</key><string>/Applications/Inform.app_old.app/Contents/Resources/Internal/Extensions/emily short/locksmith.i7x</string>
-        <key>Line</key><integer>141</integer>
-        <key>Title</key><string>Section 1 - Regular locking</string>
-        <key>Level</key><integer>5</integer>
-        <key>Indentation</key><integer>3</integer>
-    </dict>
-    <key>388</key><dict>
-        <key>Filename</key><string>/Applications/Inform.app_old.app/Contents/Resources/Internal/Extensions/emily short/locksmith.i7x</string>
-        <key>Line</key><integer>154</integer>
-        <key>Title</key><string>Section 2 - Keylessly</string>
-        <key>Level</key><integer>5</integer>
-        <key>Indentation</key><integer>3</integer>
-    </dict>
-    <key>389</key><dict>
-        <key>Filename</key><string>/Applications/Inform.app_old.app/Contents/Resources/Internal/Extensions/emily short/locksmith.i7x</string>
-        <key>Line</key><integer>178</integer>
-        <key>Title</key><string>Volume 3 - The Passkey kind, needed only if you want keys to name themselves</string>
-        <key>Level</key><integer>1</integer>
-        <key>Indentation</key><integer>1</integer>
-    </dict>
-    <key>390</key><dict>
-        <key>Filename</key><string>/Applications/Inform.app_old.app/Contents/Resources/Internal/Extensions/emily short/locksmith.i7x</string>
-        <key>Line</key><integer>211</integer>
-        <key>Title</key><string>Volume 4 - The Keychain kind, needed only if you want a keychain</string>
-        <key>Level</key><integer>1</integer>
-        <key>Indentation</key><integer>1</integer>
-    </dict>
-    <key>391</key><dict>
-        <key>Filename</key><string>/Applications/Inform.app_old.app/Contents/Resources/Internal/Extensions/emily short/locksmith.i7x</string>
-        <key>Line</key><integer>235</integer>
-        <key>Title</key><string>Volume 5 - Support Materials</string>
-        <key>Level</key><integer>1</integer>
-        <key>Indentation</key><integer>1</integer>
-    </dict>
-    <key>392</key><dict>
-        <key>Filename</key><string>/Applications/Inform.app_old.app/Contents/Resources/Internal/Extensions/emily short/locksmith.i7x</string>
-        <key>Line</key><integer>289</integer>
-        <key>Title</key><string>Volume 6 - Unlocking all - Not for release</string>
-        <key>Level</key><integer>1</integer>
-        <key>Indentation</key><integer>1</integer>
-    </dict>
-    <key>393</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/philip riley/pbr common.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>Version 2 of PBR Common by Philip Riley begins here</string>
