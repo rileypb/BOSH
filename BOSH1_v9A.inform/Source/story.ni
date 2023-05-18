@@ -7,7 +7,7 @@ The story genre is "Science Fiction".The release number is 1.
 The story creation year is 2023.
 
 Include Epistemology by Eric Eve.
-Include Conversation Framework by Eric Eve. 
+Include Conversation Framework by Eric Eve.  
 Include Conversation Responses by Eric Eve.  
 Include Conversational Defaults by Eric Eve.
 Include Basic Screen Effects by Emily Short. 
@@ -15,23 +15,25 @@ Include Punctuation Removal by Emily Short.
 Include Glulx Text Effects by Emily Short.
 Include Formatting Capture by Daniel Stelzer.
  
-Include Essentials by Philip Riley.
+Include Essentials by Philip Riley. 
 Include Facts by Philip Riley.  
-Include Phones by Philip Riley.
-Include Commerce by Philip Riley.
+Include Phones by Philip Riley. 
+Include Commerce by Philip Riley. 
 Include Furniture by Philip Riley. 	
 Include Third Person Narration by Philip Riley.
 Include Door Utils by Philip Riley.
 Include Real People by Philip Riley.
-Include Visible Rooms by Philip Riley. 
+Include Visible Rooms by Philip Riley.  
+ 
+Include Choices by Philip Riley.
+ 
+Include New Light by Philip Riley. 
 
-Include New Light by Philip Riley.
-
-Include Early Declarations by Philip Riley.
+Include Early Declarations by Philip Riley. 
  
 [Include Farseeing by Philip Riley.]
 Include Basics by Philip Riley.
-Include Memories by Philip Riley.
+Include Memories by Philip Riley. 
  
 Include Simple Conversation by Philip Riley.
 Include Hyperspace by Philip Riley.	
@@ -41,9 +43,9 @@ Include Swamp Park by Philip Riley.
 Include Conversations General by Philip Riley.
 Include Margaret by Philip Riley. 
 Include Enigma Lake by Philip Riley.
-
-Include Gender Options by Nathanael Nerode.  
  
+Include Gender Options by Nathanael Nerode.  
+  
 
 Use MAX_OBJ_PROP_COUNT of 128.
 
@@ -235,13 +237,18 @@ Include (-
 [ SubstituteForComparison to txt ;
     @push say__comp;
     say__comp = 1;
-    TEXT_TY_SubstitutedForm(to, txt);
+    TEXT_TY_SubstitutedForm(to, txt); 
     @pull say__comp;
     return to;
 ];
 -).
 To decide what text is the substituted form of (T - text) for comparison purposes:
     (- SubstituteForComparison({-new:text}, {-by-reference:T}) -).
+
+Section 2 - Technicalities
+	
+
+
 
 Book 2 - Helping the Player
 
@@ -534,7 +541,7 @@ After examining the desk:
 
 In Biff's desk's drawer is an ID. Biff's desk's drawer is closed. [Your desk's drawer is locked.]
 Biff's desk's drawer contains a money card called the Bureau credit card.  
-The Bureau credit card is disabled.
+The Bureau credit card is mc-disabled.
 
 The balance of the bureau credit card is $300. The player owns the Bureau credit card.
 [The help text of the bureau credit card is "The pre-paid credit card issued to [us] by the Bureau. Its balance is currently [balance of the bureau credit card]."].

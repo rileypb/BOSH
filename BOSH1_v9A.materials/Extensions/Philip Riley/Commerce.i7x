@@ -4,7 +4,7 @@ Understand the commands “buy” and “purchase” as something new.
 
 An amount of money is a kind of value. $1 specifies an amount of money.
 
-A money card is a kind of thing. A money card has an amount of money called the balance. A money card can be enabled or disabled. A money card is usually enabled.
+A money card is a kind of thing. A money card has an amount of money called the balance. A money card can be mc-enabled or mc-disabled. A money card is usually mc-enabled.
 
 A thing has an amount of money called the price.
 
@@ -44,7 +44,7 @@ Check buying something (called the product) with something (called damoney):
 	Let seller be entry 1 of P;
 	if seller is not willing to sell the product:
 		say "[The seller] doesn[']t want to sell [the product]." instead;
-	If damoney is disabled:
+	If damoney is mc-disabled:
 		say "[The seller] runs [the damoney], but it's declined. You might want to call the bank." instead;
 	If the balance of damoney is less than the price of the product:
 		say "You don't have enough money to buy [the product]. You need [the price of the product], but you only have [the balance of damoney]." instead;

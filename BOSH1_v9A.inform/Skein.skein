@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 
-<Skein rootNode="node-1002">
+<Skein rootNode="node-1114">
     <generator>Inform Mac Client (Inform version )</generator>
-    <item nodeId="node-1002">
+    <item nodeId="node-1114">
         <command xml:space="preserve">BOSH1_v9A</command>
         <result xml:space="preserve">
 
@@ -20,7 +20,7 @@ or (3) Larch Faraji (they/them), lead singer of the third wave neo-old-school pu
 
 The Bureau of Strange Happenings
 An Interactive Phenomenon by Phil Riley
-Release 1 / Serial number 230516 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
+Release 1 / Serial number 230517 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
 
 Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
 
@@ -28,57 +28,79 @@ Their Hyundai is parked nearby.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1026"></child>
-            <child nodeId="node-1003"></child>
+        <children><child nodeId="node-1139"></child>
+            <child nodeId="node-1136"></child>
+            <child nodeId="node-1115"></child>
+            <child nodeId="node-1296"></child>
         </children>
     </item>
-    <item nodeId="node-1003">
+    <item nodeId="node-1296">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Faraji stands around and waits.
+
+Faraji can go north, northwest, southwest, west or inside. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1297"></child>
+        </children>
+    </item>
+    <item nodeId="node-1297">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Faraji stands around and waits.
+
+Faraji can go north, northwest, southwest, west or inside. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1115">
         <command xml:space="preserve">x bosh</command>
         <result xml:space="preserve">Faraji gazes stoically at the sad little storefront that is the new BOSH office. The sign from the previous tenant is still up: "Angel's Department Store". Through the front window can be seen Margaret, in her usual manic work mode.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1004"></child>
+        <children><child nodeId="node-1116"></child>
         </children>
     </item>
-    <item nodeId="node-1004">
+    <item nodeId="node-1116">
         <command xml:space="preserve">x sign</command>
         <result xml:space="preserve">Which do you mean, the department store sign, the laundromat sign or the flashing neon sign?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1005"></child>
+        <children><child nodeId="node-1117"></child>
         </children>
     </item>
-    <item nodeId="node-1005">
+    <item nodeId="node-1117">
         <command xml:space="preserve">department</command>
         <result xml:space="preserve">It's adorned with a pair of angel's wings.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1006"></child>
+        <children><child nodeId="node-1118"></child>
         </children>
     </item>
-    <item nodeId="node-1006">
+    <item nodeId="node-1118">
         <command xml:space="preserve">x pawn shop</command>
         <result xml:space="preserve">Which do you mean, the pawn shop door or Dave's pawn shop?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1019"></child>
-            <child nodeId="node-1007"></child>
+        <children><child nodeId="node-1131"></child>
+            <child nodeId="node-1119"></child>
         </children>
     </item>
-    <item nodeId="node-1007">
+    <item nodeId="node-1119">
         <command xml:space="preserve">trace 5</command>
         <result xml:space="preserve">[Parser tracing set to level 5.]
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1008"></child>
+        <children><child nodeId="node-1120"></child>
         </children>
     </item>
-    <item nodeId="node-1008">
+    <item nodeId="node-1120">
         <command xml:space="preserve">x pawn shop</command>
         <result xml:space="preserve">[ "x" x / "pawn" pawn / "shop" shop ]
 [Parsing for the verb 'x' (1 lines)]
@@ -240,10 +262,10 @@ You can't use multiple objects with that verb.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1009"></child>
+        <children><child nodeId="node-1121"></child>
         </children>
     </item>
-    <item nodeId="node-1009">
+    <item nodeId="node-1121">
         <command xml:space="preserve">x door</command>
         <result xml:space="preserve">[ "x" x / "door" door ]
 [Parsing for the verb 'x' (1 lines)]
@@ -392,10 +414,10 @@ Which do you mean, the pawn shop door or the laundromat door?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1010"></child>
+        <children><child nodeId="node-1122"></child>
         </children>
     </item>
-    <item nodeId="node-1010">
+    <item nodeId="node-1122">
         <command xml:space="preserve"> x pawn</command>
         <result xml:space="preserve">  [token resulted in re-parse request]
 [ "x" x / "pawn" pawn ]
@@ -545,10 +567,10 @@ Which do you mean, the pawn shop door or Dave's pawn shop?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1011"></child>
+        <children><child nodeId="node-1123"></child>
         </children>
     </item>
-    <item nodeId="node-1011">
+    <item nodeId="node-1123">
         <command xml:space="preserve">x pawn shop</command>
         <result xml:space="preserve">  [token resulted in re-parse request]
 [ "x" x / "pawn" pawn / "shop" shop ]
@@ -711,10 +733,10 @@ You can't use multiple objects with that verb.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1012"></child>
+        <children><child nodeId="node-1124"></child>
         </children>
     </item>
-    <item nodeId="node-1012">
+    <item nodeId="node-1124">
         <command xml:space="preserve">showme dave's pawn shop</command>
         <result xml:space="preserve">[ "showme" showme / "dave's" dave's / "pawn" pawn / "shop" shop ]
 [Parsing for the verb 'showme' (2 lines)]
@@ -1766,10 +1788,10 @@ room condition: indoors
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1013"></child>
+        <children><child nodeId="node-1125"></child>
         </children>
     </item>
-    <item nodeId="node-1013">
+    <item nodeId="node-1125">
         <command xml:space="preserve">rules off</command>
         <result xml:space="preserve">[ "rules" rules / "off" off ]
 [Parsing for the verb 'rules' (4 lines)]
@@ -1792,10 +1814,10 @@ Rules tracing now switched off. Type "rules" to switch it on again.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1014"></child>
+        <children><child nodeId="node-1126"></child>
         </children>
     </item>
-    <item nodeId="node-1014">
+    <item nodeId="node-1126">
         <command xml:space="preserve">showme dave's pawn shop</command>
         <result xml:space="preserve">[ "showme" showme / "dave's" dave's / "pawn" pawn / "shop" shop ]
 [Parsing for the verb 'showme' (2 lines)]
@@ -2847,10 +2869,10 @@ room condition: indoors
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1015"></child>
+        <children><child nodeId="node-1127"></child>
         </children>
     </item>
-    <item nodeId="node-1015">
+    <item nodeId="node-1127">
         <command xml:space="preserve">                trace off</command>
         <result xml:space="preserve">[ "trace" trace / "off" off ]
 [Parsing for the verb 'trace' (4 lines)]
@@ -2874,10 +2896,10 @@ Trace off.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1016"></child>
+        <children><child nodeId="node-1128"></child>
         </children>
     </item>
-    <item nodeId="node-1016">
+    <item nodeId="node-1128">
         <command xml:space="preserve">showme dave's pawn shop</command>
         <result xml:space="preserve">Dave's pawn shop - unenterable room
     flashing neon sign (part of Dave's pawn shop)
@@ -2920,10 +2942,10 @@ room condition: indoors
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1017"></child>
+        <children><child nodeId="node-1129"></child>
         </children>
     </item>
-    <item nodeId="node-1017">
+    <item nodeId="node-1129">
         <command xml:space="preserve">showme pawn shop</command>
         <result xml:space="preserve">Dave's pawn shop - unenterable room
     flashing neon sign (part of Dave's pawn shop)
@@ -2995,10 +3017,10 @@ room condition: indoors
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1018"></child>
+        <children><child nodeId="node-1130"></child>
         </children>
     </item>
-    <item nodeId="node-1018">
+    <item nodeId="node-1130">
         <command xml:space="preserve">showme pawn shop door</command>
         <result xml:space="preserve">pawn shop door - shop door
 location: in the south end of the strip mall parking lot
@@ -3033,43 +3055,43 @@ close countdown: -1
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1019">
+    <item nodeId="node-1131">
         <command xml:space="preserve">neon</command>
         <result xml:space="preserve">I only understood you as far as wanting to examine the flashing neon sign.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1020"></child>
+        <children><child nodeId="node-1132"></child>
         </children>
     </item>
-    <item nodeId="node-1020">
+    <item nodeId="node-1132">
         <command xml:space="preserve">neon</command>
         <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1021"></child>
+        <children><child nodeId="node-1133"></child>
         </children>
     </item>
-    <item nodeId="node-1021">
+    <item nodeId="node-1133">
         <command xml:space="preserve">x neon</command>
         <result xml:space="preserve">Its flash rate is just a bit over the threshold of irritating.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1022"></child>
+        <children><child nodeId="node-1134"></child>
         </children>
     </item>
-    <item nodeId="node-1022">
+    <item nodeId="node-1134">
         <command xml:space="preserve">x laundromat door</command>
         <result xml:space="preserve">It's a typical glass door. Taped to it is a sign that says "Closed for renovations".
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1023"></child>
+        <children><child nodeId="node-1135"></child>
         </children>
     </item>
-    <item nodeId="node-1023">
+    <item nodeId="node-1135">
         <command xml:space="preserve">open laundromat door</command>
         <result xml:space="preserve">(first unlocking the laundromat door)
 Faraji lacks a key that fits the laundromat door.
@@ -3077,7 +3099,7 @@ Faraji lacks a key that fits the laundromat door.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1026">
+    <item nodeId="node-1136">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">Just like in the store this once was, the door chimes as Faraji walks in.
 
@@ -3089,9 +3111,1296 @@ Faraji hands Margaret their old phone. Margaret taps a few keys on her computer 
 
 "Oh, good", Faraji says. "Our phone downgrades have arrived from our bureaucratic betters."
 
-They say hello to Margaret.
+A phone is ringing not too far away.
+
+Faraji can go east, west or outside. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1179"></child>
+            <child nodeId="node-1154"></child>
+        </children>
+    </item>
+    <item nodeId="node-1154">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Faraji extricates themself from talking with Margaret.
+
+Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
+
+A phone is ringing to the south.
+
+Faraji can go north, south, east or west. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1155"></child>
+        </children>
+    </item>
+    <item nodeId="node-1155">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Agent Faraji is in their office. They pause and survey the scene. It's not much -- four white walls, grey industrial carpet. Margaret has helpfully assembled Faraji's desk and chair, though how sturdily is an open question. She also took the time to put up some of Agent Faraji's office decor -- their degree in Nonstandard Investigative Techniques, an original pencil drawing of the Pitfall snake by semi-acclaimed Washington DC artist Darius 5200, and a photo of their softball team. At the very least the wall coverings help compensate for the lack of windows. There's a disconnected landline on the desk. The office door is to the north, and there's a white metal door to the west.
+
+Faraji mutters, "Where's my computer?"
+
+A phone is ringing inside their desk.
+
+Faraji can go north or west. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1156"></child>
+        </children>
+    </item>
+    <item nodeId="node-1156">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
+
+A phone is ringing to the south.
+
+Faraji can go north, south, east or west. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1157"></child>
+            <child nodeId="node-1220"></child>
+        </children>
+    </item>
+    <item nodeId="node-1220">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Agent Faraji is in their office. It's basically four white walls and grey carpet. There's a cheap desk and chair, and a disconnected phone on the desk. In lieu of windows, there are a few things on the wall: their degree in Nonstandard Investigative Techniques, a pencil drawing of the Pitfall snake, and a photo of their softball team. The office door is to the north, and there's a white metal door to the west.
+
+A phone is ringing inside their desk.
+
+Faraji can go north or west. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1221"></child>
+        </children>
+    </item>
+    <item nodeId="node-1221">
+        <command xml:space="preserve">open desk</command>
+        <result xml:space="preserve">They try to open the desk to answer the phone, but it seems to be locked. They sigh. "Margaret must have the key."
+
+A phone is ringing inside their desk.
+
+Faraji can go north or west. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1222"></child>
+        </children>
+    </item>
+    <item nodeId="node-1222">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">They can't go that way.
+
+A phone is ringing inside their desk.
+
+Faraji can go north or west. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1223"></child>
+        </children>
+    </item>
+    <item nodeId="node-1223">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
+
+A phone is ringing to the south.
+
+Faraji can go north, south, east or west. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1224"></child>
+        </children>
+    </item>
+    <item nodeId="node-1224">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
+
+The Bureau's latest office manager, Margaret is bustling around with unrestrained enthusiasm.
 
 A phone is ringing not too far away.
+
+Faraji can go east, west or outside. They can ask about the whereabouts of the desk key or ask about the status of the computer.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1225"></child>
+        </children>
+    </item>
+    <item nodeId="node-1225">
+        <command xml:space="preserve">ask about status</command>
+        <result xml:space="preserve">"Margaret", Faraji says, "what's up with my computer?"
+
+"Oh, it got busted up during the move. I have it behind my desk -- you can see it if you want. We'll have to get you a new one."
+
+A phone is ringing not too far away.
+
+Faraji can go east, west or outside. They can ask about the whereabouts of the desk key.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1226"></child>
+        </children>
+    </item>
+    <item nodeId="node-1226">
+        <command xml:space="preserve">look behind desk</command>
+        <result xml:space="preserve">There are a number of shelves of office supplies behind the desk. There is also a heating vent on the floor here.
+
+Faraji finds their computer and pulls it out.
+
+A phone is ringing not too far away.
+
+Faraji can go east, west or outside. They can ask about the whereabouts of the desk key.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1227"></child>
+        </children>
+    </item>
+    <item nodeId="node-1227">
+        <command xml:space="preserve">x computer</command>
+        <result xml:space="preserve">Faraji's computer has been damaged beyond repair. But they do find a thumb drive and take it.
+
+A phone is ringing not too far away.
+
+They can remember finding the drive before.
+
+Faraji can go east, west or outside. They can ask about the whereabouts of the desk key.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1228"></child>
+        </children>
+    </item>
+    <item nodeId="node-1228">
+        <command xml:space="preserve">remember finding the drive</command>
+        <result xml:space="preserve">Faraji remembers finding the drive in an ancient Onandaga root cellar on a farm in upstate New York. They have never been able to read it.
+
+A phone is ringing not too far away.
+
+Faraji can go east, west or outside. They can ask about the whereabouts of the desk key.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1229"></child>
+        </children>
+    </item>
+    <item nodeId="node-1229">
+        <command xml:space="preserve">memories</command>
+        <result xml:space="preserve">Faraji can remember finding the drive before.
+
+A phone is ringing not too far away.
+
+Faraji can go east, west or outside. They can ask about the whereabouts of the desk key.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1230"></child>
+        </children>
+    </item>
+    <item nodeId="node-1230">
+        <command xml:space="preserve">out</command>
+        <result xml:space="preserve">Faraji steps out of the office into the parking lot.
+
+Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Their Hyundai is parked nearby.
+
+Faraji can go north, northwest, southwest, west or inside. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1231"></child>
+        </children>
+    </item>
+    <item nodeId="node-1231">
+        <command xml:space="preserve">in</command>
+        <result xml:space="preserve">Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
+
+The Bureau's latest office manager, Margaret is bustling around with unrestrained enthusiasm.
+
+Also here is Faraji's computer.
+
+A phone is ringing not too far away.
+
+Faraji can go east, west or outside. They can ask about the whereabouts of the desk key.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1232"></child>
+        </children>
+    </item>
+    <item nodeId="node-1232">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
+
+A phone is ringing to the south.
+
+Faraji can go north, south, east or west. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1233"></child>
+        </children>
+    </item>
+    <item nodeId="node-1233">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">(first opening Moira's door)
+It seems to be locked.
+
+A phone is ringing to the south.
+
+Faraji can go north, south, east or west. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1234"></child>
+        </children>
+    </item>
+    <item nodeId="node-1234">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">(first opening Klimp's door)
+It seems to be locked.
+
+A phone is ringing to the south.
+
+Faraji can go north, south, east or west. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1235"></child>
+        </children>
+    </item>
+    <item nodeId="node-1235">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Agent Faraji is in their office. It's basically four white walls and grey carpet. There's a cheap desk and chair, and a disconnected phone on the desk. In lieu of windows, there are a few things on the wall: their degree in Nonstandard Investigative Techniques, a pencil drawing of the Pitfall snake, and a photo of their softball team. The office door is to the north, and there's a white metal door to the west.
+
+A phone is ringing inside their desk.
+
+Faraji can go north or west. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1236"></child>
+        </children>
+    </item>
+    <item nodeId="node-1236">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">(first opening the white metal door)
+It seems to be locked.
+
+A phone is ringing inside their desk.
+
+Faraji can go north or west. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1237"></child>
+        </children>
+    </item>
+    <item nodeId="node-1237">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
+
+A phone is ringing to the south.
+
+Faraji can go north, south, east or west. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1238"></child>
+        </children>
+    </item>
+    <item nodeId="node-1238">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
+
+The Bureau's latest office manager, Margaret is bustling around with unrestrained enthusiasm.
+
+Also here is Faraji's computer.
+
+A phone is ringing not too far away.
+
+Faraji can go east, west or outside. They can ask about the whereabouts of the desk key or ask to unlock the backdoor.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1239"></child>
+        </children>
+    </item>
+    <item nodeId="node-1239">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Their Hyundai is parked nearby.
+
+Faraji can go north, northwest, southwest, west or inside. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1240"></child>
+        </children>
+    </item>
+    <item nodeId="node-1240">
+        <command xml:space="preserve">sw</command>
+        <result xml:space="preserve">(first opening the pawn shop door)
+"Cha-ching!" rings the electronic chime as Faraji steps into the store.
+
+Agent Faraji is in Dave's pawn shop. This is more the seedy, gloomy stereotype of a pawn shop than the glitzy sanitized version of TV reality shows. The blinds in the windows are closed to only allow the barest slant of sunlight in, leaving the sickly fluorescent lights to illuminate the room. There is the distinct smell of cigar smoke. The glass counter is filled with a large collection of possibly valuable items. Behind it is an impressive array of firearms.
+
+A man, presumably Dave, stands behind the main counter eyeing Faraji.
+
+The pawn shop door closes.
+
+Faraji can go northeast or outside. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1266"></child>
+        </children>
+    </item>
+    <item nodeId="node-1266">
+        <command xml:space="preserve">nw</command>
+        <result xml:space="preserve">Faraji can't go that way.
+
+Faraji can go northeast or outside. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1267"></child>
+        </children>
+    </item>
+    <item nodeId="node-1267">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Faraji can't go that way.
+
+Faraji can go northeast or outside. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1268"></child>
+        </children>
+    </item>
+    <item nodeId="node-1268">
+        <command xml:space="preserve">ne</command>
+        <result xml:space="preserve">(first opening the pawn shop door)
+Once again -- "Cha-ching!" -- as Faraji leaves the store.
+
+Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Their Hyundai is parked nearby.
+
+The pawn shop door closes.
+
+Faraji can go north, northwest, southwest, west or inside. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1269"></child>
+        </children>
+    </item>
+    <item nodeId="node-1269">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
+
+The Bureau's latest office manager, Margaret is bustling around with unrestrained enthusiasm.
+
+Also here is Faraji's computer.
+
+A phone is ringing not too far away.
+
+Faraji can go east, west or outside. They can ask about the whereabouts of the desk key or ask to unlock the backdoor.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1270"></child>
+        </children>
+    </item>
+    <item nodeId="node-1270">
+        <command xml:space="preserve">x vent</command>
+        <result xml:space="preserve">A typical air register with a grill which one would hope would stop things like, say, a hex wrench from falling through. It's set in the floor behind the front desk. The vent is held closed by four screws.
+
+In the heating vent is a hex wrench.
+
+A phone is ringing not too far away.
+
+Faraji can go east, west or outside. They can ask about the whereabouts of the desk key, ask for a screwdriver or ask to unlock the backdoor.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1271"></child>
+        </children>
+    </item>
+    <item nodeId="node-1271">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Their Hyundai is parked nearby.
+
+Faraji can go north, northwest, southwest, west or inside. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1272"></child>
+        </children>
+    </item>
+    <item nodeId="node-1272">
+        <command xml:space="preserve">sw</command>
+        <result xml:space="preserve">(first opening the pawn shop door)
+Agent Faraji is in Dave's pawn shop. This is more the seedy, gloomy stereotype of a pawn shop than the glitzy sanitized version of TV reality shows. The blinds in the windows are closed to only allow the barest slant of sunlight in, leaving the sickly fluorescent lights to illuminate the room. There is the distinct smell of cigar smoke. The glass counter is filled with a large collection of possibly valuable items. Behind it is an impressive array of firearms.
+
+A man, presumably Dave, stands behind the main counter eyeing Faraji.
+
+The pawn shop door closes.
+
+Faraji can go northeast or outside. They can ask for a screwdriver.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1273"></child>
+        </children>
+    </item>
+    <item nodeId="node-1273">
+        <command xml:space="preserve">ask for screwdriver</command>
+        <result xml:space="preserve">Faraji leans on the counter. "Hey, do you have a screwdriver? Can't find mine and I really need one."
+
+The man shakes his head and says, "Sorry, miss. I had one, but the guy who runs the laundromat borrowed it and didn't bring it back."
+
+Faraji can go northeast or outside. They can ask about the laundromat owner.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1274"></child>
+        </children>
+    </item>
+    <item nodeId="node-1274">
+        <command xml:space="preserve">ask about owner</command>
+        <result xml:space="preserve">Faraji nods. "Okay, then, how do I get in touch with this laundromat guy?"
+
+"Well, that's a tricky one. Laundromat's been closed for almost two weeks now, since the owner just split for some reason he didn't bother to share. Not likely to get ahold of him. If you're not averse to a little trespassing, though, see if you come across a watch. Another thing he borrowed."
+
+Faraji can go northeast or outside. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1275"></child>
+        </children>
+    </item>
+    <item nodeId="node-1275">
+        <command xml:space="preserve">out</command>
+        <result xml:space="preserve">Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Their Hyundai is parked nearby.
+
+Faraji can go north, northwest, southwest, west or inside. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1276"></child>
+        </children>
+    </item>
+    <item nodeId="node-1276">
+        <command xml:space="preserve">in</command>
+        <result xml:space="preserve">Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
+
+The Bureau's latest office manager, Margaret is bustling around with unrestrained enthusiasm.
+
+Also here is Faraji's computer.
+
+A phone is ringing not too far away.
+
+Faraji can go east, west or outside. They can ask about the whereabouts of the desk key, ask for a screwdriver or ask to unlock the backdoor.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1277"></child>
+        </children>
+    </item>
+    <item nodeId="node-1277">
+        <command xml:space="preserve">x computer</command>
+        <result xml:space="preserve">Faraji's computer has been damaged beyond repair.
+
+A phone is ringing not too far away.
+
+Faraji can go east, west or outside. They can ask about the whereabouts of the desk key, ask for a screwdriver or ask to unlock the backdoor.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1278"></child>
+        </children>
+    </item>
+    <item nodeId="node-1278">
+        <command xml:space="preserve">ask about key</command>
+        <result xml:space="preserve">Faraji says, "Hey Margaret, do you know anything about my desk key?"
+
+"Sure I do -- I put it in your desk." She furrows her brow. "What's the matter?"
+
+A phone is ringing not too far away.
+
+Faraji can go east, west or outside. They can ask for a screwdriver or ask to unlock the backdoor.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1279"></child>
+        </children>
+    </item>
+    <item nodeId="node-1279">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
+
+A phone is ringing to the south.
+
+Faraji can go north, south, east or west. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1280"></child>
+        </children>
+    </item>
+    <item nodeId="node-1280">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Agent Faraji is in their office. It's basically four white walls and grey carpet. There's a cheap desk and chair, and a disconnected phone on the desk. In lieu of windows, there are a few things on the wall: their degree in Nonstandard Investigative Techniques, a pencil drawing of the Pitfall snake, and a photo of their softball team. The office door is to the north, and there's a white metal door to the west.
+
+A phone is ringing inside their desk.
+
+Faraji can go north or west. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1281"></child>
+        </children>
+    </item>
+    <item nodeId="node-1281">
+        <command xml:space="preserve">x desk</command>
+        <result xml:space="preserve">The desk is a cheap DIY piece held together with hex screws. It has a single drawer which is closed.
+
+A phone is ringing inside their desk.
+
+Faraji can go north or west. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1282"></child>
+        </children>
+    </item>
+    <item nodeId="node-1282">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
+
+A phone is ringing to the south.
+
+Faraji can go north, south, east or west. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1283"></child>
+        </children>
+    </item>
+    <item nodeId="node-1283">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
+
+The Bureau's latest office manager, Margaret is bustling around with unrestrained enthusiasm.
+
+Also here is Faraji's computer.
+
+A phone is ringing not too far away.
+
+Faraji can go east, west or outside. They can ask for the hex wrench, ask for a screwdriver or ask to unlock the backdoor.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1284"></child>
+        </children>
+    </item>
+    <item nodeId="node-1284">
+        <command xml:space="preserve">ask about key</command>
+        <result xml:space="preserve">Faraji says, "Do you happen to have the hex wrench from putting together my desk?"
+
+"Well, I did, but I dropped it down a heating vent behind my desk."
+
+A phone is ringing not too far away.
+
+Faraji can go east, west or outside. They can ask for a screwdriver or ask to unlock the backdoor.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1285"></child>
+        </children>
+    </item>
+    <item nodeId="node-1285">
+        <command xml:space="preserve">x veny</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1286"></child>
+        </children>
+    </item>
+    <item nodeId="node-1286">
+        <command xml:space="preserve">x vent</command>
+        <result xml:space="preserve">A typical air register with a grill which one would hope would stop things like, say, a hex wrench from falling through. It's set in the floor behind the front desk. The vent is held closed by four screws.
+
+In the heating vent is a hex wrench.
+
+A phone is ringing not too far away.
+
+Faraji can go east, west or outside. They can ask for a screwdriver or ask to unlock the backdoor.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1287"></child>
+        </children>
+    </item>
+    <item nodeId="node-1287">
+        <command xml:space="preserve">take hex</command>
+        <result xml:space="preserve">Faraji's fingers won't fit through the openings in the vent. They"ll have to open it first.
+
+A phone is ringing not too far away.
+
+Faraji can go east, west or outside. They can ask for a screwdriver or ask to unlock the backdoor.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1288"></child>
+        </children>
+    </item>
+    <item nodeId="node-1288">
+        <command xml:space="preserve">open vent</command>
+        <result xml:space="preserve">The vent is held closed by four screws.
+
+A phone is ringing not too far away.
+
+Faraji can go east, west or outside. They can ask for a screwdriver or ask to unlock the backdoor.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1289"></child>
+        </children>
+    </item>
+    <item nodeId="node-1289">
+        <command xml:space="preserve">take screws</command>
+        <result xml:space="preserve">Those seem to be a part of the heating vent.
+
+A phone is ringing not too far away.
+
+Faraji can go east, west or outside. They can ask for a screwdriver or ask to unlock the backdoor.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1290"></child>
+        </children>
+    </item>
+    <item nodeId="node-1290">
+        <command xml:space="preserve">ask to unlock</command>
+        <result xml:space="preserve">Faraji asks, "Could you unlock the back door, Margaret?"
+
+"Sorry, too busy right now. What do you want back there anyway? There's only a dumpster." She pauses for a moment and mutters to herself. "Which reminds me, I need to get these boxes broken down."
+
+A phone is ringing not too far away.
+
+Faraji can go east, west or outside. They can ask for a screwdriver.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1291"></child>
+        </children>
+    </item>
+    <item nodeId="node-1291">
+        <command xml:space="preserve">x boxes</command>
+        <result xml:space="preserve">There is a stack of boxes in the corner.
+
+A phone is ringing not too far away.
+
+Faraji can go east, west or outside. They can ask for a screwdriver.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1292"></child>
+        </children>
+    </item>
+    <item nodeId="node-1292">
+        <command xml:space="preserve">take boxes</command>
+        <result xml:space="preserve">Faraji picks up a couple of boxes and flattens them.
+
+Margaret says, "Hey, what are you doing with those boxes, Agent Faraji? You don't have to worry about that -- I'll get them." She takes the flattened boxes from Faraji and hustles off.
+
+A phone is ringing not too far away.
+
+Margaret goes west.
+
+Faraji can go east, west or outside. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1293"></child>
+        </children>
+    </item>
+    <item nodeId="node-1293">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
+
+Also here is Margaret.
+
+A phone is ringing to the south.
+
+Margaret goes south.
+
+Faraji can go north, south, east or west. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1294"></child>
+        </children>
+    </item>
+    <item nodeId="node-1294">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Agent Faraji is in their office. It's basically four white walls and grey carpet. There's a cheap desk and chair, and a disconnected phone on the desk. In lieu of windows, there are a few things on the wall: their degree in Nonstandard Investigative Techniques, a pencil drawing of the Pitfall snake, and a photo of their softball team. The office door is to the north, and there's a white metal door to the west.
+
+Also here is Margaret.
+
+A phone is ringing inside Faraji's desk.
+
+Margaret unlocks the white metal door.
+
+Faraji can go north or west. They can ask for a screwdriver.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1295"></child>
+        </children>
+    </item>
+    <item nodeId="node-1295">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">(first opening the white metal door)
+Agent Faraji is in the back lot. This is a small area of asphalt between the building and a chain link fence looking in on an industrial property. A door to east leads into the BOSH offices, and one to the north enters the laundromat. There is a blue dumpster here.
+
+A phone is ringing to the east.
+
+Margaret arrives from the east.
+
+Faraji can go north, east or back. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1157">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
+
+The Bureau's latest office manager, Margaret is bustling around with unrestrained enthusiasm.
+
+A phone is ringing not too far away.
+
+Faraji can go east, west or outside. They can ask about the status of the computer.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1164"></child>
+            <child nodeId="node-1194"></child>
+        </children>
+    </item>
+    <item nodeId="node-1194">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
+
+A phone is ringing to the south.
+
+They can go north, south, east or west. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1195"></child>
+        </children>
+    </item>
+    <item nodeId="node-1195">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Agent Faraji is in their office. It's basically four white walls and grey carpet. There's a cheap desk and chair, and a disconnected phone on the desk. In lieu of windows, there are a few things on the wall: their degree in Nonstandard Investigative Techniques, a pencil drawing of the Pitfall snake, and a photo of their softball team. The office door is to the north, and there's a white metal door to the west.
+
+A phone is ringing inside their desk.
+
+They can go north or west. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1196"></child>
+        </children>
+    </item>
+    <item nodeId="node-1196">
+        <command xml:space="preserve">open desk</command>
+        <result xml:space="preserve">They try to open the desk to answer the phone, but it seems to be locked. They sigh. "Margaret must have the key."
+
+A phone is ringing inside their desk.
+
+They can go north or west. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1197"></child>
+        </children>
+    </item>
+    <item nodeId="node-1197">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
+
+A phone is ringing to the south.
+
+They can go north, south, east or west. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1198"></child>
+        </children>
+    </item>
+    <item nodeId="node-1198">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
+
+The Bureau's latest office manager, Margaret is bustling around with unrestrained enthusiasm.
+
+A phone is ringing not too far away.
+
+Faraji can go east, west or outside. They can ask about the whereabouts of the desk key or ask about the status of the computer.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1199"></child>
+        </children>
+    </item>
+    <item nodeId="node-1199">
+        <command xml:space="preserve">ask about the status of the computer</command>
+        <result xml:space="preserve">"Margaret", Faraji says, "what's up with my computer?"
+
+"Oh, it got busted up during the move. I have it behind my desk -- you can see it if you want. We'll have to get you a new one."
+
+A phone is ringing not too far away.
+
+They can go east, west or outside. They can ask about the whereabouts of the desk key.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1211"></child>
+        </children>
+    </item>
+    <item nodeId="node-1211">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">Faraji is carrying:
+  the Bureau credit card
+
+A phone is ringing not too far away.
+
+They can go east, west or outside. They can ask about the whereabouts of the desk key.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1212"></child>
+        </children>
+    </item>
+    <item nodeId="node-1212">
+        <command xml:space="preserve">drop card</command>
+        <result xml:space="preserve">Dropped.
+
+A phone is ringing not too far away.
+
+Faraji can go east, west or outside. They can ask about the whereabouts of the desk key.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1213"></child>
+        </children>
+    </item>
+    <item nodeId="node-1213">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
+
+The Bureau's latest office manager, Margaret is bustling around with unrestrained enthusiasm.
+
+Also here is the Bureau credit card.
+
+A phone is ringing not too far away.
+
+Faraji can go east, west or outside. They can ask about the whereabouts of the desk key.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1214"></child>
+        </children>
+    </item>
+    <item nodeId="node-1214">
+        <command xml:space="preserve">take card</command>
+        <result xml:space="preserve">Taken.
+
+A phone is ringing not too far away.
+
+Faraji can go east, west or outside. They can ask about the whereabouts of the desk key.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1215"></child>
+        </children>
+    </item>
+    <item nodeId="node-1215">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
+
+The Bureau's latest office manager, Margaret is bustling around with unrestrained enthusiasm.
+
+A phone is ringing not too far away.
+
+Faraji can go east, west or outside. They can ask about the whereabouts of the desk key.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1164">
+        <command xml:space="preserve">rules</command>
+        <result xml:space="preserve">Rules tracing now switched on. Type "rules off" to switch it off again, or "rules all" to include even rules which do not apply.
+
+[Rule "clear LPR rule" applies.]
+[Rule "reset skip sounds rule" applies.]
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1165"></child>
+        </children>
+    </item>
+    <item nodeId="node-1165">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">[Rule "redirect to GEP line input rule" applies.]
+[Rule "ordinary checking for content rule" applies.]
+[Rule "After reading a command" applies.]
+[Rule "declare everything initially unmentioned rule" applies.]
+[Rule "announce items from multiple object lists rule" applies.]
+[Rule "set pronouns from items from multiple object lists rule" applies.]
+[Rule "before stage rule" applies.]
+[Rule "instead stage rule" applies.]
+[Rule "investigate player's awareness before action rule" applies.]
+[Rule "player aware of his own actions rule" applies.]
+[Rule "check stage rule" applies.]
+[Rule "carry out stage rule" applies.]
+[Rule "after stage rule" applies.]
+[Rule "investigate player's awareness after action rule" applies.]
+[Rule "report stage rule" applies.]
+[Rule "standard report waiting rule" applies.]
+Faraji stands around and waits.
+[Rule "last specific action-processing rule" applies.]
+
+[Rule "A first turn sequence rule" applies.]
+[Rule "postponement rule" applies.]
+[Rule "every turn stage rule" applies.]
+[Rule "reset protocol rule" applies.]
+[Rule "Every turn" applies.]
+[Rule "Rule for printing insistent sounds" applies.]
+[Rule "phone noisiness rule" applies.]
+[Rule "phone noisiness rule" applies.]
+[Rule "Rule for determining the subjective volume for something ( called T )" applies.]
+[Rule "Audibility of a thing ( called T ) when location is indoors" applies.]
+[Rule "Rule for deciding the concealed possessions of margaret" applies.]
+[Rule "default sound description rule" applies.]
+[Rule "Audibility of a thing ( called T ) when location is indoors" applies.]
+A phone is [Rule "Rule for printing the sound action for a phone" applies.]
+ringing not too far away.
+[Rule "phone noisiness rule" applies.]
+[Rule "phone noisiness rule" applies.]
+
+[Rule "Every turn" applies.]
+[Rule "run behavior rule" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Rule for acting as someone ( called P )" applies.]
+[Rule "Every turn" applies.]
+[Rule "autolock countdown rule" applies.]
+[Rule "autoclose countdown rule" applies.]
+[Rule "Every turn" applies.]
+[Rule "Every turn" applies.]
+[Rule "standard placement rule" applies.]
+[Rule "centered scaled drawing rule" applies.]
+[Rule "bosh picture selection rule" applies.]
+[Rule "queue quips rule" applies.]
+[Rule "For queueing quips following a quip ( called Q )" applies.]
+[Rule "ruling out quips rule" applies.]
+[Rule "For ruling out quips following a quip ( called Q )" applies.]
+[Rule "A last turn sequence rule" applies.]
+[Rule "options paragraph stage rule" applies.]
+[Rule "For printing the options paragraph" applies.]
+[Rule "For listing the available choices" applies.]
+They can go [Rule "Rule for list arranging" applies.]
+east[Rule "standard delimiting rule" applies.]
+, west[Rule "standard delimiting rule" applies.]
+ or outside[Rule "standard delimiting rule" applies.]
+. 
+
+[Rule "notify score changes rule" applies.]
+[Rule "clear LPR rule" applies.]
+[Rule "reset skip sounds rule" applies.]
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1179">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Faraji can't go that way.
+
+A phone is ringing not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1180"></child>
+        </children>
+    </item>
+    <item nodeId="node-1180">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Faraji extricates themself from talking with Margaret.
+
+Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
+
+A phone is ringing to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1181"></child>
+        </children>
+    </item>
+    <item nodeId="node-1181">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Agent Faraji is in their office. They pause and survey the scene. It's not much -- four white walls, grey industrial carpet. Margaret has helpfully assembled Faraji's desk and chair, though how sturdily is an open question. She also took the time to put up some of Agent Faraji's office decor -- their degree in Nonstandard Investigative Techniques, an original pencil drawing of the Pitfall snake by semi-acclaimed Washington DC artist Darius 5200, and a photo of their softball team. At the very least the wall coverings help compensate for the lack of windows. There's a disconnected landline on the desk. The office door is to the north, and there's a white metal door to the west.
+
+Faraji mutters, "Where's my computer?"
+
+A phone is ringing inside their desk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1182"></child>
+        </children>
+    </item>
+    <item nodeId="node-1182">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
+
+A phone is ringing to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1183"></child>
+        </children>
+    </item>
+    <item nodeId="node-1183">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
+
+The Bureau's latest office manager, Margaret is bustling around with unrestrained enthusiasm.
+
+A phone is ringing not too far away.
+
+Faraji can ask about the status of the computer.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1139">
+        <command xml:space="preserve">in</command>
+        <result xml:space="preserve">Just like in the store this once was, the door chimes as Faraji walks in.
+
+Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
+
+The Bureau's latest office manager, Margaret is bustling around with unrestrained enthusiasm, unpacking boxes and assembling an approximation of a respectable front office, all as if the Bureau isn't going to be shut down before the year is out. She sees Faraji and practically squeals. "Agent Faraji! I'm sorry -- Larch! How are you? I hope you don't mind -- I took the liberty of putting your desk together. I just love hex wrenches, don't you? Also, your new phone is here. I put it in your desk. Good timing! Now I just need you to give me your old phone so I can deactivate it."
+
+Faraji hands Margaret their old phone. Margaret taps a few keys on her computer and says "There! All settled."
+
+"Oh, good", Faraji says. "Our phone downgrades have arrived from our bureaucratic betters."
+
+A phone is ringing not too far away.
+
+They can go east, west or outside. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1140"></child>
+        </children>
+    </item>
+    <item nodeId="node-1140">
+        <command xml:space="preserve">out</command>
+        <result xml:space="preserve">Faraji steps out of the office into the parking lot.
+
+Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Their Hyundai is parked nearby.
+
+They can go north, northwest, southwest, west or inside. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1141"></child>
+        </children>
+    </item>
+    <item nodeId="node-1141">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
+
+The Bureau's latest office manager, Margaret is bustling around with unrestrained enthusiasm.
+
+A phone is ringing not too far away.
+
+Faraji can go east, west or outside. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1142"></child>
+        </children>
+    </item>
+    <item nodeId="node-1142">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Their Hyundai is parked nearby.
+
+They can go north, northwest, southwest, west or inside. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1143"></child>
+        </children>
+    </item>
+    <item nodeId="node-1143">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
+
+The Bureau's latest office manager, Margaret is bustling around with unrestrained enthusiasm.
+
+A phone is ringing not too far away.
+
+Faraji can go east, west or outside. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1144"></child>
+        </children>
+    </item>
+    <item nodeId="node-1144">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Their Hyundai is parked nearby.
+
+They can go north, northwest, southwest, west or inside. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1145"></child>
+        </children>
+    </item>
+    <item nodeId="node-1145">
+        <command xml:space="preserve">exits off</command>
+        <result xml:space="preserve">Exit listing is now off.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1146"></child>
+        </children>
+    </item>
+    <item nodeId="node-1146">
+        <command xml:space="preserve">exits onn</command>
+        <result xml:space="preserve">I only understood you as far as wanting to exits.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1147"></child>
+        </children>
+    </item>
+    <item nodeId="node-1147">
+        <command xml:space="preserve">exits on</command>
+        <result xml:space="preserve">Exit listing is now on.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1148"></child>
+        </children>
+    </item>
+    <item nodeId="node-1148">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
+
+The Bureau's latest office manager, Margaret is bustling around with unrestrained enthusiasm.
+
+A phone is ringing not too far away.
+
+Faraji can go east, west or outside. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1149"></child>
+        </children>
+    </item>
+    <item nodeId="node-1149">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Faraji extricates themself from talking with Margaret.
+
+Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
+
+A phone is ringing to the south.
+
+They can go north, south, east or west. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1150"></child>
+        </children>
+    </item>
+    <item nodeId="node-1150">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Agent Faraji is in their office. They pause and survey the scene. It's not much -- four white walls, grey industrial carpet. Margaret has helpfully assembled Faraji's desk and chair, though how sturdily is an open question. She also took the time to put up some of Agent Faraji's office decor -- their degree in Nonstandard Investigative Techniques, an original pencil drawing of the Pitfall snake by semi-acclaimed Washington DC artist Darius 5200, and a photo of their softball team. At the very least the wall coverings help compensate for the lack of windows. There's a disconnected landline on the desk. The office door is to the north, and there's a white metal door to the west.
+
+Faraji mutters, "Where's my computer?"
+
+A phone is ringing inside their desk.
+
+They can go north or west. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1151"></child>
+        </children>
+    </item>
+    <item nodeId="node-1151">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
+
+A phone is ringing to the south.
+
+They can go north, south, east or west. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1152"></child>
+        </children>
+    </item>
+    <item nodeId="node-1152">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
+
+The Bureau's latest office manager, Margaret is bustling around with unrestrained enthusiasm.
+
+A phone is ringing not too far away.
+
+Faraji can ask about the status of the computer.
+
+They can go east, west or outside. 
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
