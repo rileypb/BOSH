@@ -2,12 +2,13 @@
 
 The story title is "The Bureau of Strange Happenings".
 The story author is "Phil Riley".
-®The story headline is "An Interactive Phenomenon".
-The story genre is "Science Fiction".The release number is 1.
+The story headline is "An Interactive Phenomenon".
+The story genre is "Science Fiction".
+The release number is 1.
 The story creation year is 2023.
 
 Include Epistemology by Eric Eve.
-Include Conversation Framework by Eric Eve.  
+Include Conversation Framework by Eric Eve. 
 Include Conversation Responses by Eric Eve.  
 Include Conversational Defaults by Eric Eve.
 Include Basic Screen Effects by Emily Short. 
@@ -24,12 +25,13 @@ Include Third Person Narration by Philip Riley.
 Include Door Utils by Philip Riley.
 Include Real People by Philip Riley.
 Include Visible Rooms by Philip Riley.  
+Include Polish by Philip Riley.
  
 Include Choices by Philip Riley.
  
-Include New Light by Philip Riley. 
+Include New Light by Philip Riley.
 
-Include Early Declarations by Philip Riley. 
+Include Early Declarations by Philip Riley.
  
 [Include Farseeing by Philip Riley.]
 Include Basics by Philip Riley.
@@ -61,6 +63,15 @@ special-style-2    	left-justified    	true    	0    	0    	"#888888"
 
 To lb:
 	say line break;
+	
+
+To turn on rules:
+	(- RulesOnSub(); -);
+
+[After starting the virtual machine:
+	turn on rules;] 
+
+
 
 Volume 1 - The Game
 

@@ -4075,7 +4075,7 @@ Report an actor tasting (this is the report tasting rule):
 	otherwise:
 		say "[The actor] [taste] [the noun]." (B).]
 
-[Cutting is an action applying to one thing.
+Cutting is an action applying to one thing.
 The Cutting action translates into I6 as "Cut".
 
 The specification of the cutting action is
@@ -4089,7 +4089,7 @@ with some further check rules.)"
 Check an actor cutting (this is the block cutting rule):
 	if the actor is the player:
 		say "Cutting [regarding the noun][them] up [would achieve] little." (A);
-	stop the action.]
+	stop the action.
 
 [Jumping is an action applying to nothing.
 The Jumping action translates into I6 as "Jump".
@@ -4172,7 +4172,7 @@ Check an actor swinging (this is the block swinging rule):
 		say "[There's] nothing sensible to swing here." (A);
 	stop the action.]
 
-[Rubbing is an action applying to one thing.
+Rubbing is an action applying to one thing.
 The Rubbing action translates into I6 as "Rub".
 
 The specification of the rubbing action is
@@ -4190,7 +4190,7 @@ Report an actor rubbing (this is the report rubbing rule):
 		if the action is not silent:
 			say "[We] [rub] [the noun]." (A);
 	otherwise:
-		say "[The actor] [rub] [the noun]." (B).]
+		say "[The actor] [rub] [the noun]." (B).
 
 [Setting it to is an action applying to one thing and one topic.
 The Setting it to action translates into I6 as "SetTo".
@@ -4623,7 +4623,7 @@ Understand the commands "embrace" and "hug" as "kiss".
 Understand "touch [something]" as touching.
 Understand the command "feel" as "touch".
 
-[Understand "rub [something]" as rubbing.]
+Understand "rub [something]" as rubbing.
 [Understand the commands "shine", "polish", "sweep", "clean", "dust", "wipe" and "scrub" as "rub".]
 
 [Understand "tie [something] to [something]" as tying it to.]
@@ -4635,7 +4635,7 @@ Understand the command "feel" as "touch".
 [Understand "drink [something]" as drinking.]
 [Understand the commands "swallow" and "sip" as "drink".]
 
-[Understand "cut [something]" as cutting.]
+Understand "cut [something]" as cutting.
 [Understand the commands "slice", "prune" and "chop" as "cut".]
 
 [Understand "jump" as jumping.]

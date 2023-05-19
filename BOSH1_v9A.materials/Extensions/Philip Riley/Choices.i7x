@@ -60,21 +60,30 @@ To decide what list of objects is the total choices:
 	let dirs be the exit list;
 	add dirs to Q;]
 	decide on Q;
+	
+Rule for printing the name of a direction (called dir) while listing the available choices:	
+	let farplace be the room dir from the location;  
+	now what to print is dir;
+	if farplace is visited:
+		print base name;
+		say " ([to-preposition] [destname farplace])";
+	otherwise:
+		print base name;
 
 For listing the available choices:	
 	let something said be false;
-	let dirs be the exit list;
+[	let dirs be the exit list;
 	prepare the list of dirs;
 	if dirs is non-empty:
 		say "[italic type][We] [can] go [the prepared list delimited in the disjunctive style].[roman type] ";
-		now something said is true;
+		now something said is true;]
 	let Q be the total choices;
 	prepare the list of Q;
 	if Q is non-empty:
 		say "[italic type][We] [can] [the prepared list delimited in the disjunctive style].[roman type]";
 		now something said is true;
-[	if something said is true:
-		say paragraph break;]
+	if something said is true:	
+		now options printed is true;
 	
 For printing the options paragraph:
 	carry out the listing the available choices activity;

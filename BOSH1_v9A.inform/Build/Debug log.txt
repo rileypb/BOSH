@@ -14,14 +14,14 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 8675 words long.
+I've now read your source text, which is 8686 words long.
 
 
 -----------------------------------------------------
 Phase II ... Semantic analysis Ia
 -----------------------------------------------------
 
-I've also read Standard Rules by Graham Nelson, which is 40707 words long.
+I've also read Standard Rules by Graham Nelson, which is 40949 words long.
 I've also read English Language by Graham Nelson, which is 2297 words long.
 I've also read Epistemology by Eric Eve, which is 1500 words long.
 I've also read Conversation Framework by Eric Eve, which is 5190 words long.
@@ -40,28 +40,34 @@ I've also read Third Person Narration by Philip Riley, which is 669 words long.
 I've also read Door Utils by Philip Riley, which is 41 words long.
 I've also read Real People by Philip Riley, which is 397 words long.
 I've also read Visible Rooms by Philip Riley, which is 63 words long.
-I've also read Choices by Philip Riley, which is 387 words long.
+I've also read Polish by Philip Riley, which is 65 words long.
+I've also read Choices by Philip Riley, which is 408 words long.
 I've also read New Light by Philip Riley, which is 113 words long.
 I've also read Early Declarations by Philip Riley, which is 16 words long.
 I've also read Basics by Philip Riley, which is 195 words long.
 I've also read Memories by Philip Riley, which is 220 words long.
-I've also read Simple Conversation by Philip Riley, which is 1786 words long.
+I've also read Simple Conversation by Philip Riley, which is 1791 words long.
 I've also read Hyperspace by Philip Riley, which is 2946 words long.
 I've also read BOSH Facts by Philip Riley, which is 94 words long.
 I've also read Image Strip by Philip Riley, which is 2080 words long.
-I've also read Swamp Park by Philip Riley, which is 3192 words long.
+I've also read Swamp Park by Philip Riley, which is 3256 words long.
 I've also read Conversations General by Philip Riley, which is 129 words long.
 I've also read Margaret by Philip Riley, which is 939 words long.
 I've also read Enigma Lake by Philip Riley, which is 403 words long.
 I've also read Gender Options by Nathanael Nerode, which is 7687 words long.
 I've also read Hearing by Philip Riley, which is 1111 words long.
+I've also read PBR Common by Philip Riley, which is 106 words long.
+I've also read Walls by Philip Riley, which is 898 words long.
+I've also read Floors by Philip Riley, which is 900 words long.
+I've also read Ceilings by Philip Riley, which is 1069 words long.
+I've also read Can't Go That Way by Philip Riley, which is 812 words long.
+I've also read Can't Take That by Philip Riley, which is 514 words long.
 I've also read Complex Listing by Emily Short, which is 3410 words long.
 I've also read Exit Lister by Eric Eve, which is 3510 words long.
-I've also read Options Paragraph by Philip Riley, which is 87 words long.
+I've also read Options Paragraph by Philip Riley, which is 144 words long.
 I've also read Glulx Entry Points by Emily Short, which is 2682 words long.
 I've also read Door Varieties by Philip Riley, which is 296 words long.
 I've also read Two-Sided Doors by Philip Riley, which is 2267 words long.
-I've also read PBR Common by Philip Riley, which is 106 words long.
 
 
 -----------------------------------------------------
@@ -116,7 +122,7 @@ Phase X ... Tables and grammar
 Phase XI ... Phrases and rules
 -----------------------------------------------------
 
-Regional: CONSTANT_VNT'hyperspace'-region(I229_hyperspace)(I138'hyperspace')
+Regional: CONSTANT_VNT'hyperspace'-region(I232_hyperspace)(I141'hyperspace')
  == region
 
 
@@ -150,13 +156,13 @@ Phase XII ... Code generation
 
                                 0 = action. 1 = object
                                 0 = action. 1 = object
-        Regional: CONSTANT_VNT'hyperspace'-region(I229_hyperspace)(I138'hyperspace')
+        Regional: CONSTANT_VNT'hyperspace'-region(I232_hyperspace)(I141'hyperspace')
          == region
-        Regional: CONSTANT_VNT'hyperspace'-region(I229_hyperspace)(I138'hyperspace')
+        Regional: CONSTANT_VNT'hyperspace'-region(I232_hyperspace)(I141'hyperspace')
          == region
-        Regional: CONSTANT_VNT'hyperspace'-region(I229_hyperspace)(I138'hyperspace')
+        Regional: CONSTANT_VNT'hyperspace'-region(I232_hyperspace)(I141'hyperspace')
          == region
-        Regional: CONSTANT_VNT'hyperspace'-region(I229_hyperspace)(I138'hyperspace')
+        Regional: CONSTANT_VNT'hyperspace'-region(I232_hyperspace)(I141'hyperspace')
          == region
 0 = object. 1 = number
 0 = object. 1 = number
@@ -165,9 +171,9 @@ Phase XII ... Code generation
 0 = object. 1 = number
                                         Fail: thing (~) number = nothing
                                         Fail: thing (~) number = nothing
-        Regional: CONSTANT_VNT'hyperspace'-region(I229_hyperspace)(I138'hyperspace')
+        Regional: CONSTANT_VNT'hyperspace'-region(I232_hyperspace)(I141'hyperspace')
          == region
-        Regional: CONSTANT_VNT'hyperspace'-region(I229_hyperspace)(I138'hyperspace')
+        Regional: CONSTANT_VNT'hyperspace'-region(I232_hyperspace)(I141'hyperspace')
          == region
 
 
@@ -215,25 +221,25 @@ Phase XII ... Code generation
                                                             Fail: list of numbers (~) number = nothing
                                             Fail: nothing (~) real number = nothing
                                             Fail: list of numbers (~) real number = nothing
-        Regional: CONSTANT_VNT'bosh hq'-region(I427_bosh_hq)(I322'bosh hq')
+        Regional: CONSTANT_VNT'bosh hq'-region(I428_bosh_hq)(I323'bosh hq')
          == region
-        Regional: CONSTANT_VNT'bosh hq'-region(I427_bosh_hq)(I322'bosh hq')
+        Regional: CONSTANT_VNT'bosh hq'-region(I428_bosh_hq)(I323'bosh hq')
          == region
-        Regional: CONSTANT_VNT'laundromat-region'-region(I324_laundromat_region)(I223'laundromat-region')
+        Regional: CONSTANT_VNT'laundromat-region'-region(I327_laundromat_region)(I226'laundromat-region')
          == region
-        Regional: CONSTANT_VNT'laundromat-region'-region(I324_laundromat_region)(I223'laundromat-region')
+        Regional: CONSTANT_VNT'laundromat-region'-region(I327_laundromat_region)(I226'laundromat-region')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I368_elr)(I267'elr')
+        Regional: CONSTANT_VNT'elr'-region(I369_elr)(I268'elr')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I368_elr)(I267'elr')
+        Regional: CONSTANT_VNT'elr'-region(I369_elr)(I268'elr')
          == region
-        Regional: CONSTANT_VNT'field office area'-region(I244_field_office_area)(I153'field office area')
+        Regional: CONSTANT_VNT'field office area'-region(I247_field_office_area)(I156'field office area')
          == region
-        Regional: CONSTANT_VNT'field office area'-region(I244_field_office_area)(I153'field office area')
+        Regional: CONSTANT_VNT'field office area'-region(I247_field_office_area)(I156'field office area')
          == region
-        Regional: CONSTANT_VNT'hyperspace'-region(I229_hyperspace)(I138'hyperspace')
+        Regional: CONSTANT_VNT'hyperspace'-region(I232_hyperspace)(I141'hyperspace')
          == region
-        Regional: CONSTANT_VNT'hyperspace'-region(I229_hyperspace)(I138'hyperspace')
+        Regional: CONSTANT_VNT'hyperspace'-region(I232_hyperspace)(I141'hyperspace')
          == region
                                         Fail: scene (~) number = nothing
                                         Fail: scene (~) number = nothing
@@ -276,8 +282,8 @@ Providing for a total heap of 8192, given requirement of 8192
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 197 files written as streams.
-CPU time: 410 centiseconds
+Total of 205 files written as streams.
+CPU time: 449 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

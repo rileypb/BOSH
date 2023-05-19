@@ -135,6 +135,8 @@ Book 2 - Dave's pawn shop
 	
 Dave's pawn shop is a room. It is proper-named. "This is more the seedy, gloomy stereotype of a pawn shop than the glitzy sanitized version of TV reality shows. The blinds in the windows are closed to only allow the barest slant of sunlight in, leaving the sickly fluorescent lights to illuminate the room. There is the distinct smell of cigar smoke. The glass counter is filled with a large collection of possibly valuable items. Behind it is an impressive array of firearms."
 
+The destination name is "Dave's pawn shop".
+
 There is a fluorescent light source in Dave's pawn shop called pawn-light.
 
 Dave's pawn shop is in Swamp Park.
@@ -285,6 +287,8 @@ Book 4 - Convenience Store
 
 The Li'l Nectarine Convenience Store is east of the Parking Lot North. It is in Swamp Park. It is indoors. 
 "Li'l Nectarine offers great service and low prices, or so they say. This one's cluttered aisles and sparse shelves could make one wonder if that's true. Behind the counter is the typical array of cigarettes and lottery tickets. Under the counter is a glass case containing various useful items."
+
+The destination name is "Li'l Nectarine Convenience Store".
  
 The store clerk is a man in the Convenience Store. "The clerk, a scruffy man in his mid-twenties, is leaning against the counter, looking bored." The description is "The clerk looks as if he'd rather be anywhere else. He's wearing jeans and a white t-shirt with something inscrutable scrawled on it. His hair sticks up every which way."
 The shop counter is a supporter in the nectarine store. It is scenery. "The counter is arrayed with displays of CBD oil, antacids, and the like."
@@ -346,6 +350,12 @@ An availability rule for for-a-screwdriver-clerk:
 	
 strip mall parking lot north is outside from the the Li'l Nectarine Convenience Store.
 
-Faraji carries a ten-dollar bill.
+
+Table of Floors (continued)
+locale (a room)	has floor (a truth state)	floor description (a text)	touch description (a text)
+strip mall parking lot south	--	"Black asphalt."
+strip mall parking lot north	--	"Black asphalt."
+li'l nectarine convenience store	--	"Grungy black and white tile."
+Dave's pawn shop	--	"Dingy stained industrial carpet."
 
 Swamp Park ends here.
