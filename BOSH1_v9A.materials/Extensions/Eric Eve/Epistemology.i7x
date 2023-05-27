@@ -15,9 +15,9 @@ Carry out looking (this is the mark items as seen when looking rule):
 	unless in darkness:
 		now every backdrop in the location is seen;
 		repeat with item running through things that are enclosed by the location:  
-			if the item is not enclosed by an opaque closed container:	
+			if the item is not enclosed by an opaque closed container and the item is unconcealed:	
 				now the item is familiar;
-				now the item is seen.
+				now the item is seen;
 
 
 Carry out opening a container (this is the mark items as seen on opening a container rule):

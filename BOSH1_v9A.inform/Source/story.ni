@@ -46,7 +46,7 @@ Include Conversations General by Philip Riley.
 Include Margaret by Philip Riley. 
 Include Enigma Lake by Philip Riley.
  
-Include Gender Options by Nathanael Nerode.  
+Include Gender Options by Nathanael Nerode.   
   
 
 Use MAX_OBJ_PROP_COUNT of 128.
@@ -71,16 +71,16 @@ To turn on rules:
 [After starting the virtual machine:
 	turn on rules;] 
 
-
-
-Volume 1 - The Game
+ 
+ 
+Volume 1 - The Game 
 
 Book 1 - Beginning
  
 The Room of Stuff is a room. 
   
-Yourself is in the room of stuff.
-
+Yourself is in the room of stuff.  
+  
 Ezra Gaunt is a man in the Room of Stuff. The description is "Agent Gaunt's last name describes him well. He is a perpetually worried-looking individual, a look emphasized by his thinness and his thick-rimmed glasses.".
 Petula Goldberg is a woman in the Room of Stuff. The description is "Agent Goldberg has lots of dogs, a fact which can be inferred by the inevitable fur somewhere on her person. The last front office worker at the Bureau left due to an extreme allergic reaction to Goldberg.".
 Larch Faraji is a nonbinary in the Room of Stuff. The third singular pronoun is singular-they-pronoun. The description is "Agent Faraji ". 
@@ -91,7 +91,7 @@ Play mode is a kind of value. The play modes are _startup, _normal, and picking 
 The current play mode is a play mode that varies. The current play mode is initially _startup. 
 
 [If we put all the subjects in the world, we can refer to them.]
-When play begins:  
+When play begins:   
 	now the story viewpoint is third person singular;
 	Repeat with S running through subjects:  
 		move S to the Room of Subjects;
@@ -300,8 +300,8 @@ Book 3 - Special Tweaks for Implicit Greeting
 Before reading a command (this is the reset skip sounds rule):
 	now skip sounds this turn is false;
 
-Before saying hello to someone when the greeting type is implicit (this is the skip sounds on implicit hello rule):
-	now skip sounds this turn is true;
+[Before saying hello to someone when the greeting type is implicit (this is the skip sounds on implicit hello rule):
+	now skip sounds this turn is true;]
 	
 Book 4 - Special Tweaks
 
@@ -692,15 +692,13 @@ Understand "newspaper", "paper", "news" as the Washington Herald.
 
 The front desk is a scenery supporter in the front office. Understand "sales", "counter" as the front desk. The description is "The former sales counter now functions as a desk for the office manager (currently [Margaret]). Behind it are a number of shelves holding office supplies."
 
-[A beat-up cardboard box is a thing. It is in the room of stuff. It is behind the front desk. The description is "Crushed and bent, it's holding together, but just barely[if biff's computer is in the beat-up cardboard box and biff's computer is not seen]. There seems to be something inside[end if]." It is closed and openable.]
-
 The shelves of office supplies are in the front office. They are plural-named. They are scenery. "Pens, paper, nothing [we're] really concerned with now." Understand "drawers" as the shelves of office supplies.
 
 The thumb drive is a thing in the room of stuff. The description of the thumb drive is "It's a red plastic thumb drive, with what look like symbols scratched on the surface, but they're like no symbols you've ever seen. The metal USB end is somewhat corroded."
 
 Some strange symbols are part of the thumb drive. The description is "They look like some kind of language, but none you recognize."
 
-finding the drive before is a memory in the room of stuff. The description is "[We] [remember] finding the drive in an ancient Onandaga root cellar on a farm in upstate New York. [We] [have] never been able to read it.".
+finding the drive is a memory in the room of stuff. The description is "[We] [remember] finding the drive in an ancient Onandaga root cellar on a farm in upstate New York. [We] [have] never been able to read it.".
 
 some cardboard boxes are scenery in the front office. "There is a stack of boxes in the corner.".
 some biff-flattened-boxes are a thing in the room of stuff. They are privately-named. The printed name is "flattened boxes". Understand "flattened/boxes" as biff-flattened-boxes. The description is "Some cardboard boxes that have been broken down flat for recycling.".
@@ -721,11 +719,15 @@ Instead of examining Biff's computer when the thumb drive is not seen:
 	say "[description of biff's computer] But [we] [do] find a thumb drive and [take] it.";
 	now the player carries the thumb drive;
 	now the thumb drive is seen;
-	remember finding the drive before for the player;	
+	remember finding the drive for the player;	
 
 The behind description of the front desk is "There are a number of shelves of office supplies behind the desk. There is also a heating vent on the floor here.";
 
-The heating vent is a scenery container in the front office. It is openable, closed, lockable, transparent and locked. "A typical air register with a grill which one would hope would stop things like, say, a hex wrench from falling through. It's set in the floor behind the front desk. The vent is held closed by four screws." Understand "heat/air/conditioning/register" as the heating vent.
+The heating vent is a scenery container. It is openable, closed, lockable, transparent and locked. "A typical air register with a grill which one would hope would stop things like, say, a hex wrench from falling through. It's set in the floor behind the front desk. The vent is held closed by four screws." Understand "heat/air/conditioning/register" as the heating vent. It is undescribed. 
+
+After looking behind the front desk:
+	move the heating vent to the front office;
+	continue the action;
 
 The hex wrench is in the heating vent. Understand "key/allen" as the hex wrench. The description is "The ubiquitous flat pack furniture tool."
 
@@ -1050,34 +1052,28 @@ A window resizing rule:
 To resize windows:
 	call resize function;	
 	follow the current graphics drawing rule;
-	if the current interlocutor is something:
+	if the current interlocutor is something: 
 		draw speech bubble;
 	
 To call resize function:
 	(- ResizeGraphicsWindow(); -); 
 	
-Book 19 - Not For Release
+Book 19 - Not For Release 
  
-[Include BOSH Tests by Philip Riley.]
+Include BOSH Tests by Philip Riley.
 
 DEBUG is true.
 
 The access through barriers rule response (A) is "you have run afoul of the access through barriers rule!";
 
-test screwdriver with "w/x vent/ask for screwdriver/e/n/e/buy screwdriver/ask for screwdriver/w/s/sw/hello/ask for screwdriver/ask about laundromat owner/out/nw".
-  
-test laundry with "test screwdriver/w/w/w".
-
-test closet with "gonear closet/purloin glasses/wear them/knock on door". 
-
-test lotsouth with "x bosh/x sign/department/x pawn shop/x neon/x margaret/x laundromat/x sign/laundromat/x swamp/x wetland/x interstate/x lot/x wash/x car/x hyundai/enter wash/e/x laundromat door/x pawn shop door/open laundromat door/open pawn shop door"
-
-test lotnorth with "gonear parking lot north"
+test office1 with "w/x vent/x screws/x computer/x thumb drive/look behind desk/x vent/ask about computer/status of the computer".
+test office2 with "w/w/n/w/s/n/e/ask about computer/look behind desk/x computer/x thumb drive".
+test office3 with "w/w/x wrench/s/open desk/n/e/ask margaret for key/w/s/x desk/n/e/ask about allen/look behind desk/x vent/get wrench/ask about screwdriver".
 
 	
 lensing is an action applying to nothing. Understand "lens" as lensing.
 
-Carry out lensing:
+Carry out lensing: 
 	now the player wears the astral lenses;
 
 Volume 2 - The Story

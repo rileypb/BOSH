@@ -13,6 +13,10 @@ Rule for printing the name of Margaret Chao: say "Margaret".
 
 Margaret Chao is familiar.
 
+[Rule for deciding the concealed possessions of Margaret Chao:
+	If the particular possession is the cardboard boxes, no; 
+	no;]
+
 [The help text of Margaret is "[Margaret] is the latest office manager.".]
 
 Book 2 - Margaret's Dialogue
@@ -87,6 +91,12 @@ to unlock the backdoor is a questioning quip.
 An availability rule for to unlock the backdoor:
 	If the player knows back-door-is-locked:
 		always available;
+		
+about potatoes is a questioning quip.
+	The comment is "potatos?".
+	The reply is "No, potatoes.".
+	It quip-supplies margaret.
+	It is ubiquitous.
 		
 Book 3 - The Boxes
 
