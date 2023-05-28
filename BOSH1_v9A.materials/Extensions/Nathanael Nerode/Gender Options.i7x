@@ -648,6 +648,15 @@ Section 2 - Viewpoint pronouns (in place of Section 2 - Saying pronouns in Engli
 
 
 Last person referenced is an object that varies. last person referenced is initially nothing.
+saved LPR is an object that varies.
+
+To say save LPR:
+	if not expanding text for comparison purposes:
+		now saved LPR is last person referenced;
+		
+To say restore LPR:
+	if not expanding text for comparison purposes:
+		now last person referenced is saved LPR;
 
 Before reading a command (this is the clear LPR rule):
 	now last person referenced is nothing;

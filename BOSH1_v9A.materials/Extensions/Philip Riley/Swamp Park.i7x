@@ -32,7 +32,7 @@ Car 1 is a thing in Strip Mall Parking Lot South. It is privately-named. The pri
 Instead of entering car 1:
 	say "[Our] job is here for now.";
 
-Car 2 is a thing. It is privately-named. The printed name is "Klimp's Porsche". Understand "car/Klimp's/Porsche/automobile/auto" as car 2. The initial appearance of car 2 is "Klimp's Porsche takes up two spots." It is fixed in place. The description is "Klimp drives an impeccably-maintained 2017 Porsche 911 Turbo Cabriolet."
+Car 2 is a thing. It is privately-named. The printed name is "[Chief Klimp]'s Porsche". Understand "car/Klimp's/Porsche/automobile/auto" as car 2. The initial appearance of car 2 is "Klimp's Porsche takes up two spots." It is fixed in place. The description is "Klimp drives an impeccably-maintained 2017 Porsche 911 Turbo Cabriolet."
 
 	
 To make is a verb.
@@ -190,7 +190,7 @@ After discussing about the laundromat owner:
 	move Chief Klimp to Chief's office;
 	now klimp's door is unlocked;
 	now klimp's door is open;
-	move car 2 to Strip Mall Parking Lot North;
+	move car 2 to Strip Mall Parking Lot South;
 	continue the action;
 	
 [An availability rule for about the laundromat owner:
@@ -209,22 +209,37 @@ Chapter 2 - The Laundromat Proper
 
 laundromat-region is a region. It is in Swamp Park.
 
-The laundromat-store is a room. "This is A-plus laundromat.".
+The laundromat-store is a room.
 It is privately-named. The printed name is "laundromat". Understand "A-plus/plus/laundromat" as the laundromat-store. It is in laundromat-region.
 
+"Dingy machines line the walls. A doorway leads west."
+
 The handtruck is in the laundromat-store. It is pushable between rooms.
+Understand "hand/truck" as the handtruck.
 
 Instead of taking the handtruck:
 	say "The handtruck is a bit unwieldy to carry. Better push it instead.";
 
+Instead of pushing the handtruck to down when the location is the laundromat back room:
+	say "The stairs are much too steep to maneuver the handtruck down them.";
 
+Instead of pushing the handtruck to up when the location is the laundromat basement:
+	say "The stairs are much too steep to maneuver the handtruck up them.";
 
 The laundromat back room is west of the laundromat-store. It is in laundromat-region.
 It is forth of astral-tunnel-2.
 
+"A desk sits in the corner covered with paperwork. A doorway leads east to the laundromat proper, while a steep set of stairs leads down."
+
 The laundromat basement is below the laundromat back room. It is in laundromat-region.
 
+"A few boxes of supplies sit here and there in the otherwise empty space. Stairs lead up, while a doorway leads south."
+
 The back basement is south of the laundromat basement. It is in laundromat-region.
+
+"The basement ends here. There is a switch on the wall, currently [if the light switch is switched on]on[otherwise]off[end if]. A doorway leads north.
+
+[if the broken washing machine is nowhere]A strange glow emanates from behind some stacks of large crates[otherwise]A old broken-down washing machine peeks out from between two stacks of crates[end if]."
 
 laundromat back room is dark.
 laundromat basement is dark.
@@ -234,18 +249,18 @@ There is a fluorescent light source in laundromat back room called lbr-light.
 There is a fluorescent light source in laundromat basement called lb-light.
 There is a fluorescent light source in back basement called bb-light.
 
-The broken washing machine is an enterable, closed, openable container.
+The broken washing machine is an enterable, closed, openable container. It is scenery. "It's a front-loading model. The inside of the drum is obscured by a shimmering curtain of light."
 
 moving it with is an action applying to two things. Understand "move [something] with [something]" as moving it with.
 
-Some filing cabinets are scenery in the back basement.
+Some stacks of crates are scenery in the back basement.
 
 Check moving something with:
 	say "That isn't very helpful.";
 	
-Instead of moving the filing cabinets with the handtruck:
+Instead of moving the stacks of crates with the handtruck:
 	if the broken washing machine is nowhere:
-		say "You move the filing cabinets out of the way and uncover an old front-loading washing machine. There is a strange glow inside the drum.";
+		say "You move the crates out of the way and uncover an old front-loading washing machine. There is a strange glow inside the drum.";
 		now the broken washing machine is in the back basement;
 	otherwise:
 		say "There's no point in moving the cabinets around any further.";
@@ -273,10 +288,10 @@ After switching on the light switch:
 To remove is a verb.
 
 Every turn:
-	if the location is fluorescent-lit and the player is wearing the astral lenses and not in darkness:
+	if the location is fluorescent-lit and the player is wearing the pair of astral lenses and not in darkness:
 		say "Wearing the astral lenses in fluorescent light is blinding. [We] quickly [remove] the glasses.";
 		now the hyperlight is unlit;
-		now the player carries the astral lenses;
+		now the player carries the pair of astral lenses;
 		
 	
 The astral-tunnel-3 is forth of back basement and backsouth of the laundromat-store. It is privately-named. The printed name is "astral tunnel". It is in hyperspace. "It is featureless white, or what passes for white here. It bends 'back' to 'forthnorth.'";
@@ -341,7 +356,7 @@ for-a-screwdriver-clerk is a repeatable questioning quip.
 	It is privately-named. The printed name is "for a screwdriver". [The true-name is "for-a-screwdriver-clerk".] Understand "for/a/screwdriver" as for-a-screwdriver-clerk.
 	It mentions the screwdriver.
 	The comment is "[We] [ask], 'Would you happen to have a screwdriver I could borrow?'".
-	The reply is "[one of]The clerk looks at you skeptically. 'Sorry, no. Try the pawn shop guy.'[pawn-shop-screwdriver][or]He looks annoyed. 'And have you run off with it? No way. Like I said, try the pawn shop!'[stopping]".
+	The reply is "'Got one to buy, not one to borrow.'".
 	It quip-supplies the clerk.
 	
 An availability rule for for-a-screwdriver-clerk:	

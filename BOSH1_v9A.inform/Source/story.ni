@@ -48,6 +48,7 @@ Include Enigma Lake by Philip Riley.
  
 Include Gender Options by Nathanael Nerode.   
   
+Include Make Test by Philip Riley.
 
 Use MAX_OBJ_PROP_COUNT of 128.
 
@@ -207,7 +208,7 @@ To set possessives:
 	now the possessive of the green smartphone is P;
 	now the possessive of biff's computer is P;
 	now the possessive of car 1 is P;
-	
+	 
 After reading a command:
     	remove stray punctuation;
 
@@ -216,7 +217,6 @@ Chapter 1 - Player's Name
 To continue:
 	say "[bracket]continue[close bracket][paragraph break]";
 	wait for any key;
-
 
 The player’s forename is a text that varies. The player’s full name is a text that varies. The player's surname is a text that varies.
 
@@ -339,6 +339,9 @@ This is the postponement rule:
 		now the postponed action is waiting;
 	
 The postponement rule is listed before the every turn stage rule in the turn sequence rules.
+
+After saying hello to someone (called P):
+	set pronouns from P;
  
 Book 6 - Messages
 
@@ -438,18 +441,18 @@ After examining the juvenile sasquatch skull:
 
 to borrow the lenses is a questioning quip. 
 	Understand "lens/glass/glasses" as to borrow the lenses.
-	It mentions the astral lenses.
+	It mentions the pair of astral lenses.
 	The comment is "[We] [ask], 'Would it be okay if I borrowed the astral lenses for a while?'".
 	The reply is "'Sure! Why don't you scout the locality for astral phenomena?'".
 	It quip-supplies Chief Klimp.
 	
-After examining the astral lenses:  
+After examining the pair of astral lenses:  
 	queue Chief Klimp with to borrow the lenses;
 	
 After discussing to borrow the lenses:
-	now the player owns the astral lenses;
-	silently try taking the astral lenses;
-	if the player carries the astral lenses:
+	now the player owns the pair of astral lenses;
+	silently try taking the pair of astral lenses;
+	if the player carries the pair of astral lenses:
 		say "[We] [take] the astral lenses.";
 	continue the activity;
 	
@@ -518,7 +521,7 @@ BOSH HQ is a region.
 
 Section 1 - Your Office
 
-Biff's office is a room. It is in BOSH HQ. The printed name is "[our] office".
+Biff's office is a room. It is in BOSH HQ. The printed name is "[save LPR][our][restore LPR] office".
 
 "[if biff's office is not visited][We] [pause] and [survey] the scene. It's not much -- four white walls, grey industrial carpet. [Margaret] [have] helpfully assembled [our] desk and chair, though how sturdily is an open question. [Regarding Margaret][They] also took the time to put up some of Agent [Player]'s office decor -- [our] degree in Nonstandard Investigative Techniques, [EG]a trivia competition award, and a poster for [our] favorite movie: the b-movie time-travel classic The Room of Lost Time[PCG]a photo of [our] dog Pluto, and a print of [italic type]Green Pheasant[roman type] by Utagawa Hiroshige[LF]an original pencil drawing of the Pitfall snake by semi-acclaimed Washington DC artist Darius 5200, and a photo of [our] softball team[end say]. At the very least the wall coverings help compensate for the lack of windows. There's a disconnected landline on the desk. The office door is to the north, and there's a white metal door to the west.[maybe insert computer muttering][otherwise]It's basically four white walls and grey carpet. There's a cheap desk and chair, and a disconnected phone on the desk. In lieu of windows, there are a few things on the wall: [our] degree in Nonstandard Investigative Techniques, [EG]a trivia competition award, and a poster for [our] favorite movie[PCG]a photo of [our] dog Pluto, and a Japanese print[LF]a pencil drawing of the Pitfall snake, and a photo of [our] softball team[end say]. The office door is to the north, and there's a white metal door to the west.[end if]"
 
@@ -785,8 +788,8 @@ The prints are scenery in the BOSH Chief's office. The description is "There are
  
 The oddities are on the chief's shelves. They are scenery. The description is "This and that piece of junk that Klimp thinks is funny or interesting.". Understand "memorabilia", "junk", "stuff" as the oddities.
 
-Some astral lenses are on the chief's shelves. They are plural-named. Chief Klimp owns the astral lenses. The description of the astral lenses is "To all appearances an ordinary pair of glasses, the astral lenses allegedly reveal the existence of extra-dimensional pathways." The astral lenses are wearable.
-Understand "glasses/lens/glass" as astral lenses.
+A pair of astral lenses is on the chief's shelves. It is ambiguously plural. Chief Klimp owns the pair of astral lenses. The description of the pair of astral lenses is "To all appearances an ordinary pair of glasses, the astral lenses allegedly reveal the existence of extra-dimensional pathways." The pair of astral lenses is wearable. 
+Understand "glasses/lens/glass" as the pair of astral lenses.
 
 Section 6 - Moira's office
 				 
@@ -896,6 +899,8 @@ After going from the Front Office to the BOSH office hallway for the first time:
 	If the current interlocutor was Margaret: 
 		say "[We] [extricate] [ourselves] from talking with Margaret.";
 	continue the action;
+	
+Chapter 2 - Klimp Arrives
    
 Book 16 - Sound
 
@@ -1005,7 +1010,7 @@ The first glulx picture selection rule (this is the bosh picture selection rule)
 			repeat with T running through audible sounds:
 				if the portrait of T is not Figure Null:					
 					add the portrait of T to characters;
-			if could see hypertunnels and the player wears the astral lenses:
+			if could see hypertunnels and the player wears the pair of astral lenses:
 				add Figure White Tunnel to characters;					
 	if the number of entries of characters > 0:
 		now the internally selected picture 1 is entry 1 of characters; 
@@ -1051,7 +1056,7 @@ A window resizing rule:
 	
 To resize windows:
 	call resize function;	
-	follow the current graphics drawing rule;
+	follow the current graphics drawing rule; 
 	if the current interlocutor is something: 
 		draw speech bubble;
 	
@@ -1069,14 +1074,106 @@ The access through barriers rule response (A) is "you have run afoul of the acce
 test office1 with "w/x vent/x screws/x computer/x thumb drive/look behind desk/x vent/ask about computer/status of the computer".
 test office2 with "w/w/n/w/s/n/e/ask about computer/look behind desk/x computer/x thumb drive".
 test office3 with "w/w/x wrench/s/open desk/n/e/ask margaret for key/w/s/x desk/n/e/ask about allen/look behind desk/x vent/get wrench/ask about screwdriver".
+test no-screwdriver with "n/enter store/ask about screwdriver/w/s/sw/ask about screwdriver/ask about owner".
+test win with "w/w/s/open desk/n/e/ask about key/ask about computer/look behind desk/x computer/remember finding the drive/w/s/x desk/open white door/n/e/ask about wrench/ask about backdoor/take boxes/w/s/z/w/z/z/open white door/knock on white door/e/z/n/e/x vent/ask for a screwdriver/n/e/n/e/ask for screwdriver/w/s/sw/ask for a screwdriver/ask about the owner/ne/w/w/w/x lenses/ask to borrow pair/wear them/e/e/take boxes/w/s/w/back/n/f/d/n/s/turn off light/wear glasses/f/fn/push truck bs/push truck back/move crates/move crates with truck/x washing machine/open it/enter it/f/f/f/f/f/fn/fw/fn/fn/fw/w/fn/w/take compass/x compass/s/s/s/s/s/s/s/e/e/e/e/e/e/e/e/b/b/b/b/b/b/b/b/b/d/w/w/tell doris we brought the thumb drive/ask how to get home/hand over the drive/ask about savra/ask about the dragon/ask about time travel".
 
 	
 lensing is an action applying to nothing. Understand "lens" as lensing.
 
 Carry out lensing: 
-	now the player wears the astral lenses;
+	now the player wears the pair of astral lenses;
+	
+Volume 2 - Test command tweak for clean transcripts
 
-Volume 2 - The Story
+Include (-
+
+#Iftrue ({-value:NUMBER_CREATED(test_scenario)} > 0);
+
+[ TestScriptSub;
+	switch(special_word) {
+{-call:PL::Parsing::TestScripts::compile_switch}
+	default:
+		print ">--> The following tests are available:^";
+{-call:PL::Parsing::TestScripts::compile_printout}
+	}
+];
+
+#ifdef TARGET_GLULX;
+Constant TEST_STACK_SIZE = 128;
+#ifnot;
+Constant TEST_STACK_SIZE = 48;
+#endif;
+
+Array test_stack --> TEST_STACK_SIZE;
+Global test_sp = 0;
+[ TestStart T R l k;
+	if (test_sp >= TEST_STACK_SIZE) ">--> Testing too many levels deep";
+	test_stack-->test_sp = T;
+	test_stack-->(test_sp+1) = 0;
+	test_stack-->(test_sp+3) = l;
+	test_sp = test_sp + 4;
+	if ((R-->0) && (R-->0 ~= real_location)) {
+	     print "(first moving to ", (name) R-->0, ")^";
+	     PlayerTo(R-->0, 1);
+	}
+	k=1;
+	while (R-->k) {
+	    if (R-->k notin player) {
+	        print "(first acquiring ", (the) R-->k, ")^";
+	        move R-->k to player;
+	    }
+	    k++;
+	}
+	print "(Testing.)^"; say__p = 1;
+];
+[ TestKeyboardPrimitive a_buffer a_table p i j l spaced ch;
+	if (test_sp == 0) {
+	    test_stack-->2 = 1;
+	    return VM_ReadKeyboard(a_buffer, a_table);
+	}
+	else {
+	    p = test_stack-->(test_sp-4);
+	    i = test_stack-->(test_sp-3);
+	    l = test_stack-->(test_sp-1);
+	    test_stack-->2 = test_stack-->2 + 1;
+	    style bold;
+	    while ((i < l) && (p->i ~= '/')) {
+	    	ch = p->i;
+	        if (spaced || (ch ~= ' ')) {
+	        	if ((p->i == '[') && (p->(i+1) == '/') && (p->(i+2) == ']')) {
+	        		ch = '/'; i = i+2;
+	        	}
+	            a_buffer->(j+WORDSIZE) = ch;
+	            print (char) ch;
+	            i++; j++;
+	            spaced = true;
+	        } else i++;
+	    }
+	    style roman;
+	    print "^";
+	    #ifdef TARGET_ZCODE;
+	    a_buffer->1 = j;
+	    #ifnot; ! TARGET_GLULX
+	    a_buffer-->0 = j;
+	    #endif;
+	    VM_Tokenise(a_buffer, a_table);
+	    if (p->i == '/') i++;
+	    if (i >= l) {
+	        test_sp = test_sp - 4;
+	    } else test_stack-->(test_sp-3) = i;
+	}
+];
+
+#IFNOT;
+
+[ TestScriptSub;
+	">--> No test scripts exist for this game.";
+];
+
+#ENDIF;
+-) instead of "Test Command" in "Tests.i6t".
+
+Volume 3 - The Story
 
  
 Book 1 - The Thumb Drive

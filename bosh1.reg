@@ -173,4 +173,417 @@ Faraji can remember finding the drive.
 > x thumb drive
 It's a red plastic thumb drive, with what look like symbols scratched on the surface, but they're like no symbols you've ever seen. The metal USB end is somewhat corroded.
 
-A phone is ringing not too far away
+A phone is ringing not too far away.
+
+* office3
+
+Department of Homeland Security, Washington, DC
+Open on a drab office with decor dating to the mid-eighties. The DHS assistant to the associate sub-director looks longingly at the office clock nearing five, then leans across the desk and impatiently states his demands:
+
+"First name, last name, pronouns?"
+
+(1) Ezra Gaunt (he/him), winner of the 2006 Baltimore County Edgar Allan Poe Trivia Competition;
+
+(2) Petula Clark Goldberg (she/her), former award-winning dog groomer of the avant-garde school;
+
+or (3) Larch Faraji (they/them), lead singer of the third wave neo-old-school punk band DC Trash.
+
+The Bureau of Strange Happenings
+An Interactive Phenomenon by Phil Riley
+Release 1 / Serial number 230527 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
+
+Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Their Hyundai is parked nearby.
+
+>w
+Just like in the store this once was, the door chimes as Faraji walks in.
+
+Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
+
+The Bureau's latest office manager, Margaret is bustling around with unrestrained enthusiasm, unpacking boxes and assembling an approximation of a respectable front office, all as if the Bureau isn't going to be shut down before the year is out. She sees Faraji and practically squeals. "Agent Faraji! I'm sorry -- Larch! How are you? I hope you don't mind -- I took the liberty of putting your desk together. I just love hex wrenches, don't you? Also, your new phone is here. I put it in your desk. Good timing! Now I just need you to give me your old phone so I can deactivate it."
+
+Faraji hands Margaret their old phone. Margaret taps a few keys on her computer and says "There! All settled."
+
+"Oh, good", Faraji says. "Our phone downgrades have arrived from our bureaucratic betters."
+
+A phone is ringing not too far away.
+
+>w
+Faraji extricates themself from talking with Margaret.
+
+Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
+
+A phone is ringing to the south.
+
+>x wrench
+There's nothing like that nearby.
+
+>s
+Agent Faraji is in their office. They pause and survey the scene. It's not much -- four white walls, grey industrial carpet. Margaret has helpfully assembled Faraji's desk and chair, though how sturdily is an open question. She also took the time to put up some of Agent Faraji's office decor -- their degree in Nonstandard Investigative Techniques, an original pencil drawing of the Pitfall snake by semi-acclaimed Washington DC artist Darius 5200, and a photo of their softball team. At the very least the wall coverings help compensate for the lack of windows. There's a disconnected landline on the desk. The office door is to the north, and there's a white metal door to the west.
+
+Faraji mutters, "Where's my computer?"
+
+A phone is ringing inside Faraji's desk.
+
+>open desk
+Faraji tries to open the desk to answer the phone, but it seems to be locked. They sigh. "Margaret must have the key."
+
+A phone is ringing inside their desk.
+
+>n
+Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
+
+A phone is ringing to the south.
+
+>e
+Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
+
+The Bureau's latest office manager, Margaret is bustling around with unrestrained enthusiasm.
+
+A phone is ringing not too far away.
+
+Faraji can ask about the whereabouts of the desk key or ask about the status of the computer.
+
+>ask margaret for key
+That doesn't seem to be a topic of conversation at the moment.
+
+A phone is ringing not too far away.
+
+Faraji can ask about the whereabouts of the desk key or ask about the status of the computer.
+
+>w
+Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
+
+A phone is ringing to the south.
+
+>s
+Agent Faraji is in their office. It's basically four white walls and grey carpet. There's a cheap desk and chair, and a disconnected phone on the desk. In lieu of windows, there are a few things on the wall: their degree in Nonstandard Investigative Techniques, a pencil drawing of the Pitfall snake, and a photo of their softball team. The office door is to the north, and there's a white metal door to the west.
+
+A phone is ringing inside Faraji's desk.
+
+>x desk
+The desk is a cheap DIY piece held together with hex screws. It has a single drawer which is closed.
+
+A phone is ringing inside Faraji's desk.
+
+>n
+Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
+
+A phone is ringing to the south.
+
+>e
+Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
+
+The Bureau's latest office manager, Margaret is bustling around with unrestrained enthusiasm.
+
+A phone is ringing not too far away.
+
+Faraji can ask about the whereabouts of the desk key or ask about the status of the computer.
+
+>ask about allen
+That doesn't seem to be a topic of conversation at the moment.
+
+A phone is ringing not too far away.
+
+Faraji can ask about the whereabouts of the desk key or ask about the status of the computer.
+
+>look behind desk
+There are a number of shelves of office supplies behind the desk. There is also a heating vent on the floor here.
+
+Faraji finds their computer and pulls it out.
+
+A phone is ringing not too far away.
+
+Faraji can ask about the whereabouts of the desk key or ask about the status of the computer.
+
+>x vent
+A typical air register with a grill which one would hope would stop things like, say, a hex wrench from falling through. It's set in the floor behind the front desk. The vent is held closed by four screws.
+
+In the heating vent is a hex wrench.
+
+A phone is ringing not too far away.
+
+Faraji can ask about the whereabouts of the desk key, ask about the status of the computer or ask for a screwdriver.
+
+>get wrench
+Faraji's fingers won't fit through the openings in the vent. They"ll have to open it first.
+
+A phone is ringing not too far away.
+
+Faraji can ask about the whereabouts of the desk key, ask about the status of the computer or ask for a screwdriver.
+
+>ask about screwdriver
+Faraji asks, "Margaret, where's the screwdriver?"
+
+"Umm... I think it was in a box we had to leave behind." Margaret looks embarrassed. "What? I never thought we'd need it. This isn't a construction site after all. Maybe if Klimp had paid for the bigger UHaul..." She stares past Faraji awkwardly.
+
+A phone is ringing not too far away.
+
+Faraji can ask about the whereabouts of the desk key, ask about the status of the computer or ask for a screwdriver
+
+* no-screwdriver
+
+Department of Homeland Security, Washington, DC
+Open on a drab office with decor dating to the mid-eighties. The DHS assistant to the associate sub-director looks longingly at the office clock nearing five, then leans across the desk and impatiently states his demands:
+
+"First name, last name, pronouns?"
+
+(1) Ezra Gaunt (he/him), winner of the 2006 Baltimore County Edgar Allan Poe Trivia Competition;
+
+(2) Petula Clark Goldberg (she/her), former award-winning dog groomer of the avant-garde school;
+
+or (3) Larch Faraji (they/them), lead singer of the third wave neo-old-school punk band DC Trash.
+
+The Bureau of Strange Happenings
+An Interactive Phenomenon by Phil Riley
+Release 1 / Serial number 230527 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
+
+Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Their Hyundai is parked nearby.
+
+>n
+Faraji trudges to the other end of the parking lot. It's much like where they left.
+
+Agent Faraji is at the north end of the strip mall parking lot. This end is no more auspicious than the other. A convenience store lies to the east. To the west is a military recruitment center. North of here the parking lot exits onto a busy road. There is a rusty sign by the road naming the shopping center: Park Place. South is BOSH headquarters, among other things.
+
+>enter store
+Faraji is greeted by a blast of music as they enter the store.
+
+Agent Faraji is in the Li'l Nectarine Convenience Store. Li'l Nectarine offers great service and low prices, or so they say. This one's cluttered aisles and sparse shelves could make one wonder if that's true. Behind the counter is the typical array of cigarettes and lottery tickets. Under the counter is a glass case containing various useful items.
+
+The clerk, a scruffy man in his mid-twenties, is leaning against the counter, looking bored.
+
+>ask about screwdriver
+That doesn't seem to be a topic of conversation at the moment.
+
+>w
+Faraji exits the store into the relative quiet of the nearby traffic.
+
+Agent Faraji is at the north end of the strip mall parking lot. This end is no more auspicious than the other. A convenience store lies to the east. To the west is a military recruitment center. North of here the parking lot exits onto a busy road. There is a rusty sign by the road naming the shopping center: Park Place. South is BOSH headquarters, among other things.
+
+>s
+Faraji walks back to the south end of the parking lot.
+
+Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Their Hyundai is parked nearby.
+
+>sw
+(first opening the pawn shop door)
+"Cha-ching!" rings the electronic chime as Faraji steps into the store.
+
+Agent Faraji is in Dave's pawn shop. This is more the seedy, gloomy stereotype of a pawn shop than the glitzy sanitized version of TV reality shows. The blinds in the windows are closed to only allow the barest slant of sunlight in, leaving the sickly fluorescent lights to illuminate the room. There is the distinct smell of cigar smoke. The glass counter is filled with a large collection of possibly valuable items. Behind it is an impressive array of firearms.
+
+A man, presumably Dave, stands behind the main counter eyeing Faraji.
+
+The pawn shop door closes.
+
+>ask about screwdriver
+That doesn't seem to be a topic of conversation at the moment.
+
+>ask about owner
+That doesn't seem to be a topic of conversation at the moment.
+
+* klimp
+
+>w
+Just like in the store this once was, the door chimes as Faraji walks in.
+
+Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
+
+The Bureau's latest office manager, Margaret is bustling around with unrestrained enthusiasm, unpacking boxes and assembling an approximation of a respectable front office, all as if the Bureau isn't going to be shut down before the year is out. She sees Faraji and practically squeals. "Agent Faraji! I'm sorry -- Larch! How are you? I hope you don't mind -- I took the liberty of putting your desk together. I just love hex wrenches, don't you? Also, your new phone is here. I put it in your desk. Good timing! Now I just need you to give me your old phone so I can deactivate it."
+
+Faraji hands Margaret their old phone. Margaret taps a few keys on her computer and says "There! All settled."
+
+"Oh, good", Faraji says. "Our phone downgrades have arrived from our bureaucratic betters."
+
+A phone is ringing not too far away.
+
+>look behind desk
+There are a number of shelves of office supplies behind the desk. There is also a heating vent on the floor here.
+
+Faraji finds their computer and pulls it out.
+
+A phone is ringing not too far away.
+
+>x vent
+A typical air register with a grill which one would hope would stop things like, say, a hex wrench from falling through. It's set in the floor behind the front desk. The vent is held closed by four screws.
+
+In the heating vent is a hex wrench.
+
+A phone is ringing not too far away.
+
+Faraji can ask for a screwdriver.
+
+>ask about screwdriver
+Faraji asks, "Margaret, where's the screwdriver?"
+
+"Umm... I think it was in a box we had to leave behind." Margaret looks embarrassed. "What? I never thought we'd need it. This isn't a construction site after all. Maybe if Klimp had paid for the bigger UHaul..." She stares past Faraji awkwardly.
+
+A phone is ringing not too far away.
+
+Faraji can ask for a screwdriver.
+
+>ask about screwdriver
+Faraji asks, "Are you sure we don't have one?"
+
+Margaret just looks at Faraji darkly.
+
+A phone is ringing not too far away.
+
+Faraji can ask for a screwdriver.
+
+>e
+Faraji steps out of the office into the parking lot.
+
+Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Their Hyundai is parked nearby.
+
+>n
+Faraji trudges to the other end of the parking lot. It's much like where they left.
+
+Agent Faraji is at the north end of the strip mall parking lot. This end is no more auspicious than the other. A convenience store lies to the east. To the west is a military recruitment center. North of here the parking lot exits onto a busy road. There is a rusty sign by the road naming the shopping center: Park Place. South is BOSH headquarters, among other things.
+
+>e
+Faraji is greeted by a blast of music as they enter the store.
+
+Agent Faraji is in the Li'l Nectarine Convenience Store. Li'l Nectarine offers great service and low prices, or so they say. This one's cluttered aisles and sparse shelves could make one wonder if that's true. Behind the counter is the typical array of cigarettes and lottery tickets. Under the counter is a glass case containing various useful items.
+
+The clerk, a scruffy man in his mid-twenties, is leaning against the counter, looking bored.
+
+Faraji can ask for a screwdriver.
+
+>ask about screwdriver
+Faraji asks, "Would you happen to have a screwdriver I could borrow?"
+
+"Got one to buy, not one to borrow."
+
+Faraji can ask for a screwdriver.
+
+>w
+Faraji exits the store into the relative quiet of the nearby traffic.
+
+Agent Faraji is at the north end of the strip mall parking lot. This end is no more auspicious than the other. A convenience store lies to the east. To the west is a military recruitment center. North of here the parking lot exits onto a busy road. There is a rusty sign by the road naming the shopping center: Park Place. South is BOSH headquarters, among other things.
+
+>s
+Faraji walks back to the south end of the parking lot.
+
+Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Their Hyundai is parked nearby.
+
+>sw
+(first opening the pawn shop door)
+"Cha-ching!" rings the electronic chime as Faraji steps into the store.
+
+Agent Faraji is in Dave's pawn shop. This is more the seedy, gloomy stereotype of a pawn shop than the glitzy sanitized version of TV reality shows. The blinds in the windows are closed to only allow the barest slant of sunlight in, leaving the sickly fluorescent lights to illuminate the room. There is the distinct smell of cigar smoke. The glass counter is filled with a large collection of possibly valuable items. Behind it is an impressive array of firearms.
+
+A man, presumably Dave, stands behind the main counter eyeing Faraji.
+
+The pawn shop door closes.
+
+Faraji can ask for a screwdriver.
+
+>ask about screwdriver
+Faraji leans on the counter. "Hey, do you have a screwdriver? Can't find mine and I really need one."
+
+The man shakes his head and says, "Sorry, miss. I had one, but the guy who runs the laundromat borrowed it and didn't bring it back."
+
+Faraji can ask about the laundromat owner.
+
+>ask about owner
+Faraji nods. "Okay, then, how do I get in touch with this laundromat guy?"
+
+"Well, that's a tricky one. Laundromat's been closed for almost two weeks now, since the owner just split for some reason he didn't bother to share. Not likely to get ahold of him. If you're not averse to a little trespassing, though, see if you come across a watch. Another thing he borrowed."
+
+>ne
+(first opening the pawn shop door)
+Once again -- "Cha-ching!" -- as Faraji leaves the store.
+
+Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Klimp's Porsche takes up two spots.
+
+Their Hyundai is parked nearby.
+
+The pawn shop door closes.
+
+>w
+Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
+
+The Bureau's latest office manager, Margaret is bustling around with unrestrained enthusiasm.
+
+Also here is Faraji's computer.
+
+A phone is ringing not too far away.
+
+Faraji can ask for a screwdriver.
+
+>w
+Faraji extricates themself from talking with Margaret.
+
+Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
+
+A phone is ringing to the south.
+
+>w
+Agent Faraji is in the BOSH chief's office. Looks like the Chief has already moved in.
+
+Chief Klimp's office is full of character. Shelves strewn with knick-knacks abut a cozy armchair and a mahogany side table supporting a large globe. A bookcase on the north wall is packed with books on paranormal happenings. Garish prints adorn the remaining wall space.  Under one of these is a modernistic desk of glass and chrome, behind which is a very nice black leather swivel chair. There is a computer on the desk, and to its side is an antique wooden file cabinet. To tell the truth, it's all a bit much, but it matches Klimp's personality perfectly. There is an exit to the east.
+
+Chief Klimp says "What's with that ringing? Someone answer it!"
+
+On the Chief's shelves are a juvenile sasquatch skull and some astral lenses.
+
+A phone is ringing not too far away.
+
+>x skull
+It looks a bit Neanderthal, actually.
+
+A phone is ringing not too far away.
+
+Faraji can ask to borrow the skull.
+
+>borrow skull
+Faraji asks, "Chief, mind if I borrow the skull?"
+
+He looks pained for a moment. "Uh, I'd rather you didn't. It's fragile."
+
+A phone is ringing not too far away.
+
+>take skull
+That belongs to Chief Klimp.
+
+A phone is ringing not too far away.
+
+>x lenses
+To all appearances an ordinary pair of glasses, the astral lenses allegedly reveal the existence of extra-dimensional pathways.
+
+A phone is ringing not too far away.
+
+Faraji can ask to borrow the lenses.
+
+>take it
+That belongs to Chief Klimp.
+
+A phone is ringing not too far away.
+
+Faraji can ask to borrow the lenses.
+
+>ask to borrow glasses
+Faraji asks, "Would it be okay if I borrowed the astral lenses for a while?"
+
+"Sure! Why don't you scout the locality for astral phenomena?"
+
+They take the astral lenses.
+
+A phone is ringing not too far away.
+
+>take them
+Faraji already has those.
+
+A phone is ringing not too far away.
+
