@@ -216,16 +216,16 @@ To print in (R - a room) that (T - a text):
 	if location is R:
 		say T;
 		
-asking for identification is an action applying to nothing. Understand "who are you" as asking for identification.
+[asking for identification is an action applying to nothing. Understand "who are you" as asking for identification.
 
 Check asking for identification when current interlocutor is nothing:
 	say "[text of the don't allow saying goodbye to no-one rule response (A)][paragraph break]" instead;
 	
 Check asking for identification:
-	try quizzing current interlocutor about current interlocutor;
+	try quizzing current interlocutor about current interlocutor;]
 		
 
-Motives are a subject.
+[Motives are a subject.
 
 Questioning motives is an action applying to nothing. Understand "what do you want" as questioning motives.
 
@@ -241,7 +241,7 @@ Check promising when the current interlocutor is nothing:
 	say "[text of the don't allow saying goodbye to no-one rule response (A)][paragraph break]" instead;
 	
 Instead of promising when the current interlocutor is not nothing:
-	try answering the current interlocutor that "I promise";	
+	try answering the current interlocutor that "I promise";	]
 	
 	
 

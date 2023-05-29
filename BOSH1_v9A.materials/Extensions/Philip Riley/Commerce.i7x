@@ -55,16 +55,16 @@ Carry out buying something (called the product) with something (called damoney):
 	now the balance of damoney is the balance of damoney minus the price of the product;
 	now the player has the product;
 	
-Pricing it is an action applying to one visible thing. Understand "how much is [thing]" as pricing it.
+[Pricing it is an action applying to one visible thing. Understand "how much is [thing]" as pricing it.
 Understand "how much does [thing] cost" as pricing it.
 
 Carry out pricing:
 	if the vendor of the noun is not nothing and the owner of the noun is the vendor of the noun:
 		say "The price of [the noun] is [the price of the noun].";
 	otherwise:
-		say "[The noun] isn't for sale."
+		say "[The noun] isn't for sale."]
 
-Accounting is an action applying to nothing. Understand "How much money do I have" as accounting.
+[Accounting is an action applying to nothing. Understand "How much money do I have" as accounting.
 Understand "How much do I have" as accounting.
 
 Carry out accounting:
@@ -72,7 +72,7 @@ Carry out accounting:
 	let B be $0;
 	repeat with card running through cards:
 		now B is B plus the balance of card;
-	say "You have [B]."
+	say "You have [B]."]
 	
 To belong is a verb.
 
@@ -80,13 +80,13 @@ Check taking something (called target):
 	if someone owns the target and the player does not own the target:
 		say "[regarding the target][Those] [belong] to [the owner of the noun]." instead;
 		
-Attributing it is an action applying to one visible thing. Understand "Who owns [thing]" as Attributing it.
+[Attributing it is an action applying to one visible thing. Understand "Who owns [thing]" as Attributing it.
 
 
 Carry out Attributing:
 	if the owner of the noun is nothing:
 		say "No one owns [the noun].";
 	otherwise:
-		say "[The owner of the noun] owns [the noun].";
+		say "[The owner of the noun] owns [the noun].";]
 
 Commerce ends here.

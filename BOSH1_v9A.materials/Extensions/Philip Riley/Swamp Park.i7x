@@ -146,7 +146,7 @@ A man called Dave is in the pawn shop. Understand "owner" as Dave. "A man, presu
 Greeting response for Dave:
 	say "[Dave] grunts hello.";
 	
-The how-are-you-reply of Dave is "Been better.".
+[The how-are-you-reply of Dave is "Been better.".]
 	
 for-a-screwdriver-pawn is a questioning quip.
 	It is privately-named. The printed name is "for a screwdriver". [The true-name is "for-a-screwdriver-pawn".] Understand "for/a/screwdriver" as for-a-screwdriver-pawn.

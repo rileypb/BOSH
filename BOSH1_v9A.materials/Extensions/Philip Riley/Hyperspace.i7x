@@ -414,62 +414,166 @@ Volume 4 - Characters
 Book 1 - Doris
 
 how to get home is a repeatable questioning quip.
-	The comment is "[We] [ask], 'Just how can I get home from here?'".
-	The reply is "Doris hardly looks up from his work. 'Go ask Maggie; she can help you.'".
+
+who-are-you-doris is a questioning quip.
+	The printed name is "who he is".
+	Understand "who are you", "who you are", "who is he", "who he is" as who-are-you-doris.
+	The comment is "[We] [ask] 'Who are you?'".
+	The reply is "He looks taken aback for a moment, then recovers his composure. 'Ah yes, introductions. I'm Doris, chief of the hyperspatial field office of the Bureau.'".
 	It quip-supplies Doris.
-	It is ubiquitous.
-	It is always-available.
+	It stocks Doris.
+	
+where-is-this-hyperspace is a questioning quip.
+	The printed name is "where we are".
+	Understand "where are we", "where we are", "where am i", "where i am", "where is this", "where this is" as where-is-this-hyperspace.
+	The comment is "[We] [look] around and [ask], 'Where are we? What is this place?'".
+	The reply is "[Doris] [answer], 'You're in the hyperspatial field office of the Bureau of Strange Happenings. But I guess that doesn't exactly clear things up for you. Practically, your office is a branch of ours, but since you have the official recognition of the US government -- for now -- you get the glory. Besides, due to the nature of our work, we prefer to remain underground, so to speak. How's Klimp, by the way? Ah, we had some good times. But you know what they say -- what happens in Pompeii, stays in Pompeii.".
+	It quip-supplies Doris.
+	It stocks Doris.
+
+how to get home is a questioning quip.
+	Understand "how can i/we/they/she/he get home" as how to get home.
+	The comment is "[We] [ask], 'Just how can I get home from here?'".
+	The reply is "'Go ask Maggie; she can help you.'".
+	It quip-supplies Doris.
+	It stocks Doris.
+	
+klimp-is-fine is an informative quip.
+	It is privately-named.
+	The printed name is "Klimp is fine".
+	Understand "Klimp/he is fine" as klimp-is-fine.
+	The comment is "[We] [say], 'He's just fine'".
+	The reply is "'Great! Be sure to say hi for me.'".
+	It quip-supplies Doris.
+	It follows where-is-this-hyperspace.
 	
 To shake is a verb.
 
-no-thumb-drive is an informative quip. 
+we-don't-have-it is an informative quip. 
 	It is privately-named.
 	It mentions the thumb drive.
-	The printed name is "[force pronoun for player][we] [have] no thumb drive".
-	Understand "he/she/they/we/have/has/have/no/thumb/drive" as no-thumb-drive.
-	The comment is "[if the thumb drive is familiar][We] [shake] [our] head. 'Sorry, no.'[otherwise][We] [look] quizzical. 'What thumb drive?'".
-	The reply is "[if the thumb drive is familiar]'Well, you'll just have to go back and get it, won't you? We can't be fooling around when the fate of the timeline is at stake!' Doris says[otherwise]'Huh. Thought you would have found it by now. I'm almost certain it's in your Swamp Park office. Go find it and bring it here.' Doris busies himself at his desk, pointedly ignoring you[end if].".
+	The printed name is "[force pronoun for player][we] [don't] have it".
+	Understand "i/he/she/they/we/have/doesn't/don't/have/it/thumb/drive" as we-don't-have-it.
+	The comment is "[We] [shake] [our] head. 'Sorry, no.'".
+	The reply is "'Well, you'll just have to go back and get it, won't you? We can't be fooling around when the fate of the timeline is at stake!' Doris says.".
 	it quip-supplies Doris.
-	It rules out yes-thumb-drive.
 	
-An availability rule for no-thumb-drive:
-	if the player does not carry the thumb drive:
+An availability rule for we-don't-have-it:
+	if the player does not carry the thumb drive and the thumb drive is handled:
 		always available;
+
+what thumb drive is a questioning quip. 
+	It mentions the thumb drive.
+	The comment is "[We] [look] quizzical. 'What thumb drive?'".
+	The reply is "'Huh. Thought you would have found it by now. I'm almost certain it's in your Swamp Park office. Go find it and bring it here.' Doris busies himself at his desk, pointedly ignoring you.".
+	it quip-supplies Doris.
 	
-yes-thumb-drive is an informative quip. 
+An availability rule for what thumb drive:
+	if the player does not carry the thumb drive and the thumb drive is not handled:
+		always available;
+		
+To answer is a verb.
+
+Check discussing show him the thumb drive:
+	if the player does not enclose the thumb drive:
+		say "[We] [don't] have [the thumb drive]." instead;
+
+Check discussing hand over the thumb drive:
+	if the player does not enclose the thumb drive:
+		say "[We] [don't] have [the thumb drive]." instead;
+	
+show him the thumb drive is a performative quip. 
 	It is privately-named.
 	It mentions the thumb drive.
-	The printed name is "[force pronoun for player][we] brought the thumb drive".
-	Understand "he/she/they/we/has/brought/thumb/drive" as yes-thumb-drive.
-	The comment is "[We] [reply], 'Yes, I have it.'".
+	The comment is "[We] [answer], 'Yes, I have it.'".
 	The reply is "'Fantastic! Hand it here.'".
 	it quip-supplies Doris.
-	It rules out no-thumb-drive.
 	
-An availability rule for yes-thumb-drive:
+An availability rule for show him the thumb drive:
 	if the player carries the thumb drive:
 		always available;
 		
-After discussing yes-thumb-drive:
+Instead of showing the thumb drive to doris:
+	try discussing show him the thumb drive;
+		
+After discussing show him the thumb drive:
 	queue Doris with hand over the thumb drive;
 
 hand over the thumb drive is a performative quip.
 	The comment is "[We] [give] the thumb drive to Doris.".
+	Understand "hand it over", "hand him the thumb/-- drive" as hand over the thumb drive.
 	The reply is "'Great, great.' He peruses the drive. 'We lost one of our New York agents to a slingshot effect that threw him far back in time. We're always monitoring for artifacts that are out of place or anachronistic to lead us to lost agents.
 	
-	He continues, 'The scratch marks here say [']They found me out and sent me back. 14th century. Enigma Lake. Savra is going to move on the Dragon.[']'".
+	He continues, 'The scratch marks here say, [']They found me out and sent me back. 14th century. Enigma Lake. Savra is going to move on the Dragon.[']'".
 	it quip-supplies Doris.
 	
-An availability rule for hand over the thumb drive:
+[An availability rule for hand over the thumb drive:
 	if the player carries the thumb drive:
-		always available;
+		always available;]
 		
 After discussing hand over the thumb drive:
 	silently try giving the thumb drive to Doris;
 
 about Savra is a questioning quip.
+	The comment is "'Senator Savra? What does he have to with anything?' [we] [ask].".
+	The reply is "[Doris] says, 'Tell me, Agent. Do you believe in aliens? That alien species have visited this planet?'".
 	it quip-supplies Doris.
 	It follows hand over the thumb drive;
+
+no-aliens is an informative quip. 
+	It is privately-named.
+	The printed name is "[force pronoun for player][we] don't believe in alien visitation".
+	Understand "we/i/you/he/they/she/don't/doesn't/believe/in/alien/visitation" as no-aliens.
+	The comment is "'No. The Chief might, but I prefer hard evidence,' says [player's surname].".
+	The reply is "[Doris] nods. 'Good, because they haven't. The whole idea is ridiculous. Senator Savra is [italic type]not[roman type] an alien.' [they] looks at [us] significiantly.
+	
+	[We] [look] at [them] unbelievingly. 'What are you talking about?'
+	
+	[Doris] shakes his head. 'I thought you would know. He's a member of a race of Earth beings more ancient than our own. [Agent], Senator Savra is a [italic type]lizard man[roman type].'".
+	It quip-supplies Doris.
+	It follows about Savra.
+	It rules out yes-aliens.
+
+yes-aliens is an informative quip. 
+	It is privately-named.
+	The printed name is "[force pronoun for player][we] do believe in alien visitation".
+	Understand "we/i/you/he/they/she/do/does/believe/in/alien/visitation" as no-aliens.
+	The comment is "'Yes. The evidence is overwhelming,' says [player's surname].".
+	The reply is "[Doris] laughs. 'Nonsense, all of it. Get it out of your head. The whole idea is ridiculous. Senator Savra is [italic type]not[roman type] an alien.' [they] looks at [us] significiantly.
+	
+	[We] [look] at [them] unbelievingly. 'What are you talking about?'
+	
+	[Doris] shakes his head. 'I thought you would know. He's a member of a race of Earth beings more ancient than our own. [Agent], Senator Savra is a [italic type]lizard man[roman type].'".
+	It quip-supplies Doris.
+	It follows about Savra.
+	It rules out no-aliens.
+	
+what-is-a-lizard-man is a questioning quip.
+	It is privately-named.
+	The printed name is "what is a lizard man".
+	Understand "what/is/a/lizard/man" as what-is-a-lizard-man.
+	The comment is "[We] [look] incredulous. 'And just what is a lizard man?'".
+	The reply is "'Just what it sounds like. It's a bipedal, intelligent reptilian creature.'".
+	It quip-supplies Doris.
+	It follows yes-aliens.
+	It follows no-aliens.
+	
+remind him Savra's not reptilian is a performative quip.
+	Understand "Savra/is" as remind him Savra's not reptilian.
+	The comment is "'But Savra isn't a reptile!'".
+	The reply is "'He's in disguise! Whatever, it doesn't matter. What matters is your mission.'"
+	It quip-supplies Doris.
+	It follows what-is-a-lizard-man.
+	
+about the mission is a questioning quip.
+	The comment is "'Fine,' [we] [say]. 'What's the mission?'".
+	The reply is "Doris leans back in his chair. 'I believe we still have a chance to retrieve our lost agent -- the one that left the thumb drive. He says he was at Enigma Lake, not far from where you found the drive. Now it makes sense that Daniels -- the agent -- would head for some kind of landmark so we could find him, and indeed there is a prominent intersection of leylines in the middle of the lake. Before you say it, yes it's a problem, [italic type]if[roman type] that intersection had always been underwater. But Enigma Lake is an artificial reservoir. The town of Enigma Lake was flooded when the reservoir was created, and [italic type]that's[roman type] where the intersection is!' Doris concludes with a look of satisfaction.
+	
+	'So...' [we] [say].
+	
+	'So. I'm sending you back to 1938, right before the flooding of Enigma Lake, and you'll find whatever Daniels left for us to find. Maybe we can stage a rescue. Why 1938? I'd rather not risk a longer temporal jaunt before we know what we're dealing with.'".
+	It quip-supplies Doris.
+	It follows remind him Savra's not reptilian. 
 
 about the Dragon is a questioning quip.
 	it quip-supplies Doris.
@@ -482,7 +586,7 @@ about time travel is a questioning quip.
 [An availability rule for what savra has to do with it:
 	always available;]
 
-	
+
 
 	
 
@@ -491,9 +595,11 @@ After printing the locale description when player is in the field office chief's
 	now Doris greeted the player is true;
 	say "'Ah, [player's forename],' Doris exclaims, standing up to shake [our] hand. 'I've been waiting for you to pay us a visit. Did you bring the thumb drive?'";
 	if player carries the thumb drive:
-		queue Doris with yes-thumb-drive;
+		queue Doris with show him the thumb drive;
+	otherwise if the thumb drive is handled:
+		queue Doris with we-don't-have-it;
 	otherwise:
-		queue Doris with no-thumb-drive;
+		queue Doris with what thumb drive;
 
 
 Volume 5 - Other Stuff

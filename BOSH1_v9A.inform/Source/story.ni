@@ -42,7 +42,7 @@ Include Hyperspace by Philip Riley.
 Include BOSH Facts by Philip Riley. 
 Include Image Strip by Philip Riley.
 Include Swamp Park by Philip Riley.
-Include Conversations General by Philip Riley.
+[Include Conversations General by Philip Riley.]
 Include Margaret by Philip Riley. 
 Include Enigma Lake by Philip Riley. 
  
@@ -131,16 +131,16 @@ When play begins:
 To survey is a verb. To wrinkle is a verb.
 
 Intro Text is always "As an agent of the Bureau of Strange Happenings (BOSH), it is Agent [player's full name]'s job to investigate unexplained phenomena throughout the United States and its territories. Recently, however, business hasn't been good. Once a bustling office with a dozen Agents, the Bureau's been reduced to just three: [Player's surname], Moira Zin, and Chief Huffton Klimp. The Bureau's expansive and well-appointed office suite was taken over by the State Department Book Club, and now the agents are consigned to a tiny suite in a strip mall in the remote D.C. suburb of Swamp Park, Maryland.
+
+	The reason? The venomous Senator Savra, whose crusade against all things he considers unwholesome is the scourge of Washington. To him, BOSH is nothing more than the devil's megaphone, giving credence to Satan's lies by giving them a hearing. Now Savra is at it again, threatening to cut BOSH entirely from next year's Federal budget.
+	
+	But for now, today is move-in day at the bureau. 
 	
 	We open on a decrepit strip mall just as an aging Hyundai pulls into the potholed parking lot. [agent] steps out of the car. [We] [survey] the area and [wrinkle] [our] nose.[paragraph break]".
 
-	 
-[
 	
-	The reason? The venomous Senator Savra, whose crusade against all things he considers unwholesome is the scourge of Washington. To him, BOSH is nothing more than the devil's megaphone, giving credence to Satan's lies by giving them a hearing. Now Savra is at it again, pushing to cut BOSH entirely from next year's Federal budget.
 	
-	But for now, today is moving day at the bureau. 
-] 
+
 
 The isolation booth is a room.
 
@@ -479,10 +479,10 @@ Rule for writing a paragraph about Margaret Chao when the location is the front 
 		[make it easy to talk to Margaret.]
 		[if the current interlocutor is not a person, now the current interlocutor is Margaret Chao;]
 		
-The how-are-you-reply of Margaret Chao is "I'm great! Thanks!".
+[The how-are-you-reply of Margaret Chao is "I'm great! Thanks!".
 The how-are-you-reply of Moira Zin is "Very well, thanks.".
 The how-are-you-reply of Chief Klimp is "Good good good. Just fine.".
-The how-are-you-reply of the clerk is "Good, I guess.".
+The how-are-you-reply of the clerk is "Good, I guess.".]
 
 Book 12 - Some Speech Phrases
 
@@ -496,7 +496,7 @@ To say PCG:
 	
 To say LF:
 	capture speech for Larch Faraji;
-	
+
 To say end say:
 	stop capturing text;
 	if player is Capture Player:
@@ -514,7 +514,7 @@ To capture speech for (P - a person):
 
 Book 13 - Places
 
-Chapter 1 - BOSH HQ and Swamp Park
+Chapter 1 - BOSH HQ and Swamp Park 
  
  
 BOSH HQ is a region. 
@@ -937,7 +937,7 @@ Figure Phone is the file "phone_icon.png".
 Figure Caller is the file "caller_portrait_2.png".
 Figure Parking Lot is the file "location_parking_lot.png". 
 Figure Pawn Shop is the file "location_pawn_shop.png".
-Figure BOSH is the file "location_bosh.png".
+Figure BOSH is the file "location_bosh_2.png".
 Figure Store is the file "location_nectarine.png".
 Figure Laundromat is the file "location_laundromat.png".
 Figure White Tunnel is the file "location_white_tunnel.png".
@@ -981,7 +981,7 @@ To decide which figure name is the picture of the location:
 	if location is in ELR, now result is Figure Enigma Lake; 
 	if location is Enigma Park, now result is Figure Enigma Park;
 	if location is lake shore north of the park or location is lake shore west, now result is Figure Engima Shore;
-	if location is in field office area, now result is Figure Field Office;
+	if location is in field office area, now result is Figure BOSH;
 	decide on result; 
 		
 
@@ -1076,6 +1076,8 @@ test office2 with "w/w/n/w/s/n/e/ask about computer/look behind desk/x computer/
 test office3 with "w/w/x wrench/s/open desk/n/e/ask margaret for key/w/s/x desk/n/e/ask about allen/look behind desk/x vent/get wrench/ask about screwdriver".
 test no-screwdriver with "n/enter store/ask about screwdriver/w/s/sw/ask about screwdriver/ask about owner".
 test win with "w/w/s/open desk/n/e/ask about key/ask about computer/look behind desk/x computer/remember finding the drive/w/s/x desk/open white door/n/e/ask about wrench/ask about backdoor/take boxes/w/s/z/w/z/z/open white door/knock on white door/e/z/n/e/x vent/ask for a screwdriver/n/e/n/e/ask for screwdriver/w/s/sw/ask for a screwdriver/ask about the owner/ne/w/w/w/x lenses/ask to borrow pair/wear them/e/e/take boxes/w/s/w/back/n/f/d/n/s/turn off light/wear glasses/f/fn/push truck bs/push truck back/move crates/move crates with truck/x washing machine/open it/enter it/f/f/f/f/f/fn/fw/fn/fn/fw/w/fn/w/take compass/x compass/s/s/s/s/s/s/s/e/e/e/e/e/e/e/e/b/b/b/b/b/b/b/b/b/d/w/w/tell doris we brought the thumb drive/ask how to get home/hand over the drive/ask about savra/ask about the dragon/ask about time travel".
+
+test no-drive with "w/w/s/open desk/n/e/ask about key/ask about computer/look behind desk/w/s/x desk/open white door/n/e/ask about wrench/ask about backdoor/take boxes/w/s/z/w/z/z/open white door/knock on white door/e/z/n/e/x vent/ask for a screwdriver/n/e/n/e/ask for screwdriver/w/s/sw/ask for a screwdriver/ask about the owner/ne/w/w/w/x lenses/ask to borrow pair/wear them/e/e/take boxes/w/s/w/back/n/f/d/n/s/turn off light/wear glasses/f/fn/push truck bs/push truck back/move crates/move crates with truck/x washing machine/open it/enter it/f/f/f/f/f/fn/fw/fn/fn/fw/w/fn/w/take compass/x compass/s/s/s/s/s/s/s/e/e/e/e/e/e/e/e/b/b/b/b/b/b/b/b/b/d/w/w/tell doris we brought the thumb drive/ask how to get home/hand over the drive/ask about savra/ask about the dragon/ask about time travel".
 
 	
 lensing is an action applying to nothing. Understand "lens" as lensing.

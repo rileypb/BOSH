@@ -263,21 +263,21 @@
     </dict>
     <key>37</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1086</integer>
+        <key>Line</key><integer>1088</integer>
         <key>Title</key><string>Volume 2 - Test command tweak for clean transcripts</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>38</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1176</integer>
+        <key>Line</key><integer>1178</integer>
         <key>Title</key><string>Volume 3 - The Story</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>39</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1179</integer>
+        <key>Line</key><integer>1181</integer>
         <key>Title</key><string>Book 1 - The Thumb Drive</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
@@ -1984,7 +1984,7 @@
     </dict>
     <key>283</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.materials/Extensions/philip riley/simple conversation.i7x</string>
-        <key>Line</key><integer>333</integer>
+        <key>Line</key><integer>328</integer>
         <key>Title</key><string>Volume 7 - Some rule ordering</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
@@ -2047,150 +2047,150 @@
     </dict>
     <key>292</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.materials/Extensions/philip riley/hyperspace.i7x</string>
-        <key>Line</key><integer>499</integer>
+        <key>Line</key><integer>416</integer>
+        <key>Title</key><string>Chapter 1 - First Meeting</string>
+        <key>Level</key><integer>4</integer>
+        <key>Indentation</key><integer>3</integer>
+    </dict>
+    <key>293</key><dict>
+        <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.materials/Extensions/philip riley/hyperspace.i7x</string>
+        <key>Line</key><integer>605</integer>
         <key>Title</key><string>Volume 5 - Other Stuff</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>293</key><dict>
+    <key>294</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.materials/Extensions/philip riley/hyperspace.i7x</string>
-        <key>Line</key><integer>501</integer>
+        <key>Line</key><integer>607</integer>
         <key>Title</key><string>Book 1 - Help</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>294</key><dict>
+    <key>295</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.materials/Extensions/philip riley/bosh facts.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>BOSH Facts by Philip Riley begins here</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>295</key><dict>
+    <key>296</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.materials/Extensions/philip riley/image strip.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>Image Strip by Philip Riley begins here</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>296</key><dict>
+    <key>297</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.materials/Extensions/philip riley/image strip.i7x</string>
         <key>Line</key><integer>8</integer>
         <key>Title</key><string>Section 1 - Creating Rocks and Building the Window Itself</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>297</key><dict>
+    <key>298</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.materials/Extensions/philip riley/image strip.i7x</string>
         <key>Line</key><integer>28</integer>
         <key>Title</key><string>Section 2 - Items to slot into HandleGlkEvent and IdentifyGlkObject</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>298</key><dict>
+    <key>299</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.materials/Extensions/philip riley/image strip.i7x</string>
         <key>Line</key><integer>80</integer>
         <key>Title</key><string>Section 3 - Inform 6 Routines for Drawing In Window</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>299</key><dict>
+    <key>300</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.materials/Extensions/philip riley/image strip.i7x</string>
         <key>Line</key><integer>317</integer>
         <key>Title</key><string>Section 4 - Inform 7 Wrappers for Defining Window and Colors</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>300</key><dict>
+    <key>301</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.materials/Extensions/philip riley/image strip.i7x</string>
         <key>Line</key><integer>350</integer>
         <key>Title</key><string>Section 4a - More Wrappers (for use without Collage Tools by Emily Short)</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>301</key><dict>
+    <key>302</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.materials/Extensions/philip riley/image strip.i7x</string>
         <key>Line</key><integer>372</integer>
         <key>Title</key><string>Section 5 - Inform 7 Wrapper Rulebook for Picture Selection</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>302</key><dict>
+    <key>303</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.materials/Extensions/philip riley/image strip.i7x</string>
         <key>Line</key><integer>382</integer>
         <key>Title</key><string>Section 6 - Inform 7 Wrapper Phrases and Rules for Drawing</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>303</key><dict>
+    <key>304</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.materials/Extensions/philip riley/swamp park.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>Swamp Park by Philip Riley begins here</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>304</key><dict>
+    <key>305</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.materials/Extensions/philip riley/swamp park.i7x</string>
         <key>Line</key><integer>9</integer>
         <key>Title</key><string>Book 1 - Outside HQ</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>305</key><dict>
+    <key>306</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.materials/Extensions/philip riley/swamp park.i7x</string>
         <key>Line</key><integer>13</integer>
         <key>Title</key><string>Chapter 1 - Strip Mall Parking Lot South</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>306</key><dict>
+    <key>307</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.materials/Extensions/philip riley/swamp park.i7x</string>
         <key>Line</key><integer>99</integer>
         <key>Title</key><string>Chapter 2 - Strip Mall Parking Lot North</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>307</key><dict>
+    <key>308</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.materials/Extensions/philip riley/swamp park.i7x</string>
         <key>Line</key><integer>134</integer>
         <key>Title</key><string>Book 2 - Dave's pawn shop</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>308</key><dict>
+    <key>309</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.materials/Extensions/philip riley/swamp park.i7x</string>
         <key>Line</key><integer>200</integer>
         <key>Title</key><string>Book 3 - Laundromat</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>309</key><dict>
+    <key>310</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.materials/Extensions/philip riley/swamp park.i7x</string>
         <key>Line</key><integer>202</integer>
         <key>Title</key><string>Chapter 1 - The Astral Tunnel</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>310</key><dict>
+    <key>311</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.materials/Extensions/philip riley/swamp park.i7x</string>
         <key>Line</key><integer>208</integer>
         <key>Title</key><string>Chapter 2 - The Laundromat Proper</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>311</key><dict>
+    <key>312</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.materials/Extensions/philip riley/swamp park.i7x</string>
         <key>Line</key><integer>301</integer>
         <key>Title</key><string>Book 4 - Convenience Store</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
-    </dict>
-    <key>312</key><dict>
-        <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.materials/Extensions/philip riley/conversations general.i7x</string>
-        <key>Line</key><integer>1</integer>
-        <key>Title</key><string>Conversations General by Philip Riley begins here</string>
-        <key>Level</key><integer>0</integer>
-        <key>Indentation</key><integer>0</integer>
     </dict>
     <key>313</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.materials/Extensions/philip riley/margaret.i7x</string>
