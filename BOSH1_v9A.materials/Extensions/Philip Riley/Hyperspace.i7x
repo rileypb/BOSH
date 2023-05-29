@@ -413,7 +413,7 @@ Volume 4 - Characters
 
 Book 1 - Doris
 
-how to get home is a repeatable questioning quip.
+Chapter 1 - First Meeting
 
 who-are-you-doris is a questioning quip.
 	The printed name is "who he is".
