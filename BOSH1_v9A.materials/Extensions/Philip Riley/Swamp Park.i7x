@@ -241,6 +241,18 @@ The back basement is south of the laundromat basement. It is in laundromat-regio
 
 [if the broken washing machine is nowhere]A strange glow emanates from behind some stacks of large crates[otherwise]A old broken-down washing machine peeks out from between two stacks of crates[end if]."
 
+After printing the description of a dark room when the location is the back basement and in darkness:
+	say line break;
+	say "There is a glow-in-the-dark light switch on the wall here, currently [if the light switch is switched on]on[otherwise]off[end if].";
+	say line break;
+	if the broken washing machine is nowhere:
+		say "There is a strange glow emanating from behind some large dark objects.";
+	otherwise:
+		say "A washing maching is revealed in the darkness by the glow emanating from its drum.";
+		
+After deciding the scope of the player when the location is the back basement and in darkness:
+	place the light switch in scope;
+
 laundromat back room is dark.
 laundromat basement is dark.
 back basement is dark.

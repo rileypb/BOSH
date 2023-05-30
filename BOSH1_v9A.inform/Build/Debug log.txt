@@ -50,7 +50,7 @@ I've also read Simple Conversation by Philip Riley, which is 1786 words long.
 I've also read Hyperspace by Philip Riley, which is 4081 words long.
 I've also read BOSH Facts by Philip Riley, which is 94 words long.
 I've also read Image Strip by Philip Riley, which is 2080 words long.
-I've also read Swamp Park by Philip Riley, which is 3417 words long.
+I've also read Swamp Park by Philip Riley, which is 3521 words long.
 I've also read Margaret by Philip Riley, which is 960 words long.
 I've also read Enigma Lake by Philip Riley, which is 403 words long.
 I've also read Gender Options by Nathanael Nerode, which is 7730 words long.
@@ -288,7 +288,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 204 files written as streams.
-CPU time: 447 centiseconds
+CPU time: 453 centiseconds
 
 
 That concludes the debugging log from this run of Inform.
