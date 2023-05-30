@@ -675,89 +675,91 @@ Faraji can ask who he is, ask where we are, ask how to get home, ask about Savra
         <command xml:space="preserve">ask about savra</command>
         <result xml:space="preserve">"Senator Savra? What does he have to with anything?" Faraji asks.
 
-Doris says, "Tell me, Agent. Do you believe in aliens? That alien species have visited this planet?"
+Doris says, "Well you've noticed he's not very friendly to the Bureau? Let's leave it at that for now. We need to talk about the mission."
 
-Faraji can ask who he is, ask where we are, ask how to get home, tell Doris they don't believe in alien visitation, tell Doris they do believe in alien visitation, ask about the Dragon or ask about time travel.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1724"></child>
-        </children>
-    </item>
-    <item nodeId="node-1724">
-        <command xml:space="preserve">tell doris faraji doesn't believe</command>
-        <result xml:space="preserve">That doesn't seem to be a topic of conversation at the moment.
-
-Faraji can ask who he is, ask where we are, ask how to get home, tell Doris they don't believe in alien visitation, tell Doris they do believe in alien visitation, ask about the Dragon or ask about time travel.
+Faraji can ask who he is, ask where we are, ask how to get home, ask about the mission, ask about the Dragon or ask about time travel.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1725"></child>
+        <children><child nodeId="node-1912"></child>
         </children>
     </item>
-    <item nodeId="node-1725">
-        <command xml:space="preserve">tell doris he don't believe</command>
-        <result xml:space="preserve">"No. The Chief might, but I prefer hard evidence," says Faraji.
+    <item nodeId="node-1912">
+        <command xml:space="preserve">what about the dragon</command>
+        <result xml:space="preserve">Faraji says, "Who is this 'Dragon'?"
 
-Doris nods. "Good, because they haven't. The whole idea is ridiculous. Senator Savra is not an alien." he looks at Faraji significiantly.
+Doris brings his finger to his lips. "Classified. Need to know only."
 
-They look at them unbelievingly. "What are you talking about?"
-
-Doris shakes his head. "I thought you would know. He's a member of a race of Earth beings more ancient than our own. Agent Faraji, Senator Savra is a lizard man."
-
-Faraji can ask who he is, ask where we are, ask how to get home, ask what is a lizard man, ask about the Dragon or ask about time travel.
+Faraji can ask who he is, ask where we are, ask how to get home, ask about the mission or ask about time travel.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1773"></child>
+        <children><child nodeId="node-1941"></child>
         </children>
     </item>
-    <item nodeId="node-1773">
-        <command xml:space="preserve">ask what a lizard man is</command>
-        <result xml:space="preserve">Faraji looks incredulous. "And just what is a lizard man?"
+    <item nodeId="node-1941">
+        <command xml:space="preserve">ask about time travel</command>
+        <result xml:space="preserve">Disbelievingly, Faraji asks, "Time travel? For real?"
 
-"Just what it sounds like. It's a bipedal, intelligent reptilian creature."
+"Yes, yes," Doris responds. "Don't get too worked up over it. It gets old fast."
 
-Faraji can ask who he is, ask where we are, ask how to get home, remind him Savra's not reptilian, ask about the Dragon or ask about time travel.
+Faraji can ask who he is, ask where we are, ask how to get home or ask about the mission.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1774"></child>
+        <children><child nodeId="node-1942"></child>
         </children>
     </item>
-    <item nodeId="node-1774">
-        <command xml:space="preserve">how can i get home</command>
+    <item nodeId="node-1942">
+        <command xml:space="preserve">ask how to get home</command>
         <result xml:space="preserve">Faraji asks, "Just how can I get home from here?"
 
 "Go ask Maggie; she can help you."
 
-Faraji can ask who he is, ask where we are, remind him Savra's not reptilian, ask about the Dragon or ask about time travel.
+Faraji can ask who he is, ask where we are or ask about the mission.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1775"></child>
+        <children><child nodeId="node-1943"></child>
         </children>
     </item>
-    <item nodeId="node-1775">
-        <command xml:space="preserve">ask who you are</command>
-        <result xml:space="preserve">Faraji asks "Who are you?"
+    <item nodeId="node-1943">
+        <command xml:space="preserve">ask about the mission</command>
+        <result xml:space="preserve">"Fine," Faraji says. "What's the mission?"
 
-He looks taken aback for a moment, then recovers his composure. "Ah yes, introductions. I'm Doris, chief of the hyperspatial field office of the Bureau."
+Doris leans back in his chair. "I believe we still have a chance to retrieve our lost agent -- the one that left the thumb drive. He says he was at Enigma Lake, not far from where you found the drive. Now it makes sense that Daniels -- the agent -- would head for some kind of landmark so we could find him, and indeed there is a prominent intersection of leylines in the middle of the lake. Before you say it, yes it's a problem, if that intersection had always been underwater. But Enigma Lake is an artificial reservoir. The town of Enigma Lake was flooded when the reservoir was created, and that's where the intersection is!" Doris concludes with a look of satisfaction.
 
-Faraji can ask where we are, remind him Savra's not reptilian, ask about the Dragon or ask about time travel.
+"So..." Faraji says.
+
+"So. I'm sending you back to 1954, right before the flooding of Enigma Lake, and you'll find whatever Daniels left for us to find. Maybe we can stage a rescue. Why 1954? I'd rather not risk a longer temporal jaunt before we know what we're dealing with."
+
+Faraji can ask who he is, ask where we are or ask how will i find him.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1812"></child>
+        <children><child nodeId="node-1961"></child>
         </children>
     </item>
-    <item nodeId="node-1812">
-        <command xml:space="preserve">savra's not reptilian</command>
-        <result xml:space="preserve">"But Savra isn't a reptile!"
+    <item nodeId="node-1961">
+        <command xml:space="preserve">how will i find him</command>
+        <result xml:space="preserve">"How am I going to find him? Didn't he leave that message in the fourteenth century?"
 
-"He's in disguise! Whatever, it doesn't matter. What matters is your mission."
+Doris looks exasperated. "Well I don't know -- Improvise, use the power of the leylines, look around for anything that looks like it might be a time portal. Something like that. Let's see if the DC office can impress me. Let me know when you're ready to go."
 
-Faraji can ask where we are, ask about the Dragon or ask about time travel.
+Faraji can ask who he is, ask where we are or tell Doris they're ready to go.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1962"></child>
+        </children>
+    </item>
+    <item nodeId="node-1962">
+        <command xml:space="preserve">ready to go</command>
+        <result xml:space="preserve">Squaring their shoulders, Faraji says, "Ready to go."
+
+Doris grins. "Great! First, you'll need this." He hands you a small device. "In case you need to come back for any reason, press this button and you'll come back here. Do not abuse this for trivial matters! Time travel consumes valuable resources. Now go. Out of my office and to the forth you'll find the portal room. It's all ready to send you where you need to go."
+
+Faraji can ask who he is or ask where we are.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>

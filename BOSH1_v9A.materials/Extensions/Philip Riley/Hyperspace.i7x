@@ -409,6 +409,20 @@ The initial appearance is "Doris is sitting cross-legged in a chair, tapping his
 Christy's office is south of the field office hallway. It is in field office area.
 Christy is a nonbinary in Christy's office.
 
+Portal Room 1 is forth of the field office hallway.
+
+The portal to the past is in Portal Room 1. The portal to the past can be activated. it is fixed in place.
+The description is "In the middle of the room looms a large portal made of the same astral stuff this whole dimension is made of[if activated]. Within the portal is a shimmering field of light[otherwise]. There is nothing within the portal[end if]."
+
+Instead of entering the portal to the past when the portal to the past is not activated:
+	say "[We] [walk] straight through it and nothing happens.";
+
+Instead of entering the portal to the past when the portal to the past is activated:
+	say "[We] [enter] the field of light, and suddenly [are] somewhere else.";
+	move the player to the Enigma Lake Town Hall;
+
+Portal Room 2 is back of the field office hallway.
+
 Volume 4 - Characters
 
 Book 1 - Doris
@@ -513,8 +527,15 @@ hand over the thumb drive is a performative quip.
 		
 After discussing hand over the thumb drive:
 	silently try giving the thumb drive to Doris;
-
+	
 about Savra is a questioning quip.
+	Understand "what about Senator/-- Savra" as about Savra.
+	The comment is "'Senator Savra? What does he have to with anything?' [we] [ask].".
+	The reply is "[Doris] says, 'Well you've noticed he's not very friendly to the Bureau? Let's leave it at that for now. We need to talk about the mission.'".
+	it quip-supplies Doris.
+	It follows hand over the thumb drive;
+
+[about Savra is a questioning quip.
 	The comment is "'Senator Savra? What does he have to with anything?' [we] [ask].".
 	The reply is "[Doris] says, 'Tell me, Agent. Do you believe in aliens? That alien species have visited this planet?'".
 	it quip-supplies Doris.
@@ -563,31 +584,52 @@ remind him Savra's not reptilian is a performative quip.
 	The comment is "'But Savra isn't a reptile!'".
 	The reply is "'He's in disguise! Whatever, it doesn't matter. What matters is your mission.'"
 	It quip-supplies Doris.
-	It follows what-is-a-lizard-man.
+	It follows what-is-a-lizard-man.]
 	
 about the mission is a questioning quip.
+	Understand "what about the/-- mission" as about the mission.
 	The comment is "'Fine,' [we] [say]. 'What's the mission?'".
 	The reply is "Doris leans back in his chair. 'I believe we still have a chance to retrieve our lost agent -- the one that left the thumb drive. He says he was at Enigma Lake, not far from where you found the drive. Now it makes sense that Daniels -- the agent -- would head for some kind of landmark so we could find him, and indeed there is a prominent intersection of leylines in the middle of the lake. Before you say it, yes it's a problem, [italic type]if[roman type] that intersection had always been underwater. But Enigma Lake is an artificial reservoir. The town of Enigma Lake was flooded when the reservoir was created, and [italic type]that's[roman type] where the intersection is!' Doris concludes with a look of satisfaction.
 	
-	'So...' [we] [say].
+	'So...' [player's surname] says.
 	
-	'So. I'm sending you back to 1938, right before the flooding of Enigma Lake, and you'll find whatever Daniels left for us to find. Maybe we can stage a rescue. Why 1938? I'd rather not risk a longer temporal jaunt before we know what we're dealing with.'".
+	'So. I'm sending you back to 1954, right before the flooding of Enigma Lake, and you'll find whatever Daniels left for us to find. Maybe we can stage a rescue. Why 1954? I'd rather not risk a longer temporal jaunt before we know what we're dealing with.'".
 	It quip-supplies Doris.
-	It follows remind him Savra's not reptilian. 
+	It follows about Savra.
+	It follows about the Dragon.
+	It follows about time travel. 
 
 about the Dragon is a questioning quip.
+	Understand "what about the/-- Dragon" as about the Dragon.
+	The comment is "[We] [say], 'Who is this [']Dragon[']?'"
+	The reply is "Doris brings his finger to his lips. 'Classified. Need to know only.'".
 	it quip-supplies Doris.
 	It follows hand over the thumb drive;
 	
 about time travel is a questioning quip.
+	Understand "what about time travel" as about time travel.
+	The comment is "Disbelievingly, [we] [ask], 'Time travel? For real?'".
+	The reply is "'Yes, yes,' [Doris] responds. 'Don't get too worked up over it. It gets old fast.'".
 	it quip-supplies Doris.
 	It follows hand over the thumb drive;
 	
-[An availability rule for what savra has to do with it:
-	always available;]
+how will i find him is a questioning quip.
+	The comment is "'How am I going to find him? Didn't he leave that message in the [italic type]fourteenth century[roman type]?'".
+	The reply is "[Doris] looks exasperated. 'Well I don't know -- Improvise, use the power of the leylines, look around for anything that looks like it might be a time portal. Something like that. Let's see if the DC office can impress me. Let me know when you're ready to go.'".
+	It quip-supplies Doris.
+	It follows about the mission.
 
-
-
+ready to go is an informative quip.
+	The printed name is "[force pronoun for player][we]['re] ready to go".
+	Understand "i'm/you're/he's/she's/we're/they're" as ready to go.
+	The comment is "[regarding the player]Squaring [force pronoun for player][our] shoulders, [player's surname] says, 'Ready to go.'"
+	The reply is "Doris grins. 'Great! First, you'll need this.' He hands you a small device. 'In case you need to come back for any reason, press this button and you'll come back here. [italic type]Do not abuse this for trivial matters![roman type] Time travel consumes valuable resources. Now go. Out of my office and to the forth you'll find the portal room. It's all ready to send you where you need to go.'"
+	It quip-supplies Doris.
+	It follows how will i find him.
+		
+After discussing ready to go:
+	now the player carries the recall device;
+	now the portal to the past is activated;
 	
 
 Doris greeted the player is a truth state that varies.
@@ -600,9 +642,13 @@ After printing the locale description when player is in the field office chief's
 		queue Doris with we-don't-have-it;
 	otherwise:
 		queue Doris with what thumb drive;
+		
+Volume 5 - Things
+
+The recall device is a thing. The description is "A small, flat, black device with a small black button on it."
 
 
-Volume 5 - Other Stuff
+Volume 6 - Other Stuff
 
 Book 1 - Help
 

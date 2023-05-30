@@ -581,6 +581,7 @@ Check calling someone on the green smartphone:
 	
 Check dropping the green smartphone:
 	say "You decide against leaving the phone behind." instead;
+	set pronouns from the green smartphone;
 
 To init office:
 	if player is not Ezra Gaunt:
