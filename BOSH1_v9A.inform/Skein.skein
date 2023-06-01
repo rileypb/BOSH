@@ -20,7 +20,7 @@ or (3) Larch Faraji (they/them), lead singer of the third wave neo-old-school pu
 
 The Bureau of Strange Happenings
 An Interactive Phenomenon by Phil Riley
-Release 1 / Serial number 230530 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
+Release 1 / Serial number 230601 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
 
 Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
 
@@ -28,9 +28,13 @@ Their Hyundai is parked nearby.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1985"></child>
+        <children><child nodeId="node-2341"></child>
+            <child nodeId="node-2275"></child>
+            <child nodeId="node-1985"></child>
             <child nodeId="node-1504"></child>
             <child nodeId="node-1686"></child>
+            <child nodeId="node-2518"></child>
+            <child nodeId="node-2248"></child>
             <child nodeId="node-1502"></child>
             <child nodeId="node-1003"></child>
         </children>
@@ -52,7 +56,19 @@ A phone is ringing not too far away.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1004"></child>
+            <child nodeId="node-2287"></child>
         </children>
+    </item>
+    <item nodeId="node-2287">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Faraji extricates themself from talking with Margaret.
+
+Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
+
+A phone is ringing to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1004">
         <command xml:space="preserve">look behind desk</command>
@@ -521,6 +537,750 @@ Faraji can ask who he is, ask where we are, ask how to get home or hand over the
         <result xml:space="preserve"></result>
         <commentary xml:space="preserve"></commentary>
     </item>
+    <item nodeId="node-2248">
+        <command xml:space="preserve">gonear lake at ridge</command>
+        <result xml:space="preserve">Agent Faraji is at the intersection of Lake Street and Ridge Road. The intersection lies at the edge of the lake. Lake Street runs south into town, while Ridge Road heads off into the darkness east of here. A little park along the lake shore is to the west.
+
+There is an abandoned pickup truck at the side of the road.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2249"></child>
+        </children>
+    </item>
+    <item nodeId="node-2249">
+        <command xml:space="preserve">open truck</command>
+        <result xml:space="preserve">Faraji opens the abandoned pickup truck, revealing nothing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2250"></child>
+            <child nodeId="node-2265"></child>
+            <child nodeId="node-2257"></child>
+        </children>
+    </item>
+    <item nodeId="node-2257">
+        <command xml:space="preserve">get in</command>
+        <result xml:space="preserve">Faraji gets into the abandoned truck.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2269"></child>
+            <child nodeId="node-2258"></child>
+        </children>
+    </item>
+    <item nodeId="node-2258">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Faraji stands around and waits.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2259"></child>
+        </children>
+    </item>
+    <item nodeId="node-2259">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Faraji stands around and waits.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2260"></child>
+        </children>
+    </item>
+    <item nodeId="node-2260">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Agent Faraji is in Lake at Ridge. They are in the abandoned truck. The intersection lies at the edge of the lake. Lake Street runs south into town, while Ridge Road runs off into the darkness east of here. The lake shore park is to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2261"></child>
+        </children>
+    </item>
+    <item nodeId="node-2261">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Agent Faraji is in Lake at Ridge. They are in the abandoned truck. The intersection lies at the edge of the lake. Lake Street runs south into town, while Ridge Road runs off into the darkness east of here. The lake shore park is to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2262"></child>
+        </children>
+    </item>
+    <item nodeId="node-2262">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Faraji stands around and waits.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2269">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Agent Faraji is in Lake at Ridge. They are in the abandoned truck. The intersection lies at the edge of the lake. Lake Street runs south into town, while Ridge Road runs off into the darkness east of here. The lake shore park is to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2274"></child>
+        </children>
+    </item>
+    <item nodeId="node-2274">
+        <command xml:space="preserve">open glove compartment</command>
+        <result xml:space="preserve">Faraji opens the glove compartment, revealing a set of keys.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2265">
+        <command xml:space="preserve">enter truck</command>
+        <result xml:space="preserve">Agent Faraji is at the intersection of Lake Street and Ridge Road. They are in the abandoned pickup truck. There is a glove compartment on the passenger side, closed.
+
+The intersection lies at the edge of the lake. Lake Street runs south into town, while Ridge Road heads off into the darkness east of here. A little park along the lake shore is to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2297"></child>
+        </children>
+    </item>
+    <item nodeId="node-2297">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Agent Faraji is at the intersection of Lake Street and Ridge Road. They are in the abandoned pickup truck. There is a glove compartment on the passenger side, closed.
+
+The intersection lies at the edge of the lake. Lake Street runs south into town, while Ridge Road heads off into the darkness east of here. A little park along the lake shore is to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2314"></child>
+        </children>
+    </item>
+    <item nodeId="node-2314">
+        <command xml:space="preserve">open compartment</command>
+        <result xml:space="preserve">Faraji opens the glove compartment, revealing a brass key.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2315"></child>
+        </children>
+    </item>
+    <item nodeId="node-2315">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Agent Faraji is at the intersection of Lake Street and Ridge Road. They are in the abandoned pickup truck. There is a glove compartment on the passenger side, open.
+
+The intersection lies at the edge of the lake. Lake Street runs south into town, while Ridge Road heads off into the darkness east of here. A little park along the lake shore is to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2316"></child>
+        </children>
+    </item>
+    <item nodeId="node-2316">
+        <command xml:space="preserve">take key</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2465"></child>
+            <child nodeId="node-2317"></child>
+        </children>
+    </item>
+    <item nodeId="node-2317">
+        <command xml:space="preserve">take keys</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2318"></child>
+        </children>
+    </item>
+    <item nodeId="node-2318">
+        <command xml:space="preserve">get out</command>
+        <result xml:space="preserve">Faraji gets out of the abandoned pickup truck.
+
+Agent Faraji is at the intersection of Lake Street and Ridge Road. The intersection lies at the edge of the lake. Lake Street runs south into town, while Ridge Road heads off into the darkness east of here. A little park along the lake shore is to the west.
+
+There is an abandoned pickup truck at the side of the road.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2319"></child>
+        </children>
+    </item>
+    <item nodeId="node-2319">
+        <command xml:space="preserve">enter</command>
+        <result xml:space="preserve">Agent Faraji is at the intersection of Lake Street and Ridge Road. They are in the abandoned pickup truck. There is a glove compartment on the passenger side, open.
+
+The intersection lies at the edge of the lake. Lake Street runs south into town, while Ridge Road heads off into the darkness east of here. A little park along the lake shore is to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2320"></child>
+        </children>
+    </item>
+    <item nodeId="node-2320">
+        <command xml:space="preserve">start truck</command>
+        <result xml:space="preserve">None of the keys you have fits the ignition.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2321"></child>
+        </children>
+    </item>
+    <item nodeId="node-2321">
+        <command xml:space="preserve">turn on truck</command>
+        <result xml:space="preserve">None of the keys you have fits the ignition.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2334"></child>
+        </children>
+    </item>
+    <item nodeId="node-2334">
+        <command xml:space="preserve">showme keys</command>
+        <result xml:space="preserve">There seems to be no such object anywhere in the model world.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2335"></child>
+        </children>
+    </item>
+    <item nodeId="node-2335">
+        <command xml:space="preserve">showme key</command>
+        <result xml:space="preserve">(the brass key)
+brass key - thing
+location: carried by Faraji in the abandoned pickup truck in the intersection of Lake Street and Ridge Road
+singular-named, improper-named, unmarked for special listing; unlit, inedible, portable, handled, neuter, seen, familiar, quiet, background
+list grouping key: none
+printed name: "brass key"
+printed plural name: none
+indefinite article: none
+most recent reference: nominal
+third singular pronoun: It-pronoun
+summary: none
+description: none
+initial appearance: none
+dark description: none
+hearability: very loud
+volume: 0.0
+price: $0
+behind description: none
+third-plural-pronoun: They-pronoun
+possessive: none
+portrait: Figure Null
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2336"></child>
+        </children>
+    </item>
+    <item nodeId="node-2336">
+        <command xml:space="preserve">drop key</command>
+        <result xml:space="preserve">Dropped.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2337"></child>
+        </children>
+    </item>
+    <item nodeId="node-2337">
+        <command xml:space="preserve">turn on truck</command>
+        <result xml:space="preserve">Even if this thing runs, you don't have the key.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2338"></child>
+        </children>
+    </item>
+    <item nodeId="node-2338">
+        <command xml:space="preserve">take key</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2339"></child>
+        </children>
+    </item>
+    <item nodeId="node-2339">
+        <command xml:space="preserve">get out</command>
+        <result xml:space="preserve">Faraji gets out of the abandoned pickup truck.
+
+Agent Faraji is at the intersection of Lake Street and Ridge Road. The intersection lies at the edge of the lake. Lake Street runs south into town, while Ridge Road heads off into the darkness east of here. A little park along the lake shore is to the west.
+
+There is an abandoned pickup truck at the side of the road.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2340"></child>
+        </children>
+    </item>
+    <item nodeId="node-2340">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">Faraji is carrying:
+  a brass key
+  the Bureau credit card
+  a green smartphone
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2465">
+        <command xml:space="preserve">start truck</command>
+        <result xml:space="preserve">Your key doesn't fit the ignition.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2474"></child>
+        </children>
+    </item>
+    <item nodeId="node-2474">
+        <command xml:space="preserve">purloin little grey key</command>
+        <result xml:space="preserve">Which do you mean, about the whereabouts of the desk key or the little grey key?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2475"></child>
+        </children>
+    </item>
+    <item nodeId="node-2475">
+        <command xml:space="preserve">both</command>
+        <result xml:space="preserve">[Purloined.]
+[Purloined.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2476"></child>
+        </children>
+    </item>
+    <item nodeId="node-2476">
+        <command xml:space="preserve">start truck</command>
+        <result xml:space="preserve">None of the keys you have fits the ignition.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2477"></child>
+        </children>
+    </item>
+    <item nodeId="node-2477">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">Faraji is carrying:
+  a little grey key
+  about the whereabouts of the desk key
+  a brass key
+  the Bureau credit card
+  a green smartphone
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2478"></child>
+        </children>
+    </item>
+    <item nodeId="node-2478">
+        <command xml:space="preserve">x about the whereabouts</command>
+        <result xml:space="preserve">There seems to be nothing special about it.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2479"></child>
+        </children>
+    </item>
+    <item nodeId="node-2479">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Faraji would have to get out of the abandoned pickup truck first.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2480"></child>
+        </children>
+    </item>
+    <item nodeId="node-2480">
+        <command xml:space="preserve">get out</command>
+        <result xml:space="preserve">Faraji gets out of the abandoned pickup truck.
+
+Agent Faraji is at the intersection of Lake Street and Ridge Road. The intersection lies at the edge of the lake. Lake Street runs south into town, while Ridge Road heads off into the darkness east of here. A little park along the lake shore is to the west.
+
+There is an abandoned pickup truck at the side of the road.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2481"></child>
+        </children>
+    </item>
+    <item nodeId="node-2481">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Agent Faraji is in Lake Street by the Park. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2482"></child>
+        </children>
+    </item>
+    <item nodeId="node-2482">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Agent Faraji is in Lake Street by the Courthouse. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2483"></child>
+        </children>
+    </item>
+    <item nodeId="node-2483">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Agent Faraji is in Main at Lake. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2484"></child>
+        </children>
+    </item>
+    <item nodeId="node-2484">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Agent Faraji is on the 200 block of Main Street. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2485"></child>
+        </children>
+    </item>
+    <item nodeId="node-2485">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Agent Faraji is in Rolle's Department Store. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2486"></child>
+        </children>
+    </item>
+    <item nodeId="node-2486">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Agent Faraji is on the 200 block of Main Street. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2487"></child>
+        </children>
+    </item>
+    <item nodeId="node-2487">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Agent Faraji is at Main and Solvay. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2488"></child>
+        </children>
+    </item>
+    <item nodeId="node-2488">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">(first opening the Skillet door)
+It seems to be locked.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2489"></child>
+        </children>
+    </item>
+    <item nodeId="node-2489">
+        <command xml:space="preserve">open door</command>
+        <result xml:space="preserve">It seems to be locked.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2490"></child>
+        </children>
+    </item>
+    <item nodeId="node-2490">
+        <command xml:space="preserve">open door with brass key</command>
+        <result xml:space="preserve">Faraji unlocks the Skillet door.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2491"></child>
+        </children>
+    </item>
+    <item nodeId="node-2491">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">(first opening the Skillet door)
+Agent Faraji is in Henry's Hot Skillet. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2250">
+        <command xml:space="preserve">enter it</command>
+        <result xml:space="preserve">Faraji gets into the abandoned truck.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2251"></child>
+        </children>
+    </item>
+    <item nodeId="node-2251">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Agent Faraji is in Lake at Ridge. They are in the abandoned truck. The intersection lies at the edge of the lake. Lake Street runs south into town, while Ridge Road runs off into the darkness east of here. The lake shore park is to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2252"></child>
+        </children>
+    </item>
+    <item nodeId="node-2252">
+        <command xml:space="preserve">x glove compartment</command>
+        <result xml:space="preserve">There seems to be nothing special about it.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2253"></child>
+        </children>
+    </item>
+    <item nodeId="node-2253">
+        <command xml:space="preserve">open it</command>
+        <result xml:space="preserve">Faraji opens the glove compartment, revealing a set of keys.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2254"></child>
+        </children>
+    </item>
+    <item nodeId="node-2254">
+        <command xml:space="preserve">take keys</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2518">
+        <command xml:space="preserve">gonear gym basement</command>
+        <result xml:space="preserve">Agent Faraji is in the gym basement. This area is dominated by large banks of lockers.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2519"></child>
+        </children>
+    </item>
+    <item nodeId="node-2519">
+        <command xml:space="preserve">open 3</command>
+        <result xml:space="preserve">Faraji doesn't have a key for the locker.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2520"></child>
+        </children>
+    </item>
+    <item nodeId="node-2520">
+        <command xml:space="preserve">open 1</command>
+        <result xml:space="preserve">Faraji doesn't have a key for the locker.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2521"></child>
+        </children>
+    </item>
+    <item nodeId="node-2521">
+        <command xml:space="preserve">open 345</command>
+        <result xml:space="preserve">Faraji doesn't have a key for the locker.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2522"></child>
+        </children>
+    </item>
+    <item nodeId="node-2522">
+        <command xml:space="preserve">open -1</command>
+        <result xml:space="preserve">Faraji doesn't have a key for the locker.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2523"></child>
+        </children>
+    </item>
+    <item nodeId="node-2523">
+        <command xml:space="preserve">open 0</command>
+        <result xml:space="preserve">Faraji doesn't have a key for the locker.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2524"></child>
+        </children>
+    </item>
+    <item nodeId="node-2524">
+        <command xml:space="preserve">purloin locker key</command>
+        <result xml:space="preserve">[Purloined.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2525"></child>
+        </children>
+    </item>
+    <item nodeId="node-2525">
+        <command xml:space="preserve">open 0</command>
+        <result xml:space="preserve">The lockers are numbered 1 to 100.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2526"></child>
+        </children>
+    </item>
+    <item nodeId="node-2526">
+        <command xml:space="preserve">open 345</command>
+        <result xml:space="preserve">The lockers are numbered 1 to 100.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2527"></child>
+        </children>
+    </item>
+    <item nodeId="node-2527">
+        <command xml:space="preserve">open 1</command>
+        <result xml:space="preserve">The key doesn't fit the lock.
+
+Faraji opens the locker. It contains some dirty gym clothes, among which you find an old copper key. They take it and close the locker.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2528"></child>
+        </children>
+    </item>
+    <item nodeId="node-2528">
+        <command xml:space="preserve">u</command>
+        <result xml:space="preserve">Agent Faraji is in the public gymnasium. There is a basketball court and a weight training area. A front desk is next to the front entrance.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2529"></child>
+        </children>
+    </item>
+    <item nodeId="node-2529">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Agent Faraji is in Lake Street by the gym. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2530"></child>
+        </children>
+    </item>
+    <item nodeId="node-2530">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Faraji can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2531"></child>
+        </children>
+    </item>
+    <item nodeId="node-2531">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Agent Faraji is in Lake Street by the Park. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2532"></child>
+        </children>
+    </item>
+    <item nodeId="node-2532">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Agent Faraji is in Enigma Park. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2533"></child>
+        </children>
+    </item>
+    <item nodeId="node-2533">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Agent Faraji is in the Enigma Lake town hall. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2534"></child>
+        </children>
+    </item>
+    <item nodeId="node-2534">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Faraji can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2535"></child>
+        </children>
+    </item>
+    <item nodeId="node-2535">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Faraji can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2536"></child>
+        </children>
+    </item>
+    <item nodeId="node-2536">
+        <command xml:space="preserve">b</command>
+        <result xml:space="preserve">Faraji can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2537"></child>
+        </children>
+    </item>
+    <item nodeId="node-2537">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Agent Faraji is in Enigma Park. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2538"></child>
+        </children>
+    </item>
+    <item nodeId="node-2538">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Agent Faraji is on the lake shore north of the park. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2539"></child>
+        </children>
+    </item>
+    <item nodeId="node-2539">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Agent Faraji is at the west end of the town's lake shore. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2540"></child>
+        </children>
+    </item>
+    <item nodeId="node-2540">
+        <command xml:space="preserve">unlock door</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2541"></child>
+        </children>
+    </item>
+    <item nodeId="node-2541">
+        <command xml:space="preserve">old key</command>
+        <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2542"></child>
+        </children>
+    </item>
+    <item nodeId="node-2542">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">Faraji is carrying:
+  an old copper key
+  a locker key
+  the Bureau credit card
+  a green smartphone
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2568"></child>
+        </children>
+    </item>
+    <item nodeId="node-2568">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Faraji can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
     <item nodeId="node-1686">
         <command xml:space="preserve">gonear doris</command>
         <result xml:space="preserve">Agent Faraji is in the field office chief's office. Doris's office
@@ -859,6 +1619,9 @@ It is now pitch dark in here!
     <item nodeId="node-1988">
         <command xml:space="preserve">l</command>
         <result xml:space="preserve">Agent Faraji is in the dark. It is pitch dark, and they can't see a thing.
+
+There is a glow-in-the-dark light switch on the wall here, currently off.
+
 There is a strange glow emanating from behind some large dark objects.
 
 &gt;</result>
@@ -1011,7 +1774,1708 @@ It is now pitch dark in here!
     <item nodeId="node-2012">
         <command xml:space="preserve">l</command>
         <result xml:space="preserve">Agent Faraji is in the dark. It is pitch dark, and they can't see a thing.
-A washing maching is revealed in the darkness by the glow emanating from its drum.
+
+There is a glow-in-the-dark light switch on the wall here, currently off.
+
+A washing machine is revealed in the darkness by the glow emanating from its drum.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2026"></child>
+        </children>
+    </item>
+    <item nodeId="node-2026">
+        <command xml:space="preserve">turn on light</command>
+        <result xml:space="preserve">Faraji switches the light switch on.
+
+Agent Faraji is in the back basement. The basement ends here. There is a switch on the wall, currently on. A doorway leads north.
+
+A old broken-down washing machine peeks out from between two stacks of crates.
+
+Also here is a handtruck.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2027"></child>
+        </children>
+    </item>
+    <item nodeId="node-2027">
+        <command xml:space="preserve">enter machine</command>
+        <result xml:space="preserve">Faraji can't get into the closed broken washing machine.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2028"></child>
+        </children>
+    </item>
+    <item nodeId="node-2028">
+        <command xml:space="preserve">open it</command>
+        <result xml:space="preserve">Faraji opens the broken washing machine.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2029"></child>
+        </children>
+    </item>
+    <item nodeId="node-2029">
+        <command xml:space="preserve">enter machine</command>
+        <result xml:space="preserve">There is a flash of light and Faraji finds themself somewhere else...
+
+Agent Faraji is on a featureless hyperplane. They rub their eyes as they try to take in their surroundings. In addition to the usual directions of north and south and east and west, two new directions exist here: back and forth. As a result, the "surface" they're standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
+
+As far as one can see, the hyperplane extends infinitely in all six directions.
+
+In the middle distance is some kind of structure, roughly to the forth.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2030"></child>
+        </children>
+    </item>
+    <item nodeId="node-2030">
+        <command xml:space="preserve">f</command>
+        <result xml:space="preserve">Agent Faraji is on a featureless hyperplane. In addition to the usual directions of north and south and east and west, two new directions exist here: back and forth. As a result, the "surface" they're standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
+
+As far as one can see, the hyperplane extends infinitely in all six directions.
+
+In the middle distance is some kind of structure, roughly to the forth.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2031"></child>
+        </children>
+    </item>
+    <item nodeId="node-2031">
+        <command xml:space="preserve">f</command>
+        <result xml:space="preserve">Agent Faraji is on a featureless hyperplane. In addition to the usual directions of north and south and east and west, two new directions exist here: back and forth. As a result, the "surface" they're standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
+
+As far as one can see, the hyperplane extends infinitely in all six directions.
+
+In the middle distance is some kind of structure, roughly to the forth.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2032"></child>
+        </children>
+    </item>
+    <item nodeId="node-2032">
+        <command xml:space="preserve">f</command>
+        <result xml:space="preserve">Agent Faraji is on a featureless hyperplane. In addition to the usual directions of north and south and east and west, two new directions exist here: back and forth. As a result, the "surface" they're standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
+
+As far as one can see, the hyperplane extends infinitely in all six directions.
+
+Not too far off is some kind of structure, roughly to the forth.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2033"></child>
+        </children>
+    </item>
+    <item nodeId="node-2033">
+        <command xml:space="preserve">f</command>
+        <result xml:space="preserve">Agent Faraji is on a featureless hyperplane. In addition to the usual directions of north and south and east and west, two new directions exist here: back and forth. As a result, the "surface" they're standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
+
+As far as one can see, the hyperplane extends infinitely in all six directions.
+
+Not too far off is some kind of structure, roughly to the forth.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2034"></child>
+        </children>
+    </item>
+    <item nodeId="node-2034">
+        <command xml:space="preserve">f</command>
+        <result xml:space="preserve">Agent Faraji is on a featureless hyperplane. In addition to the usual directions of north and south and east and west, two new directions exist here: back and forth. As a result, the "surface" they're standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
+
+As far as one can see, the hyperplane extends infinitely in all six directions.
+
+Not too far off is some kind of structure, roughly to the forthnorth.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2035"></child>
+        </children>
+    </item>
+    <item nodeId="node-2035">
+        <command xml:space="preserve">fn</command>
+        <result xml:space="preserve">Agent Faraji is on a featureless hyperplane. In addition to the usual directions of north and south and east and west, two new directions exist here: back and forth. As a result, the "surface" they're standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
+
+As far as one can see, the hyperplane extends infinitely in all six directions.
+
+Not too far off is some kind of structure, roughly to the forthwest.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2036"></child>
+        </children>
+    </item>
+    <item nodeId="node-2036">
+        <command xml:space="preserve">fw</command>
+        <result xml:space="preserve">Agent Faraji is on a featureless hyperplane. In addition to the usual directions of north and south and east and west, two new directions exist here: back and forth. As a result, the "surface" they're standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
+
+As far as one can see, the hyperplane extends infinitely in all six directions.
+
+Not too far off is some kind of structure, roughly to the forthnorth.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2037"></child>
+        </children>
+    </item>
+    <item nodeId="node-2037">
+        <command xml:space="preserve">fn</command>
+        <result xml:space="preserve">Agent Faraji is on a featureless hyperplane. In addition to the usual directions of north and south and east and west, two new directions exist here: back and forth. As a result, the "surface" they're standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
+
+As far as one can see, the hyperplane extends infinitely in all six directions.
+
+Not too far off is some kind of structure, roughly to the forthnorth.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2038"></child>
+        </children>
+    </item>
+    <item nodeId="node-2038">
+        <command xml:space="preserve">fn</command>
+        <result xml:space="preserve">Agent Faraji is on a featureless hyperplane. In addition to the usual directions of north and south and east and west, two new directions exist here: back and forth. As a result, the "surface" they're standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
+
+As far as one can see, the hyperplane extends infinitely in all six directions.
+
+Not too far off is some kind of structure, roughly to the forthwest.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2039"></child>
+        </children>
+    </item>
+    <item nodeId="node-2039">
+        <command xml:space="preserve">fw</command>
+        <result xml:space="preserve">Agent Faraji is on a featureless hyperplane. In addition to the usual directions of north and south and east and west, two new directions exist here: back and forth. As a result, the "surface" they're standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
+
+As far as one can see, the hyperplane extends infinitely in all six directions.
+
+Not too far off is some kind of structure, roughly to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2040"></child>
+        </children>
+    </item>
+    <item nodeId="node-2040">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Agent Faraji is on a featureless hyperplane. In addition to the usual directions of north and south and east and west, two new directions exist here: back and forth. As a result, the "surface" they're standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
+
+As far as one can see, the hyperplane extends infinitely in all six directions.
+
+Close by is some kind of structure to the forthnorth.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2041"></child>
+        </children>
+    </item>
+    <item nodeId="node-2041">
+        <command xml:space="preserve">fn</command>
+        <result xml:space="preserve">Agent Faraji is on a featureless hyperplane. In addition to the usual directions of north and south and east and west, two new directions exist here: back and forth. As a result, the "surface" they're standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
+
+As far as one can see, the hyperplane extends infinitely in all six directions.
+
+Close by is some kind of structure to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2042"></child>
+        </children>
+    </item>
+    <item nodeId="node-2042">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Agent Faraji is next to an ethereal pillar. In addition to the usual directions of north and south and east and west, two new directions exist here: back and forth. As a result, the "surface" they're standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
+
+As far as one can see, the hyperplane extends infinitely in all six directions.
+
+There is an ethereal pillar here. A message carved into the pillar says "Seek the origin. -Doris"
+
+Under that is a line of five strange symbols: ◊ ┘ ┐ ┌ └
+
+A mystic compass dangles from an outcropping of the pillar.
+
+Also here is an Ethereal Pillar.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2043"></child>
+        </children>
+    </item>
+    <item nodeId="node-2043">
+        <command xml:space="preserve">take compass</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2044"></child>
+        </children>
+    </item>
+    <item nodeId="node-2044">
+        <command xml:space="preserve">read it</command>
+        <result xml:space="preserve">On the readout of the mystic compass floats a set of ethereal symbols: ┘┐ : ┘┌ : ┘└
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2045"></child>
+        </children>
+    </item>
+    <item nodeId="node-2045">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Agent Faraji is on a featureless hyperplane. In addition to the usual directions of north and south and east and west, two new directions exist here: back and forth. As a result, the "surface" they're standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
+
+As far as one can see, the hyperplane extends infinitely in all six directions.
+
+On the readout of the mystic compass floats a set of ethereal symbols: ┘┐ : ┘┐ : ┘└
+
+Close by is some kind of structure to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2046"></child>
+        </children>
+    </item>
+    <item nodeId="node-2046">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Agent Faraji is on a featureless hyperplane. In addition to the usual directions of north and south and east and west, two new directions exist here: back and forth. As a result, the "surface" they're standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
+
+As far as one can see, the hyperplane extends infinitely in all six directions.
+
+On the readout of the mystic compass floats a set of ethereal symbols: ┘┐ : ┘┘ : ┘└
+
+Not too far off is some kind of structure, roughly to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2047"></child>
+        </children>
+    </item>
+    <item nodeId="node-2047">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Agent Faraji is on a featureless hyperplane. In addition to the usual directions of north and south and east and west, two new directions exist here: back and forth. As a result, the "surface" they're standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
+
+As far as one can see, the hyperplane extends infinitely in all six directions.
+
+On the readout of the mystic compass floats a set of ethereal symbols: ┘┐ : ┘◊ : ┘└
+
+Not too far off is some kind of structure, roughly to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2048"></child>
+        </children>
+    </item>
+    <item nodeId="node-2048">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Agent Faraji is on a featureless hyperplane. In addition to the usual directions of north and south and east and west, two new directions exist here: back and forth. As a result, the "surface" they're standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
+
+As far as one can see, the hyperplane extends infinitely in all six directions.
+
+On the readout of the mystic compass floats a set of ethereal symbols: ┘┐ : └ : ┘└
+
+Not too far off is some kind of structure, roughly to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2049"></child>
+        </children>
+    </item>
+    <item nodeId="node-2049">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Agent Faraji is on a featureless hyperplane. In addition to the usual directions of north and south and east and west, two new directions exist here: back and forth. As a result, the "surface" they're standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
+
+As far as one can see, the hyperplane extends infinitely in all six directions.
+
+On the readout of the mystic compass floats a set of ethereal symbols: ┘┐ : ┌ : ┘└
+
+Not too far off is some kind of structure, roughly to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2050"></child>
+        </children>
+    </item>
+    <item nodeId="node-2050">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Agent Faraji is on a featureless hyperplane. In addition to the usual directions of north and south and east and west, two new directions exist here: back and forth. As a result, the "surface" they're standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
+
+As far as one can see, the hyperplane extends infinitely in all six directions.
+
+On the readout of the mystic compass floats a set of ethereal symbols: ┘┐ : ┐ : ┘└
+
+Not too far off is some kind of structure, roughly to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2051"></child>
+        </children>
+    </item>
+    <item nodeId="node-2051">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Agent Faraji is on a featureless hyperplane. In addition to the usual directions of north and south and east and west, two new directions exist here: back and forth. As a result, the "surface" they're standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
+
+As far as one can see, the hyperplane extends infinitely in all six directions.
+
+On the readout of the mystic compass floats a set of ethereal symbols: ┘┐ : ┘ : ┘└
+
+Not too far off is some kind of structure, roughly to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2052"></child>
+        </children>
+    </item>
+    <item nodeId="node-2052">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Agent Faraji is on a featureless hyperplane. In addition to the usual directions of north and south and east and west, two new directions exist here: back and forth. As a result, the "surface" they're standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
+
+As far as one can see, the hyperplane extends infinitely in all six directions.
+
+On the readout of the mystic compass floats a set of ethereal symbols: ┘┐ : ◊ : ┘└
+
+Not too far off is some kind of structure, roughly to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2053"></child>
+        </children>
+    </item>
+    <item nodeId="node-2053">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Agent Faraji is on a featureless hyperplane. In addition to the usual directions of north and south and east and west, two new directions exist here: back and forth. As a result, the "surface" they're standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
+
+As far as one can see, the hyperplane extends infinitely in all six directions.
+
+On the readout of the mystic compass floats a set of ethereal symbols: ┘┌ : ◊ : ┘└
+
+Not too far off is some kind of structure, roughly to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2054"></child>
+        </children>
+    </item>
+    <item nodeId="node-2054">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Agent Faraji is on a featureless hyperplane. In addition to the usual directions of north and south and east and west, two new directions exist here: back and forth. As a result, the "surface" they're standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
+
+As far as one can see, the hyperplane extends infinitely in all six directions.
+
+On the readout of the mystic compass floats a set of ethereal symbols: ┘└ : ◊ : ┘└
+
+Not too far off is some kind of structure, roughly to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2055"></child>
+        </children>
+    </item>
+    <item nodeId="node-2055">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Agent Faraji is on a featureless hyperplane. In addition to the usual directions of north and south and east and west, two new directions exist here: back and forth. As a result, the "surface" they're standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
+
+As far as one can see, the hyperplane extends infinitely in all six directions.
+
+On the readout of the mystic compass floats a set of ethereal symbols: ┐◊ : ◊ : ┘└
+
+Not too far off is some kind of structure, roughly to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2056"></child>
+        </children>
+    </item>
+    <item nodeId="node-2056">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Agent Faraji is on a featureless hyperplane. In addition to the usual directions of north and south and east and west, two new directions exist here: back and forth. As a result, the "surface" they're standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
+
+As far as one can see, the hyperplane extends infinitely in all six directions.
+
+On the readout of the mystic compass floats a set of ethereal symbols: ┘└ : ◊ : ┘└
+
+Not too far off is some kind of structure, roughly to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2057"></child>
+        </children>
+    </item>
+    <item nodeId="node-2057">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Agent Faraji is on a featureless hyperplane. In addition to the usual directions of north and south and east and west, two new directions exist here: back and forth. As a result, the "surface" they're standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
+
+As far as one can see, the hyperplane extends infinitely in all six directions.
+
+On the readout of the mystic compass floats a set of ethereal symbols: ┘┌ : ◊ : ┘└
+
+Not too far off is some kind of structure, roughly to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2058"></child>
+        </children>
+    </item>
+    <item nodeId="node-2058">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Agent Faraji is on a featureless hyperplane. In addition to the usual directions of north and south and east and west, two new directions exist here: back and forth. As a result, the "surface" they're standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
+
+As far as one can see, the hyperplane extends infinitely in all six directions.
+
+On the readout of the mystic compass floats a set of ethereal symbols: ┘┐ : ◊ : ┘└
+
+Not too far off is some kind of structure, roughly to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2059"></child>
+        </children>
+    </item>
+    <item nodeId="node-2059">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Agent Faraji is on a featureless hyperplane. In addition to the usual directions of north and south and east and west, two new directions exist here: back and forth. As a result, the "surface" they're standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
+
+As far as one can see, the hyperplane extends infinitely in all six directions.
+
+On the readout of the mystic compass floats a set of ethereal symbols: ┘┘ : ◊ : ┘└
+
+Not too far off is some kind of structure, roughly to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2060"></child>
+        </children>
+    </item>
+    <item nodeId="node-2060">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Agent Faraji is on a featureless hyperplane. In addition to the usual directions of north and south and east and west, two new directions exist here: back and forth. As a result, the "surface" they're standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
+
+As far as one can see, the hyperplane extends infinitely in all six directions.
+
+On the readout of the mystic compass floats a set of ethereal symbols: ┘◊ : ◊ : ┘└
+
+Not too far off is some kind of structure, roughly to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2061"></child>
+        </children>
+    </item>
+    <item nodeId="node-2061">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Agent Faraji is on a featureless hyperplane. In addition to the usual directions of north and south and east and west, two new directions exist here: back and forth. As a result, the "surface" they're standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
+
+As far as one can see, the hyperplane extends infinitely in all six directions.
+
+On the readout of the mystic compass floats a set of ethereal symbols: └ : ◊ : ┘└
+
+Not too far off is some kind of structure, roughly to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2062"></child>
+        </children>
+    </item>
+    <item nodeId="node-2062">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Agent Faraji is on a featureless hyperplane. In addition to the usual directions of north and south and east and west, two new directions exist here: back and forth. As a result, the "surface" they're standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
+
+As far as one can see, the hyperplane extends infinitely in all six directions.
+
+On the readout of the mystic compass floats a set of ethereal symbols: ┌ : ◊ : ┘└
+
+Not too far off is some kind of structure, roughly to the northwest.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2063"></child>
+        </children>
+    </item>
+    <item nodeId="node-2063">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Agent Faraji is on a featureless hyperplane. In addition to the usual directions of north and south and east and west, two new directions exist here: back and forth. As a result, the "surface" they're standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
+
+As far as one can see, the hyperplane extends infinitely in all six directions.
+
+On the readout of the mystic compass floats a set of ethereal symbols: ┐ : ◊ : ┘└
+
+Not too far off is some kind of structure, roughly to the northwest.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2064"></child>
+        </children>
+    </item>
+    <item nodeId="node-2064">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Agent Faraji is on a featureless hyperplane. In addition to the usual directions of north and south and east and west, two new directions exist here: back and forth. As a result, the "surface" they're standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
+
+As far as one can see, the hyperplane extends infinitely in all six directions.
+
+On the readout of the mystic compass floats a set of ethereal symbols: ┘ : ◊ : ┘└
+
+In the middle distance is some kind of structure, roughly to the northwest.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2065"></child>
+        </children>
+    </item>
+    <item nodeId="node-2065">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Agent Faraji is on a featureless hyperplane. In addition to the usual directions of north and south and east and west, two new directions exist here: back and forth. As a result, the "surface" they're standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
+
+As far as one can see, the hyperplane extends infinitely in all six directions.
+
+On the readout of the mystic compass floats a set of ethereal symbols: ◊ : ◊ : ┘└
+
+In the middle distance is some kind of structure, roughly to the northwest.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2066"></child>
+        </children>
+    </item>
+    <item nodeId="node-2066">
+        <command xml:space="preserve">b</command>
+        <result xml:space="preserve">Agent Faraji is on a featureless hyperplane. In addition to the usual directions of north and south and east and west, two new directions exist here: back and forth. As a result, the "surface" they're standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
+
+As far as one can see, the hyperplane extends infinitely in all six directions.
+
+On the readout of the mystic compass floats a set of ethereal symbols: ◊ : ◊ : ┘┌
+
+In the middle distance is some kind of structure, roughly to the northwest.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2067"></child>
+        </children>
+    </item>
+    <item nodeId="node-2067">
+        <command xml:space="preserve">b</command>
+        <result xml:space="preserve">Agent Faraji is on a featureless hyperplane. In addition to the usual directions of north and south and east and west, two new directions exist here: back and forth. As a result, the "surface" they're standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
+
+As far as one can see, the hyperplane extends infinitely in all six directions.
+
+On the readout of the mystic compass floats a set of ethereal symbols: ◊ : ◊ : ┘┐
+
+In the middle distance is some kind of structure, roughly to the northwest.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2068"></child>
+        </children>
+    </item>
+    <item nodeId="node-2068">
+        <command xml:space="preserve">b</command>
+        <result xml:space="preserve">Agent Faraji is on a featureless hyperplane. In addition to the usual directions of north and south and east and west, two new directions exist here: back and forth. As a result, the "surface" they're standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
+
+As far as one can see, the hyperplane extends infinitely in all six directions.
+
+On the readout of the mystic compass floats a set of ethereal symbols: ◊ : ◊ : ┘┘
+
+In the middle distance is some kind of structure, roughly to the northwest.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2069"></child>
+        </children>
+    </item>
+    <item nodeId="node-2069">
+        <command xml:space="preserve">b</command>
+        <result xml:space="preserve">Agent Faraji is on a featureless hyperplane. In addition to the usual directions of north and south and east and west, two new directions exist here: back and forth. As a result, the "surface" they're standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
+
+As far as one can see, the hyperplane extends infinitely in all six directions.
+
+On the readout of the mystic compass floats a set of ethereal symbols: ◊ : ◊ : ┘◊
+
+In the middle distance is some kind of structure, roughly to the northwest.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2070"></child>
+        </children>
+    </item>
+    <item nodeId="node-2070">
+        <command xml:space="preserve">b</command>
+        <result xml:space="preserve">Agent Faraji is on a featureless hyperplane. In addition to the usual directions of north and south and east and west, two new directions exist here: back and forth. As a result, the "surface" they're standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
+
+As far as one can see, the hyperplane extends infinitely in all six directions.
+
+On the readout of the mystic compass floats a set of ethereal symbols: ◊ : ◊ : └
+
+In the middle distance is some kind of structure, roughly to the northwest.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2071"></child>
+        </children>
+    </item>
+    <item nodeId="node-2071">
+        <command xml:space="preserve">b</command>
+        <result xml:space="preserve">Agent Faraji is on a featureless hyperplane. In addition to the usual directions of north and south and east and west, two new directions exist here: back and forth. As a result, the "surface" they're standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
+
+As far as one can see, the hyperplane extends infinitely in all six directions.
+
+On the readout of the mystic compass floats a set of ethereal symbols: ◊ : ◊ : ┌
+
+In the middle distance is some kind of structure, roughly to the northwest.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2072"></child>
+        </children>
+    </item>
+    <item nodeId="node-2072">
+        <command xml:space="preserve">b</command>
+        <result xml:space="preserve">Agent Faraji is on a featureless hyperplane. In addition to the usual directions of north and south and east and west, two new directions exist here: back and forth. As a result, the "surface" they're standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
+
+As far as one can see, the hyperplane extends infinitely in all six directions.
+
+On the readout of the mystic compass floats a set of ethereal symbols: ◊ : ◊ : ┐
+
+In the middle distance is some kind of structure, roughly to the northwest.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2073"></child>
+        </children>
+    </item>
+    <item nodeId="node-2073">
+        <command xml:space="preserve">b</command>
+        <result xml:space="preserve">Agent Faraji is on a featureless hyperplane. In addition to the usual directions of north and south and east and west, two new directions exist here: back and forth. As a result, the "surface" they're standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
+
+As far as one can see, the hyperplane extends infinitely in all six directions.
+
+On the readout of the mystic compass floats a set of ethereal symbols: ◊ : ◊ : ┘
+
+In the middle distance is some kind of structure, roughly to the forthnorth.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2074"></child>
+        </children>
+    </item>
+    <item nodeId="node-2074">
+        <command xml:space="preserve">b</command>
+        <result xml:space="preserve">Agent Faraji is at the top of a descending stair. It is made of the same gossamer, questionably real stuff as the ground, the pillar, and the readouts. You can't see past the first turn of the stairs, unfortunately.
+
+On the readout of the mystic compass floats a set of ethereal symbols: ◊ : ◊ : ◊
+
+In the middle distance is some kind of structure, roughly to the forthnorth.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2137"></child>
+        </children>
+    </item>
+    <item nodeId="node-2137">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">Agent Faraji is at field office reception. Hooray you made it!
+
+Also here is Maggie.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2138"></child>
+        </children>
+    </item>
+    <item nodeId="node-2138">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Agent Faraji is in the field office hallway. Hallway
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2139"></child>
+        </children>
+    </item>
+    <item nodeId="node-2139">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Agent Faraji is in the field office chief's office. Doris's office
+
+Doris is sitting cross-legged in a chair, tapping his foot lazily on the desk.
+
+"Ah, Larch," Doris exclaims, standing up to shake their hand. "I've been waiting for you to pay us a visit. Did you bring the thumb drive?"
+
+Faraji can ask who he is, ask where we are, ask how to get home or ask what thumb drive.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2140"></child>
+        </children>
+    </item>
+    <item nodeId="node-2140">
+        <command xml:space="preserve">what thumb drive</command>
+        <result xml:space="preserve">Faraji looks quizzical. "What thumb drive?"
+
+"Huh. Thought you would have found it by now. I'm almost certain it's in your Swamp Park office. Go find it and bring it here." Doris busies himself at his desk, pointedly ignoring you.
+
+Faraji can ask who he is, ask where we are or ask how to get home.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2141"></child>
+        </children>
+    </item>
+    <item nodeId="node-2141">
+        <command xml:space="preserve">purloin thumb drive</command>
+        <result xml:space="preserve">Which do you mean, they don't have it, what thumb drive, show him the thumb drive, hand over the thumb drive or the thumb drive?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2142"></child>
+        </children>
+    </item>
+    <item nodeId="node-2142">
+        <command xml:space="preserve">gonear front office</command>
+        <result xml:space="preserve">Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
+
+The Bureau's latest office manager, Margaret is bustling around with unrestrained enthusiasm, unpacking boxes and assembling an approximation of a respectable front office, all as if the Bureau isn't going to be shut down before the year is out. She sees Faraji and practically squeals. "Agent Faraji! I'm sorry -- Larch! How are you? I hope you don't mind -- I took the liberty of putting your desk together. I just love hex wrenches, don't you? Also, your new phone is here. I put it in your desk. Good timing! Now I just need you to give me your old phone so I can deactivate it."
+
+Faraji hands Margaret their old phone. Margaret taps a few keys on her computer and says "There! All settled."
+
+"Oh, good", Faraji says. "Our phone downgrades have arrived from our bureaucratic betters."
+
+Faraji can ask who he is, ask where we are or ask how to get home.
+
+A phone is ringing not too far away.
+
+Faraji can ask who he is, ask where we are or ask how to get home.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2143"></child>
+        </children>
+    </item>
+    <item nodeId="node-2143">
+        <command xml:space="preserve">hi</command>
+        <result xml:space="preserve">(addressing Margaret)
+A phone is ringing not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2144"></child>
+        </children>
+    </item>
+    <item nodeId="node-2144">
+        <command xml:space="preserve">look behind desk</command>
+        <result xml:space="preserve">There are a number of shelves of office supplies behind the desk. There is also a heating vent on the floor here.
+
+Faraji finds their computer and pulls it out.
+
+A phone is ringing not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2145"></child>
+        </children>
+    </item>
+    <item nodeId="node-2145">
+        <command xml:space="preserve">x computer</command>
+        <result xml:space="preserve">Faraji's computer has been damaged beyond repair. But they do find a thumb drive and take it.
+
+A phone is ringing not too far away.
+
+Faraji can remember finding the drive. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2146"></child>
+        </children>
+    </item>
+    <item nodeId="node-2146">
+        <command xml:space="preserve">gonear doris</command>
+        <result xml:space="preserve">Agent Faraji is in the field office chief's office. Doris's office
+
+Doris is sitting cross-legged in a chair, tapping his foot lazily on the desk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2147"></child>
+        </children>
+    </item>
+    <item nodeId="node-2147">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Faraji stands around and waits.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2148"></child>
+        </children>
+    </item>
+    <item nodeId="node-2148">
+        <command xml:space="preserve">show thumb drive to doris</command>
+        <result xml:space="preserve">Faraji answers, "Yes, I have it."
+
+"Fantastic! Hand it here."
+
+Faraji can ask who he is, ask where we are, ask how to get home or hand over the thumb drive.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2149"></child>
+        </children>
+    </item>
+    <item nodeId="node-2149">
+        <command xml:space="preserve">hand it over</command>
+        <result xml:space="preserve">Faraji gives the thumb drive to Doris.
+
+"Great, great." He peruses the drive. "We lost one of our New York agents to a slingshot effect that threw him far back in time. We're always monitoring for artifacts that are out of place or anachronistic to lead us to lost agents.
+
+He continues, "The scratch marks here say, 'They found me out and sent me back. 14th century. Enigma Lake. Savra is going to move on the Dragon.'"
+
+Faraji can ask who he is, ask where we are, ask how to get home, ask about Savra, ask about the Dragon or ask about time travel.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2150"></child>
+        </children>
+    </item>
+    <item nodeId="node-2150">
+        <command xml:space="preserve">ask about time travel</command>
+        <result xml:space="preserve">Disbelievingly, Faraji asks, "Time travel? For real?"
+
+"Yes, yes," Doris responds. "Don't get too worked up over it. It gets old fast."
+
+Faraji can ask who he is, ask where we are, ask how to get home, ask about Savra, ask about the mission or ask about the Dragon.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2151"></child>
+        </children>
+    </item>
+    <item nodeId="node-2151">
+        <command xml:space="preserve">as about the mission</command>
+        <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2152"></child>
+        </children>
+    </item>
+    <item nodeId="node-2152">
+        <command xml:space="preserve">asm about the mission</command>
+        <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2153"></child>
+        </children>
+    </item>
+    <item nodeId="node-2153">
+        <command xml:space="preserve">ask about the mission</command>
+        <result xml:space="preserve">"Fine," Faraji says. "What's the mission?"
+
+Doris leans back in his chair. "I believe we still have a chance to retrieve our lost agent -- the one that left the thumb drive. He says he was at Enigma Lake, not far from where you found the drive. Now it makes sense that Daniels -- the agent -- would head for some kind of landmark so we could find him, and indeed there is a prominent intersection of leylines in the middle of the lake. Before you say it, yes it's a problem, if that intersection had always been underwater. But Enigma Lake is an artificial reservoir. The town of Enigma Lake was flooded when the reservoir was created, and that's where the intersection is!" Doris concludes with a look of satisfaction.
+
+"So..." Faraji says.
+
+"So. I'm sending you back to 1954, right before the flooding of Enigma Lake, and you'll find whatever Daniels left for us to find. Maybe we can stage a rescue. Why 1954? I'd rather not risk a longer temporal jaunt before we know what we're dealing with."
+
+Faraji can ask who he is, ask where we are, ask how to get home, ask about Savra, ask about the Dragon or ask how will i find him.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2154"></child>
+        </children>
+    </item>
+    <item nodeId="node-2154">
+        <command xml:space="preserve">how will i find</command>
+        <result xml:space="preserve">"How am I going to find him? Didn't he leave that message in the fourteenth century?"
+
+Doris looks exasperated. "Well I don't know -- Improvise, use the power of the leylines, look around for anything that looks like it might be a time portal. Something like that. Let's see if the DC office can impress me. Let me know when you're ready to go."
+
+Faraji can ask who he is, ask where we are, ask how to get home, ask about Savra, ask about the Dragon or tell Doris they're ready to go.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2155"></child>
+        </children>
+    </item>
+    <item nodeId="node-2155">
+        <command xml:space="preserve">ready to go</command>
+        <result xml:space="preserve">Squaring their shoulders, Faraji says, "Ready to go."
+
+Doris grins. "Great! First, you'll need this." He hands you a small device. "In case you need to come back for any reason, press this button and you'll come back here. Do not abuse this for trivial matters! Time travel consumes valuable resources. Now go. Out of my office and to the forth you'll find the portal room. It's all ready to send you where you need to go."
+
+Faraji can ask who he is, ask where we are, ask how to get home, ask about Savra or ask about the Dragon.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2156"></child>
+        </children>
+    </item>
+    <item nodeId="node-2156">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Agent Faraji is in the field office hallway. Hallway
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2157"></child>
+        </children>
+    </item>
+    <item nodeId="node-2157">
+        <command xml:space="preserve">f</command>
+        <result xml:space="preserve">Agent Faraji is in Portal Room 1. 
+
+Also here is a portal to the past.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2158"></child>
+        </children>
+    </item>
+    <item nodeId="node-2158">
+        <command xml:space="preserve">enter portal</command>
+        <result xml:space="preserve">Faraji enters the field of light, and suddenly is somewhere else.
+
+Agent Faraji is in the Enigma Lake town hall. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2243"></child>
+        </children>
+    </item>
+    <item nodeId="node-2243">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Agent Faraji is in Enigma Park. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2244"></child>
+        </children>
+    </item>
+    <item nodeId="node-2244">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Agent Faraji is on the lake shore north of the park. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2245"></child>
+        </children>
+    </item>
+    <item nodeId="node-2245">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Agent Faraji is in Enigma Park. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2246"></child>
+        </children>
+    </item>
+    <item nodeId="node-2246">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Agent Faraji is in the Enigma Lake town hall. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2247"></child>
+        </children>
+    </item>
+    <item nodeId="node-2247">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Agent Faraji is on the 200 block of Main Street. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2275">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">An automatic car wash isn't of much use when one is on foot.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2276"></child>
+        </children>
+    </item>
+    <item nodeId="node-2276">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Just like in the store this once was, the door chimes as Faraji walks in.
+
+Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
+
+The Bureau's latest office manager, Margaret is bustling around with unrestrained enthusiasm, unpacking boxes and assembling an approximation of a respectable front office, all as if the Bureau isn't going to be shut down before the year is out. She sees Faraji and practically squeals. "Agent Faraji! I'm sorry -- Larch! How are you? I hope you don't mind -- I took the liberty of putting your desk together. I just love hex wrenches, don't you? Also, your new phone is here. I put it in your desk. Good timing! Now I just need you to give me your old phone so I can deactivate it."
+
+Faraji hands Margaret their old phone. Margaret taps a few keys on her computer and says "There! All settled."
+
+"Oh, good", Faraji says. "Our phone downgrades have arrived from our bureaucratic betters."
+
+A phone is ringing not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2277"></child>
+        </children>
+    </item>
+    <item nodeId="node-2277">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Faraji extricates themself from talking with Margaret.
+
+Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
+
+A phone is ringing to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2278"></child>
+        </children>
+    </item>
+    <item nodeId="node-2278">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">(first opening Klimp's door)
+It seems to be locked.
+
+A phone is ringing to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2279"></child>
+        </children>
+    </item>
+    <item nodeId="node-2279">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Agent Faraji is in their office. They pause and survey the scene. It's not much -- four white walls, grey industrial carpet. Margaret has helpfully assembled Faraji's desk and chair, though how sturdily is an open question. She also took the time to put up some of Agent Faraji's office decor -- their degree in Nonstandard Investigative Techniques, an original pencil drawing of the Pitfall snake by semi-acclaimed Washington DC artist Darius 5200, and a photo of their softball team. At the very least the wall coverings help compensate for the lack of windows. There's a disconnected landline on the desk. The office door is to the north, and there's a white metal door to the west.
+
+Faraji mutters, "Where's my computer?"
+
+A phone is ringing inside Faraji's desk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2280"></child>
+        </children>
+    </item>
+    <item nodeId="node-2280">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
+
+A phone is ringing to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2281"></child>
+        </children>
+    </item>
+    <item nodeId="node-2281">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
+
+The Bureau's latest office manager, Margaret is bustling around with unrestrained enthusiasm.
+
+A phone is ringing not too far away.
+
+Faraji can ask about the status of the computer.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2282"></child>
+        </children>
+    </item>
+    <item nodeId="node-2282">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Faraji steps out of the office into the parking lot.
+
+Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Their Hyundai is parked nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2341">
+        <command xml:space="preserve">2</command>
+        <result xml:space="preserve">Agent Goldberg is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Her Hyundai is parked nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2342"></child>
+        </children>
+    </item>
+    <item nodeId="node-2342">
+        <command xml:space="preserve">enter office</command>
+        <result xml:space="preserve">Just like in the store this once was, the door chimes as Goldberg walks in.
+
+Agent Goldberg is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
+
+The Bureau's latest office manager, Margaret is bustling around with unrestrained enthusiasm, unpacking boxes and assembling an approximation of a respectable front office, all as if the Bureau isn't going to be shut down before the year is out. She sees Goldberg and practically squeals. "Agent Goldberg! I'm sorry -- Petula! How are you? I hope you don't mind -- I took the liberty of putting your desk together. I just love hex wrenches, don't you? Also, your new phone is here. I put it in your desk. Good timing! Now I just need you to give me your old phone so I can deactivate it."
+
+Goldberg hands Margaret her old phone. Margaret taps a few keys on her computer and says "There! All settled."
+
+"Oh, good", Goldberg says. "Our phone downgrades have arrived from our bureaucratic betters."
+
+A phone is ringing not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2343"></child>
+        </children>
+    </item>
+    <item nodeId="node-2343">
+        <command xml:space="preserve">answer phone</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2344"></child>
+        </children>
+    </item>
+    <item nodeId="node-2344">
+        <command xml:space="preserve">examine photos</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2345"></child>
+        </children>
+    </item>
+    <item nodeId="node-2345">
+        <command xml:space="preserve">search drawers</command>
+        <result xml:space="preserve">Goldberg finds nothing of interest.
+
+A phone is ringing not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2346"></child>
+        </children>
+    </item>
+    <item nodeId="node-2346">
+        <command xml:space="preserve">GO TOWARDS THE RINGING PHONE.</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2347"></child>
+        </children>
+    </item>
+    <item nodeId="node-2347">
+        <command xml:space="preserve">look around</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2348"></child>
+        </children>
+    </item>
+    <item nodeId="node-2348">
+        <command xml:space="preserve">look</command>
+        <result xml:space="preserve">Agent Goldberg is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
+
+The Bureau's latest office manager, Margaret is bustling around with unrestrained enthusiasm.
+
+A phone is ringing not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2349"></child>
+        </children>
+    </item>
+    <item nodeId="node-2349">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Goldberg steps out of the office into the parking lot.
+
+Agent Goldberg is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Her Hyundai is parked nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2350"></child>
+        </children>
+    </item>
+    <item nodeId="node-2350">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Goldberg trudges to the other end of the parking lot. It's much like where she left.
+
+Agent Goldberg is at the north end of the strip mall parking lot. This end is no more auspicious than the other. A convenience store lies to the east. To the west is a military recruitment center. North of here the parking lot exits onto a busy road. There is a rusty sign by the road naming the shopping center: Park Place. South is BOSH headquarters, among other things.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2351"></child>
+        </children>
+    </item>
+    <item nodeId="node-2351">
+        <command xml:space="preserve">ENTER CONVENIENCE STORE</command>
+        <result xml:space="preserve">Goldberg is greeted by a blast of music as she enters the store.
+
+Agent Goldberg is in the Li'l Nectarine Convenience Store. Li'l Nectarine offers great service and low prices, or so they say. This one's cluttered aisles and sparse shelves could make one wonder if that's true. Behind the counter is the typical array of cigarettes and lottery tickets. Under the counter is a glass case containing various useful items.
+
+The clerk, a scruffy man in his mid-twenties, is leaning against the counter, looking bored.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2352"></child>
+        </children>
+    </item>
+    <item nodeId="node-2352">
+        <command xml:space="preserve">approach clerk</command>
+        <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2353"></child>
+        </children>
+    </item>
+    <item nodeId="node-2353">
+        <command xml:space="preserve">EXAMINE GLASS CASE</command>
+        <result xml:space="preserve">In the glass case are a flashlight, a red screwdriver, a laptop computer and some wireless earbuds.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2354"></child>
+        </children>
+    </item>
+    <item nodeId="node-2354">
+        <command xml:space="preserve">take flashlight</command>
+        <result xml:space="preserve">The glass case isn't open.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2355"></child>
+        </children>
+    </item>
+    <item nodeId="node-2355">
+        <command xml:space="preserve">ASK CLERK TO OPEN THE GLASS CASE</command>
+        <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2356"></child>
+        </children>
+    </item>
+    <item nodeId="node-2356">
+        <command xml:space="preserve">talk to clerk</command>
+        <result xml:space="preserve">Goldberg is already talking to the store clerk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2357"></child>
+        </children>
+    </item>
+    <item nodeId="node-2357">
+        <command xml:space="preserve">clerk, open case</command>
+        <result xml:space="preserve">The store clerk has better things to do.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2358"></child>
+        </children>
+    </item>
+    <item nodeId="node-2358">
+        <command xml:space="preserve">USE RED SCREWDRIVER ON GLASS CASE</command>
+        <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2359"></child>
+        </children>
+    </item>
+    <item nodeId="node-2359">
+        <command xml:space="preserve">examine counter</command>
+        <result xml:space="preserve">The counter is arrayed with displays of CBD oil, antacids, and the like.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2360"></child>
+        </children>
+    </item>
+    <item nodeId="node-2360">
+        <command xml:space="preserve">examine displays</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2361"></child>
+        </children>
+    </item>
+    <item nodeId="node-2361">
+        <command xml:space="preserve">ASK CLERK FOR FLASHLIGHT</command>
+        <result xml:space="preserve">That doesn't seem to be a topic of conversation at the moment.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2362"></child>
+        </children>
+    </item>
+    <item nodeId="node-2362">
+        <command xml:space="preserve">ASK CLERK ABOUT FLASHLIGHT</command>
+        <result xml:space="preserve">That doesn't seem to be a topic of conversation at the moment.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2363"></child>
+        </children>
+    </item>
+    <item nodeId="node-2363">
+        <command xml:space="preserve">look</command>
+        <result xml:space="preserve">Agent Goldberg is in the Li'l Nectarine Convenience Store. Li'l Nectarine offers great service and low prices, or so they say. This one's cluttered aisles and sparse shelves could make one wonder if that's true. Behind the counter is the typical array of cigarettes and lottery tickets. Under the counter is a glass case containing various useful items.
+
+The clerk, a scruffy man in his mid-twenties, is leaning against the counter, looking bored.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2364"></child>
+        </children>
+    </item>
+    <item nodeId="node-2364">
+        <command xml:space="preserve">ASK CLERK ABOUT LOTTERY TICKETS</command>
+        <result xml:space="preserve">That doesn't seem to be a topic of conversation at the moment.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2365"></child>
+        </children>
+    </item>
+    <item nodeId="node-2365">
+        <command xml:space="preserve">TELL CLERK YOU NEED TO OPEN THE GLASS CASE</command>
+        <result xml:space="preserve">That doesn't seem to be a topic of conversation at the moment.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2366"></child>
+        </children>
+    </item>
+    <item nodeId="node-2366">
+        <command xml:space="preserve">examine shelves</command>
+        <result xml:space="preserve">Goldberg hardly needs bread, ketchup, or potato chips.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2367"></child>
+        </children>
+    </item>
+    <item nodeId="node-2367">
+        <command xml:space="preserve">leave store</command>
+        <result xml:space="preserve">I only understood you as far as wanting to leave.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2368"></child>
+        </children>
+    </item>
+    <item nodeId="node-2368">
+        <command xml:space="preserve">leave</command>
+        <result xml:space="preserve">Goldberg exits the store into the relative quiet of the nearby traffic.
+
+Agent Goldberg is at the north end of the strip mall parking lot. This end is no more auspicious than the other. A convenience store lies to the east. To the west is a military recruitment center. North of here the parking lot exits onto a busy road. There is a rusty sign by the road naming the shopping center: Park Place. South is BOSH headquarters, among other things.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2369"></child>
+        </children>
+    </item>
+    <item nodeId="node-2369">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Goldberg has things to do here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2370"></child>
+        </children>
+    </item>
+    <item nodeId="node-2370">
+        <command xml:space="preserve"> INVESTIGATE MILITARY RECRUITMENT CENTER</command>
+        <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2371"></child>
+        </children>
+    </item>
+    <item nodeId="node-2371">
+        <command xml:space="preserve">EXAMINE MILITARY RECRUITMENT CENTER</command>
+        <result xml:space="preserve">Patriotic posters paper the windows.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2372"></child>
+        </children>
+    </item>
+    <item nodeId="node-2372">
+        <command xml:space="preserve">read posters</command>
+        <result xml:space="preserve">The new slogan is "Answer the Call!"
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2373"></child>
+        </children>
+    </item>
+    <item nodeId="node-2373">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Goldberg will think about joining the military once the Bureau shuts down.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2374"></child>
+        </children>
+    </item>
+    <item nodeId="node-2374">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Goldberg walks back to the south end of the parking lot.
+
+Agent Goldberg is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Her Hyundai is parked nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2375"></child>
+        </children>
+    </item>
+    <item nodeId="node-2375">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Agent Goldberg is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
+
+The Bureau's latest office manager, Margaret is bustling around with unrestrained enthusiasm.
+
+A phone is ringing not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2376"></child>
+        </children>
+    </item>
+    <item nodeId="node-2376">
+        <command xml:space="preserve">answer phone</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2377"></child>
+        </children>
+    </item>
+    <item nodeId="node-2377">
+        <command xml:space="preserve">check drawers</command>
+        <result xml:space="preserve">Pens, paper, nothing Goldberg's really concerned with now.
+
+A phone is ringing not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2378"></child>
+        </children>
+    </item>
+    <item nodeId="node-2378">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Agent Goldberg is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Her Hyundai is parked nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2379"></child>
+        </children>
+    </item>
+    <item nodeId="node-2379">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Agent Goldberg is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
+
+The Bureau's latest office manager, Margaret is bustling around with unrestrained enthusiasm.
+
+A phone is ringing not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2380"></child>
+        </children>
+    </item>
+    <item nodeId="node-2380">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Goldberg extricates herself from talking with Margaret.
+
+Agent Goldberg is in the hallway. Her office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
+
+A phone is ringing to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2381"></child>
+        </children>
+    </item>
+    <item nodeId="node-2381">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Agent Goldberg is in her office. She pauses and surveys the scene. It's not much -- four white walls, grey industrial carpet. Margaret has helpfully assembled Goldberg's desk and chair, though how sturdily is an open question. She also took the time to put up some of Agent Goldberg's office decor -- her degree in Nonstandard Investigative Techniques, a photo of her dog Pluto, and a print of Green Pheasant by Utagawa Hiroshige. At the very least the wall coverings help compensate for the lack of windows. There's a disconnected landline on the desk. The office door is to the north, and there's a white metal door to the west.
+
+Goldberg mutters, "Where's my computer?"
+
+A phone is ringing inside Goldberg's desk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2382"></child>
+        </children>
+    </item>
+    <item nodeId="node-2382">
+        <command xml:space="preserve">answer phone</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2383"></child>
+        </children>
+    </item>
+    <item nodeId="node-2383">
+        <command xml:space="preserve">check desk drawers</command>
+        <result xml:space="preserve">I only understood you as far as wanting to check Goldberg's desk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2384"></child>
+        </children>
+    </item>
+    <item nodeId="node-2384">
+        <command xml:space="preserve">check desk</command>
+        <result xml:space="preserve">The desk is a cheap DIY piece held together with hex screws. It has a single drawer which is closed.
+
+A phone is ringing inside Goldberg's desk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2385"></child>
+        </children>
+    </item>
+    <item nodeId="node-2385">
+        <command xml:space="preserve">open desk drawer</command>
+        <result xml:space="preserve">I only understood you as far as wanting to open Goldberg's desk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2386"></child>
+        </children>
+    </item>
+    <item nodeId="node-2386">
+        <command xml:space="preserve">open desk</command>
+        <result xml:space="preserve">Goldberg tries to open the desk to answer the phone, but it seems to be locked. She sighs. "Margaret must have the key."
+
+A phone is ringing inside her desk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2387"></child>
+        </children>
+    </item>
+    <item nodeId="node-2387">
+        <command xml:space="preserve">search desk</command>
+        <result xml:space="preserve">There is nothing on Goldberg's desk.
+
+A phone is ringing inside her desk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2388"></child>
+        </children>
+    </item>
+    <item nodeId="node-2388">
+        <command xml:space="preserve">check phone</command>
+        <result xml:space="preserve">It's not yet hooked up.
+
+A phone is ringing inside Goldberg's desk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2389"></child>
+        </children>
+    </item>
+    <item nodeId="node-2389">
+        <command xml:space="preserve">search drawer</command>
+        <result xml:space="preserve">Goldberg can't see inside, since her desk's drawer is closed.
+
+A phone is ringing inside her desk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2390"></child>
+        </children>
+    </item>
+    <item nodeId="node-2390">
+        <command xml:space="preserve">open drawer</command>
+        <result xml:space="preserve">It seems to be locked.
+
+A phone is ringing inside Goldberg's desk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2391"></child>
+        </children>
+    </item>
+    <item nodeId="node-2391">
+        <command xml:space="preserve">ASK MARGARET FOR THE DESK DRAWER KEY</command>
+        <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2392"></child>
+        </children>
+    </item>
+    <item nodeId="node-2392">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Agent Goldberg is in the hallway. Her office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
+
+A phone is ringing to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2393"></child>
+        </children>
+    </item>
+    <item nodeId="node-2393">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Agent Goldberg is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
+
+The Bureau's latest office manager, Margaret is bustling around with unrestrained enthusiasm.
+
+A phone is ringing not too far away.
+
+Goldberg can ask about the whereabouts of the desk key or ask about the status of the computer.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2394"></child>
+        </children>
+    </item>
+    <item nodeId="node-2394">
+        <command xml:space="preserve">ASK MARGARET ABOUT THE WHEREABOUTS OF THE DESK KEY.</command>
+        <result xml:space="preserve">Goldberg says, "Margaret, sweetheart, do you know where my desk key is?"
+
+"Sure I do -- I put it in your desk." She furrows her brow. "What's the matter?"
+
+A phone is ringing not too far away.
+
+Goldberg can ask about the status of the computer or ask for the hex wrench.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2449"></child>
+        </children>
+    </item>
+    <item nodeId="node-2449">
+        <command xml:space="preserve">ASK MARGARET ABOUT THE STATUS OF THE COMPUTER</command>
+        <result xml:space="preserve">"Margaret", Goldberg says, "what's up with my computer?"
+
+"Oh, it got busted up during the move. I have it behind my desk -- you can see it if you want. We'll have to get you a new one."
+
+A phone is ringing not too far away.
+
+Goldberg can ask for the hex wrench.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2450"></child>
+        </children>
+    </item>
+    <item nodeId="node-2450">
+        <command xml:space="preserve">ASK MARGARET FOR THE HEX WRENCH.</command>
+        <result xml:space="preserve">Goldberg says, "Do you happen to have the hex wrench from putting together my desk?"
+
+"Well, I did, but I dropped it down a heating vent behind my desk."
+
+A phone is ringing not too far away.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>

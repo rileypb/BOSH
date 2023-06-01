@@ -136,7 +136,7 @@ Rule for behaving as Margaret when the current behavior of Margaret is throw out
 			try margaret going south;
 		otherwise:
 			try margaret going east;
-	otherwise if margaret is in the front office:
+	otherwise if margaret is in front office:
 		if margaret carries margaret-flattened-boxes:
 			try margaret going west;
 		otherwise:

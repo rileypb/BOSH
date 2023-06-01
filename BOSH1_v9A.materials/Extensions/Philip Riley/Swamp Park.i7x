@@ -12,10 +12,10 @@ Swamp Park is a region.
 
 Chapter 1 - Strip Mall Parking Lot South
 
-The Strip Mall Parking Lot South is a room. The printed name is "south end of the strip mall parking lot". It is east of The Front Office. It is in Swamp Park. It is outdoors.  The preposition is "at". The front office is inside from the Strip Mall Parking Lot South. Understand "end/of/the" as the Strip Mall Parking Lot South.
+The Strip Mall Parking Lot South is a room. The printed name is "south end of the strip mall parking lot". It is east of the front office. It is in Swamp Park. It is outdoors.  The preposition is "at". front office is inside from the Strip Mall Parking Lot South. Understand "end/of/the" as the Strip Mall Parking Lot South.
 The description of the Strip Mall Parking Lot South is "From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north."
 
-Index map with Strip Mall Parking Lot South mapped east of The Front Office.
+Index map with Strip Mall Parking Lot South mapped east of front office.
 
 The Office_ is an unenterable room in Parking Lot South. The printed name is "office". "[We] [gaze] stoically at the sad little storefront that is the new BOSH office. The sign from the previous tenant is still up: 'Angel[']s Department Store'. Through the front window can be seen Margaret, in her usual manic work mode.".
 Instead of entering the office_:
@@ -248,7 +248,7 @@ After printing the description of a dark room when the location is the back base
 	if the broken washing machine is nowhere:
 		say "There is a strange glow emanating from behind some large dark objects.";
 	otherwise:
-		say "A washing maching is revealed in the darkness by the glow emanating from its drum.";
+		say "A washing machine is revealed in the darkness by the glow emanating from its drum.";
 		
 After deciding the scope of the player when the location is the back basement and in darkness:
 	place the light switch in scope;
@@ -278,7 +278,7 @@ Instead of moving the stacks of crates with the handtruck:
 		say "There's no point in moving the cabinets around any further.";
 
 After entering the broken washing machine:
-	say "There is a flash of light and you find yourself somewhere else...";
+	say "There is a flash of light and [we] [find] [ourselves] somewhere else...";
 	move the player to the featureless hyperplane;
 	
 The light switch is a scenery device in the back basement. It is switched on.

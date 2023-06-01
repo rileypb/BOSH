@@ -314,7 +314,9 @@ Staircase coords is always {0, 0, 0}.
 
 Rule for writing a paragraph about the Ethereal Pillar:
 	now visited pillar is true;
-	say "There is an ethereal pillar here. A message carved into the pillar says 'Seek the origin. -Doris'[line break]";
+	say "There is an ethereal pillar here. A message carved into the pillar says 'Seek the origin. -Doris'[paragraph break]";
+	say "Under that is a line of five strange symbols: ◊ ┘ ┐ ┌ └";
+	say paragraph break;
 	
 Rule for writing a paragraph about the mystic compass:
 	say "A mystic compass dangles from an outcropping of the pillar.";	
@@ -602,14 +604,14 @@ about the mission is a questioning quip.
 about the Dragon is a questioning quip.
 	Understand "what about the/-- Dragon" as about the Dragon.
 	The comment is "[We] [say], 'Who is this [']Dragon[']?'"
-	The reply is "Doris brings his finger to his lips. 'Classified. Need to know only.'".
+	The reply is "Doris brings his finger to his lips. 'Classified. Need to know only. But we should be talking about the mission instead.'".
 	it quip-supplies Doris.
 	It follows hand over the thumb drive;
 	
 about time travel is a questioning quip.
 	Understand "what about time travel" as about time travel.
 	The comment is "Disbelievingly, [we] [ask], 'Time travel? For real?'".
-	The reply is "'Yes, yes,' [Doris] responds. 'Don't get too worked up over it. It gets old fast.'".
+	The reply is "'Yes, yes,' [Doris] responds. 'Don't get too worked up over it. It gets old fast. But now we need to talk about the mission.'".
 	it quip-supplies Doris.
 	It follows hand over the thumb drive;
 	

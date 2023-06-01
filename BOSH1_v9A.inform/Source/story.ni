@@ -47,7 +47,7 @@ Include Margaret by Philip Riley.
 Include Enigma Lake by Philip Riley. 
  
 Include Gender Options by Nathanael Nerode.   
-  
+  	
 Include Make Test by Philip Riley.
 
 Use MAX_OBJ_PROP_COUNT of 128.
@@ -214,6 +214,10 @@ After reading a command:
 
 Chapter 1 - Player's Name
 
+When play begins:
+	now left hand status line is "[location-title-case]";
+	now right hand status line is "[agent]";
+
 To continue:
 	say "[bracket]continue[close bracket][paragraph break]";
 	wait for any key;
@@ -221,7 +225,7 @@ To continue:
 The player’s forename is a text that varies. The player’s full name is a text that varies. The player's surname is a text that varies.
 
 To say agent:
-	say "Agent [player's surname]";	
+	say "Agent [player's surname]";	 
 	
 Instead of looking when current play mode is picking character: do nothing.
 
@@ -232,6 +236,34 @@ Rule for constructing the status line when current play mode is picking characte
 To say location-title-case:
 	let L be the substituted form of "[location]" for comparison purposes;
 	say "[L in title case]";
+	
+[To say location-title-case-with-containment:	
+	let L be the substituted form of "[location]" for comparison purposes;
+	let result be "[L in title case]";
+	let intermediate level be the visibility-holder of the player;
+	if visibility level count > 1:
+		repeat with intermediate level count running from 2 to the visibility level count:
+			let segment be a text;
+			if the intermediate level is a supporter or the intermediate level is an animal: 
+				now segment is " on [the intermediate level]" (B);
+			otherwise:
+				now segment is " in [the intermediate level]" (C);
+			if segment is not "":
+				now result is the substituted form of "[result], [segment]";
+			let the intermediate level be the visibility-holder of the intermediate level;
+	say result;]
+ 
+[
+	let intermediate level be the visibility-holder of the actor;
+	if visibility level count > 1:
+		say "[We] [are]";
+		repeat with intermediate level count running from 2 to the visibility level count:
+			if the intermediate level is a supporter or the intermediate level is an animal:
+				say " on [the intermediate level]" (B);
+			otherwise:
+				say " in [the intermediate level]" (C);
+			let the intermediate level be the visibility-holder of the intermediate level;
+		say ". [run paragraph on]";]
 	
 
 Table of Fancy Status
@@ -370,7 +402,7 @@ Klimp in-the-office is a scene. Klimp in-the-office begins when Chief Huffton Kl
 Moira in-the-office is a scene. Moira in-the-office begins when Moira Zin is in Moira's office.
 
 Denouement is a scene.	
-After printing the locale description when the location is the front office for the first time during denouement:
+After printing the locale description when the location is front office for the first time during denouement:
 	say "[We] [trip] over a newspaper left up against the door. [We] [pick] it up.";
 	now the player carries the copy of the Washington Herald.
 
@@ -463,11 +495,11 @@ Moira Zin is a woman. The description is "Agent Moira Zin is the very model of a
 
 moira is familiar.
 
-Rule for writing a paragraph about Margaret Chao when the location is the front office:
+Rule for writing a paragraph about Margaret Chao when the location is front office:
 	say "The Bureau's latest office manager, [Margaret Chao] is bustling around with unrestrained enthusiasm";
-	if the front office is not visited:
+	if front office is not visited:
 		say ", unpacking boxes and assembling an approximation of a respectable front office, all as if the Bureau isn't going to be shut down before the year is out";
-		say ". She sees [player's surname] and practically [squeal]. '[agent]! I'm sorry -- [player's forename]! How are you? I hope you don't mind -- I took the liberty of putting your desk together. I just love hex wrenches, don't you? Also, your new phone is here. I put it in your desk. Good timing! Now I just need you to give me your old phone so I can deactivate it.'[paragraph break]";
+		say ". She sees [player's surname] and practically [squeal]. '[agent]! I'm sorry -- [player's forename]! How are you? I hope you don't mind -- I took the liberty of putting your desk together. I just love hex wrenches, don't you? Also, your new phone is here. I put it in your desk. Now I just need you to give me your old phone so I can deactivate it.'[paragraph break]";
 		say "[Player] [hand] Margaret [our] old phone. [Margaret] [tap] a few keys on [their] computer and [say] 'There! All settled.'";
 		lb;
 		say "'Oh, good', [we] [say]. 'Our phone downgrades have arrived from our bureaucratic betters.'";
@@ -532,7 +564,9 @@ To say maybe insert computer muttering:
 Biff's desk is a desk in Biff's Office. Biff's desk is scenery. It is privately-named. The printed name is "[our] desk".  Understand "desk" as biff's desk. biff's desk's drawer is locked.
 The blue flipphone is a phone. It is in biff's desk's drawer.
 
-The little grey key is in biff's desk's drawer. The little grey key is familiar.
+A key is a kind of thing.
+
+The little grey key is a key. It is in biff's desk's drawer. The little grey key is familiar.
 Biff's desk drawer has matching key the little grey key.
 
 Biff's landline is scenery on Biff's desk. It is privately-named. The printed name is "[our] office phone". The description is "It's not yet hooked up." 
@@ -656,7 +690,7 @@ Carry out knocking on the BOSH back door when the location is the back lot and t
 	move margaret to biff's office;
 	try margaret unlocking the BOSH back door with the white key; 
 	try margaret opening the BOSH back door;
-	now the target location of margaret is the front office;
+	now the target location of margaret is front office;
 	clear behavior of margaret;
 	add behavior walking-to to margaret;
 	add behavior locking-back-door to margaret;
@@ -675,28 +709,28 @@ Moira's door is a door. It is north of the BOSH office hallway and south of Moir
 
 the BOSH office hallway is in BOSH HQ. The printed name is "hallway". "[Our] office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east."
  
- 
+  
   
 Section 4 - Front Office 
 
-The front office is a room. The printed name is "the front office". It is east of the hallway. It is in BOSH HQ. It is outdoor-adjacent.
+the front office is a room. It is east of the hallway. It is in BOSH HQ. It is outdoor-adjacent.
 
-The description of the front office is "It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.".
+The description of front office is "It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.".
 
-The coffee table is a scenery supporter in the front office. "This doesn't look like government-issue furniture. More like thrift store. It's scuffed, but at least it's sturdy."
-The couch is an enterable scenery supporter in the front office. "Apparently the bureau did make off with at least one piece of government furniture. A bland, institutional piece with fake leather seats, it's at least preferable to second-hand upholstery."
-The seating area is scenery in the front office. "A coffee table and couch greet visitors to the office, as if any are expected."
+The coffee table is a scenery supporter in front office. "This doesn't look like government-issue furniture. More like thrift store. It's scuffed, but at least it's sturdy."
+The couch is an enterable scenery supporter in front office. "Apparently the bureau did make off with at least one piece of government furniture. A bland, institutional piece with fake leather seats, it's at least preferable to second-hand upholstery."
+The seating area is scenery in front office. "A coffee table and couch greet visitors to the office, as if any are expected."
 
-The coatrack is scenery in the front office. "It's an old clothing rack from the department store which formerly occupied this space." Understand "old/clothing/rack" as the coatrack.
+The coatrack is scenery in front office. "It's an old clothing rack from the department store which formerly occupied this space." Understand "old/clothing/rack" as the coatrack.
 
-Margaret Chao is in The Front Office.  
+Margaret Chao is in front office.  
 
 There is a copy of the Washington Herald. The description is "The front page story is an account of the disappearance of the grandson of Senate Homeland Security Committee chairman Englund Fryes. His parents, including the Senator's son, were brutally murdered in their home, but the boy, Draco Fryes, is missing and presumed kidnapped. So far there has been no ransom demand.". 
 Understand "newspaper", "paper", "news" as the Washington Herald.
 
-The front desk is a scenery supporter in the front office. Understand "sales", "counter" as the front desk. The description is "The former sales counter now functions as a desk for the office manager (currently [Margaret]). Behind it are a number of shelves holding office supplies."
+The front desk is a scenery supporter in front office. Understand "sales", "counter" as the front desk. The description is "The former sales counter now functions as a desk for the office manager (currently [Margaret]). Behind it are a number of shelves holding office supplies."
 
-The shelves of office supplies are in the front office. They are plural-named. They are scenery. "Pens, paper, nothing [we're] really concerned with now." Understand "drawers" as the shelves of office supplies.
+The shelves of office supplies are in front office. They are plural-named. They are scenery. "Pens, paper, nothing [we're] really concerned with now." Understand "drawers" as the shelves of office supplies.
 
 The thumb drive is a thing in the room of stuff. The description of the thumb drive is "It's a red plastic thumb drive, with what look like symbols scratched on the surface, but they're like no symbols you've ever seen. The metal USB end is somewhat corroded."
 
@@ -704,7 +738,7 @@ Some strange symbols are part of the thumb drive. The description is "They look 
 
 finding the drive is a memory in the room of stuff. The description is "[We] [remember] finding the drive in an ancient Onandaga root cellar on a farm in upstate New York. [We] [have] never been able to read it.".
 
-some cardboard boxes are scenery in the front office. "There is a stack of boxes in the corner.".
+some cardboard boxes are scenery in front office. "There is a stack of boxes in the corner.".
 some biff-flattened-boxes are a thing in the room of stuff. They are privately-named. The printed name is "flattened boxes". Understand "flattened/boxes" as biff-flattened-boxes. The description is "Some cardboard boxes that have been broken down flat for recycling.".
 some margaret-flattened-boxes are a thing in the room of stuff. They are privately-named. The printed name is "flattened boxes". Understand "flattened/boxes" as margaret-flattened-boxes. The description is "Some cardboard boxes that have been broken down flat for recycling."
 
@@ -730,7 +764,7 @@ The behind description of the front desk is "There are a number of shelves of of
 The heating vent is a scenery container. It is openable, closed, lockable, transparent and locked. "A typical air register with a grill which one would hope would stop things like, say, a hex wrench from falling through. It's set in the floor behind the front desk. The vent is held closed by four screws." Understand "heat/air/conditioning/register" as the heating vent. It is undescribed. 
 
 After looking behind the front desk:
-	move the heating vent to the front office;
+	move the heating vent to front office;
 	continue the action;
 
 The hex wrench is in the heating vent. Understand "key/allen" as the hex wrench. The description is "The ubiquitous flat pack furniture tool."
@@ -896,7 +930,7 @@ After going from a room (called R1) to a room (called R2):
 
 Chapter 1 - Leaving the Front Office
 
-After going from the Front Office to the BOSH office hallway for the first time:
+After going from front office to the BOSH office hallway for the first time:
 	If the current interlocutor was Margaret: 
 		say "[We] [extricate] [ourselves] from talking with Margaret.";
 	continue the action;
