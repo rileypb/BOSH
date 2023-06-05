@@ -411,7 +411,7 @@ The initial appearance is "Doris is sitting cross-legged in a chair, tapping his
 Christy's office is south of the field office hallway. It is in field office area.
 Christy is a nonbinary in Christy's office.
 
-Portal Room 1 is forth of the field office hallway.
+Portal Room 1 is forth of the field office hallway. It is in hyperspace.
 
 The portal to the past is in Portal Room 1. The portal to the past can be activated. it is fixed in place.
 The description is "In the middle of the room looms a large portal made of the same astral stuff this whole dimension is made of[if activated]. Within the portal is a shimmering field of light[otherwise]. There is nothing within the portal[end if]."
@@ -423,7 +423,7 @@ Instead of entering the portal to the past when the portal to the past is activa
 	say "[We] [enter] the field of light, and suddenly [are] somewhere else.";
 	move the player to the Enigma Lake Town Hall;
 
-Portal Room 2 is back of the field office hallway.
+Portal Room 2 is back of the field office hallway. It is in hyperspace.
 
 Volume 4 - Characters
 
@@ -438,6 +438,12 @@ who-are-you-doris is a questioning quip.
 	The reply is "He looks taken aback for a moment, then recovers his composure. 'Ah yes, introductions. I'm Doris, chief of the hyperspatial field office of the Bureau.'".
 	It quip-supplies Doris.
 	It stocks Doris.
+	
+about his name is a questioning quip.
+	The comment is "[We] [say], 'Tell me about your name.'".
+	The reply is "'None of your business', [Doris] replies.".
+	It quip-supplies Doris.
+	It follows who-are-you-doris.
 	
 where-is-this-hyperspace is a questioning quip.
 	The printed name is "where we are".
@@ -504,6 +510,8 @@ show him the thumb drive is a performative quip.
 	The comment is "[We] [answer], 'Yes, I have it.'".
 	The reply is "'Fantastic! Hand it here.'".
 	it quip-supplies Doris.
+	It rules out what thumb drive.
+	It rules out we-don't-have-it.
 	
 An availability rule for show him the thumb drive:
 	if the player carries the thumb drive:
@@ -528,7 +536,7 @@ hand over the thumb drive is a performative quip.
 		always available;]
 		
 After discussing hand over the thumb drive:
-	silently try giving the thumb drive to Doris;
+	now Doris carries the thumb drive;
 	
 about Savra is a questioning quip.
 	Understand "what about Senator/-- Savra" as about Savra.

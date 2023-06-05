@@ -212,7 +212,7 @@ laundromat-region is a region. It is in Swamp Park.
 The laundromat-store is a room.
 It is privately-named. The printed name is "laundromat". Understand "A-plus/plus/laundromat" as the laundromat-store. It is in laundromat-region.
 
-"Dingy machines line the walls. A doorway leads west."
+"Antique washing machines line the walls. A doorway leads west."
 
 The handtruck is in the laundromat-store. It is pushable between rooms.
 Understand "hand/truck" as the handtruck.
@@ -379,8 +379,14 @@ An availability rule for for-a-screwdriver-clerk:
 	
 strip mall parking lot north is outside from the the Li'l Nectarine Convenience Store.
 
-[Table of Excuses (continued)
-source room (a room)	dirs (a list of directions)	excuse (a text)]
+Table of Excuses (continued)
+source room (a room)	dirs (a list of directions)	excuse (a text)
+Strip Mall Parking Lot South	{south, southeast}	"The swamp would just muck up [agent]'s clothes."
+Strip Mall Parking Lot South	{east}	"An automatic car wash isn't of much use when one is on foot."
+Strip Mall Parking Lot South	{northeast}	"A fence prevents [us] from leaving the property."
+Strip Mall Parking Lot North	{northeast, southeast}	"A fence prevents [us] from leaving the property."
+Strip Mall Parking Lot North	{northwest, southwest}	"The only thing to the west is the military recruitment center."
+
 
 Table of Frustrated Taking (continued)
 target (a thing)	message (a text)	move message (a text)

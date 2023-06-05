@@ -92,7 +92,7 @@ An availability rule for to unlock the backdoor:
 	If the player knows back-door-is-locked:
 		always available;
 
-about-the-phone-exchange is a questioning quip.
+about the phone exchange is a questioning quip.
 	The comment is "[We] [ask], 'What's going on with the phones, Margaret?'".
 	The reply is "[Margaret] looks apologetic. 'I'm sorry, I thought everyone knew. Budget cuts. They're trading in all our smart phones for cheaper models.'".
 	It quip-supplies Margaret.
