@@ -9,60 +9,62 @@
             <key>3</key>
             <string>Figures/clerk_portrait.png</string>
             <key>4</key>
-            <string>Figures/goldberg_portrait.png</string>
+            <string>Figures/darkness.png</string>
             <key>5</key>
-            <string>Figures/gaunt_portrait.png</string>
+            <string>Figures/goldberg_portrait.png</string>
             <key>6</key>
-            <string>Figures/faraji_portrait_6.png</string>
+            <string>Figures/gaunt_portrait.png</string>
             <key>7</key>
-            <string>Figures/klimp_portrait.png</string>
+            <string>Figures/faraji_portrait_6.png</string>
             <key>8</key>
-            <string>Figures/margaret_portrait_2.png</string>
+            <string>Figures/klimp_portrait.png</string>
             <key>9</key>
-            <string>Figures/draco_portrait.png</string>
+            <string>Figures/margaret_portrait_2.png</string>
             <key>10</key>
-            <string>Figures/clerk_portrait_2.png</string>
+            <string>Figures/draco_portrait.png</string>
             <key>11</key>
-            <string>Figures/pawn_portrait.png</string>
+            <string>Figures/clerk_portrait_2.png</string>
             <key>12</key>
-            <string>Figures/doris_portrait.png</string>
+            <string>Figures/pawn_portrait.png</string>
             <key>13</key>
-            <string>Figures/speech_bubble.png</string>
+            <string>Figures/doris_portrait.png</string>
             <key>14</key>
-            <string>Figures/phone_handset.png</string>
+            <string>Figures/speech_bubble.png</string>
             <key>15</key>
-            <string>Figures/phone_icon.png</string>
+            <string>Figures/phone_handset.png</string>
             <key>16</key>
-            <string>Figures/caller_portrait_2.png</string>
+            <string>Figures/phone_icon.png</string>
             <key>17</key>
-            <string>Figures/location_parking_lot.png</string>
+            <string>Figures/caller_portrait_2.png</string>
             <key>18</key>
-            <string>Figures/location_pawn_shop.png</string>
+            <string>Figures/location_parking_lot.png</string>
             <key>19</key>
-            <string>Figures/location_bosh_2.png</string>
+            <string>Figures/location_pawn_shop.png</string>
             <key>20</key>
-            <string>Figures/location_nectarine.png</string>
+            <string>Figures/location_bosh_2.png</string>
             <key>21</key>
-            <string>Figures/location_laundromat.png</string>
+            <string>Figures/location_nectarine.png</string>
             <key>22</key>
-            <string>Figures/location_white_tunnel.png</string>
+            <string>Figures/location_laundromat.png</string>
             <key>23</key>
-            <string>Figures/moira_portrait.png</string>
+            <string>Figures/location_white_tunnel.png</string>
             <key>24</key>
-            <string>Figures/location_hyperspace.png</string>
+            <string>Figures/moira_portrait.png</string>
             <key>25</key>
-            <string>Figures/location_enigma_lake.png</string>
+            <string>Figures/location_hyperspace.png</string>
             <key>26</key>
-            <string>Figures/location_enigma_park.png</string>
+            <string>Figures/location_enigma_lake.png</string>
             <key>27</key>
-            <string>Figures/location_lake_shore.png</string>
+            <string>Figures/location_enigma_park.png</string>
             <key>28</key>
-            <string>Figures/location_field_office.png</string>
+            <string>Figures/location_lake_shore.png</string>
             <key>29</key>
-            <string>Figures/maggie_portrait.png</string>
+            <string>Figures/location_field_office.png</string>
             <key>30</key>
-            <string>Figures/minerva_portrait.png</string>
+            <string>Figures/maggie_portrait.png</string>
             <key>31</key>
+            <string>Figures/minerva_portrait.png</string>
+            <key>32</key>
             <string>Figures/christy_portrait.png</string>
         </dict>
     </dict>

@@ -91,11 +91,11 @@ this is the room description astral passages rule:
 				let C be number of entries of directions;
 				say "[if C is 1]A hyperspatial tunnel[otherwise]Hyperspatial tunnels[end if] [regarding C][lead] in the [regarding C]direction[if C > 1]s[end if] of [directions]."; 
 				
-[After wearing the astral lenses when could see hypertunnels:
+[After wearing the astral lenses when could see hypertunnels and darkness witnessed is false:
 	try looking;
 	continue the action;
 				
-After taking off the astral lenses when could see hypertunnels:
+After taking off the astral lenses when could see hypertunnels and not in darkness:
 	try looking;
 	continue the action;]
 	

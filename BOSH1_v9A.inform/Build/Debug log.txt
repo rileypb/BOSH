@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 8932 words long.
+I've now read your source text, which is 8991 words long.
 
 
 -----------------------------------------------------
@@ -33,7 +33,7 @@ I've also read Glulx Text Effects by Emily Short, which is 2182 words long.
 I've also read Formatting Capture by Daniel Stelzer, which is 671 words long.
 I've also read Essentials by Philip Riley, which is 579 words long.
 I've also read Facts by Philip Riley, which is 175 words long.
-I've also read Phones by Philip Riley, which is 1902 words long.
+I've also read Phones by Philip Riley, which is 1906 words long.
 I've also read Commerce by Philip Riley, which is 504 words long.
 I've also read Furniture by Philip Riley, which is 74 words long.
 I've also read Third Person Narration by Philip Riley, which is 669 words long.
@@ -46,17 +46,17 @@ I've also read New Light by Philip Riley, which is 113 words long.
 I've also read Early Declarations by Philip Riley, which is 23 words long.
 I've also read Basics by Philip Riley, which is 195 words long.
 I've also read Memories by Philip Riley, which is 243 words long.
-I've also read Simple Conversation by Philip Riley, which is 1786 words long.
+I've also read Simple Conversation by Philip Riley, which is 1930 words long.
 I've also read Hyperspace by Philip Riley, which is 4122 words long.
 I've also read BOSH Facts by Philip Riley, which is 94 words long.
 I've also read Image Strip by Philip Riley, which is 2080 words long.
-I've also read Swamp Park by Philip Riley, which is 3519 words long.
-I've also read Margaret by Philip Riley, which is 959 words long.
+I've also read Swamp Park by Philip Riley, which is 3565 words long.
+I've also read Margaret by Philip Riley, which is 1178 words long.
 I've also read Enigma Lake by Philip Riley, which is 970 words long.
 I've also read Gender Options by Nathanael Nerode, which is 7730 words long.
 I've also read Make Test by Philip Riley, which is 216 words long.
 I've also read BOSH Tests by Philip Riley, which is 221 words long.
-I've also read Hearing by Philip Riley, which is 1111 words long.
+I've also read Hearing by Philip Riley, which is 1217 words long.
 I've also read PBR Common by Philip Riley, which is 106 words long.
 I've also read Walls by Philip Riley, which is 898 words long.
 I've also read Floors by Philip Riley, which is 900 words long.
@@ -226,17 +226,17 @@ Phase XII ... Code generation
                                                             Fail: list of numbers (~) number = nothing
                                             Fail: nothing (~) real number = nothing
                                             Fail: list of numbers (~) real number = nothing
-        Regional: CONSTANT_VNT'bosh hq'-region(I449_bosh_hq)(I343'bosh hq')
+        Regional: CONSTANT_VNT'bosh hq'-region(I450_bosh_hq)(I344'bosh hq')
          == region
-        Regional: CONSTANT_VNT'bosh hq'-region(I449_bosh_hq)(I343'bosh hq')
-         == region
-        Regional: CONSTANT_VNT'laundromat-region'-region(I338_laundromat_region)(I236'laundromat-region')
+        Regional: CONSTANT_VNT'bosh hq'-region(I450_bosh_hq)(I344'bosh hq')
          == region
         Regional: CONSTANT_VNT'laundromat-region'-region(I338_laundromat_region)(I236'laundromat-region')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I382_elr)(I280'elr')
+        Regional: CONSTANT_VNT'laundromat-region'-region(I338_laundromat_region)(I236'laundromat-region')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I382_elr)(I280'elr')
+        Regional: CONSTANT_VNT'elr'-region(I383_elr)(I281'elr')
+         == region
+        Regional: CONSTANT_VNT'elr'-region(I383_elr)(I281'elr')
          == region
         Regional: CONSTANT_VNT'field office area'-region(I247_field_office_area)(I155'field office area')
          == region
@@ -288,7 +288,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 205 files written as streams.
-CPU time: 436 centiseconds
+CPU time: 461 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

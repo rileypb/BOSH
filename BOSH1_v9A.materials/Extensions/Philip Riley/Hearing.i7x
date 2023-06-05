@@ -152,7 +152,17 @@ Rule for printing the sound description for something (called T) when the number
 	say "[Generic description of T] is ";
 	carry out the printing the sound action activity with T;
 	let X be the best route from location to location of T, using doors;
-	say " to the [X].";
+	if X is:
+		-- inside:
+			say " inside[if the location of T is visited] [the location of T][end if].";
+		-- outside:
+			say " outside[if the location of T is visited], [the preposition of the location of T] [the location of T][end if].";
+		-- up:
+			say " above [us][if the location of T is visited], [the preposition of the location of T] [the location of T][end if].";
+		-- down:
+			say " below [us][if the location of T is visited], [the preposition of the location of T] [the location of T][end if].";
+		-- otherwise:
+			say " to the [X][if the location of T is visited], [the preposition of the location of T] [the location of T][end if].";
 	
 Rule for printing the sound description for something (called T) (this is the default sound description rule):
 	follow the audibility of rules for T;

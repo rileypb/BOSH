@@ -258,7 +258,7 @@ Instead of examining a phone (called P) when the noun is ringing:
 				if the player knows caller number:
 					say "The caller ID says [Caller].";
 				otherwise:
-					say "[We] [don't] recognize the number.";
+					say "[We] [don't] recognize the number on the caller ID.";
 	otherwise:
 		say "You better answer it.";
 	

@@ -91,12 +91,39 @@ to unlock the backdoor is a questioning quip.
 An availability rule for to unlock the backdoor:
 	If the player knows back-door-is-locked:
 		always available;
-		
-about potatoes is a questioning quip.
-	The comment is "potatos?".
-	The reply is "No, potatoes.".
-	It quip-supplies margaret.
-	It is ubiquitous.
+
+about-the-phone-exchange is a questioning quip.
+	The comment is "[We] [ask], 'What's going on with the phones, Margaret?'".
+	The reply is "[Margaret] looks apologetic. 'I'm sorry, I thought everyone knew. Budget cuts. They're trading in all our smart phones for cheaper models.'".
+	It quip-supplies Margaret.
+	It stocks Margaret.
+
+	
+Chapter 1 - Comments about items
+	
+
+Table of Quiz Topics (continued)
+subject (a thing)	interlocutor (a person)	comment (a text)	reply (a text)
+coatrack	Margaret	--	"She grins. 'Good thinking, right?'"
+shelves of office supplies	Margaret	--	"'I doubt you'll be needing any of that now, but if you do, let me know.'"
+cardboard boxes	Margaret	--	"'Hmm, I guess I need to bring those out back to the dumpster.'"
+coffee table	Margaret	--	"'It's not much, but what can you expect for $8?'"
+
+Instead of quizzing Margaret Chao about Chief Klimp:
+	if Chief Klimp is not in BOSH Chief's Office:
+		say "[We] [say], 'Margaret, Have you seen Klimp this morning?'[paragraph break]";
+		say "[regarding Margaret Chao][They] shakes her head. 'He hasn't been in yet.'[line break]";
+	otherwise:
+		say "Where's the Chief?'[paragraph break]";
+		say "[Margaret] points towards the hall. 'He's in his office.'";
+
+Instead of quizzing Margaret Chao about Moira Zin:
+	if Moira Zin is not in Moira's Office:
+		say "[We] [say], 'Has Moira come in yet?'[paragraph break]";
+		say "[Margaret] barely looks up from her work. 'Nope.'[line break]";
+	otherwise:
+		say "Have you seen Moira?'[paragraph break]";
+		say "[Margaret] nods. 'I think she's working in her office.'";
 		
 Book 3 - The Boxes
 

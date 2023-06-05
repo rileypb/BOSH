@@ -250,6 +250,8 @@ After printing the description of a dark room when the location is the back base
 	otherwise:
 		say "A washing machine is revealed in the darkness by the glow emanating from its drum.";
 		
+The strange glow is scenery in the back basement. "The glow is blue-white and flickering."
+		
 After deciding the scope of the player when the location is the back basement and in darkness:
 	place the light switch in scope;
 
@@ -376,6 +378,13 @@ An availability rule for for-a-screwdriver-clerk:
 		always available;
 	
 strip mall parking lot north is outside from the the Li'l Nectarine Convenience Store.
+
+[Table of Excuses (continued)
+source room (a room)	dirs (a list of directions)	excuse (a text)]
+
+Table of Frustrated Taking (continued)
+target (a thing)	message (a text)	move message (a text)
+stacks of crates	"Those are too heavy to take."	"Those are too heavy to move unaided."
 
 
 Table of Floors (continued)

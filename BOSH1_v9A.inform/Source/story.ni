@@ -139,7 +139,7 @@ Intro Text is always "As an agent of the Bureau of Strange Happenings (BOSH), it
 	We open on a decrepit strip mall just as an aging Hyundai pulls into the potholed parking lot. [agent] steps out of the car. [We] [survey] the area and [wrinkle] [our] nose.[paragraph break]".
 
 	
-	
+	 
 
 
 The isolation booth is a room.
@@ -343,12 +343,16 @@ the can't greet yourself rule response (A) is "[We] [don't] generally talk to [o
 the can't take what's fixed in place rule response (A) is "That can't be picked up.".
 the can't switch on unless switchable rule response (A) is "That can't be switched on and off.".  
 
+The room description body text rule response (A) is "Some light would be nice.".
+
 [the can't touch rule does nothing when the action name part of the current action is identifying action.]
  
 [Book 5 - Tweaks to Threaded Conversation
 
 the standard listing subject changes rule response (A) is "[italic type][quip-suggestion-phrase][the prepared list delimited in disjunctive style].[roman type]".
 the standard quip plausibility rule response (A) is "[italic type][quip-suggestion-phrase][the prepared list delimited in disjunctive style].[roman type]"]
+
+
 
 Book 5 - Automatic greeting
 
@@ -715,6 +719,8 @@ Section 4 - Front Office
 
 the front office is a room. It is east of the hallway. It is in BOSH HQ. It is outdoor-adjacent.
 
+Understand "storefront" as the front office.
+
 The description of front office is "It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.".
 
 The coffee table is a scenery supporter in front office. "This doesn't look like government-issue furniture. More like thrift store. It's scuffed, but at least it's sturdy."
@@ -730,9 +736,9 @@ Understand "newspaper", "paper", "news" as the Washington Herald.
 
 The front desk is a scenery supporter in front office. Understand "sales", "counter" as the front desk. The description is "The former sales counter now functions as a desk for the office manager (currently [Margaret]). Behind it are a number of shelves holding office supplies."
 
-The shelves of office supplies are in front office. They are plural-named. They are scenery. "Pens, paper, nothing [we're] really concerned with now." Understand "drawers" as the shelves of office supplies.
+The shelves of office supplies are in front office. They are plural-named. They are scenery. "Pens, paper, nothing [we're] really concerned with now." Understand "drawers/pens/pen/pencils/pencil/paper/papers" as the shelves of office supplies.
 
-The thumb drive is a thing in the room of stuff. The description of the thumb drive is "It's a red plastic thumb drive, with what look like symbols scratched on the surface, but they're like no symbols you've ever seen. The metal USB end is somewhat corroded."
+The thumb drive is a thing in the room of stuff. The description of the thumb drive is "It's a red plastic thumb drive, with what look like symbols scratched on the surface, but they're like no symbols you've ever seen. The metal USB end is somewhat corroded." Understand "USB/flash/memory" as the thumb drive.
 
 Some strange symbols are part of the thumb drive. The description is "They look like some kind of language, but none you recognize."
 
@@ -957,6 +963,7 @@ Rule for starting the virtual machine:
 	
 [graphics background color is "#FFFFFF";] 
 	
+Figure Darkness is the file "darkness.png".
 Figure Goldberg is the file "goldberg_portrait.png".
 Figure Gaunt is the file "gaunt_portrait.png".
 Figure Faraji is the file "faraji_portrait_6.png".
@@ -1006,6 +1013,7 @@ Characters is a list of figure names that varies.
 
 To decide which figure name is the picture of the location:
 	let result be Figure Null;
+	if in darkness, decide on Figure Darkness;
 	if location is Parking Lot South or location is Parking Lot North, now result is Figure Parking Lot;
 	if location is Dave's Pawn Shop, now result is Figure Pawn Shop;
 	if location is in BOSH HQ, now result is Figure BOSH;
@@ -1062,7 +1070,7 @@ The first glulx picture selection rule (this is the bosh picture selection rule)
 handset count is a number that varies.
 bubble count is a number that varies.
 
-Every turn: 
+This is the draw images rule: 
 	follow the current graphics drawing rule;
 	if the player is talking with someone (called P): 
 		if the portrait of P is listed in characters:
@@ -1078,7 +1086,9 @@ Every turn:
 			increment local count;
 			if C is the portrait of current interlocutor:
 				now bubble count is local count;
-		draw speech bubble;				
+		draw speech bubble;		
+		
+The draw images rule is listed after the adjust light rule in the turn sequence rules.		
 		
 To draw speech bubble: 
 	(- DrawSpeechBubble(); -)
