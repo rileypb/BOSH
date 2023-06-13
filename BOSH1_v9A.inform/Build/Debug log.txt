@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 8975 words long.
+I've now read your source text, which is 9185 words long.
 
 
 -----------------------------------------------------
@@ -24,7 +24,7 @@ Phase II ... Semantic analysis Ia
 I've also read Standard Rules by Graham Nelson, which is 40949 words long.
 I've also read English Language by Graham Nelson, which is 2297 words long.
 I've also read Epistemology by Eric Eve, which is 1505 words long.
-I've also read Conversation Framework by Eric Eve, which is 5190 words long.
+I've also read Conversation Framework by Eric Eve, which is 5214 words long.
 I've also read Conversation Responses by Eric Eve, which is 1855 words long.
 I've also read Conversational Defaults by Eric Eve, which is 2247 words long.
 I've also read Basic Screen Effects by Emily Short, which is 2218 words long.
@@ -46,17 +46,17 @@ I've also read New Light by Philip Riley, which is 113 words long.
 I've also read Early Declarations by Philip Riley, which is 23 words long.
 I've also read Basics by Philip Riley, which is 195 words long.
 I've also read Memories by Philip Riley, which is 243 words long.
-I've also read Simple Conversation by Philip Riley, which is 1930 words long.
-I've also read Hyperspace by Philip Riley, which is 4170 words long.
+I've also read Simple Conversation by Philip Riley, which is 1935 words long.
+I've also read Hyperspace by Philip Riley, which is 4215 words long.
 I've also read BOSH Facts by Philip Riley, which is 94 words long.
 I've also read Image Strip by Philip Riley, which is 2080 words long.
-I've also read Swamp Park by Philip Riley, which is 3663 words long.
-I've also read Margaret by Philip Riley, which is 1181 words long.
+I've also read Swamp Park by Philip Riley, which is 3447 words long.
+I've also read Margaret by Philip Riley, which is 1143 words long.
 I've also read Enigma Lake by Philip Riley, which is 970 words long.
 I've also read Gender Options by Nathanael Nerode, which is 7730 words long.
 I've also read Make Test by Philip Riley, which is 216 words long.
 I've also read BOSH Tests by Philip Riley, which is 221 words long.
-I've also read Hearing by Philip Riley, which is 1217 words long.
+I've also read Hearing by Philip Riley, which is 1222 words long.
 I've also read PBR Common by Philip Riley, which is 106 words long.
 I've also read Walls by Philip Riley, which is 898 words long.
 I've also read Floors by Philip Riley, which is 900 words long.
@@ -65,10 +65,13 @@ I've also read Can't Go That Way by Philip Riley, which is 812 words long.
 I've also read Can't Take That by Philip Riley, which is 514 words long.
 I've also read Complex Listing by Emily Short, which is 3410 words long.
 I've also read Exit Lister by Eric Eve, which is 3510 words long.
-I've also read Options Paragraph by Philip Riley, which is 198 words long.
-I've also read Glulx Entry Points by Emily Short, which is 2682 words long.
+I've also read Options Paragraph by Philip Riley, which is 180 words long.
+I've also read Glulx Entry Points by Emily Short, which is 1903 words long.
 I've also read Door Varieties by Philip Riley, which is 296 words long.
 I've also read Playtest by Philip Riley, which is 923 words long.
+I've also read Glulx Definitions by Dannii Willis, which is 879 words long.
+I've also read Glk Object Recovery by Dannii Willis, which is 460 words long.
+I've also read Glk Events by Dannii Willis, which is 161 words long.
 I've also read Two-Sided Doors by Philip Riley, which is 2267 words long.
 I've also read Unit Testing by Peter Orme, which is 1643 words long.
 I've also read Developer Framework by Peter Orme, which is 435 words long.
@@ -127,6 +130,10 @@ Phase XI ... Phrases and rules
 -----------------------------------------------------
 
 Regional: CONSTANT_VNT'hyperspace'-region(I232_hyperspace)(I140'hyperspace')
+ == region
+Regional: CONSTANT_VNT'field office area'-region(I247_field_office_area)(I155'field office area')
+ == region
+Regional: CONSTANT_VNT'field office area'-region(I247_field_office_area)(I155'field office area')
  == region
 
 
@@ -226,17 +233,17 @@ Phase XII ... Code generation
                                                             Fail: list of numbers (~) number = nothing
                                             Fail: nothing (~) real number = nothing
                                             Fail: list of numbers (~) real number = nothing
-        Regional: CONSTANT_VNT'bosh hq'-region(I451_bosh_hq)(I345'bosh hq')
+        Regional: CONSTANT_VNT'bosh hq'-region(I452_bosh_hq)(I345'bosh hq')
          == region
-        Regional: CONSTANT_VNT'bosh hq'-region(I451_bosh_hq)(I345'bosh hq')
+        Regional: CONSTANT_VNT'bosh hq'-region(I452_bosh_hq)(I345'bosh hq')
          == region
-        Regional: CONSTANT_VNT'laundromat-region'-region(I339_laundromat_region)(I237'laundromat-region')
+        Regional: CONSTANT_VNT'laundromat-region'-region(I341_laundromat_region)(I238'laundromat-region')
          == region
-        Regional: CONSTANT_VNT'laundromat-region'-region(I339_laundromat_region)(I237'laundromat-region')
+        Regional: CONSTANT_VNT'laundromat-region'-region(I341_laundromat_region)(I238'laundromat-region')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I384_elr)(I282'elr')
+        Regional: CONSTANT_VNT'elr'-region(I385_elr)(I282'elr')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I384_elr)(I282'elr')
+        Regional: CONSTANT_VNT'elr'-region(I385_elr)(I282'elr')
          == region
         Regional: CONSTANT_VNT'field office area'-region(I247_field_office_area)(I155'field office area')
          == region
@@ -287,8 +294,8 @@ Providing for a total heap of 8192, given requirement of 8192
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 205 files written as streams.
-CPU time: 450 centiseconds
+Total of 209 files written as streams.
+CPU time: 471 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

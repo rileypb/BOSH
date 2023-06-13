@@ -5,6 +5,24 @@
 ** interpreter: /Users/rileypb/dev/Inform/git_remglk
 
 * win
+Department of Homeland Security, Washington, DC
+Open on a drab office with decor dating to the mid-eighties. The DHS assistant to the associate sub-director looks longingly at the office clock nearing five, then leans across the desk and impatiently states his demands:
+
+"First name, last name, pronouns?"
+
+(1) Ezra Gaunt (he/him), winner of the 2006 Baltimore County Edgar Allan Poe Trivia Competition;
+
+(2) Petula Clark Goldberg (she/her), former award-winning dog groomer of the avant-garde school;
+
+or (3) Larch Faraji (they/them), lead singer of the third wave neo-old-school punk band DC Trash.
+
+The Bureau of Strange Happenings
+An Interactive Phenomenon by Phil Riley
+Release 1 / Serial number 230610 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
+
+Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Their Hyundai is parked nearby.
 
 >w
 Just like in the store this once was, the door chimes as Faraji walks in.
@@ -17,7 +35,9 @@ Faraji hands Margaret their old phone. Margaret taps a few keys on her computer 
 
 "Oh, good", Faraji says. "Our phone downgrades have arrived from our bureaucratic betters."
 
-A phone is ringing not too far away.
+A phone is ringing somewhere else not too far away.
+
+Faraji can ask about the phone exchange.
 
 >w
 Faraji extricates themself from talking with Margaret.
@@ -27,11 +47,11 @@ Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the 
 A phone is ringing to the south.
 
 >s
-Agent Faraji is in their office. They pause and survey the scene. It's not much -- four white walls, grey industrial carpet. Margaret has helpfully assembled Faraji's desk and chair, though how sturdily is an open question. She also took the time to put up some of Agent Faraji's office decor -- their degree in Nonstandard Investigative Techniques, an original pencil drawing of the Pitfall snake by semi-acclaimed Washington DC artist Darius 5200, and a photo of their softball team. At the very least the wall coverings help compensate for the lack of windows. There's a disconnected landline on the desk. The office door is to the north, and there's a white metal door to the west.
+Agent Faraji is in their office. They pause and survey the scene. It's not much -- four white walls, grey industrial carpet. Margaret has helpfully assembled Faraji's desk and chair, though how sturdily is an open question. She also took the time to put up some of Agent Faraji's office decor -- their degree in Nonstandard Investigative Techniques, an original pencil drawing of the Pitfall snake by semi-acclaimed Washington DC artist Darius 5200, and a photo of their soccer team. At the very least the wall coverings help compensate for the lack of windows. There's a disconnected landline on the desk. The office door is to the north, and there's a white metal door to the west.
 
 Faraji mutters, "Where's my computer?"
 
-A phone is ringing inside Faraji's desk.
+A phone is ringing inside their desk.
 
 >open desk
 Faraji tries to open the desk to answer the phone, but it seems to be locked. They sigh. "Margaret must have the key."
@@ -41,61 +61,68 @@ A phone is ringing inside their desk.
 >n
 Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
 
-A phone is ringing to the south.
+A phone is ringing to the south, in their office.
 
 >e
 Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
 
 The Bureau's latest office manager, Margaret is bustling around with unrestrained enthusiasm.
 
-A phone is ringing not too far away.
+A phone is ringing somewhere else not too far away.
 
-Faraji can ask about the whereabouts of the desk key or ask about the status of the computer.
+Faraji can ask about the whereabouts of the desk key, ask about the status of the computer or ask about the phone exchange.
 
 >ask about key
 Faraji says, "Hey Margaret, do you know anything about my desk key?"
 
+
 "Sure I do -- I put it in your desk." She furrows her brow. "What's the matter?"
 
-A phone is ringing not too far away.
+A phone is ringing somewhere else not too far away.
 
-Faraji can ask about the status of the computer.
+Faraji can ask about the status of the computer or ask about the phone exchange.
 
 >ask about computer
 "Margaret", Faraji says, "what's up with my computer?"
 
 "Oh, it got busted up during the move. I have it behind my desk -- you can see it if you want. We'll have to get you a new one."
 
-A phone is ringing not too far away.
+A phone is ringing somewhere else not too far away.
+
+Faraji can ask about the phone exchange.
 
 >look behind desk
 There are a number of shelves of office supplies behind the desk. There is also a heating vent on the floor here.
 
 Faraji finds their computer and pulls it out.
 
-A phone is ringing not too far away.
+A phone is ringing somewhere else not too far away.
+
+Faraji can ask about the phone exchange.
 
 >x computer
 Faraji's computer has been damaged beyond repair. But they do find a thumb drive and take it.
 
-A phone is ringing not too far away.
+A phone is ringing somewhere else not too far away.
 
-Faraji can remember finding the drive. 
+Faraji can remember finding the drive. They can ask about the phone exchange.
 
 >remember finding the drive
 Faraji remembers finding the drive in an ancient Onandaga root cellar on a farm in upstate New York. They have never been able to read it.
 
-A phone is ringing not too far away.
+A phone is ringing somewhere else not too far away.
+
+Faraji can ask about the phone exchange.
 
 >w
 Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
 
-A phone is ringing to the south.
+A phone is ringing to the south, in their office.
 
 >s
-Agent Faraji is in their office. It's basically four white walls and grey carpet. There's a cheap desk and chair, and a disconnected phone on the desk. In lieu of windows, there are a few things on the wall: their degree in Nonstandard Investigative Techniques, a pencil drawing of the Pitfall snake, and a photo of their softball team. The office door is to the north, and there's a white metal door to the west.
+Agent Faraji is in their office. It's basically four white walls and grey carpet. There's a cheap desk and chair, and a disconnected phone on the desk. In lieu of windows, there are a few things on the wall: their degree in Nonstandard Investigative Techniques, a pencil drawing of the Pitfall snake, and a photo of their soccer team. The office door is to the north, and there's a white metal door to the west.
 
-A phone is ringing inside Faraji's desk.
+A phone is ringing inside their desk.
 
 >x desk
 The desk is a cheap DIY piece held together with hex screws. It has a single drawer which is closed.
@@ -110,7 +137,7 @@ A phone is ringing inside Faraji's desk.
 >n
 Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
 
-A phone is ringing to the south.
+A phone is ringing to the south, in their office.
 
 >e
 Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
@@ -119,32 +146,34 @@ The Bureau's latest office manager, Margaret is bustling around with unrestraine
 
 Also here is Faraji's computer.
 
-A phone is ringing not too far away.
+A phone is ringing somewhere else not too far away.
 
-Faraji can ask for the hex wrench or ask to unlock the backdoor.
+Faraji can ask for the hex wrench, ask to unlock the backdoor or ask about the phone exchange.
 
 >ask about wrench
 Faraji says, "Do you happen to have the hex wrench from putting together my desk?"
 
 "Well, I did, but I dropped it down a heating vent behind my desk."
 
-A phone is ringing not too far away.
+A phone is ringing somewhere else not too far away.
 
-Faraji can ask to unlock the backdoor.
+Faraji can ask to unlock the backdoor or ask about the phone exchange.
 
 >ask about backdoor
 Faraji asks, "Could you unlock the back door, Margaret?"
 
 "Sorry, too busy right now. What do you want back there anyway? There's only a dumpster." She pauses for a moment and mutters to herself. "Which reminds me, I need to get these boxes broken down."
 
-A phone is ringing not too far away.
+A phone is ringing somewhere else not too far away.
+
+Faraji can ask about the phone exchange.
 
 >take boxes
 Faraji picks up a couple of boxes and flattens them.
 
 Margaret says, "Hey, what are you doing with those boxes, Agent Faraji? You don't have to worry about that -- I'll get them." She takes the flattened boxes from Faraji and hustles off.
 
-A phone is ringing not too far away.
+A phone is ringing somewhere else not too far away.
 
 Margaret goes west.
 
@@ -153,18 +182,20 @@ Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the 
 
 Also here is Margaret.
 
-A phone is ringing to the south.
+A phone is ringing to the south, in Faraji's office.
 
 Margaret goes south.
 
 >s
-Agent Faraji is in their office. It's basically four white walls and grey carpet. There's a cheap desk and chair, and a disconnected phone on the desk. In lieu of windows, there are a few things on the wall: their degree in Nonstandard Investigative Techniques, a pencil drawing of the Pitfall snake, and a photo of their softball team. The office door is to the north, and there's a white metal door to the west.
+Agent Faraji is in their office. It's basically four white walls and grey carpet. There's a cheap desk and chair, and a disconnected phone on the desk. In lieu of windows, there are a few things on the wall: their degree in Nonstandard Investigative Techniques, a pencil drawing of the Pitfall snake, and a photo of their soccer team. The office door is to the north, and there's a white metal door to the west.
 
 Also here is Margaret.
 
 A phone is ringing inside Faraji's desk.
 
 Margaret unlocks the white metal door.
+
+Faraji can ask about the phone exchange.
 
 >z
 Faraji stands around and waits.
@@ -178,21 +209,23 @@ Agent Faraji is in the back lot. This is a small area of asphalt between the bui
 
 Also here is Margaret.
 
-A phone is ringing to the east.
+A phone is ringing to the east, in Faraji's office.
 
 Margaret tosses the flattened boxes over the edge of the dumpster.
+
+Faraji can ask about the phone exchange.
 
 >z
 Faraji stands around and waits.
 
-A phone is ringing to the east.
+A phone is ringing to the east, in their office.
 
 Margaret goes east.
 
 >z
 Faraji stands around and waits.
 
-A phone is ringing to the east.
+A phone is ringing to the east, in their office.
 
 The white metal door closes.
 
@@ -204,14 +237,16 @@ The white metal door opens.
 
 You hear the door being unlocked, and then Margaret pops her head out. "Seriously, Agent Faraji? You got yourself locked out? Be more careful!"
 
-A phone is ringing to the east.
+A phone is ringing to the east, in Faraji's office.
 
 >e
-Agent Faraji is in their office. It's basically four white walls and grey carpet. There's a cheap desk and chair, and a disconnected phone on the desk. In lieu of windows, there are a few things on the wall: their degree in Nonstandard Investigative Techniques, a pencil drawing of the Pitfall snake, and a photo of their softball team. The office door is to the north, and there's a white metal door to the west.
+Agent Faraji is in their office. It's basically four white walls and grey carpet. There's a cheap desk and chair, and a disconnected phone on the desk. In lieu of windows, there are a few things on the wall: their degree in Nonstandard Investigative Techniques, a pencil drawing of the Pitfall snake, and a photo of their soccer team. The office door is to the north, and there's a white metal door to the west.
 
 Also here is Margaret.
 
 A phone is ringing inside Faraji's desk.
+
+Faraji can ask about the phone exchange.
 
 >z
 Faraji stands around and waits.
@@ -222,10 +257,12 @@ Margaret closes the white metal door.
 
 Margaret locks the white metal door.
 
+Faraji can ask about the phone exchange.
+
 >n
 Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
 
-A phone is ringing to the south.
+A phone is ringing to the south, in their office.
 
 Margaret arrives from the south.
 
@@ -234,34 +271,37 @@ Agent Faraji is in the front office. It's really a small storefront done up to r
 
 Also here is their computer.
 
-A phone is ringing not too far away.
+A phone is ringing somewhere else not too far away.
 
 Margaret arrives from the west.
+
+Faraji can ask about the phone exchange.
 
 >x vent
 A typical air register with a grill which one would hope would stop things like, say, a hex wrench from falling through. It's set in the floor behind the front desk. The vent is held closed by four screws.
 
 In the heating vent is a hex wrench.
 
-A phone is ringing not too far away.
+A phone is ringing somewhere else not too far away.
 
-Faraji can ask for a screwdriver.
+Faraji can ask for a screwdriver or ask about the phone exchange.
 
 >ask for a screwdriver
 Faraji asks, "Margaret, where's the screwdriver?"
 
+
 "Umm... I think it was in a box we had to leave behind." Margaret looks embarrassed. "What? I never thought we'd need it. This isn't a construction site after all. Maybe if Klimp had paid for the bigger UHaul..." She stares past Faraji awkwardly.
 
-A phone is ringing not too far away.
+A phone is ringing somewhere else not too far away.
 
-Faraji can ask for a screwdriver.
+Faraji can ask about the phone exchange.
 
 >n
 Faraji can't go that way.
 
-A phone is ringing not too far away.
+A phone is ringing somewhere else not too far away.
 
-Faraji can ask for a screwdriver.
+Faraji can ask about the phone exchange.
 
 >e
 Faraji steps out of the office into the parking lot.
@@ -282,14 +322,8 @@ Agent Faraji is in the Li'l Nectarine Convenience Store. Li'l Nectarine offers g
 
 The clerk, a scruffy man in his mid-twenties, is leaning against the counter, looking bored.
 
-Faraji can ask for a screwdriver.
-
 >ask for screwdriver
-Faraji asks, "Would you happen to have a screwdriver I could borrow?"
-
-"Got one to buy, not one to borrow."
-
-Faraji can ask for a screwdriver.
+That doesn't seem to be a topic of conversation at the moment.
 
 >w
 Faraji exits the store into the relative quiet of the nearby traffic.
@@ -316,14 +350,14 @@ The pawn shop door closes.
 Faraji can ask for a screwdriver.
 
 >ask for a screwdriver
-Faraji leans on the counter. "Hey, do you have a screwdriver? Can't find mine and I really need one."
+Faraji leans on the counter and asks, "Do you happen to have a screwdriver I could borrow for a few minutes? I'm from the Bureau office next door."
 
-The man shakes his head and says, "Sorry, miss. I had one, but the guy who runs the laundromat borrowed it and didn't bring it back."
+The man shakes his head and says, "Sorry. I had one, but the guy who runs the laundromat borrowed it and didn't bring it back."
 
 Faraji can ask about the laundromat owner.
 
 >ask about the owner
-Faraji nods. "Okay, then, how do I get in touch with this laundromat guy?"
+Faraji says, "How do you suppose I might get in touch with this man who runs the laundromat? I really could use a screwdriver."
 
 "Well, that's a tricky one. Laundromat's been closed for almost two weeks now, since the owner just split for some reason he didn't bother to share. Not likely to get ahold of him. If you're not averse to a little trespassing, though, see if you come across a watch. Another thing he borrowed."
 
@@ -346,30 +380,28 @@ The Bureau's latest office manager, Margaret is bustling around with unrestraine
 
 Also here is Faraji's computer.
 
-A phone is ringing not too far away.
+A phone is ringing somewhere else not too far away.
 
-Faraji can ask for a screwdriver.
+Faraji can ask about the phone exchange.
 
 >w
 Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
 
-A phone is ringing to the south.
+A phone is ringing to the south, in their office.
 
 >w
-Agent Faraji is in the BOSH chief's office. Looks like the Chief has already moved in.
-
-Chief Klimp's office is full of character. Shelves strewn with knick-knacks abut a cozy armchair and a mahogany side table supporting a large globe. A bookcase on the north wall is packed with books on paranormal happenings. Garish prints adorn the remaining wall space.  Under one of these is a modernistic desk of glass and chrome, behind which is a very nice black leather swivel chair. There is a computer on the desk, and to its side is an antique wooden file cabinet. To tell the truth, it's all a bit much, but it matches Klimp's personality perfectly. There is an exit to the east.
-
-Chief Klimp says "What's with that ringing? Someone answer it!"
+Agent Faraji is in the BOSH chief's office. 
 
 On the Chief's shelves are a juvenile sasquatch skull and a pair of astral lenses.
 
-A phone is ringing not too far away.
+Also here is Chief Klimp.
+
+A phone is ringing somewhere else not too far away.
 
 >x lenses
 To all appearances an ordinary pair of glasses, the astral lenses allegedly reveal the existence of extra-dimensional pathways.
 
-A phone is ringing not too far away.
+A phone is ringing somewhere else not too far away.
 
 Faraji can ask to borrow the lenses.
 
@@ -380,17 +412,19 @@ Faraji asks, "Would it be okay if I borrowed the astral lenses for a while?"
 
 They take the astral lenses.
 
-A phone is ringing not too far away.
+A phone is ringing somewhere else not too far away.
 
 >wear them
 Faraji puts on the pair of astral lenses.
 
-A phone is ringing not too far away.
+A phone is ringing somewhere else not too far away.
+
+Wearing the astral lenses in fluorescent light is blinding. They quickly remove the glasses.
 
 >e
 Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
 
-A phone is ringing to the south.
+A phone is ringing to the south, in their office.
 
 >e
 Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
@@ -399,16 +433,16 @@ The Bureau's latest office manager, Margaret is bustling around with unrestraine
 
 Also here is Faraji's computer.
 
-A phone is ringing not too far away.
+A phone is ringing somewhere else not too far away.
 
-Faraji can ask for a screwdriver.
+Faraji can ask about the phone exchange.
 
 >take boxes
 Faraji picks up a couple of boxes and flattens them.
 
 Margaret says, "Hey, what are you doing with those boxes, Agent Faraji? You don't have to worry about that -- I'll get them." She takes the flattened boxes from Faraji and hustles off.
 
-A phone is ringing not too far away.
+A phone is ringing somewhere else not too far away.
 
 Margaret goes west.
 
@@ -417,12 +451,12 @@ Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the 
 
 Also here is Margaret.
 
-A phone is ringing to the south.
+A phone is ringing to the south, in Faraji's office.
 
 Margaret goes south.
 
 >s
-Agent Faraji is in their office. It's basically four white walls and grey carpet. There's a cheap desk and chair, and a disconnected phone on the desk. In lieu of windows, there are a few things on the wall: their degree in Nonstandard Investigative Techniques, a pencil drawing of the Pitfall snake, and a photo of their softball team. The office door is to the north, and there's a white metal door to the west.
+Agent Faraji is in their office. It's basically four white walls and grey carpet. There's a cheap desk and chair, and a disconnected phone on the desk. In lieu of windows, there are a few things on the wall: their degree in Nonstandard Investigative Techniques, a pencil drawing of the Pitfall snake, and a photo of their soccer team. The office door is to the north, and there's a white metal door to the west.
 
 Also here is Margaret.
 
@@ -430,39 +464,42 @@ A phone is ringing inside Faraji's desk.
 
 Margaret unlocks the white metal door.
 
-Faraji can ask for a screwdriver.
+Faraji can ask about the phone exchange.
 
 >w
 (first opening the white metal door)
 Agent Faraji is in the back lot. This is a small area of asphalt between the building and a chain link fence looking in on an industrial property. A door to east leads into the BOSH offices, and one to the north enters the laundromat. There is a blue dumpster here.
+
+A phone is ringing to the east, in their office.
+
+Margaret arrives from the east.
+
+>wear glasses
+Faraji puts on the pair of astral lenses.
+
+A phone is ringing to the east, in their office.
+
+Margaret tosses the flattened boxes over the edge of the dumpster.
+
+>back
+Agent Faraji is in the astral tunnel. It is featureless white, or what passes for white here. It bends "forth" to north.
+
+A phone is ringing somewhere else not too far away.
+
+>n
+Agent Faraji is in the astral tunnel. It is featureless white, or what passes for white here. It bends south to "forth."
+
+A phone is ringing faintly somewhere else.
+
+>f
+Agent Faraji is in the laundromat back room. A desk sits in the corner covered with paperwork. A doorway leads east to the laundromat proper, while a steep set of stairs leads down.
 
 A strange sparkly white passage branches off in an impossible direction from here.
 
 Faraji has discovered a hyperspatial tunnel! It leads in the hyperspatial direction of "back".
 For help regarding hyperspace, enter HELP HYPERSPACE.
 
-A phone is ringing to the east.
-
-Margaret arrives from the east.
-
->back
-Agent Faraji is in the astral tunnel. It is featureless white, or what passes for white here. It bends "forth" to north.
-
-A phone is ringing not too far away.
-
->n
-Agent Faraji is in the astral tunnel. It is featureless white, or what passes for white here. It bends south to "forth."
-
-A phone is ringing faintly nearby.
-
->f
-Agent Faraji is in the laundromat back room. A desk sits in the corner covered with paperwork. A doorway leads east to the laundromat proper, while a steep set of stairs leads down.
-
-A hyperspatial tunnel leads in the direction of "back".
-
-A phone is ringing faintly nearby.
-
-Wearing the astral lenses in fluorescent light is blinding. Faraji quickly removes the glasses.
+Wearing the astral lenses in fluorescent light is blinding. They quickly remove the glasses.
 
 >d
 Agent Faraji is in the laundromat basement. A few boxes of supplies sit here and there in the otherwise empty space. Stairs lead up, while a doorway leads south.
@@ -493,7 +530,7 @@ A hyperspatial tunnel leads in the direction of "forth".
 Agent Faraji is in the astral tunnel. It is featureless white, or what passes for white here. It bends "back" to "forthnorth."
 
 >fn
-Agent Faraji is in the laundromat. Dingy machines line the walls. A doorway leads west.
+Agent Faraji is in the laundromat. Antique washing machines line the walls. A doorway leads west.
 
 A hyperspatial tunnel leads in the direction of "backsouth".
 
@@ -510,7 +547,7 @@ A strange glow emanates from behind some stacks of large crates.
 A hyperspatial tunnel leads in the direction of "forth".
 
 >move crates
-Faraji can't move that.
+Those are too heavy to move unaided.
 
 >move crates with truck
 You move the crates out of the way and uncover an old front-loading washing machine. There is a strange glow inside the drum.
@@ -522,7 +559,7 @@ It's a front-loading model. The inside of the drum is obscured by a shimmering c
 Faraji opens the broken washing machine.
 
 >enter it
-There is a flash of light and you find yourself somewhere else...
+There is a flash of light and Faraji finds themself somewhere else...
 
 Agent Faraji is on a featureless hyperplane. They rub their eyes as they try to take in their surroundings. In addition to the usual directions of north and south and east and west, two new directions exist here: back and forth. As a result, the "surface" they're standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
 
@@ -621,20 +658,24 @@ As far as one can see, the hyperplane extends infinitely in all six directions.
 
 There is an ethereal pillar here. A message carved into the pillar says "Seek the origin. -Doris"
 
+Under that is a line of five strange symbols: o p q d b
+
 A mystic compass dangles from an outcropping of the pillar.
+
+Also here is an Ethereal Pillar.
 
 >take compass
 Taken.
 
 >x compass
-On the readout of the mystic compass floats a set of ethereal symbols: ┘┐ : ┘┌ : ┘└
+On the readout of the mystic compass floats a set of ethereal symbols: pq : pd : pb
 
 >s
 Agent Faraji is on a featureless hyperplane. In addition to the usual directions of north and south and east and west, two new directions exist here: back and forth. As a result, the "surface" they're standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
 
 As far as one can see, the hyperplane extends infinitely in all six directions.
 
-On the readout of the mystic compass floats a set of ethereal symbols: ┘┘ : ┘┌ : ┘└
+On the readout of the mystic compass floats a set of ethereal symbols: pp : pd : pb
 
 Close by is some kind of structure to the north.
 
@@ -643,7 +684,7 @@ Agent Faraji is on a featureless hyperplane. In addition to the usual directions
 
 As far as one can see, the hyperplane extends infinitely in all six directions.
 
-On the readout of the mystic compass floats a set of ethereal symbols: ┘◊ : ┘┌ : ┘└
+On the readout of the mystic compass floats a set of ethereal symbols: po : pd : pb
 
 Not too far off is some kind of structure, roughly to the north.
 
@@ -652,7 +693,7 @@ Agent Faraji is on a featureless hyperplane. In addition to the usual directions
 
 As far as one can see, the hyperplane extends infinitely in all six directions.
 
-On the readout of the mystic compass floats a set of ethereal symbols: └ : ┘┌ : ┘└
+On the readout of the mystic compass floats a set of ethereal symbols: b : pd : pb
 
 Not too far off is some kind of structure, roughly to the north.
 
@@ -661,7 +702,7 @@ Agent Faraji is on a featureless hyperplane. In addition to the usual directions
 
 As far as one can see, the hyperplane extends infinitely in all six directions.
 
-On the readout of the mystic compass floats a set of ethereal symbols: ┌ : ┘┌ : ┘└
+On the readout of the mystic compass floats a set of ethereal symbols: d : pd : pb
 
 Not too far off is some kind of structure, roughly to the north.
 
@@ -670,7 +711,7 @@ Agent Faraji is on a featureless hyperplane. In addition to the usual directions
 
 As far as one can see, the hyperplane extends infinitely in all six directions.
 
-On the readout of the mystic compass floats a set of ethereal symbols: ┐ : ┘┌ : ┘└
+On the readout of the mystic compass floats a set of ethereal symbols: q : pd : pb
 
 Not too far off is some kind of structure, roughly to the north.
 
@@ -679,7 +720,7 @@ Agent Faraji is on a featureless hyperplane. In addition to the usual directions
 
 As far as one can see, the hyperplane extends infinitely in all six directions.
 
-On the readout of the mystic compass floats a set of ethereal symbols: ┘ : ┘┌ : ┘└
+On the readout of the mystic compass floats a set of ethereal symbols: p : pd : pb
 
 Not too far off is some kind of structure, roughly to the north.
 
@@ -688,7 +729,7 @@ Agent Faraji is on a featureless hyperplane. In addition to the usual directions
 
 As far as one can see, the hyperplane extends infinitely in all six directions.
 
-On the readout of the mystic compass floats a set of ethereal symbols: ◊ : ┘┌ : ┘└
+On the readout of the mystic compass floats a set of ethereal symbols: o : pd : pb
 
 Not too far off is some kind of structure, roughly to the north.
 
@@ -697,7 +738,7 @@ Agent Faraji is on a featureless hyperplane. In addition to the usual directions
 
 As far as one can see, the hyperplane extends infinitely in all six directions.
 
-On the readout of the mystic compass floats a set of ethereal symbols: ◊ : ┘┐ : ┘└
+On the readout of the mystic compass floats a set of ethereal symbols: o : pq : pb
 
 Not too far off is some kind of structure, roughly to the north.
 
@@ -706,7 +747,7 @@ Agent Faraji is on a featureless hyperplane. In addition to the usual directions
 
 As far as one can see, the hyperplane extends infinitely in all six directions.
 
-On the readout of the mystic compass floats a set of ethereal symbols: ◊ : ┘┘ : ┘└
+On the readout of the mystic compass floats a set of ethereal symbols: o : pp : pb
 
 Not too far off is some kind of structure, roughly to the north.
 
@@ -715,7 +756,7 @@ Agent Faraji is on a featureless hyperplane. In addition to the usual directions
 
 As far as one can see, the hyperplane extends infinitely in all six directions.
 
-On the readout of the mystic compass floats a set of ethereal symbols: ◊ : ┘◊ : ┘└
+On the readout of the mystic compass floats a set of ethereal symbols: o : po : pb
 
 Not too far off is some kind of structure, roughly to the north.
 
@@ -724,7 +765,7 @@ Agent Faraji is on a featureless hyperplane. In addition to the usual directions
 
 As far as one can see, the hyperplane extends infinitely in all six directions.
 
-On the readout of the mystic compass floats a set of ethereal symbols: ◊ : └ : ┘└
+On the readout of the mystic compass floats a set of ethereal symbols: o : b : pb
 
 Not too far off is some kind of structure, roughly to the northwest.
 
@@ -733,7 +774,7 @@ Agent Faraji is on a featureless hyperplane. In addition to the usual directions
 
 As far as one can see, the hyperplane extends infinitely in all six directions.
 
-On the readout of the mystic compass floats a set of ethereal symbols: ◊ : ┌ : ┘└
+On the readout of the mystic compass floats a set of ethereal symbols: o : d : pb
 
 Not too far off is some kind of structure, roughly to the northwest.
 
@@ -742,7 +783,7 @@ Agent Faraji is on a featureless hyperplane. In addition to the usual directions
 
 As far as one can see, the hyperplane extends infinitely in all six directions.
 
-On the readout of the mystic compass floats a set of ethereal symbols: ◊ : ┐ : ┘└
+On the readout of the mystic compass floats a set of ethereal symbols: o : q : pb
 
 Not too far off is some kind of structure, roughly to the northwest.
 
@@ -751,7 +792,7 @@ Agent Faraji is on a featureless hyperplane. In addition to the usual directions
 
 As far as one can see, the hyperplane extends infinitely in all six directions.
 
-On the readout of the mystic compass floats a set of ethereal symbols: ◊ : ┘ : ┘└
+On the readout of the mystic compass floats a set of ethereal symbols: o : p : pb
 
 In the middle distance is some kind of structure, roughly to the northwest.
 
@@ -760,7 +801,7 @@ Agent Faraji is on a featureless hyperplane. In addition to the usual directions
 
 As far as one can see, the hyperplane extends infinitely in all six directions.
 
-On the readout of the mystic compass floats a set of ethereal symbols: ◊ : ◊ : ┘└
+On the readout of the mystic compass floats a set of ethereal symbols: o : o : pb
 
 In the middle distance is some kind of structure, roughly to the northwest.
 
@@ -769,7 +810,7 @@ Agent Faraji is on a featureless hyperplane. In addition to the usual directions
 
 As far as one can see, the hyperplane extends infinitely in all six directions.
 
-On the readout of the mystic compass floats a set of ethereal symbols: ◊ : ◊ : ┘┌
+On the readout of the mystic compass floats a set of ethereal symbols: o : o : pd
 
 In the middle distance is some kind of structure, roughly to the northwest.
 
@@ -778,7 +819,7 @@ Agent Faraji is on a featureless hyperplane. In addition to the usual directions
 
 As far as one can see, the hyperplane extends infinitely in all six directions.
 
-On the readout of the mystic compass floats a set of ethereal symbols: ◊ : ◊ : ┘┐
+On the readout of the mystic compass floats a set of ethereal symbols: o : o : pq
 
 In the middle distance is some kind of structure, roughly to the northwest.
 
@@ -787,7 +828,7 @@ Agent Faraji is on a featureless hyperplane. In addition to the usual directions
 
 As far as one can see, the hyperplane extends infinitely in all six directions.
 
-On the readout of the mystic compass floats a set of ethereal symbols: ◊ : ◊ : ┘┘
+On the readout of the mystic compass floats a set of ethereal symbols: o : o : pp
 
 In the middle distance is some kind of structure, roughly to the northwest.
 
@@ -796,7 +837,7 @@ Agent Faraji is on a featureless hyperplane. In addition to the usual directions
 
 As far as one can see, the hyperplane extends infinitely in all six directions.
 
-On the readout of the mystic compass floats a set of ethereal symbols: ◊ : ◊ : ┘◊
+On the readout of the mystic compass floats a set of ethereal symbols: o : o : po
 
 In the middle distance is some kind of structure, roughly to the northwest.
 
@@ -805,7 +846,7 @@ Agent Faraji is on a featureless hyperplane. In addition to the usual directions
 
 As far as one can see, the hyperplane extends infinitely in all six directions.
 
-On the readout of the mystic compass floats a set of ethereal symbols: ◊ : ◊ : └
+On the readout of the mystic compass floats a set of ethereal symbols: o : o : b
 
 In the middle distance is some kind of structure, roughly to the northwest.
 
@@ -814,7 +855,7 @@ Agent Faraji is on a featureless hyperplane. In addition to the usual directions
 
 As far as one can see, the hyperplane extends infinitely in all six directions.
 
-On the readout of the mystic compass floats a set of ethereal symbols: ◊ : ◊ : ┌
+On the readout of the mystic compass floats a set of ethereal symbols: o : o : d
 
 In the middle distance is some kind of structure, roughly to the northwest.
 
@@ -823,7 +864,7 @@ Agent Faraji is on a featureless hyperplane. In addition to the usual directions
 
 As far as one can see, the hyperplane extends infinitely in all six directions.
 
-On the readout of the mystic compass floats a set of ethereal symbols: ◊ : ◊ : ┐
+On the readout of the mystic compass floats a set of ethereal symbols: o : o : q
 
 In the middle distance is some kind of structure, roughly to the northwest.
 
@@ -832,14 +873,14 @@ Agent Faraji is on a featureless hyperplane. In addition to the usual directions
 
 As far as one can see, the hyperplane extends infinitely in all six directions.
 
-On the readout of the mystic compass floats a set of ethereal symbols: ◊ : ◊ : ┘
+On the readout of the mystic compass floats a set of ethereal symbols: o : o : p
 
 In the middle distance is some kind of structure, roughly to the forthnorth.
 
 >b
 Agent Faraji is at the top of a descending stair. It is made of the same gossamer, questionably real stuff as the ground, the pillar, and the readouts. You can't see past the first turn of the stairs, unfortunately.
 
-On the readout of the mystic compass floats a set of ethereal symbols: ◊ : ◊ : ◊
+On the readout of the mystic compass floats a set of ethereal symbols: o : o : o
 
 In the middle distance is some kind of structure, roughly to the forthnorth.
 
@@ -858,50 +899,158 @@ Doris is sitting cross-legged in a chair, tapping his foot lazily on the desk.
 
 "Ah, Larch," Doris exclaims, standing up to shake their hand. "I've been waiting for you to pay us a visit. Did you bring the thumb drive?"
 
-Faraji can ask how to get home, tell Doris they brought the thumb drive or hand over the thumb drive.
+Faraji can ask who he is, ask where we are, ask how to get home or show him the thumb drive.
 
->tell doris we brought the thumb drive
-Faraji answers, "Yes, I have it."
+>how him the thumb drive
+I'm not sure what you're trying to say. I might just not recognize the words you're using.
 
-"Fantastic! Hand it here."
+>hand it over
+I'm not sure what you're trying to say. I might just not recognize the words you're using.
 
-Faraji can ask how to get home or hand over the thumb drive.
+>ask who he is
+Faraji asks "Who are you?"
+
+He looks taken aback for a moment, then recovers his composure. "Ah yes, introductions. I'm Doris, chief of the hyperspatial field office of the Bureau."
+
+Faraji can ask about his name, ask where we are, ask how to get home or show him the thumb drive.
+
+>ask about his name
+Faraji says, "Tell me about your name."
+
+"None of your business", Doris replies.
+
+Faraji can ask where we are, ask how to get home or show him the thumb drive.
+
+>where are we
+Faraji looks around and asks, "Where are we? What is this place?"
+
+Doris answers, "You're in the hyperspatial field office of the Bureau of Strange Happenings. But I guess that doesn't exactly clear things up for you. Practically, your office is a branch of ours, but since you have the official recognition of the US government -- for now -- you get the glory. Besides, due to the nature of our work, we prefer to remain underground, so to speak. How's Klimp, by the way? Ah, we had some good times. But you know what they say -- what happens in Pompeii, stays in Pompeii.
+
+Faraji can ask how to get home, tell Doris Klimp is fine or show him the thumb drive.
+
+>klimp is fine
+Faraji says, "He's just fine"
+
+"Great! Be sure to say hi for me."
+
+Faraji can ask how to get home or show him the thumb drive.
 
 >ask how to get home
 Faraji asks, "Just how can I get home from here?"
 
-Doris hardly looks up from his work. "Go ask Maggie; she can help you."
+"Go ask Maggie; she can help you."
 
-Faraji can ask how to get home or hand over the thumb drive.
+Faraji can show him the thumb drive.
 
->hand over the drive
+>show him the thumb drive
+Faraji answers, "Yes, I have it."
+
+"Fantastic! Hand it here."
+
+Faraji can hand over the thumb drive.
+
+>hand it over
 Faraji gives the thumb drive to Doris.
 
 "Great, great." He peruses the drive. "We lost one of our New York agents to a slingshot effect that threw him far back in time. We're always monitoring for artifacts that are out of place or anachronistic to lead us to lost agents.
 
-He continues, "The scratch marks here say 'They found me out and sent me back. 14th century. Enigma Lake. Savra is going to move on the Dragon.'"
+He continues, "The scratch marks here say, 'They found me out and sent me back. 14th century. Enigma Lake. Savra is going to move on the Dragon.'"
 
-Faraji can ask how to get home, ask about Savra, ask about the Dragon or ask about time travel.
+Faraji can ask about Savra, ask about the Dragon or ask about time travel.
 
 >ask about savra
+"Senator Savra? What does he have to with anything?" Faraji asks.
 
+Doris says, "Well you've noticed he's not very friendly to the Bureau? Let's leave it at that for now. We need to talk about the mission."
 
-
-
-Faraji can ask how to get home, ask about the Dragon or ask about time travel.
+Faraji can ask about the mission, ask about the Dragon or ask about time travel.
 
 >ask about the dragon
+Faraji says, "Who is this 'Dragon'?"
 
+Doris brings his finger to his lips. "Classified. Need to know only. But we should be talking about the mission instead."
 
+Faraji can ask about the mission or ask about time travel.
 
+>time travel
+Disbelievingly, Faraji asks, "Time travel? For real?"
 
-Faraji can ask how to get home or ask about time travel.
+"Yes, yes," Doris responds. "Don't get too worked up over it. It gets old fast. But now we need to talk about the mission."
 
->ask about time travel
+Faraji can ask about the mission.
 
+>ask about the mission
+"Fine," Faraji says. "What's the mission?"
 
+Doris leans back in his chair. "I believe we still have a chance to retrieve our lost agent -- the one that left the thumb drive. He says he was at Enigma Lake, not far from where you found the drive. Now it makes sense that Daniels -- the agent -- would head for some kind of landmark so we could find him, and indeed there is a prominent intersection of leylines in the middle of the lake. Before you say it, yes it's a problem, if that intersection had always been underwater. But Enigma Lake is an artificial reservoir. The town of Enigma Lake was flooded when the reservoir was created, and that's where the intersection is!" Doris concludes with a look of satisfaction.
 
+"So..." Faraji says.
 
-Faraji can ask how to get home.
+"So. I'm sending you back to 1954, right before the flooding of Enigma Lake, and you'll find whatever Daniels left for us to find. Maybe we can stage a rescue. Why 1954? I'd rather not risk a longer temporal jaunt before we know what we're dealing with."
 
+Faraji can ask how will i find him.
 
+>how will i find him
+"How am I going to find him? Didn't he leave that message in the fourteenth century?"
+
+Doris looks exasperated. "Well I don't know -- Improvise, use the power of the leylines, look around for anything that looks like it might be a time portal. Something like that. Let's see if the DC office can impress me. Let me know when you're ready to go."
+
+Faraji can tell Doris they're ready to go.
+
+>e
+Agent Faraji is in the field office hallway. Hallway
+
+>w
+Agent Faraji is in the field office chief's office. Doris's office
+
+Doris is sitting cross-legged in a chair, tapping his foot lazily on the desk.
+
+Faraji can tell Doris they're ready to go.
+
+>ready to go
+Squaring their shoulders, Faraji says, "Ready to go."
+
+Doris grins. "Great! First, you'll need this." He hands you a small device. "In case you need to come back for any reason, press this button and you'll come back here. Do not abuse this for trivial matters! Time travel consumes valuable resources. Now go. Out of my office and to the forth you'll find the portal room. It's all ready to send you where you need to go."
+
+>i
+Faraji is carrying:
+  a recall button
+  a mystic compass
+  a pair of astral lenses (being worn)
+  the Bureau credit card
+
+>x device
+A small, flat device with a black button on it.
+
+>e
+Agent Faraji is in the field office hallway. Hallway
+
+>f
+Agent Faraji is in Portal Room 1. 
+
+Also here is a portal to the past.
+
+>enter portal
+Faraji enters the field of light, and suddenly is somewhere else.
+
+Agent Faraji is in the Enigma Lake town hall. 
+
+>press button
+The world turns inside out, and suddenly you're somewhere else.
+
+Agent Faraji is in the field office chief's office. Doris's office
+
+Doris is sitting cross-legged in a chair, tapping his foot lazily on the desk.
+
+>e
+Agent Faraji is in the field office hallway. Hallway
+
+>f
+Agent Faraji is in Portal Room 1. 
+
+Also here is a portal to the past.
+
+>enter portal
+Faraji enters the field of light, and suddenly is somewhere else.
+
+Agent Faraji is in the Enigma Lake town hall.

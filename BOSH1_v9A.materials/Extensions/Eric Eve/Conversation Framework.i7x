@@ -52,6 +52,9 @@ Report quizzing someone about something (this is the block quizzing rule):
 Instead of asking a female person about "herself" (this is the asking a woman about herself rule):
   try quizzing the noun about the noun.
 
+Instead of asking a nomale person about "themself" (this is the asking a non-binary about herself rule):
+  try quizzing the noun about the noun.
+
 Instead of asking a male person about "himself" (this is the asking a man about himself rule):
   try quizzing the noun about the noun.
 

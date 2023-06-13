@@ -166,15 +166,15 @@ Rule for printing the sound description for something (called T) when the number
 	
 Rule for printing the sound description for something (called T) (this is the default sound description rule):
 	follow the audibility of rules for T;
-	let aud be the outcome of the rulebook;
+	let aud be the outcome of the rulebook;	
 	if aud is the very loud outcome, or aud is the loud outcome:
-		say "[Generic description of T] is [sound of T] nearby.";
+		say "[Generic description of T] is [sound of T] somewhere else nearby.";
 		rule succeeds;
 	if aud is the moderately loud outcome:
-		say "[Generic description of T] is [sound of T] not too far away.";
+		say "[Generic description of T] is [sound of T] somewhere else not too far away.";
 		rule succeeds;
 	if aud is the faint outcome:
-		say "[Generic description of T] is [sound of T] faintly nearby.";
+		say "[Generic description of T] is [sound of T] faintly somewhere else.";
 		rule succeeds;
 	if aud is the very faint outcome:
 		say "[Generic description of T] is [sound of T] somewhere far off.";

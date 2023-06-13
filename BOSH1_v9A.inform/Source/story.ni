@@ -208,6 +208,7 @@ To set possessives:
 	now the possessive of the green smartphone is P;
 	now the possessive of biff's computer is P;
 	now the possessive of car 1 is P;
+	now the possessive of biff's chair is P;
 	 
 After reading a command:
     	remove stray punctuation;
@@ -559,7 +560,9 @@ Section 1 - Your Office
 
 Biff's office is a room. It is in BOSH HQ. The printed name is "[save LPR][our][restore LPR] office".
 
-"[if biff's office is not visited][We] [pause] and [survey] the scene. It's not much -- four white walls, grey industrial carpet. [Margaret] [have] helpfully assembled [our] desk and chair, though how sturdily is an open question. [Regarding Margaret][They] also took the time to put up some of Agent [Player]'s office decor -- [our] degree in Nonstandard Investigative Techniques, [EG]a trivia competition award, and a poster for [our] favorite movie: the b-movie time-travel classic The Room of Lost Time[PCG]a photo of [our] dog Pluto, and a print of [italic type]Green Pheasant[roman type] by Utagawa Hiroshige[LF]an original pencil drawing of the Pitfall snake by semi-acclaimed Washington DC artist Darius 5200, and a photo of [our] softball team[end say]. At the very least the wall coverings help compensate for the lack of windows. There's a disconnected landline on the desk. The office door is to the north, and there's a white metal door to the west.[maybe insert computer muttering][otherwise]It's basically four white walls and grey carpet. There's a cheap desk and chair, and a disconnected phone on the desk. In lieu of windows, there are a few things on the wall: [our] degree in Nonstandard Investigative Techniques, [EG]a trivia competition award, and a poster for [our] favorite movie[PCG]a photo of [our] dog Pluto, and a Japanese print[LF]a pencil drawing of the Pitfall snake, and a photo of [our] softball team[end say]. The office door is to the north, and there's a white metal door to the west.[end if]"
+"[if biff's office is not visited][We] [pause] and [survey] the scene. It's not much -- four white walls, grey industrial carpet. [Margaret] [have] helpfully assembled [our] desk and chair, though how sturdily is an open question. [Regarding Margaret][They] also took the time to put up some of Agent [Player]'s office decor -- [our] degree in Nonstandard Investigative Techniques, [EG]a trivia competition award, and a poster for [our] favorite movie: the b-movie time-travel classic The Room of Lost Time[PCG]a photo of [our] dog Pluto, and a print of [italic type]Green Pheasant[roman type] by Utagawa Hiroshige[LF]an original pencil drawing of the Pitfall snake by semi-acclaimed Washington DC artist Darius 5200, and a photo of [our] soccer team[end say]. At the very least the wall coverings help compensate for the lack of windows. There's a disconnected landline on the desk. The office door is to the north, and there's a white metal door to the west.[maybe insert computer muttering][otherwise]It's basically four white walls and grey carpet. There's a cheap desk and chair, and a disconnected phone on the desk. In lieu of windows, there are a few things on the wall: [our] degree in Nonstandard Investigative Techniques, [EG]a trivia competition award, and a poster for [our] favorite movie[PCG]a photo of [our] dog Pluto, and a Japanese print[LF]a pencil drawing of the Pitfall snake, and a photo of [our] soccer team[end say]. The office door is to the north, and there's a white metal door to the west.[end if]"
+
+There is a fluorescent light source in Biff's office called biffo-light.
 
 To say maybe insert computer muttering:
 	if biff's computer is not seen:
@@ -579,7 +582,8 @@ Understand "office/-- phone", "landline" as Biff's landline.
 [After logging into Your Computer:
 	now the help text of your password is "It's 'charon'. Is it so hard to remember?".]
 	
-Biff's chair is a supporter in Biff's Office. Biff's chair is scenery. Biff's chair is enterable. The description is "It's just a plain old office chair. The lumbar support control is broken.". Understand "seat" as Biff's chair.
+Biff's chair is a supporter in Biff's Office. Biff's chair is scenery. Biff's chair is enterable. The description is "It's just a plain old office chair. The lumbar support control is broken.". Understand "seat" as Biff's chair. The printed name is "[our] chair".
+Understand "Faraji's/Goldberg's/Gaunt's/Larch's/Petula's/Ezra's" as Biff's chair. 
 
 taking Biff's landline is stealing equipment.
   
@@ -610,7 +614,7 @@ Green Pheasant is scenery in biff's office. Understand "print/hiroshige/utagawa/
 
 The drawing of the Pitfall snake is scenery in biff's office. Understand "video/game/cobra/darius/5200" as drawing of the pitfall snake. "Pencil on canvas, it's a fuzzy drawing of the 8-bit snake in the classic video game Pitfall."
  
-The photo of softball team is scenery in biff's office. Understand "Faraji's/their softball/team" as the photo of softball team. Understand "picture" as the photo of softball team. "[we're] third from left in the front row."
+The photo of soccer team is scenery in biff's office. Understand "Faraji's/their soccer/team" as the photo of soccer team. Understand "picture" as the photo of soccer team. "[we're] third from left in the front row."
 
 The green smartphone is a phone. It is mobile. The description is "It's a pretty nice phone, only a couple of years old, but [we] [don't] have time to play with it. [We] need to get to the office."
 
@@ -630,7 +634,7 @@ To init office:
 		move Green Pheasant to Room of Stuff;
 	if player is not Larch Faraji:
 		move drawing of the Pitfall snake to Room of Stuff;
-		move photo of softball team to Room of Stuff;
+		move photo of soccer team to Room of Stuff;
  
 Biff's mobile number is a phone number. Biff's mobile number reaches the green smartphone. The player knows Biff's mobile number.
 
@@ -712,6 +716,8 @@ Klimp's door is a door. It is west of the BOSH office hallway and east of the BO
 Moira's door is a door. It is north of the BOSH office hallway and south of Moira's office. It is scenery. It is closed and locked. It is openable and lockable.
 
 the BOSH office hallway is in BOSH HQ. The printed name is "hallway". "[Our] office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east."
+
+There is a fluorescent light source in BOSH office hallway called boh-light.
  
   
   
@@ -719,15 +725,24 @@ Section 4 - Front Office
 
 the front office is a room. It is east of the hallway. It is in BOSH HQ. It is outdoor-adjacent.
 
+There is a fluorescent light source in the front office called bfo-light.
+
 Understand "storefront" as the front office.
 
 The description of front office is "It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.".
 
 The coffee table is a scenery supporter in front office. "This doesn't look like government-issue furniture. More like thrift store. It's scuffed, but at least it's sturdy."
-The couch is an enterable scenery supporter in front office. "Apparently the bureau did make off with at least one piece of government furniture. A bland, institutional piece with fake leather seats, it's at least preferable to second-hand upholstery."
-The seating area is scenery in front office. "A coffee table and couch greet visitors to the office, as if any are expected."
+The couch is an enterable scenery supporter in front office. "Apparently the bureau did make off with at least one piece of government furniture. A bland, institutional piece with fake leather seats, it's at least preferable to second-hand upholstery." Understand "sofa" as couch.
+The makeshift seating area is scenery in front office. "A coffee table and couch greet visitors to the office, as if any are expected."
 
-The coatrack is scenery in front office. "It's an old clothing rack from the department store which formerly occupied this space." Understand "old/clothing/rack" as the coatrack.
+The coatrack is scenery in front office. "It's an old clothing rack from the department store which formerly occupied this space." Understand "old/clothing/rack/coat" as the coatrack.
+
+To say photos description:
+	let character list be { Ezra Gaunt, Petula Goldberg, Larch Faraji };
+	remove the player from character list;
+	say "The photo of [character list] smiling together is particularly poignant, as they were just let go last month";
+
+Some Bureau photos are scenery in the front office. "[photos description].".
 
 Margaret Chao is in front office.  
 
@@ -736,7 +751,7 @@ Understand "newspaper", "paper", "news" as the Washington Herald.
 
 The front desk is a scenery supporter in front office. Understand "sales", "counter" as the front desk. The description is "The former sales counter now functions as a desk for the office manager (currently [Margaret]). Behind it are a number of shelves holding office supplies."
 
-The shelves of office supplies are in front office. They are plural-named. They are scenery. "Pens, paper, nothing [we're] really concerned with now." Understand "drawers/pens/pen/pencils/pencil/paper/papers" as the shelves of office supplies.
+The shelves of office supplies are in front office. They are plural-named. They are scenery. "Pens, paper, nothing [we're] really concerned with now." Understand "row/of/drawers/pens/pen/pencils/pencil/paper/papers" as the shelves of office supplies.
 
 The thumb drive is a thing in the room of stuff. The description of the thumb drive is "It's a red plastic thumb drive, with what look like symbols scratched on the surface, but they're like no symbols you've ever seen. The metal USB end is somewhat corroded." Understand "USB/flash/memory" as the thumb drive.
 
@@ -744,9 +759,17 @@ Some strange symbols are part of the thumb drive. The description is "They look 
 
 finding the drive is a memory in the room of stuff. The description is "[We] [remember] finding the drive in an ancient Onandaga root cellar on a farm in upstate New York. [We] [have] never been able to read it.".
 
-some cardboard boxes are scenery in front office. "There is a stack of boxes in the corner.".
+some cardboard boxes are scenery in front office. "There is a stack of boxes in the corner.". Understand "box" as cardboard boxes.
 some biff-flattened-boxes are a thing in the room of stuff. They are privately-named. The printed name is "flattened boxes". Understand "flattened/boxes" as biff-flattened-boxes. The description is "Some cardboard boxes that have been broken down flat for recycling.".
 some margaret-flattened-boxes are a thing in the room of stuff. They are privately-named. The printed name is "flattened boxes". Understand "flattened/boxes" as margaret-flattened-boxes. The description is "Some cardboard boxes that have been broken down flat for recycling."
+
+flattening is an action applying to one thing. Understand "flatten [something]" as flattening. Understand the commands "collapse", "unfold", and "fold", as "flatten". Understand "break down [something]" as flattening.
+
+Check flattening:
+	say "[We] can't flatten [regarding the noun][them]." instead;
+	
+Instead of flattening the cardboard boxes:
+	try taking the cardboard boxes;
 
 Instead of taking the cardboard boxes:
 	if the biff-flattened-boxes are not in the room of stuff:
@@ -792,7 +815,7 @@ The can't reach inside closed containers rule response (A) is "[if the noun is t
 
 Section 5 - BOSH chief's office 
 
-the BOSH Chief's office is in BOSH HQ.
+the BOSH Chief's office is in BOSH HQ. There is a fluorescent light source in the BOSH Chief's office called chief-light.
 "[If the BOSH chief's office is not visited]Looks like the Chief has already moved in.[paragraph break][end if]Chief Klimp's office is full of character. Shelves strewn with knick-knacks abut a cozy armchair and a mahogany side table supporting a large globe. A bookcase on the north wall is packed with books on paranormal happenings. Garish prints adorn the remaining wall space.  Under one of these is a modernistic desk of glass and chrome, behind which is a very nice black leather swivel chair. There is a computer on the desk, and to its side is an antique wooden file cabinet. To tell the truth, it's all a bit much, but it matches Klimp's personality perfectly. There is an exit to the east.[if klimp is in the location][first time]
 
 [Klimp] says 'What's with that ringing? Someone answer it!'[only]"
@@ -834,7 +857,7 @@ Understand "glasses/lens/glass" as the pair of astral lenses.
 
 Section 6 - Moira's office
 				 
-Moira's office is in BOSH HQ.
+Moira's office is in BOSH HQ. There is a fluorescent light source in Moira's office called moira-light.
 "It is, like Moira herself, neat and orderly. She's clearly made the most of the meager funds she had for furnishing her office. Behind a modest yet functional desk is a modest yet functional office chair. Her bookshelves are filled with titles relating to investigative techniques, law, and skepticism. In the east wall is a closet door. The exit is to the south."
 
 There is a closet in Moira's office. The closet is a container. It is openable and closed. It is lockable and locked. It is scenery.
@@ -872,17 +895,17 @@ Instead of knocking on the closet door when the location is the utility closet a
 		now the closet door is open;
 		
 about the hyperdimensional portal is an informative quip.
-	The comment is "1.".
-	The reply is "2.".
+	The comment is "[We] [scratch] [our] head. 'Um, I was transported there through an hyperdimensional portal. How's your morning been?".
+	The reply is "[Moira] raises an eyebrow. 'Well, I suggest you let the Chief know.'".
 	It is ubiquitous.
 	It quip-supplies Moira Zin.
 	It rules out to wait for the report.
 			
 to wait for the report is an informative quip.
-	The comment is "[We] [say] '[EG]Uh, thanks, Moira. Hmm. I'm not quite sure. I ought to talk to the Chief about it first[PCG]You wouldn't believe me if I told you, Moira. I'm sure Huffton will catch you up after I talk to him[LF]Strange things are afoot around here, Agent Zin[end say].'[line break]".
-	The reply is "[EG]Moira raises her eyebrows. 'You do that. I'd like to know why a strange man was hiding in my closet.' Ezra stammers and blushes.[PCG]'Well hurry!' says Moira. 'I can't wait to hear what's going on.'[LF]'Do tell,' says Moira.
+	The comment is "[We] [say] 'Strange things are afoot around here, Agent Zin.'[line break]".
+	The reply is "'Do tell,' says [Moira].
 	
-	'After I talk to Klimp.'[end say][line break]".
+	'After I talk to Klimp.'[line break]".
 	It is ubiquitous.
 	It quip-supplies Moira Zin.
 	It rules out about the hyperdimensional portal.
@@ -942,14 +965,22 @@ After going from front office to the BOSH office hallway for the first time:
 	continue the action;
 	
 Chapter 2 - Klimp Arrives
+
+Book 16 - Commerce and Conversation
+
+Before quizzing someone about something when the noun owns the second noun:
+	if the noun is willing to sell the second noun:
+		say "'I'll sell [regarding the second noun][them] for [price of the second noun].'";
+		stop the action;
+
    
-Book 16 - Sound
+Book 17 - Sound
 
-Book 17 - Verbs
+Book 18 - Verbs
  
-To shake is a verb. To smile is a verb. To sigh is a verb. To peer is a verb. To turn is a verb. To observe is a verb. To gaze is a verb. To trudge is a verb. To walk is a verb. To step is a verb. To enter is a verb. To exit is a verb. To pause is a verb. To survey is a verb. To hand is a verb. To try is a verb. To see is a verb. To squeal is a verb. To tap is a verb. To curse is a verb. To rap is a verb. To explain is a verb. To gasp is a verb. To return is a verb. To ask is a verb. To think is a verb. To scrunch is a verb. To grimace is a verb. To mutter is a verb. To leave is a verb. To stand is a verb. To mount is a verb. To stammer is a verb. To polish is a verb. To interrupt is a verb. To raise is a verb. To chuckle is a verb. To lean is a verb. To consider is a verb. To nod is a verb. To extricate is a verb. To toss is a verb. To pick is a verb. To flatten is a verb. To remember is a verb. To trip is a verb. 
+To shake is a verb. To smile is a verb. To sigh is a verb. To peer is a verb. To turn is a verb. To observe is a verb. To gaze is a verb. To trudge is a verb. To walk is a verb. To step is a verb. To enter is a verb. To exit is a verb. To pause is a verb. To survey is a verb. To hand is a verb. To try is a verb. To see is a verb. To squeal is a verb. To tap is a verb. To curse is a verb. To rap is a verb. To explain is a verb. To gasp is a verb. To return is a verb. To ask is a verb. To think is a verb. To scrunch is a verb. To grimace is a verb. To mutter is a verb. To leave is a verb. To stand is a verb. To mount is a verb. To stammer is a verb. To polish is a verb. To interrupt is a verb. To raise is a verb. To chuckle is a verb. To lean is a verb. To consider is a verb. To nod is a verb. To extricate is a verb. To toss is a verb. To pick is a verb. To flatten is a verb. To remember is a verb. To trip is a verb. To scratch is a verb.
 
-Book 18 - Images 
+Book 19 - Images 
 
 Figure Null is the file "clerk_portrait.png".
 
@@ -1108,7 +1139,7 @@ To resize windows:
 To call resize function:
 	(- ResizeGraphicsWindow(); -); 
 	
-Book 19 - Not For Release 
+Book 20 - Not For Release 
  
 Include BOSH Tests by Philip Riley.
 
@@ -1120,8 +1151,8 @@ test office1 with "w/x vent/x screws/x computer/x thumb drive/look behind desk/x
 test office2 with "w/w/n/w/s/n/e/ask about computer/look behind desk/x computer/x thumb drive".
 test office3 with "w/w/x wrench/s/open desk/n/e/ask margaret for key/w/s/x desk/n/e/ask about allen/look behind desk/x vent/get wrench/ask about screwdriver".
 test no-screwdriver with "n/enter store/ask about screwdriver/w/s/sw/ask about screwdriver/ask about owner".
-test win with "w/w/s/open desk/n/e/ask about key/ask about computer/look behind desk/x computer/remember finding the drive/w/s/x desk/open white door/n/e/ask about wrench/ask about backdoor/take boxes/w/s/z/w/z/z/open white door/knock on white door/e/z/n/e/x vent/ask for a screwdriver/n/e/n/e/ask for screwdriver/w/s/sw/ask for a screwdriver/ask about the owner/ne/w/w/w/x lenses/ask to borrow pair/wear them/e/e/take boxes/w/s/w/back/n/f/d/n/s/turn off light/wear glasses/f/fn/push truck bs/push truck back/move crates/move crates with truck/x washing machine/open it/enter it/f/f/f/f/f/fn/fw/fn/fn/fw/w/fn/w/take compass/x compass/s/s/s/s/s/s/s/e/e/e/e/e/e/e/e/b/b/b/b/b/b/b/b/b/d/w/w/how him the thumb drive/hand it over/ask who he is/ask about his name/where are we/klimp is fine/ask how to get home/show him the thumb drive/hand it over".
-["/ask savra/ask about mission/how will i find him/ask about the dragon/ask about time travel/ready to go/i/x device/e/f/enter portal".]
+test win with "w/w/s/open desk/n/e/ask about key/ask about computer/look behind desk/x computer/remember finding the drive/w/s/x desk/open white door/n/e/ask about wrench/ask about backdoor/take boxes/w/s/z/w/z/z/open white door/knock on white door/e/z/n/e/x vent/ask for a screwdriver/n/e/n/e/ask for screwdriver/w/s/sw/ask for a screwdriver/ask about the owner/ne/w/w/w/x lenses/ask to borrow pair/wear them/e/e/take boxes/w/s/w/wear glasses/back/n/f/d/n/s/turn off light/wear glasses/f/fn/push truck bs/push truck back/move crates/move crates with truck/x washing machine/open it/enter it/f/f/f/f/f/fn/fw/fn/fn/fw/w/fn/w/take compass/x compass/s/s/s/s/s/s/s/e/e/e/e/e/e/e/e/b/b/b/b/b/b/b/b/b/d/w/w/how him the thumb drive/hand it over/ask who he is/ask about his name/where are we/klimp is fine/ask how to get home/show him the thumb drive/hand it over/ask about savra/ask about the dragon/time travel/ask about the mission/how will i find him/e/w/ready to go/i/x device/e/f/enter portal/press button/e/f/enter portal".
+
 
 test no-drive with "w/w/s/open desk/n/e/ask about key/ask about computer/look behind desk/w/s/x desk/open white door/n/e/ask about wrench/ask about backdoor/take boxes/w/s/z/w/z/z/open white door/knock on white door/e/z/n/e/x vent/ask for a screwdriver/n/e/n/e/ask for screwdriver/w/s/sw/ask for a screwdriver/ask about the owner/ne/w/w/w/x lenses/ask to borrow pair/wear them/e/e/take boxes/w/s/w/back/n/f/d/n/s/turn off light/wear glasses/f/fn/push truck bs/push truck back/move crates/move crates with truck/x washing machine/open it/enter it/f/f/f/f/f/fn/fw/fn/fn/fw/w/fn/w/take compass/x compass/s/s/s/s/s/s/s/e/e/e/e/e/e/e/e/b/b/b/b/b/b/b/b/b/d/w/w".
 

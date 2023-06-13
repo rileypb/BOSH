@@ -15,8 +15,8 @@ The last for printing the options paragraph rule:
 	
 The options paragraph stage rule is listed after the adjust light rule in the turn sequence rules.
 
-After printing the locale description (this is the blah rule):
-	carry out the printing the options paragraph activity;
+[After printing the locale description (this is the blah rule):
+	carry out the printing the options paragraph activity;]
 
 First options paragraph is a truth state that varies. First options paragraph is initially true.
 After printing the locale description when first options paragraph is true:

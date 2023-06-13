@@ -35,7 +35,7 @@ looking for the desk key is a truth state that varies.
 
 about the whereabouts of the desk key is a questioning quip.
 	it mentions the little grey key. 
-	the comment is "[We] [say], '[EG]Um, uh, Margaret? Do you know where the key to my desk is?[PCG]Margaret, sweetheart, do you know where my desk key is?[LF]Hey Margaret, do you know anything about my desk key?[end say]'[line break]".
+	the comment is "[We] [say], 'Hey Margaret, do you know anything about my desk key?'[line break]".
 	[the comment is "[We] [say], 'Hey, Margaret. Do you have the key to my desk?'".]
 	the reply is "'Sure I do -- I put it in your desk.' She furrows her brow. 'What's the matter?'"
 	It quip-supplies Margaret.
@@ -70,11 +70,11 @@ An availability rule for for the wrench:
 	if the player knows key-is-lost and player knows hex-screws:
 		always available;
 	
-for-a-screwdriver is a repeatable questioning quip.
+for-a-screwdriver is a questioning quip.
 	It is privately-named. The printed name is "for a screwdriver". [The true-name is "for-a-screwdriver".] Understand "for/a/screwdriver" as for-a-screwdriver.
 	It mentions the screwdriver.
-	The comment is "[if the current interlocutor is Margaret][We] [ask], [one of][EG]'Er, screwdriver? Margaret?'[PCG]'Margaret, dear, do we have a screwdriver around here?'[LF]'Margaret, where's the screwdriver?'[end say][line break][or]'Are you sure we don't have one?'[stopping][otherwise][We] [ask], [one of]'Would you happen to have a screwdriver I could borrow?'[or]'You sure? I could really use one.'[stopping][end if]".
-	The reply is "[one of]'Umm... I think it was in a box we had to leave behind.' [Margaret] looks embarrassed. 'What? I never thought we'd need it. This isn't a construction site after all. Maybe if Klimp had paid for the bigger UHaul...' [They] stares past [us] awkwardly.[or][Margaret] just looks at [us] darkly.[stopping]".
+	The comment is "[if the current interlocutor is Margaret][We] [ask], 'Margaret, where's the screwdriver?'[line break][otherwise][We] [ask], 'Would you happen to have a screwdriver I could borrow?'[end if]".
+	The reply is "'Umm... I think it was in a box we had to leave behind.' [Margaret] looks embarrassed. 'What? I never thought we'd need it. This isn't a construction site after all. Maybe if Klimp had paid for the bigger UHaul...' [They] stares past [us] awkwardly.".
 	It quip-supplies Margaret;
 	
 An availability rule for for-a-screwdriver:
@@ -93,7 +93,7 @@ An availability rule for to unlock the backdoor:
 		always available;
 
 about the phone exchange is a questioning quip.
-	The comment is "[We] [ask], 'What's going on with the phones, Margaret?'".
+	The comment is "[We] [ask], 'Tell me what's going on with the phones again?'".
 	The reply is "[Margaret] looks apologetic. 'I'm sorry, I thought everyone knew. Budget cuts. They're trading in all our smart phones for cheaper models.'".
 	It quip-supplies Margaret.
 	It stocks Margaret.
@@ -104,10 +104,11 @@ Chapter 1 - Comments about items
 
 Table of Quiz Topics (continued)
 subject (a thing)	interlocutor (a person)	comment (a text)	reply (a text)
-coatrack	Margaret	--	"She grins. 'Good thinking, right?'"
+coatrack	Margaret	--	"She grins. 'An old clothing rack. Good thinking, right?'"
 shelves of office supplies	Margaret	--	"'I doubt you'll be needing any of that now, but if you do, let me know.'"
 cardboard boxes	Margaret	--	"'Hmm, I guess I need to bring those out back to the dumpster.'"
 coffee table	Margaret	--	"'It's not much, but what can you expect for $8?'"
+Margaret	Margaret	"'How are you, Margaret?'"	"'I'm doing great, thanks!'"
 
 Instead of quizzing Margaret Chao about Chief Klimp:
 	if Chief Klimp is not in BOSH Chief's Office:

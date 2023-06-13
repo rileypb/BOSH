@@ -27,20 +27,22 @@ The department store sign is a part of the office_. Understand "angel/angel's" a
 	 
 Understand "office/bosh/hq/headquarters/bureau/storefront", "new office" as the office_.
 
-Car 1 is a thing in Strip Mall Parking Lot South. It is privately-named. The printed name is "[our] Hyundai". Understand "car", "hyundai", "automobile", "auto" as car 1. The initial appearance of car 1 is "[Our] Hyundai is parked nearby." It is fixed in place. The description is "An old bright red Hyundai Accent, it's been [our] personal means of transportation for years. And since the Bureau lost its fleet, it's [our] work car too.".
+An automobile is a kind of thing.
+
+Car 1 is an automobile in Strip Mall Parking Lot South. It is privately-named. The printed name is "[our] Hyundai". Understand "car", "hyundai", "automobile", "auto" as car 1. The initial appearance of car 1 is "[Our] Hyundai is parked nearby." It is fixed in place. The description is "An old bright red Hyundai Accent, it's been [our] personal means of transportation for years. And since the Bureau lost its fleet, it's [our] work car too.".
 
 Instead of entering car 1:
 	say "[Our] job is here for now.";
 
-Car 2 is a thing. It is privately-named. The printed name is "[Chief Klimp]'s Porsche". Understand "car/Klimp's/Porsche/automobile/auto" as car 2. The initial appearance of car 2 is "Klimp's Porsche takes up two spots." It is fixed in place. The description is "Klimp drives an impeccably-maintained 2017 Porsche 911 Turbo Cabriolet."
+Car 2 is an automobile. It is privately-named. The printed name is "[Chief Klimp]'s Porsche". Understand "car/Klimp's/Porsche/automobile/auto" as car 2. The initial appearance of car 2 is "Klimp's Porsche takes up two spots." It is fixed in place. The description is "Klimp drives a sleek 2017 Porsche 911 Turbo Cabriolet."
 
 	
 To make is a verb.
 
-Check pushing car 1: 
+Check pushing an automobile: 
 	say "[We] could probably push the car if [we] put it in neutral and released the parking brake, but why would [we]?" instead;
 
-Check turning car 1: 
+Check turning an automobile: 
 	say "It's not clear what you mean for [us] to do." instead;
  
 The Laundromat-facade is a privately-named unenterable room in Parking Lot South. The printed name is "A-plus laundromat". Understand "A-plus/plus/laundromat" as the laundromat-facade. "[We] [peer] through the windows of the laundromat at the rows of aging machines. A sign on the door says 'Closed for renovations'. [We] [turn] away, unimpressed." 
@@ -149,26 +151,11 @@ Greeting response for Dave:
 [The how-are-you-reply of Dave is "Been better.".]
 	
 for-a-screwdriver-pawn is a questioning quip.
-	It is privately-named. The printed name is "for a screwdriver". [The true-name is "for-a-screwdriver-pawn".] Understand "for/a/screwdriver" as for-a-screwdriver-pawn.
+	It is privately-named. The printed name is "for a screwdriver". 
+	Understand "for/a/screwdriver" as for-a-screwdriver-pawn.
 	It mentions the screwdriver.
-	The comment is "[We] [EG][stammer] 'Excuse me, I was wondering, I'm from the office next door...'
-	
-	[Dave] [polish] a spot on the glass counter and [say], 'Spit it out, buddy.'
-	
-	'Uh, yes, by the way, nice establishment you have here...'
-	
-	'Sure.'
-	
-	[EG]'Anyway, is there any chance that maybe you, um, have a screwdriver? That I could borrow, just for a few minutes of course.'[PCG][smile] warmly and [say], 'Hi, I[']m Petula from next door -- '
-	
-	'[italic type]Very[roman type] pleased to meet you, Petula,' [regarding Dave][interrupt] [Dave].
-	
-	[We] [raise] one eyebrow. 'Of course. Likewise. Anyway, as I was saying, I'm Agent Goldberg from the Bureau next door --'[PCG]
-	
-	'Agent, Bureau, really?' [regarding Dave][They] [chuckle]. 'In this hole? Who'd you piss off?'
-	
-	'You couldn't imagine, sir. But to why I came here: do you happen to have a screwdriver I could borrow?'[LF][lean] on the counter. 'Hey, do you have a screwdriver? Can't find mine and I really need one.'[end say]".
-	The reply is "[EG][Dave] [look] exasperated. 'Is that all? [PCG]The shopkeeper rolls his eyes. '[LF]The man shakes his head and says, 'Sorry, miss. [end say]I had one, but the guy who runs the laundromat borrowed it and didn't bring it back.'[line break]".
+	The comment is "[We] [lean] on the counter and [ask], 'Do you happen to have a screwdriver I could borrow for a few minutes? I'm from the Bureau office next door.'".
+	The reply is "The man shakes his head and says, 'Sorry. I had one, but the guy who runs the laundromat borrowed it and didn't bring it back.'".
 	It quip-supplies Dave.
 	
 An availability rule for for-a-screwdriver-pawn:
@@ -180,7 +167,7 @@ After discussing for-a-screwdriver-pawn:
 	continue the action;
 	
 about the laundromat owner is a questioning quip.
-	The comment is "[We] [EG][say], 'Huh, um. Do you know how I could, uh, find the laundromat owner -- was it owner, or manager? I don't suppose it really matters. Anyway, do you know where he, um, or she I guess, is?'[PCG][consider] for a moment and [say], 'How do you suppose I might get in touch with this man who runs the laundromat? I really could use a screwdriver.'[LF][nod]. 'Okay, then, how do I get in touch with this laundromat guy?'[end say]".
+	The comment is "[We] [say], 'How do you suppose I might get in touch with this man who runs the laundromat? I really could use a screwdriver.'".
 	The reply is "'Well, that's a tricky one. Laundromat's been closed for almost two weeks now, since the owner just split for some reason he didn't bother to share. Not likely to get ahold of him. If you're not averse to a little trespassing, though, see if you come across a watch. Another thing he borrowed.'".
 	It quip-supplies Dave.
 	It follows for-a-screwdriver-pawn.
@@ -319,7 +306,7 @@ The Li'l Nectarine Convenience Store is east of the Parking Lot North. It is in 
 
 The destination name is "Li'l Nectarine Convenience Store".
  
-The store clerk is a man in the Convenience Store. "The clerk, a scruffy man in his mid-twenties, is leaning against the counter, looking bored." The description is "The clerk looks as if he'd rather be anywhere else. He's wearing jeans and a white t-shirt with something inscrutable scrawled on it. His hair sticks up every which way."
+The store clerk is a man in the Convenience Store. "The clerk, a scruffy man in his mid-twenties, is leaning against the counter, looking bored." The description is "The clerk looks as if he'd rather be anywhere else. He's wearing jeans and a white t-shirt with something inscrutable scrawled on it. His hair sticks up every which way." Understand "man" as the store clerk.
 The shop counter is a supporter in the nectarine store. It is scenery. "The counter is arrayed with displays of CBD oil, antacids, and the like."
 
 Some CBD oil is scenery in the convenience store. "[We] [don't] need any of this stuff." 
@@ -364,9 +351,9 @@ The description of the wireless earbuds is "Some no-name brand." Understand "air
 		move the flashlight to the counter.	]	
 		
 After quizzing the clerk about the glass case:
-	say "'You want something? Name it.'" instead;
+	say "'You want something inside? Name it.'" instead;
 	
-for-a-screwdriver-clerk is a repeatable questioning quip.
+[for-a-screwdriver-clerk is a questioning quip.
 	It is privately-named. The printed name is "for a screwdriver". [The true-name is "for-a-screwdriver-clerk".] Understand "for/a/screwdriver" as for-a-screwdriver-clerk.
 	It mentions the screwdriver.
 	The comment is "[We] [ask], 'Would you happen to have a screwdriver I could borrow?'".
@@ -375,9 +362,17 @@ for-a-screwdriver-clerk is a repeatable questioning quip.
 	
 An availability rule for for-a-screwdriver-clerk:	
 	if the player knows vent-screws and the screwdriver is not seen:
-		always available;
+		always available;]
 	
 strip mall parking lot north is outside from the the Li'l Nectarine Convenience Store.
+
+Book 5 - Comments about Things
+
+Table of Quiz Topics (continued)
+subject (a thing)	interlocutor (a person)	comment (a text)	reply (a text)
+glass case	store clerk	--	"'You want something inside, just ask.'"
+
+Book 6 - Polish
 
 Table of Excuses (continued)
 source room (a room)	dirs (a list of directions)	excuse (a text)
