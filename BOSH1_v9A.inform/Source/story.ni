@@ -1,5 +1,6 @@
 "The Bureau of Strange Happenings" by Phil Riley
 
+
 The story title is "The Bureau of Strange Happenings".
 The story author is "Phil Riley".
 The story headline is "An Interactive Phenomenon".
@@ -76,7 +77,7 @@ To turn on rules:
  
 Volume 1 - The Game 
 
-Book 1 - Beginning
+Book 1 - Beginning 
  
 The Room of Stuff is a room. 
   
@@ -742,7 +743,7 @@ To say photos description:
 	remove the player from character list;
 	say "The photo of [character list] smiling together is particularly poignant, as they were just let go last month";
 
-Some Bureau photos are scenery in the front office. "[photos description].".
+Some Bureau photos are scenery in the front office. "[photos description].". 
 
 Margaret Chao is in front office.  
 
@@ -1127,8 +1128,8 @@ To draw speech bubble:
 To draw phone handset:
 	(- DrawPhoneHandset(); -)
 	
-A window resizing rule:
-	do nothing;
+[A window resizing rule:
+	do nothing;]
 	
 To resize windows:
 	call resize function;	
@@ -1161,6 +1162,15 @@ lensing is an action applying to nothing. Understand "lens" as lensing.
 
 Carry out lensing: 
 	now the player wears the pair of astral lenses;
+	
+jumping to part 3 is an action applying to nothing. Understand "enigma" as jumping to part 3.
+
+Carry out jumping to part 3:
+	move the player to the enigma lake town hall;
+	now the player wears the pair of astral lenses;
+	now the player carries the recall button;
+	now the player carries the Bureau credit card;
+	now the green smartphone is nowhere;
 	
 Volume 2 - Test command tweak for clean transcripts
 

@@ -12,13 +12,59 @@ Volume 2 - Geography
 
 ELR is a region.
 
-the Enigma Lake town hall is a room. It is in ELR.
+Book 1 - Town Hall
 
-Enigma Park is north of Enigma Lake town hall. Enigma Park is in ELR.
+the Enigma Lake town hall is a room. It is in ELR.
+"This is the lobby. The rest of the building is locked up tight. The main feature here is the information desk. Taped to it is what looks to be a work schedule."
+
+The information desk is scenery in the Enigma Lake town hall. Understand "info" as information desk. "A work schedule is taped to the desk."
+
+The backpack is a closed openable container. It is behind the information desk. The description is "Stitched into the fabric are the initials 'JT'".
+Understand "back/pack/rucksack/ruck/sack/knapsack/knap" as the backpack.
+
+The red key is a key. It is inside the backpack. The description is "The letters ELG are printed on the key, labeling it the property of Enigma Lake Gymnasium.".
+
+The work schedule is scenery in the Enigma Lake town hall. 
+"[fixed letter spacing] +--------------------------------+[line break]
+|Name            Shift           |[line break]
++--------------------------------+[line break]
+|Monday          Edward Alpha    |[line break]
+|Tuesday         Mary Huff       |[line break]
+|Wednesday       Jeff Thompson   |[line break]
+|Thursday        Edward Alpha    |[line break]
+|Friday          Rosemary Klein  |[line break]
+|Saturday        Mary Huff       |[line break]
++--------------------------------+"
+
+The building is scenery in the Enigma Lake town hall.
+
+Instead of examining the building:
+	try examining the Enigma Lake town hall;
+
+After examining the information desk when the backpack is nowhere:
+	now the player carries the backpack;
+	say "[We] [find] a backpack behind the information desk and [take] it.";
+		
+
+Book 2 - Enigma Park
+
+Enigma Park is north of Enigma Lake town hall. Enigma Park is in ELR. 
+"It's probably beautiful during the day, but tonight the deep shadows among the trees seem ominous. [We] [are] watchful and tense as [we] [explore] the park. 
+
+The central focus of the park is a large obelisk inscribed with the names of the town's citizens lost in the Great War."
+
+Some trees are scenery in Enigma Park.
+
+Some shadows are scenery in Enigma Park.
+
+The obelisk is scenery in Enigma Park.
+
+
+Book 3 - Main Street 200 Block
 
 the Main Street 200 Block is south of Enigma Lake Town Hall. It is in ELR. The printed name is "200 block of Main Street". The preposition is "on".
 
-Main at Solvay is west of Main Street 200 Block. It is in ELR. The printed name is "Main and Solvay". The preposition is "at".
+Main at Solvay is west of Main Street 200 Block. It is in ELR. The printed name is "Main and Solvay". The preposition is "on".
 
 Solvay Road by the fire station is north of Main at Solvay. It is in ELR. The preposition is "walking on".
 

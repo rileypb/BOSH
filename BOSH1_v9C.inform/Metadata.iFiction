@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ifindex version="1.0" xmlns="http://babel.ifarchive.org/protocol/iFiction/">
+    <story>
+        <identification>
+            <ifid>F61EFB05-03A9-4894-B076-9E767F9163A8</ifid>
+            <format>glulx</format>
+        </identification>
+        <bibliographic>
+            <title>The Bureau of Strange Happenings</title>
+            <author>Phil Riley</author>
+            <headline>An Interactive Phenomenon</headline>
+            <genre>Science Fiction</genre>
+            <firstpublished>2023</firstpublished>
+            <language>en</language>
+            <group>Inform</group>
+        </bibliographic>
+        <cover>
+            <format>png</format>
+            <height>1024</height>
+            <width>1024</width>
+            <description>The cover art.</description>
+        </cover>
+        <releases>
+            <attached>
+                <release>
+                    <releasedate>2023-06-16</releasedate>
+                    <version>1</version>
+                    <compiler>Inform 7</compiler>
+                    <compilerversion>6M62</compilerversion>
+                </release>
+            </attached>
+        </releases>
+        <colophon>
+            <generator>Inform 7</generator>
+            <generatorversion>6M62</generatorversion>
+            <originated>2023-06-16</originated>
+        </colophon>
+        <glulx>
+            <serial>230616</serial>
+            <release>1</release>
+            <compiler>Inform 7 build 6M62</compiler>
+            <coverpicture>1</coverpicture>
+        </glulx>
+    </story>
+</ifindex>
