@@ -4,6 +4,12 @@ Volume 1 - Some Stuff
 
 The correct locker number is a number that varies.
 
+When play begins:
+	if DEBUG is false:
+		now the correct locker number is a random number from 11 to 89;
+	otherwise:
+		now the correct locker number is 1;
+
 The old copper key is a key.
 
 The locker key is a key.
@@ -17,9 +23,10 @@ Book 1 - Town Hall
 the Enigma Lake town hall is a room. It is in ELR.
 "This is the lobby. The rest of the building is locked up tight. The main feature here is the information desk. Taped to it is what looks to be a work schedule."
 
+
 The information desk is scenery in the Enigma Lake town hall. Understand "info" as information desk. "A work schedule is taped to the desk."
 
-The backpack is a closed openable container. It is behind the information desk. The description is "Stitched into the fabric are the initials 'JT'".
+The backpack is a closed openable container. It is behind the information desk. The description is "Stitched into the fabric are the initials 'WT'".
 Understand "back/pack/rucksack/ruck/sack/knapsack/knap" as the backpack.
 
 The red key is a key. It is inside the backpack. The description is "The letters ELG are printed on the key, labeling it the property of Enigma Lake Gymnasium.".
@@ -30,9 +37,9 @@ The work schedule is scenery in the Enigma Lake town hall.
 +--------------------------------+[line break]
 |Monday          Edward Alpha    |[line break]
 |Tuesday         Mary Huff       |[line break]
-|Wednesday       Jeff Thompson   |[line break]
+|Wednesday       Bill Thompson   |[line break]
 |Thursday        Edward Alpha    |[line break]
-|Friday          Rosemary Klein  |[line break]
+|Friday          Rosemary Tamsin |[line break]
 |Saturday        Mary Huff       |[line break]
 +--------------------------------+"
 
@@ -44,14 +51,14 @@ Instead of examining the building:
 After examining the information desk when the backpack is nowhere:
 	now the player carries the backpack;
 	say "[We] [find] a backpack behind the information desk and [take] it.";
-		
+
 
 Book 2 - Enigma Park
 
 To explore is a verb.
 
 Enigma Park is north of Enigma Lake town hall. Enigma Park is in ELR. 
-"It's probably beautiful during the day, but tonight the deep shadows among the trees seem ominous. [We] [are] watchful and tense as [we] [explore] the park. 
+"It's probably beautiful during the day, but tonight the deep shadows among the trees seem ominous. [Faraji] is watchful and tense as [we] [explore] the park. 
 
 The central focus of the park is a large obelisk inscribed with the names of the town's citizens lost in the Great War."
 
@@ -59,26 +66,44 @@ Some trees are scenery in Enigma Park.
 
 Some shadows are scenery in Enigma Park.
 
-The obelisk is scenery in Enigma Park.
+The obelisk is scenery in Enigma Park. Understand "monument/names/citizens" as the obelisk.
 
 
 Book 3 - Main Street 200 Block
 
 the Main Street 200 Block is south of Enigma Lake Town Hall. It is in ELR. The printed name is "200 block of Main Street". The preposition is "on".
 
+The Town Hall Front Facade is scenery. It is in Main Street 200 Block. It is privately-named. The printed name is "town hall". Understand "town/city/hall" as the Town Hall Front Facade. "The archetypical town hall of the northeastern US, it's a white-sided building the size of a large house, exuding a sense of civic duty."
+
+Book 4 - Main at Solvay
+
 Main at Solvay is west of Main Street 200 Block. It is in ELR. The printed name is "Main and Solvay". The preposition is "on".
+
+Book 5 - Solvay Road by the fire station
 
 Solvay Road by the fire station is north of Main at Solvay. It is in ELR. The preposition is "walking on".
 
+Book 6 - Solvay Road leading out of town
+
 Solvay Road leading out of town is north of Solvay Road by the Fire Station and west of Enigma Park. It is in ELR. The preposition is "walking on".
+
+Book 7 - Main at Lake
 
 Main at Lake is east of Main Street 200 Block. It is in ELR.
 
+Book 8 - Lake Street by the gym
+
 Lake Street by the gym is north of Main at Lake. It is in ELR.
+
+Book 9 - Lake Street by the Park
 
 Lake Street by the Park is north of Lake Street by the gym and east of Enigma Park. It is in ELR.
 
+Book 10 - First Unitarian Church of Enigma Lake
+
 First Unitarian Church of Enigma Lake is east of Lake Street by the Park. It is in ELR.
+
+Book 11 - Lake at Ridge
 
 the Lake at Ridge is north of Lake Street by the Park. It is in ELR.
 The printed name is "intersection of Lake Street and Ridge Road". The preposition is "at".
@@ -112,28 +137,86 @@ Understand "start [something]" as switching on.
 Rule for writing a paragraph about the abandoned truck:
 	say "There is an abandoned pickup truck at the side of the road."
 
+Book 12 - Lake Shore north of the park
+
 the lake shore north of the park is west of Lake at Ridge and north of Enigma Park. It is in ELR. The preposition is "on".
+
+Book 13 - Lake shore west
 
 the Lake Shore West is west of Lake Shore North of the Park and north of Solvay Road Leading Out Of Town. It is in ELR. The printed name is "west end of the town's lake shore". The preposition is "at".
 
+Book 14 - Horton House
+
 The yellow door is a closed openable locked lockable scenery door. It is west of Solvay Road Leading Out Of Town and east of Horton House. Understand "horton/house" as yellow door. The printed name is "yellow (Horton House) door". The yellow door has matching key the old copper key.
 Horton House is a room. It is in ELR.
+
+Book 15 - Fire Station 1
 
 Fire Station 1 is west of Solvay Road by the Fire Station. It is in ELR. The printed name is "Hook and Ladder Company #1". 
 
 The ladder is in the Fire Station 1.
 
+Book 16 - Reading Room
+
 The Reading Room is west of Main at Solvay. It is in ELR.
 
+Book 17 - Reading Room Basement
+
+The Book Store Basement is below the Reading Room. It is in ELR.
+
+A bricked up hole in the wall is scenery in the Book Store Basement.
+
+Book 18 - Sewer Tunnel
+
+a sewer tunnel 1 is north of book store basement. It is in ELR. It is privately-named. It is always-indefinite. The printed name is "sewer tunnel". Understand "sewer/tunnel" as sewer tunnel 1. ""
+
+a sewer tunnel 2 is east of sewer tunnel 1. It is in ELR. It is privately-named. It is always-indefinite. The printed name is "sewer tunnel". Understand "sewer/tunnel" as sewer tunnel 2.
+
+a sewer tunnel 3 is east of sewer tunnel 2. It is in ELR. It is privately-named. It is always-indefinite. The printed name is "sewer tunnel". Understand "sewer/tunnel" as sewer tunnel 3.
+
+The astral-tunnel-elr is forth of sewer tunnel 3. It is privately-named. The printed name is "astral tunnel". It is in hyperspace. "It is featureless white, or what passes for white here. It leads back and backnorth.";
+
+astral-tunnel-elr is forthsouth of the gym basement.
+
+The gymnasium basement door is a locked closed openable lockable scenery door. It is north of sewer tunnel 3 and south of the gym basement.
+
+Book 19 - Fresnel's Music
+
 Fresnel's Music is southwest of Main at Solvay. It is in ELR.
+
+Book 20 - Henry's Hot Skillet
 
 Henry's Hot Skillet is a room. It is in ELR.
 
 the Skillet door is a closed locked openable lockable scenery door. It is south of Main at Solvay and north of Henry's Hot Skillet. The Skillet door has matching key the brass key.
 
+Book 21 - Rolle's Department Store
+
 Rolle's Department Store is south of Main Street 200 Block. It is in ELR.
 
-The public gymnasium is east of Lake Street by the gym. It is in ELR. "There is a basketball court and a weight training area. A front desk is next to the front entrance."
+The floor waxer is in Rolle's Department Store.
+
+Book 22 - Public Gymnasium
+
+The gym door is a closed locked openable lockable door. It is east of Lake Street by the gym and west of the public gymnasium.
+
+The public gymnasium is in ELR. "There is a basketball court and a weight training area. A front desk is next to the front entrance."
+
+The gym front desk is a scenery supporter in the public gymnasium. "Some kind of record book sits on the front desk."
+
+The membership book is a fixed in place thing on the gym front desk. The description is "It's a book apparently full of records of the members of the gym. You could LOOK UP a member's name IN BOOK."
+
+Instead of consulting the membership book about something:
+	if the topic understood matches "william thompson" or the topic understood matches "bill thompson" or the topic understood matches "thompson":
+		say "[fixed letter spacing]WILLIAM THOMPSON[line break]
+		126 Rochester Road[line break]
+		Enigma Lake, NY[line break]
+		#[correct locker number].[variable letter spacing][paragraph break]";
+		now looked up locker is true;
+	otherwise:
+		say "You can't find that name in the membership book.";
+
+Book 23 - Gym Basement
 
 The gym basement is below the public gymnasium. It is in ELR. "This area is dominated by large banks of lockers."
 
@@ -141,24 +224,52 @@ The bank of lockers is scenery in the gym basement. Understand "banks/locker" as
 "The lockers are numbered 1 to 100."
 The bank of lockers can be opened-once.
 
+Looked up locker is a truth state that varies.
+
 Opening a locker is an action applying to one number. Understand "open locker/-- number/-- [number]" as opening a locker when the location is the gym basement.
+
+Check opening a locker when looked up locker is false:
+	say "[We] [are] hardly going to try opening every locker. There must be a better way to go about this." instead;
 	
 Check opening a locker:
 	if the number understood < 1 or the number understood > 100:
 		say "The lockers are numbered 1 to 100." instead;
 		
-Check opening a locker when the player does not enclose the locker key:
+Check opening a locker when the player does not enclose the red key:
 	say "[We] [don't] have a key for the locker." instead;
 	
 Check opening a locker :
 	if the number understood is not the correct locker number:
-		say "The key doesn't fit the lock.";
+		say "The key doesn't fit the lock." instead;
 		
 Carry out opening a locker:
 	if the locker is not opened-once:
-		say "[We] [open] the locker. It contains some dirty gym clothes, among which you find [an old copper key]. [We] [take] it and close the locker.";
+		say "[We] [open] the locker. It contains some dirty gym clothes, among which [we] find [an old copper key]. [We] [take] it and close the locker.";
 		now the player carries the old copper key;
 	otherwise:
-		say "The locker is empty.";
+		say "The locker contains nothing but some old gym clothes.";
+		
+Volume 3 - Polish
+
+[Table of Excuses (continued)
+source room (a room)	dirs (a list of directions)	excuse (a text)
+Strip Mall Parking Lot South	{south, southeast}	"The swamp would just muck up [agent]'s clothes."
+Strip Mall Parking Lot South	{east}	"An automatic car wash isn't of much use when one is on foot."
+Strip Mall Parking Lot South	{northeast}	"A fence prevents [us] from leaving the property."
+Strip Mall Parking Lot North	{northeast, southeast}	"A fence prevents [us] from leaving the property."
+Strip Mall Parking Lot North	{northwest, southwest}	"The only thing to the west is the military recruitment center."]
+
+
+Table of Frustrated Taking (continued)
+target (a thing)	message (a text)	move message (a text)
+membership book	"You hardly need it, and it might useful to someone else."	--
+
+
+[Table of Floors (continued)
+locale (a room)	has floor (a truth state)	floor description (a text)	touch description (a text)
+strip mall parking lot south	--	"Black asphalt."
+strip mall parking lot north	--	"Black asphalt."
+li'l nectarine convenience store	--	"Grungy black and white tile."
+Dave's pawn shop	--	"Dingy stained industrial carpet."]
 
 Enigma Lake ends here.

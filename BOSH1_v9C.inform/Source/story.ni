@@ -151,8 +151,9 @@ When play begins:
 	now right hand status line is "[agent]";
 
 To continue:
-	say "[bracket]continue[close bracket][paragraph break]";
-	wait for any key;
+	if DEBUG is false:
+		say "[bracket]continue[close bracket][paragraph break]";
+		wait for any key;
 
 The player’s forename is a text that varies. The player’s full name is a text that varies. The player's surname is a text that varies.
 
@@ -220,12 +221,13 @@ Include (-
 To decide what text is the substituted form of (T - text) for comparison purposes:
     (- SubstituteForComparison({-new:text}, {-by-reference:T}) -).
 
-Section 2 - Technicalities
+Section 2 - Prompt
 	
+When play begins:
+	now the command prompt is "[if current interlocutor is not nothing](talking to [the current interlocutor]) [end if]>";
 
 
-
-Book 2 - Helping the Player
+Book 3 - Helping the Player
 
 Chapter 1 - Accessibility
 
@@ -259,7 +261,7 @@ Carry out remembering:
 Definition: a person is other if he is not the player.]
 		
 
-Book 3 - Special Tweaks for Implicit Greeting
+Book 4 - Special Tweaks for Implicit Greeting
 
 Before reading a command (this is the reset skip sounds rule):
 	now skip sounds this turn is false;
@@ -267,15 +269,15 @@ Before reading a command (this is the reset skip sounds rule):
 [Before saying hello to someone when the greeting type is implicit (this is the skip sounds on implicit hello rule):
 	now skip sounds this turn is true;]
 	
-Book 4 - Special Tweaks
+Book 5 - Special Tweaks
 
 the can't greet current interlocutor rule response (A) is "[We] [don't] generally talk to [ourselves].".
 the can't greet yourself rule response (A) is "[We] [don't] generally talk to [ourselves].".
 [The describe what's on scenery supporters in room descriptions rule does nothing.]
-the can't take what's fixed in place rule response (A) is "That can't be picked up.".
+
 the can't switch on unless switchable rule response (A) is "That can't be switched on and off.".  
 
-The room description body text rule response (A) is "Some light would be nice.".
+The room description body text rule response (A) is "Some light would be nice.". 
 
 [the can't touch rule does nothing when the action name part of the current action is identifying action.]
  
@@ -286,7 +288,7 @@ the standard quip plausibility rule response (A) is "[italic type][quip-suggesti
 
 
 
-Book 5 - Automatic greeting
+Book 6 - Automatic greeting
 
 After going to a room:
 	if the current interlocutor is nothing:
@@ -311,12 +313,12 @@ The postponement rule is listed before the every turn stage rule in the turn seq
 After saying hello to someone (called P):
 	set pronouns from P;
  
-Book 6 - Messages
+Book 7 - Messages
 
 The parser error internal rule response (R) is "I[']m not sure what you're trying to say. I might just not recognize the words you're using."
 
 		
-Book 7 - Actions
+Book 8 - Actions
 
 Chapter 1 - Knocking
 
@@ -332,7 +334,7 @@ Report knocking on a door:
 	
 
 
-Book 8 - Script
+Book 9 - Script
 
 Klimp in-the-office is a scene. Klimp in-the-office begins when Chief Huffton Klimp is in BOSH chief's office.
 Moira in-the-office is a scene. Moira in-the-office begins when Moira Zin is in Moira's office.
@@ -342,7 +344,7 @@ After printing the locale description when the location is front office for the 
 	say "[We] [trip] over a newspaper left up against the door. [We] [pick] it up.";
 	now the player carries the copy of the Washington Herald.
 
-Book 9 - Concepts
+Book 10 - Concepts
 
 Chapter 1 - Subjects and Facts
 
@@ -354,10 +356,10 @@ aliens is a subject. Understand "UFO/UFOs" as aliens.
 
 The Bureau of Strange Happenings is a subject. Understand "BOSH" as The Bureau of Strange Happenings. [The help text of The Bureau of Strange Happenings is "[Our] employer, The Bureau of Strange Happenings."].
 
-Book 10 - Kinds
+Book 11 - Kinds
 
 
-Book 11 - The Players
+Book 12 - The Players
 
 To decide whether (actor - a person) is busy with respect to (actor2 - a person):
 	decide on whether or not actor is phoning and actor is not talking with actor2;
@@ -452,7 +454,7 @@ The how-are-you-reply of Moira Zin is "Very well, thanks.".
 The how-are-you-reply of Chief Klimp is "Good good good. Just fine.".
 The how-are-you-reply of the clerk is "Good, I guess.".]
 
-Book 12 - Some Speech Phrases
+Book 13 - Some Speech Phrases
 
 Capture Player is a person that varies.
 
@@ -480,7 +482,7 @@ To capture speech for (P - a person):
 	
 	
 
-Book 13 - Places
+Book 14 - Places
 
 Chapter 1 - BOSH HQ and Swamp Park 
  
@@ -680,7 +682,7 @@ Margaret Chao is in front office.
 There is a copy of the Washington Herald. The description is "The front page story is an account of the disappearance of the grandson of Senate Homeland Security Committee chairman Englund Fryes. His parents, including the Senator's son, were brutally murdered in their home, but the boy, Draco Fryes, is missing and presumed kidnapped. So far there has been no ransom demand.". 
 Understand "newspaper", "paper", "news" as the Washington Herald.
 
-The front desk is a scenery supporter in front office. Understand "sales", "counter" as the front desk. The description is "The former sales counter now functions as a desk for the office manager (currently [Margaret]). Behind it are a number of shelves holding office supplies."
+The office front desk is a scenery supporter in front office. Understand "sales", "counter" as the office front desk. The description is "The former sales counter now functions as a desk for the office manager (currently [Margaret]). Behind it are a number of shelves holding office supplies."
 
 The shelves of office supplies are in front office. They are plural-named. They are scenery. "Pens, paper, nothing [we're] really concerned with now." Understand "row/of/drawers/pens/pen/pencils/pencil/paper/papers" as the shelves of office supplies.
 
@@ -711,7 +713,7 @@ Instead of taking the cardboard boxes:
 		if Margaret is in the location:
 			initiate Margaret's box routine;
 
-Biff's computer is a thing. It is privately-named. It is behind the front desk. The printed name is "[our] computer". Understand "computer" as biff's computer. The description is "[Our] computer has been damaged beyond repair.".
+Biff's computer is a thing. It is privately-named. It is behind the office front desk. The printed name is "[our] computer". Understand "computer" as biff's computer. The description is "[Our] computer has been damaged beyond repair.".
  
 Instead of examining Biff's computer when the thumb drive is not seen:
 	say "[description of biff's computer] But [we] [do] find a thumb drive and [take] it.";
@@ -719,11 +721,11 @@ Instead of examining Biff's computer when the thumb drive is not seen:
 	now the thumb drive is seen;
 	remember finding the drive for the player;	
 
-The behind description of the front desk is "There are a number of shelves of office supplies behind the desk. There is also a heating vent on the floor here.";
+The behind description of the office front desk is "There are a number of shelves of office supplies behind the desk. There is also a heating vent on the floor here.";
 
 The heating vent is a scenery container. It is openable, closed, lockable, transparent and locked. "A typical air register with a grill which one would hope would stop things like, say, a hex wrench from falling through. It's set in the floor behind the front desk. The vent is held closed by four screws." Understand "heat/air/conditioning/register" as the heating vent. It is undescribed. 
 
-After looking behind the front desk:
+After looking behind the office front desk:
 	move the heating vent to front office;
 	continue the action;
 
@@ -843,14 +845,14 @@ to wait for the report is an informative quip.
 	
 	
 
-Book 14 - The Phone Call
+Book 15 - The Phone Call
 
 [fill this in]
 
 The unknown voice is a person.
 The mysterious phone is a phone. It is owned by the unknown voice.
 
-Book 15 - Moving Between Rooms 
+Book 16 - Moving Between Rooms 
 
  
  
@@ -897,7 +899,7 @@ After going from front office to the BOSH office hallway for the first time:
 	
 Chapter 2 - Klimp Arrives
 
-Book 16 - Commerce and Conversation
+Book 17 - Commerce and Conversation
 
 Before quizzing someone about something when the noun owns the second noun:
 	if the noun is willing to sell the second noun:
@@ -905,9 +907,9 @@ Before quizzing someone about something when the noun owns the second noun:
 		stop the action;
 
    
-Book 17 - Sound
+Book 18 - Sound
 
-Book 18 - Verbs
+Book 19 - Verbs
  
 To shake is a verb. To smile is a verb. To sigh is a verb. To peer is a verb. To turn is a verb. To observe is a verb. To gaze is a verb. To trudge is a verb. To walk is a verb. To step is a verb. To enter is a verb. To exit is a verb. To pause is a verb. To survey is a verb. To hand is a verb. To try is a verb. To see is a verb. To squeal is a verb. To tap is a verb. To curse is a verb. To rap is a verb. To explain is a verb. To gasp is a verb. To return is a verb. To ask is a verb. To think is a verb. To scrunch is a verb. To grimace is a verb. To mutter is a verb. To leave is a verb. To stand is a verb. To mount is a verb. To stammer is a verb. To polish is a verb. To interrupt is a verb. To raise is a verb. To chuckle is a verb. To lean is a verb. To consider is a verb. To nod is a verb. To extricate is a verb. To toss is a verb. To pick is a verb. To flatten is a verb. To remember is a verb. To trip is a verb. To scratch is a verb.
 
@@ -916,7 +918,7 @@ Book 20 - Not For Release
  
 Include BOSH Tests by Philip Riley.
 
-DEBUG is false.
+DEBUG is true.
 
 The access through barriers rule response (A) is "you have run afoul of the access through barriers rule!";
 
@@ -934,6 +936,7 @@ lensing is an action applying to nothing. Understand "lens" as lensing.
 
 Carry out lensing: 
 	now the player wears the pair of astral lenses;
+	now the player owns the pair of astral lenses;
 	
 jumping to part 3 is an action applying to nothing. Understand "enigma" as jumping to part 3.
 
