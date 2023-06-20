@@ -39,8 +39,8 @@ Include Basics by Philip Riley.
 Include Memories by Philip Riley. 
  
 Include Simple Conversation by Philip Riley.
-Include Hyperspace by Philip Riley.	
-Include BOSH Facts by Philip Riley. 
+Include Hyperspace by Philip Riley.	  
+Include BOSH Facts by Philip Riley.  
 Include Swamp Park by Philip Riley.
 [Include Conversations General by Philip Riley.]
 Include Margaret by Philip Riley. 
@@ -72,7 +72,7 @@ To turn on rules:
 [After starting the virtual machine:
 	turn on rules;] 
 
- 
+ Use MAX_STATIC_DATA of 360000.
  
 Volume 1 - The Game 
 
@@ -794,9 +794,9 @@ Moira's office is in BOSH HQ. There is a fluorescent light source in Moira's off
 "It is, like Moira herself, neat and orderly. She's clearly made the most of the meager funds she had for furnishing her office. Behind a modest yet functional desk is a modest yet functional office chair. Her bookshelves are filled with titles relating to investigative techniques, law, and skepticism. In the east wall is a closet door. The exit is to the south."
 
 There is a closet in Moira's office. The closet is a container. It is openable and closed. It is lockable and locked. It is scenery.
-There is a breaker box in the closet. It is an openable container. It is closed. It is fixed in place. The description is "It's a small metal box affixed to the back wall of the closet. It is featureless apart from the latch."
+[There is a breaker box in the closet. It is an openable container. It is closed. It is fixed in place. The description is "It's a small metal box affixed to the back wall of the closet. It is featureless apart from the latch."
 There is a circuit breaker in the breaker box. It is fixed in place.
-A circuit breaker is a device. The description is "The circuit breaker is a single switch, labeled `20 amps`."
+A circuit breaker is a device. The description is "The circuit breaker is a single switch, labeled `20 amps`."]
 
 Moira's desk is a supporter in Moira's office. It is scenery. The description is "It's a pretty ordinary mass-produced desk, but Moira's re-stain job on it has truly transformed it. Really, is there anything she can't do?"
 
@@ -819,7 +819,7 @@ Instead of knocking on the closet door when the location is the utility closet a
 	if Moira Zin is in Moira's Office:
 		say "After a few seconds, someone inserts a key in the lock and opens the door. It's [player's surname]'s colleague Moira Zin. 'How'd you get in there, [player's forename]?'
 		
-		You exit the closet.";
+		Faraji exits the closet.";
 		move the player to Moira's Office;
 		queue Moira Zin with about the hyperdimensional portal;
 		queue Moira Zin with to wait for the report;
@@ -946,18 +946,24 @@ Carry out jumping to part 3:
 	now the player carries the recall button;
 	now the player carries the Bureau credit card;
 	now the green smartphone is nowhere;
+	 
+closeting is an action applying to nothing. Understand "closet" as closeting.
+
+Carry out closeting:
+	move the player to the utility closet;
+	follow the adjust adjacent light rule;
 	
 Volume 2 - Test command tweak for clean transcripts
 
-Include (-
-
+Include (- 
+ 
 #Iftrue ({-value:NUMBER_CREATED(test_scenario)} > 0);
 
 [ TestScriptSub;
 	switch(special_word) {
 {-call:PL::Parsing::TestScripts::compile_switch}
 	default:
-		print ">--> The following tests are available:^";
+		print ">--> The following tests are available:^"; 
 {-call:PL::Parsing::TestScripts::compile_printout}
 	}
 ];

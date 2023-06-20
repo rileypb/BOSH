@@ -2708,6 +2708,7 @@ The looking action has an object called the visibility ceiling.
 
 Setting action variables for looking (this is the determine visibility ceiling
 	rule):
+	surreptitiously reckon darkness;
 	if the actor is the player, calculate visibility ceiling at low level;
 	now the visibility level count is the visibility ceiling count calculated;
 	now the visibility ceiling is the visibility ceiling calculated;
@@ -6465,7 +6466,7 @@ To surreptitiously move (something - object) to (something else - object):
 	(- move {something} to {something else}; -).
 To surreptitiously move (something - object) to (something else - object) during going:
 	(- MoveDuringGoing({something}, {something else}); -).
-To surreptitiously reckon darkness:
+To surreptitiously reckon darkness:	
 	(- SilentlyConsiderLight(); -).
 
 To say list-writer list of marked objects: (-

@@ -9,6 +9,8 @@ Hyperspace is a region.
 
 A direction can be hyperspatial.
 
+Definition: a direction is non-hyperspatial if it is not hyperspatial.
+
 back is a direction.  It is hyperspatial. The opposite of back is forth. forth is a direction. It is hyperspatial. The opposite of forth is back. Understand "f" as forth. Understand "b" as back.
 
 forthnorth is a direction. Understand "fn" as forthnorth. It is hyperspatial.
