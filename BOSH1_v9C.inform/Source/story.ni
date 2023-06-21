@@ -811,7 +811,7 @@ Native Tribes of Upstate New York is a thing on Moira's bookshelves.
 
 The closet door is a door. It is east of Moira's office and west of the utility closet. It is closed, openable, locked, and lockable. It is scenery.
 
-The utility closet is dark. It is in BOSH HQ.
+The utility closet is dark. It is in BOSH HQ. It is indoors.
 
 Instead of knocking on the closet door when the location is the utility closet and the closet door is locked and the closet door is closed:
 	move Moira Zin to Moira's Office;
@@ -828,7 +828,7 @@ Instead of knocking on the closet door when the location is the utility closet a
 		now the closet door is open;
 		
 about the hyperdimensional portal is an informative quip.
-	The comment is "[We] [scratch] [our] head. 'Um, I was transported there through an hyperdimensional portal. How's your morning been?".
+	The comment is "[We] [scratch] [our] head. 'Um, I was transported there through a hyperdimensional portal. How's your morning been?'".
 	The reply is "[Moira] raises an eyebrow. 'Well, I suggest you let the Chief know.'".
 	It is ubiquitous.
 	It quip-supplies Moira Zin.
@@ -952,6 +952,12 @@ closeting is an action applying to nothing. Understand "closet" as closeting.
 Carry out closeting:
 	move the player to the utility closet;
 	follow the adjust adjacent light rule;
+	
+extinguishing is an action applying to nothing. Understand "lights out" as extinguishing.
+
+Carry out extinguishing:
+	now Moira's Office is dark;
+	now moira-light is unlit;
 	
 Volume 2 - Test command tweak for clean transcripts
 

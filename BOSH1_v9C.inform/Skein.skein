@@ -7,7 +7,6 @@
         <result xml:space="preserve">
 
 
-foobar
 As an agent of the Bureau of Strange Happenings (BOSH), it is Agent Larch Faraji's job to investigate unexplained phenomena throughout the United States and its territories. Recently, however, business hasn't been good. Once a bustling office with a dozen Agents, the Bureau's been reduced to just three: Faraji, Moira Zin, and Chief Huffton Klimp. The Bureau's expansive and well-appointed office suite was taken over by the State Department Book Club, and now the agents are consigned to a tiny suite in a strip mall in the remote D.C. suburb of Swamp Park, Maryland.
 
 The reason? The venomous Senator Savra, whose crusade against all things he considers unwholesome is the scourge of Washington. To him, BOSH is nothing more than the devil's megaphone, giving credence to Satan's lies by giving them a hearing. Now Savra is at it again, threatening to cut BOSH entirely from next year's Federal budget.
@@ -20,7 +19,6 @@ The Bureau of Strange Happenings
 An Interactive Phenomenon by Phil Riley
 Release 1 / Serial number 230620 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
 
-foobar
 Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
 
 Their Hyundai is parked nearby.
@@ -49,6 +47,7 @@ Their Hyundai is parked nearby.
             <child nodeId="node-4491"></child>
             <child nodeId="node-5412"></child>
             <child nodeId="node-3874"></child>
+            <child nodeId="node-5544"></child>
             <child nodeId="node-3860"></child>
             <child nodeId="node-3840"></child>
             <child nodeId="node-3838"></child>
@@ -10856,13 +10855,341 @@ That doesn't seem to be a topic of conversation at the moment.
     </item>
     <item nodeId="node-5501">
         <command xml:space="preserve">closet</command>
-        <result xml:space="preserve">foobar
+        <result xml:space="preserve">Agent Faraji is in the utility closet. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5509"></child>
+            <child nodeId="node-5502"></child>
+            <child nodeId="node-5680"></child>
+        </children>
+    </item>
+    <item nodeId="node-5680">
+        <command xml:space="preserve">remove lenses</command>
+        <result xml:space="preserve">Faraji takes off the pair of astral lenses.
+
+It is now pitch dark in here!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5681"></child>
+        </children>
+    </item>
+    <item nodeId="node-5681">
+        <command xml:space="preserve">lens</command>
+        <result xml:space="preserve">Agent Faraji is in the utility closet. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5682"></child>
+        </children>
+    </item>
+    <item nodeId="node-5682">
+        <command xml:space="preserve">knock on door</command>
+        <result xml:space="preserve">After a few seconds, someone inserts a key in the lock and opens the door. It's Faraji's colleague Moira Zin. "How'd you get in there, Larch?"
+
+Faraji exits the closet.
+
+Agent Faraji is in Moira's office. 
+
+On Moira's bookshelves is Native Tribes of Upstate New York.
+
+Also here is Moira Zin.
+
+A phone is ringing somewhere else not too far away.
+
+Wearing the astral lenses in fluorescent light is blinding. Faraji quickly removes the glasses.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+(talking to Moira Zin) &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5683"></child>
+        </children>
+    </item>
+    <item nodeId="node-5683">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Agent Faraji is in the utility closet. 
+
+A phone is ringing faintly somewhere else.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5684"></child>
+        </children>
+    </item>
+    <item nodeId="node-5684">
+        <command xml:space="preserve">close door</command>
+        <result xml:space="preserve">Faraji closes the closet door.
+
+A phone is ringing faintly somewhere else.
+
+It is now pitch dark in here!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5685"></child>
+        </children>
+    </item>
+    <item nodeId="node-5685">
+        <command xml:space="preserve">knock on door</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5686"></child>
+        </children>
+    </item>
+    <item nodeId="node-5686">
+        <command xml:space="preserve">lens</command>
+        <result xml:space="preserve">A phone is ringing faintly somewhere else.
+
 Agent Faraji is in the utility closet. 
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-5502"></child>
+        <children><child nodeId="node-5687"></child>
         </children>
+    </item>
+    <item nodeId="node-5687">
+        <command xml:space="preserve">open door</command>
+        <result xml:space="preserve">Faraji opens the closet door.
+
+A phone is ringing faintly somewhere else.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5688"></child>
+        </children>
+    </item>
+    <item nodeId="node-5688">
+        <command xml:space="preserve">remove lenses</command>
+        <result xml:space="preserve">Faraji takes off the pair of astral lenses.
+
+A phone is ringing faintly somewhere else.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5689"></child>
+        </children>
+    </item>
+    <item nodeId="node-5689">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Agent Faraji is in the utility closet. 
+
+A phone is ringing faintly somewhere else.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5690"></child>
+        </children>
+    </item>
+    <item nodeId="node-5690">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Agent Faraji is in Moira's office. 
+
+On Moira's bookshelves is Native Tribes of Upstate New York.
+
+Also here is Moira Zin.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+(talking to Moira Zin) &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5691"></child>
+        </children>
+    </item>
+    <item nodeId="node-5691">
+        <command xml:space="preserve">lights out</command>
+        <result xml:space="preserve">A phone is ringing somewhere else not too far away.
+
+It is now pitch dark in here!
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+(talking to Moira Zin) &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5692"></child>
+        </children>
+    </item>
+    <item nodeId="node-5692">
+        <command xml:space="preserve">lens</command>
+        <result xml:space="preserve">A phone is ringing somewhere else not too far away.
+
+Agent Faraji is in Moira's office. 
+
+On Moira's bookshelves is Native Tribes of Upstate New York.
+
+Also here is Moira Zin.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+(talking to Moira Zin) &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5693"></child>
+        </children>
+    </item>
+    <item nodeId="node-5693">
+        <command xml:space="preserve">open moira's door</command>
+        <result xml:space="preserve">Faraji opens Moira's door.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+(talking to Moira Zin) &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5694"></child>
+        </children>
+    </item>
+    <item nodeId="node-5694">
+        <command xml:space="preserve">remove lenses</command>
+        <result xml:space="preserve">Faraji takes off the pair of astral lenses.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+(talking to Moira Zin) &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5695"></child>
+        </children>
+    </item>
+    <item nodeId="node-5695">
+        <command xml:space="preserve">close moira's door</command>
+        <result xml:space="preserve">Faraji closes Moira's door.
+
+A phone is ringing somewhere else not too far away.
+
+It is now pitch dark in here!
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+(talking to Moira Zin) &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5696"></child>
+        </children>
+    </item>
+    <item nodeId="node-5696">
+        <command xml:space="preserve">open door</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+(talking to Moira Zin) &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5697"></child>
+        </children>
+    </item>
+    <item nodeId="node-5697">
+        <command xml:space="preserve">wear lenses</command>
+        <result xml:space="preserve">Faraji puts on the pair of astral lenses.
+
+A phone is ringing somewhere else not too far away.
+
+Agent Faraji is in Moira's office. 
+
+On Moira's bookshelves is Native Tribes of Upstate New York.
+
+Also here is Moira Zin.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+(talking to Moira Zin) &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5698"></child>
+        </children>
+    </item>
+    <item nodeId="node-5698">
+        <command xml:space="preserve">open door</command>
+        <result xml:space="preserve">Which do you mean, the closet door or Moira's door?
+
+(talking to Moira Zin) &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5699"></child>
+        </children>
+    </item>
+    <item nodeId="node-5699">
+        <command xml:space="preserve">moira's</command>
+        <result xml:space="preserve">Faraji opens Moira's door.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+(talking to Moira Zin) &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5700"></child>
+        </children>
+    </item>
+    <item nodeId="node-5700">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Agent Faraji is in the utility closet. 
+
+A phone is ringing faintly somewhere else.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5701"></child>
+        </children>
+    </item>
+    <item nodeId="node-5701">
+        <command xml:space="preserve">remove lenses</command>
+        <result xml:space="preserve">Faraji takes off the pair of astral lenses.
+
+A phone is ringing faintly somewhere else.
+
+It is now pitch dark in here!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5702"></child>
+        </children>
+    </item>
+    <item nodeId="node-5702">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Agent Faraji is in Moira's office. 
+
+On Moira's bookshelves is Native Tribes of Upstate New York.
+
+Also here is Moira Zin.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+(talking to Moira Zin) &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5703"></child>
+        </children>
+    </item>
+    <item nodeId="node-5703">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Agent Faraji is in the dark. 
+
+Some light would be nice.
+
+A phone is ringing faintly somewhere else.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5704"></child>
+        </children>
+    </item>
+    <item nodeId="node-5704">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Agent Faraji is in Moira's office. 
+
+On Moira's bookshelves is Native Tribes of Upstate New York.
+
+Also here is Moira Zin.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+(talking to Moira Zin) &gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-5502">
         <command xml:space="preserve">lens</command>
@@ -10927,6 +11254,234 @@ Agent Faraji is in the dark.
 Some light would be nice.
 
 A phone is ringing faintly somewhere else.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-5509">
+        <command xml:space="preserve">knock on door</command>
+        <result xml:space="preserve">After a few seconds, someone inserts a key in the lock and opens the door. It's Faraji's colleague Moira Zin. "How'd you get in there, Larch?"
+
+Faraji exits the closet.
+
+Agent Faraji is in Moira's office. 
+
+On Moira's bookshelves is Native Tribes of Upstate New York.
+
+Also here is Moira Zin.
+
+A phone is ringing somewhere else not too far away.
+
+Wearing the astral lenses in fluorescent light is blinding. Faraji quickly removes the glasses.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+(talking to Moira Zin) &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5510"></child>
+        </children>
+    </item>
+    <item nodeId="node-5510">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Agent Faraji is in the utility closet. 
+
+A phone is ringing faintly somewhere else.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5511"></child>
+        </children>
+    </item>
+    <item nodeId="node-5511">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Agent Faraji is in the utility closet. 
+
+A phone is ringing faintly somewhere else.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5512"></child>
+        </children>
+    </item>
+    <item nodeId="node-5512">
+        <command xml:space="preserve">close door</command>
+        <result xml:space="preserve">Faraji closes the closet door.
+
+A phone is ringing faintly somewhere else.
+
+It is now pitch dark in here!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5513"></child>
+        </children>
+    </item>
+    <item nodeId="node-5513">
+        <command xml:space="preserve">wear lenses</command>
+        <result xml:space="preserve">Faraji puts on the pair of astral lenses.
+
+A phone is ringing faintly somewhere else.
+
+Agent Faraji is in the utility closet. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5514"></child>
+        </children>
+    </item>
+    <item nodeId="node-5514">
+        <command xml:space="preserve">open door</command>
+        <result xml:space="preserve">Faraji opens the closet door.
+
+A phone is ringing faintly somewhere else.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5515"></child>
+        </children>
+    </item>
+    <item nodeId="node-5515">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Agent Faraji is in Moira's office. 
+
+On Moira's bookshelves is Native Tribes of Upstate New York.
+
+Also here is Moira Zin.
+
+A phone is ringing somewhere else not too far away.
+
+Wearing the astral lenses in fluorescent light is blinding. Faraji quickly removes the glasses.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+(talking to Moira Zin) &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5525"></child>
+        </children>
+    </item>
+    <item nodeId="node-5525">
+        <command xml:space="preserve">tell her about the portal</command>
+        <result xml:space="preserve">Faraji scratches their head. "Um, I was transported there through a hyperdimensional portal. How's your morning been?"
+
+Moira Zin raises an eyebrow. "Well, I suggest you let the Chief know."
+
+A phone is ringing somewhere else not too far away.
+
+(talking to Moira Zin) &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5536"></child>
+        </children>
+    </item>
+    <item nodeId="node-5536">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Agent Faraji is in the utility closet. 
+
+A phone is ringing faintly somewhere else.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5537"></child>
+        </children>
+    </item>
+    <item nodeId="node-5537">
+        <command xml:space="preserve">lights out</command>
+        <result xml:space="preserve">A phone is ringing faintly somewhere else.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5538"></child>
+        </children>
+    </item>
+    <item nodeId="node-5538">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Agent Faraji is in the utility closet. 
+
+A phone is ringing faintly somewhere else.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5539"></child>
+        </children>
+    </item>
+    <item nodeId="node-5539">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Agent Faraji is in Moira's office. 
+
+On Moira's bookshelves is Native Tribes of Upstate New York.
+
+Also here is Moira Zin.
+
+A phone is ringing somewhere else not too far away.
+
+(talking to Moira Zin) &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5540"></child>
+        </children>
+    </item>
+    <item nodeId="node-5540">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">(first opening Moira's door)
+Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
+
+A phone is ringing to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5541"></child>
+        </children>
+    </item>
+    <item nodeId="node-5541">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Agent Faraji is in Moira's office. 
+
+On Moira's bookshelves is Native Tribes of Upstate New York.
+
+Also here is Moira Zin.
+
+A phone is ringing somewhere else not too far away.
+
+(talking to Moira Zin) &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5542"></child>
+        </children>
+    </item>
+    <item nodeId="node-5542">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Agent Faraji is in the utility closet. 
+
+A phone is ringing faintly somewhere else.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5543"></child>
+        </children>
+    </item>
+    <item nodeId="node-5543">
+        <command xml:space="preserve">lights out</command>
+        <result xml:space="preserve">A phone is ringing faintly somewhere else.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-5544">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Their Hyundai is parked nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5545"></child>
+        </children>
+    </item>
+    <item nodeId="node-5545">
+        <command xml:space="preserve">gonear utility closet</command>
+        <result xml:space="preserve">
+[** Programming error: tried to "give" or test "has" or "hasnt" with a non-attribute on the object Adjacent light **]
+
+Agent Faraji is in the dark. 
+
+Some light would be nice.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -11740,6 +12295,8 @@ Also here are a fire station office door and a ladder.
         <command xml:space="preserve">gonear reading</command>
         <result xml:space="preserve">Agent Faraji is in the Reading Room. 
 
+On the sales counter is the book Astral Secrets.
+
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-3893"></child>
@@ -11784,6 +12341,8 @@ Also here are a fire station office door and a ladder.
     <item nodeId="node-3897">
         <command xml:space="preserve">u</command>
         <result xml:space="preserve">Agent Faraji is in the Reading Room. 
+
+On the sales counter is Astral Secrets.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -11848,6 +12407,13 @@ Also here are a fire station office door and a ladder.
         <command xml:space="preserve">wear lenses</command>
         <result xml:space="preserve">Faraji puts on the pair of astral lenses.
 
+Agent Faraji is in a sewer tunnel. 
+
+A strange sparkly white passage branches off in an impossible direction from here.
+
+Faraji has discovered a hyperspatial tunnel! It leads in the hyperspatial direction of "forth".
+For help regarding hyperspace, enter HELP HYPERSPACE.
+
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-3905"></child>
@@ -11857,10 +12423,7 @@ Also here are a fire station office door and a ladder.
         <command xml:space="preserve">l</command>
         <result xml:space="preserve">Agent Faraji is in a sewer tunnel. 
 
-A strange sparkly white passage branches off in an impossible direction from here.
-
-Faraji has discovered a hyperspatial tunnel! It leads in the hyperspatial direction of "forth".
-For help regarding hyperspace, enter HELP HYPERSPACE.
+A hyperspatial tunnel leads in the direction of "forth".
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -11890,6 +12453,13 @@ For help regarding hyperspace, enter HELP HYPERSPACE.
     <item nodeId="node-3908">
         <command xml:space="preserve">wear lenses</command>
         <result xml:space="preserve">Faraji puts on the pair of astral lenses.
+
+Agent Faraji is in a sewer tunnel. 
+
+A strange sparkly white passage branches off in an impossible direction from here.
+
+Faraji has discovered a hyperspatial tunnel! It leads in the hyperspatial direction of "forth".
+For help regarding hyperspace, enter HELP HYPERSPACE.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -17806,7 +18376,8 @@ Some light would be nice.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-5454"></child>
+        <children><child nodeId="node-5547"></child>
+            <child nodeId="node-5454"></child>
             <child nodeId="node-5451"></child>
             <child nodeId="node-5429"></child>
             <child nodeId="node-5443"></child>
@@ -18311,6 +18882,452 @@ A phone is ringing faintly somewhere else.
 4: Faraji (1147982)
 
 &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-5547">
+        <command xml:space="preserve">lens</command>
+        <result xml:space="preserve">Agent Faraji is in the utility closet. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5548"></child>
+        </children>
+    </item>
+    <item nodeId="node-5548">
+        <command xml:space="preserve">knock on door</command>
+        <result xml:space="preserve">After a few seconds, someone inserts a key in the lock and opens the door. It's Faraji's colleague Moira Zin. "How'd you get in there, Larch?"
+
+Faraji exits the closet.
+
+Agent Faraji is in Moira's office. 
+
+On Moira's bookshelves is Native Tribes of Upstate New York.
+
+Also here is Moira Zin.
+
+A phone is ringing somewhere else not too far away.
+
+Wearing the astral lenses in fluorescent light is blinding. Faraji quickly removes the glasses.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+(talking to Moira Zin) &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5549"></child>
+        </children>
+    </item>
+    <item nodeId="node-5549">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Agent Faraji is in the utility closet. 
+
+A phone is ringing faintly somewhere else.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5550"></child>
+        </children>
+    </item>
+    <item nodeId="node-5550">
+        <command xml:space="preserve">close door</command>
+        <result xml:space="preserve">Faraji closes the closet door.
+
+A phone is ringing faintly somewhere else.
+
+It is now pitch dark in here!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5551"></child>
+        </children>
+    </item>
+    <item nodeId="node-5551">
+        <command xml:space="preserve">open door</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5552"></child>
+        </children>
+    </item>
+    <item nodeId="node-5552">
+        <command xml:space="preserve">lights out</command>
+        <result xml:space="preserve">A phone is ringing faintly somewhere else.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5553"></child>
+        </children>
+    </item>
+    <item nodeId="node-5553">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Agent Faraji is in the dark. 
+
+Some light would be nice.
+
+A phone is ringing faintly somewhere else.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5554"></child>
+        </children>
+    </item>
+    <item nodeId="node-5554">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Faraji can't go that way.
+
+A phone is ringing faintly somewhere else.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5555"></child>
+        </children>
+    </item>
+    <item nodeId="node-5555">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">(first opening the closet door)
+Agent Faraji is in the dark. 
+
+Some light would be nice.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+(talking to Moira Zin) &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5556"></child>
+        </children>
+    </item>
+    <item nodeId="node-5556">
+        <command xml:space="preserve">lights out</command>
+        <result xml:space="preserve">A phone is ringing somewhere else not too far away.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+(talking to Moira Zin) &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5557"></child>
+        </children>
+    </item>
+    <item nodeId="node-5557">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Agent Faraji is in the dark. 
+
+Some light would be nice.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+(talking to Moira Zin) &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5570"></child>
+        </children>
+    </item>
+    <item nodeId="node-5570">
+        <command xml:space="preserve">scope</command>
+        <result xml:space="preserve">1: a pair of astral lenses (1153758)
+2: the Bureau credit card (1153022)
+3: a green smartphone (1153086)
+4: Faraji (1149086)
+
+(talking to Moira Zin) &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5571"></child>
+        </children>
+    </item>
+    <item nodeId="node-5571">
+        <command xml:space="preserve">showme</command>
+        <result xml:space="preserve">Moira's office - room
+    *closet door - open door
+    *Adjacent light - backdrop
+    *Hyperlight - backdrop
+    *ceiling - backdrop
+    *floor - backdrop
+    *wall - backdrop
+    Faraji - nonbinary
+        pair of astral lenses
+        Bureau credit card - money card
+        green smartphone - phone
+    *Moira's door - closed door
+    *Moira Zin - woman
+    *moira-light - light source
+    *closet - locked container
+    *Moira's desk - supporter
+        *Moira's drawer (part of Moira's desk) - open container
+    *Moira's chair - supporter
+    *Moira's bookshelves - supporter
+        *Native Tribes of Upstate New York
+* denotes things which are not in scope
+
+(talking to Moira Zin) &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5572"></child>
+        </children>
+    </item>
+    <item nodeId="node-5572">
+        <command xml:space="preserve">showme adjacent light</command>
+        <result xml:space="preserve">Adjacent light - backdrop
+location: in Moira's office
+singular-named, proper-named, unmarked for special listing; unlit, inedible, fixed in place, scenery, neuter, seen, unfamiliar, quiet, background; adjlight
+list grouping key: none
+printed name: "Adjacent light"
+printed plural name: "backdrops"
+indefinite article: none
+most recent reference: nominal
+third singular pronoun: It-pronoun
+summary: none
+description: none
+initial appearance: none
+dark description: none
+hearability: very loud
+volume: 0.0
+price: $0
+behind description: none
+third-plural-pronoun: They-pronoun
+possessive: none
+
+(talking to Moira Zin) &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5588"></child>
+        </children>
+    </item>
+    <item nodeId="node-5588">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Agent Faraji is in the dark. 
+
+Some light would be nice.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+(talking to Moira Zin) &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5589"></child>
+        </children>
+    </item>
+    <item nodeId="node-5589">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">(first opening Moira's door)
+Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
+
+A phone is ringing to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5590"></child>
+        </children>
+    </item>
+    <item nodeId="node-5590">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Agent Faraji is in Moira's office. 
+
+On Moira's bookshelves is Native Tribes of Upstate New York.
+
+Also here is Moira Zin.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+(talking to Moira Zin) &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5591"></child>
+        </children>
+    </item>
+    <item nodeId="node-5591">
+        <command xml:space="preserve">close door</command>
+        <result xml:space="preserve">Which do you mean, Moira's door or the closet door?
+
+(talking to Moira Zin) &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5592"></child>
+        </children>
+    </item>
+    <item nodeId="node-5592">
+        <command xml:space="preserve">moira's</command>
+        <result xml:space="preserve">Faraji closes Moira's door.
+
+A phone is ringing somewhere else not too far away.
+
+It is now pitch dark in here!
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+(talking to Moira Zin) &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5593"></child>
+        </children>
+    </item>
+    <item nodeId="node-5593">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Agent Faraji is in the dark. 
+
+Some light would be nice.
+
+A phone is ringing faintly somewhere else.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5594"></child>
+        </children>
+    </item>
+    <item nodeId="node-5594">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Agent Faraji is in the dark. 
+
+Some light would be nice.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+(talking to Moira Zin) &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5636"></child>
+        </children>
+    </item>
+    <item nodeId="node-5636">
+        <command xml:space="preserve">open door</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+(talking to Moira Zin) &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5637"></child>
+        </children>
+    </item>
+    <item nodeId="node-5637">
+        <command xml:space="preserve">wear lenses</command>
+        <result xml:space="preserve">Faraji puts on the pair of astral lenses.
+
+A phone is ringing somewhere else not too far away.
+
+Agent Faraji is in Moira's office. 
+
+On Moira's bookshelves is Native Tribes of Upstate New York.
+
+Also here is Moira Zin.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+(talking to Moira Zin) &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5638"></child>
+        </children>
+    </item>
+    <item nodeId="node-5638">
+        <command xml:space="preserve">open door</command>
+        <result xml:space="preserve">Which do you mean, the closet door or Moira's door?
+
+(talking to Moira Zin) &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5639"></child>
+        </children>
+    </item>
+    <item nodeId="node-5639">
+        <command xml:space="preserve">moira</command>
+        <result xml:space="preserve">I only understood you as far as wanting to open Moira Zin.
+
+(talking to Moira Zin) &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5640"></child>
+        </children>
+    </item>
+    <item nodeId="node-5640">
+        <command xml:space="preserve">open moira's door</command>
+        <result xml:space="preserve">Faraji opens Moira's door.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+(talking to Moira Zin) &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5641"></child>
+        </children>
+    </item>
+    <item nodeId="node-5641">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Agent Faraji is in Moira's office. 
+
+On Moira's bookshelves is Native Tribes of Upstate New York.
+
+Also here is Moira Zin.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+(talking to Moira Zin) &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5642"></child>
+        </children>
+    </item>
+    <item nodeId="node-5642">
+        <command xml:space="preserve">remove lenses</command>
+        <result xml:space="preserve">Faraji takes off the pair of astral lenses.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+(talking to Moira Zin) &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5643"></child>
+        </children>
+    </item>
+    <item nodeId="node-5643">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
+
+A phone is ringing to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5644"></child>
+        </children>
+    </item>
+    <item nodeId="node-5644">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Agent Faraji is in Moira's office. 
+
+On Moira's bookshelves is Native Tribes of Upstate New York.
+
+Also here is Moira Zin.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+(talking to Moira Zin) &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5645"></child>
+        </children>
+    </item>
+    <item nodeId="node-5645">
+        <command xml:space="preserve">showme adjacent light</command>
+        <result xml:space="preserve">Adjacent light - backdrop
+location: in Moira's office
+singular-named, proper-named, unmarked for special listing; lit, inedible, fixed in place, scenery, neuter, seen, unfamiliar, quiet, background; adjlight
+list grouping key: none
+printed name: "Adjacent light"
+printed plural name: "backdrops"
+indefinite article: none
+most recent reference: nominal
+third singular pronoun: It-pronoun
+summary: none
+description: none
+initial appearance: none
+dark description: none
+hearability: very loud
+volume: 0.0
+price: $0
+behind description: none
+third-plural-pronoun: They-pronoun
+possessive: none
+
+(talking to Moira Zin) &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-4426">
