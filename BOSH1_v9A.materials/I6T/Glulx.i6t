@@ -1222,7 +1222,6 @@ to document all of that.
                 done = true;
                 break;
             }
-            FollowRulebook((+window resizing rules+));
             DrawStatusLine();
           2: ! evtype_CharInput
             if (gg_event-->1 == win) {
@@ -1307,7 +1306,6 @@ to document all of that.
         glk_select(gg_event);
         switch (gg_event-->0) {
           5: ! evtype_Arrange
-            FollowRulebook((+window resizing rules+));
             DrawStatusLine();
           3: ! evtype_LineInput
             if (gg_event-->1 == gg_mainwin) {

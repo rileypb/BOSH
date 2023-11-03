@@ -9,6 +9,8 @@ Hyperspace is a region.
 
 A direction can be hyperspatial.
 
+Definition: a direction is non-hyperspatial if it is not hyperspatial.
+
 back is a direction.  It is hyperspatial. The opposite of back is forth. forth is a direction. It is hyperspatial. The opposite of forth is back. Understand "f" as forth. Understand "b" as back.
 
 forthnorth is a direction. Understand "fn" as forthnorth. It is hyperspatial.
@@ -91,11 +93,12 @@ this is the room description astral passages rule:
 				let C be number of entries of directions;
 				say "[if C is 1]A hyperspatial tunnel[otherwise]Hyperspatial tunnels[end if] [regarding C][lead] in the [regarding C]direction[if C > 1]s[end if] of [directions]."; 
 				
-[After wearing the astral lenses when could see hypertunnels and darkness witnessed is false:
+After wearing the astral lenses when could see hypertunnels and darkness witnessed is false:
+	say "[We] [put] on [the pair of astral lenses].";
 	try looking;
-	continue the action;
+	now the hyperlight is lit;
 				
-After taking off the astral lenses when could see hypertunnels and not in darkness:
+[After taking off the astral lenses when could see hypertunnels and not in darkness:
 	try looking;
 	continue the action;]
 	
@@ -659,7 +662,7 @@ Volume 5 - Things
 The recall button is a thing. The description is "A small, flat device with a black button on it." Understand "black/device" as the recall button.
 
 Instead of pushing the recall button when the player is not in field office area:
-	say "The world turns inside out, and suddenly you're somewhere else.";
+	say "The world turns inside out, and suddenly [player's surname] is somewhere else.";
 	move the player to the field office chief's office;
 
 Instead of pushing the recall button when the player is in field office area:

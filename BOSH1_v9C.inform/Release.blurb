@@ -1,6 +1,6 @@
 ! Blurb file created by Inform build 6M62
 
-status "/Applications/Inform.app_old.app/Contents/Resources/Internal/Miscellany/CblorbModel.html" "/Users/rileypb/dev/Inform/BOSH/BOSH1_v9C.inform/Build/StatusCblorb.html"
+status "/Applications/Inform.app/Contents/Resources/retrospective/6M62/Miscellany/CblorbModel.html" "/Users/rileypb/dev/Inform/BOSH/BOSH1_v9C.inform/Build/StatusCblorb.html"
 
 
 ! Identification
@@ -33,7 +33,7 @@ placeholder [BLURB] = "A work of interactive fiction."
 placeholder [ENCODEDSTORYFILE] = "The Bureau of Strange Happening.gblorb.js"
 template path "/Users/rileypb/dev/Inform/BOSH/BOSH1_v9C.materials/Templates"
 template path "/Users/rileypb/Library/Inform/Templates"
-template path "/Applications/Inform.app_old.app/Contents/Resources/Internal/Templates"
+template path "/Applications/Inform.app/Contents/Resources/retrospective/6M62/Templates"
 placeholder [INTERPRETERSCRIPTS] = " "
 interpreter "Quixe" "g"
 base64 "/Users/rileypb/dev/Inform/BOSH/BOSH1_v9C.inform/Build/output.ulx" to "/Users/rileypb/dev/Inform/BOSH/BOSH1_v9C.materials/Release/interpreter/The Bureau of Strange Happening.gblorb.js"
@@ -42,7 +42,7 @@ base64 "/Users/rileypb/dev/Inform/BOSH/BOSH1_v9C.inform/Build/output.ulx" to "/U
 
 template path "/Users/rileypb/dev/Inform/BOSH/BOSH1_v9C.materials/Templates"
 template path "/Users/rileypb/Library/Inform/Templates"
-template path "/Applications/Inform.app_old.app/Contents/Resources/Internal/Templates"
+template path "/Applications/Inform.app/Contents/Resources/retrospective/6M62/Templates"
 css
 website "Standard"
 status instruction ||&nbsp;<a href="source:story.ni#line57"><img border=0 src=inform:/doc_images/Reveal.tif></a>||

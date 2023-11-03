@@ -14,14 +14,14 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 9241 words long.
+I've now read your source text, which is 9173 words long.
 
 
 -----------------------------------------------------
 Phase II ... Semantic analysis Ia
 -----------------------------------------------------
 
-I've also read Standard Rules by Graham Nelson, which is 40949 words long.
+I've also read Standard Rules by Graham Nelson, which is 40952 words long.
 I've also read English Language by Graham Nelson, which is 2297 words long.
 I've also read Epistemology by Eric Eve, which is 1505 words long.
 I've also read Conversation Framework by Eric Eve, which is 5214 words long.
@@ -42,17 +42,17 @@ I've also read Real People by Philip Riley, which is 397 words long.
 I've also read Visible Rooms by Philip Riley, which is 63 words long.
 I've also read Polish by Philip Riley, which is 65 words long.
 I've also read Choices by Philip Riley, which is 408 words long.
-I've also read New Light by Philip Riley, which is 113 words long.
+I've also read New Light by Philip Riley, which is 330 words long.
 I've also read Early Declarations by Philip Riley, which is 23 words long.
 I've also read Basics by Philip Riley, which is 195 words long.
 I've also read Memories by Philip Riley, which is 243 words long.
 I've also read Simple Conversation by Philip Riley, which is 1935 words long.
-I've also read Hyperspace by Philip Riley, which is 4215 words long.
+I've also read Hyperspace by Philip Riley, which is 4257 words long.
 I've also read BOSH Facts by Philip Riley, which is 94 words long.
 I've also read Image Strip by Philip Riley, which is 2080 words long.
 I've also read Swamp Park by Philip Riley, which is 3447 words long.
-I've also read Margaret by Philip Riley, which is 1143 words long.
-I've also read Enigma Lake by Philip Riley, which is 1189 words long.
+I've also read Margaret by Philip Riley, which is 1149 words long.
+I've also read Enigma Lake by Philip Riley, which is 2644 words long.
 I've also read Gender Options by Nathanael Nerode, which is 7730 words long.
 I've also read Make Test by Philip Riley, which is 216 words long.
 I've also read BOSH Tests by Philip Riley, which is 221 words long.
@@ -129,11 +129,11 @@ Phase X ... Tables and grammar
 Phase XI ... Phrases and rules
 -----------------------------------------------------
 
-Regional: CONSTANT_VNT'hyperspace'-region(I232_hyperspace)(I140'hyperspace')
+Regional: CONSTANT_VNT'hyperspace'-region(I233_hyperspace)(I141'hyperspace')
  == region
-Regional: CONSTANT_VNT'field office area'-region(I247_field_office_area)(I155'field office area')
+Regional: CONSTANT_VNT'field office area'-region(I248_field_office_area)(I156'field office area')
  == region
-Regional: CONSTANT_VNT'field office area'-region(I247_field_office_area)(I155'field office area')
+Regional: CONSTANT_VNT'field office area'-region(I248_field_office_area)(I156'field office area')
  == region
 
 
@@ -167,13 +167,13 @@ Phase XII ... Code generation
 
                                 0 = action. 1 = object
                                 0 = action. 1 = object
-        Regional: CONSTANT_VNT'hyperspace'-region(I232_hyperspace)(I140'hyperspace')
+        Regional: CONSTANT_VNT'hyperspace'-region(I233_hyperspace)(I141'hyperspace')
          == region
-        Regional: CONSTANT_VNT'hyperspace'-region(I232_hyperspace)(I140'hyperspace')
+        Regional: CONSTANT_VNT'hyperspace'-region(I233_hyperspace)(I141'hyperspace')
          == region
-        Regional: CONSTANT_VNT'hyperspace'-region(I232_hyperspace)(I140'hyperspace')
+        Regional: CONSTANT_VNT'hyperspace'-region(I233_hyperspace)(I141'hyperspace')
          == region
-        Regional: CONSTANT_VNT'hyperspace'-region(I232_hyperspace)(I140'hyperspace')
+        Regional: CONSTANT_VNT'hyperspace'-region(I233_hyperspace)(I141'hyperspace')
          == region
 0 = object. 1 = number
 0 = object. 1 = number
@@ -182,9 +182,9 @@ Phase XII ... Code generation
 0 = object. 1 = number
                                         Fail: thing (~) number = nothing
                                         Fail: thing (~) number = nothing
-        Regional: CONSTANT_VNT'hyperspace'-region(I232_hyperspace)(I140'hyperspace')
+        Regional: CONSTANT_VNT'hyperspace'-region(I233_hyperspace)(I141'hyperspace')
          == region
-        Regional: CONSTANT_VNT'hyperspace'-region(I232_hyperspace)(I140'hyperspace')
+        Regional: CONSTANT_VNT'hyperspace'-region(I233_hyperspace)(I141'hyperspace')
          == region
 0 = object. 1 = text
 
@@ -215,6 +215,10 @@ Phase XII ... Code generation
 
 ==== Phase XII.13 ... Compiling second block of phrases ====
 
+        Regional: CONSTANT_VNT'hyperspace'-region(I233_hyperspace)(I141'hyperspace')
+         == region
+        Regional: CONSTANT_VNT'hyperspace'-region(I233_hyperspace)(I141'hyperspace')
+         == region
                                                             Fail: list of numbers (~) number = nothing
                                             Fail: nothing (~) real number = nothing
                                             Fail: list of numbers (~) real number = nothing
@@ -233,25 +237,21 @@ Phase XII ... Code generation
                                                             Fail: list of numbers (~) number = nothing
                                             Fail: nothing (~) real number = nothing
                                             Fail: list of numbers (~) real number = nothing
-        Regional: CONSTANT_VNT'bosh hq'-region(I457_bosh_hq)(I350'bosh hq')
+        Regional: CONSTANT_VNT'bosh hq'-region(I495_bosh_hq)(I387'bosh hq')
          == region
-        Regional: CONSTANT_VNT'bosh hq'-region(I457_bosh_hq)(I350'bosh hq')
+        Regional: CONSTANT_VNT'bosh hq'-region(I495_bosh_hq)(I387'bosh hq')
          == region
-        Regional: CONSTANT_VNT'laundromat-region'-region(I341_laundromat_region)(I238'laundromat-region')
+        Regional: CONSTANT_VNT'laundromat-region'-region(I342_laundromat_region)(I239'laundromat-region')
          == region
-        Regional: CONSTANT_VNT'laundromat-region'-region(I341_laundromat_region)(I238'laundromat-region')
+        Regional: CONSTANT_VNT'laundromat-region'-region(I342_laundromat_region)(I239'laundromat-region')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I385_elr)(I282'elr')
+        Regional: CONSTANT_VNT'elr'-region(I387_elr)(I283'elr')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I385_elr)(I282'elr')
+        Regional: CONSTANT_VNT'elr'-region(I387_elr)(I283'elr')
          == region
-        Regional: CONSTANT_VNT'field office area'-region(I247_field_office_area)(I155'field office area')
+        Regional: CONSTANT_VNT'field office area'-region(I248_field_office_area)(I156'field office area')
          == region
-        Regional: CONSTANT_VNT'field office area'-region(I247_field_office_area)(I155'field office area')
-         == region
-        Regional: CONSTANT_VNT'hyperspace'-region(I232_hyperspace)(I140'hyperspace')
-         == region
-        Regional: CONSTANT_VNT'hyperspace'-region(I232_hyperspace)(I140'hyperspace')
+        Regional: CONSTANT_VNT'field office area'-region(I248_field_office_area)(I156'field office area')
          == region
                                         Fail: scene (~) number = nothing
                                         Fail: scene (~) number = nothing
@@ -287,7 +287,7 @@ Phase XII ... Code generation
 
 ==== Phase XII.21 ... Compiling routines from predicate calculus ====
 
-Providing for a total heap of 8192, given requirement of 8192
+Providing for a total heap of 16384, given requirement of 8968
 
 
 -----------------------------------------------------
@@ -295,7 +295,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 210 files written as streams.
-CPU time: 475 centiseconds
+CPU time: 479 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

@@ -52,6 +52,7 @@ Include Gender Options by Nathanael Nerode.
 Include Make Test by Philip Riley.
 
 Use MAX_OBJ_PROP_COUNT of 128.
+Use MAX_STATIC_DATA of 360000.
 
 Work Title is always "The Bureau of Strange Happenings".  
  
@@ -630,7 +631,7 @@ To init office:
 	if player is not Ezra Gaunt:
 		move movie poster to Room of Stuff;
 		move trivia competition award to Room of Stuff;
-	if player is not Petula Goldberg:
+	if player is not Petula Goldberg: 
 		move photo of Pluto to Room of Stuff;
 		move Green Pheasant to Room of Stuff;
 	if player is not Larch Faraji:
@@ -750,7 +751,7 @@ Margaret Chao is in front office.
 There is a copy of the Washington Herald. The description is "The front page story is an account of the disappearance of the grandson of Senate Homeland Security Committee chairman Englund Fryes. His parents, including the Senator's son, were brutally murdered in their home, but the boy, Draco Fryes, is missing and presumed kidnapped. So far there has been no ransom demand.". 
 Understand "newspaper", "paper", "news" as the Washington Herald.
 
-The front desk is a scenery supporter in front office. Understand "sales", "counter" as the front desk. The description is "The former sales counter now functions as a desk for the office manager (currently [Margaret]). Behind it are a number of shelves holding office supplies."
+The BOSH front desk is a scenery supporter in front office. Understand "sales", "counter" as the BOSH front desk. The description is "The former sales counter now functions as a desk for the office manager (currently [Margaret]). Behind it are a number of shelves holding office supplies."
 
 The shelves of office supplies are in front office. They are plural-named. They are scenery. "Pens, paper, nothing [we're] really concerned with now." Understand "row/of/drawers/pens/pen/pencils/pencil/paper/papers" as the shelves of office supplies.
 
@@ -781,19 +782,19 @@ Instead of taking the cardboard boxes:
 		if Margaret is in the location:
 			initiate Margaret's box routine;
 
-Biff's computer is a thing. It is privately-named. It is behind the front desk. The printed name is "[our] computer". Understand "computer" as biff's computer. The description is "[Our] computer has been damaged beyond repair.".
+Biff's computer is a thing. It is privately-named. It is behind the BOSH front desk. The printed name is "[our] computer". Understand "computer" as biff's computer. The description is "[Our] computer has been damaged beyond repair.".
  
 Instead of examining Biff's computer when the thumb drive is not seen:
-	say "[description of biff's computer] But [we] [do] find a thumb drive and [take] it.";
+	say "[description of biff's computer] But [we] [do] find a thumb drive and take it.";
 	now the player carries the thumb drive;
 	now the thumb drive is seen;
 	remember finding the drive for the player;	
 
-The behind description of the front desk is "There are a number of shelves of office supplies behind the desk. There is also a heating vent on the floor here.";
+The behind description of the BOSH front desk is "There are a number of shelves of office supplies behind the desk. There is also a heating vent on the floor here.";
 
 The heating vent is a scenery container. It is openable, closed, lockable, transparent and locked. "A typical air register with a grill which one would hope would stop things like, say, a hex wrench from falling through. It's set in the floor behind the front desk. The vent is held closed by four screws." Understand "heat/air/conditioning/register" as the heating vent. It is undescribed. 
 
-After looking behind the front desk:
+After looking behind the BOSH front desk:
 	move the heating vent to front office;
 	continue the action;
 
@@ -862,9 +863,9 @@ Moira's office is in BOSH HQ. There is a fluorescent light source in Moira's off
 "It is, like Moira herself, neat and orderly. She's clearly made the most of the meager funds she had for furnishing her office. Behind a modest yet functional desk is a modest yet functional office chair. Her bookshelves are filled with titles relating to investigative techniques, law, and skepticism. In the east wall is a closet door. The exit is to the south."
 
 There is a closet in Moira's office. The closet is a container. It is openable and closed. It is lockable and locked. It is scenery.
-There is a breaker box in the closet. It is an openable container. It is closed. It is fixed in place. The description is "It's a small metal box affixed to the back wall of the closet. It is featureless apart from the latch."
+[There is a breaker box in the closet. It is an openable container. It is closed. It is fixed in place. The description is "It's a small metal box affixed to the back wall of the closet. It is featureless apart from the latch."
 There is a circuit breaker in the breaker box. It is fixed in place.
-A circuit breaker is a device. The description is "The circuit breaker is a single switch, labeled `20 amps`."
+A circuit breaker is a device. The description is "The circuit breaker is a single switch, labeled `20 amps`."]
 
 Moira's desk is a supporter in Moira's office. It is scenery. The description is "It's a pretty ordinary mass-produced desk, but Moira's re-stain job on it has truly transformed it. Really, is there anything she can't do?"
 
@@ -1152,7 +1153,7 @@ test office1 with "w/x vent/x screws/x computer/x thumb drive/look behind desk/x
 test office2 with "w/w/n/w/s/n/e/ask about computer/look behind desk/x computer/x thumb drive".
 test office3 with "w/w/x wrench/s/open desk/n/e/ask margaret for key/w/s/x desk/n/e/ask about allen/look behind desk/x vent/get wrench/ask about screwdriver".
 test no-screwdriver with "n/enter store/ask about screwdriver/w/s/sw/ask about screwdriver/ask about owner".
-test win with "w/w/s/open desk/n/e/ask about key/ask about computer/look behind desk/x computer/remember finding the drive/w/s/x desk/open white door/n/e/ask about wrench/ask about backdoor/take boxes/w/s/z/w/z/z/open white door/knock on white door/e/z/n/e/x vent/ask for a screwdriver/n/e/n/e/ask for screwdriver/w/s/sw/ask for a screwdriver/ask about the owner/ne/w/w/w/x lenses/ask to borrow pair/wear them/e/e/take boxes/w/s/w/wear glasses/back/n/f/d/n/s/turn off light/wear glasses/f/fn/push truck bs/push truck back/move crates/move crates with truck/x washing machine/open it/enter it/f/f/f/f/f/fn/fw/fn/fn/fw/w/fn/w/take compass/x compass/s/s/s/s/s/s/s/e/e/e/e/e/e/e/e/b/b/b/b/b/b/b/b/b/d/w/w/how him the thumb drive/hand it over/ask who he is/ask about his name/where are we/klimp is fine/ask how to get home/show him the thumb drive/hand it over/ask about savra/ask about the dragon/time travel/ask about the mission/how will i find him/e/w/ready to go/i/x device/e/f/enter portal/press button/e/f/enter portal".
+test win with "w/w/s/open desk/n/e/ask about key/ask about computer/look behind desk/x computer/remember finding the drive/w/s/x desk/open white door/n/e/ask about wrench/ask about backdoor/take boxes/w/s/z/w/z/z/open white door/knock on white door/e/z/n/e/x vent/ask for a screwdriver/n/e/n/e/ask for screwdriver/w/s/sw/ask for a screwdriver/ask about the owner/ne/w/w/w/x lenses/ask to borrow pair/wear them/e/e/take boxes/w/s/w/wear glasses/back/n/f/d/n/s/turn off light/wear glasses/f/fn/push truck bs/push truck back/move crates/move crates with truck/x washing machine/open it/enter it/f/f/f/f/f/fn/fw/fn/fn/fw/w/fn/w/take compass/x compass/s/s/s/s/s/s/s/e/e/e/e/e/e/e/e/b/b/b/b/b/b/b/b/b/d/w/w/show him the thumb drive/hand it over/ask who he is/ask about his name/where are we/klimp is fine/ask how to get home/show him the thumb drive/hand it over/ask about savra/ask about the dragon/time travel/ask about the mission/how will i find him/e/w/ready to go/i/x device/e/f/enter portal/press button/e/f/enter portal".
 
 
 test no-drive with "w/w/s/open desk/n/e/ask about key/ask about computer/look behind desk/w/s/x desk/open white door/n/e/ask about wrench/ask about backdoor/take boxes/w/s/z/w/z/z/open white door/knock on white door/e/z/n/e/x vent/ask for a screwdriver/n/e/n/e/ask for screwdriver/w/s/sw/ask for a screwdriver/ask about the owner/ne/w/w/w/x lenses/ask to borrow pair/wear them/e/e/take boxes/w/s/w/back/n/f/d/n/s/turn off light/wear glasses/f/fn/push truck bs/push truck back/move crates/move crates with truck/x washing machine/open it/enter it/f/f/f/f/f/fn/fw/fn/fn/fw/w/fn/w/take compass/x compass/s/s/s/s/s/s/s/e/e/e/e/e/e/e/e/b/b/b/b/b/b/b/b/b/d/w/w".

@@ -1,12 +1,12 @@
 Debugging log of Inform 7
-Inform called as: /Applications/Inform.app_old.app/Contents/MacOS/ni -internal /Applications/Inform.app_old.app/Contents/Resources/Internal -external /Users/rileypb/Library/Inform -project /Users/rileypb/dev/Inform/BOSH/BOSH1_v9C.inform -format=ulx
+Inform called as: /Applications/Inform.app/Contents/MacOS/6M62/ni -internal /Applications/Inform.app/Contents/Resources/retrospective/6M62 -external /Users/rileypb/Library/Inform -project /Users/rileypb/dev/Inform/BOSH/BOSH1_v9C.inform -format=ulx
 Found language bundle 'German' (built in)
 Found language bundle 'Italian' (built in)
 Found language bundle 'English' (built in)
 Found language bundle 'French' (built in)
 Found language bundle 'Swedish' (built in)
 Found language bundle 'Spanish' (built in)
-Reading language definition from </Applications/Inform.app_old.app/Contents/Resources/Internal/Languages/English/Syntax.preform>
+Reading language definition from </Applications/Inform.app/Contents/Resources/retrospective/6M62/Languages/English/Syntax.preform>
 720 declarations read (14183 words)
 
 
@@ -274,7 +274,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 207 files written as streams.
-CPU time: 502 centiseconds
+CPU time: 478 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

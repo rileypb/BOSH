@@ -662,7 +662,7 @@ Volume 5 - Things
 The recall button is a thing. The description is "A small, flat device with a black button on it." Understand "black/device" as the recall button.
 
 Instead of pushing the recall button when the player is not in field office area:
-	say "The world turns inside out, and suddenly you're somewhere else.";
+	say "The world turns inside out, and suddenly [player's surname] is somewhere else.";
 	move the player to the field office chief's office;
 
 Instead of pushing the recall button when the player is in field office area:
