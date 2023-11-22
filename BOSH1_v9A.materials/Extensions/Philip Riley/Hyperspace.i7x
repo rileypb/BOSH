@@ -424,7 +424,7 @@ Instead of entering the portal to the past when the portal to the past is not ac
 	say "[We] [walk] straight through it and nothing happens.";
 
 Instead of entering the portal to the past when the portal to the past is activated:
-	say "[We] [enter] the field of light, and suddenly [are] somewhere else.";
+	say "[We] [enter] the field of light, and [we] [are] suddenly somewhere else.";
 	move the player to the Enigma Lake Town Hall;
 
 Portal Room 2 is back of the field office hallway. It is in field office area.
@@ -599,6 +599,10 @@ remind him Savra's not reptilian is a performative quip.
 	The reply is "'He's in disguise! Whatever, it doesn't matter. What matters is your mission.'"
 	It quip-supplies Doris.
 	It follows what-is-a-lizard-man.]
+	
+[New Bikers of Troy]
+[Terrify New Books]
+[Bikes Tow No Ferry]
 	
 about the mission is a questioning quip.
 	Understand "what about the/-- mission" as about the mission.

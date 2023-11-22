@@ -327,14 +327,16 @@ Volume 4 - Eerie Sounds
 
 Sound interval is a number that varies.
 
-Every turn:
+To spin is a verb.
+
+Every turn when location is in ELR:
 	increment sound interval;
 	if the location is outdoors:
 		if sound interval > 2 and a random chance of 1 in 10 succeeds:
 			now sound interval is sound interval - 10;
 			if sound interval > 0:
 				now sound interval is 0;
-			say "[one of]The seeming sound of sibilant speech carries on the breeze[or]Faraji turns their head quickly, as if something caught their eye[or]A strange shadow crosses the scene[or]Faraji abruptly spins around, but finds nothing behind them[or]Faraji cocks their head at a strange sound[or]Distinct footsteps sound from not too far away[or]An unseasonably chilly wind causes Faraji to hug their shoulders[then at random]."
+			say "[one of]The seeming sound of sibilant speech carries on the breeze[or][We] [turn] [our] head quickly, as if something caught [our] eye[or]A strange shadow crosses the scene[or][We] abruptly [spin] around, but [find] nothing behind [us][or][We] cocks [our] head at a strange sound[or]Distinct footsteps sound from not too far away[or]An unseasonably chilly wind causes [us] to hug [our] shoulders[then at random]."
 		
 		
 Volume 5 - Polish

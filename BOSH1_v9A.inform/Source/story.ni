@@ -49,6 +49,8 @@ Include Enigma Lake by Philip Riley.
  
 Include Gender Options by Nathanael Nerode.   
   	
+Include Followup Questions by Philip Riley.
+
 Include Make Test by Philip Riley.
 
 Use MAX_OBJ_PROP_COUNT of 128.
@@ -74,7 +76,7 @@ To turn on rules:
 [After starting the virtual machine:
 	turn on rules;] 
 
- 
+
  
 Volume 1 - The Game 
 
@@ -88,7 +90,12 @@ Ezra Gaunt is a man in the Room of Stuff. The description is "Agent Gaunt's last
 Petula Goldberg is a woman in the Room of Stuff. The description is "Agent Goldberg has lots of dogs, a fact which can be inferred by the inevitable fur somewhere on her person. The last front office worker at the Bureau left due to an extreme allergic reaction to Goldberg.".
 Larch Faraji is a nonbinary in the Room of Stuff. The third singular pronoun is singular-they-pronoun. The description is "Agent Faraji ". 
  
-  
+
+the good old days is a memory in the room of stuff. The printed name is "the good old days". The description is "[the description of the good old days].".
+To say the description of the good old days:
+	let character list be { Ezra Gaunt, Petula Goldberg, Larch Faraji, Chief Klimp };
+	remove the player from character list;
+	say "[We] [remember] how [we], [character list] used to go out for drinks at the Cock and Bull in downtown DC. Good times";  
   
 Play mode is a kind of value. The play modes are _startup, _normal, and picking character.
 The current play mode is a play mode that varies. The current play mode is initially _startup. 
@@ -195,7 +202,7 @@ After reading a command when current play mode is picking character:
 	
 To init player:
 	now the player carries the green smartphone;
-	now the player carries the bureau credit card;
+	[now the player carries the bureau credit card;]
 	now the player knows klimp's phone number;
 	now the player owns the bureau credit card;
 	now the player knows biff's mobile number;
@@ -618,13 +625,15 @@ The drawing of the Pitfall snake is scenery in biff's office. Understand "video/
  
 The photo of soccer team is scenery in biff's office. Understand "Faraji's/their soccer/team" as the photo of soccer team. Understand "picture" as the photo of soccer team. "[we're] third from left in the front row."
 
-The green smartphone is a phone. It is mobile. The description is "It's a pretty nice phone, only a couple of years old, but [we] [don't] have time to play with it. [We] need to get to the office."
+The green smartphone is a phone. It is mobile. The description is "It's a pretty nice phone, only a couple of years old, but [we] [don't] have time to play with it. [We] [need] to get to the office."
 
 Check calling someone on the green smartphone:
 	say "[The green smartphone] is out of batteries." instead;
 	
+To decide is a verb.
+
 Check dropping the green smartphone:
-	say "You decide against leaving the phone behind." instead;
+	say "[We] [decide] against leaving the phone behind." instead;
 	set pronouns from the green smartphone;
 
 To init office:
@@ -667,6 +676,14 @@ The laundromat back door is a door. It is north of back lot and south of the lau
 The description of the back lot is "This is a small area of asphalt between the building and a chain link fence looking in on an industrial property. A door to east leads into the BOSH offices, and one to the north enters the laundromat. There is a blue dumpster here."
 
 The dumpster is scenery in the back lot. "An everyday blue dumpster, about six feet high."
+
+Check entering the dumpster:
+	say "[We] [are] not yet at the point of dumpster diving." instead;
+	
+Climbing into is an action applying to one thing. Understand "climb into [thing]" as climbing into.
+
+Instead of climbing into something:
+	try entering the noun;
 
 Instead of an actor inserting biff-flattened-boxes into the dumpster:
 	now the biff-flattened-boxes are in the room of stuff;
@@ -743,6 +760,7 @@ To say photos description:
 	let character list be { Ezra Gaunt, Petula Goldberg, Larch Faraji };
 	remove the player from character list;
 	say "The photo of [character list] smiling together is particularly poignant, as they were just let go last month";
+	remember the good old days for the player;
 
 Some Bureau photos are scenery in the front office. "[photos description].". 
 
@@ -783,6 +801,9 @@ Instead of taking the cardboard boxes:
 			initiate Margaret's box routine;
 
 Biff's computer is a thing. It is privately-named. It is behind the BOSH front desk. The printed name is "[our] computer". Understand "computer" as biff's computer. The description is "[Our] computer has been damaged beyond repair.".
+
+Check taking Biff's computer:
+	say "[Biff's computer] is too unwieldy to carry around.";
  
 Instead of examining Biff's computer when the thumb drive is not seen:
 	say "[description of biff's computer] But [we] [do] find a thumb drive and take it.";
@@ -794,13 +815,23 @@ The behind description of the BOSH front desk is "There are a number of shelves 
 
 The heating vent is a scenery container. It is openable, closed, lockable, transparent and locked. "A typical air register with a grill which one would hope would stop things like, say, a hex wrench from falling through. It's set in the floor behind the front desk. The vent is held closed by four screws." Understand "heat/air/conditioning/register" as the heating vent. It is undescribed. 
 
+
+Securing relates various things to one thing. The verb to secure means the securing relation.
+Some screws secure the heating vent. The description is "Four plain flat head screws." 
+
 After looking behind the BOSH front desk:
 	move the heating vent to front office;
+	move the screws to front office;
 	continue the action;
+	
+Instead of taking or taking off the screws when the screws secure the heating vent:
+	if the player encloses the heating vent:
+		try opening the heating vent;
+	otherwise:
+		say "The screws are currently engaged in keeping the vent closed.";
+	
 
 The hex wrench is in the heating vent. Understand "key/allen" as the hex wrench. The description is "The ubiquitous flat pack furniture tool."
-
-Some screws are a part of the vent. The description is "Four plain flat head screws."
 
 Before examining the heating vent (this is the now you know vent-screws rule):
 	now the player knows vent-screws.
@@ -811,7 +842,7 @@ Instead of removing hex wrench from heating vent when the heating vent is closed
 Instead of opening the heating vent when the heating vent is locked:
 	say "The vent is held closed by four screws.";
 	now the player knows vent-screws.
-
+	
 The can't reach inside closed containers rule response (A) is "[if the noun is the heating vent][Our] fingers won't fit through the openings in the vent. [We]'ll have to open it first[otherwise][The noun] [aren't] open[end if]."
 
 
@@ -873,10 +904,93 @@ An openable container called Moira's drawer is part of Moira's desk.
 	
 Moira's chair is an enterable supporter in Moira's office. It is scenery. The description is "It's a testament to Moira's competence and taste that she managed to acquire such a nice chair with the funds available.".
 
-Moira's bookshelves are a scenery supporter in Moira's office. The description is "FILL THIS IN".
-Understand "shelves/books" as Moira's bookshelves.
+Moira's bookshelves are a scenery supporter in Moira's office. The description is "".
+Understand "shelves/books/shelf/bookshelf" as Moira's bookshelves.
 
-Native Tribes of Upstate New York is a thing on Moira's bookshelves.
+A tome is a kind of thing.
+A tome can be loanable.
+Before printing the name of a tome:
+	say "[italic type]";
+
+After printing the name of a tome:
+	say "[roman type]";
+	
+The borrowed book is an object that varies. The borrowed book is initially nothing.
+
+to borrow a book is a questioning quip.
+	It quip-supplies Moira Zin.
+	It is repeatable.
+
+plausibility rule for to borrow a book:
+	if the borrowed book is nothing:
+		it is plausible;
+	it is implausible;
+
+Check discussing to borrow a book when the borrowed book is something:
+	say "Moira shakes her head. 'Sorry, I'll only lend one book at a time.'" instead;
+
+After discussing to borrow a book:	
+	Prepare to ask what do you want to borrow from Moira Zin;
+	
+After examining a tome supported by Moira's bookshelves:
+	queue Moira Zin with to borrow a book;
+
+
+Tribes of New York is a tome on Moira's bookshelves. It is owned by Moira Zin. It is loanable.
+Applied Speculation is a tome on Moira's bookshelves. It is owned by Moira Zin. It is loanable.
+Biking to the Ferry is a tome on Moira's bookshelves. It is owned by Moira Zin. It is loanable.
+The printed name is "Biking to the Ferry: a Memoir".
+Understand "a/-- memoir" as Biking to the Ferry.
+No-Myth-After-All is a tome on Moira's bookshelves. It is owned by Moira Zin. It is loanable. 
+The printed name is "No Myth After All: A New Perspective on Troy".
+Understand "No/Myth/After/All/A/New/Perspective/on/Troy" as No-Myth-After-All.
+Twenty-great-theses is a tome on Moira's bookshelves. It is owned by Moira Zin. It is loanable.
+The printed name is "Twenty Great PhD Theses of the Twentieth Century". 
+Understand "Twenty/Great/PhD/Theses/of/the/Twentieth/Century" as Twenty-great-theses.
+
+Book-borrowing is an object based rulebook.
+Book-borrowing something enclosed by the player:
+	say "[We] already [have] that.";
+	rule fails;
+Book-borrowing a tome (called T) supported by Moira's bookshelves:
+	now the player carries T;
+	say "[We] [take] [T].";
+	now the borrowed book is T;
+	rule succeeds;
+Book-borrowing:
+	say "[We] can't borrow that.";
+	rule fails;	
+
+After giving a loanable tome to Moira:
+	now the borrowed book is nothing;
+	now the noun is supported by Moira's bookshelves;
+	now the noun is owned by Moira Zin;
+	say "Moira smiles. 'Thanks for getting it back to me.' She puts the book back on the shelf.";
+	
+After putting a loanable tome on Moira's bookshelves:
+	now the borrowed book is nothing;
+	now the noun is owned by Moira Zin;
+	continue the action;
+	
+
+What do you want to borrow is a question.
+	The expected responses are { Tribes of New York, Applied Speculation, Biking to the Ferry, No-Myth-After-All, Twenty-great-theses }.
+	The result is book-borrowing.
+	
+
+[Prevent TAKE ALL from taking every book on a shelf.]
+Rule for deciding whether all includes a thing (called T) while taking:
+	if T is supported by a thing (called S):
+		if S is scenery:
+			if the player is not supported by S:
+				it does not;
+	make no decision;
+	
+The describe what's on scenery supporters in room descriptions rule is not listed in any rulebook.
+
+
+
+
 
 The closet door is a door. It is east of Moira's office and west of the utility closet. It is closed, openable, locked, and lockable. It is scenery.
 
@@ -897,7 +1011,7 @@ Instead of knocking on the closet door when the location is the utility closet a
 		now the closet door is open;
 		
 about the hyperdimensional portal is an informative quip.
-	The comment is "[We] [scratch] [our] head. 'Um, I was transported there through an hyperdimensional portal. How's your morning been?".
+	The comment is "[We] [scratch] [our] head. 'Um, I was transported there through an hyperdimensional portal. How's your morning been?'".
 	The reply is "[Moira] raises an eyebrow. 'Well, I suggest you let the Chief know.'".
 	It is ubiquitous.
 	It quip-supplies Moira Zin.
@@ -914,14 +1028,14 @@ to wait for the report is an informative quip.
 	
 	
 
-Book 14 - The Phone Call
+Book 15 - The Phone Call
 
 [fill this in]
 
 The unknown voice is a person.
 The mysterious phone is a phone. It is owned by the unknown voice.
 
-Book 15 - Moving Between Rooms 
+Book 16 - Moving Between Rooms 
 
  
  
@@ -968,7 +1082,7 @@ After going from front office to the BOSH office hallway for the first time:
 	
 Chapter 2 - Klimp Arrives
 
-Book 16 - Commerce and Conversation
+Book 17 - Commerce and Conversation
 
 Before quizzing someone about something when the noun owns the second noun:
 	if the noun is willing to sell the second noun:
@@ -976,13 +1090,13 @@ Before quizzing someone about something when the noun owns the second noun:
 		stop the action;
 
    
-Book 17 - Sound
+Book 18 - Sound
 
-Book 18 - Verbs
+Book 19 - Verbs
  
 To shake is a verb. To smile is a verb. To sigh is a verb. To peer is a verb. To turn is a verb. To observe is a verb. To gaze is a verb. To trudge is a verb. To walk is a verb. To step is a verb. To enter is a verb. To exit is a verb. To pause is a verb. To survey is a verb. To hand is a verb. To try is a verb. To see is a verb. To squeal is a verb. To tap is a verb. To curse is a verb. To rap is a verb. To explain is a verb. To gasp is a verb. To return is a verb. To ask is a verb. To think is a verb. To scrunch is a verb. To grimace is a verb. To mutter is a verb. To leave is a verb. To stand is a verb. To mount is a verb. To stammer is a verb. To polish is a verb. To interrupt is a verb. To raise is a verb. To chuckle is a verb. To lean is a verb. To consider is a verb. To nod is a verb. To extricate is a verb. To toss is a verb. To pick is a verb. To flatten is a verb. To remember is a verb. To trip is a verb. To scratch is a verb.
 
-Book 19 - Images 
+Book 20 - Images 
 
 Figure Null is the file "clerk_portrait.png".
 
@@ -1141,7 +1255,7 @@ To resize windows:
 To call resize function:
 	(- ResizeGraphicsWindow(); -); 
 	
-Book 20 - Not For Release 
+Book 21 - Not For Release 
  
 Include BOSH Tests by Philip Riley.
 

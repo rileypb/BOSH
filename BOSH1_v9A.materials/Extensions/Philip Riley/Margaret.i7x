@@ -25,7 +25,7 @@ looking for the desk key is a truth state that varies.
 
 about the whereabouts of the desk key is a questioning quip.
 	it mentions the little grey key. 
-	the comment is "[We] [say], 'Hey Margaret, do you know anything about my desk key?'[line break]".
+	the comment is "[We] [say], 'Hey Margaret, do you know anything about my desk key?'".
 	[the comment is "[We] [say], 'Hey, Margaret. Do you have the key to my desk?'".]
 	the reply is "'Sure I do -- I put it in your desk.' She furrows her brow. 'What's the matter?'"
 	It quip-supplies Margaret.

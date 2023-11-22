@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 9173 words long.
+I've now read your source text, which is 9849 words long.
 
 
 -----------------------------------------------------
@@ -40,20 +40,21 @@ I've also read Third Person Narration by Philip Riley, which is 669 words long.
 I've also read Door Utils by Philip Riley, which is 41 words long.
 I've also read Real People by Philip Riley, which is 397 words long.
 I've also read Visible Rooms by Philip Riley, which is 63 words long.
-I've also read Polish by Philip Riley, which is 65 words long.
+I've also read Polish by Philip Riley, which is 86 words long.
 I've also read Choices by Philip Riley, which is 408 words long.
 I've also read New Light by Philip Riley, which is 330 words long.
 I've also read Early Declarations by Philip Riley, which is 23 words long.
 I've also read Basics by Philip Riley, which is 195 words long.
 I've also read Memories by Philip Riley, which is 243 words long.
 I've also read Simple Conversation by Philip Riley, which is 1935 words long.
-I've also read Hyperspace by Philip Riley, which is 4257 words long.
+I've also read Hyperspace by Philip Riley, which is 4258 words long.
 I've also read BOSH Facts by Philip Riley, which is 94 words long.
 I've also read Image Strip by Philip Riley, which is 2080 words long.
 I've also read Swamp Park by Philip Riley, which is 3447 words long.
-I've also read Margaret by Philip Riley, which is 1149 words long.
-I've also read Enigma Lake by Philip Riley, which is 2644 words long.
+I've also read Margaret by Philip Riley, which is 1148 words long.
+I've also read Enigma Lake by Philip Riley, which is 2654 words long.
 I've also read Gender Options by Nathanael Nerode, which is 7730 words long.
+I've also read Followup Questions by Philip Riley, which is 196 words long.
 I've also read Make Test by Philip Riley, which is 216 words long.
 I've also read BOSH Tests by Philip Riley, which is 221 words long.
 I've also read Hearing by Philip Riley, which is 1222 words long.
@@ -134,6 +135,8 @@ Regional: CONSTANT_VNT'hyperspace'-region(I233_hyperspace)(I141'hyperspace')
 Regional: CONSTANT_VNT'field office area'-region(I248_field_office_area)(I156'field office area')
  == region
 Regional: CONSTANT_VNT'field office area'-region(I248_field_office_area)(I156'field office area')
+ == region
+Regional: CONSTANT_VNT'elr'-region(I387_elr)(I283'elr')
  == region
 
 
@@ -237,9 +240,9 @@ Phase XII ... Code generation
                                                             Fail: list of numbers (~) number = nothing
                                             Fail: nothing (~) real number = nothing
                                             Fail: list of numbers (~) real number = nothing
-        Regional: CONSTANT_VNT'bosh hq'-region(I495_bosh_hq)(I387'bosh hq')
+        Regional: CONSTANT_VNT'bosh hq'-region(I498_bosh_hq)(I388'bosh hq')
          == region
-        Regional: CONSTANT_VNT'bosh hq'-region(I495_bosh_hq)(I387'bosh hq')
+        Regional: CONSTANT_VNT'bosh hq'-region(I498_bosh_hq)(I388'bosh hq')
          == region
         Regional: CONSTANT_VNT'laundromat-region'-region(I342_laundromat_region)(I239'laundromat-region')
          == region
@@ -287,15 +290,15 @@ Phase XII ... Code generation
 
 ==== Phase XII.21 ... Compiling routines from predicate calculus ====
 
-Providing for a total heap of 16384, given requirement of 8968
+Providing for a total heap of 16384, given requirement of 9992
 
 
 -----------------------------------------------------
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 210 files written as streams.
-CPU time: 479 centiseconds
+Total of 213 files written as streams.
+CPU time: 513 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

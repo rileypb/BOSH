@@ -10,5 +10,7 @@ Include Can't Take That by Philip Riley.
 Volume 1 - Some Better Responses
 
 The can't drop what's already dropped rule response (A) is "[We] [don't] have that."
+
+The parser nothing error internal rule response (B) is "[There] [adapt the verb are from the third person singular] nothing there."
 	
 Polish ends here.
