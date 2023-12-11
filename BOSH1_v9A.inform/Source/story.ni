@@ -785,6 +785,9 @@ some margaret-flattened-boxes are a thing in the room of stuff. They are private
 
 flattening is an action applying to one thing. Understand "flatten [something]" as flattening. Understand the commands "collapse", "unfold", and "fold", as "flatten". Understand "break down [something]" as flattening.
 
+Check flattening the biff-flattened-boxes:
+	say "They've already been flattened." instead;
+
 Check flattening:
 	say "[We] can't flatten [regarding the noun][them]." instead;
 	
@@ -792,8 +795,10 @@ Instead of flattening the cardboard boxes:
 	try taking the cardboard boxes;
 
 Instead of taking the cardboard boxes:
-	if the biff-flattened-boxes are not in the room of stuff:
+	if the player encloses the biff-flattened-boxes:
 		say "[We] already [have] as many boxes as [we] [can] carry."; 
+	otherwise if the biff-flattened-boxes are not in the Room of Stuff:
+		say "[We] really shouldn't go scattering boxes everywhere.";
 	otherwise:
 		say "[We] [pick] up a couple of boxes and [flatten] them.[paragraph break]";
 		now the player carries the biff-flattened-boxes;
@@ -805,7 +810,7 @@ Biff's computer is a thing. It is privately-named. It is behind the BOSH front d
 Check taking Biff's computer:
 	say "[Biff's computer] is too unwieldy to carry around.";
  
-Instead of examining Biff's computer when the thumb drive is not seen:
+Instead of examining Biff's computer when the thumb drive is not seen: 
 	say "[description of biff's computer] But [we] [do] find a thumb drive and take it.";
 	now the player carries the thumb drive;
 	now the thumb drive is seen;
@@ -909,6 +914,7 @@ Understand "shelves/books/shelf/bookshelf" as Moira's bookshelves.
 
 A tome is a kind of thing.
 A tome can be loanable.
+Understand "book" as a tome.
 Before printing the name of a tome:
 	say "[italic type]";
 
@@ -934,19 +940,28 @@ After discussing to borrow a book:
 	
 After examining a tome supported by Moira's bookshelves:
 	queue Moira Zin with to borrow a book;
+	
+after examining moira's bookshelves:
+	queue Moira Zin with to borrow a book;
 
-
+No-Myth-After-All is a tome on Moira's bookshelves. It is owned by Moira Zin. It is loanable. 
+The printed name is "No Myth After All: A New Perspective on Atlantis".
+Understand "No/Myth/After/All/A/New/Perspective/on/Atlantis" as No-Myth-After-All.
+Twenty-great-theses is a tome on Moira's bookshelves. It is owned by Moira Zin. It is loanable.
+The printed name is "Twenty Great PhD Theses of the Twentieth Century". 
+Understand "Twenty/Great/PhD/Theses/of/the/Twentieth/Century" as Twenty-great-theses.
+Anatomy of a Hoax is a tome on Moira's bookshelves. It is owned by Moira Zin. It is loanable.
+The printed name is "Anatomy of a Hoax: Writings on Modern Medicine's Greatest Myths".
+Understand "writings/on/modern/medicine's/greatest/myths" as Anatomy of a Hoax.
 Tribes of New York is a tome on Moira's bookshelves. It is owned by Moira Zin. It is loanable.
 Applied Speculation is a tome on Moira's bookshelves. It is owned by Moira Zin. It is loanable.
 Biking to the Ferry is a tome on Moira's bookshelves. It is owned by Moira Zin. It is loanable.
 The printed name is "Biking to the Ferry: a Memoir".
 Understand "a/-- memoir" as Biking to the Ferry.
-No-Myth-After-All is a tome on Moira's bookshelves. It is owned by Moira Zin. It is loanable. 
-The printed name is "No Myth After All: A New Perspective on Troy".
-Understand "No/Myth/After/All/A/New/Perspective/on/Troy" as No-Myth-After-All.
-Twenty-great-theses is a tome on Moira's bookshelves. It is owned by Moira Zin. It is loanable.
-The printed name is "Twenty Great PhD Theses of the Twentieth Century". 
-Understand "Twenty/Great/PhD/Theses/of/the/Twentieth/Century" as Twenty-great-theses.
+Nonstandard Investigative Techniques is a tome on Moira's bookshelves. It is owned by Moira Zin. It is loanable. 
+Calculus-with-Infinitesimals is a tome on Moira's bookshelves. It is owned by Moira Zin. It is loanable. 
+The printed name is "Calculus with Infinitesimals". Understand "Calculus/with/Infinitesimals" as Calculus-with-Infinitesimals.
+Three Stigmata of Palmer Eldritch is a tome on Moira's bookshelves. It is owned by Moira Zin. It is loanable. The printed name is "The Three Stigmata of Palmer Eldritch". 
 
 Book-borrowing is an object based rulebook.
 Book-borrowing something enclosed by the player:
@@ -954,6 +969,7 @@ Book-borrowing something enclosed by the player:
 	rule fails;
 Book-borrowing a tome (called T) supported by Moira's bookshelves:
 	now the player carries T;
+	now the player owns T;	
 	say "[We] [take] [T].";
 	now the borrowed book is T;
 	rule succeeds;
@@ -1018,10 +1034,10 @@ about the hyperdimensional portal is an informative quip.
 	It rules out to wait for the report.
 			
 to wait for the report is an informative quip.
-	The comment is "[We] [say] 'Strange things are afoot around here, Agent Zin.'[line break]".
-	The reply is "'Do tell,' says [Moira].
+	The comment is "[We] [say] 'Strange things are afoot around here, Agent Zin.'".
+	The reply is "'Do tell,' says Moira.
 	
-	'After I talk to Klimp.'[line break]".
+	'After I talk to Klimp.'".
 	It is ubiquitous.
 	It quip-supplies Moira Zin.
 	It rules out about the hyperdimensional portal.

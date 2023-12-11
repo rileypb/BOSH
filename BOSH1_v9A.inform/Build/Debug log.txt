@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 9849 words long.
+I've now read your source text, which is 10009 words long.
 
 
 -----------------------------------------------------
@@ -51,7 +51,7 @@ I've also read Hyperspace by Philip Riley, which is 4258 words long.
 I've also read BOSH Facts by Philip Riley, which is 94 words long.
 I've also read Image Strip by Philip Riley, which is 2080 words long.
 I've also read Swamp Park by Philip Riley, which is 3447 words long.
-I've also read Margaret by Philip Riley, which is 1148 words long.
+I've also read Margaret by Philip Riley, which is 1281 words long.
 I've also read Enigma Lake by Philip Riley, which is 2654 words long.
 I've also read Gender Options by Nathanael Nerode, which is 7730 words long.
 I've also read Followup Questions by Philip Riley, which is 196 words long.
@@ -298,7 +298,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 213 files written as streams.
-CPU time: 513 centiseconds
+CPU time: 522 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

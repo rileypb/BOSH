@@ -130,7 +130,17 @@ To initiate Margaret's box routine:
 	add behavior throw out boxes to margaret;
 	
 Rule for behaving as Margaret when the current behavior of Margaret is throw out boxes:
-	if Margaret is in Back Lot:
+	If the location of Margaret encloses the biff-flattened-boxes and no one carries the biff-flattened-boxes and Margaret does not carry the margaret-flattened-boxes:
+		say "[one of]Margaret looks at the boxes on the floor, puzzled.[or]Margaret says, 'oh! More boxes!'[or]Margaret looks thoughtful. 'Could have sworn I threw these boxes away,' she says.[or]Margaret looks annoyed. 'Seriously, who keeps dropping boxes everywhere?'[purely at random]";
+		try margaret taking the biff-flattened-boxes;
+		if margaret carries the biff-flattened-boxes:
+			now the biff-flattened-boxes are in the Room of Stuff;
+			now Margaret carries the margaret-flattened-boxes;
+	otherwise if the player encloses the biff-flattened-boxes and Margaret does not carry the margaret-flattened-boxes:
+		say "Margaret sees the boxes in your hands and says, 'No, no, give those to me.' She takes them from your hands.";
+		now Margaret carries the margaret-flattened-boxes;
+		now the biff-flattened-boxes are in the room of stuff;		
+	otherwise if Margaret is in Back Lot:
 		If Margaret carries margaret-flattened-boxes:
 			try margaret inserting margaret-flattened-boxes into dumpster;
 		otherwise:

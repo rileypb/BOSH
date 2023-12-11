@@ -20,7 +20,7 @@ or (3) Larch Faraji (they/them), lead singer of the third wave neo-old-school pu
 
 The Bureau of Strange Happenings
 An Interactive Phenomenon by Phil Riley
-Release 1 / Serial number 231121 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
+Release 1 / Serial number 231211 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
 
 Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
 
@@ -28,14 +28,16 @@ Their Hyundai is parked nearby.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1431"></child>
-            <child nodeId="node-1951"></child>
-            <child nodeId="node-1730"></child>
-            <child nodeId="node-2048"></child>
-            <child nodeId="node-1746"></child>
+        <children><child nodeId="node-1225"></child>
+            <child nodeId="node-1034"></child>
+            <child nodeId="node-1414"></child>
+            <child nodeId="node-1032"></child>
+            <child nodeId="node-1016"></child>
+            <child nodeId="node-1012"></child>
+            <child nodeId="node-1003"></child>
         </children>
     </item>
-    <item nodeId="node-1746">
+    <item nodeId="node-1003">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">Just like in the store this once was, the door chimes as Faraji walks in.
 
@@ -53,53 +55,13 @@ Faraji can ask about the phone exchange.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1747"></child>
+        <children><child nodeId="node-1410"></child>
+            <child nodeId="node-1004"></child>
+            <child nodeId="node-1178"></child>
+            <child nodeId="node-1326"></child>
         </children>
     </item>
-    <item nodeId="node-1747">
-        <command xml:space="preserve">look behind desk</command>
-        <result xml:space="preserve">There are a number of shelves of office supplies behind the desk. There is also a heating vent on the floor here.
-
-Faraji finds their computer and pulls it out.
-
-A phone is ringing somewhere else not too far away.
-
-Faraji can ask about the phone exchange.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1748"></child>
-        </children>
-    </item>
-    <item nodeId="node-1748">
-        <command xml:space="preserve">take computer</command>
-        <result xml:space="preserve">Faraji's computer is a too unwieldy to carry around.
-
-Taken.
-
-A phone is ringing somewhere else not too far away.
-
-Faraji can ask about the phone exchange.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1749"></child>
-        </children>
-    </item>
-    <item nodeId="node-1749">
-        <command xml:space="preserve">x computer</command>
-        <result xml:space="preserve">Faraji's computer has been damaged beyond repair. But they do find a thumb drive and take it.
-
-A phone is ringing somewhere else not too far away.
-
-Faraji can remember finding the drive. They can ask about the phone exchange.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1750"></child>
-        </children>
-    </item>
-    <item nodeId="node-1750">
+    <item nodeId="node-1326">
         <command xml:space="preserve">take boxes</command>
         <result xml:space="preserve">Faraji picks up a couple of boxes and flattens them.
 
@@ -111,10 +73,10 @@ Margaret goes west.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1751"></child>
+        <children><child nodeId="node-1327"></child>
         </children>
     </item>
-    <item nodeId="node-1751">
+    <item nodeId="node-1327">
         <command xml:space="preserve">take boxes</command>
         <result xml:space="preserve">Faraji picks up a couple of boxes and flattens them.
 
@@ -122,10 +84,1451 @@ A phone is ringing somewhere else not too far away.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1752"></child>
+        <children><child nodeId="node-1343"></child>
+            <child nodeId="node-1328"></child>
         </children>
     </item>
-    <item nodeId="node-1752">
+    <item nodeId="node-1328">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Faraji stands around and waits.
+
+A phone is ringing somewhere else not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1329"></child>
+        </children>
+    </item>
+    <item nodeId="node-1329">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Faraji stands around and waits.
+
+A phone is ringing somewhere else not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1330"></child>
+        </children>
+    </item>
+    <item nodeId="node-1330">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Faraji stands around and waits.
+
+A phone is ringing somewhere else not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1331"></child>
+        </children>
+    </item>
+    <item nodeId="node-1331">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Faraji stands around and waits.
+
+A phone is ringing somewhere else not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1332"></child>
+        </children>
+    </item>
+    <item nodeId="node-1332">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Faraji stands around and waits.
+
+A phone is ringing somewhere else not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1333"></child>
+        </children>
+    </item>
+    <item nodeId="node-1333">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Faraji stands around and waits.
+
+A phone is ringing somewhere else not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1334"></child>
+        </children>
+    </item>
+    <item nodeId="node-1334">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Faraji stands around and waits.
+
+A phone is ringing somewhere else not too far away.
+
+Margaret arrives from the west.
+
+Faraji can ask about the phone exchange.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1335"></child>
+        </children>
+    </item>
+    <item nodeId="node-1335">
+        <command xml:space="preserve">give boxes</command>
+        <result xml:space="preserve">(the flattened boxes to Margaret)
+foo
+A phone is ringing somewhere else not too far away.
+
+Faraji can ask about the phone exchange.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1336"></child>
+        </children>
+    </item>
+    <item nodeId="node-1336">
+        <command xml:space="preserve">take boxes</command>
+        <result xml:space="preserve">(the flattened boxes)
+Faraji already has those.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can ask about the phone exchange.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1337"></child>
+        </children>
+    </item>
+    <item nodeId="node-1337">
+        <command xml:space="preserve">drop them</command>
+        <result xml:space="preserve">Dropped.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can ask about the phone exchange.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1338"></child>
+        </children>
+    </item>
+    <item nodeId="node-1338">
+        <command xml:space="preserve">take boxes</command>
+        <result xml:space="preserve">(the flattened boxes)
+Taken.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can ask about the phone exchange.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1339"></child>
+        </children>
+    </item>
+    <item nodeId="node-1339">
+        <command xml:space="preserve">take box</command>
+        <result xml:space="preserve">Faraji already has as many boxes as they can carry.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can ask about the phone exchange.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1343">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
+
+A phone is ringing to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1344"></child>
+            <child nodeId="node-1376"></child>
+        </children>
+    </item>
+    <item nodeId="node-1376">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Agent Faraji is in their office. They pause and survey the scene. It's not much -- four white walls, grey industrial carpet. Margaret has helpfully assembled Faraji's desk and chair, though how sturdily is an open question. She also took the time to put up some of Agent Faraji's office decor -- their degree in Nonstandard Investigative Techniques, an original pencil drawing of the Pitfall snake by semi-acclaimed Washington DC artist Darius 5200, and a photo of their soccer team. At the very least the wall coverings help compensate for the lack of windows. There's a disconnected landline on the desk. The office door is to the north, and there's a white metal door to the west.
+
+Faraji mutters, "Where's my computer?"
+
+A phone is ringing inside their desk.
+
+Margaret goes west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1387"></child>
+            <child nodeId="node-1400"></child>
+        </children>
+    </item>
+    <item nodeId="node-1400">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Agent Faraji is in the back lot. This is a small area of asphalt between the building and a chain link fence looking in on an industrial property. A door to east leads into the BOSH offices, and one to the north enters the laundromat. There is a blue dumpster here.
+
+Also here is Margaret.
+
+A phone is ringing to the east, in Faraji's office.
+
+Margaret tosses the flattened boxes over the edge of the dumpster.
+
+Faraji can ask about the status of the computer or ask about the phone exchange.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1401"></child>
+        </children>
+    </item>
+    <item nodeId="node-1401">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Faraji stands around and waits.
+
+A phone is ringing to the east, in their office.
+
+Margaret sees the boxes in your hands and says, "No, no, give those to me." She takes them from your hands.
+
+Faraji can ask about the status of the computer or ask about the phone exchange.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1402"></child>
+        </children>
+    </item>
+    <item nodeId="node-1402">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Faraji stands around and waits.
+
+A phone is ringing to the east, in their office.
+
+Margaret tosses the flattened boxes over the edge of the dumpster.
+
+Faraji can ask about the status of the computer or ask about the phone exchange.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1403"></child>
+        </children>
+    </item>
+    <item nodeId="node-1403">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Faraji stands around and waits.
+
+A phone is ringing to the east, in their office.
+
+Margaret goes east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1404"></child>
+        </children>
+    </item>
+    <item nodeId="node-1404">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Agent Faraji is in their office. It's basically four white walls and grey carpet. There's a cheap desk and chair, and a disconnected phone on the desk. In lieu of windows, there are a few things on the wall: their degree in Nonstandard Investigative Techniques, a pencil drawing of the Pitfall snake, and a photo of their soccer team. The office door is to the north, and there's a white metal door to the west.
+
+Also here is Margaret.
+
+A phone is ringing inside Faraji's desk.
+
+Margaret closes the white metal door.
+
+Margaret locks the white metal door.
+
+Faraji can ask about the status of the computer or ask about the phone exchange.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1405"></child>
+        </children>
+    </item>
+    <item nodeId="node-1405">
+        <command xml:space="preserve">gonear closet</command>
+        <result xml:space="preserve">(the utility closet)
+Agent Faraji is in the dark. 
+
+Some light would be nice.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1406"></child>
+        </children>
+    </item>
+    <item nodeId="node-1406">
+        <command xml:space="preserve">lens</command>
+        <result xml:space="preserve">Agent Faraji is in the utility closet. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1407"></child>
+        </children>
+    </item>
+    <item nodeId="node-1407">
+        <command xml:space="preserve">knock door</command>
+        <result xml:space="preserve">After a few seconds, someone inserts a key in the lock and opens the door. It's Faraji's colleague Moira Zin. "How'd you get in there, Larch?"
+
+You exit the closet.
+
+Agent Faraji is in Moira's office. 
+
+Also here is Moira Zin.
+
+A phone is ringing somewhere else not too far away.
+
+Wearing the astral lenses in fluorescent light is blinding. Faraji quickly removes the glasses.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1408"></child>
+        </children>
+    </item>
+    <item nodeId="node-1408">
+        <command xml:space="preserve">x books</command>
+        <result xml:space="preserve">On Moira's bookshelves are Tribes of New York, Applied Speculation, Biking to the Ferry: a Memoir, No Myth After All: A New Perspective on Troy and Twenty Great PhD Theses of the Twentieth Century.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1387">
+        <command xml:space="preserve">drop boxes</command>
+        <result xml:space="preserve">Dropped.
+
+A phone is ringing inside Faraji's desk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1388"></child>
+        </children>
+    </item>
+    <item nodeId="node-1388">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Faraji stands around and waits.
+
+A phone is ringing inside their desk.
+
+Margaret arrives from the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1389"></child>
+        </children>
+    </item>
+    <item nodeId="node-1389">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Faraji stands around and waits.
+
+A phone is ringing inside their desk.
+
+Margaret looks thoughtful. "Could have sworn I threw these boxes away," she says.
+
+Margaret picks up the flattened boxes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1390"></child>
+        </children>
+    </item>
+    <item nodeId="node-1390">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Faraji stands around and waits.
+
+A phone is ringing inside their desk.
+
+Margaret goes west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1391"></child>
+        </children>
+    </item>
+    <item nodeId="node-1391">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Faraji stands around and waits.
+
+A phone is ringing inside their desk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1392"></child>
+        </children>
+    </item>
+    <item nodeId="node-1392">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Faraji stands around and waits.
+
+A phone is ringing inside their desk.
+
+Margaret arrives from the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1393"></child>
+        </children>
+    </item>
+    <item nodeId="node-1393">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Faraji stands around and waits.
+
+A phone is ringing inside their desk.
+
+Margaret closes the white metal door.
+
+Margaret locks the white metal door.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1394"></child>
+        </children>
+    </item>
+    <item nodeId="node-1394">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Faraji stands around and waits.
+
+A phone is ringing inside their desk.
+
+Margaret goes north.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1344">
+        <command xml:space="preserve">drop boxes</command>
+        <result xml:space="preserve">Dropped.
+
+A phone is ringing to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1345"></child>
+        </children>
+    </item>
+    <item nodeId="node-1345">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Faraji stands around and waits.
+
+A phone is ringing to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1346"></child>
+        </children>
+    </item>
+    <item nodeId="node-1346">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Faraji stands around and waits.
+
+A phone is ringing to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1347"></child>
+        </children>
+    </item>
+    <item nodeId="node-1347">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Faraji stands around and waits.
+
+A phone is ringing to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1348"></child>
+        </children>
+    </item>
+    <item nodeId="node-1348">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Faraji stands around and waits.
+
+A phone is ringing to the south.
+
+Margaret arrives from the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1349"></child>
+        </children>
+    </item>
+    <item nodeId="node-1349">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Faraji stands around and waits.
+
+A phone is ringing to the south.
+
+Margaret picks up the flattened boxes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1350"></child>
+        </children>
+    </item>
+    <item nodeId="node-1350">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Faraji stands around and waits.
+
+A phone is ringing to the south.
+
+Margaret goes south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1370"></child>
+            <child nodeId="node-1351"></child>
+        </children>
+    </item>
+    <item nodeId="node-1351">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Faraji stands around and waits.
+
+A phone is ringing to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1352"></child>
+        </children>
+    </item>
+    <item nodeId="node-1352">
+        <command xml:space="preserve">zw</command>
+        <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1353"></child>
+        </children>
+    </item>
+    <item nodeId="node-1353">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">(first opening Klimp's door)
+It seems to be locked.
+
+A phone is ringing to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1354"></child>
+        </children>
+    </item>
+    <item nodeId="node-1354">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
+
+A phone is ringing somewhere else not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1355"></child>
+        </children>
+    </item>
+    <item nodeId="node-1355">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Faraji can't go that way.
+
+A phone is ringing somewhere else not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1356"></child>
+        </children>
+    </item>
+    <item nodeId="node-1356">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Faraji can't go that way.
+
+A phone is ringing somewhere else not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1357"></child>
+        </children>
+    </item>
+    <item nodeId="node-1357">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
+
+Also here is Margaret.
+
+A phone is ringing to the south.
+
+Faraji can ask about the phone exchange.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1358"></child>
+        </children>
+    </item>
+    <item nodeId="node-1358">
+        <command xml:space="preserve">x margaret</command>
+        <result xml:space="preserve">Margaret is the latest occupant of the rapidly revolving post of office manager. Most of her job involves ordering stationery and office supplies, shredding documents, and keeping track of office equipment.
+
+A phone is ringing to the south.
+
+Faraji can ask about the phone exchange.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1370">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Agent Faraji is in their office. They pause and survey the scene. It's not much -- four white walls, grey industrial carpet. Margaret has helpfully assembled Faraji's desk and chair, though how sturdily is an open question. She also took the time to put up some of Agent Faraji's office decor -- their degree in Nonstandard Investigative Techniques, an original pencil drawing of the Pitfall snake by semi-acclaimed Washington DC artist Darius 5200, and a photo of their soccer team. At the very least the wall coverings help compensate for the lack of windows. There's a disconnected landline on the desk. The office door is to the north, and there's a white metal door to the west.
+
+Faraji mutters, "Where's my computer?"
+
+A phone is ringing inside their desk.
+
+Margaret unlocks the white metal door.
+
+Faraji can ask about the status of the computer or ask about the phone exchange.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1371"></child>
+        </children>
+    </item>
+    <item nodeId="node-1371">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Faraji stands around and waits.
+
+A phone is ringing inside their desk.
+
+Margaret goes west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1178">
+        <command xml:space="preserve">take box</command>
+        <result xml:space="preserve">Faraji picks up a couple of boxes and flattens them.
+
+Margaret says, "Hey, what are you doing with those boxes, Agent Faraji? You don't have to worry about that -- I'll get them." She takes the flattened boxes from Faraji and hustles off.
+
+A phone is ringing somewhere else not too far away.
+
+Margaret goes west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1179"></child>
+        </children>
+    </item>
+    <item nodeId="node-1179">
+        <command xml:space="preserve">take box</command>
+        <result xml:space="preserve">Faraji picks up a couple of boxes and flattens them.
+
+A phone is ringing somewhere else not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1255"></child>
+            <child nodeId="node-1180"></child>
+        </children>
+    </item>
+    <item nodeId="node-1180">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Faraji stands around and waits.
+
+A phone is ringing somewhere else not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1181"></child>
+        </children>
+    </item>
+    <item nodeId="node-1181">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Faraji stands around and waits.
+
+A phone is ringing somewhere else not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1182"></child>
+        </children>
+    </item>
+    <item nodeId="node-1182">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Faraji stands around and waits.
+
+A phone is ringing somewhere else not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1183"></child>
+        </children>
+    </item>
+    <item nodeId="node-1183">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Faraji stands around and waits.
+
+A phone is ringing somewhere else not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1184"></child>
+        </children>
+    </item>
+    <item nodeId="node-1184">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Faraji stands around and waits.
+
+A phone is ringing somewhere else not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1185"></child>
+        </children>
+    </item>
+    <item nodeId="node-1185">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Faraji stands around and waits.
+
+A phone is ringing somewhere else not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1186"></child>
+        </children>
+    </item>
+    <item nodeId="node-1186">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Faraji stands around and waits.
+
+A phone is ringing somewhere else not too far away.
+
+Margaret arrives from the west.
+
+Faraji can ask about the phone exchange.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1187"></child>
+        </children>
+    </item>
+    <item nodeId="node-1187">
+        <command xml:space="preserve">take box</command>
+        <result xml:space="preserve">Faraji already has as many boxes as they can carry.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can ask about the phone exchange.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1188"></child>
+        </children>
+    </item>
+    <item nodeId="node-1188">
+        <command xml:space="preserve">drop box</command>
+        <result xml:space="preserve">Faraji doesn't have that.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can ask about the phone exchange.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1189"></child>
+        </children>
+    </item>
+    <item nodeId="node-1189">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">Faraji is carrying:
+  some flattened boxes
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can ask about the phone exchange.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1190"></child>
+        </children>
+    </item>
+    <item nodeId="node-1190">
+        <command xml:space="preserve">drop flattened</command>
+        <result xml:space="preserve">Dropped.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can ask about the phone exchange.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1191"></child>
+        </children>
+    </item>
+    <item nodeId="node-1191">
+        <command xml:space="preserve">take box</command>
+        <result xml:space="preserve">Faraji already has as many boxes as they can carry.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can ask about the phone exchange.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1192"></child>
+        </children>
+    </item>
+    <item nodeId="node-1192">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">Faraji is carrying nothing.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can ask about the phone exchange.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1193"></child>
+        </children>
+    </item>
+    <item nodeId="node-1193">
+        <command xml:space="preserve">gonear closet</command>
+        <result xml:space="preserve">(the utility closet)
+Agent Faraji is in the dark. 
+
+Some light would be nice.
+
+Faraji can ask about the phone exchange.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1194"></child>
+        </children>
+    </item>
+    <item nodeId="node-1194">
+        <command xml:space="preserve">lens</command>
+        <result xml:space="preserve">Agent Faraji is in the utility closet. 
+
+Faraji can ask about the phone exchange.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1195"></child>
+        </children>
+    </item>
+    <item nodeId="node-1195">
+        <command xml:space="preserve">open door</command>
+        <result xml:space="preserve">It seems to be locked.
+
+Faraji can ask about the phone exchange.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1196"></child>
+        </children>
+    </item>
+    <item nodeId="node-1196">
+        <command xml:space="preserve">knock on door</command>
+        <result xml:space="preserve">After a few seconds, someone inserts a key in the lock and opens the door. It's Faraji's colleague Moira Zin. "How'd you get in there, Larch?"
+
+You exit the closet.
+
+Agent Faraji is in Moira's office. 
+
+Also here is Moira Zin.
+
+A phone is ringing somewhere else not too far away.
+
+Wearing the astral lenses in fluorescent light is blinding. Faraji quickly removes the glasses.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1197"></child>
+        </children>
+    </item>
+    <item nodeId="node-1197">
+        <command xml:space="preserve">x books</command>
+        <result xml:space="preserve">On Moira's bookshelves are Tribes of New York, Applied Speculation, Biking to the Ferry: a Memoir, No Myth After All: A New Perspective on Troy and Twenty Great PhD Theses of the Twentieth Century.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1198"></child>
+        </children>
+    </item>
+    <item nodeId="node-1198">
+        <command xml:space="preserve">borrow book</command>
+        <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1199"></child>
+        </children>
+    </item>
+    <item nodeId="node-1199">
+        <command xml:space="preserve">take tribes</command>
+        <result xml:space="preserve">That belongs to Moira Zin.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1200"></child>
+        </children>
+    </item>
+    <item nodeId="node-1200">
+        <command xml:space="preserve">ask to borrow book</command>
+        <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1201"></child>
+        </children>
+    </item>
+    <item nodeId="node-1201">
+        <command xml:space="preserve">ask to borrow tribes</command>
+        <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1202"></child>
+        </children>
+    </item>
+    <item nodeId="node-1202">
+        <command xml:space="preserve">x tribes</command>
+        <result xml:space="preserve">There seems to be nothing special about it.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can ask to borrow a book, tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1203"></child>
+        </children>
+    </item>
+    <item nodeId="node-1203">
+        <command xml:space="preserve">borrow a book</command>
+        <result xml:space="preserve">
+
+
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can ask to borrow a book, tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+Moira Zin asks, "What do you want to borrow?" &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1204"></child>
+        </children>
+    </item>
+    <item nodeId="node-1204">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Faraji can't go that way.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can ask to borrow a book, tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1205"></child>
+        </children>
+    </item>
+    <item nodeId="node-1205">
+        <command xml:space="preserve">borrow</command>
+        <result xml:space="preserve">
+
+
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can ask to borrow a book, tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+Moira Zin asks, "What do you want to borrow?" &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1206"></child>
+        </children>
+    </item>
+    <item nodeId="node-1206">
+        <command xml:space="preserve">tribes</command>
+        <result xml:space="preserve">Faraji takes Tribes of New York.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1207"></child>
+        </children>
+    </item>
+    <item nodeId="node-1207">
+        <command xml:space="preserve">borrow</command>
+        <result xml:space="preserve">Moira shakes her head. "Sorry, I'll only lend one book at a time."
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1208"></child>
+        </children>
+    </item>
+    <item nodeId="node-1208">
+        <command xml:space="preserve">give book</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1209"></child>
+        </children>
+    </item>
+    <item nodeId="node-1209">
+        <command xml:space="preserve">give tribes</command>
+        <result xml:space="preserve">(to Moira Zin)
+Moira smiles. "Thanks for getting it back to me." She puts the book back on the shelf.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can ask to borrow a book, tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1210"></child>
+        </children>
+    </item>
+    <item nodeId="node-1210">
+        <command xml:space="preserve">borrow</command>
+        <result xml:space="preserve">
+
+
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can ask to borrow a book, tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+Moira Zin asks, "What do you want to borrow?" &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1211"></child>
+        </children>
+    </item>
+    <item nodeId="node-1211">
+        <command xml:space="preserve">these</command>
+        <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+Moira Zin asks, "What do you want to borrow?" &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1212"></child>
+        </children>
+    </item>
+    <item nodeId="node-1212">
+        <command xml:space="preserve">theses</command>
+        <result xml:space="preserve">Faraji takes Twenty Great PhD Theses of the Twentieth Century.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1213"></child>
+        </children>
+    </item>
+    <item nodeId="node-1213">
+        <command xml:space="preserve">drop it</command>
+        <result xml:space="preserve">Dropped.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1214"></child>
+        </children>
+    </item>
+    <item nodeId="node-1214">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">Faraji is carrying:
+  a pair of astral lenses
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1215"></child>
+        </children>
+    </item>
+    <item nodeId="node-1215">
+        <command xml:space="preserve">borrow</command>
+        <result xml:space="preserve">Moira shakes her head. "Sorry, I'll only lend one book at a time."
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1216"></child>
+        </children>
+    </item>
+    <item nodeId="node-1216">
+        <command xml:space="preserve">give book</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1217"></child>
+        </children>
+    </item>
+    <item nodeId="node-1217">
+        <command xml:space="preserve">give tome</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1218"></child>
+        </children>
+    </item>
+    <item nodeId="node-1218">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">Faraji is carrying:
+  a pair of astral lenses
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1219"></child>
+        </children>
+    </item>
+    <item nodeId="node-1219">
+        <command xml:space="preserve">take tome</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1220"></child>
+        </children>
+    </item>
+    <item nodeId="node-1220">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Agent Faraji is in Moira's office. 
+
+Also here are Twenty Great PhD Theses of the Twentieth Century and Moira Zin.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1221"></child>
+        </children>
+    </item>
+    <item nodeId="node-1221">
+        <command xml:space="preserve">take theses</command>
+        <result xml:space="preserve">That belongs to Moira Zin.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1222"></child>
+        </children>
+    </item>
+    <item nodeId="node-1222">
+        <command xml:space="preserve">borrow</command>
+        <result xml:space="preserve">Moira shakes her head. "Sorry, I'll only lend one book at a time."
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1223"></child>
+        </children>
+    </item>
+    <item nodeId="node-1223">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">Faraji is carrying:
+  a pair of astral lenses
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1224"></child>
+        </children>
+    </item>
+    <item nodeId="node-1224">
+        <command xml:space="preserve">relations</command>
+        <result xml:space="preserve">Lock-fitting relates one thing ( called the matching key ) to various things:
+  The white key  &gt;=&gt;  the white metal door
+  The old copper key  &gt;=&gt;  the Horton House door
+  The brass key  &gt;=&gt;  the Skillet door
+  The little grey key  &gt;=&gt;  Biff's desk drawer
+Knowledge relates various people to various facts:
+  Yourself  &gt;=&gt;  
+  Yourself  &gt;=&gt;  
+  Faraji  &gt;=&gt;  
+  Faraji  &gt;=&gt;  
+  Chief Klimp  &gt;=&gt;  
+Talking on relates a person to a phone:
+  The unknown voice  &gt;=&gt;  the mysterious phone
+Calling to relates a person to a phone:
+  The unknown voice  &gt;=&gt;  the blue flipphone
+Reaches relates a phone number to a phone:
+    &gt;=&gt;  klimp's mobile phone
+    &gt;=&gt;  the blue flipphone
+Owner relates one person ( called the owner ) to a thing:
+  The store clerk  &gt;=&gt;  the flashlight
+  The store clerk  &gt;=&gt;  the red screwdriver
+  The store clerk  &gt;=&gt;  the laptop computer
+  The store clerk  &gt;=&gt;  the wireless earbuds
+  Faraji  &gt;=&gt;  the Bureau credit card
+  Faraji  &gt;=&gt;  the green smartphone
+  Chief Klimp  &gt;=&gt;  klimp's mobile phone
+  Chief Klimp  &gt;=&gt;  the juvenile sasquatch skull
+  Chief Klimp  &gt;=&gt;  the pair of astral lenses
+  Chief Klimp  &gt;=&gt;  the polished orange marble dodecahedron
+  Moira Zin  &gt;=&gt;  Tribes of New York
+  Moira Zin  &gt;=&gt;  Applied Speculation
+  Moira Zin  &gt;=&gt;  Biking to the Ferry: a Memoir
+  Moira Zin  &gt;=&gt;  No Myth After All: A New Perspective on Troy
+  Moira Zin  &gt;=&gt;  Twenty Great PhD Theses of the Twentieth Century
+  The unknown voice  &gt;=&gt;  the mysterious phone
+Vends relates one person ( called the vendor ) to various things:
+  The store clerk  &gt;=&gt;  the flashlight
+  The store clerk  &gt;=&gt;  the red screwdriver
+  The store clerk  &gt;=&gt;  the laptop computer
+  The store clerk  &gt;=&gt;  the wireless earbuds
+Behindness relates various things to one thing:
+  Faraji's computer  &gt;=&gt;  the BOSH front desk
+  The backpack  &gt;=&gt;  the information desk
+quip-supplying relates various quips to various things:
+  who he is  &gt;=&gt;  Doris
+  About his name  &gt;=&gt;  Doris
+  where we are  &gt;=&gt;  Doris
+  How to get home  &gt;=&gt;  Doris
+  Klimp is fine  &gt;=&gt;  Doris
+  they don't have it  &gt;=&gt;  Doris
+  What thumb drive  &gt;=&gt;  Doris
+  Show him the thumb drive  &gt;=&gt;  Doris
+  Hand over the thumb drive  &gt;=&gt;  Doris
+  About Savra  &gt;=&gt;  Doris
+  About the mission  &gt;=&gt;  Doris
+  About the Dragon  &gt;=&gt;  Doris
+  About time travel  &gt;=&gt;  Doris
+  How will i find him  &gt;=&gt;  Doris
+  they're ready to go  &gt;=&gt;  Doris
+  for a screwdriver  &gt;=&gt;  Dave
+  About the laundromat owner  &gt;=&gt;  Dave
+  About the whereabouts of the desk key  &gt;=&gt;  Margaret
+  About the status of the computer  &gt;=&gt;  Margaret
+  for the hex wrench  &gt;=&gt;  Margaret
+  for a screwdriver  &gt;=&gt;  Margaret
+  To unlock the backdoor  &gt;=&gt;  Margaret
+  About the phone exchange  &gt;=&gt;  Margaret
+  To borrow the skull  &gt;=&gt;  Chief Klimp
+  To borrow the lenses  &gt;=&gt;  Chief Klimp
+  To borrow a book  &gt;=&gt;  Moira Zin
+  About the hyperdimensional portal  &gt;=&gt;  Moira Zin
+  To wait for the report  &gt;=&gt;  Moira Zin
+following relates various quips to various quips:
+  About his name  &gt;=&gt;  who he is
+  Klimp is fine  &gt;=&gt;  where we are
+  About Savra  &gt;=&gt;  hand over the thumb drive
+  About the mission  &gt;=&gt;  about Savra
+  About the mission  &gt;=&gt;  about the Dragon
+  About the mission  &gt;=&gt;  about time travel
+  About the Dragon  &gt;=&gt;  hand over the thumb drive
+  About time travel  &gt;=&gt;  hand over the thumb drive
+  How will i find him  &gt;=&gt;  about the mission
+  they're ready to go  &gt;=&gt;  how will i find him
+  About the laundromat owner  &gt;=&gt;  for a screwdriver
+exclusion relates various quips to various quips:
+  Show him the thumb drive  &gt;=&gt;  they don't have it
+  Show him the thumb drive  &gt;=&gt;  what thumb drive
+  About the hyperdimensional portal  &gt;=&gt;  to wait for the report
+  To wait for the report  &gt;=&gt;  about the hyperdimensional portal
+mentioning relates various quips to various things:
+  they don't have it  &gt;=&gt;  the thumb drive
+  What thumb drive  &gt;=&gt;  the thumb drive
+  Show him the thumb drive  &gt;=&gt;  the thumb drive
+  for a screwdriver  &gt;=&gt;  the screwdriver
+  About the whereabouts of the desk key  &gt;=&gt;  the little grey key
+  About the status of the computer  &gt;=&gt;  their computer
+  for the hex wrench  &gt;=&gt;  the hex wrench
+  for a screwdriver  &gt;=&gt;  the screwdriver
+  To unlock the backdoor  &gt;=&gt;  the white metal door
+  To borrow the skull  &gt;=&gt;  the juvenile sasquatch skull
+  To borrow the lenses  &gt;=&gt;  the pair of astral lenses
+stocking relates various quips to various things:
+  who he is  &gt;=&gt;  Doris
+  where we are  &gt;=&gt;  Doris
+  How to get home  &gt;=&gt;  Doris
+  About the phone exchange  &gt;=&gt;  Margaret
+Securing relates various things to one thing:
+  The screws  &gt;=&gt;  the heating vent
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1255">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
+
+A phone is ringing to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1256"></child>
+        </children>
+    </item>
+    <item nodeId="node-1256">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Agent Faraji is in their office. They pause and survey the scene. It's not much -- four white walls, grey industrial carpet. Margaret has helpfully assembled Faraji's desk and chair, though how sturdily is an open question. She also took the time to put up some of Agent Faraji's office decor -- their degree in Nonstandard Investigative Techniques, an original pencil drawing of the Pitfall snake by semi-acclaimed Washington DC artist Darius 5200, and a photo of their soccer team. At the very least the wall coverings help compensate for the lack of windows. There's a disconnected landline on the desk. The office door is to the north, and there's a white metal door to the west.
+
+Faraji mutters, "Where's my computer?"
+
+A phone is ringing inside their desk.
+
+Margaret goes west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1257"></child>
+        </children>
+    </item>
+    <item nodeId="node-1257">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Agent Faraji is in the back lot. This is a small area of asphalt between the building and a chain link fence looking in on an industrial property. A door to east leads into the BOSH offices, and one to the north enters the laundromat. There is a blue dumpster here.
+
+Also here is Margaret.
+
+A phone is ringing to the east, in Faraji's office.
+
+Margaret tosses the flattened boxes over the edge of the dumpster.
+
+Faraji can ask about the status of the computer or ask about the phone exchange.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1258"></child>
+        </children>
+    </item>
+    <item nodeId="node-1258">
+        <command xml:space="preserve">put boxes in dumpster</command>
+        <result xml:space="preserve">Faraji tosses the flattened boxes over the edge of the dumpster.
+
+A phone is ringing to the east, in their office.
+
+Margaret goes east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1259"></child>
+        </children>
+    </item>
+    <item nodeId="node-1259">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Agent Faraji is in their office. It's basically four white walls and grey carpet. There's a cheap desk and chair, and a disconnected phone on the desk. In lieu of windows, there are a few things on the wall: their degree in Nonstandard Investigative Techniques, a pencil drawing of the Pitfall snake, and a photo of their soccer team. The office door is to the north, and there's a white metal door to the west.
+
+Also here is Margaret.
+
+A phone is ringing inside Faraji's desk.
+
+Margaret closes the white metal door.
+
+Margaret locks the white metal door.
+
+Faraji can ask about the status of the computer or ask about the phone exchange.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1260"></child>
+        </children>
+    </item>
+    <item nodeId="node-1260">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
+
+A phone is ringing to the south, in their office.
+
+Margaret arrives from the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1261"></child>
+        </children>
+    </item>
+    <item nodeId="node-1261">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
+
+A phone is ringing somewhere else not too far away.
+
+Margaret arrives from the west.
+
+Faraji can ask about the status of the computer or ask about the phone exchange.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1262"></child>
+        </children>
+    </item>
+    <item nodeId="node-1262">
+        <command xml:space="preserve">take boxes</command>
+        <result xml:space="preserve">Faraji picks up a couple of boxes and flattens them.
+
+Margaret says, "Hey, what are you doing with those boxes, Agent Faraji? You don't have to worry about that -- I'll get them." She takes the flattened boxes from Faraji and hustles off.
+
+A phone is ringing somewhere else not too far away.
+
+Margaret goes west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1263"></child>
+        </children>
+    </item>
+    <item nodeId="node-1263">
+        <command xml:space="preserve">take boxes</command>
+        <result xml:space="preserve">Faraji picks up a couple of boxes and flattens them.
+
+A phone is ringing somewhere else not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1264"></child>
+        </children>
+    </item>
+    <item nodeId="node-1264">
+        <command xml:space="preserve">drop them</command>
+        <result xml:space="preserve">Faraji doesn't have that.
+
+A phone is ringing somewhere else not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1265"></child>
+        </children>
+    </item>
+    <item nodeId="node-1265">
         <command xml:space="preserve">drop boxes</command>
         <result xml:space="preserve">(the flattened boxes)
 Dropped.
@@ -134,10 +1537,260 @@ A phone is ringing somewhere else not too far away.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1753"></child>
+        <children><child nodeId="node-1266"></child>
         </children>
     </item>
-    <item nodeId="node-1753">
+    <item nodeId="node-1266">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">Faraji is carrying nothing.
+
+A phone is ringing somewhere else not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1267"></child>
+        </children>
+    </item>
+    <item nodeId="node-1267">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
+
+Also here are some flattened boxes.
+
+A phone is ringing somewhere else not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1268"></child>
+        </children>
+    </item>
+    <item nodeId="node-1268">
+        <command xml:space="preserve">take boxes</command>
+        <result xml:space="preserve">(the flattened boxes)
+Taken.
+
+A phone is ringing somewhere else not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1269"></child>
+        </children>
+    </item>
+    <item nodeId="node-1269">
+        <command xml:space="preserve">take boxes</command>
+        <result xml:space="preserve">(the flattened boxes)
+Faraji already has those.
+
+A phone is ringing somewhere else not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1270"></child>
+        </children>
+    </item>
+    <item nodeId="node-1270">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Faraji stands around and waits.
+
+A phone is ringing somewhere else not too far away.
+
+Margaret arrives from the west.
+
+Faraji can ask about the status of the computer or ask about the phone exchange.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1271"></child>
+        </children>
+    </item>
+    <item nodeId="node-1271">
+        <command xml:space="preserve">give boxes to margaret</command>
+        <result xml:space="preserve">(the flattened boxes to Margaret)
+That doesn't seem to be a topic of conversation at the moment.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can ask about the status of the computer or ask about the phone exchange.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1272"></child>
+        </children>
+    </item>
+    <item nodeId="node-1272">
+        <command xml:space="preserve">drop boxes</command>
+        <result xml:space="preserve">(the flattened boxes)
+Dropped.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can ask about the status of the computer or ask about the phone exchange.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1273"></child>
+        </children>
+    </item>
+    <item nodeId="node-1273">
+        <command xml:space="preserve">take them</command>
+        <result xml:space="preserve">Taken.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can ask about the status of the computer or ask about the phone exchange.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1274"></child>
+        </children>
+    </item>
+    <item nodeId="node-1274">
+        <command xml:space="preserve">flatten boxes</command>
+        <result xml:space="preserve">(the flattened boxes)
+They've already been flattened.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can ask about the status of the computer or ask about the phone exchange.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1321"></child>
+        </children>
+    </item>
+    <item nodeId="node-1321">
+        <command xml:space="preserve">drop them</command>
+        <result xml:space="preserve">Dropped.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can ask about the status of the computer or ask about the phone exchange.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1322"></child>
+        </children>
+    </item>
+    <item nodeId="node-1322">
+        <command xml:space="preserve">flatten boxes</command>
+        <result xml:space="preserve">(the flattened boxes)
+They've already been flattened.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can ask about the status of the computer or ask about the phone exchange.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1323"></child>
+        </children>
+    </item>
+    <item nodeId="node-1323">
+        <command xml:space="preserve">take them</command>
+        <result xml:space="preserve">Taken.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can ask about the status of the computer or ask about the phone exchange.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1324"></child>
+        </children>
+    </item>
+    <item nodeId="node-1324">
+        <command xml:space="preserve">give them to margaret</command>
+        <result xml:space="preserve">That doesn't seem to be a topic of conversation at the moment.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can ask about the status of the computer or ask about the phone exchange.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1004">
+        <command xml:space="preserve">look behind desk</command>
+        <result xml:space="preserve">There are a number of shelves of office supplies behind the desk. There is also a heating vent on the floor here.
+
+Faraji finds their computer and pulls it out.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can ask about the phone exchange.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1005"></child>
+        </children>
+    </item>
+    <item nodeId="node-1005">
+        <command xml:space="preserve">take computer</command>
+        <result xml:space="preserve">Faraji's computer is a too unwieldy to carry around.
+
+Taken.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can ask about the phone exchange.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1006"></child>
+        </children>
+    </item>
+    <item nodeId="node-1006">
+        <command xml:space="preserve">x computer</command>
+        <result xml:space="preserve">Faraji's computer has been damaged beyond repair. But they do find a thumb drive and take it.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can remember finding the drive. They can ask about the phone exchange.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1007"></child>
+        </children>
+    </item>
+    <item nodeId="node-1007">
+        <command xml:space="preserve">take boxes</command>
+        <result xml:space="preserve">Faraji picks up a couple of boxes and flattens them.
+
+Margaret says, "Hey, what are you doing with those boxes, Agent Faraji? You don't have to worry about that -- I'll get them." She takes the flattened boxes from Faraji and hustles off.
+
+A phone is ringing somewhere else not too far away.
+
+Margaret goes west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1008"></child>
+        </children>
+    </item>
+    <item nodeId="node-1008">
+        <command xml:space="preserve">take boxes</command>
+        <result xml:space="preserve">Faraji picks up a couple of boxes and flattens them.
+
+A phone is ringing somewhere else not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1009"></child>
+        </children>
+    </item>
+    <item nodeId="node-1009">
+        <command xml:space="preserve">drop boxes</command>
+        <result xml:space="preserve">(the flattened boxes)
+Dropped.
+
+A phone is ringing somewhere else not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1010"></child>
+        </children>
+    </item>
+    <item nodeId="node-1010">
         <command xml:space="preserve">take them</command>
         <result xml:space="preserve">Faraji's carrying too many things already.
 
@@ -145,10 +1798,10 @@ A phone is ringing somewhere else not too far away.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1754"></child>
+        <children><child nodeId="node-1011"></child>
         </children>
     </item>
-    <item nodeId="node-1754">
+    <item nodeId="node-1011">
         <command xml:space="preserve">i</command>
         <result xml:space="preserve">Faraji is carrying:
   a thumb drive
@@ -159,7 +1812,64 @@ A phone is ringing somewhere else not too far away.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-2048">
+    <item nodeId="node-1410">
+        <command xml:space="preserve">gonear closet</command>
+        <result xml:space="preserve">(the utility closet)
+Agent Faraji is in the dark. 
+
+Some light would be nice.
+
+Faraji can ask about the phone exchange.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1411"></child>
+        </children>
+    </item>
+    <item nodeId="node-1411">
+        <command xml:space="preserve">lens</command>
+        <result xml:space="preserve">Agent Faraji is in the utility closet. 
+
+Faraji can ask about the phone exchange.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1412"></child>
+        </children>
+    </item>
+    <item nodeId="node-1412">
+        <command xml:space="preserve">knock door</command>
+        <result xml:space="preserve">After a few seconds, someone inserts a key in the lock and opens the door. It's Faraji's colleague Moira Zin. "How'd you get in there, Larch?"
+
+You exit the closet.
+
+Agent Faraji is in Moira's office. 
+
+Also here is Moira Zin.
+
+A phone is ringing somewhere else not too far away.
+
+Wearing the astral lenses in fluorescent light is blinding. Faraji quickly removes the glasses.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1413"></child>
+        </children>
+    </item>
+    <item nodeId="node-1413">
+        <command xml:space="preserve">x books</command>
+        <result xml:space="preserve">On Moira's bookshelves are Tribes of New York, Applied Speculation, Biking to the Ferry: a Memoir, No Myth After All: A New Perspective on Troy and Twenty Great PhD Theses of the Twentieth Century.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can ask to borrow a book, tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1012">
         <command xml:space="preserve">rules</command>
         <result xml:space="preserve">Rules tracing now switched on. Type "rules off" to switch it off again, or "rules all" to include even rules which do not apply.
 
@@ -167,11 +1877,11 @@ A phone is ringing somewhere else not too far away.
 [Rule "reset skip sounds rule" applies.]
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2085"></child>
-            <child nodeId="node-2049"></child>
+        <children><child nodeId="node-1014"></child>
+            <child nodeId="node-1013"></child>
         </children>
     </item>
-    <item nodeId="node-2049">
+    <item nodeId="node-1013">
         <command xml:space="preserve">x car</command>
         <result xml:space="preserve">[Rule "After reading a command" applies.]
 [Rule "place the room in scope while looking rule" applies.]
@@ -289,7 +1999,7 @@ An old bright red Hyundai Accent, it's been their personal means of transportati
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-2085">
+    <item nodeId="node-1014">
         <command xml:space="preserve">asd</command>
         <result xml:space="preserve">[Rule "After reading a command" applies.]
 I'm not sure what you're trying to say. I might just not recognize the words you're using.
@@ -298,10 +2008,10 @@ I'm not sure what you're trying to say. I might just not recognize the words you
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2086"></child>
+        <children><child nodeId="node-1015"></child>
         </children>
     </item>
-    <item nodeId="node-2086">
+    <item nodeId="node-1015">
         <command xml:space="preserve">l</command>
         <result xml:space="preserve">[Rule "After reading a command" applies.]
 [Rule "declare everything initially unmentioned rule" applies.]
@@ -534,17 +2244,17 @@ Their Hyundai is parked nearby.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1730">
+    <item nodeId="node-1016">
         <command xml:space="preserve">i</command>
         <result xml:space="preserve">Faraji is carrying:
   a green smartphone
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1731"></child>
+        <children><child nodeId="node-1017"></child>
         </children>
     </item>
-    <item nodeId="node-1731">
+    <item nodeId="node-1017">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">Just like in the store this once was, the door chimes as Faraji walks in.
 
@@ -562,19 +2272,19 @@ Faraji can ask about the phone exchange.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1732"></child>
+        <children><child nodeId="node-1018"></child>
         </children>
     </item>
-    <item nodeId="node-1732">
+    <item nodeId="node-1018">
         <command xml:space="preserve">take all</command>
         <result xml:space="preserve">There is nothing there.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1733"></child>
+        <children><child nodeId="node-1019"></child>
         </children>
     </item>
-    <item nodeId="node-1733">
+    <item nodeId="node-1019">
         <command xml:space="preserve">look behind desk</command>
         <result xml:space="preserve">There are a number of shelves of office supplies behind the desk. There is also a heating vent on the floor here.
 
@@ -586,10 +2296,10 @@ Faraji can ask about the phone exchange.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1734"></child>
+        <children><child nodeId="node-1020"></child>
         </children>
     </item>
-    <item nodeId="node-1734">
+    <item nodeId="node-1020">
         <command xml:space="preserve">take computer</command>
         <result xml:space="preserve">Taken.
 
@@ -599,10 +2309,10 @@ Faraji can ask about the phone exchange.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1735"></child>
+        <children><child nodeId="node-1021"></child>
         </children>
     </item>
-    <item nodeId="node-1735">
+    <item nodeId="node-1021">
         <command xml:space="preserve">i</command>
         <result xml:space="preserve">Faraji is carrying:
   their computer
@@ -613,10 +2323,10 @@ Faraji can ask about the phone exchange.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1736"></child>
+        <children><child nodeId="node-1022"></child>
         </children>
     </item>
-    <item nodeId="node-1736">
+    <item nodeId="node-1022">
         <command xml:space="preserve">x computer</command>
         <result xml:space="preserve">Faraji's computer has been damaged beyond repair. But they do find a thumb drive and take it.
 
@@ -626,10 +2336,10 @@ Faraji can remember finding the drive. They can ask about the phone exchange.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1737"></child>
+        <children><child nodeId="node-1023"></child>
         </children>
     </item>
-    <item nodeId="node-1737">
+    <item nodeId="node-1023">
         <command xml:space="preserve">i</command>
         <result xml:space="preserve">Faraji is carrying:
   a thumb drive
@@ -641,10 +2351,10 @@ Faraji can ask about the phone exchange.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1738"></child>
+        <children><child nodeId="node-1024"></child>
         </children>
     </item>
-    <item nodeId="node-1738">
+    <item nodeId="node-1024">
         <command xml:space="preserve">take box</command>
         <result xml:space="preserve">Faraji picks up a couple of boxes and flattens them.
 
@@ -656,10 +2366,10 @@ Margaret goes west.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1739"></child>
+        <children><child nodeId="node-1025"></child>
         </children>
     </item>
-    <item nodeId="node-1739">
+    <item nodeId="node-1025">
         <command xml:space="preserve">take box</command>
         <result xml:space="preserve">Faraji picks up a couple of boxes and flattens them.
 
@@ -667,10 +2377,10 @@ A phone is ringing somewhere else not too far away.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1740"></child>
+        <children><child nodeId="node-1026"></child>
         </children>
     </item>
-    <item nodeId="node-1740">
+    <item nodeId="node-1026">
         <command xml:space="preserve">i</command>
         <result xml:space="preserve">Faraji is carrying:
   some flattened boxes
@@ -681,10 +2391,10 @@ A phone is ringing somewhere else not too far away.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1741"></child>
+        <children><child nodeId="node-1027"></child>
         </children>
     </item>
-    <item nodeId="node-1741">
+    <item nodeId="node-1027">
         <command xml:space="preserve">drop box</command>
         <result xml:space="preserve">Faraji doesn't have that.
 
@@ -692,10 +2402,10 @@ A phone is ringing somewhere else not too far away.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1742"></child>
+        <children><child nodeId="node-1028"></child>
         </children>
     </item>
-    <item nodeId="node-1742">
+    <item nodeId="node-1028">
         <command xml:space="preserve">take it</command>
         <result xml:space="preserve">Faraji already has that.
 
@@ -703,10 +2413,10 @@ A phone is ringing somewhere else not too far away.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1743"></child>
+        <children><child nodeId="node-1029"></child>
         </children>
     </item>
-    <item nodeId="node-1743">
+    <item nodeId="node-1029">
         <command xml:space="preserve">drop boxes</command>
         <result xml:space="preserve">(the flattened boxes)
 Dropped.
@@ -715,10 +2425,10 @@ A phone is ringing somewhere else not too far away.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1744"></child>
+        <children><child nodeId="node-1030"></child>
         </children>
     </item>
-    <item nodeId="node-1744">
+    <item nodeId="node-1030">
         <command xml:space="preserve">take boxes</command>
         <result xml:space="preserve">(the flattened boxes)
 Taken.
@@ -727,10 +2437,10 @@ A phone is ringing somewhere else not too far away.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1745"></child>
+        <children><child nodeId="node-1031"></child>
         </children>
     </item>
-    <item nodeId="node-1745">
+    <item nodeId="node-1031">
         <command xml:space="preserve">i</command>
         <result xml:space="preserve">Faraji is carrying:
   some flattened boxes
@@ -742,25 +2452,83 @@ A phone is ringing somewhere else not too far away.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1951">
+    <item nodeId="node-1032">
         <command xml:space="preserve">hyundai</command>
         <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1952"></child>
+        <children><child nodeId="node-1033"></child>
         </children>
     </item>
-    <item nodeId="node-1952">
+    <item nodeId="node-1033">
         <command xml:space="preserve">verbs</command>
         <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
+    <item nodeId="node-1414">
+        <command xml:space="preserve">gonear moira's office</command>
+        <result xml:space="preserve">Agent Faraji is in Moira's office. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1415"></child>
+        </children>
+    </item>
+    <item nodeId="node-1415">
+        <command xml:space="preserve">look</command>
+        <result xml:space="preserve">Agent Faraji is in Moira's office. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1416"></child>
+        </children>
+    </item>
+    <item nodeId="node-1416">
+        <command xml:space="preserve">x shelves</command>
+        <result xml:space="preserve">On Moira's bookshelves are No Myth After All: A New Perspective on Troy, Twenty Great PhD Theses of the Twentieth Century, Anatomy of a Hoax: Writings on Modern Medicine's Greatest Myths, Tribes of New York, Applied Speculation, Biking to the Ferry: a Memoir, Nonstandard Investigative Techniques, Calculus with Infinitesimals and The Three Stigmata of Palmer Eldritch.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1428"></child>
+        </children>
+    </item>
+    <item nodeId="node-1428">
+        <command xml:space="preserve">take no myth</command>
+        <result xml:space="preserve">That belongs to Moira Zin.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1429"></child>
+        </children>
+    </item>
+    <item nodeId="node-1429">
+        <command xml:space="preserve">gonear moira</command>
+        <result xml:space="preserve">Agent Faraji is in the Room of Stuff. 
+
+Also here are Moira Zin, Chief Klimp, Faraji's former self, a thumb drive, a blue screwdriver, Ezra Gaunt, Petula Goldberg, a the good old days, Senator Savra, finding the drive, some flattened boxes and some flattened boxes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1430"></child>
+        </children>
+    </item>
+    <item nodeId="node-1430">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Faraji stands around and waits.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1431"></child>
+        </children>
+    </item>
     <item nodeId="node-1431">
-        <command xml:space="preserve">gonear field office</command>
-        <result xml:space="preserve">Which do you mean, field office area, field office reception, the field office hallway or the field office chief's office?
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Agent Faraji is in the Room of Stuff. 
+
+Also here are Moira Zin, Chief Klimp, Faraji's former self, a thumb drive, a blue screwdriver, Ezra Gaunt, Petula Goldberg, a the good old days, Senator Savra, finding the drive, some flattened boxes and some flattened boxes.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -768,10 +2536,8 @@ A phone is ringing somewhere else not too far away.
         </children>
     </item>
     <item nodeId="node-1432">
-        <command xml:space="preserve">gonear field office reception</command>
-        <result xml:space="preserve">Agent Faraji is at field office reception. Hooray you made it!
-
-Also here is Maggie.
+        <command xml:space="preserve">x moira</command>
+        <result xml:space="preserve">Agent Moira Zin is the very model of a competent Bureau agent. Hard-working, serious, no-nonsense but open-minded, she's the sober counter-balance to Klimp's sometimes childish credulity. Moira would clearly be a rising star if it weren't for the Bureau's pending dissolution.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -779,25 +2545,52 @@ Also here is Maggie.
         </children>
     </item>
     <item nodeId="node-1433">
+        <command xml:space="preserve">borrow</command>
+        <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1034">
+        <command xml:space="preserve">gonear field office</command>
+        <result xml:space="preserve">Which do you mean, field office area, field office reception, the field office hallway or the field office chief's office?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1035"></child>
+        </children>
+    </item>
+    <item nodeId="node-1035">
+        <command xml:space="preserve">gonear field office reception</command>
+        <result xml:space="preserve">Agent Faraji is at field office reception. Hooray you made it!
+
+Also here is Maggie.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1036"></child>
+        </children>
+    </item>
+    <item nodeId="node-1036">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">Agent Faraji is in the field office hallway. Hallway
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1434"></child>
+        <children><child nodeId="node-1037"></child>
         </children>
     </item>
-    <item nodeId="node-1434">
+    <item nodeId="node-1037">
         <command xml:space="preserve">x</command>
         <result xml:space="preserve">(the green smartphone)
 It's a pretty nice phone, only a couple of years old, but Faraji doesn't have time to play with it. They need to get to the office.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1435"></child>
+        <children><child nodeId="node-1038"></child>
         </children>
     </item>
-    <item nodeId="node-1435">
+    <item nodeId="node-1038">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">Agent Faraji is in Christy's office. 
 
@@ -805,19 +2598,19 @@ Also here is Christy.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1436"></child>
+        <children><child nodeId="node-1039"></child>
         </children>
     </item>
-    <item nodeId="node-1436">
+    <item nodeId="node-1039">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">Agent Faraji is in the field office hallway. Hallway
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1437"></child>
+        <children><child nodeId="node-1040"></child>
         </children>
     </item>
-    <item nodeId="node-1437">
+    <item nodeId="node-1040">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">Agent Faraji is in Minerva's office. 
 
@@ -825,28 +2618,28 @@ Also here is Minerva.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1438"></child>
+        <children><child nodeId="node-1041"></child>
         </children>
     </item>
-    <item nodeId="node-1438">
+    <item nodeId="node-1041">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">Agent Faraji is in the field office hallway. Hallway
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1439"></child>
+        <children><child nodeId="node-1042"></child>
         </children>
     </item>
-    <item nodeId="node-1439">
+    <item nodeId="node-1042">
         <command xml:space="preserve">l</command>
         <result xml:space="preserve">Agent Faraji is in the field office hallway. Hallway
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1440"></child>
+        <children><child nodeId="node-1043"></child>
         </children>
     </item>
-    <item nodeId="node-1440">
+    <item nodeId="node-1043">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">Agent Faraji is in the field office chief's office. Doris's office
 
@@ -858,10 +2651,10 @@ Faraji can ask who he is, ask where we are, ask how to get home or ask what thum
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1441"></child>
+        <children><child nodeId="node-1044"></child>
         </children>
     </item>
-    <item nodeId="node-1441">
+    <item nodeId="node-1044">
         <command xml:space="preserve">what thumb drive</command>
         <result xml:space="preserve">Faraji looks quizzical. "What thumb drive?"
 
@@ -871,10 +2664,10 @@ Faraji can ask who he is, ask where we are or ask how to get home.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1442"></child>
+        <children><child nodeId="node-1045"></child>
         </children>
     </item>
-    <item nodeId="node-1442">
+    <item nodeId="node-1045">
         <command xml:space="preserve">how to get home</command>
         <result xml:space="preserve">Faraji asks, "Just how can I get home from here?"
 
@@ -884,19 +2677,19 @@ Faraji can ask who he is or ask where we are.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1443"></child>
+        <children><child nodeId="node-1046"></child>
         </children>
     </item>
-    <item nodeId="node-1443">
+    <item nodeId="node-1046">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">Agent Faraji is in the field office hallway. Hallway
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1444"></child>
+        <children><child nodeId="node-1047"></child>
         </children>
     </item>
-    <item nodeId="node-1444">
+    <item nodeId="node-1047">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">Agent Faraji is in Christy's office. 
 
@@ -904,19 +2697,19 @@ Also here is Christy.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1445"></child>
+        <children><child nodeId="node-1048"></child>
         </children>
     </item>
-    <item nodeId="node-1445">
+    <item nodeId="node-1048">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">Agent Faraji is in the field office hallway. Hallway
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1446"></child>
+        <children><child nodeId="node-1049"></child>
         </children>
     </item>
-    <item nodeId="node-1446">
+    <item nodeId="node-1049">
         <command xml:space="preserve">f</command>
         <result xml:space="preserve">Agent Faraji is in Portal Room 1. 
 
@@ -924,37 +2717,37 @@ Also here is a portal to the past.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1447"></child>
+        <children><child nodeId="node-1050"></child>
         </children>
     </item>
-    <item nodeId="node-1447">
+    <item nodeId="node-1050">
         <command xml:space="preserve">b</command>
         <result xml:space="preserve">Agent Faraji is in the field office hallway. Hallway
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1448"></child>
+        <children><child nodeId="node-1051"></child>
         </children>
     </item>
-    <item nodeId="node-1448">
+    <item nodeId="node-1051">
         <command xml:space="preserve">b</command>
         <result xml:space="preserve">Agent Faraji is in Portal Room 2. 
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1449"></child>
+        <children><child nodeId="node-1052"></child>
         </children>
     </item>
-    <item nodeId="node-1449">
+    <item nodeId="node-1052">
         <command xml:space="preserve">enter portal</command>
         <result xml:space="preserve">There's nothing like that nearby.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1450"></child>
+        <children><child nodeId="node-1053"></child>
         </children>
     </item>
-    <item nodeId="node-1450">
+    <item nodeId="node-1053">
         <command xml:space="preserve">gonear closet</command>
         <result xml:space="preserve">(the utility closet)
 Agent Faraji is in the dark. 
@@ -963,47 +2756,47 @@ Some light would be nice.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1451"></child>
+        <children><child nodeId="node-1054"></child>
         </children>
     </item>
-    <item nodeId="node-1451">
+    <item nodeId="node-1054">
         <command xml:space="preserve">knock</command>
         <result xml:space="preserve">(the green smartphone)
 Faraji gives the green smartphone a quick knock, but nothing happens.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1452"></child>
+        <children><child nodeId="node-1055"></child>
         </children>
     </item>
-    <item nodeId="node-1452">
+    <item nodeId="node-1055">
         <command xml:space="preserve">knock on door</command>
         <result xml:space="preserve">There's nothing like that nearby.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1453"></child>
+        <children><child nodeId="node-1056"></child>
         </children>
     </item>
-    <item nodeId="node-1453">
+    <item nodeId="node-1056">
         <command xml:space="preserve">lens</command>
         <result xml:space="preserve">Agent Faraji is in the utility closet. 
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1454"></child>
+        <children><child nodeId="node-1057"></child>
         </children>
     </item>
-    <item nodeId="node-1454">
+    <item nodeId="node-1057">
         <command xml:space="preserve">open door</command>
         <result xml:space="preserve">It seems to be locked.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1455"></child>
+        <children><child nodeId="node-1058"></child>
         </children>
     </item>
-    <item nodeId="node-1455">
+    <item nodeId="node-1058">
         <command xml:space="preserve">knock on door</command>
         <result xml:space="preserve">After a few seconds, someone inserts a key in the lock and opens the door. It's Faraji's colleague Moira Zin. "How'd you get in there, Larch?"
 
@@ -1021,10 +2814,10 @@ Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1456"></child>
+        <children><child nodeId="node-1059"></child>
         </children>
     </item>
-    <item nodeId="node-1456">
+    <item nodeId="node-1059">
         <command xml:space="preserve">tell zin about the portal</command>
         <result xml:space="preserve">Faraji scratches their head. "Um, I was transported there through an hyperdimensional portal. How's your morning been?"
 
@@ -1034,11 +2827,11 @@ A phone is ringing somewhere else not too far away.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1457"></child>
-            <child nodeId="node-1784"></child>
+        <children><child nodeId="node-1067"></child>
+            <child nodeId="node-1060"></child>
         </children>
     </item>
-    <item nodeId="node-1784">
+    <item nodeId="node-1060">
         <command xml:space="preserve">x desk</command>
         <result xml:space="preserve">It's a pretty ordinary mass-produced desk, but Moira's re-stain job on it has truly transformed it. Really, is there anything she can't do?
 
@@ -1046,10 +2839,10 @@ A phone is ringing somewhere else not too far away.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1785"></child>
+        <children><child nodeId="node-1061"></child>
         </children>
     </item>
-    <item nodeId="node-1785">
+    <item nodeId="node-1061">
         <command xml:space="preserve">x shelves</command>
         <result xml:space="preserve">FILL THIS IN
 
@@ -1059,19 +2852,19 @@ A phone is ringing somewhere else not too far away.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1786"></child>
+        <children><child nodeId="node-1062"></child>
         </children>
     </item>
-    <item nodeId="node-1786">
+    <item nodeId="node-1062">
         <command xml:space="preserve">x shelf</command>
         <result xml:space="preserve">There's nothing like that nearby.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1787"></child>
+        <children><child nodeId="node-1063"></child>
         </children>
     </item>
-    <item nodeId="node-1787">
+    <item nodeId="node-1063">
         <command xml:space="preserve">x books</command>
         <result xml:space="preserve">FILL THIS IN
 
@@ -1081,10 +2874,10 @@ A phone is ringing somewhere else not too far away.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1788"></child>
+        <children><child nodeId="node-1064"></child>
         </children>
     </item>
-    <item nodeId="node-1788">
+    <item nodeId="node-1064">
         <command xml:space="preserve">open desk</command>
         <result xml:space="preserve">It isn't something Faraji can open.
 
@@ -1092,10 +2885,10 @@ A phone is ringing somewhere else not too far away.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1789"></child>
+        <children><child nodeId="node-1065"></child>
         </children>
     </item>
-    <item nodeId="node-1789">
+    <item nodeId="node-1065">
         <command xml:space="preserve">open drawer</command>
         <result xml:space="preserve">That's already open.
 
@@ -1103,10 +2896,10 @@ A phone is ringing somewhere else not too far away.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1790"></child>
+        <children><child nodeId="node-1066"></child>
         </children>
     </item>
-    <item nodeId="node-1790">
+    <item nodeId="node-1066">
         <command xml:space="preserve">x drawer</command>
         <result xml:space="preserve">Moira's drawer is empty.
 
@@ -1115,7 +2908,7 @@ A phone is ringing somewhere else not too far away.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1457">
+    <item nodeId="node-1067">
         <command xml:space="preserve">x books</command>
         <result xml:space="preserve">On Moira's bookshelves are Tribes of New York, Applied Speculation, Biking to the Ferry: a Memoir, No Myth After All: A New Perspective on Troy and Twenty Great PhD Theses of the Twentieth Century.
 
@@ -1123,13 +2916,13 @@ A phone is ringing somewhere else not too far away.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1980"></child>
-            <child nodeId="node-1818"></child>
-            <child nodeId="node-1537"></child>
-            <child nodeId="node-1920"></child>
+        <children><child nodeId="node-1171"></child>
+            <child nodeId="node-1152"></child>
+            <child nodeId="node-1144"></child>
+            <child nodeId="node-1068"></child>
         </children>
     </item>
-    <item nodeId="node-1920">
+    <item nodeId="node-1068">
         <command xml:space="preserve">x tribes</command>
         <result xml:space="preserve">There seems to be nothing special about it.
 
@@ -1139,23 +2932,23 @@ Faraji can ask to borrow a book.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2339"></child>
-            <child nodeId="node-2045"></child>
-            <child nodeId="node-1949"></child>
-            <child nodeId="node-2012"></child>
-            <child nodeId="node-2078"></child>
+        <children><child nodeId="node-1141"></child>
+            <child nodeId="node-1138"></child>
+            <child nodeId="node-1132"></child>
+            <child nodeId="node-1075"></child>
+            <child nodeId="node-1069"></child>
         </children>
     </item>
-    <item nodeId="node-2078">
+    <item nodeId="node-1069">
         <command xml:space="preserve">ask to borrow book</command>
         <result xml:space="preserve">Which do you mean, to borrow a book or to borrow Tribes of New York?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2079"></child>
+        <children><child nodeId="node-1070"></child>
         </children>
     </item>
-    <item nodeId="node-2079">
+    <item nodeId="node-1070">
         <command xml:space="preserve">ask to borrow a book</command>
         <result xml:space="preserve">
 
@@ -1167,19 +2960,19 @@ Faraji can ask to borrow Tribes of New York.
 
 Moira Zin asks, "What do you want to borrow?" &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2080"></child>
+        <children><child nodeId="node-1071"></child>
         </children>
     </item>
-    <item nodeId="node-2080">
+    <item nodeId="node-1071">
         <command xml:space="preserve">asdf</command>
         <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
 
 Moira Zin asks, "What do you want to borrow?" &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2081"></child>
+        <children><child nodeId="node-1072"></child>
         </children>
     </item>
-    <item nodeId="node-2081">
+    <item nodeId="node-1072">
         <command xml:space="preserve">l</command>
         <result xml:space="preserve">Agent Faraji is in Moira's office. 
 
@@ -1191,10 +2984,10 @@ Faraji can ask to borrow Tribes of New York.
 
 Moira Zin asks, "What do you want to borrow?" &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2082"></child>
+        <children><child nodeId="node-1073"></child>
         </children>
     </item>
-    <item nodeId="node-2082">
+    <item nodeId="node-1073">
         <command xml:space="preserve">rules</command>
         <result xml:space="preserve">Rules tracing now switched on. Type "rules off" to switch it off again, or "rules all" to include even rules which do not apply.
 
@@ -1202,10 +2995,10 @@ Moira Zin asks, "What do you want to borrow?" &gt;</result>
 [Rule "reset skip sounds rule" applies.]
 Moira Zin asks, "What do you want to borrow?" &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2083"></child>
+        <children><child nodeId="node-1074"></child>
         </children>
     </item>
-    <item nodeId="node-2083">
+    <item nodeId="node-1074">
         <command xml:space="preserve">l</command>
         <result xml:space="preserve">[Rule "After reading a command" applies.]
 [Rule "declare everything initially unmentioned rule" applies.]
@@ -1476,7 +3269,7 @@ ask to borrow Tribes of New York[Rule "standard delimiting rule" applies.]
 Moira Zin asks, "What do you want to borrow?" &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-2012">
+    <item nodeId="node-1075">
         <command xml:space="preserve">ask to borrow a book</command>
         <result xml:space="preserve">
 
@@ -1488,16 +3281,16 @@ Faraji can ask to borrow a book.
 
 Moira Zin asks, "What do you want to borrow?" &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2211"></child>
-            <child nodeId="node-2181"></child>
-            <child nodeId="node-2013"></child>
-            <child nodeId="node-2148"></child>
-            <child nodeId="node-2305"></child>
-            <child nodeId="node-2432"></child>
-            <child nodeId="node-2524"></child>
+        <children><child nodeId="node-1129"></child>
+            <child nodeId="node-1102"></child>
+            <child nodeId="node-1095"></child>
+            <child nodeId="node-1091"></child>
+            <child nodeId="node-1085"></child>
+            <child nodeId="node-1084"></child>
+            <child nodeId="node-1076"></child>
         </children>
     </item>
-    <item nodeId="node-2524">
+    <item nodeId="node-1076">
         <command xml:space="preserve">zin</command>
         <result xml:space="preserve">Faraji can't borrow that.
 
@@ -1507,20 +3300,20 @@ Faraji can ask to borrow a book.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2525"></child>
+        <children><child nodeId="node-1077"></child>
         </children>
     </item>
-    <item nodeId="node-2525">
+    <item nodeId="node-1077">
         <command xml:space="preserve">undo</command>
         <result xml:space="preserve">Moira's office
 [Previous turn undone.]
 
 Moira Zin asks, "What do you want to borrow?" &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2526"></child>
+        <children><child nodeId="node-1078"></child>
         </children>
     </item>
-    <item nodeId="node-2526">
+    <item nodeId="node-1078">
         <command xml:space="preserve">l</command>
         <result xml:space="preserve">Agent Faraji is in Moira's office. 
 
@@ -1532,10 +3325,10 @@ Faraji can ask to borrow a book.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2527"></child>
+        <children><child nodeId="node-1079"></child>
         </children>
     </item>
-    <item nodeId="node-2527">
+    <item nodeId="node-1079">
         <command xml:space="preserve">ask to borrow a book</command>
         <result xml:space="preserve">
 
@@ -1547,10 +3340,10 @@ Faraji can ask to borrow a book.
 
 Moira Zin asks, "What do you want to borrow?" &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2528"></child>
+        <children><child nodeId="node-1080"></child>
         </children>
     </item>
-    <item nodeId="node-2528">
+    <item nodeId="node-1080">
         <command xml:space="preserve">book</command>
         <result xml:space="preserve">
 
@@ -1562,10 +3355,10 @@ Faraji can ask to borrow a book.
 
 Moira Zin asks, "What do you want to borrow?" &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2529"></child>
+        <children><child nodeId="node-1081"></child>
         </children>
     </item>
-    <item nodeId="node-2529">
+    <item nodeId="node-1081">
         <command xml:space="preserve">i</command>
         <result xml:space="preserve">Faraji is carrying:
   a pair of astral lenses
@@ -1577,10 +3370,10 @@ Faraji can ask to borrow a book.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2530"></child>
+        <children><child nodeId="node-1082"></child>
         </children>
     </item>
-    <item nodeId="node-2530">
+    <item nodeId="node-1082">
         <command xml:space="preserve">ask to borrow a book</command>
         <result xml:space="preserve">
 
@@ -1592,10 +3385,10 @@ Faraji can ask to borrow a book.
 
 Moira Zin asks, "What do you want to borrow?" &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2531"></child>
+        <children><child nodeId="node-1083"></child>
         </children>
     </item>
-    <item nodeId="node-2531">
+    <item nodeId="node-1083">
         <command xml:space="preserve">twenty</command>
         <result xml:space="preserve">Faraji takes Twenty Great PhD Theses of the Twentieth Century
 A phone is ringing somewhere else not too far away.
@@ -1605,7 +3398,7 @@ Faraji can ask to borrow a book.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-2432">
+    <item nodeId="node-1084">
         <command xml:space="preserve">tribes</command>
         <result xml:space="preserve">Faraji asks, "I've always wanted to read Tribes of New York. Mind if I borrow it?"
 
@@ -1618,7 +3411,7 @@ A phone is ringing somewhere else not too far away.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-2305">
+    <item nodeId="node-1085">
         <command xml:space="preserve">biking</command>
         <result xml:space="preserve">Faraji takes Biking to the Ferry: a Memoir.
 
@@ -1626,62 +3419,62 @@ A phone is ringing somewhere else not too far away.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2306"></child>
+        <children><child nodeId="node-1086"></child>
         </children>
     </item>
-    <item nodeId="node-2306">
+    <item nodeId="node-1086">
         <command xml:space="preserve">undo</command>
         <result xml:space="preserve">Moira's office
 [Previous turn undone.]
 
 Moira Zin asks, "What do you want to borrow?" &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2307"></child>
+        <children><child nodeId="node-1087"></child>
         </children>
     </item>
-    <item nodeId="node-2307">
+    <item nodeId="node-1087">
         <command xml:space="preserve">actions</command>
         <result xml:space="preserve">Actions listing on.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2308"></child>
+        <children><child nodeId="node-1088"></child>
         </children>
     </item>
-    <item nodeId="node-2308">
+    <item nodeId="node-1088">
         <command xml:space="preserve">biking</command>
         <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2309"></child>
+        <children><child nodeId="node-1089"></child>
         </children>
     </item>
-    <item nodeId="node-2309">
+    <item nodeId="node-1089">
         <command xml:space="preserve">restart</command>
         <result xml:space="preserve">[restarting the game]
 Are you sure you want to restart? </result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2310"></child>
+        <children><child nodeId="node-1090"></child>
         </children>
     </item>
-    <item nodeId="node-2310">
+    <item nodeId="node-1090">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">[restarting the game - succeeded]
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-2148">
+    <item nodeId="node-1091">
         <command xml:space="preserve">asdfa</command>
         <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
 
 Moira Zin asks, "What do you want to borrow?" &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2149"></child>
+        <children><child nodeId="node-1092"></child>
         </children>
     </item>
-    <item nodeId="node-2149">
+    <item nodeId="node-1092">
         <command xml:space="preserve">tribes</command>
         <result xml:space="preserve">Faraji asks, "I've always wanted to read Tribes of New York. Mind if I borrow it?"
 
@@ -1693,37 +3486,37 @@ A phone is ringing somewhere else not too far away.
 
 Moira Zin asks, "What do you want to borrow?" &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2150"></child>
+        <children><child nodeId="node-1093"></child>
         </children>
     </item>
-    <item nodeId="node-2150">
+    <item nodeId="node-1093">
         <command xml:space="preserve">perspective</command>
         <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
 
 Moira Zin asks, "What do you want to borrow?" &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2151"></child>
+        <children><child nodeId="node-1094"></child>
         </children>
     </item>
-    <item nodeId="node-2151">
+    <item nodeId="node-1094">
         <command xml:space="preserve">biking to the ferry</command>
         <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
 
 Moira Zin asks, "What do you want to borrow?" &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-2013">
+    <item nodeId="node-1095">
         <command xml:space="preserve">asdf</command>
         <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
 
 Moira Zin asks, "What do you want to borrow?" &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2014"></child>
-            <child nodeId="node-2402"></child>
-            <child nodeId="node-2117"></child>
+        <children><child nodeId="node-1099"></child>
+            <child nodeId="node-1098"></child>
+            <child nodeId="node-1096"></child>
         </children>
     </item>
-    <item nodeId="node-2117">
+    <item nodeId="node-1096">
         <command xml:space="preserve">tribes</command>
         <result xml:space="preserve">Faraji asks, "I've always wanted to read Tribes of New York. Mind if I borrow it?"
 
@@ -1735,10 +3528,10 @@ A phone is ringing somewhere else not too far away.
 
 Moira Zin asks, "What do you want to borrow?" &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2118"></child>
+        <children><child nodeId="node-1097"></child>
         </children>
     </item>
-    <item nodeId="node-2118">
+    <item nodeId="node-1097">
         <command xml:space="preserve">l</command>
         <result xml:space="preserve">Agent Faraji is in Moira's office. 
 
@@ -1749,7 +3542,7 @@ A phone is ringing somewhere else not too far away.
 Moira Zin asks, "What do you want to borrow?" &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-2402">
+    <item nodeId="node-1098">
         <command xml:space="preserve">biking</command>
         <result xml:space="preserve">boowoot
 A phone is ringing somewhere else not too far away.
@@ -1759,7 +3552,7 @@ Faraji can ask to borrow Tribes of New York.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-2014">
+    <item nodeId="node-1099">
         <command xml:space="preserve">Tribes</command>
         <result xml:space="preserve">Faraji asks, "I've always wanted to read Tribes of New York. Mind if I borrow it?"
 
@@ -1771,19 +3564,19 @@ A phone is ringing somewhere else not too far away.
 
 What do you want to borrow</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2015"></child>
+        <children><child nodeId="node-1100"></child>
         </children>
     </item>
-    <item nodeId="node-2015">
+    <item nodeId="node-1100">
         <command xml:space="preserve">tribe</command>
         <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
 
 What do you want to borrow</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2016"></child>
+        <children><child nodeId="node-1101"></child>
         </children>
     </item>
-    <item nodeId="node-2016">
+    <item nodeId="node-1101">
         <command xml:space="preserve">perspective</command>
         <result xml:space="preserve">supplied: No Myth After All: A New Perspective on Troy.
 
@@ -1792,7 +3585,7 @@ A phone is ringing somewhere else not too far away.
 What do you want to borrow</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-2181">
+    <item nodeId="node-1102">
         <command xml:space="preserve">applied speculation</command>
         <result xml:space="preserve">Faraji takes Applied Speculation.
 
@@ -1800,22 +3593,22 @@ A phone is ringing somewhere else not too far away.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2592"></child>
-            <child nodeId="node-2662"></child>
-            <child nodeId="node-2274"></child>
+        <children><child nodeId="node-1123"></child>
+            <child nodeId="node-1105"></child>
+            <child nodeId="node-1103"></child>
         </children>
     </item>
-    <item nodeId="node-2274">
+    <item nodeId="node-1103">
         <command xml:space="preserve">undo</command>
         <result xml:space="preserve">Moira's office
 [Previous turn undone.]
 
 Moira Zin asks, "What do you want to borrow?" &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2275"></child>
+        <children><child nodeId="node-1104"></child>
         </children>
     </item>
-    <item nodeId="node-2275">
+    <item nodeId="node-1104">
         <command xml:space="preserve">biking to the ferry</command>
         <result xml:space="preserve">A phone is ringing somewhere else not too far away.
 
@@ -1824,7 +3617,7 @@ Faraji can ask to borrow Tribes of New York.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-2662">
+    <item nodeId="node-1105">
         <command xml:space="preserve">borrow</command>
         <result xml:space="preserve">Moira shakes her head. "Sorry, I'll only lend one book at a time."
 
@@ -1832,21 +3625,21 @@ A phone is ringing somewhere else not too far away.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2694"></child>
-            <child nodeId="node-2727"></child>
+        <children><child nodeId="node-1121"></child>
+            <child nodeId="node-1106"></child>
         </children>
     </item>
-    <item nodeId="node-2727">
+    <item nodeId="node-1106">
         <command xml:space="preserve">give it to moira</command>
         <result xml:space="preserve">Faraji can't see 'it' (nothing) at the moment.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2762"></child>
-            <child nodeId="node-2728"></child>
+        <children><child nodeId="node-1116"></child>
+            <child nodeId="node-1107"></child>
         </children>
     </item>
-    <item nodeId="node-2728">
+    <item nodeId="node-1107">
         <command xml:space="preserve">give applied to moira</command>
         <result xml:space="preserve">Moira smiles. "Thanks for getting it back to me." She puts the book back on the shelf.
 
@@ -1856,11 +3649,11 @@ Faraji can ask to borrow a book.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2800"></child>
-            <child nodeId="node-2729"></child>
+        <children><child nodeId="node-1109"></child>
+            <child nodeId="node-1108"></child>
         </children>
     </item>
-    <item nodeId="node-2729">
+    <item nodeId="node-1108">
         <command xml:space="preserve">i</command>
         <result xml:space="preserve">Faraji is carrying:
   a pair of astral lenses
@@ -1873,7 +3666,7 @@ Faraji can ask to borrow a book.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-2800">
+    <item nodeId="node-1109">
         <command xml:space="preserve">borrow</command>
         <result xml:space="preserve">
 
@@ -1885,19 +3678,19 @@ Faraji can ask to borrow a book.
 
 Moira Zin asks, "What do you want to borrow?" &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2801"></child>
+        <children><child nodeId="node-1110"></child>
         </children>
     </item>
-    <item nodeId="node-2801">
+    <item nodeId="node-1110">
         <command xml:space="preserve">bikers</command>
         <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
 
 Moira Zin asks, "What do you want to borrow?" &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2802"></child>
+        <children><child nodeId="node-1111"></child>
         </children>
     </item>
-    <item nodeId="node-2802">
+    <item nodeId="node-1111">
         <command xml:space="preserve">l</command>
         <result xml:space="preserve">Agent Faraji is in Moira's office. 
 
@@ -1909,10 +3702,10 @@ Faraji can ask to borrow a book.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2803"></child>
+        <children><child nodeId="node-1112"></child>
         </children>
     </item>
-    <item nodeId="node-2803">
+    <item nodeId="node-1112">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">(first opening Moira's door)
 Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
@@ -1921,10 +3714,10 @@ A phone is ringing to the south.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2804"></child>
+        <children><child nodeId="node-1113"></child>
         </children>
     </item>
-    <item nodeId="node-2804">
+    <item nodeId="node-1113">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
 
@@ -1940,10 +3733,10 @@ Faraji can ask about the phone exchange.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2805"></child>
+        <children><child nodeId="node-1114"></child>
         </children>
     </item>
-    <item nodeId="node-2805">
+    <item nodeId="node-1114">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">Faraji extricates themself from talking with Margaret.
 
@@ -1953,10 +3746,10 @@ A phone is ringing to the south.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2806"></child>
+        <children><child nodeId="node-1115"></child>
         </children>
     </item>
-    <item nodeId="node-2806">
+    <item nodeId="node-1115">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">Agent Faraji is in Moira's office. 
 
@@ -1969,16 +3762,16 @@ Faraji can ask to borrow a book.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-2762">
+    <item nodeId="node-1116">
         <command xml:space="preserve">actions</command>
         <result xml:space="preserve">Actions listing on.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2763"></child>
+        <children><child nodeId="node-1117"></child>
         </children>
     </item>
-    <item nodeId="node-2763">
+    <item nodeId="node-1117">
         <command xml:space="preserve">give applied to moira</command>
         <result xml:space="preserve">[giving Applied Speculation to Moira Zin]
 That doesn't seem to be a topic of conversation at the moment.
@@ -1990,20 +3783,20 @@ Faraji can ask to borrow a book.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2764"></child>
+        <children><child nodeId="node-1118"></child>
         </children>
     </item>
-    <item nodeId="node-2764">
+    <item nodeId="node-1118">
         <command xml:space="preserve">undo</command>
         <result xml:space="preserve">Moira's office
 [Previous turn undone.]
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2765"></child>
+        <children><child nodeId="node-1119"></child>
         </children>
     </item>
-    <item nodeId="node-2765">
+    <item nodeId="node-1119">
         <command xml:space="preserve">rules</command>
         <result xml:space="preserve">Rules tracing now switched on. Type "rules off" to switch it off again, or "rules all" to include even rules which do not apply.
 
@@ -2011,10 +3804,10 @@ Faraji can ask to borrow a book.
 [Rule "reset skip sounds rule" applies.]
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2766"></child>
+        <children><child nodeId="node-1120"></child>
         </children>
     </item>
-    <item nodeId="node-2766">
+    <item nodeId="node-1120">
         <command xml:space="preserve">give applied to moira</command>
         <result xml:space="preserve">[Rule "After reading a command" applies.]
 [Rule "declare everything initially unmentioned rule" applies.]
@@ -2173,16 +3966,16 @@ ask to borrow a book[Rule "standard delimiting rule" applies.]
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-2694">
+    <item nodeId="node-1121">
         <command xml:space="preserve">give book to moira</command>
         <result xml:space="preserve">There's nothing like that nearby.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2695"></child>
+        <children><child nodeId="node-1122"></child>
         </children>
     </item>
-    <item nodeId="node-2695">
+    <item nodeId="node-1122">
         <command xml:space="preserve">give applied speculation to moira</command>
         <result xml:space="preserve">A phone is ringing somewhere else not too far away.
 
@@ -2191,7 +3984,7 @@ Faraji can ask to borrow a book.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-2592">
+    <item nodeId="node-1123">
         <command xml:space="preserve">ask to borrow</command>
         <result xml:space="preserve">
 
@@ -2201,10 +3994,10 @@ A phone is ringing somewhere else not too far away.
 
 Moira Zin asks, "What do you want to borrow?" &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2593"></child>
+        <children><child nodeId="node-1124"></child>
         </children>
     </item>
-    <item nodeId="node-2593">
+    <item nodeId="node-1124">
         <command xml:space="preserve">l</command>
         <result xml:space="preserve">Agent Faraji is in Moira's office. 
 
@@ -2214,10 +4007,10 @@ A phone is ringing somewhere else not too far away.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2594"></child>
+        <children><child nodeId="node-1125"></child>
         </children>
     </item>
-    <item nodeId="node-2594">
+    <item nodeId="node-1125">
         <command xml:space="preserve">i</command>
         <result xml:space="preserve">Faraji is carrying:
   Applied Speculation
@@ -2228,10 +4021,10 @@ A phone is ringing somewhere else not too far away.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2595"></child>
+        <children><child nodeId="node-1126"></child>
         </children>
     </item>
-    <item nodeId="node-2595">
+    <item nodeId="node-1126">
         <command xml:space="preserve">put applied on shelf</command>
         <result xml:space="preserve">A phone is ringing somewhere else not too far away.
 
@@ -2239,10 +4032,10 @@ Faraji can ask to borrow a book.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2596"></child>
+        <children><child nodeId="node-1127"></child>
         </children>
     </item>
-    <item nodeId="node-2596">
+    <item nodeId="node-1127">
         <command xml:space="preserve">i</command>
         <result xml:space="preserve">Faraji is carrying:
   a pair of astral lenses
@@ -2252,10 +4045,10 @@ A phone is ringing somewhere else not too far away.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2597"></child>
+        <children><child nodeId="node-1128"></child>
         </children>
     </item>
-    <item nodeId="node-2597">
+    <item nodeId="node-1128">
         <command xml:space="preserve">l</command>
         <result xml:space="preserve">Agent Faraji is in Moira's office. 
 
@@ -2266,7 +4059,7 @@ A phone is ringing somewhere else not too far away.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-2211">
+    <item nodeId="node-1129">
         <command xml:space="preserve">applied</command>
         <result xml:space="preserve">supplied: Applied Speculation.
 
@@ -2276,26 +4069,26 @@ Faraji can ask to borrow Tribes of New York.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2212"></child>
+        <children><child nodeId="node-1130"></child>
         </children>
     </item>
-    <item nodeId="node-2212">
+    <item nodeId="node-1130">
         <command xml:space="preserve">asdfasdf</command>
         <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2213"></child>
+        <children><child nodeId="node-1131"></child>
         </children>
     </item>
-    <item nodeId="node-2213">
+    <item nodeId="node-1131">
         <command xml:space="preserve">ask to borrow a book</command>
         <result xml:space="preserve">There's nothing like that nearby.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1949">
+    <item nodeId="node-1132">
         <command xml:space="preserve">ask to borrow</command>
         <result xml:space="preserve">
 
@@ -2307,12 +4100,12 @@ Faraji can ask to borrow a book.
 
 Moira Zin asks, "What do you want to borrow?" &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2493"></child>
-            <child nodeId="node-2462"></child>
-            <child nodeId="node-1950"></child>
+        <children><child nodeId="node-1136"></child>
+            <child nodeId="node-1134"></child>
+            <child nodeId="node-1133"></child>
         </children>
     </item>
-    <item nodeId="node-1950">
+    <item nodeId="node-1133">
         <command xml:space="preserve">x new york</command>
         <result xml:space="preserve">There seems to be nothing special about it.
 
@@ -2321,7 +4114,7 @@ A phone is ringing somewhere else not too far away.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-2462">
+    <item nodeId="node-1134">
         <command xml:space="preserve">look</command>
         <result xml:space="preserve">Agent Faraji is in Moira's office. 
 
@@ -2331,17 +4124,17 @@ A phone is ringing somewhere else not too far away.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2463"></child>
+        <children><child nodeId="node-1135"></child>
         </children>
     </item>
-    <item nodeId="node-2463">
+    <item nodeId="node-1135">
         <command xml:space="preserve">ask to borrow</command>
         <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-2493">
+    <item nodeId="node-1136">
         <command xml:space="preserve">borrow a book</command>
         <result xml:space="preserve">
 
@@ -2353,10 +4146,10 @@ Faraji can ask to borrow a book.
 
 Moira Zin asks, "What do you want to borrow?" &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2494"></child>
+        <children><child nodeId="node-1137"></child>
         </children>
     </item>
-    <item nodeId="node-2494">
+    <item nodeId="node-1137">
         <command xml:space="preserve">zin</command>
         <result xml:space="preserve">boo
 A phone is ringing somewhere else not too far away.
@@ -2366,16 +4159,16 @@ Faraji can ask to borrow a book.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-2045">
+    <item nodeId="node-1138">
         <command xml:space="preserve">ask to book</command>
         <result xml:space="preserve">Which do you mean, to borrow a book or to borrow Tribes of New York?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2046"></child>
+        <children><child nodeId="node-1139"></child>
         </children>
     </item>
-    <item nodeId="node-2046">
+    <item nodeId="node-1139">
         <command xml:space="preserve">borrow a book</command>
         <result xml:space="preserve">
 
@@ -2387,10 +4180,10 @@ Faraji can ask to borrow Tribes of New York.
 
 Moira Zin asks, "What do you want to borrow?" &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2047"></child>
+        <children><child nodeId="node-1140"></child>
         </children>
     </item>
-    <item nodeId="node-2047">
+    <item nodeId="node-1140">
         <command xml:space="preserve">l</command>
         <result xml:space="preserve">Agent Faraji is in Moira's office. 
 
@@ -2403,16 +4196,16 @@ Faraji can ask to borrow Tribes of New York.
 Moira Zin asks, "What do you want to borrow?" &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-2339">
+    <item nodeId="node-1141">
         <command xml:space="preserve">actions</command>
         <result xml:space="preserve">Actions listing on.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2340"></child>
+        <children><child nodeId="node-1142"></child>
         </children>
     </item>
-    <item nodeId="node-2340">
+    <item nodeId="node-1142">
         <command xml:space="preserve">ask to borrow a book</command>
         <result xml:space="preserve">[discussing to borrow a book]
 
@@ -2427,10 +4220,10 @@ Faraji can ask to borrow Tribes of New York.
 
 Moira Zin asks, "What do you want to borrow?" &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2341"></child>
+        <children><child nodeId="node-1143"></child>
         </children>
     </item>
-    <item nodeId="node-2341">
+    <item nodeId="node-1143">
         <command xml:space="preserve">biking</command>
         <result xml:space="preserve">[supplying an answer with Biking to the Ferry: a Memoir]
 [supplying an answer with Biking to the Ferry: a Memoir - succeeded]
@@ -2442,7 +4235,7 @@ Faraji can ask to borrow Tribes of New York.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1537">
+    <item nodeId="node-1144">
         <command xml:space="preserve">take memoir</command>
         <result xml:space="preserve">Taken.
 
@@ -2450,11 +4243,11 @@ A phone is ringing somewhere else not too far away.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1538"></child>
-            <child nodeId="node-1892"></child>
+        <children><child nodeId="node-1146"></child>
+            <child nodeId="node-1145"></child>
         </children>
     </item>
-    <item nodeId="node-1892">
+    <item nodeId="node-1145">
         <command xml:space="preserve">take tribes</command>
         <result xml:space="preserve">That belongs to Moira Zin.
 
@@ -2463,7 +4256,7 @@ A phone is ringing somewhere else not too far away.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1538">
+    <item nodeId="node-1146">
         <command xml:space="preserve">i</command>
         <result xml:space="preserve">Faraji is carrying:
   Biking to the Ferry, a Memoir
@@ -2474,10 +4267,10 @@ A phone is ringing somewhere else not too far away.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1539"></child>
+        <children><child nodeId="node-1147"></child>
         </children>
     </item>
-    <item nodeId="node-1539">
+    <item nodeId="node-1147">
         <command xml:space="preserve">read it</command>
         <result xml:space="preserve">There seems to be nothing special about it.
 
@@ -2485,37 +4278,37 @@ A phone is ringing somewhere else not too far away.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1540"></child>
+        <children><child nodeId="node-1148"></child>
         </children>
     </item>
-    <item nodeId="node-1540">
+    <item nodeId="node-1148">
         <command xml:space="preserve">take all</command>
         <result xml:space="preserve">There is nothing there.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1727"></child>
+        <children><child nodeId="node-1149"></child>
         </children>
     </item>
-    <item nodeId="node-1727">
+    <item nodeId="node-1149">
         <command xml:space="preserve">take all</command>
         <result xml:space="preserve">There is nothing there.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1728"></child>
+        <children><child nodeId="node-1150"></child>
         </children>
     </item>
-    <item nodeId="node-1728">
+    <item nodeId="node-1150">
         <command xml:space="preserve">take all from shelf</command>
         <result xml:space="preserve">There's nothing like that nearby.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1729"></child>
+        <children><child nodeId="node-1151"></child>
         </children>
     </item>
-    <item nodeId="node-1729">
+    <item nodeId="node-1151">
         <command xml:space="preserve">take all from bookshelves</command>
         <result xml:space="preserve">Tribes of New York: Taken.
 Applied Speculation: Taken.
@@ -2526,16 +4319,16 @@ A phone is ringing somewhere else not too far away.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1818">
+    <item nodeId="node-1152">
         <command xml:space="preserve">take biking to the ferry: a memoir</command>
         <result xml:space="preserve">I only understood you as far as wanting to take Biking to the Ferry: a Memoir.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1819"></child>
+        <children><child nodeId="node-1153"></child>
         </children>
     </item>
-    <item nodeId="node-1819">
+    <item nodeId="node-1153">
         <command xml:space="preserve">take biking to the ferry a memoir</command>
         <result xml:space="preserve">Taken.
 
@@ -2543,10 +4336,10 @@ A phone is ringing somewhere else not too far away.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1820"></child>
+        <children><child nodeId="node-1154"></child>
         </children>
     </item>
-    <item nodeId="node-1820">
+    <item nodeId="node-1154">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">(first opening Moira's door)
 Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
@@ -2555,10 +4348,10 @@ A phone is ringing to the south.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1821"></child>
+        <children><child nodeId="node-1155"></child>
         </children>
     </item>
-    <item nodeId="node-1821">
+    <item nodeId="node-1155">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">(first opening Klimp's door)
 It seems to be locked.
@@ -2567,10 +4360,10 @@ A phone is ringing to the south.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1822"></child>
+        <children><child nodeId="node-1156"></child>
         </children>
     </item>
-    <item nodeId="node-1822">
+    <item nodeId="node-1156">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
 
@@ -2586,19 +4379,19 @@ Faraji can ask about the phone exchange.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1823"></child>
+        <children><child nodeId="node-1157"></child>
         </children>
     </item>
-    <item nodeId="node-1823">
+    <item nodeId="node-1157">
         <command xml:space="preserve">purloin button</command>
         <result xml:space="preserve">[Purloined.]
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1824"></child>
+        <children><child nodeId="node-1158"></child>
         </children>
     </item>
-    <item nodeId="node-1824">
+    <item nodeId="node-1158">
         <command xml:space="preserve">press button</command>
         <result xml:space="preserve">The world turns inside out, and suddenly Faraji is somewhere else.
 
@@ -2610,10 +4403,10 @@ Faraji can ask about the phone exchange.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1825"></child>
+        <children><child nodeId="node-1159"></child>
         </children>
     </item>
-    <item nodeId="node-1825">
+    <item nodeId="node-1159">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">Faraji can't go that way.
 
@@ -2621,10 +4414,10 @@ Faraji can ask about the phone exchange.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1826"></child>
+        <children><child nodeId="node-1160"></child>
         </children>
     </item>
-    <item nodeId="node-1826">
+    <item nodeId="node-1160">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">Agent Faraji is in the field office hallway. Hallway
 
@@ -2632,10 +4425,10 @@ Faraji can ask about the phone exchange.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1827"></child>
+        <children><child nodeId="node-1161"></child>
         </children>
     </item>
-    <item nodeId="node-1827">
+    <item nodeId="node-1161">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">Agent Faraji is in the field office chief's office. Doris's office
 
@@ -2645,10 +4438,10 @@ Faraji can ask about the phone exchange.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1828"></child>
+        <children><child nodeId="node-1162"></child>
         </children>
     </item>
-    <item nodeId="node-1828">
+    <item nodeId="node-1162">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">Agent Faraji is in the field office hallway. Hallway
 
@@ -2656,10 +4449,10 @@ Faraji can ask about the phone exchange.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1829"></child>
+        <children><child nodeId="node-1163"></child>
         </children>
     </item>
-    <item nodeId="node-1829">
+    <item nodeId="node-1163">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">Agent Faraji is in the field office chief's office. Doris's office
 
@@ -2669,10 +4462,10 @@ Faraji can ask about the phone exchange.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1830"></child>
+        <children><child nodeId="node-1164"></child>
         </children>
     </item>
-    <item nodeId="node-1830">
+    <item nodeId="node-1164">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">Faraji can't go that way.
 
@@ -2680,10 +4473,10 @@ Faraji can ask about the phone exchange.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1831"></child>
+        <children><child nodeId="node-1165"></child>
         </children>
     </item>
-    <item nodeId="node-1831">
+    <item nodeId="node-1165">
         <command xml:space="preserve">ask about the phone</command>
         <result xml:space="preserve">Faraji asks, "Tell me what's going on with the phones again?"
 
@@ -2691,19 +4484,19 @@ Margaret looks apologetic. "I'm sorry, I thought everyone knew. Budget cuts. The
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1832"></child>
+        <children><child nodeId="node-1166"></child>
         </children>
     </item>
-    <item nodeId="node-1832">
+    <item nodeId="node-1166">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">Agent Faraji is in the field office hallway. Hallway
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1833"></child>
+        <children><child nodeId="node-1167"></child>
         </children>
     </item>
-    <item nodeId="node-1833">
+    <item nodeId="node-1167">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">Agent Faraji is at field office reception. Hooray you made it!
 
@@ -2711,10 +4504,10 @@ Also here is Maggie.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1834"></child>
+        <children><child nodeId="node-1168"></child>
         </children>
     </item>
-    <item nodeId="node-1834">
+    <item nodeId="node-1168">
         <command xml:space="preserve">gonear moira</command>
         <result xml:space="preserve">Agent Faraji is in Moira's office. 
 
@@ -2724,10 +4517,10 @@ A phone is ringing somewhere else not too far away.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1835"></child>
+        <children><child nodeId="node-1169"></child>
         </children>
     </item>
-    <item nodeId="node-1835">
+    <item nodeId="node-1169">
         <command xml:space="preserve">x moira</command>
         <result xml:space="preserve">Agent Moira Zin is the very model of a competent Bureau agent. Hard-working, serious, no-nonsense but open-minded, she's the sober counter-balance to Klimp's sometimes childish credulity. Moira would clearly be a rising star if it weren't for the Bureau's pending dissolution.
 
@@ -2735,10 +4528,10 @@ A phone is ringing somewhere else not too far away.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1836"></child>
+        <children><child nodeId="node-1170"></child>
         </children>
     </item>
-    <item nodeId="node-1836">
+    <item nodeId="node-1170">
         <command xml:space="preserve">x shelves</command>
         <result xml:space="preserve">FILL THIS IN
 
@@ -2749,16 +4542,16 @@ A phone is ringing somewhere else not too far away.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1980">
+    <item nodeId="node-1171">
         <command xml:space="preserve"></command>
         <result xml:space="preserve">I beg your pardon?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1981"></child>
+        <children><child nodeId="node-1172"></child>
         </children>
     </item>
-    <item nodeId="node-1981">
+    <item nodeId="node-1172">
         <command xml:space="preserve">l</command>
         <result xml:space="preserve">Agent Faraji is in Moira's office. 
 
@@ -2768,25 +4561,393 @@ A phone is ringing somewhere else not too far away.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1982"></child>
+        <children><child nodeId="node-1173"></child>
         </children>
     </item>
-    <item nodeId="node-1982">
+    <item nodeId="node-1173">
         <command xml:space="preserve">ask to borrow a book</command>
         <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1983"></child>
+        <children><child nodeId="node-1174"></child>
         </children>
     </item>
-    <item nodeId="node-1983">
+    <item nodeId="node-1174">
         <command xml:space="preserve">x tribes</command>
         <result xml:space="preserve">There seems to be nothing special about it.
 
 A phone is ringing somewhere else not too far away.
 
 Faraji can ask to borrow Tribes of New York.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1225">
+        <command xml:space="preserve">gonear closet</command>
+        <result xml:space="preserve">(the utility closet)
+Agent Faraji is in the dark. 
+
+Some light would be nice.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1226"></child>
+        </children>
+    </item>
+    <item nodeId="node-1226">
+        <command xml:space="preserve">lens</command>
+        <result xml:space="preserve">Agent Faraji is in the utility closet. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1227"></child>
+            <child nodeId="node-1243"></child>
+        </children>
+    </item>
+    <item nodeId="node-1243">
+        <command xml:space="preserve">knock door</command>
+        <result xml:space="preserve">After a few seconds, someone inserts a key in the lock and opens the door. It's Faraji's colleague Moira Zin. "How'd you get in there, Larch?"
+
+You exit the closet.
+
+Agent Faraji is in Moira's office. 
+
+Also here is Moira Zin.
+
+A phone is ringing somewhere else not too far away.
+
+Wearing the astral lenses in fluorescent light is blinding. Faraji quickly removes the glasses.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1244"></child>
+        </children>
+    </item>
+    <item nodeId="node-1244">
+        <command xml:space="preserve">x books</command>
+        <result xml:space="preserve">On Moira's bookshelves are No Myth After All: A New Perspective on Troy, Twenty Great PhD Theses of the Twentieth Century, Anatomy of a Hoax: Writings on Modern Medicine's Greatest Myths, Tribes of New York, Applied Speculation, Biking to the Ferry: a Memoir, Nonstandard Investigative Techniques, Calculus with Infinitesimals and The Three Stigmata of Palmer Eldritch.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can ask to borrow a book, tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1438"></child>
+            <child nodeId="node-1245"></child>
+        </children>
+    </item>
+    <item nodeId="node-1245">
+        <command xml:space="preserve">x book</command>
+        <result xml:space="preserve">Which do you mean, Tribes of New York, Applied Speculation, Biking to the Ferry: a Memoir, No Myth After All: A New Perspective on Troy or Twenty Great PhD Theses of the Twentieth Century?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1246"></child>
+        </children>
+    </item>
+    <item nodeId="node-1246">
+        <command xml:space="preserve">theses</command>
+        <result xml:space="preserve">There seems to be nothing special about it.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can ask to borrow a book, tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1247"></child>
+        </children>
+    </item>
+    <item nodeId="node-1247">
+        <command xml:space="preserve">borrow</command>
+        <result xml:space="preserve">
+
+
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can ask to borrow a book, tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+Moira Zin asks, "What do you want to borrow?" &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1248"></child>
+        </children>
+    </item>
+    <item nodeId="node-1248">
+        <command xml:space="preserve">theses</command>
+        <result xml:space="preserve">Faraji takes Twenty Great PhD Theses of the Twentieth Century.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1249"></child>
+        </children>
+    </item>
+    <item nodeId="node-1249">
+        <command xml:space="preserve">drop it</command>
+        <result xml:space="preserve">Dropped.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1250"></child>
+        </children>
+    </item>
+    <item nodeId="node-1250">
+        <command xml:space="preserve">take it</command>
+        <result xml:space="preserve">Taken.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1251"></child>
+        </children>
+    </item>
+    <item nodeId="node-1251">
+        <command xml:space="preserve">give it to moira</command>
+        <result xml:space="preserve">Moira smiles. "Thanks for getting it back to me." She puts the book back on the shelf.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can ask to borrow a book, tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1438">
+        <command xml:space="preserve">borrow</command>
+        <result xml:space="preserve">
+
+
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can ask to borrow a book, tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+Moira Zin asks, "What do you want to borrow?" &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1439"></child>
+        </children>
+    </item>
+    <item nodeId="node-1439">
+        <command xml:space="preserve">stigmata</command>
+        <result xml:space="preserve">Faraji takes The Three Stigmata of Palmer Eldritch.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1440"></child>
+        </children>
+    </item>
+    <item nodeId="node-1440">
+        <command xml:space="preserve">tell wait</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1441"></child>
+        </children>
+    </item>
+    <item nodeId="node-1441">
+        <command xml:space="preserve">tell moira to wait</command>
+        <result xml:space="preserve">Faraji says "Strange things are afoot around here, Agent Zin."
+
+"Do tell," says Moira Zin.
+
+"After I talk to Klimp."
+
+A phone is ringing somewhere else not too far away.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1227">
+        <command xml:space="preserve">knock</command>
+        <result xml:space="preserve">What do you want to knock?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1228"></child>
+        </children>
+    </item>
+    <item nodeId="node-1228">
+        <command xml:space="preserve">door</command>
+        <result xml:space="preserve">After a few seconds, someone inserts a key in the lock and opens the door. It's Faraji's colleague Moira Zin. "How'd you get in there, Larch?"
+
+You exit the closet.
+
+Agent Faraji is in Moira's office. 
+
+Also here is Moira Zin.
+
+A phone is ringing somewhere else not too far away.
+
+Wearing the astral lenses in fluorescent light is blinding. Faraji quickly removes the glasses.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1229"></child>
+        </children>
+    </item>
+    <item nodeId="node-1229">
+        <command xml:space="preserve">x tomes</command>
+        <result xml:space="preserve">You can't use multiple objects with that verb.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1230"></child>
+        </children>
+    </item>
+    <item nodeId="node-1230">
+        <command xml:space="preserve">x tome</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1231"></child>
+        </children>
+    </item>
+    <item nodeId="node-1231">
+        <command xml:space="preserve">x tribe</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1232"></child>
+        </children>
+    </item>
+    <item nodeId="node-1232">
+        <command xml:space="preserve">x tribes</command>
+        <result xml:space="preserve">There seems to be nothing special about it.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can ask to borrow a book, tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1233"></child>
+        </children>
+    </item>
+    <item nodeId="node-1233">
+        <command xml:space="preserve">borrow</command>
+        <result xml:space="preserve">
+
+
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can ask to borrow a book, tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+Moira Zin asks, "What do you want to borrow?" &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1234"></child>
+        </children>
+    </item>
+    <item nodeId="node-1234">
+        <command xml:space="preserve">borrow</command>
+        <result xml:space="preserve">
+
+
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can ask to borrow a book, tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+Moira Zin asks, "What do you want to borrow?" &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1235"></child>
+        </children>
+    </item>
+    <item nodeId="node-1235">
+        <command xml:space="preserve">tribes</command>
+        <result xml:space="preserve">Faraji takes Tribes of New York.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1236"></child>
+        </children>
+    </item>
+    <item nodeId="node-1236">
+        <command xml:space="preserve">x tome</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1237"></child>
+        </children>
+    </item>
+    <item nodeId="node-1237">
+        <command xml:space="preserve">x book</command>
+        <result xml:space="preserve">(Tribes of New York)
+There seems to be nothing special about it.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1238"></child>
+        </children>
+    </item>
+    <item nodeId="node-1238">
+        <command xml:space="preserve">x books</command>
+        <result xml:space="preserve">On Moira's bookshelves are Applied Speculation, Biking to the Ferry: a Memoir, No Myth After All: A New Perspective on Troy and Twenty Great PhD Theses of the Twentieth Century.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1239"></child>
+        </children>
+    </item>
+    <item nodeId="node-1239">
+        <command xml:space="preserve">drop book</command>
+        <result xml:space="preserve">(Tribes of New York)
+Dropped.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1240"></child>
+        </children>
+    </item>
+    <item nodeId="node-1240">
+        <command xml:space="preserve">take it</command>
+        <result xml:space="preserve">That belongs to Moira Zin.
+
+A phone is ringing somewhere else not too far away.
+
+Faraji can tell Moira Zin about the hyperdimensional portal or tell Moira Zin to wait for the report.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>

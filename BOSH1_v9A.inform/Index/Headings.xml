@@ -193,98 +193,98 @@
     </dict>
     <key>27</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>849</integer>
+        <key>Line</key><integer>854</integer>
         <key>Title</key><string>Section 5 - BOSH chief's office</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>28</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>891</integer>
+        <key>Line</key><integer>896</integer>
         <key>Title</key><string>Section 6 - Moira's office</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>29</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1031</integer>
+        <key>Line</key><integer>1047</integer>
         <key>Title</key><string>Book 15 - The Phone Call</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>30</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1038</integer>
+        <key>Line</key><integer>1054</integer>
         <key>Title</key><string>Book 16 - Moving Between Rooms</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>31</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1076</integer>
+        <key>Line</key><integer>1092</integer>
         <key>Title</key><string>Chapter 1 - Leaving the Front Office</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>32</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1083</integer>
+        <key>Line</key><integer>1099</integer>
         <key>Title</key><string>Chapter 2 - Klimp Arrives</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>33</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1085</integer>
+        <key>Line</key><integer>1101</integer>
         <key>Title</key><string>Book 17 - Commerce and Conversation</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>34</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1093</integer>
+        <key>Line</key><integer>1109</integer>
         <key>Title</key><string>Book 18 - Sound</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>35</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1095</integer>
+        <key>Line</key><integer>1111</integer>
         <key>Title</key><string>Book 19 - Verbs</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>36</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1099</integer>
+        <key>Line</key><integer>1115</integer>
         <key>Title</key><string>Book 20 - Images</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>37</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1258</integer>
+        <key>Line</key><integer>1274</integer>
         <key>Title</key><string>Book 21 - Not For Release</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>38</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1290</integer>
+        <key>Line</key><integer>1306</integer>
         <key>Title</key><string>Volume 2 - Test command tweak for clean transcripts</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>39</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1380</integer>
+        <key>Line</key><integer>1396</integer>
         <key>Title</key><string>Volume 3 - The Story</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>40</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1383</integer>
+        <key>Line</key><integer>1399</integer>
         <key>Title</key><string>Book 1 - The Thumb Drive</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
@@ -2264,7 +2264,7 @@
     </dict>
     <key>323</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.materials/Extensions/philip riley/margaret.i7x</string>
-        <key>Line</key><integer>167</integer>
+        <key>Line</key><integer>177</integer>
         <key>Title</key><string>Book 4 - Special Movement Rule</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
