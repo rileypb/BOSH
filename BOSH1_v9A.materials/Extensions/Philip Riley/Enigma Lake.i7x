@@ -29,7 +29,7 @@ the Enigma Lake town hall is a room. It is in ELR.
 
 The information desk is scenery in the Enigma Lake town hall. Understand "info" as information desk. "A work schedule is taped to the desk."
 
-The backpack is a closed openable container. It is behind the information desk. The description is "Stitched into the fabric are the initials 'WT'".
+The backpack is a closed openable container. It is behind the information desk. The description is "Stitched into the fabric are the initials 'WGT'".
 Understand "back/pack/rucksack/ruck/sack/knapsack/knap" as the backpack.
 
 The red key is a key. It is inside the backpack. The description is "The letters ELG are printed on the key, labeling it the property of Enigma Lake Gymnasium.".
@@ -58,7 +58,7 @@ After examining the information desk when the backpack is nowhere:
 
 Chapter 1 - Town Hall backdrop
 
-The Town Hall Facade is a backdrop. It is in Main Street 200 Block, Main at Solvay, Solvay Road by the fire station, Solvay Road leading out of town, Enigma Park, Lake Street by the park, Lake Street by the gym, and Main at Lake. It is privately-named. The printed name is "town hall". Understand "town/city/hall" as the Town Hall Facade. "The archetypical town hall of the northeastern US, it's a white-sided building the size of a large house, exuding a sense of civic duty. [if location is Main Street 200 block]The front entrance is to the north[otherwise if location is Enigma Park]The back entrance is to the south[otherwise]There are no entrances on this side[end if]."
+The Town Hall Facade is a backdrop. It is in Main Street 200 Block, Main at Solvay, Solvay Road 100 block, Solvay Road leading out of town, Enigma Park, Lake Street by the park, Lake Street by the gym, and Main at Lake. It is privately-named. The printed name is "town hall". Understand "town/city/hall" as the Town Hall Facade. "The archetypical town hall of the northeastern US, it's a white-sided building the size of a large house, exuding a sense of civic duty. [if location is Main Street 200 block]The front entrance is to the north[otherwise if location is Enigma Park]The back entrance is to the south[otherwise]There are no entrances on this side[end if]."
 
 
 Book 2 - Enigma Park
@@ -66,75 +66,127 @@ Book 2 - Enigma Park
 To explore is a verb.
 
 Enigma Park is north of Enigma Lake town hall. Enigma Park is in ELR. It is outdoors.
-"[first time]It's probably beautiful during the day, but tonight the deep shadows among the trees seem ominous. [Faraji] is watchful and tense as [we] [explore] the park. 
+"[first time]It's probably beautiful during the day, but tonight the deep shadows among the trees seem ominous. [We] [are] watchful and tense as [we] [explore] the park. 
 
 [only]The central focus of the park is a large obelisk inscribed with the names of the town's citizens lost in the Great War. The town hall is to the south, and other exits are to the north, west, and east."
 
-Some trees are scenery in Enigma Park.
+Some trees are scenery in Enigma Park. Understand "tree" as trees. "A mixture of sturdy firs and maples, unaware of the pending cataclysm."
 
-Some shadows are scenery in Enigma Park.
+Some shadows are scenery in Enigma Park. "Without a lantern, it's inadvisable to venture into the shadows."
 
-The obelisk is scenery in Enigma Park. Understand "monument/names/citizens" as the obelisk.
+The obelisk is scenery in Enigma Park. Understand "monument/names/citizens" as the obelisk. "Its faux Egyptian design is incongruous adjacent to the adamantly traditional town hall. [We] [can] just make out a small crystal adornment rising from the top."
 
+The adornment is scenery in Enigma Park. "From what you can make out, it's a clear crystal held aloft by some kind of metal fitting."
+
+Climbing up is an action applying to one thing. Understand "climb up/-- [something]" as climbing up.
+
+Check climbing up:
+	say "[We] can't climb that." instead;
+	
+Check climbing up the obelisk:
+	say "The obelisk offers no handholds adequate for climbing." instead;
+	
+Check climbing up trees:
+	say "[We] would rather not break [our] leg." instead;
+	
+Park facade is a backdrop. It is in Solvay Road leading out of town, Lake shore north of the park, and Lake Street by the park. It is privately-named. The printed name is "Enigma Park". Understand "enigma/park" as Park facade. "A shadowy clump of trees marks the edge of Enigma Park."
 
 Book 3 - Main Street 200 Block
 
 the Main Street 200 block is south of Enigma Lake Town Hall. It is in ELR. It is outdoors. The printed name is "200 block of Main Street". The preposition is "on".
 
+The description is "The street runs east and west from here. South is the edifice of Rolle's Department Store. North is the town hall."
+
+Rolle's facade is a backdrop. It is in Main Street 200 block. It is privately-named. The printed name is "Rolle's Department Store". Understand "rolle's/rolle/department/store" as Rolle's facade. "Once, town department stores like this were a constant of American life before they were gobbled up by the big box stores."
+
 Book 4 - Main at Solvay
 
-Main at Solvay is west of Main Street 200 Block. It is in ELR. It is outdoors. The printed name is "Main and Solvay". The preposition is "on".
+Main at Solvay is west of Main Street 200 Block. It is in ELR. It is outdoors. The printed name is "Main and Solvay". The preposition is "on the corner of".
 
-Book 5 - Solvay Road by the fire station
+The description is "Main Street runs east from here, while Solvay Road heads north. South of here, Henry's Hot Skillet promises all of the comforts of the mid-twentieth-century diner. A book store named The Reading Room lies to the west, while Fresnel's Music is southwest."
 
-Solvay Road by the fire station is north of Main at Solvay. It is in ELR. It is outdoors. The preposition is "walking on".
+Henry's facade is a backdrop. It is in Main at Solvay. It is privately-named. The printed name is "Henry's Hot Skillet".  Understand "Henry/Henry's/Hot/Skillet/diner/restaurant" as Henry's facade. "Henry's is closed, the neon skillet dark and motionless."
 
-Book 6 - Solvay Road leading out of town
+Reading-Room-Facade is a backdrop. It is in Main at Solvay. It is privately-named. The printed name is "Reading Room". Understand "Reading/Room/bookstore/store" as Reading-room-facade. "The store window is dark. You can see rows and rows of books inside."
 
-Solvay Road leading out of town is north of Solvay Road by the Fire Station and west of Enigma Park. It is in ELR. It is outdoors. The preposition is "walking on".
+Fresnel Facade is a backdrop. It is in Main at Solvay. It is privately-named. The printed name is "Fresnel's Music". Understand "fresnel/fresnel's/music/store" as Fresnel Facade. "A display of brass instruments dominates the front window." 
 
-Book 7 - Solvay Road by the lake
+Book 6 - Solvay Road 100 block
 
-Solvay Road by the lake is northwest of Solvay Road leading out of town. It is in ELR. It is outdoors. The preposition is "walking on".
+Solvay Road 100 block is north of Main at Solvay. It is in ELR. It is outdoors. The preposition is "walking on".
 
-Book 8 - Shack
+The description is "Solvay heads north and south. To the west is the fire station, while to the east is the side of the town hall."
 
-a dirty shack is west of Solvay Road by the lake. It is always-indefinite. It is in ELR.
+The fire facade is a backdrop. It is in Solvay Road 100 block. It is privately-named. The printed name is "fire station". Understand "fire/station/house" as fire facade. "The sign over the big door says 'Hook and Ladder Company #1'."
 
-Hutz is a man in dirty shack. 
+Book 7 - Solvay Road leading out of town
+
+Solvay Road leading out of town is north of Solvay Road 100 block and west of Enigma Park. It is in ELR. It is outdoors. The preposition is "walking on".
+
+The description is "Solvay Road bends here, leading northwest out of town and south back into town. East is the park, and to the west is Horton House."
+
+Horton facade is a backdrop. It is in Solvay Road leading out of town. It is privately-named. The printed name is "Horton House". Understand "Horton/House/Home" as Horton facade. "Horton House is an old colonial-period house. The sign by the door marks it as the oldest remaining house in the Enigma Lake area. Its builder, Jeremiah Horton, was purported to be a supernaturalist of some renown."
+
+Book 8 - Solvay Road by the lake
+
+Solvay-Road-by-the-lake is northwest of Solvay Road leading out of town. It is in ELR. It is outdoors. The preposition is "walking on". It is privately-named. The printed name is "Solvay Road by the lake". Understand "Solvay/Road/by/the/lake" as Solvay-Road-by-the-lake.
+
+Instead of going nowhere from the Solvay-Road-by-the-lake:
+	let dir be noun part of current action;
+	if dir is northwest:
+		say "That would take [us] too far out of town.";
+	otherwise: 
+		continue the action;
+	stop the action;
+
+Book 9 - Shack
+
+a dirty shack is west of Solvay-Road-by-the-lake. It is always-indefinite. It is in ELR.
+
+Hutz is a man in dirty shack. "Hutz is reclining on a narrow bed." The description is "Hutz is more or less a skeleton in overalls."
+
+The narrow bed is scenery in the dirty shack. "Clean enough, but awfully narrow, it holds the bony figure of Hutz, the town groundsman."
 
 The sledgehammer is in the dirty shack.
 
-Book 9 - Main at Lake
+Why-he-is-still-here is a questioning quip.
+	The printed name is "why he's still here".
+	Understand "why/he/he's/hutz/is/still/here/are/you" as why-he-is-still-here.
+	The comment is "[We] [ask], 'Why are you still here? The town is being flooded tomorrow.'"
+	The reply is "'Had a feeling someone might come by looking for help. And here you are.'"
+	It quip-supplies Hutz.	
+	It stocks Hutz.
+
+Book 10 - Main at Lake
 
 Main at Lake is east of Main Street 200 Block. It is in ELR. It is outdoors. The printed name is "Main and Lake". The preposition is "on".
 
-Book 10 - Lake Street by the gym
+Book 11 - Lake Street by the gym
 
 Lake Street by the gym is north of Main at Lake. It is in ELR. It is outdoors. The preposition is "walking on".
 
-Book 11 - Lake Street by the Park
+Book 12 - Lake Street by the Park
 
 Lake Street by the park is north of Lake Street by the gym and east of Enigma Park. It is in ELR. It is outdoors. The preposition is "walking on".
 
-Book 12 - First Unitarian Church of Enigma Lake
+Book 13 - First Unitarian Church of Enigma Lake
 
 First Unitarian Church of Enigma Lake is east of Lake Street by the Park. It is in ELR.
 
 The electrical outlet is scenery in First Unitarian Church of Enigma Lake.
 
-Book 13 - Vestry
+Book 14 - Vestry
 
 the vestry is east of First Unitarian Church. It is in ELR. 
 
 The circuit breaker is a scenery device in the vestry. 
 
-Book 14 - Steeple
+Book 15 - Steeple
 
 the steeple is above the First Unitarian Church of Enigma Lake. It is in ELR. 
 
 
-Book 15 - Lake at Ridge
+Book 16 - Lake at Ridge
 
 the Lake at Ridge is north of Lake Street by the Park. It is in ELR. It is outdoors.
 The printed name is "intersection of Lake Street and Ridge Road". The preposition is "at".
@@ -159,7 +211,7 @@ Instead of switching on the abandoned truck:
 	if the number of entries of K is 1:
 		say "Your key doesn't fit the ignition.";
 	otherwise if the number of entries of K > 1:
-		say "None of the keys you have fits the ignition.";
+		say "None of the keys you have fit the ignition.";
 	otherwise:
 		say "Even if this thing runs, you don't have the key.";
 		
@@ -168,11 +220,11 @@ Understand "start [something]" as switching on.
 Rule for writing a paragraph about the abandoned truck:
 	say "There is an abandoned pickup truck at the side of the road."
 
-Book 16 - Lake Shore north of the park
+Book 17 - Lake Shore north of the park
 
 the lake shore north of the park is west of Lake at Ridge and north of Enigma Park. It is in ELR. It is outdoors. The preposition is "on".
 
-Book 17 - Workshed
+Book 18 - Workshed
 
 the workshed is southeast of the lake shore north of the park. It is in ELR.
 
@@ -182,43 +234,43 @@ The rusty astral resonator is in the equipment box.
 
 The trap door is a door. It is below workshed and above the hidden cave.
 
-Book 18 - Hidden cave
+Book 19 - Hidden cave
 
 a hidden cave is a room. It is in ELR. It is always-indefinite.
 
-Book 19 - Portal room
+Book 20 - Portal room
 
 the portal cave is south of hidden cave. It is in ELR. 
 
-Book 20 - Lake shore west
+Book 21 - Lake shore west
 
-the Lake Shore West is west of Lake Shore North of the Park and north of Solvay Road Leading Out Of Town. It is in ELR. It is outdoors. The printed name is "west end of the town's lake shore". The preposition is "at".
+the Lake Shore West is west of Lake Shore North of the Park and north of Solvay Road Leading Out Of Town. It is east of Solvay-Road-by-the-lake. It is in ELR. It is outdoors. The printed name is "west end of the town's lake shore". The preposition is "at".
 
-Book 21 - Horton Family House
+Book 22 - Horton Family House
 
 The Horton House door is a closed openable locked lockable scenery door. It is west of Solvay Road Leading Out Of Town and east of Horton Family House. The Horton House door has matching key the old copper key.
 
 Horton Family House is a room. It is in ELR.
 
-Book 22 - Astral Tunnel
+Book 23 - Astral Tunnel
 
 Fire Station 1 is forthsouth of Horton Family House. It is in ELR
 
-Book 23 - Horton Graveyard
+Book 24 - Horton Graveyard
 
 the Horton graveyard is west of Horton Family House. It is in ELR.
 
 Some gravestones are scenery in the Horton graveyard.
 
-Book 24 - Fire Station 1
+Book 25 - Fire Station 1
 
-The fire station office door is a closed locked lockable openable scenery door. It is west of Solvay Road by the Fire Station and east of Fire Station 1.
+The garage door is a closed locked lockable openable scenery door. It is west of Solvay Road 100 block and east of the Fire Station 1. Understand "big/red/door" as garage door.
 
 Fire Station 1 is in ELR. The printed name is "Hook and Ladder Company #1". 
 
 The ladder is in the Fire Station 1.
 
-Book 25 - Reading Room
+Book 26 - Reading Room
 
 The Reading Room is west of Main at Solvay. It is in ELR.
 
@@ -226,13 +278,13 @@ The sales counter is scenery in the Reading Room.
 
 Astral Secrets is on the sales counter. The printed name is "[first time]the book [only][italic type]Astral Secrets[roman type]".
 
-Book 26 - Reading Room Basement
+Book 27 - Reading Room Basement
 
 The Book Store Basement is below the Reading Room. It is in ELR.
 
 A bricked up hole in the wall is scenery in the Book Store Basement.
 
-Book 27 - Sewer Tunnel
+Book 28 - Sewer Tunnel
 
 a sewer tunnel 1 is north of book store basement. It is in ELR. It is privately-named. It is always-indefinite. The printed name is "sewer tunnel". Understand "sewer/tunnel" as sewer tunnel 1. ""
 
@@ -246,29 +298,30 @@ astral-tunnel-elr is forthsouth of the gym basement.
 
 The gymnasium basement door is a locked closed openable lockable scenery door. It is north of sewer tunnel 3 and south of the gym basement.
 
-Book 28 - Fresnel's Music
+Book 29 - Fresnel's Music
 
 Fresnel's Music is southwest of Main at Solvay. It is in ELR.
 
 A tuning fork is in Fresnel's Music.
 
-Book 29 - Henry's Hot Skillet
+Book 30 - Henry's Hot Skillet
 
 Henry's Hot Skillet is a room. It is in ELR.
 
 the Skillet door is a closed locked openable lockable scenery door. It is south of Main at Solvay and north of Henry's Hot Skillet. The Skillet door has matching key the brass key.
 
-Book 30 - Henry's Roof
+Book 31 - Henry's Roof
 
 Henry's Roof is above Henry's Hot Skillet. It is in ELR.
 
-Book 31 - Rolle's Department Store
+Book 32 - Rolle's Department Store
 
 Rolle's Department Store is south of Main Street 200 Block. It is in ELR.
+The description is "Once, town department stores like this were a constant of American life."
 
 The floor waxer is in Rolle's Department Store.
 
-Book 32 - Public Gymnasium
+Book 33 - Public Gymnasium
 
 The gym door is a closed locked openable lockable scenery door. It is east of Lake Street by the gym and west of the public gymnasium.
 
@@ -290,7 +343,7 @@ Instead of consulting the membership book about something:
 	otherwise:
 		say "You can't find that name in the membership book.";
 
-Book 33 - Gym Basement
+Book 34 - Gym Basement
 
 The gym basement is below the public gymnasium. It is in ELR. "This area is dominated by large banks of lockers."
 
@@ -341,19 +394,25 @@ Every turn when location is in ELR:
 		
 Volume 5 - Polish
 
+Table of Transitions
+source room (a room)	target room (a room)	transition text (a text)	used (a truth state)
+Enigma Lake Town Hall	Enigma Park	"[We] [push] through the back door into the cool night."	--
+
+
 Table of Excuses (continued)
 source room (a room)	dirs (a list of directions)	excuse (a text)
 Enigma Lake town hall	--	"Exits are to the north and south."
 Main Street 200 block	{northwest, northeast}	"Go north to enter the town hall."
 Main Street 200 block	--	"You can go north into the town hall, or south into Rolle's Department Store. In addition, Main Street leads east and west."
 Lake Street by the gym	{west, southwest, northwest}	"You can't enter the town hall from here."
-Solvay Road by the fire station	{west}	"The fire station's garage door and office door are both locked up tight."
+Solvay Road 100 block	{west}	"The fire station's garage door is locked up tight."
 
 
 
 Table of Frustrated Taking (continued)
 target (a thing)	message (a text)	move message (a text)
 membership book	"You hardly need it, and it might useful to someone else."	--
+adornment	"It's too high up."	"It's too high up."
 
 
 [Table of Floors (continued)

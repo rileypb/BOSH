@@ -445,7 +445,7 @@ who-are-you-doris is a questioning quip.
 	
 about his name is a questioning quip.
 	The comment is "[We] [say], 'Tell me about your name.'".
-	The reply is "'None of your business', [Doris] replies.".
+	The reply is "'None of your business,' [Doris] replies.".
 	It quip-supplies Doris.
 	It follows who-are-you-doris.
 	

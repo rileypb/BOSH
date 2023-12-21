@@ -31,7 +31,7 @@ Include Polish by Philip Riley.
 Include Choices by Philip Riley.
  
 Include New Light by Philip Riley.
-
+ 
 Include Early Declarations by Philip Riley.
  
 [Include Farseeing by Philip Riley.]
@@ -55,6 +55,7 @@ Include Make Test by Philip Riley.
 
 Use MAX_OBJ_PROP_COUNT of 128.
 Use MAX_STATIC_DATA of 360000.
+Use MAX_PROP_TABLE_SIZE of 400000.
 
 Work Title is always "The Bureau of Strange Happenings".  
  
@@ -121,7 +122,7 @@ When play begins:
 		now current play mode is picking character;
 	otherwise: 
 		now player's forename is "Larch";
-		now player's full name is "Larch Faraji";
+		now player's full name is "Larch Faraji"; 
 		now player's surname is "Faraji";
 		now the player is Larch Faraji; 
 [		now player's forename is "Ezra";
@@ -665,7 +666,7 @@ The BOSH back door is a door. The printed name is "white metal door". Understand
 Before opening BOSH back door when BOSH back door is locked:
 	now player knows back-door-is-locked;
 
-The white key is in the room of stuff.
+The white key is a key in the room of stuff.
 
 The BOSH back door has matching key the white key.
 When play begins:
@@ -1055,7 +1056,7 @@ Book 16 - Moving Between Rooms
 
  
  
-Table of Transitions
+Table of Transitions (continued)
 source room (a room)	target room (a room)	transition text (a text)	used (a truth state)
 Strip Mall Parking Lot South	Strip Mall Parking Lot North	"[We] [trudge] to the other end of the parking lot. It's much like where [we] left."	--
 Strip Mall Parking Lot North	Strip Mall Parking Lot South	"[We] [walk] back to the south end of the parking lot."
@@ -1075,7 +1076,7 @@ To decide which text is the transition for (source - a room) to (target - a room
 				decide on transition text entry;
 			if there is no used entry:
 				decide on transition text entry;
-	decide on "none";
+	decide on "none"; 
 	
 To mark transition from (source - a room) to (target - a room) as used:
 	repeat through the Table of Transitions:
