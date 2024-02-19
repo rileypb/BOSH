@@ -30,7 +30,7 @@ Include Polish by Philip Riley.
  
 Include Choices by Philip Riley.
  
-Include New Light by Philip Riley.
+Include New Light by Philip Riley. 
  
 Include Early Declarations by Philip Riley.
  
@@ -75,8 +75,9 @@ To turn on rules:
 	(- RulesOnSub(); -);
 
 [After starting the virtual machine:
-	turn on rules;] 
-
+	turn on rules;]
+	
+		
 
  
 Volume 1 - The Game 
@@ -122,7 +123,7 @@ When play begins:
 		now current play mode is picking character;
 	otherwise: 
 		now player's forename is "Larch";
-		now player's full name is "Larch Faraji"; 
+		now player's full name is "Larch Faraji";  
 		now player's surname is "Faraji";
 		now the player is Larch Faraji; 
 [		now player's forename is "Ezra";
@@ -248,7 +249,7 @@ To say location-title-case:
 	let L be the substituted form of "[location]" for comparison purposes;
 	say "[L in title case]";
 	
-[To say location-title-case-with-containment:	
+[To say location-title-case-with-containment:	 
 	let L be the substituted form of "[location]" for comparison purposes;
 	let result be "[L in title case]";
 	let intermediate level be the visibility-holder of the player;
@@ -1156,6 +1157,7 @@ Figure Field Office is the file "location_field_office.png".
 Figure Maggie is the file "maggie_portrait.png".
 Figure Minerva is the file "minerva_portrait.png".
 Figure Christy is the file "christy_portrait.png".
+Figure Hutz is the file "hutz_portrait.png".
  
 Ezra Gaunt has portrait Figure Gaunt.
 Petula Goldberg has portrait Figure Goldberg.
@@ -1172,6 +1174,7 @@ Moira Zin has portrait Figure Moira.
 Minerva has portrait Figure Minerva.
 Maggie has portrait Figure Maggie. 
 Christy has portrait Figure Christy.
+Hutz has portrait Figure Hutz.
 
 Characters is a list of figure names that varies.
 

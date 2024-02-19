@@ -30,12 +30,19 @@ Understand "office/bosh/hq/headquarters/bureau/storefront", "new office" as the 
 
 An automobile is a kind of thing.
 
+Driving is an action applying to one thing. Understand "drive [something]" as driving.
+Check driving something that is not a car:
+	say "You can't drive that." instead;
+
 Car 1 is an automobile in Strip Mall Parking Lot South. It is privately-named. The printed name is "[our] Hyundai". Understand "car", "hyundai", "automobile", "auto" as car 1. The initial appearance of car 1 is "[Our] Hyundai is parked nearby." It is fixed in place. The description is "An old bright red Hyundai Accent, it's been [our] personal means of transportation for years. And since the Bureau lost its fleet, it's [our] work car too.".
 
-Instead of entering car 1:
-	say "[Our] job is here for now.";
+Instead of entering or opening or driving car 1:
+	say "[Agent]'s job is here for now.";
 
 Car 2 is an automobile. It is privately-named. The printed name is "[Chief Klimp]'s Porsche". Understand "car/Klimp's/Porsche/automobile/auto" as car 2. The initial appearance of car 2 is "Klimp's Porsche takes up two spots." It is fixed in place. The description is "Klimp drives a sleek 2017 Porsche 911 Turbo Cabriolet."
+
+Instead of entering or opening or driving car 1:
+	say "That isn't [Agent]'s car.";
 
 	
 To make is a verb.

@@ -1,5 +1,7 @@
 Enigma Lake by Philip Riley begins here.
 
+Include Scheduled People by Philip Riley
+
 Volume 1 - Some Stuff
 
 The correct locker number is a number that varies.
@@ -141,13 +143,50 @@ Instead of going nowhere from the Solvay-Road-by-the-lake:
 
 Book 9 - Shack
 
-a dirty shack is west of Solvay-Road-by-the-lake. It is always-indefinite. It is in ELR.
+a dirty shack is west of Solvay-Road-by-the-lake. It is always-indefinite. It is in ELR. "Someone lives here, though not at all luxuriously. Plates are stacked up by the sink, and the whole place stinks of cat."
 
-Hutz is a man in dirty shack. "Hutz is reclining on a narrow bed." The description is "Hutz is more or less a skeleton in overalls."
+Some plates are scenery in the dirty shack. "Dirty and precariously stacked."
 
-The narrow bed is scenery in the dirty shack. "Clean enough, but awfully narrow, it holds the bony figure of Hutz, the town groundsman."
+A mangy cat is in a dirty shack. The description is "A mangy, old, stripey orange cat."
+Rule for writing a paragraph about the mangy cat:
+	say "[one of]A mangy orange cat peeks out from under the bed[or]A stripey orange cat sits in a corner of the room, grooming itself[or]An orange cat stretches out on the bed[purely at random].";
+	
+Petting is an action applying to one thing. Understand "pet [something]" as petting. Understand "pat [something]" as petting.
 
-The sledgehammer is in the dirty shack.
+Check petting something:
+	say "That's just silly." instead;
+	
+Check petting a person:
+	say "[The noun] probably wouldn't appreciate that." instead;
+
+Check petting the mangy cat:
+	say "The cat purrs and leans into [our] hand." instead;
+
+
+Hutz is a man in dirty shack. Hutz is privately-named. "[A Hutz] is reclining on a narrow bed." The description is "[A Hutz] is more or less a skeleton in overalls." Hutz is adaptively-named and anonymous and not proper-named. 
+	Understand "bony/old/man" as Hutz. 
+	Understand "town/groundskeeper" as Hutz when Hutz is not anonymous.
+	Understand "Hutz" as Hutz when Hutz is met.
+	
+Rule for writing a paragraph about Hutz:
+	if the dirty shack is not visited:
+		say "[A Hutz] lies on a bed in a corner of the shack. He stirs sleepily and says 'Ah, there you are, there you are. Knew you'd be around eventually.'"
+
+The narrow bed is scenery in the dirty shack. "Clean enough, but awfully narrow, it holds [if Hutz is known]the bony figure of Hutz[otherwise][Hutz][end if], the town groundskeeper."
+
+The sledgehammer is in the dirty shack. Understand "hammer" as sledgehammer.
+
+Who-is-Hutz is a questioning quip.
+	The printed name is "who he is".
+	Understand "who are you", "who/he/is" as who-is-hutz.
+	The comment is "[We] [ask], 'You seem to know me, but who are you?'"
+	The reply is "'Name's Hutz, the town groundskeeper.'"
+	It quip-supplies Hutz.
+	It stocks Hutz.
+	
+After discussing who-is-hutz:
+	now Hutz is met;
+	now Hutz is proper-named;
 
 Why-he-is-still-here is a questioning quip.
 	The printed name is "why he's still here".
@@ -155,7 +194,18 @@ Why-he-is-still-here is a questioning quip.
 	The comment is "[We] [ask], 'Why are you still here? The town is being flooded tomorrow.'"
 	The reply is "'Had a feeling someone might come by looking for help. And here you are.'"
 	It quip-supplies Hutz.	
-	It stocks Hutz.
+	It follows Who-is-Hutz.
+	
+How-can-you-help-me is a questioning quip.
+	The printed name is "how he can help [us]".
+	Understand "how/can/you/help/me/us/them/her/him" as how-can-you-help-me.
+	The comment is "'But how can you possibly help me?' [we] [ask]."
+	The reply is "'You're looking for the secret of Enigma Lake, are you not? The secret about to be lost forever? Something calls you here; you're searching for something, no, someone. Yes, yes, Hutz can help you.'"
+	It quip-supplies Hutz.
+	It follows Why-he-is-still-here.
+				
+	
+
 
 Book 10 - Main at Lake
 
@@ -393,6 +443,10 @@ Every turn when location is in ELR:
 		
 		
 Volume 5 - Polish
+
+Table of No Names (continued)
+named person (person)	anonymous description (text)	unnamed description (text)	proper name (text)
+Hutz	"bony old man"	"town groundsman"	"Hutz"
 
 Table of Transitions
 source room (a room)	target room (a room)	transition text (a text)	used (a truth state)

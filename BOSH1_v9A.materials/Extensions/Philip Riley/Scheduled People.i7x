@@ -30,18 +30,19 @@ Book 2 - Adaptive Names
 
 Adaptive Name Table is a table name that varies. Adaptive Name Table is initially the Table of No Names.
 
-A person can be anonymous, unnamed, or known. A person is usually anonymous.
+A person can be anonymous, unnamed, or met. A person is usually anonymous.
 A person can be adaptively-named.
 
-Rule for printing the name of an adaptively-named person (called P):
+Rule for printing the name of an adaptively-named person (called P):	
 	If there is a named person of P in Adaptive Name Table:
 		Choose row with named person of P in Adaptive Name Table;		
 		If P is anonymous: 
 			say the anonymous description entry;
-			now the indefinite article of P is "the";
+			if not expanding text for comparison purposes:
+				now the indefinite article of P is "the";
 		otherwise if P is unnamed:
 			say the unnamed description entry;
-		otherwise if P is known:
+		otherwise if P is met:
 			say the proper name entry;
 		otherwise:
 			dbg "none of the above.";

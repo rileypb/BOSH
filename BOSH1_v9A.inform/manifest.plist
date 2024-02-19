@@ -66,6 +66,8 @@
             <string>Figures/minerva_portrait.png</string>
             <key>32</key>
             <string>Figures/christy_portrait.png</string>
+            <key>33</key>
+            <string>Figures/hutz_portrait.png</string>
         </dict>
     </dict>
 </plist>
