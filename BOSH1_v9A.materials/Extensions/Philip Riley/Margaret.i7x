@@ -136,7 +136,7 @@ Rule for behaving as Margaret when the current behavior of Margaret is throw out
 		if margaret carries the biff-flattened-boxes:
 			now the biff-flattened-boxes are in the Room of Stuff;
 			now Margaret carries the margaret-flattened-boxes;
-	otherwise if the player encloses the biff-flattened-boxes and Margaret does not carry the margaret-flattened-boxes:
+	otherwise if the player encloses the biff-flattened-boxes and Margaret does not carry the margaret-flattened-boxes and Margaret is in the location:
 		say "Margaret sees the boxes in your hands and says, 'No, no, give those to me.' She takes them from your hands.";
 		now Margaret carries the margaret-flattened-boxes;
 		now the biff-flattened-boxes are in the room of stuff;		
