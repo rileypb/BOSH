@@ -63,7 +63,7 @@ An availability rule for for the wrench:
 for-a-screwdriver is a questioning quip.
 	It is privately-named. The printed name is "for a screwdriver". [The true-name is "for-a-screwdriver".] Understand "for/a/screwdriver" as for-a-screwdriver.
 	It mentions the screwdriver.
-	The comment is "[if the current interlocutor is Margaret][We] [ask], 'Margaret, where's the screwdriver?'[line break][otherwise][We] [ask], 'Would you happen to have a screwdriver I could borrow?'[end if]".
+	The comment is "[if the current interlocutor is Margaret][We] [ask], 'Margaret, where's the screwdriver?'[otherwise][We] [ask], 'Would you happen to have a screwdriver I could borrow?'[end if]".
 	The reply is "'Umm... I think it was in a box we had to leave behind.' [Margaret] looks embarrassed. 'What? I never thought we'd need it. This isn't a construction site after all. Maybe if Klimp had paid for the bigger UHaul...' [They] stares past [us] awkwardly.".
 	It quip-supplies Margaret;
 	

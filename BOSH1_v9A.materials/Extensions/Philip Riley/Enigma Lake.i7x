@@ -99,7 +99,9 @@ the Main Street 200 block is south of Enigma Lake Town Hall. It is in ELR. It is
 
 The description is "The street runs east and west from here. South is the edifice of Rolle's Department Store. North is the town hall."
 
-Rolle's facade is a backdrop. It is in Main Street 200 block. It is privately-named. The printed name is "Rolle's Department Store". Understand "rolle's/rolle/department/store" as Rolle's facade. "Once, town department stores like this were a constant of American life before they were gobbled up by the big box stores."
+Rolle's facade is a privately-named unenterable room in Main Street 200 block. It is privately-named. The printed name is "Rolle's Department Store". Understand "rolle's/rolle/department/store" as Rolle's facade. "Once, town department stores like this were a constant of American life before they were gobbled up by the big box stores."
+Instead of entering Rolle's facade:
+	try going south;
 
 Book 4 - Main at Solvay
 
@@ -204,12 +206,30 @@ How-can-you-help-me is a questioning quip.
 	It quip-supplies Hutz.
 	It follows Why-he-is-still-here.
 				
+What-is-the-secret is a questioning quip.
+	The printed name is "about the secret of Enigma Lake".
+	Understand "what/is/the/secret/of/enigma/lake/about" as what-is-the-secret.
+	The comment is "'Secret? What secret?' [we] [ask]."
+	The reply is "'Well, *I* don't know. Just kinda thought you must be searching for some kind of mystical secret, seeing that you're wandering like a fool through a town about to be flooded. But I can help you, yep.'"
+	It quip-supplies Hutz.
+	It follows How-can-you-help-me.
 	
-
+Help-me is a performative quip. 
+	The printed name is "ask Hutz for help".
+	Understand "ask hutz for help" as help-me.
+	Understand "please/-- help me/-- please/--" as help-me.
+	The comment is "[We] [say], 'Okay, how can you help?'"
+	The reply is "'Oh yes, how was I going to help? Afraid I can't remember, sorry.'"
+	It quip-supplies Hutz.
+	It follows How-can-you-help-me.
+	
+After discussing Help-me:
+	do nothing;
+	continue the action;
 
 Book 10 - Main at Lake
 
-Main at Lake is east of Main Street 200 Block. It is in ELR. It is outdoors. The printed name is "Main and Lake". The preposition is "on".
+Main at Lake is east of Main Street 200 Block. It is in ELR. It is outdoors. The printed name is "Main and Lake". The preposition is "at the intersection of". "Main goes west, while Lake runs north. The corner of the town hall is to the northwest, although it cannot be entered there. Southeast is the entrance to WGXC 'Galaxy' Radio. There is a broadcast tower on top of the building." 
 
 Book 11 - Lake Street by the gym
 
@@ -219,21 +239,21 @@ Book 12 - Lake Street by the Park
 
 Lake Street by the park is north of Lake Street by the gym and east of Enigma Park. It is in ELR. It is outdoors. The preposition is "walking on".
 
-Book 13 - First Unitarian Church of Enigma Lake
+Book 13 - First Utilitarian Church of Enigma Lake
 
-First Unitarian Church of Enigma Lake is east of Lake Street by the Park. It is in ELR.
+First Utilitarian Church of Enigma Lake is east of Lake Street by the Park. It is in ELR.
 
-The electrical outlet is scenery in First Unitarian Church of Enigma Lake.
+The electrical outlet is scenery in First Utilitarian Church of Enigma Lake.
 
 Book 14 - Vestry
 
-the vestry is east of First Unitarian Church. It is in ELR. 
+the vestry is east of First Utilitarian Church. It is in ELR. 
 
 The circuit breaker is a scenery device in the vestry. 
 
 Book 15 - Steeple
 
-the steeple is above the First Unitarian Church of Enigma Lake. It is in ELR. 
+the steeple is above the First Utilitarian Church of Enigma Lake. It is in ELR. 
 
 
 Book 16 - Lake at Ridge
@@ -357,19 +377,38 @@ A tuning fork is in Fresnel's Music.
 Book 30 - Henry's Hot Skillet
 
 Henry's Hot Skillet is a room. It is in ELR.
+The description is "This is the epitome of the homey small-town diner of times go by, except for the lack of all furniture, cooking implements, food, decor, and so on. There is a staircase leading up. A pair of insulated wires hangs from the ceiling at one end of the counter. "
 
 the Skillet door is a closed locked openable lockable scenery door. It is south of Main at Solvay and north of Henry's Hot Skillet. The Skillet door has matching key the brass key.
 
+The lunch counter is scenery in Henry's Hot Skillet. "A typical mid-twentieth-century lunch counter."
+
+The wires are scenery in Henry's Hot Skillet. "Two insulated wires with bare ends, they probably once attached to some electrical device sitting on the counter."
+
 Book 31 - Henry's Roof
 
-Henry's Roof is above Henry's Hot Skillet. It is in ELR.
+Henry's Roof is above Henry's Hot Skillet. It is in ELR. The description is "From here one can see much of the town, including a clear view of the obelisk in Enigma Park. There is a large TV aerial antenna jutting from the roof here."
+
+The TV aerial antenna is scenery in Henry's Roof. "A large, metallic rooftop antenna, characterized by its array of horizontal and vertical rods designed to capture VHF (very high frequency) broadcasts."
+
+Obelisk-from-Henry's-Roof is privately-named scenery in Henry's Roof. The printed name is "the Enigma Park obelisk". Understand "obelisk/enigma/park" as Obelisk-from-Henry's-Roof. "There's a clear line of sight from here to the tip of the obelisk."
 
 Book 32 - Rolle's Department Store
 
 Rolle's Department Store is south of Main Street 200 Block. It is in ELR.
-The description is "Once, town department stores like this were a constant of American life."
+The description is "Once, town department stores like this were a constant of American life. Sadly, this one is empty of everything save a number of sale posters and its gleaming floor."
+Main Street 200 Block is outside from Rolle's Department Store.
 
-The floor waxer is in Rolle's Department Store.
+The gleaming floor is scenery in Rolle's Department Store. "Someone has polished it spotless, despite the looming destruction of the store. That's dedication."
+
+Does the player mean doing something to the gleaming floor: 
+	It is very likely;
+	
+The sale posters are scenery in Rolle's Department Store. "'50% off everything in the store!'"
+
+The floor waxer is a fixed in place thing in Rolle's Department Store. "A floor waxer sits in the center of the gleaming floor." The description is "This is a bulky, heavy-duty machine with a large, round brush head, designed for durability and the ability to polish vast floor areas to a high shine."
+
+
 
 Book 33 - Public Gymnasium
 
@@ -430,7 +469,7 @@ Volume 4 - Eerie Sounds
 
 Sound interval is a number that varies.
 
-To spin is a verb.
+To spin is a verb. To cock is a verb.
 
 Every turn when location is in ELR:
 	increment sound interval;
@@ -439,7 +478,7 @@ Every turn when location is in ELR:
 			now sound interval is sound interval - 10;
 			if sound interval > 0:
 				now sound interval is 0;
-			say "[one of]The seeming sound of sibilant speech carries on the breeze[or][We] [turn] [our] head quickly, as if something caught [our] eye[or]A strange shadow crosses the scene[or][We] abruptly [spin] around, but [find] nothing behind [us][or][We] cocks [our] head at a strange sound[or]Distinct footsteps sound from not too far away[or]An unseasonably chilly wind causes [us] to hug [our] shoulders[then at random]."
+			say "[one of]The seeming sound of sibilant speech carries on the breeze[or][We] [turn] [our] head quickly, as if something caught [our] eye[or]A strange shadow crosses the scene[or][We] abruptly [spin] around, but [find] nothing behind [us][or][We] [cock] [our] head at a strange sound[or]Distinct footsteps sound from not too far away[or]An unseasonably chilly wind causes [us] to hug [our] shoulders[then at random]."
 		
 		
 Volume 5 - Polish
@@ -466,7 +505,8 @@ Solvay Road 100 block	{west}	"The fire station's garage door is locked up tight.
 Table of Frustrated Taking (continued)
 target (a thing)	message (a text)	move message (a text)
 membership book	"You hardly need it, and it might useful to someone else."	--
-adornment	"It's too high up."	"It's too high up."
+adornment	"It's too high up."	
+floor waxer	"It's too heavy to lift."
 
 
 [Table of Floors (continued)

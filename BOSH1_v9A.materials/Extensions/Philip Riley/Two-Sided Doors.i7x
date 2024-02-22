@@ -150,9 +150,9 @@ Carry out an actor unlocking a time-locked two-sided door with (this is the star
 	now the lock countdown of the noun is the time lock delay of the noun;	
 
 Check an actor unlocking a two-sided door with (this is the can't unlock a two-sided door without a lock rule):
-	if the location of the actor  is the frontside of the noun and (the noun is front-locks-the-back or the noun is front-locks-the-front):
+	if the location of the actor is the frontside of the noun and (the noun is front-locks-the-back or the noun is front-locks-the-front):
 		continue the action;
-	if the location of the actor  is the backside of the noun and (the noun is back-locks-the-back or the noun is back-locks-the-front):
+	if the location of the actor is the backside of the noun and (the noun is back-locks-the-back or the noun is back-locks-the-front):
 		continue the action;
 	if the actor is the player:
 		say "[can't unlock without a lock description for the noun][line break]";

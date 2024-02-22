@@ -168,16 +168,16 @@ Rule for printing the sound description for something (called T) (this is the de
 	follow the audibility of rules for T;
 	let aud be the outcome of the rulebook;	
 	if aud is the very loud outcome, or aud is the loud outcome:
-		say "[Generic description of T] is [sound of T] somewhere else nearby.";
+		say "[Generic description of T] is [sound of T] somewhere else nearby." (A);
 		rule succeeds;
 	if aud is the moderately loud outcome:
-		say "[Generic description of T] is [sound of T] somewhere else not too far away.";
+		say "[Generic description of T] is [sound of T] somewhere else not too far away." (B);
 		rule succeeds;
 	if aud is the faint outcome:
-		say "[Generic description of T] is [sound of T] faintly somewhere else.";
+		say "[Generic description of T] is [sound of T] faintly somewhere else." (C);
 		rule succeeds;
 	if aud is the very faint outcome:
-		say "[Generic description of T] is [sound of T] somewhere far off.";
+		say "[Generic description of T] is [sound of T] somewhere far off." (D);
 		rule succeeds;
 	rule fails;
 	

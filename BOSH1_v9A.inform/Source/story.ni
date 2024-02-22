@@ -352,7 +352,7 @@ Book 4 - Special Tweaks
 the can't greet current interlocutor rule response (A) is "[We] [don't] generally talk to [ourselves].".
 the can't greet yourself rule response (A) is "[We] [don't] generally talk to [ourselves].".
 [The describe what's on scenery supporters in room descriptions rule does nothing.]
-the can't take what's fixed in place rule response (A) is "That can't be picked up.".
+[the can't take what's fixed in place rule response (A) is "That can't be picked up.".]
 the can't switch on unless switchable rule response (A) is "That can't be switched on and off.".  
 
 The room description body text rule response (A) is "Some light would be nice.".
@@ -394,6 +394,8 @@ After saying hello to someone (called P):
 Book 6 - Messages
 
 The parser error internal rule response (R) is "I[']m not sure what you're trying to say. I might just not recognize the words you're using."
+
+The default sound description rule response (A) is "[Generic description of T] is [sound of T] in another room nearby."
 
 		
 Book 7 - Actions
@@ -856,7 +858,7 @@ The can't reach inside closed containers rule response (A) is "[if the noun is t
 Section 5 - BOSH chief's office 
 
 the BOSH Chief's office is in BOSH HQ. There is a fluorescent light source in the BOSH Chief's office called chief-light.
-"[If the BOSH chief's office is not visited]Looks like the Chief has already moved in.[paragraph break][end if]Chief Klimp's office is full of character. Shelves strewn with knick-knacks abut a cozy armchair and a mahogany side table supporting a large globe. A bookcase on the north wall is packed with books on paranormal happenings. Garish prints adorn the remaining wall space.  Under one of these is a modernistic desk of glass and chrome, behind which is a very nice black leather swivel chair. There is a computer on the desk, and to its side is an antique wooden file cabinet. To tell the truth, it's all a bit much, but it matches Klimp's personality perfectly. There is an exit to the east.[if klimp is in the location][first time]
+The description of the BOSH Chief's office is "[If the BOSH chief's office is not visited]Looks like the Chief has already moved in.[paragraph break][end if]Chief Klimp's office is full of character. Shelves strewn with knick-knacks abut a cozy armchair and a mahogany side table supporting a large globe. A bookcase on the north wall is packed with books on paranormal happenings. Garish prints adorn the remaining wall space.  Under one of these is a modernistic desk of glass and chrome, behind which is a very nice black leather swivel chair. There is a computer on the desk, and to its side is an antique wooden file cabinet. To tell the truth, it's all a bit much, but it matches Klimp's personality perfectly. There is an exit to the east.[if klimp is in the location][first time]
 
 [Klimp] says 'What's with that ringing? Someone answer it!'[only]"
 

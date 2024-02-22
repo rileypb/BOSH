@@ -51,15 +51,18 @@ Check pushing an automobile:
 	say "[We] could probably push the car if [we] put it in neutral and released the parking brake, but why would [we]?" instead;
 
 Check turning an automobile: 
-	say "It's not clear what you mean for [us] to do." instead;
+	say "It's not clear what you mean for [us] to do." instead;	
  
 The Laundromat-facade is a privately-named unenterable room in Parking Lot South. The printed name is "A-plus laundromat". Understand "A-plus/plus/laundromat" as the laundromat-facade. "[We] [peer] through the windows of the laundromat at the rows of aging machines. A sign on the door says 'Closed for renovations'. [We] [turn] away, unimpressed." 
 Instead of entering the laundromat-facade:
 	try going northwest;
 	
-The laundromat sign is a part of the Laundromat-facade. The description is "It's just a piece of stationery marked up with Sharpie and taped to the door. It says 'Closed for renovations'."
+Does the player mean entering the laundromat-facade:
+	it is very likely;
 	
-The laundromat door is a closed and locked scenery shop-door. It is northwest of the parking lot south and southeast of the laundromat-store. The front description is "It's a typical glass door. Taped to it is a sign that says 'Closed for renovations'." The frontside is the strip mall parking lot south. The back description is "It's a typical glass door."
+The laundromat sign is a part of the Laundromat-facade. It is privately-named. The printed name is "laundromat sign". Understand "laundromat/-- sign" as the laundromat sign. The description is "It's just a piece of stationery marked up with Sharpie and taped to the door. It says 'Closed for renovations'."
+	
+The laundromat door is a closed and locked scenery shop-door. It is privately-named. The printed name is "laundromat door". Understand "laundromat/-- door" as the laundromat door. It is northwest of the parking lot south and southeast of the laundromat-store. The front description is "It's a typical glass door. Taped to it is a sign that says 'Closed for renovations'." The frontside is the strip mall parking lot south. The back description is "It's a typical glass door." The laundromat door is front-locked and back-locked.
 	
 Check going northwest from the strip mall parking lot south when the player does not know break-in-to-laundromat: 
 	say "A sign on the laundromat door says 'Closed for renovations'." instead;
@@ -76,7 +79,7 @@ Pawn-Shop-facade is a privately-named unenterable room in Parking Lot South. It 
 
 The flashing neon sign is part of the Pawn-Shop-facade. [Understand "pawn/shop/cash/gold" as flashing neon sign.] The description is "Its flash rate is just a bit over the threshold of irritating."
 	
-The pawn-shop-door is a closed scenery shop-door. It is southwest of the parking lot south and northeast of the Dave's pawn shop. It is privately-named. The printed name is "pawn shop door". Understand "pawn/shop/door" as the pawn-shop-door. The front description is "It's a typical glass door. The light within is too dim to see much." The frontside is the strip mall parking lot south. The back description is "It's a typical glass door."
+The pawn-shop-door is a closed scenery shop-door. It is southwest of the parking lot south and northeast of the Dave's pawn shop. It is privately-named. The printed name is "pawn shop door". Understand "pawn shop door" as the pawn-shop-door. Understand "door" as the pawn-shop-door. The front description is "It's a typical glass door. The light within is too dim to see much." The frontside is the strip mall parking lot south. The back description is "It's a typical glass door."
 
 Instead of entering the pawn-shop-facade:
 	try going southwest;
