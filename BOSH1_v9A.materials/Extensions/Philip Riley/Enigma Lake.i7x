@@ -95,7 +95,7 @@ Park facade is a backdrop. It is in Solvay Road leading out of town, Lake shore 
 
 Book 3 - Main Street 200 Block
 
-the Main Street 200 block is south of Enigma Lake Town Hall. It is in ELR. It is outdoors. The printed name is "200 block of Main Street". The preposition is "on".
+the Main Street 200 block is south of Enigma Lake Town Hall. It is in ELR. It is outdoors. The printed name is "200 block of Main Street". The preposition is "on the".
 
 The description is "The street runs east and west from here. South is the edifice of Rolle's Department Store. North is the town hall."
 
@@ -231,32 +231,44 @@ Book 10 - Main at Lake
 
 Main at Lake is east of Main Street 200 Block. It is in ELR. It is outdoors. The printed name is "Main and Lake". The preposition is "at the intersection of". "Main goes west, while Lake runs north. The corner of the town hall is to the northwest, although it cannot be entered there. Southeast is the entrance to WGXC 'Galaxy' Radio. There is a broadcast tower on top of the building." 
 
-Book 11 - Lake Street by the gym
+Book 11 - WGXC "Galaxy" Radio
+
+Radio Station WGXC is southeast of Main at Lake. It is in ELR. It is indoors. "South is the entrance to the broadcast booth. A staircase runs upwards, presumably to the roof and the broadcast antenna."
+
+Book 12 - Radio Station Roof
+
+The radio station roof is above Radio Station WGXC. It is in ELR.
+
+Book 13 - Broadcast Booth
+
+The broadcast booth is south of Radio Station WGXC. It is in ELR.
+
+Book 14 - Lake Street by the gym
 
 Lake Street by the gym is north of Main at Lake. It is in ELR. It is outdoors. The preposition is "walking on".
 
-Book 12 - Lake Street by the Park
+Book 15 - Lake Street by the Park
 
 Lake Street by the park is north of Lake Street by the gym and east of Enigma Park. It is in ELR. It is outdoors. The preposition is "walking on".
 
-Book 13 - First Utilitarian Church of Enigma Lake
+Book 16 - First Utilitarian Church of Enigma Lake
 
 First Utilitarian Church of Enigma Lake is east of Lake Street by the Park. It is in ELR.
 
 The electrical outlet is scenery in First Utilitarian Church of Enigma Lake.
 
-Book 14 - Vestry
+Book 17 - Vestry
 
 the vestry is east of First Utilitarian Church. It is in ELR. 
 
 The circuit breaker is a scenery device in the vestry. 
 
-Book 15 - Steeple
+Book 18 - Steeple
 
 the steeple is above the First Utilitarian Church of Enigma Lake. It is in ELR. 
 
 
-Book 16 - Lake at Ridge
+Book 19 - Lake at Ridge
 
 the Lake at Ridge is north of Lake Street by the Park. It is in ELR. It is outdoors.
 The printed name is "intersection of Lake Street and Ridge Road". The preposition is "at".
@@ -290,11 +302,11 @@ Understand "start [something]" as switching on.
 Rule for writing a paragraph about the abandoned truck:
 	say "There is an abandoned pickup truck at the side of the road."
 
-Book 17 - Lake Shore north of the park
+Book 20 - Lake Shore north of the park
 
 the lake shore north of the park is west of Lake at Ridge and north of Enigma Park. It is in ELR. It is outdoors. The preposition is "on".
 
-Book 18 - Workshed
+Book 21 - Workshed
 
 the workshed is southeast of the lake shore north of the park. It is in ELR.
 
@@ -304,35 +316,35 @@ The rusty astral resonator is in the equipment box.
 
 The trap door is a door. It is below workshed and above the hidden cave.
 
-Book 19 - Hidden cave
+Book 22 - Hidden cave
 
 a hidden cave is a room. It is in ELR. It is always-indefinite.
 
-Book 20 - Portal room
+Book 23 - Portal room
 
 the portal cave is south of hidden cave. It is in ELR. 
 
-Book 21 - Lake shore west
+Book 24 - Lake shore west
 
 the Lake Shore West is west of Lake Shore North of the Park and north of Solvay Road Leading Out Of Town. It is east of Solvay-Road-by-the-lake. It is in ELR. It is outdoors. The printed name is "west end of the town's lake shore". The preposition is "at".
 
-Book 22 - Horton Family House
+Book 25 - Horton Family House
 
 The Horton House door is a closed openable locked lockable scenery door. It is west of Solvay Road Leading Out Of Town and east of Horton Family House. The Horton House door has matching key the old copper key.
 
 Horton Family House is a room. It is in ELR.
 
-Book 23 - Astral Tunnel
+Book 26 - Astral Tunnel
 
 Fire Station 1 is forthsouth of Horton Family House. It is in ELR
 
-Book 24 - Horton Graveyard
+Book 27 - Horton Graveyard
 
 the Horton graveyard is west of Horton Family House. It is in ELR.
 
 Some gravestones are scenery in the Horton graveyard.
 
-Book 25 - Fire Station 1
+Book 28 - Fire Station 1
 
 The garage door is a closed locked lockable openable scenery door. It is west of Solvay Road 100 block and east of the Fire Station 1. Understand "big/red/door" as garage door.
 
@@ -340,7 +352,7 @@ Fire Station 1 is in ELR. The printed name is "Hook and Ladder Company #1".
 
 The ladder is in the Fire Station 1.
 
-Book 26 - Reading Room
+Book 29 - Reading Room
 
 The Reading Room is west of Main at Solvay. It is in ELR.
 
@@ -348,13 +360,13 @@ The sales counter is scenery in the Reading Room.
 
 Astral Secrets is on the sales counter. The printed name is "[first time]the book [only][italic type]Astral Secrets[roman type]".
 
-Book 27 - Reading Room Basement
+Book 30 - Reading Room Basement
 
 The Book Store Basement is below the Reading Room. It is in ELR.
 
 A bricked up hole in the wall is scenery in the Book Store Basement.
 
-Book 28 - Sewer Tunnel
+Book 31 - Sewer Tunnel
 
 a sewer tunnel 1 is north of book store basement. It is in ELR. It is privately-named. It is always-indefinite. The printed name is "sewer tunnel". Understand "sewer/tunnel" as sewer tunnel 1. ""
 
@@ -368,13 +380,13 @@ astral-tunnel-elr is forthsouth of the gym basement.
 
 The gymnasium basement door is a locked closed openable lockable scenery door. It is north of sewer tunnel 3 and south of the gym basement.
 
-Book 29 - Fresnel's Music
+Book 32 - Fresnel's Music
 
 Fresnel's Music is southwest of Main at Solvay. It is in ELR.
 
 A tuning fork is in Fresnel's Music.
 
-Book 30 - Henry's Hot Skillet
+Book 33 - Henry's Hot Skillet
 
 Henry's Hot Skillet is a room. It is in ELR.
 The description is "This is the epitome of the homey small-town diner of times go by, except for the lack of all furniture, cooking implements, food, decor, and so on. There is a staircase leading up. A pair of insulated wires hangs from the ceiling at one end of the counter. "
@@ -385,15 +397,15 @@ The lunch counter is scenery in Henry's Hot Skillet. "A typical mid-twentieth-ce
 
 The wires are scenery in Henry's Hot Skillet. "Two insulated wires with bare ends, they probably once attached to some electrical device sitting on the counter."
 
-Book 31 - Henry's Roof
+Book 34 - Henry's Roof
 
-Henry's Roof is above Henry's Hot Skillet. It is in ELR. The description is "From here one can see much of the town, including a clear view of the obelisk in Enigma Park. There is a large TV aerial antenna jutting from the roof here."
+Henry's Roof is above Henry's Hot Skillet. It is in ELR. The description is "From here one can see much of the town, including a clear view of the obelisk in Enigma Park. There is a large TV aerial jutting from the roof here." The preposition is "on".
 
 The TV aerial antenna is scenery in Henry's Roof. "A large, metallic rooftop antenna, characterized by its array of horizontal and vertical rods designed to capture VHF (very high frequency) broadcasts."
 
 Obelisk-from-Henry's-Roof is privately-named scenery in Henry's Roof. The printed name is "the Enigma Park obelisk". Understand "obelisk/enigma/park" as Obelisk-from-Henry's-Roof. "There's a clear line of sight from here to the tip of the obelisk."
 
-Book 32 - Rolle's Department Store
+Book 35 - Rolle's Department Store
 
 Rolle's Department Store is south of Main Street 200 Block. It is in ELR.
 The description is "Once, town department stores like this were a constant of American life. Sadly, this one is empty of everything save a number of sale posters and its gleaming floor."
@@ -410,7 +422,7 @@ The floor waxer is a fixed in place thing in Rolle's Department Store. "A floor 
 
 
 
-Book 33 - Public Gymnasium
+Book 36 - Public Gymnasium
 
 The gym door is a closed locked openable lockable scenery door. It is east of Lake Street by the gym and west of the public gymnasium.
 
@@ -432,7 +444,7 @@ Instead of consulting the membership book about something:
 	otherwise:
 		say "You can't find that name in the membership book.";
 
-Book 34 - Gym Basement
+Book 37 - Gym Basement
 
 The gym basement is below the public gymnasium. It is in ELR. "This area is dominated by large banks of lockers."
 

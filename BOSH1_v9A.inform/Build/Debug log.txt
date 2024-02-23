@@ -52,7 +52,7 @@ I've also read BOSH Facts by Philip Riley, which is 94 words long.
 I've also read Image Strip by Philip Riley, which is 2080 words long.
 I've also read Swamp Park by Philip Riley, which is 3549 words long.
 I've also read Margaret by Philip Riley, which is 1286 words long.
-I've also read Enigma Lake by Philip Riley, which is 4323 words long.
+I've also read Enigma Lake by Philip Riley, which is 4406 words long.
 I've also read Gender Options by Nathanael Nerode, which is 7730 words long.
 I've also read Followup Questions by Philip Riley, which is 196 words long.
 I've also read Make Test by Philip Riley, which is 216 words long.
@@ -242,9 +242,9 @@ Phase XII ... Code generation
                                                             Fail: list of numbers (~) number = nothing
                                             Fail: nothing (~) real number = nothing
                                             Fail: list of numbers (~) real number = nothing
-        Regional: CONSTANT_VNT'bosh hq'-region(I524_bosh_hq)(I413'bosh hq')
+        Regional: CONSTANT_VNT'bosh hq'-region(I527_bosh_hq)(I416'bosh hq')
          == region
-        Regional: CONSTANT_VNT'bosh hq'-region(I524_bosh_hq)(I413'bosh hq')
+        Regional: CONSTANT_VNT'bosh hq'-region(I527_bosh_hq)(I416'bosh hq')
          == region
         Regional: CONSTANT_VNT'laundromat-region'-region(I342_laundromat_region)(I239'laundromat-region')
          == region
@@ -300,7 +300,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 217 files written as streams.
-CPU time: 521 centiseconds
+CPU time: 519 centiseconds
 
 
 That concludes the debugging log from this run of Inform.
