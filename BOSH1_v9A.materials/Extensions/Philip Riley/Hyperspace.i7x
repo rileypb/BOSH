@@ -405,7 +405,68 @@ Maggie is a woman in field office reception.
 the field office hallway is west of field office reception. It is in field office area. "Hallway".
 
 Minerva's office is north of the field office hallway. It is in field office area.
-Minerva is a woman in Minerva's office.
+Minerva is a woman in Minerva's office. The initial appearance is "Minerva is sitting at her desk, typing away on her computer." 
+
+A mahogany desk is in Minerva's office. It is scenery. The description is "The desk is cluttered with papers and a few books.".
+
+A coffee maker is on the mahogany desk. It is scenery. The description is "A drip coffee maker sits on the desk."
+
+The cup of coffee is a thing. The description is "[Coffee description].". The cup of coffee has a number called the hotness.
+
+To say coffee description:
+	if the hotness of the cup of coffee is greater than 25:
+		say "The coffee is steaming hot";
+	otherwise if the hotness of the cup of coffee is greater than 20:
+		say "The coffee is hot";
+	otherwise if the hotness of the cup of coffee is greater than 10:
+		say "The coffee is warm";
+	otherwise if the hotness of the cup of coffee is greater than 5:
+		say "The coffee is tepid";
+	otherwise:
+		say "The coffee is cold";
+
+Every turn when the cup of coffee is somewhere and the hotness of the cup of coffee is greater than 0:
+	decrease the hotness of the cup of coffee by 1;
+
+Drinking is an action applying to one thing. Understand "drink [something]" as drinking.
+
+Check drinking something when the noun is not the cup of coffee:
+	say "You can't drink that." instead;
+
+Carry out drinking the cup of coffee:
+	if the hotness of the cup of coffee is greater than 20:
+		say "The coffee is too hot to drink.";
+	otherwise if the hotness of the cup of coffee is greater than 10:
+		say "The coffee is hot, but drinkable. MMMM. That's good coffee.";
+		now the cup of coffee is nowhere;
+	otherwise if the hotness of the cup of coffee is greater than 5:
+		say "The coffee is warm. MMMM. That's mildly satisfactory coffee.";
+		now the cup of coffee is nowhere;
+	otherwise:
+		say "The coffee is cold. You dump it out.";
+		now the cup of coffee is nowhere;
+
+about coffee is a questioning quip.
+	The printed name is "for a cup of coffee".
+	Understand "can i have a/-- coffee" as about coffee.
+	Understand "for/a/cup/of/coffee" as about coffee.
+	The comment is "[We] [say], 'I could use a coffee.'".
+	The reply is "Minerva looks up from her computer. 'Sure, help yourself'".
+	it quip-supplies Minerva.
+
+An availability rule for about coffee:
+	if the cup of coffee is nowhere:
+		always available;
+
+A plausibility rule for about coffee:
+	it is plausible.
+
+To pour is a verb.
+
+After discussing about coffee:
+	say "[We] [pour] [ourselves] a cup of coffee in a styrofoam cup from the coffee maker.";
+	now the player carries the cup of coffee;
+	now the hotness of the cup of coffee is 30;
 
 the field office chief's office is west of the field office hallway. It is in field office area. "Doris's office".
 

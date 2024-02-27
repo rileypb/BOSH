@@ -37,6 +37,7 @@ Include Early Declarations by Philip Riley.
 [Include Farseeing by Philip Riley.]
 Include Basics by Philip Riley.
 Include Memories by Philip Riley. 
+Include Building Facades by Philip Riley.
  
 Include Simple Conversation by Philip Riley.
 Include Hyperspace by Philip Riley.	
@@ -46,7 +47,7 @@ Include Swamp Park by Philip Riley.
 [Include Conversations General by Philip Riley.]
 Include Margaret by Philip Riley. 
 Include Enigma Lake by Philip Riley. 
- 
+
 Include Gender Options by Nathanael Nerode.   
   	
 Include Followup Questions by Philip Riley.
@@ -450,8 +451,14 @@ Instead of an actor saying hello to someone when the noun is busy with respect t
 Instead of quizzing someone about something when the noun is busy with respect to the actor:
 	say "[The noun] is on the phone.";
 
+Instead of asking someone for something when the noun is busy with respect to the actor:
+	say "[The noun] is on the phone.";
 
-Chief Huffton Klimp is a man. The printed name of Klimp is "Chief Klimp". The description is "Huffton Klimp, or simply 'The Chief', who by his name and title should rightly be big and gruff, is a wiry guy with a thinning shock of red hair on top. Once the youngest and most devoted recruit in the Bureau, the years and his promotion to Bureau Head have not dulled his enthusiasm and idealism."
+Instead of asking someone to try doing something when the noun is busy with respect to the actor:
+	say "[The noun] is on the phone.";
+
+
+Chief Huffton Klimp is a man. The printed name of Klimp is "Chief Klimp". The description is "Huffton Klimp, or simply 'The Chief', who by his name and title should rightly be big and gruff, is a wiry guy with a thinning shock of red hair on top. Once the youngest and most devoted recruit in the Bureau, the years and his promotion to Bureau Head have not dulled his enthusiasm and idealism. He's a true believer in the existence of aliens, and he's convinced that the Bureau is the only thing standing between humanity and the alien menace. He's also convinced that the Bureau is the only thing standing between him and a comfortable retirement. He's a good guy, but he's a bit of a pain."
 
 Klimp carries a mobile phone called klimp's mobile phone. Klimp owns Klimp's mobile phone. Klimp's mobile phone number is a phone number. Klimp's mobile phone number reaches Klimp's mobile phone. The player knows klimp's mobile phone number. Klimp knows Biff's mobile number.
 
@@ -459,7 +466,7 @@ To tell klimp something he already knows:
 	say "Klimp looks at [us] funny. 'Uh, yeah, you already told me that.'";
 	
 Response of Klimp when asked about aliens:
-	Say "Klimp assumes his lecturing pose. 'You know what I think, of course. They're here, they've been here for decades, maybe centuries, and they're a menace to the human race.'"
+	Say "Klimp assumes his lecturing pose. 'You know what I think, of course. They're here, they've been here for decades, maybe centuries, and they're a menace to the human race. We're the only thing standing between them and the end of the world.'";
 	
 Greeting response for Klimp:
 	say "Good day.";
@@ -518,9 +525,9 @@ Rule for writing a paragraph about Margaret Chao when the location is front offi
 	if front office is not visited:
 		say ", unpacking boxes and assembling an approximation of a respectable front office, all as if the Bureau isn't going to be shut down before the year is out";
 		say ". She sees [player's surname] and practically [squeal]. '[agent]! I'm sorry -- [player's forename]! How are you? I hope you don't mind -- I took the liberty of putting your desk together. I just love hex wrenches, don't you? Also, your new phone is here. I put it in your desk. Now I just need you to give me your old phone so I can deactivate it.'[paragraph break]";
-		say "[Player] [hand] Margaret [our] old phone. [Margaret] [tap] a few keys on [their] computer and [say] 'There! All settled.'";
-		lb;
 		say "'Oh, good', [we] [say]. 'Our phone downgrades have arrived from our bureaucratic betters.'";
+		lb;
+		say "[Player] [hand] Margaret [our] old phone. [Margaret] [tap] a few keys on [their] computer and [say] 'There! All settled.'";
 		[now the current interlocutor is margaret;]
 		now the green smartphone is nowhere;
 		now biff's mobile number reaches the blue flipphone;
@@ -994,7 +1001,7 @@ After putting a loanable tome on Moira's bookshelves:
 	
 
 What do you want to borrow is a question.
-	The expected responses are { Tribes of New York, Applied Speculation, Biking to the Ferry, No-Myth-After-All, Twenty-great-theses }.
+	The expected responses are { Tribes of New York, Applied Speculation, Biking to the Ferry, No-Myth-After-All, Twenty-great-theses, Anatomy of a Hoax, Nonstandard Investigative Techniques, Calculus-with-Infinitesimals, Three Stigmata of Palmer Eldritch }.
 	The result is book-borrowing.
 	
 

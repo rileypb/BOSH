@@ -16,7 +16,7 @@ The Strip Mall Parking Lot South is a room. The printed name is "south end of th
 The description of the Strip Mall Parking Lot South is "From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north."
 
 
-Index map with Strip Mall Parking Lot South mapped east of front office.
+[Index map with Strip Mall Parking Lot South mapped east of front office.]
 
 The Office_ is an unenterable room in Parking Lot South. The printed name is "office". "[We] [gaze] stoically at the sad little storefront that is the new BOSH office. The sign from the previous tenant is still up: 'Angel[']s Department Store'. Through the front window can be seen Margaret, in her usual manic work mode.".
 Instead of entering the office_:
@@ -61,6 +61,10 @@ Does the player mean entering the laundromat-facade:
 	it is very likely;
 	
 The laundromat sign is a part of the Laundromat-facade. It is privately-named. The printed name is "laundromat sign". Understand "laundromat/-- sign" as the laundromat sign. The description is "It's just a piece of stationery marked up with Sharpie and taped to the door. It says 'Closed for renovations'."
+
+The laundromat window is a part of the Laundromat-facade. It is privately-named. The printed name is "laundromat window". Understand "laundromat/-- window/windows" as the laundromat window. The description is "They haven't been washed for a while. Through them you can see the sad state of the crumbling laundromat."
+
+The washing machines are a part of the Laundromat-facade. They are privately-named.
 	
 The laundromat door is a closed and locked scenery shop-door. It is privately-named. The printed name is "laundromat door". Understand "laundromat/-- door" as the laundromat door. It is northwest of the parking lot south and southeast of the laundromat-store. The front description is "It's a typical glass door. Taped to it is a sign that says 'Closed for renovations'." The frontside is the strip mall parking lot south. The back description is "It's a typical glass door." The laundromat door is front-locked and back-locked.
 	
