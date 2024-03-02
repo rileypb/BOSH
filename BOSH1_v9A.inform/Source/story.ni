@@ -57,6 +57,7 @@ Include Make Test by Philip Riley.
 Use MAX_OBJ_PROP_COUNT of 128.
 Use MAX_STATIC_DATA of 360000.
 Use MAX_PROP_TABLE_SIZE of 400000.
+Use MAX_NUM_STATIC_STRINGS of 400000.
 
 Work Title is always "The Bureau of Strange Happenings".  
  
@@ -431,7 +432,7 @@ Chapter 1 - Subjects and Facts
 
 Senator Savra is a man. he is in the Room of Stuff. Savra is familiar. [The help text of senator savra is "Our nemesis, intent on the abolition of BOSH.".]
 
-spacetime is a subject. Understand "time" as spacetime. The printed name is "Time". [the help text of SpaceTime is "According to Wikipedia, time is the continued sequence of existence and events that occurs in an apparently irreversible succession from the past, through the present, into the future.".]
+[spacetime is a subject. Understand "time" as spacetime. The printed name is "Time". the help text of SpaceTime is "According to Wikipedia, time is the continued sequence of existence and events that occurs in an apparently irreversible succession from the past, through the present, into the future.".]
 
 aliens is a subject. Understand "UFO/UFOs" as aliens.
 
@@ -1306,6 +1307,13 @@ lensing is an action applying to nothing. Understand "lens" as lensing.
 
 Carry out lensing: 
 	now the player wears the pair of astral lenses;
+
+jumping to the past is an action applying to nothing. Understand "past" as jumping to the past.
+
+Carry out jumping to the past:
+	move the player to field office hallway;
+	now the portal to the past is activated;
+	now the green smartphone is nowhere;
 	
 jumping to part 3 is an action applying to nothing. Understand "enigma" as jumping to part 3.
 

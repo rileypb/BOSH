@@ -171,9 +171,11 @@ The shack facade is a building facade. It is in Solvay-Road-by-the-lake. It is p
 
 Book 9 - Shack
 
-a dirty shack is a leavable room. It has egress east. It is west of Solvay-Road-by-the-lake. It is always-indefinite. It is in ELR. "Someone lives here, though not at all luxuriously. Plates are stacked up by the sink, and the whole place stinks of cat."
+a dirty shack is a leavable room. It has egress east. It is west of Solvay-Road-by-the-lake. It is always-indefinite. It is in ELR. "Someone lives here, though not at all luxuriously. Plates are stacked up by the sink, and there's a pile of used coffee cups in the corner. The whole place stinks of cat."
 
 Some plates are scenery in the dirty shack. "Dirty and precariously stacked."
+
+The used coffee cups are scenery in the dirty shack. "A pile of used paper coffee cups. This guy must love his coffee."
 
 A mangy cat is in a dirty shack. The description is "A mangy, old, stripey orange cat."
 Rule for writing a paragraph about the mangy cat:
@@ -226,7 +228,7 @@ Why-he-is-still-here is a questioning quip.
 	
 How-can-you-help-me is a questioning quip.
 	The printed name is "how he can help [us]".
-	Understand "how/can/you/help/me/us/them/her/him" as how-can-you-help-me.
+	Understand "how/can/you/he/help/me/us/them/her/him" as how-can-you-help-me.
 	The comment is "'But how can you possibly help me?' [we] [ask]."
 	The reply is "'You're looking for the secret of Enigma Lake, are you not? The secret about to be lost forever? Something calls you here; you're searching for something, no, someone. Yes, yes, Hutz can help you.'"
 	It quip-supplies Hutz.
@@ -249,10 +251,32 @@ Help-me is a performative quip.
 	It quip-supplies Hutz.
 	It follows How-can-you-help-me.
 
+Now-can-you-help-me is a questioning quip.
+	The printed name is "if he can now help [us]".
+	Understand "if/now/can/you/help/me/us/them/her/him" as now-can-you-help-me.
+	The comment is "'Now, you've had your coffee. Can you help me?' [we] [ask]."
+	The reply is "'I found something. Something that might help you. It's in the supply shed. In the cabinet. You'll need the key.' At this, Hutz pulls out a rusty key ring, pulls off an iron key and hands it to you."
+	It quip-supplies Hutz.
+
+The iron key is a key. The description is "A heavy iron key, it looks like it might fit a padlock."
+
+After discussing Now-can-you-help-me:
+	now the player carries the iron key;
+
+Hutz-needs-coffee is a truth state that varies. Hutz-needs-coffee is false.
 
 After discussing Help-me:
-	do nothing;
-	continue the action;
+	now Hutz-needs-coffee is true;
+
+Instead of giving the cup of coffee to Hutz when Hutz-needs-coffee is true:
+	if the hotness of the cup of coffee < 25:
+		say "Hutz takes the coffee and sniffs it. 'Cold,' he says, even though the stuff is still plenty hot. 'I can't drink this.' He tosses the coffee into the pile of used cups.";
+		remove the cup of coffee from play;
+	otherwise:
+		say "Hutz takes the coffee and drinks it down in one gulp. 'Ah, that's the stuff,' he says. 'Now, what can I do for you?'";
+		now Hutz-needs-coffee is false;
+		remove the cup of coffee from play;
+		queue Hutz with Now-can-you-help-me;
 
 Book 10 - Main at Lake
 

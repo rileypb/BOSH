@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 10173 words long.
+I've now read your source text, which is 10208 words long.
 
 
 -----------------------------------------------------
@@ -47,13 +47,13 @@ I've also read Early Declarations by Philip Riley, which is 23 words long.
 I've also read Basics by Philip Riley, which is 195 words long.
 I've also read Memories by Philip Riley, which is 243 words long.
 I've also read Building Facades by Philip Riley, which is 163 words long.
-I've also read Simple Conversation by Philip Riley, which is 1935 words long.
-I've also read Hyperspace by Philip Riley, which is 4574 words long.
+I've also read Simple Conversation by Philip Riley, which is 2143 words long.
+I've also read Hyperspace by Philip Riley, which is 5417 words long.
 I've also read BOSH Facts by Philip Riley, which is 94 words long.
 I've also read Image Strip by Philip Riley, which is 2080 words long.
 I've also read Swamp Park by Philip Riley, which is 3595 words long.
 I've also read Margaret by Philip Riley, which is 1286 words long.
-I've also read Enigma Lake by Philip Riley, which is 7331 words long.
+I've also read Enigma Lake by Philip Riley, which is 7586 words long.
 I've also read Gender Options by Nathanael Nerode, which is 7730 words long.
 I've also read Followup Questions by Philip Riley, which is 196 words long.
 I've also read Make Test by Philip Riley, which is 216 words long.
@@ -138,7 +138,7 @@ Regional: CONSTANT_VNT'field office area'-region(I250_field_office_area)(I156'fi
  == region
 Regional: CONSTANT_VNT'field office area'-region(I250_field_office_area)(I156'field office area')
  == region
-Regional: CONSTANT_VNT'elr'-region(I399_elr)(I292'elr')
+Regional: CONSTANT_VNT'elr'-region(I402_elr)(I295'elr')
  == region
 
 
@@ -243,17 +243,17 @@ Phase XII ... Code generation
                                                             Fail: list of numbers (~) number = nothing
                                             Fail: nothing (~) real number = nothing
                                             Fail: list of numbers (~) real number = nothing
-        Regional: CONSTANT_VNT'bosh hq'-region(I549_bosh_hq)(I436'bosh hq')
+        Regional: CONSTANT_VNT'bosh hq'-region(I554_bosh_hq)(I441'bosh hq')
          == region
-        Regional: CONSTANT_VNT'bosh hq'-region(I549_bosh_hq)(I436'bosh hq')
+        Regional: CONSTANT_VNT'bosh hq'-region(I554_bosh_hq)(I441'bosh hq')
          == region
-        Regional: CONSTANT_VNT'laundromat-region'-region(I350_laundromat_region)(I245'laundromat-region')
+        Regional: CONSTANT_VNT'laundromat-region'-region(I353_laundromat_region)(I248'laundromat-region')
          == region
-        Regional: CONSTANT_VNT'laundromat-region'-region(I350_laundromat_region)(I245'laundromat-region')
+        Regional: CONSTANT_VNT'laundromat-region'-region(I353_laundromat_region)(I248'laundromat-region')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I399_elr)(I292'elr')
+        Regional: CONSTANT_VNT'elr'-region(I402_elr)(I295'elr')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I399_elr)(I292'elr')
+        Regional: CONSTANT_VNT'elr'-region(I402_elr)(I295'elr')
          == region
         Regional: CONSTANT_VNT'field office area'-region(I250_field_office_area)(I156'field office area')
          == region
@@ -300,8 +300,8 @@ Providing for a total heap of 16384, given requirement of 9992
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 220 files written as streams.
-CPU time: 515 centiseconds
+Total of 224 files written as streams.
+CPU time: 551 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

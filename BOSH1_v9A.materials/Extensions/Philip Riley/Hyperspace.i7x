@@ -433,17 +433,22 @@ Drinking is an action applying to one thing. Understand "drink [something]" as d
 Check drinking something when the noun is not the cup of coffee:
 	say "You can't drink that." instead;
 
+To dump is a verb.
+
 Carry out drinking the cup of coffee:
-	if the hotness of the cup of coffee is greater than 20:
+	if the hotness of the cup of coffee is greater than 25:
 		say "The coffee is too hot to drink.";
-	otherwise if the hotness of the cup of coffee is greater than 10:
+	otherwise if the hotness of the cup of coffee is greater than 20:
 		say "The coffee is hot, but drinkable. MMMM. That's good coffee.";
 		now the cup of coffee is nowhere;
-	otherwise if the hotness of the cup of coffee is greater than 5:
+	otherwise if the hotness of the cup of coffee is greater than 10:
 		say "The coffee is warm. MMMM. That's mildly satisfactory coffee.";
 		now the cup of coffee is nowhere;
+	otherwise if the hotness of the cup of coffee is greater than 10:
+		say "The coffee is tepid yet barely drinkable.";
+		now the cup of coffee is nowhere;
 	otherwise:
-		say "The coffee is cold. You dump it out.";
+		say "The coffee is cold. [We] [dump] it out.";
 		now the cup of coffee is nowhere;
 
 about coffee is a questioning quip.
@@ -451,20 +456,52 @@ about coffee is a questioning quip.
 	Understand "can i have a/-- coffee" as about coffee.
 	Understand "for/a/cup/of/coffee" as about coffee.
 	The comment is "[We] [say], 'I could use a coffee.'".
-	The reply is "Minerva looks up from her computer. 'Sure, help yourself'".
+	The reply is "Minerva looks up from her computer. 'Sure, help yourself.'".
 	it quip-supplies Minerva.
+	It is repeatable.
+	It is always-available.
 
-An availability rule for about coffee:
-	if the cup of coffee is nowhere:
+[An availability rule for about coffee (this is the serve coffee rule):
+	if the cup of coffee is off-stage:
 		always available;
+	otherwise:
+		never available;]
 
-A plausibility rule for about coffee:
-	it is plausible.
+A plausibility rule for about coffee (this is the coffee plausibility rule):
+	if the cup of coffee is off-stage:
+		it is plausible;
+	otherwise:
+		it is implausible.
+
+To say pretty region:
+	if the location of the cup of coffee is regionally in field office area:
+		say "the hyperspace field office";
+	otherwise if the location of the cup of coffee is regionally in hyperspace:
+		say "hyperspace";
+	otherwise if the location of the cup of coffee is regionally in BOSH HQ:
+		say "BOSH Headquarters in Swamp Park";
+	otherwise if the location of the cup of coffee is regionally in ELR:
+		say "Enigma Lake";
+	otherwise if the location of the cup of coffee is regionally in laundromat-region:
+		say "the laundromat";
+	otherwise if the location of the cup of coffee is regionally in Swamp Park:
+		say "Swamp Park";
+	otherwise: 
+		say "an unknown area";
+
+Instead of discussing about coffee when the cup of coffee is not off-stage:
+	say "[We] should probably drink the coffee [we] already [have] before getting more.[run paragraph on]";
+	if the player does not enclose the cup of coffee:
+		let cup home be the location of the cup of coffee;
+		say " (If you've lost track of it, it's [preposition of the location of the cup of coffee] [if the cup home is always-indefinite][a cup home][otherwise][the cup home][end if], in [pretty region].)";
+	otherwise:
+		lb;
+		
 
 To pour is a verb.
 
 After discussing about coffee:
-	say "[We] [pour] [ourselves] a cup of coffee in a styrofoam cup from the coffee maker.";
+	say "[reset LPR][We] [pour] [ourselves] a cup of coffee in a styrofoam cup from the coffee maker.";
 	now the player carries the cup of coffee;
 	now the hotness of the cup of coffee is 30;
 
@@ -479,14 +516,82 @@ Christy is a nonbinary in Christy's office.
 Portal Room 1 is forth of the field office hallway. It is in field office area.
 
 The portal to the past is in Portal Room 1. The portal to the past can be activated. it is fixed in place.
-The description is "In the middle of the room looms a large portal made of the same astral stuff this whole dimension is made of[if activated]. Within the portal is a shimmering field of light[otherwise]. There is nothing within the portal[end if]."
+
+To say portal interior description:
+	if the portal to the past is activated:
+		if the current spacetime setting is the Town Hall spaceTime setting or the current spacetime setting is the Shack spaceTime setting:
+			say ". The field of light is a shimmering curtain of light, leading to another time and place";
+		otherwise:
+			say ". The portal is dark and inactive";
+	otherwise:
+		say ". The portal is dark and inactive";
+
+The description is "In the middle of the room looms a large portal made of the same astral stuff this whole dimension is made of[portal interior description]."
+
+Rule for writing a paragraph about the portal to the past:
+	say the description of the portal to the past;
 
 Instead of entering the portal to the past when the portal to the past is not activated:
 	say "[We] [walk] straight through it and nothing happens.";
 
 Instead of entering the portal to the past when the portal to the past is activated:
-	say "[We] [enter] the field of light, and [we] [are] suddenly somewhere else.";
-	move the player to the Enigma Lake Town Hall;
+	if the current spacetime setting is the Town Hall spaceTime setting:
+		say "[We] [enter] the field of light, and [we] [are] suddenly somewhere else.";
+		move the player to the Enigma Lake Town Hall;
+	otherwise if the current spacetime setting is the Shack spaceTime setting:
+		say "[We] [enter] the field of light, and [we] [are] suddenly somewhere else.";
+		move the player to Solvay-Road-by-the-lake;
+	otherwise:
+		say "Nothing happens. It's just an empty archway.";
+
+Section - Time Control
+
+The current spacetime setting is a number that varies. The current spacetime setting is 62358234.
+The town hall spacetime setting is always 62358234.
+The shack spacetime setting is always 62357123.
+
+The spacetime control is a part of the portal to the past. The description is "A control panel is attached to the portal. It has a display and a keypad. The display reads '[current spacetime setting].'"
+
+The keypad is a part of the spacetime control. The description is "A standard numeric keypad. The font on the keys is really cool and science fictiony."
+
+The display is a part of the spacetime control. The description is "The display reads '[current spacetime setting].'"
+
+Typing it into is an action applying to one number and one thing. Understand "type [number] into [something]" as typing it into.
+
+The typing it into action has a number called the original setting.
+
+Setting action variables for typing a number into something: 
+	now the original setting is the current spacetime setting;
+	say "original setting = [original setting]";
+
+Check typing into something:
+	if the second noun is not the spacetime control and the second noun is not the keypad:
+		say "That's not something you can type into." instead;
+
+Carry out typing into the spacetime control:
+	let the input be the number understood;
+	now the current spacetime setting is the input;
+
+Report typing into the spacetime control:
+	say "The display now reads '[current spaceTime Setting].'";
+	let originally_on be false;
+	if the original setting is the town hall spacetime setting:
+		now originally_on is true;
+	if the original setting is the shack spacetime setting:
+		now originally_on is true;
+	let now_on be false;
+	if the current spacetime setting is the town hall spacetime setting:
+		now now_on is true;
+	if the current spacetime setting is the shack spacetime setting:
+		now now_on is true;
+	if originally_on is true and now_on is false:
+		say "The shimmering curtain in the portal fades and disappears.";
+	otherwise if originally_on is false and now_on is true:
+		say "The shimmering curtain in the portal reappears.";
+	otherwise:
+		say "Nothing obvious happens.";
+
+Section - Portal 2
 
 Portal Room 2 is back of the field office hallway. It is in field office area.
 
