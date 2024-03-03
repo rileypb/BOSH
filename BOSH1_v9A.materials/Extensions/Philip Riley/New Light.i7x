@@ -20,7 +20,7 @@ Definition: a room is fluorescent-lit:
 	
 Hyperlight is a backdrop. It is everywhere. It is unlit. It is privately-named. It is undescribed.
 
-Adjacent light is a backdrop. It is everywhere. It is unlit. It is undescribed. Adjacent light can be adjlight. Adjacent light is adjlight. The adjlight property translates into I6 as "adjlight"; 
+Adjacent light is a backdrop. It is everywhere. It is unlit. It is undescribed. It is privately-named. Adjacent light can be adjlight. Adjacent light is adjlight. The adjlight property translates into I6 as "adjlight"; 
 
 
 To decide if (T - an object) offers its own light:

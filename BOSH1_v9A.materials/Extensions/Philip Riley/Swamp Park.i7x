@@ -154,6 +154,16 @@ Dave's pawn shop is a room. It is proper-named. "This is more the seedy, gloomy 
 
 The destination name is "Dave's pawn shop".
 
+The blinds are scenery in Dave's pawn shop. "The blinds are closed, leaving the room in a dim light." Understand "windows/blind/window" as the blinds.
+
+The fluorescent lights are scenery in Dave's pawn shop. "The lights are flickering and buzzing." Understand "light" as the fluorescent lights.
+
+The glass counter is a supporter in Dave's pawn shop. It is scenery. "The counter is arrayed with displays of jewelry, watches, and the like."
+
+Some jewelry is scenery in Dave's pawn shop. "[We] [don't] need any of this stuff." Understand "necklace/necklaces/ring/rings/bracelet/bracelets/watch/watches" as jewelry.
+
+The firearms are scenery in Dave's pawn shop. "Although as an agent [we] [have] the right to carry a firearm, [we] [don't] need to buy one here." Understand "gun/guns/firearm/firearms" as firearms.
+
 There is a fluorescent light source in Dave's pawn shop called pawn-light.
 
 Dave's pawn shop is in Swamp Park.

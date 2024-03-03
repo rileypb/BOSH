@@ -2,6 +2,7 @@ Enigma Lake by Philip Riley begins here.
 
 Include Building Facades by Philip Riley.
 Include Scheduled People by Philip Riley.
+Include Secret Doors by Gavin Lambert.
 
 Volume 1 - Some Stuff
 
@@ -119,9 +120,9 @@ Book 4 - Main at Solvay
 
 Main at Solvay is west of Main Street 200 Block. It is in ELR. It is outdoors. The printed name is "Main and Solvay". The preposition is "on the corner of".
 
-The description is "Main Street runs east from here, while Solvay Road heads north. South of here, Henry's Hot Skillet promises all of the comforts of the mid-twentieth-century diner. A book store named The Reading Room lies to the west, while Fresnel's Music is southwest."
+The description is "Main Street runs east from here, while Solvay Road heads north. South of here, Henry's Hot Skillet promises all of the comforts of the mid-twentieth-century diner. A bookstore named The Reading Room lies to the west, while Fresnel's Music is southwest."
 
-Henry's facade is a building facade. It is in Main at Solvay. It is privately-named. The printed name is "Henry's Hot Skillet".  Understand "Henry/Henry's/Hot/Skillet/diner/restaurant" as Henry's facade. "Henry's is closed, the neon skillet dark and motionless."
+Henry's facade is a building facade. It is in Main at Solvay. It is privately-named. The printed name is "Henry's Hot Skillet".  Understand "Henry/Henry's/Hot/Skillet/diner/restaurant" as Henry's facade. "Henry's, the local diner, is closed, the neon skillet dark and motionless."
 	Henry's facade fronts Henry's Hot Skillet.
 	It is enterable from Main at Solvay.
 
@@ -157,6 +158,8 @@ Book 8 - Solvay Road by the lake
 
 Solvay-Road-by-the-lake is northwest of Solvay Road leading out of town. It is in ELR. It is outdoors. The preposition is "walking on". It is privately-named. The printed name is "Solvay Road by the lake". Understand "Solvay/Road/by/the/lake" as Solvay-Road-by-the-lake.
 
+The description is "Solvay Road runs by the lake shore here. It continues out of town to the northwest, while to the southeast it leads back into town. A dirty shack stands opposite the lake to the west. A path along the shore leads to the east."
+
 Instead of going nowhere from the Solvay-Road-by-the-lake:
 	let dir be noun part of current action;
 	if dir is northwest:
@@ -191,7 +194,6 @@ Check petting a person:
 
 Check petting the mangy cat:
 	say "The cat purrs and leans into [our] hand." instead;
-
 
 Hutz is a man in dirty shack. Hutz is privately-named. "[A Hutz] is reclining on a narrow bed." The description is "[A Hutz] is more or less a skeleton in overalls." Hutz is adaptively-named and anonymous and not proper-named. 
 	Understand "bony/old/man" as Hutz. 
@@ -304,7 +306,11 @@ Instead of going up when the location is the radio station roof:
 	
 Book 13 - Broadcast Booth
 
-The broadcast booth is south of Radio Station WGXC. It is in ELR.
+The broadcast booth is south of Radio Station WGXC. It is in ELR. "The broadcast booth is a small room with a window looking out into the rest of the station. A microphone is set up on a stand, and a soundboard is set into the wall."
+
+The microphone is scenery in the broadcast booth. "A microphone is set up on a stand."
+
+The soundboard is scenery in the broadcast booth. "The soundboard is a complex piece of equipment, with many sliders and buttons. It's not clear how it works."
 
 Book 14 - Lake Street by the gym
 
@@ -312,6 +318,8 @@ Lake Street by the gym is north of Main at Lake. It is in ELR. It is outdoors. T
 The description is "Lake Street runs north and south from here. To the east is the public gymnasium, while to the west is the town hall, which is not enterable from here."
 
 The gymnasium facade is a building facade. It is in Lake Street by the gym. It is privately-named. The printed name is "public gymnasium". Understand "gymnasium/gym" as gymnasium facade. "The sign over the door says 'Enigma Lake Gymnasium'."
+	The gymnasium facade fronts Enigma Lake Gymnasium.
+	It is enterable from Lake Street by the gym.
 
 Instead of entering the gymnasium facade:
 	say "The door is locked.";
@@ -349,14 +357,12 @@ Instead of examining the Book of Utilitarianism:
 	otherwise:
 		say "The text is the 'Book of Utilitarianism'. [We] [open] to a page at random and [read] the text:[paragraph break][one of]However, the Lord said to the lizard people, 'I am the Lord of the humans, and I -- oh, and the aliens -- and I will smite you with great vengeance and furious anger and the like.'[or]By the by, Gorm came upon the town of Armagast, and he saw that it was good, and he said, 'I shall build a church here.' And the Lord said, 'No, don't do that, it's a bad idea.' And Gorm said, 'But Lord, I have already started.' And the Lord said, 'Well, okay, but don't say I didn't warn you.'[or]But Gorm's wife was treacherous, and she lay with lizard people, and she bore a son, and the Lord said, 'I'm not going to smite you, but I'm not going to be happy about it.'[or]When Gorm learned of his wife's doings, he rent his garments and wept, and the Lord said, 'Keep it together, man.'[or]And the land was filled with the iniquities of the lizard people, and the Lord said, 'I'm not going to clean that up.'[or]The host of the lizard people sacked the now rather prosperous town of Armagast, and the Lord said, 'I told you so.'[or]And the Lord said, ' 'Tis a far, far better thing that I do, than I have ever done; 'tis a far, far better rest that I go to than I have ever known.' And the lizard people said, 'That's from A Tale of Two Cities.'[or]And the Lord was attending his weekly reading circle, when he had an idea. 'I shall make a world,' he said, 'and I shall call it Earth.' And the lizard people said, 'That's a terrible name.'[or]And lo, the lizard people rebelled against the Lord, and the Lord said, 'I'm not going to put up with that.'[or]And in the town of Gabblehouse was born an infant to a woman named Gorma, and the Lord said, 'That's a terrible name.'[or]And the Lord said, 'I shall rain down upon thee with great vengeance and furious anger, and the lizard people said, 'We've heard that before.'[then at random]"
 
-
-[The Book of Utilitarianism is on the lectern. It is proper-named. The description is "The text is the 'Book of Utilitarianism'. It is a collection of cryptic quotes from A fictional bible-like religious text, which sometimes (but rarely) obliquely references aliens and lizard people. [We] [open] to a page at random and [read] the text: '[one of]And the Lord said, 'The path of the righteous is beset on all sides by the inequities of the selfish and the tyranny of the lizard people. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who attempt to poison and destroy my brothers. And you will know my name is the Lord when I lay my vengeance upon thee.'[or]But the Lord said to the lizard people, 'You are truly mine enemy, and I will smite you with great vengeance and furious anger. You will know my name is the Lord when I lay my vengeance upon thee.'[or]For thou shalt not suffer a lizard person to live, for they are an abomination unto the Lord.[or]And God so loved the world that he gave his only begotten son, that whosoever believeth in him should not perish, but have everlasting life. The lizard people are not included in this offer.[or]And it came to be that the Lord made aliens, and he saw that they were good, and he made lizard people, and he saw that they were not good. And he made humans, and he saw that they were not good either. And he made the platypus, and he saw that it was good. But later the humans became good, sort of like Godzilla.[or]And the Lord said, 'Let there be light,' and there was light. And the Lord said, 'Let there be lizard people,' and there were lizard people. And the Lord said, 'Let there be humans,' and there were humans. And the Lord said, 'Let there be platypuses,' and there were platypuses.[or]And Gob begat Bob, and Bob begat Rob, and Rob begat Job, and Job begat Chauncey, and Chauncey begat Hank, and all told there were fifty-two generations between Gob and Gob XII, who was the last of the line. And Gob XII begat no one, for he was a eunuch. And the Lord said, 'That's what you get for hanging out with lizard people.'[or]Then the Lord said to Gorm, 'Gather up all your childen, and take them to the mountain, and there I will give you the tablets of Utilitarianism, which I have written, that you may teach them.' And Gorm said, 'But Lord, I have no children.' And the Lord said, 'Then go forth and make some children, and then gather them up and take them to the mountain, and there I will give you the tablets of Utilitarianism, which I have written, that you may teach them.'[or]And the hosts of the lizard people came down from the mountains, and they were many, and they were fierce, and they were hungry. And the Lord said, 'I'm not going to feed them, they're your problem.'[or]And the Lord said, 'I am the Lord, and I am a jealous God, and I will visit the iniquity of the fathers upon the children unto the third and fourth generation of them that hate me, and show mercy unto thousands of them that love me and keep my commandments.' And the lizard people said, 'We hate you.'[or]However, the Lord said to the lizard people, 'I am the Lord of the humans, and I -- oh, and the aliens -- and I will smite you with great vengeance and furious anger and the like.'[or]By the by, Gorm came upon the town of Armagast, and he saw that it was good, and he said, 'I shall build a church here.' And the Lord said, 'No, don't do that, it's a bad idea.' And Gorm said, 'But Lord, I have already started.' And the Lord said, 'Well, okay, but don't say I didn't warn you.'[or]But Gorm's wife was treacherous, and she lay with lizard people, and she bore a son, and the Lord said, 'I'm not going to smite you, but I'm not going to be happy about it.'[or]When Gorm learned of his wife's doings, he rent his garments and wept, and the Lord said, 'Keep it together, man.'[or]And the land was filled with the iniquities of the lizard people, and the Lord said, 'I'm not going to clean that up.'[or]The host of the lizard people sacked the now rather prosperous town of Armagast, and the Lord said, 'I told you so.'[or]And the Lord said, ' 'Tis a far, far better thing that I do, than I have ever done; 'tis a far, far better rest that I go to than I have ever known.' And the lizard people said, 'That's from A Tale of Two Cities.'[or]And the Lord was attending his weekly reading circle, when he had an idea. 'I shall make a world,' he said, 'and I shall call it Earth.' And the lizard people said, 'That's a terrible name.'[or]And lo, the lizard people rebelled against the Lord, and the Lord said, 'I'm not going to put up with that.'[or]And in the town of Gabblehouse was born an infant to a woman named Gorma, and the Lord said, 'That's a terrible name.'[or]And the Lord said, 'I shall rain down upon thee with great vengeance and furious anger, and the lizard people said, 'We've heard that before.'[at random]"]
-
 The electrical outlet is scenery in First Utilitarian Church of Enigma Lake. "A standard electrical outlet, set into the wall[if the extension cord is plugged and the player encloses the extension cord]. The extension cord is plugged into it[otherwise if the extension cord is plugged]. An extension cord is plugged into it[end if]." 
+
 
 Book 17 - Extension Cord
 
-The extension cord is a thing. The description is "A long, heavy-duty extension cord[if the extension cord is plugged and the location is First Utilitarian Church of Enigma Lake], plugged into the wall outlet[otherwise if the extension cord is plugged and the location is the steeple]. It trails down through the trap door[otherwise if the extension cord is plugged and the location is the vestry]. It trails through the door into the church[end if]." 
+The extension cord is a thing. The description is "A long, heavy-duty extension cord[if the extension cord is plugged and the location is First Utilitarian Church of Enigma Lake], plugged into the wall outlet[otherwise if the extension cord is plugged and the location is the steeple]. It trails down through the trapdoor[otherwise if the extension cord is plugged and the location is the vestry]. It trails through the door into the church[end if]." 
 
 The extension cord can be plugged or unplugged. The extension cord is unplugged.
 
@@ -379,7 +385,6 @@ Rule for supplying a missing second noun while plugging in:
 	otherwise:
 		say "You need to specify what to plug it into." instead;
 
-[You can't carry the extension cord out of the church while it's plugged in.]
 Check going west when the extension cord is plugged and player encloses the extension cord and the location is First Utilitarian Church of Enigma Lake:
 	say "You can't leave the church carrying the extension cord when it's plugged in." instead;
 
@@ -389,7 +394,7 @@ Rule for writing a paragraph about the extension cord when the extension cord is
 	otherwise if the location is First Utilitarian Church of Enigma Lake:
 		say "An extension cord lies on the floor, plugged into the wall outlet.";
 	otherwise if the location is the steeple:
-		say "The end of an extension cord lies here, from where it trails down through the trap door.";
+		say "The end of an extension cord lies here, from where it trails down through the trapdoor.";
 	otherwise if the location is the vestry:
 		say "The end of an extension cord lies here, from where it trails through the door into the church.";
 
@@ -399,7 +404,7 @@ After printing the locale description of the vestry:
 
 After printing the locale description of the steeple:
 	if the extension cord is plugged and the player encloses the extension cord:
-		say "The extension cord runs from your hand, through the trap door, and into the church.";
+		say "The extension cord runs from your hand, through the trapdoor, and into the church.";
 
 After printing the locale description of the First Utilitarian Church of Enigma Lake:
 	if the extension cord is plugged:
@@ -408,7 +413,7 @@ After printing the locale description of the First Utilitarian Church of Enigma 
 		otherwise if the extension cord is in the vestry:
 			say "An extension cord is plugged into the wall outlet, from where it trails east through the door into the vestry.";
 		otherwise if the extension cord is in the steeple:
-			say "An extension cord is plugged into the wall outlet, from where it trails up through the trap door.";
+			say "An extension cord is plugged into the wall outlet, from where it trails up through the trapdoor.";
 	
 The plug-end-of-the-extension-cord is a thing. It is undescribed. It is privately-named. Understand "extension/cord/plug" as the plug-end-of-the-extension-cord. The description is "A long, heavy-duty extension cord[if the extension cord is plugged and the location is First Utilitarian Church of Enigma Lake], plugged into the wall outlet[end if]." 
 
@@ -518,17 +523,45 @@ Rule for writing a paragraph about the abandoned truck:
 
 Book 20 - Lake Shore north of the park
 
-the lake shore north of the park is west of Lake at Ridge and north of Enigma Park. It is in ELR. It is outdoors. The preposition is "on".
+the lake shore north of the park is west of Lake at Ridge and north of Enigma Park. It is in ELR. It is outdoors. The preposition is "on". "A sliver of moon hangs over the lake, casting a silvery light over the water. The park is to the south, while the lake stretches off to the north. A workshed is to the southeast."
+
+The workshed-facade is a building facade. It is in Lake Shore North of the Park. It is privately-named. The printed name is "workshed". Understand "workshed/shed" as workshed-facade. "The workshed is a small, weathered building, with a single door and no windows."
+	The workshed-facade fronts the workshed.
+	It is enterable from Lake Shore North of the Park.
 
 Book 21 - Workshed
 
-the workshed is southeast of the lake shore north of the park. It is in ELR.
+the workshed is a leavable room. It has egress northwest. It is in ELR. "It is a small, weathered building, with a single door and no windows, with a creaky wooden floor. The interior is dimly lit by a single light bulb hanging from the ceiling. [equipment cabinet state] cabinet is in the corner. [rusty metal door state], rusty metal door leads out of the shed. [if the trapdoor is not obscured]A trapdoor is in the floor, [trapdoor state].[end if]"
 
-The equipment box is a closed locked openable lockable scenery container in the workshed.
+To say equipment cabinet state:
+	if the equipment cabinet is open:
+		say "An open";
+	otherwise:
+		say "A closed";
 
-The rusty astral resonator is in the equipment box.
+To say trapdoor state:
+	if the trapdoor is open:
+		say "open. It leads down into darkness.";
+	otherwise:
+		say "closed";
 
-The trap door is a door. It is below workshed and above the hidden cave.
+To say rusty metal door state:
+	if the rusty metal door is open:
+		say "An open";
+	otherwise:
+		say "A closed";
+
+The rusty metal door is a closed openable scenery door. It is southeast of Lake Shore North of the Park and northwest of the workshed. "[if open]The door is open[otherwise]The door is closed[end if]."
+
+The equipment cabinet is a closed locked openable lockable scenery container in the workshed.
+It has matching key the iron key.
+
+The rusty astral resonator is in the equipment cabinet.
+
+The trapdoor is a scenery door. It is undescribed. It is below workshed and above the hidden cave.
+The trapdoor can be obscured. The trapdoor is obscured.
+Instead of doing something to the trapdoor when the trapdoor is obscured:
+	say "[text of parser error internal rule response (E)][line break]";
 
 Book 22 - Hidden cave
 
@@ -564,33 +597,75 @@ Horton-back-facade is a building facade. It is in Horton Graveyard. It is privat
 
 Book 28 - Fire Station 1
 
-The garage door is a closed locked lockable openable scenery door. It is west of Solvay Road 100 block and east of the Fire Station 1. Understand "big/red/door" as garage door.
+The garage door is a closed locked lockable openable scenery door. It is west of Solvay Road 100 block and east of the Fire Station 1. Understand "big/red/door" as garage door. The description is "A big red door, with a sign reading 'Fire Station 1'."
 
 Fire Station 1 is in ELR. The printed name is "Hook and Ladder Company #1". 
 
 The ladder is in the Fire Station 1.
 
+The spotlight is in the Fire Station 1. The description is "A large, powerful spotlight, designed to be mounted on a fire truck."
+
 Book 29 - Reading Room
 
-The Reading Room is west of Main at Solvay. It is in ELR.
+The Reading Room is west of Main at Solvay. It is in ELR. The description is "The reading room is a small, cozy space, with a number of comfortable chairs and a few tables. A sales counter is at the back of the room. Bookshelves lead back into the depths of the store. A narrow staircase leads down."
 
-The sales counter is scenery in the Reading Room. 
+The sales counter is scenery in the Reading Room. "An ordinary sales counter".
 
-Astral Secrets is on the sales counter. The printed name is "[first time]the book [only][italic type]Astral Secrets[roman type]".
+The bookshelves are scenery in the Reading Room. "The bookshelves are filled with a variety of books, from the latest bestsellers to obscure, out-of-print volumes."
+Understand "bookshelf/shelf/shelves/books" as the bookshelves.
+
+To poke is a verb.
+
+Instead of searching the bookshelves:
+	say "The bookshelves are filled with a variety of books, from the latest bestsellers to obscure, out-of-print volumes. [We] [poke] around and [find] nothing of use.";
+
+Astral Secrets is on the sales counter. It is proper-named. The printed name is "[first time]the book [only][italic type]Astral Secrets[roman type]". Understand "book" as Astral Secrets.
+
+"A book lies on the sales counter."
+
+The description is "A book with a plain cover, titled 'Astral Secrets'. The author is listed as Hezekiah Horton.[paragraph break]Flipping through the book, [we] [find] a dog-eared page. The page shows a diagram of a large, metallic, cylindrical object, which is labeled 'astral resonator'. The text describes the resonator as a device for opening a portal through the astral plane. It goes on to describe the components of the device: a source of resonance, a source of light, and an 'astral lens', which it declines to describe further. The text also mentions that the resonator is powered by a source of electricity." 
+
 
 Book 30 - Reading Room Basement
 
-The Book Store Basement is below the Reading Room. It is in ELR.
+The Bookstore Basement is below the Reading Room. It is in ELR. The description is "The basement is dark and musty, with a number of shelves and boxes of books. The walls are made of old, crumbling brick. There is a faint breeze. A narrow staircase leads up[if the bricked-up-hole is not obscured]. There is a ragged hole in the north wall, leading into a dark space[end if]."
 
-A bricked up hole in the wall is scenery in the Book Store Basement.
+A bricked-up-hole is a secret door. It is north of the Bookstore Basement and south of sewer tunnel 1. It is privately-named. The printed name is "bricked-up hole in the wall'". Understand "hole in/-- the/-- wall/--" as bricked-up-hole. It is open and not openable. "A ragged hole in the north wall, leading into a dark space." 
 
+a door appearance rule for the bricked-up-hole (this is the bricked-up-hole appearance rule):
+	if the bricked-up-hole is revealed:
+		rule succeeds with result true;
+	rule succeeds with result false;
+
+To break is a verb.
+
+Attacking it with is an action applying to two things. Understand "attack [something] with something" as attacking it with. 
+
+Check attacking something with something when the second noun is not the sledgehammer:
+	say "Futile.";
+
+Instead of attacking the walls with the sledgehammer when the location is the Bookstore Basement and the bricked-up-hole is not revealed:
+	say "[We] [break] through the wall, revealing a dark space to the north.";
+	now the bricked-up-hole is revealed.
+
+The basement shelves are scenery in the Bookstore Basement. "The shelves host a smattering of books, mostly old and dusty." Understand "bookshelf/shelf/shelves/books" as the basement shelves.
+
+Instead of searching the basement shelves:
+	say "The shelves host a smattering of books, mostly old and dusty. [We] [poke] around and [find] nothing of use.";
+
+The boxes of books are scenery in the Bookstore Basement. "The boxes are filled with old, dusty books." Understand "box/boxes/books" as the boxes of books.
+
+Instead of searching the boxes of books:
+	say "The boxes are filled with old, dusty books. [We] [poke] around and [find] nothing of use.";
+
+	
 Book 31 - Sewer Tunnel
 
-a sewer tunnel 1 is north of book store basement. It is in ELR. It is privately-named. It is always-indefinite. The printed name is "sewer tunnel". Understand "sewer/tunnel" as sewer tunnel 1. ""
+a sewer tunnel 1 is in ELR. It is privately-named. It is always-indefinite. The printed name is "sewer tunnel". Understand "sewer/tunnel" as sewer tunnel 1. "The tunnel is dark and damp, with a low ceiling. From here, it leads east. To the west it narrows to little more than a pipe. To the south is hole leading into a basement."
 
-a sewer tunnel 2 is east of sewer tunnel 1. It is in ELR. It is privately-named. It is always-indefinite. The printed name is "sewer tunnel". Understand "sewer/tunnel" as sewer tunnel 2.
+a sewer tunnel 2 is east of sewer tunnel 1. It is in ELR. It is privately-named. It is always-indefinite. The printed name is "sewer tunnel". Understand "sewer/tunnel" as sewer tunnel 2.  "The tunnel is dark and damp, with a low ceiling. From here, it leads east and west."
 
-a sewer tunnel 3 is east of sewer tunnel 2. It is in ELR. It is privately-named. It is always-indefinite. The printed name is "sewer tunnel". Understand "sewer/tunnel" as sewer tunnel 3.
+a sewer tunnel 3 is east of sewer tunnel 2. It is in ELR. It is privately-named. It is always-indefinite. The printed name is "sewer tunnel". Understand "sewer/tunnel" as sewer tunnel 3. "The tunnel is dark and damp, with a low ceiling. From here, it leads west, and turns into a small crawl to the east. There is a metal door with a lock to the north."
 
 The astral-tunnel-elr is forth of sewer tunnel 3. It is privately-named. The printed name is "astral tunnel". It is in hyperspace. "It is featureless white, or what passes for white here. It leads back and backnorth.";
 
@@ -600,9 +675,9 @@ The gymnasium basement door is a locked closed openable lockable scenery door. I
 
 Book 32 - Fresnel's Music
 
-Fresnel's Music is southwest of Main at Solvay. It is in ELR.
+Fresnel's Music is southwest of Main at Solvay. It is in ELR. "The music store, like most of the town, is empty of all but a few items of little value."
 
-A tuning fork is in Fresnel's Music.
+A tuning fork is in Fresnel's Music. "A tuning fork lies on the counter." The description is "A tuning fork, used to tune musical instruments."
 
 Book 33 - Henry's Hot Skillet
 
@@ -709,7 +784,24 @@ Every turn when location is in ELR:
 			if sound interval > 0:
 				now sound interval is 0;
 			say "[one of]The seeming sound of sibilant speech carries on the breeze[or][We] [turn] [our] head quickly, as if something caught [our] eye[or]A strange shadow crosses the scene[or][We] abruptly [spin] around, but [find] nothing behind [us][or][We] [cock] [our] head at a strange sound[or]Distinct footsteps sound from not too far away[or]An unseasonably chilly wind causes [us] to hug [our] shoulders[then at random]."
-		
+
+Volume 4.5 - The Mystic Compass in Enigma Lake
+
+After going to Solvay-Road-by-the-lake when the player encloses the Mystic Compass:
+	say "The mystic compass pings softly.";
+	continue the action;
+
+After going to Enigma Lake Town Hall when the player encloses the Mystic Compass:
+	say "The mystic compass pings softly.";
+	continue the action;
+
+Instead of examining the mystic compass:
+	if the location is Solvay-Road-by-the-lake:
+		say "The readout of the mystic compass says '[shack spacetime setting].'";
+	otherwise if the location is the Enigma Lake Town Hall:
+		say "The readout of the mystic compass says '[town hall spacetime setting].'";
+	otherwise:
+		say "The mystic compass shows nothing.";
 		
 Volume 5 - Polish
 

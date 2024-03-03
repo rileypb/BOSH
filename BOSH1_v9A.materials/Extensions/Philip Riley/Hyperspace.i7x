@@ -2,6 +2,7 @@ Hyperspace by Philip Riley begins here.
 
 Include Simple Conversation by Philip Riley.
 Include Third Person Narration by Philip Riley.
+Include Scheduled People by Philip Riley.
 
 Volume 1 - Basics
 
@@ -115,7 +116,7 @@ Volume 2 - Featureless Hyperplane
 
 Book 1 - The Mystic Compass
 
-The mystic compass is a thing.
+The mystic compass is a thing. 
 
 After dropping the mystic compass when the Ethereal Pillar is nowhere:
 	say "The mystic compass vanishes!";
@@ -398,20 +399,39 @@ Volume 3 - Hyperspace Field Office
 
 field office area is a region. It is in hyperspace.
 
-field office reception is below Featureless Hyperplane. The preposition is "at". It is in field office area. "Hooray you made it!".
+Book 1 - Reception
 
-Maggie is a woman in field office reception.
+field office reception is below Featureless Hyperplane. The preposition is "at". It is in field office area. "It is a small, white (like everything else) room with a desk and a single straight-backed chair in the middle of the room. A hallway leads west."
 
-the field office hallway is west of field office reception. It is in field office area. "Hallway".
+The reception desk is a supporter in field office reception. The description is "The desk, white, polished, and gleaming, is empty."
 
-Minerva's office is north of the field office hallway. It is in field office area.
+Section - Maggie
+
+Maggie is a woman in field office reception. Maggie is privately-named. "Maggie is sitting at the desk, doing nothing you can discern." The description is "Maggie is a serene, self-possessed young woman dressed in business casual attire." 
+
+The interview is a scene. The interview begins when the player is in field office reception.
+
+Rule for writing a paragraph about Maggie when field office reception is not visited:
+	say "Maggie looks up from her computer and smiles at [us]. 'Hello, I'm Maggie' she says. 'Welcome to the BOSH Hyperspace Field Office. I hope you didn't have too much trouble getting here. Doris does like his games. Before we proceed, please take a seat.'";
+	now Maggie is met;
+
+
+
+Book 2 - Hallway
+
+the field office hallway is west of field office reception. It is in field office area. "The hallway is white and gleaming. Doorways lead north, south, east, west, forth, and back."
+
+Book 3 - Minerva's Office
+
+Minerva's office is north of the field office hallway. It is in field office area. "The office is white and gleaming. A mahogany desk is in the middle of the room. A coffee maker sits on the desk."
+
 Minerva is a woman in Minerva's office. The initial appearance is "Minerva is sitting at her desk, typing away on her computer." 
 
-A mahogany desk is in Minerva's office. It is scenery. The description is "The desk is cluttered with papers and a few books.".
+A mahogany desk is in Minerva's office. It is scenery. The description is "The desk is cluttered with papers, a few books, and a coffee maker".
 
 A coffee maker is on the mahogany desk. It is scenery. The description is "A drip coffee maker sits on the desk."
 
-The cup of coffee is a thing. The description is "[Coffee description].". The cup of coffee has a number called the hotness.
+The cup of coffee is a thing. The description is "[Coffee description]. It is in a paper cup.". The cup of coffee has a number called the hotness.
 
 To say coffee description:
 	if the hotness of the cup of coffee is greater than 25:
@@ -505,10 +525,29 @@ After discussing about coffee:
 	now the player carries the cup of coffee;
 	now the hotness of the cup of coffee is 30;
 
-the field office chief's office is west of the field office hallway. It is in field office area. "Doris's office".
+Book 4 - Doris's Office
+
+the field office chief's office is west of the field office hallway. It is in field office area. "Doris's office is a riot of color -- he's covered the white walls with posters, maps, and charts. A large desk is in the middle of the room, behind which sits Doris."
 
 Doris is a man in the field office chief's office.
 The initial appearance is "Doris is sitting cross-legged in a chair, tapping his foot lazily on the desk."
+
+Doris's desk is a scenery supporter in the field office chief's office. The description is "The desk is covered with papers and tchotchkes."
+
+Instead of examining Doris's desk:
+	say "The desk is covered with papers and tchotchkes."
+
+The tchotchkes are scenery in the field office chief's office. Understand "knick-knacks" as the tchotchkes. The description is "A small, plastic model of a TARDIS, a Rubik's cube, and a CMY cube are on the desk."
+
+A model TARDIS is on Doris's desk. The description is "It's a small, plastic model of a TARDIS." It is owned by Doris.
+
+A Rubik's cube is on Doris's desk. The description is "It's a Rubik's cube." It is owned by Doris.
+
+A CMY cube is on Doris's desk. The description is "An acrylic cube that filters light on different wavelengths through its various sides." It is owned by Doris.
+
+Doris's papers are on Doris's desk. The description is "The papers are covered with scribbles and diagrams. But really, who can make sense of them?" It is owned by Doris.
+
+Book 5 - Christy's Office
 
 Christy's office is south of the field office hallway. It is in field office area.
 Christy is a nonbinary in Christy's office.
@@ -846,5 +885,24 @@ helping about hyperspace is an action out of world. Understand "help hyperspace"
 
 Carry out helping about hyperspace:
 	say "Hyperspace is a four-dimensional plane of being overlaying our own three-dimensional plane. The familiar directions (north, south, up, northeast, etc.) work there, as do two new directions 'back' and 'forth', and their combinations with our compass directions: forthnorth, backeast, etc. These can be abbreviated just as compass directions can: b, f, fn, be, and so on."
+
+Book 2 - Polish
+
+Table of No Names (continued)
+named person (person)	anonymous description (text)	unnamed description (text)	proper name (text)
+Maggie	"young woman"	"receptionist"	"Maggie"
+
+[ Table of Transitions
+source room (a room)	target room (a room)	transition text (a text)	used (a truth state)
+Enigma Lake Town Hall	Enigma Park	"[We] [push] through the back door into the cool night."	--
+
+
+Table of Excuses (continued)
+source room (a room)	dirs (a list of directions)	excuse (a text)
+Enigma Lake town hall	--	"Exits are to the north and south."
+Main Street 200 block	{northwest, northeast}	"Go north to enter the town hall."
+Main Street 200 block	--	"You can go north into the town hall, or south into Rolle's Department Store. In addition, Main Street leads east and west."
+Lake Street by the gym	{west, southwest, northwest}	"You can't enter the town hall from here."
+Solvay Road 100 block	{west}	"The fire station's garage door is locked up tight." ]
 
 Hyperspace ends here.
