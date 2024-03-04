@@ -735,7 +735,7 @@ Carry out knocking on the BOSH back door when the location is the back lot and t
 	add behavior waiting-for-player to margaret;
 	
 Report knocking on the BOSH back door when the location is the back lot and the BOSH back door was locked:
-	say "You hear the door being unlocked, and then Margaret pops her head out. 'Seriously, [Agent]? You got yourself locked out? Be more careful!'";
+	say "The sound of a key in the lock comes from behind the door, and then Margaret pops her head out. 'Seriously, [Agent]? You got yourself locked out? Be more careful!'";
 	rule succeeds;
  
 Section 3 - Hallway
@@ -784,11 +784,11 @@ The BOSH front desk is a scenery supporter in front office. Understand "sales", 
 
 The shelves of office supplies are in front office. They are plural-named. They are scenery. "Pens, paper, nothing [we're] really concerned with now." Understand "row/of/drawers/pens/pen/pencils/pencil/paper/papers" as the shelves of office supplies.
 
-The thumb drive is a thing in the room of stuff. The description of the thumb drive is "It's a red plastic thumb drive, with what look like symbols scratched on the surface, but they're like no symbols you've ever seen. The metal USB end is somewhat corroded." Understand "USB/flash/memory" as the thumb drive.
+The thumb drive is a thing in the room of stuff. The description of the thumb drive is "It's a red plastic thumb drive, with what look like symbols scratched on the surface, but they're like no symbols [we've] ever seen. The metal USB end is somewhat corroded." Understand "USB/flash/memory" as the thumb drive.
 
-Some strange symbols are part of the thumb drive. The description is "They look like some kind of language, but none you recognize."
+Some strange symbols are part of the thumb drive. The description is "They look like some kind of language, but nothing recognizable."
 
-finding the drive is a memory in the room of stuff. The description is "[We] [remember] finding the drive in an ancient Onandaga root cellar on a farm in upstate New York. [We] [have] never been able to read it.".
+finding the drive is a memory in the room of stuff. The description is "[We] [remember] finding the drive in an ancient Onandaga root cellar on a farm in upstate New York during [our] 'archaeology phase'. [We] [have] never been able to read it.".
 
 some cardboard boxes are scenery in front office. "There is a stack of boxes in the corner.". Understand "box" as cardboard boxes.
 some biff-flattened-boxes are a thing in the room of stuff. They are privately-named. The printed name is "flattened boxes". Understand "flattened/boxes" as biff-flattened-boxes. The description is "Some cardboard boxes that have been broken down flat for recycling.".
@@ -1035,7 +1035,7 @@ Instead of knocking on the closet door when the location is the utility closet a
 	if Moira Zin is in Moira's Office:
 		say "After a few seconds, someone inserts a key in the lock and opens the door. It's [player's surname]'s colleague Moira Zin. 'How'd you get in there, [player's forename]?'
 		
-		You exit the closet.";
+		[We] [exit] the closet.";
 		move the player to Moira's Office;
 		queue Moira Zin with about the hyperdimensional portal;
 		queue Moira Zin with to wait for the report;
