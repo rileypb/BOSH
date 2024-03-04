@@ -20,8 +20,9 @@ The locker key is a key.
 
 Volume 2 - Special Items
 
-An astral resonator is a kind of thing.
+An astral resonator type is a kind of thing.
 
+The makeshift astral resonator is an astral resonator type. 
 
 Volume 3 - Geography
 
@@ -257,7 +258,7 @@ Now-can-you-help-me is a questioning quip.
 	The printed name is "if he can now help [us]".
 	Understand "if/now/can/you/help/me/us/them/her/him" as now-can-you-help-me.
 	The comment is "'Now, you've had your coffee. Can you help me?' [we] [ask]."
-	The reply is "'I found something. Something that might help you. It's in the supply shed. In the cabinet. You'll need the key.' At this, Hutz pulls out a rusty key ring, pulls off an iron key and hands it to you."
+	The reply is "'I found something. Something that might help you. It's in the workshed. In the cabinet. You'll need the key.' At this, Hutz pulls out a rusty key ring, pulls off an iron key and hands it to you."
 	It quip-supplies Hutz.
 
 The iron key is a key. The description is "A heavy iron key, it looks like it might fit a padlock."
@@ -307,6 +308,8 @@ Instead of going up when the location is the radio station roof:
 Book 13 - Broadcast Booth
 
 The broadcast booth is south of Radio Station WGXC. It is in ELR. "The broadcast booth is a small room with a window looking out into the rest of the station. A microphone is set up on a stand, and a soundboard is set into the wall."
+
+The booth window is scenery in the broadcast booth. "The window looks out into the rest of the station."
 
 The microphone is scenery in the broadcast booth. "A microphone is set up on a stand."
 
@@ -485,7 +488,52 @@ The circuit breaker is a scenery device. "A circuit breaker box is mounted on th
 Book 18 - Steeple
 
 the steeple is above the First Utilitarian Church of Enigma Lake. It is in ELR. 
+"From here, [we] can see the obelisk in the park clearly. Someone has set up a tripod here. [if the content of the tripod is nothing]Nothing is mounted on it[otherwise if the content of the tripod is the telescope]A small telescope is mounted on it[otherwise]A makeshift astral resonator is mounted on it[end if]."
 
+The telescope is in the tripod. The description is "A small telescope suitable for amateur astronomy."
+
+The tripod is scenery in the steeple. The tripod has an object called the content. "A tripod [if the content is nothing]with an empty mounting where something might be placed[otherwise]with [a content] mounted on it[end if]."
+
+The examine containers rule does nothing when the noun is the tripod.
+
+The content of the tripod is the telescope.
+
+Instead of taking something when the content of the tripod is the noun:
+	now the content of the tripod is nothing;
+	now the player carries the noun;
+	say "You take [the noun] from the tripod.";
+
+Mounting it on is an action applying to two things. Understand "mount [something] on [something]" as mounting it on.
+
+Check mounting something on the tripod:
+	if the content of the tripod is something:
+		say "The tripod already has something mounted on it." instead;
+	if the noun is not the telescope and the noun is not the makeshift astral resonator:
+		say "Try as [we] might, [we] can't figure out how to mount [the noun] on the tripod." instead;
+
+To mount is a verb.
+
+Carry out mounting the telescope on the tripod:
+	now the content of the tripod is the telescope;
+	now the telescope is in the tripod;
+
+Report mounting the telescope on the tripod:
+	say "[We] [mount] the telescope on the tripod.";
+
+To manage is a verb.
+
+Carry out mounting the makeshift astral resonator on the tripod:
+	now the content of the tripod is the makeshift astral resonator;
+	now the makeshift astral resonator is in the tripod;
+
+Report mounting the makeshift astral resonator on the tripod:
+	say "[We] [manage] to make the makeshift astral resonator fit in the tripod's mount.";
+
+Instead of inserting something into the tripod:
+	try mounting the noun on the tripod;
+
+Instead of putting something on the tripod:
+	try mounting the noun on the tripod;
 
 Book 19 - Lake at Ridge
 
@@ -583,7 +631,9 @@ Horton Family House is a room. It is in ELR.
 
 Book 26 - Astral Tunnel
 
-Fire Station 1 is forthsouth of Horton Family House. It is in ELR
+The Horton astral tunnel is forthsouth of Horton Family House. It is in ELR.
+
+Fire Station 1 is backeast of the Horton astral tunnel. It is in ELR.
 
 Book 27 - Horton Graveyard
 

@@ -465,7 +465,7 @@ Instead of asking someone to try doing something when the noun is busy with resp
 	say "[The noun] is on the phone.";
 
 
-Chief Huffton Klimp is a man. The printed name of Klimp is "Chief Klimp". The description is "Huffton Klimp, or simply 'The Chief', who by his name and title should rightly be big and gruff, is a wiry guy with a thinning shock of red hair on top. Once the youngest and most devoted recruit in the Bureau, the years and his promotion to Bureau Head have not dulled his enthusiasm and idealism. He's a true believer in the existence of aliens, and he's convinced that the Bureau is the only thing standing between humanity and the alien menace. He's also convinced that the Bureau is the only thing standing between him and a comfortable retirement. He's a good guy, but he's a bit of a pain."
+Chief Huffton Klimp is a man. The printed name of Klimp is "Chief Klimp". The description is "Huffton Klimp, or simply 'The Chief', who by his name and title should rightly be big and gruff, is a wiry guy with a thinning shock of red hair on top. Once the youngest and most devoted recruit in the Bureau, the years and his promotion to Bureau Head have not dulled his enthusiasm and idealism."
 
 Klimp carries a mobile phone called klimp's mobile phone. Klimp owns Klimp's mobile phone. Klimp's mobile phone number is a phone number. Klimp's mobile phone number reaches Klimp's mobile phone. The player knows klimp's mobile phone number. Klimp knows Biff's mobile number.
 
@@ -1072,21 +1072,6 @@ The unknown voice is a person.
 The mysterious phone is a phone. It is owned by the unknown voice.
 
 Book 16 - Moving Between Rooms 
-
- 
- 
-Table of Transitions (continued)
-source room (a room)	target room (a room)	transition text (a text)	used (a truth state)
-Strip Mall Parking Lot South	Strip Mall Parking Lot North	"[We] [trudge] to the other end of the parking lot. It's much like where [we] left."	--
-Strip Mall Parking Lot North	Strip Mall Parking Lot South	"[We] [walk] back to the south end of the parking lot."
-Strip Mall Parking Lot South	Front Office	"Just like in the store this once was, the door chimes as [we] [walk] in."
-Front Office	Strip Mall Parking Lot South	"[We] [step] out of the office into the parking lot."
-Strip Mall Parking Lot North	Li'l Nectarine Convenience Store	"[We] [are] greeted by a blast of music as [we] [enter] the store."
-Li'l Nectarine Convenience Store	Strip Mall Parking Lot North	"[We] [exit] the store into the relative quiet of the nearby traffic."
-Strip Mall Parking Lot South	Dave's pawn shop	"'Cha-ching!'[first time] rings the electronic chime as [we] [step] into the store.[only]"
-Dave's pawn shop	Strip Mall Parking Lot South	"[one of]Once again -- 'Cha-ching!' -- as [we] [leave] the store.[or]'Cha-ching!'[stopping]"
-
-
 
 To decide which text is the transition for (source - a room) to (target - a room):
 	repeat through the Table of Transitions:

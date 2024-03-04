@@ -397,27 +397,6 @@ Table of Quiz Topics (continued)
 subject (a thing)	interlocutor (a person)	comment (a text)	reply (a text)
 glass case	store clerk	--	"'You want something inside, just ask.'"
 
-Book 6 - Polish
 
-Table of Excuses (continued)
-source room (a room)	dirs (a list of directions)	excuse (a text)
-Strip Mall Parking Lot South	{south, southeast}	"The swamp would just muck up [agent]'s clothes."
-Strip Mall Parking Lot South	{east}	"An automatic car wash isn't of much use when one is on foot."
-Strip Mall Parking Lot South	{northeast}	"A fence prevents [us] from leaving the property."
-Strip Mall Parking Lot North	{northeast, southeast}	"A fence prevents [us] from leaving the property."
-Strip Mall Parking Lot North	{northwest, southwest}	"The only thing to the west is the military recruitment center."
-
-
-Table of Frustrated Taking (continued)
-target (a thing)	message (a text)	move message (a text)
-stacks of crates	"Those are too heavy to take."	"Those are too heavy to move unaided."
-
-
-Table of Floors (continued)
-locale (a room)	has floor (a truth state)	floor description (a text)	touch description (a text)
-strip mall parking lot south	--	"Black asphalt."
-strip mall parking lot north	--	"Black asphalt."
-li'l nectarine convenience store	--	"Grungy black and white tile."
-Dave's pawn shop	--	"Dingy stained industrial carpet."
 
 Swamp Park ends here.
