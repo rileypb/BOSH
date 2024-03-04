@@ -407,12 +407,12 @@ The reception desk is a supporter in field office reception. The description is 
 
 Section - Maggie
 
-Maggie is a woman in field office reception. Maggie is privately-named. "Maggie is sitting at the desk, doing nothing you can discern." The description is "Maggie is a serene, self-possessed young woman dressed in business casual attire." 
+Maggie is a woman in field office reception. "Maggie is sitting at the desk, doing nothing you can discern." The description is "Maggie is a serene, self-possessed young woman dressed in business casual attire." 
 
 The interview is a scene. The interview begins when the player is in field office reception.
 
 Rule for writing a paragraph about Maggie when field office reception is not visited:
-	say "Maggie looks up from her computer and smiles at [us]. 'Hello, I'm Maggie' she says. 'Welcome to the BOSH Hyperspace Field Office. I hope you didn't have too much trouble getting here. Doris does like his games. Before we proceed, please take a seat.'";
+	say "Maggie looks up from her computer and smiles at [us]. 'Hello, I'm Maggie' she says. 'Welcome to the BOSH Hyperspace Field Office, [agent]. I hope you didn't have too much trouble getting here. Doris does like his games. Before we proceed, please take a seat.'";
 	now Maggie is met;
 
 
@@ -423,7 +423,7 @@ the field office hallway is west of field office reception. It is in field offic
 
 Book 3 - Minerva's Office
 
-Minerva's office is north of the field office hallway. It is in field office area. "The office is white and gleaming. A mahogany desk is in the middle of the room. A coffee maker sits on the desk."
+Minerva's office is a leavable room. It is north of the field office hallway. It is in field office area. "The office is white and gleaming. A mahogany desk is in the middle of the room. A coffee maker sits on the desk." It has egress south.
 
 Minerva is a woman in Minerva's office. The initial appearance is "Minerva is sitting at her desk, typing away on her computer." 
 
@@ -527,7 +527,7 @@ After discussing about coffee:
 
 Book 4 - Doris's Office
 
-the field office chief's office is west of the field office hallway. It is in field office area. "Doris's office is a riot of color -- he's covered the white walls with posters, maps, and charts. A large desk is in the middle of the room, behind which sits Doris."
+the field office chief's office is a leavable room. It is west of the field office hallway. It is in field office area. "Doris's office is a riot of color -- he's covered the white walls with posters, maps, and charts. A large desk is in the middle of the room, behind which sits Doris." It has egress east.
 
 Doris is a man in the field office chief's office.
 The initial appearance is "Doris is sitting cross-legged in a chair, tapping his foot lazily on the desk."
@@ -549,14 +549,27 @@ Doris's papers are on Doris's desk. The description is "The papers are covered w
 
 Book 5 - Christy's Office
 
-Christy's office is south of the field office hallway. It is in field office area.
-Christy is a nonbinary in Christy's office.
+Christy's office is a leavable room. It is south of the field office hallway. It is in field office area. "Christy has taken the initiative to paint her office a bright, cheerful orange. A large desk is in the middle of the room, behind which sits Christy." It has egress north.
 
-Portal Room 1 is forth of the field office hallway. It is in field office area.
+Christy is a nonbinary in Christy's office. The initial appearance is "Christy is sitting at the desk, drawing in a sketchbook." The description is "With their short hair and wide eyes, Christy looks a bit like a lemur. They're wearing a sharp brown suit."
+
+Christy's desk is a scenery supporter in Christy's office. The description is "The desk holds a computer and a sketchbook."
+
+Instead of examining Christy's desk:
+	say the description of Christy's desk;
+	lb;
+
+Christy's computer is on Christy's desk. The description is "It's some unrecognizable model."
+
+Christy's sketchbook is on Christy's desk. The description is "From what [we] can see, the sketchbook is filled with drawings of strange, abstract shapes." It is owned by Christy. Understand "book/sketch/sketches/drawing/drawings" as Christy's sketchbook.
+
+Book 6 - Portal Room 1
+
+Portal Room 1 is a leavable room. It is forth of the field office hallway. It is in field office area. "The room is full of humming, glowing machinery, all of it attached to a large, arch-shaped portal in the middle of the room. The exit is back." It has egress back.
 
 The portal to the past is in Portal Room 1. The portal to the past can be activated. it is fixed in place.
 
-To say portal interior description:
+To say portal to the past interior description:
 	if the portal to the past is activated:
 		if the current spacetime setting is the Town Hall spaceTime setting or the current spacetime setting is the Shack spaceTime setting:
 			say ". The field of light is a shimmering curtain of light, leading to another time and place";
@@ -565,10 +578,11 @@ To say portal interior description:
 	otherwise:
 		say ". The portal is dark and inactive";
 
-The description is "In the middle of the room looms a large portal made of the same astral stuff this whole dimension is made of[portal interior description]."
+The description is "In the middle of the room looms a large portal made of the same astral stuff this whole dimension is made of[portal to the past interior description]. It is labeled 'Portal to the Past.'"
 
 Rule for writing a paragraph about the portal to the past:
 	say the description of the portal to the past;
+	lb;
 
 Instead of entering the portal to the past when the portal to the past is not activated:
 	say "[We] [walk] straight through it and nothing happens.";
@@ -583,7 +597,7 @@ Instead of entering the portal to the past when the portal to the past is activa
 	otherwise:
 		say "Nothing happens. It's just an empty archway.";
 
-Section - Time Control
+Chapter - Time Control
 
 The current spacetime setting is a number that varies. The current spacetime setting is 62358234.
 The town hall spacetime setting is always 62358234.
@@ -632,7 +646,28 @@ Report typing into the spacetime control:
 
 Section - Portal 2
 
-Portal Room 2 is back of the field office hallway. It is in field office area.
+Portal Room 2 is a leavable room. It is back of the field office hallway. It is in field office area. "The room is full of humming, glowing machinery, all of it attached to a large, arch-shaped portal in the middle of the room. The exit is forth." It has egress forth.
+
+The auxiliary portal is in Portal Room 2. The auxiliary portal can be activated. it is fixed in place.
+
+To say auxiliary portal interior description:
+	if the auxiliary portal is activated:
+		say ". The field of light is a shimmering curtain of light, leading to another time and place";
+	otherwise:
+		say ". The portal is dark and inactive";
+
+The description is "In the middle of the room looms a large portal made of the same astral stuff this whole dimension is made of[auxiliary portal interior description]. It is labeled 'Auxiliary Portal'."
+
+Rule for writing a paragraph about the auxiliary portal:
+	say the description of the auxiliary portal;
+	lb;
+
+Instead of entering the auxiliary portal when the auxiliary portal is not activated:
+	say "[We] [walk] straight through it and nothing happens.";
+
+Instead of entering the auxiliary portal when the auxiliary portal is activated:
+	say "[We] [enter] the field of light, and [we] [are] suddenly somewhere else.";
+	move the player to Utility Closet;
 
 Volume 4 - Characters
 
@@ -668,6 +703,9 @@ how to get home is a questioning quip.
 	The reply is "'Go ask Maggie; she can help you.'".
 	It quip-supplies Doris.
 	It stocks Doris.
+
+After discussing how to get home:
+	queue Maggie with how-to-get-home-maggie;
 	
 klimp-is-fine is an informative quip.
 	It is privately-named.
@@ -865,6 +903,21 @@ After printing the locale description when player is in the field office chief's
 		queue Doris with we-don't-have-it;
 	otherwise:
 		queue Doris with what thumb drive;
+
+Book 2 - Maggie
+
+how-to-get-home-maggie is a questioning quip.
+	The printed name is "how to get home".
+	Understand "how can/do i/we/they/she/he get home" as how-to-get-home-maggie.
+	Understand "how to get home" as how-to-get-home-maggie.
+	The comment is "[We] [ask], 'How can I get home from here?'".
+
+	The reply is "Maggie looks up from her computer. 'Oh, you're ready to go? I'll activate the auxiliary portal for you' She types rapidly on her computer, then says 'It's all ready -- go west down the hallway and turn to the back into Portal Room 2.'"
+	
+	it quip-supplies Maggie.
+
+After discussing how-to-get-home-maggie:
+	now the auxiliary portal is activated;
 		
 Volume 5 - Things
 

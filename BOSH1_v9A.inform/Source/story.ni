@@ -58,6 +58,7 @@ Use MAX_OBJ_PROP_COUNT of 128.
 Use MAX_STATIC_DATA of 360000.
 Use MAX_PROP_TABLE_SIZE of 400000.
 Use MAX_NUM_STATIC_STRINGS of 400000.
+Use MAX_SYMBOLS of 100000.
 
 Work Title is always "The Bureau of Strange Happenings".  
  
@@ -1015,7 +1016,13 @@ The describe what's on scenery supporters in room descriptions rule is not liste
 
 The closet door is a door. It is east of Moira's office and west of the utility closet. It is closed, openable, locked, and lockable. It is scenery.
 
-The utility closet is dark. It is in BOSH HQ.
+The utility closet is dark. It is in BOSH HQ. "The bureau having just moved in, the closet is still empty, lucky for [us]. The exit is to the west, through [closet door state] door."
+
+To say closet door state:
+	if the closet door is open:
+		say "an open";
+	otherwise:
+		say "a closed";
 
 Instead of knocking on the closet door when the location is the utility closet and the closet door is locked and the closet door is closed:
 	move Moira Zin to Moira's Office;

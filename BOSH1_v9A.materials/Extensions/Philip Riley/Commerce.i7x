@@ -19,7 +19,7 @@ Vends relates one person (called the vendor) to various things. The verb to be w
 Rule for supplying a missing second noun while buying something (called the product) with:
 	if the player owns the product:
 		say "You already own that!" instead;
-	let M be the list of money cards;
+	let M be the list of money cards enclosed by the player;
 	if M is empty:
 		say "You have no way to pay." instead;
 	otherwise:
