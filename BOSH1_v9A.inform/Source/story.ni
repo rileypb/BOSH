@@ -901,7 +901,7 @@ Understand "glasses/lens/glass" as the pair of astral lenses.
 Section 6 - Moira's office
 				 
 Moira's office is in BOSH HQ. There is a fluorescent light source in Moira's office called moira-light.
-"It is, like Moira herself, neat and orderly. She's clearly made the most of the meager funds she had for furnishing her office. Behind a modest yet functional desk is a modest yet functional office chair. Her bookshelves are filled with titles relating to investigative techniques, law, and skepticism. In the east wall is a closet door. The exit is to the south."
+The description of Moira's office is "It is, like Moira herself, neat and orderly. She's clearly made the most of the meager funds she had for furnishing her office. Behind a modest yet functional desk is a modest yet functional office chair. Her bookshelves are filled with titles relating to investigative techniques, law, and skepticism. In the east wall is a closet door. The exit is to the south."
 
 There is a closet in Moira's office. The closet is a container. It is openable and closed. It is lockable and locked. It is scenery.
 [There is a breaker box in the closet. It is an openable container. It is closed. It is fixed in place. The description is "It's a small metal box affixed to the back wall of the closet. It is featureless apart from the latch."
@@ -1306,6 +1306,14 @@ lensing is an action applying to nothing. Understand "lens" as lensing.
 
 Carry out lensing: 
 	now the player wears the pair of astral lenses;
+
+hyperplaning is an action applying to nothing. Understand "hyper" as hyperplaning.
+
+Carry out hyperplaning:
+	now the player is in the Featureless Hyperplane;
+	now the player carries the thumb drive;
+	now the player carries the astral lenses;
+	now the green smartphone is nowhere;
 
 going to part 2 is an action applying to nothing. Understand "part 2" as going to part 2.
 
