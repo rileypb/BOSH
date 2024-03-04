@@ -48,6 +48,8 @@ Include Swamp Park by Philip Riley.
 Include Margaret by Philip Riley. 
 Include Enigma Lake by Philip Riley. 
 
+Include BOSH Polish by Philip Riley.
+
 Include Gender Options by Nathanael Nerode.   
   	
 Include Followup Questions by Philip Riley.
