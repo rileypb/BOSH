@@ -93,7 +93,7 @@ Yourself is in the room of stuff.
   
 Ezra Gaunt is a man in the Room of Stuff. The description is "Agent Gaunt's last name describes him well. He is a perpetually worried-looking individual, a look emphasized by his thinness and his thick-rimmed glasses.".
 Petula Goldberg is a woman in the Room of Stuff. The description is "Agent Goldberg has lots of dogs, a fact which can be inferred by the inevitable fur somewhere on her person. The last front office worker at the Bureau left due to an extreme allergic reaction to Goldberg.".
-Larch Faraji is a nonbinary in the Room of Stuff. The third singular pronoun is singular-they-pronoun. The description is "Agent Faraji ". 
+Larch Faraji is a nonbinary in the Room of Stuff. The third singular pronoun is singular-they-pronoun. The description is "Agent Faraji is sharply-dressed and sharp-witted. They're attired in a neat grey suit, which unfortunately obscures the tattoo of a snake on their left forearm."
  
 
 the good old days is a memory in the room of stuff. The printed name is "the good old days". The description is "[the description of the good old days].".
