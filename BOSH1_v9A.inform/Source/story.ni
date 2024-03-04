@@ -641,6 +641,12 @@ Check dropping the green smartphone:
 	say "[We] [decide] against leaving the phone behind." instead;
 	set pronouns from the green smartphone;
 
+Check inserting the green smartphone into something:
+	say "[We] [decide] against leaving the phone behind." instead;
+
+Check putting the green smartphone on something:
+	say "[We] [decide] against leaving the phone behind." instead;
+
 To init office:
 	if player is not Ezra Gaunt:
 		move movie poster to Room of Stuff;
