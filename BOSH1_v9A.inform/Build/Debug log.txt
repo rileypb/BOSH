@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 10227 words long.
+I've now read your source text, which is 10273 words long.
 
 
 -----------------------------------------------------
@@ -48,7 +48,7 @@ I've also read Basics by Philip Riley, which is 195 words long.
 I've also read Memories by Philip Riley, which is 243 words long.
 I've also read Building Facades by Philip Riley, which is 163 words long.
 I've also read Simple Conversation by Philip Riley, which is 2143 words long.
-I've also read Hyperspace by Philip Riley, which is 6410 words long.
+I've also read Hyperspace by Philip Riley, which is 6895 words long.
 I've also read BOSH Facts by Philip Riley, which is 94 words long.
 I've also read Image Strip by Philip Riley, which is 2080 words long.
 I've also read Swamp Park by Philip Riley, which is 3715 words long.
@@ -139,7 +139,7 @@ Regional: CONSTANT_VNT'field office area'-region(I254_field_office_area)(I159'fi
  == region
 Regional: CONSTANT_VNT'field office area'-region(I254_field_office_area)(I159'field office area')
  == region
-Regional: CONSTANT_VNT'elr'-region(I422_elr)(I313'elr')
+Regional: CONSTANT_VNT'elr'-region(I423_elr)(I314'elr')
  == region
 
 
@@ -244,17 +244,17 @@ Phase XII ... Code generation
                                                             Fail: list of numbers (~) number = nothing
                                             Fail: nothing (~) real number = nothing
                                             Fail: list of numbers (~) real number = nothing
-        Regional: CONSTANT_VNT'bosh hq'-region(I583_bosh_hq)(I468'bosh hq')
+        Regional: CONSTANT_VNT'bosh hq'-region(I584_bosh_hq)(I469'bosh hq')
          == region
-        Regional: CONSTANT_VNT'bosh hq'-region(I583_bosh_hq)(I468'bosh hq')
+        Regional: CONSTANT_VNT'bosh hq'-region(I584_bosh_hq)(I469'bosh hq')
          == region
-        Regional: CONSTANT_VNT'laundromat-region'-region(I375_laundromat_region)(I269'laundromat-region')
+        Regional: CONSTANT_VNT'laundromat-region'-region(I376_laundromat_region)(I270'laundromat-region')
          == region
-        Regional: CONSTANT_VNT'laundromat-region'-region(I375_laundromat_region)(I269'laundromat-region')
+        Regional: CONSTANT_VNT'laundromat-region'-region(I376_laundromat_region)(I270'laundromat-region')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I422_elr)(I313'elr')
+        Regional: CONSTANT_VNT'elr'-region(I423_elr)(I314'elr')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I422_elr)(I313'elr')
+        Regional: CONSTANT_VNT'elr'-region(I423_elr)(I314'elr')
          == region
         Regional: CONSTANT_VNT'field office area'-region(I254_field_office_area)(I159'field office area')
          == region
@@ -294,7 +294,7 @@ Phase XII ... Code generation
 
 ==== Phase XII.21 ... Compiling routines from predicate calculus ====
 
-Providing for a total heap of 16384, given requirement of 9992
+Providing for a total heap of 16384, given requirement of 10504
 
 
 -----------------------------------------------------
@@ -302,7 +302,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 227 files written as streams.
-CPU time: 564 centiseconds
+CPU time: 583 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

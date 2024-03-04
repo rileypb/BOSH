@@ -412,7 +412,7 @@ Maggie is a woman in field office reception. "Maggie is sitting at the desk, doi
 The interview is a scene. The interview begins when the player is in field office reception.
 
 Rule for writing a paragraph about Maggie when field office reception is not visited:
-	say "Maggie looks up from her computer and smiles at [us]. 'Hello, I'm Maggie' she says. 'Welcome to the BOSH Hyperspace Field Office, [agent]. I hope you didn't have too much trouble getting here. Doris does like his games. Before we proceed, please take a seat.'";
+	say "Maggie looks up from her computer and smiles at [us]. 'Hello, I'm Maggie,' she says. 'Welcome to the BOSH Hyperspace Field Office, [agent]. I hope you didn't have too much trouble getting here. Doris does like his games. Before we proceed, please take a seat.'";
 	now Maggie is met;
 
 
@@ -553,13 +553,11 @@ Christy's office is a leavable room. It is south of the field office hallway. It
 
 Christy is a nonbinary in Christy's office. The initial appearance is "Christy is sitting at the desk, drawing in a sketchbook." The description is "With their short hair and wide eyes, Christy looks a bit like a lemur. They're wearing a sharp brown suit."
 
-Christy's desk is a scenery supporter in Christy's office. The description is "The desk holds a computer and a sketchbook."
+Christy's desk is a scenery supporter in Christy's office. The description is "A sleek modern desk, it holds [list of things on Christy's desk with indefinite articles]." 
 
 Instead of examining Christy's desk:
 	say the description of Christy's desk;
 	lb;
-
-Christy's computer is on Christy's desk. The description is "It's some unrecognizable model."
 
 Christy's sketchbook is on Christy's desk. The description is "From what [we] can see, the sketchbook is filled with drawings of strange, abstract shapes." It is owned by Christy. Understand "book/sketch/sketches/drawing/drawings" as Christy's sketchbook.
 
@@ -603,7 +601,7 @@ The current spacetime setting is a number that varies. The current spacetime set
 The town hall spacetime setting is always 62358234.
 The shack spacetime setting is always 62357123.
 
-The spacetime control is a part of the portal to the past. The description is "A control panel is attached to the portal. It has a display and a keypad. The display reads '[current spacetime setting].'"
+The spacetime control is a part of the portal to the past. The description is "A control panel is attached to the portal. It has a display and a keypad. [if the portal to the past is activated]The display reads '[current spacetime setting]'[otherwise]The display is dark[end if]."
 
 The keypad is a part of the spacetime control. The description is "A standard numeric keypad. The font on the keys is really cool and science fictiony."
 
@@ -775,7 +773,7 @@ hand over the thumb drive is a performative quip.
 	Understand "hand it over", "hand him the thumb/-- drive" as hand over the thumb drive.
 	The reply is "'Great, great.' He peruses the drive. 'We lost one of our New York agents to a slingshot effect that threw him far back in time. We're always monitoring for artifacts that are out of place or anachronistic to lead us to lost agents.
 	
-	He continues, 'The scratch marks here say, [']They found me out and sent me back. 14th century. Enigma Lake. Savra is going to move on the Dragon.[']'".
+	He continues, 'The scratch marks here say, [']They found me out and sent me back. 14th century. Old Onandaga holy place. Savra is going to move on the Dragon.[']'".
 	it quip-supplies Doris.
 	
 [An availability rule for hand over the thumb drive:
@@ -847,7 +845,7 @@ remind him Savra's not reptilian is a performative quip.
 [Terrify New Books]
 [Bikes Tow No Ferry]
 	
-about the mission is a questioning quip.
+[ about the mission is a questioning quip.
 	Understand "what about the/-- mission" as about the mission.
 	The comment is "'Fine,' [we] [say]. 'What's the mission?'".
 	The reply is "Doris leans back in his chair. 'I believe we still have a chance to retrieve our lost agent -- the one that left the thumb drive. He says he was at Enigma Lake, not far from where you found the drive. Now it makes sense that Daniels -- the agent -- would head for some kind of landmark so we could find him, and indeed there is a prominent intersection of leylines in the middle of the lake. Before you say it, yes it's a problem, [italic type]if[roman type] that intersection had always been underwater. But Enigma Lake is an artificial reservoir. The town of Enigma Lake was flooded when the reservoir was created, and [italic type]that's[roman type] where the intersection is!' Doris concludes with a look of satisfaction.
@@ -858,7 +856,34 @@ about the mission is a questioning quip.
 	It quip-supplies Doris.
 	It follows about Savra.
 	It follows about the Dragon.
-	It follows about time travel. 
+	It follows about time travel.  ]
+
+about the mission is a questioning quip.
+	Understand "what about the/-- mission" as about the mission.
+	The comment is "[We] [say], 'What's the mission?'".
+	The reply is "Doris leans back in his chair. 'I believe we still have a chance to retrieve our lost agent -- the one that left the thumb drive. He says he was at an Onandaga holy place in the 14th century. Now we need to find out where that is. Fortunately, there's a book that can help. Unfortunately, I don't have it. Fortunately, you're here to go find it. Unfortunately, the name's gotten a bit jumbled in my head. I think it was something like [italic type]New Bikers of Troy[roman type]. Or something. I'm bad with things like titles and letters and keeping things the right way [']round. But you'll find it. I know you will. Come back here when you have.'".
+	it quip-supplies Doris.
+	It follows about Savra.
+	It follows about the Dragon.
+	It follows about time travel.
+
+Doris's note is a thing. The description is "It's a bunch of cryptic scribbles."
+
+Check giving Tribes of New York to Doris when Doris's note is not off-stage:
+	say "Doris looks at you funny. 'No, bring it and the note to Christy. She'll know what to do with it.'" instead;
+
+After giving Tribes of New York to Doris:
+	say "'Ah, [agent], you've found it! I knew you would. Now we can find out where Daniels is. Actually, Christy can help you with that. Go see her and give her this.' He scribbles a note and hands it to you. 'She'll know what to do.'";
+	now the player carries Doris's note;
+	now the player carries the Tribes of New York;
+
+After giving Christy's note to Doris:
+	say "He reads the note and grins. 'I knew Christy could figure it out. Enigma Lake. Makes sense. There is a prominent intersection of leylines in the middle of the lake. Before you say it, yes it's a problem, or would be, [italic type]if[roman type] that intersection had always been underwater. But Enigma Lake is an artificial reservoir. The town of Enigma Lake was flooded when the reservoir was created, and [italic type]that's[roman type] where the intersection is!' Doris concludes with a look of satisfaction.
+	
+	'So...' [player's surname] says.
+	
+	'So. I'm sending you back to 1954, right before the flooding of Enigma Lake, and you'll find whatever Daniels left for us to find. Maybe we can stage a rescue. Why 1954? I'd rather not risk a longer temporal jaunt before we know what we're dealing with.'";
+	queue Doris with how will i find him;
 
 about the Dragon is a questioning quip.
 	Understand "what about the/-- Dragon" as about the Dragon.
@@ -878,7 +903,6 @@ how will i find him is a questioning quip.
 	The comment is "'How am I going to find him? Didn't he leave that message in the [italic type]fourteenth century[roman type]?'".
 	The reply is "[Doris] looks exasperated. 'Well I don't know -- Improvise, use the power of the leylines, look around for anything that looks like it might be a time portal. Something like that. Let's see if the DC office can impress me. Let me know when you're ready to go.'".
 	It quip-supplies Doris.
-	It follows about the mission.
 
 ready to go is an informative quip.
 	The printed name is "[force pronoun for player][we]['re] ready to go".
@@ -918,6 +942,32 @@ how-to-get-home-maggie is a questioning quip.
 
 After discussing how-to-get-home-maggie:
 	now the auxiliary portal is activated;
+
+Book 3 - Christy
+
+Christy can be researching.
+
+Check giving Doris's note to Christy when the player does not carry Tribes of New York:
+	say "Christy briefly looks at the note and says, 'I can't do anything with this. You need to bring me the book too.'" instead;
+
+After giving Doris's note to Christy:
+	say "Christy reads the note and says, 'Oh, I see. I'll get right on it. And give me the book too, thanks. So, this might take me a while -- actually, could you get me a cup of coffee?'";
+	now Christy carries Doris's note;
+	now Christy carries Tribes of New York;
+
+After giving the cup of coffee to Christy:
+	say "'Christy accepts the coffee gratefully. 'Thanks. I'll get to work on this right away. I'll let you know when I have something.' They take a sip of the coffee and get to work, which seems to involve a lot of sketching and erasing.";
+	remove the cup of coffee from play;
+	now Christy is researching;
+
+Christy's note is a thing. The description is "The note consists of just the number [town hall spacetime setting]."
+
+Before going north from Christy's office when Christy is researching:
+	say "Christy suddenly hoots behind you. 'Stop! I have it. Sorry it took so long. Here, take this note to Doris.' They scribble something on a piece of paper and hand it to you. They think for a moment and say 'Oh yes, take the book too.' She hands you [italic type]Tribes of New York[roman type].";
+	now Christy is not researching;
+	now the player carries Christy's note;
+	now the player carries Tribes of New York;
+	stop the action;
 		
 Volume 5 - Things
 

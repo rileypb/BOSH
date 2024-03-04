@@ -207,7 +207,6 @@ After reading a command when current play mode is picking character:
 	
 To init player:
 	now the player carries the green smartphone;
-	[now the player carries the bureau credit card;]
 	now the player knows klimp's phone number;
 	now the player owns the bureau credit card;
 	now the player knows biff's mobile number;
@@ -1308,16 +1307,23 @@ lensing is an action applying to nothing. Understand "lens" as lensing.
 Carry out lensing: 
 	now the player wears the pair of astral lenses;
 
-jumping to the past is an action applying to nothing. Understand "past" as jumping to the past.
+going to part 2 is an action applying to nothing. Understand "part 2" as going to part 2.
 
-Carry out jumping to the past:
-	move the player to field office hallway;
-	now the portal to the past is activated;
+Carry out going to part 2:
+	move the player to the featureless hyperplane;
+	move Descending Stair to Featureless Hyperplane;
+	now Hyperplane Coords is {0, 0, 0};
+	try going down;
 	now the green smartphone is nowhere;
+	now the player carries the thumb drive;
+	now the player carries the astral lenses;
+	move Klimp to the BOSH Chief's office;
+	now the player owns the astral lenses;
+	now the player owns Tribes of New York;
 	
-jumping to part 3 is an action applying to nothing. Understand "enigma" as jumping to part 3.
+going to part 3 is an action applying to nothing. Understand "part 3" as going to part 3.
 
-Carry out jumping to part 3:
+Carry out going to part 3:
 	move the player to the enigma lake town hall;
 	now the player wears the pair of astral lenses;
 	now the player carries the recall button;
