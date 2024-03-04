@@ -53,7 +53,7 @@ I've also read BOSH Facts by Philip Riley, which is 94 words long.
 I've also read Image Strip by Philip Riley, which is 2080 words long.
 I've also read Swamp Park by Philip Riley, which is 3529 words long.
 I've also read Margaret by Philip Riley, which is 1286 words long.
-I've also read Enigma Lake by Philip Riley, which is 9021 words long.
+I've also read Enigma Lake by Philip Riley, which is 9346 words long.
 I've also read BOSH Polish by Philip Riley, which is 1213 words long.
 I've also read Gender Options by Nathanael Nerode, which is 7730 words long.
 I've also read Followup Questions by Philip Riley, which is 196 words long.
@@ -303,8 +303,8 @@ Providing for a total heap of 16384, given requirement of 13576
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 230 files written as streams.
-CPU time: 559 centiseconds
+Total of 231 files written as streams.
+CPU time: 566 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

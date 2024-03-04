@@ -14,11 +14,17 @@ When play begins:
 	otherwise:
 		now the correct locker number is 1;
 
+Volume 1.5 - Special Variables
+
+mounted-rusty-resonator is a truth state that varies. mounted-rusty-resonator is false.
+mounted-shiny-resonator is a truth state that varies. mounted-shiny-resonator is false.
+mounted-makeshift-resonator is a truth state that varies. mounted-makeshift-resonator is false.
+
+Volume 2 - Special Items
+
 The old copper key is a key.
 
 The locker key is a key.
-
-Volume 2 - Special Items
 
 An astral resonator type is a kind of thing.
 
@@ -88,7 +94,7 @@ Some shadows are scenery in Enigma Park. "Without a lantern, it's inadvisable to
 
 The obelisk is scenery in Enigma Park. Understand "monument/names/citizens" as the obelisk. "Its faux Egyptian design is incongruous adjacent to the adamantly traditional town hall. [We] [can] just make out a small crystal adornment rising from the top."
 
-The adornment is scenery in Enigma Park. "From what you can make out, it's a clear crystal held aloft by some kind of metal fitting."
+The adornment is scenery in Enigma Park. "From what [we] can make out, it's a clear crystal held aloft by some kind of metal fitting."
 
 Climbing up is an action applying to one thing. Understand "climb up/-- [something]" as climbing up.
 
@@ -127,7 +133,7 @@ Henry's facade is a building facade. It is in Main at Solvay. It is privately-na
 	Henry's facade fronts Henry's Hot Skillet.
 	It is enterable from Main at Solvay.
 
-Reading-Room-Facade is a building facade. It is in Main at Solvay. It is privately-named. The printed name is "Reading Room". Understand "Reading/Room/bookstore/store" as Reading-room-facade. "The store window is dark. You can see rows and rows of books inside."
+Reading-Room-Facade is a building facade. It is in Main at Solvay. It is privately-named. The printed name is "Reading Room". Understand "Reading/Room/bookstore/store" as Reading-room-facade. "The store window is dark. [We] can see rows and rows of books inside."
 	Reading-Room-Facade fronts the Reading Room.
 	It is enterable from Main at Solvay.
 
@@ -258,7 +264,7 @@ Now-can-you-help-me is a questioning quip.
 	The printed name is "if he can now help [us]".
 	Understand "if/now/can/you/help/me/us/them/her/him" as now-can-you-help-me.
 	The comment is "'Now, you've had your coffee. Can you help me?' [we] [ask]."
-	The reply is "'I found something. Something that might help you. It's in the workshed. In the cabinet. You'll need the key.' At this, Hutz pulls out a rusty key ring, pulls off an iron key and hands it to you."
+	The reply is "'I found something. Something that might help you. It's in the workshed. In the cabinet. You'll need the key.' At this, Hutz pulls out a rusty key ring, pulls off an iron key and hands it to [us]."
 	It quip-supplies Hutz.
 
 The iron key is a key. The description is "A heavy iron key, it looks like it might fit a padlock."
@@ -376,7 +382,7 @@ Check plugging in the extension cord when the extension cord is plugged:
 	say "The extension cord is already plugged in." instead;
 
 Check plugging in the extension cord when the second noun is not the electrical outlet:
-	say "That's not something you can plug the extension cord into." instead;
+	say "That's not something [we] can plug the extension cord into." instead;
 
 Carry out plugging in:
 	now the extension cord is plugged;
@@ -386,10 +392,10 @@ Rule for supplying a missing second noun while plugging in:
 	if the noun is the extension cord and the location of the noun is First Utilitarian Church of Enigma Lake:
 		now the second noun is the electrical outlet;
 	otherwise:
-		say "You need to specify what to plug it into." instead;
+		say "You need to specify what [we] should plug it into." instead;
 
 Check going west when the extension cord is plugged and player encloses the extension cord and the location is First Utilitarian Church of Enigma Lake:
-	say "You can't leave the church carrying the extension cord when it's plugged in." instead;
+	say "[We] can't leave the church carrying the extension cord when it's plugged in." instead;
 
 Rule for writing a paragraph about the extension cord when the extension cord is plugged:
 	if the location is First Utilitarian Church of Enigma Lake and the player encloses the extension cord:
@@ -403,11 +409,11 @@ Rule for writing a paragraph about the extension cord when the extension cord is
 
 After printing the locale description of the vestry:
 	if the extension cord is plugged and the player encloses the extension cord:
-		say "The extension cord runs from your hand, through the door, and into the church.";
+		say "The extension cord runs from [our] hand, through the door, and into the church.";
 
 After printing the locale description of the steeple:
 	if the extension cord is plugged and the player encloses the extension cord:
-		say "The extension cord runs from your hand, through the trapdoor, and into the church.";
+		say "The extension cord runs from [our] hand, through the trapdoor, and into the church.";
 
 After printing the locale description of the First Utilitarian Church of Enigma Lake:
 	if the extension cord is plugged:
@@ -440,7 +446,7 @@ Check unplugging the extension cord when the player encloses the extension cord 
 Carry out unplugging the plug-end-of-the-extension-cord:
 	now the extension cord is unplugged;
 	if the player encloses the extension cord:
-		say "You unplug the extension cord.";
+		say "[We] [unplug] the extension cord.";
 	otherwise:
 		say "[We] [unplug] the extension cord, [reel] in the far end, and [roll] it up neatly.";
 		now the player carries the extension cord;
@@ -449,7 +455,7 @@ Carry out unplugging the plug-end-of-the-extension-cord:
 Carry out unplugging the extension cord:
 	now the extension cord is unplugged;
 	if the player encloses the extension cord:
-		say "You unplug the extension cord.";
+		say "[We] unplug the extension cord.";
 	otherwise:
 		say "[We] [unplug] the extension cord, [reel] in the far end, and [roll] it up neatly.";
 		now the player carries the extension cord;
@@ -492,16 +498,42 @@ the steeple is above the First Utilitarian Church of Enigma Lake. It is in ELR.
 
 The telescope is in the tripod. The description is "A small telescope suitable for amateur astronomy."
 
+Instead of searching the telescope: [looking through]
+	if mounted-rusty-resonator is true and mounted-shiny-resonator is true:
+		say "The telescope is pointed at the obelisk in the park. It's a bit out of focus, but [we] can see it clearly enough. Two beams of light are focused on the obelisk from elsewhere, striking the crystal adornment at its apex. The crystal is glowing brightly.";
+	otherwise if mounted-rusty-resonator is true or mounted-shiny-resonator is true:
+		say "The telescope is pointed at the obelisk in the park. It's a bit out of focus, but [we] can see it clearly enough. A beam of light is focused on the obelisk from elsewhere, striking the crystal adornment at its apex. The crystal is glowing faintly.";
+	otherwise:
+		say "The telescope is pointed at the obelisk in the park. It's a bit out of focus, but [we] can see it clearly enough.";
+
 The tripod is scenery in the steeple. The tripod has an object called the content. "A tripod [if the content is nothing]with an empty mounting where something might be placed[otherwise]with [a content] mounted on it[end if]."
 
 The examine containers rule does nothing when the noun is the tripod.
 
 The content of the tripod is the telescope.
 
-Instead of taking something when the content of the tripod is the noun:
+Unmounting is an action applying to one thing. Understand "unmount [something]" as unmounting.
+
+Check unmounting something when the location is the steeple and the content of the tripod is nothing:
+	say "There's nothing mounted on the tripod." instead;
+
+Check unmounting something when the location is the steeple and the content of the tripod is not the noun:
+	say "That's not mounted on anything." instead;
+
+Check unmounting something when the location is not the steeple:
+	say "That's not mounted on anything." instead;
+
+Carry out unmounting something:
 	now the content of the tripod is nothing;
 	now the player carries the noun;
-	say "You take [the noun] from the tripod.";
+	now mounted-makeshift-resonator is false;
+	say "[We] [take] [the noun] from the tripod.";
+
+Instead of taking something when the content of the tripod is the noun:
+	try unmounting the noun;
+
+Instead of removing something from the tripod when the content of the tripod is the noun:
+	try unmounting the noun;
 
 Mounting it on is an action applying to two things. Understand "mount [something] on [something]" as mounting it on.
 
@@ -510,6 +542,9 @@ Check mounting something on the tripod:
 		say "The tripod already has something mounted on it." instead;
 	if the noun is not the telescope and the noun is not the makeshift astral resonator:
 		say "Try as [we] might, [we] can't figure out how to mount [the noun] on the tripod." instead;
+
+Check mounting something on something when the second noun is not the tripod:
+	say "Try as [we] might, [we] can't figure out how to mount [the noun] on [the second noun]." instead;
 
 To mount is a verb.
 
@@ -525,6 +560,7 @@ To manage is a verb.
 Carry out mounting the makeshift astral resonator on the tripod:
 	now the content of the tripod is the makeshift astral resonator;
 	now the makeshift astral resonator is in the tripod;
+	now mounted-makeshift-resonator is true;
 
 Report mounting the makeshift astral resonator on the tripod:
 	say "[We] [manage] to make the makeshift astral resonator fit in the tripod's mount.";
@@ -558,11 +594,11 @@ After entering the abandoned truck:
 Instead of switching on the abandoned truck:
 	let K be the list of all keys enclosed by the player;
 	if the number of entries of K is 1:
-		say "Your key doesn't fit the ignition.";
+		say "The key doesn't fit the ignition.";
 	otherwise if the number of entries of K > 1:
-		say "None of the keys you have fit the ignition.";
+		say "None of the keys [we] [have]fit the ignition.";
 	otherwise:
-		say "Even if this thing runs, you don't have the key.";
+		say "Even if this thing runs, [we] [don't] have the key.";
 		
 Understand "start [something]" as switching on.
 
@@ -775,7 +811,7 @@ Index map with public gymnasium mapped east of Lake Street by the gym.
 
 The gym front desk is a scenery supporter in the public gymnasium. "Some kind of record book sits on the front desk."
 
-The membership book is a fixed in place thing on the gym front desk. The description is "It's a book apparently full of records of the members of the gym. You could LOOK UP a member's name IN BOOK."
+The membership book is a fixed in place thing on the gym front desk. The description is "It's a book apparently full of records of the members of the gym. [We] could LOOK UP a member's name IN BOOK."
 
 Instead of consulting the membership book about something:
 	if the topic understood matches "william thompson" or the topic understood matches "bill thompson" or the topic understood matches "thompson":
@@ -785,7 +821,7 @@ Instead of consulting the membership book about something:
 		#[correct locker number].[variable letter spacing][paragraph break]";
 		now looked up locker is true;
 	otherwise:
-		say "You can't find that name in the membership book.";
+		say "[We] can't find that name in the membership book.";
 
 Book 37 - Gym Basement
 
