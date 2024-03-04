@@ -816,10 +816,10 @@ Instead of taking the cardboard boxes:
 		if Margaret is in the location:
 			initiate Margaret's box routine;
 
-Biff's computer is a thing. It is privately-named. It is behind the BOSH front desk. The printed name is "[our] computer". Understand "computer" as biff's computer. The description is "[Our] computer has been damaged beyond repair.".
+Biff's computer is a thing. It is privately-named. It is behind the BOSH front desk. The printed name is "[our] computer". Understand "computer" as biff's computer. The description is "[Our] computer has been damaged beyond repair.". It is fixed in place.
 
 Check taking Biff's computer:
-	say "[Biff's computer] is too unwieldy to carry around.";
+	say "[Biff's computer] is too unwieldy to carry around." instead;
  
 Instead of examining Biff's computer when the thumb drive is not seen: 
 	say "[description of biff's computer] But [we] [do] find a thumb drive and take it.";
@@ -834,6 +834,7 @@ The heating vent is a scenery container. It is openable, closed, lockable, trans
 
 Securing relates various things to one thing. The verb to secure means the securing relation.
 Some screws secure the heating vent. The description is "Four plain flat head screws." 
+They are undescribed.
 
 After looking behind the BOSH front desk:
 	move the heating vent to front office;
