@@ -48,8 +48,6 @@ Include Swamp Park by Philip Riley.
 Include Margaret by Philip Riley. 
 Include Enigma Lake by Philip Riley. 
 
-Include BOSH Polish by Philip Riley.
-
 Include Gender Options by Nathanael Nerode.   
   	
 Include Followup Questions by Philip Riley.
@@ -60,7 +58,7 @@ Use MAX_OBJ_PROP_COUNT of 128.
 Use MAX_STATIC_DATA of 360000.
 Use MAX_PROP_TABLE_SIZE of 400000.
 Use MAX_NUM_STATIC_STRINGS of 400000.
-Use MAX_SYMBOLS of 100000.
+Use MAX_SYMBOLS of 200000.
 
 Work Title is always "The Bureau of Strange Happenings".  
  
@@ -95,7 +93,7 @@ Yourself is in the room of stuff.
   
 Ezra Gaunt is a man in the Room of Stuff. The description is "Agent Gaunt's last name describes him well. He is a perpetually worried-looking individual, a look emphasized by his thinness and his thick-rimmed glasses.".
 Petula Goldberg is a woman in the Room of Stuff. The description is "Agent Goldberg has lots of dogs, a fact which can be inferred by the inevitable fur somewhere on her person. The last front office worker at the Bureau left due to an extreme allergic reaction to Goldberg.".
-Larch Faraji is a nonbinary in the Room of Stuff. The third singular pronoun is singular-they-pronoun. The description is "Agent Faraji is sharply-dressed and sharp-witted. They're attired in a neat grey suit, which unfortunately obscures the tattoo of a snake on their left forearm."
+Larch Faraji is a nonbinary in the Room of Stuff. The third singular pronoun is singular-they-pronoun. The description is "Agent Faraji ". 
  
 
 the good old days is a memory in the room of stuff. The printed name is "the good old days". The description is "[the description of the good old days].".
@@ -209,6 +207,7 @@ After reading a command when current play mode is picking character:
 	
 To init player:
 	now the player carries the green smartphone;
+	[now the player carries the bureau credit card;]
 	now the player knows klimp's phone number;
 	now the player owns the bureau credit card;
 	now the player knows biff's mobile number;
@@ -465,7 +464,7 @@ Instead of asking someone to try doing something when the noun is busy with resp
 	say "[The noun] is on the phone.";
 
 
-Chief Huffton Klimp is a man. The printed name of Klimp is "Chief Klimp". The description is "Huffton Klimp, or simply 'The Chief', who by his name and title should rightly be big and gruff, is a wiry guy with a thinning shock of red hair on top. Once the youngest and most devoted recruit in the Bureau, the years and his promotion to Bureau Head have not dulled his enthusiasm and idealism."
+Chief Huffton Klimp is a man. The printed name of Klimp is "Chief Klimp". The description is "Huffton Klimp, or simply 'The Chief', who by his name and title should rightly be big and gruff, is a wiry guy with a thinning shock of red hair on top. Once the youngest and most devoted recruit in the Bureau, the years and his promotion to Bureau Head have not dulled his enthusiasm and idealism. He's a true believer in the existence of aliens, and he's convinced that the Bureau is the only thing standing between humanity and the alien menace. He's also convinced that the Bureau is the only thing standing between him and a comfortable retirement. He's a good guy, but he's a bit of a pain."
 
 Klimp carries a mobile phone called klimp's mobile phone. Klimp owns Klimp's mobile phone. Klimp's mobile phone number is a phone number. Klimp's mobile phone number reaches Klimp's mobile phone. The player knows klimp's mobile phone number. Klimp knows Biff's mobile number.
 
@@ -587,7 +586,7 @@ Section 1 - Your Office
 
 Biff's office is a room. It is in BOSH HQ. The printed name is "[save LPR][our][restore LPR] office".
 
-"[if biff's office is not visited][We] [pause] and [survey] the scene. It's not much -- four white walls, grey industrial carpet. [Margaret] [have] helpfully assembled [our] desk and chair, though how sturdily is an open question. [Regarding Margaret][They] also took the time to put up some of Agent [Player]'s office decor -- [our] degree in Nonstandard Investigative Techniques, [EG]a trivia competition award, and a poster for [our] favorite movie: the b-movie time-travel classic The Room of Lost Time[PCG]a photo of [our] dog Pluto, and a print of [italic type]Green Pheasant[roman type] by Utagawa Hiroshige[LF]an original pencil drawing of the Pitfall snake by semi-acclaimed Washington DC artist Darius 5200, and a photo of [our] soccer team[end say]. At the very least the wall coverings help compensate for the lack of windows. The office door is to the north, and there's a white metal door to the west.[maybe insert computer muttering][otherwise]It's basically four white walls and grey carpet. There's a cheap desk and chair, and a disconnected phone on the desk. In lieu of windows, there are a few things on the wall: [our] degree in Nonstandard Investigative Techniques, [EG]a trivia competition award, and a poster for [our] favorite movie[PCG]a photo of [our] dog Pluto, and a Japanese print[LF]a pencil drawing of the Pitfall snake, and a photo of [our] soccer team[end say]. The office door is to the north, and there's a white metal door to the west.[end if]"
+"[if biff's office is not visited][We] [pause] and [survey] the scene. It's not much -- four white walls, grey industrial carpet. [Margaret] [have] helpfully assembled [our] desk and chair, though how sturdily is an open question. [Regarding Margaret][They] also took the time to put up some of Agent [Player]'s office decor -- [our] degree in Nonstandard Investigative Techniques, [EG]a trivia competition award, and a poster for [our] favorite movie: the b-movie time-travel classic The Room of Lost Time[PCG]a photo of [our] dog Pluto, and a print of [italic type]Green Pheasant[roman type] by Utagawa Hiroshige[LF]an original pencil drawing of the Pitfall snake by semi-acclaimed Washington DC artist Darius 5200, and a photo of [our] soccer team[end say]. At the very least the wall coverings help compensate for the lack of windows. There's a disconnected landline on the desk. The office door is to the north, and there's a white metal door to the west.[maybe insert computer muttering][otherwise]It's basically four white walls and grey carpet. There's a cheap desk and chair, and a disconnected phone on the desk. In lieu of windows, there are a few things on the wall: [our] degree in Nonstandard Investigative Techniques, [EG]a trivia competition award, and a poster for [our] favorite movie[PCG]a photo of [our] dog Pluto, and a Japanese print[LF]a pencil drawing of the Pitfall snake, and a photo of [our] soccer team[end say]. The office door is to the north, and there's a white metal door to the west.[end if]"
 
 There is a fluorescent light source in Biff's office called biffo-light.
 
@@ -603,8 +602,19 @@ A key is a kind of thing.
 The little grey key is a key. It is in biff's desk's drawer. The little grey key is familiar.
 Biff's desk drawer has matching key the little grey key.
 
+Biff's landline is scenery on Biff's desk. It is privately-named. The printed name is "[our] office phone". The description is "It's not yet hooked up." 
+Understand "office/-- phone", "landline" as Biff's landline.
+
+[After logging into Your Computer:
+	now the help text of your password is "It's 'charon'. Is it so hard to remember?".]
+	
 Biff's chair is a supporter in Biff's Office. Biff's chair is scenery. Biff's chair is enterable. The description is "It's just a plain old office chair. The lumbar support control is broken.". Understand "seat" as Biff's chair. The printed name is "[our] chair".
 Understand "Faraji's/Goldberg's/Gaunt's/Larch's/Petula's/Ezra's" as Biff's chair. 
+
+taking Biff's landline is stealing equipment.
+  
+Instead of stealing equipment:
+	say "The Federal government frowns upon employees taking office equipment home with them."
 
 The description of the desk is "The desk is a cheap DIY piece held together with hex screws. It has a single drawer [regarding Biff's desk][if Biff's desk's drawer is closed]which is closed.[otherwise]which is open.[end if][if Biff's desk's drawer contains something and Biff's desk's drawer is open] The drawer contains [a list of things in Biff's desk's drawer].[end if]" 
 
@@ -642,12 +652,6 @@ To decide is a verb.
 Check dropping the green smartphone:
 	say "[We] [decide] against leaving the phone behind." instead;
 	set pronouns from the green smartphone;
-
-Check inserting the green smartphone into something:
-	say "[We] [decide] against leaving the phone behind." instead;
-
-Check putting the green smartphone on something:
-	say "[We] [decide] against leaving the phone behind." instead;
 
 To init office:
 	if player is not Ezra Gaunt:
@@ -737,7 +741,7 @@ Carry out knocking on the BOSH back door when the location is the back lot and t
 	add behavior waiting-for-player to margaret;
 	
 Report knocking on the BOSH back door when the location is the back lot and the BOSH back door was locked:
-	say "The sound of a key in the lock comes from behind the door, and then Margaret pops her head out. 'Seriously, [Agent]? You got yourself locked out? Be more careful!'";
+	say "You hear the door being unlocked, and then Margaret pops her head out. 'Seriously, [Agent]? You got yourself locked out? Be more careful!'";
 	rule succeeds;
  
 Section 3 - Hallway
@@ -786,11 +790,11 @@ The BOSH front desk is a scenery supporter in front office. Understand "sales", 
 
 The shelves of office supplies are in front office. They are plural-named. They are scenery. "Pens, paper, nothing [we're] really concerned with now." Understand "row/of/drawers/pens/pen/pencils/pencil/paper/papers" as the shelves of office supplies.
 
-The thumb drive is a thing in the room of stuff. The description of the thumb drive is "It's a red plastic thumb drive, with what look like symbols scratched on the surface, but they're like no symbols [we've] ever seen. The metal USB end is somewhat corroded." Understand "USB/flash/memory" as the thumb drive.
+The thumb drive is a thing in the room of stuff. The description of the thumb drive is "It's a red plastic thumb drive, with what look like symbols scratched on the surface, but they're like no symbols you've ever seen. The metal USB end is somewhat corroded." Understand "USB/flash/memory" as the thumb drive.
 
-Some strange symbols are part of the thumb drive. The description is "They look like some kind of language, but nothing recognizable."
+Some strange symbols are part of the thumb drive. The description is "They look like some kind of language, but none you recognize."
 
-finding the drive is a memory in the room of stuff. The description is "[We] [remember] finding the drive in an ancient Onandaga root cellar on a farm in upstate New York during [our] 'archaeology phase'. [We] [have] never been able to read it.".
+finding the drive is a memory in the room of stuff. The description is "[We] [remember] finding the drive in an ancient Onandaga root cellar on a farm in upstate New York. [We] [have] never been able to read it.".
 
 some cardboard boxes are scenery in front office. "There is a stack of boxes in the corner.". Understand "box" as cardboard boxes.
 some biff-flattened-boxes are a thing in the room of stuff. They are privately-named. The printed name is "flattened boxes". Understand "flattened/boxes" as biff-flattened-boxes. The description is "Some cardboard boxes that have been broken down flat for recycling.".
@@ -818,10 +822,10 @@ Instead of taking the cardboard boxes:
 		if Margaret is in the location:
 			initiate Margaret's box routine;
 
-Biff's computer is a thing. It is privately-named. It is behind the BOSH front desk. The printed name is "[our] computer". Understand "computer" as biff's computer. The description is "[Our] computer has been damaged beyond repair.". It is fixed in place.
+Biff's computer is a thing. It is privately-named. It is behind the BOSH front desk. The printed name is "[our] computer". Understand "computer" as biff's computer. The description is "[Our] computer has been damaged beyond repair.".
 
 Check taking Biff's computer:
-	say "[Biff's computer] is too unwieldy to carry around." instead;
+	say "[Biff's computer] is too unwieldy to carry around.";
  
 Instead of examining Biff's computer when the thumb drive is not seen: 
 	say "[description of biff's computer] But [we] [do] find a thumb drive and take it.";
@@ -836,7 +840,6 @@ The heating vent is a scenery container. It is openable, closed, lockable, trans
 
 Securing relates various things to one thing. The verb to secure means the securing relation.
 Some screws secure the heating vent. The description is "Four plain flat head screws." 
-They are undescribed.
 
 After looking behind the BOSH front desk:
 	move the heating vent to front office;
@@ -910,7 +913,7 @@ Understand "glasses/lens/glass" as the pair of astral lenses.
 Section 6 - Moira's office
 				 
 Moira's office is in BOSH HQ. There is a fluorescent light source in Moira's office called moira-light.
-The description of Moira's office is "It is, like Moira herself, neat and orderly. She's clearly made the most of the meager funds she had for furnishing her office. Behind a modest yet functional desk is a modest yet functional office chair. Her bookshelves are filled with titles relating to investigative techniques, law, and skepticism. In the east wall is a closet door. The exit is to the south."
+"It is, like Moira herself, neat and orderly. She's clearly made the most of the meager funds she had for furnishing her office. Behind a modest yet functional desk is a modest yet functional office chair. Her bookshelves are filled with titles relating to investigative techniques, law, and skepticism. In the east wall is a closet door. The exit is to the south."
 
 There is a closet in Moira's office. The closet is a container. It is openable and closed. It is lockable and locked. It is scenery.
 [There is a breaker box in the closet. It is an openable container. It is closed. It is fixed in place. The description is "It's a small metal box affixed to the back wall of the closet. It is featureless apart from the latch."
@@ -1024,13 +1027,7 @@ The describe what's on scenery supporters in room descriptions rule is not liste
 
 The closet door is a door. It is east of Moira's office and west of the utility closet. It is closed, openable, locked, and lockable. It is scenery.
 
-The utility closet is dark. It is in BOSH HQ. "The bureau having just moved in, the closet is still empty, lucky for [us]. The exit is to the west, through [closet door state] door."
-
-To say closet door state:
-	if the closet door is open:
-		say "an open";
-	otherwise:
-		say "a closed";
+The utility closet is dark. It is in BOSH HQ.
 
 Instead of knocking on the closet door when the location is the utility closet and the closet door is locked and the closet door is closed:
 	move Moira Zin to Moira's Office;
@@ -1038,7 +1035,7 @@ Instead of knocking on the closet door when the location is the utility closet a
 	if Moira Zin is in Moira's Office:
 		say "After a few seconds, someone inserts a key in the lock and opens the door. It's [player's surname]'s colleague Moira Zin. 'How'd you get in there, [player's forename]?'
 		
-		[We] [exit] the closet.";
+		You exit the closet.";
 		move the player to Moira's Office;
 		queue Moira Zin with about the hyperdimensional portal;
 		queue Moira Zin with to wait for the report;
@@ -1072,6 +1069,21 @@ The unknown voice is a person.
 The mysterious phone is a phone. It is owned by the unknown voice.
 
 Book 16 - Moving Between Rooms 
+
+ 
+ 
+Table of Transitions
+source room (a room)	target room (a room)	transition text (a text)	used (a truth state)
+Strip Mall Parking Lot South	Strip Mall Parking Lot North	"[We] [trudge] to the other end of the parking lot. It's much like where [we] left."	--
+Strip Mall Parking Lot North	Strip Mall Parking Lot South	"[We] [walk] back to the south end of the parking lot."
+Strip Mall Parking Lot South	Front Office	"Just like in the store this once was, the door chimes as [we] [walk] in."
+Front Office	Strip Mall Parking Lot South	"[We] [step] out of the office into the parking lot."
+Strip Mall Parking Lot North	Li'l Nectarine Convenience Store	"[We] [are] greeted by a blast of music as [we] [enter] the store."
+Li'l Nectarine Convenience Store	Strip Mall Parking Lot North	"[We] [exit] the store into the relative quiet of the nearby traffic."
+Strip Mall Parking Lot South	Dave's pawn shop	"'Cha-ching!'[first time] rings the electronic chime as [we] [step] into the store.[only]"
+Dave's pawn shop	Strip Mall Parking Lot South	"[one of]Once again -- 'Cha-ching!' -- as [we] [leave] the store.[or]'Cha-ching!'[stopping]"
+
+
 
 To decide which text is the transition for (source - a room) to (target - a room):
 	repeat through the Table of Transitions:
@@ -1301,31 +1313,16 @@ lensing is an action applying to nothing. Understand "lens" as lensing.
 Carry out lensing: 
 	now the player wears the pair of astral lenses;
 
-hyperplaning is an action applying to nothing. Understand "hyper" as hyperplaning.
+jumping to the past is an action applying to nothing. Understand "past" as jumping to the past.
 
-Carry out hyperplaning:
-	now the player is in the Featureless Hyperplane;
-	now the player carries the thumb drive;
-	now the player carries the astral lenses;
+Carry out jumping to the past:
+	move the player to field office hallway;
+	now the portal to the past is activated;
 	now the green smartphone is nowhere;
-
-going to part 2 is an action applying to nothing. Understand "part 2" as going to part 2.
-
-Carry out going to part 2:
-	move the player to the featureless hyperplane;
-	move Descending Stair to Featureless Hyperplane;
-	now Hyperplane Coords is {0, 0, 0};
-	try going down;
-	now the green smartphone is nowhere;
-	now the player carries the thumb drive;
-	now the player carries the astral lenses;
-	move Klimp to the BOSH Chief's office;
-	now the player owns the astral lenses;
-	now the player owns Tribes of New York;
 	
-going to part 3 is an action applying to nothing. Understand "part 3" as going to part 3.
+jumping to part 3 is an action applying to nothing. Understand "enigma" as jumping to part 3.
 
-Carry out going to part 3:
+Carry out jumping to part 3:
 	move the player to the enigma lake town hall;
 	now the player wears the pair of astral lenses;
 	now the player carries the recall button;

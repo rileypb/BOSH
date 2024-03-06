@@ -3,6 +3,7 @@ Enigma Lake by Philip Riley begins here.
 Include Building Facades by Philip Riley.
 Include Scheduled People by Philip Riley.
 Include Secret Doors by Gavin Lambert.
+Include Plugging by Philip Riley.
 
 Volume 1 - Some Stuff
 
@@ -366,38 +367,45 @@ Instead of examining the Book of Utilitarianism:
 	otherwise:
 		say "The text is the 'Book of Utilitarianism'. [We] [open] to a page at random and [read] the text:[paragraph break][one of]However, the Lord said to the lizard people, 'I am the Lord of the humans, and I -- oh, and the aliens -- and I will smite you with great vengeance and furious anger and the like.'[or]By the by, Gorm came upon the town of Armagast, and he saw that it was good, and he said, 'I shall build a church here.' And the Lord said, 'No, don't do that, it's a bad idea.' And Gorm said, 'But Lord, I have already started.' And the Lord said, 'Well, okay, but don't say I didn't warn you.'[or]But Gorm's wife was treacherous, and she lay with lizard people, and she bore a son, and the Lord said, 'I'm not going to smite you, but I'm not going to be happy about it.'[or]When Gorm learned of his wife's doings, he rent his garments and wept, and the Lord said, 'Keep it together, man.'[or]And the land was filled with the iniquities of the lizard people, and the Lord said, 'I'm not going to clean that up.'[or]The host of the lizard people sacked the now rather prosperous town of Armagast, and the Lord said, 'I told you so.'[or]And the Lord said, ' 'Tis a far, far better thing that I do, than I have ever done; 'tis a far, far better rest that I go to than I have ever known.' And the lizard people said, 'That's from A Tale of Two Cities.'[or]And the Lord was attending his weekly reading circle, when he had an idea. 'I shall make a world,' he said, 'and I shall call it Earth.' And the lizard people said, 'That's a terrible name.'[or]And lo, the lizard people rebelled against the Lord, and the Lord said, 'I'm not going to put up with that.'[or]And in the town of Gabblehouse was born an infant to a woman named Gorma, and the Lord said, 'That's a terrible name.'[or]And the Lord said, 'I shall rain down upon thee with great vengeance and furious anger, and the lizard people said, 'We've heard that before.'[then at random]"
 
-The electrical outlet is scenery in First Utilitarian Church of Enigma Lake. "A standard electrical outlet, set into the wall[if the extension cord is plugged and the player encloses the extension cord]. The extension cord is plugged into it[otherwise if the extension cord is plugged]. An extension cord is plugged into it[end if]." 
+The electrical outlet is scenery in First Utilitarian Church of Enigma Lake. "A standard electrical outlet, set into the wall[if the extension cord is plugged into the electrical outlet and the player encloses the extension cord]. The extension cord is plugged into it[otherwise if the extension cord is plugged into the electrical outlet]. An extension cord is plugged into it[end if]." 
 
+It is plug-into-able.
 
 Book 17 - Extension Cord
 
-The extension cord is a thing. The description is "A long, heavy-duty extension cord[if the extension cord is plugged and the location is First Utilitarian Church of Enigma Lake], plugged into the wall outlet[otherwise if the extension cord is plugged and the location is the steeple]. It trails down through the trapdoor[otherwise if the extension cord is plugged and the location is the vestry]. It trails through the door into the church[end if]." 
+The extension cord is a thing. The description is "A long, heavy-duty extension cord[if the extension cord is plugged into the electrical outlet and the location is First Utilitarian Church of Enigma Lake], plugged into the wall outlet[otherwise if the extension cord is plugged into the electrical outlet and the location is the steeple]. It trails down through the trapdoor[otherwise if the extension cord is plugged into the electrical outlet and the location is the vestry]. It trails through the door into the church[end if]." 
 
-The extension cord can be plugged or unplugged. The extension cord is unplugged.
+It is pluggable.
 
-Plugging in is an action applying to two things. Understand "plug [something] in" as plugging in.
-Understand "plug in [something]" as plugging in. Understand "plug [something] into [something]" as plugging in. Understand "plug in [something] to [something]" as plugging in.
+Chapter 1 - Special movement rules
 
-Check plugging in the extension cord when the extension cord is plugged:
-	say "The extension cord is already plugged in." instead;
+Slack when the location is the First Utilitarian Church of Enigma Lake and the extension cord is plugged into the electrical outlet and the player encloses the extension cord (this is the church slack rule):
+	if the noun is west:
+		say "[We] [can't] leave the church carrying the extension cord when it's plugged in." instead;
+	otherwise if the noun is up:
+		say "[We] [climb] the ladder and [push] through the trap door to the steeple, dragging the extension cord behind [us].";
+		rule succeeds;
+	otherwise if the noun is east:
+		say "[We] [enter] the vestry, dragging the extension cord behind [us].";
+		rule succeeds;
 
-Check plugging in the extension cord when the second noun is not the electrical outlet:
-	say "That's not something [we] can plug the extension cord into." instead;
+To climb is a verb.
 
-Carry out plugging in:
-	now the extension cord is plugged;
-	say "The extension cord is now plugged in.";
+Slack when the location is the vestry and the extension cord is plugged into the electrical outlet and the player encloses the extension cord (this is the vestry slack rule):
+	if the noun is west:
+		say "[We] [enter] the church, dragging the extension cord behind [us].";
+		rule succeeds;
 
-Rule for supplying a missing second noun while plugging in:
-	if the noun is the extension cord and the location of the noun is First Utilitarian Church of Enigma Lake:
-		now the second noun is the electrical outlet;
-	otherwise:
-		say "You need to specify what [we] should plug it into." instead;
+Slack when the location is the steeple and the extension cord is plugged into the electrical outlet and the player encloses the extension cord (this is the steeple slack rule):
+	if the noun is down:
+		say "[We] [climb] down the ladder to the church, dragging the extension cord behind [us].";
+		rule succeeds;
 
-Check going west when the extension cord is plugged and player encloses the extension cord and the location is First Utilitarian Church of Enigma Lake:
-	say "[We] can't leave the church carrying the extension cord when it's plugged in." instead;
+The church slack rule is listed first in the slack rules.
+The vestry slack rule is listed before the church slack rule in the slack rules.
+The steeple slack rule is listed before the vestry slack rule in the slack rules.
 
-Rule for writing a paragraph about the extension cord when the extension cord is plugged:
+[Rule for writing a paragraph about the extension cord when the extension cord is plugged:
 	if the location is First Utilitarian Church of Enigma Lake and the player encloses the extension cord:
 		say "The extension cord is plugged into the wall outlet.";
 	otherwise if the location is First Utilitarian Church of Enigma Lake:
@@ -428,20 +436,17 @@ The plug-end-of-the-extension-cord is a thing. It is undescribed. It is privatel
 
 The extension cord is in the First Utilitarian Church of Enigma Lake.
 
-After plugging in the extension cord:
-	now the plug-end-of-the-extension-cord is in the location of the second noun;
+After plugging the extension cord into the electrical outlet:
+	now the plug-end-of-the-extension-cord is in the location of the second noun; ]
 
 Section - Unplugging the extension cord
 
-Unplugging is an action applying to one thing. Understand "unplug [something]" as unplugging.
+[ Unplugging is an action applying to one thing. Understand "unplug [something]" as unplugging. ]
 
-To unplug is a verb. To roll is a verb. To reel is a verb.
+[ To unplug is a verb. To roll is a verb. To reel is a verb.
 
-Check unplugging the extension cord when the player encloses the extension cord and the extension cord is unplugged:
+Check unplugging the extension cord when the player encloses the extension cord and the extension cord is not plugged into something:
 	say "The extension cord is not plugged in." instead;
-
-Check unplugging the extension cord when the player encloses the extension cord and the extension cord is plugged and the location is not First Utilitarian Church of Enigma Lake:
-	say "This end of the extension coord is not plugged into anything." instead;
 
 Carry out unplugging the plug-end-of-the-extension-cord:
 	now the extension cord is unplugged;
@@ -462,15 +467,8 @@ Carry out unplugging the extension cord:
 		stop the action;
 
 After unplugging the extension cord:
-	now the plug-end-of-the-extension-cord is nowhere;
+	now the plug-end-of-the-extension-cord is nowhere; ]
 
-Section - Taking the extension cord
-
-Check taking the extension cord when the extension cord is plugged and the location is First Utilitarian Church of Enigma Lake and the player does not enclose the extension cord:
-	try unplugging the extension cord instead; 
-
-Check taking the plug-end-of-the-extension-cord when the extension cord is plugged and the location of the extension cord is not First Utilitarian Church of Enigma Lake:
-	silently try unplugging the plug-end-of-the-extension-cord instead;
 
 Book 17 - Vestry
 
@@ -657,13 +655,13 @@ the portal cave is south of hidden cave. It is in ELR.
 
 Book 24 - Lake shore west
 
-the Lake Shore West is west of Lake Shore North of the Park and north of Solvay Road Leading Out Of Town. It is east of Solvay-Road-by-the-lake. It is in ELR. It is outdoors. The printed name is "west end of the town's lake shore". The preposition is "at".
+the Lake Shore West is west of Lake Shore North of the Park and north of Solvay Road Leading Out Of Town. It is east of Solvay-Road-by-the-lake. It is in ELR. It is outdoors. The printed name is "west end of the town's lake shore". The preposition is "at". 
 
 Book 25 - Horton Family House
 
-The Horton House door is a closed openable locked lockable scenery door. It is west of Solvay Road Leading Out Of Town and east of Horton Family House. The Horton House door has matching key the old copper key.
+The Horton House door is a closed openable locked lockable scenery door. It is west of Solvay Road Leading Out Of Town and east of Horton Family House. The Horton House door has matching key the old copper key. 
 
-Horton Family House is a room. It is in ELR.
+Horton Family House is a room. It is in ELR. It is indoors. "The house is a modest colonial-period building. To the east the front door leads out to Solvay Road. Another door leads west to the family graveyard." 
 
 Book 26 - Astral Tunnel
 
@@ -683,13 +681,13 @@ Horton-back-facade is a building facade. It is in Horton Graveyard. It is privat
 
 Book 28 - Fire Station 1
 
-The garage door is a closed locked lockable openable scenery door. It is west of Solvay Road 100 block and east of the Fire Station 1. Understand "big/red/door" as garage door. The description is "A big red door, with a sign reading 'Fire Station 1'."
+The garage door is a closed locked lockable openable scenery door. It is west of Solvay Road 100 block and east of the Fire Station 1. Understand "big/red/door" as garage door. The description is "A big red door, with a sign reading 'Fire Station 1'. The cornerstone reads '1891'."
 
-Fire Station 1 is in ELR. The printed name is "Hook and Ladder Company #1". 
+Fire Station 1 is in ELR. The printed name is "Hook and Ladder Company #1". "The fire station is a modest red brick building dating to the late 19th century. The garage door is to the east."
 
-The ladder is in the Fire Station 1.
+The ladder is in the Fire Station 1. "A ladder rests against the wall."
 
-The spotlight is in the Fire Station 1. The description is "A large, powerful spotlight, designed to be mounted on a fire truck."
+The spotlight is in the Fire Station 1. The description is "A large, powerful spotlight, designed to be mounted on a fire truck. It has a short cord ending in a standard American 120V AC plug."
 
 Book 29 - Reading Room
 
