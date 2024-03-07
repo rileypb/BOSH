@@ -29,7 +29,7 @@ The locker key is a key.
 
 An astral resonator type is a kind of thing.
 
-The makeshift astral resonator is an astral resonator type. 
+The makeshift astral resonator is an astral resonator type. It is pluggable
 
 Volume 3 - Geography
 
@@ -339,12 +339,12 @@ Book 15 - Lake Street by the Park
 Lake Street by the park is north of Lake Street by the gym and east of Enigma Park. It is in ELR. It is outdoors. The preposition is "walking on". The description is "Lake Street runs north and south from here. To the west is the park, while to the east is the First Utilitarian Church of Enigma Lake."
 
 The church facade is a building facade. It is in Lake Street by the park. It is privately-named. The printed name is "First Utilitarian Church of Enigma Lake". Understand "church" as church facade. "The church is a dignified example of Gothic Revival architecture, its façade dominated by a steeply pitched roof and a slender steeple piercing the sky."
-	The church facade fronts First Utilitarian Church of Enigma Lake.
+	The church facade fronts the First Utilitarian Church of Enigma Lake.
 	It is enterable from Lake Street by the park.
 
 Book 16 - First Utilitarian Church of Enigma Lake
 
-First Utilitarian Church of Enigma Lake is a leavable room. It has egress west. It is east of Lake Street by the Park. It is in ELR. "The interior is dimly lit by the stained glass windows, and the pews are arranged in neat rows facing the pulpit. A standard electrical outlet is set into the wall."
+The First Utilitarian Church of Enigma Lake is a leavable room. It has egress west. It is east of Lake Street by the Park. It is in ELR. "The interior is dimly lit by the stained glass windows, and the pews are arranged in neat rows facing the pulpit. A standard electrical outlet is set into the wall."
 
 The stained glass windows are scenery in First Utilitarian Church of Enigma Lake. "As is traditional in Utilitarian churches, the windows are plain glass, allowing the maximum amount of light to enter the building."
 
@@ -391,21 +391,32 @@ Slack when the location is the First Utilitarian Church of Enigma Lake and the e
 
 To climb is a verb.
 
+
 Slack when the location is the vestry and the extension cord is plugged into the electrical outlet and the player encloses the extension cord (this is the vestry slack rule):
+	repeat with plug running through pluggable things in the location:
+		if a thing (called the socket) accepts the plug:
+			if the player encloses the socket:
+				say "[We] can't leave while [the plug], which we aren't carrying, is plugged into [the socket], which we are carrying.";
+				rule fails;
+	repeat with plug running through plug-into-able things in the location:
+		if a thing (called the plug) is plugged into the socket:
+			if the player encloses the plug:
+				say "[We] can't leave while [the plug], which we are carrying, is plugged into [the socket], which we aren't carrying.";
+				rule fails;
 	if the noun is west:
 		say "[We] [enter] the church, dragging the extension cord behind [us].";
 		rule succeeds;
 
 Slack when the location is the steeple and the extension cord is plugged into the electrical outlet and the player encloses the extension cord (this is the steeple slack rule):
 	if the noun is down:
-		say "[We] [climb] down the ladder to the church, dragging the extension cord behind [us].";
+		say "[We] [climb] down the ladder to the church, the extension dangling down before [us].";
 		rule succeeds;
 
 The church slack rule is listed first in the slack rules.
 The vestry slack rule is listed before the church slack rule in the slack rules.
 The steeple slack rule is listed before the vestry slack rule in the slack rules.
 
-[Rule for writing a paragraph about the extension cord when the extension cord is plugged:
+Rule for writing a paragraph about the extension cord when the extension cord is plugged in:
 	if the location is First Utilitarian Church of Enigma Lake and the player encloses the extension cord:
 		say "The extension cord is plugged into the wall outlet.";
 	otherwise if the location is First Utilitarian Church of Enigma Lake:
@@ -416,15 +427,15 @@ The steeple slack rule is listed before the vestry slack rule in the slack rules
 		say "The end of an extension cord lies here, from where it trails through the door into the church.";
 
 After printing the locale description of the vestry:
-	if the extension cord is plugged and the player encloses the extension cord:
+	if the extension cord is plugged in and the player encloses the extension cord:
 		say "The extension cord runs from [our] hand, through the door, and into the church.";
 
 After printing the locale description of the steeple:
-	if the extension cord is plugged and the player encloses the extension cord:
+	if the extension cord is plugged in and the player encloses the extension cord:
 		say "The extension cord runs from [our] hand, through the trapdoor, and into the church.";
 
 After printing the locale description of the First Utilitarian Church of Enigma Lake:
-	if the extension cord is plugged:
+	if the extension cord is plugged in:
 		if the player encloses the extension cord:
 			say "The extension cord is plugged into the wall outlet.";
 		otherwise if the extension cord is in the vestry:
@@ -432,31 +443,62 @@ After printing the locale description of the First Utilitarian Church of Enigma 
 		otherwise if the extension cord is in the steeple:
 			say "An extension cord is plugged into the wall outlet, from where it trails up through the trapdoor.";
 	
-The plug-end-of-the-extension-cord is a thing. It is undescribed. It is privately-named. Understand "extension/cord/plug" as the plug-end-of-the-extension-cord. The description is "A long, heavy-duty extension cord[if the extension cord is plugged and the location is First Utilitarian Church of Enigma Lake], plugged into the wall outlet[end if]." 
+The plug-end-of-the-extension-cord is a thing. It is undescribed. It is privately-named. The printed name is "extension cord". Understand "extension/cord/plug" as the plug-end-of-the-extension-cord. The description is "A long, heavy-duty extension cord[if the extension cord is plugged in and the location is First Utilitarian Church of Enigma Lake], plugged into the wall outlet[end if]." 
+It is pluggable.
 
 The extension cord is in the First Utilitarian Church of Enigma Lake.
+The extension cord is pluggable and plug-into-able.
 
 After plugging the extension cord into the electrical outlet:
-	now the plug-end-of-the-extension-cord is in the location of the second noun; ]
+	now the plug-end-of-the-extension-cord is in the location of the second noun; 
+	continue the action;
+
+Instead of plugging something into the plug-end-of-the-extension-cord:
+	if the extension cord is touchable:
+		try plugging the noun into the extension cord;
+	otherwise:
+	 	say "The socket end of the extension cord is not here."
 
 Section - Unplugging the extension cord
 
+Check unplugging the extension cord when the location is not the First Utilitarian Church of Enigma Lake and the extension cord is plugged into the electrical outlet:
+	say "[We] can't reach the outlet from where [we] [are]." instead;
+
 [ Unplugging is an action applying to one thing. Understand "unplug [something]" as unplugging. ]
 
-[ To unplug is a verb. To roll is a verb. To reel is a verb.
+To unplug is a verb. To roll is a verb. To reel is a verb.
 
-Check unplugging the extension cord when the player encloses the extension cord and the extension cord is not plugged into something:
+[Check unplugging the extension cord when the player encloses the extension cord and the extension cord is not plugged into something:
 	say "The extension cord is not plugged in." instead;
+]
+
+Check unplugging the plug-end-of-the-extension-cord when something (called the plug) is plugged into the extension cord and the plug is not in the location:
+	say "Something in another room is plugged into the extension cord, preventing [us] from reeling it in." instead;
 
 Carry out unplugging the plug-end-of-the-extension-cord:
-	now the extension cord is unplugged;
-	if the player encloses the extension cord:
+	now the extension cord is not plugged into anything;
+	if the player does not enclose the extension cord:
+		now the player carries the extension cord;
+
+Report unplugging the plug-end-of-the-extension-cord:
+	if the player enclosed the extension cord:
 		say "[We] [unplug] the extension cord.";
 	otherwise:
 		say "[We] [unplug] the extension cord, [reel] in the far end, and [roll] it up neatly.";
-		now the player carries the extension cord;
-		stop the action;
+	stop the action;
 
+Instead of taking the plug-end-of-the-extension-cord when the extension cord is not in the location:
+	if something is plugged into the extension cord:
+		say "Something in another room is plugged into the extension cord, preventing [us] from reeling it in.";
+	otherwise:
+		now the player carries the extension cord;
+		say "[We] [take] the extension cord and [reel] in the far end, leaving it plugged into the outlet.";
+
+Instead of taking the plug-end-of-the-extension-cord when the player encloses the extension cord:
+	now the extension cord is not plugged into anything;
+	say "[We] [unplug] the extension cord.";
+
+[
 Carry out unplugging the extension cord:
 	now the extension cord is unplugged;
 	if the player encloses the extension cord:
@@ -491,8 +533,15 @@ The circuit breaker is a scenery device. "A circuit breaker box is mounted on th
 
 Book 18 - Steeple
 
+To say makeshift resonator state:
+	if something (called the socket) accepts the makeshift astral resonator:
+		say "[A makeshift astral resonator] is mounted on the tripod and plugged into [the socket]";
+		now the socket is unmentioned;
+	otherwise:
+		say "[A makeshift astral resonator] is mounted on the tripod";
+
 the steeple is above the First Utilitarian Church of Enigma Lake. It is in ELR. 
-"From here, [we] can see the obelisk in the park clearly. Someone has set up a tripod here. [if the content of the tripod is nothing]Nothing is mounted on it[otherwise if the content of the tripod is the telescope]A small telescope is mounted on it[otherwise]A makeshift astral resonator is mounted on it[end if]."
+"From here, [we] can see the obelisk in the park clearly. Someone has set up a tripod here. [if the content of the tripod is nothing]Nothing is mounted on it[otherwise if the content of the tripod is the telescope][A telescope] is mounted on it[otherwise][makeshift resonator state][end if]."
 
 The telescope is in the tripod. The description is "A small telescope suitable for amateur astronomy."
 
@@ -638,7 +687,7 @@ The rusty metal door is a closed openable scenery door. It is southeast of Lake 
 The equipment cabinet is a closed locked openable lockable scenery container in the workshed.
 It has matching key the iron key.
 
-The rusty astral resonator is in the equipment cabinet.
+The rusty astral resonator is in the equipment cabinet. 
 
 The trapdoor is a scenery door. It is undescribed. It is below workshed and above the hidden cave.
 The trapdoor can be obscured. The trapdoor is obscured.
@@ -896,5 +945,11 @@ strip mall parking lot south	--	"Black asphalt."
 strip mall parking lot north	--	"Black asphalt."
 li'l nectarine convenience store	--	"Grungy black and white tile."
 Dave's pawn shop	--	"Dingy stained industrial carpet."]
+
+Volume 6 - Not for Release
+
+test cord with "gonear church/take cord/plug it into outlet/e/drop cord/w/unplug cord/plug cord into outlet/e/purloin lamp/plug lamp into cord/w/e/drop lamp/w/take lamp/drop cord/w/drop lamp
+/w/unplug cord/take cord/".
+test steeple with "gonear church/take cord/plug it into outlet/u/purloin makeshift astral resonator/take telescope/put resonator in tripod/plug resonator into cord/look".
 
 Enigma Lake ends here.

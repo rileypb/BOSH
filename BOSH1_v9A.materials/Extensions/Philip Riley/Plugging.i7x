@@ -92,15 +92,22 @@ Slack when the player encloses something plug-into-able (called the socket):
 		say "[We] can't leave while carrying [the socket], which has [the plug] plugged into it.";
 		rule fails;
 
-Check going when the player encloses something pluggable (called the plug) and something (called the socket) accepts the plug and the player does not enclose the socket:
+Check going:
+	if the player encloses something pluggable or the player encloses something plug-into-able:
+		follow the slack rules;
+		if the rule failed:
+			stop the action;
+
+[ Check going when the player encloses something pluggable (called the plug) and something (called the socket) accepts the plug and the player does not enclose the socket:
 	follow the slack rules;
 	if the rule failed:
 		stop the action;
+		
 
 Check going when the player encloses something plug-into-able (called the socket) and something (called the plug) is plugged into the socket and the player does not enclose the plug:
 	follow the slack rules;
 	if the rule failed:
-		stop the action;
+		stop the action; ]
 
 
 Book - Appearance in inventory
@@ -137,7 +144,7 @@ The lamp is a thing in the Test Room. The lamp is pluggable.
 
 The lamp is wearable.
 
-The extension cord is a thing in the Test Room. The extension cord is pluggable and plug-into-able.
+[ The extension cord is a thing in the Test Room. The extension cord is pluggable and plug-into-able. ]
 
 The Other Room is west of the Test Room. "This is another room."
 

@@ -53,7 +53,7 @@ I've also read BOSH Facts by Philip Riley, which is 94 words long.
 I've also read Image Strip by Philip Riley, which is 2080 words long.
 I've also read Swamp Park by Philip Riley, which is 3529 words long.
 I've also read Margaret by Philip Riley, which is 1286 words long.
-I've also read Enigma Lake by Philip Riley, which is 8857 words long.
+I've also read Enigma Lake by Philip Riley, which is 9715 words long.
 I've also read Gender Options by Nathanael Nerode, which is 7730 words long.
 I've also read Followup Questions by Philip Riley, which is 196 words long.
 I've also read Make Test by Philip Riley, which is 216 words long.
@@ -72,7 +72,7 @@ I've also read Scheduled People by Philip Riley, which is 161 words long.
 I've also read Glulx Entry Points by Emily Short, which is 1903 words long.
 I've also read Door Varieties by Philip Riley, which is 296 words long.
 I've also read Secret Doors by Gavin Lambert, which is 272 words long.
-I've also read Plugging by Philip Riley, which is 889 words long.
+I've also read Plugging by Philip Riley, which is 819 words long.
 I've also read Playtest by Philip Riley, which is 923 words long.
 I've also read Glulx Definitions by Dannii Willis, which is 879 words long.
 I've also read Glk Object Recovery by Dannii Willis, which is 460 words long.
@@ -140,7 +140,7 @@ Regional: CONSTANT_VNT'field office area'-region(I254_field_office_area)(I159'fi
  == region
 Regional: CONSTANT_VNT'field office area'-region(I254_field_office_area)(I159'field office area')
  == region
-Regional: CONSTANT_VNT'elr'-region(I429_elr)(I320'elr')
+Regional: CONSTANT_VNT'elr'-region(I428_elr)(I319'elr')
  == region
 
 
@@ -245,17 +245,17 @@ Phase XII ... Code generation
                                                             Fail: list of numbers (~) number = nothing
                                             Fail: nothing (~) real number = nothing
                                             Fail: list of numbers (~) real number = nothing
-        Regional: CONSTANT_VNT'bosh hq'-region(I592_bosh_hq)(I477'bosh hq')
+        Regional: CONSTANT_VNT'bosh hq'-region(I593_bosh_hq)(I478'bosh hq')
          == region
-        Regional: CONSTANT_VNT'bosh hq'-region(I592_bosh_hq)(I477'bosh hq')
-         == region
-        Regional: CONSTANT_VNT'laundromat-region'-region(I376_laundromat_region)(I270'laundromat-region')
+        Regional: CONSTANT_VNT'bosh hq'-region(I593_bosh_hq)(I478'bosh hq')
          == region
         Regional: CONSTANT_VNT'laundromat-region'-region(I376_laundromat_region)(I270'laundromat-region')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I429_elr)(I320'elr')
+        Regional: CONSTANT_VNT'laundromat-region'-region(I376_laundromat_region)(I270'laundromat-region')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I429_elr)(I320'elr')
+        Regional: CONSTANT_VNT'elr'-region(I428_elr)(I319'elr')
+         == region
+        Regional: CONSTANT_VNT'elr'-region(I428_elr)(I319'elr')
          == region
         Regional: CONSTANT_VNT'field office area'-region(I254_field_office_area)(I159'field office area')
          == region
@@ -304,7 +304,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 230 files written as streams.
-CPU time: 582 centiseconds
+CPU time: 592 centiseconds
 
 
 That concludes the debugging log from this run of Inform.
