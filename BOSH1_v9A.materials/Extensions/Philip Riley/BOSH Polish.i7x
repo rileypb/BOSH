@@ -1,9 +1,10 @@
 BOSH Polish by Philip Riley begins here.
 
 Include Polish by Philip Riley.
+Include Scheduled People by Philip Riley.
 
 
-Table of No Names (continued)
+Table of No Names (Continued)
 named person (person)	anonymous description (text)	unnamed description (text)	proper name (text)
 Hutz	"bony old man"	"town groundsman"	"Hutz"
 

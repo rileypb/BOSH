@@ -29,7 +29,15 @@ The locker key is a key.
 
 An astral resonator type is a kind of thing.
 
-The makeshift astral resonator is an astral resonator type. It is pluggable
+The makeshift astral resonator is an astral resonator type. It is pluggable.
+
+Rule for printing inventory details of the makeshift astral resonator:
+	let L be a list of texts;
+	if something (called the socket) accepts the makeshift astral resonator:
+		add "plugged into [the socket]" to L;
+	if the makeshift astral resonator is powered:
+		add "providing light" to L;
+	say " ([L])".
 
 Volume 3 - Geography
 
@@ -377,6 +385,14 @@ The extension cord is a thing. The description is "A long, heavy-duty extension 
 
 It is pluggable.
 
+Chapter - Power
+
+Definition: a thing is powered:
+	if it is the electrical outlet:
+		yes;
+	otherwise if something (called the socket) accepts it:
+		decide on whether or not the socket is powered;
+
 Chapter 1 - Special movement rules
 
 Slack when the location is the First Utilitarian Church of Enigma Lake and the extension cord is plugged into the electrical outlet and the player encloses the extension cord (this is the church slack rule):
@@ -420,11 +436,20 @@ Rule for writing a paragraph about the extension cord when the extension cord is
 	if the location is First Utilitarian Church of Enigma Lake and the player encloses the extension cord:
 		say "The extension cord is plugged into the wall outlet.";
 	otherwise if the location is First Utilitarian Church of Enigma Lake:
-		say "An extension cord lies on the floor, plugged into the wall outlet.";
+		if something (called the plug) is plugged into the extension cord:
+			say "The extension cord is plugged into the wall outlet, and [the plug] is plugged into it.";
+		otherwise:
+			say "An extension cord lies on the floor, plugged into the wall outlet.";
 	otherwise if the location is the steeple:
-		say "The end of an extension cord lies here, from where it trails down through the trapdoor.";
+		say "The end of an extension cord lies here, from where it trails down through the trapdoor";
+		if something (called the plug) is plugged into the extension cord:
+			say ". [The plug] is plugged into it";
+		say ".";
 	otherwise if the location is the vestry:
-		say "The end of an extension cord lies here, from where it trails through the door into the church.";
+		say "The end of an extension cord lies here, from where it trails through the door into the church";
+		if something (called the plug) is plugged into the extension cord:
+			say ". [The plug] is plugged into it";
+		say ".";
 
 After printing the locale description of the vestry:
 	if the extension cord is plugged in and the player encloses the extension cord:
@@ -433,6 +458,9 @@ After printing the locale description of the vestry:
 After printing the locale description of the steeple:
 	if the extension cord is plugged in and the player encloses the extension cord:
 		say "The extension cord runs from [our] hand, through the trapdoor, and into the church.";
+
+After printing the locale description of the steeple when mounted-makeshift-resonator is true and the makeshift astral resonator is powered:
+	say "The makeshift astral resonator emits a bright beam of light directly at the obelisk in the park.[paragraph break]";
 
 After printing the locale description of the First Utilitarian Church of Enigma Lake:
 	if the extension cord is plugged in:
@@ -617,6 +645,8 @@ Instead of inserting something into the tripod:
 
 Instead of putting something on the tripod:
 	try mounting the noun on the tripod;
+
+The steeple-obelisk-facade is a backdrop. It is in the steeple. Understand "obelisk/park" as steeple-obelisk-facade. "The obelisk in the park is clearly visible from here."
 
 Book 19 - Lake at Ridge
 
@@ -947,6 +977,14 @@ li'l nectarine convenience store	--	"Grungy black and white tile."
 Dave's pawn shop	--	"Dingy stained industrial carpet."]
 
 Volume 6 - Not for Release
+
+power querying is an action applying to one thing. Understand "is [something] powered" as power querying.
+
+Carry out power querying:
+	if the noun is powered:
+		say "Yes.";
+	otherwise:
+		say "No.";
 
 test cord with "gonear church/take cord/plug it into outlet/e/drop cord/w/unplug cord/plug cord into outlet/e/purloin lamp/plug lamp into cord/w/e/drop lamp/w/take lamp/drop cord/w/drop lamp
 /w/unplug cord/take cord/".

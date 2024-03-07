@@ -27,6 +27,8 @@ Include Door Utils by Philip Riley.
 Include Real People by Philip Riley.
 Include Visible Rooms by Philip Riley.  
 Include Polish by Philip Riley.
+
+Include BOSH Polish by Philip Riley.
  
 Include Choices by Philip Riley.
  
@@ -1072,16 +1074,6 @@ Book 16 - Moving Between Rooms
 
  
  
-Table of Transitions
-source room (a room)	target room (a room)	transition text (a text)	used (a truth state)
-Strip Mall Parking Lot South	Strip Mall Parking Lot North	"[We] [trudge] to the other end of the parking lot. It's much like where [we] left."	--
-Strip Mall Parking Lot North	Strip Mall Parking Lot South	"[We] [walk] back to the south end of the parking lot."
-Strip Mall Parking Lot South	Front Office	"Just like in the store this once was, the door chimes as [we] [walk] in."
-Front Office	Strip Mall Parking Lot South	"[We] [step] out of the office into the parking lot."
-Strip Mall Parking Lot North	Li'l Nectarine Convenience Store	"[We] [are] greeted by a blast of music as [we] [enter] the store."
-Li'l Nectarine Convenience Store	Strip Mall Parking Lot North	"[We] [exit] the store into the relative quiet of the nearby traffic."
-Strip Mall Parking Lot South	Dave's pawn shop	"'Cha-ching!'[first time] rings the electronic chime as [we] [step] into the store.[only]"
-Dave's pawn shop	Strip Mall Parking Lot South	"[one of]Once again -- 'Cha-ching!' -- as [we] [leave] the store.[or]'Cha-ching!'[stopping]"
 
 
 
@@ -1294,7 +1286,7 @@ Book 21 - Not For Release
  
 Include BOSH Tests by Philip Riley.
 
-DEBUG is true.
+DEBUG is false.
 
 The access through barriers rule response (A) is "you have run afoul of the access through barriers rule!";
 

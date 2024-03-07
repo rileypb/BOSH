@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 10245 words long.
+I've now read your source text, which is 10063 words long.
 
 
 -----------------------------------------------------
@@ -41,6 +41,7 @@ I've also read Door Utils by Philip Riley, which is 41 words long.
 I've also read Real People by Philip Riley, which is 397 words long.
 I've also read Visible Rooms by Philip Riley, which is 63 words long.
 I've also read Polish by Philip Riley, which is 86 words long.
+I've also read BOSH Polish by Philip Riley, which is 1219 words long.
 I've also read Choices by Philip Riley, which is 408 words long.
 I've also read New Light by Philip Riley, which is 333 words long.
 I've also read Early Declarations by Philip Riley, which is 23 words long.
@@ -53,7 +54,7 @@ I've also read BOSH Facts by Philip Riley, which is 94 words long.
 I've also read Image Strip by Philip Riley, which is 2080 words long.
 I've also read Swamp Park by Philip Riley, which is 3529 words long.
 I've also read Margaret by Philip Riley, which is 1286 words long.
-I've also read Enigma Lake by Philip Riley, which is 9715 words long.
+I've also read Enigma Lake by Philip Riley, which is 9958 words long.
 I've also read Gender Options by Nathanael Nerode, which is 7730 words long.
 I've also read Followup Questions by Philip Riley, which is 196 words long.
 I've also read Make Test by Philip Riley, which is 216 words long.
@@ -65,10 +66,10 @@ I've also read Floors by Philip Riley, which is 900 words long.
 I've also read Ceilings by Philip Riley, which is 1069 words long.
 I've also read Can't Go That Way by Philip Riley, which is 812 words long.
 I've also read Can't Take That by Philip Riley, which is 514 words long.
+I've also read Scheduled People by Philip Riley, which is 161 words long.
 I've also read Complex Listing by Emily Short, which is 3410 words long.
 I've also read Exit Lister by Eric Eve, which is 3510 words long.
 I've also read Options Paragraph by Philip Riley, which is 180 words long.
-I've also read Scheduled People by Philip Riley, which is 161 words long.
 I've also read Glulx Entry Points by Emily Short, which is 1903 words long.
 I've also read Door Varieties by Philip Riley, which is 296 words long.
 I've also read Secret Doors by Gavin Lambert, which is 272 words long.
@@ -245,9 +246,9 @@ Phase XII ... Code generation
                                                             Fail: list of numbers (~) number = nothing
                                             Fail: nothing (~) real number = nothing
                                             Fail: list of numbers (~) real number = nothing
-        Regional: CONSTANT_VNT'bosh hq'-region(I593_bosh_hq)(I478'bosh hq')
+        Regional: CONSTANT_VNT'bosh hq'-region(I594_bosh_hq)(I479'bosh hq')
          == region
-        Regional: CONSTANT_VNT'bosh hq'-region(I593_bosh_hq)(I478'bosh hq')
+        Regional: CONSTANT_VNT'bosh hq'-region(I594_bosh_hq)(I479'bosh hq')
          == region
         Regional: CONSTANT_VNT'laundromat-region'-region(I376_laundromat_region)(I270'laundromat-region')
          == region
@@ -296,15 +297,15 @@ Phase XII ... Code generation
 
 ==== Phase XII.21 ... Compiling routines from predicate calculus ====
 
-Providing for a total heap of 8192, given requirement of 8192
+Providing for a total heap of 16384, given requirement of 13064
 
 
 -----------------------------------------------------
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 230 files written as streams.
-CPU time: 592 centiseconds
+Total of 232 files written as streams.
+CPU time: 604 centiseconds
 
 
 That concludes the debugging log from this run of Inform.
