@@ -38,7 +38,6 @@ Include Early Declarations by Philip Riley.
  
 [Include Farseeing by Philip Riley.]
 Include Basics by Philip Riley.
-Include Memories by Philip Riley. 
 Include Building Facades by Philip Riley.
  
 Include Simple Conversation by Philip Riley.
@@ -49,6 +48,7 @@ Include Swamp Park by Philip Riley.
 [Include Conversations General by Philip Riley.]
 Include Margaret by Philip Riley. 
 Include Enigma Lake by Philip Riley. 
+Include Snarky Remarks by Philip Riley.
 
 Include Gender Options by Nathanael Nerode.   
   	
@@ -92,38 +92,43 @@ Book 1 - Beginning
 The Room of Stuff is a room. 
   
 Yourself is in the room of stuff.  
+
+The isolation booth is a room.
+
+The new room description heading rule does nothing when the location is the isolation booth.
   
 Ezra Gaunt is a man in the Room of Stuff. The description is "Agent Gaunt's last name describes him well. He is a perpetually worried-looking individual, a look emphasized by his thinness and his thick-rimmed glasses.".
 Petula Goldberg is a woman in the Room of Stuff. The description is "Agent Goldberg has lots of dogs, a fact which can be inferred by the inevitable fur somewhere on her person. The last front office worker at the Bureau left due to an extreme allergic reaction to Goldberg.".
-Larch Faraji is a nonbinary in the Room of Stuff. The third singular pronoun is singular-they-pronoun. The description is "Agent Faraji ". 
+Larch Faraji is a nonbinary in the Strip Mall Parking Lot South. The third singular pronoun is singular-they-pronoun. The description is "Agent Faraji ". 
  
-
-the good old days is a memory in the room of stuff. The printed name is "the good old days". The description is "[the description of the good old days].".
-To say the description of the good old days:
-	let character list be { Ezra Gaunt, Petula Goldberg, Larch Faraji, Chief Klimp };
-	remove the player from character list;
-	say "[We] [remember] how [we], [character list] used to go out for drinks at the Cock and Bull in downtown DC. Good times";  
-  
 Play mode is a kind of value. The play modes are _startup, _normal, and picking character.
 The current play mode is a play mode that varies. The current play mode is initially _startup. 
 
-[If we put all the subjects in the world, we can refer to them.]
+To print faraji bio:
+	say fixed letter spacing;
+	say "Larch Faraji (they/them): An agent of the Bureau of Strange Happenings. Dark hair, dark eyes, and a dark sense of humor. Specialized in the investigation of unexplained phenomena throughout the United States and its territories. Lead singer of the third wave neo-old-school punk band DC Trash. Liable to fits of sarcasm and cynicism. Dedicated to the Bureau's mission. Status: Potential threat.";
+	lb;
+	say "    -- Notes from Senate Investigation into BOSH";
+	lb;
+	lb;
+	continue;
+	say variable letter spacing;
+
+
 When play begins:   
 	now the story viewpoint is third person singular;
 	Repeat with S running through subjects:  
 		move S to the Room of Subjects;
-	[Repeat with F running through facts:
-		move F to the Room of Subjects; ]
-	say "[bold type]Department of Homeland Security, Washington, DC[roman type][line break]";
+	print faraji bio;
+	[ say "[bold type]Department of Homeland Security, Washington, DC[roman type][line break]";
 	say "Open on a drab office with decor dating to the mid-eighties. The DHS assistant to the associate sub-director looks longingly at the office clock nearing five, then leans across the desk and impatiently states his demands:[paragraph break]";
 	say "'First name, last name, pronouns?'[paragraph break]";  
 	say "(1) Ezra Gaunt (he/him), winner of the 2006 Baltimore County Edgar Allan Poe Trivia Competition;[paragraph break]";
 	say "(2) Petula Clark Goldberg (she/her), former award-winning dog groomer of the avant-garde school;[paragraph break]";
 	say "or (3) Larch Faraji (they/them), lead singer of the third wave neo-old-school punk band DC Trash.";
 	now current play mode is picking character; 
-	follow the current graphics drawing rule;
-	[now the quip-suggestion-phrase is "[special style 2][Player's surname] could ";]
-	if DEBUG is false:		
+	follow the current graphics drawing rule; ]
+	if 1 is 0:		
 		now the command prompt is "1, 2, or 3? > ";
 		now current play mode is picking character;
 	otherwise: 
@@ -131,18 +136,18 @@ When play begins:
 		now player's full name is "Larch Faraji";  
 		now player's surname is "Faraji";
 		now the player is Larch Faraji; 
-[		now player's forename is "Ezra";
-		now player's full name is "Ezra Gaunt";
-		now player's surname is "Gaunt";
-		now the player is Ezra Gaunt;]
 		init player;
 		init office;
-		move the player to the Strip Mall Parking Lot South;
+		[ move the player to the Strip Mall Parking Lot South; ]
 		try unknown voice calling the blue flipphone on mysterious phone;
 		move klimp to the Room of Stuff;
 		move moira to the Room of Stuff;
 		now the current play mode is _normal; 
 		set possessives;
+		say Intro Text;
+		continue;
+		follow the current graphics drawing rule;
+		[ move the player to the Strip Mall Parking Lot South; ]
  
 To survey is a verb. To wrinkle is a verb.
 
@@ -152,15 +157,12 @@ Intro Text is always "As an agent of the Bureau of Strange Happenings (BOSH), it
 	
 	But for now, today is move-in day at the bureau. 
 	
-	We open on a decrepit strip mall just as an aging Hyundai pulls into the potholed parking lot. [agent] steps out of the car. [We] [survey] the area and [wrinkle] [our] nose.[paragraph break]".
+	We open on a decrepit strip mall just as an aging Hyundai pulls into the potholed parking lot. [agent] steps out of the car. They survey the area and wrinkle their nose.[paragraph break]".
 
 	
 	 
 
 
-The isolation booth is a room.
-
-The new room description heading rule does nothing when the location is the isolation booth.
 	
 After reading a command when current play mode is picking character:
 	if the player's command matches "1":
@@ -770,18 +772,23 @@ Understand "storefront" as the front office.
 The description of front office is "It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.".
 
 The coffee table is a scenery supporter in front office. "This doesn't look like government-issue furniture. More like thrift store. It's scuffed, but at least it's sturdy."
+The snarky remark is "The rings are the mark of quality."
+
 The couch is an enterable scenery supporter in front office. "Apparently the bureau did make off with at least one piece of government furniture. A bland, institutional piece with fake leather seats, it's at least preferable to second-hand upholstery." Understand "sofa" as couch.
+The snarky remark of the couch is "There goes the department budget for the month."
+
 The makeshift seating area is scenery in front office. "A coffee table and couch greet visitors to the office, as if any are expected."
 
 The coatrack is scenery in front office. "It's an old clothing rack from the department store which formerly occupied this space." Understand "old/clothing/rack/coat" as the coatrack.
+The snarky remark of the coatrack is "I wonder what's on sale today?"
 
 To say photos description:
 	let character list be { Ezra Gaunt, Petula Goldberg, Larch Faraji };
 	remove the player from character list;
 	say "The photo of [character list] smiling together is particularly poignant, as they were just let go last month";
-	remember the good old days for the player;
 
 Some Bureau photos are scenery in the front office. "[photos description].". 
+The snarky remark of the Bureau photos is "Klimp, Ezra, Petula, and I used to go out for drinks at the Cock and Bull in downtown DC. Good times.";
 
 Margaret Chao is in front office.  
 
@@ -789,16 +796,19 @@ There is a copy of the Washington Herald. The description is "The front page sto
 Understand "newspaper", "paper", "news" as the Washington Herald.
 
 The BOSH front desk is a scenery supporter in front office. Understand "sales", "counter" as the BOSH front desk. The description is "The former sales counter now functions as a desk for the office manager (currently [Margaret]). Behind it are a number of shelves holding office supplies."
+The snarky remark of the BOSH front desk is "I wonder if they'll let us keep the cash register."
 
 The shelves of office supplies are in front office. They are plural-named. They are scenery. "Pens, paper, nothing [we're] really concerned with now." Understand "row/of/drawers/pens/pen/pencils/pencil/paper/papers" as the shelves of office supplies.
 
 The thumb drive is a thing in the room of stuff. The description of the thumb drive is "It's a red plastic thumb drive, with what look like symbols scratched on the surface, but they're like no symbols you've ever seen. The metal USB end is somewhat corroded." Understand "USB/flash/memory" as the thumb drive.
+The snarky remark of the thumb drive is "Some crazy dude mailed this to me last month, said he found it in an ancient Onandaga root cellar on a farm in upstate New York. Claimed it was proof of time travel."
 
-Some strange symbols are part of the thumb drive. The description is "They look like some kind of language, but none you recognize."
-
-finding the drive is a memory in the room of stuff. The description is "[We] [remember] finding the drive in an ancient Onandaga root cellar on a farm in upstate New York. [We] [have] never been able to read it.".
+To recognize is a verb.
+Some strange symbols are part of the thumb drive. The description is "They look like some kind of language, but none [we] [recognize]."
 
 some cardboard boxes are scenery in front office. "There is a stack of boxes in the corner.". Understand "box" as cardboard boxes.
+The snarky remark of the cardboard boxes is "There's something satisfying about flattening boxes."
+
 some biff-flattened-boxes are a thing in the room of stuff. They are privately-named. The printed name is "flattened boxes". Understand "flattened/boxes" as biff-flattened-boxes. The description is "Some cardboard boxes that have been broken down flat for recycling.".
 some margaret-flattened-boxes are a thing in the room of stuff. They are privately-named. The printed name is "flattened boxes". Understand "flattened/boxes" as margaret-flattened-boxes. The description is "Some cardboard boxes that have been broken down flat for recycling."
 
@@ -825,6 +835,7 @@ Instead of taking the cardboard boxes:
 			initiate Margaret's box routine;
 
 Biff's computer is a thing. It is privately-named. It is behind the BOSH front desk. The printed name is "[our] computer". Understand "computer" as biff's computer. The description is "[Our] computer has been damaged beyond repair.".
+The snarky remark of the computer is "It doesn't run much worse than it did before."
 
 Check taking Biff's computer:
 	say "[Biff's computer] is too unwieldy to carry around.";
@@ -833,12 +844,11 @@ Instead of examining Biff's computer when the thumb drive is not seen:
 	say "[description of biff's computer] But [we] [do] find a thumb drive and take it.";
 	now the player carries the thumb drive;
 	now the thumb drive is seen;
-	remember finding the drive for the player;	
 
 The behind description of the BOSH front desk is "There are a number of shelves of office supplies behind the desk. There is also a heating vent on the floor here.";
 
 The heating vent is a scenery container. It is openable, closed, lockable, transparent and locked. "A typical air register with a grill which one would hope would stop things like, say, a hex wrench from falling through. It's set in the floor behind the front desk. The vent is held closed by four screws." Understand "heat/air/conditioning/register" as the heating vent. It is undescribed. 
-
+The snarky remark of the heating vent is "It gets better and better."
 
 Securing relates various things to one thing. The verb to secure means the securing relation.
 Some screws secure the heating vent. The description is "Four plain flat head screws." 
@@ -875,47 +885,61 @@ Section 5 - BOSH chief's office
 the BOSH Chief's office is in BOSH HQ. There is a fluorescent light source in the BOSH Chief's office called chief-light.
 The description of the BOSH Chief's office is "[If the BOSH chief's office is not visited]Looks like the Chief has already moved in.[paragraph break][end if]Chief Klimp's office is full of character. Shelves strewn with knick-knacks abut a cozy armchair and a mahogany side table supporting a large globe. A bookcase on the north wall is packed with books on paranormal happenings. Garish prints adorn the remaining wall space.  Under one of these is a modernistic desk of glass and chrome, behind which is a very nice black leather swivel chair. There is a computer on the desk, and to its side is an antique wooden file cabinet. To tell the truth, it's all a bit much, but it matches Klimp's personality perfectly. There is an exit to the east.[if klimp is in the location][first time]
 
-[Klimp] says 'What's with that ringing? Someone answer it!'[only]"
+[Klimp] says 'What's with that ringing? Someone answer it!'[only]".
+The snarky remark of the BOSH Chief's office is "It's like a museum of bad taste."
 
 The Chief's desk is a supporter in BOSH Chief's Office. It is scenery. "This desk is a beautiful assembly of smokey glass and chrome framing. The 'legs' form shelves where Klimp keeps yet more curios. One might wonder where Klimp gets the money."
+The snarky remark of the Chief's desk is "Most of us just want a surface to keep our stuff off the floor."
 
 Klimp's Computer is a thing on the chief's desk. It is scenery.
 
 The desk shelves are a supporter. They are part of the Chief's desk. They support a polished orange marble dodecahedron. The description of the dodecahedron is "A relic of the Chief's sacred geometry phase.". Understand "legs" as desk shelves.
 
 Klimp owns the dodecahedron.
+The snarky remark of the dodecahedron is "I'm partial to Catalan solids, actually."
 
 The black leather swivel chair is a supporter in BOSH Chief's Office. It is enterable. It is scenery. "Nice chair. Good lumbar support."
 
 The globe is a thing in the BOSH Chief's office. It is scenery. "The globe is very handsome with lots of intriguing detail. Unfortunately, Klimp has marred it with thumbtacks and string marking the world's 'leylines'."
+The snarky remark of the globe is "This is what happens when you let Klimp play with the office supplies."
 
 The armchair is a supporter in BOSH Chief's Office. It is enterable. It is scenery. "Plush and comfortable with a yellow and red striped design. Absolutely hideous.". Understand "chair" as the armchair.
+The snarky remark of the armchair is "It's like a clown exploded."
 
 The mahogany side table is a thing in BOSH Chief's Office. It is scenery. "This is a nice piece, quite out of place in the BOSH offices. Flame mahogany with very pretty inlays."
- 
+The snarky remark of the mahogany side table is "Even Klimp gets it right sometimes."
+
 The bookcase is a thing in BOSH Chief's Office. It is scenery. "The Chief's library boasts many interesting titles, from Alton Cherry's [italic type]Waiting for the Aliens[roman type] to Debi Bosworth's [italic type]My Travels in Time[roman type]." Understand "books" as bookcase.
+The snarky remark of the bookcase is "So many books, so little sense."
 
 Waiting-for-the-Aliens is a thing in BOSH Chief's Office. It is privately-named. The printed name is "Waiting for the Aliens". It is scenery. Understand "Waiting/for/aliens/Alton/Cherry" as Waiting-for-the-Aliens. "Alton Cherry's [italic type]Waiting for the Aliens[roman type] is a classic of the genre. More a history of publicly-known material than an argument for or against the existence of aliens on earth, it is accessible to believers and non-believers alike."
+The snarky remark of Waiting-for-the-Aliens is "I'm waiting for the sequel, 'Waiting for the Aliens to Leave'."
  
 Travels in Time is a thing in BOSH Chief's Office. It is scenery. Understand "My Travels in Time" as Travels in Time. Understand "Debi/Bosworth" as Travels in Time. "Debi Bosworth's [italic type]My Travels in Time[roman type] is the account of Ms. Bosworth's alleged travels to the past and future. She is careful to point out that she has never known a man in a blue box."
+The snarky remark of Travels in Time is "Glad to see the Chief is keeping up with the classics."
 
 The Chief's shelves are a supporter in BOSH Chief's Office. They are scenery. "These shelves sport an array of oddities and memorabilia."
   
 The juvenile sasquatch skull is a thing on the chief's shelves. Chief Klimp owns the skull. The description of the skull is "It looks a bit Neanderthal, actually." 
+The snarky remark of the skull is "Cryptozoology is a science, right?"
  
 The antique wooden file cabinet is a container in the BOSH Chief's office. It is closed and locked. It is scenery. "Looks like it was taken out of an old library somewhere."
 
 The prints are scenery in the BOSH Chief's office. The description is "There are three prints, the most striking of which is a neon-hued abstract by Diego Ernesto Diaz, the late Mexican painter, titled 'Hora de la Muerte'.".
+Understand "painting/paintings" as prints.
+The snarky remark of the prints is "The Chief's taste in art is as good as his taste in music."
  
 The oddities are on the chief's shelves. They are scenery. The description is "This and that piece of junk that Klimp thinks is funny or interesting.". Understand "memorabilia", "junk", "stuff" as the oddities.
 
 A pair of astral lenses is on the chief's shelves. It is ambiguously plural. Chief Klimp owns the pair of astral lenses. The description of the pair of astral lenses is "To all appearances an ordinary pair of glasses, the astral lenses allegedly reveal the existence of extra-dimensional pathways." The pair of astral lenses is wearable. 
 Understand "glasses/lens/glass" as the pair of astral lenses.
+The snarky remark of the pair of astral lenses is "These are useful for navigating with the TARDIS."
 
 Section 6 - Moira's office
 				 
 Moira's office is in BOSH HQ. There is a fluorescent light source in Moira's office called moira-light.
 "It is, like Moira herself, neat and orderly. She's clearly made the most of the meager funds she had for furnishing her office. Behind a modest yet functional desk is a modest yet functional office chair. Her bookshelves are filled with titles relating to investigative techniques, law, and skepticism. In the east wall is a closet door. The exit is to the south."
+The snarky remark of Moira Zin is "The problem with Moira is that she's too good at her job. Slow down and let the rest of us catch up, will you?"
 
 There is a closet in Moira's office. The closet is a container. It is openable and closed. It is lockable and locked. It is scenery.
 [There is a breaker box in the closet. It is an openable container. It is closed. It is fixed in place. The description is "It's a small metal box affixed to the back wall of the closet. It is featureless apart from the latch."
@@ -923,6 +947,7 @@ There is a circuit breaker in the breaker box. It is fixed in place.
 A circuit breaker is a device. The description is "The circuit breaker is a single switch, labeled `20 amps`."]
 
 Moira's desk is a supporter in Moira's office. It is scenery. The description is "It's a pretty ordinary mass-produced desk, but Moira's re-stain job on it has truly transformed it. Really, is there anything she can't do?"
+The snarky remark of Moira's desk is "She should have been an interior decorator."
 
 An openable container called Moira's drawer is part of Moira's desk. 
 	
@@ -930,6 +955,7 @@ Moira's chair is an enterable supporter in Moira's office. It is scenery. The de
 
 Moira's bookshelves are a scenery supporter in Moira's office. The description is "".
 Understand "shelves/books/shelf/bookshelf" as Moira's bookshelves.
+The snarky remark of Moira's bookshelves is "I wonder if she has a book on how to be so good at everything."
 
 A tome is a kind of thing.
 A tome can be loanable.
@@ -943,6 +969,7 @@ After printing the name of a tome:
 The borrowed book is an object that varies. The borrowed book is initially nothing.
 
 to borrow a book is a questioning quip.
+	It is silent.
 	It quip-supplies Moira Zin.
 	It is repeatable.
 
@@ -954,44 +981,73 @@ plausibility rule for to borrow a book:
 Check discussing to borrow a book when the borrowed book is something:
 	say "Moira shakes her head. 'Sorry, I'll only lend one book at a time.'" instead;
 
-After discussing to borrow a book:	
+After discussing to borrow a book:
+	queue Moira Zin with to borrow a book;	
 	Prepare to ask what do you want to borrow from Moira Zin;
 	
 After examining a tome supported by Moira's bookshelves:
 	queue Moira Zin with to borrow a book;
-	
+
 after examining moira's bookshelves:
 	queue Moira Zin with to borrow a book;
 
 No-Myth-After-All is a tome on Moira's bookshelves. It is owned by Moira Zin. It is loanable. 
 The printed name is "No Myth After All: A New Perspective on Atlantis".
 Understand "No/Myth/After/All/A/New/Perspective/on/Atlantis" as No-Myth-After-All.
+The description is "This is a book by the noted skeptic and investigator Niz Ariom. It's a comprehensive look at the evidence for and against the existence of the lost city of Atlantis. It's a bit dry, but it's a classic of the genre."
+The snarky remark of No-Myth-After-All is "Anyone who can make Atlantis boring is a genius."
+
 Twenty-great-theses is a tome on Moira's bookshelves. It is owned by Moira Zin. It is loanable.
 The printed name is "Twenty Great PhD Theses of the Twentieth Century". 
-Understand "Twenty/Great/PhD/Theses/of/the/Twentieth/Century" as Twenty-great-theses.
+Understand "Twenty/Great/PhD/Theses/of/the/Twentieth/20th/Century" as Twenty-great-theses.
+The description is "This is a collection of the most influential PhD theses of the last century. It's a bit of a slog, but it's a good reference for anyone interested in the history of science."
+The snarky remark of Twenty-great-theses is "Less fun than it sounds."
+
 Anatomy of a Hoax is a tome on Moira's bookshelves. It is owned by Moira Zin. It is loanable.
 The printed name is "Anatomy of a Hoax: Writings on Modern Medicine's Greatest Myths".
 Understand "writings/on/modern/medicine's/greatest/myths" as Anatomy of a Hoax.
+The description is "A collection of essays debunking the most persistent myths about modern medicine; for example, the existence of the gall bladder."
+The snarky remark of Anatomy of a Hoax is "Appendix A: The appendix."
+
 Tribes of New York is a tome on Moira's bookshelves. It is owned by Moira Zin. It is loanable.
+The description is "A look at the various Native American tribes of New York state, from the pre-Columbian era to the present day."
+
 Applied Speculation is a tome on Moira's bookshelves. It is owned by Moira Zin. It is loanable.
+The description is "A collection of essays on the application of speculative reasoning to the investigation of paranormal phenomena."
+The snarky remark of Applied Speculation is "Who needs evidence?"
+
 Biking to the Ferry is a tome on Moira's bookshelves. It is owned by Moira Zin. It is loanable.
 The printed name is "Biking to the Ferry: a Memoir".
 Understand "a/-- memoir" as Biking to the Ferry.
+The description is "A memoir of a summer spent biking around the islands of the Puget Sound."
+The snarky remark of Biking to the Ferry is "How many times can one person fall off a bike?"
+
 Nonstandard Investigative Techniques is a tome on Moira's bookshelves. It is owned by Moira Zin. It is loanable. 
+The description is "Your bible from college, a comprehensive look at the most effective nonstandard investigative techniques, from the use of psychics to the application of chaos theory to criminal investigation."
+The snarky remark of Nonstandard Investigative Techniques is "And just look at me now."
+
 Calculus-with-Infinitesimals is a tome on Moira's bookshelves. It is owned by Moira Zin. It is loanable. 
 The printed name is "Calculus with Infinitesimals". Understand "Calculus/with/Infinitesimals" as Calculus-with-Infinitesimals.
+The description is "The classic text on the use of infinitesimals in calculus."
+The snarky remark of Calculus-with-Infinitesimals is "A truly useful text."
+
 Three Stigmata of Palmer Eldritch is a tome on Moira's bookshelves. It is owned by Moira Zin. It is loanable. The printed name is "The Three Stigmata of Palmer Eldritch". 
+The description is "A classic of science fiction, this is a novel by Philip K. Dick."
+The snarky remark is "Haven't read it. I'm saving it for when I need a mental health break."
 
 Book-borrowing is an object based rulebook.
+
 Book-borrowing something enclosed by the player:
 	say "[We] already [have] that.";
 	rule fails;
+
 Book-borrowing a tome (called T) supported by Moira's bookshelves:
 	now the player carries T;
 	now the player owns T;	
 	say "[We] [take] [T].";
 	now the borrowed book is T;
 	rule succeeds;
+
 Book-borrowing:
 	say "[We] can't borrow that.";
 	rule fails;	
@@ -1006,7 +1062,11 @@ After putting a loanable tome on Moira's bookshelves:
 	now the borrowed book is nothing;
 	now the noun is owned by Moira Zin;
 	continue the action;
-	
+
+A turn sequence rule when we are discussing to borrow a book (this is the book borrowing turn sequence rule):
+	rule fails;	
+
+The book borrowing turn sequence rule is listed before the every turn stage rule in the turn sequence rules.
 
 What do you want to borrow is a question.
 	The expected responses are { Tribes of New York, Applied Speculation, Biking to the Ferry, No-Myth-After-All, Twenty-great-theses, Anatomy of a Hoax, Nonstandard Investigative Techniques, Calculus-with-Infinitesimals, Three Stigmata of Palmer Eldritch }.
@@ -1044,6 +1104,9 @@ Instead of knocking on the closet door when the location is the utility closet a
 		now the current interlocutor is Moira Zin;
 		now the closet door is unlocked;
 		now the closet door is open;
+
+Rule for writing a paragraph about Moira Zin:
+	say "Moira Zin is here, arranging her new office.";
 		
 about the hyperdimensional portal is an informative quip.
 	The comment is "[We] [scratch] [our] head. 'Um, I was transported there through an hyperdimensional portal. How's your morning been?'".
