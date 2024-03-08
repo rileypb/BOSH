@@ -8,6 +8,7 @@ Book 1 - Basics
 The blue screwdriver is in the Room of Stuff.
 
 Margaret Chao is a woman. The description is "[Margaret Chao] is the latest occupant of the rapidly revolving post of office manager. Most of [their] job involves ordering stationery and office supplies, shredding documents, and keeping track of office equipment."
+The snarky remark of Margaret is "Margaret Chao: she may get it wrong, but at least it's with enthusiasm."
 
 Rule for printing the name of Margaret Chao: say "Margaret".
 

@@ -119,7 +119,8 @@ When play begins:
 	now the story viewpoint is third person singular;
 	Repeat with S running through subjects:  
 		move S to the Room of Subjects;
-	print faraji bio;
+	if DEBUG is false:
+		print faraji bio;
 	[ say "[bold type]Department of Homeland Security, Washington, DC[roman type][line break]";
 	say "Open on a drab office with decor dating to the mid-eighties. The DHS assistant to the associate sub-director looks longingly at the office clock nearing five, then leans across the desk and impatiently states his demands:[paragraph break]";
 	say "'First name, last name, pronouns?'[paragraph break]";  
@@ -144,8 +145,9 @@ When play begins:
 		move moira to the Room of Stuff;
 		now the current play mode is _normal; 
 		set possessives;
-		say Intro Text;
-		continue;
+		if DEBUG is false:
+			say Intro Text;
+			continue;
 		follow the current graphics drawing rule;
 		[ move the player to the Strip Mall Parking Lot South; ]
  
@@ -404,7 +406,7 @@ After saying hello to someone (called P):
  
 Book 6 - Messages
 
-The parser error internal rule response (R) is "I[']m not sure what you're trying to say. I might just not recognize the words you're using."
+The parser error internal rule response (R) is "[if following-up is true]That doesn't seem to be a book on Moira's shelves[otherwise]I[']m not sure what you're trying to say. I might just not recognize the words you're using[end if]."
 
 The default sound description rule response (A) is "[Generic description of T] is [sound of T] in another room nearby."
 
@@ -1349,7 +1351,7 @@ Book 21 - Not For Release
  
 Include BOSH Tests by Philip Riley.
 
-DEBUG is false.
+DEBUG is true.
 
 The access through barriers rule response (A) is "you have run afoul of the access through barriers rule!";
 
