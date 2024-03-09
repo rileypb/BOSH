@@ -24,7 +24,7 @@ The snarky remark of the Office_ is "I'm sure the Bureau will be back on its fee
 Instead of entering the office_:
 	try going west;
 	
-Margaret at a distance is a part of the Office_.  She is privately-named. The printed name is "Margaret". The description is "Even from here one can sense [Margaret]'s irrepressible energy." Understand "Margaret/Chao" as Margaret at a distance. She is female. She is not neuter.
+Margaret at a distance is a part of the Office_.  She is privately-named. The printed name is "Margaret". The description is "Even from here one can sense [Margaret]'s irrepressible energy." Understand "Margaret/Chao" as Margaret at a distance when the location is Parking Lot South. She is female. She is not neuter.
 The snarky remark of Margaret at a distance is "Better get in there and slow her down before she explodes."
 	
 The department store sign is a part of the office_. Understand "angel/angel's" as the department store sign. The description is "It's adorned with a pair of angel's wings."
@@ -38,7 +38,7 @@ Driving is an action applying to one thing. Understand "drive [something]" as dr
 Check driving something that is not a car:
 	say "You can't drive that." instead;
 
-Car 1 is an automobile in Strip Mall Parking Lot South. It is privately-named. The printed name is "[our] Hyundai". Understand "car", "hyundai", "automobile", "auto" as car 1. The initial appearance of car 1 is "[Our] Hyundai is parked nearby." It is fixed in place. The description is "An old bright red Hyundai Accent, it's been [our] personal means of transportation for years. And since the Bureau lost its fleet, it's [our] work car too.".
+Car 1 is an automobile in Strip Mall Parking Lot South. It is privately-named. The printed name is "[our] Hyundai". Understand "car", "hyundai", "automobile", "auto", "my car", "faraji's car", "larch's car" as car 1. The initial appearance of car 1 is "[Our] Hyundai is parked nearby." It is fixed in place. The description is "An old bright red Hyundai Accent, it's been [our] personal means of transportation for years. And since the Bureau lost its fleet, it's [our] work car too.".
 The snarky remark of Car 1 is "They asked me if I wanted the flashy car, but I said no -- it just didn't fit my downscale image."
 
 Instead of entering or opening or driving car 1:
@@ -114,7 +114,7 @@ Instead of going nowhere from the Parking Lot South:
 		continue the action;
 	stop the action.
 	
-The automatic car wash is an unenterable room in Strip Mall Parking Lot South. The description is "Much like any other automatic car wash."
+The automatic car wash is an unenterable room in Strip Mall Parking Lot South. The description is "Much like any other automatic car wash." Understand "carwash" as the automatic car wash.
 The snarky remark of the automatic car wash is "These things sprout like weeds."
 
 Instead of entering the automatic car wash:
@@ -238,7 +238,7 @@ Book 3 - Laundromat
 
 Chapter 1 - The Astral Tunnel
 
-The astral-tunnel-1 is back of the back lot. It is privately-named. The printed name is "astral tunnel". It is in hyperspace. "It is featureless white, or what passes for white here. It bends 'forth' to north.";
+The astral-tunnel-1 is back of the back lot. It is privately-named. The printed name is "astral tunnel". It is in hyperspace. "It is featureless white, or what passes for white here. It bends 'forth' to north.".
 The snarky remark of the astral-tunnel-1 is "What do you know? Klimp was onto something."
 
 The astral-tunnel-2 is north of astral-tunnel-1. It is privately-named. The printed name is "astral tunnel". It is in hyperspace. "It is featureless white, or what passes for white here. It bends south to 'forth.'";
@@ -318,7 +318,7 @@ Instead of moving the stacks of crates with the handtruck:
 
 After entering the broken washing machine:
 	say "There is a flash of light and [we] [find] [ourselves] somewhere else...";
-	move the player to the featureless hyperplane;
+	end the story saying "Thanks for testing my game. This is the end of Part 1.";
 	
 The light switch is a scenery device in the back basement. It is switched on.
 
@@ -345,7 +345,7 @@ Every turn:
 		now the player carries the pair of astral lenses;
 		
 	
-The astral-tunnel-3 is forth of back basement and backsouth of the laundromat-store. It is privately-named. The printed name is "astral tunnel". It is in hyperspace. "It is featureless white, or what passes for white here. It bends 'back' to 'forthnorth.'";
+The astral-tunnel-3 is forth of back basement and backsouth of the laundromat-store. It is privately-named. The printed name is "astral tunnel". It is in hyperspace. "It is featureless white, or what passes for white here. It bends 'back' to 'forthnorth.'".
 The snarky remark of the astral-tunnel-3 is "I wonder how many of these things there are."
 
 

@@ -856,7 +856,7 @@ remind him Savra's not reptilian is a performative quip.
 	It quip-supplies Doris.
 	It follows about Savra.
 	It follows about the Dragon.
-	It follows about time travel.  ]
+	It follows about-time-travel.  ]
 
 about the mission is a questioning quip.
 	Understand "what about the/-- mission" as about the mission.
@@ -865,7 +865,7 @@ about the mission is a questioning quip.
 	it quip-supplies Doris.
 	It follows about Savra.
 	It follows about the Dragon.
-	It follows about time travel.
+	It follows about-time-travel.
 
 Doris's note is a thing. The description is "It's a bunch of cryptic scribbles."
 
@@ -892,8 +892,8 @@ about the Dragon is a questioning quip.
 	it quip-supplies Doris.
 	It follows hand over the thumb drive;
 	
-about time travel is a questioning quip.
-	Understand "what about time travel" as about time travel.
+about-time-travel is a questioning quip.
+	Understand "what about time travel" as about-time-travel.
 	The comment is "Disbelievingly, [we] [ask], 'Time travel? For real?'".
 	The reply is "'Yes, yes,' [Doris] responds. 'Don't get too worked up over it. It gets old fast. But now we need to talk about the mission.'".
 	it quip-supplies Doris.

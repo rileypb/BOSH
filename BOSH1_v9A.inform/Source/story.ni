@@ -61,6 +61,7 @@ Use MAX_STATIC_DATA of 360000.
 Use MAX_PROP_TABLE_SIZE of 400000.
 Use MAX_NUM_STATIC_STRINGS of 400000.
 Use MAX_SYMBOLS of 200000.
+Use MAX_OBJECTS of 1024.
 
 Work Title is always "The Bureau of Strange Happenings".  
  
@@ -443,9 +444,68 @@ Chapter 1 - Subjects and Facts
 
 Senator Savra is a man. he is in the Room of Stuff. Savra is familiar. [The help text of senator savra is "Our nemesis, intent on the abolition of BOSH.".]
 
+Time-travel is a subject. It is privately-named. The printed name is "Time Travel". Understand "time travel/--" as time-travel.
+
+The astral plane is a subject. 
+The Loch Ness Monster is a subject. Understand "nessie" as the Loch Ness Monster. 
+The Roswell Incident is a subject. 
+The Chupacabra is a subject. 
+The Sasquatch is a subject. Understand "bigfoot" as Sasquatch. 
+The Yeti is a subject. Understand "abominable snowman" as Yeti.
+The Mothman is a subject. 
+The Jersey Devil is a subject. 
+The Flatwoods Monster is a subject. 
+The Dover Demon is a subject.
+The Kelly-Hopkinsville Encounter is a subject.
+The Rendlesham Forest Incident is a subject.
+The Phoenix Lights is a subject.
+The Black Knight Satellite is a subject.
+The Tunguska Event is a subject.
+The Dyatlov Pass Incident is a subject.
+The Bermuda Triangle is a subject. 
+The Mary Celeste is a subject.
+The Philadelphia Experiment is a subject.
+The Voynich Manuscript is a subject. 
+The Shroud of Turin is a subject.
+The Holy Grail is a subject. 
+Time slips is a subject. Understand "slip" as time slips.
+The Ark of the Covenant is a subject.
+The Spear of Destiny is a subject. Understand "holy lance", "lance of longinus" as the Spear of Destiny.
+Alchemy is a subject. Understand "philosopher's stone" as alchemy.
+The Illuminati is a subject.
+The New World Order is a subject.
+Sacred geometry is a subject. 
+Divining is a subject. Understand "dowsing", "divination", "rod" as divining. 
+Crystals are a subject. Understand "crystal" as crystals. 
+Ley lines are a subject. Understand "ley line" as ley lines. 
+Astrology is a subject. Understand "horoscope" as astrology.   
+The Freemasons is a subject. Understand "freemason" as the Freemasons. 
+The Knights Templar is a subject.  
+Atlantis is a subject. Understand "lost city" as Atlantis. 
+Ancient astronauts is a subject. Understand "astronaut" as ancient astronauts. 
+Ancient Egypt is a subject. Understand "pyramid/pyramids/sphinx" as Ancient Egypt. 
+Crop circles is a subject. Understand "circle" as crop circles. 
+ESP is a subject. Understand "telepathy", "extra-sensory perception" as ESP. 
+Ghosts is a subject. Understand "ghost/poltergeist/poltergeists/spirit/spirits" as ghosts. 
+Vampires is a subject. Understand "vampire" as vampires.
+Werewolves is a subject. Understand "werewolf" as werewolves. 
+Zombies is a subject. Understand "zombie" as zombies. 
+Hypnosis is a subject. Understand "hypnotism" as hypnosis. 
+Invisibility is a subject. Understand "invisible" as invisibility.
+Levitation is a subject. Understand "levitate" as levitation.
+Telekinesis is a subject. Understand "telekinetic" as telekinesis.
+Teleportation is a subject. Understand "teleport" as teleportation.
+aliens is a subject. Understand "UFO/UFOs" as aliens.
+Spontaneous human combustion is a subject. Understand "combustion" as spontaneous human combustion.
+The Moberly-Jourdain Incident is a subject.
+Nikola Tesla is a subject. 
+The Sargasso Sea is a subject.
+The Marfa Lights is a subject.
+V I Lenin is a subject.
+THe Church of Scientology is a subject. Understand "dianetics" as the Church of Scientology.
+
 [spacetime is a subject. Understand "time" as spacetime. The printed name is "Time". the help text of SpaceTime is "According to Wikipedia, time is the continued sequence of existence and events that occurs in an apparently irreversible succession from the past, through the present, into the future.".]
 
-aliens is a subject. Understand "UFO/UFOs" as aliens.
 
 The Bureau of Strange Happenings is a subject. Understand "BOSH" as The Bureau of Strange Happenings. [The help text of The Bureau of Strange Happenings is "[Our] employer, The Bureau of Strange Happenings."].
 
@@ -477,24 +537,24 @@ Klimp carries a mobile phone called klimp's mobile phone. Klimp owns Klimp's mob
 To tell klimp something he already knows:	
 	say "Klimp looks at [us] funny. 'Uh, yeah, you already told me that.'";
 	
-Response of Klimp when asked about aliens:
-	Say "Klimp assumes his lecturing pose. 'You know what I think, of course. They're here, they've been here for decades, maybe centuries, and they're a menace to the human race. We're the only thing standing between them and the end of the world.'";
+[ Response of Klimp when asked about aliens:
+	Say "Klimp assumes his lecturing pose. 'You know what I think, of course. They're here, they've been here for decades, maybe centuries, and they're a menace to the human race. We're the only thing standing between them and the end of the world.'"; ]
 	
 Greeting response for Klimp:
 	say "Good day.";
 	continue the action;
 	
-Response of Klimp when asked about Moira:
-	Say "Klimp nods. 'Superior agent. I'd be honored to be compared to her.'";
+[ Response of Klimp when asked about Moira:
+	Say "Klimp nods. 'Superior agent. I'd be honored to be compared to her.'"; ]
 	
-Response of Klimp when asked about Margaret:
-	Say "He rolls his eyes. 'You take what you can get.'";
+[ Response of Klimp when asked about Margaret:
+	Say "He rolls his eyes. 'You take what you can get.'"; ]
 	
-Response of Klimp when asked about the Bureau of Strange Happenings:
-	Say "'The Bureau will be the most important line of defense when the alien threat inevitably comes to fruition. Savra is a fool,' he says with a gleam in his eye.";
+[ Response of Klimp when asked about the Bureau of Strange Happenings:
+	Say "'The Bureau will be the most important line of defense when the alien threat inevitably comes to fruition. Savra is a fool,' he says with a gleam in his eye."; ]
 
-Response of Klimp when asked about Senator Savra:
-	say "Klimp stops short of actually spitting. 'The lowest of the low.'";
+[ Response of Klimp when asked about Senator Savra:
+	say "Klimp stops short of actually spitting. 'The lowest of the low.'"; ]
 
 klimp is familiar. [The help text of klimp is "Chief Huffton Klimp, the erstwhile head of [our] poor little bureau.".]
 
@@ -638,7 +698,7 @@ The photo of Pluto is here. It is scenery. Understand "her/dog/pluto/photo/pictu
 
 The degree is here. It is scenery. Understand "diploma" as degree. The description is "It's [our] Bachelor's degree in Nonstandard Investigative Techniques from Wichita Institute of Technology. Which officially makes [us] a NITWIT. [We] [shake] [our] head and [sigh].". 
 
-The movie poster is here. It is scenery. Understand "Room/of/Lost/Time" as the movie poster. The description is "It's [our] favorite movie, 'The Room of Lost Time', from 1957. The tagline is 'Can one lone time traveler stop invaders from the moon?'"
+[ The movie poster is here. It is scenery. Understand "Room/of/Lost/Time" as the movie poster. The description is "It's [our] favorite movie, 'The Room of Lost Time', from 1957. The tagline is 'Can one lone time traveler stop invaders from the moon?'" ]
 
 The trivia competition award is scenery in biff's office. "A framed certificate proclaiming [us] the winner of the 2006 Baltimore County Edgar Allan Poe Trivia Competition."
 
@@ -661,7 +721,7 @@ Check dropping the green smartphone:
 
 To init office:
 	if player is not Ezra Gaunt:
-		move movie poster to Room of Stuff;
+		[ move movie poster to Room of Stuff; ]
 		move trivia competition award to Room of Stuff;
 	if player is not Petula Goldberg: 
 		move photo of Pluto to Room of Stuff;
@@ -837,7 +897,7 @@ Instead of taking the cardboard boxes:
 			initiate Margaret's box routine;
 
 Biff's computer is a thing. It is privately-named. It is behind the BOSH front desk. The printed name is "[our] computer". Understand "computer" as biff's computer. The description is "[Our] computer has been damaged beyond repair.".
-The snarky remark of the computer is "It doesn't run much worse than it did before."
+The snarky remark of Biff's computer is "It doesn't run much worse than it did before."
 
 Check taking Biff's computer:
 	say "[Biff's computer] is too unwieldy to carry around.";
@@ -850,7 +910,7 @@ Instead of examining Biff's computer when the thumb drive is not seen:
 The behind description of the BOSH front desk is "There are a number of shelves of office supplies behind the desk. There is also a heating vent on the floor here.";
 
 The heating vent is a scenery container. It is openable, closed, lockable, transparent and locked. "A typical air register with a grill which one would hope would stop things like, say, a hex wrench from falling through. It's set in the floor behind the front desk. The vent is held closed by four screws." Understand "heat/air/conditioning/register" as the heating vent. It is undescribed. 
-The snarky remark of the heating vent is "It gets better and better."
+The snarky remark of the heating vent is "[if player knows hex-screws and player knows key-is-lost]It gets better and better[otherwise]I hope we don't need that hex wrench[end if]."
 
 Securing relates various things to one thing. The verb to secure means the securing relation.
 Some screws secure the heating vent. The description is "Four plain flat head screws." 
@@ -1182,6 +1242,65 @@ Before quizzing someone about something when the noun owns the second noun:
    
 Book 18 - Sound
 
+Book 18.5 - Quiz table
+
+To start is a verb. To begin is a verb.
+
+Table of Quiz Topics (continued)
+subject (a thing)	interlocutor (a person)	comment (a text)	reply (a text)
+Larch Faraji	Margaret Chao	"Margaret, [we] say, 'just what's got into me lately?'"	"'You're just disoriented from the move,' Margaret says. 'It'll get better.'"
+Larch Faraji	Chief Klimp	"'Hey, Chief,' [we] say, 'we need to talk about -- '"	"'Sure, Faraji,' Klimp says, 'but have you seen this article about the Piltdown Man?'"
+Larch Faraji	Moira Zin	"'Moira,' [we] say, 'I need your opinion. Am I off my game?'"	"'No, you're fine,' Moira says. 'You just need a break.'"
+Aliens	Chief Klimp	"'Chief,' [we] say, 'are aliens --'"	"Klimp assumes his lecturing pose. 'You know what I think, of course. They're here, they've been here for decades, maybe centuries, and they're a menace to the human race. We're the only thing standing between them and the end of the world.'"
+Aliens	Moira Zin	"'Moira,' [we] say, 'what's your take on aliens?'"	"Nonsense,' Moira says. 'They're a convenient excuse for people who don't want to face the truth.'"
+Moira Zin	Chief Klimp	"'Moira --'"	"'Yes, yes, east and then north. I'm busy.'"
+Moira Zin	Margaret Chao	"'Margaret,' [we] say, 'what do you think of Moira?'"	"'Well, I've only known her a few weeks,' Margaret says, 'but she seems really smart.'"
+Moira Zin	Moira Zin	"'Moira,' [we] say, 'how are you doing with everything that's been going on?'"	"'I'm fine,' Moira says. 'Why wouldn't I be?'"
+Chief Klimp	Margaret Chao	"'Margaret,' [we] say, 'what do you think of Klimp?'"	"Margaret looks around and then whispers, 'I don't think he likes me.'"
+Chief Klimp	Moira Zin	"'Moira,' [we] say, 'you've known Klimp longer than anyone. What do you think of him?'"	"'He's a child. That's what you have to understand about Klimp,' Moira says. 'He's never met a stupid idea he didn't like.'"
+Chief klimp	Chief Klimp	"'Chief,' [we] say, 'what's going --'"	"'Have you heard about these new ancient ruins in Kamchatka? Apparently there are some very interesting Koryak artifacts there that suggest a connection to the ancient Sumerians.'"
+Margaret Chao	Margaret Chao	"'How are you doing, Margaret?'"	"'It's great!' Margaret says. 'So many things to unpack!'"
+Margaret Chao	Moira Zin	"'Moira,' [we] say, 'what do you think of Margaret?'"	"'She'll do,' Moira says. 'She's a bit too eager, but she'll do.'"
+Margaret Chao	Chief Klimp	"'Chief,' [we] say, 'Margaret --'"	"'I'm reading about the latest discoveries in the field of cryptozoology,' Klimp says. 'Did you know that the Yeti is actually a type of bear? I don't mean a regular bear, but a bear that's not of this world.'"
+Bureau of Strange Happenings	Chief Klimp	"[We] [say] to Klimp, 'the Bureau --'"	"'The Bureau will be the most important line of defense when the alien threat inevitably comes to fruition. Savra is a fool,' he says with a gleam in his eye."
+Senator Savra	Chief Klimp	"'So what is Savra --'"	"'Savra -- that imbecile. He's a fool and a coward. He's the reason we're not prepared for the alien invasion.'"
+Time-travel	Chief Klimp	"'Is time travel --'"	"'Time travel is a fact,' Klimp says. 'Tesla had a time machine. I've seen it.'"
+Astral plane	Chief Klimp	"'Chief, is the astral plane --'"	"'I've heard of people who have been there, even lived there. My friend Doris -- true story.'"
+Doris	Chief Klimp	"'Chief, who is D--"	"'He's a friend of mine. Works for the Bureau. Sort of. Snappy dresser. Prone to outlandish stories. Ask him about the Mothman.'"
+The Bermuda Triangle	Chief Klimp	"'The Ber--'"	"'Oh please, the Bermuda Triangle is a hoax. It's just a place where ships and planes go down. It's not like it's a portal to another dimension. That's the Sargasso Sea.'"
+Loch Ness Monster	Chief Klimp	"'Chief, have you seen the --'"	"'Loch Ness Monster? Of course. I've seen it. It's a plesiosaur, you know. From another world.'"
+The Roswell Incident	Chief Klimp	"'Chief --'"	"'Roswell? It's not what you think. It's not what anyone thinks. It's a cover-up, but not for what you think.'"
+The Chupacabra	Chief Klimp	"'I'm sure you know all about the Chu--'"	"'--pacabra? Yes, I do. It's not of this world, you know.'"
+The Sasquatch	Chief Klimp	"'Chief, does Sasquatch --'"	"'I've often thought that it would be a great subject for a television show. Not a documentary, mind you, but a drama. That guy, you know, from the show about the doctor in the spaceship, he'd be perfect as Sasquatch.'"
+Yeti	Chief Klimp	"'Is the Yeti --'"	"'The Yeti is a bear. I've seen the evidence. It's a bear. A bear from another world.'"
+Sacred geometry	Chief Klimp	"'Whatever happened to your --'"	"'--sacred geometry phase? Meh. I've moved on. Shapes are shapes.'"
+The Moberly-Jourdain Incident	Chief Klimp	"'[We] [say] to Klimp, 'the Moberly-Jourdain --'"	"'Incident? Time slips are cool. I've seen one. I've been in one. Or was it two? I can't remember."
+The Mothman	Chief Klimp	"'What was the Mothm--'"	"'Geez, West Virginia has the lamest cryptids. The Mothman is just a big owl. A big owl from another world.'"
+The Jersey Devil	Chief Klimp	"'Chief,' [we] [say] to Klimp, 'the Jersey --'"	"Yes, yes, the Jersey Devil. It's a kangaroo. A kangaroo with wings. From another world."
+The Flatwoods Monster	Chief Klimp	"'So I haven't heard much about this one,' [we] [say]. 'The Flatwoods --'"	"'Oh yes, the Flatwoods Monster. It's not even a cryptid. It's a robot from the CIA. I've seen the evidence.'"
+The Dover Demon	Chief Klimp	"'Chief, what's the deal with the Dover --'"	"'Demon? It's no demon. It's a monkey crossed with a snowy owl. By the way, have you seen the news about the recently discovered alien temple under the basement of the Smithsonian Castle?'"
+The Kelly-Hopkinsville Encounter	Chief Klimp	"[We] [say] to Klimp, 'I was reading about the K--"	"'Kelly-Hopkinsville Encounter? It's just silly. Everyone knows that part of Kentucky is riddled with alien activity. I mean, Jefferson Davis was from there, wasn't he?'"
+The Rendlesham Forest Incident	Chief Klimp	"'Chief, what's the story with the Rendlesham --'"	"'Forest Incident? No one knows what really happened. Except me. I know. It's a long story, but it involves a time slip and a bear from another world.'"
+The Phoenix Lights	Chief Klimp	"[We] [take] a deep breath and [say] to Klimp, 'the Phoenix --'"	"'Lights? No one knows what they were. Not even me. But I have a theory. It's a theory that involves a bear from another world. At least, I think it does.'"
+The Black Knight Satellite	Chief Klimp	"'Chief, is the Black Knight Satellite --'"	"'Real? Yes, it's real. I mean, it's not a satellite, but it's real. You ever hear of the Tunguska Event? There's a connection, you know.'"
+The Tunguska Event	Chief Klimp	"'Chief, what's the deal with the Tunguska --'"	"'Event? I have a theory. Most people think Lenin was born on Earth in 1870, but I have evidence that he was born on the Black Knight Satellite and came to Earth in a meteorite that landed in Tunguska in 1908.'"
+The Dyatlov Pass Incident	Chief Klimp	"'Chief, the Dyatlov Pass --'"	"'Incident? It's a mystery. There's not even such a place as the Ural Mountains. It's a cover-up. I've seen the evidence.'"
+The Mary Celeste	Chief Klimp	"'Chief, what's the story with the Mary --'"	"'Celeste? Nothing so bad as what routinely happens in the cruise industry. I've seen the evidence.'"
+The Philadelphia Experiment	Chief Klimp	"'Chief, the --'"	"'Philadelphia Experiment? Was it even in Philadelphia? Is there even a Philadelphia? I'm still waiting for answers.'"
+The Voynich Manuscript	Chief Klimp	"'Chief, what's the deal with the Voynich --'"	"'Manuscript? It's a hoax. I've seen the evidence. It's a hoax. But it's a good hoax. I like it.'"
+The Shroud of Turin	Chief Klimp	"'Chief, is the Shroud of --'"	"'Turin? It's really a map. I've seen the evidence. It's a map. A map to the Black Knight Satellite.'"
+The Holy Grail	Chief Klimp	"'Chief,' [we] [ask], 'is the Holy --'"	"'Grail real? Well, maybe, maybe not. It depends on what you mean by [']real.['] In any case, it was lost in a time slip."
+Time slips	Chief Klimp	"'Chief, do time slips --'"	"'Really happen? Yes, they do. The Mobley-Jourdain Incident for example, or -- well, I can't remember the other one. I was thinking about the Jersey Devil, and its connection to the Church of Scientology.'"
+The Ark of the Covenant	Chief Klimp	"'Chief, you ever see Raiders of the Lost --'"	"Is this about the Ark of the Covenant? It's a real thing, you know. The director of the movie was a Freemason. But it's important to note that the Ark cannot melt your face off. That's a myth."
+The Spear of Destiny	Chief Klimp	"[We] [start] to ask Klimp a question when he interrupts, 'the Spear of Destiny, right? It's a real thing. I've seen it. It's in the Vatican. But it's a fake. The real one was stolen by the Illuminati.'"
+Alchemy	Chief Klimp	"'Chief, do you know anything about --'"	"'Alchemy? Well, yes and no. It's a real thing, but it's not what you think. It's a science, but it's not a science. I used to dabble in it, back before my sacred geometry phase. Never got the hang of it.'"
+The Illuminati	Chief Klimp	"[We] [begin], 'You believe in the --'"	"'Illuminati? Of course. They're everywhere. They're in the government, in the media, in the music industry. They're in the Bureau. They're in the BOSH offices. They're in the White House. They're in the Vatican. They're in the Black Knight Satellite.' Klimp looks around. 'They're in this room... okay, maybe not this room. And hopefully not in the BOSH offices. But they're everywhere else. You don't think Margaret's Illuminati, do you?'"
+The New World Order	Chief Klimp	"'Chief, what's the deal with the New --'"	"'New Order? You're into them, eighties music, right? No, no, you were going to ask about the New World Order, weren't you? It's a real thing. It's a real thing, and it's a real threat. It's a real threat to the world. It's a real threat to the universe. Well, that's an exaggeration. But it's real bad.'"
+Divining	Chief Klimp	"'Chief, have you ever used a di--'"	"'--vining rod? Yes, I have. I've used it to find water, to find gold, to find the Black Knight Satellite. I once used it to find a lost cat. It didn't work.'"
+Crystals	Chief Klimp	"'Chief, you ever use --'"	"'crystals? Yes, I have. I've used them to heal, to divine, to communicate with the Black Knight Satellite. I've used them to find lost keys. I've used them to find lost time. I've used them to find lost socks. I once gave one to a lonely Sasquatch. It didn't seem to care for it.'"
+Ley lines	Chief Klimp	"'Chief, I notice on your globe --'"	"'Yeah, all the lines, right? They're ley lines, which are, well, kind of like these lines of energy that connect the world. They're like the veins of the Earth. They're like the nervous system of the Earth. They're like the internet of the Earth. No, I take that back. Let's stick with the veins metaphor.'"
+Astrology	Chief Klimp	"'Chief, do you believe in horo--'"	"'scopes? Yes, I do. I've seen the evidence. I've seen the evidence that they're real. I've seen the evidence that they're fake. I've seen the evidence that they're a tool of the Illuminati. None of it makes sense. But I still believe in them.'"
+
 Book 19 - Verbs
  
 To shake is a verb. To smile is a verb. To sigh is a verb. To peer is a verb. To turn is a verb. To observe is a verb. To gaze is a verb. To trudge is a verb. To walk is a verb. To step is a verb. To enter is a verb. To exit is a verb. To pause is a verb. To survey is a verb. To hand is a verb. To try is a verb. To see is a verb. To squeal is a verb. To tap is a verb. To curse is a verb. To rap is a verb. To explain is a verb. To gasp is a verb. To return is a verb. To ask is a verb. To think is a verb. To scrunch is a verb. To grimace is a verb. To mutter is a verb. To leave is a verb. To stand is a verb. To mount is a verb. To stammer is a verb. To polish is a verb. To interrupt is a verb. To raise is a verb. To chuckle is a verb. To lean is a verb. To consider is a verb. To nod is a verb. To extricate is a verb. To toss is a verb. To pick is a verb. To flatten is a verb. To remember is a verb. To trip is a verb. To scratch is a verb.
@@ -1351,7 +1470,9 @@ Book 21 - Not For Release
  
 Include BOSH Tests by Philip Riley.
 
-DEBUG is true.
+DEBUG is false.
+
+Understand "*" as a mistake ("Noted.")
 
 The access through barriers rule response (A) is "you have run afoul of the access through barriers rule!";
 
