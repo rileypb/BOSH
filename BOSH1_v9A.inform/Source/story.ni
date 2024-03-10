@@ -26,6 +26,7 @@ Include Third Person Narration by Philip Riley.
 Include Door Utils by Philip Riley.
 Include Real People by Philip Riley.
 Include Visible Rooms by Philip Riley.  
+Include Can't Touch This by Philip Riley.
 Include Polish by Philip Riley.
 
 Include BOSH Polish by Philip Riley.
@@ -442,6 +443,8 @@ Book 9 - Concepts
 
 Chapter 1 - Subjects and Facts
 
+The ringing-phone is a subject. It is privately-named. The printed name is "ringing phone". Understand "ringing phone" as the ringing-phone.
+
 Senator Savra is a man. he is in the Room of Stuff. Savra is familiar. [The help text of senator savra is "Our nemesis, intent on the abolition of BOSH.".]
 
 Time-travel is a subject. It is privately-named. The printed name is "Time Travel". Understand "time travel/--" as time-travel.
@@ -456,7 +459,7 @@ The Mothman is a subject.
 The Jersey Devil is a subject. 
 The Flatwoods Monster is a subject. 
 The Dover Demon is a subject.
-The Kelly-Hopkinsville Encounter is a subject.
+The Kelly-Hopkinsville Encounter is a subject. Understand "Kelly/Hopkinsville/goblins" as the Kelly-Hopkinsville Encounter.
 The Rendlesham Forest Incident is a subject.
 The Phoenix Lights is a subject.
 The Black Knight Satellite is a subject.
@@ -486,7 +489,7 @@ Ancient astronauts is a subject. Understand "astronaut" as ancient astronauts.
 Ancient Egypt is a subject. Understand "pyramid/pyramids/sphinx" as Ancient Egypt. 
 Crop circles is a subject. Understand "circle" as crop circles. 
 ESP is a subject. Understand "telepathy", "extra-sensory perception" as ESP. 
-Ghosts is a subject. Understand "ghost/poltergeist/poltergeists/spirit/spirits" as ghosts. 
+Ghosts is a subject. Understand "ghost/poltergeist/poltergeists/spirit/spirits/haunting/hauntings" as ghosts. 
 Vampires is a subject. Understand "vampire" as vampires.
 Werewolves is a subject. Understand "werewolf" as werewolves. 
 Zombies is a subject. Understand "zombie" as zombies. 
@@ -501,7 +504,7 @@ The Moberly-Jourdain Incident is a subject.
 Nikola Tesla is a subject. 
 The Sargasso Sea is a subject.
 The Marfa Lights is a subject.
-V I Lenin is a subject.
+V I Lenin is a subject. Understand "Vladimir/Illyich/Ulyanov" as V I Lenin.
 THe Church of Scientology is a subject. Understand "dianetics" as the Church of Scientology.
 
 [spacetime is a subject. Understand "time" as spacetime. The printed name is "Time". the help text of SpaceTime is "According to Wikipedia, time is the continued sequence of existence and events that occurs in an apparently irreversible succession from the past, through the present, into the future.".]
@@ -568,23 +571,37 @@ to borrow the skull is a questioning quip.
 After examining the juvenile sasquatch skull:
 	queue Chief Klimp with to borrow the skull;
 
-to borrow the lenses is a questioning quip. 
-	Understand "lens/glass/glasses" as to borrow the lenses.
+to-borrow-the-lenses is a questioning quip. 
+	It is privately-named.
+	The printed name is "to borrow the astral lenses".
+	Understand "to/borrow/the/pair/of/astral/lenses/lens/glass/glasses" as to-borrow-the-lenses.
 	It mentions the pair of astral lenses.
 	The comment is "[We] [ask], 'Would it be okay if I borrowed the astral lenses for a while?'".
 	The reply is "'Sure! Why don't you scout the locality for astral phenomena?'".
 	It quip-supplies Chief Klimp.
 	
 After examining the pair of astral lenses:  
-	queue Chief Klimp with to borrow the lenses;
+	queue Chief Klimp with to-borrow-the-lenses;
 	
-After discussing to borrow the lenses:
+After discussing to-borrow-the-lenses:
 	now the player owns the pair of astral lenses;
 	silently try taking the pair of astral lenses;
 	if the player carries the pair of astral lenses:
 		say "[We] [take] the astral lenses.";
 	continue the activity;
 	
+Does the player mean quizzing someone about to-borrow-the-lenses:
+	it is very unlikely.
+
+to borrow the dodecahedron is a questioning quip. 
+	Understand "orange/marble" as to borrow the dodecahedron.
+	It mentions the orange marble dodecahedron.
+	The comment is "[We] [ask], 'Chief, mind if I borrow the dodecahedron?'".
+	The reply is "He thinks for a moment. 'Actually, I need it to keep my computer running properly. It's a long story.'".
+	It quip-supplies Chief Klimp.
+
+After examining the orange marble dodecahedron:
+	queue Chief Klimp with to borrow the dodecahedron;
 
 Moira Zin is a woman. The description is "Agent Moira Zin is the very model of a competent Bureau agent. Hard-working, serious, no-nonsense but open-minded, she's the sober counter-balance to Klimp's sometimes childish credulity. Moira would clearly be a rising star if it weren't for the Bureau's pending dissolution."
 
@@ -654,33 +671,41 @@ Biff's office is a room. It is in BOSH HQ. The printed name is "[save LPR][our][
 
 "[if biff's office is not visited][We] [pause] and [survey] the scene. It's not much -- four white walls, grey industrial carpet. [Margaret] [have] helpfully assembled [our] desk and chair, though how sturdily is an open question. [Regarding Margaret][They] also took the time to put up some of Agent [Player]'s office decor -- [our] degree in Nonstandard Investigative Techniques, [EG]a trivia competition award, and a poster for [our] favorite movie: the b-movie time-travel classic The Room of Lost Time[PCG]a photo of [our] dog Pluto, and a print of [italic type]Green Pheasant[roman type] by Utagawa Hiroshige[LF]an original pencil drawing of the Pitfall snake by semi-acclaimed Washington DC artist Darius 5200, and a photo of [our] soccer team[end say]. At the very least the wall coverings help compensate for the lack of windows. There's a disconnected landline on the desk. The office door is to the north, and there's a white metal door to the west.[maybe insert computer muttering][otherwise]It's basically four white walls and grey carpet. There's a cheap desk and chair, and a disconnected phone on the desk. In lieu of windows, there are a few things on the wall: [our] degree in Nonstandard Investigative Techniques, [EG]a trivia competition award, and a poster for [our] favorite movie[PCG]a photo of [our] dog Pluto, and a Japanese print[LF]a pencil drawing of the Pitfall snake, and a photo of [our] soccer team[end say]. The office door is to the north, and there's a white metal door to the west.[end if]"
 
+The snarky remark is "Opulent quarters, indeed."
+
 There is a fluorescent light source in Biff's office called biffo-light.
 
 To say maybe insert computer muttering:
 	if biff's computer is not seen:
 		say "[paragraph break][reset LPR][We] [mutter], 'Where's my computer?'[run paragraph on]";
 
-Biff's desk is a desk in Biff's Office. Biff's desk is scenery. It is privately-named. The printed name is "[our] desk".  Understand "desk" as biff's desk. biff's desk's drawer is locked.
+Biff's desk is a desk in Biff's Office. Biff's desk is scenery. It is privately-named. The printed name is "[our] desk".  Understand "desk" as biff's desk. The snarky remark is "It's suitable for holding all the work I'm avoiding."
+
+biff's desk's drawer is locked. Understand "desk drawer" as biff's desk's drawer.
+
 The blue flipphone is a phone. It is in biff's desk's drawer.
+The snarky remark is "You little blue bastard. I hate you."
 
 A key is a kind of thing.
 
 The little grey key is a key. It is in biff's desk's drawer. The little grey key is familiar.
-Biff's desk drawer has matching key the little grey key.
+Biff's desk drawer has matching key the little grey key. The description of Biff's desk's drawer is "The desk is a cheap DIY piece held together with hex screws."
+The snarky remark of the little grey key is "And now you'll never get used, little key."
 
-Biff's landline is scenery on Biff's desk. It is privately-named. The printed name is "[our] office phone". The description is "It's not yet hooked up." 
-Understand "office/-- phone", "landline" as Biff's landline.
+[ Biff's landline is scenery on Biff's desk. It is privately-named. The printed name is "[our] office phone". The description is "It's not yet hooked up." 
+Understand "office/-- phone", "landline" as Biff's landline. ]
 
 [After logging into Your Computer:
 	now the help text of your password is "It's 'charon'. Is it so hard to remember?".]
 	
-Biff's chair is a supporter in Biff's Office. Biff's chair is scenery. Biff's chair is enterable. The description is "It's just a plain old office chair. The lumbar support control is broken.". Understand "seat" as Biff's chair. The printed name is "[our] chair".
-Understand "Faraji's/Goldberg's/Gaunt's/Larch's/Petula's/Ezra's" as Biff's chair. 
+Biff's chair is a supporter in Biff's Office. Biff's chair is scenery. Biff's chair is enterable. The description is "It's just a plain old office chair. The lumbar support control is broken.". Understand "seat", "desk chair", "office chair" as Biff's chair. The printed name is "[our] chair".
+Understand "Faraji's/Larch's" as Biff's chair. 
+The snarky remark is "It's not old, it's vintage."
 
-taking Biff's landline is stealing equipment.
+[ taking Biff's landline is stealing equipment. ]
   
-Instead of stealing equipment:
-	say "The Federal government frowns upon employees taking office equipment home with them."
+[ Instead of stealing equipment:
+	say "The Federal government frowns upon employees taking office equipment home with them." ]
 
 The description of the desk is "The desk is a cheap DIY piece held together with hex screws. It has a single drawer [regarding Biff's desk][if Biff's desk's drawer is closed]which is closed.[otherwise]which is open.[end if][if Biff's desk's drawer contains something and Biff's desk's drawer is open] The drawer contains [a list of things in Biff's desk's drawer].[end if]" 
 
@@ -694,21 +719,27 @@ The Bureau credit card is mc-disabled.
 The balance of the bureau credit card is $300. The player owns the Bureau credit card.
 [The help text of the bureau credit card is "The pre-paid credit card issued to [us] by the Bureau. Its balance is currently [balance of the bureau credit card]."].
 	
-The photo of Pluto is here. It is scenery. Understand "her/dog/pluto/photo/picture" as Photo of Pluto. The description is "It's a picture of [our] best friend, Pluto.".
+The photo of Pluto is here. It is scenery. Understand "dog/pluto/photo/picture" as Photo of Pluto. The description is "It's a picture of [our] best friend, Pluto.".
+The snarky remark is "He's a good dog."
 
 The degree is here. It is scenery. Understand "diploma" as degree. The description is "It's [our] Bachelor's degree in Nonstandard Investigative Techniques from Wichita Institute of Technology. Which officially makes [us] a NITWIT. [We] [shake] [our] head and [sigh].". 
+The snarky remark is "It's a real degree, I swear."
 
 [ The movie poster is here. It is scenery. Understand "Room/of/Lost/Time" as the movie poster. The description is "It's [our] favorite movie, 'The Room of Lost Time', from 1957. The tagline is 'Can one lone time traveler stop invaders from the moon?'" ]
 
 The trivia competition award is scenery in biff's office. "A framed certificate proclaiming [us] the winner of the 2006 Baltimore County Edgar Allan Poe Trivia Competition."
 
+
 Green Pheasant is scenery in biff's office. Understand "print/hiroshige/utagawa/art/painting/bird" as Green Pheasant. "A print of a beautiful green pheasant in a tree, by the 19th century Japanese artist Utagawa Hiroshige."
 
-The drawing of the Pitfall snake is scenery in biff's office. Understand "video/game/cobra/darius/5200" as drawing of the pitfall snake. "Pencil on canvas, it's a fuzzy drawing of the 8-bit snake in the classic video game Pitfall."
+The drawing of the Pitfall snake is scenery in biff's office. Understand "pencil/video/game/cobra/darius/5200" as drawing of the pitfall snake. "Pencil on canvas, it's a fuzzy drawing of the 8-bit snake in the classic video game Pitfall."
+The snarky remark is "Some day it'll be worth something."
  
 The photo of soccer team is scenery in biff's office. Understand "Faraji's/their soccer/team" as the photo of soccer team. Understand "picture" as the photo of soccer team. "[we're] third from left in the front row."
+The snarky remark is "We were the best team in the league. At least, in our hearts."
 
 The green smartphone is a phone. It is mobile. The description is "It's a pretty nice phone, only a couple of years old, but [we] [don't] have time to play with it. [We] [need] to get to the office."
+The snarky remark is "Nice phone."
 
 Check calling someone on the green smartphone:
 	say "[The green smartphone] is out of batteries." instead;
@@ -742,8 +773,19 @@ After opening Biff's desk's drawer for the first time:
 Section 2 - Back Lot
 
 The back lot is a room. It is in BOSH HQ.
+The snarky remark is "Let me guess, this is the break room." 
 
 The BOSH back door is a door. The printed name is "white metal door". Understand "backdoor/white/metal" as BOSH back door. It is west of biff's office and east of back lot. It is scenery. It is closed, locked, lockable, and openable. "An unremarkable metal door painted white. [state of BOSH back door][run paragraph on]".
+The snarky remark is "[door snark][line break]".
+
+To say door snark:
+	if location is biff's office:
+		if the back lot is unvisited:
+			say "Who knows what exotic vistas lie beyond this door?";
+		otherwise:
+			say "I've been outside. You ever see 'Silo'?";
+	otherwise:
+		say "The door to paradise. I'm sorry, I mean my office.";
 
 Before opening BOSH back door when BOSH back door is locked:
 	now player knows back-door-is-locked;
@@ -755,10 +797,18 @@ When play begins:
 	now Margaret carries the white key.
 	
 The laundromat back door is a door. It is north of back lot and south of the laundromat back room. It is scenery. It is closed, locked, lockable, and openable. "An unremarkable metal door painted white. It is closed.". 	 
+The snarky remark is "Open up; I need to do my laundry."
 
 The description of the back lot is "This is a small area of asphalt between the building and a chain link fence looking in on an industrial property. A door to east leads into the BOSH offices, and one to the north enters the laundromat. There is a blue dumpster here."
 
+The industrial property is scenery in the back lot. "The chain link fence looks in on a small industrial property. There's a bunch industrial-type stuff in there, but nothing interesting."
+The snarky remark is "So far the vistas in Swamp Park are a little underwhelming."
+
+The chain link fence is scenery in the back lot. "An ordinary chain link fence, about eight	feet high."
+The snarky remark is "Are we keeping them out, or are they keeping us in?"
+
 The dumpster is scenery in the back lot. "An everyday blue dumpster, about six feet high."
+The snarky remark is "Oh, this is where I left my dignity."
 
 Check entering the dumpster:
 	say "[We] [are] not yet at the point of dumpster diving." instead;
@@ -826,12 +876,18 @@ There is a fluorescent light source in BOSH office hallway called boh-light.
 Section 4 - Front Office 
 
 the front office is a room. It is east of the hallway. It is in BOSH HQ. It is outdoor-adjacent.
+The snarky remark is "This place just screams 'government efficiency'."
 
 There is a fluorescent light source in the front office called bfo-light.
 
 Understand "storefront" as the front office.
 
-The description of front office is "It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.".
+The description of front office is "It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
+
+The exit is to the east, while the office continues via a hallway to the west.".
+
+The front window is scenery in the front office. "The front window looks out onto the street. It's a little grimy, but it's not like there's much to see out there."
+The snarky remark is "Look, I can write my name in the dirt."
 
 The coffee table is a scenery supporter in front office. "This doesn't look like government-issue furniture. More like thrift store. It's scuffed, but at least it's sturdy."
 The snarky remark is "The rings are the mark of quality."
@@ -857,7 +913,7 @@ Margaret Chao is in front office.
 There is a copy of the Washington Herald. The description is "The front page story is an account of the disappearance of the grandson of Senate Homeland Security Committee chairman Englund Fryes. His parents, including the Senator's son, were brutally murdered in their home, but the boy, Draco Fryes, is missing and presumed kidnapped. So far there has been no ransom demand.". 
 Understand "newspaper", "paper", "news" as the Washington Herald.
 
-The BOSH front desk is a scenery supporter in front office. Understand "sales", "counter" as the BOSH front desk. The description is "The former sales counter now functions as a desk for the office manager (currently [Margaret]). Behind it are a number of shelves holding office supplies."
+The BOSH front desk is a scenery supporter in front office. Understand "store", "sales", "counter", "margaret's desk" as the BOSH front desk. The description is "The former sales counter now functions as a desk for the office manager (currently [Margaret]). Behind it are a number of shelves holding office supplies."
 The snarky remark of the BOSH front desk is "I wonder if they'll let us keep the cash register."
 
 The shelves of office supplies are in front office. They are plural-named. They are scenery. "Pens, paper, nothing [we're] really concerned with now." Understand "row/of/drawers/pens/pen/pencils/pencil/paper/papers" as the shelves of office supplies.
@@ -900,7 +956,7 @@ Biff's computer is a thing. It is privately-named. It is behind the BOSH front d
 The snarky remark of Biff's computer is "It doesn't run much worse than it did before."
 
 Check taking Biff's computer:
-	say "[Biff's computer] is too unwieldy to carry around.";
+	say "[Biff's computer] is too unwieldy to carry around." instead;
  
 Instead of examining Biff's computer when the thumb drive is not seen: 
 	say "[description of biff's computer] But [we] [do] find a thumb drive and take it.";
@@ -952,15 +1008,16 @@ The snarky remark of the BOSH Chief's office is "It's like a museum of bad taste
 
 The Chief's desk is a supporter in BOSH Chief's Office. It is scenery. "This desk is a beautiful assembly of smokey glass and chrome framing. The 'legs' form shelves where Klimp keeps yet more curios. One might wonder where Klimp gets the money."
 The snarky remark of the Chief's desk is "Most of us just want a surface to keep our stuff off the floor."
+The curios are scenery in the BOSH Chief's office. The description is "The desk shelves are full of oddities and memorabilia, most notable of which is a polished orange marble dodecahedron.".
 
-Klimp's Computer is a thing on the chief's desk. It is scenery.
+Klimp's Computer is a thing on the chief's desk. It is scenery. "The computer is a sleek, modern model. It sports a screen saver of what looks like the Hopkinsville goblin."
 
 The desk shelves are a supporter. They are part of the Chief's desk. They support a polished orange marble dodecahedron. The description of the dodecahedron is "A relic of the Chief's sacred geometry phase.". Understand "legs" as desk shelves.
 
-Klimp owns the dodecahedron.
+Klimp owns the dodecahedron. 
 The snarky remark of the dodecahedron is "I'm partial to Catalan solids, actually."
 
-The black leather swivel chair is a supporter in BOSH Chief's Office. It is enterable. It is scenery. "Nice chair. Good lumbar support."
+The chief's black leather swivel chair is a supporter in BOSH Chief's Office. It is enterable. It is scenery. "Nice chair. Good lumbar support."
 
 The globe is a thing in the BOSH Chief's office. It is scenery. "The globe is very handsome with lots of intriguing detail. Unfortunately, Klimp has marred it with thumbtacks and string marking the world's 'leylines'."
 The snarky remark of the globe is "This is what happens when you let Klimp play with the office supplies."
@@ -989,13 +1046,19 @@ The antique wooden file cabinet is a container in the BOSH Chief's office. It is
 
 The prints are scenery in the BOSH Chief's office. The description is "There are three prints, the most striking of which is a neon-hued abstract by Diego Ernesto Diaz, the late Mexican painter, titled 'Hora de la Muerte'.".
 Understand "painting/paintings" as prints.
-The snarky remark of the prints is "The Chief's taste in art is as good as his taste in music."
+The snarky remark of the prints is "The Chief's taste in art is as good as his taste in armchairs."
+
+Hora de la Muerte is scenery in the BOSH Chief's office. Understand "Diego/Ernesto/Diaz/abstract/neon/hued" as Hora de la Muerte. "The print is a riot of color, with a central figure that could be a skull. It's a bit much for the office, but it's certainly striking."
  
-The oddities are on the chief's shelves. They are scenery. The description is "This and that piece of junk that Klimp thinks is funny or interesting.". Understand "memorabilia", "junk", "stuff" as the oddities.
+The oddities are on the chief's shelves. They are scenery. The description is "This and that piece of junk that Klimp thinks is funny or interesting, including a pair of astral lenses and a juvenile sasquatch skull."
+Understand "memorabilia", "junk", "stuff", "knick-knacks", "knick knacks" as the oddities.
 
 A pair of astral lenses is on the chief's shelves. It is ambiguously plural. Chief Klimp owns the pair of astral lenses. The description of the pair of astral lenses is "To all appearances an ordinary pair of glasses, the astral lenses allegedly reveal the existence of extra-dimensional pathways." The pair of astral lenses is wearable. 
 Understand "glasses/lens/glass" as the pair of astral lenses.
-The snarky remark of the pair of astral lenses is "These are useful for navigating with the TARDIS."
+The snarky remark of the pair of astral lenses is "These are useful for navigating the TARDIS."
+
+Check wearing the pair of astral lenses when the location is fluorescent-lit:
+	say "[We] [try] to put on the astral lenses, but the fluorescent light is blinding. [We] [take] them off again." instead;	
 
 Section 6 - Moira's office
 				 
@@ -1225,10 +1288,10 @@ After going from a room (called R1) to a room (called R2):
 
 Chapter 1 - Leaving the Front Office
 
-After going from front office to the BOSH office hallway for the first time:
+[ After going from front office to the BOSH office hallway for the first time:
 	If the current interlocutor was Margaret: 
 		say "[We] [extricate] [ourselves] from talking with Margaret.";
-	continue the action;
+	continue the action; ]
 	
 Chapter 2 - Klimp Arrives
 
@@ -1265,8 +1328,8 @@ Margaret Chao	Chief Klimp	"'Chief,' [we] say, 'Margaret --'"	"'I'm reading about
 Bureau of Strange Happenings	Chief Klimp	"[We] [say] to Klimp, 'the Bureau --'"	"'The Bureau will be the most important line of defense when the alien threat inevitably comes to fruition. Savra is a fool,' he says with a gleam in his eye."
 Senator Savra	Chief Klimp	"'So what is Savra --'"	"'Savra -- that imbecile. He's a fool and a coward. He's the reason we're not prepared for the alien invasion.'"
 Time-travel	Chief Klimp	"'Is time travel --'"	"'Time travel is a fact,' Klimp says. 'Tesla had a time machine. I've seen it.'"
-Astral plane	Chief Klimp	"'Chief, is the astral plane --'"	"'I've heard of people who have been there, even lived there. My friend Doris -- true story.'"
-Doris	Chief Klimp	"'Chief, who is D--"	"'He's a friend of mine. Works for the Bureau. Sort of. Snappy dresser. Prone to outlandish stories. Ask him about the Mothman.'"
+Astral plane	Chief Klimp	"'Chief, is the astral plane --'"	"'I've heard of people who have been there, even lived there. My friend Doris. True story.'"
+Doris	Chief Klimp	"'Chief, who is D--"	"'Doris? He's a friend of mine. Works for the Bureau. Sort of. Snappy dresser. Prone to outlandish stories. Ask him about the Mothman.'"
 The Bermuda Triangle	Chief Klimp	"'The Ber--'"	"'Oh please, the Bermuda Triangle is a hoax. It's just a place where ships and planes go down. It's not like it's a portal to another dimension. That's the Sargasso Sea.'"
 Loch Ness Monster	Chief Klimp	"'Chief, have you seen the --'"	"'Loch Ness Monster? Of course. I've seen it. It's a plesiosaur, you know. From another world.'"
 The Roswell Incident	Chief Klimp	"'Chief --'"	"'Roswell? It's not what you think. It's not what anyone thinks. It's a cover-up, but not for what you think.'"
@@ -1300,10 +1363,47 @@ Divining	Chief Klimp	"'Chief, have you ever used a di--'"	"'--vining rod? Yes, I
 Crystals	Chief Klimp	"'Chief, you ever use --'"	"'crystals? Yes, I have. I've used them to heal, to divine, to communicate with the Black Knight Satellite. I've used them to find lost keys. I've used them to find lost time. I've used them to find lost socks. I once gave one to a lonely Sasquatch. It didn't seem to care for it.'"
 Ley lines	Chief Klimp	"'Chief, I notice on your globe --'"	"'Yeah, all the lines, right? They're ley lines, which are, well, kind of like these lines of energy that connect the world. They're like the veins of the Earth. They're like the nervous system of the Earth. They're like the internet of the Earth. No, I take that back. Let's stick with the veins metaphor.'"
 Astrology	Chief Klimp	"'Chief, do you believe in horo--'"	"'scopes? Yes, I do. I've seen the evidence. I've seen the evidence that they're real. I've seen the evidence that they're fake. I've seen the evidence that they're a tool of the Illuminati. None of it makes sense. But I still believe in them.'"
+The Freemasons	Chief Klimp	"'Chief, who are the Free--'"	"'masons? Harmless. They're harmless. They're just a bunch of guys who like to wear aprons and have secret handshakes. It's not like they have the Holy Grail or anything. That's a myth.'"
+The Knights Templar	Chief Klimp	"'Chief, what can you tell me about the --'"	"'Knights Templar? Consider this -- they're not Knights at all. They're really kind of fun, you know. They're like the Freemasons, but with swords. And they have the Spear of Destiny. Or they did. Or they didn't. I can't remember.'"
+Atlantis	Chief Klimp	"'Chief, tell me about At--'"	"'lanta? It's a city in Georgia. Oh, you mean the lost city of Atlantis. It's really just a metaphor. For something. I can't remember what. But it's a metaphor. For something.'"
+Ancient astronauts	Chief Klimp	"[We] [ask], 'Do you believe in --'"	"'ancient astronauts? I can't remember. I used to. I used to believe in them. I used to believe in them a lot. I used to believe in them so much that I thought I was one. Now, I'm not so sure.'"
+Ancient Egypt	Chief Klimp	"'Chief, what's the deal with --'"	"'Ancient Egypt? It's not there anymore. It just disappeared. It's a mystery. Now there's just a place that's called Egypt. It's not the same. It's not the same at all.'"
+Crop circles	Chief Klimp	"'Chief, do you think crop --'"	"'circles are of alien origin? Maybe. But I'm more interested in crop squares. Or crop trapezoids. Or crop dododecahedrons. Those are the real mystery. I think it's the the Illuminati. They use them to communicate with the Black Knight Satellite.'"
+ESP	Chief Klimp	"'Chief, do you believe in --'"	"'ESP? Is that like ESPN? I like ESPN. Don't really like sports, but I like ESPN. I like people discussing irrelevant things with passion. Like Senator Savra. He's like ESPN, thinks everything's a game. But I don't think that's what you meant.'"
+Ghosts	Chief Klimp	"'Chief, do you believe in --'"	"'Ghosts? Yes. Ghosts, poltergeists, phantoms, specters, wraiths, apparitions, spooks, spirits, shades, and the undead are all real. I've seen them. I've talked to them. I've been one. I think. I can't remember.'"
+Vampires	Chief Klimp	"'Chief, are v--'"	"'Violins? Violets? Violence? Finish your words, Faraji. I can't read your mind. Oh, wait, you were going to ask about vampires, weren't you? They're sometimes real. Sometimes not. It's a quantum thing.'"
+Werewolves	Chief Klimp	"'Chief, are were--'"	"'[']Are where?['] That's hardly correct grammar. But I know what you mean. You mean werewolves. Werewolves are real. I once met one. You know what he said? He said, 'I'm a werewolf.'"
+Zombies	Chief Klimp	"'[We] [say] to Klimp, 'Zombies --'"	"'What? Zombies? I can't hear you. Speak up. Zombies? Oh, zombies. They're not very good conversationalists. They're not very good at anything.'"
+Hypnosis	Chief Klimp	"'Chief, do you believe in --'"	"'Hypnosis? I don't know. But I do know that Hipgnosis is a design firm. They did the cover for the Dark Side of the Moon. I like that cover. I like the triangle. I like the prism. I like the rainbow.'"
+Levitation	Chief Klimp	"'Chief, do you know --'"	"'anyone who can levitate? Well, that's a good question. I used to. But they fell down, so I don't know anymore."
+Telekinesis	Chief Klimp	"'Chief, do you believe in tele--'"	"'Television? Well, of course I do. I used to watch it all the time. Especially ESPN. For the passion. For the irrelevant discussions. For the games. But I don't think that's what you meant. You meant telekinesis, didn't you? I can't remember what I think about that.'"
+Teleportation	Chief Klimp	"'Do you think anyone will ever --'"	"'invent a teleporter? Nah, too dangerous. You could end up in another world. Or another time. Or in the middle of the Sargasso Sea. Or smack dab in the middle of the Tunguska Event. Now wouldn't that be something?'"
+Spontaneous human combustion	Chief Klimp	"'Chief, do you think --'"	"'spontaneous human combustion is real? Yes, I do, and when people say it's not, it really burns me up. LOL."
+Nikola Tesla	Chief Klimp	"[We] [say] to Klimp, 'Nikola --'"	"'Tesla? He was a time traveler. I've seen the evidence. He went back in time to save the crew of the Mary Celeste. He died as a result of the Philadelphia Experiment. It's all connected.'"
+The Sargasso Sea	Chief Klimp	"'Chief, have you ever been to the --'"	"'Sargasso Sea? Yes. Well, no. But I know all about it. For one thing, it's not a sea. It's the surface of a huge alien jellyfish. I've seen the evidence.'"
+The Marfa Lights	Chief Klimp	"'Chief, what's the story on the Marfa --'"	"'Lights? Don't let anyone know, but they're really just the headlights of a car. A car from another world. I've seen the evidence.'"
+V I Lenin	Chief Klimp	"'Chief, what do you think of --'"	"'Lennon? Imagine he's still alive. I've seen the evidence. Mark David Chapman didn't kill him. He's living in a hidden city on the inside of the earth. But I don't think that's what you meant. You meant Lenin, didn't you? I can't remember what I think about him.'"
+The Church of Scientology	Chief Klimp	"'Chief, what about the Church --'"	"'You mean the eighties band? I like them. They had a song about the Yeti. Or maybe that was someone else. But you meant the Church of Scientology, didn't you? They're weird.'"
+The Chief's office	Chief Klimp	"'Chief, you have such a nice office --'"	"'Yes, I do. Have you checked out the new article about the Marfa Lights? It's a doozy.'"
+The Chief's desk	Chief Klimp	"'Chief, what's the deal with your desk --'"	"'Made it myself. Well, not really built it, but I bought it. It's the kind of desk you could imagine Tesla using. I just read an article about him. They completely left out the part about him meeting the Jersey Devil.'"
+The polished orange marble dodecahedron	Chief Klimp	"[We] [admire] the Klimp's dodecahedron and [say], 'Chief, this --'"	"'-- is a beautiful thing. It's a dodecahedron. But I like to call it the portal stone, because it's a portal to another world. I think. Which reminds me, have you read the new book about the Spear of Destiny? It's a real page-turner.'"
+The globe	Chief Klimp	"'Chief, I notice on your globe --'"	"'Yeah, all the lines, right? They're ley lines, which are, well, kind of like these lines of energy that connect the world. They're like the veins of the Earth. They're like the nervous system of the Earth. They're like the internet of the Earth. No, I take that back. Let's stick with the veins metaphor.'"
+The armchair	Chief Klimp	"'Chief, what's the deal with your armchair --'"	"'That's my thinking chair. It's beautiful, don't you think?' I got at an auction by the Church of Scientology. They have the best auctions. I once got a book about hypnosis at one of their auctions. Good book.'"
+The mahogany side table	Chief Klimp	"'Chief, what's the story with your side table --'"	"'Got it from a store run by a guy who might be a vampire. Lots of vampires in the furniture business. I've seen the evidence.'"
+Waiting-for-the-Aliens	Chief Klimp	"'Chief, have you read this book --'"	"'[']Waiting for the Aliens?['] Yes, I have. Kind of a letdown. I was hoping for more about the Black Knight Satellite."
+Travels in Time	Chief Klimp	"'Chief, what do you think of this book --'"	"'Travels in Time? I've read it. It's a good book. Did you know it hasn't even been written yet? True story. Strangely, Debi Bosworth was killed in the Dyatlov Pass Incident. I've seen the evidence.'"
+Juvenile Sasquatch skull	Chief Klimp	"'Chief, what's the deal with this --'"	"'--skull? It's a juvenile Sasquatch skull. Found it myself at the Natural History Museum in New York. They have the best stuff. Hard to carry out of there, though.'" 
+Antique wooden file cabinet	Chief Klimp	"'Chief, what's in the file --'"	"'--cabinet? Files. Classified. Except for one. It's a recipe for chicken salad.'"
+Hora de la Muerte	Chief Klimp	"'Chief, the painting --'"	"'Hora de la Muerte? It speaks to me. Speaks to me of something ineffable. Something that's not there. Something that's not here. Something that's not anywhere.'"
+Astral lenses	Chief Klimp	"'Chief, what's the deal with these --'"	"'--glasses? They're astral lenses. Got them at a little shop while I was hunting for the Dover Demon. They let you see into other worlds. Haven't tried them yet. I'm waiting for the right time. The right place. The right world.'"
+The ringing-phone	Chief Klimp	"'Hey, Chief, sorry about the --'"	"'damn phone that keeps ringing? It's the Illuminati. They're trying to get you. They're trying to get me. They're trying to get everyone. Don't answer it. But make it stop. It's driving me crazy.'"
+The ringing-phone	Margaret	"[We] [say] to Margaret, 'Margaret, do you have any way to get into my desk to answer the phone, a spare key or --'"	"'No, no, I don't. I'm sorry. I don't know what to do. I'm sorry.'"
+The ringing-phone	Moira Zin	"'Moira, I'm so sorry about the phone ringing. It's locked in my desk and I can't get to it. I don't know what to do. I'm sorry.'"	"'It's okay, Larch. I'm sure whoever's calling will give up eventually.'"
+
 
 Book 19 - Verbs
  
-To shake is a verb. To smile is a verb. To sigh is a verb. To peer is a verb. To turn is a verb. To observe is a verb. To gaze is a verb. To trudge is a verb. To walk is a verb. To step is a verb. To enter is a verb. To exit is a verb. To pause is a verb. To survey is a verb. To hand is a verb. To try is a verb. To see is a verb. To squeal is a verb. To tap is a verb. To curse is a verb. To rap is a verb. To explain is a verb. To gasp is a verb. To return is a verb. To ask is a verb. To think is a verb. To scrunch is a verb. To grimace is a verb. To mutter is a verb. To leave is a verb. To stand is a verb. To mount is a verb. To stammer is a verb. To polish is a verb. To interrupt is a verb. To raise is a verb. To chuckle is a verb. To lean is a verb. To consider is a verb. To nod is a verb. To extricate is a verb. To toss is a verb. To pick is a verb. To flatten is a verb. To remember is a verb. To trip is a verb. To scratch is a verb.
+To admire is a verb. To shake is a verb. To smile is a verb. To sigh is a verb. To peer is a verb. To turn is a verb. To observe is a verb. To gaze is a verb. To trudge is a verb. To walk is a verb. To step is a verb. To enter is a verb. To exit is a verb. To pause is a verb. To survey is a verb. To hand is a verb. To try is a verb. To see is a verb. To squeal is a verb. To tap is a verb. To curse is a verb. To rap is a verb. To explain is a verb. To gasp is a verb. To return is a verb. To ask is a verb. To think is a verb. To scrunch is a verb. To grimace is a verb. To mutter is a verb. To leave is a verb. To stand is a verb. To mount is a verb. To stammer is a verb. To polish is a verb. To interrupt is a verb. To raise is a verb. To chuckle is a verb. To lean is a verb. To consider is a verb. To nod is a verb. To extricate is a verb. To toss is a verb. To pick is a verb. To flatten is a verb. To remember is a verb. To trip is a verb. To scratch is a verb.
 
 Book 20 - Images 
 

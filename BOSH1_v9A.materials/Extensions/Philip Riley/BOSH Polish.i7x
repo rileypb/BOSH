@@ -10,15 +10,17 @@ Hutz	"bony old man"	"town groundsman"	"Hutz"
 
 Table of Transitions
 source room (a room)	target room (a room)	transition text (a text)	used (a truth state)
-Enigma Lake Town Hall	Enigma Park	"[We] [push] through the back door into the cool night."	--
 Strip Mall Parking Lot South	Strip Mall Parking Lot North	"[We] [trudge] to the other end of the parking lot. It's much like where [we] left."	--
-Strip Mall Parking Lot North	Strip Mall Parking Lot South	"[We] [walk] back to the south end of the parking lot."
 Strip Mall Parking Lot South	Front Office	"Just like in the store this once was, the door chimes as [we] [walk] in."
-Front Office	Strip Mall Parking Lot South	"[We] [step] out of the office into the parking lot."
-Strip Mall Parking Lot North	Li'l Nectarine Convenience Store	"[We] [are] greeted by a blast of music as [we] [enter] the store."
-Li'l Nectarine Convenience Store	Strip Mall Parking Lot North	"[We] [exit] the store into the relative quiet of the nearby traffic."
 Strip Mall Parking Lot South	Dave's pawn shop	"'Cha-ching!'[first time] rings the electronic chime as [we] [step] into the store.[only]"
+Strip Mall Parking Lot North	Strip Mall Parking Lot South	"[We] [walk] back to the south end of the parking lot."
+Strip Mall Parking Lot North	Li'l Nectarine Convenience Store	"[We] [are] greeted by a blast of music as [we] [enter] the store."
+Front Office	Strip Mall Parking Lot South	"[We] [step] out of the office into the parking lot."
+Front Office	BOSH office Hallway	"[We] [extricate] [ourselves] from Margaret's clutches."
+BOSH office Hallway	Biff's Office	"Faraji enters their new office full of anticipation. Well, maybe dread is a better word."
+Li'l Nectarine Convenience Store	Strip Mall Parking Lot North	"[We] [exit] the store into the relative quiet of the nearby traffic."
 Dave's pawn shop	Strip Mall Parking Lot South	"[one of]Once again -- 'Cha-ching!' -- as [we] [leave] the store.[or]'Cha-ching!'[stopping]"
+Enigma Lake Town Hall	Enigma Park	"[We] [push] through the back door into the cool night."	--
 
 
 Table of Excuses (continued)
