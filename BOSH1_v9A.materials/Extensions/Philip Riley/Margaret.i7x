@@ -89,6 +89,40 @@ about the phone exchange is a questioning quip.
 	It quip-supplies Margaret.
 	It stocks Margaret.
 
+about the locked desk is a questioning quip.
+	The comment is "[We] [ask], 'Margaret, do you know any way to get into my desk?'".
+	The reply is "'Hmm... take it apart?'".
+	It quip-supplies Margaret.
+
+An availability rule for about the locked desk:
+	if the player knows desk-locked and the player knows key-is-lost:
+		always available;
+
+klimp-whereabouts is a questioning quip.
+	It mentions Chief Klimp.
+	It is privately-named.
+	The printed name is "where is Klimp".
+	Understand "where is Klimp", "is Klimp here", "is Klimp in the office", "has Klimp come in yet" as klimp-whereabouts.
+	The comment is "[We] [ask], 'Margaret, have you seen Klimp this morning?'".
+	The reply is "[if Chief Klimp is not in BOSH Chief's Office]She shakes her head. 'He hasn't been in yet.'[otherwise]She points towards the hall. 'He's in his office.'[end if]".
+	It quip-supplies Margaret.
+	It is repeatable.
+	It is always-available.
+	It is plausibility-once.
+
+moira-whereabouts is a questioning quip.
+	It mentions Moira Zin.
+	It is privately-named. 
+	The printed name is "where is Moira".
+	Understand "where is Moira", "is Moira here", "is Moira in the office", "has moira come in yet" as moira-whereabouts.
+	The comment is "[We] [ask], 'Has Moira come in yet?'".
+	The reply is "[if Moira Zin is not in Moira's Office]Margaret barely looks up from her work. 'Nope.'[otherwise]Margaret nods. 'I think she's working in her office.'[end if]".
+	It quip-supplies Margaret.
+	It is repeatable.
+	It is always-available.
+	It is plausibility-once.
+
+
 	
 Chapter 1 - Comments about items
 	
@@ -97,9 +131,12 @@ Table of Quiz Topics (continued)
 subject (a thing)	interlocutor (a person)	comment (a text)	reply (a text)
 coatrack	Margaret	--	"She grins. 'An old clothing rack. Good thinking, right?'"
 shelves of office supplies	Margaret	--	"'I doubt you'll be needing any of that now, but if you do, let me know.'"
-cardboard boxes	Margaret	--	"'Hmm, I guess I need to bring those out back to the dumpster.'"
+cardboard boxes	Margaret	--	"'Hmm, I guess I need to flatten those and bring them out back to the dumpster.'"
 coffee table	Margaret	--	"'It's not much, but what can you expect for $8?'"
 Margaret	Margaret	"'How are you, Margaret?'"	"'I'm doing great, thanks!'"
+laundromat	Margaret	--	 "Not a clue."
+Biff's computer	Margaret	--	"[if Biff's computer is behind the front desk]It's behind the front desk. It's toast.[otherwise]She looks tired. 'I'll get to it when I can.'[end if]"
+
 
 Instead of quizzing Margaret Chao about Chief Klimp:
 	if Chief Klimp is not in BOSH Chief's Office:
