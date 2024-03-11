@@ -117,6 +117,7 @@ Volume 2 - Featureless Hyperplane
 Book 1 - The Mystic Compass
 
 The mystic compass is a thing. 
+The snarky remark is "Okay, compass, show me the way to the nearest spirit guide."
 
 After dropping the mystic compass when the Ethereal Pillar is nowhere:
 	say "The mystic compass vanishes!";
@@ -136,6 +137,8 @@ It is back of it. It is in Hyperspace.
 "[If featureless hyperplane is not visited][We] [rub] [our] eyes as [we] [try] to take in [our] surroundings. [end if][if Descending Stair is not in Featureless Hyperplane]In addition to the usual directions of north and south and east and west, two new directions exist here: [italic type]back[roman type] and [italic type]forth[roman type]. As a result, the 'surface' [we're] standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
 
 As far as one can see, the hyperplane extends infinitely in all six directions[otherwise]It is made of the same gossamer, questionably real stuff as the ground, the pillar, and the readouts. You can't see past the first turn of the stairs, unfortunately[end if]."
+
+The snarky remark is "This is the most featureless hyperplane I've ever seen."
 
 To say symbol for (N - a number):
 	if N is 0:
@@ -233,6 +236,7 @@ Descending Stair is scenery.
 	say "A spiraling staircase disappears into the ground here. It is made of the same gossamer, questionably real stuff as the ground,[if visited pillar is true] the pillar,[end if] and the readouts. You can't see past the first turn of the stairs, unfortunately.";]
 
 The Ethereal Pillar is a thing. 
+The snarky remark is "Dammit, Doris, you and your cryptic messages."
 
 To decide what list of numbers is convert (N - a number) to base five:
 	let K be N;

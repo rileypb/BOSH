@@ -164,10 +164,10 @@ Book 7 - Solvay Road leading out of town
 
 Solvay Road leading out of town is north of Solvay Road 100 block and west of Enigma Park. It is in ELR. It is outdoors. The preposition is "walking on".
 
-The description is "Solvay Road bends here, leading northwest out of town and south back into town. East is the park, and to the west is Horton House."
+The description is "Solvay Road bends here, leading northwest out of town and south back into town. East is the park, and to the west is Horton House. One can walk down to the lake shore to the north."
 
 Horton facade is a building facade. It is in Solvay Road leading out of town. It is privately-named. The printed name is "Horton House". Understand "Horton/House/Home" as Horton facade. "Horton House is an old colonial-period house. The sign by the door marks it as the oldest remaining house in the Enigma Lake area. Its builder, Jeremiah Horton, was purported to be a supernaturalist of some renown."
-	Horton facade fronts Horton Family House.
+	Horton facade fronts Horton Family House Kitchen.
 	It is enterable from Solvay Road leading out of town.
 
 Book 8 - Solvay Road by the lake
@@ -684,7 +684,7 @@ Rule for writing a paragraph about the abandoned truck:
 
 Book 20 - Lake Shore north of the park
 
-the lake shore north of the park is west of Lake at Ridge and north of Enigma Park. It is in ELR. It is outdoors. The preposition is "on". "A sliver of moon hangs over the lake, casting a silvery light over the water. The park is to the south, while the lake stretches off to the north. A workshed is to the southeast."
+the lake shore north of the park is west of Lake at Ridge and north of Enigma Park. It is in ELR. It is outdoors. The preposition is "on". "A sliver of moon hangs over the lake, casting a silvery light over the water. The park is to the south, while the lake stretches off to the north. A workshed is to the southeast. A road can be seen to the east."
 
 The workshed-facade is a building facade. It is in Lake Shore North of the Park. It is privately-named. The printed name is "workshed". Understand "workshed/shed" as workshed-facade. "The workshed is a small, weathered building, with a single door and no windows."
 	The workshed-facade fronts the workshed.
@@ -734,28 +734,104 @@ the portal cave is south of hidden cave. It is in ELR.
 
 Book 24 - Lake shore west
 
-the Lake Shore West is west of Lake Shore North of the Park and north of Solvay Road Leading Out Of Town. It is east of Solvay-Road-by-the-lake. It is in ELR. It is outdoors. The printed name is "west end of the town's lake shore". The preposition is "at". 
+the Lake Shore West is west of Lake Shore North of the Park and north of Solvay Road Leading Out Of Town. It is east of Solvay-Road-by-the-lake. It is in ELR. It is outdoors. The printed name is "west end of the town's lake shore". The preposition is "at". "The lake stretches to the north, while the town lies to the south. Solvay Road can be seen to the west, and the shore continues to the east." 
 
-Book 25 - Horton Family House
+Book 25 - Horton Family House Kitchen
 
-The Horton House door is a closed openable locked lockable scenery door. It is west of Solvay Road Leading Out Of Town and east of Horton Family House. The Horton House door has matching key the old copper key. 
+The Horton House door is a closed openable locked lockable scenery door. It is west of Solvay Road Leading Out Of Town and east of Horton Family House Kitchen. The Horton House door has matching key the old copper key. 
 
-Horton Family House is a room. It is in ELR. It is indoors. "The house is a modest colonial-period building. To the east the front door leads out to Solvay Road. Another door leads west to the family graveyard." 
+Horton Family House Kitchen is a room. It is in ELR. It is indoors. "The house is a modest colonial-period building. Strangely, the furnishings of the house have been left in place, despite the coming flood. An open hearth is in the center of the room, with a few chairs and a table. The parlor is to the south, and a narrow staircase leads up. To the east the front door leads out to Solvay Road, while another door leads west to the family graveyard." 
+
+The furnishings are scenery in Horton Family House Kitchen. "A few chairs and a table are arranged around the room."
+
+The open hearth is scenery in Horton Family House Kitchen. "The hearth is a simple, open fireplace, with a few logs stacked beside it."
+
+The kitchen chairs are scenery in Horton Family House Kitchen. "A few chairs are arranged around the room."
+
+The kitchen table is a scenery supporter in Horton Family House Kitchen. "A simple wooden table."
+
+The logs are scenery in Horton Family House Kitchen. "A few logs are stacked beside the hearth."
+
+The parlor facade is a building facade. It is in Horton Family House Kitchen. It is privately-named. The printed name is "parlor". Understand "parlor" as parlor facade. "The parlor is to the south."
+	The parlor facade fronts Horton Family House Parlor.
+	It is enterable from Horton Family House Kitchen.
+
+The narrow staircase is scenery in Horton Family House Kitchen. "A narrow staircase leads up."
+
+Instead of climbing up the narrow staircase:
+	try going up;
+
+Book 25.1 - Horton Family House Parlor
+
+The Horton Family House Parlor is south of Horton Family House Kitchen. It is in ELR. It is indoors. "The parlor, like the kitchen, still has its furnishings in place. A few chairs and a table are arranged around the room."
+
+The parlor chairs are scenery in the Horton Family House Parlor. "A few chairs are arranged around the room."
+
+The parlor table is a scenery supporter in the Horton Family House Parlor. "A simple wooden table."
+
+The Book of Weird Concoctions is on the parlor table. 
+
+To stop is a verb.
+
+The description is "A book with a plain cover, titled 'The Book of Weird Concoctions.' No author is listed. [paragraph break]Flipping through the book, it appears that each page consists of a name, a drawing of a strange creature, and below that a word in a strange, unknown language. The text is written in a spidery, crabbed hand, and is difficult to read.[paragraph break][We] [stop] on one that reads [italic type][creature name][roman type] above a drawing of [strange creature], below which is written [italic type][incantation].[roman type]";
+
+The first name parts is a list of text that varies. The second name parts is a list of text that varies. The third name parts is a list of text that varies. The creature types is a list of text that varies. The body parts is a list of text that varies.
+The first name parts are {"Dag", "Gor", "Zor", "Zag", "Zog", "Zig", "Zag", "Cth", "N'g", "N'k", "Ad", "Bll", "Cr", "As", "Kl"}.
+The second name parts are {"ag", "or", "ar", "og", "ig", "ag", "th", "gth", "kth", "uth", "oth", "thuk", "shaka", "fats", "steen", "don" }.
+The third name parts are {"Distressing", "Unsettling", "Impertinent", "Uninhibited", "Pugnacious", "Unspeakable", "Unpronounceable", "Unmentionable", "Smelly", "Unpleasant", "Gross", "Horrible", "Squeamish", "Unsavory", "Unpalatable"}. 
+
+To say creature name:
+	sort the first name parts in random order;
+	sort the second name parts in random order;
+	sort the third name parts in random order;
+	say "[entry 1 of the first name parts][entry 1 of the second name parts] the [entry 1 of the third name parts]";
+
+The creature types are {"fish", "lizard", "man", "doll", "dog", "cat", "bird", "bat", "rat", "snake", "spider", "worm", "slug", "snail", "beetle", "fly", "moth", "butterfly", "bee", "wasp", "hornet", "mosquito", "gnat", "flea", "tick", "maggot", "larva", "pupa", "caterpillar", "grub", "weevil", "thrip", "midge", "cricket", "grasshopper", "locust", "cicada", "dragonfly", "lion", "tiger", "bear", "woman", "child", "rhinoceros", "hippopotamus", "giraffe", "zebra", "kangaroo", "koala", "wombat", "platypus", "sloth", "hyena", "jackal", "wolf", "fox", "coyote", "mechanical man", "golem" }.
+The body parts are {"head", "neck", "shoulders", "arms", "elbows", "wrists", "hands", "fingers", "thumbs", "chest", "back", "stomach", "belly", "waist", "hips", "thighs", "knees", "shins", "calves", "ankles", "feet", "toes", "heels", "soles", "toenails", "fingernails", "hair", "eyebrows", "eyelashes", "eyes", "nose", "nostrils", "cheeks", "lips", "teeth", "tongue", "throat", "ears", "earlobes"}.
+
+To say strange creature:
+	sort the creature types in random order;
+	sort the body parts in random order;
+	say "a [entry 1 of the creature types] with the [entry 1 of the body parts] of a [entry 2 of the creature types]";
+
+To say incantation:
+	sort the first name parts in random order;
+	sort the second name parts in random order;
+	if a random chance of 1 in 2 succeeds:
+		say "[entry 1 of the first name parts][entry 1 of the second name parts] [entry 2 of the second name parts in title case][entry 2 of the second name parts][entry 2 of the first name parts in lower case]";
+	otherwise:
+		say "[entry 1 of the first name parts][entry 1 of the second name parts] [entry 2 of the second name parts] [entry 2 of the first name parts][entry 3 of the second name parts][entry 3 of the first name parts in lower case]";
+
+Instead of consulting the book of weird concoctions about something:
+	if the topic understood in lower case is not "hathgar the pitiful":
+		say "[we] [look] up '[the topic understood]' in the book, but [find] nothing. Perhaps [we] [are] spelling it wrong.";
+	otherwise:
+		say "[we] [look] up 'Hathgar the Pitiful' in the book. Below a drawing of a doll with the head of a fly, the incantation 'Bara ba jagal' is written.";
+
+Book 25.5 - Horton Family House Second Floor
+
+The Second Floor of the Horton House is above the Horton Family House Kitchen. It is in ELR. It is indoors. "The second floor is a small, cramped space, with a single window looking out over the front yard. A small bed sits in one corner, while [if the rickety wardrobe is open]an open wardrobe fills a wall[otherwise]a closed wardrobe fills a wall[end if]. A staircase leads down."
+
+The small bed is scenery in the Second Floor of the Horton House. "A small bed sits in one corner. It's a rope bed, with a thin straw mattress."
+
+The rickety wardrobe is a closed openable scenery container in the Second Floor of the Horton House. "A rickety wardrobe fills a wall. It is [if open]open[otherwise]closed[end if]."
+
+
 
 Book 26 - Astral Tunnel
 
-The Horton astral tunnel is forthsouth of Horton Family House. It is in ELR.
+The Horton astral tunnel is forthsouth of Horton Family House Parlor. It is in ELR.
 
 Fire Station 1 is backeast of the Horton astral tunnel. It is in ELR.
 
 Book 27 - Horton Graveyard
 
-the Horton graveyard is west of Horton Family House. It is in ELR.
+the Horton graveyard is west of Horton Family House Kitchen. It is in ELR.
 
 Some gravestones are scenery in the Horton graveyard.
 
 Horton-back-facade is a building facade. It is in Horton Graveyard. It is privately-named. The printed name is "Horton Family House". Understand "Horton/House/Home" as Horton-back-facade. "Horton House is an old colonial-period house. [We] [are] in its backyard." 
-	Horton-back-facade fronts Horton Family House.
+	Horton-back-facade fronts Horton Family House Kitchen.
 	It is enterable from Horton Graveyard. 
 
 Book 28 - Fire Station 1
@@ -965,6 +1041,11 @@ Instead of examining the mystic compass:
 		say "The readout of the mystic compass says '[town hall spacetime setting].'";
 	otherwise:
 		say "The mystic compass shows nothing.";
+	if the mystic compass is not snarked:
+		if the snarky remark of the noun is not empty:
+			lb;
+			say "[italic type][snarky remark of the noun][roman type][paragraph break]";
+			now the noun is snarked;
 		
 Volume 5 - Polish
 

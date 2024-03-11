@@ -49,12 +49,12 @@ I've also read Early Declarations by Philip Riley, which is 23 words long.
 I've also read Basics by Philip Riley, which is 195 words long.
 I've also read Building Facades by Philip Riley, which is 163 words long.
 I've also read Simple Conversation by Philip Riley, which is 2190 words long.
-I've also read Hyperspace by Philip Riley, which is 6889 words long.
+I've also read Hyperspace by Philip Riley, which is 6928 words long.
 I've also read BOSH Facts by Philip Riley, which is 94 words long.
 I've also read Image Strip by Philip Riley, which is 2080 words long.
 I've also read Swamp Park by Philip Riley, which is 5350 words long.
 I've also read Margaret by Philip Riley, which is 1574 words long.
-I've also read Enigma Lake by Philip Riley, which is 9958 words long.
+I've also read Enigma Lake by Philip Riley, which is 11071 words long.
 I've also read Snarky Remarks by Philip Riley, which is 124 words long.
 I've also read Gender Options by Nathanael Nerode, which is 7730 words long.
 I've also read Followup Questions by Philip Riley, which is 245 words long.
@@ -247,9 +247,9 @@ Phase XII ... Code generation
                                                             Fail: list of numbers (~) number = nothing
                                             Fail: nothing (~) real number = nothing
                                             Fail: list of numbers (~) real number = nothing
-        Regional: CONSTANT_VNT'bosh hq'-region(I672_bosh_hq)(I558'bosh hq')
+        Regional: CONSTANT_VNT'bosh hq'-region(I686_bosh_hq)(I572'bosh hq')
          == region
-        Regional: CONSTANT_VNT'bosh hq'-region(I672_bosh_hq)(I558'bosh hq')
+        Regional: CONSTANT_VNT'bosh hq'-region(I686_bosh_hq)(I572'bosh hq')
          == region
         Regional: CONSTANT_VNT'laundromat-region'-region(I379_laundromat_region)(I274'laundromat-region')
          == region
@@ -298,7 +298,7 @@ Phase XII ... Code generation
 
 ==== Phase XII.21 ... Compiling routines from predicate calculus ====
 
-Providing for a total heap of 16384, given requirement of 12296
+Providing for a total heap of 16384, given requirement of 13576
 
 
 -----------------------------------------------------
