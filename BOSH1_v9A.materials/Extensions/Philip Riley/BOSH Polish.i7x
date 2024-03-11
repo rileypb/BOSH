@@ -6,11 +6,11 @@ Include Scheduled People by Philip Riley.
 Check taking a door:
 	say "You can't take that with you." instead;
 
-Check moving a door:
-	if the door is open:
-		try closing the door instead;
+Check pushing a door:
+	if the noun is open:
+		try closing the noun instead;
 	otherwise:
-		try opening the door instead;
+		try opening the noun instead;
 
 Table of No Names (Continued)
 named person (person)	anonymous description (text)	unnamed description (text)	proper name (text)

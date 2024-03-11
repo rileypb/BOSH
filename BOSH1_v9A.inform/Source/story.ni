@@ -1302,6 +1302,11 @@ Before quizzing someone about something when the noun owns the second noun:
 		say "'I'll sell [regarding the second noun][them] for [price of the second noun].'";
 		stop the action;
 
+Before requesting someone for something when the noun owns the second noun:
+	if the noun is willing to sell the second noun:
+		say "'I'll sell [regarding the second noun][them] for [price of the second noun].'";
+		stop the action;
+
    
 Book 18 - Sound
 
@@ -1572,7 +1577,7 @@ Include BOSH Tests by Philip Riley.
 
 DEBUG is false.
 
-Understand "*" as a mistake ("Noted.")
+Understand "* [text]" as a mistake ("Noted.")
 
 The access through barriers rule response (A) is "you have run afoul of the access through barriers rule!";
 
@@ -1585,6 +1590,7 @@ test win with "w/w/s/open desk/n/e/ask about key/ask about computer/look behind 
 
 test no-drive with "w/w/s/open desk/n/e/ask about key/ask about computer/look behind desk/w/s/x desk/open white door/n/e/ask about wrench/ask about backdoor/take boxes/w/s/z/w/z/z/open white door/knock on white door/e/z/n/e/x vent/ask for a screwdriver/n/e/n/e/ask for screwdriver/w/s/sw/ask for a screwdriver/ask about the owner/ne/w/w/w/x lenses/ask to borrow pair/wear them/e/e/take boxes/w/s/w/back/n/f/d/n/s/turn off light/wear glasses/f/fn/push truck bs/push truck back/move crates/move crates with truck/x washing machine/open it/enter it/f/f/f/f/f/fn/fw/fn/fn/fw/w/fn/w/take compass/x compass/s/s/s/s/s/s/s/e/e/e/e/e/e/e/e/b/b/b/b/b/b/b/b/b/d/w/w".
 
+test part1 with "w/w/s/open desk/n/e/ask about key/ask about computer/look behind desk/w/s/x desk/open white door/n/e/ask about wrench/ask about backdoor/take boxes/w/s/z/w/z/z/open white door/knock on white door/e/z/n/e/x vent/ask for a screwdriver/e/n/e/ask for screwdriver/w/s/sw/ask for a screwdriver/ask about the owner/ne/w/w/w/x lenses/ask to borrow pair/wear them/e/e/take boxes/w/s/w/wear lenses/back/n/f/d/n/s/turn off light/wear glasses/f/fn/push truck bs/push truck back/move crates/move crates with truck/x washing machine/open it/enter it".
 	
 lensing is an action applying to nothing. Understand "lens" as lensing.
 
