@@ -3,6 +3,14 @@ BOSH Polish by Philip Riley begins here.
 Include Polish by Philip Riley.
 Include Scheduled People by Philip Riley.
 
+Check taking a door:
+	say "You can't take that with you." instead;
+
+Check moving a door:
+	if the door is open:
+		try closing the door instead;
+	otherwise:
+		try opening the door instead;
 
 Table of No Names (Continued)
 named person (person)	anonymous description (text)	unnamed description (text)	proper name (text)
@@ -17,7 +25,13 @@ Strip Mall Parking Lot North	Strip Mall Parking Lot South	"[We] [walk] back to t
 Strip Mall Parking Lot North	Li'l Nectarine Convenience Store	"[We] [are] greeted by a blast of music as [we] [enter] the store."
 Front Office	Strip Mall Parking Lot South	"[We] [step] out of the office into the parking lot."
 Front Office	BOSH office Hallway	"[We] [extricate] [ourselves] from Margaret's clutches."
-BOSH office Hallway	Biff's Office	"Faraji enters their new office full of anticipation. Well, maybe dread is a better word."
+BOSH office Hallway	Biff's Office	"[We] [enter] their new office full of anticipation. Well, maybe dread is a better word."
+BOSH office Hallway	Chief's Office	"[We] [take] a deep breath and enters the office of the Chief of BOSH."
+Chief's Office	BOSH office Hallway	"[We] [breathe] easier as she leaves the office of the Chief of BOSH."
+Biff's Office	Back lot	"The scent of asphalt and old cigarette butts greets [us] as [we] leave the office."
+Back lot	astral-tunnel-1	"[We] [step] carefully into the astral tunnel."
+astral-tunnel-2	laundromat back room	"[We] [stare] with amazement as [we] [emerge] into the laundromat."
+laundromat back room	laundromat basement	"[We] carefully [navigate] the narrow stairs to the basement."	
 Li'l Nectarine Convenience Store	Strip Mall Parking Lot North	"[We] [exit] the store into the relative quiet of the nearby traffic."
 Dave's pawn shop	Strip Mall Parking Lot South	"[one of]Once again -- 'Cha-ching!' -- as [we] [leave] the store.[or]'Cha-ching!'[stopping]"
 Enigma Lake Town Hall	Enigma Park	"[We] [push] through the back door into the cool night."	--
@@ -50,6 +64,26 @@ stacks of crates	"Those are too heavy to take."	"Those are too heavy to move una
 membership book	"You hardly need it, and it might useful to someone else."	--
 adornment	"It's too high up."
 floor waxer	"It's too heavy to lift."
+abandoned pickup truck	"It's too heavy to lift."	"It's too heavy to move unaided."
+aisles	"Don't be silly."
+the floor	"Don't be silly."
+the ceiling	"Don't be silly."
+the walls	"Don't be silly."
+antacids	"You would have to buy them first."
+antique wooden file cabinet	"It's too heavy to lift."	"It's too heavy to move unaided."
+armchair	"It's too heavy to lift."	"It's too heavy to move unaided."
+automatic car wash	"Don't be silly."
+auxiliary portal	"Don't be silly."
+bank of lockers	"Don't be silly."
+basement shelves	"Don't be silly."
+Biff's chair	"It's too cumbersome to lug around."	"You push it around a bit, but it's only fun for a moment."
+Biff's desk	"It's too heavy to lift."	"It's too heavy to move unaided."
+blinds	"Don't be silly."
+Book of Utilitarianism	"It must be bad luck to steal a book from a church. [We] [leave] it here."
+bookcase	"It's too heavy to lift."	"It's too heavy to move unaided."
+bookshelves	"Don't be silly."
+booth window	"Don't be silly."
+
 
 
 Table of Floors (continued)
