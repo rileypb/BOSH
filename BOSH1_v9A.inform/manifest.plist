@@ -70,6 +70,10 @@
             <string>Figures/hutz_portrait.png</string>
             <key>34</key>
             <string>Figures/lizard_portrait.png</string>
+            <key>35</key>
+            <string>Figures/lizard_portrait_2.png</string>
+            <key>36</key>
+            <string>Figures/lizard_portrait_3.png</string>
         </dict>
     </dict>
 </plist>

@@ -124,7 +124,7 @@ Park facade is a building facade. It is in Solvay Road leading out of town, Lake
 
 Book 3 - Main Street 200 Block
 
-the Main Street 200 block is south of Enigma Lake Town Hall. It is in ELR. It is outdoors. The printed name is "200 block of Main Street". The preposition is "on the".
+the Main Street 200 block is south of Enigma Lake Town Hall. It is in ELR. It is outdoors. The printed name is "200 block of Main Street". The preposition is "on".
 
 The description is "The street runs east and west from here. South is the edifice of Rolle's Department Store. North is the town hall."
 
@@ -653,7 +653,7 @@ The steeple-obelisk-facade is a backdrop. It is in the steeple. Understand "obel
 Book 19 - Lake at Ridge
 
 the Lake at Ridge is north of Lake Street by the Park. It is in ELR. It is outdoors.
-The printed name is "intersection of Lake Street and Ridge Road". The preposition is "at".
+The printed name is "Lake Street and Ridge Road". The preposition is "at the intersection of".
 "[if player is in the abandoned truck]There is a glove compartment on the passenger side, [glove compartment state].[paragraph break][end if]The intersection lies at the edge of the lake. Lake Street runs south into town, while Ridge Road heads off into the darkness east of here. A little park along the lake shore is to the west."
 
 To say glove compartment state:
@@ -941,9 +941,8 @@ Obelisk-from-Henry's-Roof is privately-named scenery in Henry's Roof. The printe
 
 Book 35 - Rolle's Department Store
 
-Rolle's Department Store is south of Main Street 200 Block. It is in ELR.
+Rolle's Department Store is south of Main Street 200 Block. It is in ELR. It is a leavable room. The egress is north. 
 The description is "Once, town department stores like this were a constant of American life. Sadly, this one is empty of everything save a number of sale posters and its gleaming floor."
-Main Street 200 Block is outside from Rolle's Department Store.
 
 The gleaming floor is scenery in Rolle's Department Store. "Someone has polished it spotless, despite the looming destruction of the store. That's dedication."
 
@@ -1051,44 +1050,69 @@ Instead of examining the mystic compass:
 
 Volume 4.5 - The Lizard People
 
-The lizard leader is a man. The description is "A tall, imposing figure, with a long, scaly tail and a head that looks like a lizard's. It is dressed in a smart grey suit." The lizard leader is in the First Utilitarian Church of Enigma Lake.
+Skalek is a man. The description is "A tall, imposing figure, with a long, scaly tail and a head that looks like a lizard's. It is dressed in a smart grey suit." Skalek is in Rolle's Department Store.
 
-Every turn when the lizard leader is not in the location:
-	if the lizard leader is in a room (called current space):
+Korthax is a man. The description is "A short, squat figure, with a long, scaly tail and a head that looks like a lizard's. It is dressed in a smart grey suit." Korthax is in Rolle's Department Store. 
+
+Yssik is a man. The description is "A short, squat figure, with a long, scaly tail and a head that looks like a lizard's. It is dressed in a smart grey suit." Yssik is in Rolle's Department Store.
+
+Every turn when the Skalek is not in the location:
+	if the Skalek is in a room (called current space):
 		let seen at first be false;
 		if the location overlooks the current space:
-			say "[We] [see] the faint trace of a shadowy figure off in the distance, [the preposition of the current space] [current space].";
+			say "[We] [see] the faint trace of shadowy figures off in the distance, [the preposition of the current space] [the pretty name of the current space].";
 			now seen at first is true;
 		let next space be a random room which is adjacent to current space;
 		if next space is not the location:
 			let dir be the best route from the current space to the next space;
 			let seen at last be false;
 			if dir is a direction:
-				try the lizard leader going dir;
+				try Skalek going dir;
+				try Korthax going dir;
+				try Yssik going dir;
 				now seen at last is whether or not the location overlooks the next space;
 			let old structure be the structure name of the current space;
 			let new structure be the structure name of the next space;
 			if seen at last is true and seen at first is true:
 				if old structure is not new structure:
-					say "The shadowy figure moves [dir], from [current space] to [next space].";
+					if old structure is not "" and new structure is not "":
+						say "The shadowy figures move [dir], emerging from [the old structure] and entering [the new structure].";
+					otherwise if old structure is not "":
+						say "The shadowy figures move [dir], emerging from [the old structure] to [the pretty name of the next space].";
+					otherwise if new structure is not "":
+						say "The shadowy figures move [dir], from [the pretty name of the current space] into [the new structure].";
 				otherwise:
-					say "The shadowy figure moves [dir], [the preposition of the next space] [next space].";
+					say "The shadowy figures move [dir], [the preposition of the next space] [the pretty name of the next space].";
 			otherwise if seen at last is true:
 				if old structure is not new structure:
-					say "A shadowy figure comes into view [from-dir the opposite of dir], emerging from [the old structure], [the preposition of the next space] [next space].";
+					if old structure is not "" and new structure is not "":
+						say "Some shadowy figures appear [from-dir the opposite of dir], emerging from [the old structure] and entering [the new structure].";
+					otherwise if old structure is not "":
+						say "Some shadowy figures appear [from-dir the opposite of dir], emerging from [the old structure] to [the pretty name of the next space].";
+					otherwise if new structure is not "":
+						say "Some shadowy figures appear [from-dir the opposite of dir], entering [the new structure].";
 				otherwise:
-				  	say "A shadowy figure comes into view [from-dir the opposite of dir], [the preposition of the next space] [next space].";
+				  	say "Some shadowy figures come into view [from-dir the opposite of dir], [the preposition of the next space] [the pretty name of the next space].";
 			otherwise if seen at first is true:
 				if old structure is not new structure:
-					say "The shadowy figure moves out of view [to-dir dir], into [the new structure].";
+					if old structure is not "" and new structure is not "":
+						say "The shadowy figures move out of sight [to-dir dir], leaving [the old structure] and entering [the new structure].";
+					otherwise if old structure is not "":
+						say "The shadowy figures move out of sight [to-dir dir], leaving [the old structure].";
+					otherwise if new structure is not "":
+						say "The shadowy figures move out of view [to-dir dir], from [the pretty name of the current space], into [the new structure].";
 				otherwise:
-					say "The shadowy figure moves out of view [to-dir the dir].";
+					say "The shadowy figures move out of view [to-dir the dir].";
 		
 To say from-dir (dir - a direction):
 	if dir is up:
 		say "from above";
 	otherwise if dir is down:
 		say "from below";
+	otherwise if dir is inside:
+		say "from inside";
+	otherwise if dir is outside:
+		say "from outside";
 	otherwise:
 		say "from the [dir]";
 
@@ -1097,6 +1121,10 @@ To say to-dir (dir - a direction):
 		say "upward";
 	otherwise if dir is down:
 		say "downward";
+	otherwise if dir is inside:	
+		say "inside";
+	otherwise if dir is outside:
+		say "outside";
 	otherwise:
 		say "to the [dir]";
 

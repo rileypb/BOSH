@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 15282 words long.
+I've now read your source text, which is 15308 words long.
 
 
 -----------------------------------------------------
@@ -54,9 +54,9 @@ I've also read BOSH Facts by Philip Riley, which is 94 words long.
 I've also read Image Strip by Philip Riley, which is 2080 words long.
 I've also read Swamp Park by Philip Riley, which is 5350 words long.
 I've also read Margaret by Philip Riley, which is 1574 words long.
-I've also read Enigma Lake by Philip Riley, which is 11556 words long.
+I've also read Enigma Lake by Philip Riley, which is 11851 words long.
 I've also read Snarky Remarks by Philip Riley, which is 124 words long.
-I've also read Overlook by Philip Riley, which is 328 words long.
+I've also read Overlook by Philip Riley, which is 761 words long.
 I've also read Gender Options by Nathanael Nerode, which is 7730 words long.
 I've also read Followup Questions by Philip Riley, which is 245 words long.
 I've also read Make Test by Philip Riley, which is 216 words long.
@@ -248,9 +248,9 @@ Phase XII ... Code generation
                                                             Fail: list of numbers (~) number = nothing
                                             Fail: nothing (~) real number = nothing
                                             Fail: list of numbers (~) real number = nothing
-        Regional: CONSTANT_VNT'bosh hq'-region(I688_bosh_hq)(I574'bosh hq')
+        Regional: CONSTANT_VNT'bosh hq'-region(I690_bosh_hq)(I576'bosh hq')
          == region
-        Regional: CONSTANT_VNT'bosh hq'-region(I688_bosh_hq)(I574'bosh hq')
+        Regional: CONSTANT_VNT'bosh hq'-region(I690_bosh_hq)(I576'bosh hq')
          == region
         Regional: CONSTANT_VNT'laundromat-region'-region(I379_laundromat_region)(I274'laundromat-region')
          == region
@@ -307,7 +307,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 233 files written as streams.
-CPU time: 697 centiseconds
+CPU time: 728 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

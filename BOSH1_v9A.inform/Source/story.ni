@@ -1456,7 +1456,9 @@ Figure Maggie is the file "maggie_portrait.png".
 Figure Minerva is the file "minerva_portrait.png".
 Figure Christy is the file "christy_portrait.png".
 Figure Hutz is the file "hutz_portrait.png".
-Figure Lizard is the file "lizard_portrait.png".
+Figure Lizard 1 is the file "lizard_portrait.png".
+Figure Lizard 2 is the file "lizard_portrait_2.png".
+Figure Lizard 3 is the file "lizard_portrait_3.png".
  
 Ezra Gaunt has portrait Figure Gaunt.
 Petula Goldberg has portrait Figure Goldberg.
@@ -1474,7 +1476,10 @@ Minerva has portrait Figure Minerva.
 Maggie has portrait Figure Maggie. 
 Christy has portrait Figure Christy.
 Hutz has portrait Figure Hutz.
-The lizard leader has portrait Figure Lizard.
+Skalek has portrait Figure Lizard 1.
+Korthax has portrait Figure Lizard 2.
+Yssik has portrait Figure Lizard 3.
+
 
 Characters is a list of figure names that varies.
 
