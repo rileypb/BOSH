@@ -828,13 +828,53 @@ Fire Station 1 is backeast of the Horton astral tunnel. It is in ELR.
 
 Book 27 - Horton Graveyard
 
-the Horton graveyard is west of Horton Family House Kitchen. It is in ELR.
+the Horton graveyard is west of Horton Family House Kitchen. It is in ELR. It is outdoors. "It is riddled with holes where the bodies have been exhumed for the coming flood. Likewise, the gravestones have been removed, leaving only the holes. The Horton family house is to the east."
 
-Some gravestones are scenery in the Horton graveyard.
+The shovel is in the Horton graveyard. "A shovel lies on the ground, forgotten."
+
+Some holes are scenery in the Horton graveyard. "The graveyard is riddled with holes where the bodies have been exhumed for the coming flood. One of the holes is substantially larger and deeper than the others."
+
+The large hole is a building facade. It is in Horton Graveyard. Understand "larger" as large hole. "The hole is substantially larger and deeper than the others."
+	It fronts large grave.
+	It is enterable from Horton Graveyard.
+
+The large grave is a room. It is in ELR. It is outdoors. "The hole is substantially larger and deeper than the others." 
+
+Above the large grave is the Horton graveyard. Below the Horton graveyard is nowhere.
+
+A metal cabinet is a closed openable container in the large grave. The description is "A small metal cabinet, about the size of a breadbox. It seems to be made of lead. It is [if open]open[otherwise]closed[end if]." 
+A metal corner is in the large grave. "[We] [notice] a small corner of something metallic sticking out of the dirt at the bottom of the hole." The description is "The corner of some metallic object, possibly made of lead, sticks out of the dirt at the bottom of the hole."
+
+Understand the command "uncover" as something new.
+Uncovering is an action applying to one thing. Understand "uncover [something]" as uncovering.
+Understand "dig [something] out/up" as uncovering. Understand "dig out/up [something]" as uncovering. Understand "expose [something]" as uncovering.
+
+Check uncovering the metal corner when the player does not enclose the shovel:
+	say "It's too deep to reach without a shovel." instead;
+
+Carry out uncovering the metal corner:
+	now the metal cabinet is in the location;
+	now the metal corner is nowhere;
+	
+Report uncovering the metal corner:
+	say "[We] [dig] the metal object out of the dirt, revealing a small metal cabinet.";
+
+Check uncovering something when the noun is not the metal corner:
+	say "There's nothing to uncover here." instead; 
+
+Instead of doing something other than uncovering to the metal corner:
+	say "[We] [need] to uncover it first.";
 
 Horton-back-facade is a building facade. It is in Horton Graveyard. It is privately-named. The printed name is "Horton Family House". Understand "Horton/House/Home" as Horton-back-facade. "Horton House is an old colonial-period house. [We] [are] in its backyard." 
 	Horton-back-facade fronts Horton Family House Kitchen.
 	It is enterable from Horton Graveyard. 
+
+The Witnessing of Hezekiah is in the metal cabinet. The description is "A small, leather-bound book, titled 'The Witnessing of Hezekiah: as told to Jeremiah Horton by Hezekiah Horton'. The book is filled with strange, cryptic passages, and is difficult to read. [We] [find] one page of particular interest. It reads, 'And lo, Hezekiah, in his wisdom, did prophesy of the impending flood and the necessity to make ready. He spoke of a sacred artifact, a resonator, bestowed with divine power, that would unveil a gateway to the ethereal realm. And he revealed the quest to find the astral focus, a sacred relic of great significance. Thus he spake: [']Take the resonator, and with reverence, bind it to the eternal flame, and then to the astral focus. Channel a mighty power through it, and direct them towards the crystal eye. Strike the eye thrice, with unwavering devotion, and behold, the portal shall open, revealing the path to transcendence.[']'";
+
+The shiny astral resonator is in the metal cabinet. It is privately-named. The description is "A small, metallic, cylindrical object. One end is capped with a crystal lens, while the other terminates in two metal chains, each with a metal clamp, as if it were designed to be attached to something.".
+The printed name is "[if Astral Secrets is familiar]shiny astral resonator[otherwise]strange, shiny, metal object[end if]".
+Understand "shiny/astral/resonator" as the shiny astral resonator when Astral Secrets is familiar.
+Understand "strange/shiny/metal/object" as the shiny astral resonator.
 
 Book 28 - Fire Station 1
 
@@ -864,12 +904,12 @@ Astral Secrets is on the sales counter. It is proper-named. The printed name is 
 
 "A book lies on the sales counter."
 
-The description is "A book with a plain cover, titled 'Astral Secrets'. The author is listed as Jeremiah Horton.[paragraph break]Flipping through the book, [we] [find] a dog-eared page. The page shows a diagram of a large, metallic, cylindrical object, which is labeled 'astral resonator'. The text describes the resonator as a device for opening a portal through the astral plane. It goes on to describe the components of the device: a source of resonance, a source of light, and an 'astral lens', which it declines to describe further. The text also mentions that the resonator is powered by a source of electricity." 
+The description is "A book with a plain cover, titled 'Astral Secrets'. The author is listed as Jeremiah Horton.[paragraph break]Flipping through the book, [we] [find] a dog-eared page. The page shows a diagram of a small, metallic, cylindrical object, which is labeled 'astral resonator'. The text describes the resonator as a device for opening a portal through the astral plane. It goes on to describe the components of the device: a source of resonance, a source of light, and an 'astral lens', which it declines to describe further. The text also mentions that the resonator is powered by a source of electricity." 
 
 
 Book 30 - Reading Room Basement
 
-The Bookstore Basement is below the Reading Room. It is in ELR. The description is "The basement is dark and musty, with a number of shelves and boxes of books. The walls are made of old, crumbling brick. There is a faint breeze. A narrow staircase leads up[if the bricked-up-hole is not obscured]. There is a ragged hole in the north wall, leading into a dark space[end if]."
+The Bookstore Basement is below the Reading Room. It is in ELR. The description is "The basement is dark and musty, with a number of shelves and boxes of books. The walls are made of old, crumbling brick. There is a faint breeze. A narrow staircase leads up[if the bricked-up-hole is revealed]. There is a ragged hole in the north wall, leading into a dark space[end if]."
 
 A bricked-up-hole is a secret door. It is north of the Bookstore Basement and south of sewer tunnel 1. It is privately-named. The printed name is "bricked-up hole in the wall'". Understand "hole in/-- the/-- wall/--" as bricked-up-hole. It is open and not openable. "A ragged hole in the north wall, leading into a dark space." 
 
@@ -880,7 +920,7 @@ a door appearance rule for the bricked-up-hole (this is the bricked-up-hole appe
 
 To break is a verb.
 
-Attacking it with is an action applying to two things. Understand "attack [something] with something" as attacking it with. 
+Attacking it with is an action applying to two things. Understand "attack [something] with [something]", "break [something] with [something]", "smash [something] with [something]", "hit [something] with [something]", "strike [something] with [something]", "pound [something] with [something]", "pummel [something] with [something]", "bash [something] with [something]", "crush [something] with [something]", "destroy [something] with [something]", "demolish [something] with [something]", "wreck [something] with [something]", "shatter [something] with [something]", "splinter [something] with [something]", "crack [something] with [something]", "thump [something] with [something]", "wallop [something] with [something]" as attacking it with.
 
 Check attacking something with something when the second noun is not the sledgehammer:
 	say "Futile.";

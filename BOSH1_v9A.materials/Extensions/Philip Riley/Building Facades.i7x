@@ -14,7 +14,7 @@ Instead of entering a building facade (called F):
 		if D is a direction:
 			try going D;
 		otherwise:
-			say "You can't enter from here.";
+			move the player to R;
 	otherwise:
 		say "You can't enter from here.";
 
