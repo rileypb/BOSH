@@ -30,6 +30,7 @@ BOSH office Hallway	Chief's Office	"[We] [take] a deep breath and [enter] the of
 Chief's Office	BOSH office Hallway	"[We] [breathe] easier as [we] [leave] the office of the Chief of BOSH."
 Biff's Office	Back lot	"The scent of asphalt and old cigarette butts greets [us] as [we] [leave] the office."
 Back lot	astral-tunnel-1	"[We] [step] carefully into the astral tunnel."
+Inside-the-dumpster	Back lot	"[We] [climb] out of the dumpster."
 astral-tunnel-2	laundromat back room	"[We] [stare] with amazement as [we] [emerge] into the laundromat."
 laundromat back room	laundromat basement	"[We] carefully [navigate] the narrow stairs to the basement."	
 Li'l Nectarine Convenience Store	Strip Mall Parking Lot North	"[We] [exit] the store into the relative quiet of the nearby traffic."
@@ -44,6 +45,8 @@ Strip Mall Parking Lot South	{east}	"An automatic car wash isn't of much use whe
 Strip Mall Parking Lot South	{northeast}	"A fence prevents [us] from leaving the property."
 Strip Mall Parking Lot North	{northeast, southeast}	"A fence prevents [us] from leaving the property."
 Strip Mall Parking Lot North	{northwest, southwest}	"The only thing to the west is the military recruitment center."
+Back lot	{northwest, west, southeast, south, southwest}	"That way is obstructed by a chain link fence."
+Back lot	{northeast}	"That way runs smack into the building."
 Enigma Lake town hall	--	"Exits are to the north and south."
 Main Street 200 block	{northwest, northeast}	"Go north to enter the town hall."
 Main Street 200 block	--	"[We] can go north into the town hall, or south into Rolle's Department Store. In addition, Main Street leads east and west."
@@ -261,7 +264,9 @@ Vestry	--	"The floor is polished wood, covered by a large rug showing scenes fro
 Steeple	--	"Polished wood."
 Enigma Park	--	"Pretty green lawns criss-crossed by concrete paths."
 Solvay road leading out of town	--	"Nicely-maintained black asphalt."
-Horton house	--	"Old, worn wood."
+Horton family house kitchen	--	"Old, worn wood."
+Horton family house parlor	--	"Old, worn wood."
+The Second Floor of the Horton House	--	"Old, worn wood."
 Horton graveyard	--	"The town has done a good job of maintaining the grass and the gravel paths."
 Lake at ridge	--	"Nicely-maintained black asphalt."
 Lake shore north of the park	--	"The grass of the park gives way to the sand of the beach."
@@ -271,6 +276,62 @@ Dirty shack	--	"Dirty, worn wood."
 Workshed	--	"An old, creaky wood floor."
 Hidden cave	--	"The floor of the cave is a mix of gravel and dirt."
 Portal cave	--	"The floor of the cave is a mix of gravel and dirt."
+
+
+Understand "asphalt" as the floor when the location is strip mall parking lot south.
+Understand "asphalt" as the floor when the location is strip mall parking lot north.
+Understand "tile" as the floor when the location is li'l nectarine convenience store.
+Understand "carpet" as the floor when the location is Dave's pawn shop.
+Understand "carpet" as the floor when the location is Front Office.
+Understand "carpet" as the floor when the location is BOSH office Hallway.
+Understand "carpet" as the floor when the location is Biff's Office.
+Understand "carpet" as the floor when the location is Moira's Office.
+Understand "carpet" as the floor when the location is BOSH Chief's Office.
+Understand "tile" as the floor when the location is laundromat-store.
+Understand "tile" as the floor when the location is laundromat back room.
+Understand "concrete" as the floor when the location is laundromat basement.
+Understand "concrete" as the floor when the location is back basement.
+Understand "asphalt" as the floor when the location is the back lot.
+Understand "carpet" as the floor when the location is Field Office Reception.
+Understand "carpet" as the floor when the location is Field Office Hallway.
+Understand "carpet" as the floor when the location is the field office chief's office.
+Understand "carpet" as the floor when the location is Minerva's Office.
+Understand "carpet" as the floor when the location is Christy's Office.
+Understand "carpet" as the floor when the location is Portal Room 1.
+Understand "carpet" as the floor when the location is Portal Room 2.
+Understand "terrazzo" as the floor when the location is Radio Station WGXC.
+Understand "terrazzo" as the floor when the location is Broadcast Booth.
+Understand "asphalt" as the floor when the location is Main at Lake.
+Understand "asphalt" as the floor when the location is Main Street 200 block.
+Understand "tile" as the floor when the location is Rolle's Department Store.
+Understand "asphalt" as the floor when the location is Main at Solvay.
+Understand "tile" as the floor when the location is Henry's Hot Skillet.
+Understand "tile" as the floor when the location is Fresnel's Music.
+Understand "wood" as the floor when the location is The Reading Room.
+Understand "concrete" as the floor when the location is Bookstore Basement.
+Understand "wood" as the floor when the location is Enigma Lake Gymnasium.
+Understand "asphalt" as the floor when the location is Lake Street by the gym.
+Understand "wood" as the floor when the location is Enigma Lake Town Hall.
+Understand "asphalt" as the floor when the location is Solvay Road 100 block.
+Understand "concrete" as the floor when the location is Fire Station 1.
+Understand "wood" as the floor when the location is First Utilitarian Church of Enigma Lake.
+Understand "wood" as the floor when the location is Vestry.
+Understand "wood" as the floor when the location is Steeple.
+Understand "lawn/lawns/path/paths" as the floor when the location is Enigma Park.
+Understand "asphalt" as the floor when the location is Solvay road leading out of town.
+Understand "wood" as the floor when the location is Horton family house kitchen.
+Understand "wood" as the floor when the location is Horton family house parlor.
+Understand "wood" as the floor when the location is The Second Floor of the Horton House.
+Understand "grass/gravel/path/paths" as the floor when the location is Horton graveyard.
+Understand "asphalt" as the floor when the location is Lake at ridge.
+Understand "sand" as the floor when the location is Lake shore north of the park.
+Understand "grass/sand" as the floor when the location is Lake shore west.
+Understand "asphalt" as the floor when the location is Solvay-Road-by-the-lake.
+Understand "wood" as the floor when the location is Dirty shack.
+Understand "wood" as the floor when the location is Workshed.
+Understand "gravel/dirt" as the floor when the location is Hidden cave.
+Understand "gravel/dirt" as the floor when the location is Portal cave.
+
 
 [ Collapsed root cellar	--	"The floor of the cellar is a mix of gravel and dirt."  ]
 

@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 15495 words long.
+I've now read your source text, which is 15612 words long.
 
 
 -----------------------------------------------------
@@ -42,7 +42,7 @@ I've also read Real People by Philip Riley, which is 397 words long.
 I've also read Visible Rooms by Philip Riley, which is 153 words long.
 I've also read Can't Touch This by Philip Riley, which is 146 words long.
 I've also read Polish by Philip Riley, which is 86 words long.
-I've also read BOSH Polish by Philip Riley, which is 3659 words long.
+I've also read BOSH Polish by Philip Riley, which is 3764 words long.
 I've also read Choices by Philip Riley, which is 408 words long.
 I've also read New Light by Philip Riley, which is 333 words long.
 I've also read Early Declarations by Philip Riley, which is 23 words long.
@@ -299,7 +299,7 @@ Phase XII ... Code generation
 
 ==== Phase XII.21 ... Compiling routines from predicate calculus ====
 
-Providing for a total heap of 16384, given requirement of 13576
+Providing for a total heap of 16384, given requirement of 14600
 
 
 -----------------------------------------------------
@@ -307,7 +307,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 233 files written as streams.
-CPU time: 705 centiseconds
+CPU time: 729 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

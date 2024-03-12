@@ -778,7 +778,7 @@ After opening Biff's desk's drawer for the first time:
 	
 Section 2 - Back Lot
 
-The back lot is a room. It is in BOSH HQ.
+The back lot is a room. It is in BOSH HQ. It is outdoors. 
 The snarky remark is "Let me guess, this is the break room." 
 
 The BOSH back door is a door. The printed name is "white metal door". Understand "backdoor/white/metal" as BOSH back door. It is west of biff's office and east of back lot. It is scenery. It is closed, locked, lockable, and openable. "An unremarkable metal door painted white. [state of BOSH back door][run paragraph on]".
@@ -813,10 +813,10 @@ The snarky remark is "So far the vistas in Swamp Park are a little underwhelming
 The chain link fence is scenery in the back lot. "An ordinary chain link fence, about eight	feet high."
 The snarky remark is "Are we keeping them out, or are they keeping us in?"
 
-The dumpster is scenery in the back lot. "An everyday blue dumpster, about six feet high."
+The blue dumpster is scenery in the back lot. "An everyday blue dumpster, about six feet high."
 The snarky remark is "Oh, this is where I left my dignity."
 
-Check entering the dumpster:
+Check entering the blue dumpster:
 	say "[We] [are] not yet at the point of dumpster diving." instead;
 	
 Climbing into is an action applying to one thing. Understand "climb into [thing]" as climbing into.
@@ -824,14 +824,14 @@ Climbing into is an action applying to one thing. Understand "climb into [thing]
 Instead of climbing into something:
 	try entering the noun;
 
-Instead of an actor inserting biff-flattened-boxes into the dumpster:
+Instead of an actor inserting biff-flattened-boxes into the blue dumpster:
 	now the biff-flattened-boxes are in the room of stuff;
 	if the actor is the player:
 		say "[We] [toss] the flattened boxes over the edge of the dumpster.";
 	otherwise if the actor is in the location:
 		say "[The actor] [toss] the flattened boxes over the edge of the dumpster.";
 
-Instead of an actor inserting margaret-flattened-boxes into the dumpster:
+Instead of an actor inserting margaret-flattened-boxes into the blue dumpster:
 	now the margaret-flattened-boxes are in the room of stuff;
 	if the actor is the player:
 		say "[We] [toss] the flattened boxes over the edge of the dumpster.";
@@ -865,6 +865,18 @@ Carry out knocking on the BOSH back door when the location is the back lot and t
 Report knocking on the BOSH back door when the location is the back lot and the BOSH back door was locked:
 	say "You hear the door being unlocked, and then Margaret pops her head out. 'Seriously, [Agent]? You got yourself locked out? Be more careful!'";
 	rule succeeds;
+
+Instead of going inside when the location is the back lot:
+	say "You'll have to more specific than that.";
+
+Section 2.5 - Inside the dumpster
+
+inside-the-dumpster is a leavable room. It is inside from the back lot. The egress is outside. inside-the-dumpster is privately-named. It is in BOSH HQ. It is outdoors. The printed name is "inside the dumpster". The preposition is "".
+"It's smelly, but at least the top is open." Understand "inside of/-- the/-- dumpster" as inside-the-dumpster.
+
+Instead of going when the location is inside-the-dumpster and the noun is not outside:
+	say "Blue walls block every direction.";
+
  
 Section 3 - Hallway
 
