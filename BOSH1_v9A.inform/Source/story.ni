@@ -780,16 +780,16 @@ The back lot is a room. It is in BOSH HQ.
 The snarky remark is "Let me guess, this is the break room." 
 
 The BOSH back door is a door. The printed name is "white metal door". Understand "backdoor/white/metal" as BOSH back door. It is west of biff's office and east of back lot. It is scenery. It is closed, locked, lockable, and openable. "An unremarkable metal door painted white. [state of BOSH back door][run paragraph on]".
-The snarky remark is "[door snark][line break]".
+The snarky remark is "[door snark]".
 
 To say door snark:
 	if location is biff's office:
 		if the back lot is unvisited:
-			say "Who knows what exotic vistas lie beyond this door?";
+			say "Who knows what exotic vistas lie beyond this door?[run paragraph on]";
 		otherwise:
-			say "I've been outside. You ever see 'Silo'?";
+			say "I've been outside. You ever see 'Silo'?[run paragraph on]";
 	otherwise:
-		say "The door to paradise. I'm sorry, I mean my office.";
+		say "The door to paradise. I'm sorry, I mean my office.[run paragraph on]";
 
 Before opening BOSH back door when BOSH back door is locked:
 	now player knows back-door-is-locked;
