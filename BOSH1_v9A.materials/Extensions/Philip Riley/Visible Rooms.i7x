@@ -13,4 +13,17 @@ Does the player mean doing anything to the location: [still prioritizes examinat
 Instead of examining a room:
 	try looking instead.
 
+
+After deciding the scope of the player while taking (this is the place the room in scope while taking rule):
+	place the location in scope, but not its contents.	
+
+Instead of taking a room:
+	say "How can you take what you're standing in?"
+
+After deciding the scope of the player while dropping (this is the place the room in scope while dropping rule):
+	place the location in scope, but not its contents.	
+
+Instead of dropping a room:
+	say "[text of the can't drop what's not held rule response (A)][paragraph break]";
+
 Visible Rooms ends here.

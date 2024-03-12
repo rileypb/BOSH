@@ -541,7 +541,7 @@ Doris's desk is a scenery supporter in the field office chief's office. The desc
 Instead of examining Doris's desk:
 	say "The desk is covered with papers and tchotchkes."
 
-The tchotchkes are scenery in the field office chief's office. Understand "knick-knacks" as the tchotchkes. The description is "A small, plastic model of a TARDIS, a Rubik's cube, and a CMY cube are on the desk."
+The tchotchkes are scenery in the field office chief's office. Understand "knick-knacks", "knick knacks", "curios", "junk", "stuff" as the tchotchkes. The description is "A small, plastic model of a TARDIS, a Rubik's cube, and a CMY cube are on the desk." They are plural-named. Doris owns the tchotchkes.
 
 A model TARDIS is on Doris's desk. The description is "It's a small, plastic model of a TARDIS." It is owned by Doris.
 

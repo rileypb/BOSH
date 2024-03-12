@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 15475 words long.
+I've now read your source text, which is 15495 words long.
 
 
 -----------------------------------------------------
@@ -39,22 +39,22 @@ I've also read Furniture by Philip Riley, which is 74 words long.
 I've also read Third Person Narration by Philip Riley, which is 669 words long.
 I've also read Door Utils by Philip Riley, which is 41 words long.
 I've also read Real People by Philip Riley, which is 397 words long.
-I've also read Visible Rooms by Philip Riley, which is 63 words long.
+I've also read Visible Rooms by Philip Riley, which is 153 words long.
 I've also read Can't Touch This by Philip Riley, which is 146 words long.
 I've also read Polish by Philip Riley, which is 86 words long.
-I've also read BOSH Polish by Philip Riley, which is 2146 words long.
+I've also read BOSH Polish by Philip Riley, which is 3659 words long.
 I've also read Choices by Philip Riley, which is 408 words long.
 I've also read New Light by Philip Riley, which is 333 words long.
 I've also read Early Declarations by Philip Riley, which is 23 words long.
 I've also read Basics by Philip Riley, which is 195 words long.
 I've also read Building Facades by Philip Riley, which is 163 words long.
 I've also read Simple Conversation by Philip Riley, which is 2190 words long.
-I've also read Hyperspace by Philip Riley, which is 6936 words long.
+I've also read Hyperspace by Philip Riley, which is 6948 words long.
 I've also read BOSH Facts by Philip Riley, which is 94 words long.
 I've also read Image Strip by Philip Riley, which is 2077 words long.
 I've also read Swamp Park by Philip Riley, which is 5378 words long.
 I've also read Margaret by Philip Riley, which is 1584 words long.
-I've also read Enigma Lake by Philip Riley, which is 11851 words long.
+I've also read Enigma Lake by Philip Riley, which is 11881 words long.
 I've also read Snarky Remarks by Philip Riley, which is 126 words long.
 I've also read Overlook by Philip Riley, which is 761 words long.
 I've also read Gender Options by Nathanael Nerode, which is 7730 words long.
@@ -75,7 +75,7 @@ I've also read Options Paragraph by Philip Riley, which is 180 words long.
 I've also read Glulx Entry Points by Emily Short, which is 1903 words long.
 I've also read Door Varieties by Philip Riley, which is 296 words long.
 I've also read Secret Doors by Gavin Lambert, which is 272 words long.
-I've also read Plugging by Philip Riley, which is 819 words long.
+I've also read Plugging by Philip Riley, which is 755 words long.
 I've also read Playtest by Philip Riley, which is 923 words long.
 I've also read Glulx Definitions by Dannii Willis, which is 879 words long.
 I've also read Glk Object Recovery by Dannii Willis, which is 460 words long.
@@ -143,7 +143,7 @@ Regional: CONSTANT_VNT'field office area'-region(I254_field_office_area)(I160'fi
  == region
 Regional: CONSTANT_VNT'field office area'-region(I254_field_office_area)(I160'field office area')
  == region
-Regional: CONSTANT_VNT'elr'-region(I448_elr)(I340'elr')
+Regional: CONSTANT_VNT'elr'-region(I444_elr)(I336'elr')
  == region
 
 
@@ -248,17 +248,17 @@ Phase XII ... Code generation
                                                             Fail: list of numbers (~) number = nothing
                                             Fail: nothing (~) real number = nothing
                                             Fail: list of numbers (~) real number = nothing
-        Regional: CONSTANT_VNT'bosh hq'-region(I689_bosh_hq)(I575'bosh hq')
+        Regional: CONSTANT_VNT'bosh hq'-region(I685_bosh_hq)(I571'bosh hq')
          == region
-        Regional: CONSTANT_VNT'bosh hq'-region(I689_bosh_hq)(I575'bosh hq')
-         == region
-        Regional: CONSTANT_VNT'laundromat-region'-region(I379_laundromat_region)(I274'laundromat-region')
+        Regional: CONSTANT_VNT'bosh hq'-region(I685_bosh_hq)(I571'bosh hq')
          == region
         Regional: CONSTANT_VNT'laundromat-region'-region(I379_laundromat_region)(I274'laundromat-region')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I448_elr)(I340'elr')
+        Regional: CONSTANT_VNT'laundromat-region'-region(I379_laundromat_region)(I274'laundromat-region')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I448_elr)(I340'elr')
+        Regional: CONSTANT_VNT'elr'-region(I444_elr)(I336'elr')
+         == region
+        Regional: CONSTANT_VNT'elr'-region(I444_elr)(I336'elr')
          == region
         Regional: CONSTANT_VNT'field office area'-region(I254_field_office_area)(I160'field office area')
          == region
@@ -307,7 +307,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 233 files written as streams.
-CPU time: 702 centiseconds
+CPU time: 705 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

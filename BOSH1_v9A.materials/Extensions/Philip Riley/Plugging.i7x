@@ -134,18 +134,6 @@ Rule for printing room description details of a thing:
 	if something (called the plug) is plugged into the item described:
 		say " (with [the plug] plugged into it)"; 
 
-Book - The test room
 
-The Test Room is a room. "This is a test room. It has a socket in it."
-
-The socket is scenery in the Test Room. The socket is plug-into-able.
-
-The lamp is a thing in the Test Room. The lamp is pluggable.
-
-The lamp is wearable.
-
-[ The extension cord is a thing in the Test Room. The extension cord is pluggable and plug-into-able. ]
-
-The Other Room is west of the Test Room. "This is another room."
 
 Plugging ends here.

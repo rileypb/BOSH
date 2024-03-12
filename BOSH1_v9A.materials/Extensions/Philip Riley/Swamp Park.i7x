@@ -289,7 +289,7 @@ It is far away.
 The washing machines are scenery in the laundromat-store. "The machines are old and worn, but still seemingly functional. A few are out of order." Understand "machine/dryer/dryers" as the washing machines.
 The snarky remark of the washing machines is "I'm trying to think of a good joke about washing machines, but I'm coming up empty."
 
-The opening is scenery in the laundromat-store. "The opening leads west to the back room." Understand "doorway" as the opening.
+The opening_ is scenery in the laundromat-store. "The opening leads west to the back room." Understand "doorway" as the opening_.
 
 The handtruck is in the laundromat-store. It is pushable between rooms.
 Understand "hand/truck/trolley/dolly/stack/trundler", "box cart", "sack barrow", "cart", "sack truck", "two wheeler", "bag barrow" as the handtruck. The description is "A handtruck sits in the corner, ready to be used."

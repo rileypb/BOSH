@@ -546,7 +546,7 @@ Book 17 - Vestry
 
 The vestry is a leavable room. It is east of First Utilitarian Church. It has egress west. It is in ELR. "It's a small room, with a door leading to the church proper to the west. A lovely tapestry hangs on the wall[if the tapestry is pushed aside]. It is pushed aside, revealing a circuit breaker box[end if]."
 
-The tapestry is scenery in the vestry. "An intricate tapestry, depicting a scene of a medieval village. It's a bit out of place in a church, but it's lovely." The tapestry can be pushed aside. 
+The tapestry is scenery in the vestry. "An intricate tapestry, depicting a scene of a medieval village. It's a bit out of place in a church, but it's lovely." The tapestry can be pushed aside. Understand "wall hanging", "wallhanging" as the tapestry.
 
 Instead of pushing the tapestry when the tapestry is not pushed aside:
 	say "[We] [push] the tapestry aside, revealing a circuit breaker box mounted on the wall.";
@@ -559,7 +559,7 @@ Instead of pushing the tapestry when the tapestry is pushed aside:
 Instead of looking behind the tapestry:
 	try pushing the tapestry;
 
-The circuit breaker is a scenery device. "A circuit breaker box is mounted on the wall."
+The circuit breaker is a scenery device. "A circuit breaker box is mounted on the wall." Understand "box", "safety switch", "switchgear", "disconnect switch", "electrical", "electricity", "fuse switch", "overload switch" and "trip switch" as the circuit breaker. 
 
 Book 18 - Steeple
 
@@ -930,6 +930,7 @@ the Skillet door is a closed locked openable lockable scenery door. It is south 
 The lunch counter is scenery in Henry's Hot Skillet. "A typical mid-twentieth-century lunch counter."
 
 The wires are scenery in Henry's Hot Skillet. "Two insulated wires with bare ends, they probably once attached to some electrical device sitting on the counter."
+They are plural-named.
 
 Book 34 - Henry's Roof
 
