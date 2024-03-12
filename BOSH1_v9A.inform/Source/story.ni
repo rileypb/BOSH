@@ -103,8 +103,10 @@ The new room description heading rule does nothing when the location is the isol
   
 Ezra Gaunt is a man in the Room of Stuff. The description is "Agent Gaunt's last name describes him well. He is a perpetually worried-looking individual, a look emphasized by his thinness and his thick-rimmed glasses.".
 Petula Goldberg is a woman in the Room of Stuff. The description is "Agent Goldberg has lots of dogs, a fact which can be inferred by the inevitable fur somewhere on her person. The last front office worker at the Bureau left due to an extreme allergic reaction to Goldberg.".
-Larch Faraji is a nonbinary in the Strip Mall Parking Lot South. The third singular pronoun is singular-they-pronoun. The description is "Agent Faraji ". 
+Larch Faraji is a nonbinary in the Strip Mall Parking Lot South. The third singular pronoun is singular-they-pronoun. The description is "Agent Faraji is dressed smartly in a black suit, with neat hair and a serious expression. Inside, they are a punk rocker, a fact that they are not shy about.". 
  
+The snarky remark of Larch Faraji is "Don't talk about me like I'm not here."
+
 Play mode is a kind of value. The play modes are _startup, _normal, and picking character.
 The current play mode is a play mode that varies. The current play mode is initially _startup. 
 
