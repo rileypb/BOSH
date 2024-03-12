@@ -46,6 +46,7 @@ picture 30 "BOSH1_v9A.materials/Figures/maggie_portrait.png"
 picture 31 "BOSH1_v9A.materials/Figures/minerva_portrait.png"
 picture 32 "BOSH1_v9A.materials/Figures/christy_portrait.png"
 picture 33 "BOSH1_v9A.materials/Figures/hutz_portrait.png"
+picture 34 "BOSH1_v9A.materials/Figures/lizard_portrait.png"
 
 ! Placeholder variables
 
@@ -76,9 +77,9 @@ template path "/Users/rileypb/Library/Inform/Templates"
 template path "/Applications/Inform.app_old.app/Contents/Resources/Internal/Templates"
 css
 website "Standard"
-status instruction ||&nbsp;<a href="source:story.ni#line69"><img border=0 src=inform:/doc_images/Reveal.tif></a>||
-status instruction ||&nbsp;<a href="source:story.ni#line70"><img border=0 src=inform:/doc_images/Reveal.tif></a>||
 status instruction ||&nbsp;<a href="source:story.ni#line71"><img border=0 src=inform:/doc_images/Reveal.tif></a>||
+status instruction ||&nbsp;<a href="source:story.ni#line72"><img border=0 src=inform:/doc_images/Reveal.tif></a>||
+status instruction ||&nbsp;<a href="source:story.ni#line73"><img border=0 src=inform:/doc_images/Reveal.tif></a>||
 status alternative ||Using 'Release along with a file of "Such-and-Such" called "whatever.pdf"', perhaps to add a manual, or a welcoming note&nbsp;<a href=inform:/doc401.html><img border=0 src=inform:/doc_images/help.png></a>||
 status alternative ||Using 'Release along with the source text'&nbsp;<a href=inform:/doc412.html><img border=0 src=inform:/doc_images/help.png></a>||
 status alternative ||Using 'Release along with a solution'&nbsp;<a href=inform:/doc411.html><img border=0 src=inform:/doc_images/help.png></a>||

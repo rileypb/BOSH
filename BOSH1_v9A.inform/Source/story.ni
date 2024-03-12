@@ -51,6 +51,8 @@ Include Margaret by Philip Riley.
 Include Enigma Lake by Philip Riley. 
 Include Snarky Remarks by Philip Riley.
 
+Include Overlook by Philip Riley.
+
 Include Gender Options by Nathanael Nerode.   
   	
 Include Followup Questions by Philip Riley.
@@ -1454,6 +1456,7 @@ Figure Maggie is the file "maggie_portrait.png".
 Figure Minerva is the file "minerva_portrait.png".
 Figure Christy is the file "christy_portrait.png".
 Figure Hutz is the file "hutz_portrait.png".
+Figure Lizard is the file "lizard_portrait.png".
  
 Ezra Gaunt has portrait Figure Gaunt.
 Petula Goldberg has portrait Figure Goldberg.
@@ -1471,6 +1474,7 @@ Minerva has portrait Figure Minerva.
 Maggie has portrait Figure Maggie. 
 Christy has portrait Figure Christy.
 Hutz has portrait Figure Hutz.
+The lizard leader has portrait Figure Lizard.
 
 Characters is a list of figure names that varies.
 

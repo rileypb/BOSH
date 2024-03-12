@@ -48,12 +48,12 @@ Book 1 - Town Hall
 the Enigma Lake town hall is a leavable room. It is in ELR. It is unleavable.
 "The building has been cleared of furniture and other items ahead of the imminent flooding. A permanent fixture, the information desk sits near the front entrance (to the south). Taped to it is what looks to be a work schedule. There is also a back entrance onto the park to the north."
 
-The information desk is scenery in the Enigma Lake town hall. Understand "info" as information desk. "A work schedule is taped to the desk."
+The information desk is scenery in the Enigma Lake town hall. Understand "info/help/front" as information desk. "A work schedule is taped to the desk."
 
 The backpack is a closed openable container. It is behind the information desk. The description is "Stitched into the fabric are the initials 'WGT'".
 Understand "back/pack/rucksack/ruck/sack/knapsack/knap" as the backpack.
 
-The red key is a key. It is inside the backpack. The description is "The letters ELG are printed on the key, labeling it the property of Enigma Lake Gymnasium.".
+The red key is a key. It is inside the backpack. Understand "ELG", "gym/gymnasium key" as the red key. The description is "The letters ELG are printed on the key, labeling it the property of Enigma Lake Gymnasium.".
 
 The work schedule is scenery in the Enigma Lake town hall. 
 "[fixed letter spacing] +--------------------------------+[line break]
@@ -95,15 +95,15 @@ To explore is a verb.
 Enigma Park is a leavable room. It is north of Enigma Lake town hall. It is unleavable. Enigma Park is in ELR. It is outdoors.
 "[first time]It's probably beautiful during the day, but tonight the deep shadows among the trees seem ominous. [We] [are] watchful and tense as [we] [explore] the park. 
 
-[only]The central focus of the park is a large obelisk inscribed with the names of the town's citizens lost in the Great War. The town hall is to the south, and other exits are to the north, west, and east."
+[only]The central focus of the park is a large obelisk inscribed with the names of the town's citizens lost in the Great War. First and maples line the paths. The town hall is to the south, and other exits are to the north, west, and east."
 
-Some trees are scenery in Enigma Park. Understand "tree" as trees. "A mixture of sturdy firs and maples, unaware of the pending cataclysm."
+Some trees are scenery in Enigma Park. Understand "tree/fir/firs/maple/maples" as trees. "A mixture of sturdy firs and maples, unaware of the pending cataclysm."
 
 Some shadows are scenery in Enigma Park. "Without a lantern, it's inadvisable to venture into the shadows."
 
 The obelisk is scenery in Enigma Park. Understand "monument/names/citizens" as the obelisk. "Its faux Egyptian design is incongruous adjacent to the adamantly traditional town hall. [We] [can] just make out a small crystal adornment rising from the top."
 
-The adornment is scenery in Enigma Park. "From what [we] can make out, it's a clear crystal held aloft by some kind of metal fitting."
+The adornment is scenery in Enigma Park. "From what [we] can make out, it's a clear crystal held aloft by some kind of metal fitting." Understand "crystal" as the adornment.
 
 Climbing up is an action applying to one thing. Understand "climb up/-- [something]" as climbing up.
 
@@ -128,7 +128,7 @@ the Main Street 200 block is south of Enigma Lake Town Hall. It is in ELR. It is
 
 The description is "The street runs east and west from here. South is the edifice of Rolle's Department Store. North is the town hall."
 
-Rolle's facade is a building facade in Main Street 200 block. It is privately-named. The printed name is "Rolle's Department Store". Understand "rolle's/rolle/department/store" as Rolle's facade. "Once, town department stores like this were a constant of American life before they were gobbled up by the big box stores."
+Rolle's facade is a building facade in Main Street 200 block. It is privately-named. The printed name is "Rolle's Department Store". Understand "rolle's/rolle/department/store/shop" as Rolle's facade. "Once, town department stores like this were a constant of American life before they were gobbled up by the big box stores."
 	Rolle's facade fronts Rolle's Department Store.
 	It is enterable from Main Street 200 Block.
 
@@ -141,6 +141,8 @@ The description is "Main Street runs east from here, while Solvay Road heads nor
 Henry's facade is a building facade. It is in Main at Solvay. It is privately-named. The printed name is "Henry's Hot Skillet".  Understand "Henry/Henry's/Hot/Skillet/diner/restaurant" as Henry's facade. "Henry's, the local diner, is closed, the neon skillet dark and motionless."
 	Henry's facade fronts Henry's Hot Skillet.
 	It is enterable from Main at Solvay.
+
+The neon skillet is scenery in Main at Solvay. "The neon skillet is dark and motionless."
 
 Reading-Room-Facade is a building facade. It is in Main at Solvay. It is privately-named. The printed name is "Reading Room". Understand "Reading/Room/bookstore/store" as Reading-room-facade. "The store window is dark. [We] can see rows and rows of books inside."
 	Reading-Room-Facade fronts the Reading Room.
@@ -156,7 +158,7 @@ Solvay Road 100 block is north of Main at Solvay. It is in ELR. It is outdoors. 
 
 The description is "Solvay heads north and south. To the west is the fire station, while to the east is the side of the town hall."
 
-The fire facade is a building facade. It is in Solvay Road 100 block. It is privately-named. The printed name is "fire station". Understand "fire/station/house" as fire facade. "The sign over the big door says 'Hook and Ladder Company #1'."
+The fire facade is a building facade. It is in Solvay Road 100 block. It is privately-named. The printed name is "fire station". Understand "fire/station/firehouse/house" as fire facade. "The sign over the big door says 'Hook and Ladder Company #1'."
 	Instead of entering the fire facade:
 		say "The garage door is locked up tight." instead;
 
@@ -166,7 +168,7 @@ Solvay Road leading out of town is north of Solvay Road 100 block and west of En
 
 The description is "Solvay Road bends here, leading northwest out of town and south back into town. East is the park, and to the west is Horton House. One can walk down to the lake shore to the north."
 
-Horton facade is a building facade. It is in Solvay Road leading out of town. It is privately-named. The printed name is "Horton House". Understand "Horton/House/Home" as Horton facade. "Horton House is an old colonial-period house. The sign by the door marks it as the oldest remaining house in the Enigma Lake area. Its builder, Jeremiah Horton, was purported to be a supernaturalist of some renown."
+Horton facade is a building facade. It is in Solvay Road leading out of town. It is privately-named. The printed name is "Horton House". Understand "Horton/Family/House/Home" as Horton facade. "Horton House is an old colonial-period house. The sign by the door marks it as the oldest remaining house in the Enigma Lake area. Its builder, Jeremiah Horton, was purported to be a supernaturalist of some renown."
 	Horton facade fronts Horton Family House Kitchen.
 	It is enterable from Solvay Road leading out of town.
 
@@ -190,7 +192,7 @@ The shack facade is a building facade. It is in Solvay-Road-by-the-lake. It is p
 
 Book 9 - Shack
 
-a dirty shack is a leavable room. It has egress east. It is west of Solvay-Road-by-the-lake. It is always-indefinite. It is in ELR. "Someone lives here, though not at all luxuriously. Plates are stacked up by the sink, and there's a pile of used coffee cups in the corner. The whole place stinks of cat."
+a dirty shack is a leavable room. It has egress east. It is west of Solvay-Road-by-the-lake. It is always-indefinite. It is in ELR. "Someone lives here, though not at all luxuriously. Plates are stacked up by the sink, and there's a pile of used paper coffee cups in the corner. The whole place stinks of cat."
 
 Some plates are scenery in the dirty shack. "Dirty and precariously stacked."
 
@@ -202,13 +204,13 @@ Rule for writing a paragraph about the mangy cat:
 	
 Petting is an action applying to one thing. Understand "pet [something]" as petting. Understand "pat [something]" as petting.
 
-Check petting something:
+Check petting something that is not the mangy cat:
 	say "That's just silly." instead;
 	
 Check petting a person:
 	say "[The noun] probably wouldn't appreciate that." instead;
 
-Check petting the mangy cat:
+Report petting the mangy cat:
 	say "The cat purrs and leans into [our] hand." instead;
 
 Hutz is a man in dirty shack. Hutz is privately-named. "[A Hutz] is reclining on a narrow bed." The description is "[A Hutz] is more or less a skeleton in overalls." Hutz is adaptively-named and anonymous and not proper-named. 
@@ -222,7 +224,7 @@ Rule for writing a paragraph about Hutz:
 
 The narrow bed is scenery in the dirty shack. "Clean enough, but awfully narrow, it holds [if Hutz is known]the bony figure of Hutz[otherwise][Hutz][end if], the town groundskeeper."
 
-The sledgehammer is in the dirty shack. Understand "hammer" as sledgehammer.
+The sledgehammer is in the dirty shack. Understand "hammer" as sledgehammer. The description is "A heavy sledgehammer, the head of which is covered in rust."
 
 Who-is-Hutz is a questioning quip.
 	The printed name is "who he is".
@@ -300,7 +302,7 @@ Book 10 - Main at Lake
 
 Main at Lake is east of Main Street 200 Block. It is in ELR. It is outdoors. The printed name is "Main and Lake". The preposition is "at the intersection of". "Main goes west, while Lake runs north. The corner of the town hall is to the northwest, although it cannot be entered there. Southeast is the entrance to WGXC 'Galaxy' Radio. There is a broadcast tower on top of the building." 
 
-The radio station facade is a building facade. It is in Main at Lake. It is privately-named. The printed name is "WGXC 'Galaxy' Radio". Understand "WGXC/Galaxy/Radio/station" as radio station facade. "The sign over the door says 'WGXC 'Galaxy' Radio'."
+The radio station facade is a building facade. It is in Main at Lake. It is privately-named. The printed name is "WGXC 'Galaxy' Radio". Understand "WGXC/Galaxy/Radio/station" as radio station facade. "The sign over the door says 'WGXC [']Galaxy['] Radio'."
 	The radio station facade fronts Radio Station WGXC.
 	It is enterable from Main at Lake.
 
@@ -376,7 +378,7 @@ Instead of examining the Book of Utilitarianism:
 		say "The text is the 'Book of Utilitarianism'. [We] [open] to a page at random and [read] the text:[paragraph break][one of]However, the Lord said to the lizard people, 'I am the Lord of the humans, and I -- oh, and the aliens -- and I will smite you with great vengeance and furious anger and the like.'[or]By the by, Gorm came upon the town of Armagast, and he saw that it was good, and he said, 'I shall build a church here.' And the Lord said, 'No, don't do that, it's a bad idea.' And Gorm said, 'But Lord, I have already started.' And the Lord said, 'Well, okay, but don't say I didn't warn you.'[or]But Gorm's wife was treacherous, and she lay with lizard people, and she bore a son, and the Lord said, 'I'm not going to smite you, but I'm not going to be happy about it.'[or]When Gorm learned of his wife's doings, he rent his garments and wept, and the Lord said, 'Keep it together, man.'[or]And the land was filled with the iniquities of the lizard people, and the Lord said, 'I'm not going to clean that up.'[or]The host of the lizard people sacked the now rather prosperous town of Armagast, and the Lord said, 'I told you so.'[or]And the Lord said, ' 'Tis a far, far better thing that I do, than I have ever done; 'tis a far, far better rest that I go to than I have ever known.' And the lizard people said, 'That's from A Tale of Two Cities.'[or]And the Lord was attending his weekly reading circle, when he had an idea. 'I shall make a world,' he said, 'and I shall call it Earth.' And the lizard people said, 'That's a terrible name.'[or]And lo, the lizard people rebelled against the Lord, and the Lord said, 'I'm not going to put up with that.'[or]And in the town of Gabblehouse was born an infant to a woman named Gorma, and the Lord said, 'That's a terrible name.'[or]And the Lord said, 'I shall rain down upon thee with great vengeance and furious anger, and the lizard people said, 'We've heard that before.'[then at random]"
 
 The electrical outlet is scenery in First Utilitarian Church of Enigma Lake. "A standard electrical outlet, set into the wall[if the extension cord is plugged into the electrical outlet and the player encloses the extension cord]. The extension cord is plugged into it[otherwise if the extension cord is plugged into the electrical outlet]. An extension cord is plugged into it[end if]." 
-
+Understand "wall/power/electric/point/mains/GPO" as the electrical outlet.
 It is plug-into-able.
 
 Book 17 - Extension Cord
@@ -474,7 +476,7 @@ After printing the locale description of the First Utilitarian Church of Enigma 
 The plug-end-of-the-extension-cord is a thing. It is undescribed. It is privately-named. The printed name is "extension cord". Understand "extension/cord/plug" as the plug-end-of-the-extension-cord. The description is "A long, heavy-duty extension cord[if the extension cord is plugged in and the location is First Utilitarian Church of Enigma Lake], plugged into the wall outlet[end if]." 
 It is pluggable.
 
-The extension cord is in the First Utilitarian Church of Enigma Lake.
+The extension cord is in the bookstore basement.
 The extension cord is pluggable and plug-into-able.
 
 After plugging the extension cord into the electrical outlet:
@@ -692,7 +694,7 @@ The workshed-facade is a building facade. It is in Lake Shore North of the Park.
 
 Book 21 - Workshed
 
-the workshed is a leavable room. It has egress northwest. It is in ELR. "It is a small, weathered building, with a single door and no windows, with a creaky wooden floor. The interior is dimly lit by a single light bulb hanging from the ceiling. [equipment cabinet state] cabinet is in the corner. [rusty metal door state], rusty metal door leads out of the shed. [if the trapdoor is not obscured]A trapdoor is in the floor, [trapdoor state].[end if]"
+the workshed is a leavable room. It has egress northwest. It is in ELR. "It is a small, weathered building, with a single door and no windows, and a creaky wooden floor. The interior is dimly lit by a single light bulb hanging from the ceiling. [equipment cabinet state] cabinet is in the corner. [rusty metal door state], rusty metal door leads out of the shed. [if the trapdoor is not obscured]A trapdoor is in the floor, [trapdoor state].[end if]"
 
 To say equipment cabinet state:
 	if the equipment cabinet is open:
@@ -810,17 +812,17 @@ Instead of consulting the book of weird concoctions about something:
 
 Book 25.5 - Horton Family House Second Floor
 
-The Second Floor of the Horton House is above the Horton Family House Kitchen. It is in ELR. It is indoors. "The second floor is a small, cramped space, with a single window looking out over the front yard. A small bed sits in one corner, while [if the rickety wardrobe is open]an open wardrobe fills a wall[otherwise]a closed wardrobe fills a wall[end if]. A staircase leads down."
+The Second Floor of the Horton House is above the Horton Family House Kitchen. It is in ELR. It is indoors. "The second floor is a small, cramped space, with a single window looking out over the front yard. A small bed sits in one corner, while [if the rickety wardrobe is open]an open wardrobe fills a wall[otherwise]a closed wardrobe stands against a wall[end if]. A staircase leads down."
 
 The small bed is scenery in the Second Floor of the Horton House. "A small bed sits in one corner. It's a rope bed, with a thin straw mattress."
 
-The rickety wardrobe is a closed openable scenery container in the Second Floor of the Horton House. "A rickety wardrobe fills a wall. It is [if open]open[otherwise]closed[end if]."
+The rickety wardrobe is a closed openable scenery container in the Second Floor of the Horton House. "A rickety wardrobe stands against a wall. It is [if open]open[otherwise]closed[end if]."
 
 
 
 Book 26 - Astral Tunnel
 
-The Horton astral tunnel is forthsouth of Horton Family House Parlor. It is in ELR.
+The Horton astral tunnel is forthsouth of Horton Family House Parlor. It is privately-named. The printed name is "astral tunnel". It is in hyperspace. "It is featureless white, or what passes for white here. It bends 'backnorth' to 'backeast'.".
 
 Fire Station 1 is backeast of the Horton astral tunnel. It is in ELR.
 
@@ -842,7 +844,7 @@ Fire Station 1 is in ELR. The printed name is "Hook and Ladder Company #1". "The
 
 The ladder is in the Fire Station 1. "A ladder rests against the wall."
 
-The spotlight is in the Fire Station 1. The description is "A large, powerful spotlight, designed to be mounted on a fire truck. It has a short cord ending in a standard American 120V AC plug."
+The spotlight is in the Fire Station 1. The description is "A large, powerful spotlight, designed to be mounted on a fire truck. It has a short cord ending in a standard North American 120V AC plug."
 
 Book 29 - Reading Room
 
@@ -862,7 +864,7 @@ Astral Secrets is on the sales counter. It is proper-named. The printed name is 
 
 "A book lies on the sales counter."
 
-The description is "A book with a plain cover, titled 'Astral Secrets'. The author is listed as Hezekiah Horton.[paragraph break]Flipping through the book, [we] [find] a dog-eared page. The page shows a diagram of a large, metallic, cylindrical object, which is labeled 'astral resonator'. The text describes the resonator as a device for opening a portal through the astral plane. It goes on to describe the components of the device: a source of resonance, a source of light, and an 'astral lens', which it declines to describe further. The text also mentions that the resonator is powered by a source of electricity." 
+The description is "A book with a plain cover, titled 'Astral Secrets'. The author is listed as Jeremiah Horton.[paragraph break]Flipping through the book, [we] [find] a dog-eared page. The page shows a diagram of a large, metallic, cylindrical object, which is labeled 'astral resonator'. The text describes the resonator as a device for opening a portal through the astral plane. It goes on to describe the components of the device: a source of resonance, a source of light, and an 'astral lens', which it declines to describe further. The text also mentions that the resonator is powered by a source of electricity." 
 
 
 Book 30 - Reading Room Basement
@@ -1046,7 +1048,59 @@ Instead of examining the mystic compass:
 			lb;
 			say "[italic type][snarky remark of the noun][roman type][paragraph break]";
 			now the noun is snarked;
+
+Volume 4.5 - The Lizard People
+
+The lizard leader is a man. The description is "A tall, imposing figure, with a long, scaly tail and a head that looks like a lizard's. It is dressed in a smart grey suit." The lizard leader is in the First Utilitarian Church of Enigma Lake.
+
+Every turn when the lizard leader is not in the location:
+	if the lizard leader is in a room (called current space):
+		let seen at first be false;
+		if the location overlooks the current space:
+			say "[We] [see] the faint trace of a shadowy figure off in the distance, [the preposition of the current space] [current space].";
+			now seen at first is true;
+		let next space be a random room which is adjacent to current space;
+		if next space is not the location:
+			let dir be the best route from the current space to the next space;
+			let seen at last be false;
+			if dir is a direction:
+				try the lizard leader going dir;
+				now seen at last is whether or not the location overlooks the next space;
+			let old structure be the structure name of the current space;
+			let new structure be the structure name of the next space;
+			if seen at last is true and seen at first is true:
+				if old structure is not new structure:
+					say "The shadowy figure moves [dir], from [current space] to [next space].";
+				otherwise:
+					say "The shadowy figure moves [dir], [the preposition of the next space] [next space].";
+			otherwise if seen at last is true:
+				if old structure is not new structure:
+					say "A shadowy figure comes into view [from-dir the opposite of dir], emerging from [the old structure], [the preposition of the next space] [next space].";
+				otherwise:
+				  	say "A shadowy figure comes into view [from-dir the opposite of dir], [the preposition of the next space] [next space].";
+			otherwise if seen at first is true:
+				if old structure is not new structure:
+					say "The shadowy figure moves out of view [to-dir dir], into [the new structure].";
+				otherwise:
+					say "The shadowy figure moves out of view [to-dir the dir].";
 		
+To say from-dir (dir - a direction):
+	if dir is up:
+		say "from above";
+	otherwise if dir is down:
+		say "from below";
+	otherwise:
+		say "from the [dir]";
+
+To say to-dir (dir - a direction):
+	if dir is up:
+		say "upward";
+	otherwise if dir is down:
+		say "downward";
+	otherwise:
+		say "to the [dir]";
+
+
 Volume 5 - Polish
 
 
