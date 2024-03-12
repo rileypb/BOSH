@@ -20,6 +20,7 @@ The snarky remark of The Strip Mall Parking Lot South is "This is nice. At least
 
 The Office_ is an unenterable room in Parking Lot South. The printed name is "office". "[We] [gaze] stoically at the sad little storefront that is the new BOSH office. The sign from the previous tenant is still up: 'Angel[']s Department Store'. Through the front window can be seen Margaret, in her usual manic work mode.".
 The snarky remark of the Office_ is "I'm sure the Bureau will be back on its feet in no time."
+The Office_ is an edifice.
 
 Instead of entering the office_:
 	try going west;
@@ -42,12 +43,14 @@ Check driving something that is not a car:
 
 Car 1 is an automobile in Strip Mall Parking Lot South. It is privately-named. The printed name is "[our] Hyundai". Understand "car", "hyundai", "automobile", "auto", "my car", "faraji's car", "larch's car" as car 1. The initial appearance of car 1 is "[Our] Hyundai is parked nearby." It is fixed in place. The description is "An old bright red Hyundai Accent, it's been [our] personal means of transportation for years. And since the Bureau lost its fleet, it's [our] work car too.".
 The snarky remark of Car 1 is "They asked me if I wanted the flashy car, but I said no -- it just didn't fit my downscale image."
+Car 1 is an edifice.
 
 Instead of entering or opening or driving car 1:
 	say "[Agent]'s job is here for now.";
 
 Car 2 is an automobile. It is privately-named. The printed name is "[Chief Huffton Klimp]'s Porsche". Understand "car/Klimp's/Porsche/automobile/auto" as car 2. The initial appearance of car 2 is "Klimp's Porsche takes up two spots." It is fixed in place. The description is "Klimp drives a sleek 2017 Porsche 911 Turbo Cabriolet."
 The snarky remark of Car 2 is "I guess the Bureau's not as broke as they say."
+Car 2 is an edifice.
 
 Instead of entering or opening or driving car 2:
 	say "That isn't [Agent]'s car.";
@@ -66,6 +69,8 @@ The snarky remark of the Laundromat-facade is "Looks like the renovations are go
 Instead of entering the laundromat-facade:
 	try going northwest;
 	
+The laundromat-facade is an edifice.
+	
 Does the player mean entering the laundromat-facade:
 	it is very likely;
 	
@@ -74,7 +79,7 @@ It is obstructed.
 
 The laundromat window is a part of the Laundromat-facade. It is privately-named. The printed name is "laundromat window". Understand "laundromat/-- window/windows" as the laundromat window. The description is "They haven't been washed for a while. Through them you can see the sad state of the crumbling laundromat."
 
-The washing-machines are a part of the Laundromat-facade. They are privately-named. The printed name is "washing machines". Understand "washing/-- machines" as the washing-machines. The description is "From here, the machines look old and worn."
+The washing-machines are a part of the Laundromat-facade. They are privately-named. The printed name is "washing machines". Understand "washing/-- machine/machines", "washer/washers" as the washing-machines. The description is "From here, the machines look old and worn."
 They are obstructed.
 	
 The laundromat door is a closed and locked scenery shop-door. It is privately-named. The printed name is "laundromat door". Understand "laundromat/-- door" as the laundromat door. It is northwest of the parking lot south and southeast of the laundromat-store. The front description is "It's a typical glass door. Taped to it is a sign that says 'Closed for renovations'." The frontside is the strip mall parking lot south. The back description is "It's a typical glass door." The laundromat door is front-locked and back-locked.
@@ -93,6 +98,7 @@ Instead of entering, searching, or touching the swamp-facade:
 
 Pawn-Shop-facade is a privately-named unenterable room in Parking Lot South. It is proper-named. The printed name is "Dave's pawn shop". Understand "dave's", "dave", "pawn", "shop" as the pawn-shop-facade. "[We] [observe] the pawn shop with obvious distaste. The flashing neon sign in the window advertises 'Cash for gold!'".
 The snarky remark of the Pawn-Shop-facade is "I wonder if they take Bureau badges."
+The pawn-shop-facade is an edifice.
 
 The flashing neon sign is part of the Pawn-Shop-facade. [Understand "pawn/shop/cash/gold" as flashing neon sign.] The description is "Its flash rate is just a bit over the threshold of irritating."
 The snarky remark of the flashing neon sign is "At least they have style."

@@ -433,7 +433,7 @@ Minerva is a woman in Minerva's office. The initial appearance is "Minerva is si
 
 A mahogany desk is in Minerva's office. It is scenery. The description is "The desk is cluttered with papers, a few books, and a coffee maker".
 
-A coffee maker is on the mahogany desk. It is scenery. The description is "A drip coffee maker sits on the desk."
+A coffee maker is on the mahogany desk. It is scenery. The description is "A drip coffee maker sits on the desk." Minerva owns the coffee maker.
 
 The cup of coffee is a thing. The description is "[Coffee description]. It is in a paper cup.". The cup of coffee has a number called the hotness.
 
@@ -549,7 +549,7 @@ A Rubik's cube is on Doris's desk. The description is "It's a Rubik's cube." It 
 
 A CMY cube is on Doris's desk. The description is "An acrylic cube that filters light on different wavelengths through its various sides." It is owned by Doris.
 
-Doris's papers are on Doris's desk. The description is "The papers are covered with scribbles and diagrams. But really, who can make sense of them?" It is owned by Doris.
+Doris's papers are on Doris's desk. They are plural-named. The description is "The papers are covered with scribbles and diagrams. But really, who can make sense of them?" It is owned by Doris.
 
 Book 5 - Christy's Office
 
