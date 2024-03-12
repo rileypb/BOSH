@@ -404,20 +404,20 @@ to borrow the skull is a questioning quip.
 	It mentions the juvenile sasquatch skull.
 	The comment is "[We] [ask], 'Chief, mind if I borrow the skull?'". 
 	The reply is "He looks pained for a moment. 'Uh, I'd rather you didn't. It's fragile.'".
-	It quip-supplies Chief Klimp.
+	It quip-supplies Chief Huffton Klimp.
 	
 After examining the juvenile sasquatch skull:
-	queue Chief Klimp with to borrow the skull;
+	queue Chief Huffton Klimp with to borrow the skull;
 
 to borrow the lenses is a questioning quip. 
 	Understand "lens/glass/glasses" as to borrow the lenses.
 	It mentions the pair of astral lenses.
 	The comment is "[We] [ask], 'Would it be okay if I borrowed the astral lenses for a while?'".
 	The reply is "'Sure! Why don't you scout the locality for astral phenomena?'".
-	It quip-supplies Chief Klimp.
+	It quip-supplies Chief Huffton Klimp.
 	
 After examining the pair of astral lenses:  
-	queue Chief Klimp with to borrow the lenses;
+	queue Chief Huffton Klimp with to borrow the lenses;
 	
 After discussing to borrow the lenses:
 	now the player owns the pair of astral lenses;
@@ -451,7 +451,7 @@ Rule for writing a paragraph about Margaret Chao when the location is front offi
 		
 [The how-are-you-reply of Margaret Chao is "I'm great! Thanks!".
 The how-are-you-reply of Moira Zin is "Very well, thanks.".
-The how-are-you-reply of Chief Klimp is "Good good good. Just fine.".
+The how-are-you-reply of Chief Huffton Klimp is "Good good good. Just fine.".
 The how-are-you-reply of the clerk is "Good, I guess.".]
 
 Book 13 - Some Speech Phrases
@@ -777,7 +777,7 @@ Travels in Time is a thing in BOSH Chief's Office. It is scenery. Understand "My
 
 The Chief's shelves are a supporter in BOSH Chief's Office. They are scenery. "These shelves sport an array of oddities and memorabilia."
   
-The juvenile sasquatch skull is a thing on the chief's shelves. Chief Klimp owns the skull. The description of the skull is "It looks a bit Neanderthal, actually." 
+The juvenile sasquatch skull is a thing on the chief's shelves. Chief Huffton Klimp owns the skull. The description of the skull is "It looks a bit Neanderthal, actually." 
  
 The antique wooden file cabinet is a container in the BOSH Chief's office. It is closed and locked. It is scenery. "Looks like it was taken out of an old library somewhere."
 
@@ -785,7 +785,7 @@ The prints are scenery in the BOSH Chief's office. The description is "There are
  
 The oddities are on the chief's shelves. They are scenery. The description is "This and that piece of junk that Klimp thinks is funny or interesting.". Understand "memorabilia", "junk", "stuff" as the oddities.
 
-A pair of astral lenses is on the chief's shelves. It is ambiguously plural. Chief Klimp owns the pair of astral lenses. The description of the pair of astral lenses is "To all appearances an ordinary pair of glasses, the astral lenses allegedly reveal the existence of extra-dimensional pathways." The pair of astral lenses is wearable. 
+A pair of astral lenses is on the chief's shelves. It is ambiguously plural. Chief Huffton Klimp owns the pair of astral lenses. The description of the pair of astral lenses is "To all appearances an ordinary pair of glasses, the astral lenses allegedly reveal the existence of extra-dimensional pathways." The pair of astral lenses is wearable. 
 Understand "glasses/lens/glass" as the pair of astral lenses.
 
 Section 6 - Moira's office

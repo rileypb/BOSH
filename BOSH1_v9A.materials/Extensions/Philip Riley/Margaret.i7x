@@ -99,12 +99,12 @@ An availability rule for about the locked desk:
 		always available;
 
 klimp-whereabouts is a questioning quip.
-	It mentions Chief Klimp.
+	It mentions Chief Huffton Klimp.
 	It is privately-named.
 	The printed name is "where is Klimp".
-	Understand "where is Klimp", "is Klimp here", "is Klimp in the office", "has Klimp come in yet" as klimp-whereabouts.
+	Understand "where is Klimp", "is Klimp here", "is Klimp in the office", "has Klimp come in yet", "where klimp is" as klimp-whereabouts.
 	The comment is "[We] [ask], 'Margaret, have you seen Klimp this morning?'".
-	The reply is "[if Chief Klimp is not in BOSH Chief's Office]She shakes her head. 'He hasn't been in yet.'[otherwise]She points towards the hall. 'He's in his office.'[end if]".
+	The reply is "[if Chief Huffton Klimp is not in BOSH Chief's Office]She shakes her head. 'He hasn't been in yet.'[otherwise]She points towards the hall. 'He's in his office.'[end if]".
 	It quip-supplies Margaret.
 	It is repeatable.
 	It is always-available.
@@ -114,7 +114,7 @@ moira-whereabouts is a questioning quip.
 	It mentions Moira Zin.
 	It is privately-named. 
 	The printed name is "where is Moira".
-	Understand "where is Moira", "is Moira here", "is Moira in the office", "has moira come in yet" as moira-whereabouts.
+	Understand "where is Moira", "is Moira here", "is Moira in the office", "has moira come in yet", "where moira is" as moira-whereabouts.
 	The comment is "[We] [ask], 'Has Moira come in yet?'".
 	The reply is "[if Moira Zin is not in Moira's Office]Margaret barely looks up from her work. 'Nope.'[otherwise]Margaret nods. 'I think she's working in her office.'[end if]".
 	It quip-supplies Margaret.
@@ -138,8 +138,8 @@ laundromat	Margaret	--	 "Not a clue."
 Biff's computer	Margaret	--	"[if Biff's computer is behind the front desk]It's behind the front desk. It's toast.[otherwise]She looks tired. 'I'll get to it when I can.'[end if]"
 
 
-Instead of quizzing Margaret Chao about Chief Klimp:
-	if Chief Klimp is not in BOSH Chief's Office:
+Instead of quizzing Margaret Chao about Chief Huffton Klimp:
+	if Chief Huffton Klimp is not in BOSH Chief's Office:
 		say "[We] [say], 'Margaret, Have you seen Klimp this morning?'[paragraph break]";
 		say "[regarding Margaret Chao][They] shakes her head. 'He hasn't been in yet.'[line break]";
 	otherwise:

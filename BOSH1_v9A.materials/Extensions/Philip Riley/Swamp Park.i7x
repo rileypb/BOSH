@@ -46,7 +46,7 @@ The snarky remark of Car 1 is "They asked me if I wanted the flashy car, but I s
 Instead of entering or opening or driving car 1:
 	say "[Agent]'s job is here for now.";
 
-Car 2 is an automobile. It is privately-named. The printed name is "[Chief Klimp]'s Porsche". Understand "car/Klimp's/Porsche/automobile/auto" as car 2. The initial appearance of car 2 is "Klimp's Porsche takes up two spots." It is fixed in place. The description is "Klimp drives a sleek 2017 Porsche 911 Turbo Cabriolet."
+Car 2 is an automobile. It is privately-named. The printed name is "[Chief Huffton Klimp]'s Porsche". Understand "car/Klimp's/Porsche/automobile/auto" as car 2. The initial appearance of car 2 is "Klimp's Porsche takes up two spots." It is fixed in place. The description is "Klimp drives a sleek 2017 Porsche 911 Turbo Cabriolet."
 The snarky remark of Car 2 is "I guess the Bureau's not as broke as they say."
 
 Instead of entering or opening or driving car 2:
@@ -232,7 +232,7 @@ about the laundromat owner is a questioning quip.
 	
 After discussing about the laundromat owner:
 	now player knows break-in-to-laundromat;
-	move Chief Klimp to Chief's office;
+	move Chief Huffton Klimp to Chief's office;
 	now klimp's door is unlocked;
 	now klimp's door is open;
 	move car 2 to Strip Mall Parking Lot South;
