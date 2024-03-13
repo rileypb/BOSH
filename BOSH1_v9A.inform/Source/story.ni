@@ -697,11 +697,46 @@ biff's desk's drawer is locked. Understand "desk drawer" as biff's desk's drawer
 The blue flipphone is a phone. It is in biff's desk's drawer.
 The snarky remark is "You little blue bastard. I hate you."
 
+After answering the blue flipphone:
+	say "[We] [answer] the phone. 'Hello?'
+	
+	'Hello, [agent],' says a mysterious voice. 'Took you long enough to answer. Now listen carefully. The fate of the world is at stake. Savra is going to move on the Dragon.';
+	
+	'Sure, buddy, but what does that mean?' Faraji asks.
+	
+	'Oh, right. You're not in the loop. The Dragon is the only hope for peace with the lizard men. Savra has already tried to kill him, but only managed to kill his parents. Now Savra's searching for the Dragon's secret hiding place. You have to stop him.'
+	
+	The voice continues, 'By the way, how's Klimp? How's the new office?'
+	
+	Faraji pauses. 'Who is this?' [we] [ask].
+	
+	'You can call me, I don't know, 'Blue Phone Guy' or something. It doesn't really matter. Now get to work.' The line goes dead.";
+	end the story saying "Congratulations on answering the phone!";
+
+After printing the player's obituary:
+	say "[italic type][bracket]Seriously, is that it?[close bracket][roman type][paragraph break]";
+	say "[bold type]Larch Faraji will return in 'BOSH II: The Dragon'.[roman type]";
+
 A key is a kind of thing.
 
 The little grey key is a key. It is in biff's desk's drawer. The little grey key is familiar.
 Biff's desk drawer has matching key the little grey key. The description of Biff's desk's drawer is "The desk is a cheap DIY piece held together with hex screws."
 The snarky remark of the little grey key is "And now you'll never get used, little key."
+
+The hex screws are part of biff's desk drawer. The description is "Several hex screws hold the desk drawer together." The snarky remark is "Hateful little things."
+
+Taking apart the desk is an action applying to one thing. Understand "take apart [Biff's desk]", "take apart [Biff's desk's drawer]", "unscrew [Biff's desk]", "unscrew [Biff's desk's drawer]", "take [Biff's desk] apart", "take [Biff's desk's drawer] apart", "unscrew [hex screws]", "disassemble [Biff's desk]", "disassemble [Biff's desk's drawer]" as taking apart the desk when the location is Biff's office.
+
+Check taking apart the desk when the player does not enclose the hex wrench:
+	say "The screws are in there pretty tight. [We] [don't] have the right tools to get them out." instead;
+
+Carry out taking apart the desk:
+	now biff's desk's drawer is unlocked;
+	now the player carries the little grey key;
+	now the player carries the blue flipphone;
+
+Report taking apart the desk:
+	say "[We] [unscrew] the hex screws and [remove] the drawer. Inside, [we] find a little grey key and a blue flipphone. [We] [put] the drawer back together and [pocket] the key and the phone, being careful to leave the drawer unlocked.";
 
 [ Biff's landline is scenery on Biff's desk. It is privately-named. The printed name is "[our] office phone". The description is "It's not yet hooked up." 
 Understand "office/-- phone", "landline" as Biff's landline. ]
@@ -992,7 +1027,7 @@ The heating vent is a scenery container. It is openable, closed, lockable, trans
 The snarky remark of the heating vent is "[if player knows hex-screws and player knows key-is-lost]It gets better and better[otherwise]I hope we don't need that hex wrench[end if]."
 
 Securing relates various things to one thing. The verb to secure means the securing relation.
-Some screws secure the heating vent. The description is "Four plain flat head screws." 
+Some flat head screws secure the heating vent. The description is "Four plain flat head screws." 
 
 After looking behind the BOSH front desk:
 	move the heating vent to front office;
@@ -1515,10 +1550,11 @@ The ringing-phone	Moira Zin	"'Moira, I'm so sorry about the phone ringing. It's 
 
 
 
+
 Book 19 - Verbs
  
 To admire is a verb. To shake is a verb. To smile is a verb. To sigh is a verb. To peer is a verb. To turn is a verb. To observe is a verb. To gaze is a verb. To trudge is a verb. To walk is a verb. To step is a verb. To enter is a verb. To exit is a verb. To pause is a verb. To survey is a verb. To hand is a verb. To try is a verb. To see is a verb. To squeal is a verb. To tap is a verb. To curse is a verb. To rap is a verb. To explain is a verb. To gasp is a verb. To return is a verb. To ask is a verb. To think is a verb. To scrunch is a verb. To grimace is a verb. To mutter is a verb. To leave is a verb. To stand is a verb. To mount is a verb. To stammer is a verb. To polish is a verb. To interrupt is a verb. To raise is a verb. To chuckle is a verb. To lean is a verb. To consider is a verb. To nod is a verb. To extricate is a verb. To toss is a verb. To pick is a verb. To flatten is a verb. To remember is a verb. To trip is a verb. To scratch is a verb. To navigate is a verb. To stare is a verb. To emerge is a verb. To breathe is a verb. To attempt is a verb. To strain is a verb. To spin is a verb. To pick is a verb. To tuck is a verb. To consider is a verb. To move is a verb. To save is a verb.
-To dig is a verb. To notice is a verb. To come is a verb.
+To dig is a verb. To notice is a verb. To come is a verb. To unscrew is a verb. To pocket is a verb.
 
 Book 20 - Images 
 
@@ -1707,12 +1743,16 @@ test win with "w/w/s/open desk/n/e/ask about key/ask about computer/look behind 
 
 test no-drive with "w/w/s/open desk/n/e/ask about key/ask about computer/look behind desk/w/s/x desk/open white door/n/e/ask about wrench/ask about backdoor/take boxes/w/s/z/w/z/z/open white door/knock on white door/e/z/n/e/x vent/ask for a screwdriver/n/e/n/e/ask for screwdriver/w/s/sw/ask for a screwdriver/ask about the owner/ne/w/w/w/x lenses/ask to borrow pair/wear them/e/e/take boxes/w/s/w/back/n/f/d/n/s/turn off light/wear glasses/f/fn/push truck bs/push truck back/move crates/move crates with truck/x washing machine/open it/enter it/f/f/f/f/f/fn/fw/fn/fn/fw/w/fn/w/take compass/x compass/s/s/s/s/s/s/s/e/e/e/e/e/e/e/e/b/b/b/b/b/b/b/b/b/d/w/w".
 
-test part1 with "w/w/s/open desk/n/e/ask about key/ask about computer/look behind desk/w/s/x desk/open white door/n/e/ask about wrench/ask about backdoor/take boxes/w/s/z/w/z/z/open white door/knock on white door/e/z/n/e/x vent/ask for a screwdriver/e/n/e/ask for screwdriver/w/s/sw/ask for a screwdriver/ask about the owner/ne/w/w/w/x lenses/ask to borrow pair/wear them/e/e/take boxes/w/s/w/wear lenses/back/n/f/d/n/s/turn off light/wear glasses/f/fn/push truck bs/push truck back/move crates/move crates with truck/x washing machine/open it/enter it".
+test part1 with "w/w/s/open desk/n/e/ask about key/ask about computer/look behind desk/x computer/w/s/x desk/open white door/n/e/ask about wrench/ask about backdoor/take boxes/w/s/z/w/z/z/open white door/knock on white door/e/z/n/e/x vent/ask for a screwdriver/e/n/e/ask for screwdriver/w/s/sw/ask for a screwdriver/ask about the owner/ne/w/w/w/x lenses/ask to borrow pair/wear them/e/e/take boxes/w/s/w/wear lenses/back/n/f/d/n/s/turn off light/wear glasses/f/fn/push truck bs/push truck back/move crates/move crates with truck/x washing machine/open it/enter it".
+
+test part2 with "f/f/f/f/f/fn/fw/fn/fn/fw/w/fn/w/take compass/x 
+it/s/s/s/s/s/s/s/e/e/e/e/e/e/e/e/b/b/b/b/b/b/b/b/b/d".
 	
 lensing is an action applying to nothing. Understand "lens" as lensing.
 
 Carry out lensing: 
 	now the player wears the pair of astral lenses;
+	try looking.
 
 jumping to the past is an action applying to nothing. Understand "past" as jumping to the past.
 
