@@ -15,11 +15,11 @@ When play begins:
 	otherwise:
 		now the correct locker number is 1;
 
-Volume 1.5 - Special Variables
+To decide if mounted-rusty-resonator:
+	decide no;
 
-mounted-rusty-resonator is a truth state that varies. mounted-rusty-resonator is false.
-mounted-shiny-resonator is a truth state that varies. mounted-shiny-resonator is false.
-mounted-makeshift-resonator is a truth state that varies. mounted-makeshift-resonator is false.
+To decide if mounted-shiny-resonator:
+	decide no;
 
 Volume 2 - Special Items
 
@@ -31,13 +31,12 @@ An astral resonator type is a kind of thing.
 
 The makeshift astral resonator is an astral resonator type. It is pluggable.
 
-Rule for printing inventory details of the makeshift astral resonator:
-	let L be a list of texts;
-	if something (called the socket) accepts the makeshift astral resonator:
-		add "plugged into [the socket]" to L;
+Description notes for the makeshift astral resonator:
 	if the makeshift astral resonator is powered:
-		add "providing light" to L;
-	say " ([L])".
+		add "providing light" to descriptive notes;
+
+		
+
 
 Volume 3 - Geography
 
@@ -440,6 +439,9 @@ Understand "wall/power/electric/point/mains/GPO" as the electrical outlet.
 It is plug-into-able.
 The snarky remark of the electrical outlet is "This mission is making me wish I had a fork."
 
+Does the player mean plugging the extension cord into the electrical outlet: 
+	it is very likely.
+
 Book 17 - Extension Cord
 
 The extension cord is a thing. The description is "A long, heavy-duty extension cord[if the extension cord is plugged into the electrical outlet and the location is First Utilitarian Church of Enigma Lake], plugged into the wall outlet[otherwise if the extension cord is plugged into the electrical outlet and the location is the steeple]. It trails down through the trapdoor[otherwise if the extension cord is plugged into the electrical outlet and the location is the vestry]. It trails through the door into the church[end if]." 
@@ -450,10 +452,20 @@ It is pluggable.
 Chapter - Power
 
 Definition: a thing is powered:
-	if it is the electrical outlet:
+	if it is the electrical outlet and the circuit breaker is switched on:
 		yes;
 	otherwise if something (called the socket) accepts it:
+		if it is the socket:
+			no;
 		decide on whether or not the socket is powered;
+
+After switching on the circuit breaker when the makeshift astral resonator is in the vestry or the player encloses the makeshift astral resonator:
+	if the makeshift astral resonator is powered:
+		say "The [makeshift astral resonator] flickers to life, emitting a bright beam of light.";
+
+After switching off the circuit breaker when the makeshift astral resonator is in the vestry or the player encloses the makeshift astral resonator:
+	if the makeshift astral resonator was powered:
+		say "The [makeshift astral resonator] flickers and goes dark.";
 
 Chapter 1 - Special movement rules
 
@@ -521,7 +533,7 @@ After printing the locale description of the steeple:
 	if the extension cord is plugged in and the player encloses the extension cord:
 		say "The extension cord runs from [our] hand, through the trapdoor, and into the church.";
 
-After printing the locale description of the steeple when mounted-makeshift-resonator is true and the makeshift astral resonator is powered:
+After printing the locale description of the steeple when mounted-makeshift-resonator and the makeshift astral resonator is powered:
 	say "The makeshift astral resonator emits a bright beam of light directly at the obelisk in the park.[paragraph break]";
 
 After printing the locale description of the First Utilitarian Church of Enigma Lake:
@@ -641,9 +653,9 @@ The telescope is in the tripod. The description is "A small telescope suitable f
 The snarky remark of the telescope is "What's the point of looking at the stars? They're all the same."
 
 Instead of searching the telescope when the content of the tripod is the telescope: [looking through]
-	if mounted-rusty-resonator is true and mounted-shiny-resonator is true:
+	if mounted-rusty-resonator and mounted-shiny-resonator:
 		say "The telescope is pointed at the obelisk in the park. It's a bit out of focus, but [we] can see it clearly enough. Two beams of light are focused on the obelisk from elsewhere, striking the crystal adornment at its apex. The crystal is glowing brightly.";
-	otherwise if mounted-rusty-resonator is true or mounted-shiny-resonator is true:
+	otherwise if mounted-rusty-resonator or mounted-shiny-resonator:
 		say "The telescope is pointed at the obelisk in the park. It's a bit out of focus, but [we] can see it clearly enough. A beam of light is focused on the obelisk from elsewhere, striking the crystal adornment at its apex. The crystal is glowing faintly.";
 	otherwise:
 		say "The telescope is pointed at the obelisk in the park. It's a bit out of focus, but [we] can see it clearly enough.";
@@ -672,7 +684,6 @@ Check unmounting something when the location is not the steeple:
 Carry out unmounting something:
 	now the content of the tripod is nothing;
 	now the player carries the noun;
-	now mounted-makeshift-resonator is false;
 	say "[We] [take] [the noun] from the tripod.";
 
 Instead of taking something when the content of the tripod is the noun:
@@ -706,7 +717,6 @@ To manage is a verb.
 Carry out mounting the makeshift astral resonator on the tripod:
 	now the content of the tripod is the makeshift astral resonator;
 	now the makeshift astral resonator is in the tripod;
-	now mounted-makeshift-resonator is true;
 
 Report mounting the makeshift astral resonator on the tripod:
 	say "[We] [manage] to make the makeshift astral resonator fit in the tripod's mount.";
@@ -719,23 +729,36 @@ Instead of putting something on the tripod:
 
 The steeple-obelisk-facade is a backdrop. It is in the steeple. Understand "obelisk/park" as steeple-obelisk-facade. "The obelisk in the park is clearly visible from here."
 
+To decide if mounted-makeshift-resonator:
+	if the content of the tripod is the makeshift astral resonator and the makeshift astral resonator is powered:
+		yes;
+	otherwise:
+		no;
+
 Instead of examining the steeple-obelisk-facade:
 	say "The obelisk in the park is clearly visible from here.[run paragraph on]";
 	let beam count be 0;
-	if mounted-rusty-resonator is true:
+	if mounted-rusty-resonator:
 		increase beam count by 1;
-	if mounted-shiny-resonator is true:
+	if mounted-shiny-resonator:
 		increase beam count by 1;
-	if mounted-makeshift-resonator is true:
+	if mounted-makeshift-resonator:
 		increase beam count by 1;
 	if beam count is 1:
-		say "A beam of light is focused on the obelisk from elsewhere, striking the crystal adornment at its apex. The crystal is glowing faintly";
+		if mounted-makeshift-resonator:
+			say "A beam of light is focused on the obelisk from the steeple, striking the crystal adornment at its apex. The crystal is glowing faintly.";
+		otherwise:
+			say "A beam of light is focused on the obelisk from elsewhere, striking the crystal adornment at its apex. The crystal is glowing faintly.";
 	otherwise if beam count is 2:
-		say "Two beams of light are focused on the obelisk from elsewhere, striking the crystal adornment at its apex. The crystal is glowing brightly";
+		if mounted-makeshift-resonator:
+			say "Two beams of light are focused on the obelisk, one from the steeple and one from elsewhere, striking the crystal adornment at its apex. The crystal is glowing brightly.";
+		otherwise:
+			say "Two beams of light are focused on the obelisk from elsewhere, striking the crystal adornment at its apex. The crystal is glowing brightly.";
 	otherwise if beam count is 3:
-		say "Three beams of light are focused on the obelisk from elsewhere, striking the crystal adornment at its apex. The crystal is glowing blindingly";
+		say "Three beams of light are focused on the obelisk, one from the steeple and two from elsewhere, striking the crystal adornment at its apex. The crystal is glowing brightly.";
 		say "[paragraph break][italic type][bracket]Far out![close bracket][roman type]";
-	say ".";
+	otherwise:
+		say paragraph break;
 
 Book 19 - Lake at Ridge
 
@@ -788,7 +811,7 @@ The snarky remark of the workshed-facade is "Groovy."
 
 Book 21 - Workshed
 
-the workshed is a leavable room. It has egress northwest. It is in ELR. "It is a small, weathered building, with a single door and no windows, and a creaky wooden floor. The interior is dimly lit by a single light bulb hanging from the ceiling. [equipment cabinet state] cabinet is in the corner. [rusty metal door state], rusty metal door leads out of the shed. [if the trapdoor is not obscured]A trapdoor is in the floor, [trapdoor state].[end if]".
+the workshed is a leavable room. It has egress northwest. It is in ELR. "It is a small, weathered building, with a single door and no windows, and a creaky wooden floor. The interior is dimly lit by a single light bulb hanging from the ceiling. [equipment cabinet state] cabinet is in the corner. [rusty metal door state], rusty metal door leads out of the shed. [if the trapdoor is revealed]A trapdoor is in the floor, [trapdoor state].[end if]".
 The snarky remark of the workshed is "I wonder if there's a chainsaw in here."
 
 To say equipment cabinet state:
@@ -821,12 +844,24 @@ The printed name is "[if Astral Secrets is familiar]rusty astral resonator[other
 Understand "rusty/astral/resonator" as the rusty astral resonator when Astral Secrets is familiar.
 Understand "strange/rusty/metal/metallic/cylindrical/cylinder/object" as the rusty astral resonator.
 
-The trapdoor is a scenery door. It is undescribed. It is below workshed and above the hidden cave.
-The trapdoor can be obscured. The trapdoor is obscured.
-Instead of doing something to the trapdoor when the trapdoor is obscured:
-	say "[text of parser error internal rule response (E)][line break]";
-
 The snarky remark of the rusty astral resonator is "[if the shiny astral resonator is not familiar]Ooh. I've always wanted one of these[otherwise]Someone should have taken better care of this[end if].".
+
+The trapdoor is a secret door. It is below the workshed and above a hidden cave. It is closed and openable. "A trapdoor is in the floor[if the trapdoor is open], leading down into darkness[otherwise], closed[end if]."
+
+After going to the workshed when the trapdoor is unrevealed and the player carries the dowsing rod:
+	say "Something [we] [are] carrying starts to vibrate.";
+
+Rule for printing inventory details of the dowsing rod:
+	if the location is the workshed and the trapdoor is unrevealed:
+		say " (vibrating)";
+
+Instead of examining the dowsing rod when the location is the workshed and the trapdoor is unrevealed:
+	say "The dowsing rod is vibrating.";
+
+Instead of examining the floor when the location is the workshed and the trapdoor is unrevealed:
+	say "You examine the floor closely, and discover the faint outlines of a trapdoor.";
+	now the trapdoor is revealed;
+
 
 Book 22 - Hidden cave
 
@@ -844,7 +879,7 @@ Book 25 - Horton Family House Kitchen
 
 The Horton House door is a closed openable locked lockable scenery door. It is west of Solvay Road Leading Out Of Town and east of Horton Family House Kitchen. The Horton House door has matching key the old copper key. 
 
-Horton Family House Kitchen is a room. It is in ELR. It is indoors. "The house is a modest colonial-period building. Strangely, the furnishings of the house have been left in place, despite the coming flood. An open hearth is in the center of the room, with a few chairs and a table. The parlor is to the south, and a narrow staircase leads up. To the east the front door leads out to Solvay Road, while another door leads west to the family graveyard." 
+Horton Family House Kitchen is a leavable room. It is in ELR. It is unleavable. It is indoors. "The house is a modest colonial-period building. Strangely, the furnishings of the house have been left in place, despite the coming flood. An open hearth is in the center of the room, with a few chairs and a table. The parlor is to the south, and a narrow staircase leads up. To the east the front door leads out to Solvay Road, while another door leads west to the family graveyard." 
 
 The furnishings are scenery in Horton Family House Kitchen. "A few chairs and a table are arranged around the room."
 
@@ -864,6 +899,10 @@ The narrow staircase is scenery in Horton Family House Kitchen. "A narrow stairc
 
 Instead of climbing up the narrow staircase:
 	try going up;
+
+The dowsing rod is in Horton Family House Kitchen. The description is "A simple wooden rod, about a foot long, with a forked end." Understand "simple/wooden/stick" as the dowsing rod.
+
+Divining-action is an action applying to one thing. Understand "divine with [something]", "dowse with [something]" as divining-action.
 
 Book 25.1 - Horton Family House Parlor
 
@@ -1014,12 +1053,7 @@ Book 30 - Reading Room Basement
 
 The Bookstore Basement is below the Reading Room. It is in ELR. The description is "The basement is dark and musty, with a number of shelves and boxes of books. The walls are made of old, crumbling brick. There is a faint breeze. A narrow staircase leads up[if the bricked-up-hole is revealed]. There is a ragged hole in the north wall, leading into a dark space[end if]."
 
-A bricked-up-hole is a secret door. It is north of the Bookstore Basement and south of sewer tunnel 1. It is privately-named. The printed name is "bricked-up hole in the wall'". Understand "hole in/-- the/-- wall/--" as bricked-up-hole. It is open and not openable. "A ragged hole in the north wall, leading into a dark space." 
-
-a door appearance rule for the bricked-up-hole (this is the bricked-up-hole appearance rule):
-	if the bricked-up-hole is revealed:
-		rule succeeds with result true;
-	rule succeeds with result false;
+A bricked-up-hole is a secret door. It is north of the Bookstore Basement and south of sewer tunnel 1. It is privately-named. The printed name is "bricked-up hole in the wall'". Understand "bricked-up", "bricked/up", "hole in/-- the/-- wall/--" as bricked-up-hole. It is open and not openable. "A ragged hole in the north wall, leading into a dark space." 
 
 To break is a verb.
 

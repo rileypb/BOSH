@@ -112,28 +112,10 @@ Check going when the player encloses something plug-into-able (called the socket
 
 Book - Appearance in inventory
 
-[ After printing the name of a thing while taking inventory or printing the locale description:
-	if something (called the socket) accepts the item described and something (called the plug) is plugged into the item described:
-		say " (plugged into [the socket], with [the plug] plugged into it)";
-	otherwise if something (called the socket) accepts the item described:
-		say " (plugged into [the socket])";
-	otherwise if something (called the plug) is plugged into the item described:
-		say " (with [the plug] plugged into it)";]
-
-Rule for printing inventory details of a thing:
-	if something (called the socket) accepts the item described and something (called the plug) is plugged into the item described:
-		say " (plugged into [the socket], with [the plug] plugged into it)";
-	otherwise if something (called the socket) accepts the item described:
-		say " (plugged into [the socket])";
-	otherwise if something (called the plug) is plugged into the item described:
-		say " (with [the plug] plugged into it)";
-
-Rule for printing room description details of a thing:
+Description notes for a thing:
 	if something (called the socket) accepts the item described:
-		say " (plugged into [the socket])";
+		add "plugged into [the socket]" to descriptive notes;
 	if something (called the plug) is plugged into the item described:
-		say " (with [the plug] plugged into it)"; 
-
-
+		add "with [the plug] plugged into it" to descriptive notes.
 
 Plugging ends here.

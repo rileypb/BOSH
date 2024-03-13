@@ -27,6 +27,7 @@ Include Door Utils by Philip Riley.
 Include Real People by Philip Riley.
 Include Visible Rooms by Philip Riley.  
 Include Can't Touch This by Philip Riley.
+Include Compound Details by Philip Riley.
 Include Polish by Philip Riley.
 
 Include BOSH Polish by Philip Riley.
@@ -785,7 +786,7 @@ The photo of soccer team is scenery in biff's office. Understand "Faraji's/their
 The snarky remark is "We were the best team in the league. At least, in our hearts."
 
 The green smartphone is a phone. It is mobile. The description is "It's a pretty nice phone, only a couple of years old, but [we] [don't] have time to play with it. [We] [need] to get to the office."
-The snarky remark is "Nice phone."
+The snarky remark is "Nice phone." 
 
 Check calling someone on the green smartphone:
 	say "[The green smartphone] is out of batteries." instead;

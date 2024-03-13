@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 20700 words long.
+I've now read your source text, which is 20706 words long.
 
 
 -----------------------------------------------------
@@ -41,6 +41,7 @@ I've also read Door Utils by Philip Riley, which is 41 words long.
 I've also read Real People by Philip Riley, which is 397 words long.
 I've also read Visible Rooms by Philip Riley, which is 164 words long.
 I've also read Can't Touch This by Philip Riley, which is 146 words long.
+I've also read Compound Details by Philip Riley, which is 179 words long.
 I've also read Polish by Philip Riley, which is 86 words long.
 I've also read BOSH Polish by Philip Riley, which is 4479 words long.
 I've also read Choices by Philip Riley, which is 408 words long.
@@ -54,7 +55,7 @@ I've also read BOSH Facts by Philip Riley, which is 94 words long.
 I've also read Image Strip by Philip Riley, which is 2077 words long.
 I've also read Swamp Park by Philip Riley, which is 5374 words long.
 I've also read Margaret by Philip Riley, which is 1584 words long.
-I've also read Enigma Lake by Philip Riley, which is 14321 words long.
+I've also read Enigma Lake by Philip Riley, which is 14498 words long.
 I've also read Snarky Remarks by Philip Riley, which is 126 words long.
 I've also read Overlook by Philip Riley, which is 761 words long.
 I've also read Gender Options by Nathanael Nerode, which is 7730 words long.
@@ -75,7 +76,7 @@ I've also read Options Paragraph by Philip Riley, which is 180 words long.
 I've also read Glulx Entry Points by Emily Short, which is 1903 words long.
 I've also read Door Varieties by Philip Riley, which is 296 words long.
 I've also read Secret Doors by Gavin Lambert, which is 272 words long.
-I've also read Plugging by Philip Riley, which is 755 words long.
+I've also read Plugging by Philip Riley, which is 684 words long.
 I've also read Playtest by Philip Riley, which is 923 words long.
 I've also read Glulx Definitions by Dannii Willis, which is 879 words long.
 I've also read Glk Object Recovery by Dannii Willis, which is 460 words long.
@@ -248,9 +249,9 @@ Phase XII ... Code generation
                                                             Fail: list of numbers (~) number = nothing
                                             Fail: nothing (~) real number = nothing
                                             Fail: list of numbers (~) real number = nothing
-        Regional: CONSTANT_VNT'bosh hq'-region(I700_bosh_hq)(I586'bosh hq')
+        Regional: CONSTANT_VNT'bosh hq'-region(I701_bosh_hq)(I587'bosh hq')
          == region
-        Regional: CONSTANT_VNT'bosh hq'-region(I700_bosh_hq)(I586'bosh hq')
+        Regional: CONSTANT_VNT'bosh hq'-region(I701_bosh_hq)(I587'bosh hq')
          == region
         Regional: CONSTANT_VNT'laundromat-region'-region(I379_laundromat_region)(I274'laundromat-region')
          == region
@@ -299,15 +300,15 @@ Phase XII ... Code generation
 
 ==== Phase XII.21 ... Compiling routines from predicate calculus ====
 
-Providing for a total heap of 16384, given requirement of 14600
+Providing for a total heap of 16384, given requirement of 14864
 
 
 -----------------------------------------------------
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 235 files written as streams.
-CPU time: 715 centiseconds
+Total of 237 files written as streams.
+CPU time: 711 centiseconds
 
 
 That concludes the debugging log from this run of Inform.
