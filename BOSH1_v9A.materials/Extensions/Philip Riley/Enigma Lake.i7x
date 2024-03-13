@@ -771,16 +771,16 @@ The parlor chairs are scenery in the Horton Family House Parlor. "A few chairs a
 
 The parlor table is a scenery supporter in the Horton Family House Parlor. "A simple wooden table."
 
-The Book of Weird Concoctions is on the parlor table. 
+The Book of Weird Names is on the parlor table. 
 
 To stop is a verb.
 
-The description is "A book with a plain cover, titled 'The Book of Weird Concoctions.' No author is listed. [paragraph break]Flipping through the book, it appears that each page consists of a name, a drawing of a strange creature, and below that a word in a strange, unknown language. The text is written in a spidery, crabbed hand, and is difficult to read.[paragraph break][We] [stop] on one that reads [italic type][creature name][roman type] above a drawing of [strange creature], below which is written [italic type][incantation].[roman type]";
+The description is "A book with a plain cover, titled 'The Book of Weird Names.' No author is listed. [paragraph break]Flipping through the book, it appears that each page consists of a name, a drawing of a strange creature, and below that a word in a strange, unknown language. The text is written in a spidery, crabbed hand, and is difficult to read.[paragraph break][We] [stop] on one that reads [italic type][creature name][roman type] above a drawing of [strange creature], below which is written [italic type][incantation].[roman type]";
 
 The first name parts is a list of text that varies. The second name parts is a list of text that varies. The third name parts is a list of text that varies. The creature types is a list of text that varies. The body parts is a list of text that varies.
 The first name parts are {"Dag", "Gor", "Zor", "Zag", "Zog", "Zig", "Zag", "Cth", "N'g", "N'k", "Ad", "Bll", "Cr", "As", "Kl"}.
 The second name parts are {"ag", "or", "ar", "og", "ig", "ag", "th", "gth", "kth", "uth", "oth", "thuk", "shaka", "fats", "steen", "don" }.
-The third name parts are {"Distressing", "Unsettling", "Impertinent", "Uninhibited", "Pugnacious", "Unspeakable", "Unpronounceable", "Unmentionable", "Smelly", "Unpleasant", "Gross", "Horrible", "Squeamish", "Unsavory", "Unpalatable"}. 
+The third name parts are {"Distressing", "Unsettling", "Impertinent", "Uninhibited", "Pugnacious", "Unspeakable", "Unpronounceable", "Unmentionable", "Smelly", "Unpleasant", "Gross", "Horrible", "Squeamish", "Unsavory", "Unpalatable", "Wistful", "Abnormal", "Unnatural", "Unusual", "Uncommon", "Unconventional", "Unorthodox", "Unprecedented", "Unheard of", "Unseen", "Hidden", "Ornery", "Unruly", "Unmanageable", "Uncontrollable", "Unpredictable", "Unreliable", "Untrustworthy", "Unfaithful", "Untrue", "Unreal", "Unrealistic", "Unreasonable", "Unjust", "Unfair", "Unkind", "Unfriendly", "Unpleasant", "Uncomfortable", "Unhappy", "Unfortunate", "Unlucky", "Unsuccessful", "Frustrating", "Unsatisfactory", "Unsatisfying", "Unfulfilling", "Unrewarding", "Ungrateful", "Unappreciative", "Unthankful", "Arrogant", "Bashful", "Boastful", "Disrespectful", "Dishonest", "Disloyal", "Disobedient", "Disorderly", "Disorganized", "Cantankerous", "Contrary", "Cranky", "Cross", "Crabby", "Crusty", "Crotchety", "Grumpy", "Irritable", "Peevish", "Perverse", "Petulant", "Quarrelsome", "Short-tempered", "Sour", "Sullen", "Surly", "Testy", "Tetchy", "Touchy", "Uncooperative", "Unyielding", "Unaccommodating", "Uncompromising", "Unforgiving", "Unrelenting", "Unsympathetic", "Unemotional", "Unfeeling", "Unresponsive", "Uncommunicative", "Unexpressive", "Unenthusiastic", "Uninterested", "Unconcerned", "Uninvolved", "Uncommitted", "Unattached", "Unconnected", "Tactless", "Thoughtless", "Insensitive", "Inconsiderate", "Selfish", "Self-centered", "Self-absorbed", "Self-indulgent", "Self-serving", "Self-seeking", "Conceited", "Vain", "Proud", "Haughty", "Egotistical", "Egocentric", "Egoistic" }
 
 To say creature name:
 	sort the first name parts in random order;
@@ -804,7 +804,7 @@ To say incantation:
 	otherwise:
 		say "[entry 1 of the first name parts][entry 1 of the second name parts] [entry 2 of the second name parts] [entry 2 of the first name parts][entry 3 of the second name parts][entry 3 of the first name parts in lower case]";
 
-Instead of consulting the book of weird concoctions about something:
+Instead of consulting the book of weird names about something:
 	if the topic understood in lower case is not "hathgar the pitiful":
 		say "[we] [look] up '[the topic understood]' in the book, but [find] nothing. Perhaps [we] [are] spelling it wrong.";
 	otherwise:

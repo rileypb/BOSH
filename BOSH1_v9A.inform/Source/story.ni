@@ -1052,16 +1052,17 @@ The mahogany side table is a thing in BOSH Chief's Office. It is scenery. "This 
 The snarky remark of the mahogany side table is "Even Klimp gets it right sometimes."
 
 The bookcase is a thing in BOSH Chief's Office. It is scenery. "The Chief's library boasts many interesting titles, from Alton Cherry's [italic type]Waiting for the Aliens[roman type] to Debi Bosworth's [italic type]My Travels in Time[roman type]. For the uninitiated, there is also a copy of [italic type]The Dictionary of Strangeness[roman type]." 
-Understand "books" as bookcase.
+Understand "books/bookshelf/bookshelves", "book case", "book shelf", "book shelves" as bookcase.
 The snarky remark of the bookcase is "So many books, so little sense."
 
-Waiting-for-the-Aliens is a thing in BOSH Chief's Office. It is privately-named. The printed name is "Waiting for the Aliens". It is scenery. Understand "Waiting/for/aliens/Alton/Cherry" as Waiting-for-the-Aliens. "Alton Cherry's [italic type]Waiting for the Aliens[roman type] is a classic of the genre. More a history of publicly-known material than an argument for or against the existence of aliens on earth, it is accessible to believers and non-believers alike."
+Waiting-for-the-Aliens is a thing in BOSH Chief's Office. It is privately-named. The printed name is "Waiting for the Aliens". It is scenery. Understand "Waiting/for/aliens/Alton/Cherry/book" as Waiting-for-the-Aliens. "Alton Cherry's [italic type]Waiting for the Aliens[roman type] is a classic of the genre. More a history of publicly-known material than an argument for or against the existence of aliens on earth, it is accessible to believers and non-believers alike."
 The snarky remark of Waiting-for-the-Aliens is "I'm waiting for the sequel, 'Waiting for the Aliens to Leave'."
  
-Travels in Time is a thing in BOSH Chief's Office. It is scenery. Understand "My Travels in Time" as Travels in Time. Understand "Debi/Bosworth" as Travels in Time. "Debi Bosworth's [italic type]My Travels in Time[roman type] is the account of Ms. Bosworth's alleged travels to the past and future. She is careful to point out that she has never known a man in a blue box."
+Travels in Time is a thing in BOSH Chief's Office. It is scenery. Understand "My Travels in Time" as Travels in Time. Understand "Debi/Bosworth/book" as Travels in Time. "Debi Bosworth's [italic type]My Travels in Time[roman type] is the account of Ms. Bosworth's alleged travels to the past and future. She is careful to point out that she has never known a man in a blue box."
 The snarky remark of Travels in Time is "Glad to see the Chief is keeping up with the classics."
 
-The Dictionary of Strangeness is a thing in BOSH Chief's Office. It is scenery. "The Dictionary of Strangeness is a compendium of the weird and wonderful, from the Abominable Snowman to Zener Cards. Flipping through it, [we] [come] upon an entry:
+The Dictionary of Strangeness is a thing in BOSH Chief's Office. It is scenery. Understand "book" as the Dictionary of Strangeness.
+"The Dictionary of Strangeness is a compendium of the weird and wonderful, from the Abominable Snowman to Zener Cards. Flipping through it, [we] [come] upon an entry:
 
 [random entry]"
 

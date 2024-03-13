@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 20300 words long.
+I've now read your source text, which is 20313 words long.
 
 
 -----------------------------------------------------
@@ -42,7 +42,7 @@ I've also read Real People by Philip Riley, which is 397 words long.
 I've also read Visible Rooms by Philip Riley, which is 153 words long.
 I've also read Can't Touch This by Philip Riley, which is 146 words long.
 I've also read Polish by Philip Riley, which is 86 words long.
-I've also read BOSH Polish by Philip Riley, which is 4442 words long.
+I've also read BOSH Polish by Philip Riley, which is 4479 words long.
 I've also read Choices by Philip Riley, which is 408 words long.
 I've also read New Light by Philip Riley, which is 333 words long.
 I've also read Early Declarations by Philip Riley, which is 23 words long.
@@ -54,7 +54,7 @@ I've also read BOSH Facts by Philip Riley, which is 94 words long.
 I've also read Image Strip by Philip Riley, which is 2077 words long.
 I've also read Swamp Park by Philip Riley, which is 5374 words long.
 I've also read Margaret by Philip Riley, which is 1584 words long.
-I've also read Enigma Lake by Philip Riley, which is 12563 words long.
+I've also read Enigma Lake by Philip Riley, which is 12670 words long.
 I've also read Snarky Remarks by Philip Riley, which is 126 words long.
 I've also read Overlook by Philip Riley, which is 761 words long.
 I've also read Gender Options by Nathanael Nerode, which is 7730 words long.
@@ -307,7 +307,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 234 files written as streams.
-CPU time: 738 centiseconds
+CPU time: 704 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

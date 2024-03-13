@@ -212,6 +212,9 @@ weather	"Intriguing concept."	"Intriguing concept."
 wires	"The wires travel up through a hole in the ceiling. They can't be taken without some work."	"The wires travel up through a hole in the ceiling. They can't be moved without some work."
 work schedule	"[We] [don't] need it."	"[We] [don't] need it."
 workshed-facade	"[We] attempt to push the shed around, but it's not going anywhere."	"[We] attempt to push the shed around, but it's not going anywhere."
+Waiting-for-the-Aliens	"That belongs to Chief Klimp."	"That belongs to Chief Klimp."
+Travels in Time	"That belongs to Chief Klimp."	"That belongs to Chief Klimp."
+Dictionary of Strangeness	"That belongs to Chief Klimp."	"That belongs to Chief Klimp."
 
 
 Table of Floors (continued)
