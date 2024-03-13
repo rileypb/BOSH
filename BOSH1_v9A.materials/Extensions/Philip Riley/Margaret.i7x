@@ -101,7 +101,7 @@ An availability rule for about the locked desk:
 klimp-whereabouts is a questioning quip.
 	It mentions Chief Huffton Klimp.
 	It is privately-named.
-	The printed name is "where is Klimp".
+	The printed name is "where Klimp is".
 	Understand "where is Klimp", "is Klimp here", "is Klimp in the office", "has Klimp come in yet", "where klimp is" as klimp-whereabouts.
 	The comment is "[We] [ask], 'Margaret, have you seen Klimp this morning?'".
 	The reply is "[if Chief Huffton Klimp is not in BOSH Chief's Office]She shakes her head. 'He hasn't been in yet.'[otherwise]She points towards the hall. 'He's in his office.'[end if]".
@@ -113,7 +113,7 @@ klimp-whereabouts is a questioning quip.
 moira-whereabouts is a questioning quip.
 	It mentions Moira Zin.
 	It is privately-named. 
-	The printed name is "where is Moira".
+	The printed name is "where Moira is".
 	Understand "where is Moira", "is Moira here", "is Moira in the office", "has moira come in yet", "where moira is" as moira-whereabouts.
 	The comment is "[We] [ask], 'Has Moira come in yet?'".
 	The reply is "[if Moira Zin is not in Moira's Office]Margaret barely looks up from her work. 'Nope.'[otherwise]Margaret nods. 'I think she's working in her office.'[end if]".

@@ -47,13 +47,20 @@ Book 1 - Town Hall
 
 the Enigma Lake town hall is a leavable room. It is in ELR. It is unleavable.
 "The building has been cleared of furniture and other items ahead of the imminent flooding. A permanent fixture, the information desk sits near the front entrance (to the south). Taped to it is what looks to be a work schedule. There is also a back entrance onto the park to the north."
+The snarky remark is "Time travel should be accompanied by more fanfare."
 
 The information desk is scenery in the Enigma Lake town hall. Understand "info/help/front" as information desk. "A work schedule is taped to the desk."
+The snarky remark of the information desk is "No one's ever at the information desk when you need them."
+
+The bell is on the information desk. The description is "A small brass bell, used to summon the attention of the town hall staff."
+The snarky remark of the bell is "Hello! Anyone here?"
 
 The backpack is a closed openable container. It is behind the information desk. The description is "Stitched into the fabric are the initials 'WGT'".
 Understand "back/pack/rucksack/ruck/sack/knapsack/knap" as the backpack.
+The snarky remark of the backpack is "Am I allowed to rummage through people's stuff? I mean, I'm going to, but I want to know if I'm allowed to."
 
 The red key is a key. It is inside the backpack. Understand "ELG", "gym/gymnasium key" as the red key. The description is "The letters ELG are printed on the key, labeling it the property of Enigma Lake Gymnasium.".
+The snarky remark of the red key is "Oh good. I need some used gym socks to complete my collection."
 
 The work schedule is scenery in the Enigma Lake town hall. 
 "[fixed letter spacing] +--------------------------------+[line break]
@@ -65,7 +72,8 @@ The work schedule is scenery in the Enigma Lake town hall.
 |Thursday        Edward Alpha    |[line break]
 |Friday          Rosemary Tamsin |[line break]
 |Saturday        Mary Huff       |[line break]
-+--------------------------------+"
++--------------------------------+".
+The snarky remark of the work schedule is "What? I don't get any hours this week?"
 
 The building is scenery in the Enigma Lake town hall.
 
@@ -86,7 +94,7 @@ The Town Hall Facade is a building facade.
 	The town hall facade fronts the Enigma Lake town hall.
 	The town hall facade is enterable from Main Street 200 Block. 
 	The town hall facade is enterable from Enigma Park.
-	
+The snarky remark of the town hall facade is "I feel like this should be an episode of 'Last Chance to See'."
 
 Book 2 - Enigma Park
 
@@ -95,15 +103,20 @@ To explore is a verb.
 Enigma Park is a leavable room. It is north of Enigma Lake town hall. It is unleavable. Enigma Park is in ELR. It is outdoors.
 "[first time]It's probably beautiful during the day, but tonight the deep shadows among the trees seem ominous. [We] [are] watchful and tense as [we] [explore] the park. 
 
-[only]The central focus of the park is a large obelisk inscribed with the names of the town's citizens lost in the Great War. First and maples line the paths. The town hall is to the south, and other exits are to the north, west, and east."
+[only]The central focus of the park is a large obelisk inscribed with the names of the town's citizens lost in the Great War. Firs and maples line the paths. The town hall is to the south, and other exits are to the north, west, and east."
+The snarky remark of Enigma Park is "It's not Central Park, but it's not bad."
 
 Some trees are scenery in Enigma Park. Understand "tree/fir/firs/maple/maples" as trees. "A mixture of sturdy firs and maples, unaware of the pending cataclysm."
+The snarky remark of the trees is "Run away, trees! Run away!"
 
 Some shadows are scenery in Enigma Park. "Without a lantern, it's inadvisable to venture into the shadows."
+The snarky remark of the shadows is "I'm not afraid of the dark. I'm afraid of what's in the dark."
 
 The obelisk is scenery in Enigma Park. Understand "monument/names/citizens" as the obelisk. "Its faux Egyptian design is incongruous adjacent to the adamantly traditional town hall. [We] [can] just make out a small crystal adornment rising from the top."
+The snarky remark of the obelisk is "I don't know what it is, but obelisks always seem to be bad news."
 
 The adornment is scenery in Enigma Park. "From what [we] can make out, it's a clear crystal held aloft by some kind of metal fitting." Understand "crystal" as the adornment.
+The snarky remark of the adornment is "I'm not going to touch it. I've seen enough movies to know that's a bad idea."
 
 Climbing up is an action applying to one thing. Understand "climb up/-- [something]" as climbing up.
 
@@ -121,50 +134,63 @@ Park facade is a building facade. It is in Solvay Road leading out of town, Lake
 	It is enterable from Lake shore north of the park.
 	It is enterable from Lake Street by the park.
 	It fronts Enigma Park.
+The snarky remark of the park facade is "Have the muggers left before the flood?"
 
 Book 3 - Main Street 200 Block
 
 the Main Street 200 block is south of Enigma Lake Town Hall. It is in ELR. It is outdoors. The printed name is "200 block of Main Street". The preposition is "on".
+The snarky remark of the Main Street 200 block is "The 200 block of Main Street. It's like the 100 block, but twice as good."
 
 The description is "The street runs east and west from here. South is the edifice of Rolle's Department Store. North is the town hall."
 
 Rolle's facade is a building facade in Main Street 200 block. It is privately-named. The printed name is "Rolle's Department Store". Understand "rolle's/rolle/department/store/shop" as Rolle's facade. "Once, town department stores like this were a constant of American life before they were gobbled up by the big box stores."
 	Rolle's facade fronts Rolle's Department Store.
 	It is enterable from Main Street 200 Block.
+The snarky remark of Rolle's facade is "I'm going to check out the pre-flood sales."
 
 Book 4 - Main at Solvay
 
 Main at Solvay is west of Main Street 200 Block. It is in ELR. It is outdoors. The printed name is "Main and Solvay". The preposition is "on the corner of".
+The snarky remark of Main at Solvay is "This must be the shopping district."
 
 The description is "Main Street runs east from here, while Solvay Road heads north. South of here, Henry's Hot Skillet promises all of the comforts of the mid-twentieth-century diner. A bookstore named The Reading Room lies to the west, while Fresnel's Music is southwest."
 
 Henry's facade is a building facade. It is in Main at Solvay. It is privately-named. The printed name is "Henry's Hot Skillet".  Understand "Henry/Henry's/Hot/Skillet/diner/restaurant" as Henry's facade. "Henry's, the local diner, is closed, the neon skillet dark and motionless."
 	Henry's facade fronts Henry's Hot Skillet.
 	It is enterable from Main at Solvay.
+The snarky remark of Henry's facade is "I wonder if they have any pie left."
 
 The neon skillet is scenery in Main at Solvay. "The neon skillet is dark and motionless."
+The snarky remark of the neon skillet is "Apparently they're not open."
 
 Reading-Room-Facade is a building facade. It is in Main at Solvay. It is privately-named. The printed name is "Reading Room". Understand "Reading/Room/bookstore/store" as Reading-room-facade. "The store window is dark. [We] can see rows and rows of books inside."
 	Reading-Room-Facade fronts the Reading Room.
 	It is enterable from Main at Solvay.
+The snarky remark of Reading-Room-Facade is "I wonder if they have any books on how to survive a flood."
 
 Fresnel Facade is a building facade. It is in Main at Solvay. It is privately-named. The printed name is "Fresnel's Music". Understand "fresnel/fresnel's/music/store" as Fresnel Facade. "A display of brass instruments dominates the front window." 
 	Fresnel Facade fronts Fresnel's Music.
 	It is enterable from Main at Solvay.
+The snarky remark of Fresnel Facade is "Good. I need a tuba."
 
 Book 6 - Solvay Road 100 block
 
 Solvay Road 100 block is north of Main at Solvay. It is in ELR. It is outdoors. The preposition is "walking on".
+The snarky remark of Solvay Road 100 block is "What's a Solvay?"
 
 The description is "Solvay heads north and south. To the west is the fire station, while to the east is the side of the town hall."
 
 The fire facade is a building facade. It is in Solvay Road 100 block. It is privately-named. The printed name is "fire station". Understand "fire/station/firehouse/house" as fire facade. "The sign over the big door says 'Hook and Ladder Company #1'."
-	Instead of entering the fire facade:
-		say "The garage door is locked up tight." instead;
+
+Instead of entering the fire facade:
+	say "The garage door is locked up tight." instead;
+
+The snarky remark of the fire facade is "I wonder if they have a fireman's pole."
 
 Book 7 - Solvay Road leading out of town
 
 Solvay Road leading out of town is north of Solvay Road 100 block and west of Enigma Park. It is in ELR. It is outdoors. The preposition is "walking on".
+The snarky remark of Solvay Road leading out of town is "Seems like the right way to go about now."
 
 The description is "Solvay Road bends here, leading northwest out of town and south back into town. East is the park, and to the west is Horton House. One can walk down to the lake shore to the north."
 
@@ -172,11 +198,15 @@ Horton facade is a building facade. It is in Solvay Road leading out of town. It
 	Horton facade fronts Horton Family House Kitchen.
 	It is enterable from Solvay Road leading out of town.
 
+The snarky remark of Horton facade is "Looks like just the kind of place to find a ghost."
+
 Book 8 - Solvay Road by the lake
 
 Solvay-Road-by-the-lake is northwest of Solvay Road leading out of town. It is in ELR. It is outdoors. The preposition is "walking on". It is privately-named. The printed name is "Solvay Road by the lake". Understand "Solvay/Road/by/the/lake" as Solvay-Road-by-the-lake.
 
 The description is "Solvay Road runs by the lake shore here. It continues out of town to the northwest, while to the southeast it leads back into town. A dirty shack stands opposite the lake to the west. A path along the shore leads to the east."
+
+The snarky remark of Solvay-Road-by-the-lake is "Nice view. Too bad it's about to be under water."
 
 Instead of going nowhere from the Solvay-Road-by-the-lake:
 	let dir be noun part of current action;
@@ -186,21 +216,30 @@ Instead of going nowhere from the Solvay-Road-by-the-lake:
 		continue the action;
 	stop the action;
 
+The lake-shore-1 is scenery in Solvay-Road-by-the-lake. "The lake shore is rocky and uneven, with a few small trees and bushes growing along the edge."
+The lake-scenery-1 is scenery in Solvay-Road-by-the-lake. "The lake is dark and still, reflecting the moonlight."
+
 The shack facade is a building facade. It is in Solvay-Road-by-the-lake. It is privately-named. The printed name is "shack". Understand "shack" as the shack facade. "A dirty shack stands opposite the lake."
 	The shack facade fronts the dirty shack.
 	It is enterable from Solvay-Road-by-the-lake.
+The snarky remark of the shack facade is "I wonder if anyone's home."
 
 Book 9 - Shack
 
 a dirty shack is a leavable room. It has egress east. It is west of Solvay-Road-by-the-lake. It is always-indefinite. It is in ELR. "Someone lives here, though not at all luxuriously. Plates are stacked up by the sink, and there's a pile of used paper coffee cups in the corner. The whole place stinks of cat."
+The snarky remark of the dirty shack is "I'm not sure I want to know what's in the sink."
 
 Some plates are scenery in the dirty shack. "Dirty and precariously stacked."
+The snarky remark of the plates is "I'm not doing the dishes."
 
 The used coffee cups are scenery in the dirty shack. "A pile of used paper coffee cups. This guy must love his coffee."
+The snarky remark of the used coffee cups is "I wonder where the local Starbucks is."
 
 A mangy cat is in a dirty shack. The description is "A mangy, old, stripey orange cat."
 Rule for writing a paragraph about the mangy cat:
 	say "[one of]A mangy orange cat peeks out from under the bed[or]A stripey orange cat sits in a corner of the room, grooming itself[or]An orange cat stretches out on the bed[purely at random].";
+	  
+The snarky remark of the mangy cat is "I don't care how mangy a cat is, I'm going to pet it."
 	
 Petting is an action applying to one thing. Understand "pet [something]" as petting. Understand "pat [something]" as petting.
 
@@ -217,14 +256,17 @@ Hutz is a man in dirty shack. Hutz is privately-named. "[A Hutz] is reclining on
 	Understand "bony/old/man" as Hutz. 
 	Understand "town/groundskeeper" as Hutz when Hutz is not anonymous.
 	Understand "Hutz" as Hutz when Hutz is met.
+The snarky remark of Hutz is "Kind of Crypt Keeper meets Groundskeeper Willie."
 	
 Rule for writing a paragraph about Hutz:
 	if the dirty shack is not visited:
 		say "[A Hutz] lies on a bed in a corner of the shack. He stirs sleepily and says 'Ah, there you are, there you are. Knew you'd be around eventually.'"
 
 The narrow bed is scenery in the dirty shack. "Clean enough, but awfully narrow, it holds [if Hutz is known]the bony figure of Hutz[otherwise][Hutz][end if], the town groundskeeper."
+The snarky remark of the narrow bed is "How often does he fall out of bed, I wonder?"
 
 The sledgehammer is in the dirty shack. Understand "hammer" as sledgehammer. The description is "A heavy sledgehammer, the head of which is covered in rust."
+The snarky remark of the sledgehammer is "I'm sure violence is the answer to something. Let's go look."
 
 Who-is-Hutz is a questioning quip.
 	The printed name is "who he is".
@@ -301,20 +343,25 @@ Instead of giving the cup of coffee to Hutz when Hutz-needs-coffee is true:
 Book 10 - Main at Lake
 
 Main at Lake is east of Main Street 200 Block. It is in ELR. It is outdoors. The printed name is "Main and Lake". The preposition is "at the intersection of". "Main goes west, while Lake runs north. The corner of the town hall is to the northwest, although it cannot be entered there. Southeast is the entrance to WGXC 'Galaxy' Radio. There is a broadcast tower on top of the building." 
+The snarky remark of Main at Lake is "Soon it will be Main in Lake."
 
-The radio station facade is a building facade. It is in Main at Lake. It is privately-named. The printed name is "WGXC 'Galaxy' Radio". Understand "WGXC/Galaxy/Radio/station" as radio station facade. "The sign over the door says 'WGXC [']Galaxy['] Radio'."
+The radio station facade is a building facade. It is in Main at Lake. It is privately-named. The printed name is "WGXC 'Galaxy' Radio". Understand "WGXC/Galaxy/Radio/station" as radio station facade. "The sign over the door says 'WGXC [']Galaxy['] Radio 1055 AM'."
 	The radio station facade fronts Radio Station WGXC.
 	It is enterable from Main at Lake.
+The snarky remark of the radio station facade is "Wonder what the weather report is for tomorrow? 100% chance of deluge?"
 
 Book 11 - WGXC "Galaxy" Radio
 
 Radio Station WGXC is a leavable room. It has egress northwest. It is southeast of Main at Lake. It is in ELR. It is indoors. "This is the town radio station. South is the entrance to the broadcast booth. A staircase runs upwards, presumably to the roof and the broadcast antenna."
+The snarky remark of Radio Station WGXC is "I wonder if they have any old records. Or I guess they'd be new records now, wouldn't they?"
 
 Book 12 - Radio Station Roof
 
-The radio station roof is a leavable room. It is above Radio Station WGXC. It has egress down. It is in ELR. "[We] can see the obelisk in the park clearly from here. The broadcast tower rises many feet above [us]." The preposition is "on"
+The radio station roof is a leavable room. It is above Radio Station WGXC. It has egress down. It is in ELR. "[We] can see the obelisk in the park clearly from here. The broadcast tower rises many feet above [us]." The preposition is "on".
+The snarky remark of the radio station roof is "I'm not afraid of heights. I'm afraid of falling from heights."
 
 The broadcast tower is scenery in the radio station roof. "A tall, steel lattice structure, rising prominently above the building. This kind of tower was designed to maximize the height for better signal transmission and reception in the era before widespread cable and satellite technology."
+The snarky remark of the broadcast tower is "What a great place to get struck by lightning."
 
 Instead of climbing up the broadcast tower:
 	say "[We] [are] afraid of heights.";
@@ -325,21 +372,26 @@ Instead of going up when the location is the radio station roof:
 Book 13 - Broadcast Booth
 
 The broadcast booth is south of Radio Station WGXC. It is in ELR. "The broadcast booth is a small room with a window looking out into the rest of the station. A microphone is set up on a stand, and a soundboard is set into the wall."
+The snarky remark of the broadcast booth is "I wonder if I can get a request in."
 
 The booth window is scenery in the broadcast booth. "The window looks out into the rest of the station."
 
 The microphone is scenery in the broadcast booth. "A microphone is set up on a stand."
+The snarky remark of the microphone is "My mother always said I had a face for radio, and a voice for silent movies."
 
 The soundboard is scenery in the broadcast booth. "The soundboard is a complex piece of equipment, with many sliders and buttons. It's not clear how it works."
+The snarky remark of the soundboard is "I like to push buttons and turn knobs. Which is why I'm not allowed in airplane cockpits."
 
 Book 14 - Lake Street by the gym
 
 Lake Street by the gym is north of Main at Lake. It is in ELR. It is outdoors. The preposition is "walking on".
 The description is "Lake Street runs north and south from here. To the east is the public gymnasium, while to the west is the town hall, which is not enterable from here."
+The snarky remark of Lake Street by the gym is "I wonder how much gym memberships cost in 1954."
 
 The gymnasium facade is a building facade. It is in Lake Street by the gym. It is privately-named. The printed name is "public gymnasium". Understand "gymnasium/gym" as gymnasium facade. "The sign over the door says 'Enigma Lake Gymnasium'."
 	The gymnasium facade fronts Enigma Lake Gymnasium.
 	It is enterable from Lake Street by the gym.
+The snarky remark of the gymnasium facade is "I hate the gym. I'm allergic to exercise."
 
 Instead of entering the gymnasium facade:
 	say "The door is locked.";
@@ -347,20 +399,26 @@ Instead of entering the gymnasium facade:
 Book 15 - Lake Street by the Park
 
 Lake Street by the park is north of Lake Street by the gym and east of Enigma Park. It is in ELR. It is outdoors. The preposition is "walking on". The description is "Lake Street runs north and south from here. To the west is the park, while to the east is the First Utilitarian Church of Enigma Lake."
+The snarky remark of Lake Street by the park is "The eeriness of the park is only slightly offset by the eeriness of the church."
 
 The church facade is a building facade. It is in Lake Street by the park. It is privately-named. The printed name is "First Utilitarian Church of Enigma Lake". Understand "church" as church facade. "The church is a dignified example of Gothic Revival architecture, its façade dominated by a steeply pitched roof and a slender steeple piercing the sky."
 	The church facade fronts the First Utilitarian Church of Enigma Lake.
 	It is enterable from Lake Street by the park.
+The snarky remark of the church facade is "The Utilitarians are the ones who believe in the greatest good for the greatest number, right? Even in sex?"
 
 Book 16 - First Utilitarian Church of Enigma Lake
 
 The First Utilitarian Church of Enigma Lake is a leavable room. It has egress west. It is east of Lake Street by the Park. It is in ELR. "The interior is dimly lit by the stained glass windows, and the pews are arranged in neat rows facing the pulpit. A standard electrical outlet is set into the wall."
+The snarky remark of the First Utilitarian Church of Enigma Lake is "Where's the gift shop?"
 
-The stained glass windows are scenery in First Utilitarian Church of Enigma Lake. "As is traditional in Utilitarian churches, the windows are plain glass, allowing the maximum amount of light to enter the building."
+The stained glass windows are scenery in First Utilitarian Church of Enigma Lake. "As is traditional in Utilitarian churches, the stained glass windows are all plain glass, allowing the maximum amount of light to enter the building."
+The snarky remark of the stained glass windows is "I like the underlying message of the stained glass. It's like they're saying, 'We're not going to waste time on this, we've got things to do.'"
 
 The pews are scenery in First Utilitarian Church of Enigma Lake. "The pews are arranged in neat rows, facing the pulpit."
+The snarky remark of the pews is "When will I find a church with sumptuous, overstuffed chairs?"
 
 The pulpit is scenery in First Utilitarian Church of Enigma Lake. "The pulpit is a simple wooden structure with a lectern."
+The snarky remark of the pulpit is "Hold on, I have to give a sermon. 'And the Lord said, 'I will flood the earth, and all the people will be like, 'Oh no, we're all wet.''"
 
 The lectern is scenery in First Utilitarian Church of Enigma Lake. "The lectern is a simple wooden structure, with a slanted top for holding a book."
 
@@ -380,10 +438,12 @@ Instead of examining the Book of Utilitarianism:
 The electrical outlet is scenery in First Utilitarian Church of Enigma Lake. "A standard electrical outlet, set into the wall[if the extension cord is plugged into the electrical outlet and the player encloses the extension cord]. The extension cord is plugged into it[otherwise if the extension cord is plugged into the electrical outlet]. An extension cord is plugged into it[end if]." 
 Understand "wall/power/electric/point/mains/GPO" as the electrical outlet.
 It is plug-into-able.
+The snarky remark of the electrical outlet is "This mission is making me wish I had a fork."
 
 Book 17 - Extension Cord
 
 The extension cord is a thing. The description is "A long, heavy-duty extension cord[if the extension cord is plugged into the electrical outlet and the location is First Utilitarian Church of Enigma Lake], plugged into the wall outlet[otherwise if the extension cord is plugged into the electrical outlet and the location is the steeple]. It trails down through the trapdoor[otherwise if the extension cord is plugged into the electrical outlet and the location is the vestry]. It trails through the door into the church[end if]." 
+The snarky remark of the extension cord is "You can never have too many extension cords. Unless you have too many extension cords. Then you have too many extension cords."
 
 It is pluggable.
 
@@ -545,8 +605,10 @@ After unplugging the extension cord:
 Book 17 - Vestry
 
 The vestry is a leavable room. It is east of First Utilitarian Church. It has egress west. It is in ELR. "It's a small room, with a door leading to the church proper to the west. A lovely tapestry hangs on the wall[if the tapestry is pushed aside]. It is pushed aside, revealing a circuit breaker box[end if]."
+The snarky remark of the vestry is "Seen one vestry, seen 'em all."
 
 The tapestry is scenery in the vestry. "An intricate tapestry, depicting a scene of a medieval village. It's a bit out of place in a church, but it's lovely." The tapestry can be pushed aside. Understand "wall hanging", "wallhanging" as the tapestry.
+The snarky remark of the tapestry is "I wonder why they don't have a velvet Elvis."
 
 Instead of pushing the tapestry when the tapestry is not pushed aside:
 	say "[We] [push] the tapestry aside, revealing a circuit breaker box mounted on the wall.";
@@ -559,7 +621,8 @@ Instead of pushing the tapestry when the tapestry is pushed aside:
 Instead of looking behind the tapestry:
 	try pushing the tapestry;
 
-The circuit breaker is a scenery device. "A circuit breaker box is mounted on the wall." Understand "box", "safety switch", "switchgear", "disconnect switch", "electrical", "electricity", "fuse switch", "overload switch" and "trip switch" as the circuit breaker. 
+The circuit breaker is a scenery device. "A circuit breaker box is mounted on the wall." Understand "box", "safety switch", "switchgear", "disconnect switch", "electrical", "electricity", "fuse switch", "overload switch" and "trip switch" as the circuit breaker. The circuit breaker is switched off.
+The snarky remark of the circuit breaker is "And the Lord said, 'Let there be light.' And there was light. And then the circuit breaker tripped." 
 
 Book 18 - Steeple
 
@@ -572,10 +635,12 @@ To say makeshift resonator state:
 
 the steeple is above the First Utilitarian Church of Enigma Lake. It is in ELR. 
 "From here, [we] can see the obelisk in the park clearly. Someone has set up a tripod here. [if the content of the tripod is nothing]Nothing is mounted on it[otherwise if the content of the tripod is the telescope][A telescope] is mounted on it[otherwise][makeshift resonator state][end if]."
+The snarky remark of the steeple is "I wonder if I can see my house from here."
 
 The telescope is in the tripod. The description is "A small telescope suitable for amateur astronomy."
+The snarky remark of the telescope is "What's the point of looking at the stars? They're all the same."
 
-Instead of searching the telescope: [looking through]
+Instead of searching the telescope when the content of the tripod is the telescope: [looking through]
 	if mounted-rusty-resonator is true and mounted-shiny-resonator is true:
 		say "The telescope is pointed at the obelisk in the park. It's a bit out of focus, but [we] can see it clearly enough. Two beams of light are focused on the obelisk from elsewhere, striking the crystal adornment at its apex. The crystal is glowing brightly.";
 	otherwise if mounted-rusty-resonator is true or mounted-shiny-resonator is true:
@@ -583,7 +648,11 @@ Instead of searching the telescope: [looking through]
 	otherwise:
 		say "The telescope is pointed at the obelisk in the park. It's a bit out of focus, but [we] can see it clearly enough.";
 
+Instead of searching the telescope:
+	say "[Our] hand is not steady enough to focus the telescope. [We] should put it on a tripod.";
+
 The tripod is scenery in the steeple. The tripod has an object called the content. "A tripod [if the content is nothing]with an empty mounting where something might be placed[otherwise]with [a content] mounted on it[end if]."
+The snarky remark of the tripod is "You ever notice how tripods always have three legs?"
 
 The examine containers rule does nothing when the noun is the tripod.
 
@@ -650,11 +719,30 @@ Instead of putting something on the tripod:
 
 The steeple-obelisk-facade is a backdrop. It is in the steeple. Understand "obelisk/park" as steeple-obelisk-facade. "The obelisk in the park is clearly visible from here."
 
+Instead of examining the steeple-obelisk-facade:
+	say "The obelisk in the park is clearly visible from here.[run paragraph on]";
+	let beam count be 0;
+	if mounted-rusty-resonator is true:
+		increase beam count by 1;
+	if mounted-shiny-resonator is true:
+		increase beam count by 1;
+	if mounted-makeshift-resonator is true:
+		increase beam count by 1;
+	if beam count is 1:
+		say "A beam of light is focused on the obelisk from elsewhere, striking the crystal adornment at its apex. The crystal is glowing faintly";
+	otherwise if beam count is 2:
+		say "Two beams of light are focused on the obelisk from elsewhere, striking the crystal adornment at its apex. The crystal is glowing brightly";
+	otherwise if beam count is 3:
+		say "Three beams of light are focused on the obelisk from elsewhere, striking the crystal adornment at its apex. The crystal is glowing blindingly";
+		say "[paragraph break][italic type][bracket]Far out![close bracket][roman type]";
+	say ".";
+
 Book 19 - Lake at Ridge
 
 the Lake at Ridge is north of Lake Street by the Park. It is in ELR. It is outdoors.
 The printed name is "Lake Street and Ridge Road". The preposition is "at the intersection of".
 "[if player is in the abandoned truck]There is a glove compartment on the passenger side, [glove compartment state].[paragraph break][end if]The intersection lies at the edge of the lake. Lake Street runs south into town, while Ridge Road heads off into the darkness east of here. A little park along the lake shore is to the west."
+The snarky remark of the Lake at Ridge is "What ridge? I don't see a ridge."
 
 To say glove compartment state:
 	if the glove compartment is open:
@@ -663,8 +751,12 @@ To say glove compartment state:
 		say "closed";
 
 An abandoned pickup truck is a fixed in place closed enterable openable container in Lake at Ridge. 
+The description is "The truck is relatively new, with no sign as to why it was abandoned."
+The snarky remark of the abandoned pickup truck is "Should I be scared?"
 The glove compartment is a scenery closed openable container in the abandoned truck.
 Understand "box/glovebox" as the glove compartment.
+The description is "The glove compartment is [if the glove compartment is open]open[otherwise]closed[end if]."
+The snarky remark of the glove compartment is "Oh good, I need a pair of gloves."
 The brass key is a key. It is in the glove compartment. 
 
 After entering the abandoned truck:
@@ -687,14 +779,17 @@ Rule for writing a paragraph about the abandoned truck:
 Book 20 - Lake Shore north of the park
 
 the lake shore north of the park is west of Lake at Ridge and north of Enigma Park. It is in ELR. It is outdoors. The preposition is "on". "A sliver of moon hangs over the lake, casting a silvery light over the water. The park is to the south, while the lake stretches off to the north. A workshed is to the southeast. A road can be seen to the east."
+The snarky remark of the lake shore north of the park is "I wonder what Klimp would say is in the lake."
 
 The workshed-facade is a building facade. It is in Lake Shore North of the Park. It is privately-named. The printed name is "workshed". Understand "workshed/shed" as workshed-facade. "The workshed is a small, weathered building, with a single door and no windows."
 	The workshed-facade fronts the workshed.
 	It is enterable from Lake Shore North of the Park.
+The snarky remark of the workshed-facade is "Groovy."
 
 Book 21 - Workshed
 
-the workshed is a leavable room. It has egress northwest. It is in ELR. "It is a small, weathered building, with a single door and no windows, and a creaky wooden floor. The interior is dimly lit by a single light bulb hanging from the ceiling. [equipment cabinet state] cabinet is in the corner. [rusty metal door state], rusty metal door leads out of the shed. [if the trapdoor is not obscured]A trapdoor is in the floor, [trapdoor state].[end if]"
+the workshed is a leavable room. It has egress northwest. It is in ELR. "It is a small, weathered building, with a single door and no windows, and a creaky wooden floor. The interior is dimly lit by a single light bulb hanging from the ceiling. [equipment cabinet state] cabinet is in the corner. [rusty metal door state], rusty metal door leads out of the shed. [if the trapdoor is not obscured]A trapdoor is in the floor, [trapdoor state].[end if]".
+The snarky remark of the workshed is "I wonder if there's a chainsaw in here."
 
 To say equipment cabinet state:
 	if the equipment cabinet is open:
@@ -715,16 +810,23 @@ To say rusty metal door state:
 		say "A closed";
 
 The rusty metal door is a closed openable scenery door. It is southeast of Lake Shore North of the Park and northwest of the workshed. "[if open]The door is open[otherwise]The door is closed[end if]."
+The snarky remark of the rusty metal door is "It inspires confidence."
 
 The equipment cabinet is a closed locked openable lockable scenery container in the workshed.
 It has matching key the iron key.
+"A heavy metal cabinet with a lock. [if the equipment cabinet is open]The cabinet is open[otherwise]The cabinet is closed[end if]."
 
-The rusty astral resonator is in the equipment cabinet. 
+The rusty astral resonator is in the equipment cabinet. It is privately-named. The description is "A small, rusty, metallic, cylindrical object. One end is capped with a crystal lens, while the other terminates in two metal chains, each with a metal clamp, as if it were designed to be attached to something.".
+The printed name is "[if Astral Secrets is familiar]rusty astral resonator[otherwise]strange, rusty, metal object[end if]".
+Understand "rusty/astral/resonator" as the rusty astral resonator when Astral Secrets is familiar.
+Understand "strange/rusty/metal/metallic/cylindrical/cylinder/object" as the rusty astral resonator.
 
 The trapdoor is a scenery door. It is undescribed. It is below workshed and above the hidden cave.
 The trapdoor can be obscured. The trapdoor is obscured.
 Instead of doing something to the trapdoor when the trapdoor is obscured:
 	say "[text of parser error internal rule response (E)][line break]";
+
+The snarky remark of the rusty astral resonator is "[if the shiny astral resonator is not familiar]Ooh. I've always wanted one of these[otherwise]Someone should have taken better care of this[end if].".
 
 Book 22 - Hidden cave
 
@@ -871,10 +973,11 @@ Horton-back-facade is a building facade. It is in Horton Graveyard. It is privat
 
 The Witnessing of Hezekiah is in the metal cabinet. The description is "A small, leather-bound book, titled 'The Witnessing of Hezekiah: as told to Jeremiah Horton by Hezekiah Horton'. The book is filled with strange, cryptic passages, and is difficult to read. [We] [find] one page of particular interest. It reads, 'And lo, Hezekiah, in his wisdom, did prophesy of the impending flood and the necessity to make ready. He spoke of a sacred artifact, a resonator, bestowed with divine power, that would unveil a gateway to the ethereal realm. And he revealed the quest to find the astral focus, a sacred relic of great significance. Thus he spake: [']Take the resonator, and with reverence, bind it to the eternal flame, and then to the astral focus. Channel a mighty power through it, and direct them towards the crystal eye. Strike the eye thrice, with unwavering devotion, and behold, the portal shall open, revealing the path to transcendence.[']'";
 
-The shiny astral resonator is in the metal cabinet. It is privately-named. The description is "A small, metallic, cylindrical object. One end is capped with a crystal lens, while the other terminates in two metal chains, each with a metal clamp, as if it were designed to be attached to something.".
+The shiny astral resonator is in the metal cabinet. It is privately-named. The description is "A small, shiny, metallic, cylindrical object. One end is capped with a crystal lens, while the other terminates in two metal chains, each with a metal clamp, as if it were designed to be attached to something.".
 The printed name is "[if Astral Secrets is familiar]shiny astral resonator[otherwise]strange, shiny, metal object[end if]".
 Understand "shiny/astral/resonator" as the shiny astral resonator when Astral Secrets is familiar.
-Understand "strange/shiny/metal/object" as the shiny astral resonator.
+Understand "strange/shiny/metal/metallic/cylindrical/cylinder/object" as the shiny astral resonator.
+The snarky remark of the shiny astral resonator is "[if the rusty astral resonator is not familiar]Ooh. I've always wanted one of these[otherwise]Wow, this is one is so shiny[end if].";
 
 Book 28 - Fire Station 1
 
@@ -923,7 +1026,10 @@ To break is a verb.
 Attacking it with is an action applying to two things. Understand "attack [something] with [something]", "break [something] with [something]", "smash [something] with [something]", "hit [something] with [something]", "strike [something] with [something]", "pound [something] with [something]", "pummel [something] with [something]", "bash [something] with [something]", "crush [something] with [something]", "destroy [something] with [something]", "demolish [something] with [something]", "wreck [something] with [something]", "shatter [something] with [something]", "splinter [something] with [something]", "crack [something] with [something]", "thump [something] with [something]", "wallop [something] with [something]" as attacking it with.
 
 Check attacking something with something when the second noun is not the sledgehammer:
-	say "Futile.";
+	say "[text of block attacking rule response (A)][paragraph break]" instead;
+
+Check attacking something with something when the noun is not the walls or the location is not the bookstore basement:
+	say "[text of block attacking rule response (A)][paragraph break]" instead;
 
 Instead of attacking the walls with the sledgehammer when the location is the Bookstore Basement and the bricked-up-hole is not revealed:
 	say "[We] [break] through the wall, revealing a dark space to the north.";

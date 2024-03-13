@@ -26,4 +26,7 @@ After deciding the scope of the player while dropping (this is the place the roo
 Instead of dropping a room:
 	say "[text of the can't drop what's not held rule response (A)][paragraph break]";
 
+Rule for deciding whether all includes the location:
+	it does not.
+
 Visible Rooms ends here.
