@@ -506,6 +506,22 @@ The church slack rule is listed first in the slack rules.
 The vestry slack rule is listed before the church slack rule in the slack rules.
 The steeple slack rule is listed before the vestry slack rule in the slack rules.
 
+Description notes for the extension cord:
+	if something (called the socket) accepts the item described:
+		if the socket is the electrical outlet:
+			if the location is the vestry:
+				add "trailing out of the room" to descriptive notes;
+			otherwise if the location is the steeple:
+				add "trailing down through the trapdoor" to descriptive notes;
+			otherwise:
+				add "plugged into [the socket]" to descriptive notes;
+		otherwise:
+			add "plugged into [the socket]" to descriptive notes;
+	if something (called the plug) is plugged into the item described:
+		add "with [the plug] plugged into it" to descriptive notes.
+
+The plug-socket description rule does nothing when the item described is the extension cord.
+
 Rule for writing a paragraph about the extension cord when the extension cord is plugged in:
 	if the location is First Utilitarian Church of Enigma Lake and the player encloses the extension cord:
 		say "The extension cord is plugged into the wall outlet.";

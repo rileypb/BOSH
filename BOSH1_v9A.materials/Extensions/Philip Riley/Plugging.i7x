@@ -112,7 +112,7 @@ Check going when the player encloses something plug-into-able (called the socket
 
 Book - Appearance in inventory
 
-Description notes for a thing:
+Description notes for a thing (this is the plug-socket description rule):
 	if something (called the socket) accepts the item described:
 		add "plugged into [the socket]" to descriptive notes;
 	if something (called the plug) is plugged into the item described:
