@@ -232,7 +232,9 @@ After discussing for-a-screwdriver-pawn:
 	
 about the laundromat owner is a questioning quip.
 	The comment is "[We] [say], 'How do you suppose I might get in touch with this man who runs the laundromat? I really could use a screwdriver.'".
-	The reply is "'Well, that's a tricky one. Laundromat's been closed for almost two weeks now, since the owner just split for some reason he didn't bother to share. Not likely to get ahold of him. If you're not averse to a little trespassing, though, see if you come across a watch. Another thing he borrowed.'".
+	The reply is "'Well, that's a tricky one. Laundromat's been closed for almost two weeks now, since the owner just split for some reason he didn't bother to share. Not likely to get ahold of him. If you're not averse to a little trespassing, though, see if you come across a watch. Another thing he borrowed.'
+	
+	Outside you hear the screech of tires and the slam of a car door.".
 	It quip-supplies Dave.
 	It follows for-a-screwdriver-pawn.
 	
@@ -407,11 +409,13 @@ Instead of moving the stacks of crates with the handtruck:
 
 After entering the broken washing machine:
 	say "There is a flash of light and [we] [find] [ourselves] somewhere else...";
-	end the story saying "Thanks for testing my game. This is the end of Part 1.";
+	[ end the story saying "Thanks for testing my game. This is the end of Part 1."; ]
+	now the player is in Featureless Hyperplane;
 
 After touching the strange glow:
 	say "There is a flash of light and [we] [find] [ourselves] somewhere else...";
-	end the story saying "Thanks for testing my game. This is the end of Part 1.";
+	[ end the story saying "Thanks for testing my game. This is the end of Part 1."; ]
+	now the player is in Featureless Hyperplane;
 	
 The light switch is a scenery device in the back basement. It is switched on. Understand "glow-in-the-dark", "glowing" as the light switch. 
 The description is "It's a standard light switch."
