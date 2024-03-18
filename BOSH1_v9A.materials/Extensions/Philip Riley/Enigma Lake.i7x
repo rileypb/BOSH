@@ -1283,11 +1283,14 @@ Every turn when the Skalek is not in the location:
 			otherwise if seen at last is true:
 				if old structure is not new structure:
 					if old structure is not "" and new structure is not "":
-						say "Some shadowy figures appear [from-dir the opposite of dir], emerging from [the old structure] and entering [the new structure].";
+						say "Some shadowy figures emerge from [the old structure] and enter [the new structure], moving [dir].";
+						[ say "Some shadowy figures appear [from-dir the opposite of dir], emerging from [the old structure] and entering [the new structure]."; ]
 					otherwise if old structure is not "":
-						say "Some shadowy figures appear [from-dir the opposite of dir], emerging from [the old structure] to [the pretty name of the next space].";
+						say "Some shadowy figures emerge from [the old structure] at [the pretty name of the next space], moving [dir].";
+						[ say "Some shadowy figures appear [from-dir the opposite of dir], emerging from [the old structure] to [the pretty name of the next space]."; ]
 					otherwise if new structure is not "":
-						say "Some shadowy figures appear [from-dir the opposite of dir], entering [the new structure].";
+						say "Some shadowy figures leave [the pretty name of the current space] and enter [the new structure], moving [dir].";
+						[ say "Some shadowy figures appear [from-dir the opposite of dir], entering [the new structure]."; ]
 				otherwise:
 				  	say "Some shadowy figures come into view [from-dir the opposite of dir], [the preposition of the next space] [the pretty name of the next space].";
 			otherwise if seen at first is true:
