@@ -356,11 +356,20 @@ The snarky remark of Radio Station WGXC is "I wonder if they have any old record
 
 Book 12 - Radio Station Roof
 
-The radio station roof is a leavable room. It is above Radio Station WGXC. It has egress down. It is in ELR. "[We] can see the obelisk in the park clearly from here. The broadcast tower rises many feet above [us]." The preposition is "on".
+The radio station roof is a leavable room. It is above Radio Station WGXC. It has egress down. It is in ELR. "[We] can see the obelisk in the park clearly from here. The broadcast tower rises many feet above [us]. A metal cabinet is attached to the foot of the tower[if the metal cabinet is locked], held shut by a chain and padlock[otherwise], hanging open[end if]." The preposition is "on".
 The snarky remark of the radio station roof is "I'm not afraid of heights. I'm afraid of falling from heights."
 
-The broadcast tower is scenery in the radio station roof. "A tall, steel lattice structure, rising prominently above the building. This kind of tower was designed to maximize the height for better signal transmission and reception in the era before widespread cable and satellite technology."
+The metal cabinet is a closed, locked, openable, scenery container in the radio station roof. "The metal cabinet is attached to the foot of the broadcast tower[if the metal cabinet is locked], held shut by a chain and padlock[otherwise], hanging open[end if]." 
+
+The power switch is a scenery device in the metal cabinet. "The power switch is set to [if the power switch is switched on]on[otherwise]off[end if]."
+
+The broadcast tower is scenery in the radio station roof. "A tall, steel lattice structure, rising prominently above the building. This kind of tower was designed to maximize the height for better signal transmission and reception in the era before widespread cable and satellite technology. Strangely, the bars of the tower near roof-level are bent inward to form a small platform. It's almost as if something is meant to be mounted there."
 The snarky remark of the broadcast tower is "What a great place to get struck by lightning."
+
+The platform is part of the broadcast tower. The description is "The platform is a small, square area formed by the inward-bent bars of the broadcast tower. It's just large enough to hold a small object. There are two rings set into the back of the platform, allowing something to attached there."
+The snarky remark of the platform is "Curiouser and curiouser."
+
+The rings are part of the platform. The description is "Two metal rings are set into the back of the platform, allowing something to be attached there." They are plural-named. 
 
 Instead of climbing up the broadcast tower:
 	say "[We] [are] afraid of heights.";
@@ -857,7 +866,7 @@ To say glove compartment state:
 		say "closed";
 
 An abandoned pickup truck is a fixed in place closed enterable openable container in Lake at Ridge. 
-The description is "The truck is relatively new, with no sign as to why it was abandoned."
+The description is "The truck is relatively new, with no sign as to why it was abandoned. The tailgate is [if the tailgate is open]down[otherwise]up[end if]."
 The snarky remark of the abandoned pickup truck is "Should I be scared?"
 The glove compartment is a scenery closed openable container in the abandoned truck.
 Understand "box/glovebox" as the glove compartment.
@@ -881,6 +890,14 @@ Understand "start [something]" as switching on.
 
 Rule for writing a paragraph about the abandoned truck:
 	say "There is an abandoned pickup truck at the side of the road."
+
+Understand "lower [tailgate]" as opening. Understand "raise [tailgate]" as closing.
+
+The truck bed is an open container. It is part of the abandoned truck. The description is "It's the bed of a truck, alright."
+
+The tailgate is part of the truck. It is an open, openable container. The description is "The tailgate is[if the truck bed is open] down[otherwise] up[end if]." Understand "tail/gate" as the tailgate. 
+
+The pair of bolt cutters are in the truck bed. The description is "A pair of bolt cutters, with long handles and heavy jaws." They are ambiguously plural. 
 
 Book 20 - Lake Shore north of the park
 
@@ -919,7 +936,7 @@ The rusty metal door is a closed openable scenery door. It is southeast of Lake 
 The snarky remark of the rusty metal door is "It inspires confidence."
 
 The equipment cabinet is a closed locked openable lockable scenery container in the workshed.
-It has matching key the iron key.
+It has matching key the iron key. Understand "heavy/metal" as the equipment cabinet.
 "A heavy metal cabinet with a lock. [if the equipment cabinet is open]The cabinet is open[otherwise]The cabinet is closed[end if]."
 
 The rusty astral resonator is in the equipment cabinet. It is privately-named. The description is "A small, rusty, metallic, cylindrical object. One end is capped with a crystal lens, while the other terminates in two metal chains, each with a metal clamp, as if it were designed to be attached to something.".
@@ -1070,7 +1087,7 @@ The large grave is a room. It is in ELR. It is outdoors. "The hole is substantia
 
 Above the large grave is the Horton graveyard. Below the Horton graveyard is nowhere.
 
-A metal cabinet is a closed openable container in the large grave. The description is "A small metal cabinet, about the size of a breadbox. It seems to be made of lead. It is [if open]open[otherwise]closed[end if]." 
+A metal case is a closed openable container in the large grave. The description is "A small metal case, about the size of a breadbox. It seems to be made of lead. It is [if open]open[otherwise]closed[end if]." 
 A metal corner is in the large grave. "[We] [notice] a small corner of something metallic sticking out of the dirt at the bottom of the hole." The description is "The corner of some metallic object, possibly made of lead, sticks out of the dirt at the bottom of the hole."
 
 Understand the command "uncover" as something new.
@@ -1081,11 +1098,11 @@ Check uncovering the metal corner when the player does not enclose the shovel:
 	say "It's too deep to reach without a shovel." instead;
 
 Carry out uncovering the metal corner:
-	now the metal cabinet is in the location;
+	now the metal case is in the location;
 	now the metal corner is nowhere;
 	
 Report uncovering the metal corner:
-	say "[We] [dig] the metal object out of the dirt, revealing a small metal cabinet.";
+	say "[We] [dig] the metal object out of the dirt, revealing a small metal case.";
 
 Check uncovering something when the noun is not the metal corner:
 	say "There's nothing to uncover here." instead; 
@@ -1097,9 +1114,9 @@ Horton-back-facade is a building facade. It is in Horton Graveyard. It is privat
 	Horton-back-facade fronts Horton Family House Kitchen.
 	It is enterable from Horton Graveyard. 
 
-The Witnessing of Hezekiah is in the metal cabinet. The description is "A small, leather-bound book, titled 'The Witnessing of Hezekiah: as told to Jeremiah Horton by Hezekiah Horton'. The book is filled with strange, cryptic passages, and is difficult to read. [We] [find] one page of particular interest. It reads, 'And lo, Hezekiah, in his wisdom, did prophesy of the impending flood and the necessity to make ready. He spoke of a sacred artifact, a resonator, bestowed with divine power, that would unveil a gateway to the ethereal realm. And he revealed the quest to find the astral focus, a sacred relic of great significance. Thus he spake: [']Take the resonator, and with reverence, bind it to the eternal flame, and then to the astral focus. Channel a mighty power through it, and direct them towards the crystal eye. Strike the eye thrice, with unwavering devotion, and behold, the portal shall open, revealing the path to transcendence.[']'";
+The Witnessing of Hezekiah is in the metal case. The description is "A small, leather-bound book, titled 'The Witnessing of Hezekiah: as told to Jeremiah Horton by Hezekiah Horton'. The book is filled with strange, cryptic passages, and is difficult to read. [We] [find] one page of particular interest. It reads, 'And lo, Hezekiah, in his wisdom, did prophesy of the impending flood and the necessity to make ready. He spoke of a sacred artifact, a resonator, bestowed with divine power, that would unveil a gateway to the ethereal realm. And he revealed the quest to find the astral focus, a sacred relic of great significance. Thus he spake: [']Take the resonator, and with reverence, bind it to the eternal flame, and then to the astral focus. Channel a mighty power through it, and direct them towards the crystal eye. Strike the eye thrice, with unwavering devotion, and behold, the portal shall open, revealing the path to transcendence.[']'";
 
-The shiny astral resonator is in the metal cabinet. It is privately-named. The description is "A small, shiny, metallic, cylindrical object. One end is capped with a crystal lens, while the other terminates in two metal chains, each with a metal clamp, as if it were designed to be attached to something.".
+The shiny astral resonator is in the metal case. It is privately-named. The description is "A small, shiny, metallic, cylindrical object. One end is capped with a crystal lens, while the other terminates in two metal chains, each with a metal clamp, as if it were designed to be attached to something.".
 The printed name is "[if Astral Secrets is familiar]shiny astral resonator[otherwise]strange, shiny, metal object[end if]".
 Understand "shiny/astral/resonator" as the shiny astral resonator when Astral Secrets is familiar.
 Understand "strange/shiny/metal/metallic/cylindrical/cylinder/object" as the shiny astral resonator.
