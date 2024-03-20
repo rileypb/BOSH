@@ -21,7 +21,7 @@ Before starting the virtual machine:
 
 When play begins (this is the graphics window construction rule):
 	if glulx graphics is supported:
-		[ build graphics window; ]
+		build graphics window;
 		follow the current graphics drawing rule.
 
 

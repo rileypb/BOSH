@@ -203,7 +203,7 @@ strange symbols	"I'd like to see that."	"I'd like to see that."
 tapestry	"[We] would rather not incur the wrath of God."	--
 town hall facade	"[We] [save] the town hall in an heroic effort... No."	"[We] attempt to push the building around, but it's not going anywhere."
 trees	"[We] [don't] have a hatchet."	"Futile."
-tripod	"It's affixed to the floor."	"It's affixed to the floor."
+tripod	"It has been chained to the floor."	"It has been chained to the floor."
 trivia competition award	"It's good where it is."	"It's good where it is."
 TV aerial antenna	"It's attached to the roof."	"It's attached to the roof."
 used coffee cups	"Tempting, but no."	"Tempting, but no."

@@ -410,6 +410,14 @@ Book 16 - First Utilitarian Church of Enigma Lake
 The First Utilitarian Church of Enigma Lake is a leavable room. It has egress west. It is east of Lake Street by the Park. It is in ELR. "The interior is dimly lit by the stained glass windows, and the pews are arranged in neat rows facing the pulpit. A standard electrical outlet is set into the wall."
 The snarky remark of the First Utilitarian Church of Enigma Lake is "Where's the gift shop?"
 
+A rule for snarking First Utilitarian Church of Enigma Lake:
+	if the snarky remark of the First Utilitarian Church of Enigma Lake is not empty and the doll-fly is not in the location:
+		snark First Utilitarian Church of Enigma Lake;
+	rule succeeds;
+
+Instead of doing something other than examining to the doll-fly:
+	say "You can't do that to the doll-fly.";
+
 The stained glass windows are scenery in First Utilitarian Church of Enigma Lake. "As is traditional in Utilitarian churches, the stained glass windows are all plain glass, allowing the maximum amount of light to enter the building."
 The snarky remark of the stained glass windows is "I like the underlying message of the stained glass. It's like they're saying, 'We're not going to waste time on this, we've got things to do.'"
 
@@ -432,7 +440,68 @@ Instead of examining the Book of Utilitarianism:
 	otherwise if section is 2:
 		say "The text is the 'Book of Utilitarianism'. [We] [open] to a page at random and [read] the text:[paragraph break][one of]And Gob begat Bob, and Bob begat Rob, and Rob begat Job, and Job begat Chauncey, and Chauncey begat Hank, and all told there were fifty-two generations between Gob and Gob XII, who was the last of the line. And Gob XII begat no one, for he was a eunuch. And the Lord said, 'That's what you get for hanging out with lizard people.'[or]Then the Lord said to Gorm, 'Gather up all your childen, and take them to the mountain, and there I will give you the tablets of Utilitarianism, which I have written, that you may teach them.' And Gorm said, 'But Lord, I have no children.' And the Lord said, 'Then go forth and make some children, and then gather them up and take them to the mountain, and there I will give you the tablets of Utilitarianism, which I have written, that you may teach them.'[or]And the hosts of the lizard people came down from the mountains, and they were many, and they were fierce, and they were hungry. And the Lord said, 'I'm not going to feed them, they're your problem.'[or]And the Lord said, 'I am the Lord, and I am a jealous God, and I will visit the iniquity of the fathers upon the children unto the third and fourth generation of them that hate me, and show mercy unto thousands of them that love me and keep my commandments.' And the lizard people said, 'We hate you.'[then at random]";
 	otherwise:
-		say "The text is the 'Book of Utilitarianism'. [We] [open] to a page at random and [read] the text:[paragraph break][one of]However, the Lord said to the lizard people, 'I am the Lord of the humans, and I -- oh, and the aliens -- and I will smite you with great vengeance and furious anger and the like.'[or]By the by, Gorm came upon the town of Armagast, and he saw that it was good, and he said, 'I shall build a church here.' And the Lord said, 'No, don't do that, it's a bad idea.' And Gorm said, 'But Lord, I have already started.' And the Lord said, 'Well, okay, but don't say I didn't warn you.'[or]But Gorm's wife was treacherous, and she lay with lizard people, and she bore a son, and the Lord said, 'I'm not going to smite you, but I'm not going to be happy about it.'[or]When Gorm learned of his wife's doings, he rent his garments and wept, and the Lord said, 'Keep it together, man.'[or]And the land was filled with the iniquities of the lizard people, and the Lord said, 'I'm not going to clean that up.'[or]The host of the lizard people sacked the now rather prosperous town of Armagast, and the Lord said, 'I told you so.'[or]And the Lord said, ' 'Tis a far, far better thing that I do, than I have ever done; 'tis a far, far better rest that I go to than I have ever known.' And the lizard people said, 'That's from A Tale of Two Cities.'[or]And the Lord was attending his weekly reading circle, when he had an idea. 'I shall make a world,' he said, 'and I shall call it Earth.' And the lizard people said, 'That's a terrible name.'[or]And lo, the lizard people rebelled against the Lord, and the Lord said, 'I'm not going to put up with that.'[or]And in the town of Gabblehouse was born an infant to a woman named Gorma, and the Lord said, 'That's a terrible name.'[or]And the Lord said, 'I shall rain down upon thee with great vengeance and furious anger, and the lizard people said, 'We've heard that before.'[then at random]"
+		say "The text is the 'Book of Utilitarianism'. [We] [open] to a page at random and [read] the text:[paragraph break][one of]However, the Lord said to the lizard people, 'I am the Lord of the humans, and I -- oh, and the aliens -- and I will smite you with great vengeance and furious anger and the like.'[or]By the by, Gorm came upon the town of Armagast, and he saw that it was good, and he said, 'I shall build a church here.' And the Lord said, 'No, don't do that, it's a bad idea.' And Gorm said, 'But Lord, I have already started.' And the Lord said, 'Well, okay, but don't say I didn't warn you.'[or]But Gorm's wife was treacherous, and she lay with lizard people, and she bore a son, and the Lord said, 'I'm not going to smite you, but I'm not going to be happy about it.'[or]When Gorm learned of his wife's doings, he rent his garments and wept, and the Lord said, 'Keep it together, man.'[or]And the land was filled with the iniquities of the lizard people, and the Lord said, 'I'm not going to clean that up.'[or]The host of the lizard people sacked the now rather prosperous town of Armagast, and the Lord said, 'I told you so.'[or]And the Lord said, ' [']Tis a far, far better thing that I do, than I have ever done; [']tis a far, far better rest that I go to than I have ever known.' And the lizard people said, 'That's from A Tale of Two Cities.'[or]And the Lord was attending his weekly reading circle, when he had an idea. 'I shall make a world,' he said, 'and I shall call it Earth.' And the lizard people said, 'That's a terrible name.'[or]And lo, the lizard people rebelled against the Lord, and the Lord said, 'I'm not going to put up with that.'[or]And in the town of Gabblehouse was born an infant to a woman named Gorma, and the Lord said, 'That's a terrible name.'[or]And the Lord said, 'I shall rain down upon thee with great vengeance and furious anger, and the lizard people said, 'We've heard that before.'[then at random]"
+
+Book 16.5 - Hathgar the Pitiful
+
+The doll-fly is an animal. The description is "It is a flying doll with the head of a giant fly." 
+The snarky remark of the doll-fly is "I'm not sure what's worse, the doll or the fly." 
+The doll-fly can be named or unnamed. The doll-fly is unnamed.
+Understand "doll/fly" as the doll-fly.
+Understand "Hathgar the Pitiful", "Hathgar", "Pitiful" as the doll-fly when the doll-fly is named.
+The printed name of the doll-fly is "[if the doll-fly is named]Hathgar the Pitiful[otherwise]doll-fly[end if]".
+
+Before doing something when the doll-fly is not named and the location is First Utilitarian Church of Enigma Lake and the doll-fly is in the location:
+	say "The doll-fly shrieks 'Begone! Or I, Hathgar the Pitiful, shall smite thee!'";
+	now the doll-fly is named;
+	now the doll-fly is proper-named;
+
+Instead of going east when the location is the First Utilitarian Church of Enigma Lake and the doll-fly is in the location:
+	say "[The doll-fly] prevents you from reaching the east exit."
+
+Instead of going up when the location is the First Utilitarian Church of Enigma Lake and the doll-fly is in the location:
+	say "[The doll-fly] prevents you from reaching the ladder."
+
+Instead of attacking the doll-fly:
+	say "[The doll-fly] [one of]is too quick for [us][or]moves up out of [our] reach[or]dodges [our] attack[or]flies out of [our] reach[or]flies away[at random]."
+
+Instead of attacking the doll-fly with something:
+	say "[The doll-fly] [one of]is too quick for [us][or]moves up out of [our] reach[or]dodges [our] attack[or]flies out of [our] reach[or]flies away[at random]."
+
+Instead of taking the doll-fly:
+	say "Even if you could catch it, you wouldn't want to.";
+
+Instead of saying hello to the doll-fly:
+	say "[The doll-fly] buzzes around, but doesn't respond.";
+
+Before answering the doll-fly that something:
+	if the topic understood in lower case is "bara ba jagal":
+		say "Upon hearing the words 'bara ba jagal', [the doll-fly] wails a high-pitched, mournful sound, and then winks out of existence.";
+		now the doll-fly is off-stage;
+		stop the action;
+	otherwise:
+		say "The doll-fly buzzes around, but doesn't respond.";
+		stop the action;
+
+Instead of doing something other than taking or attacking to the doll-fly when action requires a touchable noun:
+	say "You can't get close enough to [the doll-fly] to touch it.";
+
+Incanting is an action applying to nothing. Understand "bara ba jagal" as incanting.
+
+Check incanting:
+	if the location is not the First Utilitarian Church of Enigma Lake:
+		say "If you say so.";
+		stop the action;
+	if the doll-fly is off-stage:
+		if the doll-fly has been in First Utilitarian Church of Enigma Lake:
+			say "You've already banished [the doll-fly]." instead;
+		otherwise:
+			say "Cheater." instead;
+	otherwise:
+		try answering the doll-fly that "bara ba jagal";
+		stop the action;
+
+Book 17 - Extension Cord
 
 The electrical outlet is scenery in First Utilitarian Church of Enigma Lake. "A standard electrical outlet, set into the wall[if the extension cord is plugged into the electrical outlet and the player encloses the extension cord]. The extension cord is plugged into it[otherwise if the extension cord is plugged into the electrical outlet]. An extension cord is plugged into it[end if]." 
 Understand "wall/power/electric/point/mains/GPO" as the electrical outlet.
@@ -441,8 +510,6 @@ The snarky remark of the electrical outlet is "This mission is making me wish I 
 
 Does the player mean plugging the extension cord into the electrical outlet: 
 	it is very likely.
-
-Book 17 - Extension Cord
 
 The extension cord is a thing. The description is "A long, heavy-duty extension cord[if the extension cord is plugged into the electrical outlet and the location is First Utilitarian Church of Enigma Lake], plugged into the wall outlet[otherwise if the extension cord is plugged into the electrical outlet and the location is the steeple]. It trails down through the trapdoor[otherwise if the extension cord is plugged into the electrical outlet and the location is the vestry]. It trails through the door into the church[end if]." 
 The snarky remark of the extension cord is "You can never have too many extension cords. Unless you have too many extension cords. Then you have too many extension cords."
@@ -633,7 +700,7 @@ After unplugging the extension cord:
 Book 17 - Vestry
 
 The vestry is a leavable room. It is east of First Utilitarian Church. It has egress west. It is in ELR. "It's a small room, with a door leading to the church proper to the west. A lovely tapestry hangs on the wall[if the tapestry is pushed aside]. It is pushed aside, revealing a circuit breaker box[end if]."
-The snarky remark of the vestry is "Seen one vestry, seen 'em all."
+The snarky remark of the vestry is "Seen one vestry, seen [']em all."
 
 The tapestry is scenery in the vestry. "An intricate tapestry, depicting a scene of a medieval village. It's a bit out of place in a church, but it's lovely." The tapestry can be pushed aside. Understand "wall hanging", "wallhanging" as the tapestry.
 The snarky remark of the tapestry is "I wonder why they don't have a velvet Elvis."
@@ -662,10 +729,10 @@ To say makeshift resonator state:
 		say "[A makeshift astral resonator] is mounted on the tripod";
 
 the steeple is above the First Utilitarian Church of Enigma Lake. It is in ELR. 
-"From here, [we] can see the obelisk in the park clearly. Someone has set up a tripod here. [if the content of the tripod is nothing]Nothing is mounted on it[otherwise if the content of the tripod is the telescope][A telescope] is mounted on it[otherwise][makeshift resonator state][end if]."
+"From here, [we] can see the obelisk in the park clearly. Someone has set up a tripod here. [if the content of the tripod is nothing]Its mount is empty[otherwise if the content of the tripod is the telescope][A telescope] is mounted on it[otherwise][makeshift resonator state][end if]."
 The snarky remark of the steeple is "I wonder if I can see my house from here."
 
-The telescope is in the tripod. The description is "A small telescope suitable for amateur astronomy."
+The telescope is in the tripod. The description is "A small telescope suitable for amateur astronomy[if the content of the tripod is the telescope]. It's mounted on a tripod[end if]."
 The snarky remark of the telescope is "What's the point of looking at the stars? They're all the same."
 
 Instead of searching the telescope when the content of the tripod is the telescope: [looking through]
@@ -923,6 +990,10 @@ Divining-action is an action applying to one thing. Understand "divine with [som
 Book 25.1 - Horton Family House Parlor
 
 The Horton Family House Parlor is south of Horton Family House Kitchen. It is in ELR. It is indoors. "The parlor, like the kitchen, still has its furnishings in place. A few chairs and a table are arranged around the room."
+
+After going to the Horton Family House Parlor for the first time:
+	say "Upon entering the parlor, [we] [are] attacked by a horrible flying creature with the body of a doll and the head of a fly! [We] [wave] it away and it flies out of the room into the kitchen.";
+	now the doll-fly is in First Utilitarian Church of Enigma Lake.
 
 The parlor chairs are scenery in the Horton Family House Parlor. "A few chairs are arranged around the room."
 
@@ -1247,14 +1318,10 @@ Instead of examining the mystic compass:
 
 Volume 4.5 - The Lizard People
 
-Skalek is a man. The description is "A tall, imposing figure, with a long, scaly tail and a head that looks like a lizard's. It is dressed in a smart grey suit." Skalek is in Rolle's Department Store.
+The group of lizard people is a person. The description is "Three humanoid figures, each with a long, scaly tail and a head that looks like a lizard's. They are dressed in smart grey suits." The group of lizard people is in Rolle's Department Store.
 
-Korthax is a man. The description is "A short, squat figure, with a long, scaly tail and a head that looks like a lizard's. It is dressed in a smart grey suit." Korthax is in Rolle's Department Store. 
-
-Yssik is a man. The description is "A short, squat figure, with a long, scaly tail and a head that looks like a lizard's. It is dressed in a smart grey suit." Yssik is in Rolle's Department Store.
-
-Every turn when the Skalek is not in the location:
-	if the Skalek is in a room (called current space):
+Every turn when the group of lizard people is not in the location:
+	if the group of lizard people is in a room (called current space):
 		let seen at first be false;
 		if the location overlooks the current space:
 			say "[We] [see] the faint trace of shadowy figures off in the distance, [the preposition of the current space] [the pretty name of the current space].";
@@ -1264,9 +1331,7 @@ Every turn when the Skalek is not in the location:
 			let dir be the best route from the current space to the next space;
 			let seen at last be false;
 			if dir is a direction:
-				try Skalek going dir;
-				try Korthax going dir;
-				try Yssik going dir;
+				try group of lizard people going dir;
 				now seen at last is whether or not the location overlooks the next space;
 			let old structure be the structure name of the current space;
 			let new structure be the structure name of the next space;
@@ -1352,5 +1417,11 @@ Carry out power querying:
 test cord with "gonear church/take cord/plug it into outlet/e/drop cord/w/unplug cord/plug cord into outlet/e/purloin lamp/plug lamp into cord/w/e/drop lamp/w/take lamp/drop cord/w/drop lamp
 /w/unplug cord/take cord/".
 test steeple with "gonear church/take cord/plug it into outlet/u/purloin makeshift astral resonator/take telescope/put resonator in tripod/plug resonator into cord/look".
+
+test hathgar with "gonear kitchen/s/gonear lake street by the park/e"
+
+query-naming is an action applying to nothing. Understand "is hathgar named" as query-naming.
+Carry out query-naming:
+	say whether or not the doll-fly is named;
 
 Enigma Lake ends here.

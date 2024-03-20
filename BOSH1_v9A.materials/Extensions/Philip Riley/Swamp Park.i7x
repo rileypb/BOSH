@@ -473,6 +473,14 @@ The destination name is "Li'l Nectarine Convenience Store".
 The store clerk is a man in the Convenience Store. "The clerk, a scruffy man in his mid-twenties, is leaning against the counter, looking bored." The description is "The clerk looks as if he'd rather be anywhere else. He's wearing jeans and a white t-shirt with something inscrutable scrawled on it. His hair sticks up every which way." Understand "man" as the store clerk.
 The snarky remark of the store clerk is "Finally a source of fashion advice."
 
+After saying hello to the store clerk:
+	say "'Good morning,' Faraji says.";
+	say "'Yeah,' replies the clerk.";
+
+After saying hello to someone who is not Margaret:
+	say "Faraji smiles and says hello.";
+	say "[The noun] nods in response.";
+
 The shop counter is a supporter in the nectarine store. It is scenery. "The counter is arrayed with displays of CBD oil, antacids, and the like."
 
 Some CBD oil is scenery in the convenience store. "[We] [don't] need any of this stuff." 

@@ -6,18 +6,28 @@ A thing can be snarked.
 A room has a text called a snarky remark. The snarky remark is usually "".
 A room can be snarked.
 
+Snarking is an object based rulebook.
+
+To snark (O - an object):
+	say "[italic type][bracket][snarky remark of O][close bracket][roman type][paragraph break]";
+	now O is snarked;
+
+A rule for snarking a thing (called the target) (this is the thing-snarking rule):
+	if the snarky remark of the target is not empty:
+		snark the target;
+		rule succeeds;
+
+A rule for snarking a room (called the target) (this is the room-snarking rule):
+	if the snarky remark of the target is not empty:
+		snark the target;
+		rule succeeds;
+
 After examining a thing when the noun is not snarked:
-	if the snarky remark of the noun is not empty:
-		say "[italic type][bracket][snarky remark of the noun][close bracket][roman type][paragraph break]";
-		now the noun is snarked;
+	follow the snarking rules for the noun;
 	continue the action;
 
 After printing the locale description when the location is not snarked:
-	if the snarky remark of the location is not empty:
-		say "[italic type][bracket][snarky remark of the location][close bracket][roman type][paragraph break]";
-		[ if the location is Strip Mall Parking Lot South:
-			tip "[italic type][bracket]This[close bracket][roman type] indicates Faraji's internal monologue."; ]
-		now the location is snarked;
+	follow the snarking rules for the location;
 	continue the action;
 	
 

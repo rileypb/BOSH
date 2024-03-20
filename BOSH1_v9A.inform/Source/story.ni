@@ -393,7 +393,7 @@ Book 5 - Automatic greeting
 After going to a room:
 	if the current interlocutor is nothing:
 		repeat with P running through the people in the location:
-			if P is not the player:
+			if P is not the player and P is not an animal:
 				postpone saying hello to P;
 				continue the activity; 
 	continue the activity;
@@ -405,7 +405,7 @@ To postpone (act - an action):
 	
 This is the postponement rule:
 	if the postponed action is not waiting:
-		silently try the postponed action;
+		try the postponed action;
 		now the postponed action is waiting;
 	
 The postponement rule is listed before the every turn stage rule in the turn sequence rules.
@@ -787,6 +787,12 @@ The snarky remark is "We were the best team in the league. At least, in our hear
 
 The green smartphone is a phone. It is mobile. The description is "It's a pretty nice phone, only a couple of years old, but [we] [don't] have time to play with it. [We] [need] to get to the office."
 The snarky remark is "Nice phone." 
+
+Instead of switching on the green smartphone:
+	say "[The green smartphone] is out of batteries." instead;
+
+Instead of switching off the green smartphone:
+	say "It's not on." instead;
 
 Check calling someone on the green smartphone:
 	say "[The green smartphone] is out of batteries." instead;

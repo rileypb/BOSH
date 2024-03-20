@@ -433,6 +433,10 @@ Minerva is a woman in Minerva's office. The initial appearance is "Minerva is si
 
 A mahogany desk is in Minerva's office. It is scenery. The description is "The desk is cluttered with papers, a few books, and a coffee maker".
 
+Minerva's papers are scenery. They are on Minerva's desk. The description is "Mind your own business." It is owned by Minerva. It is plural-named.
+
+Minerva's books are scenery on Minerva's desk. The description is "A few books are stacked on the desk." It is plural-named. It is owned by Minerva.
+
 A coffee maker is on the mahogany desk. It is scenery. The description is "A drip coffee maker sits on the desk." Minerva owns the coffee maker.
 
 The cup of coffee is a thing. The description is "[Coffee description]. It is in a paper cup.". The cup of coffee has a number called the hotness.
