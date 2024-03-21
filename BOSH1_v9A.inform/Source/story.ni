@@ -50,6 +50,7 @@ Include Swamp Park by Philip Riley.
 [Include Conversations General by Philip Riley.]
 Include Margaret by Philip Riley. 
 Include Enigma Lake by Philip Riley. 
+Include I Can Dig It by Philip Riley.
 Include Snarky Remarks by Philip Riley.
 
 Include Overlook by Philip Riley.
@@ -1561,7 +1562,7 @@ The ringing-phone	Moira Zin	"'Moira, I'm so sorry about the phone ringing. It's 
 Book 19 - Verbs
  
 To admire is a verb. To shake is a verb. To smile is a verb. To sigh is a verb. To peer is a verb. To turn is a verb. To observe is a verb. To gaze is a verb. To trudge is a verb. To walk is a verb. To step is a verb. To enter is a verb. To exit is a verb. To pause is a verb. To survey is a verb. To hand is a verb. To try is a verb. To see is a verb. To squeal is a verb. To tap is a verb. To curse is a verb. To rap is a verb. To explain is a verb. To gasp is a verb. To return is a verb. To ask is a verb. To think is a verb. To scrunch is a verb. To grimace is a verb. To mutter is a verb. To leave is a verb. To stand is a verb. To mount is a verb. To stammer is a verb. To polish is a verb. To interrupt is a verb. To raise is a verb. To chuckle is a verb. To lean is a verb. To consider is a verb. To nod is a verb. To extricate is a verb. To toss is a verb. To pick is a verb. To flatten is a verb. To remember is a verb. To trip is a verb. To scratch is a verb. To navigate is a verb. To stare is a verb. To emerge is a verb. To breathe is a verb. To attempt is a verb. To strain is a verb. To spin is a verb. To pick is a verb. To tuck is a verb. To consider is a verb. To move is a verb. To save is a verb.
-To dig is a verb. To notice is a verb. To come is a verb. To unscrew is a verb. To pocket is a verb.
+To dig is a verb. To notice is a verb. To come is a verb. To unscrew is a verb. To pocket is a verb. To run is a verb. To examine is a verb.
 
 Book 20 - Images 
 

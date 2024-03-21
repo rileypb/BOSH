@@ -425,7 +425,7 @@ A rule for snarking First Utilitarian Church of Enigma Lake:
 	rule succeeds;
 
 Instead of doing something other than examining to the doll-fly:
-	say "You can't do that to the doll-fly.";
+	say "[We] [can't] get close enough to [the doll-fly] to do that.";
 
 The stained glass windows are scenery in First Utilitarian Church of Enigma Lake. "As is traditional in Utilitarian churches, the stained glass windows are all plain glass, allowing the maximum amount of light to enter the building."
 The snarky remark of the stained glass windows is "I like the underlying message of the stained glass. It's like they're saying, 'We're not going to waste time on this, we've got things to do.'"
@@ -466,10 +466,10 @@ Before doing something when the doll-fly is not named and the location is First 
 	now the doll-fly is proper-named;
 
 Instead of going east when the location is the First Utilitarian Church of Enigma Lake and the doll-fly is in the location:
-	say "[The doll-fly] prevents you from reaching the east exit."
+	say "[The doll-fly] prevents [us] from reaching the east exit."
 
 Instead of going up when the location is the First Utilitarian Church of Enigma Lake and the doll-fly is in the location:
-	say "[The doll-fly] prevents you from reaching the ladder."
+	say "[The doll-fly] prevents [us] from reaching the ladder."
 
 Instead of attacking the doll-fly:
 	say "[The doll-fly] [one of]is too quick for [us][or]moves up out of [our] reach[or]dodges [our] attack[or]flies out of [our] reach[or]flies away[at random]."
@@ -478,7 +478,7 @@ Instead of attacking the doll-fly with something:
 	say "[The doll-fly] [one of]is too quick for [us][or]moves up out of [our] reach[or]dodges [our] attack[or]flies out of [our] reach[or]flies away[at random]."
 
 Instead of taking the doll-fly:
-	say "Even if you could catch it, you wouldn't want to.";
+	say "Even if [we] could catch it, [we] wouldn't want to.";
 
 Instead of saying hello to the doll-fly:
 	say "[The doll-fly] buzzes around, but doesn't respond.";
@@ -493,7 +493,7 @@ Before answering the doll-fly that something:
 		stop the action;
 
 Instead of doing something other than taking or attacking to the doll-fly when action requires a touchable noun:
-	say "You can't get close enough to [the doll-fly] to touch it.";
+	say "[We] can't get close enough to [the doll-fly] to touch it.";
 
 Incanting is an action applying to nothing. Understand "bara ba jagal" as incanting.
 
@@ -503,7 +503,7 @@ Check incanting:
 		stop the action;
 	if the doll-fly is off-stage:
 		if the doll-fly has been in First Utilitarian Church of Enigma Lake:
-			say "You've already banished [the doll-fly]." instead;
+			say "[We've] already banished [the doll-fly]." instead;
 		otherwise:
 			say "Cheater." instead;
 	otherwise:
@@ -951,15 +951,17 @@ The trapdoor is a secret door. It is below the workshed and above a hidden cave.
 After going to the workshed when the trapdoor is unrevealed and the player carries the dowsing rod:
 	say "Something [we] [are] carrying starts to vibrate.";
 
-Rule for printing inventory details of the dowsing rod:
+Description notes for the dowsing rod:
 	if the location is the workshed and the trapdoor is unrevealed:
-		say " (vibrating)";
+		add "vibrating" to descriptive notes;
+	if the location is the large grave and the metal case is nowhere:
+		add "vibrating" to descriptive notes;
 
 Instead of examining the dowsing rod when the location is the workshed and the trapdoor is unrevealed:
 	say "The dowsing rod is vibrating.";
 
 Instead of examining the floor when the location is the workshed and the trapdoor is unrevealed:
-	say "You examine the floor closely, and discover the faint outlines of a trapdoor.";
+	say "[We] [examine] the floor closely, and discover the faint outlines of a trapdoor.";
 	now the trapdoor is revealed;
 
 
@@ -1083,14 +1085,37 @@ The large hole is a building facade. It is in Horton Graveyard. Understand "larg
 	It fronts large grave.
 	It is enterable from Horton Graveyard.
 
-The large grave is a room. It is in ELR. It is outdoors. "The hole is substantially larger and deeper than the others." 
+The large grave is a room. It is in ELR. It is outdoors. It is always-indefinite. "The hole is substantially larger and deeper than the others." 
 
-Above the large grave is the Horton graveyard. Below the Horton graveyard is nowhere.
+Above the large grave is the Horton graveyard.
 
-A metal case is a closed openable container in the large grave. The description is "A small metal case, about the size of a breadbox. It seems to be made of lead. It is [if open]open[otherwise]closed[end if]." 
-A metal corner is in the large grave. "[We] [notice] a small corner of something metallic sticking out of the dirt at the bottom of the hole." The description is "The corner of some metallic object, possibly made of lead, sticks out of the dirt at the bottom of the hole."
+A metal case is a closed openable container. The description is "A small metal case, about the size of a breadbox. It seems to be made of lead. It is [if open]open[otherwise]closed[end if]." 
+[ A metal corner is in the large grave. "[We] [notice] a small corner of something metallic sticking out of the dirt at the bottom of the hole." The description is "The corner of some metallic object, possibly made of lead, sticks out of the dirt at the bottom of the hole." ]
 
-Understand the command "uncover" as something new.
+Instead of examining the dowsing rod when the location is the large grave and the metal case is nowhere:
+	say "The dowsing rod is vibrating.";
+
+Digging is an action applying to nothing. Understand "dig" as digging.
+
+Check digging when the player does not enclose the shovel:
+	say "[We] can't dig without a shovel." instead;
+
+Check digging when the location is not the large grave and the location is diggable and the player encloses the shovel:
+	say "[We] [try] digging a little bit, but nothing turns up." instead;
+
+Check digging when the location is the large grave and the player encloses the shovel and the metal case is not nowhere:
+	say "[We] [try] digging a little bit more, but nothing else turns up." instead;
+
+Check digging when the location is not diggable and the player encloses the shovel:
+	say "The ground here is not suitable for digging." instead;
+
+Carry out digging when the location is the large grave and the player encloses the shovel and the metal case is nowhere:
+	now the player carries the metal case;
+
+Report digging when the location is the large grave and the player encloses the shovel and the metal case was nowhere:
+	say "[We] [dig] a little bit, and [run] into something metallic. [We] [dig] a little more, and [find] a small metal case. [We] [take] it with [us].";
+
+[ Understand the command "uncover" as something new.
 Uncovering is an action applying to one thing. Understand "uncover [something]" as uncovering.
 Understand "dig [something] out/up" as uncovering. Understand "dig out/up [something]" as uncovering. Understand "expose [something]" as uncovering.
 
@@ -1108,7 +1133,7 @@ Check uncovering something when the noun is not the metal corner:
 	say "There's nothing to uncover here." instead; 
 
 Instead of doing something other than uncovering to the metal corner:
-	say "[We] [need] to uncover it first.";
+	say "[We] [need] to uncover it first."; ]
 
 Horton-back-facade is a building facade. It is in Horton Graveyard. It is privately-named. The printed name is "Horton Family House". Understand "Horton/House/Home" as Horton-back-facade. "Horton House is an old colonial-period house. [We] [are] in its backyard." 
 	Horton-back-facade fronts Horton Family House Kitchen.
