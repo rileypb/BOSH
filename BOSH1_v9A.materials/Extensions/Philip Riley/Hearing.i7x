@@ -148,21 +148,23 @@ Rule for printing the sound description for something (called T) when T is enclo
 		say " somewhere in the room.";
 	add T to audible sounds;
 	
-Rule for printing the sound description for something (called T) when the number of moves from the location to the location of T, using doors is 1:
-	say "[Generic description of T] is ";
-	carry out the printing the sound action activity with T;
+Rule for printing the sound description for something (called T) when the number of moves from the location to the location of T, using doors < 3:
 	let X be the best route from location to location of T, using doors;
-	if X is:
-		-- inside:
-			say " inside[if the location of T is visited] [the location of T][end if].";
-		-- outside:
-			say " outside[if the location of T is visited], [the preposition of the location of T] [the location of T][end if].";
-		-- up:
-			say " above [us][if the location of T is visited], [the preposition of the location of T] [the location of T][end if].";
-		-- down:
-			say " below [us][if the location of T is visited], [the preposition of the location of T] [the location of T][end if].";
-		-- otherwise:
-			say " to the [X][if the location of T is visited], [the preposition of the location of T] [the location of T][end if].";
+	if X is not nothing:
+		say "[Generic description of T] is ";
+		carry out the printing the sound action activity with T;
+		let show location be whether or not the location of T is visited and the number of moves from the location to the location of T, using doors is 1;
+		if X is:
+			-- inside:
+				say " inside[if show location is true] [the location of T][end if].";
+			-- outside:
+				say " outside[if show location is true], [the preposition of the location of T] [the location of T][end if].";
+			-- up:
+				say " above [us][if show location is true], [the preposition of the location of T] [the location of T][end if].";
+			-- down:
+				say " below [us][if show location is true], [the preposition of the location of T] [the location of T][end if].";
+			-- otherwise:
+				say " to the [X][if show location is true], [the preposition of the location of T] [the location of T][end if].";
 	
 Rule for printing the sound description for something (called T) (this is the default sound description rule):
 	follow the audibility of rules for T;
