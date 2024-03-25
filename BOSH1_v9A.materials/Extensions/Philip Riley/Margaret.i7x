@@ -76,8 +76,14 @@ to unlock the backdoor is a questioning quip.
 	Understand "back/door" as to unlock the backdoor.
 	It mentions the BOSH back door.
 	The comment is "[We] [ask], 'Could you unlock the back door, Margaret?'".
-	The reply is "'Sorry, too busy right now. What do you want back there anyway? There's only a dumpster.' She pauses for a moment and mutters to herself. 'Which reminds me, I need to get these boxes broken down.'"
+	The reply is "'Sure, sure, in a minute. What do you want back there anyway? There's only a dumpster.' She pauses for a moment and mutters to herself. 'Which reminds me, I need to get these boxes broken down.' She picks up a couple and flattens them.".
 	It quip-supplies Margaret.
+
+After discussing to unlock the backdoor:
+	now Margaret carries the margaret-flattened-boxes;
+	now the current interlocutor is nothing;
+	add behavior throw out boxes to margaret;
+	now the margaret box counter is 0;
 	
 An availability rule for to unlock the backdoor:
 	If the player knows back-door-is-locked and back lot is not visited:
@@ -163,7 +169,10 @@ The margaret box counter is a number that varies. The margaret box counter is 0.
 Every turn when Margaret is in the Front Office and the current behavior of Margaret is doing nothing:
 	increase the margaret box counter by 1;
 	if a random chance of 1 in 5 succeeds and the margaret box counter is greater than 3:
-		say "[one of]Margaret flattens a couple of boxes.[or]Margaret sighs and says, 'So many boxes...' She picks up some and flattens them.[or]Margaret says, 'I should really take care of these boxes,' and proceeds to flatten some.[or]Margaret takes a box and starts to flatten it.[or]Margaret looks at the boxes and says, 'I should really take care of these.' She takes a couple and flattens them.[at random]";
+		if the location is the front office:
+			say "[one of]Margaret flattens a couple of boxes.[or]Margaret sighs and says, 'So many boxes...' She picks up some and flattens them.[or]Margaret says, 'I should really take care of these boxes,' and proceeds to flatten some.[or]Margaret takes a box and starts to flatten it.[or]Margaret looks at the boxes and says, 'I should really take care of these.' She takes a couple and flattens them.[at random]";
+		otherwise if the location is the BOSH office hallway:
+			say "One can hear the sound of boxes being flattened in the front office.";
 		now Margaret carries the margaret-flattened-boxes;
 		now the biff-flattened-boxes are in the room of stuff;
 		now the current interlocutor is nothing;
