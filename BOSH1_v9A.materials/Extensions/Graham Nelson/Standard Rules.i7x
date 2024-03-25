@@ -4106,7 +4106,7 @@ Report an actor jumping (this is the report jumping rule):
 	otherwise:
 		say "[The actor] [jump] on the spot." (B).]
 
-[Tying it to is an action applying to two things.
+Tying it to is an action applying to two things.
 The Tying it to action translates into I6 as "Tie".
 
 The specification of the tying it to action is
@@ -4120,7 +4120,7 @@ with some further check rules.)"
 Check an actor tying something to (this is the block tying rule):
 	if the actor is the player:
 		say "[We] [would achieve] nothing by this." (A);
-	stop the action.]
+	stop the action.
 
 [Drinking is an action applying to one thing.
 The Drinking action translates into I6 as "Drink".
@@ -4627,8 +4627,8 @@ Understand the command "feel" as "touch".
 Understand "rub [something]" as rubbing.
 [Understand the commands "shine", "polish", "sweep", "clean", "dust", "wipe" and "scrub" as "rub".]
 
-[Understand "tie [something] to [something]" as tying it to.]
-[Understand the commands "attach" and "fasten" as "tie".]
+Understand "tie [something] to [something]" as tying it to.
+Understand the commands "attach" and "fasten" as "tie".
 
 [Understand "burn [something]" as burning.]
 [Understand the command "light" as "burn".]

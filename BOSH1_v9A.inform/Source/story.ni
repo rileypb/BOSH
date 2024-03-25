@@ -1736,7 +1736,7 @@ Book 21 - Not For Release
  
 Include BOSH Tests by Philip Riley.
 
-DEBUG is false.
+DEBUG is true.
 
 Understand "* [text]" as a mistake ("Noted.")
 

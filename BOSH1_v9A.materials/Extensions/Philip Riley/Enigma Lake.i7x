@@ -19,7 +19,7 @@ To decide if mounted-rusty-resonator:
 	decide no;
 
 To decide if mounted-shiny-resonator:
-	decide no;
+	decide on whether or not the platform supports the shiny astral resonator;
 
 Volume 2 - Special Items
 
@@ -356,7 +356,8 @@ The snarky remark of Radio Station WGXC is "I wonder if they have any old record
 
 Book 12 - Radio Station Roof
 
-The radio station roof is a leavable room. It is above Radio Station WGXC. It has egress down. It is in ELR. "[We] can see the obelisk in the park clearly from here. The broadcast tower rises many feet above [us]. A metal cabinet is attached to the foot of the tower[if the metal cabinet is locked], held shut by a chain and padlock[otherwise], hanging open[end if]." The preposition is "on".
+The radio station roof is a leavable room. It is above Radio Station WGXC. It has egress down. It is in ELR. "[We] can see the obelisk in the park clearly from here. The broadcast tower rises many feet above [us]. A metal cabinet is attached to the foot of the tower[if the metal cabinet is locked], held shut by a chain and padlock[otherwise], hanging open[end if].[if mounted-shiny-resonator] [A shiny astral resonator] is mounted on a platform in the tower, and a beam of light shoots out of it, striking the obelisk in the park. The crystal is glowing [crystal glow][end if]."
+The preposition is "on".
 The snarky remark of the radio station roof is "I'm not afraid of heights. I'm afraid of falling from heights."
 
 The metal cabinet is a closed, locked, openable, scenery container in the radio station roof. "The metal cabinet is attached to the foot of the broadcast tower[if the metal cabinet is locked], held shut by a chain and padlock[otherwise], hanging open[end if]." 
@@ -366,10 +367,60 @@ The power switch is a scenery device in the metal cabinet. "The power switch is 
 The broadcast tower is scenery in the radio station roof. "A tall, steel lattice structure, rising prominently above the building. This kind of tower was designed to maximize the height for better signal transmission and reception in the era before widespread cable and satellite technology. Strangely, the bars of the tower near roof-level are bent inward to form a small platform. It's almost as if something is meant to be mounted there."
 The snarky remark of the broadcast tower is "What a great place to get struck by lightning."
 
-The platform is part of the broadcast tower. The description is "The platform is a small, square area formed by the inward-bent bars of the broadcast tower. It's just large enough to hold a small object. There are two rings set into the back of the platform, allowing something to attached there."
+The platform is part of the broadcast tower. It is a supporter.
+
+Instead of examining the platform when mounted-shiny-resonator:
+	say "[A shiny astral resonator] is mounted on the platform, and a beam of light shoots out of it, striking the obelisk in the park. The crystal is glowing [crystal glow].";
+
+Instead of examining the platform when not mounted-shiny-resonator:
+	say "The platform is a small, square area formed by the inward-bent bars of the broadcast tower. It's just large enough to hold a small object. There are two rings set into the back of the platform, allowing something to be attached there.";
+
 The snarky remark of the platform is "Curiouser and curiouser."
 
 The rings are part of the platform. The description is "Two metal rings are set into the back of the platform, allowing something to be attached there." They are plural-named. 
+
+To hook up the shiny resonator: 
+	now the shiny astral resonator is on the platform;
+	say "[We] [push] the shiny astral resonator onto the platform, attaching the clamps to the rings. A beam of light shoots out of the resonator and strikes the obelisk in the park. The crystal is glowing [crystal glow].";
+
+Instead of inserting the shiny astral resonator into the platform:
+	hook up the shiny resonator;
+
+Check inserting something into the platform when the noun is not the shiny astral resonator:
+	say "That doesn't seem to be the right thing to put there." instead;
+
+Instead of putting the shiny astral resonator on the platform:
+	hook up the shiny resonator;
+
+After taking the shiny astral resonator when the shiny astral resonator was on the platform:
+	say "You remove the shiny astral resonator from the platform, and the light fades. In the distance, the beam of light fades from the obelisk. [if the beam count is 0]The crystal is no longer glowing[otherwise]The crystal is still glowing [crystal glow][end if].";
+
+Instead of tying the shiny astral resonator to the rings:
+	hook up the shiny resonator;
+
+Instead of tying the shiny clamps to the rings:
+	hook up the shiny resonator;
+
+Instead of tying the shiny astral resonator to the rings:
+	hook up the shiny resonator;
+
+Instead of tying the rings to the shiny clamps:
+	hook up the shiny resonator;
+
+Instead of tying the rings to the shiny astral resonator:
+	hook up the shiny resonator;
+
+Instead of tying the shiny astral resonator to the platform:
+	hook up the shiny resonator;
+
+Instead of tying the shiny astral resonator to the broadcast tower:
+	hook up the shiny resonator;
+
+Instead of inserting the shiny astral resonator into the broadcast tower:
+	hook up the shiny resonator;
+
+Instead of putting the shiny astral resonator on the broadcast tower:
+	hook up the shiny resonator;
 
 Instead of climbing up the broadcast tower:
 	say "[We] [are] afraid of heights.";
@@ -377,6 +428,25 @@ Instead of climbing up the broadcast tower:
 Instead of going up when the location is the radio station roof:
 	say "[We] [are] afraid of heights.";
 	
+The radio-obelisk-facade is a backdrop. It is in the radio station roof. Understand "obelisk/park" as radio-obelisk-facade. "The obelisk in the park is clearly visible from here."
+
+Instead of examining the radio-obelisk-facade:
+	say "The obelisk in the park is clearly visible from here.[run paragraph on]";
+	if beam count is 1:
+		if mounted-shiny-resonator:
+			say " A beam of light is focused on the obelisk from here, striking the crystal adornment at its apex. The crystal is glowing faintly.";
+		otherwise:
+			say " A beam of light is focused on the obelisk from elsewhere, striking the crystal adornment at its apex. The crystal is glowing faintly.";
+	otherwise if beam count is 2:
+		if mounted-makeshift-resonator:
+			say " Two beams of light are focused on the obelisk, one from here and one from elsewhere, striking the crystal adornment at its apex. The crystal is glowing brightly.";
+		otherwise:
+			say " Two beams of light are focused on the obelisk from elsewhere, striking the crystal adornment at its apex. The crystal is glowing brightly.";
+	otherwise if beam count is 3:
+		say " Three beams of light are focused on the obelisk, one from here and two from elsewhere, striking the crystal adornment at its apex. The crystal is glowing brightly.";
+	otherwise:
+		say paragraph break;
+
 Book 13 - Broadcast Booth
 
 The broadcast booth is south of Radio Station WGXC. It is in ELR. "The broadcast booth is a small room with a window looking out into the rest of the station. A microphone is set up on a stand, and a soundboard is set into the wall."
@@ -744,6 +814,26 @@ The snarky remark of the steeple is "I wonder if I can see my house from here."
 The telescope is in the tripod. The description is "A small telescope suitable for amateur astronomy[if the content of the tripod is the telescope]. It's mounted on a tripod[end if]."
 The snarky remark of the telescope is "What's the point of looking at the stars? They're all the same."
 
+To decide what number is the beam count:
+	let count be 0;
+	if mounted-rusty-resonator:
+		increase count by 1;
+	if mounted-shiny-resonator:
+		increase count by 1;
+	if mounted-makeshift-resonator:
+		increase count by 1;
+	decide on count;
+
+To say crystal glow:
+	if the beam count is 1:
+		say "faintly";
+	otherwise if the beam count is 2:
+		say "brightly";
+	otherwise if the beam count is 3:
+		say "brilliantly";
+	otherwise:
+		say "dark";
+
 Instead of searching the telescope when the content of the tripod is the telescope: [looking through]
 	if mounted-rusty-resonator and mounted-shiny-resonator:
 		say "The telescope is pointed at the obelisk in the park. It's a bit out of focus, but [we] can see it clearly enough. Two beams of light are focused on the obelisk from elsewhere, striking the crystal adornment at its apex. The crystal is glowing brightly.";
@@ -829,13 +919,6 @@ To decide if mounted-makeshift-resonator:
 
 Instead of examining the steeple-obelisk-facade:
 	say "The obelisk in the park is clearly visible from here.[run paragraph on]";
-	let beam count be 0;
-	if mounted-rusty-resonator:
-		increase beam count by 1;
-	if mounted-shiny-resonator:
-		increase beam count by 1;
-	if mounted-makeshift-resonator:
-		increase beam count by 1;
 	if beam count is 1:
 		if mounted-makeshift-resonator:
 			say "A beam of light is focused on the obelisk from the steeple, striking the crystal adornment at its apex. The crystal is glowing faintly.";
@@ -1145,11 +1228,14 @@ The shiny astral resonator is in the metal case. It is privately-named. The desc
 The printed name is "[if Astral Secrets is familiar]shiny astral resonator[otherwise]strange, shiny, metal object[end if]".
 Understand "shiny/astral/resonator" as the shiny astral resonator when Astral Secrets is familiar.
 Understand "strange/shiny/metal/metallic/cylindrical/cylinder/object" as the shiny astral resonator.
-The snarky remark of the shiny astral resonator is "[if the rusty astral resonator is not familiar]Ooh. I've always wanted one of these[otherwise]Wow, this is one is so shiny[end if].";
+The snarky remark of the shiny astral resonator is "[if the rusty astral resonator is not familiar]Ooh. I've always wanted one of these[otherwise]Wow, this is one is so shiny[end if].".
+The shiny clamps are part of the shiny astral resonator. The description is "Two metal chains, each with a metal clamp, are attached to the end of the resonator.". Understand "metal/-- chains" as the clamps. They are plural-named.
+The shiny crystal lens is part of the shiny astral resonator. The description is "A crystal lens is attached to the end of the resonator.".
+
 
 Book 28 - Fire Station 1
 
-The garage door is a closed locked lockable openable scenery door. It is west of Solvay Road 100 block and east of the Fire Station 1. Understand "big/red/door" as garage door. The description is "A big red door, with a sign reading 'Fire Station 1'. The cornerstone reads '1891'."
+The garage door is a closed locked lockable openable scenery door. It is west of Solvay Road 100 block and east of the Fire Station 1. Understand "big/red/door" as garage door. The description is "A big red door, with a sign reading 'Fire Station 1'."
 
 Fire Station 1 is in ELR. The printed name is "Hook and Ladder Company #1". "The fire station is a modest red brick building dating to the late 19th century. The garage door is to the east."
 
@@ -1460,7 +1546,8 @@ test cord with "gonear church/take cord/plug it into outlet/e/drop cord/w/unplug
 /w/unplug cord/take cord/".
 test steeple with "gonear church/take cord/plug it into outlet/u/purloin makeshift astral resonator/take telescope/put resonator in tripod/plug resonator into cord/look".
 
-test hathgar with "gonear kitchen/s/gonear lake street by the park/e"
+test hathgar with "gonear kitchen/s/gonear lake street by the park/e".
+test shiny with "gonear radio roof/purloin shiny object".
 
 query-naming is an action applying to nothing. Understand "is hathgar named" as query-naming.
 Carry out query-naming:

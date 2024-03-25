@@ -1,7 +1,8 @@
 ** game: /Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform/Build/output.ulx
 # ** interpreter: /Users/rileypb/dev/Inform/glulxe_cheapglk
 # ** interpreter: /Users/rileypb/dev/Inform/glulxe_remglk
-** interpreter: /Users/rileypb/dev/Inform/git-terp
+# ** interpreter: /Users/rileypb/dev/Inform/git-terp
+** interpreter: /Users/rileypb/dev/Inform/git_remglk
 
 * office1
 Department of Homeland Security, Washington, DC
