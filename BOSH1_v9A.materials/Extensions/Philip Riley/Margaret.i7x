@@ -158,7 +158,17 @@ Book 3 - The Boxes
 
 throw out boxes is a behavior.
 
-The margaret box counter is a number that varies.
+The margaret box counter is a number that varies. The margaret box counter is 0.
+
+Every turn when Margaret is in the Front Office and the current behavior of Margaret is doing nothing:
+	increase the margaret box counter by 1;
+	if a random chance of 1 in 5 succeeds and the margaret box counter is greater than 3:
+		say "[one of]Margaret flattens a couple of boxes.[or]Margaret sighs and says, 'So many boxes...' She picks up some and flattens them.[or]Margaret says, 'I should really take care of these boxes,' and proceeds to flatten some.[or]Margaret takes a box and starts to flatten it.[or]Margaret looks at the boxes and says, 'I should really take care of these.' She takes a couple and flattens them.[at random]";
+		now Margaret carries the margaret-flattened-boxes;
+		now the biff-flattened-boxes are in the room of stuff;
+		now the current interlocutor is nothing;
+		add behavior throw out boxes to margaret;
+		now the margaret box counter is 0;
 
 To initiate Margaret's box routine:	
 	say "[Margaret] says, 'Hey, what are you doing with those boxes, [Agent]? You don't have to worry about that -- I'll get them.' [regarding Margaret][They] takes the flattened boxes from [us] and hustles off.";
