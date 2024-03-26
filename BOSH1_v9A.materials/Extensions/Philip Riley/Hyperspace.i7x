@@ -551,7 +551,7 @@ A model TARDIS is on Doris's desk. The description is "It's a small, plastic mod
 A Rubik's cube is on Doris's desk. The description is "It's a Rubik's cube." It is owned by Doris.
 Understand "rubik/rubix" as Rubik's cube.
 
-A CMY cube is on Doris's desk. The description is "An acrylic cube that filters light on different wavelengths through its various sides." It is owned by Doris.
+A CMY cube is on Doris's desk. The description is "An acrylic cube that filters light on different wavelengths through its various sides." It is owned by Doris. Understand "color/acrylic" as CMY cube.
 
 Doris's papers are on Doris's desk. They are plural-named. The description is "The papers are covered with scribbles and diagrams. But really, who can make sense of them?" It is owned by Doris.
 
