@@ -29,6 +29,7 @@ Include Visible Rooms by Philip Riley.
 Include Can't Touch This by Philip Riley.
 Include Compound Details by Philip Riley.
 Include Polish by Philip Riley.
+Include Hello by Philip Riley.
 
 Include BOSH Polish by Philip Riley.
  
@@ -491,6 +492,7 @@ Sacred geometry is a subject.
 Divining is a subject. Understand "dowsing", "divination", "rod" as divining. 
 Crystals are a subject. Understand "crystal" as crystals. 
 Ley lines are a subject. Understand "ley line" as ley lines. 
+Leyden jars are a subject. Understand "Leyden jar" as leyden jars.
 Astrology is a subject. Understand "horoscope" as astrology.   
 The Freemasons is a subject. Understand "freemason" as the Freemasons. 
 The Knights Templar is a subject.  
@@ -519,6 +521,7 @@ THe Church of Scientology is a subject. Understand "dianetics" as the Church of 
 UFOs is a subject. Understand "UFO" as UFOs.
 Ouija boards is a subject. Understand "board" as Ouija boards.
 The Bureau of Supernatural History is a subject.
+Woonsocket is a subject. 
 
 [spacetime is a subject. Understand "time" as spacetime. The printed name is "Time". the help text of SpaceTime is "According to Wikipedia, time is the continued sequence of existence and events that occurs in an apparently irreversible succession from the past, through the present, into the future.".]
 
@@ -549,6 +552,22 @@ Instead of asking someone to try doing something when the noun is busy with resp
 Chief Huffton Klimp is a man. The printed name of Klimp is "Chief Klimp". The description is "Huffton Klimp, or simply 'The Chief', who by his name and title should rightly be big and gruff, is a wiry guy with a thinning shock of red hair on top. Once the youngest and most devoted recruit in the Bureau, the years and his promotion to Bureau Head have not dulled his enthusiasm and idealism. He's a true believer in the existence of aliens, and he's convinced that the Bureau is the only thing standing between humanity and the alien menace. He's also convinced that the Bureau is the only thing standing between him and a comfortable retirement. He's a good guy, but he's a bit of a pain."
 
 Klimp carries a mobile phone called klimp's mobile phone. Klimp owns Klimp's mobile phone. Klimp's mobile phone number is a phone number. Klimp's mobile phone number reaches Klimp's mobile phone. The player knows klimp's mobile phone number. Klimp knows Biff's mobile number.
+
+Klimp's key is a key. Klimp's key unlocks Klimp's door. Klimp carries Klimp's key. 
+
+arrival is a behavior.
+
+Every turn when the current behavior of Chief Huffton Klimp is arrival:
+	if the location of Klimp is Strip Mall Parking Lot South:
+		try Klimp going west;
+	otherwise if the location of Klimp is the front office:
+		try Klimp going west;
+	otherwise if the location of Klimp is the BOSH hallway and Klimp's door is locked:
+		try Klimp unlocking Klimp's door with Klimp's key;
+	otherwise if the location of Klimp is the BOSH hallway:
+		try Klimp going west;
+	otherwise if the location of Klimp is the BOSH chief's office:
+		remove behavior from Klimp;
 
 To tell klimp something he already knows:	
 	say "Klimp looks at [us] funny. 'Uh, yeah, you already told me that.'";
@@ -1067,9 +1086,15 @@ The can't reach inside closed containers rule response (A) is "[if the noun is t
 Section 5 - BOSH chief's office 
 
 the BOSH Chief's office is in BOSH HQ. There is a fluorescent light source in the BOSH Chief's office called chief-light.
-The description of the BOSH Chief's office is "[If the BOSH chief's office is not visited]Looks like the Chief has already moved in.[paragraph break][end if]Chief Klimp's office is full of character. Shelves strewn with knick-knacks abut a cozy armchair and a mahogany side table supporting a large globe. A bookcase on the north wall is packed with books on paranormal happenings. Garish prints adorn the remaining wall space.  Under one of these is a modernistic desk of glass and chrome, behind which is a very nice black leather swivel chair. There is a computer on the desk, and to its side is an antique wooden file cabinet. To tell the truth, it's all a bit much, but it matches Klimp's personality perfectly. There is an exit to the east.[if klimp is in the location][first time]
+The description of the BOSH Chief's office is "[If the BOSH chief's office is not visited]Looks like the Chief has already moved in.[paragraph break][end if]Chief Klimp's office is full of character. Shelves strewn with knick-knacks abut a cozy armchair and a mahogany side table supporting a large globe. A bookcase on the north wall is packed with books on paranormal happenings. Garish prints adorn the remaining wall space.  Under one of these is a modernistic desk of glass and chrome, behind which is a very nice black leather swivel chair. There is a computer on the desk, and to its side is an antique wooden file cabinet. To tell the truth, it's all a bit much, but it matches Klimp's personality perfectly. There is an exit to the east."
 
-[Klimp] says 'What's with that ringing? Someone answer it!'[only]".
+Rule for writing a paragraph about Chief Huffton Klimp when the location is the BOSH Chief's office:
+	say "[Klimp] sits behind the desk, his feet up.";
+
+After printing the locale description of the BOSH Chief's office:
+	if the BOSH chief's office is not visited:
+		say "[Klimp] says 'What's with that ringing? Someone answer it!'".		
+
 The snarky remark of the BOSH Chief's office is "It's like a museum of bad taste."
 
 The Chief's desk is a supporter in BOSH Chief's Office. It is scenery. "This desk is a beautiful assembly of smokey glass and chrome framing. The 'legs' form shelves where Klimp keeps yet more curios. One might wonder where Klimp gets the money."
@@ -1078,10 +1103,10 @@ The curios are scenery in the BOSH Chief's office. The description is "The desk 
 
 Klimp's Computer is a thing on the chief's desk. It is scenery. "The computer is a sleek, modern model. It sports a screen saver of what looks like the Hopkinsville goblin."
 
-The desk shelves are a supporter. They are part of the Chief's desk. They support a polished orange marble dodecahedron. The description of the dodecahedron is "A relic of the Chief's sacred geometry phase.". Understand "legs" as desk shelves.
+The desk shelves are a supporter. They are part of the Chief's desk. They support a polished orange marble dodecahedron. The description of the polished orange marble dodecahedron is "A relic of the Chief's sacred geometry phase.". Understand "legs" as desk shelves. 
 
-Klimp owns the dodecahedron. 
-The snarky remark of the dodecahedron is "I'm partial to Catalan solids, actually."
+Chief Huffton Klimp owns the polished orange marble dodecahedron. 
+The snarky remark of the polished orange marble dodecahedron is "I'm partial to Catalan solids, actually."
 
 The chief's black leather swivel chair is a supporter in BOSH Chief's Office. It is enterable. It is scenery. "Nice chair. Good lumbar support."
 
@@ -1112,6 +1137,9 @@ The Dictionary of Strangeness is a thing in BOSH Chief's Office. It is scenery. 
 To say random entry:
 	choose a random row in the Table of Random Entries;
 	say "[bold type][name entry][roman type][paragraph break][discussion entry]";
+
+After examining the Dictionary of Strangeness for the first time:
+	say "[Klimp] says 'If you want to know more about anything in there, just ask me.'"; 
 
 
 [The texts below must be written as credulously as possible, as if the writer believed in the existence of these phenomena.]
@@ -1514,7 +1542,8 @@ The Illuminati	Chief Huffton Klimp	"[We] [begin], 'You believe in the --'"	"'Ill
 The New World Order	Chief Huffton Klimp	"'Chief, what's the deal with the New --'"	"'New Order? You're into them, eighties music, right? No, no, you were going to ask about the New World Order, weren't you? It's a real thing. It's a real thing, and it's a real threat. It's a real threat to the world. It's a real threat to the universe. Well, that's an exaggeration. But it's real bad.'"
 Divining	Chief Huffton Klimp	"'Chief, have you ever used a di--'"	"'--vining rod? Yes, I have. I've used it to find water, to find gold, to find the Black Knight Satellite. I once used it to find a lost cat. It didn't work.'"
 Crystals	Chief Huffton Klimp	"'Chief, you ever use --'"	"'crystals? Yes, I have. I've used them to heal, to divine, to communicate with the Black Knight Satellite. I've used them to find lost keys. I've used them to find lost time. I've used them to find lost socks. I once gave one to a lonely Sasquatch. It didn't seem to care for it.'"
-Ley lines	Chief Huffton Klimp	"'Chief, I notice on your globe --'"	"'Yeah, all the lines, right? They're ley lines, which are, well, kind of like these lines of energy that connect the world. They're like the veins of the Earth. They're like the nervous system of the Earth. They're like the internet of the Earth. No, I take that back. Let's stick with the veins metaphor.'"
+Ley lines	Chief Huffton Klimp	"'Chief, what's all this about ley--'"	"'den jars? I don't know. You might want to ask Nikola Tesla. He was into that sort of thing. Or was it Thomas Edison? I can't remember. But you were going to ask about ley lines, weren't you? I have them all mapped out on my globe.'"
+Leyden jars	Chief Huffton Klimp	"'Chief, what's all this about ley--'"	"'den jars? Not a clue. You might want to ask Nikola Tesla. He was into that sort of thing. Or was it Thomas Edison? I can't remember.'"
 Astrology	Chief Huffton Klimp	"'Chief, do you believe in horo--'"	"'scopes? Yes, I do. I've seen the evidence. I've seen the evidence that they're real. I've seen the evidence that they're fake. I've seen the evidence that they're a tool of the Illuminati. None of it makes sense. But I still believe in them.'"
 The Freemasons	Chief Huffton Klimp	"'Chief, who are the Free--'"	"'masons? Harmless. They're harmless. They're just a bunch of guys who like to wear aprons and have secret handshakes. It's not like they have the Holy Grail or anything. That's a myth.'"
 The Knights Templar	Chief Huffton Klimp	"'Chief, what can you tell me about the --'"	"'Knights Templar? Consider this -- they're not Knights at all. They're really kind of fun, you know. They're like the Freemasons, but with swords. And they have the Spear of Destiny. Or they did. Or they didn't. I can't remember.'"
@@ -1546,12 +1575,17 @@ The polished orange marble dodecahedron	Chief Huffton Klimp	"[We] [admire] the K
 The globe	Chief Huffton Klimp	"'Chief, I notice on your globe --'"	"'Yeah, all the lines, right? They're ley lines, which are, well, kind of like these lines of energy that connect the world. They're like the veins of the Earth. They're like the nervous system of the Earth. They're like the internet of the Earth. No, I take that back. Let's stick with the veins metaphor.'"
 The armchair	Chief Huffton Klimp	"'Chief, what's the deal with your armchair --'"	"'That's my thinking chair. It's beautiful, don't you think?' I got at an auction by the Church of Scientology. They have the best auctions. I once got a book about hypnosis at one of their auctions. Good book.'"
 The mahogany side table	Chief Huffton Klimp	"'Chief, what's the story with your side table --'"	"'Got it from a store run by a guy who might be a vampire. Lots of vampires in the furniture business. I've seen the evidence.'"
-Waiting-for-the-Aliens	Chief Huffton Klimp	"'Chief, have you read this book --'"	"'[']Waiting for the Aliens?['] Yes, I have. Kind of a letdown. I was hoping for more about the Black Knight Satellite."
+Waiting-for-the-Aliens	Chief Huffton Klimp	"'Chief, have you read this book --'"	"'[']Waiting for the Aliens?['] Yes, I have. Kind of a letdown. I was hoping for more about the Black Knight Satellite.'"
 Travels in Time	Chief Huffton Klimp	"'Chief, what do you think of this book --'"	"'Travels in Time? I've read it. It's a good book. Did you know it hasn't even been written yet? True story. Strangely, Debi Bosworth was killed in the Dyatlov Pass Incident. I've seen the evidence.'"
 Juvenile Sasquatch skull	Chief Huffton Klimp	"'Chief, what's the deal with this --'"	"'--skull? It's a juvenile Sasquatch skull. Found it myself at the Natural History Museum in New York. They have the best stuff. Hard to carry out of there, though.'" 
 Antique wooden file cabinet	Chief Huffton Klimp	"'Chief, what's in the file --'"	"'--cabinet? Files. Classified. Except for one. It's a recipe for chicken salad.'"
 Hora de la Muerte	Chief Huffton Klimp	"'Chief, the painting --'"	"'Hora de la Muerte? It speaks to me. Speaks to me of something ineffable. Something that's not there. Something that's not here. Something that's not anywhere.'"
 Astral lenses	Chief Huffton Klimp	"'Chief, what's the deal with these --'"	"'--glasses? They're astral lenses. Got them at a little shop while I was hunting for the Dover Demon. They let you see into other worlds. Haven't tried them yet. I'm waiting for the right time. The right place. The right world.'"
+curios	Chief Huffton Klimp	"'Chief, what's the deal with these --'"	"'--curios? They're curios. They're curious. They're curiosities. Take a look."
+chief's black leather chair	Chief Huffton Klimp	"'Chief, what's the deal with your --'"	"'--chair? It's a chair. I can sit in it. It's the kind of chair Tesla would have sat in, if he had sat in chairs."
+bookcase	Chief Huffton Klimp	"'Chief, what's the deal with your --'"	"'--bookcase? Nothing much. Nothing like the news about the UFOs over Woonsocket. That's a real story.'"
+Woonsocket	Chief Huffton Klimp	"'Chief, what happened in Wo--'"	"'onsocket? Isn't that a funny name? I mean, what's a woon, anyway? But what were we talking about?"
+Dictionary of Strangeness	Chief Huffton Klimp	"'Chief --'"	"'You're going to ask about the Dictionary of Strangeness, aren't you? Fine. I've read it cover to cover. Know everything there is to know about everything one should know about. Ask me anything.'"
 The ringing-phone	Chief Huffton Klimp	"'Hey, Chief, sorry about the --'"	"'damn phone that keeps ringing? It's the Illuminati. They're trying to get you. They're trying to get me. They're trying to get everyone. Don't answer it. But make it stop. It's driving me crazy.'"
 The ringing-phone	Margaret	"[We] [say] to Margaret, 'Margaret, do you have any way to get into my desk to answer the phone, a spare key or --'"	"'No, no, I don't. I'm sorry. I don't know what to do. I'm sorry.'"
 The ringing-phone	Moira Zin	"'Moira, I'm so sorry about the phone ringing. It's locked in my desk and I can't get to it. I don't know what to do. I'm sorry.'"	"'It's okay, Larch. I'm sure whoever's calling will give up eventually.'"
@@ -1755,6 +1789,8 @@ test part1 with "w/w/s/open desk/n/e/ask about key/ask about computer/look behin
 
 test part2 with "f/f/f/f/f/fn/fw/fn/fn/fw/w/fn/w/take compass/x 
 it/s/s/s/s/s/s/s/e/e/e/e/e/e/e/e/b/b/b/b/b/b/b/b/b/d".
+
+test klimp with "w/look behind desk/x vent/e/sw/ask about screwdriver/ask about owner/ne/w/w/w".
 	
 lensing is an action applying to nothing. Understand "lens" as lensing.
 

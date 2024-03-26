@@ -232,18 +232,19 @@ After discussing for-a-screwdriver-pawn:
 	
 about the laundromat owner is a questioning quip.
 	The comment is "[We] [say], 'How do you suppose I might get in touch with this man who runs the laundromat? I really could use a screwdriver.'".
-	The reply is "'Well, that's a tricky one. Laundromat's been closed for almost two weeks now, since the owner just split for some reason he didn't bother to share. Not likely to get ahold of him. If you're not averse to a little trespassing, though, see if you come across a watch. Another thing he borrowed.'
-	
-	Outside you hear the screech of tires and the slam of a car door.".
+	The reply is "'Well, that's a tricky one. Laundromat's been closed for almost two weeks now, since the owner just split for some reason he didn't bother to share. Not likely to get ahold of him. If you're not averse to a little trespassing, though, see if you come across a watch. Another thing he borrowed.'"
 	It quip-supplies Dave.
 	It follows for-a-screwdriver-pawn.
 	
 After discussing about the laundromat owner:
 	now player knows break-in-to-laundromat;
-	move Chief Huffton Klimp to Chief's office;
+	[ move Chief Huffton Klimp to Chief's office;
 	now klimp's door is unlocked;
-	now klimp's door is open;
+	now klimp's door is open; ]
 	move car 2 to Strip Mall Parking Lot South;
+	say "The sound of a car door slamming outside catches Faraji's attention.";
+	move Chief Huffton Klimp to Strip Mall Parking Lot South;
+	add behavior arrival to Chief Huffton Klimp;
 	continue the action;
 	
 [An availability rule for about the laundromat owner:
@@ -472,14 +473,6 @@ The destination name is "Li'l Nectarine Convenience Store".
  
 The store clerk is a man in the Convenience Store. "The clerk, a scruffy man in his mid-twenties, is leaning against the counter, looking bored." The description is "The clerk looks as if he'd rather be anywhere else. He's wearing jeans and a white t-shirt with something inscrutable scrawled on it. His hair sticks up every which way." Understand "man" as the store clerk.
 The snarky remark of the store clerk is "Finally a source of fashion advice."
-
-After saying hello to the store clerk:
-	say "'Good morning,' Faraji says.";
-	say "'Yeah,' replies the clerk.";
-
-After saying hello to someone who is not Margaret:
-	say "Faraji smiles and says hello.";
-	say "[The noun] nods in response.";
 
 The shop counter is a supporter in the nectarine store. It is scenery. "The counter is arrayed with displays of CBD oil, antacids, and the like."
 

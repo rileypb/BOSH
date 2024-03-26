@@ -76,9 +76,8 @@ Carry out accounting:
 	
 To belong is a verb.
 
-Check taking something (called target):
-	if someone owns the target and the player does not own the target:
-		say "[regarding the target][Those] [belong] to [the owner of the noun]." instead;
+Check taking something (called target) when someone owns the target and the player does not own the target:
+	say "[regarding the target][Those] [belong] to [the owner of the noun]." instead;
 		
 [Attributing it is an action applying to one visible thing. Understand "Who owns [thing]" as Attributing it.
 
