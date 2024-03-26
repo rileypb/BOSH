@@ -540,16 +540,16 @@ the field office chief's office is a leavable room. It is west of the field offi
 Doris is a man in the field office chief's office.
 The initial appearance is "Doris is sitting cross-legged in a chair, tapping his foot lazily on the desk."
 
-Doris's desk is a scenery supporter in the field office chief's office. The description is "The desk is covered with papers and tchotchkes."
+Doris's desk is a scenery supporter in the field office chief's office. The description is "Doris's desk is large and made of the same white material as the rest of the office. It is covered with papers and tchotchkes."
 
-Instead of examining Doris's desk:
-	say "The desk is covered with papers and tchotchkes."
+
 
 The tchotchkes are scenery in the field office chief's office. Understand "knick-knacks", "knick knacks", "curios", "junk", "stuff" as the tchotchkes. The description is "A small, plastic model of a TARDIS, a Rubik's cube, and a CMY cube are on the desk." They are plural-named. Doris owns the tchotchkes.
 
 A model TARDIS is on Doris's desk. The description is "It's a small, plastic model of a TARDIS." It is owned by Doris.
 
 A Rubik's cube is on Doris's desk. The description is "It's a Rubik's cube." It is owned by Doris.
+Understand "rubik/rubix" as Rubik's cube.
 
 A CMY cube is on Doris's desk. The description is "An acrylic cube that filters light on different wavelengths through its various sides." It is owned by Doris.
 
@@ -935,6 +935,22 @@ After printing the locale description when player is in the field office chief's
 		queue Doris with we-don't-have-it;
 	otherwise:
 		queue Doris with what thumb drive;
+
+
+Table of Quiz Topics (continued)
+subject (a thing)	interlocutor (a person)	comment (a text)	reply (a text)
+Mothman	Doris	"'Who is the Mothman?'"	"'The Mothman is a cryptid that was sighted in West Virginia in the 1960s. Friend of mine. Good guy. I met him on Spruce Knob outside of Judy Gap. He's a bit of a recluse, but he plays a mean game of pinochle.'"
+Chief Huffton Klimp	Doris	"'What do you think of Klimp?'"	"'Aha, you won't trick me that easily.'"
+Maggie	Doris	"'Who is Maggie?'"	"'Maggie is our receptionist. She can help you with anything you need.'"
+Christy	Doris	"'Who is Christy?'"	"'Christy is our researcher. They also have a good eye for color. They helped me pick out the paint for my kitchen.'"
+Minerva	Doris	"'Who is Minerva?'"	"'Minerva is our only field agent. Right now she's in her office recovering from a bad case of the heebie-jeebies. Real disease, by the way.'"
+Doris	Doris	"'How are you doing?'"	"'Is that important while the fate of the world is at stake?'"
+Doris's desk	Doris	"'You certainly have, uh, a lot of stuff on your desk.'"	"'Yes. Please don't speculate on what it says about my psyche. I'm very sensitive.'"
+model TARDIS	Doris	"'I see you have a model TARDIS.'"	"'No, it's not a TARDIS. It's a police box.'"
+Rubik's cube	Doris	"'I see you have a Rubik's cube.'"	"'Yes, I do. Western Pennsylvania 12-and-under speed champion three years running.'"
+CMY cube	Doris	"'What's the color cube?'"	"'It's a CMY cube. Alien technology, swear to God.'"
+Doris's papers	Doris	"'What are all these papers?'"	"'Oh, just some notes. Nothing important. Just the fate of the world.'"
+tchotchkes	Doris	"'What are all these things on your desk?'"	"'Definitely not a secret window into my soul. Just some things I like.'"
 
 Book 2 - Maggie
 

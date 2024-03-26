@@ -139,9 +139,12 @@ coatrack	Margaret	--	"She grins. 'An old clothing rack. Good thinking, right?'"
 shelves of office supplies	Margaret	--	"'I doubt you'll be needing any of that now, but if you do, let me know.'"
 cardboard boxes	Margaret	--	"'Hmm, I guess I need to flatten those and bring them out back to the dumpster.'"
 coffee table	Margaret	--	"'It's not much, but what can you expect for $8?'"
-Margaret	Margaret	"'How are you, Margaret?'"	"'I'm doing great, thanks!'"
 laundromat	Margaret	--	 "Not a clue."
 Biff's computer	Margaret	--	"[if Biff's computer is behind the front desk]It's behind the front desk. It's toast.[otherwise]She looks tired. 'I'll get to it when I can.'[end if]"
+couch	Margaret	--	"'It's not much, but it's better than the floor.'"
+Bureau photos	Margaret	--	"'I think they're from the 70s. I don't know who they are.'"
+BOSH front desk	Margaret	--	"'I'm really trying to make do with what we have.'"
+
 
 
 Instead of quizzing Margaret Chao about Chief Huffton Klimp:

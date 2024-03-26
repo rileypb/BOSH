@@ -452,7 +452,7 @@ Book 9 - Concepts
 
 Chapter 1 - Subjects and Facts
 
-The ringing-phone is a subject. It is privately-named. The printed name is "ringing phone". Understand "ringing phone" as the ringing-phone.
+The ringing-phone is a subject. It is privately-named. The printed name is "ringing phone". Understand "ringing/-- phone" as the ringing-phone.
 
 Senator Savra is a man. he is in the Room of Stuff. Savra is familiar. [The help text of senator savra is "Our nemesis, intent on the abolition of BOSH.".]
 
@@ -627,12 +627,12 @@ Does the player mean quizzing someone about to-borrow-the-lenses:
 
 to borrow the dodecahedron is a questioning quip. 
 	Understand "orange/marble" as to borrow the dodecahedron.
-	It mentions the orange marble dodecahedron.
+	It mentions the polished orange marble dodecahedron.
 	The comment is "[We] [ask], 'Chief, mind if I borrow the dodecahedron?'".
 	The reply is "He thinks for a moment. 'Actually, I need it to keep my computer running properly. It's a long story.'".
 	It quip-supplies Chief Huffton Klimp.
 
-After examining the orange marble dodecahedron:
+After examining the polished orange marble dodecahedron:
 	queue Chief Huffton Klimp with to borrow the dodecahedron;
 
 Moira Zin is a woman. The description is "Agent Moira Zin is the very model of a competent Bureau agent. Hard-working, serious, no-nonsense but open-minded, she's the sober counter-balance to Klimp's sometimes childish credulity. Moira would clearly be a rising star if it weren't for the Bureau's pending dissolution."
@@ -701,7 +701,7 @@ Section 1 - Your Office
 
 Biff's office is a room. It is in BOSH HQ. The printed name is "[save LPR][our][restore LPR] office".
 
-"[if biff's office is not visited][We] [pause] and [survey] the scene. It's not much -- four white walls, grey industrial carpet. [Margaret] [have] helpfully assembled [our] desk and chair, though how sturdily is an open question. [Regarding Margaret][They] also took the time to put up some of Agent [Player]'s office decor -- [our] degree in Nonstandard Investigative Techniques, [EG]a trivia competition award, and a poster for [our] favorite movie: the b-movie time-travel classic The Room of Lost Time[PCG]a photo of [our] dog Pluto, and a print of [italic type]Green Pheasant[roman type] by Utagawa Hiroshige[LF]an original pencil drawing of the Pitfall snake by semi-acclaimed Washington DC artist Darius 5200, and a photo of [our] soccer team[end say]. At the very least the wall coverings help compensate for the lack of windows. There's a disconnected landline on the desk. The office door is to the north, and there's a white metal door to the west.[maybe insert computer muttering][otherwise]It's basically four white walls and grey carpet. There's a cheap desk and chair, and a disconnected phone on the desk. In lieu of windows, there are a few things on the wall: [our] degree in Nonstandard Investigative Techniques, [EG]a trivia competition award, and a poster for [our] favorite movie[PCG]a photo of [our] dog Pluto, and a Japanese print[LF]a pencil drawing of the Pitfall snake, and a photo of [our] soccer team[end say]. The office door is to the north, and there's a white metal door to the west.[end if]"
+"[if biff's office is not visited][We] [pause] and [survey] the scene. It's not much -- four white walls, grey industrial carpet. [Margaret] [have] helpfully assembled [our] desk and chair, though how sturdily is an open question. [Regarding Margaret][They] also took the time to put up some of Agent [Player]'s office decor -- [our] degree in Nonstandard Investigative Techniques, [EG]a trivia competition award, and a poster for [our] favorite movie: the b-movie time-travel classic The Room of Lost Time[PCG]a photo of [our] dog Pluto, and a print of [italic type]Green Pheasant[roman type] by Utagawa Hiroshige[LF]an original pencil drawing of the Pitfall snake by semi-acclaimed Washington DC artist Darius 5200, and a photo of [our] soccer team[end say]. At the very least the wall coverings help compensate for the lack of windows. The office door is to the north, and there's a white metal door to the west.[maybe insert computer muttering][otherwise]It's basically four white walls and grey carpet. There's a cheap desk and chair. In lieu of windows, there are a few things on the wall: [our] degree in Nonstandard Investigative Techniques, [EG]a trivia competition award, and a poster for [our] favorite movie[PCG]a photo of [our] dog Pluto, and a Japanese print[LF]a pencil drawing of the Pitfall snake, and a photo of [our] soccer team[end say]. The office door is to the north, and there's a white metal door to the west.[end if]"
 
 The snarky remark is "Opulent quarters, indeed."
 
@@ -1091,6 +1091,9 @@ The description of the BOSH Chief's office is "[If the BOSH chief's office is no
 Rule for writing a paragraph about Chief Huffton Klimp when the location is the BOSH Chief's office:
 	say "[Klimp] sits behind the desk, his feet up.";
 
+Rule for deciding the concealed possessions of Chief Huffton Klimp:
+	yes;
+
 After printing the locale description of the BOSH Chief's office:
 	if the BOSH chief's office is not visited:
 		say "[Klimp] says 'What's with that ringing? Someone answer it!'".		
@@ -1222,7 +1225,9 @@ The prints are scenery in the BOSH Chief's office. The description is "There are
 Understand "painting/paintings" as prints.
 The snarky remark of the prints is "The Chief's taste in art is as good as his taste in armchairs."
 
-Hora de la Muerte is scenery in the BOSH Chief's office. Understand "Diego/Ernesto/Diaz/abstract/neon/hued" as Hora de la Muerte. "The print is a riot of color, with a central figure that could be a skull. It's a bit much for the office, but it's certainly striking."
+Hora de la Muerte is scenery in the BOSH Chief's office. Understand "Diego/Ernesto/Diaz/abstract/neon/hued" as Hora de la Muerte. "The print is a riot of color, with a central figure that could be a skeleton. It's a bit much for the office, but it's certainly striking."
+
+The skeleton is part of the Hora de la Muerte. The description is "It's a stylized skeleton, painted in neon hues. It's a bit macabre, but it's also a bit fun."
  
 The oddities are on the chief's shelves. They are scenery. The description is "This and that piece of junk that Klimp thinks is funny or interesting, including a pair of astral lenses and a juvenile sasquatch skull."
 Understand "memorabilia", "junk", "stuff", "knick-knacks", "knick knacks" as the oddities.
@@ -1501,7 +1506,7 @@ Moira Zin	Moira Zin	"'Moira,' [we] say, 'how are you doing with everything that'
 Chief Huffton Klimp	Margaret Chao	"'Margaret,' [we] say, 'what do you think of Klimp?'"	"Margaret looks around and then whispers, 'I don't think he likes me.'"
 Chief Huffton Klimp	Moira Zin	"'Moira,' [we] say, 'you've known Klimp longer than anyone. What do you think of him?'"	"'He's a child. That's what you have to understand about Klimp,' Moira says. 'He's never met a stupid idea he didn't like.'"
 Chief Huffton Klimp	Chief Huffton Klimp	"'Chief,' [we] say, 'what's going --'"	"'Have you heard about these new ancient ruins in Kamchatka? Apparently there are some very interesting Koryak artifacts there that suggest a connection to the ancient Sumerians.'"
-Margaret Chao	Margaret Chao	"'How are you doing, Margaret?'"	"'It's great!' Margaret says. 'So many things to unpack!'"
+Margaret Chao	Margaret Chao	"'How are you doing, Margaret?'"	"'I'm great!' Margaret says. 'So many things to unpack!'"
 Margaret Chao	Moira Zin	"'Moira,' [we] say, 'what do you think of Margaret?'"	"'She'll do,' Moira says. 'She's a bit too eager, but she'll do.'"
 Margaret Chao	Chief Huffton Klimp	"'Chief,' [we] say, 'Margaret --'"	"'I'm reading about the latest discoveries in the field of cryptozoology,' Klimp says. 'Did you know that the Yeti is actually a type of bear? I don't mean a regular bear, but a bear that's not of this world.'"
 Bureau of Strange Happenings	Chief Huffton Klimp	"[We] [say] to Klimp, 'the Bureau --'"	"'The Bureau will be the most important line of defense when the alien threat inevitably comes to fruition. Savra is a fool,' he says with a gleam in his eye."
@@ -1536,7 +1541,7 @@ The Shroud of Turin	Chief Huffton Klimp	"'Chief, is the Shroud of --'"	"'Turin? 
 The Holy Grail	Chief Huffton Klimp	"'Chief,' [we] [ask], 'is the Holy --'"	"'Grail real? Well, maybe, maybe not. It depends on what you mean by [']real.['] In any case, it was lost in a time slip."
 Time slips	Chief Huffton Klimp	"'Chief, do time slips --'"	"'Really happen? Yes, they do. The Mobley-Jourdain Incident for example, or -- well, I can't remember the other one. I was thinking about the Jersey Devil, and its connection to the Church of Scientology.'"
 The Ark of the Covenant	Chief Huffton Klimp	"'Chief, you ever see Raiders of the Lost --'"	"Is this about the Ark of the Covenant? It's a real thing, you know. The director of the movie was a Freemason. But it's important to note that the Ark cannot melt your face off. That's a myth."
-The Spear of Destiny	Chief Huffton Klimp	"[We] [start] to ask Klimp a question when he interrupts, 'the Spear of Destiny, right? It's a real thing. I've seen it. It's in the Vatican. But it's a fake. The real one was stolen by the Illuminati.'"
+The Spear of Destiny	Chief Huffton Klimp	"[We] [start] to ask Klimp a question when he interrupts."	"'the Spear of Destiny, right? It's a real thing. I've seen it. It's in the Vatican. But it's a fake. The real one was stolen by the Illuminati.'"
 Alchemy	Chief Huffton Klimp	"'Chief, do you know anything about --'"	"'Alchemy? Well, yes and no. It's a real thing, but it's not what you think. It's a science, but it's not a science. I used to dabble in it, back before my sacred geometry phase. Never got the hang of it.'"
 The Illuminati	Chief Huffton Klimp	"[We] [begin], 'You believe in the --'"	"'Illuminati? Of course. They're everywhere. They're in the government, in the media, in the music industry. They're in the Bureau. They're in the BOSH offices. They're in the White House. They're in the Vatican. They're in the Black Knight Satellite.' Klimp looks around. 'They're in this room... okay, maybe not this room. And hopefully not in the BOSH offices. But they're everywhere else. You don't think Margaret's Illuminati, do you?'"
 The New World Order	Chief Huffton Klimp	"'Chief, what's the deal with the New --'"	"'New Order? You're into them, eighties music, right? No, no, you were going to ask about the New World Order, weren't you? It's a real thing. It's a real thing, and it's a real threat. It's a real threat to the world. It's a real threat to the universe. Well, that's an exaggeration. But it's real bad.'"
@@ -1586,6 +1591,7 @@ chief's black leather chair	Chief Huffton Klimp	"'Chief, what's the deal with yo
 bookcase	Chief Huffton Klimp	"'Chief, what's the deal with your --'"	"'--bookcase? Nothing much. Nothing like the news about the UFOs over Woonsocket. That's a real story.'"
 Woonsocket	Chief Huffton Klimp	"'Chief, what happened in Wo--'"	"'onsocket? Isn't that a funny name? I mean, what's a woon, anyway? But what were we talking about?"
 Dictionary of Strangeness	Chief Huffton Klimp	"'Chief --'"	"'You're going to ask about the Dictionary of Strangeness, aren't you? Fine. I've read it cover to cover. Know everything there is to know about everything one should know about. Ask me anything.'"
+prints	Chief Huffton Klimp	"'Chief, what's the deal with these --'"	"'--prints? I love art. But not for art's sake. More for my sake. And the sake of the world."
 The ringing-phone	Chief Huffton Klimp	"'Hey, Chief, sorry about the --'"	"'damn phone that keeps ringing? It's the Illuminati. They're trying to get you. They're trying to get me. They're trying to get everyone. Don't answer it. But make it stop. It's driving me crazy.'"
 The ringing-phone	Margaret	"[We] [say] to Margaret, 'Margaret, do you have any way to get into my desk to answer the phone, a spare key or --'"	"'No, no, I don't. I'm sorry. I don't know what to do. I'm sorry.'"
 The ringing-phone	Moira Zin	"'Moira, I'm so sorry about the phone ringing. It's locked in my desk and I can't get to it. I don't know what to do. I'm sorry.'"	"'It's okay, Larch. I'm sure whoever's calling will give up eventually.'"
