@@ -397,7 +397,7 @@ After printing the locale description when the location is Featureless Hyperplan
 
 Check going down from Featureless Hyperplane:
 	if hyperplane coords is not staircase coords:
-		say "[text of the can't go that way rule response (A)][line break]" instead; 		
+		say "[text of the can't go that way rule response (A)][line break]" instead; 
 
 Volume 3 - Hyperspace Field Office
 

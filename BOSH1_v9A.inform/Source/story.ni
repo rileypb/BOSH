@@ -738,9 +738,9 @@ After answering the blue flipphone:
 	'You can call me, I don't know, 'Blue Phone Guy' or something. It doesn't really matter. Now get to work.' The line goes dead.";
 	end the story saying "Congratulations on answering the phone!";
 
-After printing the player's obituary:
+[ After printing the player's obituary:
 	say "[italic type][bracket]Seriously, is that it?[close bracket][roman type][paragraph break]";
-	say "[bold type]Larch Faraji will return in 'BOSH II: The Dragon'.[roman type]";
+	say "[bold type]Larch Faraji will return in 'BOSH II: The Dragon'.[roman type]"; ]
 
 A key is a kind of thing.
 
@@ -1055,17 +1055,17 @@ Instead of examining Biff's computer when the thumb drive is not seen:
 The behind description of the BOSH front desk is "There are a number of shelves of office supplies behind the desk. There is also a heating vent on the floor here.";
 
 The heating vent is a scenery container. It is openable, closed, lockable, transparent and locked. "A typical air register with a grill which one would hope would stop things like, say, a hex wrench from falling through. It's set in the floor behind the front desk. The vent is held closed by four screws." Understand "heat/air/conditioning/register" as the heating vent. It is undescribed. 
-The snarky remark of the heating vent is "[if player knows hex-screws and player knows key-is-lost]It gets better and better[otherwise]I hope we don't need that hex wrench[end if]."
+The snarky remark of the heating vent is "[if player knows hex-screws and player knows key-is-lost and hex wrench is in heating vent]It gets better and better[otherwise if hex wrench is in heating vent]I hope we don't need that hex wrench[otherwise]Stupid vent, stupid screws[end if]."
 
 Securing relates various things to one thing. The verb to secure means the securing relation.
 Some flat head screws secure the heating vent. The description is "Four plain flat head screws." 
 
 After looking behind the BOSH front desk:
 	move the heating vent to front office;
-	move the screws to front office;
+	move the flat head screws to front office;
 	continue the action;
 	
-Instead of taking or taking off the screws when the screws secure the heating vent:
+Instead of taking or taking off the flat head screws when the flat head screws secure the heating vent:
 	if the player encloses the heating vent:
 		try opening the heating vent;
 	otherwise:
@@ -1085,6 +1085,32 @@ Instead of opening the heating vent when the heating vent is locked:
 	now the player knows vent-screws.
 	
 The can't reach inside closed containers rule response (A) is "[if the noun is the heating vent][Our] fingers won't fit through the openings in the vent. [We]'ll have to open it first[otherwise][The noun] [aren't] open[end if]."
+
+Instead of unlocking the heating vent with the red screwdriver when the hex wrench is in the heating vent:
+	now the player carries the hex wrench;
+	say "[We] [unscrew] the four screws and [remove] the vent cover. [We] [take] the hex wrench from inside and [put] the cover back on.";
+
+Instead of unlocking the heating vent with the red screwdriver when the hex wrench is not in the heating vent:
+	say "[We] [have] already gotten the hex wrench out of the vent.";
+
+Instead of opening the heating vent when the hex wrench is in the heating vent and the player encloses the red screwdriver:
+	now the player carries the hex wrench;
+	say "[We] [unscrew] the four screws and [remove] the vent cover. [We] [take] the hex wrench from inside and [put] the cover back on.";
+
+Instead of opening the heating vent when the hex wrench is not in the heating vent:
+	say "[We] [have] already gotten the hex wrench out of the vent.";
+
+Unscrewing it with is an action applying to two things. Understand "unscrew [something] with [something]" as unscrewing it with. Understand the commands "loosen", "undo", "unfasten" as "unscrew".
+
+Check unscrewing:
+	say "That's not going to work." instead;
+
+Instead of unscrewing the flat head screws with the red screwdriver when the hex wrench is in the heating vent:
+	now the player carries the hex wrench;
+	say "[We] [unscrew] the four screws and [remove] the vent cover. [We] [take] the hex wrench from inside and [put] the cover back on.";
+
+Instead of unscrewing the flat head screws with the red screwdriver when the hex wrench is not in the heating vent:
+	say "[We] [have] already gotten the hex wrench out of the vent.";
 
 
 Section 5 - BOSH chief's office 
