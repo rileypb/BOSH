@@ -169,7 +169,7 @@ throw out boxes is a behavior.
 
 The margaret box counter is a number that varies. The margaret box counter is 0.
 
-Every turn when Margaret is in the Front Office and the current behavior of Margaret is doing nothing:
+Every turn when Margaret is in the Front Office and the current behavior of Margaret is doing nothing and the Front Office is visited:
 	increase the margaret box counter by 1;
 	if a random chance of 1 in 5 succeeds and the margaret box counter is greater than 3:
 		if the location is the front office:
@@ -178,7 +178,8 @@ Every turn when Margaret is in the Front Office and the current behavior of Marg
 			say "One can hear the sound of boxes being flattened in the front office.";
 		now Margaret carries the margaret-flattened-boxes;
 		now the biff-flattened-boxes are in the room of stuff;
-		now the current interlocutor is nothing;
+		if the current interlocutor is Margaret:
+			now the current interlocutor is nothing;
 		add behavior throw out boxes to margaret;
 		now the margaret box counter is 0;
 
@@ -186,7 +187,8 @@ To initiate Margaret's box routine:
 	say "[Margaret] says, 'Hey, what are you doing with those boxes, [Agent]? You don't have to worry about that -- I'll get them.' [regarding Margaret][They] takes the flattened boxes from [us] and hustles off.";
 	now Margaret carries the margaret-flattened-boxes;
 	now the biff-flattened-boxes are in the room of stuff;
-	now the current interlocutor is nothing;
+	if the current interlocutor is Margaret:
+		now the current interlocutor is nothing;
 	add behavior throw out boxes to margaret;
 	
 Rule for behaving as Margaret when the current behavior of Margaret is throw out boxes:

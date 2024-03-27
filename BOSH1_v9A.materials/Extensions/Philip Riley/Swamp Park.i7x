@@ -18,7 +18,7 @@ The snarky remark of The Strip Mall Parking Lot South is "This is nice. At least
 
 [Index map with Strip Mall Parking Lot South mapped east of front office.]
 
-The Office_ is an unenterable room in Parking Lot South. The printed name is "office". "[We] [gaze] stoically at the sad little storefront that is the new BOSH office. The sign from the previous tenant is still up: 'Angel[']s Department Store'. Through the front window can be seen Margaret, in her usual manic work mode.".
+The Office_ is an unenterable room in Parking Lot South. The printed name is "office". "[We] [gaze] stoically at the sad little storefront that is the new BOSH office. The sign from the previous tenant is still up: 'Angel[']s Department Store'[if margaret is in the Front Office]. Through the front window can be seen Margaret, in her usual manic work mode[end if].".
 The snarky remark of the Office_ is "I'm sure the Bureau will be back on its feet in no time."
 The Office_ is an edifice.
 
@@ -28,6 +28,11 @@ Instead of entering the office_:
 Margaret at a distance is a part of the Office_.  She is privately-named. The printed name is "Margaret". The description is "Even from here one can sense [Margaret]'s irrepressible energy." Understand "Margaret/Chao" as Margaret at a distance when the location is Parking Lot South. She is female. She is not neuter.
 The snarky remark of Margaret at a distance is "Better get in there and slow her down before she explodes."
 Margaret at a distance is obstructed.
+
+Instead of doing something to Margaret at a distance when Margaret is not in the front office:
+	say "You can't see Margaret right now." instead;
+
+The office window is a part of the Office_. It is privately-named. The printed name is "office window". Understand "front window" as the office window. The description is "[if margaret is in the front office]Through the window, [we] can see Margaret, in her usual manic work mode[else]No one is visible inside[end if]."
 	
 The department store sign is a part of the office_. Understand "angel/angel's/wings" as the department store sign. The description is "It's adorned with a pair of angel's wings."
 The snarky remark of the department store sign is "What I wouldn't give for a pair of wings right now."

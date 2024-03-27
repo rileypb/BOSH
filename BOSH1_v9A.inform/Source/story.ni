@@ -512,8 +512,8 @@ Levitation is a subject. Understand "levitate" as levitation.
 Telekinesis is a subject. Understand "telekinetic" as telekinesis.
 Teleportation is a subject. Understand "teleport" as teleportation.
 aliens is a subject. Understand "UFO/UFOs" as aliens.
-Spontaneous human combustion is a subject. Understand "combustion" as spontaneous human combustion.
-The Moberly-Jourdain Incident is a subject.
+Spontaneous human combustion is a subject. 
+The Moberly-Jourdain Incident is a subject. Understand "moberly/jourdain" as the Moberly-Jourdain Incident.
 Nikola Tesla is a subject. 
 The Sargasso Sea is a subject.
 The Marfa Lights is a subject.
@@ -1140,12 +1140,12 @@ The Dictionary of Strangeness is a thing in BOSH Chief's Office. It is scenery. 
 
 To say random entry:
 	choose a random row in the Table of Random Entries;
-	say "[bold type][the subject entry][roman type][paragraph break][discussion entry]";
+	say "[bold type][The subject entry][roman type][paragraph break][discussion entry]";
 
 After examining the Dictionary of Strangeness for the first time:
 	say "[Klimp] says 'If you want to know more about anything in there, just ask me.'"; 
 
-Looking it up in is an action applying to two things. Understand "look up [any subject] in [something]" as looking it up in.
+Looking it up in is an action applying to two things. Understand "look up [any subject] in [something]", "look [any subject] up in [something]" as looking it up in. Understand "consult [something] about [any subject]" as looking it up in (with nouns reversed). Understand "read [something] about [any subject]" as looking it up in (with nouns reversed). Understand "read about [any subject] in [something]" as looking it up in.
 
 Instead of looking something up in the Dictionary of Strangeness:
 	if there is a subject of noun in the Table of Random Entries:
@@ -1575,7 +1575,7 @@ ESP	Chief Huffton Klimp	"'Chief, do you believe in --'"	"'ESP? Is that like ESPN
 Ghosts	Chief Huffton Klimp	"'Chief, do you believe in --'"	"'Ghosts? Yes. Ghosts, poltergeists, phantoms, specters, wraiths, apparitions, spooks, spirits, shades, and the undead are all real. I've seen them. I've talked to them. I've been one. I think. I can't remember.'"
 Vampires	Chief Huffton Klimp	"'Chief, are v--'"	"'Violins? Violets? Violence? Finish your words, Faraji. I can't read your mind. Oh, wait, you were going to ask about vampires, weren't you? They're sometimes real. Sometimes not. It's a quantum thing.'"
 Werewolves	Chief Huffton Klimp	"'Chief, are were--'"	"'[']Are where?['] That's hardly correct grammar. But I know what you mean. You mean werewolves. Werewolves are real. I once met one. You know what he said? He said, [']I'm a werewolf.[']'"
-Zombies	Chief Huffton Klimp	"'[We] [say] to Klimp, 'Zombies --'"	"'What? Zombies? I can't hear you. Speak up. Zombies? Oh, zombies. They're not very good conversationalists. They're not very good at anything.'"
+Zombies	Chief Huffton Klimp	"[We] [say] to Klimp, 'Zombies --'"	"'What? Zombies? I can't hear you. Speak up. Zombies? Oh, zombies. They're not very good conversationalists. They're not very good at anything.'"
 Hypnosis	Chief Huffton Klimp	"'Chief, do you believe in --'"	"'Hypnosis? I don't know. But I do know that Hipgnosis is a design firm. They did the cover for the Dark Side of the Moon. I like that cover. I like the triangle. I like the prism. I like the rainbow.'"
 Levitation	Chief Huffton Klimp	"'Chief, do you know --'"	"'anyone who can levitate? Well, that's a good question. I used to. But they fell down, so I don't know anymore."
 Telekinesis	Chief Huffton Klimp	"'Chief, do you believe in tele--'"	"'Television? Well, of course I do. I used to watch it all the time. Especially ESPN. For the passion. For the irrelevant discussions. For the games. But I don't think that's what you meant. You meant telekinesis, didn't you? I can't remember what I think about that.'"

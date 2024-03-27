@@ -24,7 +24,8 @@ Understand "ask [someone] for [text]" as imploring it for.
 
 Quizzing it about is an action applying to two visible things.
 
-Understand "ask [someone] about [any known thing]" as quizzing it about.
+Understand "ask [someone] about [any visible thing]" as quizzing it about.
+Understand "ask [someone] about [any subject]" as quizzing it about.
 
 Informing it about is an action applying to two visible things.
 

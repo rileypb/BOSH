@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 21338 words long.
+I've now read your source text, which is 21384 words long.
 
 
 -----------------------------------------------------
@@ -24,7 +24,7 @@ Phase II ... Semantic analysis Ia
 I've also read Standard Rules by Graham Nelson, which is 41092 words long.
 I've also read English Language by Graham Nelson, which is 2297 words long.
 I've also read Epistemology by Eric Eve, which is 1505 words long.
-I've also read Conversation Framework by Eric Eve, which is 5214 words long.
+I've also read Conversation Framework by Eric Eve, which is 5224 words long.
 I've also read Conversation Responses by Eric Eve, which is 1855 words long.
 I've also read Conversational Defaults by Eric Eve, which is 2247 words long.
 I've also read Basic Screen Effects by Emily Short, which is 2218 words long.
@@ -54,8 +54,8 @@ I've also read Simple Conversation by Philip Riley, which is 2190 words long.
 I've also read Hyperspace by Philip Riley, which is 7312 words long.
 I've also read BOSH Facts by Philip Riley, which is 94 words long.
 I've also read Image Strip by Philip Riley, which is 2080 words long.
-I've also read Swamp Park by Philip Riley, which is 5372 words long.
-I've also read Margaret by Philip Riley, which is 1833 words long.
+I've also read Swamp Park by Philip Riley, which is 5456 words long.
+I've also read Margaret by Philip Riley, which is 1851 words long.
 I've also read Enigma Lake by Philip Riley, which is 16303 words long.
 I've also read I Can Dig It by Philip Riley, which is 54 words long.
 I've also read Snarky Remarks by Philip Riley, which is 173 words long.
@@ -146,7 +146,7 @@ Regional: CONSTANT_VNT'field office area'-region(I254_field_office_area)(I160'fi
  == region
 Regional: CONSTANT_VNT'field office area'-region(I254_field_office_area)(I160'field office area')
  == region
-Regional: CONSTANT_VNT'elr'-region(I447_elr)(I339'elr')
+Regional: CONSTANT_VNT'elr'-region(I448_elr)(I340'elr')
  == region
 
 
@@ -251,17 +251,17 @@ Phase XII ... Code generation
                                                             Fail: list of numbers (~) number = nothing
                                             Fail: nothing (~) real number = nothing
                                             Fail: list of numbers (~) real number = nothing
-        Regional: CONSTANT_VNT'bosh hq'-region(I719_bosh_hq)(I605'bosh hq')
+        Regional: CONSTANT_VNT'bosh hq'-region(I720_bosh_hq)(I606'bosh hq')
          == region
-        Regional: CONSTANT_VNT'bosh hq'-region(I719_bosh_hq)(I605'bosh hq')
+        Regional: CONSTANT_VNT'bosh hq'-region(I720_bosh_hq)(I606'bosh hq')
          == region
-        Regional: CONSTANT_VNT'laundromat-region'-region(I382_laundromat_region)(I277'laundromat-region')
+        Regional: CONSTANT_VNT'laundromat-region'-region(I383_laundromat_region)(I278'laundromat-region')
          == region
-        Regional: CONSTANT_VNT'laundromat-region'-region(I382_laundromat_region)(I277'laundromat-region')
+        Regional: CONSTANT_VNT'laundromat-region'-region(I383_laundromat_region)(I278'laundromat-region')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I447_elr)(I339'elr')
+        Regional: CONSTANT_VNT'elr'-region(I448_elr)(I340'elr')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I447_elr)(I339'elr')
+        Regional: CONSTANT_VNT'elr'-region(I448_elr)(I340'elr')
          == region
         Regional: CONSTANT_VNT'field office area'-region(I254_field_office_area)(I160'field office area')
          == region
@@ -310,7 +310,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 243 files written as streams.
-CPU time: 789 centiseconds
+CPU time: 892 centiseconds
 
 
 That concludes the debugging log from this run of Inform.
