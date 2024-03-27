@@ -405,9 +405,11 @@ field office area is a region. It is in hyperspace.
 
 Book 1 - Reception
 
-field office reception is below Featureless Hyperplane. The preposition is "at". It is in field office area. "It is a small, white (like everything else) room with a desk and a single straight-backed chair in the middle of the room. A hallway leads west."
+field office reception is below Featureless Hyperplane. The preposition is "at". It is in field office area. "It is a small, white (like everything else) room with a desk against one wall. A hallway leads west and a stairway goes up to the infinite hyperplane."
 
-The reception desk is a supporter in field office reception. The description is "The desk, white, polished, and gleaming, is empty."
+The reception desk is a supporter in field office reception. The description is "The desk -- white, polished, and gleaming -- is empty except for a small control panel."
+
+The control panel is part of the reception desk. The description is "As you lean over to examine the control panel, Maggie says 'Please don't touch that. Don't even look at it. Time to look away now.'".
 
 Section - Maggie
 
@@ -419,6 +421,20 @@ Rule for writing a paragraph about Maggie when field office reception is not vis
 	say "Maggie looks up from her computer and smiles at [us]. 'Hello, I'm Maggie,' she says. 'Welcome to the BOSH Hyperspace Field Office, [agent]. I hope you didn't have too much trouble getting here. Doris does like his games. Before we proceed, please take a seat.'";
 	now Maggie is met;
 
+hyperspace-subject is a subject. It is privately-named. The printed name is "hyperspace". Understand "hyperspace" as hyperspace-subject.
+portal-to-the-past is a subject. It is privately-named. The printed name is "portal to the past". Understand "portal to the past", "past portal" as portal-to-the-past.
+auxiliary-portal is a subject. It is privately-named. The printed name is "auxiliary portal". Understand "auxiliary portal/--" as auxiliary-portal.
+
+Table of Quiz Topics (continued)
+subject (a thing)	interlocutor (a person)	comment (a text)	reply (a text)
+hyperspace-subject	Maggie	"'What is the nature of hyperspace?'"	"'It is a region of space that exists beyond the normal three dimensions of space and one dimension of time. It is a place of infinite possibility, where the laws of physics can be bent and broken.'"
+Doris	Maggie	"'Who is Doris?'"	"'Doris is the field office chief. He's a bit of a character, but he's a good boss. You can find him in his office, west of here.'"
+Christy	Maggie	"'Who is Christy?'"	"'Christy is the field office researcher. They're a bit of a mystery, but they're very good at what they do. You can find them in their office, south of here.'"
+Minerva	Maggie	"'Who is Minerva?'"	"'Minerva is our only field agent. She's a bit of a loner, but she's very good at what she does. You can find her in her office, north of here.'"
+portal-to-the-past	Maggie	"'What is the portal to the past?'"	"'It is a device that allows us to travel to different times and places. It is currently inactive, but it can be activated by typing in the correct code on my desk, which you're not allow to use, so don't even think about it. Unlike the auxiliary portal, the spacetime setting of the portal to the past is settable on the portal itself.'"
+auxiliary portal	Maggie	"'What is the auxiliary portal?'"	"'It is a device that allows us to travel to different times and places. It is currently inactive, but it can be activated by typing in the correct code on my desk, which you're not allow to use, so don't even think about it.'"
+Thumb drive	Maggie	"'What do you know about this?'"	"'I'm surprised you don't know. It's a USB drive. It's used to store data.'"
+Maggie	Maggie	"'Who are you?'"	"'I'm Maggie. I'm the receptionist here at the BOSH Hyperspace Field Office. I'm here to help you with whatever you need.'"
 
 
 Book 2 - Hallway
@@ -571,6 +587,8 @@ Christy's sketchbook is on Christy's desk. The description is "From what [we] ca
 
 Book 6 - Portal Room 1
 
+Definition: the portal to the past is active if it is activated and (the current spacetime setting is the town hall spacetime setting or the current spacetime setting is the shack spacetime setting).
+
 Portal Room 1 is a leavable room. It is forth of the field office hallway. It is in field office area. "The room is full of humming, glowing machinery, all of it attached to a large, arch-shaped portal in the middle of the room. The exit is back." It has egress back.
 
 The portal to the past is in Portal Room 1. The portal to the past can be activated. it is fixed in place.
@@ -578,13 +596,13 @@ The portal to the past is in Portal Room 1. The portal to the past can be activa
 To say portal to the past interior description:
 	if the portal to the past is activated:
 		if the current spacetime setting is the Town Hall spaceTime setting or the current spacetime setting is the Shack spaceTime setting:
-			say ". The field of light is a shimmering curtain of light, leading to another time and place";
+			say ". Inside it is a shimmering curtain of light, leading to another time and place";
 		otherwise:
 			say ". The portal is dark and inactive";
 	otherwise:
 		say ". The portal is dark and inactive";
 
-The description is "In the middle of the room looms a large portal made of the same astral stuff this whole dimension is made of[portal to the past interior description]. It is labeled 'Portal to the Past.'"
+The description is "The portal, made of the same astral stuff this whole dimension is made of, looms over the rest of the room[portal to the past interior description]. On the right post is a control panel. A label on the top of the arch reads 'Portal to the Past.'"
 
 Rule for writing a paragraph about the portal to the past:
 	say the description of the portal to the past;
@@ -609,19 +627,37 @@ The current spacetime setting is a number that varies. The current spacetime set
 The town hall spacetime setting is always 62358234.
 The shack spacetime setting is always 62357123.
 
-The spacetime control is a part of the portal to the past. The description is "A control panel is attached to the portal. It has a display and a keypad. [if the portal to the past is activated]The display reads '[current spacetime setting]'[otherwise]The display is dark[end if]."
+The spacetime control is a part of the portal to the past. The description is "A control panel is attached to the portal. It has a display and a keypad. [if the portal to the past is activated]The display reads '[current spacetime setting]'[otherwise]The display is dark[end if]. A large red button underneath says 'RESET'." Understand "panel" as the spacetime control.
 
 The keypad is a part of the spacetime control. The description is "A standard numeric keypad. The font on the keys is really cool and science fictiony."
 
-The display is a part of the spacetime control. The description is "The display reads '[current spacetime setting].'"
+The display is a part of the spacetime control. The description is "[if the portal to the past is activated]The display reads '[current spacetime setting]'[otherwise]The display is dark[end if]."
 
-Typing it into is an action applying to one number and one thing. Understand "type [number] into [something]" as typing it into.
+The reset button is a part of the spacetime control. The description is "A large red button that says 'RESET'."
+Carry out pushing the reset button:
+	now the current spacetime setting is the town hall spacetime setting;
+
+Report pushing the reset button:
+	say "The display now reads '[current spaceTime Setting].'";
+	if the portal to the past was active and the portal to the past is not active:
+		say "The shimmering curtain in the portal fades and disappears.";
+	otherwise if the portal to the past was not active and the portal to the past is active:
+		say "The shimmering curtain in the portal reappears.";
+	otherwise:
+		say "Nothing obvious happens.";
+	stop the action;
+
+Typing it into is an action applying to one number and one thing. Understand "type [number] into/on/in [something]" as typing it into. Understand the commands "key", "input" as "type". Understand "enter [number] into/on/in [something]" as typing it into.
 
 The typing it into action has a number called the original setting.
 
-Setting action variables for typing a number into something: 
+Typing something into the keypad is setting the current spacetime setting.
+Typing something into the spacetime control is setting the current spacetime setting.
+
+A thing can be keyed. The keypad is keyed. The control panel is keyed.
+
+Setting action variables for setting the current spacetime setting: 
 	now the original setting is the current spacetime setting;
-	say "original setting = [original setting]";
 
 Check typing into something:
 	if the second noun is not the spacetime control and the second noun is not the keypad:
@@ -631,21 +667,24 @@ Carry out typing into the spacetime control:
 	let the input be the number understood;
 	now the current spacetime setting is the input;
 
-Report typing into the spacetime control:
+Carry out typing into the keypad:
+	let the input be the number understood;
+	now the current spacetime setting is the input;
+
+Report typing a number into the spacetime control:
 	say "The display now reads '[current spaceTime Setting].'";
-	let originally_on be false;
-	if the original setting is the town hall spacetime setting:
-		now originally_on is true;
-	if the original setting is the shack spacetime setting:
-		now originally_on is true;
-	let now_on be false;
-	if the current spacetime setting is the town hall spacetime setting:
-		now now_on is true;
-	if the current spacetime setting is the shack spacetime setting:
-		now now_on is true;
-	if originally_on is true and now_on is false:
+	if the portal to the past was active and the portal to the past is not active:
 		say "The shimmering curtain in the portal fades and disappears.";
-	otherwise if originally_on is false and now_on is true:
+	otherwise if the portal to the past was not active and the portal to the past is active:
+		say "The shimmering curtain in the portal reappears.";
+	otherwise:
+		say "Nothing obvious happens.";
+
+Report typing a number into the keypad:
+	say "The display now reads '[current spaceTime Setting].'";
+	if the portal to the past was active and the portal to the past is not active:
+		say "The shimmering curtain in the portal fades and disappears.";
+	otherwise if the portal to the past was not active and the portal to the past is active:
 		say "The shimmering curtain in the portal reappears.";
 	otherwise:
 		say "Nothing obvious happens.";
@@ -658,7 +697,7 @@ The auxiliary portal is in Portal Room 2. The auxiliary portal can be activated.
 
 To say auxiliary portal interior description:
 	if the auxiliary portal is activated:
-		say ". The field of light is a shimmering curtain of light, leading to another time and place";
+		say ". Inside it is a shimmering curtain of light, leading to another time and place";
 	otherwise:
 		say ". The portal is dark and inactive";
 
@@ -1019,6 +1058,13 @@ Table of No Names (continued)
 named person (person)	anonymous description (text)	unnamed description (text)	proper name (text)
 Maggie	"young woman"	"receptionist"	"Maggie"
 
+Book 3 - Not for Release
 
+activating the portal to the past is an action out of world. Understand "activate" as activating the portal to the past.
+
+Carry out activating the portal to the past:
+	now the portal to the past is activated;
+	say "The portal hums to life.";
+	
 
 Hyperspace ends here.
