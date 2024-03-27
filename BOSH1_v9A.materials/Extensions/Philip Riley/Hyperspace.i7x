@@ -654,8 +654,6 @@ The typing it into action has a number called the original setting.
 Typing something into the keypad is setting the current spacetime setting.
 Typing something into the spacetime control is setting the current spacetime setting.
 
-A thing can be keyed. The keypad is keyed. The control panel is keyed.
-
 Setting action variables for setting the current spacetime setting: 
 	now the original setting is the current spacetime setting;
 
