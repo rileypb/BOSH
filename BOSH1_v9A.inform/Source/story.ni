@@ -390,6 +390,8 @@ The parser clarification internal rule response (E) is "What do you want [us] to
 
 the block kissing rule response (A) is "[We] might not like that."
 
+Understand the command "tell" as something new.
+
 Book 5 - Automatic greeting
 
 After going to a room:
@@ -523,6 +525,7 @@ UFOs is a subject. Understand "UFO" as UFOs.
 Ouija boards is a subject. Understand "board" as Ouija boards.
 The Bureau of Supernatural History is a subject.
 Woonsocket is a subject. 
+bear is a subject. Understand "bear from another world" as bear.
 
 [spacetime is a subject. Understand "time" as spacetime. The printed name is "Time". the help text of SpaceTime is "According to Wikipedia, time is the continued sequence of existence and events that occurs in an apparently irreversible succession from the past, through the present, into the future.".]
 
@@ -1607,6 +1610,7 @@ bookcase	Chief Huffton Klimp	"'Chief, what's the deal with your --'"	"'--bookcas
 Woonsocket	Chief Huffton Klimp	"'Chief, what happened in Wo--'"	"'onsocket? Isn't that a funny name? I mean, what's a woon, anyway? But what were we talking about?"
 Dictionary of Strangeness	Chief Huffton Klimp	"'Chief --'"	"'You're going to ask about the Dictionary of Strangeness, aren't you? Fine. I've read it cover to cover. Know everything there is to know about everything one should know about. Ask me anything.'"
 prints	Chief Huffton Klimp	"'Chief, what's the deal with these --'"	"'--prints? I love art. But not for art's sake. More for my sake. And the sake of the world."
+bear	Chief Huffton Klimp	"'Chief, why do you talk about --'"	"'bears? Because they're dangerous. They're everywhere. They're in the woods. They're in the cities. They're in the mountains. They're in the oceans. Everywhere.'"
 The ringing-phone	Chief Huffton Klimp	"'Hey, Chief, sorry about the --'"	"'damn phone that keeps ringing? It's the Illuminati. They're trying to get you. They're trying to get me. They're trying to get everyone. Don't answer it. But make it stop. It's driving me crazy.'"
 The ringing-phone	Margaret	"[We] [say] to Margaret, 'Margaret, do you have any way to get into my desk to answer the phone, a spare key or --'"	"'No, no, I don't. I'm sorry. I don't know what to do. I'm sorry.'"
 The ringing-phone	Moira Zin	"'Moira, I'm so sorry about the phone ringing. It's locked in my desk and I can't get to it. I don't know what to do. I'm sorry.'"	"'It's okay, Larch. I'm sure whoever's calling will give up eventually.'"

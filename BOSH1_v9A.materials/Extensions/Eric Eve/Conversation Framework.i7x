@@ -24,7 +24,7 @@ Understand "ask [someone] for [text]" as imploring it for.
 
 Quizzing it about is an action applying to two visible things.
 
-Understand "ask [someone] about [any visible thing]" as quizzing it about.
+Understand "ask [someone] about [something]" as quizzing it about.
 Understand "ask [someone] about [any subject]" as quizzing it about.
 
 Informing it about is an action applying to two visible things.
@@ -69,12 +69,12 @@ Implicit-asking is an action applying to one topic.
 
 Understand "ask about [text]" or "a [text]" as implicit-asking.
 
-implicit-telling is an action applying to one topic.
+[ implicit-telling is an action applying to one topic. ]
 
-Understand "t [text]" as implicit-telling.
+[ Understand "t [text]" as implicit-telling. ]
 
 implicit-quizzing is an action applying to one visible thing.
-  Understand "ask about [any known thing]" or "a [any known thing]" as implicit-quizzing.
+  Understand "ask about [something]" or "a [something]" or "a [any subject]" or "ask about [any subject]" as implicit-quizzing.
 
 implicit-informing is an action applying to one visible thing.
   Understand "t [any known thing]" or "talk about [any known thing]" as implicit-informing.
@@ -86,7 +86,7 @@ implicit-imploring is an action applying to one topic.
   Understand "ask for [text]" as implicit-imploring.
 
 implicit-asking is implicit-conversing. 
-implicit-telling is implicit-conversing. 
+[ implicit-telling is implicit-conversing.  ]
 implicit-quizzing is implicit-conversing. 
 implicit-informing is implicit-conversing.
 implicit-requesting is implicit-conversing.
@@ -116,8 +116,8 @@ Before implicit-conversing when the current interlocutor is not visible and the 
 Instead of implicit-asking:
   try asking the current interlocutor about it.
 
-Instead of implicit-telling:
-  try telling the current interlocutor about it.
+[ Instead of implicit-telling:
+  try telling the current interlocutor about it. ]
 
 Instead of implicit-quizzing:
   try quizzing the current interlocutor about the noun.
@@ -148,7 +148,7 @@ To say is a verb.
 Chapter 1 - Greeting Definitions
 
 Asking someone about something is conversing.
-Telling someone about something is conversing.
+[ Telling someone about something is conversing. ]
 Quizzing someone about something is conversing.
 Informing someone about something is conversing.
 Answering someone that something is conversing.
@@ -157,7 +157,7 @@ Requesting someone for something is conversing.
 Imploring someone for something is conversing.
 
 Asking someone about something is speaking.
-Telling someone about something is speaking.
+[ Telling someone about something is speaking. ]
 Quizzing someone about something is speaking.
 Informing someone about something is speaking.
 Answering someone that something is speaking.
@@ -343,8 +343,8 @@ Book 4 - Limiting what can be spoken about
 Check quizzing someone about something unknown (this is the block asking about something unknown rule):
   abide by the block asking rule.
 
-Check informing someone about something unknown (this is the block telling about something unknown rule):
-  abide by the block telling rule.
+[ Check informing someone about something unknown (this is the block telling about something unknown rule): ]
+  [ abide by the block telling rule. ]
 
 To say make (obj - a thing) known/familiar:
   now obj is familiar.
