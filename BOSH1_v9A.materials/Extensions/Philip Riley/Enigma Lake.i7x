@@ -401,6 +401,9 @@ Instead of tying the shiny astral resonator to the rings:
 Instead of tying the shiny clamps to the rings:
 	hook up the shiny resonator;
 
+Instead of tying the shiny clamps to the platform:
+	hook up the shiny resonator;
+
 Instead of tying the shiny astral resonator to the rings:
 	hook up the shiny resonator;
 
@@ -1022,10 +1025,11 @@ The equipment cabinet is a closed locked openable lockable scenery container in 
 It has matching key the iron key. Understand "heavy/metal" as the equipment cabinet.
 "A heavy metal cabinet with a lock. [if the equipment cabinet is open]The cabinet is open[otherwise]The cabinet is closed[end if]."
 
-The rusty astral resonator is in the equipment cabinet. It is privately-named. The description is "A small, rusty, metallic, cylindrical object. One end is capped with a crystal lens, while the other terminates in two metal chains, each with a metal clamp, as if it were designed to be attached to something.".
+The rusty astral resonator is in the equipment cabinet. It is privately-named. The description is "A small, rusty, metallic, cylindrical object. One end is capped with a crystal lens, while the other terminates in a threaded base, like a light bulb.".
 The printed name is "[if Astral Secrets is familiar]rusty astral resonator[otherwise]strange, rusty, metal object[end if]".
 Understand "rusty/astral/resonator" as the rusty astral resonator when Astral Secrets is familiar.
 Understand "strange/rusty/metal/metallic/cylindrical/cylinder/object" as the rusty astral resonator.
+The threaded base is part of the rusty astral resonator. The description is "The base is threaded, like a light bulb."
 
 The snarky remark of the rusty astral resonator is "[if the shiny astral resonator is not familiar]Ooh. I've always wanted one of these[otherwise]Someone should have taken better care of this[end if].".
 
@@ -1224,13 +1228,13 @@ Horton-back-facade is a building facade. It is in Horton Graveyard. It is privat
 
 The Witnessing of Hezekiah is in the metal case. The description is "A small, leather-bound book, titled 'The Witnessing of Hezekiah: as told to Jeremiah Horton by Hezekiah Horton'. The book is filled with strange, cryptic passages, and is difficult to read. [We] [find] one page of particular interest. It reads, 'And lo, Hezekiah, in his wisdom, did prophesy of the impending flood and the necessity to make ready. He spoke of a sacred artifact, a resonator, bestowed with divine power, that would unveil a gateway to the ethereal realm. And he revealed the quest to find the astral focus, a sacred relic of great significance. Thus he spake: [']Take the resonator, and with reverence, bind it to the eternal flame, and then to the astral focus. Channel a mighty power through it, and direct them towards the crystal eye. Strike the eye thrice, with unwavering devotion, and behold, the portal shall open, revealing the path to transcendence.[']'";
 
-The shiny astral resonator is in the metal case. It is privately-named. The description is "A small, shiny, metallic, cylindrical object. One end is capped with a crystal lens, while the other terminates in two metal chains, each with a metal clamp, as if it were designed to be attached to something.".
+The shiny astral resonator is in the metal case. It is privately-named. The description is "A small, shiny, metallic, cylindrical object. One end is capped with a crystal lens, while the other terminates in two shiny metal chains, each with a shiny metal clamp, as if it were designed to be attached to something.".
 The printed name is "[if Astral Secrets is familiar]shiny astral resonator[otherwise]strange, shiny, metal object[end if]".
 Understand "shiny/astral/resonator" as the shiny astral resonator when Astral Secrets is familiar.
 Understand "strange/shiny/metal/metallic/cylindrical/cylinder/object" as the shiny astral resonator.
 The snarky remark of the shiny astral resonator is "[if the rusty astral resonator is not familiar]Ooh. I've always wanted one of these[otherwise]Wow, this is one is so shiny[end if].".
-The shiny clamps are part of the shiny astral resonator. The description is "Two metal chains, each with a metal clamp, are attached to the end of the resonator.". Understand "metal/-- chains" as the clamps. They are plural-named.
-The shiny crystal lens is part of the shiny astral resonator. The description is "A crystal lens is attached to the end of the resonator.".
+The shiny clamps are part of the shiny astral resonator. The description is "Two metal chains, each with a metal clamp, are attached to the end of the [if Astral Secrets is familiar]resonator[otherwise]object[end if].". Understand "metal/-- chains" as the shiny clamps. They are plural-named.
+The shiny crystal lens is part of the shiny astral resonator. The description is "A crystal lens is attached to the end of the [if Astral Secrets is familiar]resonator[otherwise]object[end if].".
 
 
 Book 28 - Fire Station 1
