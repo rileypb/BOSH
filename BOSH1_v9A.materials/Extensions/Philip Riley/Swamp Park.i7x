@@ -214,8 +214,22 @@ Dave's pawn shop is in Swamp Park.
 A man called Dave is in the pawn shop. Understand "owner" as Dave. "A man, presumably Dave, stands behind the main counter eyeing [Player]." The description is "He's dressed in polyester, as if he were still wearing last night's bowling shirt. A bit of tattoo peeks out from his open collar."
 The snarky remark of Dave is "He's good at hiding his fangs."
 
+The tattoo is part of Dave. The description is "It's hard to make out, but it looks like a dragon."
+
 Greeting response for Dave:
 	say "[Dave] grunts hello.";
+
+a five-dollar bill is a thing. The description is "A five-dollar bill." Understand "five-dollar", "dollar/bucks/dollars/buck", "bill" as a five-dollar bill.
+
+Instead of giving the wristwatch to Dave:
+	say "Dave smiles when [we] [hand] him the watch. 'I've been looking for this,' he says. 'Here you go, five bucks for your trouble.'";
+	now the player carries the five-dollar bill;
+	remove the wristwatch from play;
+
+Instead of showing the wristwatch to Dave:
+	say "Dave smiles when [we] [hand] him the watch. 'I've been looking for this,' he says. 'Here you go, five bucks for your trouble.'";
+	now the player carries the five-dollar bill;
+	remove the wristwatch from play;
 	
 [The how-are-you-reply of Dave is "Been better.".]
 	
@@ -508,12 +522,34 @@ Instead of switching on the flashlight:
 Instead of switching off the flashlight:
 	now the flashlight is not lit. 
 
+Instead of buying the red screwdriver with the five-dollar bill:
+	say "The clerk takes the five-dollar bill and hands you the red screwdriver. 'Thanks,' he says.";
+	now the player carries the red screwdriver;
+	remove the five-dollar bill from play;
+
+Instead of buying something with something when the second noun is not the five-dollar bill:
+	say "[The second noun] is not legal currency.";
+
+Instead of buying something with the five-dollar bill:
+	if the player owns the noun:
+		say "[We] already [own] that.";
+	otherwise if someone (called the owner) owns the noun and the owner is willing to sell the noun:
+		say "[We] [don't] have enough money ([price of the noun]) for that.";
+	otherwise if no one owns the noun:
+		say "No one seems to own that.";
+	otherwise:
+		say "[The owner of the noun] doesn't seem to want to sell that.";
+
+Rule for supplying a missing second noun while buying the red screwdriver with:
+	if the player encloses the five-dollar bill:
+		now the second noun is the five-dollar bill;
+
 The glass case is a container in the Convenience Store. it is openable. It is closed and locked. it is scenery. It is transparent. In the glass case is the flashlight, a red screwdriver, a laptop computer, and some wireless earbuds. The wireless earbuds are plural-named. 
 Understand "useful/items" as the glass case.
 The snarky remark of the glass case is "Quality merchandise, I'm sure."
 
 The clerk owns the flashlight. The clerk is willing to sell the flashlight.
-The price of the flashlight is $5.
+The price of the flashlight is $6.
 The clerk owns the red screwdriver. The clerk is willing to sell the red screwdriver.
 The price of the red screwdriver is $5.
 The clerk owns the laptop. The clerk is willing to sell the laptop.

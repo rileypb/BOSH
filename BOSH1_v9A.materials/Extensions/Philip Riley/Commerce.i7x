@@ -1,22 +1,22 @@
 Commerce by Philip Riley begins here.
 
-Understand the commands “buy” and “purchase” as something new.
+[ Understand the commands “buy” and “purchase” as something new. ]
 
 An amount of money is a kind of value. $1 specifies an amount of money.
-
-A money card is a kind of thing. A money card has an amount of money called the balance. A money card can be mc-enabled or mc-disabled. A money card is usually mc-enabled.
+[ 
+A money card is a kind of thing. A money card has an amount of money called the balance. A money card can be mc-enabled or mc-disabled. A money card is usually mc-enabled. ]
 
 A thing has an amount of money called the price.
 
 Owner relates one person (called the owner) to a thing. The verb to own (he owns, they own, it is owned) implies the owner relation.
 
 Buying it with is an action applying to one visible thing and one carried thing. Understand "Buy [thing] with [thing]" as buying it with.
-Understand "Buy [thing]" as buying it with. Understand "Purchase [thing] with [thing]" as buying it with. 
+Understand "Purchase [thing] with [thing]" as buying it with. 
 Understand "Purchase [thing]" as buying it with.
 	
 Vends relates one person (called the vendor) to various things. The verb to be willing to sell implies the vends relation.
 
-Rule for supplying a missing second noun while buying something (called the product) with:
+[ Rule for supplying a missing second noun while buying something (called the product) with:
 	if the player owns the product:
 		say "You already own that!" instead;
 	let M be the list of money cards enclosed by the player;
@@ -53,7 +53,7 @@ Carry out buying something (called the product) with something (called damoney):
 	say "You pay [the price of the product] and [the product] [are] yours.";
 	now the player owns the product;
 	now the balance of damoney is the balance of damoney minus the price of the product;
-	now the player has the product;
+	now the player has the product; ]
 	
 [Pricing it is an action applying to one visible thing. Understand "how much is [thing]" as pricing it.
 Understand "how much does [thing] cost" as pricing it.

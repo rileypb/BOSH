@@ -35,7 +35,7 @@ Description notes for the makeshift astral resonator:
 	if the makeshift astral resonator is powered:
 		add "providing light" to descriptive notes;
 
-		
+The wristwatch is a thing. Understand "watch" as the wristwatch. The description is "A simple wristwatch. The initials 'DM' are engraved on the back."
 
 
 Volume 3 - Geography

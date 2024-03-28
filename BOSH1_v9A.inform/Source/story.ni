@@ -68,6 +68,7 @@ Use MAX_PROP_TABLE_SIZE of 800000.
 Use MAX_NUM_STATIC_STRINGS of 400000.
 Use MAX_SYMBOLS of 200000.
 Use MAX_OBJECTS of 1024.
+Use MAX_DICT_ENTRIES of 20000.
 
 Work Title is always "The Bureau of Strange Happenings".  
  
@@ -224,7 +225,7 @@ To init player:
 	now the player carries the green smartphone;
 	[now the player carries the bureau credit card;]
 	now the player knows klimp's phone number;
-	now the player owns the bureau credit card;
+	[ now the player owns the bureau credit card; ]
 	now the player knows biff's mobile number;
 	now the player owns the green smartphone;
 
@@ -748,9 +749,15 @@ The little grey key is a key. It is in biff's desk's drawer. The little grey key
 Biff's desk drawer has matching key the little grey key. The description of Biff's desk's drawer is "The desk is a cheap DIY piece held together with hex screws."
 The snarky remark of the little grey key is "And now you'll never get used, little key."
 
-The hex screws are part of biff's desk drawer. The description is "Several hex screws hold the desk drawer together." The snarky remark is "Hateful little things."
+The hex screws are part of biff's desk's drawer. The description is "Several hex screws hold the desk drawer together." The snarky remark is "Hateful little things."
 
 Taking apart the desk is an action applying to one thing. Understand "take apart [Biff's desk]", "take apart [Biff's desk's drawer]", "unscrew [Biff's desk]", "unscrew [Biff's desk's drawer]", "take [Biff's desk] apart", "take [Biff's desk's drawer] apart", "unscrew [hex screws]", "disassemble [Biff's desk]", "disassemble [Biff's desk's drawer]" as taking apart the desk when the location is Biff's office.
+
+Instead of opening biff's desk when the player encloses the hex wrench and the blue flipphone is not handled:
+	try taking apart the desk biff's desk;
+
+Instead of opening biff's desk's drawer when the player encloses the hex wrench and the blue flipphone is not handled:
+	try taking apart the desk biff's desk;
 
 Check taking apart the desk when the player does not enclose the hex wrench:
 	say "The screws are in there pretty tight. [We] [don't] have the right tools to get them out." instead;
@@ -784,10 +791,10 @@ After examining the desk:
 	now player knows hex-screws;
 
 In Biff's desk's drawer is an ID. Biff's desk's drawer is closed. [Your desk's drawer is locked.]
-Biff's desk's drawer contains a money card called the Bureau credit card.  
-The Bureau credit card is mc-disabled.
+[ Biff's desk's drawer contains a money card called the Bureau credit card.   ]
+[ The Bureau credit card is mc-disabled.
 
-The balance of the bureau credit card is $300. The player owns the Bureau credit card.
+The balance of the bureau credit card is $300. The player owns the Bureau credit card. ]
 [The help text of the bureau credit card is "The pre-paid credit card issued to [us] by the Bureau. Its balance is currently [balance of the bureau credit card]."].
 	
 The photo of Pluto is here. It is scenery. Understand "dog/pluto/photo/picture" as Photo of Pluto. The description is "It's a picture of [our] best friend, Pluto.".
@@ -1054,19 +1061,19 @@ Instead of examining Biff's computer when the thumb drive is not seen:
 
 The behind description of the BOSH front desk is "There are a number of shelves of office supplies behind the desk. There is also a heating vent on the floor here.";
 
-The heating vent is a scenery container. It is openable, closed, lockable, transparent and locked. "A typical air register with a grill which one would hope would stop things like, say, a hex wrench from falling through. It's set in the floor behind the front desk. The vent is held closed by four screws." Understand "heat/air/conditioning/register" as the heating vent. It is undescribed. 
+The heating vent is a scenery container. It is openable, closed, lockable, transparent and locked. "A typical air register with a grill which one would hope would stop things like, say, a hex wrench from falling through. It's set in the floor behind the front desk. The vent is held closed by four screws." Understand "heat/air/conditioning/register/grill" as the heating vent. It is undescribed. 
 The snarky remark of the heating vent is "[if player knows hex-screws and player knows key-is-lost and hex wrench is in heating vent]It gets better and better[otherwise if hex wrench is in heating vent]I hope we don't need that hex wrench[otherwise]Stupid vent, stupid screws[end if]."
 
 Securing relates various things to one thing. The verb to secure means the securing relation.
 Some flat head screws secure the heating vent. The description is "Four plain flat head screws." 
+They are part of the heating vent. 
 
 After looking behind the BOSH front desk:
 	move the heating vent to front office;
-	move the flat head screws to front office;
 	continue the action;
 	
 Instead of taking or taking off the flat head screws when the flat head screws secure the heating vent:
-	if the player encloses the heating vent:
+	if the player encloses the red screwdriver:
 		try opening the heating vent;
 	otherwise:
 		say "The screws are currently engaged in keeping the vent closed.";
@@ -1104,6 +1111,9 @@ Unscrewing it with is an action applying to two things. Understand "unscrew [som
 
 Check unscrewing:
 	say "That's not going to work." instead;
+
+Instead of turning the flat head screws when the player encloses the red screwdriver:
+	try unscrewing the flat head screws with the red screwdriver;
 
 Instead of unscrewing the flat head screws with the red screwdriver when the hex wrench is in the heating vent:
 	now the player carries the hex wrench;
@@ -1841,6 +1851,10 @@ test part1 with "w/w/s/open desk/n/e/ask about key/ask about computer/look behin
 test part2 with "f/f/f/f/f/fn/fw/fn/fn/fw/w/fn/w/take compass/x 
 it/s/s/s/s/s/s/s/e/e/e/e/e/e/e/e/b/b/b/b/b/b/b/b/b/d".
 
+test wrench with "w/look behind desk/purloin red screwdriver";
+
+test desk with "sw/purloin wristwatch/give watch to dave/ne/n/e/buy screwdriver/w/s/w/look behind desk/open vent/w/s";
+
 test klimp with "w/look behind desk/x vent/e/sw/ask about screwdriver/ask about owner/ne/w/w/w".
 	
 lensing is an action applying to nothing. Understand "lens" as lensing.
@@ -1862,7 +1876,7 @@ Carry out jumping to part 3:
 	move the player to the enigma lake town hall;
 	now the player wears the pair of astral lenses;
 	now the player carries the recall button;
-	now the player carries the Bureau credit card;
+	[ now the player carries the Bureau credit card; ]
 	now the green smartphone is nowhere;
 	
 Volume 2 - Test command tweak for clean transcripts
