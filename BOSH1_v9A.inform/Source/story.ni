@@ -223,9 +223,7 @@ After reading a command when current play mode is picking character:
 	
 To init player:
 	now the player carries the green smartphone;
-	[now the player carries the bureau credit card;]
 	now the player knows klimp's phone number;
-	[ now the player owns the bureau credit card; ]
 	now the player knows biff's mobile number;
 	now the player owns the green smartphone;
 
@@ -791,10 +789,7 @@ After examining the desk:
 	now player knows hex-screws;
 
 In Biff's desk's drawer is an ID. Biff's desk's drawer is closed. [Your desk's drawer is locked.]
-[ Biff's desk's drawer contains a money card called the Bureau credit card.   ]
-[ The Bureau credit card is mc-disabled.
 
-The balance of the bureau credit card is $300. The player owns the Bureau credit card. ]
 [The help text of the bureau credit card is "The pre-paid credit card issued to [us] by the Bureau. Its balance is currently [balance of the bureau credit card]."].
 	
 The photo of Pluto is here. It is scenery. Understand "dog/pluto/photo/picture" as Photo of Pluto. The description is "It's a picture of [our] best friend, Pluto.".
@@ -1863,21 +1858,51 @@ Carry out lensing:
 	now the player wears the pair of astral lenses;
 	try looking.
 
-jumping to the past is an action applying to nothing. Understand "past" as jumping to the past.
+Jumping to part 2 is an action applying to nothing. Understand "plane" as jumping to part 2.
 
-Carry out jumping to the past:
-	move the player to field office hallway;
-	now the portal to the past is activated;
+Carry out jumping to part 2:
+	move the player to the featureless hyperplane;
+	now the player wears the pair of astral lenses;
 	now the green smartphone is nowhere;
-	
-jumping to part 3 is an action applying to nothing. Understand "enigma" as jumping to part 3.
+	now the handtruck is in the back basement;
+	now the broken washing machine is open;
+	now the broken washing machine is in the back basement;
+	now the strange glow is in the broken washing machine;
+	now the strange glow is closeby;
+	now the player carries the thumb drive;
+
+jumping to part 3 is an action applying to nothing. Understand "doris" as jumping to part 3.
 
 Carry out jumping to part 3:
+	now Hyperplane Coords is {0, 0, 0};
+	move the player to the field office reception;
+	now the player wears the pair of astral lenses;
+	now the green smartphone is nowhere;
+	now the player carries the mystic compass;
+	now the handtruck is in the back basement;
+	now the broken washing machine is open;
+	now the broken washing machine is in the back basement;
+	now the strange glow is in the broken washing machine;
+	now the strange glow is closeby;
+	now the player carries the thumb drive;
+	
+jumping to part 4 is an action applying to nothing. Understand "enigma" as jumping to part 4.
+
+Carry out jumping to part 4:
+	now Hyperplane Coords is {0, 0, 0};
 	move the player to the enigma lake town hall;
 	now the player wears the pair of astral lenses;
-	now the player carries the recall button;
-	[ now the player carries the Bureau credit card; ]
 	now the green smartphone is nowhere;
+	now the player carries the mystic compass;
+	now the player carries the recall button;
+	now the thumb drive is nowhere;
+	now Tribes of New York is nowhere;
+	now the handtruck is in the back basement;
+	now the broken washing machine is open;
+	now the broken washing machine is in the back basement;
+	now the strange glow is in the broken washing machine;
+	now the strange glow is closeby;
+	
 	
 Volume 2 - Test command tweak for clean transcripts
 

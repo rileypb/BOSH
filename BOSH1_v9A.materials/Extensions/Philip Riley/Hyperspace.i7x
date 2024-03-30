@@ -211,31 +211,37 @@ Carry out going a direction (called D) from Featureless Hyperplane:
 		increment entry 2 of hyperplane coords;
 		increment entry 3 of hyperplane coords;		
 	if hyperplane coords is Coordinates of Pillar:
-		if the player does not carry the mystic compass:
+		if the player does not carry the mystic compass and the compass is in Featureless Hyperplane:
 			move the mystic compass to Featureless Hyperplane;
 		now the printed name of Featureless Hyperplane is "ethereal pillar";
 		now the preposition of Featureless Hyperplane is "next to";
 		move Ethereal Pillar to Featureless Hyperplane;
 	otherwise if hyperplane coords is Staircase Coords:
-		if the player does not carry the mystic compass:
+		if the player does not carry the mystic compass and the compass is in Featureless Hyperplane:
 			remove the mystic compass from play;
 		now the printed name of Featureless Hyperplane is "descending stair";
 		now the preposition of Featureless Hyperplane is "at the top of";
 		move Descending Stair to Featureless Hyperplane;
 	otherwise:
-		if the player does not carry the mystic compass:
+		if the player does not carry the mystic compass and the compass is in Featureless Hyperplane:
 			remove the mystic compass from play;
 		now the printed name of Featureless Hyperplane is "featureless hyperplane";
 		now the preposition of Featureless Hyperplane is "on";
 		now the Ethereal Pillar is nowhere;
 		now Descending Stair is nowhere;
 
+Carry out going up from Field Office Reception:
+	now HyperPlane Coords is Staircase Coords;
+	now the printed name of Featureless Hyperplane is "descending stair";
+	now the preposition of Featureless Hyperplane is "at the top of";
+	move Descending Stair to Featureless Hyperplane;
+
 
 Descending Stair is scenery. 
 [Rule for writing a paragraph about the descending stair:
 	say "A spiraling staircase disappears into the ground here. It is made of the same gossamer, questionably real stuff as the ground,[if visited pillar is true] the pillar,[end if] and the readouts. You can't see past the first turn of the stairs, unfortunately.";]
 
-The Ethereal Pillar is a thing. 
+The Ethereal Pillar is a thing. The description is "It's not clear what the pillar is made of, but it's definitely not stone." 
 The snarky remark is "Dammit, Doris, you and your cryptic messages."
 
 To decide what list of numbers is convert (N - a number) to base five:
@@ -322,7 +328,7 @@ Staircase coords is always {0, 0, 0}.
 
 Rule for writing a paragraph about the Ethereal Pillar:
 	now visited pillar is true;
-	say "There is an ethereal pillar here. A message carved into the pillar says 'Seek the origin. -Doris'[paragraph break]";
+	say "There is an [ethereal pillar] here. A message carved into the pillar says 'Seek the origin. -Doris'[paragraph break]";
 	say "Under that is a line of five strange symbols: o p q d b";
 	[say "Under that is a line of five strange symbols: ◊ ┘ ┐ ┌ └";]
 	say paragraph break;
@@ -378,11 +384,12 @@ To decide which real number is the distance:
 	decide on the real square root of dsq;
 	
 Instead of examining the mystic compass when the location is Featureless Hyperplane:
-	if player carries the mystic compass:
-		say "On the readout of the mystic compass floats a set of ethereal symbols: [symbols for convert entry 1 of hyperplane coords to base five] : [symbols for convert entry 2 of hyperplane coords to base five] : [symbols for convert entry 3 of hyperplane coords to base five][paragraph break]";
+	say "On the readout of the mystic compass floats a set of ethereal symbols: [symbols for convert entry 1 of hyperplane coords to base five] : [symbols for convert entry 2 of hyperplane coords to base five] : [symbols for convert entry 3 of hyperplane coords to base five][paragraph break]";
+	
 
 After printing the locale description when the location is Featureless Hyperplane:
-	try examining the mystic compass;
+	if the player encloses the mystic compass:
+		try examining the mystic compass;
 	if Hyperplane Coords is not Coordinates of Pillar:
 		let t be the dirstring;
 		let dist be the distance;
@@ -407,34 +414,40 @@ Book 1 - Reception
 
 field office reception is below Featureless Hyperplane. The preposition is "at". It is in field office area. "It is a small, white (like everything else) room with a desk against one wall. A hallway leads west and a stairway goes up to the infinite hyperplane."
 
-The reception desk is a supporter in field office reception. The description is "The desk -- white, polished, and gleaming -- is empty except for a small control panel."
+The reception desk is a scenery supporter in field office reception. The description is "The desk -- white, polished, and gleaming -- is empty except for a small control panel."
 
 The control panel is part of the reception desk. The description is "As you lean over to examine the control panel, Maggie says 'Please don't touch that. Don't even look at it. Time to look away now.'".
 
 Section - Maggie
 
-Maggie is a woman in field office reception. "Maggie is sitting at the desk, doing nothing you can discern." The description is "Maggie is a serene, self-possessed young woman dressed in business casual attire." 
+Maggie is a woman in field office reception. "Maggie is sitting at the desk, doing nothing you can discern." The description is "Maggie seems a little vacant. She's staring at [one of]the wall[or]the ceiling[or]the floor[or]her hands[or]the desk in front of her[or]nothing in particular[at random]."
 
-The interview is a scene. The interview begins when the player is in field office reception.
 
 Rule for writing a paragraph about Maggie when field office reception is not visited:
-	say "Maggie looks up from her computer and smiles at [us]. 'Hello, I'm Maggie,' she says. 'Welcome to the BOSH Hyperspace Field Office, [agent]. I hope you didn't have too much trouble getting here. Doris does like his games. Before we proceed, please take a seat.'";
+	say "A young woman is sitting at the desk. Apparently doing nothing, she looks up from her desk and smiles at Faraji. 'Hello, I'm Maggie,' she says. 'Welcome to the BOSH Hyperspace Field Office, [agent]. Did you have a nice time getting here? I hope so. I helped design the lobby.' She resumes staring at the opposite wall.";
 	now Maggie is met;
 
 hyperspace-subject is a subject. It is privately-named. The printed name is "hyperspace". Understand "hyperspace" as hyperspace-subject.
 portal-to-the-past is a subject. It is privately-named. The printed name is "portal to the past". Understand "portal to the past", "past portal" as portal-to-the-past.
 auxiliary-portal is a subject. It is privately-named. The printed name is "auxiliary portal". Understand "auxiliary portal/--" as auxiliary-portal.
+doris-subject is a subject. It is privately-named. The printed name is "Doris". Understand "Doris" as doris-subject.
+christy-subject is a subject. It is privately-named. The printed name is "Christy". Understand "Christy" as christy-subject.
+minerva-subject is a subject. It is privately-named. The printed name is "Minerva". Understand "Minerva" as minerva-subject.
+maggie-subject is a subject. It is privately-named. The printed name is "Maggie". Understand "Maggie" as maggie-subject.
 
+[Maggie is very spacy. Her responses are often cryptic and unhelpful.]
 Table of Quiz Topics (continued)
 subject (a thing)	interlocutor (a person)	comment (a text)	reply (a text)
-hyperspace-subject	Maggie	"'What is the nature of hyperspace?'"	"'It is a region of space that exists beyond the normal three dimensions of space and one dimension of time. It is a place of infinite possibility, where the laws of physics can be bent and broken.'"
-Doris	Maggie	"'Who is Doris?'"	"'Doris is the field office chief. He's a bit of a character, but he's a good boss. You can find him in his office, west of here.'"
-Christy	Maggie	"'Who is Christy?'"	"'Christy is the field office researcher. They're a bit of a mystery, but they're very good at what they do. You can find them in their office, south of here.'"
-Minerva	Maggie	"'Who is Minerva?'"	"'Minerva is our only field agent. She's a bit of a loner, but she's very good at what she does. You can find her in her office, north of here.'"
-portal-to-the-past	Maggie	"'What is the portal to the past?'"	"'It is a device that allows us to travel to different times and places. It is currently inactive, but it can be activated by typing in the correct code on my desk, which you're not allow to use, so don't even think about it. Unlike the auxiliary portal, the spacetime setting of the portal to the past is settable on the portal itself.'"
-auxiliary portal	Maggie	"'What is the auxiliary portal?'"	"'It is a device that allows us to travel to different times and places. It is currently inactive, but it can be activated by typing in the correct code on my desk, which you're not allow to use, so don't even think about it.'"
+reception desk	Maggie	"'Nice desk.'"	"'Thank you. It's a desk.'"
+control panel	Maggie	"'What's this?'"	"'It's a control panel. It controls things. You're not allowed to touch it.'"
+hyperspace-subject	Maggie	"[We] [ask], 'What is hyperspace?'"	"Maggie looks up without seeming to focus on anything in particular. 'It's the place that isn't quite is. It's where we are now. It's where we go when we leave here.'"
+doris-subject	Maggie	"'Who is Doris?'"	"'Doris is the field office chief,' Maggie says dreamily. 'He's a riddle, wrapped in bacon, inside an egg. You can find him in his office, west of here.'"
+christy-subject	Maggie	"'Who is Christy?'"	"'Christy is the field office researcher. They're very good at what they do, if the way they do it is what you need. You can find them in their office, west and then south.'"
+minerva-subject	Maggie	"'Who is Minerva?'"	"'Minerva is our only field agent. She also has the only coffee maker in the office, which is a good thing, because I don't drink coffee. You can find her in her office, west and north.'"
+portal-to-the-past	Maggie	"'What is the portal to the past?'"	"'It's a device that allows us to travel to different times and places. It's currently inactive, but it can be activated by typing in the correct code on my desk, which you're not allowed to use, so don't even think about it. The portal has a control panel that allows you to set the spacetime coordinates.'"
+auxiliary-portal	Maggie	"'What is the auxiliary portal?'"	"'It is a device that allows us to travel to different times and places. It is currently inactive, but it can be activated by typing in the correct code on my desk, which you're not allowed to use, so don't even think about it.'"
 Thumb drive	Maggie	"'What do you know about this?'"	"'I'm surprised you don't know. It's a USB drive. It's used to store data.'"
-Maggie	Maggie	"'Who are you?'"	"'I'm Maggie. I'm the receptionist here at the BOSH Hyperspace Field Office. I'm here to help you with whatever you need.'"
+maggie-subject	Maggie	"'Who are you?'"	"'I'm Maggie. I'm the receptionist here at the BOSH Hyperspace Field Office. I'm here to help you with whatever you need, as long as it's not touching the control panel.'"
 
 
 Book 2 - Hallway
@@ -452,6 +465,21 @@ A mahogany desk is in Minerva's office. It is scenery. The description is "The d
 Minerva's papers are scenery. They are on Minerva's desk. The description is "Mind your own business." It is owned by Minerva. It is plural-named.
 
 Minerva's books are scenery on Minerva's desk. The description is "A few books are stacked on the desk." It is plural-named. It is owned by Minerva.
+
+[Minerva is business-like and no-nonsense, to the point of being blunt and sometimes rude.]
+Table of Quiz Topics (continued)
+subject (a thing)	interlocutor (a person)	comment (a text)	reply (a text)
+maggie-subject	Minerva	"'What do you think of Maggie?'"	"'She occupies the reception desk well.'"
+hyperspace-subject	Minerva	"'What is hyperspace?'"	"'Hyperspace is a damn pain is what it is.'"
+doris-subject	Minerva	"'Who is Doris?'"	"'He's the field office chief. If you listen real close you can hear the insanity leaking out of his ears.'"
+christy-subject	Minerva	"'Who is Christy?'"	"'Christy is the field office researcher. Cynical little sweetheart, you'd think they'd be more cheerful with all that color in their office.'"
+minerva-subject	Minerva	"'Who are you?'"	"'I'm Minerva. I'm the field agent here at the BOSH Hyperspace Field Office. I'm the only sane one here.'"
+portal-to-the-past	Minerva	"'What is the portal to the past?'"	"'It's a temporal paradox waiting to happen. Why anyone would put Doris in charge of it is beyond me.'"
+auxiliary-portal	Minerva	"'What is the auxiliary portal?'"	"'Yet another temporal paradox waiting to happen. I'm surprised we haven't all been sucked into a black hole yet.'"
+thumb drive	Minerva	"'What do you know about this?'"	"'It's a USB drive. It's used to store data. I don't know why you're asking me about it.'"
+mahogany desk	Minerva	"'I like your desk.'"	"'Thank you. You have good taste.'"
+coffee maker	Minerva	"'Tell me about the coffee maker.'"	"'It's a coffee maker. It makes coffee. It's on my desk.'"
+
 
 A coffee maker is on the mahogany desk. It is scenery. The description is "A drip coffee maker sits on the desk." Minerva owns the coffee maker.
 
@@ -573,7 +601,7 @@ Doris's papers are on Doris's desk. They are plural-named. The description is "T
 
 Book 5 - Christy's Office
 
-Christy's office is a leavable room. It is south of the field office hallway. It is in field office area. "Christy has taken the initiative to paint her office a bright, cheerful orange. A large desk is in the middle of the room, behind which sits Christy." It has egress north.
+Christy's office is a leavable room. It is south of the field office hallway. It is in field office area. "Christy has taken the initiative to paint her office a bright, cheerful orange. A large desk is in the middle of the room." It has egress north.
 
 Christy is a nonbinary in Christy's office. The initial appearance is "Christy is sitting at the desk, drawing in a sketchbook." The description is "With their short hair and wide eyes, Christy looks a bit like a lemur. They're wearing a sharp brown suit."
 
@@ -584,6 +612,10 @@ Instead of examining Christy's desk:
 	lb;
 
 Christy's sketchbook is on Christy's desk. The description is "From what [we] can see, the sketchbook is filled with drawings of strange, abstract shapes." It is owned by Christy. Understand "book/sketch/sketches/drawing/drawings" as Christy's sketchbook.
+
+Christy carries Christy's pencil. The description of Christy's pencil is "A soft, black pencil." It is owned by Christy. Understand "soft/black" as Christy's pencil.
+
+
 
 Book 6 - Portal Room 1
 
@@ -988,6 +1020,8 @@ Rubik's cube	Doris	"'I see you have a Rubik's cube.'"	"'Yes, I do. Western Penns
 CMY cube	Doris	"'What's the color cube?'"	"'It's a CMY cube. Alien technology, swear to God.'"
 Doris's papers	Doris	"'What are all these papers?'"	"'Oh, just some notes. Nothing important. Just the fate of the world.'"
 tchotchkes	Doris	"'What are all these things on your desk?'"	"'Definitely not a secret window into my soul. Just some things I like.'"
+mystic compass	Doris	"'Do you know what this compass is?'"	"'It's a mystic compass. Hold on to it. It might come in handy. It can find anything, even things that aren't lost.'"
+astral lenses	Doris	"'What are these glasses?'"	"'They're astral lenses. They let you see things you wouldn't normally see. Like the truth. And penguins. Anyway, don't lose them.'"
 
 Book 2 - Maggie
 
@@ -1029,6 +1063,23 @@ Before going north from Christy's office when Christy is researching:
 	now the player carries Christy's note;
 	now the player carries Tribes of New York;
 	stop the action;
+
+[Christy is a non-binary paranormal researcher. She tends to be cynical and sarcastic, but she's also very good at her job.]
+
+Table of Quiz Topics (continued)
+subject (a thing)	interlocutor (a person)	comment (a text)	reply (a text)
+Mothman	Christy	"'Who is the Mothman?'"	"'The Mothman is a cryptid that was sighted in West Virginia in the 1960s. I think he's a friend of Doris's. I've never met him.'"
+hyperspace-subject	Christy	"'What is hyperspace?'"	"'Hyperspace is a four-dimensional plane of being overlaying our own three-dimensional plane. Or something like that. I'm not a physicist.'"
+doris-subject	Christy	"'Who is Doris?'"	"'Doris is the chief of the hyperspatial field office. I have no problem with his leadership. No, I certainly wouldn't ever say that.'"
+christy-subject	Christy	"'Who are you?'"	"'I'm Christy. I'm the paranormal researcher here. I'm the one they turn to when they need someone's advice to ignore.'"
+minerva-subject	Christy	"'What do you think of Minerva?'"	"'Minerva is our only field agent. I'm so grateful for her constructive criticism. Really. I am.'"
+portal-to-the-past	Christy	"'What is the portal to the past?'"	"'It's a portal that leads to the past. I'm not sure what else you want me to say.'"
+auxiliary-portal	Christy	"'What is the auxiliary portal?'"	"Um, it's the other portal, the one that isn't the main portal. Is this so hard to understand?'"
+thumb drive	Christy	"'What is the thumb drive?'"	"'Are you seriously asking me that?'"
+maggie-subject	Christy	"'Who is Maggie?'"	"'Maggie is... Maggie. She's the receptionist. She's very good at her job -- it's just that no one knows what that is. I'm not being sarcastic.'"
+Christy's desk	Christy	"'What's on your desk?'"	"'Research. Nothing you would understand. Also a sketchbook. Don't look in it.'"
+Christy's sketchbook	Christy	"'What's in your sketchbook?'"	"'Drawings. Of things. I'm not going to show you.'"
+Christy's pencil	Christy	"'What's that pencil?'"	"'My special drawing pencil. I'm not going to let you borrow it.'"
 		
 Volume 5 - Things
 

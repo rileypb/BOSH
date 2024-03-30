@@ -16,6 +16,10 @@ Table of No Names (Continued)
 named person (person)	anonymous description (text)	unnamed description (text)	proper name (text)
 Hutz	"bony old man"	"town groundsman"	"Hutz"
 
+Table of Walls (continued)
+locale (a room)	has walls (a truth state)	wall description (a text)	touch description (a text)
+Christy's office	--	"The walls are painted a bright cheerful orange."	--
+
 Table of Transitions
 source room (a room)	target room (a room)	transition text (a text)	used (a truth state)
 Strip Mall Parking Lot South	Strip Mall Parking Lot North	"[We] [trudge] to the other end of the parking lot. It's much like where [we] left."	--
@@ -237,7 +241,7 @@ astral-tunnel-1	--	"The floor (ground?) is a featureless white."
 astral-tunnel-2	--	"The floor (ground?) is a featureless white."
 astral-tunnel-3	--	"The floor (ground?) is a featureless white."
 featureless hyperplane	--	"Like everything else here, the floor (ground?) is a featureless white."
-Field Office Reception	--	"Apparently stricken with a stunning lack of imagination, someone has installed grey industrial carpet"
+Field Office Reception	--	"Apparently stricken with a stunning lack of imagination, someone has installed grey industrial carpet."
 Field Office Hallway	--	"Apparently stricken with a stunning lack of imagination, someone has installed grey industrial carpet." 
 the field office chief's office	--	"Apparently stricken with a stunning lack of imagination, someone has installed grey industrial carpet."
 Minerva's Office	--	"Apparently stricken with a stunning lack of imagination, someone has installed grey industrial carpet."

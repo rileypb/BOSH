@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 21766 words long.
+I've now read your source text, which is 21991 words long.
 
 
 -----------------------------------------------------
@@ -44,14 +44,14 @@ I've also read Can't Touch This by Philip Riley, which is 146 words long.
 I've also read Compound Details by Philip Riley, which is 179 words long.
 I've also read Polish by Philip Riley, which is 86 words long.
 I've also read Hello by Philip Riley, which is 57 words long.
-I've also read BOSH Polish by Philip Riley, which is 4483 words long.
+I've also read BOSH Polish by Philip Riley, which is 4515 words long.
 I've also read Choices by Philip Riley, which is 408 words long.
 I've also read New Light by Philip Riley, which is 333 words long.
 I've also read Early Declarations by Philip Riley, which is 23 words long.
 I've also read Basics by Philip Riley, which is 195 words long.
 I've also read Building Facades by Philip Riley, which is 162 words long.
 I've also read Simple Conversation by Philip Riley, which is 2190 words long.
-I've also read Hyperspace by Philip Riley, which is 8062 words long.
+I've also read Hyperspace by Philip Riley, which is 8861 words long.
 I've also read BOSH Facts by Philip Riley, which is 94 words long.
 I've also read Image Strip by Philip Riley, which is 2077 words long.
 I've also read Swamp Park by Philip Riley, which is 5749 words long.
@@ -146,7 +146,7 @@ Regional: CONSTANT_VNT'field office area'-region(I253_field_office_area)(I160'fi
  == region
 Regional: CONSTANT_VNT'field office area'-region(I253_field_office_area)(I160'field office area')
  == region
-Regional: CONSTANT_VNT'elr'-region(I455_elr)(I348'elr')
+Regional: CONSTANT_VNT'elr'-region(I459_elr)(I352'elr')
  == region
 
 
@@ -251,17 +251,17 @@ Phase XII ... Code generation
                                                             Fail: list of numbers (~) number = nothing
                                             Fail: nothing (~) real number = nothing
                                             Fail: list of numbers (~) real number = nothing
-        Regional: CONSTANT_VNT'bosh hq'-region(I729_bosh_hq)(I616'bosh hq')
+        Regional: CONSTANT_VNT'bosh hq'-region(I733_bosh_hq)(I620'bosh hq')
          == region
-        Regional: CONSTANT_VNT'bosh hq'-region(I729_bosh_hq)(I616'bosh hq')
+        Regional: CONSTANT_VNT'bosh hq'-region(I733_bosh_hq)(I620'bosh hq')
          == region
-        Regional: CONSTANT_VNT'laundromat-region'-region(I389_laundromat_region)(I285'laundromat-region')
+        Regional: CONSTANT_VNT'laundromat-region'-region(I393_laundromat_region)(I289'laundromat-region')
          == region
-        Regional: CONSTANT_VNT'laundromat-region'-region(I389_laundromat_region)(I285'laundromat-region')
+        Regional: CONSTANT_VNT'laundromat-region'-region(I393_laundromat_region)(I289'laundromat-region')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I455_elr)(I348'elr')
+        Regional: CONSTANT_VNT'elr'-region(I459_elr)(I352'elr')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I455_elr)(I348'elr')
+        Regional: CONSTANT_VNT'elr'-region(I459_elr)(I352'elr')
          == region
         Regional: CONSTANT_VNT'field office area'-region(I253_field_office_area)(I160'field office area')
          == region
@@ -302,15 +302,15 @@ Phase XII ... Code generation
 
 ==== Phase XII.21 ... Compiling routines from predicate calculus ====
 
-Providing for a total heap of 16384, given requirement of 15120
+Providing for a total heap of 16384, given requirement of 16144
 
 
 -----------------------------------------------------
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 244 files written as streams.
-CPU time: 1368 centiseconds
+Total of 245 files written as streams.
+CPU time: 772 centiseconds
 
 
 That concludes the debugging log from this run of Inform.
