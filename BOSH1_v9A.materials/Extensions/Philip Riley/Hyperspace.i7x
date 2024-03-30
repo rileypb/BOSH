@@ -1,5 +1,6 @@
 Hyperspace by Philip Riley begins here.
 
+Include Followup Questions by Philip Riley.
 Include Simple Conversation by Philip Riley.
 Include Third Person Narration by Philip Riley.
 Include Scheduled People by Philip Riley.
@@ -237,7 +238,9 @@ Carry out going up from Field Office Reception:
 	move Descending Stair to Featureless Hyperplane;
 
 
-Descending Stair is scenery. 
+Descending Stair is scenery. "A spiraling staircase disappears into the ground here. It is made of the same gossamer, questionably real stuff as the ground, the pillar, and the compass. You can't see past the first turn of the stairs, unfortunately."
+The snarky remark is "So nice of them to point the way to the exit."
+Understand "staircase/stairs/spiral staircase" as Descending Stair.
 [Rule for writing a paragraph about the descending stair:
 	say "A spiraling staircase disappears into the ground here. It is made of the same gossamer, questionably real stuff as the ground,[if visited pillar is true] the pillar,[end if] and the readouts. You can't see past the first turn of the stairs, unfortunately.";]
 
@@ -413,15 +416,18 @@ field office area is a region. It is in hyperspace.
 Book 1 - Reception
 
 field office reception is below Featureless Hyperplane. The preposition is "at". It is in field office area. "It is a small, white (like everything else) room with a desk against one wall. A hallway leads west and a stairway goes up to the infinite hyperplane."
+The snarky remark is "I bet they don't get much foot traffic here."
 
 The reception desk is a scenery supporter in field office reception. The description is "The desk -- white, polished, and gleaming -- is empty except for a small control panel."
+The snarky remark is "No stapler?"
 
 The control panel is part of the reception desk. The description is "As you lean over to examine the control panel, Maggie says 'Please don't touch that. Don't even look at it. Time to look away now.'".
+The snarky remark is "Geez, relax."
 
 Section - Maggie
 
 Maggie is a woman in field office reception. "Maggie is sitting at the desk, doing nothing you can discern." The description is "Maggie seems a little vacant. She's staring at [one of]the wall[or]the ceiling[or]the floor[or]her hands[or]the desk in front of her[or]nothing in particular[at random]."
-
+The snarky remark is "I think she's in a trance."
 
 Rule for writing a paragraph about Maggie when field office reception is not visited:
 	say "A young woman is sitting at the desk. Apparently doing nothing, she looks up from her desk and smiles at Faraji. 'Hello, I'm Maggie,' she says. 'Welcome to the BOSH Hyperspace Field Office, [agent]. Did you have a nice time getting here? I hope so. I helped design the lobby.' She resumes staring at the opposite wall.";
@@ -457,14 +463,108 @@ the field office hallway is west of field office reception. It is in field offic
 Book 3 - Minerva's Office
 
 Minerva's office is a leavable room. It is north of the field office hallway. It is in field office area. "The office is white and gleaming. A mahogany desk is in the middle of the room. A coffee maker sits on the desk." It has egress south.
+The snarky remark is "How did they get a big desk like that in here?"
 
 Minerva is a woman in Minerva's office. The initial appearance is "Minerva is sitting at her desk, typing away on her computer." 
+The snarky remark is "Doesn't even look up. Don't mess with her."
+The description is "Minerva exudes an air of competence and no-nonsense business. Her expression is serious and focused."
 
-A mahogany desk is in Minerva's office. It is scenery. The description is "The desk is cluttered with papers, a few books, and a coffee maker".
+A mahogany desk is in Minerva's office. It is scenery. The description is "The desk holds some neatly-stacked papers, a few books, and a coffee maker.".
+The snarky remark is "Mahogany. Just the thing to match the monotonous white of hyperspace."
 
-Minerva's papers are scenery. They are on Minerva's desk. The description is "Mind your own business." It is owned by Minerva. It is plural-named.
+Minerva's papers are scenery. They are on the mahogany desk. The description is "Minerva notices you looking at her papers and gives you a look that says 'Mind your own business.'" 
+It is owned by Minerva. It is plural-named.
 
-Minerva's books are scenery on Minerva's desk. The description is "A few books are stacked on the desk." It is plural-named. It is owned by Minerva.
+Minerva's books are scenery on the mahogany desk. The description is "The books [italic type]Advanced Temporal Mechanics[roman type], [italic type]Theoretical Hyperspace[roman type], and [italic type]Hitchhiker's Guide to the Galaxy[roman type] are stacked neatly on the desk." 
+It is plural-named. It is owned by Minerva.
+
+Instead of examining Minerva's books:
+	let tomes be the list of tomes on the mahogany desk;
+	say "The books [tomes] are stacked neatly on the desk.";
+	
+A tome is a kind of thing.
+A tome can be loanable.
+Understand "book" as a tome.
+Before printing the name of a tome:
+	say "[italic type]";
+
+After printing the name of a tome:
+	say "[roman type]";
+
+Advanced Temporal Mechanics is a tome on the mahogany desk. The description is "A thick, technical tome with a title that makes your head hurt."
+The snarky remark is "I hear it has a great twist ending." It is owned by Minerva.
+
+Theoretical Hyperspace is a tome on the mahogany desk. The description is "A graduate text in something or other."
+The snarky remark is "I liked the cover art on the last edition better." It is owned by Minerva.
+
+Hitchhiker's Guide to the Galaxy is a tome on the mahogany desk. The description is "A battered paperback with a cover that says 'Don't Panic.'"
+The snarky remark is "Most realistic book in the office." It is owned by Minerva.
+
+The borrowed book-minerva is an object that varies. The borrowed book-minerva is initially nothing.
+
+to borrow a book-minerva is a questioning quip.
+	It is privately-named.
+	The printed name is "to borrow a book".
+	Understand "to/-- borrow a/-- book/--" as to borrow a book-minerva.
+	It is silent.
+	It quip-supplies Minerva.
+	It is repeatable.
+
+plausibility rule for to borrow a book-minerva:
+	if the borrowed book-minerva is nothing:
+		it is plausible;
+	it is implausible;
+
+Check discussing to borrow a book-minerva when the borrowed book-minerva is something:
+	say "Minerva shakes her head. 'Sorry, I'll only lend one book at a time.'" instead;
+
+After discussing to borrow a book-minerva:
+	queue Minerva with to borrow a book-minerva;	
+	Prepare to ask what do you want to borrow-minerva from Minerva;
+	
+After examining a tome when the noun is owned by Minerva and the noun is supported by the mahogany desk:
+	queue Minerva with to borrow a book-minerva;
+
+after examining the mahogany desk:
+	queue Minerva with to borrow a book-minerva;
+
+Book-borrowing is an object based rulebook.
+
+Book-borrowing something enclosed by the player:
+	say "[We] already [have] that.";
+	rule fails;
+
+Book-borrowing a tome (called T) when T is supported by the mahogany desk and T is owned by Minerva:
+	now the player carries T;
+	now the player owns T;	
+	say "[We] [take] [T].";
+	now the borrowed book-minerva is T;
+	rule succeeds;
+
+Book-borrowing:
+	say "[We] can't borrow that.";
+	rule fails;	
+
+After giving a loanable tome to Minerva when the borrowed book-minerva is the noun:
+	now the borrowed book-minerva is nothing;
+	now the noun is supported by the mahogany desk;
+	now the noun is owned by Minerva;
+	say "Minerva regards you critically. 'Took you long enough.' She puts the book back on the shelf.";
+	
+After putting a loanable tome on the mahogany desk when the borrowed book-minerva is the noun:
+	now the borrowed book-minerva is nothing;
+	now the noun is owned by Moira Zin;
+	continue the action;
+
+A turn sequence rule when we are discussing to borrow a book-minerva (this is the book borrowing turn sequence-minerva rule):
+	rule fails;	
+
+The book borrowing turn sequence-minerva rule is listed before the every turn stage rule in the turn sequence rules.
+
+What do you want to borrow-minerva is a question.
+	The printed name is "What do you want to borrow".
+	The expected responses are { Advanced Temporal Mechanics, Theoretical Hyperspace, Hitchhiker's Guide to the Galaxy }.
+	The result is book-borrowing.
 
 [Minerva is business-like and no-nonsense, to the point of being blunt and sometimes rude.]
 Table of Quiz Topics (continued)
@@ -479,9 +579,15 @@ auxiliary-portal	Minerva	"'What is the auxiliary portal?'"	"'Yet another tempora
 thumb drive	Minerva	"'What do you know about this?'"	"'It's a USB drive. It's used to store data. I don't know why you're asking me about it.'"
 mahogany desk	Minerva	"'I like your desk.'"	"'Thank you. You have good taste.'"
 coffee maker	Minerva	"'Tell me about the coffee maker.'"	"'It's a coffee maker. It makes coffee. It's on my desk.'"
+Minerva's papers	Minerva	"'What are you working on?'"	"'None of your business.'"
+Minerva's books	Minerva	"'Mind if I borrow a book?'"	"'Yes, I do mind. They're mine.'"
+Advanced Temporal Mechanics	Minerva	"'Have you read this one?'"	"'Yes, I have. It's a good book.'"
+Theoretical Hyperspace	Minerva	"'What's this one about?'"	"'Check the title. It's about hyperspace.'"
+Hitchhiker's Guide to the Galaxy	Minerva	"'So you read fiction too?'"	"'No, I read non-fiction. That book is a documentary.'"
 
 
 A coffee maker is on the mahogany desk. It is scenery. The description is "A drip coffee maker sits on the desk." Minerva owns the coffee maker.
+The snarky remark of the coffee maker is "I am a machine for turning coffee into snark."
 
 The cup of coffee is a thing. The description is "[Coffee description]. It is in a paper cup.". The cup of coffee has a number called the hotness.
 
@@ -583,10 +689,18 @@ the field office chief's office is a leavable room. It is west of the field offi
 
 Doris is a man in the field office chief's office.
 The initial appearance is "Doris is sitting cross-legged in a chair, tapping his foot lazily on the desk."
+The description is "Doris sports a grin that seems to be permanently etched on his face. He wears a tweed suit and a trilby hat."
 
-Doris's desk is a scenery supporter in the field office chief's office. The description is "Doris's desk is large and made of the same white material as the rest of the office. It is covered with papers and tchotchkes."
+Doris's desk is a scenery supporter in the field office chief's office. The description is "Doris's desk is large and made of the same white material as the rest of the office. It is covered with a chaotic mess of papers."
 
+The posters are scenery in the field office chief's office. The description is "The posters are all brightly colored and covered with strange symbols and diagrams. They're all in languages Faraji can't read." They are plural-named.
+The snarky remark is "Never have learned to read Esperanto."
 
+The maps are scenery in the field office chief's office. The description is "The maps are of places Faraji is pretty sure don't exist." They are plural-named.
+The snarky remark is "I think that one's a map of Narnia."
+
+The charts are scenery in the field office chief's office. The description is "The charts seem to be of some kind of scientific data, but Faraji can't make heads or tails of them." They are plural-named.
+The snarky remark is "I should have paid more attention in my theoretical nonsense class."
 
 The tchotchkes are scenery in the field office chief's office. Understand "knick-knacks", "knick knacks", "curios", "junk", "stuff" as the tchotchkes. The description is "A small, plastic model of a TARDIS, a Rubik's cube, and a CMY cube are on the desk." They are plural-named. Doris owns the tchotchkes.
 
@@ -786,7 +900,7 @@ klimp-is-fine is an informative quip.
 	It is privately-named.
 	The printed name is "Klimp is fine".
 	Understand "Klimp/he is fine" as klimp-is-fine.
-	The comment is "[We] [say], 'He's just fine'".
+	The comment is "[We] [say], 'He's just fine.'".
 	The reply is "'Great! Be sure to say hi for me.'".
 	It quip-supplies Doris.
 	It follows where-is-this-hyperspace.
@@ -825,6 +939,9 @@ Check discussing show him the thumb drive:
 Check discussing hand over the thumb drive:
 	if the player does not enclose the thumb drive:
 		say "[We] [don't] have [the thumb drive]." instead;
+
+Instead of giving the thumb drive to Doris:
+	try discussing hand over the thumb drive;
 	
 show him the thumb drive is a performative quip. 
 	It is privately-named.
@@ -954,6 +1071,10 @@ After giving Tribes of New York to Doris:
 	now the player carries Doris's note;
 	now the player carries the Tribes of New York;
 
+Instead of showing Tribes of New York to Doris:
+	say "'Ah, [agent], you've found it! I knew you would. Now we can find out where Daniels is. Actually, Christy can help you with that. Go see her and give her this.' He scribbles a note and hands it to you. 'She'll know what to do.'";
+	now the player carries Doris's note;
+
 After giving Christy's note to Doris:
 	say "He reads the note and grins. 'I knew Christy could figure it out. Enigma Lake. Makes sense. There is a prominent intersection of leylines in the middle of the lake. Before you say it, yes it's a problem, or would be, [italic type]if[roman type] that intersection had always been underwater. But Enigma Lake is an artificial reservoir. The town of Enigma Lake was flooded when the reservoir was created, and [italic type]that's[roman type] where the intersection is!' Doris concludes with a look of satisfaction.
 	
@@ -970,14 +1091,28 @@ about the Dragon is a questioning quip.
 	It follows hand over the thumb drive;
 	
 about-time-travel is a questioning quip.
+	It is privately-named.
+	The printed name is "about time travel".
+	Understand "about/-- time travel" as about-time-travel.
 	Understand "what about time travel" as about-time-travel.
 	The comment is "Disbelievingly, [we] [ask], 'Time travel? For real?'".
 	The reply is "'Yes, yes,' [Doris] responds. 'Don't get too worked up over it. It gets old fast. But now we need to talk about the mission.'".
 	it quip-supplies Doris.
 	It follows hand over the thumb drive;
+
+Does the player mean discussing about-time-travel:
+	it is very likely.
+
+Does the player mean quizzing doris about time-travel:
+	it is very likely.
+
+Does the player mean quizzing doris about time slips:
+	it is very unlikely.
 	
 how will i find him is a questioning quip.
 	The comment is "'How am I going to find him? Didn't he leave that message in the [italic type]fourteenth century[roman type]?'".
+	Understand "how to find him" as how will i find him.
+	Understand "Daniels" as how will i find him.
 	The reply is "[Doris] looks exasperated. 'Well I don't know -- Improvise, use the power of the leylines, look around for anything that looks like it might be a time portal. Something like that. Let's see if the DC office can impress me. Let me know when you're ready to go.'".
 	It quip-supplies Doris.
 
@@ -1017,11 +1152,13 @@ Doris	Doris	"'How are you doing?'"	"'Is that important while the fate of the wor
 Doris's desk	Doris	"'You certainly have, uh, a lot of stuff on your desk.'"	"'Yes. Please don't speculate on what it says about my psyche. I'm very sensitive.'"
 model TARDIS	Doris	"'I see you have a model TARDIS.'"	"'No, it's not a TARDIS. It's a police box.'"
 Rubik's cube	Doris	"'I see you have a Rubik's cube.'"	"'Yes, I do. Western Pennsylvania 12-and-under speed champion three years running.'"
-CMY cube	Doris	"'What's the color cube?'"	"'It's a CMY cube. Alien technology, swear to God.'"
+CMY cube	Doris	"'What's the color cube?'"	"'It's a CMY cube. Light filters through each side in a different color. Alien technology, swear to God.'"
 Doris's papers	Doris	"'What are all these papers?'"	"'Oh, just some notes. Nothing important. Just the fate of the world.'"
 tchotchkes	Doris	"'What are all these things on your desk?'"	"'Definitely not a secret window into my soul. Just some things I like.'"
 mystic compass	Doris	"'Do you know what this compass is?'"	"'It's a mystic compass. Hold on to it. It might come in handy. It can find anything, even things that aren't lost.'"
 astral lenses	Doris	"'What are these glasses?'"	"'They're astral lenses. They let you see things you wouldn't normally see. Like the truth. And penguins. Anyway, don't lose them.'"
+time-travel	Doris	"Disbelievingly, [we] [ask], 'Time travel? For real?'"	"'Yes, yes. Don't get too worked up over it. It gets old fast. But now we need to talk about the mission.'"
+
 
 Book 2 - Maggie
 
@@ -1051,14 +1188,14 @@ After giving Doris's note to Christy:
 	now Christy carries Tribes of New York;
 
 After giving the cup of coffee to Christy:
-	say "'Christy accepts the coffee gratefully. 'Thanks. I'll get to work on this right away. I'll let you know when I have something.' They take a sip of the coffee and get to work, which seems to involve a lot of sketching and erasing.";
+	say "Christy accepts the coffee gratefully. 'Thanks. I'll get to work on this right away. I'll let you know when I have something.' They take a sip of the coffee and get to work, which seems to involve a lot of sketching and erasing.";
 	remove the cup of coffee from play;
 	now Christy is researching;
 
 Christy's note is a thing. The description is "The note consists of just the number [town hall spacetime setting]."
 
 Before going north from Christy's office when Christy is researching:
-	say "Christy suddenly hoots behind you. 'Stop! I have it. Sorry it took so long. Here, take this note to Doris.' They scribble something on a piece of paper and hand it to you. They think for a moment and say 'Oh yes, take the book too.' She hands you [italic type]Tribes of New York[roman type].";
+	say "Christy suddenly hoots behind you. 'Stop! I have it. Sorry it took so long. Here, take this note to Doris.' They scribble something on a piece of paper and hand it to you. They think for a moment and say 'Oh yes, take the book too.' They hand you [italic type]Tribes of New York[roman type].";
 	now Christy is not researching;
 	now the player carries Christy's note;
 	now the player carries Tribes of New York;

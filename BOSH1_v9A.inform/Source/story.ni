@@ -42,6 +42,8 @@ Include Early Declarations by Philip Riley.
 [Include Farseeing by Philip Riley.]
 Include Basics by Philip Riley.
 Include Building Facades by Philip Riley.
+  	
+Include Followup Questions by Philip Riley.
  
 Include Simple Conversation by Philip Riley.
 Include Hyperspace by Philip Riley.	
@@ -57,8 +59,6 @@ Include Snarky Remarks by Philip Riley.
 Include Overlook by Philip Riley.
 
 Include Gender Options by Nathanael Nerode.   
-  	
-Include Followup Questions by Philip Riley.
 
 Include Make Test by Philip Riley.
 
@@ -388,8 +388,6 @@ The parser clarification internal rule response (E) is "What do you want [us] to
 		[parser command so far]?"
 
 the block kissing rule response (A) is "[We] might not like that."
-
-Understand the command "tell" as something new.
 
 Book 5 - Automatic greeting
 
@@ -1310,14 +1308,7 @@ Moira's bookshelves are a scenery supporter in Moira's office. The description i
 Understand "shelves/books/shelf/bookshelf" as Moira's bookshelves.
 The snarky remark of Moira's bookshelves is "I wonder if she has a book on how to be so good at everything."
 
-A tome is a kind of thing.
-A tome can be loanable.
-Understand "book" as a tome.
-Before printing the name of a tome:
-	say "[italic type]";
 
-After printing the name of a tome:
-	say "[roman type]";
 	
 The borrowed book is an object that varies. The borrowed book is initially nothing.
 
@@ -1338,7 +1329,7 @@ After discussing to borrow a book:
 	queue Moira Zin with to borrow a book;	
 	Prepare to ask what do you want to borrow from Moira Zin;
 	
-After examining a tome supported by Moira's bookshelves:
+After examining a tome when the noun is owned by Moira Zin and the noun is supported by Moira's bookshelves:
 	queue Moira Zin with to borrow a book;
 
 after examining moira's bookshelves:
@@ -1388,30 +1379,20 @@ Three Stigmata of Palmer Eldritch is a tome on Moira's bookshelves. It is owned 
 The description is "A classic of science fiction, this is a novel by Philip K. Dick."
 The snarky remark is "Haven't read it. I'm saving it for when I need a mental health break."
 
-Book-borrowing is an object based rulebook.
-
-Book-borrowing something enclosed by the player:
-	say "[We] already [have] that.";
-	rule fails;
-
-Book-borrowing a tome (called T) supported by Moira's bookshelves:
+Book-borrowing a tome (called T) when T is supported by Moira's bookshelves and T is owned by Moira Zin:
 	now the player carries T;
 	now the player owns T;	
 	say "[We] [take] [T].";
 	now the borrowed book is T;
 	rule succeeds;
 
-Book-borrowing:
-	say "[We] can't borrow that.";
-	rule fails;	
-
-After giving a loanable tome to Moira:
+After giving a loanable tome to Moira when the borrowed book is the noun:
 	now the borrowed book is nothing;
 	now the noun is supported by Moira's bookshelves;
 	now the noun is owned by Moira Zin;
 	say "Moira smiles. 'Thanks for getting it back to me.' She puts the book back on the shelf.";
 	
-After putting a loanable tome on Moira's bookshelves:
+After putting a loanable tome on Moira's bookshelves when the borrowed book is the noun:
 	now the borrowed book is nothing;
 	now the noun is owned by Moira Zin;
 	continue the action;
@@ -1437,12 +1418,13 @@ Rule for deciding whether all includes a thing (called T) while taking:
 The describe what's on scenery supporters in room descriptions rule is not listed in any rulebook.
 
 
-
-
-
 The closet door is a door. It is east of Moira's office and west of the utility closet. It is closed, openable, locked, and lockable. It is scenery.
 
-The utility closet is dark. It is in BOSH HQ.
+The utility closet is dark. It is in BOSH HQ. It is a leavable room. The egress is west. "It is cramped in here. Other than Faraji, the only thing in here is a breaker box on the wall."
+The snarky remark of the utility closet is "I guess I should be glad that this isn't my office."
+
+The breaker box is a fixed in place container in the utility closet. It is closed, locked, lockable, and openable. The description is "It's a small metal box affixed to the back wall of the closet. There is a small keyhole in the front."
+The keyhole is part of the breaker box. The description is "It's a small keyhole in the front of the box."
 
 Instead of knocking on the closet door when the location is the utility closet and the closet door is locked and the closet door is closed:
 	move Moira Zin to Moira's Office;

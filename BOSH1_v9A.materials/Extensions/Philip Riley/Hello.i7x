@@ -6,11 +6,16 @@ After saying hello to the store clerk for the first time:
 
 After saying hello to Klimp for the first time:
 	say "Faraji extends a hand. 'Chief! Hel--'[line break]";
-	say "'Hello, yes. I know,' Klimp says, shaking Faraji's hand.";
+	say "'Hello, yes. I know,' Klimp says, ignoring Faraji's hand.";
 
-[ After saying hello to Dave for the first time:
+After saying hello to Dave for the first time:
     say "Faraji gives the pawn shop owner a curt nod.";
-    say "'Hey,' Dave says."; ]
+    say "'Hey,' Dave says.";
 
+After saying hello to Margaret Chao for the first time:
+	do nothing;
+
+After saying hello to someone for the first time:
+	say "Faraji and [the noun] greet each other.";
 
 Hello ends here.
