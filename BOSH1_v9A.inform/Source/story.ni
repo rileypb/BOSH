@@ -245,7 +245,7 @@ Chapter 1 - Player's Name
 
 When play begins:
 	now left hand status line is "[location-title-case]";
-	now right hand status line is "[agent]";
+	now right hand status line is "[if location is the public gymnasium]Score: [basketball score][end if]";
 
 To continue:
 	say "[bracket]continue[close bracket][paragraph break]";
@@ -295,13 +295,13 @@ To say location-title-case:
 		say ". [run paragraph on]";]
 	
 
-Table of Fancy Status
+[ Table of Fancy Status
 left	central (text)	right
 "[location-title-case]"	--	"[agent]"
 
 Rule for constructing the status line:
      fill status bar with Table of Fancy Status;
-     rule succeeds.
+     rule succeeds. ]
 
 Section 1 - Special text substitution code
 
@@ -1873,7 +1873,7 @@ jumping to part 4 is an action applying to nothing. Understand "enigma" as jumpi
 Carry out jumping to part 4:
 	now Hyperplane Coords is {0, 0, 0};
 	move the player to the enigma lake town hall;
-	now the player wears the pair of astral lenses;
+	now the player carries the pair of astral lenses;
 	now the green smartphone is nowhere;
 	now the player carries the mystic compass;
 	now the player carries the recall button;

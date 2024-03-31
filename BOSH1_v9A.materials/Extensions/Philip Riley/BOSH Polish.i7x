@@ -202,6 +202,7 @@ small bed	"It's a little cumbersome to carry around."	"[We] [push] it around a b
 soundboard	"It's too heavy to lift."	"It's too heavy to move unaided."
 spacetime control	"It's part of the portal."	"It's part of the portal."
 stained glass windows	"Those belong to God."	"Those belong to God."
+stand	"The stand is attached to the floor."	"The stand is attached to the floor."
 store shelves	"Leave them be."	"Leave them be."
 strange symbols	"I'd like to see that."	"I'd like to see that."
 tapestry	"[We] would rather not incur the wrath of God."	--

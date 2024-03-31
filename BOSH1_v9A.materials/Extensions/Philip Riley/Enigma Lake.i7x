@@ -30,13 +30,16 @@ The locker key is a key.
 An astral resonator type is a kind of thing.
 
 The makeshift astral resonator is an astral resonator type. It is pluggable.
+The description is "A makeshift astral resonator, cobbled together from a tuning fork, a spotlight, and the astral lenses."
+The snarky remark of the makeshift astral resonator is "I built it all by myself."
 
 Description notes for the makeshift astral resonator:
 	if the makeshift astral resonator is powered:
 		add "providing light" to descriptive notes;
 
 The wristwatch is a thing. Understand "watch" as the wristwatch. The description is "A simple wristwatch. The initials 'DM' are engraved on the back."
-
+Understand "DM" as the wristwatch.
+The snarky remark of the wristwatch is "All this way just for this?"
 
 Volume 3 - Geography
 
@@ -54,9 +57,15 @@ The snarky remark of the information desk is "No one's ever at the information d
 The bell is on the information desk. The description is "A small brass bell, used to summon the attention of the town hall staff."
 The snarky remark of the bell is "Hello! Anyone here?"
 
-The backpack is a closed openable container. It is behind the information desk. The description is "Stitched into the fabric are the initials 'WGT'".
-Understand "back/pack/rucksack/ruck/sack/knapsack/knap" as the backpack.
-The snarky remark of the backpack is "Am I allowed to rummage through people's stuff? I mean, I'm going to, but I want to know if I'm allowed to."
+The backpack is a closed openable container. It is behind the information desk. The description is "Stitched into the fabric are the initials 'WGT'.".
+Understand "back/pack/rucksack/ruck/sack/knapsack/knap" as the backpack. It is wearable.
+The snarky remark of the backpack is "Am I allowed to rummage through people's stuff? I mean, I'm going to anyway, but I want to know if I'm allowed to."
+
+Instead of doing something other than taking off or dropping the backpack when the backpack is worn:
+	say "You can't do that while wearing the backpack.";
+
+After dropping the backpack:
+	say "You slide the backpack off your shoulders and drop it to the floor.";
 
 The red key is a key. It is inside the backpack. Understand "ELG", "gym/gymnasium key" as the red key. The description is "The letters ELG are printed on the key, labeling it the property of Enigma Lake Gymnasium.".
 The snarky remark of the red key is "Oh good. I need some used gym socks to complete my collection."
@@ -456,6 +465,9 @@ The broadcast booth is south of Radio Station WGXC. It is in ELR. "The broadcast
 The snarky remark of the broadcast booth is "I wonder if I can get a request in."
 
 The booth window is scenery in the broadcast booth. "The window looks out into the rest of the station."
+
+The stand is scenery in the broadcast booth. "An ordinary microphone stand."
+Understand "microphone stand" as stand.
 
 The microphone is scenery in the broadcast booth. "A microphone is set up on a stand."
 The snarky remark of the microphone is "My mother always said I had a face for radio, and a voice for silent movies."
@@ -1343,6 +1355,7 @@ Book 35 - Rolle's Department Store
 
 Rolle's Department Store is south of Main Street 200 Block. It is in ELR. It is a leavable room. The egress is north. 
 The description is "Once, town department stores like this were a constant of American life. Sadly, this one is empty of everything save a number of sale posters and its gleaming floor."
+The snarky remark of Rolle's Department Store is "I guess the sale is over."
 
 The gleaming floor is scenery in Rolle's Department Store. "Someone has polished it spotless, despite the looming destruction of the store. That's dedication."
 
@@ -1352,20 +1365,25 @@ Does the player mean doing something to the gleaming floor:
 The sale posters are scenery in Rolle's Department Store. "'50% off everything in the store!'"
 
 The floor waxer is a fixed in place thing in Rolle's Department Store. "A floor waxer sits in the center of the gleaming floor." The description is "This is a bulky, heavy-duty machine with a large, round brush head, designed for durability and the ability to polish vast floor areas to a high shine."
+The snarky remark is "I'm sure I've seen this floor waxer before somewhere."
 
 
 
 Book 36 - Public Gymnasium
 
 The gym door is a closed locked openable lockable scenery door. It is east of Lake Street by the gym and west of the public gymnasium.
+The snarky remark of the gym door is "C'mon, I need to get my reps in."
 
 The public gymnasium is in ELR. "There is a basketball court and a weight training area. A front desk is next to the front entrance."
+The snarky remark of the public gymnasium is "This is the kind of government largesse that bankrupted 1950s America. For reals."
 
 Index map with public gymnasium mapped east of Lake Street by the gym.
 
 The gym front desk is a scenery supporter in the public gymnasium. "Some kind of record book sits on the front desk."
+The snarky remark of the gym front desk is "Where do I scan my ID card?"
 
 The membership book is a fixed in place thing on the gym front desk. The description is "It's a book apparently full of records of the members of the gym. [We] could LOOK UP a member's name IN BOOK."
+The snarky remark of the membership book is "God forbid this information should fall into the wrong hands."
 
 Instead of consulting the membership book about something:
 	if the topic understood matches "william thompson" or the topic understood matches "bill thompson" or the topic understood matches "thompson":
@@ -1376,6 +1394,85 @@ Instead of consulting the membership book about something:
 		now looked up locker is true;
 	otherwise:
 		say "[We] can't find that name in the membership book.";
+
+The basketball court is scenery in the public gymnasium. "It's a regulation basketball court, with a shiny hardwood floor and a pair of hoops at either end. It's silent and empty." Understand "court" as the basketball court.
+
+The basketball hoops are scenery in the public gymnasium. "A pair of basketball hoops are mounted at either end of the court." Understand "hoop/hoops" as the basketball hoops.
+
+The basketball-ball is in the public gymnasium. It is privately-named. The printed name is "basketball". Understand "basketball/ball" as the basketball-ball.
+ "A basketball lies on the floor." The description is "A regulation basketball, well-worn but fully inflated."
+
+The basketball score is a number that varies. The basketball score is 0.
+
+Shooting is an action applying to one thing. Understand "shoot [something preferably held]" as shooting. Understand "shoot hoops" as shooting. Understand "shoot baskets", "play basketball", "play hoops", "play ball", "shoot" as shooting.
+The Shooting action has a number called the points.
+
+Rule for supplying a missing noun while shooting:
+	if the basketball-ball is in the location or the player encloses the basketball-ball:
+		now the noun is the basketball-ball;
+	otherwise:
+		say "There is no basketball here." instead.
+
+Check shooting (this is the can't shoot what you don't have rule):
+	if the actor is carrying the noun, continue the action;
+	if the actor is wearing the noun, continue the action;
+	carry out the implicitly taking activity with the noun;
+	if the actor is carrying the noun, continue the action;
+	stop the action.
+
+Check shooting when the noun is not the basketball-ball:
+	say "Shooting is for basketballs only." instead;
+
+Check shooting when the location is not the public gymnasium:
+	say "There are no hoops here." instead;
+
+Carry out shooting:
+	if a random chance of 1 in 2 succeeds:
+		now the basketball score is the basketball score + 2;
+		now the points is 2;
+	now the basketball-ball is in the public gymnasium;
+
+Report shooting:
+	if the points is 2:
+		say "[one of]The ball swishes through the hoop[or]The ball bounces off the backboard and in[or]The ball hits the rim and drops through[or]The ball banks in off the backboard[or]The ball drops through the net[or]The ball rattles around the rim and in[or]The ball drops through the hoop[or]The ball hits nothing but net[at random]. Two points![paragraph break]";
+		say "The score is now [basketball score].";
+	otherwise:
+		say "[one of]Oof. Air ball[or]The ball clanks off the rim[or]The ball hits the backboard and bounces off[or]The ball misses everything[or]The ball hits the rim and bounces away[or]The ball hits the backboard and bounces away[or]The ball hits the front of the rim and bounces away[or]The ball hits the back of the rim and bounces away[at random]."
+
+Dunking is an action applying to one thing. Understand "dunk [something preferably held]" as dunking. Understand "dunk" as dunking. 
+
+Rule for supplying a missing noun while dunking:
+	if the basketball-ball is in the location or the player encloses the basketball-ball:
+		now the noun is the basketball-ball;
+	otherwise:
+		say "There is no basketball here." instead.
+
+Check dunking (this is the can't dunk what you don't have rule):
+	if the actor is carrying the noun, continue the action;
+	if the actor is wearing the noun, continue the action;
+	carry out the implicitly taking activity with the noun;
+	if the actor is carrying the noun, continue the action;
+	stop the action.
+
+Check dunking when the noun is not the basketball-ball:
+	say "Dunking is for basketballs only." instead;
+
+Check dunking when the location is not the public gymnasium:
+	say "There are no hoops here." instead;
+
+Carry out dunking:
+	now the basketball-ball is in the public gymnasium;
+
+Report dunking:
+	say "[one of]Faraji goes up for the dunk... and misses the rim entirely[or]Faraji tries to dunk, but the ball slips out of their hands[or]Faraji tries a reverse dunk, but slips on the floor[or]Faraji sails through the air from the top of the key, and almost makes it halfway to the hoop[at random]."
+
+The weight training area is scenery in the public gymnasium. "A number of weight machines and free weights are arranged around a padded area separated from the basketball court."
+
+The weight machine is scenery in the public gymnasium. "A weight machine, designed to work the upper body." Understand "weight machines" as the weight machine.
+
+The free weights are scenery in the public gymnasium. "A set of free weights, ranging from 5 to 50 pounds." Understand "weights" as the free weights.
+
+
 
 Book 37 - Gym Basement
 

@@ -1250,10 +1250,13 @@ Christy's pencil	Christy	"'What's that pencil?'"	"'My special drawing pencil. I'
 Volume 5 - Things
 
 The recall button is a thing. The description is "A small, flat device with a black button on it." Understand "black/device" as the recall button.
-The snarky remark is "[If the recall button has not been pushed]Yeah. Am I sure it won't explode? No, I'm not sure. But I'm pretty sure it won't. Pretty sure[otherwise]At least I have a way back, just in case I really want Doris's company[end if]."
+The snarky remark is "[If the recall button is not pushed]Yeah. Am I sure it won't explode? No, I'm not sure. But I'm pretty sure it won't. Pretty sure[otherwise]At least I have a way back, just in case I really want Doris's company[end if]."
+
+The recall button can be pushed. The recall button is not pushed.
 
 Instead of pushing the recall button when the player is not in field office area:
 	say "The world turns inside out, and suddenly [player's surname] is somewhere else.";
+	now the recall button is pushed;
 	move the player to the field office chief's office;
 
 Instead of pushing the recall button when the player is in field office area:
