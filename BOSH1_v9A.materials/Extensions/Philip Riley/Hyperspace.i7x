@@ -492,13 +492,13 @@ After printing the name of a tome:
 	say "[roman type]";
 
 Advanced Temporal Mechanics is a tome on the mahogany desk. The description is "A thick, technical tome with a title that makes your head hurt."
-The snarky remark is "I hear it has a great twist ending." It is owned by Minerva.
+The snarky remark is "I hear it has a great twist ending." It is owned by Minerva. It is loanable.
 
 Theoretical Hyperspace is a tome on the mahogany desk. The description is "A graduate text in something or other."
-The snarky remark is "I liked the cover art on the last edition better." It is owned by Minerva.
+The snarky remark is "I liked the cover art on the last edition better." It is owned by Minerva. It is loanable.
 
 Hitchhiker's Guide to the Galaxy is a tome on the mahogany desk. The description is "A battered paperback with a cover that says 'Don't Panic.'"
-The snarky remark is "Most realistic book in the office." It is owned by Minerva.
+The snarky remark is "Most realistic book in the office." It is owned by Minerva. It is loanable.
 
 The borrowed book-minerva is an object that varies. The borrowed book-minerva is initially nothing.
 
@@ -528,6 +528,9 @@ After examining a tome when the noun is owned by Minerva and the noun is support
 after examining the mahogany desk:
 	queue Minerva with to borrow a book-minerva;
 
+after examining Minerva's books:
+	queue Minerva with to borrow a book-minerva;
+
 Book-borrowing is an object based rulebook.
 
 Book-borrowing something enclosed by the player:
@@ -541,8 +544,8 @@ Book-borrowing a tome (called T) when T is supported by the mahogany desk and T 
 	now the borrowed book-minerva is T;
 	rule succeeds;
 
-Book-borrowing:
-	say "[We] can't borrow that.";
+Book-borrowing something (called S):
+	say "[We] can't borrow [regarding S][those].";
 	rule fails;	
 
 After giving a loanable tome to Minerva when the borrowed book-minerva is the noun:
@@ -553,7 +556,7 @@ After giving a loanable tome to Minerva when the borrowed book-minerva is the no
 	
 After putting a loanable tome on the mahogany desk when the borrowed book-minerva is the noun:
 	now the borrowed book-minerva is nothing;
-	now the noun is owned by Moira Zin;
+	now the noun is owned by Minerva;
 	continue the action;
 
 A turn sequence rule when we are discussing to borrow a book-minerva (this is the book borrowing turn sequence-minerva rule):
@@ -686,12 +689,15 @@ After discussing about coffee:
 Book 4 - Doris's Office
 
 the field office chief's office is a leavable room. It is west of the field office hallway. It is in field office area. "Doris's office is a riot of color -- he's covered the white walls with posters, maps, and charts. A large desk is in the middle of the room, behind which sits Doris." It has egress east.
+The snarky remark is "It's like a billboard advertising his insanity."
 
 Doris is a man in the field office chief's office.
 The initial appearance is "Doris is sitting cross-legged in a chair, tapping his foot lazily on the desk."
 The description is "Doris sports a grin that seems to be permanently etched on his face. He wears a tweed suit and a trilby hat."
+The snarky remark is "Nice hat. I'm not being sarcastic."
 
 Doris's desk is a scenery supporter in the field office chief's office. The description is "Doris's desk is large and made of the same white material as the rest of the office. It is covered with a chaotic mess of papers."
+The snarky remark is "I'm sure it's a very sophisticated filing system."
 
 The posters are scenery in the field office chief's office. The description is "The posters are all brightly colored and covered with strange symbols and diagrams. They're all in languages Faraji can't read." They are plural-named.
 The snarky remark is "Never have learned to read Esperanto."
@@ -705,30 +711,37 @@ The snarky remark is "I should have paid more attention in my theoretical nonsen
 The tchotchkes are scenery in the field office chief's office. Understand "knick-knacks", "knick knacks", "curios", "junk", "stuff" as the tchotchkes. The description is "A small, plastic model of a TARDIS, a Rubik's cube, and a CMY cube are on the desk." They are plural-named. Doris owns the tchotchkes.
 
 A model TARDIS is on Doris's desk. The description is "It's a small, plastic model of a TARDIS." It is owned by Doris.
+The snarky remark is "It's only a model."
 
 A Rubik's cube is on Doris's desk. The description is "It's a Rubik's cube." It is owned by Doris.
 Understand "rubik/rubix" as Rubik's cube.
+The snarky remark is "I can solve one side."
 
 A CMY cube is on Doris's desk. The description is "An acrylic cube that filters light on different wavelengths through its various sides." It is owned by Doris. Understand "color/acrylic" as CMY cube.
+The snarky remark is "Anyone can make a CMY cube. It takes a real artist to make a CMYK cube."
 
-Doris's papers are on Doris's desk. They are plural-named. The description is "The papers are covered with scribbles and diagrams. But really, who can make sense of them?" It is owned by Doris.
+Doris's papers are on Doris's desk. They are plural-named. The description is "The papers are covered with scribbles and diagrams. But really, who can make sense of them?" It is owned by Doris. Understand "scribbles/diagrams" as Doris's papers.
+The snarky remark is "I keep feeling more and more confident in his leadership."
 
 Book 5 - Christy's Office
 
 Christy's office is a leavable room. It is south of the field office hallway. It is in field office area. "Christy has taken the initiative to paint her office a bright, cheerful orange. A large desk is in the middle of the room." It has egress north.
+The snarky remark is "I think they're trying to blind us."
 
 Christy is a nonbinary in Christy's office. The initial appearance is "Christy is sitting at the desk, drawing in a sketchbook." The description is "With their short hair and wide eyes, Christy looks a bit like a lemur. They're wearing a sharp brown suit."
+The snarky remark is "I think they're trying to hypnotize me."
 
 Christy's desk is a scenery supporter in Christy's office. The description is "A sleek modern desk, it holds [list of things on Christy's desk with indefinite articles]." 
+The snarky remark is "Why can't I have a desk like that?"
 
 Instead of examining Christy's desk:
 	say the description of Christy's desk;
 	lb;
 
 Christy's sketchbook is on Christy's desk. The description is "From what [we] can see, the sketchbook is filled with drawings of strange, abstract shapes." It is owned by Christy. Understand "book/sketch/sketches/drawing/drawings" as Christy's sketchbook.
+The snarky remark is "I believe that kind of art is called abstract astigmatism."
 
 Christy carries Christy's pencil. The description of Christy's pencil is "A soft, black pencil." It is owned by Christy. Understand "soft/black" as Christy's pencil.
-
 
 
 Book 6 - Portal Room 1
@@ -736,8 +749,15 @@ Book 6 - Portal Room 1
 Definition: the portal to the past is active if it is activated and (the current spacetime setting is the town hall spacetime setting or the current spacetime setting is the shack spacetime setting).
 
 Portal Room 1 is a leavable room. It is forth of the field office hallway. It is in field office area. "The room is full of humming, glowing machinery, all of it attached to a large, arch-shaped portal in the middle of the room. The exit is back." It has egress back.
+The snarky remark is "The room is named well."
+
+The machinery is scenery in Portal Room 1. The description is "The machinery is humming and glowing with a soft light. It's all attached to the portal in the middle of the room."
+The snarky remark is "At least it's not a DeLorean."
 
 The portal to the past is in Portal Room 1. The portal to the past can be activated. it is fixed in place.
+The snarky remark is "[if the portal to the past is activated]My excitement at the prospect of traveling to 50's Upstate New York is palpable, I assure you[otherwise]The Portal to the Past is a bit of a let-down[end if]."
+
+Understand "shimmering/curtain/field/of/light" as the portal to the past when the portal to the past is activated. 
 
 To say portal to the past interior description:
 	if the portal to the past is activated:
@@ -755,7 +775,9 @@ Rule for writing a paragraph about the portal to the past:
 	lb;
 
 Instead of entering the portal to the past when the portal to the past is not activated:
-	say "[We] [walk] straight through it and nothing happens.";
+	say "Nothing happens. It's just an empty archway.";
+
+Understand "go through [something]", "pass through [something]", "go into [something]", "step into [something]", "traverse the [something]" as entering.
 
 Instead of entering the portal to the past when the portal to the past is activated:
 	if the current spacetime setting is the Town Hall spaceTime setting:
@@ -773,15 +795,19 @@ The current spacetime setting is a number that varies. The current spacetime set
 The town hall spacetime setting is always 62358234.
 The shack spacetime setting is always 62357123.
 
-The spacetime control is a part of the portal to the past. The description is "A control panel is attached to the portal. It has a display and a keypad. [if the portal to the past is activated]The display reads '[current spacetime setting]'[otherwise]The display is dark[end if]. A large red button underneath says 'RESET'." Understand "panel" as the spacetime control.
+The spacetime control is a part of the portal to the past. The description is "A control panel is attached to the portal. It has an LED display and a keypad. [if the portal to the past is activated]The display reads '[current spacetime setting]'[otherwise]The display is dark[end if]. A large red button underneath says 'RESET'." Understand "panel" as the spacetime control.
+The snarky remark is "LEDs, eh? Where'd they get the budget for that?"
 
 The keypad is a part of the spacetime control. The description is "A standard numeric keypad. The font on the keys is really cool and science fictiony."
 
 The display is a part of the spacetime control. The description is "[if the portal to the past is activated]The display reads '[current spacetime setting]'[otherwise]The display is dark[end if]."
+Understand "LED/LEDs" as the display.
 
 The reset button is a part of the spacetime control. The description is "A large red button that says 'RESET'."
 Carry out pushing the reset button:
 	now the current spacetime setting is the town hall spacetime setting;
+
+The snarky remark of the reset button is "Reset what how? How do I know I want that?"
 
 Report pushing the reset button:
 	say "The display now reads '[current spaceTime Setting].'";
@@ -835,9 +861,12 @@ Report typing a number into the keypad:
 
 Section - Portal 2
 
-Portal Room 2 is a leavable room. It is back of the field office hallway. It is in field office area. "The room is full of humming, glowing machinery, all of it attached to a large, arch-shaped portal in the middle of the room. The exit is forth." It has egress forth.
+Portal Room 2 is a leavable room. It is back of the field office hallway. It is in field office area. "The room is full of humming, glowing machinery, all of it attached to a large, arch-shaped portal in the middle of the room. A sign on the portal says 'Auxiliary Portal'. The exit is forth." It has egress forth.
 
 The auxiliary portal is in Portal Room 2. The auxiliary portal can be activated. it is fixed in place.
+The snarky remark is "[if the auxiliary portal is activated]You're sure this won't hurt, right?[otherwise]The Auxiliary Portal is a bit of a let-down[end if]."
+
+Understand "shimmering/curtain/field/of/light" as the auxiliary portal when the auxiliary portal is activated. 
 
 To say auxiliary portal interior description:
 	if the auxiliary portal is activated:
@@ -852,7 +881,7 @@ Rule for writing a paragraph about the auxiliary portal:
 	lb;
 
 Instead of entering the auxiliary portal when the auxiliary portal is not activated:
-	say "[We] [walk] straight through it and nothing happens.";
+	say "Nothing happens. It's just an empty archway.";
 
 Instead of entering the auxiliary portal when the auxiliary portal is activated:
 	say "[We] [enter] the field of light, and [we] [are] suddenly somewhere else.";
@@ -1148,7 +1177,7 @@ Chief Huffton Klimp	Doris	"'What do you think of Klimp?'"	"'Aha, you won't trick
 Maggie	Doris	"'Who is Maggie?'"	"'Maggie is our receptionist. She can help you with anything you need.'"
 Christy	Doris	"'Who is Christy?'"	"'Christy is our researcher. They also have a good eye for color. They helped me pick out the paint for my kitchen.'"
 Minerva	Doris	"'Who is Minerva?'"	"'Minerva is our only field agent. Right now she's in her office recovering from a bad case of the heebie-jeebies. Real disease, by the way.'"
-Doris	Doris	"'How are you doing?'"	"'Is that important while the fate of the world is at stake?'"
+Doris	Doris	"'How are you doing?'"	"'Is that important when the fate of the world is at stake?'"
 Doris's desk	Doris	"'You certainly have, uh, a lot of stuff on your desk.'"	"'Yes. Please don't speculate on what it says about my psyche. I'm very sensitive.'"
 model TARDIS	Doris	"'I see you have a model TARDIS.'"	"'No, it's not a TARDIS. It's a police box.'"
 Rubik's cube	Doris	"'I see you have a Rubik's cube.'"	"'Yes, I do. Western Pennsylvania 12-and-under speed champion three years running.'"
@@ -1221,6 +1250,7 @@ Christy's pencil	Christy	"'What's that pencil?'"	"'My special drawing pencil. I'
 Volume 5 - Things
 
 The recall button is a thing. The description is "A small, flat device with a black button on it." Understand "black/device" as the recall button.
+The snarky remark is "[If the recall button has not been pushed]Yeah. Am I sure it won't explode? No, I'm not sure. But I'm pretty sure it won't. Pretty sure[otherwise]At least I have a way back, just in case I really want Doris's company[end if]."
 
 Instead of pushing the recall button when the player is not in field office area:
 	say "The world turns inside out, and suddenly [player's surname] is somewhere else.";

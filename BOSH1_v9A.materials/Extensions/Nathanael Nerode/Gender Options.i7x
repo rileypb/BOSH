@@ -946,19 +946,19 @@ To say those in (case - grammatical case):
 				-- the masculine gender: say "he";
 				-- the feminine gender: say "she";
 				-- the neuter gender: say "that";
-				-- the neitherine gender: say entry 1 in the declensions of the third singular pronoun of the player;
+				-- the neitherine gender: say "they";
 	otherwise:
 		let the item be the prior named object;
 		if the prior naming context is plural:
 			say "those";
 		otherwise if the item is the player:
-			say "[we]";
+			say "[us]";
 		otherwise:
 			if printing gender for the item is:
 				-- the masculine gender: say "him";
 				-- the feminine gender: say "her";
-				-- the neuter gender: say "that";
-				-- the neitherine gender: say entry 2 in the declensions of the third singular pronoun of the player;;
+				-- the neuter gender : say "that";
+				-- the neitherine gender: say "them";
 
 To say Those in (case - grammatical case):
 	if the case is nominative:
@@ -984,7 +984,7 @@ To say Those in (case - grammatical case):
 				-- the masculine gender: say "Him";
 				-- the feminine gender: say "Her";
 				-- the neuter gender: say "That";
-				-- the neitherine gender: say "[entry 2 in the declensions of the third singular pronoun of the item in title case]";
+				-- the neitherine gender: say "Them";
 
 To say they:
 	let the item be the prior named object;
@@ -1049,7 +1049,7 @@ To say them:
 			-- the masculine gender: say "him";
 			-- the feminine gender: say "her";
 			-- the neuter gender: say "it";
-			-- the neitherine gender: say entry 2 in the declensions of the third singular pronoun of the item;
+			-- the neitherine gender: say "them";
 
 To say Them:
 	let the item be the prior named object;

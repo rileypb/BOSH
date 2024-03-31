@@ -43,7 +43,7 @@ I've also read Visible Rooms by Philip Riley, which is 164 words long.
 I've also read Can't Touch This by Philip Riley, which is 146 words long.
 I've also read Compound Details by Philip Riley, which is 179 words long.
 I've also read Polish by Philip Riley, which is 86 words long.
-I've also read Hello by Philip Riley, which is 105 words long.
+I've also read Hello by Philip Riley, which is 109 words long.
 I've also read BOSH Polish by Philip Riley, which is 4515 words long.
 I've also read Choices by Philip Riley, which is 408 words long.
 I've also read New Light by Philip Riley, which is 333 words long.
@@ -52,7 +52,7 @@ I've also read Basics by Philip Riley, which is 195 words long.
 I've also read Building Facades by Philip Riley, which is 162 words long.
 I've also read Followup Questions by Philip Riley, which is 245 words long.
 I've also read Simple Conversation by Philip Riley, which is 2190 words long.
-I've also read Hyperspace by Philip Riley, which is 9991 words long.
+I've also read Hyperspace by Philip Riley, which is 10293 words long.
 I've also read BOSH Facts by Philip Riley, which is 94 words long.
 I've also read Image Strip by Philip Riley, which is 2077 words long.
 I've also read Swamp Park by Philip Riley, which is 5749 words long.
@@ -61,7 +61,7 @@ I've also read Enigma Lake by Philip Riley, which is 16364 words long.
 I've also read I Can Dig It by Philip Riley, which is 54 words long.
 I've also read Snarky Remarks by Philip Riley, which is 173 words long.
 I've also read Overlook by Philip Riley, which is 761 words long.
-I've also read Gender Options by Nathanael Nerode, which is 7730 words long.
+I've also read Gender Options by Nathanael Nerode, which is 7679 words long.
 I've also read Make Test by Philip Riley, which is 281 words long.
 I've also read BOSH Tests by Philip Riley, which is 221 words long.
 I've also read Hearing by Philip Riley, which is 1251 words long.
@@ -309,8 +309,8 @@ Providing for a total heap of 32768, given requirement of 16400
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 246 files written as streams.
-CPU time: 807 centiseconds
+Total of 247 files written as streams.
+CPU time: 782 centiseconds
 
 
 That concludes the debugging log from this run of Inform.
