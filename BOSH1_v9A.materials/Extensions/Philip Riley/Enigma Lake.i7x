@@ -1396,11 +1396,14 @@ Instead of consulting the membership book about something:
 		say "[We] can't find that name in the membership book.";
 
 The basketball court is scenery in the public gymnasium. "It's a regulation basketball court, with a shiny hardwood floor and a pair of hoops at either end. It's silent and empty." Understand "court" as the basketball court.
+The snarky remark of the basketball court is "Time for Air Faraji to put on a clinic."
 
 The basketball hoops are scenery in the public gymnasium. "A pair of basketball hoops are mounted at either end of the court." Understand "hoop/hoops" as the basketball hoops.
+The snarky remark of the basketball hoops is "I'm going to dunk on you so hard."
 
 The basketball-ball is in the public gymnasium. It is privately-named. The printed name is "basketball". Understand "basketball/ball" as the basketball-ball.
  "A basketball lies on the floor." The description is "A regulation basketball, well-worn but fully inflated."
+ The snarky remark of the basketball-ball is "Prepare for some punishment."
 
 The basketball score is a number that varies. The basketball score is 0.
 
@@ -1467,24 +1470,39 @@ Report dunking:
 	say "[one of]Faraji goes up for the dunk... and misses the rim entirely[or]Faraji tries to dunk, but the ball slips out of their hands[or]Faraji tries a reverse dunk, but slips on the floor[or]Faraji sails through the air from the top of the key, and almost makes it halfway to the hoop[at random]."
 
 The weight training area is scenery in the public gymnasium. "A number of weight machines and free weights are arranged around a padded area separated from the basketball court."
+The snarky remark of the weight training area is "Weights are for people who can't shoot hoops."
 
-The weight machine is scenery in the public gymnasium. "A weight machine, designed to work the upper body." Understand "weight machines" as the weight machine.
+The weight machine is scenery in the public gymnasium. "A weight machine, designed to work the upper body." Understand "weight/-- machines" as the weight machine.
+The snarky remark of the weight machine is "No, I'm already too ripped."
 
 The free weights are scenery in the public gymnasium. "A set of free weights, ranging from 5 to 50 pounds." Understand "weights" as the free weights.
+The snarky remark of the free weights is "Free? I'll take them all."
 
+Check taking the free weights:
+	say "The weights are too heavy to carry around.";
+
+Lifting weights is an action applying to nothing. Understand "lift weights", "pump iron", "work out", "exercise" as lifting weights.
+
+Check lifting weights when the location is not the public gymnasium:
+	say "There are no weights here." instead;
+
+Check lifting weights:
+	say "Not when we're still trying to answer that damn phone." instead;
 
 
 Book 37 - Gym Basement
 
 The gym basement is below the public gymnasium. It is in ELR. "This area is dominated by large banks of lockers."
+The snarky remark of the gym basement is "I'm trying to remember my combination."
 
 The bank of lockers is scenery in the gym basement. Understand "banks/locker" as the bank of lockers.
 "The lockers are numbered 1 to 100."
 The bank of lockers can be opened-once.
+The snarky remark of the bank of lockers is "I'm not searching every locker."
 
 Looked up locker is a truth state that varies.
 
-Opening a locker is an action applying to one number. Understand "open locker/-- number/-- [number]" as opening a locker when the location is the gym basement.
+Opening a locker is an action applying to one number. Understand "open locker/-- number/-- [number]", "search locker number/-- [number]", "look in locker/-- number/-- [number]" as opening a locker when the location is the gym basement.
 
 Check opening a locker when looked up locker is false:
 	say "[We] [are] hardly going to try opening every locker. There must be a better way to go about this." instead;
@@ -1496,16 +1514,57 @@ Check opening a locker:
 Check opening a locker when the player does not enclose the red key:
 	say "[We] [don't] have a key for the locker." instead;
 	
-Check opening a locker :
+Check opening a locker:
 	if the number understood is not the correct locker number:
 		say "The key doesn't fit the lock." instead;
 		
 Carry out opening a locker:
-	if the locker is not opened-once:
+	if the bank of lockers is not opened-once:
 		say "[We] [open] the locker. It contains some dirty gym clothes, among which [we] find [an old copper key]. [We] [take] it and close the locker.";
+		now the bank of lockers is opened-once;
 		now the player carries the old copper key;
 	otherwise:
 		say "The locker contains nothing but some old gym clothes.";
+
+Locker-opening it with is an action applying to one number and one thing. Understand "open locker/-- number/-- [number] with [something]", "search locker number/-- [number] with [something]", "look in locker/-- number/-- [number] with [something]" as locker-opening it with when the location is the gym basement.
+
+Check locker-opening a number with something when looked up locker is false:
+	say "[We] [are] hardly going to try opening every locker. There must be a better way to go about this." instead;
+	
+Check locker-opening:
+	if the number understood < 1 or the number understood > 100:
+		say "The lockers are numbered 1 to 100." instead;
+
+Check locker-opening a number with something when the second noun is a key and the second noun is not the red key:
+	say "The key doesn't fit the lock." instead;
+		
+Check locker-opening a number with something when the second noun is not a key:
+	say "You need to use a key, not [a second noun]." instead;
+	
+Check locker-opening a number with the red key:
+	if the number understood is not the correct locker number:
+		say "The key doesn't fit the lock." instead;
+		
+Carry out locker-opening a number with the red key:
+	if the bank of lockers is not opened-once:
+		say "[We] [open] the locker. It contains some dirty gym clothes, among which [we] find [an old copper key]. [We] [take] it and close the locker.";
+		now the bank of lockers is opened-once;
+		now the player carries the old copper key;
+	otherwise:
+		say "The locker contains nothing but some old gym clothes.";
+
+Check searching the bank of lockers:
+	say "The lockers are numbered 1 to 100. [We] [are] hardly going to try opening every locker. There must be a better way to go about this." instead;
+
+Check inserting something into the bank of lockers:
+	say "There's no point in that." instead;
+
+Putting in a locker is an action applying to one thing and one number. Understand "put [other things] in/inside/into locker/-- number/-- [number]", "insert [other things] in/into locker/-- number/-- [number]", "drop [other things] in/into/down locker/-- number/-- [number]" as putting in a locker when the location is the gym basement.
+
+Check putting in a locker:
+	say "There's no point in that." instead;
+
+
 		
 Volume 4 - Eerie Sounds
 
