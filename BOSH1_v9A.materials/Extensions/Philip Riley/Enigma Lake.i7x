@@ -1349,9 +1349,9 @@ The Second Floor of the Horton House is above the Horton Family House Kitchen. I
 
 The small bed is scenery in the Second Floor of the Horton House. "A small bed sits in one corner. It's a rope bed, with a thin straw mattress."
 
-The rickety wardrobe is a closed openable scenery container in the Second Floor of the Horton House. "A rickety wardrobe stands against a wall. It is [if open]open[otherwise]closed[end if]."
+The rickety wardrobe is a closed openable enterable scenery container in the Second Floor of the Horton House. "A rickety wardrobe stands against a wall. It is [if open]open[otherwise]closed[end if]."
 
-
+The wooden frame is in the rickety wardrobe. It is a container. The description is "A piece of wood, about two feet long with three holes carved in it. It looks like the holes are meant to hold things. Leather straps attached to the frame appear to be meant to hold those things in the frame."
 
 Book 26 - Astral Tunnel
 
@@ -1838,7 +1838,7 @@ Every turn when location is in ELR:
 				now sound interval is 0;
 			say "[one of]The seeming sound of sibilant speech carries on the breeze[or][We] [turn] [our] head quickly, as if something caught [our] eye[or]A strange shadow crosses the scene[or][We] abruptly [spin] around, but [find] nothing behind [us][or][We] [cock] [our] head at a strange sound[or]Distinct footsteps sound from not too far away[or]An unseasonably chilly wind causes [us] to hug [our] shoulders[then at random]." ]
 
-Volume 4.5 - The Mystic Compass in Enigma Lake
+Volume 4.25 - The Mystic Compass in Enigma Lake
 
 After going to Solvay-Road-by-the-lake when the player encloses the Mystic Compass:
 	say "The mystic compass pings softly.";
@@ -2016,6 +2016,37 @@ Every turn when the group of lizard people is in the location:
 	now the shiny astral resonator is in the location;
 	now the group of lizard people is nowhere;
 
+Volume 4.75 - Building the Makeshift Astral Resonator
+
+After inserting the astral lenses into the wooden frame:
+	say "Faraji inserts the astral lenses into the wooden frame. They fit perfectly in a long, narrow slot cut into the wood. The frame now holds [the list of things contained by the wooden frame].";
+	if the number of things contained by the wooden frame is 3:
+		make the makeshift astral resonator;
+
+After inserting the spotlight into the wooden frame:
+	say "Faraji inserts the spotlight into the wooden frame. It fits snugly into a round hole cut into the wood. The frame now holds The frame now holds [the list of things contained by the wooden frame].";
+	if the number of things contained by the wooden frame is 3:
+		make the makeshift astral resonator;
+
+After inserting the tuning fork into the wooden frame:
+	say "Faraji inserts the tuning fork into the wooden frame. It fits into a small, round hole cut into the wood. The frame now holds [the list of things contained by the wooden frame].";
+	if the number of things contained by the wooden frame is 3:
+		make the makeshift astral resonator;
+
+To make the makeshift astral resonator:
+	if the player encloses the wooden frame:
+		now the player carries the makeshift astral resonator;
+	otherwise:
+		now the makeshift astral resonator is in the location;
+	now the wooden frame is nowhere;
+	say line break;
+	say "Faraji uses the leather straps to secure the contents of the frame. Suddently, the frame and the objects within it suddenly glow with a bright light. Faraji is momentarily blinded. When they can see again, the frame and its contents have fused into what seems to be a makeshift astral resonator.";
+
+Check inserting something into the wooden frame:
+	if the noun is not the astral lenses and the noun is not the spotlight and the noun is not the tuning fork:
+		say "That doesn't fit into the wooden frame." instead;
+
+
 Volume 5 - Polish
 
 
@@ -2045,6 +2076,8 @@ test hathgar with "gonear kitchen/s/gonear lake street by the park/e".
 test shiny with "gonear radio roof/purloin shiny object/put object on platform/purloin cutters/cut chain with cutters/open cabinet/flip switch".
 test rusty with "purloin astral secrets/read it/gonear lunch counter/purloin clean battery/tie wires to battery/u/purloin rusty astral resonator/put rusty astral resonator in threaded socket".
 test makeshift with "gonear pulpit/purloin makeshift astral resonator/purloin cord/plug resonator into cord/plug cord into wall/e/move tapestry/flip switch/w/u/take telescope/put resonator in tripod".
+
+test build with "purloin tuning fork/purloin spotlight/lens/purloin wooden frame/insert tuning fork into frame/insert spotlight into frame/insert astral lenses into frame".
 
 test power with "gonear pulpit/purloin makeshift astral resonator/purloin cord/e/move tapestry/flip switch/w";
 
