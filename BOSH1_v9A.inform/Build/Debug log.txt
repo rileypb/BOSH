@@ -55,9 +55,9 @@ I've also read Simple Conversation by Philip Riley, which is 2190 words long.
 I've also read Hyperspace by Philip Riley, which is 10497 words long.
 I've also read BOSH Facts by Philip Riley, which is 94 words long.
 I've also read Image Strip by Philip Riley, which is 2077 words long.
-I've also read Swamp Park by Philip Riley, which is 5956 words long.
+I've also read Swamp Park by Philip Riley, which is 5972 words long.
 I've also read Margaret by Philip Riley, which is 1851 words long.
-I've also read Enigma Lake by Philip Riley, which is 19542 words long.
+I've also read Enigma Lake by Philip Riley, which is 20945 words long.
 I've also read I Can Dig It by Philip Riley, which is 54 words long.
 I've also read Snarky Remarks by Philip Riley, which is 200 words long.
 I've also read Overlook by Philip Riley, which is 761 words long.
@@ -78,7 +78,7 @@ I've also read Options Paragraph by Philip Riley, which is 180 words long.
 I've also read Glulx Entry Points by Emily Short, which is 1903 words long.
 I've also read Door Varieties by Philip Riley, which is 296 words long.
 I've also read Secret Doors by Gavin Lambert, which is 272 words long.
-I've also read Plugging by Philip Riley, which is 690 words long.
+I've also read Plugging by Philip Riley, which is 611 words long.
 I've also read Playtest by Philip Riley, which is 923 words long.
 I've also read Glulx Definitions by Dannii Willis, which is 879 words long.
 I've also read Glk Object Recovery by Dannii Willis, which is 460 words long.
@@ -255,9 +255,9 @@ Phase XII ... Code generation
                                                             Fail: list of numbers (~) number = nothing
                                             Fail: nothing (~) real number = nothing
                                             Fail: list of numbers (~) real number = nothing
-        Regional: CONSTANT_VNT'bosh hq'-region(I758_bosh_hq)(I644'bosh hq')
+        Regional: CONSTANT_VNT'bosh hq'-region(I759_bosh_hq)(I645'bosh hq')
          == region
-        Regional: CONSTANT_VNT'bosh hq'-region(I758_bosh_hq)(I644'bosh hq')
+        Regional: CONSTANT_VNT'bosh hq'-region(I759_bosh_hq)(I645'bosh hq')
          == region
         Regional: CONSTANT_VNT'laundromat-region'-region(I406_laundromat_region)(I299'laundromat-region')
          == region
@@ -313,8 +313,8 @@ Providing for a total heap of 32768, given requirement of 16400
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 255 files written as streams.
-CPU time: 816 centiseconds
+Total of 256 files written as streams.
+CPU time: 870 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

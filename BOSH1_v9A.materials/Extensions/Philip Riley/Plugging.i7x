@@ -5,7 +5,7 @@ A thing can be pluggable. A thing can be plug-into-able.
 Plugging-into relates a thing to a thing. The verb to be plugged into implies the plugging-into relation. The verb to accept implies the reversed plugging-into relation.
 
 Plugging it into is an action applying to one thing and one thing. Understand "plug [something] into [something]" as plugging it into.
-Understand "plug [something] in to [something]" as plugging it into.
+Understand "plug [something] in to [something]" as plugging it into. Understand "plug in [something]" as plugging it into.
 
 Unplugging is an action applying to one thing. Understand "unplug [something]" as unplugging.
 
@@ -36,25 +36,25 @@ Check plugging something into something when the noun is plugged into the second
 
 Check plugging something pluggable into something plug-into-able:
 	if something (called the socket) accepts the noun and the second noun is not the socket:
-		silently try unplugging the noun;
+		try unplugging the noun;
 
 Check plugging something pluggable into something plug-into-able:
 	if something (called the plug) is plugged into the second noun:
 		if the noun is not the plug:
-			silently try unplugging the plug;
+			try unplugging the plug;
 
 Carry out plugging something into something:
 	now the noun is plugged into the second noun.
 
 Report plugging something into something:
-	if old plug is not nothing and old socket is not nothing:
+	[ if old plug is not nothing and old socket is not nothing:
 		say "[We] [unplug] [the noun] from [the old socket], [unplug] [the old plug] from [the second noun], and [plug] [the noun] into [the second noun].";
 	otherwise if old socket is not nothing:
 		say "[We] [unplug] [the noun] from [the old socket], and [plug] it into [the second noun].";
 	otherwise if the old plug is not nothing:
 		say "[We] [unplug] [the old plug] from [the second noun], and [plug] [the noun] into it.";
-	otherwise:
-		say "[We] [plug] [the noun] into [the second noun]."
+	otherwise: ]
+	say "[We] [plug] [the noun] into [the second noun]."
 
 
 Book - unplugging rules
@@ -75,7 +75,7 @@ Carry out unplugging:
     now the noun is not plugged into anything.
 
 Report unplugging:
-    say "You unplug [the noun] from the [socket unplugged from]."
+    say "[We] [unplug] [the noun] from the [socket unplugged from]."
 
 
 Book - Default movement rules

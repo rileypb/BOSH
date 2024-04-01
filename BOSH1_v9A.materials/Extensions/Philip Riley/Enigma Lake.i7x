@@ -16,7 +16,7 @@ When play begins:
 		now the correct locker number is 1;
 
 To decide if mounted-rusty-resonator:
-	decide no;
+	decide on whether or not the rusty astral resonator is in the threaded socket;
 
 To decide if mounted-shiny-resonator:
 	decide on whether or not the platform supports the shiny astral resonator;
@@ -30,7 +30,20 @@ The locker key is a key.
 An astral resonator type is a kind of thing.
 
 The makeshift astral resonator is an astral resonator type. It is pluggable.
-The description is "A makeshift astral resonator, cobbled together from a tuning fork, a spotlight, and the astral lenses."
+The description is "A makeshift astral resonator, cobbled together from a tuning fork, a spotlight, and the astral lenses[if the makeshift astral resonator is powered]. A beam of light shoots from the lens[end if][if the content of the tripod is the makeshift astral resonator]. It is mounted on a tripod[end if]."
+
+Instead of examining the makeshift astral resonator:
+	say "The makeshift astral resonator is a cobbled-together device, made from a tuning fork, a spotlight, and the astral lenses";
+	if mounted-makeshift-resonator:
+		say ". It sits on a tripod, and a beam of light shoots from the lens, striking the obelisk in the park. The crystal is glowing [crystal glow].";
+	otherwise if the makeshift astral resonator is powered:
+		say ". A beam of light shoots from the lens, striking a wall.";
+	otherwise if content of the tripod is the makeshift astral resonator:
+		say ". It is mounted on a tripod.";
+	otherwise:
+		say ".";
+
+
 The snarky remark of the makeshift astral resonator is "I built it all by myself."
 
 Description notes for the makeshift astral resonator:
@@ -465,6 +478,10 @@ The snarky remark of the broadcast tower is "What a great place to get struck by
 
 The platform is part of the broadcast tower. It is a supporter.
 
+Check putting something on the platform:
+	if the platform supports something that is not the noun:
+		say "The platform is already occupied." instead;
+
 Instead of examining the platform when mounted-shiny-resonator:
 	if the power switch is switched on:
 		say "[A shiny astral resonator] is mounted on the platform, and a beam of light shoots out of it, striking the obelisk in the park. The crystal is glowing [crystal glow].";
@@ -485,13 +502,16 @@ To hook up the shiny resonator:
 	otherwise:
 		say "[We] [push] [the shiny astral resonator] onto the platform, attaching the clamps to the rings.";
 
-Instead of inserting the shiny astral resonator into the platform:
-	hook up the shiny resonator;
+Instead of inserting something into the platform:
+	try putting the noun on the platform;
 
-Check inserting something into the platform when the noun is not the shiny astral resonator:
+Check putting something on the platform when the noun is not the shiny astral resonator:
 	say "That doesn't seem to be the right thing to put there." instead;
 
 Instead of putting the shiny astral resonator on the platform:
+	if the platform supports something:
+		say "The platform is already occupied.";
+		stop the action;
 	hook up the shiny resonator;
 
 After taking the shiny astral resonator when the shiny astral resonator was on the platform:
@@ -501,34 +521,34 @@ After taking the shiny astral resonator when the shiny astral resonator was on t
 		say "Faraji removes [the shiny astral resonator] from the platform.";
 
 Instead of tying the shiny astral resonator to the rings:
-	hook up the shiny resonator;
+	try putting the shiny astral resonator on the platform;
 
 Instead of tying the shiny clamps to the rings:
-	hook up the shiny resonator;
+	try putting the shiny astral resonator on the platform;
 
 Instead of tying the shiny clamps to the platform:
-	hook up the shiny resonator;
+	try putting the shiny astral resonator on the platform;
 
 Instead of tying the shiny astral resonator to the rings:
-	hook up the shiny resonator;
+	try putting the shiny astral resonator on the platform;
 
 Instead of tying the rings to the shiny clamps:
-	hook up the shiny resonator;
+	try putting the shiny astral resonator on the platform;
 
 Instead of tying the rings to the shiny astral resonator:
-	hook up the shiny resonator;
+	try putting the shiny astral resonator on the platform;
 
 Instead of tying the shiny astral resonator to the platform:
-	hook up the shiny resonator;
+	try putting the shiny astral resonator on the platform;
 
 Instead of tying the shiny astral resonator to the broadcast tower:
-	hook up the shiny resonator;
+	try putting the shiny astral resonator on the platform;
 
 Instead of inserting the shiny astral resonator into the broadcast tower:
-	hook up the shiny resonator;
+	try putting the shiny astral resonator on the platform;
 
 Instead of putting the shiny astral resonator on the broadcast tower:
-	hook up the shiny resonator;
+	try putting the shiny astral resonator on the platform;
 
 Instead of climbing up the broadcast tower:
 	say "[We] [are] afraid of heights.";
@@ -536,22 +556,22 @@ Instead of climbing up the broadcast tower:
 Instead of going up when the location is the radio station roof:
 	say "[We] [are] afraid of heights.";
 	
-The radio-obelisk-facade is a backdrop. It is in the radio station roof. Understand "obelisk/park/crystal/adornment" as radio-obelisk-facade. "The obelisk in the park is clearly visible from here."
+The radio-obelisk-facade is a backdrop. It is in the radio station roof. Understand "obelisk/enigma/park/crystal/adornment" as radio-obelisk-facade. "The obelisk in the park is clearly visible from here."
 
 Instead of examining the radio-obelisk-facade:
-	say "The obelisk in the park is clearly visible from here.[run paragraph on]";
+	say "The obelisk in the park is clearly visible from here. [run paragraph on]";
 	if beam count is 1:
 		if mounted-shiny-resonator:
 			say " A beam of light is focused on the obelisk from here, striking the crystal adornment at its apex. The crystal is glowing faintly.";
 		otherwise:
 			say " A beam of light is focused on the obelisk from elsewhere, striking the crystal adornment at its apex. The crystal is glowing faintly.";
 	otherwise if beam count is 2:
-		if mounted-makeshift-resonator:
+		if mounted-shiny-resonator:
 			say " Two beams of light are focused on the obelisk, one from here and one from elsewhere, striking the crystal adornment at its apex. The crystal is glowing brightly.";
 		otherwise:
 			say " Two beams of light are focused on the obelisk from elsewhere, striking the crystal adornment at its apex. The crystal is glowing brightly.";
 	otherwise if beam count is 3:
-		say " Three beams of light are focused on the obelisk, one from here and two from elsewhere, striking the crystal adornment at its apex. The crystal is glowing brightly.";
+		say " Three beams of light are focused on the obelisk, one from here and two from elsewhere, striking the crystal adornment at its apex. The crystal is glowing brilliantly.";
 	otherwise:
 		say " The crystal adornment at the apex of the obelisk is dark.";
 
@@ -702,8 +722,14 @@ Understand "wall/power/electric/point/mains/GPO" as the electrical outlet.
 It is plug-into-able.
 The snarky remark of the electrical outlet is "This mission is making me wish I had a fork."
 
-Does the player mean plugging the extension cord into the electrical outlet: 
+Does the player mean plugging something into the electrical outlet: 
 	it is very likely.
+
+Rule for supplying a missing second noun while plugging something into:
+	if the location is the First Utilitarian Church of Enigma Lake:
+		now the second noun is the electrical outlet;
+	otherwise:
+		rule fails;
 
 The extension cord is a thing. The description is "A long, heavy-duty extension cord[if the extension cord is plugged into the electrical outlet and the location is First Utilitarian Church of Enigma Lake], plugged into the wall outlet[otherwise if the extension cord is plugged into the electrical outlet and the location is the steeple]. It trails down through the trapdoor[otherwise if the extension cord is plugged into the electrical outlet and the location is the vestry]. It trails through the door into the church[end if]." 
 The snarky remark of the extension cord is "You can never have too many extension cords. Unless you have too many extension cords. Then you have too many extension cords."
@@ -723,10 +749,14 @@ Definition: a thing is powered:
 After switching on the circuit breaker when the makeshift astral resonator is in the vestry or the player encloses the makeshift astral resonator:
 	if the makeshift astral resonator is powered:
 		say "The [makeshift astral resonator] flickers to life, emitting a bright beam of light.";
+	otherwise:
+		continue the action;
 
 After switching off the circuit breaker when the makeshift astral resonator is in the vestry or the player encloses the makeshift astral resonator:
 	if the makeshift astral resonator was powered:
 		say "The [makeshift astral resonator] flickers and goes dark.";
+	otherwise:
+		continue the action;
 
 Chapter 1 - Special movement rules
 
@@ -898,7 +928,7 @@ The snarky remark of the vestry is "Seen one vestry, seen [']em all."
 The x-coordinate of the vestry is 3. The y-coordinate of the vestry is 1.
 
 The tapestry is scenery in the vestry. "An intricate tapestry, depicting a scene of a medieval village. It's a bit out of place in a church, but it's lovely." The tapestry can be pushed aside. Understand "wall hanging", "wallhanging" as the tapestry.
-The snarky remark of the tapestry is "I wonder why they don't have a velvet Elvis."
+The snarky remark of the tapestry is "I would prefer a velvet Elvis."
 
 Instead of pushing the tapestry when the tapestry is not pushed aside:
 	say "[We] [push] the tapestry aside, revealing a circuit breaker box mounted on the wall.";
@@ -911,7 +941,7 @@ Instead of pushing the tapestry when the tapestry is pushed aside:
 Instead of looking behind the tapestry:
 	try pushing the tapestry;
 
-The circuit breaker is a scenery device. "A circuit breaker box is mounted on the wall." Understand "box", "safety switch", "switchgear", "disconnect switch", "electrical", "electricity", "fuse switch", "overload switch" and "trip switch" as the circuit breaker. The circuit breaker is switched off.
+The circuit breaker is a scenery device. "A circuit breaker box is mounted on the wall." Understand "switch", "box", "safety switch", "switchgear", "disconnect switch", "electrical", "electricity", "fuse switch", "overload switch" and "trip switch" as the circuit breaker. The circuit breaker is switched off.
 The snarky remark of the circuit breaker is "And the Lord said, 'Let there be light.' And there was light. And then the circuit breaker tripped." 
 
 Book 18 - Steeple
@@ -991,7 +1021,7 @@ Instead of taking something when the content of the tripod is the noun:
 Instead of removing something from the tripod when the content of the tripod is the noun:
 	try unmounting the noun;
 
-Mounting it on is an action applying to two things. Understand "mount [something] on [something]" as mounting it on.
+Mounting it on is an action applying to two things. Understand "mount [something] on/in/onto [something]" as mounting it on.
 
 Check mounting something on the tripod:
 	if the content of the tripod is something:
@@ -1018,7 +1048,11 @@ Carry out mounting the makeshift astral resonator on the tripod:
 	now the makeshift astral resonator is in the tripod;
 
 Report mounting the makeshift astral resonator on the tripod:
-	say "[We] [manage] to make the makeshift astral resonator fit in the tripod's mount.";
+	say "[We] [manage] to make the makeshift astral resonator fit in the tripod's mount";
+	if the makeshift astral resonator is powered:
+		say ". The beam of light focuses on the obelisk in the park, striking the crystal adornment at its apex. The crystal is glowing [crystal glow].";
+	otherwise:
+		say ".";
 
 Instead of inserting something into the tripod:
 	try mounting the noun on the tripod;
@@ -1034,8 +1068,46 @@ To decide if mounted-makeshift-resonator:
 	otherwise:
 		no;
 
+The Plugging it into action has a truth state called resonator originally powered.
+The Unplugging action has a truth state called resonator originally powered.
+
+Setting action variables for plugging something into:
+	now resonator originally powered is whether or not the makeshift astral resonator is powered;
+
+Setting action variables for unplugging:
+	now resonator originally powered is whether or not the makeshift astral resonator is powered;
+
+After plugging the makeshift astral resonator into something:
+	say "Faraji plugs the makeshift astral resonator into [the second noun]";
+	if the makeshift astral resonator is powered:
+		say ". It flickers to life, emitting a bright beam of light";
+		if the content of the tripod is the makeshift astral resonator:
+			say " that focuses on the obelisk in the park, striking the crystal adornment at its apex. The crystal is glowing [crystal glow].";
+		otherwise:
+			say " that strikes a wall.";
+	otherwise:
+		say ".";
+
+After unplugging the makeshift astral resonator when resonator originally powered is true:
+	say "Faraji unplugs the makeshift astral resonator from [the socket unplugged from]. It flickers and goes dark.";
+
+After plugging the extension cord into the electrical outlet:
+	say "Faraji plugs the extension cord into [the electrical outlet]";
+	if the makeshift astral resonator is powered:
+		say ". [The makeshift astral resonator] flickers to life, emitting a bright beam of light";
+		if the content of the tripod is the makeshift astral resonator:
+			say " that focuses on the obelisk in the park, striking the crystal adornment at its apex. The crystal is glowing [crystal glow].";
+		otherwise:
+			say " that strikes a wall.";
+	otherwise:
+		say ".";
+
+After unplugging the extension cord when resonator originally powered is true:
+	if the makeshift astral resonator is not powered:
+		say "Faraji unplugs the extension cord from [the electrical outlet]. [The makeshift astral resonator] flickers and goes dark.";
+
 Instead of examining the steeple-obelisk-facade:
-	say "The obelisk in the park is clearly visible from here.[run paragraph on]";
+	say "The obelisk in the park is clearly visible from here. [run paragraph on]";
 	if beam count is 1:
 		if mounted-makeshift-resonator:
 			say "A beam of light is focused on the obelisk from the steeple, striking the crystal adornment at its apex. The crystal is glowing faintly.";
@@ -1079,7 +1151,7 @@ The brass key is a key. It is in the glove compartment. The description is "A si
 
 The truck hood is a part of the abandoned pickup truck. It is a closed openable container. The description is "The hood is slightly crumpled, as if it has been in a minor accident. It is [if the hood is open]open[otherwise]closed[end if]." Understand "bonnet" as the truck hood.
 
-The hood contains a dirty battery. 
+The hood contains a dirty car battery. 
 
 The description of the dirty battery is "The battery is dirty and corroded. Acid has leaked from the terminals. It's unlikely to be of any use."
 
@@ -1449,22 +1521,92 @@ A tuning fork is in Fresnel's Music. "A tuning fork lies on the counter." The de
 Book 33 - Henry's Hot Skillet
 
 Henry's Hot Skillet is a room. It is in ELR.
-The description is "This is the epitome of the homey small-town diner of times go by, except for the lack of all furniture, cooking implements, food, decor, and so on. There is a staircase leading up. A pair of insulated wires hangs from the ceiling at one end of the counter. "
+The description is "This is the epitome of the homey small-town diner of times go by, except for the lack of all furniture, cooking implements, food, decor, and so on. There is a staircase leading up. A pair of insulated wires hangs from the ceiling at one end of the counter[if the clean battery is hooked up]. The wires are attached to a battery resting on the counter[end if]."
 
 the Skillet door is a closed locked openable lockable scenery door. It is south of Main at Solvay and north of Henry's Hot Skillet. The Skillet door has matching key the brass key.
 
-The lunch counter is scenery in Henry's Hot Skillet. "A typical mid-twentieth-century lunch counter."
+The lunch counter is a scenery supporter in Henry's Hot Skillet. "A typical mid-twentieth-century lunch counter."
 
-The wires are scenery in Henry's Hot Skillet. "Two insulated wires with bare ends, they probably once attached to some electrical device sitting on the counter."
+The wires are scenery in Henry's Hot Skillet. "Two insulated wires with bare ends, they probably once attached to some electrical device sitting on the counter[if the clean battery is hooked up]. Right now, the wires are attached to a battery resting on the counter[end if]."
+
 They are plural-named.
+
+The clean battery can be hooked up. 
+
+Instead of tying the wires to the clean battery when the clean battery is not hooked up:
+	if the clean battery is on the lunch counter:
+		say "Faraji attaches the wires to the battery.";
+		now the clean battery is hooked up;
+	otherwise:
+		if the player does not enclose the clean battery:
+			carry out the implicitly taking activity with the clean battery;
+		if the player encloses the clean battery:
+			say "Faraji puts the battery on the counter and attaches the wires to it.";
+			now the clean battery is on the lunch counter;
+			now the clean battery is hooked up;
+
+Instead of tying the wires to the clean battery when the clean battery is hooked up:
+	say "The wires are already attached to the battery.";
+
+Check tying the clean battery to the wires:
+	try tying the wires to the clean battery instead;
+
+Untying it from is an action applying to two things. Understand "untie [something] from [something]", "detach [something] from [something]", "disconnect [something] from [something]", "unhook [something] from [something]", "separate [something] from [something]" as untying it from.
+
+Instead of untying the wires from the clean battery when the clean battery is hooked up:
+	say "Faraji unties the wires from the battery.";
+	now the clean battery is not hooked up;
+
+Instead of untying the wires from the clean battery when the clean battery is not hooked up:
+	say "The wires are not attached to anything.";
+
+Check untying the clean battery from the wires:
+	try untying the wires from the clean battery;
+
 
 Book 34 - Henry's Roof
 
 Henry's Roof is above Henry's Hot Skillet. It is in ELR. The description is "From here one can see much of the town, including a clear view of the obelisk in Enigma Park. There is a large TV aerial jutting from the roof here." The preposition is "on".
 
-The TV aerial antenna is scenery in Henry's Roof. "A large, metallic rooftop antenna, characterized by its array of horizontal and vertical rods designed to capture VHF (very high frequency) broadcasts."
+The TV aerial antenna is scenery in Henry's Roof. "A large, metallic rooftop antenna, characterized by its array of horizontal and vertical rods designed to capture VHF (very high frequency) broadcasts. Strangely, someone has mounted a threaded socket, like that of a light bulb, on one of the rods. A pair of insulated wires runs from the antenna and through a hole in the roof."
 
-Obelisk-from-Henry's-Roof is privately-named scenery in Henry's Roof. The printed name is "the Enigma Park obelisk". Understand "obelisk/enigma/park" as Obelisk-from-Henry's-Roof. "There's a clear line of sight from here to the tip of the obelisk."
+The threaded socket is part of the TV aerial antenna. It is a container. The description is "A threaded socket, like that of a light bulb, is mounted on one of the rods of the antenna." Understand "light/bulb/lightbulb" as the threaded socket.
+
+To hook up the rusty resonator:
+	now the rusty resonator is in the threaded socket;
+	if the clean battery is hooked up:
+		say "Faraji hooks up [The rusty astral resonator] to the threaded socket on the TV aerial antenna. A beam of light shoots out of it and strikes the obelisk in the park. The crystal is glowing [crystal glow].";
+	otherwise:
+		say "Faraji screws [The rusty astral resonator] into the threaded socket on the TV aerial antenna.";
+
+Instead of inserting the rusty astral resonator into the threaded socket when the rusty resonator is not hooked up:
+	hook up the rusty resonator;
+
+Instead of inserting the rusty astral resonator into the threaded socket when the rusty resonator is hooked up:
+	say "[The rusty astral resonator] is already in the socket.";
+
+After taking the rusty astral resonator when the rusty astral resonator was hooked up:
+	if the clean battery is hooked up:
+		say "Faraji removes [the rusty astral resonator] from the threaded socket on the TV aerial antenna. In the distance, the beam of light fades from the obelisk. [if the beam count is 0]The crystal is no longer glowing[otherwise]The crystal is still glowing [crystal glow][end if].";
+
+Obelisk-from-Henry's-Roof is privately-named scenery in Henry's Roof. The printed name is "the Enigma Park obelisk". Understand "obelisk/enigma/park/crystal/adornment" as Obelisk-from-Henry's-Roof. "There's a clear line of sight from here to the tip of the obelisk."
+
+Instead of examining the Obelisk-from-Henry's-Roof:
+	say "The obelisk in the park is clearly visible from here. [run paragraph on]";
+	if beam count is 1:
+		if mounted-rusty-resonator:
+			say " A beam of light is focused on the obelisk from here, striking the crystal adornment at its apex. The crystal is glowing faintly.";
+		otherwise:
+			say " A beam of light is focused on the obelisk from elsewhere, striking the crystal adornment at its apex. The crystal is glowing faintly.";
+	otherwise if beam count is 2:
+		if mounted-rusty-resonator:
+			say " Two beams of light are focused on the obelisk, one from here and one from elsewhere, striking the crystal adornment at its apex. The crystal is glowing brightly.";
+		otherwise:
+			say " Two beams of light are focused on the obelisk from elsewhere, striking the crystal adornment at its apex. The crystal is glowing brightly.";
+	otherwise if beam count is 3:
+		say " Three beams of light are focused on the obelisk, one from here and two from elsewhere, striking the crystal adornment at its apex. The crystal is glowing brightly.";
+	otherwise:
+		say " The crystal adornment at the apex of the obelisk is dark.";
 
 Book 35 - Rolle's Department Store
 
@@ -1899,7 +2041,12 @@ test cord with "gonear church/take cord/plug it into outlet/e/drop cord/w/unplug
 test steeple with "gonear church/take cord/plug it into outlet/u/purloin makeshift astral resonator/take telescope/put resonator in tripod/plug resonator into cord/look".
 
 test hathgar with "gonear kitchen/s/gonear lake street by the park/e".
-test shiny with "gonear radio roof/purloin shiny object".
+
+test shiny with "gonear radio roof/purloin shiny object/put object on platform/purloin cutters/cut chain with cutters/open cabinet/flip switch".
+test rusty with "purloin astral secrets/read it/gonear lunch counter/purloin clean battery/tie wires to battery/u/purloin rusty astral resonator/put rusty astral resonator in threaded socket".
+test makeshift with "gonear pulpit/purloin makeshift astral resonator/purloin cord/plug resonator into cord/plug cord into wall/e/move tapestry/flip switch/w/u/take telescope/put resonator in tripod".
+
+test power with "gonear pulpit/purloin makeshift astral resonator/purloin cord/e/move tapestry/flip switch/w";
 
 query-naming is an action applying to nothing. Understand "is hathgar named" as query-naming.
 Carry out query-naming:
