@@ -81,224 +81,224 @@
     </dict>
     <key>11</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>392</integer>
+        <key>Line</key><integer>405</integer>
         <key>Title</key><string>Book 5 - Automatic greeting</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>12</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>417</integer>
+        <key>Line</key><integer>430</integer>
         <key>Title</key><string>Book 6 - Messages</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>13</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>424</integer>
+        <key>Line</key><integer>437</integer>
         <key>Title</key><string>Book 7 - Actions</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>14</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>426</integer>
+        <key>Line</key><integer>439</integer>
         <key>Title</key><string>Chapter 1 - Knocking</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>15</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>440</integer>
+        <key>Line</key><integer>453</integer>
         <key>Title</key><string>Book 8 - Script</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>16</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>450</integer>
+        <key>Line</key><integer>463</integer>
         <key>Title</key><string>Book 9 - Concepts</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>17</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>452</integer>
+        <key>Line</key><integer>465</integer>
         <key>Title</key><string>Chapter 1 - Subjects and Facts</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>18</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>532</integer>
+        <key>Line</key><integer>545</integer>
         <key>Title</key><string>Book 10 - Kinds</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>19</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>535</integer>
+        <key>Line</key><integer>548</integer>
         <key>Title</key><string>Book 11 - The Players</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>20</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>666</integer>
+        <key>Line</key><integer>679</integer>
         <key>Title</key><string>Book 12 - Some Speech Phrases</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>21</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>694</integer>
+        <key>Line</key><integer>707</integer>
         <key>Title</key><string>Book 13 - Places</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>22</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>696</integer>
+        <key>Line</key><integer>709</integer>
         <key>Title</key><string>Chapter 1 - BOSH HQ and Swamp Park</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>23</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>701</integer>
+        <key>Line</key><integer>714</integer>
         <key>Title</key><string>Section 1 - Your Office</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>24</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>850</integer>
+        <key>Line</key><integer>863</integer>
         <key>Title</key><string>Section 2 - Back Lot</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>25</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>943</integer>
+        <key>Line</key><integer>956</integer>
         <key>Title</key><string>Section 2.5 - Inside the dumpster</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>26</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>952</integer>
+        <key>Line</key><integer>965</integer>
         <key>Title</key><string>Section 3 - Hallway</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>27</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>965</integer>
+        <key>Line</key><integer>978</integer>
         <key>Title</key><string>Section 4 - Front Office</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>28</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1119</integer>
+        <key>Line</key><integer>1132</integer>
         <key>Title</key><string>Section 5 - BOSH chief's office</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>29</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1289</integer>
+        <key>Line</key><integer>1302</integer>
         <key>Title</key><string>Section 6 - Moira's office</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>30</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1464</integer>
+        <key>Line</key><integer>1477</integer>
         <key>Title</key><string>Book 15 - The Phone Call</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>31</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1471</integer>
+        <key>Line</key><integer>1484</integer>
         <key>Title</key><string>Book 16 - Moving Between Rooms</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>32</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1499</integer>
+        <key>Line</key><integer>1512</integer>
         <key>Title</key><string>Chapter 1 - Leaving the Front Office</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>33</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1506</integer>
+        <key>Line</key><integer>1519</integer>
         <key>Title</key><string>Chapter 2 - Klimp Arrives</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>34</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1508</integer>
+        <key>Line</key><integer>1521</integer>
         <key>Title</key><string>Book 17 - Commerce and Conversation</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>35</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1521</integer>
+        <key>Line</key><integer>1534</integer>
         <key>Title</key><string>Book 18 - Sound</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>36</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1523</integer>
+        <key>Line</key><integer>1536</integer>
         <key>Title</key><string>Book 18.5 - Quiz table</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>37</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1634</integer>
+        <key>Line</key><integer>1647</integer>
         <key>Title</key><string>Book 19 - Verbs</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>38</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1639</integer>
+        <key>Line</key><integer>1652</integer>
         <key>Title</key><string>Book 20 - Images</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>39</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1807</integer>
+        <key>Line</key><integer>1820</integer>
         <key>Title</key><string>Book 21 - Not For Release</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>40</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1889</integer>
+        <key>Line</key><integer>1902</integer>
         <key>Title</key><string>Volume 2 - Test command tweak for clean transcripts</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>41</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1979</integer>
+        <key>Line</key><integer>1992</integer>
         <key>Title</key><string>Volume 3 - The Story</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>42</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1982</integer>
+        <key>Line</key><integer>1995</integer>
         <key>Title</key><string>Book 1 - The Thumb Drive</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
@@ -2523,1300 +2523,1314 @@
     </dict>
     <key>360</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>462</integer>
-        <key>Title</key><string>Book 13 - Broadcast Booth</string>
-        <key>Level</key><integer>2</integer>
-        <key>Indentation</key><integer>2</integer>
+        <key>Line</key><integer>378</integer>
+        <key>Title</key><string>Chapter 1 - The padlock and chain</string>
+        <key>Level</key><integer>4</integer>
+        <key>Indentation</key><integer>3</integer>
     </dict>
     <key>361</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>478</integer>
-        <key>Title</key><string>Book 14 - Lake Street by the gym</string>
-        <key>Level</key><integer>2</integer>
-        <key>Indentation</key><integer>2</integer>
+        <key>Line</key><integer>431</integer>
+        <key>Title</key><string>Chapter 2 - The rest of it</string>
+        <key>Level</key><integer>4</integer>
+        <key>Indentation</key><integer>3</integer>
     </dict>
     <key>362</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>492</integer>
-        <key>Title</key><string>Book 15 - Lake Street by the Park</string>
+        <key>Line</key><integer>543</integer>
+        <key>Title</key><string>Book 13 - Broadcast Booth</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>363</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>502</integer>
-        <key>Title</key><string>Book 16 - First Utilitarian Church of Enigma Lake</string>
+        <key>Line</key><integer>559</integer>
+        <key>Title</key><string>Book 14 - Lake Street by the gym</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>364</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>539</integer>
-        <key>Title</key><string>Book 16.5 - Hathgar the Pitiful</string>
+        <key>Line</key><integer>573</integer>
+        <key>Title</key><string>Book 15 - Lake Street by the Park</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>365</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>598</integer>
-        <key>Title</key><string>Book 17 - Extension Cord</string>
+        <key>Line</key><integer>583</integer>
+        <key>Title</key><string>Book 16 - First Utilitarian Church of Enigma Lake</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>366</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>613</integer>
+        <key>Line</key><integer>620</integer>
+        <key>Title</key><string>Book 16.5 - Hathgar the Pitiful</string>
+        <key>Level</key><integer>2</integer>
+        <key>Indentation</key><integer>2</integer>
+    </dict>
+    <key>367</key><dict>
+        <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
+        <key>Line</key><integer>679</integer>
+        <key>Title</key><string>Book 17 - Extension Cord</string>
+        <key>Level</key><integer>2</integer>
+        <key>Indentation</key><integer>2</integer>
+    </dict>
+    <key>368</key><dict>
+        <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
+        <key>Line</key><integer>694</integer>
         <key>Title</key><string>Chapter - Power</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
-    <key>367</key><dict>
+    <key>369</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>631</integer>
+        <key>Line</key><integer>712</integer>
         <key>Title</key><string>Chapter 1 - Special movement rules</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
-    <key>368</key><dict>
+    <key>370</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>741</integer>
+        <key>Line</key><integer>822</integer>
         <key>Title</key><string>Section - Unplugging the extension cord</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
-    <key>369</key><dict>
-        <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>794</integer>
-        <key>Title</key><string>Book 17 - Vestry</string>
-        <key>Level</key><integer>2</integer>
-        <key>Indentation</key><integer>2</integer>
-    </dict>
-    <key>370</key><dict>
-        <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>816</integer>
-        <key>Title</key><string>Book 18 - Steeple</string>
-        <key>Level</key><integer>2</integer>
-        <key>Indentation</key><integer>2</integer>
-    </dict>
     <key>371</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>953</integer>
-        <key>Title</key><string>Book 19 - Lake at Ridge</string>
+        <key>Line</key><integer>875</integer>
+        <key>Title</key><string>Book 17 - Vestry</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>372</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>1000</integer>
-        <key>Title</key><string>Book 20 - Lake Shore north of the park</string>
+        <key>Line</key><integer>897</integer>
+        <key>Title</key><string>Book 18 - Steeple</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>373</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>1010</integer>
-        <key>Title</key><string>Book 21 - Workshed</string>
+        <key>Line</key><integer>1034</integer>
+        <key>Title</key><string>Book 19 - Lake at Ridge</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>374</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>1067</integer>
-        <key>Title</key><string>Book 22 - Hidden cave</string>
+        <key>Line</key><integer>1084</integer>
+        <key>Title</key><string>Book 20 - Lake Shore north of the park</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>375</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>1071</integer>
-        <key>Title</key><string>Book 23 - Portal room</string>
+        <key>Line</key><integer>1094</integer>
+        <key>Title</key><string>Book 21 - Workshed</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>376</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>1075</integer>
-        <key>Title</key><string>Book 24 - Lake shore west</string>
+        <key>Line</key><integer>1152</integer>
+        <key>Title</key><string>Book 22 - Hidden cave</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>377</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>1079</integer>
-        <key>Title</key><string>Book 25 - Horton Family House Kitchen</string>
+        <key>Line</key><integer>1156</integer>
+        <key>Title</key><string>Book 23 - Portal room</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>378</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>1108</integer>
-        <key>Title</key><string>Book 25.1 - Horton Family House Parlor</string>
+        <key>Line</key><integer>1160</integer>
+        <key>Title</key><string>Book 24 - Lake shore west</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>379</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>1159</integer>
-        <key>Title</key><string>Book 25.5 - Horton Family House Second Floor</string>
+        <key>Line</key><integer>1164</integer>
+        <key>Title</key><string>Book 25 - Horton Family House Kitchen</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>380</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>1169</integer>
-        <key>Title</key><string>Book 26 - Astral Tunnel</string>
+        <key>Line</key><integer>1193</integer>
+        <key>Title</key><string>Book 25.1 - Horton Family House Parlor</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>381</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>1175</integer>
-        <key>Title</key><string>Book 27 - Horton Graveyard</string>
+        <key>Line</key><integer>1244</integer>
+        <key>Title</key><string>Book 25.5 - Horton Family House Second Floor</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>382</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>1252</integer>
-        <key>Title</key><string>Book 28 - Fire Station 1</string>
+        <key>Line</key><integer>1254</integer>
+        <key>Title</key><string>Book 26 - Astral Tunnel</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>383</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>1262</integer>
-        <key>Title</key><string>Book 29 - Reading Room</string>
+        <key>Line</key><integer>1260</integer>
+        <key>Title</key><string>Book 27 - Horton Graveyard</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>384</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>1283</integer>
-        <key>Title</key><string>Book 30 - Reading Room Basement</string>
+        <key>Line</key><integer>1337</integer>
+        <key>Title</key><string>Book 28 - Fire Station 1</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>385</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>1314</integer>
-        <key>Title</key><string>Book 31 - Sewer Tunnel</string>
+        <key>Line</key><integer>1347</integer>
+        <key>Title</key><string>Book 29 - Reading Room</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>386</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>1328</integer>
-        <key>Title</key><string>Book 32 - Fresnel's Music</string>
+        <key>Line</key><integer>1368</integer>
+        <key>Title</key><string>Book 30 - Reading Room Basement</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>387</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>1334</integer>
-        <key>Title</key><string>Book 33 - Henry's Hot Skillet</string>
+        <key>Line</key><integer>1399</integer>
+        <key>Title</key><string>Book 31 - Sewer Tunnel</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>388</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>1346</integer>
-        <key>Title</key><string>Book 34 - Henry's Roof</string>
+        <key>Line</key><integer>1413</integer>
+        <key>Title</key><string>Book 32 - Fresnel's Music</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>389</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>1354</integer>
-        <key>Title</key><string>Book 35 - Rolle's Department Store</string>
+        <key>Line</key><integer>1419</integer>
+        <key>Title</key><string>Book 33 - Henry's Hot Skillet</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>390</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>1372</integer>
-        <key>Title</key><string>Book 36 - Public Gymnasium</string>
+        <key>Line</key><integer>1431</integer>
+        <key>Title</key><string>Book 34 - Henry's Roof</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>391</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>1493</integer>
-        <key>Title</key><string>Book 37 - Gym Basement</string>
+        <key>Line</key><integer>1439</integer>
+        <key>Title</key><string>Book 35 - Rolle's Department Store</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>392</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>1569</integer>
-        <key>Title</key><string>Volume 4 - Eerie Sounds</string>
-        <key>Level</key><integer>1</integer>
-        <key>Indentation</key><integer>1</integer>
+        <key>Line</key><integer>1457</integer>
+        <key>Title</key><string>Book 36 - Public Gymnasium</string>
+        <key>Level</key><integer>2</integer>
+        <key>Indentation</key><integer>2</integer>
     </dict>
     <key>393</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>1584</integer>
-        <key>Title</key><string>Volume 4.5 - The Mystic Compass in Enigma Lake</string>
-        <key>Level</key><integer>1</integer>
-        <key>Indentation</key><integer>1</integer>
+        <key>Line</key><integer>1578</integer>
+        <key>Title</key><string>Book 37 - Gym Basement</string>
+        <key>Level</key><integer>2</integer>
+        <key>Indentation</key><integer>2</integer>
     </dict>
     <key>394</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>1607</integer>
-        <key>Title</key><string>Volume 4.5 - The Lizard People</string>
+        <key>Line</key><integer>1654</integer>
+        <key>Title</key><string>Volume 4 - Eerie Sounds</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>395</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>1685</integer>
-        <key>Title</key><string>Volume 5 - Polish</string>
+        <key>Line</key><integer>1669</integer>
+        <key>Title</key><string>Volume 4.5 - The Mystic Compass in Enigma Lake</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>396</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>1695</integer>
-        <key>Title</key><string>Volume 6 - Not for Release</string>
+        <key>Line</key><integer>1692</integer>
+        <key>Title</key><string>Volume 4.5 - The Lizard People</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>397</key><dict>
+        <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
+        <key>Line</key><integer>1781</integer>
+        <key>Title</key><string>Volume 5 - Polish</string>
+        <key>Level</key><integer>1</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>398</key><dict>
+        <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
+        <key>Line</key><integer>1791</integer>
+        <key>Title</key><string>Volume 6 - Not for Release</string>
+        <key>Level</key><integer>1</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>399</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/i can dig it.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>I Can Dig It by Philip Riley begins here</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>398</key><dict>
+    <key>400</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/snarky remarks.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>Snarky Remarks by Philip Riley begins here</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>399</key><dict>
+    <key>401</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/overlook.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>Overlook by Philip Riley begins here</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>400</key><dict>
+    <key>402</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/overlook.i7x</string>
         <key>Line</key><integer>3</integer>
         <key>Title</key><string>Volume 1 - Definitions</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>401</key><dict>
+    <key>403</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/overlook.i7x</string>
         <key>Line</key><integer>11</integer>
         <key>Title</key><string>Volume 2 - Overlooking relations</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>402</key><dict>
+    <key>404</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/overlook.i7x</string>
         <key>Line</key><integer>80</integer>
         <key>Title</key><string>Volume 3 - Structures</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>403</key><dict>
+    <key>405</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/overlook.i7x</string>
         <key>Line</key><integer>96</integer>
         <key>Title</key><string>Volume 4 - Pretty names</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>404</key><dict>
+    <key>406</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/nathanael nerode/gender options.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>Version 3/210331 of Gender Options by Nathanael Nerode begins here</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>405</key><dict>
+    <key>407</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/nathanael nerode/gender options.i7x</string>
         <key>Line</key><integer>11</integer>
         <key>Title</key><string>Volume 1 - Enhanced Gender and Number Model</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>406</key><dict>
+    <key>408</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/nathanael nerode/gender options.i7x</string>
         <key>Line</key><integer>15</integer>
         <key>Title</key><string>Chapter 1 - Replace Standard Rules Elements Always</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>407</key><dict>
+    <key>409</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/nathanael nerode/gender options.i7x</string>
         <key>Line</key><integer>17</integer>
         <key>Title</key><string>Section SR1/11 - People and things with gender (in place of Section SR1/11 - People in Standard Rules by Graham Nelson)</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
-    <key>408</key><dict>
+    <key>410</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/nathanael nerode/gender options.i7x</string>
         <key>Line</key><integer>114</integer>
         <key>Title</key><string>Section SR1/11 C - Assumptions about people</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
-    <key>409</key><dict>
+    <key>411</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/nathanael nerode/gender options.i7x</string>
         <key>Line</key><integer>125</integer>
         <key>Title</key><string>Section SR1/12 - Animals, men and women revised (in place of Section SR1/12 - Animals, men and women in Standard Rules by Graham Nelson)</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
-    <key>410</key><dict>
+    <key>412</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/nathanael nerode/gender options.i7x</string>
         <key>Line</key><integer>161</integer>
         <key>Title</key><string>Section SR1/16 A - Inform 6 equivalent for male</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
-    <key>411</key><dict>
+    <key>413</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/nathanael nerode/gender options.i7x</string>
         <key>Line</key><integer>166</integer>
         <key>Title</key><string>Chapter 2A - Yourself Description - Standard</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>412</key><dict>
+    <key>414</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/nathanael nerode/gender options.i7x</string>
         <key>Line</key><integer>168</integer>
         <key>Title</key><string>Section SR1/11 A - Yourself Description</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
-    <key>413</key><dict>
+    <key>415</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/nathanael nerode/gender options.i7x</string>
         <key>Line</key><integer>174</integer>
         <key>Title</key><string>Chapter 2B - Yourself Description (for use with Neutral Standard Responses by Nathanael Nerode)</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>414</key><dict>
+    <key>416</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/nathanael nerode/gender options.i7x</string>
         <key>Line</key><integer>178</integer>
         <key>Title</key><string>Section SR1/11 A - Deleted Yourself Description (in place of Section SR1/11 A - Yourself Description in Gender Options by Nathanael Nerode)</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
-    <key>415</key><dict>
+    <key>417</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/nathanael nerode/gender options.i7x</string>
         <key>Line</key><integer>183</integer>
         <key>Title</key><string>Volume 2 - Parser Modifications for Pronoun Handling</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>416</key><dict>
+    <key>418</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/nathanael nerode/gender options.i7x</string>
         <key>Line</key><integer>187</integer>
         <key>Title</key><string>Part 1 - Zed's Stuff</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>417</key><dict>
+    <key>419</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/nathanael nerode/gender options.i7x</string>
         <key>Line</key><integer>345</integer>
         <key>Title</key><string>Part 1 - Universal Fix</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>418</key><dict>
+    <key>420</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/nathanael nerode/gender options.i7x</string>
         <key>Line</key><integer>347</integer>
         <key>Title</key><string>Chapter 1 - Fix Pronoun Bitmask Table</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
-    <key>419</key><dict>
+    <key>421</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/nathanael nerode/gender options.i7x</string>
         <key>Line</key><integer>374</integer>
         <key>Title</key><string>Part 2A - Core i6 Parser Fix (for use without Original Parser by Ron Newcomb)</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>420</key><dict>
+    <key>422</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/nathanael nerode/gender options.i7x</string>
         <key>Line</key><integer>376</integer>
         <key>Title</key><string>Chapter 1 - Revisions Not Made</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
-    <key>421</key><dict>
+    <key>423</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/nathanael nerode/gender options.i7x</string>
         <key>Line</key><integer>404</integer>
         <key>Title</key><string>Chapter 2 - Pronoun Handling Revised</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
-    <key>422</key><dict>
+    <key>424</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/nathanael nerode/gender options.i7x</string>
         <key>Line</key><integer>490</integer>
         <key>Title</key><string>Part 2B - Original Parser Fix (for use with Original Parser by Ron Newcomb)</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>423</key><dict>
+    <key>425</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/nathanael nerode/gender options.i7x</string>
         <key>Line</key><integer>492</integer>
         <key>Title</key><string>Chapter 1 - Pronoun Handling Revised (in place of Chapter - Pronoun Handling in Original Parser by Ron Newcomb)</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
-    <key>424</key><dict>
+    <key>426</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/nathanael nerode/gender options.i7x</string>
         <key>Line</key><integer>605</integer>
         <key>Title</key><string>Chapter 2 - English Pronoun Names For I7</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
-    <key>425</key><dict>
+    <key>427</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/nathanael nerode/gender options.i7x</string>
         <key>Line</key><integer>614</integer>
         <key>Title</key><string>Volume 3 - English Language (for use with English Language by Graham Nelson)</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>426</key><dict>
+    <key>428</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/nathanael nerode/gender options.i7x</string>
         <key>Line</key><integer>618</integer>
         <key>Title</key><string>Section 1 - Preferred Gender</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>427</key><dict>
+    <key>429</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/nathanael nerode/gender options.i7x</string>
         <key>Line</key><integer>646</integer>
         <key>Title</key><string>Section 2 - Viewpoint pronouns (in place of Section 2 - Saying pronouns in English Language by Graham Nelson)</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>428</key><dict>
+    <key>430</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/nathanael nerode/gender options.i7x</string>
         <key>Line</key><integer>929</integer>
         <key>Title</key><string>Section 3 - Further pronouns (in place of Section 3 - Further pronouns in English Language by Graham Nelson)</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>429</key><dict>
+    <key>431</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/nathanael nerode/gender options.i7x</string>
         <key>Line</key><integer>1192</integer>
         <key>Title</key><string>Volume 5 - Compatibility with Plurality (for use with Plurality by Emily Short)</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>430</key><dict>
+    <key>432</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/nathanael nerode/gender options.i7x</string>
         <key>Line</key><integer>1194</integer>
         <key>Title</key><string>Section - Deleted (in place of Section 4 - Enumeration in Plurality by Emily Short)</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>431</key><dict>
+    <key>433</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/nathanael nerode/gender options.i7x</string>
         <key>Line</key><integer>1198</integer>
         <key>Title</key><string>Section - Backward Compatibility for Plurality</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>432</key><dict>
+    <key>434</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/make test.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>Version 1 of Make Test by Philip Riley begins here</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>433</key><dict>
+    <key>435</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/bosh tests.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>BOSH Tests by Philip Riley begins here</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>434</key><dict>
+    <key>436</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/bosh tests.i7x</string>
         <key>Line</key><integer>3</integer>
         <key>Title</key><string>Chapter 1 - Playtesting - Not For Release</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>435</key><dict>
+    <key>437</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/hearing.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>Hearing by Philip Riley begins here</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>436</key><dict>
+    <key>438</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/philip riley/pbr common.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>Version 2 of PBR Common by Philip Riley begins here</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>437</key><dict>
+    <key>439</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/walls.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>Version 1 of Walls by Philip Riley begins here</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>438</key><dict>
+    <key>440</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/floors.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>Floors by Philip Riley begins here</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>439</key><dict>
+    <key>441</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/ceilings.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>Version 1 of Ceilings by Philip Riley begins here</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>440</key><dict>
+    <key>442</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/can't go that way.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>Version 1/230318 of Can't Go That Way by Philip Riley begins here</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>441</key><dict>
+    <key>443</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/can't go that way.i7x</string>
         <key>Line</key><integer>53</integer>
         <key>Title</key><string>Section 1 - floored (for use without Floors by Philip Riley)</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>442</key><dict>
+    <key>444</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/can't take that.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>Version 1/230318 of Can't Take That by Philip Riley begins here</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>443</key><dict>
+    <key>445</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/scheduled people.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>Scheduled People by Philip Riley begins here</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>444</key><dict>
+    <key>446</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/scheduled people.i7x</string>
         <key>Line</key><integer>5</integer>
         <key>Title</key><string>Book 1 - Schedules</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>445</key><dict>
+    <key>447</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/scheduled people.i7x</string>
         <key>Line</key><integer>29</integer>
         <key>Title</key><string>Book 2 - Adaptive Names</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>446</key><dict>
+    <key>448</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/emily short/complex listing.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>Version 9 of Complex Listing by Emily Short begins here</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>447</key><dict>
+    <key>449</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/eric eve/exit lister.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>Version 11 of Exit Lister by Eric Eve begins here</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>448</key><dict>
+    <key>450</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/eric eve/exit lister.i7x</string>
         <key>Line</key><integer>5</integer>
         <key>Title</key><string>Chapter 1 - Exit Lister Includes</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>449</key><dict>
+    <key>451</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/eric eve/exit lister.i7x</string>
         <key>Line</key><integer>9</integer>
         <key>Title</key><string>Chapter 2 - Exit Lister Setup</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>450</key><dict>
+    <key>452</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/eric eve/exit lister.i7x</string>
         <key>Line</key><integer>11</integer>
         <key>Title</key><string>Section 1 - Apparent</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>451</key><dict>
+    <key>453</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/eric eve/exit lister.i7x</string>
         <key>Line</key><integer>37</integer>
         <key>Title</key><string>Section 2 - Dark Stuff</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>452</key><dict>
+    <key>454</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/eric eve/exit lister.i7x</string>
         <key>Line</key><integer>57</integer>
         <key>Title</key><string>Chapter 3 - Exit Lister Tables</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>453</key><dict>
+    <key>455</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/eric eve/exit lister.i7x</string>
         <key>Line</key><integer>74</integer>
         <key>Title</key><string>Chapter 4 - Exit Lister Rules</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>454</key><dict>
+    <key>456</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/eric eve/exit lister.i7x</string>
         <key>Line</key><integer>118</integer>
         <key>Title</key><string>Chapter 5 - Exit Lister Values</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>455</key><dict>
+    <key>457</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/eric eve/exit lister.i7x</string>
         <key>Line</key><integer>132</integer>
         <key>Title</key><string>Chapter 6 - Exit Lister Actions</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>456</key><dict>
+    <key>458</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/eric eve/exit lister.i7x</string>
         <key>Line</key><integer>134</integer>
         <key>Title</key><string>Section 1 - ExitStarting and ExitStopping</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>457</key><dict>
+    <key>459</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/eric eve/exit lister.i7x</string>
         <key>Line</key><integer>159</integer>
         <key>Title</key><string>Section 2- ExitListing</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>458</key><dict>
+    <key>460</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/eric eve/exit lister.i7x</string>
         <key>Line</key><integer>222</integer>
         <key>Title</key><string>Chapter 7 - Exit Lister Indicating Unvisited</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>459</key><dict>
+    <key>461</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/eric eve/exit lister.i7x</string>
         <key>Line</key><integer>258</integer>
         <key>Title</key><string>Section 7G (for Glulx Only)</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>460</key><dict>
+    <key>462</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/eric eve/exit lister.i7x</string>
         <key>Line</key><integer>277</integer>
         <key>Title</key><string>Section 7Z (for Z-machine only)</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>461</key><dict>
+    <key>463</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/options paragraph.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>Options Paragraph by Philip Riley begins here</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>462</key><dict>
+    <key>464</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/options paragraph.i7x</string>
         <key>Line</key><integer>26</integer>
         <key>Title</key><string>Section 1 - (For use with Gender Options by Nathanael Nerode)</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>463</key><dict>
+    <key>465</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/options paragraph.i7x</string>
         <key>Line</key><integer>32</integer>
         <key>Title</key><string>Section 2 - (For use without Gender Options by Nathanael Nerode)</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>464</key><dict>
+    <key>466</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/emily short/glulx entry points.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>Version 10/200602 of Glulx Entry Points (for Glulx only) by Emily Short begins here</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>465</key><dict>
+    <key>467</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/emily short/glulx entry points.i7x</string>
         <key>Line</key><integer>13</integer>
         <key>Title</key><string>Section - Use option</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>466</key><dict>
+    <key>468</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/emily short/glulx entry points.i7x</string>
         <key>Line</key><integer>25</integer>
         <key>Title</key><string>Section - Global variables</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>467</key><dict>
+    <key>469</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/emily short/glulx entry points.i7x</string>
         <key>Line</key><integer>33</integer>
         <key>Title</key><string>Section - Wrappers for event structure, return values, etc</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>468</key><dict>
+    <key>470</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/emily short/glulx entry points.i7x</string>
         <key>Line</key><integer>60</integer>
         <key>Title</key><string>Section - Internal-use wrappers - unindexed</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>469</key><dict>
+    <key>471</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/emily short/glulx entry points.i7x</string>
         <key>Line</key><integer>74</integer>
         <key>Title</key><string>Section - Event Handling</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>470</key><dict>
+    <key>472</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/emily short/glulx entry points.i7x</string>
         <key>Line</key><integer>97</integer>
         <key>Title</key><string>Section - HandleGlkEvent routine</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>471</key><dict>
+    <key>473</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/emily short/glulx entry points.i7x</string>
         <key>Line</key><integer>112</integer>
         <key>Title</key><string>Section - Useful function wrappers</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>472</key><dict>
+    <key>474</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/emily short/glulx entry points.i7x</string>
         <key>Line</key><integer>122</integer>
         <key>Title</key><string>Section - Legacy rulebooks</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>473</key><dict>
+    <key>475</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/emily short/glulx entry points.i7x</string>
         <key>Line</key><integer>163</integer>
         <key>Title</key><string>Section - Debounce arrange events - unindexed</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>474</key><dict>
+    <key>476</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/emily short/glulx entry points.i7x</string>
         <key>Line</key><integer>218</integer>
         <key>Title</key><string>Section - Command-counting rules</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>475</key><dict>
+    <key>477</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/emily short/glulx entry points.i7x</string>
         <key>Line</key><integer>227</integer>
         <key>Title</key><string>Section - Input-cancelling rules</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>476</key><dict>
+    <key>478</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/emily short/glulx entry points.i7x</string>
         <key>Line</key><integer>242</integer>
         <key>Title</key><string>Section - Command showing rules</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>477</key><dict>
+    <key>479</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/emily short/glulx entry points.i7x</string>
         <key>Line</key><integer>255</integer>
         <key>Title</key><string>Section - Command pasting rules</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>478</key><dict>
+    <key>480</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/door varieties.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>Door Varieties by Philip Riley begins here</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>479</key><dict>
+    <key>481</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/door varieties.i7x</string>
         <key>Line</key><integer>5</integer>
         <key>Title</key><string>Volume 1 - Pushbar Doors</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>480</key><dict>
+    <key>482</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/door varieties.i7x</string>
         <key>Line</key><integer>14</integer>
         <key>Title</key><string>Volume 2 - Shop Doors</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>481</key><dict>
+    <key>483</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/door varieties.i7x</string>
         <key>Line</key><integer>20</integer>
         <key>Title</key><string>Volume 3 - Swipe Doors</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>482</key><dict>
+    <key>484</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/gavin lambert/secret doors.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>Secret Doors by Gavin Lambert begins here</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>483</key><dict>
+    <key>485</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/plugging.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>Plugging by Philip Riley begins here</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>484</key><dict>
+    <key>486</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/plugging.i7x</string>
         <key>Line</key><integer>17</integer>
         <key>Title</key><string>Book - plugging rules</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>485</key><dict>
+    <key>487</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/plugging.i7x</string>
         <key>Line</key><integer>60</integer>
         <key>Title</key><string>Book - unplugging rules</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>486</key><dict>
+    <key>488</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/plugging.i7x</string>
         <key>Line</key><integer>81</integer>
         <key>Title</key><string>Book - Default movement rules</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>487</key><dict>
+    <key>489</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/plugging.i7x</string>
         <key>Line</key><integer>113</integer>
         <key>Title</key><string>Book - Appearance in inventory</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>488</key><dict>
+    <key>490</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/philip riley/playtest.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>Playtest by Philip Riley begins here</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>489</key><dict>
+    <key>491</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/philip riley/playtest.i7x</string>
         <key>Line</key><integer>154</integer>
         <key>Title</key><string>Part 2 - Additional Text Capture - Not for release (for Glulx Only)</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>490</key><dict>
+    <key>492</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/philip riley/playtest.i7x</string>
         <key>Line</key><integer>158</integer>
         <key>Title</key><string>Section 1 - Define a Use Option</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>491</key><dict>
+    <key>493</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/philip riley/playtest.i7x</string>
         <key>Line</key><integer>162</integer>
         <key>Title</key><string>Section 2 - Define Phrases</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>492</key><dict>
+    <key>494</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/philip riley/playtest.i7x</string>
         <key>Line</key><integer>173</integer>
         <key>Title</key><string>Section 3 - Implementation</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>493</key><dict>
+    <key>495</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/dannii willis/glulx definitions.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>Version 1/160919 of Glulx Definitions (for Glulx only) by Dannii Willis begins here</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>494</key><dict>
+    <key>496</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/dannii willis/glulx definitions.i7x</string>
         <key>Line</key><integer>9</integer>
         <key>Title</key><string>Chapter - Testing interpreter features (gestalts)</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>495</key><dict>
+    <key>497</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/dannii willis/glulx definitions.i7x</string>
         <key>Line</key><integer>122</integer>
         <key>Title</key><string>Chapter - Glulx and Glk kinds</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>496</key><dict>
+    <key>498</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/dannii willis/glulx definitions.i7x</string>
         <key>Line</key><integer>124</integer>
         <key>Title</key><string>Section - Events</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>497</key><dict>
+    <key>499</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/dannii willis/glk object recovery.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>Version 1/171025 of Glk Object Recovery (for Glulx only) by Dannii Willis begins here</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>498</key><dict>
+    <key>500</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/dannii willis/glk object recovery.i7x</string>
         <key>Line</key><integer>11</integer>
         <key>Title</key><string>Section - Glk object recovery</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>499</key><dict>
+    <key>501</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/dannii willis/glk object recovery.i7x</string>
         <key>Line</key><integer>26</integer>
         <key>Title</key><string>Section - GGRecoverObjects</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>500</key><dict>
+    <key>502</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/dannii willis/glk object recovery.i7x</string>
         <key>Line</key><integer>79</integer>
         <key>Title</key><string>Section - The built in object recovery rules</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>501</key><dict>
+    <key>503</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/dannii willis/glk events.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>Version 2/200807 of Glk Events (for Glulx only) by Dannii Willis begins here</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>502</key><dict>
+    <key>504</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/dannii willis/glk events.i7x</string>
         <key>Line</key><integer>11</integer>
         <key>Title</key><string>Chapter - Basic event handling</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>503</key><dict>
+    <key>505</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/dannii willis/glk events.i7x</string>
         <key>Line</key><integer>13</integer>
         <key>Title</key><string>Section - Event result variables</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>504</key><dict>
+    <key>506</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/dannii willis/glk events.i7x</string>
         <key>Line</key><integer>33</integer>
         <key>Title</key><string>Section - The glulx input handling rules</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>505</key><dict>
+    <key>507</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/dannii willis/glk events.i7x</string>
         <key>Line</key><integer>39</integer>
         <key>Title</key><string>Section - Intercepting glk_select ()</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>506</key><dict>
+    <key>508</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/two-sided doors.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>Two-Sided Doors by Philip Riley begins here</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>507</key><dict>
+    <key>509</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/two-sided doors.i7x</string>
         <key>Line</key><integer>7</integer>
         <key>Title</key><string>Volume 1 - Definitions</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>508</key><dict>
+    <key>510</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/two-sided doors.i7x</string>
         <key>Line</key><integer>59</integer>
         <key>Title</key><string>Volume 2 - Descriptions</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>509</key><dict>
+    <key>511</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/two-sided doors.i7x</string>
         <key>Line</key><integer>69</integer>
         <key>Title</key><string>Volume 3 - Rules altered from the Standard Rules</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>510</key><dict>
+    <key>512</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/two-sided doors.i7x</string>
         <key>Line</key><integer>71</integer>
         <key>Title</key><string>Book 1 - Examining</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>511</key><dict>
+    <key>513</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/two-sided doors.i7x</string>
         <key>Line</key><integer>90</integer>
         <key>Title</key><string>Book 2 - Locking</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>512</key><dict>
+    <key>514</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/two-sided doors.i7x</string>
         <key>Line</key><integer>126</integer>
         <key>Title</key><string>Book 3 - Unlocking</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>513</key><dict>
+    <key>515</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/two-sided doors.i7x</string>
         <key>Line</key><integer>128</integer>
         <key>Title</key><string>Section 1 - Message Rules</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
-    <key>514</key><dict>
+    <key>516</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/two-sided doors.i7x</string>
         <key>Line</key><integer>147</integer>
         <key>Title</key><string>Section 2 - Action Rules</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
-    <key>515</key><dict>
+    <key>517</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/two-sided doors.i7x</string>
         <key>Line</key><integer>183</integer>
         <key>Title</key><string>Book 4 - Opening</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>516</key><dict>
+    <key>518</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/two-sided doors.i7x</string>
         <key>Line</key><integer>185</integer>
         <key>Title</key><string>Section 1 - Message Rules</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
-    <key>517</key><dict>
+    <key>519</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/two-sided doors.i7x</string>
         <key>Line</key><integer>187</integer>
         <key>Title</key><string>Section 2 - Action Rules</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
-    <key>518</key><dict>
+    <key>520</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/two-sided doors.i7x</string>
         <key>Line</key><integer>207</integer>
         <key>Title</key><string>Book 5 - Closing</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>519</key><dict>
+    <key>521</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/two-sided doors.i7x</string>
         <key>Line</key><integer>224</integer>
         <key>Title</key><string>Volume 4 - Locking</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>520</key><dict>
+    <key>522</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/two-sided doors.i7x</string>
         <key>Line</key><integer>244</integer>
         <key>Title</key><string>Book 1 - Auto-locking</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>521</key><dict>
+    <key>523</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/two-sided doors.i7x</string>
         <key>Line</key><integer>270</integer>
         <key>Title</key><string>Volume 5 - Closing</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>522</key><dict>
+    <key>524</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/two-sided doors.i7x</string>
         <key>Line</key><integer>279</integer>
         <key>Title</key><string>Book 1 - Auto-closing</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>523</key><dict>
+    <key>525</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/two-sided doors.i7x</string>
         <key>Line</key><integer>296</integer>
         <key>Title</key><string>Volume 6 - Initialization Phrases</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>524</key><dict>
+    <key>526</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/peter orme/unit testing.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>Version 2/150205 of Unit Testing by Peter Orme begins here</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>525</key><dict>
+    <key>527</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/peter orme/unit testing.i7x</string>
         <key>Line</key><integer>7</integer>
         <key>Title</key><string>Chapter 1 - Asserter</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>526</key><dict>
+    <key>528</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/peter orme/unit testing.i7x</string>
         <key>Line</key><integer>9</integer>
         <key>Title</key><string>Section 1 - The Asserter proper</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>527</key><dict>
+    <key>529</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/peter orme/unit testing.i7x</string>
         <key>Line</key><integer>19</integer>
         <key>Title</key><string>Section 2 - Stopping abruptly (for use without Basic Screen Effects by Emily Short)</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>528</key><dict>
+    <key>530</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/peter orme/unit testing.i7x</string>
         <key>Line</key><integer>24</integer>
         <key>Title</key><string>Chapter 2 - Asserter methods</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>529</key><dict>
+    <key>531</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/peter orme/unit testing.i7x</string>
         <key>Line</key><integer>26</integer>
         <key>Title</key><string>Section 1 - Asserting A is B</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>530</key><dict>
+    <key>532</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/peter orme/unit testing.i7x</string>
         <key>Line</key><integer>46</integer>
         <key>Title</key><string>Section 2 - Asserting A is not B</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>531</key><dict>
+    <key>533</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/peter orme/unit testing.i7x</string>
         <key>Line</key><integer>63</integer>
         <key>Title</key><string>Section 3 - Asserting some value is greater than some other value</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>532</key><dict>
+    <key>534</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/peter orme/unit testing.i7x</string>
         <key>Line</key><integer>83</integer>
         <key>Title</key><string>Section 4 - Asserting some text is empty</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>533</key><dict>
+    <key>535</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/peter orme/unit testing.i7x</string>
         <key>Line</key><integer>113</integer>
         <key>Title</key><string>Chapter 3 - Other things the asserter does</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>534</key><dict>
+    <key>536</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/peter orme/unit testing.i7x</string>
         <key>Line</key><integer>115</integer>
         <key>Title</key><string>Section 1 - halting execution</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>535</key><dict>
+    <key>537</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/peter orme/unit testing.i7x</string>
         <key>Line</key><integer>123</integer>
         <key>Title</key><string>Section 2 - Recording a succesful test</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>536</key><dict>
+    <key>538</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/peter orme/unit testing.i7x</string>
         <key>Line</key><integer>133</integer>
         <key>Title</key><string>Section 3 - Recording a failed test</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>537</key><dict>
+    <key>539</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/peter orme/unit testing.i7x</string>
         <key>Line</key><integer>144</integer>
         <key>Title</key><string>Section 4 - Deciding whether the asserter is happy</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>538</key><dict>
+    <key>540</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/peter orme/unit testing.i7x</string>
         <key>Line</key><integer>153</integer>
         <key>Title</key><string>Section 5 - Counting the total</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>539</key><dict>
+    <key>541</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/peter orme/unit testing.i7x</string>
         <key>Line</key><integer>162</integer>
         <key>Title</key><string>Section 6 - Resetting the asserter</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>540</key><dict>
+    <key>542</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/peter orme/unit testing.i7x</string>
         <key>Line</key><integer>171</integer>
         <key>Title</key><string>Section 7 - Reporting asserts</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>541</key><dict>
+    <key>543</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/peter orme/developer framework.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>Version 1/150130 of Developer Framework by Peter Orme begins here</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>542</key><dict>
+    <key>544</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/peter orme/developer framework.i7x</string>
         <key>Line</key><integer>5</integer>
         <key>Title</key><string>Chapter 1 - Definitions</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>543</key><dict>
+    <key>545</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/peter orme/developer framework.i7x</string>
         <key>Line</key><integer>7</integer>
         <key>Title</key><string>Section 1 - Halting behavior</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>544</key><dict>
+    <key>546</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/peter orme/developer framework.i7x</string>
         <key>Line</key><integer>15</integer>
         <key>Title</key><string>Section 2 - Verbosity</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>545</key><dict>
+    <key>547</key><dict>
         <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/peter orme/developer framework.i7x</string>
         <key>Line</key><integer>23</integer>
         <key>Title</key><string>Section 3 - Severity</string>

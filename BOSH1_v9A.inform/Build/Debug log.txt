@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 22050 words long.
+I've now read your source text, which is 22107 words long.
 
 
 -----------------------------------------------------
@@ -44,7 +44,7 @@ I've also read Can't Touch This by Philip Riley, which is 146 words long.
 I've also read Compound Details by Philip Riley, which is 179 words long.
 I've also read Polish by Philip Riley, which is 86 words long.
 I've also read Hello by Philip Riley, which is 109 words long.
-I've also read BOSH Polish by Philip Riley, which is 4530 words long.
+I've also read BOSH Polish by Philip Riley, which is 4567 words long.
 I've also read Choices by Philip Riley, which is 408 words long.
 I've also read New Light by Philip Riley, which is 333 words long.
 I've also read Early Declarations by Philip Riley, which is 23 words long.
@@ -57,9 +57,9 @@ I've also read BOSH Facts by Philip Riley, which is 94 words long.
 I've also read Image Strip by Philip Riley, which is 2077 words long.
 I've also read Swamp Park by Philip Riley, which is 5749 words long.
 I've also read Margaret by Philip Riley, which is 1851 words long.
-I've also read Enigma Lake by Philip Riley, which is 17860 words long.
+I've also read Enigma Lake by Philip Riley, which is 18663 words long.
 I've also read I Can Dig It by Philip Riley, which is 54 words long.
-I've also read Snarky Remarks by Philip Riley, which is 173 words long.
+I've also read Snarky Remarks by Philip Riley, which is 200 words long.
 I've also read Overlook by Philip Riley, which is 761 words long.
 I've also read Gender Options by Nathanael Nerode, which is 7679 words long.
 I've also read Make Test by Philip Riley, which is 281 words long.
@@ -145,8 +145,6 @@ Regional: CONSTANT_VNT'hyperspace'-region(I240_hyperspace)(I145'hyperspace')
 Regional: CONSTANT_VNT'field office area'-region(I255_field_office_area)(I160'field office area')
  == region
 Regional: CONSTANT_VNT'field office area'-region(I255_field_office_area)(I160'field office area')
- == region
-Regional: CONSTANT_VNT'elr'-region(I470_elr)(I360'elr')
  == region
 
 
@@ -251,9 +249,9 @@ Phase XII ... Code generation
                                                             Fail: list of numbers (~) number = nothing
                                             Fail: nothing (~) real number = nothing
                                             Fail: list of numbers (~) real number = nothing
-        Regional: CONSTANT_VNT'bosh hq'-region(I749_bosh_hq)(I635'bosh hq')
+        Regional: CONSTANT_VNT'bosh hq'-region(I754_bosh_hq)(I640'bosh hq')
          == region
-        Regional: CONSTANT_VNT'bosh hq'-region(I749_bosh_hq)(I635'bosh hq')
+        Regional: CONSTANT_VNT'bosh hq'-region(I754_bosh_hq)(I640'bosh hq')
          == region
         Regional: CONSTANT_VNT'laundromat-region'-region(I404_laundromat_region)(I297'laundromat-region')
          == region
@@ -309,8 +307,8 @@ Providing for a total heap of 32768, given requirement of 16400
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 252 files written as streams.
-CPU time: 889 centiseconds
+Total of 255 files written as streams.
+CPU time: 885 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

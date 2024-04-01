@@ -26,9 +26,10 @@ After examining a thing when the noun is not snarked:
 	follow the snarking rules for the noun;
 	continue the action;
 
-After printing the locale description when the location is not snarked:
+For printing the locale description when the location is not snarked (this is the snarky locale description rule):
 	follow the snarking rules for the location;
 	continue the action;
-	
+
+The snarky locale description rule is listed before the new you-can-also-see rule in the for printing the locale description rulebook.
 
 Snarky Remarks ends here.

@@ -389,6 +389,19 @@ The parser clarification internal rule response (E) is "What do you want [us] to
 
 the block kissing rule response (A) is "[We] might not like that."
 
+Flipping is an action applying to one thing. Understand "flip [something]" as flipping.
+
+Check flipping something when the noun is not a device:
+	say "That doesn't seem to be something [we] can flip.";
+	rule fails;
+
+Carry out flipping a device:
+	if the noun is switched on:
+		try switching off the noun;
+	otherwise:
+		try switching on the noun;
+
+
 Book 5 - Automatic greeting
 
 After going to a room:

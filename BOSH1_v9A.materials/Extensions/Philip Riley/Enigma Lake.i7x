@@ -193,7 +193,7 @@ The fire facade is a building facade. It is in Solvay Road 100 block. It is priv
 Instead of entering the fire facade:
 	say "The garage door is locked up tight." instead;
 
-The snarky remark of the fire facade is "I wonder if they have a fireman's pole."
+The snarky remark of the fire facade is "Their unemployment rate is about to skyrocket."
 
 Book 7 - Solvay Road leading out of town
 
@@ -249,7 +249,7 @@ Rule for writing a paragraph about the mangy cat:
 	  
 The snarky remark of the mangy cat is "I don't care how mangy a cat is, I'm going to pet it."
 	
-Petting is an action applying to one thing. Understand "pet [something]" as petting. Understand "pat [something]" as petting.
+Petting is an action applying to one thing. Understand "pet [something]" as petting. Understand the command "pat", "stroke", "scratch" as "pet".
 
 Check petting something that is not the mangy cat:
 	say "That's just silly." instead;
@@ -365,13 +365,85 @@ The snarky remark of Radio Station WGXC is "I wonder if they have any old record
 
 Book 12 - Radio Station Roof
 
-The radio station roof is a leavable room. It is above Radio Station WGXC. It has egress down. It is in ELR. "[We] can see the obelisk in the park clearly from here. The broadcast tower rises many feet above [us]. A metal cabinet is attached to the foot of the tower[if the metal cabinet is locked], held shut by a chain and padlock[otherwise], hanging open[end if].[if mounted-shiny-resonator] [A shiny astral resonator] is mounted on a platform in the tower, and a beam of light shoots out of it, striking the obelisk in the park. The crystal is glowing [crystal glow][end if]."
+The radio station roof is a leavable room. It is above Radio Station WGXC. It has egress down. It is in ELR. "[We] can see the obelisk in the park clearly from here. The broadcast tower[if the power switch is switched on], humming loudly,[end if] rises many feet above [us]. A metal cabinet is attached to the foot of the tower[if the metal cabinet is locked], held shut by a chain and padlock[otherwise if the metal cabinet is closed], closed[otherwise], hanging open. Inside it is a power switch[end if].[if mounted-shiny-resonator] [A shiny astral resonator] is mounted on a platform in the tower, and a beam of light shoots out of it, striking the obelisk in the park. The crystal is glowing [crystal glow].[end if]".
 The preposition is "on".
 The snarky remark of the radio station roof is "I'm not afraid of heights. I'm afraid of falling from heights."
 
-The metal cabinet is a closed, locked, openable, scenery container in the radio station roof. "The metal cabinet is attached to the foot of the broadcast tower[if the metal cabinet is locked], held shut by a chain and padlock[otherwise], hanging open[end if]." 
+The metal cabinet is a closed, locked, openable, scenery container in the radio station roof. "The metal cabinet is attached to the foot of the broadcast tower[if the metal cabinet is locked], held shut by a chain and padlock[otherwise if the metal cabinet is closed], closed[otherwise], hanging open. Inside it is a power switch[end if]." 
 
-The power switch is a scenery device in the metal cabinet. "The power switch is set to [if the power switch is switched on]on[otherwise]off[end if]."
+Report opening the metal cabinet:
+	say "Faraji opens the metal cabinet, revealing a power switch inside. It is set to [if the power switch is switched on]on[otherwise]off[end if].";
+	stop the action;
+
+Chapter 1 - The padlock and chain
+
+The padlock is scenery in radio station roof. The description is "[if the metal cabinet is locked]A padlock secures the cabinet shut[otherwise]A padlock, attached to nothing[end if]." Understand "lock", "pad lock" as the padlock.
+
+The steel chain is scenery in radio station roof. The description is "[if the metal cabinet is locked]A steel chain secures the cabinet shut[otherwise]A steel chain, attached to nothing[end if]." Understand "metal chain" as the steel chain.
+
+The broken chain is a thing. The description is "A broken steel chain." Understand "steel/metal" as the broken chain.
+
+The broken lock is a thing. The description is "A broken padlock." Understand "padlock", "pad lock" as the broken lock.
+
+Check cutting the steel chain:
+	say "The chain is too thick to cut with [our] bare hands." instead;
+
+Cutting it with is an action applying to two things. Understand "cut [something] with/using [something]", "break [something] with/using [something]", "snap [something] with/using [something]" as cutting it with.
+
+Opening it with is an action applying to two things. Understand "open [metal cabinet] with/using [bolt cutters]", "unlock [metal cabinet] with/using [bolt cutters]", "open [padlock] with/using [bolt cutters]", "unlock [padlock] with/using [bolt cutters]", "open [steel chain] with/using [bolt cutters]", "unlock [steel chain] with/using [bolt cutters]" as opening it with.
+
+Check opening something with the bolt cutters:
+	if the noun is the metal cabinet:
+		try cutting the padlock with the bolt cutters instead;
+	try cutting the noun with the bolt cutters instead;
+
+Check cutting something with something when the noun is not the steel chain and the noun is not the padlock:
+	say "That wouldn't be very productive." instead;
+
+Check cutting the steel chain with something when the second noun is not the bolt cutters:
+	say "That wouldn't be very productive." instead;
+
+Check cutting the padlock with something when the second noun is not the bolt cutters:
+	say "That wouldn't be very productive." instead;
+
+Carry out cutting the steel chain with the bolt cutters:
+	now the metal cabinet is unlocked;
+	now the player carries the broken chain;
+	now the steel chain is nowhere;
+	now the player carries the padlock;
+	now the padlock is not scenery;
+	now the padlock is not fixed in place;
+
+Report cutting the steel chain with the bolt cutters:
+	say "The bolt cutters make short work of the steel chain.";
+
+Carry out cutting the padlock with the bolt cutters:
+	now the metal cabinet is unlocked;
+	now the player carries the broken lock;
+	now the padlock is nowhere;
+	now the player carries the steel chain;
+	now the steel chain is not scenery;
+	now the steel chain is not fixed in place;
+
+Report cutting the padlock with the bolt cutters:
+	say "The bolt cutters make short work of the padlock.";
+
+Chapter 2 - The rest of it
+
+The power switch is a scenery device in the metal cabinet. ["The power switch is set to [if the power switch is switched on]on[otherwise]off[end if]."]
+The snarky remark of the power switch is "I wonder what it does."
+
+After switching on the power switch:
+	if mounted-shiny-resonator:
+		say "Faraji switches the power switch on. The broadcast tower begins to hum loudly, and a beam of light shoots out of [the shiny astral resonator], striking the obelisk in the park. The crystal is glowing [crystal glow].";
+	otherwise:
+		say "Faraji switches the power switch on. The broadcast tower begins to hum loudly.";
+
+After switching off the power switch:
+	if mounted-shiny-resonator:
+		say "Faraji switches the power switch off. The broadcast tower's hum dies away, and the beam of light fades from the obelisk. [if the beam count is 0]The crystal is no longer glowing[otherwise]The crystal is still glowing [crystal glow][end if].";	
+	otherwise:
+		say "Faraji switches the power switch off. The broadcast tower's hum dies away.";
 
 The broadcast tower is scenery in the radio station roof. "A tall, steel lattice structure, rising prominently above the building. This kind of tower was designed to maximize the height for better signal transmission and reception in the era before widespread cable and satellite technology. Strangely, the bars of the tower near roof-level are bent inward to form a small platform. It's almost as if something is meant to be mounted there."
 The snarky remark of the broadcast tower is "What a great place to get struck by lightning."
@@ -379,7 +451,10 @@ The snarky remark of the broadcast tower is "What a great place to get struck by
 The platform is part of the broadcast tower. It is a supporter.
 
 Instead of examining the platform when mounted-shiny-resonator:
-	say "[A shiny astral resonator] is mounted on the platform, and a beam of light shoots out of it, striking the obelisk in the park. The crystal is glowing [crystal glow].";
+	if the power switch is switched on:
+		say "[A shiny astral resonator] is mounted on the platform, and a beam of light shoots out of it, striking the obelisk in the park. The crystal is glowing [crystal glow].";
+	otherwise:
+		say "[A shiny astral resonator] is mounted on the platform.";
 
 Instead of examining the platform when not mounted-shiny-resonator:
 	say "The platform is a small, square area formed by the inward-bent bars of the broadcast tower. It's just large enough to hold a small object. There are two rings set into the back of the platform, allowing something to be attached there.";
@@ -390,7 +465,10 @@ The rings are part of the platform. The description is "Two metal rings are set 
 
 To hook up the shiny resonator: 
 	now the shiny astral resonator is on the platform;
-	say "[We] [push] the shiny astral resonator onto the platform, attaching the clamps to the rings. A beam of light shoots out of the resonator and strikes the obelisk in the park. The crystal is glowing [crystal glow].";
+	if the power switch is switched on:
+		say "[We] [push] [the shiny astral resonator] onto the platform, attaching the clamps to the rings. A beam of light shoots out of it and strikes the obelisk in the park. The crystal is glowing [crystal glow].";
+	otherwise:
+		say "[We] [push] [the shiny astral resonator] onto the platform, attaching the clamps to the rings.";
 
 Instead of inserting the shiny astral resonator into the platform:
 	hook up the shiny resonator;
@@ -402,7 +480,10 @@ Instead of putting the shiny astral resonator on the platform:
 	hook up the shiny resonator;
 
 After taking the shiny astral resonator when the shiny astral resonator was on the platform:
-	say "You remove the shiny astral resonator from the platform, and the light fades. In the distance, the beam of light fades from the obelisk. [if the beam count is 0]The crystal is no longer glowing[otherwise]The crystal is still glowing [crystal glow][end if].";
+	if the power switch is switched on:
+		say "Faraji removes [the shiny astral resonator] from the platform, and the light fades. In the distance, the beam of light fades from the obelisk. [if the beam count is 0]The crystal is no longer glowing[otherwise]The crystal is still glowing [crystal glow][end if].";
+	otherwise:
+		say "Faraji removes [the shiny astral resonator] from the platform.";
 
 Instead of tying the shiny astral resonator to the rings:
 	hook up the shiny resonator;
@@ -440,7 +521,7 @@ Instead of climbing up the broadcast tower:
 Instead of going up when the location is the radio station roof:
 	say "[We] [are] afraid of heights.";
 	
-The radio-obelisk-facade is a backdrop. It is in the radio station roof. Understand "obelisk/park" as radio-obelisk-facade. "The obelisk in the park is clearly visible from here."
+The radio-obelisk-facade is a backdrop. It is in the radio station roof. Understand "obelisk/park/crystal/adornment" as radio-obelisk-facade. "The obelisk in the park is clearly visible from here."
 
 Instead of examining the radio-obelisk-facade:
 	say "The obelisk in the park is clearly visible from here.[run paragraph on]";
@@ -457,7 +538,7 @@ Instead of examining the radio-obelisk-facade:
 	otherwise if beam count is 3:
 		say " Three beams of light are focused on the obelisk, one from here and two from elsewhere, striking the crystal adornment at its apex. The crystal is glowing brightly.";
 	otherwise:
-		say paragraph break;
+		say " The crystal adornment at the apex of the obelisk is dark.";
 
 Book 13 - Broadcast Booth
 
@@ -833,7 +914,7 @@ To decide what number is the beam count:
 	let count be 0;
 	if mounted-rusty-resonator:
 		increase count by 1;
-	if mounted-shiny-resonator:
+	if mounted-shiny-resonator and the power switch is switched on:
 		increase count by 1;
 	if mounted-makeshift-resonator:
 		increase count by 1;
@@ -970,10 +1051,13 @@ The glove compartment is a scenery closed openable container in the abandoned tr
 Understand "box/glovebox" as the glove compartment.
 The description is "The glove compartment is [if the glove compartment is open]open[otherwise]closed[end if]."
 The snarky remark of the glove compartment is "Oh good, I need a pair of gloves."
-The brass key is a key. It is in the glove compartment. 
+The brass key is a key. It is in the glove compartment. The description is "A simple brass key".
 
 After entering the abandoned truck:
 	try looking;
+
+Instead of searching the abandoned truck when the player is not in the abandoned truck:
+	say "The interior of the truck is visible through the window but Faraji can't see anything much of interest[if the glove compartment is open]. The glove compartment is open but it's impossible to see what, if anything, is in it[end if]. [if something is in the truck bed]The truck bed contains [a list of things in the truck bed][end if].";
 	
 Instead of switching on the abandoned truck:
 	let K be the list of all keys enclosed by the player;
@@ -1037,11 +1121,12 @@ The equipment cabinet is a closed locked openable lockable scenery container in 
 It has matching key the iron key. Understand "heavy/metal" as the equipment cabinet.
 "A heavy metal cabinet with a lock. [if the equipment cabinet is open]The cabinet is open[otherwise]The cabinet is closed[end if]."
 
-The rusty astral resonator is in the equipment cabinet. It is privately-named. The description is "A small, rusty, metallic, cylindrical object. One end is capped with a crystal lens, while the other terminates in a threaded base, like a light bulb.".
+The rusty astral resonator is in the equipment cabinet. It is privately-named. The description is "A small, rusty, metallic, cylindrical object. One end is capped with a lens, while the other terminates in a threaded base, like a light bulb.".
 The printed name is "[if Astral Secrets is familiar]rusty astral resonator[otherwise]strange, rusty, metal object[end if]".
 Understand "rusty/astral/resonator" as the rusty astral resonator when Astral Secrets is familiar.
 Understand "strange/rusty/metal/metallic/cylindrical/cylinder/object" as the rusty astral resonator.
 The threaded base is part of the rusty astral resonator. The description is "The base is threaded, like a light bulb."
+The rusty lens is part of the rusty astral resonator. The description is "The device is capped with a lens on one end."
 
 The snarky remark of the rusty astral resonator is "[if the shiny astral resonator is not familiar]Ooh. I've always wanted one of these[otherwise]Someone should have taken better care of this[end if].".
 
@@ -1240,13 +1325,13 @@ Horton-back-facade is a building facade. It is in Horton Graveyard. It is privat
 
 The Witnessing of Hezekiah is in the metal case. The description is "A small, leather-bound book, titled 'The Witnessing of Hezekiah: as told to Jeremiah Horton by Hezekiah Horton'. The book is filled with strange, cryptic passages, and is difficult to read. [We] [find] one page of particular interest. It reads, 'And lo, Hezekiah, in his wisdom, did prophesy of the impending flood and the necessity to make ready. He spoke of a sacred artifact, a resonator, bestowed with divine power, that would unveil a gateway to the ethereal realm. And he revealed the quest to find the astral focus, a sacred relic of great significance. Thus he spake: [']Take the resonator, and with reverence, bind it to the eternal flame, and then to the astral focus. Channel a mighty power through it, and direct them towards the crystal eye. Strike the eye thrice, with unwavering devotion, and behold, the portal shall open, revealing the path to transcendence.[']'";
 
-The shiny astral resonator is in the metal case. It is privately-named. The description is "A small, shiny, metallic, cylindrical object. One end is capped with a crystal lens, while the other terminates in two shiny metal chains, each with a shiny metal clamp, as if it were designed to be attached to something.".
+The shiny astral resonator is carried by the group of lizard people. It is privately-named. The description is "A small, shiny, metallic, cylindrical object. One end is capped with a lens, while the other terminates in two shiny metal chains, each with a shiny metal clamp, as if it were designed to be attached to something.".
 The printed name is "[if Astral Secrets is familiar]shiny astral resonator[otherwise]strange, shiny, metal object[end if]".
 Understand "shiny/astral/resonator" as the shiny astral resonator when Astral Secrets is familiar.
 Understand "strange/shiny/metal/metallic/cylindrical/cylinder/object" as the shiny astral resonator.
 The snarky remark of the shiny astral resonator is "[if the rusty astral resonator is not familiar]Ooh. I've always wanted one of these[otherwise]Wow, this is one is so shiny[end if].".
 The shiny clamps are part of the shiny astral resonator. The description is "Two metal chains, each with a metal clamp, are attached to the end of the [if Astral Secrets is familiar]resonator[otherwise]object[end if].". Understand "metal/-- chains" as the shiny clamps. They are plural-named.
-The shiny crystal lens is part of the shiny astral resonator. The description is "A crystal lens is attached to the end of the [if Astral Secrets is familiar]resonator[otherwise]object[end if].".
+The shiny lens is part of the shiny astral resonator. The description is "A lens is attached to the end of the [if Astral Secrets is familiar]resonator[otherwise]object[end if].".
 
 
 Book 28 - Fire Station 1
@@ -1365,7 +1450,7 @@ Does the player mean doing something to the gleaming floor:
 The sale posters are scenery in Rolle's Department Store. "'50% off everything in the store!'"
 
 The floor waxer is a fixed in place thing in Rolle's Department Store. "A floor waxer sits in the center of the gleaming floor." The description is "This is a bulky, heavy-duty machine with a large, round brush head, designed for durability and the ability to polish vast floor areas to a high shine."
-The snarky remark is "I'm sure I've seen this floor waxer before somewhere."
+The snarky remark is "I'm sure I've seen this floor waxer somewhere before."
 
 
 
@@ -1568,7 +1653,7 @@ Check putting in a locker:
 		
 Volume 4 - Eerie Sounds
 
-Sound interval is a number that varies.
+[ Sound interval is a number that varies.
 
 To spin is a verb. To cock is a verb.
 
@@ -1579,7 +1664,7 @@ Every turn when location is in ELR:
 			now sound interval is sound interval - 10;
 			if sound interval > 0:
 				now sound interval is 0;
-			say "[one of]The seeming sound of sibilant speech carries on the breeze[or][We] [turn] [our] head quickly, as if something caught [our] eye[or]A strange shadow crosses the scene[or][We] abruptly [spin] around, but [find] nothing behind [us][or][We] [cock] [our] head at a strange sound[or]Distinct footsteps sound from not too far away[or]An unseasonably chilly wind causes [us] to hug [our] shoulders[then at random]."
+			say "[one of]The seeming sound of sibilant speech carries on the breeze[or][We] [turn] [our] head quickly, as if something caught [our] eye[or]A strange shadow crosses the scene[or][We] abruptly [spin] around, but [find] nothing behind [us][or][We] [cock] [our] head at a strange sound[or]Distinct footsteps sound from not too far away[or]An unseasonably chilly wind causes [us] to hug [our] shoulders[then at random]." ]
 
 Volume 4.5 - The Mystic Compass in Enigma Lake
 
@@ -1606,13 +1691,13 @@ Instead of examining the mystic compass:
 
 Volume 4.5 - The Lizard People
 
-The group of lizard people is a person. The description is "Three humanoid figures, each with a long, scaly tail and a head that looks like a lizard's. They are dressed in smart grey suits." The group of lizard people is in Rolle's Department Store.
+The group of lizard people is an animal. "Three humanoid figures are here, each with a long, scaly tail and a head that looks like a lizard's. They are dressed in smart grey suits. They are hissing loudly in what seems to be intelligent communication." The group of lizard people is in the radio roof. 
 
 Every turn when the group of lizard people is not in the location:
 	if the group of lizard people is in a room (called current space):
 		let seen at first be false;
 		if the location overlooks the current space:
-			say "[We] [see] the faint trace of shadowy figures off in the distance, [the preposition of the current space] [the pretty name of the current space].";
+			[ say "[We] [see] the faint trace of shadowy figures off in the distance, [the preposition of the current space] [the pretty name of the current space]."; ]
 			now seen at first is true;
 		let next space be a random room which is adjacent to current space;
 		if next space is not the location:
@@ -1681,6 +1766,17 @@ To say to-dir (dir - a direction):
 	otherwise:
 		say "to the [dir]";
 
+After printing the locale description:
+	if the group of lizard people is in a room (called current space):
+		if the location overlooks the current space:
+			say "[We] [see] the faint trace of shadowy figures off in the distance, [the preposition of the current space] [the pretty name of the current space].";
+
+Every turn when the group of lizard people is in the location:
+	say "The lizard people look up, startled at the intrusion. They hiss, creating a strange cloud of thick vapor. When it clears, they are gone.
+	
+	They seem to have dropped something in their haste. There is [a shiny astral resonator] on the ground!";
+	now the shiny astral resonator is in the location;
+	now the group of lizard people is nowhere;
 
 Volume 5 - Polish
 
