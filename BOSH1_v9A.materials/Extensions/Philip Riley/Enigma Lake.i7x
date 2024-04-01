@@ -45,11 +45,16 @@ Volume 3 - Geography
 
 ELR is a region.
 
+Book 0.5 - Directions
+
+A room has a real number called the x-coordinate. A room has a real number called the y-coordinate.
+
 Book 1 - Town Hall
 
 the Enigma Lake town hall is a leavable room. It is in ELR. It is unleavable.
 "The building has been cleared of furniture and other items ahead of the imminent flooding. A permanent fixture, the information desk sits near the front entrance (to the south). Taped to it is what looks to be a work schedule. There is also a back entrance onto the park to the north."
 The snarky remark is "Time travel should be accompanied by more fanfare."
+The x-coordinate of the Enigma Lake town hall is 0. The y-coordinate of the Enigma Lake town hall is 0.
 
 The information desk is scenery in the Enigma Lake town hall. Understand "info/help/front" as information desk. "A work schedule is taped to the desk."
 The snarky remark of the information desk is "No one's ever at the information desk when you need them."
@@ -113,6 +118,7 @@ Enigma Park is a leavable room. It is north of Enigma Lake town hall. It is unle
 
 [only]The central focus of the park is a large obelisk inscribed with the names of the town's citizens lost in the Great War. Firs and maples line the paths. The town hall is to the south, and other exits are to the north, west, and east."
 The snarky remark of Enigma Park is "It's not Central Park, but it's not bad."
+The x-coordinate of Enigma Park is 0. The y-coordinate of Enigma Park is 1.
 
 Some trees are scenery in Enigma Park. Understand "tree/fir/firs/maple/maples" as trees. "A mixture of sturdy firs and maples, unaware of the pending cataclysm."
 The snarky remark of the trees is "Run away, trees! Run away!"
@@ -150,6 +156,7 @@ the Main Street 200 block is south of Enigma Lake Town Hall. It is in ELR. It is
 The snarky remark of the Main Street 200 block is "The 200 block of Main Street. It's like the 100 block, but twice as good."
 
 The description is "The street runs east and west from here. South is the edifice of Rolle's Department Store. North is the town hall."
+The x-coordinate of the Main Street 200 block is 0. The y-coordinate of the Main Street 200 block is -1.
 
 Rolle's facade is a building facade in Main Street 200 block. It is privately-named. The printed name is "Rolle's Department Store". Understand "rolle's/rolle/department/store/shop" as Rolle's facade. "Once, town department stores like this were a constant of American life before they were gobbled up by the big box stores."
 	Rolle's facade fronts Rolle's Department Store.
@@ -162,6 +169,7 @@ Main at Solvay is west of Main Street 200 Block. It is in ELR. It is outdoors. T
 The snarky remark of Main at Solvay is "This must be the shopping district."
 
 The description is "Main Street runs east from here, while Solvay Road heads north. South of here, Henry's Hot Skillet promises all of the comforts of the mid-twentieth-century diner. A bookstore named The Reading Room lies to the west, while Fresnel's Music is southwest."
+The x-coordinate of Main at Solvay is -1. The y-coordinate of Main at Solvay is -1.
 
 Henry's facade is a building facade. It is in Main at Solvay. It is privately-named. The printed name is "Henry's Hot Skillet".  Understand "Henry/Henry's/Hot/Skillet/diner/restaurant" as Henry's facade. "Henry's, the local diner, is closed, the neon skillet dark and motionless."
 	Henry's facade fronts Henry's Hot Skillet.
@@ -185,6 +193,7 @@ Book 6 - Solvay Road 100 block
 
 Solvay Road 100 block is north of Main at Solvay. It is in ELR. It is outdoors. The preposition is "walking on".
 The snarky remark of Solvay Road 100 block is "What's a Solvay?"
+The x-coordinate of Solvay Road 100 block is -1. The y-coordinate of Solvay Road 100 block is 0.
 
 The description is "Solvay heads north and south. To the west is the fire station, while to the east is the side of the town hall."
 
@@ -201,6 +210,7 @@ Solvay Road leading out of town is north of Solvay Road 100 block and west of En
 The snarky remark of Solvay Road leading out of town is "Seems like the right way to go about now."
 
 The description is "Solvay Road bends here, leading northwest out of town and south back into town. East is the park, and to the west is Horton House. One can walk down to the lake shore to the north."
+The x-coordinate of Solvay Road leading out of town is -1. The y-coordinate of Solvay Road leading out of town is 1.
 
 Horton facade is a building facade. It is in Solvay Road leading out of town. It is privately-named. The printed name is "Horton House". Understand "Horton/Family/House/Home" as Horton facade. "Horton House is an old colonial-period house. The sign by the door marks it as the oldest remaining house in the Enigma Lake area. Its builder, Jeremiah Horton, was purported to be a supernaturalist of some renown."
 	Horton facade fronts Horton Family House Kitchen.
@@ -213,6 +223,7 @@ Book 8 - Solvay Road by the lake
 Solvay-Road-by-the-lake is northwest of Solvay Road leading out of town. It is in ELR. It is outdoors. The preposition is "walking on". It is privately-named. The printed name is "Solvay Road by the lake". Understand "Solvay/Road/by/the/lake" as Solvay-Road-by-the-lake.
 
 The description is "Solvay Road runs by the lake shore here. It continues out of town to the northwest, while to the southeast it leads back into town. A dirty shack stands opposite the lake to the west. A path along the shore leads to the east."
+The x-coordinate of Solvay-Road-by-the-lake is -2. The y-coordinate of Solvay-Road-by-the-lake is 2.
 
 The snarky remark of Solvay-Road-by-the-lake is "Nice view. Too bad it's about to be under water."
 
@@ -236,6 +247,7 @@ Book 9 - Shack
 
 a dirty shack is a leavable room. It has egress east. It is west of Solvay-Road-by-the-lake. It is always-indefinite. It is in ELR. "Someone lives here, though not at all luxuriously. Plates are stacked up by the sink, and there's a pile of used paper coffee cups in the corner. The whole place stinks of cat."
 The snarky remark of the dirty shack is "I'm not sure I want to know what's in the sink."
+The x-coordinate of the dirty shack is -3. The y-coordinate of the dirty shack is 2.
 
 Some plates are scenery in the dirty shack. "Dirty and precariously stacked."
 The snarky remark of the plates is "I'm not doing the dishes."
@@ -352,6 +364,7 @@ Book 10 - Main at Lake
 
 Main at Lake is east of Main Street 200 Block. It is in ELR. It is outdoors. The printed name is "Main and Lake". The preposition is "at the intersection of". "Main goes west, while Lake runs north. The corner of the town hall is to the northwest, although it cannot be entered there. Southeast is the entrance to WGXC 'Galaxy' Radio. There is a broadcast tower on top of the building." 
 The snarky remark of Main at Lake is "Soon it will be Main in Lake."
+The x-coordinate of Main at Lake is 1. The y-coordinate of Main at Lake is -1.
 
 The radio station facade is a building facade. It is in Main at Lake. It is privately-named. The printed name is "WGXC 'Galaxy' Radio". Understand "WGXC/Galaxy/Radio/station" as radio station facade. "The sign over the door says 'WGXC [']Galaxy['] Radio 1055 AM'."
 	The radio station facade fronts Radio Station WGXC.
@@ -362,12 +375,14 @@ Book 11 - WGXC "Galaxy" Radio
 
 Radio Station WGXC is a leavable room. It has egress northwest. It is southeast of Main at Lake. It is in ELR. It is indoors. "This is the town radio station. South is the entrance to the broadcast booth. A staircase runs upwards, presumably to the roof and the broadcast antenna."
 The snarky remark of Radio Station WGXC is "I wonder if they have any old records. Or I guess they'd be new records now, wouldn't they?"
+The x-coordinate of Radio Station WGXC is 2. The y-coordinate of Radio Station WGXC is -2.
 
 Book 12 - Radio Station Roof
 
 The radio station roof is a leavable room. It is above Radio Station WGXC. It has egress down. It is in ELR. "[We] can see the obelisk in the park clearly from here. The broadcast tower[if the power switch is switched on], humming loudly,[end if] rises many feet above [us]. A metal cabinet is attached to the foot of the tower[if the metal cabinet is locked], held shut by a chain and padlock[otherwise if the metal cabinet is closed], closed[otherwise], hanging open. Inside it is a power switch[end if].[if mounted-shiny-resonator] [A shiny astral resonator] is mounted on a platform in the tower, and a beam of light shoots out of it, striking the obelisk in the park. The crystal is glowing [crystal glow].[end if]".
 The preposition is "on".
 The snarky remark of the radio station roof is "I'm not afraid of heights. I'm afraid of falling from heights."
+The x-coordinate of the radio station roof is 2. The y-coordinate of the radio station roof is -2.
 
 The metal cabinet is a closed, locked, openable, scenery container in the radio station roof. "The metal cabinet is attached to the foot of the broadcast tower[if the metal cabinet is locked], held shut by a chain and padlock[otherwise if the metal cabinet is closed], closed[otherwise], hanging open. Inside it is a power switch[end if]." 
 
@@ -544,6 +559,7 @@ Book 13 - Broadcast Booth
 
 The broadcast booth is south of Radio Station WGXC. It is in ELR. "The broadcast booth is a small room with a window looking out into the rest of the station. A microphone is set up on a stand, and a soundboard is set into the wall."
 The snarky remark of the broadcast booth is "I wonder if I can get a request in."
+The x-coordinate of the broadcast booth is 2. The y-coordinate of the broadcast booth is -3.
 
 The booth window is scenery in the broadcast booth. "The window looks out into the rest of the station."
 
@@ -561,6 +577,7 @@ Book 14 - Lake Street by the gym
 Lake Street by the gym is north of Main at Lake. It is in ELR. It is outdoors. The preposition is "walking on".
 The description is "Lake Street runs north and south from here. To the east is the public gymnasium, while to the west is the town hall, which is not enterable from here."
 The snarky remark of Lake Street by the gym is "I wonder how much gym memberships cost in 1954."
+The x-coordinate of Lake Street by the gym is 1. The y-coordinate of Lake Street by the gym is 0.
 
 The gymnasium facade is a building facade. It is in Lake Street by the gym. It is privately-named. The printed name is "public gymnasium". Understand "gymnasium/gym" as gymnasium facade. "The sign over the door says 'Enigma Lake Gymnasium'."
 	The gymnasium facade fronts Enigma Lake Gymnasium.
@@ -574,6 +591,7 @@ Book 15 - Lake Street by the Park
 
 Lake Street by the park is north of Lake Street by the gym and east of Enigma Park. It is in ELR. It is outdoors. The preposition is "walking on". The description is "Lake Street runs north and south from here. To the west is the park, while to the east is the First Utilitarian Church of Enigma Lake."
 The snarky remark of Lake Street by the park is "The eeriness of the park is only slightly offset by the eeriness of the church."
+The x-coordinate of Lake Street by the park is 1. The y-coordinate of Lake Street by the park is 1.
 
 The church facade is a building facade. It is in Lake Street by the park. It is privately-named. The printed name is "First Utilitarian Church of Enigma Lake". Understand "church" as church facade. "The church is a dignified example of Gothic Revival architecture, its façade dominated by a steeply pitched roof and a slender steeple piercing the sky."
 	The church facade fronts the First Utilitarian Church of Enigma Lake.
@@ -584,6 +602,7 @@ Book 16 - First Utilitarian Church of Enigma Lake
 
 The First Utilitarian Church of Enigma Lake is a leavable room. It has egress west. It is east of Lake Street by the Park. It is in ELR. "The interior is dimly lit by the stained glass windows, and the pews are arranged in neat rows facing the pulpit. A standard electrical outlet is set into the wall."
 The snarky remark of the First Utilitarian Church of Enigma Lake is "Where's the gift shop?"
+The x-coordinate of the First Utilitarian Church of Enigma Lake is 2. The y-coordinate of the First Utilitarian Church of Enigma Lake is 1.
 
 A rule for snarking First Utilitarian Church of Enigma Lake:
 	if the snarky remark of the First Utilitarian Church of Enigma Lake is not empty and the doll-fly is not in the location:
@@ -876,6 +895,7 @@ Book 17 - Vestry
 
 The vestry is a leavable room. It is east of First Utilitarian Church. It has egress west. It is in ELR. "It's a small room, with a door leading to the church proper to the west. A lovely tapestry hangs on the wall[if the tapestry is pushed aside]. It is pushed aside, revealing a circuit breaker box[end if]."
 The snarky remark of the vestry is "Seen one vestry, seen [']em all."
+The x-coordinate of the vestry is 3. The y-coordinate of the vestry is 1.
 
 The tapestry is scenery in the vestry. "An intricate tapestry, depicting a scene of a medieval village. It's a bit out of place in a church, but it's lovely." The tapestry can be pushed aside. Understand "wall hanging", "wallhanging" as the tapestry.
 The snarky remark of the tapestry is "I wonder why they don't have a velvet Elvis."
@@ -906,6 +926,7 @@ To say makeshift resonator state:
 the steeple is above the First Utilitarian Church of Enigma Lake. It is in ELR. 
 "From here, [we] can see the obelisk in the park clearly. Someone has set up a tripod here. [if the content of the tripod is nothing]Its mount is empty[otherwise if the content of the tripod is the telescope][A telescope] is mounted on it[otherwise][makeshift resonator state][end if]."
 The snarky remark of the steeple is "I wonder if I can see my house from here."
+The x-coordinate of the steeple is 2. The y-coordinate of the steeple is 1.
 
 The telescope is in the tripod. The description is "A small telescope suitable for amateur astronomy[if the content of the tripod is the telescope]. It's mounted on a tripod[end if]."
 The snarky remark of the telescope is "What's the point of looking at the stars? They're all the same."
@@ -1037,6 +1058,7 @@ the Lake at Ridge is north of Lake Street by the Park. It is in ELR. It is outdo
 The printed name is "Lake Street and Ridge Road". The preposition is "at the intersection of".
 "[if player is in the abandoned truck]There is a glove compartment on the passenger side, [glove compartment state].[paragraph break][end if]The intersection lies at the edge of the lake. Lake Street runs south into town, while Ridge Road heads off into the darkness east of here. A little park along the lake shore is to the west."
 The snarky remark of the Lake at Ridge is "What ridge? I don't see a ridge."
+The x-coordinate of the Lake at Ridge is 2. The y-coordinate of the Lake at Ridge is 2.
 
 To say glove compartment state:
 	if the glove compartment is open:
@@ -1045,13 +1067,24 @@ To say glove compartment state:
 		say "closed";
 
 An abandoned pickup truck is a fixed in place closed enterable openable container in Lake at Ridge. 
-The description is "The truck is relatively new, with no sign as to why it was abandoned. The tailgate is [if the tailgate is open]down[otherwise]up[end if]."
+"There is an abandoned pickup truck at the side of the road[if the hood is open]. The hood is open[end if]." 
+The description is "The truck, a Ford F-1, is relatively new, with no sign as to why it was abandoned. The tailgate is [if the tailgate is open]down[otherwise]up[end if]. The hood is slightly crumpled, as if it has been in a minor accident[if the hood is open]. The hood is open[end if]."
+Understand "ford", "f-1" as the abandoned pickup truck.
 The snarky remark of the abandoned pickup truck is "Should I be scared?"
 The glove compartment is a scenery closed openable container in the abandoned truck.
 Understand "box/glovebox" as the glove compartment.
 The description is "The glove compartment is [if the glove compartment is open]open[otherwise]closed[end if]."
 The snarky remark of the glove compartment is "Oh good, I need a pair of gloves."
 The brass key is a key. It is in the glove compartment. The description is "A simple brass key".
+
+The truck hood is a part of the abandoned pickup truck. It is a closed openable container. The description is "The hood is slightly crumpled, as if it has been in a minor accident. It is [if the hood is open]open[otherwise]closed[end if]." Understand "bonnet" as the truck hood.
+
+The hood contains a dirty battery. 
+
+The description of the dirty battery is "The battery is dirty and corroded. Acid has leaked from the terminals. It's unlikely to be of any use."
+
+Instead of doing something to the dirty battery when the action requires a touchable noun:
+	say "With so much acid on the battery, it's probably best not to touch it with bare hands.";
 
 After entering the abandoned truck:
 	try looking;
@@ -1069,9 +1102,6 @@ Instead of switching on the abandoned truck:
 		say "Even if this thing runs, [we] [don't] have the key.";
 		
 Understand "start [something]" as switching on.
-
-Rule for writing a paragraph about the abandoned truck:
-	say "There is an abandoned pickup truck at the side of the road."
 
 Understand "lower [tailgate]" as opening. Understand "raise [tailgate]" as closing.
 
@@ -1693,6 +1723,66 @@ Volume 4.5 - The Lizard People
 
 The group of lizard people is an animal. "Three humanoid figures are here, each with a long, scaly tail and a head that looks like a lizard's. They are dressed in smart grey suits. They are hissing loudly in what seems to be intelligent communication." The group of lizard people is in the radio roof. 
 
+To decide what text is the heading from (R1 - a room) to (R2 - a room):
+	let wediff be the x-coordinate of R1 minus the x-coordinate of R2 + 0.01;
+	let nsdiff be the y-coordinate of R2 minus the y-coordinate of R1 + 0.01;
+	let fbdiff be 0.01;
+	let nsdir be "";
+	let wedir be "";
+	let fbdir be "";
+	if nsdiff >= 0:
+		let nsdir be "north";
+	otherwise:
+		let nsdir be "south";
+	if wediff >= 0:
+		let wedir be "west";
+	otherwise:
+		let wedir be "east";
+	if fbdiff >= 0:
+		let fbdir be "forth";
+	otherwise:
+		let fbdir be "back";
+	let nsdivwe be nsdiff / wediff;
+	now nsdivwe is absolute value of nsdivwe;
+	let nsdivfb be nsdiff / fbdiff;
+	now nsdivfb is absolute value of nsdivfb;
+	let wedivfb be wediff / fbdiff;
+	now wedivfb is absolute value of wedivfb;	
+	let nsscore be nsdivwe + nsdivfb;
+	let wescore be 1 / nsdivwe + wedivfb;
+	let fbscore be 1 / wedivfb + 1 / nsdivfb;
+	let dir be "";
+	let count be 1;
+	if fbscore >= wescore and fbscore >= nsscore:
+		now dir is fbdir;
+		let x be 2 * nsscore;
+		if fbscore < x:
+			increment count;
+			now dir is "[dir][nsdir]";
+		now x is 2 * wescore;
+		if fbscore < x and count < 2:
+			now dir is "[dir][wedir]";
+		decide on dir;
+	if nsscore >= wescore and nsscore >= fbscore:
+		now dir is nsdir;
+		if nsscore < 2 * wescore:
+			increment count;
+			now dir is "[dir][wedir]";
+		if nsscore < 2 * fbscore and count < 2:
+			now dir is "[fbdir][dir]";
+		decide on dir;
+	if wescore >= nsscore and wescore >= fbscore:
+		now dir is wedir;
+		let x be 2 * nsscore;
+		if wescore < 2 * nsscore:
+			increment count;
+			now dir is "[nsdir][dir]";
+		if wescore < 2 * fbscore and count < 2:
+			now dir is "[fbdir][dir]";
+		decide on dir;
+	decide on dir;
+
+
 Every turn when the group of lizard people is not in the location:
 	if the group of lizard people is in a room (called current space):
 		let seen at first be false;
@@ -1706,41 +1796,46 @@ Every turn when the group of lizard people is not in the location:
 			if dir is a direction:
 				try group of lizard people going dir;
 				now seen at last is whether or not the location overlooks the next space;
+			let dirtext be "";
+			if seen at first is true:
+				now dirtext is the heading from the location to the current space;
+			otherwise:
+				now dirtext is the heading from the location to the next space;
 			let old structure be the structure name of the current space;
 			let new structure be the structure name of the next space;
 			if seen at last is true and seen at first is true:
 				if old structure is not new structure:
 					if old structure is not "" and new structure is not "":
-						say "The shadowy figures move [dir], emerging from [the old structure] and entering [the new structure].";
+						say "To the [dirtext], the shadowy figures move [dir], emerging from [the old structure] and entering [the new structure].";
 					otherwise if old structure is not "":
-						say "The shadowy figures move [dir], emerging from [the old structure] to [the pretty name of the next space].";
+						say "To the [dirtext], the shadowy figures move [dir], emerging from [the old structure] to [the pretty name of the next space].";
 					otherwise if new structure is not "":
-						say "The shadowy figures move [dir], from [the pretty name of the current space] into [the new structure].";
+						say "To the [dirtext], the shadowy figures move [dir], from [the pretty name of the current space] into [the new structure].";
 				otherwise:
-					say "The shadowy figures move [dir], [the preposition of the next space] [the pretty name of the next space].";
+					say "To the [dirtext], the shadowy figures move [dir], [the preposition of the next space] [the pretty name of the next space].";
 			otherwise if seen at last is true:
 				if old structure is not new structure:
 					if old structure is not "" and new structure is not "":
-						say "Some shadowy figures emerge from [the old structure] and enter [the new structure], moving [dir].";
+						say "To the [dirtext], some shadowy figures emerge from [the old structure] and enter [the new structure], moving [dir].";
 						[ say "Some shadowy figures appear [from-dir the opposite of dir], emerging from [the old structure] and entering [the new structure]."; ]
 					otherwise if old structure is not "":
-						say "Some shadowy figures emerge from [the old structure] at [the pretty name of the next space], moving [dir].";
+						say "To the [dirtext], some shadowy figures emerge from [the old structure] at [the pretty name of the next space], moving [dir].";
 						[ say "Some shadowy figures appear [from-dir the opposite of dir], emerging from [the old structure] to [the pretty name of the next space]."; ]
 					otherwise if new structure is not "":
-						say "Some shadowy figures leave [the pretty name of the current space] and enter [the new structure], moving [dir].";
+						say "To the [dirtext], some shadowy figures leave [the pretty name of the current space] and enter [the new structure], moving [dir].";
 						[ say "Some shadowy figures appear [from-dir the opposite of dir], entering [the new structure]."; ]
 				otherwise:
-				  	say "Some shadowy figures come into view [from-dir the opposite of dir], [the preposition of the next space] [the pretty name of the next space].";
+				  	say "To the [dirtext], some shadowy figures come into view [from-dir the opposite of dir], [the preposition of the next space] [the pretty name of the next space].";
 			otherwise if seen at first is true:
 				if old structure is not new structure:
 					if old structure is not "" and new structure is not "":
-						say "The shadowy figures move out of sight [to-dir dir], leaving [the old structure] and entering [the new structure].";
+						say "To the [dirtext], the shadowy figures move out of sight [to-dir dir], leaving [the old structure] and entering [the new structure].";
 					otherwise if old structure is not "":
-						say "The shadowy figures move out of sight [to-dir dir], leaving [the old structure].";
+						say "To the [dirtext], the shadowy figures move out of sight [to-dir dir], leaving [the old structure].";
 					otherwise if new structure is not "":
-						say "The shadowy figures move out of view [to-dir dir], from [the pretty name of the current space], into [the new structure].";
+						say "To the [dirtext], the shadowy figures move out of view [to-dir dir], from [the pretty name of the current space], into [the new structure].";
 				otherwise:
-					say "The shadowy figures move out of view [to-dir the dir].";
+					say "To the [dirtext], the shadowy figures move out of view [to-dir the dir].";
 		
 To say from-dir (dir - a direction):
 	if dir is up:
@@ -1769,7 +1864,8 @@ To say to-dir (dir - a direction):
 After printing the locale description:
 	if the group of lizard people is in a room (called current space):
 		if the location overlooks the current space:
-			say "[We] [see] the faint trace of shadowy figures off in the distance, [the preposition of the current space] [the pretty name of the current space].";
+			let dirtext be the heading from the location to the current space;
+			say "[We] [see] the faint trace of shadowy figures off to the [dirtext], [the preposition of the current space] [the pretty name of the current space].";
 
 Every turn when the group of lizard people is in the location:
 	say "The lizard people look up, startled at the intrusion. They hiss, creating a strange cloud of thick vapor. When it clears, they are gone.

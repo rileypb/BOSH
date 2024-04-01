@@ -46,12 +46,40 @@ Driving is an action applying to one thing. Understand "drive [something]" as dr
 Check driving something that is not a car:
 	say "You can't drive that." instead;
 
-Car 1 is an automobile in Strip Mall Parking Lot South. It is privately-named. The printed name is "[our] Hyundai". Understand "car", "hyundai", "automobile", "auto", "my car", "faraji's car", "larch's car" as car 1. The initial appearance of car 1 is "[Our] Hyundai is parked nearby." It is fixed in place. The description is "An old bright red Hyundai Accent, it's been [our] personal means of transportation for years. And since the Bureau lost its fleet, it's [our] work car too.".
+Car 1 is an automobile in Strip Mall Parking Lot South. It is privately-named. The printed name is "[our] Hyundai". 
+"[Our] bright red Hyundai Accent is parked nearby[if the Hyundai hood is open]. The hood is open[end if]."
+Understand "car", "hyundai", "automobile", "auto", "my car", "faraji's car", "larch's car" as car 1. It is fixed in place. The description is "An old bright red Hyundai Accent, it's been [our] personal means of transportation for years. And since the Bureau lost its fleet, it's [our] work car too.".
 The snarky remark of Car 1 is "They asked me if I wanted the flashy car, but I said no -- it just didn't fit my downscale image."
 Car 1 is an edifice.
 
 Instead of entering or opening or driving car 1:
 	say "[Agent]'s job is here for now.";
+
+The Hyundai hood is a part of Car 1. It is an openable closed container. The description is "The hood is [if the Hyundai hood is closed]closed[otherwise]open[end if]."
+
+The clean battery is in the Hyundai hood. The description is "The battery is clean and new."
+The snarky remark of the clean battery is "Just got it replaced last week."
+
+This is the examine hood contents rule:
+	if the noun is a container:
+		if the noun is open or the noun is transparent:
+			if something described which is not scenery is in the noun and something which
+				is not the player is in the noun:
+				if the noun is the Hyundai hood or the noun is the truck hood:
+					say "Under [the noun] ";
+				otherwise:	
+					say "In [the noun] " (A);
+				list the contents of the noun, as a sentence, tersely, not listing
+					concealed items, prefacing with is/are;
+				say ".";
+				now examine text printed is true;
+			otherwise if examine text printed is false:
+				if the player is in the noun:
+					make no decision;
+				say "[The noun] [are] empty." (B);
+				now examine text printed is true;
+
+The examine hood contents rule is listed instead of the examine containers rule in the carry out examining rulebook.
 
 Car 2 is an automobile. It is privately-named. The printed name is "[Chief Huffton Klimp]'s Porsche". Understand "car/Klimp's/Porsche/automobile/auto" as car 2. The initial appearance of car 2 is "Klimp's Porsche takes up two spots." It is fixed in place. The description is "Klimp drives a sleek 2017 Porsche 911 Turbo Cabriolet."
 The snarky remark of Car 2 is "I guess the Bureau's not as broke as they say."
