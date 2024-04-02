@@ -52,11 +52,11 @@ I've also read Basics by Philip Riley, which is 195 words long.
 I've also read Building Facades by Philip Riley, which is 162 words long.
 I've also read Followup Questions by Philip Riley, which is 245 words long.
 I've also read Simple Conversation by Philip Riley, which is 2190 words long.
-I've also read Hyperspace by Philip Riley, which is 10500 words long.
+I've also read Hyperspace by Philip Riley, which is 10503 words long.
 I've also read BOSH Facts by Philip Riley, which is 94 words long.
 I've also read Image Strip by Philip Riley, which is 2077 words long.
 I've also read Swamp Park by Philip Riley, which is 5972 words long.
-I've also read Margaret by Philip Riley, which is 1851 words long.
+I've also read Margaret by Philip Riley, which is 1935 words long.
 I've also read Enigma Lake by Philip Riley, which is 21752 words long.
 I've also read I Can Dig It by Philip Riley, which is 54 words long.
 I've also read Snarky Remarks by Philip Riley, which is 200 words long.
@@ -314,7 +314,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 256 files written as streams.
-CPU time: 825 centiseconds
+CPU time: 881 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

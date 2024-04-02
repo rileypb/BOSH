@@ -235,7 +235,18 @@ Rule for behaving as Margaret when the current behavior of Margaret is throw out
 Rule for deciding the concealed possessions of margaret: 
 	if the particular possession is the margaret-flattened-boxes, no; 
 	otherwise yes.
-	
+
+Rule for writing a paragraph about Margaret when Margaret carries the margaret-flattened-boxes:
+	say "Margaret is here, carrying a couple of flattened boxes.";
+
+The describe room gone into rule response (F) is "[sophisticated description for the actor from the back way]".
+
+To say sophisticated description for (actor - a thing) from (D - a direction):
+	if the actor is Margaret:
+		say "Margaret [arrive] from [the D][if Margaret carries the margaret-flattened-boxes], carrying a couple of flattened boxes[end if]";
+	otherwise:
+		say "[The actor] [arrive] from [the D]";
+ 	
 Book 4 - Special Movement Rule
 
 After margaret going to Front Office when the location is front office (this is the speak to margaret when she enters the front office rule):
