@@ -456,7 +456,7 @@ portal-to-the-past	Maggie	"'What is the portal to the past?'"	"'It's a device th
 auxiliary-portal	Maggie	"'What is the auxiliary portal?'"	"'It is a device that allows us to travel to different times and places. It is currently inactive, but it can be activated by typing in the correct code on my desk, which you're not allowed to use, so don't even think about it.'"
 Thumb drive	Maggie	"'What do you know about this?'"	"'I'm surprised you don't know. It's a USB drive. It's used to store data.'"
 maggie-subject	Maggie	"'Who are you?'"	"'I'm Maggie. I'm the receptionist here at the BOSH Hyperspace Field Office. I'm here to help you with whatever you need, as long as it's not touching the control panel.'"
-
+BOSH	Maggie	"'Are you part of BOSH?'"	"'Sometimes, yes -- the Bureau of Space and Hyperspace. Or is it Bureaucratic Office of Supernatural History? Or Business Office for Standard Howitzers? Or Big Office of the Slightly Hilarious? Oh yes, Bureau of Strange Happenings. But I like to think of it as the Baby of Stan and Harriet.'"
 
 Book 2 - Hallway
 

@@ -48,7 +48,7 @@ Include Followup Questions by Philip Riley.
 Include Simple Conversation by Philip Riley.
 Include Hyperspace by Philip Riley.	
 Include BOSH Facts by Philip Riley. 
-Include Image Strip by Philip Riley.
+[ Include Image Strip by Philip Riley. ]
 Include Swamp Park by Philip Riley.
 [Include Conversations General by Philip Riley.]
 Include Margaret by Philip Riley. 
@@ -158,7 +158,7 @@ When play begins:
 		if DEBUG is false:
 			say Intro Text;
 			continue;
-		follow the current graphics drawing rule;
+		[ follow the current graphics drawing rule; ]
 		[ move the player to the Strip Mall Parking Lot South; ]
  
 To survey is a verb. To wrinkle is a verb.
@@ -199,7 +199,7 @@ After reading a command when current play mode is picking character:
 	now the command prompt is “>”; 	
 	now current play mode is _normal;
 	move the player to the isolation booth;
-	follow the current graphics drawing rule;
+	[ follow the current graphics drawing rule; ]
 	say line break;
 	say "The government functionary cracks, 'You can hold the life story.' He punches a few keys on his computer, stands up and says 'Thank you, Agent [player's surname]. You're all processed for the move to the new BOSH offices. Now if you'll excuse me, it's time to go home.'[paragraph break]";
 	say "[Player] stands, and collecting [our] briefcase, turns and strides out of the office.[paragraph break]"; 
@@ -218,7 +218,7 @@ After reading a command when current play mode is picking character:
 	move klimp to the Room of Stuff;
 	move moira to the Room of Stuff;
 	move the player to the Strip Mall Parking Lot South;
-	follow the current graphics drawing rule;
+	[ follow the current graphics drawing rule; ]
 	reject the player’s command;
 	
 To init player:
@@ -1655,15 +1655,15 @@ Figure Null is the file "clerk_portrait.png".
 
 A thing has a figure name called the portrait. The portrait of a thing is usually Figure Null.
 
-The graphics window pixel count is 128. The graphics window position is g-left.
+[ The graphics window pixel count is 128. The graphics window position is g-left. ]
 [The graphics window proportion is 25;]
 
-Rule for starting the virtual machine:
-	now the current graphics drawing rule is the standard placement rule.
+[ Rule for starting the virtual machine:
+	now the current graphics drawing rule is the standard placement rule. ]
 	
 [graphics background color is "#FFFFFF";] 
 	
-Figure Darkness is the file "darkness.png".
+[ Figure Darkness is the file "darkness.png".
 Figure Goldberg is the file "goldberg_portrait.png".
 Figure Gaunt is the file "gaunt_portrait.png".
 Figure Faraji is the file "faraji_portrait_6.png".
@@ -1715,12 +1715,12 @@ Christy has portrait Figure Christy.
 Hutz has portrait Figure Hutz.
 Skalek has portrait Figure Lizard 1.
 Korthax has portrait Figure Lizard 2.
-Yssik has portrait Figure Lizard 3.
+Yssik has portrait Figure Lizard 3. ]
 
 
 Characters is a list of figure names that varies.
 
-To decide which figure name is the picture of the location:
+[ To decide which figure name is the picture of the location:
 	let result be Figure Null;
 	if in darkness, decide on Figure Darkness;
 	if location is Parking Lot South or location is Parking Lot North, now result is Figure Parking Lot;
@@ -1734,10 +1734,10 @@ To decide which figure name is the picture of the location:
 	if location is Enigma Park, now result is Figure Enigma Park;
 	if location is lake shore north of the park or location is lake shore west, now result is Figure Engima Shore;
 	if location is in field office area, now result is Figure BOSH;
-	decide on result; 
+	decide on result;  ]
 		
 
-The first glulx picture selection rule (this is the bosh picture selection rule):
+[ The first glulx picture selection rule (this is the bosh picture selection rule):
 	remove characters from characters;
 	If the current play mode is picking character:
 		add Figure Gaunt to characters;
@@ -1774,12 +1774,12 @@ The first glulx picture selection rule (this is the bosh picture selection rule)
 		now the internally selected picture 4 is entry 4 of characters; 
 	if the number of entries of characters > 4:
 		now the internally selected picture 5 is entry 5 of characters;
-	rule succeeds with result the number of entries of characters;
+	rule succeeds with result the number of entries of characters; ]
 
 handset count is a number that varies.
 bubble count is a number that varies.
 
-This is the draw images rule: 
+[ This is the draw images rule: 
 	follow the current graphics drawing rule;
 	if the player is talking with someone (called P): 
 		if the portrait of P is listed in characters:
@@ -1797,7 +1797,7 @@ This is the draw images rule:
 				now bubble count is local count;
 		draw speech bubble;		
 		
-The draw images rule is listed after the adjust light rule in the turn sequence rules.		
+The draw images rule is listed after the adjust light rule in the turn sequence rules.		 ]
 		
 To draw speech bubble: 
 	(- DrawSpeechBubble(); -)
@@ -1808,11 +1808,11 @@ To draw phone handset:
 [A window resizing rule:
 	do nothing;]
 	
-To resize windows:
+[ To resize windows:
 	call resize function;	
 	follow the current graphics drawing rule; 
 	if the current interlocutor is something: 
-		draw speech bubble;
+		draw speech bubble; ]
 	
 To call resize function:
 	(- ResizeGraphicsWindow(); -); 
