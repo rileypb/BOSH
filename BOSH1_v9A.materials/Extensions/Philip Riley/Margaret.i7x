@@ -1,5 +1,7 @@
 Margaret by Philip Riley begins here.
 
+Use authorial modesty.
+
 Include Swamp Park by Philip Riley.
 Include Real People by Philip Riley.
 

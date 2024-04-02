@@ -1,5 +1,7 @@
 Swamp Park by Philip Riley begins here.
 
+Use authorial modesty.
+
 Include Essentials by Philip Riley.
 
 Include New Light by Philip Riley.    

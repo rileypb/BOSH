@@ -1,5 +1,7 @@
 Scheduled People by Philip Riley begins here.
 
+Use authorial modesty.
+
 [Include Essentials by Philip Riley.]
 
 Book 1 - Schedules

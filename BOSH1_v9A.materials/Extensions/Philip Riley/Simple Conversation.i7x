@@ -1,5 +1,7 @@
 Simple Conversation by Philip Riley begins here.
 
+Use authorial modesty.
+
 Include Conversation Framework by Eric Eve.
 Include Conversational Defaults by Eric Eve.
 Include Complex Listing by Emily Short.

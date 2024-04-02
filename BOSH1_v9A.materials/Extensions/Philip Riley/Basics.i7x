@@ -1,5 +1,7 @@
 Basics by Philip Riley begins here.
 
+Use authorial modesty.
+
 Volume 1 - Spatial relationships
 
 Behindness relates various things to one thing. The verb to be behind means the behindness relation.

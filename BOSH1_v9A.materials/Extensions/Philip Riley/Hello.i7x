@@ -1,5 +1,7 @@
 Hello by Philip Riley begins here.
 
+Use authorial modesty.
+
 After saying hello to the store clerk for the first time:
 	say "'Good morning,' Faraji says.";
 	say "'Yeah,' replies the clerk.";

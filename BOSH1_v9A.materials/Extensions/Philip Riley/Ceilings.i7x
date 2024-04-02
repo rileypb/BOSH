@@ -1,5 +1,7 @@
 Version 1 of Ceilings by Philip Riley begins here.
 
+Use authorial modesty.
+
 Include PBR Common by Philip Riley.
 
 The ceiling is a backdrop.

@@ -5,6 +5,8 @@ Image Strip by Philip Riley begins here.
 
 Include Glulx Entry Points by Emily Short.
 
+Use authorial modesty.
+
 Section 1 - Creating Rocks and Building the Window Itself
 
 Include(-  

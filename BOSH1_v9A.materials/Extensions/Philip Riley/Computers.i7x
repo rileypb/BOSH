@@ -1,5 +1,7 @@
 Computers by Philip Riley begins here.
 
+Use authorial modesty.
+
 [include Essentials by Philip Riley.]
 
 An enote is a kind of thing. An enote is scenery. 

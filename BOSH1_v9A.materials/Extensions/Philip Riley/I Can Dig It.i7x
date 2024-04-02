@@ -1,5 +1,7 @@
 I Can Dig It by Philip Riley begins here.
 
+Use authorial modesty.
+
 A room can be diggable.
 
 Enigma Park is a diggable room.

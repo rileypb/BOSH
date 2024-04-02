@@ -1,5 +1,7 @@
 Commerce by Philip Riley begins here.
 
+Use authorial modesty.
+
 [ Understand the commands “buy” and “purchase” as something new. ]
 
 An amount of money is a kind of value. $1 specifies an amount of money.

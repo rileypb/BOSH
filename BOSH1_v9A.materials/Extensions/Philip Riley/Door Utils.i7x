@@ -1,5 +1,7 @@
 Door Utils by Philip Riley begins here.
 
+Use authorial modesty.
+
 To say state of (D - a door):
 	say "It is ";
 	if D is closed:

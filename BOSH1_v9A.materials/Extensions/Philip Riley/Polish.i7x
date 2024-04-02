@@ -1,5 +1,7 @@
 Polish by Philip Riley begins here.
 
+Use authorial modesty.
+
 Include PBR Common by Philip Riley.
 Include Walls by Philip Riley.
 Include Floors by Philip Riley.

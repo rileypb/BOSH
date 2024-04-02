@@ -2,6 +2,8 @@ Version 1 of Make Test by Philip Riley begins here.
 
 "Allows automatic creation of 'test' phrases"
 
+Use authorial modesty.
+
 Recording test is a truth state that varies.
 
 Recorded test is a text that varies.

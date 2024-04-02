@@ -1,5 +1,7 @@
 Real People by Philip Riley begins here.
 
+Use authorial modesty.
+
 A behavior is a kind of object.
 Doing nothing is a behavior.
 

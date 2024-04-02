@@ -1,5 +1,7 @@
 Plugging by Philip Riley begins here.
 
+Use authorial modesty.
+
 A thing can be pluggable. A thing can be plug-into-able.
 
 Plugging-into relates a thing to a thing. The verb to be plugged into implies the plugging-into relation. The verb to accept implies the reversed plugging-into relation.

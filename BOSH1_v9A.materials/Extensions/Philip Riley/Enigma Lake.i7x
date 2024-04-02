@@ -1,5 +1,7 @@
 Enigma Lake by Philip Riley begins here.
 
+Use authorial modesty.
+
 Include Building Facades by Philip Riley.
 Include Scheduled People by Philip Riley.
 Include Secret Doors by Gavin Lambert.

@@ -2,6 +2,8 @@ Version 1/230318 of Can't Take That by Philip Riley begins here.
 
 "Custom 'can't take that' messages."
 
+Use authorial modesty.
+
 Table of Frustrated Taking
 target (a thing)	message (a text)	move message (a text)
 with 1 blank row.

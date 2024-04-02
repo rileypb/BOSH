@@ -1,5 +1,7 @@
 Two-Sided Doors by Philip Riley begins here.
 
+Use authorial modesty.
+
 [Include Locksmith by Emily Short;]
 
 Include PBR Common by Philip Riley.

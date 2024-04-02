@@ -1,5 +1,7 @@
 BOSH Tests by Philip Riley begins here.
 
+Use authorial modesty.
+
 Chapter 1 - Playtesting - Not For Release
 
 Include Playtest by Philip Riley.

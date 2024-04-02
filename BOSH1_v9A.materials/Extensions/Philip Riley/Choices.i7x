@@ -1,5 +1,7 @@
 Choices by Philip Riley begins here.
 
+Use authorial modesty.
+
 Include Complex Listing by Emily Short.
 Include Exit Lister by Eric Eve.
 Include Options Paragraph by Philip Riley.

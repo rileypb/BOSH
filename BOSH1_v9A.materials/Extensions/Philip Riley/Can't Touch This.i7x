@@ -1,5 +1,7 @@
 Can't Touch This by Philip Riley begins here.
 
+Use authorial modesty.
+
 A thing can be feelable or unfeelable. A thing is usually feelable.
 A thing can be closeby or far away. A thing is usually closeby.
 A thing can be obstructed. A thing is usually not obstructed.

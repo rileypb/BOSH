@@ -1,5 +1,7 @@
 Farseeing by Philip Riley begins here.
 
+Use authorial modesty.
+
 Include Far Away by Jon Ingold.
 
 Viewability relates various things to various rooms. The verb to be viewable from implies the viewability relation. The verb to farsee means the reversed viewability relation.

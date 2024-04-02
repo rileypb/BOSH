@@ -1,5 +1,7 @@
 Building Facades by Philip Riley begins here.
 
+Use authorial modesty.
+
 A building facade is a kind of backdrop.
 
 Enterability relates various building facades to various rooms. The verb to be enterable from means the enterability relation.

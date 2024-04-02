@@ -1,5 +1,7 @@
 Facts by Philip Riley begins here.
 
+Use authorial modesty.
+
 A fact is a kind of object.
 Some facts are defined by the Table of All Known Facts.
 

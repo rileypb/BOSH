@@ -1,5 +1,7 @@
 BOSH Polish by Philip Riley begins here.
 
+Use authorial modesty.
+
 Include Polish by Philip Riley.
 Include Scheduled People by Philip Riley.
 

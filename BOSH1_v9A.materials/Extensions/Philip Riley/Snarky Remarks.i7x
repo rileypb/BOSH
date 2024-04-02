@@ -1,5 +1,7 @@
 Snarky Remarks by Philip Riley begins here.
 
+Use authorial modesty.
+
 A thing has a text called a snarky remark. The snarky remark is usually "".
 A thing can be snarked.
 

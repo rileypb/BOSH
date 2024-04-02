@@ -1,5 +1,7 @@
 Door Varieties by Philip Riley begins here.
 
+Use authorial modesty.
+
 Include Two-Sided Doors by Philip Riley
 
 Volume 1 - Pushbar Doors

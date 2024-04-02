@@ -2,6 +2,8 @@ Version 1/230318 of Can't Go That Way by Philip Riley begins here.
 
 "Custom 'can't go that way' messages."
 
+Use authorial modesty.
+
 Table of Excuses
 source room (a room)	dirs (a list of directions)	excuse (a text)
 with 1 blank row.

@@ -1,5 +1,7 @@
 Texting by Philip Riley begins here.
 
+Use authorial modesty.
+
 Include Basic Screen Effects by Emily Short.
 Include Glulx Text Effects by Emily Short.
 

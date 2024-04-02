@@ -1,5 +1,7 @@
 Compound Details by Philip Riley begins here.
 
+Use authorial modesty.
+
 [This code by Otis T. Dog]
 
 The item being described is an object that varies. The item being described variable translates into I6 as "parameter_object".

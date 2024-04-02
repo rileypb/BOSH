@@ -1,5 +1,7 @@
 Version 1 of Walls by Philip Riley begins here.
 
+Use authorial modesty.
+
 Include PBR Common by Philip Riley.
 
 The Walls is a backdrop. it is privately-named. The printed name is "wall". Understand "wall/walls" as walls.

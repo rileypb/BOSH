@@ -1,5 +1,7 @@
 New Light by Philip Riley begins here.
 
+Use authorial modesty.
+
 A light source is a kind of thing. It is privately-named. It is usually lit. It is usually undescribed.
 
 To unlight (R - a room):

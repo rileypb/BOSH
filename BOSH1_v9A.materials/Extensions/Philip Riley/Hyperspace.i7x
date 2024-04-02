@@ -1,5 +1,7 @@
 Hyperspace by Philip Riley begins here.
 
+Use authorial modesty.
+
 Include Followup Questions by Philip Riley.
 Include Simple Conversation by Philip Riley.
 Include Third Person Narration by Philip Riley.

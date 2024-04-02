@@ -1,5 +1,7 @@
 Options Paragraph by Philip Riley begins here.
 
+Use authorial modesty.
+
 Printing the options paragraph is an activity.
 
 Options printed is a truth state that varies.

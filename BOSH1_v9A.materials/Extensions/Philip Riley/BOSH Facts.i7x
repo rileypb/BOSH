@@ -1,5 +1,7 @@
 BOSH Facts by Philip Riley begins here.
 
+Use authorial modesty.
+
 Table of All Known Facts (continued)
 fact    	summary
 vent-screws	"The vent is held closed by four screws."

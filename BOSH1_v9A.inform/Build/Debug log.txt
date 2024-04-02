@@ -31,59 +31,59 @@ I've also read Basic Screen Effects by Emily Short, which is 2218 words long.
 I've also read Punctuation Removal by Emily Short, which is 906 words long.
 I've also read Glulx Text Effects by Emily Short, which is 2182 words long.
 I've also read Formatting Capture by Daniel Stelzer, which is 671 words long.
-I've also read Essentials by Philip Riley, which is 579 words long.
-I've also read Facts by Philip Riley, which is 175 words long.
-I've also read Phones by Philip Riley, which is 1906 words long.
-I've also read Commerce by Philip Riley, which is 155 words long.
-I've also read Furniture by Philip Riley, which is 74 words long.
-I've also read Third Person Narration by Philip Riley, which is 669 words long.
-I've also read Door Utils by Philip Riley, which is 41 words long.
-I've also read Real People by Philip Riley, which is 397 words long.
+I've also read Essentials by Philip Riley, which is 582 words long.
+I've also read Facts by Philip Riley, which is 178 words long.
+I've also read Phones by Philip Riley, which is 1909 words long.
+I've also read Commerce by Philip Riley, which is 158 words long.
+I've also read Furniture by Philip Riley, which is 77 words long.
+I've also read Third Person Narration by Philip Riley, which is 672 words long.
+I've also read Door Utils by Philip Riley, which is 44 words long.
+I've also read Real People by Philip Riley, which is 400 words long.
 I've also read Visible Rooms by Philip Riley, which is 164 words long.
-I've also read Can't Touch This by Philip Riley, which is 146 words long.
-I've also read Compound Details by Philip Riley, which is 179 words long.
-I've also read Polish by Philip Riley, which is 86 words long.
-I've also read Hello by Philip Riley, which is 109 words long.
-I've also read BOSH Polish by Philip Riley, which is 4598 words long.
-I've also read Choices by Philip Riley, which is 408 words long.
-I've also read New Light by Philip Riley, which is 333 words long.
-I've also read Early Declarations by Philip Riley, which is 23 words long.
-I've also read Basics by Philip Riley, which is 195 words long.
-I've also read Building Facades by Philip Riley, which is 162 words long.
-I've also read Followup Questions by Philip Riley, which is 245 words long.
-I've also read Simple Conversation by Philip Riley, which is 2190 words long.
-I've also read Hyperspace by Philip Riley, which is 10503 words long.
-I've also read BOSH Facts by Philip Riley, which is 94 words long.
-I've also read Image Strip by Philip Riley, which is 2077 words long.
-I've also read Swamp Park by Philip Riley, which is 5972 words long.
-I've also read Margaret by Philip Riley, which is 1935 words long.
-I've also read Enigma Lake by Philip Riley, which is 21752 words long.
-I've also read I Can Dig It by Philip Riley, which is 54 words long.
-I've also read Snarky Remarks by Philip Riley, which is 200 words long.
-I've also read Overlook by Philip Riley, which is 761 words long.
+I've also read Can't Touch This by Philip Riley, which is 149 words long.
+I've also read Compound Details by Philip Riley, which is 182 words long.
+I've also read Polish by Philip Riley, which is 89 words long.
+I've also read Hello by Philip Riley, which is 112 words long.
+I've also read BOSH Polish by Philip Riley, which is 4601 words long.
+I've also read Choices by Philip Riley, which is 411 words long.
+I've also read New Light by Philip Riley, which is 336 words long.
+I've also read Early Declarations by Philip Riley, which is 26 words long.
+I've also read Basics by Philip Riley, which is 198 words long.
+I've also read Building Facades by Philip Riley, which is 165 words long.
+I've also read Followup Questions by Philip Riley, which is 248 words long.
+I've also read Simple Conversation by Philip Riley, which is 2193 words long.
+I've also read Hyperspace by Philip Riley, which is 10506 words long.
+I've also read BOSH Facts by Philip Riley, which is 97 words long.
+I've also read Image Strip by Philip Riley, which is 2080 words long.
+I've also read Swamp Park by Philip Riley, which is 5975 words long.
+I've also read Margaret by Philip Riley, which is 1938 words long.
+I've also read Enigma Lake by Philip Riley, which is 21755 words long.
+I've also read I Can Dig It by Philip Riley, which is 57 words long.
+I've also read Snarky Remarks by Philip Riley, which is 203 words long.
+I've also read Overlook by Philip Riley, which is 764 words long.
 I've also read Gender Options by Nathanael Nerode, which is 7679 words long.
-I've also read Make Test by Philip Riley, which is 281 words long.
-I've also read BOSH Tests by Philip Riley, which is 221 words long.
-I've also read Hearing by Philip Riley, which is 1251 words long.
-I've also read PBR Common by Philip Riley, which is 106 words long.
-I've also read Walls by Philip Riley, which is 898 words long.
-I've also read Floors by Philip Riley, which is 900 words long.
-I've also read Ceilings by Philip Riley, which is 1069 words long.
-I've also read Can't Go That Way by Philip Riley, which is 812 words long.
-I've also read Can't Take That by Philip Riley, which is 514 words long.
-I've also read Scheduled People by Philip Riley, which is 161 words long.
+I've also read Make Test by Philip Riley, which is 284 words long.
+I've also read BOSH Tests by Philip Riley, which is 224 words long.
+I've also read Hearing by Philip Riley, which is 1254 words long.
+I've also read PBR Common by Philip Riley, which is 109 words long.
+I've also read Walls by Philip Riley, which is 901 words long.
+I've also read Floors by Philip Riley, which is 903 words long.
+I've also read Ceilings by Philip Riley, which is 1072 words long.
+I've also read Can't Go That Way by Philip Riley, which is 815 words long.
+I've also read Can't Take That by Philip Riley, which is 517 words long.
+I've also read Scheduled People by Philip Riley, which is 164 words long.
 I've also read Complex Listing by Emily Short, which is 3410 words long.
 I've also read Exit Lister by Eric Eve, which is 3510 words long.
-I've also read Options Paragraph by Philip Riley, which is 180 words long.
+I've also read Options Paragraph by Philip Riley, which is 183 words long.
 I've also read Glulx Entry Points by Emily Short, which is 1903 words long.
-I've also read Door Varieties by Philip Riley, which is 296 words long.
+I've also read Door Varieties by Philip Riley, which is 299 words long.
 I've also read Secret Doors by Gavin Lambert, which is 272 words long.
-I've also read Plugging by Philip Riley, which is 611 words long.
-I've also read Playtest by Philip Riley, which is 923 words long.
+I've also read Plugging by Philip Riley, which is 614 words long.
+I've also read Playtest by Philip Riley, which is 926 words long.
 I've also read Glulx Definitions by Dannii Willis, which is 879 words long.
 I've also read Glk Object Recovery by Dannii Willis, which is 460 words long.
 I've also read Glk Events by Dannii Willis, which is 161 words long.
-I've also read Two-Sided Doors by Philip Riley, which is 2267 words long.
+I've also read Two-Sided Doors by Philip Riley, which is 2270 words long.
 I've also read Unit Testing by Peter Orme, which is 1643 words long.
 I've also read Developer Framework by Peter Orme, which is 435 words long.
 
@@ -314,7 +314,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 256 files written as streams.
-CPU time: 881 centiseconds
+CPU time: 815 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

@@ -1,5 +1,7 @@
 Conversations General by Philip Riley begins here.
 
+Use authorial modesty.
+
 
 howdeedoing is an action applying to nothing. Understand "how are you" as howdeedoing.
 

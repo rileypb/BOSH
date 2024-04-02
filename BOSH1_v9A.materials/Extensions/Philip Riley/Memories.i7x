@@ -1,5 +1,7 @@
 Memories by Philip Riley begins here.
 
+Use authorial modesty.
+
 A memory is a kind of thing. 
 
 A person has a list of memories called remembrances.
