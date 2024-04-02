@@ -981,6 +981,15 @@ To say crystal glow:
 	otherwise:
 		say "dark";
 
+portal opened is a truth state that varies. portal opened is false.
+
+Every turn when beam count is 3 and portal opened is false:
+	now portal opened is true;
+	now hidden cave is not dark;
+	now circular chamber is not dark;
+	now the ethereal portal is in the circular chamber;
+	say "All of a sudden the obelisk itself begins to glow. The light from the crystal at its apex grows brighter and brighter, until it's almost blinding. Shielding their eyes, Faraji watches as the space around the obelisk shimmers and distorts. The previously gentle breeze is now a gale, [if location is the steeple]screaming through the steeple[otherwise if location is the radio station roof]howling through the struts of the radio tower[otherwise]shivering the television aerial[end if]. Then, with a huge crack, a bolt of lightning strikes the crystal. One can almost sense the electricity penetrating the earth. searching for something. And then, it's found it. Below the obelisk, something has woken."	
+
 Instead of searching the telescope when the content of the tripod is the telescope: [looking through]
 	if mounted-rusty-resonator and mounted-shiny-resonator:
 		say "The telescope is pointed at the obelisk in the park. It's a bit out of focus, but [we] can see it clearly enough. Two beams of light are focused on the obelisk from elsewhere, striking the crystal adornment at its apex. The crystal is glowing brightly.";
@@ -1253,11 +1262,29 @@ Instead of examining the floor when the location is the workshed and the trapdoo
 
 Book 22 - Hidden cave
 
-a hidden cave is a room. It is in ELR. It is always-indefinite.
+a hidden cave is a room. It is in ELR. It is always-indefinite. It is dark.
+"The cave is dark and damp, with a low ceiling[if portal opened is true]. From the passage to the south comes enough light to see[otherwise]. A passage leads to the south[end if]. A set of rickety stairs leads up to the workshed above."
 
 Book 23 - Portal room
 
-the portal cave is south of hidden cave. It is in ELR. 
+a circular chamber is south of hidden cave. It is in ELR. The circular chamber is dark.
+"The chamber is circular, with a low ceiling. The walls are rough-hewn stone, and the floor is packed earth. A passage leads to the north."
+
+The ethereal portal is fixed in place. "A shimmering portal hovers in the center of the chamber, casting a faint light over the room."
+
+Instead of entering the ethereal portal:
+	say "Faraji steps through the portal. The circular chamber vanishes, and they find themself somewhere else...";
+	now the player is in the old root cellar.
+
+Book 23.5 - Old Root Cellar
+
+An old root cellar is a room. It is always-indefinite. "The chamber is dark and damp, smelling of earth and old vegetable matter. The walls, floor, and ceiling are packed earth. Light filters in from a passage to the north."
+
+Daniels is a man in the old root cellar. "[one of]A tired-looking man sits on the floor of the cellar. He looks up as Faraji appears. 'Ah, you must be the help I was promised,' he says. 'I'm Daniels. I've been waiting for you.'[or]Daniels, ragged and dirty, sits on the floor of the cellar. He looks tired.[stopping]". 
+Understand "man" as Daniels. 
+
+
+
 
 Book 24 - Lake shore west
 
@@ -2076,6 +2103,8 @@ test hathgar with "gonear kitchen/s/gonear lake street by the park/e".
 test shiny with "gonear radio roof/purloin shiny object/put object on platform/purloin cutters/cut chain with cutters/open cabinet/flip switch".
 test rusty with "purloin astral secrets/read it/gonear lunch counter/purloin clean battery/tie wires to battery/u/purloin rusty astral resonator/put rusty astral resonator in threaded socket".
 test makeshift with "gonear pulpit/purloin makeshift astral resonator/purloin cord/plug resonator into cord/plug cord into wall/e/move tapestry/flip switch/w/u/take telescope/put resonator in tripod".
+
+test cave with "test shiny/test rusty/test makeshift/gonear circular chamber".
 
 test build with "purloin tuning fork/purloin spotlight/lens/purloin wooden frame/insert tuning fork into frame/insert spotlight into frame/insert astral lenses into frame".
 

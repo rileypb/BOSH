@@ -63,6 +63,7 @@ Main at Lake	{northwest}	"[We] can't enter the town hall from here."
 Main at Lake	{northeast}	"[We] can't enter the gymnasium from here."
 Main at Lake	{south, east}	"That way ends in a residential building. The street leads north and west."
 Main at Lake	{southwest}	"[We] can't enter Rolle's Department Store from here."
+Old Root Cellar	{north}	"Faraji is heading into the north passage when Daniels calls out to him. 'I wouldn't go out there,' he says. 'The locals aren't feeling too friendly today.'"
 
 [Below, add a message for the player when they try to take something that can't be taken. Be creative; don't just say the same thing over and over agian.]
 Table of Frustrated Taking (continued)
@@ -284,7 +285,7 @@ Solvay-Road-by-the-lake	--	"Nicely-maintained black asphalt."
 Dirty shack	--	"Dirty, worn wood."
 Workshed	--	"An old, creaky wood floor."
 Hidden cave	--	"The floor of the cave is a mix of gravel and dirt."
-Portal cave	--	"The floor of the cave is a mix of gravel and dirt."
+Circular chamber	--	"The floor of the cave is a mix of gravel and dirt."
 
 
 Understand "asphalt" as the floor when the location is strip mall parking lot south.
@@ -339,7 +340,7 @@ Understand "asphalt" as the floor when the location is Solvay-Road-by-the-lake.
 Understand "wood" as the floor when the location is Dirty shack.
 Understand "wood" as the floor when the location is Workshed.
 Understand "gravel/dirt" as the floor when the location is Hidden cave.
-Understand "gravel/dirt" as the floor when the location is Portal cave.
+Understand "gravel/dirt" as the floor when the location is circular chamber.
 
 
 [ Collapsed root cellar	--	"The floor of the cellar is a mix of gravel and dirt."  ]

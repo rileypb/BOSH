@@ -994,7 +994,7 @@ After discussing show him the thumb drive:
 hand over the thumb drive is a performative quip.
 	The comment is "[We] [give] the thumb drive to Doris.".
 	Understand "hand it over", "hand him the thumb/-- drive" as hand over the thumb drive.
-	The reply is "'Great, great.' He peruses the drive. 'We lost one of our New York agents to a slingshot effect that threw him far back in time. We're always monitoring for artifacts that are out of place or anachronistic to lead us to lost agents.
+	The reply is "'Great, great.' He peruses the drive. 'We lost one of our New York agents -- a guy named Daniels -- to a slingshot effect that threw him far back in time. We're always monitoring for artifacts that are out of place or anachronistic to lead us to lost agents.
 	
 	He continues, 'The scratch marks here say, [']They found me out and sent me back. 14th century. Old Onandaga holy place. Savra is going to move on the Dragon.[']'".
 	it quip-supplies Doris.
