@@ -5,6 +5,11 @@ Use authorial modesty.
 Include Polish by Philip Riley.
 Include Scheduled People by Philip Riley.
 
+The block asking rule response (A) is "[The noun] [look] at [us] with a blank stare."
+The block answering rule response (A) is "[The noun] [look] at [us] with a blank stare."
+The block quizzing rule response (A) is "[The noun] [look] at [us] with a blank stare."
+The block informing rule response (A) is "[The noun] [look] at [us] with a blank stare."
+
 Check taking a door:
 	say "[We] can't take that with [us]." instead;
 
@@ -65,7 +70,7 @@ Main at Lake	{northwest}	"[We] can't enter the town hall from here."
 Main at Lake	{northeast}	"[We] can't enter the gymnasium from here."
 Main at Lake	{south, east}	"That way ends in a residential building. The street leads north and west."
 Main at Lake	{southwest}	"[We] can't enter Rolle's Department Store from here."
-Old Root Cellar	{north}	"Faraji is heading into the north passage when Daniels calls out to him. 'I wouldn't go out there,' he says. 'The locals aren't feeling too friendly today.'"
+Old Root Cellar	{north}	"Faraji is heading into the north passage when Daniels calls out to him. 'I wouldn't go out there,' he says. 'We need to get back to our own time.'"
 
 [Below, add a message for the player when they try to take something that can't be taken. Be creative; don't just say the same thing over and over agian.]
 Table of Frustrated Taking (continued)
@@ -195,6 +200,7 @@ radio station facade	"[We] [attempt] to lift the building, but it's too heavy."	
 Reading-Room-Facade	"And rob the community of one of its few sources of culture?"	"[We] attempt to push the store around, but it's not going anywhere."
 reception desk	"That's attached to the floor."	"That's attached to the floor."
 rickety wardrobe	"It's too heavy to lift."	"It's too heavy to move unaided."
+root vegetables	"Those belong to the Onandaga."	"Those belong to the Onandaga."
 Rolle's facade	"What would Rolle think?"	"[We] attempt to push the store around, but it's not going anywhere."
 sale posters	"[We] [don't] want to carry around useless stuff."	"They're fine where they are."
 sales counter	"That's attached to the floor."	"That's attached to the floor."
@@ -222,6 +228,7 @@ weather	"Intriguing concept."	"Intriguing concept."
 wires	"The wires travel up through a hole in the ceiling. They can't be taken without some work."	"The wires travel up through a hole in the ceiling. They can't be moved without some work."
 work schedule	"[We] [don't] need it."	"[We] [don't] need it."
 workshed-facade	"[We] attempt to push the shed around, but it's not going anywhere."	"[We] attempt to push the shed around, but it's not going anywhere."
+woven baskets	"Those belong to the Onandaga."	"Those belong to the Onandaga."
 Waiting-for-the-Aliens	"That belongs to Chief Klimp."	"That belongs to Chief Klimp."
 Travels in Time	"That belongs to Chief Klimp."	"That belongs to Chief Klimp."
 Dictionary of Strangeness	"That belongs to Chief Klimp."	"That belongs to Chief Klimp."

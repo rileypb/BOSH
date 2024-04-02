@@ -951,12 +951,17 @@ Report knocking on the BOSH back door when the location is the back lot and the 
 	rule succeeds;
 
 Instead of going inside when the location is the back lot:
-	say "You'll have to more specific than that.";
+	say "You'll have to be more specific than that.";
 
 Section 2.5 - Inside the dumpster
 
-inside-the-dumpster is a leavable room. It is inside from the back lot. The egress is outside. inside-the-dumpster is privately-named. It is in BOSH HQ. It is outdoors. The printed name is "inside the dumpster". The preposition is "".
-"It's smelly, but at least the top is open." Understand "inside of/-- the/-- dumpster" as inside-the-dumpster.
+Inside from the back lot is nowhere.
+inside-the-dumpster is a leavable room. 
+Outside from inside-the-dumpster is the back lot. 
+The egress is outside. inside-the-dumpster is privately-named. It is in BOSH HQ. It is outdoors. The printed name is "the dumpster". The preposition is "inside".
+"It's smelly, but at least the top is open." Understand "the/-- dumpster" as inside-the-dumpster.
+
+The snarky remark is "I'll get that guy Daniels for this."
 
 Instead of going when the location is inside-the-dumpster and the noun is not outside:
 	say "Blue walls block every direction.";
@@ -969,10 +974,35 @@ Biff's door is a door. It is privately-named. It is scenery. The printed name is
 Klimp's door is a door. It is west of the BOSH office hallway and east of the BOSH chief's office. It is scenery. It is closed and locked. It is openable and lockable.
 Moira's door is a door. It is north of the BOSH office hallway and south of Moira's office. It is scenery. It is closed and locked. It is openable and lockable.
 
-the BOSH office hallway is in BOSH HQ. The printed name is "hallway". "[Our] office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east."
+the BOSH office hallway is in BOSH HQ. The printed name is "hallway". "[Our] office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east. [door descriptions]."
+
+To say door descriptions:
+	let opendoors be a list of doors;
+	let closeddoors be a list of doors;
+	if Biff's door is open:
+		add Biff's door to opendoors;
+	otherwise:
+		add Biff's door to closeddoors;
+	if Klimp's door is open:
+		add Klimp's door to opendoors;
+	otherwise:
+		add Klimp's door to closeddoors;
+	if Moira's door is open:
+		add Moira's door to opendoors;
+	otherwise:
+		add Moira's door to closeddoors;
+	if opendoors is empty:
+		say "All of the doors are closed";
+	otherwise if closeddoors is empty:
+		say "All of the doors are open";
+	otherwise if the number of entries in opendoors is 1:
+		say "[reset LPR][Opendoors] is open; [closeddoors] are closed";
+	otherwise if the number of entries in closeddoors is 1:
+		say "[reset LPR][Closeddoors] is closed; [opendoors] are open";
+	otherwise:
+		say "Error.";
 
 There is a fluorescent light source in BOSH office hallway called boh-light.
- 
   
   
 Section 4 - Front Office 
@@ -1060,7 +1090,7 @@ The snarky remark of Biff's computer is "It doesn't run much worse than it did b
 Check taking Biff's computer:
 	say "[Biff's computer] is too unwieldy to carry around." instead;
  
-Instead of examining Biff's computer when the thumb drive is not seen: 
+Instead of examining or searching Biff's computer when the thumb drive is not seen: 
 	say "[description of biff's computer] But [we] [do] find a thumb drive and take it.";
 	now the player carries the thumb drive;
 	now the thumb drive is seen;
@@ -1822,6 +1852,8 @@ Book 21 - Not For Release
 [ Include BOSH Tests by Philip Riley. ]
 
 DEBUG is true.
+
+When play begins, seed the random-number generator with 1234.
 
 Understand "* [text]" as a mistake ("Noted.")
 

@@ -6,6 +6,7 @@ Include Building Facades by Philip Riley.
 Include Scheduled People by Philip Riley.
 Include Secret Doors by Gavin Lambert.
 Include Plugging by Philip Riley.
+Include Simple Conversation by Philip Riley.
 
 Volume 1 - Some Stuff
 
@@ -985,11 +986,14 @@ To say crystal glow:
 
 portal opened is a truth state that varies. portal opened is false.
 
-Every turn when beam count is 3 and portal opened is false:
+To open the portal:
 	now portal opened is true;
 	now hidden cave is not dark;
 	now circular chamber is not dark;
 	now the ethereal portal is in the circular chamber;
+
+Every turn when beam count is 3 and portal opened is false:
+	open the portal;
 	say "All of a sudden the obelisk itself begins to glow. The light from the crystal at its apex grows brighter and brighter, until it's almost blinding. Shielding their eyes, Faraji watches as the space around the obelisk shimmers and distorts. The previously gentle breeze is now a gale, [if location is the steeple]screaming through the steeple[otherwise if location is the radio station roof]howling through the struts of the radio tower[otherwise]shivering the television aerial[end if]. Then, with a huge crack, a bolt of lightning strikes the crystal. One can almost sense the electricity penetrating the earth. searching for something. And then, it's found it. Below the obelisk, something has woken."	
 
 Instead of searching the telescope when the content of the tripod is the telescope: [looking through]
@@ -1276,17 +1280,71 @@ The ethereal portal is fixed in place. "A shimmering portal hovers in the center
 
 Instead of entering the ethereal portal:
 	say "Faraji steps through the portal. The circular chamber vanishes, and they find themself somewhere else...";
-	now the player is in the old root cellar.
+	now the player is in the old root cellar;
+	now the current interlocutor is Daniels.
 
 Book 23.5 - Old Root Cellar
 
-An old root cellar is a room. It is always-indefinite. "The chamber is dark and damp, smelling of earth and old vegetable matter. The walls, floor, and ceiling are packed earth. Light filters in from a passage to the north."
+An old root cellar is a room. It is always-indefinite. "The chamber is dark and damp, smelling of earth and old vegetable matter. The walls, floor, and ceiling are packed earth. Around the walls are numerous woven baskets for storing vegetables. Light filters in from a passage to the north."
 
 Daniels is a man in the old root cellar. "[one of]A tired-looking man sits on the floor of the cellar. He looks up as Faraji appears. 'Ah, you must be the help I was promised,' he says. 'I'm Daniels. I've been waiting for you.'[or]Daniels, ragged and dirty, sits on the floor of the cellar. He looks tired.[stopping]". 
 Understand "man" as Daniels. 
 
+The woven baskets are scenery in the old root cellar. "The baskets are woven from reeds and are filled with root vegetables."
+
+The root vegetables are scenery in the old root cellar. "Looks like the vegetables are well-preserved."
+
+The passage is scenery in the old root cellar. "The passage leads to the north. From the light filtering in, it probably leads outside." Understand "light" as the passage.
 
 
+Chapter 1 - Daniels
+
+how he got here is a questioning quip. 
+	Understand "how did you get here" as how he got here.
+	The comment is "Faraji says, 'How did you end up stranded here?'".
+	The reply is "'I was hunting down Savra's minions,' Daniels says, 'but they caught me and sent me way back to the past. I've been stuck here ever since.'".
+	It quip-supplies Daniels.
+	It stocks Daniels.
+
+where-we-are is a questioning quip. 
+	It is privately-named.
+	The printed name is "where we are".
+	Understand "where are we", "where we are" as where-we-are.
+	The comment is "Faraji asks, 'Where are we?'". 
+	The reply is "'We're in an old Onandaga root cellar in upstate New York. Well not so old now, I guess. I've managed to make friends with the locals well enough, so they let me sleep in here.".
+	It quip-supplies Daniels.
+	It stocks Daniels.
+
+what's next is a questioning quip. 
+	Understand "what's next", "what next" as what's next.
+	The comment is "Faraji asks, 'What do we do next?'". 
+	The reply is "'Doris must have given you a recall button. I can rejigger it to send me to the hyperspace office and send you back to Swamp Park. I own the laundromat, by the way. Sorry I wasn't there to greet you. Alright, give me the button.'".
+	It quip-supplies Daniels.
+	It follows how he got here.
+	It follows where-we-are.
+
+The recall button can be rejiggered.
+
+After discussing what's next:
+	if the player encloses the recall button:
+		say "Faraji hands the recall button to Daniels. Daniels fiddles with the device for a moment, then hands it back. 'There you go. You can do the honors.'";
+		now the recall button is rejiggered;
+	otherwise:
+		say "Daniels' face falls. 'What? You don't have the recall button? Do you know what that means? We have no way back!' He looks around the room, then back at Faraji. 'We're stuck here.'";
+		end the story saying "Faraji is stranded in the past with Daniels."
+
+Instead of pushing the recall button when the player is in the old root cellar and the recall button is not rejiggered:
+	say "'Wait!' Daniels exclaims. Faraji stops. Daniels continues, 'Don't leave without me! I can rejigger the recall button to send me to the hyperspace office and send you back to Swamp Park. I own the laundromat, by the way. Sorry I wasn't there to greet you. Alright, give me the button.'
+	
+	Faraji hands the recall button to Daniels. Daniels fiddles with the device for a moment, then hands it back. 'There you go. You can do the honors.'";
+	now the recall button is rejiggered.
+
+Instead of pushing the recall button when the player is in the old root cellar:
+	say "Faraji is just about to push the recall button when Daniels exclaims, 'Wait! I forgot to give you this.' He pushes a small metal object into Faraji's hand. 
+	
+	Faraji doesn't have time to look at object before their finger slips and pushes the button. The room spins and fades away, and Faraji finds themself back in Swamp Park.";
+	now the player carries the wristwatch;
+	move the player to the inside-the-dumpster.
 
 Book 24 - Lake shore west
 
@@ -1342,7 +1400,7 @@ The description is "A book with a plain cover, titled 'The Book of Weird Names.'
 The first name parts is a list of text that varies. The second name parts is a list of text that varies. The third name parts is a list of text that varies. The creature types is a list of text that varies. The body parts is a list of text that varies.
 The first name parts are {"Dag", "Gor", "Zor", "Zag", "Zog", "Zig", "Zag", "Cth", "N'g", "N'k", "Ad", "Bll", "Cr", "As", "Kl"}.
 The second name parts are {"ag", "or", "ar", "og", "ig", "ag", "th", "gth", "kth", "uth", "oth", "thuk", "shaka", "fats", "steen", "don" }.
-The third name parts are {"Distressing", "Unsettling", "Impertinent", "Uninhibited", "Pugnacious", "Unspeakable", "Unpronounceable", "Unmentionable", "Smelly", "Unpleasant", "Gross", "Horrible", "Squeamish", "Unsavory", "Unpalatable", "Wistful", "Abnormal", "Unnatural", "Unusual", "Uncommon", "Unconventional", "Unorthodox", "Unprecedented", "Unheard of", "Unseen", "Hidden", "Ornery", "Unruly", "Unmanageable", "Uncontrollable", "Unpredictable", "Unreliable", "Untrustworthy", "Unfaithful", "Untrue", "Unreal", "Unrealistic", "Unreasonable", "Unjust", "Unfair", "Unkind", "Unfriendly", "Unpleasant", "Uncomfortable", "Unhappy", "Unfortunate", "Unlucky", "Unsuccessful", "Frustrating", "Unsatisfactory", "Unsatisfying", "Unfulfilling", "Unrewarding", "Ungrateful", "Unappreciative", "Unthankful", "Arrogant", "Bashful", "Boastful", "Disrespectful", "Dishonest", "Disloyal", "Disobedient", "Disorderly", "Disorganized", "Cantankerous", "Contrary", "Cranky", "Cross", "Crabby", "Crusty", "Crotchety", "Grumpy", "Irritable", "Peevish", "Perverse", "Petulant", "Quarrelsome", "Short-tempered", "Sour", "Sullen", "Surly", "Testy", "Tetchy", "Touchy", "Uncooperative", "Unyielding", "Unaccommodating", "Uncompromising", "Unforgiving", "Unrelenting", "Unsympathetic", "Unemotional", "Unfeeling", "Unresponsive", "Uncommunicative", "Unexpressive", "Unenthusiastic", "Uninterested", "Unconcerned", "Uninvolved", "Uncommitted", "Unattached", "Unconnected", "Tactless", "Thoughtless", "Insensitive", "Inconsiderate", "Selfish", "Self-centered", "Self-absorbed", "Self-indulgent", "Self-serving", "Self-seeking", "Conceited", "Vain", "Proud", "Haughty", "Egotistical", "Egocentric", "Egoistic" }
+The third name parts are {"Distressing", "Unsettling", "Impertinent", "Uninhibited", "Pugnacious", "Unspeakable", "Unpronounceable", "Unmentionable", "Smelly", "Unpleasant", "Gross", "Horrible", "Squeamish", "Unsavory", "Unpalatable", "Wistful", "Abnormal", "Unnatural", "Unusual", "Uncommon", "Unconventional", "Unorthodox", "Unprecedented", "Unheard of", "Unseen", "Hidden", "Ornery", "Unruly", "Unmanageable", "Uncontrollable", "Unpredictable", "Unreliable", "Untrustworthy", "Unfaithful", "Untrue", "Unreal", "Unrealistic", "Unreasonable", "Unjust", "Unfair", "Unkind", "Unfriendly", "Unpleasant", "Uncomfortable", "Unhappy", "Unfortunate", "Unlucky", "Unsuccessful", "Frustrating", "Unsatisfactory", "Unsatisfying", "Unfulfilling", "Unrewarding", "Ungrateful", "Unappreciative", "Unthankful", "Arrogant", "Bashful", "Boastful", "Disrespectful", "Dishonest", "Disloyal", "Disobedient", "Disorderly", "Disorganized", "Cantankerous", "Contrary", "Cranky", "Cross", "Crabby", "Crusty", "Crotchety", "Grumpy", "Irritable", "Peevish", "Perverse", "Petulant", "Quarrelsome", "Short-tempered", "Sour", "Sullen", "Surly", "Testy", "Tetchy", "Touchy", "Uncooperative", "Unyielding", "Unaccommodating", "Uncompromising", "Unforgiving", "Unrelenting", "Unsympathetic", "Unemotional", "Unfeeling", "Unresponsive", "Uncommunicative", "Unexpressive", "Unenthusiastic", "Uninterested", "Unconcerned", "Uninvolved", "Uncommitted", "Unattached", "Unconnected", "Tactless", "Thoughtless", "Insensitive", "Inconsiderate", "Selfish", "Self-centered", "Self-absorbed", "Self-indulgent", "Self-serving", "Self-seeking", "Conceited", "Vain", "Proud", "Haughty", "Egotistical", "Egocentric", "Egoistic", "Pointless", "Purposeless", "Meaningless", "Worthless", "Valueless", "Insignificant", "Trivial", "Unimportant", "Negligible", "Paltry", "Piddling", "Piffling", "Puny", "Miserable", "Wretched", "Pathetic" }
 
 To say creature name:
 	sort the first name parts in random order;
@@ -1500,7 +1558,7 @@ Book 30 - Reading Room Basement
 
 The Bookstore Basement is below the Reading Room. It is in ELR. The description is "The basement is dark and musty, with a number of shelves and boxes of books. The walls are made of old, crumbling brick. There is a faint breeze. A narrow staircase leads up[if the bricked-up-hole is revealed]. There is a ragged hole in the north wall, leading into a dark space[end if]."
 
-A bricked-up-hole is a secret door. It is north of the Bookstore Basement and south of sewer tunnel 1. It is privately-named. The printed name is "bricked-up hole in the wall'". Understand "bricked-up", "bricked/up", "hole in/-- the/-- wall/--" as bricked-up-hole. It is open and not openable. "A ragged hole in the north wall, leading into a dark space." 
+A bricked-up-hole is a secret door. It is north of the Bookstore Basement and south of sewer tunnel 1. It is privately-named. The printed name is "bricked-up hole in the wall". Understand "bricked-up", "bricked/up", "hole in/-- the/-- wall/--" as bricked-up-hole. It is open and not openable. "A ragged hole in the north wall, leading into a dark space." 
 
 To break is a verb.
 
@@ -2111,6 +2169,11 @@ test cave with "test shiny/test rusty/test makeshift/gonear circular chamber".
 test build with "purloin tuning fork/purloin spotlight/lens/purloin wooden frame/insert tuning fork into frame/insert spotlight into frame/insert astral lenses into frame".
 
 test power with "gonear pulpit/purloin makeshift astral resonator/purloin cord/e/move tapestry/flip switch/w";
+
+opening the portal is an action applying to nothing. Understand "open portal" as opening the portal.
+
+Carry out opening the portal:
+	open the portal;
 
 query-naming is an action applying to nothing. Understand "is hathgar named" as query-naming.
 Carry out query-naming:
