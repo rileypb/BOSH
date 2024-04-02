@@ -6,7 +6,9 @@ Include Essentials by Philip Riley.
 
 Include New Light by Philip Riley.    
 
-Include Door Varieties by Philip Riley.                         
+Include Door Varieties by Philip Riley.
+
+Include Exit Lister by Eric Eve.
 
 Book 1 - Outside HQ 
 

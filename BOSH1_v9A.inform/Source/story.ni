@@ -33,7 +33,7 @@ Include Hello by Philip Riley.
 
 Include BOSH Polish by Philip Riley.
  
-Include Choices by Philip Riley.
+[ Include Choices by Philip Riley. ]
  
 Include New Light by Philip Riley. 
  
@@ -1819,7 +1819,7 @@ To call resize function:
 	
 Book 21 - Not For Release 
  
-Include BOSH Tests by Philip Riley.
+[ Include BOSH Tests by Philip Riley. ]
 
 DEBUG is true.
 

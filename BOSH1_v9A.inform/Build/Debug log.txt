@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 22107 words long.
+I've now read your source text, which is 22096 words long.
 
 
 -----------------------------------------------------
@@ -37,7 +37,7 @@ I've also read Phones by Philip Riley, which is 1909 words long.
 I've also read Commerce by Philip Riley, which is 158 words long.
 I've also read Furniture by Philip Riley, which is 77 words long.
 I've also read Third Person Narration by Philip Riley, which is 672 words long.
-I've also read Door Utils by Philip Riley, which is 44 words long.
+I've also read Door Utils by Philip Riley, which is 41 words long.
 I've also read Real People by Philip Riley, which is 400 words long.
 I've also read Visible Rooms by Philip Riley, which is 164 words long.
 I've also read Can't Touch This by Philip Riley, which is 149 words long.
@@ -45,9 +45,8 @@ I've also read Compound Details by Philip Riley, which is 182 words long.
 I've also read Polish by Philip Riley, which is 89 words long.
 I've also read Hello by Philip Riley, which is 112 words long.
 I've also read BOSH Polish by Philip Riley, which is 4601 words long.
-I've also read Choices by Philip Riley, which is 411 words long.
 I've also read New Light by Philip Riley, which is 336 words long.
-I've also read Early Declarations by Philip Riley, which is 26 words long.
+I've also read Early Declarations by Philip Riley, which is 21 words long.
 I've also read Basics by Philip Riley, which is 198 words long.
 I've also read Building Facades by Philip Riley, which is 165 words long.
 I've also read Followup Questions by Philip Riley, which is 248 words long.
@@ -55,7 +54,7 @@ I've also read Simple Conversation by Philip Riley, which is 2193 words long.
 I've also read Hyperspace by Philip Riley, which is 10506 words long.
 I've also read BOSH Facts by Philip Riley, which is 97 words long.
 I've also read Image Strip by Philip Riley, which is 2080 words long.
-I've also read Swamp Park by Philip Riley, which is 5975 words long.
+I've also read Swamp Park by Philip Riley, which is 5981 words long.
 I've also read Margaret by Philip Riley, which is 1938 words long.
 I've also read Enigma Lake by Philip Riley, which is 21755 words long.
 I've also read I Can Dig It by Philip Riley, which is 57 words long.
@@ -63,7 +62,6 @@ I've also read Snarky Remarks by Philip Riley, which is 203 words long.
 I've also read Overlook by Philip Riley, which is 764 words long.
 I've also read Gender Options by Nathanael Nerode, which is 7679 words long.
 I've also read Make Test by Philip Riley, which is 284 words long.
-I've also read BOSH Tests by Philip Riley, which is 224 words long.
 I've also read Hearing by Philip Riley, which is 1254 words long.
 I've also read PBR Common by Philip Riley, which is 109 words long.
 I've also read Walls by Philip Riley, which is 901 words long.
@@ -73,19 +71,16 @@ I've also read Can't Go That Way by Philip Riley, which is 815 words long.
 I've also read Can't Take That by Philip Riley, which is 517 words long.
 I've also read Scheduled People by Philip Riley, which is 164 words long.
 I've also read Complex Listing by Emily Short, which is 3410 words long.
-I've also read Exit Lister by Eric Eve, which is 3510 words long.
 I've also read Options Paragraph by Philip Riley, which is 183 words long.
 I've also read Glulx Entry Points by Emily Short, which is 1903 words long.
 I've also read Door Varieties by Philip Riley, which is 299 words long.
+I've also read Exit Lister by Eric Eve, which is 3510 words long.
 I've also read Secret Doors by Gavin Lambert, which is 272 words long.
 I've also read Plugging by Philip Riley, which is 614 words long.
-I've also read Playtest by Philip Riley, which is 926 words long.
 I've also read Glulx Definitions by Dannii Willis, which is 879 words long.
 I've also read Glk Object Recovery by Dannii Willis, which is 460 words long.
 I've also read Glk Events by Dannii Willis, which is 161 words long.
 I've also read Two-Sided Doors by Philip Riley, which is 2270 words long.
-I've also read Unit Testing by Peter Orme, which is 1643 words long.
-I've also read Developer Framework by Peter Orme, which is 435 words long.
 
 
 -----------------------------------------------------
@@ -140,11 +135,11 @@ Phase X ... Tables and grammar
 Phase XI ... Phrases and rules
 -----------------------------------------------------
 
-Regional: CONSTANT_VNT'hyperspace'-region(I240_hyperspace)(I145'hyperspace')
+Regional: CONSTANT_VNT'field office area'-region(I245_field_office_area)(I153'field office area')
  == region
-Regional: CONSTANT_VNT'field office area'-region(I255_field_office_area)(I160'field office area')
+Regional: CONSTANT_VNT'field office area'-region(I245_field_office_area)(I153'field office area')
  == region
-Regional: CONSTANT_VNT'field office area'-region(I255_field_office_area)(I160'field office area')
+Regional: CONSTANT_VNT'hyperspace'-region(I230_hyperspace)(I138'hyperspace')
  == region
 
 
@@ -179,13 +174,13 @@ Phase XII ... Code generation
                                 0 = action. 1 = object
                                 0 = action. 1 = object
                                 0 = action. 1 = object
-        Regional: CONSTANT_VNT'hyperspace'-region(I240_hyperspace)(I145'hyperspace')
+        Regional: CONSTANT_VNT'hyperspace'-region(I230_hyperspace)(I138'hyperspace')
          == region
-        Regional: CONSTANT_VNT'hyperspace'-region(I240_hyperspace)(I145'hyperspace')
+        Regional: CONSTANT_VNT'hyperspace'-region(I230_hyperspace)(I138'hyperspace')
          == region
-        Regional: CONSTANT_VNT'hyperspace'-region(I240_hyperspace)(I145'hyperspace')
+        Regional: CONSTANT_VNT'hyperspace'-region(I230_hyperspace)(I138'hyperspace')
          == region
-        Regional: CONSTANT_VNT'hyperspace'-region(I240_hyperspace)(I145'hyperspace')
+        Regional: CONSTANT_VNT'hyperspace'-region(I230_hyperspace)(I138'hyperspace')
          == region
 0 = object. 1 = number
 0 = object. 1 = number
@@ -194,11 +189,10 @@ Phase XII ... Code generation
 0 = object. 1 = number
                                         Fail: thing (~) number = nothing
                                         Fail: thing (~) number = nothing
-        Regional: CONSTANT_VNT'hyperspace'-region(I240_hyperspace)(I145'hyperspace')
+        Regional: CONSTANT_VNT'hyperspace'-region(I230_hyperspace)(I138'hyperspace')
          == region
-        Regional: CONSTANT_VNT'hyperspace'-region(I240_hyperspace)(I145'hyperspace')
+        Regional: CONSTANT_VNT'hyperspace'-region(I230_hyperspace)(I138'hyperspace')
          == region
-0 = object. 1 = text
 
 
 ==== Phase XII.7 ... Compiling the rulebooks ====
@@ -233,9 +227,9 @@ Phase XII ... Code generation
                                                             Fail: room (~) real number = nothing
                                             Fail: nothing (~) real number = nothing
                                             Fail: room (~) real number = nothing
-        Regional: CONSTANT_VNT'hyperspace'-region(I240_hyperspace)(I145'hyperspace')
+        Regional: CONSTANT_VNT'hyperspace'-region(I230_hyperspace)(I138'hyperspace')
          == region
-        Regional: CONSTANT_VNT'hyperspace'-region(I240_hyperspace)(I145'hyperspace')
+        Regional: CONSTANT_VNT'hyperspace'-region(I230_hyperspace)(I138'hyperspace')
          == region
                                                             Fail: list of numbers (~) number = nothing
                                             Fail: nothing (~) real number = nothing
@@ -255,21 +249,21 @@ Phase XII ... Code generation
                                                             Fail: list of numbers (~) number = nothing
                                             Fail: nothing (~) real number = nothing
                                             Fail: list of numbers (~) real number = nothing
-        Regional: CONSTANT_VNT'bosh hq'-region(I763_bosh_hq)(I649'bosh hq')
+        Regional: CONSTANT_VNT'bosh hq'-region(I760_bosh_hq)(I647'bosh hq')
          == region
-        Regional: CONSTANT_VNT'bosh hq'-region(I763_bosh_hq)(I649'bosh hq')
+        Regional: CONSTANT_VNT'bosh hq'-region(I760_bosh_hq)(I647'bosh hq')
          == region
-        Regional: CONSTANT_VNT'laundromat-region'-region(I406_laundromat_region)(I299'laundromat-region')
+        Regional: CONSTANT_VNT'laundromat-region'-region(I403_laundromat_region)(I297'laundromat-region')
          == region
-        Regional: CONSTANT_VNT'laundromat-region'-region(I406_laundromat_region)(I299'laundromat-region')
+        Regional: CONSTANT_VNT'laundromat-region'-region(I403_laundromat_region)(I297'laundromat-region')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I472_elr)(I362'elr')
+        Regional: CONSTANT_VNT'elr'-region(I469_elr)(I360'elr')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I472_elr)(I362'elr')
+        Regional: CONSTANT_VNT'elr'-region(I469_elr)(I360'elr')
          == region
-        Regional: CONSTANT_VNT'field office area'-region(I255_field_office_area)(I160'field office area')
+        Regional: CONSTANT_VNT'field office area'-region(I245_field_office_area)(I153'field office area')
          == region
-        Regional: CONSTANT_VNT'field office area'-region(I255_field_office_area)(I160'field office area')
+        Regional: CONSTANT_VNT'field office area'-region(I245_field_office_area)(I153'field office area')
          == region
                                         Fail: scene (~) number = nothing
                                         Fail: scene (~) number = nothing
@@ -313,8 +307,8 @@ Providing for a total heap of 32768, given requirement of 16912
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 256 files written as streams.
-CPU time: 815 centiseconds
+Total of 249 files written as streams.
+CPU time: 818 centiseconds
 
 
 That concludes the debugging log from this run of Inform.
