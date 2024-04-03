@@ -7,6 +7,7 @@ Include Scheduled People by Philip Riley.
 Include Secret Doors by Gavin Lambert.
 Include Plugging by Philip Riley.
 Include Simple Conversation by Philip Riley.
+Include New Light by Philip Riley.
 
 Volume 1 - Some Stuff
 
@@ -61,6 +62,7 @@ Volume 3 - Geography
 
 ELR is a region.
 
+
 Book 0.5 - Directions
 
 A room has a real number called the x-coordinate. A room has a real number called the y-coordinate.
@@ -77,6 +79,15 @@ The snarky remark of the information desk is "No one's ever at the information d
 
 The bell is on the information desk. The description is "A small brass bell, used to summon the attention of the town hall staff."
 The snarky remark of the bell is "Hello! Anyone here?"
+
+Ringing is an action applying to one thing. Understand "ring [something]" as ringing.
+Understand "push [bell]", "hit [bell]" as ringing.
+
+Instead of ringing the bell:
+	say "Faraji rings the bell. It makes a clear, high-pitched sound.";
+
+Instead of ringing something when the noun is not the bell:
+	say "That's not something [we] can ring.";
 
 The backpack is a closed openable container. It is behind the information desk. The description is "Stitched into the fabric are the initials 'WGT'.".
 Understand "back/pack/rucksack/ruck/sack/knapsack/knap" as the backpack. It is wearable.
@@ -325,8 +336,10 @@ Why-he-is-still-here is a questioning quip.
 	It follows Who-is-Hutz.
 	
 How-can-you-help-me is a questioning quip.
+	It is privately-named.
 	The printed name is "how he can help [us]".
-	Understand "how/can/you/he/help/me/us/them/her/him" as how-can-you-help-me.
+	Understand "how can you help me/them/Faraji/--", "how he can help me/them/Faraji/--", "how he can help me/them/Faraji/--" as how-can-you-help-me.
+	[ Understand "how/can/you/he/help/me/us/them/her/him" as how-can-you-help-me. ]
 	The comment is "'But how can you possibly help me?' [we] [ask]."
 	The reply is "'You're looking for the secret of Enigma Lake, are you not? The secret about to be lost forever? Something calls you here; you're searching for something, no, someone. Yes, yes, Hutz can help you.'"
 	It quip-supplies Hutz.
@@ -342,10 +355,10 @@ What-is-the-secret is a questioning quip.
 	
 Help-me is a performative quip. 
 	The printed name is "ask Hutz for help".
-	Understand "ask hutz for help" as help-me.
+	Understand "hutz/-- for help" as help-me.
 	Understand "please/-- help me/-- please/--" as help-me.
 	The comment is "[We] [say], 'Okay, how can you help?'"
-	The reply is "'Oh yes, how was I going to help? Afraid I can't remember, sorry.'"
+	The reply is "'Oh yes, how was I going to help? Afraid I can't remember, sorry. Can't seem to focus.'"
 	It quip-supplies Hutz.
 	It follows How-can-you-help-me.
 
@@ -1255,14 +1268,14 @@ After going to the workshed when the trapdoor is unrevealed and the player carri
 Description notes for the dowsing rod:
 	if the location is the workshed and the trapdoor is unrevealed:
 		add "vibrating" to descriptive notes;
-	if the location is the large grave and the metal case is nowhere:
+	if the location is a large grave and the metal case is nowhere:
 		add "vibrating" to descriptive notes;
 
 Instead of examining the dowsing rod when the location is the workshed and the trapdoor is unrevealed:
 	say "The dowsing rod is vibrating.";
 
 Instead of examining the floor when the location is the workshed and the trapdoor is unrevealed:
-	say "[We] [examine] the floor closely, and discover the faint outlines of a trapdoor.";
+	say "[We] [examine] the floor closely, and discover the faint outlines of a trapdoor[if the player encloses the dowsing rod]. The vibrations cease[end if].";
 	now the trapdoor is revealed;
 
 
@@ -1455,17 +1468,25 @@ The shovel is in the Horton graveyard. "A shovel lies on the ground, forgotten."
 Some holes are scenery in the Horton graveyard. "The graveyard is riddled with holes where the bodies have been exhumed for the coming flood. One of the holes is substantially larger and deeper than the others."
 
 The large hole is a building facade. It is in Horton Graveyard. Understand "larger" as large hole. "The hole is substantially larger and deeper than the others."
-	It fronts large grave.
+	It fronts a large grave.
 	It is enterable from Horton Graveyard.
 
-The large grave is a room. It is in ELR. It is outdoors. It is always-indefinite. "The hole is substantially larger and deeper than the others." 
+a large grave is a room. It is in ELR. It is outdoors. It is always-indefinite. "The hole is substantially larger and deeper than the others." 
 
 Above the large grave is the Horton graveyard.
+
+After going to the large grave when the metal case is nowhere and the player encloses the dowsing rod:
+	say "Something [we] [are] carrying starts to vibrate.";
+	continue the action;
+
+After going from the large grave when the metal case is nowhere and the player encloses the dowsing rod:
+	say "The vibrations cease.";
+	continue the action;
 
 A metal case is a closed openable container. The description is "A small metal case, about the size of a breadbox. It seems to be made of lead. It is [if open]open[otherwise]closed[end if]." 
 [ A metal corner is in the large grave. "[We] [notice] a small corner of something metallic sticking out of the dirt at the bottom of the hole." The description is "The corner of some metallic object, possibly made of lead, sticks out of the dirt at the bottom of the hole." ]
 
-Instead of examining the dowsing rod when the location is the large grave and the metal case is nowhere:
+Instead of examining the dowsing rod when the location is the large grave and the metal case is nowhere and the player encloses the dowsing rod:
 	say "The dowsing rod is vibrating.";
 
 Digging is an action applying to nothing. Understand "dig" as digging.
@@ -1486,7 +1507,7 @@ Carry out digging when the location is the large grave and the player encloses t
 	now the player carries the metal case;
 
 Report digging when the location is the large grave and the player encloses the shovel and the metal case was nowhere:
-	say "[We] [dig] a little bit, and [run] into something metallic. [We] [dig] a little more, and [find] a small metal case. [We] [take] it with [us].";
+	say "[We] [dig] a little bit, and [run] into something metallic. [We] [dig] a little more, and [find] a small metal case. [We] [take] it with [us][if the player encloses the dowsing rod]. The vibrations cease[end if].";
 
 [ Understand the command "uncover" as something new.
 Uncovering is an action applying to one thing. Understand "uncover [something]" as uncovering.
@@ -1512,7 +1533,8 @@ Horton-back-facade is a building facade. It is in Horton Graveyard. It is privat
 	Horton-back-facade fronts Horton Family House Kitchen.
 	It is enterable from Horton Graveyard. 
 
-The Witnessing of Hezekiah is in the metal case. The description is "A small, leather-bound book, titled 'The Witnessing of Hezekiah: as told to Jeremiah Horton by Hezekiah Horton'. The book is filled with strange, cryptic passages, and is difficult to read. [We] [find] one page of particular interest. It reads, 'And lo, Hezekiah, in his wisdom, did prophesy of the impending flood and the necessity to make ready. He spoke of a sacred artifact, a resonator, bestowed with divine power, that would unveil a gateway to the ethereal realm. And he revealed the quest to find the astral focus, a sacred relic of great significance. Thus he spake: [']Take the resonator, and with reverence, bind it to the eternal flame, and then to the astral focus. Channel a mighty power through it, and direct them towards the crystal eye. Strike the eye thrice, with unwavering devotion, and behold, the portal shall open, revealing the path to transcendence.[']'";
+The Witnessing of Hezekiah is in the metal case. It is proper-named. The printed name is "The Witnessing of Hezekiah". Understand "book" as The Witnessing of Hezekiah.  
+The description is "A small, leather-bound book, titled 'The Witnessing of Hezekiah: as told to Jeremiah Horton by Hezekiah Horton'. The book is filled with strange, cryptic passages, and is difficult to read. [We] [find] one page of particular interest. It reads, 'And lo, Hezekiah, in his wisdom, did prophesy of the impending flood and the necessity to make ready. He spoke of a sacred artifact, a resonator, bestowed with divine power, that would unveil a gateway to the ethereal realm. And he revealed the quest to find the astral focus, a sacred relic of great significance. Thus he spake: [']Take the resonant origin, and with reverence, bind it to the eternal flame, and then to the astral focus. Channel a mighty power through it, and direct them towards the crystal eye. Strike the eye thrice, with unwavering devotion, and behold, the portal shall open, revealing the path to transcendence.[']'";
 
 The shiny astral resonator is carried by the group of lizard people. It is privately-named. The description is "A small, shiny, metallic, cylindrical object. One end is capped with a lens, while the other terminates in two shiny metal chains, each with a shiny metal clamp, as if it were designed to be attached to something.".
 The printed name is "[if Astral Secrets is familiar]shiny astral resonator[otherwise]strange, shiny, metal object[end if]".
@@ -1908,7 +1930,15 @@ Putting in a locker is an action applying to one thing and one number. Understan
 Check putting in a locker:
 	say "There's no point in that." instead;
 
+Book 38 - Light sources
 
+There is a fluorescent light source in Enigma Lake town hall called town hall light source.
+There is a fluorescent light source in Radio Station WGXC called radio station light source.
+There is a fluorescent light source in Broadcast Booth called broadcast booth light source.
+There is a fluorescent light source in Rolle's Department Store called Rolle's light source.
+There is a fluorescent light source in Henry's Hot Skillet called Henry's light source.
+There is a fluorescent light source in Reading Room called Reading Room light source.
+There is a fluorescent light source in Fresnel's Music called Fresnel's light source.
 		
 Volume 4 - Eerie Sounds
 

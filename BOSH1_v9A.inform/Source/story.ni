@@ -1873,6 +1873,13 @@ test part1 with "w/w/s/open desk/n/e/ask about key/ask about computer/look behin
 test part2 with "f/f/f/f/f/fn/fw/fn/fn/fw/w/fn/w/take compass/x 
 it/s/s/s/s/s/s/s/e/e/e/e/e/e/e/e/b/b/b/b/b/b/b/b/b/d".
 
+test part3 with "w/w/show drive/hand drive/ask about savra/ask 
+about mission/ask how to get home/e/e/ask how to get 
+home/w/b/enter portal/knock on door/x shelf/borrow/tribes/s/s/z/w/wear 
+lenses/b/n/f/d/s/enter machine/d/e/w/w/give book to doris/e/s/give 
+note to christy/n/n/ask coffee/s/s/give coffee/n/n/w/give note to 
+doris/ask how i will find him/ready/e/f/enter portal".
+
 test wrench with "w/look behind desk/purloin red screwdriver";
 
 test desk with "sw/purloin wristwatch/give watch to dave/ne/n/e/buy screwdriver/w/s/w/look behind desk/open vent/w/s";

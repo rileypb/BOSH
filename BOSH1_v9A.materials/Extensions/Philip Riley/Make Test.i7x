@@ -23,6 +23,7 @@ Check stop recording:
 		say "Not recording a test." instead;
 		
 Carry out start recording:
+	now recorded test is "";
 	now recording name is the topic understood;
 	now recording test is true;
 	
