@@ -20,4 +20,7 @@ After saying hello to Margaret Chao for the first time:
 After saying hello to someone for the first time:
 	say "Faraji and [the noun] greet each other.";
 
+After saying hello to Hutz for the first time:
+	do nothing;
+
 Hello ends here.

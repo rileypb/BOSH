@@ -80,21 +80,27 @@ The snarky remark of the information desk is "No one's ever at the information d
 The bell is on the information desk. The description is "A small brass bell, used to summon the attention of the town hall staff."
 The snarky remark of the bell is "Hello! Anyone here?"
 
-Ringing is an action applying to one thing. Understand "ring [something]" as ringing.
-Understand "push [bell]", "hit [bell]" as ringing.
+Chiming is an action applying to one thing. Understand "ring [something]" as Chiming.
+Understand "push [bell]", "hit [bell]" as Chiming.
 
-Instead of ringing the bell:
-	say "Faraji rings the bell. It makes a clear, high-pitched sound.";
+Instead of Chiming the bell:
+	say "Faraji rings the bell. It makes a clear, high-pitched sound. No one comes to the desk to help.";
 
-Instead of ringing something when the noun is not the bell:
+Instead of Chiming something when the noun is not the bell:
 	say "That's not something [we] can ring.";
 
 The backpack is a closed openable container. It is behind the information desk. The description is "Stitched into the fabric are the initials 'WGT'.".
 Understand "back/pack/rucksack/ruck/sack/knapsack/knap" as the backpack. It is wearable.
 The snarky remark of the backpack is "Am I allowed to rummage through people's stuff? I mean, I'm going to anyway, but I want to know if I'm allowed to."
 
-Instead of doing something other than taking off or dropping the backpack when the backpack is worn:
-	say "You can't do that while wearing the backpack.";
+Before doing something to the backpack when the backpack is worn:
+	if the current action is taking off the backpack:
+		continue the action;
+	otherwise if the current action is dropping the backpack:
+		continue the action;
+	otherwise:
+		say "You'll have to take off the backpack first.";
+		stop the action;
 
 After dropping the backpack:
 	say "You slide the backpack off your shoulders and drop it to the floor.";
@@ -170,10 +176,11 @@ Check climbing up the obelisk:
 Check climbing up trees:
 	say "[We] would rather not break [our] leg." instead;
 	
-Park facade is a building facade. It is in Solvay Road leading out of town, Lake shore north of the park, and Lake Street by the park. It is privately-named. The printed name is "Enigma Park". Understand "enigma/park" as Park facade. "A shadowy clump of trees marks the edge of Enigma Park."
+Park facade is a building facade. It is in Solvay Road leading out of town, Lake shore north of the park, Lake Street by the park, and Enigma Lake Town Hall. It is privately-named. The printed name is "Enigma Park". Understand "enigma/park" as Park facade. "[if location is Enigma Lake Town Hall]Faraji can't see much from here[otherwise]A shadowy clump of trees marks the edge of Enigma Park[end if]."
 	It is enterable from Solvay Road leading out of town.
 	It is enterable from Lake shore north of the park.
 	It is enterable from Lake Street by the park.
+	It is enterable from Enigma Lake Town Hall.
 	It fronts Enigma Park.
 The snarky remark of the park facade is "Have the muggers left before the flood?"
 
@@ -297,7 +304,7 @@ Check petting a person:
 	say "[The noun] probably wouldn't appreciate that." instead;
 
 Report petting the mangy cat:
-	say "The cat purrs and leans into [our] hand." instead;
+	say "[one of]The cat purrs and leans into [our] hand[or]The cat purrs and rubs against [our] leg[or]The cat purrs and stretches out on the bed, looking content[or]The cat purrs and licks [our] hand[at random].";
 
 Hutz is a man in dirty shack. Hutz is privately-named. "[A Hutz] is reclining on a narrow bed." The description is "[A Hutz] is more or less a skeleton in overalls." Hutz is adaptively-named and anonymous and not proper-named. 
 	Understand "bony/old/man" as Hutz. 
@@ -319,7 +326,7 @@ Who-is-Hutz is a questioning quip.
 	The printed name is "who he is".
 	Understand "who are you", "who/he/is" as who-is-hutz.
 	The comment is "[We] [ask], 'You seem to know me, but who are you?'"
-	The reply is "'Name's Hutz, the town groundskeeper. Or was, I guess. Not much to keep now.'"
+	The reply is "'Name's Hutz. I'm the town groundskeeper. Or was, I guess. Not much to keep now.'"
 	It quip-supplies Hutz.
 	It stocks Hutz.
 	
@@ -1362,6 +1369,8 @@ Instead of pushing the recall button when the player is in the old root cellar:
 Book 24 - Lake shore west
 
 the Lake Shore West is west of Lake Shore North of the Park and north of Solvay Road Leading Out Of Town. It is east of Solvay-Road-by-the-lake. It is in ELR. It is outdoors. The printed name is "west end of the town's lake shore". The preposition is "at". "The lake stretches to the north, while the town lies to the south. Solvay Road can be seen to the west, and the shore continues to the east." 
+
+The snarky remark of the Lake Shore West is "Haha, come and get me, lake. I dare you. Oh no -- have I regressed to taunting water?"
 
 Book 25 - Horton Family House Kitchen
 
