@@ -1602,13 +1602,30 @@ The shiny lens is part of the shiny astral resonator. The description is "A lens
 
 Book 28 - Fire Station 1
 
-The garage door is a closed locked lockable openable scenery door. It is west of Solvay Road 100 block and east of the Fire Station 1. Understand "big/red/door" as garage door. The description is "A big red door, with a sign reading 'Fire Station 1'."
+The garage door is a closed scenery door. It is west of Solvay Road 100 block and east of the Fire Station 1. Understand "big/red/door" as garage door. The description is "[if the location is Solvay Road 100 block]A big red door, with a sign reading 'Fire Station 1'[otherwise]It's a big red door[end if]."
 
-Fire Station 1 is in ELR. The printed name is "Hook and Ladder Company #1". "The fire station is a modest red brick building dating to the late 19th century. The garage door is to the east."
+Fire Station 1 is in ELR. The printed name is "Hook and Ladder Company #1". "The fire station is a modest red brick building dating to the late 19th century. The garage door is to the east. There is a large blue button mounted on the wall."
+Understand "hook/and/ladder/company/#1" as Fire Station 1. 
 
 The ladder is in the Fire Station 1. "A ladder rests against the wall." The description is "A wooden ladder, about 6 feet long. It looks sturdy and well-maintained."
 
 The spotlight is in the Fire Station 1. The description is "A small spotlight, designed to be hand-held. It has a short cord ending in a standard North American 120V AC plug."
+
+The blue button is scenery in the Fire Station 1. "A large blue button, mounted on the wall."
+
+Instead of pushing the blue button when the garage door is closed:
+	say "Faraji pushes the blue button. A klaxon sounds, and the garage door opens.";
+	now the garage door is open.
+
+Instead of pushing the blue button when the garage door is open:
+	say "Faraji pushes the blue button. The garage door closes.";
+	now the garage door is closed.
+
+Instead of opening the garage door when the garage door is closed:
+	say "The garage door is too large and heavy to open unaided.";
+
+Instead of closing the garage door when the garage door is open:
+	say "The garage door is too large and heavy to close unaided.";
 
 Book 29 - Reading Room
 
