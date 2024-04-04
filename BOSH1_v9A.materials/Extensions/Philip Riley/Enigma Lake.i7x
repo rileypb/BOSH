@@ -1820,8 +1820,8 @@ The snarky remark is "I'm sure I've seen this floor waxer somewhere before."
 
 Book 36 - Public Gymnasium
 
-The gym door is a closed locked openable lockable scenery door. It is east of Lake Street by the gym and west of the public gymnasium.
-The snarky remark of the gym door is "C'mon, I need to get my reps in."
+The gym door is a closed locked openable lockable scenery door. It is east of Lake Street by the gym and west of the public gymnasium. It has matching key the green key. The description is "A simple metal door, painted white. A sign on the door reads 'Public Gymnasium'."
+The snarky remark of the gym door is "[if the gym door is locked]C'mon, I need to get my reps in[otherwise]Seen one door, there are still several billion more[end if]."
 
 The public gymnasium is in ELR. "There is a basketball court and a weight training area. A front desk is next to the front entrance."
 The snarky remark of the public gymnasium is "This is the kind of government largesse that bankrupted 1950s America. For reals."
@@ -1830,6 +1830,10 @@ Index map with public gymnasium mapped east of Lake Street by the gym.
 
 The gym front desk is a scenery supporter in the public gymnasium. "Some kind of record book sits on the front desk."
 The snarky remark of the gym front desk is "Where do I scan my ID card?"
+
+The green key is a key in the public gymnasium. "A green key hangs on a hook." The description is "A plain green key."
+
+The hook is scenery in the public gymnasium. "A plain hook mounted on the wall[if the green key is not handled]. A green key hangs from it[end if]."
 
 The membership book is fixed in place scenery on the gym front desk. The description is "It's a book apparently full of records of the members of the gym. [We] could LOOK UP a member's name IN BOOK."
 The snarky remark of the membership book is "God forbid this information should fall into the wrong hands."
