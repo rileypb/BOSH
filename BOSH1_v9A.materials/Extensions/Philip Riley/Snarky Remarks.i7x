@@ -14,24 +14,24 @@ To snark (O - an object):
 	say "[italic type][bracket][snarky remark of O][close bracket][roman type][paragraph break]";
 	now O is snarked;
 
-A rule for snarking a thing (called the target) (this is the thing-snarking rule):
+A rule for snarking a thing (called the target) (this is the standard thing-snarking rule):
 	if the snarky remark of the target is not empty:
 		snark the target;
 		rule succeeds;
 
-A rule for snarking a room (called the target) (this is the room-snarking rule):
+A rule for snarking a room (called the target) (this is the standard room-snarking rule):
 	if the snarky remark of the target is not empty:
 		snark the target;
 		rule succeeds;
 
-After examining a thing when the noun is not snarked:
+After examining a thing when the noun is not snarked (this is the thing-snarking rule):
 	follow the snarking rules for the noun;
 	continue the action;
 
-For printing the locale description when the location is not snarked (this is the snarky locale description rule):
+For printing the locale description when the location is not snarked (this is the room-snarking rule):
 	follow the snarking rules for the location;
 	continue the action;
 
-The snarky locale description rule is listed before the new you-can-also-see rule in the for printing the locale description rulebook.
+The room-snarking rule is listed before the new you-can-also-see rule in the for printing the locale description rulebook.
 
 Snarky Remarks ends here.

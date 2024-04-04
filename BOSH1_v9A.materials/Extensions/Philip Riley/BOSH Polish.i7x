@@ -26,6 +26,7 @@ Hutz	"bony old man"	"town groundsman"	"Hutz"
 Table of Walls (continued)
 locale (a room)	has walls (a truth state)	wall description (a text)	touch description (a text)
 Christy's office	--	"The walls are painted a bright cheerful orange."	--
+Bookstore Basement	--	"The walls look as though they are crumbling with age."	"Paint and loose bits of mortar crumble under [our] touch."
 
 Table of Transitions
 source room (a room)	target room (a room)	transition text (a text)	used (a truth state)

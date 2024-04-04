@@ -1853,6 +1853,15 @@ Book 21 - Not For Release
 
 DEBUG is true.
 
+AUDIT is a truth state that varies.
+AUDIT is false.
+
+When play begins:
+	if AUDIT is true:
+		repeat with X running through things:
+			if the snarky remark of X is not "":
+				say "[X] -- [snarky remark of X][line break]";
+
 When play begins, seed the random-number generator with 1234.
 
 Understand "* [text]" as a mistake ("Noted.")
@@ -1879,6 +1888,21 @@ home/w/b/enter portal/knock on door/x shelf/borrow/tribes/s/s/z/w/wear
 lenses/b/n/f/d/s/enter machine/d/e/w/w/give book to doris/e/s/give 
 note to christy/n/n/ask coffee/s/s/give coffee/n/n/w/give note to 
 doris/ask how i will find him/ready/e/f/enter portal".
+
+test part41 with "x desk/read schedule/x pack/open it/take 
+key/n/n/w/w/w/take hammer/e/se/s/s/e/e/n/take 
+object/s/w/w/w/read book/i/take book/d/take cord/swing hammer at 
+wall/n/e/e/wear lens/f/bn/x lockers/open locker 1/u/shoot hoops/x 
+desk/read book/read membership book/take it/look up thompson in 
+membership book/d/open 1/open 10/u/x machine 
+weight/d/fs/b/w/w/s/u/out/e/sw/take/ne/s/x copper key/unlock 
+door with copper key/e/s/take waxer/n/e/n/n/n/enter truck/open 
+it/get in/open glove/take key/w/out/x truck/x bed/take 
+cutters/ne/n/w/w/s/w/unlock door with copper key/w/take rod/s/l/x 
+table/read book of names/read book of names/read book of 
+names/wear lenses/fs/be/take all/x spotlight/x ladder/fw/bn/take 
+book/u/n/u/open wardrobe/take frame/x it/d/w/take shovel/d/i".
+
 
 test wrench with "w/look behind desk/purloin red screwdriver";
 

@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 21301 words long.
+I've now read your source text, which is 21403 words long.
 
 
 -----------------------------------------------------
@@ -44,20 +44,20 @@ I've also read Can't Touch This by Philip Riley, which is 149 words long.
 I've also read Compound Details by Philip Riley, which is 182 words long.
 I've also read Polish by Philip Riley, which is 89 words long.
 I've also read Hello by Philip Riley, which is 123 words long.
-I've also read BOSH Polish by Philip Riley, which is 4691 words long.
+I've also read BOSH Polish by Philip Riley, which is 4714 words long.
 I've also read New Light by Philip Riley, which is 336 words long.
 I've also read Early Declarations by Philip Riley, which is 21 words long.
 I've also read Basics by Philip Riley, which is 198 words long.
-I've also read Building Facades by Philip Riley, which is 165 words long.
+I've also read Building Facades by Philip Riley, which is 167 words long.
 I've also read Followup Questions by Philip Riley, which is 248 words long.
 I've also read Simple Conversation by Philip Riley, which is 2193 words long.
 I've also read Hyperspace by Philip Riley, which is 10573 words long.
 I've also read BOSH Facts by Philip Riley, which is 97 words long.
 I've also read Swamp Park by Philip Riley, which is 5981 words long.
 I've also read Margaret by Philip Riley, which is 1938 words long.
-I've also read Enigma Lake by Philip Riley, which is 22805 words long.
+I've also read Enigma Lake by Philip Riley, which is 23311 words long.
 I've also read I Can Dig It by Philip Riley, which is 57 words long.
-I've also read Snarky Remarks by Philip Riley, which is 203 words long.
+I've also read Snarky Remarks by Philip Riley, which is 206 words long.
 I've also read Overlook by Philip Riley, which is 764 words long.
 I've also read Gender Options by Nathanael Nerode, which is 7679 words long.
 I've also read Make Test by Philip Riley, which is 288 words long.
@@ -287,7 +287,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 246 files written as streams.
-CPU time: 739 centiseconds
+CPU time: 768 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

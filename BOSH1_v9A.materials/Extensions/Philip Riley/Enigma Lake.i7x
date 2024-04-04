@@ -130,6 +130,7 @@ After examining the information desk when the backpack is nowhere:
 	now the player carries the backpack;
 	say "[We] [find] a backpack behind the information desk and [take] it.";
 	now the backpack is not behind the information desk;
+	continue the action;
 
 Chapter 1 - Town Hall backdrop
 
@@ -369,6 +370,12 @@ Help-me is a performative quip.
 	It quip-supplies Hutz.
 	It follows How-can-you-help-me.
 
+Instead of requesting Hutz for help-me:
+	try discussing help-me;
+
+Instead of imploring Hutz for "help":
+	try discussing help-me;
+
 Now-can-you-help-me is a questioning quip.
 	The printed name is "if he can now help [us]".
 	Understand "if/now/can/you/help/me/us/them/her/him" as now-can-you-help-me.
@@ -439,7 +446,7 @@ The broken lock is a thing. The description is "A broken padlock." Understand "p
 Check cutting the steel chain:
 	say "The chain is too thick to cut with [our] bare hands." instead;
 
-Cutting it with is an action applying to two things. Understand "cut [something] with/using [something]", "break [something] with/using [something]", "snap [something] with/using [something]" as cutting it with.
+Cutting it with is an action applying to two things. Understand "cut [something] with/using [something]"  as cutting it with.
 
 Opening it with is an action applying to two things. Understand "open [metal cabinet] with/using [bolt cutters]", "unlock [metal cabinet] with/using [bolt cutters]", "open [padlock] with/using [bolt cutters]", "unlock [padlock] with/using [bolt cutters]", "open [steel chain] with/using [bolt cutters]", "unlock [steel chain] with/using [bolt cutters]" as opening it with.
 
@@ -668,16 +675,25 @@ The lectern is scenery in First Utilitarian Church of Enigma Lake. "The lectern 
 
 To read is a verb.
 
-The Book of Utilitarianism is on the lectern. It is proper-named. 
+The Book of Utilitarianism is on the lectern. It is proper-named. The printed name is "[italic type]The Book of Utilitarianism[roman type]".
+
+The cursed word is text that varies. The cursed word is "".
 
 Instead of examining the Book of Utilitarianism:
-	let the section be a random number from 1 to 3;
-	if section is 1:
-		say "The text is the 'Book of Utilitarianism'. [We] [open] to a page at random and [read] the text:[paragraph break][one of]And the Lord said, 'The path of the righteous is beset on all sides by the inequities of the selfish and the tyranny of the lizard people. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who attempt to poison and destroy my brothers. And you will know my name is the Lord when I lay my vengeance upon thee.'[or]But the Lord said to the lizard people, 'You are truly mine enemy, and I will smite you with great vengeance and furious anger. You will know my name is the Lord when I lay my vengeance upon thee.'[or]For thou shalt not suffer a lizard person to live, for they are an abomination unto the Lord.[or]And God so loved the world that he gave his only begotten son, that whosoever believeth in him should not perish, but have everlasting life. The lizard people are not included in this offer.[or]And it came to be that the Lord made aliens, and he saw that they were good, and he made lizard people, and he saw that they were not good. And he made humans, and he saw that they were not good either. And he made the platypus, and he saw that it was good. But later the humans became good, sort of like Godzilla.[or]And the Lord said, 'Let there be light,' and there was light. And the Lord said, 'Let there be lizard people,' and there were lizard people. And the Lord said, 'Let there be humans,' and there were humans. And the Lord said, 'Let there be platypuses,' and there were platypuses.[then at random]";
-	otherwise if section is 2:
-		say "The text is the 'Book of Utilitarianism'. [We] [open] to a page at random and [read] the text:[paragraph break][one of]And Gob begat Bob, and Bob begat Rob, and Rob begat Job, and Job begat Chauncey, and Chauncey begat Hank, and all told there were fifty-two generations between Gob and Gob XII, who was the last of the line. And Gob XII begat no one, for he was a eunuch. And the Lord said, 'That's what you get for hanging out with lizard people.'[or]Then the Lord said to Gorm, 'Gather up all your childen, and take them to the mountain, and there I will give you the tablets of Utilitarianism, which I have written, that you may teach them.' And Gorm said, 'But Lord, I have no children.' And the Lord said, 'Then go forth and make some children, and then gather them up and take them to the mountain, and there I will give you the tablets of Utilitarianism, which I have written, that you may teach them.'[or]And the hosts of the lizard people came down from the mountains, and they were many, and they were fierce, and they were hungry. And the Lord said, 'I'm not going to feed them, they're your problem.'[or]And the Lord said, 'I am the Lord, and I am a jealous God, and I will visit the iniquity of the fathers upon the children unto the third and fourth generation of them that hate me, and show mercy unto thousands of them that love me and keep my commandments.' And the lizard people said, 'We hate you.'[then at random]";
+	let just set the word be false;
+	if the cursed word is "":
+		now just set the word is true;
+		now the cursed word is the substituted form of "[one of]ontogeny[or]ontology[or]reification[or]epistemology[or]hermeneutics[or]deconstruction[or]postmodernism[or]paradigm[or]synergy[or]heuristic[or]praxis[or]dialectic[or]teleology[or]deontological[or]phenomenology[or]existentialism[or]semiotics[or]semantics[or]epistemology[at random]";
+	if just set the word is true or a random chance of 1 in 4 succeeds:
+		say "The text is the [italic type]Book of Utilitarianism[roman type]. [We] [open] to a page at random and [read] the text:[paragraph break]And the Lord so hated the lizard people that he smote them with a mighty smiting, and he said the cursed word '[cursed word]', and the lizard people screamed and ran away like scared little children.";
 	otherwise:
-		say "The text is the 'Book of Utilitarianism'. [We] [open] to a page at random and [read] the text:[paragraph break][one of]However, the Lord said to the lizard people, 'I am the Lord of the humans, and I -- oh, and the aliens -- and I will smite you with great vengeance and furious anger and the like.'[or]By the by, Gorm came upon the town of Armagast, and he saw that it was good, and he said, 'I shall build a church here.' And the Lord said, 'No, don't do that, it's a bad idea.' And Gorm said, 'But Lord, I have already started.' And the Lord said, 'Well, okay, but don't say I didn't warn you.'[or]But Gorm's wife was treacherous, and she lay with lizard people, and she bore a son, and the Lord said, 'I'm not going to smite you, but I'm not going to be happy about it.'[or]When Gorm learned of his wife's doings, he rent his garments and wept, and the Lord said, 'Keep it together, man.'[or]And the land was filled with the iniquities of the lizard people, and the Lord said, 'I'm not going to clean that up.'[or]The host of the lizard people sacked the now rather prosperous town of Armagast, and the Lord said, 'I told you so.'[or]And the Lord said, ' [']Tis a far, far better thing that I do, than I have ever done; [']tis a far, far better rest that I go to than I have ever known.' And the lizard people said, 'That's from A Tale of Two Cities.'[or]And the Lord was attending his weekly reading circle, when he had an idea. 'I shall make a world,' he said, 'and I shall call it Earth.' And the lizard people said, 'That's a terrible name.'[or]And lo, the lizard people rebelled against the Lord, and the Lord said, 'I'm not going to put up with that.'[or]And in the town of Gabblehouse was born an infant to a woman named Gorma, and the Lord said, 'That's a terrible name.'[or]And the Lord said, 'I shall rain down upon thee with great vengeance and furious anger, and the lizard people said, 'We've heard that before.'[then at random]"
+		let the section be a random number from 1 to 3;
+		if section is 1:
+			say "The text is the [italic type]Book of Utilitarianism[roman type]. [We] [open] to a page at random and [read] the text:[paragraph break][one of]And the Lord said, 'The path of the righteous is beset on all sides by the inequities of the selfish and the tyranny of the lizard people. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who attempt to poison and destroy my brothers. And you will know my name is the Lord when I lay my vengeance upon thee.'[or]But the Lord said to the lizard people, 'You are truly mine enemy, and I will smite you with great vengeance and furious anger. You will know my name is the Lord when I lay my vengeance upon thee.'[or]For thou shalt not suffer a lizard person to live, for they are an abomination unto the Lord.[or]And God so loved the world that he gave his only begotten son, that whosoever believeth in him should not perish, but have everlasting life. The lizard people are not included in this offer.[or]And it came to be that the Lord made aliens, and he saw that they were good, and he made lizard people, and he saw that they were not good. And he made humans, and he saw that they were not good either. And he made the platypus, and he saw that it was good. But later the humans became good, sort of like Godzilla.[or]And the Lord said, 'Let there be light,' and there was light. And the Lord said, 'Let there be lizard people,' and there were lizard people. And the Lord said, 'Let there be humans,' and there were humans. And the Lord said, 'Let there be platypuses,' and there were platypuses.[then at random]";
+		otherwise if section is 2:
+			say "The text is the [italic type]Book of Utilitarianism[roman type]. [We] [open] to a page at random and [read] the text:[paragraph break][one of]And Gob begat Bob, and Bob begat Rob, and Rob begat Job, and Job begat Chauncey, and Chauncey begat Hank, and all told there were fifty-two generations between Gob and Gob XII, who was the last of the line. And Gob XII begat no one, for he was a eunuch. And the Lord said, 'That's what you get for hanging out with lizard people.'[or]Then the Lord said to Gorm, 'Gather up all your childen, and take them to the mountain, and there I will give you the tablets of Utilitarianism, which I have written, that you may teach them.' And Gorm said, 'But Lord, I have no children.' And the Lord said, 'Then go forth and make some children, and then gather them up and take them to the mountain, and there I will give you the tablets of Utilitarianism, which I have written, that you may teach them.'[or]And the hosts of the lizard people came down from the mountains, and they were many, and they were fierce, and they were hungry. And the Lord said, 'I'm not going to feed them, they're your problem.'[or]And the Lord said, 'I am the Lord, and I am a jealous God, and I will visit the iniquity of the fathers upon the children unto the third and fourth generation of them that hate me, and show mercy unto thousands of them that love me and keep my commandments.' And the lizard people said, 'We hate you.'[then at random]";
+		otherwise:
+			say "The text is the [italic type]Book of Utilitarianism[roman type]. [We] [open] to a page at random and [read] the text:[paragraph break][one of]However, the Lord said to the lizard people, 'I am the Lord of the humans, and I -- oh, and the aliens -- and I will smite you with great vengeance and furious anger and the like.'[or]By the by, Gorm came upon the town of Armagast, and he saw that it was good, and he said, 'I shall build a church here.' And the Lord said, 'No, don't do that, it's a bad idea.' And Gorm said, 'But Lord, I have already started.' And the Lord said, 'Well, okay, but don't say I didn't warn you.'[or]But Gorm's wife was treacherous, and she lay with lizard people, and she bore a son, and the Lord said, 'I'm not going to smite you, but I'm not going to be happy about it.'[or]When Gorm learned of his wife's doings, he rent his garments and wept, and the Lord said, 'Keep it together, man.'[or]And the land was filled with the iniquities of the lizard people, and the Lord said, 'I'm not going to clean that up.'[or]The host of the lizard people sacked the now rather prosperous town of Armagast, and the Lord said, 'I told you so.'[or]And the Lord said, ' [']Tis a far, far better thing that I do, than I have ever done; [']tis a far, far better rest that I go to than I have ever known.' And the lizard people said, 'That's from A Tale of Two Cities.'[or]And the Lord was attending his weekly reading circle, when he had an idea. 'I shall make a world,' he said, 'and I shall call it Earth.' And the lizard people said, 'That's a terrible name.'[or]And lo, the lizard people rebelled against the Lord, and the Lord said, 'I'm not going to put up with that.'[or]And in the town of Gabblehouse was born an infant to a woman named Gorma, and the Lord said, 'That's a terrible name.'[or]And the Lord said, 'I shall rain down upon thee with great vengeance and furious anger, and the lizard people said, 'We've heard that before.'[then at random]"
 
 Book 16.5 - Hathgar the Pitiful
 
@@ -1173,6 +1189,10 @@ To say glove compartment state:
 	otherwise:
 		say "closed";
 
+After opening the abandoned truck:
+	say "Faraji opens the door of the abandoned truck.";
+
+
 An abandoned pickup truck is a fixed in place closed enterable openable container in Lake at Ridge. 
 "There is an abandoned pickup truck at the side of the road[if the hood is open]. The hood is open[end if]." 
 The description is "The truck, a Ford F-1, is relatively new, with no sign as to why it was abandoned. The tailgate is [if the tailgate is open]down[otherwise]up[end if]. The hood is slightly crumpled, as if it has been in a minor accident[if the hood is open]. The hood is open[end if]."
@@ -1259,8 +1279,8 @@ It has matching key the iron key. Understand "heavy/metal" as the equipment cabi
 "A heavy metal cabinet with a lock. [if the equipment cabinet is open]The cabinet is open[otherwise]The cabinet is closed[end if]."
 
 The rusty astral resonator is in the equipment cabinet. It is privately-named. The description is "A small, rusty, metallic, cylindrical object. One end is capped with a lens, while the other terminates in a threaded base, like a light bulb.".
-The printed name is "[if Astral Secrets is familiar]rusty astral resonator[otherwise]strange, rusty, metal object[end if]".
-Understand "rusty/astral/resonator" as the rusty astral resonator when Astral Secrets is familiar.
+The printed name is "[if Astral Secrets is read]rusty astral resonator[otherwise]strange, rusty, metal object[end if]".
+Understand "rusty/astral/resonator" as the rusty astral resonator when Astral Secrets is read.
 Understand "strange/rusty/metal/metallic/cylindrical/cylinder/object" as the rusty astral resonator.
 The threaded base is part of the rusty astral resonator. The description is "The base is threaded, like a light bulb."
 The rusty lens is part of the rusty astral resonator. The description is "The device is capped with a lens on one end."
@@ -1269,8 +1289,9 @@ The snarky remark of the rusty astral resonator is "[if the shiny astral resonat
 
 The trapdoor is a secret door. It is below the workshed and above a hidden cave. It is closed and openable. "A trapdoor is in the floor[if the trapdoor is open], leading down into darkness[otherwise], closed[end if]."
 
-After going to the workshed when the trapdoor is unrevealed and the player carries the dowsing rod:
+After going to the workshed when the trapdoor is unrevealed and the player encloses the dowsing rod:
 	say "Something [we] [are] carrying starts to vibrate.";
+	continue the action;
 
 Description notes for the dowsing rod:
 	if the location is the workshed and the trapdoor is unrevealed:
@@ -1403,17 +1424,18 @@ Divining-action is an action applying to one thing. Understand "divine with [som
 
 Book 25.1 - Horton Family House Parlor
 
-The Horton Family House Parlor is south of Horton Family House Kitchen. It is in ELR. It is indoors. "The parlor, like the kitchen, still has its furnishings in place. A few chairs and a table are arranged around the room."
+The Horton Family House Parlor is south of Horton Family House Kitchen. It is in ELR. It is indoors. "The parlor, like the kitchen, still has its furnishings in place. A few chairs and a table are arranged around the room[if the book of weird names is on the table]. A strange-looking book is on the table[end if]."
 
 After going to the Horton Family House Parlor for the first time:
-	say "Upon entering the parlor, [we] [are] attacked by a horrible flying creature with the body of a doll and the head of a fly! [We] [wave] it away and it flies out of the room into the kitchen.";
-	now the doll-fly is in First Utilitarian Church of Enigma Lake.
+	say "Upon entering the parlor, [we] [are] attacked by a horrible flying creature with the body of a doll and the head of a fly! [We] [wave] it away and it flies out of the room to the north.";
+	now the doll-fly is in First Utilitarian Church of Enigma Lake;
+	continue the action;
 
 The parlor chairs are scenery in the Horton Family House Parlor. "A few chairs are arranged around the room."
 
 The parlor table is a scenery supporter in the Horton Family House Parlor. "A simple wooden table."
 
-The Book of Weird Names is on the parlor table. 
+The Book of Weird Names is on the parlor table. The printed name is "[italic type]The Book of Weird Names[roman type]". It is proper-named.
 
 To stop is a verb.
 
@@ -1476,9 +1498,33 @@ The shovel is in the Horton graveyard. "A shovel lies on the ground, forgotten."
 
 Some holes are scenery in the Horton graveyard. "The graveyard is riddled with holes where the bodies have been exhumed for the coming flood. One of the holes is substantially larger and deeper than the others."
 
-The large hole is a building facade. It is in Horton Graveyard. Understand "larger" as large hole. "The hole is substantially larger and deeper than the others."
+The large hole is a building facade. It is in Horton Graveyard. Understand "larger/grave" as large hole. "The hole is substantially larger and deeper than the others."
 	It fronts a large grave.
 	It is enterable from Horton Graveyard.
+
+Before going to the large grave:
+	if the ladder is in the large grave:
+		say "Faraji climbs down the ladder into the large grave.";
+	otherwise:
+		say "The hole is too deep to climb down into unaided.";
+		stop the action;
+
+Before going from the large grave:
+	if the ladder is in the large grave:
+		say "Faraji climbs up the ladder out of the large grave.";
+	otherwise:
+		say "The hole is too deep to climb out of unaided.";
+		stop the action;
+
+Instead of inserting the ladder into the large hole:
+	say "Faraji sets the ladder up against the side of the hole, making it easier to climb down into the large grave.";
+	now the ladder is in the large grave;
+
+After dropping the ladder when the location is the large grave:
+	say "Faraji sets the ladder up against the side of the hole, making it easier to climb out of the large grave.";
+
+Rule for writing a paragraph about the ladder when the location is the large grave:
+	say "A ladder is set up against the side of the hole, making it easier to climb out of the grave.";
 
 a large grave is a room. It is in ELR. It is outdoors. It is always-indefinite. "The hole is substantially larger and deeper than the others." 
 
@@ -1492,7 +1538,7 @@ After going from the large grave when the metal case is nowhere and the player e
 	say "The vibrations cease.";
 	continue the action;
 
-A metal case is a closed openable container. The description is "A small metal case, about the size of a breadbox. It seems to be made of lead. It is [if open]open[otherwise]closed[end if]." 
+A metal case is a closed openable container. The description is "A small metal case, about the size of a breadbox. It seems to be made of lead. It is [if metal case is open]open[otherwise]closed[end if]." 
 [ A metal corner is in the large grave. "[We] [notice] a small corner of something metallic sticking out of the dirt at the bottom of the hole." The description is "The corner of some metallic object, possibly made of lead, sticks out of the dirt at the bottom of the hole." ]
 
 Instead of examining the dowsing rod when the location is the large grave and the metal case is nowhere and the player encloses the dowsing rod:
@@ -1542,16 +1588,16 @@ Horton-back-facade is a building facade. It is in Horton Graveyard. It is privat
 	Horton-back-facade fronts Horton Family House Kitchen.
 	It is enterable from Horton Graveyard. 
 
-The Witnessing of Hezekiah is in the metal case. It is proper-named. The printed name is "The Witnessing of Hezekiah". Understand "book" as The Witnessing of Hezekiah.  
-The description is "A small, leather-bound book, titled 'The Witnessing of Hezekiah: as told to Jeremiah Horton by Hezekiah Horton'. The book is filled with strange, cryptic passages, and is difficult to read. [We] [find] one page of particular interest. It reads, 'And lo, Hezekiah, in his wisdom, did prophesy of the impending flood and the necessity to make ready. He spoke of a sacred artifact, a resonator, bestowed with divine power, that would unveil a gateway to the ethereal realm. And he revealed the quest to find the astral focus, a sacred relic of great significance. Thus he spake: [']Take the resonant origin, and with reverence, bind it to the eternal flame, and then to the astral focus. Channel a mighty power through it, and direct them towards the crystal eye. Strike the eye thrice, with unwavering devotion, and behold, the portal shall open, revealing the path to transcendence.[']'";
+The Witnessing of Hezekiah is in the metal case. It is proper-named. The printed name is "[italic type]The Witnessing of Hezekiah[roman type]". Understand "book" as The Witnessing of Hezekiah.  
+The description is "A small, leather-bound book, titled 'The Witnessing of Hezekiah: as told to Jeremiah Horton by Hezekiah Horton'. The book is filled with strange, cryptic passages, and is difficult to read. [We] [find] one page of particular interest. It reads, 'And lo, Hezekiah, in his wisdom, did prophesy of the impending flood and the necessity to make ready. He spoke of a sacred artifact, a resonator, bestowed with divine power, that would unveil a gateway to the ethereal realm. And he revealed the quest to find the lost astral traveler, a being of great power, who would guide the faithful out of the coming darkness. Thus spake he: [']Take the resonant origin, and with reverence, bind it to the eternal flame, and then to the astral focus. Channel a mighty power through it, and direct it towards the crystal eye. Strike the eye thrice, with unwavering devotion, and behold, the portal shall open, revealing the path to transcendence.[']'";
 
 The shiny astral resonator is carried by the group of lizard people. It is privately-named. The description is "A small, shiny, metallic, cylindrical object. One end is capped with a lens, while the other terminates in two shiny metal chains, each with a shiny metal clamp, as if it were designed to be attached to something.".
-The printed name is "[if Astral Secrets is familiar]shiny astral resonator[otherwise]strange, shiny, metal object[end if]".
-Understand "shiny/astral/resonator" as the shiny astral resonator when Astral Secrets is familiar.
+The printed name is "[if Astral Secrets is read]shiny astral resonator[otherwise]strange, shiny, metal object[end if]".
+Understand "shiny/astral/resonator" as the shiny astral resonator when Astral Secrets is read.
 Understand "strange/shiny/metal/metallic/cylindrical/cylinder/object" as the shiny astral resonator.
 The snarky remark of the shiny astral resonator is "[if the rusty astral resonator is not familiar]Ooh. I've always wanted one of these[otherwise]Wow, this is one is so shiny[end if].".
-The shiny clamps are part of the shiny astral resonator. The description is "Two metal chains, each with a metal clamp, are attached to the end of the [if Astral Secrets is familiar]resonator[otherwise]object[end if].". Understand "metal/-- chains" as the shiny clamps. They are plural-named.
-The shiny lens is part of the shiny astral resonator. The description is "A lens is attached to the end of the [if Astral Secrets is familiar]resonator[otherwise]object[end if].".
+The shiny clamps are part of the shiny astral resonator. The description is "Two metal chains, each with a metal clamp, are attached to the end of the [if Astral Secrets is read]resonator[otherwise]object[end if].". Understand "metal/-- chains" as the shiny clamps. They are plural-named.
+The shiny lens is part of the shiny astral resonator. The description is "A lens is attached to the end of the [if Astral Secrets is read]resonator[otherwise]object[end if].".
 
 
 Book 28 - Fire Station 1
@@ -1560,13 +1606,13 @@ The garage door is a closed locked lockable openable scenery door. It is west of
 
 Fire Station 1 is in ELR. The printed name is "Hook and Ladder Company #1". "The fire station is a modest red brick building dating to the late 19th century. The garage door is to the east."
 
-The ladder is in the Fire Station 1. "A ladder rests against the wall."
+The ladder is in the Fire Station 1. "A ladder rests against the wall." The description is "A wooden ladder, about 6 feet long. It looks sturdy and well-maintained."
 
-The spotlight is in the Fire Station 1. The description is "A large, powerful spotlight, designed to be mounted on a fire truck. It has a short cord ending in a standard North American 120V AC plug."
+The spotlight is in the Fire Station 1. The description is "A small spotlight, designed to be hand-held. It has a short cord ending in a standard North American 120V AC plug."
 
 Book 29 - Reading Room
 
-The Reading Room is west of Main at Solvay. It is in ELR. The description is "The reading room is a small, cozy space, with a number of comfortable chairs and a few tables. A sales counter is at the back of the room. Bookshelves lead back into the depths of the store. A narrow staircase leads down."
+The Reading Room is west of Main at Solvay. It is a leavable room. It is in ELR. The egress is east. The description is "The reading room is a small, cozy space, with a number of comfortable chairs and a few tables. A sales counter is at the back of the room. Bookshelves lead back into the depths of the store. A narrow staircase leads down."
 
 The sales counter is scenery in the Reading Room. "An ordinary sales counter".
 
@@ -1578,22 +1624,33 @@ To poke is a verb.
 Instead of searching the bookshelves:
 	say "The bookshelves are filled with a variety of books, from the latest bestsellers to obscure, out-of-print volumes. [We] [poke] around and [find] nothing of use.";
 
-Astral Secrets is on the sales counter. It is proper-named. The printed name is "[first time]the book [only][italic type]Astral Secrets[roman type]". Understand "book" as Astral Secrets.
+Astral Secrets is on the sales counter. It is proper-named. The printed name is "[first time]the book [only][italic type]Astral Secrets[roman type]". Understand "book" as Astral Secrets. Astral Secrets can be read.
 
 "A book lies on the sales counter."
 
 The description is "A book with a plain cover, titled 'Astral Secrets'. The author is listed as Jeremiah Horton.[paragraph break]Flipping through the book, [we] [find] a dog-eared page. The page shows a diagram of a small, metallic, cylindrical object, which is labeled 'astral resonator'. The text describes the resonator as a device for opening a portal through the astral plane. It goes on to describe the components of the device: a source of resonance, a source of light, and an 'astral lens', which it declines to describe further. The text also mentions that the resonator is powered by a source of electricity." 
+
+After examining Astral Secrets for the first time:
+	if the player encloses the shiny astral resonator:
+		say "The book perfectly describes the shiny object you are carrying";
+		if the player encloses the rusty astral resonator:
+			say ", and the rusty object you are carrying";
+		say ".";
+	otherwise if the player encloses the rusty astral resonator:
+		say "The book perfectly describes the rusty object you are carrying.";
+	now Astral Secrets is read.
 
 
 Book 30 - Reading Room Basement
 
 The Bookstore Basement is below the Reading Room. It is in ELR. The description is "The basement is dark and musty, with a number of shelves and boxes of books. The walls are made of old, crumbling brick. There is a faint breeze. A narrow staircase leads up[if the bricked-up-hole is revealed]. There is a ragged hole in the north wall, leading into a dark space[end if]."
 
-A bricked-up-hole is a secret door. It is north of the Bookstore Basement and south of sewer tunnel 1. It is privately-named. The printed name is "bricked-up hole in the wall". Understand "bricked-up", "bricked/up", "hole in/-- the/-- wall/--" as bricked-up-hole. It is open and not openable. "A ragged hole in the north wall, leading into a dark space." 
+A bricked-up-hole is a secret door. It is north of the Bookstore Basement and south of a sewer tunnel 1. It is privately-named. The printed name is "bricked-up hole in the wall". Understand "bricked-up", "bricked/up", "hole in/-- the/-- wall/--" as bricked-up-hole. It is open and not openable. "A ragged hole in the north wall, leading into a dark space." 
 
 To break is a verb.
 
 Attacking it with is an action applying to two things. Understand "attack [something] with [something]", "break [something] with [something]", "smash [something] with [something]", "hit [something] with [something]", "strike [something] with [something]", "pound [something] with [something]", "pummel [something] with [something]", "bash [something] with [something]", "crush [something] with [something]", "destroy [something] with [something]", "demolish [something] with [something]", "wreck [something] with [something]", "shatter [something] with [something]", "splinter [something] with [something]", "crack [something] with [something]", "thump [something] with [something]", "wallop [something] with [something]" as attacking it with.
+Understand "swing [something] at [something]" as attacking it with (with nouns reversed).
 
 Check attacking something with something when the second noun is not the sledgehammer:
 	say "[text of block attacking rule response (A)][paragraph break]" instead;
@@ -1618,7 +1675,7 @@ Instead of searching the boxes of books:
 	
 Book 31 - Sewer Tunnel
 
-a sewer tunnel 1 is in ELR. It is privately-named. It is always-indefinite. The printed name is "sewer tunnel". Understand "sewer/tunnel" as sewer tunnel 1. "The tunnel is dark and damp, with a low ceiling. From here, it leads east. To the west it narrows to little more than a pipe. To the south is hole leading into a basement."
+a sewer tunnel 1 is in ELR. It is privately-named. It is always-indefinite. The printed name is "sewer tunnel". Understand "sewer/tunnel" as sewer tunnel 1. "The tunnel is dark and damp, with a low ceiling. From here, it leads east. To the west it narrows to little more than a pipe. To the south is a hole leading into a basement."
 
 a sewer tunnel 2 is east of sewer tunnel 1. It is in ELR. It is privately-named. It is always-indefinite. The printed name is "sewer tunnel". Understand "sewer/tunnel" as sewer tunnel 2.  "The tunnel is dark and damp, with a low ceiling. From here, it leads east and west."
 
@@ -1757,7 +1814,7 @@ Index map with public gymnasium mapped east of Lake Street by the gym.
 The gym front desk is a scenery supporter in the public gymnasium. "Some kind of record book sits on the front desk."
 The snarky remark of the gym front desk is "Where do I scan my ID card?"
 
-The membership book is a fixed in place thing on the gym front desk. The description is "It's a book apparently full of records of the members of the gym. [We] could LOOK UP a member's name IN BOOK."
+The membership book is fixed in place scenery on the gym front desk. The description is "It's a book apparently full of records of the members of the gym. [We] could LOOK UP a member's name IN BOOK."
 The snarky remark of the membership book is "God forbid this information should fall into the wrong hands."
 
 Instead of consulting the membership book about something:
@@ -1895,7 +1952,7 @@ Check opening a locker:
 		
 Carry out opening a locker:
 	if the bank of lockers is not opened-once:
-		say "[We] [open] the locker. It contains some dirty gym clothes, among which [we] find [an old copper key]. [We] [take] it and close the locker.";
+		say "[We] [open] the locker with the red key. It contains some dirty gym clothes, among which [we] find [an old copper key]. [We] [take] it and close the locker.";
 		now the bank of lockers is opened-once;
 		now the player carries the old copper key;
 	otherwise:
@@ -2150,7 +2207,7 @@ After inserting the astral lenses into the wooden frame:
 		make the makeshift astral resonator;
 
 After inserting the spotlight into the wooden frame:
-	say "Faraji inserts the spotlight into the wooden frame. It fits snugly into a round hole cut into the wood. The frame now holds The frame now holds [the list of things contained by the wooden frame].";
+	say "Faraji inserts the spotlight into the wooden frame. It fits snugly into a round hole cut into the wood. The frame now holds [the list of things contained by the wooden frame].";
 	if the number of things contained by the wooden frame is 3:
 		make the makeshift astral resonator;
 
