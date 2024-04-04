@@ -755,7 +755,7 @@ After answering the blue flipphone:
 A key is a kind of thing.
 
 The little grey key is a key. It is in biff's desk's drawer. The little grey key is familiar.
-Biff's desk drawer has matching key the little grey key. The description of Biff's desk's drawer is "The desk is a cheap DIY piece held together with hex screws."
+Biff's desk's drawer has matching key the little grey key. The description of Biff's desk's drawer is "The desk is a cheap DIY piece held together with hex screws."
 The snarky remark of the little grey key is "And now you'll never get used, little key."
 
 The hex screws are part of biff's desk's drawer. The description is "Several hex screws hold the desk drawer together." The snarky remark is "Hateful little things."

@@ -35,7 +35,7 @@ I've also read Essentials by Philip Riley, which is 582 words long.
 I've also read Facts by Philip Riley, which is 178 words long.
 I've also read Phones by Philip Riley, which is 1909 words long.
 I've also read Commerce by Philip Riley, which is 158 words long.
-I've also read Furniture by Philip Riley, which is 77 words long.
+I've also read Furniture by Philip Riley, which is 82 words long.
 I've also read Third Person Narration by Philip Riley, which is 672 words long.
 I've also read Door Utils by Philip Riley, which is 41 words long.
 I've also read Real People by Philip Riley, which is 400 words long.
@@ -53,7 +53,7 @@ I've also read Followup Questions by Philip Riley, which is 248 words long.
 I've also read Simple Conversation by Philip Riley, which is 2193 words long.
 I've also read Hyperspace by Philip Riley, which is 10573 words long.
 I've also read BOSH Facts by Philip Riley, which is 97 words long.
-I've also read Swamp Park by Philip Riley, which is 5981 words long.
+I've also read Swamp Park by Philip Riley, which is 6030 words long.
 I've also read Margaret by Philip Riley, which is 1938 words long.
 I've also read Enigma Lake by Philip Riley, which is 23311 words long.
 I've also read I Can Dig It by Philip Riley, which is 57 words long.
@@ -287,7 +287,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 246 files written as streams.
-CPU time: 768 centiseconds
+CPU time: 771 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

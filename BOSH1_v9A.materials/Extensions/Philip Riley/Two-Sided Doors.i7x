@@ -161,7 +161,7 @@ Check an actor unlocking a two-sided door with (this is the can't unlock a two-s
 	stop the action.
 	
 Carry out an actor unlocking a two-sided door with (this is the standard two-sided door unlocking rule):
-	if location of the actor  is the frontside of the noun:
+	if location of the actor is the frontside of the noun:
 		if noun is front-locks-the-front:
 			now the noun is not front-locked;
 		if noun is front-locks-the-back:
@@ -200,7 +200,7 @@ Check an actor opening a two-sided door (this is the can't open a two-sided door
 		say "[regarding the noun][They] [aren't] something [we] [can] open." (A);
 	stop the action.
 
-Check an actor opening a two-sided door  (this is the can't open a two-sided door that's locked rule):
+Check an actor opening a two-sided door (this is the can't open a two-sided door that's locked rule):
 	if the noun is locked for actor:
 		if the actor is the player:
 			say "[regarding the noun][They] [seem] to be locked." (A);

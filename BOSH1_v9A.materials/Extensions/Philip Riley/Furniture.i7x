@@ -2,7 +2,7 @@ Furniture by Philip Riley begins here.
 
 Use authorial modesty.
 
-A drawer is a kind of container. It is openable and lockable.
+A drawer is a kind of container. It is openable and lockable. A drawer is usually closed.
 
 A desk is a kind of supporter. A drawer is a part of every desk.
 

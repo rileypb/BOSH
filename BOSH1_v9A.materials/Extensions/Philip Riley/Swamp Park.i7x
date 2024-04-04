@@ -119,12 +119,12 @@ The laundromat window is a part of the Laundromat-facade. It is privately-named.
 The washing-machines are a part of the Laundromat-facade. They are privately-named. The printed name is "washing machines". Understand "washing/-- machine/machines", "washer/washers" as the washing-machines. The description is "From here, the machines look old and worn."
 They are obstructed.
 	
-The laundromat door is a closed and locked scenery shop-door. It is privately-named. The printed name is "laundromat door". Understand "laundromat/-- door" as the laundromat door. It is northwest of the parking lot south and southeast of the laundromat-store. The front description is "It's a typical glass door. Taped to it is a sign that says 'Closed for renovations'." The frontside is the strip mall parking lot south. The back description is "It's a typical glass door." The laundromat door is front-locked and back-locked.
+The laundromat door is a closed, back-locked, and front-locked scenery shop-door. It is privately-named. The printed name is "laundromat door". Understand "laundromat/-- door" as the laundromat door. It is northwest of the parking lot south and southeast of the laundromat-store. The front description is "It's a typical glass door. Taped to it is a sign that says 'Closed for renovations'." The frontside is the strip mall parking lot south. The back description is "It's a typical glass door." 
 	
-Check going northwest from the strip mall parking lot south when the player does not know break-in-to-laundromat: 
+Check going northwest from the strip mall parking lot south when the player does not know break-in-to-laundromat and the laundromat door is front-locked and the laundromat door is back-locked: 
 	say "A sign on the laundromat door says 'Closed for renovations'." instead;
 	
-Check going northwest from the strip mall parking lot south when the player knows break-in-to-laundromat: 
+Check going northwest from the strip mall parking lot south when the player knows break-in-to-laundromat and the laundromat door is front-locked and the laundromat door is back-locked: 
 	say "Predictably, the laundromat door is locked." instead;
 	
 The swamp-facade is a privately-named unenterable room in Parking Lot South. The printed name is "swamp". Understand "swamp/swampy/area/marsh/water/wetland/wet/land" as the swamp-facade. "Swamp Park is, as one might expect, dotted with these little bits of wetland."
@@ -365,11 +365,15 @@ The snarky remark of the laundromat back room is "Definitely worth the trouble o
 
 The opening-2 is scenery in the laundromat back room. It is privately-named. The printed name is "opening". Understand "doorway" as the opening-2. "The opening leads east to the laundromat proper."
 
-The laundromat desk is a scenery supporter in the laundromat back room. "The desk is cluttered with papers."
+The laundromat desk is a scenery desk in the laundromat back room. "The desk is cluttered with papers."
 The snarky remark of the laundromat desk is "For a place that supposedly gets things clean, this place is a mess."
 
 The paperwork is scenery in the laundromat back room. Understand "paper/papers/receipt/receipts/invoice/invoices" as the paperwork. "The papers are mostly receipts and invoices[if the strange piece of paper is nowhere]. One piece, however, consists of strange sketches and diagrams. In one corner is scrawled the cryptic phrase 'Save the Dragon'[end if]."
 The snarky remark of the paperwork is "I'm sure it's all very important."
+
+The large key is a key in the laundromat desk's drawer. The description is "It's a large key, probably for a door."
+
+The laundromat door has matching key the large key.
 
 The strange piece of paper is a thing. "The paper is covered with strange sketches and diagrams. In one corner is scrawled the cryptic phrase 'Save the Dragon'." Understand "sketch/sketches/and/diagram/diagrams" as the strange piece of paper.
 The snarky remark of the strange piece of paper is "Dragon? What dragon? Must be laundromat slang."
