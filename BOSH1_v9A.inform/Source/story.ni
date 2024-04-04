@@ -1854,12 +1854,12 @@ Book 21 - Not For Release
 DEBUG is true.
 
 AUDIT is a truth state that varies.
-AUDIT is false.
+AUDIT is true.
 
 When play begins:
 	if AUDIT is true:
-		repeat with X running through things:
-			if the snarky remark of X is not "":
+		repeat with X running through rooms:
+			if the snarky remark of X is "":
 				say "[X] -- [snarky remark of X][line break]";
 
 When play begins, seed the random-number generator with 1234.

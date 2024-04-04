@@ -1181,7 +1181,7 @@ the Lake at Ridge is north of Lake Street by the Park. It is in ELR. It is outdo
 The printed name is "Lake Street and Ridge Road". The preposition is "at the intersection of".
 "[if player is in the abandoned truck]There is a glove compartment on the passenger side, [glove compartment state].[paragraph break][end if]The intersection lies at the edge of the lake. Lake Street runs south into town, while Ridge Road heads off into the darkness east of here. A little park along the lake shore is to the west."
 The snarky remark of the Lake at Ridge is "What ridge? I don't see a ridge."
-The x-coordinate of the Lake at Ridge is 2. The y-coordinate of the Lake at Ridge is 2.
+The x-coordinate of the Lake at Ridge is 1. The y-coordinate of the Lake at Ridge is 2.
 
 To say glove compartment state:
 	if the glove compartment is open:
@@ -1243,6 +1243,8 @@ Book 20 - Lake Shore north of the park
 the lake shore north of the park is west of Lake at Ridge and north of Enigma Park. It is in ELR. It is outdoors. The preposition is "on". "A sliver of moon hangs over the lake, casting a silvery light over the water. The park is to the south, while the lake stretches off to the north. A workshed is to the southeast. A road can be seen to the east."
 The snarky remark of the lake shore north of the park is "I wonder what Klimp would say is in the lake."
 
+The x-coordinate of the lake shore north of the park is 0. The y-coordinate of the lake shore north of the park is 2.
+
 The workshed-facade is a building facade. It is in Lake Shore North of the Park. It is privately-named. The printed name is "workshed". Understand "workshed/shed" as workshed-facade. "The workshed is a small, weathered building, with a single door and no windows."
 	The workshed-facade fronts the workshed.
 	It is enterable from Lake Shore North of the Park.
@@ -1252,6 +1254,8 @@ Book 21 - Workshed
 
 the workshed is a leavable room. It has egress northwest. It is in ELR. "It is a small, weathered building, with a single door and no windows, and a creaky wooden floor. The interior is dimly lit by a single light bulb hanging from the ceiling. [equipment cabinet state] cabinet is in the corner. [rusty metal door state], rusty metal door leads out of the shed. [if the trapdoor is revealed]A trapdoor is in the floor, [trapdoor state].[end if]".
 The snarky remark of the workshed is "I wonder if there's a chainsaw in here."
+
+The x-coordinate of the workshed is 0.5. The y-coordinate of the workshed is 1.5.
 
 To say equipment cabinet state:
 	if the equipment cabinet is open:
@@ -1393,11 +1397,16 @@ the Lake Shore West is west of Lake Shore North of the Park and north of Solvay 
 
 The snarky remark of the Lake Shore West is "Haha, come and get me, lake. I dare you. Oh no -- have I regressed to taunting water?"
 
+The x-coordinate of the Lake Shore West is -1. The y-coordinate of the Lake Shore West is 2.
+
+
 Book 25 - Horton Family House Kitchen
 
 The Horton House door is a closed openable locked lockable scenery door. It is west of Solvay Road Leading Out Of Town and east of Horton Family House Kitchen. The Horton House door has matching key the old copper key. 
 
 Horton Family House Kitchen is a leavable room. It is in ELR. It is unleavable. It is indoors. "The house is a modest colonial-period building. Strangely, the furnishings of the house have been left in place, despite the coming flood. An open hearth is in the center of the room, with a few chairs and a table. The parlor is to the south, and a narrow staircase leads up. To the east the front door leads out to Solvay Road, while another door leads west to the family graveyard." 
+
+The x-coordinate of Horton Family House Kitchen is -2. The y-coordinate of Horton Family House Kitchen is 1.
 
 The furnishings are scenery in Horton Family House Kitchen. "A few chairs and a table are arranged around the room."
 
@@ -1425,6 +1434,8 @@ Divining-action is an action applying to one thing. Understand "divine with [som
 Book 25.1 - Horton Family House Parlor
 
 The Horton Family House Parlor is south of Horton Family House Kitchen. It is in ELR. It is indoors. "The parlor, like the kitchen, still has its furnishings in place. A few chairs and a table are arranged around the room[if the book of weird names is on the table]. A strange-looking book is on the table[end if]."
+
+The x-coordinate of the Horton Family House Parlor is -2. The y-coordinate of the Horton Family House Parlor is 0.5.
 
 After going to the Horton Family House Parlor for the first time:
 	say "Upon entering the parlor, [we] [are] attacked by a horrible flying creature with the body of a doll and the head of a fly! [We] [wave] it away and it flies out of the room to the north.";
@@ -1478,6 +1489,8 @@ Book 25.5 - Horton Family House Second Floor
 
 The Second Floor of the Horton House is above the Horton Family House Kitchen. It is in ELR. It is indoors. "The second floor is a small, cramped space, with a single window looking out over the front yard. A small bed sits in one corner, while [if the rickety wardrobe is open]an open wardrobe fills a wall[otherwise]a closed wardrobe stands against a wall[end if]. A staircase leads down."
 
+The x-coordinate of the Second Floor of the Horton House is -2. The y-coordinate of the Second Floor of the Horton House is 1.
+
 The small bed is scenery in the Second Floor of the Horton House. "A small bed sits in one corner. It's a rope bed, with a thin straw mattress."
 
 The rickety wardrobe is a closed openable enterable scenery container in the Second Floor of the Horton House. "A rickety wardrobe stands against a wall. It is [if open]open[otherwise]closed[end if]."
@@ -1493,6 +1506,8 @@ Fire Station 1 is backeast of the Horton astral tunnel. It is in ELR.
 Book 27 - Horton Graveyard
 
 the Horton graveyard is west of Horton Family House Kitchen. It is in ELR. It is outdoors. "It is riddled with holes where the bodies have been exhumed for the coming flood. Likewise, the gravestones have been removed, leaving only the holes. The Horton family house is to the east."
+
+The x-coordinate of the Horton graveyard is -3. The y-coordinate of the Horton graveyard is 1.
 
 The shovel is in the Horton graveyard. "A shovel lies on the ground, forgotten."
 
@@ -1527,6 +1542,8 @@ Rule for writing a paragraph about the ladder when the location is the large gra
 	say "A ladder is set up against the side of the hole, making it easier to climb out of the grave.";
 
 a large grave is a room. It is in ELR. It is outdoors. It is always-indefinite. "The hole is substantially larger and deeper than the others." 
+
+The x-coordinate of the large grave is -3. The y-coordinate of the large grave is 1.
 
 Above the large grave is the Horton graveyard.
 
@@ -1604,6 +1621,8 @@ Book 28 - Fire Station 1
 
 The garage door is a closed scenery door. It is west of Solvay Road 100 block and east of the Fire Station 1. Understand "big/red/door" as garage door. The description is "[if the location is Solvay Road 100 block]A big red door, with a sign reading 'Fire Station 1'[otherwise]It's a big red door[end if]."
 
+The x-coordinate of the Fire Station 1 is -2. The y-coordinate of the Fire Station 1 is 0.
+
 Fire Station 1 is in ELR. The printed name is "Hook and Ladder Company #1". "The fire station is a modest red brick building dating to the late 19th century. The garage door is to the east. There is a large blue button mounted on the wall."
 Understand "hook/and/ladder/company/#1" as Fire Station 1. 
 
@@ -1630,6 +1649,8 @@ Instead of closing the garage door when the garage door is open:
 Book 29 - Reading Room
 
 The Reading Room is west of Main at Solvay. It is a leavable room. It is in ELR. The egress is east. The description is "The reading room is a small, cozy space, with a number of comfortable chairs and a few tables. A sales counter is at the back of the room. Bookshelves lead back into the depths of the store. A narrow staircase leads down."
+
+The x-coordinate of the Reading Room is -2. The y-coordinate of the Reading Room is -1.
 
 The sales counter is scenery in the Reading Room. "An ordinary sales counter".
 
@@ -1661,6 +1682,8 @@ After examining Astral Secrets for the first time:
 Book 30 - Reading Room Basement
 
 The Bookstore Basement is below the Reading Room. It is in ELR. The description is "The basement is dark and musty, with a number of shelves and boxes of books. The walls are made of old, crumbling brick. There is a faint breeze. A narrow staircase leads up[if the bricked-up-hole is revealed]. There is a ragged hole in the north wall, leading into a dark space[end if]."
+
+The x-coordinate of the Bookstore Basement is -2. The y-coordinate of the Bookstore Basement is -1.
 
 A bricked-up-hole is a secret door. It is north of the Bookstore Basement and south of a sewer tunnel 1. It is privately-named. The printed name is "bricked-up hole in the wall". Understand "bricked-up", "bricked/up", "hole in/-- the/-- wall/--" as bricked-up-hole. It is open and not openable. "A ragged hole in the north wall, leading into a dark space." 
 
@@ -1694,9 +1717,15 @@ Book 31 - Sewer Tunnel
 
 a sewer tunnel 1 is in ELR. It is privately-named. It is always-indefinite. The printed name is "sewer tunnel". Understand "sewer/tunnel" as sewer tunnel 1. "The tunnel is dark and damp, with a low ceiling. From here, it leads east. To the west it narrows to little more than a pipe. To the south is a hole leading into a basement."
 
+The x-coordinate of sewer tunnel 1 is -2. The y-coordinate of sewer tunnel 1 is 0.5.
+
 a sewer tunnel 2 is east of sewer tunnel 1. It is in ELR. It is privately-named. It is always-indefinite. The printed name is "sewer tunnel". Understand "sewer/tunnel" as sewer tunnel 2.  "The tunnel is dark and damp, with a low ceiling. From here, it leads east and west."
 
+The x-coordinate of sewer tunnel 2 is 0. The y-coordinate of sewer tunnel 2 is 0.5.
+
 a sewer tunnel 3 is east of sewer tunnel 2. It is in ELR. It is privately-named. It is always-indefinite. The printed name is "sewer tunnel". Understand "sewer/tunnel" as sewer tunnel 3. "The tunnel is dark and damp, with a low ceiling. From here, it leads west, and turns into a small crawl to the east. There is a metal door with a lock to the north."
+
+The x-coordinate of sewer tunnel 3 is 2. The y-coordinate of sewer tunnel 3 is 0.5.
 
 The astral-tunnel-elr is forth of sewer tunnel 3. It is privately-named. The printed name is "astral tunnel". It is in hyperspace. "It is featureless white, or what passes for white here. It leads back and backnorth.";
 
@@ -1708,12 +1737,16 @@ Book 32 - Fresnel's Music
 
 Fresnel's Music is southwest of Main at Solvay. It is in ELR. "The music store, like most of the town, is empty of all but a few items of little value."
 
+The x-coordinate of Fresnel's Music is -2. The y-coordinate of Fresnel's Music is -2.
+
 A tuning fork is in Fresnel's Music. "A tuning fork lies on the counter." The description is "A tuning fork, used to tune musical instruments."
 
 Book 33 - Henry's Hot Skillet
 
 Henry's Hot Skillet is a room. It is in ELR.
 The description is "This is the epitome of the homey small-town diner of times go by, except for the lack of all furniture, cooking implements, food, decor, and so on. There is a staircase leading up. A pair of insulated wires hangs from the ceiling at one end of the counter[if the clean battery is hooked up]. The wires are attached to a battery resting on the counter[end if]."
+
+The x-coordinate of Henry's Hot Skillet is -1. The y-coordinate of Henry's Hot Skillet is -2.
 
 the Skillet door is a closed locked openable lockable scenery door. It is south of Main at Solvay and north of Henry's Hot Skillet. The Skillet door has matching key the brass key.
 
@@ -1759,6 +1792,8 @@ Check untying the clean battery from the wires:
 Book 34 - Henry's Roof
 
 Henry's Roof is above Henry's Hot Skillet. It is in ELR. The description is "From here one can see much of the town, including a clear view of the obelisk in Enigma Park. There is a large TV aerial jutting from the roof here." The preposition is "on".
+
+The x-coordinate of Henry's Roof is -1. The y-coordinate of Henry's Roof is -2.
 
 The TV aerial antenna is scenery in Henry's Roof. "A large, metallic rooftop antenna, characterized by its array of horizontal and vertical rods designed to capture VHF (very high frequency) broadcasts. Strangely, someone has mounted a threaded socket, like that of a light bulb, on one of the rods. A pair of insulated wires runs from the antenna and through a hole in the roof."
 
@@ -1806,6 +1841,8 @@ Rolle's Department Store is south of Main Street 200 Block. It is in ELR. It is 
 The description is "Once, town department stores like this were a constant of American life. Sadly, this one is empty of everything save a number of sale posters and its gleaming floor."
 The snarky remark of Rolle's Department Store is "I guess the sale is over."
 
+The x-coordinate of Rolle's Department Store is 0. The y-coordinate of Rolle's Department Store is -2.
+
 The gleaming floor is scenery in Rolle's Department Store. "Someone has polished it spotless, despite the looming destruction of the store. That's dedication."
 
 Does the player mean doing something to the gleaming floor: 
@@ -1822,6 +1859,8 @@ Book 36 - Public Gymnasium
 
 The gym door is a closed locked openable lockable scenery door. It is east of Lake Street by the gym and west of the public gymnasium. It has matching key the green key. The description is "A simple metal door, painted white. A sign on the door reads 'Public Gymnasium'."
 The snarky remark of the gym door is "[if the gym door is locked]C'mon, I need to get my reps in[otherwise]Seen one door, there are still several billion more[end if]."
+
+The x-coordinate of the public gymnasium is 2. The y-coordinate of the public gymnasium is 0.
 
 The public gymnasium is in ELR. "There is a basketball court and a weight training area. A front desk is next to the front entrance."
 The snarky remark of the public gymnasium is "This is the kind of government largesse that bankrupted 1950s America. For reals."
@@ -1948,6 +1987,8 @@ Book 37 - Gym Basement
 The gym basement is below the public gymnasium. It is in ELR. "This area is dominated by large banks of lockers."
 The snarky remark of the gym basement is "I'm trying to remember my combination."
 
+The x-coordinate of the gym basement is 2. The y-coordinate of the gym basement is 0.
+
 The bank of lockers is scenery in the gym basement. Understand "banks/locker" as the bank of lockers.
 "The lockers are numbered 1 to 100."
 The bank of lockers can be opened-once.
@@ -2067,7 +2108,11 @@ Instead of examining the mystic compass:
 
 Volume 4.5 - The Lizard People
 
-The group of lizard people is an animal. "Three humanoid figures are here, each with a long, scaly tail and a head that looks like a lizard's. They are dressed in smart grey suits. They are hissing loudly in what seems to be intelligent communication." The group of lizard people is in the radio roof. 
+The group of lizard people is an animal. "Three humanoid figures are here, each with a long, scaly tail and a head that looks like a lizard's. They are dressed in smart grey suits. They are hissing loudly in what seems to be intelligent communication.[if lizard countdown is 1]
+
+They notice you and stop talking. One of them steps forward and says in guttural hiss, [one of]'So it is one of Doris's friends. We have been expecting you. You will not hinder us!'[or]'Surface vermin! You will not stop us!'[or]'No one will be allowed to interfere with our plans. Begone!'[or]'Silly human. You will not stop us!'[or]'You are too late to stop us. We will have the Dragon!'[at random][end if][line break]" 
+
+The group of lizard people is in the fire station 1. 
 
 To decide what text is the heading from (R1 - a room) to (R2 - a room):
 	let wediff be the x-coordinate of R1 minus the x-coordinate of R2 + 0.01;
@@ -2213,12 +2258,54 @@ After printing the locale description:
 			let dirtext be the heading from the location to the current space;
 			say "[We] [see] the faint trace of shadowy figures off to the [dirtext], [the preposition of the current space] [the pretty name of the current space].";
 
-Every turn when the group of lizard people is in the location:
+Lizard countdown is a number that varies. Lizard countdown is 0.
+
+After going when the group of lizard people is in the location:
+	now the lizard countdown is 1;
+	continue the action;
+
+The lizard teleportation targets is a list of rooms that varies.
+The lizard teleportation targets are { Enigma Lake Town Hall, Enigma Park, Main Street 200 block, Main at Solvay, Solvay Road 100 block, Solvay Road leading out of town, Solvay-Road-by-the-lake, a dirty shack, Main at Lake, Radio Station WGXC, radio station roof, broadcast booth, Lake Street by the gym, Lake Street by the park, First Utilitarian Church of Enigma Lake, vestry, steeple, Lake at Ridge, lake shore north of the park, workshed, Lake Shore West, Horton Family House Kitchen, Horton Family House Parlor, Second Floor of the Horton House, Horton graveyard, Reading Room, Bookstore Basement, Fresnel's Music, Rolle's Department Store }.
+
+To teleport the player:
+	let target be the location;
+	while the target is the location:
+		sort the lizard teleportation targets in random order;
+		now target is entry 1 of the lizard teleportation targets;
+	move the player to the target;
+
+Instead of answering something that when the group of lizard people is in the location:
+	if cursed word is "" or cursed word is not the topic understood:
+		say "The lizard people seem to find your words amusing. They hiss, creating a strange cloud of thick vapor. Faraji feels light-headed and disoriented. When the vapor clears, they are somewhere else...";
+		teleport the player;
+	otherwise:
+		say "The lizard people look up, startled at the intrusion. They hiss, creating a strange cloud of thick vapor. When it clears, they are gone.";
+		now the group of lizard people is nowhere;
+		now the shiny astral resonator is in the location;
+		now the lizard countdown is 0;
+
+Before doing something when group of lizard people is in the location:
+	decrement the lizard countdown;
+
+Every turn when the lizard countdown is 0 and the group of lizard people is in the location:
+	say "The lizard people hiss, creating a strange cloud of thick vapor. Faraji feels light-headed and disoriented. When the vapor clears, they are somewhere else...";
+	teleport the player;
+
+Every turn:
+	say "Lizard countdown is [lizard countdown].";
+
+Instead of going when the group of lizard people is in the location:
+	say "The lizard people block the way.";
+
+[ Instead of answering the group of lizard people that something:
 	say "The lizard people look up, startled at the intrusion. They hiss, creating a strange cloud of thick vapor. When it clears, they are gone.
 	
 	They seem to have dropped something in their haste. There is [a shiny astral resonator] on the ground!";
 	now the shiny astral resonator is in the location;
-	now the group of lizard people is nowhere;
+	now the group of lizard people is nowhere; ]
+
+[ Instead of doing something other than answering something that when the group of lizard people was in the location:
+	say "FOOOOO"; ]
 
 Volume 4.75 - Building the Makeshift Astral Resonator
 

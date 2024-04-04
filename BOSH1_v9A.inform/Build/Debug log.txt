@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 21403 words long.
+I've now read your source text, which is 21402 words long.
 
 
 -----------------------------------------------------
@@ -55,7 +55,7 @@ I've also read Hyperspace by Philip Riley, which is 10573 words long.
 I've also read BOSH Facts by Philip Riley, which is 97 words long.
 I've also read Swamp Park by Philip Riley, which is 6030 words long.
 I've also read Margaret by Philip Riley, which is 1938 words long.
-I've also read Enigma Lake by Philip Riley, which is 23552 words long.
+I've also read Enigma Lake by Philip Riley, which is 24277 words long.
 I've also read I Can Dig It by Philip Riley, which is 57 words long.
 I've also read Snarky Remarks by Philip Riley, which is 206 words long.
 I've also read Overlook by Philip Riley, which is 764 words long.
@@ -279,7 +279,7 @@ Phase XII ... Code generation
 
 ==== Phase XII.21 ... Compiling routines from predicate calculus ====
 
-Providing for a total heap of 32768, given requirement of 16912
+Providing for a total heap of 32768, given requirement of 17168
 
 
 -----------------------------------------------------
@@ -287,7 +287,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 246 files written as streams.
-CPU time: 741 centiseconds
+CPU time: 776 centiseconds
 
 
 That concludes the debugging log from this run of Inform.
