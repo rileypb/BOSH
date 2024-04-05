@@ -82,7 +82,7 @@ Henry's roof overlooks radio station roof.
 Volume 3 - Structures
 
 The structure name of Radio Station WGXC is "the radio station".
-The structure name of Enigma Lake Gymnasium is "the gym".
+The structure name of public gymnasium is "the gym".
 The structure name of Enigma Park is "the park".
 The structure name of Rolle's Department Store is "the department store".
 The structure name of Henry's Hot Skillet is "the diner".

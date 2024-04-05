@@ -630,7 +630,7 @@ The snarky remark of Lake Street by the gym is "I wonder how much gym membership
 The x-coordinate of Lake Street by the gym is 1. The y-coordinate of Lake Street by the gym is 0.
 
 The gymnasium facade is a building facade. It is in Lake Street by the gym. It is privately-named. The printed name is "public gymnasium". Understand "gymnasium/gym" as gymnasium facade. "The sign over the door says 'Enigma Lake Gymnasium'."
-	The gymnasium facade fronts Enigma Lake Gymnasium.
+	The gymnasium facade fronts the public gymnasium.
 	It is enterable from Lake Street by the gym.
 The snarky remark of the gymnasium facade is "I hate the gym. I'm allergic to exercise."
 
@@ -1316,10 +1316,14 @@ Book 22 - Hidden cave
 a hidden cave is a room. It is in ELR. It is always-indefinite. It is dark.
 "The cave is dark and damp, with a low ceiling[if portal opened is true]. From the passage to the south comes enough light to see[otherwise]. A passage leads to the south[end if]. A set of rickety stairs leads up to the workshed above."
 
+The snarky remark of the hidden cave is "Perhaps there's something down here that will help me answer the phone."
+
 Book 23 - Portal room
 
 a circular chamber is south of hidden cave. It is in ELR. The circular chamber is dark.
 "The chamber is circular, with a low ceiling. The walls are rough-hewn stone, and the floor is packed earth. A passage leads to the north."
+
+The snarky remark of the circular chamber is "I hear caves tend to have thieves, trolls, and cyclopses. I hope this is not actually the case."
 
 The ethereal portal is fixed in place. "A shimmering portal hovers in the center of the chamber, casting a faint light over the room."
 
@@ -1331,6 +1335,8 @@ Instead of entering the ethereal portal:
 Book 23.5 - Old Root Cellar
 
 An old root cellar is a room. It is always-indefinite. "The chamber is dark and damp, smelling of earth and old vegetable matter. The walls, floor, and ceiling are packed earth. Around the walls are numerous woven baskets for storing vegetables. Light filters in from a passage to the north."
+
+The snarky remark of the old root cellar is "Oh good, another cave, only this one smells like beets."
 
 Daniels is a man in the old root cellar. "[one of]A tired-looking man sits on the floor of the cellar. He looks up as Faraji appears. 'Ah, you must be the help I was promised,' he says. 'I'm Daniels. I've been waiting for you.'[or]Daniels, ragged and dirty, sits on the floor of the cellar. He looks tired.[stopping]". 
 Understand "man" as Daniels. 
@@ -1406,6 +1412,8 @@ The Horton House door is a closed openable locked lockable scenery door. It is w
 
 Horton Family House Kitchen is a leavable room. It is in ELR. It is unleavable. It is indoors. "The house is a modest colonial-period building. Strangely, the furnishings of the house have been left in place, despite the coming flood. An open hearth is in the center of the room, with a few chairs and a table. The parlor is to the south, and a narrow staircase leads up. To the east the front door leads out to Solvay Road, while another door leads west to the family graveyard." 
 
+The snarky remark of Horton Family House Kitchen is "I wonder if this place felt as creepy in 1750."
+
 The x-coordinate of Horton Family House Kitchen is -2. The y-coordinate of Horton Family House Kitchen is 1.
 
 The furnishings are scenery in Horton Family House Kitchen. "A few chairs and a table are arranged around the room."
@@ -1434,6 +1442,8 @@ Divining-action is an action applying to one thing. Understand "divine with [som
 Book 25.1 - Horton Family House Parlor
 
 The Horton Family House Parlor is south of Horton Family House Kitchen. It is in ELR. It is indoors. "The parlor, like the kitchen, still has its furnishings in place. A few chairs and a table are arranged around the room[if the book of weird names is on the table]. A strange-looking book is on the table[end if]."
+
+The snarky remark of the Horton Family House Parlor is "The Horton family must have thrown some great parties."
 
 The x-coordinate of the Horton Family House Parlor is -2. The y-coordinate of the Horton Family House Parlor is 0.5.
 
@@ -1489,6 +1499,8 @@ Book 25.5 - Horton Family House Second Floor
 
 The Second Floor of the Horton House is above the Horton Family House Kitchen. It is in ELR. It is indoors. "The second floor is a small, cramped space, with a single window looking out over the front yard. A small bed sits in one corner, while [if the rickety wardrobe is open]an open wardrobe fills a wall[otherwise]a closed wardrobe stands against a wall[end if]. A staircase leads down."
 
+The snarky remark of the Second Floor of the Horton House is "I can feel the misery in the walls."
+
 The x-coordinate of the Second Floor of the Horton House is -2. The y-coordinate of the Second Floor of the Horton House is 1.
 
 The small bed is scenery in the Second Floor of the Horton House. "A small bed sits in one corner. It's a rope bed, with a thin straw mattress."
@@ -1506,6 +1518,8 @@ Fire Station 1 is backeast of the Horton astral tunnel. It is in ELR.
 Book 27 - Horton Graveyard
 
 the Horton graveyard is west of Horton Family House Kitchen. It is in ELR. It is outdoors. "It is riddled with holes where the bodies have been exhumed for the coming flood. Likewise, the gravestones have been removed, leaving only the holes. The Horton family house is to the east."
+
+The snarky remark of the Horton graveyard is "Of course they have a graveyard."
 
 The x-coordinate of the Horton graveyard is -3. The y-coordinate of the Horton graveyard is 1.
 
@@ -1542,6 +1556,8 @@ Rule for writing a paragraph about the ladder when the location is the large gra
 	say "A ladder is set up against the side of the hole, making it easier to climb out of the grave.";
 
 a large grave is a room. It is in ELR. It is outdoors. It is always-indefinite. "The hole is substantially larger and deeper than the others." 
+
+The snarky remark of the large grave is "I wonder if they had to dig this one deeper to keep the body from escaping."
 
 The x-coordinate of the large grave is -3. The y-coordinate of the large grave is 1.
 
@@ -1621,10 +1637,12 @@ Book 28 - Fire Station 1
 
 The garage door is a closed scenery door. It is west of Solvay Road 100 block and east of the Fire Station 1. Understand "big/red/door" as garage door. The description is "[if the location is Solvay Road 100 block]A big red door, with a sign reading 'Fire Station 1'[otherwise]It's a big red door[end if]."
 
-The x-coordinate of the Fire Station 1 is -2. The y-coordinate of the Fire Station 1 is 0.
-
 Fire Station 1 is in ELR. The printed name is "Hook and Ladder Company #1". "The fire station is a modest red brick building dating to the late 19th century. The garage door is to the east. There is a large blue button mounted on the wall."
 Understand "hook/and/ladder/company/#1" as Fire Station 1. 
+
+The snarky remark of the Fire Station 1 is "How can I be snarky about a fire station?"
+
+The x-coordinate of the Fire Station 1 is -2. The y-coordinate of the Fire Station 1 is 0.
 
 The ladder is in the Fire Station 1. "A ladder rests against the wall." The description is "A wooden ladder, about 6 feet long. It looks sturdy and well-maintained."
 
@@ -1649,6 +1667,8 @@ Instead of closing the garage door when the garage door is open:
 Book 29 - Reading Room
 
 The Reading Room is west of Main at Solvay. It is a leavable room. It is in ELR. The egress is east. The description is "The reading room is a small, cozy space, with a number of comfortable chairs and a few tables. A sales counter is at the back of the room. Bookshelves lead back into the depths of the store. A narrow staircase leads down."
+
+The snarky remark of the Reading Room is "Perhaps there is a book here on how to answer a ringing phone."
 
 The x-coordinate of the Reading Room is -2. The y-coordinate of the Reading Room is -1.
 
@@ -1682,6 +1702,8 @@ After examining Astral Secrets for the first time:
 Book 30 - Reading Room Basement
 
 The Bookstore Basement is below the Reading Room. It is in ELR. The description is "The basement is dark and musty, with a number of shelves and boxes of books. The walls are made of old, crumbling brick. There is a faint breeze. A narrow staircase leads up[if the bricked-up-hole is revealed]. There is a ragged hole in the north wall, leading into a dark space[end if]."
+
+The snarky remark of the Bookstore Basement is "Why did I come down here? What did I expect to find? The best you can say of this place is that the stairs also go up."
 
 The x-coordinate of the Bookstore Basement is -2. The y-coordinate of the Bookstore Basement is -1.
 
@@ -1717,6 +1739,8 @@ Book 31 - Sewer Tunnel
 
 a sewer tunnel 1 is in ELR. It is privately-named. It is always-indefinite. The printed name is "sewer tunnel". Understand "sewer/tunnel" as sewer tunnel 1. "The tunnel is dark and damp, with a low ceiling. From here, it leads east. To the west it narrows to little more than a pipe. To the south is a hole leading into a basement."
 
+The snarky remark of sewer tunnel 1 is "Wait, am I back in Swamp Park?"
+
 The x-coordinate of sewer tunnel 1 is -2. The y-coordinate of sewer tunnel 1 is 0.5.
 
 a sewer tunnel 2 is east of sewer tunnel 1. It is in ELR. It is privately-named. It is always-indefinite. The printed name is "sewer tunnel". Understand "sewer/tunnel" as sewer tunnel 2.  "The tunnel is dark and damp, with a low ceiling. From here, it leads east and west."
@@ -1737,6 +1761,8 @@ Book 32 - Fresnel's Music
 
 Fresnel's Music is southwest of Main at Solvay. It is in ELR. "The music store, like most of the town, is empty of all but a few items of little value."
 
+The snarky remark of Fresnel's Music is "It's like John Cage's 4[']33' in store form."
+
 The x-coordinate of Fresnel's Music is -2. The y-coordinate of Fresnel's Music is -2.
 
 A tuning fork is in Fresnel's Music. "A tuning fork lies on the counter." The description is "A tuning fork, used to tune musical instruments."
@@ -1745,6 +1771,8 @@ Book 33 - Henry's Hot Skillet
 
 Henry's Hot Skillet is a room. It is in ELR.
 The description is "This is the epitome of the homey small-town diner of times go by, except for the lack of all furniture, cooking implements, food, decor, and so on. There is a staircase leading up. A pair of insulated wires hangs from the ceiling at one end of the counter[if the clean battery is hooked up]. The wires are attached to a battery resting on the counter[end if]."
+
+The snarky remark of Henry's Hot Skillet is "It's a diner without any food or furniture. So, just a room, really."
 
 The x-coordinate of Henry's Hot Skillet is -1. The y-coordinate of Henry's Hot Skillet is -2.
 
@@ -1792,6 +1820,8 @@ Check untying the clean battery from the wires:
 Book 34 - Henry's Roof
 
 Henry's Roof is above Henry's Hot Skillet. It is in ELR. The description is "From here one can see much of the town, including a clear view of the obelisk in Enigma Park. There is a large TV aerial jutting from the roof here." The preposition is "on".
+
+The snarky remark of Henry's Roof is "Enigma Lake is truly... well, there."
 
 The x-coordinate of Henry's Roof is -1. The y-coordinate of Henry's Roof is -2.
 
@@ -2110,7 +2140,7 @@ Volume 4.5 - The Lizard People
 
 The group of lizard people is an animal. "Three humanoid figures are here, each with a long, scaly tail and a head that looks like a lizard's. They are dressed in smart grey suits. They are hissing loudly in what seems to be intelligent communication.[if lizard countdown is 1]
 
-They notice you and stop talking. One of them steps forward and says in guttural hiss, [one of]'So it is one of Doris's friends. We have been expecting you. You will not hinder us!'[or]'Surface vermin! You will not stop us!'[or]'No one will be allowed to interfere with our plans. Begone!'[or]'Silly human. You will not stop us!'[or]'You are too late to stop us. We will have the Dragon!'[at random][end if][line break]" 
+They notice you and stop talking. One of them steps forward and says in guttural hiss, [one of]'So it is one of Doris's friends. We have been expecting you. You will not hinder us!'[or]'Surface vermin! You will not stop us!'[or]'No one will be allowed to interfere with our plans. Begone!'[or]'Silly human. You will fail!'[or]'You are too late to stop us. We will have the Dragon!'[at random][end if][line break]" 
 
 The group of lizard people is in the fire station 1. 
 

@@ -576,9 +576,9 @@ Every turn when the current behavior of Chief Huffton Klimp is arrival:
 		try Klimp going west;
 	otherwise if the location of Klimp is the front office:
 		try Klimp going west;
-	otherwise if the location of Klimp is the BOSH hallway and Klimp's door is locked:
+	otherwise if the location of Klimp is the BOSH office hallway and Klimp's door is locked:
 		try Klimp unlocking Klimp's door with Klimp's key;
-	otherwise if the location of Klimp is the BOSH hallway:
+	otherwise if the location of Klimp is the BOSH office hallway:
 		try Klimp going west;
 	otherwise if the location of Klimp is the BOSH chief's office:
 		remove behavior from Klimp;
@@ -1007,7 +1007,7 @@ There is a fluorescent light source in BOSH office hallway called boh-light.
   
 Section 4 - Front Office 
 
-the front office is a room. It is east of the hallway. It is in BOSH HQ. It is outdoor-adjacent.
+the front office is a room. It is east of the BOSH office hallway. It is in BOSH HQ. It is outdoor-adjacent.
 The snarky remark is "This place just screams 'government efficiency'."
 
 There is a fluorescent light source in the front office called bfo-light.

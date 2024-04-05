@@ -273,7 +273,7 @@ Henry's Hot Skillet	--	"Polished black and white tile."
 Fresnel's Music	--	"Polished black and white tile."
 The Reading Room	--	"Wooden floorboards covered here and there with tasteful area rugs."
 Bookstore Basement	--	"Grey concrete."
-Enigma Lake Gymnasium	--	"Polished wood."
+public gymnasium	--	"Polished wood."
 Lake Street by the gym	--	"Nicely-maintained black asphalt."
 Enigma Lake Town Hall	--	"Polished wood."
 Solvay Road 100 block	--	"Nicely-maintained black asphalt."
@@ -329,7 +329,7 @@ Understand "tile" as the floor when the location is Henry's Hot Skillet.
 Understand "tile" as the floor when the location is Fresnel's Music.
 Understand "wood" as the floor when the location is The Reading Room.
 Understand "concrete" as the floor when the location is Bookstore Basement.
-Understand "wood" as the floor when the location is Enigma Lake Gymnasium.
+Understand "wood" as the floor when the location is public gymnasium.
 Understand "asphalt" as the floor when the location is Lake Street by the gym.
 Understand "wood" as the floor when the location is Enigma Lake Town Hall.
 Understand "asphalt" as the floor when the location is Solvay Road 100 block.

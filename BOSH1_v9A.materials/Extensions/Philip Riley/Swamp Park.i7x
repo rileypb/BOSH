@@ -331,8 +331,8 @@ Chapter 2 - The Laundromat Proper
 
 laundromat-region is a region. It is in Swamp Park.
 
-The laundromat-store is a room.
-It is privately-named. The printed name is "laundromat". Understand "A-plus/plus/laundromat" as the laundromat-store. It is in laundromat-region.
+The laundromat-store is a leavable room.
+It is privately-named. The printed name is "laundromat". Understand "A-plus/plus/laundromat" as the laundromat-store. It is in laundromat-region. It has egress southeast.
 "The deserted laundromat is lit by a flickering fluorescent light. The machines are old and worn, but still seemingly functional. An opening leads west to the back room."
 The snarky remark of the laundromat-store is "I'm sure the renovations will be worth it."
 

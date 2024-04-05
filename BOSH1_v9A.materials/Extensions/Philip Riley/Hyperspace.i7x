@@ -865,6 +865,8 @@ Section - Portal 2
 
 Portal Room 2 is a leavable room. It is back of the field office hallway. It is in field office area. "The room is full of humming, glowing machinery, all of it attached to a large, arch-shaped portal in the middle of the room. A sign on the portal says 'Auxiliary Portal'. The exit is forth." It has egress forth.
 
+The snarky remark is "Doris needs to hire a room-name consultant."
+
 The auxiliary portal is in Portal Room 2. The auxiliary portal can be activated. it is fixed in place.
 The snarky remark is "[if the auxiliary portal is activated]You're sure this won't hurt, right?[otherwise]The Auxiliary Portal is a bit of a let-down[end if]."
 
