@@ -7,8 +7,6 @@ Include Real People by Philip Riley.
 
 Book 1 - Basics
 
-The blue screwdriver is in the Room of Stuff.
-
 Margaret Chao is a woman. The description is "[Margaret Chao] is the latest occupant of the rapidly revolving post of office manager. Most of [their] job involves ordering stationery and office supplies, shredding documents, and keeping track of office equipment."
 The snarky remark of Margaret is "Margaret Chao: she may get it wrong, but at least it's with enthusiasm."
 
@@ -65,13 +63,13 @@ An availability rule for for the wrench:
 	
 for-a-screwdriver is a questioning quip.
 	It is privately-named. The printed name is "for a screwdriver". [The true-name is "for-a-screwdriver".] Understand "for/a/screwdriver" as for-a-screwdriver.
-	It mentions the screwdriver.
+	It mentions the red screwdriver.
 	The comment is "[if the current interlocutor is Margaret][We] [ask], 'Margaret, where's the screwdriver?'[otherwise][We] [ask], 'Would you happen to have a screwdriver I could borrow?'[end if]".
 	The reply is "'Umm... I think it was in a box we had to leave behind.' [Margaret] looks embarrassed. 'What? I never thought we'd need it. This isn't a construction site after all. Maybe if Klimp had paid for the bigger UHaul...' [They] stares past [us] awkwardly.".
 	It quip-supplies Margaret;
 	
 An availability rule for for-a-screwdriver:
-	if the player knows vent-screws and the screwdriver is not seen:
+	if the player knows vent-screws and the red screwdriver is not seen:
 		always available;
 		
 to unlock the backdoor is a questioning quip. 

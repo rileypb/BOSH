@@ -565,6 +565,8 @@ Instead of asking someone to try doing something when the noun is busy with resp
 
 Chief Huffton Klimp is a man. The printed name of Klimp is "Chief Klimp". The description is "Huffton Klimp, or simply 'The Chief', who by his name and title should rightly be big and gruff, is a wiry guy with a thinning shock of red hair on top. Once the youngest and most devoted recruit in the Bureau, the years and his promotion to Bureau Head have not dulled his enthusiasm and idealism. He's a true believer in the existence of aliens, and he's convinced that the Bureau is the only thing standing between humanity and the alien menace. He's also convinced that the Bureau is the only thing standing between him and a comfortable retirement. He's a good guy, but he's a bit of a pain."
 
+The snarky remark of Chief Huffton Klimp is "The whole problem with Klimp is that he's so wrong about so many, many things."
+
 Klimp carries a mobile phone called klimp's mobile phone. Klimp owns Klimp's mobile phone. Klimp's mobile phone number is a phone number. Klimp's mobile phone number reaches Klimp's mobile phone. The player knows klimp's mobile phone number. Klimp knows Biff's mobile number.
 
 Klimp's key is a key. Klimp's key unlocks Klimp's door. Klimp carries Klimp's key. 
@@ -1877,7 +1879,22 @@ bfo-light is unsnarkable.
 laundromat sign is unsnarkable.
 laundromat window is unsnarkable.
 ls-light is unsnarkable.
-
+pawn-light is unsnarkable.
+BOSH-headquarters-to-the-south is unsnarkable.
+The laundromat desk's drawer is unsnarkable.
+The large key is unsnarkable.
+klimp's mobile phone is unsnarkable.
+Klimp's key is unsnarkable.
+old copper key is unsnarkable.
+building is unsnarkable.
+town hall light source is unsnarkable.
+Rolle's light source is unsnarkable.
+Henry's light source is unsnarkable.
+Astral Secrets is unsnarkable.
+Reading Room light source is unsnarkable.
+Fresnel's light source is unsnarkable.
+iron key is unsnarkable.
+radio station light source is unsnarkable.
 
 
 Book 21 - Not For Release 

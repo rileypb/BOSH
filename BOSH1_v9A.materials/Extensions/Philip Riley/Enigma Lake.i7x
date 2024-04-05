@@ -271,7 +271,12 @@ Instead of going nowhere from the Solvay-Road-by-the-lake:
 	stop the action;
 
 The lake-shore-1 is scenery in Solvay-Road-by-the-lake. "The lake shore is rocky and uneven, with a few small trees and bushes growing along the edge."
+
+It is unsnarkable.
+
 The lake-scenery-1 is scenery in Solvay-Road-by-the-lake. "The lake is dark and still, reflecting the moonlight."
+The snarky remark of the lake-shore-1 is "It's just waiting for me to look away, and then WHAM! A flood."
+
 
 The shack facade is a building facade. It is in Solvay-Road-by-the-lake. It is privately-named. The printed name is "shack". Understand "shack" as the shack facade. "A dirty shack stands opposite the lake."
 	The shack facade fronts the dirty shack.
@@ -429,13 +434,26 @@ The x-coordinate of the radio station roof is 2. The y-coordinate of the radio s
 
 The metal cabinet is a closed, locked, openable, scenery container in the radio station roof. "The metal cabinet is attached to the foot of the broadcast tower[if the metal cabinet is locked], held shut by a chain and padlock[otherwise if the metal cabinet is closed], closed[otherwise], hanging open. Inside it is a power switch[end if]." 
 
+The snarky remark of the metal cabinet is "[if the metal cabinet is closed]It's almost as if obstacles are thrown in my way on purpose[otherwise]Haha, take that, metal cabinet[end if]."
+
 Report opening the metal cabinet:
 	say "Faraji opens the metal cabinet, revealing a power switch inside. It is set to [if the power switch is switched on]on[otherwise]off[end if].";
 	stop the action;
 
 Chapter 1 - The padlock and chain
 
-The padlock is scenery in radio station roof. The description is "[if the metal cabinet is locked]A padlock secures the cabinet shut[otherwise]A padlock, attached to nothing[end if]." Understand "lock", "pad lock" as the padlock.
+The padlock is scenery in radio station roof. The description is "[if the metal cabinet is locked]A keyed padlock secures the cabinet shut[otherwise]A keyed padlock, attached to nothing[end if]." Understand "lock", "pad lock" as the padlock.
+
+The snarky remark of the padlock is "Locks, always so many locks."
+
+Instead of unlocking the padlock with a key:
+	say "That key doesn't fit." instead;
+
+Instead of unlocking the padlock with something:
+	say "That wouldn't be very productive." instead;
+
+Instead of opening the padlock:
+	say text of the can't open what's locked rule response (A);
 
 The steel chain is scenery in radio station roof. The description is "[if the metal cabinet is locked]A steel chain secures the cabinet shut[otherwise]A steel chain, attached to nothing[end if]." Understand "metal chain" as the steel chain.
 
@@ -503,7 +521,7 @@ After switching off the power switch:
 	otherwise:
 		say "Faraji switches the power switch off. The broadcast tower's hum dies away.";
 
-The broadcast tower is scenery in the radio station roof. "A tall, steel lattice structure, rising prominently above the building. This kind of tower was designed to maximize the height for better signal transmission and reception in the era before widespread cable and satellite technology. Strangely, the bars of the tower near roof-level are bent inward to form a small platform. It's almost as if something is meant to be mounted there."
+The broadcast tower is scenery in the radio station roof. "A tall, steel lattice structure, rising prominently above the building. This kind of tower was designed to maximize the height for better signal transmission and reception in the era before widespread cable and satellite technology. Strangely, the bars of the tower near roof-level are bent inward to form a small platform. It's almost as if something is meant to be mounted there." Understand "radio tower" as the broadcast tower.
 The snarky remark of the broadcast tower is "What a great place to get struck by lightning."
 
 The platform is part of the broadcast tower. It is a supporter.
@@ -1417,25 +1435,33 @@ The snarky remark of Horton Family House Kitchen is "I wonder if this place felt
 The x-coordinate of Horton Family House Kitchen is -2. The y-coordinate of Horton Family House Kitchen is 1.
 
 The furnishings are scenery in Horton Family House Kitchen. "A few chairs and a table are arranged around the room."
+The snarky remark of the furnishings is "Calling all interior decorators."	
 
 The open hearth is scenery in Horton Family House Kitchen. "The hearth is a simple, open fireplace, with a few logs stacked beside it."
+The snarky remark of the open hearth is "Someone call the fire marshal, I mean, this just isn't safe."
 
 The kitchen chairs are scenery in Horton Family House Kitchen. "A few chairs are arranged around the room."
+The snarky remark of the kitchen chairs is "They look like they were designed by someone who hates sitting."
 
 The kitchen table is a scenery supporter in Horton Family House Kitchen. "A simple wooden table."
+It is unsnarkable.
 
 The logs are scenery in Horton Family House Kitchen. "A few logs are stacked beside the hearth."
+It is unsnarkable.
 
 The parlor facade is a building facade. It is in Horton Family House Kitchen. It is privately-named. The printed name is "parlor". Understand "parlor" as parlor facade. "The parlor is to the south."
 	The parlor facade fronts Horton Family House Parlor.
 	It is enterable from Horton Family House Kitchen.
 
 The narrow staircase is scenery in Horton Family House Kitchen. "A narrow staircase leads up."
+The snarky remark of the narrow staircase is "Winner, most rickety staircase, 1764."
 
 Instead of climbing up the narrow staircase:
 	try going up;
 
 The dowsing rod is in Horton Family House Kitchen. The description is "A simple wooden rod, about a foot long, with a forked end." Understand "simple/wooden/stick" as the dowsing rod.
+
+The snarky remark of the dowsing rod is "So, let me get this straight. I just hold the forked end and walk around until it starts vibrating? Sounds legit."
 
 Divining-action is an action applying to one thing. Understand "divine with [something]", "dowse with [something]" as divining-action.
 
@@ -1675,16 +1701,18 @@ The snarky remark of the Reading Room is "Perhaps there is a book here on how to
 The x-coordinate of the Reading Room is -2. The y-coordinate of the Reading Room is -1.
 
 The sales counter is scenery in the Reading Room. "An ordinary sales counter".
+The snarky remark of the sales counter is "Service! Service! I demand service!"
 
 The bookshelves are scenery in the Reading Room. "The bookshelves are filled with a variety of books, from the latest bestsellers to obscure, out-of-print volumes."
 Understand "bookshelf/shelf/shelves/books" as the bookshelves.
+The snarky remark of the bookshelves is "Look, I'd really love to sit down and read a book, but I've got a phone to answer."
 
 To poke is a verb.
 
 Instead of searching the bookshelves:
 	say "The bookshelves are filled with a variety of books, from the latest bestsellers to obscure, out-of-print volumes. [We] [poke] around and [find] nothing of use.";
 
-Astral Secrets is on the sales counter. It is proper-named. The printed name is "[first time]the book [only][italic type]Astral Secrets[roman type]". Understand "book" as Astral Secrets. Astral Secrets can be read.
+Astral Secrets is on the sales counter. It is proper-named. The printed name is "[italic type]Astral Secrets[roman type]". Understand "book" as Astral Secrets. Astral Secrets can be read.
 
 "A book lies on the sales counter."
 
@@ -1774,6 +1802,7 @@ The snarky remark of Fresnel's Music is "It's like John Cage's 4[']33' in store 
 The x-coordinate of Fresnel's Music is -2. The y-coordinate of Fresnel's Music is -2.
 
 A tuning fork is in Fresnel's Music. "A tuning fork lies on the counter." The description is "A tuning fork, used to tune musical instruments."
+The snarky remark is "You know what's fun? Tapping a tuning fork and holding it to your teeth."
 
 Book 33 - Henry's Hot Skillet
 
@@ -1787,8 +1816,10 @@ The x-coordinate of Henry's Hot Skillet is -1. The y-coordinate of Henry's Hot S
 the Skillet door is a closed locked openable lockable scenery door. It is south of Main at Solvay and north of Henry's Hot Skillet. The Skillet door has matching key the brass key.
 
 The lunch counter is a scenery supporter in Henry's Hot Skillet. "A typical mid-twentieth-century lunch counter."
+The snarky remark of the lunch counter is "Why isn't BOSH investigating the death of the American diner?"
 
 The wires are scenery in Henry's Hot Skillet. "Two insulated wires with bare ends, they probably once attached to some electrical device sitting on the counter[if the clean battery is hooked up]. Right now, the wires are attached to a battery resting on the counter[end if]."
+The snarky remark of the wires is "I'm sure this is safe."
 
 They are plural-named.
 
@@ -1883,10 +1914,13 @@ The x-coordinate of Rolle's Department Store is 0. The y-coordinate of Rolle's D
 
 The gleaming floor is scenery in Rolle's Department Store. "Someone has polished it spotless, despite the looming destruction of the store. That's dedication."
 
+The snarky remark of the gleaming floor is "And I'll be the last one to see its magnificence."
+
 Does the player mean doing something to the gleaming floor: 
 	It is very likely;
 	
 The sale posters are scenery in Rolle's Department Store. "'50% off everything in the store!'"
+The snarky remark of the sale posters is "Even the floor waxer?"
 
 The floor waxer is a fixed in place thing in Rolle's Department Store. "A floor waxer sits in the center of the gleaming floor." The description is "This is a bulky, heavy-duty machine with a large, round brush head, designed for durability and the ability to polish vast floor areas to a high shine."
 The snarky remark is "I'm sure I've seen this floor waxer somewhere before."
@@ -2328,9 +2362,6 @@ Before doing something when group of lizard people is in the location:
 Every turn when the lizard countdown is 0 and the group of lizard people is in the location:
 	say "The lizard people hiss, creating a strange cloud of thick vapor. Faraji feels light-headed and disoriented. When the vapor clears, they are somewhere else...";
 	teleport the player;
-
-Every turn:
-	say "Lizard countdown is [lizard countdown].";
 
 Instead of going when the group of lizard people is in the location:
 	say "The lizard people block the way.";

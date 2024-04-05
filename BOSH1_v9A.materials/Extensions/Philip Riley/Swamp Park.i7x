@@ -257,12 +257,16 @@ Dave's pawn shop is in Swamp Park.
 A man called Dave is in the pawn shop. Understand "owner" as Dave. "A man, presumably Dave, stands behind the main counter eyeing [Player]." The description is "He's dressed in polyester, as if he were still wearing last night's bowling shirt. A bit of tattoo peeks out from his open collar."
 The snarky remark of Dave is "He's good at hiding his fangs."
 
-The tattoo is part of Dave. The description is "It's hard to make out, but it looks like a dragon."
+The tattoo is part of Dave. The description is "It's hard to know what it looks like since just a bit peeks out from his collar."
+
+The snarky remark of the tattoo is "I'm sure it's a butterfly."
 
 Greeting response for Dave:
 	say "[Dave] grunts hello.";
 
 a five-dollar bill is a thing. The description is "A five-dollar bill." Understand "five-dollar", "dollar/bucks/dollars/buck", "bill" as a five-dollar bill.
+
+The snarky remark of the five-dollar bill is "Gee, I hope Dave didn't break the bank."
 
 Instead of giving the wristwatch to Dave:
 	say "Dave smiles when [we] [hand] him the watch. 'I've been looking for this,' he says. 'Here you go, five bucks for your trouble.'";
@@ -279,7 +283,7 @@ Instead of showing the wristwatch to Dave:
 for-a-screwdriver-pawn is a questioning quip.
 	It is privately-named. The printed name is "for a screwdriver". 
 	Understand "for/a/screwdriver" as for-a-screwdriver-pawn.
-	It mentions the screwdriver.
+	It mentions the red screwdriver.
 	The comment is "[We] [lean] on the counter and [ask], 'Do you happen to have a screwdriver I could borrow for a few minutes? I'm from the Bureau office next door.'".
 	The reply is "The man shakes his head and says, 'Sorry. I had one, but the guy who runs the laundromat borrowed it and didn't bring it back.'".
 	It quip-supplies Dave.
@@ -328,6 +332,8 @@ The astral-tunnel-1-facade is a building facade.
 	The astral-tunnel-1-facade fronts the astral-tunnel-1.
 	The astral-tunnel-1-facade is enterable from the back lot.
 
+The snarky remark of the astral-tunnel-1-facade is "[if astral-tunnel-1 is not visited]No way I'm going in there, right?[otherwise]It's not so bad, as long as you don't mind be stuck in a featureless white void[end if]."
+
 The astral-tunnel-2 is north of astral-tunnel-1. It is privately-named. The printed name is "astral tunnel". It is in hyperspace. "It is featureless white, or what passes for white here. It bends south to 'forth.'";
 
 The snarky remark of the astral-tunnel-2 is "I wonder if there's one of these leading into my apartment."
@@ -339,6 +345,8 @@ The astral-tunnel-2-facade is a building facade.
 	"It is featureless white, or what passes for white here. It extends 'back' from here.".
 	The astral-tunnel-1-facade fronts the astral-tunnel-2.
 	The astral-tunnel-1-facade is enterable from the laundromat back room.
+
+The snarky remark of the astral-tunnel-2-facade is "So, does our universe look like swiss cheese with all these holes in it?"
 
 Chapter 2 - The Laundromat Proper
 
@@ -378,6 +386,7 @@ It is forth of astral-tunnel-2.
 The snarky remark of the laundromat back room is "Definitely worth the trouble of breaking in."
 
 The opening-2 is scenery in the laundromat back room. It is privately-named. The printed name is "opening". Understand "doorway" as the opening-2. "The opening leads east to the laundromat proper."
+It is unsnarkable.
 
 The laundromat desk is a scenery desk in the laundromat back room. "The desk is cluttered with papers."
 The snarky remark of the laundromat desk is "For a place that supposedly gets things clean, this place is a mess."
@@ -396,6 +405,12 @@ After examining the paperwork for the first time:
 	now the strange piece of paper is on the laundromat desk;
 
 The laundromat stairs are a backdrop. They are in the laundromat back room and the laundromat basement. "The stairs are steep and narrow."
+The snarky remark of the laundromat stairs is "I'm sure they're up to code."
+Instead of taking the laundromat stairs:
+	if the location is the laundromat back room:
+		try going down;
+	otherwise:
+		try going up;
 
 The laundromat basement is below the laundromat back room. It is in laundromat-region.
 "A few boxes of supplies sit here and there in the otherwise empty space. Stairs lead up, while a doorway leads south."
@@ -407,7 +422,7 @@ The snarky remark of the boxes of supplies is "Maybe Margaret would like to sort
 Instead of searching the boxes of supplies:
 	say "The boxes are full of detergent and similar things.";
 
-The opening-3 is scenery in the laundromat basement. It is privately-named. The printed name is "opening". Understand "doorway" as the opening-3. "The opening leads south."
+The opening-3 is scenery in the laundromat basement. It is privately-named. The printed name is "opening". Understand "doorway" as the opening-3. "The opening leads south." It is unsnarkable.
 
 The back basement is south of the laundromat basement. It is in laundromat-region.
 "The basement ends here. There is a switch on the wall, currently [if the light switch is switched on]on[otherwise]off[end if]. A doorway leads north.
@@ -443,10 +458,10 @@ Understand  "large/dark/objects" as stacks of crates when in darkness.
 laundromat back room is dark.
 laundromat basement is dark.
 back basement is dark.
-There is a fluorescent light source in laundromat-store called ls-light.
-There is a fluorescent light source in laundromat back room called lbr-light.
-There is a fluorescent light source in laundromat basement called lb-light.
-There is a fluorescent light source in back basement called bb-light.
+There is a fluorescent light source in laundromat-store called ls-light. It is unsnarkable.
+There is a fluorescent light source in laundromat back room called lbr-light. It is unsnarkable.
+There is a fluorescent light source in laundromat basement called lb-light. It is unsnarkable.
+There is a fluorescent light source in back basement called bb-light. It is unsnarkable.
 
 
 moving it with is an action applying to two things. Understand "move [something] with [something]" as moving it with.
@@ -523,6 +538,7 @@ The astral-tunnel-3-facade is a building facade.
 	"It is featureless white, or what passes for white here. It extends 'forth' from here.".
 	The astral-tunnel-3-facade fronts the astral-tunnel-3.
 	The astral-tunnel-3-facade is enterable from the back basement.
+	It is unsnarkable.
 
 The astral-tunnel-3-facade-2 is a building facade. 
 	It is in the laundromat-store.
@@ -531,6 +547,7 @@ The astral-tunnel-3-facade-2 is a building facade.
 	"It is featureless white, or what passes for white here. It extends 'backsouth' from here.".
 	The astral-tunnel-3-facade-2 fronts the astral-tunnel-3.
 	The astral-tunnel-3-facade-2 is enterable from the laundromat-store.
+	It is unsnarkable.
 
 Book 4 - Convenience Store
 
@@ -544,6 +561,7 @@ The store clerk is a man in the Convenience Store. "The clerk, a scruffy man in 
 The snarky remark of the store clerk is "Finally a source of fashion advice."
 
 The shop counter is a supporter in the nectarine store. It is scenery. "The counter is arrayed with displays of CBD oil, antacids, and the like."
+It is unsnarkable.
 
 Some CBD oil is scenery in the convenience store. "[We] [don't] need any of this stuff." 
 The snarky remark of the CBD oil is "Well, when I have a CBD, I'll know where to come for lubricant."
@@ -563,8 +581,10 @@ The store shelves are a thing in the Convenience Store. They are scenery. "[We] 
 The snarky remark of the store shelves is "Yep, I thought so. It all costs money. More precisely, more than zero dollars."
 
 Some groceries are a thing in the Convenience Store. They are scenery. "We're not here to go grocery shopping." Understand "bread/ketchup/catsup/potato/chips" as groceries.
+The snarky remark of the groceries is "Who knows where they've been?"
 
 The flashlight is a device. Understand "light/torch" as the flashlight. The description is "A small, sturdy flashlight."
+The snarky remark of the flashlight is "I might need it to whack Klimp over the head."
 
 Instead of switching on the flashlight:
 	now the flashlight is lit.
