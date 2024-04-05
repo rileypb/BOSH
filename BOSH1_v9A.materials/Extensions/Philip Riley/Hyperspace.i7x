@@ -462,6 +462,8 @@ Book 2 - Hallway
 
 the field office hallway is west of field office reception. It is in field office area. "The hallway is white and gleaming. Doorways lead north, south, east, west, forth, and back."
 
+The snarky remark is "You can find blandness in any dimension."
+
 Book 3 - Minerva's Office
 
 Minerva's office is a leavable room. It is north of the field office hallway. It is in field office area. "The office is white and gleaming. A mahogany desk is in the middle of the room. A coffee maker sits on the desk." It has egress south.
@@ -477,8 +479,12 @@ The snarky remark is "Mahogany. Just the thing to match the monotonous white of 
 Minerva's papers are scenery. They are on the mahogany desk. The description is "Minerva notices you looking at her papers and gives you a look that says 'Mind your own business.'" 
 It is owned by Minerva. It is plural-named.
 
+The snarky remark is "I bet they're all blank."
+
 Minerva's books are scenery on the mahogany desk. The description is "The books [italic type]Advanced Temporal Mechanics[roman type], [italic type]Theoretical Hyperspace[roman type], and [italic type]Hitchhiker's Guide to the Galaxy[roman type] are stacked neatly on the desk." 
 It is plural-named. It is owned by Minerva.
+
+The snarky remark is "Minerva has a sense of humor?"
 
 Instead of examining Minerva's books:
 	let tomes be the list of tomes on the mahogany desk;
@@ -596,6 +602,8 @@ The snarky remark of the coffee maker is "I am a machine for turning coffee into
 
 The cup of coffee is a thing. The description is "[Coffee description]. It is in a paper cup.". The cup of coffee has a number called the hotness.
 
+The snarky remark of the cup of coffee is "Finally, something to keep me awake through all this."
+
 To say coffee description:
 	if the hotness of the cup of coffee is greater than 25:
 		say "The coffee is steaming hot";
@@ -712,6 +720,8 @@ The snarky remark is "I should have paid more attention in my theoretical nonsen
 
 The tchotchkes are scenery in the field office chief's office. Understand "knick-knacks", "knick knacks", "curios", "junk", "stuff" as the tchotchkes. The description is "A small, plastic model of a TARDIS, a Rubik's cube, and a CMY cube are on the desk." They are plural-named. Doris owns the tchotchkes.
 
+The snarky remark of the tchotchkes is "Come to think of it, he does look a little like Sylvester McCoy."
+
 A model TARDIS is on Doris's desk. The description is "It's a small, plastic model of a TARDIS." It is owned by Doris.
 The snarky remark is "It's only a model."
 
@@ -757,9 +767,10 @@ The machinery is scenery in Portal Room 1. The description is "The machinery is 
 The snarky remark is "At least it's not a DeLorean."
 
 The portal to the past is in Portal Room 1. The portal to the past can be activated. it is fixed in place.
-The snarky remark is "[if the portal to the past is activated]My excitement at the prospect of traveling to 50's Upstate New York is palpable, I assure you[otherwise]The Portal to the Past is a bit of a let-down[end if]."
 
 Understand "shimmering/curtain/field/of/light" as the portal to the past when the portal to the past is activated. 
+
+The snarky remark of the portal to the past is "Does it kill you and then assemble a new you on the other side? If so, I'm not getting paid enough for this."
 
 To say portal to the past interior description:
 	if the portal to the past is activated:
@@ -868,9 +879,10 @@ Portal Room 2 is a leavable room. It is back of the field office hallway. It is 
 The snarky remark is "Doris needs to hire a room-name consultant."
 
 The auxiliary portal is in Portal Room 2. The auxiliary portal can be activated. it is fixed in place.
-The snarky remark is "[if the auxiliary portal is activated]You're sure this won't hurt, right?[otherwise]The Auxiliary Portal is a bit of a let-down[end if]."
 
 Understand "shimmering/curtain/field/of/light" as the auxiliary portal when the auxiliary portal is activated. 
+
+The snarky remark of the auxiliary portal is "I'd like a portal right to my bed, please."
 
 To say auxiliary portal interior description:
 	if the auxiliary portal is activated:
@@ -1096,6 +1108,8 @@ about the mission is a questioning quip.
 
 Doris's note is a thing. The description is "It's a bunch of cryptic scribbles."
 
+The snarky remark of Doris's note is "Don't they teach penmanship in hyperspace?"
+
 Check giving Tribes of New York to Doris when Doris's note is not off-stage:
 	say "Doris looks at you funny. 'No, bring it and the note to Christy. She'll know what to do with it.'" instead;
 
@@ -1226,6 +1240,8 @@ After giving the cup of coffee to Christy:
 	now Christy is researching;
 
 Christy's note is a thing. The description is "The note consists of just the number [town hall spacetime setting]."
+
+The snarky remark of Christy's note is "That's illuminating."
 
 Before going north from Christy's office when Christy is researching:
 	say "Christy suddenly hoots behind you. 'Stop! I have it. Sorry it took so long. Here, take this note to Doris.' They scribble something on a piece of paper and hand it to you. They think for a moment and say 'Oh yes, take the book too.' They hand you [italic type]Tribes of New York[roman type].";

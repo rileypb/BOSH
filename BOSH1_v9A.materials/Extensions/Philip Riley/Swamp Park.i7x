@@ -37,6 +37,8 @@ Instead of doing something to Margaret at a distance when Margaret is not in the
 	say "You can't see Margaret right now." instead;
 
 The office window is a part of the Office_. It is privately-named. The printed name is "office window". Understand "front window" as the office window. The description is "[if margaret is in the front office]Through the window, [we] can see Margaret, in her usual manic work mode[else]No one is visible inside[end if]."
+
+The office window is unsnarkable.
 	
 The department store sign is a part of the office_. Understand "angel/angel's/wings" as the department store sign. The description is "It's adorned with a pair of angel's wings."
 The snarky remark of the department store sign is "What I wouldn't give for a pair of wings right now."
@@ -60,6 +62,8 @@ Instead of entering or opening or driving car 1:
 	say "[Agent]'s job is here for now.";
 
 The Hyundai hood is a part of Car 1. It is an openable closed container. The description is "The hood is [if the Hyundai hood is closed]closed[otherwise]open[end if]."
+
+The Hyundai hood is unsnarkable.
 
 The clean car battery is in the Hyundai hood. The description is "The battery is clean and new[if the clean battery is hooked up]. Two wires are attached to the terminals[end if]."
 The snarky remark of the clean battery is "Just got it replaced last week."
@@ -118,8 +122,12 @@ The laundromat window is a part of the Laundromat-facade. It is privately-named.
 
 The washing-machines are a part of the Laundromat-facade. They are privately-named. The printed name is "washing machines". Understand "washing/-- machine/machines", "washer/washers" as the washing-machines. The description is "From here, the machines look old and worn."
 They are obstructed.
+
+The snarky remark of the washing-machines is "I'm sure they're all in perfect working order."
 	
 The laundromat door is a closed, back-locked, and front-locked scenery shop-door. It is privately-named. The printed name is "laundromat door". Understand "laundromat/-- door" as the laundromat door. It is northwest of the parking lot south and southeast of the laundromat-store. The front description is "It's a typical glass door. Taped to it is a sign that says 'Closed for renovations'." The frontside is the strip mall parking lot south. The back description is "It's a typical glass door." 
+
+The snarky remark of the laundromat door is "The gateway to paradise, either way you go through it."
 	
 Check going northwest from the strip mall parking lot south when the player does not know break-in-to-laundromat and the laundromat door is front-locked and the laundromat door is back-locked: 
 	say "A sign on the laundromat door says 'Closed for renovations'." instead;
@@ -142,6 +150,8 @@ The snarky remark of the flashing neon sign is "At least they have style."
 It is obstructed.
 	
 The pawn-shop-door is a closed scenery shop-door. It is southwest of the parking lot south and northeast of the Dave's pawn shop. It is privately-named. The printed name is "pawn shop door". Understand "pawn shop door" as the pawn-shop-door. Understand "door" as the pawn-shop-door. The front description is "It's a typical glass door. The light within is too dim to see much." The frontside is the strip mall parking lot south. The back description is "It's a typical glass door."
+
+The pawn-shop-door is unsnarkable.
 
 Instead of entering the pawn-shop-facade:
 	try going southwest;
@@ -211,6 +221,7 @@ It is far away.
 
 BOSH-headquarters-to-the-south is scenery in strip mall parking lot north. It is privately-named. The printed name is "BOSH headquarters". Understand "bosh/headquarters/HQ/office" as BOSH-headquarters-to-the-south. "The BOSH headquarters are to the south."
 It is far away.
+It is unsnarkable.
 	
 Book 2 - Dave's pawn shop
 	
@@ -319,6 +330,8 @@ The astral-tunnel-1-facade is a building facade.
 
 The astral-tunnel-2 is north of astral-tunnel-1. It is privately-named. The printed name is "astral tunnel". It is in hyperspace. "It is featureless white, or what passes for white here. It bends south to 'forth.'";
 
+The snarky remark of the astral-tunnel-2 is "I wonder if there's one of these leading into my apartment."
+
 The astral-tunnel-2-facade is a building facade. 
 	It is in the laundromat back room.
 	It is privately-named. The printed name is "astral tunnel".
@@ -343,7 +356,8 @@ It is far away.
 The washing machines are scenery in the laundromat-store. "The machines are old and worn, but still seemingly functional. A few are out of order." Understand "machine/dryer/dryers" as the washing machines.
 The snarky remark of the washing machines is "I'm trying to think of a good joke about washing machines, but I'm coming up empty."
 
-The opening_ is scenery in the laundromat-store. "The opening leads west to the back room." Understand "doorway" as the opening_.
+The opening_ is scenery in the laundromat-store. "The opening leads west to the back room." Understand "doorway" as the opening_. It is privately-named. The printed name is "opening".
+It is unsnarkable.
 
 The handtruck is in the laundromat-store. It is pushable between rooms.
 Understand "hand/truck/trolley/dolly/stack/trundler", "box cart", "sack barrow", "cart", "sack truck", "two wheeler", "bag barrow" as the handtruck. The description is "A handtruck sits in the corner, ready to be used."

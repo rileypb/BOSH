@@ -1513,6 +1513,8 @@ Book 26 - Astral Tunnel
 
 The Horton astral tunnel is forthsouth of Horton Family House Parlor. It is privately-named. The printed name is "astral tunnel". It is in hyperspace. "It is featureless white, or what passes for white here. It bends 'backnorth' to 'backeast'.".
 
+The snarky remark of the Horton astral tunnel is "A creepy old house with a creepy doll-fly, and now a creepy astral tunnel. I'm sensing a theme."
+
 Fire Station 1 is backeast of the Horton astral tunnel. It is in ELR.
 
 Book 27 - Horton Graveyard
@@ -1745,13 +1747,19 @@ The x-coordinate of sewer tunnel 1 is -2. The y-coordinate of sewer tunnel 1 is 
 
 a sewer tunnel 2 is east of sewer tunnel 1. It is in ELR. It is privately-named. It is always-indefinite. The printed name is "sewer tunnel". Understand "sewer/tunnel" as sewer tunnel 2.  "The tunnel is dark and damp, with a low ceiling. From here, it leads east and west."
 
+The snarky remark of sewer tunnel 2 is "Actually it smells better than Swamp Park."
+
 The x-coordinate of sewer tunnel 2 is 0. The y-coordinate of sewer tunnel 2 is 0.5.
 
 a sewer tunnel 3 is east of sewer tunnel 2. It is in ELR. It is privately-named. It is always-indefinite. The printed name is "sewer tunnel". Understand "sewer/tunnel" as sewer tunnel 3. "The tunnel is dark and damp, with a low ceiling. From here, it leads west, and turns into a small crawl to the east. There is a metal door with a lock to the north."
 
+The snarky remark of sewer tunnel 3 is "This town has the best tourist attractions."
+
 The x-coordinate of sewer tunnel 3 is 2. The y-coordinate of sewer tunnel 3 is 0.5.
 
 The astral-tunnel-elr is forth of sewer tunnel 3. It is privately-named. The printed name is "astral tunnel". It is in hyperspace. "It is featureless white, or what passes for white here. It leads back and backnorth.";
+
+The snarky remark of the astral-tunnel-elr is "I hope this one goes somewhere with pie."
 
 astral-tunnel-elr is forthsouth of the gym basement.
 

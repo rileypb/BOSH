@@ -5,8 +5,12 @@ Use authorial modesty.
 A thing has a text called a snarky remark. The snarky remark is usually "".
 A thing can be snarked.
 
+A thing can be snarkable or unsnarkable. A thing is usually snarkable.
+
 A room has a text called a snarky remark. The snarky remark is usually "".
 A room can be snarked.
+
+A room can be snarkable or unsnarkable. A room is usually snarkable.
 
 Snarking is an object based rulebook.
 

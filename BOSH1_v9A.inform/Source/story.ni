@@ -976,6 +976,8 @@ Moira's door is a door. It is north of the BOSH office hallway and south of Moir
 
 the BOSH office hallway is in BOSH HQ. The printed name is "hallway". "[Our] office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east. [door descriptions]."
 
+The snarky remark is "The carpet really makes the look, don't you think?"
+
 To say door descriptions:
 	let opendoors be a list of doors;
 	let closeddoors be a list of doors;
@@ -1029,6 +1031,8 @@ The snarky remark of the couch is "There goes the department budget for the mont
 
 The makeshift seating area is scenery in front office. "A coffee table and couch greet visitors to the office, as if any are expected." It is unfeelable.
 
+The snarky remark of the makeshift seating area is "I wonder if anyone will ever actually sit here."
+
 The coatrack is scenery in front office. "It's an old clothing rack from the department store which formerly occupied this space." Understand "old/clothing/rack/coat" as the coatrack.
 The snarky remark of the coatrack is "I wonder what's on sale today?"
 
@@ -1049,6 +1053,8 @@ The BOSH front desk is a scenery supporter in front office. Understand "store", 
 The snarky remark of the BOSH front desk is "I wonder if they'll let us keep the cash register."
 
 The shelves of office supplies are in front office. They are plural-named. They are scenery. "Pens, paper, nothing [we're] really concerned with now." Understand "row/of/drawers/pens/pen/pencils/pencil/paper/papers" as the shelves of office supplies.
+
+The snarky remark of the shelves of office supplies is "Some day I'll find out who stole my stapler."
 
 The thumb drive is a thing in the room of stuff. The description of the thumb drive is "It's a red plastic thumb drive, with what look like symbols scratched on the surface, but they're like no symbols you've ever seen. The metal USB end is somewhat corroded." Understand "USB/flash/memory" as the thumb drive.
 The snarky remark of the thumb drive is "Some crazy dude mailed this to me last month, said he found it in an ancient Onandaga root cellar on a farm in upstate New York. Claimed it was proof of time travel."
@@ -1334,6 +1340,7 @@ Section 6 - Moira's office
 Moira's office is in BOSH HQ. There is a fluorescent light source in Moira's office called moira-light.
 "It is, like Moira herself, neat and orderly. She's clearly made the most of the meager funds she had for furnishing her office. Behind a modest yet functional desk is a modest yet functional office chair. Her bookshelves are filled with titles relating to investigative techniques, law, and skepticism. In the east wall is a closet door. The exit is to the south."
 The snarky remark of Moira Zin is "The problem with Moira is that she's too good at her job. Slow down and let the rest of us catch up, will you?"
+Moira's office is unsnarkable.
 
 There is a closet in Moira's office. The closet is a container. It is openable and closed. It is lockable and locked. It is scenery.
 [There is a breaker box in the closet. It is an openable container. It is closed. It is fixed in place. The description is "It's a small metal box affixed to the back wall of the closet. It is featureless apart from the latch."
@@ -1846,7 +1853,33 @@ To draw phone handset:
 	
 To call resize function:
 	(- ResizeGraphicsWindow(); -); 
-	
+
+Book 20.5 Miscellaneous
+
+[unsnarkable rooms and things]
+The Room of Subjects is unsnarkable.
+room of quips is unsnarkable.
+Room of Stuff is unsnarkable.
+isolation booth is unsnarkable.
+weather is unsnarkable.
+wall is unsnarkable.
+floor is unsnarkable.
+ceiling is unsnarkable.
+Hyperlight is unsnarkable.
+Adjacent light is unsnarkable.
+generic quip is unsnarkable.
+The Walls is unsnarkable.
+Christy's Pencil is unsnarkable.
+keypad is unsnarkable.
+display is unsnarkable.
+light-meter is unsnarkable.
+bfo-light is unsnarkable.
+laundromat sign is unsnarkable.
+laundromat window is unsnarkable.
+ls-light is unsnarkable.
+
+
+
 Book 21 - Not For Release 
  
 [ Include BOSH Tests by Philip Riley. ]
@@ -1856,11 +1889,69 @@ DEBUG is true.
 AUDIT is a truth state that varies.
 AUDIT is true.
 
+To decide what text is the wall description of (R - a room):
+	let result be "";
+	if there is a locale of R in the Table of Walls:
+		let result be the wall description corresponding to the locale of R in the Table of Walls;
+	decide on result.
+
+To decide what text is the floor description of (R - a room):
+	let result be "";
+	if there is a locale of R in the Table of Floors:
+		let result be the floor description corresponding to the locale of R in the Table of Floors;
+	decide on result.
+
+To decide what text is the ceiling description of (R - a room):
+	let result be "";
+	if there is a locale of R in the Table of Ceilings:
+		let result be the ceiling description corresponding to the locale of R in the Table of Ceilings;
+	decide on result.
+
+To decide what text is the transition description of (R - a room) from (S - a room):
+	repeat through the Table of Transitions:
+		if the source room entry is S and the target room entry is R:
+			decide on the transition text entry;
+	decide on "".
+
 When play begins:
 	if AUDIT is true:
-		repeat with X running through rooms:
+		say ">>> NO Snarky Remarks <<<[line break]";
+		repeat with X running through snarkable rooms:
 			if the snarky remark of X is "":
-				say "[X] -- [snarky remark of X][line break]";
+				say "ROOM [X][line break]";
+		repeat with X running through snarkable things:
+			if X is not a subject and the snarky remark of X is "":
+				say "THING [X][line break]";
+		lb;
+		say ">>> NO Description <<<[line break]";
+		repeat with X running through things:
+			if X is not a subject and the description of X is "":
+				say "THING [X][line break]";
+		lb;
+		say ">>> NO Initial Appearance <<<[line break]";
+		repeat with X running through things:
+			if X is not a subject and the initial appearance of X is "":
+				say "THING [X][line break]";
+		lb;
+		say ">>> NO Wall Description <<<[line break]";
+		repeat with X running through rooms:
+			if the wall description of X is "":
+				say "ROOM [X][line break]";
+		say ">>> NO Floor Description <<<[line break]";
+		repeat with X running through rooms:
+			if the floor description of X is "":
+				say "ROOM [X][line break]";
+		lb;
+		say ">>> NO Ceiling Description <<<[line break]";
+		repeat with X running through rooms:
+			if the ceiling description of X is "":
+				say "ROOM [X][line break]";
+		say ">>> NO Transition Description <<<[line break]";
+		repeat with X running through rooms:
+			repeat with Y running through rooms adjacent to X:
+				if the transition description of Y from X is "":
+					say "ROOM [X] to [Y][line break]";
+
 
 When play begins, seed the random-number generator with 1234.
 

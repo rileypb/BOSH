@@ -4,6 +4,7 @@ Use authorial modesty.
 
 Include Polish by Philip Riley.
 Include Scheduled People by Philip Riley.
+Include Snarky Remarks by Philip Riley.
 
 The block asking rule response (A) is "[The noun] [look] at [us] with a blank stare."
 The block answering rule response (A) is "[The noun] [look] at [us] with a blank stare."
@@ -18,6 +19,7 @@ Check pushing a door:
 		try closing the noun instead;
 	otherwise:
 		try opening the noun instead;
+
 
 Table of No Names (Continued)
 named person (person)	anonymous description (text)	unnamed description (text)	proper name (text)
@@ -48,6 +50,43 @@ laundromat back room	laundromat basement	"[We] carefully [navigate] the narrow s
 Li'l Nectarine Convenience Store	Strip Mall Parking Lot North	"[We] [exit] the store into the relative quiet of the nearby traffic."
 Dave's pawn shop	Strip Mall Parking Lot South	"[one of]Once again -- 'Cha-ching!' -- as [we] [leave] the store.[or]'Cha-ching!'[stopping]"
 Enigma Lake Town Hall	Enigma Park	"[We] [push] through the back door into the cool night."	--
+featureless hyperplane	field office reception	"Faraji descends the stairs and discovers... an office?"	--
+field office reception	featureless hyperplane	"Faraji, against their better judgment, [climb] the stairs back to the featureless hyperplane."	--
+field office reception	field office hallway	"Faraji leaves Maggie's relentless stare behind."	--
+field office hallway	field office reception	"Faraji uneasily steps back into Maggie's domain."	--
+field office hallway	Minerva's Office	"Faraji enters an open office door."	--
+field office hallway	field office chief's office	"Faraji enters the office of the chief of the field office. office."	--
+field office hallway	Christy's Office	"Faraji enters an open office door."	--
+field office hallway 	Portal Room 1	"Faraji takes a strange turn into a room labeled 'Portal Room 1'."	--
+field office hallway 	Portal Room 2	"Faraji takes a strange turn into a room labeled 'Portal Room 2'."	--
+Minerva's Office	field office hallway	"Faraji leaves Minerva to her work."	--
+field office chief's office	field office hallway	"Faraji couldn't be happier to get away from Doris's incessant chatter."	--
+Christy's Office	field office hallway	"Faraji leaves Christy to her scribbling."	--
+Portal Room 1	field office hallway 	"Faraji steps back into the hallway."	--
+Portal Room 2	field office hallway 	"Faraji steps back into the hallway."	--
+laundromat-store	laundromat back room	"Faraji steps back into the shadow of the back room."	--
+laundromat-store	astral-tunnel-3	"Faraji steps carefully into the astral tunnel."	--
+astral-tunnel-1	back lot	"Ah, the stink of the dumpster. Faraji leaves the astral tunnel for the back lot."	--
+astral-tunnel-1	astral-tunnel-2	"Faraji continues with trepidation along the astral tunnel."	--
+astral-tunnel-2	astral-tunnel-1	"Faraji continues along the astral tunnel."	--
+laundromat back room	laundromat-store	"Faraji steps into the relative brightness of the front room."	--
+laundromat back room	astral-tunnel-2	"Faraji steps carefully into the astral tunnel."	--
+laundromat basement	laundromat back room	"Faraji climbs the narrow stairs back to the back room."	--
+laundromat basement	back basement	"Faraji forges onward, deeper into the bowels of the laundromat."	--
+back basement	laundromat basement	"Faraji retreats to a safer location."	--
+back basement	astral-tunnel-3	"Faraji steps into the astral tunnel."	--
+astral-tunnel-3	laundromat-store	"Faraji exits the astral tunnel into the front room of the laundromat."	--
+astral-tunnel-3	back basement	"Faraji steps back into the back basement."	--
+Enigma Lake Town Hall	Main Street 200 block	"Faraji exits the town hall into the cool of the evening."	--
+Main Street 200 block	Enigma Lake Town Hall	"Faraji enters the town hall."	--
+Main Street 200 block	Main at Solvay	"Faraji treads the eerily quiet street westward, encountering a clump of shops."	--
+Main Street 200 block	Main at Lake	"Faraji heads east, approaching a large building with a broadcast tower on top."	--
+Main Street 200 block	Rolle's Department Store	"Faraji enters the open door of the department store."	--
+Main at Solvay	Main Street 200 block	"Faraji heads back to the east."	--
+Main at Solvay	Solvay Road 100 block	"Faraji heads north along the west side of the town hall."	--
+Main at Solvay	Reading Room	"Faraji, hankering for a good book, heads into the bookstore."	--
+Main at Solvay	Fresnel's Music	"Needing a little culture, Faraji heads into the music store."	--
+
 
 
 Table of Excuses (continued)

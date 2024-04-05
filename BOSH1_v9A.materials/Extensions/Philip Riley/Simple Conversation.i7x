@@ -6,6 +6,7 @@ Include Conversation Framework by Eric Eve.
 Include Conversational Defaults by Eric Eve.
 Include Complex Listing by Emily Short.
 Include Options Paragraph by Philip Riley.
+Include Snarky Remarks by Philip Riley.
 
 
 Volume 1 - Basics
@@ -22,6 +23,9 @@ A quip can be always-available.
 A quip can be exhausted. 
 A quip can be silent.
 A quip can be uttered.
+
+A thing can be snarkable or unsnarkable. A thing is usually snarkable.
+A quip is usually unsnarkable.
 
 A quip has a text called the comment.
 A quip has a text called the reply.
