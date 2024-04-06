@@ -69,6 +69,7 @@ Use MAX_NUM_STATIC_STRINGS of 400000.
 Use MAX_SYMBOLS of 200000.
 Use MAX_OBJECTS of 1024.
 Use MAX_DICT_ENTRIES of 20000.
+Use MAX_ARRAYS of 20000.
 
 Work Title is always "The Bureau of Strange Happenings".  
  
@@ -1895,6 +1896,9 @@ Reading Room light source is unsnarkable.
 Fresnel's light source is unsnarkable.
 iron key is unsnarkable.
 radio station light source is unsnarkable.
+locker key is unsnarkable.
+lake-scenery-1 is unsnarkable.
+
 
 
 Book 21 - Not For Release 

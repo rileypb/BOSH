@@ -8,6 +8,7 @@ Include Secret Doors by Gavin Lambert.
 Include Plugging by Philip Riley.
 Include Simple Conversation by Philip Riley.
 Include New Light by Philip Riley.
+Include Books by Philip Riley.
 
 Volume 1 - Some Stuff
 
@@ -427,12 +428,12 @@ The x-coordinate of Radio Station WGXC is 2. The y-coordinate of Radio Station W
 
 Book 12 - Radio Station Roof
 
-The radio station roof is a leavable room. It is above Radio Station WGXC. It has egress down. It is in ELR. "[We] can see the obelisk in the park clearly from here. The broadcast tower[if the power switch is switched on], humming loudly,[end if] rises many feet above [us]. A metal cabinet is attached to the foot of the tower[if the metal cabinet is locked], held shut by a chain and padlock[otherwise if the metal cabinet is closed], closed[otherwise], hanging open. Inside it is a power switch[end if].[if mounted-shiny-resonator] [A shiny astral resonator] is mounted on a platform in the tower, and a beam of light shoots out of it, striking the obelisk in the park. The crystal is glowing [crystal glow].[end if]".
+The radio station roof is a leavable room. It is above Radio Station WGXC. It has egress down. It is in ELR. "[We] can see the obelisk in the park clearly from here. The broadcast tower[if the power switch is switched on], humming loudly,[end if] rises many feet above [us]. A metal cabinet is attached to the foot of the tower[if the metal cabinet is locked], held shut by a padlock[otherwise if the metal cabinet is closed], closed[otherwise], hanging open. Inside it is a power switch[end if].[if mounted-shiny-resonator] [A shiny astral resonator] is mounted on a platform in the tower, and a beam of light shoots out of it, striking the obelisk in the park. The crystal is glowing [crystal glow].[end if]".
 The preposition is "on".
 The snarky remark of the radio station roof is "I'm not afraid of heights. I'm afraid of falling from heights."
 The x-coordinate of the radio station roof is 2. The y-coordinate of the radio station roof is -2.
 
-The metal cabinet is a closed, locked, openable, scenery container in the radio station roof. "The metal cabinet is attached to the foot of the broadcast tower[if the metal cabinet is locked], held shut by a chain and padlock[otherwise if the metal cabinet is closed], closed[otherwise], hanging open. Inside it is a power switch[end if]." 
+The metal cabinet is a closed, locked, openable, scenery container in the radio station roof. "The metal cabinet is attached to the foot of the broadcast tower[if the metal cabinet is locked], held shut by a padlock[otherwise if the metal cabinet is closed], closed[otherwise], hanging open. Inside it is a power switch[end if]." 
 
 The snarky remark of the metal cabinet is "[if the metal cabinet is closed]It's almost as if obstacles are thrown in my way on purpose[otherwise]Haha, take that, metal cabinet[end if]."
 
@@ -440,7 +441,7 @@ Report opening the metal cabinet:
 	say "Faraji opens the metal cabinet, revealing a power switch inside. It is set to [if the power switch is switched on]on[otherwise]off[end if].";
 	stop the action;
 
-Chapter 1 - The padlock and chain
+Chapter 1 - The padlock
 
 The padlock is scenery in radio station roof. The description is "[if the metal cabinet is locked]A keyed padlock secures the cabinet shut[otherwise]A keyed padlock, attached to nothing[end if]." Understand "lock", "pad lock" as the padlock.
 
@@ -455,51 +456,27 @@ Instead of unlocking the padlock with something:
 Instead of opening the padlock:
 	say text of the can't open what's locked rule response (A);
 
-The steel chain is scenery in radio station roof. The description is "[if the metal cabinet is locked]A steel chain secures the cabinet shut[otherwise]A steel chain, attached to nothing[end if]." Understand "metal chain" as the steel chain.
-
-The broken chain is a thing. The description is "A broken steel chain." Understand "steel/metal" as the broken chain.
-
 The broken lock is a thing. The description is "A broken padlock." Understand "padlock", "pad lock" as the broken lock.
-
-Check cutting the steel chain:
-	say "The chain is too thick to cut with [our] bare hands." instead;
 
 Cutting it with is an action applying to two things. Understand "cut [something] with/using [something]"  as cutting it with.
 
-Opening it with is an action applying to two things. Understand "open [metal cabinet] with/using [bolt cutters]", "unlock [metal cabinet] with/using [bolt cutters]", "open [padlock] with/using [bolt cutters]", "unlock [padlock] with/using [bolt cutters]", "open [steel chain] with/using [bolt cutters]", "unlock [steel chain] with/using [bolt cutters]" as opening it with.
+Opening it with is an action applying to two things. Understand "open [metal cabinet] with/using [bolt cutters]", "unlock [metal cabinet] with/using [bolt cutters]", "open [padlock] with/using [bolt cutters]", "unlock [padlock] with/using [bolt cutters]" as opening it with.
 
 Check opening something with the bolt cutters:
 	if the noun is the metal cabinet:
 		try cutting the padlock with the bolt cutters instead;
 	try cutting the noun with the bolt cutters instead;
 
-Check cutting something with something when the noun is not the steel chain and the noun is not the padlock:
-	say "That wouldn't be very productive." instead;
-
-Check cutting the steel chain with something when the second noun is not the bolt cutters:
+Check cutting something with something when the noun is not the padlock:
 	say "That wouldn't be very productive." instead;
 
 Check cutting the padlock with something when the second noun is not the bolt cutters:
 	say "That wouldn't be very productive." instead;
 
-Carry out cutting the steel chain with the bolt cutters:
-	now the metal cabinet is unlocked;
-	now the player carries the broken chain;
-	now the steel chain is nowhere;
-	now the player carries the padlock;
-	now the padlock is not scenery;
-	now the padlock is not fixed in place;
-
-Report cutting the steel chain with the bolt cutters:
-	say "The bolt cutters make short work of the steel chain.";
-
 Carry out cutting the padlock with the bolt cutters:
 	now the metal cabinet is unlocked;
 	now the player carries the broken lock;
 	now the padlock is nowhere;
-	now the player carries the steel chain;
-	now the steel chain is not scenery;
-	now the steel chain is not fixed in place;
 
 Report cutting the padlock with the bolt cutters:
 	say "The bolt cutters make short work of the padlock.";
@@ -1703,7 +1680,15 @@ The x-coordinate of the Reading Room is -2. The y-coordinate of the Reading Room
 The sales counter is scenery in the Reading Room. "An ordinary sales counter".
 The snarky remark of the sales counter is "Service! Service! I demand service!"
 
-The bookshelves are scenery in the Reading Room. "The bookshelves are filled with a variety of books, from the latest bestsellers to obscure, out-of-print volumes."
+The bookshelves are scenery in the Reading Room. "The bookshelves are filled with a variety of books, from the latest bestsellers to obscure, out-of-print volumes. You choose one at random:[paragraph break][random book report]".
+
+To say random book report:
+	sort the booklist in random order;
+	let the random-book be entry 1 of the booklist;
+	say "[italic type][title of the random-book][roman type] by [author of the random-book][line break][genre of the random-book]
+
+	[blurb of the random-book]";
+
 Understand "bookshelf/shelf/shelves/books" as the bookshelves.
 The snarky remark of the bookshelves is "Look, I'd really love to sit down and read a book, but I've got a phone to answer."
 
