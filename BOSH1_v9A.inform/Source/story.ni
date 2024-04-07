@@ -2000,7 +2000,11 @@ AUDIT is true.
 To decide what text is the wall description of (R - a room):
 	let result be "";
 	if there is a locale of R in the Table of Walls:
-		let result be the wall description corresponding to the locale of R in the Table of Walls;
+		choose the row with the locale of R in the Table of Walls;
+		if there is a wall description entry:
+			let result be the wall description entry;
+		if there is a has walls entry and the has walls entry is false:
+			let result be "no walls";
 	decide on result.
 
 To decide what text is the floor description of (R - a room):
@@ -2023,7 +2027,7 @@ To decide what text is the transition description of (R - a room) from (S - a ro
 
 When play begins:
 	if AUDIT is true:
-		say ">>> NO Snarky Remarks <<<[line break]";
+		[ say ">>> NO Snarky Remarks <<<[line break]";
 		repeat with X running through snarkable rooms:
 			if the snarky remark of X is "":
 				say "ROOM [X][line break]";
@@ -2035,17 +2039,12 @@ When play begins:
 		repeat with X running through things:
 			if X is not a subject and the description of X is "" and X is not a quip and X is not indescribable:
 				say "THING [X][line break]";
-		lb;
-		say ">>> NO Initial Appearance <<<[line break]";
-		repeat with X running through things:
-			if X is not a subject and X is not scenery and the initial appearance of X is "":
-				say "THING [X][line break]";
-		lb;
+		lb; ]
 		say ">>> NO Wall Description <<<[line break]";
 		repeat with X running through rooms:
 			if the wall description of X is "":
 				say "ROOM [X][line break]";
-		say ">>> NO Floor Description <<<[line break]";
+		[ say ">>> NO Floor Description <<<[line break]";
 		repeat with X running through rooms:
 			if the floor description of X is "":
 				say "ROOM [X][line break]";
@@ -2058,7 +2057,7 @@ When play begins:
 		repeat with X running through rooms:
 			repeat with Y running through rooms adjacent to X:
 				if the transition description of Y from X is "":
-					say "ROOM [X] to [Y][line break]";
+					say "ROOM [X] to [Y][line break]"; ]
 
 
 When play begins, seed the random-number generator with 1234.

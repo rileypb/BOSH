@@ -31,6 +31,44 @@ Table of Walls (continued)
 locale (a room)	has walls (a truth state)	wall description (a text)	touch description (a text)
 Christy's office	--	"The walls are painted a bright cheerful orange."	--
 Bookstore Basement	--	"The walls look as though they are crumbling with age."	"Paint and loose bits of mortar crumble under [our] touch."
+Room of Subjects	--	"Not reachable."	--
+room of quips	--	"White walls, white ceiling, white floor."	--
+featureless hyperplane	false	--	--
+field office reception	--	"The walls are made of the same white stuff as the rest of hyperspace."	--
+field office hallway	--	"The walls are made of the same white stuff as the rest of hyperspace."	--
+Minerva's Office	--	"The walls are made of the same white stuff as the rest of hyperspace."	--
+field office chief's office	--	"Apart from the many wall-coverings, the walls are made of the same white stuff as the rest of hyperspace."	--
+Portal Room 1	--	"The walls are made of the same white stuff as the rest of hyperspace."	--
+Portal Room 2	--	"The walls are made of the same white stuff as the rest of hyperspace."	--
+Strip Mall Parking Lot South	false	--	--
+front office	--	"Boring default white walls."	--
+laundromat-store	--	"The walls are tile of a tone that could best be described as 'dingy'."	--
+Dave's pawn shop	--	"The walls are painted a sickly green."	--
+Strip Mall Parking Lot North	false	--	--
+astral-tunnel-1	--	"The walls are made of a strange white material."	--
+astral-tunnel-2	--	"The walls are made of a strange white material."	--
+astral-tunnel-3	--	"The walls are made of a strange white material."	--
+back lot	false	--	--
+laundromat back room	--	"The walls are tile of a tone that could best be described as 'dingy'."	--
+laundromat basement	--	"White cinderblock."	--
+back basement	--	"White cinderblock."	--
+Li'l Nectarine Convenience Store	--	"The walls are painted a disgusting peachy color."	--
+Enigma Lake Town Hall	--	"Stately, governmental white walls."	--
+Main Street 200 block	false	--	--
+Main at Solvay	false	--	--
+Solvay Road 100 block	false	--	--
+Solvay Road leading out of town	false	--	--
+Enigma Park	false	--	--
+Lake Street by the park	false	--	--
+Lake Street by the gym	false	--	--
+Main at Lake	false	--	--
+Lake shore north of the park	false	--	--
+Rolle's Department Store	--	"The walls are painted yellow with a red stripe. Large letters spell out 'ROLLE'S'."	--
+Henry's Hot Skillet	--	"The walls are deep red until waist height, then white above that. At the meeting of the two colors is a stripe of alternating black and white tiles."	--
+Reading Room	--	"The walls are painted a soothing blue."	--
+Fresnel's Music	--	"The walls are white with murals of musical instruments and scores."	--
+[ Horton Family House Kitchen ]
+
 
 Table of Transitions
 source room (a room)	target room (a room)	transition text (a text)	used (a truth state)

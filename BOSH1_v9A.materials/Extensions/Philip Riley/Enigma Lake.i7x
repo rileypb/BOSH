@@ -1959,6 +1959,8 @@ The snarky remark of the sale posters is "Even the floor waxer?"
 The floor waxer is a fixed in place thing in Rolle's Department Store. "A floor waxer sits in the center of the gleaming floor." The description is "This is a bulky, heavy-duty machine with a large, round brush head, designed for durability and the ability to polish vast floor areas to a high shine."
 The snarky remark is "I'm sure I've seen this floor waxer somewhere before."
 
+The big letters are scenery in Rolle's Department Store. "Big letters on the wall spell out 'ROLLE'S'." 
+
 
 
 Book 36 - Public Gymnasium
