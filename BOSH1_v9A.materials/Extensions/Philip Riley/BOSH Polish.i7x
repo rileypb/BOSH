@@ -11,6 +11,8 @@ The block answering rule response (A) is "[The noun] [look] at [us] with a blank
 The block quizzing rule response (A) is "[The noun] [look] at [us] with a blank stare."
 The block informing rule response (A) is "[The noun] [look] at [us] with a blank stare."
 
+A thing can be indescribable. 	
+
 Check taking a door:
 	say "[We] can't take that with [us]." instead;
 

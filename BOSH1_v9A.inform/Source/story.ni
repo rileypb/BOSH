@@ -91,7 +91,6 @@ To turn on rules:
 [After starting the virtual machine:
 	turn on rules;]
 	
-		
 
  
 Volume 1 - The Game 
@@ -734,6 +733,7 @@ biff's desk's drawer is locked. Understand "desk drawer" as biff's desk's drawer
 
 The blue flipphone is a phone. It is in biff's desk's drawer.
 The snarky remark is "You little blue bastard. I hate you."
+The description of the blue flipphone is "It's a cheap blue flipphone, purchased by the Bureau as some kind of cost-saving measure. It's not even a smartphone. It's not even a good flipphone. It's not even a good bad flipphone. It's just a bad flipphone."
 
 After answering the blue flipphone:
 	say "[We] [answer] the phone. 'Hello?'
@@ -760,6 +760,7 @@ A key is a kind of thing.
 The little grey key is a key. It is in biff's desk's drawer. The little grey key is familiar.
 Biff's desk's drawer has matching key the little grey key. The description of Biff's desk's drawer is "The desk is a cheap DIY piece held together with hex screws."
 The snarky remark of the little grey key is "And now you'll never get used, little key."
+The description of the little grey key is "It's a small grey key, like the kind you might accidentally lock inside a desk drawer."
 
 The hex screws are part of biff's desk's drawer. The description is "Several hex screws hold the desk drawer together." The snarky remark is "Hateful little things."
 
@@ -802,7 +803,6 @@ The description of the desk is "The desk is a cheap DIY piece held together with
 After examining the desk:
 	now player knows hex-screws;
 
-In Biff's desk's drawer is an ID. Biff's desk's drawer is closed. [Your desk's drawer is locked.]
 
 [The help text of the bureau credit card is "The pre-paid credit card issued to [us] by the Bureau. Its balance is currently [balance of the bureau credit card]."].
 	
@@ -883,7 +883,7 @@ To say door snark:
 Before opening BOSH back door when BOSH back door is locked:
 	now player knows back-door-is-locked;
 
-The white key is a key in the room of stuff.
+The white key is a key in the room of stuff. The description is "A small white key."
 
 The BOSH back door has matching key the white key.
 When play begins:
@@ -906,7 +906,7 @@ The snarky remark is "Oh, this is where I left my dignity."
 Check entering the blue dumpster:
 	say "[We] [are] not yet at the point of dumpster diving." instead;
 	
-Climbing into is an action applying to one thing. Understand "climb into [thing]" as climbing into.
+Climbing into is an action applying to one thing. Understand "climb in/into [thing]" as climbing into.
 
 Instead of climbing into something:
 	try entering the noun;
@@ -973,9 +973,15 @@ Instead of going when the location is inside-the-dumpster and the noun is not ou
 Section 3 - Hallway
 
 Biff's door is a door. It is privately-named. It is scenery. The printed name is "[our] door". It is north of Biff's Office and south of the BOSH office hallway. It is open. Understand "Faraji's/Goldberg's/Gaunt's/Larch's/Petula's/Ezra's/office/door" as Biff's door. 
+The snarky remark is "My little slice of heaven."
+The description is "The nameplate reads 'Agent Larch Faraji'."
 		
 Klimp's door is a door. It is west of the BOSH office hallway and east of the BOSH chief's office. It is scenery. It is closed and locked. It is openable and lockable.
+The description is "The nameplate reads 'Chief Huffton Klimp'."
+The snarky remark is "Oh, so much pain behind that door."
 Moira's door is a door. It is north of the BOSH office hallway and south of Moira's office. It is scenery. It is closed and locked. It is openable and lockable.
+The description is "The nameplate reads 'Agent Moira Zin'."
+It is unsnarkable.
 
 the BOSH office hallway is in BOSH HQ. The printed name is "hallway". "[Our] office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east. [door descriptions]."
 
@@ -1051,6 +1057,7 @@ Margaret Chao is in front office.
 
 There is a copy of the Washington Herald. The description is "The front page story is an account of the disappearance of the grandson of Senate Homeland Security Committee chairman Englund Fryes. His parents, including the Senator's son, were brutally murdered in their home, but the boy, Draco Fryes, is missing and presumed kidnapped. So far there has been no ransom demand.". 
 Understand "newspaper", "paper", "news" as the Washington Herald.
+It is unsnarkable.
 
 The BOSH front desk is a scenery supporter in front office. Understand "store", "sales", "counter", "margaret's desk" as the BOSH front desk. The description is "The former sales counter now functions as a desk for the office manager (currently [Margaret]). Behind it are a number of shelves holding office supplies."
 The snarky remark of the BOSH front desk is "I wonder if they'll let us keep the cash register."
@@ -1064,6 +1071,7 @@ The snarky remark of the thumb drive is "Some crazy dude mailed this to me last 
 
 To recognize is a verb.
 Some strange symbols are part of the thumb drive. The description is "They look like some kind of language, but none [we] [recognize]."
+The snarky remark of the strange symbols is "These kids today and their conlangs."
 
 some cardboard boxes are scenery in front office. "There is a stack of boxes in the corner.". Understand "box" as cardboard boxes.
 The snarky remark of the cardboard boxes is "There's something satisfying about flattening boxes."
@@ -1112,6 +1120,7 @@ The snarky remark of the heating vent is "[if player knows hex-screws and player
 Securing relates various things to one thing. The verb to secure means the securing relation.
 Some flat head screws secure the heating vent. The description is "Four plain flat head screws." 
 They are part of the heating vent. 
+The snarky remark of the flat head screws is "Flathead screws. A favorite of Dimwits."
 
 After looking behind the BOSH front desk:
 	move the heating vent to front office;
@@ -1125,6 +1134,7 @@ Instead of taking or taking off the flat head screws when the flat head screws s
 	
 
 The hex wrench is in the heating vent. Understand "key/allen" as the hex wrench. The description is "The ubiquitous flat pack furniture tool."
+The snarky remark of the hex wrench is "There are approximately 5 billion of these shipped to the US from Sweden every year, yet this is the only one I can find[if the hex wrench is not handled]. And it's in the heating vent[end if]."
 
 Before examining the heating vent (this is the now you know vent-screws rule):
 	now the player knows vent-screws.
@@ -1189,9 +1199,12 @@ The Chief's desk is a supporter in BOSH Chief's Office. It is scenery. "This des
 The snarky remark of the Chief's desk is "Most of us just want a surface to keep our stuff off the floor."
 The curios are scenery in the BOSH Chief's office. The description is "The desk shelves are full of oddities and memorabilia, most notable of which is a polished orange marble dodecahedron.".
 
-Klimp's Computer is a thing on the chief's desk. It is scenery. "The computer is a sleek, modern model. It sports a screen saver of what looks like the Hopkinsville goblin."
+Klimp's Computer is a thing on the chief's desk. It is scenery. "The computer is a sleek, modern model. It sports a screensaver of what looks like the Hopkinsville goblin." Understand "screen/saver/screensaver" as Klimp's Computer.
+The snarky remark of Klimp's Computer is "Maybe I could trade my computer for this one."
 
 The desk shelves are a supporter. They are part of the Chief's desk. They support a polished orange marble dodecahedron. The description of the polished orange marble dodecahedron is "A relic of the Chief's sacred geometry phase.". Understand "legs" as desk shelves. 
+The snarky remark of the desk shelves is "Desk shelves! What will they think of next?"
+They are indescribable.
 
 Chief Huffton Klimp owns the polished orange marble dodecahedron. 
 The snarky remark of the polished orange marble dodecahedron is "I'm partial to Catalan solids, actually."
@@ -1314,22 +1327,27 @@ Bureau of Supernatural History	"The Bureau of Supernatural History is a secret g
 
 
 The Chief's shelves are a supporter in BOSH Chief's Office. They are scenery. "These shelves sport an array of oddities and memorabilia."
+The snarky remark of the Chief's shelves is "This is where the Chief keeps his junk."
   
 The juvenile sasquatch skull is a thing on the chief's shelves. Chief Huffton Klimp owns the skull. The description of the skull is "It looks a bit Neanderthal, actually." 
 The snarky remark of the skull is "Cryptozoology is a science, right?"
  
 The antique wooden file cabinet is a container in the BOSH Chief's office. It is closed and locked. It is scenery. "Looks like it was taken out of an old library somewhere."
+The snarky remark of the antique wooden file cabinet is "Does he file alphabetically or by strangeness?"
 
 The prints are scenery in the BOSH Chief's office. The description is "There are three prints, the most striking of which is a neon-hued abstract by Diego Ernesto Diaz, the late Mexican painter, titled 'Hora de la Muerte'.".
 Understand "painting/paintings" as prints.
 The snarky remark of the prints is "The Chief's taste in art is as good as his taste in armchairs."
 
 Hora de la Muerte is scenery in the BOSH Chief's office. Understand "Diego/Ernesto/Diaz/abstract/neon/hued" as Hora de la Muerte. "The print is a riot of color, with a central figure that could be a skeleton. It's a bit much for the office, but it's certainly striking."
+The snarky remark of Hora de la Muerte is "It's like a rave in here."
 
 The skeleton is part of the Hora de la Muerte. The description is "It's a stylized skeleton, painted in neon hues. It's a bit macabre, but it's also a bit fun."
+The snarky remark of the skeleton is "I'm sure there's an important message here."
  
 The oddities are on the chief's shelves. They are scenery. The description is "This and that piece of junk that Klimp thinks is funny or interesting, including a pair of astral lenses and a juvenile sasquatch skull."
 Understand "memorabilia", "junk", "stuff", "knick-knacks", "knick knacks" as the oddities.
+The snarky remark of the oddities is "It's like a garage sale of the bizarre."
 
 A pair of astral lenses is on the chief's shelves. It is ambiguously plural. Chief Huffton Klimp owns the pair of astral lenses. The description of the pair of astral lenses is "To all appearances an ordinary pair of glasses, the astral lenses allegedly reveal the existence of extra-dimensional pathways." The pair of astral lenses is wearable. 
 Understand "glasses/lens/glass" as the pair of astral lenses.
@@ -1345,7 +1363,7 @@ Moira's office is in BOSH HQ. There is a fluorescent light source in Moira's off
 The snarky remark of Moira Zin is "The problem with Moira is that she's too good at her job. Slow down and let the rest of us catch up, will you?"
 Moira's office is unsnarkable.
 
-There is a closet in Moira's office. The closet is a container. It is openable and closed. It is lockable and locked. It is scenery.
+
 [There is a breaker box in the closet. It is an openable container. It is closed. It is fixed in place. The description is "It's a small metal box affixed to the back wall of the closet. It is featureless apart from the latch."
 There is a circuit breaker in the breaker box. It is fixed in place.
 A circuit breaker is a device. The description is "The circuit breaker is a single switch, labeled `20 amps`."]
@@ -1353,14 +1371,16 @@ A circuit breaker is a device. The description is "The circuit breaker is a sing
 Moira's desk is a supporter in Moira's office. It is scenery. The description is "It's a pretty ordinary mass-produced desk, but Moira's re-stain job on it has truly transformed it. Really, is there anything she can't do?"
 The snarky remark of Moira's desk is "She should have been an interior decorator."
 
-An openable container called Moira's drawer is part of Moira's desk. 
+An openable closed container called Moira's drawer is part of Moira's desk. It is indescribable.
+Instead of examining Moira's drawer when Moira's drawer is closed:
+	say "It's a drawer in Moira's desk. It's closed.".
 	
 Moira's chair is an enterable supporter in Moira's office. It is scenery. The description is "It's a testament to Moira's competence and taste that she managed to acquire such a nice chair with the funds available.".
 
 Moira's bookshelves are a scenery supporter in Moira's office. The description is "".
 Understand "shelves/books/shelf/bookshelf" as Moira's bookshelves.
 The snarky remark of Moira's bookshelves is "I wonder if she has a book on how to be so good at everything."
-
+They are indescribable.
 
 	
 The borrowed book is an object that varies. The borrowed book is initially nothing.
@@ -1472,12 +1492,15 @@ The describe what's on scenery supporters in room descriptions rule is not liste
 
 
 The closet door is a door. It is east of Moira's office and west of the utility closet. It is closed, openable, locked, and lockable. It is scenery.
+The description of the closet door is "It's a plain wooden door. It's [if the closet door is closed]closed[otherwise]open[end if]."
 
 The utility closet is dark. It is in BOSH HQ. It is a leavable room. The egress is west. "It is cramped in here. Other than Faraji, the only thing in here is a breaker box on the wall."
 The snarky remark of the utility closet is "I guess I should be glad that this isn't my office."
 
 The breaker box is a fixed in place container in the utility closet. It is closed, locked, lockable, and openable. The description is "It's a small metal box affixed to the back wall of the closet. There is a small keyhole in the front."
 The keyhole is part of the breaker box. The description is "It's a small keyhole in the front of the box."
+The snarky remark of the breaker box is "God forbid the lights go out too."
+The keyhole is unsnarkable.
 
 Instead of knocking on the closet door when the location is the utility closet and the closet door is locked and the closet door is closed:
 	move Moira Zin to Moira's Office;
@@ -1896,8 +1919,72 @@ Reading Room light source is unsnarkable.
 Fresnel's light source is unsnarkable.
 iron key is unsnarkable.
 radio station light source is unsnarkable.
-locker key is unsnarkable.
 lake-scenery-1 is unsnarkable.
+broadcast booth light source is unsnarkable.
+green key is unsnarkable.
+hook is unsnarkable.
+brass key is unsnarkable.
+threaded base is unsnarkable.
+The Book of Utilitarianism is unsnarkable.
+rusty lens is unsnarkable.
+yourself is unsnarkable.
+Ezra Gaunt is unsnarkable.
+Petula Goldberg is unsnarkable.
+Senator Savra is unsnarkable.
+white key is unsnarkable.
+biff-flattened-boxes is unsnarkable.
+margaret-flattened-boxes is unsnarkable.
+biffo-light is unsnarkable.
+trivia competition award is unsnarkable.
+Green Pheasant is unsnarkable.
+Biff's desk's drawer is unsnarkable.
+boh-light is unsnarkable.
+chief-light is unsnarkable.
+Klimp's Computer is unsnarkable.
+curios is unsnarkable.
+chief's black leather chair is unsnarkable.
+Dictionary of Strangeness is unsnarkable.
+moira-light is unsnarkable.
+closet is unsnarkable.
+Moira's chair is unsnarkable.
+Tribes of New York is unsnarkable.
+Moira's drawer is unsnarkable.
+closet door is unsnarkable.
+unknown voice is unsnarkable.
+mysterious phone is unsnarkable.
+
+
+weather is indescribable.
+The Walls is indescribable.
+floor is indescribable.
+ceiling is indescribable.
+Hyperlight is indescribable.
+Adjacent light is indescribable.
+light-meter is indescribable.
+bfo-light is indescribable.
+ls-light is indescribable.
+pawn-light is indescribable.
+lbr-light is indescribable.
+lb-light is indescribable.
+bb-light is indescribable.
+building is indescribable.
+town hall light source is indescribable.
+Rolle's light source is indescribable.
+Henry's light source is indescribable.
+Reading Room light source is indescribable.
+Fresnel's light source is indescribable.
+radio station light source is indescribable.
+broadcast booth light source is indescribable.
+Senator Savra is indescribable.
+biffo-light is indescribable.
+boh-light is indescribable.
+chief-light is indescribable.
+moira-light is indescribable.
+mysterious phone is indescribable.
+unknown voice is indescribable.
+wall is indescribable.
+klimp's mobile phone is indescribable.
+Klimp's key is indescribable.
 
 
 
@@ -1946,12 +2033,12 @@ When play begins:
 		lb;
 		say ">>> NO Description <<<[line break]";
 		repeat with X running through things:
-			if X is not a subject and the description of X is "":
+			if X is not a subject and the description of X is "" and X is not a quip and X is not indescribable:
 				say "THING [X][line break]";
 		lb;
 		say ">>> NO Initial Appearance <<<[line break]";
 		repeat with X running through things:
-			if X is not a subject and the initial appearance of X is "":
+			if X is not a subject and X is not scenery and the initial appearance of X is "":
 				say "THING [X][line break]";
 		lb;
 		say ">>> NO Wall Description <<<[line break]";

@@ -10,6 +10,8 @@ Include Door Varieties by Philip Riley.
 
 Include Exit Lister by Eric Eve.
 
+Include BOSH Polish by Philip Riley.
+
 Book 1 - Outside HQ 
 
 Swamp Park is a region. 
@@ -126,6 +128,7 @@ They are obstructed.
 The snarky remark of the washing-machines is "I'm sure they're all in perfect working order."
 	
 The laundromat door is a closed, back-locked, and front-locked scenery shop-door. It is privately-named. The printed name is "laundromat door". Understand "laundromat/-- door" as the laundromat door. It is northwest of the parking lot south and southeast of the laundromat-store. The front description is "It's a typical glass door. Taped to it is a sign that says 'Closed for renovations'." The frontside is the strip mall parking lot south. The back description is "It's a typical glass door." 
+The laundromat door is indescribable.
 
 The snarky remark of the laundromat door is "The gateway to paradise, either way you go through it."
 	
@@ -150,6 +153,7 @@ The snarky remark of the flashing neon sign is "At least they have style."
 It is obstructed.
 	
 The pawn-shop-door is a closed scenery shop-door. It is southwest of the parking lot south and northeast of the Dave's pawn shop. It is privately-named. The printed name is "pawn shop door". Understand "pawn shop door" as the pawn-shop-door. Understand "door" as the pawn-shop-door. The front description is "It's a typical glass door. The light within is too dim to see much." The frontside is the strip mall parking lot south. The back description is "It's a typical glass door."
+The pawn-shop-door is indescribable.
 
 The pawn-shop-door is unsnarkable.
 
@@ -390,6 +394,7 @@ It is unsnarkable.
 
 The laundromat desk is a scenery desk in the laundromat back room. "The desk is cluttered with papers."
 The snarky remark of the laundromat desk is "For a place that supposedly gets things clean, this place is a mess."
+The laundromat desk's drawer has description "The drawer is [if the laundromat desk's drawer is open]open[otherwise]closed[end if]."
 
 The paperwork is scenery in the laundromat back room. Understand "paper/papers/receipt/receipts/invoice/invoices" as the paperwork. "The papers are mostly receipts and invoices[if the strange piece of paper is nowhere]. One piece, however, consists of strange sketches and diagrams. In one corner is scrawled the cryptic phrase 'Save the Dragon'[end if]."
 The snarky remark of the paperwork is "I'm sure it's all very important."
@@ -398,7 +403,7 @@ The large key is a key in the laundromat desk's drawer. The description is "It's
 
 The laundromat door has matching key the large key.
 
-The strange piece of paper is a thing. "The paper is covered with strange sketches and diagrams. In one corner is scrawled the cryptic phrase 'Save the Dragon'." Understand "sketch/sketches/and/diagram/diagrams" as the strange piece of paper.
+The strange piece of paper is a thing. The description is "The paper is covered with strange sketches and diagrams. In one corner is scrawled the cryptic phrase 'Save the Dragon'." Understand "sketch/sketches/and/diagram/diagrams" as the strange piece of paper.
 The snarky remark of the strange piece of paper is "Dragon? What dragon? Must be laundromat slang."
 
 After examining the paperwork for the first time:
@@ -616,6 +621,7 @@ Rule for supplying a missing second noun while buying the red screwdriver with:
 
 The glass case is a container in the Convenience Store. it is openable. It is closed and locked. it is scenery. It is transparent. In the glass case is the flashlight, a red screwdriver, a laptop computer, and some wireless earbuds. The wireless earbuds are plural-named. 
 Understand "useful/items" as the glass case.
+The glass case is indescribable.
 The snarky remark of the glass case is "Quality merchandise, I'm sure."
 
 The clerk owns the flashlight. The clerk is willing to sell the flashlight.

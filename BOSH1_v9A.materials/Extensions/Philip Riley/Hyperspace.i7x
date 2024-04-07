@@ -119,7 +119,7 @@ Volume 2 - Featureless Hyperplane
 
 Book 1 - The Mystic Compass
 
-The mystic compass is a thing. 
+The mystic compass is a thing.  The description is "The name 'compass' is a bit of a misnomer, as it doesn't point anywhere. Instead, it displays a set of symbols that change as you move."
 The snarky remark is "Okay, compass, show me the way to the nearest spirit guide."
 
 After dropping the mystic compass when the Ethereal Pillar is nowhere:

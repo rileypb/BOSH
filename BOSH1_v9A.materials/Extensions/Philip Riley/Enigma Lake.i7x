@@ -28,9 +28,7 @@ To decide if mounted-shiny-resonator:
 
 Volume 2 - Special Items
 
-The old copper key is a key.
-
-The locker key is a key.
+The old copper key is a key. The description is "A heavy, old-fashioned key, made of copper." 
 
 An astral resonator type is a kind of thing.
 
@@ -458,6 +456,8 @@ Instead of opening the padlock:
 
 The broken lock is a thing. The description is "A broken padlock." Understand "padlock", "pad lock" as the broken lock.
 
+The snarky remark of the broken lock is "That'll teach you to lock things."
+
 Cutting it with is an action applying to two things. Understand "cut [something] with/using [something]"  as cutting it with.
 
 Opening it with is an action applying to two things. Understand "open [metal cabinet] with/using [bolt cutters]", "unlock [metal cabinet] with/using [bolt cutters]", "open [padlock] with/using [bolt cutters]", "unlock [padlock] with/using [bolt cutters]" as opening it with.
@@ -484,6 +484,7 @@ Report cutting the padlock with the bolt cutters:
 Chapter 2 - The rest of it
 
 The power switch is a scenery device in the metal cabinet. ["The power switch is set to [if the power switch is switched on]on[otherwise]off[end if]."]
+The power switch is indescribable.
 The snarky remark of the power switch is "I wonder what it does."
 
 After switching on the power switch:
@@ -501,7 +502,7 @@ After switching off the power switch:
 The broadcast tower is scenery in the radio station roof. "A tall, steel lattice structure, rising prominently above the building. This kind of tower was designed to maximize the height for better signal transmission and reception in the era before widespread cable and satellite technology. Strangely, the bars of the tower near roof-level are bent inward to form a small platform. It's almost as if something is meant to be mounted there." Understand "radio tower" as the broadcast tower.
 The snarky remark of the broadcast tower is "What a great place to get struck by lightning."
 
-The platform is part of the broadcast tower. It is a supporter.
+The platform is part of the broadcast tower. It is a supporter. It is indescribable.
 
 Check putting something on the platform:
 	if the platform supports something that is not the noun:
@@ -519,6 +520,7 @@ Instead of examining the platform when not mounted-shiny-resonator:
 The snarky remark of the platform is "Curiouser and curiouser."
 
 The rings are part of the platform. The description is "Two metal rings are set into the back of the platform, allowing something to be attached there." They are plural-named. 
+The rings are unsnarkable.
 
 To hook up the shiny resonator: 
 	now the shiny astral resonator is on the platform;
@@ -581,7 +583,7 @@ Instead of climbing up the broadcast tower:
 Instead of going up when the location is the radio station roof:
 	say "[We] [are] afraid of heights.";
 	
-The radio-obelisk-facade is a backdrop. It is in the radio station roof. Understand "obelisk/enigma/park/crystal/adornment" as radio-obelisk-facade. "The obelisk in the park is clearly visible from here."
+The radio-obelisk-facade is a backdrop. It is in the radio station roof. Understand "obelisk/enigma/park/crystal/adornment" as radio-obelisk-facade. "The obelisk in the park is clearly visible from here." It is unsnarkable.
 
 Instead of examining the radio-obelisk-facade:
 	say "The obelisk in the park is clearly visible from here. [run paragraph on]";
@@ -607,9 +609,11 @@ The snarky remark of the broadcast booth is "I wonder if I can get a request in.
 The x-coordinate of the broadcast booth is 2. The y-coordinate of the broadcast booth is -3.
 
 The booth window is scenery in the broadcast booth. "The window looks out into the rest of the station."
+It is unsnarkable.
 
 The stand is scenery in the broadcast booth. "An ordinary microphone stand."
 Understand "microphone stand" as stand.
+The snarky remark of the stand is "With bottle in hand, at the microphone stand. Ay, yo, homeboy, what you drinkin', man?"
 
 The microphone is scenery in the broadcast booth. "A microphone is set up on a stand."
 The snarky remark of the microphone is "My mother always said I had a face for radio, and a voice for silent movies."
@@ -664,13 +668,13 @@ The pews are scenery in First Utilitarian Church of Enigma Lake. "The pews are a
 The snarky remark of the pews is "When will I find a church with sumptuous, overstuffed chairs?"
 
 The pulpit is scenery in First Utilitarian Church of Enigma Lake. "The pulpit is a simple wooden structure with a lectern."
-The snarky remark of the pulpit is "Hold on, I have to give a sermon. 'And the Lord said, 'I will flood the earth, and all the people will be like, 'Oh no, we're all wet.''"
+The snarky remark of the pulpit is "Hold on, I have to give a sermon. 'And the Lord was like, [']I will flood the earth['], and all the people were like, [']Oh no, we're all wet.[']'"
 
-The lectern is scenery in First Utilitarian Church of Enigma Lake. "The lectern is a simple wooden structure, with a slanted top for holding a book."
+The lectern is scenery in First Utilitarian Church of Enigma Lake. "The lectern is a simple wooden structure, with a slanted top for holding a book." It is unsnarkable.
 
 To read is a verb.
 
-The Book of Utilitarianism is on the lectern. It is proper-named. The printed name is "[italic type]The Book of Utilitarianism[roman type]".
+The Book of Utilitarianism is scenery on the lectern. It is proper-named. The printed name is "[italic type]The Book of Utilitarianism[roman type]". It is indescribable.
 
 The cursed word is text that varies. The cursed word is "".
 
@@ -887,10 +891,11 @@ After printing the locale description of the First Utilitarian Church of Enigma 
 			say "An extension cord is plugged into the wall outlet, from where it trails up through the trapdoor.";
 	
 The plug-end-of-the-extension-cord is a thing. It is undescribed. It is privately-named. The printed name is "extension cord". Understand "extension/cord/plug" as the plug-end-of-the-extension-cord. The description is "A long, heavy-duty extension cord[if the extension cord is plugged in and the location is First Utilitarian Church of Enigma Lake], plugged into the wall outlet[end if]." 
-It is pluggable.
+It is pluggable. It is unsnarkable.
 
 The extension cord is in the bookstore basement.
 The extension cord is pluggable and plug-into-able.
+
 
 After plugging the extension cord into the electrical outlet:
 	now the plug-end-of-the-extension-cord is in the location of the second noun; 
@@ -1107,6 +1112,7 @@ Instead of putting something on the tripod:
 	try mounting the noun on the tripod;
 
 The steeple-obelisk-facade is a backdrop. It is in the steeple. Understand "obelisk/park" as steeple-obelisk-facade. "The obelisk in the park is clearly visible from here."
+The snarky remark of the steeple-obelisk-facade is "Obelisk. Obelisk. Obelisk. Did you ever notice how funny that word is?"
 
 To decide if mounted-makeshift-resonator:
 	if the content of the tripod is the makeshift astral resonator and the makeshift astral resonator is powered:
@@ -1199,11 +1205,13 @@ The description is "The glove compartment is [if the glove compartment is open]o
 The snarky remark of the glove compartment is "Oh good, I need a pair of gloves."
 The brass key is a key. It is in the glove compartment. The description is "A simple brass key".
 
-The truck hood is a part of the abandoned pickup truck. It is a closed openable container. The description is "The hood is slightly crumpled, as if it has been in a minor accident. It is [if the hood is open]open[otherwise]closed[end if]." Understand "bonnet" as the truck hood.
+The truck hood is a part of the abandoned pickup truck. It is a closed openable container. The description is "The hood is slightly crumpled, as if it has been in a minor accident. It is [if the hood is open]open[otherwise]closed[end if]." Understand "bonnet" as the truck hood. 
+It is unsnarkable.
 
 The hood contains a dirty car battery. 
 
 The description of the dirty battery is "The battery is dirty and corroded. Acid has leaked from the terminals. It's unlikely to be of any use."
+The snarky remark of the dirty battery is "I wonder if it's still under warranty."
 
 Instead of doing something to the dirty battery when the action requires a touchable noun:
 	say "With so much acid on the battery, it's probably best not to touch it with bare hands.";
@@ -1228,10 +1236,13 @@ Understand "start [something]" as switching on.
 Understand "lower [tailgate]" as opening. Understand "raise [tailgate]" as closing.
 
 The truck bed is an open container. It is part of the abandoned truck. The description is "It's the bed of a truck, alright."
+It is unsnarkable.
 
 The tailgate is part of the truck. It is an open, openable container. The description is "The tailgate is[if the truck bed is open] down[otherwise] up[end if]." Understand "tail/gate" as the tailgate. 
+It is unsnarkable.
 
 The pair of bolt cutters are in the truck bed. The description is "A pair of bolt cutters, with long handles and heavy jaws." They are ambiguously plural. 
+The snarky remark of the bolt cutters is "Now, kids, watch your fingers."
 
 Book 20 - Lake Shore north of the park
 
@@ -1276,6 +1287,8 @@ The snarky remark of the rusty metal door is "It inspires confidence."
 The equipment cabinet is a closed locked openable lockable scenery container in the workshed.
 It has matching key the iron key. Understand "heavy/metal" as the equipment cabinet.
 "A heavy metal cabinet with a lock. [if the equipment cabinet is open]The cabinet is open[otherwise]The cabinet is closed[end if]."
+The snarky remark of the equipment cabinet is "[if the equipment cabinet is locked]Usually the good stuff is locked up.[otherwise if the rusty astral resonator is not familiar]Oh I can smell a screwdriver in there![otherwise]Huh. All that effort for that weird rusty thing?[end if][line break]"
+
 
 The rusty astral resonator is in the equipment cabinet. It is privately-named. The description is "A small, rusty, metallic, cylindrical object. One end is capped with a lens, while the other terminates in a threaded base, like a light bulb.".
 The printed name is "[if Astral Secrets is read]rusty astral resonator[otherwise]strange, rusty, metal object[end if]".
@@ -1287,6 +1300,7 @@ The rusty lens is part of the rusty astral resonator. The description is "The de
 The snarky remark of the rusty astral resonator is "[if the shiny astral resonator is not familiar]Ooh. I've always wanted one of these[otherwise]Someone should have taken better care of this[end if].".
 
 The trapdoor is a secret door. It is below the workshed and above a hidden cave. It is closed and openable. "A trapdoor is in the floor[if the trapdoor is open], leading down into darkness[otherwise], closed[end if]."
+The snarky remark of the trapdoor is "There really should be a trophy case too."
 
 After going to the workshed when the trapdoor is unrevealed and the player encloses the dowsing rod:
 	say "Something [we] [are] carrying starts to vibrate.";
@@ -1321,6 +1335,8 @@ a circular chamber is south of hidden cave. It is in ELR. The circular chamber i
 The snarky remark of the circular chamber is "I hear caves tend to have thieves, trolls, and cyclopses. I hope this is not actually the case."
 
 The ethereal portal is fixed in place. "A shimmering portal hovers in the center of the chamber, casting a faint light over the room."
+The description is "This portal seems to be natural, if that's indeed a possibility. It's a shimmering white oval, about six feet high and four feet wide. It's not clear where it leads."
+The snarky remark of the ethereal portal is "Another goldang portal. Could someone at least label where they go?"
 
 Instead of entering the ethereal portal:
 	say "Faraji steps through the portal. The circular chamber vanishes, and they find themself somewhere else...";
@@ -1334,14 +1350,18 @@ An old root cellar is a room. It is always-indefinite. "The chamber is dark and 
 The snarky remark of the old root cellar is "Oh good, another cave, only this one smells like beets."
 
 Daniels is a man in the old root cellar. "[one of]A tired-looking man sits on the floor of the cellar. He looks up as Faraji appears. 'Ah, you must be the help I was promised,' he says. 'I'm Daniels. I've been waiting for you.'[or]Daniels, ragged and dirty, sits on the floor of the cellar. He looks tired.[stopping]". 
+The description is "Daniels looks weary. He's dressed in a tattered suit, and his hair is unkempt."
 Understand "man" as Daniels. 
+The snarky remark of Daniels is "I wonder if he's got a screwdriver."
 
 The woven baskets are scenery in the old root cellar. "The baskets are woven from reeds and are filled with root vegetables."
+The snarky remark of the woven baskets is "I wonder if they have any turnips."
 
 The root vegetables are scenery in the old root cellar. "Looks like the vegetables are well-preserved."
+The snarky remark of the root vegetables is "No daikon? I'm outta here."
 
 The passage is scenery in the old root cellar. "The passage leads to the north. From the light filtering in, it probably leads outside." Understand "light" as the passage.
-
+It is unsnarkable.
 
 Chapter 1 - Daniels
 
@@ -1404,6 +1424,8 @@ The x-coordinate of the Lake Shore West is -1. The y-coordinate of the Lake Shor
 Book 25 - Horton Family House Kitchen
 
 The Horton House door is a closed openable locked lockable scenery door. It is west of Solvay Road Leading Out Of Town and east of Horton Family House Kitchen. The Horton House door has matching key the old copper key. 
+"A modest wooden door leads into the Horton family house. It has been fitted with a modern lock."
+The snarky remark of the Horton House door is "No doorbell? How quaint."
 
 Horton Family House Kitchen is a leavable room. It is in ELR. It is unleavable. It is indoors. "The house is a modest colonial-period building. Strangely, the furnishings of the house have been left in place, despite the coming flood. An open hearth is in the center of the room, with a few chairs and a table. The parlor is to the south, and a narrow staircase leads up. To the east the front door leads out to Solvay Road, while another door leads west to the family graveyard." 
 
@@ -1429,6 +1451,7 @@ It is unsnarkable.
 The parlor facade is a building facade. It is in Horton Family House Kitchen. It is privately-named. The printed name is "parlor". Understand "parlor" as parlor facade. "The parlor is to the south."
 	The parlor facade fronts Horton Family House Parlor.
 	It is enterable from Horton Family House Kitchen.
+The snarky remark of the parlor facade is "Dude. We already knew that."
 
 The narrow staircase is scenery in Horton Family House Kitchen. "A narrow staircase leads up."
 The snarky remark of the narrow staircase is "Winner, most rickety staircase, 1764."
@@ -1456,10 +1479,15 @@ After going to the Horton Family House Parlor for the first time:
 	continue the action;
 
 The parlor chairs are scenery in the Horton Family House Parlor. "A few chairs are arranged around the room."
+The snarky remark of the parlor chairs is "If anything, they look even less comfortable than the kitchen chairs."
 
 The parlor table is a scenery supporter in the Horton Family House Parlor. "A simple wooden table."
+The snarky remark of the parlor table is "I wonder if there's a screwdriver under it."
 
-The Book of Weird Names is on the parlor table. The printed name is "[italic type]The Book of Weird Names[roman type]". It is proper-named.
+Instead of looking under the parlor table:
+	say "Faraji looks under the table, but there's no screwdriver there.";
+
+The Book of Weird Names is on the parlor table. The printed name is "[italic type]The Book of Weird Names[roman type]". It is proper-named. It is unsnarkable.
 
 To stop is a verb.
 
@@ -1507,10 +1535,13 @@ The snarky remark of the Second Floor of the Horton House is "I can feel the mis
 The x-coordinate of the Second Floor of the Horton House is -2. The y-coordinate of the Second Floor of the Horton House is 1.
 
 The small bed is scenery in the Second Floor of the Horton House. "A small bed sits in one corner. It's a rope bed, with a thin straw mattress."
+The snarky remark of the small bed is "I wonder if they got this from one of those online mattress companies."
 
 The rickety wardrobe is a closed openable enterable scenery container in the Second Floor of the Horton House. "A rickety wardrobe stands against a wall. It is [if open]open[otherwise]closed[end if]."
+The snarky remark of the rickety wardrobe is "Don't climb into it. There's probably something much worse thant a lion and a witch in there."
 
 The wooden frame is in the rickety wardrobe. It is a container. The description is "A piece of wood, about two feet long with three holes carved in it. It looks like the holes are meant to hold things. Leather straps attached to the frame appear to be meant to hold those things in the frame."
+The snarky remark of the wooden frame is "This couldn't possibly be useful. I should just leave it here."
 
 Book 26 - Astral Tunnel
 
@@ -1528,13 +1559,16 @@ The snarky remark of the Horton graveyard is "Of course they have a graveyard."
 
 The x-coordinate of the Horton graveyard is -3. The y-coordinate of the Horton graveyard is 1.
 
-The shovel is in the Horton graveyard. "A shovel lies on the ground, forgotten."
+The shovel is in the Horton graveyard. "A shovel lies on the ground, forgotten." The description is "A simple shovel, with a wooden handle and a metal blade." Understand "simple/wooden" as the shovel.
+The snarky remark of the shovel is "How interesting. I hope I'll need to dig something up."
 
 Some holes are scenery in the Horton graveyard. "The graveyard is riddled with holes where the bodies have been exhumed for the coming flood. One of the holes is substantially larger and deeper than the others."
+The snarky remark of the holes is "'Hole' is a great word, don't you think?"
 
 The large hole is a building facade. It is in Horton Graveyard. Understand "larger/grave" as large hole. "The hole is substantially larger and deeper than the others."
 	It fronts a large grave.
 	It is enterable from Horton Graveyard.
+The snarky remark of the large hole is "[if the large grave is not visited]Just the thing to jump into without regard for personal safety[otherwise]Ah, not such a big deal.[end if]"
 
 Before going to the large grave:
 	if the ladder is in the large grave:
@@ -1577,7 +1611,7 @@ After going from the large grave when the metal case is nowhere and the player e
 	continue the action;
 
 A metal case is a closed openable container. The description is "A small metal case, about the size of a breadbox. It seems to be made of lead. It is [if metal case is open]open[otherwise]closed[end if]." 
-[ A metal corner is in the large grave. "[We] [notice] a small corner of something metallic sticking out of the dirt at the bottom of the hole." The description is "The corner of some metallic object, possibly made of lead, sticks out of the dirt at the bottom of the hole." ]
+The snarky remark of the metal case is "Just the place where I'd keep the ravings of the family patriarch."
 
 Instead of examining the dowsing rod when the location is the large grave and the metal case is nowhere and the player encloses the dowsing rod:
 	say "The dowsing rod is vibrating.";
@@ -1625,22 +1659,25 @@ Instead of doing something other than uncovering to the metal corner:
 Horton-back-facade is a building facade. It is in Horton Graveyard. It is privately-named. The printed name is "Horton Family House". Understand "Horton/House/Home" as Horton-back-facade. "Horton House is an old colonial-period house. [We] [are] in its backyard." 
 	Horton-back-facade fronts Horton Family House Kitchen.
 	It is enterable from Horton Graveyard. 
+The snarky remark of Horton-back-facade is "It doesn't look any less creepy from the back."
 
 The Witnessing of Hezekiah is in the metal case. It is proper-named. The printed name is "[italic type]The Witnessing of Hezekiah[roman type]". Understand "book" as The Witnessing of Hezekiah.  
-The description is "A small, leather-bound book, titled 'The Witnessing of Hezekiah: as told to Jeremiah Horton by Hezekiah Horton'. The book is filled with strange, cryptic passages, and is difficult to read. [We] [find] one page of particular interest. It reads, 'And lo, Hezekiah, in his wisdom, did prophesy of the impending flood and the necessity to make ready. He spoke of a sacred artifact, a resonator, bestowed with divine power, that would unveil a gateway to the ethereal realm. And he revealed the quest to find the lost astral traveler, a being of great power, who would guide the faithful out of the coming darkness. Thus spake he: [']Take the resonant origin, and with reverence, bind it to the eternal flame, and then to the astral focus. Channel a mighty power through it, and direct it towards the crystal eye. Strike the eye thrice, with unwavering devotion, and behold, the portal shall open, revealing the path to transcendence.[']'";
+The description is "A small, leather-bound book, titled 'The Witnessing of Hezekiah: as told to Jeremiah Horton by Hezekiah Horton'. The book is filled with strange, cryptic passages, and is difficult to read. [We] [find] one page of particular interest. It reads, 'And lo, Hezekiah, in his wisdom, did prophesy of the impending flood and the necessity to make ready. He spoke of a sacred artifact, a resonator, bestowed with divine power, that would unveil a gateway to the ethereal realm. And he revealed the quest to find the lost astral traveler, a being of great power, who would guide the faithful out of the coming darkness. Thus spake he: [']Take the resonant origin, and with reverence, bind it to the eternal flame, and then to the astral focus. Channel a mighty power through it, and direct it towards the crystal eye. Strike the eye thrice, with unwavering devotion, and behold, the portal shall open, revealing the path to transcendence.[']'".
+It is unsnarkable.
 
 The shiny astral resonator is carried by the group of lizard people. It is privately-named. The description is "A small, shiny, metallic, cylindrical object. One end is capped with a lens, while the other terminates in two shiny metal chains, each with a shiny metal clamp, as if it were designed to be attached to something.".
 The printed name is "[if Astral Secrets is read]shiny astral resonator[otherwise]strange, shiny, metal object[end if]".
 Understand "shiny/astral/resonator" as the shiny astral resonator when Astral Secrets is read.
 Understand "strange/shiny/metal/metallic/cylindrical/cylinder/object" as the shiny astral resonator.
 The snarky remark of the shiny astral resonator is "[if the rusty astral resonator is not familiar]Ooh. I've always wanted one of these[otherwise]Wow, this is one is so shiny[end if].".
-The shiny clamps are part of the shiny astral resonator. The description is "Two metal chains, each with a metal clamp, are attached to the end of the [if Astral Secrets is read]resonator[otherwise]object[end if].". Understand "metal/-- chains" as the shiny clamps. They are plural-named.
-The shiny lens is part of the shiny astral resonator. The description is "A lens is attached to the end of the [if Astral Secrets is read]resonator[otherwise]object[end if].".
+The shiny clamps are part of the shiny astral resonator. The description is "Two metal chains, each with a metal clamp, are attached to the end of the [if Astral Secrets is read]resonator[otherwise]object[end if].". Understand "metal/-- chains" as the shiny clamps. They are plural-named. They are unsnarkable.
+The shiny lens is part of the shiny astral resonator. The description is "A lens is attached to the end of the [if Astral Secrets is read]resonator[otherwise]object[end if].". It is unsnarkable.
 
 
 Book 28 - Fire Station 1
 
 The garage door is a closed scenery door. It is west of Solvay Road 100 block and east of the Fire Station 1. Understand "big/red/door" as garage door. The description is "[if the location is Solvay Road 100 block]A big red door, with a sign reading 'Fire Station 1'[otherwise]It's a big red door[end if]."
+It is unsnarkable.
 
 Fire Station 1 is in ELR. The printed name is "Hook and Ladder Company #1". "The fire station is a modest red brick building dating to the late 19th century. The garage door is to the east. There is a large blue button mounted on the wall."
 Understand "hook/and/ladder/company/#1" as Fire Station 1. 
@@ -1650,10 +1687,13 @@ The snarky remark of the Fire Station 1 is "How can I be snarky about a fire sta
 The x-coordinate of the Fire Station 1 is -2. The y-coordinate of the Fire Station 1 is 0.
 
 The ladder is in the Fire Station 1. "A ladder rests against the wall." The description is "A wooden ladder, about 6 feet long. It looks sturdy and well-maintained."
+The snarky remark of the ladder is "Where's the hook?".
 
 The spotlight is in the Fire Station 1. The description is "A small spotlight, designed to be hand-held. It has a short cord ending in a standard North American 120V AC plug."
+The snarky remark of the spotlight is "It's awfully small for a spotlight. More like a specklight."
 
 The blue button is scenery in the Fire Station 1. "A large blue button, mounted on the wall."
+The snarky remark of the blue button is "PUSH IT PUSH IT PUSH IT!"
 
 Instead of pushing the blue button when the garage door is closed:
 	say "Faraji pushes the blue button. A klaxon sounds, and the garage door opens.";
@@ -1723,6 +1763,7 @@ The snarky remark of the Bookstore Basement is "Why did I come down here? What d
 The x-coordinate of the Bookstore Basement is -2. The y-coordinate of the Bookstore Basement is -1.
 
 A bricked-up-hole is a secret door. It is north of the Bookstore Basement and south of a sewer tunnel 1. It is privately-named. The printed name is "bricked-up hole in the wall". Understand "bricked-up", "bricked/up", "hole in/-- the/-- wall/--" as bricked-up-hole. It is open and not openable. "A ragged hole in the north wall, leading into a dark space." 
+It is unsnarkable.
 
 To break is a verb.
 
@@ -1740,11 +1781,13 @@ Instead of attacking the walls with the sledgehammer when the location is the Bo
 	now the bricked-up-hole is revealed.
 
 The basement shelves are scenery in the Bookstore Basement. "The shelves host a smattering of books, mostly old and dusty." Understand "bookshelf/shelf/shelves/books" as the basement shelves.
+The snarky remark of the basement shelves is "I'm looking for 'The Da Vinci Code' -- oh wait, it's 1954. Scratch that."
 
 Instead of searching the basement shelves:
 	say "The shelves host a smattering of books, mostly old and dusty. [We] [poke] around and [find] nothing of use.";
 
 The boxes of books are scenery in the Bookstore Basement. "The boxes are filled with old, dusty books." Understand "box/boxes/books" as the boxes of books.
+The snarky remark of the boxes of books is "If the thing I need is in one of these boxes, I guess I'm out of luck."
 
 Instead of searching the boxes of books:
 	say "The boxes are filled with old, dusty books. [We] [poke] around and [find] nothing of use.";
@@ -1776,7 +1819,8 @@ The snarky remark of the astral-tunnel-elr is "I hope this one goes somewhere wi
 
 astral-tunnel-elr is forthsouth of the gym basement.
 
-The gymnasium basement door is a locked closed openable lockable scenery door. It is north of sewer tunnel 3 and south of the gym basement.
+The gymnasium basement door is a locked closed openable lockable scenery door. It is north of sewer tunnel 3 and south of the gym basement. "A metal door with a lock." 
+The snarky remark of the gymnasium basement door is "Why is there a door here?"
 
 Book 32 - Fresnel's Music
 
@@ -1799,6 +1843,8 @@ The snarky remark of Henry's Hot Skillet is "It's a diner without any food or fu
 The x-coordinate of Henry's Hot Skillet is -1. The y-coordinate of Henry's Hot Skillet is -2.
 
 the Skillet door is a closed locked openable lockable scenery door. It is south of Main at Solvay and north of Henry's Hot Skillet. The Skillet door has matching key the brass key.
+"An old-fashioned door, with a brass keyhole."
+The snarky remark of the Skillet door is "[if the Skillet door is locked]Open up! I'm hungry![otherwise]It's a door.[end if][line break]".
 
 The lunch counter is a scenery supporter in Henry's Hot Skillet. "A typical mid-twentieth-century lunch counter."
 The snarky remark of the lunch counter is "Why isn't BOSH investigating the death of the American diner?"
@@ -1850,8 +1896,10 @@ The snarky remark of Henry's Roof is "Enigma Lake is truly... well, there."
 The x-coordinate of Henry's Roof is -1. The y-coordinate of Henry's Roof is -2.
 
 The TV aerial antenna is scenery in Henry's Roof. "A large, metallic rooftop antenna, characterized by its array of horizontal and vertical rods designed to capture VHF (very high frequency) broadcasts. Strangely, someone has mounted a threaded socket, like that of a light bulb, on one of the rods. A pair of insulated wires runs from the antenna and through a hole in the roof."
+The snarky remark of the TV aerial antenna is "I bet you kids don't even know what this is."
 
 The threaded socket is part of the TV aerial antenna. It is a container. The description is "A threaded socket, like that of a light bulb, is mounted on one of the rods of the antenna." Understand "light/bulb/lightbulb" as the threaded socket.
+It is unsnarkable.
 
 To hook up the rusty resonator:
 	now the rusty resonator is in the threaded socket;
@@ -1871,6 +1919,7 @@ After taking the rusty astral resonator when the rusty astral resonator was hook
 		say "Faraji removes [the rusty astral resonator] from the threaded socket on the TV aerial antenna. In the distance, the beam of light fades from the obelisk. [if the beam count is 0]The crystal is no longer glowing[otherwise]The crystal is still glowing [crystal glow][end if].";
 
 Obelisk-from-Henry's-Roof is privately-named scenery in Henry's Roof. The printed name is "the Enigma Park obelisk". Understand "obelisk/enigma/park/crystal/adornment" as Obelisk-from-Henry's-Roof. "There's a clear line of sight from here to the tip of the obelisk."
+The snarky remark of Obelisk-from-Henry's-Roof is "The obelisk. It's kind of like the Eiffel Tower, except not at all."
 
 Instead of examining the Obelisk-from-Henry's-Roof:
 	say "The obelisk in the park is clearly visible from here. [run paragraph on]";
@@ -2168,6 +2217,10 @@ Volume 4.5 - The Lizard People
 The group of lizard people is an animal. "Three humanoid figures are here, each with a long, scaly tail and a head that looks like a lizard's. They are dressed in smart grey suits. They are hissing loudly in what seems to be intelligent communication.[if lizard countdown is 1]
 
 They notice you and stop talking. One of them steps forward and says in guttural hiss, [one of]'So it is one of Doris's friends. We have been expecting you. You will not hinder us!'[or]'Surface vermin! You will not stop us!'[or]'No one will be allowed to interfere with our plans. Begone!'[or]'Silly human. You will fail!'[or]'You are too late to stop us. We will have the Dragon!'[at random][end if][line break]" 
+
+The description is "There are three of them, each one seemingly a reptilian humanoid. They are dressed in grey suits with matching ties. They are obviously of intelligence comparable to humans. They are hissing loudly in what seems to be intelligent communication."
+
+They are unsnarkable.
 
 The group of lizard people is in the fire station 1. 
 
