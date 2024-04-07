@@ -481,7 +481,28 @@ Understand "gravel/dirt" as the floor when the location is Hidden cave.
 Understand "gravel/dirt" as the floor when the location is circular chamber.
 
 
-[ Collapsed root cellar	--	"The floor of the cellar is a mix of gravel and dirt."  ]
+Table of Ceilings (continued)
+locale (a room)	has ceiling (a truth state)	ceiling description (a text)	touch description (a text)	low ceiling (a truth state)
+Room of Subjects	--	"Unreachable."	"Unreachable."	false
+room of quips	--	"Unreachable."	"Unreachable."	false
+featureless hyperplane	false	--	--	false
+field office reception	true	"Like everything else here (except the terrible carpet), the ceiling is a featureless white."	"Like everything else here (except the terrible carpet), the ceiling is a featureless white."	false
+field office hallway	true	"Like everything else here (except the terrible carpet), the ceiling is a featureless white."	"Like everything else here (except the terrible carpet), the ceiling is a featureless white."	false
+Minerva's Office	true	"Like everything else here (except the terrible carpet), the ceiling is a featureless white."	"Like everything else here (except the terrible carpet), the ceiling is a featureless white."	false
+field office chief's office	true	"Like everything else here (except the terrible carpet), the ceiling is a featureless white."	"Like everything else here (except the terrible carpet), the ceiling is a featureless white."	false
+Christy's Office	true	"Like everything else here (except the terrible carpet), the ceiling is a featureless white."	"Like everything else here (except the terrible carpet), the ceiling is a featureless white."	false
+Portal Room 1	true	"Like everything else here (except the terrible carpet), the ceiling is a featureless white."	"Like everything else here (except the terrible carpet), the ceiling is a featureless white."	false
+Portal Room 2	true	"Like everything else here (except the terrible carpet), the ceiling is a featureless white."	"Like everything else here (except the terrible carpet), the ceiling is a featureless white."	false
+Strip Mall Parking Lot South	false	--	--	false
+front office	true	"Typical commercial drop ceiling."	"Typical commercial drop ceiling."	false
+laundromat-store	true	"Typical commercial drop ceiling."	"Typical commercial drop ceiling."	false
+Dave's pawn shop	true	"Typical commercial drop ceiling."	"Typical commercial drop ceiling."	false
+Strip Mall Parking Lot North	false	--	--	false
+astral-tunnel-1	true	"Like everything else here, the ceiling is a featureless white."	"Like everything else here, the ceiling is a featureless white."	false
+astral-tunnel-2	true	"Like everything else here, the ceiling is a featureless white."	"Like everything else here, the ceiling is a featureless white."	false
+astral-tunnel-3	true	"Like everything else here, the ceiling is a featureless white."	"Like everything else here, the ceiling is a featureless white."	false
+back lot	false	--	--	false
+
 
 
 

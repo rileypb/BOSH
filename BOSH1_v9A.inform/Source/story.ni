@@ -1995,7 +1995,7 @@ Book 21 - Not For Release
 DEBUG is true.
 
 AUDIT is a truth state that varies.
-AUDIT is true.
+AUDIT is false.
 
 To decide what text is the wall description of (R - a room):
 	let result be "";
@@ -2016,7 +2016,11 @@ To decide what text is the floor description of (R - a room):
 To decide what text is the ceiling description of (R - a room):
 	let result be "";
 	if there is a locale of R in the Table of Ceilings:
-		let result be the ceiling description corresponding to the locale of R in the Table of Ceilings;
+		choose the row with the locale of R in the Table of Ceilings;
+		if there is a ceiling description entry:
+			let result be the ceiling description entry;
+		if there is a has ceiling entry and the has ceiling entry is false:
+			let result be "no ceiling";
 	decide on result.
 
 To decide what text is the transition description of (R - a room) from (S - a room):
@@ -2044,20 +2048,20 @@ When play begins:
 		repeat with X running through rooms:
 			if the wall description of X is "":
 				say "ROOM [X][line break]"; ]
-		say ">>> NO Floor Description <<<[line break]";
+		[ say ">>> NO Floor Description <<<[line break]";
 		repeat with X running through rooms:
 			if the floor description of X is "":
-				say "ROOM [X][line break]";
-		[lb;
-		say ">>> NO Ceiling Description <<<[line break]";
+				say "ROOM [X][line break]"; ]
+		[lb;]
+		[ say ">>> NO Ceiling Description <<<[line break]";
 		repeat with X running through rooms:
 			if the ceiling description of X is "":
-				say "ROOM [X][line break]";
+				say "ROOM [X][line break]"; ]
 		say ">>> NO Transition Description <<<[line break]";
 		repeat with X running through rooms:
 			repeat with Y running through rooms adjacent to X:
 				if the transition description of Y from X is "":
-					say "ROOM [X] to [Y][line break]"; ]
+					say "ROOM [X] to [Y][line break]"; 
 
 
 When play begins, seed the random-number generator with 1234.
@@ -2075,7 +2079,8 @@ test win with "w/w/s/open desk/n/e/ask about key/ask about computer/look behind 
 
 test no-drive with "w/w/s/open desk/n/e/ask about key/ask about computer/look behind desk/w/s/x desk/open white door/n/e/ask about wrench/ask about backdoor/take boxes/w/s/z/w/z/z/open white door/knock on white door/e/z/n/e/x vent/ask for a screwdriver/n/e/n/e/ask for screwdriver/w/s/sw/ask for a screwdriver/ask about the owner/ne/w/w/w/x lenses/ask to borrow pair/wear them/e/e/take boxes/w/s/w/back/n/f/d/n/s/turn off light/wear glasses/f/fn/push truck bs/push truck back/move crates/move crates with truck/x washing machine/open it/enter it/f/f/f/f/f/fn/fw/fn/fn/fw/w/fn/w/take compass/x compass/s/s/s/s/s/s/s/e/e/e/e/e/e/e/e/b/b/b/b/b/b/b/b/b/d/w/w".
 
-test part1 with "w/w/s/open desk/n/e/ask about key/ask about computer/look behind desk/x computer/w/s/x desk/open white door/n/e/ask about wrench/ask about backdoor/take boxes/w/s/z/w/z/z/open white door/knock on white door/e/z/n/e/x vent/ask for a screwdriver/e/n/e/ask for screwdriver/w/s/sw/ask for a screwdriver/ask about the owner/ne/w/w/w/x lenses/ask to borrow pair/wear them/e/e/take boxes/w/s/w/wear lenses/back/n/f/d/n/s/turn off light/wear glasses/f/fn/push truck bs/push truck back/move crates/move crates with truck/x washing machine/open it/enter it".
+test part1 with "w/look behind desk/x computer/x vent/e/sw/ask for ascrewdriver/ask about owner/ne/w/w/w/x lenses/ask to borrow the lenses/e/e/z/w/s/w/wear lenses/b/n/f/open desk/take key/w/e/unlock door with key/w/d/s/turn off light/wear lens/f/fn/push truck bs/push truck b/move crates with truck/open machine/enter washing”.
+
 
 test part2 with "f/f/f/f/f/fn/fw/fn/fn/fw/w/fn/w/take compass/x 
 it/s/s/s/s/s/s/s/e/e/e/e/e/e/e/e/b/b/b/b/b/b/b/b/b/d".

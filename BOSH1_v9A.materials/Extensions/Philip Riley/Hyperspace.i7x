@@ -119,7 +119,8 @@ Volume 2 - Featureless Hyperplane
 
 Book 1 - The Mystic Compass
 
-The mystic compass is a thing.  The description is "The name 'compass' is a bit of a misnomer, as it doesn't point anywhere. Instead, it displays a set of symbols that change as you move."
+The mystic compass is a thing.  The description is "The name 'compass' is a bit of a misnomer, as it doesn't point anywhere. Instead, it displays a set of symbols that change as you move." 
+Understand "mystical/magic" as the mystic compass.
 The snarky remark is "Okay, compass, show me the way to the nearest spirit guide."
 
 After dropping the mystic compass when the Ethereal Pillar is nowhere:
@@ -163,58 +164,13 @@ To say symbols for (L - a list of numbers):
 		say "[symbol for digit]";
 	say "[variable letter spacing]";
 
+The old hyperplane coords is a list of numbers that varies. The old hyperplane coords is initially {0, 0, 0}.
+The new hyperplane coords is a list of numbers that varies. The new hyperplane coords is initially {0, 0, 0}.
 
 Carry out going a direction (called D) from Featureless Hyperplane:
-	if D is north:
-		increment entry 1 of hyperplane coords;
-	if D is northeast:
-		increment entry 1 of hyperplane coords;
-		decrement entry 2 of hyperplane coords;
-	if D is east:
-		decrement entry 2 of hyperplane coords;
-	if D is southeast:
-		decrement entry 1 of hyperplane coords;
-		decrement entry 2 of hyperplane coords;
-	if D is south:
-		decrement entry 1 of hyperplane coords;
-	if D is southwest:
-		decrement entry 1 of hyperplane coords;
-		increment entry 2 of hyperplane coords;
-	if D is west:
-		increment entry 2 of hyperplane coords;
-	if D is northwest:
-		increment entry 1 of hyperplane coords;
-		increment entry 2 of hyperplane coords;
-	if D is back:
-		decrement entry 3 of hyperplane coords;
-	if D is forth:
-		increment entry 3 of hyperplane coords;
-	if D is backnorth:
-		increment entry 1 of hyperplane coords;
-		decrement entry 3 of hyperplane coords;
-	if D is backeast:
-		decrement entry 2 of hyperplane coords;
-		decrement entry 3 of hyperplane coords;
-	if D is backsouth:
-		decrement entry 1 of hyperplane coords;
-		decrement entry 3 of hyperplane coords;
-	if D is backwest:
-		increment entry 2 of hyperplane coords;
-		decrement entry 3 of hyperplane coords;
-	if D is forthnorth:
-		increment entry 1 of hyperplane coords;
-		increment entry 3 of hyperplane coords;
-	if D is fortheast:
-		decrement entry 2 of hyperplane coords;
-		increment entry 3 of hyperplane coords;
-	if D is forthsouth:
-		decrement entry 1 of hyperplane coords;
-		increment entry 3 of hyperplane coords;
-	if D is forthwest:
-		increment entry 2 of hyperplane coords;
-		increment entry 3 of hyperplane coords;		
+	now hyperplane coords is new hyperplane coords;
 	if hyperplane coords is Coordinates of Pillar:
-		if the player does not carry the mystic compass and the compass is in Featureless Hyperplane:
+		if the player does not carry the mystic compass and the compass is nowhere:
 			move the mystic compass to Featureless Hyperplane;
 		now the printed name of Featureless Hyperplane is "ethereal pillar";
 		now the preposition of Featureless Hyperplane is "next to";
@@ -232,6 +188,70 @@ Carry out going a direction (called D) from Featureless Hyperplane:
 		now the preposition of Featureless Hyperplane is "on";
 		now the Ethereal Pillar is nowhere;
 		now Descending Stair is nowhere;
+
+Before going a direction (called D) from Featureless Hyperplane:
+	Now old hyperplane coords is hyperplane coords;
+	Now new hyperplane coords is hyperplane coords;
+	if D is north:
+		increment entry 1 of new hyperplane coords;
+	if D is northeast:
+		increment entry 1 of new hyperplane coords;
+		decrement entry 2 of new hyperplane coords;
+	if D is east:
+		decrement entry 2 of new hyperplane coords;
+	if D is southeast:
+		decrement entry 1 of new hyperplane coords;
+		decrement entry 2 of new hyperplane coords;
+	if D is south:
+		decrement entry 1 of new hyperplane coords;
+	if D is southwest:
+		decrement entry 1 of new hyperplane coords;
+		increment entry 2 of new hyperplane coords;	
+	if D is west:
+		increment entry 2 of new hyperplane coords;
+	if D is northwest:
+		increment entry 1 of new hyperplane coords;
+		increment entry 2 of new hyperplane coords;	
+	if D is back:
+		decrement entry 3 of new hyperplane coords;
+	if D is forth:
+		increment entry 3 of new hyperplane coords;
+	if D is backnorth:
+		increment entry 1 of new hyperplane coords;
+		decrement entry 3 of new hyperplane coords;
+	if D is backeast:
+		decrement entry 2 of new hyperplane coords;
+		decrement entry 3 of new hyperplane coords;
+	if D is backsouth:
+		decrement entry 1 of new hyperplane coords;
+		decrement entry 3 of new hyperplane coords;
+	if D is backwest:
+		increment entry 2 of new hyperplane coords;
+		decrement entry 3 of new hyperplane coords;
+	if D is forthnorth:
+		increment entry 1 of new hyperplane coords;
+		increment entry 3 of new hyperplane coords;
+	if D is fortheast:
+		decrement entry 2 of new hyperplane coords;
+		increment entry 3 of new hyperplane coords;
+	if D is forthsouth:
+		decrement entry 1 of new hyperplane coords;
+		increment entry 3 of new hyperplane coords;
+	if D is forthwest:
+		increment entry 2 of new hyperplane coords;
+		increment entry 3 of new hyperplane coords;
+	if old hyperplane coords is Coordinates of Pillar:
+		say "You leave the ethereal pillar behind.";
+	otherwise if old hyperplane coords is Staircase Coords:
+		say "You leave the descending stair behind.";
+	otherwise if old hyperplane coords is Staircase Coords and D is down:
+		say "You descend the staircase.";
+	otherwise if new hyperplane coords is Staircase Coords:
+		say "You trudge across the trackless hyperplane, and end up somewhere else, not completely the same.";
+	otherwise if new hyperplane coords is Coordinates of Pillar:
+		say "You trudge across the trackless hyperplane, and end up somewhere else, not completely the same.";
+	otherwise:
+		say "You trudge across the trackless hyperplane, and end up somewhere else, yet exactly the same.";
 
 Carry out going up from Field Office Reception:
 	now HyperPlane Coords is Staircase Coords;
