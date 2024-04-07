@@ -2040,15 +2040,15 @@ When play begins:
 			if X is not a subject and the description of X is "" and X is not a quip and X is not indescribable:
 				say "THING [X][line break]";
 		lb; ]
-		say ">>> NO Wall Description <<<[line break]";
+		[ say ">>> NO Wall Description <<<[line break]";
 		repeat with X running through rooms:
 			if the wall description of X is "":
-				say "ROOM [X][line break]";
-		[ say ">>> NO Floor Description <<<[line break]";
+				say "ROOM [X][line break]"; ]
+		say ">>> NO Floor Description <<<[line break]";
 		repeat with X running through rooms:
 			if the floor description of X is "":
 				say "ROOM [X][line break]";
-		lb;
+		[lb;
 		say ">>> NO Ceiling Description <<<[line break]";
 		repeat with X running through rooms:
 			if the ceiling description of X is "":

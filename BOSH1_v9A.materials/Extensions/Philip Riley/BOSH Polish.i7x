@@ -71,7 +71,7 @@ Horton Family House Kitchen	--	"White plaster walls framed by wooden beams."	--
 Solvay-Road-by-the-lake	false	--	--
 dirty shack	--	"The walls are made of corrugated metal."	--
 Radio Station WGXC	--	"Marble at the base, then white plaster."	--
-radio station roof false	--	--
+radio station roof	false	--	--
 broadcast booth	--	"The walls are covered in soundproofing foam."	--
 public gymnasium	--	"The walls are plain cinderblock, painted white."	--
 First Utilitarian Church of Enigma Lake	--	"Plain white plastered walls, with scattered religious art."	--
@@ -409,6 +409,21 @@ Dirty shack	--	"Dirty, worn wood."
 Workshed	--	"An old, creaky wood floor."
 Hidden cave	--	"The floor of the cave is a mix of gravel and dirt."
 Circular chamber	--	"The floor of the cave is a mix of gravel and dirt."
+Room of Subjects	--	"Unreachable."
+room of quips	--	"Unreachable."
+Lake Street by the park	--	"Nicely-maintained black asphalt."
+old root cellar	--	"Packed earth."
+large grave	--	"Newly-disturbed earth."
+sewer tunnel 1	--	"Concrete."
+sewer tunnel 2	--	"Concrete."
+sewer tunnel 3	--	"Concrete."
+astral-tunnel-elr	--	"The floor (ground?) is a featureless white."
+gym basement	--	"Grey concrete."
+Henry's Roof	--	"Tar paper and gravel."
+Room of Stuff	--	"Unreachable."
+isolation booth	--	"Unreachable."
+inside-the-dumpster	--	"Garbage."
+utility closet	--	"Grey industrial carpet."
 
 
 Understand "asphalt" as the floor when the location is strip mall parking lot south.
