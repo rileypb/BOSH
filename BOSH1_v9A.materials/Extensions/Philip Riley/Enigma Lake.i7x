@@ -658,6 +658,8 @@ A rule for snarking First Utilitarian Church of Enigma Lake:
 		snark First Utilitarian Church of Enigma Lake;
 	rule succeeds;
 
+Some religious art is scenery in First Utilitarian Church of Enigma Lake. "The best piece in the bunch is a painting of a lizard person being smote by a bolt of lightning."
+
 Instead of doing something other than examining to the doll-fly:
 	say "[We] [can't] get close enough to [the doll-fly] to do that.";
 
@@ -996,6 +998,8 @@ the steeple is above the First Utilitarian Church of Enigma Lake. It is in ELR.
 "From here, [we] can see the obelisk in the park clearly. Someone has set up a tripod here. [if the content of the tripod is nothing]Its mount is empty[otherwise if the content of the tripod is the telescope][A telescope] is mounted on it[otherwise][makeshift resonator state][end if]."
 The snarky remark of the steeple is "I wonder if I can see my house from here."
 The x-coordinate of the steeple is 2. The y-coordinate of the steeple is 1.
+
+Some stained-glass-window-steeples are scenery in the steeple. They are privately-named. The printed name is "stained glass windows". Understand "stained/glass/windows" as stained-glass-window-steeples. "The steeple is surrounded by the typical Utilitarian perfectly clear stained glass windows."
 
 The telescope is in the tripod. The description is "A small telescope suitable for amateur astronomy[if the content of the tripod is the telescope]. It's mounted on a tripod[end if]."
 The snarky remark of the telescope is "What's the point of looking at the stars? They're all the same."

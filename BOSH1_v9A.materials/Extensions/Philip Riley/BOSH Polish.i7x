@@ -67,7 +67,42 @@ Rolle's Department Store	--	"The walls are painted yellow with a red stripe. Lar
 Henry's Hot Skillet	--	"The walls are deep red until waist height, then white above that. At the meeting of the two colors is a stripe of alternating black and white tiles."	--
 Reading Room	--	"The walls are painted a soothing blue."	--
 Fresnel's Music	--	"The walls are white with murals of musical instruments and scores."	--
-[ Horton Family House Kitchen ]
+Horton Family House Kitchen	--	"White plaster walls framed by wooden beams."	--
+Solvay-Road-by-the-lake	false	--	--
+dirty shack	--	"The walls are made of corrugated metal."	--
+Radio Station WGXC	--	"Marble at the base, then white plaster."	--
+radio station roof false	--	--
+broadcast booth	--	"The walls are covered in soundproofing foam."	--
+public gymnasium	--	"The walls are plain cinderblock, painted white."	--
+First Utilitarian Church of Enigma Lake	--	"Plain white plastered walls, with scattered religious art."	--
+vestry	--	"Plain white plastered walls."	--
+steeple	--	"Plain white plastered walls punctuated by the typical Utilitarian perfectly clear stained glass windows."	--
+Lake at Ridge	false	--	--
+workshed	--	"Bare wood walls."	--
+hidden cave	--	"Rough stone walls."	--
+circular chamber	--	"Rough stone walls."	--
+old root cellar	--	"Loamy dirt walls."	--
+Lake shore west	false	--	--
+Horton Family House Parlor	--	"White plaster walls framed by wooden beams."	--
+Second Floor of the Horton House	--	"White plaster walls framed by wooden beams."	--
+horton astral tunnel	--	"More of this same white stuff, whatever it is."	--
+Fire Station 1	--	"Grey cinderblock walls."	--
+Horton graveyard	false	--	--
+large grave	--	"Freshly dug earth walls."	--
+sewer tunnel 1	--	"Damp brick walls, with a few pipes running along them."	--
+sewer tunnel 2	--	"Damp brick walls, with a few pipes running along them."	--
+sewer tunnel 3	--	"Damp brick walls, with a few pipes running along them."	--
+astral-tunnel-elr	--	"More of this same white stuff, whatever it is."	--
+gym basement	--	"White cinderblock."	--
+Henry's Roof	false	--	--
+Room of Stuff	--	"Unreachable."	--
+isolation booth	--	"Unreachable."	--
+Biff's Office	--	"Plain, boring white drywall."	--
+inside-the-dumpster	--	"Blue metal walls, with flaking paint and rust spots."	--
+BOSH hallway	--	"White drywall."	--
+BOSH chief's office	--	"White drywall, of course."	--
+Moira's Office	--	"More white drywall."	--
+utility closet	--	"White drywall."	--
 
 
 Table of Transitions
