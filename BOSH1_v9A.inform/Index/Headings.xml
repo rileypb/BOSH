@@ -172,140 +172,140 @@
     </dict>
     <key>24</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>868</integer>
+        <key>Line</key><integer>874</integer>
         <key>Title</key><string>Section 2 - Back Lot</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>25</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>961</integer>
+        <key>Line</key><integer>967</integer>
         <key>Title</key><string>Section 2.5 - Inside the dumpster</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>26</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>975</integer>
+        <key>Line</key><integer>981</integer>
         <key>Title</key><string>Section 3 - Hallway</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>27</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1021</integer>
+        <key>Line</key><integer>1027</integer>
         <key>Title</key><string>Section 4 - Front Office</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>28</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1183</integer>
+        <key>Line</key><integer>1189</integer>
         <key>Title</key><string>Section 5 - BOSH chief's office</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>29</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1361</integer>
+        <key>Line</key><integer>1367</integer>
         <key>Title</key><string>Section 6 - Moira's office</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>30</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1542</integer>
+        <key>Line</key><integer>1548</integer>
         <key>Title</key><string>Book 15 - The Phone Call</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>31</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1549</integer>
+        <key>Line</key><integer>1555</integer>
         <key>Title</key><string>Book 16 - Moving Between Rooms</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>32</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1577</integer>
+        <key>Line</key><integer>1583</integer>
         <key>Title</key><string>Chapter 1 - Leaving the Front Office</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>33</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1584</integer>
+        <key>Line</key><integer>1590</integer>
         <key>Title</key><string>Chapter 2 - Klimp Arrives</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>34</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1586</integer>
+        <key>Line</key><integer>1592</integer>
         <key>Title</key><string>Book 17 - Commerce and Conversation</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>35</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1599</integer>
+        <key>Line</key><integer>1605</integer>
         <key>Title</key><string>Book 18 - Sound</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>36</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1601</integer>
+        <key>Line</key><integer>1607</integer>
         <key>Title</key><string>Book 18.5 - Quiz table</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>37</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1712</integer>
+        <key>Line</key><integer>1718</integer>
         <key>Title</key><string>Book 19 - Verbs</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>38</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1717</integer>
+        <key>Line</key><integer>1723</integer>
         <key>Title</key><string>Book 20 - Images</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>39</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1885</integer>
+        <key>Line</key><integer>1891</integer>
         <key>Title</key><string>Book 20.5 Miscellaneous</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>40</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1993</integer>
+        <key>Line</key><integer>1999</integer>
         <key>Title</key><string>Book 21 - Not For Release</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>41</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>2174</integer>
+        <key>Line</key><integer>2176</integer>
         <key>Title</key><string>Volume 2 - Test command tweak for clean transcripts</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>42</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>2264</integer>
+        <key>Line</key><integer>2266</integer>
         <key>Title</key><string>Volume 3 - The Story</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>43</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>2267</integer>
+        <key>Line</key><integer>2269</integer>
         <key>Title</key><string>Book 1 - The Thumb Drive</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
@@ -2124,77 +2124,77 @@
     </dict>
     <key>303</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/hyperspace.i7x</string>
-        <key>Line</key><integer>895</integer>
+        <key>Line</key><integer>901</integer>
         <key>Title</key><string>Section - Portal 2</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>304</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/hyperspace.i7x</string>
-        <key>Line</key><integer>926</integer>
+        <key>Line</key><integer>932</integer>
         <key>Title</key><string>Volume 4 - Characters</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>305</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/hyperspace.i7x</string>
-        <key>Line</key><integer>928</integer>
+        <key>Line</key><integer>934</integer>
         <key>Title</key><string>Book 1 - Doris</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>306</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/hyperspace.i7x</string>
-        <key>Line</key><integer>930</integer>
+        <key>Line</key><integer>936</integer>
         <key>Title</key><string>Chapter 1 - First Meeting</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>307</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/hyperspace.i7x</string>
-        <key>Line</key><integer>1230</integer>
+        <key>Line</key><integer>1236</integer>
         <key>Title</key><string>Book 2 - Maggie</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>308</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/hyperspace.i7x</string>
-        <key>Line</key><integer>1245</integer>
+        <key>Line</key><integer>1251</integer>
         <key>Title</key><string>Book 3 - Christy</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>309</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/hyperspace.i7x</string>
-        <key>Line</key><integer>1290</integer>
+        <key>Line</key><integer>1296</integer>
         <key>Title</key><string>Volume 5 - Things</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>310</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/hyperspace.i7x</string>
-        <key>Line</key><integer>1305</integer>
+        <key>Line</key><integer>1311</integer>
         <key>Title</key><string>Volume 6 - Other Stuff</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>311</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/hyperspace.i7x</string>
-        <key>Line</key><integer>1307</integer>
+        <key>Line</key><integer>1313</integer>
         <key>Title</key><string>Book 1 - Help</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>312</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/hyperspace.i7x</string>
-        <key>Line</key><integer>1314</integer>
+        <key>Line</key><integer>1320</integer>
         <key>Title</key><string>Book 2 - Polish</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>313</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/hyperspace.i7x</string>
-        <key>Line</key><integer>1320</integer>
+        <key>Line</key><integer>1326</integer>
         <key>Title</key><string>Book 3 - Not for Release</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
@@ -2593,161 +2593,161 @@
     </dict>
     <key>370</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>1461</integer>
+        <key>Line</key><integer>1462</integer>
         <key>Title</key><string>Book 24 - Lake shore west</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>371</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>1470</integer>
+        <key>Line</key><integer>1471</integer>
         <key>Title</key><string>Book 25 - Horton Family House Kitchen</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>372</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>1514</integer>
+        <key>Line</key><integer>1515</integer>
         <key>Title</key><string>Book 25.1 - Horton Family House Parlor</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>373</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>1582</integer>
+        <key>Line</key><integer>1583</integer>
         <key>Title</key><string>Book 25.5 - Horton Family House Second Floor</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>374</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>1599</integer>
+        <key>Line</key><integer>1600</integer>
         <key>Title</key><string>Book 26 - Astral Tunnel</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>375</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>1607</integer>
+        <key>Line</key><integer>1608</integer>
         <key>Title</key><string>Book 27 - Horton Graveyard</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>376</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>1743</integer>
+        <key>Line</key><integer>1744</integer>
         <key>Title</key><string>Book 28 - Fire Station 1</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>377</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>1778</integer>
+        <key>Line</key><integer>1779</integer>
         <key>Title</key><string>Book 29 - Reading Room</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>378</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>1823</integer>
+        <key>Line</key><integer>1824</integer>
         <key>Title</key><string>Book 30 - Reading Room Basement</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>379</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>1862</integer>
+        <key>Line</key><integer>1863</integer>
         <key>Title</key><string>Book 31 - Sewer Tunnel</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>380</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>1891</integer>
+        <key>Line</key><integer>1892</integer>
         <key>Title</key><string>Book 32 - Fresnel's Music</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>381</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>1902</integer>
+        <key>Line</key><integer>1903</integer>
         <key>Title</key><string>Book 33 - Henry's Hot Skillet</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>382</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>1956</integer>
+        <key>Line</key><integer>1957</integer>
         <key>Title</key><string>Book 34 - Henry's Roof</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>383</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>2007</integer>
+        <key>Line</key><integer>2008</integer>
         <key>Title</key><string>Book 35 - Rolle's Department Store</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>384</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>2032</integer>
+        <key>Line</key><integer>2033</integer>
         <key>Title</key><string>Book 36 - Public Gymnasium</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>385</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>2160</integer>
+        <key>Line</key><integer>2161</integer>
         <key>Title</key><string>Book 37 - Gym Basement</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>386</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>2236</integer>
+        <key>Line</key><integer>2237</integer>
         <key>Title</key><string>Book 38 - Light sources</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>387</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>2246</integer>
+        <key>Line</key><integer>2247</integer>
         <key>Title</key><string>Volume 4 - Eerie Sounds</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>388</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>2261</integer>
+        <key>Line</key><integer>2262</integer>
         <key>Title</key><string>Volume 4.25 - The Mystic Compass in Enigma Lake</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>389</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>2284</integer>
+        <key>Line</key><integer>2285</integer>
         <key>Title</key><string>Volume 4.5 - The Lizard People</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>390</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>2487</integer>
+        <key>Line</key><integer>2488</integer>
         <key>Title</key><string>Volume 4.75 - Building the Makeshift Astral Resonator</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>391</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>2518</integer>
+        <key>Line</key><integer>2519</integer>
         <key>Title</key><string>Volume 5 - Polish</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>392</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>2528</integer>
+        <key>Line</key><integer>2529</integer>
         <key>Title</key><string>Volume 6 - Not for Release</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>

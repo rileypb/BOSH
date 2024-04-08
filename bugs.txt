@@ -1,6 +1,4 @@
-can do things while facing lizard people
-shouldn't teleport into horton house
-lizard people don't teleport faraji on second meeting
 indicate lizard people move out of sight when player moves.
-Randomize shack coordinates
 alter lizard people responses after meeting faraji the first time.
+fix hood state descriptions for hyundai.
+fix opening the desk with the hex wrench.

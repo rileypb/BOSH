@@ -740,22 +740,25 @@ The description of the blue flipphone is "It's a cheap blue flipphone, purchased
 After answering the blue flipphone:
 	say "[We] [answer] the phone. 'Hello?'
 	
-	'Hello, [agent],' says a mysterious voice. 'Took you long enough to answer. Now listen carefully. The fate of the world is at stake. Savra is going to move on the Dragon.';
+	'Hello, Larch,' says a familiar voice -- it's Doris.
 	
-	'Sure, buddy, but what does that mean?' Faraji asks.
+	'Doris? Why didn't you tell me you were calling when I saw you in your office?'
 	
-	'Oh, right. You're not in the loop. The Dragon is the only hope for peace with the lizard men. Savra has already tried to kill him, but only managed to kill his parents. Now Savra's searching for the Dragon's secret hiding place. You have to stop him.'
-	
-	The voice continues, 'By the way, how's Klimp? How's the new office?'
-	
-	Faraji pauses. 'Who is this?' [we] [ask].
-	
-	'You can call me, I don't know, 'Blue Phone Guy' or something. It doesn't really matter. Now get to work.' The line goes dead.";
+	'Ah well, I didn't know I was going to call you then. In fact, I haven't even called you yet. It's complicated.'
+
+	'What do you mean?'
+
+	'I'm calling you now, but I haven't called you yet. I'm calling you from the future.'
+
+	'Oh, I see. So you're calling me from the future to tell me that you're going to call me from the future.'
+
+	'No, I'm calling you from the future to get you to try to answer the phone so that you'll end up meeting me so that I'll know to call you from the future. Don't worry about it, it's all timey-wimey. Aaanyway, now that you've answered -- thanks for rescuing Daniels. Also, we need your help with something. We need you to save the Dragon.'
+	";
 	end the story saying "Congratulations on answering the phone!";
 
-[ After printing the player's obituary:
+After printing the player's obituary:
 	say "[italic type][bracket]Seriously, is that it?[close bracket][roman type][paragraph break]";
-	say "[bold type]Larch Faraji will return in 'BOSH II: The Dragon'.[roman type]"; ]
+	say "[bold type]Larch Faraji will return in 'BOSH II: The Dragon'.[roman type]";
 
 A key is a kind of thing.
 
@@ -784,6 +787,9 @@ Carry out taking apart the desk:
 
 Report taking apart the desk:
 	say "[We] [unscrew] the hex screws and [remove] the drawer. Inside, [we] find a little grey key and a blue flipphone. [We] [put] the drawer back together and [pocket] the key and the phone, being careful to leave the drawer unlocked.";
+
+Instead of unscrewing the hex screws with the hex wrench:
+	try taking apart the desk biff's desk;
 
 [ Biff's landline is scenery on Biff's desk. It is privately-named. The printed name is "[our] office phone". The description is "It's not yet hooked up." 
 Understand "office/-- phone", "landline" as Biff's landline. ]
@@ -2094,19 +2100,15 @@ lenses/b/n/f/d/s/enter machine/d/e/w/w/give book to doris/e/s/give
 note to christy/n/n/ask coffee/s/s/give coffee/n/n/w/give note to 
 doris/ask how i will find him/ready/e/f/enter portal".
 
-test part41 with "x desk/read schedule/x pack/open it/take 
-key/n/n/w/w/w/take hammer/e/se/s/s/e/e/n/take 
-object/s/w/w/w/read book/i/take book/d/take cord/swing hammer at 
-wall/n/e/e/wear lens/f/bn/x lockers/open locker 1/u/shoot hoops/x 
-desk/read book/read membership book/take it/look up thompson in 
-membership book/d/open 1/open 10/u/x machine 
-weight/d/fs/b/w/w/s/u/out/e/sw/take/ne/s/x copper key/unlock 
-door with copper key/e/s/take waxer/n/e/n/n/n/enter truck/open 
-it/get in/open glove/take key/w/out/x truck/x bed/take 
-cutters/ne/n/w/w/s/w/unlock door with copper key/w/take rod/s/l/x 
-table/read book of names/read book of names/read book of 
-names/wear lenses/fs/be/take all/x spotlight/x ladder/fw/bn/take 
-book/u/n/u/open wardrobe/take frame/x it/d/w/take shovel/d/i".
+test part4 with "x desk/open pack/take key/s/w/sw/take/ne/w/read brown book/e/n/n/n/w/w/take hammer/ask who he is/ask why still here/ask how he can help/ask about secret/ask for help/e/read compass/press button/e/f/type 1 into 
+keypad/b/n/ask for coffee/s/f/enter portal/w/give coffee to hutz/ask if can now help them/e/e/e/se/x floor/unlock cabinet with iron key/n/nw/e/s/w/w/se/s/s/w/d/take/swing hammer at wall/n/e/e/wear lenses/f/bn/u/take key/look up thompson in record 
+book/d/open locker 1 with red key/u/unlock door with green key/w/w/n/w/w/unlock door with copper key/w/take rod/s/take book/fs/be/take all/press blue button/e/n/w/u/open wardrobe/take frame/d/w/take shovel/put ladder in hole/d/dig/open case/read 
+witnessing/u/take ladder/e/e/e/d/nw/n/n/e/e/look up pezzex the unpalatable in weird book/say xvart/read book of utilitarianism/w/w/w/nw/w/w/nw/say teleology/take/press button/e/b/enter portal/out/s/e/e/open hood/take battery/press button/e/f/enter 
+portal/se/e/e/e/plug cord into outlet/u/put lenses in frame/put spotlight into frame/put fork into frame/plug shiny resonator into cord/plug makeshift into cord/take telescope/put makeshift into tripod/d/e/push tapestry/flip switch/w/u/x 
+obelisk/d/w/d/s/s/se/u/d/nw/n/n/n/take cutters/open truck/enter it/open glove/take key/w/out/s/s/s/se/u/cut lock with cutters/open cabinet/flip switch/put shiny resonator on platform/i/x obelisk/d/nw/n/n/n/w/se/unlock cabinet with iron key/open it/take 
+resonator/x floor/open door/open trapdoor/d/s/n/u/nw/w/s/s/s/s/unlock door with brass key/s/tie battery to wires/u/screw rusty resonator/put rusty into socket/d/n/n/n/e/n/e/w/se/d/s/enter portal/ask how he got here/ask where we are/ask what’s 
+next/press button/i/get out/knock on white metal door/e/n/e/e/sw/give watch to dave/i/nw/ne/x hood/x hyundai/n/e/buy screwdriver/w/s/w/open vent with screwdriver/w/s/open desk with hex wrench/x desk/i/open drawer".
+
 
 
 test wrench with "w/look behind desk/purloin red screwdriver";

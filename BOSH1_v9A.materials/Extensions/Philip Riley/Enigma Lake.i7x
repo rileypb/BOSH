@@ -1140,7 +1140,7 @@ Carry out mounting the makeshift astral resonator on the tripod:
 	now the makeshift astral resonator is in the tripod;
 
 Report mounting the makeshift astral resonator on the tripod:
-	say "[We] [manage] to make the makeshift astral resonator fit in the tripod's mount[if the extension cord accepts the makeshift astral resonator], dropping the extension cord as we do so[end if].";
+	say "[We] [manage] to make the makeshift astral resonator fit in the tripod's mount[if the extension cord accepts the makeshift astral resonator], dropping the extension cord as they do so[end if]";
 	now the extension cord is in the steeple; 
 	if the makeshift astral resonator is powered:
 		say ". The beam of light focuses on the obelisk in the park, striking the crystal adornment at its apex. The crystal is glowing [crystal glow].";
@@ -1317,7 +1317,7 @@ To say equipment cabinet state:
 
 To say trapdoor state:
 	if the trapdoor is open:
-		say "open. It leads down into darkness.";
+		say "open. It leads down into darkness";
 	otherwise:
 		say "closed";
 
@@ -1423,7 +1423,7 @@ where-we-are is a questioning quip.
 	The printed name is "where we are".
 	Understand "where are we", "where we are" as where-we-are.
 	The comment is "Faraji asks, 'Where are we?'". 
-	The reply is "'We're in an old Onandaga root cellar in upstate New York. Well not so old now, I guess. I've managed to make friends with the locals well enough, so they let me sleep in here.".
+	The reply is "'We're in an old Onandaga root cellar in upstate New York. Well not so old now, I guess. I've managed to make friends with the locals well enough, so they let me sleep in here.'".
 	It quip-supplies Daniels.
 	It stocks Daniels.
 
@@ -1456,6 +1456,7 @@ Instead of pushing the recall button when the player is in the old root cellar:
 	
 	Faraji doesn't have time to look at object before their finger slips and pushes the button. The room spins and fades away, and Faraji finds themself back in Swamp Park.";
 	now the player carries the wristwatch;
+	now the current interlocutor is nothing;
 	move the player to the inside-the-dumpster.
 
 Book 24 - Lake shore west
@@ -2467,7 +2468,7 @@ Instead of answering something that when the group of lizard people is in the lo
 Before doing something when group of lizard people is in the location:
 	decrement the lizard countdown;
 
-Every turn when the lizard countdown is 0 and the group of lizard people is in the location:
+Every turn when the lizard countdown <= 0 and the group of lizard people is in the location:
 	say "The lizard people hiss, creating a strange cloud of thick vapor. Faraji feels light-headed and disoriented. When the vapor clears, they are somewhere else...";
 	teleport the player;
 

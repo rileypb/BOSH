@@ -826,7 +826,13 @@ Chapter - Time Control
 
 The current spacetime setting is a number that varies. The current spacetime setting is 62358234.
 The town hall spacetime setting is always 62358234.
-The shack spacetime setting is always 62357123.
+The shack spacetime setting is a number that varies.
+When play begins:
+	if DEBUG is true:
+		now the shack spacetime setting is 1;
+	otherwise:
+		now the shack spacetime setting is a random number between 10000000 and 99999999;
+
 
 The spacetime control is a part of the portal to the past. The description is "A control panel is attached to the portal. It has an LED display and a keypad. [if the portal to the past is activated]The display reads '[current spacetime setting]'[otherwise]The display is dark[end if]. A large red button underneath says 'RESET'." Understand "panel" as the spacetime control.
 The snarky remark is "LEDs, eh? Where'd they get the budget for that?"
