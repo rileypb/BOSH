@@ -462,6 +462,7 @@ doris-subject is a subject. It is privately-named. The printed name is "Doris". 
 christy-subject is a subject. It is privately-named. The printed name is "Christy". Understand "Christy" as christy-subject.
 minerva-subject is a subject. It is privately-named. The printed name is "Minerva". Understand "Minerva" as minerva-subject.
 maggie-subject is a subject. It is privately-named. The printed name is "Maggie". Understand "Maggie" as maggie-subject.
+lobby is a subject.
 
 [Maggie is very spacy. Her responses are often cryptic and unhelpful.]
 Table of Quiz Topics (continued)
@@ -477,6 +478,7 @@ auxiliary-portal	Maggie	"'What is the auxiliary portal?'"	"'It is a device that 
 Thumb drive	Maggie	"'What do you know about this?'"	"'I'm surprised you don't know. It's a USB drive. It's used to store data.'"
 maggie-subject	Maggie	"'Who are you?'"	"'I'm Maggie. I'm the receptionist here at the BOSH Hyperspace Field Office. I'm here to help you with whatever you need, as long as it's not touching the control panel.'"
 BOSH	Maggie	"'Are you part of BOSH?'"	"'Sometimes, yes -- the Bureau of Space and Hyperspace. Or is it Bureaucratic Office of Supernatural History? Or Business Office for Standard Howitzers? Or Big Office of the Slightly Hilarious? Oh yes, Bureau of Strange Happenings. But I like to think of it as the Baby of Stan and Harriet.'"
+lobby	Maggie	"'The lobby? You mean the infinite wasteland I was forced to wander through to get here?'"	"'Yes, that's the one. Isn't it lovely?'"
 
 Book 2 - Hallway
 
@@ -1303,6 +1305,8 @@ The recall button can be pushed. The recall button is not pushed.
 Instead of pushing the recall button when the player is not in field office area and the player is not in the old root cellar:
 	say "The world turns inside out, and suddenly [player's surname] is somewhere else.";
 	now the recall button is pushed;
+	if the current interlocutor is not Doris:
+		now the current interlocutor is Doris;
 	move the player to the field office chief's office;
 
 Instead of pushing the recall button when the player is in field office area:
@@ -1329,6 +1333,7 @@ activating the portal to the past is an action out of world. Understand "activat
 
 Carry out activating the portal to the past:
 	now the portal to the past is activated;
+	now the auxiliary portal is activated;
 	say "The portal hums to life.";
 	
 

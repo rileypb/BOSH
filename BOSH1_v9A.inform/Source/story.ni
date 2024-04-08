@@ -752,7 +752,7 @@ After answering the blue flipphone:
 
 	'Oh, I see. So you're calling me from the future to tell me that you're going to call me from the future.'
 
-	'No, I'm calling you from the future to get you to try to answer the phone so that you'll end up meeting me so that I'll know to call you from the future. Don't worry about it, it's all timey-wimey. Aaanyway, now that you've answered -- thanks for rescuing Daniels. Also, we need your help with something. We need you to save the Dragon.'
+	'No, I'm calling you from the future to get you to try to answer the phone so that you'll end up meeting me so that I'll know to call you from the future. Don't worry about it, it's all timey-wimey. Aaanyway, now that you've answered -- thanks for rescuing Daniels. Also, we need your help with something. [italic type]We need you to save the Dragon[roman type].'
 	";
 	end the story saying "Congratulations on answering the phone!";
 
@@ -2106,14 +2106,14 @@ lenses/b/n/f/d/s/enter machine/d/e/w/w/give book to doris/e/s/give
 note to christy/n/n/ask coffee/s/s/give coffee/n/n/w/give note to 
 doris/ask how i will find him/ready/e/f/enter portal".
 
-test part4 with "x desk/open pack/take key/s/w/sw/take/ne/w/read brown book/e/n/n/n/w/w/take hammer/ask who he is/ask why still here/ask how he can help/ask about secret/ask for help/e/read compass/press button/e/f/type 1 into 
+test part4 with "banish/x desk/open pack/take key/s/w/sw/take/ne/w/read brown book/e/n/n/n/w/w/take hammer/ask who he is/ask why still here/ask how he can help/ask about secret/ask for help/e/read compass/press button/e/f/type 1 into 
 keypad/b/n/ask for coffee/s/f/enter portal/w/give coffee to hutz/ask if can now help them/e/e/e/se/x floor/unlock cabinet with iron key/n/nw/e/s/w/w/se/s/s/w/d/take/swing hammer at wall/n/e/e/wear lenses/f/bn/u/take key/look up thompson in record 
 book/d/open locker 1 with red key/u/unlock door with green key/w/w/n/w/w/unlock door with copper key/w/take rod/s/take book/fs/be/take all/press blue button/e/n/w/u/open wardrobe/take frame/d/w/take shovel/put ladder in hole/d/dig/open case/read 
-witnessing/u/take ladder/e/e/e/d/nw/n/n/e/e/look up pezzex the unpalatable in weird book/say xvart/read book of utilitarianism/w/w/w/nw/w/w/nw/say teleology/take/press button/e/b/enter portal/out/s/e/e/open hood/take battery/press button/e/f/enter 
+witnessing/u/take ladder/e/e/e/e/e/look up pezzex the unpalatable in weird book/say xvart/read book of utilitarianism/w/w/w/nw/w/w/nw/say teleology/take/press button/e/b/enter portal/out/s/e/e/open hood/take battery/press button/e/f/enter 
 portal/se/e/e/e/plug cord into outlet/u/put lenses in frame/put spotlight into frame/put fork into frame/plug shiny resonator into cord/plug makeshift into cord/take telescope/put makeshift into tripod/d/e/push tapestry/flip switch/w/u/x 
 obelisk/d/w/d/s/s/se/u/d/nw/n/n/n/take cutters/open truck/enter it/open glove/take key/w/out/s/s/s/se/u/cut lock with cutters/open cabinet/flip switch/put shiny resonator on platform/i/x obelisk/d/nw/n/n/n/w/se/unlock cabinet with iron key/open it/take 
 resonator/x floor/open door/open trapdoor/d/s/n/u/nw/w/s/s/s/s/unlock door with brass key/s/tie battery to wires/u/screw rusty resonator/put rusty into socket/d/n/n/n/e/n/e/w/se/d/s/enter portal/ask how he got here/ask where we are/ask what’s 
-next/press button/i/get out/knock on white metal door/e/n/e/e/sw/give watch to dave/i/nw/ne/x hood/x hyundai/n/e/buy screwdriver/w/s/w/open vent with screwdriver/w/s/open desk with hex wrench/x desk/i/open drawer".
+next/press button/i/get out/e/n/e/e/sw/give watch to dave/i/nw/ne/x hood/x hyundai/n/e/buy screwdriver/w/s/w/look behind desk/open vent with screwdriver/w/s/open desk with hex wrench/x desk/i/open drawer".
 
 
 
@@ -2177,6 +2177,11 @@ Carry out jumping to part 4:
 	now the broken washing machine is in the back basement;
 	now the strange glow is in the broken washing machine;
 	now the strange glow is closeby;
+	now the portal to the past is activated;
+	now the auxiliary portal is activated;
+	now closet door is unlocked;
+	now closet door is open;
+	now Moira's door is unlocked;
 	
 	
 Volume 2 - Test command tweak for clean transcripts

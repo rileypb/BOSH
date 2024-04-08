@@ -21,10 +21,10 @@ When play begins:
 		now the correct locker number is 1;
 
 To decide if mounted-rusty-resonator:
-	decide on whether or not the rusty astral resonator is in the threaded socket;
+	decide on whether or not the rusty astral resonator is in the threaded socket and the clean battery is hooked up;
 
 To decide if mounted-shiny-resonator:
-	decide on whether or not the platform supports the shiny astral resonator;
+	decide on whether or not the platform supports the shiny astral resonator and the power switch is switched on;
 
 Volume 2 - Special Items
 
@@ -68,7 +68,7 @@ A room has a real number called the x-coordinate. A room has a real number calle
 
 Book 1 - Town Hall
 
-the Enigma Lake town hall is a leavable room. It is in ELR. It is unleavable.
+the Enigma Lake town hall is a leavable room. It is in ELR. It is unleavable. It is indoors.
 "The building has been cleared of furniture and other items ahead of the imminent flooding. A permanent fixture, the information desk sits near the front entrance (to the south). Taped to it is what looks to be a work schedule. There is also a back entrance onto the park to the north."
 The snarky remark is "Time travel should be accompanied by more fanfare."
 The x-coordinate of the Enigma Lake town hall is 0. The y-coordinate of the Enigma Lake town hall is 0.
@@ -149,7 +149,30 @@ To explore is a verb.
 Enigma Park is a leavable room. It is north of Enigma Lake town hall. It is unleavable. Enigma Park is in ELR. It is outdoors.
 "[first time]It's probably beautiful during the day, but tonight the deep shadows among the trees seem ominous. [We] [are] watchful and tense as [we] [explore] the park. 
 
-[only]The central focus of the park is a large obelisk inscribed with the names of the town's citizens lost in the Great War. Firs and maples line the paths. The town hall is to the south, and other exits are to the north, west, and east."
+[only]The central focus of the park is a large obelisk inscribed with the names of the town's citizens lost in the Great War. Firs and maples line the paths. The town hall is to the south, and other exits are to the north, west, and east[park beam description]."
+
+To say park beam description:
+	beam description, in the park;
+
+To beam description, in the park:
+	let bc be beam count;
+	if bc > 0:
+		let sources be a list of texts;
+		if mounted-shiny-resonator:
+			add "the broadcast tower" to sources;
+		if mounted-rusty-resonator:
+			add "Henry's Hot Skillet" to sources;
+		if mounted-makeshift-resonator:
+			add "the steeple" to sources;
+		let source string be the substituted form of "[sources]";
+		if in the park:
+			say ".[paragraph break]Bright beams of light shoot from [source string], striking the obelisk. The crystal is glowing [crystal glow]";
+		otherwise:
+			say "Bright beams of light shoot from [source string], striking the obelisk in the park. The crystal is glowing [crystal glow].";
+
+Every turn when beam count > 0 and the location is outdoors and the location is in ELR and the location is not Enigma Park:
+	beam description;
+
 The snarky remark of Enigma Park is "It's not Central Park, but it's not bad."
 The x-coordinate of Enigma Park is 0. The y-coordinate of Enigma Park is 1.
 
@@ -284,7 +307,7 @@ The snarky remark of the shack facade is "I wonder if anyone's home."
 
 Book 9 - Shack
 
-a dirty shack is a leavable room. It has egress east. It is west of Solvay-Road-by-the-lake. It is always-indefinite. It is in ELR. "Someone lives here, though not at all luxuriously. Plates are stacked up by the sink, and there's a pile of used paper coffee cups in the corner. The whole place stinks of cat."
+a dirty shack is a leavable room. It has egress east. It is west of Solvay-Road-by-the-lake. It is always-indefinite. It is in ELR. It is indoors. "Someone lives here, though not at all luxuriously. Plates are stacked up by the sink, and there's a pile of used paper coffee cups in the corner. The whole place stinks of cat."
 The snarky remark of the dirty shack is "I'm not sure I want to know what's in the sink."
 The x-coordinate of the dirty shack is -3. The y-coordinate of the dirty shack is 2.
 
@@ -429,7 +452,8 @@ The x-coordinate of Radio Station WGXC is 2. The y-coordinate of Radio Station W
 
 Book 12 - Radio Station Roof
 
-The radio station roof is a leavable room. It is above Radio Station WGXC. It has egress down. It is in ELR. "[We] can see the obelisk in the park clearly from here. The broadcast tower[if the power switch is switched on], humming loudly,[end if] rises many feet above [us]. A metal cabinet is attached to the foot of the tower[if the metal cabinet is locked], held shut by a padlock[otherwise if the metal cabinet is closed], closed[otherwise], hanging open. Inside it is a power switch[end if].[if mounted-shiny-resonator] [A shiny astral resonator] is mounted on a platform in the tower, and a beam of light shoots out of it, striking the obelisk in the park. The crystal is glowing [crystal glow].[end if]".
+The radio station roof is a leavable room. It is above Radio Station WGXC. It has egress down. It is in ELR. It is outdoors.
+"[We] can see the obelisk in the park clearly from here. The broadcast tower[if the power switch is switched on], humming loudly,[end if] rises many feet above [us]. A metal cabinet is attached to the foot of the tower[if the metal cabinet is locked], held shut by a padlock[otherwise if the metal cabinet is closed], closed[otherwise], hanging open. Inside it is a power switch[end if].[if mounted-shiny-resonator] [A shiny astral resonator] is mounted on a platform in the tower, and a beam of light shoots out of it, striking the obelisk in the park. The crystal is glowing [crystal glow].[end if]".
 The preposition is "on".
 The snarky remark of the radio station roof is "I'm not afraid of heights. I'm afraid of falling from heights."
 The x-coordinate of the radio station roof is 2. The y-coordinate of the radio station roof is -2.
@@ -497,7 +521,7 @@ After switching on the power switch:
 		say "Faraji switches the power switch on. The broadcast tower begins to hum loudly.";
 
 After switching off the power switch:
-	if mounted-shiny-resonator:
+	if the shiny astral resonator is on the platform:
 		say "Faraji switches the power switch off. The broadcast tower's hum dies away, and the beam of light fades from the obelisk. [if the beam count is 0]The crystal is no longer glowing[otherwise]The crystal is still glowing [crystal glow][end if].";	
 	otherwise:
 		say "Faraji switches the power switch off. The broadcast tower's hum dies away.";
@@ -511,13 +535,13 @@ Check putting something on the platform:
 	if the platform supports something that is not the noun:
 		say "The platform is already occupied." instead;
 
-Instead of examining the platform when mounted-shiny-resonator:
+Instead of examining the platform when the shiny astral resonator is on the platform:
 	if the power switch is switched on:
 		say "[A shiny astral resonator] is mounted on the platform, and a beam of light shoots out of it, striking the obelisk in the park. The crystal is glowing [crystal glow].";
 	otherwise:
 		say "[A shiny astral resonator] is mounted on the platform.";
 
-Instead of examining the platform when not mounted-shiny-resonator:
+Instead of examining the platform when the shiny astral resonator is not on the platform:
 	say "The platform is a small, square area formed by the inward-bent bars of the broadcast tower. It's just large enough to hold a small object. There are two rings set into the back of the platform, allowing something to be attached there.";
 
 The snarky remark of the platform is "Curiouser and curiouser."
@@ -607,7 +631,7 @@ Instead of examining the radio-obelisk-facade:
 
 Book 13 - Broadcast Booth
 
-The broadcast booth is south of Radio Station WGXC. It is in ELR. "The broadcast booth is a small room with a window looking out into the rest of the station. A microphone is set up on a stand, and a soundboard is set into the wall."
+The broadcast booth is south of Radio Station WGXC. It is in ELR. It is indoors. "The broadcast booth is a small room with a window looking out into the rest of the station. A microphone is set up on a stand, and a soundboard is set into the wall."
 The snarky remark of the broadcast booth is "I wonder if I can get a request in."
 The x-coordinate of the broadcast booth is 2. The y-coordinate of the broadcast booth is -3.
 
@@ -652,7 +676,7 @@ The snarky remark of the church facade is "The Utilitarians are the ones who bel
 
 Book 16 - First Utilitarian Church of Enigma Lake
 
-The First Utilitarian Church of Enigma Lake is a leavable room. It has egress west. It is east of Lake Street by the Park. It is in ELR. "The interior is dimly lit by the stained glass windows, and the pews are arranged in neat rows facing the pulpit. A standard electrical outlet is set into the wall."
+The First Utilitarian Church of Enigma Lake is a leavable room. It has egress west. It is east of Lake Street by the Park. It is in ELR. It is indoors. "The interior is dimly lit by the stained glass windows, and the pews are arranged in neat rows facing the pulpit. A standard electrical outlet is set into the wall."
 The snarky remark of the First Utilitarian Church of Enigma Lake is "Where's the gift shop?"
 The x-coordinate of the First Utilitarian Church of Enigma Lake is 2. The y-coordinate of the First Utilitarian Church of Enigma Lake is 1.
 
@@ -1001,7 +1025,7 @@ After unplugging the extension cord:
 
 Book 17 - Vestry
 
-The vestry is a leavable room. It is east of First Utilitarian Church. It has egress west. It is in ELR. "It's a small room, with a door leading to the church proper to the west. A lovely tapestry hangs on the wall[if the tapestry is pushed aside]. It is pushed aside, revealing a circuit breaker box[end if]."
+The vestry is a leavable room. It is east of First Utilitarian Church. It has egress west. It is in ELR. It is indoors. "It's a small room, with a door leading to the church proper to the west. A lovely tapestry hangs on the wall[if the tapestry is pushed aside]. It is pushed aside, revealing a circuit breaker box[end if]."
 The snarky remark of the vestry is "Seen one vestry, seen [']em all."
 The x-coordinate of the vestry is 3. The y-coordinate of the vestry is 1.
 
@@ -1031,7 +1055,7 @@ To say makeshift resonator state:
 	otherwise:
 		say "[A makeshift astral resonator] is mounted on the tripod";
 
-the steeple is above the First Utilitarian Church of Enigma Lake. It is in ELR. 
+the steeple is above the First Utilitarian Church of Enigma Lake. It is in ELR. It is outdoors.
 "From here, [we] can see the obelisk in the park clearly. Someone has set up a tripod here. [if the content of the tripod is nothing]Its mount is empty[otherwise if the content of the tripod is the telescope][A telescope] is mounted on it[otherwise][makeshift resonator state][end if]."
 The snarky remark of the steeple is "I wonder if I can see my house from here."
 The x-coordinate of the steeple is 2. The y-coordinate of the steeple is 1.
@@ -1045,7 +1069,7 @@ To decide what number is the beam count:
 	let count be 0;
 	if mounted-rusty-resonator:
 		increase count by 1;
-	if mounted-shiny-resonator and the power switch is switched on:
+	if mounted-shiny-resonator:
 		increase count by 1;
 	if mounted-makeshift-resonator:
 		increase count by 1;
@@ -1304,7 +1328,7 @@ The snarky remark of the workshed-facade is "Groovy."
 
 Book 21 - Workshed
 
-the workshed is a leavable room. It has egress northwest. It is in ELR. "It is a small, weathered building, with a single door and no windows, and a creaky wooden floor. The interior is dimly lit by a single light bulb hanging from the ceiling. [equipment cabinet state] cabinet is in the corner. [rusty metal door state], rusty metal door leads out of the shed. [if the trapdoor is revealed]A trapdoor is in the floor, [trapdoor state].[end if]".
+the workshed is a leavable room. It has egress northwest. It is in ELR. It is indoors. "It is a small, weathered building, with a single door and no windows, and a creaky wooden floor. The interior is dimly lit by a single light bulb hanging from the ceiling. [equipment cabinet state] cabinet is in the corner. [rusty metal door state], rusty metal door leads out of the shed. [if the trapdoor is revealed]A trapdoor is in the floor, [trapdoor state].[end if]".
 The snarky remark of the workshed is "I wonder if there's a chainsaw in here."
 
 The x-coordinate of the workshed is 0.5. The y-coordinate of the workshed is 1.5.
@@ -1368,14 +1392,14 @@ Instead of examining the floor when the location is the workshed and the trapdoo
 
 Book 22 - Hidden cave
 
-a hidden cave is a room. It is in ELR. It is always-indefinite. It is dark.
+a hidden cave is a room. It is in ELR. It is indoors. It is always-indefinite. It is dark.
 "The cave is dark and damp, with a low ceiling[if portal opened is true]. From the passage to the south comes enough light to see[otherwise]. A passage leads to the south[end if]. A set of rickety stairs leads up to the workshed above."
 
 The snarky remark of the hidden cave is "Perhaps there's something down here that will help me answer the phone."
 
 Book 23 - Portal room
 
-a circular chamber is south of hidden cave. It is in ELR. The circular chamber is dark.
+a circular chamber is south of hidden cave. It is in ELR. It is indoors. The circular chamber is dark.
 "The chamber is circular, with a low ceiling. The walls are rough-hewn stone, and the floor is packed earth. A passage leads to the north."
 
 The snarky remark of the circular chamber is "I hear caves tend to have thieves, trolls, and cyclopses. I hope this is not actually the case."
@@ -1541,7 +1565,7 @@ To stop is a verb.
 The description is "A book with a plain cover, titled [italic type]The Book of Weird Names[roman type]. No author is listed. [paragraph break]Flipping through the book, it appears that each page consists of a name, a drawing of a strange creature, and below that a word in a strange, unknown language. The text is written in a spidery, crabbed hand, and is difficult to read.[paragraph break][We] [stop] on one that reads [italic type][creature name][roman type] above a drawing of [strange creature], below which is written [italic type][incantation].[roman type]";
 
 The first name parts is a list of text that varies. The second name parts is a list of text that varies. The third name parts is a list of text that varies. The creature types is a list of text that varies. The body parts is a list of text that varies.
-The first name parts are {"Dag", "Gor", "Zor", "Zag", "Zog", "Zig", "Zag", "Cth", "N'g", "N'k", "Ad", "Bll", "Cr", "As", "Kl"}.
+The first name parts are {"Dag", "Gor", "Zor", "Zag", "Zog", "Zig", "Zag", "Cth", "N't", "N'k", "Ad", "Bll", "Cr", "As", "Kl"}.
 The second name parts are {"ag", "or", "ar", "og", "ig", "ag", "th", "gth", "kth", "uth", "oth", "thuk", "shaka", "fats", "steen", "don" }.
 The third name parts are {"Distressing", "Unsettling", "Impertinent", "Uninhibited", "Pugnacious", "Unspeakable", "Unpronounceable", "Unmentionable", "Smelly", "Unpleasant", "Gross", "Horrible", "Squeamish", "Unsavory", "Unpalatable", "Wistful", "Abnormal", "Unnatural", "Unusual", "Uncommon", "Unconventional", "Unorthodox", "Unprecedented", "Unheard of", "Unseen", "Hidden", "Ornery", "Unruly", "Unmanageable", "Uncontrollable", "Unpredictable", "Unreliable", "Untrustworthy", "Unfaithful", "Untrue", "Unreal", "Unrealistic", "Unreasonable", "Unjust", "Unfair", "Unkind", "Unfriendly", "Unpleasant", "Uncomfortable", "Unhappy", "Unfortunate", "Unlucky", "Unsuccessful", "Frustrating", "Unsatisfactory", "Unsatisfying", "Unfulfilling", "Unrewarding", "Ungrateful", "Unappreciative", "Unthankful", "Arrogant", "Bashful", "Boastful", "Disrespectful", "Dishonest", "Disloyal", "Disobedient", "Disorderly", "Disorganized", "Cantankerous", "Contrary", "Cranky", "Cross", "Crabby", "Crusty", "Crotchety", "Grumpy", "Irritable", "Peevish", "Perverse", "Petulant", "Quarrelsome", "Short-tempered", "Sour", "Sullen", "Surly", "Testy", "Tetchy", "Touchy", "Uncooperative", "Unyielding", "Unaccommodating", "Uncompromising", "Unforgiving", "Unrelenting", "Unsympathetic", "Unemotional", "Unfeeling", "Unresponsive", "Uncommunicative", "Unexpressive", "Unenthusiastic", "Uninterested", "Unconcerned", "Uninvolved", "Uncommitted", "Unattached", "Unconnected", "Tactless", "Thoughtless", "Insensitive", "Inconsiderate", "Selfish", "Self-centered", "Self-absorbed", "Self-indulgent", "Self-serving", "Self-seeking", "Conceited", "Vain", "Proud", "Haughty", "Egotistical", "Egocentric", "Egoistic", "Pointless", "Purposeless", "Meaningless", "Worthless", "Valueless", "Insignificant", "Trivial", "Unimportant", "Negligible", "Paltry", "Piddling", "Piffling", "Puny", "Miserable", "Wretched", "Pathetic" }
 
@@ -1603,7 +1627,7 @@ The Horton astral tunnel is forthsouth of Horton Family House Parlor. It is priv
 
 The snarky remark of the Horton astral tunnel is "A creepy old house with a creepy doll-fly, and now a creepy astral tunnel. I'm sensing a theme."
 
-Fire Station 1 is backeast of the Horton astral tunnel. It is in ELR.
+Fire Station 1 is backeast of the Horton astral tunnel. It is in ELR. It is indoors.
 
 Book 27 - Horton Graveyard
 
@@ -1778,7 +1802,7 @@ Instead of closing the garage door when the garage door is open:
 
 Book 29 - Reading Room
 
-The Reading Room is west of Main at Solvay. It is a leavable room. It is in ELR. The egress is east. The description is "The reading room is a small, cozy space, with a number of comfortable chairs and a few tables. A sales counter is at the back of the room. Bookshelves lead back into the depths of the store. A narrow staircase leads down."
+The Reading Room is west of Main at Solvay. It is a leavable room. It is in ELR. It is indoors. The egress is east. The description is "The reading room is a small, cozy space, with a number of comfortable chairs and a few tables. A sales counter is at the back of the room. Bookshelves lead back into the depths of the store. A narrow staircase leads down."
 
 The snarky remark of the Reading Room is "Perhaps there is a book here on how to answer a ringing phone."
 
@@ -1823,7 +1847,7 @@ After examining Astral Secrets for the first time:
 
 Book 30 - Reading Room Basement
 
-The Bookstore Basement is below the Reading Room. It is in ELR. The description is "The basement is dark and musty, with a number of shelves and boxes of books. The walls are made of old, crumbling brick. There is a faint breeze. A narrow staircase leads up[if the bricked-up-hole is revealed]. There is a ragged hole in the north wall, leading into a dark space[end if]."
+The Bookstore Basement is below the Reading Room. It is in ELR. It is indoors. The description is "The basement is dark and musty, with a number of shelves and boxes of books. The walls are made of old, crumbling brick. There is a faint breeze. A narrow staircase leads up[if the bricked-up-hole is revealed]. There is a ragged hole in the north wall, leading into a dark space[end if]."
 
 The snarky remark of the Bookstore Basement is "Why did I come down here? What did I expect to find? The best you can say of this place is that the stairs also go up."
 
@@ -1868,13 +1892,13 @@ The snarky remark of sewer tunnel 1 is "Wait, am I back in Swamp Park?"
 
 The x-coordinate of sewer tunnel 1 is -2. The y-coordinate of sewer tunnel 1 is 0.5.
 
-a sewer tunnel 2 is east of sewer tunnel 1. It is in ELR. It is privately-named. It is always-indefinite. The printed name is "sewer tunnel". Understand "sewer/tunnel" as sewer tunnel 2.  "The tunnel is dark and damp, with a low ceiling. From here, it leads east and west."
+a sewer tunnel 2 is east of sewer tunnel 1. It is in ELR. It is indoors. It is privately-named. It is always-indefinite. The printed name is "sewer tunnel". Understand "sewer/tunnel" as sewer tunnel 2.  "The tunnel is dark and damp, with a low ceiling. From here, it leads east and west."
 
 The snarky remark of sewer tunnel 2 is "Actually it smells better than Swamp Park."
 
 The x-coordinate of sewer tunnel 2 is 0. The y-coordinate of sewer tunnel 2 is 0.5.
 
-a sewer tunnel 3 is east of sewer tunnel 2. It is in ELR. It is privately-named. It is always-indefinite. The printed name is "sewer tunnel". Understand "sewer/tunnel" as sewer tunnel 3. "The tunnel is dark and damp, with a low ceiling. From here, it leads west, and turns into a small crawl to the east. There is a metal door with a lock to the north."
+a sewer tunnel 3 is east of sewer tunnel 2. It is in ELR. It is indoors. It is privately-named. It is always-indefinite. The printed name is "sewer tunnel". Understand "sewer/tunnel" as sewer tunnel 3. "The tunnel is dark and damp, with a low ceiling. From here, it leads west, and turns into a small crawl to the east. There is a metal door with a lock to the north."
 
 The snarky remark of sewer tunnel 3 is "This town has the best tourist attractions."
 
@@ -1891,7 +1915,7 @@ The snarky remark of the gymnasium basement door is "Why is there a door here?"
 
 Book 32 - Fresnel's Music
 
-Fresnel's Music is southwest of Main at Solvay. It is in ELR. "The music store, like most of the town, is empty of all but a few items of little value."
+Fresnel's Music is southwest of Main at Solvay. It is in ELR. It is indoors. "The music store, like most of the town, is empty of all but a few items of little value."
 
 The snarky remark of Fresnel's Music is "It's like John Cage's 4[']33' in store form."
 
@@ -1902,7 +1926,7 @@ The snarky remark is "You know what's fun? Tapping a tuning fork and holding it 
 
 Book 33 - Henry's Hot Skillet
 
-Henry's Hot Skillet is a room. It is in ELR.
+Henry's Hot Skillet is a room. It is in ELR. It is indoors.
 The description is "This is the epitome of the homey small-town diner of times gone by, except for the lack of all furniture, cooking implements, food, decor, and so on. There is a staircase leading up. A pair of insulated wires hangs from the ceiling at one end of the counter[if the clean battery is hooked up]. The wires are attached to a battery resting on the counter[end if]."
 
 The snarky remark of Henry's Hot Skillet is "It's a diner without any food or furniture. So, just a room, really."
@@ -1956,7 +1980,7 @@ Check untying the clean battery from the wires:
 
 Book 34 - Henry's Roof
 
-Henry's Roof is above Henry's Hot Skillet. It is in ELR. The description is "From here one can see much of the town, including a clear view of the obelisk in Enigma Park. There is a large TV aerial jutting from the roof here." The preposition is "on".
+Henry's Roof is above Henry's Hot Skillet. It is in ELR. It is outdoors. The description is "From here one can see much of the town, including a clear view of the obelisk in Enigma Park. There is a large TV aerial jutting from the roof here." The preposition is "on".
 
 The snarky remark of Henry's Roof is "Enigma Lake is truly... well, there."
 
@@ -2007,7 +2031,7 @@ Instead of examining the Obelisk-from-Henry's-Roof:
 
 Book 35 - Rolle's Department Store
 
-Rolle's Department Store is south of Main Street 200 Block. It is in ELR. It is a leavable room. The egress is north. 
+Rolle's Department Store is south of Main Street 200 Block. It is in ELR. It is indoors. It is a leavable room. The egress is north. 
 The description is "Once, town department stores like this were a constant of American life. Sadly, this one is empty of everything save a number of sale posters and its gleaming floor."
 The snarky remark of Rolle's Department Store is "I guess the sale is over."
 
@@ -2160,7 +2184,7 @@ Check lifting weights:
 
 Book 37 - Gym Basement
 
-The gym basement is below the public gymnasium. It is in ELR. "This area is dominated by large banks of lockers."
+The gym basement is below the public gymnasium. It is in ELR. It is indoors. "This area is dominated by large banks of lockers."
 The snarky remark of the gym basement is "I'm trying to remember my combination."
 
 The x-coordinate of the gym basement is 2. The y-coordinate of the gym basement is 0.
@@ -2354,7 +2378,7 @@ To decide what text is the heading from (R1 - a room) to (R2 - a room):
 	decide on dir;
 
 
-Every turn when the group of lizard people is not in the location:
+Every turn when the group of lizard people is not in the location and the location is in ELR:
 	if the group of lizard people is in a room (called current space):
 		let seen at first be false;
 		if the location overlooks the current space:
@@ -2552,6 +2576,18 @@ test build with "purloin tuning fork/purloin spotlight/lens/purloin wooden frame
 
 test power with "gonear pulpit/purloin makeshift astral resonator/purloin cord/e/move tapestry/flip switch/w";
 
+setting the resonators is an action out of world. Understand "set the resonators" as setting the resonators.
+
+Carry out setting the resonators:
+	now the platform supports the shiny astral resonator;
+	now the power switch is switched on;
+	now the rusty astral resonator is in the threaded socket;
+	now the clean battery is hooked up;
+	now the makeshift astral resonator is plugged into the cord;
+	now the extension cord is plugged into the electrical outlet;
+	now the circuit breaker is switched on;
+	now the content of the tripod is the makeshift astral resonator;
+
 opening the portal is an action applying to nothing. Understand "open portal" as opening the portal.
 
 Carry out opening the portal:
@@ -2560,5 +2596,16 @@ Carry out opening the portal:
 query-naming is an action applying to nothing. Understand "is hathgar named" as query-naming.
 Carry out query-naming:
 	say whether or not the doll-fly is named;
+
+banishing is an action out of world. Understand "banish" as banishing.
+
+Carry out banishing:
+	now the shiny astral resonator is carried by the player;
+	now the group of lizard people is nowhere;
+
+Before answering the doll-fly that when DEBUG is true:
+	say "The doll-fly has been banished.";
+	now the doll-fly is nowhere;
+	stop the action;
 
 Enigma Lake ends here.
