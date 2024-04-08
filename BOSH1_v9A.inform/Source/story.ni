@@ -785,6 +785,12 @@ Carry out taking apart the desk:
 	now the player carries the little grey key;
 	now the player carries the blue flipphone;
 
+Instead of unlocking biff's desk with the hex wrench:
+	try taking apart the desk biff's desk;
+
+Instead of unlocking biff's desk's drawer with the hex wrench:
+	try taking apart the desk biff's desk;
+
 Report taking apart the desk:
 	say "[We] [unscrew] the hex screws and [remove] the drawer. Inside, [we] find a little grey key and a blue flipphone. [We] [put] the drawer back together and [pocket] the key and the phone, being careful to leave the drawer unlocked.";
 
