@@ -410,6 +410,8 @@ After going to a room:
 			if P is not the player and P is not an animal:
 				postpone saying hello to P;
 				continue the activity; 
+	otherwise:
+		say "WARNING: The current interlocutor is not nothing. It is [the current interlocutor].";
 	continue the activity;
 	
 The postponed action is an action that varies.
@@ -985,7 +987,7 @@ It is unsnarkable.
 
 the BOSH office hallway is in BOSH HQ. The printed name is "hallway". "[Our] office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east. [door descriptions]."
 
-The snarky remark is "The carpet really makes the look, don't you think?"
+The snarky remark is "The inductrial carpet really makes the look, don't you think?"
 
 To say door descriptions:
 	let opendoors be a list of doors;
@@ -2079,7 +2081,7 @@ test win with "w/w/s/open desk/n/e/ask about key/ask about computer/look behind 
 
 test no-drive with "w/w/s/open desk/n/e/ask about key/ask about computer/look behind desk/w/s/x desk/open white door/n/e/ask about wrench/ask about backdoor/take boxes/w/s/z/w/z/z/open white door/knock on white door/e/z/n/e/x vent/ask for a screwdriver/n/e/n/e/ask for screwdriver/w/s/sw/ask for a screwdriver/ask about the owner/ne/w/w/w/x lenses/ask to borrow pair/wear them/e/e/take boxes/w/s/w/back/n/f/d/n/s/turn off light/wear glasses/f/fn/push truck bs/push truck back/move crates/move crates with truck/x washing machine/open it/enter it/f/f/f/f/f/fn/fw/fn/fn/fw/w/fn/w/take compass/x compass/s/s/s/s/s/s/s/e/e/e/e/e/e/e/e/b/b/b/b/b/b/b/b/b/d/w/w".
 
-test part1 with "w/look behind desk/x computer/x vent/e/sw/ask for ascrewdriver/ask about owner/ne/w/w/w/x lenses/ask to borrow the lenses/e/e/z/w/s/w/wear lenses/b/n/f/open desk/take key/w/e/unlock door with key/w/d/s/turn off light/wear lens/f/fn/push truck bs/push truck b/move crates with truck/open machine/enter washing”.
+test part1 with "w/look behind desk/x computer/x vent/e/sw/ask for screwdriver/ask about owner/ne/w/w/w/x lenses/ask to borrow the lenses/e/e/z/z/w/s/w/wear lenses/b/n/f/open desk/take key/w/e/unlock door with key/w/d/s/turn off light/wear lens/f/fn/push truck bs/push truck b/move crates with truck/open machine/enter washing".
 
 
 test part2 with "f/f/f/f/f/fn/fw/fn/fn/fw/w/fn/w/take compass/x 
@@ -2119,6 +2121,10 @@ Carry out lensing:
 	now the player wears the pair of astral lenses;
 	try looking.
 
+speaker querying is an action out of world. Understand "speaker" as speaker querying.
+Carry out speaker querying:
+	say "current interlocutor is [current interlocutor]."
+
 Jumping to part 2 is an action applying to nothing. Understand "plane" as jumping to part 2.
 
 Carry out jumping to part 2:
@@ -2157,7 +2163,7 @@ Carry out jumping to part 4:
 	now the player carries the mystic compass;
 	now the player carries the recall button;
 	now the thumb drive is nowhere;
-	now Tribes of New York is nowhere;
+	now Tribes of New York is carried by the player;
 	now the handtruck is in the back basement;
 	now the broken washing machine is open;
 	now the broken washing machine is in the back basement;

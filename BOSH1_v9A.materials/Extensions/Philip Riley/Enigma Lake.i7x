@@ -73,7 +73,7 @@ the Enigma Lake town hall is a leavable room. It is in ELR. It is unleavable.
 The snarky remark is "Time travel should be accompanied by more fanfare."
 The x-coordinate of the Enigma Lake town hall is 0. The y-coordinate of the Enigma Lake town hall is 0.
 
-The information desk is scenery in the Enigma Lake town hall. Understand "info/help/front" as information desk. "A work schedule is taped to the desk."
+The information desk is scenery in the Enigma Lake town hall. Understand "info desk", "help desk", "front desk" as information desk. "A work schedule is taped to the desk."
 The snarky remark of the information desk is "No one's ever at the information desk when you need them."
 
 The bell is on the information desk. The description is "A small brass bell, used to summon the attention of the town hall staff."
@@ -299,6 +299,9 @@ Rule for writing a paragraph about the mangy cat:
 	say "[one of]A mangy orange cat peeks out from under the bed[or]A stripey orange cat sits in a corner of the room, grooming itself[or]An orange cat stretches out on the bed[purely at random].";
 	  
 The snarky remark of the mangy cat is "I don't care how mangy a cat is, I'm going to pet it."
+
+Instead of taking the mangy cat:
+	say "The cat hisses and scratches [us].";
 	
 Petting is an action applying to one thing. Understand "pet [something]" as petting. Understand the command "pat", "stroke", "scratch" as "pet".
 
@@ -400,11 +403,11 @@ After discussing Help-me:
 Instead of giving the cup of coffee to Hutz when Hutz-needs-coffee is true:
 	if the hotness of the cup of coffee < 25:
 		say "Hutz takes the coffee and sniffs it. 'Cold,' he says, even though the stuff is still plenty hot. 'I can't drink this.' He tosses the coffee into the pile of used cups.";
-		remove the cup of coffee from play;
+		now the cup of coffee is nowhere;
 	otherwise:
 		say "Hutz takes the coffee and drinks it down in one gulp. 'Ah, that's the stuff,' he says. 'Now, what can I do for you?'";
 		now Hutz-needs-coffee is false;
-		remove the cup of coffee from play;
+		now the cup of coffee is nowhere;
 		queue Hutz with Now-can-you-help-me;
 
 Book 10 - Main at Lake
@@ -669,10 +672,10 @@ The snarky remark of the stained glass windows is "I like the underlying message
 The pews are scenery in First Utilitarian Church of Enigma Lake. "The pews are arranged in neat rows, facing the pulpit."
 The snarky remark of the pews is "When will I find a church with sumptuous, overstuffed chairs?"
 
-The pulpit is scenery in First Utilitarian Church of Enigma Lake. "The pulpit is a simple wooden structure with a lectern."
+The pulpit is scenery in First Utilitarian Church of Enigma Lake. "The pulpit is a simple wooden structure with a lectern which holds [italic type]The Book of Utilitarianism[roman type]."
 The snarky remark of the pulpit is "Hold on, I have to give a sermon. 'And the Lord was like, [']I will flood the earth['], and all the people were like, [']Oh no, we're all wet.[']'"
 
-The lectern is scenery in First Utilitarian Church of Enigma Lake. "The lectern is a simple wooden structure, with a slanted top for holding a book." It is unsnarkable.
+The lectern is scenery in First Utilitarian Church of Enigma Lake. "The lectern is a simple wooden structure, with a slanted top that holds [italic type]The Book of Utilitarianism[roman type]." It is unsnarkable.
 
 To read is a verb.
 
@@ -680,7 +683,7 @@ The Book of Utilitarianism is scenery on the lectern. It is proper-named. The pr
 
 The cursed word is text that varies. The cursed word is "".
 
-Instead of examining the Book of Utilitarianism:
+Instead of examining the Book of Utilitarianism when the doll-fly is not in the location:
 	let just set the word be false;
 	if the cursed word is "":
 		now just set the word is true;
@@ -696,19 +699,38 @@ Instead of examining the Book of Utilitarianism:
 		otherwise:
 			say "The text is the [italic type]Book of Utilitarianism[roman type]. [We] [open] to a page at random and [read] the text:[paragraph break][one of]However, the Lord said to the lizard people, 'I am the Lord of the humans, and I -- oh, and the aliens -- and I will smite you with great vengeance and furious anger and the like.'[or]By the by, Gorm came upon the town of Armagast, and he saw that it was good, and he said, 'I shall build a church here.' And the Lord said, 'No, don't do that, it's a bad idea.' And Gorm said, 'But Lord, I have already started.' And the Lord said, 'Well, okay, but don't say I didn't warn you.'[or]But Gorm's wife was treacherous, and she lay with lizard people, and she bore a son, and the Lord said, 'I'm not going to smite you, but I'm not going to be happy about it.'[or]When Gorm learned of his wife's doings, he rent his garments and wept, and the Lord said, 'Keep it together, man.'[or]And the land was filled with the iniquities of the lizard people, and the Lord said, 'I'm not going to clean that up.'[or]The host of the lizard people sacked the now rather prosperous town of Armagast, and the Lord said, 'I told you so.'[or]And the Lord said, ' [']Tis a far, far better thing that I do, than I have ever done; [']tis a far, far better rest that I go to than I have ever known.' And the lizard people said, 'That's from A Tale of Two Cities.'[or]And the Lord was attending his weekly reading circle, when he had an idea. 'I shall make a world,' he said, 'and I shall call it Earth.' And the lizard people said, 'That's a terrible name.'[or]And lo, the lizard people rebelled against the Lord, and the Lord said, 'I'm not going to put up with that.'[or]And in the town of Gabblehouse was born an infant to a woman named Gorma, and the Lord said, 'That's a terrible name.'[or]And the Lord said, 'I shall rain down upon thee with great vengeance and furious anger, and the lizard people said, 'We've heard that before.'[then at random]"
 
-Book 16.5 - Hathgar the Pitiful
+Book 16.5 - The Doll-Fly
+
+Chapter 1 - Figuring its name
+
+The first names is a list of text that varies. 
+The first names are { "Hathgar", "Pezzex", "Xapnix", "Zorax", "Grover", "Hobnop", "Bazell", "Hoozum", "Gorblax" }.
+
+To decide what text is the doll-fly-name:
+	sort the first names in random order;
+	sort the third name parts in random order;
+	now the secret first name of the doll-fly is entry 1 of the first names;
+	now the secret last name of the doll-fly is entry 1 of the third name parts;
+	decide on the substituted form of "[entry 1 of the first names] the [entry 1 of the third name parts]".
+
+Chapter 2 - All the rest of it
 
 The doll-fly is an animal. The description is "It is a flying doll with the head of a giant fly." 
+The doll-fly has a text called the secret name. The doll-fly has a text called the secret first name. The doll-fly has a text called the secret last name.  The doll-fly has text called the incantation.
 The snarky remark of the doll-fly is "I'm not sure what's worse, the doll or the fly." 
 The doll-fly can be named or unnamed. The doll-fly is unnamed.
 Understand "doll/fly" as the doll-fly.
-Understand "Hathgar the Pitiful", "Hathgar", "Pitiful" as the doll-fly when the doll-fly is named.
-The printed name of the doll-fly is "[if the doll-fly is named]Hathgar the Pitiful[otherwise]doll-fly[end if]".
+[ Understand "Hathgar the Pitiful", "Hathgar", "Pitiful" as the doll-fly when the doll-fly is named. ]
+Understand the secret name property as describing the doll-fly when the doll-fly is named.
+Understand the secret first name property as describing the doll-fly when the doll-fly is named.
+Understand the secret last name property as describing the doll-fly when the doll-fly is named.
+The printed name of the doll-fly is "[if the doll-fly is named][secret name of the doll-fly][otherwise]doll-fly[end if]".
 
 Before doing something when the doll-fly is not named and the location is First Utilitarian Church of Enigma Lake and the doll-fly is in the location:
-	say "The doll-fly shrieks 'Begone! Or I, Hathgar the Pitiful, shall smite thee!'";
+	now the secret name of the doll-fly is the doll-fly-name;
 	now the doll-fly is named;
 	now the doll-fly is proper-named;
+	say "The doll-fly shrieks 'Begone! Or I, [doll-fly], shall smite thee!'";
 
 Instead of going east when the location is the First Utilitarian Church of Enigma Lake and the doll-fly is in the location:
 	say "[The doll-fly] prevents [us] from reaching the east exit."
@@ -729,8 +751,8 @@ Instead of saying hello to the doll-fly:
 	say "[The doll-fly] buzzes around, but doesn't respond.";
 
 Before answering the doll-fly that something:
-	if the topic understood in lower case is "bara ba jagal":
-		say "Upon hearing the words 'bara ba jagal', [the doll-fly] wails a high-pitched, mournful sound, and then winks out of existence.";
+	if the topic understood in lower case is the incantation of the doll-fly in lower case:
+		say "Upon hearing the incantation '[incantation of the doll-fly]', [the doll-fly] wails a high-pitched, mournful sound, and then winks out of existence.";
 		now the doll-fly is off-stage;
 		stop the action;
 	otherwise:
@@ -740,7 +762,22 @@ Before answering the doll-fly that something:
 Instead of doing something other than taking or attacking to the doll-fly when action requires a touchable noun:
 	say "[We] can't get close enough to [the doll-fly] to touch it.";
 
-Incanting is an action applying to nothing. Understand "bara ba jagal" as incanting.
+Instead of doing something when the doll-fly is in the location:
+	if the current action is going west:
+		continue the action;
+	if the current action is answering the doll-fly that something:
+		continue the action;
+	[ if the current action is incanting:
+		continue the action; ]
+	if the current action is examining the doll-fly:
+		continue the action;
+	say "[The doll-fly] prevents Faraji from doing that." instead;
+
+After reading a command:
+	if the player's command in lower case is the incantation of the doll-fly in lower case:
+		change the text of the player's command to "say [the incantation of the doll-fly]"; 
+
+[ Incanting is an action applying to nothing. Understand "bara ba jagal" as incanting.
 
 Check incanting:
 	if the location is not the First Utilitarian Church of Enigma Lake:
@@ -753,7 +790,7 @@ Check incanting:
 			say "Cheater." instead;
 	otherwise:
 		try answering the doll-fly that "bara ba jagal";
-		stop the action;
+		stop the action; ]
 
 Book 17 - Extension Cord
 
@@ -1103,11 +1140,16 @@ Carry out mounting the makeshift astral resonator on the tripod:
 	now the makeshift astral resonator is in the tripod;
 
 Report mounting the makeshift astral resonator on the tripod:
-	say "[We] [manage] to make the makeshift astral resonator fit in the tripod's mount";
+	say "[We] [manage] to make the makeshift astral resonator fit in the tripod's mount[if the extension cord accepts the makeshift astral resonator], dropping the extension cord as we do so[end if].";
+	now the extension cord is in the steeple; 
 	if the makeshift astral resonator is powered:
 		say ". The beam of light focuses on the obelisk in the park, striking the crystal adornment at its apex. The crystal is glowing [crystal glow].";
 	otherwise:
 		say ".";
+
+Check taking the extension cord:
+	if the extension cord accepts the makeshift astral resonator and the content of the tripod is the makeshift astral resonator:
+		say "The extension cord is plugged into the makeshift astral resonator. [We] can't take it without unplugging it first." instead;
 
 Instead of inserting something into the tripod:
 	try mounting the noun on the tripod;
@@ -1319,8 +1361,8 @@ Description notes for the dowsing rod:
 Instead of examining the dowsing rod when the location is the workshed and the trapdoor is unrevealed:
 	say "The dowsing rod is vibrating.";
 
-Instead of examining the floor when the location is the workshed and the trapdoor is unrevealed:
-	say "[We] [examine] the floor closely, and discover the faint outlines of a trapdoor[if the player encloses the dowsing rod]. The vibrations cease[end if].";
+Instead of examining the floor when the location is the workshed and the trapdoor is unrevealed and the player encloses the dowsing rod:
+	say "Faraji examines the floor closely, and discovers the faint outlines of a trapdoor[if the player encloses the dowsing rod]. The vibrations cease[end if].";
 	now the trapdoor is revealed;
 
 
@@ -1491,11 +1533,11 @@ The snarky remark of the parlor table is "I wonder if there's a screwdriver unde
 Instead of looking under the parlor table:
 	say "Faraji looks under the table, but there's no screwdriver there.";
 
-The Book of Weird Names is on the parlor table. The printed name is "[italic type]The Book of Weird Names[roman type]". It is proper-named. It is unsnarkable.
+The Book of Weird Names is on the parlor table. The printed name is "[italic type]The Book of Weird Names[roman type]". It is proper-named. It is unsnarkable. Understand "strange-looking/strange/looking" as the Book of Weird Names.
 
 To stop is a verb.
 
-The description is "A book with a plain cover, titled 'The Book of Weird Names.' No author is listed. [paragraph break]Flipping through the book, it appears that each page consists of a name, a drawing of a strange creature, and below that a word in a strange, unknown language. The text is written in a spidery, crabbed hand, and is difficult to read.[paragraph break][We] [stop] on one that reads [italic type][creature name][roman type] above a drawing of [strange creature], below which is written [italic type][incantation].[roman type]";
+The description is "A book with a plain cover, titled [italic type]The Book of Weird Names[roman type]. No author is listed. [paragraph break]Flipping through the book, it appears that each page consists of a name, a drawing of a strange creature, and below that a word in a strange, unknown language. The text is written in a spidery, crabbed hand, and is difficult to read.[paragraph break][We] [stop] on one that reads [italic type][creature name][roman type] above a drawing of [strange creature], below which is written [italic type][incantation].[roman type]";
 
 The first name parts is a list of text that varies. The second name parts is a list of text that varies. The third name parts is a list of text that varies. The creature types is a list of text that varies. The body parts is a list of text that varies.
 The first name parts are {"Dag", "Gor", "Zor", "Zag", "Zog", "Zig", "Zag", "Cth", "N'g", "N'k", "Ad", "Bll", "Cr", "As", "Kl"}.
@@ -1516,6 +1558,9 @@ To say strange creature:
 	sort the body parts in random order;
 	say "a [entry 1 of the creature types] with the [entry 1 of the body parts] of a [entry 2 of the creature types]";
 
+The incantations is a list of texts that varies.
+The incantations are { "bara ba jagal", "fooblitzky", "tuvix", "thelonium", "gravlax", "brobdingnag", "plover", "xvart", "guncho", "flibbertigibbet" }.
+
 To say incantation:
 	sort the first name parts in random order;
 	sort the second name parts in random order;
@@ -1525,10 +1570,14 @@ To say incantation:
 		say "[entry 1 of the first name parts][entry 1 of the second name parts] [entry 2 of the second name parts] [entry 2 of the first name parts][entry 3 of the second name parts][entry 3 of the first name parts in lower case]";
 
 Instead of consulting the book of weird names about something:
-	if the topic understood in lower case is not "hathgar the pitiful":
+	if the doll-fly is not named:
+		say "[we] [look] up '[the topic understood]' in the book, but [find] nothing. Perhaps [we] [are] spelling it wrong.";
+	otherwise if the topic understood in lower case is not the secret name of the doll-fly in lower case:
 		say "[we] [look] up '[the topic understood]' in the book, but [find] nothing. Perhaps [we] [are] spelling it wrong.";
 	otherwise:
-		say "[we] [look] up 'Hathgar the Pitiful' in the book. Below a drawing of a doll with the head of a fly, the incantation 'Bara ba jagal' is written.";
+		sort the incantations in random order;
+		now the incantation of the doll-fly is entry 1 of the incantations;
+		say "[we] [look] up '[secret name of the doll-fly]' in the book. Below a drawing of a doll with the head of a fly, the incantation '[incantation of the doll-fly]' is written.";
 
 Book 25.5 - Horton Family House Second Floor
 
@@ -1569,10 +1618,23 @@ The snarky remark of the shovel is "How interesting. I hope I'll need to dig som
 Some holes are scenery in the Horton graveyard. "The graveyard is riddled with holes where the bodies have been exhumed for the coming flood. One of the holes is substantially larger and deeper than the others."
 The snarky remark of the holes is "'Hole' is a great word, don't you think?"
 
-The large hole is a building facade. It is in Horton Graveyard. Understand "larger/grave" as large hole. "The hole is substantially larger and deeper than the others."
+The large hole is a building facade. It is in Horton Graveyard. Understand "larger/grave" as large hole. "The hole is substantially larger and deeper than the others[if the ladder is in the large grave]. A ladder is set up against the side of the hole[end if]."
 	It fronts a large grave.
 	It is enterable from Horton Graveyard.
 The snarky remark of the large hole is "[if the large grave is not visited]Just the thing to jump into without regard for personal safety[otherwise]Ah, not such a big deal.[end if]"
+
+After deciding the scope of player when the location is the Horton graveyard and the ladder is in the large grave:
+	place the ladder in scope;
+
+A rule for reaching inside the large grave when the ladder is in the large grave and the noun is the ladder:
+	allow access;
+
+Instead of taking the ladder when the location is the Horton graveyard and the ladder is in the large grave:
+	say "Faraji pulls the ladder out of the large grave.";
+
+Instead of examining the ladder when the location is the Horton graveyard and the ladder is in the large grave:
+	say "A ladder is set up against the side of the hole, making it easier to climb in and out of the grave.";
+
 
 Before going to the large grave:
 	if the ladder is in the large grave:
@@ -1729,7 +1791,7 @@ The bookshelves are scenery in the Reading Room. "The bookshelves are filled wit
 To say random book report:
 	sort the booklist in random order;
 	let the random-book be entry 1 of the booklist;
-	say "[italic type][title of the random-book][roman type] by [author of the random-book][line break][genre of the random-book]
+	say "[italic type][title of the random-book][roman type] by [author of the random-book][line break]Genre: [genre of the random-book]
 
 	[blurb of the random-book]";
 
@@ -1741,11 +1803,11 @@ To poke is a verb.
 Instead of searching the bookshelves:
 	say "The bookshelves are filled with a variety of books, from the latest bestsellers to obscure, out-of-print volumes. [We] [poke] around and [find] nothing of use.";
 
-Astral Secrets is on the sales counter. It is proper-named. The printed name is "[italic type]Astral Secrets[roman type]". Understand "book" as Astral Secrets. Astral Secrets can be read.
+Astral Secrets is on the sales counter. It is proper-named. The printed name is "[italic type]Astral Secrets[roman type]". Understand "brown/plain/book" as Astral Secrets. Astral Secrets can be read.
 
-"A book lies on the sales counter."
+"A brown book lies on the sales counter."
 
-The description is "A book with a plain cover, titled 'Astral Secrets'. The author is listed as Jeremiah Horton.[paragraph break]Flipping through the book, [we] [find] a dog-eared page. The page shows a diagram of a small, metallic, cylindrical object, which is labeled 'astral resonator'. The text describes the resonator as a device for opening a portal through the astral plane. It goes on to describe the components of the device: a source of resonance, a source of light, and an 'astral lens', which it declines to describe further. The text also mentions that the resonator is powered by a source of electricity." 
+The description is "A book with a plain brown cover, titled 'Astral Secrets'. The author is listed as Jeremiah Horton.[paragraph break]Flipping through the book, [we] [find] a dog-eared page. The page shows a diagram of a small, metallic, cylindrical object, which is labeled 'astral resonator'. The text describes the resonator as a device for opening a portal through the astral plane. It goes on to describe the components of the device: a source of resonance, a source of light, and an 'astral lens', which it declines to describe further. The text also mentions that the resonator is powered by a source of electricity." 
 
 After examining Astral Secrets for the first time:
 	if the player encloses the shiny astral resonator:
@@ -1840,7 +1902,7 @@ The snarky remark is "You know what's fun? Tapping a tuning fork and holding it 
 Book 33 - Henry's Hot Skillet
 
 Henry's Hot Skillet is a room. It is in ELR.
-The description is "This is the epitome of the homey small-town diner of times go by, except for the lack of all furniture, cooking implements, food, decor, and so on. There is a staircase leading up. A pair of insulated wires hangs from the ceiling at one end of the counter[if the clean battery is hooked up]. The wires are attached to a battery resting on the counter[end if]."
+The description is "This is the epitome of the homey small-town diner of times gone by, except for the lack of all furniture, cooking implements, food, decor, and so on. There is a staircase leading up. A pair of insulated wires hangs from the ceiling at one end of the counter[if the clean battery is hooked up]. The wires are attached to a battery resting on the counter[end if]."
 
 The snarky remark of Henry's Hot Skillet is "It's a diner without any food or furniture. So, just a room, really."
 
@@ -1908,7 +1970,7 @@ It is unsnarkable.
 To hook up the rusty resonator:
 	now the rusty resonator is in the threaded socket;
 	if the clean battery is hooked up:
-		say "Faraji hooks up [The rusty astral resonator] to the threaded socket on the TV aerial antenna. A beam of light shoots out of it and strikes the obelisk in the park. The crystal is glowing [crystal glow].";
+		say "Faraji hooks up [the rusty astral resonator] to the threaded socket on the TV aerial antenna. A beam of light shoots out of it and strikes the obelisk in the park. The crystal is glowing [crystal glow].";
 	otherwise:
 		say "Faraji screws [The rusty astral resonator] into the threaded socket on the TV aerial antenna.";
 
@@ -1974,8 +2036,9 @@ The snarky remark of the gym door is "[if the gym door is locked]C'mon, I need t
 
 The x-coordinate of the public gymnasium is 2. The y-coordinate of the public gymnasium is 0.
 
-The public gymnasium is in ELR. "There is a basketball court and a weight training area. A front desk is next to the front entrance."
+The public gymnasium is in ELR. "There is a basketball court and a weight training area. A front desk is next to the front entrance. Some kind of book sits on the front desk."
 The snarky remark of the public gymnasium is "This is the kind of government largesse that bankrupted 1950s America. For reals."
+The public gymnasium is a leavable room. The egress is west.
 
 Index map with public gymnasium mapped east of Lake Street by the gym.
 
@@ -1986,7 +2049,7 @@ The green key is a key in the public gymnasium. "A green key hangs on a hook." T
 
 The hook is scenery in the public gymnasium. "A plain hook mounted on the wall[if the green key is not handled]. A green key hangs from it[end if]."
 
-The membership book is fixed in place scenery on the gym front desk. The description is "It's a book apparently full of records of the members of the gym. [We] could LOOK UP a member's name IN BOOK."
+The membership book is fixed in place scenery on the gym front desk. The description is "It's a book apparently full of records of the members of the gym. [We] could LOOK UP a member's name IN BOOK." Understand "record", "gym/gymnasium book" as membership book.
 The snarky remark of the membership book is "God forbid this information should fall into the wrong hands."
 
 Instead of consulting the membership book about something:
@@ -2222,13 +2285,13 @@ Volume 4.5 - The Lizard People
 
 The group of lizard people is an animal. "Three humanoid figures are here, each with a long, scaly tail and a head that looks like a lizard's. They are dressed in smart grey suits. They are hissing loudly in what seems to be intelligent communication.[if lizard countdown is 1]
 
-They notice you and stop talking. One of them steps forward and says in guttural hiss, [one of]'So it is one of Doris's friends. We have been expecting you. You will not hinder us!'[or]'Surface vermin! You will not stop us!'[or]'No one will be allowed to interfere with our plans. Begone!'[or]'Silly human. You will fail!'[or]'You are too late to stop us. We will have the Dragon!'[at random][end if][line break]" 
+They notice you and stop talking. One of them steps forward and says in a guttural hiss, [one of]'So it is one of Doris's friends. We have been expecting you. You will not hinder us!'[or]'Surface vermin! You will not stop us!'[or]'No one will be allowed to interfere with our plans. Begone!'[or]'Silly human. You will fail!'[or]'You are too late to stop us. We will have the Dragon!'[at random][end if]" 
 
 The description is "There are three of them, each one seemingly a reptilian humanoid. They are dressed in grey suits with matching ties. They are obviously of intelligence comparable to humans. They are hissing loudly in what seems to be intelligent communication."
 
 They are unsnarkable.
 
-The group of lizard people is in the fire station 1. 
+The group of lizard people is in Lake at Ridge.
 
 To decide what text is the heading from (R1 - a room) to (R2 - a room):
 	let wediff be the x-coordinate of R1 minus the x-coordinate of R2 + 0.01;
@@ -2297,7 +2360,7 @@ Every turn when the group of lizard people is not in the location:
 			[ say "[We] [see] the faint trace of shadowy figures off in the distance, [the preposition of the current space] [the pretty name of the current space]."; ]
 			now seen at first is true;
 		let next space be a random room which is adjacent to current space;
-		if next space is not the location:
+		if next space is not the location and next space is not First Utilitarian Church of Enigma Lake:
 			let dir be the best route from the current space to the next space;
 			let seen at last be false;
 			if dir is a direction:
@@ -2381,7 +2444,7 @@ After going when the group of lizard people is in the location:
 	continue the action;
 
 The lizard teleportation targets is a list of rooms that varies.
-The lizard teleportation targets are { Enigma Lake Town Hall, Enigma Park, Main Street 200 block, Main at Solvay, Solvay Road 100 block, Solvay Road leading out of town, Solvay-Road-by-the-lake, a dirty shack, Main at Lake, Radio Station WGXC, radio station roof, broadcast booth, Lake Street by the gym, Lake Street by the park, First Utilitarian Church of Enigma Lake, vestry, steeple, Lake at Ridge, lake shore north of the park, workshed, Lake Shore West, Horton Family House Kitchen, Horton Family House Parlor, Second Floor of the Horton House, Horton graveyard, Reading Room, Bookstore Basement, Fresnel's Music, Rolle's Department Store }.
+The lizard teleportation targets are { Enigma Lake Town Hall, Enigma Park, Main Street 200 block, Main at Solvay, Solvay Road 100 block, Solvay Road leading out of town, Solvay-Road-by-the-lake, Main at Lake, Radio Station WGXC, radio station roof, broadcast booth, Lake Street by the gym, Lake Street by the park, First Utilitarian Church of Enigma Lake, Lake at Ridge, lake shore north of the park, workshed, Lake Shore West, Reading Room, Bookstore Basement, Fresnel's Music, Rolle's Department Store }.
 
 To teleport the player:
 	let target be the location;
@@ -2395,10 +2458,11 @@ Instead of answering something that when the group of lizard people is in the lo
 		say "The lizard people seem to find your words amusing. They hiss, creating a strange cloud of thick vapor. Faraji feels light-headed and disoriented. When the vapor clears, they are somewhere else...";
 		teleport the player;
 	otherwise:
-		say "The lizard people look up, startled at the intrusion. They hiss, creating a strange cloud of thick vapor. When it clears, they are gone.";
+		say "At your word, the lizard people scream and hiss, creating a strange cloud of thick vapor. When the vapor clears, they are gone, but they have left something behind. There is [a shiny astral resonator] on the ground!";
 		now the group of lizard people is nowhere;
 		now the shiny astral resonator is in the location;
 		now the lizard countdown is 0;
+		now the current interlocutor is nothing;
 
 Before doing something when group of lizard people is in the location:
 	decrement the lizard countdown;
