@@ -63,7 +63,11 @@ Car 1 is an edifice.
 Instead of entering or opening or driving car 1:
 	say "[Agent]'s job is here for now.";
 
-The Hyundai hood is a part of Car 1. It is an openable closed container. The description is "The hood is [if the Hyundai hood is closed]closed[otherwise]open[end if]."
+To say battery state:
+	if the clean battery is not in the Hyundai hood:
+		say ", and the battery is missing";
+
+The Hyundai hood is a part of Car 1. It is an openable closed container. The description is "The hood is [if the Hyundai hood is closed]closed[otherwise]open[battery state][end if]."
 
 The Hyundai hood is unsnarkable.
 
