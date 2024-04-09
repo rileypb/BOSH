@@ -37,6 +37,7 @@ An availability rule for about the whereabouts of the desk key:
 		
 After discussing the whereabouts of the desk key:
 	now player knows key-is-lost;
+	activate the Table of Desk Unlocking Hints;
 	continue the action;
 	
 about the status of the computer is a questioning quip.

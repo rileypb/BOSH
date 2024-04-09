@@ -157,10 +157,10 @@ book25 is a bookstore-book.
     The blurb of book25 is "Tickens has done it again! Her epic villain X is back, and this time he has a legion of vampire spies at his command. Can a world plagued by ennui summon the strength to resist? Find out in this thrilling new novel."
 
 book26 is a bookstore-book.
-    The title of book26 is "Age and Alliteration".
+    The title of book26 is "Ambush and Alliteration".
     The author of book26 is "Jane Austen".
     The genre of book26 is "Romance/Western".
-    The blurb of book26 is "Lost for centuries, Jane Austen's final novel has finally been discovered. A tale of love, loss, and word play in the Old West, Age and Alliteration is a must-read for fans of Austen and anachronisms."
+    The blurb of book26 is "Lost for centuries, Jane Austen's final novel has finally been discovered. A tale of love, loss, and word play in the Old West, Ambush and Alliteration is a must-read for fans of Austen and anachronisms."
 
 book27 is a bookstore-book.
     The title of book27 is "Ice, Ice, Baby: A Critical Examination of Vanilla Ice".

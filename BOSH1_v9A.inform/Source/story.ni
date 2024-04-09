@@ -33,6 +33,7 @@ Include Hello by Philip Riley.
 
 Include BOSH Polish by Philip Riley.
  
+
 [ Include Choices by Philip Riley. ]
  
 Include New Light by Philip Riley. 
@@ -61,6 +62,8 @@ Include Overlook by Philip Riley.
 Include Gender Options by Nathanael Nerode.   
 
 Include Make Test by Philip Riley.
+
+Include BOSH Help by Philip Riley.
 
 Use MAX_OBJ_PROP_COUNT of 128.
 Use MAX_STATIC_DATA of 360000.
@@ -632,6 +635,7 @@ to-borrow-the-lenses is a questioning quip.
 	
 After examining the pair of astral lenses:  
 	queue Chief Huffton Klimp with to-borrow-the-lenses;
+	activate the Table of Astral Lenses Hints;
 	
 After discussing to-borrow-the-lenses:
 	now the player owns the pair of astral lenses;
@@ -757,8 +761,8 @@ After answering the blue flipphone:
 	end the story saying "Congratulations on answering the phone!";
 
 After printing the player's obituary:
-	say "[italic type][bracket]Seriously, is that it?[close bracket][roman type][paragraph break]";
-	say "[bold type]Larch Faraji will return in 'BOSH II: The Dragon'.[roman type]";
+	say "[bold type]Larch Faraji will return in 'BOSH II: The Dragon'.[roman type][paragraph break]";
+	say "[italic type][bracket]Seriously, is that it?[close bracket][roman type]";
 
 A key is a kind of thing.
 
@@ -816,6 +820,7 @@ The description of the desk is "The desk is a cheap DIY piece held together with
 
 After examining the desk:
 	now player knows hex-screws;
+	activate the Table of Hex Wrench Hints;
 
 
 [The help text of the bureau credit card is "The pre-paid credit card issued to [us] by the Bureau. Its balance is currently [balance of the bureau credit card]."].
@@ -872,6 +877,7 @@ Biff's mobile number is a phone number. Biff's mobile number reaches the green s
 
 Check opening Biff's desk's drawer when biff's desk's drawer is locked and the blue flipphone is in biff's desk's drawer and the blue flipphone is ringing for the first time:
 	now the player knows desk-locked;
+	activate the Table of Desk Opening Hints;
 	say "[We] [try] to open the desk to answer the phone, but it seems to be locked. [We] [sigh]. 'Margaret must have the key.'[paragraph break]" instead; 
 	
 After opening Biff's desk's drawer for the first time:
@@ -896,6 +902,7 @@ To say door snark:
 
 Before opening BOSH back door when BOSH back door is locked:
 	now player knows back-door-is-locked;
+	activate the Table of Back Lot Hints;
 
 The white key is a key in the room of stuff. The description is "A small white key."
 
@@ -999,7 +1006,7 @@ It is unsnarkable.
 
 the BOSH office hallway is in BOSH HQ. The printed name is "hallway". "[Our] office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east. [door descriptions]."
 
-The snarky remark is "The inductrial carpet really makes the look, don't you think?"
+The snarky remark is "The industrial carpet really makes the look, don't you think?"
 
 To say door descriptions:
 	let opendoors be a list of doors;
@@ -1151,14 +1158,16 @@ The hex wrench is in the heating vent. Understand "key/allen" as the hex wrench.
 The snarky remark of the hex wrench is "There are approximately 5 billion of these shipped to the US from Sweden every year, yet this is the only one I can find[if the hex wrench is not handled]. And it's in the heating vent[end if]."
 
 Before examining the heating vent (this is the now you know vent-screws rule):
-	now the player knows vent-screws.
+	now the player knows vent-screws;
+	activate the Table of Screwdriver Hints;
  
 Instead of removing hex wrench from heating vent when the heating vent is closed:
 	say "[Our] fingers won't fit through the openings in the vent. [We]'ll have to open it first."; 
 	
 Instead of opening the heating vent when the heating vent is locked:
 	say "The vent is held closed by four screws.";
-	now the player knows vent-screws.
+	now the player knows vent-screws;
+	activate the Table of Screwdriver Hints;
 	
 The can't reach inside closed containers rule response (A) is "[if the noun is the heating vent][Our] fingers won't fit through the openings in the vent. [We]'ll have to open it first[otherwise][The noun] [aren't] open[end if]."
 
@@ -1568,16 +1577,16 @@ Book 16 - Moving Between Rooms
 To decide which text is the transition for (source - a room) to (target - a room):
 	repeat through the Table of Transitions:
 		if (source room entry is source) and (target room entry is target):
-			if there is a used entry and used entry is false:
+			if there is a transition-used entry and transition-used entry is false:
 				decide on transition text entry;
-			if there is no used entry:
+			if there is no transition-used entry:
 				decide on transition text entry;
 	decide on "none"; 
 	
 To mark transition from (source - a room) to (target - a room) as used:
 	repeat through the Table of Transitions:
 		if (source room entry is source) and (target room entry is target):
-			now used entry is true;
+			now transition-used entry is true;
  
 After going from a room (called R1) to a room (called R2): 
 	let transition text be the transition for R1 to R2;
@@ -2093,7 +2102,7 @@ test win with "w/w/s/open desk/n/e/ask about key/ask about computer/look behind 
 
 test no-drive with "w/w/s/open desk/n/e/ask about key/ask about computer/look behind desk/w/s/x desk/open white door/n/e/ask about wrench/ask about backdoor/take boxes/w/s/z/w/z/z/open white door/knock on white door/e/z/n/e/x vent/ask for a screwdriver/n/e/n/e/ask for screwdriver/w/s/sw/ask for a screwdriver/ask about the owner/ne/w/w/w/x lenses/ask to borrow pair/wear them/e/e/take boxes/w/s/w/back/n/f/d/n/s/turn off light/wear glasses/f/fn/push truck bs/push truck back/move crates/move crates with truck/x washing machine/open it/enter it/f/f/f/f/f/fn/fw/fn/fn/fw/w/fn/w/take compass/x compass/s/s/s/s/s/s/s/e/e/e/e/e/e/e/e/b/b/b/b/b/b/b/b/b/d/w/w".
 
-test part1 with "w/look behind desk/x computer/x vent/e/sw/ask for screwdriver/ask about owner/ne/w/w/w/x lenses/ask to borrow the lenses/e/e/z/z/w/s/w/wear lenses/b/n/f/open desk/take key/w/e/unlock door with key/w/d/s/turn off light/wear lens/f/fn/push truck bs/push truck b/move crates with truck/open machine/enter washing".
+test part1 with "w/look behind desk/x computer/x vent/e/sw/ask for screwdriver/ask about owner/ne/w/w/w/x lenses/ask to borrow the lenses/e/s/w/w/w/w/w/w/w/w/w/w/wear lenses/b/n/f/open desk/take key/w/e/unlock door with key/w/d/s/turn off light/wear lens/f/fn/push truck bs/push truck b/move crates with truck/open machine/enter washing".
 
 
 test part2 with "f/f/f/f/f/fn/fw/fn/fn/fw/w/fn/w/take compass/x 

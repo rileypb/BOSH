@@ -149,7 +149,7 @@ To explore is a verb.
 Enigma Park is a leavable room. It is north of Enigma Lake town hall. It is unleavable. Enigma Park is in ELR. It is outdoors.
 "[first time]It's probably beautiful during the day, but tonight the deep shadows among the trees seem ominous. [We] [are] watchful and tense as [we] [explore] the park. 
 
-[only]The central focus of the park is a large obelisk inscribed with the names of the town's citizens lost in the Great War. Firs and maples line the paths. The town hall is to the south, and other exits are to the north, west, and east[park beam description]."
+[only]The central focus of the park is a large obelisk inscribed with the names of the town's citizens lost in the Great War. Firs and maples line the paths. The town hall is to the south, and other exits are to the north, west, and east[park beam description]. Other egress is blocked by stone walls."
 
 To say park beam description:
 	beam description, in the park;
@@ -284,19 +284,13 @@ The x-coordinate of Solvay-Road-by-the-lake is -2. The y-coordinate of Solvay-Ro
 
 The snarky remark of Solvay-Road-by-the-lake is "Nice view. Too bad it's about to be under water."
 
-Instead of going nowhere from the Solvay-Road-by-the-lake:
-	let dir be noun part of current action;
-	if dir is northwest:
-		say "That would take [us] too far out of town.";
-	otherwise: 
-		continue the action;
-	stop the action;
-
-The lake-shore-1 is scenery in Solvay-Road-by-the-lake. "The lake shore is rocky and uneven, with a few small trees and bushes growing along the edge."
+The lake-shore-1 is scenery in Solvay-Road-by-the-lake. "The lake shore is rocky and uneven, with a few small trees and bushes growing along the edge." It is privately-named. The printed name is "lake shore".
 
 It is unsnarkable.
 
-The lake-scenery-1 is scenery in Solvay-Road-by-the-lake. "The lake is dark and still, reflecting the moonlight."
+The foliage is scenery in Solvay-Road-by-the-lake. "The foliage is thick and green, with a few small flowers growing among the leaves." It is privately-named. Understand "tree/trees/bush/bushes" as foliage.
+
+The lake-scenery-1 is scenery in Solvay-Road-by-the-lake. "The lake is dark and still, reflecting the moonlight." It is privately-named. The printed name is "lake".
 The snarky remark of the lake-shore-1 is "It's just waiting for me to look away, and then WHAM! A flood."
 
 
@@ -312,9 +306,10 @@ The snarky remark of the dirty shack is "I'm not sure I want to know what's in t
 The x-coordinate of the dirty shack is -3. The y-coordinate of the dirty shack is 2.
 
 Some plates are scenery in the dirty shack. "Dirty and precariously stacked."
+Understand "plate/dish/dishes" as plates.
 The snarky remark of the plates is "I'm not doing the dishes."
 
-The used coffee cups are scenery in the dirty shack. "A pile of used paper coffee cups. This guy must love his coffee."
+The pile of used coffee cups are scenery in the dirty shack. "A pile of used paper coffee cups. This guy must love his coffee." They are ambiguously plural.
 The snarky remark of the used coffee cups is "I wonder where the local Starbucks is."
 
 A mangy cat is in a dirty shack. The description is "A mangy, old, stripey orange cat."
@@ -349,6 +344,8 @@ Rule for writing a paragraph about Hutz:
 
 The narrow bed is scenery in the dirty shack. "Clean enough, but awfully narrow, it holds [if Hutz is known]the bony figure of Hutz[otherwise][Hutz][end if], the town groundskeeper."
 The snarky remark of the narrow bed is "How often does he fall out of bed, I wonder?"
+
+The sink is a scenery container in the dirty shack. "The sink is piled high with dirty dishes."
 
 The sledgehammer is in the dirty shack. Understand "hammer" as sledgehammer. The description is "A heavy sledgehammer, the head of which is covered in rust."
 The snarky remark of the sledgehammer is "I'm sure violence is the answer to something. Let's go look."
@@ -1250,9 +1247,11 @@ Book 19 - Lake at Ridge
 
 the Lake at Ridge is north of Lake Street by the Park. It is in ELR. It is outdoors.
 The printed name is "Lake Street and Ridge Road". The preposition is "at the intersection of".
-"[if player is in the abandoned truck]There is a glove compartment on the passenger side, [glove compartment state].[paragraph break][end if]The intersection lies at the edge of the lake. Lake Street runs south into town, while Ridge Road heads off into the darkness east of here. A little park along the lake shore is to the west."
+"[if player is in the abandoned truck]There is a glove compartment on the passenger side, [glove compartment state].[paragraph break][end if]The intersection lies at the edge of the lake. Lake Street runs south into town, while Ridge Road heads off into the darkness east of here. A little path along the lake shore is to the west."
 The snarky remark of the Lake at Ridge is "What ridge? I don't see a ridge."
 The x-coordinate of the Lake at Ridge is 1. The y-coordinate of the Lake at Ridge is 2.
+
+The ridge-path-scenery is scenery in the Lake at Ridge. It is privately-named. The printed name is "path". Understand "little/-- path" as the ridge-path-scenery. "The lake shore path runs off to the west."
 
 To say glove compartment state:
 	if the glove compartment is open:
@@ -1318,18 +1317,33 @@ Book 20 - Lake Shore north of the park
 
 the lake shore north of the park is west of Lake at Ridge and north of Enigma Park. It is in ELR. It is outdoors. The preposition is "on". "A sliver of moon hangs over the lake, casting a silvery light over the water. The park is to the south, while the lake stretches off to the north. A workshed is to the southeast. A road can be seen to the east."
 The snarky remark of the lake shore north of the park is "I wonder what Klimp would say is in the lake."
+Understand "water" as the lake shore north of the park.
 
 The x-coordinate of the lake shore north of the park is 0. The y-coordinate of the lake shore north of the park is 2.
 
-The workshed-facade is a building facade. It is in Lake Shore North of the Park. It is privately-named. The printed name is "workshed". Understand "workshed/shed" as workshed-facade. "The workshed is a small, weathered building, with a single door and no windows."
+The workshed-facade is a building facade. It is in Lake Shore North of the Park. It is privately-named. The printed name is "workshed". Understand "workshed/shed/building" as workshed-facade. "The workshed is a small, weathered building, with a single door and no windows."
 	The workshed-facade fronts the workshed.
 	It is enterable from Lake Shore North of the Park.
 The snarky remark of the workshed-facade is "Groovy."
+
+The moon is scenery in the lake shore north of the park. "The moon is a sliver in the sky, casting a silvery light over the water."
+
+road-scenery is scenery in the lake shore north of the park. "A road can be seen to the east."
+It is privately-named. The printed name is "road". Understand "road" as road-scenery.
+
+enigma-park-scenery is scenery in the lake shore north of the park. "The park is to the south."
+It is privately-named. The printed name is "park". Understand "enigma/park" as enigma-park-scenery.
+
+
 
 Book 21 - Workshed
 
 the workshed is a leavable room. It has egress northwest. It is in ELR. It is indoors. "It is a small, weathered building, with a single door and no windows, and a creaky wooden floor. The interior is dimly lit by a single light bulb hanging from the ceiling. [equipment cabinet state] cabinet is in the corner. [rusty metal door state], rusty metal door leads out of the shed. [if the trapdoor is revealed]A trapdoor is in the floor, [trapdoor state].[end if]".
 The snarky remark of the workshed is "I wonder if there's a chainsaw in here."
+
+The light bulb is scenery in the workshed. "A single light bulb hangs from the ceiling, casting a dim light over the room."
+
+Understand "building/shed" as the workshed.
 
 The x-coordinate of the workshed is 0.5. The y-coordinate of the workshed is 1.5.
 
@@ -1351,13 +1365,13 @@ To say rusty metal door state:
 	otherwise:
 		say "A closed";
 
-The rusty metal door is a closed openable scenery door. It is southeast of Lake Shore North of the Park and northwest of the workshed. "[if open]The door is open[otherwise]The door is closed[end if]."
+The rusty metal door is a closed openable scenery door. It is southeast of Lake Shore North of the Park and northwest of the workshed. "[if the rusty metal door is open]The door is open[otherwise]The door is closed[end if]."
 The snarky remark of the rusty metal door is "It inspires confidence."
 
 The equipment cabinet is a closed locked openable lockable scenery container in the workshed.
-It has matching key the iron key. Understand "heavy/metal" as the equipment cabinet.
+It has matching key the iron key. Understand "heavy/metal/lock" as the equipment cabinet.
 "A heavy metal cabinet with a lock. [if the equipment cabinet is open]The cabinet is open[otherwise]The cabinet is closed[end if]."
-The snarky remark of the equipment cabinet is "[if the equipment cabinet is locked]Usually the good stuff is locked up.[otherwise if the rusty astral resonator is not familiar]Oh I can smell a screwdriver in there![otherwise]Huh. All that effort for that weird rusty thing?[end if][line break]"
+The snarky remark of the equipment cabinet is "[if the equipment cabinet is locked]Usually the good stuff is locked up.[otherwise if the rusty astral resonator is not familiar]Oh I can smell a screwdriver in there![otherwise]Huh. All that effort for that weird rusty thing?[end if]"
 
 
 The rusty astral resonator is in the equipment cabinet. It is privately-named. The description is "A small, rusty, metallic, cylindrical object. One end is capped with a lens, while the other terminates in a threaded base, like a light bulb.".
@@ -1491,6 +1505,9 @@ The snarky remark of the Lake Shore West is "Haha, come and get me, lake. I dare
 
 The x-coordinate of the Lake Shore West is -1. The y-coordinate of the Lake Shore West is 2.
 
+The town-lake-shore-scenery is scenery in the Lake Shore West. "The town, empty and silent, lies to the south." It is privately-named. The printed name is "town". Understand "town" as town-lake-shore-scenery.
+
+solvay-road-scenery is scenery in the Lake Shore West. "Solvay Road is west of here." It is privately-named. The printed name is "Solvay Road". Understand "solvay/road" as solvay-road-scenery.
 
 Book 25 - Horton Family House Kitchen
 
@@ -1915,7 +1932,7 @@ The snarky remark of the gymnasium basement door is "Why is there a door here?"
 
 Book 32 - Fresnel's Music
 
-Fresnel's Music is southwest of Main at Solvay. It is in ELR. It is indoors. "The music store, like most of the town, is empty of all but a few items of little value."
+Fresnel's Music is southwest of Main at Solvay. It is a leavable room. The egress is northeast. Fresnel's Music is in ELR. It is indoors. "The music store, like most of the town, is empty of all but a few items of little value. The exit is to the northeast."
 
 The snarky remark of Fresnel's Music is "It's like John Cage's 4[']33' in store form."
 
@@ -2049,6 +2066,9 @@ The snarky remark of the sale posters is "Even the floor waxer?"
 
 The floor waxer is a fixed in place thing in Rolle's Department Store. "A floor waxer sits in the center of the gleaming floor." The description is "This is a bulky, heavy-duty machine with a large, round brush head, designed for durability and the ability to polish vast floor areas to a high shine."
 The snarky remark is "I'm sure I've seen this floor waxer somewhere before."
+
+Instead of pushing the floor waxer to north:
+	say "[We] can't manage to open the door while pushing the floor waxer, or get it over the threshold.";
 
 The big letters are scenery in Rolle's Department Store. "Big letters on the wall spell out 'ROLLE'S'." 
 

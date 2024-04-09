@@ -106,7 +106,7 @@ utility closet	--	"White drywall."	--
 
 
 Table of Transitions
-source room (a room)	target room (a room)	transition text (a text)	used (a truth state)
+source room (a room)	target room (a room)	transition text (a text)	transition-used (a truth state)
 Strip Mall Parking Lot South	Strip Mall Parking Lot North	"[We] [trudge] to the other end of the parking lot. It's much like where [we] left."	--
 Strip Mall Parking Lot South	Front Office	"Just like in the store this once was, the door chimes as [we] [walk] in."
 Strip Mall Parking Lot South	Dave's pawn shop	"'Cha-ching!'[first time] rings the electronic chime as [we] [step] into the store.[only]"
@@ -176,15 +176,35 @@ Back lot	{northeast}	"That way runs smack into the building."
 Enigma Lake town hall	--	"Exits are to the north and south."
 Main Street 200 block	{northwest, northeast}	"Go north to enter the town hall."
 Main Street 200 block	--	"[We] can go north into the town hall, or south into Rolle's Department Store. In addition, Main Street leads east and west."
+Lake Street by the park	{southwest}	"[We] can't enter the town hall from here."
+Lake Street by the park	{northwest}	"A stone wall blocks the way."
+Lake Street by the park	{northeast, southeast}	"The churchyard fence is in the way."
 Lake Street by the gym	{west, southwest, northwest}	"[We] can't enter the town hall from here."
-Solvay Road 100 block	{west}	"The fire station's garage door is locked up tight."
+Lake Street by the gym	{northeast, southeast}	"There is no entrance to the gymnasium in that direction."
 Solvay Road 100 block	{east, northeast, southeast}	"There is no entrance to the town hall from here."
 Solvay Road 100 block	--	"[We] can follow Solvay Road north or south. The fire station is to the west."
+Main at Solvay	{northeast}	"[We] can't enter the town hall from here."
+Main at Solvay	--	"[We] can follow Main Street east, or Solvay Road north. To the south, southwest, and west are stores."
+Solvay Road leading out of town	{southeast}	"[We] can't enter the town hall from here."
+Solvay Road leading out of town	--	"[We] can follow Solvay Road north or south. To the east is Enigma Park, while the Horton House lies to the west."
+Enigma Park	--	"The stone walls are too high to climb."
+Solvay-Road-by-the-lake	{northwest}	"That would take [us] too far out of town."
+Solvay-Road-by-the-lake	{north, northeast}	"That way lies the lake."
+Solvay-Road-by-the-lake	{south, southwest}	"Trees block the way."
 Radio Station Roof	{north, south, east, west, northeast, northwest, southeast, southwest}	"That would be a long way down."
 Main at Lake	{northwest}	"[We] can't enter the town hall from here."
 Main at Lake	{northeast}	"[We] can't enter the gymnasium from here."
 Main at Lake	{south, east}	"That way ends in a residential building. The street leads north and west."
 Main at Lake	{southwest}	"[We] can't enter Rolle's Department Store from here."
+Lake Shore West	{northwest, north, northeast}	"The lake lies that way."
+Lake Shore West	{southeast, southwest}	"Trees block the way."
+Lake Shore North of the Park	{northwest, north, northeast}	"The lake lies that way."
+Lake Shore North of the Park	{southeast, southwest}	"Trees block the way."
+Lake at Ridge	{northwest}	"The lake lies that way."
+Lake at Ridge	{north, northeast}	"Trees block the way."
+Lake at Ridge	{east}	"That would take [us] too far out of town."
+Lake at Ridge	{southwest}	"[We] [are] blocked by the stone wall around the park."
+Lake at Ridge	{southeast}	"[We] can't enter the church from here."	
 Old Root Cellar	{north}	"Faraji is heading into the north passage when Daniels calls out to him. 'I wouldn't go out there,' he says. 'We need to get back to our own time.'"
 
 [Below, add a message for the player when they try to take something that can't be taken. Be creative; don't just say the same thing over and over agian.]
