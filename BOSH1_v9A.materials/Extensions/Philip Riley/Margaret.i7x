@@ -37,7 +37,7 @@ An availability rule for about the whereabouts of the desk key:
 		
 After discussing the whereabouts of the desk key:
 	now player knows key-is-lost;
-	activate the Table of Desk Unlocking Hints;
+	[ activate the Table of Desk Unlocking Hints; ]
 	continue the action;
 	
 about the status of the computer is a questioning quip.
@@ -72,6 +72,10 @@ for-a-screwdriver is a questioning quip.
 An availability rule for for-a-screwdriver:
 	if the player knows vent-screws and the red screwdriver is not seen:
 		always available;
+
+After discussing for-a-screwdriver:
+	now the player knows margaret-no-screwdriver;
+	continue the action;
 		
 to unlock the backdoor is a questioning quip. 
 	Understand "back/door" as to unlock the backdoor.
@@ -232,7 +236,11 @@ Rule for behaving as Margaret when the current behavior of Margaret is throw out
 			try margaret going west;
 		otherwise:
 			remove behavior from margaret;
-	
+
+After Margaret unlocking the BOSH back door with something when the player is in biff's office:
+	now the player knows margaret-backdoor-key;
+	continue the action;
+
 Rule for deciding the concealed possessions of margaret: 
 	if the particular possession is the margaret-flattened-boxes, no; 
 	otherwise yes.

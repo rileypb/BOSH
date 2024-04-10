@@ -63,7 +63,8 @@ Include Gender Options by Nathanael Nerode.
 
 Include Make Test by Philip Riley.
 
-Include BOSH Help by Philip Riley.
+[ Include BOSH Help by Philip Riley. ]
+Include BOSH Hints by Philip Riley.
 
 Use MAX_OBJ_PROP_COUNT of 128.
 Use MAX_STATIC_DATA of 360000.
@@ -635,7 +636,7 @@ to-borrow-the-lenses is a questioning quip.
 	
 After examining the pair of astral lenses:  
 	queue Chief Huffton Klimp with to-borrow-the-lenses;
-	activate the Table of Astral Lenses Hints;
+	[ activate the Table of Astral Lenses Hints; ]
 	
 After discussing to-borrow-the-lenses:
 	now the player owns the pair of astral lenses;
@@ -820,7 +821,7 @@ The description of the desk is "The desk is a cheap DIY piece held together with
 
 After examining the desk:
 	now player knows hex-screws;
-	activate the Table of Hex Wrench Hints;
+	[ activate the Table of Hex Wrench Hints; ]
 
 
 [The help text of the bureau credit card is "The pre-paid credit card issued to [us] by the Bureau. Its balance is currently [balance of the bureau credit card]."].
@@ -877,7 +878,7 @@ Biff's mobile number is a phone number. Biff's mobile number reaches the green s
 
 Check opening Biff's desk's drawer when biff's desk's drawer is locked and the blue flipphone is in biff's desk's drawer and the blue flipphone is ringing for the first time:
 	now the player knows desk-locked;
-	activate the Table of Desk Opening Hints;
+	[ activate the Table of Desk Opening Hints; ]
 	say "[We] [try] to open the desk to answer the phone, but it seems to be locked. [We] [sigh]. 'Margaret must have the key.'[paragraph break]" instead; 
 	
 After opening Biff's desk's drawer for the first time:
@@ -902,7 +903,7 @@ To say door snark:
 
 Before opening BOSH back door when BOSH back door is locked:
 	now player knows back-door-is-locked;
-	activate the Table of Back Lot Hints;
+	[ activate the Table of Back Lot Hints; ]
 
 The white key is a key in the room of stuff. The description is "A small white key."
 
@@ -925,7 +926,7 @@ The blue dumpster is scenery in the back lot. "An everyday blue dumpster, about 
 The snarky remark is "Oh, this is where I left my dignity."
 
 Check entering the blue dumpster:
-	say "[We] [are] not yet at the point of dumpster diving." instead;
+	say "[We] [are] not yet to the point of dumpster diving." instead;
 	
 Climbing into is an action applying to one thing. Understand "climb in/into [thing]" as climbing into.
 
@@ -959,6 +960,9 @@ Rule for behaving as margaret when the the current behavior of margaret is waiti
 	[cover the cases where player reenters the office, and when they leave through the laundromat.]
 	if the location is not the back lot: 
 		remove behavior from margaret;
+
+After going from the back lot:
+	now the player knows escape-back-lot;
 
 Carry out knocking on the BOSH back door when the location is the back lot and the BOSH back door is locked:
 	move margaret to biff's office;
@@ -1159,7 +1163,7 @@ The snarky remark of the hex wrench is "There are approximately 5 billion of the
 
 Before examining the heating vent (this is the now you know vent-screws rule):
 	now the player knows vent-screws;
-	activate the Table of Screwdriver Hints;
+	[ activate the Table of Screwdriver Hints; ]
  
 Instead of removing hex wrench from heating vent when the heating vent is closed:
 	say "[Our] fingers won't fit through the openings in the vent. [We]'ll have to open it first."; 
@@ -1167,7 +1171,7 @@ Instead of removing hex wrench from heating vent when the heating vent is closed
 Instead of opening the heating vent when the heating vent is locked:
 	say "The vent is held closed by four screws.";
 	now the player knows vent-screws;
-	activate the Table of Screwdriver Hints;
+	[ activate the Table of Screwdriver Hints; ]
 	
 The can't reach inside closed containers rule response (A) is "[if the noun is the heating vent][Our] fingers won't fit through the openings in the vent. [We]'ll have to open it first[otherwise][The noun] [aren't] open[end if]."
 

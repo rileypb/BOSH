@@ -2,6 +2,7 @@ BOSH Facts by Philip Riley begins here.
 
 Use authorial modesty.
 
+
 Table of All Known Facts (continued)
 fact    	summary
 vent-screws	"The vent is held closed by four screws."
@@ -13,5 +14,8 @@ screwdriver-in-laundromat	"There is a screwdriver in the laundromat."
 hex-screws	"The desk is held together with hex screws."
 break-in-to-laundromat	"Player needs to break in to laundromat."
 back-door-is-locked	"The back door to BOSH is locked."
+margaret-no-screwdriver	"Margaret does not have a screwdriver."
+margaret-backdoor-key	"Margaret has the key to the back door."
+escape-back-lot	"We know how to escape from the back lot."
 
 BOSH Facts ends here.

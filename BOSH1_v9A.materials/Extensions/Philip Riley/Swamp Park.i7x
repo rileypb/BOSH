@@ -297,7 +297,7 @@ for-a-screwdriver-pawn is a questioning quip.
 	It quip-supplies Dave.
 	
 An availability rule for for-a-screwdriver-pawn:
-	if the player knows vent-screws and the screwdriver is not seen:
+	if the player knows vent-screws:
 		always available;
 	
 After discussing for-a-screwdriver-pawn:
@@ -319,7 +319,7 @@ After discussing about the laundromat owner:
 	say "The sound of a car door slamming outside catches Faraji's attention.";
 	move Chief Huffton Klimp to Strip Mall Parking Lot South;
 	add behavior arrival to Chief Huffton Klimp;
-	activate the Table of Chief Klimp Hints;
+	[ activate the Table of Chief Klimp Hints; ]
 	continue the action;
 	
 [An availability rule for about the laundromat owner:
