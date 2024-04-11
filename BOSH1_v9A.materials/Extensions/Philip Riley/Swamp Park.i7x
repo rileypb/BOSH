@@ -397,7 +397,7 @@ The snarky remark of the laundromat back room is "Definitely worth the trouble o
 The opening-2 is scenery in the laundromat back room. It is privately-named. The printed name is "opening". Understand "doorway" as the opening-2. "The opening leads east to the laundromat proper."
 It is unsnarkable.
 
-The laundromat desk is a scenery desk in the laundromat back room. "The desk is cluttered with papers."
+The laundromat desk is a scenery desk in the laundromat back room. "The desk is cluttered with papers. It has a single drawer, which is [if the laundromat desk's drawer is open]open[otherwise]closed[end if]."
 The snarky remark of the laundromat desk is "For a place that supposedly gets things clean, this place is a mess."
 The laundromat desk's drawer has description "The drawer is [if the laundromat desk's drawer is open]open[otherwise]closed[end if]."
 
@@ -638,6 +638,10 @@ The price of the laptop is $1200.
 The clerk owns the earbuds. The clerk is willing to sell the earbuds. 
 The price of the earbuds is $85.
    
+After printing the locale description for the Li'l Nectarine Convenience Store when the player knows margaret-no-screwdriver and the player does not know store-sells-screwdrivers:
+	say "As you enter the store, you catch a glimpse of a red screwdriver in the glass case under the counter.";
+	now the player knows store-sells-screwdrivers;
+
 The description of the red screwdriver is "A medium-length flat head screwdriver with a red plastic handle."
 Understand "flat/head/plastic/handle/flathead/red" as the red screwdriver.
 The snarky remark of the red screwdriver is "[if the player knows vent-screws]There it is, just a few inches away, yet so far[otherwise]I'm sure I won't need a screwdriver any time soon[end if]."

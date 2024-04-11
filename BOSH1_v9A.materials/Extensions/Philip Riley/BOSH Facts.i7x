@@ -17,5 +17,7 @@ back-door-is-locked	"The back door to BOSH is locked."
 margaret-no-screwdriver	"Margaret does not have a screwdriver."
 margaret-backdoor-key	"Margaret has the key to the back door."
 escape-back-lot	"We know how to escape from the back lot."
+store-sells-screwdrivers	"The store sells a screwdriver."
+laundromat-back-door-is-locked	"The back door to the laundromat is locked."
 
 BOSH Facts ends here.

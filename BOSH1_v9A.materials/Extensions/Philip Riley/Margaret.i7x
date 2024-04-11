@@ -70,7 +70,7 @@ for-a-screwdriver is a questioning quip.
 	It quip-supplies Margaret;
 	
 An availability rule for for-a-screwdriver:
-	if the player knows vent-screws and the red screwdriver is not seen:
+	if the player knows vent-screws and the player does not know margaret-no-screwdriver:
 		always available;
 
 After discussing for-a-screwdriver:

@@ -914,6 +914,9 @@ When play begins:
 The laundromat back door is a door. It is north of back lot and south of the laundromat back room. It is scenery. It is closed, locked, lockable, and openable. "An unremarkable metal door painted white. It is closed.". 	 
 The snarky remark is "Open up; I need to do my laundry."
 
+Before opening the laundromat back door when the laundromat back door is locked:
+	now player knows laundromat-back-door-is-locked;
+
 The description of the back lot is "This is a small area of asphalt between the building and a chain link fence looking in on an industrial property. A door to east leads into the BOSH offices, and one to the north enters the laundromat. There is a blue dumpster here."
 
 The industrial property is scenery in the back lot. "The chain link fence looks in on a small industrial property. There's a bunch industrial-type stuff in there, but nothing interesting."
@@ -963,6 +966,7 @@ Rule for behaving as margaret when the the current behavior of margaret is waiti
 
 After going from the back lot:
 	now the player knows escape-back-lot;
+	continue the action;
 
 Carry out knocking on the BOSH back door when the location is the back lot and the BOSH back door is locked:
 	move margaret to biff's office;
