@@ -232,7 +232,7 @@ Hinting the hint-klimp:
 	otherwise if BOSH Chief's office is unvisited:
 		rule succeeds with result "Chief Klimp is in the office. Faraji should probably go see him.";
 	otherwise if the astral lenses are not handled:
-		rule succeeds with result "Faraji should explore the office. They might find something interesting.";
+		rule succeeds with result "Faraji should explore Klimp's office. They might find something interesting.";
 	otherwise:
 		rule succeeds with result "Chief Klimp is a great source of knowledge about all sorts of useless things.";
 
@@ -247,7 +247,7 @@ hint-touch-the-glow is an unlisted progressive hint topic. The progression is {"
 
 Activating the hint-strange-glow:
 	if the back basement is visited:
-		if the infinite hyperplane is visited:
+		if the Featureless hyperplane is visited:
 			deactivate;
 		activate;
 	deactivate;
@@ -260,5 +260,20 @@ Hinting the hint-strange-glow:
 			rule succeeds with result "Faraji needs something to help them move the crates.";
 	otherwise:
 		abide by the hinting rules for the hint-touch-the-glow; 
+
+hint-handtruck is a hint topic. Understand "handtruck", "hand/-- truck" as the hint-handtruck. The printed name is "handtruck".
+
+hint-handtruck-no-stairs is an unlisted progressive hint topic. The progression is {"Faraji can't take the handtruck down the stairs.", "If only there was another way to push the handtruck that didn't involve stairs.", "Is it possible there are other astral tunnels Faraji hasn't found yet?", "Faraji should wear the astral lenses, but they can't in the fluorescent light.", "Maybe Faraji could find a way to turn off the lights.", "There's a way to turn off the lights in the back basement."}.
+
+Activating the hint-handtruck:
+	if the location is in the laundromat-region and the handtruck is not in the back basement and the handtruck is seen:
+		activate;
+	deactivate;
+
+Hinting the hint-handtruck:
+	if the player does not know handtruck-no-stairs:
+		rule succeeds with result "To move the handtruck, type PUSH HANDTRUCK <direction>.";
+	otherwise:
+		abide by the hinting rules for the hint-handtruck-no-stairs;
 
 BOSH Hints ends here.

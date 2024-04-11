@@ -19,5 +19,6 @@ margaret-backdoor-key	"Margaret has the key to the back door."
 escape-back-lot	"We know how to escape from the back lot."
 store-sells-screwdrivers	"The store sells a screwdriver."
 laundromat-back-door-is-locked	"The back door to the laundromat is locked."
+handtruck-no-stairs	"The handtruck can't go up or down stairs."
 
 BOSH Facts ends here.

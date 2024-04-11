@@ -1222,7 +1222,11 @@ Rule for deciding the concealed possessions of Chief Huffton Klimp:
 
 After printing the locale description of the BOSH Chief's office:
 	if the BOSH chief's office is not visited:
-		say "[Klimp] says 'What's with that ringing? Someone answer it!'".		
+		say "[Klimp] says 'What's with that ringing? Someone answer it!'
+		
+		He turns to Faraji and grins. 'Larch! Good to see you. What do you think of the new digs? I know, I know, it's a lousy office, I could barely fit all my stuff in here.'
+
+		Faraji starts to answer, but Klimp interrupts. 'Say, you read that new article in the Journal of Kinetic Experimentation on telekinesis? It's fascinating stuff. But can you do something about that phone, or do have to ship you off to the Black Knight Satellite?' He chuckles and goes back to his work.";
 
 The snarky remark of the BOSH Chief's office is "It's like a museum of bad taste."
 

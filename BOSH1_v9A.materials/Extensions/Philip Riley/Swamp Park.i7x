@@ -384,6 +384,7 @@ Instead of taking the handtruck:
 	say "The handtruck is a bit unwieldy to carry. Better push it instead.";
 
 Instead of pushing the handtruck to down when the location is the laundromat back room:
+	now the player knows handtruck-no-stairs;
 	say "The stairs are much too steep to maneuver the handtruck down them.";
 
 Instead of pushing the handtruck to up when the location is the laundromat basement:
@@ -450,7 +451,7 @@ After printing the description of a dark room when the location is the back base
 		say "A washing machine is revealed in the darkness by the glow emanating from its drum.";
 		
 The broken washing machine is an enterable, closed, openable container. It is scenery. "It's a front-loading model. The inside of the drum is obscured by a shimmering curtain of light."
-The snarky remark of the broken washing machine is "Looks inviting, doesn't it?" It is transparent. Understand "drum" as the broken washing machine.
+The snarky remark of the broken washing machine is "Looks inviting, doesn't it?" It is transparent. Understand "drum/washer" as the broken washing machine.
 
 The strange glow is scenery in the back basement. "The glow is blue-white and flickering."
 The snarky remark of the strange glow is "I'm sure it's nothing to worry about."
