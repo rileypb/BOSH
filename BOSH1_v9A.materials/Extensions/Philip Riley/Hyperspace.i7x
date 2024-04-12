@@ -73,7 +73,14 @@ To decide if could see hypertunnels:
 			if the room D from the location is somewhere:
 				decide yes;
 	decide no;
+
+Every turn when the player is in the Featureless Hyperplane:
+	if the player wears the astral lenses:
+		say "Wearing the astral lenses is overwhelming here, so Faraji takes them off.";
+		now the player carries the astral lenses;
 		
+Instead of wearing the astral lenses when the player is in the Featureless Hyperplane:
+	say "Wearing the astral lenses is overwhelming here, so Faraji decides not to put them on.";
 		
 Encountered astral passages is a truth state that varies.
 

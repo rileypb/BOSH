@@ -57,7 +57,7 @@ To list all hints:
 	say "(Topics in bold have new hints available.)";
 	now listing all hints is false;
 
-Listing hints is an action out of world. Understand "list hints" as listing hints.
+Listing hints is an action out of world. Understand "list hints", "hints" as listing hints.
 
 Carry out listing hints:
 	list all hints.

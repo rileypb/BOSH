@@ -278,6 +278,36 @@ Activating the hint-utility-closet-dark:
 		deactivate;
 
 hint-utility-closet-trapped is a progressive hint topic. 
-Understand "trapped/-- in/-- the/-- utility/-- closet" as the hint-utility-closet-trapped. The printed name is "trapped in the utility closet". The progression is {"How did Faraji get past a locked door last time?", "Faraji should knock on the door."}.
+Understand "trapped/-- in/-- the/-- utility/-- closet" as the hint-utility-closet-trapped. The printed name is "trapped in the utility closet". The progression is {"How did Faraji get past a locked door last time?", "Faraji should knock on the door."}.	
+
+Activating the hint-utility-closet-trapped:
+	if the location is the utility closet and the astral lenses are worn and the closet door is locked:
+		activate;
+	otherwise:
+		deactivate;
+
+hint-enigma-lake is a progressive hint topic. Understand "enigma/-- lake" as the hint-enigma-lake. The printed name is "enigma lake". The progression is {"The town of Enigma Lake is an amazing place with lots of things to see!", "Well, maybe not that amazing, but it's more interesting than the Featureless Hyperplane.", "Faraji should explore the town if they want to find Daniels, the missing agent.", "There are probably hidden places to find, as well."}.
+
+Activating the hint-enigma-lake:
+	if the location is in ELR:
+		activate;
+	otherwise:
+		deactivate;
+
+hint-work-schedule is a progressive hint topic. Understand "work/-- schedule" as the hint-work-schedule. The printed name is "work schedule". The progression is {"It looks like a list of names assigned to days.", "What use is that when the town is about to be flooded?", "Maybe one of the names is significant."}.
+
+Activating the hint-work-schedule:
+	if the work schedule is seen and the copper key is not handled:
+		activate;
+	otherwise:
+		deactivate;
+
+hint-backpack is a progressive hint topic. Understand "backpack", "back/-- pack" as the hint-backpack. The printed name is "backpack". The progression is {"Faraji might look inside.", "I wonder what the red key is for? Faraji better take it.", "Have you examined the backpack?", "Better remember the initials 'WGT'"}.
+	
+Activating the hint-backpack:
+	if the backpack is seen and the copper key is not handled:
+		activate;
+	otherwise:
+		deactivate;
 
 BOSH Hints ends here.
