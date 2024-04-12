@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 22806 words long.
+I've now read your source text, which is 22912 words long.
 
 
 -----------------------------------------------------
@@ -49,19 +49,19 @@ I've also read New Light by Philip Riley, which is 336 words long.
 I've also read Early Declarations by Philip Riley, which is 21 words long.
 I've also read Basics by Philip Riley, which is 198 words long.
 I've also read Building Facades by Philip Riley, which is 167 words long.
+I've also read Snarky Remarks by Philip Riley, which is 230 words long.
 I've also read Followup Questions by Philip Riley, which is 248 words long.
-I've also read Simple Conversation by Philip Riley, which is 2216 words long.
+I've also read Simple Conversation by Philip Riley, which is 2302 words long.
 I've also read Hyperspace by Philip Riley, which is 10985 words long.
-I've also read BOSH Facts by Philip Riley, which is 147 words long.
-I've also read Swamp Park by Philip Riley, which is 6421 words long.
+I've also read BOSH Facts by Philip Riley, which is 156 words long.
+I've also read Swamp Park by Philip Riley, which is 6453 words long.
 I've also read Margaret by Philip Riley, which is 1966 words long.
 I've also read Enigma Lake by Philip Riley, which is 26982 words long.
 I've also read I Can Dig It by Philip Riley, which is 58 words long.
-I've also read Snarky Remarks by Philip Riley, which is 230 words long.
 I've also read Overlook by Philip Riley, which is 763 words long.
 I've also read Gender Options by Nathanael Nerode, which is 7679 words long.
 I've also read Make Test by Philip Riley, which is 288 words long.
-I've also read BOSH Hints by Philip Riley, which is 2051 words long.
+I've also read BOSH Hints by Philip Riley, which is 2091 words long.
 I've also read Hearing by Philip Riley, which is 1254 words long.
 I've also read PBR Common by Philip Riley, which is 109 words long.
 I've also read Walls by Philip Riley, which is 901 words long.
@@ -77,7 +77,7 @@ I've also read Exit Lister by Eric Eve, which is 3510 words long.
 I've also read Secret Doors by Gavin Lambert, which is 272 words long.
 I've also read Plugging by Philip Riley, which is 614 words long.
 I've also read Books by Philip Riley, which is 2221 words long.
-I've also read Text Capture by Eric Eve, which is 1076 words long.
+I've also read Hints by Philip Riley, which is 643 words long.
 I've also read Two-Sided Doors by Philip Riley, which is 2270 words long.
 
 
@@ -133,15 +133,15 @@ Phase X ... Tables and grammar
 Phase XI ... Phrases and rules
 -----------------------------------------------------
 
-Regional: CONSTANT_VNT'field office area'-region(I251_field_office_area)(I159'field office area')
+Regional: CONSTANT_VNT'field office area'-region(I252_field_office_area)(I160'field office area')
  == region
-Regional: CONSTANT_VNT'field office area'-region(I251_field_office_area)(I159'field office area')
+Regional: CONSTANT_VNT'field office area'-region(I252_field_office_area)(I160'field office area')
  == region
-Regional: CONSTANT_VNT'hyperspace'-region(I236_hyperspace)(I144'hyperspace')
+Regional: CONSTANT_VNT'hyperspace'-region(I237_hyperspace)(I145'hyperspace')
  == region
-Regional: CONSTANT_VNT'elr'-region(I488_elr)(I380'elr')
+Regional: CONSTANT_VNT'elr'-region(I489_elr)(I381'elr')
  == region
-Regional: CONSTANT_VNT'elr'-region(I488_elr)(I380'elr')
+Regional: CONSTANT_VNT'elr'-region(I489_elr)(I381'elr')
  == region
 
 
@@ -175,13 +175,13 @@ Phase XII ... Code generation
 
                                 0 = action. 1 = object
                                 0 = action. 1 = object
-        Regional: CONSTANT_VNT'hyperspace'-region(I236_hyperspace)(I144'hyperspace')
+        Regional: CONSTANT_VNT'hyperspace'-region(I237_hyperspace)(I145'hyperspace')
          == region
-        Regional: CONSTANT_VNT'hyperspace'-region(I236_hyperspace)(I144'hyperspace')
+        Regional: CONSTANT_VNT'hyperspace'-region(I237_hyperspace)(I145'hyperspace')
          == region
-        Regional: CONSTANT_VNT'hyperspace'-region(I236_hyperspace)(I144'hyperspace')
+        Regional: CONSTANT_VNT'hyperspace'-region(I237_hyperspace)(I145'hyperspace')
          == region
-        Regional: CONSTANT_VNT'hyperspace'-region(I236_hyperspace)(I144'hyperspace')
+        Regional: CONSTANT_VNT'hyperspace'-region(I237_hyperspace)(I145'hyperspace')
          == region
 0 = object. 1 = number
 0 = object. 1 = number
@@ -190,13 +190,13 @@ Phase XII ... Code generation
 0 = object. 1 = number
                                         Fail: thing (~) number = nothing
                                         Fail: thing (~) number = nothing
-        Regional: CONSTANT_VNT'hyperspace'-region(I236_hyperspace)(I144'hyperspace')
+        Regional: CONSTANT_VNT'hyperspace'-region(I237_hyperspace)(I145'hyperspace')
          == region
-        Regional: CONSTANT_VNT'hyperspace'-region(I236_hyperspace)(I144'hyperspace')
+        Regional: CONSTANT_VNT'hyperspace'-region(I237_hyperspace)(I145'hyperspace')
          == region
-        Regional: CONSTANT_VNT'the laundromat-region'-region(I394_laundromat_region)(I290'laundromat-region')
+        Regional: CONSTANT_VNT'the laundromat-region'-region(I395_laundromat_region)(I291'laundromat-region')
          == region
-        Regional: CONSTANT_VNT'the laundromat-region'-region(I394_laundromat_region)(I290'laundromat-region')
+        Regional: CONSTANT_VNT'the laundromat-region'-region(I395_laundromat_region)(I291'laundromat-region')
          == region
 
 
@@ -232,9 +232,9 @@ Phase XII ... Code generation
                                                             Fail: room (~) real number = nothing
                                             Fail: nothing (~) real number = nothing
                                             Fail: room (~) real number = nothing
-        Regional: CONSTANT_VNT'hyperspace'-region(I236_hyperspace)(I144'hyperspace')
+        Regional: CONSTANT_VNT'hyperspace'-region(I237_hyperspace)(I145'hyperspace')
          == region
-        Regional: CONSTANT_VNT'hyperspace'-region(I236_hyperspace)(I144'hyperspace')
+        Regional: CONSTANT_VNT'hyperspace'-region(I237_hyperspace)(I145'hyperspace')
          == region
                                                             Fail: list of numbers (~) number = nothing
                                             Fail: nothing (~) real number = nothing
@@ -289,15 +289,15 @@ Phase XII ... Code generation
 
 ==== Phase XII.21 ... Compiling routines from predicate calculus ====
 
-Providing for a total heap of 32768, given requirement of 29200
+Providing for a total heap of 32768, given requirement of 29712
 
 
 -----------------------------------------------------
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 254 files written as streams.
-CPU time: 850 centiseconds
+Total of 257 files written as streams.
+CPU time: 855 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

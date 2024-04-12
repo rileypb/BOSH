@@ -2,6 +2,8 @@ Swamp Park by Philip Riley begins here.
 
 Use authorial modesty.
 
+Include Snarky Remarks by Philip Riley.
+
 Include Essentials by Philip Riley.
 
 Include New Light by Philip Riley.    
@@ -137,10 +139,15 @@ The laundromat door is indescribable.
 The snarky remark of the laundromat door is "The gateway to paradise, either way you go through it."
 	
 Check going northwest from the strip mall parking lot south when the player does not know break-in-to-laundromat and the laundromat door is front-locked and the laundromat door is back-locked: 
+	now the player knows laundromat-front-door-is-locked;
 	say "A sign on the laundromat door says 'Closed for renovations'." instead;
 	
 Check going northwest from the strip mall parking lot south when the player knows break-in-to-laundromat and the laundromat door is front-locked and the laundromat door is back-locked: 
+	now the player knows laundromat-front-door-is-locked;
 	say "Predictably, the laundromat door is locked." instead;
+
+Before opening the laundromat door when the laundromat door is front-locked:
+	now the player knows laundromat-front-door-is-locked;
 	
 The swamp-facade is a privately-named unenterable room in Parking Lot South. The printed name is "swamp". Understand "swamp/swampy/area/marsh/water/wetland/wet/land" as the swamp-facade. "Swamp Park is, as one might expect, dotted with these little bits of wetland."
 The snarky remark of the swamp-facade is "Swamp Park delivers on its name."

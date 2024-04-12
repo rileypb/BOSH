@@ -6,7 +6,6 @@ Include Conversation Framework by Eric Eve.
 Include Conversational Defaults by Eric Eve.
 Include Complex Listing by Emily Short.
 Include Options Paragraph by Philip Riley.
-Include Snarky Remarks by Philip Riley.
 
 
 Volume 1 - Basics
@@ -24,8 +23,6 @@ A quip can be exhausted.
 A quip can be silent.
 A quip can be uttered.
 
-A thing can be snarkable or unsnarkable. A thing is usually snarkable.
-A quip is usually unsnarkable.
 
 A quip has a text called the comment.
 A quip has a text called the reply.
@@ -59,6 +56,7 @@ rule for reaching inside the room of quips:
 Book 2 - People
 
 A person has a list of quips called the queue.
+A person has a list of texts called the speech history.
 
 Chapter 1 - Relations of Quips
 
@@ -131,11 +129,29 @@ Carry out discussing something:
 	if the latest quip is listed in the queue of the current interlocutor:
 		remove the latest quip from the queue of the current interlocutor;
 	if the noun is not silent:
-		say "[comment of the noun][paragraph break][reply of the noun][paragraph break]";
+		let speech be "[comment of the noun][paragraph break][reply of the noun][paragraph break]";
+		add the substituted form of speech to the speech history of the current interlocutor;
+		say speech;
 	if the latest quip mentions something (called M):
 		set pronouns from M;
 		
 Understand "[any q-available quip]" as discussing.
+
+Volume 2.5 - Recapping conversations
+
+recapping conversation is an action out of world applying to one thing. Understand "recap [any person]" as recapping conversation.
+
+Check recapping conversation:
+	if the noun is not a person:
+		say "That is not a person." instead;
+	if the speech history of the noun is empty:
+		say "There is nothing to recap." instead;
+
+Carry out recapping conversation:
+	repeat with speech running through the speech history of the noun:
+		say "----[line break]";
+		say speech;
+	say "----[line break]";
 
 Volume 3 - Queueing
 

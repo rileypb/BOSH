@@ -1,81 +1,6 @@
 BOSH Hints by Philip Riley begins here.
 
-Include Text Capture by Eric Eve.
-
-A hint topic is a kind of thing. It is privately-named.
-A hint topic has number called the hint level. The hint level is usually 0. 
-A hint topic can be listed or unlisted. A hint topic is usually listed.
-A hint topic can be progressive or non-progressive. A hint topic is usually non-progressive.
-A hint topic has a list of texts called the progression. The progression of a hint topic is usually {}.
-A hint topic has a text called the last hint. The last hint of a hint topic is usually "".
-
-asking for hints about is an action out of world applying to one thing. Understand "hint [any hint topic]" as asking for hints about. 
-
-asking for bogus hints about is an action out of world applying to one topic. Understand "hint [text]" as asking for bogus hints about.
-
-Check asking for bogus hints about:
-	say "There is no hint for that right now." instead;
-
-hinting is an object based rulebook producing texts. The hinting rules have default success.
-
-hinting rules have outcomes go on (no outcome).
-[ hinting rules have outcomes level up (success), no leveling (success), and go on (no outcome). ]
-
-activating is an object based rulebook. The activating rules have outcomes activate (success) and deactivate (failure). The activating rules have default no outcome.
-
-Activating a hint topic (called HT):
-	activate;
-
-Listing all hints is a truth state that varies. Listing all hints is false.
-
-Hint depth is a number that varies. Hint depth is 0.
-
-To list all hints:
-	increment hint depth;
-	now listing all hints is true;
-	say "Hints about the following topics are available:[line break]";
-	repeat with item running through listed hint topics:
-		follow the activating rules for the item;
-		if the rule succeeded:
-			let the current hint be the text produced by the hinting rules for the item;
-			if the rule succeeded and current hint is last hint of item:
-				say "* [item][line break]";
-			otherwise if the rule succeeded:
-				say "* [bold type][item][roman type][line break]";
-	say "(Topics in bold have new hints available.)";
-	now listing all hints is false;
-	decrement hint depth.
-
-Listing hints is an action out of world. Understand "list hints" as listing hints.
-
-Carry out listing hints:
-	list all hints.
-
-Carry out asking for hints about:
-	follow the activating rules for the noun;
-	if the rule succeeded:
-		let current hint be the text produced by the hinting rules for the noun;
-		if the rule succeeded:
-			say current hint;	
-			lb;
-			now the last hint of the noun is current hint;
-		otherwise:
-			say "There is no hint for that right now.";
-	otherwise:
-		say "There is no hint for that right now.";
-
-hinting:
-    rule fails;
-
-hinting a progressive hint topic (called HT):
-	if the hint level of HT is less than the number of entries in the progression of HT:
-		let result be the substituted form of "[entry (hint level of HT + 1) in the progression of the HT]";
-		if listing all hints is false:
-			increment the hint level of HT;
-		rule succeeds with result result;
-	otherwise:
-		rule succeeds with result "[entry (number of entries in the progression of HT) in the progression of HT]";
-	
+Include Hints by Philip Riley.	
 
 The hint-ringing-phone is a hint topic. Understand "ringing/ring/phone" as the hint-ringing-phone. The printed name is "ringing phone".
 
@@ -88,7 +13,7 @@ Hinting the hint-ringing-phone:
 		rule succeeds with result "It would seem that the phone is locked in Faraji's desk.";
 
 Activating the hint-ringing-phone:
-	if the blue flipphone is not handled:
+	if the blue flipphone is not handled and the front office is visited:
 		activate;
 	otherwise:
 		deactivate;
@@ -100,7 +25,7 @@ Hinting the hint-locked-desk:
 	if the player does not know desk-locked or the blue flipphone is handled:
 		make no decision;
 	if player does not know key-is-lost:
-		rule succeeds with result "The desk is locked. Faraji should probably unlock it.";
+		rule succeeds with result "The desk is locked. Faraji should probably unlock it. Maybe someone has a key.";
 	otherwise if player does not know hex-screws:
 		abide by the hinting rules for the hint-locked-desk-no-key;
 	otherwise:
@@ -200,6 +125,12 @@ Activating rule for the hint-get-back-in:
 
 hint-enter-laundromat is a hint topic. Understand "laundromat", "how/-- to/-- enter the/-- laundromat" as the hint-enter-laundromat. The printed name is "how to enter the laundromat".
 
+Activating the hint-enter-laundromat:
+	if the laundromat back room is unvisited and the player knows laundromat-front-door-is-locked:
+		activate;
+	otherwise:
+		deactivate;
+
 hint-try-laundromat-back-door is an unlisted progressive hint topic. The progression is {"Faraji could try the back door of the laundromat.", "It's in the back lot."}.
 
 hint-enter-laundromat-hyper is an unlisted progressive hint topic. The progression is {"If the back door is locked, Faraji will need another way to get in.", "Faraji will need to find a special item to get into the laundromat."}
@@ -227,7 +158,7 @@ Activating the hint-enter-laundromat:
 hint-klimp is a hint topic. Understand "chief/-- huffton/-- klimp", "chief" as the hint-klimp. The printed name is "Chief Klimp".
 		
 Hinting the hint-klimp:
-	if Chief Klimp is nowhere:
+	if Chief Klimp is in the Room of Stuff:
 		rule succeeds with result "Chief Klimp is not in the office yet.";
 	otherwise if BOSH Chief's office is unvisited:
 		rule succeeds with result "Chief Klimp is in the office. Faraji should probably go see him.";
@@ -275,5 +206,52 @@ Hinting the hint-handtruck:
 		rule succeeds with result "To move the handtruck, type PUSH HANDTRUCK <direction>.";
 	otherwise:
 		abide by the hinting rules for the hint-handtruck-no-stairs;
+
+hint-featureless-hyperplane is a hint topic. Understand "featureless hyperplane", "hyperplane", "hyperspace" as the hint-featureless-hyperplane. The printed name is "featureless hyperplane".
+
+Activating the hint-featureless-hyperplane:
+	if the Featureless hyperplane is visited and Field office reception is unvisited:
+		activate;
+	deactivate;
+
+The hint-find-the-pillar is an unlisted progressive hint topic. Understand "pillar", "ethereal pillar" as the hint-find-the-pillar. The printed name is "pillar". The progression is {"Faraji should probably explore the featureless hyperplane.", "Follow the directions toward the distant structure."}.
+
+The hint-find-the-compass is an unlisted progressive hint topic. The progression is {"Faraji seems to have lost the mystic compass. They should probably find it.", "[compass location hint]"}.
+
+To say compass location hint:
+	if the mystic compass is in the Featureless Hyperplane:
+		say "The mystic compass is right here";
+	otherwise if the mystic compass is nowhere:
+		say "The mystic compass is at the Ethereal Pillar on the Featureless Hyperplane";
+	otherwise:
+		say "The mystic compass is in [the location of the mystic compass]";
+
+The hint-find-the-stair is an unlisted progressive hint topic. The progression is {"What does Doris mean by 'Seek the origin'?", "What does the line of symbols, 'o p q d b', mean?", "What does the compass readout, '[symbols for convert entry 1 of hyperplane coords to base five] : [symbols for convert entry 2 of hyperplane coords to base five] : [symbols for convert entry 3 of hyperplane coords to base five]', mean?", "What is the mathematical definition of 'origin'?", "'Origin' might mean the point of intersection of the x, y, and z axes, or the point (0, 0, 0).", "How can Faraji find the origin?", "Does Faraji have a tool that will tell them their location?", "Faraji should probably use the mystic compass.", "The compass shows Faraji's coordinates, (south/north, east/west, back/forth).", "The line of symbols 'o p q d b' tells us what digit is bigger than another. Instead of 'o p q d b', we could say '0 1 2 3 4'.", "The compass readout '[symbols for convert entry 1 of hyperplane coords to base five] : [symbols for convert entry 2 of hyperplane coords to base five] : [symbols for convert entry 3 of hyperplane coords to base five]' tells us Faraji's location in base five, if you're into that math stuff.", "Faraji should move around until they make the compass say 'o o o'.", "Faraji needs to go south until the first coordinate is 'o'.", "Faraji needs to go east until the second coordinate is 'o'.", "Faraji needs to go back until the third coordinate is 'o'."}.
+
+Activating the hint-featureless-hyperplane:
+	if the location is Featureless hyperplane:
+		activate;
+	deactivate;
+
+Hinting the hint-featureless-hyperplane:
+	if the Ethereal Pillar is not seen:
+		abide by the hinting rules for the hint-find-the-pillar;
+	if the Descending Stair is not seen:
+		if the player does not carry the mystic compass:
+			if the mystic compass is handled:
+				[ Lead the player back to the mystic compass. ]
+				abide by the hinting rules for the hint-find-the-compass;
+			otherwise:
+				if the Ethereal Pillar is nowhere:
+					rule succeeds with result "Faraji should go back to the Ethereal Pillar.";
+				otherwise:
+					rule succeeds with result "Faraji should take the Mystic Compass.";
+		otherwise:
+			abide by the hinting rules for the hint-find-the-stair;
+	otherwise:
+		go on;
+			
+
+
 
 BOSH Hints ends here.

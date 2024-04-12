@@ -12,7 +12,9 @@ A room can be snarked.
 
 A room can be snarkable or unsnarkable. A room is usually snarkable.
 
+
 Snarking is an object based rulebook.
+
 
 To snark (O - an object):
 	say "[italic type][bracket][snarky remark of O][close bracket][roman type][paragraph break]";
