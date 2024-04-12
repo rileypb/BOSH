@@ -1141,9 +1141,13 @@ The snarky remark of Doris's note is "Don't they teach penmanship in hyperspace?
 Check giving Tribes of New York to Doris when Doris's note is not off-stage:
 	say "Doris looks at you funny. 'No, bring it and the note to Christy. She'll know what to do with it.'" instead;
 
+
+A tome can be delivered.
+
 After giving Tribes of New York to Doris:
 	say "'Ah, [agent], you've found it! I knew you would. Now we can find out where Daniels is. Actually, Christy can help you with that. Go see her and give her this.' He scribbles a note and hands it to you. 'She'll know what to do.'";
 	now the player carries Doris's note;
+	now Tribes of New York is delivered;
 	now the player carries the Tribes of New York;
 
 Instead of showing Tribes of New York to Doris:

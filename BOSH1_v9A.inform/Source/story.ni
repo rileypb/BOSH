@@ -67,7 +67,7 @@ Include Make Test by Philip Riley.
 Include BOSH Hints by Philip Riley.
 
 Use MAX_OBJ_PROP_COUNT of 128.
-Use MAX_STATIC_DATA of 360000.
+Use MAX_STATIC_DATA of 720000.
 Use MAX_PROP_TABLE_SIZE of 800000.
 Use MAX_NUM_STATIC_STRINGS of 400000.
 Use MAX_SYMBOLS of 200000.

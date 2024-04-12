@@ -250,8 +250,34 @@ Hinting the hint-featureless-hyperplane:
 			abide by the hinting rules for the hint-find-the-stair;
 	otherwise:
 		go on;
-			
 
+The hint-field-office is a progressive hint topic. Understand "field office" as the hint-field-office. The printed name is "field office". The progression is {"Talk to Doris."}.
 
+Activating the hint-field-office:
+	if field office reception is visited and the location is in hyperspace:
+		activate;
+	otherwise:
+		deactivate;
+
+The hint-new-bikers-of-troy is a progressive hint topic. Understand "new bikers of troy", "new/-- bikers", "troy" as the hint-new-bikers-of-troy. The printed name is "New Bikers of Troy". The progression is {"Faraji needs to find a book.", "The book may or may not be titled 'New Bikers of Troy'.", "It might be anywhere, hyperspace or elsewhere.", "Who has books?", "Faraji should check Minerva's office.", "Minerva will allow Faraji to borrow a book", "If the book is not in Minerva's office, maybe Faraji needs to get out of hyperspace.", "Faraji should ask Doris about how to get out of hyperspace.", "Now that Faraji is in Moira's office, why don't they check out the bookshelves?", 
+"Maybe the book isn't named 'New Bikers of Troy' exactly.", "Are there any books you've seen with similar names?", "How about anagrams?", "Faraji needs the book 'Tribes of New York' from Moira's library."}.
+
+Activating the hint-new-bikers-of-troy:
+	if about the mission is exhausted and Tribes of New York is not delivered:
+		activate;
+	deactivate;
+
+hint-utility-closet-dark is a progressive hint topic. 
+Understand "in/-- the/-- dark" as the hint-utility-closet-dark.
+The printed name is "in the dark". The progression is {"How can Faraji see in the dark?", "Maybe Faraji could do the same thing they did last time.", "Faraji should wear the astral lenses."}.
+
+Activating the hint-utility-closet-dark:
+	if the location is the utility closet and the utility closet is dark and the astral lenses are not worn and the closet door is closed:
+		activate;
+	otherwise:
+		deactivate;
+
+hint-utility-closet-trapped is a progressive hint topic. 
+Understand "trapped/-- in/-- the/-- utility/-- closet" as the hint-utility-closet-trapped. The printed name is "trapped in the utility closet". The progression is {"How did Faraji get past a locked door last time?", "Faraji should knock on the door."}.
 
 BOSH Hints ends here.

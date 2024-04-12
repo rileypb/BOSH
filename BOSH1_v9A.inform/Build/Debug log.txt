@@ -52,7 +52,7 @@ I've also read Building Facades by Philip Riley, which is 167 words long.
 I've also read Snarky Remarks by Philip Riley, which is 230 words long.
 I've also read Followup Questions by Philip Riley, which is 248 words long.
 I've also read Simple Conversation by Philip Riley, which is 2302 words long.
-I've also read Hyperspace by Philip Riley, which is 10985 words long.
+I've also read Hyperspace by Philip Riley, which is 10997 words long.
 I've also read BOSH Facts by Philip Riley, which is 156 words long.
 I've also read Swamp Park by Philip Riley, which is 6453 words long.
 I've also read Margaret by Philip Riley, which is 1966 words long.
@@ -61,7 +61,7 @@ I've also read I Can Dig It by Philip Riley, which is 58 words long.
 I've also read Overlook by Philip Riley, which is 763 words long.
 I've also read Gender Options by Nathanael Nerode, which is 7679 words long.
 I've also read Make Test by Philip Riley, which is 288 words long.
-I've also read BOSH Hints by Philip Riley, which is 2091 words long.
+I've also read BOSH Hints by Philip Riley, which is 2380 words long.
 I've also read Hearing by Philip Riley, which is 1254 words long.
 I've also read PBR Common by Philip Riley, which is 109 words long.
 I've also read Walls by Philip Riley, which is 901 words long.
@@ -198,6 +198,10 @@ Phase XII ... Code generation
          == region
         Regional: CONSTANT_VNT'the laundromat-region'-region(I395_laundromat_region)(I291'laundromat-region')
          == region
+        Regional: CONSTANT_VNT'hyperspace'-region(I237_hyperspace)(I145'hyperspace')
+         == region
+        Regional: CONSTANT_VNT'hyperspace'-region(I237_hyperspace)(I145'hyperspace')
+         == region
 
 
 ==== Phase XII.7 ... Compiling the rulebooks ====
@@ -289,7 +293,7 @@ Phase XII ... Code generation
 
 ==== Phase XII.21 ... Compiling routines from predicate calculus ====
 
-Providing for a total heap of 32768, given requirement of 29712
+Providing for a total heap of 32768, given requirement of 30480
 
 
 -----------------------------------------------------
@@ -297,7 +301,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 257 files written as streams.
-CPU time: 855 centiseconds
+CPU time: 907 centiseconds
 
 
 That concludes the debugging log from this run of Inform.
