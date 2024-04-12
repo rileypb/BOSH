@@ -21,5 +21,6 @@ store-sells-screwdrivers	"The store sells a screwdriver."
 laundromat-back-door-is-locked	"The back door to the laundromat is locked."
 handtruck-no-stairs	"The handtruck can't go up or down stairs."
 laundromat-front-door-is-locked	"The front door to the laundromat is locked."
+skillet-door-locked	"The door to Henry's Hot Skillet is locked."
 
 BOSH Facts ends here.

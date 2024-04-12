@@ -1954,6 +1954,9 @@ the Skillet door is a closed locked openable lockable scenery door. It is south 
 "An old-fashioned door, with a brass keyhole."
 The snarky remark of the Skillet door is "[if the Skillet door is locked]Open up! I'm hungry![otherwise]It's a door.[end if][line break]".
 
+Check opening the Skillet door when the Skillet door is locked:
+	now the player knows skillet-door-locked;
+
 The lunch counter is a scenery supporter in Henry's Hot Skillet. "A typical mid-twentieth-century lunch counter."
 The snarky remark of the lunch counter is "Why isn't BOSH investigating the death of the American diner?"
 
@@ -2064,8 +2067,17 @@ Does the player mean doing something to the gleaming floor:
 The sale posters are scenery in Rolle's Department Store. "'50% off everything in the store!'"
 The snarky remark of the sale posters is "Even the floor waxer?"
 
-The floor waxer is a fixed in place thing in Rolle's Department Store. "A floor waxer sits in the center of the gleaming floor." The description is "This is a bulky, heavy-duty machine with a large, round brush head, designed for durability and the ability to polish vast floor areas to a high shine."
+The floor waxer is a fixed in place device in Rolle's Department Store. "A floor waxer sits in the center of the gleaming floor[if the floor waxer is switched on]. It is running[end if]." 
+The description is "This is a bulky, heavy-duty machine with a large, round brush head, designed for durability and the ability to polish vast floor areas to a high shine[if the floor waxer is switched on]. It is running[end if]."
 The snarky remark is "I'm sure I've seen this floor waxer somewhere before."
+
+Report switching on the floor waxer:
+	say "Faraji flips the switch on the floor waxer. It hums to life, and the brush head begins to spin.";
+	stop the action;
+
+Report switching off the floor waxer:
+	say "Faraji flips the switch on the floor waxer. It powers down, and the brush head stops spinning.";
+	stop the action;
 
 Instead of pushing the floor waxer to north:
 	say "[We] can't manage to open the door while pushing the floor waxer, or get it over the threshold.";

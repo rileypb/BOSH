@@ -294,7 +294,7 @@ Activating the hint-enigma-lake:
 	otherwise:
 		deactivate;
 
-hint-work-schedule is a progressive hint topic. Understand "work/-- schedule" as the hint-work-schedule. The printed name is "work schedule". The progression is {"It looks like a list of names assigned to days.", "What use is that when the town is about to be flooded?", "Maybe one of the names is significant."}.
+hint-work-schedule is a progressive hint topic. Understand "work/-- schedule" as the hint-work-schedule. The printed name is "work schedule". The progression is {"It looks like a list of names assigned to days.", "What use is that when the town is about to be flooded?", "Maybe one of the names is significant.", "Remember the name 'Bill Thompson'."}.
 
 Activating the hint-work-schedule:
 	if the work schedule is seen and the copper key is not handled:
@@ -302,12 +302,28 @@ Activating the hint-work-schedule:
 	otherwise:
 		deactivate;
 
-hint-backpack is a progressive hint topic. Understand "backpack", "back/-- pack" as the hint-backpack. The printed name is "backpack". The progression is {"Faraji might look inside.", "I wonder what the red key is for? Faraji better take it.", "Have you examined the backpack?", "Better remember the initials 'WGT'"}.
+hint-backpack is a progressive hint topic. Understand "backpack", "back/-- pack" as the hint-backpack. The printed name is "backpack". The progression is {"Faraji might look inside.", "Ah, a key to a gym locker. Faraji better take it.", "Has Faraji examined the backpack?", "Better remember the initials 'WGT'"}.
 	
 Activating the hint-backpack:
 	if the backpack is seen and the copper key is not handled:
 		activate;
 	otherwise:
 		deactivate;
+
+hint-get-into-skillet is a progressive hint topic. Understand "get/-- into/-- henry's hot/-- skillet/--" as the hint-get-into-skillet. The printed name is "get into Henry's". 
+The progression is {"Faraji could try knocking on the door.", "Okay then. Two options: Faraji finds a key, or finds another entrance.", "Faraji will need to search a good portion of the town to find a key.", "The key is not inside a building.", "But it is inside something.", "The key is inside the glove compartment, inside the abandoned truck, at the northeastern end of town."}.
+
+Activating hint-get-into-skillet:
+	if the player knows skillet-door-locked and the skillet door is locked:
+		activate;
+	otherwise:
+		deactivate;
+
+hint-floor-waxer is a progressive hint topic. Understand "what/-- use/-- is/-- the/-- floor/-- waxer" as the hint-floor-waxer. The printed name is "what use is the floor waxer". The progression is {"Has Faraji tried turning on the floor waxer?", "And then turning it off again?", "What about pushing it around?", "Finally, maybe Faraji could push it out of the room.", "No? Well then, maybe it's really not useful."}.
+
+activating hint-floor-waxer:
+	if the location is Rolle's Department Store:
+		activate;
+	deactivate;
 
 BOSH Hints ends here.
