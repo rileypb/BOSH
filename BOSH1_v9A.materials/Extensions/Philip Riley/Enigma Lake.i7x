@@ -289,6 +289,7 @@ The lake-shore-1 is scenery in Solvay-Road-by-the-lake. "The lake shore is rocky
 It is unsnarkable.
 
 The foliage is scenery in Solvay-Road-by-the-lake. "The foliage is thick and green, with a few small flowers growing among the leaves." It is privately-named. Understand "tree/trees/bush/bushes" as foliage.
+The foliage is unsnarkable.
 
 The lake-scenery-1 is scenery in Solvay-Road-by-the-lake. "The lake is dark and still, reflecting the moonlight." It is privately-named. The printed name is "lake".
 The snarky remark of the lake-shore-1 is "It's just waiting for me to look away, and then WHAM! A flood."
@@ -346,6 +347,7 @@ The narrow bed is scenery in the dirty shack. "Clean enough, but awfully narrow,
 The snarky remark of the narrow bed is "How often does he fall out of bed, I wonder?"
 
 The sink is a scenery container in the dirty shack. "The sink is piled high with dirty dishes."
+The snarky remark of the sink is "If you get enough dishes in there, you can no longer physically wash them. Problem solved."
 
 The sledgehammer is in the dirty shack. Understand "hammer" as sledgehammer. The description is "A heavy sledgehammer, the head of which is covered in rust."
 The snarky remark of the sledgehammer is "I'm sure violence is the answer to something. Let's go look."
@@ -683,6 +685,7 @@ A rule for snarking First Utilitarian Church of Enigma Lake:
 	rule succeeds;
 
 Some religious art is scenery in First Utilitarian Church of Enigma Lake. "The best piece in the bunch is a painting of a lizard person being smote by a bolt of lightning."
+The snarky remark of the religious art is "Do you think they sell prints in the gift shop?"
 
 Instead of doing something other than examining to the doll-fly:
 	say "[We] [can't] get close enough to [the doll-fly] to do that.";
@@ -1036,6 +1039,7 @@ The snarky remark of the steeple is "I wonder if I can see my house from here."
 The x-coordinate of the steeple is 2. The y-coordinate of the steeple is 1.
 
 Some stained-glass-window-steeples are scenery in the steeple. They are privately-named. The printed name is "stained glass windows". Understand "stained/glass/windows" as stained-glass-window-steeples. "The steeple is surrounded by the typical Utilitarian perfectly clear stained glass windows."
+stained-glass-window-steeples are unsnarkable.
 
 The telescope is in the tripod. The description is "A small telescope suitable for amateur astronomy[if the content of the tripod is the telescope]. It's mounted on a tripod[end if]."
 The snarky remark of the telescope is "What's the point of looking at the stars? They're all the same."
@@ -1232,6 +1236,7 @@ The snarky remark of the Lake at Ridge is "What ridge? I don't see a ridge."
 The x-coordinate of the Lake at Ridge is 1. The y-coordinate of the Lake at Ridge is 2.
 
 The ridge-path-scenery is scenery in the Lake at Ridge. It is privately-named. The printed name is "path". Understand "little/-- path" as the ridge-path-scenery. "The lake shore path runs off to the west."
+The ridge-path-scenery is unsnarkable.
 
 To say glove compartment state:
 	if the glove compartment is open:
@@ -1310,12 +1315,15 @@ The workshed-facade is a building facade. It is in Lake Shore North of the Park.
 The snarky remark of the workshed-facade is "Groovy."
 
 The moon is scenery in the lake shore north of the park. "The moon is a sliver in the sky, casting a silvery light over the water."
+The moon is unsnarkable.
 
 road-scenery is scenery in the lake shore north of the park. "A road can be seen to the east."
 It is privately-named. The printed name is "road". Understand "road" as road-scenery.
+The road-scenery is unsnarkable.
 
 enigma-park-scenery is scenery in the lake shore north of the park. "The park is to the south."
 It is privately-named. The printed name is "park". Understand "enigma/park" as enigma-park-scenery.
+The enigma-park-scenery is unsnarkable.
 
 
 
@@ -1325,6 +1333,7 @@ the workshed is a leavable room. It has egress northwest. It is in ELR. It is in
 The snarky remark of the workshed is "I wonder if there's a chainsaw in here."
 
 The light bulb is scenery in the workshed. "A single light bulb hangs from the ceiling, casting a dim light over the room."
+
 
 Understand "building/shed" as the workshed.
 
@@ -1493,8 +1502,10 @@ The snarky remark of the Lake Shore West is "Haha, come and get me, lake. I dare
 The x-coordinate of the Lake Shore West is -1. The y-coordinate of the Lake Shore West is 2.
 
 The town-lake-shore-scenery is scenery in the Lake Shore West. "The town, empty and silent, lies to the south." It is privately-named. The printed name is "town". Understand "town" as town-lake-shore-scenery.
+The town-lake-shore-scenery is unsnarkable.
 
 solvay-road-scenery is scenery in the Lake Shore West. "Solvay Road is west of here." It is privately-named. The printed name is "Solvay Road". Understand "solvay/road" as solvay-road-scenery.
+The solvay-road-scenery is unsnarkable.
 
 Book 25 - Horton Family House Kitchen
 
@@ -1569,6 +1580,7 @@ Instead of looking under the parlor table:
 The kitchen facade is a building facade. It is in Horton Family House Parlor. It is privately-named. The printed name is "kitchen". Understand "kitchen" as kitchen facade. "The kitchen is to the north."
 	The kitchen facade fronts Horton Family House Kitchen.
 	It is enterable from Horton Family House Parlor.
+The snarky remark of the kitchen facade is "It's slightly less creepy than the parlor. Let's go there."
 
 The Book of Weird Names is on the parlor table. The printed name is "[italic type]The Book of Weird Names[roman type]". It is proper-named. It is unsnarkable. Understand "strange-looking/strange/looking" as the Book of Weird Names.
 
@@ -1992,6 +2004,7 @@ The description is "This is the epitome of the homey small-town diner of times g
 Understand "diner/restaurant" as Henry's Hot Skillet.
 
 The diner staircase is scenery in Henry's Hot Skillet. "A staircase leads up, probably to the roof." 
+The snarky remark of the diner staircase is "I bet the roof has a great view of... the nearby roofs."
 
 The snarky remark of Henry's Hot Skillet is "It's a diner without any food or furniture. So, just a room, really."
 
@@ -2148,7 +2161,7 @@ Instead of pushing the floor waxer to north:
 	say "[We] can't manage to open the door while pushing the floor waxer, or get it over the threshold.";
 
 The big letters are scenery in Rolle's Department Store. "Big letters on the wall spell out 'ROLLE'S'." 
-
+The snarky remark of the big letters is "Wow, ROLLE'S is just an anagram of... wait, no it isn't."
 
 
 Book 36 - Public Gymnasium

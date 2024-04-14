@@ -2081,7 +2081,7 @@ When play begins:
 			if the snarky remark of X is "":
 				say "ROOM [X][line break]";
 		repeat with X running through snarkable things:
-			if X is not a subject and X is not a hint topic and the snarky remark of X is "":
+			if X is not a subject and X is not a hint topic and X is not a quip and the snarky remark of X is "":
 				say "THING [X][line break]";
 		lb;
 		say ">>> NO Description <<<[line break]";
