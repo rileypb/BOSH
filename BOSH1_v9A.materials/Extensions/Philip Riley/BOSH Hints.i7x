@@ -328,7 +328,7 @@ activating hint-floor-waxer:
 		activate;
 	deactivate;
 
-hint-threaded-socket is a progressive hint topic. Understand "threaded/-- socket" as the hint-threaded-socket. The printed name is "threaded socket". The progression is {"You're probably wondering what goes in the threaded socket.", "You'll know when you see it."}.
+hint-threaded-socket is a progressive hint topic. Understand "threaded/-- socket" as the hint-threaded-socket. The printed name is "threaded socket". The progression is {"You're probably wondering what goes in the threaded socket.", "You'll know it when you see it."}.
 
 Activating hint-threaded-socket:
 	if the threaded socket is seen and the player does not know rusty-resonator-has-been-activated:

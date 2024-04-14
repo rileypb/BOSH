@@ -2037,7 +2037,7 @@ Book 21 - Not For Release
  
 [ Include BOSH Tests by Philip Riley. ]
 
-DEBUG is true.
+DEBUG is false.
 
 AUDIT is a truth state that varies.
 AUDIT is false.

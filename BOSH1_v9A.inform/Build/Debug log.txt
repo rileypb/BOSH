@@ -56,12 +56,12 @@ I've also read Hyperspace by Philip Riley, which is 11064 words long.
 I've also read BOSH Facts by Philip Riley, which is 179 words long.
 I've also read Swamp Park by Philip Riley, which is 6453 words long.
 I've also read Margaret by Philip Riley, which is 1966 words long.
-I've also read Enigma Lake by Philip Riley, which is 27515 words long.
+I've also read Enigma Lake by Philip Riley, which is 27669 words long.
 I've also read I Can Dig It by Philip Riley, which is 58 words long.
 I've also read Overlook by Philip Riley, which is 763 words long.
 I've also read Gender Options by Nathanael Nerode, which is 7679 words long.
 I've also read Make Test by Philip Riley, which is 288 words long.
-I've also read BOSH Hints by Philip Riley, which is 2904 words long.
+I've also read BOSH Hints by Philip Riley, which is 2905 words long.
 I've also read Hearing by Philip Riley, which is 1254 words long.
 I've also read PBR Common by Philip Riley, which is 109 words long.
 I've also read Walls by Philip Riley, which is 901 words long.
@@ -297,7 +297,7 @@ Phase XII ... Code generation
 
 ==== Phase XII.21 ... Compiling routines from predicate calculus ====
 
-Providing for a total heap of 32768, given requirement of 32272
+Providing for a total heap of 32768, given requirement of 32016
 
 
 -----------------------------------------------------
@@ -305,7 +305,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 259 files written as streams.
-CPU time: 883 centiseconds
+CPU time: 940 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

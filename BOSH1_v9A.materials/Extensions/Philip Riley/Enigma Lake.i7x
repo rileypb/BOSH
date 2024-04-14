@@ -747,6 +747,9 @@ Understand the secret first name property as describing the doll-fly when the do
 Understand the secret last name property as describing the doll-fly when the doll-fly is named.
 The printed name of the doll-fly is "[if the doll-fly is named][secret name of the doll-fly][otherwise]doll-fly[end if]".
 
+Rule for writing a paragraph about the doll-fly:
+	say "[The doll-fly] buzzes menacingly around the sanctuary, its eyes glowing with an eerie light.";
+
 Before doing something when the doll-fly is not named and the location is First Utilitarian Church of Enigma Lake and the doll-fly is in the location:
 	now the secret name of the doll-fly is the doll-fly-name;
 	now the doll-fly is named;
@@ -773,7 +776,7 @@ Instead of saying hello to the doll-fly:
 
 Before answering the doll-fly that something:
 	if the topic understood in lower case is the incantation of the doll-fly in lower case:
-		say "Upon hearing the incantation '[incantation of the doll-fly]', [the doll-fly] wails a high-pitched, mournful sound, and then winks out of existence.";
+		say "Upon hearing the incantation [italic type][incantation of the doll-fly][roman type], [the doll-fly] wails a high-pitched, mournful sound, and then winks out of existence.";
 		now the doll-fly is off-stage;
 		stop the action;
 	otherwise:
@@ -783,7 +786,7 @@ Before answering the doll-fly that something:
 Instead of doing something other than taking or attacking to the doll-fly when action requires a touchable noun:
 	say "[We] can't get close enough to [the doll-fly] to touch it.";
 
-Instead of doing something when the doll-fly is in the location:
+[ Instead of doing something when the doll-fly is in the location:
 	if the current action is going west:
 		continue the action;
 	if the current action is answering the doll-fly that something:
@@ -792,7 +795,16 @@ Instead of doing something when the doll-fly is in the location:
 		continue the action; ]
 	if the current action is examining the doll-fly:
 		continue the action;
-	say "[The doll-fly] prevents Faraji from doing that." instead;
+	if the current action is taking inventory:
+		continue the action;
+	if the current action is looking:
+		continue the action;
+	if the current action is waiting:
+		continue the action;
+	if the current action is examining:
+		continue the action;
+
+	say "[The doll-fly] prevents Faraji from doing that." instead; ]
 
 After reading a command:
 	if the player's command in lower case is the incantation of the doll-fly in lower case:
@@ -1584,39 +1596,63 @@ The Book of Weird Names is on the parlor table. The printed name is "[italic typ
 
 To stop is a verb.
 
-The description is "A book with a plain cover, titled [italic type]The Book of Weird Names[roman type]. No author is listed. [paragraph break]Flipping through the book, it appears that each page consists of a name, a drawing of a strange creature, and below that a word in a strange, unknown language. The text is written in a spidery, crabbed hand, and is difficult to read.[paragraph break][We] [stop] on one that reads [italic type][creature name][roman type] above a drawing of [strange creature], below which is written [italic type][incantation].[roman type]";
+Instead of examining the Book of Weird Names:
+	say "A book with a plain cover, titled [italic type]The Book of Weird Names[roman type]. No author is listed. [paragraph break]Flipping through the book, it appears that each page consists of a name, a drawing of a strange creature, and below that a word in a strange, unknown language. The text is written in a spidery, crabbed hand, and is difficult to read.";
+	let name be the creature name;
+	say ">>> [name] <<<";
+	let creature be the strange creature;
+	let incantation be the strange incantation;
+	say "[incantation] <<<";
+	say "[paragraph break]Faraji stops on one that reads [italic type][name][roman type] above a drawing of [creature], below which is written [italic type][incantation][roman type].[first time]
+
+	Faraji can also LOOK UP a creature name IN THE BOOK OF WEIRD NAMES to see the creature and incantation.[only]";
+	choose a blank row in the Table of Weird Names;
+	now the name entry is name;
+	now the description entry is creature;
+	now the incantation entry is incantation;
+
+
+
+[ The description is "A book with a plain cover, titled [italic type]The Book of Weird Names[roman type]. No author is listed. [paragraph break]Flipping through the book, it appears that each page consists of a name, a drawing of a strange creature, and below that a word in a strange, unknown language. The text is written in a spidery, crabbed hand, and is difficult to read.[paragraph break][We] [stop] on one that reads [italic type][creature name][roman type] above a drawing of [strange creature], below which is written [italic type][incantation].[roman type][first time]
+
+Faraji can also LOOK UP a creature name IN THE BOOK OF WEIRD NAMES to see the creature and incantation.[only]"; ]
 
 The first name parts is a list of text that varies. The second name parts is a list of text that varies. The third name parts is a list of text that varies. The creature types is a list of text that varies. The body parts is a list of text that varies.
 The first name parts are {"Dag", "Gor", "Zor", "Zag", "Zog", "Zig", "Zag", "Cth", "N't", "N'k", "Ad", "Bll", "Cr", "As", "Kl"}.
 The second name parts are {"ag", "or", "ar", "og", "ig", "ag", "th", "gth", "kth", "uth", "oth", "thuk", "shaka", "fats", "steen", "don" }.
 The third name parts are {"Distressing", "Unsettling", "Impertinent", "Uninhibited", "Pugnacious", "Unspeakable", "Unpronounceable", "Unmentionable", "Smelly", "Unpleasant", "Gross", "Horrible", "Squeamish", "Unsavory", "Unpalatable", "Wistful", "Abnormal", "Unnatural", "Unusual", "Uncommon", "Unconventional", "Unorthodox", "Unprecedented", "Unheard of", "Unseen", "Hidden", "Ornery", "Unruly", "Unmanageable", "Uncontrollable", "Unpredictable", "Unreliable", "Untrustworthy", "Unfaithful", "Untrue", "Unreal", "Unrealistic", "Unreasonable", "Unjust", "Unfair", "Unkind", "Unfriendly", "Unpleasant", "Uncomfortable", "Unhappy", "Unfortunate", "Unlucky", "Unsuccessful", "Frustrating", "Unsatisfactory", "Unsatisfying", "Unfulfilling", "Unrewarding", "Ungrateful", "Unappreciative", "Unthankful", "Arrogant", "Bashful", "Boastful", "Disrespectful", "Dishonest", "Disloyal", "Disobedient", "Disorderly", "Disorganized", "Cantankerous", "Contrary", "Cranky", "Cross", "Crabby", "Crusty", "Crotchety", "Grumpy", "Irritable", "Peevish", "Perverse", "Petulant", "Quarrelsome", "Short-tempered", "Sour", "Sullen", "Surly", "Testy", "Tetchy", "Touchy", "Uncooperative", "Unyielding", "Unaccommodating", "Uncompromising", "Unforgiving", "Unrelenting", "Unsympathetic", "Unemotional", "Unfeeling", "Unresponsive", "Uncommunicative", "Unexpressive", "Unenthusiastic", "Uninterested", "Unconcerned", "Uninvolved", "Uncommitted", "Unattached", "Unconnected", "Tactless", "Thoughtless", "Insensitive", "Inconsiderate", "Selfish", "Self-centered", "Self-absorbed", "Self-indulgent", "Self-serving", "Self-seeking", "Conceited", "Vain", "Proud", "Haughty", "Egotistical", "Egocentric", "Egoistic", "Pointless", "Purposeless", "Meaningless", "Worthless", "Valueless", "Insignificant", "Trivial", "Unimportant", "Negligible", "Paltry", "Piddling", "Piffling", "Puny", "Miserable", "Wretched", "Pathetic" }
 
-To say creature name:
+To decide what text is the creature name:
 	sort the first name parts in random order;
 	sort the second name parts in random order;
 	sort the third name parts in random order;
-	say "[entry 1 of the first name parts][entry 1 of the second name parts] the [entry 1 of the third name parts]";
+	decide on the substituted form of "[entry 1 of the first name parts][entry 1 of the second name parts] the [entry 1 of the third name parts]";
 
 The creature types are {"fish", "lizard", "man", "doll", "dog", "cat", "bird", "bat", "rat", "snake", "spider", "worm", "slug", "snail", "beetle", "fly", "moth", "butterfly", "bee", "wasp", "hornet", "mosquito", "gnat", "flea", "tick", "maggot", "larva", "pupa", "caterpillar", "grub", "weevil", "thrip", "midge", "cricket", "grasshopper", "locust", "cicada", "dragonfly", "lion", "tiger", "bear", "woman", "child", "rhinoceros", "hippopotamus", "giraffe", "zebra", "kangaroo", "koala", "wombat", "platypus", "sloth", "hyena", "jackal", "wolf", "fox", "coyote", "mechanical man", "golem" }.
 The body parts are {"head", "neck", "shoulders", "arms", "elbows", "wrists", "hands", "fingers", "thumbs", "chest", "back", "stomach", "belly", "waist", "hips", "thighs", "knees", "shins", "calves", "ankles", "feet", "toes", "heels", "soles", "toenails", "fingernails", "hair", "eyebrows", "eyelashes", "eyes", "nose", "nostrils", "cheeks", "lips", "teeth", "tongue", "throat", "ears", "earlobes"}.
 
-To say strange creature:
+To decide what text is the strange creature:
 	sort the creature types in random order;
 	sort the body parts in random order;
-	say "a [entry 1 of the creature types] with the [entry 1 of the body parts] of a [entry 2 of the creature types]";
+	decide on the substituted form of "a [entry 1 of the creature types] with the [entry 1 of the body parts] of a [entry 2 of the creature types]";
 
 The incantations is a list of texts that varies.
 The incantations are { "bara ba jagal", "fooblitzky", "tuvix", "thelonium", "gravlax", "brobdingnag", "plover", "xvart", "guncho", "flibbertigibbet" }.
 
-To say incantation:
+To decide what text is the strange incantation:
+	say "GOO";
 	sort the first name parts in random order;
 	sort the second name parts in random order;
 	if a random chance of 1 in 2 succeeds:
-		say "[entry 1 of the first name parts][entry 1 of the second name parts] [entry 2 of the second name parts in title case][entry 2 of the second name parts][entry 2 of the first name parts in lower case]";
+		decide on the substituted form of "[entry 1 of the first name parts][entry 1 of the second name parts] [entry 2 of the second name parts in title case][entry 2 of the second name parts][entry 2 of the first name parts in lower case]";
 	otherwise:
-		say "[entry 1 of the first name parts][entry 1 of the second name parts] [entry 2 of the second name parts] [entry 2 of the first name parts][entry 3 of the second name parts][entry 3 of the first name parts in lower case]";
+		decide on the substituted form of "[entry 1 of the first name parts][entry 1 of the second name parts] [entry 2 of the second name parts] [entry 2 of the first name parts][entry 3 of the second name parts][entry 3 of the first name parts in lower case]";
 
 Instead of consulting the book of weird names about something:
+	repeat through Table of Weird Names:
+		if the name entry in lower case is the topic understood in lower case:
+			say "[we] [look] up [italic type][the name entry][roman type] in the book. Below a drawing of [description entry], the word [italic type][incantation entry][roman type] is written.";
+			stop;
 	if the doll-fly is not named:
 		say "[we] [look] up '[the topic understood]' in the book, but [find] nothing. Perhaps [we] [are] spelling it wrong.";
 	otherwise if the topic understood in lower case is not the secret name of the doll-fly in lower case:
@@ -1624,7 +1660,11 @@ Instead of consulting the book of weird names about something:
 	otherwise:
 		sort the incantations in random order;
 		now the incantation of the doll-fly is entry 1 of the incantations;
-		say "[we] [look] up '[secret name of the doll-fly]' in the book. Below a drawing of a doll with the head of a fly, the incantation '[incantation of the doll-fly]' is written.";
+		say "[we] [look] up [italic type][secret name of the doll-fly][roman type] in the book. Below a drawing of a doll with the head of a fly, the word [italic type][incantation of the doll-fly][roman type] is written.";
+
+Table of Weird Names
+name (a text)	description (a text)	incantation (a text)
+with 100 blank rows.
 
 Book 25.5 - Horton Family House Second Floor
 
