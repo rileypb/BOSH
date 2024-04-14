@@ -326,4 +326,32 @@ activating hint-floor-waxer:
 		activate;
 	deactivate;
 
+hint-threaded-socket is a progressive hint topic. Understand "threaded/-- socket" as the hint-threaded-socket. The printed name is "threaded socket". The progression is {"You're probably wondering what goes in the threaded socket.", "You'll know when you see it."}.
+
+Activating hint-threaded-socket:
+	if the threaded socket is seen and the player does not know rusty-resonator-has-been-activated:
+		activate;
+	otherwise:
+		deactivate;
+
+[ hint-wires is a hint topic. Understand "wires", "wire" as the hint-wires. The printed name is "wires". The progression is {"I wonder what was connected to the wires before.", "Faraji might look on the roof for a clue.", "It looks like the wires run from the rooftop aerial. Too bad there's no TV to hook up.", "What could Faraji connect to the wires instead?", "Faraji should have a close look at the aerial.", "It looks like there's a strange socket attached to the aerial.", "Maybe it needs power.", "Perhaps Faraji could use the wires to supply power to the aerial.", "Faraji should find a power source to connect to the wires.", "Has Faraji had a look at the abandoned truck in the northeastern part of town?", "Faraji should look under the hood of the truck.", "Or maybe that's not going to work after all.", "Faraji should look for a clean battery.", "Where else could Faraji find a battery?", "How about Faraji's car? It's parked right outside the BOSH offices.", "Oh no! How will Faraji get back to BOSH?", "The recall button will take them to the hyperspace field office, where they can use the auxiliary portal to return to BOSH.", "Once they have the clean battery, Faraji can back by using the recall button and the Portal to the Past.", "Then they can connect the battery to the wires.", "ATTACH BATTERY TO WIRES"}.
+
+Activating hint-wires:
+	if the wires are seen and the clean battery is not hooked up:
+		activate;
+	deactivate;
+
+hint-wires-first is an unlisted progressive hint topic. The progression is {"I wonder what was connected to the wires before.", "Faraji might look on the roof for a clue.", "It looks like the wires run from the rooftop aerial. Too bad there's no TV to hook up.", "What could Faraji connect to the wires instead?", "Faraji should have a close look at the aerial.", "It looks like there's a strange socket attached to the aerial.", "Maybe it needs power.", "Perhaps Faraji could use the wires to supply power to the aerial.", "Faraji should find a power source to connect to the wires.", "Has Faraji had a look at the abandoned truck in the northeastern part of town?", "Faraji should look under the hood of the truck."}
+
+[ hint-wires-dirty is an unlisted progressive hint topic. The progression is {" ]
+
+hinting hint-wires when the dirty battery is not seen:
+	abide by the hinting rules for hint-wires-first;
+
+hinting hint-wires when the dirty battery is seen:
+	if the clean battery is not seen:
+		abide by the hinting rules for hint-wires-dirty;
+	abide by the hinting rules for hint-wires-clean; ]
+
+
 BOSH Hints ends here.

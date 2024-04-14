@@ -22,5 +22,7 @@ laundromat-back-door-is-locked	"The back door to the laundromat is locked."
 handtruck-no-stairs	"The handtruck can't go up or down stairs."
 laundromat-front-door-is-locked	"The front door to the laundromat is locked."
 skillet-door-locked	"The door to Henry's Hot Skillet is locked."
+dirty-battery	"The truck battery has leaked acid."
+rusty-resonator-has-been-activated	"The rusty resonator has been activated."
 
 BOSH Facts ends here.

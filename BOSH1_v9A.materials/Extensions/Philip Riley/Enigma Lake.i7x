@@ -170,7 +170,7 @@ To beam description, in the park:
 		otherwise:
 			say "Bright beams of light shoot from [source string], striking the obelisk in the park. The crystal is glowing [crystal glow].";
 
-Every turn when beam count > 0 and the location is outdoors and the location is in ELR and the location is not Enigma Park:
+After printing the locale description when beam count > 0 and the location is outdoors and the location is in ELR and the location is not Enigma Park:
 	beam description;
 
 The snarky remark of Enigma Park is "It's not Central Park, but it's not bad."
@@ -1282,6 +1282,9 @@ The hood contains a dirty car battery.
 The description of the dirty battery is "The battery is dirty and corroded. Acid has leaked from the terminals. It's unlikely to be of any use."
 The snarky remark of the dirty battery is "I wonder if it's still under warranty."
 
+After examining the dirty battery:
+	now the player knows dirty-battery;
+
 Instead of doing something to the dirty battery when the action requires a touchable noun:
 	say "With so much acid on the battery, it's probably best not to touch it with bare hands.";
 
@@ -1944,14 +1947,17 @@ The snarky remark is "You know what's fun? Tapping a tuning fork and holding it 
 Book 33 - Henry's Hot Skillet
 
 Henry's Hot Skillet is a room. It is in ELR. It is indoors.
-The description is "This is the epitome of the homey small-town diner of times gone by, except for the lack of all furniture, cooking implements, food, decor, and so on. There is a staircase leading up. A pair of insulated wires hangs from the ceiling at one end of the counter[if the clean battery is hooked up]. The wires are attached to a battery resting on the counter[end if]."
+The description is "This is the epitome of the homey small-town diner of times gone by, except for the lack of all furniture, cooking implements, food, decor, and so on. There is a staircase leading up. A pair of insulated wires hangs from the ceiling at one end of the counter[if the clean battery is hooked up]. The wires are attached to a battery resting on the counter[end if][if the clean battery is on the lunch counter and the clean battery is hooked up]. The wires are attached to a battery resting on the counter[otherwise if the clean battery is on the lunch counter]. A battery rests on the counter[end if]." 
+Understand "diner/restaurant" as Henry's Hot Skillet.
+
+The diner staircase is scenery in Henry's Hot Skillet. "A staircase leads up, probably to the roof." 
 
 The snarky remark of Henry's Hot Skillet is "It's a diner without any food or furniture. So, just a room, really."
 
 The x-coordinate of Henry's Hot Skillet is -1. The y-coordinate of Henry's Hot Skillet is -2.
 
 the Skillet door is a closed locked openable lockable scenery door. It is south of Main at Solvay and north of Henry's Hot Skillet. The Skillet door has matching key the brass key.
-"An old-fashioned door, with a brass keyhole."
+"An old-fashioned swinging door, it reads 'Henry's Hot Skillet'."
 The snarky remark of the Skillet door is "[if the Skillet door is locked]Open up! I'm hungry![otherwise]It's a door.[end if][line break]".
 
 Check opening the Skillet door when the Skillet door is locked:
@@ -1966,6 +1972,8 @@ The snarky remark of the wires is "I'm sure this is safe."
 They are plural-named.
 
 The clean battery can be hooked up. 
+
+Understand "hook up [something] to [something]", "hook [something] up to [something]" as tying it to.
 
 Instead of tying the wires to the clean battery when the clean battery is not hooked up:
 	if the clean battery is on the lunch counter:
@@ -1984,6 +1992,9 @@ Instead of tying the wires to the clean battery when the clean battery is hooked
 
 Check tying the clean battery to the wires:
 	try tying the wires to the clean battery instead;
+	
+Instead of taking the clean battery when the clean battery is hooked up:
+	say "Faraiji can't take the battery while it's tied to the wires.";
 
 Untying it from is an action applying to two things. Understand "untie [something] from [something]", "detach [something] from [something]", "disconnect [something] from [something]", "unhook [something] from [something]", "separate [something] from [something]" as untying it from.
 
@@ -1997,6 +2008,8 @@ Instead of untying the wires from the clean battery when the clean battery is no
 Check untying the clean battery from the wires:
 	try untying the wires from the clean battery;
 
+Check untying:
+	say "You can't untie that from that." instead;
 
 Book 34 - Henry's Roof
 
@@ -2016,8 +2029,19 @@ To hook up the rusty resonator:
 	now the rusty resonator is in the threaded socket;
 	if the clean battery is hooked up:
 		say "Faraji hooks up [the rusty astral resonator] to the threaded socket on the TV aerial antenna. A beam of light shoots out of it and strikes the obelisk in the park. The crystal is glowing [crystal glow].";
+		now the player knows rusty-resonator-has-been-activated;
 	otherwise:
-		say "Faraji screws [The rusty astral resonator] into the threaded socket on the TV aerial antenna.";
+		say "Faraji screws [the rusty astral resonator] into the threaded socket on the TV aerial antenna.";
+
+After taking the rusty astral resonator when the rusty astral resonator was in the threaded socket:
+	if the clean battery is hooked up:
+		say "Faraji removes [the rusty astral resonator] from the threaded socket on the TV aerial antenna. In the distance, the beam of light fades from the obelisk. [if the beam count is 0]The crystal is no longer glowing[otherwise]The crystal is still glowing [crystal glow][end if].";
+	otherwise:
+		continue the action;
+
+Understand "screw [the rusty astral resonator] in/into [the threaded socket]", "mount [the rusty astral resonator] on/onto/in/into [the threaded socket]" as inserting it into.
+
+Understand "unscrew [the rusty astral resonator]", "unmount [the rusty astral resonator]" as taking.
 
 Instead of inserting the rusty astral resonator into the threaded socket when the rusty resonator is not hooked up:
 	hook up the rusty resonator;
