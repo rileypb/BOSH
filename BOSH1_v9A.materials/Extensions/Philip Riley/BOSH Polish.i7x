@@ -79,8 +79,8 @@ vestry	--	"Plain white plastered walls."	--
 steeple	--	"Plain white plastered walls punctuated by the typical Utilitarian perfectly clear stained glass windows."	--
 Lake at Ridge	false	--	--
 workshed	--	"Bare wood walls."	--
-hidden cave	--	"Rough stone walls."	--
-circular chamber	--	"Rough stone walls."	--
+hidden cave	--	"Rough stone walls."	"The walls are rough and cold to the touch."
+circular chamber	--	"Rough stone walls."	"The walls are rough and cold to the touch."
 old root cellar	--	"Loamy dirt walls."	--
 Lake shore west	false	--	--
 Horton Family House Parlor	--	"White plaster walls framed by wooden beams."	--
@@ -104,7 +104,13 @@ BOSH chief's office	--	"White drywall, of course."	--
 Moira's Office	--	"More white drywall."	--
 utility closet	--	"White drywall."	--
 
+To say church description:
+	if the doll-fly is in the First Utilitarian Church of Enigma Lake:
+		say "haunted";
+	otherwise:
+		say "silent";
 
+[make the transition text kind of snarky.]
 Table of Transitions
 source room (a room)	target room (a room)	transition text (a text)	transition-used (a truth state)
 Strip Mall Parking Lot South	Strip Mall Parking Lot North	"[We] [trudge] to the other end of the parking lot. It's much like where [we] left."	--
@@ -161,7 +167,84 @@ Main at Solvay	Main Street 200 block	"Faraji heads back to the east."	--
 Main at Solvay	Solvay Road 100 block	"Faraji heads north along the west side of the town hall."	--
 Main at Solvay	Reading Room	"Faraji, hankering for a good book, heads into the bookstore."	--
 Main at Solvay	Fresnel's Music	"Needing a little culture, Faraji heads into the music store."	--
-
+Featureless Hyperplane	Featureless Hyperplane	"Faraji treks across the blank landscape, seemingly going nowhere."	--
+Solvay Road 100 block	Main at Solvay	"Faraji heads south into the heart of town."	--
+Solvay Road 100 block	Solvay Road leading out of town	"Faraji heads north, away from the town center."	--
+Solvay Road leading out of town	Solvay Road 100 block	"Faraji heads south toward the town center."	--
+Solvay Road leading out of town	Enigma Park	"Faraji enters the park."	--
+Solvay Road leading out of town	Solvay-Road-by-the-lake	"Faraji heads northwest, towards the lakeshore."	--
+Solvay Road leading out of town	Lake Shore West	"Faraji heads north, until they meet the lake shore."	--
+Enigma Park	Enigma Lake town hall	"Faraji leaves the shadows of the park for the town hall."	--
+Enigma Park	Solvay Road leading out of town	"Faraji leaves the park."	--
+Enigma Park	Lake Street by the park	"Faraji leaves the park."	--
+Enigma Park	Lake shore north of the park	"Faraji leaves the park for a walk along the lake shore."	--
+Lake Street by the park	Enigma Park	"Faraji slips into the shadows of the park."	--
+Lake Street by the park	Lake Street by the gym	"Faraji heads south along Lake Street, towards the center of town."	--
+Lake Street by the park	First Utilitarian Church of Enigma Lake	"Faraji enters the church through the open door."	--
+Lake Street by the park	Lake at Ridge	"Faraji head north along Lake Street, toward the lake."	--
+Lake Street by the gym	Main at Lake	"Faraji strolls south along Lake Street to where it meets Main."	--
+Main at Lake	Main Street 200 block	"Walking west on Main Street, Faraji approaches the entrance to the town hall."	--
+Main at Lake	Lake Street by the park	"Faraji heads north along Lake Street."	--
+Main at Lake	Radio Station WGXC	"Faraji enters the radio station, which is oddly quiet."	--
+Lake Street by the gym	Lake Street by the park	"Faraji heads north along Lake Street, approaching the church."	--
+Main at Lake	Lake Street by the gym	"Faraji, walking north, approaches the gymnasium."	--
+Lake Shore north of the park	Enigma Park	"Faraji leaves the lake shore for the park."	--
+Lake Shore north of the park	Lake at Ridge	"Faraji walks east along the lake shore until they reach a pair of roads."	--
+Lake Shore north of the park	Lake Shore West	"Faraji follows the lake shore west."	--
+Rolle's Department Store	Main Street 200 block	"Faraji waves goodbye to the floor waxer and heads out the door."	--
+Henry's Hot Skillet	Henry's Roof	"Faraji heads up the stairs to the roof."	--
+Reading Room	Main at Solvay	"Faraji heads back out into the street."	--
+Reading Room	bookstore basement	"Faraji heads down the stairs into the basement."	--
+Fresnel's Music	Main at Solvay	"Faraji leaves the music store."	--
+Solvay Road leading out of town	Horton Family House Kitchen	"Faraji lets themself into the Horton House."
+Horton Family House Kitchen	Horton Family House Parlor	"Faraji's footsteps echo on the wooden floor as they enter the parlor."	--
+Horton Family House Kitchen	Second Floor of the Horton House	"Faraji carefully climbs the dubious stairs."	--
+Horton Family House Kitchen	Horton graveyard	"The smell of fresh earth greets Faraji as they step outside."	--
+Horton Family House Kitchen	Solvay Road leading out of town	"Faraji steps out of the Horton House onto Solvay Road."	--
+Solvay-Road-by-the-lake	Solvay Road leading out of town	"Faraji heads southeast, away from the lake."	--
+Solvay-Road-by-the-lake	Dirty Shack	"Faraji enters the dirty shack."	--
+Solvay-Road-by-the-lake	Lake Shore West	"Faraji walks east along the lake."	--
+Dirty Shack	Solvay-Road-by-the-lake	"Faraji leaves the dirty shack."	--
+Radio Station WGXC	Main at Lake	"Faraji exits the radio station onto Main and Lake."	--
+Radio Station WGXC	Radio Station Roof	"Faraji climbs the stairs to the roof."	--
+Radio Station WGXC	Broadcast Booth	"Faraji enters the broadcast booth."	--
+Radio Station Roof	Radio Station WGXC	"Faraji heads back down the stairs to the station."	--
+Broadcast Booth	Radio Station WGXC	"Faraji leaves the broadcast booth."	--
+Public Gymnasium	gym basement	"Faraji heads down the stairs to the basement."	--
+First Utilitarian Church of Enigma Lake	Lake Street by the park	"Faraji leaves the [church description] church behind."	--
+First Utilitarian Church of Enigma Lake	vestry	"Faraji steps into the vestry, hoping to find some vests."	--
+First Utilitarian Church of Enigma Lake	steeple	"Faraji climbs the ladder to the steeple."	--
+bookstore basement	Reading Room	"Faraji heads back up the stairs to the bookstore."	--
+vestry	First Utilitarian Church of Enigma Lake	"Faraji leaves the vestry and reenters the sanctuary."	--
+steeple	First Utilitarian Church of Enigma Lake	"Faraji climbs back down the ladder to the church."	--
+Lake at Ridge	Lake Street by the park	"Faraji heads south along Lake Street, back into town."	--
+Lake at Ridge	Lake shore north of the park	"Faraji follows the lake shore west."	--
+hidden cave	circular chamber	"Faraji heads deeper into the cave."	--
+circular chamber	hidden cave	"Faraji heads back to the entrance of the cave."	--
+Lake Shore West	Solvay Road leading out of town	"Faraji heads south, away from the lake."	--
+Lake Shore West	Lake Shore North of the Park	"Faraji heads east along the lake shore."	--
+Lake Shore West	Solvay-Road-by-the-lake	"Faraji heads west to Solvay Road."	--
+Horton Family House Parlor	Horton Family House Kitchen	"Faraji leaves the creepy parlor behind."	--
+Second Floor of the Horton House	Horton Family House Kitchen	"Faraji heads back down the shaky stairs."	--
+Horton astral tunnel	Horton Family House Parlor	"Faraji emerges from the astral tunnel into the parlor."	--
+Horton astral tunnel	Fire Station 1	"Faraji emerges from the astral tunnel into the fire station."	--
+Fire Station 1	Horton astral tunnel	"Faraji steps back into the astral tunnel."	--
+Horton graveyard	Horton Family House Kitchen	"Faraji steps back into the Horton House."	--
+Horton graveyard	large grave	"Faraji descends the ladder into the grave. They can't help thinking that they don't get paid enough for this."	--
+large grave	Horton graveyard	"With a sigh of relief, Faraji climbs out of the grave."	--
+sewer tunnel 1	sewer tunnel 2	"Faraji heads deeper into the sewer."	--
+sewer tunnel 2	sewer tunnel 1	"Faraji heads back towards the bookstore."	--
+sewer tunnel 2	sewer tunnel 3	"Faraji heads yet deeper into the sewer."	--
+sewer tunnel 3	sewer tunnel 2	"Faraji heads back towards the bookstore."	--
+sewer tunnel 3	astral-tunnel-elr	"Once again, Faraji dares to enter the astral tunnel. At least it doesn't smell."	--
+astral-tunnel-elr	sewer tunnel 3	"Faraji holds their breath and steps back into the sewer."	--
+astral-tunnel-elr	gym basement	"Faraji steps into the gym basement."	--
+gym basement	public gymnasium	"Faraji heads up the stairs to the gym."	--
+gym basement	astral-tunnel-elr	"Faraji steps back into the astral tunnel."	--
+Henry's Roof	Henry's Hot Skillet	"Faraji heads back down the stairs to the restaurant."	--
+hallway	front office	"With trepidation, Faraji ventures once more into Margaret's domain."	--
+Horton Family House Parlor	horton astral tunnel	"Faraji hesitantly steps into the astral tunnel."	--
+bookstore basement	sewer tunnel 1	"Faraji climbs through the hole in the wall, into the stench of the sewer."	--
 
 
 Table of Excuses (continued)
@@ -206,6 +289,7 @@ Lake at Ridge	{east}	"That would take [us] too far out of town."
 Lake at Ridge	{southwest}	"[We] [are] blocked by the stone wall around the park."
 Lake at Ridge	{southeast}	"[We] can't enter the church from here."	
 Old Root Cellar	{north}	"Faraji is heading into the north passage when Daniels calls out to him. 'I wouldn't go out there,' he says. 'We need to get back to our own time.'"
+
 
 [Below, add a message for the player when they try to take something that can't be taken. Be creative; don't just say the same thing over and over agian.]
 Table of Frustrated Taking (continued)
@@ -522,8 +606,59 @@ astral-tunnel-1	true	"Like everything else here, the ceiling is a featureless wh
 astral-tunnel-2	true	"Like everything else here, the ceiling is a featureless white."	"Like everything else here, the ceiling is a featureless white."	false
 astral-tunnel-3	true	"Like everything else here, the ceiling is a featureless white."	"Like everything else here, the ceiling is a featureless white."	false
 back lot	false	--	--	false
-
-
+hidden cave	true	"The ceiling is damp gray rock."	"The ceiling is rough and cold."	true
+laundromat back room	true	"Typical commercial drop ceiling."	"Typical commercial drop ceiling."	false
+laundromat basement	true	"Grey concrete."	"Grey concrete."	false
+back basement	true	"Grey concrete."	"Grey concrete."	false
+Li'l Nectarine Convenience Store	true	"Typical commercial drop ceiling."	"Typical commercial drop ceiling."	false
+Enigma Lake Town Hall	true	"It looks like plaster."	"It looks like plaster."	false
+Main Street 200 Block	false	--	--	false
+Main at Solvay	false	--	--	false
+Solvay Road 100 block	false	--	--	false
+solvay road leading out of town	false	--	--	false
+enigma park	false	--	--	false
+lake street by the park	false	--	--	false
+main at lake	false	--	--	false
+lake shore north of the park	false	--	--	false
+lake street by the gym	false	--	--	false
+Rolle's Department Store	true	"Typical commercial drop ceiling."	"Typical commercial drop ceiling."	false
+Henry's Hot Skillet	true	"Typical commercial drop ceiling."	"Typical commercial drop ceiling."	false
+Fresnel's Music	true	"Typical commercial drop ceiling."	"Typical commercial drop ceiling."	false
+The Reading Room	true	"Typical commercial drop ceiling."	"Typical commercial drop ceiling."	false
+Horton family house kitchen	true	"Old, worn wood."	"The wood is rough and splintery."	true
+Solvay-Road-by-the-lake	false	--	--	false
+dirty shack	true	"Like the walls, the ceiling is made of corrugated metal."	"Cool to the touch."	true
+Radio Station WGXC	true	"Nice plastered ceiling."	"Nice plastered ceiling."	false
+radio station roof	false	--	--	false
+broadcast booth	true	"Typical commercial drop ceiling."	"Typical commercial drop ceiling." 	false
+public gymnasium	true	"The ceiling is a high, vaulted wood ceiling."	"The ceiling is a high, vaulted wood ceiling."	false
+First Utilitarian Church of Enigma Lake	true	"The ceiling is a high, vaulted wood ceiling."	"The ceiling is a high, vaulted wood ceiling."	false
+Vestry	true	"The ceiling is of plaster."	"The ceiling is of plaster."	false
+Steeple	true	"White painted wood."	"White painted wood."	false
+bookstore basement	true	"Grey concrete."	"Grey concrete."	false
+Lake at ridge	false	--	--	false
+workshed	true	"The ceiling is low and made of corrugated metal."	"The ceiling is low and made of corrugated metal."	true
+circular chamber	true	"The ceiling is low and rocky."	"The ceiling feels cold and damp."	true
+old root cellar	true	"The ceiling is low and made of packed earth."	"The ceiling is soft and yielding, dirtying Faraji's fingers."	true
+Lake shore west	false	--	--	false
+Horton Family House Parlor	true	"White painted wood."	"The paint flakes off at Faraji's touch."	true
+Second Floor of the Horton House	true	"Old, worn wood."	"The wood is rough and splintery."	true
+Horton graveyard	false	--	--	false
+large grave	false	--	--	false
+sewer tunnel 1	true	"Concrete."	"The concrete is thankfully dry."	true
+sewer tunnel 2	true	"Concrete."	"The concrete is thankfully dry."	true
+sewer tunnel 3	true	"Concrete."	"The concrete is thankfully dry."	true
+astral-tunnel-elr	true	"Like everything else here, the ceiling is a featureless white."	"Like everything else here, the ceiling is a featureless white."	false
+gym basement	true	"Grey concrete."	"Grey concrete."	false
+Henry's Roof	false	--	--	false
+Room of Stuff	false	--	--	false
+isolation booth	false	--	--	false
+Biff's Office	true	"Typical commercial drop ceiling."	"Typical commercial drop ceiling."	false
+the dumpster	false	--	--	false
+hallway	true	"Typical commercial drop ceiling."	"Typical commercial drop ceiling."	false
+BOSH chief's office	true	"Typical commercial drop ceiling."	"Typical commercial drop ceiling."	false
+Moira's Office	true	"Typical commercial drop ceiling."	"Typical commercial drop ceiling."	false
+Utility Closet	true	"Typical commercial drop ceiling."	"Typical commercial drop ceiling."	false
 
 
 BOSH Polish ends here.

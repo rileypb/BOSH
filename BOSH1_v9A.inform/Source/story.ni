@@ -899,7 +899,7 @@ Section 2 - Back Lot
 The back lot is a room. It is in BOSH HQ. It is outdoors. 
 The snarky remark is "Let me guess, this is the break room." 
 
-The BOSH back door is a door. The printed name is "white metal door". Understand "backdoor/white/metal" as BOSH back door. It is west of biff's office and east of back lot. It is scenery. It is closed, locked, lockable, and openable. "An unremarkable metal door painted white. [state of BOSH back door][run paragraph on]".
+The BOSH back door is a door. The printed name is "BOSH back door". Understand "backdoor/white/metal" as BOSH back door. It is west of biff's office and east of back lot. It is scenery. It is closed, locked, lockable, and openable. "An unremarkable metal door painted white. [state of BOSH back door][run paragraph on]".
 The snarky remark is "[door snark]".
 
 To say door snark:
@@ -2037,10 +2037,10 @@ Book 21 - Not For Release
  
 [ Include BOSH Tests by Philip Riley. ]
 
-DEBUG is false.
+DEBUG is true.
 
 AUDIT is a truth state that varies.
-AUDIT is false.
+AUDIT is true.
 
 To decide what text is the wall description of (R - a room):
 	let result be "";
@@ -2076,23 +2076,23 @@ To decide what text is the transition description of (R - a room) from (S - a ro
 
 When play begins:
 	if AUDIT is true:
-		[ say ">>> NO Snarky Remarks <<<[line break]";
+		say ">>> NO Snarky Remarks <<<[line break]";
 		repeat with X running through snarkable rooms:
 			if the snarky remark of X is "":
 				say "ROOM [X][line break]";
 		repeat with X running through snarkable things:
-			if X is not a subject and the snarky remark of X is "":
+			if X is not a subject and X is not a hint topic and the snarky remark of X is "":
 				say "THING [X][line break]";
 		lb;
 		say ">>> NO Description <<<[line break]";
 		repeat with X running through things:
 			if X is not a subject and the description of X is "" and X is not a quip and X is not indescribable:
 				say "THING [X][line break]";
-		lb; ]
-		[ say ">>> NO Wall Description <<<[line break]";
+		lb;
+		say ">>> NO Wall Description <<<[line break]";
 		repeat with X running through rooms:
 			if the wall description of X is "":
-				say "ROOM [X][line break]"; ]
+				say "ROOM [X][line break]";
 		[ say ">>> NO Floor Description <<<[line break]";
 		repeat with X running through rooms:
 			if the floor description of X is "":
@@ -2102,11 +2102,11 @@ When play begins:
 		repeat with X running through rooms:
 			if the ceiling description of X is "":
 				say "ROOM [X][line break]"; ]
-		say ">>> NO Transition Description <<<[line break]";
+		[ say ">>> NO Transition Description <<<[line break]";
 		repeat with X running through rooms:
 			repeat with Y running through rooms adjacent to X:
 				if the transition description of Y from X is "":
-					say "ROOM [X] to [Y][line break]"; 
+					say "ROOM [X] to [Y][line break]";  ]
 
 
 When play begins, seed the random-number generator with 1234.
@@ -2213,6 +2213,24 @@ Carry out jumping to part 4:
 	now closet door is unlocked;
 	now closet door is open;
 	now Moira's door is unlocked;
+
+jumping to endgame is an action applying to nothing. Understand "end" as jumping to endgame.
+
+Carry out jumping to endgame:
+	try jumping to part 4;
+	now the makeshift resonator is in the tripod;
+	now the content of the tripod is the makeshift resonator;
+	now the extension cord is in the steeple;
+	now the extension cord is plugged into the electrical outlet;
+	now the makeshift resonator is plugged into the extension cord;
+	now the rusty resonator is in the socket;
+	now the clean battery is hooked up;
+	now the shiny resonator is on the platform;
+	now the power switch is switched on;
+	open the portal;
+	now the trapdoor is revealed;
+	now the astral lenses are nowhere;
+	now player is in the hidden cave;
 	
 	
 Volume 2 - Test command tweak for clean transcripts

@@ -786,44 +786,10 @@ Before answering the doll-fly that something:
 Instead of doing something other than taking or attacking to the doll-fly when action requires a touchable noun:
 	say "[We] can't get close enough to [the doll-fly] to touch it.";
 
-[ Instead of doing something when the doll-fly is in the location:
-	if the current action is going west:
-		continue the action;
-	if the current action is answering the doll-fly that something:
-		continue the action;
-	[ if the current action is incanting:
-		continue the action; ]
-	if the current action is examining the doll-fly:
-		continue the action;
-	if the current action is taking inventory:
-		continue the action;
-	if the current action is looking:
-		continue the action;
-	if the current action is waiting:
-		continue the action;
-	if the current action is examining:
-		continue the action;
-
-	say "[The doll-fly] prevents Faraji from doing that." instead; ]
-
 After reading a command:
 	if the player's command in lower case is the incantation of the doll-fly in lower case:
 		change the text of the player's command to "say [the incantation of the doll-fly]"; 
 
-[ Incanting is an action applying to nothing. Understand "bara ba jagal" as incanting.
-
-Check incanting:
-	if the location is not the First Utilitarian Church of Enigma Lake:
-		say "If you say so.";
-		stop the action;
-	if the doll-fly is off-stage:
-		if the doll-fly has been in First Utilitarian Church of Enigma Lake:
-			say "[We've] already banished [the doll-fly]." instead;
-		otherwise:
-			say "Cheater." instead;
-	otherwise:
-		try answering the doll-fly that "bara ba jagal";
-		stop the action; ]
 
 Book 17 - Extension Cord
 
@@ -1428,10 +1394,14 @@ a hidden cave is a room. It is in ELR. It is indoors. It is always-indefinite. I
 
 The snarky remark of the hidden cave is "Perhaps there's something down here that will help me answer the phone."
 
+The rickety stairs are scenery in the hidden cave. "A set of rickety stairs leads up to the workshed above."
+The snarky remark of the rickety stairs is "I wonder if they're up to code."
+
+
 Book 23 - Portal room
 
 a circular chamber is south of hidden cave. It is in ELR. It is indoors. The circular chamber is dark.
-"The chamber is circular, with a low ceiling. The walls are rough-hewn stone, and the floor is packed earth. A passage leads to the north."
+"The chamber is circular, with a low ceiling. The walls are rough-hewn stone. A passage leads to the north."
 
 The snarky remark of the circular chamber is "I hear caves tend to have thieves, trolls, and cyclopses. I hope this is not actually the case."
 
@@ -1455,7 +1425,7 @@ The description is "Daniels looks weary. He's dressed in a tattered suit, and hi
 Understand "man" as Daniels. 
 The snarky remark of Daniels is "I wonder if he's got a screwdriver."
 
-The woven baskets are scenery in the old root cellar. "The baskets are woven from reeds and are filled with root vegetables."
+The woven baskets are scenery in the old root cellar. "The baskets are woven from reeds and are filled with root vegetables." They are plural-named. Understand "basket" as the woven baskets.
 The snarky remark of the woven baskets is "I wonder if they have any turnips."
 
 The root vegetables are scenery in the old root cellar. "Looks like the vegetables are well-preserved."
@@ -1572,7 +1542,11 @@ Divining-action is an action applying to one thing. Understand "divine with [som
 
 Book 25.1 - Horton Family House Parlor
 
-The Horton Family House Parlor is south of Horton Family House Kitchen. It is in ELR. It is indoors. "The parlor, like the kitchen, still has its furnishings in place. A few chairs and a table are arranged around the room[if the book of weird names is on the table]. A strange-looking book is on the table[end if]."
+The Horton Family House Parlor is south of Horton Family House Kitchen. It is in ELR. It is indoors. "Faraji finds something creepy about this room, as if charged with the residue of strange events long past. Which is very peculiar, considering Faraji doesn't believe in ghosts. Perhaps it's the creepy doll-fly that flew out of here.
+
+The parlor, like the kitchen, still has its furnishings in place. A few chairs and a table are arranged around the room[if the book of weird names is on the table]. A strange-looking book is on the table[end if].
+
+The kitchen is to the north."
 
 The snarky remark of the Horton Family House Parlor is "The Horton family must have thrown some great parties."
 
@@ -1591,6 +1565,10 @@ The snarky remark of the parlor table is "I wonder if there's a screwdriver unde
 
 Instead of looking under the parlor table:
 	say "Faraji looks under the table, but there's no screwdriver there.";
+
+The kitchen facade is a building facade. It is in Horton Family House Parlor. It is privately-named. The printed name is "kitchen". Understand "kitchen" as kitchen facade. "The kitchen is to the north."
+	The kitchen facade fronts Horton Family House Kitchen.
+	It is enterable from Horton Family House Parlor.
 
 The Book of Weird Names is on the parlor table. The printed name is "[italic type]The Book of Weird Names[roman type]". It is proper-named. It is unsnarkable. Understand "strange-looking/strange/looking" as the Book of Weird Names.
 

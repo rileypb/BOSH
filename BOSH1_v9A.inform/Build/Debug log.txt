@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 22985 words long.
+I've now read your source text, which is 23191 words long.
 
 
 -----------------------------------------------------
@@ -44,7 +44,7 @@ I've also read Can't Touch This by Philip Riley, which is 149 words long.
 I've also read Compound Details by Philip Riley, which is 182 words long.
 I've also read Polish by Philip Riley, which is 89 words long.
 I've also read Hello by Philip Riley, which is 123 words long.
-I've also read BOSH Polish by Philip Riley, which is 6756 words long.
+I've also read BOSH Polish by Philip Riley, which is 8629 words long.
 I've also read New Light by Philip Riley, which is 336 words long.
 I've also read Early Declarations by Philip Riley, which is 21 words long.
 I've also read Basics by Philip Riley, which is 198 words long.
@@ -56,15 +56,15 @@ I've also read Hyperspace by Philip Riley, which is 11064 words long.
 I've also read BOSH Facts by Philip Riley, which is 179 words long.
 I've also read Swamp Park by Philip Riley, which is 6453 words long.
 I've also read Margaret by Philip Riley, which is 1966 words long.
-I've also read Enigma Lake by Philip Riley, which is 27669 words long.
-I've also read I Can Dig It by Philip Riley, which is 58 words long.
+I've also read Enigma Lake by Philip Riley, which is 27800 words long.
+I've also read I Can Dig It by Philip Riley, which is 77 words long.
 I've also read Overlook by Philip Riley, which is 763 words long.
 I've also read Gender Options by Nathanael Nerode, which is 7679 words long.
 I've also read Make Test by Philip Riley, which is 288 words long.
 I've also read BOSH Hints by Philip Riley, which is 2905 words long.
 I've also read Hearing by Philip Riley, which is 1254 words long.
 I've also read PBR Common by Philip Riley, which is 109 words long.
-I've also read Walls by Philip Riley, which is 901 words long.
+I've also read Walls by Philip Riley, which is 905 words long.
 I've also read Floors by Philip Riley, which is 903 words long.
 I've also read Ceilings by Philip Riley, which is 1072 words long.
 I've also read Can't Go That Way by Philip Riley, which is 815 words long.
@@ -304,8 +304,8 @@ Providing for a total heap of 32768, given requirement of 32016
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 259 files written as streams.
-CPU time: 940 centiseconds
+Total of 260 files written as streams.
+CPU time: 899 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

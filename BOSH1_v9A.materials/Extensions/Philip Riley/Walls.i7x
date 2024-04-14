@@ -5,7 +5,7 @@ Use authorial modesty.
 Include PBR Common by Philip Riley.
 
 The Walls is a backdrop. it is privately-named. The printed name is "wall". Understand "wall/walls" as walls.
-The walls is everywhere.
+The walls is everywhere. It is ambiguously plural.
 
 Table of Walls
 locale (a room)	has walls (a truth state)	wall description (a text)	touch description (a text)

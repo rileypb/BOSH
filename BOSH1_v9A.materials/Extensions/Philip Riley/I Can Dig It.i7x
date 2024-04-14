@@ -9,6 +9,9 @@ Lake Shore north of the Park is a diggable room.
 Lake Shore West is a diggable room.
 Horton graveyard is a diggable room.
 Large grave is a diggable room.
+Hidden cave is a diggable room.
+Circular chamber is a diggable room.
+Old root cellar is a diggable room.
 
 
 I Can Dig It ends here.
