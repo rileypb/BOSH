@@ -1,5 +1,7 @@
 Hints by Philip Riley begins here.
 
+Use authorial modesty.
+
 A hint topic is a kind of thing. It is privately-named.
 A hint topic has number called the hint level. The hint level is usually 0. 
 A hint topic can be listed or unlisted. A hint topic is usually listed.

@@ -1,5 +1,7 @@
 Books by Philip Riley begins here.
 
+Use authorial modesty.
+
 A bookstore-book is a kind of object.
     A bookstore-book has a text called the title.
     A bookstore-book has a text called the author.
@@ -180,8 +182,14 @@ book29 is a bookstore-book.
     The genre of book29 is "DIY".
     The blurb of book29 is "Josef K. covers everything from sledgehammer design to sledgehammer fashion in the definitive guide to sledgehammers. NOT FOR SALE TO THE EXCESSIVELY ANGRY."
 
+book30 is a bookstore-book.
+    The title of book30 is "The Bureau of Strange Happenings".
+    The author of book30 is "Phil Riley".
+    The genre of book30 is "Interactive Fiction".
+    The blurb of book30 is "The Bureau of Strange Happenings is a text-based interactive fiction game that puts you in the shoes of Larch Faraji, a passionate yet cynical agent investigating the paranormal. The Bureau itself is on the brink of extinction, and it's up to you to hang on through the last sad days of the organization. Can you solve the mystery of the ringing phone?"
+
 The booklist is a list of bookstore-book that varies.
-    The booklist is {book1, book2, book3, book4, book5, book6, book7, book8, book9, book10, book11, book12, book13, book14, book15, book16, book17, book18, book19, book20, book21, book22, book23, book24, book25, book26, book27, book28, book29}.
+    The booklist is {book1, book2, book3, book4, book5, book6, book7, book8, book9, book10, book11, book12, book13, book14, book15, book16, book17, book18, book19, book20, book21, book22, book23, book24, book25, book26, book27, book28, book29, book30}.
 
 
 

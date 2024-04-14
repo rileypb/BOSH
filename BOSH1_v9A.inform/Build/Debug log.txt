@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 22912 words long.
+I've now read your source text, which is 22985 words long.
 
 
 -----------------------------------------------------
@@ -37,7 +37,7 @@ I've also read Phones by Philip Riley, which is 1909 words long.
 I've also read Commerce by Philip Riley, which is 158 words long.
 I've also read Furniture by Philip Riley, which is 82 words long.
 I've also read Third Person Narration by Philip Riley, which is 672 words long.
-I've also read Door Utils by Philip Riley, which is 41 words long.
+I've also read Door Utils by Philip Riley, which is 44 words long.
 I've also read Real People by Philip Riley, which is 400 words long.
 I've also read Visible Rooms by Philip Riley, which is 164 words long.
 I've also read Can't Touch This by Philip Riley, which is 149 words long.
@@ -56,12 +56,12 @@ I've also read Hyperspace by Philip Riley, which is 11064 words long.
 I've also read BOSH Facts by Philip Riley, which is 179 words long.
 I've also read Swamp Park by Philip Riley, which is 6453 words long.
 I've also read Margaret by Philip Riley, which is 1966 words long.
-I've also read Enigma Lake by Philip Riley, which is 27317 words long.
+I've also read Enigma Lake by Philip Riley, which is 27515 words long.
 I've also read I Can Dig It by Philip Riley, which is 58 words long.
 I've also read Overlook by Philip Riley, which is 763 words long.
 I've also read Gender Options by Nathanael Nerode, which is 7679 words long.
 I've also read Make Test by Philip Riley, which is 288 words long.
-I've also read BOSH Hints by Philip Riley, which is 2901 words long.
+I've also read BOSH Hints by Philip Riley, which is 2904 words long.
 I've also read Hearing by Philip Riley, which is 1254 words long.
 I've also read PBR Common by Philip Riley, which is 109 words long.
 I've also read Walls by Philip Riley, which is 901 words long.
@@ -76,8 +76,8 @@ I've also read Door Varieties by Philip Riley, which is 299 words long.
 I've also read Exit Lister by Eric Eve, which is 3510 words long.
 I've also read Secret Doors by Gavin Lambert, which is 272 words long.
 I've also read Plugging by Philip Riley, which is 614 words long.
-I've also read Books by Philip Riley, which is 2221 words long.
-I've also read Hints by Philip Riley, which is 644 words long.
+I've also read Books by Philip Riley, which is 2320 words long.
+I've also read Hints by Philip Riley, which is 647 words long.
 I've also read Two-Sided Doors by Philip Riley, which is 2270 words long.
 
 
@@ -139,9 +139,9 @@ Regional: CONSTANT_VNT'field office area'-region(I255_field_office_area)(I163'fi
  == region
 Regional: CONSTANT_VNT'hyperspace'-region(I240_hyperspace)(I148'hyperspace')
  == region
-Regional: CONSTANT_VNT'elr'-region(I492_elr)(I384'elr')
+Regional: CONSTANT_VNT'elr'-region(I493_elr)(I385'elr')
  == region
-Regional: CONSTANT_VNT'elr'-region(I492_elr)(I384'elr')
+Regional: CONSTANT_VNT'elr'-region(I493_elr)(I385'elr')
  == region
 
 
@@ -202,9 +202,9 @@ Phase XII ... Code generation
          == region
         Regional: CONSTANT_VNT'hyperspace'-region(I240_hyperspace)(I148'hyperspace')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I492_elr)(I384'elr')
+        Regional: CONSTANT_VNT'elr'-region(I493_elr)(I385'elr')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I492_elr)(I384'elr')
+        Regional: CONSTANT_VNT'elr'-region(I493_elr)(I385'elr')
          == region
 
 
@@ -304,8 +304,8 @@ Providing for a total heap of 32768, given requirement of 32272
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 257 files written as streams.
-CPU time: 894 centiseconds
+Total of 259 files written as streams.
+CPU time: 883 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

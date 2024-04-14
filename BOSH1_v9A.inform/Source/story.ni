@@ -97,6 +97,15 @@ To turn on rules:
 	
 A thing can be snarkable or unsnarkable. A thing is usually snarkable.
 A quip is usually snarkable.
+
+Crediting is an action out of world. Understand "credits" as crediting.
+
+Carry out crediting:
+	say "Many thanks to the following people for their help and support in the creation of this game:[line break]";
+	say "Playtesters Max Fog and someone...[line break]";
+	say "My wife, Laura, for understanding my need to spend hundreds of hours writing something that only a couple dozen people will ever play.";
+	say paragraph break;
+	say the list of extension credits;
  
 Volume 1 - The Game 
 

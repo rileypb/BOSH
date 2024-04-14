@@ -829,7 +829,7 @@ Rule for supplying a missing second noun while plugging something into:
 	otherwise:
 		rule fails;
 
-The extension cord is a thing. The description is "A long, heavy-duty extension cord[if the extension cord is plugged into the electrical outlet and the location is First Utilitarian Church of Enigma Lake], plugged into the wall outlet[otherwise if the extension cord is plugged into the electrical outlet and the location is the steeple]. It trails down through the trapdoor[otherwise if the extension cord is plugged into the electrical outlet and the location is the vestry]. It trails through the door into the church[end if]." 
+The extension cord is a thing. The description is "A long, heavy-duty extension cord[if the extension cord is plugged into the electrical outlet and the location is First Utilitarian Church of Enigma Lake], plugged into the wall outlet[otherwise if the extension cord is plugged into the electrical outlet and the location is the steeple]. It trails down through the trapdoor[otherwise if the extension cord is plugged into the electrical outlet and the location is the vestry]. It trails through the door into the church[end if][if the extension cord is plugged into the extension cord]. It is plugged into itself[end if]." 
 The snarky remark of the extension cord is "You can never have too many extension cords. Unless you have too many extension cords. Then you have too many extension cords."
 
 It is pluggable.
@@ -1188,13 +1188,13 @@ To decide if mounted-makeshift-resonator:
 		no;
 
 The Plugging it into action has a truth state called resonator originally powered.
-The Unplugging action has a truth state called resonator originally powered.
+The Unplugging action has a truth state called x.
 
 Setting action variables for plugging something into:
 	now resonator originally powered is whether or not the makeshift astral resonator is powered;
 
 Setting action variables for unplugging:
-	now resonator originally powered is whether or not the makeshift astral resonator is powered;
+	now x is whether or not the makeshift astral resonator is powered;
 
 After plugging the makeshift astral resonator into something:
 	say "Faraji plugs the makeshift astral resonator into [the second noun]";
@@ -1207,7 +1207,7 @@ After plugging the makeshift astral resonator into something:
 	otherwise:
 		say ".";
 
-After unplugging the makeshift astral resonator when resonator originally powered is true:
+After unplugging the makeshift astral resonator when x is true:
 	say "Faraji unplugs the makeshift astral resonator from [the socket unplugged from]. It flickers and goes dark.";
 
 After plugging the extension cord into the electrical outlet:
@@ -1221,9 +1221,11 @@ After plugging the extension cord into the electrical outlet:
 	otherwise:
 		say ".";
 
-After unplugging the extension cord when resonator originally powered is true:
+After unplugging the extension cord when x is true:
 	if the makeshift astral resonator is not powered:
 		say "Faraji unplugs the extension cord from [the electrical outlet]. [The makeshift astral resonator] flickers and goes dark.";
+	otherwise:
+		continue the action;
 
 Instead of examining the steeple-obelisk-facade:
 	say "The obelisk in the park is clearly visible from here. [run paragraph on]";
@@ -1267,7 +1269,7 @@ An abandoned pickup truck is a fixed in place closed enterable openable containe
 "There is an abandoned pickup truck at the side of the road[if the hood is open]. The hood is open[end if]." 
 The description is "The truck, a Ford F-1, is relatively new, with no sign as to why it was abandoned. The tailgate is [if the tailgate is open]down[otherwise]up[end if]. The hood is slightly crumpled, as if it has been in a minor accident[if the hood is open]. The hood is open[end if]."
 Understand "ford", "f-1" as the abandoned pickup truck.
-The snarky remark of the abandoned pickup truck is "Should I be scared?"
+The snarky remark of the abandoned pickup truck is "Abandoned town, abandoned truck... there must be a zombie around here somewhere."
 The glove compartment is a scenery closed openable container in the abandoned truck.
 Understand "box/glovebox" as the glove compartment.
 The description is "The glove compartment is [if the glove compartment is open]open[otherwise]closed[end if]."
@@ -1292,7 +1294,7 @@ After entering the abandoned truck:
 	try looking;
 
 Instead of searching the abandoned truck when the player is not in the abandoned truck:
-	say "The interior of the truck is visible through the window but Faraji can't see anything much of interest[if the glove compartment is open]. The glove compartment is open but it's impossible to see what, if anything, is in it[end if]. [if something is in the truck bed]The truck bed contains [a list of things in the truck bed][end if].";
+	say "The interior of the truck is visible through [if the abandoned pickup truck is open]the open door[otherwise]the window[end if] but Faraji can't see anything much from where they are[if the glove compartment is open]. The glove compartment is open but it's impossible to see what, if anything, is in it[end if][if something is in the truck bed]. The truck bed contains [a list of things in the truck bed][end if].";
 	
 Instead of switching on the abandoned truck:
 	let K be the list of all keys enclosed by the player;
@@ -1307,7 +1309,7 @@ Understand "start [something]" as switching on.
 
 Understand "lower [tailgate]" as opening. Understand "raise [tailgate]" as closing.
 
-The truck bed is an open container. It is part of the abandoned truck. The description is "It's the bed of a truck, alright."
+The truck bed is an open container. It is part of the abandoned truck. The description is "It's a perfectly ordinary truck bed."
 It is unsnarkable.
 
 The tailgate is part of the truck. It is an open, openable container. The description is "The tailgate is[if the truck bed is open] down[otherwise] up[end if]." Understand "tail/gate" as the tailgate. 
@@ -1891,7 +1893,7 @@ Instead of attacking the walls with the sledgehammer when the location is the Bo
 	say "[We] [break] through the wall, revealing a dark space to the north.";
 	now the bricked-up-hole is revealed.
 
-The basement shelves are scenery in the Bookstore Basement. "The shelves host a smattering of books, mostly old and dusty." Understand "bookshelf/shelf/shelves/books" as the basement shelves.
+The basement shelves are scenery in the Bookstore Basement. "The shelves host a smattering of books, mostly old and dusty." Understand "bookshelf/shelf/shelves" as the basement shelves.
 The snarky remark of the basement shelves is "I'm looking for 'The Da Vinci Code' -- oh wait, it's 1954. Scratch that."
 
 Instead of searching the basement shelves:
@@ -1943,6 +1945,27 @@ The x-coordinate of Fresnel's Music is -2. The y-coordinate of Fresnel's Music i
 
 A tuning fork is in Fresnel's Music. "A tuning fork lies on the counter." The description is "A tuning fork, used to tune musical instruments."
 The snarky remark is "You know what's fun? Tapping a tuning fork and holding it to your teeth."
+
+striking is an action applying to one thing. Understand "strike [the tuning fork]", "sound [the tuning fork]", "ring [the tuning fork]" as striking.
+Carry out striking the tuning fork:
+	say "Faraji strikes the tuning fork. It sounds a pure 440 Hz tone. Yes, Faraji has perfect pitch.";
+	if the player encloses the rusty astral resonator:
+		if the player encloses the shiny astral resonator:
+			if Astral Secrets is read:
+				say "[line break]The tone resonates with the two astral resonators you are carrying.";
+			otherwise:
+				say "[line break]The tone resonates with the strange shiny object and strange rusty object.";
+		otherwise:
+			if Astral Secrets is read:
+				say "[line break]The tone resonates with the astral resonator you are carrying.";
+			otherwise:
+				say "[line break]The tone resonates with the rusty object you are carrying.";
+	otherwise if the player encloses the shiny astral resonator:
+		if Astral Secrets is read:
+			say "[line break]The tone resonates with the astral resonator you are carrying.";
+		otherwise:
+			say "[line break]The tone resonates with the shiny object you are carrying.";
+
 
 Book 33 - Henry's Hot Skillet
 
@@ -2512,7 +2535,7 @@ To say to-dir (dir - a direction):
 	otherwise:
 		say "to the [dir]";
 
-After printing the locale description:
+After printing the locale description of a room:
 	if the group of lizard people is in a room (called current space):
 		if the location overlooks the current space:
 			let dirtext be the heading from the location to the current space;

@@ -1,5 +1,7 @@
 BOSH Hints by Philip Riley begins here.
 
+Use authorial modesty.
+
 Include Hints by Philip Riley.	
 
 The hint-ringing-phone is a hint topic. Understand "ringing/ring/phone" as the hint-ringing-phone. The printed name is "ringing phone".
