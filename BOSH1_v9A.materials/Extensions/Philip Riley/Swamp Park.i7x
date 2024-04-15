@@ -334,10 +334,36 @@ After discussing about the laundromat owner:
 	[ activate the Table of Chief Klimp Hints; ]
 	continue the action;
 	
-[An availability rule for about the laundromat owner:
-	Unless player knows screwdriver-in-laundromat:
-		it is off-limits; 
-]
+Dave interjection timer is a number that varies. Dave interjection timer is 5.
+
+Every turn when Dave interjection timer is not 0 and Dave is in the location and player knows break-in-to-laundromat:
+	decrease Dave interjection timer by 1;
+	if Dave interjection timer is 0:
+		interject Dave;
+
+After discussing when Dave is in the location:
+	now Dave interjection timer is a random number from 2 to 5;
+
+After quizzing someone about something when Dave is in the location:
+	now Dave interjection timer is a random number from 2 to 5;
+
+To interject Dave:
+	sort Table of Dave Interjections in random order;
+	if there is a used of false in the Table of Dave Interjections:
+		choose the row with a used of false in the Table of Dave Interjections;
+		say "[Dave interjection entry][line break]";
+		now the used entry is true;
+		increase Dave interjection timer by a random number from 2 to 5;
+
+Table of Dave Interjections
+Dave interjection	used (a truth state)
+"Dave scratches his belly. 'I bet you could just buy a screwdriver at the Li'l Nectarine.'"	false
+"Dave leans on the counter. 'Now, the key to breaking and entering is to not get caught.'"	false
+"Dave rubs his chin thoughtfully. 'That laundromat owner was a strange one. Wrong in the head, I'd say.'"	false
+"Dave fiddles with a pen. 'How you liking Swamp Park? Heh. Nobody likes Swamp Park.'"	false
+
+
+
 Book 3 - Laundromat
 
 Chapter 1 - The Astral Tunnel
@@ -687,6 +713,38 @@ An availability rule for for-a-screwdriver-clerk:
 		always available;]
 	
 strip mall parking lot north is outside from the the Li'l Nectarine Convenience Store.
+
+Clerk interjection timer is a number that varies. Clerk interjection timer is 5.
+
+Every turn when Clerk interjection timer is not 0 and Clerk is in the location:
+	decrease Clerk interjection timer by 1;
+	if Clerk interjection timer is 0:
+		interject Clerk;
+
+After discussing when Clerk is in the location:
+	now Clerk interjection timer is a random number from 2 to 5;
+
+After quizzing someone about something when Clerk is in the location:
+	now Clerk interjection timer is a random number from 2 to 5;
+
+To interject Clerk:
+	sort Table of Clerk Interjections in random order;
+	if there is a used of false in the Table of Clerk Interjections:
+		choose the row with a used of false in the Table of Clerk Interjections;
+		say "[Clerk interjection entry][line break]";
+		now the used entry is true;
+		increase Clerk interjection timer by a random number from 2 to 5;
+
+Table of Clerk Interjections
+Clerk interjection	used (a truth state)
+"The clerk looks up from his magazine and says, 'You need something?'"	false
+"The clerk, playing the drums with his fingers on the counter, says, 'Wish I could play the drums.'"	false
+"The clerk, looking at his phone, says, 'Still got 3 hours left on my shift.'"	false
+"The clerk paces back and forth behind the counter, muttering to himself."	false	
+"The clerk, looking at his phone, says, 'I'm not supposed to be on my phone.'"	false
+"The clerk says, 'You gonna buy something?'"	false
+"The clerk, playing with a pen, says, 'I hear some group of weirdos moved in next to the pawn shop.'"	false
+
 
 Book 5 - Comments about Things
 

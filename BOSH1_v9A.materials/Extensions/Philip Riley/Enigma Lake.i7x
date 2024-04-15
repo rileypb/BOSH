@@ -432,6 +432,39 @@ Instead of giving the cup of coffee to Hutz when Hutz-needs-coffee is true:
 		now the cup of coffee is nowhere;
 		queue Hutz with Now-can-you-help-me;
 
+Hutz interjection timer is a number that varies. Hutz interjection timer is 5.
+
+Every turn when Hutz interjection timer is not 0 and Hutz is in the location:
+	decrease Hutz interjection timer by 1;
+	if Hutz interjection timer is 0:
+		interject Hutz;
+
+After discussing when Hutz is in the location:
+	now Hutz interjection timer is a random number from 2 to 5;
+
+After quizzing someone about something when Hutz is in the location:
+	now Hutz interjection timer is a random number from 2 to 5;
+
+To interject Hutz:
+	sort Table of Hutz Interjections in random order;
+	if there is a used of false in the Table of Hutz Interjections:
+		choose the row with a used of false in the Table of Hutz Interjections;
+		say "[Hutz interjection entry][line break]";
+		now the used entry is true;
+		increase Hutz interjection timer by a random number from 2 to 5;
+
+Table of Hutz Interjections
+Hutz interjection	used (a truth state)
+"Hutz raises his head and says, 'Thinking I just might go down with the town, you know?'"	false
+"Hutz rolls over on his back. The cat jumps up and starts kneading his stomach. 'Cat doesn't care about the flood,' he says."	false
+"Hutz sits up and says, 'Never bothered to name the cat. Just call him Cat.'"	false
+"Hutz smiles sadly. 'You know, I used to be a dancer, back before they bulldozed the dance hall and built the radio station.'"	false
+"Hutz puts his arm under his head. 'You're the first person to come by in a long time. Stay as long as you like.'"	false
+"Hutz says, 'Something's running around out there. Something not human.'"	false
+"Hutz scratches his arm. 'Wish this rain would let up. Makes one hell of a racket on the roof.'"	false
+
+
+
 Book 10 - Main at Lake
 
 Main at Lake is east of Main Street 200 Block. It is in ELR. It is outdoors. The printed name is "Main and Lake". The preposition is "at the intersection of". "Main goes west, while Lake runs north. The corner of the town hall is to the northwest, although it cannot be entered there. Southeast is the entrance to WGXC 'Galaxy' Radio. There is a broadcast tower on top of the building." 
