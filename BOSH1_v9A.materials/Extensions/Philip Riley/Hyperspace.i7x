@@ -1350,6 +1350,9 @@ Every turn when Doris interjection timer is not 0 and Doris is in the location:
 After discussing when Doris is in the location:
 	now Doris interjection timer is a random number from 2 to 5;
 
+After quizzing someone about something when Doris is in the location:
+	now Doris interjection timer is a random number from 2 to 5;
+
 To interject Doris:
 	sort Table of Doris Interjections in random order;
 	if there is a used of false in the Table of Doris Interjections:
@@ -1441,6 +1444,9 @@ Every turn when Christy interjection timer is not 0 and Christy is in the locati
 		interject Christy;
 
 After discussing when Christy is in the location:
+	now Christy interjection timer is a random number from 2 to 5;
+
+After quizzing someone about something when Christy is in the location:
 	now Christy interjection timer is a random number from 2 to 5;
 
 To interject Christy:

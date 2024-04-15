@@ -1607,6 +1607,9 @@ Every turn when Moira interjection timer is not 0 and Moira is in the location:
 After discussing when Moira is in the location:
 	now Moira interjection timer is a random number from 2 to 5;
 
+After quizzing someone about something when Moira is in the location:
+	now Moira interjection timer is a random number from 2 to 5;
+
 To interject Moira:
 	sort Table of Moira Interjections in random order;
 	if there is a used of false in the Table of Moira Interjections:
@@ -1812,6 +1815,9 @@ Every turn when Klimp interjection timer is not 0 and Klimp is in the location:
 		interject Klimp;
 
 After discussing when Klimp is in the location:
+	now Klimp interjection timer is a random number from 2 to 5;
+
+After quizzing someone about something when Klimp is in the location:
 	now Klimp interjection timer is a random number from 2 to 5;
 
 To interject Klimp:
