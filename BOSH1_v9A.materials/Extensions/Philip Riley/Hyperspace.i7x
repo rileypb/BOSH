@@ -360,7 +360,7 @@ Staircase coords is always {0, 0, 0}.
 
 Rule for writing a paragraph about the Ethereal Pillar:
 	now visited pillar is true;
-	say "There is an [ethereal pillar] here. A message carved into the pillar says 'Seek the origin. -Doris'[paragraph break]";
+	say "There is an [ethereal pillar] here. A message carved into the pillar says 'All you need is love : love : love -Doris'[paragraph break]";
 	say "Under that is a line of five strange symbols: o p q d b";
 	[say "Under that is a line of five strange symbols: ◊ ┘ ┐ ┌ └";]
 	say paragraph break;
@@ -440,11 +440,11 @@ Check going down from Featureless Hyperplane:
 
 Volume 3 - Hyperspace Field Office
 
-field office area is a region. It is in hyperspace.
+field office area is a region. It is in hyperspace. Understand "field/-- office" as field office area. The printed name is "field office".
 
 Book 1 - Reception
 
-field office reception is below Featureless Hyperplane. The preposition is "at". It is in field office area. "It is a small, white (like everything else) room with a desk against one wall. A hallway leads west and a stairway goes up to the infinite hyperplane."
+field office reception is below Featureless Hyperplane. The preposition is "at". It is in field office area. "It is a small, white (like everything else) room with a desk against one wall. An office directory is on the wall. A hallway leads west and a stairway goes up to the infinite hyperplane."
 The snarky remark is "I bet they don't get much foot traffic here."
 
 The reception desk is a scenery supporter in field office reception. The description is "The desk -- white, polished, and gleaming -- is empty except for a small control panel."
@@ -452,6 +452,17 @@ The snarky remark is "No stapler?"
 
 The control panel is part of the reception desk. The description is "As you lean over to examine the control panel, Maggie says 'Please don't touch that. Don't even look at it. Time to look away now.'".
 The snarky remark is "Geez, relax."
+
+The office directory is scenery in field office reception. The description is "The directory reads:[line break]
+Doris, Field Office Chief: WEST[line break]
+Christy, Field Office Researcher: WEST[line break]
+Minerva, Field Agent: WEST[line break]
+Portal to the Past: WEST[line break]
+Auxiliary Portal: WEST[line break]
+Maggie, Receptionist: RIGHT BEHIND YOU".
+
+Instead of doing anything other than examining to the control panel:
+	say "Maggie gives you a look that says 'Don't even think about it.'";
 
 Section - Maggie
 
@@ -486,6 +497,10 @@ Thumb drive	Maggie	"'What do you know about this?'"	"'I'm surprised you don't kn
 maggie-subject	Maggie	"'Who are you?'"	"'I'm Maggie. I'm the receptionist here at the BOSH Hyperspace Field Office. I'm here to help you with whatever you need, as long as it's not touching the control panel.'"
 BOSH	Maggie	"'Are you part of BOSH?'"	"'Sometimes, yes -- the Bureau of Space and Hyperspace. Or is it Bureaucratic Office of Supernatural History? Or Business Office for Standard Howitzers? Or Big Office of the Slightly Hilarious? Oh yes, Bureau of Strange Happenings. But I like to think of it as the Baby of Stan and Harriet.'"
 lobby	Maggie	"'The lobby? You mean the infinite wasteland I was forced to wander through to get here?'"	"'Yes, that's the one. Isn't it lovely?'"
+Maggie	Maggie	"'Who are you?'"	"'I'm Maggie. I'm the receptionist here at the BOSH Hyperspace Field Office. I'm here to help you with whatever you need, as long as it's not touching the control panel.'"
+Faraji	Maggie	"'What does any of this have to do with me?'"	"'Ask Doris. Or don't. Something confusing is going on, and you're in the middle of it. Or maybe you're not. Who can say?'"
+field office area	Maggie	"'What is this place?'"	"'This is the BOSH Hyperspace Field Office. This is where we are. Isn't that obvious?'"
+
 
 Book 2 - Hallway
 
@@ -735,6 +750,15 @@ The initial appearance is "Doris is sitting cross-legged in a chair, tapping his
 The description is "Doris sports a grin that seems to be permanently etched on his face. He wears a tweed suit and a trilby hat."
 The snarky remark is "Nice hat. I'm not being sarcastic."
 
+The tweed suit is part of Doris. The description is "The suit is a little too big for him, but he wears it with style."
+The snarky remark is "Who wears a tweed suit in hyperspace? Serious question. What [italic type]is[roman type] the dress code here?"
+
+The trilby hat is part of Doris. The description is "The grin and the hat make him look like a cartoon character." 
+The snarky remark is "He's like some strange caricature of Frank Sinatra."
+
+Doris's chair is a scenery supporter in the field office chief's office. The description is "It is a very nice swivel chair, worth more than Faraji's car." 
+The snarky remark is "Yes, but how does it corner?"
+
 Doris's desk is a scenery supporter in the field office chief's office. The description is "Doris's desk is large and made of the same white material as the rest of the office. It is covered with a chaotic mess of papers."
 The snarky remark is "I'm sure it's a very sophisticated filing system."
 
@@ -766,7 +790,7 @@ The snarky remark is "I keep feeling more and more confident in his leadership."
 
 Book 5 - Christy's Office
 
-Christy's office is a leavable room. It is south of the field office hallway. It is in field office area. "Christy has taken the initiative to paint her office a bright, cheerful orange. A large desk is in the middle of the room." It has egress north.
+Christy's office is a leavable room. It is south of the field office hallway. It is in field office area. "Christy has taken the initiative to paint their office a bright, cheerful orange. A large desk is in the middle of the room." It has egress north.
 The snarky remark is "I think they're trying to blind us."
 
 Christy is a nonbinary in Christy's office. The initial appearance is "Christy is sitting at the desk, drawing in a sketchbook." The description is "With their short hair and wide eyes, Christy looks a bit like a lemur. They're wearing a sharp brown suit."
@@ -1057,14 +1081,14 @@ hand over the thumb drive is a performative quip.
 After discussing hand over the thumb drive:
 	now Doris carries the thumb drive;
 	
-about Savra is a questioning quip.
+[ about Savra is a questioning quip.
 	Understand "what about Senator/-- Savra" as about Savra.
 	The comment is "'Senator Savra? What does he have to with anything?' [we] [ask].".
 	The reply is "[Doris] says, 'Well you've noticed he's not very friendly to the Bureau? Let's leave it at that for now. We need to talk about the mission.'".
 	it quip-supplies Doris.
-	It follows hand over the thumb drive;
+	It follows hand over the thumb drive; ]
 
-[about Savra is a questioning quip.
+about Savra is a questioning quip.
 	The comment is "'Senator Savra? What does he have to with anything?' [we] [ask].".
 	The reply is "[Doris] says, 'Tell me, Agent. Do you believe in aliens? That alien species have visited this planet?'".
 	it quip-supplies Doris.
@@ -1087,7 +1111,7 @@ no-aliens is an informative quip.
 yes-aliens is an informative quip. 
 	It is privately-named.
 	The printed name is "[force pronoun for player][we] do believe in alien visitation".
-	Understand "we/i/you/he/they/she/do/does/believe/in/alien/visitation" as no-aliens.
+	Understand "we/i/you/he/they/she/do/does/believe/in/alien/visitation" as yes-aliens.
 	The comment is "'Yes. The evidence is overwhelming,' says [player's surname].".
 	The reply is "[Doris] laughs. 'Nonsense, all of it. Get it out of your head. The whole idea is ridiculous. Senator Savra is [italic type]not[roman type] an alien.' [they] looks at [us] significiantly.
 	
@@ -1113,7 +1137,7 @@ remind him Savra's not reptilian is a performative quip.
 	The comment is "'But Savra isn't a reptile!'".
 	The reply is "'He's in disguise! Whatever, it doesn't matter. What matters is your mission.'"
 	It quip-supplies Doris.
-	It follows what-is-a-lizard-man.]
+	It follows what-is-a-lizard-man.
 	
 [New Bikers of Troy]
 [Terrify New Books]
@@ -1172,7 +1196,7 @@ After giving Christy's note to Doris:
 about the Dragon is a questioning quip.
 	Understand "what about the/-- Dragon" as about the Dragon.
 	The comment is "[We] [say], 'Who is this [']Dragon[']?'"
-	The reply is "Doris brings his finger to his lips. 'Classified. Need to know only. But we should be talking about the mission instead.'".
+	The reply is "Doris brings his finger to his lips. 'Classified. Need to know only[if about the mission is not exhausted]. But we should be talking about the mission instead[end if].'".
 	it quip-supplies Doris.
 	It follows hand over the thumb drive;
 	
@@ -1182,7 +1206,7 @@ about-time-travel is a questioning quip.
 	Understand "about/-- time travel" as about-time-travel.
 	Understand "what about time travel" as about-time-travel.
 	The comment is "Disbelievingly, [we] [ask], 'Time travel? For real?'".
-	The reply is "'Yes, yes,' [Doris] responds. 'Don't get too worked up over it. It gets old fast. But now we need to talk about the mission.'".
+	The reply is "'Yes, yes,' [Doris] responds. 'Don't get too worked up over it. It gets old fast[if about the mission is not exhausted]. But now we need to talk about the mission[end if].'".
 	it quip-supplies Doris.
 	It follows hand over the thumb drive;
 

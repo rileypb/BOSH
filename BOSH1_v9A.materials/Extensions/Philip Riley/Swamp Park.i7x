@@ -40,7 +40,7 @@ Margaret at a distance is obstructed.
 Instead of doing something to Margaret at a distance when Margaret is not in the front office:
 	say "You can't see Margaret right now." instead;
 
-The office window is a part of the Office_. It is privately-named. The printed name is "office window". Understand "front window" as the office window. The description is "[if margaret is in the front office]Through the window, [we] can see Margaret, in her usual manic work mode[else]No one is visible inside[end if]."
+The office window is a part of the Office_. It is privately-named. The printed name is "office window". Understand "front/office/-- window/windows" as the office window. The description is "[if margaret is in the front office]Through the window, [we] can see Margaret, in her usual manic work mode[else]No one is visible inside[end if]."
 
 The office window is unsnarkable.
 	
@@ -216,6 +216,8 @@ The snarky remark of the convenience-store-facade is "I'm sure the nectarines ar
 
 Instead of entering the convenience-store-facade:
 	try going east;
+
+The nectarine sign is a part of the convenience-store-facade. Understand "nectarine/store/-- sign" as the nectarine sign. The description is "It's a big nectarine."
 	
 The military-facade is an unenterable room in strip mall parking lot north. It is privately-named. The printed name is "Military Recruitment Center". Understand "military/recruitment/center" as the military-facade. "Patriotic posters paper the windows."
 The snarky remark of the military-facade is "Looks like I have career options after all."
@@ -249,6 +251,9 @@ The destination name is "Dave's pawn shop".
 
 The blinds are scenery in Dave's pawn shop. "The blinds are closed, leaving the room in a dim light." Understand "windows/blind/window" as the blinds.
 The snarky remark of the blinds is "Typical for an establishment run by a vampire."
+
+Instead of opening the blinds:
+	say "Dave might prefer them closed.";
 
 The fluorescent lights are scenery in Dave's pawn shop. "The lights are flickering and buzzing." Understand "light" as the fluorescent lights.
 The snarky remark of the fluorescent lights is "I'm sure they're good for the complexion."
@@ -436,6 +441,9 @@ The snarky remark of the laundromat basement is "The basement is a bit of a letd
 
 Some boxes of supplies are scenery in the laundromat basement. "The boxes are completely uninteresting." Understand "box" as boxes of supplies.
 The snarky remark of the boxes of supplies is "Maybe Margaret would like to sort through these."
+
+Instead of opening the boxes of supplies:
+	say "The boxes are full of detergent and similar things.";
 
 Instead of searching the boxes of supplies:
 	say "The boxes are full of detergent and similar things.";
@@ -682,10 +690,31 @@ strip mall parking lot north is outside from the the Li'l Nectarine Convenience 
 
 Book 5 - Comments about Things
 
+Convenience-store-subject is a subject. It is privately-named. The printed name is "Li'l Nectarine Convenience Store". Understand "li'l/nectarine/convenience/store" as the convenience-store-subject.
+
+Swamp-park-subject is a subject. It is privately-named. The printed name is "Swamp Park". Understand "swamp/park/town/city" as the swamp-park-subject.
+
 Table of Quiz Topics (continued)
 subject (a thing)	interlocutor (a person)	comment (a text)	reply (a text)
-glass case	store clerk	--	"'You want something inside, just ask.'"
-
+glass case	store clerk	"'You selling the stuff in this case?'"	"'You want something inside, just ask.'"
+store clerk	store clerk	"'How're you doing?'"	"'No need to get personal, man.'"
+Convenience-store-subject	store clerk	"'You like working here?'"	"'I know it's a dump. I just work here.'"
+shop counter	store clerk	--	"'No, I've never had sex on the counter, if that's what you're asking.'"
+CBD oil	store clerk	--	"'Cures everything, they say.'"
+antacids	store clerk	--	"'I take them by the handful.'"
+cigarettes	store clerk	--	"'I like the ones with the little camels on them. Not to smoke, just to look at.'"
+lottery tickets	store clerk	--	"'My lucky numbers are 4, 8, 15, 16, 23, and 42.'"
+aisles	store clerk	--	"'Just watch your step.'"
+store shelves	store clerk	--	"'Those shelves were perfectly organized when I stocked them last month.'"
+flashlight	store clerk	--	"'You ever seen one of these before? It makes light. I'll sell it to you for six bucks.'"
+red screwdriver	store clerk	--	"'You want the screwdriver? Five bucks. And no, you can't borrow it.'"
+laptop computer	store clerk	--	"'It's a real bargain. Um, I mean, it's a real computer. The guy was clear on that. Twelve hundred bucks.'"
+wireless earbuds	store clerk	--	"'Ear Pods. Quality sounds. Eighty-five bucks.'"
+swamp-park-subject	store clerk	--	"'The name gives it too much credit.'"
+Bureau of Strange Happenings	store clerk	--	"'Never heard of it. What are you guys doing in a dump like this?'"
+aliens	store clerk	--	"'If I see an alien, I'm going to ask for a ride.'"
+zombies	store clerk	--	"'The zombie apocalypse will start here.'"
+vampires	store clerk	--	"'Don't tell anyone, but I LARP as a vampire on weekends.'"
 
 
 Swamp Park ends here.

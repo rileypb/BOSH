@@ -26,6 +26,7 @@ looking for the desk key is a truth state that varies.
 
 about the whereabouts of the desk key is a questioning quip.
 	it mentions the little grey key. 
+	Understand "where the desk/-- key is", "where is the desk/-- key" as about the whereabouts of the desk key.
 	the comment is "[We] [say], 'Hey Margaret, do you know anything about my desk key?'".
 	[the comment is "[We] [say], 'Hey, Margaret. Do you have the key to my desk?'".]
 	the reply is "'Sure I do -- I put it in your desk.' She furrows her brow. 'What's the matter?'"
@@ -149,7 +150,7 @@ Biff's computer	Margaret	--	"[if Biff's computer is behind the front desk]It's b
 couch	Margaret	--	"'It's not much, but it's better than the floor.'"
 Bureau photos	Margaret	--	"'I think they're from the 70s. I don't know who they are.'"
 BOSH front desk	Margaret	--	"'I'm really trying to make do with what we have.'"
-
+Bureau of Strange Happenings	Margaret	"Faraji asks, 'What do you think of the Bureau?'"	"'Oh, I don't worry myself with that. I don't really know what you all do. I just know I love all of you.'"
 
 
 Instead of quizzing Margaret Chao about Chief Huffton Klimp:

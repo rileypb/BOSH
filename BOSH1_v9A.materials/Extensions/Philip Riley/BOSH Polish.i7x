@@ -58,7 +58,7 @@ Main Street 200 block	false	--	--
 Main at Solvay	false	--	--
 Solvay Road 100 block	false	--	--
 Solvay Road leading out of town	false	--	--
-Enigma Park	false	--	--
+Enigma Park	true	"Waist-high stone walls line the edge of the park."	--
 Lake Street by the park	false	--	--
 Lake Street by the gym	false	--	--
 Main at Lake	false	--	--
@@ -450,6 +450,7 @@ woven baskets	"Those belong to the Onandaga."	"Those belong to the Onandaga."
 Waiting-for-the-Aliens	"That belongs to Chief Klimp."	"That belongs to Chief Klimp."
 Travels in Time	"That belongs to Chief Klimp."	"That belongs to Chief Klimp."
 Dictionary of Strangeness	"That belongs to Chief Klimp."	"That belongs to Chief Klimp."
+Enigma Park	"That's somewhat heavy."	"[We] [push] it around a bit, but it's only fun for a moment."
 
 
 Table of Floors (continued)

@@ -23,4 +23,10 @@ After saying hello to someone for the first time:
 After saying hello to Hutz for the first time:
 	do nothing;
 
+After saying hello to Maggie for the first time:
+	do nothing;
+
+After saying hello to Doris for the first time:
+	do nothing;
+
 Hello ends here.

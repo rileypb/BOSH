@@ -511,7 +511,7 @@ Amelia Earhart is a subject.
 The Voynich Manuscript is a subject. 
 The Shroud of Turin is a subject.
 The Holy Grail is a subject. 
-Time slips is a subject. Understand "slip" as time slips.
+Time slips is a subject. It is privately-named. The printed name is "time slips". Understand "time slip/slips" as time slips.
 The Ark of the Covenant is a subject.
 The Spear of Destiny is a subject. Understand "holy lance", "lance of longinus" as the Spear of Destiny.
 Alchemy is a subject. Understand "philosopher's stone" as alchemy.
@@ -1115,6 +1115,15 @@ The snarky remark of the strange symbols is "These kids today and their conlangs
 some cardboard boxes are scenery in front office. "There is a stack of boxes in the corner.". Understand "box" as cardboard boxes.
 The snarky remark of the cardboard boxes is "There's something satisfying about flattening boxes."
 
+Instead of opening the cardboard boxes:
+	say "They're all open and empty.";
+
+Instead of closing the cardboard boxes:
+	say "Why bother?";
+
+Instead of searching the cardboard boxes:
+	say "They're all empty.";
+
 some biff-flattened-boxes are a thing in the room of stuff. They are privately-named. The printed name is "flattened boxes". Understand "flattened/boxes" as biff-flattened-boxes. The description is "Some cardboard boxes that have been broken down flat for recycling.".
 some margaret-flattened-boxes are a thing in the room of stuff. They are privately-named. The printed name is "flattened boxes". Understand "flattened/boxes" as margaret-flattened-boxes. The description is "Some cardboard boxes that have been broken down flat for recycling."
 
@@ -1180,14 +1189,14 @@ Before examining the heating vent (this is the now you know vent-screws rule):
 	[ activate the Table of Screwdriver Hints; ]
  
 Instead of removing hex wrench from heating vent when the heating vent is closed:
-	say "[Our] fingers won't fit through the openings in the vent. [We]'ll have to open it first."; 
+	say "[Our] fingers won't fit through the openings in the vent. [We][']ll have to open it first."; 
 	
 Instead of opening the heating vent when the heating vent is locked:
 	say "The vent is held closed by four screws.";
 	now the player knows vent-screws;
 	[ activate the Table of Screwdriver Hints; ]
 	
-The can't reach inside closed containers rule response (A) is "[if the noun is the heating vent][Our] fingers won't fit through the openings in the vent. [We]'ll have to open it first[otherwise][The noun] [aren't] open[end if]."
+The can't reach inside closed containers rule response (A) is "[if the noun is the heating vent][Our] fingers won't fit through the openings in the vent. [We][']ll have to open it first[otherwise][The noun] [aren't] open[end if]."
 
 Instead of unlocking the heating vent with the red screwdriver when the hex wrench is in the heating vent:
 	now the player carries the hex wrench;
@@ -1247,12 +1256,14 @@ The curios are scenery in the BOSH Chief's office. The description is "The desk 
 Klimp's Computer is a thing on the chief's desk. It is scenery. "The computer is a sleek, modern model. It sports a screensaver of what looks like the Hopkinsville goblin." Understand "screen/saver/screensaver" as Klimp's Computer.
 The snarky remark of Klimp's Computer is "Maybe I could trade my computer for this one."
 
-The desk shelves are a supporter. They are part of the Chief's desk. They support a polished orange marble dodecahedron. The description of the polished orange marble dodecahedron is "A relic of the Chief's sacred geometry phase.". Understand "legs" as desk shelves. 
+The Hopkinsville goblin screensaver is a part of Klimp's Computer. The description is "The screensaver is a looping animation of the Hopkinsville goblin, a creature from the 1955 Kelly-Hopkinsville encounter. It's a little creepy."
+
+The desk shelves are a supporter. They are part of the Chief's desk. They support a polished orange marble dodecahedron. The description of the polished orange marble dodecahedron is "A relic of the Chief's sacred geometry phase.". Understand "legs" as desk shelves. They are plural-named.
 The snarky remark of the desk shelves is "Desk shelves! What will they think of next?"
 They are indescribable.
 
 Chief Huffton Klimp owns the polished orange marble dodecahedron. 
-The snarky remark of the polished orange marble dodecahedron is "I'm partial to Catalan solids, actually."
+The snarky remark of the polished orange marble dodecahedron is "I'm partial to the pentagonal hexecontahedron, actually."
 
 The chief's black leather swivel chair is a supporter in BOSH Chief's Office. It is enterable. It is scenery. "Nice chair. Good lumbar support."
 
@@ -1404,7 +1415,7 @@ Check wearing the pair of astral lenses when the location is fluorescent-lit:
 Section 6 - Moira's office
 				 
 Moira's office is in BOSH HQ. There is a fluorescent light source in Moira's office called moira-light.
-"It is, like Moira herself, neat and orderly. She's clearly made the most of the meager funds she had for furnishing her office. Behind a modest yet functional desk is a modest yet functional office chair. Her bookshelves are filled with titles relating to investigative techniques, law, and skepticism. In the east wall is a closet door. The exit is to the south."
+The description of Moira's office is "It is, like Moira herself, neat and orderly. She's clearly made the most of the meager funds she had for furnishing her office. Behind a modest yet functional desk is a modest yet functional office chair. Her bookshelves are filled with titles relating to investigative techniques, law, and skepticism. In the east wall is a closet door. The exit is to the south."
 The snarky remark of Moira Zin is "The problem with Moira is that she's too good at her job. Slow down and let the rest of us catch up, will you?"
 Moira's office is unsnarkable.
 
@@ -1449,9 +1460,11 @@ After discussing to borrow a book:
 	
 After examining a tome when the noun is owned by Moira Zin and the noun is supported by Moira's bookshelves:
 	queue Moira Zin with to borrow a book;
+	continue the action;
 
 after examining moira's bookshelves:
 	queue Moira Zin with to borrow a book;
+	continue the action;
 
 No-Myth-After-All is a tome on Moira's bookshelves. It is owned by Moira Zin. It is loanable. 
 The printed name is "No Myth After All: A New Perspective on Atlantis".
@@ -1628,10 +1641,10 @@ Chapter 2 - Klimp Arrives
 
 Book 17 - Commerce and Conversation
 
-Before quizzing someone about something when the noun owns the second noun:
+[ Before quizzing someone about something when the noun owns the second noun:
 	if the noun is willing to sell the second noun:
 		say "'I'll sell [regarding the second noun][them] for [price of the second noun].'";
-		stop the action;
+		stop the action; ]
 
 Before requesting someone for something when the noun owns the second noun:
 	if the noun is willing to sell the second noun:
@@ -1644,6 +1657,8 @@ Book 18 - Sound
 Book 18.5 - Quiz table
 
 To start is a verb. To begin is a verb.
+
+Senator-savra-subject is a subject. The printed name is "Senator Savra". Understand "Senator/Savra" as Senator-savra-subject.
 
 Table of Quiz Topics (continued)
 subject (a thing)	interlocutor (a person)	comment (a text)	reply (a text)
@@ -1662,7 +1677,7 @@ Margaret Chao	Margaret Chao	"'How are you doing, Margaret?'"	"'I'm great!' Marga
 Margaret Chao	Moira Zin	"'Moira,' [we] say, 'what do you think of Margaret?'"	"'She'll do,' Moira says. 'She's a bit too eager, but she'll do.'"
 Margaret Chao	Chief Huffton Klimp	"'Chief,' [we] say, 'Margaret --'"	"'I'm reading about the latest discoveries in the field of cryptozoology,' Klimp says. 'Did you know that the Yeti is actually a type of bear? I don't mean a regular bear, but a bear that's not of this world.'"
 Bureau of Strange Happenings	Chief Huffton Klimp	"[We] [say] to Klimp, 'the Bureau --'"	"'The Bureau will be the most important line of defense when the alien threat inevitably comes to fruition. Savra is a fool,' he says with a gleam in his eye."
-Senator Savra	Chief Huffton Klimp	"'So what is Savra --'"	"'Savra -- that imbecile. He's a fool and a coward. He's the reason we're not prepared for the alien invasion.'"
+Senator-savra-subject	Chief Huffton Klimp	"'So what is Savra --'"	"'Savra -- that imbecile. He's a fool and a coward. He's the reason we're not prepared for the alien invasion.'"
 Time-travel	Chief Huffton Klimp	"'Is time travel --'"	"'Time travel is a fact,' Klimp says. 'Tesla had a time machine. I've seen it.'"
 Astral plane	Chief Huffton Klimp	"'Chief, is the astral plane --'"	"'I've heard of people who have been there, even lived there. My friend Doris. True story.'"
 Doris	Chief Huffton Klimp	"'Chief, who is D--"	"'Doris? He's a friend of mine. Works for the Bureau. Sort of. Snappy dresser. Prone to outlandish stories. Ask him about the Mothman.'"
@@ -1749,6 +1764,39 @@ The ringing-phone	Chief Huffton Klimp	"'Hey, Chief, sorry about the --'"	"'damn 
 The ringing-phone	Margaret	"[We] [say] to Margaret, 'Margaret, do you have any way to get into my desk to answer the phone, a spare key or --'"	"'No, no, I don't. I'm sorry. I don't know what to do. I'm sorry.'"
 The ringing-phone	Moira Zin	"'Moira, I'm so sorry about the phone ringing. It's locked in my desk and I can't get to it. I don't know what to do. I'm sorry.'"	"'It's okay, Larch. I'm sure whoever's calling will give up eventually.'"
 
+Book 18.6 - Klimp Interjections
+
+Klimp interjection timer is a number that varies. Klimp interjection timer is 5.
+
+Every turn when Klimp interjection timer is not 0 and Klimp is in the location:
+	decrease Klimp interjection timer by 1;
+	if klimp interjection timer is 0:
+		interject;
+
+After discussing when Klimp is in the location:
+	now Klimp interjection timer is a random number from 2 to 5;
+
+To interject:
+	choose a random row in the Table of Klimp Interjections;
+	say "[Klimp interjection entry][line break]";
+	increase Klimp interjection timer by a random number from 2 to 5;
+
+Table of Klimp Interjections
+Klimp interjection
+"Klimp scratches his head and says, 'You ever been to Istanbul? I met a guy there who said he was a time traveler. I didn't believe him, but he had a watch that was always right.'"
+"Klimp looks around and says, 'I don't like this new office. I liked the old one. It had character. It had history. It had a ghost. I miss that ghost.'"
+"Klimp leans back in his chair and says, 'How many people do you think have been abducted by aliens and don't even know it? I'd say at least half. Maybe more.'"
+"Klimp taps his fingers on the desk and says, 'Did I ever tell you about my friend Doris? We went a lot of places together back when the Bureau was just starting out. He's a good guy. A bit of a liar, but a good guy.'"
+"Klimp yawns theatrically and says, 'I was up all night reading about the founding of the Illuminati. Did you know they were originally a secret society of bakers? They made the best bread in Bavaria.'"
+"Klimp looks out the window and says, 'I was just thinking about the future of the Bureau. Savra's going to ruin everything. I have a feeling he's not quite human.'"
+"Klimp taps his foot and says, 'You ever eat too much pizza and then have a dream about being chased by a giant pizza? I have. It's not fun.'"
+"Klimp looks at the ceiling and says, 'I was just thinking about the time I met a guy who said he was a vampire. I didn't believe him, but he had a lot of good ideas about furniture.'"
+"Klimp drums his fingers on the desk and says, 'Savra's going to be the death of us all. Is he an alien? I don't know. But I'm going to find out.'"
+"Klimp looks at the door and says, 'You ever been to Siberia? They have lots of diners there, believe it or not. Or maybe I was in Pennsylvania. I can't remember.'"
+"Klimp flips his pen between his fingers and says, 'Never believe a Freemason when he tells you he's just a guy who likes to wear aprons. They're up to something. I know it.'"
+"Klimp looks at the clock and says, 'I just know Savra's up to something nefarious. I can feel it in my bones. Or maybe that's just the arthritis acting up.'"
+"Klimp jumps up from his chair, looks sheepish, and then sits back down. 'Sorry, I was just thinking about Budapest. Scary place. Lots of ghosts. Lots of vampires. Lots of good food.'"
+"Klimp smiles and says, 'I have such a good feeling about today. I think we're going to solve the mystery of the Black Knight Satellite. Or maybe we'll just have a good lunch. Either way, it's a win.'"
 
 
 
@@ -2040,7 +2088,7 @@ Book 21 - Not For Release
 DEBUG is true.
 
 AUDIT is a truth state that varies.
-AUDIT is true.
+AUDIT is false.
 
 To decide what text is the wall description of (R - a room):
 	let result be "";
@@ -2086,7 +2134,7 @@ When play begins:
 		lb;
 		say ">>> NO Description <<<[line break]";
 		repeat with X running through things:
-			if X is not a subject and the description of X is "" and X is not a quip and X is not indescribable:
+			if X is not a subject and the description of X is "" and X is not a quip and X is not indescribable and X is not a hint topic:
 				say "THING [X][line break]";
 		lb;
 		say ">>> NO Wall Description <<<[line break]";

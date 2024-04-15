@@ -1038,7 +1038,7 @@ the steeple is above the First Utilitarian Church of Enigma Lake. It is in ELR. 
 The snarky remark of the steeple is "I wonder if I can see my house from here."
 The x-coordinate of the steeple is 2. The y-coordinate of the steeple is 1.
 
-Some stained-glass-window-steeples are scenery in the steeple. They are privately-named. The printed name is "stained glass windows". Understand "stained/glass/windows" as stained-glass-window-steeples. "The steeple is surrounded by the typical Utilitarian perfectly clear stained glass windows."
+Some stained-glass-window-steeples are scenery in the steeple. They are privately-named. The printed name is "stained glass windows". Understand "stained/glass/windows" as stained-glass-window-steeples. "The steeple is surrounded by the typical Utilitarian perfectly clear stained glass windows.".
 stained-glass-window-steeples are unsnarkable.
 
 The telescope is in the tripod. The description is "A small telescope suitable for amateur astronomy[if the content of the tripod is the telescope]. It's mounted on a tripod[end if]."
@@ -1329,11 +1329,14 @@ The enigma-park-scenery is unsnarkable.
 
 Book 21 - Workshed
 
-the workshed is a leavable room. It has egress northwest. It is in ELR. It is indoors. "It is a small, weathered building, with a single door and no windows, and a creaky wooden floor. The interior is dimly lit by a single light bulb hanging from the ceiling. [equipment cabinet state] cabinet is in the corner. [rusty metal door state], rusty metal door leads out of the shed. [if the trapdoor is revealed]A trapdoor is in the floor, [trapdoor state].[end if]".
+the workshed is a leavable room. It has egress northwest. It is in ELR. It is indoors. "It is a small, weathered building, with a single door and no windows, and a creaky wooden floor. The interior is dimly lit by a single light bulb hanging from the ceiling. [equipment cabinet state] cabinet is in the corner. [rusty metal door state] rusty metal door leads out of the shed. [if the trapdoor is revealed]A trapdoor is in the floor, [trapdoor state].[end if]".
 The snarky remark of the workshed is "I wonder if there's a chainsaw in here."
 
 The light bulb is scenery in the workshed. "A single light bulb hangs from the ceiling, casting a dim light over the room."
+The light bulb is unsnarkable.
 
+Instead of doing something to the light bulb when the action requires a touchable noun:
+	say "Ouch! The bulb is hot to the touch.";
 
 Understand "building/shed" as the workshed.
 
@@ -1582,7 +1585,7 @@ The kitchen facade is a building facade. It is in Horton Family House Parlor. It
 	It is enterable from Horton Family House Parlor.
 The snarky remark of the kitchen facade is "It's slightly less creepy than the parlor. Let's go there."
 
-The Book of Weird Names is on the parlor table. The printed name is "[italic type]The Book of Weird Names[roman type]". It is proper-named. It is unsnarkable. Understand "strange-looking/strange/looking" as the Book of Weird Names.
+The Book of Weird Names is on the parlor table. The printed name is "[italic type]The Book of Weird Names[roman type]". It is proper-named. It is unsnarkable. Understand "strange-looking/strange/looking" as the Book of Weird Names. It is indescribable.
 
 To stop is a verb.
 

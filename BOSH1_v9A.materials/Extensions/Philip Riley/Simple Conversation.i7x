@@ -94,7 +94,7 @@ Understand "say [any q-available informative quip] to [person]" as discussing it
 
 Discussing is an action applying to one thing.
 
-Understand "ask about/-- [any q-available questioning quip]", "say [any q-available informative quip]", "say [any q-available performative quip]" as discussing [when the current interlocutor is something].
+Understand "ask about/-- [any q-available questioning quip]", "say [any q-available informative quip]", "say [any q-available performative quip]", "a [any q-available questioning quip]" as discussing [when the current interlocutor is something].
 
 [report discussing something with someone (this is the discussing with output rule):
 	if the noun does not quip-supply the second noun:
@@ -215,7 +215,13 @@ the block quizzing rule response (A) is "That doesn't seem to be a topic of conv
 
 the block informing rule response (A) is "That doesn't seem to be a topic of conversation at the moment."
 
-the unresponsive rule response (A) is "That doesn't seem to be a topic of conversation at the moment."
+To say unresponsive:
+	if the current action is giving something to someone:
+		say "They don't seem interested in that";
+	otherwise:
+		say "That doesn't seem to be a topic of conversation at the moment";
+
+the unresponsive rule response (A) is "[unresponsive].".
 
 Book 2 - Quizzing about things
 
