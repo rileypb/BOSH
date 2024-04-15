@@ -342,7 +342,7 @@ Book 3 - Laundromat
 
 Chapter 1 - The Astral Tunnel
 
-The astral-tunnel-1 is back of the back lot. It is privately-named. The printed name is "astral tunnel". It is in hyperspace. "It is featureless white, or what passes for white here. It bends 'forth' to north.".
+The astral-tunnel-1 is back of the back lot. It is privately-named. The printed name is "astral tunnel". It is in hyperspace. "It is featureless white, or what passes for white here. It leads 'forth' at one end and north at the other.".
 The snarky remark of the astral-tunnel-1 is "What do you know? Klimp was onto something."
 
 The astral-tunnel-1-facade is a building facade. 
@@ -355,7 +355,7 @@ The astral-tunnel-1-facade is a building facade.
 
 The snarky remark of the astral-tunnel-1-facade is "[if astral-tunnel-1 is not visited]No way I'm going in there, right?[otherwise]It's not so bad, as long as you don't mind be stuck in a featureless white void[end if]."
 
-The astral-tunnel-2 is north of astral-tunnel-1. It is privately-named. The printed name is "astral tunnel". It is in hyperspace. "It is featureless white, or what passes for white here. It bends south to 'forth.'";
+The astral-tunnel-2 is north of astral-tunnel-1. It is privately-named. The printed name is "astral tunnel". It is in hyperspace. "It is featureless white, or what passes for white here. It leads south at one end and 'forth.' at the other.";
 
 The snarky remark of the astral-tunnel-2 is "I wonder if there's one of these leading into my apartment."
 
@@ -554,7 +554,7 @@ Every turn:
 		now the hyperlight is unlit;
 		now the player carries the pair of astral lenses;
 		
-The astral-tunnel-3 is forth of back basement and backsouth of the laundromat-store. It is privately-named. The printed name is "astral tunnel". It is in hyperspace. "It is featureless white, or what passes for white here. It bends 'back' to 'forthnorth.'".
+The astral-tunnel-3 is forth of back basement and backsouth of the laundromat-store. It is privately-named. The printed name is "astral tunnel". It is in hyperspace. "It is featureless white, or what passes for white here. It leads 'back' at one end and 'forthnorth.' at the other.".
 The snarky remark of the astral-tunnel-3 is "I wonder how many of these things there are."
 
 The astral-tunnel-3-facade is a building facade. 

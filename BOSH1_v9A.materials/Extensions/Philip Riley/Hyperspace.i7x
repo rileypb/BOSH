@@ -500,11 +500,46 @@ lobby	Maggie	"'The lobby? You mean the infinite wasteland I was forced to wander
 Maggie	Maggie	"'Who are you?'"	"'I'm Maggie. I'm the receptionist here at the BOSH Hyperspace Field Office. I'm here to help you with whatever you need, as long as it's not touching the control panel.'"
 Faraji	Maggie	"'What does any of this have to do with me?'"	"'Ask Doris. Or don't. Something confusing is going on, and you're in the middle of it. Or maybe you're not. Who can say?'"
 field office area	Maggie	"'What is this place?'"	"'This is the BOSH Hyperspace Field Office. This is where we are. Isn't that obvious?'"
+Budapest	Maggie	"'What do you know about Budapest?'"	"'It was the answer to a question I asked myself. I don't remember the question, but the answer was Budapest.'"
+
+Maggie interjection timer is a number that varies. Maggie interjection timer is 5.
+
+Every turn when Maggie interjection timer is not 0 and Maggie is in the location:
+	decrease Maggie interjection timer by 1;
+	if Maggie interjection timer is 0:
+		interject Maggie;
+
+After discussing when Maggie is in the location:
+	now Maggie interjection timer is a random number from 2 to 5;
+
+After quizzing someone about something when Maggie is in the location:
+	now Maggie interjection timer is a random number from 2 to 5;
+
+To interject Maggie:
+	sort Table of Maggie Interjections in random order;
+	if there is a used of false in the Table of Maggie Interjections:
+		choose the row with a used of false in the Table of Maggie Interjections;
+		say "[Maggie interjection entry][line break]";
+		now the used entry is true;
+		increase Maggie interjection timer by a random number from 2 to 5;
+
+Table of Maggie Interjections
+Maggie interjection	used
+"Maggie seems to snap out of her reverie. 'Oh, hello. Who are you again? Oh yes, Agent Faraji. Please don't touch the control panel."	false
+"Maggie looks up from her desk. 'Do you know what makes this place so special? It's the people. I mean, not the people that you see, but the others."	false
+"Maggie snaps her fingers. 'That's it! I remember now. Budapest.'"	false
+"Maggie looks at her hands. 'Once I thought I wasn't real. But Minerva told me I was. So I guess I am.'"	false
+"Maggie curls her lip. 'I don't like coffee. It's too bitter. But Minerva likes it. She's the only one who does. Except for Doris and Christy.'"	false
+"Maggie twirls a lock of hair around her finger. 'A lot of people travel in time and don't even know it. They think they're just going to the store or to work. But they're not. They're going to the past or the future.'"	false
+"Maggie gets up for a moment and paces. 'Most people think my job is easy. But it's not. I have so many scary thoughts sitting here all day."	false
+
+
 
 
 Book 2 - Hallway
 
 the field office hallway is west of field office reception. It is in field office area. "The hallway is white and gleaming. Doorways lead north, south, east, west, forth, and back."
+Understand "hall/way/corridor" as field office hallway.
 
 The snarky remark is "You can find blandness in any dimension."
 
@@ -739,6 +774,39 @@ After discussing about coffee:
 	say "[reset LPR][We] [pour] [ourselves] a cup of coffee in a styrofoam cup from the coffee maker.";
 	now the player carries the cup of coffee;
 	now the hotness of the cup of coffee is 30;
+
+
+Minerva interjection timer is a number that varies. Minerva interjection timer is 5.
+
+Every turn when Minerva interjection timer is not 0 and Minerva is in the location:
+	decrease Minerva interjection timer by 1;
+	if Minerva interjection timer is 0:
+		interject Minerva;
+
+After discussing when Minerva is in the location:
+	now Minerva interjection timer is a random number from 2 to 5;
+	
+After quizzing someone about something when Minerva is in the location:
+	now Minerva interjection timer is a random number from 2 to 5;
+
+To interject Minerva:
+	sort Table of Minerva Interjections in random order;
+	if there is a used of false in the Table of Minerva Interjections:
+		choose the row with a used of false in the Table of Minerva Interjections;
+		say "[Minerva interjection entry][line break]";
+		now the used entry is true;
+		increase Minerva interjection timer by a random number from 2 to 5;
+
+Table of Minerva Interjections
+Minerva interjection	used
+"Minerva looks up from her computer. 'Yes? Don't tell me, I know. You want to borrow a book.'"	false
+"Minerva looks bothered. 'What is it now?'"	false
+"Minerva, lost in thought, looks up. 'Don't drink too much coffee. I pay for it, you know.'"	false
+"Minerva leans back. 'If you're going to ask me a question, make it a good one.'"	false
+"Minerva cocks an eyebrow. 'If you're coming to me because Maggie's being weird, I can't help you.'"	false
+"Minerva clicks her tongue. 'I'm busy. What do you want?'"	false
+"Minerva sighs deeply. 'If Christy is being difficult, work it out with them. I'm not a mediator.'"	false
+
 
 Book 4 - Doris's Office
 
@@ -1268,6 +1336,41 @@ tchotchkes	Doris	"'What are all these things on your desk?'"	"'Definitely not a 
 mystic compass	Doris	"'Do you know what this compass is?'"	"'It's a mystic compass. Hold on to it. It might come in handy. It can find anything, even things that aren't lost.'"
 astral lenses	Doris	"'What are these glasses?'"	"'They're astral lenses. They let you see things you wouldn't normally see. Like the truth. And penguins. Anyway, don't lose them.'"
 time-travel	Doris	"Disbelievingly, [we] [ask], 'Time travel? For real?'"	"'Yes, yes. Don't get too worked up over it. It gets old fast. But now we need to talk about the mission.'"
+Pompeii	Doris	"'What happened in Pompeii with Klimp?'"	"'Oh, you know. The usual. A little too much wine, a little too much time travel. But what's a little temporal paradox between friends?'"
+
+
+
+Doris interjection timer is a number that varies. Doris interjection timer is 5.
+
+Every turn when Doris interjection timer is not 0 and Doris is in the location:
+	decrease Doris interjection timer by 1;
+	if Doris interjection timer is 0:
+		interject Doris;
+
+After discussing when Doris is in the location:
+	now Doris interjection timer is a random number from 2 to 5;
+
+To interject Doris:
+	sort Table of Doris Interjections in random order;
+	if there is a used of false in the Table of Doris Interjections:
+		choose the row with a used of false in the Table of Doris Interjections;
+		say "[Doris interjection entry][line break]";
+		now the used entry is true;
+		increase Doris interjection timer by a random number from 2 to 5;
+
+Table of Doris Interjections
+Doris interjection	used
+"Doris leans back in his chair. 'The Bureau is the only thing standing between us and the end of the world. No pressure, right?'"	false
+"Doris looks up from his desk. 'There are things you don't know, Larch. Things that no one knows. Well, except me.'"	false
+"Doris looks at you brightly. 'You ever need anything, ask Maggie. She's the best. She's the only one who knows what she's doing around here.'"	false
+"Doris twiddles his thumbs. 'Have you ever been to Budapest? I haven't either. I hear it's full of Hungarians.'"	false
+"Doris looks at you. 'You know, I've been thinking about getting a dog. What do you think? No don't tell me. You might say the opposite of what I want to hear.'"	false
+"Doris taps his fingers on his desk. 'How far back in time do you think I've been? No, don't try to guess. I'll tell you. 2547 BC. Khufu was all the rage back then.'"	false
+"Doris fiddles with his TARDIS. 'Some people get all excited about this thing. What's the big deal? It's just a police box.'"	false
+"Suddenly, Doris looks behind himself. 'I guess no one is sneaking up on me after all.'"	false
+"Doris smiles. 'Did you know I've been to all 55 countries in the world? Some people say there are more, but they're hallucinating.'"	false
+"Doris leans forward confidingly. 'You know, I think there may be a mole in the Bureau. Do you know who it is? No, don't tell me. I'd rather not know.'"	false
+"Drumming his fingers on his desk, Doris says, 'The biggest threat to the world today is -- wait, you don't have clearance for that. Never mind.'"	false
 
 
 Book 2 - Maggie
@@ -1297,7 +1400,7 @@ After giving Doris's note to Christy:
 	now Christy carries Doris's note;
 	now Christy carries Tribes of New York;
 
-After giving the cup of coffee to Christy:
+After giving the cup of coffee to Christy when christy carries Tribes of New York and Christy is not researching:
 	say "Christy accepts the coffee gratefully. 'Thanks. I'll get to work on this right away. I'll let you know when I have something.' They take a sip of the coffee and get to work, which seems to involve a lot of sketching and erasing.";
 	remove the cup of coffee from play;
 	now Christy is researching;
@@ -1329,7 +1432,38 @@ maggie-subject	Christy	"'Who is Maggie?'"	"'Maggie is... Maggie. She's the recep
 Christy's desk	Christy	"'What's on your desk?'"	"'Research. Nothing you would understand. Also a sketchbook. Don't look in it.'"
 Christy's sketchbook	Christy	"'What's in your sketchbook?'"	"'Drawings. Of things. I'm not going to show you.'"
 Christy's pencil	Christy	"'What's that pencil?'"	"'My special drawing pencil. I'm not going to let you borrow it.'"
-		
+
+Christy interjection timer is a number that varies. Christy interjection timer is 5.
+
+Every turn when Christy interjection timer is not 0 and Christy is in the location:
+	decrease Christy interjection timer by 1;
+	if Christy interjection timer is 0:
+		interject Christy;
+
+After discussing when Christy is in the location:
+	now Christy interjection timer is a random number from 2 to 5;
+
+To interject Christy:
+	sort Table of Christy Interjections in random order;
+	if there is a used of false in the Table of Christy Interjections:
+		choose the row with a used of false in the Table of Christy Interjections;
+		say "[Christy interjection entry][line break]";
+		now the used entry is true;
+		increase Christy interjection timer by a random number from 2 to 5;
+
+Table of Christy Interjections
+Christy interjection	used
+"Christy looks up from her scribbling. 'You know working with Doris is like working with a cat. It's pointless."	false
+"Christy glares at the ceiling. 'I swear, if I have to hear one more time about the time Doris and Klimp went to Pompeii, I'm going to scream."	false
+"Christy looks annoyed. 'Why are you hanging around in here?"	false
+"Christy looks up at Faraji. 'If I could go back in time, I'd tell myself not to take this job."	false
+"Christy frowns. 'I swear pencils used to be better quality.'"	false
+"Christy yawns. 'You know, working in hyperspace is a terrible commute. Especially when your portal is inside a taco truck that moves every day.'"	false
+"Christy sharpenes her pencil. 'Do you know how many donut shops there are in hyperspace? None! It's a travesty."	false
+"Christy tosses her pencil in the air. 'Just once I'd like to be the one who gets to travel in time.'"	false
+"Christy looks thoughtful. 'I wonder if I could get a job at the Bureau of Startling Hallucinations. They have a better dental plan.'"	false
+
+
 Volume 5 - Things
 
 The recall button is a thing. The description is "A small, flat device with a black button on it." Understand "black/device" as the recall button.

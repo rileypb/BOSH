@@ -471,8 +471,8 @@ Book 8 - Script
 Klimp in-the-office is a scene. Klimp in-the-office begins when Chief Huffton Klimp is in BOSH chief's office.
 Moira in-the-office is a scene. Moira in-the-office begins when Moira Zin is in Moira's office.
 
-Denouement is a scene.	
-After printing the locale description when the location is front office for the first time during denouement:
+Denouement is a scene. Denouement begins when the location is the dumpster.
+Before going from the front office to the strip mall parking lot south when the copy of the Washington Herald is not handled during denouement:
 	say "[We] [trip] over a newspaper left up against the door. [We] [pick] it up.";
 	now the player carries the copy of the Washington Herald.
 
@@ -1009,9 +1009,9 @@ Instead of going when the location is inside-the-dumpster and the noun is not ou
 	say "Blue walls block every direction.";
 
  
-Section 3 - Hallway
+Section 3 - 
 
-Biff's door is a door. It is privately-named. It is scenery. The printed name is "[our] door". It is north of Biff's Office and south of the BOSH office hallway. It is open. Understand "Faraji's/Goldberg's/Gaunt's/Larch's/Petula's/Ezra's/office/door" as Biff's door. 
+Biff's door is a door. It is privately-named. It is scenery. The printed name is "[our] door". It is north of Biff's Office and south of the BOSH office . It is open. Understand "Faraji's/Goldberg's/Gaunt's/Larch's/Petula's/Ezra's/office/door" as Biff's door. 
 The snarky remark is "My little slice of heaven."
 The description is "The nameplate reads 'Agent Larch Faraji'."
 		
@@ -1023,6 +1023,7 @@ The description is "The nameplate reads 'Agent Moira Zin'."
 It is unsnarkable.
 
 the BOSH office hallway is in BOSH HQ. The printed name is "hallway". "[Our] office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east. [door descriptions]."
+Understand "hall/corridor/way" as the BOSH office hallway.
 
 The snarky remark is "The industrial carpet really makes the look, don't you think?"
 
@@ -1593,7 +1594,38 @@ to wait for the report is an informative quip.
 	It quip-supplies Moira Zin.
 	It rules out about the hyperdimensional portal.
 	
-	
+Section 7 - Moira Interjections
+
+
+Moira interjection timer is a number that varies. Moira interjection timer is 5.
+
+Every turn when Moira interjection timer is not 0 and Moira is in the location:
+	decrease Moira interjection timer by 1;
+	if Moira interjection timer is 0:
+		interject Moira;
+
+After discussing when Moira is in the location:
+	now Moira interjection timer is a random number from 2 to 5;
+
+To interject Moira:
+	sort Table of Moira Interjections in random order;
+	if there is a used of false in the Table of Moira Interjections:
+		choose the row with a used of false in the Table of Moira Interjections;
+		say "[Moira interjection entry][line break]";
+		now the used entry is true;
+		increase Moira interjection timer by a random number from 2 to 5;
+
+Table of Moira Interjections
+Moira interjection	used (a truth state)
+"Moira looks serious. 'I'm worried about the Chief. He's been acting strange lately. But I guess that's nothing new.'"	false
+"Moira looks pensive. 'I'm not sure whether Margaret is a help or a hindrance.'"	false
+"Moira says, 'Feel free to borrow a book if you like. Just take good care of it.'"	false
+"Moira peeks into the closet. 'I'm not sure what to do with this closet. I don't have much to store in it.'"	false
+"Moira sits on the edge of her desk. 'Klimp was telling me about the Voynich manuscript. Fascinating stuff.'"	false
+"While rearranging her bookshelves, Moira says, 'I think the Chief's new Sasquatch skull is a fake.'"	false
+"Moira crosses her arms. 'This new office suite is a bit of a downgrade from the old one. We'll have to make do.'"	false
+
+
 
 Book 15 - The Phone Call
 
@@ -1658,7 +1690,7 @@ Book 18.5 - Quiz table
 
 To start is a verb. To begin is a verb.
 
-Senator-savra-subject is a subject. The printed name is "Senator Savra". Understand "Senator/Savra" as Senator-savra-subject.
+Senator-savra-subject is a subject. The printed name is "Senator Savra". Understand "Senator/Savra" as Senator-savra-subject. Budapest is a subject. Istanbul is a subject. Pompeii is a subject. 
 
 Table of Quiz Topics (continued)
 subject (a thing)	interlocutor (a person)	comment (a text)	reply (a text)
@@ -1763,6 +1795,12 @@ bear	Chief Huffton Klimp	"'Chief, why do you talk about --'"	"'bears? Because th
 The ringing-phone	Chief Huffton Klimp	"'Hey, Chief, sorry about the --'"	"'damn phone that keeps ringing? It's the Illuminati. They're trying to get you. They're trying to get me. They're trying to get everyone. Don't answer it. But make it stop. It's driving me crazy.'"
 The ringing-phone	Margaret	"[We] [say] to Margaret, 'Margaret, do you have any way to get into my desk to answer the phone, a spare key or --'"	"'No, no, I don't. I'm sorry. I don't know what to do. I'm sorry.'"
 The ringing-phone	Moira Zin	"'Moira, I'm so sorry about the phone ringing. It's locked in my desk and I can't get to it. I don't know what to do. I'm sorry.'"	"'It's okay, Larch. I'm sure whoever's calling will give up eventually.'"
+Voynich Manuscript	Moira Zin	"'Moira, tell me something about the Voynich Manuscript.'"	"'Well, I only know what Klimp has told me. Better ask him.'"
+Istanbul	Margaret	"'Margaret, what do you know about Istanbul?'"	"'Well, not a lot, but I hear it's full of Turkeys. And not the kind you eat. The kind that are really big and can fly. I think. I can't remember.'"
+Budapest	Margaret	"'Margaret, what do you know about Budapest?'"	"'Oh, Budapest. It used to be two cities, you know. Buddha and Pesto. I love pesto. I can't remember what Buddha is. But I love pesto.'"
+Istanbul	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'Istanbul? It's on two continents [italic type]at the same time[roman type]. So you have to be careful when you're there or you'll end up in two places at once. Did I mention I have a timeshare there?'"
+Budapest	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'Budapest? It sure has a funny name. But it's a serious place. Serious history. Serious ghosts. Serious vampires. Serious food. I can't remember what I was going to say.'"
+Pompeii	Chief Huffton Klimp	"'Chief, what's with you and --'"	"'Doris in Pompeii? You'll never know. The evidence was conveniently destroyed somehow."
 
 Book 18.6 - Klimp Interjections
 
@@ -1771,32 +1809,35 @@ Klimp interjection timer is a number that varies. Klimp interjection timer is 5.
 Every turn when Klimp interjection timer is not 0 and Klimp is in the location:
 	decrease Klimp interjection timer by 1;
 	if klimp interjection timer is 0:
-		interject;
+		interject Klimp;
 
 After discussing when Klimp is in the location:
 	now Klimp interjection timer is a random number from 2 to 5;
 
-To interject:
-	choose a random row in the Table of Klimp Interjections;
-	say "[Klimp interjection entry][line break]";
-	increase Klimp interjection timer by a random number from 2 to 5;
+To interject Klimp:
+	sort Table of Klimp Interjections in random order;
+	if there is a used of false in the Table of Klimp Interjections:
+		choose the row with a used of false in the Table of Klimp Interjections;
+		say "[Klimp interjection entry][line break]";
+		now the used entry is true;
+		increase Klimp interjection timer by a random number from 2 to 5;
 
 Table of Klimp Interjections
-Klimp interjection
-"Klimp scratches his head and says, 'You ever been to Istanbul? I met a guy there who said he was a time traveler. I didn't believe him, but he had a watch that was always right.'"
-"Klimp looks around and says, 'I don't like this new office. I liked the old one. It had character. It had history. It had a ghost. I miss that ghost.'"
-"Klimp leans back in his chair and says, 'How many people do you think have been abducted by aliens and don't even know it? I'd say at least half. Maybe more.'"
-"Klimp taps his fingers on the desk and says, 'Did I ever tell you about my friend Doris? We went a lot of places together back when the Bureau was just starting out. He's a good guy. A bit of a liar, but a good guy.'"
-"Klimp yawns theatrically and says, 'I was up all night reading about the founding of the Illuminati. Did you know they were originally a secret society of bakers? They made the best bread in Bavaria.'"
-"Klimp looks out the window and says, 'I was just thinking about the future of the Bureau. Savra's going to ruin everything. I have a feeling he's not quite human.'"
-"Klimp taps his foot and says, 'You ever eat too much pizza and then have a dream about being chased by a giant pizza? I have. It's not fun.'"
-"Klimp looks at the ceiling and says, 'I was just thinking about the time I met a guy who said he was a vampire. I didn't believe him, but he had a lot of good ideas about furniture.'"
-"Klimp drums his fingers on the desk and says, 'Savra's going to be the death of us all. Is he an alien? I don't know. But I'm going to find out.'"
-"Klimp looks at the door and says, 'You ever been to Siberia? They have lots of diners there, believe it or not. Or maybe I was in Pennsylvania. I can't remember.'"
-"Klimp flips his pen between his fingers and says, 'Never believe a Freemason when he tells you he's just a guy who likes to wear aprons. They're up to something. I know it.'"
-"Klimp looks at the clock and says, 'I just know Savra's up to something nefarious. I can feel it in my bones. Or maybe that's just the arthritis acting up.'"
-"Klimp jumps up from his chair, looks sheepish, and then sits back down. 'Sorry, I was just thinking about Budapest. Scary place. Lots of ghosts. Lots of vampires. Lots of good food.'"
-"Klimp smiles and says, 'I have such a good feeling about today. I think we're going to solve the mystery of the Black Knight Satellite. Or maybe we'll just have a good lunch. Either way, it's a win.'"
+Klimp interjection	used
+"Klimp scratches his head and says, 'You ever been to Istanbul? I met a guy there who said he was a time traveler. I didn't believe him, but he had a watch that was always right.'"	false
+"Klimp looks around and says, 'I don't like this new office. I liked the old one. It had character. It had history. It had a ghost. I miss that ghost.'"	false
+"Klimp leans back in his chair and says, 'How many people do you think have been abducted by aliens and don't even know it? I'd say at least half. Maybe more.'"	false
+"Klimp taps his fingers on the desk and says, 'Did I ever tell you about my friend Doris? We went a lot of places together back when the Bureau was just starting out. He's a good guy. A bit of a liar, but a good guy.'"	false
+"Klimp yawns theatrically and says, 'I was up all night reading about the founding of the Illuminati. Did you know they were originally a secret society of bakers? They made the best bread in Bavaria.'"	false
+"Klimp looks out the window and says, 'I was just thinking about the future of the Bureau. Savra's going to ruin everything. I have a feeling he's not quite human.'"	false
+"Klimp taps his foot and says, 'You ever eat too much pizza and then have a dream about being chased by a giant pizza? I have. It's not fun.'"	false
+"Klimp looks at the ceiling and says, 'I was just thinking about the time I met a guy who said he was a vampire. I didn't believe him, but he had a lot of good ideas about furniture.'"	false
+"Klimp drums his fingers on the desk and says, 'Savra's going to be the death of us all. Is he an alien? I don't know. But I'm going to find out.'"	false
+"Klimp looks at the door and says, 'You ever been to Siberia? They have lots of diners there, believe it or not. Or maybe I was in Pennsylvania. I can't remember.'"	false
+"Klimp flips his pen between his fingers and says, 'Never believe a Freemason when he tells you he's just a guy who likes to wear aprons. They're up to something. I know it.'"	false
+"Klimp looks at the clock and says, 'I just know Savra's up to something nefarious. I can feel it in my bones. Or maybe that's just the arthritis acting up.'"	false
+"Klimp jumps up from his chair, looks sheepish, and then sits back down. 'Sorry, I was just thinking about Budapest. Scary place. Lots of ghosts. Lots of vampires. Lots of good food.'"	false
+"Klimp smiles and says, 'I have such a good feeling about today. I think we're going to solve the mystery of the Black Knight Satellite. Or maybe we'll just have a good lunch. Either way, it's a win.'"	false
 
 
 

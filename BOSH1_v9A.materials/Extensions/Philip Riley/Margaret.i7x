@@ -168,6 +168,47 @@ Instead of quizzing Margaret Chao about Moira Zin:
 	otherwise:
 		say "Have you seen Moira?'[paragraph break]";
 		say "[Margaret] nods. 'I think she's working in her office.'";
+
+Chapter 2 - Margaret Interjections
+
+
+Margaret interjection timer is a number that varies. Margaret interjection timer is 5.
+
+Every turn when Margaret interjection timer is not 0 and Margaret is in the location:
+	decrease Margaret interjection timer by 1;
+	if Margaret interjection timer is 0:
+		interject Margaret;
+
+After discussing when Margaret is in the location:
+	now Margaret interjection timer is a random number from 2 to 5;
+
+To interject Margaret:
+	sort Table of Margaret Interjections in random order;
+	if there is a used of false in the Table of Margaret Interjections:
+		choose the row with a used of false in the Table of Margaret Interjections;
+		say "[Margaret interjection entry][line break]";
+		now used entry is true;
+		increase Margaret interjection timer by a random number from 2 to 5;
+
+Table of Margaret Interjections
+Margaret interjection	used (a truth state)
+"Margaret says thoughtfully, 'I really should organize the office supplies. But I don't have time right now. Soon, I swear.'"	false
+"Margaret brushes a lock of hair out of her face. 'I'm going to have to get a haircut soon. I can't see anything.'"	false
+"Looking tired, Margaret say, 'Chief Klimp needs to get me an assistant. I can't do this all by myself.'"	false
+"Margaret looks at Faraji and says, 'I don't know how you can stand to wear that suit all day. It looks so hot.'"	false
+"Margaret looks around, then whispers, 'I don't think the Chief likes me. He's always so grumpy.'"	false
+"Margaret looks dismayed. 'I can't believe I forgot to bring my lunch today. I'm going to be starving.'"	false
+"Margaret mutters to herself, 'So much to do, so little time.'"	false
+"While unpacking a box of office supplies, Margaret says, 'I can't believe how much stuff we have. I don't know where to put it all.'"	false
+"Margaret pauses to look at the photos on the wall. 'Everyone looks so happy. I wonder what they're doing now. Well, except you, Moira, and the Chief. I know what you're doing now.'"	false
+"Margaret pulls a box of staples out of a box. 'I don't know why we have so many staples. We never use them.'"	false
+"Margaret grimaces. 'I went over to look at the pawn shop, and the guy tried to hit on me. I told him I was married, but he didn't care. Do you think I'm bad for lying?'"	false
+"Margaret looks at the phone. 'I can't believe they're going to take away our smart phones. I don't know how I'm going to keep in touch with my friends.'"	false
+"Margaret looks at the coffee table. 'I can't believe they charged us $8 for that. It's not even real wood.'"	false
+"Margaret looks dreamy. 'Some day I want to go to Budapest, or Istanbul. They both sound so exotic.'"	false			
+
+
+
 		
 Book 3 - The Boxes
 

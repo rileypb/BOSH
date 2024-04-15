@@ -232,7 +232,7 @@ To decide whether conversation available for (X - a person) / (Y - a thing):
 				yes;
 	no;
 
-Instead of quizzing someone about something when conversation available for noun / second noun:
+Carry out quizzing someone about something when conversation available for noun / second noun:
 	repeat through Table of Quiz Topics:
 		if there is a subject entry and there is an interlocutor entry:
 			if subject entry is the second noun and interlocutor entry is the noun:
@@ -242,6 +242,7 @@ Instead of quizzing someone about something when conversation available for noun
 					say "[We] [say], 'Tell me about [the second noun][if the noun is proper-named], [noun][end if].'[paragraph break]";
 				say reply entry;
 				say paragraph break;
+	stop the action;
 
 Table of Quiz Topics
 subject (a thing)	interlocutor (a person)	comment (a text)	reply (a text)
