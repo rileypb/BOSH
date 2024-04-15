@@ -91,6 +91,8 @@ To lb:
 
 To turn on rules:
 	(- RulesOnSub(); -);
+	
+When play begins: now right alignment depth is 20.
 
 [After starting the virtual machine:
 	turn on rules;]
@@ -259,7 +261,7 @@ Chapter 1 - Player's Name
 
 When play begins:
 	now left hand status line is "[location-title-case]";
-	now right hand status line is "[if location is the public gymnasium]Score: [basketball score][end if]";
+	now right hand status line is "[if location is the public gymnasium]Score: [basketball score][end if][if location is in ELR and location is outdoors]Weather: [current weather][end if]";
 
 To continue:
 	say "[bracket]continue[close bracket][paragraph break]";
@@ -2027,7 +2029,6 @@ The Room of Subjects is unsnarkable.
 room of quips is unsnarkable.
 Room of Stuff is unsnarkable.
 isolation booth is unsnarkable.
-weather is unsnarkable.
 wall is unsnarkable.
 floor is unsnarkable.
 ceiling is unsnarkable.
@@ -2094,7 +2095,6 @@ unknown voice is unsnarkable.
 mysterious phone is unsnarkable.
 
 
-weather is indescribable.
 The Walls is indescribable.
 floor is indescribable.
 ceiling is indescribable.

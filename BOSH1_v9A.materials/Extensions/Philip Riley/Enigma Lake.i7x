@@ -26,6 +26,80 @@ To decide if mounted-rusty-resonator:
 To decide if mounted-shiny-resonator:
 	decide on whether or not the platform supports the shiny astral resonator and the power switch is switched on;
 
+
+Book 1 - The Weather
+
+weather is a kind of value. The weathers are clear, cloudy, drizzling, raining, and storming. 
+
+The current weather is a weather that varies. The current weather is clear.
+
+The weather clock is a number that varies. The weather clock is 0.
+
+To describe (W1 - a value) changing to (W2 - a value):
+	if W1 is clear and W2 is cloudy:
+		say "The sky clouds over, and the air grows cooler. The moon disappears behind a veil of clouds.";
+	if W1 is cloudy and W2 is clear:
+		say "The clouds part, and the moon shines down on the town.";
+	if W1 is cloudy and W2 is drizzling:
+		say "A light drizzle begins to fall, chilly in the night air.";
+	if W1 is drizzling and W2 is cloudy:
+		say "The drizzle stops, at least for now.";
+
+To decide what weather is a tick up from (W - a weather):
+	if W is clear:
+		decide on cloudy;
+	if W is cloudy:
+		decide on drizzling;
+	if W is drizzling:
+		decide on raining;
+	decide on storming;
+
+To decide what weather is a tick down from (W - a weather):
+	if W is storming:
+		decide on raining;
+	if W is raining:
+		decide on drizzling;
+	if W is drizzling:
+		decide on cloudy;
+	decide on clear;
+
+Every turn when location is in ELR (this is the weather changing rule):
+	increase the weather clock by 1;
+	let original weather be the current weather;
+	if the weather clock is 4:
+		now the current weather is cloudy;
+	otherwise if the weather clock is 8:
+		now the current weather is drizzling;
+	otherwise if a random chance of 1 in 10 succeeds:
+		now the current weather is a tick up from the current weather;
+	otherwise if a random chance of 1 in 10 succeeds:
+		now the current weather is a tick down from the current weather;
+		if the current weather is clear:
+			now the current weather is cloudy;
+	if the location is outdoors:
+		if original weather is not the current weather:
+			describe original weather changing to current weather;
+		otherwise if a random chance of 1 in 10 succeeds:
+			describe the current weather;
+
+To describe the current weather:
+	if the current weather is clear:
+		say "[one of]The sky is clear, and the moon shines down on the town[or]The moon is bright in the clear sky[or]The stars twinkle in the clear sky[at random].";
+	if the current weather is cloudy:
+		say "[one of]The sky is overcast, and the moon is hidden behind the clouds[or]The clouds obscure the moon[or]The moon occasionally peeks from behind the clouds[at random].";
+	if the current weather is drizzling:
+		say "[one of]The drizzle picks up a bit, and the air grows colder[or]The drizzle falls steadily, chilling the air[or]The chill of the drizzle seeps into [our] bones[at random].";
+	if the current weather is raining:
+		say "[one of]The rain falls steadily, soaking the ground[or]The rain falls in a steady downpour[or]The rain falls in a steady rhythm[at random].";
+	if the current weather is storming:
+		say "[one of]The storm rages, lightning flashing and thunder rolling[or]The storm rages, the wind howling and the rain falling in sheets[or]The storm rages, the air filled with the sound of thunder and the smell of ozone[at random].";
+
+After going from somewhere (called S) to somewhere (called T) when the location is in ELR:
+	if S is indoors and T is outdoors:
+		describe the current weather;
+	continue the action;
+
+
 Volume 2 - Special Items
 
 The old copper key is a key. The description is "A heavy, old-fashioned key, made of copper." 
@@ -199,7 +273,7 @@ Check climbing up the obelisk:
 Check climbing up trees:
 	say "[We] would rather not break [our] leg." instead;
 	
-Park facade is a building facade. It is in Solvay Road leading out of town, Lake shore north of the park, Lake Street by the park, and Enigma Lake Town Hall. It is privately-named. The printed name is "Enigma Park". Understand "enigma/park" as Park facade. "[if location is Enigma Lake Town Hall]Faraji can't see much from here[otherwise]A shadowy clump of trees marks the edge of Enigma Park[end if]."
+Park facade is a building facade. It is in Solvay Road leading out of town, the lake shore north of the park, Lake Street by the park, and Enigma Lake Town Hall. It is privately-named. The printed name is "Enigma Park". Understand "enigma/park" as Park facade. "[if location is Enigma Lake Town Hall]Faraji can't see much from here[otherwise]A shadowy clump of trees marks the edge of Enigma Park[end if]."
 	It is enterable from Solvay Road leading out of town.
 	It is enterable from Lake shore north of the park.
 	It is enterable from Lake Street by the park.
@@ -291,7 +365,19 @@ It is unsnarkable.
 The foliage is scenery in Solvay-Road-by-the-lake. "The foliage is thick and green, with a few small flowers growing among the leaves." It is privately-named. Understand "tree/trees/bush/bushes" as foliage.
 The foliage is unsnarkable.
 
-The lake-scenery-1 is scenery in Solvay-Road-by-the-lake. "The lake is dark and still, reflecting the moonlight." It is privately-named. The printed name is "lake".
+To say description of lake:
+	if the current weather is clear:
+		say "The lake is calm and still, reflecting the moonlight like a mirror";
+	if the current weather is cloudy:
+		say "The lake is dark and still, reflecting the overcast sky";
+	if the current weather is drizzling:
+		say "The continuous drizzle falls on the lake, creating ripples on the surface";
+	if the current weather is raining:
+		say "The rain falls steadily on the lake, creating ripples on the surface";
+	if the current weather is storming:
+		say "The storm rages over the lake, lightning flashing and thunder rolling";
+
+The lake-scenery-1 is scenery in Solvay-Road-by-the-lake. "[description of lake].". It is privately-named. The printed name is "lake".
 The snarky remark of the lake-shore-1 is "It's just waiting for me to look away, and then WHAM! A flood."
 
 
@@ -1336,7 +1422,7 @@ The snarky remark of the bolt cutters is "Now, kids, watch your fingers."
 
 Book 20 - Lake Shore north of the park
 
-the lake shore north of the park is west of Lake at Ridge and north of Enigma Park. It is in ELR. It is outdoors. The preposition is "on". "A sliver of moon hangs over the lake, casting a silvery light over the water. The park is to the south, while the lake stretches off to the north. A workshed is to the southeast. A road can be seen to the east."
+the lake shore north of the park is west of Lake at Ridge and north of Enigma Park. It is in ELR. It is outdoors. The preposition is "on". "[description of lake]. The park is to the south, while the lake stretches off to the north. A workshed is to the southeast. A road can be seen to the east."
 The snarky remark of the lake shore north of the park is "I wonder what Klimp would say is in the lake."
 Understand "water" as the lake shore north of the park.
 
@@ -1346,9 +1432,6 @@ The workshed-facade is a building facade. It is in Lake Shore North of the Park.
 	The workshed-facade fronts the workshed.
 	It is enterable from Lake Shore North of the Park.
 The snarky remark of the workshed-facade is "Groovy."
-
-The moon is scenery in the lake shore north of the park. "The moon is a sliver in the sky, casting a silvery light over the water."
-The moon is unsnarkable.
 
 road-scenery is scenery in the lake shore north of the park. "A road can be seen to the east."
 It is privately-named. The printed name is "road". Understand "road" as road-scenery.
