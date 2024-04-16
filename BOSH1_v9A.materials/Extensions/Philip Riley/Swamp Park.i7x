@@ -195,7 +195,7 @@ strip mall parking lot south is outside from the Dave's pawn shop.
 
 Chapter 2 - Strip Mall Parking Lot North
 
-The Strip Mall Parking Lot North is a room. It is north of The Strip Mall Parking Lot South. It is in Swamp Park. It is outdoors. The printed name is "north end of the strip mall parking lot". Understand "end/of/the" as the Strip Mall Parking Lot North. The preposition is "at".
+The Strip Mall Parking Lot North is a room. It is north of The Strip Mall Parking Lot South. It is in Swamp Park. It is outdoors. The printed name is "north end of the strip mall parking lot". Understand "end/of/the" as the Strip Mall Parking Lot North. Understand "shopping center" as Strip Mall Parking Lot North. The preposition is "at".
 "This end is no more auspicious than the other. A convenience store lies to the east. To the west is a military recruitment center. North of here the parking lot exits onto a busy road. There is a rusty sign by the road naming the shopping center: Park Place. South is BOSH headquarters, among other things." 
 The snarky remark of The Strip Mall Parking Lot North is "Ah, Swamp Park. The hidden jewel of the state of Maryland."
 
@@ -224,6 +224,7 @@ The snarky remark of the military-facade is "Looks like I have career options af
 
 Patriotic posters are scenery in the strip mall parking lot north. Understand "military posters", "poster/slogan/slogans" as patriotic posters. "The new slogan is 'Answer the Call!'".
 The snarky remark of the patriotic posters is "[if the player encloses the green smartphone]I would, but my phone is out of batteries[otherwise]I would, but the phone is stuck in my desk[end if]."
+They are plural-named.
 
 Instead of entering the military-facade:
 	try going west;
@@ -463,7 +464,7 @@ Instead of taking the laundromat stairs:
 
 The laundromat basement is below the laundromat back room. It is in laundromat-region.
 "A few boxes of supplies sit here and there in the otherwise empty space. Stairs lead up, while a doorway leads south."
-The snarky remark of the laundromat basement is "The basement is a bit of a letdown."
+The snarky remark of the laundromat basement is "Hey Daddy-o, I don't wanna go down to the basement."
 
 Some boxes of supplies are scenery in the laundromat basement. "The boxes are completely uninteresting." Understand "box" as boxes of supplies.
 The snarky remark of the boxes of supplies is "Maybe Margaret would like to sort through these."

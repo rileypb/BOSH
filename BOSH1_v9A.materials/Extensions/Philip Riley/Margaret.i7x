@@ -197,7 +197,7 @@ Table of Margaret Interjections
 Margaret interjection	used (a truth state)
 "Margaret says thoughtfully, 'I really should organize the office supplies. But I don't have time right now. Soon, I swear.'"	false
 "Margaret brushes a lock of hair out of her face. 'I'm going to have to get a haircut soon. I can't see anything.'"	false
-"Looking tired, Margaret say, 'Chief Klimp needs to get me an assistant. I can't do this all by myself.'"	false
+"Looking tired, Margaret says, 'Chief Klimp needs to get me an assistant. I can't do this all by myself.'"	false
 "Margaret looks at Faraji and says, 'I don't know how you can stand to wear that suit all day. It looks so hot.'"	false
 "Margaret looks around, then whispers, 'I don't think the Chief likes me. He's always so grumpy.'"	false
 "Margaret looks dismayed. 'I can't believe I forgot to bring my lunch today. I'm going to be starving.'"	false

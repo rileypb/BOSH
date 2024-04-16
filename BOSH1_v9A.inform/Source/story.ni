@@ -933,9 +933,13 @@ The description of the back lot is "This is a small area of asphalt between the 
 
 The industrial property is scenery in the back lot. "The chain link fence looks in on a small industrial property. There's a bunch industrial-type stuff in there, but nothing interesting."
 The snarky remark is "So far the vistas in Swamp Park are a little underwhelming."
+It is obstructed.
 
 The chain link fence is scenery in the back lot. "An ordinary chain link fence, about eight	feet high."
 The snarky remark is "Are we keeping them out, or are they keeping us in?"
+
+Instead of climbing up the chain link fence:
+	say "There's no reason to tresspass."
 
 The blue dumpster is scenery in the back lot. "An everyday blue dumpster, about six feet high."
 The snarky remark is "Oh, this is where I left my dignity."
@@ -1013,7 +1017,7 @@ Instead of going when the location is inside-the-dumpster and the noun is not ou
  
 Section 3 - 
 
-Biff's door is a door. It is privately-named. It is scenery. The printed name is "[our] door". It is north of Biff's Office and south of the BOSH office . It is open. Understand "Faraji's/Goldberg's/Gaunt's/Larch's/Petula's/Ezra's/office/door" as Biff's door. 
+Biff's door is a door. It is privately-named. It is scenery. The printed name is "[our] door". It is north of Biff's Office and south of the BOSH office hallway. It is open. Understand "Faraji's/Goldberg's/Gaunt's/Larch's/Petula's/Ezra's/office/door" as Biff's door. 
 The snarky remark is "My little slice of heaven."
 The description is "The nameplate reads 'Agent Larch Faraji'."
 		
@@ -1389,7 +1393,7 @@ The Chief's shelves are a supporter in BOSH Chief's Office. They are scenery. "T
 The snarky remark of the Chief's shelves is "This is where the Chief keeps his junk."
   
 The juvenile sasquatch skull is a thing on the chief's shelves. Chief Huffton Klimp owns the skull. The description of the skull is "It looks a bit Neanderthal, actually." 
-The snarky remark of the skull is "Cryptozoology is a science, right?"
+The snarky remark of the skull is "I want your skulls. I need your skulls."
  
 The antique wooden file cabinet is a container in the BOSH Chief's office. It is closed and locked. It is scenery. "Looks like it was taken out of an old library somewhere."
 The snarky remark of the antique wooden file cabinet is "Does he file alphabetically or by strangeness?"
@@ -2171,7 +2175,14 @@ To decide what text is the transition description of (R - a room) from (S - a ro
 
 When play begins:
 	if AUDIT is true:
-		say ">>> NO Snarky Remarks <<<[line break]";
+		repeat with X running through things:
+			if X is not a subject and X is not a hint topic and X is not a quip:
+				say X;
+				lb;
+		repeat with X running through rooms:
+			say X;
+			lb;
+		[ say ">>> NO Snarky Remarks <<<[line break]";
 		repeat with X running through snarkable rooms:
 			if the snarky remark of X is "":
 				say "ROOM [X][line break]";
@@ -2187,7 +2198,7 @@ When play begins:
 		say ">>> NO Wall Description <<<[line break]";
 		repeat with X running through rooms:
 			if the wall description of X is "":
-				say "ROOM [X][line break]";
+				say "ROOM [X][line break]"; ]
 		[ say ">>> NO Floor Description <<<[line break]";
 		repeat with X running through rooms:
 			if the floor description of X is "":

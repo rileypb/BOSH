@@ -2,6 +2,8 @@ Can't Touch This by Philip Riley begins here.
 
 Use authorial modesty.
 
+Understand nothing as touching.
+
 A thing can be feelable or unfeelable. A thing is usually feelable.
 A thing can be closeby or far away. A thing is usually closeby.
 A thing can be obstructed. A thing is usually not obstructed.
@@ -28,6 +30,6 @@ Check taking something obstructed:
     say "[We] can't reach that." instead;
 
 Check taking an edifice:
-    say "That's much too massive to take." instead;
+    say "That's much too massive to take." instead;  
 
 Can't Touch This ends here.

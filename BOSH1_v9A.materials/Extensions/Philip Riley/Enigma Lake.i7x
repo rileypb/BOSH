@@ -1545,6 +1545,7 @@ Instead of entering the ethereal portal:
 Book 23.5 - Old Root Cellar
 
 An old root cellar is a room. It is always-indefinite. "The chamber is dark and damp, smelling of earth and old vegetable matter. The walls, floor, and ceiling are packed earth. Around the walls are numerous woven baskets for storing vegetables. Light filters in from a passage to the north."
+Understand "cellar/cave" as the old root cellar.
 
 The snarky remark of the old root cellar is "Oh good, another cave, only this one smells like beets."
 
@@ -1632,7 +1633,7 @@ The Horton House door is a closed openable locked lockable scenery door. It is w
 "A modest wooden door leads into the Horton family house. It has been fitted with a modern lock."
 The snarky remark of the Horton House door is "No doorbell? How quaint."
 
-Horton Family House Kitchen is a leavable room. It is in ELR. It is unleavable. It is indoors. "The house is a modest colonial-period building. Strangely, the furnishings of the house have been left in place, despite the coming flood. An open hearth is in the center of the room, with a few chairs and a table. The parlor is to the south, and a narrow staircase leads up. To the east the front door leads out to Solvay Road, while another door leads west to the family graveyard." 
+Horton Family House Kitchen is a leavable room. It is in ELR. It is unleavable. It is indoors. "The house is a modest colonial-period building. Strangely, the furnishings of the house have been left in place, despite the coming flood. An open hearth is in the center of the room, with a few chairs and a table. The parlor is to the south, and a narrow staircase leads up. To the east the front door leads out to Solvay Road, while another exit leads west to the family graveyard." 
 
 The snarky remark of Horton Family House Kitchen is "I wonder if this place felt as creepy in 1750."
 
@@ -1808,7 +1809,7 @@ The snarky remark of the Horton graveyard is "Of course they have a graveyard."
 
 The x-coordinate of the Horton graveyard is -3. The y-coordinate of the Horton graveyard is 1.
 
-The shovel is in the Horton graveyard. "A shovel lies on the ground, forgotten." The description is "A simple shovel, with a wooden handle and a metal blade." Understand "simple/wooden" as the shovel.
+The shovel is in the Horton graveyard. "A shovel lies on the ground, forgotten." The description is "A simple shovel, with a wooden handle and a metal blade." Understand "simple/wooden/spade" as the shovel.
 The snarky remark of the shovel is "How interesting. I hope I'll need to dig something up."
 
 Some holes are scenery in the Horton graveyard. "The graveyard is riddled with holes where the bodies have been exhumed for the coming flood. One of the holes is substantially larger and deeper than the others."
