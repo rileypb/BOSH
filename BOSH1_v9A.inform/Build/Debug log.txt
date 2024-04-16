@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 24389 words long.
+I've now read your source text, which is 24395 words long.
 
 
 -----------------------------------------------------
@@ -56,12 +56,12 @@ I've also read Hyperspace by Philip Riley, which is 13162 words long.
 I've also read BOSH Facts by Philip Riley, which is 179 words long.
 I've also read Swamp Park by Philip Riley, which is 7347 words long.
 I've also read Margaret by Philip Riley, which is 2510 words long.
-I've also read Enigma Lake by Philip Riley, which is 28914 words long.
+I've also read Enigma Lake by Philip Riley, which is 28919 words long.
 I've also read I Can Dig It by Philip Riley, which is 77 words long.
 I've also read Overlook by Philip Riley, which is 763 words long.
 I've also read Gender Options by Nathanael Nerode, which is 7679 words long.
 I've also read Make Test by Philip Riley, which is 288 words long.
-I've also read BOSH Hints by Philip Riley, which is 3770 words long.
+I've also read BOSH Hints by Philip Riley, which is 4024 words long.
 I've also read Hearing by Philip Riley, which is 1254 words long.
 I've also read PBR Common by Philip Riley, which is 109 words long.
 I've also read Walls by Philip Riley, which is 905 words long.
@@ -76,7 +76,7 @@ I've also read Door Varieties by Philip Riley, which is 299 words long.
 I've also read Exit Lister by Eric Eve, which is 3510 words long.
 I've also read Secret Doors by Gavin Lambert, which is 272 words long.
 I've also read Plugging by Philip Riley, which is 614 words long.
-I've also read Books by Philip Riley, which is 2320 words long.
+I've also read Books by Philip Riley, which is 2319 words long.
 I've also read Hints by Philip Riley, which is 858 words long.
 I've also read Two-Sided Doors by Philip Riley, which is 2270 words long.
 
@@ -309,7 +309,7 @@ Phase XII ... Code generation
 
 ==== Phase XII.21 ... Compiling routines from predicate calculus ====
 
-Providing for a total heap of 65536, given requirement of 34064
+Providing for a total heap of 65536, given requirement of 35088
 
 
 -----------------------------------------------------
@@ -317,7 +317,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 262 files written as streams.
-CPU time: 936 centiseconds
+CPU time: 1061 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

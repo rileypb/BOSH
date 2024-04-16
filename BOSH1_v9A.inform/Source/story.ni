@@ -1305,7 +1305,7 @@ To say random entry:
 After examining the Dictionary of Strangeness for the first time:
 	say "[Klimp] says 'If you want to know more about anything in there, just ask me.'"; 
 
-Looking it up in is an action applying to two things. Understand "look up [any subject] in [something]", "look [any subject] up in [something]" as looking it up in. Understand "consult [something] about [any subject]" as looking it up in (with nouns reversed). Understand "read [something] about [any subject]" as looking it up in (with nouns reversed). Understand "read about [any subject] in [something]" as looking it up in.
+Looking it up in is an action applying to two things. Understand "look up [any subject] in [something]", "look [any subject] up in [something]", and "lookup [any subject] in [something]" as looking it up in. Understand "consult [something] about [any subject]" as looking it up in (with nouns reversed). Understand "read [something] about [any subject]" as looking it up in (with nouns reversed). Understand "read about [any subject] in [something]" as looking it up in.
 
 Instead of looking something up in the Dictionary of Strangeness:
 	if there is a subject of noun in the Table of Random Entries:

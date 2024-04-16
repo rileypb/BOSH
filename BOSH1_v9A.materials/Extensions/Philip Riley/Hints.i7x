@@ -21,7 +21,7 @@ Definition: a hint topic is explored if the number of entries in its history is 
 asking for no hint is an action out of world. Understand "hint" as asking for no hint.
 
 Carry out asking for no hint:
-    say "You need to specify a hint topic. To see the list of active topics type HINTS".
+    say "You need to specify a hint topic. To see the list of active topics type HINTS.";
 
 asking for hints about is an action out of world applying to one thing. Understand "hint [any active hint topic]" as asking for hints about. 
 

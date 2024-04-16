@@ -421,4 +421,29 @@ Activating the hint-fire-station:
 		activate;
 	deactivate;
 
+The hint-doll-fly is a hint topic. Understand "doll-fly" as the hint-doll-fly. The printed name is "the doll-fly".
+
+The hint-doll-fly-first is an unlisted progressive hint topic. The progression is {"What the hell was that thing?", "Perhaps Faraji should go find where it went."}.
+
+The hint-doll-fly-second is an unlisted progressive hint topic. The progression is {"Good, now Faraji knows where it went.", "But how can Faraji get past it?"}.
+
+The hint-doll-fly-third is an unlisted progressive hint topic. The progression is {"Apparently the doll-fly is named [doll-fly]. I wonder if that's helpful.", "Is there any place Faraji has seen names like that before?", "[if the Book of Weird Names is not handled]Faraji should go back to the Horton family parlor and look around.[otherwise]Faraji should look at the Book of Weird Names.[end if]", "Faraji should try reading it.", "Any ideas?", "LOOK UP [doll-fly] IN BOOK OF WEIRD NAMES"}.
+
+The hint-doll-fly-fourth is an unlisted progressive hint topic. The progression is {"When Faraji looked in the book, they found the phrase '[incantation of the doll-fly]'. What could that mean?", "Faraji should try saying it.", "SAY [incantation of the doll-fly]"}.
+
+hinting the hint-doll-fly:
+	if the doll-fly is not seen:
+		abide by the hinting rules for the hint-doll-fly-first;
+	otherwise if the doll-fly is not named:
+		abide by the hinting rules for the hint-doll-fly-second;
+	otherwise if doll-fly-looked-up is false:
+		abide by the hinting rules for the hint-doll-fly-third;
+	otherwise:
+		abide by the hinting rules for the hint-doll-fly-fourth;
+
+Activating the hint-doll-fly:
+	if the doll-fly is in the First Utilitarian Church of Enigma Lake:
+		activate;
+	deactivate;
+
 BOSH Hints ends here.

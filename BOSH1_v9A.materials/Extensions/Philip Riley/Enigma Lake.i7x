@@ -1702,20 +1702,19 @@ The kitchen facade is a building facade. It is in Horton Family House Parlor. It
 	It is enterable from Horton Family House Parlor.
 The snarky remark of the kitchen facade is "It's slightly less creepy than the parlor. Let's go there."
 
-The Book of Weird Names is on the parlor table. The printed name is "[italic type]The Book of Weird Names[roman type]". It is proper-named. It is unsnarkable. Understand "strange-looking/strange/looking" as the Book of Weird Names. It is indescribable.
+The Book of Weird Names is on the parlor table. The printed name is "[italic type]The Book of Weird Names[roman type]". It is proper-named. It is unsnarkable. Understand "strange-looking/strange/looking" as the Book of Weird Names. It is indescribable. 
+
+Doll-fly-looked-up is a truth state that varies. Doll-fly-looked-up is false.
 
 To stop is a verb.
 
 Instead of examining the Book of Weird Names:
 	say "A book with a plain cover, titled [italic type]The Book of Weird Names[roman type]. No author is listed. [paragraph break]Flipping through the book, it appears that each page consists of a name, a drawing of a strange creature, and below that a word in a strange, unknown language. The text is written in a spidery, crabbed hand, and is difficult to read.";
 	let name be the creature name;
-	say ">>> [name] <<<";
 	let creature be the strange creature;
 	let incantation be the strange incantation;
-	say "[incantation] <<<";
-	say "[paragraph break]Faraji stops on one that reads [italic type][name][roman type] above a drawing of [creature], below which is written [italic type][incantation][roman type].[first time]
-
-	Faraji can also LOOK UP a creature name IN THE BOOK OF WEIRD NAMES to see the creature and incantation.[only]";
+	say "[line break]Faraji stops on one that reads [italic type][name][roman type] above a drawing of [creature], below which is written [italic type][incantation][roman type].[first time]
+	[line break]Faraji can also LOOK UP a creature name IN THE BOOK OF WEIRD NAMES to see the creature and incantation.[only]";
 	choose a blank row in the Table of Weird Names;
 	now the name entry is name;
 	now the description entry is creature;
@@ -1750,7 +1749,6 @@ The incantations is a list of texts that varies.
 The incantations are { "bara ba jagal", "fooblitzky", "tuvix", "thelonium", "gravlax", "brobdingnag", "plover", "xvart", "guncho", "flibbertigibbet" }.
 
 To decide what text is the strange incantation:
-	say "GOO";
 	sort the first name parts in random order;
 	sort the second name parts in random order;
 	if a random chance of 1 in 2 succeeds:
@@ -1770,6 +1768,7 @@ Instead of consulting the book of weird names about something:
 	otherwise:
 		sort the incantations in random order;
 		now the incantation of the doll-fly is entry 1 of the incantations;
+		now doll-fly-looked-up is true;
 		say "[we] [look] up [italic type][secret name of the doll-fly][roman type] in the book. Below a drawing of a doll with the head of a fly, the word [italic type][incantation of the doll-fly][roman type] is written.";
 
 Table of Weird Names
@@ -2181,7 +2180,7 @@ Check tying the clean battery to the wires:
 	try tying the wires to the clean battery instead;
 	
 Instead of taking the clean battery when the clean battery is hooked up:
-	say "Faraiji can't take the battery while it's tied to the wires.";
+	say "Faraji can't take the battery while it's tied to the wires.";
 
 Untying it from is an action applying to two things. Understand "untie [something] from [something]", "detach [something] from [something]", "disconnect [something] from [something]", "unhook [something] from [something]", "separate [something] from [something]" as untying it from.
 
