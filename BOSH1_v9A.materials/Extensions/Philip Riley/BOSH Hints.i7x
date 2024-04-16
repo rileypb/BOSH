@@ -416,4 +416,9 @@ Activating the hint-bookstore-basement:
 
 The hint-fire-station is a progressive hint topic. Understand "fire station" as the hint-fire-station. The printed name is "fire station". The progression is {"Faraji may have noticed the garage door is locked. Is there another way in?", "Faraji should try going through an adjoining building.", "That would be either the bookstore or the Horton House.", "Faraji should explore the Horton House parlor as thoroughly as they can.", "Faraji should wear the astral lenses.", "Faraji should follow the astral tunnel."}.
 
+Activating the hint-fire-station:
+	if the garage door is seen and fire station 1 is unvisited:
+		activate;
+	deactivate;
+
 BOSH Hints ends here.

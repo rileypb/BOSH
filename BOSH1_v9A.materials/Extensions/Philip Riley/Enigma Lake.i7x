@@ -1983,14 +1983,26 @@ The x-coordinate of the Reading Room is -2. The y-coordinate of the Reading Room
 The sales counter is scenery in the Reading Room. "An ordinary sales counter".
 The snarky remark of the sales counter is "Service! Service! I demand service!"
 
-The bookshelves are scenery in the Reading Room. "The bookshelves are filled with a variety of books, from the latest bestsellers to obscure, out-of-print volumes. You choose one at random:[paragraph break][random book report]".
+The bookshelves are scenery in the Reading Room. 
+"The bookshelves are filled with a variety of books, from the latest bestsellers to obscure, out-of-print volumes. You choose one at random:[paragraph break][book report]".
 
-To say random book report:
-	sort the booklist in random order;
-	let the random-book be entry 1 of the booklist;
+Before examining the bookshelves: 
+	if the book-index is 0:
+		sort the booklist in random order;
+	increment the book-index;
+
+After examining the bookshelves:
+	if the book-index is the number of entries in the booklist:
+		now book-index is 0.
+
+book-index is a number that varies. book-index is 0.
+
+To say book report:
+	let the random-book be entry book-index of the booklist;
 	say "[italic type][title of the random-book][roman type] by [author of the random-book][line break]Genre: [genre of the random-book]
 
 	[blurb of the random-book]";
+
 
 Understand "bookshelf/shelf/shelves/books" as the bookshelves.
 The snarky remark of the bookshelves is "Look, I'd really love to sit down and read a book, but I've got a phone to answer."

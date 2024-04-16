@@ -66,7 +66,7 @@ book10 is a bookstore-book.
     The title of book10 is "QWERTY: An Elegy".
     The author of book10 is "Lionel Sexton".
     The genre of book10 is "Poetry/Pottery".
-    The blurb of book10 is "Lionel Sexton is a poet and a potter. While many might think that just maybe you could combine the two, no one but Sexton has dared to combine them with an historical treatise on the QWERTY keyboard. A runner-up for the Iowa State Fair Poetry Prize, and a winner of the Iowa State Fair Pottery Prize."
+    The blurb of book10 is "Lionel Sexton is a poet and a potter. While many might think that just maybe you could combine the two, no one but Sexton has dared to combine them with an historical treatise on the QWERTY keyboard. A runner-up for the Iowa State Fair Poetry Prize, and winner of the Iowa State Fair Pottery Prize."
 
 book11 is a bookstore-book.
     The title of book11 is "Proper Use of Onomatopoeia".
