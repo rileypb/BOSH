@@ -376,16 +376,44 @@ the hint-rusty-resonator is a hint topic.
 Understand "rusty/astral/resonator" as hint-rusty-resonator when Astral Secrets is read.
 Understand "strange/rusty/metal/metallic/cylindrical/cylinder/object" as hint-rusty-resonator.
 The printed name is "[rusty astral resonator]".
+The progression is {"Has Faraji had a look at the rusty astral resonator?", "Is it reminiscent of anything?", "If not, Faraji should look around some more.", "The rusty astral resonator has a threaded base, like a light bulb. That's probably good for mounting.", "Faraji should around for a place to screw in a threaded base like that.", "The light bulb in the workshed can't be removed. Maybe Faraji should look elsewhere.", "Check the roof of Henry's Hot Skillet.", "There's a strange socket attached to the aerial.", "PUT RUSTY RESONATOR IN SOCKET"}.
 
 hinting the hint-rusty-resonator:
 	if Astral Secrets is not read:
 		rule succeeds with result "Maybe Faraji can find something to tell them what this thing is.";
-	otherwise:
+	otherwise if not mounted-shiny-resonator and not mounted-makeshift-resonator:
 		rule succeeds with result "What the heck is an astral resonator?";
+		now hint-rusty-resonator is progressive;
+	otherwise if mounted-shiny-resonator and mounted-makeshift-resonator:
+		rule succeeds with result "Faraji should mount the rusty astral resonator somewhere, like they did with the other two resonators.";
+		now hint-rusty-resonator is progressive;
+	otherwise if mounted-makeshift-resonator:
+		rule succeeds with result "Faraji should mount the rusty astral resonator somewhere, like they did with the makeshift resonator.";
+		now hint-rusty-resonator is progressive;
+	otherwise:
+		rule succeeds with result "Faraji should mount the rusty astral resonator somewhere, like they did with the shiny resonator.";
+		now hint-rusty-resonator is progressive;
 
 Activating the hint-rusty-resonator:
 	if the rusty astral resonator is seen and not mounted-rusty-resonator:
 		activate;
 	deactivate;
+
+The hint-bookstore-shelves is a progressive hint topic. Understand "bookstore shelves/shelf/bookshelf/bookshelves", "reading room shelves/shelf/bookshelf/bookshelves" as the hint-bookstore-shelves. The printed name is "bookstore shelves". The progression is {"You're probably wondering what the point of the bookstore shelves is.", "There isn't any point. Can't a thing exist just for it's own sake?"}.
+
+Activating the hint-bookstore-shelves:
+	if the location is the reading room:
+		activate;
+	otherwise:
+		deactivate;
+
+The hint-bookstore-basement is a progressive hint topic. Understand "bookstore basement", "reading room basement" as the hint-bookstore-basement. The printed name is "bookstore basement". The progression is {"What's up with the walls in the basement?", "They're old and crumbling, and there's a breeze.", "Maybe there's something behind the walls.", "How would Faraji get through the walls?", "Faraji should probably look for a tool to break through the walls.", "Go find a sledgehammer.", "Once you have the sledgehammer, you can break through the walls.", "HIT WALLS WITH SLEDGEHAMMER"}.
+
+Activating the hint-bookstore-basement:
+	if the bookstore basement is visited:
+		activate;
+	deactivate;
+
+The hint-fire-station is a progressive hint topic. Understand "fire station" as the hint-fire-station. The printed name is "fire station". The progression is {"Faraji may have noticed the garage door is locked. Is there another way in?", "Faraji should try going through an adjoining building.", "That would be either the bookstore or the Horton House.", "Faraji should explore the Horton House parlor as thoroughly as they can.", "Faraji should wear the astral lenses.", "Faraji should follow the astral tunnel."}.
 
 BOSH Hints ends here.

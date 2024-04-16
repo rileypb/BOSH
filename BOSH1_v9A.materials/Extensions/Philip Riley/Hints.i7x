@@ -10,19 +10,27 @@ A hint topic has a list of texts called the progression.
 A hint topic has a text called the last hint. The last hint of a hint topic is usually "".
 A hint topic has a list of texts called the history. 
 
+Definition: a hint topic is active:
+	follow the activating rules for it;
+	if the rule succeeded:
+		yes;
+	no;
+
+Definition: a hint topic is explored if the number of entries in its history is not 0.
+
 asking for no hint is an action out of world. Understand "hint" as asking for no hint.
 
 Carry out asking for no hint:
     say "You need to specify a hint topic. To see the list of active topics type HINTS".
 
-asking for hints about is an action out of world applying to one thing. Understand "hint [any hint topic]" as asking for hints about. 
+asking for hints about is an action out of world applying to one thing. Understand "hint [any active hint topic]" as asking for hints about. 
 
 asking for bogus hints about is an action out of world applying to one topic. Understand "hint [text]" as asking for bogus hints about.
 
 Check asking for bogus hints about:
 	say "There is no hint for that right now." instead;
 
-recalling hints about is an action out of world applying to one thing. Understand "recall hints/hint/-- for/-- [any hint topic]" as recalling hints about.
+recalling hints about is an action out of world applying to one thing. Understand "recall hints/hint/-- for/-- [any explored hint topic]" as recalling hints about.
 
 recalling bogus hints about is an action out of world applying to one topic. Understand "recall hint [text]" as recalling bogus hints about.
 
@@ -96,6 +104,22 @@ hinting a progressive hint topic (called HT):
 	otherwise:
 		rule succeeds with result the substituted form of "[entry (number of entries in the progression of HT) in the progression of HT]";
 
+Book 1 - Not For Release
 
+diagnosing hints is an action out of world applying to one thing. Understand "diagnose [any hint topic]" as diagnosing hints.
+
+Carry out diagnosing hints:
+	say "hint topic: [the noun][line break]";
+	say "The hint level for [the noun] is [hint level of the noun].";
+	say "Listed: [if the noun is listed]yes[otherwise]no[end if].";
+	say "Progressive: [if the noun is progressive]yes[otherwise]no[end if].";
+	say "Progression: [line break]";
+	say "The last hint for [the noun] is [last hint of the noun].";
+	say "History: [line break]";
+	repeat with item running through the history of the noun:
+		say "* [item][line break]";
+	lb;
+	say "Active: [if the noun is active]yes[otherwise]no[end if].";
+	say "Explored: [if the noun is explored]yes[otherwise]no[end if].";
 
 Hints ends here.
