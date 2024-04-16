@@ -288,7 +288,7 @@ Activating the hint-utility-closet-trapped:
 	otherwise:
 		deactivate;
 
-hint-enigma-lake is a progressive hint topic. Understand "enigma/-- lake" as the hint-enigma-lake. The printed name is "enigma lake". The progression is {"The town of Enigma Lake is an amazing place with lots of things to see!", "Well, maybe not that amazing, but it's more interesting than the Featureless Hyperplane.", "Faraji should explore the town if they want to find Daniels, the missing agent.", "There are probably hidden places to find, as well."}.
+hint-enigma-lake is a progressive hint topic. Understand "enigma/-- lake" as the hint-enigma-lake. The printed name is "Enigma Lake". The progression is {"The town of Enigma Lake is an amazing place with lots of things to see!", "Well, maybe not that amazing, but it's more interesting than the Featureless Hyperplane.", "Faraji should explore the town if they want to find Daniels, the missing agent.", "There are probably hidden places to find, as well."}.
 
 Activating the hint-enigma-lake:
 	if the location is in ELR:
@@ -341,11 +341,15 @@ Activating hint-threaded-socket:
 Activating hint-wires:
 	if the wires are seen and the clean battery is not hooked up:
 		activate;
-	deactivate;
+	deactivate;]
+
+hint-wires is a hint topic. Understand "wires", "wire" as the hint-wires. The printed name is "wires".
 
 hint-wires-first is an unlisted progressive hint topic. The progression is {"I wonder what was connected to the wires before.", "Faraji might look on the roof for a clue.", "It looks like the wires run from the rooftop aerial. Too bad there's no TV to hook up.", "What could Faraji connect to the wires instead?", "Faraji should have a close look at the aerial.", "It looks like there's a strange socket attached to the aerial.", "Maybe it needs power.", "Perhaps Faraji could use the wires to supply power to the aerial.", "Faraji should find a power source to connect to the wires.", "Has Faraji had a look at the abandoned truck in the northeastern part of town?", "Faraji should look under the hood of the truck."}
 
-[ hint-wires-dirty is an unlisted progressive hint topic. The progression is {" ]
+hint-wires-dirty is an unlisted progressive hint topic. The progression is {"It doesn't seem like the truck battery will work.", "Faraji should look for a clean battery.", "Where else could Faraji find a battery?", "How about Faraji's car? It's parked right outside the BOSH offices."}.
+
+hint-wires-clean is an unlisted progressive hint topic. The progression is {"Faraji needs to get back to Enigma Lake and Henry's.", "Then they can connect the battery to the wires.", "ATTACH BATTERY TO WIRES"}.
 
 hinting hint-wires when the dirty battery is not seen:
 	abide by the hinting rules for hint-wires-first;
@@ -353,7 +357,35 @@ hinting hint-wires when the dirty battery is not seen:
 hinting hint-wires when the dirty battery is seen:
 	if the clean battery is not seen:
 		abide by the hinting rules for hint-wires-dirty;
-	abide by the hinting rules for hint-wires-clean; ]
+	abide by the hinting rules for hint-wires-clean; 
+	
+Activating hint-wires:
+	if the wires are seen and the clean battery is not hooked up:
+		activate;
+	deactivate;
 
+hint-getting-back-to-BOSH is a progressive hint topic. Understand "get/-- back/-- to/-- bosh", "get back" as the hint-getting-back-to-BOSH. The printed name is "get back to BOSH". The progression is {"Does Faraji have any way of getting out of Enigma Lake?", "Faraji can use the recall button to return to the hyperspace field office.", "Then they can use the auxiliary portal to return to BOSH."}.
+
+Activating the hint-getting-back-to-BOSH:
+	if the location is in ELR:
+		activate;
+	otherwise:
+		deactivate;
+
+the hint-rusty-resonator is a hint topic. 
+Understand "rusty/astral/resonator" as hint-rusty-resonator when Astral Secrets is read.
+Understand "strange/rusty/metal/metallic/cylindrical/cylinder/object" as hint-rusty-resonator.
+The printed name is "[rusty astral resonator]".
+
+hinting the hint-rusty-resonator:
+	if Astral Secrets is not read:
+		rule succeeds with result "Maybe Faraji can find something to tell them what this thing is.";
+	otherwise:
+		rule succeeds with result "What the heck is an astral resonator?";
+
+Activating the hint-rusty-resonator:
+	if the rusty astral resonator is seen and not mounted-rusty-resonator:
+		activate;
+	deactivate;
 
 BOSH Hints ends here.

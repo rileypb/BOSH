@@ -10,6 +10,11 @@ A hint topic has a list of texts called the progression.
 A hint topic has a text called the last hint. The last hint of a hint topic is usually "".
 A hint topic has a list of texts called the history. 
 
+asking for no hint is an action out of world. Understand "hint" as asking for no hint.
+
+Carry out asking for no hint:
+    say "You need to specify a hint topic. To see the list of active topics type HINTS".
+
 asking for hints about is an action out of world applying to one thing. Understand "hint [any hint topic]" as asking for hints about. 
 
 asking for bogus hints about is an action out of world applying to one topic. Understand "hint [text]" as asking for bogus hints about.
@@ -56,7 +61,8 @@ To list all hints:
 				say "* [item][line break]";
 			otherwise if the rule succeeded:
 				say "* [bold type][item][roman type][line break]";
-	say "(Topics in bold have new hints available.)";
+	say "(Topics in bold have new hints available. The others may have more hints later.)";
+	say "To recall hints about a topic, type RECALL <TOPIC>.";
 	now listing all hints is false;
 
 Listing hints is an action out of world. Understand "list hints", "hints" as listing hints.

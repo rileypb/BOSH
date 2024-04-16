@@ -2125,6 +2125,7 @@ Understand "diner/restaurant" as Henry's Hot Skillet.
 
 The diner staircase is scenery in Henry's Hot Skillet. "A staircase leads up, probably to the roof." 
 The snarky remark of the diner staircase is "I bet the roof has a great view of... the nearby roofs."
+Understand "stair/stairs", "stair case" as the diner staircase.
 
 The snarky remark of Henry's Hot Skillet is "It's a diner without any food or furniture. So, just a room, really."
 
