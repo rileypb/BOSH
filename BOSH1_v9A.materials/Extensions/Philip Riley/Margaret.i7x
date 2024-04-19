@@ -181,9 +181,11 @@ Every turn when Margaret interjection timer is not 0 and Margaret is in the loca
 
 After discussing when Margaret is in the location:
 	now Margaret interjection timer is a random number from 2 to 5;
+	continue the action;
 
 After quizzing someone about something when Margaret is in the location:
 	now Margaret interjection timer is a random number from 2 to 5;
+	continue the action;
 
 To interject Margaret:
 	sort Table of Margaret Interjections in random order;

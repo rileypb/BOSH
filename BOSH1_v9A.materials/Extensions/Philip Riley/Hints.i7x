@@ -16,6 +16,12 @@ Definition: a hint topic is active:
 		yes;
 	no;
 
+Definition: a hint topic is exhausted:
+	if it is not progressive:
+		no;
+	otherwise if the hint level of it >= the number of entries in the progression of it:
+		yes;
+
 Definition: a hint topic is explored if the number of entries in its history is not 0.
 
 asking for no hint is an action out of world. Understand "hint" as asking for no hint.

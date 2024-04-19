@@ -986,8 +986,8 @@ After going from the back lot:
 
 Carry out knocking on the BOSH back door when the location is the back lot and the BOSH back door is locked:
 	move margaret to biff's office;
-	try margaret unlocking the BOSH back door with the white key; 
-	try margaret opening the BOSH back door;
+	silently try margaret unlocking the BOSH back door with the white key; 
+	silently try margaret opening the BOSH back door;
 	now the target location of margaret is front office;
 	clear behavior of margaret;
 	add behavior walking-to to margaret;
@@ -1248,9 +1248,10 @@ Rule for deciding the concealed possessions of Chief Huffton Klimp:
 
 After printing the locale description of the BOSH Chief's office:
 	if the BOSH chief's office is not visited:
-		say "[Klimp] says 'What's with that ringing? Someone answer it!'
-		
-		He turns to Faraji and grins. 'Larch! Good to see you. What do you think of the new digs? I know, I know, it's a lousy office, I could barely fit all my stuff in here.'
+		say "[Klimp] barks, 'What's with that ringing? Someone answer it!'";
+		silently try klimp saying hello to Faraji;
+		lb;
+		say "He turns to Faraji and grins. 'Larch! Good to see you. What do you think of the new digs? I know, I know, it's a lousy office, I could barely fit all my stuff in here.'
 
 		Faraji starts to answer, but Klimp interrupts. 'Say, you read that new article in the Journal of Kinetic Experimentation on telekinesis? It's fascinating stuff. But can you do something about that phone, or do I have to ship you off to the Black Knight Satellite?' He chuckles and goes back to his work.";
 
@@ -1305,7 +1306,7 @@ To say random entry:
 After examining the Dictionary of Strangeness for the first time:
 	say "[Klimp] says 'If you want to know more about anything in there, just ask me.'"; 
 
-Looking it up in is an action applying to two things. Understand "look up [any subject] in [something]", "look [any subject] up in [something]", and "lookup [any subject] in [something]" as looking it up in. Understand "consult [something] about [any subject]" as looking it up in (with nouns reversed). Understand "read [something] about [any subject]" as looking it up in (with nouns reversed). Understand "read about [any subject] in [something]" as looking it up in.
+Looking it up in is an action applying to two things. Understand "look up [any subject] in [something]"  and "lookup [any subject] in [something]" as looking it up in. Understand "consult [something] about [any subject]" as looking it up in (with nouns reversed). Understand "read [something] about [any subject]" as looking it up in (with nouns reversed). Understand "read about [any subject] in [something]" as looking it up in.
 
 Instead of looking something up in the Dictionary of Strangeness:
 	if there is a subject of noun in the Table of Random Entries:
@@ -2136,7 +2137,7 @@ Book 21 - Not For Release
  
 [ Include BOSH Tests by Philip Riley. ]
 
-DEBUG is true.
+DEBUG is false.
 
 AUDIT is a truth state that varies.
 AUDIT is false.

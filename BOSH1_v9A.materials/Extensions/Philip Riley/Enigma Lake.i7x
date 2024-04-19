@@ -9,6 +9,7 @@ Include Plugging by Philip Riley.
 Include Simple Conversation by Philip Riley.
 Include New Light by Philip Riley.
 Include Books by Philip Riley.
+Include Container Types by Philip Riley.
 
 Volume 1 - Some Stuff
 
@@ -110,7 +111,7 @@ The makeshift astral resonator is an astral resonator type. It is pluggable.
 The description is "A makeshift astral resonator, cobbled together from a tuning fork, a spotlight, and the astral lenses[if the makeshift astral resonator is powered]. A beam of light shoots from the lens[end if][if the content of the tripod is the makeshift astral resonator]. It is mounted on a tripod[end if]."
 
 Instead of examining the makeshift astral resonator:
-	say "The makeshift astral resonator is a cobbled-together device, made from a tuning fork, a spotlight, and the astral lenses";
+	say "The makeshift astral resonator is a cobbled-together device, made from a tuning fork, a spotlight, and the astral lenses. A short cord with a plug dangles from the end opposite the lenses";
 	if mounted-makeshift-resonator:
 		say ". It sits on a tripod, and a beam of light shoots from the lens, striking the obelisk in the park. The crystal is glowing [crystal glow].";
 	otherwise if the makeshift astral resonator is powered:
@@ -832,11 +833,11 @@ Instead of examining the Book of Utilitarianism when the doll-fly is not in the 
 		now just set the word is true;
 		now the cursed word is the substituted form of "[one of]ontogeny[or]ontology[or]reification[or]epistemology[or]hermeneutics[or]deconstruction[or]postmodernism[or]paradigm[or]synergy[or]heuristic[or]praxis[or]dialectic[or]teleology[or]deontological[or]phenomenology[or]existentialism[or]semiotics[or]semantics[or]epistemology[at random]";
 	if just set the word is true or a random chance of 1 in 4 succeeds:
-		say "The text is the [italic type]Book of Utilitarianism[roman type]. [We] [open] to a page at random and [read] the text:[paragraph break]And the Lord so hated the lizard people that he smote them with a mighty smiting, and he said the cursed word '[cursed word]', and the lizard people screamed and ran away like scared little children.";
+		say "The text is the [italic type]Book of Utilitarianism[roman type]. [We] [open] to a page at random and [read]:[paragraph break]And the Lord so hated the lizard people that he smote them with a mighty smiting, and he said the cursèd word '[cursed word]', and the lizard people screamed and ran away like scared little children.";
 	otherwise:
 		let the section be a random number from 1 to 3;
 		if section is 1:
-			say "The text is the [italic type]Book of Utilitarianism[roman type]. [We] [open] to a page at random and [read] the text:[paragraph break][one of]And the Lord said, 'The path of the righteous is beset on all sides by the inequities of the selfish and the tyranny of the lizard people. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who attempt to poison and destroy my brothers. And you will know my name is the Lord when I lay my vengeance upon thee.'[or]But the Lord said to the lizard people, 'You are truly mine enemy, and I will smite you with great vengeance and furious anger. You will know my name is the Lord when I lay my vengeance upon thee.'[or]For thou shalt not suffer a lizard person to live, for they are an abomination unto the Lord.[or]And God so loved the world that he gave his only begotten son, that whosoever believeth in him should not perish, but have everlasting life. The lizard people are not included in this offer.[or]And it came to be that the Lord made aliens, and he saw that they were good, and he made lizard people, and he saw that they were not good. And he made humans, and he saw that they were not good either. And he made the platypus, and he saw that it was good. But later the humans became good, sort of like Godzilla.[or]And the Lord said, 'Let there be light,' and there was light. And the Lord said, 'Let there be lizard people,' and there were lizard people. And the Lord said, 'Let there be humans,' and there were humans. And the Lord said, 'Let there be platypuses,' and there were platypuses.[then at random]";
+			say "The text is the [italic type]Book of Utilitarianism[roman type]. [We] [open] to a page at random and [read]:[paragraph break][one of]And the Lord said, 'The path of the righteous is beset on all sides by the inequities of the selfish and the tyranny of the lizard people. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who attempt to poison and destroy my brothers. And you will know my name is the Lord when I lay my vengeance upon thee.'[or]But the Lord said to the lizard people, 'You are truly mine enemy, and I will smite you with great vengeance and furious anger. You will know my name is the Lord when I lay my vengeance upon thee.'[or]For thou shalt not suffer a lizard person to live, for they are an abomination unto the Lord.[or]And God so loved the world that he gave his only begotten son, that whosoever believeth in him should not perish, but have everlasting life. The lizard people are not included in this offer.[or]And it came to be that the Lord made aliens, and he saw that they were good, and he made lizard people, and he saw that they were not good. And he made humans, and he saw that they were not good either. And he made the platypus, and he saw that it was good. But later the humans became good, sort of like Godzilla.[or]And the Lord said, 'Let there be light,' and there was light. And the Lord said, 'Let there be lizard people,' and there were lizard people. And the Lord said, 'Let there be humans,' and there were humans. And the Lord said, 'Let there be platypuses,' and there were platypuses.[then at random]";
 		otherwise if section is 2:
 			say "The text is the [italic type]Book of Utilitarianism[roman type]. [We] [open] to a page at random and [read] the text:[paragraph break][one of]And Gob begat Bob, and Bob begat Rob, and Rob begat Job, and Job begat Chauncey, and Chauncey begat Hank, and all told there were fifty-two generations between Gob and Gob XII, who was the last of the line. And Gob XII begat no one, for he was a eunuch. And the Lord said, 'That's what you get for hanging out with lizard people.'[or]Then the Lord said to Gorm, 'Gather up all your childen, and take them to the mountain, and there I will give you the tablets of Utilitarianism, which I have written, that you may teach them.' And Gorm said, 'But Lord, I have no children.' And the Lord said, 'Then go forth and make some children, and then gather them up and take them to the mountain, and there I will give you the tablets of Utilitarianism, which I have written, that you may teach them.'[or]And the hosts of the lizard people came down from the mountains, and they were many, and they were fierce, and they were hungry. And the Lord said, 'I'm not going to feed them, they're your problem.'[or]And the Lord said, 'I am the Lord, and I am a jealous God, and I will visit the iniquity of the fathers upon the children unto the third and fourth generation of them that hate me, and show mercy unto thousands of them that love me and keep my commandments.' And the lizard people said, 'We hate you.'[then at random]";
 		otherwise:
@@ -1445,14 +1446,27 @@ The enigma-park-scenery is unsnarkable.
 
 Book 21 - Workshed
 
-the workshed is a leavable room. It has egress northwest. It is in ELR. It is indoors. "It is a small, weathered building, with a single door and no windows, and a creaky wooden floor. The interior is dimly lit by a single light bulb hanging from the ceiling. [equipment cabinet state] cabinet is in the corner. [rusty metal door state] rusty metal door leads out of the shed. [if the trapdoor is revealed]A trapdoor is in the floor, [trapdoor state].[end if]".
+the workshed is a leavable room. It has egress northwest. It is in ELR. It is indoors. "It is a small, weathered building, with a single door and no windows, and a creaky wooden floor. [if the light bulb is in the light socket]The interior is dimly lit by a single light bulb hanging from the ceiling. [otherwise]The interior is almost dark. An empty light socket hangs from the ceiling. [end if][equipment cabinet state] cabinet is in the corner. [rusty metal door state] rusty metal door leads out of the shed. [if the trapdoor is revealed]A trapdoor is in the floor, [trapdoor state].[end if]".
 The snarky remark of the workshed is "I wonder if there's a chainsaw in here."
 
-The light bulb is scenery in the workshed. "A single light bulb hangs from the ceiling, casting a dim light over the room."
+The light bulb is a thing. The description is "A standard 60W light bulb."
 The light bulb is unsnarkable.
 
-Instead of doing something to the light bulb when the action requires a touchable noun:
-	say "Ouch! The bulb is hot to the touch.";
+Understand "screw [the light bulb] in/into [the light socket]", "mount [the light bulb] on/onto/in/into [the light socket]" as inserting it into.
+Understand "screw [the rusty astral resonator] in/into [the light socket]", "mount [the rusty astral resonator] on/onto/in/into [the light socket]" as inserting it into.
+Understand "unscrew [the light bulb]" as taking when the light bulb is in the light socket.
+
+After taking the light bulb when light bulb was in the light socket:
+	say "Faraji unscrews the light bulb from the socket.";
+
+After inserting the light bulb into the light socket:
+	say "Faraji screws the light bulb into the socket.";
+
+Instead of inserting the rusty astral resonator into the light socket:
+	say "The rusty astral resonator doesn't fit in the light socket."
+
+The light socket is a scenery single item container in the workshed. The light bulb is in the light socket.
+"[if the light bulb is in the light socket]The light bulb is in the socket[otherwise]The socket is empty[end if]."
 
 Understand "building/shed" as the workshed.
 
@@ -1720,12 +1734,6 @@ Instead of examining the Book of Weird Names:
 	now the description entry is creature;
 	now the incantation entry is incantation;
 
-
-
-[ The description is "A book with a plain cover, titled [italic type]The Book of Weird Names[roman type]. No author is listed. [paragraph break]Flipping through the book, it appears that each page consists of a name, a drawing of a strange creature, and below that a word in a strange, unknown language. The text is written in a spidery, crabbed hand, and is difficult to read.[paragraph break][We] [stop] on one that reads [italic type][creature name][roman type] above a drawing of [strange creature], below which is written [italic type][incantation].[roman type][first time]
-
-Faraji can also LOOK UP a creature name IN THE BOOK OF WEIRD NAMES to see the creature and incantation.[only]"; ]
-
 The first name parts is a list of text that varies. The second name parts is a list of text that varies. The third name parts is a list of text that varies. The creature types is a list of text that varies. The body parts is a list of text that varies.
 The first name parts are {"Dag", "Gor", "Zor", "Zag", "Zog", "Zig", "Zag", "Cth", "N't", "N'k", "Ad", "Bll", "Cr", "As", "Kl"}.
 The second name parts are {"ag", "or", "ar", "og", "ig", "ag", "th", "gth", "kth", "uth", "oth", "thuk", "shaka", "fats", "steen", "don" }.
@@ -1789,7 +1797,7 @@ The snarky remark of the small bed is "I wonder if they got this from one of tho
 The rickety wardrobe is a closed openable enterable scenery container in the Second Floor of the Horton House. "A rickety wardrobe stands against a wall. It is [if open]open[otherwise]closed[end if]."
 The snarky remark of the rickety wardrobe is "Don't climb into it. There's probably something much worse thant a lion and a witch in there."
 
-The wooden frame is in the rickety wardrobe. It is a container. The description is "A piece of wood, about two feet long with three holes carved in it. It looks like the holes are meant to hold things. Leather straps attached to the frame appear to be meant to hold those things in the frame."
+The wooden frame is in the rickety wardrobe. It is a container. The description is "A piece of wood, about two feet long with three holes carved in it. It looks like the holes are meant to hold things. Leather straps appear to be meant to hold those things in the frame."
 The snarky remark of the wooden frame is "This couldn't possibly be useful. I should just leave it here."
 
 Book 26 - Astral Tunnel
@@ -1924,8 +1932,8 @@ Horton-back-facade is a building facade. It is in Horton Graveyard. It is privat
 The snarky remark of Horton-back-facade is "It doesn't look any less creepy from the back."
 
 The Witnessing of Hezekiah is in the metal case. It is proper-named. The printed name is "[italic type]The Witnessing of Hezekiah[roman type]". Understand "book" as The Witnessing of Hezekiah.  
-The description is "A small, leather-bound book, titled 'The Witnessing of Hezekiah: as told to Jeremiah Horton by Hezekiah Horton'. The book is filled with strange, cryptic passages, and is difficult to read. [We] [find] one page of particular interest. It reads, 'And lo, Hezekiah, in his wisdom, did prophesy of the impending flood and the necessity to make ready. He spoke of a sacred artifact, a resonator, bestowed with divine power, that would unveil a gateway to the ethereal realm. And he revealed the quest to find the lost astral traveler who would guide the faithful out of the coming darkness. Thus spake Hezekiah: [']Take the resonant origin, and with reverence, bind it to the eternal flame, and then to the astral focus. Channel a mighty power through it, and direct it towards the crystal eye. Strike the eye thrice, with unwavering devotion, and behold, the portal shall open, revealing the path to transcendence.[']'".
-It is unsnarkable.
+The description is "A small, leather-bound book, titled 'The Witnessing of Hezekiah: as told to Jeremiah Horton by Hezekiah Horton'. The book is filled with strange, cryptic passages, and is difficult to read. [We] [find] one page of particular interest. It reads, 'And lo, Hezekiah, in his wisdom, did prophesy of the impending flood and the necessity to make ready. He spoke of a sacred artifact, a resonator, bestowed with divine power, that would unveil a gateway to the ethereal realm. And he revealed the quest to find the lost astral traveler who would guide the faithful out of the coming darkness. Thus spake Hezekiah: [']First form from the wood of the ash tree a frame. Then take the resonant instrument, and with reverence, bind it to the ghostly light, and then to the astral focus. Ascend the ladder and, channeling a mighty power through the resonator, direct it towards the crystal eye. Once thou hast done this, strike the eye likewise twice more, and the portal shall open, revealing the path to transcendence.[']'".
+It is unsnarkable. The Witnessing of Hezekiah can be read.
 
 The shiny astral resonator is carried by the group of lizard people. It is privately-named. The description is "A small, shiny, metallic, cylindrical object. One end is capped with a lens, while the other terminates in two shiny metal chains, each with a shiny metal clamp, as if it were designed to be attached to something.".
 The printed name is "[if Astral Secrets is read]shiny astral resonator[otherwise]strange, shiny, metal object[end if]".
@@ -1935,6 +1943,8 @@ The snarky remark of the shiny astral resonator is "[if the rusty astral resonat
 The shiny clamps are part of the shiny astral resonator. The description is "Two metal chains, each with a metal clamp, are attached to the end of the [if Astral Secrets is read]resonator[otherwise]object[end if].". Understand "metal/-- chains" as the shiny clamps. They are plural-named. They are unsnarkable.
 The shiny lens is part of the shiny astral resonator. The description is "A lens is attached to the end of the [if Astral Secrets is read]resonator[otherwise]object[end if].". It is unsnarkable.
 
+After examining the Witnessing of Hezekiah:
+	now the Witnessing of Hezekiah is read;
 
 Book 28 - Fire Station 1
 
@@ -1951,7 +1961,7 @@ The x-coordinate of the Fire Station 1 is -2. The y-coordinate of the Fire Stati
 The ladder is in the Fire Station 1. "A ladder rests against the wall." The description is "A wooden ladder, about 6 feet long. It looks sturdy and well-maintained."
 The snarky remark of the ladder is "Where's the hook?".
 
-The spotlight is in the Fire Station 1. The description is "A small spotlight, designed to be hand-held. It has a short cord ending in a standard North American 120V AC plug."
+The spotlight is in the Fire Station 1. The description is "A small spotlight, designed to be hand-held. On the side is the branding 'Spectre'. The light has a short cord ending in a standard North American 120V AC plug."
 The snarky remark of the spotlight is "It's awfully small for a spotlight. More like a specklight."
 
 The blue button is scenery in the Fire Station 1. "A large blue button, mounted on the wall."
@@ -2208,7 +2218,7 @@ The x-coordinate of Henry's Roof is -1. The y-coordinate of Henry's Roof is -2.
 The TV aerial antenna is scenery in Henry's Roof. "A large, metallic rooftop antenna, characterized by its array of horizontal and vertical rods designed to capture VHF (very high frequency) broadcasts. Strangely, someone has mounted a threaded socket, like that of a light bulb, on one of the rods. A pair of insulated wires runs from the antenna and through a hole in the roof."
 The snarky remark of the TV aerial antenna is "I bet you kids don't even know what this is."
 
-The threaded socket is part of the TV aerial antenna. It is a container. The description is "A threaded socket, like that of a light bulb, is mounted on one of the rods of the antenna." Understand "light/bulb/lightbulb" as the threaded socket.
+The threaded socket is part of the TV aerial antenna. It is a single item container. The description is "A threaded socket, like that of a light bulb, is mounted on one of the rods of the antenna." Understand "light/bulb/lightbulb" as the threaded socket.
 It is unsnarkable.
 
 To hook up the rusty resonator:
@@ -2226,8 +2236,14 @@ After taking the rusty astral resonator when the rusty astral resonator was in t
 		continue the action;
 
 Understand "screw [the rusty astral resonator] in/into [the threaded socket]", "mount [the rusty astral resonator] on/onto/in/into [the threaded socket]" as inserting it into.
+Understand "screw [the light bulb] in/into [the threaded socket]", "mount [the light bulb] on/onto/in/into [the threaded socket]" as inserting it into.
 
 Understand "unscrew [the rusty astral resonator]", "unmount [the rusty astral resonator]" as taking.
+
+Check inserting something into the threaded socket:
+	if the noun is not the rusty astral resonator:
+		say "That doesn't fit.";
+		stop the action;
 
 Instead of inserting the rusty astral resonator into the threaded socket when the rusty resonator is not hooked up:
 	hook up the rusty resonator;
@@ -2550,7 +2566,7 @@ Instead of examining the mystic compass:
 
 Volume 4.5 - The Lizard People
 
-The group of lizard people is an animal. "Three humanoid figures are here, each with a long, scaly tail and a head that looks like a lizard's. They are dressed in smart grey suits. They are hissing loudly in what seems to be intelligent communication.[if lizard countdown is 1]
+The group of lizard people is an animal. "Three humanoid figures are here, each with a long, scaly tail and a head that looks like a lizard's. They are dressed in smart grey suits. They are hissing loudly in what seems to be intelligent communication. One is carrying some kind of shiny object.[if lizard countdown is 1]
 
 They notice you and stop talking. One of them steps forward and says in a guttural hiss, [one of]'So it is one of Doris's friends. We have been expecting you. You will not hinder us!'[or]'Surface vermin! You will not stop us!'[or]'No one will be allowed to interfere with our plans. Begone!'[or]'Silly human. You will fail!'[or]'You are too late to stop us. We will have the Dragon!'[at random][end if]" 
 

@@ -446,4 +446,104 @@ Activating the hint-doll-fly:
 		activate;
 	deactivate;
 
+The hint-extension-cord is a progressive hint topic. Understand "extension cord" as the hint-extension-cord. The printed name is "extension cord". The progression is {"What do people use extension cords for?"}.
+
+Activating the hint-extension-cord:
+	if the extension cord is seen and not mounted-makeshift-resonator:
+		activate;
+	deactivate;
+
+The hint-bible is a progressive hint topic. Understand "Book of Utilitarianism", "bible" as the hint-bible. The printed name is "Book of Utilitarianism". The progression is {"I wonder if any of this stuff is important.", "Is there a passage that would be useful if it came true?", "What about the passage about the cursèd word?", "The cursèd word is '[cursed word] '", "Who might Faraji say that to?", "Faraji should try saying the cursèd word to the group of lizard people."}.
+
+hinting the hint-bible:
+	if the Book of Utilitarianism is not read:
+		rule succeeds with result "Faraji should probably read the Book of Utilitarianism.";
+	otherwise:
+		now hint-bible is progressive;
+
+Activating the hint-bible:
+	if the Book of Utilitarianism is seen and the group of lizard people is somewhere:
+		activate;
+	deactivate;
+
+The hint-lizard-people is a hint topic. Understand "lizard people" as the hint-lizard-people. The printed name is "lizard people". 
+
+The hint-lizard-people-second is an unlisted progressive hint topic. The progression is {"Annoying, aren't they?", "Faraji should probably try staying away from them.", "But that's not always possible.", "And what's the significance of the shiny object they're carrying?", "How can Faraji get it?", "Faraji should try talking to them.", "No, that doesn't work."}. 
+
+The hint-lizard-people-third is an unlisted progressive hint topic. The progression is {"Has Faraji read anything about the lizard people?", "Faraji should read the Book of Utilitarianism.", "Read until you find the passage about the cursèd word.", "The cursèd word is '[cursed word] '", "Faraji should try saying the cursèd word to the group of lizard people.", "SAY [cursed word]"}.
+
+hinting the hint-lizard-people:
+	if the group of lizard people is not seen:
+		rule succeeds with result "Who are those shadowy figures in the distance?";
+	otherwise if the cursed word is "":
+		abide by the hinting rules for the hint-lizard-people-second;
+	otherwise:
+		abide by the hinting rules for the hint-lizard-people-third;
+
+Activating the hint-lizard-people:
+	if the group of lizard people is seen and the lizard people are somewhere:
+		activate;
+	deactivate;
+
+The hint-wooden-frame is a hint topic. Understand "wooden/-- frame" as the hint-wooden-frame. The printed name is "wooden frame". 
+
+The hint-wooden-frame-witnessing is an unlisted progressive hint topic.
+The progression is {"The Witnessing of Hezekiah mentions a frame formed 'from the wood of the ash tree'.", "Hezekiah also mentions 'a sacred artifact, a resonator'.", "Faraji can't proceed further if they don't know what 'a resonator' is."}.
+
+The hint-wooden-frame-resonator is an unlisted progressive hint topic.
+The progression is {"Perhaps, by 'a resonator', Hezekiah means an astral resonator.", "Hezekiah also mentions 'the resonant origin', 'the ghostly light', and 'the astral focus'. What might those be?"}.
+
+hinting the hint-wooden-frame:
+	if the Witnessing of Hezekiah is not read:
+		rule succeeds with result "The wooden frame looks like it's meant to hold specific things. But what?";
+	otherwise if Astral Secrets is not read:
+		abide by the hinting rules for the hint-wooden-frame-witnessing;
+	otherwise:
+		abide by the hinting rules for the hint-wooden-frame-resonator;
+
+Activating the hint-wooden-frame:
+	if the wooden frame is seen and the wooden frame is somewhere:
+		activate;
+	deactivate;
+
+The hint-resonant-origin is a progressive hint topic. Understand "resonant origin" as the hint-resonant-origin. The printed name is "resonant origin". The progression is {"What might the resonant origin be?", "What might be the origin of resonance?", "Maybe Faraji should look around the town some more.", "The tuning fork in the music store is a source of resonance.", "Faraji should try inserting the tuning fork into the wooden frame."}.
+
+Activating the hint-resonant-origin:
+	if the hint-wooden-frame-resonator is exhausted and the makeshift astral resonator is nowhere and the tuning fork is not in the wooden frame:
+		activate;
+	deactivate;
+
+The hint-ghostly-light is a progressive hint topic. Understand "ghostly light" as the hint-ghostly-light. The printed name is "ghostly light". The progression is {"What might the ghostly light be?", "What light sources has Faraji seen?", "Look around the town for a light source.", "The light bulb in the workshed is a source of light.", "The spotlight in the wooden frame is a source of light.", "Faraji should try inserting one of the light sources into the wooden frame."}.
+
+Activating the hint-ghostly-light:
+	if the hint-wooden-frame-resonator is exhausted and the makeshift astral resonator is nowhere and the spotlight is not in the wooden frame:
+		activate;
+	deactivate;
+
+The hint-astral-focus is a progressive hint topic. Understand "astral focus" as the hint-astral-focus. The printed name is "astral focus". The progression is {"What might the astral focus be?", "Does Faraji know of any things having to do with focus?", "Lenses are used to focus light.", "Faraji should try inserting the astral lenses into the wooden frame."}.
+
+Activating the hint-astral-focus:
+	if the hint-wooden-frame-resonator is exhausted and the makeshift astral resonator is nowhere and the pair of astral lenses is not in the wooden frame:
+		activate;
+	deactivate;
+
+The hint-makeshift-astral-resonator is a hint topic. Understand "makeshift astral resonator" as the hint-makeshift-astral-resonator. The printed name is "makeshift astral resonator".
+
+Activating the hint-makeshift-astral-resonator:
+	if the makeshift astral resonator is somewhere and not mounted-makeshift-resonator:
+		activate;
+	deactivate;
+
+The hint-makeshift-astral-resonator-witnessing is an unlisted progressive hint topic. The progression is {"Now that Faraji has the makeshift astral resonator, what should they do with it?", "Maybe there is something that will tell Faraji what to do with it.", "The information may be cryptic in nature."}.
+
+The hint-makeshift-astral-resonator-mounting is an unlisted progressive hint topic. The progression is {"Faraji must 'ascend the ladder'. Where has Faraji seen a ladder?", "There are two ladders in the town.", "One, portable, Faraji found in the fire station.", "The other is in the church, attached to the wall.", "Faraji should try going up from the church, into the steeple.", "What can Faraji do with a tripod with a telescope mounted on it?", "Faraji could look through the telescope.", "Or they could take the telescope off the tripod.", "What can you do with an empty tripod?", "Faraji should try mounting the makeshift astral resonator on the tripod."}.
+
+hinting the hint-makeshift-astral-resonator:
+	if the Witnessing of Hezekiah is not read and the Witnessing of Hezekiah is not seen:
+		abide by the hinting rules for the hint-makeshift-astral-resonator-witnessing;					
+	otherwise if the Witnessing of Hezekiah is not read:
+		rule succeeds with result "Faraji should read the Witnessing of Hezekiah.";
+	otherwise:
+		abide by the hinting rules for the hint-makeshift-astral-resonator-mounting;
+
 BOSH Hints ends here.
