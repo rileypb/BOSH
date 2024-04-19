@@ -56,7 +56,7 @@ I've also read Hyperspace by Philip Riley, which is 13437 words long.
 I've also read BOSH Facts by Philip Riley, which is 179 words long.
 I've also read Swamp Park by Philip Riley, which is 7711 words long.
 I've also read Margaret by Philip Riley, which is 2516 words long.
-I've also read Enigma Lake by Philip Riley, which is 29480 words long.
+I've also read Enigma Lake by Philip Riley, which is 29561 words long.
 I've also read I Can Dig It by Philip Riley, which is 77 words long.
 I've also read Overlook by Philip Riley, which is 763 words long.
 I've also read Gender Options by Nathanael Nerode, which is 7679 words long.
@@ -317,25 +317,3 @@ Providing for a total heap of 65536, given requirement of 37904
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 264 files written as streams.
-CPU time: 987 centiseconds
-
-
-That concludes the debugging log from this run of Inform.
-Its contents were as follows, and can be changed by placing
-text like 'Include property creations in the debugging log.'
-or 'Omit everything from the debugging log.' in the source.
-
-Included:
-  debugging log contents  debugging log inclusions
-Omitted:
-  action creations   action pattern compilation  action pattern parsing  assemblies    assertions    case insensitive filehandling
-  conditions    constructed past participles  constructed plurals   description compilation   excerpt meanings   excerpt parsing 
-  expressions    extensions census   figure creations   grammar    grammar construction   headings  
-  implications    inferences    kind changes   kind checking   kind creations   lexical output 
-  local variables   matching    meaning list allocation  memory allocation   noun resolution   object compilation 
-  object creations   object tree   phrase comparisons   phrase compilation   phrase creations   phrase registration 
-  phrase usage   predicate calculus   predicate calculus workings  pronouns    property creations   property provision 
-  property translations   relation definitions   rule attachments   rulebook compilation   spatial map   spatial map workings
-  specification permissions   specification usage   specificities    table construction   template reading   text substitutions 
-  time periods   variable creations   verifications    vocabulary  

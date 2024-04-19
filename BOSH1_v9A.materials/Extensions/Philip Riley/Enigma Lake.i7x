@@ -569,7 +569,7 @@ Hutz interjection	used (a truth state)
 "Hutz scratches his arm. 'Wish this rain would let up. Makes one hell of a racket on the roof.'"	false
 
 The flood is a subject. 
-Enigma Lake is a subject.
+Enigma-Lake-subject is a subject. It is privately-named. The printed name is "Enigma Lake". Understand "Enigma/Lake" as Enigma-Lake-subject.
 
 Table of Quiz Topics (continued)
 subject (a thing)	interlocutor (a person)	comment (a text)	reply (a text)
