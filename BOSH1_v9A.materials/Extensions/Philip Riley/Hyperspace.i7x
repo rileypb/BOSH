@@ -482,7 +482,6 @@ minerva-subject is a subject. It is privately-named. The printed name is "Minerv
 maggie-subject is a subject. It is privately-named. The printed name is "Maggie". Understand "Maggie" as maggie-subject.
 lobby is a subject.
 
-[Maggie is very spacy. Her responses are often cryptic and unhelpful.]
 Table of Quiz Topics (continued)
 subject (a thing)	interlocutor (a person)	comment (a text)	reply (a text)
 reception desk	Maggie	"'Nice desk.'"	"'Thank you. It's a desk.'"
@@ -525,13 +524,13 @@ To interject Maggie:
 
 Table of Maggie Interjections
 Maggie interjection	used
-"Maggie seems to snap out of her reverie. 'Oh, hello. Who are you again? Oh yes, Agent Faraji. Please don't touch the control panel."	false
-"Maggie looks up from her desk. 'Do you know what makes this place so special? It's the people. I mean, not the people that you see, but the others."	false
+"Maggie seems to snap out of her reverie. 'Oh, hello. Who are you again? Oh yes, Agent Faraji. Please don't touch the control panel.'"	false
+"Maggie looks up from her desk. 'Do you know what makes this place so special? It's the people. I mean, not the people that you see, but the others.'"	false
 "Maggie snaps her fingers. 'That's it! I remember now. Budapest.'"	false
 "Maggie looks at her hands. 'Once I thought I wasn't real. But Minerva told me I was. So I guess I am.'"	false
 "Maggie curls her lip. 'I don't like coffee. It's too bitter. But Minerva likes it. She's the only one who does. Except for Doris and Christy.'"	false
 "Maggie twirls a lock of hair around her finger. 'A lot of people travel in time and don't even know it. They think they're just going to the store or to work. But they're not. They're going to the past or the future.'"	false
-"Maggie gets up for a moment and paces. 'Most people think my job is easy. But it's not. I have so many scary thoughts sitting here all day."	false
+"Maggie gets up for a moment and paces. 'Most people think my job is easy. But it's not. I have so many scary thoughts sitting here all day.'"	false
 
 
 
@@ -730,6 +729,17 @@ about coffee is a questioning quip.
 	it quip-supplies Minerva.
 	It is repeatable.
 	It is always-available.
+
+for-a-screwdriver-minerva is a questioning quip.
+	It is privately-named. The printed name is "for a screwdriver". [The true-name is "for-a-screwdriver-clerk".] Understand "for/a/screwdriver" as for-a-screwdriver-minerva.
+	It mentions the screwdriver.
+	The comment is "[We] [ask], 'Would you happen to have a screwdriver I could borrow?'".
+	The reply is "'No.'".
+	It quip-supplies Minerva.
+	
+An availability rule for for-a-screwdriver-minerva:	
+	if the player knows vent-screws and the red screwdriver is not handled:
+		always available;
 
 [An availability rule for about coffee (this is the serve coffee rule):
 	if the cup of coffee is off-stage:
@@ -1035,6 +1045,18 @@ Volume 4 - Characters
 Book 1 - Doris
 
 Chapter 1 - First Meeting
+
+for-a-screwdriver-doris is a questioning quip.
+	The printed name is "for a screwdriver".
+	Understand "for/a/screwdriver" as for-a-screwdriver-doris.
+	It mentions the screwdriver.
+	The comment is "[We] [ask], 'Do you have a screwdriver?'".
+	The reply is "'No, I don't have a screwdriver. Sonic or otherwise.'".
+	it quip-supplies Doris.
+	
+An availability rule for for-a-screwdriver-doris:	
+	if the player knows vent-screws and the red screwdriver is not handled:
+		always available;
 
 who-are-you-doris is a questioning quip.
 	The printed name is "who he is".
@@ -1378,6 +1400,17 @@ Doris interjection	used
 
 Book 2 - Maggie
 
+for-a-screwdriver-maggie is a questioning quip.
+	It is privately-named. The printed name is "for a screwdriver". [The true-name is "for-a-screwdriver-clerk".] Understand "for/a/screwdriver" as for-a-screwdriver-maggie.
+	It mentions the screwdriver.
+	The comment is "[We] [ask], 'Would you happen to have a screwdriver I could borrow?'".
+	The reply is "'Oh, I'm sorry, I don't have a screwdriver. Do you?'".
+	It quip-supplies maggie.
+	
+An availability rule for for-a-screwdriver-maggie:	
+	if the player knows vent-screws and the red screwdriver is not handled:
+		always available;
+
 how-to-get-home-maggie is a questioning quip.
 	The printed name is "how to get home".
 	Understand "how can/do i/we/they/she/he get home" as how-to-get-home-maggie.
@@ -1469,6 +1502,16 @@ Christy interjection	used
 "Christy tosses her pencil in the air. 'Just once I'd like to be the one who gets to travel in time.'"	false
 "Christy looks thoughtful. 'I wonder if I could get a job at the Bureau of Startling Hallucinations. They have a better dental plan.'"	false
 
+for-a-screwdriver-christy is a questioning quip.
+	It is privately-named. The printed name is "for a screwdriver". [The true-name is "for-a-screwdriver-clerk".] Understand "for/a/screwdriver" as for-a-screwdriver-christy.
+	It mentions the screwdriver.
+	The comment is "[We] [ask], 'Would you happen to have a screwdriver I could borrow?'".
+	The reply is "'Yes, my pencil is a screwdriver. Ha. Ha. I'm working here.'".
+	It quip-supplies Christy.
+	
+An availability rule for for-a-screwdriver-christy:	
+	if the player knows vent-screws and the red screwdriver is not handled:
+		always available;
 
 Volume 5 - Things
 

@@ -2,7 +2,7 @@ Commerce by Philip Riley begins here.
 
 Use authorial modesty.
 
-[ Understand the commands “buy” and “purchase” as something new. ]
+Understand the commands “buy” and “purchase” as something new.
 
 An amount of money is a kind of value. $1 specifies an amount of money.
 [ 
@@ -14,7 +14,11 @@ Owner relates one person (called the owner) to a thing. The verb to own (he owns
 
 Buying it with is an action applying to one visible thing and one carried thing. Understand "Buy [thing] with [thing]" as buying it with.
 Understand "Purchase [thing] with [thing]" as buying it with. 
-Understand "Purchase [thing]" as buying it with.
+
+[ Underspecified buying is an action applying to one visible thing. Understand "Buy [something]" as underspecified buying.
+
+Instead of underspecified buying:
+	say "You must specify how you want to pay. For example, 'BUY [the noun] WITH five-dollar bill'." ]
 	
 Vends relates one person (called the vendor) to various things. The verb to be willing to sell implies the vends relation.
 

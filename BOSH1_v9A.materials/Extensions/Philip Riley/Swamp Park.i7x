@@ -193,6 +193,21 @@ It is far away.
 	
 strip mall parking lot south is outside from the Dave's pawn shop.
 
+Section 1 - Dave Conversation
+
+pawn-shop-subject is a subject. It is privately-named. The printed name is "Dave's pawn shop". Understand "Dave's/pawn/shop" as pawn-shop-subject.
+
+Table of Quiz Topics (continued)
+subject (a thing)	interlocutor (a person)	comment (a text)	reply (a text)
+pawn-shop-subject	Dave	"Faraji asks, 'This your shop?'"	"Dave grunts, 'Yeah, what of it?'"
+blinds	Dave	"Faraji asks, 'Why are the blinds closed?'"	"'I'm extremely photosensitive.'"
+glass counter	Dave	"Faraji asks, 'What's in the glass counter?'"	"'Stuff.'"
+jewelry	Dave	"Faraji asks, 'Is this jewelry all real?"	"Dave huffs, 'Miss, everything in this shop is genuine.'"
+firearms	Dave	"Faraji asks, 'What gun do you recommend?'"	"Dave says, 'Depends. How dead do you want'em?'"
+tattoo	Dave	"Faraji asks, 'What's your tattoo of?'"	"Dave says, 'It's Butterfree, so?'"
+Dave	Dave	"Faraji asks, 'How are you?'"	"Dave grunts, 'Been better.'"
+
+
 Chapter 2 - Strip Mall Parking Lot North
 
 The Strip Mall Parking Lot North is a room. It is north of The Strip Mall Parking Lot South. It is in Swamp Park. It is outdoors. The printed name is "north end of the strip mall parking lot". Understand "end/of/the" as the Strip Mall Parking Lot North. Understand "shopping center" as Strip Mall Parking Lot North. The preposition is "at".
@@ -334,6 +349,12 @@ After discussing about the laundromat owner:
 	add behavior arrival to Chief Huffton Klimp;
 	[ activate the Table of Chief Klimp Hints; ]
 	continue the action;
+
+about the watch is a questioning quip.
+	The comment is "[We] [ask], 'What's so special about this watch?'"
+	The reply is "'It's a family heirloom. I'd like to get it back.'"
+	It quip-supplies Dave.
+	It follows about the laundromat owner.
 	
 Dave interjection timer is a number that varies. Dave interjection timer is 5.
 
@@ -347,6 +368,7 @@ After discussing when Dave is in the location:
 
 After quizzing someone about something when Dave is in the location:
 	now Dave interjection timer is a random number from 2 to 5;
+	continue the action;
 
 To interject Dave:
 	sort Table of Dave Interjections in random order;
@@ -362,8 +384,9 @@ Dave interjection	used (a truth state)
 "Dave leans on the counter. 'Now, the key to breaking and entering is to not get caught.'"	false
 "Dave rubs his chin thoughtfully. 'That laundromat owner was a strange one. Wrong in the head, I'd say.'"	false
 "Dave fiddles with a pen. 'How you liking Swamp Park? Heh. Nobody likes Swamp Park.'"	false
-
-
+"Dave looks at the ceiling. 'You know, I've been thinking about getting another tattoo. I think this one will be Snorlax.'"	false
+"Dave looks at the door. 'I've heard of you BOSH people. You're all kind of crazy, right?'"	false
+"Dave cracks his knuckles. 'My wife says I should sell the place so we can move to the tropics. I say, [']What? And leave Swamp Park?[']'"	false
 
 Book 3 - Laundromat
 
@@ -701,17 +724,10 @@ The snarky remark of the wireless earbuds is "Ear Pods. Sounds quality."
 		
 After quizzing the clerk about the glass case:
 	say "'You want something inside? Name it.'" instead;
-	
-[for-a-screwdriver-clerk is a questioning quip.
-	It is privately-named. The printed name is "for a screwdriver". [The true-name is "for-a-screwdriver-clerk".] Understand "for/a/screwdriver" as for-a-screwdriver-clerk.
-	It mentions the screwdriver.
-	The comment is "[We] [ask], 'Would you happen to have a screwdriver I could borrow?'".
-	The reply is "'Got one to buy, not one to borrow.'".
-	It quip-supplies the clerk.
-	
-An availability rule for for-a-screwdriver-clerk:	
-	if the player knows vent-screws and the screwdriver is not seen:
-		always available;]
+
+Rule for reaching inside the glass case while buying something:
+	allow access;
+
 	
 strip mall parking lot north is outside from the the Li'l Nectarine Convenience Store.
 
@@ -727,6 +743,7 @@ After discussing when Clerk is in the location:
 
 After quizzing someone about something when Clerk is in the location:
 	now Clerk interjection timer is a random number from 2 to 5;
+	continue the action;
 
 To interject Clerk:
 	sort Table of Clerk Interjections in random order;
@@ -746,6 +763,19 @@ Clerk interjection	used (a truth state)
 "The clerk says, 'You gonna buy something?'"	false
 "The clerk, playing with a pen, says, 'I hear some group of weirdos moved in next to the pawn shop.'"	false
 
+
+Chapter 1 - Clerk Conversation
+
+for-a-screwdriver-clerk is a questioning quip.
+	It is privately-named. The printed name is "for a screwdriver". [The true-name is "for-a-screwdriver-clerk".] Understand "for/a/screwdriver" as for-a-screwdriver-clerk.
+	It mentions the screwdriver.
+	The comment is "[We] [ask], 'Would you happen to have a screwdriver I could borrow?'".
+	The reply is "'Got one to buy, not one to borrow.'".
+	It quip-supplies the clerk.
+	
+An availability rule for for-a-screwdriver-clerk:	
+	if the player knows vent-screws and the red screwdriver is not handled:
+		always available;
 
 Book 5 - Comments about Things
 
@@ -774,6 +804,8 @@ Bureau of Strange Happenings	store clerk	--	"'Never heard of it. What are you gu
 aliens	store clerk	--	"'If I see an alien, I'm going to ask for a ride.'"
 zombies	store clerk	--	"'The zombie apocalypse will start here.'"
 vampires	store clerk	--	"'Don't tell anyone, but I LARP as a vampire on weekends.'"
+pawn shop	store clerk	--	"'I've never been in there. I hear it's a dump.'"
+laundromat	store clerk	--	"'Never been there. My mom does my clothes.'"
 
 
 Swamp Park ends here.

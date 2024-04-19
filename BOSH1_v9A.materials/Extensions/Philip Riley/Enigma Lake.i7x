@@ -439,6 +439,17 @@ The snarky remark of the sink is "If you get enough dishes in there, you can no 
 The sledgehammer is in the dirty shack. Understand "hammer" as sledgehammer. The description is "A heavy sledgehammer, the head of which is covered in rust."
 The snarky remark of the sledgehammer is "I'm sure violence is the answer to something. Let's go look."
 
+for-a-screwdriver-hutz is a questioning quip.
+	It is privately-named. The printed name is "for a screwdriver". [The true-name is "for-a-screwdriver-clerk".] Understand "for/a/screwdriver" as for-a-screwdriver-hutz.
+	It mentions the screwdriver.
+	The comment is "[We] [ask], 'Would you happen to have a screwdriver I could borrow?'".
+	The reply is "'No, not anymore. Got angry and threw mine in the lake one day.'".
+	It quip-supplies Hutz.
+	
+An availability rule for for-a-screwdriver-hutz:	
+	if the player knows vent-screws and the red screwdriver is not handled:
+		always available;
+
 Who-is-Hutz is a questioning quip.
 	The printed name is "who he is".
 	Understand "who are you", "who/he/is" as who-is-hutz.
@@ -462,6 +473,7 @@ Why-he-is-still-here is a questioning quip.
 How-can-you-help-me is a questioning quip.
 	It is privately-named.
 	The printed name is "how he can help [us]".
+	Understand "for help", "help me" as how-can-you-help-me.
 	Understand "how can you help me/them/Faraji/--", "how he can help me/them/Faraji/--", "how he can help me/them/Faraji/--" as how-can-you-help-me.
 	[ Understand "how/can/you/he/help/me/us/them/her/him" as how-can-you-help-me. ]
 	The comment is "'But how can you possibly help me?' [we] [ask]."
@@ -494,7 +506,8 @@ Instead of imploring Hutz for "help":
 
 Now-can-you-help-me is a questioning quip.
 	The printed name is "if he can now help [us]".
-	Understand "if/now/can/you/help/me/us/them/her/him" as now-can-you-help-me.
+	Understand "can you help me/us/them/Faraji/-- now/--" as now-can-you-help-me. 
+	Understand "if he can help me/us/them/Faraji/-- now/--" as now-can-you-help-me.
 	The comment is "'Now, you've had your coffee. Can you help me?' [we] [ask]."
 	The reply is "'I found something. Something that might help you. It's in the workshed. In the cabinet. You'll need the key.' At this, Hutz pulls out a rusty key ring, pulls off an iron key and hands it to [us]."
 	It quip-supplies Hutz.
@@ -510,11 +523,15 @@ After discussing Help-me:
 	now Hutz-needs-coffee is true;
 
 Instead of giving the cup of coffee to Hutz when Hutz-needs-coffee is true:
-	if the hotness of the cup of coffee < 25:
-		say "Hutz takes the coffee and sniffs it. 'Cold,' he says, even though the stuff is still plenty hot. 'I can't drink this.' He tosses the coffee into the pile of used cups.";
+	if the hotness of the cup of coffee < 24:
+		if the hotness of the cup of coffee > 20:
+			say "Hutz takes the coffee and sniffs it. 'Cold,' he says, even though the stuff is still plenty hot. 'I can't drink this.' He tosses the coffee into the pile of used cups.";
+		otherwise:
+			say "Hutz takes the coffee and sniffs it. 'Cold,' he says. 'I can't drink this.' He tosses the coffee into the pile of used cups.";
 		now the cup of coffee is nowhere;
 	otherwise:
 		say "Hutz takes the coffee and drinks it down in one gulp. 'Ah, that's the stuff,' he says. 'Now, what can I do for you?'";
+		now hutz interjection timer is a random number from 2 to 5;
 		now Hutz-needs-coffee is false;
 		now the cup of coffee is nowhere;
 		queue Hutz with Now-can-you-help-me;
@@ -531,6 +548,7 @@ After discussing when Hutz is in the location:
 
 After quizzing someone about something when Hutz is in the location:
 	now Hutz interjection timer is a random number from 2 to 5;
+	continue the action;
 
 To interject Hutz:
 	sort Table of Hutz Interjections in random order;
@@ -550,6 +568,18 @@ Hutz interjection	used (a truth state)
 "Hutz says, 'Something's running around out there. Something not human.'"	false
 "Hutz scratches his arm. 'Wish this rain would let up. Makes one hell of a racket on the roof.'"	false
 
+The flood is a subject. 
+Enigma Lake is a subject.
+
+Table of Quiz Topics (continued)
+subject (a thing)	interlocutor (a person)	comment (a text)	reply (a text)
+mangy cat	Hutz	"'Is that your cat?' [we] ask."	"'What does it mean to be a cat's owner?' Hutz replies."
+sledgehammer	Hutz	"'What's the sledgehammer for?' [we] ask."	"'That's the only thing left of my old friend Josef,' Hutz replies."
+plates	Hutz	"'What's with all the dirty dishes?' [we] ask."	"'What's with your ugly face?' Hutz replies."
+pile of used coffee cups	Hutz	"'Why so many coffee cups?' [we] ask."	"'I like the coffee at Henry's' Hutz replies."
+narrow bed	Hutz	"'What's with the narrow bed?' [we] ask."	"'I like to sleep on my side,' Hutz replies."
+flood	Hutz	"'Aren't you worried about the flood?' [we] ask."	"'Uh, yeah, of course I am. I'm leaving tomorrow morning,' Hutz replies."
+Enigma Lake	Hutz	"'Tell me about Enigma Lake,' [we] ask."	"'It's a lake,' Hutz replies. 'Or did you mean the town? I'll miss it. Good little town. Or rather, a crappy little town with a good diner.'"
 
 
 Book 10 - Main at Lake
@@ -2850,6 +2880,13 @@ opening the portal is an action applying to nothing. Understand "open portal" as
 
 Carry out opening the portal:
 	open the portal;
+
+coffeeing is an action out of world. Understand "starbucks" as coffeeing.
+
+Carry out coffeeing:
+	now the player is carrying the cup of coffee;
+	now the hotness of the cup of coffee is 30;
+	say "bing! you have coffee!";
 
 query-naming is an action applying to nothing. Understand "is hathgar named" as query-naming.
 Carry out query-naming:

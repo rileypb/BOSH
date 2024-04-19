@@ -437,13 +437,14 @@ To postpone (act - an action):
 	
 This is the postponement rule:
 	if the postponed action is not waiting:
-		try the postponed action;
+		silently try the postponed action;
 		now the postponed action is waiting;
 	
 The postponement rule is listed before the every turn stage rule in the turn sequence rules.
 
 After saying hello to someone (called P):
 	set pronouns from P;
+	continue the action;
  
 Book 6 - Messages
 
@@ -1194,6 +1195,9 @@ The snarky remark of the hex wrench is "There are approximately 5 billion of the
 Before examining the heating vent (this is the now you know vent-screws rule):
 	now the player knows vent-screws;
 	[ activate the Table of Screwdriver Hints; ]
+
+Instead of searching:
+	try examining the noun;
  
 Instead of removing hex wrench from heating vent when the heating vent is closed:
 	say "[Our] fingers won't fit through the openings in the vent. [We][']ll have to open it first."; 
@@ -1253,7 +1257,7 @@ After printing the locale description of the BOSH Chief's office:
 		lb;
 		say "He turns to Faraji and grins. 'Larch! Good to see you. What do you think of the new digs? I know, I know, it's a lousy office, I could barely fit all my stuff in here.'
 
-		Faraji starts to answer, but Klimp interrupts. 'Say, you read that new article in the Journal of Kinetic Experimentation on telekinesis? It's fascinating stuff. But can you do something about that phone, or do I have to ship you off to the Black Knight Satellite?' He chuckles and goes back to his work.";
+		Faraji starts to answer, but Klimp interrupts. 'Say, you read that new article in the Journal of Kinetic Experimentation on telekinesis? It's fascinating stuff. But seriously, can you do something about that phone, or do I have to ship you off to the Black Knight Satellite?' He chuckles and goes back to his work.";
 
 The snarky remark of the BOSH Chief's office is "It's like a museum of bad taste."
 
@@ -1616,6 +1620,7 @@ After discussing when Moira is in the location:
 
 After quizzing someone about something when Moira is in the location:
 	now Moira interjection timer is a random number from 2 to 5;
+	continue the action;
 
 To interject Moira:
 	sort Table of Moira Interjections in random order;
@@ -1826,6 +1831,7 @@ After discussing when Klimp is in the location:
 
 After quizzing someone about something when Klimp is in the location:
 	now Klimp interjection timer is a random number from 2 to 5;
+	continue the action;
 
 To interject Klimp:
 	sort Table of Klimp Interjections in random order;
