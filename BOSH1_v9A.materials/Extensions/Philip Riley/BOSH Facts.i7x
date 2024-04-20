@@ -24,5 +24,6 @@ laundromat-front-door-is-locked	"The front door to the laundromat is locked."
 skillet-door-locked	"The door to Henry's Hot Skillet is locked."
 dirty-battery	"The truck battery has leaked acid."
 rusty-resonator-has-been-activated	"The rusty resonator has been activated."
+hex-wrench-lost	"The hex wrench is lost in the vent."
 
 BOSH Facts ends here.

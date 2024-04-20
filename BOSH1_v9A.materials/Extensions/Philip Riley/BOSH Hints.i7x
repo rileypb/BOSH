@@ -23,6 +23,8 @@ Activating the hint-ringing-phone:
 
 The hint-locked-desk is a hint topic. Understand "locked/desk", "faraji's/my/their desk" as the hint-locked-desk. The printed name is "locked desk".
 
+The hint-locked-desk-hex is an unlisted progressive hint topic. The progression is {"Maybe Faraji could take the desk apart to get the key out.", "Faraji will need a hex wrench to disassemble the desk."}.
+
 Hinting the hint-locked-desk:
 	if the player does not know desk-locked or the blue flipphone is handled:
 		make no decision;
@@ -31,7 +33,7 @@ Hinting the hint-locked-desk:
 	otherwise if player does not know hex-screws:
 		abide by the hinting rules for the hint-locked-desk-no-key;
 	otherwise:
-		rule succeeds with result  "Maybe Faraji could take the desk apart to get the key out.";
+		abide by the hinting rules for the hint-locked-desk-hex;
 
 Activating the hint-locked-desk:
 	if the blue flipphone is not handled:
@@ -46,8 +48,10 @@ The hint-hex-wrench is a hint topic. Understand "hex/allen/-- wrench/key/tool", 
 Hinting the hint-hex-wrench:
 	if the player does not know hex-screws:
 		make no decision;
-	otherwise if the player does not know vent-screws:
+	otherwise if the player does not know hex-wrench-lost:
 		rule succeeds with result "It looks like Faraji needs a hex wrench to disassemble the desk.";
+	otherwise if the player does not know vent-screws:
+		rule succeeds with result "Margaret mentioned that the hex wrench fell into the heating vent behind her desk.";
 	otherwise if the red screwdriver is not handled:
 		rule succeeds with result "Hmm. Faraji better find a screwdriver.";
 
@@ -133,9 +137,11 @@ Activating the hint-enter-laundromat:
 	otherwise:
 		deactivate;
 
-hint-try-laundromat-back-door is an unlisted progressive hint topic. The progression is {"Faraji could try the back door of the laundromat.", "It's in the back lot."}.
+hint-try-laundromat-back-door is an unlisted progressive hint topic. The progression is {"Faraji could try the front door of the laundromat.", "Faraji could try the back door of the laundromat.", "It's in the back lot."}.
 
-hint-enter-laundromat-hyper is an unlisted progressive hint topic. The progression is {"If the back door is locked, Faraji will need another way to get in.", "Faraji will need to find a special item to get into the laundromat."}
+hint-enter-laundromat-hyper is an unlisted progressive hint topic. The progression is {"If the back door is locked, Faraji will need another way to get in.", "Faraji will need to find a special item to get into the laundromat.", "Faraji needs to find the astral lenses."}.
+
+hint-enter-laundromat-lenses is an unlisted progressive hint topic. The progression is {"I wonder what there is to see in the back lot that Faraji didn't see before.", "Faraji should wear the astral lenses in the back lot."}.
 
 Hinting the hint-enter-laundromat:
 	if the player does not know break-in-to-laundromat:
@@ -147,15 +153,9 @@ Hinting the hint-enter-laundromat:
 			otherwise if the player does not enclose the astral lenses:
 				abide by the hinting rules for the hint-enter-laundromat-hyper;
 			otherwise:
-				rule succeeds with result "I wonder what there is to see in the back lot that we didn't see before.";
+				abide by the hinting rules for the hint-enter-laundromat-lenses;
 		otherwise:
 			go on;
-
-Activating the hint-enter-laundromat:
-	if the laundromat back room is unvisited:
-		activate;
-	otherwise:
-		deactivate;
 
 hint-klimp is a hint topic. Understand "chief/-- huffton/-- klimp", "chief" as the hint-klimp. The printed name is "Chief Klimp".
 		
@@ -193,6 +193,14 @@ Hinting the hint-strange-glow:
 			rule succeeds with result "Faraji needs something to help them move the crates.";
 	otherwise:
 		abide by the hinting rules for the hint-touch-the-glow; 
+
+hint-darkness-laundromat is a progressive hint topic. Understand "help/Im/stuck/in/darkness" as the hint-darkness-laundromat. The printed name is "help! I'm stuck in darkness". The progression is {"Faraji should wear the astral lenses."}.
+
+Activating the hint-darkness-laundromat:
+	if the location is the back basement and in darkness:
+		activate;
+	otherwise:
+		deactivate;
 
 hint-handtruck is a hint topic. Understand "handtruck", "hand/-- truck" as the hint-handtruck. The printed name is "handtruck".
 
@@ -261,8 +269,7 @@ Activating the hint-field-office:
 	otherwise:
 		deactivate;
 
-The hint-new-bikers-of-troy is a progressive hint topic. Understand "new bikers of troy", "new/-- bikers", "troy" as the hint-new-bikers-of-troy. The printed name is "New Bikers of Troy". The progression is {"Faraji needs to find a book.", "The book may or may not be titled 'New Bikers of Troy'.", "It might be anywhere, hyperspace or elsewhere.", "Who has books?", "Faraji should check Minerva's office.", "Minerva will allow Faraji to borrow a book", "If the book is not in Minerva's office, maybe Faraji needs to get out of hyperspace.", "Faraji should ask Doris about how to get out of hyperspace.", "Now that Faraji is in Moira's office, why don't they check out the bookshelves?", 
-"Maybe the book isn't named 'New Bikers of Troy' exactly.", "Are there any books you've seen with similar names?", "How about anagrams?", "Faraji needs the book 'Tribes of New York' from Moira's library."}.
+The hint-new-bikers-of-troy is a progressive hint topic. Understand "new bikers of troy", "new/-- bikers", "troy" as the hint-new-bikers-of-troy. The printed name is "New Bikers of Troy". The progression is {"Faraji needs to find a book.", "The book may or may not be titled 'New Bikers of Troy'.", "It might be anywhere, hyperspace or elsewhere.", "Who has books?", "Faraji should check Minerva's office.", "Minerva will allow Faraji to borrow a book", "If the book is not in Minerva's office, maybe Faraji needs to get out of hyperspace.", "Faraji should ask Doris about how to get out of hyperspace.", "Now that Faraji is in Moira's office, why don't they check out the bookshelves?", "Maybe the book isn't named 'New Bikers of Troy' exactly.", "Are there any books you've seen with similar names?", "How about anagrams?", "Faraji needs the book 'Tribes of New York' from Moira's library."}.
 
 Activating the hint-new-bikers-of-troy:
 	if about the mission is exhausted and Tribes of New York is not delivered:
@@ -284,6 +291,14 @@ Understand "trapped/-- in/-- the/-- utility/-- closet" as the hint-utility-close
 
 Activating the hint-utility-closet-trapped:
 	if the location is the utility closet and the astral lenses are worn and the closet door is locked:
+		activate;
+	otherwise:
+		deactivate;
+
+The hint-thumb-drive is progressive hint topic. Understand "USB/flash/memory/thumb/drive" as the hint-thumb-drive. The printed name is "thumb drive". The progression is {"Where might Faraji find a thumb drive?", "Thumb drives are usually found near computers.", "Faraji should take a look at the computers in the BOSH office.", "Faraji should look at their broken computer in the front office."}.
+
+Activating the hint-thumb-drive:
+	if the thumb drive is not handled and Doris is seen:
 		activate;
 	otherwise:
 		deactivate;

@@ -547,14 +547,14 @@ The snarky remark of the stacks of crates is "[if the broken washing machine is 
 
 To say crates description:
 	if in darkness:
-		say "You feel around. The dark objects seem to be large crates.";
+		say "You feel around. The dark objects seem to be large crates";
 	otherwise:
 		if the broken washing machine is nowhere:
-			say "The crates are stacked high and deep, making it difficult to see what's behind them.";
+			say "The crates are stacked high and deep, making it difficult to see what's behind them";
 		otherwise:
-			say "The crates are stacked high and deep, but there is a gap between two of them, revealing a broken-down washing machine.";
+			say "The crates are stacked high and deep, but there is a gap between two of them, revealing a broken-down washing machine";
 
-The description of the stacks of crates is "[crates	description]"
+The description of the stacks of crates is "[crates	description]."
 
 Check moving something with:
 	say "That isn't very helpful.";

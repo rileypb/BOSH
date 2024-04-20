@@ -62,6 +62,10 @@ for the wrench is a questioning quip.
 An availability rule for for the wrench:
 	if the player knows key-is-lost and player knows hex-screws:
 		always available;
+
+After discussing for the wrench:
+	now the player knows hex-wrench-lost;
+	continue the action;
 	
 for-a-screwdriver is a questioning quip.
 	It is privately-named. The printed name is "for a screwdriver". [The true-name is "for-a-screwdriver".] Understand "for/a/screwdriver" as for-a-screwdriver.

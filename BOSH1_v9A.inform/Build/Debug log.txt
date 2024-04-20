@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 24418 words long.
+I've now read your source text, which is 24568 words long.
 
 
 -----------------------------------------------------
@@ -53,15 +53,15 @@ I've also read Snarky Remarks by Philip Riley, which is 230 words long.
 I've also read Followup Questions by Philip Riley, which is 248 words long.
 I've also read Simple Conversation by Philip Riley, which is 2332 words long.
 I've also read Hyperspace by Philip Riley, which is 13437 words long.
-I've also read BOSH Facts by Philip Riley, which is 179 words long.
+I've also read BOSH Facts by Philip Riley, which is 188 words long.
 I've also read Swamp Park by Philip Riley, which is 7711 words long.
-I've also read Margaret by Philip Riley, which is 2516 words long.
+I've also read Margaret by Philip Riley, which is 2529 words long.
 I've also read Enigma Lake by Philip Riley, which is 29561 words long.
 I've also read I Can Dig It by Philip Riley, which is 77 words long.
 I've also read Overlook by Philip Riley, which is 763 words long.
 I've also read Gender Options by Nathanael Nerode, which is 7679 words long.
 I've also read Make Test by Philip Riley, which is 288 words long.
-I've also read BOSH Hints by Philip Riley, which is 5083 words long.
+I've also read BOSH Hints by Philip Riley, which is 5280 words long.
 I've also read Hearing by Philip Riley, which is 1254 words long.
 I've also read PBR Common by Philip Riley, which is 109 words long.
 I've also read Walls by Philip Riley, which is 905 words long.
@@ -134,19 +134,19 @@ Phase X ... Tables and grammar
 Phase XI ... Phrases and rules
 -----------------------------------------------------
 
-Regional: CONSTANT_VNT'field office area'-region(I254_field_office_area)(I162'field office area')
+Regional: CONSTANT_VNT'field office area'-region(I255_field_office_area)(I163'field office area')
  == region
-Regional: CONSTANT_VNT'field office area'-region(I254_field_office_area)(I162'field office area')
+Regional: CONSTANT_VNT'field office area'-region(I255_field_office_area)(I163'field office area')
  == region
-Regional: CONSTANT_VNT'hyperspace'-region(I239_hyperspace)(I147'hyperspace')
+Regional: CONSTANT_VNT'hyperspace'-region(I240_hyperspace)(I148'hyperspace')
  == region
-Regional: CONSTANT_VNT'elr'-region(I518_elr)(I408'elr')
+Regional: CONSTANT_VNT'elr'-region(I519_elr)(I409'elr')
  == region
-Regional: CONSTANT_VNT'elr'-region(I518_elr)(I408'elr')
+Regional: CONSTANT_VNT'elr'-region(I519_elr)(I409'elr')
  == region
-Regional: CONSTANT_VNT'elr'-region(I518_elr)(I408'elr')
+Regional: CONSTANT_VNT'elr'-region(I519_elr)(I409'elr')
  == region
-Regional: CONSTANT_VNT'elr'-region(I518_elr)(I408'elr')
+Regional: CONSTANT_VNT'elr'-region(I519_elr)(I409'elr')
  == region
 
 
@@ -180,13 +180,13 @@ Phase XII ... Code generation
 
                                 0 = action. 1 = object
                                 0 = action. 1 = object
-        Regional: CONSTANT_VNT'hyperspace'-region(I239_hyperspace)(I147'hyperspace')
+        Regional: CONSTANT_VNT'hyperspace'-region(I240_hyperspace)(I148'hyperspace')
          == region
-        Regional: CONSTANT_VNT'hyperspace'-region(I239_hyperspace)(I147'hyperspace')
+        Regional: CONSTANT_VNT'hyperspace'-region(I240_hyperspace)(I148'hyperspace')
          == region
-        Regional: CONSTANT_VNT'hyperspace'-region(I239_hyperspace)(I147'hyperspace')
+        Regional: CONSTANT_VNT'hyperspace'-region(I240_hyperspace)(I148'hyperspace')
          == region
-        Regional: CONSTANT_VNT'hyperspace'-region(I239_hyperspace)(I147'hyperspace')
+        Regional: CONSTANT_VNT'hyperspace'-region(I240_hyperspace)(I148'hyperspace')
          == region
 0 = object. 1 = number
 0 = object. 1 = number
@@ -195,25 +195,25 @@ Phase XII ... Code generation
 0 = object. 1 = number
                                         Fail: thing (~) number = nothing
                                         Fail: thing (~) number = nothing
-        Regional: CONSTANT_VNT'hyperspace'-region(I239_hyperspace)(I147'hyperspace')
+        Regional: CONSTANT_VNT'hyperspace'-region(I240_hyperspace)(I148'hyperspace')
          == region
-        Regional: CONSTANT_VNT'hyperspace'-region(I239_hyperspace)(I147'hyperspace')
+        Regional: CONSTANT_VNT'hyperspace'-region(I240_hyperspace)(I148'hyperspace')
          == region
-        Regional: CONSTANT_VNT'the laundromat-region'-region(I413_laundromat_region)(I309'laundromat-region')
+        Regional: CONSTANT_VNT'the laundromat-region'-region(I414_laundromat_region)(I310'laundromat-region')
          == region
-        Regional: CONSTANT_VNT'the laundromat-region'-region(I413_laundromat_region)(I309'laundromat-region')
+        Regional: CONSTANT_VNT'the laundromat-region'-region(I414_laundromat_region)(I310'laundromat-region')
          == region
-        Regional: CONSTANT_VNT'hyperspace'-region(I239_hyperspace)(I147'hyperspace')
+        Regional: CONSTANT_VNT'hyperspace'-region(I240_hyperspace)(I148'hyperspace')
          == region
-        Regional: CONSTANT_VNT'hyperspace'-region(I239_hyperspace)(I147'hyperspace')
+        Regional: CONSTANT_VNT'hyperspace'-region(I240_hyperspace)(I148'hyperspace')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I518_elr)(I408'elr')
+        Regional: CONSTANT_VNT'elr'-region(I519_elr)(I409'elr')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I518_elr)(I408'elr')
+        Regional: CONSTANT_VNT'elr'-region(I519_elr)(I409'elr')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I518_elr)(I408'elr')
+        Regional: CONSTANT_VNT'elr'-region(I519_elr)(I409'elr')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I518_elr)(I408'elr')
+        Regional: CONSTANT_VNT'elr'-region(I519_elr)(I409'elr')
          == region
 
 
@@ -249,9 +249,9 @@ Phase XII ... Code generation
                                                             Fail: room (~) real number = nothing
                                             Fail: nothing (~) real number = nothing
                                             Fail: room (~) real number = nothing
-        Regional: CONSTANT_VNT'hyperspace'-region(I239_hyperspace)(I147'hyperspace')
+        Regional: CONSTANT_VNT'hyperspace'-region(I240_hyperspace)(I148'hyperspace')
          == region
-        Regional: CONSTANT_VNT'hyperspace'-region(I239_hyperspace)(I147'hyperspace')
+        Regional: CONSTANT_VNT'hyperspace'-region(I240_hyperspace)(I148'hyperspace')
          == region
                                                             Fail: list of numbers (~) number = nothing
                                             Fail: nothing (~) real number = nothing
@@ -274,9 +274,9 @@ Phase XII ... Code generation
                                         Fail: scene (~) number = nothing
                                         Fail: scene (~) number = nothing
                                 0 = objects valued property. 1 = object
-            Regional: CONSTANT_VNT'elr'-region(I518_elr)(I408'elr')
+            Regional: CONSTANT_VNT'elr'-region(I519_elr)(I409'elr')
              == region
-            Regional: CONSTANT_VNT'elr'-region(I518_elr)(I408'elr')
+            Regional: CONSTANT_VNT'elr'-region(I519_elr)(I409'elr')
              == region
 
 
@@ -310,10 +310,32 @@ Phase XII ... Code generation
 
 ==== Phase XII.21 ... Compiling routines from predicate calculus ====
 
-Providing for a total heap of 65536, given requirement of 37904
+Providing for a total heap of 65536, given requirement of 38928
 
 
 -----------------------------------------------------
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
+Total of 264 files written as streams.
+CPU time: 935 centiseconds
+
+
+That concludes the debugging log from this run of Inform.
+Its contents were as follows, and can be changed by placing
+text like 'Include property creations in the debugging log.'
+or 'Omit everything from the debugging log.' in the source.
+
+Included:
+  debugging log contents  debugging log inclusions
+Omitted:
+  action creations   action pattern compilation  action pattern parsing  assemblies    assertions    case insensitive filehandling
+  conditions    constructed past participles  constructed plurals   description compilation   excerpt meanings   excerpt parsing 
+  expressions    extensions census   figure creations   grammar    grammar construction   headings  
+  implications    inferences    kind changes   kind checking   kind creations   lexical output 
+  local variables   matching    meaning list allocation  memory allocation   noun resolution   object compilation 
+  object creations   object tree   phrase comparisons   phrase compilation   phrase creations   phrase registration 
+  phrase usage   predicate calculus   predicate calculus workings  pronouns    property creations   property provision 
+  property translations   relation definitions   rule attachments   rulebook compilation   spatial map   spatial map workings
+  specification permissions   specification usage   specificities    table construction   template reading   text substitutions 
+  time periods   variable creations   verifications    vocabulary  

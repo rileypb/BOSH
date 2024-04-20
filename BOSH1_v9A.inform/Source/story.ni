@@ -628,6 +628,17 @@ Greeting response for Klimp:
 
 klimp is familiar. [The help text of klimp is "Chief Huffton Klimp, the erstwhile head of [our] poor little bureau.".]
 
+for-a-screwdriver-klimp is a questioning quip.
+	It is privately-named. The printed name is "for a screwdriver". [The true-name is "for-a-screwdriver".] Understand "for/a/screwdriver" as for-a-screwdriver-klimp.
+	It mentions the red screwdriver.
+	The comment is "[We] [ask], 'Would you happen to have a --'".
+	The reply is "'screwdriver you could borrow? No, no, someone stole my screwdriver collection. Probably the Illuminati.'".
+	It quip-supplies Klimp;
+	
+An availability rule for for-a-screwdriver-klimp:
+	if the player knows vent-screws and the red screwdriver is not handled:
+		always available;
+
 to borrow the skull is a questioning quip. 
 	Understand "juvenile/sasquatch" as to borrow the skull.
 	It mentions the juvenile sasquatch skull.
@@ -1604,6 +1615,17 @@ to wait for the report is an informative quip.
 	It is ubiquitous.
 	It quip-supplies Moira Zin.
 	It rules out about the hyperdimensional portal.
+
+for-a-screwdriver-moira is a questioning quip.
+	It is privately-named. The printed name is "for a screwdriver". [The true-name is "for-a-screwdriver".] Understand "for/a/screwdriver" as for-a-screwdriver-moira.
+	It mentions the red screwdriver.
+	The comment is "[We] [ask], 'Would you happen to have a screwdriver I could borrow?'".
+	The reply is "'Sorry, I don't have a screwdriver. You might try the Chief.'".
+	It quip-supplies Moira;
+	
+An availability rule for for-a-screwdriver-moira:
+	if the player knows vent-screws and the red screwdriver is not handled:
+		always available;
 	
 Section 7 - Moira Interjections
 
