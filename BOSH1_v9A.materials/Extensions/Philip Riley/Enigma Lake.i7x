@@ -109,9 +109,12 @@ An astral resonator type is a kind of thing.
 
 The makeshift astral resonator is an astral resonator type. It is pluggable.
 The description is "A makeshift astral resonator, cobbled together from a tuning fork, a spotlight, and the astral lenses[if the makeshift astral resonator is powered]. A beam of light shoots from the lens[end if][if the content of the tripod is the makeshift astral resonator]. It is mounted on a tripod[end if]."
+It is privately-named. The printed name is "[if Astral Secrets is read]makeshift astral resonator[otherwise]strange wooden object[end if]".
+Understand "makeshift/astral/resonator" as the makeshift astral resonator when Astral Secrets is read.
+Understand "strange/wooden/object" as the makeshift astral resonator.
 
 Instead of examining the makeshift astral resonator:
-	say "The makeshift astral resonator is a cobbled-together device, made from a tuning fork, a spotlight, and the astral lenses. A short cord with a plug dangles from the end opposite the lenses";
+	say "The [makeshift astral resonator] is a cobbled-together device, made from a tuning fork, a spotlight, and the astral lenses. A short cord with a plug dangles from the end opposite the lenses";
 	if mounted-makeshift-resonator:
 		say ". It sits on a tripod, and a beam of light shoots from the lens, striking the obelisk in the park. The crystal is glowing [crystal glow].";
 	otherwise if the makeshift astral resonator is powered:
@@ -1071,6 +1074,7 @@ After printing the locale description of the steeple:
 
 After printing the locale description of the steeple when mounted-makeshift-resonator and the makeshift astral resonator is powered:
 	say "The makeshift astral resonator emits a bright beam of light directly at the obelisk in the park.[paragraph break]";
+	say "The [makeshift astral resonator] emits a bright beam of light directly at the obelisk in the park.[paragraph break]";
 
 After printing the locale description of the First Utilitarian Church of Enigma Lake:
 	if the extension cord is plugged in:
@@ -1293,8 +1297,9 @@ Carry out mounting the makeshift astral resonator on the tripod:
 	now the makeshift astral resonator is in the tripod;
 
 Report mounting the makeshift astral resonator on the tripod:
-	say "[We] [manage] to make the makeshift astral resonator fit in the tripod's mount[if the extension cord accepts the makeshift astral resonator], dropping the extension cord as they do so[end if]";
-	now the extension cord is in the steeple; 
+	say "[We] [manage] to make the [makeshift astral resonator] fit in the tripod's mount[if the extension cord accepts the makeshift astral resonator], dropping the extension cord as they do so[end if]";
+	if the extension cord accepts the makeshift astral resonator:
+		now the extension cord is in the steeple; 
 	if the makeshift astral resonator is powered:
 		say ". The beam of light focuses on the obelisk in the park, striking the crystal adornment at its apex. The crystal is glowing [crystal glow].";
 	otherwise:
@@ -1302,7 +1307,7 @@ Report mounting the makeshift astral resonator on the tripod:
 
 Check taking the extension cord:
 	if the extension cord accepts the makeshift astral resonator and the content of the tripod is the makeshift astral resonator:
-		say "The extension cord is plugged into the makeshift astral resonator. [We] can't take it without unplugging it first." instead;
+		say "The extension cord is plugged into the [makeshift astral resonator]. [We] can't take it without unplugging it first." instead;
 
 Instead of inserting something into the tripod:
 	try mounting the noun on the tripod;
@@ -1329,7 +1334,7 @@ Setting action variables for unplugging:
 	now x is whether or not the makeshift astral resonator is powered;
 
 After plugging the makeshift astral resonator into something:
-	say "Faraji plugs the makeshift astral resonator into [the second noun]";
+	say "Faraji plugs the [makeshift astral resonator] into [the second noun]";
 	if the makeshift astral resonator is powered:
 		say ". It flickers to life, emitting a bright beam of light";
 		if the content of the tripod is the makeshift astral resonator:
@@ -1340,7 +1345,7 @@ After plugging the makeshift astral resonator into something:
 		say ".";
 
 After unplugging the makeshift astral resonator when x is true:
-	say "Faraji unplugs the makeshift astral resonator from [the socket unplugged from]. It flickers and goes dark.";
+	say "Faraji unplugs the [makeshift astral resonator] from [the socket unplugged from]. It flickers and goes dark.";
 
 After plugging the extension cord into the electrical outlet:
 	say "Faraji plugs the extension cord into [the electrical outlet]";
@@ -2821,7 +2826,7 @@ To make the makeshift astral resonator:
 		now the makeshift astral resonator is in the location;
 	now the wooden frame is nowhere;
 	say line break;
-	say "Faraji uses the leather straps to secure the contents of the frame. Suddently, the frame and the objects within it suddenly glow with a bright light. Faraji is momentarily blinded. When they can see again, the frame and its contents have fused into what seems to be a makeshift astral resonator.";
+	say "Faraji uses the leather straps to secure the contents of the frame. Suddenly, the frame and the objects within it glow with a bright light. Faraji is momentarily blinded. When they can see again, the frame and its contents have fused into what seems to be a [makeshift astral resonator].";
 
 Check inserting something into the wooden frame:
 	if the noun is not the astral lenses and the noun is not the spotlight and the noun is not the tuning fork:
