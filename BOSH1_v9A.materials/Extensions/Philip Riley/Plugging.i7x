@@ -84,7 +84,7 @@ Book - Default movement rules
 
 Slack rules is a rulebook. 
 
-Slack when the player encloses something pluggable (called the plug):
+[ Slack when the player encloses something pluggable (called the plug):
 	if something (called the socket) accepts the plug and the player does not enclose the socket:
 		say "[We] can't leave while carrying [the plug], which is plugged into [the socket].";
 		rule fails;
@@ -92,7 +92,7 @@ Slack when the player encloses something pluggable (called the plug):
 Slack when the player encloses something plug-into-able (called the socket):
 	if something (called the plug) is plugged into the socket and the player does not enclose the plug:
 		say "[We] can't leave while carrying [the socket], which has [the plug] plugged into it.";
-		rule fails;
+		rule fails; ]
 
 Check going:
 	if the player encloses something pluggable or the player encloses something plug-into-able:
@@ -115,9 +115,25 @@ Check going when the player encloses something plug-into-able (called the socket
 Book - Appearance in inventory
 
 Description notes for a thing (this is the plug-socket description rule):
-	if something (called the socket) accepts the item described:
-		add "plugged into [the socket]" to descriptive notes;
-	if something (called the plug) is plugged into the item described:
-		add "with [the plug] plugged into it" to descriptive notes.
+	if the item described accepts the item described:
+		add "plugged into itself" to descriptive notes;
+	otherwise:
+		if something (called the socket) accepts the item described:
+			add "plugged into [the socket]" to descriptive notes;
+		if something (called the plug) is plugged into the item described:
+			add "with [the plug] plugged into it" to descriptive notes.
+
+Book - Examining
+
+Carry out examining (this is the describe plug connections rule):
+	let text printed be false;
+	if the noun is plugged into something (called S):
+		say "[The noun] is plugged into [the S]. [run paragraph on]";
+		now text printed is true;
+	if something (called P) is plugged into the noun:
+		say "[The P] is plugged into [the noun]. [run paragraph on]";
+		now text printed is true;
+	if text printed is true:
+		say line break.
 
 Plugging ends here.

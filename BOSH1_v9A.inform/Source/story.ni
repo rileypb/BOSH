@@ -145,7 +145,7 @@ When play begins:
 	now the story viewpoint is third person singular;
 	Repeat with S running through subjects:  
 		move S to the Room of Subjects;
-	if DEBUG is false:
+	if SKIP_PROLOGUE is false:
 		print faraji bio;
 	[ say "[bold type]Department of Homeland Security, Washington, DC[roman type][line break]";
 	say "Open on a drab office with decor dating to the mid-eighties. The DHS assistant to the associate sub-director looks longingly at the office clock nearing five, then leans across the desk and impatiently states his demands:[paragraph break]";
@@ -171,7 +171,7 @@ When play begins:
 		move moira to the Room of Stuff;
 		now the current play mode is _normal; 
 		set possessives;
-		if DEBUG is false:
+		if SKIP_PROLOGUE is false:
 			say Intro Text;
 			continue;
 		[ follow the current graphics drawing rule; ]
@@ -1885,7 +1885,7 @@ Klimp interjection	used
 Book 19 - Verbs
  
 To admire is a verb. To shake is a verb. To smile is a verb. To sigh is a verb. To peer is a verb. To turn is a verb. To observe is a verb. To gaze is a verb. To trudge is a verb. To walk is a verb. To step is a verb. To enter is a verb. To exit is a verb. To pause is a verb. To survey is a verb. To hand is a verb. To try is a verb. To see is a verb. To squeal is a verb. To tap is a verb. To curse is a verb. To rap is a verb. To explain is a verb. To gasp is a verb. To return is a verb. To ask is a verb. To think is a verb. To scrunch is a verb. To grimace is a verb. To mutter is a verb. To leave is a verb. To stand is a verb. To mount is a verb. To stammer is a verb. To polish is a verb. To interrupt is a verb. To raise is a verb. To chuckle is a verb. To lean is a verb. To consider is a verb. To nod is a verb. To extricate is a verb. To toss is a verb. To pick is a verb. To flatten is a verb. To remember is a verb. To trip is a verb. To scratch is a verb. To navigate is a verb. To stare is a verb. To emerge is a verb. To breathe is a verb. To attempt is a verb. To strain is a verb. To spin is a verb. To pick is a verb. To tuck is a verb. To consider is a verb. To move is a verb. To save is a verb.
-To dig is a verb. To notice is a verb. To come is a verb. To unscrew is a verb. To pocket is a verb. To run is a verb. To examine is a verb.
+To dig is a verb. To notice is a verb. To come is a verb. To unscrew is a verb. To pocket is a verb. To run is a verb. To examine is a verb. To climb is a verb.
 
 Book 20 - Images 
 
@@ -2167,6 +2167,9 @@ Book 21 - Not For Release
 
 DEBUG is false.
 
+SKIP_PROLOGUE is a truth state that varies.
+SKIP_PROLOGUE is true;
+
 AUDIT is a truth state that varies.
 AUDIT is false.
 
@@ -2366,7 +2369,6 @@ Carry out jumping to endgame:
 	now the trapdoor is revealed;
 	now the astral lenses are nowhere;
 	now player is in the hidden cave;
-	
 	
 Volume 2 - Test command tweak for clean transcripts
 

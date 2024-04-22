@@ -93,7 +93,7 @@ For printing the locale description (this is the new you-can-also-see rule):
 						concealed items, listing marked items only, prefacing with is/are;
 				otherwise say "[a list of marked for listing things including contents]";
 				[if the domain is the location, say " here" (F);]
-				say ".[line break]";
+				say ".[paragraph break]";
 				unfilter list recursion;
 			end the listing nondescript items activity with the domain;
 	continue the activity.

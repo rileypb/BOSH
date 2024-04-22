@@ -10,6 +10,7 @@ Include Simple Conversation by Philip Riley.
 Include New Light by Philip Riley.
 Include Books by Philip Riley.
 Include Container Types by Philip Riley.
+Include Extension Cord by Philip Riley.
 
 Volume 1 - Some Stuff
 
@@ -949,10 +950,7 @@ After reading a command:
 
 Book 17 - Extension Cord
 
-The electrical outlet is scenery in First Utilitarian Church of Enigma Lake. "A standard electrical outlet, set into the wall[if the extension cord is plugged into the electrical outlet and the player encloses the extension cord]. The extension cord is plugged into it[otherwise if the extension cord is plugged into the electrical outlet]. An extension cord is plugged into it[end if]." 
-Understand "wall/power/electric/point/mains/GPO" as the electrical outlet.
-It is plug-into-able.
-The snarky remark of the electrical outlet is "This mission is making me wish I had a fork."
+The electrical outlet is in First Utilitarian Church of Enigma Lake.
 
 Does the player mean plugging something into the electrical outlet: 
 	it is very likely.
@@ -963,10 +961,6 @@ Rule for supplying a missing second noun while plugging something into:
 	otherwise:
 		rule fails;
 
-The extension cord is a thing. The description is "A long, heavy-duty extension cord[if the extension cord is plugged into the electrical outlet and the location is First Utilitarian Church of Enigma Lake], plugged into the wall outlet[otherwise if the extension cord is plugged into the electrical outlet and the location is the steeple]. It trails down through the trapdoor[otherwise if the extension cord is plugged into the electrical outlet and the location is the vestry]. It trails through the door into the church[end if][if the extension cord is plugged into the extension cord]. It is plugged into itself[end if]." 
-The snarky remark of the extension cord is "You can never have too many extension cords. Unless you have too many extension cords. Then you have too many extension cords."
-
-It is pluggable.
 
 Chapter - Power
 
@@ -990,169 +984,6 @@ After switching off the circuit breaker when the makeshift astral resonator is i
 	otherwise:
 		continue the action;
 
-Chapter 1 - Special movement rules
-
-Slack when the location is the First Utilitarian Church of Enigma Lake and the extension cord is plugged into the electrical outlet and the player encloses the extension cord (this is the church slack rule):
-	if the noun is west:
-		say "[We] [can't] leave the church carrying the extension cord when it's plugged in." instead;
-	otherwise if the noun is up:
-		say "[We] [climb] the ladder and [push] through the trap door to the steeple, dragging the extension cord behind [us].";
-		rule succeeds;
-	otherwise if the noun is east:
-		say "[We] [enter] the vestry, dragging the extension cord behind [us].";
-		rule succeeds;
-
-To climb is a verb.
-
-
-Slack when the location is the vestry and the extension cord is plugged into the electrical outlet and the player encloses the extension cord (this is the vestry slack rule):
-	repeat with plug running through pluggable things in the location:
-		if a thing (called the socket) accepts the plug:
-			if the player encloses the socket:
-				say "[We] can't leave while [the plug], which we aren't carrying, is plugged into [the socket], which we are carrying.";
-				rule fails;
-	repeat with plug running through plug-into-able things in the location:
-		if a thing (called the plug) is plugged into the socket:
-			if the player encloses the plug:
-				say "[We] can't leave while [the plug], which we are carrying, is plugged into [the socket], which we aren't carrying.";
-				rule fails;
-	if the noun is west:
-		say "[We] [enter] the church, dragging the extension cord behind [us].";
-		rule succeeds;
-
-Slack when the location is the steeple and the extension cord is plugged into the electrical outlet and the player encloses the extension cord (this is the steeple slack rule):
-	if the noun is down:
-		say "[We] [climb] down the ladder to the church, the extension dangling down before [us].";
-		rule succeeds;
-
-The church slack rule is listed first in the slack rules.
-The vestry slack rule is listed before the church slack rule in the slack rules.
-The steeple slack rule is listed before the vestry slack rule in the slack rules.
-
-Description notes for the extension cord:
-	if something (called the socket) accepts the item described:
-		if the socket is the electrical outlet:
-			if the location is the vestry:
-				add "trailing out of the room" to descriptive notes;
-			otherwise if the location is the steeple:
-				add "trailing down through the trapdoor" to descriptive notes;
-			otherwise:
-				add "plugged into [the socket]" to descriptive notes;
-		otherwise:
-			add "plugged into [the socket]" to descriptive notes;
-	if something (called the plug) is plugged into the item described:
-		add "with [the plug] plugged into it" to descriptive notes.
-
-The plug-socket description rule does nothing when the item described is the extension cord.
-
-Rule for writing a paragraph about the extension cord when the extension cord is plugged in:
-	if the location is First Utilitarian Church of Enigma Lake and the player encloses the extension cord:
-		say "The extension cord is plugged into the wall outlet.";
-	otherwise if the location is First Utilitarian Church of Enigma Lake:
-		if something (called the plug) is plugged into the extension cord:
-			say "The extension cord is plugged into the wall outlet, and [the plug] is plugged into it.";
-		otherwise:
-			say "An extension cord lies on the floor, plugged into the wall outlet.";
-	otherwise if the location is the steeple:
-		say "The end of an extension cord lies here, from where it trails down through the trapdoor";
-		if something (called the plug) is plugged into the extension cord:
-			say ". [The plug] is plugged into it";
-		say ".";
-	otherwise if the location is the vestry:
-		say "The end of an extension cord lies here, from where it trails through the door into the church";
-		if something (called the plug) is plugged into the extension cord:
-			say ". [The plug] is plugged into it";
-		say ".";
-
-After printing the locale description of the vestry:
-	if the extension cord is plugged in and the player encloses the extension cord:
-		say "The extension cord runs from [our] hand, through the door, and into the church.";
-
-After printing the locale description of the steeple:
-	if the extension cord is plugged in and the player encloses the extension cord:
-		say "The extension cord runs from [our] hand, through the trapdoor, and into the church.";
-
-After printing the locale description of the steeple when mounted-makeshift-resonator and the makeshift astral resonator is powered:
-	say "The makeshift astral resonator emits a bright beam of light directly at the obelisk in the park.[paragraph break]";
-	say "The [makeshift astral resonator] emits a bright beam of light directly at the obelisk in the park.[paragraph break]";
-
-After printing the locale description of the First Utilitarian Church of Enigma Lake:
-	if the extension cord is plugged in:
-		if the player encloses the extension cord:
-			say "The extension cord is plugged into the wall outlet.";
-		otherwise if the extension cord is in the vestry:
-			say "An extension cord is plugged into the wall outlet, from where it trails east through the door into the vestry.";
-		otherwise if the extension cord is in the steeple:
-			say "An extension cord is plugged into the wall outlet, from where it trails up through the trapdoor.";
-	
-The plug-end-of-the-extension-cord is a thing. It is undescribed. It is privately-named. The printed name is "extension cord". Understand "extension/cord/plug" as the plug-end-of-the-extension-cord. The description is "A long, heavy-duty extension cord[if the extension cord is plugged in and the location is First Utilitarian Church of Enigma Lake], plugged into the wall outlet[end if]." 
-It is pluggable. It is unsnarkable.
-
-The extension cord is in the bookstore basement.
-The extension cord is pluggable and plug-into-able.
-
-
-After plugging the extension cord into the electrical outlet:
-	now the plug-end-of-the-extension-cord is in the location of the second noun; 
-	continue the action;
-
-Instead of plugging something into the plug-end-of-the-extension-cord:
-	if the extension cord is touchable:
-		try plugging the noun into the extension cord;
-	otherwise:
-	 	say "The socket end of the extension cord is not here."
-
-Section - Unplugging the extension cord
-
-Check unplugging the extension cord when the location is not the First Utilitarian Church of Enigma Lake and the extension cord is plugged into the electrical outlet:
-	say "[We] can't reach the outlet from where [we] [are]." instead;
-
-[ Unplugging is an action applying to one thing. Understand "unplug [something]" as unplugging. ]
-
-To unplug is a verb. To roll is a verb. To reel is a verb.
-
-[Check unplugging the extension cord when the player encloses the extension cord and the extension cord is not plugged into something:
-	say "The extension cord is not plugged in." instead;
-]
-
-Check unplugging the plug-end-of-the-extension-cord when something (called the plug) is plugged into the extension cord and the plug is not in the location:
-	say "Something in another room is plugged into the extension cord, preventing [us] from reeling it in." instead;
-
-Carry out unplugging the plug-end-of-the-extension-cord:
-	now the extension cord is not plugged into anything;
-	if the player does not enclose the extension cord:
-		now the player carries the extension cord;
-
-Report unplugging the plug-end-of-the-extension-cord:
-	if the player enclosed the extension cord:
-		say "[We] [unplug] the extension cord.";
-	otherwise:
-		say "[We] [unplug] the extension cord, [reel] in the far end, and [roll] it up neatly.";
-	stop the action;
-
-Instead of taking the plug-end-of-the-extension-cord when the extension cord is not in the location:
-	if something is plugged into the extension cord:
-		say "Something in another room is plugged into the extension cord, preventing [us] from reeling it in.";
-	otherwise:
-		now the player carries the extension cord;
-		say "[We] [take] the extension cord and [reel] in the far end, leaving it plugged into the outlet.";
-
-Instead of taking the plug-end-of-the-extension-cord when the player encloses the extension cord:
-	now the extension cord is not plugged into anything;
-	say "[We] [unplug] the extension cord.";
-
-[
-Carry out unplugging the extension cord:
-	now the extension cord is unplugged;
-	if the player encloses the extension cord:
-		say "[We] unplug the extension cord.";
-	otherwise:
-		say "[We] [unplug] the extension cord, [reel] in the far end, and [roll] it up neatly.";
-		now the player carries the extension cord;
-		stop the action;
-
-After unplugging the extension cord:
-	now the plug-end-of-the-extension-cord is nowhere; ]
 
 
 Book 17 - Vestry
@@ -2081,6 +1912,8 @@ The snarky remark of the Bookstore Basement is "Why did I come down here? What d
 
 The x-coordinate of the Bookstore Basement is -2. The y-coordinate of the Bookstore Basement is -1.
 
+The extension cord is in the Bookstore Basement. 
+
 A bricked-up-hole is a secret door. It is north of the Bookstore Basement and south of a sewer tunnel 1. It is privately-named. The printed name is "bricked-up hole in the wall". Understand "bricked-up", "bricked/up", "hole in/-- the/-- wall/--" as bricked-up-hole. It is open and not openable. "A ragged hole in the north wall, leading into a dark space." 
 It is unsnarkable.
 
@@ -2853,8 +2686,6 @@ Carry out power querying:
 	otherwise:
 		say "No.";
 
-test cord with "gonear church/take cord/plug it into outlet/e/drop cord/w/unplug cord/plug cord into outlet/e/purloin lamp/plug lamp into cord/w/e/drop lamp/w/take lamp/drop cord/w/drop lamp
-/w/unplug cord/take cord/".
 test steeple with "gonear church/take cord/plug it into outlet/u/purloin makeshift astral resonator/take telescope/put resonator in tripod/plug resonator into cord/look".
 
 test hathgar with "gonear kitchen/s/gonear lake street by the park/e".

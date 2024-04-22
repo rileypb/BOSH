@@ -248,6 +248,11 @@ Instead of promising when the current interlocutor is not nothing:
 	
 
 
+Book 6 - Puts
+
+To puts (T - a text):
+	if the action is not silent:
+		say "[T]";
 		
 
 
