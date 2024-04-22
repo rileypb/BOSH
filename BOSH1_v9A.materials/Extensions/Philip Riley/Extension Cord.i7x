@@ -247,6 +247,14 @@ After taking something when the extension cord is plugged into the noun and the 
 	now the player carries the plug-end;
 	maybe condense the extension cord;
 	continue the action;
+	
+Check closing something when the plug-end is enclosed by the noun:
+	if the socket-end is not enclosed by the noun:
+		say "You can't close that when the extension cord is half in it." instead;
+
+Check closing something when the socket-end is enclosed by the noun:
+	if the plug-end is not enclosed by the noun:
+		say "You can't close that when the extension cord is half in it." instead;
 
 Book - Working with the plug-end
 
@@ -274,6 +282,14 @@ After mounting something on something when the noun accepts the plug-end:
 	now the plug-end is in second noun;
 	maybe condense the extension cord;
 	continue the action;
+
+After dropping the plug-end:
+	if something (called the socket) accepts the plug-end:
+		if the socket is not the socket-end:
+			now the socket is in the location;
+			maybe condense the extension cord;
+	continue the action;
+
 
 Instead of taking the plug-end:
 	if the plug-end is plugged into something immobile (called the socket):
@@ -450,6 +466,11 @@ After dropping something when the noun is plugged into the socket-end and the no
 	maybe condense the extension cord;
 	continue the action;
 
+After taking something when the socket-end accepts the noun:
+	now the player carries the socket-end;
+	maybe condense the extension cord;
+	continue the action;
+
 After inserting something into something when the noun is plugged into the socket-end:
 	now the socket-end is in the second noun;	
 	maybe condense the extension cord;
@@ -458,6 +479,13 @@ After inserting something into something when the noun is plugged into the socke
 After mounting something on something when the noun is plugged into the socket-end:
 	now the socket-end is in the second noun;
 	maybe condense the extension cord;
+	continue the action;
+
+After dropping the socket-end:
+	if something (called the plug) is plugged into the socket-end:
+		if the plug is not the plug-end:
+			now the plug is in the location;
+			maybe condense the extension cord;
 	continue the action;
 
 Instead of taking the socket-end:

@@ -11,6 +11,7 @@ Include New Light by Philip Riley.
 Include Books by Philip Riley.
 Include Container Types by Philip Riley.
 Include Extension Cord by Philip Riley.
+Include State Update by Philip Riley.
 
 Volume 1 - Some Stuff
 
@@ -116,6 +117,8 @@ Understand "strange/wooden/object" as the makeshift astral resonator.
 
 Instead of examining the makeshift astral resonator:
 	say "The [makeshift astral resonator] is a cobbled-together device, made from a tuning fork, a spotlight, and the astral lenses. A short cord with a plug dangles from the end opposite the lenses";
+	if the makeshift astral resonator is plugged into the electrical outlet:
+		say ", plugged into the electrical outlet";
 	if mounted-makeshift-resonator:
 		say ". It sits on a tripod, and a beam of light shoots from the lens, striking the obelisk in the park. The crystal is glowing [crystal glow].";
 	otherwise if the makeshift astral resonator is powered:
@@ -245,9 +248,15 @@ To beam description, in the park:
 			add "the steeple" to sources;
 		let source string be the substituted form of "[sources]";
 		if in the park:
-			say ".[paragraph break]Bright beams of light shoot from [source string], striking the obelisk. The crystal is glowing [crystal glow]";
+			if bc is 1:
+				say ".[paragraph break]A bright beam of light shoots from [source string], striking the obelisk. The crystal is glowing [crystal glow]";
+			otherwise:
+				say ".[paragraph break]Bright beams of light shoot from [source string], striking the obelisk. The crystal is glowing [crystal glow]";
 		otherwise:
-			say "Bright beams of light shoot from [source string], striking the obelisk in the park. The crystal is glowing [crystal glow].";
+			if bc is 1:
+				say "A bright beam of light shoots from [source string], striking the obelisk in the park. The crystal is glowing [crystal glow]";
+			otherwise:
+				say "Bright beams of light shoot from [source string], striking the obelisk in the park. The crystal is glowing [crystal glow].";
 
 After printing the locale description when beam count > 0 and the location is outdoors and the location is in ELR and the location is not Enigma Park:
 	beam description;
@@ -960,7 +969,21 @@ Rule for supplying a missing second noun while plugging something into:
 		now the second noun is the electrical outlet;
 	otherwise:
 		rule fails;
+		
+After plugging the makeshift astral resonator into the electrical outlet:
+	now the makeshift astral resonator is in the location;
+	continue the action;
+		
+After plugging the table lamp into the electrical outlet:
+	now the table lamp is in the location;
+	if the table lamp is powered and the table lamp is switched on:
+		now the table lamp is lit;
+	continue the action;
 
+Check taking the makeshift astral resonator when the makeshift astral resonator is plugged into the electrical outlet:
+	say "(first unplugging [the makeshift astral resonator])[command clarification break]";
+	try unplugging the makeshift astral resonator;
+	silently try taking the makeshift astral resonator instead;
 
 Chapter - Power
 
@@ -971,6 +994,10 @@ Definition: a thing is powered:
 		if it is the socket:
 			no;
 		decide on whether or not the socket is powered;
+	otherwise if it is the socket-end:
+		decide on whether or not the plug-end is powered;
+	no;
+
 
 After switching on the circuit breaker when the makeshift astral resonator is in the vestry or the player encloses the makeshift astral resonator:
 	if the makeshift astral resonator is powered:
@@ -985,10 +1012,9 @@ After switching off the circuit breaker when the makeshift astral resonator is i
 		continue the action;
 
 
-
 Book 17 - Vestry
 
-The vestry is a leavable room. It is east of First Utilitarian Church. It has egress west. It is in ELR. It is indoors. "It's a small room, with a door leading to the church proper to the west. A lovely tapestry hangs on the wall[if the tapestry is pushed aside]. It is pushed aside, revealing a circuit breaker box[end if]."
+The vestry is a leavable room. It is east of First Utilitarian Church. It has egress west. It is in ELR. It is indoors. "It's a small room, with a door leading to the church proper to the west. A lovely tapestry hangs on the wall[if the tapestry is pushed aside]. It is pushed aside, revealing a circuit breaker[end if]."
 The snarky remark of the vestry is "Seen one vestry, seen [']em all."
 The x-coordinate of the vestry is 3. The y-coordinate of the vestry is 1.
 
@@ -996,7 +1022,7 @@ The tapestry is scenery in the vestry. "An intricate tapestry, depicting a scene
 The snarky remark of the tapestry is "I would prefer a velvet Elvis."
 
 Instead of pushing the tapestry when the tapestry is not pushed aside:
-	say "[We] [push] the tapestry aside, revealing a circuit breaker box mounted on the wall.";
+	say "[We] [push] the tapestry aside, revealing a circuit breaker mounted on the wall.";
 	now the tapestry is pushed aside;
 	now the circuit breaker is in the vestry;
 
@@ -1008,6 +1034,13 @@ Instead of looking behind the tapestry:
 
 The circuit breaker is a scenery device. "A circuit breaker box is mounted on the wall." Understand "switch", "box", "safety switch", "switchgear", "disconnect switch", "electrical", "electricity", "fuse switch", "overload switch" and "trip switch" as the circuit breaker. The circuit breaker is switched off.
 The snarky remark of the circuit breaker is "And the Lord said, 'Let there be light.' And there was light. And then the circuit breaker tripped." 
+
+Book 17.5 - The church basement
+
+The church basement is below the First Utilitarian Church of Enigma Lake. It is in ELR. It is indoors. It is dark. "The basement is dark and musty, without any light fixtures." 
+
+The ladder is in the church basement. "A ladder rests against the wall." The description is "A wooden ladder, about 6 feet long. It looks sturdy and well-maintained."
+The snarky remark of the ladder is "It's not a stairway to heaven, but it's close."
 
 Book 18 - Steeple
 
@@ -1177,6 +1210,7 @@ After plugging the makeshift astral resonator into something:
 
 After unplugging the makeshift astral resonator when x is true:
 	say "Faraji unplugs the [makeshift astral resonator] from [the socket unplugged from]. It flickers and goes dark.";
+	now the makeshift astral resonator is unlit;
 
 After plugging the extension cord into the electrical outlet:
 	say "Faraji plugs the extension cord into [the electrical outlet]";
@@ -1186,6 +1220,10 @@ After plugging the extension cord into the electrical outlet:
 			say " that focuses on the obelisk in the park, striking the crystal adornment at its apex. The crystal is glowing [crystal glow].";
 		otherwise:
 			say " that strikes a wall.";
+	otherwise:
+		say ".";
+	if the table lamp is powered and the table lamp is switched on:
+		say ". [The table lamp] flickers to life.";
 	otherwise:
 		say ".";
 
@@ -1824,9 +1862,6 @@ The snarky remark of the Fire Station 1 is "How can I be snarky about a fire sta
 
 The x-coordinate of the Fire Station 1 is -2. The y-coordinate of the Fire Station 1 is 0.
 
-The ladder is in the Fire Station 1. "A ladder rests against the wall." The description is "A wooden ladder, about 6 feet long. It looks sturdy and well-maintained."
-The snarky remark of the ladder is "Where's the hook?".
-
 The spotlight is in the Fire Station 1. The description is "A small spotlight, designed to be hand-held. On the side is the branding 'Spectre'. The light has a short cord ending in a standard North American 120V AC plug."
 The snarky remark of the spotlight is "It's awfully small for a spotlight. More like a specklight."
 
@@ -2150,6 +2185,28 @@ The description is "Once, town department stores like this were a constant of Am
 The snarky remark of Rolle's Department Store is "I guess the sale is over."
 
 The x-coordinate of Rolle's Department Store is 0. The y-coordinate of Rolle's Department Store is -2.
+
+The table lamp is a device in Rolle's Department Store. "A scuffed-up table lamp sits discarded in a corner." The description is "A table lamp, with a brass base and missing a shade. It's meant to plug into an outlet. It looks like it's seen better days[if the table lamp is lit]. It is lit[otherwise]. It is dark[end if]." 
+It is pluggable. 
+
+For device updating the table lamp:
+	if the table lamp is lit:
+		if the table lamp is not powered or the table lamp is not switched on:
+			now the table lamp is unlit;
+			add the table lamp to changed things;
+	otherwise:
+		if the table lamp is powered and the table lamp is switched on:
+			now the table lamp is lit;
+			say "FOO.";
+			add the table lamp to changed things;
+
+For state change reporting the table lamp:
+	if the table lamp is lit:
+		if the table lamp is visible:
+			puts "The table lamp is now lit.[line break]";
+	otherwise:
+		if the table lamp is visible:
+			puts "The table lamp is now unlit.[line break]";
 
 The gleaming floor is scenery in Rolle's Department Store. "Someone has polished it spotless, despite the looming destruction of the store. That's dedication."
 

@@ -147,6 +147,8 @@ This is the adjust adjacent light rule:
 		now adjacent light is lit;
 	otherwise:
 		now adjacent light is not lit;		
+	if location is church basement:
+		now adjacent light is not lit;
 	
 The adjust adjacent light rule is listed before the adjust light rule in the turn sequence rulebook.
 
