@@ -2366,6 +2366,15 @@ Carry out jumping to endgame:
 	now the trapdoor is revealed;
 	now the astral lenses are nowhere;
 	now player is in the hidden cave;
+
+
+frotzing is an action applying to one thing. Understand "frotz [something]" as frotzing.
+
+Carry out frotzing:
+	now the noun is lit.
+
+Report frotzing:
+	say "Now [the noun] is lit.";
 	
 Volume 2 - Test command tweak for clean transcripts
 

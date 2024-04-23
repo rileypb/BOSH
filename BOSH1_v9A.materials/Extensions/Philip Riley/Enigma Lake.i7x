@@ -644,10 +644,20 @@ Radio Station WGXC is a leavable room. It has egress northwest. It is southeast 
 The snarky remark of Radio Station WGXC is "I wonder if they have any old records. Or I guess they'd be new records now, wouldn't they?"
 The x-coordinate of Radio Station WGXC is 2. The y-coordinate of Radio Station WGXC is -2.
 
+The WGXC stairs are scenery in Radio Station WGXC. "The stairs run up to the roof."
+Understand "staircase/stair" as WGXC stairs.
+
+Instead climbing up the WGXC stairs:
+	try going up.
+
+broadcast-booth-facade is a building facade. It is in Radio Station WGXC. It is privately-named. The printed name is "broadcast booth". Understand "broadcast/booth" as broadcast-booth-facade. "The broadcast booth, visible through a window, is a small room with a microphone and a soundboard."
+	The broadcast-booth-facade fronts the broadcast booth.
+	It is enterable from Radio Station WGXC.
+
 Book 12 - Radio Station Roof
 
 The radio station roof is a leavable room. It is above Radio Station WGXC. It has egress down. It is in ELR. It is outdoors.
-"[We] can see the obelisk in the park clearly from here. The broadcast tower[if the power switch is switched on], humming loudly,[end if] rises many feet above [us]. A metal cabinet is attached to the foot of the tower[if the metal cabinet is locked], held shut by a padlock[otherwise if the metal cabinet is closed], closed[otherwise], hanging open. Inside it is a power switch[end if].[if mounted-shiny-resonator] [A shiny astral resonator] is mounted on a platform in the tower, and a beam of light shoots out of it, striking the obelisk in the park. The crystal is glowing [crystal glow].[end if]".
+"[We] can see the obelisk in the park clearly from here. The broadcast tower[if the power switch is switched on], humming loudly,[end if] rises many feet above [us]. The exit is down. A metal cabinet is attached to the foot of the tower[if the metal cabinet is locked], held shut by a padlock[otherwise if the metal cabinet is closed], closed[otherwise], hanging open. Inside it is a power switch[end if].[if mounted-shiny-resonator] [A shiny astral resonator] is mounted on a platform in the tower, and a beam of light shoots out of it, striking the obelisk in the park. The crystal is glowing [crystal glow].[end if]".
 The preposition is "on".
 The snarky remark of the radio station roof is "I'm not afraid of heights. I'm afraid of falling from heights."
 The x-coordinate of the radio station roof is 2. The y-coordinate of the radio station roof is -2.
@@ -829,6 +839,8 @@ The broadcast booth is south of Radio Station WGXC. It is in ELR. It is indoors.
 The snarky remark of the broadcast booth is "I wonder if I can get a request in."
 The x-coordinate of the broadcast booth is 2. The y-coordinate of the broadcast booth is -3.
 
+The broadcast booth is a leavable room. The egress is north.
+
 The booth window is scenery in the broadcast booth. "The window looks out into the rest of the station."
 It is unsnarkable.
 
@@ -870,7 +882,7 @@ The snarky remark of the church facade is "The Utilitarians are the ones who bel
 
 Book 16 - First Utilitarian Church of Enigma Lake
 
-The First Utilitarian Church of Enigma Lake is a leavable room. It has egress west. It is east of Lake Street by the Park. It is in ELR. It is indoors. "The interior is dimly lit by the stained glass windows, and the pews are arranged in neat rows facing the pulpit. A standard electrical outlet is set into the wall."
+The First Utilitarian Church of Enigma Lake is a leavable room. It has egress west. It is east of Lake Street by the Park. It is in ELR. It is indoors. "The interior is dimly lit by the stained glass windows, and the pews are arranged in neat rows facing the pulpit. A standard electrical outlet is set into the wall. To the east is the vestry. You can also take the stairs up to the steeple, or down to the basement. The exit is to the west."
 The snarky remark of the First Utilitarian Church of Enigma Lake is "Where's the gift shop?"
 The x-coordinate of the First Utilitarian Church of Enigma Lake is 2. The y-coordinate of the First Utilitarian Church of Enigma Lake is 1.
 
@@ -878,6 +890,8 @@ A rule for snarking First Utilitarian Church of Enigma Lake:
 	if the snarky remark of the First Utilitarian Church of Enigma Lake is not empty and the doll-fly is not in the location:
 		snark First Utilitarian Church of Enigma Lake;
 	rule succeeds;
+
+The church stairs are scenery in First Utilitarian Church of Enigma Lake. "The stairs lead up to the steeple and down to the basement."
 
 Some religious art is scenery in First Utilitarian Church of Enigma Lake. "The best piece in the bunch is a painting of a lizard person being smote by a bolt of lightning."
 The snarky remark of the religious art is "Do you think they sell prints in the gift shop?"
@@ -891,14 +905,16 @@ The snarky remark of the stained glass windows is "I like the underlying message
 The pews are scenery in First Utilitarian Church of Enigma Lake. "The pews are arranged in neat rows, facing the pulpit."
 The snarky remark of the pews is "When will I find a church with sumptuous, overstuffed chairs?"
 
-The pulpit is scenery in First Utilitarian Church of Enigma Lake. "The pulpit is a simple wooden structure with a lectern which holds [italic type]The Book of Utilitarianism[roman type]."
+The pulpit is scenery in First Utilitarian Church of Enigma Lake. "The pulpit is a simple wooden structure with a lectern which holds [italic type]The Holy Bible[roman type]."
 The snarky remark of the pulpit is "Hold on, I have to give a sermon. 'And the Lord was like, [']I will flood the earth['], and all the people were like, [']Oh no, we're all wet.[']'"
 
-The lectern is scenery in First Utilitarian Church of Enigma Lake. "The lectern is a simple wooden structure, with a slanted top that holds [italic type]The Book of Utilitarianism[roman type]." It is unsnarkable.
+The lectern is scenery in First Utilitarian Church of Enigma Lake. "The lectern is a simple wooden structure, with a slanted top that holds [italic type]The Holy Bible[roman type]." It is unsnarkable.
+
+The Holy Bible is scenery on the lectern. "The Bible's cover is worn and the pages are yellowed with age. There is a bookmark at Leviticus 11:29."
 
 To read is a verb.
 
-The Book of Utilitarianism is scenery on the lectern. It is proper-named. The printed name is "[italic type]The Book of Utilitarianism[roman type]". It is indescribable.
+The Book of Utilitarianism is fixed in place. It is proper-named. The printed name is "[italic type]The Book of Utilitarianism[roman type]". It is indescribable.
 
 The cursed word is text that varies. The cursed word is "".
 
@@ -1069,10 +1085,15 @@ The snarky remark of the circuit breaker is "And the Lord said, 'Let there be li
 
 Book 17.5 - The church basement
 
-The church basement is below the First Utilitarian Church of Enigma Lake. It is in ELR. It is indoors. It is dark. "The basement is dark and musty, without any light fixtures." 
+The church basement is below the First Utilitarian Church of Enigma Lake. It is in ELR. It is indoors. It is dark. "The basement is a shock to behold after the simple church above. It's a large, open space, with walls painted with scenes of humans and lizard people in battle, with aliens and platypuses looking on in horror. There is an ornate altar at the far end of the room. The exit is up."
 
-The ladder is in the church basement. "A ladder rests against the wall." The description is "A wooden ladder, about 6 feet long. It looks sturdy and well-maintained."
-The snarky remark of the ladder is "It's not a stairway to heaven, but it's close."
+The altar is a scenery supporter in the church basement. 
+
+The Book of Utilitarianism is on the altar. The description is "A can of lizard repellent. The label says 'For all your lizard-repelling needs.'" 
+
+The snarky remark of the can of lizard repellent is "I wonder if it works on those annoying insurance ads."
+
+The snarky remark of the church basement is "I wonder if they have a Sunday school down here."
 
 Book 18 - Steeple
 
@@ -1610,6 +1631,7 @@ The parlor facade is a building facade. It is in Horton Family House Kitchen. It
 The snarky remark of the parlor facade is "Dude. We already knew that."
 
 The narrow staircase is scenery in Horton Family House Kitchen. "A narrow staircase leads up."
+Understand "stairs/stair/rickety" as the narrow staircase.
 The snarky remark of the narrow staircase is "Winner, most rickety staircase, 1764."
 
 Instead of climbing up the narrow staircase:
@@ -1735,6 +1757,13 @@ The snarky remark of the rickety wardrobe is "Don't climb into it. There's proba
 
 The wooden frame is in the rickety wardrobe. It is a container. The description is "A piece of wood, about two feet long with three holes carved in it. It looks like the holes are meant to hold things. Leather straps appear to be meant to hold those things in the frame."
 The snarky remark of the wooden frame is "This couldn't possibly be useful. I should just leave it here."
+
+The stairs-second-floor is scenery in the Second Floor of the Horton House. "A staircase leads down."
+It is privately-named. The printed name is "staircase". Understand "staircase/stairs/stair" as stairs-second-floor.
+The stairs-second-floor is unsnarkable.
+
+Instead climbing up the stairs-second-floor:
+	try going down.
 
 Book 26 - Astral Tunnel
 
@@ -1894,11 +1923,17 @@ The snarky remark of the Fire Station 1 is "How can I be snarky about a fire sta
 
 The x-coordinate of the Fire Station 1 is -2. The y-coordinate of the Fire Station 1 is 0.
 
+The ladder is in Fire Station 1. "A ladder rests against the wall." The description is "A wooden ladder, about 6 feet long. It looks sturdy and well-maintained."
+The snarky remark of the ladder is "What? No hook?".   
+
 The spotlight is in the Fire Station 1. The description is "A small spotlight, designed to be hand-held. On the side is the branding 'Spectre'. The light has a short cord ending in a standard North American 120V AC plug."
 The snarky remark of the spotlight is "It's awfully small for a spotlight. More like a specklight."
 
 The blue button is scenery in the Fire Station 1. "A large blue button, mounted on the wall."
 The snarky remark of the blue button is "PUSH IT PUSH IT PUSH IT!"
+
+Does the player mean pushing the blue button: 
+	it is very likely.
 
 Instead of pushing the blue button when the garage door is closed:
 	say "Faraji pushes the blue button. A klaxon sounds, and the garage door opens.";
@@ -1916,7 +1951,7 @@ Instead of closing the garage door when the garage door is open:
 
 Book 29 - Reading Room
 
-The Reading Room is west of Main at Solvay. It is a leavable room. It is in ELR. It is indoors. The egress is east. The description is "The reading room is a small, cozy space, with a number of comfortable chairs and a few tables. A sales counter is at the back of the room. Bookshelves lead back into the depths of the store. A narrow staircase leads down."
+The Reading Room is west of Main at Solvay. It is a leavable room. It is in ELR. It is indoors. The egress is east. The description is "The reading room is a small, cozy space, with a number of comfortable chairs and a few tables. A sales counter is at the back of the room. Bookshelves lead back into the depths of the store. A narrow staircase leads down and the front door is east."
 
 The snarky remark of the Reading Room is "Perhaps there is a book here on how to answer a ringing phone."
 
@@ -2094,7 +2129,7 @@ Carry out striking the tuning fork:
 Book 33 - Henry's Hot Skillet
 
 Henry's Hot Skillet is a room. It is in ELR. It is indoors.
-The description is "This is the epitome of the homey small-town diner of times gone by, except for the lack of all furniture, cooking implements, food, decor, and so on. There is a staircase leading up. A pair of insulated wires hangs from the ceiling at one end of the counter[if the clean battery is hooked up]. The wires are attached to a battery resting on the counter[end if][if the clean battery is on the lunch counter and the clean battery is hooked up]. The wires are attached to a battery resting on the counter[otherwise if the clean battery is on the lunch counter]. A battery rests on the counter[end if]." 
+The description is "This is the epitome of the homey small-town diner of times gone by, except for the lack of all furniture, cooking implements, food, decor, and so on. There is a staircase leading up, and the exit is north. A pair of insulated wires hangs from the ceiling at one end of the counter[if the clean battery is hooked up]. The wires are attached to a battery resting on the counter[end if][if the clean battery is on the lunch counter and the clean battery is hooked up]. The wires are attached to a battery resting on the counter[otherwise if the clean battery is on the lunch counter]. A battery rests on the counter[end if]." 
 Understand "diner/restaurant" as Henry's Hot Skillet.
 
 The diner staircase is scenery in Henry's Hot Skillet. "A staircase leads up, probably to the roof." 
@@ -2231,7 +2266,7 @@ Instead of examining the Obelisk-from-Henry's-Roof:
 Book 35 - Rolle's Department Store
 
 Rolle's Department Store is south of Main Street 200 Block. It is in ELR. It is indoors. It is a leavable room. The egress is north. 
-The description is "Once, town department stores like this were a constant of American life. Sadly, this one is empty of everything save a number of sale posters and its gleaming floor."
+The description is "Once, town department stores like this were a constant of American life. Sadly, this one is empty of everything save a number of sale posters and its gleaming floor. The front door is to the north."
 The snarky remark of Rolle's Department Store is "I guess the sale is over."
 
 The x-coordinate of Rolle's Department Store is 0. The y-coordinate of Rolle's Department Store is -2.
