@@ -230,8 +230,6 @@ Horton astral tunnel	Horton Family House Parlor	"Faraji emerges from the astral 
 Horton astral tunnel	Fire Station 1	"Faraji emerges from the astral tunnel into the fire station."	--
 Fire Station 1	Horton astral tunnel	"Faraji steps back into the astral tunnel."	--
 Horton graveyard	Horton Family House Kitchen	"Faraji steps back into the Horton House."	--
-Horton graveyard	large grave	"Faraji descends the ladder into the grave. They can't help thinking that they don't get paid enough for this."	--
-large grave	Horton graveyard	"With a sigh of relief, Faraji climbs out of the grave."	--
 sewer tunnel 1	sewer tunnel 2	"Faraji heads deeper into the sewer."	--
 sewer tunnel 2	sewer tunnel 1	"Faraji heads back towards the bookstore."	--
 sewer tunnel 2	sewer tunnel 3	"Faraji heads yet deeper into the sewer."	--
@@ -312,7 +310,7 @@ basement shelves	"Don't be silly."	"Don't be silly."
 Biff's chair	"It's too cumbersome to lug around."	"[We] [push] it around a bit, but it's only fun for a moment."
 Biff's desk	"It's too heavy to lift."	"It's too heavy to move unaided."
 blinds	"Dave might object."	"Dave is very particular about his blinds."
-Book of Utilitarianism	"It must be bad luck to steal a book from a church. [We] [leave] it here."	"What's the point?"
+Book of Utilitarianism	"[We] [try] to take the book, but a painful shock stops [us]."	"What's the point?"
 bookcase	"It's too heavy to lift."	"It's too heavy to move unaided."
 bookshelves	"Don't be silly."	"Don't be silly."
 booth window	"That's attached to the building."	"Push too hard and [we]'ll be sorry."
@@ -369,6 +367,7 @@ gym front desk	"That's attached to the floor."	"That's attached to the floor."
 gymnasium facade	"[We] better hit the gym before [we] try to lift it."	"[We] attempt to push the gym around, but it's not going anywhere."
 heating vent	"It's part of the floor."	"It doesn't budge."
 Henry's facade	"What would Henry think? Sure, due to the flood, it's about to be destroyed, but [we] still can't lift a building."	"[We] attempt to push the store around, but it's not going anywhere."
+Holy Bible	"It must be bad luck to steal a bible. [We] [leave] it here."	"What's the point?"
 Hora de la Muerte	"Chief Klimp might object."	"Chief Klimp might object."
 Horton facade	"Oh good, save it from the flood. Good idea."	"[We] attempt to push the house around, but it's not going anywhere."
 Horton-back-facade	"Oh good, save it from the flood. Good idea."	"[We] attempt to push the house around, but it's not going anywhere."

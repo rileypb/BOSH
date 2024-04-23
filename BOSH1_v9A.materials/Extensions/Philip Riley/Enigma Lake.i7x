@@ -120,6 +120,9 @@ The moon is a backdrop. It is in ELR.
 The stars are a backdrop. They are in ELR. Understand "star" as the stars.
 
 Instead of examining the moon:
+	if the location is indoors:
+		say "You can't see the moon from here.";
+		stop;
 	if the current weather is clear:
 		say "The moon is full and bright, casting a silvery light over the town.";
 	otherwise:
@@ -127,6 +130,9 @@ Instead of examining the moon:
 	now weather described is true;
 
 Instead of examining the stars:
+	if the location is indoors:
+		say "You can't see the stars from here.";
+		stop;
 	if the current weather is clear:
 		say "The stars twinkle in the clear sky.";
 	otherwise:
@@ -914,11 +920,14 @@ The Holy Bible is scenery on the lectern. "The Bible's cover is worn and the pag
 
 To read is a verb.
 
-The Book of Utilitarianism is fixed in place. It is proper-named. The printed name is "[italic type]The Book of Utilitarianism[roman type]". It is indescribable.
+The Book of Utilitarianism is fixed in place. It is proper-named. The printed name is "[italic type]The Book of Utilitarianism[roman type]". It is indescribable. Understand "BOU" as the Book of Utilitarianism. 
 
 The cursed word is text that varies. The cursed word is "".
 
 Instead of examining the Book of Utilitarianism when the doll-fly is not in the location:
+	if the player wears the astral lenses:
+		say "Looking at the [italic type]Book of Utilitarianism[roman type] through the astral lenses is unbearable. The text is a jumble of letters and colors, and the words seem to twist and writhe on the page.";
+		stop;
 	let just set the word be false;
 	if the cursed word is "":
 		now just set the word is true;
@@ -1479,7 +1488,7 @@ After going to the workshed when the trapdoor is unrevealed and the player enclo
 Description notes for the dowsing rod:
 	if the location is the workshed and the trapdoor is unrevealed:
 		add "vibrating" to descriptive notes;
-	if the location is a large grave and the metal case is nowhere:
+	if the location is a large grave and the shiny astral resonator is nowhere:
 		add "vibrating" to descriptive notes;
 
 Instead of examining the dowsing rod when the location is the workshed and the trapdoor is unrevealed:
@@ -1757,9 +1766,9 @@ The small bed is scenery in the Second Floor of the Horton House. "A small bed s
 The snarky remark of the small bed is "I wonder if they got this from one of those online mattress companies."
 
 The rickety wardrobe is a closed openable enterable scenery container in the Second Floor of the Horton House. "A rickety wardrobe stands against a wall. It is [if open]open[otherwise]closed[end if]."
-The snarky remark of the rickety wardrobe is "Don't climb into it. There's probably something much worse thant a lion and a witch in there."
+The snarky remark of the rickety wardrobe is "Don't climb into it. There's probably something much worse than a lion and a witch in there."
 
-The wooden frame is in the rickety wardrobe. It is a container. The description is "A piece of wood, about two feet long with three holes carved in it. It looks like the holes are meant to hold things. Leather straps appear to be meant to hold those things in the frame."
+The wooden frame is a container. The description is "A piece of wood, about two feet long with three holes carved in it. It looks like the holes are meant to hold things. Leather straps appear to be meant to hold those things in the frame."
 The snarky remark of the wooden frame is "This couldn't possibly be useful. I should just leave it here."
 
 The stairs-second-floor is scenery in the Second Floor of the Horton House. "A staircase leads down."
@@ -1841,18 +1850,15 @@ The x-coordinate of the large grave is -3. The y-coordinate of the large grave i
 
 Above the large grave is the Horton graveyard.
 
-After going to the large grave when the metal case is nowhere and the player encloses the dowsing rod:
+After going to the large grave when the shiny astral resonator is nowhere and the player encloses the dowsing rod:
 	say "Something [we] [are] carrying starts to vibrate.";
 	continue the action;
 
-After going from the large grave when the metal case is nowhere and the player encloses the dowsing rod:
+After going from the large grave when the shiny astral resonator is nowhere and the player encloses the dowsing rod:
 	say "The vibrations cease.";
 	continue the action;
 
-A metal case is a closed openable container. The description is "A small metal case, about the size of a breadbox. It seems to be made of lead. It is [if metal case is open]open[otherwise]closed[end if]." 
-The snarky remark of the metal case is "Just the place where I'd keep the ravings of the family patriarch."
-
-Instead of examining the dowsing rod when the location is the large grave and the metal case is nowhere and the player encloses the dowsing rod:
+Instead of examining the dowsing rod when the location is the large grave and the shiny astral resonator is nowhere and the player encloses the dowsing rod:
 	say "The dowsing rod is vibrating.";
 
 Digging is an action applying to nothing. Understand "dig" as digging.
@@ -1863,48 +1869,28 @@ Check digging when the player does not enclose the shovel:
 Check digging when the location is not the large grave and the location is diggable and the player encloses the shovel:
 	say "[We] [try] digging a little bit, but nothing turns up." instead;
 
-Check digging when the location is the large grave and the player encloses the shovel and the metal case is not nowhere:
+Check digging when the location is the large grave and the player encloses the shovel and the shiny astral resonator is not nowhere:
 	say "[We] [try] digging a little bit more, but nothing else turns up." instead;
 
 Check digging when the location is not diggable and the player encloses the shovel:
 	say "The ground here is not suitable for digging." instead;
 
-Carry out digging when the location is the large grave and the player encloses the shovel and the metal case is nowhere:
-	now the player carries the metal case;
+Carry out digging when the location is the large grave and the player encloses the shovel and the shiny astral resonator is nowhere:
+	now the player carries the shiny astral resonator;
 
-Report digging when the location is the large grave and the player encloses the shovel and the metal case was nowhere:
-	say "[We] [dig] a little bit, and [run] into something metallic. [We] [dig] a little more, and [find] a small metal case. [We] [take] it with [us][if the player encloses the dowsing rod]. The vibrations cease[end if].";
-
-[ Understand the command "uncover" as something new.
-Uncovering is an action applying to one thing. Understand "uncover [something]" as uncovering.
-Understand "dig [something] out/up" as uncovering. Understand "dig out/up [something]" as uncovering. Understand "expose [something]" as uncovering.
-
-Check uncovering the metal corner when the player does not enclose the shovel:
-	say "It's too deep to reach without a shovel." instead;
-
-Carry out uncovering the metal corner:
-	now the metal case is in the location;
-	now the metal corner is nowhere;
-	
-Report uncovering the metal corner:
-	say "[We] [dig] the metal object out of the dirt, revealing a small metal case.";
-
-Check uncovering something when the noun is not the metal corner:
-	say "There's nothing to uncover here." instead; 
-
-Instead of doing something other than uncovering to the metal corner:
-	say "[We] [need] to uncover it first."; ]
+Report digging when the location is the large grave and the player encloses the shovel and the shiny astral resonator was nowhere:
+	say "[We] [dig] a little bit, and [run] into something metallic. [We] [dig] a little more, and [find] [a shiny astral resonator]. [We] [take] it with [us][if the player encloses the dowsing rod]. The vibrations cease[end if].";
 
 Horton-back-facade is a building facade. It is in Horton Graveyard. It is privately-named. The printed name is "Horton Family House". Understand "Horton/House/Home" as Horton-back-facade. "Horton House is an old colonial-period house. [We] [are] in its backyard." 
 	Horton-back-facade fronts Horton Family House Kitchen.
 	It is enterable from Horton Graveyard. 
 The snarky remark of Horton-back-facade is "It doesn't look any less creepy from the back."
 
-The Witnessing of Hezekiah is in the metal case. It is proper-named. The printed name is "[italic type]The Witnessing of Hezekiah[roman type]". Understand "book" as The Witnessing of Hezekiah.  
+The Witnessing of Hezekiah is in the wardrobe. It is proper-named. The printed name is "[italic type]The Witnessing of Hezekiah[roman type]". Understand "book" as The Witnessing of Hezekiah.  
 The description is "A small, leather-bound book, titled 'The Witnessing of Hezekiah: as told to Jeremiah Horton by Hezekiah Horton'. The book is filled with strange, cryptic passages, and is difficult to read. [We] [find] one page of particular interest. It reads, 'And lo, Hezekiah, in his wisdom, did prophesy of the impending flood and the necessity to make ready. He spoke of a sacred artifact, a resonator, bestowed with divine power, that would unveil a gateway to the ethereal realm. And he revealed the quest to find the lost astral traveler who would guide the faithful out of the coming darkness. Thus spake Hezekiah: [']First form from the wood of the ash tree a frame. Then take the resonant instrument, and with reverence, bind it to the ghostly light, and then to the astral focus. Ascend the ladder and, channeling a mighty power through the resonator, direct it towards the crystal eye. Once thou hast done this, strike the eye likewise twice more, and the portal shall open, revealing the path to transcendence.[']'".
 It is unsnarkable. The Witnessing of Hezekiah can be read.
 
-The shiny astral resonator is carried by the group of lizard people. It is privately-named. The description is "A small, shiny, metallic, cylindrical object. One end is capped with a lens, while the other terminates in two shiny metal chains, each with a shiny metal clamp, as if it were designed to be attached to something.".
+The shiny astral resonator is a thing. It is privately-named. The description is "A small, shiny, metallic, cylindrical object. One end is capped with a lens, while the other terminates in two shiny metal chains, each with a shiny metal clamp, as if it were designed to be attached to something.".
 The printed name is "[if Astral Secrets is read]shiny astral resonator[otherwise]strange, shiny, metal object[end if]".
 Understand "shiny/astral/resonator" as the shiny astral resonator when Astral Secrets is read.
 Understand "strange/shiny/metal/metallic/cylindrical/cylinder/object" as the shiny astral resonator.
@@ -2286,7 +2272,6 @@ For device updating the table lamp:
 	otherwise:
 		if the table lamp is powered and the table lamp is switched on:
 			now the table lamp is lit;
-			say "FOO.";
 			add the table lamp to changed things;
 
 For state change reporting the table lamp:
@@ -2580,7 +2565,7 @@ Instead of examining the mystic compass:
 
 Volume 4.5 - The Lizard People
 
-The group of lizard people is an animal. "Three humanoid figures are here, each with a long, scaly tail and a head that looks like a lizard's. They are dressed in smart grey suits. They are hissing loudly in what seems to be intelligent communication. One is carrying some kind of shiny object.[if lizard countdown is 1]
+The group of lizard people is an animal. "Three humanoid figures are here, each with a long, scaly tail and a head that looks like a lizard's. They are dressed in smart grey suits. They are hissing loudly in what seems to be intelligent communication. One is carrying some kind of wooden object.[if lizard countdown is 1]
 
 They notice you and stop talking. One of them steps forward and says in a guttural hiss, [one of]'So it is one of Doris's friends. We have been expecting you. You will not hinder us!'[or]'Surface vermin! You will not stop us!'[or]'No one will be allowed to interfere with our plans. Begone!'[or]'Silly human. You will fail!'[or]'You are too late to stop us. We will have the Dragon!'[at random][end if]" 
 
@@ -2738,6 +2723,7 @@ Lizard countdown is a number that varies. Lizard countdown is 0.
 
 After going when the group of lizard people is in the location:
 	now the lizard countdown is 1;
+	now the current interlocutor is the group of lizard people;
 	continue the action;
 
 The lizard teleportation targets is a list of rooms that varies.
@@ -2755,9 +2741,9 @@ Instead of answering something that when the group of lizard people is in the lo
 		say "The lizard people seem to find your words amusing. They hiss, creating a strange cloud of thick vapor. Faraji feels light-headed and disoriented. When the vapor clears, they are somewhere else...";
 		teleport the player;
 	otherwise:
-		say "At your word, the lizard people scream and hiss, creating a strange cloud of thick vapor. When the vapor clears, they are gone, but they have left something behind. There is [a shiny astral resonator] on the ground!";
+		say "At your word, the lizard people scream and hiss, creating a strange cloud of thick vapor. When the vapor clears, they are gone, but they have left something behind. There is [a wooden frame] on the ground!";
 		now the group of lizard people is nowhere;
-		now the shiny astral resonator is in the location;
+		now the wooden frame is in the location;
 		now the lizard countdown is 0;
 		now the current interlocutor is nothing;
 

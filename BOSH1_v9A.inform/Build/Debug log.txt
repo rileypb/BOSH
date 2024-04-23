@@ -44,7 +44,7 @@ I've also read Can't Touch This by Philip Riley, which is 153 words long.
 I've also read Compound Details by Philip Riley, which is 182 words long.
 I've also read Polish by Philip Riley, which is 89 words long.
 I've also read Hello by Philip Riley, which is 156 words long.
-I've also read BOSH Polish by Philip Riley, which is 8688 words long.
+I've also read BOSH Polish by Philip Riley, which is 8662 words long.
 I've also read New Light by Philip Riley, which is 347 words long.
 I've also read Early Declarations by Philip Riley, which is 21 words long.
 I've also read Basics by Philip Riley, which is 198 words long.
@@ -56,7 +56,7 @@ I've also read Hyperspace by Philip Riley, which is 13437 words long.
 I've also read BOSH Facts by Philip Riley, which is 188 words long.
 I've also read Swamp Park by Philip Riley, which is 7754 words long.
 I've also read Margaret by Philip Riley, which is 2529 words long.
-I've also read Enigma Lake by Philip Riley, which is 29342 words long.
+I've also read Enigma Lake by Philip Riley, which is 29420 words long.
 I've also read I Can Dig It by Philip Riley, which is 77 words long.
 I've also read Overlook by Philip Riley, which is 763 words long.
 I've also read Gender Options by Nathanael Nerode, which is 7679 words long.
@@ -78,7 +78,7 @@ I've also read Secret Doors by Gavin Lambert, which is 272 words long.
 I've also read Plugging by Philip Riley, which is 619 words long.
 I've also read Books by Philip Riley, which is 2319 words long.
 I've also read Container Types by Philip Riley, which is 52 words long.
-I've also read Extension Cord by Philip Riley, which is 2866 words long.
+I've also read Extension Cord by Philip Riley, which is 2868 words long.
 I've also read State Update by Philip Riley, which is 406 words long.
 I've also read Hints by Philip Riley, which is 888 words long.
 I've also read Two-Sided Doors by Philip Riley, which is 2270 words long.
@@ -324,7 +324,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 268 files written as streams.
-CPU time: 1006 centiseconds
+CPU time: 1007 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

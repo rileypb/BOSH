@@ -32,10 +32,10 @@ Does the player mean unplugging something pluggable:
 Before printing the locale description:
 	if the player encloses the plug-end and the socket-end is not enclosed by the location:
 		let dir be the best route from the location to the location of the socket-end;
-		say "The extension cord you are carrying trails [dir] into [the holder of the socket-end].";
+		say "The extension cord you are carrying trails [dir] into [the holder of the socket-end].[paragraph break]";
 	otherwise if the player encloses the socket-end and the plug-end is not enclosed by the location:
 		let dir be the best route from the location to the location of the plug-end;
-		say "The extension cord you are carrying trails [dir] into [the holder of the plug-end].";
+		say "The extension cord you are carrying trails [dir] into [the holder of the plug-end].[paragraph break]";
 
 Rule for writing a paragraph about the extension cord:
 	say "An extension cord lies on the floor";
