@@ -32,13 +32,13 @@ Does the player mean unplugging something pluggable:
 Before printing the locale description:
 	if the player encloses the plug-end and the socket-end is not enclosed by the location:
 		let dir be the best route from the location to the location of the socket-end;
-		say "The extension cord you are carrying trails [dir] into [the holder of the socket-end].[paragraph break]";
+		say "The extension cord you are carrying trails [dir] into [the location of the holder of the socket-end].[paragraph break]";
 	otherwise if the player encloses the socket-end and the plug-end is not enclosed by the location:
 		let dir be the best route from the location to the location of the plug-end;
-		say "The extension cord you are carrying trails [dir] into [the holder of the plug-end].[paragraph break]";
+		say "The extension cord you are carrying trails [dir] into [the location of the holder of the plug-end].[paragraph break]";
 
 Rule for writing a paragraph about the extension cord:
-	say "An extension cord lies on the floor";
+	say "An extension cord lies on the [if the location is indoors]floor[otherwise]ground[end if]";
 	if the extension cord is plugged into the extension cord:
 		say ", one end plugged into the other";
 	otherwise:
@@ -52,7 +52,7 @@ Rule for writing a paragraph about the extension cord:
 
 Rule for writing a paragraph about plug-end:	
 	if the plug-end is in the location:
-		say "An extension cord lies on the floor";
+		say "An extension cord lies on the [if the location is indoors]floor[otherwise]ground[end if]";
 	otherwise:
 		let holder be the holder of the plug-end;
 		if holder is a supporter:
@@ -76,11 +76,15 @@ Rule for writing a paragraph about plug-end:
 		otherwise:
 			say ". The other end is in [the holder of the socket-end] [we] [are] carrying.";
 	otherwise:	
-		say ". The other end is in [the holder of the socket-end].";
+		if the holder of the socket-end is enclosed by the location:
+			say ". The other end is in [the holder of the socket-end].";
+		otherwise:
+			let dir be the best route from the location to the location of the socket-end;
+			say ". The other end trails [dir] into [the location of the holder of the socket-end].";
 
 Rule for writing a paragraph about socket-end:
 	if the socket-end is in the location:
-		say "An extension cord lies on the floor";
+		say "An extension cord lies on the [if the location is indoors]floor[otherwise]ground[end if]";
 	otherwise:
 		let holder be the holder of the socket-end;
 		if holder is a supporter:
@@ -88,7 +92,7 @@ Rule for writing a paragraph about socket-end:
 		otherwise:
 			say "An extension cord is in [the holder of the extension cord]";
 	if something (called the plug) is plugged into the socket-end:
-		say ", one end plugged into [the plug]";
+		say ", [the plug] plugged into one end";
 		let holder be the holder of the socket-end;
 		if the holder is the player:
 			say " we are holding";
@@ -104,7 +108,11 @@ Rule for writing a paragraph about socket-end:
 		otherwise:
 			say ". The other end is in [the holder of the plug-end] [we] [are] carrying.";
 	otherwise:	
-		say ". The other end is in [the holder of the plug-end]."; 
+		if the holder of the plug-end is enclosed by the location:
+			say ". The other end is in [the holder of the plug-end]."; 
+		otherwise:
+			let dir be the best route from the location to the location of the plug-end;
+			say ". The other end trails [dir] into [the location of the holder of the plug-end].";
 
 Rule for writing a paragraph about the extension cord:
 	set the locale priority of the extension cord to 0;
@@ -412,10 +420,10 @@ Description notes for the plug-end:
 			add "with [the plug] plugged into the other end" to descriptive notes;
 		otherwise:
 			if the holder of the socket-end is the location:
-				add "with the other end on the floor" to descriptive notes;
+				add "with the other end on the [if the location is indoors]floor[otherwise]ground" to descriptive notes;
 			otherwise if the socket-end is not enclosed by the location:
 				let dir be the best route from the location to the location of the socket-end;
-				add "with the other end trailing [dir] into [the holder of the socket-end]" to descriptive notes;
+				add "with the other end trailing [dir] into [the location of the holder of the socket-end]" to descriptive notes;
 			otherwise:
 				if the player carries the socket-end:
 					add "with the other end in [our] hand" to descriptive notes;
@@ -427,10 +435,10 @@ Description notes for the socket-end:
 		add "with the other end plugged into [the socket]" to descriptive notes;
 	otherwise:
 		if the holder of the plug-end is the location:
-			add "with the other end on the floor" to descriptive notes;
+			add "with the other end on the [if the location is indoors]floor[otherwise]ground" to descriptive notes;
 		otherwise if the plug-end is not enclosed by the location:
 			let dir be the best route from the location to the location of the plug-end;
-			add "with the other end trailing [dir] into [the holder of the plug-end]" to descriptive notes;
+			add "with the other end trailing [dir] into [the location of the holder of the plug-end]" to descriptive notes;
 		otherwise:
 			if the player carries the plug-end:
 				add "with the other end in [our] hand" to descriptive notes;

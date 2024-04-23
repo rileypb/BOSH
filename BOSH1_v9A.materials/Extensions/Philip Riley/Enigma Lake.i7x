@@ -269,7 +269,7 @@ To explore is a verb.
 Enigma Park is a leavable room. It is north of Enigma Lake town hall. It is unleavable. Enigma Park is in ELR. It is outdoors.
 "[first time]It's probably beautiful during the day, but tonight the deep shadows among the trees seem ominous. [We] [are] watchful and tense as [we] [explore] the park. 
 
-[only]The central focus of the park is a large obelisk inscribed with the names of the town's citizens lost in the Great War. Firs and maples line the paths. The town hall is to the south, and other exits are to the north, west, and east[park beam description]. Other egress is blocked by stone walls."
+[only]The central focus of the park is a large obelisk inscribed with the names of the town's citizens lost in the Great War. Firs and maples line the paths. The town hall is to the south, and other exits are to the north, west, and east. Other egress is blocked by stone walls[park beam description]."
 
 To say park beam description:
 	beam description, in the park;
@@ -287,14 +287,14 @@ To beam description, in the park:
 		let source string be the substituted form of "[sources]";
 		if in the park:
 			if bc is 1:
-				say ".[paragraph break]A bright beam of light shoots from [source string], striking the obelisk. The crystal is glowing [crystal glow].";
+				say ".[paragraph break]A bright beam of light shoots from [source string], striking the obelisk. The crystal is glowing [crystal glow]";
 			otherwise:
-				say ".[paragraph break]Bright beams of light shoot from [source string], striking the obelisk. The crystal is glowing [crystal glow].";
+				say ".[paragraph break]Bright beams of light shoot from [source string], striking the obelisk. The crystal is glowing [crystal glow]";
 		otherwise:
 			if bc is 1:
-				say "A bright beam of light shoots from [source string], striking the obelisk in the park. The crystal is glowing [crystal glow].";
+				say "A bright beam of light shoots from [source string], striking the obelisk in the park. The crystal is glowing [crystal glow]";
 			otherwise:
-				say "Bright beams of light shoot from [source string], striking the obelisk in the park. The crystal is glowing [crystal glow].";
+				say "Bright beams of light shoot from [source string], striking the obelisk in the park. The crystal is glowing [crystal glow]";
 
 After printing the locale description when beam count > 0 and the location is outdoors and the location is in ELR and the location is not Enigma Park:
 	beam description;
@@ -924,10 +924,15 @@ The Book of Utilitarianism is fixed in place. It is proper-named. The printed na
 
 The cursed word is text that varies. The cursed word is "".
 
+The Book of Utilitarianism can be unsuccessfully read.
+The Book of Utilitarianism can be successfully read.
+
 Instead of examining the Book of Utilitarianism when the doll-fly is not in the location:
 	if the player wears the astral lenses:
 		say "Looking at the [italic type]Book of Utilitarianism[roman type] through the astral lenses is unbearable. The text is a jumble of letters and colors, and the words seem to twist and writhe on the page.";
+		now the Book of Utilitarianism is unsuccessfully read;
 		stop;
+	now the Book of Utilitarianism is successfully read;
 	let just set the word be false;
 	if the cursed word is "":
 		now just set the word is true;
@@ -1033,8 +1038,10 @@ After plugging the makeshift astral resonator into the electrical outlet:
 		
 After plugging the table lamp into the electrical outlet:
 	now the table lamp is in the location;
-	if the table lamp is powered and the table lamp is switched on:
-		now the table lamp is lit;
+	continue the action;
+		
+After plugging the spotlight into the electrical outlet:
+	now the spotlight is in the location;
 	continue the action;
 
 Check taking the makeshift astral resonator when the makeshift astral resonator is plugged into the electrical outlet:
@@ -1095,6 +1102,15 @@ The snarky remark of the circuit breaker is "And the Lord said, 'Let there be li
 Book 17.5 - The church basement
 
 The church basement is below the First Utilitarian Church of Enigma Lake. It is in ELR. It is indoors. It is dark. "The basement is a shock to behold after the simple church above. It's a large, open space, with walls painted with scenes of humans and lizard people in battle, with aliens and platypuses looking on in horror. There is an ornate altar at the far end of the room. The exit is up."
+
+The church basement can be witnessed in darkness.
+
+After going to church basement:
+	say "in church basement, in darkness = [if in darkness]true[otherwise]false[end if].";
+	if in darkness:
+		now the church basement is witnessed in darkness;
+	continue the action;
+
 
 The altar is a scenery supporter in the church basement. 
 
@@ -1245,7 +1261,7 @@ Instead of inserting something into the tripod:
 Instead of putting something on the tripod:
 	try mounting the noun on the tripod;
 
-The steeple-obelisk-facade is a backdrop. It is in the steeple. Understand "obelisk/park" as steeple-obelisk-facade. "The obelisk in the park is clearly visible from here."
+The steeple-obelisk-facade is a backdrop. It is in the steeple. Understand "obelisk/enigma/park/crystal/adornment" as steeple-obelisk-facade. "The obelisk in the park is clearly visible from here."
 The snarky remark of the steeple-obelisk-facade is "Obelisk. Obelisk. Obelisk. Did you ever notice how funny that word is?"
 
 To decide if mounted-makeshift-resonator:
@@ -1916,8 +1932,44 @@ The x-coordinate of the Fire Station 1 is -2. The y-coordinate of the Fire Stati
 The ladder is in Fire Station 1. "A ladder rests against the wall." The description is "A wooden ladder, about 6 feet long. It looks sturdy and well-maintained."
 The snarky remark of the ladder is "What? No hook?".   
 
-The spotlight is in the Fire Station 1. The description is "A small spotlight, designed to be hand-held. On the side is the branding 'Spectre'. The light has a short cord ending in a standard North American 120V AC plug."
+The spotlight is in the Church Basement. The description is "A small spotlight, designed to be hand-held. On the side is the branding 'Spectre'. The light has a short cord ending in a standard North American 120V AC plug." It is pluggable.
 The snarky remark of the spotlight is "It's awfully small for a spotlight. More like a specklight."
+
+Instead of examining the spotlight:
+	say "A small spotlight, designed to be hand-held. On the side is the branding 'Spectre'. The light has a short cord ending in a standard North American 120V AC plug";
+	if the spotlight is plugged into something (called the socket):
+		say ", plugged into [a socket]";
+	otherwise:
+		say "";
+	if the spotlight is lit:
+		say ". The spotlight is on.";
+	otherwise:
+		say ". The spotlight is off.";
+
+The spotlight can be already lit.
+
+For device updating the spotlight:
+	if the spotlight is unlit:
+		if the spotlight is powered:
+			now the spotlight is lit;
+			now the spotlight is already lit;
+			add the spotlight to changed things;
+	otherwise:
+		if spotlight is not powered:
+			now the spotlight is unlit;
+			add the spotlight to changed things;
+
+For state change reporting the spotlight:
+	if the spotlight is lit:
+		if the spotlight is visible:
+			say "The spotlight is now on.[line break]";
+	otherwise:
+		if the spotlight is visible:
+			say "The spotlight is now off.[line break]";
+
+Description notes for the spotlight:
+	if the spotlight is lit:
+		add "providing light" to the descriptive notes;
 
 The blue button is scenery in the Fire Station 1. "A large blue button, mounted on the wall."
 The snarky remark of the blue button is "PUSH IT PUSH IT PUSH IT!"
@@ -1997,13 +2049,12 @@ Astral Secrets is on the sales counter. It is proper-named. The printed name is 
 The description is "A book with a plain brown cover, titled 'Astral Secrets'. The author is listed as Jeremiah Horton.[paragraph break]Flipping through the book, [we] [find] a dog-eared page. The page shows a diagram of a small, metallic, cylindrical object, which is labeled 'astral resonator'. The text describes the resonator as a device for opening a portal through the astral plane. It goes on to describe the components of the device: a source of resonance, a source of light, and an 'astral lens', which it declines to describe further. The text also mentions that the resonator is powered by a source of electricity." 
 
 After examining Astral Secrets for the first time:
-	if the player encloses the shiny astral resonator:
-		say "The book perfectly describes the shiny object you are carrying";
-		if the player encloses the rusty astral resonator:
-			say ", and the rusty object you are carrying";
-		say ".";
-	otherwise if the player encloses the rusty astral resonator:
-		say "The book perfectly describes the rusty object you are carrying.";
+	let resonators be a list of things;
+	repeat with item running through resonator types:
+		if the player encloses item:
+			add item to resonators;
+	if the number of entries in resonators > 0:
+		say "The book perfectly describes [the resonators] you are carrying.";
 	now Astral Secrets is read.
 
 
@@ -2264,14 +2315,67 @@ The x-coordinate of Rolle's Department Store is 0. The y-coordinate of Rolle's D
 The table lamp is a device in Rolle's Department Store. "A scuffed-up table lamp sits discarded in a corner." The description is "A table lamp, with a brass base and missing a shade. It's meant to plug into an outlet. It looks like it's seen better days[if the table lamp is lit]. It is lit[otherwise]. It is dark[end if]." 
 It is pluggable. 
 
+Instead of examining the table lamp:
+	say "An ordinary table lamp, with a brass base";
+	if the bulb is not in the lamp socket:
+		say ", no bulb, and no shade";
+	otherwise:
+		say ", a light bulb in the socket, but no shade";
+	say ". It looks like it's seen better days";
+	if the table lamp is plugged into something (called the socket):
+		say ". It is plugged into [the socket]";
+	otherwise:
+		say ". The power cord hangs free";
+	If the table lamp is lit:
+		say ". The lamp is lit.";
+	otherwise:
+		say ". The lamp is dark.";
+
+Description notes for the table lamp:
+	if the table lamp is lit:
+		add "providing light" to descriptive notes;
+
+Understand "screw [the light bulb] in/into [the lamp socket]", "mount [the light bulb] on/onto/in/into [the lamp socket]" as inserting it into.
+Understand "screw [the rusty astral resonator] in/into [the lamp socket]", "mount [the rusty astral resonator] on/onto/in/into [the lamp socket]" as inserting it into.
+Understand "unscrew [the light bulb]" as taking when the light bulb is in the lamp socket.
+
+Understand "screw [the light bulb] in/into [the table lamp]", "mount [the light bulb] on/onto/in/into [the table lamp]" as inserting it into.
+Understand "screw [the rusty astral resonator] in/into [the table lamp]", "mount [the rusty astral resonator] on/onto/in/into [the table lamp]" as inserting it into.
+
+The lamp socket is a single item container. It is part of the table lamp. The description is "A standard North American 120V AC lamp socket." 
+
+Instead of inserting the rusty astral resonator into the lamp socket:
+	say "The rusty astral resonator doesn't fit in the table lamp."
+
+Check inserting the light bulb into the lamp:
+	try inserting the light bulb into the lamp socket instead;
+
+Check inserting something into the lamp socket:
+	if the noun is not the light bulb:
+		say "That doesn't fit.";
+		stop the action;
+
+Carry out inserting something into the lamp socket (this is the update lamp on inserting rule):
+	carry out the device updating activity with the table lamp;
+
+The update lamp on inserting rule is listed last in the carry out inserting it into rules.
+
+Carry out removing something from the lamp socket (this is the update lamp on removing rule):
+	carry out the device updating activity with the table lamp;
+
+The update lamp on removing rule is listed last in the carry out removing it from rules.
+
+The table lamp can be already lit. 
+
 For device updating the table lamp:
 	if the table lamp is lit:
-		if the table lamp is not powered or the table lamp is not switched on:
+		if the table lamp is not powered or the table lamp is not switched on or the light bulb is not in the lamp socket:
 			now the table lamp is unlit;
 			add the table lamp to changed things;
 	otherwise:
-		if the table lamp is powered and the table lamp is switched on:
+		if the table lamp is powered and the table lamp is switched on and the light bulb is in the lamp socket:
 			now the table lamp is lit;
+			now the table lamp is already lit;
 			add the table lamp to changed things;
 
 For state change reporting the table lamp:

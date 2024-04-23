@@ -960,13 +960,13 @@ Carry out pushing the reset button:
 The snarky remark of the reset button is "Reset what how? How do I know I want that?"
 
 Report pushing the reset button:
-	say "The display now reads '[current spaceTime Setting].'";
+	say "The display now reads '[current spaceTime Setting]'";
 	if the portal to the past was active and the portal to the past is not active:
-		say "The shimmering curtain in the portal fades and disappears.";
+		say ". The shimmering curtain in the portal fades and disappears.";
 	otherwise if the portal to the past was not active and the portal to the past is active:
-		say "The shimmering curtain in the portal reappears.";
+		say ". The shimmering curtain in the portal reappears.";
 	otherwise:
-		say "Nothing obvious happens.";
+		say ". Nothing obvious happens.";
 	stop the action;
 
 Typing it into is an action applying to one number and one thing. Understand "type [number] into/on/in [something]" as typing it into. Understand the commands "key", "input" as "type". Understand "enter [number] into/on/in [something]" as typing it into.
