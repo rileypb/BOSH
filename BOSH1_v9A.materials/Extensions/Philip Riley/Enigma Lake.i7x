@@ -640,7 +640,7 @@ The snarky remark of the radio station facade is "Wonder what the weather report
 
 Book 11 - WGXC "Galaxy" Radio
 
-Radio Station WGXC is a leavable room. It has egress northwest. It is southeast of Main at Lake. It is in ELR. It is indoors. "This is the town radio station. South is the entrance to the broadcast booth. A staircase runs upwards, presumably to the roof and the broadcast antenna."
+Radio Station WGXC is a leavable room. It has egress northwest. It is southeast of Main at Lake. It is in ELR. It is indoors. "This is the town radio station. South is the entrance to the broadcast booth. A staircase runs upwards, presumably to the roof and the broadcast antenna. The exit is northwest."
 The snarky remark of Radio Station WGXC is "I wonder if they have any old records. Or I guess they'd be new records now, wouldn't they?"
 The x-coordinate of Radio Station WGXC is 2. The y-coordinate of Radio Station WGXC is -2.
 
@@ -835,7 +835,7 @@ Instead of examining the radio-obelisk-facade:
 
 Book 13 - Broadcast Booth
 
-The broadcast booth is south of Radio Station WGXC. It is in ELR. It is indoors. "The broadcast booth is a small room with a window looking out into the rest of the station. A microphone is set up on a stand, and a soundboard is set into the wall."
+The broadcast booth is south of Radio Station WGXC. It is in ELR. It is indoors. "The broadcast booth is a small room with a window looking out into the rest of the station. A microphone is set up on a stand, and a soundboard is set into the wall. The exit is to the north."
 The snarky remark of the broadcast booth is "I wonder if I can get a request in."
 The x-coordinate of the broadcast booth is 2. The y-coordinate of the broadcast booth is -3.
 
@@ -1105,9 +1105,13 @@ To say makeshift resonator state:
 		say "[A makeshift astral resonator] is mounted on the tripod";
 
 the steeple is above the First Utilitarian Church of Enigma Lake. It is in ELR. It is outdoors.
-"From here, [we] can see the obelisk in the park clearly. Someone has set up a tripod here. [if the content of the tripod is nothing]Its mount is empty[otherwise if the content of the tripod is the telescope][A telescope] is mounted on it[otherwise][makeshift resonator state][end if]."
+"From here, [we] can see the obelisk in the park clearly. Someone has set up a tripod here. [if the content of the tripod is nothing]Its mount is empty[otherwise if the content of the tripod is the telescope][A telescope] is mounted on it[otherwise][makeshift resonator state][end if].
+
+Stairs lead down to the church proper."
 The snarky remark of the steeple is "I wonder if I can see my house from here."
 The x-coordinate of the steeple is 2. The y-coordinate of the steeple is 1.
+
+The steeple stairs are scenery in the steeple. "The stairs lead down to the church proper."
 
 Some stained-glass-window-steeples are scenery in the steeple. They are privately-named. The printed name is "stained glass windows". Understand "stained/glass/windows" as stained-glass-window-steeples. "The steeple is surrounded by the typical Utilitarian perfectly clear stained glass windows.".
 stained-glass-window-steeples are unsnarkable.
@@ -2329,7 +2333,7 @@ The snarky remark of the gym door is "[if the gym door is locked]C'mon, I need t
 
 The x-coordinate of the public gymnasium is 2. The y-coordinate of the public gymnasium is 0.
 
-The public gymnasium is in ELR. "There is a basketball court and a weight training area. A front desk is next to the front entrance. Some kind of book sits on the front desk."
+The public gymnasium is in ELR. "There is a basketball court and a weight training area. A front desk is next to the front entrance to the west. Some kind of book sits on the front desk. [We] may also go down to the basement."
 The snarky remark of the public gymnasium is "This is the kind of government largesse that bankrupted 1950s America. For reals."
 The public gymnasium is a leavable room. The egress is west.
 
@@ -2452,7 +2456,7 @@ Check lifting weights:
 
 Book 37 - Gym Basement
 
-The gym basement is below the public gymnasium. It is in ELR. It is indoors. "This area is dominated by large banks of lockers."
+The gym basement is below the public gymnasium. It is in ELR. It is indoors. "This area is dominated by large banks of lockers. One can go up to the gym proper."
 The snarky remark of the gym basement is "I'm trying to remember my combination."
 
 The x-coordinate of the gym basement is 2. The y-coordinate of the gym basement is 0.
