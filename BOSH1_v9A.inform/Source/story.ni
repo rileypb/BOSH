@@ -1569,7 +1569,7 @@ Rule for deciding whether all includes a thing (called T) while taking:
 				it does not;
 	make no decision;
 	
-The describe what's on scenery supporters in room descriptions rule is not listed in any rulebook.
+[ The describe what's on scenery supporters in room descriptions rule is not listed in any rulebook. ]
 
 
 The closet door is a door. It is east of Moira's office and west of the utility closet. It is closed, openable, locked, and lockable. It is scenery.
@@ -1673,11 +1673,6 @@ The mysterious phone is a phone. It is owned by the unknown voice.
 
 Book 16 - Moving Between Rooms 
 
- 
- 
-
-
-
 To decide which text is the transition for (source - a room) to (target - a room):
 	repeat through the Table of Transitions:
 		if (source room entry is source) and (target room entry is target):
@@ -1692,12 +1687,14 @@ To mark transition from (source - a room) to (target - a room) as used:
 		if (source room entry is source) and (target room entry is target):
 			now transition-used entry is true;
  
-After going from a room (called R1) to a room (called R2): 
+After going from a room (called R1) to a room (called R2) (this is the print transition rule): 
 	let transition text be the transition for R1 to R2;
 	if transition text is not "none":
 		say "[transition text][paragraph break]";
 		mark transition from R1 to R2 as used;
 	continue the action;
+
+The print transition rule is listed first in the after rules.
 
 Chapter 1 - Leaving the Front Office
 

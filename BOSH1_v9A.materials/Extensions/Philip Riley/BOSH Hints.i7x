@@ -429,7 +429,7 @@ Activating the hint-bookstore-basement:
 		activate;
 	deactivate;
 
-The hint-fire-station is a progressive hint topic. Understand "fire station" as the hint-fire-station. The printed name is "fire station". The progression is {"Faraji may have noticed the garage door is locked. Is there another way in?", "Faraji should try going through an adjoining building.", "That would be either the bookstore or the Horton House.", "Faraji should explore the Horton House parlor as thoroughly as they can.", "Faraji should wear the astral lenses.", "Faraji should follow the astral tunnel."}.
+The hint-fire-station is a progressive hint topic. Understand "fire/station" as the hint-fire-station. The printed name is "fire station". The progression is {"Faraji may have noticed the garage door is locked. Is there another way in?", "Faraji should try going through an adjoining building.", "That would be either the bookstore or the Horton House.", "Faraji should explore the Horton House parlor as thoroughly as they can.", "Faraji should wear the astral lenses.", "Faraji should follow the astral tunnel."}.
 
 Activating the hint-fire-station:
 	if the garage door is seen and fire station 1 is unvisited:
@@ -461,7 +461,7 @@ Activating the hint-doll-fly:
 		activate;
 	deactivate;
 
-The hint-extension-cord is a progressive hint topic. Understand "extension cord" as the hint-extension-cord. The printed name is "extension cord". The progression is {"What do people use extension cords for?"}.
+The hint-extension-cord is a progressive hint topic. Understand "extension/cord" as the hint-extension-cord. The printed name is "extension cord". The progression is {"What do people use extension cords for?"}.
 
 Activating the hint-extension-cord:
 	if the extension cord is seen and not mounted-makeshift-resonator:

@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 24583 words long.
+I've now read your source text, which is 24584 words long.
 
 
 -----------------------------------------------------
@@ -56,12 +56,12 @@ I've also read Hyperspace by Philip Riley, which is 13437 words long.
 I've also read BOSH Facts by Philip Riley, which is 188 words long.
 I've also read Swamp Park by Philip Riley, which is 7711 words long.
 I've also read Margaret by Philip Riley, which is 2529 words long.
-I've also read Enigma Lake by Philip Riley, which is 28587 words long.
+I've also read Enigma Lake by Philip Riley, which is 28983 words long.
 I've also read I Can Dig It by Philip Riley, which is 77 words long.
 I've also read Overlook by Philip Riley, which is 763 words long.
 I've also read Gender Options by Nathanael Nerode, which is 7679 words long.
 I've also read Make Test by Philip Riley, which is 288 words long.
-I've also read BOSH Hints by Philip Riley, which is 5280 words long.
+I've also read BOSH Hints by Philip Riley, which is 5278 words long.
 I've also read Hearing by Philip Riley, which is 1254 words long.
 I've also read PBR Common by Philip Riley, which is 109 words long.
 I've also read Walls by Philip Riley, which is 905 words long.
@@ -78,8 +78,8 @@ I've also read Secret Doors by Gavin Lambert, which is 272 words long.
 I've also read Plugging by Philip Riley, which is 619 words long.
 I've also read Books by Philip Riley, which is 2319 words long.
 I've also read Container Types by Philip Riley, which is 52 words long.
-I've also read Extension Cord by Philip Riley, which is 2842 words long.
-I've also read Pluggable Devices by Philip Riley, which is 406 words long.
+I've also read Extension Cord by Philip Riley, which is 2866 words long.
+I've also read State Update by Philip Riley, which is 406 words long.
 I've also read Hints by Philip Riley, which is 888 words long.
 I've also read Two-Sided Doors by Philip Riley, which is 2270 words long.
 
@@ -142,13 +142,15 @@ Regional: CONSTANT_VNT'field office area'-region(I255_field_office_area)(I163'fi
  == region
 Regional: CONSTANT_VNT'hyperspace'-region(I240_hyperspace)(I148'hyperspace')
  == region
-Regional: CONSTANT_VNT'elr'-region(I531_elr)(I421'elr')
+Regional: CONSTANT_VNT'elr'-region(I521_elr)(I413'elr')
  == region
-Regional: CONSTANT_VNT'elr'-region(I531_elr)(I421'elr')
+Regional: CONSTANT_VNT'elr'-region(I521_elr)(I413'elr')
  == region
-Regional: CONSTANT_VNT'elr'-region(I531_elr)(I421'elr')
+Regional: CONSTANT_VNT'elr'-region(I521_elr)(I413'elr')
  == region
-Regional: CONSTANT_VNT'elr'-region(I531_elr)(I421'elr')
+Regional: CONSTANT_VNT'elr'-region(I521_elr)(I413'elr')
+ == region
+Regional: CONSTANT_VNT'elr'-region(I521_elr)(I413'elr')
  == region
 
 
@@ -209,13 +211,13 @@ Phase XII ... Code generation
          == region
         Regional: CONSTANT_VNT'hyperspace'-region(I240_hyperspace)(I148'hyperspace')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I531_elr)(I421'elr')
+        Regional: CONSTANT_VNT'elr'-region(I521_elr)(I413'elr')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I531_elr)(I421'elr')
+        Regional: CONSTANT_VNT'elr'-region(I521_elr)(I413'elr')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I531_elr)(I421'elr')
+        Regional: CONSTANT_VNT'elr'-region(I521_elr)(I413'elr')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I531_elr)(I421'elr')
+        Regional: CONSTANT_VNT'elr'-region(I521_elr)(I413'elr')
          == region
 
 
@@ -237,6 +239,8 @@ Phase XII ... Code generation
 
 ==== Phase XII.11 ... Determining grammar (G2) ====
 
+Regional: CONSTANT_VNT'elr'-region(I521_elr)(I413'elr')
+ == region
 
 
 ==== Phase XII.12 ... Compiling GPR tokens for parsing various kinds of value ====
@@ -276,9 +280,9 @@ Phase XII ... Code generation
                                         Fail: scene (~) number = nothing
                                         Fail: scene (~) number = nothing
                                 0 = objects valued property. 1 = object
-            Regional: CONSTANT_VNT'elr'-region(I531_elr)(I421'elr')
+            Regional: CONSTANT_VNT'elr'-region(I521_elr)(I413'elr')
              == region
-            Regional: CONSTANT_VNT'elr'-region(I531_elr)(I421'elr')
+            Regional: CONSTANT_VNT'elr'-region(I521_elr)(I413'elr')
              == region
 
 
@@ -320,7 +324,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 267 files written as streams.
-CPU time: 973 centiseconds
+CPU time: 975 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

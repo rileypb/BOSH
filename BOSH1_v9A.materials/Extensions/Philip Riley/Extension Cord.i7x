@@ -5,6 +5,7 @@ Include Plugging by Philip Riley.
 Use authorial modesty.
 
 The extension cord is a thing. Understand "orange" as the extension cord.
+The description of the extension cord is "A long orange extension cord, with a plug on one end and a socket on the other."
 It is pluggable. It is plug-into-able.
 
 The electrical outlet is scenery. "A standard electrical outlet, set into the wall[if the extension cord is plugged into the electrical outlet and the player encloses the extension cord]. The extension cord is plugged into it[otherwise if the extension cord is plugged into the electrical outlet]. An extension cord is plugged into it[end if]." 

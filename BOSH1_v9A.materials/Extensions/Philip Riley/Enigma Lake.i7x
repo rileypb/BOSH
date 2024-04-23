@@ -15,6 +15,8 @@ Include State Update by Philip Riley.
 
 Volume 1 - Some Stuff
 
+ELR is a region.
+
 The correct locker number is a number that varies.
 
 When play begins:
@@ -66,6 +68,11 @@ To decide what weather is a tick down from (W - a weather):
 		decide on cloudy;
 	decide on clear;
 
+weather described is a truth state that varies. weather described is false.
+
+Last every turn rule:
+	now weather described is false.
+
 Every turn when location is in ELR (this is the weather changing rule):
 	increase the weather clock by 1;
 	let original weather be the current weather;
@@ -86,22 +93,45 @@ Every turn when location is in ELR (this is the weather changing rule):
 			describe the current weather;
 
 To describe the current weather:
-	if the current weather is clear:
-		say "[one of]The sky is clear, and the moon shines down on the town[or]The moon is bright in the clear sky[or]The stars twinkle in the clear sky[at random].";
-	if the current weather is cloudy:
-		say "[one of]The sky is overcast, and the moon is hidden behind the clouds[or]The clouds obscure the moon[or]The moon occasionally peeks from behind the clouds[at random].";
-	if the current weather is drizzling:
-		say "[one of]The drizzle picks up a bit, and the air grows colder[or]The drizzle falls steadily, chilling the air[or]The chill of the drizzle seeps into [our] bones[at random].";
-	if the current weather is raining:
-		say "[one of]The rain falls steadily, soaking the ground[or]The rain falls in a steady downpour[or]The rain falls in a steady rhythm[at random].";
-	if the current weather is storming:
-		say "[one of]The storm rages, lightning flashing and thunder rolling[or]The storm rages, the wind howling and the rain falling in sheets[or]The storm rages, the air filled with the sound of thunder and the smell of ozone[at random].";
+	if weather described is false:
+		if the current weather is clear:
+			say "[one of]The sky is clear, and the moon shines down on the town[or]The moon is bright in the clear sky[or]The stars twinkle in the clear sky[or]The moon is full and bright, casting a silvery light over the town[or]Clear skies grace the town of Enigma Lake[or]The stars are out tonight[at random].";
+		if the current weather is cloudy:
+			say "[one of]The sky is overcast, and the moon is hidden behind the clouds[or]The clouds obscure the moon[or]The moon occasionally peeks from behind the clouds[or]The clouds obscure the stars[or]The sky is overcast[or]The moon is hidden behind the clouds[or]Clouds have gathered over the town[or]The sky is void of stars tonight[at random].";
+		if the current weather is drizzling:
+			say "[one of]The drizzle picks up a bit, and the air grows colder[or]The drizzle falls steadily, chilling the air[or]The chill of the drizzle seeps into [our] bones[or]The drizzle falls steadily, soaking the ground[or]The sad drizzle soaks [us][at random].";
+		if the current weather is raining:
+			say "[one of]The rain falls steadily, soaking the ground[or]The rain falls in a steady downpour[or]The rain falls in a steady rhythm[or]The cold rain pelts Faraji[or]Faraji shivers in the cold rain[or]Large drops of rain fall from the dark sky[at random].";
+		if the current weather is storming:
+			say "[one of]The storm rages, lightning flashing and thunder rolling[or]The storm rages, the wind howling and the rain falling in sheets[or]The storm rages, the air filled with the sound of thunder and the smell of ozone[or]Faraji is pelted by the storm[at random].";
+		now weather described is true;
 
 After going from somewhere (called S) to somewhere (called T) when the location is in ELR:
 	if S is indoors and T is outdoors:
 		describe the current weather;
 	continue the action;
 
+Understand "clouds/cloud" as the ceiling when the location is in ELR and the current weather is not clear.
+
+Instead of examining ceiling when the location is in ELR:
+	describe the current weather;
+
+The moon is a backdrop. It is in ELR. 
+The stars are a backdrop. They are in ELR. Understand "star" as the stars.
+
+Instead of examining the moon:
+	if the current weather is clear:
+		say "The moon is full and bright, casting a silvery light over the town.";
+	otherwise:
+		say "The moon is hidden behind the clouds.";
+	now weather described is true;
+
+Instead of examining the stars:
+	if the current weather is clear:
+		say "The stars twinkle in the clear sky.";
+	otherwise:
+		say "The stars are hidden behind the clouds.";	
+	now weather described is true;
 
 Volume 2 - Special Items
 
@@ -141,7 +171,6 @@ The snarky remark of the wristwatch is "All this way just for this?"
 
 Volume 3 - Geography
 
-ELR is a region.
 
 
 Book 0.5 - Directions
@@ -164,8 +193,11 @@ The snarky remark of the bell is "Hello! Anyone here?"
 Chiming is an action applying to one thing. Understand "ring [something]" as Chiming.
 Understand "push [bell]", "hit [bell]" as Chiming.
 
-Instead of Chiming the bell:
+Instead of Chiming the bell when the location is the Enigma Lake town hall:
 	say "Faraji rings the bell. It makes a clear, high-pitched sound. No one comes to the desk to help.";
+
+Instead of Chiming the bell:
+	say "Faraji rings the bell. It makes a clear, high-pitched sound.";
 
 Instead of Chiming something when the noun is not the bell:
 	say "That's not something [we] can ring.";
@@ -249,12 +281,12 @@ To beam description, in the park:
 		let source string be the substituted form of "[sources]";
 		if in the park:
 			if bc is 1:
-				say ".[paragraph break]A bright beam of light shoots from [source string], striking the obelisk. The crystal is glowing [crystal glow]";
+				say ".[paragraph break]A bright beam of light shoots from [source string], striking the obelisk. The crystal is glowing [crystal glow].";
 			otherwise:
-				say ".[paragraph break]Bright beams of light shoot from [source string], striking the obelisk. The crystal is glowing [crystal glow]";
+				say ".[paragraph break]Bright beams of light shoot from [source string], striking the obelisk. The crystal is glowing [crystal glow].";
 		otherwise:
 			if bc is 1:
-				say "A bright beam of light shoots from [source string], striking the obelisk in the park. The crystal is glowing [crystal glow]";
+				say "A bright beam of light shoots from [source string], striking the obelisk in the park. The crystal is glowing [crystal glow].";
 			otherwise:
 				say "Bright beams of light shoot from [source string], striking the obelisk in the park. The crystal is glowing [crystal glow].";
 
@@ -1022,7 +1054,7 @@ The tapestry is scenery in the vestry. "An intricate tapestry, depicting a scene
 The snarky remark of the tapestry is "I would prefer a velvet Elvis."
 
 Instead of pushing the tapestry when the tapestry is not pushed aside:
-	say "[We] [push] the tapestry aside, revealing a circuit breaker mounted on the wall.";
+	say "[We] [push] the tapestry aside, revealing a circuit breaker switch mounted on the wall.";
 	now the tapestry is pushed aside;
 	now the circuit breaker is in the vestry;
 
@@ -1032,7 +1064,7 @@ Instead of pushing the tapestry when the tapestry is pushed aside:
 Instead of looking behind the tapestry:
 	try pushing the tapestry;
 
-The circuit breaker is a scenery device. "A circuit breaker box is mounted on the wall." Understand "switch", "box", "safety switch", "switchgear", "disconnect switch", "electrical", "electricity", "fuse switch", "overload switch" and "trip switch" as the circuit breaker. The circuit breaker is switched off.
+The circuit breaker is a scenery device. "A single circuit breaker switch is mounted on the wall." Understand "switch", "safety switch", "switchgear", "disconnect switch", "electrical", "electricity", "fuse switch", "overload switch" and "trip switch" as the circuit breaker. The circuit breaker is switched off.
 The snarky remark of the circuit breaker is "And the Lord said, 'Let there be light.' And there was light. And then the circuit breaker tripped." 
 
 Book 17.5 - The church basement
@@ -1890,6 +1922,17 @@ The snarky remark of the Reading Room is "Perhaps there is a book here on how to
 
 The x-coordinate of the Reading Room is -2. The y-coordinate of the Reading Room is -1.
 
+The bookstore chairs are scenery enterable supporters in the Reading Room. "A number of comfortable chairs are arranged around the room."
+Understand "chair/seats/seat" as the bookstore chairs.
+
+The bookstore tables are scenery supporters in the Reading Room. "A few tables are scattered around the room." 
+Understand "table" as the bookstore tables.
+
+The bookstore staircase is a building facade in the Reading Room. "A narrow staircase leads down."
+	It fronts the Bookstore Basement.
+	It is enterable from the Reading Room.
+Understand "narrow/stairs/stair/steps/step" as the bookstore staircase.
+
 The sales counter is scenery in the Reading Room. "An ordinary sales counter".
 The snarky remark of the sales counter is "Service! Service! I demand service!"
 
@@ -1946,6 +1989,13 @@ The Bookstore Basement is below the Reading Room. It is in ELR. It is indoors. T
 The snarky remark of the Bookstore Basement is "Why did I come down here? What did I expect to find? The best you can say of this place is that the stairs also go up."
 
 The x-coordinate of the Bookstore Basement is -2. The y-coordinate of the Bookstore Basement is -1.
+
+Understand "old/crumbling/brick/bricks" as the walls when the location is the Bookstore Basement.
+
+The bookstore basement stairs is a building facade in the Bookstore Basement. "A narrow staircase leads up."
+	It fronts the Reading Room.
+	It is enterable from the Bookstore Basement.
+Understand "narrow/staircase/stair/steps/step" as the bookstore basement stairs.
 
 The extension cord is in the Bookstore Basement. 
 
