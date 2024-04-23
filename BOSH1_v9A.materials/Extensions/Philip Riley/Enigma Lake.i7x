@@ -1967,10 +1967,6 @@ For state change reporting the spotlight:
 		if the spotlight is visible:
 			say "The spotlight is now off.[line break]";
 
-Description notes for the spotlight:
-	if the spotlight is lit:
-		add "providing light" to the descriptive notes;
-
 The blue button is scenery in the Fire Station 1. "A large blue button, mounted on the wall."
 The snarky remark of the blue button is "PUSH IT PUSH IT PUSH IT!"
 
@@ -2050,7 +2046,7 @@ The description is "A book with a plain brown cover, titled 'Astral Secrets'. Th
 
 After examining Astral Secrets for the first time:
 	let resonators be a list of things;
-	repeat with item running through resonator types:
+	repeat with item running through astral resonator types:
 		if the player encloses item:
 			add item to resonators;
 	if the number of entries in resonators > 0:
@@ -2330,10 +2326,6 @@ Instead of examining the table lamp:
 		say ". The lamp is lit.";
 	otherwise:
 		say ". The lamp is dark.";
-
-Description notes for the table lamp:
-	if the table lamp is lit:
-		add "providing light" to descriptive notes;
 
 Understand "screw [the light bulb] in/into [the lamp socket]", "mount [the light bulb] on/onto/in/into [the lamp socket]" as inserting it into.
 Understand "screw [the rusty astral resonator] in/into [the lamp socket]", "mount [the rusty astral resonator] on/onto/in/into [the lamp socket]" as inserting it into.
