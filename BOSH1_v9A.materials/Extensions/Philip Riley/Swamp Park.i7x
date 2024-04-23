@@ -307,18 +307,18 @@ The snarky remark of the tattoo is "I'm sure it's a butterfly."
 Greeting response for Dave:
 	say "[Dave] grunts hello.";
 
-a five-dollar bill is a thing. The description is "A five-dollar bill." Understand "five-dollar", "dollar/bucks/dollars/buck", "bill" as a five-dollar bill.
+a Li'l Nectarine Gift Card is a thing. The description is "A five dollar gift card to the Li'l Nectarine Convenience Store."  
 
-The snarky remark of the five-dollar bill is "Gee, I hope Dave didn't break the bank."
+The snarky remark of the Li'l Nectarine Gift Card is "Gee, I hope Dave didn't break the bank."
 
 Instead of giving the wristwatch to Dave:
-	say "Dave smiles when [we] [hand] him the watch. 'I've been looking for this,' he says. 'Here you go, five bucks for your trouble.'";
-	now the player carries the five-dollar bill;
+	say "Dave smiles when [we] [hand] him the watch. 'I've been looking for this,' he says. 'Here you go, five bucks for your trouble.' He hands [us] a Li'l Nectarine Gift Card.";
+	now the player carries the Li'l Nectarine Gift Card;
 	remove the wristwatch from play;
 
 Instead of showing the wristwatch to Dave:
-	say "Dave smiles when [we] [hand] him the watch. 'I've been looking for this,' he says. 'Here you go, five bucks for your trouble.'";
-	now the player carries the five-dollar bill;
+	say "Dave smiles when [we] [hand] him the watch. 'I've been looking for this,' he says. 'Here you go, five bucks for your trouble.' He hands [us] a Li'l Nectarine Gift Card.";
+	now the player carries the Li'l Nectarine Gift Card;
 	remove the wristwatch from play;
 	
 [The how-are-you-reply of Dave is "Been better.".]
@@ -675,15 +675,15 @@ Instead of switching on the flashlight:
 Instead of switching off the flashlight:
 	now the flashlight is not lit. 
 
-Instead of buying the red screwdriver with the five-dollar bill:
-	say "The clerk takes the five-dollar bill and hands you the red screwdriver. 'Thanks,' he says.";
+Instead of buying the red screwdriver with the Li'l Nectarine Gift Card:
+	say "The clerk takes the gift card and hands you the red screwdriver. 'Thanks,' he says.";
 	now the player carries the red screwdriver;
-	remove the five-dollar bill from play;
+	remove the Li'l Nectarine Gift Card from play;
 
-Instead of buying something with something when the second noun is not the five-dollar bill:
+Instead of buying something with something when the second noun is not the Li'l Nectarine Gift Card:
 	say "[The second noun] is not legal currency.";
 
-Instead of buying something with the five-dollar bill:
+Instead of buying something with the Li'l Nectarine Gift Card:
 	if the player owns the noun:
 		say "[We] already [own] that.";
 	otherwise if someone (called the owner) owns the noun and the owner is willing to sell the noun:
@@ -694,8 +694,8 @@ Instead of buying something with the five-dollar bill:
 		say "[The owner of the noun] doesn't seem to want to sell that.";
 
 Rule for supplying a missing second noun while buying the red screwdriver with:
-	if the player encloses the five-dollar bill:
-		now the second noun is the five-dollar bill;
+	if the player encloses the Li'l Nectarine Gift Card:
+		now the second noun is the Li'l Nectarine Gift Card;
 
 The glass case is a container in the Convenience Store. it is openable. It is closed and locked. it is scenery. It is transparent. In the glass case is the flashlight, a red screwdriver, a laptop computer, and some wireless earbuds. The wireless earbuds are plural-named. 
 Understand "useful/items" as the glass case.
