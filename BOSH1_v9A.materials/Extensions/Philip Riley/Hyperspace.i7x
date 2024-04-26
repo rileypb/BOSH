@@ -1521,6 +1521,12 @@ The snarky remark is "[If the recall button is not pushed]Yeah. Am I sure it won
 The recall button can be pushed. The recall button is not pushed.
 
 Instead of pushing the recall button when the player is not in field office area and the player is not in the old root cellar:
+	repeat with I running through the list of immobile things carried by the player:
+		if the player carries I: [in case an earlier drop caused this item to be dropped as well.]
+			say "(first dropping [I])[command clarification break]";
+			silently try dropping I;
+	if the player carries an immobile thing:
+		stop the action;		
 	say "The world turns inside out, and suddenly [player's surname] is somewhere else.";
 	now the recall button is pushed;
 	if the current interlocutor is not Doris:

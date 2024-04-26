@@ -528,10 +528,10 @@ Activating the hint-resonant-origin:
 		activate;
 	deactivate;
 
-The hint-ghostly-light is a progressive hint topic. Understand "ghostly light" as the hint-ghostly-light. The printed name is "ghostly light". The progression is {"What might the ghostly light be?", "What light sources has Faraji seen?", "Look around the town for a light source.", "The light bulb in the workshed is a source of light.", "The spotlight in the wooden frame is a source of light.", "Faraji should try inserting one of the light sources into the wooden frame."}.
+The hint-ghostly-light is a progressive hint topic. Understand "ghostly light" as the hint-ghostly-light. The printed name is "ghostly light". The progression is {"What might the ghostly light be?", "What light sources has Faraji seen?", "Look around the town for a light source.", "The light bulb in the workshed is a source of light (if it's screwed into something).", "The table lamp in the department store is a source of light.", "Faraji should try inserting one of the light sources into the wooden frame."}.
 
 Activating the hint-ghostly-light:
-	if the hint-wooden-frame-resonator is exhausted and the makeshift astral resonator is nowhere and the spotlight is not in the wooden frame:
+	if the hint-wooden-frame-resonator is exhausted and the makeshift astral resonator is nowhere and the table lamp is not in the wooden frame:
 		activate;
 	deactivate;
 
@@ -560,5 +560,112 @@ hinting the hint-makeshift-astral-resonator:
 		rule succeeds with result "Faraji should read the Witnessing of Hezekiah.";
 	otherwise:
 		abide by the hinting rules for the hint-makeshift-astral-resonator-mounting;
+
+The dark basement is a progressive hint topic. Understand "dark/-- basement", "dark" as the dark basement. The printed name is "dark basement". The progression is {"There are two ways to light a dark room.", "One can wear the astral lenses to see in the dark.", "One can use a light source."}.
+
+Activating the dark basement:
+	if the church basement is witnessed in darkness and the church basement is unvisited:
+		activate;
+	deactivate;
+
+Volume 1 - Read the Book of Utilitarianism
+
+The hint-read-the-book-of-utilitarianism is a hint topic. Understand "read/-- the/-- book/-- of/-- utilitarianism", "read the/-- book" as the hint-read-the-book-of-utilitarianism. The printed name is "read the Book of Utilitarianism". 
+
+Activating the hint-read-the-book-of-utilitarianism:
+	if the Book of Utilitarianism is not successfully read and the Book of Utilitarianism is unsuccessfully read:
+		activate;
+	deactivate;
+
+Hinting the hint-read-the-book-of-utilitarianism:
+	if hint-read-bou-initial is active:
+		abide by the hinting rules for the hint-read-bou-initial;
+	otherwise if hint-read-bou-find-lamp is active:
+		abide by the hinting rules for the hint-read-bou-find-lamp;
+	otherwise if hint-read-bou-find-light-bulb is active:
+		abide by the hinting rules for the hint-read-bou-find-light-bulb;
+	otherwise if hint-read-bou-find-extension-cord is active:
+		abide by the hinting rules for the hint-read-bou-find-extension-cord;
+	otherwise if hint-read-bou-plug-in-extension-cord is active:
+		abide by the hinting rules for the hint-read-bou-plug-in-extension-cord;
+	otherwise if hint-read-bou-plug-in-lamp is active:
+		abide by the hinting rules for the hint-read-bou-plug-in-lamp;
+	otherwise if hint-read-bou-power-lamp is active:
+		abide by the hinting rules for the hint-read-bou-power-lamp;
+	otherwise if hint-read-bou-turn-on-breaker is active:
+		abide by the hinting rules for the hint-read-bou-turn-on-breaker;
+	otherwise:
+		rule succeeds with result "Faraji should go to the basement and read the Book of Utilitarianism.";
+
+The hint-read-bou-initial is an unlisted progressive hint topic. The progression is {"Faraji can't read the Book of Utilitarianism in the dark, or with the astral lenses. They should find a light source."}.
+
+Activating the hint-read-bou-initial:
+	if the hint-read-bou-initial is exhausted:
+		deactivate;
+	activate;
+
+The hint-read-bou-find-lamp is an unlisted hint topic.
+
+Activating the hint-read-bou-find-lamp:
+	if the table lamp is not handled:
+		activate;
+	deactivate;
+
+Hinting the hint-read-bou-find-lamp:
+	abide by the hinting rules for the hint-read-bou-find-lamp-progressive;
+
+The hint-read-bou-find-lamp-progressive is an unlisted progressive hint topic. The progression is {"Faraji should look around town more.", "There is a table lamp in the department store, south of the town hall."}.
+
+The hint-read-bou-find-light-bulb is an unlisted progressive hint topic. The progression is {"A lamp without a bulb isn't very useful.", "Faraji should find a light bulb.", "Faraji should look around town more.", "There is a light bulb in the workshed on the lake shore. It is screwed into an cord hanging from the ceiling."}.
+
+Activating the hint-read-bou-find-light-bulb:
+	if the light bulb is not handled:
+		activate;
+	deactivate;
+
+The hint-read-bou-find-extension-cord is an unlisted progressive hint topic. The progression is {"If the table lamp is plugged into the electrical outlet, the cord is too short to reach the basement.", "Faraji needs to find an extension cord.", "Faraji should look around town more.", "There is an extension cord in the basement of the bookstore."}.
+
+Activating the hint-read-bou-find-extension-cord:
+	if the extension cord is not handled or the table lamp is plugged into the electrical outlet:
+		activate;
+	deactivate;
+		
+The hint-read-bou-plug-in-extension-cord is an unlisted progressive hint topic. The progression is {"Faraji should plug the extension cord into the electrical outlet."}.
+
+Activating the hint-read-bou-plug-in-extension-cord:
+	if the extension cord is handled and the plug-end is not plugged into the electrical outlet:
+		activate;
+	deactivate;
+
+The hint-read-bou-plug-in-lamp is an unlisted progressive hint topic. The progression is {"Faraji should plug the table lamp into the extension cord."}.
+
+Activating the hint-read-bou-plug-in-lamp:
+	if the table lamp is handled and the table lamp is not plugged into the socket-end:
+		activate;
+	deactivate;
+
+The hint-read-bou-power-lamp is an unlisted progressive hint topic. The progression is {"Faraji should turn on the table lamp."}.
+
+Activating the hint-read-bou-power-lamp:
+	if the table lamp is not switched on:
+		activate;
+	deactivate;
+
+The hint-read-bou-turn-on-breaker is an unlisted progressive hint topic. The progression is {"Maybe the building doesn't have power.", "Perhaps there is a switch somewhere, but where?", "Maybe it's hidden.", "Faraji should look around the building for a likely hiding place.", "Faraji should look behind the tapestry in the vestry.", "FLIP SWITCH"}.
+
+Activating the hint-read-bou-turn-on-breaker:
+	if the table lamp is not powered:
+		activate;
+	deactivate;
+
+
+				
+	[ if the table lamp is not already lit and (the hint-read-bou-find-light-source is not exhausted or the table lamp is not plugged into the electrical outlet or the table lamp is not switched on or the light bulb is not in the lamp socket):
+		abide by the hinting rules for the hint-read-bou-find-light-source;
+	otherwise if the table lamp is not powered:
+		abide by the hinting rules for the hint-read-bou-breaker;
+	otherwise:
+		rule succeeds with result "Faraji should go to the basement and read the Book of Utilitarianism."; ]
+
 
 BOSH Hints ends here.

@@ -32,10 +32,10 @@ Does the player mean unplugging something pluggable:
 Before printing the locale description:
 	if the player encloses the plug-end and the socket-end is not enclosed by the location:
 		let dir be the best route from the location to the location of the socket-end;
-		say "The extension cord you are carrying trails [dir] into [the location of the holder of the socket-end].[paragraph break]";
+		say "The extension cord you are carrying[trailing text from the location to the location of the socket-end].[paragraph break]";
 	otherwise if the player encloses the socket-end and the plug-end is not enclosed by the location:
 		let dir be the best route from the location to the location of the plug-end;
-		say "The extension cord you are carrying trails [dir] into [the location of the holder of the plug-end].[paragraph break]";
+		say "The extension cord you are carrying[trailing text from the location to the location of the plug-end].[paragraph break]";
 
 Rule for writing a paragraph about the extension cord:
 	say "An extension cord lies on the [if the location is indoors]floor[otherwise]ground[end if]";
@@ -79,8 +79,28 @@ Rule for writing a paragraph about plug-end:
 		if the holder of the socket-end is enclosed by the location:
 			say ". The other end is in [the holder of the socket-end].";
 		otherwise:
-			let dir be the best route from the location to the location of the socket-end;
-			say ". The other end trails [dir] into [the location of the holder of the socket-end].";
+			say ". The other end[trailing text from the location to the location of the holder of the socket-end].";
+
+To say trailing text from (A - a room) to (B - a room):
+	if A is First Utilitarian Church of Enigma Lake:
+		if B is the vestry:
+			say " trails east into the vestry";
+		otherwise if B is the steeple:
+			say " trails up into the steeple";
+		otherwise if B is Lake Street by the park:
+			say " trails west out of the church";
+	otherwise if A is the vestry:
+		if B is First Utilitarian Church of Enigma Lake:
+			say " trails west into the church";
+	otherwise if A is the steeple:
+		if B is First Utilitarian Church of Enigma Lake:
+			say " trails down into the church";
+	otherwise if A is Lake Street by the park:
+		if B is First Utilitarian Church of Enigma Lake:
+			say " trails east into the church";
+	otherwise if A is the church basement:
+		if B is First Utilitarian Church of Enigma Lake:
+			say " trails up into the church";
 
 Rule for writing a paragraph about socket-end:
 	if the socket-end is in the location:
@@ -111,22 +131,20 @@ Rule for writing a paragraph about socket-end:
 		if the holder of the plug-end is enclosed by the location:
 			say ". The other end is in [the holder of the plug-end]."; 
 		otherwise:
-			let dir be the best route from the location to the location of the plug-end;
-			say ". The other end trails [dir] into [the location of the holder of the plug-end].";
+			say ". The other end[trailing text from the location to the location of the holder of the plug-end].";
 
 Rule for writing a paragraph about the extension cord:
 	set the locale priority of the extension cord to 0;
 
 Book - Definitions
 
+test recall with "gonear pulpit/purloin orange extension cord/purloin table lamp/purloin recall button/plug cord in/plug lamp into cord".
+
 Definition: a thing is immobile:
-	if it is fixed in place:
-		yes;
-	if it is plugged into something fixed in place:
-		yes;
-	if it accepts something fixed in place:
-		yes;
-	no;
+	if it is fixed in place, yes;
+	if it is plugged into the electrical outlet, yes;
+	if it is plugged into the socket-end and the plug-end is plugged into the electrical outlet, yes;
+	if it is the socket-end and the plug-end is plugged into the electrical outlet, yes;
 
 Definition: a thing is mobile if it is not immobile.
 
@@ -302,7 +320,7 @@ After dropping the plug-end:
 
 Instead of taking the plug-end:
 	if the plug-end is plugged into something immobile (called the socket):
-		puts "We can't take the plug end while it's plugged into [the socket].";
+		puts "[We] can't take the plug end while it's plugged into [the socket].[line break]";
 		stop the action;
 	otherwise if the plug-end is plugged into something (called the socket) and the socket is not the socket-end:
 		say "(also taking [the socket])[command clarification break]";

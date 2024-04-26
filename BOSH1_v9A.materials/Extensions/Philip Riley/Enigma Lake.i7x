@@ -1106,7 +1106,6 @@ The church basement is below the First Utilitarian Church of Enigma Lake. It is 
 The church basement can be witnessed in darkness.
 
 After going to church basement:
-	say "in church basement, in darkness = [if in darkness]true[otherwise]false[end if].";
 	if in darkness:
 		now the church basement is witnessed in darkness;
 	continue the action;
@@ -1784,7 +1783,7 @@ The snarky remark of the small bed is "I wonder if they got this from one of tho
 The rickety wardrobe is a closed openable enterable scenery container in the Second Floor of the Horton House. "A rickety wardrobe stands against a wall. It is [if open]open[otherwise]closed[end if]."
 The snarky remark of the rickety wardrobe is "Don't climb into it. There's probably something much worse than a lion and a witch in there."
 
-The wooden frame is a container. The description is "A piece of wood, about two feet long with three holes carved in it. It looks like the holes are meant to hold things. Leather straps appear to be meant to hold those things in the frame."
+The wooden frame is a container. The description is "A piece of wood, about two feet long with three holes carved in it. It looks like the holes are meant to hold things. Leather straps appear to be meant to hold those things in the frame." Understand "container" as the wooden frame.
 The snarky remark of the wooden frame is "This couldn't possibly be useful. I should just leave it here."
 
 The stairs-second-floor is scenery in the Second Floor of the Horton House. "A staircase leads down."
@@ -1932,7 +1931,7 @@ The x-coordinate of the Fire Station 1 is -2. The y-coordinate of the Fire Stati
 The ladder is in Fire Station 1. "A ladder rests against the wall." The description is "A wooden ladder, about 6 feet long. It looks sturdy and well-maintained."
 The snarky remark of the ladder is "What? No hook?".   
 
-The spotlight is in the Church Basement. The description is "A small spotlight, designed to be hand-held. On the side is the branding 'Spectre'. The light has a short cord ending in a standard North American 120V AC plug." It is pluggable.
+The spotlight is a thing. The description is "A small spotlight, designed to be hand-held. On the side is the branding 'Spectre'. The light has a short cord ending in a standard North American 120V AC plug." It is pluggable.
 The snarky remark of the spotlight is "It's awfully small for a spotlight. More like a specklight."
 
 Instead of examining the spotlight:
@@ -2308,7 +2307,7 @@ The snarky remark of Rolle's Department Store is "I guess the sale is over."
 
 The x-coordinate of Rolle's Department Store is 0. The y-coordinate of Rolle's Department Store is -2.
 
-The table lamp is a device in Rolle's Department Store. "A scuffed-up table lamp sits discarded in a corner." The description is "A table lamp, with a brass base and missing a shade. It's meant to plug into an outlet. It looks like it's seen better days[if the table lamp is lit]. It is lit[otherwise]. It is dark[end if]." 
+The table lamp is a device in Rolle's Department Store. "A scuffed-up table lamp sits discarded in a corner." The description is "A table lamp, with a brass base and missing a shade. It's meant to plug into an outlet. It looks like it's seen better days. On the base is the branding 'Spectre'[if the table lamp is lit]. It is lit[otherwise]. It is dark[end if]." 
 It is pluggable. 
 
 Instead of examining the table lamp:
@@ -2377,6 +2376,12 @@ For state change reporting the table lamp:
 	otherwise:
 		if the table lamp is visible:
 			puts "The table lamp is now unlit.[line break]";
+
+Description notes for the table lamp:
+	If the light bulb is in the lamp socket:
+		add "with a bulb in the socket" to descriptive notes;
+	otherwise:
+		add "missing a bulb" to descriptive notes;
 
 The gleaming floor is scenery in Rolle's Department Store. "Someone has polished it spotless, despite the looming destruction of the store. That's dedication."
 
@@ -2870,8 +2875,8 @@ After inserting the astral lenses into the wooden frame:
 	if the number of things contained by the wooden frame is 3:
 		make the makeshift astral resonator;
 
-After inserting the spotlight into the wooden frame:
-	say "Faraji inserts the spotlight into the wooden frame. It fits snugly into a round hole cut into the wood. The frame now holds [the list of things contained by the wooden frame].";
+After inserting the table lamp into the wooden frame:
+	say "Faraji inserts the table lamp into the wooden frame. It fits snugly into a round hole cut into the wood. The frame now holds [the list of things contained by the wooden frame].";
 	if the number of things contained by the wooden frame is 3:
 		make the makeshift astral resonator;
 
@@ -2887,10 +2892,10 @@ To make the makeshift astral resonator:
 		now the makeshift astral resonator is in the location;
 	now the wooden frame is nowhere;
 	say line break;
-	say "Faraji uses the leather straps to secure the contents of the frame. Suddenly, the frame and the objects within it glow with a bright light. Faraji is momentarily blinded. When they can see again, the frame and its contents have fused into what seems to be a [makeshift astral resonator].";
+	say "Faraji uses the leather straps to secure the contents of the frame. Suddenly, the frame and the objects within it glow with a bright light. Faraji is momentarily blinded. When they can see again, the frame and its contents have fused into a [makeshift astral resonator].";
 
 Check inserting something into the wooden frame:
-	if the noun is not the astral lenses and the noun is not the spotlight and the noun is not the tuning fork:
+	if the noun is not the astral lenses and the noun is not the table lamp and the noun is not the tuning fork:
 		say "That doesn't fit into the wooden frame." instead;
 
 

@@ -2375,6 +2375,7 @@ Carry out frotzing:
 
 Report frotzing:
 	say "Now [the noun] is lit.";
+
 	
 Volume 2 - Test command tweak for clean transcripts
 
