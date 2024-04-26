@@ -60,6 +60,7 @@ Include I Can Dig It by Philip Riley.
 Include Overlook by Philip Riley.
 
 Include Gender Options by Nathanael Nerode.   
+Include Scenery Supporters by Philip Riley.
 
 Include Make Test by Philip Riley.
 
@@ -384,7 +385,7 @@ Book 4 - Special Tweaks
 
 the can't greet current interlocutor rule response (A) is "[We] [don't] generally talk to [ourselves].".
 the can't greet yourself rule response (A) is "[We] [don't] generally talk to [ourselves].".
-[The describe what's on scenery supporters in room descriptions rule does nothing.]
+[ The describe what's on scenery supporters in room descriptions rule does nothing. ]
 [the can't take what's fixed in place rule response (A) is "That can't be picked up.".]
 the can't switch on unless switchable rule response (A) is "That can't be switched on and off.".  
 
@@ -1083,7 +1084,7 @@ There is a fluorescent light source in the front office called bfo-light.
 
 Understand "storefront" as the front office.
 
-The description of front office is "It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
+The description of front office is "It's really a small storefront done up to resemble an office. A store sales counter serves as the [BOSH front desk], behind which are located [shelves of office supplies] and a row of drawers. There are also a [couch] and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a [coatrack]. [Photos] on the walls picture the Bureau in better days. A stack of used and empty [cardboard boxes] sits in one corner.
 
 The exit is to the east, while the office continues via a hallway to the west.".
 
@@ -1569,7 +1570,7 @@ Rule for deciding whether all includes a thing (called T) while taking:
 				it does not;
 	make no decision;
 	
-[ The describe what's on scenery supporters in room descriptions rule is not listed in any rulebook. ]
+The describe what's on scenery supporters in room descriptions rule is not listed in any rulebook.
 
 
 The closet door is a door. It is east of Moira's office and west of the utility closet. It is closed, openable, locked, and lockable. It is scenery.
@@ -1637,10 +1638,10 @@ Every turn when Moira interjection timer is not 0 and Moira is in the location:
 	if Moira interjection timer is 0:
 		interject Moira;
 
-After discussing when Moira is in the location:
+Before discussing when Moira is in the location:
 	now Moira interjection timer is a random number from 2 to 5;
 
-After quizzing someone about something when Moira is in the location:
+Before quizzing someone about something when Moira is in the location:
 	now Moira interjection timer is a random number from 2 to 5;
 	continue the action;
 
@@ -1845,10 +1846,10 @@ Every turn when Klimp interjection timer is not 0 and Klimp is in the location:
 	if klimp interjection timer is 0:
 		interject Klimp;
 
-After discussing when Klimp is in the location:
+Before discussing when Klimp is in the location:
 	now Klimp interjection timer is a random number from 2 to 5;
 
-After quizzing someone about something when Klimp is in the location:
+Before quizzing someone about something when Klimp is in the location:
 	now Klimp interjection timer is a random number from 2 to 5;
 	continue the action;
 

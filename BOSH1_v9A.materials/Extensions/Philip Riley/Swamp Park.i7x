@@ -370,10 +370,10 @@ Every turn when Dave interjection timer is not 0 and Dave is in the location and
 	if Dave interjection timer is 0:
 		interject Dave;
 
-After discussing when Dave is in the location:
+Before discussing when Dave is in the location:
 	now Dave interjection timer is a random number from 2 to 5;
 
-After quizzing someone about something when Dave is in the location:
+Before quizzing someone about something when Dave is in the location:
 	now Dave interjection timer is a random number from 2 to 5;
 	continue the action;
 
@@ -745,10 +745,10 @@ Every turn when Clerk interjection timer is not 0 and Clerk is in the location:
 	if Clerk interjection timer is 0:
 		interject Clerk;
 
-After discussing when Clerk is in the location:
+Before discussing when Clerk is in the location:
 	now Clerk interjection timer is a random number from 2 to 5;
 
-After quizzing someone about something when Clerk is in the location:
+Before quizzing someone about something when Clerk is in the location:
 	now Clerk interjection timer is a random number from 2 to 5;
 	continue the action;
 

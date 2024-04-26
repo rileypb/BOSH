@@ -15,9 +15,9 @@ After saying hello to Dave for the first time:
     say "Faraji gives the pawn shop owner a curt nod.";
     say "'Hey,' Dave says.";
 
-After saying hello to Margaret Chao for the first time:
+[ After saying hello to Margaret Chao for the first time:
 	say "Faraji says, 'Hi, Margaret.'";
-	say "Margaret looks up from her work. 'Hello, Faraji,' she says.";
+	say "Margaret looks up from her work. 'Hello, Faraji,' she says."; ]
 
 After saying hello to someone for the first time:
 	do nothing;

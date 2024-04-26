@@ -508,10 +508,10 @@ Every turn when Maggie interjection timer is not 0 and Maggie is in the location
 	if Maggie interjection timer is 0:
 		interject Maggie;
 
-After discussing when Maggie is in the location:
+Before discussing when Maggie is in the location:
 	now Maggie interjection timer is a random number from 2 to 5;
 
-After quizzing someone about something when Maggie is in the location:
+Before quizzing someone about something when Maggie is in the location:
 	now Maggie interjection timer is a random number from 2 to 5;
 
 To interject Maggie:
@@ -793,10 +793,10 @@ Every turn when Minerva interjection timer is not 0 and Minerva is in the locati
 	if Minerva interjection timer is 0:
 		interject Minerva;
 
-After discussing when Minerva is in the location:
+Before discussing when Minerva is in the location:
 	now Minerva interjection timer is a random number from 2 to 5;
 	
-After quizzing someone about something when Minerva is in the location:
+Before quizzing someone about something when Minerva is in the location:
 	now Minerva interjection timer is a random number from 2 to 5;
 
 To interject Minerva:
@@ -1282,6 +1282,7 @@ After giving Christy's note to Doris:
 	
 	'So. I'm sending you back to 1954, right before the flooding of Enigma Lake, and you'll find whatever Daniels left for us to find. Maybe we can stage a rescue. Why 1954? I'd rather not risk a longer temporal jaunt before we know what we're dealing with.'";
 	queue Doris with how will i find him;
+	now Christy's note is nowhere;
 
 about the Dragon is a questioning quip.
 	Understand "what about the/-- Dragon" as about the Dragon.
@@ -1369,10 +1370,10 @@ Every turn when Doris interjection timer is not 0 and Doris is in the location:
 	if Doris interjection timer is 0:
 		interject Doris;
 
-After discussing when Doris is in the location:
+Before discussing when Doris is in the location:
 	now Doris interjection timer is a random number from 2 to 5;
 
-After quizzing someone about something when Doris is in the location:
+Before quizzing someone about something when Doris is in the location:
 	now Doris interjection timer is a random number from 2 to 5;
 
 To interject Doris:
@@ -1476,10 +1477,10 @@ Every turn when Christy interjection timer is not 0 and Christy is in the locati
 	if Christy interjection timer is 0:
 		interject Christy;
 
-After discussing when Christy is in the location:
+Before discussing when Christy is in the location:
 	now Christy interjection timer is a random number from 2 to 5;
 
-After quizzing someone about something when Christy is in the location:
+Before quizzing someone about something when Christy is in the location:
 	now Christy interjection timer is a random number from 2 to 5;
 
 To interject Christy:

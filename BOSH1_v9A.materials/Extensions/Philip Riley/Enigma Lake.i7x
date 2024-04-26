@@ -594,10 +594,10 @@ Every turn when Hutz interjection timer is not 0 and Hutz is in the location:
 	if Hutz interjection timer is 0:
 		interject Hutz;
 
-After discussing when Hutz is in the location:
+Before discussing when Hutz is in the location:
 	now Hutz interjection timer is a random number from 2 to 5;
 
-After quizzing someone about something when Hutz is in the location:
+Before quizzing someone about something when Hutz is in the location:
 	now Hutz interjection timer is a random number from 2 to 5;
 	continue the action;
 
