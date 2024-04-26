@@ -212,7 +212,7 @@ Margaret interjection	used (a truth state)
 "Margaret pauses to look at the photos on the wall. 'Everyone looks so happy. I wonder what they're doing now. Well, except you, Moira, and the Chief. I know what you're doing now.'"	false
 "Margaret pulls a box of staples out of a box. 'I don't know why we have so many staples. We never use them.'"	false
 "Margaret grimaces. 'I went over to look at the pawn shop, and the guy tried to hit on me. I told him I was married, but he didn't care. Do you think I'm bad for lying?'"	false
-"Margaret looks at the phone. 'I can't believe they're going to take away our smart phones. I don't know how I'm going to keep in touch with my friends.'"	false
+"Margaret looks at her phone. 'I can't believe they're taking away our smart phones. I don't know how I'm going to keep in touch with my friends.'"	false
 "Margaret looks at the coffee table. 'I can't believe they charged us $8 for that. It's not even real wood.'"	false
 "Margaret looks dreamy. 'Some day I want to go to Budapest, or Istanbul. They both sound so exotic.'"	false			
 
