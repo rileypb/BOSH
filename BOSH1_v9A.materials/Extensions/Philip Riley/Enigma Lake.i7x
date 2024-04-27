@@ -1659,9 +1659,9 @@ The solvay-road-scenery is unsnarkable.
 
 Book 25 - Horton Family House Kitchen
 
-The Horton House door is a closed openable locked lockable scenery door. It is west of Solvay Road Leading Out Of Town and east of Horton Family House Kitchen. The Horton House door has matching key the old copper key. 
+The old wooden door is a closed openable locked lockable scenery door. It is west of Solvay Road Leading Out Of Town and east of Horton Family House Kitchen. The old wooden door has matching key the old copper key. 
 "A modest wooden door leads into the Horton family house. It has been fitted with a modern lock."
-The snarky remark of the Horton House door is "No doorbell? How quaint."
+The snarky remark of the old wooden door is "No doorbell? How quaint."
 
 Horton Family House Kitchen is a leavable room. It is in ELR. It is unleavable. It is indoors. "The house is a modest colonial-period building. Strangely, the furnishings of the house have been left in place, despite the coming flood. An open hearth is in the center of the room, with a few chairs and a table. The parlor is to the south, and a narrow staircase leads up. To the east the front door leads out to Solvay Road, while another exit leads west to the family graveyard." 
 
@@ -2179,7 +2179,7 @@ The snarky remark is "You know what's fun? Tapping a tuning fork and holding it 
 The music store counter is a scenery supporter in Fresnel's Music. "A typical store counter, bare of most items." 
 It is exposed.
 
-striking is an action applying to one thing. Understand "strike [the tuning fork]", "sound [the tuning fork]", "ring [the tuning fork]" as striking.
+striking is an action applying to one thing. Understand "strike [the tuning fork]", "sound [the tuning fork]", "ring [the tuning fork]", "tap [the tuning fork]", "hit [the tuning fork]" as striking.
 Carry out striking the tuning fork:
 	say "Faraji strikes the tuning fork. It sounds a pure 440 Hz tone. Yes, Faraji has perfect pitch.";
 	if the player encloses the rusty astral resonator:
@@ -2203,7 +2203,7 @@ Carry out striking the tuning fork:
 Book 33 - Henry's Hot Skillet
 
 Henry's Hot Skillet is a room. It is in ELR. It is indoors.
-The description is "This is the epitome of the homey small-town diner of times gone by, except for the lack of all furniture, cooking implements, food, decor, and so on. There is a staircase leading up, and the exit is north. A pair of insulated wires hangs from the ceiling at one end of the counter[if the clean battery is hooked up]. The wires are attached to a battery resting on the counter[end if][if the clean battery is on the lunch counter and the clean battery is hooked up]. The wires are attached to a battery resting on the counter[otherwise if the clean battery is on the lunch counter]. A battery rests on the counter[end if]." 
+The description is "This is the epitome of the homey small-town diner of times gone by, except for the lack of all furniture, cooking implements, food, decor, and so on. There is a staircase leading up, and the exit is north. A pair of insulated wires hangs from the ceiling at one end of the counter[if the clean battery is on the lunch counter and the clean battery is hooked up]. The wires are attached to a battery resting on the counter[otherwise if the clean battery is on the lunch counter]. A battery rests on the counter[end if]." 
 Understand "diner/restaurant" as Henry's Hot Skillet.
 
 The diner staircase is scenery in Henry's Hot Skillet. "A staircase leads up, probably to the roof." 
@@ -2247,6 +2247,11 @@ Instead of tying the wires to the clean battery when the clean battery is not ho
 
 Instead of tying the wires to the clean battery when the clean battery is hooked up:
 	say "The wires are already attached to the battery.";
+
+Understand "connect [something] to [something]" as tying it to.
+
+Instead of tying the table lamp to the wires:
+	say "The lamp doesn't have any exposed wires to attach to.";
 
 Check tying the clean battery to the wires:
 	try tying the wires to the clean battery instead;
@@ -2473,6 +2478,7 @@ The snarky remark of the gym door is "[if the gym door is locked]C'mon, I need t
 The x-coordinate of the public gymnasium is 2. The y-coordinate of the public gymnasium is 0.
 
 The public gymnasium is in ELR. "There is a basketball court and a weight training area. A front desk is next to the front entrance to the west. Some kind of book sits on the front desk. [We] may also go down to the basement."
+Understand "gym" as the public gymnasium.
 The snarky remark of the public gymnasium is "This is the kind of government largesse that bankrupted 1950s America. For reals."
 The public gymnasium is a leavable room. The egress is west.
 
@@ -2657,6 +2663,13 @@ Carry out locker-opening a number with the red key:
 		now the player carries the old copper key;
 	otherwise:
 		say "The locker contains nothing but some old gym clothes.";
+
+Locker-examining is an action applying to one number. Understand "examine locker/-- number/-- [number]", "look at locker number/-- [number]", "inspect locker/-- number/-- [number]" as locker-examining when the location is the gym basement.
+
+Check locker-examining:
+	if the number understood < 1 or the number understood > 100:
+		say "The lockers are numbered 1 to 100." instead;
+	say "There's nothing special about the locker.";
 
 Check searching the bank of lockers:
 	say "The lockers are numbered 1 to 100. [We] [are] hardly going to try opening every locker. There must be a better way to go about this." instead;

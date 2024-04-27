@@ -362,7 +362,7 @@ hint-wires is a hint topic. Understand "wires", "wire" as the hint-wires. The pr
 
 hint-wires-first is an unlisted progressive hint topic. The progression is {"I wonder what was connected to the wires before.", "Faraji might look on the roof for a clue.", "It looks like the wires run from the rooftop aerial. Too bad there's no TV to hook up.", "What could Faraji connect to the wires instead?", "Faraji should have a close look at the aerial.", "It looks like there's a strange socket attached to the aerial.", "Maybe it needs power.", "Perhaps Faraji could use the wires to supply power to the aerial.", "Faraji should find a power source to connect to the wires.", "Has Faraji had a look at the abandoned truck in the northeastern part of town?", "Faraji should look under the hood of the truck."}
 
-hint-wires-dirty is an unlisted progressive hint topic. The progression is {"It doesn't seem like the truck battery will work.", "Faraji should look for a clean battery.", "Where else could Faraji find a battery?", "How about Faraji's car? It's parked right outside the BOSH offices."}.
+hint-wires-dirty is an unlisted progressive hint topic. The progression is {"Maybe a battery?", "It doesn't seem like the truck battery will work.", "Faraji should look for a clean battery.", "Where else could Faraji find a battery?", "How about Faraji's car? It's parked right outside the BOSH offices."}.
 
 hint-wires-clean is an unlisted progressive hint topic. The progression is {"Faraji needs to get back to Enigma Lake and Henry's.", "Then they can connect the battery to the wires.", "ATTACH BATTERY TO WIRES"}.
 

@@ -84,7 +84,7 @@ Book - Default movement rules
 
 Slack rules is a rulebook. 
 
-[ Slack when the player encloses something pluggable (called the plug):
+Slack when the player encloses something pluggable (called the plug):
 	if something (called the socket) accepts the plug and the player does not enclose the socket:
 		say "[We] can't leave while carrying [the plug], which is plugged into [the socket].";
 		rule fails;
@@ -92,7 +92,7 @@ Slack rules is a rulebook.
 Slack when the player encloses something plug-into-able (called the socket):
 	if something (called the plug) is plugged into the socket and the player does not enclose the plug:
 		say "[We] can't leave while carrying [the socket], which has [the plug] plugged into it.";
-		rule fails; ]
+		rule fails;
 
 Check going:
 	if the player encloses something pluggable or the player encloses something plug-into-able:
