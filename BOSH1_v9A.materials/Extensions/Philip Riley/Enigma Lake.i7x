@@ -2055,6 +2055,26 @@ After examining the bookshelves:
 	if the book-index is the number of entries in the booklist:
 		now book-index is 0.
 
+bookstore-reading is an action applying to one thing. Understand "examine [any bookstore-book]", "read [any bookstore-book]", "look at [any bookstore-book]", "look [any bookstore-book]" as bookstore-reading.
+
+Rule for reaching inside the Room of Stuff while bookstore-reading:
+	allow access;
+
+Rule for reaching inside the Room of Stuff while taking when the location is the Reading Room:
+	allow access;
+
+Carry out bookstore-reading:
+	say "[italic type][title of the noun][roman type] by [author of the noun][line break]Genre: [genre of the noun]
+
+	[blurb of the noun][line break]";
+
+Rule for deciding the scope of the player while taking when the location is the Reading Room:
+	repeat with item running through the booklist:
+		place item in scope;
+
+Check taking a bookstore-book:
+	say "Faraji decides to save space for more important items." instead;
+
 book-index is a number that varies. book-index is 0.
 
 To say book report:
