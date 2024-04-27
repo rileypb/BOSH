@@ -12,24 +12,24 @@ A thing can be an edifice. A thing is usually not an edifice.
 Definition: A thing is unfeelable if it is not feelable.
 
 Check touching something unfeelable:
-    say "[We] can't touch that." instead;
+    say "[We] can't touch [regarding the noun][those]." instead;
 
 Check touching something far away:
-    say "[We] [can't] reach that." instead;
+    say "[We] [can't] reach [regarding the noun][those]." instead;
 
 Check touching something obstructed:
-    say "[We] can't reach that." instead;
+    say "[We] can't reach [regarding the noun][those]." instead;
 
 Check taking something unfeelable:
-    say "[We] can't take that." instead;
+    say "[We] can't take [regarding the noun][those]." instead;
 
 Check taking something far away:
-    say "[We] can't reach that." instead;
+    say "[We] can't reach [regarding the noun][those]." instead;
 
 Check taking something obstructed:
-    say "[We] can't reach that." instead;
+    say "[We] can't reach [regarding the noun][those]." instead;
 
 Check taking an edifice:
-    say "That's much too massive to take." instead;  
+    say "[regarding the noun][Those] [are] much too massive to take." instead;  
 
 Can't Touch This ends here.

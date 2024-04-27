@@ -46,7 +46,10 @@ Ceiling description of a room (called R) (this is the standard ceiling descripti
 		rule succeeds with result "[We] [see] nothing special about the ceiling." (A);
 	if location is outdoors:
 		rule succeeds with result "There's nothing up there but sky." (B);
-	rule succeeds with result "There is no ceiling to see." (C);		
+	rule succeeds with result "There is no ceiling to see." (C);	
+
+Instead of taking the ceiling when the location is outdoors (this is the block taking the sky rule):
+	say "You can't take the sky." (A);	
 
 To decide what text is the ceiling description for (R - a room):
 	decide on the text produced by the ceiling description rules for R;

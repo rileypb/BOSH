@@ -33,7 +33,7 @@ The Office_ is an edifice.
 Instead of entering the office_:
 	try going west;
 	
-Margaret at a distance is a part of the Office_.  She is privately-named. The printed name is "Margaret". The description is "Even from here one can sense [Margaret]'s irrepressible energy." Understand "Margaret/Chao" as Margaret at a distance when the location is Parking Lot South. She is female. She is not neuter.
+Margaret at a distance is a woman. She is part of the Office_.  She is privately-named. The printed name is "Margaret". The description is "Even from here one can sense [Margaret]'s irrepressible energy." Understand "Margaret/Chao" as Margaret at a distance when the location is Parking Lot South. She is female. She is not neuter.
 The snarky remark of Margaret at a distance is "Better get in there and slow her down before she explodes."
 Margaret at a distance is obstructed.
 
