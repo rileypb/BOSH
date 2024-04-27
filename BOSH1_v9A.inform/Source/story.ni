@@ -46,6 +46,7 @@ Include Building Facades by Philip Riley.
 Include Snarky Remarks by Philip Riley.
   	
 Include Followup Questions by Philip Riley.
+Include Scenery Supporters by Philip Riley.
  
 Include Simple Conversation by Philip Riley.
 Include Hyperspace by Philip Riley.	
@@ -60,7 +61,6 @@ Include I Can Dig It by Philip Riley.
 Include Overlook by Philip Riley.
 
 Include Gender Options by Nathanael Nerode.   
-Include Scenery Supporters by Philip Riley.
 
 Include Make Test by Philip Riley.
 

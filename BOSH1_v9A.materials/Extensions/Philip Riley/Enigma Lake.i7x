@@ -2,6 +2,7 @@ Enigma Lake by Philip Riley begins here.
 
 Use authorial modesty.
 
+Include Swimming by Philip Riley.
 Include Building Facades by Philip Riley.
 Include Scheduled People by Philip Riley.
 Include Secret Doors by Gavin Lambert.
@@ -240,6 +241,9 @@ The work schedule is scenery in the Enigma Lake town hall.
 +--------------------------------+".
 The snarky remark of the work schedule is "What? I don't get any hours this week?"
 
+After examining the work schedule:
+	say "Faraji notices something behind the desk.";
+
 The building is scenery in the Enigma Lake town hall.
 
 Instead of examining the building:
@@ -311,7 +315,7 @@ The snarky remark of the shadows is "I'm not afraid of the dark. I'm afraid of w
 The obelisk is scenery in Enigma Park. Understand "monument/names/citizens" as the obelisk. "Its faux Egyptian design is incongruous adjacent to the adamantly traditional town hall. [We] [can] just make out a small crystal adornment rising from the top."
 The snarky remark of the obelisk is "I don't know what it is, but obelisks always seem to be bad news."
 
-The adornment is scenery in Enigma Park. "From what [we] can make out, it's a clear crystal held aloft by some kind of metal fitting." Understand "crystal" as the adornment.
+The adornment is scenery in Enigma Park. "From what [we] can make out, it's a clear crystal held aloft by some kind of metal fitting." Understand "crystal/ornament/decoration" as the adornment.
 The snarky remark of the adornment is "I'm not going to touch it. I've seen enough movies to know that's a bad idea."
 
 Climbing up is an action applying to one thing. Understand "climb up/-- [something]" as climbing up.
@@ -403,6 +407,23 @@ The snarky remark of Horton facade is "Looks like just the kind of place to find
 
 Book 8 - Solvay Road by the lake
 
+The lake-backdrop is a backdrop. It is in Solvay-Road-by-the-lake, lake shore west, lake shore north of the park, and lake at ridge. It is privately-named. The printed name is "lake". Understand "lake/water", "enigma lake" as the lake-backdrop. "[description of lake]."
+
+Rule for supplying a missing noun while swimming when lake-backdrop is in the location:
+	now the noun is lake-backdrop;
+
+Instead of swimming lake-backdrop:
+	try entering lake-backdrop;
+
+Instead of entering lake-backdrop:
+	say "Things aren't that desperate yet." instead; 
+
+Instead of entering lake-backdrop when the location is lake at ridge:
+	say "Faraji will have to go west to reach the water." instead;
+
+Rule for clarifying the parser's choice of the lake-backdrop:
+	do nothing;
+
 Solvay-Road-by-the-lake is northwest of Solvay Road leading out of town. It is in ELR. It is outdoors. The preposition is "walking on". It is privately-named. The printed name is "Solvay Road by the lake". Understand "Solvay/Road/by/the/lake" as Solvay-Road-by-the-lake.
 
 The description is "Solvay Road runs by the lake shore here. It continues out of town to the northwest, while to the southeast it leads back into town. A dirty shack stands opposite the lake to the west. A path along the shore leads to the east."
@@ -418,20 +439,19 @@ The foliage is scenery in Solvay-Road-by-the-lake. "The foliage is thick and gre
 The foliage is unsnarkable.
 
 To say description of lake:
-	if the current weather is clear:
-		say "The lake is calm and still, reflecting the moonlight like a mirror";
-	if the current weather is cloudy:
-		say "The lake is dark and still, reflecting the overcast sky";
-	if the current weather is drizzling:
-		say "The continuous drizzle falls on the lake, creating ripples on the surface";
-	if the current weather is raining:
-		say "The rain falls steadily on the lake, creating ripples on the surface";
-	if the current weather is storming:
-		say "The storm rages over the lake, lightning flashing and thunder rolling";
-
-The lake-scenery-1 is scenery in Solvay-Road-by-the-lake. "[description of lake].". It is privately-named. The printed name is "lake".
-The snarky remark of the lake-shore-1 is "It's just waiting for me to look away, and then WHAM! A flood."
-
+	if the location is lake at ridge:
+		say "The lake is a little too far to the west to see clearly.";
+	otherwise:
+		if the current weather is clear:
+			say "The lake is calm and still, reflecting the moonlight like a mirror";
+		if the current weather is cloudy:
+			say "The lake is dark and still, reflecting the overcast sky";
+		if the current weather is drizzling:
+			say "The continuous drizzle falls on the lake, creating ripples on the surface";
+		if the current weather is raining:
+			say "The rain falls steadily on the lake, creating ripples on the surface";
+		if the current weather is storming:
+			say "The storm rages over the lake, lightning flashing and thunder rolling";
 
 The shack facade is a building facade. It is in Solvay-Road-by-the-lake. It is privately-named. The printed name is "shack". Understand "shack" as the shack facade. "A dirty shack stands opposite the lake."
 	The shack facade fronts the dirty shack.
@@ -837,11 +857,12 @@ Instead of examining the radio-obelisk-facade:
 	otherwise if beam count is 3:
 		say " Three beams of light are focused on the obelisk, one from here and two from elsewhere, striking the crystal adornment at its apex. The crystal is glowing brilliantly.";
 	otherwise:
-		say " The crystal adornment at the apex of the obelisk is dark.";
+		say line break;
 
 Book 13 - Broadcast Booth
 
 The broadcast booth is south of Radio Station WGXC. It is in ELR. It is indoors. "The broadcast booth is a small room with a window looking out into the rest of the station. A microphone is set up on a stand, and a soundboard is set into the wall. The exit is to the north."
+It is a leavable room. The egress is north.
 The snarky remark of the broadcast booth is "I wonder if I can get a request in."
 The x-coordinate of the broadcast booth is 2. The y-coordinate of the broadcast booth is -3.
 
@@ -1339,7 +1360,7 @@ Book 19 - Lake at Ridge
 
 the Lake at Ridge is north of Lake Street by the Park. It is in ELR. It is outdoors.
 The printed name is "Lake Street and Ridge Road". The preposition is "at the intersection of".
-"[if player is in the abandoned truck]There is a glove compartment on the passenger side, [glove compartment state].[paragraph break][end if]The intersection lies at the edge of the lake. Lake Street runs south into town, while Ridge Road heads off into the darkness east of here. A little path along the lake shore is to the west."
+"[if player is in the abandoned pickup truck]There is a glove compartment on the passenger side, [glove compartment state].[paragraph break][end if]The intersection lies at the edge of the lake. Lake Street runs south into town, while Ridge Road heads off into the darkness east of here. A little path along the lake shore is to the west."
 The snarky remark of the Lake at Ridge is "What ridge? I don't see a ridge."
 The x-coordinate of the Lake at Ridge is 1. The y-coordinate of the Lake at Ridge is 2.
 
@@ -1352,16 +1373,16 @@ To say glove compartment state:
 	otherwise:
 		say "closed";
 
-After opening the abandoned truck:
+After opening the abandoned pickup truck:
 	say "Faraji opens the door of the abandoned truck.";
 
 
-An abandoned pickup truck is a fixed in place closed enterable openable container in Lake at Ridge. 
+An abandoned pickup truck is a fixed in place closed enterable openable transparent container in Lake at Ridge. 
 "There is an abandoned pickup truck at the side of the road[if the hood is open]. The hood is open[end if]." 
 The description is "The truck, a Ford F-1, is relatively new, with no sign as to why it was abandoned. The tailgate is [if the tailgate is open]down[otherwise]up[end if]. The hood is slightly crumpled, as if it has been in a minor accident[if the hood is open]. The hood is open[end if]."
-Understand "ford", "f-1" as the abandoned pickup truck.
+Understand "ford", "f-1", "door" as the abandoned pickup truck.
 The snarky remark of the abandoned pickup truck is "Abandoned town, abandoned truck... there must be a zombie around here somewhere."
-The glove compartment is a scenery closed openable container in the abandoned truck.
+The glove compartment is a scenery closed openable container in the abandoned pickup truck.
 Understand "box/glovebox" as the glove compartment.
 The description is "The glove compartment is [if the glove compartment is open]open[otherwise]closed[end if]."
 The snarky remark of the glove compartment is "Oh good, I need a pair of gloves."
@@ -1372,6 +1393,15 @@ It is unsnarkable.
 
 The hood contains a dirty car battery. 
 
+Instead of opening the truck hood when the player is in the abandoned pickup truck:
+	say "Faraji must be outside the truck to open the hood.";
+
+Instead of closing the truck hood when the player is in the abandoned pickup truck:
+	say "Faraji must be outside the truck to close the hood.";
+
+Instead of entering the truck bed:
+	say "Faraji doesn't see any point in climbing into the truck bed.";
+
 The description of the dirty battery is "The battery is dirty and corroded. Acid has leaked from the terminals. It's unlikely to be of any use."
 The snarky remark of the dirty battery is "I wonder if it's still under warranty."
 
@@ -1381,13 +1411,13 @@ After examining the dirty battery:
 Instead of doing something to the dirty battery when the action requires a touchable noun:
 	say "With so much acid on the battery, it's probably best not to touch it with bare hands.";
 
-After entering the abandoned truck:
+After entering the abandoned pickup truck:
 	try looking;
 
-Instead of searching the abandoned truck when the player is not in the abandoned truck:
+Instead of searching the abandoned pickup truck when the player is not in the abandoned pickup truck:
 	say "The interior of the truck is visible through [if the abandoned pickup truck is open]the open door[otherwise]the window[end if] but Faraji can't see anything much from where they are[if the glove compartment is open]. The glove compartment is open but it's impossible to see what, if anything, is in it[end if][if something is in the truck bed]. The truck bed contains [a list of things in the truck bed][end if].";
 	
-Instead of switching on the abandoned truck:
+Instead of switching on the abandoned pickup truck:
 	let K be the list of all keys enclosed by the player;
 	if the number of entries of K is 1:
 		say "The key doesn't fit the ignition.";
@@ -1400,10 +1430,10 @@ Understand "start [something]" as switching on.
 
 Understand "lower [tailgate]" as opening. Understand "raise [tailgate]" as closing.
 
-The truck bed is an open container. It is part of the abandoned truck. The description is "It's a perfectly ordinary truck bed."
+The truck bed is an open container. It is part of the abandoned pickup truck. The description is "It's a perfectly ordinary truck bed."
 It is unsnarkable.
 
-The tailgate is part of the truck. It is an open, openable container. The description is "The tailgate is[if the truck bed is open] down[otherwise] up[end if]." Understand "tail/gate" as the tailgate. 
+The tailgate is part of the abandoned pickup truck. It is an open, openable container. The description is "The tailgate is[if the truck bed is open] down[otherwise] up[end if]." Understand "tail/gate" as the tailgate. 
 It is unsnarkable.
 
 The pair of bolt cutters are in the truck bed. The description is "A pair of bolt cutters, with long handles and heavy jaws." They are ambiguously plural. 
@@ -1429,8 +1459,6 @@ The road-scenery is unsnarkable.
 enigma-park-scenery is scenery in the lake shore north of the park. "The park is to the south."
 It is privately-named. The printed name is "park". Understand "enigma/park" as enigma-park-scenery.
 The enigma-park-scenery is unsnarkable.
-
-
 
 Book 21 - Workshed
 
@@ -2012,6 +2040,7 @@ The bookstore staircase is a building facade in the Reading Room. "A narrow stai
 Understand "narrow/stairs/stair/steps/step" as the bookstore staircase.
 
 The sales counter is scenery in the Reading Room. "An ordinary sales counter".
+It is exposed.
 The snarky remark of the sales counter is "Service! Service! I demand service!"
 
 The bookshelves are scenery in the Reading Room. 
@@ -2147,6 +2176,9 @@ The x-coordinate of Fresnel's Music is -2. The y-coordinate of Fresnel's Music i
 A tuning fork is in Fresnel's Music. "A tuning fork lies on the counter." The description is "A tuning fork, used to tune musical instruments."
 The snarky remark is "You know what's fun? Tapping a tuning fork and holding it to your teeth."
 
+The music store counter is a scenery supporter in Fresnel's Music. "A typical store counter, bare of most items." 
+It is exposed.
+
 striking is an action applying to one thing. Understand "strike [the tuning fork]", "sound [the tuning fork]", "ring [the tuning fork]" as striking.
 Carry out striking the tuning fork:
 	say "Faraji strikes the tuning fork. It sounds a pure 440 Hz tone. Yes, Faraji has perfect pitch.";
@@ -2184,7 +2216,7 @@ The x-coordinate of Henry's Hot Skillet is -1. The y-coordinate of Henry's Hot S
 
 the Skillet door is a closed locked openable lockable scenery door. It is south of Main at Solvay and north of Henry's Hot Skillet. The Skillet door has matching key the brass key.
 "An old-fashioned swinging door, it reads 'Henry's Hot Skillet'."
-The snarky remark of the Skillet door is "[if the Skillet door is locked]Open up! I'm hungry![otherwise]It's a door.[end if][line break]".
+The snarky remark of the Skillet door is "[if the Skillet door is locked]Open up! I'm hungry![otherwise]It's a door.[end if]".
 
 Check opening the Skillet door when the Skillet door is locked:
 	now the player knows skillet-door-locked;
@@ -2303,7 +2335,7 @@ Instead of examining the Obelisk-from-Henry's-Roof:
 	otherwise if beam count is 3:
 		say " Three beams of light are focused on the obelisk, one from here and two from elsewhere, striking the crystal adornment at its apex. The crystal is glowing brightly.";
 	otherwise:
-		say " The crystal adornment at the apex of the obelisk is dark.";
+		say line break;
 
 Book 35 - Rolle's Department Store
 
@@ -2340,6 +2372,9 @@ Understand "screw [the light bulb] in/into [the table lamp]", "mount [the light 
 Understand "screw [the rusty astral resonator] in/into [the table lamp]", "mount [the rusty astral resonator] on/onto/in/into [the table lamp]" as inserting it into.
 
 The lamp socket is a single item container. It is part of the table lamp. The description is "A standard North American 120V AC lamp socket." 
+
+The brass base is part of the table lamp. The description is "A brass base, scuffed and tarnished."
+The lamp power cord is part of the table lamp. The description is "A power cord, a little the worse for wear, but still functional."
 
 Instead of inserting the rusty astral resonator into the lamp socket:
 	say "The rusty astral resonator doesn't fit in the table lamp."
@@ -2413,6 +2448,18 @@ Report switching off the floor waxer:
 
 Instead of pushing the floor waxer to north:
 	say "[We] can't manage to open the door while pushing the floor waxer, or get it over the threshold.";
+
+Waxing is an action applying to nothing. Understand "wax floor/--", "polish floor/--", "shine floor/--" as waxing.
+
+Check waxing when the floor waxer is not in the location:
+	say "There is no floor waxer here." instead;
+
+Check waxing when the floor waxer is switched off:
+	say "The floor waxer is not running." instead;
+
+Report waxing:
+	say "Faraji pushes the floor waxer around the room, polishing the floor to a superfluously high shine.";
+
 
 The big letters are scenery in Rolle's Department Store. "Big letters on the wall spell out 'ROLLE'S'." 
 The snarky remark of the big letters is "Wow, ROLLE'S is just an anagram of... wait, no it isn't."
@@ -2674,8 +2721,8 @@ Volume 4.5 - The Lizard People
 
 The group of lizard people is an animal. "Three humanoid figures are here, each with a long, scaly tail and a head that looks like a lizard's. They are dressed in smart grey suits. They are hissing loudly in what seems to be intelligent communication. One is carrying some kind of wooden object.[if lizard countdown is 1]
 
-They notice you and stop talking. One of them steps forward and says in a guttural hiss, [one of]'So it is one of Doris's friends. We have been expecting you. You will not hinder us!'[or]'Surface vermin! You will not stop us!'[or]'No one will be allowed to interfere with our plans. Begone!'[or]'Silly human. You will fail!'[or]'You are too late to stop us. We will have the Dragon!'[at random][end if]" 
-
+They notice you and stop talking. One of them steps forward and says in a guttural hiss, [one of]'So it is one of Doris's friends. We have been expecting you. You will not hinder us!'[or]'Surface vermin! You will not stop us!'[or]'No one will be allowed to interfere with our plans. Begone!'[or]'Silly human. You will fail!'[or]'You are too late to stop us. We will have the Dragon!'[at random][end if]". 
+Understand "lizards/lizardmen/men" as the group of lizard people.
 The description is "There are three of them, each one seemingly a reptilian humanoid. They are dressed in grey suits with matching ties. They are obviously of intelligence comparable to humans. They are hissing loudly in what seems to be intelligent communication."
 
 They are unsnarkable.

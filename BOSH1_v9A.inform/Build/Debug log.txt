@@ -51,22 +51,22 @@ I've also read Basics by Philip Riley, which is 198 words long.
 I've also read Building Facades by Philip Riley, which is 167 words long.
 I've also read Snarky Remarks by Philip Riley, which is 230 words long.
 I've also read Followup Questions by Philip Riley, which is 248 words long.
+I've also read Scenery Supporters by Philip Riley, which is 179 words long.
 I've also read Simple Conversation by Philip Riley, which is 2328 words long.
 I've also read Hyperspace by Philip Riley, which is 15653 words long.
 I've also read BOSH Facts by Philip Riley, which is 188 words long.
 I've also read Swamp Park by Philip Riley, which is 7790 words long.
 I've also read Margaret by Philip Riley, which is 2527 words long.
-I've also read Enigma Lake by Philip Riley, which is 30139 words long.
+I've also read Enigma Lake by Philip Riley, which is 30426 words long.
 I've also read I Can Dig It by Philip Riley, which is 77 words long.
 I've also read Overlook by Philip Riley, which is 763 words long.
 I've also read Gender Options by Nathanael Nerode, which is 7679 words long.
-I've also read Scenery Supporters by Philip Riley, which is 179 words long.
 I've also read Make Test by Philip Riley, which is 288 words long.
 I've also read BOSH Hints by Philip Riley, which is 6074 words long.
 I've also read Hearing by Philip Riley, which is 1254 words long.
 I've also read PBR Common by Philip Riley, which is 109 words long.
 I've also read Walls by Philip Riley, which is 905 words long.
-I've also read Floors by Philip Riley, which is 903 words long.
+I've also read Floors by Philip Riley, which is 913 words long.
 I've also read Ceilings by Philip Riley, which is 1072 words long.
 I've also read Can't Go That Way by Philip Riley, which is 815 words long.
 I've also read Can't Take That by Philip Riley, which is 517 words long.
@@ -75,6 +75,7 @@ I've also read Complex Listing by Emily Short, which is 3410 words long.
 I've also read Options Paragraph by Philip Riley, which is 183 words long.
 I've also read Door Varieties by Philip Riley, which is 299 words long.
 I've also read Exit Lister by Eric Eve, which is 3510 words long.
+I've also read Swimming by Philip Riley, which is 38 words long.
 I've also read Secret Doors by Gavin Lambert, which is 272 words long.
 I've also read Plugging by Philip Riley, which is 619 words long.
 I've also read Books by Philip Riley, which is 2319 words long.
@@ -324,8 +325,8 @@ Providing for a total heap of 65536, given requirement of 41488
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 269 files written as streams.
-CPU time: 1005 centiseconds
+Total of 272 files written as streams.
+CPU time: 1066 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

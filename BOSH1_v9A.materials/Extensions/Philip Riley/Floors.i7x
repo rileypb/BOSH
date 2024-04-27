@@ -6,6 +6,7 @@ Include PBR Common by Philip Riley.
 
 The floor is a backdrop.
 The floor is everywhere.
+The printed name is "[if the location is indoors]floor[otherwise]ground[end if]".
 
 Understand "ground" as the floor when the location is outdoors.
 

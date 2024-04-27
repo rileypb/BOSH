@@ -531,55 +531,55 @@ inside-the-dumpster	--	"Garbage."
 utility closet	--	"Grey industrial carpet."
 
 
-Understand "asphalt" as the floor when the location is strip mall parking lot south.
-Understand "asphalt" as the floor when the location is strip mall parking lot north.
+Understand "asphalt/pavement" as the floor when the location is strip mall parking lot south.
+Understand "asphalt/pavement" as the floor when the location is strip mall parking lot north.
 Understand "tile" as the floor when the location is li'l nectarine convenience store.
-Understand "carpet" as the floor when the location is Dave's pawn shop.
-Understand "carpet" as the floor when the location is Front Office.
-Understand "carpet" as the floor when the location is BOSH office Hallway.
-Understand "carpet" as the floor when the location is Biff's Office.
-Understand "carpet" as the floor when the location is Moira's Office.
-Understand "carpet" as the floor when the location is BOSH Chief's Office.
+Understand "carpet/rug" as the floor when the location is Dave's pawn shop.
+Understand "carpet/rug" as the floor when the location is Front Office.
+Understand "carpet/rug" as the floor when the location is BOSH office Hallway.
+Understand "carpet/rug" as the floor when the location is Biff's Office.
+Understand "carpet/rug" as the floor when the location is Moira's Office.
+Understand "carpet/rug" as the floor when the location is BOSH Chief's Office.
 Understand "tile" as the floor when the location is laundromat-store.
 Understand "tile" as the floor when the location is laundromat back room.
 Understand "concrete" as the floor when the location is laundromat basement.
 Understand "concrete" as the floor when the location is back basement.
-Understand "asphalt" as the floor when the location is the back lot.
-Understand "carpet" as the floor when the location is Field Office Reception.
-Understand "carpet" as the floor when the location is Field Office Hallway.
-Understand "carpet" as the floor when the location is the field office chief's office.
-Understand "carpet" as the floor when the location is Minerva's Office.
-Understand "carpet" as the floor when the location is Christy's Office.
-Understand "carpet" as the floor when the location is Portal Room 1.
-Understand "carpet" as the floor when the location is Portal Room 2.
+Understand "asphalt/pavement" as the floor when the location is the back lot.
+Understand "carpet/rug" as the floor when the location is Field Office Reception.
+Understand "carpet/rug" as the floor when the location is Field Office Hallway.
+Understand "carpet/rug" as the floor when the location is the field office chief's office.
+Understand "carpet/rug" as the floor when the location is Minerva's Office.
+Understand "carpet/rug" as the floor when the location is Christy's Office.
+Understand "carpet/rug" as the floor when the location is Portal Room 1.
+Understand "carpet/rug" as the floor when the location is Portal Room 2.
 Understand "terrazzo" as the floor when the location is Radio Station WGXC.
 Understand "terrazzo" as the floor when the location is Broadcast Booth.
-Understand "asphalt" as the floor when the location is Main at Lake.
-Understand "asphalt" as the floor when the location is Main Street 200 block.
+Understand "asphalt/street/road" as the floor when the location is Main at Lake.
+Understand "asphalt/street/road" as the floor when the location is Main Street 200 block.
 Understand "tile" as the floor when the location is Rolle's Department Store.
-Understand "asphalt" as the floor when the location is Main at Solvay.
+Understand "asphalt/street/road" as the floor when the location is Main at Solvay.
 Understand "tile" as the floor when the location is Henry's Hot Skillet.
 Understand "tile" as the floor when the location is Fresnel's Music.
 Understand "wood" as the floor when the location is The Reading Room.
 Understand "concrete" as the floor when the location is Bookstore Basement.
 Understand "wood" as the floor when the location is public gymnasium.
-Understand "asphalt" as the floor when the location is Lake Street by the gym.
+Understand "asphalt/street/road" as the floor when the location is Lake Street by the gym.
 Understand "wood" as the floor when the location is Enigma Lake Town Hall.
-Understand "asphalt" as the floor when the location is Solvay Road 100 block.
+Understand "asphalt/street/road" as the floor when the location is Solvay Road 100 block.
 Understand "concrete" as the floor when the location is Fire Station 1.
 Understand "wood" as the floor when the location is First Utilitarian Church of Enigma Lake.
 Understand "wood" as the floor when the location is Vestry.
 Understand "wood" as the floor when the location is Steeple.
 Understand "lawn/lawns/path/paths" as the floor when the location is Enigma Park.
-Understand "asphalt" as the floor when the location is Solvay road leading out of town.
+Understand "asphalt/street/road" as the floor when the location is Solvay road leading out of town.
 Understand "wood" as the floor when the location is Horton family house kitchen.
 Understand "wood" as the floor when the location is Horton family house parlor.
 Understand "wood" as the floor when the location is The Second Floor of the Horton House.
 Understand "grass/gravel/path/paths" as the floor when the location is Horton graveyard.
-Understand "asphalt" as the floor when the location is Lake at ridge.
+Understand "asphalt/street/road" as the floor when the location is Lake at ridge.
 Understand "sand" as the floor when the location is Lake shore north of the park.
 Understand "grass/sand" as the floor when the location is Lake shore west.
-Understand "asphalt" as the floor when the location is Solvay-Road-by-the-lake.
+Understand "asphalt/street/road" as the floor when the location is Solvay-Road-by-the-lake.
 Understand "wood" as the floor when the location is Dirty shack.
 Understand "wood" as the floor when the location is Workshed.
 Understand "gravel/dirt" as the floor when the location is Hidden cave.
