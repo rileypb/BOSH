@@ -436,25 +436,36 @@ Activating the hint-fire-station:
 		activate;
 	deactivate;
 
-The hint-doll-fly is a hint topic. Understand "doll-fly" as the hint-doll-fly. The printed name is "the doll-fly".
+The hint-doll-fly is a hint topic. Understand "doll-fly" as the hint-doll-fly. 
+The hint-doll-fly has a text called the secret name.
+The hint-doll-fly has a text called the secret first name.
+The hint-doll-fly has a text called the secret last name.
+Understand the secret name property as describing the hint-doll-fly when the doll-fly is named.
+Understand the secret first name property as describing the hint-doll-fly when the doll-fly is named.
+Understand the secret last name property as describing the hint-doll-fly when the doll-fly is named.
+The printed name of the hint-doll-fly is "[if the doll-fly is named][secret name of the doll-fly][otherwise]doll-fly[end if]".
 
 The hint-doll-fly-first is an unlisted progressive hint topic. The progression is {"What the hell was that thing?", "Perhaps Faraji should go find where it went."}.
 
 The hint-doll-fly-second is an unlisted progressive hint topic. The progression is {"Good, now Faraji knows where it went.", "But how can Faraji get past it?"}.
 
-The hint-doll-fly-third is an unlisted progressive hint topic. The progression is {"Apparently the doll-fly is named [doll-fly]. I wonder if that's helpful.", "Is there any place Faraji has seen names like that before?", "[if the Book of Weird Names is not handled]Faraji should go back to the Horton family parlor and look around.[otherwise]Faraji should look at the Book of Weird Names.[end if]", "Faraji should try reading it.", "Any ideas?", "LOOK UP [doll-fly] IN BOOK OF WEIRD NAMES"}.
+The hint-doll-fly-third is an unlisted progressive hint topic. The progression is {"Apparently the doll-fly is named [doll-fly]. I wonder if that's helpful.", "Is there any place Faraji has seen names like that before?", "[if the Book of Weird Names is not handled]Faraji should go back to the Horton family parlor and look around.[otherwise]Faraji should look at the Book of Weird Names.[end if]"}.
 
-The hint-doll-fly-fourth is an unlisted progressive hint topic. The progression is {"When Faraji looked in the book, they found the phrase '[incantation of the doll-fly]'. What could that mean?", "Faraji should try saying it.", "SAY [incantation of the doll-fly]"}.
+The hint-doll-fly-fourth is an unlisted progressive hint topic. The progression is {"Faraji should try reading the Book of Weird Names.", "Any ideas?", "LOOK UP [doll-fly] IN BOOK OF WEIRD NAMES"}.
+
+The hint-doll-fly-fifth is an unlisted progressive hint topic. The progression is {"When Faraji looked in the book, they found the phrase '[incantation of the doll-fly]'. What could that mean?", "Faraji should try saying it.", "SAY [incantation of the doll-fly]"}.
 
 hinting the hint-doll-fly:
 	if the doll-fly is not seen:
 		abide by the hinting rules for the hint-doll-fly-first;
 	otherwise if the doll-fly is not named:
 		abide by the hinting rules for the hint-doll-fly-second;
-	otherwise if doll-fly-looked-up is false:
+	otherwise if the Book of Weird Names is not read:
 		abide by the hinting rules for the hint-doll-fly-third;
-	otherwise:
+	otherwise if doll-fly-looked-up is false:
 		abide by the hinting rules for the hint-doll-fly-fourth;
+	otherwise:
+		abide by the hinting rules for the hint-doll-fly-fifth;
 
 Activating the hint-doll-fly:
 	if the doll-fly is in the First Utilitarian Church of Enigma Lake:
@@ -657,7 +668,6 @@ Activating the hint-read-bou-turn-on-breaker:
 	if the table lamp is not powered:
 		activate;
 	deactivate;
-
 
 				
 	[ if the table lamp is not already lit and (the hint-read-bou-find-light-source is not exhausted or the table lamp is not plugged into the electrical outlet or the table lamp is not switched on or the light bulb is not in the lamp socket):

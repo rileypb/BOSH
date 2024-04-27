@@ -980,6 +980,9 @@ Rule for writing a paragraph about the doll-fly:
 
 Before doing something when the doll-fly is not named and the location is First Utilitarian Church of Enigma Lake and the doll-fly is in the location:
 	now the secret name of the doll-fly is the doll-fly-name;
+	now the secret name of the hint-doll-fly is the secret name of the doll-fly;
+	now the secret first name of the hint-doll-fly is the secret first name of the doll-fly;
+	now the secret last name of the hint-doll-fly is the secret last name of the doll-fly;
 	now the doll-fly is named;
 	now the doll-fly is proper-named;
 	say "The doll-fly shrieks 'Begone! Or I, [doll-fly], shall smite thee!'";
@@ -1708,7 +1711,10 @@ Doll-fly-looked-up is a truth state that varies. Doll-fly-looked-up is false.
 
 To stop is a verb.
 
+The Book of Weird Names can be read.
+
 Instead of examining the Book of Weird Names:
+	now the book of weird names is read;
 	say "A book with a plain cover, titled [italic type]The Book of Weird Names[roman type]. No author is listed. [paragraph break]Flipping through the book, it appears that each page consists of a name, a drawing of a strange creature, and below that a word in a strange, unknown language. The text is written in a spidery, crabbed hand, and is difficult to read.";
 	let name be the creature name;
 	let creature be the strange creature;
