@@ -1,5 +1,7 @@
 BOSH Help by Philip Riley begins here.
 
+Use authorial modesty.
+
 Include Tutorial by Philip Riley.
 
 The Bureau of Special Help is a room. "It is bare save for a bookshelf and a button on the wall marked 'Exit'. Faraji can go east or north from here."
@@ -11,7 +13,7 @@ The exit button is scenery in the Bureau of Special Help. The description is "A 
 The Help Shelf is a scenery supporter in Bureau of Special Help. The description is "The shelf is full of books, each with a title that seems to promise help with some problem or other. Faraji may READ any of them to get some help."
 Understand "bookshelf/bookshelves/books/book/shelves" as the Help Shelf.
 
-Basics of Interactive Fiction is a thing. It is on the Help Shelf. The printed name is "[italic type]Basics of Interactive Fiction[roman type]". 
+Basics of Interactive Fiction is a thing. It is on the Help Shelf. The printed name is "[italic type]Basics of Interactive Fiction[roman type]". Understand "book" as Basics of Interactive Fiction.
 
 The description is "Welcome to the world of interactive fiction! This book will help you get started with the basics of playing interactive fiction, specifically those games known as 'parser-based' games, or 'text adventures.' By getting here and reading this book, you've already taken the first step. Congratulations! Now, let's get started.
 
@@ -21,7 +23,7 @@ You can also interact with objects in the world. You can type 'look' to see the 
 
 You're in a safe place now, so go experiment! When you're ready to continue your adventure, PRESS THE BUTTON to leave this place and return to the real world. Good luck!".
 
-Commands for the Novice Adventurer is a thing. It is on the Help Shelf. The printed name is "[italic type]Commands for the Novice Adventurer[roman type]".
+Commands for the Novice Adventurer is a thing. It is on the Help Shelf. The printed name is "[italic type]Commands for the Novice Adventurer[roman type]". Understand "book" as Commands for the Novice Adventurer.
 The description is "This book will help you learn the basic commands you can use to interact with the world of interactive fiction. Here are some of the most common commands you can use:
 
 LOOK (or L): This command will repeat the description of the room you're in. It's useful if you've forgotten what's around you.
@@ -50,7 +52,7 @@ SAVE: You can type SAVE to save your game. You can then type RESTORE to restore 
 
 One of the most important things to remember is that simple commands are usually the best. The parser is designed to understand simple, direct commands. If you're not sure what to do, try typing a simple command and see what happens. Good luck!".
 
-Commands for the Intermediate Adventurer is a thing. It is on the Help Shelf. The printed name is "[italic type]Commands for the Intermediate Adventurer[roman type]".
+Commands for the Intermediate Adventurer is a thing. It is on the Help Shelf. The printed name is "[italic type]Commands for the Intermediate Adventurer[roman type]". Understand "book" as Commands for the Intermediate Adventurer.
 
 The description is "This book will help you learn some intermediate commands you can use to interact with the world of interactive fiction. Here are some of the most common commands you can use:
 
@@ -70,7 +72,7 @@ QUIT: You can type QUIT to quit the game.
 
 SCRIPT ON: You can type SCRIPT ON to turn on the transcript feature, which will record everything that happens in the game. You can then type SCRIPT OFF to turn off the transcript feature.".
 
-Commands for the Advanced Adventurer is a thing. It is on the Help Shelf. The printed name is "[italic type]Commands for the Advanced Adventurer[roman type]".
+Commands for the Advanced Adventurer is a thing. It is on the Help Shelf. The printed name is "[italic type]Commands for the Advanced Adventurer[roman type]". Understand "book" as Commands for the Advanced Adventurer.
 
 The description is "This book will help you learn some more advanced commands you can use to interact with the world of interactive fiction. Here are some of the most common commands you can use:
 
@@ -90,7 +92,7 @@ AGAIN (or G): This command will allow you to repeat your last command. You can t
 
 
 
-Strategies of Adventuring is a thing. It is on the Help Shelf. The printed name is "[italic type]Strategies of Adventuring[roman type]".
+Strategies of Adventuring is a thing. It is on the Help Shelf. The printed name is "[italic type]Strategies of Adventuring[roman type]". Understand "book" as Strategies of Adventuring.
 
 The description is "This book will help you learn some strategies for playing interactive fiction. Here are some tips to get you started:
 
@@ -104,7 +106,7 @@ The description is "This book will help you learn some strategies for playing in
 
 5. Don't Give Up: Interactive fiction can be challenging, but it's also rewarding. If you get stuck, don't give up. Try different things, explore new areas, and keep experimenting. You'll be surprised at what you can discover."
 
-Advanced Grammar for Adventurers is a thing. It is on the Help Shelf. The printed name is "[italic type]Advanced Grammar for Adventurers[roman type]".
+Advanced Grammar for Adventurers is a thing. It is on the Help Shelf. The printed name is "[italic type]Advanced Grammar for Adventurers[roman type]". Understand "book" as Advanced Grammar for Adventurers.
 
 The description is "This book will help you learn some advanced grammar (and other) rules for playing interactive fiction. Here are some of the most common advanced grammar rules you can use:
 
@@ -122,11 +124,12 @@ The description is "This book will help you learn some advanced grammar (and oth
 
 7. Synonyms: Sometimes you can use synonyms for names and commands, such as TORCH instead of FLASHLIGHT, or ATTACK instead of HIT."
 
-About BOSH is a thing. It is on the Help Shelf. The printed name is "[italic type]About BOSH[roman type]".
+BOSH Game Book is a thing. It is on the Help Shelf. The printed name is "[italic type]BOSH Game Book[roman type]". Understand "BOSH/game/book/gamebook" as BOSH Game Book.
 
 The description is "The game you are playing is 'Bureau of Strange Happenings', or BOSH for short. It is a text adventure game, a type of game where you interact with a world made of text. In BOSH, you play the role of Agent Faraji, a detective investigating strange occurrences in the United States and its territories. As Agent Faraji, you will travel to different locations, talk to characters, and solve puzzles to uncover the truth behind these strange happenings.
 
 Some notes specific to BOSH:
+
 1. The HINTS command will give you a list of available hint topics. You can then type HINT followed by the topic you want a hint on. Note that the available hints will change depending on where you are in the game. The HINTS command will bold-face the topics that have new hints available.
 
 2. You will automatically talk to characters when you enter a room with them. You can type ASK CHARACTER ABOUT TOPIC to ask a character about a particular topic. Note that not all characters will respond to all topics. The characters do tend to know about things in their immediate vicinity.
@@ -173,7 +176,7 @@ Instead of pushing the exit button:
 	now Strategies of Adventuring is on the Help Shelf;
 	now Commands for the Advanced Adventurer is on the Help Shelf;
 	now Advanced Grammar for Adventurers is on the Help Shelf;
-	now About BOSH is on the Help Shelf;
+	now BOSH Game Book is on the Help Shelf;
 	truncate the queue of Doctor Helpful to 0 entries;
 
 An observed room is a kind of room. An observed room has a room called the next room. 
@@ -331,9 +334,16 @@ ask Doctor Helpful for the book is a questioning quip.
 After discussing ask Doctor Helpful for the book:
 	now the player carries Advanced Adventuring.
 
-flowers-subject is a subject. The printed name is "flowers". Understand "flowers/flower/bloom/blooms" as flowers-subject.
-adventuring-subject is a subject. The printed name is "adventuring". Understand "adventure/adventuring" as adventuring.
-commands-subject is a subject. The printed name is "commands". Understand "commands/command" as commands-subject.
+flowers-subject is a subject. It is privately-named. The printed name is "flowers". Understand "flowers/flower/bloom/blooms" as flowers-subject.
+adventuring-subject is a subject. It is privately-named. The printed name is "adventuring". Understand "adventure/adventuring" as adventuring.
+commands-subject is a subject. It is privately-named. The printed name is "commands". Understand "commands/command" as commands-subject.
+elderberry juice is a subject.
+nouns are a subject.
+verbs-subject is a subject. It is privately-named. The printed name is "verbs". Understand "verbs/verb" as verbs-subject.
+Observation-Room-subject is a subject. It is privately-named. The printed name is "observation room". Understand "observation/room/window" as Observation-Room-subject.
+ornamental-garden-subject is a subject. It is privately-named. The printed name is "ornamental garden". Understand "ornamental/garden/gardens" as ornamental-garden-subject.
+Great-aunt Gertrude is a subject. Understand "great-aunt/gertrude/great/aunt" as Great-aunt Gertrude. The printed name is "Great-aunt Gertrude".
+
 
 Table of Quiz Topics (continued)
 subject (a thing)	interlocutor (a person)	comment (a text)	reply (a text)
@@ -346,7 +356,21 @@ commands-subject	Doctor Helpful		"Faraji asks, 'What can you tell me about comma
 Advanced Adventuring	Doctor Helpful		"[if Doctor Helpful carries Advanced Adventuring]Faraji asks, 'What book are you reading?[otherwise]Faraji asks, 'What can you tell me about Advanced Adventuring?'[end if]"	"[if Doctor Helpful carries Advanced Adventuring]'I'm reading [italic type]Advanced Adventuring[roman type], my latest book. It's a real page-turner. You should read it,' Doctor Helpful replies[otherwise]'It's the book I'm most proud of. You should read it,' Doctor Helpful replies[end if]."
 yellow flower	Doctor Helpful		"Faraji says, 'I brought you a flower.'"	"'Thank you, Faraji. It's lovely,' Doctor Helpful replies."
 umbrella	Doctor Helpful		"Faraji says, 'I found an umbrella.'"	"'That's a nice umbrella,' Doctor Helpful replies."
-
+Larch Faraji	Doctor Helpful		"Faraji says, 'What do you know about me?'"	"'You're an agent investigating strange occurrences in the United States and its territories,' Doctor Helpful replies."
+ink-stained fingers	Doctor Helpful		"Faraji says, 'What's up with your fingers?'"	"'It's not really ink. It's elderberry juice,' Doctor Helpful replies."
+elderberry juice	Doctor Helpful		"Faraji says, 'What's up with the elderberry juice?'"	"'I like it. Good for the constitution,' Doctor Helpful replies."
+nouns	Doctor Helpful		"Faraji says, 'What can you tell me about nouns?'"	"'Ah yes, the humble noun. Not as exciting as verbs, but just as important,' Doctor Helpful replies."
+verbs-subject	Doctor Helpful		"Faraji says, 'What can you tell me about verbs?'"	"'Verbs are the flashy ones -- they get all the attention. Every work of interactive fiction has its own set of verbs, most of which are standard across games, but some of which are unique. For instance, a game about a chef might have a verb like COOK, while a game about a detective might have a verb like INTERROGATE,' Doctor Helpful replies."
+Basics of Interactive Fiction	Doctor Helpful		"Faraji says, 'What can you tell me about this book?'"	"'My first book. A best-seller, you know, depending on how you define [']best-seller,[']' Doctor Helpful replies."
+Commands for the Novice Adventurer	Doctor Helpful		"Faraji says, 'What can you tell me about this book?'"	"'I wrote that one during a particularly productive summer. I think it's quite good,' Doctor Helpful replies."
+Commands for the Intermediate Adventurer	Doctor Helpful		"Faraji says, 'What can you tell me about this book?'"	"'Not my best work, but it has its moments,' Doctor Helpful replies."
+Strategies of Adventuring	Doctor Helpful		"Faraji says, 'What can you tell me about this book?'"	"'My best-selling book in Iceland,' Doctor Helpful replies."
+Advanced Grammar for Adventurers	Doctor Helpful		"Faraji says, 'What can you tell me about this book?'"	"'That one was a real labor of love. I'm quite proud of it,' Doctor Helpful replies."
+BOSH Game Book	Doctor Helpful		"Faraji says, 'What can you tell me about this book?'"	"'I wrote that one on commission. I don't like to talk about it,' Doctor Helpful replies."
+Commands for the Advanced Adventurer	Doctor Helpful		"Faraji says, 'What can you tell me about this book?'"	"'I didn't really want to write that one, but the publisher insisted,' Doctor Helpful replies. 'Still, it sold quite well among left-handed readers.'"
+Observation-Room-subject	Doctor Helpful		"Faraji says, 'What is going on in the Observation Room?'"	"'No one really knows where those places are. It used to mostly show a large underground labyrinth, filled with tunnels, caves, and peculiar rock formations, and every so often a bedraggled adventurer,' Doctor Helpful replies."
+ornamental-garden-subject	Doctor Helpful		"Faraji says, 'What can you tell me about the ornamental garden?'"	"'Ah, well, it was left to me by my great-aunt Gertrude. She's still alive, but she absolutely despises gardening,' Doctor Helpful replies."
+Great-aunt Gertrude	Doctor Helpful		"Faraji says, 'What can you tell me about your great-aunt Gertrude?'"	"'Horrible woman. Absolutely no appreciation for interactive fiction,' Doctor Helpful replies."
 
 
 Before quizzing Doctor Helpful about adventuring-subject:
