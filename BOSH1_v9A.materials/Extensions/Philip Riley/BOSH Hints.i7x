@@ -581,16 +581,18 @@ Activating the hint-astral-focus:
 		activate;
 	deactivate;
 
-The hint-makeshift-astral-resonator is a hint topic. Understand "makeshift astral resonator" as the hint-makeshift-astral-resonator. The printed name is "makeshift astral resonator".
+The hint-makeshift-astral-resonator is a hint topic. 
+Understand "makeshift/astral/resonator" as the hint-makeshift-astral-resonator when Astral Secrets is read.
+The printed name is "[makeshift astral resonator]".
 
 Activating the hint-makeshift-astral-resonator:
 	if the makeshift astral resonator is somewhere and not mounted-makeshift-resonator:
 		activate;
 	deactivate;
 
-The hint-makeshift-astral-resonator-witnessing is an unlisted progressive hint topic. The progression is {"Now that Faraji has the makeshift astral resonator, what should they do with it?", "Maybe there is something that will tell Faraji what to do with it.", "The information may be cryptic in nature."}.
+The hint-makeshift-astral-resonator-witnessing is an unlisted progressive hint topic. The progression is {"Now that Faraji has the [makeshift astral resonator], what should they do with it?", "Maybe there is something that will tell Faraji what to do with it.", "The information may be cryptic in nature.", "Faraji should look for a book.", "It is in the wardrobe, upstairs in the Horton House."}.
 
-The hint-makeshift-astral-resonator-mounting is an unlisted progressive hint topic. The progression is {"Faraji must 'ascend the ladder'. Where has Faraji seen a ladder?", "There are two ladders in the town.", "One, portable, Faraji found in the fire station.", "The other is in the church, attached to the wall.", "Faraji should try going up from the church, into the steeple.", "What can Faraji do with a tripod with a telescope mounted on it?", "Faraji could look through the telescope.", "Or they could take the telescope off the tripod.", "What can you do with an empty tripod?", "Faraji should try mounting the makeshift astral resonator on the tripod."}.
+The hint-makeshift-astral-resonator-mounting is an unlisted progressive hint topic. The progression is {"Faraji must 'ascend the ladder'. Where has Faraji seen a ladder?", "There are two ladders in the town.", "One, portable, Faraji found in the fire station.", "The other is in the church, attached to the wall.", "Faraji should try going up from the church, into the steeple.", "What can Faraji do with a tripod with a telescope mounted on it?", "Faraji could look through the telescope.", "Or they could take the telescope off the tripod.", "What can you do with an empty tripod?", "Faraji should try mounting the [makeshift astral resonator] on the tripod."}.
 
 hinting the hint-makeshift-astral-resonator:
 	if the Witnessing of Hezekiah is not read and the Witnessing of Hezekiah is not seen:
@@ -758,6 +760,53 @@ Activating the hint-dowsing-rod:
 		activate;
 	deactivate;
 
-The hint-
+The hint-find-the-portal is a hint topic. The printed name is "Now what?". Understand "now what" as the hint-find-the-portal. 
+
+The hint-find-the-portal-get-below is an unlisted progressive hint topic.  The progression is {"'Below the obelisk, something has woken.' What could that mean?", "Can Faraji get below the obelisk?"}.
+
+The hint-find-the-portal-find-cave is an unlisted progressive hint topic. The progression is {"Remember that the dowsing rod can help you find buried things.", "Faraji should try going more places with the dowsing rod.", "Faraji should go to the workshed with the dowsing rod.", "The Faraji should EXAMINE FLOOR."}.
+
+Activating the hint-find-the-portal:
+	if portal opened is true and the old root cellar is unvisited:
+		activate;
+	deactivate;
+
+Hinting the hint-find-the-portal:
+	if hint-find-the-portal-get-below is active:
+		abide by the hinting rules for the hint-find-the-portal-get-below;
+	if hint-find-the-portal-find-cave is active:
+		abide by the hinting rules for the hint-find-the-portal-find-cave;
+	rule succeeds with result "C'mon, Faraji, go through the portal.";
+
+Activating the hint-find-the-portal-get-below:
+	if the ethereal portal is not seen:
+		activate;
+	deactivate;
+
+Activating the hint-find-the-portal-find-cave:
+	if the hidden cave is unvisited:
+		activate;
+	deactivate;
+
+The hint-root-cellar is a progressive hint topic. Understand "root/cellar" as the hint-root-cellar. The printed name is "root cellar". The progression is {"Faraji should talk to Daniels.", "When he asks, Faraji should give him the recall button.", "Then Faraji should press the button."}.
+
+Activating the hint-root-cellar:
+	if the old root cellar is visited and the dumpster is unvisited:
+		activate;
+	deactivate;
+
+The hint-answer-the-phone-finally is a progressive hint topic. Understand "finally/-- answer/-- the/-- phone finally/--" as the hint-answer-the-phone-finally. The printed name is "answer the phone finally". The progression is {"Faraji still needs to answer the phone.", "What is this thing Daniels gave us? A wristwatch?", "Maybe it's the pawn shop owner's watch.", "Faraji should go to the pawn shop and give the watch to the owner.", "What can Faraji do with a gift card for $5?", "Faraji should go to the conveinence store and buy something.", "Like a screwdriver, maybe.", "Faraji should go to the front office and open the vent with the screwdriver.", "Faraji should use the hex wrench to open the desk.", "Faraji should answer the phone. There! Was that so hard?"}.
+
+Activating the hint-answer-the-phone-finally:
+	if the phone is unhandled and the dumpster is visited:
+		activate;
+	deactivate;
+
+The hint-doris-thumbdrive is a progressive hint topic. Understand "thumbdrive/thumb/drive" as the hint-doris-thumbdrive. The printed name is "thumbdrive". The progression is {"Doris really needs that thumbdrive.", "Faraji should find it.", "Where might one keep a thumbdrive?", "Faraji should check their old computer in the front office.", "You can ask Doris how to get back home."}.
+
+Activating the hint-doris-thumbdrive:
+	if Doris is seen and the thumbdrive is not handled:
+		activate;
+	deactivate;
 
 BOSH Hints ends here.

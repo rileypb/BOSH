@@ -1653,6 +1653,9 @@ Before quizzing someone about something when Moira is in the location:
 	now Moira interjection timer is a random number from 2 to 5;
 	continue the action;
 
+Before implicit-quizzing something when Moira is in the location:
+	now Moira interjection timer is a random number from 2 to 5;
+
 To interject Moira:
 	sort Table of Moira Interjections in random order;
 	if there is a used of false in the Table of Moira Interjections:
@@ -1967,6 +1970,9 @@ Before discussing when Klimp is in the location:
 Before quizzing someone about something when Klimp is in the location:
 	now Klimp interjection timer is a random number from 2 to 5;
 	continue the action;
+
+Before implicit-quizzing something when Klimp is in the location:
+	now Klimp interjection timer is a random number from 2 to 5;
 
 To interject Klimp:
 	sort Table of Klimp Interjections in random order;

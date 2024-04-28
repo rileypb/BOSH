@@ -626,6 +626,9 @@ Before quizzing someone about something when Hutz is in the location:
 	now Hutz interjection timer is a random number from 2 to 5;
 	continue the action;
 
+Before implicit-quizzing something when Hutz is in the location:
+	now Hutz interjection timer is a random number from 2 to 5;
+
 To interject Hutz:
 	sort Table of Hutz Interjections in random order;
 	if there is a used of false in the Table of Hutz Interjections:
@@ -914,7 +917,7 @@ The snarky remark of the church facade is "The Utilitarians are the ones who bel
 
 Book 16 - First Utilitarian Church of Enigma Lake
 
-The First Utilitarian Church of Enigma Lake is a leavable room. It has egress west. It is east of Lake Street by the Park. It is in ELR. It is indoors. "The interior is dimly lit by the stained glass windows, and the pews are arranged in neat rows facing the pulpit. A standard electrical outlet is set into the wall. To the east is the vestry. You can also take the stairs up to the steeple, or down to the basement. The exit is to the west."
+The First Utilitarian Church of Enigma Lake is a leavable room. It has egress west. It is east of Lake Street by the Park. It is in ELR. It is indoors. "The interior is dimly lit by the stained glass windows, and the pews are arranged in neat rows facing the pulpit. A standard electrical outlet is set into the wall. To the east is the vestry. You can also take a ladder up to the steeple, or stairs down to the basement. The exit is to the west."
 The snarky remark of the First Utilitarian Church of Enigma Lake is "Where's the gift shop?"
 The x-coordinate of the First Utilitarian Church of Enigma Lake is 2. The y-coordinate of the First Utilitarian Church of Enigma Lake is 1.
 
@@ -923,7 +926,9 @@ A rule for snarking First Utilitarian Church of Enigma Lake:
 		snark First Utilitarian Church of Enigma Lake;
 	rule succeeds;
 
-The church stairs are scenery in First Utilitarian Church of Enigma Lake. "The stairs lead up to the steeple and down to the basement."
+The church stairs are scenery in First Utilitarian Church of Enigma Lake. "The stairs lead down to the basement."
+
+The church ladder is scenery in First Utilitarian Church of Enigma Lake. "The ladder leads up to the steeple."
 
 Some religious art is scenery in First Utilitarian Church of Enigma Lake. "The best piece in the bunch is a painting of a lizard person being smote by a bolt of lightning."
 The snarky remark of the religious art is "Do you think they sell prints in the gift shop?"
@@ -1018,6 +1023,9 @@ Instead of going east when the location is the First Utilitarian Church of Enigm
 
 Instead of going up when the location is the First Utilitarian Church of Enigma Lake and the doll-fly is in the location:
 	say "[The doll-fly] prevents [us] from reaching the ladder."
+
+Instead of going down when the location is the First Utilitarian Church of Enigma Lake and the doll-fly is in the location:
+	say "[The doll-fly] prevents [us] from reaching the stairs."
 
 Instead of attacking the doll-fly:
 	say "[The doll-fly] [one of]is too quick for [us][or]moves up out of [our] reach[or]dodges [our] attack[or]flies out of [our] reach[or]flies away[at random]."
@@ -1862,46 +1870,46 @@ The snarky remark of the shovel is "How interesting. I hope I'll need to dig som
 Some holes are scenery in the Horton graveyard. "The graveyard is riddled with holes where the bodies have been exhumed for the coming flood. One of the holes is substantially larger and deeper than the others."
 The snarky remark of the holes is "'Hole' is a great word, don't you think?"
 
-The large hole is a building facade. It is in Horton Graveyard. Understand "larger/grave" as large hole. "The hole is substantially larger and deeper than the others[if the ladder is in the large grave]. A ladder is set up against the side of the hole[end if]."
+The large hole is a building facade. It is in Horton Graveyard. Understand "larger/grave" as large hole. "The hole is substantially larger and deeper than the others[if the metal ladder is in the large grave]. A ladder is set up against the side of the hole[end if]."
 	It fronts a large grave.
 	It is enterable from Horton Graveyard.
 The snarky remark of the large hole is "[if the large grave is not visited]Just the thing to jump into without regard for personal safety[otherwise]Ah, not such a big deal.[end if]"
 
-After deciding the scope of player when the location is the Horton graveyard and the ladder is in the large grave:
-	place the ladder in scope;
+After deciding the scope of player when the location is the Horton graveyard and the metal ladder is in the large grave:
+	place the metal ladder in scope;
 
-A rule for reaching inside the large grave when the ladder is in the large grave and the noun is the ladder:
+A rule for reaching inside the large grave when the metal ladder is in the large grave and the noun is the metal ladder:
 	allow access;
 
-Instead of taking the ladder when the location is the Horton graveyard and the ladder is in the large grave:
+Instead of taking the metal ladder when the location is the Horton graveyard and the metal ladder is in the large grave:
 	say "Faraji pulls the ladder out of the large grave.";
 
-Instead of examining the ladder when the location is the Horton graveyard and the ladder is in the large grave:
+Instead of examining the metal ladder when the location is the Horton graveyard and the metal ladder is in the large grave:
 	say "A ladder is set up against the side of the hole, making it easier to climb in and out of the grave.";
 
 
 Before going to the large grave:
-	if the ladder is in the large grave:
+	if the metal ladder is in the large grave:
 		say "Faraji climbs down the ladder into the large grave.";
 	otherwise:
 		say "The hole is too deep to climb down into unaided.";
 		stop the action;
 
 Before going from the large grave:
-	if the ladder is in the large grave:
+	if the metal ladder is in the large grave:
 		say "Faraji climbs up the ladder out of the large grave.";
 	otherwise:
 		say "The hole is too deep to climb out of unaided.";
 		stop the action;
 
-Instead of inserting the ladder into the large hole:
+Instead of inserting the metal ladder into the large hole:
 	say "Faraji sets the ladder up against the side of the hole, making it easier to climb down into the large grave.";
-	now the ladder is in the large grave;
+	now the metal ladder is in the large grave;
 
-After dropping the ladder when the location is the large grave:
+After dropping the metal ladder when the location is the large grave:
 	say "Faraji sets the ladder up against the side of the hole, making it easier to climb out of the large grave.";
 
-Rule for writing a paragraph about the ladder when the location is the large grave:
+Rule for writing a paragraph about the metal ladder when the location is the large grave:
 	say "A ladder is set up against the side of the hole, making it easier to climb out of the grave.";
 
 a large grave is a room. It is in ELR. It is outdoors. It is always-indefinite. "The hole is substantially larger and deeper than the others." 
@@ -1975,8 +1983,8 @@ The snarky remark of the Fire Station 1 is "How can I be snarky about a fire sta
 
 The x-coordinate of the Fire Station 1 is -2. The y-coordinate of the Fire Station 1 is 0.
 
-The ladder is in Fire Station 1. "A ladder rests against the wall." The description is "A wooden ladder, about 6 feet long. It looks sturdy and well-maintained."
-The snarky remark of the ladder is "What? No hook?".   
+The metal ladder is in Fire Station 1. "A ladder rests against the wall." The description is "A wooden ladder, about 6 feet long. It looks sturdy and well-maintained."
+The snarky remark of the metal ladder is "What? No hook?".   
 
 The spotlight is a thing. The description is "A small spotlight, designed to be hand-held. On the side is the branding 'Spectre'. The light has a short cord ending in a standard North American 120V AC plug." It is pluggable.
 The snarky remark of the spotlight is "It's awfully small for a spotlight. More like a specklight."

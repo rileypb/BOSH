@@ -191,6 +191,9 @@ Before quizzing someone about something when Margaret is in the location:
 	now Margaret interjection timer is a random number from 2 to 5;
 	continue the action;
 
+Before implicit-quizzing something when Margaret is in the location:
+	now Margaret interjection timer is a random number from 2 to 5;
+
 To interject Margaret:
 	sort Table of Margaret Interjections in random order;
 	if there is a used of false in the Table of Margaret Interjections:

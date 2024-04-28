@@ -468,6 +468,7 @@ Section - Maggie
 
 Maggie is a woman in field office reception. "Maggie is sitting at the desk, doing nothing you can discern." The description is "Maggie seems a little vacant. She's staring at [one of]the wall[or]the ceiling[or]the floor[or]her hands[or]the desk in front of her[or]nothing in particular[at random]."
 The snarky remark is "I think she's in a trance."
+Understand "receptionist/woman" as Maggie.
 
 Rule for writing a paragraph about Maggie when field office reception is not visited:
 	say "A young woman is sitting at the desk. Apparently doing nothing, she looks up from her desk and smiles at Faraji. 'Hello, I'm Maggie,' she says. 'Welcome to the BOSH Hyperspace Field Office, [agent]. Did you have a nice time getting here? I hope so. I helped design the lobby.' She resumes staring at the opposite wall.";
@@ -512,6 +513,9 @@ Before discussing when Maggie is in the location:
 	now Maggie interjection timer is a random number from 2 to 5;
 
 Before quizzing someone about something when Maggie is in the location:
+	now Maggie interjection timer is a random number from 2 to 5;
+
+Before implicit-quizzing something when Maggie is in the location:
 	now Maggie interjection timer is a random number from 2 to 5;
 
 To interject Maggie:
@@ -797,6 +801,9 @@ Before discussing when Minerva is in the location:
 	now Minerva interjection timer is a random number from 2 to 5;
 	
 Before quizzing someone about something when Minerva is in the location:
+	now Minerva interjection timer is a random number from 2 to 5;
+
+Before implicit-quizzing something when Minerva is in the location:
 	now Minerva interjection timer is a random number from 2 to 5;
 
 To interject Minerva:
@@ -1457,6 +1464,9 @@ Before discussing when Doris is in the location:
 Before quizzing someone about something when Doris is in the location:
 	now Doris interjection timer is a random number from 2 to 5;
 
+Before implicit-quizzing something when Doris is in the location:
+	now Doris interjection timer is a random number from 2 to 5;
+
 To interject Doris:
 	sort Table of Doris Interjections in random order;
 	if there is a used of false in the Table of Doris Interjections:
@@ -1562,6 +1572,9 @@ Before discussing when Christy is in the location:
 	now Christy interjection timer is a random number from 2 to 5;
 
 Before quizzing someone about something when Christy is in the location:
+	now Christy interjection timer is a random number from 2 to 5;
+
+Before implicit-quizzing something when Christy is in the location:
 	now Christy interjection timer is a random number from 2 to 5;
 
 To interject Christy:
