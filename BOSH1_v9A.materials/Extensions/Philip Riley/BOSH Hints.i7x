@@ -391,7 +391,7 @@ the hint-rusty-resonator is a hint topic.
 Understand "rusty/astral/resonator" as hint-rusty-resonator when Astral Secrets is read.
 Understand "strange/rusty/metal/metallic/cylindrical/cylinder/object" as hint-rusty-resonator.
 The printed name is "[rusty astral resonator]".
-The progression is {"Has Faraji had a look at the rusty astral resonator?", "Is it reminiscent of anything?", "If not, Faraji should look around some more.", "The rusty astral resonator has a threaded base, like a light bulb. That's probably good for mounting.", "Faraji should around for a place to screw in a threaded base like that.", "The light bulb in the workshed can't be removed. Maybe Faraji should look elsewhere.", "Check the roof of Henry's Hot Skillet.", "There's a strange socket attached to the aerial.", "PUT RUSTY RESONATOR IN SOCKET"}.
+The progression is {"Has Faraji had a look at the [rusty astral resonator]?", "Is it reminiscent of anything?", "If not, Faraji should look around some more.", "The [rusty astral resonator] has a threaded base, like a light bulb. That's probably good for mounting.", "Faraji should around for a place to screw in a threaded base like that.", "The socket in the workshed won't fit. Maybe Faraji should look elsewhere.", "Check the roof of Henry's Hot Skillet.", "There's a strange socket attached to the aerial.", "PUT RUSTY RESONATOR IN SOCKET"}.
 
 hinting the hint-rusty-resonator:
 	if Astral Secrets is not read:
@@ -413,8 +413,36 @@ Activating the hint-rusty-resonator:
 	if the rusty astral resonator is seen and not mounted-rusty-resonator:
 		activate;
 	deactivate;
+	
+the hint-shiny-resonator is a hint topic. 
+Understand "shiny/astral/resonator" as hint-rusty-resonator when Astral Secrets is read.
+Understand "strange/shiny/metal/metallic/cylindrical/cylinder/object" as hint-rusty-resonator.
+The printed name is "[shiny astral resonator]".
+The progression is {"Has Faraji had a look at the [shiny astral resonator]?", "Is it reminiscent of anything?", "If not, Faraji should look around some more.", "The [shiny astral resonator] has two metal chains, each with a metal clamp. That seems like it might be hooked up somewhere", "Faraji should around for a place to attach something like that.", "Check the roof of the radio station.", "There's a strange platform attached to the tower.", "PUT SHINY RESONATOR ON PLATFORM"}.
 
-The hint-bookstore-shelves is a progressive hint topic. Understand "bookstore shelves/shelf/bookshelf/bookshelves", "reading room shelves/shelf/bookshelf/bookshelves" as the hint-bookstore-shelves. The printed name is "bookstore shelves". The progression is {"You're probably wondering what the point of the bookstore shelves is.", "There isn't any point. Can't a thing exist just for it's own sake?"}.
+hinting the hint-shiny-resonator:
+	if Astral Secrets is not read:
+		rule succeeds with result "Maybe Faraji can find something to tell them what this thing is.";
+	otherwise if not mounted-rusty-resonator and not mounted-makeshift-resonator:
+		rule succeeds with result "What the heck is an astral resonator?";
+		now hint-shiny-resonator is progressive;
+	otherwise if mounted-rusty-resonator and mounted-makeshift-resonator:
+		rule succeeds with result "Faraji should mount the shiny astral resonator somewhere, like they did with the other two resonators.";
+		now hint-shiny-resonator is progressive;
+	otherwise if mounted-makeshift-resonator:
+		rule succeeds with result "Faraji should mount the shiny astral resonator somewhere, like they did with the makeshift resonator.";
+		now hint-shiny-resonator is progressive;
+	otherwise:
+		rule succeeds with result "Faraji should mount the shiny astral resonator somewhere, like they did with the rusty resonator.";
+		now hint-shiny-resonator is progressive;
+
+Activating the hint-shiny-resonator:
+	if the shiny astral resonator is seen and not mounted-shiny-resonator:
+		activate;
+	deactivate;
+	
+
+The hint-bookstore-shelves is a progressive hint topic. Understand "bookstore shelves/shelf/bookshelf/bookshelves", "reading room shelves/shelf/bookshelf/bookshelves" as the hint-bookstore-shelves. The printed name is "bookstore shelves". The progression is {"You're probably wondering what the point of the bookstore shelves is.", "There isn't any point. Can't a thing exist just for its own sake?"}.
 
 Activating the hint-bookstore-shelves:
 	if the location is the reading room:
@@ -697,8 +725,8 @@ Hinting the hint-hutz-help:
 		abide by the hinting rules for the hint-hutz-get-coffee;
 	otherwise if hint-hutz-get-hot-coffee is active:
 		abide by the hinting rules for the hint-hutz-get-hot-coffee;
-	otherwise if hint-hutz-coffee-done is active:
-		abide by the hinting rules for the hint-hutz-coffee-done;
+	otherwise:
+		rule succeeds with result "Faraji should ask Hutz if he can now help them.";
 
 The hint-hutz-what-to-do is an unlisted progressive hint topic. The progression is {"Hutz has suddenly become unhelpful.", "He says he can't focus.", "Faraji should find a way to help him focus.", "What helps people focus?", "Coffee helps people focus."}.
 
@@ -706,5 +734,30 @@ Activating the hint-hutz-what-to-do:
 	if hint-hutz-what-to-do is exhausted:
 		deactivate;
 	activate;
+
+The hint-hutz-get-coffee is an unlisted progressive hint topic. The progression is {"Faraji already knows where to get coffee.", "Faraji needs to go back to Minerva's office and get the coffee.", "Faraji should use the recall button to return to the hyperspace field office.", "Faraji can then get the coffee and bring it to Hutz."}.
+
+Activating the hint-hutz-get-coffee:
+	if hint-hutz-what-to-do is exhausted and player does not know hutz-needs-hot-coffee:
+		activate;
+	deactivate;
+
+The hint-hutz-get-hot-coffee is an unlisted progressive hint topic. The progression is {"Hutz will apparently only drink really hot coffee.", "It takes too long to get coffee from Minerva's office to Hutz's shack.", "Perhaps there's a way to get to the shack in less time.", "Faraji should pay attention to the mystic compass.", "It pings when Faraji is in the Town Hall, and when they're outside the shack.", "Faraji should study the compass in those places.", "What could the numbers mean?", "Faraji should examine the control panel on the Portal to the Past.", "Faraji should enter the numbers from outside the shack into the control panel.", "Faraji can then travel directly to the shack and give Hutz the hot coffee."}.
+
+Activating the hint-hutz-get-hot-coffee:
+	if player knows hutz-needs-hot-coffee and Hutz is not satiated:
+		activate;
+	deactivate;
+
+The hint-dowsing-rod is a progressive hint topic. Understand "dowsing/rod" as the hint-dowsing-rod. The printed name is "dowsing rod". The progression is {"A dowsing rod is a tool used to find underground water and other buried things.", "The user holds the rod and walks around until the rod moves.", "Faraji should watch carefully for the rod to vibrate.", "The rod will vibrate on its own when it's over the right spot.", "Faraji should try carrying the dowsing rod around the town.", "Perhaps somewhere in the graveyard.", "Faraji should also try the workshed."}.
+
+Activating the hint-dowsing-rod:
+	if the shiny astral resonator is handled and the trapdoor is revealed:
+		deactivate;
+	if the dowsing rod is handled:
+		activate;
+	deactivate;
+
+The hint-
 
 BOSH Hints ends here.

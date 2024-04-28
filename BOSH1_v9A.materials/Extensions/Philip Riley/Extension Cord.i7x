@@ -9,7 +9,7 @@ The description of the extension cord is "A long orange extension cord, with a p
 It is pluggable. It is plug-into-able.
 
 The electrical outlet is scenery. "A standard electrical outlet, set into the wall[if the extension cord is plugged into the electrical outlet and the player encloses the extension cord]. The extension cord is plugged into it[otherwise if the extension cord is plugged into the electrical outlet]. An extension cord is plugged into it[end if]." 
-Understand "wall/power/electric/point/mains/GPO" as the electrical outlet.
+Understand "wall/power/electric/point/mains/GPO/socket" as the electrical outlet.
 It is plug-into-able.
 The snarky remark of the electrical outlet is "This mission is making me wish I had a fork."
 

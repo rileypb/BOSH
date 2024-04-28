@@ -593,18 +593,23 @@ Hutz-needs-coffee is a truth state that varies. Hutz-needs-coffee is false.
 After discussing Help-me:
 	now Hutz-needs-coffee is true;
 
+Hutz can be satiated.
+
 Instead of giving the cup of coffee to Hutz when Hutz-needs-coffee is true:
 	if the hotness of the cup of coffee < 24:
 		if the hotness of the cup of coffee > 20:
 			say "Hutz takes the coffee and sniffs it. 'Cold,' he says, even though the stuff is still plenty hot. 'I can't drink this.' He tosses the coffee into the pile of used cups.";
+			now the player knows hutz-needs-hot-coffee;
 		otherwise:
 			say "Hutz takes the coffee and sniffs it. 'Cold,' he says. 'I can't drink this.' He tosses the coffee into the pile of used cups.";
+			now the player knows hutz-needs-hot-coffee;
 		now the cup of coffee is nowhere;
 	otherwise:
 		say "Hutz takes the coffee and drinks it down in one gulp. 'Ah, that's the stuff,' he says. 'Now, what can I do for you?'";
 		now hutz interjection timer is a random number from 2 to 5;
 		now Hutz-needs-coffee is false;
 		now the cup of coffee is nowhere;
+		now Hutz is satiated;
 		queue Hutz with Now-can-you-help-me;
 
 Hutz interjection timer is a number that varies. Hutz interjection timer is 5.
@@ -1045,7 +1050,7 @@ After reading a command:
 
 Book 17 - Extension Cord
 
-The electrical outlet is in First Utilitarian Church of Enigma Lake.
+The electrical outlet is in First Utilitarian Church of Enigma Lake. 
 
 Does the player mean plugging something into the electrical outlet: 
 	it is very likely.
@@ -2063,7 +2068,7 @@ After examining the bookshelves:
 	if the book-index is the number of entries in the booklist:
 		now book-index is 0.
 
-bookstore-reading is an action applying to one thing. Understand "examine [any bookstore-book]", "read [any bookstore-book]", "look at [any bookstore-book]", "look [any bookstore-book]" as bookstore-reading.
+bookstore-reading is an action applying to one thing. Understand "examine [any bookstore-book]", "read [any bookstore-book]", "look at [any bookstore-book]", "look [any bookstore-book]" as bookstore-reading when the location is the Reading Room.
 
 Rule for reaching inside the Room of Stuff while bookstore-reading:
 	allow access;
