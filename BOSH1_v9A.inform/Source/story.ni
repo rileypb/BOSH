@@ -2288,7 +2288,7 @@ Book 21 - Not For Release
 DEBUG is false.
 
 SKIP_PROLOGUE is a truth state that varies.
-SKIP_PROLOGUE is true;
+SKIP_PROLOGUE is false;
 
 AUDIT is a truth state that varies.
 AUDIT is false.

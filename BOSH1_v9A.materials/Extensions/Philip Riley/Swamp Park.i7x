@@ -25,7 +25,7 @@ Chapter 1 - Strip Mall Parking Lot South
 The Strip Mall Parking Lot South is a room. The printed name is "south end of the strip mall parking lot". It is east of the front office. It is in Swamp Park. It is outdoors.  The preposition is "at". front office is inside from the Strip Mall Parking Lot South. Understand "end/of/the" as the Strip Mall Parking Lot South.
 The description of the Strip Mall Parking Lot South is "From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north."
 [ The snarky remark of The Strip Mall Parking Lot South is "This is nice. At least we don't have to worry about anyone finding us." ]
-The tutorial message of the Strip Mall Parking Lot South is "Enter HELP for instructions."
+The tutorial message of the Strip Mall Parking Lot South is "Enter HELP for instructions"
 
 Carry out helping for the first time:
 	now the tutorial message of Strip Mall Parking Lot South is "";
