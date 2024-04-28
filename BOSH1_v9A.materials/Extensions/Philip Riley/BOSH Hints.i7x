@@ -669,13 +669,42 @@ Activating the hint-read-bou-turn-on-breaker:
 		activate;
 	deactivate;
 
-				
-	[ if the table lamp is not already lit and (the hint-read-bou-find-light-source is not exhausted or the table lamp is not plugged into the electrical outlet or the table lamp is not switched on or the light bulb is not in the lamp socket):
-		abide by the hinting rules for the hint-read-bou-find-light-source;
-	otherwise if the table lamp is not powered:
-		abide by the hinting rules for the hint-read-bou-breaker;
-	otherwise:
-		rule succeeds with result "Faraji should go to the basement and read the Book of Utilitarianism."; ]
+The hint-horton-house-enter is a progressive hint topic. Understand "enter/-- the/-- horton house" as the hint-horton-house-enter. The printed name is "enter the Horton House". The progression is {"The front door is locked. Faraji could try another entrance.", "There is no obvious other entrance.", "Faraji could look for a key.", "Faraji should look around the town for a key.", "Faraji should look in the glove compartment of the abandoned truck."}.
 
+Activating the hint-horton-house-enter:
+	if the old wooden door is locked and the Horton House is unvisited and the old wooden door is not tried:
+		activate;
+	deactivate;
+
+The hint-horton-house-graveyard is a progressive hint topic. Understand "horton/-- house/-- graveyard" as the hint-horton-house-graveyard. The printed name is "Horton graveyard". The progression is {"There must be something to do here.", "Look around carefully.", "EXAMINE HOLES", "The large hole looks interesting.", "The large hole is too deep to climb into unaided (and presumably to climb back out of).", "Faraji needs a ladder to get down there.", "Faraji should look around town for a ladder.", "Faraji should look in the fire station."}.
+
+Activating the hint-horton-house-graveyard:
+	if the Horton graveyard is visited and the large grave is unvisited:
+		activate;
+	deactivate;
+
+The hint-hutz-help is a hint topic. Understand "getting/-- help/-- from/-- Hutz" as the hint-hutz-help. The printed name is "getting help from Hutz".
+
+Activating the hint-hutz-help:
+	if Help-me is exhausted and Now-can-you-help-me is not exhausted:
+		activate;
+	deactivate;
+
+Hinting the hint-hutz-help:
+	if hint-hutz-what-to-do is active:
+		abide by the hinting rules for the hint-hutz-what-to-do;
+	otherwise if hint-hutz-get-coffee is active:
+		abide by the hinting rules for the hint-hutz-get-coffee;
+	otherwise if hint-hutz-get-hot-coffee is active:
+		abide by the hinting rules for the hint-hutz-get-hot-coffee;
+	otherwise if hint-hutz-coffee-done is active:
+		abide by the hinting rules for the hint-hutz-coffee-done;
+
+The hint-hutz-what-to-do is an unlisted progressive hint topic. The progression is {"Hutz has suddenly become unhelpful.", "He says he can't focus.", "Faraji should find a way to help him focus.", "What helps people focus?", "Coffee helps people focus."}.
+
+Activating the hint-hutz-what-to-do:
+	if hint-hutz-what-to-do is exhausted:
+		deactivate;
+	activate;
 
 BOSH Hints ends here.
