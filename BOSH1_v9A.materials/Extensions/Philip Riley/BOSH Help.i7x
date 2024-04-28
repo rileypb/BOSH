@@ -122,6 +122,17 @@ The description is "This book will help you learn some advanced grammar (and oth
 
 7. Synonyms: Sometimes you can use synonyms for names and commands, such as TORCH instead of FLASHLIGHT, or ATTACK instead of HIT."
 
+About BOSH is a thing. It is on the Help Shelf. The printed name is "[italic type]About BOSH[roman type]".
+
+The description is "The game you are playing is 'Bureau of Strange Happenings', or BOSH for short. It is a text adventure game, a type of game where you interact with a world made of text. In BOSH, you play the role of Agent Faraji, a detective investigating strange occurrences in the United States and its territories. As Agent Faraji, you will travel to different locations, talk to characters, and solve puzzles to uncover the truth behind these strange happenings.
+
+Some notes specific to BOSH:
+1. The HINTS command will give you a list of available hint topics. You can then type HINT followed by the topic you want a hint on. Note that the available hints will change depending on where you are in the game. The HINTS command will bold-face the topics that have new hints available.
+
+2. You will automatically talk to characters when you enter a room with them. You can type ASK CHARACTER ABOUT TOPIC to ask a character about a particular topic. Note that not all characters will respond to all topics. The characters do tend to know about things in their immediate vicinity.
+
+3. There are also a lot of books in the game, many of which are readable.".
+
 
 The help-wardrobe is a room.
 The help closet is a room.
@@ -162,6 +173,7 @@ Instead of pushing the exit button:
 	now Strategies of Adventuring is on the Help Shelf;
 	now Commands for the Advanced Adventurer is on the Help Shelf;
 	now Advanced Grammar for Adventurers is on the Help Shelf;
+	now About BOSH is on the Help Shelf;
 	truncate the queue of Doctor Helpful to 0 entries;
 
 An observed room is a kind of room. An observed room has a room called the next room. 
@@ -279,7 +291,7 @@ After examining the flowers when the garden key is nowhere:
 
 The living room is north of the Bureau of Special Help. "A cozy sofa sits next to the warm fireplace. Exits lead south and east."
 
-The cozy sofa is an enterable scenery supporter in the living room. The description is "The sofa is soft and comfortable." Understand "soft/comfortable" as the cozy sofa.
+The cozy sofa is an enterable scenery supporter in the living room. The description is "The sofa is soft and comfortable." Understand "soft/comfortable/couch/divan" as the cozy sofa.
 
 The warm fireplace is scenery in the living room. The description is "The fireplace is warm and inviting." Understand "warm/inviting" as the warm fireplace.
 
@@ -331,7 +343,11 @@ cozy sofa	Doctor Helpful		"Faraji asks, 'What can you tell me about the sofa?'"	
 flowers-subject	Doctor Helpful		"Faraji says 'I just love your flowers.'"	"'Thank you, but I'm afraid I'm not much of a gardener. Feel free to PICK FLOWER if you like,' Doctor Helpful replies."
 adventuring-subject	Doctor Helpful		"Faraji asks, 'What can you tell me about adventuring?'"	"'Adventuring is a noble pursuit. Why, I've written a whole slew of books on the subject. You should read them; they're in the room south of here[if Doctor Helpful carries Advanced Adventuring]. Right here I'm carrying one of them,[end if]' Doctor Helpful replies."
 commands-subject	Doctor Helpful		"Faraji asks, 'What can you tell me about commands?'"	"'Commands are the lifeblood of interactive fiction. You can't do much without them. I wrote a book on the subject, you know. It's in the room south of here. My favorite command? GIVE DOCTOR FLOWER,' Doctor Helpful replies."
-Advanced Adventuring	Doctor Helpful		"Faraji asks, 'What book are you reading?'"	"'I'm reading [italic type]Advanced Adventuring[roman type], my latest book. It's a real page-turner. You should read it,' Doctor Helpful replies."
+Advanced Adventuring	Doctor Helpful		"[if Doctor Helpful carries Advanced Adventuring]Faraji asks, 'What book are you reading?[otherwise]Faraji asks, 'What can you tell me about Advanced Adventuring?'[end if]"	"[if Doctor Helpful carries Advanced Adventuring]'I'm reading [italic type]Advanced Adventuring[roman type], my latest book. It's a real page-turner. You should read it,' Doctor Helpful replies[otherwise]'It's the book I'm most proud of. You should read it,' Doctor Helpful replies[end if]."
+yellow flower	Doctor Helpful		"Faraji says, 'I brought you a flower.'"	"'Thank you, Faraji. It's lovely,' Doctor Helpful replies."
+umbrella	Doctor Helpful		"Faraji says, 'I found an umbrella.'"	"'That's a nice umbrella,' Doctor Helpful replies."
+
+
 
 Before quizzing Doctor Helpful about adventuring-subject:
 	if Doctor Helpful carries Advanced Adventuring:

@@ -158,6 +158,8 @@ Hinting the hint-enter-laundromat:
 			go on;
 
 hint-klimp is a hint topic. Understand "chief/-- huffton/-- klimp", "chief" as the hint-klimp. The printed name is "Chief Klimp".
+
+hint-klimp-lenses is an unlisted progressive hint topic. The progression is {"Faraji should explore Klimp's office. They might find something interesting.", "Faraji should examine the shelves in Klimp's office.", "Faraji should examine the astral lenses."}.
 		
 Hinting the hint-klimp:
 	if Chief Klimp is in the Room of Stuff:
@@ -165,7 +167,7 @@ Hinting the hint-klimp:
 	otherwise if BOSH Chief's office is unvisited:
 		rule succeeds with result "Chief Klimp is in the office. Faraji should probably go see him.";
 	otherwise if the astral lenses are not handled:
-		rule succeeds with result "Faraji should explore Klimp's office. They might find something interesting.";
+		abide by the hinting rules for the hint-klimp-lenses;
 	otherwise:
 		rule succeeds with result "Chief Klimp is a great source of knowledge about all sorts of useless things.";
 
@@ -702,7 +704,7 @@ Activating the hint-read-bou-turn-on-breaker:
 The hint-horton-house-enter is a progressive hint topic. Understand "enter/-- the/-- horton house" as the hint-horton-house-enter. The printed name is "enter the Horton House". The progression is {"The front door is locked. Faraji could try another entrance.", "There is no obvious other entrance.", "Faraji could look for a key.", "Faraji should look around the town for a key.", "Faraji should look in the glove compartment of the abandoned truck."}.
 
 Activating the hint-horton-house-enter:
-	if the old wooden door is locked and the Horton House is unvisited and the old wooden door is not tried:
+	if the old wooden door is locked and the Horton House is unvisited and the old wooden door is tried:
 		activate;
 	deactivate;
 
