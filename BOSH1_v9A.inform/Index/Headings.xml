@@ -2355,77 +2355,77 @@
     </dict>
     <key>336</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/swamp park.i7x</string>
-        <key>Line</key><integer>17</integer>
+        <key>Line</key><integer>19</integer>
         <key>Title</key><string>Book 1 - Outside HQ</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>337</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/swamp park.i7x</string>
-        <key>Line</key><integer>21</integer>
+        <key>Line</key><integer>23</integer>
         <key>Title</key><string>Chapter 1 - Strip Mall Parking Lot South</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>338</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/swamp park.i7x</string>
-        <key>Line</key><integer>203</integer>
+        <key>Line</key><integer>209</integer>
         <key>Title</key><string>Section 1 - Dave Conversation</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>339</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/swamp park.i7x</string>
-        <key>Line</key><integer>218</integer>
+        <key>Line</key><integer>224</integer>
         <key>Title</key><string>Chapter 2 - Strip Mall Parking Lot North</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>340</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/swamp park.i7x</string>
-        <key>Line</key><integer>266</integer>
+        <key>Line</key><integer>272</integer>
         <key>Title</key><string>Book 2 - Dave's pawn shop</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>341</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/swamp park.i7x</string>
-        <key>Line</key><integer>398</integer>
+        <key>Line</key><integer>404</integer>
         <key>Title</key><string>Book 3 - Laundromat</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>342</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/swamp park.i7x</string>
-        <key>Line</key><integer>400</integer>
+        <key>Line</key><integer>406</integer>
         <key>Title</key><string>Chapter 1 - The Astral Tunnel</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>343</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/swamp park.i7x</string>
-        <key>Line</key><integer>429</integer>
+        <key>Line</key><integer>435</integer>
         <key>Title</key><string>Chapter 2 - The Laundromat Proper</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>344</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/swamp park.i7x</string>
-        <key>Line</key><integer>635</integer>
+        <key>Line</key><integer>641</integer>
         <key>Title</key><string>Book 4 - Convenience Store</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>345</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/swamp park.i7x</string>
-        <key>Line</key><integer>774</integer>
+        <key>Line</key><integer>780</integer>
         <key>Title</key><string>Chapter 1 - Clerk Conversation</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>346</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/swamp park.i7x</string>
-        <key>Line</key><integer>787</integer>
+        <key>Line</key><integer>793</integer>
         <key>Title</key><string>Book 5 - Comments about Things</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
@@ -3411,265 +3411,272 @@
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>487</key><dict>
+        <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/tutorial.i7x</string>
+        <key>Line</key><integer>1</integer>
+        <key>Title</key><string>Tutorial by Philip Riley begins here</string>
+        <key>Level</key><integer>0</integer>
+        <key>Indentation</key><integer>0</integer>
+    </dict>
+    <key>488</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/swimming.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>Swimming by Philip Riley begins here</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>488</key><dict>
+    <key>489</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/gavin lambert/secret doors.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>Secret Doors by Gavin Lambert begins here</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>489</key><dict>
+    <key>490</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/plugging.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>Plugging by Philip Riley begins here</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>490</key><dict>
+    <key>491</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/plugging.i7x</string>
         <key>Line</key><integer>19</integer>
         <key>Title</key><string>Book - plugging rules</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>491</key><dict>
+    <key>492</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/plugging.i7x</string>
         <key>Line</key><integer>62</integer>
         <key>Title</key><string>Book - unplugging rules</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>492</key><dict>
+    <key>493</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/plugging.i7x</string>
         <key>Line</key><integer>83</integer>
         <key>Title</key><string>Book - Default movement rules</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>493</key><dict>
+    <key>494</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/plugging.i7x</string>
         <key>Line</key><integer>115</integer>
         <key>Title</key><string>Book - Appearance in inventory</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>494</key><dict>
+    <key>495</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/plugging.i7x</string>
         <key>Line</key><integer>126</integer>
         <key>Title</key><string>Book - Examining</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>495</key><dict>
+    <key>496</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/books.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>Books by Philip Riley begins here</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>496</key><dict>
+    <key>497</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/container types.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>Container Types by Philip Riley begins here</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>497</key><dict>
+    <key>498</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/extension cord.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>Extension Cord by Philip Riley begins here</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>498</key><dict>
+    <key>499</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/extension cord.i7x</string>
         <key>Line</key><integer>139</integer>
         <key>Title</key><string>Book - Definitions</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>499</key><dict>
+    <key>500</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/extension cord.i7x</string>
         <key>Line</key><integer>155</integer>
         <key>Title</key><string>Book - Working with the extension cord</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>500</key><dict>
+    <key>501</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/extension cord.i7x</string>
         <key>Line</key><integer>286</integer>
         <key>Title</key><string>Book - Working with the plug-end</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>501</key><dict>
+    <key>502</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/extension cord.i7x</string>
         <key>Line</key><integer>484</integer>
         <key>Title</key><string>Book - Working with the socket-end</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>502</key><dict>
+    <key>503</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/extension cord.i7x</string>
         <key>Line</key><integer>570</integer>
         <key>Title</key><string>Book - Movement Restrictions</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>503</key><dict>
+    <key>504</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/extension cord.i7x</string>
         <key>Line</key><integer>580</integer>
         <key>Title</key><string>Book - Not for Release</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>504</key><dict>
+    <key>505</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/state update.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>State Update by Philip Riley begins here</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>505</key><dict>
+    <key>506</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/hints.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>Hints by Philip Riley begins here</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>506</key><dict>
+    <key>507</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/hints.i7x</string>
         <key>Line</key><integer>113</integer>
         <key>Title</key><string>Book 1 - Not For Release</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>507</key><dict>
+    <key>508</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/two-sided doors.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>Two-Sided Doors by Philip Riley begins here</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>508</key><dict>
+    <key>509</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/two-sided doors.i7x</string>
         <key>Line</key><integer>9</integer>
         <key>Title</key><string>Volume 1 - Definitions</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>509</key><dict>
+    <key>510</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/two-sided doors.i7x</string>
         <key>Line</key><integer>61</integer>
         <key>Title</key><string>Volume 2 - Descriptions</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>510</key><dict>
+    <key>511</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/two-sided doors.i7x</string>
         <key>Line</key><integer>71</integer>
         <key>Title</key><string>Volume 3 - Rules altered from the Standard Rules</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>511</key><dict>
+    <key>512</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/two-sided doors.i7x</string>
         <key>Line</key><integer>73</integer>
         <key>Title</key><string>Book 1 - Examining</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>512</key><dict>
+    <key>513</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/two-sided doors.i7x</string>
         <key>Line</key><integer>92</integer>
         <key>Title</key><string>Book 2 - Locking</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>513</key><dict>
+    <key>514</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/two-sided doors.i7x</string>
         <key>Line</key><integer>128</integer>
         <key>Title</key><string>Book 3 - Unlocking</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>514</key><dict>
+    <key>515</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/two-sided doors.i7x</string>
         <key>Line</key><integer>130</integer>
         <key>Title</key><string>Section 1 - Message Rules</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
-    <key>515</key><dict>
+    <key>516</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/two-sided doors.i7x</string>
         <key>Line</key><integer>149</integer>
         <key>Title</key><string>Section 2 - Action Rules</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
-    <key>516</key><dict>
+    <key>517</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/two-sided doors.i7x</string>
         <key>Line</key><integer>185</integer>
         <key>Title</key><string>Book 4 - Opening</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>517</key><dict>
+    <key>518</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/two-sided doors.i7x</string>
         <key>Line</key><integer>187</integer>
         <key>Title</key><string>Section 1 - Message Rules</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
-    <key>518</key><dict>
+    <key>519</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/two-sided doors.i7x</string>
         <key>Line</key><integer>189</integer>
         <key>Title</key><string>Section 2 - Action Rules</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
-    <key>519</key><dict>
+    <key>520</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/two-sided doors.i7x</string>
         <key>Line</key><integer>209</integer>
         <key>Title</key><string>Book 5 - Closing</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>520</key><dict>
+    <key>521</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/two-sided doors.i7x</string>
         <key>Line</key><integer>226</integer>
         <key>Title</key><string>Volume 4 - Locking</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>521</key><dict>
+    <key>522</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/two-sided doors.i7x</string>
         <key>Line</key><integer>246</integer>
         <key>Title</key><string>Book 1 - Auto-locking</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>522</key><dict>
+    <key>523</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/two-sided doors.i7x</string>
         <key>Line</key><integer>272</integer>
         <key>Title</key><string>Volume 5 - Closing</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>523</key><dict>
+    <key>524</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/two-sided doors.i7x</string>
         <key>Line</key><integer>281</integer>
         <key>Title</key><string>Book 1 - Auto-closing</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>524</key><dict>
+    <key>525</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/two-sided doors.i7x</string>
         <key>Line</key><integer>298</integer>
         <key>Title</key><string>Volume 6 - Initialization Phrases</string>

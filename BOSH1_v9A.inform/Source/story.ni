@@ -1103,8 +1103,8 @@ The snarky remark is "Look, I can write my name in the dirt."
 The coffee table is a scenery supporter in front office. "This doesn't look like government-issue furniture. More like thrift store. It's scuffed, but at least it's sturdy."
 The snarky remark is "The rings are the mark of quality."
 
-The couch is an enterable scenery supporter in front office. "Apparently the bureau did make off with at least one piece of government furniture. A bland, institutional piece with fake leather seats, it's at least preferable to second-hand upholstery." Understand "sofa" as couch.
-The snarky remark of the couch is "There goes the department budget for the month."
+The government couch is an enterable scenery supporter in front office. "Apparently the bureau did make off with at least one piece of government furniture. A bland, institutional piece with fake leather seats, it's at least preferable to second-hand upholstery." Understand "sofa" as government couch. The printed name is "couch".
+The snarky remark of the government couch is "There goes the department budget for the month."
 
 The makeshift seating area is scenery in front office. "A coffee table and couch greet visitors to the office, as if any are expected." It is unfeelable.
 

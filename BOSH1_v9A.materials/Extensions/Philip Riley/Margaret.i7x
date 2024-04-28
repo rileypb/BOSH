@@ -151,7 +151,7 @@ cardboard boxes	Margaret	--	"'Hmm, I guess I need to flatten those and bring the
 coffee table	Margaret	--	"'It's not much, but what can you expect for $8?'"
 laundromat	Margaret	--	 "Not a clue."
 Biff's computer	Margaret	--	"[if Biff's computer is behind the front desk]It's behind the front desk. It's toast.[otherwise]She looks tired. 'I'll get to it when I can.'[end if]"
-couch	Margaret	--	"'It's not much, but it's better than the floor.'"
+government couch	Margaret	--	"'It's not much, but it's better than the floor.'"
 Bureau photos	Margaret	--	"'I think they're from the 70s. I don't know who they are.'"
 BOSH front desk	Margaret	--	"'I'm really trying to make do with what we have.'"
 Bureau of Strange Happenings	Margaret	"Faraji asks, 'What do you think of the Bureau?'"	"'Oh, I don't worry myself with that. I don't really know what you all do. I just know I love all of you.'"

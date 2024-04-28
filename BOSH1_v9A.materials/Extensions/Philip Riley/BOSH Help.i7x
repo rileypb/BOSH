@@ -1,53 +1,352 @@
 BOSH Help by Philip Riley begins here.
 
+Include Tutorial by Philip Riley.
+
 The Bureau of Special Help is a room. "It is bare save for a bookshelf and a button on the wall marked 'Exit'. Faraji can go east or north from here."
+
+The tutorial message is "You can type EXAMINE BOOKSHELF to see what's on the shelf, or PUSH BUTTON to leave help. You can also type a direction (like EAST) to move around. Type LOOK to repeat the description of the room"
 
 The exit button is scenery in the Bureau of Special Help. The description is "A button that will take Faraji back to the real world."
 
 The Help Shelf is a scenery supporter in Bureau of Special Help. The description is "The shelf is full of books, each with a title that seems to promise help with some problem or other. Faraji may READ any of them to get some help."
-Understand "bookshelf/bookshelves/books/book" as the Help Shelf.
+Understand "bookshelf/bookshelves/books/book/shelves" as the Help Shelf.
 
 Basics of Interactive Fiction is a thing. It is on the Help Shelf. The printed name is "[italic type]Basics of Interactive Fiction[roman type]". 
 
-The description is "Welcome to the world of interactive fiction! This book will help you get started with the basics of playing interactive fiction, particularly those games known as 'parser-based' games, or 'text adventures.' By getting here and reading this book, you've already taken the first step. Congratulations! Now, let's get started.
+The description is "Welcome to the world of interactive fiction! This book will help you get started with the basics of playing interactive fiction, specifically those games known as 'parser-based' games, or 'text adventures.' By getting here and reading this book, you've already taken the first step. Congratulations! Now, let's get started.
 
-You're in a world made of text. Every turn you typically see a description of your surroundings, with which you can interact. You interact with this world by typing commands. The most basic command is to move around. You can do this by typing directions, such as 'north,' 'south,' 'east,' or 'west.' You can also use 'up' and 'down' to move vertically, and sometimes 'in' and 'out'. You can also move northeast, southwest, etc. 
+You're in a world made of text. Every turn you typically see a description of your surroundings, with which you can interact. You interact with this world by typing commands. The most basic command is to move around. You can do this by typing directions, such as 'north,' 'south,' 'east,' or 'west.' You can also use 'up' and 'down' to move vertically, and sometimes 'in' and 'out'. You can also move northeast, southwest, etc.
 
-".
+You can also interact with objects in the world. You can type 'look' to see the description of the room you're in. You can type 'examine' followed by an object to get a closer look at it. You can type 'take' or 'get' followed by an object to pick it up. You can type 'drop' followed by an object to drop it. You can type 'inventory' or 'i' to see what you're carrying.
+
+You're in a safe place now, so go experiment! When you're ready to continue your adventure, PRESS THE BUTTON to leave this place and return to the real world. Good luck!".
+
+Commands for the Novice Adventurer is a thing. It is on the Help Shelf. The printed name is "[italic type]Commands for the Novice Adventurer[roman type]".
+The description is "This book will help you learn the basic commands you can use to interact with the world of interactive fiction. Here are some of the most common commands you can use:
+
+LOOK (or L): This command will repeat the description of the room you're in. It's useful if you've forgotten what's around you.
+
+EXAMINE (or X): This command will give you a closer look at an object in the room. You can type EXAMINE followed by the name of the object you want to look at.
+
+TAKE (or GET): This command will allow you to pick up an object in the room. You can type TAKE followed by the name of the object you want to pick up.
+
+DROP: This command will allow you to drop an object you're carrying. You can type DROP followed by the name of the object you want to drop.
+
+INVENTORY (or I): This command will show you a list of the objects you're carrying. You can type INVENTORY to see what you're carrying.
+
+GO (or MOVE): This command will allow you to move in a particular direction. You can type GO followed by the direction you want to move in. Alternatively, you can just type the direction (or an abbreviation) itself.
+
+ASK: You can type ASK a character ABOUT a topic to ask a character about a particular topic. Note that not all characters will respond to all topics. If you're already talking to a character, you can just type ASK ABOUT followed by the topic.
+
+OPEN: This command will allow you to open a container. You can type OPEN followed by the name of the container you want to open.
+
+CLOSE: This command will allow you to close a container. You can type CLOSE followed by the name of the container you want to close.
+
+UNLOCK: This command will allow you to unlock a locked object. You can type UNLOCK object WITH key. In this game, doors will be unlocked automatically if you have the correct key. Just try moving through the door.
+
+LOCK: This command will allow you to lock a lockable object. You can type LOCK object WITH key.
+
+SAVE: You can type SAVE to save your game. You can then type RESTORE to restore your game to the point where you saved it.
+
+One of the most important things to remember is that simple commands are usually the best. The parser is designed to understand simple, direct commands. If you're not sure what to do, try typing a simple command and see what happens. Good luck!".
+
+Commands for the Intermediate Adventurer is a thing. It is on the Help Shelf. The printed name is "[italic type]Commands for the Intermediate Adventurer[roman type]".
+
+The description is "This book will help you learn some intermediate commands you can use to interact with the world of interactive fiction. Here are some of the most common commands you can use:
+
+WAIT (or Z): This command will allow you to wait for a turn.
+
+LOOK UP: Some books allow you to LOOK UP a topic IN a book.
+
+PUT IN: This command will allow you to put an object in a container. You can type PUT object IN container.
+
+PUT ON: This command will allow you to put an object on a supporter. You can type PUT object ON surface.
+
+HINTS: If you're stuck, you can type HINTS to get a list of available hint topics. You can then type HINT followed by the topic you want a hint on. Note that the available hints will change depending on where you are in the game.
+
+UNDO: You can type UNDO to undo your last move. Note that not all games support this command. This game does.
+
+QUIT: You can type QUIT to quit the game.
+
+SCRIPT ON: You can type SCRIPT ON to turn on the transcript feature, which will record everything that happens in the game. You can then type SCRIPT OFF to turn off the transcript feature.".
+
+Commands for the Advanced Adventurer is a thing. It is on the Help Shelf. The printed name is "[italic type]Commands for the Advanced Adventurer[roman type]".
+
+The description is "This book will help you learn some more advanced commands you can use to interact with the world of interactive fiction. Here are some of the most common commands you can use:
+
+PUSH: This command will allow you to push an object in the room. You can type PUSH followed by the name of the object you want to push. Sometimes you can push something to another room by typing PUSH object direction.
+
+PULL: This command will allow you to pull an object in the room. You can type PULL followed by the name of the object you want to pull.
+
+TURN: This command will allow you to turn an object in the room. You can type TURN followed by the name of the object you want to turn.
+
+TYPE: This command will allow you to type on a keyboard or keypad in the room. You can enter TYPE something ON keyboard.
+
+CLIMB: This command will allow you to climb an object in the room. You can type CLIMB followed by the name of the object you want to climb.
+
+HIT: This command will allow you to hit an object in the room. You can type HIT followed by the name of the object you want to hit. Sometimes you can use HIT something WITH object. Not all games allow hitting.
+
+AGAIN (or G): This command will allow you to repeat your last command. You can type AGAIN to repeat your last command."
 
 
 
+Strategies of Adventuring is a thing. It is on the Help Shelf. The printed name is "[italic type]Strategies of Adventuring[roman type]".
+
+The description is "This book will help you learn some strategies for playing interactive fiction. Here are some tips to get you started:
+
+1. Explore: One of the most important things you can do in interactive fiction is to explore your surroundings. Look around, examine objects, and try different commands to see what happens. Don't get stuck in one place; keep moving and trying new things.
+
+2. Take Notes: Interactive fiction can be complex, with many different locations, objects, and characters to keep track of. It's a good idea to take notes as you play, so you can remember important details and clues.
+
+3. Talk to Characters: Many interactive fiction games have characters you can interact with. Try talking to them, asking them questions, and learning more about the world you're in. Characters can provide important information and clues to help you progress in the game.
+
+4. Try Different Commands: Every once in a while, try typing a command you haven't tried before. You never know what might happen!
+
+5. Don't Give Up: Interactive fiction can be challenging, but it's also rewarding. If you get stuck, don't give up. Try different things, explore new areas, and keep experimenting. You'll be surprised at what you can discover."
+
+Advanced Grammar for Adventurers is a thing. It is on the Help Shelf. The printed name is "[italic type]Advanced Grammar for Adventurers[roman type]".
+
+The description is "This book will help you learn some advanced grammar (and other) rules for playing interactive fiction. Here are some of the most common advanced grammar rules you can use:
+
+1. Compound Commands: You can type multiple commands on one line by separating them with a period. For example, you can type TAKE KEY. UNLOCK DOOR to take the key and unlock the door in one turn. Using THEN instead of a period will also work.
+
+2. Compound Objects: You can refer to multiple objects at once by separating them with 'and'. For example, you can type TAKE KEY AND LANTERN to take both the key and the lantern in one turn.
+
+3. Abbreviations: You can use abbreviations for common commands. For example, you can type X KEY to examine the key, or L to LOOK. You can also use abbreviations for directions, such as N for NORTH, S for SOUTH, SW for SOUTHWEST, etc. Some other common abbreviations include I for INVENTORY, Z to WAIT, and G to do the same thing AGAIN.
+
+4. Pronouns: You can use pronouns to refer to objects you've already mentioned. For example, if you've already mentioned the key, you can type TAKE IT to take the key. You can also use pronouns to refer to characters, such as HIM or HER or THEM.
+
+5. Prepositions: You can use prepositions to specify how you want to interact with an object. For example, you can type PUT KEY IN BOX to put the key in the box, or GIVE KEY TO WALRUS to give the key to the walrus.
+
+6. Shortened Names: You can usually refer to objects by part of their names. For example, you might refer to the Flying Purple People Eater as just PURPLE or FLYING or even EATER.
+
+7. Synonyms: Sometimes you can use synonyms for names and commands, such as TORCH instead of FLASHLIGHT, or ATTACK instead of HIT."
+
+
+The help-wardrobe is a room.
+The help closet is a room.
 
 The original location is a room that varies.
+The original interlocutor is an object that varies.
 
-Check helping when the player is in the Bureau of Special Help:
+Check helping when the location is the Bureau of Special Help:
 	say "Faraji is already in the Bureau of Special Help. To leave, press the button." instead.
 
 Carry out helping:
+	say "Suddenly Agent Faraji is surrounded by a white vapor. When it clears, they find themself somewhere else...";
 	now the original location is the location of the player;
-    now the player is in the Bureau of Special Help;
+	now the original interlocutor is the current interlocutor;
+	now the player is in the Bureau of Special Help;
+	now the current interlocutor is nothing;
+	repeat with the item running through things worn by the player:
+		now the item is in the help-wardrobe;
+	repeat with the item running through things carried by the player:
+		now the item is in the help closet;
 
 Instead of pushing the exit button:
 	say "Faraji presses the button and finds themself back in the real world.";
-	now the player is in the original location.
+	now the player is in the original location;
+	now the current interlocutor is the original interlocutor;
+	repeat with the item running through things in the help-wardrobe:
+		now the item is worn by the player;
+	repeat with the item running through things in the help closet:
+		now the item is carried by the player;
+	now the garden key is nowhere;
+	now the umbrella is on the viewing couch;
+	now Doctor Helpful carries Advanced Adventuring;
+	now the yellow flower is nowhere;
+	now ask Doctor Helpful for the book is not exhausted;
+	now Basics of Interactive Fiction is on the Help Shelf;
+	now Commands for the Novice Adventurer is on the Help Shelf;
+	now Commands for the Intermediate Adventurer is on the Help Shelf;
+	now Strategies of Adventuring is on the Help Shelf;
+	now Commands for the Advanced Adventurer is on the Help Shelf;
+	now Advanced Grammar for Adventurers is on the Help Shelf;
+	truncate the queue of Doctor Helpful to 0 entries;
 
-The Observation Room is east of the Bureau of Special Help. "It is a small room with a window[window description]. Exits lead north and west."
+An observed room is a kind of room. An observed room has a room called the next room. 
+
+The fake-lake is an observed room. "a lake at night, pelted by rain. Nothing can be seen through the storm-darkened waters".
+
+The fake-lake-thing is scenery in the fake-lake. It is privately-named. The printed name is "lake". Understand "lake" as the fake-lake-thing. The description is "The lake is dark and stormy."
+
+The fake-rain is scenery in the fake-lake. It is privately-named. The printed name is "rain". Understand "rain/storm" as the fake-rain. The description is "The rain is coming down in sheets, making it impossible to see anything through the storm-darkened waters." 
+
+The fake-parlor is an observed room. It is privately-named. "a creepy looking place. It looks like the parlor of an old house, maybe Colonial era. There is a table with some chairs, with a book on the table. On the periphery of window, something insect-like flutters, largely out of view".
+The next room of the fake-lake is the fake-parlor. 
+
+The fake-table is scenery in the fake-parlor. It is privately-named. The description is "The table is old and weathered, with a book on top of it." Understand "old/weathered/table" as the fake-table. The printed name is "table".
+
+The fake-book is scenery in the fake-parlor. It is privately-named. The description is "The book is too far away to read." Understand "book" as the fake-book. The printed name is "book".
+
+The fake-chairs are scenery in the fake-parlor. They are privately-named. The description is "The chairs are old and rickety." Understand "old/rickety/chairs/chair" as the fake-chairs. They are plural-named. The printed name is "chairs".
+
+The fake-doll-fly is scenery in the fake-parlor. It is privately-named. The description is "It seems like an insect, but with other inscrutable parts, and too large. It's hard to make out the details." Understand "insect/insect-like/bug/bug-like/fly" as the fake-doll-fly. The printed name is "insect".
+
+The fake-hyperplane is an observed room. "a blinding white space with impossible geometry. What looks like a structure of some kind is visible in the distance, but it's hard to make out the details".
+The next room of the fake-parlor is the fake-hyperplane.
+
+The fake-structure is scenery in the fake-hyperplane. It is privately-named. The description is "The structure is too far away to make out the details." Understand "structure" as the fake-structure. The printed name is "structure".
+
+The fake-steeple is an observed room. "a steeple in a small town. The steeple is old and weathered, and the town looks deserted. There is a telescope on a tripod, pointed at the town".
+The next room of the fake-hyperplane is the fake-steeple.
+The next room of the fake-steeple is the fake-lake.
+
+The fake-telescope is scenery in the fake-steeple. It is privately-named. The description is "The telescope is pointed at the town. It is mounted on a tripod." Understand "telescope" as the fake-telescope. The printed name is "telescope".
+
+The fake-tripod is scenery in the fake-steeple. It is privately-named. The description is "The tripod is holding the telescope steady." Understand "tripod" as the fake-tripod. The printed name is "tripod".
+
+The fake-town is scenery in the fake-steeple. "a small town, deserted. The buildings look from another era, but still new". Understand "small/deserted/buildings/town" as the fake-town. The printed name is "town".
+
+The Observation Room is east of the Bureau of Special Help. "This small white room seems like a museum gallery, but with a window instead of art[window description]. 
+
+A comfortable-looking viewing couch dominates the center of the observation room. Exits lead north and west."
+The Observation Room has a room called the window contents. The window contents is the fake-lake.
+The tutorial message is "[if the player is not on the comfortable viewing couch]You can type LOOK to repeat the description of the room. You can also EXAMINE an object to get a closer look at it. Or you can SIT ON THE COUCH[otherwise]You can STAND UP from the couch[end if], See what happens if you try to TAKE an object in the window".
+
+The comfortable viewing couch is an enterable scenery supporter in the Observation Room. It is exposed. The description is "The couch is soft and comfortable." Understand "comfortable-looking/sofa/seat/seating" as the comfortable viewing couch.
+
+The umbrella is on the comfortable viewing couch. The description is "A sturdy black umbrella." Understand "black/sturdy" as the umbrella. "Someone has left an umbrella on the couch."
+The tutorial message is "[if the player carries the umbrella and the location is the Observation Room]You could PUT UMBRELLA ON COUCH[otherwise]You can type TAKE UMBRELLA to pick it up. Or you can OPEN UMBRELLA to open it[end if]."
+
+Instead of opening the umbrella:
+	say "Faraji would rather not risk bad luck by opening an umbrella indoors."
+
+The observation room has a number called the window countdown. The window countdown is 3.
+
+Every turn when the location is the Observation Room:
+	decrement the window countdown of the observation room;
+	if the window countdown of the observation room is 0:
+		now the window contents of the observation room is the next room of the window contents of the observation room;
+		now the window countdown of the observation room is 4;
+		say "The view through the window changes.";
+		try examining the window;
+
+Understand "parlor" as the observation window when the window contents of the observation room is the fake-parlor.
+Understand "hyperplane" as the observation window when the window contents of the observation room is the fake-hyperplane.
+Understand "steeple" as the observation window when the window contents of the observation room is the fake-steeple.
 
 To say window description:
-	let roll be a random number from 1 to 5;
-	if roll is 1:
-		say " through which can be seen a lake pelted by rain";
-	else if roll is 2:
-		say " through which can be seen the roof of a building, surmounted by a tall radio tower";
-	else if roll is 3:
-		say " through which can be seen a great white expanse of impossible geometry";
-	else if roll is 4:
-		say " through which can be seen a hex wrench at the bottom of a heating vent";
-	else:
-		say " through which can be seen a dirty laundromat";
+	say ". Through the window you can see [description of the window contents of the Observation Room]"
 
-The garden is north of the Observation Room. "Flowers and shrubs crowd the paths. Faraji can leave to the south and west."
+The observation window is a scenery transparent closed container in the Observation Room. Understand "view" as the observation window.
 
-The living room is west of the garden and north of the Bureau of Special Help. "A cozy couch sits next to the warm fireplace. Exits lead south and east."
+Instead of examining the observation window:
+	say "Through the window one can see [description of the window contents of the Observation Room].".
+
+After deciding the scope of the player when the location is the Observation Room:
+	place the window contents of the observation room in scope.
+
+Rule for reaching inside a room when the location is the Observation Room:
+	say "[The noun] is on the other side of the window.";
+	deny access.
+
+The ornamental garden is north of the Observation Room. "Flowers and shrubs crowd the paths. Faraji can leave to the south and west."
+The tutorial message is "Sometimes things you need will be hidden. You can type EXAMINE FLOWERS to see if there's anything there"
+
+The garden door is a locked, lockable, openable scenery door. It is west of the ornamental garden and east of the living room. "The door is an elegant wooden door, with a brass handle. [if the garden door is open]It is open[otherwise]It is closed[end if]."
+The garden door has matching key the garden key.
+The tutorial message is "[if the garden door is open]You can go through the door to the living room[otherwise]You can try to OPEN the door[end if]. The game will automatically try to open and unlock the door if you try to go through it."
+
+The garden key is a thing. The description is "A small brass key." Understand "small/brass" as the garden key.
+
+The brass handle is part of the garden door. The description is "The handle is made of brass."
+
+The flowers are scenery in the ornamental garden. The description is "The flowers are in full bloom." Understand "flower/bloom/blooms" as the flowers.
+
+picking flowers is an action applying to nothing. Understand "pick flowers/flower" as picking flowers.
+
+The yellow flower is a thing. The description is "A bright yellow flower." Understand "bright" as the yellow flower.
+
+Check picking flowers:
+	if the location is not the ornamental garden:
+		say "Faraji doesn't see any flowers to pick." instead;
+
+Check picking flowers when the yellow flower is somewhere:
+	say "Faraji doesn't want another flower." instead;
+
+Carry out picking flowers:
+	now the player carries the yellow flower;
+
+Report picking flowers:
+	say "Faraji picks a bright yellow flower."
+
+The shrubs are scenery in the ornamental garden. The description is "The shrubs are neatly trimmed." Understand "shrubs" as the shrubs.
+
+After examining the flowers when the garden key is nowhere:
+	say "Faraji notices a glint of metal among the flowers. It's a small brass key. They take it.";
+	now the player carries the garden key.
+
+The living room is north of the Bureau of Special Help. "A cozy sofa sits next to the warm fireplace. Exits lead south and east."
+
+The cozy sofa is an enterable scenery supporter in the living room. The description is "The sofa is soft and comfortable." Understand "soft/comfortable" as the cozy sofa.
+
+The warm fireplace is scenery in the living room. The description is "The fireplace is warm and inviting." Understand "warm/inviting" as the warm fireplace.
+
+Instead of doing something to the warm fireplace when the action requires a touchable noun:
+	say "Faraji would rather not risk burning themself."
+
+Advanced Adventuring is a thing. The printed name is "[italic type]Advanced Adventuring[roman type]". 
+Understand "book" as Advanced Adventuring.
+The description is "This book will help you learn some advanced strategies for playing interactive fiction. Here are some tips to get you started:
+
+1. Experiment: Interactive fiction is a genre that rewards experimentation. Try different commands, explore new areas, and interact with objects in creative ways. You never know what you might discover!
+
+2. Pay Attention: Interactive fiction games are full of clues and hints that can help you progress. Pay attention to the details of the world around you, and take note of anything that seems important. You never know when a seemingly insignificant detail might turn out to be the key to solving a puzzle.
+
+3. Think Outside the Box: Interactive fiction games often require you to think creatively and solve puzzles in unconventional ways. Don't be afraid to try something new or think outside the box. You might be surprised at what you can accomplish!
+
+4. Use Your Inventory: The objects you carry can be important tools in solving puzzles and progressing in the game. Don't forget to use your inventory items when you get stuck. Try combining objects, using them in different ways, or giving them to characters you meet.
+
+5. Ask for Help: If you're stuck, don't be afraid to ask for help. Many interactive fiction games have built-in hint systems that can provide you with clues and guidance. You can also ask other players for help on forums or social media. Don't be afraid to reach out!
+
+6. Have Fun: Interactive fiction is a unique and rewarding genre of gaming. Don't be afraid to immerse yourself in the world of the game, explore new areas, and enjoy the experience. Remember, the most important thing is to have fun!"
+
+Doctor Helpful is a man in the living room. He is carrying Advanced Adventuring.
+The description is "Doctor Helpful is a tweedy old professor with ink-stained fingers." Understand "tweedy/professor" as Doctor Helpful. "Doctor Helpful reclines on the sofa reading a book, looking thoughtful."
+
+ink-stained fingers is part of Doctor Helpful. The description is "Doctor Helpful's fingers are stained with ink."
+
+The tutorial message is "You can type ASK DOCTOR ABOUT TOPIC to ask Doctor Helpful about a particular topic. You can ASK DOCTOR FOR an object, or GIVE an object TO DOCTOR."
+
+ask Doctor Helpful for the book is a questioning quip.
+	Understand "ask doctor/helpful for book" as ask Helpful for the book.
+	It mentions Advanced Adventuring.
+	The comment is "'Doctor, may I borrow your book?'"
+	The reply is "'Of course, Agent Faraji. Here you go.' Doctor Helpful hands Faraji a copy of [italic type]Advanced Adventuring[roman type].".
+	It quip-supplies Doctor Helpful.
+
+After discussing ask Doctor Helpful for the book:
+	now the player carries Advanced Adventuring.
+
+flowers-subject is a subject. The printed name is "flowers". Understand "flowers/flower/bloom/blooms" as flowers-subject.
+adventuring-subject is a subject. The printed name is "adventuring". Understand "adventure/adventuring" as adventuring.
+commands-subject is a subject. The printed name is "commands". Understand "commands/command" as commands-subject.
+
+Table of Quiz Topics (continued)
+subject (a thing)	interlocutor (a person)	comment (a text)	reply (a text)
+Doctor Helpful	Doctor Helpful		"Faraji says, 'Tell me about yourself, Doctor.'"	"'I'm a tweedy old professor with ink-stained fingers,' Doctor Helpful replies."
+warm fireplace	Doctor Helpful		"Faraji asks, 'What can you tell me about the fireplace?'"	"He smiles and replies, 'I've been warming myself by that fireplace for years. It's a comforting sight.'"
+cozy sofa	Doctor Helpful		"Faraji asks, 'What can you tell me about the sofa?'"	"'I got it for a steal at an overstock sale,' Doctor Helpful replies."
+flowers-subject	Doctor Helpful		"Faraji says 'I just love your flowers.'"	"'Thank you, but I'm afraid I'm not much of a gardener. Feel free to PICK FLOWER if you like,' Doctor Helpful replies."
+adventuring-subject	Doctor Helpful		"Faraji asks, 'What can you tell me about adventuring?'"	"'Adventuring is a noble pursuit. Why, I've written a whole slew of books on the subject. You should read them; they're in the room south of here[if Doctor Helpful carries Advanced Adventuring]. Right here I'm carrying one of them,[end if]' Doctor Helpful replies."
+commands-subject	Doctor Helpful		"Faraji asks, 'What can you tell me about commands?'"	"'Commands are the lifeblood of interactive fiction. You can't do much without them. I wrote a book on the subject, you know. It's in the room south of here. My favorite command? GIVE DOCTOR FLOWER,' Doctor Helpful replies."
+Advanced Adventuring	Doctor Helpful		"Faraji asks, 'What book are you reading?'"	"'I'm reading [italic type]Advanced Adventuring[roman type], my latest book. It's a real page-turner. You should read it,' Doctor Helpful replies."
+
+Before quizzing Doctor Helpful about adventuring-subject:
+	if Doctor Helpful carries Advanced Adventuring:
+		queue Doctor Helpful with ask Doctor Helpful for the book;
+
+Before quizzing Doctor Helpful about Advanced Adventuring:
+	if Doctor Helpful carries Advanced Adventuring:
+		queue Doctor Helpful with ask Doctor Helpful for the book;
+
+Instead of giving Advanced Adventuring to Doctor Helpful:
+	say "Doctor Helpful accepts the book back with a smile. 'Thank you, Faraji. I hope you found it helpful.'";
+	now Doctor Helpful carries Advanced Adventuring;
+
+Instead of giving the yellow flower to Doctor Helpful:
+	say "Doctor Helpful accepts the flower with a smile. 'Thank you, Faraji. It's lovely.'";
+	now Doctor Helpful carries the yellow flower;
 
 BOSH Help ends here.

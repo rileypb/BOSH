@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 29406 words long.
+I've now read your source text, which is 29414 words long.
 
 
 -----------------------------------------------------
@@ -37,7 +37,7 @@ I've also read Facts by Philip Riley, which is 178 words long.
 I've also read Phones by Philip Riley, which is 1909 words long.
 I've also read Commerce by Philip Riley, which is 160 words long.
 I've also read Furniture by Philip Riley, which is 82 words long.
-I've also read Third Person Narration by Philip Riley, which is 672 words long.
+I've also read Third Person Narration by Philip Riley, which is 682 words long.
 I've also read Door Utils by Philip Riley, which is 44 words long.
 I've also read Real People by Philip Riley, which is 400 words long.
 I've also read Visible Rooms by Philip Riley, which is 164 words long.
@@ -56,11 +56,11 @@ I've also read Scenery Supporters by Philip Riley, which is 179 words long.
 I've also read Simple Conversation by Philip Riley, which is 2328 words long.
 I've also read Hyperspace by Philip Riley, which is 15741 words long.
 I've also read BOSH Facts by Philip Riley, which is 193 words long.
-I've also read Swamp Park by Philip Riley, which is 7793 words long.
-I've also read Margaret by Philip Riley, which is 2548 words long.
+I've also read Swamp Park by Philip Riley, which is 7806 words long.
+I've also read Margaret by Philip Riley, which is 2549 words long.
 I've also read Enigma Lake by Philip Riley, which is 30813 words long.
 I've also read I Can Dig It by Philip Riley, which is 77 words long.
-I've also read BOSH Help by Philip Riley, which is 530 words long.
+I've also read BOSH Help by Philip Riley, which is 4623 words long.
 I've also read Overlook by Philip Riley, which is 763 words long.
 I've also read Gender Options by Nathanael Nerode, which is 7679 words long.
 I've also read Make Test by Philip Riley, which is 288 words long.
@@ -77,6 +77,7 @@ I've also read Complex Listing by Emily Short, which is 3410 words long.
 I've also read Options Paragraph by Philip Riley, which is 183 words long.
 I've also read Door Varieties by Philip Riley, which is 299 words long.
 I've also read Exit Lister by Eric Eve, which is 3510 words long.
+I've also read Tutorial by Philip Riley, which is 114 words long.
 I've also read Swimming by Philip Riley, which is 38 words long.
 I've also read Secret Doors by Gavin Lambert, which is 272 words long.
 I've also read Plugging by Philip Riley, which is 706 words long.
@@ -327,8 +328,8 @@ Providing for a total heap of 65536, given requirement of 44560
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 279 files written as streams.
-CPU time: 1018 centiseconds
+Total of 281 files written as streams.
+CPU time: 1032 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

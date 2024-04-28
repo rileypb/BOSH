@@ -100,9 +100,11 @@ For printing the locale description (this is the new you-can-also-see rule):
 	
 The new you-can-also-see rule is listed instead of the you-can-also-see rule in the for printing the locale description rules.
 
-The standard report waiting rule response (A) is "[We] [stand] around and [wait].".
+The standard report waiting rule response (A) is "[We] [if player is on something][sit][otherwise][stand][end if] around and [wait].".
 
 Volume 2 - More about locations
+
+To sit is a verb.
 
 A room has a text called the preposition. The preposition of a room is usually "in".
 
