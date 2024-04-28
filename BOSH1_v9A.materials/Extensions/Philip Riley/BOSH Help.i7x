@@ -1,146 +1,53 @@
 BOSH Help by Philip Riley begins here.
 
-Include Adaptive Hints by Eric Eve.
+The Bureau of Special Help is a room. "It is bare save for a bookshelf and a button on the wall marked 'Exit'. Faraji can go east or north from here."
+
+The exit button is scenery in the Bureau of Special Help. The description is "A button that will take Faraji back to the real world."
+
+The Help Shelf is a scenery supporter in Bureau of Special Help. The description is "The shelf is full of books, each with a title that seems to promise help with some problem or other. Faraji may READ any of them to get some help."
+Understand "bookshelf/bookshelves/books/book" as the Help Shelf.
+
+Basics of Interactive Fiction is a thing. It is on the Help Shelf. The printed name is "[italic type]Basics of Interactive Fiction[roman type]". 
+
+The description is "Welcome to the world of interactive fiction! This book will help you get started with the basics of playing interactive fiction, particularly those games known as 'parser-based' games, or 'text adventures.' By getting here and reading this book, you've already taken the first step. Congratulations! Now, let's get started.
+
+You're in a world made of text. Every turn you typically see a description of your surroundings, with which you can interact. You interact with this world by typing commands. The most basic command is to move around. You can do this by typing directions, such as 'north,' 'south,' 'east,' or 'west.' You can also use 'up' and 'down' to move vertically, and sometimes 'in' and 'out'. You can also move northeast, southwest, etc. 
+
+".
+
+
+
+
+The original location is a room that varies.
+
+Check helping when the player is in the Bureau of Special Help:
+	say "Faraji is already in the Bureau of Special Help. To leave, press the button." instead.
 
 Carry out helping:
-    say "TO BE IMPLEMENTED.";
+	now the original location is the location of the player;
+    now the player is in the Bureau of Special Help;
 
+Instead of pushing the exit button:
+	say "Faraji presses the button and finds themself back in the real world.";
+	now the player is in the original location.
 
-Table of Potential Hints (continued)
-title (text)	subtable (table-name)
-"How do I get the phone to stop ringing?"	Table of Ringing Phone Hints
-"How do I answer the phone?"	Table of Answering Phone Hints
-"How do I get the phone out of the desk?"	Table of Desk Opening Hints
-"How do I unlock the desk?"	Table of Desk Unlocking Hints
-"Where can I find a hex wrench?"	Table of Hex Wrench Hints
-"Where's Margaret?"	Table of Margaret Hints
-"Where can I find a screwdriver?"	Table of Screwdriver Hints
-"How do I get into the laundromat?"	Table of Laundromat Hints
-"How do I get into the back lot?"	Table of Back Lot Hints
-"Is Chief Klimp useful to me?"	Table of Chief Klimp Hints
-"What are the astral lenses good for?"	Table of Astral Lenses Hints
-"What is the glow in the back basement?"	Table of Glow Hints
-"How do I move the crates in the back basement?"	Table of Crate Moving Hints
+The Observation Room is east of the Bureau of Special Help. "It is a small room with a window[window description]. Exits lead north and west."
 
+To say window description:
+	let roll be a random number from 1 to 5;
+	if roll is 1:
+		say " through which can be seen a lake pelted by rain";
+	else if roll is 2:
+		say " through which can be seen the roof of a building, surmounted by a tall radio tower";
+	else if roll is 3:
+		say " through which can be seen a great white expanse of impossible geometry";
+	else if roll is 4:
+		say " through which can be seen a hex wrench at the bottom of a heating vent";
+	else:
+		say " through which can be seen a dirty laundromat";
 
-When play begins:
-	activate the Table of Ringing Phone Hints;
-	activate the Table of Margaret Hints;
+The garden is north of the Observation Room. "Flowers and shrubs crowd the paths. Faraji can leave to the south and west."
 
-
-Table of Ringing Phone Hints
-hint (text)	used (a number)
-"Answer it."
-"Oh, well, I guess it's not that easy."
-
-
-After going to Biff's Office for the first time:
-	activate the Table of Answering Phone Hints;
-
-
-Table of Answering Phone Hints
-hint (text)	used (a number)
-"Take it out of the desk."
-"What do you mean you can't take it out of the desk?"
-
-
-Table of Desk Opening Hints
-hint (text)	used (a number)
-"Unlock it."
-"With a key, maybe?"
-"Ask Margaret."
-"Oh, the key is inside the locked desk. That's helpful."
-
-
-Table of Desk Unlocking Hints
-hint (text)	used (a number)
-"Find the key."
-"Oh, but it's in the desk."
-"Take a closer look at the desk."
-"Maybe there's a way to open it without the key."
-"If you could just find a hex wrench, you could open the desk."
-
-
-Table of Hex Wrench Hints
-hint (text)	used (a number)
-"Ask Margaret."
-
-
-Table of Margaret Hints
-hint (text)	used (a number)
-"Margaret is usually in the front office, but she moves around a bit."
-"You might find her walking between the front office and the back lot."
-"The back lot is behind the locked door in Faraji's office."
-
-
-Table of Screwdriver Hints
-hint (text)	used (a number)
-"Ask Margaret."
-"Oh, she doesn't know."
-"Maybe there's another way to get a screwdriver."
-"Ask around the nearby stores."
-"You have no money, so you can't buy one."
-"Maybe there's one in the laundromat."
-
-
-Table of Laundromat Hints
-hint (text)	used (a number)
-"Don't go any further until you've gotten into the back lot."
-"Looks like the laundromat is locked from the back lot."
-"Maybe there's another way, though."
-
-
-Table of Back Lot Hints
-hint (text)	used (a number)
-"Find a way to get past the door in Faraji's office."
-"Ask Margaret for help."
-"Try following Margaret."
-"She will eventually go to the back lot."
-"Sneak through the door when she unlocks it."
-
-
-Table of Chief Klimp Hints
-hint (text)	used (a number)
-"Chief Klimp is a wealth of information."
-"Most of it useless."
-"He has lots of stuff in his office, some of which might be useful."
-"Look at his stuff."
-
-
-Table of Astral Lenses Hints
-hint (text)	used (a number)
-"They might be useful for seeing things that are hidden."
-"But they don't work in fluorescent light."
-"So you'll have to find a place without fluorescent light."
-"Maybe the back lot?"
-
-
-Table of Glow Hints
-hint (text)	used (a number)
-"Whatever it is, we need to move the crates to get to it."
-"Maybe there's a way to move the crates."
-"Don't go any further until you've moved the crates."
-"Whoa that's weird."
-"I wonder what would happen if..."
-"... if Faraji entered the washer."
-
-
-After going to the back basement for the first time:
-	activate the Table of Glow Hints;
-	activate the Table of Crate Moving Hints;
-
-
-Table of Crate Moving Hints
-hint (text)	used (a number)
-"They're too heavy to move by hand."
-"Maybe there's a tool that could help."
-"Like a handtruck."
-"We can't get the handtruck down the stairs."
-"Maybe we can find another way to get from the laundromat front to the back basement."
-"What about the switch in the back basement?"
-"Oh no, it's dark! Maybe there's a way to see in the dark."
-"Wear the astral lenses."
-"Now there's a passage to push the handtruck through."
-
+The living room is west of the garden and north of the Bureau of Special Help. "A cozy couch sits next to the warm fireplace. Exits lead south and east."
 
 BOSH Help ends here.

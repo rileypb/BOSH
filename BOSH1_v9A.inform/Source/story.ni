@@ -59,6 +59,7 @@ Include Swamp Park by Philip Riley.
 Include Margaret by Philip Riley. 
 Include Enigma Lake by Philip Riley. 
 Include I Can Dig It by Philip Riley.
+Include BOSH Help by Philip Riley.
 
 Include Overlook by Philip Riley.
 

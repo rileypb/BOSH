@@ -798,14 +798,14 @@ Activating the hint-root-cellar:
 The hint-answer-the-phone-finally is a progressive hint topic. Understand "finally/-- answer/-- the/-- phone finally/--" as the hint-answer-the-phone-finally. The printed name is "answer the phone finally". The progression is {"Faraji still needs to answer the phone.", "What is this thing Daniels gave us? A wristwatch?", "Maybe it's the pawn shop owner's watch.", "Faraji should go to the pawn shop and give the watch to the owner.", "What can Faraji do with a gift card for $5?", "Faraji should go to the conveinence store and buy something.", "Like a screwdriver, maybe.", "Faraji should go to the front office and open the vent with the screwdriver.", "Faraji should use the hex wrench to open the desk.", "Faraji should answer the phone. There! Was that so hard?"}.
 
 Activating the hint-answer-the-phone-finally:
-	if the phone is unhandled and the dumpster is visited:
+	if the blue flipphone is not handled and the dumpster is visited:
 		activate;
 	deactivate;
 
-The hint-doris-thumbdrive is a progressive hint topic. Understand "thumbdrive/thumb/drive" as the hint-doris-thumbdrive. The printed name is "thumbdrive". The progression is {"Doris really needs that thumbdrive.", "Faraji should find it.", "Where might one keep a thumbdrive?", "Faraji should check their old computer in the front office.", "You can ask Doris how to get back home."}.
+The hint-doris-thumb-drive is a progressive hint topic. Understand "thumbdrive/thumb/drive" as the hint-doris-thumb-drive. The printed name is "thumb drive". The progression is {"Doris really needs that thumb drive.", "Faraji should find it.", "Where might one keep a thumb drive?", "Faraji should check their old computer in the front office.", "You can ask Doris how to get back home."}.
 
-Activating the hint-doris-thumbdrive:
-	if Doris is seen and the thumbdrive is not handled:
+Activating the hint-doris-thumb-drive:
+	if Doris is seen and the thumb drive is not handled:
 		activate;
 	deactivate;
 
