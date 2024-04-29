@@ -1631,6 +1631,9 @@ Instead of pushing the recall button when the player is not in field office area
 Instead of pushing the recall button when the player is in field office area:
 	say "Nothing happens.";
 
+Check dropping the recall button:
+	say "That would be a very bad idea. Faraji thinks twice." instead;
+
 Volume 6 - Other Stuff
 
 Book 1 - Help

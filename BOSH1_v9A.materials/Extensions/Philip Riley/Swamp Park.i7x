@@ -79,6 +79,9 @@ The Hyundai hood is a part of Car 1. It is an openable closed container. The des
 
 The Hyundai hood is unsnarkable.
 
+Does the player mean driving Car 1:
+	it is very likely;
+
 The clean car battery is in the Hyundai hood. The description is "The battery is clean and new[if the clean battery is hooked up]. Two wires are attached to the terminals[end if]."
 The snarky remark of the clean battery is "Just got it replaced last week."
 

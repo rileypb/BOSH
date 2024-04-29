@@ -17,7 +17,7 @@ Include Punctuation Removal by Emily Short.
 Include Glulx Text Effects by Emily Short.
 Include Formatting Capture by Daniel Stelzer.
 
-Include Locksmith by Emily Short.
+[ Include Locksmith by Emily Short. ]
  
 Include Essentials by Philip Riley. 
 Include Facts by Philip Riley.  

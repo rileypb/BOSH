@@ -531,6 +531,7 @@ inside-the-dumpster	--	"Garbage."
 utility closet	--	"Grey industrial carpet."
 
 
+Understand "dirt" as the floor when the location is large grave.
 Understand "asphalt/pavement" as the floor when the location is strip mall parking lot south.
 Understand "asphalt/pavement" as the floor when the location is strip mall parking lot north.
 Understand "tile" as the floor when the location is li'l nectarine convenience store.

@@ -1867,7 +1867,7 @@ The x-coordinate of the Horton graveyard is -3. The y-coordinate of the Horton g
 The shovel is in the Horton graveyard. "A shovel lies on the ground, forgotten." The description is "A simple shovel, with a wooden handle and a metal blade." Understand "simple/wooden/spade" as the shovel.
 The snarky remark of the shovel is "How interesting. I hope I'll need to dig something up."
 
-Some holes are scenery in the Horton graveyard. "The graveyard is riddled with holes where the bodies have been exhumed for the coming flood. One of the holes is substantially larger and deeper than the others."
+Some holes are scenery in the Horton graveyard. "The graveyard is riddled with holes where the bodies have been exhumed for the coming flood. One of the holes is substantially larger and deeper than the others." Understand "graves" as holes.
 The snarky remark of the holes is "'Hole' is a great word, don't you think?"
 
 The large hole is a building facade. It is in Horton Graveyard. Understand "larger/grave" as large hole. "The hole is substantially larger and deeper than the others[if the metal ladder is in the large grave]. A ladder is set up against the side of the hole[end if]."

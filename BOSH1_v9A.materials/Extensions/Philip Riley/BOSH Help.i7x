@@ -44,7 +44,7 @@ OPEN: This command will allow you to open a container. You can type OPEN followe
 
 CLOSE: This command will allow you to close a container. You can type CLOSE followed by the name of the container you want to close.
 
-UNLOCK: This command will allow you to unlock a locked object. You can type UNLOCK object WITH key. In this game, doors will be unlocked automatically if you have the correct key. Just try moving through the door.
+UNLOCK: This command will allow you to unlock a locked object. You can type UNLOCK object WITH key.
 
 LOCK: This command will allow you to lock a lockable object. You can type LOCK object WITH key.
 
@@ -132,7 +132,7 @@ Some notes specific to BOSH:
 
 1. The HINTS command will give you a list of available hint topics. You can then type HINT followed by the topic you want a hint on. Note that the available hints will change depending on where you are in the game. The HINTS command will bold-face the topics that have new hints available.
 
-2. You will automatically talk to characters when you enter a room with them. You can type ASK CHARACTER ABOUT TOPIC to ask a character about a particular topic. Note that not all characters will respond to all topics. The characters do tend to know about things in their immediate vicinity.
+2. You will automatically talk to characters when you enter a room with them. You can type ASK character ABOUT topic to ask a character about a particular topic. Note that not all characters will respond to all topics. The characters do tend to know about things in their immediate vicinity and within their areas of expertise.
 
 3. There are also a lot of books in the game, many of which are readable.".
 
@@ -261,7 +261,10 @@ The tutorial message is "Sometimes things you need will be hidden. You can type 
 
 The garden door is a locked, lockable, openable scenery door. It is west of the ornamental garden and east of the living room. "The door is an elegant wooden door, with a brass handle. [if the garden door is open]It is open[otherwise]It is closed[end if]."
 The garden door has matching key the garden key.
-The tutorial message is "[if the garden door is open]You can go through the door to the living room[otherwise]You can try to OPEN the door[end if]. The game will automatically try to open and unlock the door if you try to go through it."
+The tutorial message is "[if the garden door is open]You can go through the door to the living room[otherwise]You can try to OPEN the door[end if]."
+
+Instead of opening the garden door when the garden door is locked:
+	say "The door is locked. You can try to UNLOCK the door if you have the right key.";
 
 The garden key is a thing. The description is "A small brass key." Understand "small/brass" as the garden key.
 
