@@ -2109,20 +2109,20 @@ After examining the bookshelves:
 
 bookstore-reading is an action applying to one thing. Understand "examine [any bookstore-book]", "read [any bookstore-book]", "look at [any bookstore-book]", "look [any bookstore-book]" as bookstore-reading when the location is the Reading Room.
 
-Rule for reaching inside the Room of Stuff while bookstore-reading:
+[ Rule for reaching inside the Room of Stuff while bookstore-reading:
 	allow access;
 
 Rule for reaching inside the Room of Stuff while taking when the location is the Reading Room:
-	allow access;
+	allow access; ]
 
 Carry out bookstore-reading:
 	say "[italic type][title of the noun][roman type] by [author of the noun][line break]Genre: [genre of the noun]
 
 	[blurb of the noun][line break]";
 
-Rule for deciding the scope of the player while taking when the location is the Reading Room:
+[ Rule for deciding the scope of the player while taking when the location is the Reading Room:
 	repeat with item running through the booklist:
-		place item in scope;
+		place item in scope; ]
 
 Check taking a bookstore-book:
 	say "Faraji decides to save space for more important items." instead;
@@ -2144,8 +2144,7 @@ To poke is a verb.
 Instead of searching the bookshelves:
 	say "The bookshelves are filled with a variety of books, from the latest bestsellers to obscure, out-of-print volumes. [We] [poke] around and [find] nothing of use.";
 
-Astral Secrets is on the sales counter. It is proper-named. The printed name is "[italic type]Astral Secrets[roman type]". Understand "brown/plain/book" as Astral Secrets. Astral Secrets can be read.
-
+Astral Secrets is in the Reading Room. It is proper-named. The printed name is "[italic type]Astral Secrets[roman type]". Understand "brown/plain/book" as Astral Secrets. Astral Secrets can be read.
 "A brown book lies on the sales counter."
 
 The description is "A book with a plain brown cover, titled 'Astral Secrets'. The author is listed as Jeremiah Horton.[paragraph break]Flipping through the book, [we] [find] a dog-eared page. The page shows a diagram of a small, metallic, cylindrical object, which is labeled 'astral resonator'. The text describes the resonator as a device for opening a portal through the astral plane. It goes on to describe the components of the device: a source of resonance, a source of light, and an 'astral lens', which it declines to describe further. The text also mentions that the resonator is powered by a source of electricity." 

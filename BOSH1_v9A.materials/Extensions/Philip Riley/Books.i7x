@@ -2,15 +2,16 @@ Books by Philip Riley begins here.
 
 Use authorial modesty.
 
-A bookstore-book is a kind of thing. It is privately-named.
+A bookstore-book is a kind of thing. It is privately-named. It is undescribed.
     A bookstore-book has a text called the title.
     A bookstore-book has a text called the author.
     A bookstore-book has a text called the genre.
     A bookstore-book has a text called the blurb.
+    The printed name of a bookstore-book is usually "[title] by [author]".
 
 When play begins:
 	repeat with item running through the booklist:
-		now item is in the Room of Stuff;
+		now item is on the bookshelves;
 
 book1 is a bookstore-book.
     The title of book1 is "An Inscrutable Enigma".
@@ -122,7 +123,8 @@ book16 is a bookstore-book.
     The author of book16 is "Marlo Grimsby".
     The genre of book16 is "Impossible Fiction".
     The blurb of book16 is "Metafiction at its most meta, Marlo Grimsby's new novel is a mess of a book that answers the question 'Why shouldn't I read this book?' with 'Because it's terrible.'".
-	understand "why/you/shouldn't/read/this/book/marlo/grimsby" as book16.
+	understand "why/you/shouldn't/read/this/marlo/grimsby" as book16.
+    understand "why you shouldn't read this book" as book16.
 
 book17 is a bookstore-book.
     The title of book17 is "Shameless Little Pests: A Treatise on Penguins".
@@ -174,11 +176,11 @@ book23 is a bookstore-book.
 	understand "lizard/people/truth/chip/flemki" as book23.
 
 book24 is a bookstore-book.
-    The title of book24 is "A Prayer Book for the Utilitarian".
+    The title of book24 is "Prayers for the Utilitarian".
     The author of book24 is "Bravo Sampson".
     The genre of book24 is "Religion".
     The blurb of book24 is "Bravo Sampson's new book includes prayers for every occasion, from 'I need a parking space' to 'I need to get laid.' A must-have for anyone who's ever thought 'I need a prayer for that.'".
-	understand "prayer/book/for/utilitarian/bravo/sampson" as book24.
+	understand "prayers/for/utilitarian/bravo/sampson" as book24.
 
 book25 is a bookstore-book.
     The title of book25 is "The Secret Life of X".
@@ -224,12 +226,5 @@ book30 is a bookstore-book.
 
 The booklist is a list of bookstore-book that varies.
     The booklist is {book1, book2, book3, book4, book5, book6, book7, book8, book9, book10, book11, book12, book13, book14, book15, book16, book17, book18, book19, book20, book21, book22, book23, book24, book25, book26, book27, book28, book29, book30}.
-
-
-
-
-
-
-
 
 Books ends here.

@@ -33,17 +33,19 @@ Carry out looking (this is the new room description heading rule):
 	otherwise:
 		say "in [the visibility ceiling]";
 	say roman type;
-	say ". [run paragraph on]";
 	let intermediate level be the visibility-holder of the actor;
 	if visibility level count > 1:
-		say "[We] [are]";
+		say " (";
 		repeat with intermediate level count running from 2 to the visibility level count:
+			if the intermediate level count is not 2:
+				say ", ";
 			if the intermediate level is a supporter or the intermediate level is an animal:
-				say " on [the intermediate level]" (B);
+				say "on [the intermediate level]" (B);
 			otherwise:
-				say " in [the intermediate level]" (C);
+				say "in [the intermediate level]" (C);
 			let the intermediate level be the visibility-holder of the intermediate level;
-		say ". [run paragraph on]";
+		say ")";
+	say ". [run paragraph on]";
 	if the description of the location is "":
 		say paragraph break;
 	[say run paragraph on with special look spacing.]

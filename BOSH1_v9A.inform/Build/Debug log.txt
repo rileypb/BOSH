@@ -36,7 +36,7 @@ I've also read Facts by Philip Riley, which is 178 words long.
 I've also read Phones by Philip Riley, which is 1909 words long.
 I've also read Commerce by Philip Riley, which is 160 words long.
 I've also read Furniture by Philip Riley, which is 82 words long.
-I've also read Third Person Narration by Philip Riley, which is 682 words long.
+I've also read Third Person Narration by Philip Riley, which is 688 words long.
 I've also read Door Utils by Philip Riley, which is 44 words long.
 I've also read Real People by Philip Riley, which is 400 words long.
 I've also read Visible Rooms by Philip Riley, which is 164 words long.
@@ -55,11 +55,11 @@ I've also read Scenery Supporters by Philip Riley, which is 179 words long.
 I've also read Simple Conversation by Philip Riley, which is 2328 words long.
 I've also read Hyperspace by Philip Riley, which is 15831 words long.
 I've also read BOSH Facts by Philip Riley, which is 193 words long.
-I've also read Swamp Park by Philip Riley, which is 7817 words long.
+I've also read Swamp Park by Philip Riley, which is 7853 words long.
 I've also read Margaret by Philip Riley, which is 2549 words long.
-I've also read Enigma Lake by Philip Riley, which is 31065 words long.
+I've also read Enigma Lake by Philip Riley, which is 31053 words long.
 I've also read I Can Dig It by Philip Riley, which is 77 words long.
-I've also read BOSH Help by Philip Riley, which is 5569 words long.
+I've also read BOSH Help by Philip Riley, which is 5610 words long.
 I've also read Overlook by Philip Riley, which is 763 words long.
 I've also read Gender Options by Nathanael Nerode, which is 7679 words long.
 I've also read Make Test by Philip Riley, which is 288 words long.
@@ -80,9 +80,9 @@ I've also read Tutorial by Philip Riley, which is 114 words long.
 I've also read Swimming by Philip Riley, which is 38 words long.
 I've also read Secret Doors by Gavin Lambert, which is 272 words long.
 I've also read Plugging by Philip Riley, which is 706 words long.
-I've also read Books by Philip Riley, which is 2461 words long.
+I've also read Books by Philip Riley, which is 2504 words long.
 I've also read Container Types by Philip Riley, which is 55 words long.
-I've also read Extension Cord by Philip Riley, which is 3151 words long.
+I've also read Extension Cord by Philip Riley, which is 3152 words long.
 I've also read State Update by Philip Riley, which is 406 words long.
 I've also read Hints by Philip Riley, which is 888 words long.
 I've also read Two-Sided Doors by Philip Riley, which is 2270 words long.
@@ -146,15 +146,17 @@ Regional: CONSTANT_VNT'field office area'-region(I256_field_office_area)(I164'fi
  == region
 Regional: CONSTANT_VNT'hyperspace'-region(I241_hyperspace)(I149'hyperspace')
  == region
-Regional: CONSTANT_VNT'elr'-region(I525_elr)(I417'elr')
+Regional: CONSTANT_VNT'elr'-region(I528_elr)(I420'elr')
  == region
-Regional: CONSTANT_VNT'elr'-region(I525_elr)(I417'elr')
+Regional: CONSTANT_VNT'elr'-region(I528_elr)(I420'elr')
  == region
-Regional: CONSTANT_VNT'elr'-region(I525_elr)(I417'elr')
+Regional: CONSTANT_VNT'elr'-region(I528_elr)(I420'elr')
  == region
-Regional: CONSTANT_VNT'elr'-region(I525_elr)(I417'elr')
+Regional: CONSTANT_VNT'elr'-region(I528_elr)(I420'elr')
  == region
-Regional: CONSTANT_VNT'elr'-region(I525_elr)(I417'elr')
+Regional: CONSTANT_VNT'elr'-region(I528_elr)(I420'elr')
+ == region
+Regional: CONSTANT_VNT'help area'-region(I769_help_area)(I659'help area')
  == region
 
 
@@ -207,21 +209,21 @@ Phase XII ... Code generation
          == region
         Regional: CONSTANT_VNT'hyperspace'-region(I241_hyperspace)(I149'hyperspace')
          == region
-        Regional: CONSTANT_VNT'the laundromat-region'-region(I418_laundromat_region)(I314'laundromat-region')
+        Regional: CONSTANT_VNT'the laundromat-region'-region(I421_laundromat_region)(I317'laundromat-region')
          == region
-        Regional: CONSTANT_VNT'the laundromat-region'-region(I418_laundromat_region)(I314'laundromat-region')
-         == region
-        Regional: CONSTANT_VNT'hyperspace'-region(I241_hyperspace)(I149'hyperspace')
+        Regional: CONSTANT_VNT'the laundromat-region'-region(I421_laundromat_region)(I317'laundromat-region')
          == region
         Regional: CONSTANT_VNT'hyperspace'-region(I241_hyperspace)(I149'hyperspace')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I525_elr)(I417'elr')
+        Regional: CONSTANT_VNT'hyperspace'-region(I241_hyperspace)(I149'hyperspace')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I525_elr)(I417'elr')
+        Regional: CONSTANT_VNT'elr'-region(I528_elr)(I420'elr')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I525_elr)(I417'elr')
+        Regional: CONSTANT_VNT'elr'-region(I528_elr)(I420'elr')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I525_elr)(I417'elr')
+        Regional: CONSTANT_VNT'elr'-region(I528_elr)(I420'elr')
+         == region
+        Regional: CONSTANT_VNT'elr'-region(I528_elr)(I420'elr')
          == region
 
 
@@ -243,7 +245,7 @@ Phase XII ... Code generation
 
 ==== Phase XII.11 ... Determining grammar (G2) ====
 
-Regional: CONSTANT_VNT'elr'-region(I525_elr)(I417'elr')
+Regional: CONSTANT_VNT'elr'-region(I528_elr)(I420'elr')
  == region
 
 
@@ -284,9 +286,9 @@ Regional: CONSTANT_VNT'elr'-region(I525_elr)(I417'elr')
                                         Fail: scene (~) number = nothing
                                         Fail: scene (~) number = nothing
                                 0 = objects valued property. 1 = object
-            Regional: CONSTANT_VNT'elr'-region(I525_elr)(I417'elr')
+            Regional: CONSTANT_VNT'elr'-region(I528_elr)(I420'elr')
              == region
-            Regional: CONSTANT_VNT'elr'-region(I525_elr)(I417'elr')
+            Regional: CONSTANT_VNT'elr'-region(I528_elr)(I420'elr')
              == region
 
 
@@ -328,7 +330,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 277 files written as streams.
-CPU time: 1146 centiseconds
+CPU time: 1071 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

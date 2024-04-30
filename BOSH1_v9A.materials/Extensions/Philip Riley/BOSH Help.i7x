@@ -4,6 +4,8 @@ Use authorial modesty.
 
 Include Tutorial by Philip Riley.
 
+Help Area is a region. The Bureau of Special Help, the Observation Room, the ornamental garden, and the living room are in the Help Area.
+
 The Bureau of Special Help is a room. "It is bare save for a bookshelf and a button on the wall marked 'Exit'. Faraji can go east or north from here."
 
 The tutorial message is "You can type EXAMINE BOOKSHELF to see what's on the shelf, or PUSH BUTTON to leave help. You can also type a direction (like EAST) to move around. Type LOOK to repeat the description of the room"
@@ -143,7 +145,7 @@ The help closet is a room.
 The original location is a room that varies.
 The original interlocutor is an object that varies.
 
-Check helping when the location is the Bureau of Special Help:
+Check helping when the location is in Help Area:
 	say "Faraji is already in the Bureau of Special Help. To leave, press the button." instead.
 
 Carry out helping:
@@ -295,7 +297,7 @@ After examining the flowers when the garden key is nowhere:
 	say "Faraji notices a glint of metal among the flowers. It's a small brass key. They take it.";
 	now the player carries the garden key.
 
-The living room is north of the Bureau of Special Help. "A cozy sofa sits next to the warm fireplace. Exits lead south and east."
+The living room is north of the Bureau of Special Help. "[if cozy sofa is not mentioned]A cozy sofa sits next to the warm fireplace[otherwise]The sofa is next to the fireplace[end if]. Exits lead south and east."
 
 The cozy sofa is an enterable scenery supporter in the living room. The description is "The sofa is soft and comfortable." Understand "soft/comfortable/couch/divan" as the cozy sofa.
 
@@ -321,7 +323,7 @@ The description is "This book will help you learn some advanced strategies for p
 6. Have Fun: Interactive fiction is a unique and rewarding genre of gaming. Don't be afraid to immerse yourself in the world of the game, explore new areas, and enjoy the experience. Remember, the most important thing is to have fun!"
 
 Doctor Helpful is a man in the living room. He is carrying Advanced Adventuring.
-The description is "Doctor Helpful is a tweedy old professor with ink-stained fingers." Understand "tweedy/professor" as Doctor Helpful. "Doctor Helpful reclines on the sofa reading a book, looking thoughtful."
+The description is "Doctor Helpful is a tweedy old professor with ink-stained fingers." Understand "tweedy/professor" as Doctor Helpful. "Doctor Helpful reclines on the sofa[if Doctor Helpful carries Advanced Adventuring] reading a book[end if], looking thoughtful."
 
 ink-stained fingers is part of Doctor Helpful. The description is "Doctor Helpful's fingers are stained with ink."
 

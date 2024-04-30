@@ -586,7 +586,7 @@ The receptacle is in the test room. It is plug-into-able.
 The dongle is in the test room. It is pluggable.
 The big machine is in the test room. It is pluggable. It is fixed in place.
 The red socket is in the test room. It is plug-into-able. It is fixed in place.
-The table is a supporter in the test room. 
+The test table is a supporter in the test room. 
 The basket is an open container in the test room.
 
 testing cord is an action applying to nothing. Understand "testcord" as testing cord.
