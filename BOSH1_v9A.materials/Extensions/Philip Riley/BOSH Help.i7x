@@ -167,7 +167,7 @@ Instead of pushing the exit button:
 		now the item is worn by the player;
 	repeat with the item running through things in the help closet:
 		now the item is carried by the player;
-	now the garden key is nowhere;
+	now the living room key is nowhere;
 	now the umbrella is on the viewing couch;
 	now Doctor Helpful carries Advanced Adventuring;
 	now the yellow flower is nowhere;
@@ -258,17 +258,16 @@ Rule for reaching inside a room when the location is the Observation Room:
 	say "[The noun] is on the other side of the window.";
 	deny access.
 
-The ornamental garden is north of the Observation Room. "Flowers and shrubs crowd the paths. Faraji can leave to the south and west."
+The ornamental garden is north of the Observation Room. "Flowers and shrubs crowd the paths. Faraji can leave to the south. A door leads west."
 The tutorial message is "Sometimes things you need will be hidden. You can type EXAMINE FLOWERS to see if there's anything there"
 
-The garden door is a locked, lockable, openable scenery door. It is west of the ornamental garden and east of the living room. "The door is an elegant wooden door, with a brass handle. [if the garden door is open]It is open[otherwise]It is closed[end if]."
-The garden door has matching key the garden key.
+The garden door is an openable scenery door. It is west of the ornamental garden and east of the living room. "The door is an elegant wooden door, with a brass handle. [if the garden door is open]It is open[otherwise]It is closed[end if]."
 The tutorial message is "[if the garden door is open]You can go through the door to the living room[otherwise]You can try to OPEN the door[end if]."
 
 Instead of opening the garden door when the garden door is locked:
 	say "The door is locked. You can try to UNLOCK the door if you have the right key.";
 
-The garden key is a thing. The description is "A small brass key." Understand "small/brass" as the garden key.
+The living room key is a thing. The description is "A small brass key." Understand "small/brass" as the living room key.
 
 The brass handle is part of the garden door. The description is "The handle is made of brass."
 
@@ -293,11 +292,14 @@ Report picking flowers:
 
 The shrubs are scenery in the ornamental garden. The description is "The shrubs are neatly trimmed." Understand "shrubs" as the shrubs.
 
-After examining the flowers when the garden key is nowhere:
+After examining the flowers when the living room key is nowhere:
 	say "Faraji notices a glint of metal among the flowers. It's a small brass key. They take it.";
-	now the player carries the garden key.
+	now the player carries the living room key.
 
-The living room is north of the Bureau of Special Help. "[if cozy sofa is not mentioned]A cozy sofa sits next to the warm fireplace[otherwise]The sofa is next to the fireplace[end if]. Exits lead south and east."
+The living room door is a closed, locked, lockable, openable scenery door. It is south of the living room and north of the Bureau of Special Help. "The door is sturdy and wooden. [if the living room door is open]It is open[otherwise]It is closed[end if]."
+The living room door has matching key the living room key.
+
+The living room is a room. "[if cozy sofa is not mentioned]A cozy sofa sits next to the warm fireplace[otherwise]The sofa is next to the fireplace[end if]. Doors lead south and east."
 
 The cozy sofa is an enterable scenery supporter in the living room. The description is "The sofa is soft and comfortable." Understand "soft/comfortable/couch/divan" as the cozy sofa.
 
