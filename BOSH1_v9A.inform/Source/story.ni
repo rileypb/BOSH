@@ -481,7 +481,8 @@ Denouement is a scene. Denouement begins when the location is inside-the-dumpste
 Before going from the front office to the strip mall parking lot south during denouement:
 	if the copy of the Washington Herald is not handled:
 		say "[We] [trip] over a newspaper left up against the door. [We] [pick] it up.";
-		now the player carries the copy of the Washington Herald.
+		now the copy of the Washington Herald is in the Strip Mall Parking Lot South;
+	
 
 Book 9 - Concepts
 
@@ -1125,6 +1126,7 @@ Margaret Chao is in front office.
 
 There is a copy of the Washington Herald. The description is "The front page story is an account of the disappearance of the grandson of Senate Homeland Security Committee chairman Englund Fryes. His parents, including the Senator's son, were brutally murdered in their home, but the boy, Draco Fryes, is missing and presumed kidnapped. So far there has been no ransom demand.". 
 Understand "newspaper", "paper", "news" as the Washington Herald.
+The printed name is "copy of the [italic type]Washington Herald[roman type]".
 It is unsnarkable.
 
 The BOSH front desk is a scenery supporter in front office. Understand "store", "sales", "counter", "margaret's desk" as the BOSH front desk. The description is "The former sales counter now functions as a desk for the office manager (currently [Margaret]). Behind it are a number of shelves holding office supplies."
