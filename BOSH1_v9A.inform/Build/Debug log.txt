@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 29445 words long.
+I've now read your source text, which is 29444 words long.
 
 
 -----------------------------------------------------
@@ -55,9 +55,9 @@ I've also read Scenery Supporters by Philip Riley, which is 179 words long.
 I've also read Simple Conversation by Philip Riley, which is 2328 words long.
 I've also read Hyperspace by Philip Riley, which is 15831 words long.
 I've also read BOSH Facts by Philip Riley, which is 193 words long.
-I've also read Swamp Park by Philip Riley, which is 7853 words long.
+I've also read Swamp Park by Philip Riley, which is 7817 words long.
 I've also read Margaret by Philip Riley, which is 2549 words long.
-I've also read Enigma Lake by Philip Riley, which is 31053 words long.
+I've also read Enigma Lake by Philip Riley, which is 31042 words long.
 I've also read I Can Dig It by Philip Riley, which is 77 words long.
 I've also read BOSH Help by Philip Riley, which is 5610 words long.
 I've also read Overlook by Philip Riley, which is 763 words long.
@@ -80,7 +80,7 @@ I've also read Tutorial by Philip Riley, which is 114 words long.
 I've also read Swimming by Philip Riley, which is 38 words long.
 I've also read Secret Doors by Gavin Lambert, which is 272 words long.
 I've also read Plugging by Philip Riley, which is 706 words long.
-I've also read Books by Philip Riley, which is 2504 words long.
+I've also read Books by Philip Riley, which is 2480 words long.
 I've also read Container Types by Philip Riley, which is 55 words long.
 I've also read Extension Cord by Philip Riley, which is 3152 words long.
 I've also read State Update by Philip Riley, which is 406 words long.
@@ -146,17 +146,17 @@ Regional: CONSTANT_VNT'field office area'-region(I256_field_office_area)(I164'fi
  == region
 Regional: CONSTANT_VNT'hyperspace'-region(I241_hyperspace)(I149'hyperspace')
  == region
-Regional: CONSTANT_VNT'elr'-region(I528_elr)(I420'elr')
+Regional: CONSTANT_VNT'elr'-region(I525_elr)(I417'elr')
  == region
-Regional: CONSTANT_VNT'elr'-region(I528_elr)(I420'elr')
+Regional: CONSTANT_VNT'elr'-region(I525_elr)(I417'elr')
  == region
-Regional: CONSTANT_VNT'elr'-region(I528_elr)(I420'elr')
+Regional: CONSTANT_VNT'elr'-region(I525_elr)(I417'elr')
  == region
-Regional: CONSTANT_VNT'elr'-region(I528_elr)(I420'elr')
+Regional: CONSTANT_VNT'elr'-region(I525_elr)(I417'elr')
  == region
-Regional: CONSTANT_VNT'elr'-region(I528_elr)(I420'elr')
+Regional: CONSTANT_VNT'elr'-region(I525_elr)(I417'elr')
  == region
-Regional: CONSTANT_VNT'help area'-region(I769_help_area)(I659'help area')
+Regional: CONSTANT_VNT'help area'-region(I766_help_area)(I656'help area')
  == region
 
 
@@ -209,21 +209,21 @@ Phase XII ... Code generation
          == region
         Regional: CONSTANT_VNT'hyperspace'-region(I241_hyperspace)(I149'hyperspace')
          == region
-        Regional: CONSTANT_VNT'the laundromat-region'-region(I421_laundromat_region)(I317'laundromat-region')
+        Regional: CONSTANT_VNT'the laundromat-region'-region(I418_laundromat_region)(I314'laundromat-region')
          == region
-        Regional: CONSTANT_VNT'the laundromat-region'-region(I421_laundromat_region)(I317'laundromat-region')
-         == region
-        Regional: CONSTANT_VNT'hyperspace'-region(I241_hyperspace)(I149'hyperspace')
+        Regional: CONSTANT_VNT'the laundromat-region'-region(I418_laundromat_region)(I314'laundromat-region')
          == region
         Regional: CONSTANT_VNT'hyperspace'-region(I241_hyperspace)(I149'hyperspace')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I528_elr)(I420'elr')
+        Regional: CONSTANT_VNT'hyperspace'-region(I241_hyperspace)(I149'hyperspace')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I528_elr)(I420'elr')
+        Regional: CONSTANT_VNT'elr'-region(I525_elr)(I417'elr')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I528_elr)(I420'elr')
+        Regional: CONSTANT_VNT'elr'-region(I525_elr)(I417'elr')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I528_elr)(I420'elr')
+        Regional: CONSTANT_VNT'elr'-region(I525_elr)(I417'elr')
+         == region
+        Regional: CONSTANT_VNT'elr'-region(I525_elr)(I417'elr')
          == region
 
 
@@ -245,7 +245,7 @@ Phase XII ... Code generation
 
 ==== Phase XII.11 ... Determining grammar (G2) ====
 
-Regional: CONSTANT_VNT'elr'-region(I528_elr)(I420'elr')
+Regional: CONSTANT_VNT'elr'-region(I525_elr)(I417'elr')
  == region
 
 
@@ -286,9 +286,9 @@ Regional: CONSTANT_VNT'elr'-region(I528_elr)(I420'elr')
                                         Fail: scene (~) number = nothing
                                         Fail: scene (~) number = nothing
                                 0 = objects valued property. 1 = object
-            Regional: CONSTANT_VNT'elr'-region(I528_elr)(I420'elr')
+            Regional: CONSTANT_VNT'elr'-region(I525_elr)(I417'elr')
              == region
-            Regional: CONSTANT_VNT'elr'-region(I528_elr)(I420'elr')
+            Regional: CONSTANT_VNT'elr'-region(I525_elr)(I417'elr')
              == region
 
 
@@ -330,7 +330,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 277 files written as streams.
-CPU time: 1071 centiseconds
+CPU time: 1065 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

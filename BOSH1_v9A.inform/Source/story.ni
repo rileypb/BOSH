@@ -477,10 +477,11 @@ Book 8 - Script
 Klimp in-the-office is a scene. Klimp in-the-office begins when Chief Huffton Klimp is in BOSH chief's office.
 Moira in-the-office is a scene. Moira in-the-office begins when Moira Zin is in Moira's office.
 
-Denouement is a scene. Denouement begins when the location is the dumpster.
-Before going from the front office to the strip mall parking lot south when the copy of the Washington Herald is not handled during denouement:
-	say "[We] [trip] over a newspaper left up against the door. [We] [pick] it up.";
-	now the player carries the copy of the Washington Herald.
+Denouement is a scene. Denouement begins when the location is inside-the-dumpster.
+Before going from the front office to the strip mall parking lot south during denouement:
+	if the copy of the Washington Herald is not handled:
+		say "[We] [trip] over a newspaper left up against the door. [We] [pick] it up.";
+		now the player carries the copy of the Washington Herald.
 
 Book 9 - Concepts
 
