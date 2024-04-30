@@ -482,6 +482,8 @@ christy-subject is a subject. It is privately-named. The printed name is "Christ
 minerva-subject is a subject. It is privately-named. The printed name is "Minerva". Understand "Minerva" as minerva-subject.
 maggie-subject is a subject. It is privately-named. The printed name is "Maggie". Understand "Maggie" as maggie-subject.
 lobby is a subject.
+coffee-subject is subject. It is privately-named. The printed name is "coffee". Understand "coffee" as coffee-subject.
+hyperplane-subject is a subject. It is privately-named. The printed name is "hyperplane". Understand "infinite/featureless/hyperplane" as hyperplane-subject.
 
 Table of Quiz Topics (continued)
 subject (a thing)	interlocutor (a person)	comment (a text)	reply (a text)
@@ -501,6 +503,8 @@ Maggie	Maggie	"'Who are you?'"	"'I'm Maggie. I'm the receptionist here at the BO
 Faraji	Maggie	"'What does any of this have to do with me?'"	"'Ask Doris. Or don't. Something confusing is going on, and you're in the middle of it. Or maybe you're not. Who can say?'"
 field office area	Maggie	"'What is this place?'"	"'This is the BOSH Hyperspace Field Office. This is where we are. Isn't that obvious?'"
 Budapest	Maggie	"'What do you know about Budapest?'"	"'It was the answer to a question I asked myself. I don't remember the question, but the answer was Budapest.'"
+coffee-subject	Maggie	"'Do you like coffee?'"	"'Coffee is strange. It smells good, but it tastes horrible.'"
+hyperplane-subject	Maggie	"'What was that place I had to walk through to get here?'"	"'That was the lobby. I helped design it.'"
 
 Maggie interjection timer is a number that varies. Maggie interjection timer is 5.
 
@@ -673,7 +677,7 @@ thumb drive	Minerva	"'What do you know about this?'"	"'It's a USB drive. It's us
 mahogany desk	Minerva	"'I like your desk.'"	"'Thank you. You have good taste.'"
 coffee maker	Minerva	"'Tell me about the coffee maker.'"	"'It's a coffee maker. It makes coffee. It's on my desk.'"
 Minerva's papers	Minerva	"'What are you working on?'"	"'None of your business.'"
-Minerva's books	Minerva	"'Mind if I borrow a book?'"	"'Yes, I do mind. They're mine.'"
+Minerva's books	Minerva	"'You have a nice libarary.'"	"'Make sure your hands are clean before you touch the books.'"
 Advanced Temporal Mechanics	Minerva	"'Have you read this one?'"	"'Yes, I have. It's a good book.'"
 Theoretical Hyperspace	Minerva	"'What's this one about?'"	"'Check the title. It's about hyperspace.'"
 Hitchhiker's Guide to the Galaxy	Minerva	"'So you read fiction too?'"	"'No, I read non-fiction. That book is a documentary.'"

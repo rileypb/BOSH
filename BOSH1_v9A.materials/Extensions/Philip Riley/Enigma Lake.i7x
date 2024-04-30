@@ -1055,6 +1055,37 @@ After reading a command:
 	if the player's command in lower case is the incantation of the doll-fly in lower case:
 		change the text of the player's command to "say [the incantation of the doll-fly]"; 
 
+doll-fly interjection timer is a number that varies. doll-fly interjection timer is 5.
+
+Every turn when doll-fly interjection timer is not 0 and doll-fly is in the location:
+	decrease doll-fly interjection timer by 1;
+	if doll-fly interjection timer is 0:
+		interject doll-fly;
+
+To interject doll-fly:
+	sort Table of doll-fly Interjections in random order;
+	if there is a used of false in the Table of doll-fly Interjections:
+		choose the row with a used of false in the Table of doll-fly Interjections;
+		say "[doll-fly interjection entry][line break]";
+		now the used entry is true;
+		increase doll-fly interjection timer by a random number from 2 to 5;
+
+Table of doll-fly Interjections
+doll-fly interjection	used
+"[The doll-fly] shrieks and dive-bombs Faraji. They duck just in time."	false
+"[The doll-fly] howls, 'Thou shalt not pass!'"	false
+"[The doll-fly] buzzes around, making a nuisance of itself."	false
+"[The doll-fly] taunts, 'You humans smell even worse than the lizard people!'"	false
+"[The doll-fly] buzzes, 'Your family thinks you're a failure!'"	false
+"[The doll-fly] screams, 'The Bureau of Strange Happenings is a joke!'"	false
+"[The doll-fly] shrieks, 'No one will ever love you!'"	false
+"[The doll-fly] buzzes, 'You're a terrible person!'"	false
+"[The doll-fly] howls, 'I'm so angry about the ending of Game of Thrones and I'm going to take it out on you!'"	false
+"[The doll-fly] buzzes, 'The floor waxer doesn't do anything important!'"	false
+"[The doll-fly] taunts, 'I once played a game where EXAMINE and SEARCH were different commands and boy was I pissed!'"	false
+"[The doll-fly] shouts, 'Hi, I'm Larch Faraji, and I'm a big jerk!'"	false
+"[The doll-fly] buzzes, 'Go home and cry, you freak!'"	false
+"[The doll-fly] howls, 'You dress terribly, and your hair is a mess!'"	false
 
 Book 17 - Extension Cord
 
