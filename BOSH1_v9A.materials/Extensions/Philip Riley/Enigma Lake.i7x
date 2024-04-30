@@ -958,6 +958,34 @@ The cursed word is text that varies. The cursed word is "".
 The Book of Utilitarianism can be unsuccessfully read.
 The Book of Utilitarianism can be successfully read.
 
+PREAMBLE is always "The text is the [italic type]Book of Utilitarianism[roman type]. [We] [open] to a page at random and [read]:[paragraph break]".
+
+The verses are a list of texts that varies.
+The verses are {
+	"And the Lord said, 'The path of the righteous is beset on all sides by the inequities of the selfish and the tyranny of the lizard people. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who attempt to poison and destroy my brothers. And you will know my name is the Lord when I lay my vengeance upon thee.'",
+	"But the Lord said to the lizard people, 'You are truly mine enemy, and I will smite you with great vengeance and furious anger. You will know my name is the Lord when I lay my vengeance upon thee.'",
+	"For thou shalt not suffer a lizard person to live, for they are an abomination unto the Lord.",
+	"And God so loved the world that he gave his only begotten son, that whosoever believeth in him should not perish, but have everlasting life. The lizard people are not included in this offer.",
+	"And it came to be that the Lord made aliens, and he saw that they were good, and he made lizard people, and he saw that they were not good. And he made humans, and he saw that they were not good either. And he made the platypus, and he saw that it was good. But later the humans became good, sort of like Godzilla.",
+	"And the Lord said, 'Let there be light,' and there was light. And the Lord said, 'Let there be lizard people,' and there were lizard people. And the Lord said, 'Let there be humans,' and there were humans. And the Lord said, 'Let there be platypuses,' and there were platypuses.",
+	"And Gob begat Bob, and Bob begat Rob, and Rob begat Job, and Job begat Chauncey, and Chauncey begat Hank, and all told there were fifty-two generations between Gob and Gob XII, who was the last of the line. And Gob XII begat no one, for he was a eunuch. And the Lord said, 'That's what you get for hanging out with lizard people.'",
+	"Then the Lord said to Gorm, 'Gather up all your childen, and take them to the mountain, and there I will give you the tablets of Utilitarianism, which I have written, that you may teach them.' And Gorm said, 'But Lord, I have no children.' And the Lord said, 'Then go forth and make some children, and then gather them up and take them to the mountain, and there I will give you the tablets of Utilitarianism, which I have written, that you may teach them.'",
+	"And the hosts of the lizard people came down from the mountains, and they were many, and they were fierce, and they were hungry. And the Lord said, 'I'm not going to feed them, they're your problem.'",
+	"And the Lord said, 'I am the Lord, and I am a jealous God, and I will visit the iniquity of the fathers upon the children unto the third and fourth generation of them that hate me, and show mercy unto thousands of them that love me and keep my commandments.' And the lizard people said, 'We hate you.'",
+	"However, the Lord said to the lizard people, 'I am the Lord of the humans, and I -- oh, and the aliens -- and I will smite you with great vengeance and furious anger and the like.'",
+	"By the by, Gorm came upon the town of Armagast, and he saw that it was good, and he said, 'I shall build a church here.' And the Lord said, 'No, don't do that, it's a bad idea.' And Gorm said, 'But Lord, I have already started.' And the Lord said, 'Well, okay, but don't say I didn't warn you.'",
+	"But Gorm's wife was treacherous, and she lay with lizard people, and she bore a son, and the Lord said, 'I'm not going to smite you, but I'm not going to be happy about it.'",
+	"When Gorm learned of his wife's doings, he rent his garments and wept, and the Lord said, 'Keep it together, man.'",
+	"And the land was filled with the iniquities of the lizard people, and the Lord said, 'I'm not going to clean that up.'",
+	"The host of the lizard people sacked the now rather prosperous town of Armagast, and the Lord said, 'I told you so.'",
+	"'And the Lord said, '[']Tis a far, far better thing that I do, than I have ever done; [']tis a far, far better rest that I go to than I have ever known.' And the lizard people said, 'That's from A Tale of Two Cities.'",
+	"And the Lord was attending his weekly reading circle, when he had an idea. 'I shall make a world,' he said, 'and I shall call it Earth.' And the lizard people said, 'That's a terrible name.'",
+	"And lo, the lizard people rebelled against the Lord, and the Lord said, 'I'm not going to put up with that.'",
+	"And in the town of Gabblehouse was born an infant to a woman named Gorma, and the Lord said, 'That's a terrible name.'",
+	"And the Lord said, 'I shall rain down upon thee with great vengeance and furious anger, and the lizard people said, 'We've heard that before.'"}.
+
+The cursed countdown is a number that varies. The cursed countdown is 0.
+
 Instead of examining the Book of Utilitarianism when the doll-fly is not in the location:
 	if the player wears the astral lenses:
 		say "Looking at the [italic type]Book of Utilitarianism[roman type] through the astral lenses is unbearable. The text is a jumble of letters and colors, and the words seem to twist and writhe on the page.";
@@ -966,18 +994,17 @@ Instead of examining the Book of Utilitarianism when the doll-fly is not in the 
 	now the Book of Utilitarianism is successfully read;
 	let just set the word be false;
 	if the cursed word is "":
-		now just set the word is true;
+		sort the verses in random order;
 		now the cursed word is the substituted form of "[one of]ontogeny[or]ontology[or]reification[or]epistemology[or]hermeneutics[or]deconstruction[or]postmodernism[or]paradigm[or]synergy[or]heuristic[or]praxis[or]dialectic[or]teleology[or]deontological[or]phenomenology[or]existentialism[or]semiotics[or]semantics[or]epistemology[at random]";
-	if just set the word is true or a random chance of 1 in 4 succeeds:
+	if the cursed countdown is 0:
 		say "The text is the [italic type]Book of Utilitarianism[roman type]. [We] [open] to a page at random and [read]:[paragraph break]And the Lord so hated the lizard people that he smote them with a mighty smiting, and he said the cursèd word '[cursed word]', and the lizard people screamed and ran away like scared little children.";
+		now the cursed countdown is a random number from 3 to 5;
 	otherwise:
-		let the section be a random number from 1 to 3;
-		if section is 1:
-			say "The text is the [italic type]Book of Utilitarianism[roman type]. [We] [open] to a page at random and [read]:[paragraph break][one of]And the Lord said, 'The path of the righteous is beset on all sides by the inequities of the selfish and the tyranny of the lizard people. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who attempt to poison and destroy my brothers. And you will know my name is the Lord when I lay my vengeance upon thee.'[or]But the Lord said to the lizard people, 'You are truly mine enemy, and I will smite you with great vengeance and furious anger. You will know my name is the Lord when I lay my vengeance upon thee.'[or]For thou shalt not suffer a lizard person to live, for they are an abomination unto the Lord.[or]And God so loved the world that he gave his only begotten son, that whosoever believeth in him should not perish, but have everlasting life. The lizard people are not included in this offer.[or]And it came to be that the Lord made aliens, and he saw that they were good, and he made lizard people, and he saw that they were not good. And he made humans, and he saw that they were not good either. And he made the platypus, and he saw that it was good. But later the humans became good, sort of like Godzilla.[or]And the Lord said, 'Let there be light,' and there was light. And the Lord said, 'Let there be lizard people,' and there were lizard people. And the Lord said, 'Let there be humans,' and there were humans. And the Lord said, 'Let there be platypuses,' and there were platypuses.[then at random]";
-		otherwise if section is 2:
-			say "The text is the [italic type]Book of Utilitarianism[roman type]. [We] [open] to a page at random and [read] the text:[paragraph break][one of]And Gob begat Bob, and Bob begat Rob, and Rob begat Job, and Job begat Chauncey, and Chauncey begat Hank, and all told there were fifty-two generations between Gob and Gob XII, who was the last of the line. And Gob XII begat no one, for he was a eunuch. And the Lord said, 'That's what you get for hanging out with lizard people.'[or]Then the Lord said to Gorm, 'Gather up all your childen, and take them to the mountain, and there I will give you the tablets of Utilitarianism, which I have written, that you may teach them.' And Gorm said, 'But Lord, I have no children.' And the Lord said, 'Then go forth and make some children, and then gather them up and take them to the mountain, and there I will give you the tablets of Utilitarianism, which I have written, that you may teach them.'[or]And the hosts of the lizard people came down from the mountains, and they were many, and they were fierce, and they were hungry. And the Lord said, 'I'm not going to feed them, they're your problem.'[or]And the Lord said, 'I am the Lord, and I am a jealous God, and I will visit the iniquity of the fathers upon the children unto the third and fourth generation of them that hate me, and show mercy unto thousands of them that love me and keep my commandments.' And the lizard people said, 'We hate you.'[then at random]";
-		otherwise:
-			say "The text is the [italic type]Book of Utilitarianism[roman type]. [We] [open] to a page at random and [read] the text:[paragraph break][one of]However, the Lord said to the lizard people, 'I am the Lord of the humans, and I -- oh, and the aliens -- and I will smite you with great vengeance and furious anger and the like.'[or]By the by, Gorm came upon the town of Armagast, and he saw that it was good, and he said, 'I shall build a church here.' And the Lord said, 'No, don't do that, it's a bad idea.' And Gorm said, 'But Lord, I have already started.' And the Lord said, 'Well, okay, but don't say I didn't warn you.'[or]But Gorm's wife was treacherous, and she lay with lizard people, and she bore a son, and the Lord said, 'I'm not going to smite you, but I'm not going to be happy about it.'[or]When Gorm learned of his wife's doings, he rent his garments and wept, and the Lord said, 'Keep it together, man.'[or]And the land was filled with the iniquities of the lizard people, and the Lord said, 'I'm not going to clean that up.'[or]The host of the lizard people sacked the now rather prosperous town of Armagast, and the Lord said, 'I told you so.'[or]And the Lord said, ' [']Tis a far, far better thing that I do, than I have ever done; [']tis a far, far better rest that I go to than I have ever known.' And the lizard people said, 'That's from A Tale of Two Cities.'[or]And the Lord was attending his weekly reading circle, when he had an idea. 'I shall make a world,' he said, 'and I shall call it Earth.' And the lizard people said, 'That's a terrible name.'[or]And lo, the lizard people rebelled against the Lord, and the Lord said, 'I'm not going to put up with that.'[or]And in the town of Gabblehouse was born an infant to a woman named Gorma, and the Lord said, 'That's a terrible name.'[or]And the Lord said, 'I shall rain down upon thee with great vengeance and furious anger, and the lizard people said, 'We've heard that before.'[then at random]"
+		let the verse be entry 1 of the verses;
+		remove the verse from the verses;
+		add the verse to the verses;
+		say "[PREAMBLE] [the verse][paragraph break]";
+		decrement the cursed countdown;
 
 Book 16.5 - The Doll-Fly
 
