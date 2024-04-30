@@ -1,5 +1,5 @@
 Debugging log of Inform 7
-Inform called as: ni -noprogress -internal /Applications/Inform.app_old.app/Contents/Resources/Internal/ -external /Users/rileypb/Library/Inform -project BOSH1_v9A.inform/
+Inform called as: /Applications/Inform.app_old.app/Contents/MacOS/ni -internal /Applications/Inform.app_old.app/Contents/Resources/Internal -external /Users/rileypb/Library/Inform -project /Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform -format=ulx
 Found language bundle 'German' (built in)
 Found language bundle 'Italian' (built in)
 Found language bundle 'English' (built in)
@@ -330,7 +330,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 277 files written as streams.
-CPU time: 1165 centiseconds
+CPU time: 1166 centiseconds
 
 
 That concludes the debugging log from this run of Inform.
