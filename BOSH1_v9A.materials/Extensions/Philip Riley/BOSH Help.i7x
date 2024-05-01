@@ -6,6 +6,12 @@ Include Tutorial by Philip Riley.
 
 Help Area is a region. The Bureau of Special Help, the Observation Room, the ornamental garden, and the living room are in the Help Area.
 
+After taking something while in the Help Area for the first time:
+	say "Taken. Try taking INVENTORY to see what you picked up.";
+
+After taking inventory while in the Help Area for the first time:
+	say "You could also just type I to take inventory.";
+
 The Bureau of Special Help is a room. "It is bare save for a bookshelf and a button on the wall marked 'Exit'. Faraji can go east or north from here."
 
 The tutorial message is "You can type EXAMINE BOOKSHELF to see what's on the shelf, or PUSH BUTTON to leave help. You can also type a direction (like EAST) to move around. Type LOOK to repeat the description of the room"
@@ -213,13 +219,13 @@ The fake-telescope is scenery in the fake-steeple. It is privately-named. The de
 
 The fake-tripod is scenery in the fake-steeple. It is privately-named. The description is "The tripod is holding the telescope steady." Understand "tripod" as the fake-tripod. The printed name is "tripod".
 
-The fake-town is scenery in the fake-steeple. "a small town, deserted. The buildings look from another era, but still new". Understand "small/deserted/buildings/town" as the fake-town. The printed name is "town".
+The fake-town is scenery in the fake-steeple. "A small town, deserted. The buildings look from another era, but strangely still new.". Understand "small/deserted/buildings/town" as the fake-town. The printed name is "town".
 
 The Observation Room is east of the Bureau of Special Help. "This small white room seems like a museum gallery, but with a window instead of art[window description]. 
 
 A comfortable-looking viewing couch dominates the center of the observation room. Exits lead north and west."
 The Observation Room has a room called the window contents. The window contents is the fake-lake.
-The tutorial message is "[if the player is not on the comfortable viewing couch]You can type LOOK to repeat the description of the room. You can also EXAMINE an object to get a closer look at it. Or you can SIT ON THE COUCH[otherwise]You can STAND UP from the couch[end if], See what happens if you try to TAKE an object in the window".
+The tutorial message is "[if the player is not on the comfortable viewing couch]You can type LOOK to repeat the description of the room. You can also EXAMINE an object to get a closer look at it. Or you can SIT ON THE COUCH[otherwise]You can STAND UP from the couch[end if]. See what happens if you try to TAKE an object in the window".
 
 The comfortable viewing couch is an enterable scenery supporter in the Observation Room. It is exposed. The description is "The couch is soft and comfortable." Understand "comfortable-looking/sofa/seat/seating" as the comfortable viewing couch.
 
@@ -262,7 +268,7 @@ The ornamental garden is north of the Observation Room. "Flowers and shrubs crow
 The tutorial message is "Sometimes things you need will be hidden. You can type EXAMINE FLOWERS to see if there's anything there"
 
 The garden door is an openable scenery door. It is west of the ornamental garden and east of the living room. "The door is an elegant wooden door, with a brass handle. [if the garden door is open]It is open[otherwise]It is closed[end if]."
-The tutorial message is "[if the garden door is open]You can go through the door to the living room[otherwise]You can try to OPEN the door[end if]."
+The tutorial message is "[if the location is the garden]You can go through the door to the living room[otherwise if the location is the living room]You can go through the door to the garden[end if]"
 
 Instead of opening the garden door when the garden door is locked:
 	say "The door is locked. You can try to UNLOCK the door if you have the right key.";
@@ -298,12 +304,15 @@ After examining the flowers when the living room key is nowhere:
 
 The living room door is a closed, locked, lockable, openable scenery door. It is south of the living room and north of the Bureau of Special Help. "The door is sturdy and wooden. [if the living room door is open]It is open[otherwise]It is closed[end if]."
 The living room door has matching key the living room key.
+The tutorial message is "[if the living room door is locked]This door is locked. You will to UNLOCK LIVING ROOM DOOR WITH the key (have you found it yet?) to open it[otherwise if the location is the living room]You can go through the door to the Bureau of Special Help[otherwise]You can go through the door to the living room[end if]"
 
 The living room is a room. "[if cozy sofa is not mentioned]A cozy sofa sits next to the warm fireplace[otherwise]The sofa is next to the fireplace[end if]. Doors lead south and east."
 
+The tutorial message is "You can type ASK DOCTOR ABOUT TOPIC to ask Doctor Helpful about a particular topic. You can ASK DOCTOR FOR an object, or GIVE an object TO DOCTOR"
+
 The cozy sofa is an enterable scenery supporter in the living room. The description is "The sofa is soft and comfortable." Understand "soft/comfortable/couch/divan" as the cozy sofa.
 
-The warm fireplace is scenery in the living room. The description is "The fireplace is warm and inviting." Understand "warm/inviting" as the warm fireplace.
+The warm fireplace is scenery in the living room. The description is "The fireplace is warm and inviting." Understand "warm/inviting/fire/place" as the warm fireplace.
 
 Instead of doing something to the warm fireplace when the action requires a touchable noun:
 	say "Faraji would rather not risk burning themself."
@@ -327,9 +336,8 @@ The description is "This book will help you learn some advanced strategies for p
 Doctor Helpful is a man in the living room. He is carrying Advanced Adventuring.
 The description is "Doctor Helpful is a tweedy old professor with ink-stained fingers." Understand "tweedy/professor" as Doctor Helpful. "Doctor Helpful reclines on the sofa[if Doctor Helpful carries Advanced Adventuring] reading a book[end if], looking thoughtful."
 
-ink-stained fingers is part of Doctor Helpful. The description is "Doctor Helpful's fingers are stained with ink."
+ink-stained fingers is part of Doctor Helpful. The description is "Doctor Helpful's fingers are stained with ink." They are plural-named.
 
-The tutorial message is "You can type ASK DOCTOR ABOUT TOPIC to ask Doctor Helpful about a particular topic. You can ASK DOCTOR FOR an object, or GIVE an object TO DOCTOR."
 
 ask Doctor Helpful for the book is a questioning quip.
 	Understand "ask doctor/helpful for book" as ask Helpful for the book.
@@ -350,6 +358,9 @@ verbs-subject is a subject. It is privately-named. The printed name is "verbs". 
 Observation-Room-subject is a subject. It is privately-named. The printed name is "observation room". Understand "observation/room/window" as Observation-Room-subject.
 ornamental-garden-subject is a subject. It is privately-named. The printed name is "ornamental garden". Understand "ornamental/garden/gardens" as ornamental-garden-subject.
 Great-aunt Gertrude is a subject. Understand "great-aunt/gertrude/great/aunt" as Great-aunt Gertrude. The printed name is "Great-aunt Gertrude".
+living-room-subject is a subject. It is privately-named. The printed name is "living room". Understand "living/room" as living-room-subject.
+help-subject is a subject. It is privately-named. The printed name is "help". Understand "help" as help-subject.
+Bureau-of-Special-Help-subject is a subject. It is privately-named. The printed name is "Bureau of Special Help". Understand "bureau/special/help" as Bureau-of-Special-Help-subject.
 
 
 Table of Quiz Topics (continued)
@@ -378,7 +389,9 @@ Commands for the Advanced Adventurer	Doctor Helpful		"Faraji says, 'What can you
 Observation-Room-subject	Doctor Helpful		"Faraji says, 'What is going on in the Observation Room?'"	"'No one really knows where those places are. It used to mostly show a large underground labyrinth, filled with tunnels, caves, and peculiar rock formations, and every so often a bedraggled adventurer,' Doctor Helpful replies."
 ornamental-garden-subject	Doctor Helpful		"Faraji says, 'What can you tell me about the ornamental garden?'"	"'Ah, well, it was left to me by my great-aunt Gertrude. She's still alive, but she absolutely despises gardening,' Doctor Helpful replies."
 Great-aunt Gertrude	Doctor Helpful		"Faraji says, 'What can you tell me about your great-aunt Gertrude?'"	"'Horrible woman. Absolutely no appreciation for interactive fiction,' Doctor Helpful replies."
-
+living-room-subject	Doctor Helpful		"Faraji says, 'What can you tell me about the living room?'"	"'It's a cozy place, isn't it? I've spent many a happy hour here,' Doctor Helpful replies."
+help-subject	Doctor Helpful		"Faraji says, 'Can you help me?'"	"'Of course, Agent Faraji. I [italic type]am[roman type] Doctor Helpful, after all,' Doctor Helpful replies."
+Bureau-of-Special-Help-subject	Doctor Helpful		"Faraji says, 'What can you tell me about the Bureau of Special Help?'"	"'We're here to help you, Agent Faraji. That's what we do,' Doctor Helpful replies."
 
 Before quizzing Doctor Helpful about adventuring-subject:
 	if Doctor Helpful carries Advanced Adventuring:
