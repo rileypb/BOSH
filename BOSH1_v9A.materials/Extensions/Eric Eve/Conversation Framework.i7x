@@ -12,6 +12,14 @@ Chapter  1 - Action Definitions
 
 Section 1 - New actions and grammar
 
+To decide whether (S - a subject) is a-propos for (speaker - an object):
+	repeat through the Table of Quiz Topics:
+		if the subject entry is S and the interlocutor entry is speaker:
+			decide yes;
+	decide no;
+
+Definition: a subject is a-propos if it is a-propos for the current interlocutor.
+
 Requesting it for is an action applying to two visible things.
 Imploring it for is an action applying to one visible thing and one topic.
 
@@ -25,7 +33,7 @@ Understand "ask [someone] for [text]" as imploring it for.
 Quizzing it about is an action applying to two visible things.
 
 Understand "ask [someone] about [something]" as quizzing it about.
-Understand "ask [someone] about [any subject]" as quizzing it about.
+Understand "ask [someone] about [any a-propos subject]" as quizzing it about.
 
 Informing it about is an action applying to two visible things.
 
@@ -74,7 +82,7 @@ implicit-telling is an action applying to one topic.
 Understand "t [text]" as implicit-telling.
 
 implicit-quizzing is an action applying to one visible thing.
-  Understand "ask about [something]" or "a [something]" or "a [any subject]" or "ask about [any subject]" as implicit-quizzing.
+  Understand "ask about [something]" or "a [something]" or "a [any a-propos subject]" or "ask about [any a-propos subject]" as implicit-quizzing.
 
 implicit-informing is an action applying to one visible thing.
   Understand "t [any known thing]" or "talk about [any known thing]" as implicit-informing.

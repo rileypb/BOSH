@@ -41,6 +41,14 @@ Activating the hint-locked-desk:
 	otherwise:
 		deactivate;
 
+The hint-computer is a hint topic. Understand "computer", "faraji's/my/their computer" as the hint-computer. The printed name is "computer".
+
+Hinting the hint-computer:
+	if the computer is not seen:
+		rule succeeds with result "According to Margaret, Faraji's computer is behind the front desk.";
+	otherwise:
+		rule succeeds with result "Don't forget to examine the computer.";
+
 The hint-locked-desk-no-key is a hint topic. Understand "key locked in desk" as the hint-locked-desk-no-key. The printed name is "key locked in desk". It is progressive. It is unlisted. The progression is {"Oops, I guess the key is locked in the desk.", "Maybe there's another key.", "Or maybe there's a way in without a key.", "Why not give the desk a once-over?"}.
 
 The hint-hex-wrench is a hint topic. Understand "hex/allen/-- wrench/key/tool", "hex/allen" as the hint-hex-wrench. The printed name is "hex wrench".

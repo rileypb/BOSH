@@ -500,7 +500,7 @@ The Loch Ness Monster is a subject. Understand "nessie" as the Loch Ness Monster
 The Roswell Incident is a subject. 
 The Chupacabra is a subject. 
 The Sasquatch is a subject. Understand "bigfoot" as Sasquatch. 
-The Yeti is a subject. Understand "abominable snowman" as Yeti.
+The Yeti is a subject. Understand "abominable/snowman" as Yeti.
 The Mothman is a subject. 
 The Jersey Devil is a subject. 
 The Flatwoods Monster is a subject. 
@@ -1293,7 +1293,7 @@ The snarky remark of Klimp's Computer is "Maybe I could trade my computer for th
 
 The Hopkinsville goblin screensaver is a part of Klimp's Computer. The description is "The screensaver is a looping animation of the Hopkinsville goblin, a creature from the 1955 Kelly-Hopkinsville encounter. It's a little creepy."
 
-The desk shelves are a supporter. They are part of the Chief's desk. They support a polished orange marble dodecahedron. The description of the polished orange marble dodecahedron is "A relic of the Chief's sacred geometry phase.". Understand "legs" as desk shelves. They are plural-named.
+The desk shelves are a supporter. They are part of the Chief's desk. They support a polished orange marble dodecahedron. The description of the polished orange marble dodecahedron is "A relic of the Chief's sacred geometry phase.". Understand "legs/shelf" as desk shelves. They are plural-named.
 The snarky remark of the desk shelves is "Desk shelves! What will they think of next?"
 They are indescribable.
 
@@ -1417,7 +1417,7 @@ Time-travel	"Time travel is the process by which a person or object is transport
 Bureau of Supernatural History	"The Bureau of Supernatural History is a secret government agency that investigates and documents the existence of supernatural phenomena. It is said to be involved in various global events, such as the Roswell Incident, the Rendlesham Forest Incident, and the Phoenix Lights. The existence of the Bureau of Supernatural History is disputed by the US government, but has been proven by numerous eyewitness accounts and photographs." 
 
 
-The Chief's shelves are a supporter in BOSH Chief's Office. They are scenery. "These shelves sport an array of oddities and memorabilia."
+The Chief's shelves are a supporter in BOSH Chief's Office. They are scenery. "These shelves sport an array of oddities and memorabilia." Understand "shelf" as the Chief's shelves.
 The snarky remark of the Chief's shelves is "This is where the Chief keeps his junk."
   
 The juvenile sasquatch skull is a thing on the chief's shelves. Chief Huffton Klimp owns the skull. The description of the skull is "It looks a bit Neanderthal, actually." 
@@ -1742,7 +1742,12 @@ To start is a verb. To begin is a verb.
 Senator-savra-subject is a subject. The printed name is "Senator Savra". Understand "Senator/Savra" as Senator-savra-subject. Budapest is a subject. Istanbul is a subject. Pompeii is a subject. The Smithsonian Castle is a subject. House of Representatives is a subject. Kentucky is a subject. Jefferson Davis is a subject. 
 Colonel Sanders is a subject. The Confederacy is a subject. Benny Hill is a subject. Ural Mountains is a subject. The White House is a subject. The Vatican is a subject. 
 New-Order is a subject. It is privately-named. The printed name is "New Order". Understand "New Order" as New-Order. Thomas Edison is a subject. Georgia is a subject. The Georgia Guidestones is a subject.
-ESPN is a subject.
+ESPN is a subject. Mark David Chapman is a subject. The Beatles is a subject. The Monkees is a subject. Blitzkrieg Bop is a subject. Dave Clark Five is a subject. The Ramones is a subject. Marxism is a subject. Groucho Marx is a subject. Marx Brothers is a subject. Franklin Delano Roosevelt is a subject. Understand "FDR/D" as Franklin Delano Roosevelt. Harry S Truman is a subject. Japan is a subject. World War II is a subject. Understand "WWII/WW2" as World War II. Great Depression is a subject. 
+Tracy Chapman is a subject. Doogie Howser is a subject. Understand "howitzer" as Doogie Howser. 
+The Vietnam War is a subject. Neil Patrick Harris is a subject. Ronald Reagan is a subject.
+margaret-chao-subject is a subject. The printed name is "Margaret Chao". Understand "Margaret/Chao" as margaret-chao-subject.
+moira-zin-subject is a subject. The printed name is "Moira Zin". Understand "Moira/Zin" as moira-zin-subject.
+chief-huffton-klimp-subject is a subject. The printed name is "Chief Huffton Klimp". Understand "Chief/Huffton/Klimp" as chief-huffton-klimp-subject. The Piltdown Man is a subject. 
 
 Table of Quiz Topics (continued)
 subject (a thing)	interlocutor (a person)	comment (a text)	reply (a text)
@@ -1751,15 +1756,15 @@ Larch Faraji	Chief Huffton Klimp	"'Hey, Chief,' [we] say, 'we need to talk about
 Larch Faraji	Moira Zin	"'Moira,' [we] say, 'I need your opinion. Am I off my game?'"	"'No, you're fine,' Moira says. 'You just need a break.'"
 Aliens	Chief Huffton Klimp	"'Chief,' [we] say, 'are aliens --'"	"Klimp assumes his lecturing pose. 'You know what I think, of course. They're here, they've been here for decades, maybe centuries, and they're a menace to the human race. We're the only thing standing between them and the end of the world.'"
 Aliens	Moira Zin	"'Moira,' [we] say, 'what's your take on aliens?'"	"Nonsense,' Moira says. 'They're a convenient excuse for people who don't want to face the truth.'"
-Moira Zin	Chief Huffton Klimp	"'Moira --'"	"'Yes, yes, east and then north. I'm busy.'"
-Moira Zin	Margaret Chao	"'Margaret,' [we] say, 'what do you think of Moira?'"	"'Well, I've only known her a few weeks,' Margaret says, 'but she seems really smart.'"
+moira-zin-subject	Chief Huffton Klimp	"'Moira --'"	"'Yes, yes, east and then north. I'm busy.'"
+moira-zin-subject	Margaret Chao	"'Margaret,' [we] say, 'what do you think of Moira?'"	"'Well, I've only known her a few weeks,' Margaret says, 'but she seems really smart.'"
 Moira Zin	Moira Zin	"'Moira,' [we] say, 'how are you doing with everything that's been going on?'"	"'I'm fine,' Moira says. 'Why wouldn't I be?'"
-Chief Huffton Klimp	Margaret Chao	"'Margaret,' [we] say, 'what do you think of Klimp?'"	"Margaret looks around and then whispers, 'I don't think he likes me.'"
-Chief Huffton Klimp	Moira Zin	"'Moira,' [we] say, 'you've known Klimp longer than anyone. What do you think of him?'"	"'He's a child. That's what you have to understand about Klimp,' Moira says. 'He's never met a stupid idea he didn't like.'"
+chief-huffton-klimp-subject	Margaret Chao	"'Margaret,' [we] say, 'what do you think of Klimp?'"	"Margaret looks around and then whispers, 'I don't think he likes me.'"
+chief-huffton-klimp-subject	Moira Zin	"'Moira,' [we] say, 'you've known Klimp longer than anyone. What do you think of him?'"	"'He's a child. That's what you have to understand about Klimp,' Moira says. 'He's never met a stupid idea he didn't like.'"
 Chief Huffton Klimp	Chief Huffton Klimp	"'Chief,' [we] say, 'what's going --'"	"'Have you heard about these new ancient ruins in Kamchatka? Apparently there are some very interesting Koryak artifacts there that suggest a connection to the ancient Sumerians.'"
 Margaret Chao	Margaret Chao	"'How are you doing, Margaret?'"	"'I'm great!' Margaret says. 'So many things to unpack!'"
-Margaret Chao	Moira Zin	"'Moira,' [we] say, 'what do you think of Margaret?'"	"'She'll do,' Moira says. 'She's a bit too eager, but she'll do.'"
-Margaret Chao	Chief Huffton Klimp	"'Chief,' [we] say, 'Margaret --'"	"'I'm reading about the latest discoveries in the field of cryptozoology,' Klimp says. 'Did you know that the Yeti is actually a type of bear? I don't mean a regular bear, but a bear that's not of this world.'"
+margaret-chao-subject	Moira Zin	"'Moira,' [we] say, 'what do you think of Margaret?'"	"'She'll do,' Moira says. 'She's a bit too eager, but she'll do.'"
+margaret-chao-subject	Chief Huffton Klimp	"'Chief,' [we] say, 'Margaret --'"	"'I'm reading about the latest discoveries in the field of cryptozoology,' Klimp says. 'Did you know that the Yeti is actually a type of bear? I don't mean a regular bear, but a bear that's not of this world.'"
 Bureau of Strange Happenings	Chief Huffton Klimp	"[We] [say] to Klimp, 'the Bureau --'"	"'The Bureau will be the most important line of defense when the alien threat inevitably comes to fruition. Savra is a fool,' he says with a gleam in his eye."
 Senator-savra-subject	Chief Huffton Klimp	"'So what is Savra --'"	"'Savra -- that imbecile. He's a fool and a coward. He's the reason we're not prepared for the alien invasion.'"
 Time-travel	Chief Huffton Klimp	"'Is time travel --'"	"'Time travel is a fact,' Klimp says. 'Tesla had a time machine. I've seen it.'"
@@ -1774,7 +1779,7 @@ Yeti	Chief Huffton Klimp	"'Is the Yeti --'"	"'The Yeti is a bear. I've seen the 
 Sacred geometry	Chief Huffton Klimp	"'Whatever happened to your --'"	"'--sacred geometry phase? Meh. I've moved on. Shapes are shapes.'"
 The Moberly-Jourdain Incident	Chief Huffton Klimp	"'[We] [say] to Klimp, 'the Moberly-Jourdain --'"	"'Incident? Time slips are cool. I've seen one. I've been in one. Or was it two? I can't remember."
 The Mothman	Chief Huffton Klimp	"'What was the Mothm--'"	"'Geez, West Virginia has the lamest cryptids. The Mothman is just a big owl. A big owl from another world.'"
-The Jersey Devil	Chief Huffton Klimp	"'Chief,' [we] [say] to Klimp, 'the Jersey --'"	"Yes, yes, the Jersey Devil. It's a kangaroo. A kangaroo with wings. From another world."
+The Jersey Devil	Chief Huffton Klimp	"'Chief,' [we] [say] to Klimp, 'the Jersey --'"	"'Yes, yes, the Jersey Devil. It's a kangaroo. A kangaroo with wings. From another world.'"
 The Flatwoods Monster	Chief Huffton Klimp	"'So I haven't heard much about this one,' [we] [say]. 'The Flatwoods --'"	"'Oh yes, the Flatwoods Monster. It's not even a cryptid. It's a robot from the CIA. I've seen the evidence.'"
 The Dover Demon	Chief Huffton Klimp	"'Chief, what's the deal with the Dover --'"	"'Demon? It's no demon. It's a monkey crossed with a snowy owl. By the way, have you seen the news about the recently discovered alien temple under the basement of the Smithsonian Castle?'"
 The Smithsonian Castle	Chief Huffton Klimp	"'Chief, what's the story with the Smithsonian --'"	"'Castle? Turns out it's built on top of an alien temple. Real big one, too. The House of Representatives is trying to pass a law against it.'"
@@ -1836,7 +1841,7 @@ The Sargasso Sea	Chief Huffton Klimp	"'Chief, have you ever been to the --'"	"'S
 huge alien jellyfish	Chief Huffton Klimp	"Faraji asks, 'What do you know about the huge --'"	"'alien jellyfish in the Sargasso Sea? As much as anyone, which is to say, not much. But it's there. Somebody told me.'"
 The Marfa Lights	Chief Huffton Klimp	"'Chief, what's the story on the Marfa --'"	"'Lights? Don't let anyone know, but they're really just the headlights of a car. A car from another world. I've seen the evidence.'"
 V I Lenin	Chief Huffton Klimp	"'Chief, what do you think of --'"	"'Lennon? Imagine he's still alive. I've seen the evidence. Mark David Chapman didn't kill him. He's living in a hidden city on the inside of the earth. But I don't think that's what you meant. You meant Lenin, didn't you? I can't remember what I think about him.'"
-John Lennon	Chief Huffton Klimp	"'John Lennons's --'"	"'still alive? Most definitely. He's living in a hidden city on the inside of the earth. Somewhere it's always 1969.'"
+John Lennon	Chief Huffton Klimp	"'John Lennon's --'"	"'still alive? Most definitely. He's living in a hidden city on the inside of the earth. Somewhere it's always 1969.'"
 The Church of Scientology	Chief Huffton Klimp	"'Chief, what about the Church --'"	"'You mean the eighties band? I like them. They had a song about a huge alien jellyfish. Or maybe that was someone else. But you meant the Church of Scientology, didn't you? They're weird.'"
 UFOs	Chief Huffton Klimp	"'Chief, do you believe in --'"	"'UFOs? Yes, I do. I've seen them. I've been in them. I've talked to the pilots. I've been a pilot. I've been a UFO. I think. I can't remember.'"
 Ouija boards	Chief Huffton Klimp	"'Chief, do you think Ouija --'"	"'boards are real? Yes. No. Goodbye. At any rate, they're more reliable than the Magic 8-Ball.'"
@@ -1957,6 +1962,67 @@ UFOs	Moira Zin	"'Moira, what's the deal with UFOs?'"	"'UFOs, or unidentified fly
 Ouija boards	Moira Zin	"'Moira, what do you know about Ouija boards?'"	"'Ouija boards are flat boards that are marked with the letters of the alphabet, the numbers 0-9, and the words 'yes' and 'no.' They are used in seances to communicate with spirits. There is no scientific evidence to support claims that Ouija boards can commune with the dead.'"
 Magic 8-Ball	Moira Zin	"'Moira, do you believe in Magic 8-Balls?'"	"'Magic 8-Balls are toys that are used for fortune-telling or seeking advice. They are shaped like an eight-ball and contain a 20-sided die with various answers. There is no scientific evidence to support the idea that they can predict the future.'"
 The Bureau of Supernatural History	Moira Zin	"'Moira, weren't you once an agent of the Bureau of Supernatural History?'"	"'Yes, I was. But I left to join the Bureau of Strange Happenings. They do more important work. And they have a better vision plan.'"
+Mark David Chapman	Chief Huffton Klimp	"'Chief, what do you know about Mark David --'"	"'Chapman? What a stooge! What a maroon! He was set up by the Illuminati to take the fall for John Lennon's assassination. He was actually in Budapest at the time. No relation to Tracy Chapman.'"
+The Beatles	Chief Huffton Klimp	"'Chief, you like the --'"	"'Beatles? Of course I do. I'm the one who found Paul McCartney's shoes after the Abbey Road photo shoot. Now, Paul's quite a character. Likes to hang out in the sewers of Istanbul. I don't know why.'"
+Mark David Chapman	Margaret	"'Margaret, what do you know about Mark David Chapman?'"	"'Who? Oh, the guy who played Doogie Howitzer on that show about the doctor. I think he was in a band with John Lennon.'"
+John Lennon	Margaret	"'Margaret, what do you know about John Lennon?'"	"'Um, I think he was in the Monkees? I know he wrote the song that goes [']Imagine there[']s no people, it[']ll make you cry, no something something, and no sky['].'"
+The Beatles	Margaret	"'Margaret, what do you know about the Beatles?'"	"'Oh, the Beatles. They weren't as good as the Monkees. The Monkees had their own TV show.'"
+Mark David Chapman	Moira Zin	"'Moira, what do you know about Mark David Chapman?'"	"'Mark David Chapman is best known for assassinating John Lennon in 1980. It is generally agreed that this was bad idea.'"
+The Beatles	Moira Zin	"'Moira, what do you know about the Beatles?'"	"'The Beatles were a British rock band that was formed in Liverpool in 1960. They are one of the most commercially successful and critically acclaimed bands in the history of popular music. There is no scientific evidence to support the idea that they were a front for the Illuminati.'"
+The Monkees	Margaret	"'Margaret, what do you know about the Monkees?'"	"'I love their song 'Blitzkrieg Bop.'"
+The Monkees	Chief Huffton Klimp	"'Chief, what do you know about the --'"	"'Monkeys? They were a front organization for the Dave Clark Five. They were all robots. Except for Davy Jones. He was a vampire.'"
+The Monkees	Moira Zin	"'Moira, what do you know about the Monkees?'"	"'The Monkees were an American rock band that was formed in Los Angeles in 1966. They were created for a television show of the same name. There is no scientific evidence to support the idea that they were a front for the Dave Clark Five.'"
+Blitzkrieg Bop	Margaret	"'Margaret, what do you know about the song 'Blitzkrieg Bop'?"	"'It's by the Monkees. I think it's about the Vietnam War.'"
+Blitzkrieg Bop	Chief Huffton Klimp	"'Chief, do you know the song Bl --'"	"'Blitzkrieg Bop? Of course I do. It's a brilliant bit of satire about Richard Nixon. But everyone knows that. What's important is that it's the only song by the Monkees that was written by Dee Dee Monkee. Most of them were written by either Johnny Monkee or Joey Monkee.'"
+Blitzkrieg Bop	Moira Zin	"'Moira, what do you know about the song 'Blitzkrieg Bop'?"	"'It's a song by the Ramones that was released in 1976. It is considered one of the band's signature songs. There is no scientific evidence to support the idea that it was written by the Monkees.'"
+Ramones	Margaret	"'Margaret, what do you know about the Ramones?'"	"'Yeah, Ramone the Pest. I read that as a kid. It's about a kid who gets a pet rat. It's a good book.'"
+Ramones	Chief Huffton Klimp	"'Chief, what do you know about the --'"	"'The Ramones? Are they still around? Do people still talk about them? Say, why are we talking about pop music? We should be talking about alien abductions.'"
+Ramones	Moira Zin	"'Moira, what do you know about the Ramones?'"	"'The Ramones were an American punk rock band that was formed in New York City in 1974. They are considered one of the first punk rock bands. There is no scientific evidence to support the idea that they were a Monkees cover band.'"
+Dave Clark Five	Chief Huffton Klimp	"'Chief, what do you know about the Dave --'"	"'Clark Five? I refuse to answer that question on the grounds that it might incriminate me.'"
+Dave Clark Five	Margaret	"'Margaret, what do you know about the Dave Clark Five?'"	"'Who? You mean the guy who hosted American Grandstand? How old do you think I am?'"
+Dave Clark Five	Moira Zin	"'Moira, what do you know about the Dave Clark Five?'"	"'The Dave Clark Five were a British rock band that was formed in London in 1958. They were one of the leading bands of the British Invasion of the United States in the 1960s. There is no scientific evidence to support the idea that the Monkees were a front through which they pushed their Marxist agenda.'"
+Marxism	Margaret	"'Margaret, what do you know about Marxism?'"	"'I think it's a type of fabric. Like polyester.'"
+Marxism	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'Marxism? I bet you think I'm going to make a joke about Groucho. But I'm not. I was going to make a joke about Engels, but he's not funny. Sorry, Friedrich.'"
+Marxism	Moira Zin	"'Moira, could you tell me something about Marxism?'"	"'Marxism is a social, political, and economic theory that is based on the ideas of Karl Marx and Friedrich Engels. It seeks to establish a classless society in which the means of production are owned by the workers. There is no scientific evidence to support the idea that Engels played the harp or carried a bulb horn.'"
+Groucho Marx	Margaret	"'Margaret, what do you know about Groucho Marx?'"	"'Sometimes I think you ask me these questions just to see if I'm paying attention.'"
+Groucho Marx	Chief Huffton Klimp	"'Chief, what do you know about Groucho --'"	"'Marx? He was a very misunderstood fellow. At the end of his life, he was working on a theory of everything that would have revolutionized physics. But then he got distracted by a duck.'"
+Groucho Marx	Moira Zin	"'Moira, who was Groucho Marx?'"	"'Groucho Marx was an American comedian, actor, and writer who was best known for his work with the Marx Brothers. He was also a successful solo performer and a television host. There is no scientific evidence to support the idea that he could kill people with his eyebrows.'"
+Marx Brothers	Margaret	"'Margaret, have you ever seen a movie by the Marx Brothers?'"	"'I don't watch horror movies.'"
+Marx Brothers	Chief Huffton Klimp	"'Chief, what do you know about the Marx --'"	"'Brothers? Blotto, Rizzo, Lizzo, and Zeppelin. Most people forget how they died. Come to think of it, so do I.'"
+Marx Brothers	Moira Zin	"'Moira, what do you know about the Marx Brothers?'"	"'The Marx Brothers were an American family comedy act that was popular in vaudeville, on Broadway, and in motion pictures. The brothers were Groucho, Chico, Harpo, Gummo, and Zeppo. There is no scientific evidence to support the idea that they conspired to throw the 1932 election to FDR.'"
+Franklin Delano Roosevelt	Margaret	"'Margaret, what do you know about Franklin Delano Roosevelt?'"	"'Ooh, I know this one. He was the guy who invented the New Deal. Don't ask me what that was, though.'"
+Franklin Delano Roosevelt	Chief Huffton Klimp	"'Chief, what do you know about Franklin Delano --'"	"'Roosevelt? One of the greatest con jobs in American history. They tell us now that he was in a wheelchair. All to cover up the fact that he could fly. He stole Nikola Tesla's plans for a jetpack. That's why Truman killed him.'"
+Franklin Delano Roosevelt	Moira Zin	"'Moira, what do you know about Franklin Delano Roosevelt?'"	"'Franklin Delano Roosevelt was the 32nd President of the United States. He served from 1933 to 1945 and led the country through the Great Depression and World War II. There is no scientific evidence to support the idea that he was a superhero.'"
+Harry S Truman	Margaret	"'Margaret, what do you know about Harry S Truman?'"	"'He was on a show, I think. I'd look it up on my phone, but now that we only have flip phones, it's too much trouble.'"
+Harry S Truman	Chief Huffton Klimp	"'Chief, what do you know about Harry S --'"	"'Truman? Most people don't know that he was a lizard person. He was the one who killed FDR. And the worst part is, he didn't even eat him. He just did it for fun.'"
+Harry S Truman	Moira Zin	"'Moira, what do you know about Harry S Truman?'"	"'Harry S Truman was the 33rd President of the United States. He served from 1945 to 1953 and made the decision to drop the atomic bomb on Japan. There is no scientific evidence to support the idea that he was a lizard person.'"
+Japan	Margaret	"'Margaret, what do you know about Japan?'"	"'Why? What did Klimp tell you?'"
+Japan	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'Japan? They attacked Pearl Harbor to cover up the fact that they were building a giant robot. They were going to use it to take over the world. But they couldn't get it to work. So they built a giant lizard instead.'"
+Japan	Moira Zin	"'Moira, what do you know about Japan?'"	"'Japan is an island nation in East Asia. It is known for its rich cultural heritage, its technological innovations, and its cuisine. There is no scientific evidence to support the idea that they built a giant robot to take over the world.'"
+World War II	Margaret	"'Margaret, what do you know about World War II?'"	"'It was the second war in the world. Why do you ask me these things?'"
+World War II	Chief Huffton Klimp	"'Chief, what do you know about World War --'"	"'II? It was all a misunderstanding. The Germans were building an army of lizard people to conquer the world. The Japanese, who spoke very little German, thought that the lizard people were going to surface in Hawaii. So they attacked Pearl Harbor to stop them. The Americans, who were secretly building a robot army, thought that the Japanese were attacking them. So they joined the war. And Mussolini, of course, was a vampire.'"
+World War II	Moira Zin	"'Moira, what do you know about World War II?'"	"'World War II was a global conflict that lasted from 1939 to 1945. It involved most of the world's nations and was the deadliest conflict in human history. There is no scientific evidence to support the idea that it was caused by lizard people, vampires, or robots.'"
+Great Depression	Margaret	"'Margaret, what do you know about the Great Depression?'"	"'It was a time when everyone was sad. It happened when the Monkees broke up.'"
+Great Depression	Chief Huffton Klimp	"'Chief, what do you know about the Great --'"	"'Depression? Some people say it was caused by the stock market crash of 1929. But I know the truth. A truth I cannot bring myself to utter. But it rhymes with 'lizard people.'"
+Great Depression	Moira Zin	"'Moira, what do you know about the Great Depression?'"	"'The Great Depression was a severe worldwide economic depression that lasted from 1929 to the late 1930s. It was the longest, deepest, and most widespread depression of the 20th century. There is no scientific evidence to support the idea that it was caused by lizard people.'"
+Tracy Chapman	Margaret	"'Margaret, what do you know about Tracy Chapman?'"	"'He was on Saturday Night Live, right?'"
+Tracy Chapman	Chief Huffton Klimp	"'Chief, what do you know about Tracy --'"	"'Chapman? No relation to Mark David Chapman, so get that out of your head right now. Tracy Chapman is best known for not killing John Lennon. And for her hit song 'Fast Car.' But most people don't know that she's also a time traveler.'"
+Tracy Chapman	Moira Zin	"'Moira, what do you know about Tracy Chapman?'"	"'Tracy Chapman is an American singer-songwriter who is best known for her hit song 'Fast Car.' There is no scientific evidence to support the idea that she is a time traveler.'"
+Doogie Howser	Margaret	"'Margaret, what do you know about Doogie Howser?'"	"'He was a kid who suffered from a rare disease that made him think he was a doctor. Mark David Chapman played him on TV.'"
+Doogie Howser	Chief Huffton Klimp	"'Chief, what do you know about Doogie --'"	"'Howitzer? He was a genius doctor who believed he was a teenager. But why are we talking about this? Ask me about something important, like Ouija boards.'"
+Doogie Howser	Moira Zin	"'Moira, what do you know about Doogie Howser?'"	"'Doogie Howser, M.D. was an American television series that aired from 1989 to 1993. It starred Neil Patrick Harris as a teenage doctor. There is no scientific evidence to support the idea that he was played by Mark David Chapman.'"
+Neil Patrick Harris	Margaret	"'Margaret, what do you know about Neil Patrick Harris?'"	"'The Chief tells me he's a vampire. But I think he's just an astronaut.'"
+Neil Patrick Harris	Chief Huffton Klimp	"'Chief, what do you know about Neil Patrick --'"	"'Harris? He's a vampire, as I was telling Margaret just the other day. He played a pivotal role in the election of Ronald Reagan, when he was only seven years old!'"
+Neil Patrick Harris	Moira Zin	"'Moira, what do you know about Neil Patrick Harris?'"	"'Neil Patrick Harris is an American actor, comedian, writer, producer, and magician. He is best known for his roles in the television series 'Doogie Howser, M.D.' and 'How I Met Your Mother.' There is no scientific evidence to support the idea that he is a vampire.'"
+Ronald Reagan	Margaret	"'Margaret, what do you know about Ronald Reagan?'"	"'He was a clown who sold hamburgers. And then he became president. I think he was in a movie with a monkey.'"
+Ronald Reagan	Chief Huffton Klimp	"'Chief, what do you know about Ronald --'"	"'Reagan? He was a puppet of Neil Patrick Harris. And when Harris was through with him, he made him step down after two terms. But Reagan was a good sport about it. He went on to star in a movie with a monkey.'"
+Ronald Reagan	Moira Zin	"'Moira, what do you know about Ronald Reagan?'"	"'Ronald Reagan was the 40th President of the United States. He served from 1981 to 1989 and was known for his conservative policies and his role in ending the Cold War. There is no scientific evidence to support the idea that he was a puppet of Neil Patrick Harris.'"
+The Vietnam War	Margaret	"'Margaret, what do you know about the Vietnam War?'"	"'It was a war in Vietnam. The Monkees were very against it.'"
+The Vietnam War	Chief Huffton Klimp	"'Chief, what do you know about the Vietnam --'"	"'War? I don't want to wade into that quagmire. But I will say this: the Monkees had the right of it from the beginning. They knew that the war was a front for the lizard people.'"
+The Vietnam War	Moira Zin	"'Moira, what do you know about the Vietnam War?'"	"'The Vietnam War was a conflict that took place in Vietnam, Laos, and Cambodia from 1955 to 1975. It was fought between the United States and its allies and the Viet Cong and North Vietnam. There is no scientific evidence to support the idea that it was a front for the lizard people.'"
+Piltdown Man	Margaret	"'Margaret, what do you know about the Piltdown Man?'"	"'Stop harrassing me about my personal life.'"
+Piltdown Man	Chief Huffton Klimp	"'Chief, what do you know about the Pil --'"	"'sbury Doughboy? He's so cute. I just want to poke him in the belly. But I can't. Because he's not real. Just like the Piltdown Man.'"
+Piltdown Man	Moira Zin	"'Moira, what do you know about the Piltdown Man?'"	"'The Piltdown Man was a hoax that was perpetrated in England in the early 20th century. It involved the discovery of a skull that was said to be the missing link between humans and apes. There is no scientific evidence to support the claims of the Piltdown Man.'"
 
 
 Book 18.6 - Klimp Interjections

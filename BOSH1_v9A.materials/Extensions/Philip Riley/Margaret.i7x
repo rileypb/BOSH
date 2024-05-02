@@ -24,19 +24,19 @@ Book 2 - Margaret's Dialogue
 
 looking for the desk key is a truth state that varies. 
 
-about the whereabouts of the desk key is a questioning quip.
+about the desk key is a questioning quip.
 	it mentions the little grey key. 
-	Understand "where the desk/-- key is", "where is the desk/-- key" as about the whereabouts of the desk key.
+	Understand "where the desk/-- key is", "where is the desk/-- key", "for the desk/-- key" as about the desk key.
 	the comment is "[We] [say], 'Hey Margaret, do you know anything about my desk key?'".
 	[the comment is "[We] [say], 'Hey, Margaret. Do you have the key to my desk?'".]
 	the reply is "'Sure I do -- I put it in your desk.' She furrows her brow. 'What's the matter?'"
 	It quip-supplies Margaret.
 	
-An availability rule for about the whereabouts of the desk key:
+An availability rule for about the desk key:
 	if the player knows desk-locked and the player does not know key-is-lost:
 		always available;
 		
-After discussing the whereabouts of the desk key:
+After discussing about the desk key:
 	now player knows key-is-lost;
 	[ activate the Table of Desk Unlocking Hints; ]
 	continue the action;
