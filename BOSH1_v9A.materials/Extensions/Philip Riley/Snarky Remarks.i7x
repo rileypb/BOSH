@@ -17,8 +17,9 @@ Snarking is an object based rulebook.
 
 
 To snark (O - an object):
-	say "[italic type][bracket][snarky remark of O][close bracket][roman type][paragraph break]";
-	now O is snarked;
+	if O is not snarked:
+		say "[italic type][bracket][snarky remark of O][close bracket][roman type][paragraph break]";
+		now O is snarked;
 
 A rule for snarking a thing (called the target) (this is the standard thing-snarking rule):
 	if the snarky remark of the target is not empty:

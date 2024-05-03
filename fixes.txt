@@ -1,0 +1,170 @@
+*add BOSH sign synonym
+*stationery for laundromat sign
+*add pawn window
+in store:
+*	x t-shirt
+*	fix aisles/store shelves disambiguation
+*	clerk’s phone
+*	clerk’s pen
+*	clerk’s magazine
+pawn shop
+*	sunlight
+*	x smoke?
+*	x polyester
+back lot
+*	enter office
+*x usb end
+*ask klimp about doris
+*ask about siberia
+*ask about pennsylvania
+*papers should be plural
+*papers should have a can't take that message
+*detergent synonym for boxes
+*can’t examine switch in dark
+*can’t examine glow in dark
+*fluorescent light still on when lights are off
+*enter glow
+
+hyperspace
+x surface
+x structure from far away
+x plane
+x message
+change symbols message to indicate it’s on the thumb drive
+x staircase
+x ground
+
+office
+	x stairs
+	synonyms for directory
+doris
+	ask about daniels
+	ask about onandaga
+	they look at them unbelievingly
+	Which do you mean, they don’t have it or they don’t believe in alien visitation?
+	ask about new bikers of troy
+	make mission repeatable
+	maggie says portals are inactive when they’re not.
+	machinery missing in aux portal room
+		> enter machine
+		There’s nothing like that nearby. (when in darkness)
+	doris shouldn’t interject after telling faraji to go to Christy
+Christy
+	x paint
+	Christy looks up at Faraji. “If I could go back in time, I’d tell myself not to take this job.(missing quote)
+	Christy shouldn’t interject after saying something else
+	“You know working with Doris is like working with a cat. It’s pointless. (missing quote)
+	sharpenes
+	“I swear, if I have to hear one more time about the time Doris and Klimp went to Pompeii, I’m going to scream. (missing quote)
+	“. “Why are you hanging around in here? (missing quote)
+Portal setting should be 00000000 before christy figures it out
+Klimp should have faraji bring christy’s note to maggie. then portal will be set.
+rolle’s 
+	x poster/signs/sign
+	front door should exist or not be mentioned
+	flip switch on waxer
+x rain and other weather
+x figures from a distance
+bookstore
+	An ordinary sales counter
+bookstore basement
+	Which do you mean, the bookstore basement stairs, the basement shelves or the Bookstore Basement?
+	x breeze
+lizard people
+	figures should be synonym
+solvay road by the lake
+	x path
+	x shore
+	x town
+	*I* should be italics instead
+		> ask for help
+		Which do you mean, the Help Shelf, help or Bureau of Special Help?
+lake shore north of the park
+	> x enigma park
+	Which do you mean, Enigma Park or park?
+
+	> x park
+	Which do you mean, Enigma Park, park or the lake shore north of the park?
+	x road could be better
+workshed
+	snarky remark of door is stupid
+Lake and Ridge
+	x intersection
+	x lake has extra period
+	x lake street
+	x ridge road
+	shouldn’t be able to examine outside of truck from inside
+church
+	read at leviticus 11:29
+steeple
+	> x tripod
+	A tripod with a telescope mounted on it.
+
+	In the tripod is a telescope.
+	ladder not stairs in steeple
+lake street by the gym
+	> x gym
+	Which do you mean, the public gymnasium, the gym door or Lake Street by the gym?
+Main and Lake
+	x tower
+	x mic, mike
+	x sliders, buttons, knobs
+	x antenna
+can see weather inside on x ceiling
+sewer tunnel
+	x pipe
+	x hole from tunnel gives output for x hole in basement
+wear lenses in bright room should alert player to new astral passages
+Horton Kitchen
+	differentiate horton kitchen table from table lamp
+Horton Parlor
+	make snarky remark about doll-fly
+	footsteps creak, not echo
+	differentiate horton parlor table from table lamp
+WARNING: The current interlocutor is not nothing. It is the group of lizard people.
+graveyard
+	make “hole” apply to “holes”
+	make “large hole” its own thing
+	same with grave(s)
+horton second floor
+	x window/front yard
+	x thin straw mattress
+horton house builder is Hezekiah Horton
+doll-fly
+	“XXX flies away” is bad phrasing
+vestry
+	refers to non-existent door
+lizard people
+	allow just typing cursed word without say
+wooden frame
+	x parts
+unplug table lamp before putting it in frame and don’t allow plugging it in if it’s in the frame
+review how pronouns are set from extension cord after plugging something into the cord
+add descriptions to ends of extension cord
+need blank line after light description:
+	A bright beam of light shoots from the steeple, striking the obelisk in the park. The 
+	crystal is glowing faintly
+	> 
+also need period after it
+compass needs better snarky remark
+need extra blank line:
+	> type 54354701 on keypad
+	The display now reads “54354701.”
+	Nothing obvious happens.
+henry’s roof
+	x town
+	x wires
+	x hole
+x obelisk in park when glowing should mention beams
+old root cellar
+	x chamber
+dumpster
+	x trash
+don’t let faraji ask clerk for a screwdriver after they bought it
+extra blank line needed:
+	> answer phone
+	You answer the blue flipphone.
+	Faraji says hello.
+
+
+

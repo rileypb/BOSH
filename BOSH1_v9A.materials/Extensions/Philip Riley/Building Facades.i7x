@@ -12,11 +12,11 @@ Instead of entering a building facade (called F):
 	if F is enterable from the location:
 		let R be a random room fronted by F;
 		[find the direction from the location to R]
-		let D be the best route from the location to R, using doors;
+		let D be the best route from the location to R, using even locked doors;
 		if D is a direction:
 			try going D;
 		otherwise:
-			move the player to R;
+			say "You can't enter from here.";
 	otherwise:
 		say "You can't enter from here.";
 

@@ -566,6 +566,7 @@ John Lennon is a subject.
 Natural History Museum is a subject.
 Kamchatka is a subject.
 Koryak people is a subject.
+Davy Jones is a subject.
 
 [spacetime is a subject. Understand "time" as spacetime. The printed name is "Time". the help text of SpaceTime is "According to Wikipedia, time is the continued sequence of existence and events that occurs in an apparently irreversible succession from the past, through the present, into the future.".]
 
@@ -945,6 +946,13 @@ The white key is a key in the room of stuff. The description is "A small white k
 The BOSH back door has matching key the white key.
 When play begins:
 	now Margaret carries the white key.
+
+The bosh-back-door-facade is a building facade. It is privately-named. The printed name is "BOSH office".
+	It is in the back lot.
+	Understand "BOSH/office/offices/bureau" as bosh-back-door-facade.
+	"An unremarkable white metal door leads into the BOSH offices."
+	The bosh-back-door-facade fronts Biff's office.
+	The bosh-back-door-facade is enterable from the back lot.
 	
 The laundromat back door is a door. It is north of back lot and south of the laundromat back room. It is scenery. It is closed, locked, lockable, and openable. "An unremarkable metal door painted white. It is closed.". 	 
 The snarky remark is "Open up; I need to do my laundry."
@@ -1136,7 +1144,7 @@ The shelves of office supplies are in front office. They are plural-named. They 
 
 The snarky remark of the shelves of office supplies is "Some day I'll find out who stole my stapler."
 
-The thumb drive is a thing in the room of stuff. The description of the thumb drive is "It's a red plastic thumb drive, with what look like symbols scratched on the surface, but they're like no symbols you've ever seen. The metal USB end is somewhat corroded." Understand "USB/flash/memory" as the thumb drive.
+The thumb drive is a thing in the room of stuff. The description of the thumb drive is "It's a red plastic thumb drive, with what look like symbols scratched on the surface, but they're like no symbols you've ever seen. The metal USB end is somewhat corroded." Understand "USB/flash/memory", "usb end" as the thumb drive.
 The snarky remark of the thumb drive is "Some crazy dude mailed this to me last month, said he found it in an ancient Onandaga root cellar on a farm in upstate New York. Claimed it was proof of time travel."
 
 To recognize is a verb.
@@ -1745,9 +1753,20 @@ New-Order is a subject. It is privately-named. The printed name is "New Order". 
 ESPN is a subject. Mark David Chapman is a subject. The Beatles is a subject. The Monkees is a subject. Blitzkrieg Bop is a subject. Dave Clark Five is a subject. The Ramones is a subject. Marxism is a subject. Groucho Marx is a subject. Marx Brothers is a subject. Franklin Delano Roosevelt is a subject. Understand "FDR/D" as Franklin Delano Roosevelt. Harry S Truman is a subject. Japan is a subject. World War II is a subject. Understand "WWII/WW2" as World War II. Great Depression is a subject. 
 Tracy Chapman is a subject. Doogie Howser is a subject. Understand "howitzer" as Doogie Howser. 
 The Vietnam War is a subject. Neil Patrick Harris is a subject. Ronald Reagan is a subject.
-margaret-chao-subject is a subject. The printed name is "Margaret Chao". Understand "Margaret/Chao" as margaret-chao-subject.
-moira-zin-subject is a subject. The printed name is "Moira Zin". Understand "Moira/Zin" as moira-zin-subject.
-chief-huffton-klimp-subject is a subject. The printed name is "Chief Huffton Klimp". Understand "Chief/Huffton/Klimp" as chief-huffton-klimp-subject. The Piltdown Man is a subject. 
+margaret-chao-subject is a subject. It is privately-named. The printed name is "Margaret Chao". Understand "Margaret/Chao" as margaret-chao-subject.
+moira-zin-subject is a subject. It is privately-named. The printed name is "Moira Zin". Understand "Moira/Zin" as moira-zin-subject.
+chief-huffton-klimp-subject is a subject. It is privately-named. The printed name is "Chief Huffton Klimp". Understand "Chief/Huffton/Klimp" as chief-huffton-klimp-subject. 
+The Piltdown Man is a subject. Understand "Charles/Dawson" as the Piltdown Man. Mike Nesmith is a subject.
+Sumeria is a subject. Dwight Eisenhower is a subject. 
+doris-subject is a subject. It is privately-named. The printed name is "Doris". Understand "Doris" as doris-subject.
+Siberia is a subject. Pennsylvania is a subject.
+
+
+[Enigma Lake subjects]
+The doll-fly-subject is a subject. It is privately-named. The printed name is "doll-fly". Understand "doll/fly" as the doll-fly-subject.
+hezekiah-subject is a subject. It is privately-named. The printed name is "Hezekiah Horton". Understand "Hezekiah/Horton" as hezekiah-subject.
+astral-resonator-subject is a subject. It is privately-named. The printed name is "astral resonator". Understand "astral/resonator" as astral-resonator-subject. 
+
 
 Table of Quiz Topics (continued)
 subject (a thing)	interlocutor (a person)	comment (a text)	reply (a text)
@@ -1769,7 +1788,7 @@ Bureau of Strange Happenings	Chief Huffton Klimp	"[We] [say] to Klimp, 'the Bure
 Senator-savra-subject	Chief Huffton Klimp	"'So what is Savra --'"	"'Savra -- that imbecile. He's a fool and a coward. He's the reason we're not prepared for the alien invasion.'"
 Time-travel	Chief Huffton Klimp	"'Is time travel --'"	"'Time travel is a fact,' Klimp says. 'Tesla had a time machine. I've seen it.'"
 Astral plane	Chief Huffton Klimp	"'Chief, is the astral plane --'"	"'I've heard of people who have been there, even lived there. My friend Doris. True story.'"
-Doris	Chief Huffton Klimp	"'Chief, who is D--"	"'Doris? He's a friend of mine. Works for the Bureau. Sort of. Snappy dresser. Prone to outlandish stories. Ask him about the Mothman.'"
+doris-subject	Chief Huffton Klimp	"'Chief, who is D--"	"'Doris? He's a friend of mine. Works for the Bureau. Sort of. Snappy dresser. Prone to outlandish stories. Ask him about the Mothman.'"
 The Bermuda Triangle	Chief Huffton Klimp	"'The Ber--'"	"'Oh please, the Bermuda Triangle is a hoax. It's just a place where ships and planes go down. It's not like it's a portal to another dimension. That's the Sargasso Sea.'"
 Loch Ness Monster	Chief Huffton Klimp	"'Chief, have you seen the --'"	"'Loch Ness Monster? Of course. I've seen it. It's a plesiosaur, you know. From another world.'"
 The Roswell Incident	Chief Huffton Klimp	"'Chief --'"	"'Roswell? It's not what you think. It's not what anyone thinks. It's a cover-up, but not for what you think.'"
@@ -2023,6 +2042,30 @@ The Vietnam War	Moira Zin	"'Moira, what do you know about the Vietnam War?'"	"'T
 Piltdown Man	Margaret	"'Margaret, what do you know about the Piltdown Man?'"	"'Stop harrassing me about my personal life.'"
 Piltdown Man	Chief Huffton Klimp	"'Chief, what do you know about the Pil --'"	"'sbury Doughboy? He's so cute. I just want to poke him in the belly. But I can't. Because he's not real. Just like the Piltdown Man.'"
 Piltdown Man	Moira Zin	"'Moira, what do you know about the Piltdown Man?'"	"'The Piltdown Man was a hoax that was perpetrated in England in the early 20th century. It involved the discovery of a skull that was said to be the missing link between humans and apes. There is no scientific evidence to support the claims of the Piltdown Man.'"
+Davy Jones	Margaret	"'Margaret, what do you know about Davy Jones?'"	"'He was the guy in the Monkees who lived in a locker.'"
+Davy Jones	Chief Huffton Klimp	"'Chief, what do you know about Davy --'"	"'Jones? He was a pirate. And a vampire. And a member of the Monkees. But most people don't know that he was also a time traveler. Despite the rumors, I never met him in Budapest.'"
+Davy Jones	Moira Zin	"'Moira, what do you know about Davy Jones?'"	"'Davy Jones was a British singer, songwriter, and actor who was best known as a member of the Monkees. He was also a successful solo artist. There is no scientific evidence to support the idea that he was a vampire.'"
+Woonsocket	Moira Zin	"'Moira, what do you know about Woonsocket?'"	"'Woonsocket is a city in Rhode Island. It is known for its historic architecture, its cultural institutions, and its annual autumn festival. There is no scientific evidence to support the idea that it is a portal to another dimension.'"
+Natural History Museum	Moira Zin	"'Moira, what do you know about the Natural History Museum in New York?'"	"'The American Museum of Natural History is a museum in New York City that is dedicated to the study of natural history. It is one of the largest and most celebrated museums of its kind in the world. There is no scientific evidence to support the idea that it is a front for the Illuminati.'"
+Kamchatka	Moira Zin	"'Moira, what do you know about Kamchatka?'"	"'Kamchatka is a peninsula in the Russian Far East. It is known for its volcanoes, geysers, and hot springs. There is no scientific evidence to support the idea that it has any connection to ancient Sumeria.'"
+Budapest	Moira Zin	"'Moira, what do you know about Budapest?'"	"'Budapest is the capital and largest city of Hungary. It is known for its historic architecture, its thermal baths, and its vibrant cultural scene. There is no scientific evidence to support the idea that it is a hub of time travel.'"
+Istanbul	Moira Zin	"'Moira, what do you know about Istanbul?'"	"'Istanbul is the largest city in Turkey. It is known for its historic sites, its vibrant culture, and its strategic location between Europe and Asia. There is no scientific evidence to support the idea that it is a haven for lizard people.'"
+Pompeii	Moira Zin	"'Moira, what do you know about Pompeii?'"	"'Pompeii was an ancient Roman city that was destroyed by the eruption of Mount Vesuvius in 79 AD. It is one of the most famous archaeological sites in the world. There is no scientific evidence to support the idea that it was destroyed by the Freemasons.'"
+Vatican	Moira Zin	"'Moira, what do you know about the Vatican?'"	"'The Vatican is an independent city-state that is located within Rome, Italy. It is the spiritual and administrative center of the Roman Catholic Church. There is no scientific evidence to support the idea that it is a collective hallucination.'"
+Sumeria	Moira Zin	"'Moira, what do you know about Sumeria?'"	"'Sumeria was an ancient civilization that was located in Mesopotamia. It is considered one of the earliest known civilizations in the world. There is no scientific evidence to support the idea that it had advanced technology or contact with extraterrestrial beings.'"
+Sumeria	Margaret	"'Margaret, what do you know about Sumeria?'"	"'What? Stop confusing me with all these questions.'"
+Sumeria	Chief Huffton Klimp	"'Chief, what do you know about Sumeria?'"	"'Sumeria? Most people think of them as an ancient middle eastern civilization. But new evidence suggests that they emigrated there from Kamchatka.'"
+Mike Nesmith	Margaret	"'Margaret, what do you know about Mike Nesmith?'"	"'He was the guy in the Monkees who wore the hat.'"
+Mike Nesmith	Chief Huffton Klimp	"'Chief, what do you know about Mike --'"	"'Nesmith? He was assassinated by the Dave Clark Five and replaced by a lizard person. The lizard person had to wear the hat to cover up its cranial ridges.'"
+Mike Nesmith	Moira Zin	"'Moira, what do you know about Mike Nesmith?'"	"'Mike Nesmith is an American musician, songwriter, actor, producer, and author. He is best known as a member of the Monkees. There is no scientific evidence to support the idea that he was assassinated by the Dave Clark Five.'"
+Dwight Eisenhower	Margaret	"'Margaret, what do you know about Dwight Eisenhower?'"	"'He was a general who became president. He used to eat Mike and Ike's.'"
+Dwight Eisenhower	Chief Huffton Klimp	"'Chief, what do you know about Dwight --'"	"'Eisenhower? It's not well known, but for a while he abandoned the White House to live in a shack in the town of Enigma Lake, New York. He was trying to get away from the lizard people. Which is foolish, because everyone knows that Enigma Lake is a lizard people stronghold.'"
+Dwight Eisenhower	Moira Zin	"'Moira, what do you know about Dwight Eisenhower?'"	"'Dwight D. Eisenhower was the 34th President of the United States. He served from 1953 to 1961 and was a five-star general in the United States Army during World War II. There is no scientific evidence to support the idea that he lived in a shack in Enigma Lake.'"
+Siberia	Margaret	"'Margaret, what do you know about Siberia?'"	"'It's where Budapest is, right?'"
+Siberia	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'Siberia? Not much. But enough to know that when the lizard people take over, that's where I'm going to hide. Those cold-blooded bastards will never find me there.'"
+Siberia	Moira Zin	"'Moira, what do you know about Siberia?'"	"'Siberia is a vast region in Russia that is known for its extreme cold, its vast forests, and its mineral resources. There is no scientific evidence to support the idea that it is the home of Budapest.'"
+Pennsylvania	Margaret	"'Margaret, what do you know about Pennsylvania?'"	"'It's where the Monkees are from.'"
+Pennsylvania	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'Pennsylvania? Enough to tell you to stay away from it. They'll try to make you eat scrapple. And then they'll try to make you like it. It's a trap, I tell you.'"
 
 
 Book 18.6 - Klimp Interjections
@@ -2568,6 +2611,33 @@ Carry out frotzing:
 Report frotzing:
 	say "Now [the noun] is lit.";
 
+subject indexing is an action out of world. Understand "index" as subject indexing.
+
+Carry out subject indexing:
+	repeat with X running through subjects:
+		if X is a-propos:
+			say "[X][line break]";
+
+subject looking is an action out of world applying to one thing. Understand "index [any subject]" as subject looking.
+
+subject comparing is an action out of world applying to two things. Understand "compare [any person] to [any person]" as subject comparing.
+
+Carry out subject comparing:
+	repeat with S running through subjects:
+		if S is a-propos for the noun and S is not a-propos for the second noun:
+			say "[S]: +[second noun][line break]";
+		otherwise if S is a-propos for the second noun and S is not a-propos for the noun:
+			say "[S]: +[noun][line break]";
+
+Carry out subject looking:
+	if the noun is a-propos:
+		say "[the noun] is a-propos.";
+	otherwise:
+		if there is a subject of the noun in the Table of Quiz Topics:
+			say "[the noun] is listed, but not for [current interlocutor].";
+	repeat through the Table of Quiz Topics:
+		if the subject entry is the noun:
+			say "[the noun] is a topic for [interlocutor entry].";
 	
 Volume 2 - Test command tweak for clean transcripts
 

@@ -18,6 +18,12 @@ To decide whether (S - a subject) is a-propos for (speaker - an object):
 			decide yes;
 	decide no;
 
+To decide whether (S - a subject) is not a-propos for (speaker - an object):
+	repeat through the Table of Quiz Topics:
+		if the subject entry is S and the interlocutor entry is speaker:
+			decide no;
+	decide yes;
+
 Definition: a subject is a-propos if it is a-propos for the current interlocutor.
 
 Requesting it for is an action applying to two visible things.
