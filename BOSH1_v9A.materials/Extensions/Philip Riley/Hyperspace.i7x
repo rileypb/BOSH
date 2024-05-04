@@ -507,8 +507,8 @@ hyperspace-subject	Maggie	"[We] [ask], 'What is hyperspace?'"	"Maggie looks up w
 doris-subject	Maggie	"'Who is Doris?'"	"'Doris is the field office chief,' Maggie says dreamily. 'He's a riddle, wrapped in bacon, inside an egg. You can find him in his office, west of here.'"
 christy-subject	Maggie	"'Who is Christy?'"	"'Christy is the field office researcher. They're very good at what they do, if the way they do it is what you need. You can find them in their office, west and then south.'"
 minerva-subject	Maggie	"'Who is Minerva?'"	"'Minerva is our only field agent. She also has the only coffee maker in the office, which is a good thing, because I don't drink coffee. You can find her in her office, west and north.'"
-portal-to-the-past	Maggie	"'What is the portal to the past?'"	"'It's a device that allows us to travel to different times and places. It's currently inactive, but it can be activated by typing in the correct code on my desk, which you're not allowed to use, so don't even think about it. The portal has a control panel that allows you to set the spacetime coordinates.'"
-auxiliary-portal	Maggie	"'What is the auxiliary portal?'"	"'It is a device that allows us to travel to different times and places. It is currently inactive, but it can be activated by typing in the correct code on my desk, which you're not allowed to use, so don't even think about it.'"
+portal-to-the-past	Maggie	"'What is the portal to the past?'"	"'It's a device that allows us to travel to different times and places. It's currently [if the portal to the past is active]active, so you can go ahead and use it whenever you like[otherwise]inactive, but it can be activated by typing in the correct code on my desk, which you're not allowed to use, so don't even think about it[end if]. The portal has a control panel that allows you to set the spacetime coordinates.'"
+auxiliary-portal	Maggie	"'What is the auxiliary portal?'"	"'It is a device that allows us to travel to different times and places. It is currently [if the auxiliary portal is activated]active, so by all means, go use it[otherwise]inactive, but it can be activated by typing in the correct code on my desk, which you're not allowed to use, so don't even think about it[end if].'"
 Thumb drive	Maggie	"'What do you know about this?'"	"'I'm surprised you don't know. It's a USB drive. It's used to store data.'"
 maggie-subject	Maggie	"'Who are you?'"	"'I'm Maggie. I'm the receptionist here at the BOSH Hyperspace Field Office. I'm here to help you with whatever you need, as long as it's not touching the control panel.'"
 BOSH	Maggie	"'Are you part of BOSH?'"	"'Sometimes, yes -- the Bureau of Space and Hyperspace. Or is it Bureaucratic Office of Supernatural History? Or Business Office for Standard Howitzers? Or Big Office of the Slightly Hilarious? Oh yes, Bureau of Strange Happenings. But I like to think of it as the Baby of Stan and Harriet.'"
@@ -911,6 +911,8 @@ The snarky remark is "I believe that kind of art is called abstract astigmatism.
 
 Christy carries Christy's pencil. The description of Christy's pencil is "A soft, black pencil." It is owned by Christy. Understand "soft/black" as Christy's pencil.
 
+The paint is scenery in Christy's office. The description is "The paint is a bright, cheerful orange." 
+
 
 Book 6 - Portal Room 1
 
@@ -919,8 +921,8 @@ Definition: the portal to the past is active if it is activated and (the current
 Portal Room 1 is a leavable room. It is forth of the field office hallway. It is in field office area. "The room is full of humming, glowing machinery, all of it attached to a large, arch-shaped portal in the middle of the room. The exit is back." It has egress back.
 The snarky remark is "The room is named well."
 
-The machinery is scenery in Portal Room 1. The description is "The machinery is humming and glowing with a soft light. It's all attached to the portal in the middle of the room."
-The snarky remark is "At least it's not a DeLorean."
+The machinery is scenery in Portal Room 1. The description is "The machinery is humming and glowing with a soft light. It's all attached to the portal in the middle of the room." Understand "machines" as the machinery.
+The snarky remark is "At least it's not a DeLorean." 
 
 The portal to the past is in Portal Room 1. The portal to the past can be activated. it is fixed in place.
 
@@ -960,7 +962,7 @@ Instead of entering the portal to the past when the portal to the past is activa
 
 Chapter - Time Control
 
-The current spacetime setting is a number that varies. The current spacetime setting is 62358234.
+The current spacetime setting is a number that varies. The current spacetime setting is 0.
 The town hall spacetime setting is always 62358234.
 The shack spacetime setting is a number that varies.
 When play begins:
@@ -1053,6 +1055,8 @@ To say auxiliary portal interior description:
 		say ". The portal is dark and inactive";
 
 The description is "In the middle of the room looms a large portal made of the same astral stuff this whole dimension is made of[auxiliary portal interior description]. It is labeled 'Auxiliary Portal'."
+
+The machinery2 is scenery in Portal Room 1. It is privately-named. The printed name is "machinery". Understand "machinery/machines" as machinery2. The description is "The machinery is humming and glowing with a soft light. It's all attached to the portal in the middle of the room."
 
 Rule for writing a paragraph about the auxiliary portal:
 	say the description of the auxiliary portal;
@@ -1286,6 +1290,7 @@ Doris's note is a thing. The description is "It's a bunch of cryptic scribbles."
 The snarky remark of Doris's note is "Don't they teach penmanship in hyperspace?"
 
 Check giving Tribes of New York to Doris when Doris's note is not off-stage:
+	now doris interjection timer is a random number between 2 and 5;
 	say "Doris looks at Faraji funny. 'No, bring it and the note to Christy. She'll know what to do with it.'" instead;
 
 
@@ -1293,13 +1298,16 @@ A tome can be delivered.
 
 After giving Tribes of New York to Doris:
 	say "'Ah, [agent], you've found it! I knew you would. Now we can find out where Daniels is. Actually, Christy can help you with that. Go see her and give her this.' He scribbles a note and hands it to you. 'She'll know what to do.'";
+	now doris interjection timer is a random number between 2 and 5;
 	now the player carries Doris's note;
 	now Tribes of New York is delivered;
 	now the player carries the Tribes of New York;
 
 Instead of showing Tribes of New York to Doris:
 	say "'Ah, [agent], you've found it! I knew you would. Now we can find out where Daniels is. Actually, Christy can help you with that. Go see her and give her this.' He scribbles a note and hands it to you. 'She'll know what to do.'";
+	now doris interjection timer is a random number between 2 and 5;
 	now the player carries Doris's note;
+	now Tribes of New York is delivered;
 
 After giving Christy's note to Doris:
 	say "He reads the note and grins. 'I knew Christy could figure it out. Enigma Lake. Makes sense. There is a prominent intersection of leylines in the middle of the lake. Before you say it, yes it's a problem, or would be, [italic type]if[roman type] that intersection had always been underwater. But Enigma Lake is an artificial reservoir. The town of Enigma Lake was flooded when the reservoir was created, and [italic type]that's[roman type] where the intersection is!' Doris concludes with a look of satisfaction.
@@ -1308,7 +1316,9 @@ After giving Christy's note to Doris:
 	
 	'So. I'm sending you back to 1954, right before the flooding of Enigma Lake, and you'll find whatever Daniels left for us to find. Maybe we can stage a rescue. Why 1954? I'd rather not risk a longer temporal jaunt before we know what we're dealing with.'";
 	queue Doris with how will i find him;
+	now doris interjection timer is a random number between 2 and 5;
 	now Christy's note is nowhere;
+	now the current spacetime setting is the town hall spacetime setting;
 
 about the Dragon is a questioning quip.
 	Understand "what about the/-- Dragon" as about the Dragon.
@@ -1573,15 +1583,18 @@ Book 3 - Christy
 Christy can be researching.
 
 Check giving Doris's note to Christy when the player does not carry Tribes of New York:
+	now the christy interjection timer is a random number from 2 to 5;
 	say "Christy briefly looks at the note and says, 'I can't do anything with this. You need to bring me the book too.'" instead;
 
 After giving Doris's note to Christy:
 	say "Christy reads the note and says, 'Oh, I see. I'll get right on it. And give me the book too, thanks. So, this might take me a while -- actually, could you get me a cup of coffee?'";
+	now the christy interjection timer is a random number from 2 to 5;
 	now Christy carries Doris's note;
 	now Christy carries Tribes of New York;
 
 After giving the cup of coffee to Christy when christy carries Tribes of New York and Christy is not researching:
 	say "Christy accepts the coffee gratefully. 'Thanks. I'll get to work on this right away. I'll let you know when I have something.' They take a sip of the coffee and get to work, which seems to involve a lot of sketching and erasing.";
+	now the christy interjection timer is a random number from 2 to 5;
 	remove the cup of coffee from play;
 	now Christy is researching;
 
@@ -1591,6 +1604,7 @@ The snarky remark of Christy's note is "That's illuminating."
 
 Before going north from Christy's office when Christy is researching:
 	say "Christy suddenly hoots behind Faraji. 'Stop! I have it. Sorry it took so long. Here, take this note to Doris.' They scribble something on a piece of paper and hand it to Faraji. Christy thinks for a moment and says 'Oh yes, take the book too.' They hand Faraji [italic type]Tribes of New York[roman type].";
+	now the christy interjection timer is a random number from 2 to 5;
 	now Christy is not researching;
 	now the player carries Christy's note;
 	now the player carries Tribes of New York;
@@ -1639,13 +1653,13 @@ To interject Christy:
 
 Table of Christy Interjections
 Christy interjection	used
-"Christy looks up from her scribbling. 'You know working with Doris is like working with a cat. It's pointless."	false
-"Christy glares at the ceiling. 'I swear, if I have to hear one more time about the time Doris and Klimp went to Pompeii, I'm going to scream."	false
-"Christy looks annoyed. 'Why are you hanging around in here?"	false
-"Christy looks up at Faraji. 'If I could go back in time, I'd tell myself not to take this job."	false
+"Christy looks up from her scribbling. 'You know, working with Doris is like working with a cat. It's pointless.'"	false
+"Christy glares at the ceiling. 'I swear, if I have to hear one more time about the time Doris and Klimp went to Pompeii, I'm going to scream.'"	false
+"Christy looks annoyed. 'Why are you hanging around in here?'"	false
+"Christy looks up at Faraji. 'If I could go back in time, I'd tell myself not to take this job.'"	false
 "Christy frowns. 'I swear pencils used to be better quality.'"	false
 "Christy yawns. 'You know, working in hyperspace is a terrible commute. Especially when your portal is inside a taco truck that moves every day.'"	false
-"Christy sharpenes her pencil. 'Do you know how many donut shops there are in hyperspace? None! It's a travesty."	false
+"Christy sharpens her pencil. 'Do you know how many donut shops there are in hyperspace? None! It's a travesty.'"	false
 "Christy tosses her pencil in the air. 'Just once I'd like to be the one who gets to travel in time.'"	false
 "Christy looks thoughtful. 'I wonder if I could get a job at the Bureau of Startling Hallucinations. They have a better dental plan.'"	false
 

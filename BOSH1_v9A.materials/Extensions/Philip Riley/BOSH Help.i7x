@@ -361,7 +361,8 @@ Great-aunt Gertrude is a subject. Understand "great-aunt/gertrude/great/aunt" as
 living-room-subject is a subject. It is privately-named. The printed name is "living room". Understand "living/room" as living-room-subject.
 help-subject is a subject. It is privately-named. The printed name is "help". Understand "help" as help-subject.
 Bureau-of-Special-Help-subject is a subject. It is privately-named. The printed name is "Bureau of Special Help". Understand "bureau/special/help" as Bureau-of-Special-Help-subject.
-
+Interactive-Fiction is a subject. It is privately-named. Understand "interactive/fiction" as Interactive Fiction. The printed name is "Interactive Fiction".
+parser-based-games is a subject. It is privately-named. Understand "parser-based/games/parser/based" as parser-based-games. The printed name is "parser-based games".
 
 Table of Quiz Topics (continued)
 subject (a thing)	interlocutor (a person)	comment (a text)	reply (a text)
@@ -392,6 +393,8 @@ Great-aunt Gertrude	Doctor Helpful		"Faraji says, 'What can you tell me about yo
 living-room-subject	Doctor Helpful		"Faraji says, 'What can you tell me about the living room?'"	"'It's a cozy place, isn't it? I've spent many a happy hour here,' Doctor Helpful replies."
 help-subject	Doctor Helpful		"Faraji says, 'Can you help me?'"	"'Of course, Agent Faraji. I [italic type]am[roman type] Doctor Helpful, after all,' Doctor Helpful replies."
 Bureau-of-Special-Help-subject	Doctor Helpful		"Faraji says, 'What can you tell me about the Bureau of Special Help?'"	"'We're here to help you, Agent Faraji. That's what we do,' Doctor Helpful replies."
+Interactive Fiction	Doctor Helpful		"Faraji says, 'What can you tell me about interactive fiction?'"	"'Ah, interactive fiction. A noble pursuit. There are, broadly speaking, two kinds of interactive fiction: parser-based and choice-based. Parser-based games, like this one, allow you to type commands to interact with the world. Choice-based games, on the other hand, present you with a series of choices to make. Both are valid forms of interactive fiction, but I prefer parser-based games myself,' Doctor Helpful replies."
+parser-based-games	Doctor Helpful	"Faraji says, 'How much do you know about parser-based games?'"	"'I know quite a bit about them, actually. Parser-based games, like this one, allow you to type commands to interact with the world. They're a bit more complex than choice-based games, but they're also more flexible and immersive. I've written a whole slew of books on the subject, you know,' Doctor Helpful replies."
 
 Before quizzing Doctor Helpful about adventuring-subject:
 	if Doctor Helpful carries Advanced Adventuring:

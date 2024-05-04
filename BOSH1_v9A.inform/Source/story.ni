@@ -996,6 +996,15 @@ Instead of an actor inserting margaret-flattened-boxes into the blue dumpster:
 		say "[We] [toss] the flattened boxes over the edge of the dumpster.";
 	otherwise if the actor is in the location:
 		say "[The actor] [toss] the flattened boxes over the edge of the dumpster.";
+
+Instead of inserting something into the blue dumpster:
+	say "At the last second, [we] [decide] against it.";
+
+Understand "throw [something] away" as inserting it into when the location is back lot.
+
+Rule for supplying a missing second noun while inserting:
+	if the location is the back lot:
+		now the second noun is the blue dumpster;
 		
 locking-back-door is a behavior. waiting-for-player is a behavior.
 		

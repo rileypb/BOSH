@@ -41,6 +41,16 @@ The current weather is a weather that varies. The current weather is clear.
 
 The weather clock is a number that varies. The weather clock is 0.
 
+The weather-backdrop is a backdrop. It is in ELR. It is privately-named. The printed name is "weather".
+
+Understand "drizzle/rain" as the weather-backdrop when the current weather is drizzling.
+Understand "rain" as the weather-backdrop when the current weather is raining.
+Understand "rain/storm/rainstorm/thunder/lightning" as the weather-backdrop when the current weather is storming.
+Understand "weather" as the weather-backdrop.
+
+Instead of examining the weather-backdrop:
+	describe the current weather.
+
 To describe (W1 - a value) changing to (W2 - a value):
 	if W1 is clear and W2 is cloudy:
 		say "The sky clouds over, and the air grows cooler. The moon disappears behind a veil of clouds.";
@@ -95,6 +105,13 @@ Every turn when location is in ELR (this is the weather changing rule):
 
 To describe the current weather:
 	if weather described is false:
+		if the location is indoors:
+			say "You can't see the weather from here";
+			if the current weather is storming:
+				say ", but you can hear the storm outside.";
+			otherwise:
+				say ".";
+			stop;
 		if the current weather is clear:
 			say "[one of]The sky is clear, and the moon shines down on the town[or]The moon is bright in the clear sky[or]The stars twinkle in the clear sky[or]The moon is full and bright, casting a silvery light over the town[or]Clear skies grace the town of Enigma Lake[or]The stars are out tonight[at random].";
 		if the current weather is cloudy:
@@ -114,7 +131,7 @@ After going from somewhere (called S) to somewhere (called T) when the location 
 
 Understand "clouds/cloud" as the ceiling when the location is in ELR and the current weather is not clear.
 
-Instead of examining ceiling when the location is in ELR:
+Instead of examining ceiling when the location is in ELR and the location is outdoors:
 	describe the current weather;
 
 The moon is a backdrop. It is in ELR. 
@@ -431,7 +448,11 @@ The x-coordinate of Solvay-Road-by-the-lake is -2. The y-coordinate of Solvay-Ro
 
 The snarky remark of Solvay-Road-by-the-lake is "Nice view. Too bad it's about to be under water."
 
-The lake-shore-1 is scenery in Solvay-Road-by-the-lake. "The lake shore is rocky and uneven, with a few small trees and bushes growing along the edge." It is privately-named. The printed name is "lake shore".
+The lake-shore-1 is scenery in Solvay-Road-by-the-lake. "The lake shore is rocky and uneven, with a few small trees and bushes growing along the edge." It is privately-named. The printed name is "lake shore". Understand "lake shore", "shore" as lake-shore-1.
+
+The solvay-road-path is scenery in Solvay-Road-by-the-lake. "The path is narrow and winds along the shore." It is privately-named. The printed name is "path". Understand "path" as solvay-road-path.
+
+The solvay-road-town is scenery in Solvay-Road-by-the-lake. "The road leads back into town." It is privately-named. The printed name is "town". Understand "town" as solvay-road-town.
 
 It is unsnarkable.
 
@@ -440,7 +461,7 @@ The foliage is unsnarkable.
 
 To say description of lake:
 	if the location is lake at ridge:
-		say "The lake is a little too far to the west to see clearly.";
+		say "The lake is a little too far to the west to see clearly";
 	otherwise:
 		if the current weather is clear:
 			say "The lake is calm and still, reflecting the moonlight like a mirror";
@@ -563,6 +584,7 @@ What-is-the-secret is a questioning quip.
 Help-me is a performative quip. 
 	The printed name is "ask Hutz for help".
 	Understand "hutz/-- for help" as help-me.
+	Understand "for help" as help-me.
 	Understand "please/-- help me/-- please/--" as help-me.
 	The comment is "[We] [say], 'Okay, how can you help?'"
 	The reply is "'Oh yes, how was I going to help? Afraid I can't remember, sorry. Can't seem to focus.'"
@@ -672,6 +694,8 @@ The radio station facade is a building facade. It is in Main at Lake. It is priv
 	It is enterable from Main at Lake.
 The snarky remark of the radio station facade is "Wonder what the weather report is for tomorrow? 100% chance of deluge?"
 
+The broadcast-tower is scenery in Main at Lake. It is privately-named. The printed name is "broadcast tower". Understand "broadcast/tower/radio/antenna" as broadcast-tower. "The broadcast tower rises many feet above the radio station."
+
 Book 11 - WGXC "Galaxy" Radio
 
 Radio Station WGXC is a leavable room. It has egress northwest. It is southeast of Main at Lake. It is in ELR. It is indoors. "This is the town radio station. South is the entrance to the broadcast booth. A staircase runs upwards, presumably to the roof and the broadcast antenna. The exit is northwest."
@@ -764,7 +788,7 @@ After switching off the power switch:
 	otherwise:
 		say "Faraji switches the power switch off. The broadcast tower's hum dies away.";
 
-The broadcast tower is scenery in the radio station roof. "A tall, steel lattice structure, rising prominently above the building. This kind of tower was designed to maximize the height for better signal transmission and reception in the era before widespread cable and satellite technology. Strangely, the bars of the tower near roof-level are bent inward to form a small platform. It's almost as if something is meant to be mounted there." Understand "radio tower" as the broadcast tower.
+The broadcast tower is scenery in the radio station roof. "A tall, steel lattice structure, rising prominently above the building. This kind of tower was designed to maximize the height for better signal transmission and reception in the era before widespread cable and satellite technology. Strangely, the bars of the tower near roof-level are bent inward to form a small platform. It's almost as if something is meant to be mounted there." Understand "radio tower", "antenna" as the broadcast tower.
 The snarky remark of the broadcast tower is "What a great place to get struck by lightning."
 
 The platform is part of the broadcast tower. It is a supporter. It is indescribable.
@@ -884,9 +908,11 @@ Understand "microphone stand" as stand.
 The snarky remark of the stand is "With bottle in hand, at the microphone stand. Ay, yo, homeboy, what you drinkin', man?"
 
 The microphone is scenery in the broadcast booth. "A microphone is set up on a stand."
+Understand "mic/mike" as microphone.
 The snarky remark of the microphone is "My mother always said I had a face for radio, and a voice for silent movies."
 
 The soundboard is scenery in the broadcast booth. "The soundboard is a complex piece of equipment, with many sliders and buttons. It's not clear how it works."
+Understand "sound/board/sliders/buttons/knobs" as soundboard.
 The snarky remark of the soundboard is "I like to push buttons and turn knobs. Which is why I'm not allowed in airplane cockpits."
 
 Book 14 - Lake Street by the gym
@@ -896,13 +922,17 @@ The description is "Lake Street runs north and south from here. To the east is t
 The snarky remark of Lake Street by the gym is "I wonder how much gym memberships cost in 1954."
 The x-coordinate of Lake Street by the gym is 1. The y-coordinate of Lake Street by the gym is 0.
 
-The gymnasium facade is a building facade. It is in Lake Street by the gym. It is privately-named. The printed name is "public gymnasium". Understand "gymnasium/gym" as gymnasium facade. "The sign over the door says 'Enigma Lake Gymnasium'."
+The gymnasium facade is a building facade. It is in Lake Street by the gym. It is privately-named. The printed name is "public gymnasium". Understand "public/gymnasium/gym" as gymnasium facade. "The sign over the door says 'Enigma Lake Gymnasium'."
 	The gymnasium facade fronts the public gymnasium.
 	It is enterable from Lake Street by the gym.
 The snarky remark of the gymnasium facade is "I hate the gym. I'm allergic to exercise."
 
-Instead of entering the gymnasium facade:
-	say "The door is locked.";
+Does the player mean examining the gymnasium facade:
+	it is very likely.
+
+Does the player mean entering the gymnasium facade:
+	it is very likely.
+
 
 Book 15 - Lake Street by the Park
 
@@ -947,7 +977,7 @@ The snarky remark of the pulpit is "Hold on, I have to give a sermon. 'And the L
 
 The lectern is scenery in First Utilitarian Church of Enigma Lake. "The lectern is a simple wooden structure, with a slanted top that holds [italic type]The Holy Bible[roman type]." It is unsnarkable.
 
-The Holy Bible is scenery on the lectern. "The Bible's cover is worn and the pages are yellowed with age. There is a bookmark at Leviticus 11:29."
+The Holy Bible is scenery on the lectern. "The Bible's cover is worn and the pages are yellowed with age. There is a bookmark at Leviticus 11:29: 'These also shall be unclean to you among the creeping things that creep on the earth: the mole, the mouse, and the large lizard after its kind; the gecko, the monitor lizard, the sand reptile, the sand lizard, and the chameleon.'"
 
 To read is a verb.
 
@@ -1284,7 +1314,7 @@ Instead of searching the telescope:
 The tripod is scenery in the steeple. The tripod has an object called the content. "A tripod [if the content is nothing]with an empty mounting where something might be placed[otherwise]with [a content] mounted on it[end if]."
 The snarky remark of the tripod is "You ever notice how tripods always have three legs?"
 
-The examine containers rule does nothing when the noun is the tripod.
+The examine hood contents rule does nothing when the noun is the tripod.
 
 The content of the tripod is the telescope.
 
@@ -1435,8 +1465,14 @@ The printed name is "Lake Street and Ridge Road". The preposition is "at the int
 The snarky remark of the Lake at Ridge is "What ridge? I don't see a ridge."
 The x-coordinate of the Lake at Ridge is 1. The y-coordinate of the Lake at Ridge is 2.
 
+The intersection is scenery in the Lake at Ridge. "This is the intersection of Lake Street, which runs south into town, and Ridge Road, which heads off into the darkness east of here."
+
 The ridge-path-scenery is scenery in the Lake at Ridge. It is privately-named. The printed name is "path". Understand "little/-- path" as the ridge-path-scenery. "The lake shore path runs off to the west."
 The ridge-path-scenery is unsnarkable.
+
+Lake-Street is scenery in the Lake at Ridge. "Lake Street runs south into town." It is privately-named. The printed name is "Lake Street". Understand "lake street" as Lake-Street.
+
+Ridge-Road is scenery in the Lake at Ridge. "Ridge Road heads off into the darkness east of here." It is privately-named. The printed name is "Ridge Road". Understand "ridge road" as Ridge-Road.
 
 To say glove compartment state:
 	if the glove compartment is open:
@@ -1461,6 +1497,9 @@ The brass key is a key. It is in the glove compartment. The description is "A si
 
 The truck hood is a part of the abandoned pickup truck. It is a closed openable container. The description is "The hood is slightly crumpled, as if it has been in a minor accident. It is [if the hood is open]open[otherwise]closed[end if]." Understand "bonnet" as the truck hood. 
 It is unsnarkable.
+
+Instead of doing something to something when the action requires a touchable noun and the noun is not inside the abandoned pickup truck and the player is in the abandoned pickup truck:
+	say "Faraji can't do that from here.";
 
 The hood contains a dirty car battery. 
 
@@ -1527,9 +1566,9 @@ road-scenery is scenery in the lake shore north of the park. "A road can be seen
 It is privately-named. The printed name is "road". Understand "road" as road-scenery.
 The road-scenery is unsnarkable.
 
-enigma-park-scenery is scenery in the lake shore north of the park. "The park is to the south."
+[ enigma-park-scenery is scenery in the lake shore north of the park. "The park is to the south."
 It is privately-named. The printed name is "park". Understand "enigma/park" as enigma-park-scenery.
-The enigma-park-scenery is unsnarkable.
+The enigma-park-scenery is unsnarkable. ]
 
 Book 21 - Workshed
 
@@ -1578,7 +1617,7 @@ To say rusty metal door state:
 		say "A closed";
 
 The rusty metal door is a closed openable scenery door. It is southeast of Lake Shore North of the Park and northwest of the workshed. "[if the rusty metal door is open]The door is open[otherwise]The door is closed[end if]."
-The snarky remark of the rusty metal door is "It inspires confidence."
+It is unsnarkable.
 
 The equipment cabinet is a closed locked openable lockable scenery container in the workshed.
 It has matching key the iron key. Understand "heavy/metal/lock" as the equipment cabinet.
@@ -2118,7 +2157,7 @@ The bookstore staircase is a building facade in the Reading Room. "A narrow stai
 	It is enterable from the Reading Room.
 Understand "narrow/stairs/stair/steps/step" as the bookstore staircase.
 
-The sales counter is scenery in the Reading Room. "An ordinary sales counter".
+The sales counter is scenery in the Reading Room. "An ordinary sales counter.".
 It is exposed.
 The snarky remark of the sales counter is "Service! Service! I demand service!"
 
@@ -2190,16 +2229,18 @@ Book 30 - Reading Room Basement
 
 The Bookstore Basement is below the Reading Room. It is in ELR. It is indoors. The description is "The basement is dark and musty, with a number of shelves and boxes of books. The walls are made of old, crumbling brick. There is a faint breeze. A narrow staircase leads up[if the bricked-up-hole is revealed]. There is a ragged hole in the north wall, leading into a dark space[end if]."
 
-The snarky remark of the Bookstore Basement is "Why did I come down here? What did I expect to find? The best you can say of this place is that the stairs also go up."
+The snarky remark of the Bookstore Basement is "The best you can say of this place is that the stairs also go up."
 
 The x-coordinate of the Bookstore Basement is -2. The y-coordinate of the Bookstore Basement is -1.
 
 Understand "old/crumbling/brick/bricks" as the walls when the location is the Bookstore Basement.
 
-The bookstore basement stairs is a building facade in the Bookstore Basement. "A narrow staircase leads up."
+The basement stairs is a building facade in the Bookstore Basement. "A narrow staircase leads up."
 	It fronts the Reading Room.
 	It is enterable from the Bookstore Basement.
-Understand "narrow/staircase/stair/steps/step" as the bookstore basement stairs.
+Understand "narrow/staircase/stair/steps/step" as the basement stairs.
+
+The breeze is scenery in the Bookstore Basement. "An almost imperceptible breeze wafts through the basement, smelling faintly of sewage."
 
 The extension cord is in the Bookstore Basement. 
 
@@ -2443,7 +2484,7 @@ Instead of examining the Obelisk-from-Henry's-Roof:
 Book 35 - Rolle's Department Store
 
 Rolle's Department Store is south of Main Street 200 Block. It is in ELR. It is indoors. It is a leavable room. The egress is north. 
-The description is "Once, town department stores like this were a constant of American life. Sadly, this one is empty of everything save a number of sale posters and its gleaming floor. The front door is to the north."
+The description is "Once, town department stores like this were a constant of American life. Sadly, this one is empty of everything save a number of sale posters and its gleaming floor. The exit is to the north."
 The snarky remark of Rolle's Department Store is "I guess the sale is over."
 
 The x-coordinate of Rolle's Department Store is 0. The y-coordinate of Rolle's Department Store is -2.
@@ -2535,10 +2576,11 @@ Does the player mean doing something to the gleaming floor:
 	It is very likely;
 	
 The sale posters are scenery in Rolle's Department Store. "'50% off everything in the store!'"
-The snarky remark of the sale posters is "Even the floor waxer?"
+The snarky remark of the sale posters is "Even the floor waxer?" Understand "poster/signs/sign" as the sale posters.
 
 The floor waxer is a fixed in place device in Rolle's Department Store. "A floor waxer sits in the center of the gleaming floor[if the floor waxer is switched on]. It is running[end if]." 
 The description is "This is a bulky, heavy-duty machine with a large, round brush head, designed for durability and the ability to polish vast floor areas to a high shine[if the floor waxer is switched on]. It is running[end if]."
+Understand "switch" as the floor waxer.
 The snarky remark is "I'm sure I've seen this floor waxer somewhere before."
 
 Report switching on the floor waxer:
@@ -2983,6 +3025,16 @@ After printing the locale description of a room:
 		if the location overlooks the current space:
 			let dirtext be the heading from the location to the current space;
 			say "[We] [see] the faint trace of shadowy figures off to the [dirtext], [the preposition of the current space] [the pretty name of the current space].";
+
+The Room of Stuff is a room. 
+The shadowy figures are a thing in the room of stuff. The description is "Faraji can't make out much detail from this distance. They are humanoid, that much is clear."
+Understand "figure/shadow/shadows" as the shadowy figures.
+
+After deciding the scope of the player when the location overlooks the location of the group of lizard people:
+	place the shadowy figures in scope;
+
+Rule for reaching inside the room of stuff when the noun is the shadowy figures:
+	allow access;
 
 Lizard countdown is a number that varies. Lizard countdown is 0.
 

@@ -94,7 +94,7 @@ implicit-informing is an action applying to one visible thing.
   Understand "t [any known thing]" or "talk about [any known thing]" as implicit-informing.
 
 implicit-requesting is an action applying to one visible thing.
-  Understand "ask for [any known thing]" as implicit-requesting.
+  Understand "ask for [something]" as implicit-requesting.
 
 implicit-imploring is an action applying to one topic.
   Understand "ask for [text]" as implicit-imploring.
