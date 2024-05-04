@@ -151,6 +151,8 @@ As far as one can see, the hyperplane extends infinitely in all six directions[o
 
 The snarky remark is "This is the most featureless hyperplane I've ever seen."
 
+Understand "plane" as the featureless hyperplane.
+
 To say symbol for (N - a number):
 	if N is 0:
 		say "o";
@@ -269,7 +271,7 @@ Carry out going up from Field Office Reception:
 
 Descending Stair is scenery. "A spiraling staircase disappears into the ground here. It is made of the same gossamer, questionably real stuff as the ground, the pillar, and the compass. Faraji can't see past the first turn of the stairs, unfortunately."
 The snarky remark is "So nice of them to point the way to the exit."
-Understand "staircase/stairs/spiral staircase" as Descending Stair.
+Understand "staircase/stairs/spiral" as Descending Stair.
 [Rule for writing a paragraph about the descending stair:
 	say "A spiraling staircase disappears into the ground here. It is made of the same gossamer, questionably real stuff as the ground,[if visited pillar is true] the pillar,[end if] and the readouts. You can't see past the first turn of the stairs, unfortunately.";]
 
@@ -367,13 +369,16 @@ Staircase coords is always {0, 0, 0}.
 Rule for writing a paragraph about the Ethereal Pillar:
 	now visited pillar is true;
 	say "There is an [ethereal pillar] here. A message carved into the pillar says 'All you need is love : love : love -Doris'[paragraph break]";
-	say "Under that is a line of five strange symbols: o p q d b";
+	say "Under that is a line of five ethereal symbols: o p q d b";
 	[say "Under that is a line of five strange symbols: ◊ ┘ ┐ ┌ └";]
 	say paragraph break;
 	
 Rule for writing a paragraph about the mystic compass:
 	say "A mystic compass dangles from an outcropping of the pillar.";	
 	
+The message is part of the Ethereal Pillar. The description is "The message is carved into the pillar as into white marble. It says 'All you need is love : love : love -Doris'".
+
+The ethereal symbols is part of the Ethereal Pillar. The description is "Under the message is a line of five ethereal symbols: o p q d b".
 
 
 [Rule for writing a paragraph about the Ethereal Pillar:

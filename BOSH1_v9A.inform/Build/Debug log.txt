@@ -53,7 +53,7 @@ I've also read Snarky Remarks by Philip Riley, which is 235 words long.
 I've also read Followup Questions by Philip Riley, which is 248 words long.
 I've also read Scenery Supporters by Philip Riley, which is 179 words long.
 I've also read Simple Conversation by Philip Riley, which is 2343 words long.
-I've also read Hyperspace by Philip Riley, which is 16764 words long.
+I've also read Hyperspace by Philip Riley, which is 16813 words long.
 I've also read BOSH Facts by Philip Riley, which is 193 words long.
 I've also read Swamp Park by Philip Riley, which is 8223 words long.
 I've also read Margaret by Philip Riley, which is 2542 words long.
@@ -140,23 +140,23 @@ Phase X ... Tables and grammar
 Phase XI ... Phrases and rules
 -----------------------------------------------------
 
-Regional: CONSTANT_VNT'field office area'-region(I256_field_office_area)(I164'field office area')
+Regional: CONSTANT_VNT'field office area'-region(I257_field_office_area)(I165'field office area')
  == region
-Regional: CONSTANT_VNT'field office area'-region(I256_field_office_area)(I164'field office area')
+Regional: CONSTANT_VNT'field office area'-region(I257_field_office_area)(I165'field office area')
  == region
 Regional: CONSTANT_VNT'hyperspace'-region(I241_hyperspace)(I149'hyperspace')
  == region
-Regional: CONSTANT_VNT'elr'-region(I533_elr)(I425'elr')
+Regional: CONSTANT_VNT'elr'-region(I534_elr)(I426'elr')
  == region
-Regional: CONSTANT_VNT'elr'-region(I533_elr)(I425'elr')
+Regional: CONSTANT_VNT'elr'-region(I534_elr)(I426'elr')
  == region
-Regional: CONSTANT_VNT'elr'-region(I533_elr)(I425'elr')
+Regional: CONSTANT_VNT'elr'-region(I534_elr)(I426'elr')
  == region
-Regional: CONSTANT_VNT'elr'-region(I533_elr)(I425'elr')
+Regional: CONSTANT_VNT'elr'-region(I534_elr)(I426'elr')
  == region
-Regional: CONSTANT_VNT'elr'-region(I533_elr)(I425'elr')
+Regional: CONSTANT_VNT'elr'-region(I534_elr)(I426'elr')
  == region
-Regional: CONSTANT_VNT'help area'-region(I774_help_area)(I664'help area')
+Regional: CONSTANT_VNT'help area'-region(I775_help_area)(I665'help area')
  == region
 
 
@@ -209,21 +209,21 @@ Phase XII ... Code generation
          == region
         Regional: CONSTANT_VNT'hyperspace'-region(I241_hyperspace)(I149'hyperspace')
          == region
-        Regional: CONSTANT_VNT'the laundromat-region'-region(I422_laundromat_region)(I318'laundromat-region')
+        Regional: CONSTANT_VNT'the laundromat-region'-region(I423_laundromat_region)(I319'laundromat-region')
          == region
-        Regional: CONSTANT_VNT'the laundromat-region'-region(I422_laundromat_region)(I318'laundromat-region')
-         == region
-        Regional: CONSTANT_VNT'hyperspace'-region(I241_hyperspace)(I149'hyperspace')
+        Regional: CONSTANT_VNT'the laundromat-region'-region(I423_laundromat_region)(I319'laundromat-region')
          == region
         Regional: CONSTANT_VNT'hyperspace'-region(I241_hyperspace)(I149'hyperspace')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I533_elr)(I425'elr')
+        Regional: CONSTANT_VNT'hyperspace'-region(I241_hyperspace)(I149'hyperspace')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I533_elr)(I425'elr')
+        Regional: CONSTANT_VNT'elr'-region(I534_elr)(I426'elr')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I533_elr)(I425'elr')
+        Regional: CONSTANT_VNT'elr'-region(I534_elr)(I426'elr')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I533_elr)(I425'elr')
+        Regional: CONSTANT_VNT'elr'-region(I534_elr)(I426'elr')
+         == region
+        Regional: CONSTANT_VNT'elr'-region(I534_elr)(I426'elr')
          == region
 
 
@@ -245,7 +245,7 @@ Phase XII ... Code generation
 
 ==== Phase XII.11 ... Determining grammar (G2) ====
 
-Regional: CONSTANT_VNT'elr'-region(I533_elr)(I425'elr')
+Regional: CONSTANT_VNT'elr'-region(I534_elr)(I426'elr')
  == region
 
 
@@ -286,9 +286,9 @@ Regional: CONSTANT_VNT'elr'-region(I533_elr)(I425'elr')
                                         Fail: scene (~) number = nothing
                                         Fail: scene (~) number = nothing
                                 0 = objects valued property. 1 = object
-            Regional: CONSTANT_VNT'elr'-region(I533_elr)(I425'elr')
+            Regional: CONSTANT_VNT'elr'-region(I534_elr)(I426'elr')
              == region
-            Regional: CONSTANT_VNT'elr'-region(I533_elr)(I425'elr')
+            Regional: CONSTANT_VNT'elr'-region(I534_elr)(I426'elr')
              == region
 
 
@@ -330,7 +330,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 280 files written as streams.
-CPU time: 1120 centiseconds
+CPU time: 1173 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

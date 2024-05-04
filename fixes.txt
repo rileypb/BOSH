@@ -27,13 +27,13 @@ back lot
 *can quiz about directions with no response
 
 hyperspace
-x surface
-x structure from far away
-x plane
-x message
-change symbols message to indicate it’s on the thumb drive
-x staircase
-x ground
+*x surface
+*x structure from far away
+*x plane
+*x message
+*change symbols message to indicate it’s on the thumb drive
+*x staircase
+*x ground
 
 office
 	x stairs

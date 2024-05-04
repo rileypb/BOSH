@@ -1148,7 +1148,7 @@ The thumb drive is a thing in the room of stuff. The description of the thumb dr
 The snarky remark of the thumb drive is "Some crazy dude mailed this to me last month, said he found it in an ancient Onandaga root cellar on a farm in upstate New York. Claimed it was proof of time travel."
 
 To recognize is a verb.
-Some strange symbols are part of the thumb drive. The description is "They look like some kind of language, but none [we] [recognize]."
+Some strange symbols are part of the thumb drive. The description is "The symbols on the thumb drive look like some kind of language, but none [we] [recognize]."
 The snarky remark of the strange symbols is "These kids today and their conlangs."
 
 some cardboard boxes are scenery in front office. "There is a stack of boxes in the corner.". Understand "box" as cardboard boxes.
