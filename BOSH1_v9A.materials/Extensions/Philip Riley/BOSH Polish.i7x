@@ -585,6 +585,7 @@ Understand "wood" as the floor when the location is Dirty shack.
 Understand "wood" as the floor when the location is Workshed.
 Understand "gravel/dirt" as the floor when the location is Hidden cave.
 Understand "gravel/dirt" as the floor when the location is circular chamber.
+Understand "surface" as the floor when the location is Featureless hyperplane.
 
 
 Table of Ceilings (continued)

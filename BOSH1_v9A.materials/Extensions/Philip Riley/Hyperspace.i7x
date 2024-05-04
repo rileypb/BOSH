@@ -126,7 +126,7 @@ Volume 2 - Featureless Hyperplane
 
 Book 1 - The Mystic Compass
 
-The mystic compass is a thing.  The description is "The name 'compass' is a bit of a misnomer, as it doesn't point anywhere. Instead, it displays a set of symbols that change as you move." 
+The mystic compass is a thing.  The description is "The name 'compass' is a bit of a misnomer, as it doesn't point anywhere. Instead, it displays a set of symbols that change as Faraji moves." 
 Understand "mystical/magic" as the mystic compass.
 The snarky remark is "Okay, compass, show me the way to the nearest spirit guide."
 
@@ -147,7 +147,7 @@ It is backwest of it.
 It is back of it. It is in Hyperspace.
 "[If featureless hyperplane is not visited][We] [rub] [our] eyes as [we] [try] to take in [our] surroundings. [end if][if Descending Stair is not in Featureless Hyperplane]In addition to the usual directions of north and south and east and west, two new directions exist here: [italic type]back[roman type] and [italic type]forth[roman type]. As a result, the 'surface' [we're] standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
 
-As far as one can see, the hyperplane extends infinitely in all six directions[otherwise]It is made of the same gossamer, questionably real stuff as the ground, the pillar, and the readouts. You can't see past the first turn of the stairs, unfortunately[end if]."
+As far as one can see, the hyperplane extends infinitely in all six directions[otherwise]It is made of the same gossamer, questionably real stuff as the ground, the pillar, and the readouts. Faraji can't see past the first turn of the stairs, unfortunately[end if]."
 
 The snarky remark is "This is the most featureless hyperplane I've ever seen."
 
@@ -248,17 +248,17 @@ Before going a direction (called D) from Featureless Hyperplane:
 		increment entry 2 of new hyperplane coords;
 		increment entry 3 of new hyperplane coords;
 	if old hyperplane coords is Coordinates of Pillar:
-		say "You leave the ethereal pillar behind.";
+		say "Faraji leaves the ethereal pillar behind.";
 	otherwise if old hyperplane coords is Staircase Coords:
-		say "You leave the descending stair behind.";
+		say "Faraji leaves the descending stair behind.";
 	otherwise if old hyperplane coords is Staircase Coords and D is down:
-		say "You descend the staircase.";
+		say "Faraji descends the staircase.";
 	otherwise if new hyperplane coords is Staircase Coords:
-		say "You trudge across the trackless hyperplane, and end up somewhere else, not completely the same.";
+		say "Faraji trudges across the trackless hyperplane, and ends up somewhere else, not completely the same.";
 	otherwise if new hyperplane coords is Coordinates of Pillar:
-		say "You trudge across the trackless hyperplane, and end up somewhere else, not completely the same.";
+		say "Faraji trudges across the trackless hyperplane, and ends up somewhere else, not completely the same.";
 	otherwise:
-		say "You trudge across the trackless hyperplane, and end up somewhere else, yet exactly the same.";
+		say "Faraji trudges across the trackless hyperplane, and ends up somewhere else, yet exactly the same.";
 
 Carry out going up from Field Office Reception:
 	now HyperPlane Coords is Staircase Coords;
@@ -267,7 +267,7 @@ Carry out going up from Field Office Reception:
 	move Descending Stair to Featureless Hyperplane;
 
 
-Descending Stair is scenery. "A spiraling staircase disappears into the ground here. It is made of the same gossamer, questionably real stuff as the ground, the pillar, and the compass. You can't see past the first turn of the stairs, unfortunately."
+Descending Stair is scenery. "A spiraling staircase disappears into the ground here. It is made of the same gossamer, questionably real stuff as the ground, the pillar, and the compass. Faraji can't see past the first turn of the stairs, unfortunately."
 The snarky remark is "So nice of them to point the way to the exit."
 Understand "staircase/stairs/spiral staircase" as Descending Stair.
 [Rule for writing a paragraph about the descending stair:
@@ -275,6 +275,12 @@ Understand "staircase/stairs/spiral staircase" as Descending Stair.
 
 The Ethereal Pillar is a thing. The description is "It's not clear what the pillar is made of, but it's definitely not stone." 
 The snarky remark is "Dammit, Doris, you and your cryptic messages."
+
+After deciding the scope of the player when the location is Featureless Hyperplane:
+	place the Ethereal Pillar in scope;
+
+Instead of examining the Ethereal Pillar when the Ethereal Pillar is not in the location:
+	say "The far-off structure looks like a pillar, but it's hard to tell from here.";
 
 To decide what list of numbers is convert (N - a number) to base five:
 	let K be N;
@@ -450,7 +456,7 @@ The snarky remark is "I bet they don't get much foot traffic here."
 The reception desk is a scenery supporter in field office reception. The description is "The desk -- white, polished, and gleaming -- is empty except for a small control panel."
 The snarky remark is "No stapler?"
 
-The control panel is part of the reception desk. The description is "As you lean over to examine the control panel, Maggie says 'Please don't touch that. Don't even look at it. Time to look away now.'".
+The control panel is part of the reception desk. The description is "As Faraji leans over to examine the control panel, Maggie says 'Please don't touch that. Don't even look at it. Time to look away now.'".
 The snarky remark is "Geez, relax."
 
 The office directory is scenery in field office reception. The description is "The directory reads:[line break]
@@ -462,11 +468,11 @@ Auxiliary Portal: WEST[line break]
 Maggie, Receptionist: RIGHT BEHIND YOU".
 
 Instead of doing anything other than examining to the control panel:
-	say "Maggie gives you a look that says 'Don't even think about it.'";
+	say "Maggie gives Faraji a look that says 'Don't even think about it.'";
 
 Section - Maggie
 
-Maggie is a woman in field office reception. "Maggie is sitting at the desk, doing nothing you can discern." The description is "Maggie seems a little vacant. She's staring at [one of]the wall[or]the ceiling[or]the floor[or]her hands[or]the desk in front of her[or]nothing in particular[at random]."
+Maggie is a woman in field office reception. "Maggie is sitting at the desk, doing nothing Faraji can discern." The description is "Maggie seems a little vacant. She's staring at [one of]the wall[or]the ceiling[or]the floor[or]her hands[or]the desk in front of her[or]nothing in particular[at random]."
 The snarky remark is "I think she's in a trance."
 Understand "receptionist/woman" as Maggie.
 
@@ -562,7 +568,7 @@ The description is "Minerva exudes an air of competence and no-nonsense business
 A mahogany desk is in Minerva's office. It is scenery. The description is "The desk holds some neatly-stacked papers, a few books, and a coffee maker.".
 The snarky remark is "Mahogany. Just the thing to match the monotonous white of hyperspace."
 
-Minerva's papers are scenery. They are on the mahogany desk. The description is "Minerva notices you looking at her papers and gives you a look that says 'Mind your own business.'" 
+Minerva's papers are scenery. They are on the mahogany desk. The description is "Minerva notices Faraji looking at her papers and gives them a look that says 'Mind your own business.'" 
 It is owned by Minerva. It is plural-named.
 
 The snarky remark is "I bet they're all blank."
@@ -585,7 +591,7 @@ Before printing the name of a tome:
 After printing the name of a tome:
 	say "[roman type]";
 
-Advanced Temporal Mechanics is a tome on the mahogany desk. The description is "A thick, technical tome with a title that makes your head hurt."
+Advanced Temporal Mechanics is a tome on the mahogany desk. The description is "A thick, technical tome with a title that makes Faraji's head hurt."
 The snarky remark is "I hear it has a great twist ending." It is owned by Minerva. It is loanable.
 
 Theoretical Hyperspace is a tome on the mahogany desk. The description is "A graduate text in something or other."
@@ -646,7 +652,7 @@ After giving a loanable tome to Minerva when the borrowed book-minerva is the no
 	now the borrowed book-minerva is nothing;
 	now the noun is supported by the mahogany desk;
 	now the noun is owned by Minerva;
-	say "Minerva regards you critically. 'Took you long enough.' She puts the book back on the shelf.";
+	say "Minerva regards Faraji critically. 'Took you long enough.' She puts the book back on the shelf.";
 	
 After putting a loanable tome on the mahogany desk when the borrowed book-minerva is the noun:
 	now the borrowed book-minerva is nothing;
@@ -708,7 +714,7 @@ Every turn when the cup of coffee is somewhere and the hotness of the cup of cof
 Drinking is an action applying to one thing. Understand "drink [something]" as drinking.
 
 Check drinking something when the noun is not the cup of coffee:
-	say "You can't drink that." instead;
+	say "Faraji can't drink that." instead;
 
 To dump is a verb.
 
@@ -992,7 +998,7 @@ Setting action variables for setting the current spacetime setting:
 
 Check typing into something:
 	if the second noun is not the spacetime control and the second noun is not the keypad:
-		say "That's not something you can type into." instead;
+		say "That's not something Faraji can type into." instead;
 
 Carry out typing into the spacetime control:
 	let the input be the number understood;
@@ -1271,7 +1277,7 @@ Doris's note is a thing. The description is "It's a bunch of cryptic scribbles."
 The snarky remark of Doris's note is "Don't they teach penmanship in hyperspace?"
 
 Check giving Tribes of New York to Doris when Doris's note is not off-stage:
-	say "Doris looks at you funny. 'No, bring it and the note to Christy. She'll know what to do with it.'" instead;
+	say "Doris looks at Faraji funny. 'No, bring it and the note to Christy. She'll know what to do with it.'" instead;
 
 
 A tome can be delivered.
@@ -1332,7 +1338,7 @@ ready to go is an informative quip.
 	The printed name is "[force pronoun for player][we]['re] ready to go".
 	Understand "i'm/you're/he's/she's/we're/they're" as ready to go.
 	The comment is "[regarding the player]Squaring [force pronoun for player][our] shoulders, [player's surname] says, 'Ready to go.'"
-	The reply is "Doris grins. 'Great! First, you'll need this.' He hands you a small device. 'In case you need to come back for any reason, press this button and you'll come back here. [italic type]Do not abuse this for trivial matters![roman type] Time travel consumes valuable resources. Now go. Out of my office and to the forth you'll find the portal room. It's all ready to send you where you need to go.'"
+	The reply is "Doris grins. 'Great! First, you'll need this.' He hands Faraji a small device. 'In case you need to come back for any reason, press this button and you'll come back here. [italic type]Do not abuse this for trivial matters![roman type] Time travel consumes valuable resources. Now go. Out of my office and to the forth you'll find the portal room. It's all ready to send you where you need to go.'"
 	It quip-supplies Doris.
 	It follows how will i find him.
 		
@@ -1470,7 +1476,7 @@ Harry S Truman	Doris	"'Did you know Harry S Truman?'"	"'I was once his body doub
 Japan	Doris	"'Have you ever been to Japan?'"	"'Long time ago, middle Edo period. I was an early proponent of kabuki theater. I had to quit because of my allergy to face paint.'"
 World War II	Doris	"'Did you see any action in World War II?'"	"'I was there. I said to Eisenhower, 'You should call it D-Day.' He thought for a while and then looked at me and said, 'Who are you?'"
 Great Depression	Doris	"'Did you live through the Great Depression?'"	"'Terrible time. Half of the hobos were out-of-work lizard people. I went to work as a train mechanic to keep an eye on them.'"
-Tracy Chapman	Doris	"'Have you ever heard Tracy Chapman?'"	"'I thought I did once. Turned out I was just humming to myself. I thought, 'that's why it sounded so bad.'"
+Tracy Chapman	Doris	"'Have you ever heard Tracy Chapman?'"	"'I thought I did once. Turned out I was just humming to myself. I thought, [']that's why it sounded so bad.[']"
 Doogie Howser	Doris	"'Please, who is this Doogie Howser?'"	"'He lives in Enigma Lake. He's a doctor. Look for him when you get there.'"
 Vietnam War	Doris	"'What do you think of the Vietnam War?'"	"'It wasn't as fun as they make it out to be. Everyone was so serious.'"
 Neil Patrick Harris	Doris	"'Do you know Neil Patrick Harris?'"	"'First off, I was the one who suggested he use his middle name. And they said I was crazy. Look at him now.'"
@@ -1512,9 +1518,9 @@ Table of Doris Interjections
 Doris interjection	used
 "Doris leans back in his chair. 'The Bureau is the only thing standing between us and the end of the world. No pressure, right?'"	false
 "Doris looks up from his desk. 'There are things you don't know, Larch. Things that no one knows. Well, except me.'"	false
-"Doris looks at you brightly. 'You ever need anything, ask Maggie. She's the best. She's the only one who knows what she's doing around here.'"	false
+"Doris looks at Faraji brightly. 'You ever need anything, ask Maggie. She's the best. She's the only one who knows what she's doing around here.'"	false
 "Doris twiddles his thumbs. 'Have you ever been to Budapest? I haven't either. I hear it's full of Hungarians.'"	false
-"Doris looks at you. 'You know, I've been thinking about getting a dog. What do you think? No don't tell me. You might say the opposite of what I want to hear.'"	false
+"Doris looks at Faraji. 'You know, I've been thinking about getting a dog. What do you think? No don't tell me. You might say the opposite of what I want to hear.'"	false
 "Doris taps his fingers on his desk. 'How far back in time do you think I've been? No, don't try to guess. I'll tell you. 2547 BC. Khufu was all the rage back then.'"	false
 "Doris fiddles with his TARDIS. 'Some people get all excited about this thing. What's the big deal? It's just a police box.'"	false
 "Suddenly, Doris looks behind himself. 'I guess no one is sneaking up on me after all.'"	false
@@ -1571,7 +1577,7 @@ Christy's note is a thing. The description is "The note consists of just the num
 The snarky remark of Christy's note is "That's illuminating."
 
 Before going north from Christy's office when Christy is researching:
-	say "Christy suddenly hoots behind you. 'Stop! I have it. Sorry it took so long. Here, take this note to Doris.' They scribble something on a piece of paper and hand it to you. They think for a moment and say 'Oh yes, take the book too.' They hand you [italic type]Tribes of New York[roman type].";
+	say "Christy suddenly hoots behind Faraji. 'Stop! I have it. Sorry it took so long. Here, take this note to Doris.' They scribble something on a piece of paper and hand it to Faraji. Christy thinks for a moment and says 'Oh yes, take the book too.' They hand Faraji [italic type]Tribes of New York[roman type].";
 	now Christy is not researching;
 	now the player carries Christy's note;
 	now the player carries Tribes of New York;

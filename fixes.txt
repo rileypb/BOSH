@@ -24,6 +24,7 @@ back lot
 *can’t examine glow in dark
 *fluorescent light still on when lights are off
 *enter glow
+*can quiz about directions with no response
 
 hyperspace
 x surface

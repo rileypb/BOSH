@@ -243,6 +243,9 @@ After quizzing someone about something when conversation available for noun / se
 				say reply entry;
 				say paragraph break;
 
+After quizzing:
+	say "That doesn't seem to be a topic of conversation at the moment.";
+
 Table of Quiz Topics
 subject (a thing)	interlocutor (a person)	comment (a text)	reply (a text)
 with 1 blank row.
