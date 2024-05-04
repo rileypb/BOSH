@@ -464,6 +464,8 @@ The snarky remark is "No stapler?"
 The control panel is part of the reception desk. The description is "As Faraji leans over to examine the control panel, Maggie says 'Please don't touch that. Don't even look at it. Time to look away now.'".
 The snarky remark is "Geez, relax."
 
+The ascending staircase is scenery in field office reception. The description is "The staircase leads up to the featureless hyperplane." Understand "stairs/stair/spiral" as ascending staircase.
+
 The office directory is scenery in field office reception. The description is "The directory reads:[line break]
 Doris, Field Office Chief: WEST[line break]
 Christy, Field Office Researcher: WEST[line break]
@@ -471,6 +473,7 @@ Minerva, Field Agent: WEST[line break]
 Portal to the Past: WEST[line break]
 Auxiliary Portal: WEST[line break]
 Maggie, Receptionist: RIGHT BEHIND YOU".
+Understand "sign" as office directory.
 
 Instead of doing anything other than examining to the control panel:
 	say "Maggie gives Faraji a look that says 'Don't even think about it.'";
@@ -1133,7 +1136,7 @@ we-don't-have-it is an informative quip.
 	it quip-supplies Doris.
 	
 An availability rule for we-don't-have-it:
-	if the player does not carry the thumb drive and the thumb drive is handled:
+	if the player does not carry the thumb drive and the thumb drive is handled and doris does not carry the thumb drive:
 		always available;
 
 what thumb drive is a questioning quip. 
@@ -1213,7 +1216,7 @@ no-aliens is an informative quip.
 	The comment is "'No. The Chief might, but I prefer hard evidence,' says [player's surname].".
 	The reply is "[Doris] nods. 'Good, because they haven't. The whole idea is ridiculous. Senator Savra is [italic type]not[roman type] an alien.' [they] looks at [us] significiantly.
 	
-	[We] [look] at [them] unbelievingly. 'What are you talking about?'
+	[We] [look] at him unbelievingly. 'What are you talking about?'
 	
 	[Doris] shakes his head. 'I thought you would know. He's a member of a race of Earth beings more ancient than our own. [Agent], Senator Savra is a [italic type]lizard man[roman type].'".
 	It quip-supplies Doris.
@@ -1276,6 +1279,7 @@ about the mission is a questioning quip.
 	It follows about Savra.
 	It follows about the Dragon.
 	It follows about-time-travel.
+	It is sticky.
 
 Doris's note is a thing. The description is "It's a bunch of cryptic scribbles."
 
@@ -1363,7 +1367,9 @@ After printing the locale description when player is in the field office chief's
 	otherwise:
 		queue Doris with what thumb drive;
 		
-
+Daniels-subject is a subject. It is privately-named. The printed name is "Daniels". Understand "Daniels" as Daniels-subject.
+Onandaga-subject is a subject. It is privately-named. The printed name is "Onandaga". Understand "Onandaga" as Onandaga-subject.
+new-bikers-subject is a subject. It is privately-named. The printed name is "New Bikers of Troy". Understand "New/-- Bikers/-- of/-- Troy" as new-bikers-subject.
 
 Table of Quiz Topics (continued)
 subject (a thing)	interlocutor (a person)	comment (a text)	reply (a text)
@@ -1381,7 +1387,6 @@ Doris's papers	Doris	"'What are all these papers?'"	"'Oh, just some notes. Nothi
 tchotchkes	Doris	"'What are all these things on your desk?'"	"'Definitely not a secret window into my soul. Just some things I like.'"
 mystic compass	Doris	"'Do you know what this compass is?'"	"'It's a mystic compass. Hold on to it. It might come in handy. It can find anything, even things that aren't lost.'"
 astral lenses	Doris	"'What are these glasses?'"	"'They're astral lenses. They let you see things you wouldn't normally see. Like the truth. And penguins. Anyway, don't lose them.'"
-time-travel	Doris	"Disbelievingly, [we] [ask], 'Time travel? For real?'"	"'Yes, yes. Don't get too worked up over it. It gets old fast. But now we need to talk about the mission.'"
 Pompeii	Doris	"'What happened in Pompeii with Klimp?'"	"'Oh, you know. The usual. A little too much wine, a little too much time travel. But what's a little temporal paradox between friends?'"
 Budapest	Doris	"'Have you ever been to Budapest?'"	"'Only before it was one city. Pest was a nice place. Buda was a little snooty.'"
 Istanbul	Doris	"'Have you ever been to Istanbul?'"	"'Yes, I have. It was Constantinople when I was there. It's a long story.'"
@@ -1493,6 +1498,9 @@ The Vatican	Doris	"'Have you ever been inside the Vatican?'"	"'I once went under
 Natural History Museum	Doris	"'What is the Natural History Museum?'"	"'What I want to know is, where's the unnatural history museum? That's what I'd like to visit.'"
 Sumeria	Doris	"'What do you know about Sumeria?'"	"'I was there. I was the one who suggested they use cuneiform. They said it was too hard to read. I said, 'That's the point.''"
 Dwight Eisenhower	Doris	"'You really talked to Dwight Eisenhower?'"	"'Well, in a manner of speaking. I certainly talked in his vicinity.'"
+Daniels-subject	Doris	"'Who is Daniels, anyway?'"	"'He's a field agent. This is his first mission since the unfortunate incident in Budapest.'"
+Onandaga-subject	Doris	"'Who are the Onandaga?'"	"'They're a tribe of Native Americans. From upstate New York. Daniels has been living with them in the 14th century.'"
+new-bikers-subject	Doris	"'What is the New Bikers of Troy?'"	"'It's a book. It's a very important book. It's the key to the mission. But I'm not sure that's the title. I'm sure you'll figure it out.'"
 
 
 Doris interjection timer is a number that varies. Doris interjection timer is 5.

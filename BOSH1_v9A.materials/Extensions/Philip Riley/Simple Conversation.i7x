@@ -22,6 +22,7 @@ A quip can be always-available.
 A quip can be exhausted. 
 A quip can be silent.
 A quip can be uttered.
+a quip can be sticky.
 
 
 A quip has a text called the comment.
@@ -124,9 +125,9 @@ Check discussing something:
 Carry out discussing something:
 	now the latest quip is the noun;
 	now the latest quip is uttered;
-	if the latest quip is one-shot:
+	if the latest quip is one-shot and the latest quip is not sticky:
 		now the latest quip is exhausted;
-	if the latest quip is listed in the queue of the current interlocutor:
+	if the latest quip is listed in the queue of the current interlocutor and the latest quip is not sticky:
 		remove the latest quip from the queue of the current interlocutor;
 	if the noun is not silent:
 		let speech be "[comment of the noun][paragraph break][reply of the noun][paragraph break]";

@@ -1875,6 +1875,7 @@ The mahogany side table	Chief Huffton Klimp	"'Chief, what's the story with your 
 Waiting-for-the-Aliens	Chief Huffton Klimp	"'Chief, have you read this book --'"	"'[']Waiting for the Aliens?['] Yes, I have. Kind of a letdown. I was hoping for more about the Black Knight Satellite.'"
 Travels in Time	Chief Huffton Klimp	"'Chief, what do you think of this book --'"	"'Travels in Time? I've read it. It's a good book. Did you know it hasn't even been written yet? True story. Strangely, Debi Bosworth was killed in the Dyatlov Pass Incident. I've seen the evidence.'"
 Juvenile Sasquatch skull	Chief Huffton Klimp	"'Chief, what's the deal with this --'"	"'--skull? It's a juvenile Sasquatch skull. Found it myself at the Natural History Museum in New York. They have the best stuff. Hard to carry out of there, though.'" 
+Juvenile Sasquatch skull	Moira Zin	"'Moira, what do you think about Klimp's new sasquatch skull?'"	"'It certainly seems a bit fishy to me. It seems too small. I think it's a fake.'"
 Natural History Museum	Chief Huffton Klimp	"'Chief, what's the deal with the --'"	"'Natural History Museum? Great place, but why do they get to choose what's natural and what's not? Kind of presumptuous, if you ask me.'"
 Kamchatka	Chief Huffton Klimp	"'Chief, where is --'"	"'Kamchatka? It's a peninsula in far eastern Russia. It was once the leading contender for most uninteresting location on Earth. But then they found those ruins. Now it's the leading contender for most interesting location on Earth.'"
 Koryak people	Chief Huffton Klimp	"'Chief, what do you know about the --'"	"'--Koryak people? They're a tribe in Russia that we're ephemerally interested in. By next month we'll have forgotten all about them.'"
@@ -2638,6 +2639,14 @@ Carry out subject looking:
 	repeat through the Table of Quiz Topics:
 		if the subject entry is the noun:
 			say "[the noun] is a topic for [interlocutor entry].";
+
+quip querying is an action out of world applying to one thing. Understand "q-available [any quip]" as quip querying.
+
+Carry out quip querying:
+	if the noun is q-available:
+		say "[the noun] is available.";
+	otherwise:
+		say "[the noun] is not available.";
 	
 Volume 2 - Test command tweak for clean transcripts
 

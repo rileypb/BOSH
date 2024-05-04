@@ -36,14 +36,14 @@ hyperspace
 *x ground
 
 office
-	x stairs
-	synonyms for directory
+	*x stairs
+	*synonyms for directory
 doris
-	ask about daniels
-	ask about onandaga
-	they look at them unbelievingly
-	Which do you mean, they don’t have it or they don’t believe in alien visitation?
-	ask about new bikers of troy
+	*ask about daniels
+	*ask about onandaga
+	*they look at them unbelievingly
+	*Which do you mean, they don’t have it or they don’t believe in alien visitation?
+	*ask about new bikers of troy
 	make mission repeatable
 	maggie says portals are inactive when they’re not.
 	machinery missing in aux portal room
