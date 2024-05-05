@@ -136,7 +136,7 @@ field office reception	featureless hyperplane	"Faraji, against their better judg
 field office reception	field office hallway	"Faraji leaves Maggie's relentless stare behind."	--
 field office hallway	field office reception	"Faraji uneasily steps back into Maggie's domain."	--
 field office hallway	Minerva's Office	"Faraji enters an open office door."	--
-field office hallway	field office chief's office	"Faraji enters the office of the chief of the field office. office."	--
+field office hallway	field office chief's office	"Faraji enters the domain of the chief of the field office."	--
 field office hallway	Christy's Office	"Faraji enters an open office door."	--
 field office hallway 	Portal Room 1	"Faraji takes a strange turn into a room labeled 'Portal Room 1'."	--
 field office hallway 	Portal Room 2	"Faraji takes a strange turn into a room labeled 'Portal Room 2'."	--

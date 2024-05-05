@@ -560,13 +560,14 @@ Ouija boards is a subject. Understand "board" as Ouija boards.
 Magic 8-Ball is a subject.
 The Bureau of Supernatural History is a subject.
 Woonsocket is a subject. 
-bear is a subject. Understand "bear from another world" as bear.
+bear is a subject. Understand "bear from another world", "bears" as bear.
 huge alien jellyfish is a subject. 
 John Lennon is a subject.
 Natural History Museum is a subject.
 Kamchatka is a subject.
 Koryak people is a subject.
 Davy Jones is a subject.
+Robots is a subject. Understand "robot" as robots.
 
 [spacetime is a subject. Understand "time" as spacetime. The printed name is "Time". the help text of SpaceTime is "According to Wikipedia, time is the continued sequence of existence and events that occurs in an apparently irreversible succession from the past, through the present, into the future.".]
 
@@ -1773,7 +1774,7 @@ margaret-chao-subject is a subject. It is privately-named. The printed name is "
 moira-zin-subject is a subject. It is privately-named. The printed name is "Moira Zin". Understand "Moira/Zin" as moira-zin-subject.
 chief-huffton-klimp-subject is a subject. It is privately-named. The printed name is "Chief Huffton Klimp". Understand "Chief/Huffton/Klimp" as chief-huffton-klimp-subject. 
 The Piltdown Man is a subject. Understand "Charles/Dawson" as the Piltdown Man. Mike Nesmith is a subject.
-Sumeria is a subject. Dwight Eisenhower is a subject. 
+Sumeria is a subject. Understand "sumerian/sumerians" as Sumeria. Dwight Eisenhower is a subject. 
 doris-subject is a subject. It is privately-named. The printed name is "Doris". Understand "Doris" as doris-subject.
 Siberia is a subject. Pennsylvania is a subject.
 
@@ -1812,7 +1813,7 @@ The Chupacabra	Chief Huffton Klimp	"'I'm sure you know all about the Chu--'"	"'-
 The Sasquatch	Chief Huffton Klimp	"'Chief, does Sasquatch --'"	"'I've often thought that it would be a great subject for a television show. Not a documentary, mind you, but a drama. That guy, you know, from the show about the doctor in the spaceship, he'd be perfect as Sasquatch.'"
 Yeti	Chief Huffton Klimp	"'Is the Yeti --'"	"'The Yeti is a bear. I've seen the evidence. It's a bear. A bear from another world.'"
 Sacred geometry	Chief Huffton Klimp	"'Whatever happened to your --'"	"'--sacred geometry phase? Meh. I've moved on. Shapes are shapes.'"
-The Moberly-Jourdain Incident	Chief Huffton Klimp	"'[We] [say] to Klimp, 'the Moberly-Jourdain --'"	"'Incident? Time slips are cool. I've seen one. I've been in one. Or was it two? I can't remember."
+The Moberly-Jourdain Incident	Chief Huffton Klimp	"'[We] [say] to Klimp, 'the Moberly-Jourdain --'"	"'Incident? Time slips are cool. I've seen one. I've been in one. Or was it two? I can't remember.'"
 The Mothman	Chief Huffton Klimp	"'What was the Mothm--'"	"'Geez, West Virginia has the lamest cryptids. The Mothman is just a big owl. A big owl from another world.'"
 The Jersey Devil	Chief Huffton Klimp	"'Chief,' [we] [say] to Klimp, 'the Jersey --'"	"'Yes, yes, the Jersey Devil. It's a kangaroo. A kangaroo with wings. From another world.'"
 The Flatwoods Monster	Chief Huffton Klimp	"'So I haven't heard much about this one,' [we] [say]. 'The Flatwoods --'"	"'Oh yes, the Flatwoods Monster. It's not even a cryptid. It's a robot from the CIA. I've seen the evidence.'"
@@ -2083,6 +2084,8 @@ Siberia	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'Siberia? Not 
 Siberia	Moira Zin	"'Moira, what do you know about Siberia?'"	"'Siberia is a vast region in Russia that is known for its extreme cold, its vast forests, and its mineral resources. There is no scientific evidence to support the idea that it is the home of Budapest.'"
 Pennsylvania	Margaret	"'Margaret, what do you know about Pennsylvania?'"	"'It's where the Monkees are from.'"
 Pennsylvania	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'Pennsylvania? Enough to tell you to stay away from it. They'll try to make you eat scrapple. And then they'll try to make you like it. It's a trap, I tell you.'"
+Robot	Chief Huffton Klimp	"'Chief, what are your feelings about --'"	"'robots? I don't trust them. They don't have eyelids.'"
+
 
 
 Book 18.6 - Klimp Interjections
