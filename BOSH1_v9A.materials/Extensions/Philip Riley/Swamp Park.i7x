@@ -728,6 +728,7 @@ Instead of switching off the flashlight:
 Instead of buying the red screwdriver with the Li'l Nectarine Gift Card:
 	say "The clerk takes the gift card and hands you the red screwdriver. 'Thanks,' he says.";
 	now the player carries the red screwdriver;
+	now the red screwdriver is handled;
 	remove the Li'l Nectarine Gift Card from play;
 
 Instead of buying something with something when the second noun is not the Li'l Nectarine Gift Card:

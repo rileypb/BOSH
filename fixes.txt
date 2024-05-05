@@ -113,61 +113,61 @@ Main and Lake
 	*x antenna
 *can see weather inside on x ceiling
 sewer tunnel
-	x pipe
-	x hole from tunnel gives output for x hole in basement
-wear lenses in bright room should alert player to new astral passages
+	*x pipe
+	*x hole from tunnel gives output for x hole in basement
+?wear lenses in bright room should alert player to new astral passages
 Horton Kitchen
-	differentiate horton kitchen table from table lamp
+	*differentiate horton kitchen table from table lamp
 Horton Parlor
-	make snarky remark about doll-fly
-	footsteps creak, not echo
-	differentiate horton parlor table from table lamp
-WARNING: The current interlocutor is not nothing. It is the group of lizard people.
+	*make snarky remark about doll-fly
+	*footsteps creak, not echo
+	*differentiate horton parlor table from table lamp
+*WARNING: The current interlocutor is not nothing. It is the group of lizard people.
 graveyard
-	make “hole” apply to “holes”
-	make “large hole” its own thing
-	same with grave(s)
+	*make “hole” apply to “holes”
+	*make “large hole” its own thing
+	*same with grave(s)
 horton second floor
-	x window/front yard
-	x thin straw mattress
+	*x window/front yard
+	*x thin straw mattress
 horton house builder is Hezekiah Horton
 doll-fly
-	“XXX flies away” is bad phrasing
-	Snarky remark when banishing dollfly
+	*“XXX flies away” is bad phrasing
+	*Snarky remark when banishing dollfly
 vestry
-	refers to non-existent door
+	*refers to non-existent door
 lizard people
-	allow just typing cursed word without say
-	snarky remark when banishing lizard people
+	*allow just typing cursed word without say
+	*snarky remark when banishing lizard people
 wooden frame
-	x parts
-unplug table lamp before putting it in frame and don’t allow plugging it in if it’s in the frame
-review how pronouns are set from extension cord after plugging something into the cord
-add descriptions to ends of extension cord
-need blank line after light description:
-	A bright beam of light shoots from the steeple, striking the obelisk in the park. The 
-	crystal is glowing faintly
-	> 
-also need period after it
-compass needs better snarky remark
-need extra blank line:
-	> type 54354701 on keypad
-	The display now reads “54354701.”
-	Nothing obvious happens.
+	*x parts
+*unplug table lamp before putting it in frame and don’t allow plugging it in if it’s in the frame
+*review how pronouns are set from extension cord after plugging something into the cord
+*add descriptions to ends of extension cord
+*need blank line after light description:
+*	A bright beam of light shoots from the steeple, striking the obelisk in the park. The 
+*	crystal is glowing faintly
+*	> 
+*also need period after it
+*compass needs better snarky remark
+*need extra blank line:
+*	> type 54354701 on keypad
+*	The display now reads “54354701.”
+*	Nothing obvious happens.
 henry’s roof
-	x town
-	x wires
-	x hole
-x obelisk in park when glowing should mention beams
+*	x town
+*	x wires
+*	x hole
+*x obelisk in park when glowing should mention beams
 old root cellar
-	x chamber
+*	x chamber
 dumpster
-	x trash
-don’t let faraji ask clerk for a screwdriver after they bought it
-extra blank line needed:
-	> answer phone
-	You answer the blue flipphone.
-	Faraji says hello.
+*	x trash
+*don’t let faraji ask clerk for a screwdriver after they bought it
+*extra blank line needed:
+*	> answer phone
+*	You answer the blue flipphone.
+*	Faraji says hello.
 
 
 

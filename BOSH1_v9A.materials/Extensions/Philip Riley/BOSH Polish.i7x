@@ -197,7 +197,7 @@ Reading Room	Main at Solvay	"Faraji heads back out into the street."	--
 Reading Room	bookstore basement	"Faraji heads down the stairs into the basement."	--
 Fresnel's Music	Main at Solvay	"Faraji leaves the music store."	--
 Solvay Road leading out of town	Horton Family House Kitchen	"Faraji lets themself into the Horton House."
-Horton Family House Kitchen	Horton Family House Parlor	"Faraji's footsteps echo on the wooden floor as they enter the parlor."	--
+Horton Family House Kitchen	Horton Family House Parlor	"Faraji's footsteps creak on the wooden floor as they enter the parlor."	--
 Horton Family House Kitchen	Second Floor of the Horton House	"Faraji carefully climbs the dubious stairs."	--
 Horton Family House Kitchen	Horton graveyard	"The smell of fresh earth greets Faraji as they step outside."	--
 Horton Family House Kitchen	Solvay Road leading out of town	"Faraji steps out of the Horton House onto Solvay Road."	--
@@ -451,6 +451,7 @@ Waiting-for-the-Aliens	"That belongs to Chief Klimp."	"That belongs to Chief Kli
 Travels in Time	"That belongs to Chief Klimp."	"That belongs to Chief Klimp."
 Dictionary of Strangeness	"That belongs to Chief Klimp."	"That belongs to Chief Klimp."
 Enigma Park	"That's somewhat heavy."	"[We] [push] it around a bit, but it's only fun for a moment."
+Trash	"Ugh. No."	"Ugh. No."
 
 
 Table of Floors (continued)

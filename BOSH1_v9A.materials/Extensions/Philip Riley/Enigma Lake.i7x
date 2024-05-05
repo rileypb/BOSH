@@ -319,6 +319,7 @@ To beam description, in the park:
 
 After printing the locale description when beam count > 0 and the location is outdoors and the location is in ELR and the location is not Enigma Park:
 	beam description;
+	say ".[paragraph break]";
 
 The snarky remark of Enigma Park is "It's not Central Park, but it's not bad."
 The x-coordinate of Enigma Park is 0. The y-coordinate of Enigma Park is 1.
@@ -334,6 +335,12 @@ The snarky remark of the obelisk is "I don't know what it is, but obelisks alway
 
 The adornment is scenery in Enigma Park. "From what [we] can make out, it's a clear crystal held aloft by some kind of metal fitting." Understand "crystal/ornament/decoration" as the adornment.
 The snarky remark of the adornment is "I'm not going to touch it. I've seen enough movies to know that's a bad idea."
+
+Instead of examining the adornment:
+	if beam count > 0:
+		say "The crystal is glowing [crystal glow].";
+	otherwise:
+		say "From what [we] can make out, it's a clear crystal held aloft by some kind of metal fitting.";
 
 Climbing up is an action applying to one thing. Understand "climb up/-- [something]" as climbing up.
 
@@ -416,7 +423,7 @@ The snarky remark of Solvay Road leading out of town is "Seems like the right wa
 The description is "Solvay Road bends here, leading northwest out of town and south back into town. East is the park, and to the west is Horton House. One can walk down to the lake shore to the north."
 The x-coordinate of Solvay Road leading out of town is -1. The y-coordinate of Solvay Road leading out of town is 1.
 
-Horton facade is a building facade. It is in Solvay Road leading out of town. It is privately-named. The printed name is "Horton House". Understand "Horton/Family/House/Home" as Horton facade. "Horton House is an old colonial-period house. The sign by the door marks it as the oldest remaining house in the Enigma Lake area. Its builder, Jeremiah Horton, was purported to be a supernaturalist of some renown."
+Horton facade is a building facade. It is in Solvay Road leading out of town. It is privately-named. The printed name is "Horton House". Understand "Horton/Family/House/Home" as Horton facade. "Horton House is an old colonial-period house. The sign by the door marks it as the oldest remaining house in the Enigma Lake area. Its builder, Hezekiah Horton, was purported to be a supernaturalist of some renown."
 	Horton facade fronts Horton Family House Kitchen.
 	It is enterable from Solvay Road leading out of town.
 
@@ -1085,10 +1092,10 @@ Instead of going down when the location is the First Utilitarian Church of Enigm
 	say "[The doll-fly] prevents [us] from reaching the stairs."
 
 Instead of attacking the doll-fly:
-	say "[The doll-fly] [one of]is too quick for [us][or]moves up out of [our] reach[or]dodges [our] attack[or]flies out of [our] reach[or]flies away[at random]."
+	say "[The doll-fly] [one of]is too quick for [us][or]moves up out of [our] reach[or]dodges [our] attack[or]flies out of [our] reach[or]flies too high[at random]."
 
 Instead of attacking the doll-fly with something:
-	say "[The doll-fly] [one of]is too quick for [us][or]moves up out of [our] reach[or]dodges [our] attack[or]flies out of [our] reach[or]flies away[at random]."
+	say "[The doll-fly] [one of]is too quick for [us][or]moves up out of [our] reach[or]dodges [our] attack[or]flies out of [our] reach[or]flies too high[at random]."
 
 Instead of taking the doll-fly:
 	say "Even if [we] could catch it, [we] wouldn't want to.";
@@ -1100,6 +1107,8 @@ Before answering the doll-fly that something:
 	if the topic understood in lower case is the incantation of the doll-fly in lower case:
 		say "Upon hearing the incantation [italic type][incantation of the doll-fly][roman type], [the doll-fly] wails a high-pitched, mournful sound, and then winks out of existence.";
 		now the doll-fly is off-stage;
+		lb;
+		say "[italic type][bracket]Yeah, that's right, you heard me: [incantation of the doll-fly]![close bracket][roman type][paragraph break]";
 		stop the action;
 	otherwise:
 		say "The doll-fly buzzes around, but doesn't respond.";
@@ -1203,7 +1212,7 @@ After switching off the circuit breaker when the makeshift astral resonator is i
 
 Book 17 - Vestry
 
-The vestry is a leavable room. It is east of First Utilitarian Church. It has egress west. It is in ELR. It is indoors. "It's a small room, with a door leading to the church proper to the west. A lovely tapestry hangs on the wall[if the tapestry is pushed aside]. It is pushed aside, revealing a circuit breaker[end if]."
+The vestry is a leavable room. It is east of First Utilitarian Church. It has egress west. It is in ELR. It is indoors. "It's a small room, with an exit leading to the church proper to the west. A lovely tapestry hangs on the wall[if the tapestry is pushed aside]. It is pushed aside, revealing a circuit breaker[end if]."
 The snarky remark of the vestry is "Seen one vestry, seen [']em all."
 The x-coordinate of the vestry is 3. The y-coordinate of the vestry is 1.
 
@@ -1685,7 +1694,7 @@ Instead of entering the ethereal portal:
 Book 23.5 - Old Root Cellar
 
 An old root cellar is a room. It is always-indefinite. "The chamber is dark and damp, smelling of earth and old vegetable matter. The walls, floor, and ceiling are packed earth. Around the walls are numerous woven baskets for storing vegetables. Light filters in from a passage to the north."
-Understand "cellar/cave" as the old root cellar.
+Understand "cellar/cave/chamber" as the old root cellar.
 
 The snarky remark of the old root cellar is "Oh good, another cave, only this one smells like beets."
 
@@ -1828,7 +1837,7 @@ The parlor, like the kitchen, still has its furnishings in place. A few chairs a
 
 The kitchen is to the north."
 
-The snarky remark of the Horton Family House Parlor is "The Horton family must have thrown some great parties."
+The snarky remark of the Horton Family House Parlor is "What was that thing? Even Klimp wouldn't know."
 
 The x-coordinate of the Horton Family House Parlor is -2. The y-coordinate of the Horton Family House Parlor is 0.5.
 
@@ -1929,14 +1938,47 @@ The snarky remark of the Second Floor of the Horton House is "I can feel the mis
 
 The x-coordinate of the Second Floor of the Horton House is -2. The y-coordinate of the Second Floor of the Horton House is 1.
 
-The small bed is scenery in the Second Floor of the Horton House. "A small bed sits in one corner. It's a rope bed, with a thin straw mattress."
+The second floor window is scenery in the Second Floor of the Horton House. "A single window looks out over the front yard."
+
+The front yard is scenery in the Second Floor of the Horton House. "The front yard, visible through the window, is a small rectangle of grass along Solvay Road."
+
+The small bed is an enterable scenery supporter in the Second Floor of the Horton House. "A small bed sits in one corner. It's a rope bed, with a thin straw mattress."
 The snarky remark of the small bed is "I wonder if they got this from one of those online mattress companies."
+
+reclining on is an action applying to one thing. Understand "lie on [something]" as reclining on.
+
+Check reclining on:
+	if the noun is not the small bed:
+		say "Faraji can't lie on [the noun]." instead;
+
+Instead of reclining on the small bed:
+	try entering the small bed;
+
+reclining is an action applying to nothing. Understand "lie down" as reclining.
+
+Check reclining:
+	say "Faraji can't lie down here." instead;
+
+Instead of reclining when the location is the Second Floor of the Horton House:
+	try entering the small bed;
+
+The thin straw mattress is part of the small bed. The description is "The mattress is thin and lumpy, but it's better than sleeping on the floor."
 
 The rickety wardrobe is a closed openable enterable scenery container in the Second Floor of the Horton House. "A rickety wardrobe stands against a wall. It is [if open]open[otherwise]closed[end if]."
 The snarky remark of the rickety wardrobe is "Don't climb into it. There's probably something much worse than a lion and a witch in there."
 
 The wooden frame is a container. The description is "A piece of wood, about two feet long with three holes carved in it. It looks like the holes are meant to hold things. Leather straps appear to be meant to hold those things in the frame." Understand "container" as the wooden frame.
 The snarky remark of the wooden frame is "This couldn't possibly be useful. I should just leave it here."
+
+The frame holes are part of the wooden frame. The description is "Three holes are carved in the frame, one large, one medium, and one small."
+
+The large frame hole is part of the wooden frame. The description is "The large hole is several inches in diameter."
+
+The medium frame hole is part of the wooden frame. The description is "The medium hole is about two inches in diameter."
+
+The small frame hole is part of the wooden frame. The description is "The small hole is very small, a few centimeters in diameter."
+
+The leather straps are part of the wooden frame. The description is "Leather straps are attached to the frame, meant to hold things in the holes."
 
 The stairs-second-floor is scenery in the Second Floor of the Horton House. "A staircase leads down."
 It is privately-named. The printed name is "staircase". Understand "staircase/stairs/stair" as stairs-second-floor.
@@ -1964,13 +2006,17 @@ The x-coordinate of the Horton graveyard is -3. The y-coordinate of the Horton g
 The shovel is in the Horton graveyard. "A shovel lies on the ground, forgotten." The description is "A simple shovel, with a wooden handle and a metal blade." Understand "simple/wooden/spade" as the shovel.
 The snarky remark of the shovel is "How interesting. I hope I'll need to dig something up."
 
-Some holes are scenery in the Horton graveyard. "The graveyard is riddled with holes where the bodies have been exhumed for the coming flood. One of the holes is substantially larger and deeper than the others." Understand "graves" as holes.
-The snarky remark of the holes is "'Hole' is a great word, don't you think?"
+Some neatly-dug holes are scenery in the Horton graveyard. "The graveyard is riddled with holes where the bodies have been exhumed for the coming flood. One of the holes is substantially larger and deeper than the others." Understand "hole" as neatly-dug holes.
+The snarky remark of the neatly-dug holes is "'Hole' is a great word, don't you think?"
 
-The large hole is a building facade. It is in Horton Graveyard. Understand "larger/grave" as large hole. "The hole is substantially larger and deeper than the others[if the metal ladder is in the large grave]. A ladder is set up against the side of the hole[end if]."
+Instead of entering the neatly-dug holes:
+	say "(the large hole)[command clarification break]";
+	try entering the large dirt hole;
+
+The large dirt hole is a building facade. It is in Horton Graveyard. It is privately-named. Understand "large/larger/deep/deeper hole" as large dirt hole. "The hole is substantially larger and deeper than the others[if the metal ladder is in the large grave]. A ladder is set up against the side of the hole[end if]."
 	It fronts a large grave.
 	It is enterable from Horton Graveyard.
-The snarky remark of the large hole is "[if the large grave is not visited]Just the thing to jump into without regard for personal safety[otherwise]Ah, not such a big deal.[end if]"
+The snarky remark of the large dirt hole is "[if the large grave is not visited]Just the thing to jump into without regard for personal safety[otherwise]Ah, not such a big deal.[end if]"
 
 After deciding the scope of player when the location is the Horton graveyard and the metal ladder is in the large grave:
 	place the metal ladder in scope;
@@ -1999,7 +2045,7 @@ Before going from the large grave:
 		say "The hole is too deep to climb out of unaided.";
 		stop the action;
 
-Instead of inserting the metal ladder into the large hole:
+Instead of inserting the metal ladder into the large dirt hole:
 	say "Faraji sets the ladder up against the side of the hole, making it easier to climb down into the large grave.";
 	now the metal ladder is in the large grave;
 
@@ -2244,7 +2290,7 @@ The breeze is scenery in the Bookstore Basement. "An almost imperceptible breeze
 
 The extension cord is in the Bookstore Basement. 
 
-A bricked-up-hole is a secret door. It is north of the Bookstore Basement and south of a sewer tunnel 1. It is privately-named. The printed name is "bricked-up hole in the wall". Understand "bricked-up", "bricked/up", "hole in/-- the/-- wall/--" as bricked-up-hole. It is open and not openable. "A ragged hole in the north wall, leading into a dark space." 
+A bricked-up-hole is a secret door. It is north of the Bookstore Basement and south of a sewer tunnel 1. It is privately-named. The printed name is "bricked-up hole in the wall". Understand "bricked-up", "bricked/up", "hole in/-- the/-- wall/--" as bricked-up-hole. It is open and not openable. "A ragged hole in the north wall, [if the location is the bookstore basement]leading into a dark space[otherwise]leading into the bookstore basement[end if]." 
 It is unsnarkable.
 
 To break is a verb.
@@ -2282,6 +2328,8 @@ a sewer tunnel 1 is in ELR. It is privately-named. It is always-indefinite. The 
 The snarky remark of sewer tunnel 1 is "Wait, am I back in Swamp Park?"
 
 The x-coordinate of sewer tunnel 1 is -2. The y-coordinate of sewer tunnel 1 is 0.5.
+
+The pipe is scenery in sewer tunnel 1. "Thankfully, nothing is coming out of it right now." 
 
 a sewer tunnel 2 is east of sewer tunnel 1. It is in ELR. It is indoors. It is privately-named. It is always-indefinite. The printed name is "sewer tunnel". Understand "sewer/tunnel" as sewer tunnel 2.  "The tunnel is dark and damp, with a low ceiling. From here, it leads east and west."
 
@@ -2424,6 +2472,10 @@ The x-coordinate of Henry's Roof is -1. The y-coordinate of Henry's Roof is -2.
 The TV aerial antenna is scenery in Henry's Roof. "A large, metallic rooftop antenna, characterized by its array of horizontal and vertical rods designed to capture VHF (very high frequency) broadcasts. Strangely, someone has mounted a threaded socket, like that of a light bulb, on one of the rods. A pair of insulated wires runs from the antenna and through a hole in the roof."
 The snarky remark of the TV aerial antenna is "I bet you kids don't even know what this is."
 
+The insulated wires are part of the TV aerial antenna. The description is "A pair of insulated wires, running from the antenna and through a hole in the roof." They are plural-named. Understand "wire" as the insulated wires.
+
+The hole-in-the-roof is scenery in Henry's Roof. It is privately-named. The printed name is "hole in the roof". Understand "hole in/-- the/-- roof/--" as the hole-in-the-roof. "A hole in the roof, through which a pair of insulated wires run. It's not big enough to do anything with."
+
 The threaded socket is part of the TV aerial antenna. It is a single item container. The description is "A threaded socket, like that of a light bulb, is mounted on one of the rods of the antenna." Understand "light/bulb/lightbulb" as the threaded socket.
 It is unsnarkable.
 
@@ -2481,6 +2533,9 @@ Instead of examining the Obelisk-from-Henry's-Roof:
 	otherwise:
 		say line break;
 
+The town-from-Henry's-Roof is privately-named scenery in Henry's Roof. The printed name is "the town". Understand "town" as the town-from-Henry's-Roof. "The town is spread out below, with the obelisk in the park clearly visible."
+The snarky remark of the town-from-Henry's-Roof is "At least it's not Swamp Park."
+
 Book 35 - Rolle's Department Store
 
 Rolle's Department Store is south of Main Street 200 Block. It is in ELR. It is indoors. It is a leavable room. The egress is north. 
@@ -2489,12 +2544,13 @@ The snarky remark of Rolle's Department Store is "I guess the sale is over."
 
 The x-coordinate of Rolle's Department Store is 0. The y-coordinate of Rolle's Department Store is -2.
 
-The table lamp is a device in Rolle's Department Store. "A scuffed-up table lamp sits discarded in a corner." The description is "A table lamp, with a brass base and missing a shade. It's meant to plug into an outlet. It looks like it's seen better days. On the base is the branding 'Spectre'[if the table lamp is lit]. It is lit[otherwise]. It is dark[end if]." 
+The table lamp is a device in Rolle's Department Store. It is privately-named. "A scuffed-up table lamp sits discarded in a corner." The description is "A table lamp, with a brass base and missing a shade. It's meant to plug into an outlet. It looks like it's seen better days. On the base is the branding 'Spectre'[if the table lamp is lit]. It is lit[otherwise]. It is dark[end if]." 
 It is pluggable. 
+Understand "table/-- lamp" as the table lamp. The printed name is "table lamp".
 
 Instead of examining the table lamp:
 	say "An ordinary table lamp, with a brass base";
-	if the bulb is not in the lamp socket:
+	if the bulb is not in the standard socket:
 		say ", no bulb, and no shade";
 	otherwise:
 		say ", a light bulb in the socket, but no shade";
@@ -2508,35 +2564,35 @@ Instead of examining the table lamp:
 	otherwise:
 		say ". The lamp is dark.";
 
-Understand "screw [the light bulb] in/into [the lamp socket]", "mount [the light bulb] on/onto/in/into [the lamp socket]" as inserting it into.
-Understand "screw [the rusty astral resonator] in/into [the lamp socket]", "mount [the rusty astral resonator] on/onto/in/into [the lamp socket]" as inserting it into.
-Understand "unscrew [the light bulb]" as taking when the light bulb is in the lamp socket.
+Understand "screw [the light bulb] in/into [the standard socket]", "mount [the light bulb] on/onto/in/into [the standard socket]" as inserting it into.
+Understand "screw [the rusty astral resonator] in/into [the standard socket]", "mount [the rusty astral resonator] on/onto/in/into [the standard socket]" as inserting it into.
+Understand "unscrew [the light bulb]" as taking when the light bulb is in the standard socket.
 
 Understand "screw [the light bulb] in/into [the table lamp]", "mount [the light bulb] on/onto/in/into [the table lamp]" as inserting it into.
 Understand "screw [the rusty astral resonator] in/into [the table lamp]", "mount [the rusty astral resonator] on/onto/in/into [the table lamp]" as inserting it into.
 
-The lamp socket is a single item container. It is part of the table lamp. The description is "A standard North American 120V AC lamp socket." 
+The standard socket is a single item container. It is part of the table lamp. The description is "A standard socket for a light bulb." 
 
 The brass base is part of the table lamp. The description is "A brass base, scuffed and tarnished."
-The lamp power cord is part of the table lamp. The description is "A power cord, a little the worse for wear, but still functional."
+The short power cord is part of the table lamp. The description is "A power cord, a little the worse for wear, but still functional."
 
-Instead of inserting the rusty astral resonator into the lamp socket:
+Instead of inserting the rusty astral resonator into the standard socket:
 	say "The rusty astral resonator doesn't fit in the table lamp."
 
 Check inserting the light bulb into the lamp:
-	try inserting the light bulb into the lamp socket instead;
+	try inserting the light bulb into the standard socket instead;
 
-Check inserting something into the lamp socket:
+Check inserting something into the standard socket:
 	if the noun is not the light bulb:
 		say "That doesn't fit.";
 		stop the action;
 
-Carry out inserting something into the lamp socket (this is the update lamp on inserting rule):
+Carry out inserting something into the standard socket (this is the update lamp on inserting rule):
 	carry out the device updating activity with the table lamp;
 
 The update lamp on inserting rule is listed last in the carry out inserting it into rules.
 
-Carry out removing something from the lamp socket (this is the update lamp on removing rule):
+Carry out removing something from the standard socket (this is the update lamp on removing rule):
 	carry out the device updating activity with the table lamp;
 
 The update lamp on removing rule is listed last in the carry out removing it from rules.
@@ -2545,11 +2601,11 @@ The table lamp can be already lit.
 
 For device updating the table lamp:
 	if the table lamp is lit:
-		if the table lamp is not powered or the table lamp is not switched on or the light bulb is not in the lamp socket:
+		if the table lamp is not powered or the table lamp is not switched on or the light bulb is not in the standard socket:
 			now the table lamp is unlit;
 			add the table lamp to changed things;
 	otherwise:
-		if the table lamp is powered and the table lamp is switched on and the light bulb is in the lamp socket:
+		if the table lamp is powered and the table lamp is switched on and the light bulb is in the standard socket:
 			now the table lamp is lit;
 			now the table lamp is already lit;
 			add the table lamp to changed things;
@@ -2563,7 +2619,7 @@ For state change reporting the table lamp:
 			puts "The table lamp is now unlit.[line break]";
 
 Description notes for the table lamp:
-	If the light bulb is in the lamp socket:
+	If the light bulb is in the standard socket:
 		add "with a bulb in the socket" to descriptive notes;
 	otherwise:
 		add "missing a bulb" to descriptive notes;
@@ -3052,6 +3108,7 @@ To teleport the player:
 		sort the lizard teleportation targets in random order;
 		now target is entry 1 of the lizard teleportation targets;
 	move the player to the target;
+	now the current interlocutor is nothing;
 
 Instead of answering something that when the group of lizard people is in the location:
 	if cursed word is "" or cursed word is not the topic understood:
@@ -3059,10 +3116,16 @@ Instead of answering something that when the group of lizard people is in the lo
 		teleport the player;
 	otherwise:
 		say "At your word, the lizard people scream and hiss, creating a strange cloud of thick vapor. When the vapor clears, they are gone, but they have left something behind. There is [a wooden frame] on the ground!";
+		lb;
+		say "[italic type][bracket]Yes, run away, you stupid... lizard people![close bracket][roman type][paragraph break]";
 		now the group of lizard people is nowhere;
 		now the wooden frame is in the location;
 		now the lizard countdown is 0;
 		now the current interlocutor is nothing;
+
+After reading a command:
+	if the player's command in lower case is the cursed word in lower case:
+		change the text of the player's command to "say [the cursed word]"; 
 
 Before doing something when group of lizard people is in the location:
 	decrement the lizard countdown;
@@ -3086,10 +3149,20 @@ Instead of going when the group of lizard people is in the location:
 
 Volume 4.75 - Building the Makeshift Astral Resonator
 
+Check plugging the table lamp into something when the table lamp is in the wooden frame:
+	say "The table lamp can't be plugged into something while it's in the wooden frame." instead;
+
 After inserting the astral lenses into the wooden frame:
 	say "Faraji inserts the astral lenses into the wooden frame. They fit perfectly in a long, narrow slot cut into the wood. The frame now holds [the list of things contained by the wooden frame].";
 	if the number of things contained by the wooden frame is 3:
 		make the makeshift astral resonator;
+
+Before inserting the table lamp into the wooden frame:
+	if the table lamp is plugged in:
+		say "(first unplugging the table lamp)[command clarification break]";
+		try unplugging the table lamp;
+		if the table lamp is plugged in:
+			stop the action;
 
 After inserting the table lamp into the wooden frame:
 	say "Faraji inserts the table lamp into the wooden frame. It fits snugly into a round hole cut into the wood. The frame now holds [the list of things contained by the wooden frame].";
@@ -3187,5 +3260,16 @@ Before answering the doll-fly that when DEBUG is true:
 	say "The doll-fly has been banished.";
 	now the doll-fly is nowhere;
 	stop the action;
+
+framing is an action applying to nothing. Understand "frame" as framing.
+
+Carry out framing:
+	now the player is carrying the wooden frame;
+	now the player is carrying the extension cord;
+	now the player is carrying the table lamp;
+	now the player is carrying the tuning fork;
+	now the player is carrying the astral lenses;
+	now the light bulb is in the standard socket;
+	now the player is in First Utilitarian Church of Enigma Lake;
 
 Enigma Lake ends here.

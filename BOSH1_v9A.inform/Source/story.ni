@@ -75,7 +75,7 @@ Use MAX_STATIC_DATA of 720000.
 Use MAX_PROP_TABLE_SIZE of 800000.
 Use MAX_NUM_STATIC_STRINGS of 400000.
 Use MAX_SYMBOLS of 200000.
-Use MAX_OBJECTS of 1024.
+Use MAX_OBJECTS of 2048.
 Use MAX_DICT_ENTRIES of 20000.
 Use MAX_ARRAYS of 20000.
 
@@ -779,7 +779,8 @@ The snarky remark is "You little blue bastard. I hate you."
 The description of the blue flipphone is "It's a cheap blue flipphone, purchased by the Bureau as some kind of cost-saving measure. It's not even a smartphone. It's not even a good flipphone. It's not even a good bad flipphone. It's just a bad flipphone."
 
 After answering the blue flipphone:
-	say "[We] [answer] the phone. 'Hello?'
+	lb;
+	say "'Hello?'
 	
 	'Hello, Larch,' says a familiar voice -- it's Doris.
 	
@@ -1047,13 +1048,19 @@ Inside from the back lot is nowhere.
 inside-the-dumpster is a leavable room. 
 Outside from inside-the-dumpster is the back lot. 
 The egress is outside. inside-the-dumpster is privately-named. It is in BOSH HQ. It is outdoors. The printed name is "the dumpster". The preposition is "inside".
-"It's smelly, but at least the top is open." Understand "the/-- dumpster" as inside-the-dumpster.
+"It's smelly, but at least the top is open. Assorted trash and cardboard boxes are scattered about. Thankfully, it's not too full." Understand "the/-- dumpster" as inside-the-dumpster.
 
 The snarky remark is "I'll get that guy Daniels for this."
 
-Instead of going when the location is inside-the-dumpster and the noun is not outside:
+Instead of going when the location is inside-the-dumpster and the noun is not outside and the noun is not up and the noun is not down:
 	say "Blue walls block every direction.";
 
+Instead of going up when the location is inside-the-dumpster:
+	try going outside;
+
+Understand "climb out" as exiting.
+
+Some trash is scenery in inside-the-dumpster. The description is "It's a bunch of trash. It's smelly and gross." The snarky remark is "I'm not going to root around in there."
  
 Section 3 - 
 

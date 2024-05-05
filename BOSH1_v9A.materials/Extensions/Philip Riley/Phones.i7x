@@ -20,7 +20,7 @@ To break connection of (P - a person):
 	now callee is not calling anything;
 	now callee is not talking on anything;
 	if P is player or callee is player:
-		say "Your call abruptly ends. You must have lost reception.";
+		say "The call abruptly ends. [We] must have lost reception.";
 
 Every turn:
 	Repeat with P running through people who are talking with someone:
@@ -61,7 +61,7 @@ A phone number is a kind of fact.
 Reaches relates a phone number to a phone. The verb to reach (he reaches, it reaches, it is reached by) implies the reaches relation.
 
 Check an actor going when actor is talking on a phone (called P) and P is wired:
-	print to actor that "You'll have to hang up first." instead;
+	print to actor that "[We] will have to hang up first." instead;
 
 Calling it on is an action applying to two visible things. Understand "Call [any phone] on [a phone]" as calling it on.
 Understand "Call [any person] on [a phone]" as calling it on. 
@@ -70,15 +70,15 @@ Understand "Call [any person] on [a phone]" as calling it on.
 Cold-calling it on is an action applying to one topic and one thing. Understand "call [text] on [a phone]" as Cold-calling it on. Understand "call [text]" as Cold-calling it on. 
 
 Check Cold-calling something on something:
-	say "You don't know the number for [topic understood].";
+	say "[We] [don't] know the number for [topic understood].";
 
 Rule for supplying a missing second noun while cold-calling:
-	say "You don't know the number for [topic understood].";
+	say "[We] [don't] know the number for [topic understood].";
 
 Check an actor calling a phone (called the callee phone) on a phone (called the caller phone):
 	if the location of the actor is not nowhere:
 		if reception of the location of the actor is false:
-			print to actor that "You have no reception here." instead;
+			print to actor that "[We] [have] no reception here." instead;
 		If actor does not carry the caller phone and the caller phone is mobile:
 			if the actor is the player:
 				say "(first taking [the caller phone])";
@@ -134,7 +134,7 @@ Check an actor answering a phone (called the phone) (this is the check actor ans
 	if the phone is idle:
 		print to the actor that "[The noun] isn't ringing." (A) instead; 
 	otherwise if the phone is in use:
-		print to the actor that "You're already talking on [the noun]." (B) instead; 
+		print to the actor that "[We] [are] already talking on [the noun]." (B) instead; 
 	let caller be a random person who is calling the phone;
 	if the actor is the player and the caller is the player:
 		say "Oh I get it. You think you're clever, calling yourself. Well I won't put up with that kind of shenanigans." (C) instead;
@@ -168,17 +168,17 @@ Report an actor picking up a phone (called the phone) (this is the report pickin
 		say "[Actor] answers [the phone]." (A);
 	if the actor is the player:
 		let caller be a random person who is calling the phone;
-		print to the player that "You answer [the phone]." (B);
+		print to the player that "[We] [answer] [the phone]." (B);
 		
 Before doing something other than answering that while player is talking with someone (called P) (this is the can't touch through the phone rule):
 	if action requires a touchable noun and the noun is P and P is not in the location:
-		say "You can't touch [P]." (A); 
+		say "[We] can't touch [P]." (A); 
 		stop the action;
 	if action requires a touchable second noun and the second noun is P and P is not in the location:
-		say "You can't touch [P].";
+		say "[We] can't touch [P].";
 		stop the action;
 	if action requires light and the noun is P and P is not in the location:
-		say "You can't see [P]." (B); 
+		say "[We] can't see [P]." (B); 
 		stop the action;
 		
 [Before answering something that:
@@ -189,7 +189,7 @@ After deciding the scope of the player while the player is talking with someone 
 	place callee in scope;
 
 Check ending a call when the player is not phoning:
-	say "You aren't on the phone." instead;
+	say "[We] [aren't] on the phone." instead;
 	
 Check an actor ending a call when the the actor is not phoning and the actor is not the player:
 	stop the action;
@@ -262,7 +262,7 @@ Instead of examining a phone (called P) when the noun is ringing:
 				otherwise:
 					say "[We] [don't] recognize the number on the caller ID.";
 	otherwise:
-		say "You better answer it.";
+		say "[We] better answer it.";
 	
 Rule for writing a paragraph about a person (called P) when P is phoning:
 	say "[The P] is on the phone.";		

@@ -14,7 +14,9 @@ It is plug-into-able.
 The snarky remark of the electrical outlet is "This mission is making me wish I had a fork."
 
 The plug-end is a thing. It is pluggable. It is privately-named. The printed name is "plug end of the extension cord". Understand "plug/end/of/the/extension/cord" as the plug-end. The indefinite article of the plug-end is "the". 
+The description of the plug-end is "[description of the extension cord]".
 The socket-end is a thing. It is plug-into-able. It is privately-named. The printed name is "socket end of the extension cord". Understand "socket/end/of/the/extension/cord" as the socket-end. The indefinite article of the socket-end is "the". 
+The description of the socket-end is "[description of the extension cord]".
 
 Does the player mean unplugging the plug-end:
 	if the plug-end is plugged into the electrical outlet:
@@ -222,7 +224,7 @@ Instead of unplugging the extension cord:
 
 Instead of plugging something into the extension cord when the noun is not the extension cord:
 	separate the extension cord;
-	set pronouns from the plug-end;
+	set pronouns from the noun;
 	try plugging the noun into the socket-end;
 	maybe condense the extension cord;
 

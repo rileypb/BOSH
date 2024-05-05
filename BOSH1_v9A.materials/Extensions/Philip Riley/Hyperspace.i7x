@@ -128,7 +128,7 @@ Book 1 - The Mystic Compass
 
 The mystic compass is a thing.  The description is "The name 'compass' is a bit of a misnomer, as it doesn't point anywhere. Instead, it displays a set of symbols that change as Faraji moves." 
 Understand "mystical/magic" as the mystic compass.
-The snarky remark is "Okay, compass, show me the way to the nearest spirit guide."
+The snarky remark is "I bet the Boy Scouts never get to play with one of these."
 
 After dropping the mystic compass when the Ethereal Pillar is nowhere:
 	say "The mystic compass vanishes!";
@@ -982,7 +982,10 @@ Understand "LED/LEDs" as the display.
 
 The reset button is a part of the spacetime control. The description is "A large red button that says 'RESET'."
 Carry out pushing the reset button:
-	now the current spacetime setting is the town hall spacetime setting;
+	if the keypad is initialized:
+		now the current spacetime setting is the town hall spacetime setting;
+	otherwise:
+		now the current spacetime setting is 0;
 
 The snarky remark of the reset button is "Reset what how? How do I know I want that?"
 
@@ -1019,22 +1022,22 @@ Carry out typing into the keypad:
 	now the current spacetime setting is the input;
 
 Report typing a number into the spacetime control:
-	say "The display now reads '[current spaceTime Setting].'";
+	say "The display now reads '[current spaceTime Setting]'";
 	if the portal to the past was active and the portal to the past is not active:
-		say "The shimmering curtain in the portal fades and disappears.";
+		say ". The shimmering curtain in the portal fades and disappears.";
 	otherwise if the portal to the past was not active and the portal to the past is active:
-		say "The shimmering curtain in the portal reappears.";
+		say ". The shimmering curtain in the portal reappears.";
 	otherwise:
-		say "Nothing obvious happens.";
+		say ". Nothing obvious happens.";
 
 Report typing a number into the keypad:
-	say "The display now reads '[current spaceTime Setting].'";
+	say "The display now reads '[current spaceTime Setting]'";
 	if the portal to the past was active and the portal to the past is not active:
-		say "The shimmering curtain in the portal fades and disappears.";
+		say ". The shimmering curtain in the portal fades and disappears.";
 	otherwise if the portal to the past was not active and the portal to the past is active:
-		say "The shimmering curtain in the portal reappears.";
+		say ". The shimmering curtain in the portal reappears.";
 	otherwise:
-		say "Nothing obvious happens.";
+		say ". Nothing obvious happens.";
 
 Section - Portal 2
 
@@ -1309,6 +1312,8 @@ Instead of showing Tribes of New York to Doris:
 	now the player carries Doris's note;
 	now Tribes of New York is delivered;
 
+The keypad can be initialized.
+
 After giving Christy's note to Doris:
 	say "He reads the note and grins. 'I knew Christy could figure it out. Enigma Lake. Makes sense. There is a prominent intersection of leylines in the middle of the lake. Before you say it, yes it's a problem, or would be, [italic type]if[roman type] that intersection had always been underwater. But Enigma Lake is an artificial reservoir. The town of Enigma Lake was flooded when the reservoir was created, and [italic type]that's[roman type] where the intersection is!' Doris concludes with a look of satisfaction.
 	
@@ -1319,6 +1324,7 @@ After giving Christy's note to Doris:
 	now doris interjection timer is a random number between 2 and 5;
 	now Christy's note is nowhere;
 	now the current spacetime setting is the town hall spacetime setting;
+	now the keypad is initialized;
 
 about the Dragon is a questioning quip.
 	Understand "what about the/-- Dragon" as about the Dragon.
