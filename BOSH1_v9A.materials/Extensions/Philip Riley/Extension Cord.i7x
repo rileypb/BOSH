@@ -239,6 +239,7 @@ Instead of taking the extension cord:
 	separate the extension cord;
 	if the plug-end is immobile and the socket-end is immobile:
 		dbg "All immobile.";
+		say "(unplugging both ends)[command clarification break]";
 		silently try unplugging the plug-end;
 		if something (called the plug) is plugged into the socket-end:
 			silently try unplugging the plug;
