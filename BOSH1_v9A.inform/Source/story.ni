@@ -2084,7 +2084,8 @@ Siberia	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'Siberia? Not 
 Siberia	Moira Zin	"'Moira, what do you know about Siberia?'"	"'Siberia is a vast region in Russia that is known for its extreme cold, its vast forests, and its mineral resources. There is no scientific evidence to support the idea that it is the home of Budapest.'"
 Pennsylvania	Margaret	"'Margaret, what do you know about Pennsylvania?'"	"'It's where the Monkees are from.'"
 Pennsylvania	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'Pennsylvania? Enough to tell you to stay away from it. They'll try to make you eat scrapple. And then they'll try to make you like it. It's a trap, I tell you.'"
-Robot	Chief Huffton Klimp	"'Chief, what are your feelings about --'"	"'robots? I don't trust them. They don't have eyelids.'"
+Pennsylvania	Moira Zin	"'Moira, what do you know about Pennsylvania?'"	"'Pennsylvania is a state in the northeastern United States. It is known for its historic sites, its cultural institutions, and its natural beauty. There is no scientific evidence to support the idea that it is the home of the Monkees.'"
+Robots	Chief Huffton Klimp	"'Chief, what are your feelings about --'"	"'robots? I don't trust them. They don't have eyelids.'"
 
 
 

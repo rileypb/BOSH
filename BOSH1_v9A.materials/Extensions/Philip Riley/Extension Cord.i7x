@@ -276,6 +276,12 @@ After taking something when the extension cord is plugged into the noun and the 
 	now the player carries the plug-end;
 	maybe condense the extension cord;
 	continue the action;
+
+After taking something when the noun is plugged into the extension cord and the noun is not the extension cord:
+	separate the extension cord;
+	now the player carries the socket-end;
+	maybe condense the extension cord;
+	continue the action;
 	
 Check closing something when the plug-end is enclosed by the noun:
 	if the socket-end is not enclosed by the noun:
