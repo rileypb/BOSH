@@ -3,6 +3,7 @@ Third Person Narration by Philip Riley begins here.
 Use authorial modesty.
 
 Include Gender Options by Nathanael Nerode.
+Include Undo Output Control by Erik Temple.
 
 Volume 1 - Player Refs
 
@@ -49,6 +50,18 @@ Carry out looking (this is the new room description heading rule):
 	if the description of the location is "":
 		say paragraph break;
 	[say run paragraph on with special look spacing.]
+
+report undoing an action:
+	say "Agent [Player] is ";
+	say bold type;
+	if in darkness:
+		begin the printing the name of a dark room activity;
+		if handling the printing the name of a dark room activity:
+			say "in the dark";
+		end the printing the name of a dark room activity;
+	otherwise:
+		say "[roman type][the preposition of the location][bold type] [if the location is always-indefinite][a location][otherwise][the location][end if].[paragraph break]";
+	rule succeeds;
 	
 The new room description heading rule is listed instead of the room description heading rule in the carry out looking rules.
 

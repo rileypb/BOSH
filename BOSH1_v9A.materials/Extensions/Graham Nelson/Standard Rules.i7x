@@ -1483,8 +1483,8 @@ Rule for deciding whether all includes a person while dropping or throwing
 	or inserting or putting (this is the exclude people from drop all rule):
 	it does not.
 
-[Rule for supplying a missing noun while an actor smelling (this is the ambient odour rule):
-	now the noun is the touchability ceiling of the player.]
+Rule for supplying a missing noun while an actor smelling (this is the ambient odour rule):
+	now the noun is the touchability ceiling of the player.
 
 [Rule for supplying a missing noun while an actor listening (this is the ambient sound rule):
 	now the noun is the touchability ceiling of the player.]
@@ -4034,7 +4034,7 @@ Check an actor thinking (this is the block thinking rule):
 		say "What a good idea." (A);
 	stop the action.]
 
-[Smelling is an action applying to nothing or one thing.
+Smelling is an action applying to nothing or one thing.
 The Smelling action translates into I6 as "Smell".
 
 The specification of the smelling action is
@@ -4046,7 +4046,7 @@ Report an actor smelling (this is the report smelling rule):
 		if the action is not silent:
 			say "[We] [smell] nothing unexpected." (A);
 	otherwise:
-		say "[The actor] [sniff]." (B).]
+		say "[The actor] [sniff]." (B).
 
 [Listening to is an action applying to nothing or one thing and abbreviable.
 The Listening to action translates into I6 as "Listen".
@@ -4611,9 +4611,9 @@ Understand the commands "embrace" and "hug" as "kiss".
 
 [Understand "think" as thinking.]
 
-[Understand "smell" as smelling.]
-[Understand "smell [something]" as smelling.]
-[Understand the command "sniff" as "smell".]
+Understand "smell" as smelling.
+Understand "smell [something]" as smelling.
+Understand the command "sniff" as "smell".
 
 [Understand "listen" as listening to.]
 [Understand "hear [something]" as listening to.]

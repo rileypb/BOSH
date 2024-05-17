@@ -847,6 +847,7 @@ Margaret arrives from the north, carrying a couple of flattened boxes.
 >x phone
 There's nothing like that nearby.
 * indicate inside desk
+<<<<<
 >n
 Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east. Faraji's door is open; Klimp's door and Moira's door are closed.
 

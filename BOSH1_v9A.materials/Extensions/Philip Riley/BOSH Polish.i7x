@@ -120,7 +120,7 @@ Strip Mall Parking Lot North	Strip Mall Parking Lot South	"[We] [walk] back to t
 Strip Mall Parking Lot North	Li'l Nectarine Convenience Store	"[We] [are] greeted by a blast of music as [we] [enter] the store."
 Front Office	Strip Mall Parking Lot South	"[We] [step] out of the office into the parking lot."
 Front Office	BOSH office Hallway	"[if Margaret is in the front office][We] [extricate] [ourselves] from Margaret's clutches[otherwise]Faraji forges further into the BOSH offices[end if]."
-BOSH office Hallway	Biff's Office	"[We] [enter] their new office full of anticipation. Well, maybe dread is a better word."
+BOSH office Hallway	Biff's Office	"[We] [enter] their new office full of... is it anticipation or dread?"
 BOSH office Hallway	Chief's Office	"[We] [take] a deep breath and [enter] the office of the Chief of BOSH."
 Chief's Office	BOSH office Hallway	"[We] [breathe] easier as [we] [leave] the office of the Chief of BOSH."
 Biff's Office	Back lot	"The scent of asphalt and old cigarette butts greets [us] as [we] [leave] the office."

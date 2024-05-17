@@ -214,6 +214,8 @@ strip mall parking lot south is outside from the Dave's pawn shop.
 Section 1 - Dave Conversation
 
 pawn-shop-subject is a subject. It is privately-named. The printed name is "Dave's pawn shop". Understand "Dave's/pawn/shop" as pawn-shop-subject.
+Butterfree-subject is a subject. It is privately-named. The printed name is "Butterfree". Understand "Butterfree/butterfly/pokemon/pokémon" as Butterfree-subject.
+laundromat-subject is a subject. It is privately-named. The printed name is "laundromat". Understand "laundromat" as laundromat-subject.
 
 Table of Quiz Topics (continued)
 subject (a thing)	interlocutor (a person)	comment (a text)	reply (a text)
@@ -224,6 +226,8 @@ jewelry	Dave	"Faraji asks, 'Is this jewelry all real?"	"Dave huffs, 'Miss, every
 firearms	Dave	"Faraji asks, 'What gun do you recommend?'"	"Dave says, 'Depends. How dead do you want'em?'"
 tattoo	Dave	"Faraji asks, 'What's your tattoo of?'"	"Dave says, 'It's Butterfree, so?'"
 Dave	Dave	"Faraji asks, 'How are you?'"	"Dave grunts, 'Been better.'"
+Butterfree-subject	Dave	"Faraji asks, 'What's Butterfree?'"	"Dave says, 'It's a Pokémon. I had a phase in the late 90s.'"
+laundromat-subject	Dave	"Faraji asks, 'What's up with the laundromat?'"	"Dave says, 'How should I know? The owner's a weirdo.'"
 
 
 Chapter 2 - Strip Mall Parking Lot North
@@ -297,7 +301,7 @@ The fluorescent lights are scenery in Dave's pawn shop. "The lights are flickeri
 The snarky remark of the fluorescent lights is "I'm sure they're good for the complexion."
 They are far away.
 
-The glass counter is a supporter in Dave's pawn shop. It is scenery. "The counter is arrayed with displays of jewelry, watches, and the like."
+The glass counter is a supporter in Dave's pawn shop. It is scenery. "The counter is arrayed with displays of jewelry, watches, and the like." Understand "items/collection" as the glass counter.
 The snarky remark of the glass counter is "What fine lady wouldn't want a ring from here?"
 
 Some jewelry is scenery in Dave's pawn shop. "[We] [don't] need any of this stuff." Understand "necklace/necklaces/ring/rings/bracelet/bracelets/watch/watches" as jewelry.
@@ -307,6 +311,9 @@ It is obstructed.
 The firearms are scenery in Dave's pawn shop. "Although as an agent [we] [have] the right to carry a firearm, [we] [don't] feel the need." Understand "gun/guns/firearm/firearms" as firearms.
 The snarky remark of the firearms is "In this line of work, if you need a gun, call Ghostbusters."
 They are far away.
+
+Instead of smelling Dave's pawn shop:
+	say "The smell of cigar smoke is thick in the air.";
 
 There is a fluorescent light source in Dave's pawn shop called pawn-light.
 

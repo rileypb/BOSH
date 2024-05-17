@@ -117,21 +117,7 @@ Carry out crediting:
 	say paragraph break;
 	say the list of extension credits;
 
-report undoing an action:
-	say "Agent [Player] is ";
-	say bold type;
-	if in darkness:
-		begin the printing the name of a dark room activity;
-		if handling the printing the name of a dark room activity:
-			say "in the dark";
-		end the printing the name of a dark room activity;
-	otherwise:
-		say "[roman type][the preposition of the location][bold type] [if the location is always-indefinite][a location][otherwise][the location][end if].[paragraph break]";
-	rule succeeds;
 
-
-The vat is an enterable container in Strip Mall Parking Lot South.
- 
 Volume 1 - The Game 
 
 Book 1 - Beginning 
@@ -783,6 +769,11 @@ The snarky remark is "Opulent quarters, indeed."
 
 There is a fluorescent light source in Biff's office called biffo-light.
 
+The fake-phone is in Biff's office. It is undescribed and privately-named. Understand "phone" as the fake-phone. The printed name is "phone".
+
+Instead of doing something to the fake-phone:
+	say "The phone is in the desk drawer, which is closed.";
+
 To say maybe insert computer muttering:
 	if biff's computer is not seen:
 		say "[paragraph break][reset LPR][We] [mutter], 'Where's my computer?'[run paragraph on]";
@@ -843,6 +834,7 @@ Carry out taking apart the desk:
 	now biff's desk's drawer is unlocked;
 	now the player carries the little grey key;
 	now the player carries the blue flipphone;
+	now the fake-phone is nowhere;
 
 Instead of unlocking biff's desk with the hex wrench:
 	try taking apart the desk biff's desk;
