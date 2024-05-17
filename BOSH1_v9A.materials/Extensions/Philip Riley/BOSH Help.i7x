@@ -7,10 +7,14 @@ Include Tutorial by Philip Riley.
 Help Area is a region. The Bureau of Special Help, the Observation Room, the ornamental garden, and the living room are in the Help Area.
 
 After taking something while in the Help Area for the first time:
-	say "Taken. Try taking INVENTORY to see what you picked up.";
+	if the action is not silent:
+		say "Taken. Try taking INVENTORY to see what you picked up.";
+	otherwise:
+		say "[line break](You have just taken [the noun]. Try taking INVENTORY to see what you picked up.)";
 
 After taking inventory while in the Help Area for the first time:
-	say "You could also just type I to take inventory.";
+	if the player's command matches the text "inventory", case insensitively:
+		say "You could also just type I to take inventory.";
 
 The Bureau of Special Help is a room. "It is bare save for a bookshelf and a button on the wall marked 'Exit'. Faraji can go east or north from here."
 
@@ -21,7 +25,7 @@ The exit button is scenery in the Bureau of Special Help. The description is "A 
 The Help Shelf is a scenery supporter in Bureau of Special Help. The description is "The shelf is full of books, each with a title that seems to promise help with some problem or other. Faraji may READ any of them to get some help."
 Understand "bookshelf/bookshelves/books/book/shelves" as the Help Shelf.
 
-Basics of Interactive Fiction is a thing. It is on the Help Shelf. The printed name is "[italic type]Basics of Interactive Fiction[roman type]". Understand "book" as Basics of Interactive Fiction.
+IF Basics is a thing. It is on the Help Shelf. The printed name is "[italic type]IF Basics[roman type]". Understand "book" as IF Basics.
 
 The description is "Welcome to the world of interactive fiction! This book will help you get started with the basics of playing interactive fiction, specifically those games known as 'parser-based' games, or 'text adventures.' By getting here and reading this book, you've already taken the first step. Congratulations! Now, let's get started.
 
@@ -31,7 +35,7 @@ You can also interact with objects in the world. You can type 'look' to see the 
 
 You're in a safe place now, so go experiment! When you're ready to continue your adventure, PRESS THE BUTTON to leave this place and return to the real world. Good luck!".
 
-Commands for the Novice Adventurer is a thing. It is on the Help Shelf. The printed name is "[italic type]Commands for the Novice Adventurer[roman type]". Understand "book" as Commands for the Novice Adventurer.
+Commands Volume 1 is a thing. It is on the Help Shelf. The printed name is "[italic type]Commands Volume 1[roman type]". Understand "book" as Commands Volume 1.
 The description is "This book will help you learn the basic commands you can use to interact with the world of interactive fiction. Here are some of the most common commands you can use:
 
 LOOK (or L): This command will repeat the description of the room you're in. It's useful if you've forgotten what's around you.
@@ -46,27 +50,27 @@ INVENTORY (or I): This command will show you a list of the objects you're carryi
 
 GO (or MOVE): This command will allow you to move in a particular direction. You can type GO followed by the direction you want to move in. Alternatively, you can just type the direction (or an abbreviation) itself.
 
-ASK: You can type ASK a character ABOUT a topic to ask a character about a particular topic. Note that not all characters will respond to all topics. If you're already talking to a character, you can just type ASK ABOUT followed by the topic.
-
 OPEN: This command will allow you to open a container. You can type OPEN followed by the name of the container you want to open.
 
 CLOSE: This command will allow you to close a container. You can type CLOSE followed by the name of the container you want to close.
-
-UNLOCK: This command will allow you to unlock a locked object. You can type UNLOCK object WITH key.
-
-LOCK: This command will allow you to lock a lockable object. You can type LOCK object WITH key.
 
 SAVE: You can type SAVE to save your game. You can then type RESTORE to restore your game to the point where you saved it.
 
 One of the most important things to remember is that simple commands are usually the best. The parser is designed to understand simple, direct commands. If you're not sure what to do, try typing a simple command and see what happens. Good luck!".
 
-Commands for the Intermediate Adventurer is a thing. It is on the Help Shelf. The printed name is "[italic type]Commands for the Intermediate Adventurer[roman type]". Understand "book" as Commands for the Intermediate Adventurer.
+Commands Volume 2 is a thing. It is on the Help Shelf. The printed name is "[italic type]Commands Volume 2[roman type]". Understand "book" as Commands Volume 2.
 
 The description is "This book will help you learn some intermediate commands you can use to interact with the world of interactive fiction. Here are some of the most common commands you can use:
 
 WAIT (or Z): This command will allow you to wait for a turn.
 
-LOOK UP: Some books allow you to LOOK UP a topic IN a book.
+ASK: You can type ASK a character ABOUT a topic to ask a character about a particular topic. Note that not all characters will respond to all topics. If you're already talking to a character, you can just type ASK ABOUT followed by the topic.
+
+UNLOCK: This command will allow you to unlock a locked object. You can type UNLOCK object WITH key.
+
+LOCK: This command will allow you to lock a lockable object. You can type LOCK object WITH key.
+
+LOOK UP: Some games allow you to LOOK UP a topic IN a book.
 
 PUT IN: This command will allow you to put an object in a container. You can type PUT object IN container.
 
@@ -80,7 +84,7 @@ QUIT: You can type QUIT to quit the game.
 
 SCRIPT ON: You can type SCRIPT ON to turn on the transcript feature, which will record everything that happens in the game. You can then type SCRIPT OFF to turn off the transcript feature.".
 
-Commands for the Advanced Adventurer is a thing. It is on the Help Shelf. The printed name is "[italic type]Commands for the Advanced Adventurer[roman type]". Understand "book" as Commands for the Advanced Adventurer.
+Commands Volume 3 is a thing. It is on the Help Shelf. The printed name is "[italic type]Commands Volume 3[roman type]". Understand "book" as Commands Volume 3.
 
 The description is "This book will help you learn some more advanced commands you can use to interact with the world of interactive fiction. Here are some of the most common commands you can use:
 
@@ -114,7 +118,7 @@ The description is "This book will help you learn some strategies for playing in
 
 5. Don't Give Up: Interactive fiction can be challenging, but it's also rewarding. If you get stuck, don't give up. Try different things, explore new areas, and keep experimenting. You'll be surprised at what you can discover."
 
-Advanced Grammar for Adventurers is a thing. It is on the Help Shelf. The printed name is "[italic type]Advanced Grammar for Adventurers[roman type]". Understand "book" as Advanced Grammar for Adventurers.
+Grammar of IF is a thing. It is on the Help Shelf. The printed name is "[italic type]Grammar of IF[roman type]". Understand "book" as Grammar of IF.
 
 The description is "This book will help you learn some advanced grammar (and other) rules for playing interactive fiction. Here are some of the most common advanced grammar rules you can use:
 
@@ -178,13 +182,15 @@ Instead of pushing the exit button:
 	now Doctor Helpful carries Advanced Adventuring;
 	now the yellow flower is nowhere;
 	now ask Doctor Helpful for the book is not exhausted;
-	now Basics of Interactive Fiction is on the Help Shelf;
-	now Commands for the Novice Adventurer is on the Help Shelf;
-	now Commands for the Intermediate Adventurer is on the Help Shelf;
+	now IF Basics is on the Help Shelf;
+	now Commands Volume 1 is on the Help Shelf;
+	now Commands Volume 2 is on the Help Shelf;
 	now Strategies of Adventuring is on the Help Shelf;
-	now Commands for the Advanced Adventurer is on the Help Shelf;
-	now Advanced Grammar for Adventurers is on the Help Shelf;
+	now Commands Volume 3 is on the Help Shelf;
+	now Grammar of IF is on the Help Shelf;
 	now BOSH Game Book is on the Help Shelf;
+	now the Bad Luck Counter is 0;
+	now the umbrella is closed;
 	truncate the queue of Doctor Helpful to 0 entries;
 
 An observed room is a kind of room. An observed room has a room called the next room. 
@@ -229,11 +235,72 @@ The tutorial message is "[if the player is not on the comfortable viewing couch]
 
 The comfortable viewing couch is an enterable scenery supporter in the Observation Room. It is exposed. The description is "The couch is soft and comfortable." Understand "comfortable-looking/sofa/seat/seating" as the comfortable viewing couch.
 
-The umbrella is on the comfortable viewing couch. The description is "A sturdy black umbrella." Understand "black/sturdy" as the umbrella. "Someone has left an umbrella on the couch."
-The tutorial message is "[if the player carries the umbrella and the location is the Observation Room]You could PUT UMBRELLA ON COUCH[otherwise]You can type TAKE UMBRELLA to pick it up. Or you can OPEN UMBRELLA to open it[end if]."
+Bad Luck Counter is a number that varies. Bad Luck Counter is 0.
 
-Instead of opening the umbrella:
-	say "Faraji would rather not risk bad luck by opening an umbrella indoors."
+The umbrella is on the comfortable viewing couch. The description is "A sturdy black umbrella. [if the umbrella is open]It is open[otherwise]It is closed[end if].". 
+Understand "black/sturdy" as the umbrella. "Someone has left an umbrella on the couch."
+The tutorial message is "[if the player carries the umbrella and the location is the Observation Room]You could PUT UMBRELLA ON COUCH[otherwise]You can type TAKE UMBRELLA to pick it up. Or you can OPEN UMBRELLA to open it[end if]"
+
+The umbrella can be open or closed. The umbrella is closed. The umbrella can be openable. The umbrella is openable.
+
+Description notes for the umbrella:
+	if the umbrella is open:
+		add "open" to descriptive notes;
+	otherwise:
+		add "closed" to descriptive notes.
+	
+
+Check opening the umbrella:
+	if the player does not carry the umbrella and the umbrella is touchable:
+		say "(first taking the umbrella)[command clarification break]";
+		silently try taking the umbrella;
+		if the player does not carry the umbrella:
+			stop the action;
+
+Check opening the umbrella when the umbrella has been open:
+	say "No way. Faraji won't do [italic type]that[roman type] again." instead;
+
+After opening the umbrella:
+	say "Oh no, it's bad luck to open an umbrella indoors! Faraji should close it quickly!";
+	now the Bad Luck Counter is 5;
+
+Every turn when the umbrella is open:
+	increment the Bad Luck Counter;
+
+Check closing the umbrella:
+	if the player does not carry the umbrella:
+		say "(first taking the umbrella)[command clarification break]";
+		silently try taking the umbrella;
+		if the player does not carry the umbrella:
+			stop the action;
+
+After closing the umbrella:
+	say "Faraji closes the umbrella. Phew!
+	
+	You can see the Bad Luck Counter in the status line (up at the top of the screen). When it reaches 0, Faraji will be safe from bad luck.";
+
+Every turn when the Bad Luck Counter > 0 and the umbrella is closed:
+	if Faraji carries something:
+		let S be a random thing carried by the player;
+		say "Oops! Faraji drops [the S].";
+		now the S is in the location;
+	otherwise:
+		let roll be a random number from 1 to 6;
+		if roll is 1:
+			say "Faraji trips over their own feet.";
+		if roll is 2:
+			say "Faraji stubs their toe.";
+		if roll is 3:
+			say "Faraji loses their balance.";
+		if roll is 4:
+			say "Faraji gets a cramp in their leg.";
+		if roll is 5:
+			say "Faraji bumps into the wall.";
+		if roll is 6:
+			say "Faraji gets a sudden headache.";
+	decrement the Bad Luck Counter;
+	if the Bad Luck Counter is 0:
+		say "[line break]Faraji can feel the bad luck finally dissipate. Thank goodness.";
 
 The observation room has a number called the window countdown. The window countdown is 3.
 
@@ -261,7 +328,7 @@ After deciding the scope of the player when the location is the Observation Room
 	place the window contents of the observation room in scope.
 
 Rule for reaching inside a room when the location is the Observation Room:
-	say "[The noun] is on the other side of the window.";
+	say "Faraji can't reach through the window.";
 	deny access.
 
 The ornamental garden is north of the Observation Room. "Flowers and shrubs crowd the paths. Faraji can leave to the south. A door leads west."
@@ -333,6 +400,9 @@ The description is "This book will help you learn some advanced strategies for p
 
 6. Have Fun: Interactive fiction is a unique and rewarding genre of gaming. Don't be afraid to immerse yourself in the world of the game, explore new areas, and enjoy the experience. Remember, the most important thing is to have fun!"
 
+Instead of examining Advanced Adventuring when Doctor Helpful carries Advanced Adventuring:
+	say "Faraji can't read the book while Doctor Helpful is holding it. They'll have to ASK DOCTOR FOR the book to borrow it.";
+
 Doctor Helpful is a man in the living room. He is carrying Advanced Adventuring.
 The description is "Doctor Helpful is a tweedy old professor with ink-stained fingers." Understand "tweedy/professor" as Doctor Helpful. "Doctor Helpful reclines on the sofa[if Doctor Helpful carries Advanced Adventuring] reading a book[end if], looking thoughtful."
 
@@ -361,7 +431,7 @@ Great-aunt Gertrude is a subject. Understand "great-aunt/gertrude/great/aunt" as
 living-room-subject is a subject. It is privately-named. The printed name is "living room". Understand "living/room" as living-room-subject.
 help-subject is a subject. It is privately-named. The printed name is "help". Understand "help" as help-subject.
 Bureau-of-Special-Help-subject is a subject. It is privately-named. The printed name is "Bureau of Special Help". Understand "bureau/special/help" as Bureau-of-Special-Help-subject.
-Interactive-Fiction is a subject. It is privately-named. Understand "interactive/fiction" as Interactive Fiction. The printed name is "Interactive Fiction".
+Interactive-Fiction is a subject. It is privately-named. Understand "interactive/fiction" as Interactive-Fiction. The printed name is "Interactive Fiction".
 parser-based-games is a subject. It is privately-named. Understand "parser-based/games/parser/based" as parser-based-games. The printed name is "parser-based games".
 
 Table of Quiz Topics (continued)
@@ -380,20 +450,20 @@ ink-stained fingers	Doctor Helpful		"Faraji says, 'What's up with your fingers?'
 elderberry juice	Doctor Helpful		"Faraji says, 'What's up with the elderberry juice?'"	"'I like it. Good for the constitution,' Doctor Helpful replies."
 nouns	Doctor Helpful		"Faraji says, 'What can you tell me about nouns?'"	"'Ah yes, the humble noun. Not as exciting as verbs, but just as important,' Doctor Helpful replies."
 verbs-subject	Doctor Helpful		"Faraji says, 'What can you tell me about verbs?'"	"'Verbs are the flashy ones -- they get all the attention. Every work of interactive fiction has its own set of verbs, most of which are standard across games, but some of which are unique. For instance, a game about a chef might have a verb like COOK, while a game about a detective might have a verb like INTERROGATE,' Doctor Helpful replies."
-Basics of Interactive Fiction	Doctor Helpful		"Faraji says, 'What can you tell me about this book?'"	"'My first book. A best-seller, you know, depending on how you define [']best-seller,[']' Doctor Helpful replies."
-Commands for the Novice Adventurer	Doctor Helpful		"Faraji says, 'What can you tell me about this book?'"	"'I wrote that one during a particularly productive summer. I think it's quite good,' Doctor Helpful replies."
-Commands for the Intermediate Adventurer	Doctor Helpful		"Faraji says, 'What can you tell me about this book?'"	"'Not my best work, but it has its moments,' Doctor Helpful replies."
+IF Basics	Doctor Helpful		"Faraji says, 'What can you tell me about this book?'"	"'My first book. A best-seller, you know, depending on how you define [']best-seller,[']' Doctor Helpful replies."
+Commands Volume 1	Doctor Helpful		"Faraji says, 'What can you tell me about this book?'"	"'I wrote that one during a particularly productive summer. I think it's quite good,' Doctor Helpful replies."
+Commands Volume 2	Doctor Helpful		"Faraji says, 'What can you tell me about this book?'"	"'Not my best work, but it has its moments,' Doctor Helpful replies."
 Strategies of Adventuring	Doctor Helpful		"Faraji says, 'What can you tell me about this book?'"	"'My best-selling book in Iceland,' Doctor Helpful replies."
-Advanced Grammar for Adventurers	Doctor Helpful		"Faraji says, 'What can you tell me about this book?'"	"'That one was a real labor of love. I'm quite proud of it,' Doctor Helpful replies."
+Grammar of IF	Doctor Helpful		"Faraji says, 'What can you tell me about this book?'"	"'That one was a real labor of love. I'm quite proud of it,' Doctor Helpful replies."
 BOSH Game Book	Doctor Helpful		"Faraji says, 'What can you tell me about this book?'"	"'I wrote that one on commission. I don't like to talk about it,' Doctor Helpful replies."
-Commands for the Advanced Adventurer	Doctor Helpful		"Faraji says, 'What can you tell me about this book?'"	"'I didn't really want to write that one, but the publisher insisted,' Doctor Helpful replies. 'Still, it sold quite well among left-handed readers.'"
+Commands Volume 3	Doctor Helpful		"Faraji says, 'What can you tell me about this book?'"	"'I didn't really want to write that one, but the publisher insisted,' Doctor Helpful replies. 'Still, it sold quite well among left-handed readers.'"
 Observation-Room-subject	Doctor Helpful		"Faraji says, 'What is going on in the Observation Room?'"	"'No one really knows where those places are. It used to mostly show a large underground labyrinth, filled with tunnels, caves, and peculiar rock formations, and every so often a bedraggled adventurer,' Doctor Helpful replies."
 ornamental-garden-subject	Doctor Helpful		"Faraji says, 'What can you tell me about the ornamental garden?'"	"'Ah, well, it was left to me by my great-aunt Gertrude. She's still alive, but she absolutely despises gardening,' Doctor Helpful replies."
 Great-aunt Gertrude	Doctor Helpful		"Faraji says, 'What can you tell me about your great-aunt Gertrude?'"	"'Horrible woman. Absolutely no appreciation for interactive fiction,' Doctor Helpful replies."
 living-room-subject	Doctor Helpful		"Faraji says, 'What can you tell me about the living room?'"	"'It's a cozy place, isn't it? I've spent many a happy hour here,' Doctor Helpful replies."
 help-subject	Doctor Helpful		"Faraji says, 'Can you help me?'"	"'Of course, Agent Faraji. I [italic type]am[roman type] Doctor Helpful, after all,' Doctor Helpful replies."
 Bureau-of-Special-Help-subject	Doctor Helpful		"Faraji says, 'What can you tell me about the Bureau of Special Help?'"	"'We're here to help you, Agent Faraji. That's what we do,' Doctor Helpful replies."
-Interactive Fiction	Doctor Helpful		"Faraji says, 'What can you tell me about interactive fiction?'"	"'Ah, interactive fiction. A noble pursuit. There are, broadly speaking, two kinds of interactive fiction: parser-based and choice-based. Parser-based games, like this one, allow you to type commands to interact with the world. Choice-based games, on the other hand, present you with a series of choices to make. Both are valid forms of interactive fiction, but I prefer parser-based games myself,' Doctor Helpful replies."
+Interactive-Fiction	Doctor Helpful		"Faraji says, 'What can you tell me about interactive fiction?'"	"'Ah, interactive fiction. A noble pursuit. There are, broadly speaking, two kinds of interactive fiction: parser-based and choice-based. Parser-based games, like this one, allow you to type commands to interact with the world. Choice-based games, on the other hand, present you with a series of choices to make. Both are valid forms of interactive fiction, but I prefer parser-based games myself,' Doctor Helpful replies."
 parser-based-games	Doctor Helpful	"Faraji says, 'How much do you know about parser-based games?'"	"'I know quite a bit about them, actually. Parser-based games, like this one, allow you to type commands to interact with the world. They're a bit more complex than choice-based games, but they're also more flexible and immersive. I've written a whole slew of books on the subject, you know,' Doctor Helpful replies."
 
 Before quizzing Doctor Helpful about adventuring-subject:

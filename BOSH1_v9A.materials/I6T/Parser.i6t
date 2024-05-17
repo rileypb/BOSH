@@ -482,7 +482,7 @@ The return value is the number of words typed.
 		if (i == 2) {
 			VM_RestoreWindowColours();
 			VM_Style(SUBHEADER_VMSTY);
-			SL_Location(); print "^";
+			! SL_Location(); print "^";
 			! print (name) location, "^";
 			VM_Style(NORMAL_VMSTY);
 			IMMEDIATELY_UNDO_RM('E'); new_line;

@@ -16,8 +16,9 @@ Include Basic Screen Effects by Emily Short.
 Include Punctuation Removal by Emily Short.
 Include Glulx Text Effects by Emily Short.
 Include Formatting Capture by Daniel Stelzer.
+Include Undo Output Control by Erik Temple.
 
-[ Include Locksmith by Emily Short. ]
+Include Locksmith by Emily Short.
  
 Include Essentials by Philip Riley. 
 Include Facts by Philip Riley.  
@@ -103,6 +104,10 @@ When play begins: now right alignment depth is 20.
 A thing can be snarkable or unsnarkable. A thing is usually snarkable.
 A quip is usually snarkable.
 
+[Turning off snarky remarks due to bad review... boo hoo]
+the thing-snarking rule does nothing.
+the room-snarking rule does nothing.
+
 Crediting is an action out of world. Understand "credits" as crediting.
 
 Carry out crediting:
@@ -111,6 +116,21 @@ Carry out crediting:
 	say "My wife, Laura, for understanding my need to spend hundreds of hours writing something that only a couple dozen people will ever play.";
 	say paragraph break;
 	say the list of extension credits;
+
+report undoing an action:
+	say "Agent [Player] is ";
+	say bold type;
+	if in darkness:
+		begin the printing the name of a dark room activity;
+		if handling the printing the name of a dark room activity:
+			say "in the dark";
+		end the printing the name of a dark room activity;
+	otherwise:
+		say "[roman type][the preposition of the location][bold type] [if the location is always-indefinite][a location][otherwise][the location][end if].[paragraph break]";
+	rule succeeds;
+
+
+The vat is an enterable container in Strip Mall Parking Lot South.
  
 Volume 1 - The Game 
 
@@ -137,7 +157,7 @@ To print faraji bio:
 	say fixed letter spacing;
 	say "Larch Faraji (they/them): An agent of the Bureau of Strange Happenings. Dark hair, dark eyes, and a dark sense of humor. Specialized in the investigation of unexplained phenomena throughout the United States and its territories. Lead singer of the third wave neo-old-school punk band DC Trash. Liable to fits of sarcasm and cynicism. Dedicated to the Bureau's mission. Status: Potential threat.";
 	lb;
-	say "    -- Notes from Senate Investigation into BOSH";
+	say "    -- Notes from Senate Investigation into BOSH, Senator S. Savra, Chair";
 	lb;
 	lb;
 	continue;
@@ -182,11 +202,7 @@ When play begins:
  
 To survey is a verb. To wrinkle is a verb.
 
-Intro Text is always "As an agent of the Bureau of Strange Happenings (BOSH), it is Agent [player's full name]'s job to investigate unexplained phenomena throughout the United States and its territories. Recently, however, business hasn't been good. Once a bustling office with a dozen Agents, the Bureau's been reduced to just three: [Player's surname], Moira Zin, and Chief Huffton Klimp. The Bureau's expansive and well-appointed office suite was taken over by the State Department Book Club, and now the agents are consigned to a tiny suite in a strip mall in the remote D.C. suburb of Swamp Park, Maryland.
-
-	The reason? The venomous Senator Savra, whose crusade against all things he considers unwholesome is the scourge of Washington. To him, BOSH is nothing more than the devil's megaphone, giving credence to Satan's lies by giving them a hearing. Now Savra is at it again, threatening to cut BOSH entirely from next year's Federal budget.
-	
-	But for now, today is move-in day at the bureau. 
+Intro Text is always "As an agent of the Bureau of Strange Happenings (BOSH), it is Agent [player's full name]'s job to investigate unexplained phenomena throughout the United States and its territories. Recently, however, business hasn't been good. Once a bustling office with a dozen Agents, the Bureau's been reduced to just three: [Player's surname], Moira Zin, and Chief Huffton Klimp. The Bureau's expansive and well-appointed office suite was taken over by the State Department Book Club, and now the agents are consigned to a tiny suite in a strip mall in the remote D.C. suburb of Swamp Park, Maryland. Today is move-in day at the bureau. 
 	
 	We open on a decrepit strip mall just as an aging Hyundai pulls into the potholed parking lot. [agent] steps out of the car. They survey the area and wrinkle their nose.[paragraph break]".
 
@@ -264,7 +280,7 @@ Chapter 1 - Player's Name
 
 When play begins:
 	now left hand status line is "[location-title-case]";
-	now right hand status line is "[if location is the public gymnasium]Score: [basketball score][end if][if location is in ELR and location is outdoors]Weather: [current weather][end if]";
+	now right hand status line is "[if location is the public gymnasium]Score: [basketball score][end if][if location is in ELR and location is outdoors]Weather: [current weather][end if][if location is in Help Area and Bad Luck Counter > 0]BAD LUCK FOR [bad luck counter] turns[end if]";
 
 To continue:
 	say "[bracket]continue[close bracket][paragraph break]";
@@ -914,10 +930,11 @@ To init office:
  
 Biff's mobile number is a phone number. Biff's mobile number reaches the green smartphone. The player knows Biff's mobile number.
 
-Check opening Biff's desk's drawer when biff's desk's drawer is locked and the blue flipphone is in biff's desk's drawer and the blue flipphone is ringing for the first time:
+Before opening Biff's desk's drawer when biff's desk's drawer is locked and the blue flipphone is in biff's desk's drawer and the blue flipphone is ringing for the first time:
 	now the player knows desk-locked;
 	[ activate the Table of Desk Opening Hints; ]
-	say "[We] [try] to open the desk to answer the phone, but it seems to be locked. [We] [sigh]. 'Margaret must have the key.'[paragraph break]" instead; 
+	say "[We] [try] to open the desk to answer the phone, but it seems to be locked. [We] [sigh]. 'Margaret must have the key.'[paragraph break]"; 
+	stop the action;
 	
 After opening Biff's desk's drawer for the first time:
 	now the player does not know desk-locked; 
