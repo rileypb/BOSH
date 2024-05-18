@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 33999 words long.
+I've now read your source text, which is 33350 words long.
 
 
 -----------------------------------------------------
@@ -55,11 +55,11 @@ I've also read Snarky Remarks by Philip Riley, which is 235 words long.
 I've also read Followup Questions by Philip Riley, which is 248 words long.
 I've also read Scenery Supporters by Philip Riley, which is 179 words long.
 I've also read Simple Conversation by Philip Riley, which is 2362 words long.
-I've also read Hyperspace by Philip Riley, which is 17234 words long.
+I've also read Hyperspace by Philip Riley, which is 16663 words long.
 I've also read BOSH Facts by Philip Riley, which is 193 words long.
-I've also read Swamp Park by Philip Riley, which is 8322 words long.
-I've also read Margaret by Philip Riley, which is 2542 words long.
-I've also read Enigma Lake by Philip Riley, which is 32238 words long.
+I've also read Swamp Park by Philip Riley, which is 7356 words long.
+I've also read Margaret by Philip Riley, which is 2531 words long.
+I've also read Enigma Lake by Philip Riley, which is 29924 words long.
 I've also read I Can Dig It by Philip Riley, which is 77 words long.
 I've also read BOSH Help by Philip Riley, which is 6476 words long.
 I've also read Overlook by Philip Riley, which is 763 words long.
@@ -84,7 +84,7 @@ I've also read Secret Doors by Gavin Lambert, which is 272 words long.
 I've also read Plugging by Philip Riley, which is 706 words long.
 I've also read Books by Philip Riley, which is 2480 words long.
 I've also read Container Types by Philip Riley, which is 55 words long.
-I've also read Extension Cord by Philip Riley, which is 3218 words long.
+I've also read Extension Cord by Philip Riley, which is 3200 words long.
 I've also read State Update by Philip Riley, which is 406 words long.
 I've also read Hints by Philip Riley, which is 888 words long.
 I've also read Two-Sided Doors by Philip Riley, which is 2270 words long.
@@ -336,7 +336,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 291 files written as streams.
-CPU time: 1136 centiseconds
+CPU time: 1258 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

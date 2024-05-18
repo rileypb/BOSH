@@ -1206,7 +1206,7 @@ Faraji is carrying:
   a thumb drive
 
 Margaret looks dreamy. "Some day I want to go to Budapest, or Istanbul. They both sound so exotic."
-
+<<<<<
 A phone is ringing to the west.
 
 >e
@@ -1273,7 +1273,7 @@ There's nothing like that nearby.
 Klimp drives a sleek 2017 Porsche 911 Turbo Cabriolet.
 
 [I guess the Bureau's not as broke as they say.]
-
+<<<<<
 >w
 Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as the BOSH front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Bureau photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
 

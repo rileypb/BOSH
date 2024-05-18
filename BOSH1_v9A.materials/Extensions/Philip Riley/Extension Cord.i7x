@@ -11,7 +11,7 @@ It is pluggable. It is plug-into-able.
 The electrical outlet is scenery. "A standard electrical outlet, set into the wall[if the extension cord is plugged into the electrical outlet and the player encloses the extension cord]. The extension cord is plugged into it[otherwise if the extension cord is plugged into the electrical outlet]. An extension cord is plugged into it[end if]." 
 Understand "wall/power/electric/point/mains/GPO/socket" as the electrical outlet.
 It is plug-into-able.
-The snarky remark of the electrical outlet is "This mission is making me wish I had a fork."
+[ The snarky remark of the electrical outlet is "This mission is making me wish I had a fork." ]
 
 The plug-end is a thing. It is pluggable. It is privately-named. The printed name is "plug end of the extension cord". Understand "plug/end/of/the/extension/cord" as the plug-end. The indefinite article of the plug-end is "the". 
 The description of the plug-end is "[description of the extension cord]".

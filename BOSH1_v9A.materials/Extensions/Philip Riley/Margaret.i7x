@@ -8,7 +8,7 @@ Include Real People by Philip Riley.
 Book 1 - Basics
 
 Margaret Chao is a woman. The description is "[Margaret Chao] is the latest occupant of the rapidly revolving post of office manager. Most of [their] job involves ordering stationery and office supplies, shredding documents, and keeping track of office equipment."
-The snarky remark of Margaret is "Margaret Chao: she may get it wrong, but at least it's with enthusiasm."
+[ The snarky remark of Margaret is "Margaret Chao: she may get it wrong, but at least it's with enthusiasm." ]
 
 Rule for printing the name of Margaret Chao: say "Margaret".
 
@@ -26,7 +26,7 @@ looking for the desk key is a truth state that varies.
 
 about the desk key is a questioning quip.
 	it mentions the little grey key. 
-	Understand "where the desk/-- key is", "where is the desk/-- key", "for the desk/-- key" as about the desk key.
+	Understand "where the/-- desk/-- key is", "where is the/-- desk/-- key", "for the/-- desk/-- key" as about the desk key.
 	the comment is "[We] [say], 'Hey Margaret, do you know anything about my desk key?'".
 	[the comment is "[We] [say], 'Hey, Margaret. Do you have the key to my desk?'".]
 	the reply is "'Sure I do -- I put it in your desk.' She furrows her brow. 'What's the matter?'"
@@ -178,7 +178,7 @@ Chapter 2 - Margaret Interjections
 
 Margaret interjection timer is a number that varies. Margaret interjection timer is 5.
 
-Every turn when Margaret interjection timer is not 0 and Margaret is in the location:
+Every turn when Margaret interjection timer is not 0 and Margaret is in the front office and the location is the front office:
 	decrease Margaret interjection timer by 1;
 	if Margaret interjection timer is 0:
 		interject Margaret;

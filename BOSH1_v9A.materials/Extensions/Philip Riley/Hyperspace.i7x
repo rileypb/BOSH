@@ -128,7 +128,7 @@ Book 1 - The Mystic Compass
 
 The mystic compass is a thing.  The description is "The name 'compass' is a bit of a misnomer, as it doesn't point anywhere. Instead, it displays a set of symbols that change as Faraji moves." 
 Understand "mystical/magic" as the mystic compass.
-The snarky remark is "I bet the Boy Scouts never get to play with one of these."
+[ The snarky remark is "I bet the Boy Scouts never get to play with one of these." ]
 
 After dropping the mystic compass when the Ethereal Pillar is nowhere:
 	say "The mystic compass vanishes!";
@@ -270,13 +270,13 @@ Carry out going up from Field Office Reception:
 
 
 Descending Stair is scenery. "A spiraling staircase disappears into the ground here. It is made of the same gossamer, questionably real stuff as the ground, the pillar, and the compass. Faraji can't see past the first turn of the stairs, unfortunately."
-The snarky remark is "So nice of them to point the way to the exit."
+[ The snarky remark is "So nice of them to point the way to the exit." ]
 Understand "staircase/stairs/spiral" as Descending Stair.
 [Rule for writing a paragraph about the descending stair:
 	say "A spiraling staircase disappears into the ground here. It is made of the same gossamer, questionably real stuff as the ground,[if visited pillar is true] the pillar,[end if] and the readouts. You can't see past the first turn of the stairs, unfortunately.";]
 
 The Ethereal Pillar is a thing. The description is "It's not clear what the pillar is made of, but it's definitely not stone." 
-The snarky remark is "Dammit, Doris, you and your cryptic messages."
+[ The snarky remark is "Dammit, Doris, you and your cryptic messages." ]
 
 After deciding the scope of the player when the location is Featureless Hyperplane:
 	place the Ethereal Pillar in scope;
@@ -459,10 +459,10 @@ field office reception is below Featureless Hyperplane. The preposition is "at".
 The snarky remark is "I bet they don't get much foot traffic here."
 
 The reception desk is a scenery supporter in field office reception. The description is "The desk -- white, polished, and gleaming -- is empty except for a small control panel."
-The snarky remark is "No stapler?"
+[ The snarky remark is "No stapler?" ]
 
 The control panel is part of the reception desk. The description is "As Faraji leans over to examine the control panel, Maggie says 'Please don't touch that. Don't even look at it. Time to look away now.'".
-The snarky remark is "Geez, relax."
+[ The snarky remark is "Geez, relax." ]
 
 The ascending staircase is scenery in field office reception. The description is "The staircase leads up to the featureless hyperplane." Understand "stairs/stair/spiral" as ascending staircase.
 
@@ -481,7 +481,7 @@ Instead of doing anything other than examining to the control panel:
 Section - Maggie
 
 Maggie is a woman in field office reception. "Maggie is sitting at the desk, doing nothing Faraji can discern." The description is "Maggie seems a little vacant. She's staring at [one of]the wall[or]the ceiling[or]the floor[or]her hands[or]the desk in front of her[or]nothing in particular[at random]."
-The snarky remark is "I think she's in a trance."
+[ The snarky remark is "I think she's in a trance." ]
 Understand "receptionist/woman" as Maggie.
 
 Rule for writing a paragraph about Maggie when field office reception is not visited:
@@ -562,29 +562,29 @@ Book 2 - Hallway
 the field office hallway is west of field office reception. It is in field office area. "The hallway is white and gleaming. Doorways lead north, south, east, west, forth, and back."
 Understand "hall/way/corridor" as field office hallway.
 
-The snarky remark is "You can find blandness in any dimension."
+[ The snarky remark is "You can find blandness in any dimension." ]
 
 Book 3 - Minerva's Office
 
 Minerva's office is a leavable room. It is north of the field office hallway. It is in field office area. "The office is white and gleaming. A mahogany desk is in the middle of the room. A coffee maker sits on the desk." It has egress south.
-The snarky remark is "How did they get a big desk like that in here?"
+[ The snarky remark is "How did they get a big desk like that in here?" ]
 
 Minerva is a woman in Minerva's office. The initial appearance is "Minerva is sitting at her desk, typing away on her computer." 
-The snarky remark is "Doesn't even look up. Don't mess with her."
+[ The snarky remark is "Doesn't even look up. Don't mess with her." ]
 The description is "Minerva exudes an air of competence and no-nonsense business. Her expression is serious and focused."
 
 A mahogany desk is in Minerva's office. It is scenery. The description is "The desk holds some neatly-stacked papers, a few books, and a coffee maker.".
-The snarky remark is "Mahogany. Just the thing to match the monotonous white of hyperspace."
+[ The snarky remark is "Mahogany. Just the thing to match the monotonous white of hyperspace." ]
 
 Minerva's papers are scenery. They are on the mahogany desk. The description is "Minerva notices Faraji looking at her papers and gives them a look that says 'Mind your own business.'" 
 It is owned by Minerva. It is plural-named.
 
-The snarky remark is "I bet they're all blank."
+[ The snarky remark is "I bet they're all blank." ]
 
 Minerva's books are scenery on the mahogany desk. The description is "The books [italic type]Advanced Temporal Mechanics[roman type], [italic type]Theoretical Hyperspace[roman type], and [italic type]Hitchhiker's Guide to the Galaxy[roman type] are stacked neatly on the desk." 
 It is plural-named. It is owned by Minerva.
 
-The snarky remark is "Minerva has a sense of humor?"
+[ The snarky remark is "Minerva has a sense of humor?" ]
 
 Instead of examining Minerva's books:
 	let tomes be the list of tomes on the mahogany desk;
@@ -600,13 +600,16 @@ After printing the name of a tome:
 	say "[roman type]";
 
 Advanced Temporal Mechanics is a tome on the mahogany desk. The description is "A thick, technical tome with a title that makes Faraji's head hurt."
-The snarky remark is "I hear it has a great twist ending." It is owned by Minerva. It is loanable.
+[ The snarky remark is "I hear it has a great twist ending."  ]
+It is owned by Minerva. It is loanable.
 
 Theoretical Hyperspace is a tome on the mahogany desk. The description is "A graduate text in something or other."
-The snarky remark is "I liked the cover art on the last edition better." It is owned by Minerva. It is loanable.
+[ The snarky remark is "I liked the cover art on the last edition better."  ]
+It is owned by Minerva. It is loanable.
 
 Hitchhiker's Guide to the Galaxy is a tome on the mahogany desk. The description is "A battered paperback with a cover that says 'Don't Panic.'"
-The snarky remark is "Most realistic book in the office." It is owned by Minerva. It is loanable.
+[ The snarky remark is "Most realistic book in the office."  ]
+It is owned by Minerva. It is loanable.
 
 The borrowed book-minerva is an object that varies. The borrowed book-minerva is initially nothing.
 
@@ -698,11 +701,11 @@ Hitchhiker's Guide to the Galaxy	Minerva	"'So you read fiction too?'"	"'No, I re
 
 
 A coffee maker is on the mahogany desk. It is scenery. The description is "A drip coffee maker sits on the desk." Minerva owns the coffee maker.
-The snarky remark of the coffee maker is "I am a machine for turning coffee into snark."
+[ The snarky remark of the coffee maker is "I am a machine for turning coffee into snark." ]
 
 The cup of coffee is a thing. The description is "[Coffee description]. It is in a paper cup.". The cup of coffee has a number called the hotness.
 
-The snarky remark of the cup of coffee is "Finally, something to keep me awake through all this."
+[ The snarky remark of the cup of coffee is "Finally, something to keep me awake through all this." ]
 
 To say coffee description:
 	if the hotness of the cup of coffee is greater than 25:
@@ -846,61 +849,61 @@ Minerva interjection	used
 Book 4 - Doris's Office
 
 the field office chief's office is a leavable room. It is west of the field office hallway. It is in field office area. "Doris's office is a riot of color -- he's covered the white walls with posters, maps, and charts. A large desk is in the middle of the room, behind which sits Doris." It has egress east.
-The snarky remark is "It's like a billboard advertising his insanity."
+[ The snarky remark is "It's like a billboard advertising his insanity." ]
 
 Doris is a man in the field office chief's office.
 The initial appearance is "Doris is sitting cross-legged in a chair, tapping his foot lazily on the desk."
 The description is "Doris sports a grin that seems to be permanently etched on his face. He wears a tweed suit and a trilby hat."
-The snarky remark is "Nice hat. I'm not being sarcastic."
+[ The snarky remark is "Nice hat. I'm not being sarcastic." ]
 
 The tweed suit is part of Doris. The description is "The suit is a little too big for him, but he wears it with style."
-The snarky remark is "Who wears a tweed suit in hyperspace? Serious question. What [italic type]is[roman type] the dress code here?"
+[ The snarky remark is "Who wears a tweed suit in hyperspace? Serious question. What [italic type]is[roman type] the dress code here?" ]
 
 The trilby hat is part of Doris. The description is "The grin and the hat make him look like a cartoon character." 
 The snarky remark is "He's like some strange caricature of Frank Sinatra."
 
 Doris's chair is a scenery supporter in the field office chief's office. The description is "It is a very nice swivel chair, worth more than Faraji's car." 
-The snarky remark is "Yes, but how does it corner?"
+[ The snarky remark is "Yes, but how does it corner?" ]
 
 Doris's desk is a scenery supporter in the field office chief's office. The description is "Doris's desk is large and made of the same white material as the rest of the office. It is covered with a chaotic mess of papers."
-The snarky remark is "I'm sure it's a very sophisticated filing system."
+[ The snarky remark is "I'm sure it's a very sophisticated filing system." ]
 
 The posters are scenery in the field office chief's office. The description is "The posters are all brightly colored and covered with strange symbols and diagrams. They're all in languages Faraji can't read." They are plural-named.
-The snarky remark is "Never have learned to read Esperanto."
+[ The snarky remark is "Never have learned to read Esperanto." ]
 
 The maps are scenery in the field office chief's office. The description is "The maps are of places Faraji is pretty sure don't exist." They are plural-named.
-The snarky remark is "I think that one's a map of Narnia."
+[ The snarky remark is "I think that one's a map of Narnia." ]
 
 The charts are scenery in the field office chief's office. The description is "The charts seem to be of some kind of scientific data, but Faraji can't make heads or tails of them." They are plural-named.
-The snarky remark is "I should have paid more attention in my theoretical nonsense class."
+[ The snarky remark is "I should have paid more attention in my theoretical nonsense class." ]
 
 The tchotchkes are scenery in the field office chief's office. Understand "knick-knacks", "knick knacks", "curios", "junk", "stuff" as the tchotchkes. The description is "A small, plastic model of a TARDIS, a Rubik's cube, and a CMY cube are on the desk." They are plural-named. Doris owns the tchotchkes.
 
-The snarky remark of the tchotchkes is "Come to think of it, he does look a little like Sylvester McCoy."
+[ The snarky remark of the tchotchkes is "Come to think of it, he does look a little like Sylvester McCoy." ]
 
 A model TARDIS is on Doris's desk. The description is "It's a small, plastic model of a TARDIS." It is owned by Doris.
-The snarky remark is "It's only a model."
+[ The snarky remark is "It's only a model." ]
 
 A Rubik's cube is on Doris's desk. The description is "It's a Rubik's cube." It is owned by Doris.
 Understand "rubik/rubix" as Rubik's cube.
-The snarky remark is "I can solve one side."
+[ The snarky remark is "I can solve one side." ]
 
 A CMY cube is on Doris's desk. The description is "An acrylic cube that filters light on different wavelengths through its various sides." It is owned by Doris. Understand "color/acrylic" as CMY cube.
-The snarky remark is "Anyone can make a CMY cube. It takes a real artist to make a CMYK cube."
+[ The snarky remark is "Anyone can make a CMY cube. It takes a real artist to make a CMYK cube." ]
 
 Doris's papers are on Doris's desk. They are plural-named. The description is "The papers are covered with scribbles and diagrams. But really, who can make sense of them?" It is owned by Doris. Understand "scribbles/diagrams" as Doris's papers.
-The snarky remark is "I keep feeling more and more confident in his leadership."
+[ The snarky remark is "I keep feeling more and more confident in his leadership." ]
 
 Book 5 - Christy's Office
 
 Christy's office is a leavable room. It is south of the field office hallway. It is in field office area. "Christy has taken the initiative to paint their office a bright, cheerful orange. A large desk is in the middle of the room." It has egress north.
-The snarky remark is "I think they're trying to blind us."
+[ The snarky remark is "I think they're trying to blind us." ]
 
 Christy is a nonbinary in Christy's office. The initial appearance is "Christy is sitting at the desk, drawing in a sketchbook." The description is "With their short hair and wide eyes, Christy looks a bit like a lemur. They're wearing a sharp brown suit."
-The snarky remark is "I think they're trying to hypnotize me."
+[ The snarky remark is "I think they're trying to hypnotize me." ]
 
 Christy's desk is a scenery supporter in Christy's office. The description is "A sleek modern desk, it holds [list of things on Christy's desk with indefinite articles]." 
-The snarky remark is "Why can't I have a desk like that?"
+[ The snarky remark is "Why can't I have a desk like that?" ]
 
 Instead of examining Christy's desk:
 	say the description of Christy's desk;
@@ -922,13 +925,13 @@ Portal Room 1 is a leavable room. It is forth of the field office hallway. It is
 The snarky remark is "The room is named well."
 
 The machinery is scenery in Portal Room 1. The description is "The machinery is humming and glowing with a soft light. It's all attached to the portal in the middle of the room." Understand "machines" as the machinery.
-The snarky remark is "At least it's not a DeLorean." 
+[ The snarky remark is "At least it's not a DeLorean."  ]
 
 The portal to the past is in Portal Room 1. The portal to the past can be activated. it is fixed in place.
 
 Understand "shimmering/curtain/field/of/light" as the portal to the past when the portal to the past is activated. 
 
-The snarky remark of the portal to the past is "Does it kill you and then assemble a new you on the other side? If so, I'm not getting paid enough for this."
+[ The snarky remark of the portal to the past is "Does it kill you and then assemble a new you on the other side? If so, I'm not getting paid enough for this." ]
 
 To say portal to the past interior description:
 	if the portal to the past is activated:
@@ -973,7 +976,7 @@ When play begins:
 
 
 The spacetime control is a part of the portal to the past. The description is "A control panel is attached to the portal. It has an LED display and a keypad. [if the portal to the past is activated]The display reads '[current spacetime setting]'[otherwise]The display is dark[end if]. A large red button underneath says 'RESET'." Understand "panel" as the spacetime control.
-The snarky remark is "LEDs, eh? Where'd they get the budget for that?"
+[ The snarky remark is "LEDs, eh? Where'd they get the budget for that?" ]
 
 The keypad is a part of the spacetime control. The description is "A standard numeric keypad. The font on the keys is really cool and science fictiony."
 
@@ -987,7 +990,7 @@ Carry out pushing the reset button:
 	otherwise:
 		now the current spacetime setting is 0;
 
-The snarky remark of the reset button is "Reset what how? How do I know I want that?"
+[ The snarky remark of the reset button is "Reset what how? How do I know I want that?" ]
 
 Report pushing the reset button:
 	say "The display now reads '[current spaceTime Setting]'";
@@ -1049,7 +1052,7 @@ The auxiliary portal is in Portal Room 2. The auxiliary portal can be activated.
 
 Understand "shimmering/curtain/field/of/light" as the auxiliary portal when the auxiliary portal is activated. 
 
-The snarky remark of the auxiliary portal is "I'd like a portal right to my bed, please."
+[ The snarky remark of the auxiliary portal is "I'd like a portal right to my bed, please." ]
 
 To say auxiliary portal interior description:
 	if the auxiliary portal is activated:
@@ -1290,7 +1293,7 @@ about the mission is a questioning quip.
 
 Doris's note is a thing. The description is "It's a bunch of cryptic scribbles."
 
-The snarky remark of Doris's note is "Don't they teach penmanship in hyperspace?"
+[ The snarky remark of Doris's note is "Don't they teach penmanship in hyperspace?" ]
 
 Check giving Tribes of New York to Doris when Doris's note is not off-stage:
 	now doris interjection timer is a random number between 2 and 5;
@@ -1606,7 +1609,7 @@ After giving the cup of coffee to Christy when christy carries Tribes of New Yor
 
 Christy's note is a thing. The description is "The note consists of just the number [town hall spacetime setting]."
 
-The snarky remark of Christy's note is "That's illuminating."
+[ The snarky remark of Christy's note is "That's illuminating." ]
 
 Before going north from Christy's office when Christy is researching:
 	say "Christy suddenly hoots behind Faraji. 'Stop! I have it. Sorry it took so long. Here, take this note to Doris.' They scribble something on a piece of paper and hand it to Faraji. Christy thinks for a moment and says 'Oh yes, take the book too.' They hand Faraji [italic type]Tribes of New York[roman type].";
@@ -1683,7 +1686,7 @@ An availability rule for for-a-screwdriver-christy:
 Volume 5 - Things
 
 The recall button is a thing. The description is "A small, flat device with a black button on it." Understand "black/device" as the recall button.
-The snarky remark is "[If the recall button is not pushed]Yeah. Am I sure it won't explode? No, I'm not sure. But I'm pretty sure it won't. Pretty sure[otherwise]At least I have a way back, just in case I really want Doris's company[end if]."
+[ The snarky remark is "[If the recall button is not pushed]Yeah. Am I sure it won't explode? No, I'm not sure. But I'm pretty sure it won't. Pretty sure[otherwise]At least I have a way back, just in case I really want Doris's company[end if]." ]
 
 The recall button can be pushed. The recall button is not pushed.
 
