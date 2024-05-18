@@ -426,7 +426,7 @@ Carry out flipping a device:
 Book 5 - Automatic greeting
 
 After Margaret going to a room:
-	if the current interlocutor is not Margaret:
+	if the noun is the location and the current interlocutor is not Margaret:
 		postpone saying hello to Margaret;
 	continue the activity;
 
@@ -630,9 +630,9 @@ To tell klimp something he already knows:
 [ Response of Klimp when asked about aliens:
 	Say "Klimp assumes his lecturing pose. 'You know what I think, of course. They're here, they've been here for decades, maybe centuries, and they're a menace to the human race. We're the only thing standing between them and the end of the world.'"; ]
 	
-Greeting response for Klimp:
+[ Greeting response for Klimp:
 	say "Good day.";
-	continue the action;
+	continue the action; ]
 	
 [ Response of Klimp when asked about Moira:
 	Say "Klimp nods. 'Superior agent. I'd be honored to be compared to her.'"; ]
@@ -652,7 +652,7 @@ for-a-screwdriver-klimp is a questioning quip.
 	It is privately-named. The printed name is "for a screwdriver". [The true-name is "for-a-screwdriver".] Understand "for/a/screwdriver" as for-a-screwdriver-klimp.
 	It mentions the red screwdriver.
 	The comment is "[We] [ask], 'Would you happen to have a --'".
-	The reply is "'screwdriver you could borrow? No, no, someone stole my screwdriver collection. Probably the Illuminati.'".
+	The reply is "'Screwdriver you could borrow? No, no, someone stole my screwdriver collection. Probably the Illuminati.'".
 	It quip-supplies Klimp;
 	
 An availability rule for for-a-screwdriver-klimp:
@@ -1798,6 +1798,7 @@ Siberia is a subject. Pennsylvania is a subject.
 The doll-fly-subject is a subject. It is privately-named. The printed name is "doll-fly". Understand "doll/fly" as the doll-fly-subject.
 hezekiah-subject is a subject. It is privately-named. The printed name is "Hezekiah Horton". Understand "Hezekiah/Horton" as hezekiah-subject.
 astral-resonator-subject is a subject. It is privately-named. The printed name is "astral resonator". Understand "astral/resonator" as astral-resonator-subject. 
+money is a subject.
 
 
 Table of Quiz Topics (continued)
@@ -2101,7 +2102,9 @@ Pennsylvania	Margaret	"'Margaret, what do you know about Pennsylvania?'"	"'It's 
 Pennsylvania	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'Pennsylvania? Enough to tell you to stay away from it. They'll try to make you eat scrapple. And then they'll try to make you like it. It's a trap, I tell you.'"
 Pennsylvania	Moira Zin	"'Moira, what do you know about Pennsylvania?'"	"'Pennsylvania is a state in the northeastern United States. It is known for its historic sites, its cultural institutions, and its natural beauty. There is no scientific evidence to support the idea that it is the home of the Monkees.'"
 Robots	Chief Huffton Klimp	"'Chief, what are your feelings about --'"	"'robots? I don't trust them. They don't have eyelids.'"
-
+money	Chief Huffton Klimp	"'Chief, do you have any --'"	"'Money? No, no. Lost my wallet this morning in an automatic car wash. No, not that one out there. Another one. Long story. But go ask Margaret, see if there's anything in the petty cash drawer.'"
+money	Margaret	"'Margaret, do we have any money in petty cash?'"	"'No, nothing in there. But I have a few bucks in my purse. I left my purse in the car this morning when my boyfriend dropped me off. Can you wait until tomorrow?'"
+money	Moira Zin	"'Moira, do you have any money so I can buy a screwdriver, so I can get the hex wrench out of the vent, so I can open the drawer of my desk, so I can answer the phone?'"	"'No, I gave all my money to a vagrant this morning as I walked the 5 miles to work. I'm sure he needed it more than I did.'"
 
 
 Book 18.6 - Klimp Interjections

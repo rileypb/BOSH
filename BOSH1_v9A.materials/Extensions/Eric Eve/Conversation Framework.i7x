@@ -43,7 +43,7 @@ Understand "ask [someone] about [any a-propos subject]" as quizzing it about.
 
 Informing it about is an action applying to two visible things.
 
-Understand "tell [someone] about [any known thing]" as informing it about.
+[ Understand "tell [someone] about [any known thing]" as informing it about. ]
 
 Section 2 - Specifications
 

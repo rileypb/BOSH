@@ -419,6 +419,54 @@ Dave interjection	used (a truth state)
 "Dave looks at the door. 'I've heard of you BOSH people. You're all kind of crazy, right?'"	false
 "Dave cracks his knuckles. 'My wife says I should sell the place so we can move to the tropics. I say, [']What? And leave Swamp Park?[']'"	false
 
+Section 1 - Pawning
+
+selling is an action applying to one thing. Understand "sell [something]" as selling. Understand "pawn [something]" as selling.
+
+Check selling something when the current interlocutor is nothing (this is the implicitly selling rule):
+	repeat with P running through the people in the location:
+		if P is not the player and P is not an animal:
+			silently try saying hello to P;
+	if the current interlocutor is nothing:
+		say "There's no one here to sell to." instead;
+
+Check selling something when the current interlocutor is something:
+	say "[The current interlocutor] isn't interested in that." instead;
+
+Section 2 - Dave appraisal
+
+Instead of quizzing Dave about something when the second noun is carried by the player and the second noun is not the wristwatch:
+	say "Dave looks at the [second noun] and says, ";
+	let roll be a random number from 1 to 6;
+	if roll is 1:
+		say "'Worthless.'";
+	otherwise if roll is 2:
+		say "'Why show me this stuff? I can't buy that.'";
+	otherwise if roll is 3:
+		say "'I don't deal in that.'";
+	otherwise if roll is 4:
+		say "'I'm not interested.'";
+	otherwise if roll is 5:
+		say "'I don't have a market for that.'";
+	otherwise:
+		say "'That's just junk.'";
+
+Instead of showing something to Dave when the noun is carried by the player and the noun is not the wristwatch:
+	say "Dave looks at the [noun] and says, ";
+	let roll be a random number from 1 to 6;
+	if roll is 1:
+		say "'Worthless.'";
+	otherwise if roll is 2:
+		say "'Why show me this stuff? I can't buy that.'";
+	otherwise if roll is 3:
+		say "'I don't deal in that.'";
+	otherwise if roll is 4:
+		say "'I'm not interested.'";
+	otherwise if roll is 5:
+		say "'I don't have a market for that.'";
+	otherwise:
+		say "'That's just junk.'";
+
 Book 3 - Laundromat
 
 Chapter 1 - The Astral Tunnel
@@ -537,6 +585,23 @@ The back basement is south of the laundromat basement. It is in laundromat-regio
 [if the broken washing machine is nowhere]A strange glow emanates from behind some stacks of large crates[otherwise]A old broken-down washing machine peeks out from between two stacks of crates[end if]."
 [ The snarky remark of the back basement is "Strange things are afoot at the Circle K." ]
 
+back basement darkness is a truth state that varies. back basement darkness is false.
+
+After switching off the light switch:
+	now back basement darkness is true;
+	continue the action;
+
+This is the special back basement darkness rule:
+	if the location is the back basement and back basement darkness is true:
+		say "[We] [can] still see a little bit, though, thanks to the glow-in-the-dark light switch on the wall";
+		if the broken washing machine is nowhere:
+			say ". There is also a strange glow emanating from behind some large dark objects.";
+		otherwise:
+			say ". Apart from that, a washing machine is revealed in the darkness by the glow emanating from its drum.";
+		now back basement darkness is false;
+
+The special back basement darkness rule is listed after the adjust light rule in the turn sequence rules.
+
 After printing the description of a dark room when the location is the back basement and in darkness:
 	say line break;
 	say "There is a glow-in-the-dark light switch on the wall here, currently [if the light switch is switched on]on[otherwise]off[end if].";
@@ -562,23 +627,34 @@ After deciding the scope of the player when the location is the back basement an
 
 Before examining the light switch when the location is the back basement and in darkness:
 	say "[description of the light switch][paragraph break]";
-	snark the light switch;
+	[ snark the light switch; ]
 	stop the action;
 
 Before examining the strange glow when the location is the back basement and in darkness:
 	say "[description of the strange glow][paragraph break]";
-	snark the strange glow;
+	[ snark the strange glow; ]
 	stop the action;
 
 Before examining the stacks of crates when the location is the back basement and in darkness:
 	say "[description of the stacks of crates][paragraph break]";
-	snark the stacks of crates;
+	[ snark the stacks of crates; ]
 	stop the action;
 
 Before examining the broken washing machine when the location is the back basement and in darkness:
 	say "[description of the broken washing machine][paragraph break]";
-	snark the broken washing machine;
+	[ snark the broken washing machine; ]
 	stop the action;
+
+Instead of looking behind the stacks of crates:
+	if the broken washing machine is nowhere:
+		if in darkness:
+			say "All [we] [can] see is that a strange glow emanates from behind the objects.";
+		otherwise:
+			say "All [we] [can] see is that a strange glow emanates from behind the crates.";
+	otherwise if in darkness:
+		say "The broken washing machine is revealed in the darkness by the glow emanating from its drum.";
+	otherwise:
+		say "There is a gap between two stacks of crates, revealing a broken-down washing machine.";
 
 [ The can't act in the dark rule does nothing when the location is the back basement. ]
 

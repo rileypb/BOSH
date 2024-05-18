@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 33350 words long.
+I've now read your source text, which is 33509 words long.
 
 
 -----------------------------------------------------
@@ -24,7 +24,7 @@ Phase II ... Semantic analysis Ia
 I've also read Standard Rules by Graham Nelson, which is 41210 words long.
 I've also read English Language by Graham Nelson, which is 2297 words long.
 I've also read Epistemology by Eric Eve, which is 1505 words long.
-I've also read Conversation Framework by Eric Eve, which is 5316 words long.
+I've also read Conversation Framework by Eric Eve, which is 5305 words long.
 I've also read Conversation Responses by Eric Eve, which is 1855 words long.
 I've also read Conversational Defaults by Eric Eve, which is 2247 words long.
 I've also read Basic Screen Effects by Emily Short, which is 2218 words long.
@@ -38,7 +38,7 @@ I've also read Facts by Philip Riley, which is 178 words long.
 I've also read Phones by Philip Riley, which is 1911 words long.
 I've also read Commerce by Philip Riley, which is 160 words long.
 I've also read Furniture by Philip Riley, which is 82 words long.
-I've also read Third Person Narration by Philip Riley, which is 764 words long.
+I've also read Third Person Narration by Philip Riley, which is 765 words long.
 I've also read Door Utils by Philip Riley, which is 44 words long.
 I've also read Real People by Philip Riley, which is 400 words long.
 I've also read Visible Rooms by Philip Riley, which is 164 words long.
@@ -57,7 +57,7 @@ I've also read Scenery Supporters by Philip Riley, which is 179 words long.
 I've also read Simple Conversation by Philip Riley, which is 2362 words long.
 I've also read Hyperspace by Philip Riley, which is 16663 words long.
 I've also read BOSH Facts by Philip Riley, which is 193 words long.
-I've also read Swamp Park by Philip Riley, which is 7356 words long.
+I've also read Swamp Park by Philip Riley, which is 7842 words long.
 I've also read Margaret by Philip Riley, which is 2531 words long.
 I've also read Enigma Lake by Philip Riley, which is 29924 words long.
 I've also read I Can Dig It by Philip Riley, which is 77 words long.
@@ -335,8 +335,8 @@ Providing for a total heap of 65536, given requirement of 45072
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 291 files written as streams.
-CPU time: 1258 centiseconds
+Total of 292 files written as streams.
+CPU time: 1336 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

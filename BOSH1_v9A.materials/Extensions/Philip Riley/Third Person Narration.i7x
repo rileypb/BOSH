@@ -57,7 +57,7 @@ report undoing an action:
 	if in darkness:
 		begin the printing the name of a dark room activity;
 		if handling the printing the name of a dark room activity:
-			say "in the dark";
+			say "in the dark.[paragraph break]";
 		end the printing the name of a dark room activity;
 	otherwise:
 		say "[roman type][the preposition of the location][bold type] [if the location is always-indefinite][a location][otherwise][the location][end if].[paragraph break]";

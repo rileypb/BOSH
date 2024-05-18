@@ -1349,7 +1349,7 @@ Faraji can ask for a screwdriver.
 
 >tell him about phone
 Which do you mean, the ringing phone or the green smartphone?
-
+* eliminate "tell"
 >ringing
 That doesn't seem to be a topic of conversation at the moment.
 
@@ -2191,7 +2191,7 @@ Dave cracks his knuckles. "My wife says I should sell the place so we can move t
 
 >ask him about glasses
 That doesn't seem to be a topic of conversation at the moment.
-
+* Dave will appraise anything you show him as worthless.
 >ne
 (first opening the pawn shop door)
 Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
@@ -2616,7 +2616,7 @@ The crates are stacked high and deep, making it difficult to see what's behind t
 
 >look behind crates
 Faraji looks, but there is nothing behind the stacks of crates.
-
+<<<<<
 >* huh
 Noted.
 
@@ -2792,16 +2792,16 @@ Agent Faraji is in the BOSH chief's office. Chief Klimp's office is full of char
 Chief Klimp sits behind the desk, his feet up.
 
 A phone is ringing to the east.
-
+<<<<<
 >show drive to klimp
 That doesn't seem to be a topic of conversation at the moment.
-
+* answer here
 A phone is ringing to the east.
 
 >show strange to klimp
 (the strange piece of paper to Chief Klimp)
 That doesn't seem to be a topic of conversation at the moment.
-
+* answer here
 A phone is ringing to the east.
 
 >e
