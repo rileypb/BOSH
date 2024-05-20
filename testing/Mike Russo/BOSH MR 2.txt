@@ -220,7 +220,7 @@ Which do you mean, The Book of Utilitarianism, Astral Secrets or Tribes of New Y
 >utilitarianism
 The text is the Book of Utilitarianism. Faraji opens to a page at random and reads:
 
-And the Lord so hated the lizard people that he smote them with a mighty smiting, and he said the cursèd word "postmodernism", and the lizard people screamed and ran away like scared little children.
+And the Lord so hated the lizard people that he smote them with a mighty smiting, and he said the cursï¿½d word "postmodernism", and the lizard people screamed and ran away like scared little children.
 
 >g
 The text is the Book of Utilitarianism. Faraji opens to a page at random and reads:
@@ -259,7 +259,7 @@ Noted.
 >read utilitarianism
 The text is the Book of Utilitarianism. Faraji opens to a page at random and reads:
 
-And the Lord so hated the lizard people that he smote them with a mighty smiting, and he said the cursèd word "postmodernism", and the lizard people screamed and ran away like scared little children.
+And the Lord so hated the lizard people that he smote them with a mighty smiting, and he said the cursï¿½d word "postmodernism", and the lizard people screamed and ran away like scared little children.
 
 >read utilitarianism
 The text is the Book of Utilitarianism. Faraji opens to a page at random and reads:
@@ -284,7 +284,7 @@ The text is the Book of Utilitarianism. Faraji opens to a page at random and rea
 >read utilitarianism
 The text is the Book of Utilitarianism. Faraji opens to a page at random and reads:
 
-And the Lord so hated the lizard people that he smote them with a mighty smiting, and he said the cursèd word "postmodernism", and the lizard people screamed and ran away like scared little children.
+And the Lord so hated the lizard people that he smote them with a mighty smiting, and he said the cursï¿½d word "postmodernism", and the lizard people screamed and ran away like scared little children.
 
 >read utilitarianism
 The text is the Book of Utilitarianism. Faraji opens to a page at random and reads:
@@ -314,7 +314,7 @@ The text is the Book of Utilitarianism. Faraji opens to a page at random and rea
 >read utilitarianism
 The text is the Book of Utilitarianism. Faraji opens to a page at random and reads:
 
-And the Lord so hated the lizard people that he smote them with a mighty smiting, and he said the cursèd word "postmodernism", and the lizard people screamed and ran away like scared little children.
+And the Lord so hated the lizard people that he smote them with a mighty smiting, and he said the cursï¿½d word "postmodernism", and the lizard people screamed and ran away like scared little children.
 
 >u
 Agent Faraji is in the First Utilitarian Church of Enigma Lake. The interior is dimly lit by the stained glass windows, and the pews are arranged in neat rows facing the pulpit. A standard electrical outlet is set into the wall. To the east is the vestry. You can also take a ladder up to the steeple, or stairs down to the basement. The exit is to the west.
@@ -356,7 +356,7 @@ Faraji is carrying:
 
 >* seems kinda weird, shouldn't I just have been holding the lamp?
 Noted.
-
+<<<<< 
 >s
 Agent Faraji is walking on Lake Street by the gym. Lake Street runs north and south from here. To the east is the public gymnasium, while to the west is the town hall, which is not enterable from here.
 
@@ -516,7 +516,7 @@ That can't contain things.
 
 >x aerial
 A large, metallic rooftop antenna, characterized by its array of horizontal and vertical rods designed to capture VHF (very high frequency) broadcasts. Strangely, someone has mounted a threaded socket, like that of a light bulb, on one of the rods. A pair of insulated wires runs from the antenna and through a hole in the roof.
-
+* show resonator in aerial
 >x resonator
 A small, rusty, metallic, cylindrical object. One end is capped with a lens, while the other terminates in a threaded base, like a light bulb.
 
@@ -746,7 +746,7 @@ The small hole is very small, a few centimeters in diameter.
 
 >x medium hole
 The medium hole is about two inches in diameter.
-
+<<<<<
 >* I'm having a hard time visualizing this (and knowing which hole is still open?)
 Noted.
 

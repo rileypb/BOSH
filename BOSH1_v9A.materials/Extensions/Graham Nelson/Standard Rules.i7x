@@ -4624,7 +4624,7 @@ Understand the command "sniff" as "smell".
 Understand "touch [something]" as touching.
 Understand the command "feel" as "touch".
 
-Understand "rub [something]" as rubbing.
+[ Understand "rub [something]" as rubbing. ]
 [Understand the commands "shine", "polish", "sweep", "clean", "dust", "wipe" and "scrub" as "rub".]
 
 Understand "tie [something] to [something]" as tying it to.

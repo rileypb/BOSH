@@ -1004,7 +1004,7 @@ The verses are {
 	"And the Lord was attending his weekly reading circle, when he had an idea. 'I shall make a world,' he said, 'and I shall call it Earth.' And the lizard people said, 'That's a terrible name.'",
 	"And lo, the lizard people rebelled against the Lord, and the Lord said, 'I'm not going to put up with that.'",
 	"And in the town of Gabblehouse was born an infant to a woman named Gorma, and the Lord said, 'That's a terrible name.'",
-	"And the Lord said, 'I shall rain down upon thee with great vengeance and furious anger, and the lizard people said, 'We've heard that before.'"}.
+	"And the Lord said, 'I shall rain down upon thee with great vengeance and furious anger,' and the lizard people said, 'We've heard that before.'"}.
 
 The cursed countdown is a number that varies. The cursed countdown is 0.
 
@@ -1025,7 +1025,7 @@ Instead of examining the Book of Utilitarianism when the doll-fly is not in the 
 		let the verse be entry 1 of the verses;
 		remove the verse from the verses;
 		add the verse to the verses;
-		say "[PREAMBLE] [the verse][paragraph break]";
+		say "[PREAMBLE][the verse][paragraph break]";
 		decrement the cursed countdown;
 
 Book 16.5 - The Doll-Fly
@@ -2487,13 +2487,14 @@ Check untying:
 
 Book 34 - Henry's Roof
 
-Henry's Roof is above Henry's Hot Skillet. It is in ELR. It is outdoors. The description is "From here one can see much of the town, including a clear view of the obelisk in Enigma Park. There is a large TV aerial jutting from the roof here." The preposition is "on".
+Henry's Roof is above Henry's Hot Skillet. It is in ELR. It is outdoors. The description is "From here one can see much of the town, including a clear view of the obelisk in Enigma Park. There is a large TV aerial jutting from the roof here[if the rusty astral resonator is in the threaded socket]. A [rusty astral resonator] is screwed into a threaded socket on the antenna[end if]."
+The preposition is "on".
 
 [ The snarky remark of Henry's Roof is "Enigma Lake is truly... well, there." ]
 
 The x-coordinate of Henry's Roof is -1. The y-coordinate of Henry's Roof is -2.
 
-The TV aerial antenna is scenery in Henry's Roof. "A large, metallic rooftop antenna, characterized by its array of horizontal and vertical rods designed to capture VHF (very high frequency) broadcasts. Strangely, someone has mounted a threaded socket, like that of a light bulb, on one of the rods. A pair of insulated wires runs from the antenna and through a hole in the roof."
+The TV aerial antenna is scenery in Henry's Roof. "A large, metallic rooftop antenna, characterized by its array of horizontal and vertical rods designed to capture VHF (very high frequency) broadcasts. Strangely, someone has mounted a threaded socket, like that of a light bulb, on one of the rods. [if the rusty astral resonator is in the threaded socket][A rusty astral resonator] is screwed into it. [end if]A pair of insulated wires runs from the antenna and through a hole in the roof."
 [ The snarky remark of the TV aerial antenna is "I bet you kids don't even know what this is." ]
 
 The insulated wires are part of the TV aerial antenna. The description is "A pair of insulated wires, running from the antenna and through a hole in the roof." They are plural-named. Understand "wire" as the insulated wires.
@@ -2597,14 +2598,14 @@ Understand "screw [the rusty astral resonator] in/into [the table lamp]", "mount
 
 The standard socket is a single item container. It is part of the table lamp. The description is "A standard socket for a light bulb." 
 
+Instead of inserting something into the table lamp:
+	try inserting the noun into the standard socket instead;
+
 The red enameled base is part of the table lamp. The description is "A red enameled base, scuffed and tarnished."
 The short power cord is part of the table lamp. The description is "A power cord, a little the worse for wear, but still functional."
 
 Instead of inserting the rusty astral resonator into the standard socket:
 	say "The rusty astral resonator doesn't fit in the table lamp."
-
-Check inserting the light bulb into the lamp:
-	try inserting the light bulb into the standard socket instead;
 
 Check inserting something into the standard socket:
 	if the noun is not the light bulb:
@@ -2653,6 +2654,9 @@ After switching on the table lamp:
 		say "Faraji flips the switch on the table lamp. The bulb remains dark.";
 	otherwise:
 		continue the action;
+
+After taking the light bulb when the light bulb was in the standard socket:
+	say "Faraji unscrews the light bulb from the table lamp.";
 
 
 The gleaming floor is scenery in Rolle's Department Store. "Someone has polished it spotless, despite the looming destruction of the store. That's dedication."
@@ -3183,6 +3187,7 @@ Enigma-Lake-subject	group of lizard people	"'What are you doing here?' asks Fara
 senator-savra-subject	group of lizard people	"'What do you know about Senator Savra?' asks Faraji."	"'Savra, our great leader, will have the Dragon,' hisses the lizard person."
 Dragon-subject	group of lizard people	"'Who is the Dragon?' asks Faraji."	"'The Dragon, the greatest of all, corrupted by the surface vermin,' hisses the lizard person."
 strange shiny metal object	group of lizard people	"'What is that shiny object?' asks Faraji."	"'It is ours,' hisses the lizard person. 'You will not have it.'"
+Larch Faraji	group of lizard people	"'What do you want with me?' asks Faraji."	"'We want nothing with you,' hisses the lizard person. 'You are nothing to us.'"
 
 Volume 4.75 - Building the Makeshift Astral Resonator
 
@@ -3211,19 +3216,27 @@ After inserting the tuning fork into the wooden frame:
 	if the number of things contained by the wooden frame is 3:
 		make the makeshift astral resonator;
 
+The Special Frame Room is a room.
+
 To make the makeshift astral resonator:
 	if the player encloses the wooden frame:
 		now the player carries the makeshift astral resonator;
 	otherwise:
 		now the makeshift astral resonator is in the location;
-	now the wooden frame is nowhere;
+	now the wooden frame is in the special frame room;
 	say line break;
 	say "Faraji uses the leather straps to secure the contents of the frame. Suddenly, the frame and the objects within it glow with a bright light. Faraji is momentarily blinded. When they can see again, the frame and its contents have fused into a [makeshift astral resonator].";
 
 Check inserting something into the wooden frame:
+	if the wooden frame is in the special frame room:
+		say "The wooden frame is gone!" instead;
+	if the player does not enclose the wooden frame:
+		say "Faraji needs to be holding the wooden frame to insert anything into it." instead;
 	if the noun is not the astral lenses and the noun is not the table lamp and the noun is not the tuning fork:
 		say "That doesn't fit into the wooden frame." instead;
 
+Rule for reaching inside the special frame room:
+	allow access;
 
 Volume 5 - Polish
 

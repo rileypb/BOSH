@@ -55,13 +55,13 @@ Rule for writing a paragraph about the extension cord:
 
 Rule for writing a paragraph about plug-end:	
 	if the plug-end is in the location:
-		say "An extension cord lies on the [if the location is indoors]floor[otherwise]ground[end if]";
+		say "The plug end of an extension cord lies on the [if the location is indoors]floor[otherwise]ground[end if]";
 	otherwise:
 		let holder be the holder of the plug-end;
 		if holder is a supporter:
-			say "An extension cord lies on [the holder of the extension cord]";
+			say "The plug end of an extension cord lies on [the holder of the extension cord]";
 		otherwise:
-			say "An extension cord is in [the holder of the extension cord]";
+			say "The plug end of an extension cord is in [the holder of the extension cord]";
 	if something (called the socket) accepts the plug-end:
 		say ", one end plugged into [the socket]";
 		let holder be the holder of the plug-end;
@@ -107,13 +107,13 @@ To say trailing text from (A - a room) to (B - a room):
 
 Rule for writing a paragraph about socket-end:
 	if the socket-end is in the location:
-		say "An extension cord lies on the [if the location is indoors]floor[otherwise]ground[end if]";
+		say "The socket end of an extension cord lies on the [if the location is indoors]floor[otherwise]ground[end if]";
 	otherwise:
 		let holder be the holder of the socket-end;
 		if holder is a supporter:
-			say "An extension cord lies on [the holder of the extension cord]";
+			say "The socket end of an extension cord lies on [the holder of the extension cord]";
 		otherwise:
-			say "An extension cord is in [the holder of the extension cord]";
+			say "The socket end of an extension cord is in [the holder of the extension cord]";
 	if something (called the plug) is plugged into the socket-end:
 		say ", [the plug] plugged into one end";
 		let holder be the holder of the socket-end;
@@ -262,8 +262,12 @@ Instead of inserting the extension cord into something:
 	maybe separate the extension cord;
 	if the player carries the plug-end:
 		silently try inserting the plug-end into the second noun;
+		if the plug-end is not in the second noun:
+			stop the action;
 	if the player carries the socket-end:
 		silently try inserting the socket-end into the second noun;
+		if the socket-end is not in the second noun:
+			stop the action;
 	maybe condense the extension cord;
 	puts "[text of standard report inserting rule response (A)][line break]";
 
@@ -276,6 +280,12 @@ Instead of mounting the extension cord on something:
 After dropping something when the noun accepts the extension cord and the noun is not the extension cord:
 	separate the extension cord;
 	now the plug-end is in the location;
+	maybe condense the extension cord;
+	continue the action;
+
+After dropping something when the noun is plugged into the extension cord and the noun is not the extension cord:
+	separate the extension cord;
+	now the socket-end is in the location;
 	maybe condense the extension cord;
 	continue the action;
 
@@ -329,6 +339,7 @@ After mounting something on something when the noun accepts the plug-end:
 After dropping the plug-end:
 	if something (called the socket) accepts the plug-end:
 		if the socket is not the socket-end:
+			say "(also dropping [the socket])[command clarification break]";
 			now the socket is in the location;
 			maybe condense the extension cord;
 	continue the action;
@@ -527,6 +538,7 @@ After mounting something on something when the noun is plugged into the socket-e
 After dropping the socket-end:
 	if something (called the plug) is plugged into the socket-end:
 		if the plug is not the plug-end:
+			say "(also dropping [the plug])[command clarification break]";
 			now the plug is in the location;
 			maybe condense the extension cord;
 	continue the action;

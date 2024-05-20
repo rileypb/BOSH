@@ -1,5 +1,7 @@
 Improved Pushing by Philip Riley begins here.
 
+Use authorial modesty.
+
 The thing pushed is an object that varies.
 
 Before reading a command:

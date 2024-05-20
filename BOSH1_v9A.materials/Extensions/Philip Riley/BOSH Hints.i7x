@@ -532,7 +532,7 @@ Activating the hint-bible:
 
 The hint-lizard-people is a hint topic. Understand "lizard/people" as the hint-lizard-people. The printed name is "lizard people". 
 
-The hint-lizard-people-second is an unlisted progressive hint topic. The progression is {"Annoying, aren't they?", "Faraji should probably try staying away from them.", "But that's not always possible.", "And what's the significance of the shiny object they're carrying?", "How can Faraji get it?", "Faraji should try talking to them.", "No, that doesn't work."}. 
+The hint-lizard-people-second is an unlisted progressive hint topic. The progression is {"Annoying, aren't they?", "Faraji should probably try staying away from them.", "But that's not always possible.", "And what's the significance of the shiny object they're carrying?", "How can Faraji get it?", "Faraji should try talking to them.", "No, that doesn't work.", "You need to wait for something else to happen."}. 
 
 The hint-lizard-people-third is an unlisted progressive hint topic. The progression is {"Has Faraji read anything about the lizard people?", "Faraji should read the Book of Utilitarianism.", "Read until you find the passage about the cursèd word.", "The cursèd word is '[cursed word] '", "Faraji should try saying the cursèd word to the group of lizard people.", "SAY [cursed word]"}.
 

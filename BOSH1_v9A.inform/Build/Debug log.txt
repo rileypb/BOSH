@@ -21,7 +21,7 @@ I've now read your source text, which is 33524 words long.
 Phase II ... Semantic analysis Ia
 -----------------------------------------------------
 
-I've also read Standard Rules by Graham Nelson, which is 41210 words long.
+I've also read Standard Rules by Graham Nelson, which is 41205 words long.
 I've also read English Language by Graham Nelson, which is 2297 words long.
 I've also read Epistemology by Eric Eve, which is 1505 words long.
 I've also read Conversation Framework by Eric Eve, which is 5305 words long.
@@ -59,15 +59,15 @@ I've also read Hyperspace by Philip Riley, which is 16747 words long.
 I've also read BOSH Facts by Philip Riley, which is 193 words long.
 I've also read Swamp Park by Philip Riley, which is 8028 words long.
 I've also read Margaret by Philip Riley, which is 2531 words long.
-I've also read Enigma Lake by Philip Riley, which is 30265 words long.
+I've also read Enigma Lake by Philip Riley, which is 30418 words long.
 I've also read I Can Dig It by Philip Riley, which is 77 words long.
 I've also read BOSH Help by Philip Riley, which is 6496 words long.
 I've also read Overlook by Philip Riley, which is 763 words long.
 I've also read Gender Options by Nathanael Nerode, which is 7679 words long.
 I've also read Make Test by Philip Riley, which is 288 words long.
-I've also read BOSH Hints by Philip Riley, which is 7844 words long.
+I've also read BOSH Hints by Philip Riley, which is 7853 words long.
 I've also read Hearing by Philip Riley, which is 1254 words long.
-I've also read Improved Pushing by Philip Riley, which is 43 words long.
+I've also read Improved Pushing by Philip Riley, which is 46 words long.
 I've also read PBR Common by Philip Riley, which is 109 words long.
 I've also read Walls by Philip Riley, which is 905 words long.
 I've also read Floors by Philip Riley, which is 913 words long.
@@ -85,9 +85,9 @@ I've also read Secret Doors by Gavin Lambert, which is 272 words long.
 I've also read Plugging by Philip Riley, which is 791 words long.
 I've also read Books by Philip Riley, which is 2480 words long.
 I've also read Container Types by Philip Riley, which is 55 words long.
-I've also read Extension Cord by Philip Riley, which is 3337 words long.
+I've also read Extension Cord by Philip Riley, which is 3438 words long.
 I've also read State Update by Philip Riley, which is 452 words long.
-I've also read Hints by Philip Riley, which is 888 words long.
+I've also read Hints by Philip Riley, which is 849 words long.
 I've also read Two-Sided Doors by Philip Riley, which is 2270 words long.
 
 
@@ -153,7 +153,7 @@ Regional: CONSTANT_VNT'elr'-region(I546_elr)(I436'elr')
  == region
 Regional: CONSTANT_VNT'elr'-region(I546_elr)(I436'elr')
  == region
-Regional: CONSTANT_VNT'help area'-region(I807_help_area)(I695'help area')
+Regional: CONSTANT_VNT'help area'-region(I808_help_area)(I696'help area')
  == region
 Regional: CONSTANT_VNT'elr'-region(I546_elr)(I436'elr')
  == region
@@ -161,7 +161,7 @@ Regional: CONSTANT_VNT'elr'-region(I546_elr)(I436'elr')
  == region
 Regional: CONSTANT_VNT'elr'-region(I546_elr)(I436'elr')
  == region
-Regional: CONSTANT_VNT'help area'-region(I807_help_area)(I695'help area')
+Regional: CONSTANT_VNT'help area'-region(I808_help_area)(I696'help area')
  == region
 
 
@@ -295,9 +295,9 @@ Regional: CONSTANT_VNT'elr'-region(I546_elr)(I436'elr')
              == region
             Regional: CONSTANT_VNT'elr'-region(I546_elr)(I436'elr')
              == region
-            Regional: CONSTANT_VNT'help area'-region(I807_help_area)(I695'help area')
+            Regional: CONSTANT_VNT'help area'-region(I808_help_area)(I696'help area')
              == region
-            Regional: CONSTANT_VNT'help area'-region(I807_help_area)(I695'help area')
+            Regional: CONSTANT_VNT'help area'-region(I808_help_area)(I696'help area')
              == region
 
 
@@ -338,8 +338,8 @@ Providing for a total heap of 65536, given requirement of 45584
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 293 files written as streams.
-CPU time: 1214 centiseconds
+Total of 292 files written as streams.
+CPU time: 1295 centiseconds
 
 
 That concludes the debugging log from this run of Inform.
