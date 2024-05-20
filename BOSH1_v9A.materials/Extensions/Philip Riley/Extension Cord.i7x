@@ -1,6 +1,7 @@
 Extension Cord by Philip Riley begins here.
 
 Include Plugging by Philip Riley.
+Include State Update by Philip Riley.
 
 Use authorial modesty.
 
@@ -575,6 +576,22 @@ After plugging something into the socket-end:
 		condense the extension cord;
 		set pronouns from the extension cord;
 	continue the action; ]
+
+Book - Updating state
+
+For device updating the extension cord:
+	if something (called the plug) is plugged into the socket-end:
+		if the plug is not the plug-end:
+			carry out the device updating activity with the plug;
+	if something (called the plug) is plugged into the extension cord:
+		if the plug is not the plug-end:
+			carry out the device updating activity with the plug;
+
+For device updating the plug-end:
+	if something (called the plug) is plugged into the socket-end:
+		if the plug is not the plug-end:
+			carry out the device updating activity with the plug;
+
 
 Book - Movement Restrictions
 

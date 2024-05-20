@@ -149,20 +149,20 @@ They are obstructed.
 
 [ The snarky remark of the washing-machines is "I'm sure they're all in perfect working order." ]
 	
-The laundromat door is a closed, back-locked, and front-locked scenery shop-door. It is privately-named. The printed name is "laundromat door". Understand "laundromat/-- door" as the laundromat door. It is northwest of the parking lot south and southeast of the laundromat-store. The front description is "It's a typical glass door. Taped to it is a sign that says 'Closed for renovations'." The frontside is the strip mall parking lot south. The back description is "It's a typical glass door." 
-The laundromat door is indescribable.
+The laundromat front door is a closed, back-locked, and front-locked scenery shop-door. It is privately-named. The printed name is "laundromat front door". Understand "laundromat/-- front/-- door" as the laundromat front door. It is northwest of the parking lot south and southeast of the laundromat-store. The front description is "It's a typical glass door. Taped to it is a sign that says 'Closed for renovations'." The frontside is the strip mall parking lot south. The back description is "It's a typical glass door." 
+The laundromat front door is indescribable.
 
-[ The snarky remark of the laundromat door is "The gateway to paradise, either way you go through it." ]
+[ The snarky remark of the laundromat front door is "The gateway to paradise, either way you go through it." ]
 	
-Check going northwest from the strip mall parking lot south when the player does not know break-in-to-laundromat and the laundromat door is front-locked and the laundromat door is back-locked: 
+Check going northwest from the strip mall parking lot south when the player does not know break-in-to-laundromat and the laundromat front door is front-locked and the laundromat front door is back-locked: 
 	now the player knows laundromat-front-door-is-locked;
-	say "A sign on the laundromat door says 'Closed for renovations'." instead;
+	say "A sign on the laundromat front door says 'Closed for renovations'." instead;
 	
-Check going northwest from the strip mall parking lot south when the player knows break-in-to-laundromat and the laundromat door is front-locked and the laundromat door is back-locked: 
+Check going northwest from the strip mall parking lot south when the player knows break-in-to-laundromat and the laundromat front door is front-locked and the laundromat front door is back-locked: 
 	now the player knows laundromat-front-door-is-locked;
-	say "Predictably, the laundromat door is locked." instead;
+	say "Predictably, the laundromat front door is locked." instead;
 
-Before opening the laundromat door when the laundromat door is front-locked:
+Before opening the laundromat front door when the laundromat front door is front-locked:
 	now the player knows laundromat-front-door-is-locked;
 	
 The swamp-facade is a privately-named unenterable room in Parking Lot South. The printed name is "swamp". Understand "swamp/swampy/area/marsh/water/wetland/wet/land" as the swamp-facade. "Swamp Park is, as one might expect, dotted with these little bits of wetland."
@@ -518,8 +518,14 @@ The opening_ is scenery in the laundromat-store. "The opening leads west to the 
 It is unsnarkable.
 
 The handtruck is in the laundromat-store. It is pushable between rooms.
-Understand "hand/truck/trolley/dolly/stack/trundler", "box cart", "sack barrow", "cart", "sack truck", "two wheeler", "bag barrow" as the handtruck. The description is "A handtruck sits in the corner, ready to be used."
+Understand "hand/truck/trolley/dolly/stack/trundler", "box cart", "sack barrow", "cart", "sack truck", "two wheeler", "bag barrow" as the handtruck. The description is "It's a handtruck, two wheels and a platform, used for moving heavy things."
 [ The snarky remark of the handtruck is "But can it carry the weight that burdens my soul?" ]
+
+Instead of inserting something into the handtruck:
+	say "[We] [can] PUSH the handtruck around, or MOVE a thing WITH the handtruck, but [we] can't put things into or onto it.";
+
+Instead of putting something on the handtruck:
+	say "[We] [can] PUSH the handtruck around, or MOVE a thing WITH the handtruck, but [we] can't put things into or onto it."; 
 
 Instead of taking the handtruck:
 	say "The handtruck is a bit unwieldy to carry. Better push it instead.";
@@ -530,6 +536,12 @@ Instead of pushing the handtruck to down when the location is the laundromat bac
 
 Instead of pushing the handtruck to up when the location is the laundromat basement:
 	say "The stairs are much too steep to maneuver the handtruck up them.";
+
+Instead of pushing the handtruck:
+	say "Try pushing it to a direction: PUSH HANDTRUCK WEST, for example.";
+
+Report going to somewhere with the handtruck:
+	say "[We] [push] the handtruck along with [us].";
 
 The laundromat back room is west of the laundromat-store. It is in laundromat-region.
 It is forth of astral-tunnel-2.
@@ -548,7 +560,8 @@ The laundromat-papers is scenery in the laundromat back room. It is privately-na
 
 The large key is a key in the laundromat desk's drawer. The description is "It's a large key, probably for a door."
 
-The laundromat door has matching key the large key.
+The laundromat front door has matching key the large key.
+The laundromat back door has matching key the large key.
 
 The strange piece of paper is a thing. The description is "The paper is covered with strange sketches and diagrams. In one corner is scrawled the cryptic phrase 'Save the Dragon'." Understand "sketch/sketches/and/diagram/diagrams" as the strange piece of paper.
 [ The snarky remark of the strange piece of paper is "Dragon? What dragon? Must be laundromat slang." ]
@@ -674,6 +687,15 @@ moving it with is an action applying to two things. Understand "move [something]
 Some stacks of crates are scenery in the back basement. They are privately-named. Understand "stack/stacks/of/crates/crate/box/boxes" as stacks of crates when not in darkness.
 The printed name is "[if in darkness]dark objects[otherwise]stacks of crates[end if]".
 [ The snarky remark of the stacks of crates is "[if the broken washing machine is nowhere]C'mon, you're blocking the view[otherwise]Ha, ha, thought you could keep me from seeing that, did you[end if]." ]
+
+Instead of climbing up the stacks of crates:
+	say "[We] [are] notoriously afraid of heights. [We] [don't] think [we] [can] do it.";
+
+Instead of opening the stacks of crates:
+	say "The crates are nailed shut.";
+
+Instead of searching the stacks of crates:
+	say "The crates are nailed shut.";
 
 To say crates description:
 	if in darkness:

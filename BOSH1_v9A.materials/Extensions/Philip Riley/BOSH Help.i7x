@@ -431,6 +431,10 @@ Great-aunt Gertrude is a subject. Understand "great-aunt/gertrude/great/aunt" as
 living-room-subject is a subject. It is privately-named. The printed name is "living room". Understand "living/room" as living-room-subject.
 help-subject is a subject. It is privately-named. The printed name is "help". Understand "help" as help-subject.
 Bureau-of-Special-Help-subject is a subject. It is privately-named. The printed name is "Bureau of Special Help". Understand "bureau/special/help" as Bureau-of-Special-Help-subject.
+
+Does the player mean quizzing someone about Bureau-of-Special-Help-subject when the location is not in Help Area:
+	it is very unlikely.
+
 Interactive-Fiction is a subject. It is privately-named. Understand "interactive/fiction" as Interactive-Fiction. The printed name is "Interactive Fiction".
 parser-based-games is a subject. It is privately-named. Understand "parser-based/games/parser/based" as parser-based-games. The printed name is "parser-based games".
 

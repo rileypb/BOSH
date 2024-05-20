@@ -258,7 +258,7 @@ The work schedule is scenery in the Enigma Lake town hall.
 +--------------------------------+".
 [ The snarky remark of the work schedule is "What? I don't get any hours this week?" ]
 
-After examining the work schedule:
+After examining the work schedule when the backpack is nowhere:
 	say "Faraji notices something behind the desk.";
 
 The building is scenery in the Enigma Lake town hall.
@@ -1219,6 +1219,18 @@ The x-coordinate of the vestry is 3. The y-coordinate of the vestry is 1.
 The tapestry is scenery in the vestry. "An intricate tapestry, depicting a scene of a medieval village. It's a bit out of place in a church, but it's lovely." The tapestry can be pushed aside. Understand "wall hanging", "wallhanging" as the tapestry.
 [ The snarky remark of the tapestry is "I would prefer a velvet Elvis." ]
 
+Instead of pushing the circuit breaker:
+	if the circuit breaker is switched off:
+		try switching on the circuit breaker;
+	otherwise:
+		try switching off the circuit breaker;
+
+Instead of pulling the circuit breaker:
+	if the circuit breaker is switched off:
+		try switching on the circuit breaker;
+	otherwise:
+		try switching off the circuit breaker;
+
 Instead of pushing the tapestry when the tapestry is not pushed aside:
 	say "[We] [push] the tapestry aside, revealing a circuit breaker switch mounted on the wall.";
 	now the tapestry is pushed aside;
@@ -1236,6 +1248,11 @@ The circuit breaker is a scenery device. "A single circuit breaker switch is mou
 Book 17.5 - The church basement
 
 The church basement is below the First Utilitarian Church of Enigma Lake. It is in ELR. It is indoors. It is dark. "The basement is a shock to behold after the simple church above. It's a large, open space, with walls painted with scenes of humans and lizard people in battle, with aliens and platypuses looking on in horror. There is an ornate altar at the far end of the room. The exit is up."
+
+The paintings are scenery in the church basement. "The walls are painted with scenes of humans and lizard people in battle, with aliens and platypuses looking on in horror." Understand "painting", "mural", "murals", "humans/human/lizard/people/person/aliens/alien/platypuses/platypus" as paintings.
+
+Does the player mean examining the Book of Utilitarianism when the location is the church basement:
+	it is very likely.
 
 The church basement can be witnessed in darkness.
 
@@ -1505,7 +1522,10 @@ The brass key is a key. It is in the glove compartment. The description is "A si
 The truck hood is a part of the abandoned pickup truck. It is a closed openable container. The description is "The hood is slightly crumpled, as if it has been in a minor accident. It is [if the hood is open]open[otherwise]closed[end if]." Understand "bonnet" as the truck hood. 
 It is unsnarkable.
 
-Instead of doing something to something when the action requires a touchable noun and the noun is not inside the abandoned pickup truck and the player is in the abandoned pickup truck:
+Instead of doing something to something when the action requires a touchable noun and the noun is not enclosed by the abandoned pickup truck and the player is in the abandoned pickup truck:
+	say "Faraji can't do that from here.";
+
+Instead of doing something to the something when the action requires a touchable noun and the noun is enclosed by the abandoned pickup truck and the player is not in the abandoned pickup truck:
 	say "Faraji can't do that from here.";
 
 The hood contains a dirty car battery. 
@@ -1552,6 +1572,12 @@ It is unsnarkable.
 
 The tailgate is part of the abandoned pickup truck. It is an open, openable container. The description is "The tailgate is[if the truck bed is open] down[otherwise] up[end if]." Understand "tail/gate" as the tailgate. 
 It is unsnarkable.
+
+After doing something to the tailgate when the bolt cutters are in the truck bed:
+	if the tailgate is open:
+		say "Faraji lowers the tailgate. They notice a pair of bolt cutters in the truck bed.";
+	otherwise:
+		say "Faraji raises the tailgate and sees a pair of bolt cutters in the truck bed.";
 
 The pair of bolt cutters are in the truck bed. The description is "A pair of bolt cutters, with long handles and heavy jaws." They are ambiguously plural. 
 [ The snarky remark of the bolt cutters is "Now, kids, watch your fingers." ]
@@ -2016,14 +2042,14 @@ The x-coordinate of the Horton graveyard is -3. The y-coordinate of the Horton g
 The shovel is in the Horton graveyard. "A shovel lies on the ground, forgotten." The description is "A simple shovel, with a wooden handle and a metal blade." Understand "simple/wooden/spade" as the shovel.
 [ The snarky remark of the shovel is "How interesting. I hope I'll need to dig something up." ]
 
-Some neatly-dug holes are scenery in the Horton graveyard. "The graveyard is riddled with holes where the bodies have been exhumed for the coming flood. One of the holes is substantially larger and deeper than the others." Understand "hole" as neatly-dug holes.
+Some neatly-dug holes are scenery in the Horton graveyard. "The graveyard is riddled with holes where the bodies have been exhumed for the coming flood. One of the holes is substantially larger and deeper than the others." 
 [ The snarky remark of the neatly-dug holes is "'Hole' is a great word, don't you think?" ]
 
 Instead of entering the neatly-dug holes:
 	say "(the large hole)[command clarification break]";
 	try entering the large dirt hole;
 
-The large dirt hole is a building facade. It is in Horton Graveyard. It is privately-named. Understand "large/larger/deep/deeper hole" as large dirt hole. "The hole is substantially larger and deeper than the others[if the metal ladder is in the large grave]. A ladder is set up against the side of the hole[end if]."
+The large dirt hole is a building facade. It is in Horton Graveyard. It is privately-named. Understand "large/larger/deep/deeper hole", "hole" as large dirt hole. "The hole is substantially larger and deeper than the others[if the metal ladder is in the large grave]. A ladder is set up against the side of the hole[end if]."
 	It fronts a large grave.
 	It is enterable from Horton Graveyard.
 [ The snarky remark of the large dirt hole is "[if the large grave is not visited]Just the thing to jump into without regard for personal safety[otherwise]Ah, not such a big deal.[end if]" ]
@@ -2073,15 +2099,15 @@ The x-coordinate of the large grave is -3. The y-coordinate of the large grave i
 
 Above the large grave is the Horton graveyard.
 
-After going to the large grave when the shiny astral resonator is nowhere and the player encloses the dowsing rod:
+After going to the large grave when the wooden frame is nowhere and the player encloses the dowsing rod:
 	say "Something [we] [are] carrying starts to vibrate.";
 	continue the action;
 
-After going from the large grave when the shiny astral resonator is nowhere and the player encloses the dowsing rod:
+After going from the large grave when the wooden frame is nowhere and the player encloses the dowsing rod:
 	say "The vibrations cease.";
 	continue the action;
 
-Instead of examining the dowsing rod when the location is the large grave and the shiny astral resonator is nowhere and the player encloses the dowsing rod:
+Instead of examining the dowsing rod when the location is the large grave and the wooden frame is nowhere and the player encloses the dowsing rod:
 	say "The dowsing rod is vibrating.";
 
 Digging is an action applying to nothing. Understand "dig" as digging.
@@ -2092,17 +2118,17 @@ Check digging when the player does not enclose the shovel:
 Check digging when the location is not the large grave and the location is diggable and the player encloses the shovel:
 	say "[We] [try] digging a little bit, but nothing turns up." instead;
 
-Check digging when the location is the large grave and the player encloses the shovel and the shiny astral resonator is not nowhere:
+Check digging when the location is the large grave and the player encloses the shovel and the wooden frame is not nowhere:
 	say "[We] [try] digging a little bit more, but nothing else turns up." instead;
 
 Check digging when the location is not diggable and the player encloses the shovel:
 	say "The ground here is not suitable for digging." instead;
 
-Carry out digging when the location is the large grave and the player encloses the shovel and the shiny astral resonator is nowhere:
-	now the player carries the shiny astral resonator;
+Carry out digging when the location is the large grave and the player encloses the shovel and the wooden frame is nowhere:
+	now the player carries the wooden frame;
 
-Report digging when the location is the large grave and the player encloses the shovel and the shiny astral resonator was nowhere:
-	say "[We] [dig] a little bit, and [run] into something metallic. [We] [dig] a little more, and [find] [a shiny astral resonator]. [We] [take] it with [us][if the player encloses the dowsing rod]. The vibrations cease[end if].";
+Report digging when the location is the large grave and the player encloses the shovel and the wooden frame was nowhere:
+	say "[We] [dig] a little bit, and [run] into something wooden. [We] [dig] a little more, and [find] [a wooden frame]. [We] [take] it with [us][if the player encloses the dowsing rod]. The vibrations cease[end if].";
 
 Horton-back-facade is a building facade. It is in Horton Graveyard. It is privately-named. The printed name is "Horton Family House". Understand "Horton/House/Home" as Horton-back-facade. "Horton House is an old colonial-period house. [We] [are] in its backyard." 
 	Horton-back-facade fronts Horton Family House Kitchen.
@@ -2554,12 +2580,12 @@ The description is "Once, town department stores like this were a constant of Am
 
 The x-coordinate of Rolle's Department Store is 0. The y-coordinate of Rolle's Department Store is -2.
 
-The table lamp is a device in Rolle's Department Store. It is privately-named. "A scuffed-up table lamp sits discarded in a corner." The description is "A table lamp, with a brass base and missing a shade. It's meant to plug into an outlet. It looks like it's seen better days. On the base is the branding 'Spectre'[if the table lamp is lit]. It is lit[otherwise]. It is dark[end if]." 
+The table lamp is a device in Rolle's Department Store. It is privately-named. "A scuffed-up table lamp sits discarded in a corner." The description is "A table lamp, with a red enameled base and missing a shade. It's meant to plug into an outlet. It looks like it's seen better days. On the base is the branding 'Spectre'[if the table lamp is lit]. It is lit[otherwise]. It is dark[end if]." 
 It is pluggable. 
 Understand "table/-- lamp" as the table lamp. The printed name is "table lamp".
 
 Instead of examining the table lamp:
-	say "An ordinary table lamp, with a brass base";
+	say "An ordinary table lamp, with a red enameled base";
 	if the bulb is not in the standard socket:
 		say ", no bulb, and no shade";
 	otherwise:
@@ -2583,7 +2609,7 @@ Understand "screw [the rusty astral resonator] in/into [the table lamp]", "mount
 
 The standard socket is a single item container. It is part of the table lamp. The description is "A standard socket for a light bulb." 
 
-The brass base is part of the table lamp. The description is "A brass base, scuffed and tarnished."
+The red enameled base is part of the table lamp. The description is "A red enameled base, scuffed and tarnished."
 The short power cord is part of the table lamp. The description is "A power cord, a little the worse for wear, but still functional."
 
 Instead of inserting the rusty astral resonator into the standard socket:
@@ -2634,6 +2660,13 @@ Description notes for the table lamp:
 	otherwise:
 		add "missing a bulb" to descriptive notes;
 
+After switching on the table lamp:
+	if the table lamp is not lit:
+		say "Faraji flips the switch on the table lamp. The bulb remains dark.";
+	otherwise:
+		continue the action;
+
+
 The gleaming floor is scenery in Rolle's Department Store. "Someone has polished it spotless, despite the looming destruction of the store. That's dedication."
 
 [ The snarky remark of the gleaming floor is "And I'll be the last one to see its magnificence." ]
@@ -2647,7 +2680,7 @@ Understand "poster/signs/sign" as the sale posters.
 
 The floor waxer is a fixed in place device in Rolle's Department Store. "A floor waxer sits in the center of the gleaming floor[if the floor waxer is switched on]. It is running[end if]." 
 The description is "This is a bulky, heavy-duty machine with a large, round brush head, designed for durability and the ability to polish vast floor areas to a high shine[if the floor waxer is switched on]. It is running[end if]."
-Understand "switch" as the floor waxer.
+Understand "switch/machine/brush/brushes/head" as the floor waxer.
 [ The snarky remark is "I'm sure I've seen this floor waxer somewhere before." ]
 
 Report switching on the floor waxer:
@@ -2939,11 +2972,14 @@ Instead of examining the mystic compass:
 
 Volume 4.5 - The Lizard People
 
-The group of lizard people is an animal. "Three humanoid figures are here, each with a long, scaly tail and a head that looks like a lizard's. They are dressed in smart grey suits. They are hissing loudly in what seems to be intelligent communication. One is carrying some kind of wooden object.[if lizard countdown is 1]
+The group of lizard people is an animal. "Three humanoid figures are here, each with a long, scaly tail and a head that looks like a lizard's. They are dressed in smart grey suits. They are hissing loudly in what seems to be intelligent communication. One is carrying some kind of shiny metal object.[if lizard countdown is 1]
 
 They notice you and stop talking. One of them steps forward and says in a guttural hiss, [one of]'So it is one of Doris's friends. We have been expecting you. You will not hinder us!'[or]'Surface vermin! You will not stop us!'[or]'No one will be allowed to interfere with our plans. Begone!'[or]'Silly human. You will fail!'[or]'You are too late to stop us. We will have the Dragon!'[at random][end if]". 
 Understand "lizards/lizardmen/men" as the group of lizard people.
 The description is "There are three of them, each one seemingly a reptilian humanoid. They are dressed in grey suits with matching ties. They are obviously of intelligence comparable to humans. They are hissing loudly in what seems to be intelligent communication."
+
+The group of lizard people carry the strange shiny metal object. 
+The description of the strange shiny metal object is "You can't see much while the lizard person is holding it."
 
 They are unsnarkable.
 
@@ -3126,11 +3162,11 @@ Instead of answering something that when the group of lizard people is in the lo
 		say "The lizard people seem to find your words amusing. They hiss, creating a strange cloud of thick vapor. Faraji feels light-headed and disoriented. When the vapor clears, they are somewhere else...";
 		teleport the player;
 	otherwise:
-		say "At your word, the lizard people scream and hiss, creating a strange cloud of thick vapor. When the vapor clears, they are gone, but they have left something behind. There is [a wooden frame] on the ground!";
+		say "At your word, the lizard people scream and hiss, creating a strange cloud of thick vapor. When the vapor clears, they are gone, but they have left something behind. There is [a shiny astral resonator] on the ground!";
 		lb;
 		say "[italic type][bracket]Yes, run away, you stupid... lizard people![close bracket][roman type][paragraph break]";
 		now the group of lizard people is nowhere;
-		now the wooden frame is in the location;
+		now the shiny astral resonator is in the location;
 		now the lizard countdown is 0;
 		now the current interlocutor is nothing;
 

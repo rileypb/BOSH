@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 33509 words long.
+I've now read your source text, which is 33520 words long.
 
 
 -----------------------------------------------------
@@ -38,15 +38,15 @@ I've also read Facts by Philip Riley, which is 178 words long.
 I've also read Phones by Philip Riley, which is 1911 words long.
 I've also read Commerce by Philip Riley, which is 160 words long.
 I've also read Furniture by Philip Riley, which is 82 words long.
-I've also read Third Person Narration by Philip Riley, which is 765 words long.
+I've also read Third Person Narration by Philip Riley, which is 792 words long.
 I've also read Door Utils by Philip Riley, which is 44 words long.
 I've also read Real People by Philip Riley, which is 400 words long.
 I've also read Visible Rooms by Philip Riley, which is 164 words long.
 I've also read Can't Touch This by Philip Riley, which is 168 words long.
 I've also read Compound Details by Philip Riley, which is 182 words long.
 I've also read Polish by Philip Riley, which is 89 words long.
-I've also read Hello by Philip Riley, which is 130 words long.
-I've also read BOSH Polish by Philip Riley, which is 8685 words long.
+I've also read Hello by Philip Riley, which is 103 words long.
+I've also read BOSH Polish by Philip Riley, which is 8717 words long.
 I've also read New Light by Philip Riley, which is 347 words long.
 I've also read Early Declarations by Philip Riley, which is 21 words long.
 I've also read Basics by Philip Riley, which is 198 words long.
@@ -55,18 +55,19 @@ I've also read Snarky Remarks by Philip Riley, which is 235 words long.
 I've also read Followup Questions by Philip Riley, which is 248 words long.
 I've also read Scenery Supporters by Philip Riley, which is 179 words long.
 I've also read Simple Conversation by Philip Riley, which is 2362 words long.
-I've also read Hyperspace by Philip Riley, which is 16663 words long.
+I've also read Hyperspace by Philip Riley, which is 16747 words long.
 I've also read BOSH Facts by Philip Riley, which is 193 words long.
-I've also read Swamp Park by Philip Riley, which is 7842 words long.
+I've also read Swamp Park by Philip Riley, which is 8028 words long.
 I've also read Margaret by Philip Riley, which is 2531 words long.
-I've also read Enigma Lake by Philip Riley, which is 29924 words long.
+I've also read Enigma Lake by Philip Riley, which is 30188 words long.
 I've also read I Can Dig It by Philip Riley, which is 77 words long.
-I've also read BOSH Help by Philip Riley, which is 6476 words long.
+I've also read BOSH Help by Philip Riley, which is 6496 words long.
 I've also read Overlook by Philip Riley, which is 763 words long.
 I've also read Gender Options by Nathanael Nerode, which is 7679 words long.
 I've also read Make Test by Philip Riley, which is 288 words long.
 I've also read BOSH Hints by Philip Riley, which is 7498 words long.
 I've also read Hearing by Philip Riley, which is 1254 words long.
+I've also read Improved Pushing by Philip Riley, which is 43 words long.
 I've also read PBR Common by Philip Riley, which is 109 words long.
 I've also read Walls by Philip Riley, which is 905 words long.
 I've also read Floors by Philip Riley, which is 913 words long.
@@ -84,8 +85,8 @@ I've also read Secret Doors by Gavin Lambert, which is 272 words long.
 I've also read Plugging by Philip Riley, which is 706 words long.
 I've also read Books by Philip Riley, which is 2480 words long.
 I've also read Container Types by Philip Riley, which is 55 words long.
-I've also read Extension Cord by Philip Riley, which is 3200 words long.
-I've also read State Update by Philip Riley, which is 406 words long.
+I've also read Extension Cord by Philip Riley, which is 3300 words long.
+I've also read State Update by Philip Riley, which is 452 words long.
 I've also read Hints by Philip Riley, which is 888 words long.
 I've also read Two-Sided Doors by Philip Riley, which is 2270 words long.
 
@@ -148,17 +149,19 @@ Regional: CONSTANT_VNT'field office area'-region(I260_field_office_area)(I166'fi
  == region
 Regional: CONSTANT_VNT'hyperspace'-region(I243_hyperspace)(I149'hyperspace')
  == region
-Regional: CONSTANT_VNT'elr'-region(I545_elr)(I435'elr')
+Regional: CONSTANT_VNT'elr'-region(I546_elr)(I436'elr')
  == region
-Regional: CONSTANT_VNT'elr'-region(I545_elr)(I435'elr')
+Regional: CONSTANT_VNT'elr'-region(I546_elr)(I436'elr')
  == region
-Regional: CONSTANT_VNT'elr'-region(I545_elr)(I435'elr')
+Regional: CONSTANT_VNT'help area'-region(I810_help_area)(I698'help area')
  == region
-Regional: CONSTANT_VNT'elr'-region(I545_elr)(I435'elr')
+Regional: CONSTANT_VNT'elr'-region(I546_elr)(I436'elr')
  == region
-Regional: CONSTANT_VNT'elr'-region(I545_elr)(I435'elr')
+Regional: CONSTANT_VNT'elr'-region(I546_elr)(I436'elr')
  == region
-Regional: CONSTANT_VNT'help area'-region(I807_help_area)(I695'help area')
+Regional: CONSTANT_VNT'elr'-region(I546_elr)(I436'elr')
+ == region
+Regional: CONSTANT_VNT'help area'-region(I810_help_area)(I698'help area')
  == region
 
 
@@ -211,21 +214,21 @@ Phase XII ... Code generation
          == region
         Regional: CONSTANT_VNT'hyperspace'-region(I243_hyperspace)(I149'hyperspace')
          == region
-        Regional: CONSTANT_VNT'the laundromat-region'-region(I434_laundromat_region)(I328'laundromat-region')
+        Regional: CONSTANT_VNT'the laundromat-region'-region(I435_laundromat_region)(I329'laundromat-region')
          == region
-        Regional: CONSTANT_VNT'the laundromat-region'-region(I434_laundromat_region)(I328'laundromat-region')
-         == region
-        Regional: CONSTANT_VNT'hyperspace'-region(I243_hyperspace)(I149'hyperspace')
+        Regional: CONSTANT_VNT'the laundromat-region'-region(I435_laundromat_region)(I329'laundromat-region')
          == region
         Regional: CONSTANT_VNT'hyperspace'-region(I243_hyperspace)(I149'hyperspace')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I545_elr)(I435'elr')
+        Regional: CONSTANT_VNT'hyperspace'-region(I243_hyperspace)(I149'hyperspace')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I545_elr)(I435'elr')
+        Regional: CONSTANT_VNT'elr'-region(I546_elr)(I436'elr')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I545_elr)(I435'elr')
+        Regional: CONSTANT_VNT'elr'-region(I546_elr)(I436'elr')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I545_elr)(I435'elr')
+        Regional: CONSTANT_VNT'elr'-region(I546_elr)(I436'elr')
+         == region
+        Regional: CONSTANT_VNT'elr'-region(I546_elr)(I436'elr')
          == region
 
 
@@ -247,7 +250,7 @@ Phase XII ... Code generation
 
 ==== Phase XII.11 ... Determining grammar (G2) ====
 
-Regional: CONSTANT_VNT'elr'-region(I545_elr)(I435'elr')
+Regional: CONSTANT_VNT'elr'-region(I546_elr)(I436'elr')
  == region
 
 
@@ -288,13 +291,13 @@ Regional: CONSTANT_VNT'elr'-region(I545_elr)(I435'elr')
                                         Fail: scene (~) number = nothing
                                         Fail: scene (~) number = nothing
                                 0 = objects valued property. 1 = object
-            Regional: CONSTANT_VNT'elr'-region(I545_elr)(I435'elr')
+            Regional: CONSTANT_VNT'elr'-region(I546_elr)(I436'elr')
              == region
-            Regional: CONSTANT_VNT'elr'-region(I545_elr)(I435'elr')
+            Regional: CONSTANT_VNT'elr'-region(I546_elr)(I436'elr')
              == region
-            Regional: CONSTANT_VNT'help area'-region(I807_help_area)(I695'help area')
+            Regional: CONSTANT_VNT'help area'-region(I810_help_area)(I698'help area')
              == region
-            Regional: CONSTANT_VNT'help area'-region(I807_help_area)(I695'help area')
+            Regional: CONSTANT_VNT'help area'-region(I810_help_area)(I698'help area')
              == region
 
 
@@ -335,8 +338,8 @@ Providing for a total heap of 65536, given requirement of 45072
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 292 files written as streams.
-CPU time: 1336 centiseconds
+Total of 293 files written as streams.
+CPU time: 1135 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

@@ -29,6 +29,7 @@ Hutz	"bony old man"	"town groundsman"	"Hutz"
 
 Table of Walls (continued)
 locale (a room)	has walls (a truth state)	wall description (a text)	touch description (a text)
+church basement	--	"The walls are painted with scenes of humans and lizard people in battle, with aliens and platypuses looking on in horror. This church is really kind of weird."	--
 Christy's office	--	"The walls are painted a bright cheerful orange."	--
 Bookstore Basement	--	"The walls look as though they are crumbling with age."	"Paint and loose bits of mortar crumble under [our] touch."
 Room of Subjects	--	"Not reachable."	--

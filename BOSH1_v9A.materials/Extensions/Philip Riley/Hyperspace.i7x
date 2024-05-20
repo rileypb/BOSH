@@ -259,7 +259,7 @@ Before going a direction (called D) from Featureless Hyperplane:
 		say "Faraji trudges across the trackless hyperplane, and ends up somewhere else, not completely the same.";
 	otherwise if new hyperplane coords is Coordinates of Pillar:
 		say "Faraji trudges across the trackless hyperplane, and ends up somewhere else, not completely the same.";
-	otherwise:
+	otherwise if D is not down:
 		say "Faraji trudges across the trackless hyperplane, and ends up somewhere else, yet exactly the same.";
 
 Carry out going up from Field Office Reception:
@@ -481,7 +481,7 @@ Instead of doing anything other than examining to the control panel:
 Section - Maggie
 
 Maggie is a woman in field office reception. "Maggie is sitting at the desk, doing nothing Faraji can discern." The description is "Maggie seems a little vacant. She's staring at [one of]the wall[or]the ceiling[or]the floor[or]her hands[or]the desk in front of her[or]nothing in particular[at random]."
-[ The snarky remark is "I think she's in a trance." ]
+[ The snarky remark is "I think she's in a trance." ] Maggie is not neuter.
 Understand "receptionist/woman" as Maggie.
 
 Rule for writing a paragraph about Maggie when field office reception is not visited:
@@ -521,6 +521,9 @@ coffee-subject	Maggie	"'Do you like coffee?'"	"'Coffee is strange. It smells goo
 hyperplane-subject	Maggie	"'What was that place I had to walk through to get here?'"	"'That was the lobby. I helped design it.'"
 
 Maggie interjection timer is a number that varies. Maggie interjection timer is 5.
+
+Instead of showing the thumb drive to Maggie:
+	try quizzing Maggie about the thumb drive;
 
 Every turn when Maggie interjection timer is not 0 and Maggie is in the location:
 	decrease Maggie interjection timer by 1;
@@ -698,6 +701,7 @@ Minerva's books	Minerva	"'You have a nice libarary.'"	"'Make sure your hands are
 Advanced Temporal Mechanics	Minerva	"'Have you read this one?'"	"'Yes, I have. It's a good book.'"
 Theoretical Hyperspace	Minerva	"'What's this one about?'"	"'Check the title. It's about hyperspace.'"
 Hitchhiker's Guide to the Galaxy	Minerva	"'So you read fiction too?'"	"'No, I read non-fiction. That book is a documentary.'"
+Larch Faraji	Minerva	"'Hi, my name is Larch Faraji.'"	"'Yes, I know who you are. Doris told me you were coming.'"
 
 
 A coffee maker is on the mahogany desk. It is scenery. The description is "A drip coffee maker sits on the desk." Minerva owns the coffee maker.
@@ -1127,8 +1131,9 @@ After discussing how to get home:
 	
 klimp-is-fine is an informative quip.
 	It is privately-named.
+	It mentions Chief Huffton Klimp.
 	The printed name is "Klimp is fine".
-	Understand "Klimp/he is fine" as klimp-is-fine.
+	Understand "Klimp/he is fine", "about klimp" as klimp-is-fine.
 	The comment is "[We] [say], 'He's just fine.'".
 	The reply is "'Great! Be sure to say hi for me.'".
 	It quip-supplies Doris.
@@ -1222,9 +1227,9 @@ about Savra is a questioning quip.
 no-aliens is an informative quip. 
 	It is privately-named.
 	The printed name is "[force pronoun for player][we] don't believe in alien visitation".
-	Understand "we/i/you/he/they/she/don't/doesn't/believe/in/alien/visitation" as no-aliens.
+	Understand "we/i/you/he/they/she/don't/doesn't/believe/in/alien/visitation/no" as no-aliens.
 	The comment is "'No. The Chief might, but I prefer hard evidence,' says [player's surname].".
-	The reply is "[Doris] nods. 'Good, because they haven't. The whole idea is ridiculous. Senator Savra is [italic type]not[roman type] an alien.' [they] looks at [us] significiantly.
+	The reply is "[Doris] nods. 'Good, because they haven't. The whole idea is ridiculous. Senator Savra is [italic type]not[roman type] an alien.' [They] looks at [us] significantly.
 	
 	[We] [look] at him unbelievingly. 'What are you talking about?'
 	
@@ -1236,7 +1241,7 @@ no-aliens is an informative quip.
 yes-aliens is an informative quip. 
 	It is privately-named.
 	The printed name is "[force pronoun for player][we] do believe in alien visitation".
-	Understand "we/i/you/he/they/she/do/does/believe/in/alien/visitation" as yes-aliens.
+	Understand "we/i/you/he/they/she/do/does/believe/in/alien/visitation/yes" as yes-aliens.
 	The comment is "'Yes. The evidence is overwhelming,' says [player's surname].".
 	The reply is "[Doris] laughs. 'Nonsense, all of it. Get it out of your head. The whole idea is ridiculous. Senator Savra is [italic type]not[roman type] an alien.' [they] looks at [us] significiantly.
 	
@@ -1246,6 +1251,12 @@ yes-aliens is an informative quip.
 	It quip-supplies Doris.
 	It follows about Savra.
 	It rules out no-aliens.
+
+Instead of saying yes when yes-aliens is q-available:
+	try discussing yes-aliens;
+
+Instead of saying no when no-aliens is q-available:
+	try discussing no-aliens;
 	
 what-is-a-lizard-man is a questioning quip.
 	It is privately-named.
@@ -1257,8 +1268,8 @@ what-is-a-lizard-man is a questioning quip.
 	It follows yes-aliens.
 	It follows no-aliens.
 	
-remind him Savra's not reptilian is a performative quip.
-	Understand "Savra/is" as remind him Savra's not reptilian.
+Savra's not reptilian is a performative quip.
+	Understand "Savra/is/not/reptilian" as Savra's not reptilian.
 	The comment is "'But Savra isn't a reptile!'".
 	The reply is "'He's in disguise! Whatever, it doesn't matter. What matters is your mission.'"
 	It quip-supplies Doris.
@@ -1302,14 +1313,14 @@ Check giving Tribes of New York to Doris when Doris's note is not off-stage:
 
 A tome can be delivered.
 
-After giving Tribes of New York to Doris:
+After giving Tribes of New York to Doris when Tribes of New York is not delivered:
 	say "'Ah, [agent], you've found it! I knew you would. Now we can find out where Daniels is. Actually, Christy can help you with that. Go see her and give her this.' He scribbles a note and hands it to you. 'She'll know what to do.'";
 	now doris interjection timer is a random number between 2 and 5;
 	now the player carries Doris's note;
 	now Tribes of New York is delivered;
 	now the player carries the Tribes of New York;
 
-Instead of showing Tribes of New York to Doris:
+Instead of showing Tribes of New York to Doris when Tribes of New York is not delivered:
 	say "'Ah, [agent], you've found it! I knew you would. Now we can find out where Daniels is. Actually, Christy can help you with that. Go see her and give her this.' He scribbles a note and hands it to you. 'She'll know what to do.'";
 	now doris interjection timer is a random number between 2 and 5;
 	now the player carries Doris's note;
@@ -1323,7 +1334,7 @@ After giving Christy's note to Doris:
 	'So...' [player's surname] says.
 	
 	'So. I'm sending you back to 1954, right before the flooding of Enigma Lake, and you'll find whatever Daniels left for us to find. Maybe we can stage a rescue. Why 1954? I'd rather not risk a longer temporal jaunt before we know what we're dealing with.'";
-	queue Doris with how will i find him;
+	queue Doris with how will I find him;
 	now doris interjection timer is a random number between 2 and 5;
 	now Christy's note is nowhere;
 	now the current spacetime setting is the town hall spacetime setting;
@@ -1339,7 +1350,7 @@ about the Dragon is a questioning quip.
 about-time-travel is a questioning quip.
 	It is privately-named.
 	The printed name is "about time travel".
-	Understand "about/-- time travel" as about-time-travel.
+	Understand "about/time/travel" as about-time-travel.
 	Understand "what about time travel" as about-time-travel.
 	The comment is "Disbelievingly, [we] [ask], 'Time travel? For real?'".
 	The reply is "'Yes, yes,' [Doris] responds. 'Don't get too worked up over it. It gets old fast[if about the mission is not exhausted]. But now we need to talk about the mission[end if].'".
@@ -1355,11 +1366,11 @@ Does the player mean quizzing doris about time-travel:
 Does the player mean quizzing doris about time slips:
 	it is very unlikely.
 	
-how will i find him is a questioning quip.
+how will I find him is a questioning quip.
 	The comment is "'How am I going to find him? Didn't he leave that message in the [italic type]fourteenth century[roman type]?'".
-	Understand "how to find him" as how will i find him.
-	Understand "Daniels" as how will i find him.
-	The reply is "[Doris] looks exasperated. 'Well I don't know -- Improvise, use the power of the leylines, look around for anything that looks like it might be a time portal. Something like that. Let's see if the DC office can impress me. Let me know when you're ready to go.'".
+	Understand "how to find him" as how will I find him.
+	Understand "Daniels" as how will I find him.
+	The reply is "[Doris] looks exasperated. 'Well I don't know -- improvise, use the power of the leylines, look around for anything that looks like it might be a time portal. Something like that. Let's see if the DC office can impress me. Let me know when you're ready to go.'".
 	It quip-supplies Doris.
 
 ready to go is an informative quip.
@@ -1368,7 +1379,7 @@ ready to go is an informative quip.
 	The comment is "[regarding the player]Squaring [force pronoun for player][our] shoulders, [player's surname] says, 'Ready to go.'"
 	The reply is "Doris grins. 'Great! First, you'll need this.' He hands Faraji a small device. 'In case you need to come back for any reason, press this button and you'll come back here. [italic type]Do not abuse this for trivial matters![roman type] Time travel consumes valuable resources. Now go. Out of my office and to the forth you'll find the portal room. It's all ready to send you where you need to go.'"
 	It quip-supplies Doris.
-	It follows how will i find him.
+	It follows how will I find him.
 		
 After discussing ready to go:
 	now the player carries the recall button;
@@ -1662,14 +1673,14 @@ To interject Christy:
 
 Table of Christy Interjections
 Christy interjection	used
-"Christy looks up from her scribbling. 'You know, working with Doris is like working with a cat. It's pointless.'"	false
+"Christy looks up from their scribbling. 'You know, working with Doris is like working with a cat. It's pointless.'"	false
 "Christy glares at the ceiling. 'I swear, if I have to hear one more time about the time Doris and Klimp went to Pompeii, I'm going to scream.'"	false
 "Christy looks annoyed. 'Why are you hanging around in here?'"	false
 "Christy looks up at Faraji. 'If I could go back in time, I'd tell myself not to take this job.'"	false
 "Christy frowns. 'I swear pencils used to be better quality.'"	false
 "Christy yawns. 'You know, working in hyperspace is a terrible commute. Especially when your portal is inside a taco truck that moves every day.'"	false
-"Christy sharpens her pencil. 'Do you know how many donut shops there are in hyperspace? None! It's a travesty.'"	false
-"Christy tosses her pencil in the air. 'Just once I'd like to be the one who gets to travel in time.'"	false
+"Christy sharpens their pencil. 'Do you know how many donut shops there are in hyperspace? None! It's a travesty.'"	false
+"Christy tosses their pencil in the air. 'Just once I'd like to be the one who gets to travel in time.'"	false
 "Christy looks thoughtful. 'I wonder if I could get a job at the Bureau of Startling Hallucinations. They have a better dental plan.'"	false
 
 for-a-screwdriver-christy is a questioning quip.

@@ -4,6 +4,7 @@ Use authorial modesty.
 
 Include Gender Options by Nathanael Nerode.
 Include Undo Output Control by Erik Temple.
+Include Improved Pushing by Philip Riley.
 
 Volume 1 - Player Refs
 
@@ -73,6 +74,9 @@ For printing the locale description (this is the new you-can-also-see rule):
 	repeat through the Table of Locale Priorities:
 		if the locale description priority entry is greater than 0,
 			now the notable-object entry is marked for listing;
+		increase the mentionable count by 1;
+	if the thing pushed is not nothing:
+		now the thing pushed is marked for listing;
 		increase the mentionable count by 1;
 	if the mentionable count is greater than 0:
 		repeat with item running through things:

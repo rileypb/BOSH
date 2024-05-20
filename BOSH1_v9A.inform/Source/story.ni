@@ -1644,7 +1644,6 @@ Instead of knocking on the closet door when the location is the utility closet a
 		You exit the closet.";
 		move the player to Moira's Office;
 		queue Moira Zin with about the hyperdimensional portal;
-		queue Moira Zin with to wait for the report;
 		now the current interlocutor is Moira Zin;
 		now the closet door is unlocked;
 		now the closet door is open;
@@ -1654,19 +1653,19 @@ Rule for writing a paragraph about Moira Zin:
 		
 about the hyperdimensional portal is an informative quip.
 	The comment is "[We] [scratch] [our] head. 'Um, I was transported there through an hyperdimensional portal. How's your morning been?'".
-	The reply is "[Moira] raises an eyebrow. 'Well, I suggest you let the Chief know.'".
+	The reply is "[Moira] raises an eyebrow. 'Were you, now.'".
 	It is ubiquitous.
 	It quip-supplies Moira Zin.
 	It rules out to wait for the report.
 			
-to wait for the report is an informative quip.
+[ to wait for the report is an informative quip.
 	The comment is "[We] [say] 'Strange things are afoot around here, Agent Zin.'".
 	The reply is "'Do tell,' says Moira.
 	
 	'After I talk to Klimp.'".
 	It is ubiquitous.
 	It quip-supplies Moira Zin.
-	It rules out about the hyperdimensional portal.
+	It rules out about the hyperdimensional portal. ]
 
 for-a-screwdriver-moira is a questioning quip.
 	It is privately-named. The printed name is "for a screwdriver". [The true-name is "for-a-screwdriver".] Understand "for/a/screwdriver" as for-a-screwdriver-moira.
@@ -2105,6 +2104,8 @@ Robots	Chief Huffton Klimp	"'Chief, what are your feelings about --'"	"'robots? 
 money	Chief Huffton Klimp	"'Chief, do you have any --'"	"'Money? No, no. Lost my wallet this morning in an automatic car wash. No, not that one out there. Another one. Long story. But go ask Margaret, see if there's anything in the petty cash drawer.'"
 money	Margaret	"'Margaret, do we have any money in petty cash?'"	"'No, nothing in there. But I have a few bucks in my purse. I left my purse in the car this morning when my boyfriend dropped me off. Can you wait until tomorrow?'"
 money	Moira Zin	"'Moira, do you have any money so I can buy a screwdriver, so I can get the hex wrench out of the vent, so I can open the drawer of my desk, so I can answer the phone?'"	"'No, I gave all my money to a vagrant this morning as I walked the 5 miles to work. I'm sure he needed it more than I did.'"
+thumb drive	Chief Huffton Klimp	"'Chief, what do --'"	"'I think about that thumb drive? It looks like a perfectly ordinary thumb drive. Except for the directions to Atlantis scratched on the side.'"
+strange piece of paper	Chief Huffton Klimp	"'Chief, what do you think about this --'"	"'-- [']Save the Dragon['], eh? Nope, never heard of it. You should probably forget about it. I'm sure Doris doesn't know anything about it either.'"
 
 
 Book 18.6 - Klimp Interjections

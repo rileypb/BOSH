@@ -7686,7 +7686,7 @@ Faraji is carrying:
 
 >show drive to maggie
 That doesn't seem to be a topic of conversation at the moment.
-
+* show drive
 >l
 Agent Faraji is at field office reception. It is a small, white (like everything else) room with a desk against one wall. An office directory is on the wall. A hallway leads west and a stairway goes up to the infinite hyperplane.
 
@@ -7800,7 +7800,7 @@ Maggie is sitting at the desk, doing nothing Faraji can discern.
 >give coffee
 (to Maggie)
 They don't seem interested in that.
-
+* They
 Maggie snaps her fingers. "That's it! I remember now. Budapest."
 
 >w
@@ -9110,7 +9110,7 @@ A phone is ringing to the south.
 Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east. All of the doors are open.
 
 A phone is ringing to the south, in their office.
-
+<<<<<
 >e
 Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as the BOSH front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Bureau photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
 
@@ -9292,7 +9292,7 @@ There's nothing like that nearby.
 >give book
 (to Doris)
 "Ah, Agent Faraji, you've found it! I knew you would. Now we can find out where Daniels is. Actually, Christy can help you with that. Go see her and give her this." He scribbles a note and hands it to you. "She'll know what to do."
-
+* works twice!
 Faraji can ask about the mission.
 
 >x note
@@ -10193,7 +10193,7 @@ Faraji can't move that.
 
 >push breaker
 Faraji can't move that.
-
+* push breaker
 >turn on breaker
 Faraji switches the circuit breaker on.
 

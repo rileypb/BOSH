@@ -22,8 +22,8 @@ After saying hello to Dave for the first time:
 After saying hello to someone for the first time:
 	do nothing;
 
-After saying hello to Minerva for the first time:
+[ After saying hello to Minerva for the first time:
 	say "Faraji says, 'Hello, Minerva.'";
-	say "Minerva looks up briefly from her work. 'Make it quick,' she says.";
+	say "Minerva looks up briefly from her work. 'Make it quick,' she says."; ]
 
 Hello ends here.
