@@ -14064,7 +14064,7 @@ Agent Faraji is walking on Solvay Road by the lake. Solvay Road runs by the lake
 Three humanoid figures are here, each with a long, scaly tail and a head that looks like a lizard's. They are dressed in smart grey suits. They are hissing loudly in what seems to be intelligent communication. One is carrying some kind of wooden object.
 
 They notice you and stop talking. One of them steps forward and says in a guttural hiss, "Silly human. You will fail!"
-
+<<<<<
 >ask figure about object
 I'm not sure what you're trying to say. I might just not recognize the words you're using.
 
@@ -14149,7 +14149,7 @@ Maggie is sitting at the desk, doing nothing Faraji can discern.
 >undo
 Solvay Road by the lake
 [Previous turn undone.]
-
+<<<<<
 >undo
 Solvay Road by the lake
 [Previous turn undone.]

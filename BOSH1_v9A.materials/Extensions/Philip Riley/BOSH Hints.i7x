@@ -51,7 +51,7 @@ Hinting the hint-computer:
 
 The hint-locked-desk-no-key is a hint topic. Understand "key/locked/in/desk" as the hint-locked-desk-no-key. The printed name is "key locked in desk". It is progressive. It is unlisted. The progression is {"Oops, I guess the key is locked in the desk.", "Maybe there's another key.", "Or maybe there's a way in without a key.", "Why not give the desk a once-over?"}.
 
-The hint-hex-wrench is a hint topic. Understand "hex/allen/wrench/key/tool", as the hint-hex-wrench. The printed name is "hex wrench".
+The hint-hex-wrench is a hint topic. Understand "hex/allen/wrench/key/tool" as the hint-hex-wrench. The printed name is "hex wrench".
 
 Hinting the hint-hex-wrench:
 	if the player does not know hex-screws:
@@ -407,17 +407,17 @@ hinting the hint-rusty-resonator:
 	if Astral Secrets is not read:
 		rule succeeds with result "Maybe Faraji can find something to tell them what this thing is.";
 	otherwise if not mounted-shiny-resonator and not mounted-makeshift-resonator:
+		now hint-rusty-resonator is progressive;
 		rule succeeds with result "What the heck is an astral resonator?";
-		now hint-rusty-resonator is progressive;
 	otherwise if mounted-shiny-resonator and mounted-makeshift-resonator:
+		now hint-rusty-resonator is progressive;
 		rule succeeds with result "Faraji should mount the rusty astral resonator somewhere, like they did with the other two resonators.";
-		now hint-rusty-resonator is progressive;
 	otherwise if mounted-makeshift-resonator:
+		now hint-rusty-resonator is progressive;
 		rule succeeds with result "Faraji should mount the rusty astral resonator somewhere, like they did with the makeshift resonator.";
-		now hint-rusty-resonator is progressive;
 	otherwise:
-		rule succeeds with result "Faraji should mount the rusty astral resonator somewhere, like they did with the shiny resonator.";
 		now hint-rusty-resonator is progressive;
+		rule succeeds with result "Faraji should mount the rusty astral resonator somewhere, like they did with the shiny resonator.";
 
 Activating the hint-rusty-resonator:
 	if the rusty astral resonator is seen and not mounted-rusty-resonator:
@@ -612,7 +612,7 @@ hinting the hint-makeshift-astral-resonator:
 	otherwise:
 		abide by the hinting rules for the hint-makeshift-astral-resonator-mounting;
 
-The dark basement is a progressive hint topic. Understand "dark/basement", as the dark basement. The printed name is "dark basement". The progression is {"There are two ways to light a dark room.", "One can wear the astral lenses to see in the dark.", "One can use a light source."}.
+The dark basement is a progressive hint topic. Understand "dark/basement" as the dark basement. The printed name is "dark basement". The progression is {"There are two ways to light a dark room.", "One can wear the astral lenses to see in the dark.", "One can use a light source."}.
 
 Activating the dark basement:
 	if the church basement is witnessed in darkness and the church basement is unvisited:

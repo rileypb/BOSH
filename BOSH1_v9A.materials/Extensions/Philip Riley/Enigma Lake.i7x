@@ -2963,7 +2963,7 @@ Volume 4.5 - The Lizard People
 The group of lizard people is an animal. "Three humanoid figures are here, each with a long, scaly tail and a head that looks like a lizard's. They are dressed in smart grey suits. They are hissing loudly in what seems to be intelligent communication. One is carrying some kind of shiny metal object.[if lizard countdown is 1]
 
 They notice you and stop talking. One of them steps forward and says in a guttural hiss, [one of]'So it is one of Doris's friends. We have been expecting you. You will not hinder us!'[or]'Surface vermin! You will not stop us!'[or]'No one will be allowed to interfere with our plans. Begone!'[or]'Silly human. You will fail!'[or]'You are too late to stop us. We will have the Dragon!'[at random][end if]". 
-Understand "lizards/lizardmen/men" as the group of lizard people.
+Understand "lizards/lizardmen/men/retiles/reptile/reptoid/figures/figure" as the group of lizard people.
 The description is "There are three of them, each one seemingly a reptilian humanoid. They are dressed in grey suits with matching ties. They are obviously of intelligence comparable to humans. They are hissing loudly in what seems to be intelligent communication."
 
 The group of lizard people carry the strange shiny metal object. 
@@ -3172,15 +3172,17 @@ Every turn when the lizard countdown <= 0 and the group of lizard people is in t
 Instead of going when the group of lizard people is in the location:
 	say "The lizard people block the way.";
 
-[ Instead of answering the group of lizard people that something:
-	say "The lizard people look up, startled at the intrusion. They hiss, creating a strange cloud of thick vapor. When it clears, they are gone.
-	
-	They seem to have dropped something in their haste. There is [a shiny astral resonator] on the ground!";
-	now the shiny astral resonator is in the location;
-	now the group of lizard people is nowhere; ]
+Doris-subject is a subject. It is privately-named. The printed name is "Doris". Understand "doris" as Doris-subject.
+Dragon-subject is a subject. It is privately-named. The printed name is "Dragon". Understand "dragon" as Dragon-subject.
 
-[ Instead of doing something other than answering something that when the group of lizard people was in the location:
-	say "FOOOOO"; ]
+Table of Quiz Topics (continued)
+subject (a thing)	interlocutor (a person)	comment (a text)	reply (a text)
+group of lizard people	group of lizard people	"'Who are you?' asks Faraji.'"	"The lizard people hiss as if in laughter. 'We are the first ones and the last ones. You will all learn our names.'"
+Doris-subject	group of lizard people	"'Doris sent me,' says Faraji."	"'Doris is a fool,' hisses the lizard person. 'He will not stop us.'"
+Enigma-Lake-subject	group of lizard people	"'What are you doing here?' asks Faraji."	"'We are here to stop you. We will have the Dragon,' hisses the lizard person."
+senator-savra-subject	group of lizard people	"'What do you know about Senator Savra?' asks Faraji."	"'Savra, our great leader, will have the Dragon,' hisses the lizard person."
+Dragon-subject	group of lizard people	"'Who is the Dragon?' asks Faraji."	"'The Dragon, the greatest of all, corrupted by the surface vermin,' hisses the lizard person."
+strange shiny metal object	group of lizard people	"'What is that shiny object?' asks Faraji."	"'It is ours,' hisses the lizard person. 'You will not have it.'"
 
 Volume 4.75 - Building the Makeshift Astral Resonator
 
