@@ -27,11 +27,18 @@ Setting action variables while plugging something into:
 	if something (called P) is plugged into the second noun:
 		now the old plug is P;
 
+Check plugging something into something when the noun is plug-into-able and the second noun is pluggable (this is the reverse plugging rule):
+	try plugging the second noun into the noun instead.
+
 Check plugging something into something when the noun is not pluggable:
-    say "[The noun] doesn't seem to be something you can plug into anything." instead.
+	if the noun is plug-into-able and the second noun is pluggable:
+		try plugging the second noun into the noun instead;
+	say "[The noun] doesn't seem to be something you can plug into anything." instead.
 
 Check plugging something into something when the second noun is not plug-into-able:
-    say "You can't plug anything into [the second noun]." instead.
+	if the second noun is pluggable and the noun is plug-into-able:
+		try plugging the second noun into the noun instead;
+	say "You can't plug anything into [the second noun]." instead.
 
 Check plugging something into something when the noun is plugged into the second noun:
     say "[The noun] is already plugged into [the second noun]." instead.
@@ -44,6 +51,8 @@ Check plugging something pluggable into something plug-into-able:
 	if something (called the plug) is plugged into the second noun:
 		if the noun is not the plug:
 			try unplugging the plug;
+
+The reverse plugging rule is listed first in the check plugging it into rulebook.
 
 Carry out plugging something into something:
 	now the noun is plugged into the second noun.

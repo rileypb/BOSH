@@ -1481,7 +1481,7 @@ Understand "memorabilia", "junk", "stuff", "knick-knacks", "knick knacks" as the
 [ The snarky remark of the oddities is "It's like a garage sale of the bizarre." ]
 
 A pair of astral lenses is on the chief's shelves. It is ambiguously plural. Chief Huffton Klimp owns the pair of astral lenses. The description of the pair of astral lenses is "To all appearances an ordinary pair of glasses, the astral lenses allegedly reveal the existence of extra-dimensional pathways." The pair of astral lenses is wearable. 
-Understand "glasses/lens/glass" as the pair of astral lenses.
+Understand "glasses/glass" as the pair of astral lenses.
 [ The snarky remark of the pair of astral lenses is "These are useful for navigating the TARDIS." ]
 
 Check wearing the pair of astral lenses when the location is fluorescent-lit:
@@ -2574,7 +2574,7 @@ speaker querying is an action out of world. Understand "speaker" as speaker quer
 Carry out speaker querying:
 	say "current interlocutor is [current interlocutor]."
 
-Jumping to part 2 is an action applying to nothing. Understand "plane" as jumping to part 2.
+Jumping to part 2 is an action applying to nothing. Understand "cheat plane" as jumping to part 2.
 
 Carry out jumping to part 2:
 	move the player to the featureless hyperplane;
@@ -2587,7 +2587,7 @@ Carry out jumping to part 2:
 	now the strange glow is closeby;
 	now the player carries the thumb drive;
 
-jumping to part 3 is an action applying to nothing. Understand "doris" as jumping to part 3.
+jumping to part 3 is an action applying to nothing. Understand "cheat doris" as jumping to part 3.
 
 Carry out jumping to part 3:
 	now Hyperplane Coords is {0, 0, 0};
@@ -2602,7 +2602,7 @@ Carry out jumping to part 3:
 	now the strange glow is closeby;
 	now the player carries the thumb drive;
 	
-jumping to part 4 is an action applying to nothing. Understand "enigma" as jumping to part 4.
+jumping to part 4 is an action applying to nothing. Understand "cheat enigma" as jumping to part 4.
 
 Carry out jumping to part 4:
 	now Hyperplane Coords is {0, 0, 0};
@@ -2624,7 +2624,7 @@ Carry out jumping to part 4:
 	now closet door is open;
 	now Moira's door is unlocked;
 
-jumping to endgame is an action applying to nothing. Understand "end" as jumping to endgame.
+jumping to endgame is an action applying to nothing. Understand "cheat end" as jumping to endgame.
 
 Carry out jumping to endgame:
 	try jumping to part 4;

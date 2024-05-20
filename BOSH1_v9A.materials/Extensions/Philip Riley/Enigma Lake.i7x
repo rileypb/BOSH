@@ -333,7 +333,7 @@ Some shadows are scenery in Enigma Park. "Without a lantern, it's inadvisable to
 The obelisk is scenery in Enigma Park. Understand "monument/names/citizens" as the obelisk. "Its faux Egyptian design is incongruous adjacent to the adamantly traditional town hall. [We] [can] just make out a small crystal adornment rising from the top."
 The snarky remark of the obelisk is "I don't know what it is, but obelisks always seem to be bad news."
 
-The adornment is scenery in Enigma Park. "From what [we] can make out, it's a clear crystal held aloft by some kind of metal fitting." Understand "crystal/ornament/decoration" as the adornment.
+The adornment is scenery in Enigma Park. "From what [we] can make out, it's a clear crystal held aloft by some kind of metal fitting." Understand "crystal/ornament/decoration/fitting" as the adornment.
 [ The snarky remark of the adornment is "I'm not going to touch it. I've seen enough movies to know that's a bad idea." ]
 
 Instead of examining the adornment:
@@ -573,6 +573,7 @@ How-can-you-help-me is a questioning quip.
 	It is privately-named.
 	The printed name is "how he can help [us]".
 	Understand "for help", "help me" as how-can-you-help-me.
+	Understand "how/can/you/he/help/us/me/them/Faraji" as how-can-you-help-me.
 	Understand "how can you help me/them/Faraji/--", "how he can help me/them/Faraji/--", "how he can help me/them/Faraji/--" as how-can-you-help-me.
 	[ Understand "how/can/you/he/help/me/us/them/her/him" as how-can-you-help-me. ]
 	The comment is "'But how can you possibly help me?' [we] [ask]."
@@ -606,8 +607,10 @@ Instead of imploring Hutz for "help":
 
 Now-can-you-help-me is a questioning quip.
 	The printed name is "if he can now help [us]".
+	Understand "for help" as now-can-you-help-me.
 	Understand "can you help me/us/them/Faraji/-- now/--" as now-can-you-help-me. 
 	Understand "if he can help me/us/them/Faraji/-- now/--" as now-can-you-help-me.
+	Understand "if/for/he/you/can/help/me/us/them/Faraji/now" as now-can-you-help-me.
 	The comment is "'Now, you've had your coffee. Can you help me?' [we] [ask]."
 	The reply is "'I found something. Something that might help you. It's in the workshed. In the cabinet. You'll need the key.' At this, Hutz pulls out a rusty key ring, pulls off an iron key and hands it to [us]."
 	It quip-supplies Hutz.
@@ -754,6 +757,10 @@ The broken lock is a thing. The description is "A broken padlock." Understand "p
 
 [ The snarky remark of the broken lock is "That'll teach you to lock things." ]
 
+Check cutting the padlock:
+	if the player encloses the bolt cutters:
+		try cutting the padlock with the bolt cutters instead;
+
 Cutting it with is an action applying to two things. Understand "cut [something] with/using [something]"  as cutting it with.
 
 Opening it with is an action applying to two things. Understand "open [metal cabinet] with/using [bolt cutters]", "unlock [metal cabinet] with/using [bolt cutters]", "open [padlock] with/using [bolt cutters]", "unlock [padlock] with/using [bolt cutters]" as opening it with.
@@ -898,29 +905,7 @@ Instead of examining the radio-obelisk-facade:
 	otherwise:
 		say line break;
 
-Book 13 - Broadcast Booth
 
-The broadcast booth is south of Radio Station WGXC. It is in ELR. It is indoors. "The broadcast booth is a small room with a window looking out into the rest of the station. A microphone is set up on a stand, and a soundboard is set into the wall. The exit is to the north."
-It is a leavable room. The egress is north.
-[ The snarky remark of the broadcast booth is "I wonder if I can get a request in." ]
-The x-coordinate of the broadcast booth is 2. The y-coordinate of the broadcast booth is -3.
-
-The broadcast booth is a leavable room. The egress is north.
-
-The booth window is scenery in the broadcast booth. "The window looks out into the rest of the station."
-It is unsnarkable.
-
-The stand is scenery in the broadcast booth. "An ordinary microphone stand."
-Understand "microphone stand" as stand.
-[ The snarky remark of the stand is "With bottle in hand, at the microphone stand. Ay, yo, homeboy, what you drinkin', man?" ]
-
-The microphone is scenery in the broadcast booth. "A microphone is set up on a stand."
-Understand "mic/mike" as microphone.
-[ The snarky remark of the microphone is "My mother always said I had a face for radio, and a voice for silent movies." ]
-
-The soundboard is scenery in the broadcast booth. "The soundboard is a complex piece of equipment, with many sliders and buttons. It's not clear how it works."
-Understand "sound/board/sliders/buttons/knobs" as soundboard.
-[ The snarky remark of the soundboard is "I like to push buttons and turn knobs. Which is why I'm not allowed in airplane cockpits." ]
 
 Book 14 - Lake Street by the gym
 
@@ -1826,6 +1811,9 @@ The old wooden door is a closed openable locked lockable scenery door. It is wes
 "A modest wooden door leads into the Horton family house. It has been fitted with a modern lock."
 [ The snarky remark of the old wooden door is "No doorbell? How quaint." ]
 
+Instead of unlocking the horton facade with something:
+	try unlocking the old wooden door with the second noun;
+
 Horton Family House Kitchen is a leavable room. It is in ELR. It is unleavable. It is indoors. "The house is a modest colonial-period building. Strangely, the furnishings of the house have been left in place, despite the coming flood. An open hearth is in the center of the room, with a few chairs and a table. The parlor is to the south, and a narrow staircase leads up. To the east the front door leads out to Solvay Road, while another exit leads west to the family graveyard." 
 
 [ The snarky remark of Horton Family House Kitchen is "I wonder if this place felt as creepy in 1750." ]
@@ -2404,7 +2392,7 @@ It is exposed.
 
 striking is an action applying to one thing. Understand "strike [the tuning fork]", "sound [the tuning fork]", "ring [the tuning fork]", "tap [the tuning fork]", "hit [the tuning fork]" as striking.
 Carry out striking the tuning fork:
-	say "Faraji strikes the tuning fork. It sounds a pure 440 Hz tone. Yes, Faraji has perfect pitch.";
+	say "Faraji strikes the tuning fork. It sounds a pure 440 Hz tone.";
 	if the player encloses the rusty astral resonator:
 		if the player encloses the shiny astral resonator:
 			if Astral Secrets is read:
@@ -3281,12 +3269,12 @@ Carry out setting the resonators:
 	now the circuit breaker is switched on;
 	now the content of the tripod is the makeshift astral resonator;
 
-opening the portal is an action applying to nothing. Understand "open portal" as opening the portal.
+opening the portal is an action applying to nothing. Understand "cheat open portal" as opening the portal.
 
 Carry out opening the portal:
 	open the portal;
 
-coffeeing is an action out of world. Understand "starbucks" as coffeeing.
+coffeeing is an action out of world. Understand "cheat starbucks" as coffeeing.
 
 Carry out coffeeing:
 	now the player is carrying the cup of coffee;
@@ -3297,7 +3285,7 @@ query-naming is an action applying to nothing. Understand "is hathgar named" as 
 Carry out query-naming:
 	say whether or not the doll-fly is named;
 
-banishing is an action out of world. Understand "banish" as banishing.
+banishing is an action out of world. Understand "cheat banish" as banishing.
 
 Carry out banishing:
 	now the shiny astral resonator is carried by the player;
@@ -3308,7 +3296,7 @@ Before answering the doll-fly that when DEBUG is true:
 	now the doll-fly is nowhere;
 	stop the action;
 
-framing is an action applying to nothing. Understand "frame" as framing.
+framing is an action applying to nothing. Understand "cheat frame" as framing.
 
 Carry out framing:
 	now the player is carrying the wooden frame;

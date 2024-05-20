@@ -11098,7 +11098,7 @@ That doesn't seem to be a topic of conversation at the moment.
 
 >ask man for help
 Which do you mean, the Help Shelf, help or Bureau of Special Help?
-
+<<<<<
 >help
 Suddenly Agent Faraji is surrounded by a white vapor. When it clears, they find themself somewhere else...
 
@@ -11566,7 +11566,7 @@ I didn't understand that sentence.
 
 >say test to mike
 I'm not sure what you're trying to say. I might just not recognize the words you're using.
-
+* allow speaking into the mike
 >n
 Agent Faraji is in Radio Station WGXC. This is the town radio station. South is the entrance to the broadcast booth. A staircase runs upwards, presumably to the roof and the broadcast antenna. The exit is northwest.
 
@@ -13466,7 +13466,7 @@ Agent Faraji is in the workshed. It is a small, weathered building, with a singl
 >unlock cabinet with rusty
 (first taking the rusty metal door)
 Faraji can't take that with them.
-
+* DTPM
 >unlock cabinet with rusty key
 There's nothing like that nearby.
 
@@ -13645,7 +13645,7 @@ Faraji screws the rusty astral resonator into the threaded socket on the TV aeri
 
 >x resonator
 A small, rusty, metallic, cylindrical object. One end is capped with a lens, while the other terminates in a threaded base, like a light bulb.
-
+<<<<<
 >x lens
 (the pair of astral lenses)
 To all appearances an ordinary pair of glasses, the astral lenses allegedly reveal the existence of extra-dimensional pathways.
@@ -13888,7 +13888,7 @@ That can't be switched on and off.
 
 >say hi to mike
 The microphone does not respond.
-
+<<<<<
 >n
 Agent Faraji is in Radio Station WGXC. This is the town radio station. South is the entrance to the broadcast booth. A staircase runs upwards, presumably to the roof and the broadcast antenna. The exit is northwest.
 

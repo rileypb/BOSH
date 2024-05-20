@@ -49,9 +49,9 @@ Hinting the hint-computer:
 	otherwise:
 		rule succeeds with result "Don't forget to examine the computer.";
 
-The hint-locked-desk-no-key is a hint topic. Understand "key locked in desk" as the hint-locked-desk-no-key. The printed name is "key locked in desk". It is progressive. It is unlisted. The progression is {"Oops, I guess the key is locked in the desk.", "Maybe there's another key.", "Or maybe there's a way in without a key.", "Why not give the desk a once-over?"}.
+The hint-locked-desk-no-key is a hint topic. Understand "key/locked/in/desk" as the hint-locked-desk-no-key. The printed name is "key locked in desk". It is progressive. It is unlisted. The progression is {"Oops, I guess the key is locked in the desk.", "Maybe there's another key.", "Or maybe there's a way in without a key.", "Why not give the desk a once-over?"}.
 
-The hint-hex-wrench is a hint topic. Understand "hex/allen/-- wrench/key/tool", "hex/allen" as the hint-hex-wrench. The printed name is "hex wrench".
+The hint-hex-wrench is a hint topic. Understand "hex/allen/wrench/key/tool", as the hint-hex-wrench. The printed name is "hex wrench".
 
 Hinting the hint-hex-wrench:
 	if the player does not know hex-screws:
@@ -127,7 +127,7 @@ Hinting the hint-back-door when the player knows back-door-is-locked:
 	otherwise:
 		go on;
 
-The hint-get-back-in is a hint topic. Understand "escape back lot" as the hint-get-back-in. The printed name is "escape back lot". It is progressive. The progression is {"Faraji is locked out of the building. Maybe they can get out of the back lot another way?", "Perhaps there's a secret exit in the dumpster?", "LOL. No, there's no secret exit in the dumpster.", "What might one do to get through a door they can't or shouldn't open?", "Faraji has two options: wait around for Margaret to come back out, or...", "KNOCK ON WHITE METAL DOOR."}.
+The hint-get-back-in is a hint topic. Understand "escape/back/lot" as the hint-get-back-in. The printed name is "escape back lot". It is progressive. The progression is {"Faraji is locked out of the building. Maybe they can get out of the back lot another way?", "Perhaps there's a secret exit in the dumpster?", "LOL. No, there's no secret exit in the dumpster.", "What might one do to get through a door they can't or shouldn't open?", "Faraji has two options: wait around for Margaret to come back out, or...", "KNOCK ON WHITE METAL DOOR."}.
 
 Activating rule for the hint-get-back-in:
 	if the player knows escape-back-lot:
@@ -137,7 +137,7 @@ Activating rule for the hint-get-back-in:
 	otherwise:
 		deactivate;
 
-hint-enter-laundromat is a hint topic. Understand "laundromat", "how/-- to/-- enter the/-- laundromat" as the hint-enter-laundromat. The printed name is "how to enter the laundromat".
+hint-enter-laundromat is a hint topic. Understand "laundromat", "how/to/enter/the/laundromat" as the hint-enter-laundromat. The printed name is "how to enter the laundromat".
 
 Activating the hint-enter-laundromat:
 	if the laundromat back room is unvisited and the player knows laundromat-front-door-is-locked:
@@ -165,7 +165,7 @@ Hinting the hint-enter-laundromat:
 		otherwise:
 			go on;
 
-hint-klimp is a hint topic. Understand "chief/-- huffton/-- klimp", "chief" as the hint-klimp. The printed name is "Chief Klimp".
+hint-klimp is a hint topic. Understand "chief/huffton/klimp" as the hint-klimp. The printed name is "Chief Klimp".
 
 hint-klimp-lenses is an unlisted progressive hint topic. The progression is {"Faraji should explore Klimp's office. They might find something interesting.", "Faraji should examine the shelves in Klimp's office.", "Faraji should examine the astral lenses."}.
 		
@@ -179,12 +179,12 @@ Hinting the hint-klimp:
 	otherwise:
 		rule succeeds with result "Chief Klimp is a great source of knowledge about all sorts of useless things.";
 
-hint-moira is a hint topic. Understand "moira", "moira/-- zin" as the hint-moira. The printed name is "Moira Zin".
+hint-moira is a hint topic. Understand "moira/zin" as the hint-moira. The printed name is "Moira Zin".
 
 Hinting the hint-moira:
 	rule succeeds with result "Moira Zin is a field agent. She's the most competent person in the building, and she knows it. She is very proud of her book collection.";
 
-hint-strange-glow is a hint topic. Understand "glow", "strange glow" as the hint-strange-glow. The printed name is "strange glow".
+hint-strange-glow is a hint topic. Understand "strange/glow" as the hint-strange-glow. The printed name is "strange glow".
 
 hint-touch-the-glow is an unlisted progressive hint topic. The progression is {"I guess we're hoping the glow will do something interesting.", "I don't suppose singing to it will help.", "Maybe Faraji should enter it."}.
 
@@ -212,7 +212,7 @@ Activating the hint-darkness-laundromat:
 	otherwise:
 		deactivate;
 
-hint-handtruck is a hint topic. Understand "handtruck", "hand/-- truck" as the hint-handtruck. The printed name is "handtruck".
+hint-handtruck is a hint topic. Understand "handtruck", "hand/truck" as the hint-handtruck. The printed name is "handtruck".
 
 hint-handtruck-no-stairs is an unlisted progressive hint topic. The progression is {"Faraji can't take the handtruck down the stairs.", "If only there was another way to push the handtruck that didn't involve stairs.", "Is it possible there are other astral tunnels Faraji hasn't found yet?", "Faraji should wear the astral lenses, but they can't in the fluorescent light.", "Maybe Faraji could find a way to turn off the lights.", "There's a way to turn off the lights in the back basement."}.
 
@@ -227,14 +227,14 @@ Hinting the hint-handtruck:
 	otherwise:
 		abide by the hinting rules for the hint-handtruck-no-stairs;
 
-hint-featureless-hyperplane is a hint topic. Understand "featureless hyperplane", "hyperplane", "hyperspace" as the hint-featureless-hyperplane. The printed name is "featureless hyperplane".
+hint-featureless-hyperplane is a hint topic. Understand "featureless/hyperplane", "hyperspace" as the hint-featureless-hyperplane. The printed name is "featureless hyperplane".
 
 Activating the hint-featureless-hyperplane:
 	if the Featureless hyperplane is visited and Field office reception is unvisited:
 		activate;
 	deactivate;
 
-The hint-find-the-pillar is an unlisted progressive hint topic. Understand "pillar", "ethereal pillar" as the hint-find-the-pillar. The printed name is "pillar". The progression is {"Faraji should probably explore the featureless hyperplane.", "Follow the directions toward the distant structure."}.
+The hint-find-the-pillar is an unlisted progressive hint topic. Understand "ethereal/pillar" as the hint-find-the-pillar. The printed name is "pillar". The progression is {"Faraji should probably explore the featureless hyperplane.", "Follow the directions toward the distant structure."}.
 
 The hint-find-the-compass is an unlisted progressive hint topic. The progression is {"Faraji seems to have lost the mystic compass. They should probably find it.", "[compass location hint]"}.
 
@@ -271,7 +271,7 @@ Hinting the hint-featureless-hyperplane:
 	otherwise:
 		go on;
 
-The hint-field-office is a progressive hint topic. Understand "field office" as the hint-field-office. The printed name is "field office". The progression is {"Talk to Doris."}.
+The hint-field-office is a progressive hint topic. Understand "field/office" as the hint-field-office. The printed name is "field office". The progression is {"Talk to Doris."}.
 
 Activating the hint-field-office:
 	if field office reception is visited and the location is in hyperspace:
@@ -279,7 +279,7 @@ Activating the hint-field-office:
 	otherwise:
 		deactivate;
 
-The hint-new-bikers-of-troy is a progressive hint topic. Understand "new bikers of troy", "new/-- bikers", "troy" as the hint-new-bikers-of-troy. The printed name is "New Bikers of Troy". The progression is {"Faraji needs to find a book.", "The book may or may not be titled 'New Bikers of Troy'.", "It might be anywhere, hyperspace or elsewhere.", "Who has books?", "Faraji should check Minerva's office.", "Minerva will allow Faraji to borrow a book.", "If the book is not in Minerva's office, maybe Faraji needs to get out of hyperspace.", "Faraji should ask Doris about how to get out of hyperspace.", "Now that Faraji is in Moira's office, why don't they check out the bookshelves?", "Maybe the book isn't named 'New Bikers of Troy' exactly.", "Are there any books you've seen with similar names?", "How about anagrams?", "Faraji needs the book 'Tribes of New York' from Moira's library."}.
+The hint-new-bikers-of-troy is a progressive hint topic. Understand "new/bikers/of/troy" as the hint-new-bikers-of-troy. The printed name is "New Bikers of Troy". The progression is {"Faraji needs to find a book.", "The book may or may not be titled 'New Bikers of Troy'.", "It might be anywhere, hyperspace or elsewhere.", "Who has books?", "Faraji should check Minerva's office.", "Minerva will allow Faraji to borrow a book.", "If the book is not in Minerva's office, maybe Faraji needs to get out of hyperspace.", "Faraji should ask Doris about how to get out of hyperspace.", "Now that Faraji is in Moira's office, why don't they check out the bookshelves?", "Maybe the book isn't named 'New Bikers of Troy' exactly.", "Are there any books you've seen with similar names?", "How about anagrams?", "Faraji needs the book 'Tribes of New York' from Moira's library."}.
 
 Activating the hint-new-bikers-of-troy:
 	if about the mission is exhausted and Tribes of New York is not delivered:
@@ -287,7 +287,7 @@ Activating the hint-new-bikers-of-troy:
 	deactivate;
 
 hint-utility-closet-dark is a progressive hint topic. 
-Understand "in/-- the/-- dark" as the hint-utility-closet-dark.
+Understand "in/the/dark" as the hint-utility-closet-dark.
 The printed name is "in the dark". The progression is {"How can Faraji see in the dark?", "Maybe Faraji could do the same thing they did last time.", "Faraji should wear the astral lenses."}.
 
 Activating the hint-utility-closet-dark:
@@ -297,7 +297,7 @@ Activating the hint-utility-closet-dark:
 		deactivate;
 
 hint-utility-closet-trapped is a progressive hint topic. 
-Understand "trapped/-- in/-- the/-- utility/-- closet", "trapped" as the hint-utility-closet-trapped. The printed name is "trapped in the utility closet". The progression is {"How did Faraji get past a locked door last time?", "Faraji should knock on the door."}.	
+Understand "trapped/in/the/utility/closet", "trapped" as the hint-utility-closet-trapped. The printed name is "trapped in the utility closet". The progression is {"How did Faraji get past a locked door last time?", "Faraji should knock on the door."}.	
 
 Activating the hint-utility-closet-trapped:
 	if the location is the utility closet and the astral lenses are worn and the closet door is locked:
@@ -313,7 +313,7 @@ Activating the hint-thumb-drive:
 	otherwise:
 		deactivate;
 
-hint-enigma-lake is a progressive hint topic. Understand "enigma/-- lake" as the hint-enigma-lake. The printed name is "Enigma Lake". The progression is {"The town of Enigma Lake is an amazing place with lots of things to see!", "Well, maybe not that amazing, but it's more interesting than the Featureless Hyperplane.", "Faraji should explore the town if they want to find Daniels, the missing agent.", "There are probably hidden places to find, as well."}.
+hint-enigma-lake is a progressive hint topic. Understand "enigma/lake" as the hint-enigma-lake. The printed name is "Enigma Lake". The progression is {"The town of Enigma Lake is an amazing place with lots of things to see!", "Well, maybe not that amazing, but it's more interesting than the Featureless Hyperplane.", "Faraji should explore the town if they want to find Daniels, the missing agent.", "There are probably hidden places to find, as well."}.
 
 Activating the hint-enigma-lake:
 	if the location is in ELR:
@@ -321,7 +321,7 @@ Activating the hint-enigma-lake:
 	otherwise:
 		deactivate;
 
-hint-work-schedule is a progressive hint topic. Understand "work/-- schedule" as the hint-work-schedule. The printed name is "work schedule". The progression is {"It looks like a list of names assigned to days.", "What use is that when the town is about to be flooded?", "Maybe one of the names is significant.", "Remember the name 'Bill Thompson'."}.
+hint-work-schedule is a progressive hint topic. Understand "work/schedule" as the hint-work-schedule. The printed name is "work schedule". The progression is {"It looks like a list of names assigned to days.", "What use is that when the town is about to be flooded?", "Maybe one of the names is significant.", "Remember the name 'Bill Thompson'."}.
 
 Activating the hint-work-schedule:
 	if the work schedule is seen and the copper key is not handled:
@@ -329,7 +329,7 @@ Activating the hint-work-schedule:
 	otherwise:
 		deactivate;
 
-hint-backpack is a progressive hint topic. Understand "backpack", "back/-- pack" as the hint-backpack. The printed name is "backpack". The progression is {"Faraji might look inside.", "Ah, a key to a gym locker. Faraji better take it.", "Has Faraji examined the backpack?", "Better remember the initials 'WGT'"}.
+hint-backpack is a progressive hint topic. Understand "backpack", "back/pack/rucksack/napsack" as the hint-backpack. The printed name is "backpack". The progression is {"Faraji might look inside.", "Ah, a key to a gym locker. Faraji better take it.", "Has Faraji examined the backpack?", "Better remember the initials 'WGT'"}.
 	
 Activating the hint-backpack:
 	if the backpack is seen and the copper key is not handled:
@@ -337,7 +337,7 @@ Activating the hint-backpack:
 	otherwise:
 		deactivate;
 
-hint-get-into-skillet is a progressive hint topic. Understand "get/-- into/-- henry's hot/-- skillet/--" as the hint-get-into-skillet. The printed name is "get into Henry's". 
+hint-get-into-skillet is a progressive hint topic. Understand "get/into/henry's/hot/skillet" as the hint-get-into-skillet. The printed name is "get into Henry's". 
 The progression is {"Faraji could try knocking on the door.", "Okay then. Two options: Faraji finds a key, or finds another entrance.", "Faraji will need to search a good portion of the town to find a key.", "The key is not inside a building.", "But it is inside something.", "The key is inside the glove compartment, inside the abandoned truck, at the northeastern end of town."}.
 
 Activating hint-get-into-skillet:
@@ -346,14 +346,14 @@ Activating hint-get-into-skillet:
 	otherwise:
 		deactivate;
 
-hint-floor-waxer is a progressive hint topic. Understand "what/-- use/-- is/-- the/-- floor/-- waxer" as the hint-floor-waxer. The printed name is "what use is the floor waxer". The progression is {"Has Faraji tried turning on the floor waxer?", "And then turning it off again?", "What about pushing it around?", "Finally, maybe Faraji could push it out of the room.", "No? Well then, maybe it's really not useful."}.
+hint-floor-waxer is a progressive hint topic. Understand "what/use/is/the/floor/waxer" as the hint-floor-waxer. The printed name is "what use is the floor waxer". The progression is {"Has Faraji tried turning on the floor waxer?", "And then turning it off again?", "What about pushing it around?", "Finally, maybe Faraji could push it out of the room.", "No? Well then, maybe it's really not useful."}.
 
 activating hint-floor-waxer:
 	if the location is Rolle's Department Store:
 		activate;
 	deactivate;
 
-hint-threaded-socket is a progressive hint topic. Understand "threaded/-- socket" as the hint-threaded-socket. The printed name is "threaded socket". The progression is {"You're probably wondering what goes in the threaded socket.", "You'll know it when you see it."}.
+hint-threaded-socket is a progressive hint topic. Understand "threaded/socket" as the hint-threaded-socket. The printed name is "threaded socket". The progression is {"You're probably wondering what goes in the threaded socket.", "You'll know it when you see it."}.
 
 Activating hint-threaded-socket:
 	if the threaded socket is seen and the player does not know rusty-resonator-has-been-activated:
@@ -389,7 +389,7 @@ Activating hint-wires:
 		activate;
 	deactivate;
 
-hint-getting-back-to-BOSH is a progressive hint topic. Understand "get/-- back/-- to/-- bosh", "get back" as the hint-getting-back-to-BOSH. The printed name is "get back to BOSH". The progression is {"Does Faraji have any way of getting out of Enigma Lake?", "Faraji can use the recall button to return to the hyperspace field office.", "Then they can use the auxiliary portal to return to BOSH."}.
+hint-getting-back-to-BOSH is a progressive hint topic. Understand "get/back/to/bosh", "get back" as the hint-getting-back-to-BOSH. The printed name is "get back to BOSH". The progression is {"Does Faraji have any way of getting out of Enigma Lake?", "Faraji can use the recall button to return to the hyperspace field office.", "Then they can use the auxiliary portal to return to BOSH."}.
 
 Activating the hint-getting-back-to-BOSH:
 	if the location is in ELR:
@@ -452,7 +452,7 @@ Activating the hint-shiny-resonator:
 	deactivate;
 	
 
-The hint-bookstore-shelves is a progressive hint topic. Understand "bookstore shelves/shelf/bookshelf/bookshelves", "reading room shelves/shelf/bookshelf/bookshelves" as the hint-bookstore-shelves. The printed name is "bookstore shelves". The progression is {"You're probably wondering what the point of the bookstore shelves is.", "There isn't any point. Can't a thing exist just for its own sake?"}.
+The hint-bookstore-shelves is a progressive hint topic. Understand "bookstore/shelves/shelf/bookshelf/bookshelves", "reading room shelves/shelf/bookshelf/bookshelves" as the hint-bookstore-shelves. The printed name is "bookstore shelves". The progression is {"You're probably wondering what the point of the bookstore shelves is.", "There isn't any point. Can't a thing exist just for its own sake?"}.
 
 Activating the hint-bookstore-shelves:
 	if the location is the reading room:
@@ -460,7 +460,7 @@ Activating the hint-bookstore-shelves:
 	otherwise:
 		deactivate;
 
-The hint-bookstore-basement is a progressive hint topic. Understand "bookstore basement", "reading room basement" as the hint-bookstore-basement. The printed name is "bookstore basement". The progression is {"What's up with the walls in the basement?", "They're old and crumbling, and there's a breeze.", "Maybe there's something behind the walls.", "How would Faraji get through the walls?", "Faraji should probably look for a tool to break through the walls.", "Go find a sledgehammer.", "Once you have the sledgehammer, you can break through the walls.", "HIT WALLS WITH SLEDGEHAMMER"}.
+The hint-bookstore-basement is a progressive hint topic. Understand "bookstore/basement", "reading room basement" as the hint-bookstore-basement. The printed name is "bookstore basement". The progression is {"What's up with the walls in the basement?", "They're old and crumbling, and there's a breeze.", "Maybe there's something behind the walls.", "How would Faraji get through the walls?", "Faraji should probably look for a tool to break through the walls.", "Go find a sledgehammer.", "Once you have the sledgehammer, you can break through the walls.", "HIT WALLS WITH SLEDGEHAMMER"}.
 
 Activating the hint-bookstore-basement:
 	if the bookstore basement is visited:
@@ -474,7 +474,7 @@ Activating the hint-fire-station:
 		activate;
 	deactivate;
 
-The hint-doll-fly is a hint topic. Understand "doll-fly" as the hint-doll-fly. 
+The hint-doll-fly is a hint topic. Understand "doll-fly/doll/fly" as the hint-doll-fly. 
 The hint-doll-fly has a text called the secret name.
 The hint-doll-fly has a text called the secret first name.
 The hint-doll-fly has a text called the secret last name.
@@ -510,14 +510,14 @@ Activating the hint-doll-fly:
 		activate;
 	deactivate;
 
-The hint-extension-cord is a progressive hint topic. Understand "extension/cord" as the hint-extension-cord. The printed name is "extension cord". The progression is {"What do people use extension cords for?"}.
+The hint-extension-cord is a progressive hint topic. Understand "extension/cord" as the hint-extension-cord. The printed name is "extension cord". The progression is {"What do people use extension cords for?", "There's an electrical outlet in the church.", "There's no need to unplug it once it's plugged into the church outlet.", "Two different things can be plugged into the extension cord. One is the table lamp in the department store.", "The other you'll know when you have it."}.
 
 Activating the hint-extension-cord:
 	if the extension cord is seen and not mounted-makeshift-resonator:
 		activate;
 	deactivate;
 
-The hint-bible is a progressive hint topic. Understand "Book of Utilitarianism", "bible" as the hint-bible. The printed name is "Book of Utilitarianism". The progression is {"I wonder if any of this stuff is important.", "Is there a passage that would be useful if it came true?", "What about the passage about the cursèd word?", "The cursèd word is '[cursed word] '", "Who might Faraji say that to?", "Faraji should try saying the cursèd word to the group of lizard people."}.
+The hint-bible is a progressive hint topic. Understand "Book/of/Utilitarianism", "bible" as the hint-bible. The printed name is "Book of Utilitarianism". The progression is {"I wonder if any of this stuff is important.", "Is there a passage that would be useful if it came true?", "What about the passage about the cursèd word?", "The cursèd word is '[cursed word] '", "Who might Faraji say that to?", "Faraji should try saying the cursèd word to the group of lizard people."}.
 
 hinting the hint-bible:
 	if the Book of Utilitarianism is not read:
@@ -530,7 +530,7 @@ Activating the hint-bible:
 		activate;
 	deactivate;
 
-The hint-lizard-people is a hint topic. Understand "lizard people" as the hint-lizard-people. The printed name is "lizard people". 
+The hint-lizard-people is a hint topic. Understand "lizard/people" as the hint-lizard-people. The printed name is "lizard people". 
 
 The hint-lizard-people-second is an unlisted progressive hint topic. The progression is {"Annoying, aren't they?", "Faraji should probably try staying away from them.", "But that's not always possible.", "And what's the significance of the shiny object they're carrying?", "How can Faraji get it?", "Faraji should try talking to them.", "No, that doesn't work."}. 
 
@@ -549,7 +549,7 @@ Activating the hint-lizard-people:
 		activate;
 	deactivate;
 
-The hint-wooden-frame is a hint topic. Understand "wooden/-- frame" as the hint-wooden-frame. The printed name is "wooden frame". 
+The hint-wooden-frame is a hint topic. Understand "wooden/frame" as the hint-wooden-frame. The printed name is "wooden frame". 
 
 The hint-wooden-frame-witnessing is an unlisted progressive hint topic.
 The progression is {"The Witnessing of Hezekiah mentions a frame formed 'from the wood of the ash tree'.", "Hezekiah also mentions 'a sacred artifact, a resonator'.", "Faraji can't proceed further if they don't know what 'a resonator' is."}.
@@ -570,21 +570,21 @@ Activating the hint-wooden-frame:
 		activate;
 	deactivate;
 
-The hint-resonant-origin is a progressive hint topic. Understand "resonant origin" as the hint-resonant-origin. The printed name is "resonant origin". The progression is {"What might the resonant origin be?", "What might be the origin of resonance?", "Maybe Faraji should look around the town some more.", "The tuning fork in the music store is a source of resonance.", "Faraji should try inserting the tuning fork into the wooden frame."}.
+The hint-resonant-origin is a progressive hint topic. Understand "resonant/origin" as the hint-resonant-origin. The printed name is "resonant origin". The progression is {"What might the resonant origin be?", "What might be the origin of resonance?", "Maybe Faraji should look around the town some more.", "The tuning fork in the music store is a source of resonance.", "Faraji should try inserting the tuning fork into the wooden frame."}.
 
 Activating the hint-resonant-origin:
 	if the hint-wooden-frame-resonator is exhausted and the makeshift astral resonator is nowhere and the tuning fork is not in the wooden frame:
 		activate;
 	deactivate;
 
-The hint-ghostly-light is a progressive hint topic. Understand "ghostly light" as the hint-ghostly-light. The printed name is "ghostly light". The progression is {"What might the ghostly light be?", "What light sources has Faraji seen?", "Look around the town for a light source.", "The light bulb in the workshed is a source of light (if it's screwed into something).", "The table lamp in the department store is a source of light.", "Faraji should try inserting one of the light sources into the wooden frame."}.
+The hint-ghostly-light is a progressive hint topic. Understand "ghostly/light" as the hint-ghostly-light. The printed name is "ghostly light". The progression is {"What might the ghostly light be?", "What light sources has Faraji seen?", "Look around the town for a light source.", "The light bulb in the workshed is a source of light (if it's screwed into something).", "The table lamp in the department store is a source of light.", "Faraji should try inserting one of the light sources into the wooden frame."}.
 
 Activating the hint-ghostly-light:
 	if the hint-wooden-frame-resonator is exhausted and the makeshift astral resonator is nowhere and the table lamp is not in the wooden frame:
 		activate;
 	deactivate;
 
-The hint-astral-focus is a progressive hint topic. Understand "astral focus" as the hint-astral-focus. The printed name is "astral focus". The progression is {"What might the astral focus be?", "Does Faraji know of any things having to do with focus?", "Lenses are used to focus light.", "Faraji should try inserting the astral lenses into the wooden frame."}.
+The hint-astral-focus is a progressive hint topic. Understand "astral/focus" as the hint-astral-focus. The printed name is "astral focus". The progression is {"What might the astral focus be?", "Does Faraji know of any things having to do with focus?", "Lenses are used to focus light.", "Faraji should try inserting the astral lenses into the wooden frame."}.
 
 Activating the hint-astral-focus:
 	if the hint-wooden-frame-resonator is exhausted and the makeshift astral resonator is nowhere and the pair of astral lenses is not in the wooden frame:
@@ -612,7 +612,7 @@ hinting the hint-makeshift-astral-resonator:
 	otherwise:
 		abide by the hinting rules for the hint-makeshift-astral-resonator-mounting;
 
-The dark basement is a progressive hint topic. Understand "dark/-- basement", "dark" as the dark basement. The printed name is "dark basement". The progression is {"There are two ways to light a dark room.", "One can wear the astral lenses to see in the dark.", "One can use a light source."}.
+The dark basement is a progressive hint topic. Understand "dark/basement", as the dark basement. The printed name is "dark basement". The progression is {"There are two ways to light a dark room.", "One can wear the astral lenses to see in the dark.", "One can use a light source."}.
 
 Activating the dark basement:
 	if the church basement is witnessed in darkness and the church basement is unvisited:
@@ -621,7 +621,7 @@ Activating the dark basement:
 
 Volume 1 - Read the Book of Utilitarianism
 
-The hint-read-the-book-of-utilitarianism is a hint topic. Understand "read/-- the/-- book/-- of/-- utilitarianism", "read the/-- book" as the hint-read-the-book-of-utilitarianism. The printed name is "read the Book of Utilitarianism". 
+The hint-read-the-book-of-utilitarianism is a hint topic. Understand "read/the/book/of/utilitarianism" as the hint-read-the-book-of-utilitarianism. The printed name is "read the Book of Utilitarianism". 
 
 Activating the hint-read-the-book-of-utilitarianism:
 	if the Book of Utilitarianism is not successfully read and the Book of Utilitarianism is unsuccessfully read:
@@ -665,65 +665,65 @@ Activating the hint-read-bou-find-lamp:
 Hinting the hint-read-bou-find-lamp:
 	abide by the hinting rules for the hint-read-bou-find-lamp-progressive;
 
-The hint-read-bou-find-lamp-progressive is an unlisted progressive hint topic. The progression is {"Faraji should look around town more.", "There is a table lamp in the department store, south of the town hall."}.
+The hint-read-bou-find-lamp-progressive is an unlisted progressive hint topic. The progression is {"Finding a light source to read the Book of Utilitarianism: Faraji should look around town more.", "Finding a light source to read the Book of Utilitarianism: There is a table lamp in the department store, south of the town hall."}.
 
-The hint-read-bou-find-light-bulb is an unlisted progressive hint topic. The progression is {"A lamp without a bulb isn't very useful.", "Faraji should find a light bulb.", "Faraji should look around town more.", "There is a light bulb in the workshed on the lake shore. It is screwed into an cord hanging from the ceiling."}.
+The hint-read-bou-find-light-bulb is an unlisted progressive hint topic. The progression is {"Finding a light source to read the Book of Utilitarianism: A lamp without a bulb isn't very useful.", "Finding a light source to read the Book of Utilitarianism: Faraji should find a light bulb.", "Finding a light source to read the Book of Utilitarianism: Faraji should look around town more.", "Finding a light source to read the Book of Utilitarianism: There is a light bulb in the workshed on the lake shore. It is screwed into a cord hanging from the ceiling."}.
 
 Activating the hint-read-bou-find-light-bulb:
 	if the light bulb is not handled:
 		activate;
 	deactivate;
 
-The hint-read-bou-find-extension-cord is an unlisted progressive hint topic. The progression is {"If the table lamp is plugged into the electrical outlet, the cord is too short to reach the basement.", "Faraji needs to find an extension cord.", "Faraji should look around town more.", "There is an extension cord in the basement of the bookstore."}.
+The hint-read-bou-find-extension-cord is an unlisted progressive hint topic. The progression is {"Finding a light source to read the Book of Utilitarianism: If the table lamp is plugged into the electrical outlet, the cord is too short to reach the basement.", "Finding a light source to read the Book of Utilitarianism: Faraji needs to find an extension cord.", "Finding a light source to read the Book of Utilitarianism: Faraji should look around town more.", "Finding a light source to read the Book of Utilitarianism: There is an extension cord in the basement of the bookstore."}.
 
 Activating the hint-read-bou-find-extension-cord:
 	if the extension cord is not handled or the table lamp is plugged into the electrical outlet:
 		activate;
 	deactivate;
 		
-The hint-read-bou-plug-in-extension-cord is an unlisted progressive hint topic. The progression is {"Faraji should plug the extension cord into the electrical outlet."}.
+The hint-read-bou-plug-in-extension-cord is an unlisted progressive hint topic. The progression is {"Finding a light source to read the Book of Utilitarianism: Faraji should plug the extension cord into the electrical outlet."}.
 
 Activating the hint-read-bou-plug-in-extension-cord:
 	if the extension cord is handled and the plug-end is not plugged into the electrical outlet:
 		activate;
 	deactivate;
 
-The hint-read-bou-plug-in-lamp is an unlisted progressive hint topic. The progression is {"Faraji should plug the table lamp into the extension cord."}.
+The hint-read-bou-plug-in-lamp is an unlisted progressive hint topic. The progression is {"Finding a light source to read the Book of Utilitarianism: Faraji should plug the table lamp into the extension cord."}.
 
 Activating the hint-read-bou-plug-in-lamp:
 	if the table lamp is handled and the table lamp is not plugged into the socket-end:
 		activate;
 	deactivate;
 
-The hint-read-bou-power-lamp is an unlisted progressive hint topic. The progression is {"Faraji should turn on the table lamp."}.
+The hint-read-bou-power-lamp is an unlisted progressive hint topic. The progression is {"Finding a light source to read the Book of Utilitarianism: Faraji should turn on the table lamp."}.
 
 Activating the hint-read-bou-power-lamp:
 	if the table lamp is not switched on:
 		activate;
 	deactivate;
 
-The hint-read-bou-turn-on-breaker is an unlisted progressive hint topic. The progression is {"Maybe the building doesn't have power.", "Perhaps there is a switch somewhere, but where?", "Maybe it's hidden.", "Faraji should look around the building for a likely hiding place.", "Faraji should look behind the tapestry in the vestry.", "FLIP SWITCH"}.
+The hint-read-bou-turn-on-breaker is an unlisted progressive hint topic. The progression is {"Finding a light source to read the Book of Utilitarianism: Maybe the building doesn't have power.", "Finding a light source to read the Book of Utilitarianism: Perhaps there is a switch somewhere, but where?", "Finding a light source to read the Book of Utilitarianism: Maybe it's hidden.", "Finding a light source to read the Book of Utilitarianism: Faraji should look around the building for a likely hiding place.", "Finding a light source to read the Book of Utilitarianism: Faraji should look behind the tapestry in the vestry.", "FLIP SWITCH"}.
 
 Activating the hint-read-bou-turn-on-breaker:
 	if the table lamp is not powered:
 		activate;
 	deactivate;
 
-The hint-horton-house-enter is a progressive hint topic. Understand "enter/-- the/-- horton house" as the hint-horton-house-enter. The printed name is "enter the Horton House". The progression is {"The front door is locked. Faraji could try another entrance.", "There is no obvious other entrance.", "Faraji could look for a key.", "Faraji should look around the town for a key.", "Faraji should look in the glove compartment of the abandoned truck."}.
+The hint-horton-house-enter is a progressive hint topic. Understand "enter/the/horton/house" as the hint-horton-house-enter. The printed name is "enter the Horton House". The progression is {"The front door is locked. Faraji could try another entrance.", "There is no obvious other entrance.", "Faraji could look for a key.", "Faraji should look around the town for a key.", "The key is locked in the gymnasium somewhere."}.
 
 Activating the hint-horton-house-enter:
 	if the old wooden door is locked and the Horton House is unvisited and the old wooden door is tried:
 		activate;
 	deactivate;
 
-The hint-horton-house-graveyard is a progressive hint topic. Understand "horton/-- house/-- graveyard" as the hint-horton-house-graveyard. The printed name is "Horton graveyard". The progression is {"There must be something to do here.", "Look around carefully.", "EXAMINE HOLES", "The large hole looks interesting.", "The large hole is too deep to climb into unaided (and presumably to climb back out of).", "Faraji needs a ladder to get down there.", "Faraji should look around town for a ladder.", "Faraji should look in the fire station."}.
+The hint-horton-house-graveyard is a progressive hint topic. Understand "horton/house/graveyard" as the hint-horton-house-graveyard. The printed name is "Horton graveyard". The progression is {"There must be something to do here.", "Look around carefully.", "EXAMINE HOLES", "The large hole looks interesting.", "The large hole is too deep to climb into unaided (and presumably to climb back out of).", "Faraji needs a ladder to get down there.", "Faraji should look around town for a ladder.", "Faraji should look in the fire station."}.
 
 Activating the hint-horton-house-graveyard:
 	if the Horton graveyard is visited and the large grave is unvisited:
 		activate;
 	deactivate;
 
-The hint-hutz-help is a hint topic. Understand "getting/-- help/-- from/-- Hutz" as the hint-hutz-help. The printed name is "getting help from Hutz".
+The hint-hutz-help is a hint topic. Understand "getting/help/from/Hutz" as the hint-hutz-help. The printed name is "getting help from Hutz".
 
 Activating the hint-hutz-help:
 	if Help-me is exhausted and Now-can-you-help-me is not exhausted:
@@ -770,11 +770,11 @@ Activating the hint-dowsing-rod:
 		activate;
 	deactivate;
 
-The hint-find-the-portal is a hint topic. The printed name is "Now what?". Understand "now what" as the hint-find-the-portal. 
+The hint-find-the-portal is a hint topic. The printed name is "Now what?". Understand "now/what" as the hint-find-the-portal. 
 
 The hint-find-the-portal-get-below is an unlisted progressive hint topic.  The progression is {"'Below the obelisk, something has woken.' What could that mean?", "Can Faraji get below the obelisk?"}.
 
-The hint-find-the-portal-find-cave is an unlisted progressive hint topic. The progression is {"Remember that the dowsing rod can help you find buried things.", "Faraji should try going more places with the dowsing rod.", "Faraji should go to the workshed with the dowsing rod.", "The Faraji should EXAMINE FLOOR."}.
+The hint-find-the-portal-find-cave is an unlisted progressive hint topic. The progression is {"Remember that the dowsing rod can help you find buried things.", "Faraji should try going more places with the dowsing rod.", "Faraji should go to the workshed with the dowsing rod.", "Then Faraji should EXAMINE FLOOR."}.
 
 Activating the hint-find-the-portal:
 	if portal opened is true and the old root cellar is unvisited:
@@ -805,7 +805,7 @@ Activating the hint-root-cellar:
 		activate;
 	deactivate;
 
-The hint-answer-the-phone-finally is a progressive hint topic. Understand "finally/-- answer/-- the/-- phone finally/--" as the hint-answer-the-phone-finally. The printed name is "answer the phone finally". The progression is {"Faraji still needs to answer the phone.", "What is this thing Daniels gave us? A wristwatch?", "Maybe it's the pawn shop owner's watch.", "Faraji should go to the pawn shop and give the watch to the owner.", "What can Faraji do with a gift card for $5?", "Faraji should go to the conveinence store and buy something.", "Like a screwdriver, maybe.", "Faraji should go to the front office and open the vent with the screwdriver.", "Faraji should use the hex wrench to open the desk.", "Faraji should answer the phone. There! Was that so hard?"}.
+The hint-answer-the-phone-finally is a progressive hint topic. Understand "finally/answer/the/phone" as the hint-answer-the-phone-finally. The printed name is "answer the phone finally". The progression is {"Faraji still needs to answer the phone.", "What is this thing Daniels gave us? A wristwatch?", "Maybe it's the pawn shop owner's watch.", "Faraji should go to the pawn shop and give the watch to the owner.", "What can Faraji do with a gift card for $5?", "Faraji should go to the conveinence store and buy something.", "Like a screwdriver, maybe.", "Faraji should go to the front office and open the vent with the screwdriver.", "Faraji should use the hex wrench to open the desk.", "Faraji should answer the phone. There! Was that so hard?"}.
 
 Activating the hint-answer-the-phone-finally:
 	if the blue flipphone is not handled and the dumpster is visited:
@@ -818,5 +818,14 @@ Activating the hint-doris-thumb-drive:
 	if Doris is seen and the thumb drive is not handled:
 		activate;
 	deactivate;
+
+The hint-getting-into-the-gym is a progressive hint topic. Understand "getting/into/the/gym/gymnasium" as the hint-getting-into-the-gym. The printed name is "getting into the gym". The progression is {"You've probably noticed the gym is locked. Is there another way in?", "It's not a key.", "Faraji should look around the town for a way to get into the gym.", "Faraji should look in the bookstore basement.", "Once Faraji is in the sewer tunnels, use the astral lenses to look for a tunnel."}.
+
+Activating the hint-getting-into-the-gym:
+	if the gym door is tried and the gymnasium is unvisited:
+		activate;
+	deactivate;
+
+The hint-open-locker is a progressive hint topic. Understand "open/locker" as the hint-open-locker. The printed name is "open locker". The progression is {"There is a bank of 100 lockers in the gym basement. They are all locked.", "Faraji can find a key in the backpack behind the information desk in the town hall.", "But which locker should Faraji open?", "Faraji should read the work schedule on the information desk in the town hall, and examine the backpack.", "That should answer the question of who owns the backpack.", "The name is William Thompson", "Faraji should look up William Thompson in the membership book in the gymnasium.", "That will tell you which locker Faraji should open."}.
 
 BOSH Hints ends here.

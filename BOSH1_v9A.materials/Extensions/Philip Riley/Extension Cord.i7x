@@ -214,7 +214,10 @@ To maybe condense the extension cord:
 Instead of plugging the extension cord into something when the second noun is not the extension cord:
 	separate the extension cord;
 	set pronouns from the socket-end;
-	try plugging the plug-end into the second noun;
+	if second noun is plug-into-able:
+		try plugging the plug-end into the second noun;
+	otherwise if second noun is pluggable:
+		try plugging the second noun into the socket-end;
 	maybe condense the extension cord;
 
 Instead of unplugging the extension cord:
@@ -226,7 +229,10 @@ Instead of unplugging the extension cord:
 Instead of plugging something into the extension cord when the noun is not the extension cord:
 	separate the extension cord;
 	set pronouns from the noun;
-	try plugging the noun into the socket-end;
+	if the noun is pluggable:
+		try plugging the noun into the socket-end;
+	otherwise if the noun is plug-into-able:
+		try plugging the plug-end into the noun;
 	maybe condense the extension cord;
 
 Instead of dropping the extension cord:
