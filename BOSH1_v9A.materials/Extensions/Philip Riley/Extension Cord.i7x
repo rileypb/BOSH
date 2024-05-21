@@ -262,11 +262,13 @@ Instead of inserting the extension cord into something:
 	maybe separate the extension cord;
 	if the player carries the plug-end:
 		silently try inserting the plug-end into the second noun;
-		if the plug-end is not in the second noun:
+		if the plug-end is not in the second noun and the extension cord is not in the second noun:
+			say "???";
 			stop the action;
 	if the player carries the socket-end:
 		silently try inserting the socket-end into the second noun;
-		if the socket-end is not in the second noun:
+		if the socket-end is not in the second noun and the extension cord is not in the second noun:
+			say "!!!";
 			stop the action;
 	maybe condense the extension cord;
 	puts "[text of standard report inserting rule response (A)][line break]";

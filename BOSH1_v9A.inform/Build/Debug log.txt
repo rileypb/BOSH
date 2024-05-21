@@ -85,7 +85,7 @@ I've also read Secret Doors by Gavin Lambert, which is 272 words long.
 I've also read Plugging by Philip Riley, which is 791 words long.
 I've also read Books by Philip Riley, which is 2480 words long.
 I've also read Container Types by Philip Riley, which is 55 words long.
-I've also read Extension Cord by Philip Riley, which is 3438 words long.
+I've also read Extension Cord by Philip Riley, which is 3462 words long.
 I've also read State Update by Philip Riley, which is 452 words long.
 I've also read Hints by Philip Riley, which is 849 words long.
 I've also read Two-Sided Doors by Philip Riley, which is 2270 words long.
@@ -339,7 +339,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 292 files written as streams.
-CPU time: 1344 centiseconds
+CPU time: 1342 centiseconds
 
 
 That concludes the debugging log from this run of Inform.
