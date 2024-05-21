@@ -173,6 +173,8 @@ Instead of examining the makeshift astral resonator:
 	say "The [makeshift astral resonator] is a cobbled-together device, made from a tuning fork, a spotlight, and the astral lenses. A short cord with a plug dangles from the end opposite the lenses";
 	if the makeshift astral resonator is plugged into the electrical outlet:
 		say ", plugged into the electrical outlet";
+	if the makeshift astral resonator is plugged into the extension cord or the makeshift astral resonator is plugged into the socket-end:
+		say ", plugged into the extension cord";
 	if mounted-makeshift-resonator:
 		say ". It sits on a tripod, and a beam of light shoots from the lens, striking the obelisk in the park. The crystal is glowing [crystal glow].";
 	otherwise if the makeshift astral resonator is powered:

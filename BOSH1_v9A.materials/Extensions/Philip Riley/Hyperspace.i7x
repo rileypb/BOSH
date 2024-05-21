@@ -1300,7 +1300,7 @@ about the mission is a questioning quip.
 	It follows about Savra.
 	It follows about the Dragon.
 	It follows about-time-travel.
-	It is sticky.
+	[ It is sticky. ]
 
 Doris's note is a thing. The description is "It's a bunch of cryptic scribbles."
 
