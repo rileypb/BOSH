@@ -59,7 +59,7 @@ I've also read Hyperspace by Philip Riley, which is 16747 words long.
 I've also read BOSH Facts by Philip Riley, which is 193 words long.
 I've also read Swamp Park by Philip Riley, which is 8028 words long.
 I've also read Margaret by Philip Riley, which is 2531 words long.
-I've also read Enigma Lake by Philip Riley, which is 30418 words long.
+I've also read Enigma Lake by Philip Riley, which is 30178 words long.
 I've also read I Can Dig It by Philip Riley, which is 77 words long.
 I've also read BOSH Help by Philip Riley, which is 6496 words long.
 I've also read Overlook by Philip Riley, which is 763 words long.
@@ -153,7 +153,7 @@ Regional: CONSTANT_VNT'elr'-region(I546_elr)(I436'elr')
  == region
 Regional: CONSTANT_VNT'elr'-region(I546_elr)(I436'elr')
  == region
-Regional: CONSTANT_VNT'help area'-region(I808_help_area)(I696'help area')
+Regional: CONSTANT_VNT'help area'-region(I803_help_area)(I691'help area')
  == region
 Regional: CONSTANT_VNT'elr'-region(I546_elr)(I436'elr')
  == region
@@ -161,7 +161,7 @@ Regional: CONSTANT_VNT'elr'-region(I546_elr)(I436'elr')
  == region
 Regional: CONSTANT_VNT'elr'-region(I546_elr)(I436'elr')
  == region
-Regional: CONSTANT_VNT'help area'-region(I808_help_area)(I696'help area')
+Regional: CONSTANT_VNT'help area'-region(I803_help_area)(I691'help area')
  == region
 
 
@@ -295,9 +295,9 @@ Regional: CONSTANT_VNT'elr'-region(I546_elr)(I436'elr')
              == region
             Regional: CONSTANT_VNT'elr'-region(I546_elr)(I436'elr')
              == region
-            Regional: CONSTANT_VNT'help area'-region(I808_help_area)(I696'help area')
+            Regional: CONSTANT_VNT'help area'-region(I803_help_area)(I691'help area')
              == region
-            Regional: CONSTANT_VNT'help area'-region(I808_help_area)(I696'help area')
+            Regional: CONSTANT_VNT'help area'-region(I803_help_area)(I691'help area')
              == region
 
 
@@ -339,7 +339,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 292 files written as streams.
-CPU time: 1295 centiseconds
+CPU time: 1344 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

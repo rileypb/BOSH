@@ -1030,6 +1030,8 @@ Instead of examining the Book of Utilitarianism when the doll-fly is not in the 
 
 Book 16.5 - The Doll-Fly
 
+The Rod of Hezekiah is carried by the doll-fly. The description is "A rod of blackened wood, it seems to pulse with with a vital energy." The indefinite article is "the".
+
 Chapter 1 - Figuring its name
 
 The first names is a list of text that varies. 
@@ -1092,8 +1094,9 @@ Before answering the doll-fly that something:
 	if the topic understood in lower case is the incantation of the doll-fly in lower case:
 		say "Upon hearing the incantation [italic type][incantation of the doll-fly][roman type], [the doll-fly] wails a high-pitched, mournful sound, and then winks out of existence.";
 		now the doll-fly is off-stage;
+		now the Rod of Hezekiah is in the location;
 		lb;
-		say "[italic type][bracket]Yeah, that's right, you heard me: [incantation of the doll-fly]![close bracket][roman type][paragraph break]";
+		[ say "[italic type][bracket]Yeah, that's right, you heard me: [incantation of the doll-fly]![close bracket][roman type][paragraph break]"; ]
 		stop the action;
 	otherwise:
 		say "The doll-fly buzzes around, but doesn't respond.";
@@ -1462,7 +1465,7 @@ Instead of examining the steeple-obelisk-facade:
 			say "Two beams of light are focused on the obelisk from elsewhere, striking the crystal adornment at its apex. The crystal is glowing brightly.";
 	otherwise if beam count is 3:
 		say "Three beams of light are focused on the obelisk, one from the steeple and two from elsewhere, striking the crystal adornment at its apex. The crystal is glowing brightly.";
-		say "[paragraph break][italic type][bracket]Far out![close bracket][roman type]";
+		[ say "[paragraph break][italic type][bracket]Far out![close bracket][roman type]"; ]
 	otherwise:
 		say paragraph break;
 
@@ -1991,18 +1994,9 @@ The thin straw mattress is part of the small bed. The description is "The mattre
 The rickety wardrobe is a closed openable enterable scenery container in the Second Floor of the Horton House. "A rickety wardrobe stands against a wall. It is [if open]open[otherwise]closed[end if]."
 [ The snarky remark of the rickety wardrobe is "Don't climb into it. There's probably something much worse than a lion and a witch in there." ]
 
-The wooden frame is a container. The description is "A piece of wood, about two feet long with three holes carved in it. It looks like the holes are meant to hold things. Leather straps appear to be meant to hold those things in the frame." Understand "container" as the wooden frame.
-[ The snarky remark of the wooden frame is "This couldn't possibly be useful. I should just leave it here." ]
+The wooden frame is an open, openable container. The description is "A strange, bulbous wooden container, with [if the wooden frame is open]an open wooden lid[otherwise]a closed wooden lid[end if]."
 
-The frame holes are part of the wooden frame. The description is "Three holes are carved in the frame, one large, one medium, and one small."
-
-The large frame hole is part of the wooden frame. The description is "The large hole is several inches in diameter."
-
-The medium frame hole is part of the wooden frame. The description is "The medium hole is about two inches in diameter."
-
-The small frame hole is part of the wooden frame. The description is "The small hole is very small, a few centimeters in diameter."
-
-The leather straps are part of the wooden frame. The description is "Leather straps are attached to the frame, meant to hold things in the holes."
+Understand "container/strange/bulbous/lid" as the wooden frame.
 
 The stairs-second-floor is scenery in the Second Floor of the Horton House. "A staircase leads down."
 It is privately-named. The printed name is "staircase". Understand "staircase/stairs/stair" as stairs-second-floor.
@@ -2124,7 +2118,7 @@ Horton-back-facade is a building facade. It is in Horton Graveyard. It is privat
 [ The snarky remark of Horton-back-facade is "It doesn't look any less creepy from the back." ]
 
 The Witnessing of Hezekiah is in the wardrobe. It is proper-named. The printed name is "[italic type]The Witnessing of Hezekiah[roman type]". Understand "book" as The Witnessing of Hezekiah.  
-The description is "A small, leather-bound book, titled 'The Witnessing of Hezekiah: as told to Jeremiah Horton by Hezekiah Horton'. The book is filled with strange, cryptic passages, and is difficult to read. [We] [find] one page of particular interest. It reads, 'And lo, Hezekiah, in his wisdom, did prophesy of the impending flood and the necessity to make ready. He spoke of a sacred artifact, a resonator, bestowed with divine power, that would unveil a gateway to the ethereal realm. And he revealed the quest to find the lost astral traveler who would guide the faithful out of the coming darkness. Thus spake Hezekiah: [']First form from the wood of the ash tree a frame. Then take the resonant instrument, and with reverence, bind it to the ghostly light, and then to the astral focus. Ascend the ladder and, channeling a mighty power through the resonator, direct it towards the crystal eye. Once thou hast done this, strike the eye likewise twice more, and the portal shall open, revealing the path to transcendence.[']'".
+The description is "A small, leather-bound book, titled 'The Witnessing of Hezekiah: as told to Jeremiah Horton by Hezekiah Horton'. The book is filled with strange, cryptic passages, and is difficult to read. [We] [find] one page of particular interest. It reads, 'And lo, Hezekiah, in his wisdom, did prophesy of the impending flood and the necessity to make ready. He spoke of a sacred artifact, a resonator, bestowed with divine power, that would unveil a gateway to the ethereal realm. And he revealed the quest to find the lost astral traveler who would guide the faithful out of the coming darkness. Thus spake Hezekiah: [']First form from the wood of the ash tree a frame. Fill it with the sound of the resonant instrument, bathe it in the ghostly light, and bind it to the astral focus. Strike the frame with my Rod to create the astral resonator. Ascend the ladder and channel a mighty power through the resonator, directing it towards the crystal eye. Once thou hast done this, illuminate the eye likewise twice more, and the portal shall open, revealing the path to transcendence.[']'".
 It is unsnarkable. The Witnessing of Hezekiah can be read.
 
 The shiny astral resonator is a thing. It is privately-named. The description is "A small, shiny, metallic, cylindrical object. One end is capped with a lens, while the other terminates in two shiny metal chains, each with a shiny metal clamp, as if it were designed to be attached to something.".
@@ -2319,7 +2313,7 @@ It is unsnarkable.
 
 To break is a verb.
 
-Attacking it with is an action applying to two things. Understand "attack [something] with [something]", "break [something] with [something]", "smash [something] with [something]", "hit [something] with [something]", "strike [something] with [something]", "pound [something] with [something]", "pummel [something] with [something]", "bash [something] with [something]", "crush [something] with [something]", "destroy [something] with [something]", "demolish [something] with [something]", "wreck [something] with [something]", "shatter [something] with [something]", "splinter [something] with [something]", "crack [something] with [something]", "thump [something] with [something]", "wallop [something] with [something]" as attacking it with.
+Attacking it with is an action applying to one thing and one carried thing. Understand "attack [something] with [something]", "break [something] with [something]", "smash [something] with [something]", "hit [something] with [something]", "strike [something] with [something]", "pound [something] with [something]", "pummel [something] with [something]", "bash [something] with [something]", "crush [something] with [something]", "destroy [something] with [something]", "demolish [something] with [something]", "wreck [something] with [something]", "shatter [something] with [something]", "splinter [something] with [something]", "crack [something] with [something]", "thump [something] with [something]", "wallop [something] with [something]", "tap [something] with [something]" as attacking it with.
 Understand "swing [something] at [something]" as attacking it with (with nouns reversed).
 
 Check attacking something with something when the second noun is not the sledgehammer:
@@ -2579,7 +2573,7 @@ Instead of examining the table lamp:
 		say ", no bulb, and no shade";
 	otherwise:
 		say ", a light bulb in the socket, but no shade";
-	say ". It looks like it's seen better days";
+	say ". It looks like it's seen better days. On the base is the branding 'Spectre'";
 	if the table lamp is plugged into something (called the socket):
 		say ". It is plugged into [the socket]";
 	otherwise:
@@ -3156,7 +3150,7 @@ Instead of answering something that when the group of lizard people is in the lo
 	otherwise:
 		say "At your word, the lizard people scream and hiss, creating a strange cloud of thick vapor. When the vapor clears, they are gone, but they have left something behind. There is [a shiny astral resonator] on the ground!";
 		lb;
-		say "[italic type][bracket]Yes, run away, you stupid... lizard people![close bracket][roman type][paragraph break]";
+		[ say "[italic type][bracket]Yes, run away, you stupid... lizard people![close bracket][roman type][paragraph break]"; ]
 		now the group of lizard people is nowhere;
 		now the shiny astral resonator is in the location;
 		now the lizard countdown is 0;
@@ -3194,10 +3188,10 @@ Volume 4.75 - Building the Makeshift Astral Resonator
 Check plugging the table lamp into something when the table lamp is in the wooden frame:
 	say "The table lamp can't be plugged into something while it's in the wooden frame." instead;
 
-After inserting the astral lenses into the wooden frame:
+[ After inserting the astral lenses into the wooden frame:
 	say "Faraji inserts the astral lenses into the wooden frame. They fit perfectly in a long, narrow slot cut into the wood. The frame now holds [the list of things contained by the wooden frame].";
 	if the number of things contained by the wooden frame is 3:
-		make the makeshift astral resonator;
+		make the makeshift astral resonator; ]
 
 Before inserting the table lamp into the wooden frame:
 	if the table lamp is plugged in:
@@ -3206,7 +3200,7 @@ Before inserting the table lamp into the wooden frame:
 		if the table lamp is plugged in:
 			stop the action;
 
-After inserting the table lamp into the wooden frame:
+[ After inserting the table lamp into the wooden frame:
 	say "Faraji inserts the table lamp into the wooden frame. It fits snugly into a round hole cut into the wood. The frame now holds [the list of things contained by the wooden frame].";
 	if the number of things contained by the wooden frame is 3:
 		make the makeshift astral resonator;
@@ -3214,29 +3208,41 @@ After inserting the table lamp into the wooden frame:
 After inserting the tuning fork into the wooden frame:
 	say "Faraji inserts the tuning fork into the wooden frame. It fits into a small, round hole cut into the wood. The frame now holds [the list of things contained by the wooden frame].";
 	if the number of things contained by the wooden frame is 3:
-		make the makeshift astral resonator;
+		make the makeshift astral resonator; ]
 
-The Special Frame Room is a room.
+Instead of attacking the wooden frame with the Rod of Hezekiah:
+	if the number of entries in the list of things contained by the wooden frame is 3:
+		if the astral lenses are in the wooden frame and the table lamp is in the wooden frame and the tuning fork is in the wooden frame:
+			if the light bulb is not in the standard socket:
+				say "Faraji taps the wooden frame with the Rod of Hezekiah. The frame glows a light for a moment, then fades. The frame [if the wooden frame is open]and its contents [end if]are unchanged.";
+				stop;
+			say "Faraji taps the wooden frame with the Rod of Hezekiah. The frame glows with a bright light. Faraji is momentarily blinded. When they can see again, the frame and its contents have fused into a [makeshift astral resonator].";
+			make the makeshift astral resonator;
+			stop;
+	say "Faraji taps the wooden frame with the Rod of Hezekiah. Nothing happens.";
+	
+
+Understand "tap [something]" as attacking.
+
+Instead of attacking the wooden frame when the Rod of Hezekiah is touchable:
+	try attacking the wooden frame with the Rod of Hezekiah;
 
 To make the makeshift astral resonator:
 	if the player encloses the wooden frame:
 		now the player carries the makeshift astral resonator;
 	otherwise:
 		now the makeshift astral resonator is in the location;
-	now the wooden frame is in the special frame room;
-	say line break;
-	say "Faraji uses the leather straps to secure the contents of the frame. Suddenly, the frame and the objects within it glow with a bright light. Faraji is momentarily blinded. When they can see again, the frame and its contents have fused into a [makeshift astral resonator].";
+	now the wooden frame is nowhere;
 
-Check inserting something into the wooden frame:
+
+[ Check inserting something into the wooden frame:
 	if the wooden frame is in the special frame room:
 		say "The wooden frame is gone!" instead;
 	if the player does not enclose the wooden frame:
 		say "Faraji needs to be holding the wooden frame to insert anything into it." instead;
 	if the noun is not the astral lenses and the noun is not the table lamp and the noun is not the tuning fork:
-		say "That doesn't fit into the wooden frame." instead;
+		say "That doesn't fit into the wooden frame." instead; ]
 
-Rule for reaching inside the special frame room:
-	allow access;
 
 Volume 5 - Polish
 
@@ -3321,5 +3327,6 @@ Carry out framing:
 	now the player is carrying the astral lenses;
 	now the light bulb is in the standard socket;
 	now the player is in First Utilitarian Church of Enigma Lake;
+	now the player carries the Rod of Hezekiah;
 
 Enigma Lake ends here.
