@@ -1040,7 +1040,7 @@ Agent Faraji is at the south end of the strip mall parking lot. From here one ca
 Klimp's Porsche takes up two spots.
 
 Their bright red Hyundai Accent is parked nearby.
-
+<<<<<
 >x porsche
 (Chief Klimp's Porsche)
 Klimp drives a sleek 2017 Porsche 911 Turbo Cabriolet.

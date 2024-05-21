@@ -75,7 +75,7 @@ To say battery state:
 	if the clean battery is not in the Hyundai hood:
 		say ", and the battery is missing";
 
-The Hyundai hood is a part of Car 1. It is an openable closed container. The description is "The hood is [if the Hyundai hood is closed]closed[otherwise]open[battery state][end if]."
+The Hyundai hood is a part of Car 1. It is an openable closed container. The description is "The hood is [if the Hyundai hood is closed]closed[otherwise]open[battery state][end if]." Understand "accent" as the Hyundai hood.
 
 The Hyundai hood is unsnarkable.
 
@@ -106,7 +106,7 @@ This is the examine hood contents rule:
 
 The examine hood contents rule is listed instead of the examine containers rule in the carry out examining rulebook.
 
-Car 2 is an automobile. It is privately-named. The printed name is "[Chief Huffton Klimp]'s Porsche". Understand "car/Klimp's/Porsche/automobile/auto" as car 2. The initial appearance of car 2 is "Klimp's Porsche takes up two spots." It is fixed in place. The description is "Klimp drives a sleek 2017 Porsche 911 Turbo Cabriolet."
+Car 2 is an automobile. It is privately-named. The printed name is "[Chief Huffton Klimp]'s Porsche". Understand "car/Klimp's/Porsche/automobile/auto/2017/911/Turbo/Cabriolet" as car 2. The initial appearance of car 2 is "Klimp's Porsche takes up two spots." It is fixed in place. The description is "Klimp drives a sleek 2017 Porsche 911 Turbo Cabriolet."
 [ The snarky remark of Car 2 is "I guess the Bureau's not as broke as they say." ]
 Car 2 is an edifice.
 
