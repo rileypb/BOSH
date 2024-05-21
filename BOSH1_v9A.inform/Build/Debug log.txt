@@ -1,5 +1,5 @@
 Debugging log of Inform 7
-Inform called as: ni -noprogress -internal /Applications/Inform.app_old.app/Contents/Resources/Internal/ -external /Users/rileypb/Library/Inform -project BOSH1_v9A.inform/
+Inform called as: /Applications/Inform.app_old.app/Contents/MacOS/ni -internal /Applications/Inform.app_old.app/Contents/Resources/Internal -external /Users/rileypb/Library/Inform -project /Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform -format=ulx
 Found language bundle 'German' (built in)
 Found language bundle 'Italian' (built in)
 Found language bundle 'English' (built in)
@@ -57,7 +57,7 @@ I've also read Scenery Supporters by Philip Riley, which is 179 words long.
 I've also read Simple Conversation by Philip Riley, which is 2362 words long.
 I've also read Hyperspace by Philip Riley, which is 16744 words long.
 I've also read BOSH Facts by Philip Riley, which is 193 words long.
-I've also read Swamp Park by Philip Riley, which is 8028 words long.
+I've also read Swamp Park by Philip Riley, which is 8034 words long.
 I've also read Margaret by Philip Riley, which is 2531 words long.
 I've also read Enigma Lake by Philip Riley, which is 30206 words long.
 I've also read I Can Dig It by Philip Riley, which is 77 words long.
@@ -339,7 +339,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 292 files written as streams.
-CPU time: 1239 centiseconds
+CPU time: 1208 centiseconds
 
 
 That concludes the debugging log from this run of Inform.
