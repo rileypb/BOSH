@@ -35,10 +35,10 @@ Does the player mean unplugging something pluggable:
 Before printing the locale description:
 	if the player encloses the plug-end and the socket-end is not enclosed by the location:
 		let dir be the best route from the location to the location of the socket-end;
-		say "The extension cord you are carrying[trailing text from the location to the location of the socket-end].[paragraph break]";
+		say "The extension cord Faraji is carrying[trailing text from the location to the location of the socket-end].[paragraph break]";
 	otherwise if the player encloses the socket-end and the plug-end is not enclosed by the location:
 		let dir be the best route from the location to the location of the plug-end;
-		say "The extension cord you are carrying[trailing text from the location to the location of the plug-end].[paragraph break]";
+		say "The extension cord Faraji is carrying[trailing text from the location to the location of the plug-end].[paragraph break]";
 
 Rule for writing a paragraph about the extension cord:
 	say "An extension cord lies on the [if the location is indoors]floor[otherwise]ground[end if]";
@@ -66,7 +66,7 @@ Rule for writing a paragraph about plug-end:
 		say ", one end plugged into [the socket]";
 		let holder be the holder of the plug-end;
 		if the holder is the player:
-			say " we are holding";
+			say " [we] [are] holding";
 		otherwise if the holder is enclosed by the player:
 			say " inside [the holder][we] [are] carrying";
 		otherwise if holder is a supporter:
@@ -303,11 +303,17 @@ After taking something when the noun is plugged into the extension cord and the 
 	
 Check closing something when the plug-end is enclosed by the noun:
 	if the socket-end is not enclosed by the noun:
-		say "You can't close that when the extension cord is half in it." instead;
+		say "Faraji can't close that when the extension cord is half in it." instead;
 
 Check closing something when the socket-end is enclosed by the noun:
 	if the plug-end is not enclosed by the noun:
-		say "You can't close that when the extension cord is half in it." instead;
+		say "Faraji can't close that when the extension cord is half in it." instead;
+
+Instead of plugging the extension cord into the extension cord:
+	separate the extension cord;
+	now the plug-end is plugged into the socket-end;
+	maybe condense the extension cord;
+	say "Faraji plugs the extension cord into itself. What fun." instead;
 
 Book - Working with the plug-end
 
