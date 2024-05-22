@@ -336,6 +336,7 @@ The obelisk is scenery in Enigma Park. Understand "monument/names/citizens" as t
 The snarky remark of the obelisk is "I don't know what it is, but obelisks always seem to be bad news."
 
 The adornment is scenery in Enigma Park. "From what [we] can make out, it's a clear crystal held aloft by some kind of metal fitting." Understand "crystal/ornament/decoration/fitting" as the adornment.
+Understand "beam/beams" as the adornment when beam count > 0.
 [ The snarky remark of the adornment is "I'm not going to touch it. I've seen enough movies to know that's a bad idea." ]
 
 Instead of examining the adornment:
@@ -966,6 +967,8 @@ The stained glass windows are scenery in First Utilitarian Church of Enigma Lake
 The pews are scenery in First Utilitarian Church of Enigma Lake. "The pews are arranged in neat rows, facing the pulpit."
 The snarky remark of the pews is "When will I find a church with sumptuous, overstuffed pews?"
 
+The church altar is scenery in First Utilitarian Church of Enigma Lake. "The altar is a simple wooden table, with a white cloth draped over it."
+
 The pulpit is scenery in First Utilitarian Church of Enigma Lake. "The pulpit is a simple wooden structure with a lectern which holds [italic type]The Holy Bible[roman type]."
 [ The snarky remark of the pulpit is "Hold on, I have to give a sermon. 'And the Lord was like, [']I will flood the earth['], and all the people were like, [']Oh no, we're all wet.[']'" ]
 
@@ -1252,7 +1255,7 @@ After going to church basement:
 	continue the action;
 
 
-The altar is a scenery supporter in the church basement. 
+The basement altar is a scenery supporter in the church basement. "The altar is a strange, ornate thing, more like a pagan idol than a Utilitarian altar."
 
 The Book of Utilitarianism is on the altar. 
 
@@ -1595,27 +1598,27 @@ The enigma-park-scenery is unsnarkable. ]
 
 Book 21 - Workshed
 
-the workshed is a leavable room. It has egress northwest. It is in ELR. It is indoors. "It is a small, weathered building, with a single door and no windows, and a creaky wooden floor. [if the light bulb is in the light socket]The interior is dimly lit by a single light bulb hanging from the ceiling. [otherwise]The interior is almost dark. An empty light socket hangs from the ceiling. [end if][equipment cabinet state] cabinet is in the corner. [rusty metal door state] rusty metal door leads out of the shed. [if the trapdoor is revealed]A trapdoor is in the floor, [trapdoor state].[end if]".
+the workshed is a leavable room. It has egress northwest. It is in ELR. It is indoors. "It is a small, weathered building, with a single door and no windows, and a creaky wooden floor. [if the light bulb is in the hanging socket]The interior is dimly lit by a single light bulb hanging from the ceiling. [otherwise]The interior is almost dark. An empty light socket hangs from the ceiling. [end if][equipment cabinet state] cabinet is in the corner. [rusty metal door state] rusty metal door leads out of the shed. [if the trapdoor is revealed]A trapdoor is in the floor, [trapdoor state].[end if]".
 [ The snarky remark of the workshed is "I wonder if there's a chainsaw in here." ]
 
 The light bulb is a thing. The description is "A standard 60W light bulb."
 The light bulb is unsnarkable.
 
-Understand "screw [the light bulb] in/into [the light socket]", "mount [the light bulb] on/onto/in/into [the light socket]" as inserting it into.
-Understand "screw [the rusty astral resonator] in/into [the light socket]", "mount [the rusty astral resonator] on/onto/in/into [the light socket]" as inserting it into.
-Understand "unscrew [the light bulb]" as taking when the light bulb is in the light socket.
+Understand "screw [the light bulb] in/into [the hanging socket]", "mount [the light bulb] on/onto/in/into [the hanging socket]" as inserting it into.
+Understand "screw [the rusty astral resonator] in/into [the hanging socket]", "mount [the rusty astral resonator] on/onto/in/into [the hanging socket]" as inserting it into.
+Understand "unscrew [the light bulb]" as taking when the light bulb is in the hanging socket.
 
-After taking the light bulb when light bulb was in the light socket:
+After taking the light bulb when light bulb was in the hanging socket:
 	say "Faraji unscrews the light bulb from the socket.";
 
-After inserting the light bulb into the light socket:
+After inserting the light bulb into the hanging socket:
 	say "Faraji screws the light bulb into the socket.";
 
-Instead of inserting the rusty astral resonator into the light socket:
-	say "The rusty astral resonator doesn't fit in the light socket."
+Instead of inserting the rusty astral resonator into the hanging socket:
+	say "The rusty astral resonator doesn't fit in the hanging light socket."
 
-The light socket is a scenery single item container in the workshed. The light bulb is in the light socket.
-"[if the light bulb is in the light socket]The light bulb is in the socket[otherwise]The socket is empty[end if]."
+The hanging socket is a scenery single item container in the workshed. The light bulb is in the hanging socket. Understand "light" as the hanging socket. 
+"[if the light bulb is in the hanging socket]The light bulb is in the socket[otherwise]The socket is empty[end if]."
 
 Understand "building/shed" as the workshed.
 
@@ -1657,7 +1660,11 @@ The rusty lens is part of the rusty astral resonator. The description is "The de
 
 [ The snarky remark of the rusty astral resonator is "[if the shiny astral resonator is not familiar]Ooh. I've always wanted one of these[otherwise]Someone should have taken better care of this[end if].". ]
 
-The trapdoor is a secret door. It is below the workshed and above a hidden cave. It is closed and openable. "A trapdoor is in the floor[if the trapdoor is open], leading down into darkness[otherwise], closed[end if]."
+The trapdoor is a secret door. It is below the workshed and above a hidden cave. It is closed and openable. "A trapdoor is in the floor[if the trapdoor is open], leading down into darkness[otherwise], closed[end if]." 
+
+A door appearance rule for the trapdoor:
+	rule succeeds with result whether or not the trapdoor is revealed.
+
 [ The snarky remark of the trapdoor is "There really should be a trophy case too." ]
 
 After going to the workshed when the trapdoor is unrevealed and the player encloses the dowsing rod:
@@ -1831,14 +1838,16 @@ The furnishings are scenery in Horton Family House Kitchen. "A few chairs and a 
 The open hearth is scenery in Horton Family House Kitchen. "The hearth is a simple, open fireplace, with a few logs stacked beside it."
 [ The snarky remark of the open hearth is "Someone call the fire marshal, I mean, this just isn't safe." ]
 
-The kitchen chairs are scenery in Horton Family House Kitchen. "A few chairs are arranged around the room."
+The kitchen chairs are enterable scenery supporters in Horton Family House Kitchen. "A few chairs are arranged around the room."
+Understand "chair" as kitchen chairs.
+
 The snarky remark of the kitchen chairs is "They look like they were designed by someone who hates sitting."
 
 The kitchen table is a scenery supporter in Horton Family House Kitchen. "A simple wooden table."
 It is unsnarkable.
 
 The logs are scenery in Horton Family House Kitchen. "A few logs are stacked beside the hearth."
-It is unsnarkable.
+It is unsnarkable. Understand "log/firewood" as logs. 
 
 The parlor facade is a building facade. It is in Horton Family House Kitchen. It is privately-named. The printed name is "parlor". Understand "parlor" as parlor facade. "The parlor is to the south."
 	The parlor facade fronts Horton Family House Parlor.
@@ -1856,7 +1865,20 @@ The dowsing rod is in Horton Family House Kitchen. The description is "A simple 
 
 The snarky remark of the dowsing rod is "So, let me get this straight. I just hold the forked end and walk around until it starts vibrating? Sounds legit."
 
-Divining-action is an action applying to one thing. Understand "divine with [something]", "dowse with [something]" as divining-action.
+Divining-action is an action applying to nothing. Understand "divine", "dowse" as divining-action.
+
+Check divining-action:
+	if the player does not carry the dowsing rod:
+		carry out the implicitly taking activity with the dowsing rod;
+		if the player does not carry the dowsing rod:
+			say "Faraji doesn't have a dowsing rod." instead;
+
+Report divining-action:
+	if the player is in the workshed and the trapdoor is unrevealed:
+		say "Faraji holds the dowsing rod and walks around the room. The rod starts to vibrate, and Faraji notices the faint outlines of a trapdoor in the floor. The vibrations cease.";
+		now the trapdoor is revealed;
+	otherwise if the player is in the large grave and the wooden frame is nowhere:
+		say "Faraji holds the dowsing rod and walks around the grave. The rod starts to vibrate and pulling towards a spot in the dirt at the center of the grave. There must be something buried there!";
 
 Book 25.1 - Horton Family House Parlor
 
@@ -1875,7 +1897,7 @@ After going to the Horton Family House Parlor for the first time:
 	now the doll-fly is in First Utilitarian Church of Enigma Lake;
 	continue the action;
 
-The parlor chairs are scenery in the Horton Family House Parlor. "A few chairs are arranged around the room."
+The parlor chairs are enterable scenery supporters in the Horton Family House Parlor. "A few chairs are arranged around the room." Understand "chair" as parlor chairs.
 [ The snarky remark of the parlor chairs is "If anything, they look even less comfortable than the kitchen chairs." ]
 
 The parlor table is a scenery supporter in the Horton Family House Parlor. "A simple wooden table."
@@ -1943,17 +1965,20 @@ To decide what text is the strange incantation:
 Instead of consulting the book of weird names about something:
 	repeat through Table of Weird Names:
 		if the name entry in lower case is the topic understood in lower case:
-			say "[we] [look] up [italic type][the name entry][roman type] in the book. Below a drawing of [description entry], the word [italic type][incantation entry][roman type] is written.";
+			say "[We] [look] up [italic type][the name entry][roman type] in the book. Below a drawing of [description entry], the word [italic type][incantation entry][roman type] is written.";
 			stop;
 	if the doll-fly is not named:
-		say "[we] [look] up '[the topic understood]' in the book, but [find] nothing. Perhaps [we] [are] spelling it wrong.";
+		say "[We] [look] up '[the topic understood]' in the book, but [find] nothing. Perhaps [we] [are] spelling it wrong.";
 	otherwise if the topic understood in lower case is not the secret name of the doll-fly in lower case:
-		say "[we] [look] up '[the topic understood]' in the book, but [find] nothing. Perhaps [we] [are] spelling it wrong.";
+		say "[We] [look] up '[the topic understood]' in the book, but [find] nothing. Perhaps [we] [are] spelling it wrong.";
 	otherwise:
 		sort the incantations in random order;
 		now the incantation of the doll-fly is entry 1 of the incantations;
 		now doll-fly-looked-up is true;
-		say "[we] [look] up [italic type][secret name of the doll-fly][roman type] in the book. Below a drawing of a doll with the head of a fly, the word [italic type][incantation of the doll-fly][roman type] is written.";
+		say "[We] [look] up [italic type][secret name of the doll-fly][roman type] in the book. Below a drawing of a doll with the head of a fly, the word [italic type][incantation of the doll-fly][roman type] is written.";
+
+Instead looking something up in the book of weird names:
+	say "[We] [look] up '[noun]' in the book, but [find] nothing."
 
 Table of Weird Names
 name (a text)	description (a text)	incantation (a text)
@@ -2033,7 +2058,7 @@ Instead of entering the neatly-dug holes:
 	say "(the large hole)[command clarification break]";
 	try entering the large dirt hole;
 
-The large dirt hole is a building facade. It is in Horton Graveyard. It is privately-named. Understand "large/larger/deep/deeper hole", "hole" as large dirt hole. "The hole is substantially larger and deeper than the others[if the metal ladder is in the large grave]. A ladder is set up against the side of the hole[end if]."
+The large dirt hole is a building facade. It is in Horton Graveyard. It is privately-named. Understand "large/larger/deep/deeper hole", "hole/grave" as large dirt hole. "The hole is substantially larger and deeper than the others[if the metal ladder is in the large grave]. A ladder is set up against the side of the hole[end if]."
 	It fronts a large grave.
 	It is enterable from Horton Graveyard.
 [ The snarky remark of the large dirt hole is "[if the large grave is not visited]Just the thing to jump into without regard for personal safety[otherwise]Ah, not such a big deal.[end if]" ]
@@ -2045,6 +2070,7 @@ A rule for reaching inside the large grave when the metal ladder is in the large
 	allow access;
 
 Instead of taking the metal ladder when the location is the Horton graveyard and the metal ladder is in the large grave:
+	now the player carries the metal ladder;
 	say "Faraji pulls the ladder out of the large grave.";
 
 Instead of examining the metal ladder when the location is the Horton graveyard and the metal ladder is in the large grave:
@@ -2067,6 +2093,10 @@ Before going from the large grave:
 
 Instead of inserting the metal ladder into the large dirt hole:
 	say "Faraji sets the ladder up against the side of the hole, making it easier to climb down into the large grave.";
+	now the metal ladder is in the large grave;
+
+Instead of inserting the metal ladder into the neatly-dug holes:
+	say "Faraji chooses the largest hole and sets the ladder up against the side of the hole, making it easier to climb down into the large grave.";
 	now the metal ladder is in the large grave;
 
 After dropping the metal ladder when the location is the large grave:
@@ -2440,6 +2470,12 @@ The clean battery can be hooked up.
 
 Understand "hook up [something] to [something]", "hook [something] up to [something]" as tying it to.
 
+Instead of putting the wires on the clean battery:
+	try tying the wires to the clean battery instead;
+
+Instead of putting the clean battery on the wires:
+	try tying the wires to the clean battery instead;
+
 Instead of tying the wires to the clean battery when the clean battery is not hooked up:
 	if the clean battery is on the lunch counter:
 		say "Faraji attaches the wires to the battery.";
@@ -2499,6 +2535,9 @@ The hole-in-the-roof is scenery in Henry's Roof. It is privately-named. The prin
 
 The threaded socket is part of the TV aerial antenna. It is a single item container. The description is "A threaded socket, like that of a light bulb, is mounted on one of the rods of the antenna." Understand "light/bulb/lightbulb" as the threaded socket.
 It is unsnarkable.
+
+Does the player mean inserting the rusty astral resonator into the threaded socket:
+	it is very likely.	
 
 To hook up the rusty resonator:
 	now the rusty resonator is in the threaded socket;
@@ -2571,7 +2610,7 @@ Understand "table/-- lamp" as the table lamp. The printed name is "table lamp".
 
 Instead of examining the table lamp:
 	say "An ordinary table lamp, with a red enameled base";
-	if the bulb is not in the standard socket:
+	if the bulb is not in the light socket:
 		say ", no bulb, and no shade";
 	otherwise:
 		say ", a light bulb in the socket, but no shade";
@@ -2585,35 +2624,35 @@ Instead of examining the table lamp:
 	otherwise:
 		say ". The lamp is dark.";
 
-Understand "screw [the light bulb] in/into [the standard socket]", "mount [the light bulb] on/onto/in/into [the standard socket]" as inserting it into.
-Understand "screw [the rusty astral resonator] in/into [the standard socket]", "mount [the rusty astral resonator] on/onto/in/into [the standard socket]" as inserting it into.
-Understand "unscrew [the light bulb]" as taking when the light bulb is in the standard socket.
+Understand "screw [the light bulb] in/into [the light socket]", "mount [the light bulb] on/onto/in/into [the light socket]" as inserting it into.
+Understand "screw [the rusty astral resonator] in/into [the light socket]", "mount [the rusty astral resonator] on/onto/in/into [the light socket]" as inserting it into.
+Understand "unscrew [the light bulb]" as taking when the light bulb is in the light socket.
 
 Understand "screw [the light bulb] in/into [the table lamp]", "mount [the light bulb] on/onto/in/into [the table lamp]" as inserting it into.
 Understand "screw [the rusty astral resonator] in/into [the table lamp]", "mount [the rusty astral resonator] on/onto/in/into [the table lamp]" as inserting it into.
 
-The standard socket is a single item container. It is part of the table lamp. The description is "A standard socket for a light bulb." 
+The light socket is a single item container. It is part of the table lamp. The description is "A light socket for a light bulb." 
 
 Instead of inserting something into the table lamp:
-	try inserting the noun into the standard socket instead;
+	try inserting the noun into the light socket instead;
 
 The red enameled base is part of the table lamp. The description is "A red enameled base, scuffed and tarnished."
 The short power cord is part of the table lamp. The description is "A power cord, a little the worse for wear, but still functional."
 
-Instead of inserting the rusty astral resonator into the standard socket:
+Instead of inserting the rusty astral resonator into the light socket:
 	say "The rusty astral resonator doesn't fit in the table lamp."
 
-Check inserting something into the standard socket:
+Check inserting something into the light socket:
 	if the noun is not the light bulb:
 		say "That doesn't fit.";
 		stop the action;
 
-Carry out inserting something into the standard socket (this is the update lamp on inserting rule):
+Carry out inserting something into the light socket (this is the update lamp on inserting rule):
 	carry out the device updating activity with the table lamp;
 
 The update lamp on inserting rule is listed last in the carry out inserting it into rules.
 
-Carry out removing something from the standard socket (this is the update lamp on removing rule):
+Carry out removing something from the light socket (this is the update lamp on removing rule):
 	carry out the device updating activity with the table lamp;
 
 The update lamp on removing rule is listed last in the carry out removing it from rules.
@@ -2622,11 +2661,11 @@ The table lamp can be already lit.
 
 For device updating the table lamp:
 	if the table lamp is lit:
-		if the table lamp is not powered or the table lamp is not switched on or the light bulb is not in the standard socket:
+		if the table lamp is not powered or the table lamp is not switched on or the light bulb is not in the light socket:
 			now the table lamp is unlit;
 			add the table lamp to changed things;
 	otherwise:
-		if the table lamp is powered and the table lamp is switched on and the light bulb is in the standard socket:
+		if the table lamp is powered and the table lamp is switched on and the light bulb is in the light socket:
 			now the table lamp is lit;
 			now the table lamp is already lit;
 			add the table lamp to changed things;
@@ -2640,7 +2679,7 @@ For state change reporting the table lamp:
 			puts "The table lamp is now unlit.[line break]";
 
 Description notes for the table lamp:
-	If the light bulb is in the standard socket:
+	If the light bulb is in the light socket:
 		add "with a bulb in the socket" to descriptive notes;
 	otherwise:
 		add "missing a bulb" to descriptive notes;
@@ -2651,7 +2690,7 @@ After switching on the table lamp:
 	otherwise:
 		continue the action;
 
-After taking the light bulb when the light bulb was in the standard socket:
+After taking the light bulb when the light bulb was in the light socket:
 	say "Faraji unscrews the light bulb from the table lamp.";
 
 
@@ -2705,7 +2744,7 @@ The gym door is a closed locked openable lockable scenery door. It is east of La
 
 The x-coordinate of the public gymnasium is 2. The y-coordinate of the public gymnasium is 0.
 
-The public gymnasium is in ELR. "There is a basketball court and a weight training area. A front desk is next to the front entrance to the west. Some kind of book sits on the front desk. [We] may also go down to the basement."
+The public gymnasium is in ELR. "There is a basketball court and a weight training area. A front desk is next to the front entrance to the west. Some kind of book sits on the front desk. Faraji may also go down to the basement."
 Understand "gym" as the public gymnasium.
 [ The snarky remark of the public gymnasium is "This is the kind of government largesse that bankrupted 1950s America. For reals." ]
 The public gymnasium is a leavable room. The egress is west.
@@ -2722,8 +2761,11 @@ The hook is scenery in the public gymnasium. "A plain hook mounted on the wall[i
 The membership book is fixed in place scenery on the gym front desk. The description is "It's a book apparently full of records of the members of the gym. [We] could LOOK UP a member's name IN BOOK." Understand "record", "gym/gymnasium book" as membership book.
 [ The snarky remark of the membership book is "God forbid this information should fall into the wrong hands." ]
 
+Does the player mean consulting the membership book about something: 
+	It is very likely;
+
 Instead of consulting the membership book about something:
-	if the topic understood matches "william thompson" or the topic understood matches "bill thompson" or the topic understood matches "thompson":
+	if the topic understood matches "william thompson" or the topic understood matches "bill thompson" or the topic understood matches "thompson" or the topic understood matches "william" or the topic understood matches "bill":
 		say "[fixed letter spacing]WILLIAM THOMPSON[line break]
 		126 Rochester Road[line break]
 		Enigma Lake, NY[line break]
@@ -2746,6 +2788,30 @@ The basketball score is a number that varies. The basketball score is 0.
 
 Shooting is an action applying to one thing. Understand "shoot [something preferably held]" as shooting. Understand "shoot hoops" as shooting. Understand "shoot baskets", "play basketball", "play hoops", "play ball", "shoot" as shooting.
 The Shooting action has a number called the points.
+
+Dribbling is an action applying to one thing. Understand "dribble [basketball-ball]" as dribbling. Understand "dribble" as dribbling. Understand the command "bounce" as "dribble".
+
+Rule for supplying a missing noun while dribbling:
+	if the basketball-ball is in the location or the player encloses the basketball-ball:
+		now the noun is the basketball-ball;
+	otherwise:
+		say "There is no basketball here." instead.
+
+Check dribbling (this is the can't dribble what you don't have rule):
+	if the actor is carrying the noun, continue the action;
+	carry out the implicitly taking activity with the noun;
+	if the actor is carrying the noun, continue the action;
+	stop the action;
+
+Carry out dribbling:
+	if a random chance of 1 in 5 succeeds:
+		now the basketball-ball is in the location;
+
+Report dribbling something when the player carries the basketball-ball:
+	say "[one of]Faraji dribbles the ball up the court, weaving through imaginary defenders[or]Faraji dribbles the ball between their legs, then behind their back[or]Faraji dribbles the ball behind their back, then between their legs[or]Faraji dribbles the ball with their left hand, then their right[or]Faraji dribbles the ball with their right hand, then their left[or]Faraji dribbles the ball with their left hand, then spins and dribbles with their right[at random].";
+
+Report dribbling something when the player does not carry the basketball-ball:
+	say "[one of]Faraji dribbles the ball up the court, then loses control of it. The ball rolls away[or]Faraji dribbles the ball between their legs, then loses control of it. The ball rolls away[or]Faraji bounces the ball of their foot and it rolls away[at random]."; 
 
 Rule for supplying a missing noun while shooting:
 	if the basketball-ball is in the location or the player encloses the basketball-ball:
@@ -2816,7 +2882,7 @@ The free weights are scenery in the public gymnasium. "A set of free weights, ra
 [ The snarky remark of the free weights is "Free? I'll take them all." ]
 
 Check taking the free weights:
-	say "The weights are too heavy to carry around.";
+	say "The weights are too heavy to carry around." instead;
 
 Lifting weights is an action applying to nothing. Understand "lift weights", "pump iron", "work out", "exercise" as lifting weights.
 
@@ -2841,7 +2907,7 @@ The snarky remark of the bank of lockers is "I'm not searching every locker."
 
 Looked up locker is a truth state that varies.
 
-Opening a locker is an action applying to one number. Understand "open locker/-- number/-- [number]", "search locker number/-- [number]", "look in locker/-- number/-- [number]" as opening a locker when the location is the gym basement.
+Opening a locker is an action applying to one number. Understand "open locker/-- number/-- [number]", "search locker/-- number/-- [number]", "look in locker/-- number/-- [number]", "unlock locker/-- number/-- [number]" as opening a locker when the location is the gym basement.
 
 Check opening a locker when looked up locker is false:
 	say "[We] [are] hardly going to try opening every locker. There must be a better way to go about this." instead;
@@ -2865,7 +2931,7 @@ Carry out opening a locker:
 	otherwise:
 		say "The locker contains nothing but some old gym clothes.";
 
-Locker-opening it with is an action applying to one number and one thing. Understand "open locker/-- number/-- [number] with [something]", "search locker number/-- [number] with [something]", "look in locker/-- number/-- [number] with [something]" as locker-opening it with when the location is the gym basement.
+Locker-opening it with is an action applying to one number and one thing. Understand "open locker/-- number/-- [number] with [something]", "search locker/-- number/-- [number] with [something]", "look in locker/-- number/-- [number] with [something]", "unlock locker/-- number/-- [number] with [something]" as locker-opening it with when the location is the gym basement.
 
 Check locker-opening a number with something when looked up locker is false:
 	say "[We] [are] hardly going to try opening every locker. There must be a better way to go about this." instead;
@@ -3215,8 +3281,8 @@ After inserting the tuning fork into the wooden frame:
 Instead of attacking the wooden frame with the Rod of Hezekiah:
 	if the number of entries in the list of things contained by the wooden frame is 3:
 		if the astral lenses are in the wooden frame and the table lamp is in the wooden frame and the tuning fork is in the wooden frame:
-			if the light bulb is not in the standard socket:
-				say "Faraji taps the wooden frame with the Rod of Hezekiah. The frame glows a light for a moment, then fades. The frame [if the wooden frame is open]and its contents [end if]are unchanged.";
+			if the light bulb is not in the light socket:
+				say "Faraji taps the wooden frame with the Rod of Hezekiah. The frame glows for a moment, then fades. The frame [if the wooden frame is open]and its contents [end if]are unchanged.";
 				stop;
 			say "Faraji taps the wooden frame with the Rod of Hezekiah. The frame glows with a bright light. Faraji is momentarily blinded. When they can see again, the frame and its contents have fused into a [makeshift astral resonator].";
 			make the makeshift astral resonator;
@@ -3327,7 +3393,7 @@ Carry out framing:
 	now the player is carrying the table lamp;
 	now the player is carrying the tuning fork;
 	now the player is carrying the astral lenses;
-	now the light bulb is in the standard socket;
+	now the light bulb is in the light socket;
 	now the player is in First Utilitarian Church of Enigma Lake;
 	now the player carries the Rod of Hezekiah;
 

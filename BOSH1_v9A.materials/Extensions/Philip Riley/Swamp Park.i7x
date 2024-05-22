@@ -64,7 +64,7 @@ Check driving something that is not a car:
 
 Car 1 is an automobile in Strip Mall Parking Lot South. It is privately-named. The printed name is "[our] Hyundai". 
 "[Our] bright red Hyundai Accent is parked nearby[if the Hyundai hood is open]. The hood is open[end if]."
-Understand "red", "car", "hyundai", "accent", "automobile", "auto", "my car", "faraji's car", "larch's car" as car 1. It is fixed in place. The description is "An old bright red Hyundai Accent, it's been [our] personal means of transportation for years. And since the Bureau lost its fleet, it's [our] work car too.".
+Understand "red", "car", "hyundai", "accent", "automobile", "auto", "my car", "faraji's car", "larch's car" as car 1. It is fixed in place. The description is "An old bright red Hyundai Accent, it's been [our] personal means of transportation for years. And since the Bureau lost its fleet, it's [our] work car too. Two years ago, [we] had to replace the hood after a window A/C unit fell on it. Now it doesn't exactly match the rest of the car.".
 [ The snarky remark of Car 1 is "They asked me if I wanted the flashy car, but I said no -- it just didn't fit my downscale image." ]
 Car 1 is an edifice.
 
@@ -75,7 +75,7 @@ To say battery state:
 	if the clean battery is not in the Hyundai hood:
 		say ", and the battery is missing";
 
-The Hyundai hood is a part of Car 1. It is an openable closed container. The description is "The hood is [if the Hyundai hood is closed]closed[otherwise]open[battery state][end if]." Understand "accent" as the Hyundai hood.
+The Hyundai hood is a part of Car 1. It is an openable closed container. The description is "The hood is [if the Hyundai hood is closed]closed[otherwise]open[battery state][end if]." Understand "accent/bonnet" as the Hyundai hood.
 
 The Hyundai hood is unsnarkable.
 
@@ -113,7 +113,7 @@ Car 2 is an edifice.
 Instead of entering or opening or driving car 2:
 	say "That isn't [Agent]'s car.";
 
-The Porsche hood is a part of Car 2. It is an openable closed container. The description is "The hood is closed."
+The Porsche hood is a part of Car 2. It is an openable closed container. The description is "The hood is closed." Understand "bonnet/911" as the Porsche hood.
 
 The Porsche hood is unsnarkable.
 

@@ -1074,7 +1074,7 @@ Faraji opens the Hyundai hood, revealing a clean car battery.
 
 >* synonym needed
 Noted.
-
+<<<<<
 >x clean
 The battery is clean and new.
 
@@ -1368,7 +1368,7 @@ Faraji would have to scale the obelisk to get it.
 
 >* did that do something?
 Noted.
-
+<<<<<
 >i
 Faraji is carrying:
   a pair of astral lenses
@@ -2556,7 +2556,7 @@ Agent Faraji is in the public gymnasium. There is a basketball court and a weigh
 A green key hangs on a hook.
 
 A basketball lies on the floor.
-
+<<<<<
 >* "they may also go down to the basement" makes it seem like the book might go to the basement to my eye
 Noted.
 

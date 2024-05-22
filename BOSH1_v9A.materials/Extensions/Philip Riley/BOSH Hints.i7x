@@ -510,7 +510,7 @@ Activating the hint-doll-fly:
 		activate;
 	deactivate;
 
-The hint-extension-cord is a progressive hint topic. Understand "extension/cord" as the hint-extension-cord. The printed name is "extension cord". The progression is {"What do people use extension cords for?", "There's an electrical outlet in the church.", "There's no need to unplug it once it's plugged into the church outlet.", "Two different things can be plugged into the extension cord. One is the table lamp in the department store.", "The other you'll know when you have it."}.
+The hint-extension-cord is a progressive hint topic. Understand "extension/cord" as the hint-extension-cord. The printed name is "extension cord". The progression is {"What do people use extension cords for?", "There's an electrical outlet in the church.", "When working with the extension cord, remember the two ends can be in different rooms.", "There's no need to unplug it once it's plugged into the church outlet.", "Two different things can be plugged into the extension cord. One is the table lamp in the department store.", "The other you'll know when you have it."}.
 
 Activating the hint-extension-cord:
 	if the extension cord is seen and not mounted-makeshift-resonator:
