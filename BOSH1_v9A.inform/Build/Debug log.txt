@@ -59,7 +59,7 @@ I've also read Hyperspace by Philip Riley, which is 16744 words long.
 I've also read BOSH Facts by Philip Riley, which is 193 words long.
 I've also read Swamp Park by Philip Riley, which is 8067 words long.
 I've also read Margaret by Philip Riley, which is 2531 words long.
-I've also read Enigma Lake by Philip Riley, which is 30851 words long.
+I've also read Enigma Lake by Philip Riley, which is 30870 words long.
 I've also read I Can Dig It by Philip Riley, which is 77 words long.
 I've also read BOSH Help by Philip Riley, which is 6496 words long.
 I've also read Overlook by Philip Riley, which is 763 words long.
@@ -85,7 +85,7 @@ I've also read Secret Doors by Gavin Lambert, which is 272 words long.
 I've also read Plugging by Philip Riley, which is 791 words long.
 I've also read Books by Philip Riley, which is 2480 words long.
 I've also read Container Types by Philip Riley, which is 55 words long.
-I've also read Extension Cord by Philip Riley, which is 3485 words long.
+I've also read Extension Cord by Philip Riley, which is 3496 words long.
 I've also read State Update by Philip Riley, which is 452 words long.
 I've also read Hints by Philip Riley, which is 849 words long.
 I've also read Two-Sided Doors by Philip Riley, which is 2270 words long.
@@ -339,7 +339,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 293 files written as streams.
-CPU time: 1108 centiseconds
+CPU time: 1185 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

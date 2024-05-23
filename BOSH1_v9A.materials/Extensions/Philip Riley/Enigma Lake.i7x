@@ -2761,8 +2761,12 @@ The hook is scenery in the public gymnasium. "A plain hook mounted on the wall[i
 The membership book is fixed in place scenery on the gym front desk. The description is "It's a book apparently full of records of the members of the gym. [We] could LOOK UP a member's name IN BOOK." Understand "record", "gym/gymnasium book" as membership book.
 [ The snarky remark of the membership book is "God forbid this information should fall into the wrong hands." ]
 
-Does the player mean consulting the membership book about something: 
-	It is very likely;
+Does the player mean:
+	if the current action is consulting:
+		if the noun is the membership book:
+			it is very likely;
+		if the second noun is the membership book:
+			it is very likely;
 
 Instead of consulting the membership book about something:
 	if the topic understood matches "william thompson" or the topic understood matches "bill thompson" or the topic understood matches "thompson" or the topic understood matches "william" or the topic understood matches "bill":
