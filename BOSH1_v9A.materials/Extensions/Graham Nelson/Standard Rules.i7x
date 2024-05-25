@@ -2374,11 +2374,11 @@ Report an actor going (this is the describe room gone into rule):
 					continue the action;
 				otherwise:
 					if the noun is up:
-						say "[The actor] [go] up" (A);
+						say "* [The actor] [go] up" (A);
 					otherwise if the noun is down:
-						say "[The actor] [go] down" (B);
+						say "* [The actor] [go] down" (B);
 					otherwise:
-						say "[The actor] [go] [noun]" (C);
+						say "* [The actor] [go] [noun]" (C);
 			otherwise:
 				let the back way be the opposite of the noun;
 				if the location is the room gone to:
@@ -2389,24 +2389,24 @@ Report an actor going (this is the describe room gone into rule):
 					if the room back the other way is the room gone from or
 						the room back the other way is the room normally this way:
 						if the back way is up:
-							say "[The actor] [arrive] from above" (D);
+							say "* [The actor] [arrive] from above" (D);
 						otherwise if the back way is down:
-							say "[The actor] [arrive] from below" (E);
+							say "* [The actor] [arrive] from below" (E);
 						otherwise:
-							say "[The actor] [arrive] from [the back way]" (F);
+							say "* [The actor] [arrive] from [the back way]" (F);
 					otherwise:
-						say "[The actor] [arrive]" (G);
+						say "* [The actor] [arrive]" (G);
 				otherwise:
 					if the back way is up:
-						say "[The actor] [arrive] at [the room gone to] from above" (H);
+						say "* [The actor] [arrive] at [the room gone to] from above" (H);
 					otherwise if the back way is down:
-						say "[The actor] [arrive] at [the room gone to] from below" (I);
+						say "* [The actor] [arrive] at [the room gone to] from below" (I);
 					otherwise:
-						say "[The actor] [arrive] at [the room gone to] from [the back way]" (J);
+						say "* [The actor] [arrive] at [the room gone to] from [the back way]" (J);
 		otherwise if the location is the room gone from:
-			say "[The actor] [go] through [the noun]" (K);
+			say "* [The actor] [go] through [the noun]" (K);
 		otherwise:
-			say "[The actor] [arrive] from [the noun]" (L);
+			say "* [The actor] [arrive] from [the noun]" (L);
 		if the vehicle gone by is not nothing:
 			say " ";
 			if the vehicle gone by is a supporter:

@@ -711,7 +711,7 @@ The broadcast-tower is scenery in Main at Lake. It is privately-named. The print
 
 Book 11 - WGXC "Galaxy" Radio
 
-Radio Station WGXC is a leavable room. It has egress northwest. It is southeast of Main at Lake. It is in ELR. It is indoors. "This is the town radio station. South is the entrance to the broadcast booth. A staircase runs upwards, presumably to the roof and the broadcast antenna. The exit is northwest."
+Radio Station WGXC is a leavable room. It has egress northwest. It is southeast of Main at Lake. It is in ELR. It is indoors. "This is the town radio station. A staircase runs upwards, presumably to the roof and the broadcast antenna. The exit is northwest."
 [ The snarky remark of Radio Station WGXC is "I wonder if they have any old records. Or I guess they'd be new records now, wouldn't they?" ]
 The x-coordinate of Radio Station WGXC is 2. The y-coordinate of Radio Station WGXC is -2.
 
@@ -720,10 +720,6 @@ Understand "staircase/stair" as WGXC stairs.
 
 Instead climbing up the WGXC stairs:
 	try going up.
-
-broadcast-booth-facade is a building facade. It is in Radio Station WGXC. It is privately-named. The printed name is "broadcast booth". Understand "broadcast/booth" as broadcast-booth-facade. "The broadcast booth, visible through a window, is a small room with a microphone and a soundboard."
-	The broadcast-booth-facade fronts the broadcast booth.
-	It is enterable from Radio Station WGXC.
 
 Book 12 - Radio Station Roof
 
@@ -2984,7 +2980,6 @@ Book 38 - Light sources
 
 There is a fluorescent light source in Enigma Lake town hall called town hall light source.
 There is a fluorescent light source in Radio Station WGXC called radio station light source.
-There is a fluorescent light source in Broadcast Booth called broadcast booth light source.
 There is a fluorescent light source in Rolle's Department Store called Rolle's light source.
 There is a fluorescent light source in Henry's Hot Skillet called Henry's light source.
 There is a fluorescent light source in Reading Room called Reading Room light source.
@@ -3205,7 +3200,7 @@ After going when the group of lizard people is in the location:
 	continue the action;
 
 The lizard teleportation targets is a list of rooms that varies.
-The lizard teleportation targets are { Enigma Lake Town Hall, Enigma Park, Main Street 200 block, Main at Solvay, Solvay Road 100 block, Solvay Road leading out of town, Solvay-Road-by-the-lake, Main at Lake, Radio Station WGXC, radio station roof, broadcast booth, Lake Street by the gym, Lake Street by the park, First Utilitarian Church of Enigma Lake, Lake at Ridge, lake shore north of the park, workshed, Lake Shore West, Reading Room, Bookstore Basement, Fresnel's Music, Rolle's Department Store }.
+The lizard teleportation targets are { Enigma Lake Town Hall, Enigma Park, Main Street 200 block, Main at Solvay, Solvay Road 100 block, Solvay Road leading out of town, Solvay-Road-by-the-lake, Main at Lake, Radio Station WGXC, radio station roof, Lake Street by the gym, Lake Street by the park, First Utilitarian Church of Enigma Lake, Lake at Ridge, lake shore north of the park, workshed, Lake Shore West, Reading Room, Bookstore Basement, Fresnel's Music, Rolle's Department Store }.
 
 To teleport the player:
 	let target be the location;

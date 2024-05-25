@@ -17,6 +17,7 @@ Include Punctuation Removal by Emily Short.
 Include Glulx Text Effects by Emily Short.
 Include Formatting Capture by Daniel Stelzer.
 Include Undo Output Control by Erik Temple.
+Include DTPM Fix by Philip Riley.
 
 Include Locksmith by Emily Short.
  
