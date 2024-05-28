@@ -85,6 +85,7 @@ Work Title is always "The Bureau of Strange Happenings".
  
 Release along with a website.
 Release along with an interpreter. 
+Release along with cover art.
 
 Table of User styles (continued)
 style name    	justification    	italic    	indentation    	first line indentation        	color

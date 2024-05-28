@@ -82,13 +82,13 @@ printing background sounds is an activity.
 
 Audible sounds is a list of things that varies.
 
-Every turn:
+[ Every turn:
 	if skip sounds this turn is false:
 		remove audible sounds from audible sounds;
-		carry out the printing insistent sounds activity;
+		carry out the printing insistent sounds activity; ]
 	
-After printing the locale description:
-	carry out the printing background sounds activity;
+[ After printing the locale description:
+	carry out the printing background sounds activity; ]
 	
 [For some reason turn count is 1 before the first turn is taken, and still 1 afterwards. This makes it impossible to do anything before the first turn that doesn't also happen after it. Hence this work-around.]
 First Turn is a truth state that varies. First Turn is initially true.

@@ -1,5 +1,5 @@
 Debugging log of Inform 7
-Inform called as: ni -noprogress -internal /Applications/Inform.app_old.app/Contents/Resources/Internal/ -external /Users/rileypb/Library/Inform -project BOSH1_v9A.inform/
+Inform called as: /Applications/Inform.app_old.app/Contents/MacOS/ni -internal /Applications/Inform.app_old.app/Contents/Resources/Internal -external /Users/rileypb/Library/Inform -project /Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform -format=ulx -release
 Found language bundle 'German' (built in)
 Found language bundle 'Italian' (built in)
 Found language bundle 'English' (built in)
@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 33530 words long.
+I've now read your source text, which is 33535 words long.
 
 
 -----------------------------------------------------
@@ -67,7 +67,7 @@ I've also read Overlook by Philip Riley, which is 763 words long.
 I've also read Gender Options by Nathanael Nerode, which is 7679 words long.
 I've also read Make Test by Philip Riley, which is 288 words long.
 I've also read BOSH Hints by Philip Riley, which is 7868 words long.
-I've also read Hearing by Philip Riley, which is 1254 words long.
+I've also read Hearing by Philip Riley, which is 1220 words long.
 I've also read Improved Pushing by Philip Riley, which is 46 words long.
 I've also read PBR Common by Philip Riley, which is 109 words long.
 I've also read Walls by Philip Riley, which is 905 words long.
@@ -150,19 +150,19 @@ Regional: CONSTANT_VNT'field office area'-region(I260_field_office_area)(I166'fi
  == region
 Regional: CONSTANT_VNT'hyperspace'-region(I243_hyperspace)(I149'hyperspace')
  == region
-Regional: CONSTANT_VNT'elr'-region(I546_elr)(I436'elr')
+Regional: CONSTANT_VNT'elr'-region(I538_elr)(I428'elr')
  == region
-Regional: CONSTANT_VNT'elr'-region(I546_elr)(I436'elr')
+Regional: CONSTANT_VNT'elr'-region(I538_elr)(I428'elr')
  == region
-Regional: CONSTANT_VNT'help area'-region(I801_help_area)(I689'help area')
+Regional: CONSTANT_VNT'help area'-region(I793_help_area)(I681'help area')
  == region
-Regional: CONSTANT_VNT'elr'-region(I546_elr)(I436'elr')
+Regional: CONSTANT_VNT'elr'-region(I538_elr)(I428'elr')
  == region
-Regional: CONSTANT_VNT'elr'-region(I546_elr)(I436'elr')
+Regional: CONSTANT_VNT'elr'-region(I538_elr)(I428'elr')
  == region
-Regional: CONSTANT_VNT'elr'-region(I546_elr)(I436'elr')
+Regional: CONSTANT_VNT'elr'-region(I538_elr)(I428'elr')
  == region
-Regional: CONSTANT_VNT'help area'-region(I801_help_area)(I689'help area')
+Regional: CONSTANT_VNT'help area'-region(I793_help_area)(I681'help area')
  == region
 
 
@@ -194,6 +194,42 @@ Phase XII ... Code generation
 
 ==== Phase XII.6 ... Compiling first block of phrases ====
 
+                    (5.a) problem message:
+                    found: UNKNOWN_VNT'skip_prologue is false'
+                    expected: nothingProblem PM_Unknown issued from inform7/Chapter 20/Dash.w, line 2896
+
+                      >--> In the sentence 'if SKIP_PROLOGUE is false' (source text, line 159), I
+                        was expecting to read a condition, but instead found some text that I
+                        couldn't understand - 'SKIP_PROLOGUE is false'.
+
+[0574] gross "if ( c - condition ) begin" (UNKNOWN_VNT'skip_prologue is false')
+
+    I was trying to match this phrase:
+
+
+      if (skip_prologue is false - a condition): 
+
+
+    But I didn't recognise 'skip_prologue is false'.
+
+                    (5.a) problem message:
+                    found: UNKNOWN_VNT'skip_prologue is false'
+                    expected: nothingProblem PM_Unknown issued from inform7/Chapter 20/Dash.w, line 2896
+
+                      >--> In the sentence 'if SKIP_PROLOGUE is false' (source text, line 185), I
+                        was expecting to read a condition, but instead found some text that I
+                        couldn't understand - 'SKIP_PROLOGUE is false'.
+
+[0574] gross "if ( c - condition ) begin" (UNKNOWN_VNT'skip_prologue is false')
+
+    I was trying to match this phrase:
+
+
+      if (skip_prologue is false - a condition): 
+
+
+    But I didn't recognise 'skip_prologue is false'.
+
                                 0 = action. 1 = object
                                 0 = action. 1 = object
         Regional: CONSTANT_VNT'hyperspace'-region(I243_hyperspace)(I149'hyperspace')
@@ -223,13 +259,13 @@ Phase XII ... Code generation
          == region
         Regional: CONSTANT_VNT'hyperspace'-region(I243_hyperspace)(I149'hyperspace')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I546_elr)(I436'elr')
+        Regional: CONSTANT_VNT'elr'-region(I538_elr)(I428'elr')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I546_elr)(I436'elr')
+        Regional: CONSTANT_VNT'elr'-region(I538_elr)(I428'elr')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I546_elr)(I436'elr')
+        Regional: CONSTANT_VNT'elr'-region(I538_elr)(I428'elr')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I546_elr)(I436'elr')
+        Regional: CONSTANT_VNT'elr'-region(I538_elr)(I428'elr')
          == region
 
 
@@ -251,96 +287,23 @@ Phase XII ... Code generation
 
 ==== Phase XII.11 ... Determining grammar (G2) ====
 
-Regional: CONSTANT_VNT'elr'-region(I546_elr)(I436'elr')
- == region
-
-
-==== Phase XII.12 ... Compiling GPR tokens for parsing various kinds of value ====
-
-
-
-==== Phase XII.13 ... Compiling second block of phrases ====
-
-                                                            Fail: room (~) real number = nothing
-                                            Fail: nothing (~) real number = nothing
-                                            Fail: room (~) real number = nothing
-                                                            Fail: room (~) real number = nothing
-                                            Fail: nothing (~) real number = nothing
-                                            Fail: room (~) real number = nothing
-        Regional: CONSTANT_VNT'hyperspace'-region(I243_hyperspace)(I149'hyperspace')
-         == region
-        Regional: CONSTANT_VNT'hyperspace'-region(I243_hyperspace)(I149'hyperspace')
-         == region
-                                                            Fail: list of numbers (~) number = nothing
-                                            Fail: nothing (~) real number = nothing
-                                            Fail: list of numbers (~) real number = nothing
-                                                            Fail: list of numbers (~) number = nothing
-                                            Fail: nothing (~) real number = nothing
-                                            Fail: list of numbers (~) real number = nothing
-                                                            Fail: list of numbers (~) number = nothing
-                                            Fail: nothing (~) real number = nothing
-                                            Fail: list of numbers (~) real number = nothing
-                                                            Fail: list of numbers (~) number = nothing
-                                            Fail: nothing (~) real number = nothing
-                                            Fail: list of numbers (~) real number = nothing
-                                                            Fail: list of numbers (~) number = nothing
-                                            Fail: nothing (~) real number = nothing
-                                            Fail: list of numbers (~) real number = nothing
-                                                            Fail: list of numbers (~) number = nothing
-                                            Fail: nothing (~) real number = nothing
-                                            Fail: list of numbers (~) real number = nothing
-                                        Fail: scene (~) number = nothing
-                                        Fail: scene (~) number = nothing
-                                0 = objects valued property. 1 = object
-            Regional: CONSTANT_VNT'elr'-region(I546_elr)(I436'elr')
-             == region
-            Regional: CONSTANT_VNT'elr'-region(I546_elr)(I436'elr')
-             == region
-            Regional: CONSTANT_VNT'help area'-region(I801_help_area)(I689'help area')
-             == region
-            Regional: CONSTANT_VNT'help area'-region(I801_help_area)(I689'help area')
-             == region
-
-
-==== Phase XII.14 ... Compiling noun and scope filter tokens ====
-
-
-
-==== Phase XII.15 ... Compiling chronology ====
-
-
-
-==== Phase XII.16 ... Compiling I6 Verb directives ====
-
-
-
-==== Phase XII.17 ... Slashing grammar (G1) ====
-
-
-
-==== Phase XII.18 ... Determining grammar (G2) ====
-
-
-
-==== Phase XII.19 ... Sorting and compiling non-value grammar (G3, G4) ====
-
-
-
-==== Phase XII.20 ... Compiling noun and scope filter tokens ====
-
-
-
-==== Phase XII.21 ... Compiling routines from predicate calculus ====
-
-Providing for a total heap of 65536, given requirement of 45584
 
 
 -----------------------------------------------------
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 294 files written as streams.
-CPU time: 1261 centiseconds
+Problem Untestable issued from inform7/Chapter 33/Release Instructions.w, line 421
+
+  >--> A problem occurred with the 'Release along with...': instructions
+    ('cover art' (source text, line 88)): The release instructions said that
+    there is a cover image to attach to the story file, but I was unable to
+    find it, having looked for both 'Cover.png' and 'Cover.jpg' in the
+    '.materials' folder for this project (with the file
+    '/Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.materials/Cover.png')
+
+Total of 4 files written as streams.
+CPU time: 750 centiseconds
 
 
 That concludes the debugging log from this run of Inform.
