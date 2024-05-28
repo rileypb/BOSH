@@ -151,6 +151,7 @@ To print faraji bio:
 	continue;
 	say variable letter spacing;
 
+SKIP_PROLOGUE is a truth state that varies.
 
 When play begins:   
 	now the story viewpoint is third person singular;
@@ -2441,7 +2442,6 @@ Book 21 - Not For Release
 
 DEBUG is false.
 
-SKIP_PROLOGUE is a truth state that varies.
 SKIP_PROLOGUE is false;
 
 AUDIT is a truth state that varies.
