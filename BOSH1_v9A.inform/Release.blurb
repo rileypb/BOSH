@@ -13,10 +13,8 @@ release to "BOSH1_v9A.materials/Release"
 storyfile leafname "The Bureau of Strange Happening.gblorb"
 storyfile "BOSH1_v9A.inform/Build/output.ulx" include
 ifiction "BOSH1_v9A.inform/Metadata.iFiction" include
-cover "/Applications/Inform.app_old.app/Contents/Resources/Internal/Miscellany/Cover.jpg"
-picture 1 "/Applications/Inform.app_old.app/Contents/Resources/Internal/Miscellany/Cover.jpg"
-release file "/Applications/Inform.app_old.app/Contents/Resources/Internal/Miscellany/Cover.jpg"
-release file "/Applications/Inform.app_old.app/Contents/Resources/Internal/Miscellany/Small Cover.jpg"
+cover "BOSH1_v9A.materials/Cover.jpg"
+picture 1 "BOSH1_v9A.materials/Cover.jpg"
 picture 3 "BOSH1_v9A.materials/Figures/clerk_portrait.png"
 
 ! Placeholder variables
@@ -50,7 +48,7 @@ css
 website "Standard"
 status instruction ||&nbsp;<a href="source:story.ni#line86"><img border=0 src=inform:/doc_images/Reveal.tif></a>||
 status instruction ||&nbsp;<a href="source:story.ni#line87"><img border=0 src=inform:/doc_images/Reveal.tif></a>||
-status alternative ||Using 'Release along with cover art', to provide something more distinctive than the default artwork above&nbsp;<a href=inform:/doc403.html><img border=0 src=inform:/doc_images/help.png></a>||
+status instruction ||&nbsp;<a href="source:story.ni#line88"><img border=0 src=inform:/doc_images/Reveal.tif></a>||
 status alternative ||Using 'Release along with a file of "Such-and-Such" called "whatever.pdf"', perhaps to add a manual, or a welcoming note&nbsp;<a href=inform:/doc401.html><img border=0 src=inform:/doc_images/help.png></a>||
 status alternative ||Using 'Release along with the source text'&nbsp;<a href=inform:/doc412.html><img border=0 src=inform:/doc_images/help.png></a>||
 status alternative ||Using 'Release along with a solution'&nbsp;<a href=inform:/doc411.html><img border=0 src=inform:/doc_images/help.png></a>||

@@ -4,6 +4,8 @@
     <dict>
         <key>Graphics</key>
         <dict>
+            <key>1</key>
+            <string>BOSH1_v9A.materials/Cover.jpg</string>
             <key>3</key>
             <string>Figures/clerk_portrait.png</string>
         </dict>
