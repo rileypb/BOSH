@@ -709,6 +709,9 @@ The radio station facade is a building facade. It is in Main at Lake. It is priv
 
 The broadcast-tower is scenery in Main at Lake. It is privately-named. The printed name is "broadcast tower". Understand "broadcast/tower/radio/antenna" as broadcast-tower. "The broadcast tower rises many feet above the radio station."
 
+Does the player mean examining the broadcast-tower:
+	It is very likely.
+
 Book 11 - WGXC "Galaxy" Radio
 
 Radio Station WGXC is a leavable room. It has egress northwest. It is southeast of Main at Lake. It is in ELR. It is indoors. "This is the town radio station. A staircase runs upwards, presumably to the roof and the broadcast antenna. The exit is northwest."
@@ -938,7 +941,7 @@ The church facade is a building facade. It is in Lake Street by the park. It is 
 
 Book 16 - First Utilitarian Church of Enigma Lake
 
-The First Utilitarian Church of Enigma Lake is a leavable room. It has egress west. It is east of Lake Street by the Park. It is in ELR. It is indoors. "The interior is dimly lit by the stained glass windows, and the pews are arranged in neat rows facing the pulpit. A standard electrical outlet is set into the wall. To the east is the vestry. You can also take a ladder up to the steeple, or stairs down to the basement. The exit is to the west."
+The First Utilitarian Church of Enigma Lake is a leavable room. It has egress west. It is east of Lake Street by the Park. It is in ELR. It is indoors. "The interior is dimly lit by the stained glass windows, and the pews are arranged in neat rows facing the pulpit. A standard electrical outlet is set into the wall. To the east is the vestry. Faraji can also take a ladder up to the steeple, or stairs down to the basement. The exit is to the west."
 [ The snarky remark of the First Utilitarian Church of Enigma Lake is "Where's the gift shop?" ]
 The x-coordinate of the First Utilitarian Church of Enigma Lake is 2. The y-coordinate of the First Utilitarian Church of Enigma Lake is 1.
 
@@ -1496,6 +1499,8 @@ To say glove compartment state:
 After opening the abandoned pickup truck:
 	say "Faraji opens the door of the abandoned truck.";
 
+Does the player mean taking the brass key when the player is in the abandoned pickup truck:
+	it is very likely.
 
 An abandoned pickup truck is a fixed in place closed enterable openable transparent container in Lake at Ridge. 
 "There is an abandoned pickup truck at the side of the road[if the hood is open]. The hood is open[end if]." 
@@ -1582,7 +1587,6 @@ The x-coordinate of the lake shore north of the park is 0. The y-coordinate of t
 The workshed-facade is a building facade. It is in Lake Shore North of the Park. It is privately-named. The printed name is "workshed". Understand "workshed/shed/building" as workshed-facade. "The workshed is a small, weathered building, with a single door and no windows."
 	The workshed-facade fronts the workshed.
 	It is enterable from Lake Shore North of the Park.
-The snarky remark of the workshed-facade is "Groovy."
 
 road-scenery is scenery in the lake shore north of the park. "A road can be seen to the east."
 It is privately-named. The printed name is "road". Understand "road" as road-scenery.
@@ -1755,7 +1759,7 @@ where-we-are is a questioning quip.
 	The printed name is "where we are".
 	Understand "where are we", "where we are" as where-we-are.
 	The comment is "Faraji asks, 'Where are we?'". 
-	The reply is "'We're in an old Onandaga root cellar in upstate New York. Well not so old now, I guess. I've managed to make friends with the locals well enough, so they let me sleep in here.'".
+	The reply is "'We're in an old Onondaga root cellar in upstate New York. Well not so old now, I guess. I've managed to make friends with the locals well enough, so they let me sleep in here.'".
 	It quip-supplies Daniels.
 	It stocks Daniels.
 
@@ -2267,6 +2271,13 @@ After examining the bookshelves:
 
 bookstore-reading is an action applying to one thing. Understand "examine [any bookstore-book]", "read [any bookstore-book]", "look at [any bookstore-book]", "look [any bookstore-book]" as bookstore-reading when the location is the Reading Room.
 
+After deciding the scope of the player while taking when the location is the Reading Room:
+	repeat with item running through the booklist:
+		place item in scope;
+
+Instead of taking a bookstore-book:
+	say "Tsk, tsk. That would be stealing." instead;
+
 [ Rule for reaching inside the Room of Stuff while bookstore-reading:
 	allow access;
 
@@ -2303,7 +2314,7 @@ Instead of searching the bookshelves:
 	say "The bookshelves are filled with a variety of books, from the latest bestsellers to obscure, out-of-print volumes. [We] [poke] around and [find] nothing of use.";
 
 Astral Secrets is in the Reading Room. It is proper-named. The printed name is "[italic type]Astral Secrets[roman type]". Understand "brown/plain/book" as Astral Secrets. Astral Secrets can be read.
-"A brown book lies on the sales counter."
+"A brown book titled [italic type]Astral Secrets[roman type] lies on the sales counter."
 
 The description is "A book with a plain brown cover, titled 'Astral Secrets'. The author is listed as Jeremiah Horton.[paragraph break]Flipping through the book, [we] [find] a dog-eared page. The page shows a diagram of a small, metallic, cylindrical object, which is labeled 'astral resonator'. The text describes the resonator as a device for opening a portal through the astral plane. It goes on to describe the components of the device: a source of resonance, a source of light, and an 'astral lens', which it declines to describe further. The text also mentions that the resonator is powered by a source of electricity." 
 
@@ -2323,9 +2334,14 @@ The Bookstore Basement is below the Reading Room. It is in ELR. It is indoors. T
 
 [ The snarky remark of the Bookstore Basement is "The best you can say of this place is that the stairs also go up." ]
 
+
+
 The x-coordinate of the Bookstore Basement is -2. The y-coordinate of the Bookstore Basement is -1.
 
 Understand "old/crumbling/brick/bricks" as the walls when the location is the Bookstore Basement.
+
+A door appearance rule for a bricked-up-hole:
+	rule succeeds with result whether or not the bricked-up-hole is revealed.
 
 The basement stairs is a building facade in the Bookstore Basement. "A narrow staircase leads up."
 	It fronts the Reading Room.
@@ -2701,8 +2717,8 @@ The sale posters are scenery in Rolle's Department Store. "'50% off everything i
 [ The snarky remark of the sale posters is "Even the floor waxer?"  ]
 Understand "poster/signs/sign" as the sale posters.
 
-The floor waxer is a fixed in place device in Rolle's Department Store. "A floor waxer sits in the center of the gleaming floor[if the floor waxer is switched on]. It is running[end if]." 
-The description is "This is a bulky, heavy-duty machine with a large, round brush head, designed for durability and the ability to polish vast floor areas to a high shine[if the floor waxer is switched on]. It is running[end if]."
+The floor waxer is a fixed in place device in Rolle's Department Store. "A floor waxer sits in the center of the gleaming floor." 
+The description is "This is a bulky, heavy-duty machine with a large, round brush head, designed for durability and the ability to polish vast floor areas to a high shine."
 Understand "switch/machine/brush/brushes/head" as the floor waxer.
 [ The snarky remark is "I'm sure I've seen this floor waxer somewhere before." ]
 

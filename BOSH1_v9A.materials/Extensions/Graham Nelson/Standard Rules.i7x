@@ -4579,7 +4579,7 @@ Understand "wait" as waiting.
 Understand the command "z" as "wait".
 
 Understand "answer [text] to [someone]" as answering it that (with nouns reversed).
-Understand the commands "say", "shout" and "speak" as "answer".
+Understand the commands "say" and "speak" as "answer".
 
 Understand "tell [someone] about [text]" as telling it about.
 

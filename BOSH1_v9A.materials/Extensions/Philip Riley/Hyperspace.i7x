@@ -55,17 +55,17 @@ After going to hyperspace:
 	otherwise if player is not in hyperspace:
 		say "[text of parser error internal rule response (N)][line break]" instead;]
 
-[Check going a hyperspatial direction:
+Before going a hyperspatial direction:
 	if visited hyperspace is true and player is not in hyperspace:
 		say "That direction only exists in hyperspace." instead;
 	otherwise if player is not in hyperspace and player's command includes "go":
-		say "[text of parser error internal rule response (E)][line break]" instead;
+		say "[text of the parser error internal rule response (E)][line break]" instead;
 	otherwise if player is not in hyperspace:
-		say "[text of parser error internal rule response (N)][line break]" instead;]
+		say "I[']m not sure what you're trying to say. I might just not recognize the words you're using." instead;
 		
-Check going a hyperspatial direction:
+[ Check going a hyperspatial direction:
 	if player is not in hyperspace and player is not wearing the astral lenses:
-		say "[text of can't go that way rule response (A)][line break]" instead;
+		say "[text of can't go that way rule response (A)][line break]" instead; ]
 		
 To decide if could see hypertunnels:
 	if the location is not in hyperspace:
@@ -121,6 +121,15 @@ Carry out taking off the astral lenses:
 			
 	
 The room description astral passages rule is listed before the room description paragraphs about objects rule in the carry out looking rules.
+
+Book 1 - Dropping things
+
+To vanish is a verb.
+
+Instead of dropping something when the location is the Featureless Hyperplane (this is the dropping things on hyperplane rule):
+	if the noun is not the mystic compass:
+		say "Faraji drops [the noun] and [they] [vanish]!";
+		now the noun is in field office Reception;
 
 Volume 2 - Featureless Hyperplane
 
@@ -280,6 +289,8 @@ The Ethereal Pillar is a thing. The description is "It's not clear what the pill
 
 After deciding the scope of the player when the location is Featureless Hyperplane:
 	place the Ethereal Pillar in scope;
+
+Understand "structure" as the Ethereal Pillar when the Ethereal Pillar is not in the location.
 
 Instead of examining the Ethereal Pillar when the Ethereal Pillar is not in the location:
 	say "The far-off structure looks like a pillar, but it's hard to tell from here.";
@@ -498,6 +509,7 @@ maggie-subject is a subject. It is privately-named. The printed name is "Maggie"
 lobby is a subject.
 coffee-subject is subject. It is privately-named. The printed name is "coffee". Understand "coffee" as coffee-subject.
 hyperplane-subject is a subject. It is privately-named. The printed name is "hyperplane". Understand "infinite/featureless/hyperplane" as hyperplane-subject.
+hyperspace-field-office-subject is a subject. It is privately-named. The printed name is "BOSH Hyperspace Field Office". Understand "BOSH/Hyperspace/Field/Office" as hyperspace-field-office-subject.
 
 Table of Quiz Topics (continued)
 subject (a thing)	interlocutor (a person)	comment (a text)	reply (a text)
@@ -519,6 +531,7 @@ field office area	Maggie	"'What is this place?'"	"'This is the BOSH Hyperspace F
 Budapest	Maggie	"'What do you know about Budapest?'"	"'It was the answer to a question I asked myself. I don't remember the question, but the answer was Budapest.'"
 coffee-subject	Maggie	"'Do you like coffee?'"	"'Coffee is strange. It smells good, but it tastes horrible.'"
 hyperplane-subject	Maggie	"'What was that place I had to walk through to get here?'"	"'That was the lobby. I helped design it.'"
+hyperspace-field-office-subject	Maggie	"'What is this place?'"	"'This is the BOSH Hyperspace Field Office. This is where we are. Isn't that obvious?'"
 
 Maggie interjection timer is a number that varies. Maggie interjection timer is 5.
 
@@ -584,7 +597,11 @@ It is owned by Minerva. It is plural-named.
 
 [ The snarky remark is "I bet they're all blank." ]
 
-Minerva's books are scenery on the mahogany desk. The description is "The books [italic type]Advanced Temporal Mechanics[roman type], [italic type]Theoretical Hyperspace[roman type], and [italic type]Hitchhiker's Guide to the Galaxy[roman type] are stacked neatly on the desk." 
+Instead of examining Minerva's books:
+	let T be the list of tomes on the mahogany desk;
+	say "The books [T] are stacked neatly on the desk.";
+
+Minerva's books are scenery on the mahogany desk. The description is "The books [italic type]Advanced Temporal Mechanics[roman type], [italic type]Theoretical Hyperspace[roman type], and [italic type]White Light[roman type] are stacked neatly on the desk." 
 It is plural-named. It is owned by Minerva.
 
 [ The snarky remark is "Minerva has a sense of humor?" ]
@@ -610,7 +627,7 @@ Theoretical Hyperspace is a tome on the mahogany desk. The description is "A gra
 [ The snarky remark is "I liked the cover art on the last edition better."  ]
 It is owned by Minerva. It is loanable.
 
-Hitchhiker's Guide to the Galaxy is a tome on the mahogany desk. The description is "A battered paperback with a cover that says 'Don't Panic.'"
+White Light is a tome on the mahogany desk. The description is "A battered trade paperback by someone named Rudy Rucker."
 [ The snarky remark is "Most realistic book in the office."  ]
 It is owned by Minerva. It is loanable.
 
@@ -654,7 +671,7 @@ Book-borrowing something enclosed by the player:
 Book-borrowing a tome (called T) when T is supported by the mahogany desk and T is owned by Minerva:
 	now the player carries T;
 	now the player owns T;	
-	say "[We] [take] [T].";
+	say "[line break][We] [take] [T].";
 	now the borrowed book-minerva is T;
 	rule succeeds;
 
@@ -680,7 +697,7 @@ The book borrowing turn sequence-minerva rule is listed before the every turn st
 
 What do you want to borrow-minerva is a question.
 	The printed name is "What do you want to borrow".
-	The expected responses are { Advanced Temporal Mechanics, Theoretical Hyperspace, Hitchhiker's Guide to the Galaxy }.
+	The expected responses are { Advanced Temporal Mechanics, Theoretical Hyperspace, White Light }.
 	The result is book-borrowing.
 
 [Minerva is business-like and no-nonsense, to the point of being blunt and sometimes rude.]
@@ -700,8 +717,9 @@ Minerva's papers	Minerva	"'What are you working on?'"	"'None of your business.'"
 Minerva's books	Minerva	"'You have a nice libarary.'"	"'Make sure your hands are clean before you touch the books.'"
 Advanced Temporal Mechanics	Minerva	"'Have you read this one?'"	"'Yes, I have. It's a good book.'"
 Theoretical Hyperspace	Minerva	"'What's this one about?'"	"'Check the title. It's about hyperspace.'"
-Hitchhiker's Guide to the Galaxy	Minerva	"'So you read fiction too?'"	"'No, I read non-fiction. That book is a documentary.'"
+White Light	Minerva	"'So you read fiction too?'"	"'No, I read non-fiction. That book is a documentary.'"
 Larch Faraji	Minerva	"'Hi, my name is Larch Faraji.'"	"'Yes, I know who you are. Doris told me you were coming.'"
+hyperspace-field-office-subject	Minerva	"'What is this place?'"	"'This, to my eternal regret, is the BOSH Hyperspace Field Office. It is to where I am eternally condemned. I mean, where I work.'"
 
 
 A coffee maker is on the mahogany desk. It is scenery. The description is "A drip coffee maker sits on the desk." Minerva owns the coffee maker.
@@ -913,6 +931,11 @@ Instead of examining Christy's desk:
 	say the description of Christy's desk;
 	lb;
 
+The brown suit is part of Christy. The description is "The suit is sharp and well-tailored." 
+Christy's eyes are part of Christy. The description is "Christy's eyes are wide, as if they're seeing something Faraji can't."
+Christy's hair is part of Christy. The description is "Christy's hair is short and spiky."
+
+
 Christy's sketchbook is on Christy's desk. The description is "From what [we] can see, the sketchbook is filled with drawings of strange, abstract shapes." It is owned by Christy. Understand "book/sketch/sketches/drawing/drawings" as Christy's sketchbook.
 The snarky remark is "I believe that kind of art is called abstract astigmatism."
 
@@ -936,6 +959,9 @@ The portal to the past is in Portal Room 1. The portal to the past can be activa
 Understand "shimmering/curtain/field/of/light" as the portal to the past when the portal to the past is activated. 
 
 [ The snarky remark of the portal to the past is "Does it kill you and then assemble a new you on the other side? If so, I'm not getting paid enough for this." ]
+
+Instead of going inside when the location is Portal Room 1:
+	try entering the portal to the past;
 
 To say portal to the past interior description:
 	if the portal to the past is activated:
@@ -1050,11 +1076,12 @@ Section - Portal 2
 
 Portal Room 2 is a leavable room. It is back of the field office hallway. It is in field office area. "The room is full of humming, glowing machinery, all of it attached to a large, arch-shaped portal in the middle of the room. A sign on the portal says 'Auxiliary Portal'. The exit is forth." It has egress forth.
 
-The snarky remark is "Doris needs to hire a room-name consultant."
-
 The auxiliary portal is in Portal Room 2. The auxiliary portal can be activated. it is fixed in place.
 
 Understand "shimmering/curtain/field/of/light" as the auxiliary portal when the auxiliary portal is activated. 
+
+Instead of going inside when the location is Portal Room 2:
+	try entering the auxiliary portal;
 
 [ The snarky remark of the auxiliary portal is "I'd like a portal right to my bed, please." ]
 
@@ -1064,9 +1091,9 @@ To say auxiliary portal interior description:
 	otherwise:
 		say ". The portal is dark and inactive";
 
-The description is "In the middle of the room looms a large portal made of the same astral stuff this whole dimension is made of[auxiliary portal interior description]. It is labeled 'Auxiliary Portal'."
+The description is "The portal is made of the same astral stuff this whole dimension is made of[auxiliary portal interior description]. It is labeled 'Auxiliary Portal'."
 
-The machinery2 is scenery in Portal Room 1. It is privately-named. The printed name is "machinery". Understand "machinery/machines" as machinery2. The description is "The machinery is humming and glowing with a soft light. It's all attached to the portal in the middle of the room."
+The machinery2 is scenery in Portal Room 2. It is privately-named. The printed name is "machinery". Understand "machinery/machines" as machinery2. The description is "The machinery is humming and glowing with a soft light. It's all attached to the portal in the middle of the room."
 
 Rule for writing a paragraph about the auxiliary portal:
 	say the description of the auxiliary portal;
@@ -1099,7 +1126,7 @@ An availability rule for for-a-screwdriver-doris:
 
 who-are-you-doris is a questioning quip.
 	The printed name is "who he is".
-	Understand "who are you", "who you are", "who is he", "who he is" as who-are-you-doris.
+	Understand "who", "who are you", "who you are", "who is he", "who he is" as who-are-you-doris.
 	The comment is "[We] [ask] 'Who are you?'".
 	The reply is "He looks taken aback for a moment, then recovers his composure. 'Ah yes, introductions. I'm Doris, chief of the hyperspatial field office of the Bureau.'".
 	It quip-supplies Doris.
@@ -1113,9 +1140,9 @@ about his name is a questioning quip.
 	
 where-is-this-hyperspace is a questioning quip.
 	The printed name is "where we are".
-	Understand "where are we", "where we are", "where am i", "where i am", "where is this", "where this is" as where-is-this-hyperspace.
+	Understand "where", "where are we", "where we are", "where am i", "where i am", "where is this", "where this is" as where-is-this-hyperspace.
 	The comment is "[We] [look] around and [ask], 'Where are we? What is this place?'".
-	The reply is "[Doris] [answer], 'You're in the hyperspatial field office of the Bureau of Strange Happenings. But I guess that doesn't exactly clear things up for you. Practically, your office is a branch of ours, but since you have the official recognition of the US government -- for now -- you get the glory. Besides, due to the nature of our work, we prefer to remain underground, so to speak. How's Klimp, by the way? Ah, we had some good times. But you know what they say -- what happens in Pompeii, stays in Pompeii.".
+	The reply is "[Doris] [answer], 'You're in the hyperspatial field office of the Bureau of Strange Happenings. But I guess that doesn't exactly clear things up for you. Practically, your office is a branch of ours, but since you have the official recognition of the US government -- for now -- you get the glory. Besides, due to the nature of our work, we prefer to remain underground, so to speak. How's Klimp, by the way? Ah, we had some good times. But you know what they say -- what happens in Pompeii, stays in Pompeii.'".
 	It quip-supplies Doris.
 	It stocks Doris.
 
@@ -1201,7 +1228,7 @@ hand over the thumb drive is a performative quip.
 	Understand "hand it over", "hand him the thumb/-- drive" as hand over the thumb drive.
 	The reply is "'Great, great.' He peruses the drive. 'We lost one of our New York agents -- a guy named Daniels -- to a slingshot effect that threw him far back in time. We're always monitoring for artifacts that are out of place or anachronistic to lead us to lost agents.
 	
-	He continues, 'The scratch marks here say, [']They found me out and sent me back. 14th century. Old Onandaga holy place. Savra is going to move on the Dragon.[']'".
+	He continues, 'The scratch marks here say, [']They found me out and sent me back. 14th century. Old Onondaga holy place. Savra is going to move on the Dragon.[']'".
 	it quip-supplies Doris.
 	
 [An availability rule for hand over the thumb drive:
@@ -1268,7 +1295,7 @@ what-is-a-lizard-man is a questioning quip.
 	It follows yes-aliens.
 	It follows no-aliens.
 	
-Savra's not reptilian is a performative quip.
+Savra's not reptilian is an informative quip.
 	Understand "Savra/is/not/reptilian" as Savra's not reptilian.
 	The comment is "'But Savra isn't a reptile!'".
 	The reply is "'He's in disguise! Whatever, it doesn't matter. What matters is your mission.'"
@@ -1295,7 +1322,7 @@ Savra's not reptilian is a performative quip.
 about the mission is a questioning quip.
 	Understand "what about the/-- mission" as about the mission.
 	The comment is "[We] [say], 'What's the mission?'".
-	The reply is "Doris leans back in his chair. 'I believe we still have a chance to retrieve our lost agent -- the one that left the thumb drive. He says he was at an Onandaga holy place in the 14th century. Now we need to find out where that is. Fortunately, there's a book that can help. Unfortunately, I don't have it. Fortunately, you're here to go find it. Unfortunately, the name's gotten a bit jumbled in my head. I think it was something like [italic type]New Bikers of Troy[roman type]. Or something. I'm bad with things like titles and letters and keeping things the right way [']round. But you'll find it. I know you will. Come back here when you have.'".
+	The reply is "Doris leans back in his chair. 'I believe we still have a chance to retrieve our lost agent -- the one that left the thumb drive. He says he was at an Onondaga holy place in the 14th century. Now we need to find out where that is. Fortunately, there's a book that can help. Unfortunately, I don't have it. Fortunately, you're here to go find it. Unfortunately, the name's gotten a bit jumbled in my head. I think it was something like [italic type]New Bikers of Troy[roman type]. Or something. I'm bad with things like titles and letters and keeping things the right way [']round. But you'll find it. I know you will. Come back here when you have.'".
 	it quip-supplies Doris.
 	It follows about Savra.
 	It follows about the Dragon.
@@ -1398,7 +1425,7 @@ After printing the locale description when player is in the field office chief's
 		queue Doris with what thumb drive;
 		
 Daniels-subject is a subject. It is privately-named. The printed name is "Daniels". Understand "Daniels" as Daniels-subject.
-Onandaga-subject is a subject. It is privately-named. The printed name is "Onandaga". Understand "Onandaga" as Onandaga-subject.
+Onondaga-subject is a subject. It is privately-named. The printed name is "Onondaga". Understand "Onondaga" as Onondaga-subject.
 new-bikers-subject is a subject. It is privately-named. The printed name is "New Bikers of Troy". Understand "New/-- Bikers/-- of/-- Troy" as new-bikers-subject.
 
 Table of Quiz Topics (continued)
@@ -1529,8 +1556,12 @@ Natural History Museum	Doris	"'What is the Natural History Museum?'"	"'What I wa
 Sumeria	Doris	"'What do you know about Sumeria?'"	"'I was there. I was the one who suggested they use cuneiform. They said it was too hard to read. I said, 'That's the point.''"
 Dwight Eisenhower	Doris	"'You really talked to Dwight Eisenhower?'"	"'Well, in a manner of speaking. I certainly talked in his vicinity.'"
 Daniels-subject	Doris	"'Who is Daniels, anyway?'"	"'He's a field agent. This is his first mission since the unfortunate incident in Budapest.'"
-Onandaga-subject	Doris	"'Who are the Onandaga?'"	"'They're a tribe of Native Americans. From upstate New York. Daniels has been living with them in the 14th century.'"
+Onondaga-subject	Doris	"'Who are the Onondaga?'"	"'They're a tribe of Native Americans. From upstate New York. Daniels has been living with them in the 14th century.'"
 new-bikers-subject	Doris	"'What is the New Bikers of Troy?'"	"'It's a book. It's a very important book. It's the key to the mission. But I'm not sure that's the title. I'm sure you'll figure it out.'"
+hyperspace-field-office-subject	Doris	"'What is the hyperspace field office?'"	"'It's here, and yet it's not here. But, no, actually, it is here. It's a very confusing concept.'"
+chief-huffton-klimp-subject	Doris	"'So you know Klimp?' Faraji asks."	"'Huffton is a great friend of mine. In some ways, he's the best friend I've ever had. In other ways, he's the worst enemy I've ever had. It's complicated.'"
+hyperspace-subject	Doris	"'What is hyperspace?'"	"'It's a place where time and space are a little more flexible. It's a good place to keep a field office.'"
+
 
 
 Doris interjection timer is a number that varies. Doris interjection timer is 5.
@@ -1632,6 +1663,8 @@ Before going north from Christy's office when Christy is researching:
 
 [Christy is a non-binary paranormal researcher. She tends to be cynical and sarcastic, but she's also very good at her job.]
 
+art is a subject.
+
 Table of Quiz Topics (continued)
 subject (a thing)	interlocutor (a person)	comment (a text)	reply (a text)
 Mothman	Christy	"'Who is the Mothman?'"	"'The Mothman is a cryptid that was sighted in West Virginia in the 1960s. I think he's a friend of Doris's. I've never met him.'"
@@ -1646,6 +1679,8 @@ maggie-subject	Christy	"'Who is Maggie?'"	"'Maggie is... Maggie. She's the recep
 Christy's desk	Christy	"'What's on your desk?'"	"'Research. Nothing you would understand. Also a sketchbook. Don't look in it.'"
 Christy's sketchbook	Christy	"'What's in your sketchbook?'"	"'Drawings. Of things. I'm not going to show you.'"
 Christy's pencil	Christy	"'What's that pencil?'"	"'My special drawing pencil. I'm not going to let you borrow it.'"
+hyperspace-field-office-subject	Christy	"'What is the hyperspace field office?'"	"'It's Doris's little kingdom. It's where we peons toil. I'm not bitter.'"
+art	Christy	"'So you're an artist?'"	"'I'm a paranormal illustrator. I draw things that don't exist. It's a very lucrative field.'"
 
 Christy interjection timer is a number that varies. Christy interjection timer is 5.
 

@@ -1,0 +1,614 @@
+Start of a transcript of
+
+The Bureau of Strange Happenings
+An Interactive Phenomenon by Phil Riley
+Release 1 / Serial number 240521 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
+Identification number: //F61EFB05-03A9-4894-B076-9E767F9163A8//
+Interpreter version 0.6.0 / VM 3.1.3 / Library serial number 080126
+Standard Rules version 3/120430 by Graham Nelson
+Epistemology version 9 by Eric Eve
+Conversation Framework version 12 by Eric Eve
+Conversation Responses version 7 by Eric Eve
+Conversational Defaults version 3 by Eric Eve
+Formatting Capture version 2/221014 by Daniel Stelzer (based on Text Capture by Eric Eve)
+Undo Output Control version 5/170902 by Erik Temple
+Gender Options version 3/210331 by Nathanael Nerode
+Exit Lister version 11 by Eric Eve
+Secret Doors by Gavin Lambert
+
+>purloin recall button
+[Purloined.]
+
+>i
+Faraji is carrying:
+  a recall button
+  an iron key
+  a thumb drive
+  a sledgehammer
+  a backpack (open)
+    the Rod of Hezekiah
+    Astral Secrets
+    The Book of Weird Names
+    a dowsing rod
+    a shovel
+    The Witnessing of Hezekiah
+    a bell
+    a telescope
+    a pair of bolt cutters
+    a broken lock
+    a red key
+
+>l
+Agent Faraji is in the circular chamber. The chamber is circular, with a low ceiling. The walls are rough-hewn stone. A passage leads to the north.
+
+A shimmering portal hovers in the center of the chamber, casting a faint light over the room.
+
+>enter portal
+Faraji steps through the portal. The circular chamber vanishes, and they find themself somewhere else...
+
+Agent Faraji is in an old root cellar. The chamber is dark and damp, smelling of earth and old vegetable matter. The walls, floor, and ceiling are packed earth. Around the walls are numerous woven baskets for storing vegetables. Light filters in from a passage to the north.
+
+A tired-looking man sits on the floor of the cellar. He looks up as Faraji appears. "Ah, you must be the help I was promised," he says. "I'm Daniels. I've been waiting for you."
+
+Faraji can ask for a screwdriver, ask how he got here or ask where we are.
+
+>ask screwdriver
+They ask, "Would you happen to have a screwdriver I could borrow?"
+
+He checks his pockets. "Sadly, no," he responds.
+
+Faraji can ask how he got here or ask where we are.
+
+>ask how
+Faraji says, "How did you end up stranded here?"
+
+"I was hunting down Savra's minions," Daniels says, "but they caught me and sent me way back to the past. I've been stuck here ever since."
+
+Faraji can ask where we are or ask what's next.
+
+>ask wehre
+I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+>ask where
+I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+>ask what
+I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+>ask where we
+I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+>ask where we are
+Faraji asks, "Where are we?"
+
+"We're in an old Onandaga root cellar in upstate New York. Well not so old now, I guess. I've managed to make friends with the locals well enough, so they let me sleep in here."
+
+Faraji can ask what's next.
+
+>ask next
+Faraji asks, "What do we do next?"
+
+"Doris must have given you a recall button. I can rejigger it to send me to the hyperspace office and send you back to Swamp Park. I own the laundromat, by the way. Sorry I wasn't there to greet you. Alright, give me the button."
+
+Faraji hands the recall button to Daniels. Daniels fiddles with the device for a moment, then hands it back. "There you go. You can do the honors."
+
+>l
+Agent Faraji is in an old root cellar. The chamber is dark and damp, smelling of earth and old vegetable matter. The walls, floor, and ceiling are packed earth. Around the walls are numerous woven baskets for storing vegetables. Light filters in from a passage to the north.
+
+Daniels, ragged and dirty, sits on the floor of the cellar. He looks tired.
+
+>get vegetablse
+There's nothing like that nearby.
+
+>get vegetables
+Those belong to the Onandaga.
+
+>n
+Faraji is heading into the north passage when Daniels calls out to him. "I wouldn't go out there," he says. "We need to get back to our own time."
+
+>press button
+Faraji is just about to push the recall button when Daniels exclaims, "Wait! I forgot to give you this." He pushes a small metal object into Faraji's hand.
+
+Faraji doesn't have time to look at object before their finger slips and pushes the button. The room spins and fades away, and Faraji finds themself back in Swamp Park.
+
+Agent Faraji is inside the dumpster. It's smelly, but at least the top is open. Assorted trash and cardboard boxes are scattered about. Thankfully, it's not too full.
+
+[I'll get that guy Daniels for this.]
+
+>l
+Agent Faraji is inside the dumpster. It's smelly, but at least the top is open. Assorted trash and cardboard boxes are scattered about. Thankfully, it's not too full.
+
+>x trash
+It's a bunch of trash. It's smelly and gross.
+
+[I'm not going to root around in there.]
+
+>out
+Faraji climbs out of the dumpster.
+
+Agent Faraji is in the back lot. This is a small area of asphalt between the building and a chain link fence looking in on an industrial property. A door to east leads into the BOSH offices, and one to the north enters the laundromat. There is a blue dumpster here.
+
+>i
+Faraji is carrying:
+  a wristwatch
+  a recall button
+  an iron key
+  a thumb drive
+  a sledgehammer
+  a backpack (open)
+    the Rod of Hezekiah
+    Astral Secrets
+    The Book of Weird Names
+    a dowsing rod
+    a shovel
+    The Witnessing of Hezekiah
+    a bell
+    a telescope
+    a pair of bolt cutters
+    a broken lock
+    a red key
+
+>x watch
+A simple wristwatch. The initials "DM" are engraved on the back.
+
+[All this way just for this?]
+
+>knock on door
+Which do you mean, the BOSH back door or the laundromat back door?
+
+>bosh
+You hear the door being unlocked, and then Margaret pops her head out. "Seriously, Agent Faraji? You got yourself locked out? Be more careful!"
+
+A phone is ringing to the east, in Faraji's office.
+
+>e
+Agent Faraji is in their office. It's basically four white walls and grey carpet. There's a cheap desk and chair. In lieu of windows, there are a few things on the wall: their degree in Nonstandard Investigative Techniques, a pencil drawing of the Pitfall snake, and a photo of their soccer team. The office door is to the north, and there's a white metal door to the west.
+
+Also here is Margaret.
+
+A phone is ringing inside Faraji's desk.
+
+Faraji can ask where Moira is.
+
+>ask moira
+They ask, "Has Moira come in yet?"
+
+Margaret barely looks up from her work. "Nope."
+
+A phone is ringing inside their desk.
+
+Margaret closes the BOSH back door.
+
+Margaret locks the BOSH back door.
+
+>n
+Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east. Moira's door is closed; Faraji's door and Klimp's door are open.
+
+A phone is ringing to the south, in their office.
+
+Margaret arrives from the south.
+
+>e
+Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as the BOSH front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Bureau photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
+
+The exit is to the east, while the office continues via a hallway to the west.
+
+Also here is their computer.
+
+A phone is ringing to the west.
+
+Margaret arrives from the west.
+
+>e
+Faraji trips over a newspaper left up against the door. They pick it up.
+
+Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Enter HELP for instructions.
+
+Klimp's Porsche takes up two spots.
+
+Their bright red Hyundai Accent is parked nearby. The hood is open.
+
+Also here is a copy of the Washington Herald.
+
+>x herald
+The front page story is an account of the disappearance of the grandson of Senate Homeland Security Committee chairman Englund Fryes. His parents, including the Senator's son, were brutally murdered in their home, but the boy, Draco Fryes, is missing and presumed kidnapped. So far there has been no ransom demand.
+
+>get it
+Taken.
+
+>sw
+(first opening the pawn shop door)
+Agent Faraji is in Dave's pawn shop. This is more the seedy, gloomy stereotype of a pawn shop than the glitzy sanitized version of TV reality shows. The blinds in the windows are closed to only allow the barest slant of sunlight in, leaving the sickly fluorescent lights to illuminate the room. There is the distinct smell of cigar smoke. The glass counter is filled with a large collection of possibly valuable items. Behind it is an impressive array of firearms.
+
+The exit is northeast.
+
+A man, presumably Dave, stands behind the main counter eyeing Faraji.
+
+The pawn shop door closes.
+
+>give watch to dave
+(the wristwatch to Dave)
+Dave smiles when Faraji hands him the watch. "I've been looking for this," he says. "Here you go, five bucks for your trouble." He hands them a Li'l Nectarine Gift Card.
+
+>out
+Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Enter HELP for instructions.
+
+Klimp's Porsche takes up two spots.
+
+Their bright red Hyundai Accent is parked nearby. The hood is open.
+
+>n
+Agent Faraji is at the north end of the strip mall parking lot. This end is no more auspicious than the other. A convenience store lies to the east. To the west is a military recruitment center. North of here the parking lot exits onto a busy road. There is a rusty sign by the road naming the shopping center: Park Place. South is BOSH headquarters, among other things.
+
+>e
+Faraji is greeted by a blast of music as they enter the store.
+
+Agent Faraji is in the Li'l Nectarine Convenience Store. Li'l Nectarine offers great service and low prices, or so they say. This one's cluttered aisles and sparse shelves could make one wonder if that's true. Behind the counter is the typical array of cigarettes and lottery tickets. Under the counter is a glass case containing various useful items.
+
+The clerk, a scruffy man in his mid-twenties, is leaning against the counter, looking bored.
+
+As you enter the store, you catch a glimpse of a red screwdriver in the glass case under the counter.
+
+"Good morning," Faraji says.
+"Yeah," replies the clerk.
+
+Faraji can ask for a screwdriver.
+
+>buy screwdriver
+What do you want Faraji to buy the red screwdriver with?
+
+>money
+There's nothing like that nearby.
+
+>i
+Faraji is carrying:
+  a Li'l Nectarine Gift Card
+  a copy of the Washington Herald
+  a recall button
+  an iron key
+  a thumb drive
+  a sledgehammer
+  a backpack (open)
+    the Rod of Hezekiah
+    Astral Secrets
+    The Book of Weird Names
+    a dowsing rod
+    a shovel
+    The Witnessing of Hezekiah
+    a bell
+    a telescope
+    a pair of bolt cutters
+    a broken lock
+    a red key
+
+Faraji can ask for a screwdriver.
+
+>buy screwdriver with card
+The clerk takes the gift card and hands you the red screwdriver. "Thanks," he says.
+
+>l
+Agent Faraji is in the Li'l Nectarine Convenience Store. Li'l Nectarine offers great service and low prices, or so they say. This one's cluttered aisles and sparse shelves could make one wonder if that's true. Behind the counter is the typical array of cigarettes and lottery tickets. Under the counter is a glass case containing various useful items.
+
+The clerk, a scruffy man in his mid-twenties, is leaning against the counter, looking bored.
+
+>out
+Faraji exits the store into the relative quiet of the nearby traffic.
+
+Agent Faraji is at the north end of the strip mall parking lot. This end is no more auspicious than the other. A convenience store lies to the east. To the west is a military recruitment center. North of here the parking lot exits onto a busy road. There is a rusty sign by the road naming the shopping center: Park Place. South is BOSH headquarters, among other things.
+
+>s
+Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Enter HELP for instructions.
+
+Klimp's Porsche takes up two spots.
+
+Their bright red Hyundai Accent is parked nearby. The hood is open.
+
+>w
+Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as the BOSH front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Bureau photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
+
+The exit is to the east, while the office continues via a hallway to the west.
+
+The Bureau's latest office manager, Margaret is bustling around with unrestrained enthusiasm.
+
+Also here is Faraji's computer.
+
+A phone is ringing to the west.
+
+>w
+Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east. Moira's door is closed; Faraji's door and Klimp's door are open.
+
+One can hear the sound of boxes being flattened in the front office.
+
+A phone is ringing to the south, in their office.
+
+Margaret arrives from the east, carrying a couple of flattened boxes.
+
+>e
+Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as the BOSH front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Bureau photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
+
+The exit is to the east, while the office continues via a hallway to the west.
+
+Also here is their computer.
+
+A phone is ringing to the west.
+
+>open vent
+(first unlocking the heating vent)
+Faraji lacks a key that fits the heating vent.
+
+A phone is ringing to the west.
+
+>x vent
+A typical air register with a grill which one would hope would stop things like, say, a hex wrench from falling through. It's set in the floor behind the front desk. The vent is held closed by four screws.
+
+In the heating vent is a hex wrench.
+
+A phone is ringing to the west.
+
+>unscrew screws
+Faraji unscrews the four screws and removes the vent cover. They take the hex wrench from inside and put the cover back on.
+
+A phone is ringing to the west.
+
+>w
+Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east. Moira's door is closed; Faraji's door and Klimp's door are open.
+
+A phone is ringing to the south, in their office.
+
+>s
+Agent Faraji is in their office. It's basically four white walls and grey carpet. There's a cheap desk and chair. In lieu of windows, there are a few things on the wall: their degree in Nonstandard Investigative Techniques, a pencil drawing of the Pitfall snake, and a photo of their soccer team. The office door is to the north, and there's a white metal door to the west.
+
+Also here is Margaret.
+
+A phone is ringing inside Faraji's desk.
+
+Margaret closes the BOSH back door.
+
+Margaret locks the BOSH back door.
+
+>disassemble desk
+Faraji unscrews the hex screws and removes the drawer. Inside, they find a little grey key and a blue flipphone. They put the drawer back together and pocket the key and the phone, being careful to leave the drawer unlocked.
+
+The blue flipphone you are carrying is ringing.
+
+Margaret goes north.
+
+>x key
+Which do you mean, the little grey key, the hex wrench, the iron key or the red key?
+
+>grey
+It's a small grey key, like the kind you might accidentally lock inside a desk drawer.
+
+[And now you'll never get used, little key.]
+
+The blue flipphone you are carrying is ringing.
+
+>x blue
+Faraji doesn't recognize the number on the caller ID.
+
+The blue flipphone you are carrying is ringing.
+
+>answer phone
+Faraji answers the blue flipphone.
+They say hello.
+
+
+"Hello?"
+
+"Hello, Larch," says a familiar voice -- it's Doris.
+
+"Doris? Why didn't you tell me you were calling when I saw you in your office?"
+
+"Ah well, I didn't know I was going to call you then. In fact, I haven't even called you yet. It's complicated."
+
+"What do you mean?"
+
+"I'm calling you now, but I haven't called you yet. I'm calling you from the future."
+
+"Oh, I see. So you're calling me from the future to tell me that you're going to call me from the future."
+
+"No, I'm calling you from the future to get you to try to answer the phone so that you'll end up meeting me so that I'll know to call you from the future. Don't worry about it, it's all timey-wimey. Aaanyway, now that you've answered -- thanks for rescuing Daniels. Also, we need your help with something. We need you to save the Dragon." 
+
+
+    *** Congratulations on answering the phone! ***
+
+
+Larch Faraji will return in "BOSH II: The Dragon".
+
+[Seriously, is that it?]
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+> undo
+Agent Faraji is in their office.
+
+>gonear sketchbook
+Agent Faraji is in Christy's office. Christy has taken the initiative to paint their office a bright, cheerful orange. A large desk is in the middle of the room.
+
+Christy is sitting at the desk, drawing in a sketchbook.
+
+The blue flipphone you are carrying is ringing.
+
+>n
+Agent Faraji is in the field office hallway. The hallway is white and gleaming. Doorways lead north, south, east, west, forth, and back.
+
+The blue flipphone you are carrying is ringing.
+
+>w
+Agent Faraji is in the field office chief's office. Doris's office is a riot of color -- he's covered the white walls with posters, maps, and charts. A large desk is in the middle of the room, behind which sits Doris.
+
+Doris is sitting cross-legged in a chair, tapping his foot lazily on the desk.
+
+Doris fiddles with his TARDIS. "Some people get all excited about this thing. What's the big deal? It's just a police box."
+
+The blue flipphone you are carrying is ringing.
+
+Faraji can ask who he is, ask where we are, ask how to get home, tell Doris they don't have it or show him the thumb drive.
+
+>i
+Faraji is carrying:
+  a blue flipphone
+  a little grey key
+  a hex wrench
+  a red screwdriver
+  a copy of the Washington Herald
+  a recall button
+  an iron key
+  a thumb drive
+  a sledgehammer
+  a backpack (open)
+    the Rod of Hezekiah
+    Astral Secrets
+    The Book of Weird Names
+    a dowsing rod
+    a shovel
+    The Witnessing of Hezekiah
+    a bell
+    a telescope
+    a pair of bolt cutters
+    a broken lock
+    a red key
+
+The blue flipphone you are carrying is ringing.
+
+Faraji can ask who he is, ask where we are, ask how to get home, tell Doris they don't have it or show him the thumb drive.
+
+>show him drive
+They answer, "Yes, I have it."
+
+"Fantastic! Hand it here."
+
+The blue flipphone you are carrying is ringing.
+
+Faraji can ask who he is, ask where we are, ask how to get home or hand over the thumb drive.
+
+>give him drive
+They give the thumb drive to Doris.
+
+"Great, great." He peruses the drive. "We lost one of our New York agents -- a guy named Daniels -- to a slingshot effect that threw him far back in time. We're always monitoring for artifacts that are out of place or anachronistic to lead us to lost agents.
+
+He continues, "The scratch marks here say, 'They found me out and sent me back. 14th century. Old Onandaga holy place. Savra is going to move on the Dragon.'"
+
+The blue flipphone you are carrying is ringing.
+
+Faraji can ask who he is, ask where we are, ask how to get home, ask about Savra, ask about the Dragon or ask about time travel.
+
+>answer phone
+Faraji answers the blue flipphone.
+They say hello.
+
+
+"Hello?"
+
+"Hello, Larch," says a familiar voice -- it's Doris.
+
+"Doris? Why didn't you tell me you were calling when I saw you in your office?"
+
+"Ah well, I didn't know I was going to call you then. In fact, I haven't even called you yet. It's complicated."
+
+"What do you mean?"
+
+"I'm calling you now, but I haven't called you yet. I'm calling you from the future."
+
+"Oh, I see. So you're calling me from the future to tell me that you're going to call me from the future."
+
+"No, I'm calling you from the future to get you to try to answer the phone so that you'll end up meeting me so that I'll know to call you from the future. Don't worry about it, it's all timey-wimey. Aaanyway, now that you've answered -- thanks for rescuing Daniels. Also, we need your help with something. We need you to save the Dragon." 
+
+
+    *** Congratulations on answering the phone! ***
+
+
+Larch Faraji will return in "BOSH II: The Dragon".
+
+[Seriously, is that it?]
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+> undo
+Agent Faraji is in the field office chief's office.
+
+>i
+They are carrying:
+  a blue flipphone
+  a little grey key
+  a hex wrench
+  a red screwdriver
+  a copy of the Washington Herald
+  a recall button
+  an iron key
+  a sledgehammer
+  a backpack (open)
+    the Rod of Hezekiah
+    Astral Secrets
+    The Book of Weird Names
+    a dowsing rod
+    a shovel
+    The Witnessing of Hezekiah
+    a bell
+    a telescope
+    a pair of bolt cutters
+    a broken lock
+    a red key
+
+The blue flipphone you are carrying is ringing.
+
+Faraji can ask who he is, ask where we are, ask how to get home, ask about Savra, ask about the Dragon or ask about time travel.
+
+>hint
+Hints about the following topics are available:
+* computer
+* Margaret Chao
+* Chief Klimp
+* Moira Zin
+* work schedule
+* backpack
+* threaded socket
+* root cellar
+* open locker
+(Topics in bold have new hints available. The others may have more hints later.)
+To recall hints about a topic, type RECALL <TOPIC>.
+
+>hint cellar
+Faraji should talk to Daniels.
+
+>g
+When he asks, Faraji should give him the recall button.
+
+>g
+Then Faraji should press the button.
+
+>g
+Then Faraji should press the button.
+
+>gonear pawn
+Which do you mean, Dave's pawn shop, Dave's pawn shop or Dave's pawn shop?
+
+>gonear dumpster
+(the dumpster)
+Agent Faraji is inside the dumpster. It's smelly, but at least the top is open. Assorted trash and cardboard boxes are scattered about. Thankfully, it's not too full.
+
+The blue flipphone you are carrying is ringing.
+
+Faraji can ask who he is, ask where we are, ask how to get home, ask about Savra, ask about the Dragon or ask about time travel.
+
+>hint
+Hints about the following topics are available:
+* computer
+* Margaret Chao
+* Chief Klimp
+* Moira Zin
+* work schedule
+* backpack
+* threaded socket
+* root cellar
+* open locker
+(Topics in bold have new hints available. The others may have more hints later.)
+To recall hints about a topic, type RECALL <TOPIC>.
+
+>script off
+
+End of transcript.

@@ -312,7 +312,7 @@ Every turn when the location is the Observation Room:
 		say "The view through the window changes.";
 		try examining the window;
 
-Understand "parlor" as the observation window when the window contents of the observation room is the fake-parlor.
+Understand "parlor/house" as the observation window when the window contents of the observation room is the fake-parlor.
 Understand "hyperplane" as the observation window when the window contents of the observation room is the fake-hyperplane.
 Understand "steeple" as the observation window when the window contents of the observation room is the fake-steeple.
 

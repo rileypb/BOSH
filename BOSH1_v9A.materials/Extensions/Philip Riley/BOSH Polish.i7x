@@ -155,7 +155,6 @@ laundromat back room	laundromat-store	"Faraji steps into the relative brightness
 laundromat back room	astral-tunnel-2	"Faraji steps carefully into the astral tunnel."	--
 laundromat basement	laundromat back room	"Faraji climbs the narrow stairs back to the back room."	--
 laundromat basement	back basement	"Faraji forges onward, deeper into the bowels of the laundromat."	--
-back basement	laundromat basement	"Faraji retreats to a safer location."	--
 back basement	astral-tunnel-3	"Faraji steps into the astral tunnel."	--
 astral-tunnel-3	laundromat-store	"Faraji exits the astral tunnel into the front room of the laundromat."	--
 astral-tunnel-3	back basement	"Faraji steps back into the back basement."	--
@@ -418,7 +417,7 @@ radio station facade	"[We] [attempt] to lift the building, but it's too heavy."	
 Reading-Room-Facade	"And rob the community of one of its few sources of culture?"	"[We] attempt to push the store around, but it's not going anywhere."
 reception desk	"That's attached to the floor."	"That's attached to the floor."
 rickety wardrobe	"It's too heavy to lift."	"It's too heavy to move unaided."
-root vegetables	"Those belong to the Onandaga."	"Those belong to the Onandaga."
+root vegetables	"Those belong to the Onondaga."	"Those belong to the Onondaga."
 Rolle's facade	"What would Rolle think?"	"[We] attempt to push the store around, but it's not going anywhere."
 rusty sign	"That belongs to the mall."	"It's immobile."
 sale posters	"[We] [don't] want to carry around useless stuff."	"They're fine where they are."
@@ -443,7 +442,7 @@ washing machines	"And deprive the laundromat of its livelihood?"	"[We] [move] th
 wires	"The wires travel up through a hole in the ceiling. They can't be taken without some work."	"The wires travel up through a hole in the ceiling. They can't be moved without some work."
 work schedule	"[We] [don't] need it."	"[We] [don't] need it."
 workshed-facade	"[We] attempt to push the shed around, but it's not going anywhere."	"[We] attempt to push the shed around, but it's not going anywhere."
-woven baskets	"Those belong to the Onandaga."	"Those belong to the Onandaga."
+woven baskets	"Those belong to the Onondaga."	"Those belong to the Onondaga."
 Waiting-for-the-Aliens	"That belongs to Chief Klimp."	"That belongs to Chief Klimp."
 Travels in Time	"That belongs to Chief Klimp."	"That belongs to Chief Klimp."
 Dictionary of Strangeness	"That belongs to Chief Klimp."	"That belongs to Chief Klimp."

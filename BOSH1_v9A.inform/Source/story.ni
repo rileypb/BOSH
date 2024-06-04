@@ -80,6 +80,7 @@ Use MAX_SYMBOLS of 200000.
 Use MAX_OBJECTS of 2048.
 Use MAX_DICT_ENTRIES of 20000.
 Use MAX_ARRAYS of 20000.
+Use MAX_ACTIONS of 300.
 
 Work Title is always "The Bureau of Strange Happenings".  
  
@@ -135,7 +136,14 @@ The new room description heading rule does nothing when the location is the isol
 Ezra Gaunt is a man in the Room of Stuff. The description is "Agent Gaunt's last name describes him well. He is a perpetually worried-looking individual, a look emphasized by his thinness and his thick-rimmed glasses.".
 Petula Goldberg is a woman in the Room of Stuff. The description is "Agent Goldberg has lots of dogs, a fact which can be inferred by the inevitable fur somewhere on her person. The last front office worker at the Bureau left due to an extreme allergic reaction to Goldberg.".
 Larch Faraji is a nonbinary in the Strip Mall Parking Lot South. The third singular pronoun is singular-they-pronoun. The description is "Agent Faraji is dressed smartly in a black suit, with neat hair and a serious expression. Inside, they are a punk rocker, a fact that they are not shy about.". 
- 
+
+The black suit is part of Larch Faraji. The description is "A black suit, tailored to fit Faraji's slim frame.".
+
+Faraji's hair is part of Larch Faraji. The description is "Faraji's hair is dark and neatly styled.".
+
+Instead of doing something other than examining when the noun is not nothing and the noun is part of Larch Faraji:
+	say "Faraji has more important things to do.";
+
 The snarky remark of Larch Faraji is "Don't talk about me like I'm not here."
 
 Play mode is a kind of value. The play modes are _startup, _normal, and picking character.
@@ -429,7 +437,7 @@ Carry out flipping a device:
 Book 5 - Automatic greeting
 
 After Margaret going to a room:
-	if the noun is the location and the current interlocutor is not Margaret:
+	if the location of margaret is the location and the current interlocutor is not Margaret:
 		postpone saying hello to Margaret;
 	continue the activity;
 
@@ -795,8 +803,10 @@ The blue flipphone is a phone. It is in biff's desk's drawer.
 [ The snarky remark is "You little blue bastard. I hate you." ]
 The description of the blue flipphone is "It's a cheap blue flipphone, purchased by the Bureau as some kind of cost-saving measure. It's not even a smartphone. It's not even a good flipphone. It's not even a good bad flipphone. It's just a bad flipphone."
 
-After answering the blue flipphone:
-	lb;
+After taking apart the desk:
+	say "[We] [unscrew] the hex screws and [remove] the drawer. Inside, [we] find a little grey key and a blue flipphone. [We] [put] the drawer back together and [pocket] the key and the phone, being careful to leave the drawer unlocked.
+	
+	We answer the phone.[paragraph break]";
 	say "'Hello?'
 	
 	'Hello, Larch,' says a familiar voice -- it's Doris.
@@ -816,8 +826,8 @@ After answering the blue flipphone:
 	end the story saying "Congratulations on answering the phone!";
 
 After printing the player's obituary:
-	say "[bold type]Larch Faraji will return in 'BOSH II: The Dragon'.[roman type][paragraph break]";
-	say "[italic type][bracket]Seriously, is that it?[close bracket][roman type]";
+	say "[bold type]Larch Faraji will return in 'BOSH II: Mazes'.[roman type][paragraph break]";
+	say "[italic type][bracket]No, not that kind of maze.[close bracket][roman type]";
 
 A key is a kind of thing.
 
@@ -850,9 +860,6 @@ Instead of unlocking biff's desk with the hex wrench:
 
 Instead of unlocking biff's desk's drawer with the hex wrench:
 	try taking apart the desk biff's desk;
-
-Report taking apart the desk:
-	say "[We] [unscrew] the hex screws and [remove] the drawer. Inside, [we] find a little grey key and a blue flipphone. [We] [put] the drawer back together and [pocket] the key and the phone, being careful to leave the drawer unlocked.";
 
 Instead of unscrewing the hex screws with the hex wrench:
 	try taking apart the desk biff's desk;
@@ -1180,7 +1187,7 @@ The shelves of office supplies are in front office. They are plural-named. They 
 [ The snarky remark of the shelves of office supplies is "Some day I'll find out who stole my stapler." ]
 
 The thumb drive is a thing in the room of stuff. The description of the thumb drive is "It's a red plastic thumb drive, with what look like symbols scratched on the surface, but they're like no symbols you've ever seen. The metal USB end is somewhat corroded." Understand "USB/flash/memory", "usb end" as the thumb drive.
-The snarky remark of the thumb drive is "Some crazy dude mailed this to me last month, said he found it in an ancient Onandaga root cellar on a farm in upstate New York. Claimed it was proof of time travel."
+The snarky remark of the thumb drive is "Some crazy dude mailed this to me last month, said he found it in an ancient Onondaga root cellar on a farm in upstate New York. Claimed it was proof of time travel."
 
 To recognize is a verb.
 Some strange symbols are part of the thumb drive. The description is "The symbols on the thumb drive look like some kind of language, but none [we] [recognize]."
@@ -1458,6 +1465,7 @@ UFOs	"Unidentified flying objects, or UFOs, are objects in the sky that are not 
 Ouija boards	"The Ouija board is a flat board marked with the letters of the alphabet, the numbers 0-9, the words 'yes', 'no', and 'goodbye', and other symbols. It is used to communicate with the spirits of the dead. It totally works, I swear."
 Time-travel	"Time travel is the process by which a person or object is transported from one time to another. The existence of time travel is disputed by the scientific community, but has been proven by numerous experiments."
 Bureau of Supernatural History	"The Bureau of Supernatural History is a secret government agency that investigates and documents the existence of supernatural phenomena. It is said to be involved in various global events, such as the Roswell Incident, the Rendlesham Forest Incident, and the Phoenix Lights. The existence of the Bureau of Supernatural History is disputed by the US government, but has been proven by numerous eyewitness accounts and photographs." 
+Bugbear of Slocum Heath	"The Bugbear of Slocum Heath is a legendary creature that is said to inhabit the marshes of Slocum Heath in the English countryside. The creature is often described as a large, hairy, bipedal humanoid with glowing red eyes. Despite numerous sightings, the intransigent argue that the evidence is inconclusive."
 
 
 The Chief's shelves are a supporter in BOSH Chief's Office. They are scenery. "These shelves sport an array of oddities and memorabilia." Understand "shelf" as the Chief's shelves.
@@ -1467,7 +1475,7 @@ The juvenile sasquatch skull is a thing on the chief's shelves. Chief Huffton Kl
 [ The snarky remark of the skull is "I want your skulls. I need your skulls." ]
  
 The antique wooden file cabinet is a container in the BOSH Chief's office. It is closed and locked. It is scenery. "Looks like it was taken out of an old library somewhere."
-[ The snarky remark of the antique wooden file cabinet is "Does he file alphabetically or by strangeness?" ]
+[ The snarky remark of the antique wooden file cabinet is "Does he file alphabetically or by strangeness?" ] Understand "filing" as the antique wooden file cabinet.
 
 The prints are scenery in the BOSH Chief's office. The description is "There are three prints, the most striking of which is a neon-hued abstract by Diego Ernesto Diaz, the late Mexican painter, titled 'Hora de la Muerte'.".
 Understand "painting/paintings" as prints.
@@ -1591,7 +1599,7 @@ The snarky remark is "Haven't read it. I'm saving it for when I need a mental he
 Book-borrowing a tome (called T) when T is supported by Moira's bookshelves and T is owned by Moira Zin:
 	now the player carries T;
 	now the player owns T;	
-	say "[We] [take] [T].";
+	say "[line break][We] [take] [T].";
 	now the borrowed book is T;
 	rule succeeds;
 
@@ -1650,6 +1658,24 @@ Instead of knocking on the closet door when the location is the utility closet a
 		now the current interlocutor is Moira Zin;
 		now the closet door is unlocked;
 		now the closet door is open;
+
+Shouting is an action applying to nothing. Understand "shout", "yell", "scream", "holler" as shouting.
+
+Instead of shouting when the location is the utility closet and the closet door is locked and the closet door is closed:
+	move Moira Zin to Moira's Office;
+	now moira's door is unlocked;
+	if Moira Zin is in Moira's Office:
+		say "After a few seconds, someone inserts a key in the lock and opens the door. It's [player's surname]'s colleague Moira Zin. 'How'd you get in there, [player's forename]?'
+		
+		You exit the closet.";
+		move the player to Moira's Office;
+		queue Moira Zin with about the hyperdimensional portal;
+		now the current interlocutor is Moira Zin;
+		now the closet door is unlocked;
+		now the closet door is open;
+
+Report shouting:
+	say "Faraji shouts really loud, and feels a little better.";
 
 Rule for writing a paragraph about Moira Zin:
 	say "Moira Zin is here, arranging her new office.";
@@ -1794,7 +1820,15 @@ The Piltdown Man is a subject. Understand "Charles/Dawson" as the Piltdown Man. 
 Sumeria is a subject. Understand "sumerian/sumerians" as Sumeria. Dwight Eisenhower is a subject. 
 doris-subject is a subject. It is privately-named. The printed name is "Doris". Understand "Doris" as doris-subject.
 Siberia is a subject. Pennsylvania is a subject.
-
+Peter Tork is a subject. 
+Marlo Thomas is a subject.
+Yoko Ono is a subject.
+Rasputin is a subject.
+Romanov Family is a subject.
+Anastasia Romanov is a subject.
+file cabinet key is a subject.
+Marlo Thomas is a subject.
+Bugbear of Slocum Heath is a subject.
 
 [Enigma Lake subjects]
 The doll-fly-subject is a subject. It is privately-named. The printed name is "doll-fly". Understand "doll/fly" as the doll-fly-subject.
@@ -2109,6 +2143,36 @@ money	Margaret	"'Margaret, do we have any money in petty cash?'"	"'No, nothing i
 money	Moira Zin	"'Moira, do you have any money so I can buy a screwdriver, so I can get the hex wrench out of the vent, so I can open the drawer of my desk, so I can answer the phone?'"	"'No, I gave all my money to a vagrant this morning as I walked the 5 miles to work. I'm sure he needed it more than I did.'"
 thumb drive	Chief Huffton Klimp	"'Chief, what do --'"	"'I think about that thumb drive? It looks like a perfectly ordinary thumb drive. Except for the directions to Atlantis scratched on the side.'"
 strange piece of paper	Chief Huffton Klimp	"'Chief, what do you think about this --'"	"'-- [']Save the Dragon['], eh? Nope, never heard of it. You should probably forget about it. I'm sure Doris doesn't know anything about it either.'"
+Klimp's computer	Chief Huffton Klimp	"'Chief, my computer got -- '"	"'-- all smashed up? Yeah, I saw that. Terrible thing. Terrible thing. I'll get to it just as soon as someone [italic type]answers the phone[roman type]!'"
+cabinet key	Chief Huffton Klimp	"'Chief, do you have --'"	"'-- a key to the file cabinet? Well, sure, I have a key. But no one can see what's inside that file cabinet. Not even Peter Tork.'"
+Peter Tork	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- Peter Tork? Most people don't know that he was a once was part of a love triangle with Yoko Ono and Marlo Thomas. That was before he broke up the Monkees with his slavish insistence on artistic integrity.'"
+Peter Tork	Moira Zin	"'Moira, what do you know about Peter Tork?'"	"'Peter Tork was an American musician and actor who was best known as a member of the Monkees. He was also a talented multi-instrumentalist and songwriter. There is no scientific evidence to support the idea that he was involved in a love triangle with Yoko Ono and Marlo Thomas.'"
+Peter Tork	Margaret	"'Margaret, what do you know about Peter Tork?'"	"'He was the guy in the Monkees who married Yoko Ono, right?'"
+Yoko Ono	Chief Huffton Klimp	"'Chief, what do you know about Yoko --'"	"'-- Ono? Ah, history's greatest monster, the one who broke up the Monkees. It was all a ruse to cover up the fact that she was the reincarnation of Rasputin.'"
+Yoko Ono	Moira Zin	"'Moira, what do you know about Yoko Ono?'"	"'Yoko Ono is a Japanese multimedia artist, singer, and peace activist who is best known for her marriage to John Lennon. She is also known for her avant-garde art and music. There is no scientific evidence to support the idea that she is the reincarnation of Rasputin.'"
+Yoko Ono	Margaret	"'Margaret, what do you know about Yoko Ono?'"	"'She was the one who broke up the Monkees, right?'"
+Rasputin	Chief Huffton Klimp	"'Chief, what do you know --'"	"'-- about Rasputin? He was a monk who, well, actually was just a monk who looked funny. But he was a good guy.'"
+Rasputin	Moira Zin	"'Moira, what do you know about Rasputin?'"	"'Grigori Rasputin was a Russian mystic and self-proclaimed holy man who was a trusted advisor to the Romanov family. He was also a controversial figure who was rumored to have supernatural powers. There is no scientific evidence to support the idea that he was a time traveler.'"
+Rasputin	Margaret	"'Margaret, what do you know about Rasputin?'"	"'He was the guy who came up with the idea for the Monkees, right?'"
+Romanov Family	Chief Huffton Klimp	"'Chief, what do you know about the Romanov --'"	"'-- family? They were a front for the Illuminati. They were all lizard people. Except for Anastasia. She was a robot.'"
+Romanov Family	Moira Zin	"'Moira, what do you know about the Romanov Family?'"	"'The Romanov family was the last imperial dynasty to rule Russia. They were overthrown during the Russian Revolution in 1917 and were executed by the Bolsheviks in 1918. There is no scientific evidence to support the idea that they were a front for the Illuminati.'"
+Romanov Family	Margaret	"'Margaret, what do you know about the Romanov Family?'"	"'They were the ones who built the pyramids, right?'"
+Anastasia	Chief Huffton Klimp	"'Chief, what do you know about Anastasia --'"	"'-- Romanov? She was a robot. Most people now accept that. What they don't know is that she was built by Rasputin, whom she then turned upon and murdered.'"
+Anastasia	Moira Zin	"'Moira, what do you know about Anastasia?'"	"'Anastasia Romanov was the youngest daughter of Tsar Nicholas II of Russia. She was executed with the rest of her family in 1918. There is no scientific evidence to support the idea that she was a robot.'"
+Anastasia	Margaret	"'Margaret, what do you know about Anastasia?'"	"'She was the girl who was lost in the woods and raised by wolves, right?'"
+Marlo Thomas	Chief Huffton Klimp	"'Chief, what do you know about Marlo --'"	"'-- Thomas? Let me ask you this: are we really free to be you and me? Or are we just puppets in a vast conspiracy? I think you know the answer.'"
+Marlo Thomas	Moira Zin	"'Moira, what do you know about Marlo Thomas?'"	"'Marlo Thomas is an American actress, producer, and social activist who is best known for her role in the television series [italic type]That Girl[roman type]. There is no scientific evidence to support the idea that she was involved in a love triangle with Peter Tork and Yoko Ono.'"
+Marlo Thomas	Margaret	"'Margaret, what do you know about Marlo Thomas?'"	"'That was the little blue train that could, right?'"
+Bugbear of Slocum Heath	Chief Huffton Klimp	"'Chief, what do you know about the Bugbear of --'"	"'-- Slocum Heath? Ah, the Bugbear. A creature of legend. A creature of myth. A creature of the night. But most people don't know that it was actually just an excuse to use the initials BOSH.'"
+Bugbear of Slocum Heath	Moira Zin	"'Moira, what do you know about the Bugbear of Slocum Heath?'"	"'The Bugbear of Slocum Heath is totally made up. Seriously. It's just got the right initials. BOSH. That's all it is. There is no scientific evidence to support the idea that it is a real creature.'"
+Bugbear of Slocum Heath	Margaret	"'Margaret, what do you know about the Bugbear of Slocum Heath?'"	"'I think it's a kind of bear. But I'm not sure.'"
+pawn-shop-subject	Chief Huffton Klimp	"'Chief, what do you know about the --'"	"'Pawn shop? Is there one around here? Haven't noticed.'"
+pawn-shop-subject	Margaret	"'Margaret, what do you know about the pawn shop?'"	"'The guy there is creepy.'"
+pawn-shop-subject	Moira Zin	"'Moira, what do you know about the pawn shop next door?'"	"'It makes me sad to think about it. All those hopeless people pawning their possessions. It's a tragedy.'"
+laundromat-subject	Chief Huffton Klimp	"'Chief, what do you know about the --'"	"'Laundromat? I don't know. I don't do my own laundry. I have a guy for that.'"
+laundromat-subject	Margaret	"'Margaret, what do you know about the laundromat next door?'"	"'It looks dirty.'"
+laundromat-subject	Moira Zin	"'Moira, what do you know about the laundromat next door?'"	"'Hard to say. It doesn't look like a very happy place. But then, I don't think laundromats are supposed to be happy.'"
+
 
 
 Book 18.6 - Klimp Interjections
@@ -2155,6 +2219,23 @@ Klimp interjection	used
 "Klimp jumps up from his chair, looks sheepish, and then sits back down. 'Sorry, I was just thinking about Budapest. Scary place. Lots of ghosts. Lots of vampires. Lots of good food.'"	false
 "Klimp smiles and says, 'I have such a good feeling about today. I think we're going to solve the mystery of the Black Knight Satellite. Or maybe we'll just have a good lunch. Either way, it's a win.'"	false
 
+Book 18.7 The Phone Sound
+
+Every turn:
+	if the location is the front office:
+		say "A phone is ringing somewhere to the west.";
+	otherwise if the location is the BOSH hallway:
+		say "A phone is ringing to the south, in Faraji's office.";
+	otherwise if the location is BOSH Chief's office:
+		say "A phone is ringing somewhere to the east."; 
+	otherwise if the location is Moira's Office:
+		say "A phone is ringing somewhere to the south.";
+	otherwise if the location is the back lot and the BOSH back door is closed:
+		say "A phone is ringing to the east, in Faraji's office.";
+	otherwise if the location is Biff's Office:
+		say "A phone is ringing inside Faraji's desk.";
+
+		
 
 
 Book 19 - Verbs
@@ -2644,6 +2725,11 @@ Carry out jumping to endgame:
 	now the astral lenses are nowhere;
 	now player is in the hidden cave;
 
+jumping to last bit is an action applying to nothing. Understand "cheat last" as jumping to last bit.
+
+carry out jumping to last bit:
+	now the player carries the hex wrench;
+	move the player to biff's office;
 
 frotzing is an action applying to one thing. Understand "frotz [something]" as frotzing.
 
@@ -2784,7 +2870,7 @@ Volume 3 - The Story
  
 Book 1 - The Thumb Drive
 
-The thumb-drive-story is always "Biff found the thumb drive in an ancient Onandaga root cellar on a farm in upstate New York. He was never able to read it.".
+The thumb-drive-story is always "Biff found the thumb drive in an ancient Onondaga root cellar on a farm in upstate New York. He was never able to read it.".
 
 [turns out the message is scratched on the side of the thumb drive, the data is of course gone]
 

@@ -46,10 +46,16 @@ The hint-computer is a hint topic. Understand "computer", "faraji's/my/their com
 Hinting the hint-computer:
 	if the computer is not seen:
 		rule succeeds with result "According to Margaret, Faraji's computer is behind the front desk.";
-	otherwise:
+	otherwise if the thumb drive is not handled:
 		rule succeeds with result "Don't forget to examine the computer.";
 
-The hint-locked-desk-no-key is a hint topic. Understand "key/locked/in/desk" as the hint-locked-desk-no-key. The printed name is "key locked in desk". It is progressive. It is unlisted. The progression is {"Oops, I guess the key is locked in the desk.", "Maybe there's another key.", "Or maybe there's a way in without a key.", "Why not give the desk a once-over?"}.
+Activating the hint-computer:
+	if the office is visited and the thumb drive is not handled:	
+		activate;
+	otherwise:
+		deactivate;
+
+The hint-locked-desk-no-key is a hint topic. It is progressive. It is unlisted. The progression is {"Oops, I guess the key is locked in the desk.", "Maybe there's another key.", "Or maybe there's a way in without a key.", "Why not give the desk a once-over?"}.
 
 The hint-hex-wrench is a hint topic. Understand "hex/allen/wrench/key/tool" as the hint-hex-wrench. The printed name is "hex wrench".
 
@@ -297,7 +303,7 @@ Activating the hint-utility-closet-dark:
 		deactivate;
 
 hint-utility-closet-trapped is a progressive hint topic. 
-Understand "trapped/in/the/utility/closet", "trapped" as the hint-utility-closet-trapped. The printed name is "trapped in the utility closet". The progression is {"How did Faraji get past a locked door last time?", "Faraji should knock on the door."}.	
+Understand "trapped/in/the/utility/closet", "trapped" as the hint-utility-closet-trapped. The printed name is "trapped in the utility closet". The progression is {"Faraji should knock on the door.", "If Faraji can't see the door, they should put on the astral lenses.", "If Faraji dropped the lenses somewhere, oops. But there's another way to get out.", "Make some noise.", "Shout!"}.	
 
 Activating the hint-utility-closet-trapped:
 	if the location is the utility closet and the astral lenses are worn and the closet door is locked:
@@ -826,6 +832,11 @@ Activating the hint-getting-into-the-gym:
 		activate;
 	deactivate;
 
-The hint-open-locker is a progressive hint topic. Understand "open/locker" as the hint-open-locker. The printed name is "open locker". The progression is {"There is a bank of 100 lockers in the gym basement. They are all locked.", "Faraji can find a key in the backpack behind the information desk in the town hall.", "But which locker should Faraji open?", "Faraji should read the work schedule on the information desk in the town hall, and examine the backpack.", "That should answer the question of who owns the backpack.", "The name is William Thompson", "Faraji should look up William Thompson in the membership book in the gymnasium.", "That will tell you which locker Faraji should open."}.
+The hint-open-locker is a progressive hint topic. Understand "open/locker" as the hint-open-locker. The printed name is "open locker". The progression is {"There is a bank of 100 lockers in the gym basement. They are all locked.", "Faraji can find a key in the backpack behind the information desk in the town hall.", "But which locker should Faraji open?", "Faraji should read the work schedule on the information desk in the town hall, and examine the backpack.", "That should answer the question of who owns the backpack.", "The name is William Thompson.", "Faraji should look up William Thompson in the membership book in the gymnasium.", "That will tell you which locker Faraji should open."}.
+
+Activating the hint-open-locker:
+	if the gym basement is visited and the copper key is not handled:
+		activate;
+	deactivate;
 
 BOSH Hints ends here.

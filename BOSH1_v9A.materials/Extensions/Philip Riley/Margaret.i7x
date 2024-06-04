@@ -177,6 +177,10 @@ Chapter 2 - Margaret Interjections
 
 
 Margaret interjection timer is a number that varies. Margaret interjection timer is 5.
+Margaret interjection this turn is a truth state that varies.
+
+Every turn (this is the reset Margaret interjection this turn rule): 
+	now Margaret interjection this turn is false.
 
 Every turn when Margaret interjection timer is not 0 and Margaret is in the front office and the location is the front office:
 	decrease Margaret interjection timer by 1;
@@ -230,7 +234,7 @@ The margaret box counter is a number that varies. The margaret box counter is 0.
 
 Every turn when Margaret is in the Front Office and the current behavior of Margaret is doing nothing and the Front Office is visited:
 	increase the margaret box counter by 1;
-	if a random chance of 1 in 5 succeeds and the margaret box counter is greater than 3:
+	if margaret interjection this turn is false and a random chance of 1 in 5 succeeds and the margaret box counter is greater than 3:
 		if the location is the front office:
 			say "[one of]Margaret flattens a couple of boxes.[or]Margaret sighs and says, 'So many boxes...' She picks up some and flattens them.[or]Margaret says, 'I should really take care of these boxes,' and proceeds to flatten some.[or]Margaret takes a box and starts to flatten it.[or]Margaret looks at the boxes and says, 'I should really take care of these.' She takes a couple and flattens them.[at random]";
 		otherwise if the location is the BOSH office hallway:

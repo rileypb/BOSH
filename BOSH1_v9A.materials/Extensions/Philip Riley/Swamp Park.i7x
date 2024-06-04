@@ -213,6 +213,8 @@ strip mall parking lot south is outside from the Dave's pawn shop.
 
 Section 1 - Dave Conversation
 
+Angels-subject is a subject. It is privately-named. The printed name is "Angel's Department Store". Understand "Angel's/Angel/Angels/department/store" as Angels-subject.
+
 pawn-shop-subject is a subject. It is privately-named. The printed name is "Dave's pawn shop". Understand "Dave's/pawn/shop" as pawn-shop-subject.
 Butterfree-subject is a subject. It is privately-named. The printed name is "Butterfree". Understand "Butterfree/butterfly/pokemon/pokémon" as Butterfree-subject.
 laundromat-subject is a subject. It is privately-named. The printed name is "laundromat". Understand "laundromat" as laundromat-subject.
@@ -228,6 +230,10 @@ tattoo	Dave	"Faraji asks, 'What's your tattoo of?'"	"Dave says, 'It's Butterfree
 Dave	Dave	"Faraji asks, 'How are you?'"	"Dave grunts, 'Been better.'"
 Butterfree-subject	Dave	"Faraji asks, 'What's Butterfree?'"	"Dave says, 'It's a Pokémon. I had a phase in the late 90s.'"
 laundromat-subject	Dave	"Faraji asks, 'What's up with the laundromat?'"	"Dave says, 'How should I know? The owner's a weirdo.'"
+money	Dave	"Faraji asks, 'Know where I can get some cash?'"	"Dave says, 'Got any jewelry? I'll give you a good price.'"
+Larch Faraji	Dave	"Faraji asks, 'Good to meet you, I'm Agent Larch Faraji.'"	"Dave says, 'Dave. I own this place.'"	
+The Bureau of Strange Happenings	Dave	"Faraji asks, 'Maybe you'd heard of the Bureau of Strange Happenings?'"	"Dave says, 'Yup. You're the new tenant. I'll miss Angel's.'"
+Angels-subject	Dave	"Faraji asks, 'What was Angel's Department Store?'"	"Dave says, 'It was a great place. They sold the best polyester slacks in all of Swamp Park.'"
 
 
 Chapter 2 - Strip Mall Parking Lot North
@@ -334,6 +340,8 @@ Greeting response for Dave:
 a Li'l Nectarine Gift Card is a thing. The description is "A five dollar gift card to the Li'l Nectarine Convenience Store."  
 
 The snarky remark of the Li'l Nectarine Gift Card is "Gee, I hope Dave didn't break the bank."
+
+
 
 Instead of giving the wristwatch to Dave:
 	say "Dave smiles when [we] [hand] him the watch. 'I've been looking for this,' he says. 'Here you go, five bucks for your trouble.' He hands [us] a Li'l Nectarine Gift Card.";
@@ -538,7 +546,7 @@ Instead of pushing the handtruck to up when the location is the laundromat basem
 	say "The stairs are much too steep to maneuver the handtruck up them.";
 
 Instead of pushing the handtruck:
-	say "Try pushing it to a direction: PUSH HANDTRUCK WEST, for example.";
+	say "Try pushing it in a direction: PUSH HANDTRUCK WEST, for example.";
 
 Report going to somewhere with the handtruck:
 	say "[We] [push] the handtruck along with [us].";
@@ -630,6 +638,9 @@ The broken washing machine is an enterable, closed, openable container. It is sc
 The strange glow is scenery in the back basement. "The glow is blue-white and flickering."
 [ The snarky remark of the strange glow is "I'm sure it's nothing to worry about." ]
 It is far away.
+
+The curtain of light is scenery in the broken washing machine. "The light is blue-white and flickering."
+
 		
 After deciding the scope of the player when the location is the back basement and in darkness:
 	place the light switch in scope;
@@ -713,7 +724,7 @@ Check moving something with:
 	
 Instead of moving the stacks of crates with the handtruck:
 	if the broken washing machine is nowhere:
-		say "You move the crates out of the way and uncover an old front-loading washing machine. There is a strange glow inside the drum.";
+		say "Faraji moves the crates out of the way and uncovers an old front-loading washing machine. There is a strange glow inside the drum.";
 		now the broken washing machine is in the back basement;
 		now the strange glow is in the broken washing machine;
 		now the strange glow is closeby;
@@ -787,6 +798,8 @@ The Li'l Nectarine Convenience Store is east of the Parking Lot North. It is in 
 [ The snarky remark of the Li'l Nectarine Convenience Store is "I'm not sure I'd eat fruit from here." ]
 
 The destination name is "Li'l Nectarine Convenience Store".
+
+There is a fluorescent light source in Li'l Nectarine Convenience Store called nectarine-light.
  
 The store clerk is a man in the Convenience Store. "The clerk, a scruffy man in his mid-twenties, is leaning against the counter, looking bored." The description is "The clerk looks as if he'd rather be anywhere else. He's wearing jeans and a white t-shirt with something inscrutable scrawled on it. His hair sticks up every which way." Understand "man" as the store clerk.
 [ The snarky remark of the store clerk is "Finally a source of fashion advice." ]
@@ -945,6 +958,7 @@ Book 5 - Comments about Things
 Convenience-store-subject is a subject. It is privately-named. The printed name is "Li'l Nectarine Convenience Store". Understand "li'l/nectarine/convenience/store" as the convenience-store-subject.
 
 Swamp-park-subject is a subject. It is privately-named. The printed name is "Swamp Park". Understand "swamp/park/town/city" as the swamp-park-subject.
+military-recruiter-subject is a subject. It is privately-named. The printed name is "military recruiter". Understand "military/recruitment/recruiter/center" as the military-recruiter-subject.
 
 Table of Quiz Topics (continued)
 subject (a thing)	interlocutor (a person)	comment (a text)	reply (a text)
@@ -967,8 +981,9 @@ Bureau of Strange Happenings	store clerk	--	"'Never heard of it. What are you gu
 aliens	store clerk	--	"'If I see an alien, I'm going to ask for a ride.'"
 zombies	store clerk	--	"'The zombie apocalypse will start here.'"
 vampires	store clerk	--	"'Don't tell anyone, but I LARP as a vampire on weekends.'"
-pawn shop	store clerk	--	"'I've never been in there. I hear it's a dump.'"
-laundromat	store clerk	--	"'Never been there. My mom does my clothes.'"
-
+pawn-shop-subject	store clerk	--	"'I've never been in there. I hear it's a dump.'"
+laundromat-subject	store clerk	--	"'Never been there. My mom does my clothes.'"
+money	store clerk	"'Do you know where I should get a few bucks?'"	"'What? Are you robbing the place? Don't hurt me!'"
+military-recruiter-subject	store clerk	--	"'Bunch of conformist fascist pigs.'"
 
 Swamp Park ends here.

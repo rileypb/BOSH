@@ -234,15 +234,17 @@ To decide whether conversation available for (X - a person) / (Y - a thing):
 	no;
 
 After quizzing someone about something when conversation available for noun / second noun:
+	let new history entry be "";
 	repeat through Table of Quiz Topics:
 		if there is a subject entry and there is an interlocutor entry:
 			if subject entry is the second noun and interlocutor entry is the noun:
 				if there is a comment entry:
-					say "[comment entry][paragraph break]";
+					now new history entry is  "[new history entry][comment entry][paragraph break]";
 				otherwise:
-					say "[We] [say], 'Tell me about [the second noun][if the noun is proper-named], [noun][end if].'[paragraph break]";
-				say reply entry;
-				say paragraph break;
+					now new history entry is "[new history entry][We] [say], 'Tell me about [the second noun][if the noun is proper-named], [noun][end if].'[paragraph break]";
+				now new history entry is "[new history entry][reply entry][line break]";
+				say new history entry;
+				add "[new history entry][line break]" to the speech history of the noun;
 
 After quizzing:
 	say "That doesn't seem to be a topic of conversation at the moment.";

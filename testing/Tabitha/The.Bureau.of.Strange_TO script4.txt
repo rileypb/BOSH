@@ -1,0 +1,1526 @@
+Start of a transcript of
+
+The Bureau of Strange Happenings
+An Interactive Phenomenon by Phil Riley
+Release 1 / Serial number 240521 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
+Identification number: //F61EFB05-03A9-4894-B076-9E767F9163A8//
+Interpreter version 0.6.0 / VM 3.1.3 / Library serial number 080126
+Standard Rules version 3/120430 by Graham Nelson
+Epistemology version 9 by Eric Eve
+Conversation Framework version 12 by Eric Eve
+Conversation Responses version 7 by Eric Eve
+Conversational Defaults version 3 by Eric Eve
+Formatting Capture version 2/221014 by Daniel Stelzer (based on Text Capture by Eric Eve)
+Undo Output Control version 5/170902 by Erik Temple
+Gender Options version 3/210331 by Nathanael Nerode
+Exit Lister version 11 by Eric Eve
+Secret Doors by Gavin Lambert
+
+>gonear hidden
+Agent Faraji is in a hidden cave. The cave is dark and damp, with a low ceiling. A passage leads to the south. A set of rickety stairs leads up to the workshed above.
+
+>save
+Ok.
+
+>lens
+Agent Faraji is in a hidden cave. The cave is dark and damp, with a low ceiling. A passage leads to the south. A set of rickety stairs leads up to the workshed above.
+
+>wear lens
+(first taking the shiny lens)
+That seems to be a part of the shiny astral resonator.
+
+>wear lenses
+Faraji's already wearing that!
+
+>i
+Faraji is carrying:
+  a pair of astral lenses (worn)
+  a thumb drive
+  a tuning fork
+  a shiny astral resonator
+  a bell
+  The Witnessing of Hezekiah
+  a shovel
+  a dowsing rod
+  The Book of Weird Names
+  a backpack (closed)
+  Astral Secrets
+  the Rod of Hezekiah
+  a wooden frame (open)
+    a light bulb
+
+>s
+WARNING: The current interlocutor is not nothing. It is Chief Klimp.
+
+Agent Faraji is in the circular chamber. The chamber is circular, with a low ceiling. The walls are rough-hewn stone. A passage leads to the north.
+
+>x walls
+Rough stone walls.
+
+>i
+Faraji is carrying:
+  a pair of astral lenses (worn)
+  a thumb drive
+  a tuning fork
+  a shiny astral resonator
+  a bell
+  The Witnessing of Hezekiah
+  a shovel
+  a dowsing rod
+  The Book of Weird Names
+  a backpack (closed)
+  Astral Secrets
+  the Rod of Hezekiah
+  a wooden frame (open)
+    a light bulb
+
+>l
+Agent Faraji is in the circular chamber. The chamber is circular, with a low ceiling. The walls are rough-hewn stone. A passage leads to the north.
+
+>hint
+Hints about the following topics are available:
+* ringing phone
+* locked desk
+* computer
+* hex wrench
+* screwdriver
+* Margaret Chao
+* Chief Klimp
+* Moira Zin
+* Enigma Lake
+* work schedule
+* backpack
+* get back to BOSH
+* shiny astral resonator
+* extension cord
+* wooden frame
+* resonant origin
+* ghostly light
+* astral focus
+* open locker
+(Topics in bold have new hints available. The others may have more hints later.)
+To recall hints about a topic, type RECALL <TOPIC>.
+
+>hint ghostly
+What might the ghostly light be?
+
+>g
+What light sources has Faraji seen?
+
+>g
+Look around the town for a light source.
+
+>g
+The light bulb in the workshed is a source of light (if it's screwed into something).
+
+>g
+The table lamp in the department store is a source of light.
+
+>g
+Faraji should try inserting one of the light sources into the wooden frame.
+
+>g
+Faraji should try inserting one of the light sources into the wooden frame.
+
+>hint focus
+What might the astral focus be?
+
+>g
+Does Faraji know of any things having to do with focus?
+
+>g
+Lenses are used to focus light.
+
+>g
+Faraji should try inserting the astral lenses into the wooden frame.
+
+>g
+Faraji should try inserting the astral lenses into the wooden frame.
+
+>g
+Faraji should try inserting the astral lenses into the wooden frame.
+
+>hint
+Hints about the following topics are available:
+* ringing phone
+* locked desk
+* computer
+* hex wrench
+* screwdriver
+* Margaret Chao
+* Chief Klimp
+* Moira Zin
+* Enigma Lake
+* work schedule
+* backpack
+* get back to BOSH
+* shiny astral resonator
+* extension cord
+* wooden frame
+* resonant origin
+* ghostly light
+* astral focus
+* open locker
+(Topics in bold have new hints available. The others may have more hints later.)
+To recall hints about a topic, type RECALL <TOPIC>.
+
+>hint origin
+What might the resonant origin be?
+
+>g
+What might be the origin of resonance?
+
+>g
+Maybe Faraji should look around the town some more.
+
+>g
+The tuning fork in the music store is a source of resonance.
+
+>g
+Faraji should try inserting the tuning fork into the wooden frame.
+
+>g
+Faraji should try inserting the tuning fork into the wooden frame.
+
+>i
+Faraji is carrying:
+  a pair of astral lenses (worn)
+  a thumb drive
+  a tuning fork
+  a shiny astral resonator
+  a bell
+  The Witnessing of Hezekiah
+  a shovel
+  a dowsing rod
+  The Book of Weird Names
+  a backpack (closed)
+  Astral Secrets
+  the Rod of Hezekiah
+  a wooden frame (open)
+    a light bulb
+
+>put fork in frame
+Faraji puts the tuning fork into the wooden frame.
+
+>nm
+I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+>n
+Faraji heads back to the entrance of the cave.
+
+WARNING: The current interlocutor is not nothing. It is Chief Klimp.
+
+Agent Faraji is in a hidden cave. The cave is dark and damp, with a low ceiling. A passage leads to the south. A set of rickety stairs leads up to the workshed above.
+
+>put lenses in frame
+(first taking it off)
+Faraji puts the pair of astral lenses into the wooden frame.
+
+>hit frame with rod
+Which do you mean, the dowsing rod or the Rod of Hezekiah?
+
+>hezekiah
+Faraji taps the wooden frame with the Rod of Hezekiah. Nothing happens.
+
+>gonear
+What do you want Faraji to gonear?
+
+>church stairs
+Agent Faraji is in the First Utilitarian Church of Enigma Lake. The interior is dimly lit by the stained glass windows, and the pews are arranged in neat rows facing the pulpit. A standard electrical outlet is set into the wall. To the east is the vestry. You can also take a ladder up to the steeple, or stairs down to the basement. The exit is to the west.
+
+An extension cord lies on the floor, the table lamp plugged into one end and the other end plugged into the electrical outlet.
+
+>put bulb in lamp
+(first taking the light bulb)
+Faraji puts the light bulb into the standard socket.
+
+>put lamp in frame
+(first unplugging the table lamp)
+Faraji unplugs the table lamp from the extension cord.
+
+The table lamp is now unlit.
+
+(first taking the table lamp)
+Faraji puts the table lamp into the wooden frame.
+
+>hit frame with hezekiah
+Which do you mean, The Witnessing of Hezekiah or the Rod of Hezekiah?
+
+>rod
+Faraji taps the wooden frame with the Rod of Hezekiah. The frame glows with a bright light. Faraji is momentarily blinded. When they can see again, the frame and its contents have fused into a makeshift astral resonator.
+
+>i
+Faraji is carrying:
+  a makeshift astral resonator
+  a thumb drive
+  a shiny astral resonator
+  a bell
+  The Witnessing of Hezekiah
+  a shovel
+  a dowsing rod
+  The Book of Weird Names
+  a backpack (closed)
+  Astral Secrets
+  the Rod of Hezekiah
+
+>l
+Agent Faraji is in the First Utilitarian Church of Enigma Lake. The interior is dimly lit by the stained glass windows, and the pews are arranged in neat rows facing the pulpit. A standard electrical outlet is set into the wall. To the east is the vestry. You can also take a ladder up to the steeple, or stairs down to the basement. The exit is to the west.
+
+An extension cord lies on the floor, one end plugged into the electrical outlet.
+
+>x makeshift
+The makeshift astral resonator is a cobbled-together device, made from a tuning fork, a spotlight, and the astral lenses. A short cord with a plug dangles from the end opposite the lenses.
+
+>plug in resonator
+Which do you mean, the makeshift astral resonator or the shiny astral resonator?
+
+>makeshift
+Faraji unplugs the plug end of the extension cord from the electrical outlet.
+
+Faraji plugs the makeshift astral resonator into the electrical outlet. It flickers to life, emitting a bright beam of light that strikes a wall.
+
+>unplug makeshift
+Faraji unplugs the makeshift astral resonator from the electrical outlet. It flickers and goes dark.
+
+>plug makeshift into cord
+Faraji plugs the makeshift astral resonator into the socket end of the extension cord.
+
+>plug cord into outlet
+Faraji plugs the plug end of the extension cord into the electrical outlet.
+
+>i
+Faraji is carrying:
+  a thumb drive
+  a shiny astral resonator
+  a bell
+  The Witnessing of Hezekiah
+  a shovel
+  a dowsing rod
+  The Book of Weird Names
+  a backpack (closed)
+  Astral Secrets
+  the Rod of Hezekiah
+
+>get makeshift
+Taken.
+
+>u
+Faraji climbs the ladder to the steeple.
+
+The rain falls in a steady downpour.
+
+WARNING: The current interlocutor is not nothing. It is Chief Klimp.
+
+Agent Faraji is in the steeple. From here, they can see the obelisk in the park clearly. Someone has set up a tripod here. A telescope is mounted on it.
+
+Stairs lead down to the church proper.
+
+The extension cord you are carrying trails down into the church.
+
+>x makeshift
+The makeshift astral resonator is a cobbled-together device, made from a tuning fork, a spotlight, and the astral lenses. A short cord with a plug dangles from the end opposite the lenses, plugged into the extension cord. A beam of light shoots from the lens, striking a wall.
+
+Faraji shivers in the cold rain.
+
+>read witnessing
+A small, leather-bound book, titled "The Witnessing of Hezekiah: as told to Jeremiah Horton by Hezekiah Horton". The book is filled with strange, cryptic passages, and is difficult to read. Faraji finds one page of particular interest. It reads, "And lo, Hezekiah, in his wisdom, did prophesy of the impending flood and the necessity to make ready. He spoke of a sacred artifact, a resonator, bestowed with divine power, that would unveil a gateway to the ethereal realm. And he revealed the quest to find the lost astral traveler who would guide the faithful out of the coming darkness. Thus spake Hezekiah: 'First form from the wood of the ash tree a frame. Fill it with the sound of the resonant instrument, bathe it in the ghostly light, and bind it to the astral focus. Strike the frame with my Rod to create the astral resonator. Ascend the ladder and channel a mighty power through the resonator, directing it towards the crystal eye. Once thou hast done this, illuminate the eye likewise twice more, and the portal shall open, revealing the path to transcendence.'"
+
+>point resonator at obelisk
+I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+>put makeshift on telescope
+Putting things on the telescope would achieve nothing.
+
+The rain falls in a steady rhythm.
+
+>x telescope
+A small telescope suitable for amateur astronomy. It's mounted on a tripod.
+
+>get it
+Faraji takes the telescope from the tripod.
+
+>put makeshift on tripod
+Faraji manages to make the makeshift astral resonator fit in the tripod's mount. The beam of light focuses on the obelisk in the park, striking the crystal adornment at its apex. The crystal is glowing faintly.
+
+>gonear diner
+(Henry's Hot Skillet)
+Agent Faraji is in Henry's Hot Skillet. This is the epitome of the homey small-town diner of times gone by, except for the lack of all furniture, cooking implements, food, decor, and so on. There is a staircase leading up, and the exit is north. A pair of insulated wires hangs from the ceiling at one end of the counter.
+
+[It's a diner without any food or furniture. So, just a room, really.]
+
+>u
+Faraji heads up the stairs to the roof.
+
+The rain falls in a steady downpour.
+
+WARNING: The current interlocutor is not nothing. It is Chief Klimp.
+
+Agent Faraji is on Henry's Roof. From here one can see much of the town, including a clear view of the obelisk in Enigma Park. There is a large TV aerial jutting from the roof here.
+
+A bright beam of light shoots from the steeple, striking the obelisk in the park. The crystal is glowing faintly.
+
+>x tv
+A large, metallic rooftop antenna, characterized by its array of horizontal and vertical rods designed to capture VHF (very high frequency) broadcasts. Strangely, someone has mounted a threaded socket, like that of a light bulb, on one of the rods. A pair of insulated wires runs from the antenna and through a hole in the roof.
+
+>gonear radio
+Which do you mean, the broadcast tower, the WGXC "Galaxy" Radio, Radio Station WGXC or the radio station roof?
+
+>tower
+Agent Faraji is at the intersection of Main and Lake. Main goes west, while Lake runs north. The corner of the town hall is to the northwest, although it cannot be entered there. Southeast is the entrance to WGXC "Galaxy" Radio. There is a broadcast tower on top of the building.
+
+A bright beam of light shoots from the steeple, striking the obelisk in the park. The crystal is glowing faintly.
+
+>se
+Faraji enters the radio station, which is oddly quiet.
+
+WARNING: The current interlocutor is not nothing. It is Chief Klimp.
+
+Agent Faraji is in Radio Station WGXC. This is the town radio station. South is the entrance to the broadcast booth. A staircase runs upwards, presumably to the roof and the broadcast antenna. The exit is northwest.
+
+>u
+Faraji climbs the stairs to the roof.
+
+The storm rages, the wind howling and the rain falling in sheets.
+
+WARNING: The current interlocutor is not nothing. It is Chief Klimp.
+
+Agent Faraji is on the radio station roof. They can see the obelisk in the park clearly from here. The broadcast tower rises many feet above them. The exit is down. A metal cabinet is attached to the foot of the tower, held shut by a padlock.
+
+A bright beam of light shoots from the steeple, striking the obelisk in the park. The crystal is glowing faintly.
+
+>x cabinet
+The metal cabinet is attached to the foot of the broadcast tower, held shut by a padlock.
+
+>open it
+(first unlocking the metal cabinet)
+Faraji lacks a key that fits the metal cabinet.
+
+>hint
+Hints about the following topics are available:
+* ringing phone
+* locked desk
+* computer
+* hex wrench
+* screwdriver
+* Margaret Chao
+* Chief Klimp
+* Moira Zin
+* Enigma Lake
+* work schedule
+* backpack
+* threaded socket
+* wires
+* get back to BOSH
+* shiny astral resonator
+* open locker
+(Topics in bold have new hints available. The others may have more hints later.)
+To recall hints about a topic, type RECALL <TOPIC>.
+
+>hint wires
+I wonder what was connected to the wires before.
+
+>g
+Faraji might look on the roof for a clue.
+
+>g
+It looks like the wires run from the rooftop aerial. Too bad there's no TV to hook up.
+
+>g
+What could Faraji connect to the wires instead?
+
+>g
+Faraji should have a close look at the aerial.
+
+>g
+It looks like there's a strange socket attached to the aerial.
+
+>g
+Maybe it needs power.
+
+>g
+Perhaps Faraji could use the wires to supply power to the aerial.
+
+>g
+Faraji should find a power source to connect to the wires.
+
+>g
+Has Faraji had a look at the abandoned truck in the northeastern part of town?
+
+>g
+Faraji should look under the hood of the truck.
+
+>gonear truck
+Which do you mean, the handtruck, the abandoned pickup truck, the truck hood, the truck bed or handtruck?
+
+>pickup
+Agent Faraji is at the intersection of Lake Street and Ridge Road. The intersection lies at the edge of the lake. Lake Street runs south into town, while Ridge Road heads off into the darkness east of here. A little path along the lake shore is to the west.
+
+There is an abandoned pickup truck at the side of the road.
+
+A bright beam of light shoots from the steeple, striking the obelisk in the park. The crystal is glowing faintly.
+
+>x truck
+(the abandoned pickup truck)
+The truck, a Ford F-1, is relatively new, with no sign as to why it was abandoned. The tailgate is down. The hood is slightly crumpled, as if it has been in a minor accident.
+
+>x hood
+The hood is slightly crumpled, as if it has been in a minor accident. It is closed.
+
+>open it
+Faraji can't do that from here.
+
+>enter truck
+(the abandoned pickup truck)
+Faraji can't get into the closed abandoned pickup truck.
+
+>open it
+Faraji opens the door of the abandoned truck.
+
+>enter truck
+(the abandoned pickup truck)
+Agent Faraji is at the intersection of Lake Street and Ridge Road (in the abandoned pickup truck). There is a glove compartment on the passenger side, closed.
+
+The intersection lies at the edge of the lake. Lake Street runs south into town, while Ridge Road heads off into the darkness east of here. A little path along the lake shore is to the west.
+
+A bright beam of light shoots from the steeple, striking the obelisk in the park. The crystal is glowing faintly.
+
+A bright beam of light shoots from the steeple, striking the obelisk in the park. The crystal is glowing faintly.
+
+>open hood
+Faraji must be outside the truck to open the hood.
+
+>out
+Faraji gets out of the abandoned pickup truck.
+
+Agent Faraji is at the intersection of Lake Street and Ridge Road. The intersection lies at the edge of the lake. Lake Street runs south into town, while Ridge Road heads off into the darkness east of here. A little path along the lake shore is to the west.
+
+There is an abandoned pickup truck at the side of the road.
+
+A bright beam of light shoots from the steeple, striking the obelisk in the park. The crystal is glowing faintly.
+
+>open hood
+Faraji can't do that from here.
+
+The drizzle falls steadily, chilling the air.
+
+>x hood
+The hood is slightly crumpled, as if it has been in a minor accident. It is closed.
+
+>l
+Agent Faraji is at the intersection of Lake Street and Ridge Road. The intersection lies at the edge of the lake. Lake Street runs south into town, while Ridge Road heads off into the darkness east of here. A little path along the lake shore is to the west.
+
+There is an abandoned pickup truck at the side of the road.
+
+A bright beam of light shoots from the steeple, striking the obelisk in the park. The crystal is glowing faintly.
+
+>look in hood
+Faraji can't do that from here.
+
+>climb on truck
+There's nothing like that nearby.
+
+>x truck
+(the abandoned pickup truck)
+The truck, a Ford F-1, is relatively new, with no sign as to why it was abandoned. The tailgate is down. The hood is slightly crumpled, as if it has been in a minor accident.
+
+The drizzle stops, at least for now.
+
+>x tailgate
+The tailgate is down.
+
+Faraji lowers the tailgate. They notice a pair of bolt cutters in the truck bed.
+
+>x cutters
+A pair of bolt cutters, with long handles and heavy jaws.
+
+The clouds obscure the stars.
+
+>get it
+Faraji can't do that from here.
+
+>get cutters
+Faraji can't do that from here.
+
+>l
+Agent Faraji is at the intersection of Lake Street and Ridge Road. The intersection lies at the edge of the lake. Lake Street runs south into town, while Ridge Road heads off into the darkness east of here. A little path along the lake shore is to the west.
+
+There is an abandoned pickup truck at the side of the road.
+
+A bright beam of light shoots from the steeple, striking the obelisk in the park. The crystal is glowing faintly.
+
+>x truck
+(the abandoned pickup truck)
+The truck, a Ford F-1, is relatively new, with no sign as to why it was abandoned. The tailgate is down. The hood is slightly crumpled, as if it has been in a minor accident.
+
+The clouds obscure the moon.
+
+>boltcutters
+I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+>enter truck
+(the abandoned pickup truck)
+Agent Faraji is at the intersection of Lake Street and Ridge Road (in the abandoned pickup truck). There is a glove compartment on the passenger side, closed.
+
+The intersection lies at the edge of the lake. Lake Street runs south into town, while Ridge Road heads off into the darkness east of here. A little path along the lake shore is to the west.
+
+A bright beam of light shoots from the steeple, striking the obelisk in the park. The crystal is glowing faintly.
+
+A bright beam of light shoots from the steeple, striking the obelisk in the park. The crystal is glowing faintly.
+
+>x tailgate
+The tailgate is down.
+
+Faraji lowers the tailgate. They notice a pair of bolt cutters in the truck bed.
+
+>get cutters
+Taken.
+
+>open hood
+Faraji must be outside the truck to open the hood.
+
+>gonear radio roof
+Agent Faraji is on the radio station roof. They can see the obelisk in the park clearly from here. The broadcast tower rises many feet above them. The exit is down. A metal cabinet is attached to the foot of the tower, held shut by a padlock.
+
+A bright beam of light shoots from the steeple, striking the obelisk in the park. The crystal is glowing faintly.
+
+>cut lock
+The bolt cutters make short work of the padlock.
+
+>open cabinet
+Faraji opens the metal cabinet, revealing a power switch inside. It is set to off.
+
+The moon occasionally peeks from behind the clouds.
+
+>turn on switch
+Faraji switches the power switch on. The broadcast tower begins to hum loudly.
+
+>x tower
+A tall, steel lattice structure, rising prominently above the building. This kind of tower was designed to maximize the height for better signal transmission and reception in the era before widespread cable and satellite technology. Strangely, the bars of the tower near roof-level are bent inward to form a small platform. It's almost as if something is meant to be mounted there.
+
+>x platform
+The platform is a small, square area formed by the inward-bent bars of the broadcast tower. It's just large enough to hold a small object. There are two rings set into the back of the platform, allowing something to be attached there.
+
+>x rings
+Two metal rings are set into the back of the platform, allowing something to be attached there.
+
+>put shiny on platform
+(the shiny astral resonator on the platform)
+Faraji pushes the shiny astral resonator onto the platform, attaching the clamps to the rings. A beam of light shoots out of it and strikes the obelisk in the park. The crystal is glowing brightly.
+
+>i
+Faraji is carrying:
+  a broken lock
+  a pair of bolt cutters
+  a telescope
+  a thumb drive
+  a bell
+  The Witnessing of Hezekiah
+  a shovel
+  a dowsing rod
+  The Book of Weird Names
+  a backpack (closed)
+  Astral Secrets
+  the Rod of Hezekiah
+
+>x lock
+A broken padlock.
+
+The clouds obscure the stars.
+
+>hint
+Hints about the following topics are available:
+* ringing phone
+* locked desk
+* computer
+* hex wrench
+* screwdriver
+* Margaret Chao
+* Chief Klimp
+* Moira Zin
+* Enigma Lake
+* work schedule
+* backpack
+* threaded socket
+* wires
+* get back to BOSH
+* open locker
+(Topics in bold have new hints available. The others may have more hints later.)
+To recall hints about a topic, type RECALL <TOPIC>.
+
+>hint socket
+You're probably wondering what goes in the threaded socket.
+
+>g
+You'll know it when you see it.
+
+>g
+You'll know it when you see it.
+
+>gonear diner roof
+There seems to be no such object anywhere in the model world.
+
+>gonear diner
+(Henry's Hot Skillet)
+Agent Faraji is in Henry's Hot Skillet. This is the epitome of the homey small-town diner of times gone by, except for the lack of all furniture, cooking implements, food, decor, and so on. There is a staircase leading up, and the exit is north. A pair of insulated wires hangs from the ceiling at one end of the counter.
+
+>u
+The moon is hidden behind the clouds.
+
+WARNING: The current interlocutor is not nothing. It is Chief Klimp.
+
+Agent Faraji is on Henry's Roof. From here one can see much of the town, including a clear view of the obelisk in Enigma Park. There is a large TV aerial jutting from the roof here.
+
+Bright beams of light shoot from the broadcast tower and the steeple, striking the obelisk in the park. The crystal is glowing brightly.
+
+>x tv
+A large, metallic rooftop antenna, characterized by its array of horizontal and vertical rods designed to capture VHF (very high frequency) broadcasts. Strangely, someone has mounted a threaded socket, like that of a light bulb, on one of the rods. A pair of insulated wires runs from the antenna and through a hole in the roof.
+
+>x hole
+A hole in the roof, through which a pair of insulated wires run. It's not big enough to do anything with.
+
+>i
+Faraji is carrying:
+  a broken lock
+  a pair of bolt cutters
+  a telescope
+  a thumb drive
+  a bell
+  The Witnessing of Hezekiah
+  a shovel
+  a dowsing rod
+  The Book of Weird Names
+  a backpack (closed)
+  Astral Secrets
+  the Rod of Hezekiah
+
+The sky is overcast, and the moon is hidden behind the clouds.
+
+>open backpack
+Faraji opens the backpack, revealing a red key.
+
+>put all in backpack
+broken lock: Done.
+pair of bolt cutters: Done.
+telescope: Done.
+thumb drive: Done.
+bell: Done.
+The Witnessing of Hezekiah: Done.
+shovel: Done.
+dowsing rod: Done.
+The Book of Weird Names: Done.
+Astral Secrets: Done.
+Rod of Hezekiah: Done.
+
+A light drizzle begins to fall, chilly in the night air.
+
+>look through telescope
+Faraji's hand is not steady enough to focus the telescope. They should put it on a tripod.
+
+>close backpack
+Faraji closes the backpack.
+
+>i
+Faraji is carrying:
+  a backpack (closed)
+
+The drizzle stops, at least for now.
+
+>l
+Agent Faraji is on Henry's Roof. From here one can see much of the town, including a clear view of the obelisk in Enigma Park. There is a large TV aerial jutting from the roof here.
+
+Bright beams of light shoot from the broadcast tower and the steeple, striking the obelisk in the park. The crystal is glowing brightly.
+
+>gonear shack
+(the dirty shack)
+Agent Faraji is in a dirty shack. Someone lives here, though not at all luxuriously. Plates are stacked up by the sink, and there's a pile of used paper coffee cups in the corner. The whole place stinks of cat.
+
+A stripey orange cat sits in a corner of the room, grooming itself.
+
+A bony old man lies on a bed in a corner of the shack. He stirs sleepily and says "Ah, there you are, there you are. Knew you'd be around eventually."
+
+Also here is a sledgehammer.
+
+>get hammer
+Taken.
+
+>pet cat
+The cat purrs and rubs against Faraji's leg.
+
+>x man
+The bony old man is more or less a skeleton in overalls.
+
+[Kind of Crypt Keeper meets Groundskeeper Willie.]
+
+>ask man about me
+That doesn't seem to be a topic of conversation at the moment.
+
+Faraji can ask for a screwdriver or ask who he is.
+
+>ask who he is
+They ask, "You seem to know me, but who are you?"
+
+"Name's Hutz. I'm the town groundskeeper. Or was, I guess. Not much to keep now."
+
+Faraji can ask for a screwdriver or ask why he's still here.
+
+>ask why
+They ask, "Why are you still here? The town is being flooded tomorrow."
+
+"Had a feeling someone might come by looking for help. And here you are." Hutz grins, showing a few teeth. "I'm not going anywhere, not yet. Not until I've done what I need to do."
+
+Faraji can ask for a screwdriver or ask how he can help them.
+
+>ask how
+"But how can you possibly help me?" they ask.
+
+"You're looking for the secret of Enigma Lake, are you not? The secret about to be lost forever? Something calls you here; you're searching for something, no, someone. Yes, yes, Hutz can help you."
+
+Faraji can ask for a screwdriver, ask about the secret of Enigma Lake or ask Hutz for help.
+
+>ask secret
+"Secret? What secret?" they ask.
+
+"Well, *I* don't know. Just kinda thought you must be searching for some kind of mystical secret, seeing that you're wandering like a fool through a town about to be flooded. But I can help you, yep."
+
+Faraji can ask for a screwdriver or ask Hutz for help.
+
+>ask help
+I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+>ask screwdriver
+They ask, "Would you happen to have a screwdriver I could borrow?"
+
+"No, not anymore. Got angry and threw mine in the lake one day."
+
+Faraji can ask Hutz for help.
+
+>ask for help
+They say, "Okay, how can you help?"
+
+"Oh yes, how was I going to help? Afraid I can't remember, sorry. Can't seem to focus."
+
+>i
+Faraji is carrying:
+  a sledgehammer
+  a backpack (closed)
+
+>open backpack
+Faraji opens the backpack, revealing the Rod of Hezekiah, Astral Secrets, The Book of Weird Names, a dowsing rod, a shovel, The Witnessing of Hezekiah, a bell, a thumb drive, a telescope, a pair of bolt cutters, a broken lock and a red key.
+
+>hint
+Hints about the following topics are available:
+* ringing phone
+* locked desk
+* computer
+* hex wrench
+* screwdriver
+* Margaret Chao
+* Chief Klimp
+* Moira Zin
+* Enigma Lake
+* work schedule
+* backpack
+* threaded socket
+* wires
+* get back to BOSH
+* getting help from Hutz
+* open locker
+(Topics in bold have new hints available. The others may have more hints later.)
+To recall hints about a topic, type RECALL <TOPIC>.
+
+>hint hutz
+Hutz has suddenly become unhelpful.
+
+>g
+He says he can't focus.
+
+>g
+Faraji should find a way to help him focus.
+
+>g
+What helps people focus?
+
+>g
+Coffee helps people focus.
+
+>g
+Faraji already knows where to get coffee.
+
+>g
+Faraji needs to go back to Minerva's office and get the coffee.
+
+>g
+Faraji should use the recall button to return to the hyperspace field office.
+
+>g
+Faraji can then get the coffee and bring it to Hutz.
+
+>*oh i definitely would have assumed i shouldn't use the recall button for that... didn't he say to only use it when i was ready to return for good?
+I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+>gonear minerva
+Which do you mean, Minerva or Minerva?
+
+>gonear christy
+Which do you mean, Christy or Christy?
+
+>gonear hyperspace
+Which do you mean, Hyperspace, hyperspace, Theoretical Hyperspace or featureless hyperplane?
+
+>gonear office
+Which do you mean, field office, field office reception, the office directory, the field office hallway, Minerva's office, the field office chief's office, Christy's office, the office, the front office, the shelves of office supplies, BOSH headquarters, the field office, Faraji's office, the BOSH office, Faraji's door, the hallway, the BOSH chief's office or Moira's office?
+
+>gonear dorisi
+There seems to be no such object anywhere in the model world.
+
+>gonear doris office
+There seems to be no such object anywhere in the model world.
+
+>gonear coffee
+(the pile of used coffee cups)
+Agent Faraji is in a dirty shack. Someone lives here, though not at all luxuriously. Plates are stacked up by the sink, and there's a pile of used paper coffee cups in the corner. The whole place stinks of cat.
+
+A stripey orange cat sits in a corner of the room, grooming itself.
+
+Hutz is reclining on a narrow bed.
+
+Hutz sits up and says, "Never bothered to name the cat. Just call him Cat."
+
+>gonear sketchbook
+Agent Faraji is in Christy's office. Christy has taken the initiative to paint their office a bright, cheerful orange. A large desk is in the middle of the room.
+
+Christy is sitting at the desk, drawing in a sketchbook.
+
+>out
+Faraji leaves Christy to her scribbling.
+
+WARNING: The current interlocutor is not nothing. It is Hutz.
+
+Agent Faraji is in the field office hallway. The hallway is white and gleaming. Doorways lead north, south, east, west, forth, and back.
+
+>w
+Faraji enters the domain of the chief of the field office.
+
+WARNING: The current interlocutor is not nothing. It is Hutz.
+
+Agent Faraji is in the field office chief's office. Doris's office is a riot of color -- he's covered the white walls with posters, maps, and charts. A large desk is in the middle of the room, behind which sits Doris.
+
+Doris is sitting cross-legged in a chair, tapping his foot lazily on the desk.
+
+"Ah, Larch," Doris exclaims, standing up to shake their hand. "I've been waiting for you to pay us a visit. Did you bring the thumb drive?"
+
+>give drive
+(to Doris)
+(first taking the thumb drive)
+That is not a topic of conversation at the moment.
+
+Faraji can ask for a screwdriver, ask who he is, ask where we are, ask how to get home, tell Doris they don't have it or show him the thumb drive.
+
+>ask all
+You can't use multiple objects with that verb.
+
+>ask thumb
+I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+>out
+Faraji couldn't be happier to get away from Doris's incessant chatter.
+
+Agent Faraji is in the field office hallway. The hallway is white and gleaming. Doorways lead north, south, east, west, forth, and back.
+
+>n
+Faraji enters an open office door.
+
+Agent Faraji is in Minerva's office. The office is white and gleaming. A mahogany desk is in the middle of the room. A coffee maker sits on the desk.
+
+Minerva is sitting at her desk, typing away on her computer.
+
+Faraji can ask for a cup of coffee or ask for a screwdriver.
+
+>ask cup
+They say, "I could use a coffee."
+
+Minerva looks up from her computer. "Sure, help yourself."
+
+Faraji pours themself a cup of coffee in a styrofoam cup from the coffee maker.
+
+Faraji can ask for a screwdriver.
+
+>gonear shack
+(the dirty shack)
+Agent Faraji is in a dirty shack. Someone lives here, though not at all luxuriously. Plates are stacked up by the sink, and there's a pile of used paper coffee cups in the corner. The whole place stinks of cat.
+
+A stripey orange cat sits in a corner of the room, grooming itself.
+
+Hutz is reclining on a narrow bed.
+
+Faraji can ask for a screwdriver.
+
+>give hutz coffee
+(the cup of coffee)
+Hutz takes the coffee and drinks it down in one gulp. "Ah, that's the stuff," he says. "Now, what can I do for you?"
+
+Faraji can ask if he can now help them.
+
+>ask for help
+"Now, you've had your coffee. Can you help me?" they ask.
+
+"I found something. Something that might help you. It's in the workshed. In the cabinet. You'll need the key." At this, Hutz pulls out a rusty key ring, pulls off an iron key and hands it to them.
+
+>x iron
+A heavy iron key, it looks like it might fit a padlock.
+
+>gonear whed
+There seems to be no such object anywhere in the model world.
+
+>gonear shed
+(the workshed)
+Agent Faraji is in the workshed. It is a small, weathered building, with a single door and no windows, and a creaky wooden floor. The interior is almost dark. An empty light socket hangs from the ceiling. A closed cabinet is in the corner. A closed rusty metal door leads out of the shed. A trapdoor is in the floor, open. It leads down into darkness.
+
+>open cabinet
+(first unlocking the equipment cabinet)
+(with the iron key)
+Faraji opens the equipment cabinet, revealing a rusty astral resonator.
+
+>get resonator
+Taken.
+
+>x rusty
+(the rusty astral resonator)
+A small, rusty, metallic, cylindrical object. One end is capped with a lens, while the other terminates in a threaded base, like a light bulb.
+
+>gonear diner
+(Henry's Hot Skillet)
+Agent Faraji is in Henry's Hot Skillet. This is the epitome of the homey small-town diner of times gone by, except for the lack of all furniture, cooking implements, food, decor, and so on. There is a staircase leading up, and the exit is north. A pair of insulated wires hangs from the ceiling at one end of the counter.
+
+>u
+The drizzle picks up a bit, and the air grows colder.
+
+WARNING: The current interlocutor is not nothing. It is Hutz.
+
+Agent Faraji is on Henry's Roof. From here one can see much of the town, including a clear view of the obelisk in Enigma Park. There is a large TV aerial jutting from the roof here.
+
+Bright beams of light shoot from the broadcast tower and the steeple, striking the obelisk in the park. The crystal is glowing brightly.
+
+>put rusty in socket
+(the rusty astral resonator in the threaded socket)
+Faraji screws the rusty astral resonator into the threaded socket on the TV aerial antenna.
+
+>hint
+Hints about the following topics are available:
+* ringing phone
+* locked desk
+* computer
+* hex wrench
+* screwdriver
+* Margaret Chao
+* Chief Klimp
+* Moira Zin
+* Enigma Lake
+* work schedule
+* backpack
+* threaded socket
+* wires
+* get back to BOSH
+* rusty astral resonator
+* open locker
+(Topics in bold have new hints available. The others may have more hints later.)
+To recall hints about a topic, type RECALL <TOPIC>.
+
+>hint rusty
+Faraji should mount the rusty astral resonator somewhere, like they did with the other two resonators.
+
+>g
+Faraji should mount the rusty astral resonator somewhere, like they did with the other two resonators.
+
+>g
+Faraji should mount the rusty astral resonator somewhere, like they did with the other two resonators.
+
+>gonear parking
+Which do you mean, the south end of the strip mall parking lot or the north end of the strip mall parking lot?
+
+>souoth
+There seems to be no such object anywhere in the model world.
+
+>gonear south parking
+Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Enter HELP for instructions.
+
+Klimp's Porsche takes up two spots.
+
+Their bright red Hyundai Accent is parked nearby.
+
+>x accent
+(Faraji's Hyundai)
+An old bright red Hyundai Accent, it's been their personal means of transportation for years. And since the Bureau lost its fleet, it's their work car too.
+
+>open hood
+Which do you mean, the Porsche hood or the Hyundai hood?
+
+>hyundai
+Faraji opens the Hyundai hood, revealing a clean car battery.
+
+>get battery
+Taken.
+
+>gonear diner
+(Henry's Hot Skillet)
+Agent Faraji is in Henry's Hot Skillet. This is the epitome of the homey small-town diner of times gone by, except for the lack of all furniture, cooking implements, food, decor, and so on. There is a staircase leading up, and the exit is north. A pair of insulated wires hangs from the ceiling at one end of the counter.
+
+>put wires on battery
+(first taking the wires)
+The wires travel up through a hole in the ceiling. They can't be taken without some work.
+
+>x wires
+Two insulated wires with bare ends, they probably once attached to some electrical device sitting on the counter.
+
+>u
+The drizzle falls steadily, chilling the air.
+
+WARNING: The current interlocutor is not nothing. It is Hutz.
+
+Agent Faraji is on Henry's Roof. From here one can see much of the town, including a clear view of the obelisk in Enigma Park. There is a large TV aerial jutting from the roof here. A rusty astral resonator is screwed into a threaded socket on the antenna.
+
+Bright beams of light shoot from the broadcast tower and the steeple, striking the obelisk in the park. The crystal is glowing brightly.
+
+>put battery on wires
+Putting things on the insulated wires would achieve nothing.
+
+>put wires on battery
+(first taking the insulated wires)
+Those seem to be a part of the TV aerial antenna.
+
+>attach battery to wires
+Faraji would achieve nothing by this.
+
+The drizzle stops, at least for now.
+
+>d
+Faraji heads back down the stairs to the restaurant.
+
+WARNING: The current interlocutor is not nothing. It is Hutz.
+
+Agent Faraji is in Henry's Hot Skillet. This is the epitome of the homey small-town diner of times gone by, except for the lack of all furniture, cooking implements, food, decor, and so on. There is a staircase leading up, and the exit is north. A pair of insulated wires hangs from the ceiling at one end of the counter.
+
+>attach battery to wires
+Faraji puts the battery on the counter and attaches the wires to it.
+
+All of a sudden the obelisk itself begins to glow. The light from the crystal at its apex grows brighter and brighter, until it's almost blinding. Shielding their eyes, Faraji watches as the space around the obelisk shimmers and distorts. The previously gentle breeze is now a gale, shivering the television aerial. Then, with a huge crack, a bolt of lightning strikes the crystal. One can almost sense the electricity penetrating the earth. searching for something. And then, it's found it. Below the obelisk, something has woken.
+
+>gonear parkk
+There seems to be no such object anywhere in the model world.
+
+>gonear park
+Which do you mean, Swamp Park, the north end of the strip mall parking lot, Swamp Park, Enigma Park, Lake Street by the park, Enigma Park, the lake shore north of the park, the radio-obelisk-facade, the steeple-obelisk-facade or the Enigma Park obelisk?
+
+>obelisk
+Which do you mean, the radio-obelisk-facade, the steeple-obelisk-facade or the Enigma Park obelisk?
+
+>park
+Which do you mean, the radio-obelisk-facade, the steeple-obelisk-facade or the Enigma Park obelisk?
+
+>enigma
+Which do you mean, the radio-obelisk-facade, the steeple-obelisk-facade or the Enigma Park obelisk?
+
+>l
+Agent Faraji is in Henry's Hot Skillet. This is the epitome of the homey small-town diner of times gone by, except for the lack of all furniture, cooking implements, food, decor, and so on. There is a staircase leading up, and the exit is north. A pair of insulated wires hangs from the ceiling at one end of the counter. The wires are attached to a battery resting on the counter.
+
+>out
+But Faraji isn't in anything at the moment.
+
+>n
+(first opening the Skillet door)
+(first unlocking the Skillet door)
+Faraji lacks a key that fits the Skillet door.
+
+>gonear hall
+Which do you mean, the field office hallway, the Enigma Lake town hall, the town hall or the hallway?
+
+>lake
+Agent Faraji is in the Enigma Lake town hall. The building has been cleared of furniture and other items ahead of the imminent flooding. A permanent fixture, the information desk sits near the front entrance (to the south). Taped to it is what looks to be a work schedule. There is also a back entrance onto the park to the north.
+
+>n
+Faraji pushes through the back door into the cool night.
+
+Clouds have gathered over the town.
+
+WARNING: The current interlocutor is not nothing. It is Hutz.
+
+Agent Faraji is in Enigma Park. It's probably beautiful during the day, but tonight the deep shadows among the trees seem ominous. They are watchful and tense as they explore the park.
+
+The central focus of the park is a large obelisk inscribed with the names of the town's citizens lost in the Great War. Firs and maples line the paths. The town hall is to the south, and other exits are to the north, west, and east. Other egress is blocked by stone walls.
+
+Bright beams of light shoot from the broadcast tower, Henry's Hot Skillet and the steeple, striking the obelisk. The crystal is glowing brilliantly.
+
+>x crystal
+The crystal is glowing brilliantly.
+
+>gonear cave
+Which do you mean, the hidden cave or the old root cellar?
+
+>hidden
+Agent Faraji is in a hidden cave. The cave is dark and damp, with a low ceiling. From the passage to the south comes enough light to see. A set of rickety stairs leads up to the workshed above.
+
+>s
+WARNING: The current interlocutor is not nothing. It is Hutz.
+
+Agent Faraji is in the circular chamber. The chamber is circular, with a low ceiling. The walls are rough-hewn stone. A passage leads to the north.
+
+A shimmering portal hovers in the center of the chamber, casting a faint light over the room.
+
+>x portal
+This portal seems to be natural, if that's indeed a possibility. It's a shimmering white oval, about six feet high and four feet wide. It's not clear where it leads.
+
+[Another goldang portal. Could someone at least label where they go?]
+
+>in
+What does Faraji want to enter?
+
+>save
+Ok.
+
+>enter portal
+Faraji steps through the portal. The circular chamber vanishes, and they find themself somewhere else...
+
+Agent Faraji is in an old root cellar. The chamber is dark and damp, smelling of earth and old vegetable matter. The walls, floor, and ceiling are packed earth. Around the walls are numerous woven baskets for storing vegetables. Light filters in from a passage to the north.
+
+A tired-looking man sits on the floor of the cellar. He looks up as Faraji appears. "Ah, you must be the help I was promised," he says. "I'm Daniels. I've been waiting for you."
+
+Faraji can ask for a screwdriver, ask how he got here or ask where we are.
+
+>x baskets
+The baskets are woven from reeds and are filled with root vegetables.
+
+Faraji can ask for a screwdriver, ask how he got here or ask where we are.
+
+>x daniels
+Daniels looks weary. He's dressed in a tattered suit, and his hair is unkempt.
+
+[I wonder if he's got a screwdriver.]
+
+Faraji can ask for a screwdriver, ask how he got here or ask where we are.
+
+>x vegetables
+Looks like the vegetables are well-preserved.
+
+Faraji can ask for a screwdriver, ask how he got here or ask where we are.
+
+>eat vegetables
+That's plainly inedible.
+
+Faraji can ask for a screwdriver, ask how he got here or ask where we are.
+
+>ask screwdriver
+They ask, "Would you happen to have a screwdriver I could borrow?"
+
+He checks his pockets. "Sadly, no," he responds.
+
+Faraji can ask how he got here or ask where we are.
+
+>ask how
+Faraji says, "How did you end up stranded here?"
+
+"I was hunting down Savra's minions," Daniels says, "but they caught me and sent me way back to the past. I've been stuck here ever since."
+
+Faraji can ask where we are or ask what's next.
+
+>ask where
+I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+>ask where we are
+Faraji asks, "Where are we?"
+
+"We're in an old Onandaga root cellar in upstate New York. Well not so old now, I guess. I've managed to make friends with the locals well enough, so they let me sleep in here."
+
+Faraji can ask what's next.
+
+>*Onandaga should be Onondaga
+I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+>ask what
+I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+>ask what's next
+Faraji asks, "What do we do next?"
+
+"Doris must have given you a recall button. I can rejigger it to send me to the hyperspace office and send you back to Swamp Park. I own the laundromat, by the way. Sorry I wasn't there to greet you. Alright, give me the button."
+
+Daniels" face falls. "What? You don't have the recall button? Do you know what that means? We have no way back!" He looks around the room, then back at Faraji. "We're stuck here."
+
+
+
+    *** Faraji is stranded in the past with Daniels. ***
+
+
+Larch Faraji will return in "BOSH II: The Dragon".
+
+[Seriously, is that it?]
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+> undo
+Agent Faraji is in an old root cellar.
+
+>gonear sketchbook
+Agent Faraji is in Christy's office. Christy has taken the initiative to paint their office a bright, cheerful orange. A large desk is in the middle of the room.
+
+Christy is sitting at the desk, drawing in a sketchbook.
+
+Faraji can ask what's next.
+
+>n
+WARNING: The current interlocutor is not nothing. It is Daniels.
+
+Agent Faraji is in the field office hallway. The hallway is white and gleaming. Doorways lead north, south, east, west, forth, and back.
+
+Faraji can ask what's next.
+
+>w
+WARNING: The current interlocutor is not nothing. It is Daniels.
+
+Agent Faraji is in the field office chief's office. Doris's office is a riot of color -- he's covered the white walls with posters, maps, and charts. A large desk is in the middle of the room, behind which sits Doris.
+
+Doris is sitting cross-legged in a chair, tapping his foot lazily on the desk.
+
+Doris fiddles with his TARDIS. "Some people get all excited about this thing. What's the big deal? It's just a police box."
+
+Faraji can ask what's next.
+
+>x doris
+Doris sports a grin that seems to be permanently etched on his face. He wears a tweed suit and a trilby hat.
+
+Faraji can ask what's next.
+
+>talk to doris
+Faraji says hello to Doris.
+
+Faraji can ask for a screwdriver, ask who he is, ask where we are, ask how to get home, tell Doris they don't have it or show him the thumb drive.
+
+>ask who
+I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+>ask who he is
+They ask "Who are you?"
+
+He looks taken aback for a moment, then recovers his composure. "Ah yes, introductions. I'm Doris, chief of the hyperspatial field office of the Bureau."
+
+Faraji can ask for a screwdriver, ask about his name, ask where we are, ask how to get home, tell Doris they don't have it or show him the thumb drive.
+
+>ask screwdriver
+They ask, "Do you have a screwdriver?"
+
+"No, I don't have a screwdriver. Sonic or otherwise."
+
+Faraji can ask about his name, ask where we are, ask how to get home, tell Doris they don't have it or show him the thumb drive.
+
+>ask name
+Faraji says, "Tell me about your name."
+
+"None of your business," Doris replies.
+
+Faraji can ask where we are, ask how to get home, tell Doris they don't have it or show him the thumb drive.
+
+>ask where
+I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+>ask how
+They ask, "Just how can I get home from here?"
+
+"Go ask Maggie; she can help you."
+
+Faraji can ask where we are, tell Doris they don't have it or show him the thumb drive.
+
+>ask where we
+I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+>ask where we are
+Faraji looks around and asks, "Where are we? What is this place?"
+
+Doris answers, "You're in the hyperspatial field office of the Bureau of Strange Happenings. But I guess that doesn't exactly clear things up for you. Practically, your office is a branch of ours, but since you have the official recognition of the US government -- for now -- you get the glory. Besides, due to the nature of our work, we prefer to remain underground, so to speak. How's Klimp, by the way? Ah, we had some good times. But you know what they say -- what happens in Pompeii, stays in Pompeii.
+
+Faraji can tell Doris Klimp is fine, tell Doris they don't have it or show him the thumb drive.
+
+>tell klimp
+There's nothing like that nearby.
+
+>tell doris klimp is fine
+They say, "He's just fine."
+
+"Great! Be sure to say hi for me."
+
+Faraji can tell Doris they don't have it or show him the thumb drive.
+
+>show drive
+(to Doris)
+They answer, "Yes, I have it."
+
+"Fantastic! Hand it here."
+
+Faraji can hand over the thumb drive.
+
+>give drive
+(to Doris)
+They give the thumb drive to Doris.
+
+"Great, great." He peruses the drive. "We lost one of our New York agents -- a guy named Daniels -- to a slingshot effect that threw him far back in time. We're always monitoring for artifacts that are out of place or anachronistic to lead us to lost agents.
+
+He continues, "The scratch marks here say, 'They found me out and sent me back. 14th century. Old Onandaga holy place. Savra is going to move on the Dragon.'"
+
+Faraji can ask about Savra, ask about the Dragon or ask about time travel.
+
+>ask savra
+"Senator Savra? What does he have to with anything?" Faraji asks.
+
+Doris says, "Tell me, Agent. Do you believe in aliens? That alien species have visited this planet?"
+
+Faraji can tell Doris they don't believe in alien visitation, tell Doris they do believe in alien visitation, ask about the mission, ask about the Dragon or ask about time travel.
+
+>ask dragon. ask travel
+They say, "Who is this 'Dragon'?"
+
+Doris brings his finger to his lips. "Classified. Need to know only. But we should be talking about the mission instead."
+
+Faraji can tell Doris they don't believe in alien visitation, tell Doris they do believe in alien visitation, ask about the mission or ask about time travel.
+
+Disbelievingly, Faraji asks, "Time travel? For real?"
+
+"Yes, yes," Doris responds. "Don't get too worked up over it. It gets old fast. But now we need to talk about the mission."
+
+Faraji can tell Doris they don't believe in alien visitation, tell Doris they do believe in alien visitation or ask about the mission.
+
+>tell don't
+There's nothing like that nearby.
+
+>tell don't believe
+There's nothing like that nearby.
+
+>don't believe
+"No. The Chief might, but I prefer hard evidence," says Faraji.
+
+Doris nods. "Good, because they haven't. The whole idea is ridiculous. Senator Savra is not an alien." He looks at Faraji significantly.
+
+They look at him unbelievingly. "What are you talking about?"
+
+Doris shakes his head. "I thought you would know. He's a member of a race of Earth beings more ancient than our own. Agent Faraji, Senator Savra is a lizard man."
+
+Faraji can ask what is a lizard man or ask about the mission.
+
+>lizard
+They look incredulous. "And just what is a lizard man?"
+
+"Just what it sounds like. It's a bipedal, intelligent reptilian creature."
+
+Faraji can Savra's not reptilian or ask about the mission.
+
+>mission
+They say, "What's the mission?"
+
+Doris leans back in his chair. "I believe we still have a chance to retrieve our lost agent -- the one that left the thumb drive. He says he was at an Onandaga holy place in the 14th century. Now we need to find out where that is. Fortunately, there's a book that can help. Unfortunately, I don't have it. Fortunately, you're here to go find it. Unfortunately, the name's gotten a bit jumbled in my head. I think it was something like New Bikers of Troy. Or something. I'm bad with things like titles and letters and keeping things the right way 'round. But you'll find it. I know you will. Come back here when you have."
+
+Faraji can Savra's not reptilian.
+
+>not reptilian
+"But Savra isn't a reptile!"
+
+"He's in disguise! Whatever, it doesn't matter. What matters is your mission."
+
+>gonear upstate
+There seems to be no such object anywhere in the model world.
+
+>gonear tribes
+Agent Faraji is in Moira's office. It is, like Moira herself, neat and orderly. She's clearly made the most of the meager funds she had for furnishing her office. Behind a modest yet functional desk is a modest yet functional office chair. Her bookshelves are filled with titles relating to investigative techniques, law, and skepticism. In the east wall is a closet door. The exit is to the south.
+
+>get tribes
+That belongs to Moira Zin.
+
+>ask about books
+Doris isn't here.
+
+>talk to zin
+There's nothing like that nearby.
+
+>talk to moira
+There's nothing like that nearby.
+
+>button
+I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+>recallbutton
+I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+>gonear store
+Which do you mean, the BOSH front desk, the department store sign, the Li'l Nectarine Convenience Store, the Li'l Nectarine Convenience Store, the store clerk, the store shelves, Li'l Nectarine Convenience Store, Rolle's Department Store, Rolle's Department Store, Reading Room, Fresnel's Music or the music store counter?
+
+>nectarine
+Which do you mean, the Li'l Nectarine Convenience Store, the Li'l Nectarine Convenience Store or Li'l Nectarine Convenience Store?
+
+>gonear clerk
+Agent Faraji is in the Li'l Nectarine Convenience Store. Li'l Nectarine offers great service and low prices, or so they say. This one's cluttered aisles and sparse shelves could make one wonder if that's true. Behind the counter is the typical array of cigarettes and lottery tickets. Under the counter is a glass case containing various useful items.
+
+The clerk, a scruffy man in his mid-twenties, is leaning against the counter, looking bored.
+
+As you enter the store, you catch a glimpse of a red screwdriver in the glass case under the counter.
+
+>x screwdriver
+A medium-length flat head screwdriver with a red plastic handle.
+
+[There it is, just a few inches away, yet so far.]
+
+>ask about it
+(addressing the store clerk)
+"Good morning," Faraji says.
+"Yeah," replies the clerk.
+
+Faraji says, "Tell me about the red screwdriver."
+
+"You want the screwdriver? Five bucks. And no, you can't borrow it."
+
+Faraji can ask for a screwdriver.
+
+>out
+Faraji exits the store into the relative quiet of the nearby traffic.
+
+Agent Faraji is at the north end of the strip mall parking lot. This end is no more auspicious than the other. A convenience store lies to the east. To the west is a military recruitment center. North of here the parking lot exits onto a busy road. There is a rusty sign by the road naming the shopping center: Park Place. South is BOSH headquarters, among other things.
+
+>s
+Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Enter HELP for instructions.
+
+Klimp's Porsche takes up two spots.
+
+Their bright red Hyundai Accent is parked nearby. The hood is open.
+
+>gonear celelar
+There seems to be no such object anywhere in the model world.
+
+>gonear cellar
+Which do you mean, the old root cellar or the root cellar?
+
+>old
+Agent Faraji is in an old root cellar. The chamber is dark and damp, smelling of earth and old vegetable matter. The walls, floor, and ceiling are packed earth. Around the walls are numerous woven baskets for storing vegetables. Light filters in from a passage to the north.
+
+Daniels, ragged and dirty, sits on the floor of the cellar. He looks tired.
+
+>x daniels
+Daniels looks weary. He's dressed in a tattered suit, and his hair is unkempt.
+
+>n
+Faraji is heading into the north passage when Daniels calls out to him. "I wouldn't go out there," he says. "We need to get back to our own time."
+
+>l
+Agent Faraji is in an old root cellar. The chamber is dark and damp, smelling of earth and old vegetable matter. The walls, floor, and ceiling are packed earth. Around the walls are numerous woven baskets for storing vegetables. Light filters in from a passage to the north.
+
+Daniels, ragged and dirty, sits on the floor of the cellar. He looks tired.
+
+>n
+Faraji is heading into the north passage when Daniels calls out to him. "I wouldn't go out there," he says. "We need to get back to our own time."
+
+>n
+Faraji is heading into the north passage when Daniels calls out to him. "I wouldn't go out there," he says. "We need to get back to our own time."
+
+>*"him" used for Faraji instead of "them"
+Noted.
+
+>script off
+
+End of transcript.

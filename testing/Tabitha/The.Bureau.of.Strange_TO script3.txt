@@ -1,0 +1,1296 @@
+
+
+
+Larch Faraji (they/them): An agent of the Bureau of Strange Happenings. Dark hair, dark eyes, and a dark sense of humor. Specialized in the investigation of unexplained phenomena throughout the United States and its territories. Lead singer of the third wave neo-old-school punk band DC Trash. Liable to fits of sarcasm and cynicism. Dedicated to the Bureau's mission. Status: Potential threat.
+
+    -- Notes from Senate Investigation into BOSH, Senator S. Savra, Chair
+
+[continue]
+
+
+As an agent of the Bureau of Strange Happenings (BOSH), it is Agent Larch Faraji's job to investigate unexplained phenomena throughout the United States and its territories. Recently, however, business hasn't been good. Once a bustling office with a dozen Agents, the Bureau's been reduced to just three: Faraji, Moira Zin, and Chief Huffton Klimp. The Bureau's expansive and well-appointed office suite was taken over by the State Department Book Club, and now the agents are consigned to a tiny suite in a strip mall in the remote D.C. suburb of Swamp Park, Maryland. Today is move-in day at the bureau.
+
+We open on a decrepit strip mall just as an aging Hyundai pulls into the potholed parking lot. Agent Faraji steps out of the car. They survey the area and wrinkle their nose.
+
+[continue]
+
+The Bureau of Strange Happenings
+An Interactive Phenomenon by Phil Riley
+Release 1 / Serial number 240521 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
+
+Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Enter HELP for instructions.
+
+Their bright red Hyundai Accent is parked nearby.
+
+>
+I beg your pardon?
+
+>cheat frame
+Agent Faraji is in the First Utilitarian Church of Enigma Lake. The interior is dimly lit by the stained glass windows, and the pews are arranged in neat rows facing the pulpit. A standard electrical outlet is set into the wall. To the east is the vestry. You can also take a ladder up to the steeple, or stairs down to the basement. The exit is to the west.
+
+>i
+Faraji is carrying:
+  the Rod of Hezekiah
+  a pair of astral lenses
+  a tuning fork
+  a table lamp (with a bulb in the socket)
+  an extension cord
+  a wooden frame (empty and open)
+  a green smartphone
+
+>w
+Faraji leaves the silent church behind.
+
+Clear skies grace the town of Enigma Lake.
+
+Agent Faraji is walking on Lake Street by the park. Lake Street runs north and south from here. To the west is the park, while to the east is the First Utilitarian Church of Enigma Lake.
+
+Three humanoid figures are here, each with a long, scaly tail and a head that looks like a lizard's. They are dressed in smart grey suits. They are hissing loudly in what seems to be intelligent communication. One is carrying some kind of shiny metal object.
+
+They notice you and stop talking. One of them steps forward and says in a guttural hiss, "You are too late to stop us. We will have the Dragon!"
+
+>phenomenology
+I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+>say phenomenology
+(to the group of lizard people)
+The lizard people seem to find your words amusing. They hiss, creating a strange cloud of thick vapor. Faraji feels light-headed and disoriented. When the vapor clears, they are somewhere else...
+
+Agent Faraji is on the corner of Main and Solvay. Main Street runs east from here, while Solvay Road heads north. South of here, Henry's Hot Skillet promises all of the comforts of the mid-twentieth-century diner. A bookstore named The Reading Room lies to the west, while Fresnel's Music is southwest.
+
+The sky clouds over, and the air grows cooler. The moon disappears behind a veil of clouds.
+
+>gonear church stairs
+Agent Faraji is in the First Utilitarian Church of Enigma Lake. The interior is dimly lit by the stained glass windows, and the pews are arranged in neat rows facing the pulpit. A standard electrical outlet is set into the wall. To the east is the vestry. You can also take a ladder up to the steeple, or stairs down to the basement. The exit is to the west.
+
+>plug extension cord in outlet
+I didn't understand that sentence.
+
+>plug cord in outlet
+I didn't understand that sentence.
+
+>plug cord into outlet
+(the extension cord into the electrical outlet)
+Faraji plugs the plug end of the extension cord into the electrical outlet.
+
+>plug cord into lamp
+(the plug end of the extension cord into the table lamp)
+You can't plug anything into the table lamp.
+
+>plug lamp into cord
+(the socket end of the extension cord)
+Faraji plugs the table lamp into the socket end of the extension cord.
+
+>turn on lamp
+Faraji flips the switch on the table lamp. The bulb remains dark.
+
+>i
+Faraji is carrying:
+  the socket end of the extension cord (with the other end plugged into the electrical outlet and with the table lamp plugged into it)
+  the Rod of Hezekiah
+  a pair of astral lenses
+  a tuning fork
+  a table lamp (with a bulb in the socket and plugged into the socket end of the extension cord)
+  a wooden frame (empty and open)
+  a green smartphone
+
+>e
+Faraji steps into the vestry, hoping to find some vests.
+
+Agent Faraji is in the vestry. It's a small room, with an exit leading to the church proper to the west. A lovely tapestry hangs on the wall.
+
+The extension cord you are carrying trails west into the church.
+
+>look behind tapesty
+There's nothing like that nearby.
+
+>look behind tapestry
+Faraji pushes the tapestry aside, revealing a circuit breaker switch mounted on the wall.
+
+>open box
+There's nothing like that nearby.
+
+>turn on breaker
+Faraji switches the circuit breaker on.
+
+The table lamp is now lit.
+
+>out
+Faraji leaves the vestry and reenters the sanctuary.
+
+Agent Faraji is in the First Utilitarian Church of Enigma Lake. The interior is dimly lit by the stained glass windows, and the pews are arranged in neat rows facing the pulpit. A standard electrical outlet is set into the wall. To the east is the vestry. You can also take a ladder up to the steeple, or stairs down to the basement. The exit is to the west.
+
+The plug end of an extension cord lies on the floor, one end plugged into the electrical outlet. The other end is in their hand.
+
+>put lamp in frame
+(first unplugging the table lamp)
+Faraji unplugs the table lamp from the socket end of the extension cord.
+
+The table lamp is now unlit.
+
+Faraji puts the table lamp into the wooden frame.
+
+>undo
+Agent Faraji is in the First Utilitarian Church of Enigma Lake.
+
+>l
+Agent Faraji is in the First Utilitarian Church of Enigma Lake. The interior is dimly lit by the stained glass windows, and the pews are arranged in neat rows facing the pulpit. A standard electrical outlet is set into the wall. To the east is the vestry. You can also take a ladder up to the steeple, or stairs down to the basement. The exit is to the west.
+
+The plug end of an extension cord lies on the floor, one end plugged into the electrical outlet. The other end is in their hand.
+
+>x lamp
+An ordinary table lamp, with a red enameled base, a light bulb in the socket, but no shade. It looks like it's seen better days. On the base is the branding "Spectre". It is plugged into the socket end of the extension cord. The lamp is lit.
+
+>d
+Agent Faraji is in the church basement. The basement is a shock to behold after the simple church above. It's a large, open space, with walls painted with scenes of humans and lizard people in battle, with aliens and platypuses looking on in horror. There is an ornate altar at the far end of the room. The exit is up.
+
+The extension cord you are carrying trails up into the church.
+
+[I wonder if they have a Sunday school down here.]
+
+>read book
+The text is the Book of Utilitarianism. Faraji opens to a page at random and reads:
+
+And the Lord so hated the lizard people that he smote them with a mighty smiting, and he said the cursèd word "epistemology", and the lizard people screamed and ran away like scared little children.
+
+>u
+Agent Faraji is in the First Utilitarian Church of Enigma Lake. The interior is dimly lit by the stained glass windows, and the pews are arranged in neat rows facing the pulpit. A standard electrical outlet is set into the wall. To the east is the vestry. You can also take a ladder up to the steeple, or stairs down to the basement. The exit is to the west.
+
+The plug end of an extension cord lies on the floor, one end plugged into the electrical outlet. The other end is in their hand.
+
+>drop lamp
+Dropped.
+
+>l
+Agent Faraji is in the First Utilitarian Church of Enigma Lake. The interior is dimly lit by the stained glass windows, and the pews are arranged in neat rows facing the pulpit. A standard electrical outlet is set into the wall. To the east is the vestry. You can also take a ladder up to the steeple, or stairs down to the basement. The exit is to the west.
+
+An extension cord lies on the floor, the table lamp plugged into one end and the other end plugged into the electrical outlet.
+
+>out
+The sky is void of stars tonight.
+
+Agent Faraji is walking on Lake Street by the park. Lake Street runs north and south from here. To the west is the park, while to the east is the First Utilitarian Church of Enigma Lake.
+
+>z
+Faraji stands around and waits.
+
+To the south, some shadowy figures come into view from the west, at the intersection of Main and Lake.
+
+>s
+Faraji heads south along Lake Street, towards the center of town.
+
+Agent Faraji is walking on Lake Street by the gym. Lake Street runs north and south from here. To the east is the public gymnasium, while to the west is the town hall, which is not enterable from here.
+
+They see the faint trace of shadowy figures off to the south, at the intersection of Main and Lake.
+
+To the south, the shadowy figures move out of view to the west.
+
+Clouds have gathered over the town.
+
+>s
+Faraji strolls south along Lake Street to where it meets Main.
+
+Agent Faraji is at the intersection of Main and Lake. Main goes west, while Lake runs north. The corner of the town hall is to the northwest, although it cannot be entered there. Southeast is the entrance to WGXC "Galaxy" Radio. There is a broadcast tower on top of the building.
+
+They see the faint trace of shadowy figures off to the west, on the 200 block of Main Street.
+
+To the west, the shadowy figures move west, on the corner of Main and Solvay.
+
+>w
+Walking west on Main Street, Faraji approaches the entrance to the town hall.
+
+Agent Faraji is on 200 block of Main Street. The street runs east and west from here. South is the edifice of Rolle's Department Store. North is the town hall.
+
+They see the faint trace of shadowy figures off to the west, on the corner of Main and Solvay.
+
+To the west, the shadowy figures move out of view to the southwest, from Main and Solvay, into the music store.
+
+>w
+Faraji treads the eerily quiet street westward, encountering a clump of shops.
+
+Agent Faraji is on the corner of Main and Solvay. Main Street runs east from here, while Solvay Road heads north. South of here, Henry's Hot Skillet promises all of the comforts of the mid-twentieth-century diner. A bookstore named The Reading Room lies to the west, while Fresnel's Music is southwest.
+
+>sw
+Needing a little culture, Faraji heads into the music store.
+
+Agent Faraji is in Fresnel's Music. The music store, like most of the town, is empty of all but a few items of little value. The exit is to the northeast.
+
+[It's like John Cage's 4'33" in store form.]
+
+Three humanoid figures are here, each with a long, scaly tail and a head that looks like a lizard's. They are dressed in smart grey suits. They are hissing loudly in what seems to be intelligent communication. One is carrying some kind of shiny metal object.
+
+They notice you and stop talking. One of them steps forward and says in a guttural hiss, "Silly human. You will fail!"
+
+>epistemology
+(to the group of lizard people)
+At your word, the lizard people scream and hiss, creating a strange cloud of thick vapor. When the vapor clears, they are gone, but they have left something behind. There is a strange, shiny, metal object on the ground!
+
+
+>get shiny
+(the strange, shiny, metal object)
+Taken.
+
+>gonear church stairs
+Agent Faraji is in the First Utilitarian Church of Enigma Lake. The interior is dimly lit by the stained glass windows, and the pews are arranged in neat rows facing the pulpit. A standard electrical outlet is set into the wall. To the east is the vestry. You can also take a ladder up to the steeple, or stairs down to the basement. The exit is to the west.
+
+An extension cord lies on the floor, the table lamp plugged into one end and the other end plugged into the electrical outlet.
+
+>i
+Faraji is carrying:
+  a strange, shiny, metal object
+  the Rod of Hezekiah
+  a pair of astral lenses
+  a tuning fork
+  a wooden frame (empty and open)
+  a green smartphone
+
+>x shiny
+(the strange, shiny, metal object)
+A small, shiny, metallic, cylindrical object. One end is capped with a lens, while the other terminates in two shiny metal chains, each with a shiny metal clamp, as if it were designed to be attached to something.
+
+>gonear bookstore
+Which do you mean, Reading Room, the bookstore chairs, the bookstore tables, the bookstore staircase, the Bookstore Basement, the bookstore shelves or the bookstore basement?
+
+>reading
+Agent Faraji is on the corner of Main and Solvay. Main Street runs east from here, while Solvay Road heads north. South of here, Henry's Hot Skillet promises all of the comforts of the mid-twentieth-century diner. A bookstore named The Reading Room lies to the west, while Fresnel's Music is southwest.
+
+>w
+Faraji, hankering for a good book, heads into the bookstore.
+
+Agent Faraji is in the Reading Room. The reading room is a small, cozy space, with a number of comfortable chairs and a few tables. A sales counter is at the back of the room. Bookshelves lead back into the depths of the store. A narrow staircase leads down and the front door is east.
+
+[Look, I'd really love to sit down and read a book, but I've got a phone to answer.]
+
+A brown book lies on the sales counter.
+
+>get brown
+Taken.
+
+>xit
+I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+>x it
+A book with a plain brown cover, titled "Astral Secrets". The author is listed as Jeremiah Horton.
+
+Flipping through the book, Faraji finds a dog-eared page. The page shows a diagram of a small, metallic, cylindrical object, which is labeled "astral resonator". The text describes the resonator as a device for opening a portal through the astral plane. It goes on to describe the components of the device: a source of resonance, a source of light, and an "astral lens", which it declines to describe further. The text also mentions that the resonator is powered by a source of electricity.
+
+>i
+Faraji is carrying:
+  Astral Secrets
+  a shiny astral resonator
+  the Rod of Hezekiah
+  a pair of astral lenses
+  a tuning fork
+  a wooden frame (empty and open)
+  a green smartphone
+
+>gonear church
+Which do you mean, the First Utilitarian Church of Enigma Lake, the First Utilitarian Church of Enigma Lake, the church stairs, the church ladder, the church basement or the Church of Scientology?
+
+>stairs
+Agent Faraji is in the First Utilitarian Church of Enigma Lake. The interior is dimly lit by the stained glass windows, and the pews are arranged in neat rows facing the pulpit. A standard electrical outlet is set into the wall. To the east is the vestry. You can also take a ladder up to the steeple, or stairs down to the basement. The exit is to the west.
+
+An extension cord lies on the floor, the table lamp plugged into one end and the other end plugged into the electrical outlet.
+
+>put lenses in frame
+Faraji puts the pair of astral lenses into the wooden frame.
+
+>shine light on frame
+I only understood you as far as wanting to shine.
+
+>read witnessing
+There's nothing like that nearby.
+
+>gonear hall
+Which do you mean, the field office hallway, the Enigma Lake town hall, the town hall or the hallway?
+
+>lake
+Agent Faraji is in the Enigma Lake town hall. The building has been cleared of furniture and other items ahead of the imminent flooding. A permanent fixture, the information desk sits near the front entrance (to the south). Taped to it is what looks to be a work schedule. There is also a back entrance onto the park to the north.
+
+[Time travel should be accompanied by more fanfare.]
+
+>x desk
+A work schedule is taped to the desk.
+
+On the information desk is a bell.
+
+Faraji finds a backpack behind the information desk and takes it.
+
+>get bell
+Taken.
+
+>gonear church stairs
+Agent Faraji is in the First Utilitarian Church of Enigma Lake. The interior is dimly lit by the stained glass windows, and the pews are arranged in neat rows facing the pulpit. A standard electrical outlet is set into the wall. To the east is the vestry. You can also take a ladder up to the steeple, or stairs down to the basement. The exit is to the west.
+
+An extension cord lies on the floor, the table lamp plugged into one end and the other end plugged into the electrical outlet.
+
+>put bell in frame
+Faraji puts the bell into the wooden frame.
+
+>hit frame with rod
+Faraji taps the wooden frame with the Rod of Hezekiah. Nothing happens.
+
+>ring bell
+Faraji rings the bell. It makes a clear, high-pitched sound.
+
+>hit frame with rod
+Faraji taps the wooden frame with the Rod of Hezekiah. Nothing happens.
+
+>i
+Faraji is carrying:
+  a backpack (closed)
+  Astral Secrets
+  a shiny astral resonator
+  the Rod of Hezekiah
+  a tuning fork
+  a wooden frame (open)
+    a bell
+    a pair of astral lenses
+  a green smartphone
+
+>read secrets
+A book with a plain brown cover, titled "Astral Secrets". The author is listed as Jeremiah Horton.
+
+Flipping through the book, Faraji finds a dog-eared page. The page shows a diagram of a small, metallic, cylindrical object, which is labeled "astral resonator". The text describes the resonator as a device for opening a portal through the astral plane. It goes on to describe the components of the device: a source of resonance, a source of light, and an "astral lens", which it declines to describe further. The text also mentions that the resonator is powered by a source of electricity.
+
+>put fork in frame
+Faraji puts the tuning fork into the wooden frame.
+
+>hit frame with rod
+Faraji taps the wooden frame with the Rod of Hezekiah. Nothing happens.
+
+>hint
+Hints about the following topics are available:
+* computer
+* Margaret Chao
+* Chief Klimp
+* Moira Zin
+* Enigma Lake
+* work schedule
+* backpack
+* get back to BOSH
+* shiny astral resonator
+* extension cord
+* wooden frame
+* open locker
+(Topics in bold have new hints available. The others may have more hints later.)
+To recall hints about a topic, type RECALL <TOPIC>.
+
+>hint frame
+The wooden frame looks like it's meant to hold specific things. But what?
+
+>g
+The wooden frame looks like it's meant to hold specific things. But what?
+
+>hint shiny
+There is no hint for that right now.
+
+>hint
+Hints about the following topics are available:
+* computer
+* Margaret Chao
+* Chief Klimp
+* Moira Zin
+* Enigma Lake
+* work schedule
+* backpack
+* get back to BOSH
+* shiny astral resonator
+* extension cord
+* wooden frame
+* open locker
+(Topics in bold have new hints available. The others may have more hints later.)
+To recall hints about a topic, type RECALL <TOPIC>.
+
+>l
+Agent Faraji is in the First Utilitarian Church of Enigma Lake. The interior is dimly lit by the stained glass windows, and the pews are arranged in neat rows facing the pulpit. A standard electrical outlet is set into the wall. To the east is the vestry. You can also take a ladder up to the steeple, or stairs down to the basement. The exit is to the west.
+
+An extension cord lies on the floor, the table lamp plugged into one end and the other end plugged into the electrical outlet.
+
+>put resonator in frame
+Faraji puts the shiny astral resonator into the wooden frame.
+
+>hit frame
+Faraji taps the wooden frame with the Rod of Hezekiah. Nothing happens.
+
+>put frame on lamp
+Putting things on the table lamp would achieve nothing.
+
+>get bulb
+Faraji unscrews the light bulb from the table lamp.
+
+>put bulb in frame
+Faraji puts the light bulb into the wooden frame.
+
+>hit frame with rod
+Faraji taps the wooden frame with the Rod of Hezekiah. Nothing happens.
+
+>gonear parlor
+(Horton Family House Parlor)
+Agent Faraji is in Horton Family House Parlor. Faraji finds something creepy about this room, as if charged with the residue of strange events long past. Which is very peculiar, considering Faraji doesn't believe in ghosts. Perhaps it's the creepy doll-fly that flew out of here.
+
+The parlor, like the kitchen, still has its furnishings in place. A few chairs and a table are arranged around the room. A strange-looking book is on the table.
+
+The kitchen is to the north.
+
+[What was that thing? Even Klimp wouldn't know.]
+
+>get book
+(The Book of Weird Names)
+Taken.
+
+>n
+Faraji leaves the creepy parlor behind.
+
+Agent Faraji is in Horton Family House Kitchen. The house is a modest colonial-period building. Strangely, the furnishings of the house have been left in place, despite the coming flood. An open hearth is in the center of the room, with a few chairs and a table. The parlor is to the south, and a narrow staircase leads up. To the east the front door leads out to Solvay Road, while another exit leads west to the family graveyard.
+
+Also here is a dowsing rod.
+
+>get rod
+(the dowsing rod)
+Taken.
+
+>i
+Faraji is carrying:
+  a dowsing rod
+  The Book of Weird Names
+  a backpack (closed)
+  Astral Secrets
+  the Rod of Hezekiah
+  a wooden frame (open)
+    a light bulb
+    a shiny astral resonator
+    a tuning fork
+    a bell
+    a pair of astral lenses
+  a green smartphone
+
+>gonear church stairs
+Agent Faraji is in the First Utilitarian Church of Enigma Lake. The interior is dimly lit by the stained glass windows, and the pews are arranged in neat rows facing the pulpit. A standard electrical outlet is set into the wall. To the east is the vestry. You can also take a ladder up to the steeple, or stairs down to the basement. The exit is to the west.
+
+An extension cord lies on the floor, the table lamp plugged into one end and the other end plugged into the electrical outlet.
+
+>gonear graveyard
+Which do you mean, the Horton graveyard or the Horton graveyard?
+
+>horton
+Which do you mean, the Horton graveyard or the Horton graveyard?
+
+>gonear parlor
+(Horton Family House Parlor)
+Agent Faraji is in Horton Family House Parlor. Faraji finds something creepy about this room, as if charged with the residue of strange events long past. Which is very peculiar, considering Faraji doesn't believe in ghosts. Perhaps it's the creepy doll-fly that flew out of here.
+
+The parlor, like the kitchen, still has its furnishings in place. A few chairs and a table are arranged around the room.
+
+The kitchen is to the north.
+
+>n
+Agent Faraji is in Horton Family House Kitchen. The house is a modest colonial-period building. Strangely, the furnishings of the house have been left in place, despite the coming flood. An open hearth is in the center of the room, with a few chairs and a table. The parlor is to the south, and a narrow staircase leads up. To the east the front door leads out to Solvay Road, while another exit leads west to the family graveyard.
+
+>w
+The smell of fresh earth greets Faraji as they step outside.
+
+The clouds obscure the moon.
+
+Agent Faraji is in the Horton graveyard. It is riddled with holes where the bodies have been exhumed for the coming flood. Likewise, the gravestones have been removed, leaving only the holes. The Horton family house is to the east.
+
+A shovel lies on the ground, forgotten.
+
+>get shovel
+Taken.
+
+>in
+What does Faraji want to enter?
+
+>house
+I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+>e
+Faraji steps back into the Horton House.
+
+Agent Faraji is in Horton Family House Kitchen. The house is a modest colonial-period building. Strangely, the furnishings of the house have been left in place, despite the coming flood. An open hearth is in the center of the room, with a few chairs and a table. The parlor is to the south, and a narrow staircase leads up. To the east the front door leads out to Solvay Road, while another exit leads west to the family graveyard.
+
+>u
+Faraji carefully climbs the dubious stairs.
+
+Agent Faraji is in the Second Floor of the Horton House. The second floor is a small, cramped space, with a single window looking out over the front yard. A small bed sits in one corner, while a closed wardrobe stands against a wall. A staircase leads down.
+
+>open wardrobe
+Faraji opens the rickety wardrobe, revealing The Witnessing of Hezekiah.
+
+>get book
+(The Witnessing of Hezekiah)
+Taken.
+
+>d
+Faraji heads back down the shaky stairs.
+
+Agent Faraji is in Horton Family House Kitchen. The house is a modest colonial-period building. Strangely, the furnishings of the house have been left in place, despite the coming flood. An open hearth is in the center of the room, with a few chairs and a table. The parlor is to the south, and a narrow staircase leads up. To the east the front door leads out to Solvay Road, while another exit leads west to the family graveyard.
+
+>gonear fire
+Which do you mean, the fire station, Hook and Ladder Company #1, the warm fireplace or the fire station?
+
+>station
+Which do you mean, the fire station, Hook and Ladder Company #1 or the fire station?
+
+>hook
+What do you want Faraji to hook up?
+
+>gonear hook
+(Hook and Ladder Company #1)
+Agent Faraji is in Hook and Ladder Company #1. The fire station is a modest red brick building dating to the late 19th century. The garage door is to the east. There is a large blue button mounted on the wall.
+
+A ladder rests against the wall.
+
+>get ladder
+(the metal ladder)
+Taken.
+
+>gonear graveyard
+Which do you mean, the Horton graveyard or the Horton graveyard?
+
+>gonear kitchen
+(Horton Family House Kitchen)
+Agent Faraji is in Horton Family House Kitchen. The house is a modest colonial-period building. Strangely, the furnishings of the house have been left in place, despite the coming flood. An open hearth is in the center of the room, with a few chairs and a table. The parlor is to the south, and a narrow staircase leads up. To the east the front door leads out to Solvay Road, while another exit leads west to the family graveyard.
+
+>n
+Faraji can't go that way.
+
+>w
+The sad drizzle soaks Faraji.
+
+Agent Faraji is in the Horton graveyard. It is riddled with holes where the bodies have been exhumed for the coming flood. Likewise, the gravestones have been removed, leaving only the holes. The Horton family house is to the east.
+
+>put ladder in hole
+Faraji sets the ladder up against the side of the hole, making it easier to climb down into the large grave.
+
+>d
+Faraji climbs down the ladder into the large grave.
+
+Agent Faraji is in a large grave. The hole is substantially larger and deeper than the others.
+
+A ladder is set up against the side of the hole, making it easier to climb out of the grave.
+
+>dig
+Faraji tries digging a little bit more, but nothing else turns up.
+
+Faraji shivers in the cold rain.
+
+>i
+Faraji is carrying:
+  The Witnessing of Hezekiah
+  a shovel
+  a dowsing rod
+  The Book of Weird Names
+  a backpack (closed)
+  Astral Secrets
+  the Rod of Hezekiah
+  a wooden frame (open)
+    a light bulb
+    a shiny astral resonator
+    a tuning fork
+    a bell
+    a pair of astral lenses
+  a green smartphone
+
+>read witnessing
+A small, leather-bound book, titled "The Witnessing of Hezekiah: as told to Jeremiah Horton by Hezekiah Horton". The book is filled with strange, cryptic passages, and is difficult to read. Faraji finds one page of particular interest. It reads, "And lo, Hezekiah, in his wisdom, did prophesy of the impending flood and the necessity to make ready. He spoke of a sacred artifact, a resonator, bestowed with divine power, that would unveil a gateway to the ethereal realm. And he revealed the quest to find the lost astral traveler who would guide the faithful out of the coming darkness. Thus spake Hezekiah: 'First form from the wood of the ash tree a frame. Fill it with the sound of the resonant instrument, bathe it in the ghostly light, and bind it to the astral focus. Strike the frame with my Rod to create the astral resonator. Ascend the ladder and channel a mighty power through the resonator, directing it towards the crystal eye. Once thou hast done this, illuminate the eye likewise twice more, and the portal shall open, revealing the path to transcendence.'"
+
+>get bell
+Taken.
+
+>get resonator
+Taken.
+
+>hit frame with fork
+(first taking the tuning fork)
+Violence isn't the answer to this one.
+
+>hit fork
+Faraji strikes the tuning fork. It sounds a pure 440 Hz tone.
+
+The tone resonates with the astral resonator you are carrying.
+
+>hit frame with rod
+Which do you mean, the dowsing rod or the Rod of Hezekiah?
+
+>hezekiah
+Faraji taps the wooden frame with the Rod of Hezekiah. Nothing happens.
+
+>hint
+Hints about the following topics are available:
+* computer
+* Margaret Chao
+* Chief Klimp
+* Moira Zin
+* Enigma Lake
+* work schedule
+* backpack
+* get back to BOSH
+* shiny astral resonator
+* extension cord
+* wooden frame
+* dowsing rod
+* open locker
+(Topics in bold have new hints available. The others may have more hints later.)
+To recall hints about a topic, type RECALL <TOPIC>.
+
+>hint frame
+Perhaps, by "a resonator", Hezekiah means an astral resonator.
+
+>g
+Hezekiah also mentions "the resonant origin", "the ghostly light", and "the astral focus". What might those be?
+
+>g
+Hezekiah also mentions "the resonant origin", "the ghostly light", and "the astral focus". What might those be?
+
+>g
+Hezekiah also mentions "the resonant origin", "the ghostly light", and "the astral focus". What might those be?
+
+>g
+Hezekiah also mentions "the resonant origin", "the ghostly light", and "the astral focus". What might those be?
+
+>hint shiny
+There is no hint for that right now.
+
+>hint dowsing
+A dowsing rod is a tool used to find underground water and other buried things.
+
+>g
+The user holds the rod and walks around until the rod moves.
+
+>g
+Faraji should watch carefully for the rod to vibrate.
+
+>g
+The rod will vibrate on its own when it's over the right spot.
+
+>g
+Faraji should try carrying the dowsing rod around the town.
+
+>g
+Perhaps somewhere in the graveyard.
+
+>g
+Faraji should also try the workshed.
+
+>g
+Faraji should also try the workshed.
+
+>g
+Faraji should also try the workshed.
+
+>gonear shed
+(the workshed)
+Agent Faraji is in the workshed. It is a small, weathered building, with a single door and no windows, and a creaky wooden floor. The interior is almost dark. An empty light socket hangs from the ceiling. A closed cabinet is in the corner. A closed rusty metal door leads out of the shed. 
+
+>open cabinet
+(first unlocking the equipment cabinet)
+Faraji lacks a key that fits the equipment cabinet.
+
+>i
+Faraji is carrying:
+  a tuning fork
+  a shiny astral resonator
+  a bell
+  The Witnessing of Hezekiah
+  a shovel
+  a dowsing rod (vibrating)
+  The Book of Weird Names
+  a backpack (closed)
+  Astral Secrets
+  the Rod of Hezekiah
+  a wooden frame (open)
+    a light bulb
+    a pair of astral lenses
+  a green smartphone
+
+>x dowsing
+The dowsing rod is vibrating.
+
+>dig
+The ground here is not suitable for digging.
+
+>l
+Agent Faraji is in the workshed. It is a small, weathered building, with a single door and no windows, and a creaky wooden floor. The interior is almost dark. An empty light socket hangs from the ceiling. A closed cabinet is in the corner. A closed rusty metal door leads out of the shed. 
+
+>x floor
+Faraji examines the floor closely, and discovers the faint outlines of a trapdoor. The vibrations cease.
+
+>d
+(first opening the trapdoor)
+Agent Faraji is in a hidden cave. The cave is dark and damp, with a low ceiling. A passage leads to the south. A set of rickety stairs leads up to the workshed above.
+
+[Perhaps there's something down here that will help me answer the phone.]
+
+>s
+Faraji heads deeper into the cave.
+
+Agent Faraji is in the dark. Some light would be nice.
+
+>wear lenses
+(first taking the pair of astral lenses)
+That belongs to Chief Klimp.
+
+>get lenses
+That belongs to Chief Klimp.
+
+>l
+Agent Faraji is in the dark. Some light would be nice.
+
+>gonear klimp
+Which do you mean, Klimp is fine, Chief Klimp, where Klimp is, Chief Klimp or Chief Huffton Klimp?
+
+>chief
+Which do you mean, Klimp is fine, Chief Klimp, where Klimp is, Chief Klimp or Chief Huffton Klimp?
+
+>gonear bureau
+Which do you mean, the office, the Bureau photos, The Bureau of Strange Happenings by Philip Riley, the Bureau of Special Help, Bureau of Special Help, the Bureau of Supernatural History, the Bureau of Strange Happenings or the BOSH office?
+
+>office
+Which do you mean, the office or the BOSH office?
+
+>bosh
+Which do you mean, the office or the BOSH office?
+
+>gonear pawn
+Which do you mean, Dave's pawn shop, Dave's pawn shop or Dave's pawn shop?
+
+>gonear laundromat
+Which do you mean, laundromat-region, the A-plus laundromat, the laundromat, laundromat, about the laundromat owner, the laundromat back room, the laundromat desk, the laundromat desk's drawer, the laundromat back door, the laundromat stairs, the laundromat basement or how to enter the laundromat?
+
+>basement
+Agent Faraji is in the laundromat basement. A few boxes of supplies sit here and there in the otherwise empty space. Stairs lead up, while a doorway leads south.
+
+>u
+Faraji climbs the narrow stairs back to the back room.
+
+Agent Faraji is in the laundromat back room. A desk sits in the corner covered with papers. An opening leads east to the laundromat proper, while a steep set of stairs leads down. The back door is to the south.
+
+>e
+Faraji steps into the relative brightness of the front room.
+
+Agent Faraji is in the laundromat. The deserted laundromat is lit by a flickering fluorescent light. The machines are old and worn, but still seemingly functional. An opening leads west to the back room.
+
+Also here is a handtruck.
+
+>w
+Faraji steps back into the shadow of the back room.
+
+Agent Faraji is in the laundromat back room. A desk sits in the corner covered with papers. An opening leads east to the laundromat proper, while a steep set of stairs leads down. The back door is to the south.
+
+>w
+Faraji can't go that way.
+
+>gonear parking
+Which do you mean, the south end of the strip mall parking lot or the north end of the strip mall parking lot?
+
+>south
+Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Enter HELP for instructions.
+
+Their bright red Hyundai Accent is parked nearby.
+
+>n
+Faraji trudges to the other end of the parking lot. It's much like where they left.
+
+Agent Faraji is at the north end of the strip mall parking lot. This end is no more auspicious than the other. A convenience store lies to the east. To the west is a military recruitment center. North of here the parking lot exits onto a busy road. There is a rusty sign by the road naming the shopping center: Park Place. South is BOSH headquarters, among other things.
+
+>s
+Faraji walks back to the south end of the parking lot.
+
+Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Enter HELP for instructions.
+
+Their bright red Hyundai Accent is parked nearby.
+
+>w
+Just like in the store this once was, the door chimes as Faraji walks in.
+
+Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as the BOSH front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Bureau photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
+
+The exit is to the east, while the office continues via a hallway to the west.
+
+The Bureau's latest office manager, Margaret is bustling around with unrestrained enthusiasm, unpacking boxes and assembling an approximation of a respectable front office, all as if the Bureau isn't going to be shut down before the year is out. She sees Faraji and practically squeals. "Agent Faraji! I'm sorry -- Larch! How are you? I hope you don't mind -- I took the liberty of putting your desk together. I just love hex wrenches, don't you? Also, your new phone is here. I put it in your desk. Now I just need you to give me your old phone so I can deactivate it."
+
+"Oh, good", Faraji says. "Our phone downgrades have arrived from our bureaucratic betters."
+
+Faraji hands Margaret their old phone. Margaret taps a few keys on her computer and says "There! All settled."
+
+A phone is ringing to the west.
+
+Faraji can ask about the phone exchange, ask where Klimp is or ask where Moira is.
+
+>w
+Faraji extricates themself from Margaret's clutches.
+
+Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east. Faraji's door is open; Klimp's door and Moira's door are closed.
+
+A phone is ringing to the south.
+
+>s
+Faraji enters their new office full of... is it anticipation or dread?
+
+Agent Faraji is in their office. They pause and survey the scene. It's not much -- four white walls, grey industrial carpet. Margaret has helpfully assembled Faraji's desk and chair, though how sturdily is an open question. She also took the time to put up some of Agent Faraji's office decor -- their degree in Nonstandard Investigative Techniques, an original pencil drawing of the Pitfall snake by semi-acclaimed Washington DC artist Darius 5200, and a photo of their soccer team. At the very least the wall coverings help compensate for the lack of windows. The office door is to the north, and there's a white metal door to the west.
+
+Faraji mutters, "Where's my computer?"
+
+A phone is ringing inside their desk.
+
+>n
+Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east. Faraji's door is open; Klimp's door and Moira's door are closed.
+
+A phone is ringing to the south, in their office.
+
+>e
+With trepidation, Faraji ventures once more into Margaret's domain.
+
+Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as the BOSH front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Bureau photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
+
+The exit is to the east, while the office continues via a hallway to the west.
+
+The Bureau's latest office manager, Margaret is bustling around with unrestrained enthusiasm.
+
+A phone is ringing to the west.
+
+Faraji can ask about the status of the computer, ask about the phone exchange, ask where Klimp is or ask where Moira is.
+
+>ask about phone
+Faraji asks, "Tell me what's going on with the phones again?"
+
+Margaret looks apologetic. "I'm sorry, I thought everyone knew. Budget cuts. They're trading in all our smart phones for cheaper models."
+
+A phone is ringing to the west.
+
+Faraji can ask about the status of the computer, ask where Klimp is or ask where Moira is.
+
+>ask about desk
+Faraji says, "Tell me about the BOSH front desk, Margaret."
+
+"I'm really trying to make do with what we have."
+
+A phone is ringing to the west.
+
+Faraji can ask about the status of the computer, ask where Klimp is or ask where Moira is.
+
+>ask about key
+That doesn't seem to be a topic of conversation at the moment.
+
+Margaret looks dismayed. "I can't believe I forgot to bring my lunch today. I'm going to be starving."
+
+A phone is ringing to the west.
+
+Faraji can ask about the status of the computer, ask where Klimp is or ask where Moira is.
+
+>ask about computer
+"Margaret", they say, "what's up with my computer?"
+
+"Oh, it got busted up during the move. I have it behind my desk -- you can see it if you want. We'll have to get you a new one."
+
+A phone is ringing to the west.
+
+Faraji can ask where Klimp is or ask where Moira is.
+
+>ask about klimp
+They ask, "Margaret, have you seen Klimp this morning?"
+
+She shakes her head. "He hasn't been in yet."
+
+A phone is ringing to the west.
+
+Faraji can ask where Moira is.
+
+>w
+Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east. Faraji's door is open; Klimp's door and Moira's door are closed.
+
+A phone is ringing to the south, in their office.
+
+>n
+(first opening Moira's door)
+(first unlocking Moira's door)
+Faraji lacks a key that fits Moira's door.
+
+A phone is ringing to the south, in their office.
+
+>s
+Agent Faraji is in their office. It's basically four white walls and grey carpet. There's a cheap desk and chair. In lieu of windows, there are a few things on the wall: their degree in Nonstandard Investigative Techniques, a pencil drawing of the Pitfall snake, and a photo of their soccer team. The office door is to the north, and there's a white metal door to the west.
+
+A phone is ringing inside their desk.
+
+>x desk
+The desk is a cheap DIY piece held together with hex screws. It has a single drawer which is closed.
+
+A phone is ringing inside Faraji's desk.
+
+Margaret arrives from the north, carrying a couple of flattened boxes.
+
+>open drawer
+Faraji tries to open the desk to answer the phone, but it seems to be locked. They sigh. "Margaret must have the key."
+
+A phone is ringing inside their desk.
+
+Margaret unlocks the BOSH back door.
+
+>ask about desk
+(addressing Margaret)
+That doesn't seem to be a topic of conversation at the moment.
+
+A phone is ringing inside Faraji's desk.
+
+Margaret opens the BOSH back door.
+
+Margaret goes west.
+
+>z
+Faraji stands around and waits.
+
+A phone is ringing inside their desk.
+
+>z
+Faraji stands around and waits.
+
+A phone is ringing inside their desk.
+
+Margaret arrives from the west.
+
+>ask about key
+(addressing Margaret)
+That doesn't seem to be a topic of conversation at the moment.
+
+A phone is ringing inside Faraji's desk.
+
+Margaret closes the BOSH back door.
+
+Margaret locks the BOSH back door.
+
+Faraji can ask about the desk key or ask where Moira is.
+
+>ask about key
+They say, "Hey Margaret, do you know anything about my desk key?"
+
+"Sure I do -- I put it in your desk." She furrows her brow. "What's the matter?"
+
+A phone is ringing inside their desk.
+
+Margaret goes north.
+
+>n
+Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east. Faraji's door is open; Klimp's door and Moira's door are closed.
+
+Also here is Margaret.
+
+A phone is ringing to the south, in Faraji's office.
+
+Margaret goes east.
+
+>e
+Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as the BOSH front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Bureau photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
+
+The exit is to the east, while the office continues via a hallway to the west.
+
+The Bureau's latest office manager, Margaret is bustling around with unrestrained enthusiasm.
+
+A phone is ringing to the west.
+
+Faraji can ask for the hex wrench, ask about the locked desk or ask where Moira is.
+
+>ask about locked
+They ask, "Margaret, do you know any way to get into my desk?"
+
+"Hmm... take it apart?"
+
+A phone is ringing to the west.
+
+Faraji can ask for the hex wrench or ask where Moira is.
+
+>ask about hex
+They say, "Do you happen to have the hex wrench from putting together my desk?"
+
+"Well, I did, but I dropped it down a heating vent behind my desk."
+
+A phone is ringing to the west.
+
+Faraji can ask where Moira is.
+
+>x vent
+There's nothing like that nearby.
+
+>x desk
+The former sales counter now functions as a desk for the office manager (currently Margaret). Behind it are a number of shelves holding office supplies.
+
+A phone is ringing to the west.
+
+Faraji can ask where Moira is.
+
+>look behind desk
+There are a number of shelves of office supplies behind the desk. There is also a heating vent on the floor here.
+
+Faraji finds their computer and pulls it out.
+
+While unpacking a box of office supplies, Margaret says, "I can't believe how much stuff we have. I don't know where to put it all."
+
+A phone is ringing to the west.
+
+Faraji can ask where Moira is.
+
+>x vent
+A typical air register with a grill which one would hope would stop things like, say, a hex wrench from falling through. It's set in the floor behind the front desk. The vent is held closed by four screws.
+
+In the heating vent is a hex wrench.
+
+A phone is ringing to the west.
+
+Faraji can ask for a screwdriver or ask where Moira is.
+
+>x computer
+Faraji's computer has been damaged beyond repair. But they do find a thumb drive and take it.
+
+A phone is ringing to the west.
+
+Faraji can ask for a screwdriver or ask where Moira is.
+
+>ask about screwdriver
+They ask, "Margaret, where's the screwdriver?"
+
+"Umm... I think it was in a box we had to leave behind." Margaret looks embarrassed. "What? I never thought we'd need it. This isn't a construction site after all. Maybe if Klimp had paid for the bigger UHaul..." She stares past Faraji awkwardly.
+
+Margaret looks at the boxes and says, "I should really take care of these." She takes a couple and flattens them.
+
+A phone is ringing to the west.
+
+Margaret goes west.
+
+>out
+Faraji steps out of the office into the parking lot.
+
+Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Enter HELP for instructions.
+
+Their bright red Hyundai Accent is parked nearby.
+
+>sw
+(first opening the pawn shop door)
+"Cha-ching!" rings the electronic chime as Faraji steps into the store.
+
+Agent Faraji is in Dave's pawn shop. This is more the seedy, gloomy stereotype of a pawn shop than the glitzy sanitized version of TV reality shows. The blinds in the windows are closed to only allow the barest slant of sunlight in, leaving the sickly fluorescent lights to illuminate the room. There is the distinct smell of cigar smoke. The glass counter is filled with a large collection of possibly valuable items. Behind it is an impressive array of firearms.
+
+The exit is northeast.
+
+[I've known public restrooms that had better ambience.]
+
+A man, presumably Dave, stands behind the main counter eyeing Faraji.
+
+Faraji gives the pawn shop owner a curt nod.
+"Hey," Dave says.
+
+The pawn shop door closes.
+
+Faraji can ask for a screwdriver.
+
+>ask about screwdriver
+They lean on the counter and ask, "Do you happen to have a screwdriver I could borrow for a few minutes? I'm from the Bureau office next door."
+
+The man shakes his head and says, "Sorry. I had one, but the guy who runs the laundromat borrowed it and didn't bring it back."
+
+Faraji can ask about the laundromat owner.
+
+>ask about owner
+They say, "How do you suppose I might get in touch with this man who runs the laundromat? I really could use a screwdriver."
+
+"Well, that's a tricky one. Laundromat's been closed for almost two weeks now, since the owner just split for some reason he didn't bother to share. Not likely to get ahold of him. If you're not averse to a little trespassing, though, see if you come across a watch. Another thing he borrowed."
+
+The sound of a car door slamming outside catches Faraji's attention.
+
+Faraji can ask about the watch.
+
+>ask about watch
+They ask, "What's so special about this watch?"
+
+"It's a family heirloom. I'd like to get it back."
+
+>l
+Agent Faraji is in Dave's pawn shop. This is more the seedy, gloomy stereotype of a pawn shop than the glitzy sanitized version of TV reality shows. The blinds in the windows are closed to only allow the barest slant of sunlight in, leaving the sickly fluorescent lights to illuminate the room. There is the distinct smell of cigar smoke. The glass counter is filled with a large collection of possibly valuable items. Behind it is an impressive array of firearms.
+
+The exit is northeast.
+
+A man, presumably Dave, stands behind the main counter eyeing Faraji.
+
+>out
+Once again -- "Cha-ching!" -- as Faraji leaves the store.
+
+Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Enter HELP for instructions.
+
+Klimp's Porsche takes up two spots.
+
+Their bright red Hyundai Accent is parked nearby.
+
+>w
+Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as the BOSH front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Bureau photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
+
+The exit is to the east, while the office continues via a hallway to the west.
+
+Also here is their computer.
+
+A phone is ringing to the west.
+
+Margaret arrives from the west.
+
+Faraji can ask where Moira is.
+
+>w
+Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east. Moira's door is closed; Faraji's door and Klimp's door are open.
+
+A phone is ringing to the south, in their office.
+
+>w
+Faraji takes a deep breath and enters the office of the Chief of BOSH.
+
+Agent Faraji is in the BOSH chief's office. Looks like the Chief has already moved in.
+
+Chief Klimp's office is full of character. Shelves strewn with knick-knacks abut a cozy armchair and a mahogany side table supporting a large globe. A bookcase on the north wall is packed with books on paranormal happenings. Garish prints adorn the remaining wall space.  Under one of these is a modernistic desk of glass and chrome, behind which is a very nice black leather swivel chair. There is a computer on the desk, and to its side is an antique wooden file cabinet. To tell the truth, it's all a bit much, but it matches Klimp's personality perfectly. There is an exit to the east.
+
+[It's like a museum of bad taste.]
+
+Chief Klimp sits behind the desk, his feet up.
+
+Chief Klimp barks, "What's with that ringing? Someone answer it!"
+
+He turns to Faraji and grins. "Larch! Good to see you. What do you think of the new digs? I know, I know, it's a lousy office, I could barely fit all my stuff in here."
+
+Faraji starts to answer, but Klimp interrupts. "Say, you read that new article in the Journal of Kinetic Experimentation on telekinesis? It's fascinating stuff. But seriously, can you do something about that phone, or do I have to ship you off to the Black Knight Satellite?" He chuckles and goes back to his work.
+
+A phone is ringing to the east.
+
+Faraji can ask for a screwdriver.
+
+>ask about screwdriver
+They ask, "Would you happen to have a --"
+
+"Screwdriver you could borrow? No, no, someone stole my screwdriver collection. Probably the Illuminati."
+
+A phone is ringing to the east.
+
+>x shelves
+(the Chief's shelves)
+These shelves sport an array of oddities and memorabilia.
+
+On the Chief's shelves is a juvenile sasquatch skull.
+
+A phone is ringing to the east.
+
+>ask about lenses
+"Chief, what's the deal with these --"
+
+"--glasses? They're astral lenses. Got them at a little shop while I was hunting for the Dover Demon. They let you see into other worlds. Haven't tried them yet. I'm waiting for the right time. The right place. The right world."
+
+A phone is ringing to the east.
+
+>wear lenses
+(first taking the pair of astral lenses)
+That belongs to Chief Klimp.
+
+Klimp jumps up from his chair, looks sheepish, and then sits back down. "Sorry, I was just thinking about Budapest. Scary place. Lots of ghosts. Lots of vampires. Lots of good food."
+
+A phone is ringing to the east.
+
+>ask about lenses
+"Chief, what's the deal with these --"
+
+"--glasses? They're astral lenses. Got them at a little shop while I was hunting for the Dover Demon. They let you see into other worlds. Haven't tried them yet. I'm waiting for the right time. The right place. The right world."
+
+A phone is ringing to the east.
+
+>l
+Agent Faraji is in the BOSH chief's office. Chief Klimp's office is full of character. Shelves strewn with knick-knacks abut a cozy armchair and a mahogany side table supporting a large globe. A bookcase on the north wall is packed with books on paranormal happenings. Garish prints adorn the remaining wall space.  Under one of these is a modernistic desk of glass and chrome, behind which is a very nice black leather swivel chair. There is a computer on the desk, and to its side is an antique wooden file cabinet. To tell the truth, it's all a bit much, but it matches Klimp's personality perfectly. There is an exit to the east.
+
+Chief Klimp sits behind the desk, his feet up.
+
+A phone is ringing to the east.
+
+>x all
+You can't use multiple objects with that verb.
+
+>x shelves
+(the Chief's shelves)
+These shelves sport an array of oddities and memorabilia.
+
+On the Chief's shelves is a juvenile sasquatch skull.
+
+Klimp looks at the door and says, "You ever been to Siberia? They have lots of diners there, believe it or not. Or maybe I was in Pennsylvania. I can't remember."
+
+A phone is ringing to the east.
+
+>x skull
+It looks a bit Neanderthal, actually.
+
+A phone is ringing to the east.
+
+Faraji can ask to borrow the skull.
+
+>ask about skull
+They ask, "Chief, mind if I borrow the skull?"
+
+He looks pained for a moment. "Uh, I'd rather you didn't. It's fragile."
+
+A phone is ringing to the east.
+
+>ask about lenses
+"Chief, what's the deal with these --"
+
+"--glasses? They're astral lenses. Got them at a little shop while I was hunting for the Dover Demon. They let you see into other worlds. Haven't tried them yet. I'm waiting for the right time. The right place. The right world."
+
+A phone is ringing to the east.
+
+>put lenses on shelfl
+There's nothing like that nearby.
+
+>put lenses on sh elf
+There's nothing like that nearby.
+
+>put lenses on shelf
+(the Chief's shelves)
+(first taking the pair of astral lenses)
+That belongs to Chief Klimp.
+
+A phone is ringing to the east.
+
+>give lenses to klimp
+(first taking the pair of astral lenses)
+That belongs to Chief Klimp.
+
+A phone is ringing to the east.
+
+>i
+Faraji is carrying:
+  a thumb drive
+  a tuning fork
+  a shiny astral resonator
+  a bell
+  The Witnessing of Hezekiah
+  a shovel
+  a dowsing rod
+  The Book of Weird Names
+  a backpack (closed)
+  Astral Secrets
+  the Rod of Hezekiah
+  a wooden frame (open)
+    a light bulb
+    a pair of astral lenses
+
+Klimp looks at the clock and says, "I just know Savra's up to something nefarious. I can feel it in my bones. Or maybe that's just the arthritis acting up."
+
+A phone is ringing to the east.
+
+>get lenses
+That belongs to Chief Klimp.
+
+A phone is ringing to the east.
+
+>
