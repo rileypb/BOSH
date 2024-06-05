@@ -431,8 +431,8 @@ Activating the hint-rusty-resonator:
 	deactivate;
 	
 the hint-shiny-resonator is a hint topic. 
-Understand "shiny/astral/resonator" as hint-rusty-resonator when Astral Secrets is read.
-Understand "strange/shiny/metal/metallic/cylindrical/cylinder/object" as hint-rusty-resonator.
+Understand "shiny/astral/resonator" as hint-shiny-resonator when Astral Secrets is read.
+Understand "strange/shiny/metal/metallic/cylindrical/cylinder/object" as hint-shiny-resonator.
 The printed name is "[shiny astral resonator]".
 The progression is {"Has Faraji had a look at the [shiny astral resonator]?", "Is it reminiscent of anything?", "If not, Faraji should look around some more.", "The [shiny astral resonator] has two metal chains, each with a metal clamp. That seems like it might be hooked up somewhere", "Faraji should around for a place to attach something like that.", "Check the roof of the radio station.", "There's a strange platform attached to the tower.", "PUT SHINY RESONATOR ON PLATFORM"}.
 

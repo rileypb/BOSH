@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 34640 words long.
+I've now read your source text, which is 34702 words long.
 
 
 -----------------------------------------------------
@@ -47,7 +47,7 @@ I've also read Can't Touch This by Philip Riley, which is 168 words long.
 I've also read Compound Details by Philip Riley, which is 182 words long.
 I've also read Polish by Philip Riley, which is 89 words long.
 I've also read Hello by Philip Riley, which is 103 words long.
-I've also read BOSH Polish by Philip Riley, which is 8638 words long.
+I've also read BOSH Polish by Philip Riley, which is 8639 words long.
 I've also read New Light by Philip Riley, which is 347 words long.
 I've also read Early Declarations by Philip Riley, which is 21 words long.
 I've also read Basics by Philip Riley, which is 198 words long.
@@ -60,7 +60,7 @@ I've also read Hyperspace by Philip Riley, which is 17133 words long.
 I've also read BOSH Facts by Philip Riley, which is 193 words long.
 I've also read Swamp Park by Philip Riley, which is 8191 words long.
 I've also read Margaret by Philip Riley, which is 2566 words long.
-I've also read Enigma Lake by Philip Riley, which is 30708 words long.
+I've also read Enigma Lake by Philip Riley, which is 32387 words long.
 I've also read I Can Dig It by Philip Riley, which is 77 words long.
 I've also read BOSH Help by Philip Riley, which is 6496 words long.
 I've also read Overlook by Philip Riley, which is 763 words long.
@@ -348,7 +348,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 297 files written as streams.
-CPU time: 1250 centiseconds
+CPU time: 1222 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

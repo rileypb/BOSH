@@ -593,7 +593,6 @@ The Bureau of Strange Happenings is a subject. Understand "BOSH" as The Bureau o
 
 Book 10 - Kinds
 
-
 Book 11 - The Players
 
 To decide whether (actor - a person) is busy with respect to (actor2 - a person):
@@ -817,9 +816,13 @@ After taking apart the desk:
 
 	'No, I'm calling you from the future to get you to try to answer the phone so that you'll end up meeting me so that I'll know to call you from the future. Don't worry about it, it's all timey-wimey. Aaanyway, now that you've answered -- thanks for rescuing Daniels. Also, we need your help with something. [italic type]We need you to save the Dragon[roman type].'
 	";
+	now we won the game is true;
 	end the story saying "Congratulations on answering the phone!";
 
-After printing the player's obituary:
+
+we won the game is a truth state that varies.
+
+After printing the player's obituary when we won the game is true:
 	say "[bold type]Larch Faraji will return in 'BOSH II: Mazes'.[roman type][paragraph break]";
 	say "[italic type][bracket]No, not that kind of maze.[close bracket][roman type]";
 
@@ -976,6 +979,15 @@ The blue dumpster is scenery in the back lot. "An everyday blue dumpster, about 
 
 Check entering the blue dumpster:
 	say "[We] [are] not yet to the point of dumpster diving." instead;
+
+Climbing up is an action applying to one thing. Understand "climb up/-- [something]" as climbing up.
+Understand "climb" as climbing up.
+
+Rule for supplying a missing noun while climbing up:
+	if the metal ladder is touchable:
+		now the noun is the metal ladder;
+	if the metal ladder is in the large grave and the location is the horton graveyard:
+		now the noun is the metal ladder;
 	
 Climbing into is an action applying to one thing. Understand "climb in/into [thing]" as climbing into.
 
@@ -2069,7 +2081,7 @@ money	Moira Zin	"'Moira, do you have any money so I can buy a screwdriver, so I 
 thumb drive	Chief Huffton Klimp	"'Chief, what do --'"	"'I think about that thumb drive? It looks like a perfectly ordinary thumb drive. Except for the directions to Atlantis scratched on the side.'"
 strange piece of paper	Chief Huffton Klimp	"'Chief, what do you think about this --'"	"'-- [']Save the Dragon['], eh? Nope, never heard of it. You should probably forget about it. I'm sure Doris doesn't know anything about it either.'"
 Klimp's computer	Chief Huffton Klimp	"'Chief, my computer got -- '"	"'-- all smashed up? Yeah, I saw that. Terrible thing. Terrible thing. I'll get to it just as soon as someone [italic type]answers the phone[roman type]!'"
-cabinet key	Chief Huffton Klimp	"'Chief, do you have --'"	"'-- a key to the file cabinet? Well, sure, I have a key. But no one can see what's inside that file cabinet. Not even Peter Tork.'"
+file cabinet key	Chief Huffton Klimp	"'Chief, do you have --'"	"'-- a key to the file cabinet? Well, sure, I have a key. But no one can see what's inside that file cabinet. Not even Peter Tork.'"
 Peter Tork	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- Peter Tork? Most people don't know that he was a once was part of a love triangle with Yoko Ono and Marlo Thomas. That was before he broke up the Monkees with his slavish insistence on artistic integrity.'"
 Peter Tork	Moira Zin	"'Moira, what do you know about Peter Tork?'"	"'Peter Tork was an American musician and actor who was best known as a member of the Monkees. He was also a talented multi-instrumentalist and songwriter. There is no scientific evidence to support the idea that he was involved in a love triangle with Yoko Ono and Marlo Thomas.'"
 Peter Tork	Margaret	"'Margaret, what do you know about Peter Tork?'"	"'He was the guy in the Monkees who married Yoko Ono, right?'"
@@ -2451,7 +2463,7 @@ DEBUG is false.
 SKIP_PROLOGUE is false;
 
 AUDIT is a truth state that varies.
-AUDIT is false.
+AUDIT is true.
 
 To decide what text is the wall description of (R - a room):
 	let result be "";
@@ -2487,13 +2499,15 @@ To decide what text is the transition description of (R - a room) from (S - a ro
 
 When play begins:
 	if AUDIT is true:
-		repeat with X running through things:
+		repeat with R running through rooms:
+			say "[R].";
+		[ repeat with X running through things:
 			if X is not a subject and X is not a hint topic and X is not a quip:
 				say X;
 				lb;
 		repeat with X running through rooms:
 			say X;
-			lb;
+			lb; ]
 		[ say ">>> NO Snarky Remarks <<<[line break]";
 		repeat with X running through snarkable rooms:
 			if the snarky remark of X is "":

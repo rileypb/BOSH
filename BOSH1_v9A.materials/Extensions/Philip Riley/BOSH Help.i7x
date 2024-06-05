@@ -340,7 +340,7 @@ The tutorial message is "[if the location is the garden]You can go through the d
 Instead of opening the garden door when the garden door is locked:
 	say "The door is locked. You can try to UNLOCK the door if you have the right key.";
 
-The living room key is a thing. The description is "A small brass key." Understand "small/brass" as the living room key.
+The living room key is a key. The description is "A small brass key." Understand "small/brass" as the living room key.
 
 The brass handle is part of the garden door. The description is "The handle is made of brass."
 

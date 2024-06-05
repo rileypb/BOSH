@@ -293,7 +293,7 @@ Old Root Cellar	{north}	"Faraji is heading into the north passage when Daniels c
 Table of Frustrated Taking (continued)
 target (a thing)	message (a text)	move message (a text)
 stacks of crates	"Those are too heavy to take."	"Those are too heavy to move unaided."
-membership book	"[We] hardly [need] it, and it might useful to someone else."	"What's the point?"
+membership book	"[We] hardly [need] it, and it might be useful to someone else."	"What's the point?"
 adornment	"[We] would have to scale the obelisk to get it."	"[We] would have to scale the obelisk to get to it."
 floor waxer	"It's too heavy to lift."	"[We] [push] it around a little while -- whee! (in a kind of really slow way.)"
 abandoned pickup truck	"It's too heavy to lift."	"[We] can't get the truck out of park without the keys."

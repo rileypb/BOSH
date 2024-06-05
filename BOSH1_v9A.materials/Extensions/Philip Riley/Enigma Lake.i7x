@@ -332,8 +332,6 @@ Instead of examining the adornment:
 	otherwise:
 		say "From what [we] can make out, it's a clear crystal held aloft by some kind of metal fitting.";
 
-Climbing up is an action applying to one thing. Understand "climb up/-- [something]" as climbing up.
-
 Check climbing up:
 	say "[We] can't climb that." instead;
 	
@@ -1749,7 +1747,7 @@ The x-coordinate of Horton Family House Kitchen is -2. The y-coordinate of Horto
 
 The furnishings are scenery in Horton Family House Kitchen. "A few chairs and a table are arranged around the room."
 
-The open hearth is scenery in Horton Family House Kitchen. "The hearth is a simple, open fireplace, with a few logs stacked beside it."
+The open hearth is scenery in Horton Family House Kitchen. "The hearth is a simple, open fireplace, with a few logs stacked beside it." Understand "fireplace" as the open hearth.
 
 The kitchen chairs are enterable scenery supporters in Horton Family House Kitchen. "A few chairs are arranged around the room."
 Understand "chair" as kitchen chairs.
@@ -1902,7 +1900,7 @@ The second floor window is scenery in the Second Floor of the Horton House. "A s
 
 The front yard is scenery in the Second Floor of the Horton House. "The front yard, visible through the window, is a small rectangle of grass along Solvay Road."
 
-The small bed is an enterable scenery supporter in the Second Floor of the Horton House. "A small bed sits in one corner. It's a rope bed, with a thin straw mattress."
+The small bed is an enterable scenery supporter in the Second Floor of the Horton House. "A small bed sits in one corner. It's a rope bed, with a thin straw mattress." Understand "rope" as the small bed.
 
 reclining on is an action applying to one thing. Understand "lie on [something]" as reclining on.
 
@@ -1961,7 +1959,7 @@ Instead of entering the neatly-dug holes:
 	say "(the large hole)[command clarification break]";
 	try entering the large dirt hole;
 
-The large dirt hole is a building facade. It is in Horton Graveyard. It is privately-named. Understand "large/larger/deep/deeper hole", "hole/grave" as large dirt hole. "The hole is substantially larger and deeper than the others[if the metal ladder is in the large grave]. A ladder is set up against the side of the hole[end if]."
+The large dirt hole is a building facade. It is in Horton Graveyard. It is privately-named. Understand "large/larger/deep/deeper/hole", "hole/grave" as large dirt hole. "The hole is substantially larger and deeper than the others[if the metal ladder is in the large grave]. A ladder is set up against the side of the hole[end if]."
 	It fronts a large grave.
 	It is enterable from Horton Graveyard.
 
@@ -2074,7 +2072,280 @@ Understand "hook/and/ladder/company/#1" as Fire Station 1.
 
 The x-coordinate of the Fire Station 1 is -2. The y-coordinate of the Fire Station 1 is 0.
 
-The metal ladder is in Fire Station 1. "A ladder rests against the wall." The description is "A wooden ladder, about 6 feet long. It looks sturdy and well-maintained."
+The metal ladder is in Fire Station 1. "A ladder rests against the wall." The description is "A metal ladder, about 6 feet long. It looks sturdy and well-maintained."
+
+Part 1 - Stupid ladder tricks
+
+Rule for writing a paragraph about the metal ladder:
+	if the location is:
+		-- featureless hyperplane:
+			if the Ethereal Pillar is in the featureless hyperplane:
+				say "A ladder is set up against the side of the pillar, making it easier to climb up and down.";
+			otherwise:
+				say "A ladder rests on the 'ground'.";
+		-- field office reception:
+			say "A ladder rests against the wall.";
+		-- field office hallway:
+			say "A ladder rests against the wall.";
+		-- Minerva's office:
+			say "A ladder rests against the wall.";
+		-- field office chief's office:
+			say "A ladder rests against the wall.";
+		-- Christy's office:
+			say "A ladder rests against the wall.";
+		-- Portal Room 1:
+			say "A ladder leans against the portal arch.";
+		-- Portal Room 2:
+			say "A ladder leans against the portal arch.";
+		-- Strip Mall Parking Lot South:
+			say "A ladder lies on the asphalt.";
+		-- front office:
+			say "A ladder rests against the wall.";
+		-- laundromat:
+			say "A ladder leans against a nearby dryer.";
+		-- Dave's pawn shop:
+			say "A ladder leans against the front counter.";
+		-- Strip Mall Parking Lot North:
+			say "A ladder lies on the asphalt.";
+		-- astral-tunnel-1:
+			say "A ladder rests against the 'wall'.";
+		-- astral-tunnel-2:
+			say "A ladder rests against the 'wall'.";
+		-- astral-tunnel-3:
+			say "A ladder rests against the 'wall'.";
+		-- back lot:
+			say "A ladder leans against the dumpster.";
+		-- laundromat back room:
+			say "A ladder leans against the wall.";
+		-- laundromat basement:
+			say "A ladder leans against the wall.";
+		-- back basement:
+			say "A ladder leans against the wall.";
+		-- Li'l Nectarine Convenience Store:
+			say "A ladder leans against a shelf.";
+		-- Enigma Lake town hall:
+			say "A ladder lies on the polished wooden floor.";
+		-- Main Street 200 block:
+			say "A ladder lies on the pavement.";
+		-- Main at Solvay:
+			say "A ladder lies on the pavement.";
+		-- Solvay Road leading out of town:
+			say "A ladder lies on the pavement.";
+		-- Solvay Road 100 block:
+			say "A ladder lies on the pavement.";
+		-- Enigma Park:
+			say "A ladder leans up against the obelisk. It is not tall enough to reach the top.";
+		-- Lake Street by the park:
+			say "A ladder lies on the pavement.";
+		-- Lake Street by the gym:
+			say "A ladder lies on the pavement.";
+		-- Main at Lake:
+			say "A ladder lies on the pavement.";
+		-- Lake shore north of the park:
+			say "A ladder leans up against the workshed.";
+		-- Rolle's department store:
+			say "A ladder leans against the wall.";
+		-- Henry's Hot Skillet:
+			say "A ladder leans against the lunch counter.";
+		-- Reading Room:
+			say "A ladder leans against a bookshelf.";
+		-- Fresnel's Music:
+			say "A ladder leans against the counter.";
+		-- Horton Family House Kitchen:
+			say "A ladder leans against the wall.";
+		-- Solvay-Road-by-the-lake:
+			say "A ladder lies on the pavement.";
+		-- Lake Shore west:
+			say "A ladder rests on the sand.";
+		-- Lake at Ridge:
+			say "A ladder leans against the pickup truck.";
+		-- dirty shack:
+			say "A ladder lies on the floor.";
+		-- Radio Station WGXC:
+			say "A ladder lies on the terrazzo floor.";
+		-- radio station roof:
+			say "A ladder leans against the broadcast tower.";
+		-- public gymnasium:
+			say "A ladder lies on the wooden floor.";
+		-- First Utilitarian Church of Enigma Lake:
+			say "A ladder leans against the wall.";
+		-- vestry: 
+			say "A ladder leans against the wall.";
+		-- church basement:
+			say "A ladder leans against the wall.";
+		-- steeple:
+			say "A ladder rests against a wall.";
+		-- workshed:
+			say "A ladder leans against the wall.";
+		-- hidden cave:
+			say "A ladder leans against the wall.";
+		-- circular chamber:
+			say "A ladder leans against the wall.";
+		-- old root cellar:
+			say "A ladder lies on the dirt floor.";
+		-- Horton Family House Parlor:
+			say "A ladder leans against the wall.";
+		-- Second Floor of the Horton House:
+			say "A ladder leans against the wall.";
+		-- Horton astral tunnel:
+			say "A ladder leans against the 'wall'.";
+		-- Fire Station 1:
+			say "A ladder rests against the wall.";
+		-- Horton graveyard:
+			say "A ladder lies on the ground.";
+		-- large grave:
+		 	stop;
+		-- Bookstore Basement:
+			say "A ladder leans against the wall.";
+		-- sewer tunnel 1:
+			say "A ladder leans against the wall.";
+		-- sewer tunnel 2:
+			say "A ladder leans against the wall.";
+		-- sewer tunnel 3:
+			say "A ladder leans against the wall.";
+		-- astral-tunnel-elr:
+			say "A ladder rests against the 'wall'.";
+		-- gym basement:
+			say "A ladder leans against the wall.";
+		-- Henry's roof:
+			say "A ladder lies on the roof.";
+		-- Biff's Office:
+			say "A ladder leans against the wall.";
+		-- dumpster:
+			say "A ladder leans against the wall of the dumpster.";
+		-- BOSH office hallway:
+			say "A ladder leans against the wall.";
+		-- BOSH chief's office:
+			say "A ladder leans against the wall.";	
+		-- Moira's office:
+			say "A ladder leans against the wall.";
+		-- utility closet:
+			say "A ladder leans against the wall, making this cramped space even more so.";
+		-- otherwise:
+			say "A ladder lies on the [if location is inside]floor[otherwise]ground[end if].";
+
+Instead of climbing up the metal ladder when the metal ladder is enclosed by the location and the player does not enclose the ladder:
+	if the metal ladder is enclosed by the player:
+		say "Try as they might, Faraji is unable to climb the ladder while carrying it.";
+		stop;
+	if the location is:
+		-- featureless hyperplane:
+			if the Ethereal Pillar is in the featureless hyperplane:
+				say "Faraji climbs up the ladder to the top of the pillar. The view is much the same as it was from the ground.";
+			otherwise:
+				say "Faraji cannot climb the ladder while it lies on the 'ground'.";
+		-- field office reception:
+			say "Maggie turns and stares at Faraji as they attempt to climb the ladder. Faraji, suddenly self-conscious, climbs back down.";
+		-- field office hallway:
+			say "There's not much room overhead here.";
+		-- Minerva's office:
+			say "Minerva watches Faraji with a curious expression as they attempt to climb the ladder. Faraji climbs back down.";
+		-- field office chief's office:
+			say "Doris exclaims, 'No, no! We have a strict 'no climbing' policy here!' Faraji climbs back down.";
+		-- Christy's office:
+			say "Christy gives Faraji a dubious look as they attempt to climb the ladder. Faraji climbs back down.";
+		-- Portal Room 1:
+			say "The ladder slips as Faraji tries to climb it, propelling them through the portal.";
+			try entering the portal to the past;
+		-- Portal Room 2:
+			say "The ladder slips as Faraji tries to climb it, propelling them through the portal.";
+			try entering the auxiliary portal;
+		-- front office:
+			say "Margaret looks at Faraji incredulously. 'Larch?' she says, 'Are you okay?' Faraji climbs back down.";
+		-- Dave's pawn shop:
+			say "Dave gives Faraji a sharp look. 'Cut that out or I'll have to ask you to leave,' he says. Faraji climbs back down.";
+		-- astral-tunnel-1:
+			say "Well, that was fun.";
+		-- astral-tunnel-2:
+			say "Well, that was fun.";
+		-- astral-tunnel-3:
+			say "Well, that was fun.";
+		-- back lot:
+			say "Faraji climbs up the ladder and peers into the dumpster. It's full of cardboard, mostly. Faraji climbs back down.";
+		-- laundromat back room:
+			say "Well, that was fun.";
+		-- laundromat basement:
+			say "Well, that was fun.";
+		-- back basement:
+			say "Well, that was fun.";
+		-- Li'l Nectarine Convenience Store:
+			say "The clerk looks at Faraji with a puzzled expression. 'Um,' he says. Faraji climbs back down.";
+		-- Enigma Lake town hall:
+			say "Well, that was fun.";
+		-- Enigma Park:
+			say "Faraji climbs up the ladder and looks out over the park. It's a nice view. Unfortunately, they cannot reach the ornament at the top. Faraji climbs back down.";
+		-- Lake shore north of the park:
+			say "Faraji climbs up the ladder onto the workshed roof. Unfortunately, the roof is not sturdy enough to accomodate them. The roof collapses, and Faraji falls into the shed below. The floor gives way as they land, and they fall through it onto a surface hard enough to cause major injury.";
+			end the story saying "Faraji has died.";
+		-- Rolle's department store:
+			say "Well, that was fun.";
+		-- Henry's Hot Skillet:
+			say "Well, that was fun.";
+		-- Reading Room:
+			say "Well, that was fun.";
+		-- Fresnel's Music:
+			say "Well, that was fun.";
+		-- Horton Family House Kitchen:
+			say "Well, that was fun.";
+		-- Lake at Ridge:
+			say "Well, that was fun.";
+		-- radio station roof:
+			say "Faraji climbs up the ladder. The view of the lake is nice. Faraji climbs back down.";
+		-- First Utilitarian Church of Enigma Lake:
+			say "Well, that was fun.";
+		-- vestry: 
+			say "Well, that was fun.";
+		-- church basement:
+			say "Well, that was fun.";
+		-- steeple:
+			say "Well, that was fun.";
+		-- workshed:
+			say "Well, that was fun.";
+		-- hidden cave:
+			say "A ladder leans against the wall.";
+		-- circular chamber:
+			say "Well, that was fun.";
+		-- Horton Family House Parlor:
+			say "Well, that was fun.";
+		-- Second Floor of the Horton House:
+			say "Well, that was fun.";
+		-- Horton astral tunnel:
+			say "Well, that was fun.";
+		-- Fire Station 1:
+			say "Well, that was fun.";
+		-- large grave:
+		 	try going up instead;
+		-- Bookstore Basement:
+			say "Well, that was fun.";
+		-- sewer tunnel 1:
+			say "Well, that was fun.";
+		-- sewer tunnel 2:
+			say "Well, that was fun.";
+		-- sewer tunnel 3:
+			say "Well, that was fun.";
+		-- astral-tunnel-elr:
+			say "Well, that was fun.";
+		-- gym basement:
+			say "Well, that was fun.";
+		-- Biff's Office:
+			say "Well, that was fun.";
+		-- dumpster:
+			try going up instead;
+		-- BOSH office hallway:
+			say "Well, that was fun.";
+		-- BOSH chief's office:
+			say "Klimp barks 'No climbing!' Faraji climbs back down.";	
+		-- Moira's office:
+			say "Moira looks strangely at Faraji. 'What are you doing?' she asks. Faraji climbs back down.";
+		-- utility closet:
+			say "There's not enough room for that.";
+		-- otherwise:
+			say "Faraji can't climb the ladder when its lying on the [if location is inside]floor[otherwise]ground[end if].";
+
+Instead of climbing up the metal ladder when the metal ladder is in the large grave and the location is the horton graveyard:
+	try going down;
+
+Part 2 - Other stuff
 
 The spotlight is a thing. The description is "A small spotlight, designed to be hand-held. On the side is the branding 'Spectre'. The light has a short cord ending in a standard North American 120V AC plug." It is pluggable.
 
