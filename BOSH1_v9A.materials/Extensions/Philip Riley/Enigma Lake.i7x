@@ -186,9 +186,9 @@ Instead of examining the makeshift astral resonator:
 
 
 
-Description notes for the makeshift astral resonator:
+[ Description notes for the makeshift astral resonator:
 	if the makeshift astral resonator is powered:
-		add "providing light" to descriptive notes;
+		add "providing light" to descriptive notes; ]
 
 The wristwatch is a thing. Understand "watch" as the wristwatch. The description is "A simple wristwatch. The initials 'DM' are engraved on the back."
 Understand "DM" as the wristwatch.
@@ -2987,6 +2987,13 @@ For device updating the makeshift astral resonator:
 			now the makeshift astral resonator is lit;
 			add the makeshift astral resonator to changed things;
 
+For state change reporting the makeshift astral resonator:
+	if the makeshift astral resonator is lit:
+		if the makeshift astral resonator is visible:
+			puts "The makeshift astral resonator is now lit.[line break]";
+	otherwise:
+		if the makeshift astral resonator is visible:
+			puts "The makeshift astral resonator is now unlit.[line break]";
 
 
 For device updating the table lamp:

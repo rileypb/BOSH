@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 34702 words long.
+I've now read your source text, which is 34722 words long.
 
 
 -----------------------------------------------------
@@ -60,7 +60,7 @@ I've also read Hyperspace by Philip Riley, which is 17133 words long.
 I've also read BOSH Facts by Philip Riley, which is 193 words long.
 I've also read Swamp Park by Philip Riley, which is 8191 words long.
 I've also read Margaret by Philip Riley, which is 2566 words long.
-I've also read Enigma Lake by Philip Riley, which is 33358 words long.
+I've also read Enigma Lake by Philip Riley, which is 33389 words long.
 I've also read I Can Dig It by Philip Riley, which is 77 words long.
 I've also read BOSH Help by Philip Riley, which is 6496 words long.
 I've also read Overlook by Philip Riley, which is 763 words long.
@@ -86,7 +86,7 @@ I've also read Secret Doors by Gavin Lambert, which is 272 words long.
 I've also read Plugging by Philip Riley, which is 791 words long.
 I've also read Books by Philip Riley, which is 2480 words long.
 I've also read Container Types by Philip Riley, which is 55 words long.
-I've also read Extension Cord by Philip Riley, which is 3629 words long.
+I've also read Extension Cord by Philip Riley, which is 3709 words long.
 I've also read State Update by Philip Riley, which is 462 words long.
 I've also read Hints by Philip Riley, which is 849 words long.
 I've also read Two-Sided Doors by Philip Riley, which is 2270 words long.
@@ -348,7 +348,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 297 files written as streams.
-CPU time: 1211 centiseconds
+CPU time: 1168 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

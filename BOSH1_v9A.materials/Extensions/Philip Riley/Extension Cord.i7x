@@ -25,11 +25,29 @@ Does the player mean unplugging the plug-end:
 Does the player mean plugging something into the plug-end:
 	it is very unlikely;
 
+Does the player mean plugging the plug-end into something:
+	it is very likely;
+
 Does the player mean plugging the socket-end into something:
+	it is very unlikely;
+
+Does the player mean plugging the plug-end into the electrical outlet:
+	it is very likely;
+
+Does the player mean plugging the socket-end into the electrical outlet:
+	it is very unlikely;
+
+Does the player mean plugging the plug-end into:
+	it is very likely;
+
+Does the player mean plugging the socket-end into:
 	it is very unlikely;
 
 Does the player mean unplugging something pluggable:
 	it is very likely;
+
+Does the player mean plugging something into the walls:
+	it is very unlikely;
 
 Before printing the locale description:
 	if the player encloses the plug-end and the socket-end is not enclosed by the location:

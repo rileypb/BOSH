@@ -791,7 +791,7 @@ Which do you mean, the south end of the strip mall parking lot or the north end 
 Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
 
 Enter HELP for instructions.
-
+<<<<
 Their bright red Hyundai Accent is parked nearby.
 
 >n
