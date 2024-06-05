@@ -1335,7 +1335,7 @@ Instead of inserting something into the tripod:
 Instead of putting something on the tripod:
 	try mounting the noun on the tripod;
 
-The steeple-obelisk-facade is a backdrop. It is in the steeple. Understand "obelisk/enigma/park/crystal/adornment" as steeple-obelisk-facade. "The obelisk in the park is clearly visible from here."
+The steeple-obelisk-facade is a backdrop. It is privately-named. The printed name is "obelisk". It is in the steeple. Understand "obelisk/enigma/park/crystal/adornment" as steeple-obelisk-facade. "The obelisk in the park is clearly visible from here."
 
 To decide if mounted-makeshift-resonator:
 	if the content of the tripod is the makeshift astral resonator and the makeshift astral resonator is powered:
@@ -2075,6 +2075,155 @@ The x-coordinate of the Fire Station 1 is -2. The y-coordinate of the Fire Stati
 The metal ladder is in Fire Station 1. "A ladder rests against the wall." The description is "A metal ladder, about 6 feet long. It looks sturdy and well-maintained."
 
 Part 1 - Stupid ladder tricks
+
+After dropping the metal ladder:
+	if the location is:
+		-- featureless hyperplane:
+			if the Ethereal Pillar is in the featureless hyperplane:
+				say "Faraji sets the ladder up against the pillar.";
+			otherwise:
+				say "Faraji lies the ladder on the 'ground'.";
+		-- field office reception:
+			say "Faraji leans the ladder against the wall.";
+		-- field office hallway:
+			say "Faraji leans the ladder against the wall.";
+		-- Minerva's office:
+			say "Faraji leans the ladder against the wall.";
+		-- field office chief's office:
+			say "Faraji leans the ladder against the wall.";
+		-- Christy's office:
+			say "Faraji leans the ladder against the wall.";
+		-- Portal Room 1:
+			say "Faraji leans the ladder against the portal arch.";
+		-- Portal Room 2:
+			say "Faraji leans the ladder against the portal arch.";
+		-- Strip Mall Parking Lot South:
+			say "Faraji lays the ladder on the asphalt.";
+		-- front office:
+			say "Faraji leans the ladder against the wall.";
+		-- laundromat:
+			say "Faraji leans the ladder against a nearby dryer.";
+		-- Dave's pawn shop:
+			say "Faraji leans the ladder against the front counter.";
+		-- Strip Mall Parking Lot North:
+			say "Faraji lays the ladder on the asphalt.";
+		-- astral-tunnel-1:
+			say "Faraji leans the ladder against the 'wall'.";
+		-- astral-tunnel-2:
+			say "Faraji leans the ladder against the 'wall'.";
+		-- astral-tunnel-3:
+			say "Faraji leans the ladder against the 'wall'.";
+		-- back lot:
+			say "Faraji leans the ladder against the dumpster.";
+		-- laundromat back room:
+			say "Faraji leans the ladder against the wall.";
+		-- laundromat basement:
+			say "Faraji leans the ladder against the wall.";
+		-- back basement:
+			say "Faraji leans the ladder against the wall.";
+		-- Li'l Nectarine Convenience Store:
+			say "Faraji leans the ladder against a shelf.";
+		-- Enigma Lake town hall:
+			say "Faraji places the ladder on the polished wooden floor.";
+		-- Main Street 200 block:
+			say "Faraji lays the ladder on the pavement.";
+		-- Main at Solvay:
+			say "Faraji lays the ladder on the pavement.";
+		-- Solvay Road leading out of town:
+			say "Faraji lays the ladder on the pavement.";
+		-- Solvay Road 100 block:
+			say "Faraji lays the ladder on the pavement.";
+		-- Enigma Park:
+			say "Faraji leans the ladder against the obelisk.";
+		-- Lake Street by the park:
+			say "Faraji lays the ladder on the pavement.";
+		-- Lake Street by the gym:
+			say "Faraji lays the ladder on the pavement.";
+		-- Main at Lake:
+			say "Faraji lays the ladder on the pavement.";
+		-- Lake shore north of the park:
+			say "Faraji leans the ladder up against the workshed.";
+		-- Rolle's department store:
+			say "Faraji leans the ladder against the wall.";
+		-- Henry's Hot Skillet:
+			say "Faraji leans the ladder against the lunch counter.";
+		-- Reading Room:
+			say "Faraji leans the ladder against a bookshelf.";
+		-- Fresnel's Music:
+			say "Faraji leans the ladder against the counter.";
+		-- Horton Family House Kitchen:
+			say "Faraji leans the ladder against the wall.";
+		-- Solvay-Road-by-the-lake:
+			say "Faraji lays the ladder on the pavement.";
+		-- Lake Shore west:
+			say "Faraji lays the ladder on the sand.";
+		-- Lake at Ridge:
+			say "Faraji leans the ladder against the pickup truck.";
+		-- dirty shack:
+			say "Faraji lays the ladder on the floor.";
+		-- Radio Station WGXC:
+			say "Faraji lays the ladder on the terrazzo floor.";
+		-- radio station roof:
+			say "Faraji leans the ladder against the broadcast tower.";
+		-- public gymnasium:
+			say "Faraji lays the ladder on the wooden floor.";
+		-- First Utilitarian Church of Enigma Lake:
+			say "Faraji leans the ladder against the wall.";
+		-- vestry: 
+			say "Faraji leans the ladder against the wall.";
+		-- church basement:
+			say "Faraji leans the ladder against the wall.";
+		-- steeple:
+			say "Faraji leans the ladder against the wall.";
+		-- workshed:
+			say "Faraji leans the ladder against the wall.";
+		-- hidden cave:
+			say "Faraji leans the ladder against the wall.";
+		-- circular chamber:
+			say "Faraji leans the ladder against the wall.";
+		-- old root cellar:
+			say "Faraji lays the ladder on the dirt floor.";
+		-- Horton Family House Parlor:
+			say "Faraji leans the ladder against the wall.";
+		-- Second Floor of the Horton House:
+			say "Faraji leans the ladder against the wall.";
+		-- Horton astral tunnel:
+			say "Faraji leans the ladder against the wall.";
+		-- Fire Station 1:
+			say "Faraji leans the ladder against the wall.";
+		-- Horton graveyard:
+			say "Faraji lays the ladder on the ground.";
+		-- large grave:
+		 	say "Faraji sets the ladder up against the side of the hole, making it easier to climb out of the large grave.";
+		-- Bookstore Basement:
+			say "Faraji leans the ladder against the wall.";
+		-- sewer tunnel 1:
+			say "Faraji leans the ladder against the wall.";
+		-- sewer tunnel 2:
+			say "Faraji leans the ladder against the wall.";
+		-- sewer tunnel 3:
+			say "Faraji leans the ladder against the wall.";
+		-- astral-tunnel-elr:
+			say "Faraji leans the ladder against the wall.";
+		-- gym basement:
+			say "Faraji leans the ladder against the wall.";
+		-- Henry's roof:
+			say "Faraji lays the ladder on the roof.";
+		-- Biff's Office:
+			say "Faraji leans the ladder against the wall.";
+		-- dumpster:
+			say "Faraji leans the ladder against the wall of the dumpster.";
+		-- BOSH office hallway:
+			say "Faraji leans the ladder against the wall.";
+		-- BOSH chief's office:
+			say "Faraji leans the ladder against the wall.";
+		-- Moira's office:
+			say "Faraji leans the ladder against the wall.";
+		-- utility closet:
+			say "Faraji leans the ladder against the wall.";
+		-- otherwise:
+			say "Faraji lays the ladder on the [if the location is indoors]floor[otherwise]ground[end if].";
+
 
 Rule for writing a paragraph about the metal ladder:
 	if the location is:
