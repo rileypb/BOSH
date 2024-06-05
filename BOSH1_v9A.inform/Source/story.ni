@@ -2463,7 +2463,7 @@ DEBUG is false.
 SKIP_PROLOGUE is false;
 
 AUDIT is a truth state that varies.
-AUDIT is true.
+AUDIT is false.
 
 To decide what text is the wall description of (R - a room):
 	let result be "";
@@ -2608,6 +2608,7 @@ Carry out jumping to part 2:
 	now the strange glow is in the broken washing machine;
 	now the strange glow is closeby;
 	now the player carries the thumb drive;
+	now visited hyperspace is true;
 
 jumping to part 3 is an action applying to nothing. Understand "cheat doris" as jumping to part 3.
 
@@ -2623,6 +2624,7 @@ Carry out jumping to part 3:
 	now the strange glow is in the broken washing machine;
 	now the strange glow is closeby;
 	now the player carries the thumb drive;
+	now visited hyperspace is true;
 	
 jumping to part 4 is an action applying to nothing. Understand "cheat enigma" as jumping to part 4.
 
@@ -2645,6 +2647,7 @@ Carry out jumping to part 4:
 	now closet door is unlocked;
 	now closet door is open;
 	now Moira's door is unlocked;
+	now visited hyperspace is true;
 
 jumping to endgame is an action applying to nothing. Understand "cheat end" as jumping to endgame.
 
@@ -2663,6 +2666,7 @@ Carry out jumping to endgame:
 	now the trapdoor is revealed;
 	now the astral lenses are nowhere;
 	now player is in the hidden cave;
+	now visited hyperspace is true;
 
 jumping to last bit is an action applying to nothing. Understand "cheat last" as jumping to last bit.
 

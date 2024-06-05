@@ -25,12 +25,14 @@ Carry out switching off a device (this is the update devices upon switching off 
 The update devices upon switching off rule is listed last in the carry out switching off rules.
 
 Carry out plugging something into something (this is the update devices upon plugging in rule):
-	carry out the device updating activity with the noun.
+	repeat with item running through things:
+		carry out the device updating activity with item.
 
 The update devices upon plugging in rule is listed last in the carry out plugging it into rules.
 
 Carry out unplugging something (this is the update devices upon unplugging rule):
-	carry out the device updating activity with the noun.
+	repeat with item running through things:
+		carry out the device updating activity with item.
 
 The update devices upon unplugging rule is listed last in the carry out unplugging rules.
 

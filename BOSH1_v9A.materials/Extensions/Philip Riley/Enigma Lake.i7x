@@ -216,7 +216,7 @@ Chiming is an action applying to one thing. Understand "ring [something]" as Chi
 Understand "push [bell]", "hit [bell]" as Chiming.
 
 Instead of Chiming the bell when the location is the Enigma Lake town hall:
-	say "Faraji rings the bell. It makes a clear, high-pitched sound. No one comes to the desk to help.";
+	say "Faraji rings the bell. It makes a clear, high-pitched sound that quickly fades away.";
 
 Instead of Chiming the bell:
 	say "Faraji rings the bell. It makes a clear, high-pitched sound.";
@@ -1037,7 +1037,7 @@ Instead of saying hello to the doll-fly:
 
 Before answering the doll-fly that something:
 	if the topic understood in lower case is the incantation of the doll-fly in lower case:
-		say "Upon hearing the incantation [italic type][incantation of the doll-fly][roman type], [the doll-fly] wails a high-pitched, mournful sound, and then winks out of existence.";
+		say "Upon hearing the incantation [italic type][incantation of the doll-fly][roman type], [the doll-fly] wails a high-pitched, mournful sound, and then winks out of existence. It seems to have dropped something.";
 		now the doll-fly is off-stage;
 		now the Rod of Hezekiah is in the location;
 		lb;
@@ -2740,7 +2740,7 @@ Fresnel items are scenery in Fresnel's Music. "A few items of little value are s
 
 striking is an action applying to one thing. Understand "strike [the tuning fork]", "sound [the tuning fork]", "ring [the tuning fork]", "tap [the tuning fork]", "hit [the tuning fork]" as striking.
 Carry out striking the tuning fork:
-	say "Faraji strikes the tuning fork. It sounds a pure 440 Hz tone.";
+	say "Faraji strikes the tuning fork. It sounds a pure 440 Hz tone which stretches for several seconds.";
 	if the player encloses the rusty astral resonator:
 		if the player encloses the shiny astral resonator:
 			if Astral Secrets is read:
@@ -2976,6 +2976,18 @@ Carry out removing something from the light socket (this is the update lamp on r
 The update lamp on removing rule is listed last in the carry out removing it from rules.
 
 The table lamp can be already lit. 
+
+For device updating the makeshift astral resonator:
+	if the makeshift astral resonator is lit:
+		if the makeshift astral resonator is not powered:
+			now the makeshift astral resonator is unlit;
+			add the makeshift astral resonator to changed things;
+	otherwise:
+		if the makeshift astral resonator is powered:
+			now the makeshift astral resonator is lit;
+			add the makeshift astral resonator to changed things;
+
+
 
 For device updating the table lamp:
 	if the table lamp is lit:
