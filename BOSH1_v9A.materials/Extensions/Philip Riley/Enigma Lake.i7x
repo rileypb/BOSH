@@ -2298,7 +2298,10 @@ The astral-tunnel-elr is forth of sewer tunnel 3. It is privately-named. The pri
 
 astral-tunnel-elr is forthsouth of the gym basement.
 
-The gymnasium basement door is a locked closed openable lockable scenery door. It is north of sewer tunnel 3 and south of the gym basement. "A metal door with a lock." 
+The gymnasium basement door is a closed openable lockable scenery door. It is north of sewer tunnel 3 and south of the gym basement. "A metal door with a lock." 
+
+After opening the gymnasium basement door:
+	say "Faraji manages to force the door open.";
 
 Book 32 - Fresnel's Music
 
