@@ -24,7 +24,6 @@ Chapter 1 - Strip Mall Parking Lot South
 
 The Strip Mall Parking Lot South is a room. The printed name is "south end of the strip mall parking lot". It is east of the front office. It is in Swamp Park. It is outdoors.  The preposition is "at". front office is inside from the Strip Mall Parking Lot South. Understand "end/of/the" as the Strip Mall Parking Lot South.
 The description of the Strip Mall Parking Lot South is "From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north."
-[ The snarky remark of The Strip Mall Parking Lot South is "This is nice. At least we don't have to worry about anyone finding us." ]
 The tutorial message of the Strip Mall Parking Lot South is "Enter HELP for instructions"
 
 Carry out helping for the first time:
@@ -33,14 +32,12 @@ Carry out helping for the first time:
 [Index map with Strip Mall Parking Lot South mapped east of front office.]
 
 The Office_ is an unenterable room in Parking Lot South. The printed name is "office". "[We] [gaze] stoically at the sad little storefront that is the new BOSH office. The sign from the previous tenant is still up: 'Angel[']s Department Store'[if margaret is in the Front Office]. Through the front window can be seen Margaret, in her usual manic work mode[end if].".
-[ The snarky remark of the Office_ is "I'm sure the Bureau will be back on its feet in no time." ]
 The Office_ is an edifice.
 
 Instead of entering the office_:
 	try going west;
 	
 Margaret at a distance is a woman. She is part of the Office_.  She is privately-named. The printed name is "Margaret". The description is "Even from here one can sense [Margaret]'s irrepressible energy." Understand "Margaret/Chao" as Margaret at a distance when the location is Parking Lot South. She is female. She is not neuter.
-The snarky remark of Margaret at a distance is "Better get in there and slow her down before she explodes."
 Margaret at a distance is obstructed.
 
 Instead of doing something to Margaret at a distance when Margaret is not in the front office:
@@ -51,7 +48,6 @@ The office window is a part of the Office_. It is privately-named. The printed n
 The office window is unsnarkable.
 	
 The department store sign is a part of the office_. Understand "angel/angel's/wings", "BOSH sign" as the department store sign. The description is "It's adorned with a pair of angel's wings."
-[ The snarky remark of the department store sign is "What I wouldn't give for a pair of wings right now." ]
 The department store sign is far away.
 	 
 Understand "office/bosh/hq/headquarters/bureau/storefront", "new office" as the office_.
@@ -65,7 +61,6 @@ Check driving something that is not a car:
 Car 1 is an automobile in Strip Mall Parking Lot South. It is privately-named. The printed name is "[our] Hyundai". 
 "[Our] bright red Hyundai Accent is parked nearby[if the Hyundai hood is open]. The hood is open[end if]."
 Understand "red", "car", "hyundai", "accent", "automobile", "auto", "my car", "faraji's car", "larch's car" as car 1. It is fixed in place. The description is "An old bright red Hyundai Accent, it's been [our] personal means of transportation for years. And since the Bureau lost its fleet, it's [our] work car too. Two years ago, [we] had to replace the hood after a window A/C unit fell on it. Now it doesn't exactly match the rest of the car.".
-[ The snarky remark of Car 1 is "They asked me if I wanted the flashy car, but I said no -- it just didn't fit my downscale image." ]
 Car 1 is an edifice.
 
 Instead of entering or opening or driving car 1:
@@ -83,7 +78,6 @@ Does the player mean driving Car 1:
 	it is very likely;
 
 The clean car battery is in the Hyundai hood. The description is "The battery is clean and new[if the clean battery is hooked up]. Two wires are attached to the terminals[end if]."
-[ The snarky remark of the clean battery is "Just got it replaced last week." ]
 
 This is the examine hood contents rule:
 	if the noun is a container:
@@ -107,7 +101,6 @@ This is the examine hood contents rule:
 The examine hood contents rule is listed instead of the examine containers rule in the carry out examining rulebook.
 
 Car 2 is an automobile. It is privately-named. The printed name is "[Chief Huffton Klimp]'s Porsche". Understand "car/Klimp's/Porsche/automobile/auto/2017/911/Turbo/Cabriolet" as car 2. The initial appearance of car 2 is "Klimp's Porsche takes up two spots." It is fixed in place. The description is "Klimp drives a sleek 2017 Porsche 911 Turbo Cabriolet."
-[ The snarky remark of Car 2 is "I guess the Bureau's not as broke as they say." ]
 Car 2 is an edifice.
 
 Instead of entering or opening or driving car 2:
@@ -130,7 +123,6 @@ Check turning an automobile:
 	say "It's not clear what you mean for [us] to do." instead;	
  
 The Laundromat-facade is a privately-named unenterable room in Parking Lot South. The printed name is "A-plus laundromat". Understand "A-plus/plus/laundromat" as the laundromat-facade. "[We] [peer] through the windows of the laundromat at the rows of aging machines. A sign on the door says 'Closed for renovations'. [We] [turn] away, unimpressed." 
-[ The snarky remark of the Laundromat-facade is "Looks like the renovations are going to take a while." ]
 Instead of entering the laundromat-facade:
 	try going northwest;
 	
@@ -147,12 +139,10 @@ The laundromat window is a part of the Laundromat-facade. It is privately-named.
 The washing-machines are a part of the Laundromat-facade. They are privately-named. The printed name is "washing machines". Understand "washing/-- machine/machines", "washer/washers" as the washing-machines. The description is "From here, the machines look old and worn."
 They are obstructed.
 
-[ The snarky remark of the washing-machines is "I'm sure they're all in perfect working order." ]
 	
 The laundromat front door is a closed, back-locked, and front-locked scenery shop-door. It is privately-named. The printed name is "laundromat front door". Understand "laundromat/-- front/-- door" as the laundromat front door. It is northwest of the parking lot south and southeast of the laundromat-store. The front description is "It's a typical glass door. Taped to it is a sign that says 'Closed for renovations'." The frontside is the strip mall parking lot south. The back description is "It's a typical glass door." 
 The laundromat front door is indescribable.
 
-[ The snarky remark of the laundromat front door is "The gateway to paradise, either way you go through it." ]
 	
 Check going northwest from the strip mall parking lot south when the player does not know break-in-to-laundromat and the laundromat front door is front-locked and the laundromat front door is back-locked: 
 	now the player knows laundromat-front-door-is-locked;
@@ -166,17 +156,14 @@ Before opening the laundromat front door when the laundromat front door is front
 	now the player knows laundromat-front-door-is-locked;
 	
 The swamp-facade is a privately-named unenterable room in Parking Lot South. The printed name is "swamp". Understand "swamp/swampy/area/marsh/water/wetland/wet/land" as the swamp-facade. "Swamp Park is, as one might expect, dotted with these little bits of wetland."
-[ The snarky remark of the swamp-facade is "Swamp Park delivers on its name." ]
 
 Instead of entering, searching, or touching the swamp-facade:
 	try going south;
 
 Pawn-Shop-facade is a privately-named unenterable room in Parking Lot South. It is proper-named. The printed name is "Dave's pawn shop". Understand "dave's", "dave", "pawn", "shop" as the pawn-shop-facade. "[We] [observe] the pawn shop with obvious distaste. The flashing neon sign in the window advertises 'Cash for gold!'".
-[ The snarky remark of the Pawn-Shop-facade is "I wonder if they take Bureau badges." ]
 The pawn-shop-facade is an edifice.
 
 The flashing neon sign is part of the Pawn-Shop-facade. [Understand "pawn/shop/cash/gold" as flashing neon sign.] The description is "Its flash rate is just a bit over the threshold of irritating."
-[ The snarky remark of the flashing neon sign is "At least they have style." ]
 It is obstructed.
 	
 The pawn-shop-door is a closed scenery shop-door. It is southwest of the parking lot south and northeast of the Dave's pawn shop. It is privately-named. The printed name is "pawn shop door". Understand "pawn shop door" as the pawn-shop-door. Understand "door" as the pawn-shop-door. The front description is "It's a typical glass door. The light within is too dim to see much." The frontside is the strip mall parking lot south. The back description is "It's a typical glass door."
@@ -200,13 +187,11 @@ Instead of going nowhere from the Parking Lot South:
 	stop the action.
 	
 The automatic car wash is an unenterable room in Strip Mall Parking Lot South. The description is "Much like any other automatic car wash." Understand "carwash" as the automatic car wash.
-[ The snarky remark of the automatic car wash is "These things sprout like weeds." ]
 
 Instead of entering the automatic car wash:
 	try going east;
 	
 The interstate is scenery in Strip Mall Parking Lot South. Understand "highway/road/expressway/freeway" as the interstate. "A ways off past the swamp, the highway carries most travelers right past this glum little village."
-The snarky remark of the interstate is "Drive on, folks. Nothing to see here."
 It is far away.
 	
 strip mall parking lot south is outside from the Dave's pawn shop.
@@ -240,7 +225,6 @@ Chapter 2 - Strip Mall Parking Lot North
 
 The Strip Mall Parking Lot North is a room. It is north of The Strip Mall Parking Lot South. It is in Swamp Park. It is outdoors. The printed name is "north end of the strip mall parking lot". Understand "end/of/the" as the Strip Mall Parking Lot North. Understand "shopping center" as Strip Mall Parking Lot North. The preposition is "at".
 "This end is no more auspicious than the other. A convenience store lies to the east. To the west is a military recruitment center. North of here the parking lot exits onto a busy road. There is a rusty sign by the road naming the shopping center: Park Place. South is BOSH headquarters, among other things." 
-[ The snarky remark of The Strip Mall Parking Lot North is "Ah, Swamp Park. The hidden jewel of the state of Maryland." ]
 
 Understand "Park/place" as Strip Mall Parking Lot North.
 
@@ -255,7 +239,6 @@ Instead of going nowhere from the Parking Lot North:
 	stop the action.
 	
 The convenience-store-facade is an unenterable room in strip mall parking lot north. It is privately-named. The printed name is "Li'l Nectarine Convenience Store". Understand "li'l/nectarine/convenience/store" as the convenience-store-facade. "It's marked by a sign with a big nectarine on it."
-[ The snarky remark of the convenience-store-facade is "I'm sure the nectarines are fresh." ]
 
 Instead of entering the convenience-store-facade:
 	try going east;
@@ -263,21 +246,17 @@ Instead of entering the convenience-store-facade:
 The nectarine sign is a part of the convenience-store-facade. Understand "nectarine/store/-- sign" as the nectarine sign. The description is "It's a big nectarine."
 	
 The military-facade is an unenterable room in strip mall parking lot north. It is privately-named. The printed name is "Military Recruitment Center". Understand "military/recruitment/center" as the military-facade. "Patriotic posters paper the windows."
-[ The snarky remark of the military-facade is "Looks like I have career options after all." ]
 
 Patriotic posters are scenery in the strip mall parking lot north. Understand "military posters", "poster/slogan/slogans" as patriotic posters. "The new slogan is 'Answer the Call!'".
-[ The snarky remark of the patriotic posters is "[if the player encloses the green smartphone]I would, but my phone is out of batteries[otherwise]I would, but the phone is stuck in my desk[end if]." ]
 They are plural-named.
 
 Instead of entering the military-facade:
 	try going west;
 	
 The busy road is scenery in strip mall parking lot north. "The main business thoroughfare of Swamp Park."
-[ The snarky remark of the busy road is "Ah, les boulevards de Swamp Park." ]
 It is far away.
 
 The rusty sign is scenery in strip mall parking lot north. "It says 'Park Place'."
-[ The snarky remark of the rusty sign is "Yes, it's a place to park, alright." ]
 It is far away.
 
 BOSH-headquarters-to-the-south is scenery in strip mall parking lot north. It is privately-named. The printed name is "BOSH headquarters". Understand "bosh/headquarters/HQ/office" as BOSH-headquarters-to-the-south. "The BOSH headquarters are to the south."
@@ -298,24 +277,19 @@ The sunlight is scenery in Dave's pawn shop. "A few bands of sunlight filter thr
 The cigar smoke is scenery in Dave's pawn shop. "The smell of cigar smoke is thick in the air."
 
 The blinds are scenery in Dave's pawn shop. "The blinds are closed, leaving the room in a dim light." Understand "windows/blind/window" as the blinds.
-[ The snarky remark of the blinds is "Typical for an establishment run by a vampire." ]
 
 Instead of opening the blinds:
 	say "Dave might prefer them closed.";
 
 The fluorescent lights are scenery in Dave's pawn shop. "The lights are flickering and buzzing." Understand "light" as the fluorescent lights.
-[ The snarky remark of the fluorescent lights is "I'm sure they're good for the complexion." ]
 They are far away.
 
 The glass counter is a supporter in Dave's pawn shop. It is scenery. "The counter is arrayed with displays of jewelry, watches, and the like." Understand "items/collection" as the glass counter.
-[ The snarky remark of the glass counter is "What fine lady wouldn't want a ring from here?" ]
 
 Some jewelry is scenery in Dave's pawn shop. "[We] [don't] need any of this stuff." Understand "necklace/necklaces/ring/rings/bracelet/bracelets/watch/watches" as jewelry.
-[ The snarky remark of the jewelry is "I'm sure they're all genuine." ]
 It is obstructed.
 
 The firearms are scenery in Dave's pawn shop. "Although as an agent [we] [have] the right to carry a firearm, [we] [don't] feel the need." Understand "gun/guns/firearm/firearms" as firearms.
-[ The snarky remark of the firearms is "In this line of work, if you need a gun, call Ghostbusters." ]
 They are far away.
 
 Instead of smelling Dave's pawn shop:
@@ -326,7 +300,6 @@ There is a fluorescent light source in Dave's pawn shop called pawn-light.
 Dave's pawn shop is in Swamp Park.
 
 A man called Dave is in the pawn shop. Understand "owner" as Dave. "A man, presumably Dave, stands behind the main counter eyeing [Player]." The description is "He's dressed in polyester, as if he were still wearing last night's bowling shirt. A bit of tattoo peeks out from his open collar."
-[ The snarky remark of Dave is "He's good at hiding his fangs." ]
 
 The polyester shirt is part of Dave. The description is "It's not a bowling shirt, but it's damn close."
 
@@ -339,7 +312,6 @@ Greeting response for Dave:
 
 a Li'l Nectarine Gift Card is a thing. The description is "A five dollar gift card to the Li'l Nectarine Convenience Store."  
 
-The snarky remark of the Li'l Nectarine Gift Card is "Gee, I hope Dave didn't break the bank."
 
 
 
@@ -480,7 +452,6 @@ Book 3 - Laundromat
 Chapter 1 - The Astral Tunnel
 
 The astral-tunnel-1 is back of the back lot. It is privately-named. The printed name is "astral tunnel". It is in hyperspace. "It is featureless white, or what passes for white here. It leads 'forth' at one end and north at the other.".
-The snarky remark of the astral-tunnel-1 is "What do you know? Klimp was onto something."
 
 The astral-tunnel-1-facade is a building facade. 
 	It is in the back lot.
@@ -490,11 +461,9 @@ The astral-tunnel-1-facade is a building facade.
 	The astral-tunnel-1-facade fronts the astral-tunnel-1.
 	The astral-tunnel-1-facade is enterable from the back lot.
 
-[ The snarky remark of the astral-tunnel-1-facade is "[if astral-tunnel-1 is not visited]No way I'm going in there, right?[otherwise]It's not so bad, as long as you don't mind be stuck in a featureless white void[end if]." ]
 
 The astral-tunnel-2 is north of astral-tunnel-1. It is privately-named. The printed name is "astral tunnel". It is in hyperspace. "It is featureless white, or what passes for white here. It leads south at one end and 'forth.' at the other.";
 
-The snarky remark of the astral-tunnel-2 is "I wonder if there's one of these leading into my apartment."
 
 The astral-tunnel-2-facade is a building facade. 
 	It is in the laundromat back room.
@@ -504,7 +473,6 @@ The astral-tunnel-2-facade is a building facade.
 	The astral-tunnel-1-facade fronts the astral-tunnel-2.
 	The astral-tunnel-1-facade is enterable from the laundromat back room.
 
-[ The snarky remark of the astral-tunnel-2-facade is "So, does our universe look like swiss cheese with all these holes in it?" ]
 
 Chapter 2 - The Laundromat Proper
 
@@ -513,21 +481,17 @@ laundromat-region is a region. It is in Swamp Park.
 The laundromat-store is a leavable room.
 It is privately-named. The printed name is "laundromat". Understand "A-plus/plus/laundromat" as the laundromat-store. It is in laundromat-region. It has egress southeast.
 "The deserted laundromat is [if the light switch is switched on]lit by a flickering fluorescent light[otherwise]lit dimly by the light filtering in from outside[end if]. The machines are old and worn, but still seemingly functional. An opening leads west to the back room."
-[ The snarky remark of the laundromat-store is "I'm sure the renovations will be worth it." ]
 
 The flickering fluorescent light is scenery in the laundromat-store. "The light is flickering and buzzing."
-[ The snarky remark of the flickering fluorescent light is "It's the atmosphere that makes a good laundromat." ]
 It is far away.
 
 The washing machines are scenery in the laundromat-store. "The machines are old and worn, but still seemingly functional. A few are out of order." Understand "machine/dryer/dryers" as the washing machines.
-[ The snarky remark of the washing machines is "I'm trying to think of a good joke about washing machines, but I'm coming up empty." ]
 
 The opening_ is scenery in the laundromat-store. "The opening leads west to the back room." Understand "doorway" as the opening_. It is privately-named. The printed name is "opening".
 It is unsnarkable.
 
 The handtruck is in the laundromat-store. It is pushable between rooms.
 Understand "hand/truck/trolley/dolly/stack/trundler", "box cart", "sack barrow", "cart", "sack truck", "two wheeler", "bag barrow" as the handtruck. The description is "It's a handtruck, two wheels and a platform, used for moving heavy things."
-[ The snarky remark of the handtruck is "But can it carry the weight that burdens my soul?" ]
 
 Instead of inserting something into the handtruck:
 	say "[We] [can] PUSH the handtruck around, or MOVE a thing WITH the handtruck, but [we] can't put things into or onto it.";
@@ -554,17 +518,14 @@ Report going to somewhere with the handtruck:
 The laundromat back room is west of the laundromat-store. It is in laundromat-region.
 It is forth of astral-tunnel-2.
 "A desk sits in the corner covered with papers. An opening leads east to the laundromat proper, while a steep set of stairs leads down. The back door is to the south."
-[ The snarky remark of the laundromat back room is "Definitely worth the trouble of breaking in." ]
 
 The opening-2 is scenery in the laundromat back room. It is privately-named. The printed name is "opening". Understand "doorway" as the opening-2. "The opening leads east to the laundromat proper."
 It is unsnarkable.
 
 The laundromat desk is a scenery desk in the laundromat back room. "The desk is cluttered with papers. It has a single drawer, which is [if the laundromat desk's drawer is open]open[otherwise]closed[end if]."
-[ The snarky remark of the laundromat desk is "For a place that supposedly gets things clean, this place is a mess." ]
 The laundromat desk's drawer has description "The drawer is [if the laundromat desk's drawer is open]open[otherwise]closed[end if]."
 
 The laundromat-papers is scenery in the laundromat back room. It is privately-named. Understand "paper/papers/receipt/receipts/invoice/invoices" as the laundromat-papers. "The papers are mostly receipts and invoices[if the strange piece of paper is nowhere]. One piece, however, consists of strange sketches and diagrams. In one corner is scrawled the cryptic phrase 'Save the Dragon'[end if]." It is plural-named.
-[ The snarky remark of the laundromat-papers is "I'm sure it's all very important." ]
 
 The large key is a key in the laundromat desk's drawer. The description is "It's a large key, probably for a door."
 
@@ -572,13 +533,12 @@ The laundromat front door has matching key the large key.
 The laundromat back door has matching key the large key.
 
 The strange piece of paper is a thing. The description is "The paper is covered with strange sketches and diagrams. In one corner is scrawled the cryptic phrase 'Save the Dragon'." Understand "sketch/sketches/and/diagram/diagrams" as the strange piece of paper.
-[ The snarky remark of the strange piece of paper is "Dragon? What dragon? Must be laundromat slang." ]
+The snarky remark of the strange piece of paper is "Dragon? What dragon? Must be laundromat slang."
 
 After examining the laundromat-papers for the first time:
 	now the strange piece of paper is on the laundromat desk;
 
 The laundromat stairs are a backdrop. They are in the laundromat back room and the laundromat basement. "The stairs are steep and narrow."
-[ The snarky remark of the laundromat stairs is "I'm sure they're up to code." ]
 Instead of taking the laundromat stairs:
 	if the location is the laundromat back room:
 		try going down;
@@ -587,10 +547,8 @@ Instead of taking the laundromat stairs:
 
 The laundromat basement is below the laundromat back room. It is in laundromat-region.
 "A few boxes of supplies sit here and there in the otherwise empty space. Stairs lead up, while a doorway leads south."
-[ The snarky remark of the laundromat basement is "Hey Daddy-o, I don't wanna go down to the basement." ]
 
 Some boxes of supplies are scenery in the laundromat basement. "The boxes are completely uninteresting. Unless you really like detergent." Understand "box/supplies/detergent" as boxes of supplies.
-[ The snarky remark of the boxes of supplies is "Maybe Margaret would like to sort through these." ]
 
 Instead of opening the boxes of supplies:
 	say "The boxes are full of detergent and similar things.";
@@ -604,7 +562,6 @@ The back basement is south of the laundromat basement. It is in laundromat-regio
 "The basement ends here. There is a switch on the wall, currently [if the light switch is switched on]on[otherwise]off[end if]. A doorway leads north.
 
 [if the broken washing machine is nowhere]A strange glow emanates from behind some stacks of large crates[otherwise]A old broken-down washing machine peeks out from between two stacks of crates[end if]."
-[ The snarky remark of the back basement is "Strange things are afoot at the Circle K." ]
 
 back basement darkness is a truth state that varies. back basement darkness is false.
 
@@ -633,10 +590,8 @@ After printing the description of a dark room when the location is the back base
 		say "A washing machine is revealed in the darkness by the glow emanating from its drum.";
 		
 The broken washing machine is an enterable, closed, openable container. It is scenery. "It's a front-loading model. The inside of the drum is obscured by a shimmering curtain of light."
-[ The snarky remark of the broken washing machine is "Looks inviting, doesn't it?" It is transparent. Understand "drum/washer" as the broken washing machine. ]
 
 The strange glow is scenery in the back basement. "The glow is blue-white and flickering."
-[ The snarky remark of the strange glow is "I'm sure it's nothing to worry about." ]
 It is far away.
 
 The curtain of light is scenery in the broken washing machine. "The light is blue-white and flickering."
@@ -697,7 +652,6 @@ moving it with is an action applying to two things. Understand "move [something]
 
 Some stacks of crates are scenery in the back basement. They are privately-named. Understand "stack/stacks/of/crates/crate/box/boxes" as stacks of crates when not in darkness.
 The printed name is "[if in darkness]dark objects[otherwise]stacks of crates[end if]".
-[ The snarky remark of the stacks of crates is "[if the broken washing machine is nowhere]C'mon, you're blocking the view[otherwise]Ha, ha, thought you could keep me from seeing that, did you[end if]." ]
 
 Instead of climbing up the stacks of crates:
 	say "[We] [are] notoriously afraid of heights. [We] [don't] think [we] [can] do it.";
@@ -746,7 +700,6 @@ After touching the strange glow:
 	
 The light switch is a scenery device in the back basement. It is switched on. Understand "glow-in-the-dark", "glowing" as the light switch. 
 The description is "It's a standard glow-in-the-dark light switch."
-[ The snarky remark of the light switch is "I wonder what it does." ]
 
 After switching off the light switch:
 	now ls-light is not lit;
@@ -771,7 +724,6 @@ Every turn:
 		now the player carries the pair of astral lenses;
 		
 The astral-tunnel-3 is forth of back basement and backsouth of the laundromat-store. It is privately-named. The printed name is "astral tunnel". It is in hyperspace. "It is featureless white, or what passes for white here. It leads 'back' at one end and 'forthnorth.' at the other.".
-[ The snarky remark of the astral-tunnel-3 is "I wonder how many of these things there are." ]
 
 The astral-tunnel-3-facade is a building facade. 
 	It is in the back basement.
@@ -795,14 +747,12 @@ Book 4 - Convenience Store
 
 The Li'l Nectarine Convenience Store is east of the Parking Lot North. It is in Swamp Park. It is indoors. 
 "Li'l Nectarine offers great service and low prices, or so they say. This one's cluttered aisles and sparse shelves could make one wonder if that's true. Behind the counter is the typical array of cigarettes and lottery tickets. Under the counter is a glass case containing various useful items."
-[ The snarky remark of the Li'l Nectarine Convenience Store is "I'm not sure I'd eat fruit from here." ]
 
 The destination name is "Li'l Nectarine Convenience Store".
 
 There is a fluorescent light source in Li'l Nectarine Convenience Store called nectarine-light.
  
 The store clerk is a man in the Convenience Store. "The clerk, a scruffy man in his mid-twenties, is leaning against the counter, looking bored." The description is "The clerk looks as if he'd rather be anywhere else. He's wearing jeans and a white t-shirt with something inscrutable scrawled on it. His hair sticks up every which way." Understand "man" as the store clerk.
-[ The snarky remark of the store clerk is "Finally a source of fashion advice." ]
 
 A ballpoint pen is carried by the clerk. The description is "A cheap ballpoint pen."
 A battered cellphone is carried by the clerk. The description is "Looks like it's been dropped a few times. And then run over by a truck."
@@ -815,27 +765,19 @@ The shop counter is a supporter in the nectarine store. It is scenery. "The coun
 It is unsnarkable.
 
 Some CBD oil is scenery in the convenience store. "[We] [don't] need any of this stuff." 
-[ The snarky remark of the CBD oil is "Well, when I have a CBD, I'll know where to come for lubricant." ]
 
 Some antacids are scenery in the convenience store. "[We] [feel] fine for now."
-[ The snarky remark of the antacids is "Maybe after the next Bureau meeting." ]
 
 Some cigarettes are scenery in the convenience store. "[We] [have] no interest in smoking." Understand "smokes/smoke/packs/pack" as cigarettes.
-[ The snarky remark of the cigarettes is "In Swamp Park, they call these 'air fresheners'." ]
 Some lottery tickets are scenery in the convenience store. "[We] [feel] no urge to gamble." Understand "scratch-off/scratch-offs/ticket" as lottery tickets.
-[ The snarky remark of the lottery tickets is "Have you noticed my luck lately?" ]
 
 Some aisles are scenery in the Convenience Store. They are plural-named. "The aisles are cluttered with numerous stacks of unshelved items." Understand "cluttered/stacks/stack/unshelved/items" as aisles.
-[ The snarky remark of the aisles is "There's an organizational system here, I'm sure of it." ]
 
 The store shelves are a thing in the Convenience Store. They are scenery. "[We] hardly [need] bread, ketchup, or potato chips." Understand "shelf" as store shelves.
-[ The snarky remark of the store shelves is "Yep, I thought so. It all costs money. More precisely, more than zero dollars." ]
 
 Some groceries are a thing in the Convenience Store. They are scenery. "We're not here to go grocery shopping." Understand "bread/ketchup/catsup/potato/chips" as groceries.
-[ The snarky remark of the groceries is "Who knows where they've been?" ]
 
 The flashlight is a device. Understand "light/torch" as the flashlight. The description is "A small, sturdy flashlight."
-[ The snarky remark of the flashlight is "I might need it to whack Klimp over the head." ]
 
 Instead of switching on the flashlight:
 	now the flashlight is lit.
@@ -869,7 +811,6 @@ Rule for supplying a missing second noun while buying the red screwdriver with:
 The glass case is a container in the Convenience Store. it is openable. It is closed and locked. it is scenery. It is transparent. In the glass case is the flashlight, a red screwdriver, a laptop computer, and some wireless earbuds. The wireless earbuds are plural-named. 
 Understand "useful/items" as the glass case.
 The glass case is indescribable.
-[ The snarky remark of the glass case is "Quality merchandise, I'm sure." ]
 
 The clerk owns the flashlight. The clerk is willing to sell the flashlight.
 The price of the flashlight is $6.
@@ -888,9 +829,7 @@ The description of the red screwdriver is "A medium-length flat head screwdriver
 Understand "flat/head/plastic/handle/flathead/red" as the red screwdriver.
 The snarky remark of the red screwdriver is "[if the player knows vent-screws]There it is, just a few inches away, yet so far[otherwise]I'm sure I won't need a screwdriver any time soon[end if]."
 The description of the laptop computer is "A knockoff of a fancy gaming laptop." Understand "notebook/computer" as the laptop computer.
-[ The snarky remark of the laptop computer is "I'm sure it's a real bargain." ]
 The description of the wireless earbuds is "Some no-name brand." Understand "airpods/air/pods/ear/earphones/headphones" as the wireless earbuds.  
-[ The snarky remark of the wireless earbuds is "Ear Pods. Sounds quality." ]
 
  
 [Carry out imploring the clerk for something when the flashlight is nowhere during blackout:

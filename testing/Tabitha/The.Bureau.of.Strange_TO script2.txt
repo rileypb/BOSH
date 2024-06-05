@@ -60,7 +60,7 @@ Faraji plugs the table lamp into the socket end of the extension cord.
 (the extension cord into the electrical outlet)
 Faraji plugs the plug end of the extension cord into the electrical outlet.
 
->hit bell with fork
++>>>>hit bell with fork
 Violence isn't the answer to this one.
 
 >ring bell with fork
@@ -1207,7 +1207,7 @@ The extension cord you are carrying trails up into the church.
 (The Book of Utilitarianism)
 The text is the Book of Utilitarianism. Faraji opens to a page at random and reads:
 
-And the Lord so hated the lizard people that he smote them with a mighty smiting, and he said the cursèd word "phenomenology", and the lizard people screamed and ran away like scared little children.
+And the Lord so hated the lizard people that he smote them with a mighty smiting, and he said the cursï¿½d word "phenomenology", and the lizard people screamed and ran away like scared little children.
 
 >g
 (The Book of Utilitarianism)
@@ -1243,11 +1243,11 @@ And the Lord said, "The path of the righteous is beset on all sides by the inequ
 (The Book of Utilitarianism)
 The text is the Book of Utilitarianism. Faraji opens to a page at random and reads:
 
-And the Lord so hated the lizard people that he smote them with a mighty smiting, and he said the cursèd word "phenomenology", and the lizard people screamed and ran away like scared little children.
+And the Lord so hated the lizard people that he smote them with a mighty smiting, and he said the cursï¿½d word "phenomenology", and the lizard people screamed and ran away like scared little children.
 
 >*lol i enjoyed all of that
 I'm not sure what you're trying to say. I might just not recognize the words you're using.
-
+<<<<
 >l
 Agent Faraji is in the church basement. The basement is a shock to behold after the simple church above. It's a large, open space, with walls painted with scenes of humans and lizard people in battle, with aliens and platypuses looking on in horror. There is an ornate altar at the far end of the room. The exit is up.
 
@@ -1310,13 +1310,13 @@ Has Faraji read anything about the lizard people?
 Faraji should read the Book of Utilitarianism.
 
 >g
-Read until you find the passage about the cursèd word.
+Read until you find the passage about the cursï¿½d word.
 
 >g
-The cursèd word is "phenomenology "
+The cursï¿½d word is "phenomenology "
 
 >g
-Faraji should try saying the cursèd word to the group of lizard people.
+Faraji should try saying the cursï¿½d word to the group of lizard people.
 
 >l
 Agent Faraji is in the church basement. The basement is a shock to behold after the simple church above. It's a large, open space, with walls painted with scenes of humans and lizard people in battle, with aliens and platypuses looking on in horror. There is an ornate altar at the far end of the room. The exit is up.
