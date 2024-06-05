@@ -3223,6 +3223,14 @@ To teleport the player:
 	while the target is the location:
 		sort the lizard teleportation targets in random order;
 		now target is entry 1 of the lizard teleportation targets;
+	let printed newline be false;
+	repeat with I running through the list of immobile things carried by the player:
+		if the player carries I: [in case an earlier drop caused this item to be dropped as well.]
+			if printed newline is false:
+				say "[line break]";
+				now printed newline is true;
+			say "(first dropping [I])[command clarification break]";
+			silently try dropping I;
 	move the player to the target;
 	now the current interlocutor is nothing;
 
@@ -3411,5 +3419,10 @@ Carry out framing:
 	now the light bulb is in the light socket;
 	now the player is in First Utilitarian Church of Enigma Lake;
 	now the player carries the Rod of Hezekiah;
+
+lizarding is an action applying to nothing. Understand "cheat lizard" as lizarding.
+
+Carry out lizarding:
+	now the group of lizard people is in the location;
 
 Enigma Lake ends here.

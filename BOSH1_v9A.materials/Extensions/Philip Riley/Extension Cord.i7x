@@ -55,24 +55,27 @@ Rule for writing a paragraph about the extension cord:
 
 Rule for writing a paragraph about plug-end:	
 	if the plug-end is in the location:
-		say "The plug end of an extension cord lies on the [if the location is indoors]floor[otherwise]ground[end if]";
+		if the plug-end is plugged into something (called the socket):
+			say "The plug end of an extension cord is plugged into [the socket]";
+		otherwise:
+			say "The plug end of an extension cord lies on the [if the location is indoors]floor[otherwise]ground[end if]";
 	otherwise:
 		let holder be the holder of the plug-end;
 		if holder is a supporter:
 			say "The plug end of an extension cord lies on [the holder of the extension cord]";
 		otherwise:
 			say "The plug end of an extension cord is in [the holder of the extension cord]";
-	if something (called the socket) accepts the plug-end:
-		say ", one end plugged into [the socket]";
-		let holder be the holder of the plug-end;
-		if the holder is the player:
-			say " [we] [are] holding";
-		otherwise if the holder is enclosed by the player:
-			say " inside [the holder][we] [are] carrying";
-		otherwise if holder is a supporter:
-			say " on [the holder of the plug-end]";
-		otherwise if holder is a container:
-			say " in [the holder of the plug-end]"; 
+		if something (called the socket) accepts the plug-end:
+			say ", one end plugged into [the socket]";
+			let holder be the holder of the plug-end;
+			if the holder is the player:
+				say " [we] [are] holding";
+			otherwise if the holder is enclosed by the player:
+				say " inside [the holder][we] [are] carrying";
+			otherwise if holder is a supporter:
+				say " on [the holder of the plug-end]";
+			otherwise if holder is a container:
+				say " in [the holder of the plug-end]"; 
 	if the player encloses the socket-end:
 		if the player carries the socket-end:
 			say ". The other end is in [our] hand.";
@@ -145,9 +148,11 @@ test recall with "gonear pulpit/purloin orange extension cord/purloin table lamp
 
 Definition: a thing is immobile:
 	if it is fixed in place, yes;
-	if it is plugged into the electrical outlet, yes;
-	if it is plugged into the socket-end and the plug-end is plugged into the electrical outlet, yes;
-	if it is the socket-end and the plug-end is plugged into the electrical outlet, yes;
+	if it is plugged into a fixed in place thing, yes;
+	if it accepts a fixed in place thing, yes;
+	if it is the plug-end and the socket-end accepts a fixed in place thing, yes;
+	if it is the socket-end and the plug-end is plugged into a fixed in place thing, yes;
+	no.
 
 Definition: a thing is mobile if it is not immobile.
 
@@ -212,6 +217,9 @@ To maybe condense the extension cord:
 		condense the extension cord;
 
 Instead of plugging the extension cord into something when the second noun is not the extension cord:
+	if the second noun is not plug-into-able:
+		say "Faraji can't plug the extension cord into [the second noun].";
+		stop the action;
 	separate the extension cord;
 	set pronouns from the socket-end;
 	if second noun is plug-into-able:
@@ -227,6 +235,9 @@ Instead of unplugging the extension cord:
 	maybe condense the extension cord;
 
 Instead of plugging something into the extension cord when the noun is not the extension cord:
+	if the noun is not pluggable:
+		say "Faraji can't plug [the noun] into the extension cord.";
+		stop the action;
 	separate the extension cord;
 	set pronouns from the noun;
 	if the noun is pluggable:
@@ -242,7 +253,7 @@ Instead of dropping the extension cord:
 	maybe condense the extension cord;
 	puts "[text of standard report dropping rule response (A)][line break]";
 
-Instead of taking the extension cord:
+Instead of taking the extension cord (this is the take the extension cord all at once rule):
 	separate the extension cord;
 	if the plug-end is immobile and the socket-end is immobile:
 		dbg "All immobile.";
@@ -250,8 +261,10 @@ Instead of taking the extension cord:
 		silently try unplugging the plug-end;
 		if something (called the plug) is plugged into the socket-end:
 			silently try unplugging the plug;
-	silently try taking the plug-end;
-	silently try taking the socket-end;
+	if the plug-end is somewhere:
+		silently try taking the plug-end;
+	if the socket-end is somewhere:
+		silently try taking the socket-end;
 	maybe condense the extension cord;
 	puts "[text of standard report taking rule response (A)][line break]";
 
@@ -314,6 +327,12 @@ Instead of plugging the extension cord into the extension cord:
 	now the plug-end is plugged into the socket-end;
 	maybe condense the extension cord;
 	say "Faraji plugs the extension cord into itself. What fun." instead;
+
+Before inserting something into something when the noun is plugged into the extension cord:
+	separate the extension cord;
+	
+Before inserting something into something when the extension cord is plugged into the noun:
+	separate the extension cord;
 
 Book - Working with the plug-end
 
