@@ -85,7 +85,7 @@ to unlock the backdoor is a questioning quip.
 	Understand "back/door" as to unlock the backdoor.
 	It mentions the BOSH back door.
 	The comment is "[We] [ask], 'Could you unlock the back door, Margaret?'".
-	The reply is "'Sure, sure, in a minute. What do you want back there anyway? There's only a dumpster.' She pauses for a moment and mutters to herself. 'Which reminds me, I need to get these boxes broken down.' She picks up a couple and flattens them.".
+	The reply is "[if location is front office]'Sure, sure, in a minute. What do you want back there anyway? There's only a dumpster.' She pauses for a moment and mutters to herself. 'Which reminds me, I need to get these boxes broken down.' She picks up a couple and flattens them.[otherwise if back door is locked]'Sure, in a minute.'[otherwise]'It's already unlocked, silly!'[end if]".
 	It quip-supplies Margaret.
 
 After discussing to unlock the backdoor:

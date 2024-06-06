@@ -133,7 +133,7 @@ Hinting the hint-back-door when the player knows back-door-is-locked:
 	otherwise:
 		go on;
 
-The hint-get-back-in is a hint topic. Understand "escape/back/lot" as the hint-get-back-in. The printed name is "escape back lot". It is progressive. The progression is {"Faraji is locked out of the building. Maybe they can get out of the back lot another way?", "Perhaps there's a secret exit in the dumpster?", "LOL. No, there's no secret exit in the dumpster.", "What might one do to get through a door they can't or shouldn't open?", "Faraji has two options: wait around for Margaret to come back out, or...", "KNOCK ON WHITE METAL DOOR."}.
+The hint-get-back-in is a hint topic. Understand "escape/back/lot" as the hint-get-back-in. The printed name is "escape back lot". It is progressive. The progression is {"Faraji is locked out of the building. Maybe they can get out of the back lot another way?", "Perhaps there's a secret exit in the dumpster?", "LOL. No, there's no secret exit in the dumpster.", "What might one do to get through a door they can't or shouldn't open?", "Faraji has two options: wait around for Margaret to come back out, or...", "KNOCK ON BOSH BACK DOOR."}.
 
 Activating rule for the hint-get-back-in:
 	if the player knows escape-back-lot:
@@ -192,7 +192,14 @@ Hinting the hint-moira:
 
 hint-strange-glow is a hint topic. Understand "strange/glow" as the hint-strange-glow. The printed name is "strange glow".
 
-hint-touch-the-glow is an unlisted progressive hint topic. The progression is {"I guess we're hoping the glow will do something interesting.", "I don't suppose singing to it will help.", "Maybe Faraji should enter it."}.
+hint-touch-the-glow is an unlisted progressive hint topic. The progression is {"So the glow is coming from the drum of the washing machine.", "I guess we're hoping the glow will do something interesting.", "I don't suppose singing to it will help.", "Maybe Faraji should enter it."}.
+
+singing is an action applying to nothing. Understand "sing" as singing.
+
+Report singing:
+	say "Faraji sings a little tune. Nothing notable happens.";
+
+hint-move-the-crates is an unlisted progressive hint topic. The progression is {"Faraji should find a way to move the crates.", "Faraji could use the handtruck from the front room.", "They just need to move the handtruck to the back basement."}.
 
 Activating the hint-strange-glow:
 	if the back basement is visited:
@@ -203,10 +210,7 @@ Activating the hint-strange-glow:
 
 Hinting the hint-strange-glow:
 	if the broken washing machine is nowhere:
-		if the handtruck is in the back basement:
-			rule succeeds with result "Handtrucks are very handy for moving heavy objects.";
-		otherwise:
-			rule succeeds with result "Faraji needs something to help them move the crates.";
+		abide by the hinting rules for the hint-move-the-crates;
 	otherwise:
 		abide by the hinting rules for the hint-touch-the-glow; 
 
@@ -838,5 +842,37 @@ Activating the hint-open-locker:
 	if the gym basement is visited and the copper key is not handled:
 		activate;
 	deactivate;
+
+hint-easy-money is a progressive hint topic. Understand "money" as hint-easy-money. The printed name is "money". The progression is {"Maybe Faraji could find some money.", "Maybe someone in the BOSH office has some money.", "Maybe Faraji can pawn something for money.", "There is no way to get any money, at least not yet."}.
+
+Activating hint-easy-money:
+	if the player knows store-sells-screwdrivers and featureless hyperplane is not visited:
+		activate;
+	deactivate;
+
+[ Volume 2 - Not for release
+
+all-hinting is an action applying to nothing. Understand "all hints" as all-hinting.
+
+Carry out all-hinting:
+	now listing all hints is true;
+	say "Hints about the following topics are available:[line break]";
+	repeat with item running through listed hint topics:
+		let the current hint be the text produced by the hinting rules for the item;
+		if the rule succeeded and current hint is last hint of item:
+			say "* [item][line break]";
+		otherwise if the rule succeeded:
+			say "* [bold type][item][roman type][line break]";
+	now listing all hints is false;
+	
+Carry out asking for hints about:
+	let current hint be the text produced by the hinting rules for the noun;
+	if the rule succeeded:
+		say "[current hint][line break]";	
+		now the last hint of the noun is current hint;
+		if current hint is not listed in the history of the noun:
+			add current hint to the history of the noun;
+	otherwise:
+		say "There is no hint for that right now."; ]
 
 BOSH Hints ends here.

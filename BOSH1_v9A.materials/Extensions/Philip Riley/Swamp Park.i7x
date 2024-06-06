@@ -480,7 +480,7 @@ laundromat-region is a region. It is in Swamp Park.
 
 The laundromat-store is a leavable room.
 It is privately-named. The printed name is "laundromat". Understand "A-plus/plus/laundromat" as the laundromat-store. It is in laundromat-region. It has egress southeast.
-"The deserted laundromat is [if the light switch is switched on]lit by a flickering fluorescent light[otherwise]lit dimly by the light filtering in from outside[end if]. The machines are old and worn, but still seemingly functional. An opening leads west to the back room."
+"The deserted laundromat is [if the light switch is switched on]lit by a flickering fluorescent light[otherwise]lit dimly by the light filtering in from outside[end if]. The machines are old and worn, but still seemingly functional. An opening leads west to the back room, and the exit is to the southeast."
 
 The flickering fluorescent light is scenery in the laundromat-store. "The light is flickering and buzzing."
 It is far away.
@@ -491,7 +491,7 @@ The opening_ is scenery in the laundromat-store. "The opening leads west to the 
 It is unsnarkable.
 
 The handtruck is in the laundromat-store. It is pushable between rooms.
-Understand "hand/truck/trolley/dolly/stack/trundler", "box cart", "sack barrow", "cart", "sack truck", "two wheeler", "bag barrow" as the handtruck. The description is "It's a handtruck, two wheels and a platform, used for moving heavy things."
+Understand "hand/truck/trolley/dolly/trundler", "box cart", "sack barrow", "cart", "sack truck", "two wheeler", "bag barrow" as the handtruck. The description is "It's a handtruck, two wheels and a platform, used for moving heavy things."
 
 Instead of inserting something into the handtruck:
 	say "[We] [can] PUSH the handtruck around, or MOVE a thing WITH the handtruck, but [we] can't put things into or onto it.";
@@ -589,7 +589,7 @@ After printing the description of a dark room when the location is the back base
 	otherwise:
 		say "A washing machine is revealed in the darkness by the glow emanating from its drum.";
 		
-The broken washing machine is an enterable, closed, openable container. It is scenery. "It's a front-loading model. The inside of the drum is obscured by a shimmering curtain of light."
+The broken washing machine is an enterable, closed, openable, transparent container. It is scenery. "It's a front-loading model. The inside of the drum is obscured by a shimmering curtain of light."
 
 The strange glow is scenery in the back basement. "The glow is blue-white and flickering."
 It is far away.

@@ -56,12 +56,11 @@ After going to hyperspace:
 		say "[text of parser error internal rule response (N)][line break]" instead;]
 
 Before going a hyperspatial direction:
-	if visited hyperspace is true and player is not in hyperspace:
-		say "That direction only exists in hyperspace." instead;
-	otherwise if player is not in hyperspace and player's command includes "go":
-		say "[text of the parser error internal rule response (E)][line break]" instead;
-	otherwise if player is not in hyperspace:
-		say "I[']m not sure what you're trying to say. I might just not recognize the words you're using." instead;
+	if visited hyperspace is false:
+		if player is not in hyperspace and player's command includes "go":
+			say "[text of the parser error internal rule response (E)][line break]" instead;
+		otherwise if player is not in hyperspace:
+			say "I[']m not sure what you're trying to say. I might just not recognize the words you're using." instead;
 		
 [ Check going a hyperspatial direction:
 	if player is not in hyperspace and player is not wearing the astral lenses:
@@ -94,6 +93,7 @@ this is the room description astral passages rule:
 				add "'[D]'" to directions;
 		if directions is not empty:
 			if encountered astral passages is false:
+				now visited hyperspace is true;
 				now encountered astral passages is true;
 				let C be number of entries of directions;
 				say "[if C is 1]A s[otherwise]S[end if]trange sparkly white [regarding C]passage[if C > 1]s[end if] [branch] off in [if C is 1]an impossible direction[otherwise]impossible directions[end if] from here.
@@ -1079,7 +1079,7 @@ for-a-screwdriver-doris is a questioning quip.
 	Understand "for/a/screwdriver" as for-a-screwdriver-doris.
 	It mentions the screwdriver.
 	The comment is "[We] [ask], 'Do you have a screwdriver?'".
-	The reply is "'No, I don't have a screwdriver. Sonic or otherwise.'".
+	The reply is "'No, I don't have a screwdriver. Do I look like I do?'".
 	it quip-supplies Doris.
 	
 An availability rule for for-a-screwdriver-doris:	
@@ -1583,7 +1583,7 @@ how-to-get-home-maggie is a questioning quip.
 	Understand "how to get home" as how-to-get-home-maggie.
 	The comment is "[We] [ask], 'How can I get home from here?'".
 
-	The reply is "Maggie looks up from her computer. 'Oh, you're ready to go? I'll activate the auxiliary portal for you' She types rapidly on her computer, then says 'It's all ready -- go west down the hallway and turn to the back into Portal Room 2.'"
+	The reply is "Maggie snaps out of her reverie. 'Oh, you're ready to go? I'll activate the auxiliary portal for you' She types rapidly on her control panel, then says 'It's all ready -- go west down the hallway and turn to the back into Portal Room 2.'"
 	
 	it quip-supplies Maggie.
 

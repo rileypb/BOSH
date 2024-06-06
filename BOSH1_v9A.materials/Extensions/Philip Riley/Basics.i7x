@@ -22,6 +22,7 @@ Carry out looking behind something:
 		if X is not scenery:
 			now X is not behind the noun;
 			now X is in the location;
+			now X is seen;
 			add X to hidden;
 			
 Report looking behind something when the behind description of the noun is not "":
