@@ -1365,7 +1365,7 @@ ready to go is an informative quip.
 	The printed name is "[force pronoun for player][we]['re] ready to go".
 	Understand "i'm/you're/he's/she's/we're/they're" as ready to go.
 	The comment is "[regarding the player]Squaring [force pronoun for player][our] shoulders, [player's surname] says, 'Ready to go.'"
-	The reply is "Doris grins. 'Great! First, you'll need this.' He hands Faraji a small device. 'In case you need to come back for any reason, press this button and you'll come back here. [italic type]Do not abuse this for trivial matters![roman type] Time travel consumes valuable resources. Now go. Out of my office and to the forth you'll find the portal room. It's all ready to send you where you need to go.'"
+	The reply is "Doris grins. 'Great! First, you'll need this.' He hands Faraji a small device. 'In case you need to come back for any reason, press this button and you'll come back here. [italic type]Do not abuse this for trivial matters![roman type] Only for important things, like coffee, or fetching things from your office, or because you're bored. Now go. Out of my office and to the forth you'll find the portal room. It's all ready to send you where you need to go.'"
 	It quip-supplies Doris.
 	It follows how will I find him.
 		
