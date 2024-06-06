@@ -1434,22 +1434,25 @@ After opening the abandoned pickup truck:
 Does the player mean taking the brass key when the player is in the abandoned pickup truck:
 	it is very likely.
 
+A thing can be in-the-pickup or not-in-the-pickup. A thing is usually not-in-the-pickup.
+
 An abandoned pickup truck is a fixed in place closed enterable openable transparent container in Lake at Ridge. 
 "There is an abandoned pickup truck at the side of the road[if the hood is open]. The hood is open[end if]." 
-The description is "The truck, a Ford F-1, is relatively new, with no sign as to why it was abandoned. The tailgate is [if the tailgate is open]down[otherwise]up[end if]. The hood is slightly crumpled, as if it has been in a minor accident[if the hood is open]. The hood is open[end if]."
+The description is "The truck, a Ford F-1, is relatively new, with no sign as to why it was abandoned. The tailgate is [if the tailgate is open]down[otherwise]up[end if]. The hood is slightly crumpled, as if it has been in a minor accident[if the hood is open]. The hood is open[end if][if the bolt cutters are in the truck bed]. The truck bed contains a pair of bolt cutters[end if]."
 Understand "ford", "f-1", "door" as the abandoned pickup truck.
-The glove compartment is a scenery closed openable container in the abandoned pickup truck.
+The glove compartment is a scenery closed openable container in the abandoned pickup truck. It is in-the-pickup.
 Understand "box/glovebox" as the glove compartment.
 The description is "The glove compartment is [if the glove compartment is open]open[otherwise]closed[end if]."
-The brass key is a key. It is in the glove compartment. The description is "A simple brass key".
+The brass key is a key. It is in the glove compartment. The description is "A simple brass key". It is in-the-pickup.
+
 
 The truck hood is a part of the abandoned pickup truck. It is a closed openable container. The description is "The hood is slightly crumpled, as if it has been in a minor accident. It is [if the hood is open]open[otherwise]closed[end if]." Understand "bonnet" as the truck hood. 
 It is unsnarkable.
 
-Instead of doing something to something when the action requires a touchable noun and the noun is not enclosed by the abandoned pickup truck and the player is in the abandoned pickup truck:
-	say "Faraji can't do that from here.";
+Instead of doing something to something when the action requires a touchable noun and the noun is not-in-the-pickup and the player is in the abandoned pickup truck:
+	say "Faraji can't do that from inside the truck.";
 
-Instead of doing something to the something when the action requires a touchable noun and the noun is enclosed by the abandoned pickup truck and the player is not in the abandoned pickup truck:
+Instead of doing something to something when the action requires a touchable noun and the noun is in-the-pickup and the player is not in the abandoned pickup truck:
 	say "Faraji can't do that from here.";
 
 The hood contains a dirty car battery. 
