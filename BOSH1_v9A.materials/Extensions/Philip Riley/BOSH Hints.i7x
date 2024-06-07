@@ -25,7 +25,11 @@ The hint-locked-desk is a hint topic. Understand "locked/desk", "faraji's/my/the
 
 The hint-locked-desk-hex is an unlisted progressive hint topic. The progression is {"Maybe Faraji could take the desk apart to get the key out.", "Faraji will need a hex wrench to disassemble the desk."}.
 
+The hint-locked-desk-endgame is an unlisted progressive hint topic. The progression is {"Faraji should use the screwdriver to open the heating vent and get the hex wrench.", "Faraji should use the hex wrench to disassemble the desk and answer the phone."}.
+
 Hinting the hint-locked-desk:
+	if the red screwdriver is handled:
+		abide by the hinting rules for the hint-locked-desk-endgame;
 	if the player does not know desk-locked or the blue flipphone is handled:
 		make no decision;
 	if player does not know key-is-lost:
@@ -82,12 +86,20 @@ Definition: the laundromat is well-searched:
 		yes;
 	no;
 
+The hint-screwdriver-endgame is an unlisted progressive hint topic. The progression is {"Daniels seems to have given Faraji something. Maybe they should look at it.", "It's a watch.", "Now, who wanted a watch?", "Dave at the pawn shop wanted his watch back.", "Faraji should return the watch to Dave.", "Well, Dave was grateful, if not generous.", "Faraji could use that gift card to buy a screwdriver."}.
+
 Hinting the hint-screwdriver:
 	[ relevant facts: vent-screws, margaret-no-screwdriver, screwdriver-in-laundromat, break-in-to-laundromat, screwdriver is seen ]
 	if the player does not know vent-screws:
 		go on;
 	if the player does not know margaret-no-screwdriver:
 		rule succeeds with result "Faraji needs a screwdriver to open the vent. Maybe they can ask Margaret for one.";
+	otherwise if inside-the-dumpster is visited:
+		abide by the hinting rules for the hint-screwdriver-endgame;
+	otherwise if enigma lake town hall is visited:
+		rule succeeds with result "Maybe there's a screwdriver in Enigma Lake.";
+	otherwise if the featureless hyperplane is visited:
+		rule succeeds with result "Maybe there's a screwdriver somewhere in hyperspace. That would be strange, but convenient.";
 	otherwise:
 		let hints be a list of texts;
 		if the player knows break-in-to-laundromat:
@@ -366,33 +378,13 @@ activating hint-floor-waxer:
 hint-threaded-socket is a progressive hint topic. Understand "threaded/socket" as the hint-threaded-socket. The printed name is "threaded socket". The progression is {"You're probably wondering what goes in the threaded socket.", "You'll know it when you see it."}.
 
 Activating hint-threaded-socket:
-	if the threaded socket is seen and the player does not know rusty-resonator-has-been-activated:
+	if the threaded socket is seen and the rusty astral resonator is not in the threaded socket:
 		activate;
 	otherwise:
 		deactivate;
 
-[ hint-wires is a hint topic. Understand "wires", "wire" as the hint-wires. The printed name is "wires". The progression is {"I wonder what was connected to the wires before.", "Faraji might look on the roof for a clue.", "It looks like the wires run from the rooftop aerial. Too bad there's no TV to hook up.", "What could Faraji connect to the wires instead?", "Faraji should have a close look at the aerial.", "It looks like there's a strange socket attached to the aerial.", "Maybe it needs power.", "Perhaps Faraji could use the wires to supply power to the aerial.", "Faraji should find a power source to connect to the wires.", "Has Faraji had a look at the abandoned truck in the northeastern part of town?", "Faraji should look under the hood of the truck.", "Or maybe that's not going to work after all.", "Faraji should look for a clean battery.", "Where else could Faraji find a battery?", "How about Faraji's car? It's parked right outside the BOSH offices.", "Oh no! How will Faraji get back to BOSH?", "The recall button will take them to the hyperspace field office, where they can use the auxiliary portal to return to BOSH.", "Once they have the clean battery, Faraji can back by using the recall button and the Portal to the Past.", "Then they can connect the battery to the wires.", "ATTACH BATTERY TO WIRES"}.
 
-Activating hint-wires:
-	if the wires are seen and the clean battery is not hooked up:
-		activate;
-	deactivate;]
-
-hint-wires is a hint topic. Understand "wires", "wire" as the hint-wires. The printed name is "wires".
-
-hint-wires-first is an unlisted progressive hint topic. The progression is {"I wonder what was connected to the wires before.", "Faraji might look on the roof for a clue.", "It looks like the wires run from the rooftop aerial. Too bad there's no TV to hook up.", "What could Faraji connect to the wires instead?", "Faraji should have a close look at the aerial.", "It looks like there's a strange socket attached to the aerial.", "Maybe it needs power.", "Perhaps Faraji could use the wires to supply power to the aerial.", "Faraji should find a power source to connect to the wires.", "Has Faraji had a look at the abandoned truck in the northeastern part of town?", "Faraji should look under the hood of the truck."}
-
-hint-wires-dirty is an unlisted progressive hint topic. The progression is {"Maybe a battery?", "It doesn't seem like the truck battery will work.", "Faraji should look for a clean battery.", "Where else could Faraji find a battery?", "How about Faraji's car? It's parked right outside the BOSH offices."}.
-
-hint-wires-clean is an unlisted progressive hint topic. The progression is {"Faraji needs to get back to Enigma Lake and Henry's.", "Then they can connect the battery to the wires.", "ATTACH BATTERY TO WIRES"}.
-
-hinting hint-wires when the dirty battery is not seen:
-	abide by the hinting rules for hint-wires-first;
-
-hinting hint-wires when the dirty battery is seen:
-	if the clean battery is not seen:
-		abide by the hinting rules for hint-wires-dirty;
-	abide by the hinting rules for hint-wires-clean; 
+hint-wires is a progressive hint topic. Understand "wires", "wire" as the hint-wires. The printed name is "wires". The progression is {"I wonder what was connected to the wires before.", "Faraji might look on the roof for a clue.", "It looks like the wires run from the rooftop aerial. Too bad there's no TV to hook up.", "What could Faraji connect to the wires instead?", "Faraji should have a close look at the aerial.", "It looks like there's a strange socket attached to the aerial.", "Maybe it needs power.", "Perhaps Faraji could use the wires to supply power to the aerial.", "Faraji should find a power source to connect to the wires.", "Has Faraji had a look at the abandoned truck in the northeastern part of town?", "Faraji should look under the hood of the truck.", "Maybe a battery?", "It doesn't seem like the truck battery will work.", "Faraji should look for a clean battery.", "Where else could Faraji find a battery?", "How about Faraji's car? It's parked right outside the BOSH offices.", "Faraji needs to get back to Enigma Lake and Henry's.", "Then they can connect the battery to the wires.", "ATTACH BATTERY TO WIRES"}.
 	
 Activating hint-wires:
 	if the wires are seen and the clean battery is not hooked up:
@@ -440,7 +432,7 @@ Understand "strange/shiny/metal/metallic/cylindrical/cylinder/object" as hint-sh
 The printed name is "[shiny astral resonator]".
 The progression is {"Has Faraji had a look at the [shiny astral resonator]?", "Is it reminiscent of anything?", "If not, Faraji should look around some more.", "The [shiny astral resonator] has two metal chains, each with a metal clamp. That seems like it might be hooked up somewhere", "Faraji should around for a place to attach something like that.", "Check the roof of the radio station.", "There's a strange platform attached to the tower.", "PUT SHINY RESONATOR ON PLATFORM"}.
 
-hinting the hint-shiny-resonator:
+hinting the hint-shiny-resonator when the hint-shiny-resonator is not progressive:
 	if Astral Secrets is not read:
 		rule succeeds with result "Maybe Faraji can find something to tell them what this thing is.";
 	otherwise if not mounted-rusty-resonator and not mounted-makeshift-resonator:
@@ -460,7 +452,13 @@ Activating the hint-shiny-resonator:
 	if the shiny astral resonator is seen and not mounted-shiny-resonator:
 		activate;
 	deactivate;
-	
+
+The hint-power-shiny-resonator is a progressive hint topic. Understand "power/shiny/resonator" as the hint-power-shiny-resonator. The printed name is "power shiny resonator". The progression is {"The shiny astral resonator is on the platform, but it's not doing anything.", "The resonator needs power.", "Notice the metal cabinet next to the broadcast tower.", "Faraji should open the cabinet.", "Faraji will need the bolt cutters to open the cabinet.", "The bolt cutters are in the truck bed."}.
+
+Activating the hint-power-shiny-resonator:
+	if mounted-shiny-resonator and the power switch is switched off:
+		activate;
+	deactivate;
 
 The hint-bookstore-shelves is a progressive hint topic. Understand "bookstore/shelves/shelf/bookshelf/bookshelves", "reading room shelves/shelf/bookshelf/bookshelves" as the hint-bookstore-shelves. The printed name is "bookstore shelves". The progression is {"You're probably wondering what the point of the bookstore shelves is.", "There isn't any point. Can't a thing exist just for its own sake?"}.
 
@@ -473,7 +471,7 @@ Activating the hint-bookstore-shelves:
 The hint-bookstore-basement is a progressive hint topic. Understand "bookstore/basement", "reading room basement" as the hint-bookstore-basement. The printed name is "bookstore basement". The progression is {"What's up with the walls in the basement?", "They're old and crumbling, and there's a breeze.", "Maybe there's something behind the walls.", "How would Faraji get through the walls?", "Faraji should probably look for a tool to break through the walls.", "Go find a sledgehammer.", "Once you have the sledgehammer, you can break through the walls.", "HIT WALLS WITH SLEDGEHAMMER"}.
 
 Activating the hint-bookstore-basement:
-	if the bookstore basement is visited:
+	if the bookstore basement is visited and the bricked-up-hole is unrevealed:
 		activate;
 	deactivate;
 
@@ -520,7 +518,7 @@ Activating the hint-doll-fly:
 		activate;
 	deactivate;
 
-The hint-extension-cord is a progressive hint topic. Understand "extension/cord" as the hint-extension-cord. The printed name is "extension cord". The progression is {"What do people use extension cords for?", "There's an electrical outlet in the church.", "When working with the extension cord, remember the two ends can be in different rooms.", "There's no need to unplug it once it's plugged into the church outlet.", "Two different things can be plugged into the extension cord. One is the table lamp in the department store.", "The other you'll know when you have it."}.
+The hint-extension-cord is a progressive hint topic. Understand "extension/cord" as the hint-extension-cord. The printed name is "extension cord". The progression is {"What do people use extension cords for?", "There's an electrical outlet in the church.", "When working with the extension cord, remember the two ends can be in different rooms.", "There's no need to unplug the cord once it's plugged into the church outlet.", "Two different things can be plugged into the extension cord. One is the table lamp in the department store.", "The other you'll know when you have it."}.
 
 Activating the hint-extension-cord:
 	if the extension cord is seen and not mounted-makeshift-resonator:
@@ -559,9 +557,10 @@ Activating the hint-lizard-people:
 		activate;
 	deactivate;
 
-The hint-wooden-frame is a hint topic. Understand "wooden/frame" as the hint-wooden-frame. The printed name is "wooden frame". 
+The hint-wooden-frame is a progressive hint topic. Understand "wooden/frame" as the hint-wooden-frame. The printed name is "wooden frame". 
+The progression is {"What is the wooden frame for?", "The wooden frame looks like it's meant to hold specific things. But what?", "Have you read the Witnessing of Hezekiah? Find it and read it first.", "The Witnessing of Hezekiah mentions a frame formed 'from the wood of the ash tree'.", "Hezekiah also mentions 'a sacred artifact, a resonator'.", "Faraji can't proceed further if they don't know what 'a resonator' is. There is a book in town that can help.", "Perhaps, by 'a resonator', Hezekiah means an astral resonator.", "Hezekiah also mentions 'the resonant origin', 'the ghostly light', and 'the astral focus'. What might those be?", "When the proper elements are put in the frame, the astral resonator will be complete.", "Faraji must then tap it with the Rod of Hezekiah."}.
 
-The hint-wooden-frame-witnessing is an unlisted progressive hint topic.
+[ The hint-wooden-frame-witnessing is an unlisted progressive hint topic.
 The progression is {"The Witnessing of Hezekiah mentions a frame formed 'from the wood of the ash tree'.", "Hezekiah also mentions 'a sacred artifact, a resonator'.", "Faraji can't proceed further if they don't know what 'a resonator' is."}.
 
 The hint-wooden-frame-resonator is an unlisted progressive hint topic.
@@ -573,7 +572,7 @@ hinting the hint-wooden-frame:
 	otherwise if Astral Secrets is not read:
 		abide by the hinting rules for the hint-wooden-frame-witnessing;
 	otherwise:
-		abide by the hinting rules for the hint-wooden-frame-resonator;
+		abide by the hinting rules for the hint-wooden-frame-resonator; ]
 
 Activating the hint-wooden-frame:
 	if the wooden frame is seen and the wooden frame is somewhere:
@@ -583,21 +582,21 @@ Activating the hint-wooden-frame:
 The hint-resonant-origin is a progressive hint topic. Understand "resonant/origin" as the hint-resonant-origin. The printed name is "resonant origin". The progression is {"What might the resonant origin be?", "What might be the origin of resonance?", "Maybe Faraji should look around the town some more.", "The tuning fork in the music store is a source of resonance.", "Faraji should try inserting the tuning fork into the wooden frame."}.
 
 Activating the hint-resonant-origin:
-	if the hint-wooden-frame-resonator is exhausted and the makeshift astral resonator is nowhere and the tuning fork is not in the wooden frame:
+	if the hint-wooden-frame is exhausted and the makeshift astral resonator is nowhere and the tuning fork is not in the wooden frame:
 		activate;
 	deactivate;
 
 The hint-ghostly-light is a progressive hint topic. Understand "ghostly/light" as the hint-ghostly-light. The printed name is "ghostly light". The progression is {"What might the ghostly light be?", "What light sources has Faraji seen?", "Look around the town for a light source.", "The light bulb in the workshed is a source of light (if it's screwed into something).", "The table lamp in the department store is a source of light.", "Faraji should try inserting one of the light sources into the wooden frame."}.
 
 Activating the hint-ghostly-light:
-	if the hint-wooden-frame-resonator is exhausted and the makeshift astral resonator is nowhere and the table lamp is not in the wooden frame:
+	if the hint-wooden-frame is exhausted and the makeshift astral resonator is nowhere and the table lamp is not in the wooden frame:
 		activate;
 	deactivate;
 
 The hint-astral-focus is a progressive hint topic. Understand "astral/focus" as the hint-astral-focus. The printed name is "astral focus". The progression is {"What might the astral focus be?", "Does Faraji know of any things having to do with focus?", "Lenses are used to focus light.", "Faraji should try inserting the astral lenses into the wooden frame."}.
 
 Activating the hint-astral-focus:
-	if the hint-wooden-frame-resonator is exhausted and the makeshift astral resonator is nowhere and the pair of astral lenses is not in the wooden frame:
+	if the hint-wooden-frame is exhausted and the makeshift astral resonator is nowhere and the pair of astral lenses is not in the wooden frame:
 		activate;
 	deactivate;
 
@@ -780,45 +779,24 @@ Activating the hint-dowsing-rod:
 		activate;
 	deactivate;
 
-The hint-find-the-portal is a hint topic. The printed name is "Now what?". Understand "now/what" as the hint-find-the-portal. 
-
-The hint-find-the-portal-get-below is an unlisted progressive hint topic.  The progression is {"'Below the obelisk, something has woken.' What could that mean?", "Can Faraji get below the obelisk?"}.
-
-The hint-find-the-portal-find-cave is an unlisted progressive hint topic. The progression is {"Remember that the dowsing rod can help you find buried things.", "Faraji should try going more places with the dowsing rod.", "Faraji should go to the workshed with the dowsing rod.", "Then Faraji should EXAMINE FLOOR."}.
+The hint-find-the-portal is a progressive hint topic. The printed name is "Now what?". Understand "now/what" as the hint-find-the-portal. The progression is {"'Below the obelisk, something has woken.' What could that mean?", "Can Faraji get below the obelisk?", "Remember that the dowsing rod can help you find buried things.", "Faraji should try going more places with the dowsing rod.", "Faraji should go to the workshed with the dowsing rod.", "Then Faraji should EXAMINE FLOOR."}.
 
 Activating the hint-find-the-portal:
 	if portal opened is true and the old root cellar is unvisited:
 		activate;
 	deactivate;
 
-Hinting the hint-find-the-portal:
-	if hint-find-the-portal-get-below is active:
-		abide by the hinting rules for the hint-find-the-portal-get-below;
-	if hint-find-the-portal-find-cave is active:
-		abide by the hinting rules for the hint-find-the-portal-find-cave;
-	rule succeeds with result "C'mon, Faraji, go through the portal.";
-
-Activating the hint-find-the-portal-get-below:
-	if the ethereal portal is not seen:
-		activate;
-	deactivate;
-
-Activating the hint-find-the-portal-find-cave:
-	if the hidden cave is unvisited:
-		activate;
-	deactivate;
-
 The hint-root-cellar is a progressive hint topic. Understand "root/cellar" as the hint-root-cellar. The printed name is "root cellar". The progression is {"Faraji should talk to Daniels.", "When he asks, Faraji should give him the recall button.", "Then Faraji should press the button."}.
 
 Activating the hint-root-cellar:
-	if the old root cellar is visited and the dumpster is unvisited:
+	if the location is the old root cellar:
 		activate;
 	deactivate;
 
 The hint-answer-the-phone-finally is a progressive hint topic. Understand "finally/answer/the/phone" as the hint-answer-the-phone-finally. The printed name is "answer the phone finally". The progression is {"Faraji still needs to answer the phone.", "What is this thing Daniels gave us? A wristwatch?", "Maybe it's the pawn shop owner's watch.", "Faraji should go to the pawn shop and give the watch to the owner.", "What can Faraji do with a gift card for $5?", "Faraji should go to the conveinence store and buy something.", "Like a screwdriver, maybe.", "Faraji should go to the front office and open the vent with the screwdriver.", "Faraji should use the hex wrench to open the desk.", "Faraji should answer the phone. There! Was that so hard?"}.
 
 Activating the hint-answer-the-phone-finally:
-	if the blue flipphone is not handled and the dumpster is visited:
+	if the blue flipphone is not handled and the inside-the-dumpster is visited:
 		activate;
 	deactivate;
 
@@ -832,7 +810,7 @@ Activating the hint-doris-thumb-drive:
 The hint-getting-into-the-gym is a progressive hint topic. Understand "getting/into/the/gym/gymnasium" as the hint-getting-into-the-gym. The printed name is "getting into the gym". The progression is {"You've probably noticed the gym is locked. Is there another way in?", "It's not a key.", "Faraji should look around the town for a way to get into the gym.", "Faraji should look in the bookstore basement.", "Once Faraji is in the sewer tunnels, use the astral lenses to look for a tunnel."}.
 
 Activating the hint-getting-into-the-gym:
-	if the gym door is tried and the gymnasium is unvisited:
+	if the gym door is tried and the public gymnasium is unvisited:
 		activate;
 	deactivate;
 

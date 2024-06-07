@@ -694,8 +694,13 @@ The radio station roof is a leavable room. It is above Radio Station WGXC. It ha
 The preposition is "on".
 The x-coordinate of the radio station roof is 2. The y-coordinate of the radio station roof is -2.
 
-The metal cabinet is a closed, locked, openable, scenery container in the radio station roof. "The metal cabinet is attached to the foot of the broadcast tower[if the metal cabinet is locked], held shut by a padlock[otherwise if the metal cabinet is closed], closed[otherwise], hanging open. Inside it is a power switch[end if]." 
+The metal cabinet is a closed, locked, openable, scenery container in the radio station roof. "The metal cabinet is attached to the foot of the broadcast tower[if the metal cabinet is locked], held shut by a padlock[otherwise if the metal cabinet is closed], closed[otherwise], hanging open. Inside it is a power switch, [power switch state][end if]." 
 
+To say power switch state:
+	if the power switch is switched on:
+		say "set to on";
+	otherwise:
+		say "set to off";
 
 Report opening the metal cabinet:
 	say "Faraji opens the metal cabinet, revealing a power switch inside. It is set to [if the power switch is switched on]on[otherwise]off[end if].";
@@ -1040,7 +1045,6 @@ Before answering the doll-fly that something:
 		say "Upon hearing the incantation [italic type][incantation of the doll-fly][roman type], [the doll-fly] wails a high-pitched, mournful sound, and then winks out of existence. It seems to have dropped something.";
 		now the doll-fly is off-stage;
 		now the Rod of Hezekiah is in the location;
-		lb;
 		[ say "[italic type][bracket]Yeah, that's right, you heard me: [incantation of the doll-fly]![close bracket][roman type][paragraph break]"; ]
 		stop the action;
 	otherwise:
@@ -1249,7 +1253,9 @@ To open the portal:
 
 Every turn when beam count is 3 and portal opened is false:
 	open the portal;
-	say "All of a sudden the obelisk itself begins to glow. The light from the crystal at its apex grows brighter and brighter, until it's almost blinding. Shielding their eyes, Faraji watches as the space around the obelisk shimmers and distorts. The previously gentle breeze is now a gale, [if location is the steeple]screaming through the steeple[otherwise if location is the radio station roof]howling through the struts of the radio tower[otherwise]shivering the television aerial[end if]. Then, with a huge crack, a bolt of lightning strikes the crystal. One can almost sense the electricity penetrating the earth. searching for something. And then, it's found it. Below the obelisk, something has woken."	
+	if the player is in Henry's Hot Skillet:
+		say "Something is happening outside. Faraji runs up to the roof to see. [run paragraph on]";
+	say "The obelisk itself has begun to glow. The light from the crystal at its apex grows brighter and brighter, until it's almost blinding. Shielding their eyes, Faraji watches as the space around the obelisk shimmers and distorts. The previously gentle breeze is now a gale, [if location is the steeple]screaming through the steeple[otherwise if location is the radio station roof]howling through the struts of the radio tower[otherwise]shivering the television aerial[end if]. Then, with a huge crack, a bolt of lightning strikes the crystal. One can almost sense the electricity penetrating the earth. searching for something. And then, it's found it. Below the obelisk, something has woken."	
 
 Instead of searching the telescope when the content of the tripod is the telescope: [looking through]
 	if mounted-rusty-resonator and mounted-shiny-resonator:
@@ -2407,84 +2413,84 @@ Instead of climbing up the metal ladder when the metal ladder is enclosed by the
 		-- Dave's pawn shop:
 			say "Dave gives Faraji a sharp look. 'Cut that out or I'll have to ask you to leave,' he says. Faraji climbs back down.";
 		-- astral-tunnel-1:
-			say "Well, that was fun.";
+			say "Faraji climbs quickly up and down the ladder. That was fun.";
 		-- astral-tunnel-2:
-			say "Well, that was fun.";
+			say "Faraji climbs quickly up and down the ladder. That was fun.";
 		-- astral-tunnel-3:
-			say "Well, that was fun.";
+			say "Faraji climbs quickly up and down the ladder. That was fun.";
 		-- back lot:
 			say "Faraji climbs up the ladder and peers into the dumpster. It's full of cardboard, mostly. Faraji climbs back down.";
 		-- laundromat back room:
-			say "Well, that was fun.";
+			say "Faraji climbs quickly up and down the ladder. That was fun.";
 		-- laundromat basement:
-			say "Well, that was fun.";
+			say "Faraji climbs quickly up and down the ladder. That was fun.";
 		-- back basement:
-			say "Well, that was fun.";
+			say "Faraji climbs quickly up and down the ladder. That was fun.";
 		-- Li'l Nectarine Convenience Store:
 			say "The clerk looks at Faraji with a puzzled expression. 'Um,' he says. Faraji climbs back down.";
 		-- Enigma Lake town hall:
-			say "Well, that was fun.";
+			say "Faraji climbs quickly up and down the ladder. That was fun.";
 		-- Enigma Park:
 			say "Faraji climbs up the ladder and looks out over the park. It's a nice view. Unfortunately, they cannot reach the ornament at the top. Faraji climbs back down.";
 		-- Lake shore north of the park:
 			say "Faraji climbs up the ladder onto the workshed roof. Unfortunately, the roof is not sturdy enough to accomodate them. The roof collapses, and Faraji falls into the shed below. The floor gives way as they land, and they fall through it onto a surface hard enough to cause major injury.";
 			end the story saying "Faraji has died.";
 		-- Rolle's department store:
-			say "Well, that was fun.";
+			say "Faraji climbs quickly up and down the ladder. That was fun.";
 		-- Henry's Hot Skillet:
-			say "Well, that was fun.";
+			say "Faraji climbs quickly up and down the ladder. That was fun.";
 		-- Reading Room:
-			say "Well, that was fun.";
+			say "Faraji climbs quickly up and down the ladder. That was fun.";
 		-- Fresnel's Music:
-			say "Well, that was fun.";
+			say "Faraji climbs quickly up and down the ladder. That was fun.";
 		-- Horton Family House Kitchen:
-			say "Well, that was fun.";
+			say "Faraji climbs quickly up and down the ladder. That was fun.";
 		-- Lake at Ridge:
-			say "Well, that was fun.";
+			say "Faraji climbs quickly up and down the ladder. That was fun.";
 		-- radio station roof:
 			say "Faraji climbs up the ladder. The view of the lake is nice. Faraji climbs back down.";
 		-- First Utilitarian Church of Enigma Lake:
-			say "Well, that was fun.";
+			say "Faraji climbs quickly up and down the ladder. That was fun.";
 		-- vestry: 
-			say "Well, that was fun.";
+			say "Faraji climbs quickly up and down the ladder. That was fun.";
 		-- church basement:
-			say "Well, that was fun.";
+			say "Faraji climbs quickly up and down the ladder. That was fun.";
 		-- steeple:
-			say "Well, that was fun.";
+			say "Faraji climbs quickly up and down the ladder. That was fun.";
 		-- workshed:
-			say "Well, that was fun.";
+			say "Faraji climbs quickly up and down the ladder. That was fun.";
 		-- hidden cave:
 			say "A ladder leans against the wall.";
 		-- circular chamber:
-			say "Well, that was fun.";
+			say "Faraji climbs quickly up and down the ladder. That was fun.";
 		-- Horton Family House Parlor:
-			say "Well, that was fun.";
+			say "Faraji climbs quickly up and down the ladder. That was fun.";
 		-- Second Floor of the Horton House:
-			say "Well, that was fun.";
+			say "Faraji climbs quickly up and down the ladder. That was fun.";
 		-- Horton astral tunnel:
-			say "Well, that was fun.";
+			say "Faraji climbs quickly up and down the ladder. That was fun.";
 		-- Fire Station 1:
-			say "Well, that was fun.";
+			say "Faraji climbs quickly up and down the ladder. That was fun.";
 		-- large grave:
 		 	try going up instead;
 		-- Bookstore Basement:
-			say "Well, that was fun.";
+			say "Faraji climbs quickly up and down the ladder. That was fun.";
 		-- sewer tunnel 1:
-			say "Well, that was fun.";
+			say "Faraji climbs quickly up and down the ladder. That was fun.";
 		-- sewer tunnel 2:
-			say "Well, that was fun.";
+			say "Faraji climbs quickly up and down the ladder. That was fun.";
 		-- sewer tunnel 3:
-			say "Well, that was fun.";
+			say "Faraji climbs quickly up and down the ladder. That was fun.";
 		-- astral-tunnel-elr:
-			say "Well, that was fun.";
+			say "Faraji climbs quickly up and down the ladder. That was fun.";
 		-- gym basement:
-			say "Well, that was fun.";
+			say "Faraji climbs quickly up and down the ladder. That was fun.";
 		-- Biff's Office:
-			say "Well, that was fun.";
+			say "Faraji climbs quickly up and down the ladder. That was fun.";
 		-- dumpster:
 			try going up instead;
 		-- BOSH office hallway:
-			say "Well, that was fun.";
+			say "Faraji climbs quickly up and down the ladder. That was fun.";
 		-- BOSH chief's office:
 			say "Klimp barks 'No climbing!' Faraji climbs back down.";	
 		-- Moira's office:
@@ -2492,7 +2498,7 @@ Instead of climbing up the metal ladder when the metal ladder is enclosed by the
 		-- utility closet:
 			say "There's not enough room for that.";
 		-- otherwise:
-			say "Faraji can't climb the ladder when its lying on the [if location is inside]floor[otherwise]ground[end if].";
+			say "Faraji can't climb the ladder when it's lying on the [if location is inside]floor[otherwise]ground[end if].";
 
 Instead of climbing up the metal ladder when the metal ladder is in the large grave and the location is the horton graveyard:
 	try going down;
@@ -2711,7 +2717,7 @@ The snarky remark of sewer tunnel 2 is "Actually it smells better than Swamp Par
 
 The x-coordinate of sewer tunnel 2 is 0. The y-coordinate of sewer tunnel 2 is 0.5.
 
-a sewer tunnel 3 is east of sewer tunnel 2. It is in ELR. It is indoors. It is privately-named. It is always-indefinite. The printed name is "sewer tunnel". Understand "sewer/tunnel" as sewer tunnel 3. "The tunnel is dark and damp, with a low ceiling. From here, it leads west, and turns into a small crawl to the east. There is a metal door with a lock to the north."
+a sewer tunnel 3 is east of sewer tunnel 2. It is in ELR. It is indoors. It is privately-named. It is always-indefinite. The printed name is "sewer tunnel". Understand "sewer/tunnel" as sewer tunnel 3. "The tunnel is dark and damp, with a low ceiling. From here, it leads west, and turns into a small crawl to the east. There is a metal door with to the north."
 
 
 The x-coordinate of sewer tunnel 3 is 2. The y-coordinate of sewer tunnel 3 is 0.5.
@@ -2721,7 +2727,7 @@ The astral-tunnel-elr is forth of sewer tunnel 3. It is privately-named. The pri
 
 astral-tunnel-elr is forthsouth of the gym basement.
 
-The gymnasium basement door is a closed openable lockable scenery door. It is north of sewer tunnel 3 and south of the gym basement. "A metal door with a lock." 
+The gymnasium basement door is a closed openable lockable scenery door. It is north of sewer tunnel 3 and south of the gym basement. "A heavy metal door." 
 
 After opening the gymnasium basement door:
 	say "Faraji manages to force the door open.";
@@ -2780,7 +2786,7 @@ The x-coordinate of Henry's Hot Skillet is -1. The y-coordinate of Henry's Hot S
 the Skillet door is a closed locked openable lockable scenery door. It is south of Main at Solvay and north of Henry's Hot Skillet. The Skillet door has matching key the brass key.
 "An old-fashioned swinging door, it reads 'Henry's Hot Skillet'."
 
-Check opening the Skillet door when the Skillet door is locked:
+Before opening the Skillet door when the Skillet door is locked:
 	now the player knows skillet-door-locked;
 
 The lunch counter is a scenery supporter in Henry's Hot Skillet. "A typical mid-twentieth-century lunch counter."
@@ -3600,6 +3606,10 @@ Before inserting the table lamp into the wooden frame:
 		if the table lamp is plugged in:
 			stop the action;
 
+After inserting the table lamp into the wooden frame:
+	maybe condense the extension cord;
+	continue the action;
+
 [ After inserting the table lamp into the wooden frame:
 	say "Faraji inserts the table lamp into the wooden frame. It fits snugly into a round hole cut into the wood. The frame now holds [the list of things contained by the wooden frame].";
 	if the number of things contained by the wooden frame is 3:
@@ -3621,6 +3631,8 @@ Instead of attacking the wooden frame with the Rod of Hezekiah:
 			stop;
 	say "Faraji taps the wooden frame with the Rod of Hezekiah. Nothing happens.";
 	
+Does the player mean attacking the wooden frame with the dowsing rod:
+	it is very unlikely.
 
 Understand "tap [something]" as attacking.
 

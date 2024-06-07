@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 34722 words long.
+I've now read your source text, which is 34777 words long.
 
 
 -----------------------------------------------------
@@ -56,17 +56,17 @@ I've also read Snarky Remarks by Philip Riley, which is 235 words long.
 I've also read Followup Questions by Philip Riley, which is 248 words long.
 I've also read Scenery Supporters by Philip Riley, which is 179 words long.
 I've also read Simple Conversation by Philip Riley, which is 2399 words long.
-I've also read Hyperspace by Philip Riley, which is 17134 words long.
+I've also read Hyperspace by Philip Riley, which is 17138 words long.
 I've also read BOSH Facts by Philip Riley, which is 193 words long.
-I've also read Swamp Park by Philip Riley, which is 8191 words long.
+I've also read Swamp Park by Philip Riley, which is 8230 words long.
 I've also read Margaret by Philip Riley, which is 2582 words long.
-I've also read Enigma Lake by Philip Riley, which is 33413 words long.
+I've also read Enigma Lake by Philip Riley, which is 33703 words long.
 I've also read I Can Dig It by Philip Riley, which is 77 words long.
 I've also read BOSH Help by Philip Riley, which is 6496 words long.
 I've also read Overlook by Philip Riley, which is 763 words long.
 I've also read Gender Options by Nathanael Nerode, which is 7679 words long.
 I've also read Make Test by Philip Riley, which is 288 words long.
-I've also read BOSH Hints by Philip Riley, which is 7986 words long.
+I've also read BOSH Hints by Philip Riley, which is 8153 words long.
 I've also read Hearing by Philip Riley, which is 1220 words long.
 I've also read Improved Pushing by Philip Riley, which is 46 words long.
 I've also read PBR Common by Philip Riley, which is 109 words long.
@@ -343,8 +343,8 @@ Providing for a total heap of 65536, given requirement of 45840
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 297 files written as streams.
-CPU time: 1162 centiseconds
+Total of 298 files written as streams.
+CPU time: 1152 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

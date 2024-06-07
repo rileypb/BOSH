@@ -590,6 +590,7 @@ After printing the description of a dark room when the location is the back base
 		say "A washing machine is revealed in the darkness by the glow emanating from its drum.";
 		
 The broken washing machine is an enterable, closed, openable, transparent container. It is scenery. "It's a front-loading model. The inside of the drum is obscured by a shimmering curtain of light."
+Understand "drum/washer" as the broken washing machine.
 
 The strange glow is scenery in the back basement. "The glow is blue-white and flickering."
 It is far away.
@@ -675,6 +676,9 @@ The description of the stacks of crates is "[crates	description]."
 
 Check moving something with:
 	say "That isn't very helpful.";
+
+Instead of pushing the stacks of crates when the handtruck is in the location:
+	try moving the stacks of crates with the handtruck;
 	
 Instead of moving the stacks of crates with the handtruck:
 	if the broken washing machine is nowhere:
@@ -698,7 +702,7 @@ After touching the strange glow:
 	[ end the story saying "Thanks for testing my game. This is the end of Part 1."; ]
 	now the player is in Featureless Hyperplane;
 	
-The light switch is a scenery device in the back basement. It is switched on. Understand "glow-in-the-dark", "glowing" as the light switch. 
+The light switch is a scenery device in the back basement. It is switched on. Understand "glow-in-the-dark", "glowing", "lights" as the light switch. 
 The description is "It's a standard glow-in-the-dark light switch."
 
 After switching off the light switch:

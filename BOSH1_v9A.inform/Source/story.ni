@@ -499,6 +499,11 @@ Before going from the front office to the strip mall parking lot south during de
 	if the copy of the Washington Herald is not handled:
 		say "[We] [trip] over a newspaper left up against the door. [We] [pick] it up.";
 		now the copy of the Washington Herald is in the Strip Mall Parking Lot South;
+
+Before going from the strip mall parking lot south to the front office during denouement:
+	if the copy of the Washington Herald is not handled:
+		say "[We] [trip] over a newspaper left up against the door. [We] [pick] it up.";
+		now the copy of the Washington Herald is in the Strip Mall Parking Lot South;
 	
 
 Book 9 - Concepts
@@ -799,7 +804,7 @@ The description of the blue flipphone is "It's a cheap blue flipphone, purchased
 After taking apart the desk:
 	say "[We] [unscrew] the hex screws and [remove] the drawer. Inside, [we] find a little grey key and a blue flipphone. [We] [put] the drawer back together and [pocket] the key and the phone, being careful to leave the drawer unlocked.
 	
-	We answer the phone.[paragraph break]";
+	They answer the phone.[paragraph break]";
 	say "'Hello?'
 	
 	'Hello, Larch,' says a familiar voice -- it's Doris.
