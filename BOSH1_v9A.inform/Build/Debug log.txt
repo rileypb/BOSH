@@ -56,11 +56,11 @@ I've also read Snarky Remarks by Philip Riley, which is 235 words long.
 I've also read Followup Questions by Philip Riley, which is 248 words long.
 I've also read Scenery Supporters by Philip Riley, which is 179 words long.
 I've also read Simple Conversation by Philip Riley, which is 2399 words long.
-I've also read Hyperspace by Philip Riley, which is 17138 words long.
+I've also read Hyperspace by Philip Riley, which is 17144 words long.
 I've also read BOSH Facts by Philip Riley, which is 193 words long.
 I've also read Swamp Park by Philip Riley, which is 8230 words long.
 I've also read Margaret by Philip Riley, which is 2582 words long.
-I've also read Enigma Lake by Philip Riley, which is 33703 words long.
+I've also read Enigma Lake by Philip Riley, which is 35730 words long.
 I've also read I Can Dig It by Philip Riley, which is 77 words long.
 I've also read BOSH Help by Philip Riley, which is 6496 words long.
 I've also read Overlook by Philip Riley, which is 763 words long.
@@ -154,7 +154,7 @@ Regional: CONSTANT_VNT'elr'-region(I555_elr)(I445'elr')
  == region
 Regional: CONSTANT_VNT'elr'-region(I555_elr)(I445'elr')
  == region
-Regional: CONSTANT_VNT'help area'-region(I811_help_area)(I699'help area')
+Regional: CONSTANT_VNT'help area'-region(I817_help_area)(I704'help area')
  == region
 Regional: CONSTANT_VNT'elr'-region(I555_elr)(I445'elr')
  == region
@@ -162,7 +162,9 @@ Regional: CONSTANT_VNT'elr'-region(I555_elr)(I445'elr')
  == region
 Regional: CONSTANT_VNT'elr'-region(I555_elr)(I445'elr')
  == region
-Regional: CONSTANT_VNT'help area'-region(I811_help_area)(I699'help area')
+Regional: CONSTANT_VNT'elr'-region(I555_elr)(I445'elr')
+ == region
+Regional: CONSTANT_VNT'help area'-region(I817_help_area)(I704'help area')
  == region
 
 
@@ -204,6 +206,10 @@ Phase XII ... Code generation
          == region
                                 0 = action. 1 = object
                                 0 = action. 1 = object
+        Regional: CONSTANT_VNT'elr'-region(I555_elr)(I445'elr')
+         == region
+        Regional: CONSTANT_VNT'elr'-region(I555_elr)(I445'elr')
+         == region
         Regional: CONSTANT_VNT'hyperspace'-region(I243_hyperspace)(I149'hyperspace')
          == region
         Regional: CONSTANT_VNT'hyperspace'-region(I243_hyperspace)(I149'hyperspace')
@@ -295,14 +301,18 @@ Regional: CONSTANT_VNT'elr'-region(I555_elr)(I445'elr')
                                             Fail: list of numbers (~) real number = nothing
                                         Fail: scene (~) number = nothing
                                         Fail: scene (~) number = nothing
+        Regional: CONSTANT_VNT'elr'-region(I555_elr)(I445'elr')
+         == region
+        Regional: CONSTANT_VNT'elr'-region(I555_elr)(I445'elr')
+         == region
                                 0 = objects valued property. 1 = object
             Regional: CONSTANT_VNT'elr'-region(I555_elr)(I445'elr')
              == region
             Regional: CONSTANT_VNT'elr'-region(I555_elr)(I445'elr')
              == region
-            Regional: CONSTANT_VNT'help area'-region(I811_help_area)(I699'help area')
+            Regional: CONSTANT_VNT'help area'-region(I817_help_area)(I704'help area')
              == region
-            Regional: CONSTANT_VNT'help area'-region(I811_help_area)(I699'help area')
+            Regional: CONSTANT_VNT'help area'-region(I817_help_area)(I704'help area')
              == region
 
 
@@ -343,8 +353,8 @@ Providing for a total heap of 65536, given requirement of 45840
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 298 files written as streams.
-CPU time: 1152 centiseconds
+Total of 299 files written as streams.
+CPU time: 1292 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

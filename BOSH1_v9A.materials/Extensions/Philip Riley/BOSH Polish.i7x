@@ -442,12 +442,13 @@ washing machines	"And deprive the laundromat of its livelihood?"	"[We] [move] th
 wires	"The wires travel up through a hole in the ceiling. They can't be taken without some work."	"The wires travel up through a hole in the ceiling. They can't be moved without some work."
 work schedule	"[We] [don't] need it."	"[We] [don't] need it."
 workshed-facade	"[We] attempt to push the shed around, but it's not going anywhere."	"[We] attempt to push the shed around, but it's not going anywhere."
-woven baskets	"Those belong to the Onondaga."	"Those belong to the Onondaga."
+woven basket	"That belongs to the Onondaga."	"That belongs to the Onondaga."
 Waiting-for-the-Aliens	"That belongs to Chief Klimp."	"That belongs to Chief Klimp."
 Travels in Time	"That belongs to Chief Klimp."	"That belongs to Chief Klimp."
 Dictionary of Strangeness	"That belongs to Chief Klimp."	"That belongs to Chief Klimp."
 Enigma Park	"That's somewhat heavy."	"[We] [push] it around a bit, but it's only fun for a moment."
 Trash	"Ugh. No."	"Ugh. No."
+Trash-boxes	"Ugh. No."	"Ugh. No."
 
 
 Table of Floors (continued)

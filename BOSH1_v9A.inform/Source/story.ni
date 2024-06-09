@@ -1075,6 +1075,8 @@ Instead of going up when the location is inside-the-dumpster:
 Understand "climb out" as exiting.
 
 Some trash is scenery in inside-the-dumpster. The description is "It's a bunch of trash. It's smelly and gross." 
+
+Some trash-boxes are scenery in inside-the-dumpster. The description is "A bunch of cardboard boxes, flattened and stacked."
  
 Section 3 - 
 

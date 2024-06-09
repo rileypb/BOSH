@@ -1252,7 +1252,7 @@ what-is-a-lizard-man is a questioning quip.
 	The printed name is "what is a lizard man".
 	Understand "what/is/a/lizard/man" as what-is-a-lizard-man.
 	The comment is "[We] [look] incredulous. 'And just what is a lizard man?'".
-	The reply is "'Just what it sounds like. It's a bipedal, intelligent reptilian creature.'".
+	The reply is "'Just what it sounds like. It's a bipedal, intelligent reptilian creature. Strange people. Deathly allergic to rutabagas.'".
 	It quip-supplies Doris.
 	It follows yes-aliens.
 	It follows no-aliens.
