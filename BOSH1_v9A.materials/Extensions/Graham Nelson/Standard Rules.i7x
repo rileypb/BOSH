@@ -4479,7 +4479,8 @@ Understand "drop [things preferably held]" as dropping.
 Understand "drop [other things] in/into/down [something]" as inserting it into.
 Understand "drop [other things] on/onto [something]" as putting it on.
 Understand "drop [something preferably held] at/against [something]" as throwing it at.
-Understand the commands "throw" and "discard" as "drop".
+Understand "throw [something preferably held] at/against [something]" as throwing it at.
+Understand the command "discard" as "drop".
 
 Understand "give [something preferably held] to [someone]" as giving it to.
 Understand "give [someone] [something preferably held]" as giving it to (with nouns reversed).

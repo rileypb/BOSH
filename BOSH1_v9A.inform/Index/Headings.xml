@@ -95,238 +95,238 @@
     </dict>
     <key>13</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>476</integer>
+        <key>Line</key><integer>479</integer>
         <key>Title</key><string>Book 7 - Actions</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>14</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>478</integer>
+        <key>Line</key><integer>481</integer>
         <key>Title</key><string>Chapter 1 - Knocking</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>15</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>492</integer>
+        <key>Line</key><integer>495</integer>
         <key>Title</key><string>Book 8 - Script</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>16</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>509</integer>
+        <key>Line</key><integer>512</integer>
         <key>Title</key><string>Book 9 - Concepts</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>17</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>511</integer>
+        <key>Line</key><integer>514</integer>
         <key>Title</key><string>Chapter 1 - Subjects and Facts</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>18</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>599</integer>
+        <key>Line</key><integer>602</integer>
         <key>Title</key><string>Book 10 - Kinds</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>19</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>601</integer>
+        <key>Line</key><integer>604</integer>
         <key>Title</key><string>Book 11 - The Players</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>20</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>744</integer>
+        <key>Line</key><integer>747</integer>
         <key>Title</key><string>Book 12 - Some Speech Phrases</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>21</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>772</integer>
+        <key>Line</key><integer>775</integer>
         <key>Title</key><string>Book 13 - Places</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>22</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>774</integer>
+        <key>Line</key><integer>777</integer>
         <key>Title</key><string>Chapter 1 - BOSH HQ and Swamp Park</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>23</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>779</integer>
+        <key>Line</key><integer>782</integer>
         <key>Title</key><string>Section 1 - Your Office</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>24</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>945</integer>
+        <key>Line</key><integer>948</integer>
         <key>Title</key><string>Section 2 - Back Lot</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>25</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1060</integer>
+        <key>Line</key><integer>1063</integer>
         <key>Title</key><string>Section 2.5 - Inside the dumpster</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>26</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1081</integer>
+        <key>Line</key><integer>1084</integer>
         <key>Title</key><string>Section 3 -</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>27</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1125</integer>
+        <key>Line</key><integer>1128</integer>
         <key>Title</key><string>Section 4 - Front Office</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>28</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1288</integer>
+        <key>Line</key><integer>1291</integer>
         <key>Title</key><string>Section 5 - BOSH chief's office</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>29</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1458</integer>
+        <key>Line</key><integer>1461</integer>
         <key>Title</key><string>Section 6 - Moira's office</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>30</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1654</integer>
+        <key>Line</key><integer>1657</integer>
         <key>Title</key><string>Section 7 - Moira Interjections</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>31</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1694</integer>
+        <key>Line</key><integer>1697</integer>
         <key>Title</key><string>Book 15 - The Phone Call</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>32</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1701</integer>
+        <key>Line</key><integer>1704</integer>
         <key>Title</key><string>Book 16 - Moving Between Rooms</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>33</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1726</integer>
+        <key>Line</key><integer>1729</integer>
         <key>Title</key><string>Chapter 1 - Leaving the Front Office</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>34</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1733</integer>
+        <key>Line</key><integer>1736</integer>
         <key>Title</key><string>Chapter 2 - Klimp Arrives</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>35</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1735</integer>
+        <key>Line</key><integer>1738</integer>
         <key>Title</key><string>Book 17 - Commerce and Conversation</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>36</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1748</integer>
+        <key>Line</key><integer>1751</integer>
         <key>Title</key><string>Book 18 - Sound</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>37</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>1750</integer>
+        <key>Line</key><integer>1753</integer>
         <key>Title</key><string>Book 18.5 - Quiz table</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>38</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>2122</integer>
+        <key>Line</key><integer>2125</integer>
         <key>Title</key><string>Book 18.6 - Klimp Interjections</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>39</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>2166</integer>
+        <key>Line</key><integer>2169</integer>
         <key>Title</key><string>Book 18.7 The Phone Sound</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>40</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>2185</integer>
+        <key>Line</key><integer>2188</integer>
         <key>Title</key><string>Book 19 - Verbs</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>41</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>2190</integer>
+        <key>Line</key><integer>2193</integer>
         <key>Title</key><string>Book 20 - Images</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>42</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>2358</integer>
+        <key>Line</key><integer>2361</integer>
         <key>Title</key><string>Book 20.5 Miscellaneous</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>43</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>2464</integer>
+        <key>Line</key><integer>2467</integer>
         <key>Title</key><string>Book 21 - Not For Release</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>44</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>2728</integer>
+        <key>Line</key><integer>2731</integer>
         <key>Title</key><string>Volume 2 - Test command tweak for clean transcripts</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>45</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>2818</integer>
+        <key>Line</key><integer>2821</integer>
         <key>Title</key><string>Volume 3 - The Story</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>46</key><dict>
         <key>Filename</key><string>BOSH1_v9A.inform/Source/story.ni</string>
-        <key>Line</key><integer>2821</integer>
+        <key>Line</key><integer>2824</integer>
         <key>Title</key><string>Book 1 - The Thumb Drive</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
@@ -717,490 +717,490 @@
     </dict>
     <key>102</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>4663</integer>
+        <key>Line</key><integer>4664</integer>
         <key>Title</key><string>Part SR5 - Phrasebook</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>103</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>4665</integer>
+        <key>Line</key><integer>4666</integer>
         <key>Title</key><string>Section SR5/1/1 - Saying - Values</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>104</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>4681</integer>
+        <key>Line</key><integer>4682</integer>
         <key>Title</key><string>Section SR5/1/2 - Saying - Names with articles</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>105</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>4702</integer>
+        <key>Line</key><integer>4703</integer>
         <key>Title</key><string>Section SR5/1/3 - Saying - Say if and otherwise</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>106</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>4737</integer>
+        <key>Line</key><integer>4738</integer>
         <key>Title</key><string>Section SR5/1/4 - Saying - Say one of</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>107</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>4780</integer>
+        <key>Line</key><integer>4781</integer>
         <key>Title</key><string>Section SR5/1/5 - Saying - Paragraph control</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>108</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>4806</integer>
+        <key>Line</key><integer>4807</integer>
         <key>Title</key><string>Section SR5/1/6 - Saying - Special characters</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>109</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>4821</integer>
+        <key>Line</key><integer>4822</integer>
         <key>Title</key><string>Section SR5/1/7 - Saying - Fonts and visual effects</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>110</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>4842</integer>
+        <key>Line</key><integer>4843</integer>
         <key>Title</key><string>Section SR5/1/8 - Saying - Some built-in texts</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>111</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>4857</integer>
+        <key>Line</key><integer>4858</integer>
         <key>Title</key><string>Section SR5/1/9 - Saying - Saying lists of things</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>112</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>4964</integer>
+        <key>Line</key><integer>4965</integer>
         <key>Title</key><string>Section SR5/1/10 - Saying - Group in and omit from lists</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>113</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>4991</integer>
+        <key>Line</key><integer>4992</integer>
         <key>Title</key><string>Section SR5/1/11 - Saying - Lists of values</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>114</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>5003</integer>
+        <key>Line</key><integer>5004</integer>
         <key>Title</key><string>Section SR5/1/12 - Saying - Filtering contents - Unindexed</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>115</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>5010</integer>
+        <key>Line</key><integer>5011</integer>
         <key>Title</key><string>Section SR5/1/13 - Saying - Responses</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>116</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>5016</integer>
+        <key>Line</key><integer>5017</integer>
         <key>Title</key><string>Section SR5/2/1 - Values - Making conditions true</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>117</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>5022</integer>
+        <key>Line</key><integer>5023</integer>
         <key>Title</key><string>Section SR5/2/2 - Values - Giving values temporary names</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>118</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>5079</integer>
+        <key>Line</key><integer>5080</integer>
         <key>Title</key><string>Section SR5/2/4 - Values - Arithmetic</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>119</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>5140</integer>
+        <key>Line</key><integer>5141</integer>
         <key>Title</key><string>Section SR5/2/4a - Values - Real Arithmetic (for Glulx only)</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>120</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>5202</integer>
+        <key>Line</key><integer>5203</integer>
         <key>Title</key><string>Section SR5/2/4a - Values - Trigonometry (for Glulx only)</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>121</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>5233</integer>
+        <key>Line</key><integer>5234</integer>
         <key>Title</key><string>Section SR5/2/4a - Values - Hyperbolic functions (for Glulx only)</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>122</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>5263</integer>
+        <key>Line</key><integer>5264</integer>
         <key>Title</key><string>Section SR5/2/5 - Values - Enumerations</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>123</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>5281</integer>
+        <key>Line</key><integer>5282</integer>
         <key>Title</key><string>Section SR5/2/6 - Values - Truth states</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>124</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>5287</integer>
+        <key>Line</key><integer>5288</integer>
         <key>Title</key><string>Section SR5/2/7 - Values - Randomness</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>125</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>5311</integer>
+        <key>Line</key><integer>5312</integer>
         <key>Title</key><string>Section SR5/2/8 - Values - Tables</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>126</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>5366</integer>
+        <key>Line</key><integer>5367</integer>
         <key>Title</key><string>Section SR5/2/9 - Values - Sorting tables</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>127</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>5378</integer>
+        <key>Line</key><integer>5379</integer>
         <key>Title</key><string>Section SR5/2/10 - Values - Breaking down text</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>128</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>5422</integer>
+        <key>Line</key><integer>5423</integer>
         <key>Title</key><string>Section SR5/2/11 - Values - Matching text</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>129</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>5456</integer>
+        <key>Line</key><integer>5457</integer>
         <key>Title</key><string>Section SR5/2/12 - Values - Replacing text</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>130</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>5500</integer>
+        <key>Line</key><integer>5501</integer>
         <key>Title</key><string>Section SR5/2/13 - Values - Casing of text</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>131</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>5521</integer>
+        <key>Line</key><integer>5522</integer>
         <key>Title</key><string>Section SR5/2/14 - Values - Adaptive text</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>132</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>5567</integer>
+        <key>Line</key><integer>5568</integer>
         <key>Title</key><string>Section SR5/2/15 - Values - Lists</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>133</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>5619</integer>
+        <key>Line</key><integer>5620</integer>
         <key>Title</key><string>Section SR5/2/16 - Values - Length of lists</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>134</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>5640</integer>
+        <key>Line</key><integer>5641</integer>
         <key>Title</key><string>Section SR5/2/17 - Values - Reversing and rotating lists</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>135</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>5652</integer>
+        <key>Line</key><integer>5653</integer>
         <key>Title</key><string>Section SR5/2/18 - Values - Sorting lists</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>136</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>5670</integer>
+        <key>Line</key><integer>5671</integer>
         <key>Title</key><string>Section SR5/2/19 - Values - Relations</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>137</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>5740</integer>
+        <key>Line</key><integer>5741</integer>
         <key>Title</key><string>Section SR5/2/20 - Values - Functional programming</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>138</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>5819</integer>
+        <key>Line</key><integer>5820</integer>
         <key>Title</key><string>Section SR5/2/21 - Values - Files (for Glulx external files language element only)</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>139</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>5849</integer>
+        <key>Line</key><integer>5850</integer>
         <key>Title</key><string>Section SR5/2/22 - Values - Figures (for figures language element only)</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>140</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>5858</integer>
+        <key>Line</key><integer>5859</integer>
         <key>Title</key><string>Section SR5/2/23 - Values - Sound effects (for sounds language element only)</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>141</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>5867</integer>
+        <key>Line</key><integer>5868</integer>
         <key>Title</key><string>Section SR5/3/1 - Control phrases - If and unless</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>142</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>5880</integer>
+        <key>Line</key><integer>5881</integer>
         <key>Title</key><string>Section SR5/3/2 - Control phrases - While</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>143</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>5886</integer>
+        <key>Line</key><integer>5887</integer>
         <key>Title</key><string>Section SR5/3/3 - Control phrases - Repeat</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>144</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>5944</integer>
+        <key>Line</key><integer>5945</integer>
         <key>Title</key><string>Section SR5/3/6 - Control phrases - Changing the flow of loops</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>145</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>5953</integer>
+        <key>Line</key><integer>5954</integer>
         <key>Title</key><string>Section SR5/3/7 - Control phrases - Deciding outcomes</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>146</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>5972</integer>
+        <key>Line</key><integer>5973</integer>
         <key>Title</key><string>Section SR5/3/8 - Control phrases - Stop or go</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>147</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>5979</integer>
+        <key>Line</key><integer>5980</integer>
         <key>Title</key><string>Section SR5/4/1 - Actions, activities and rules - Trying actions</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>148</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>5993</integer>
+        <key>Line</key><integer>5994</integer>
         <key>Title</key><string>Section SR5/4/2 - Actions, activities and rules - Action requirements</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>149</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>6011</integer>
+        <key>Line</key><integer>6012</integer>
         <key>Title</key><string>Section SR5/4/3 - Actions, activities and rules - Stop or continue</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>150</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>6020</integer>
+        <key>Line</key><integer>6021</integer>
         <key>Title</key><string>Section SR5/4/4 - Actions, activities and rules - Actions as values</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>151</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>6044</integer>
+        <key>Line</key><integer>6045</integer>
         <key>Title</key><string>Section SR5/4/5 - Actions, activities and rules - Carrying out activities</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>152</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>6057</integer>
+        <key>Line</key><integer>6058</integer>
         <key>Title</key><string>Section SR5/4/6 - Actions, activities and rules - Advanced activities</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>153</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>6084</integer>
+        <key>Line</key><integer>6085</integer>
         <key>Title</key><string>Section SR5/4/7 - Actions, activities and rules - Following rules</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>154</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>6136</integer>
+        <key>Line</key><integer>6137</integer>
         <key>Title</key><string>Section SR5/4/8 - Actions, activities and rules - Success and failure</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>155</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>6159</integer>
+        <key>Line</key><integer>6160</integer>
         <key>Title</key><string>Section SR5/5/1 - Model world - Ending the story</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>156</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>6189</integer>
+        <key>Line</key><integer>6190</integer>
         <key>Title</key><string>Section SR5/5/2 - Model world - Times of day</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>157</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>6211</integer>
+        <key>Line</key><integer>6212</integer>
         <key>Title</key><string>Section SR5/5/3 - Model world - Durations</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>158</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>6220</integer>
+        <key>Line</key><integer>6221</integer>
         <key>Title</key><string>Section SR5/5/4 - Model world - Timed events</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>159</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>6232</integer>
+        <key>Line</key><integer>6233</integer>
         <key>Title</key><string>Section SR5/5/5 - Model world - Scenes</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>160</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>6247</integer>
+        <key>Line</key><integer>6248</integer>
         <key>Title</key><string>Section SR5/5/6 - Model world - Timing of scenes</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>161</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>6262</integer>
+        <key>Line</key><integer>6263</integer>
         <key>Title</key><string>Section SR5/5/7 - Model world - Player's identity and location</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>162</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>6268</integer>
+        <key>Line</key><integer>6269</integer>
         <key>Title</key><string>Section SR5/5/8 - Model world - Moving and removing things</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>163</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>6286</integer>
+        <key>Line</key><integer>6287</integer>
         <key>Title</key><string>Section SR5/5/9 - Model world - The map</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>164</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>6319</integer>
+        <key>Line</key><integer>6320</integer>
         <key>Title</key><string>Section SR5/5/10 - Model world - Route-finding</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>165</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>6340</integer>
+        <key>Line</key><integer>6341</integer>
         <key>Title</key><string>Section SR5/5/11 - Model world - The object tree</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>166</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>6352</integer>
+        <key>Line</key><integer>6353</integer>
         <key>Title</key><string>Section SR5/6/1 - Understanding - Asking yes/no questions</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>167</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>6358</integer>
+        <key>Line</key><integer>6359</integer>
         <key>Title</key><string>Section SR5/6/2 - Understanding - The player's command</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>168</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>6373</integer>
+        <key>Line</key><integer>6374</integer>
         <key>Title</key><string>Section SR5/6/3 - Understanding - Changing the player's command</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>169</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>6388</integer>
+        <key>Line</key><integer>6389</integer>
         <key>Title</key><string>Section SR5/6/4 - Understanding - Scope and pronouns</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>170</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>6400</integer>
+        <key>Line</key><integer>6401</integer>
         <key>Title</key><string>Section SR5/8/1 - Message support - Issuance - Unindexed</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>171</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/graham nelson/standard rules.i7x</string>
-        <key>Line</key><integer>6417</integer>
+        <key>Line</key><integer>6418</integer>
         <key>Title</key><string>Section SR5/9/1 - Miscellaneous other phrases - Unindexed</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
@@ -2915,189 +2915,189 @@
     </dict>
     <key>416</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>1683</integer>
+        <key>Line</key><integer>1696</integer>
         <key>Title</key><string>Chapter 1 - The Lizard People part 2</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>417</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>1935</integer>
+        <key>Line</key><integer>2033</integer>
         <key>Title</key><string>Chapter 2 - Daniels</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>418</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>1989</integer>
+        <key>Line</key><integer>2087</integer>
         <key>Title</key><string>Book 24 - Lake shore west</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>419</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>2002</integer>
+        <key>Line</key><integer>2100</integer>
         <key>Title</key><string>Book 25 - Horton Family House Kitchen</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>420</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>2066</integer>
+        <key>Line</key><integer>2164</integer>
         <key>Title</key><string>Book 25.1 - Horton Family House Parlor</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>421</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>2167</integer>
+        <key>Line</key><integer>2265</integer>
         <key>Title</key><string>Book 25.5 - Horton Family House Second Floor</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>422</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>2215</integer>
+        <key>Line</key><integer>2313</integer>
         <key>Title</key><string>Book 26 - Astral Tunnel</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>423</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>2222</integer>
+        <key>Line</key><integer>2320</integer>
         <key>Title</key><string>Book 27 - Horton Graveyard</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>424</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>2339</integer>
+        <key>Line</key><integer>2437</integer>
         <key>Title</key><string>Book 28 - Fire Station 1</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>425</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>2352</integer>
+        <key>Line</key><integer>2450</integer>
         <key>Title</key><string>Part 1 - Stupid ladder tricks</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>426</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>2772</integer>
+        <key>Line</key><integer>2870</integer>
         <key>Title</key><string>Part 2 - Other stuff</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>427</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>2827</integer>
+        <key>Line</key><integer>2925</integer>
         <key>Title</key><string>Book 29 - Reading Room</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>428</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>2918</integer>
+        <key>Line</key><integer>3016</integer>
         <key>Title</key><string>Book 30 - Reading Room Basement</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>429</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>2970</integer>
+        <key>Line</key><integer>3068</integer>
         <key>Title</key><string>Book 31 - Sewer Tunnel</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>430</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>3001</integer>
+        <key>Line</key><integer>3099</integer>
         <key>Title</key><string>Book 32 - Fresnel's Music</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>431</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>3039</integer>
+        <key>Line</key><integer>3137</integer>
         <key>Title</key><string>Book 33 - Henry's Hot Skillet</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>432</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>3118</integer>
+        <key>Line</key><integer>3216</integer>
         <key>Title</key><string>Book 34 - Henry's Roof</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>433</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>3193</integer>
+        <key>Line</key><integer>3291</integer>
         <key>Title</key><string>Book 35 - Rolle's Department Store</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>434</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>3348</integer>
+        <key>Line</key><integer>3446</integer>
         <key>Title</key><string>Book 36 - Public Gymnasium</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>435</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>3498</integer>
+        <key>Line</key><integer>3596</integer>
         <key>Title</key><string>Book 37 - Gym Basement</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>436</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>3580</integer>
+        <key>Line</key><integer>3678</integer>
         <key>Title</key><string>Book 38 - Light sources</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>437</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>3589</integer>
+        <key>Line</key><integer>3687</integer>
         <key>Title</key><string>Volume 4 - Eerie Sounds</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>438</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>3604</integer>
+        <key>Line</key><integer>3702</integer>
         <key>Title</key><string>Volume 4.25 - The Mystic Compass in Enigma Lake</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>439</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>3623</integer>
+        <key>Line</key><integer>3721</integer>
         <key>Title</key><string>Volume 4.5 - The Lizard People</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>440</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>3884</integer>
+        <key>Line</key><integer>3981</integer>
         <key>Title</key><string>Volume 4.75 - Building the Makeshift Astral Resonator</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>441</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>3951</integer>
+        <key>Line</key><integer>4048</integer>
         <key>Title</key><string>Volume 5 - Polish</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>442</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/enigma lake.i7x</string>
-        <key>Line</key><integer>3961</integer>
+        <key>Line</key><integer>4058</integer>
         <key>Title</key><string>Volume 6 - Not for Release</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>

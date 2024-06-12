@@ -472,7 +472,10 @@ The parser error internal rule response (R) is "[if following-up is true]That do
 
 The default sound description rule response (A) is "[Generic description of T] is [sound of T] in another room nearby."
 
-		
+The futile to throw things  at inanimate objects rule response (A) is "There doesn't seem to be much point in that."
+
+The block throwing at rule response (A) is "That doesn't seem like a good idea."
+
 Book 7 - Actions
 
 Chapter 1 - Knocking

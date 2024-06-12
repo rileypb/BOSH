@@ -1645,13 +1645,26 @@ Instead of entering the ethereal portal:
 
 Book 23.5 - Old Root Cellar
 
-An old root cellar is a room. It is always-indefinite. "The chamber is dark and damp, smelling of earth and old vegetable matter. The walls, floor, and ceiling are packed earth. Around the walls are numerous woven baskets for storing vegetables. Light filters in from a passage to the north[if old root cellar is unvisited].
+An old root cellar is a room. It is always-indefinite. "The chamber is dark and damp, smelling of earth and old vegetable matter. The walls, floor, and ceiling are packed earth. Around the walls are numerous woven baskets for storing vegetables. Light filters in from a passage to the north."
+
+Instead of looking when the location is the old root cellar and the old root cellar is unvisited:
+	say "The chamber is dark and damp, smelling of earth and old vegetable matter. The walls, floor, and ceiling are packed earth. Around the walls are numerous woven baskets for storing vegetables. Light filters in from a passage to the north.
 
 Faraji finds themself in the midst of a hostile confrontation. On one side are the same [group of lizard people] they banished from Enigma Park; on the other, a lone bedraggled man, clutching a root vegetable and wearing a very nice watch. Despite their superior numbers, the lizard people seem to be wary of their opponent. Presumably, the bedraggled man is the [Daniels] that Faraji was sent to find.
 	
 The lizard people turn to Faraji. 'You!' one of them hisses. 'You thought you could banish us, but we have returned to snatch your victory from the jaws of our defeat... or something or other. And now we are on the threshold of our greatest triumph! Soon the Dragon will be ours!'
 
-Presumably-Daniels speaks up.  'Seriously guys, you're always so over-dramatic. Besides, I've got you right where I want you. Just watch.' He shakes his potato at the lizard people. As he does, you notice his right arm looks injured[end if]."
+Presumably-Daniels speaks up.  'Seriously guys, you're always so over-dramatic. Besides, I've got you right where I want you. Just watch.' He shakes his potato at the lizard people. As he does, you notice his right arm looks injured.
+";
+	say line break;
+	say boss battle banner;
+	say paragraph break;
+	now the old root cellar is visited;
+
+To say boss battle banner:
+	say "[fixed letter spacing]";
+	center "<<< BOSS BATTLE! >>>";
+	say "[variable letter spacing]".
 
 Understand "cellar/cave/chamber" as the old root cellar.
 
@@ -1667,11 +1680,11 @@ Rule for deciding the concealed possessions of Daniels:
 
 A root-vegetable is a kind of thing. 
 A root-vegetable can be out of reach or within-reach. A root-vegetable is usually within-reach.
-A rutabaga, a turnip, a potato, and a parsnip are root-vegetables.
+A rutabaga, a turnip, and a potato are root-vegetables.
 
 The woven basket is a closed, openable scenery container in the old root cellar. "The basket is woven from reeds[if the woven basket is open]. It's open[otherwise]. It's closed[end if]." 
 Understand "baskets" as the woven basket.
-The rutabaga, the turnip, and the parsnip are in the woven basket. 
+The rutabaga and the turnip are in the woven basket. 
 Daniels carries the potato.
 
 The root vegetables are scenery in the old root cellar. "Looks like the vegetables are well-preserved."
@@ -1684,10 +1697,11 @@ Chapter 1 - The Lizard People part 2
 
 faraji health is a number that varies.
 lizard people health is a number that varies.
+battle turn is a number that varies.
 
 Rule for constructing the status line when the location is the old root cellar and the group of lizard people is in the old root cellar:
 	deepen status line to 2 rows;
-	center "BOSS BATTLE!" at row 1;
+	center "<<< BOSS BATTLE! >>>" at row 1;
 	move cursor to 2;
 	say "Faraji Health: ";
 	repeat with N running from 1 to faraji health:
@@ -1700,35 +1714,42 @@ Rule for constructing the status line when the location is the old root cellar a
 To hit faraji:
 	decrement faraji health;
 	if faraji health is 0:
-		say "[line break]Oh no! This doesn't seem to have gone as planned. Let's see if we can get a better outcome.";
+		say "[line break][bold type]Faraji collapses, defeated.[roman type][line break]";
+		say "[fixed letter spacing]";
+		center "<<< FARAJI IS DEFEATED! >>>";
+		say "[variable letter spacing]";
+		say "[paragraph break]Oh no! This doesn't seem to have gone as planned. Let's see if we can get a better outcome.";
 		now the player is in the circular chamber;
 		now the old root cellar is unvisited;
+		now the current interlocutor is nothing;
 	otherwise:
 		say "[line break][bold type]Faraji takes a hit! Health: [faraji health] heart[s] remaining[roman type].";
 
 To hit lizard people:
 	decrement lizard people health;
-	now right alignment depth is 15 + lizard people health;
 	if lizard people health is 0:
-		say "The lizard people decide they've taken enough of a beating. The chamber fills with a white vapor, and when it clears, they are nowhere to be seen.";
+		say "[bold type]The lizard people decide they've taken enough of a beating.[roman type] The chamber fills with a white vapor, and when it clears, they are nowhere to be seen.";
+		say "[fixed letter spacing]";
+		center "<<< FARAJI IS VICTORIOUS! >>>";
+		say "[variable letter spacing]";		 
 		banish the lizard people for good;
 		queue Daniels with Doris sent me;
 		now the current interlocutor is Daniels;
 	otherwise:
-		say "The lizard people take a hit! Health: [lizard people health] heart[s] remaining.";
+		say "[line break][bold type]The lizard people take a hit! Health: [lizard people health] heart[s] remaining[roman type].";
 
 To initialize the boss battle:
 	now faraji health is 3;
 	now lizard people health is 10;
-	now right alignment depth is 15 + lizard people health;
+	now right alignment depth is 26;
+	now battle turn is 1;
 	now Daniels carries the potato;
 	now the potato is within-reach;
 	now the rutabaga is within-reach;
 	now the turnip is within-reach;
-	now the parsnip is within-reach;
 	now the rutabaga is in the woven basket;
 	now the turnip is in the woven basket;
-	now the parsnip is in the woven basket;
+	now the woven basket is closed;
 	now Lizard people facing us is true;
 	now turn countdown is 0;
 	now notable Daniels event this turn is false;
@@ -1766,6 +1787,12 @@ Instead of doing something other than examining to Daniels when the group of liz
 Instead of doing something to a root-vegetable when the noun is out of reach:
 	say "Faraji would have to get past the lizard men to do that.";
 
+Every turn when the location is the old root cellar and the group of lizard people is in the old root cellar:
+	if the remainder after dividing the battle turn by 10 is 0:
+		say "The lizard people hiss, spewing forth a cloud of noxious vapor. Faraji can't avoid breathing it in.";
+		hit faraji;
+		now notable lizard event this turn is true;
+
 Every turn when the location is the old root cellar and notable daniels event this turn is false and the group of lizard people is in the old root cellar:
 	[ if the rutabaga is in the old root cellar and rutabaga is out of reach and a random chance of 1 in 2 succeeds:
 		try Daniels taking the rutabaga;
@@ -1783,7 +1810,17 @@ Every turn when the location is the old root cellar and notable daniels event th
 			now notable lizard event this turn is true;
 
 After the group of lizard people taking a root-vegetable:
-	say "One of the lizard people picks up [the noun].";
+	if a random number from 1 to 5 is:
+		-- 1:
+			say "One of the lizard people picks up [the noun].";
+		-- 2:
+			say "One of the lizard people snatches [the noun] from the ground.";
+		-- 3:
+			say "One of the lizard people grabs [the noun].";
+		-- 4:
+			say "One of the lizard people takes [the noun].";
+		-- 5:
+			say "One of the lizard people seizes [the noun].";
 
 Every turn when the location is the old root cellar and Daniels carries a root-vegetable (called RV) and the lizard people are in the old root cellar and notable daniels event this turn is false:
 	say "Daniels throws [the RV] at the lizard people. His hurt arm makes his throw weak, and [the RV] merely rolls past the lizard people. It is now within Faraji's reach.";
@@ -1794,10 +1831,10 @@ Every turn when the location is the old root cellar and the lizard people carry 
 	now the RV is in the old root cellar;
 	now notable lizard event this turn is true;
 	if faraji distracted this turn is true:
-		say "One of the lizard people throws [the RV] at Faraji. It hits them right on the [one of]head[or]shoulder[or]arm[or]leg[or]foot[at random] and bounces away. It remains within reach.";
+		say "One of the lizard people [one of]throws[or]hurls[or]flings[or]launches[or]fires[or]slings[at random] [the RV] at Faraji. It hits them right on the [one of]head[or]shoulder[or]arm[or]leg[or]foot[at random] and bounces away. It remains within Faraji's reach.";
 		hit faraji;
 	otherwise:
-		say "One of the lizard people throws [the RV] at Faraji. It misses, and is now within Faraji's reach.";
+		say "One of the lizard people [one of]throws[or]hurls[or]flings[or]launches[or]fires[or]slings[at random] [the RV] at Faraji. It [one of]misses[or]goes wide[or]falls short[or]bounces off the wall[or]hits the floor[at random], and is now within Faraji's reach.";
 
 
 Every turn when lizard people facing us is false and the lizard people are in the old root cellar and the location is the old root cellar and notable lizard event this turn is false:
@@ -1807,7 +1844,7 @@ Every turn when lizard people facing us is false and the lizard people are in th
 		say "The lizard people turn to face Faraji. [one of]They hiss furiously[or]One of them rushes Faraji, but they scurry to a safer place[or]Faraji sticks out their tongue at them[or]One of them makes what Faraji assumes is a rude gesture for a lizard person[or]They hiss and growl at them[or]They shake their fists at them[at random].";
 		now notable lizard event this turn is true;
 
-Instead of waiting when the group of lizard people is in the location and the location is the old root cellar:
+After waiting when the group of lizard people is in the location and the location is the old root cellar:
 	if a random number from 1 to 5 is:
 		-- 1: 
 			if lizard people facing us is false:
@@ -1831,9 +1868,15 @@ Instead of waiting when the group of lizard people is in the location and the lo
 				say "The lizard people make what Faraji assumes is a rude gesture for a lizard person.";
 		-- 5:
 			if lizard people facing us is false:
-				say "The lizard people hiss furiously.";
+				say "The lizard people hiss furiously at Daniels.";
 			otherwise:
-				say "The lizard people hiss furiously.";
+				if Faraji carries a root-vegetable that is not a rutabaga:
+					let RV be a random root-vegetable that is not a rutabaga carried by Faraji;
+					say "The lizard people rush Faraji all at once, causing them to drop [the RV] they are carrying. The lizard people grab it and retreat.";
+					now the group of lizard people carry the RV;
+					now notable lizard event this turn is true;
+				otherwise:
+					say "The lizard people hiss furiously at Faraji.";
 	[ otherwise:
 		say "Faraji waits, but the lizard people do not seem inclined to make the first move."; ]
 
@@ -1841,7 +1884,7 @@ Instead of waiting when the group of lizard people is in the location and the lo
 
 Every turn when the location is the old root cellar and Daniels does not carry the rutabaga and the lizard people are in the old root cellar and notable daniels event this turn is false:
 	if lizard people facing us is true and a random chance of 1 in 4 succeeds:
-		say "Daniels yells rudely at the lizard people. [one of]'You're all a bunch of jerks!'[or]'Your suits fit poorly!'[or]'Lizard people smell like old socks!'[or]'Your parents liked your siblings better!'[or]'Ever notice that all lizard people are really stupid?'[or]'No one likes you!'[or]'Gah! What is that smell?'[or]'Hey look at me! I'm a lizard person, and I'm so stupid!'[at random][line break]The lizard people hiss in anger and turn to face Daniels. [one of]They rush him, but he dodges nimbly[or]They shriek, 'You'll pay for that!' and shake their fists[or]Daniels sticks out his tongue at them[or]They shout, 'You'll regret that!' and bare their teeth[or]They retort, 'Sticks and stones!' and stamp their feet[or]They hiss and growl at him.[at random].";
+		say "Daniels yells rudely at the lizard people. [one of]'You're all a bunch of jerks!'[or]'Your suits fit poorly!'[or]'Lizard people smell like old socks!'[or]'Your parents liked your siblings better!'[or]'Ever notice that all lizard people are really stupid?'[or]'No one likes you!'[or]'Gah! What is that smell?'[or]'Hey look at me! I'm a lizard person, and I'm so stupid!'[at random][line break]The lizard people hiss in anger and turn to face Daniels. [one of]They rush him, but he dodges nimbly[or]They shriek, 'You'll pay for that!' and shake their fists[or]Daniels sticks out his tongue at them[or]They shout, 'You'll regret that!' and bare their teeth[or]They retort, 'Sticks and stones!' and stamp their feet[or]They hiss and growl at him[at random].";
 		now lizard people facing us is false;
 		now turn countdown is 2;
 		now notable daniels event this turn is true;
@@ -1850,9 +1893,44 @@ Instead of throwing a root-vegetable at Daniels:
 	say "Faraji throws [the noun] at Daniels. He catches it and looks at Faraji quizzically.";
 	now Daniels carries the noun;
 
+Instead of throwing something at when the noun is not a root-vegetable and the location is the old root cellar and the lizard people are in the location:
+	say "Faraji throws [the noun] at the lizard people. They shrug it aside.";
+	now the noun is in the old root cellar;
+	add the noun to collectible stuff;
+
+After taking something when the location is the old root cellar and the lizard people are in the location:
+	if the noun is listed in collectible stuff:
+		remove the noun from collectible stuff;
+	continue the action;
+
+collectible stuff is a list of things that varies. 
+
+To collect our stuff:
+	while the number of entries in collectible stuff > 0:
+		let the item be entry 1 in collectible stuff;
+		remove the item from collectible stuff;
+		now Faraji carries the item;
+
+To decide whether there exists collectible stuff:
+	if the number of entries in collectible stuff is greater than 0:
+		yes;
+	otherwise:
+		no;
+
 Instead of throwing a root-vegetable at the lizard people:
 	if lizard people facing us is true:
-		say "Faraji flings [the noun] at the lizard people. They easily dodge the flying vegetable.";
+		say "Faraji [one of]throws[or]hurls[or]flings[or]launches[or]fires[or]slings[at random] [the noun] at the lizard people. ";
+		if a random number from 1 to 5 is:
+			-- 1: 
+				say "They easily dodge the flying vegetable.";
+			-- 2:
+				say "It almost hits the tallest one, but he (she?) ducks at the last moment.";
+			-- 3:
+				say "It falls short and rolls to the far side of the chamber.";
+			-- 4:
+				say "It bounces off the wall and lands not far from Daniels.";
+			-- 5:
+				say "It hits the floor and rolls to a stop.";
 		now the noun is in the old root cellar;
 		now the noun is out of reach;
 	otherwise if the noun is the rutabaga:
@@ -1860,16 +1938,36 @@ Instead of throwing a root-vegetable at the lizard people:
 		now rutabaga is within-reach;
 		say "Faraji hurls the rutabaga at the lizard people, who in their anger at Daniels are oblivious to Faraji's action. The rutabaga strikes the leader in the head. He hisses in pain and surprise, then shrieks in terror. 'No! My allergies!' The chamber fills with a white vapor. When it clears, the lizard people are nowhere to be seen.
 		
+		[bold type]The lizard people have been KO'd![roman type][line break]";
+		say "[fixed letter spacing]";
+		center "<<< FARAJI IS VICTORIOUS! >>>";
+		say "[variable letter spacing]";
+		say "[if there exists collectible stuff]
+
+		Faraji stops and collects their stuff[end if].
+		
 		Daniels approaches Faraji. 'Nice throw,' he says. 'Glad you came when you did. As you can see, my throwing arm is worse than useless right now.
 		
 		'I'm Daniels. Agent of the hyperspace field office of the Bureau of Strange Happenings and owner of the A+ Laundromat in Swamp Park, Maryland. Did Doris send you?'";
 		banish the lizard people for good;
+		collect our stuff;
 		queue Daniels with Doris sent me;
 		now the current interlocutor is Daniels;
 	otherwise:
 		now the noun is in the old root cellar;
 		now the noun is out of reach;
-		say "Faraji hurls [the noun] at the lizard people, who in their anger at Daniels are oblivious to Faraji's action. [The noun] strikes the leader in the head. He hisses in pain and surprise.";
+		say "Faraji [one of]throws[or]hurls[or]flings[or]launches[or]fires[or]slings[at random] [the noun] at the lizard people, who in their anger at Daniels are oblivious to Faraji's action. ";
+		if a random number from 1 to 5 is:
+			-- 1:
+				say "[The noun] strikes the leader in the head. He hisses in pain and surprise.";
+			-- 2:
+				say "[The noun] hits the tallest one in the shoulder. He (she?) hisses in pain.";
+			-- 3:
+				say "[The noun] bounces off the stout one's head. He hisses in pain.";
+			-- 4:
+				say "[The noun] hits one of them right in the nose. He hisses in pain.";
+			-- 5:
+				say "[The noun] strikes the shortest one in the chest. He hisses in pain.";
 		hit lizard people;
 
 Instead of attacking the lizard people:
@@ -1882,9 +1980,6 @@ Doris sent me is an informative quip.
 	The comment is "Faraji says, 'Yes, Doris sent me to find you.'".
 	The reply is "'Good old Doris,' Daniels says. 'Always the man with the plan.'".
 	It quip-supplies Daniels.
-
-Instead of dropping the rutabaga when the lizard people are in the location:
-	try throwing the rutabaga at the lizard people;
 
 Description notes for a root-vegetable (called RV):
 	if RV is out of reach:
@@ -1931,6 +2026,9 @@ Lizard interjection	used (a truth state)
 "The short lizard person says, 'Even now, Faraji, our spies are destroying BOSH from within.' The stout lizard person elbows him in the ribs and hisses, 'Shut up!'"	false
 "The tallest lizard person says, 'You cannot defeat us, Faraji!'"	false
 
+Last every turn:
+	if the location is the old root cellar and the group of lizard people is in the old root cellar:
+		increment battle turn;
 
 Chapter 2 - Daniels
 
@@ -3875,7 +3973,6 @@ Larch Faraji	group of lizard people	"'What do you want with me?' asks Faraji."	"
 Daniels	group of lizard people	"'What do you want with Daniels?' asks Faraji."	"'Daniels will take us to the Dragon, or he will die,' hisses the lizard person."
 rutabaga	group of lizard people	"'What's with the rutabaga?' asks Faraji."	"'The rutabaga means nothing,' hisses the lizard person. 'We are certainly not afraid of it. No, definitely not. At all. Ever.'"
 turnip	group of lizard people	"'I'm going to smack you with a turnip,' says Faraji."	"'Then we will be happy, for turnips are our favorite food,' hisses the lizard person."
-parsnip	group of lizard people	"'Prepare to face the wrath of the parsnip!' says Faraji."	"'The parsnip is a mighty weapon,' hisses the lizard person. 'But not against us.'"
 potato	group of lizard people	"'I'm going to thwack you with a potato,' says Faraji."	"'We fear  no potato,' hisses the lizard person. 'It is a weak weapon.'"
 chief-huffton-klimp-subject	group of lizard people	"'What do you know about Chief Huffton Klimp?' asks Faraji."	"'Klimp is a good fr-- um, I mean enemy of the lizard people,' hisses the lizard person."
 woven basket	group of lizard people	"'What's with the woven basket?' asks Faraji."	"'What?' hisses the lizard person. 'We have no interest in woven baskets.'"
