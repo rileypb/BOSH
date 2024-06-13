@@ -250,7 +250,7 @@ After reading a command when current play mode is picking character:
 	move moira to the Room of Stuff;
 	move the player to the Strip Mall Parking Lot South;
 	[ follow the current graphics drawing rule; ]
-	reject the player’s command;
+	reject the player's command;
 	
 To init player:
 	now the player carries the green smartphone;
@@ -282,7 +282,7 @@ To continue:
 	say "[bracket]continue[close bracket][paragraph break]";
 	wait for any key;
 
-The player’s forename is a text that varies. The player’s full name is a text that varies. The player's surname is a text that varies.
+The player's forename is a text that varies. The player's full name is a text that varies. The player's surname is a text that varies.
 
 To say agent:
 	say "Agent [player's surname]";	 
@@ -500,13 +500,13 @@ Moira in-the-office is a scene. Moira in-the-office begins when Moira Zin is in 
 Denouement is a scene. Denouement begins when the location is inside-the-dumpster.
 Before going from the front office to the strip mall parking lot south during denouement:
 	if the copy of the Washington Herald is not handled:
-		say "[We] [trip] over a newspaper left up against the door. [We] [pick] it up.";
+		say "[We] [trip] over a newspaper left up against the door.";
 		now the copy of the Washington Herald is in the Strip Mall Parking Lot South;
 
 Before going from the strip mall parking lot south to the front office during denouement:
 	if the copy of the Washington Herald is not handled:
-		say "[We] [trip] over a newspaper left up against the door. [We] [pick] it up.";
-		now the copy of the Washington Herald is in the Strip Mall Parking Lot South;
+		say "[We] [trip] over a newspaper left up against the door.";
+		now the copy of the Washington Herald is in the front office;
 	
 
 Book 9 - Concepts
@@ -2177,7 +2177,7 @@ Every turn:
 		say "A phone is ringing somewhere to the east."; 
 	otherwise if the location is Moira's Office:
 		say "A phone is ringing somewhere to the south.";
-	otherwise if the location is the back lot and the BOSH back door is closed:
+	otherwise if the location is the back lot and the BOSH back door is open:
 		say "A phone is ringing to the east, in Faraji's office.";
 	otherwise if the location is Biff's Office:
 		say "A phone is ringing inside Faraji's desk.";
@@ -2585,8 +2585,13 @@ book/d/open locker 1 with red key/u/unlock door with green key/w/w/n/w/w/unlock 
 witnessing/u/take ladder/e/e/e/e/e/look up pezzex the unpalatable in weird book/say xvart/read book of utilitarianism/w/w/w/nw/w/w/nw/say teleology/take/press button/e/b/enter portal/out/s/e/e/open hood/take battery/press button/e/f/enter 
 portal/se/e/e/e/plug cord into outlet/u/put lenses in frame/put spotlight into frame/put fork into frame/plug shiny resonator into cord/plug makeshift into cord/take telescope/put makeshift into tripod/d/e/push tapestry/flip switch/w/u/x 
 obelisk/d/w/d/s/s/se/u/d/nw/n/n/n/take cutters/open truck/enter it/open glove/take key/w/out/s/s/s/se/u/cut lock with cutters/open cabinet/flip switch/put shiny resonator on platform/i/x obelisk/d/nw/n/n/n/w/se/unlock cabinet with iron key/open it/take 
-resonator/x floor/open door/open trapdoor/d/s/n/u/nw/w/s/s/s/s/unlock door with brass key/s/tie battery to wires/u/screw rusty resonator/put rusty into socket/d/n/n/n/e/n/e/w/se/d/s/enter portal/ask how he got here/ask where we are/ask what’s 
+resonator/x floor/open door/open trapdoor/d/s/n/u/nw/w/s/s/s/s/unlock door with brass key/s/tie battery to wires/u/screw rusty resonator/put rusty into socket/d/n/n/n/e/n/e/w/se/d/s/enter portal/ask how he got here/ask where we are/ask what's 
 next/press button/i/get out/e/n/e/e/sw/give watch to dave/i/nw/ne/x hood/x hyundai/n/e/buy screwdriver/w/s/w/look behind desk/open vent with screwdriver/w/s/open desk with hex wrench/x desk/i/open drawer".
+
+test part with "w/look behind desk/x computer/x vent/ask for screwdriver/e/sw/ask for a screwdriver/ask about owner/ne/w/w/w/ask for a screwdriver/x lenses/borrow lenses/e/s/z/z/z/z/z/z/z/z/z/z/z/z/z/z/z/w/wear lenses/b/n/f/d/s/turn off lights/wear lenses/f/fn/push truck bs/push it b/move boxes with truck/open drum/enter drum/f/f/f/f/f/fn/fw/fn/fn/fw/w/fn/w/take all/i/x pillar/drop it/l/x pillar/s/s/s/s/s/s/s/e/e/e/e/e/e/e/e/b/b/b/b/b/b/b/b/b/d/w/w/show him thumb/give drive/ask about savra/no/ask what isa lizard/ask about mission/ask how to get home/ask about time travel/e/e/ask how to get home/w/b/enter portal/wear lenses/knock on door/out/x books/borrow book/tribes/s/s/z/w/wear lenses/b/n/f/d/s/enter machine/d/w/w/give tribes to doris/e/s/give note to christy/n/n/ask for coffee/s/s/give coffee to christy/n/n/w/give note to doris/how will i find him/ready/e/f/enter/enter portal/s/s/take all/n/w/sw/take/ne/w/take book/read it/d/take/u/e/n/n/n/w/w/take hammer/e/se/e/s/look behind desk/open pack/take key/s/w/w/d/hit walls with hammer/n/e/e/open door/n/open locker/open locker/u/take all/look up thompson in book/d/open locker 34/u/w/w/w/n/w/w/w/take/s/x table/take book/read it/look up asdf the asdfa in the book of weird/wear lenses".
+
+test total with "w/look behind desk/x computer/x vent/ask for screwdriver/e/sw/ask for a screwdriver/ask about owner/ne/w/w/w/ask for a screwdriver/x lenses/borrow lenses/e/s/z/z/z/z/z/z/z/z/z/z/z/z/z/z/z/w/wear lenses/b/n/f/d/s/turn off lights/wear lenses/f/fn/push truck bs/push it b/move boxes with truck/open drum/enter drum/f/f/f/f/f/fn/fw/fn/fn/fw/w/fn/w/take all/i/x pillar/drop it/l/x pillar/s/s/s/s/s/s/s/e/e/e/e/e/e/e/e/b/b/b/b/b/b/b/b/b/d/w/w/show him thumb/give drive/ask about savra/no/ask what isa lizard/ask about mission/ask how to get home/ask about time travel/e/e/ask how to get home/w/b/enter portal/wear lenses/knock on door/out/x books/borrow book/tribes/s/s/z/w/wear lenses/b/n/f/d/s/enter machine/d/w/w/give tribes to doris/e/s/give note to christy/n/n/ask for coffee/s/s/give coffee to christy/n/n/w/give note to doris/how will i find him/ready/e/f/enter/enter portal/s/s/take all/n/w/sw/take/ne/w/take book/read it/d/take/u/e/n/n/n/w/w/take hammer/e/se/e/s/look behind desk/open pack/take key/s/w/w/d/hit walls with hammer/n/e/e/open door/n/open locker/open locker/u/take all/look up thompson in book/d/open locker 34/u/w/w/w/n/w/w/w/take/s/x table/take book/read it/look up asdf the asdfa in the book of weird/wear lenses/l/fs/remove lenses/wear lenses/be/take/press button/e/n/w/se/take bulb/nw/w/s/w/w/take/put ladder in grave/d/dig/u/e/u/open wardrobe/take book/read it/e/d/e/e/s/n/e/hit fly/look up gorblax the perverse in  weird/say brobdingnag/l/take rod/x pulpit/read bible/d/x altar/read book/u/plug cord into wall/plug lamp into cord/put bulb in lamp/turn on lamp/e/move tapestry/flip switch/w/d/remove lenses/read book/read book/u/drop lamp/w/n/open truck/enter truck/open glove/take key/take cutters/open hood/w/out/take cutters/s/s/s/se/u/say dialectic/take resonator/d/u/put resonator on platform/open cabinet with cutters/open cabinet/flip switch/d/nw/n/e/w/n/e/put lamp in frame/put lenses in frame/put fork in frame/tap frame with rod/plug resonator into cord/u/take telescope/mount resonator on tripod/d/w/s/n/w/w/n/n/w/w/ask for a screwriver/ask for a screwdriver/ask who/ask why/ask how/ask about secret/ask for help/e/read compass/press recall/e/f/type 80538579 into keypad/b/n/ask for coffee/s/f/enter portal/w/give coffee to hutz/ask if/e/e/e/se/open cabinet/take resonator/x floor/open trapdoor/nw/s/w/s/s/s/u/put resonator in socket/d/press button/e/b/enter portal/out/s/e/e/open hyundai hood/take battery/press recall/w/f/s/e/f/enter portal/s/se/s/s/s/attach battery to wires/d/n/n/n/n/e/se/d/s/enter portal/take all/open basket/take all/throw rutabaga at lizard/yes/ask about laundromat/ask how/ask where/what's next/pressbutton/up/e/n/e/e/take herald/read it/sw/give watch to dave/ne/n/e/buy screwdriver with gift card/w/s/w/x vent/open vent/open vent with screwdriver/s/e/w/w/s".
+
 
 
 

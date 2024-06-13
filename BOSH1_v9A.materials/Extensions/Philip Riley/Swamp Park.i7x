@@ -462,7 +462,7 @@ The astral-tunnel-1-facade is a building facade.
 	The astral-tunnel-1-facade is enterable from the back lot.
 
 
-The astral-tunnel-2 is north of astral-tunnel-1. It is privately-named. The printed name is "astral tunnel". It is in hyperspace. "It is featureless white, or what passes for white here. It leads south at one end and 'forth.' at the other.";
+The astral-tunnel-2 is north of astral-tunnel-1. It is privately-named. The printed name is "astral tunnel". It is in hyperspace. "It is featureless white, or what passes for white here. It leads south at one end and 'forth' at the other.";
 
 
 The astral-tunnel-2-facade is a building facade. 
@@ -727,7 +727,7 @@ Every turn:
 		now the hyperlight is unlit;
 		now the player carries the pair of astral lenses;
 		
-The astral-tunnel-3 is forth of back basement and backsouth of the laundromat-store. It is privately-named. The printed name is "astral tunnel". It is in hyperspace. "It is featureless white, or what passes for white here. It leads 'back' at one end and 'forthnorth.' at the other.".
+The astral-tunnel-3 is forth of back basement and backsouth of the laundromat-store. It is privately-named. The printed name is "astral tunnel". It is in hyperspace. "It is featureless white, or what passes for white here. It leads 'back' at one end and 'forthnorth' at the other.".
 
 The astral-tunnel-3-facade is a building facade. 
 	It is in the back basement.

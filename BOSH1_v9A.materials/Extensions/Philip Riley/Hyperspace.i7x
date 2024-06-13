@@ -104,6 +104,9 @@ this is the room description astral passages rule:
 				let C be number of entries of directions;
 				say "[if C is 1]A hyperspatial tunnel[otherwise]Hyperspatial tunnels[end if] [regarding C][lead] in the [regarding C]direction[if C > 1]s[end if] of [directions]."; 
 				
+Every turn:
+	now darkness witnessed is false;
+	
 After wearing the astral lenses when could see hypertunnels and darkness witnessed is false:
 	say "[We] [put] on [the pair of astral lenses].";
 	try looking;
@@ -282,7 +285,7 @@ Understand "staircase/stairs/spiral" as Descending Stair.
 [Rule for writing a paragraph about the descending stair:
 	say "A spiraling staircase disappears into the ground here. It is made of the same gossamer, questionably real stuff as the ground,[if visited pillar is true] the pillar,[end if] and the readouts. You can't see past the first turn of the stairs, unfortunately.";]
 
-The Ethereal Pillar is a thing. The description is "It's not clear what the pillar is made of, but it's definitely not stone." 
+The Ethereal Pillar is scenery. The description is "It's not clear what the pillar is made of, but it's definitely not stone." 
 
 After deciding the scope of the player when the location is Featureless Hyperplane:
 	place the Ethereal Pillar in scope;

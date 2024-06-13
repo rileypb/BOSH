@@ -746,6 +746,7 @@ Carry out cutting the padlock with the bolt cutters:
 	now the metal cabinet is unlocked;
 	now the player carries the broken lock;
 	now the padlock is nowhere;
+	silently try opening the metal cabinet;
 
 Report cutting the padlock with the bolt cutters:
 	say "The bolt cutters make short work of the padlock.";
@@ -1256,7 +1257,9 @@ Every turn when beam count is 3 and portal opened is false:
 	open the portal;
 	if the player is in Henry's Hot Skillet:
 		say "Something is happening outside. Faraji runs up to the roof to see. [run paragraph on]";
-	say "The obelisk itself has begun to glow. The light from the crystal at its apex grows brighter and brighter, until it's almost blinding. Shielding their eyes, Faraji watches as the space around the obelisk shimmers and distorts. The previously gentle breeze is now a gale, [if location is the steeple]screaming through the steeple[otherwise if location is the radio station roof]howling through the struts of the radio tower[otherwise]shivering the television aerial[end if]. Then, with a huge crack, a bolt of lightning strikes the crystal. One can almost sense the electricity penetrating the earth. searching for something. And then, it's found it. Below the obelisk, something has woken."	
+	say "The obelisk itself has begun to glow. The light from the crystal at its apex grows brighter and brighter, until it's almost blinding. Shielding their eyes, Faraji watches as the space around the obelisk shimmers and distorts. The previously gentle breeze is now a gale, [if location is the steeple]screaming through the steeple[otherwise if location is the radio station roof]howling through the struts of the radio tower[otherwise]shivering the television aerial[end if]. Then, with a huge crack, a bolt of lightning strikes the crystal. One can almost sense the electricity penetrating the earth. searching for something. And then, it's found it. Below the obelisk, something has woken.";
+	if the player is in Henry's Hot Skillet:
+		now the player is in Henry's Roof;
 
 Instead of searching the telescope when the content of the tripod is the telescope: [looking through]
 	if mounted-rusty-resonator and mounted-shiny-resonator:
@@ -3017,9 +3020,6 @@ Book 30 - Reading Room Basement
 
 The Bookstore Basement is below the Reading Room. It is in ELR. It is indoors. The description is "The basement is dark and musty, with a number of shelves and boxes of books. The walls are made of old, crumbling brick. There is a faint breeze. A narrow staircase leads up[if the bricked-up-hole is revealed]. There is a ragged hole in the north wall, leading into a dark space[end if]."
 
-
-
-
 The x-coordinate of the Bookstore Basement is -2. The y-coordinate of the Bookstore Basement is -1.
 
 Understand "old/crumbling/brick/bricks" as the walls when the location is the Bookstore Basement.
@@ -3035,6 +3035,11 @@ Understand "narrow/staircase/stair/steps/step" as the basement stairs.
 The breeze is scenery in the Bookstore Basement. "An almost imperceptible breeze wafts through the basement, smelling faintly of sewage."
 
 The extension cord is in the Bookstore Basement. 
+
+The Ecology of the Rutabaga is in the Bookstore Basement. It is proper-named. The printed name is "[italic type]The Ecology of the Rutabaga[roman type]". Understand "green/cover/book" as The Ecology of the Rutabaga. The Ecology of the Rutabaga can be read.
+"A book with a green cover titled [italic type]The Ecology of the Rutabaga[roman type] lies the floor here."
+
+The description of The Ecology of the Rutabaga is "A book with a green cover, titled 'The Ecology of the Rutabaga'. The author is listed as Dr A Zilman. The book is a comprehensive study of the rutabaga, including its history, cultivation, and uses in various cultures. One strange passage details its use as a weapon against 'evil earth demons'."
 
 A bricked-up-hole is a secret door. It is north of the Bookstore Basement and south of a sewer tunnel 1. It is privately-named. The printed name is "bricked-up hole in the wall". Understand "bricked-up", "bricked/up", "hole in/-- the/-- wall/--" as bricked-up-hole. It is open and not openable. "A ragged hole in the north wall, [if the location is the bookstore basement]leading into a dark space[otherwise]leading into the bookstore basement[end if]." 
 It is unsnarkable.
@@ -3081,7 +3086,7 @@ The snarky remark of sewer tunnel 2 is "Actually it smells better than Swamp Par
 
 The x-coordinate of sewer tunnel 2 is 0. The y-coordinate of sewer tunnel 2 is 0.5.
 
-a sewer tunnel 3 is east of sewer tunnel 2. It is in ELR. It is indoors. It is privately-named. It is always-indefinite. The printed name is "sewer tunnel". Understand "sewer/tunnel" as sewer tunnel 3. "The tunnel is dark and damp, with a low ceiling. From here, it leads west, and turns into a small crawl to the east. There is a metal door with to the north."
+a sewer tunnel 3 is east of sewer tunnel 2. It is in ELR. It is indoors. It is privately-named. It is always-indefinite. The printed name is "sewer tunnel". Understand "sewer/tunnel" as sewer tunnel 3. "The tunnel is dark and damp, with a low ceiling. From here, it leads west, and turns into a small crawl to the east. There is a metal door to the north."
 
 
 The x-coordinate of sewer tunnel 3 is 2. The y-coordinate of sewer tunnel 3 is 0.5.
@@ -3603,6 +3608,9 @@ The bank of lockers is scenery in the gym basement. Understand "banks/locker" as
 "The lockers are numbered 1 to 100."
 The bank of lockers can be opened-once.
 The snarky remark of the bank of lockers is "I'm not searching every locker."
+
+Instead of opening the bank of lockers:
+	say "The lockers are numbered 1 to 100. [We] [are] hardly going to try opening every locker. There must be a better way to go about this.";
 
 Looked up locker is a truth state that varies.
 
