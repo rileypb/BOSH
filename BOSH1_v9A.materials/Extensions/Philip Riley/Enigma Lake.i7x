@@ -3039,7 +3039,7 @@ The extension cord is in the Bookstore Basement.
 The Ecology of Root Vegetables is in the Bookstore Basement. It is proper-named. The printed name is "[italic type]The Ecology of Root Vegetables[roman type]". Understand "green/cover/book" as The Ecology of Root Vegetables. The Ecology of Root Vegetables can be read.
 "A book with a green cover titled [italic type]The Ecology of Root Vegetables[roman type] lies on the floor here."
 
-The description of The Ecology of Root Vegetables is "A book with a green cover, titled 'The Ecology of Root Vegetables'. The author is listed as Dr A Zilman. The book is a comprehensive study of root vegetables. There is a whole chapter on the rutabaga, including its history, cultivation, and uses in various cultures. One strange passage details its use as a weapon against 'evil earth demons'."
+The description of The Ecology of Root Vegetables is "A book with a green cover, titled 'The Ecology of Root Vegetables'. The author is listed as Dr. A. Zilman. The book is a comprehensive study of root vegetables. There is a whole chapter on the rutabaga, including its history, cultivation, and uses in various cultures. One strange passage details its use as a weapon against 'evil earth demons'."
 
 A bricked-up-hole is a secret door. It is north of the Bookstore Basement and south of a sewer tunnel 1. It is privately-named. The printed name is "bricked-up hole in the wall". Understand "bricked-up", "bricked/up", "hole in/-- the/-- wall/--" as bricked-up-hole. It is open and not openable. "A ragged hole in the north wall, [if the location is the bookstore basement]leading into a dark space[otherwise]leading into the bookstore basement[end if]." 
 It is unsnarkable.
