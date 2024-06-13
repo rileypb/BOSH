@@ -3037,7 +3037,7 @@ The breeze is scenery in the Bookstore Basement. "An almost imperceptible breeze
 The extension cord is in the Bookstore Basement. 
 
 The Ecology of Root Vegetables is in the Bookstore Basement. It is proper-named. The printed name is "[italic type]The Ecology of Root Vegetables[roman type]". Understand "green/cover/book" as The Ecology of Root Vegetables. The Ecology of Root Vegetables can be read.
-"A book with a green cover titled [italic type]The Ecology of Root Vegetables[roman type] lies the floor here."
+"A book with a green cover titled [italic type]The Ecology of Root Vegetables[roman type] lies on the floor here."
 
 The description of The Ecology of Root Vegetables is "A book with a green cover, titled 'The Ecology of Root Vegetables'. The author is listed as Dr A Zilman. The book is a comprehensive study of root vegetables. There is a whole chapter on the rutabaga, including its history, cultivation, and uses in various cultures. One strange passage details its use as a weapon against 'evil earth demons'."
 
