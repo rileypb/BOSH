@@ -106,7 +106,7 @@ this is the room description astral passages rule:
 				
 Every turn:
 	now darkness witnessed is false;
-	
+
 After wearing the astral lenses when could see hypertunnels and darkness witnessed is false:
 	say "[We] [put] on [the pair of astral lenses].";
 	try looking;
@@ -273,11 +273,11 @@ Before going a direction (called D) from Featureless Hyperplane:
 	otherwise if D is not down:
 		say "Faraji trudges across the trackless hyperplane, and ends up somewhere else, yet exactly the same.";
 
-Carry out going up from Field Office Reception:
+[ Carry out going up from Field Office Reception:
 	now HyperPlane Coords is Staircase Coords;
 	now the printed name of Featureless Hyperplane is "descending stair";
 	now the preposition of Featureless Hyperplane is "at the top of";
-	move Descending Stair to Featureless Hyperplane;
+	move Descending Stair to Featureless Hyperplane; ]
 
 
 Descending Stair is scenery. "A spiraling staircase disappears into the ground here. It is made of the same gossamer, questionably real stuff as the ground, the pillar, and the compass. Faraji can't see past the first turn of the stairs, unfortunately."
@@ -466,7 +466,7 @@ field office area is a region. It is in hyperspace. Understand "field/-- office"
 
 Book 1 - Reception
 
-field office reception is below Featureless Hyperplane. The preposition is "at". It is in field office area. "It is a small, white (like everything else) room with a desk against one wall. An office directory is on the wall. A hallway leads west and a stairway goes up to the infinite hyperplane."
+field office reception is below Featureless Hyperplane. The preposition is "at". It is in field office area. "It is a small, white (like everything else) room with a desk against one wall. An office directory is on the wall. A hallway leads west."
 The snarky remark is "I bet they don't get much foot traffic here."
 
 The reception desk is a scenery supporter in field office reception. The description is "The desk -- white, polished, and gleaming -- is empty except for a small control panel."

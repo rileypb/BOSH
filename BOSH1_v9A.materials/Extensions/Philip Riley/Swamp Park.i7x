@@ -691,16 +691,16 @@ Instead of moving the stacks of crates with the handtruck:
 
 After entering the broken washing machine:
 	say "There is a flash of light and [we] [find] [ourselves] somewhere else...";
-	now the player is in Featureless Hyperplane;
+	now the player is in field office reception;
 
 Instead of entering the strange glow:
 	say "There is a flash of light and [we] [find] [ourselves] somewhere else...";
-	now the player is in Featureless Hyperplane;
+	now the player is in field office reception;
 
 After touching the strange glow:
 	say "There is a flash of light and [we] [find] [ourselves] somewhere else...";
 	[ end the story saying "Thanks for testing my game. This is the end of Part 1."; ]
-	now the player is in Featureless Hyperplane;
+	now the player is in field office reception;
 	
 The light switch is a scenery device in the back basement. It is switched on. Understand "glow-in-the-dark", "glowing", "lights" as the light switch. 
 The description is "It's a standard glow-in-the-dark light switch."
