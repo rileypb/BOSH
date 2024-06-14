@@ -1304,7 +1304,7 @@ Check giving Tribes of New York to Doris when Doris's note is not off-stage:
 
 A tome can be delivered.
 
-After giving Tribes of New York to Doris when Tribes of New York is not delivered:
+After giving Tribes of New York to Doris when Tribes of New York is not delivered and about the mission is exhausted:
 	say "'Ah, [agent], you've found it! I knew you would. Now we can find out where Daniels is. Actually, Christy can help you with that. Go see her and give her this.' He scribbles a note and hands it to you. 'She'll know what to do.'";
 	now doris interjection timer is a random number between 2 and 5;
 	now the player carries Doris's note;
@@ -1607,7 +1607,7 @@ After giving Doris's note to Christy:
 	now Christy carries Doris's note;
 	now Christy carries Tribes of New York;
 
-After giving the cup of coffee to Christy when christy carries Tribes of New York and Christy is not researching:
+After giving the cup of coffee to Christy when Christy carries Tribes of New York and Christy is not researching:
 	say "Christy accepts the coffee gratefully. 'Thanks. I'll get to work on this right away. I'll let you know when I have something.' They take a sip of the coffee and get to work, which seems to involve a lot of sketching and erasing.";
 	now the christy interjection timer is a random number from 2 to 5;
 	remove the cup of coffee from play;
@@ -1616,13 +1616,12 @@ After giving the cup of coffee to Christy when christy carries Tribes of New Yor
 Christy's note is a thing. The description is "The note consists of just the number [town hall spacetime setting]."
 
 
-Before going north from Christy's office when Christy is researching:
+Instead of doing something when Christy is researching:
 	say "Christy suddenly hoots behind Faraji. 'Stop! I have it. Sorry it took so long. Here, take this note to Doris.' They scribble something on a piece of paper and hand it to Faraji. Christy thinks for a moment and says 'Oh yes, take the book too.' They hand Faraji [italic type]Tribes of New York[roman type].";
 	now the christy interjection timer is a random number from 2 to 5;
 	now Christy is not researching;
 	now the player carries Christy's note;
 	now the player carries Tribes of New York;
-	stop the action;
 
 [Christy is a non-binary paranormal researcher. She tends to be cynical and sarcastic, but she's also very good at her job.]
 
@@ -1639,7 +1638,7 @@ portal-to-the-past	Christy	"'What is the portal to the past?'"	"'It's a portal t
 auxiliary-portal	Christy	"'What is the auxiliary portal?'"	"Um, it's the other portal, the one that isn't the main portal. Is this so hard to understand?'"
 thumb drive	Christy	"'What is the thumb drive?'"	"'Are you seriously asking me that?'"
 maggie-subject	Christy	"'Who is Maggie?'"	"'Maggie is... Maggie. She's the receptionist. She's very good at her job -- it's just that no one knows what that is. I'm not being sarcastic.'"
-Christy's desk	Christy	"'What's on your desk?'"	"'Research. Nothing you would understand. Also a sketchbook. Don't look in it.'"
+Christy's desk	Christy	"'What's on your desk?'"	"'My sketchbook. Nothing you would understand. Don't look in it.'"
 Christy's sketchbook	Christy	"'What's in your sketchbook?'"	"'Drawings. Of things. I'm not going to show you.'"
 Christy's pencil	Christy	"'What's that pencil?'"	"'My special drawing pencil. I'm not going to let you borrow it.'"
 hyperspace-field-office-subject	Christy	"'What is the hyperspace field office?'"	"'It's Doris's little kingdom. It's where we peons toil. I'm not bitter.'"
