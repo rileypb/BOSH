@@ -2663,6 +2663,7 @@ Carry out jumping to part 4:
 	now closet door is open;
 	now Moira's door is unlocked;
 	now visited hyperspace is true;
+	now the current spacetime setting is the town hall spacetime setting;
 
 jumping to endgame is an action applying to nothing. Understand "cheat end" as jumping to endgame.
 

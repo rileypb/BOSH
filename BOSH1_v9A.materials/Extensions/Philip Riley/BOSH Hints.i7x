@@ -789,7 +789,14 @@ Activating the hint-find-the-portal:
 The hint-root-cellar is a progressive hint topic. Understand "root/cellar" as the hint-root-cellar. The printed name is "root cellar". The progression is {"Faraji should talk to Daniels.", "When he asks, Faraji should give him the recall button.", "Then Faraji should press the button."}.
 
 Activating the hint-root-cellar:
-	if the location is the old root cellar:
+	if the location is the old root cellar and lizard people are not in the location:
+		activate;
+	deactivate;
+
+The hint-defeat-the-lizard-people is a progressive hint topic. Understand "defeat/the/lizard/people" as the hint-defeat-the-lizard-people. The printed name is "defeat the lizard people". The progression is {"Now that Daniels has cast the first potato, it looks like we have a battle on our hands.", "Presumably it will be won by throwing potatoes?", "Faraji should try throwing a potato at the lizard people.", "It won't always hit.", "Faraji can only hit the lizard people when they're distracted by Daniels.", "The lizard people can only hit Faraji when Faraji is distracted doing something else.", "The lizard people will also fill the room with noxious vapor approximately once every 10 turns, which will hurt Faraji.", "It seems hopeless for Faraji to damage the lizard people quickly enough to win the battle.", "Did Faraji notice the baskets in the room? They should open them.", "Now they also have a turnip and a rutabaga.", "Faraji should try throwing the turnip and the rutabaga at the lizard people.", "Notice that the lizard people avoid the rutabaga.", "Faraji should try throwing the rutabaga at the lizard people.", "Since lizard people are deathly allergic to rutabagas, they will flee when hit by one."}
+
+Activating the hint-defeat-the-lizard-people:
+	if the lizard people are in the old root cellar and the old root cellar is visited:
 		activate;
 	deactivate;
 

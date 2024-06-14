@@ -1697,7 +1697,7 @@ The recall button is a thing. The description is "A small, flat device with a bl
 
 The recall button can be pushed. The recall button is not pushed.
 
-Instead of pushing the recall button when the player is not in field office area and the player is not in the old root cellar:
+Instead of pushing the recall button when the player is not in field office area and the player is not in the old root cellar and the group of lizard people are not in the location:
 	repeat with I running through the list of immobile things carried by the player:
 		if the player carries I: [in case an earlier drop caused this item to be dropped as well.]
 			say "(first dropping [I])[command clarification break]";
@@ -1710,7 +1710,7 @@ Instead of pushing the recall button when the player is not in field office area
 		now the current interlocutor is Doris;
 	move the player to the field office chief's office;
 
-Instead of pushing the recall button when the player is in field office area:
+Instead of pushing the recall button when the player is in field office area and the group of lizard people are not in the location:
 	say "Nothing happens.";
 
 Check dropping the recall button:

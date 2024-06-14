@@ -2073,13 +2073,13 @@ After discussing what's next:
 		say "Daniels' face falls. 'What? You don't have the recall button? Do you know what that means? We have no way back!' He looks around the room, then back at Faraji. 'We're stuck here.'";
 		end the story saying "Faraji is stranded in the past with Daniels."
 
-Instead of pushing the recall button when the player is in the old root cellar and the recall button is not rejiggered:
-	say "'Wait!' Daniels exclaims. Faraji stops. Daniels continues, 'Don't leave without me! I can rejigger the recall button to send me to the hyperspace office and send you back to Swamp Park. I own the laundromat, by the way. Sorry I wasn't there to greet you. Alright, give me the button.'
+Instead of pushing the recall button when the player is in the old root cellar and the recall button is not rejiggered and the group of lizard people are not in the location:
+	say "'Wait!' Daniels exclaims. Faraji stops. Daniels continues, 'Don't leave without me! I can rejigger the recall button to send me to the hyperspace office and send you back to Swamp Park. Alright, give me the button.'
 	
 	Faraji hands the recall button to Daniels. Daniels fiddles with the device for a moment, then hands it back. 'There you go. You can do the honors.'";
 	now the recall button is rejiggered.
 
-Instead of pushing the recall button when the player is in the old root cellar:
+Instead of pushing the recall button when the player is in the old root cellar and the group of lizard people are not in the location:
 	say "Faraji is just about to push the recall button when Daniels exclaims, 'Wait! I forgot to give you this.' He pushes a small metal object into Faraji's hand. 
 	
 	Faraji doesn't have time to look at object before their finger slips and pushes the button. The room spins and fades away, and Faraji finds themself back in Swamp Park.";
@@ -3985,6 +3985,9 @@ potato	group of lizard people	"'I'm going to thwack you with a potato,' says Far
 chief-huffton-klimp-subject	group of lizard people	"'What do you know about Chief Huffton Klimp?' asks Faraji."	"'Klimp is a good fr-- um, I mean enemy of the lizard people,' hisses the lizard person."
 woven basket	group of lizard people	"'What's with the woven basket?' asks Faraji."	"'What?' hisses the lizard person. 'We have no interest in woven baskets.'"
 root vegetables	group of lizard people	"'What's with the root vegetables?' asks Faraji."	"'Root vegetables?' hisses the lizard person. 'We have no interest in root vegetables. Least of all rutabagas.'"
+
+Instead of pushing the recall button when the group of lizard people is in the location:
+	say "It doesn't do anything. The lizard people hiss in amusement.";
 
 Volume 4.75 - Building the Makeshift Astral Resonator
 
