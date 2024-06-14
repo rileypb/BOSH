@@ -59,7 +59,8 @@ book7 is a bookstore-book.
     The title of book7 is "Oh Please, Not Another Vampire Novel".
     The author of book7 is "Marjorie Asphodel".
     The genre of book7 is "Parody Occult Vampire Romance".
-    The blurb of book7 is "Marjorie Asphodel's biting satire of the vampire romance genre is a must-read for anyone who's ever rolled their eyes at a sparkly vampire. Follow the adventures of Bella, Edward, and a cast of thousands as they navigate the treacherous waters of high school, love, and the undead. A hilarious romp that will leave you laughing, crying, and possibly vomiting.".
+    The blurb of book7 is "Marjorie Asphodel's biting satire of the vampire romance genre is a must-read for anyone who's ever rolled their eyes at a sparkly vampire. Follow the adventures of Ubik and Taylor
+    as they navigate the treacherous waters of high school, love, and the undead. A hilarious romp that will leave you laughing, crying, and possibly vomiting.".
 	Understand "oh/please/not/another/vampire/novel/marjorie/asphodel" as book7.
 
 book8 is a bookstore-book.
