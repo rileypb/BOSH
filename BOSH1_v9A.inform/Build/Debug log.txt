@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 35212 words long.
+I've now read your source text, which is 35435 words long.
 
 
 -----------------------------------------------------
@@ -24,7 +24,7 @@ Phase II ... Semantic analysis Ia
 I've also read Standard Rules by Graham Nelson, which is 41225 words long.
 I've also read English Language by Graham Nelson, which is 2297 words long.
 I've also read Epistemology by Eric Eve, which is 1505 words long.
-I've also read Conversation Framework by Eric Eve, which is 5305 words long.
+I've also read Conversation Framework by Eric Eve, which is 5321 words long.
 I've also read Conversation Responses by Eric Eve, which is 1855 words long.
 I've also read Conversational Defaults by Eric Eve, which is 2247 words long.
 I've also read Basic Screen Effects by Emily Short, which is 2218 words long.
@@ -37,17 +37,17 @@ I've also read Locksmith by Emily Short, which is 4122 words long.
 I've also read Essentials by Philip Riley, which is 583 words long.
 I've also read Facts by Philip Riley, which is 178 words long.
 I've also read Phones by Philip Riley, which is 1911 words long.
-I've also read Commerce by Philip Riley, which is 160 words long.
+I've also read Commerce by Philip Riley, which is 187 words long.
 I've also read Furniture by Philip Riley, which is 82 words long.
 I've also read Third Person Narration by Philip Riley, which is 792 words long.
 I've also read Door Utils by Philip Riley, which is 44 words long.
 I've also read Real People by Philip Riley, which is 400 words long.
-I've also read Visible Rooms by Philip Riley, which is 164 words long.
+I've also read Visible Rooms by Philip Riley, which is 255 words long.
 I've also read Can't Touch This by Philip Riley, which is 168 words long.
 I've also read Compound Details by Philip Riley, which is 182 words long.
 I've also read Polish by Philip Riley, which is 89 words long.
 I've also read Hello by Philip Riley, which is 103 words long.
-I've also read BOSH Polish by Philip Riley, which is 8644 words long.
+I've also read BOSH Polish by Philip Riley, which is 8716 words long.
 I've also read New Light by Philip Riley, which is 347 words long.
 I've also read Early Declarations by Philip Riley, which is 21 words long.
 I've also read Basics by Philip Riley, which is 202 words long.
@@ -56,17 +56,17 @@ I've also read Snarky Remarks by Philip Riley, which is 235 words long.
 I've also read Followup Questions by Philip Riley, which is 248 words long.
 I've also read Scenery Supporters by Philip Riley, which is 179 words long.
 I've also read Simple Conversation by Philip Riley, which is 2401 words long.
-I've also read Hyperspace by Philip Riley, which is 17171 words long.
+I've also read Hyperspace by Philip Riley, which is 17174 words long.
 I've also read BOSH Facts by Philip Riley, which is 193 words long.
-I've also read Swamp Park by Philip Riley, which is 8230 words long.
-I've also read Margaret by Philip Riley, which is 2582 words long.
+I've also read Swamp Park by Philip Riley, which is 8348 words long.
+I've also read Margaret by Philip Riley, which is 2618 words long.
 I've also read Enigma Lake by Philip Riley, which is 37513 words long.
 I've also read I Can Dig It by Philip Riley, which is 77 words long.
-I've also read BOSH Help by Philip Riley, which is 6496 words long.
+I've also read BOSH Help by Philip Riley, which is 6699 words long.
 I've also read Overlook by Philip Riley, which is 763 words long.
 I've also read Gender Options by Nathanael Nerode, which is 7679 words long.
 I've also read Make Test by Philip Riley, which is 288 words long.
-I've also read BOSH Hints by Philip Riley, which is 8374 words long.
+I've also read BOSH Hints by Philip Riley, which is 8375 words long.
 I've also read Hearing by Philip Riley, which is 1220 words long.
 I've also read Improved Pushing by Philip Riley, which is 46 words long.
 I've also read PBR Common by Philip Riley, which is 109 words long.
@@ -150,21 +150,21 @@ Regional: CONSTANT_VNT'field office area'-region(I260_field_office_area)(I166'fi
  == region
 Regional: CONSTANT_VNT'hyperspace'-region(I243_hyperspace)(I149'hyperspace')
  == region
-Regional: CONSTANT_VNT'elr'-region(I555_elr)(I445'elr')
+Regional: CONSTANT_VNT'elr'-region(I556_elr)(I446'elr')
  == region
-Regional: CONSTANT_VNT'elr'-region(I555_elr)(I445'elr')
+Regional: CONSTANT_VNT'elr'-region(I556_elr)(I446'elr')
  == region
-Regional: CONSTANT_VNT'help area'-region(I817_help_area)(I704'help area')
+Regional: CONSTANT_VNT'help area'-region(I818_help_area)(I705'help area')
  == region
-Regional: CONSTANT_VNT'elr'-region(I555_elr)(I445'elr')
+Regional: CONSTANT_VNT'elr'-region(I556_elr)(I446'elr')
  == region
-Regional: CONSTANT_VNT'elr'-region(I555_elr)(I445'elr')
+Regional: CONSTANT_VNT'elr'-region(I556_elr)(I446'elr')
  == region
-Regional: CONSTANT_VNT'elr'-region(I555_elr)(I445'elr')
+Regional: CONSTANT_VNT'elr'-region(I556_elr)(I446'elr')
  == region
-Regional: CONSTANT_VNT'elr'-region(I555_elr)(I445'elr')
+Regional: CONSTANT_VNT'elr'-region(I556_elr)(I446'elr')
  == region
-Regional: CONSTANT_VNT'help area'-region(I817_help_area)(I704'help area')
+Regional: CONSTANT_VNT'help area'-region(I818_help_area)(I705'help area')
  == region
 
 
@@ -206,9 +206,9 @@ Phase XII ... Code generation
          == region
                                 0 = action. 1 = object
                                 0 = action. 1 = object
-        Regional: CONSTANT_VNT'elr'-region(I555_elr)(I445'elr')
+        Regional: CONSTANT_VNT'elr'-region(I556_elr)(I446'elr')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I555_elr)(I445'elr')
+        Regional: CONSTANT_VNT'elr'-region(I556_elr)(I446'elr')
          == region
         Regional: CONSTANT_VNT'hyperspace'-region(I243_hyperspace)(I149'hyperspace')
          == region
@@ -225,21 +225,21 @@ Phase XII ... Code generation
          == region
         Regional: CONSTANT_VNT'hyperspace'-region(I243_hyperspace)(I149'hyperspace')
          == region
-        Regional: CONSTANT_VNT'the laundromat-region'-region(I441_laundromat_region)(I335'laundromat-region')
+        Regional: CONSTANT_VNT'the laundromat-region'-region(I442_laundromat_region)(I336'laundromat-region')
          == region
-        Regional: CONSTANT_VNT'the laundromat-region'-region(I441_laundromat_region)(I335'laundromat-region')
-         == region
-        Regional: CONSTANT_VNT'hyperspace'-region(I243_hyperspace)(I149'hyperspace')
+        Regional: CONSTANT_VNT'the laundromat-region'-region(I442_laundromat_region)(I336'laundromat-region')
          == region
         Regional: CONSTANT_VNT'hyperspace'-region(I243_hyperspace)(I149'hyperspace')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I555_elr)(I445'elr')
+        Regional: CONSTANT_VNT'hyperspace'-region(I243_hyperspace)(I149'hyperspace')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I555_elr)(I445'elr')
+        Regional: CONSTANT_VNT'elr'-region(I556_elr)(I446'elr')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I555_elr)(I445'elr')
+        Regional: CONSTANT_VNT'elr'-region(I556_elr)(I446'elr')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I555_elr)(I445'elr')
+        Regional: CONSTANT_VNT'elr'-region(I556_elr)(I446'elr')
+         == region
+        Regional: CONSTANT_VNT'elr'-region(I556_elr)(I446'elr')
          == region
 
 
@@ -261,7 +261,7 @@ Phase XII ... Code generation
 
 ==== Phase XII.11 ... Determining grammar (G2) ====
 
-Regional: CONSTANT_VNT'elr'-region(I555_elr)(I445'elr')
+Regional: CONSTANT_VNT'elr'-region(I556_elr)(I446'elr')
  == region
 
 
@@ -301,18 +301,18 @@ Regional: CONSTANT_VNT'elr'-region(I555_elr)(I445'elr')
                                             Fail: list of numbers (~) real number = nothing
                                         Fail: scene (~) number = nothing
                                         Fail: scene (~) number = nothing
-        Regional: CONSTANT_VNT'elr'-region(I555_elr)(I445'elr')
+        Regional: CONSTANT_VNT'elr'-region(I556_elr)(I446'elr')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I555_elr)(I445'elr')
+        Regional: CONSTANT_VNT'elr'-region(I556_elr)(I446'elr')
          == region
                                 0 = objects valued property. 1 = object
-            Regional: CONSTANT_VNT'elr'-region(I555_elr)(I445'elr')
+            Regional: CONSTANT_VNT'elr'-region(I556_elr)(I446'elr')
              == region
-            Regional: CONSTANT_VNT'elr'-region(I555_elr)(I445'elr')
+            Regional: CONSTANT_VNT'elr'-region(I556_elr)(I446'elr')
              == region
-            Regional: CONSTANT_VNT'help area'-region(I817_help_area)(I704'help area')
+            Regional: CONSTANT_VNT'help area'-region(I818_help_area)(I705'help area')
              == region
-            Regional: CONSTANT_VNT'help area'-region(I817_help_area)(I704'help area')
+            Regional: CONSTANT_VNT'help area'-region(I818_help_area)(I705'help area')
              == region
 
 
@@ -353,8 +353,8 @@ Providing for a total heap of 65536, given requirement of 46096
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 301 files written as streams.
-CPU time: 1354 centiseconds
+Total of 303 files written as streams.
+CPU time: 1278 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

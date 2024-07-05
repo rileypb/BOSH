@@ -24,24 +24,32 @@ Chapter 1 - Strip Mall Parking Lot South
 
 The Strip Mall Parking Lot South is a room. The printed name is "south end of the strip mall parking lot". It is east of the front office. It is in Swamp Park. It is outdoors.  The preposition is "at". front office is inside from the Strip Mall Parking Lot South. Understand "end/of/the" as the Strip Mall Parking Lot South.
 The description of the Strip Mall Parking Lot South is "From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north."
-The tutorial message of the Strip Mall Parking Lot South is "Enter HELP for instructions"
+The tutorial message of the Strip Mall Parking Lot South is "Enter HELP for instructions, including information special to this game."
 
 Carry out helping for the first time:
 	now the tutorial message of Strip Mall Parking Lot South is "";
 
 [Index map with Strip Mall Parking Lot South mapped east of front office.]
 
-The Office_ is an unenterable room in Parking Lot South. The printed name is "office". "[We] [gaze] stoically at the sad little storefront that is the new BOSH office. The sign from the previous tenant is still up: 'Angel[']s Department Store'[if margaret is in the Front Office]. Through the front window can be seen Margaret, in her usual manic work mode[end if].".
+The Office_ is an unenterable room in Parking Lot South. The printed name is "office". "[We] [gaze] stoically at the sad little storefront that is the new BOSH office. The sign from the previous tenant is still up: 'Angel[']s Department Store'[if margaret is in the Front Office]. Margaret can be seen through the front window, in her usual manic work mode[end if].".
 The Office_ is an edifice.
 
 Instead of entering the office_:
 	try going west;
+
+The strip mall fence is scenery in the Strip Mall Parking Lot South. "The fence is chain link." Understand "chain/link/chainlink" as the strip mall fence.
 	
 Margaret at a distance is a woman. She is part of the Office_.  She is privately-named. The printed name is "Margaret". The description is "Even from here one can sense [Margaret]'s irrepressible energy." Understand "Margaret/Chao" as Margaret at a distance when the location is Parking Lot South. She is female. She is not neuter.
 Margaret at a distance is obstructed.
 
 Instead of doing something to Margaret at a distance when Margaret is not in the front office:
-	say "You can't see Margaret right now." instead;
+	say "Faraji can't see Margaret right now.";
+
+Instead of doing something to Margaret at a distance when the action requires a touchable noun:
+	say "Faraji will have to enter the office to interact with Margaret.";
+
+Instead of speaking when the location is Strip Mall Parking Lot South and Margaret is in the front office:
+	say "Faraji will have to enter the office to talk to Margaret." instead;
 
 The office window is a part of the Office_. It is privately-named. The printed name is "office window". Understand "front/office/-- window/windows" as the office window. The description is "[if margaret is in the front office]Through the window, [we] can see Margaret, in her usual manic work mode[else]No one is visible inside[end if]."
 
@@ -749,7 +757,7 @@ The astral-tunnel-3-facade-2 is a building facade.
 
 Book 4 - Convenience Store
 
-The Li'l Nectarine Convenience Store is east of the Parking Lot North. It is in Swamp Park. It is indoors. 
+The Li'l Nectarine Convenience Store is east of the Parking Lot North. It is in Swamp Park. It is indoors. It is a leavable room. It has egress west.
 "Li'l Nectarine offers great service and low prices, or so they say. This one's cluttered aisles and sparse shelves could make one wonder if that's true. Behind the counter is the typical array of cigarettes and lottery tickets. Under the counter is a glass case containing various useful items."
 
 The destination name is "Li'l Nectarine Convenience Store".
@@ -811,6 +819,8 @@ Instead of buying something with the Li'l Nectarine Gift Card:
 Rule for supplying a missing second noun while buying the red screwdriver with:
 	if the player encloses the Li'l Nectarine Gift Card:
 		now the second noun is the Li'l Nectarine Gift Card;
+	otherwise:
+		say "You must specify how you want to pay. For example, 'BUY [the noun] WITH five-dollar bill'." instead;
 
 The glass case is a container in the Convenience Store. it is openable. It is closed and locked. it is scenery. It is transparent. In the glass case is the flashlight, a red screwdriver, a laptop computer, and some wireless earbuds. The wireless earbuds are plural-named. 
 Understand "useful/items" as the glass case.

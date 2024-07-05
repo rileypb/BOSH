@@ -30,6 +30,8 @@ about the desk key is a questioning quip.
 	[the comment is "[We] [say], 'Hey, Margaret. Do you have the key to my desk?'".]
 	the reply is "'Sure I do -- I put it in your desk.' She furrows her brow. 'What's the matter?'"
 	It quip-supplies Margaret.
+	It is repeatable.
+	It is plausibility-once.
 	
 An availability rule for about the desk key:
 	if the player knows desk-locked and the player does not know key-is-lost:
@@ -45,6 +47,8 @@ about the status of the computer is a questioning quip.
 	the comment is "'Margaret', [we] [say], 'what's up with my computer?'".
 	the reply is "'[regarding Margaret]Oh, it got busted up during the move. I have it behind my desk -- you can see it if you want. We'll have to get you a new one.'".
 	It quip-supplies Margaret.
+	It is repeatable.
+	It is plausibility-once.
 	
 An availability rule for about the status of the computer:
 	if biff's computer is seen:
@@ -57,6 +61,8 @@ for the wrench is a questioning quip.
 	the comment is "[We] [say], 'Do you happen to have the hex wrench from putting together my desk?'".
 	the reply is "'Well, I [italic type]did[roman type], but I dropped it down a heating vent behind my desk.'"
 	It quip-supplies Margaret.
+	It is repeatable.
+	It is plausibility-once.
 	
 An availability rule for for the wrench:
 	if the player knows key-is-lost and player knows hex-screws:
@@ -71,7 +77,9 @@ for-a-screwdriver is a questioning quip.
 	It mentions the red screwdriver.
 	The comment is "[if the current interlocutor is Margaret][We] [ask], 'Margaret, where's the screwdriver?'[otherwise][We] [ask], 'Would you happen to have a screwdriver I could borrow?'[end if]".
 	The reply is "'Umm... I think it was in a box we had to leave behind.' [Margaret] looks embarrassed. 'What? I never thought we'd need it. This isn't a construction site after all. Maybe if Klimp had paid for the bigger UHaul...' [They] stares past [us] awkwardly.".
-	It quip-supplies Margaret;
+	It quip-supplies Margaret.
+	It is repeatable.
+	It is plausibility-once.
 	
 An availability rule for for-a-screwdriver:
 	if the player knows vent-screws and the player does not know margaret-no-screwdriver:
@@ -87,6 +95,8 @@ to unlock the backdoor is a questioning quip.
 	The comment is "[We] [ask], 'Could you unlock the back door, Margaret?'".
 	The reply is "[if location is front office]'Sure, sure, in a minute. What do you want back there anyway? There's only a dumpster.' She pauses for a moment and mutters to herself. 'Which reminds me, I need to get these boxes broken down.' She picks up a couple and flattens them.[otherwise if back door is locked]'Sure, in a minute.'[otherwise]'It's already unlocked, silly!'[end if]".
 	It quip-supplies Margaret.
+	It is repeatable.
+	It is plausibility-once.
 
 After discussing to unlock the backdoor:
 	now Margaret carries the margaret-flattened-boxes;
@@ -103,11 +113,15 @@ about the phone exchange is a questioning quip.
 	The reply is "[Margaret] looks apologetic. 'I'm sorry, I thought everyone knew. Budget cuts. They're trading in all our smart phones for cheaper models.'".
 	It quip-supplies Margaret.
 	It stocks Margaret.
+	It is repeatable.
+	It is plausibility-once.
 
 about the locked desk is a questioning quip.
 	The comment is "[We] [ask], 'Margaret, do you know any way to get into my desk?'".
 	The reply is "'Hmm... take it apart?'".
 	It quip-supplies Margaret.
+	It is repeatable.
+	It is plausibility-once.
 
 An availability rule for about the locked desk:
 	if the player knows desk-locked and the player knows key-is-lost:
@@ -144,7 +158,7 @@ Chapter 1 - Comments about items
 
 Table of Quiz Topics (continued)
 subject (a thing)	interlocutor (a person)	comment (a text)	reply (a text)
-coatrack	Margaret	--	"She grins. 'An old clothing rack. Good thinking, right?'"
+coat rack	Margaret	--	"She grins. 'An old clothing rack. Good thinking, right?'"
 shelves of office supplies	Margaret	--	"'I doubt you'll be needing any of that now, but if you do, let me know.'"
 cardboard boxes	Margaret	--	"'Hmm, I guess I need to flatten those and bring them out back to the dumpster.'"
 coffee table	Margaret	--	"'It's not much, but what can you expect for $8?'"
@@ -239,7 +253,7 @@ Every turn when Margaret is in the Front Office and the current behavior of Marg
 		otherwise if the location is the BOSH office hallway:
 			say "One can hear the sound of boxes being flattened in the front office.";
 		now Margaret carries the margaret-flattened-boxes;
-		now the biff-flattened-boxes are in the room of stuff;
+		[ now the biff-flattened-boxes are in the room of stuff; ]
 		if the current interlocutor is Margaret:
 			now the current interlocutor is nothing;
 		add behavior throw out boxes to margaret;
@@ -315,7 +329,7 @@ To say sophisticated description for (actor - a thing) from (D - a direction):
  	
 Book 4 - Special Movement Rule
 
-After margaret going to Front Office when the location is front office (this is the speak to margaret when she enters the front office rule):
+After margaret going to somewhere (called the destination) when the destination is the location (this is the speak to margaret when she enters the front office rule):
 	if the current interlocutor is not a person:
 		now the current interlocutor is margaret;
 	continue the action;

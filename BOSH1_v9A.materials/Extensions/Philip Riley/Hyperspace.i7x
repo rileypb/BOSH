@@ -610,6 +610,7 @@ Before printing the name of a tome:
 
 After printing the name of a tome:
 	say "[roman type]";
+	make no decision.
 
 Advanced Temporal Mechanics is a tome on the mahogany desk. The description is "A thick, technical tome with a title that makes Faraji's head hurt."
 It is owned by Minerva. It is loanable.

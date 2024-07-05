@@ -181,7 +181,7 @@ Instead of pushing the exit button:
 	now the umbrella is on the viewing couch;
 	now Doctor Helpful carries Advanced Adventuring;
 	now the yellow flower is nowhere;
-	now ask Doctor Helpful for the book is not exhausted;
+	now Doctor Helpful for the book is not exhausted;
 	now IF Basics is on the Help Shelf;
 	now Commands Volume 1 is on the Help Shelf;
 	now Commands Volume 2 is on the Help Shelf;
@@ -201,7 +201,7 @@ The fake-lake-thing is scenery in the fake-lake. It is privately-named. The prin
 
 The fake-rain is scenery in the fake-lake. It is privately-named. The printed name is "rain". Understand "rain/storm" as the fake-rain. The description is "The rain is coming down in sheets, making it impossible to see anything through the storm-darkened waters." 
 
-The fake-parlor is an observed room. It is privately-named. "a creepy looking place. It looks like the parlor of an old house, maybe Colonial era. There is a table with some chairs, with a book on the table. On the periphery of window, something insect-like flutters, largely out of view".
+The fake-parlor is an observed room. It is privately-named. "a creepy looking place. It looks like the parlor of an old house, maybe Colonial era. There is a table with some chairs, with a book on the table. On the periphery of the window something insect-like flutters, largely out of view".
 The next room of the fake-lake is the fake-parlor. 
 
 The fake-table is scenery in the fake-parlor. It is privately-named. The description is "The table is old and weathered, with a book on top of it." Understand "old/weathered/table" as the fake-table. The printed name is "table".
@@ -217,6 +217,8 @@ The next room of the fake-parlor is the fake-hyperplane.
 
 The fake-structure is scenery in the fake-hyperplane. It is privately-named. The description is "The structure is too far away to make out the details." Understand "structure" as the fake-structure. The printed name is "structure".
 
+The fake-geometry is scenery in the fake-hyperplane. It is privately-named. The description is "The geometry of the space is difficult to comprehend." Understand "impossible/geometry" as the fake-geometry. The printed name is "impossible geometry".
+
 The fake-steeple is an observed room. "a steeple in a small town. The steeple is old and weathered, and the town looks deserted. There is a telescope on a tripod, pointed at the town".
 The next room of the fake-hyperplane is the fake-steeple.
 The next room of the fake-steeple is the fake-lake.
@@ -230,10 +232,14 @@ The fake-town is scenery in the fake-steeple. "A small town, deserted. The build
 The Observation Room is east of the Bureau of Special Help. "This small white room seems like a museum gallery, but with a window instead of art[window description]. 
 
 A comfortable-looking viewing couch dominates the center of the observation room. Exits lead north and west."
+
 The Observation Room has a room called the window contents. The window contents is the fake-lake.
-The tutorial message is "[if the player is not on the comfortable viewing couch]You can type LOOK to repeat the description of the room. You can also EXAMINE an object to get a closer look at it. Or you can SIT ON THE COUCH[otherwise]You can STAND UP from the couch[end if]. See what happens if you try to TAKE an object in the window".
+The tutorial message is "[if the player is not on the comfortable viewing couch]You can type LOOK to repeat the description of the room. You can also EXAMINE an object to get a closer look at it. Or you can SIT ON THE COUCH[otherwise]You can STAND UP from the couch[end if]."
 
 The comfortable viewing couch is an enterable scenery supporter in the Observation Room. It is exposed. The description is "The couch is soft and comfortable." Understand "comfortable-looking/sofa/seat/seating" as the comfortable viewing couch.
+
+Does the player mean entering the comfortable viewing couch:
+	it is very likely.
 
 Bad Luck Counter is a number that varies. Bad Luck Counter is 0.
 
@@ -319,7 +325,13 @@ Understand "steeple" as the observation window when the window contents of the o
 To say window description:
 	say ". Through the window you can see [description of the window contents of the Observation Room]"
 
-The observation window is a scenery transparent closed container in the Observation Room. Understand "view" as the observation window.
+The observation window is a scenery transparent closed openable container in the Observation Room. Understand "view" as the observation window.
+
+Instead of opening the observation window:
+	say "Faraji can't open the window. It's just for looking through.";
+
+Instead of closing the observation window:
+	say "Faraji can't close the window. It's just for looking through.";
 
 Instead of examining the observation window:
 	say "Through the window one can see [description of the window contents of the Observation Room].".
@@ -365,6 +377,8 @@ Report picking flowers:
 
 The shrubs are scenery in the ornamental garden. The description is "The shrubs are neatly trimmed." Understand "shrubs" as the shrubs.
 
+The paths are scenery in the ornamental garden. The description is "The paths are made of crushed stone." Understand "crushed/stone/path" as the paths.
+
 After examining the flowers when the living room key is nowhere:
 	say "Faraji notices a glint of metal among the flowers. It's a small brass key. They take it.";
 	now the player carries the living room key.
@@ -378,6 +392,9 @@ The living room is a room. "[if cozy sofa is not mentioned]A cozy sofa sits next
 The tutorial message is "You can type ASK DOCTOR ABOUT TOPIC to ask Doctor Helpful about a particular topic. You can ASK DOCTOR FOR an object, or GIVE an object TO DOCTOR"
 
 The cozy sofa is an enterable scenery supporter in the living room. The description is "The sofa is soft and comfortable." Understand "soft/comfortable/couch/divan" as the cozy sofa.
+
+Does the player mean entering the cozy sofa:
+	it is very likely.
 
 The warm fireplace is scenery in the living room. The description is "The fireplace is warm and inviting." Understand "warm/inviting/fire/place" as the warm fireplace.
 
@@ -401,25 +418,41 @@ The description is "This book will help you learn some advanced strategies for p
 6. Have Fun: Interactive fiction is a unique and rewarding genre of gaming. Don't be afraid to immerse yourself in the world of the game, explore new areas, and enjoy the experience. Remember, the most important thing is to have fun!"
 
 Instead of examining Advanced Adventuring when Doctor Helpful carries Advanced Adventuring:
-	say "Faraji can't read the book while Doctor Helpful is holding it. They'll have to ASK DOCTOR FOR the book to borrow it.";
+	say "Faraji can't read the book while Doctor Helpful is holding it. They'll have to ASK DOCTOR FOR the book to borrow it. He might lend it to you, but you might have to talk to him a bit before he's willing to lend it.";
 
 Doctor Helpful is a man in the living room. He is carrying Advanced Adventuring.
-The description is "Doctor Helpful is a tweedy old professor with ink-stained fingers." Understand "tweedy/professor" as Doctor Helpful. "Doctor Helpful reclines on the sofa[if Doctor Helpful carries Advanced Adventuring] reading a book[end if], looking thoughtful."
+The description is "Doctor Helpful is a tweedy old professor with ink-stained fingers." Understand "tweedy/professor/man/doc" as Doctor Helpful. "Doctor Helpful reclines on the sofa[if Doctor Helpful carries Advanced Adventuring] reading a book[end if], looking thoughtful."
 
 ink-stained fingers is part of Doctor Helpful. The description is "Doctor Helpful's fingers are stained with ink." They are plural-named.
 
 
-ask Doctor Helpful for the book is a questioning quip.
-	Understand "ask doctor/helpful for book" as ask Helpful for the book.
+Doctor Helpful for the book is a questioning quip.
+	Understand "ask doctor/helpful for book" as Doctor Helpful for the book.
 	It mentions Advanced Adventuring.
 	The comment is "'Doctor, may I borrow your book?'"
 	The reply is "'Of course, Agent Faraji. Here you go.' Doctor Helpful hands Faraji a copy of [italic type]Advanced Adventuring[roman type].".
+	It is repeatable.
 	It quip-supplies Doctor Helpful.
 
-After discussing ask Doctor Helpful for the book:
-	now the player carries Advanced Adventuring.
+Doctor Helpful for the book can be activated.
 
-flowers-subject is a subject. It is privately-named. The printed name is "flowers". Understand "flowers/flower/bloom/blooms" as flowers-subject.
+An availability rule for Doctor Helpful for the book:
+	if Doctor Helpful carries Advanced Adventuring and Doctor Helpful for the book is activated:
+		always available;
+	otherwise:
+		never available.
+
+A plausibility rule for Doctor Helpful for the book:
+	if Doctor Helpful for the book is activated:
+		it is plausible;
+	otherwise:
+		it is implausible.
+
+After discussing Doctor Helpful for the book:
+	now the player carries Advanced Adventuring;
+	now Doctor Helpful for the book is not activated.
+
+flowers-subject is a subject. It is privately-named. The printed name is "flowers". Understand "flowers/bloom/blooms" as flowers-subject.
 adventuring-subject is a subject. It is privately-named. The printed name is "adventuring". Understand "adventure/adventuring" as adventuring.
 commands-subject is a subject. It is privately-named. The printed name is "commands". Understand "commands/command" as commands-subject.
 elderberry juice is a subject.
@@ -447,7 +480,7 @@ flowers-subject	Doctor Helpful		"Faraji says 'I just love your flowers.'"	"'Than
 adventuring-subject	Doctor Helpful		"Faraji asks, 'What can you tell me about adventuring?'"	"'Adventuring is a noble pursuit. Why, I've written a whole slew of books on the subject. You should read them; they're in the room south of here[if Doctor Helpful carries Advanced Adventuring]. Right here I'm carrying one of them,[end if]' Doctor Helpful replies."
 commands-subject	Doctor Helpful		"Faraji asks, 'What can you tell me about commands?'"	"'Commands are the lifeblood of interactive fiction. You can't do much without them. I wrote a book on the subject, you know. It's in the room south of here. My favorite command? GIVE DOCTOR FLOWER,' Doctor Helpful replies."
 Advanced Adventuring	Doctor Helpful		"[if Doctor Helpful carries Advanced Adventuring]Faraji asks, 'What book are you reading?[otherwise]Faraji asks, 'What can you tell me about Advanced Adventuring?'[end if]"	"[if Doctor Helpful carries Advanced Adventuring]'I'm reading [italic type]Advanced Adventuring[roman type], my latest book. It's a real page-turner. You should read it,' Doctor Helpful replies[otherwise]'It's the book I'm most proud of. You should read it,' Doctor Helpful replies[end if]."
-yellow flower	Doctor Helpful		"Faraji says, 'I brought you a flower.'"	"'Thank you, Faraji. It's lovely,' Doctor Helpful replies."
+yellow flower	Doctor Helpful		"Faraji says, 'I brought you a flower.'"	"'Thank you, Larch. It's lovely,' Doctor Helpful replies."
 umbrella	Doctor Helpful		"Faraji says, 'I found an umbrella.'"	"'That's a nice umbrella,' Doctor Helpful replies."
 Larch Faraji	Doctor Helpful		"Faraji says, 'What do you know about me?'"	"'You're an agent investigating strange occurrences in the United States and its territories,' Doctor Helpful replies."
 ink-stained fingers	Doctor Helpful		"Faraji says, 'What's up with your fingers?'"	"'It's not really ink. It's elderberry juice,' Doctor Helpful replies."
@@ -472,11 +505,14 @@ parser-based-games	Doctor Helpful	"Faraji says, 'How much do you know about pars
 
 Before quizzing Doctor Helpful about adventuring-subject:
 	if Doctor Helpful carries Advanced Adventuring:
-		queue Doctor Helpful with ask Doctor Helpful for the book;
+		now Doctor Helpful for the book is activated;
 
 Before quizzing Doctor Helpful about Advanced Adventuring:
 	if Doctor Helpful carries Advanced Adventuring:
-		queue Doctor Helpful with ask Doctor Helpful for the book;
+		now Doctor Helpful for the book is activated;
+
+After quizzing Doctor Helpful about flowers-subject:
+	now the yellow flower is nowhere;
 
 Instead of giving Advanced Adventuring to Doctor Helpful:
 	say "Doctor Helpful accepts the book back with a smile. 'Thank you, Faraji. I hope you found it helpful.'";

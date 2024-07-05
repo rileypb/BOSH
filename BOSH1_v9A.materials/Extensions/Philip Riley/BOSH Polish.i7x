@@ -22,6 +22,11 @@ Check pushing a door:
 	otherwise:
 		try opening the noun instead;
 
+Rule for deciding the concealed possessions of Doctor Helpful:
+	decide no;
+
+Does the player mean requesting a person (called P) for something (called S) when P carries S: it is very likely;
+
 
 Table of No Names (Continued)
 named person (person)	anonymous description (text)	unnamed description (text)	proper name (text)
@@ -104,6 +109,11 @@ BOSH hallway	--	"White drywall."	--
 BOSH chief's office	--	"White drywall, of course."	--
 Moira's Office	--	"More white drywall."	--
 utility closet	--	"White drywall."	--
+Bureau of Special Help	--	"The walls are of the finest marble."	--
+Observation Room	--	"The walls are stark and white."	--
+Ornamental Garden	--	"Stucco walls surround the garden."	--
+Living Room	--	"Cream-colored plaster walls."	--
+
 
 To say church description:
 	if the doll-fly is in the First Utilitarian Church of Enigma Lake:
@@ -334,7 +344,7 @@ Christy	"[We] [don't] want to carry her around."	"Christy may be soft-spoken, bu
 Christy's desk	"It's too heavy to lift."	"It's too heavy to move unaided."
 cigarettes	"[We] [don't] smoke."	"What's the point?"
 closet	"What?"	"What?"
-coatrack	"Please don't take the furniture, even if it is kind of... not really furniture."	"Margaret likes it where it is."
+coat rack	"Please don't take the furniture, even if it is kind of... not really furniture."	"Margaret likes it where it is."
 coffee table	"Margaret worked so hard to get furniture for the office, [we] [don't] want to take it away."	"Margaret is very particular about her furniture. [We] [leave] the table be."
 convenience-store-facade	"Now what would [we] do with that?"	"[We] attempt to push the store around, but it's not going anywhere."
 couch	"That would take at least two people."	"Are you just trying to tick Margaret off?"

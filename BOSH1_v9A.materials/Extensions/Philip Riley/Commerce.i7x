@@ -12,8 +12,11 @@ A thing has an amount of money called the price.
 
 Owner relates one person (called the owner) to a thing. The verb to own (he owns, they own, it is owned) implies the owner relation.
 
-Buying it with is an action applying to one visible thing and one carried thing. Understand "Buy [thing] with [thing]" as buying it with.
+Buying it with is an action applying to two things. Understand "Buy [thing] with [thing]" as buying it with.
 Understand "Purchase [thing] with [thing]" as buying it with. 
+
+Rule for supplying a missing second noun while buying something (called the product) with:
+	say "You must specify how you want to pay. For example, 'BUY [the noun] WITH five-dollar bill'." instead;
 
 [ Underspecified buying is an action applying to one visible thing. Understand "Buy [something]" as underspecified buying.
 

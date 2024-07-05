@@ -29,4 +29,23 @@ Instead of dropping a room:
 Rule for deciding whether all includes the location:
 	it does not.
 
+Room-exiting is an action applying to one thing. Understand "exit [something]" as room-exiting.
+
+Check room-exiting:
+	if the noun is not the holder of the player:
+		say "You can't exit what you're not in." instead;
+	otherwise:
+		try exiting;
+
+Does the player mean room-exiting the location:
+	it is very likely;
+
+Does the player mean room-exiting the holder of the player:
+	it is very likely.
+
+After deciding the scope of the player while room-exiting (this is the place the room in scope while room-exiting rule):
+	place the location in scope, but not its contents.
+
+	
+
 Visible Rooms ends here.

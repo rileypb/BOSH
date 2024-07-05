@@ -179,10 +179,10 @@ Asking someone for something is speaking.
 Requesting someone for something is speaking.
 Imploring someone for something is speaking.
 
-
 Saying yes is speaking.
 Saying no is speaking.
 Saying sorry is speaking.
+
 
 
 Chapter  2 - Greeting
@@ -211,6 +211,7 @@ To implicitly greet (character - a thing):
 
 
 Saying hello to is an action applying to one visible thing.
+Saying hello to is speaking.
 
 Understand "greet [something]" or "say hello/hi to [something]" or "talk to [something]" as saying hello to.
 
@@ -231,6 +232,7 @@ Report saying hello to someone when the greeting type is explicit (this is the d
   say "[We] [say] hello to [the noun]." (A).
 
 Hailing is an action applying to nothing.
+Hailing is speaking.
 
 Understand "hello" or "hi" or "say hello/hi" as hailing.
 
@@ -271,10 +273,12 @@ To reset the interlocutor:
   now the current interlocutor is nothing. [a random person who is not a person]
 
 Leavetaking is an action applying to nothing.
+Leavetaking is speaking.
 
 Understand "bye" or "goodbye" or "cheerio" or "farewell" as leavetaking.
 
 Saying goodbye to is an action applying to one visible thing.
+Saying goodbye to is speaking.
 
 Understand "say bye/goodbye/farewell/cheerio to [someone]" as saying goodbye to.
 

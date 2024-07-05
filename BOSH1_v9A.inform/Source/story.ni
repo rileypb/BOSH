@@ -20,7 +20,8 @@ Include Undo Output Control by Erik Temple.
 Include DTPM Fix by Philip Riley.
 
 Include Locksmith by Emily Short.
- 
+
+[ Include Borrowing by Philip Riley. ]
 Include Essentials by Philip Riley. 
 Include Facts by Philip Riley.  
 Include Phones by Philip Riley. 
@@ -87,6 +88,8 @@ Work Title is always "The Bureau of Strange Happenings".
 Release along with a website.
 Release along with an interpreter. 
 Release along with cover art.
+
+Use the serial comma.
 
 Table of User styles (continued)
 style name    	justification    	italic    	indentation    	first line indentation        	color
@@ -405,6 +408,8 @@ the can't switch on unless switchable rule response (A) is "That can't be switch
 
 The room description body text rule response (A) is "Some light would be nice.".
 
+The parser clarification internal rule response (C) is "Sorry, you can only have one item here. Which exactly?[paragraph break]".
+
 [the can't touch rule does nothing when the action name part of the current action is identifying action.]
  
 [Book 5 - Tweaks to Threaded Conversation
@@ -432,6 +437,9 @@ Carry out flipping a device:
 	otherwise:
 		try switching on the noun;
 
+[ After printing the name of something (called the item):
+	if the item is borrowable and the item is not borrowed:
+		say " (borrowable)"; ]
 
 Book 5 - Automatic greeting
 
@@ -801,6 +809,12 @@ Biff's desk is a desk in Biff's Office. Biff's desk is scenery. It is privately-
 
 biff's desk's drawer is locked. Understand "desk drawer" as biff's desk's drawer.
 
+Instead of pulling biff's desk's drawer:
+	try opening biff's desk's drawer.
+
+Instead of pushing biff's desk's drawer:
+	try closing biff's desk's drawer.
+
 The blue flipphone is a phone. It is in biff's desk's drawer.
 The description of the blue flipphone is "It's a cheap blue flipphone, purchased by the Bureau as some kind of cost-saving measure. It's not even a smartphone. It's not even a good flipphone. It's not even a good bad flipphone. It's just a bad flipphone."
 
@@ -851,7 +865,7 @@ Instead of opening biff's desk's drawer when the player encloses the hex wrench 
 	try taking apart the desk biff's desk;
 
 Check taking apart the desk when the player does not enclose the hex wrench:
-	say "The screws are in there pretty tight. [We] [don't] have the right tools to get them out." instead;
+	say "The screws are in there pretty tight. [We] [don't] have the right tool to get them out." instead;
 
 Carry out taking apart the desk:
 	now biff's desk's drawer is unlocked;
@@ -984,6 +998,12 @@ Instead of climbing up the chain link fence:
 	say "There's no reason to tresspass."
 
 The blue dumpster is scenery in the back lot. "An everyday blue dumpster, about six feet high."
+
+Instead of opening the blue dumpster:
+	say "The dumpster has no lid.";
+
+Instead of closing the blue dumpster:
+	say "The dumpster has no lid.";
 
 Check entering the blue dumpster:
 	say "[We] [are] not yet to the point of dumpster diving." instead;
@@ -1133,7 +1153,7 @@ There is a fluorescent light source in the front office called bfo-light.
 
 Understand "storefront" as the front office.
 
-The description of front office is "It's really a small storefront done up to resemble an office. A store sales counter serves as the [BOSH front desk], behind which are located [shelves of office supplies] and a row of drawers. There are also a [couch] and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a [coatrack]. [Photos] on the walls picture the Bureau in better days. A stack of used and empty [cardboard boxes] sits in one corner.
+The description of front office is "It's really a small storefront done up to resemble an office. A store sales counter serves as the [BOSH front desk], behind which are located [shelves of office supplies] and a row of drawers. There are also a [couch] and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a [coat rack]. [Photos] on the walls picture the Bureau in better days. A stack of used and empty [cardboard boxes] sits in one corner.
 
 The exit is to the east, while the office continues via a hallway to the west.".
 
@@ -1146,7 +1166,7 @@ The government couch is an enterable scenery supporter in front office. "Apparen
 The makeshift seating area is scenery in front office. "A coffee table and couch greet visitors to the office, as if any are expected." It is unfeelable.
 
 
-The coatrack is scenery in front office. "It's an old clothing rack from the department store which formerly occupied this space." Understand "old/clothing/rack/coat" as the coatrack.
+The coat rack is scenery in front office. "It's an old clothing rack from the department store which formerly occupied this space." Understand "old/clothing/coatrack" as the coat rack.
 
 To say photos description:
 	let character list be { Ezra Gaunt, Petula Goldberg, Larch Faraji };
@@ -1222,7 +1242,7 @@ Instead of examining or searching Biff's computer when the thumb drive is not se
 
 The behind description of the BOSH front desk is "There are a number of shelves of office supplies behind the desk. There is also a heating vent on the floor here.";
 
-The heating vent is a scenery container. It is openable, closed, lockable, transparent and locked. "A typical air register with a grill which one would hope would stop things like, say, a hex wrench from falling through. It's set in the floor behind the front desk. The vent is held closed by four screws." Understand "heat/air/conditioning/register/grill/grate" as the heating vent. It is undescribed. 
+The heating vent is a scenery container. It is closed, transparent. "A typical air register with a grill which one would hope would stop things like, say, a hex wrench from falling through. It's set in the floor behind the front desk. The vent is held closed by four screws." Understand "heat/air/conditioning/register/grill/grate" as the heating vent. It is undescribed. 
 
 Securing relates various things to one thing. The verb to secure means the securing relation.
 Some flat head screws secure the heating vent. The description is "Four plain flat head screws." 
@@ -1245,6 +1265,9 @@ Before examining the heating vent (this is the now you know vent-screws rule):
 	now the player knows vent-screws;
 	[ activate the Table of Screwdriver Hints; ]
 
+Instead of searching the BOSH front desk:
+	try looking behind the BOSH front desk;
+
 Instead of searching:
 	try examining the noun;
  
@@ -1264,6 +1287,10 @@ Instead of unlocking the heating vent with the red screwdriver when the hex wren
 
 Instead of unlocking the heating vent with the red screwdriver when the hex wrench is not in the heating vent:
 	say "[We] [have] already gotten the hex wrench out of the vent.";
+
+Instead of opening the heating vent:
+	say "The vent is held closed by four screws.";
+	now the player knows vent-screws;
 
 Instead of opening the heating vent when the hex wrench is in the heating vent and the player encloses the red screwdriver:
 	now the player carries the hex wrench;
@@ -1482,7 +1509,7 @@ Understand "shelves/books/shelf/bookshelf" as Moira's bookshelves.
 They are indescribable.
 
 	
-The borrowed book is an object that varies. The borrowed book is initially nothing.
+The borrowed-book is an object that varies. The borrowed-book is initially nothing.
 
 to borrow a book is a questioning quip.
 	It is silent.
@@ -1490,11 +1517,11 @@ to borrow a book is a questioning quip.
 	It is repeatable.
 
 plausibility rule for to borrow a book:
-	if the borrowed book is nothing:
+	if the borrowed-book is nothing:
 		it is plausible;
 	it is implausible;
 
-Check discussing to borrow a book when the borrowed book is something:
+Check discussing to borrow a book when the borrowed-book is something:
 	say "Moira shakes her head. 'Sorry, I'll only lend one book at a time.'" instead;
 
 After discussing to borrow a book:
@@ -1513,55 +1540,84 @@ No-Myth-After-All is a tome on Moira's bookshelves. It is owned by Moira Zin. It
 The printed name is "No Myth After All: A New Perspective on Atlantis".
 Understand "No/Myth/After/All/A/New/Perspective/on/Atlantis" as No-Myth-After-All.
 The description is "This is a book by the noted skeptic and investigator Niz Ariom. It's a comprehensive look at the evidence for and against the existence of the lost city of Atlantis. It's a bit dry, but it's a classic of the genre."
+[ It is borrowable. ]
 
 Twenty-great-theses is a tome on Moira's bookshelves. It is owned by Moira Zin. It is loanable.
 The printed name is "Twenty Great PhD Theses of the Twentieth Century". 
 Understand "Twenty/Great/PhD/Theses/of/the/Twentieth/20th/Century" as Twenty-great-theses.
 The description is "This is a collection of the most influential PhD theses of the last century. It's a bit of a slog, but it's a good reference for anyone interested in the history of science."
+[ It is borrowable. ]
 
 Anatomy of a Hoax is a tome on Moira's bookshelves. It is owned by Moira Zin. It is loanable.
 The printed name is "Anatomy of a Hoax: Writings on Modern Medicine's Greatest Myths".
 Understand "writings/on/modern/medicine's/greatest/myths" as Anatomy of a Hoax.
 The description is "A collection of essays debunking the most persistent myths about modern medicine; for example, the existence of the gall bladder."
+[ It is borrowable. ]
 
 Tribes of New York is a tome on Moira's bookshelves. It is owned by Moira Zin. It is loanable.
 The description is "A look at the various Native American tribes of New York state, from the pre-Columbian era to the present day."
+[ It is borrowable. ]
 
 Applied Speculation is a tome on Moira's bookshelves. It is owned by Moira Zin. It is loanable.
 The description is "A collection of essays on the application of speculative reasoning to the investigation of paranormal phenomena."
+[ It is borrowable. ]
 
 Biking to the Ferry is a tome on Moira's bookshelves. It is owned by Moira Zin. It is loanable.
 The printed name is "Biking to the Ferry: a Memoir".
 Understand "a/-- memoir" as Biking to the Ferry.
 The description is "A memoir of a summer spent biking around the islands of the Puget Sound."
+[ It is borrowable. ]
 
 Nonstandard Investigative Techniques is a tome on Moira's bookshelves. It is owned by Moira Zin. It is loanable. 
 The description is "Your bible from college, a comprehensive look at the most effective nonstandard investigative techniques, from the use of psychics to the application of chaos theory to criminal investigation."
+[ It is borrowable. ]
 
 Calculus-with-Infinitesimals is a tome on Moira's bookshelves. It is owned by Moira Zin. It is loanable. 
 The printed name is "Calculus with Infinitesimals". Understand "Calculus/with/Infinitesimals" as Calculus-with-Infinitesimals.
 The description is "The classic text on the use of infinitesimals in calculus."
+[ It is borrowable. ]
 
 Three Stigmata of Palmer Eldritch is a tome on Moira's bookshelves. It is owned by Moira Zin. It is loanable. The printed name is "The Three Stigmata of Palmer Eldritch". 
 The description is "A classic of science fiction, this is a novel by Philip K. Dick."
+[ It is borrowable. ]
 
 Book-borrowing a tome (called T) when T is supported by Moira's bookshelves and T is owned by Moira Zin:
 	now the player carries T;
 	now the player owns T;	
 	say "[line break][We] [take] [T].";
-	now the borrowed book is T;
+	now the borrowed-book is T;
 	rule succeeds;
 
-After giving a loanable tome to Moira when the borrowed book is the noun:
-	now the borrowed book is nothing;
+After giving a loanable tome to Moira when the borrowed-book is the noun:
+	now the borrowed-book is nothing;
 	now the noun is supported by Moira's bookshelves;
 	now the noun is owned by Moira Zin;
 	say "Moira smiles. 'Thanks for getting it back to me.' She puts the book back on the shelf.";
 	
-After putting a loanable tome on Moira's bookshelves when the borrowed book is the noun:
-	now the borrowed book is nothing;
+After putting a loanable tome on Moira's bookshelves when the borrowed-book is the noun:
+	now the borrowed-book is nothing;
 	now the noun is owned by Moira Zin;
 	continue the action;
+
+Returning is an action applying to one thing. Understand "return [something]" as returning.
+
+Check returning something:
+	if the borrowed-book is the noun:
+		if the current interlocutor is not Moira Zin:
+			say "Faraji did not borrow that book from [the current interlocutor]." instead;
+	otherwise if the borrowed-book is the noun:
+		if the current interlocutor is not Minerva:
+			say "Faraji did not borrow that book from [the current interlocutor]." instead;
+	otherwise if the current interlocutor is not nothing:
+		say "Faraji did not borrow that book from [the current interlocutor]." instead;
+	otherwise:
+		say "There is no one to return the book to." instead;
+
+Carry out returning:
+	if the current interlocutor is Moira Zin:
+		try giving the borrowed-book to Moira Zin;
+	otherwise if the current interlocutor is Minerva:
+		try giving the borrowed-book to Minerva;
 
 A turn sequence rule when we are discussing to borrow a book (this is the book borrowing turn sequence rule):
 	rule fails;	
