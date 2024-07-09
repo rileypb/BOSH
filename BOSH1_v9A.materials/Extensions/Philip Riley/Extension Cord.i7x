@@ -56,6 +56,23 @@ Before printing the locale description:
 	otherwise if the player encloses the socket-end and the plug-end is not enclosed by the location:
 		let dir be the best route from the location to the location of the plug-end;
 		say "The extension cord Faraji is carrying[trailing text from the location to the location of the plug-end].[paragraph break]";
+	otherwise if the location encloses the plug-end and the location encloses the socket-end:
+		if the player encloses the plug-end and the player does not enclose the socket-end:
+			if the socket-end is supported by something:
+				say "Faraji is holding the plug end of an extension cord, while the other end lies on [a holder of the socket-end]";
+			otherwise:
+				say "Faraji is holding the plug end of an extension cord, while the other end is in [a holder of the socket-end]";
+			if the socket-end accepts something (called the plug):
+				say ". [A plug] is plugged into the socket end";
+			say ".";
+		otherwise if the player encloses the socket-end and the player does not enclose the plug-end:
+			if the plug-end is supported by something:
+				say "Faraji is holding the socket end of an extension cord, while the other end lies on [a holder of the plug-end]";
+			otherwise:
+				say "Faraji is holding the socket end of an extension cord, while the other end is in [a holder of the plug-end]";
+			if something (called the socket) accepts the socket-end:
+				say ". The plug end is plugged into [a socket]";
+			say ".";
 
 Rule for writing a paragraph about the extension cord:
 	say "An extension cord lies on the [if the location is indoors]floor[otherwise]ground[end if]";
@@ -100,7 +117,10 @@ Rule for writing a paragraph about plug-end:
 			say ". The other end is in [the holder of the socket-end] [we] [are] carrying.";
 	otherwise:	
 		if the holder of the socket-end is enclosed by the location:
-			say ". The other end is in [the holder of the socket-end].";
+			if the socket-end is contained by something:
+				say ". The other end is in [the holder of the socket-end].";
+			otherwise:
+				say ". The other end is on [the holder of the socket-end].";
 		otherwise:
 			say ". The other end[trailing text from the location to the location of the holder of the socket-end].";
 
@@ -112,6 +132,8 @@ To say trailing text from (A - a room) to (B - a room):
 			say " trails up into the steeple";
 		otherwise if B is Lake Street by the park:
 			say " trails west out of the church";
+		otherwise if B is the church basement:
+			say " trails down into the basement";
 	otherwise if A is the vestry:
 		if B is First Utilitarian Church of Enigma Lake:
 			say " trails west into the church";
@@ -124,6 +146,8 @@ To say trailing text from (A - a room) to (B - a room):
 	otherwise if A is the church basement:
 		if B is First Utilitarian Church of Enigma Lake:
 			say " trails up into the church";
+	otherwise:
+		say " trails [the best route from A to B]";
 
 Rule for writing a paragraph about socket-end:
 	if the socket-end is in the location:
@@ -152,7 +176,10 @@ Rule for writing a paragraph about socket-end:
 			say ". The other end is in [the holder of the plug-end] [we] [are] carrying.";
 	otherwise:	
 		if the holder of the plug-end is enclosed by the location:
-			say ". The other end is in [the holder of the plug-end]."; 
+			if the plug-end is contained by something:
+				say ". The other end is in [the holder of the plug-end].";
+			otherwise:
+				say ". The other end is on [the holder of the plug-end].";
 		otherwise:
 			say ". The other end[trailing text from the location to the location of the holder of the plug-end].";
 
@@ -351,6 +378,12 @@ Before inserting something into something when the noun is plugged into the exte
 Before inserting something into something when the extension cord is plugged into the noun:
 	separate the extension cord;
 
+Before putting something on something when the noun is plugged into the extension cord:
+	separate the extension cord;
+	
+Before putting something on something when the extension cord is plugged into the noun:
+	separate the extension cord;
+
 Book - Working with the plug-end
 
 After plugging the plug-end into something:
@@ -370,6 +403,11 @@ After taking something when the plug-end is plugged into the noun:
 
 After inserting something into something when the noun accepts the plug-end:
 	now the plug-end is in second noun;
+	maybe condense the extension cord;
+	continue the action;
+
+After putting something on something when the noun accepts the plug-end:
+	now the plug-end is on second noun;
 	maybe condense the extension cord;
 	continue the action;
 
@@ -572,6 +610,11 @@ After inserting something into something when the noun is plugged into the socke
 	maybe condense the extension cord;
 	continue the action;
 
+After putting something on something when the noun is plugged into the socket-end:
+	now the socket-end is on the second noun;	
+	maybe condense the extension cord;
+	continue the action;
+
 After mounting something on something when the noun is plugged into the socket-end:
 	now the socket-end is in the second noun;
 	maybe condense the extension cord;
@@ -656,11 +699,11 @@ For device updating the plug-end:
 Book - Movement Restrictions
 
 Check going when the player encloses the plug-end and the player does not enclose the socket-end:
-	if the socket-end is not in the location and the socket-end is not in the room gone to:
+	if the socket-end is not enclosed by the location and the socket-end is not enclosed by the room gone to:
 		say "The extension cord doesn't reach that far." instead;
 
 Check going when the player encloses the socket-end and the player does not enclose the plug-end:
-	if the plug-end is not in the location and the plug-end is not in the room gone to:
+	if the plug-end is not enclosed by the location and the plug-end is not enclosed by the room gone to:
 		say "The extension cord doesn't reach that far." instead;
 
 Book - Not for Release

@@ -75,7 +75,7 @@ Include BOSH Hints by Philip Riley.
 
 Use MAX_OBJ_PROP_COUNT of 128.
 Use MAX_STATIC_DATA of 720000.
-Use MAX_PROP_TABLE_SIZE of 800000.
+Use MAX_PROP_TABLE_SIZE of 12000000.
 Use MAX_NUM_STATIC_STRINGS of 400000.
 Use MAX_SYMBOLS of 200000.
 Use MAX_OBJECTS of 2048.
@@ -454,6 +454,8 @@ After going to a room:
 			if P is not the player and P is not an animal:
 				postpone saying hello to P;
 				continue the activity; 
+	otherwise if the current interlocutor is not in the location:
+		now the current interlocutor is nothing;
 	otherwise:
 		say "WARNING: The current interlocutor is not nothing. It is [the current interlocutor].";
 	continue the activity;
@@ -480,7 +482,7 @@ The parser error internal rule response (R) is "[if following-up is true]That do
 
 The default sound description rule response (A) is "[Generic description of T] is [sound of T] in another room nearby."
 
-The futile to throw things  at inanimate objects rule response (A) is "There doesn't seem to be much point in that."
+The futile to throw things at inanimate objects rule response (A) is "There doesn't seem to be much point in that."
 
 The block throwing at rule response (A) is "That doesn't seem like a good idea."
 
@@ -688,6 +690,8 @@ to borrow the skull is a questioning quip.
 	The comment is "[We] [ask], 'Chief, mind if I borrow the skull?'". 
 	The reply is "He looks pained for a moment. 'Uh, I'd rather you didn't. It's fragile.'".
 	It quip-supplies Chief Huffton Klimp.
+	It is repeatable.
+	It is plausibility-once.
 	
 After examining the juvenile sasquatch skull:
 	queue Chief Huffton Klimp with to borrow the skull;
@@ -721,6 +725,8 @@ to borrow the dodecahedron is a questioning quip.
 	The comment is "[We] [ask], 'Chief, mind if I borrow the dodecahedron?'".
 	The reply is "He thinks for a moment. 'Actually, I need it to keep my computer running properly. It's a long story.'".
 	It quip-supplies Chief Huffton Klimp.
+	It is repeatable.
+	It is plausibility-once.
 
 After examining the polished orange marble dodecahedron:
 	queue Chief Huffton Klimp with to borrow the dodecahedron;
@@ -964,6 +970,9 @@ Section 2 - Back Lot
 The back lot is a room. It is in BOSH HQ. It is outdoors. 
 
 The BOSH back door is a door. The printed name is "BOSH back door". Understand "backdoor/white/metal" as BOSH back door. It is west of biff's office and east of back lot. It is scenery. It is closed, locked, lockable, and openable. "An unremarkable metal door painted white. [state of BOSH back door][run paragraph on]".
+
+The BOSH-building is scenery in the back lot. It is privately-named. "Standard cinderblock construction, with a few windows and metal doors leading into the BOSH offices and the laundromat."
+The printed name is "building". Understand "building" as BOSH-building.
 
 Before opening BOSH back door when BOSH back door is locked:
 	now player knows back-door-is-locked;
@@ -1341,6 +1350,9 @@ The curios are scenery in the BOSH Chief's office. The description is "The desk 
 
 Klimp's Computer is a thing on the chief's desk. It is scenery. "The computer is a sleek, modern model. It sports a screensaver of what looks like the Hopkinsville goblin." Understand "screen/saver/screensaver" as Klimp's Computer.
 
+Instead of inserting the thumb drive into Klimp's computer:
+	say "The thumb drive is too corroded to fit into the USB port." instead;
+
 The Hopkinsville goblin screensaver is a part of Klimp's Computer. The description is "The screensaver is a looping animation of the Hopkinsville goblin, a creature from the 1955 Kelly-Hopkinsville encounter. It's a little creepy."
 
 The desk shelves are a supporter. They are part of the Chief's desk. They support a polished orange marble dodecahedron. The description of the polished orange marble dodecahedron is "A relic of the Chief's sacred geometry phase.". Understand "legs/shelf" as desk shelves. They are plural-named.
@@ -1351,12 +1363,16 @@ The snarky remark of the polished orange marble dodecahedron is "I'm partial to 
 
 The chief's black leather swivel chair is a supporter in BOSH Chief's Office. It is enterable. It is scenery. "Nice chair. Good lumbar support."
 
+Instead of entering the chief's black leather swivel chair:
+	say "Klimp's already sitting there." instead;
+
 The globe is a thing in the BOSH Chief's office. It is scenery. "The globe is very handsome with lots of intriguing detail. Unfortunately, Klimp has marred it with thumbtacks and string marking the world's 'leylines'."
 
-The armchair is a supporter in BOSH Chief's Office. It is enterable. It is scenery. "Plush and comfortable with a yellow and red striped design. Absolutely hideous.". Understand "chair" as the armchair.
+The armchair is a supporter in BOSH Chief's Office. It is enterable. It is scenery. "Plush and comfortable with a yellow and red striped design. Absolutely hideous.". Understand "chair/cozy" as the armchair.
 The snarky remark of the armchair is "It's like a clown exploded."
 
 The mahogany side table is a thing in BOSH Chief's Office. It is scenery. "This is a nice piece, quite out of place in the BOSH offices. Flame mahogany with very pretty inlays."
+Understand "inlays" as the mahogany side table.
 
 The bookcase is a thing in BOSH Chief's Office. It is scenery. "The Chief's library boasts many interesting titles, from Alton Cherry's [italic type]Waiting for the Aliens[roman type] to Debi Bosworth's [italic type]My Travels in Time[roman type]. For the uninitiated, there is also a copy of [italic type]The Dictionary of Strangeness[roman type]." 
 Understand "books/bookshelf/bookshelves", "book case", "book shelf", "book shelves" as bookcase.
@@ -1470,7 +1486,7 @@ The antique wooden file cabinet is a container in the BOSH Chief's office. It is
 Understand "filing" as the antique wooden file cabinet.
 
 The prints are scenery in the BOSH Chief's office. The description is "There are three prints, the most striking of which is a neon-hued abstract by Diego Ernesto Diaz, the late Mexican painter, titled 'Hora de la Muerte'.".
-Understand "painting/paintings" as prints.
+Understand "painting/paintings/garish" as prints.
 
 Hora de la Muerte is scenery in the BOSH Chief's office. Understand "Diego/Ernesto/Diaz/abstract/neon/hued" as Hora de la Muerte. "The print is a riot of color, with a central figure that could be a skeleton. It's a bit much for the office, but it's certainly striking."
 
@@ -1481,6 +1497,8 @@ Understand "memorabilia", "junk", "stuff", "knick-knacks", "knick knacks" as the
 
 A pair of astral lenses is on the chief's shelves. It is ambiguously plural. Chief Huffton Klimp owns the pair of astral lenses. The description of the pair of astral lenses is "To all appearances an ordinary pair of glasses, the astral lenses allegedly reveal the existence of extra-dimensional pathways." The pair of astral lenses is wearable. 
 Understand "glasses/glass" as the pair of astral lenses.
+
+Understand "look through [pair of astral lenses]" as a mistake ("Try wearing the astral lenses instead.").
 
 Check wearing the pair of astral lenses when the location is fluorescent-lit:
 	say "[We] [try] to put on the astral lenses, but the fluorescent light is blinding. [We] [take] them off again." instead;	
@@ -1645,7 +1663,7 @@ The description of the closet door is "It's a plain wooden door. It's [if the cl
 
 The utility closet is dark. It is in BOSH HQ. It is a leavable room. The egress is west. "It is cramped in here. Other than Faraji, the only thing in here is a breaker box on the wall."
 
-The breaker box is a fixed in place container in the utility closet. It is closed, locked, lockable, and openable. The description is "It's a small metal box affixed to the back wall of the closet. There is a small keyhole in the front."
+The breaker box is a fixed in place scenery container in the utility closet. It is closed, locked, lockable, and openable. The description is "It's a small metal box affixed to the back wall of the closet. There is a small keyhole in the front."
 The keyhole is part of the breaker box. The description is "It's a small keyhole in the front of the box."
 The keyhole is unsnarkable.
 
@@ -1838,6 +1856,7 @@ The doll-fly-subject is a subject. It is privately-named. The printed name is "d
 hezekiah-subject is a subject. It is privately-named. The printed name is "Hezekiah Horton". Understand "Hezekiah/Horton" as hezekiah-subject.
 astral-resonator-subject is a subject. It is privately-named. The printed name is "astral resonator". Understand "astral/resonator" as astral-resonator-subject. 
 money is a subject.
+alien invasion is a subject. 
 
 
 Table of Quiz Topics (continued)
@@ -2175,6 +2194,10 @@ pawn-shop-subject	Moira Zin	"'Moira, what do you know about the pawn shop next d
 laundromat-subject	Chief Huffton Klimp	"'Chief, what do you know about the --'"	"'Laundromat? I don't know. I don't do my own laundry. I have a guy for that.'"
 laundromat-subject	Margaret	"'Margaret, what do you know about the laundromat next door?'"	"'It looks dirty.'"
 laundromat-subject	Moira Zin	"'Moira, what do you know about the laundromat next door?'"	"'Hard to say. It doesn't look like a very happy place. But then, I don't think laundromats are supposed to be happy.'"
+alien invasion	Chief Huffton Klimp	"'Chief, is there really going to be an --'"	"'-- alien invasion? Well, of course there is. I have a plan. Do you have a plan? You should have a plan. I have a plan. Don't ask me what it is."
+alien invasion	Margaret	"'Margaret, do you think there's going to be an alien invasion?'"	"'I hope not. I don't like aliens.'"
+alien invasion	Moira Zin	"'Moira, do you think there's going to be an alien invasion?'"	"'Stop talking to Klimp.'"
+
 
 
 

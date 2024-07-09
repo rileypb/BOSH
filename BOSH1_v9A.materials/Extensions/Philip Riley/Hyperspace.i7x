@@ -61,6 +61,8 @@ Before going a hyperspatial direction:
 			say "[text of the parser error internal rule response (E)][line break]" instead;
 		otherwise if player is not in hyperspace:
 			say "I[']m not sure what you're trying to say. I might just not recognize the words you're using." instead;
+	if player is not in hyperspace and player is not wearing the astral lenses:
+		say "That direction only exists in hyperspace." instead;
 		
 [ Check going a hyperspatial direction:
 	if player is not in hyperspace and player is not wearing the astral lenses:
@@ -285,7 +287,7 @@ Understand "staircase/stairs/spiral" as Descending Stair.
 [Rule for writing a paragraph about the descending stair:
 	say "A spiraling staircase disappears into the ground here. It is made of the same gossamer, questionably real stuff as the ground,[if visited pillar is true] the pillar,[end if] and the readouts. You can't see past the first turn of the stairs, unfortunately.";]
 
-The Ethereal Pillar is scenery. The description is "It's not clear what the pillar is made of, but it's definitely not stone." 
+The Ethereal Pillar is a thing. The description is "It's not clear what the pillar is made of, but it's definitely not stone." 
 
 After deciding the scope of the player when the location is Featureless Hyperplane:
 	place the Ethereal Pillar in scope;
@@ -924,7 +926,11 @@ Portal Room 1 is a leavable room. It is forth of the field office hallway. It is
 
 The machinery is scenery in Portal Room 1. The description is "The machinery is humming and glowing with a soft light. It's all attached to the portal in the middle of the room." Understand "machines" as the machinery.
 
+soft light is a backdrop. It is in Portal Room 1 and Portal Room 2. The description is "The light is soft and warm, casting a gentle glow over everything."
+
 The portal to the past is in Portal Room 1. The portal to the past can be activated. it is fixed in place.
+
+portal label is part of the portal to the past. The description is "The label reads 'Portal to the Past'." 
 
 Understand "shimmering/curtain/field/of/light" as the portal to the past when the portal to the past is activated. 
 
@@ -941,7 +947,7 @@ To say portal to the past interior description:
 	otherwise:
 		say ". The portal is dark and inactive";
 
-The description is "The portal, made of the same astral stuff this whole dimension is made of, looms over the rest of the room[portal to the past interior description]. On the right post is a control panel. A label on the top of the arch reads 'Portal to the Past.'"
+The description of the portal to the past is "The portal, made of the same astral stuff this whole dimension is made of, looms over the rest of the room[portal to the past interior description]. On the right post is a control panel. A label on the top of the arch reads 'Portal to the Past.'"
 
 Rule for writing a paragraph about the portal to the past:
 	say the description of the portal to the past;
@@ -981,7 +987,8 @@ The keypad is a part of the spacetime control. The description is "A standard nu
 The display is a part of the spacetime control. The description is "[if the portal to the past is activated]The display reads '[current spacetime setting]'[otherwise]The display is dark[end if]."
 Understand "LED/LEDs" as the display.
 
-The reset button is a part of the spacetime control. The description is "A large red button that says 'RESET'."
+The reset button is a part of the spacetime control. The description is "A large red button that says 'RESET'." Understand "red/large/big" as the reset button.
+
 Carry out pushing the reset button:
 	if the keypad is initialized:
 		now the current spacetime setting is the town hall spacetime setting;
@@ -1045,6 +1052,8 @@ Portal Room 2 is a leavable room. It is back of the field office hallway. It is 
 
 The auxiliary portal is in Portal Room 2. The auxiliary portal can be activated. it is fixed in place.
 
+Portal sign is part of the auxiliary portal. The description is "The sign reads 'Auxiliary Portal'." 
+
 Understand "shimmering/curtain/field/of/light" as the auxiliary portal when the auxiliary portal is activated. 
 
 Instead of going inside when the location is Portal Room 2:
@@ -1057,7 +1066,7 @@ To say auxiliary portal interior description:
 	otherwise:
 		say ". The portal is dark and inactive";
 
-The description is "The portal is made of the same astral stuff this whole dimension is made of[auxiliary portal interior description]. It is labeled 'Auxiliary Portal'."
+The description of the auxiliary portal is "The portal is made of the same astral stuff this whole dimension is made of[auxiliary portal interior description]. It is labeled 'Auxiliary Portal'."
 
 The machinery2 is scenery in Portal Room 2. It is privately-named. The printed name is "machinery". Understand "machinery/machines" as machinery2. The description is "The machinery is humming and glowing with a soft light. It's all attached to the portal in the middle of the room."
 
@@ -1131,6 +1140,9 @@ klimp-is-fine is an informative quip.
 	The reply is "'Great! Be sure to say hi for me.'".
 	It quip-supplies Doris.
 	It follows where-is-this-hyperspace.
+
+After discussing klimp-is-fine:
+	set pronouns from Doris;
 	
 To shake is a verb.
 
@@ -1603,7 +1615,9 @@ Check giving Doris's note to Christy when the player does not carry Tribes of Ne
 	say "Christy briefly looks at the note and says, 'I can't do anything with this. You need to bring me the book too.'" instead;
 
 After giving Doris's note to Christy:
-	say "Christy reads the note and says, 'Oh, I see. I'll get right on it. And give me the book too, thanks. So, this might take me a while -- actually, could you get me a cup of coffee?'";
+	say "Christy reads the note and says, 'Oh, I see. I'll get right on it. And give me the book too, thanks. So, this might take me a while -- actually, could you get me a cup of coffee?'
+	
+	(Faraji has lost the note and the book)";
 	now the christy interjection timer is a random number from 2 to 5;
 	now Christy carries Doris's note;
 	now Christy carries Tribes of New York;

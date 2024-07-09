@@ -208,7 +208,7 @@ the Enigma Lake town hall is a leavable room. It is in ELR. It is unleavable. It
 The snarky remark is "Time travel should be accompanied by more fanfare."
 The x-coordinate of the Enigma Lake town hall is 0. The y-coordinate of the Enigma Lake town hall is 0.
 
-The information desk is scenery in the Enigma Lake town hall. Understand "info desk", "help desk", "front desk" as information desk. "A work schedule is taped to the desk."
+The information desk is scenery in the Enigma Lake town hall. Understand "info desk", "help desk", "front desk", "permanent/fixture" as information desk. "A work schedule is taped to the desk."
 
 The bell is on the information desk. The description is "A small brass bell, used to summon the attention of the town hall staff."
 
@@ -667,7 +667,7 @@ Book 10 - Main at Lake
 Main at Lake is east of Main Street 200 Block. It is in ELR. It is outdoors. The printed name is "Main and Lake". The preposition is "at the intersection of". "Main goes west, while Lake runs north. The corner of the town hall is to the northwest, although it cannot be entered there. Southeast is the entrance to WGXC 'Galaxy' Radio. There is a broadcast tower on top of the building." 
 The x-coordinate of Main at Lake is 1. The y-coordinate of Main at Lake is -1.
 
-The radio station facade is a building facade. It is in Main at Lake. It is privately-named. The printed name is "WGXC 'Galaxy' Radio". Understand "WGXC/Galaxy/Radio/station" as radio station facade. "The sign over the door says 'WGXC [']Galaxy['] Radio 1055 AM'."
+The radio station facade is a building facade. It is in Main at Lake. It is privately-named. The printed name is "WGXC 'Galaxy' Radio". Understand "WGXC/Galaxy/Radio/station/building" as radio station facade. "The sign over the door says 'WGXC [']Galaxy['] Radio 1055 AM'."
 	The radio station facade fronts Radio Station WGXC.
 	It is enterable from Main at Lake.
 
@@ -1154,7 +1154,7 @@ Book 17 - Vestry
 The vestry is a leavable room. It is east of First Utilitarian Church. It has egress west. It is in ELR. It is indoors. "It's a small room, with an exit leading to the church proper to the west. A lovely tapestry hangs on the wall[if the tapestry is pushed aside]. It is pushed aside, revealing a circuit breaker[end if]."
 The x-coordinate of the vestry is 3. The y-coordinate of the vestry is 1.
 
-The tapestry is scenery in the vestry. "An intricate tapestry, depicting a scene of a medieval village. It's a bit out of place in a church, but it's lovely." The tapestry can be pushed aside. Understand "wall hanging", "wallhanging" as the tapestry.
+The tapestry is scenery in the vestry. "An intricate tapestry, depicting a scene of a medieval village. It's a bit out of place in a church, but it's lovely." The tapestry can be pushed aside. Understand "wall hanging", "wallhanging", "medieval/village" as the tapestry.
 
 Instead of pushing the circuit breaker:
 	if the circuit breaker is switched off:
@@ -1554,7 +1554,7 @@ After inserting the light bulb into the hanging socket:
 	say "Faraji screws the light bulb into the socket.";
 
 Instead of inserting the rusty astral resonator into the hanging socket:
-	say "The rusty astral resonator doesn't fit in the hanging light socket."
+	say "The [rusty astral resonator] doesn't fit in the hanging light socket."
 
 The hanging socket is a scenery single item container in the workshed. The light bulb is in the hanging socket. Understand "light" as the hanging socket. 
 "[if the light bulb is in the hanging socket]The light bulb is in the socket[otherwise]The socket is empty[end if]."
@@ -3252,8 +3252,10 @@ After taking the rusty astral resonator when the rusty astral resonator was in t
 	otherwise:
 		continue the action;
 
-Understand "screw [the rusty astral resonator] in/into [the threaded socket]", "mount [the rusty astral resonator] on/onto/in/into [the threaded socket]" as inserting it into.
-Understand "screw [the light bulb] in/into [the threaded socket]", "mount [the light bulb] on/onto/in/into [the threaded socket]" as inserting it into.
+Understand "screw [the rusty astral resonator] in/into/to [the threaded socket]", "mount [the rusty astral resonator] on/onto/in/into [the threaded socket]" as inserting it into.
+Understand "screw [the light bulb] in/into/to [the threaded socket]", "mount [the light bulb] on/onto/in/into [the threaded socket]" as inserting it into.
+Understand "screw [the light bulb] in/into/to [the light socket]", "mount [the light bulb] on/onto/in/into [the light socket]" as inserting it into.
+Understand "screw [the light bulb] in/into/to [the table lamp]", "mount [the light bulb] on/onto/in/into [the table lamp]" as inserting it into.
 
 Understand "unscrew [the rusty astral resonator]", "unmount [the rusty astral resonator]" as taking.
 
@@ -3336,7 +3338,7 @@ The red enameled base is part of the table lamp. The description is "A red ename
 The short power cord is part of the table lamp. The description is "A power cord, a little the worse for wear, but still functional."
 
 Instead of inserting the rusty astral resonator into the light socket:
-	say "The rusty astral resonator doesn't fit in the table lamp."
+	say "The [rusty astral resonator] doesn't fit in the table lamp."
 
 Check inserting something into the light socket:
 	if the noun is not the light bulb:
@@ -3968,6 +3970,7 @@ Instead of going when the group of lizard people is in the location:
 
 Doris-subject is a subject. It is privately-named. The printed name is "Doris". Understand "doris" as Doris-subject.
 Dragon-subject is a subject. It is privately-named. The printed name is "Dragon". Understand "dragon" as Dragon-subject.
+plans-subject is a subject. It is privately-named. The printed name is "plans". Understand "plans" as plans-subject.
 
 Table of Quiz Topics (continued)
 subject (a thing)	interlocutor (a person)	comment (a text)	reply (a text)
@@ -3985,6 +3988,7 @@ potato	group of lizard people	"'I'm going to thwack you with a potato,' says Far
 chief-huffton-klimp-subject	group of lizard people	"'What do you know about Chief Huffton Klimp?' asks Faraji."	"'Klimp is a good fr-- um, I mean enemy of the lizard people,' hisses the lizard person."
 woven basket	group of lizard people	"'What's with the woven basket?' asks Faraji."	"'What?' hisses the lizard person. 'We have no interest in woven baskets.'"
 root vegetables	group of lizard people	"'What's with the root vegetables?' asks Faraji."	"'Root vegetables?' hisses the lizard person. 'We have no interest in root vegetables. Least of all rutabagas.'"
+plans-subject	group of lizard people	"'What are your plans?' asks Faraji."	"'Our plans are our own,' hisses the lizard person. 'You will not stop us.'"
 
 Instead of pushing the recall button when the group of lizard people is in the location:
 	say "It doesn't do anything. The lizard people hiss in amusement.";

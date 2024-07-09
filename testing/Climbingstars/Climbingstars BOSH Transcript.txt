@@ -4145,7 +4145,7 @@ I'm not sure what you're trying to say. I might just not recognize the words you
 
 >l
 Agent Faraji is in the BOSH chief's office. Chief Klimp's office is full of character. Shelves strewn with knick-knacks abut a cozy armchair and a mahogany side table supporting a large globe. A bookcase on the north wall is packed with books on paranormal happenings. Garish prints adorn the remaining wall space.  Under one of these is a modernistic desk of glass and chrome, behind which is a very nice black leather swivel chair. There is a computer on the desk, and to its side is an antique wooden file cabinet. To tell the truth, it's all a bit much, but it matches Klimp's personality perfectly. There is an exit to the east.
-
+<<<<<<
 Chief Klimp sits behind the desk, his feet up.
 
 A phone is ringing somewhere to the east.
@@ -6628,7 +6628,7 @@ It's a typical glass door. Taped to it is a sign that says "Closed for renovatio
 
 >x glass
 To all appearances an ordinary pair of glasses, the astral lenses allegedly reveal the existence of extra-dimensional pathways.
-
+<<<<<
 >break front
 There's nothing like that nearby.
 
@@ -7840,7 +7840,7 @@ Faraji can't go that way.
 
 >u
 Faraji can neither climb walls nor fly.
-
+<<<<<<
 >f
 Faraji trudges across the trackless hyperplane, and ends up somewhere else, yet exactly the same.
 
@@ -9324,7 +9324,7 @@ Agent Faraji is in Minerva's office. The office is white and gleaming. A mahogan
 Minerva is sitting at her desk, typing away on her computer.
 
 Faraji can ask for a cup of coffee or ask for a screwdriver.
-
+<<<<<
 >x mahogany
 The desk holds some neatly-stacked papers, a few books, and a coffee maker.
 
@@ -12637,7 +12637,7 @@ Agent Faraji is walking on Lake Street by the gym. Lake Street runs north and so
 
 >n
 Agent Faraji is walking on Lake Street by the park. Lake Street runs north and south from here. To the west is the park, while to the east is the First Utilitarian Church of Enigma Lake.
-
+<<<<<<<<<
 >n
 Agent Faraji is at the intersection of Lake Street and Ridge Road. The intersection lies at the edge of the lake. Lake Street runs south into town, while Ridge Road heads off into the darkness east of here. A little path along the lake shore is to the west.
 
@@ -12694,7 +12694,7 @@ Faraji is carrying:
 
 >put object in lamp
 The rusty astral resonator doesn't fit in the table lamp.
-
+<<<<<<
 >? Is this meant to reveal the name of the object here?
 I didn't understand that sentence.
 

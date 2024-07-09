@@ -6,7 +6,7 @@ A thing can be pluggable. A thing can be plug-into-able.
 
 Plugging-into relates a thing to a thing. The verb to be plugged into implies the plugging-into relation. The verb to accept implies the reversed plugging-into relation.
 
-Plugging it into is an action applying to one thing and one thing. Understand "plug [something] into [something]" as plugging it into.
+Plugging it into is an action applying to one thing and one thing. Understand "plug [something] into/in [something]" as plugging it into.
 Understand "plug [something] in to [something]" as plugging it into. Understand "plug in [something]" as plugging it into.
 
 Unplugging is an action applying to one thing. Understand "unplug [something]" as unplugging.

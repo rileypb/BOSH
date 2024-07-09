@@ -191,6 +191,7 @@ Instead of pushing the exit button:
 	now BOSH Game Book is on the Help Shelf;
 	now the Bad Luck Counter is 0;
 	now the umbrella is closed;
+	now the living room door is locked;
 	truncate the queue of Doctor Helpful to 0 entries;
 
 An observed room is a kind of room. An observed room has a room called the next room. 
@@ -389,7 +390,7 @@ The tutorial message is "[if the living room door is locked]This door is locked.
 
 The living room is a room. "[if cozy sofa is not mentioned]A cozy sofa sits next to the warm fireplace[otherwise]The sofa is next to the fireplace[end if]. Doors lead south and east."
 
-The tutorial message is "You can type ASK DOCTOR ABOUT TOPIC to ask Doctor Helpful about a particular topic. You can ASK DOCTOR FOR an object, or GIVE an object TO DOCTOR"
+The tutorial message is "You can type ASK DOCTOR ABOUT a topic to ask Doctor Helpful about a particular topic. You can ASK DOCTOR FOR an object, or GIVE an object TO DOCTOR"
 
 The cozy sofa is an enterable scenery supporter in the living room. The description is "The sofa is soft and comfortable." Understand "soft/comfortable/couch/divan" as the cozy sofa.
 

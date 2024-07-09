@@ -525,7 +525,7 @@ Activating the hint-extension-cord:
 		activate;
 	deactivate;
 
-The hint-bible is a progressive hint topic. Understand "Book/of/Utilitarianism", "bible" as the hint-bible. The printed name is "Book of Utilitarianism". The progression is {"I wonder if any of this stuff is important.", "Is there a passage that would be useful if it came true?", "What about the passage about the cursèd word?", "The cursèd word is '[cursed word] '", "Who might Faraji say that to?", "Faraji should try saying the cursèd word to the group of lizard people."}.
+The hint-bible is a progressive hint topic. Understand "what/is/the/Book/of/Utilitarianism", "bible" as the hint-bible. The printed name is "what is the Book of Utilitarianism". The progression is {"I wonder if any of this stuff is important.", "Is there a passage that would be useful if it came true?", "What about the passage about the cursèd word?", "The cursèd word is '[cursed word] '", "Who might Faraji say that to?", "Faraji should try saying the cursèd word to the group of lizard people."}.
 
 hinting the hint-bible:
 	if the Book of Utilitarianism is not read:

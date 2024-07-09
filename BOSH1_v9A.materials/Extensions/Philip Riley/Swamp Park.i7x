@@ -24,7 +24,7 @@ Chapter 1 - Strip Mall Parking Lot South
 
 The Strip Mall Parking Lot South is a room. The printed name is "south end of the strip mall parking lot". It is east of the front office. It is in Swamp Park. It is outdoors.  The preposition is "at". front office is inside from the Strip Mall Parking Lot South. Understand "end/of/the" as the Strip Mall Parking Lot South.
 The description of the Strip Mall Parking Lot South is "From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north."
-The tutorial message of the Strip Mall Parking Lot South is "Enter HELP for instructions, including information special to this game."
+The tutorial message of the Strip Mall Parking Lot South is "Enter HELP for instructions, including information special to this game"
 
 Carry out helping for the first time:
 	now the tutorial message of Strip Mall Parking Lot South is "";
@@ -71,7 +71,10 @@ Car 1 is an automobile in Strip Mall Parking Lot South. It is privately-named. T
 Understand "red", "car", "hyundai", "accent", "automobile", "auto", "my car", "faraji's car", "larch's car" as car 1. It is fixed in place. The description is "An old bright red Hyundai Accent, it's been [our] personal means of transportation for years. And since the Bureau lost its fleet, it's [our] work car too. Two years ago, [we] had to replace the hood after a window A/C unit fell on it. Now it doesn't exactly match the rest of the car.".
 Car 1 is an edifice.
 
-Instead of entering or opening or driving car 1:
+Does the player mean entering the clean car battery:
+	it is very unlikely;
+
+Instead of unlocking or locking or opening or closing or entering or driving car 1:
 	say "[Agent]'s job is here for now.";
 
 To say battery state:
@@ -111,8 +114,8 @@ The examine hood contents rule is listed instead of the examine containers rule 
 Car 2 is an automobile. It is privately-named. The printed name is "[Chief Huffton Klimp]'s Porsche". Understand "car/Klimp's/Porsche/automobile/auto/2017/911/Turbo/Cabriolet" as car 2. The initial appearance of car 2 is "Klimp's Porsche takes up two spots." It is fixed in place. The description is "Klimp drives a sleek 2017 Porsche 911 Turbo Cabriolet."
 Car 2 is an edifice.
 
-Instead of entering or opening or driving car 2:
-	say "That isn't [Agent]'s car.";
+Instead of unlocking or locking or opening or closing or entering or driving car 1:
+	say "[We] [don't] have the keys to Klimp's car.";
 
 The Porsche hood is a part of Car 2. It is an openable closed container. The description is "The hood is closed." Understand "bonnet/911" as the Porsche hood.
 
@@ -148,7 +151,7 @@ The washing-machines are a part of the Laundromat-facade. They are privately-nam
 They are obstructed.
 
 	
-The laundromat front door is a closed, back-locked, and front-locked scenery shop-door. It is privately-named. The printed name is "laundromat front door". Understand "laundromat/-- front/-- door" as the laundromat front door. It is northwest of the parking lot south and southeast of the laundromat-store. The front description is "It's a typical glass door. Taped to it is a sign that says 'Closed for renovations'." The frontside is the strip mall parking lot south. The back description is "It's a typical glass door." 
+The laundromat front door is a closed, back-locked, and front-locked scenery shop-door. Understand "glass" as the laundromat front door. It is northwest of the parking lot south and southeast of the laundromat-store. The front description is "It's a typical glass door. Taped to it is a sign that says 'Closed for renovations'." The frontside is the strip mall parking lot south. The back description is "It's a typical glass door." 
 The laundromat front door is indescribable.
 
 	
@@ -208,9 +211,9 @@ Section 1 - Dave Conversation
 
 Angels-subject is a subject. It is privately-named. The printed name is "Angel's Department Store". Understand "Angel's/Angel/Angels/department/store" as Angels-subject.
 
-pawn-shop-subject is a subject. It is privately-named. The printed name is "Dave's pawn shop". Understand "Dave's/pawn/shop" as pawn-shop-subject.
+the pawn-shop-subject is a subject. It is privately-named. The printed name is "Dave's pawn shop". Understand "Dave's/pawn/shop" as pawn-shop-subject.
 Butterfree-subject is a subject. It is privately-named. The printed name is "Butterfree". Understand "Butterfree/butterfly/pokemon/pokémon" as Butterfree-subject.
-laundromat-subject is a subject. It is privately-named. The printed name is "laundromat". Understand "laundromat" as laundromat-subject.
+the laundromat-subject is a subject. It is privately-named. The printed name is "laundromat". Understand "laundromat" as laundromat-subject.
 
 Table of Quiz Topics (continued)
 subject (a thing)	interlocutor (a person)	comment (a text)	reply (a text)
@@ -284,12 +287,15 @@ The sunlight is scenery in Dave's pawn shop. "A few bands of sunlight filter thr
 
 The cigar smoke is scenery in Dave's pawn shop. "The smell of cigar smoke is thick in the air."
 
-The blinds are scenery in Dave's pawn shop. "The blinds are closed, leaving the room in a dim light." Understand "windows/blind/window" as the blinds.
+The blinds are scenery in Dave's pawn shop. "The blinds are closed, leaving the room in a dim light." Understand "windows/blind/window" as the blinds. They are plural-named.
 
 Instead of opening the blinds:
 	say "Dave might prefer them closed.";
 
-The fluorescent lights are scenery in Dave's pawn shop. "The lights are flickering and buzzing." Understand "light" as the fluorescent lights.
+Instead of closing the blinds:
+	say "The blinds are already closed.";
+
+The fluorescent lights are scenery in Dave's pawn shop. "The lights are flickering and buzzing." Understand "light" as the fluorescent lights. They are plural-named.
 They are far away.
 
 The glass counter is a supporter in Dave's pawn shop. It is scenery. "The counter is arrayed with displays of jewelry, watches, and the like." Understand "items/collection" as the glass counter.
@@ -356,6 +362,8 @@ about the laundromat owner is a questioning quip.
 	The reply is "'Well, that's a tricky one. Laundromat's been closed for almost two weeks now, since the owner just split for some reason he didn't bother to share. Not likely to get ahold of him. If you're not averse to a little trespassing, though, see if you come across a watch. Another thing he borrowed.'"
 	It quip-supplies Dave.
 	It follows for-a-screwdriver-pawn.
+	It is repeatable.
+	It is plausibility-once.
 	
 After discussing about the laundromat owner:
 	now player knows break-in-to-laundromat;
@@ -495,11 +503,17 @@ It is far away.
 
 The washing machines are scenery in the laundromat-store. "The machines are old and worn, but still seemingly functional. A few are out of order." Understand "machine/dryer/dryers" as the washing machines.
 
+Instead of opening or closing the washing machines:
+	say "Faraji spends a few moments fiddling with the machines, but to no purpose.";
+
 The opening_ is scenery in the laundromat-store. "The opening leads west to the back room." Understand "doorway" as the opening_. It is privately-named. The printed name is "opening".
 It is unsnarkable.
 
 The handtruck is in the laundromat-store. It is pushable between rooms.
 Understand "hand/truck/trolley/dolly/trundler", "box cart", "sack barrow", "cart", "sack truck", "two wheeler", "bag barrow" as the handtruck. The description is "It's a handtruck, two wheels and a platform, used for moving heavy things."
+
+The wheels are part of the handtruck. The description is "The handtruck has two wheels." Understand "wheel" as the wheels.
+A carrying-platform is part of the handtruck. The description is "The handtruck has a platform for carrying things." It is privately-named. The printed name is "platform". Understand "platform" as the carrying-platform.
 
 Instead of inserting something into the handtruck:
 	say "[We] [can] PUSH the handtruck around, or MOVE a thing WITH the handtruck, but [we] can't put things into or onto it.";
@@ -533,7 +547,11 @@ It is unsnarkable.
 The laundromat desk is a scenery desk in the laundromat back room. "The desk is cluttered with papers. It has a single drawer, which is [if the laundromat desk's drawer is open]open[otherwise]closed[end if]."
 The laundromat desk's drawer has description "The drawer is [if the laundromat desk's drawer is open]open[otherwise]closed[end if]."
 
-The laundromat-papers is scenery in the laundromat back room. It is privately-named. Understand "paper/papers/receipt/receipts/invoice/invoices" as the laundromat-papers. "The papers are mostly receipts and invoices[if the strange piece of paper is nowhere]. One piece, however, consists of strange sketches and diagrams. In one corner is scrawled the cryptic phrase 'Save the Dragon'[end if]." It is plural-named.
+To say pronouns from (item - a thing):
+	if not expanding text for comparison purposes:
+		set pronouns from item;
+
+The laundromat-papers is scenery in the laundromat back room. It is privately-named. Understand "paper/papers/receipt/receipts/invoice/invoices" as the laundromat-papers. "The papers are mostly receipts and invoices[if the strange piece of paper is nowhere]. [pronouns from the strange piece of paper]One piece, however, consists of strange sketches and diagrams. In one corner is scrawled the cryptic phrase 'Save the Dragon'[end if]." It is plural-named. The printed name is "papers".
 
 The large key is a key in the laundromat desk's drawer. The description is "It's a large key, probably for a door."
 
@@ -896,11 +914,13 @@ Clerk interjection	used (a truth state)
 Chapter 1 - Clerk Conversation
 
 for-a-screwdriver-clerk is a questioning quip.
-	It is privately-named. The printed name is "for a screwdriver". [The true-name is "for-a-screwdriver-clerk".] Understand "for/a/screwdriver" as for-a-screwdriver-clerk.
+	It is privately-named. The printed name is "for a screwdriver". [The true-name is "for-a-screwdriver-clerk".] Understand "for/a/red/screwdriver" as for-a-screwdriver-clerk.
 	It mentions the screwdriver.
 	The comment is "[We] [ask], 'Would you happen to have a screwdriver I could borrow?'".
 	The reply is "'Got one to buy, not one to borrow.'".
 	It quip-supplies the clerk.
+	It is repeatable.
+	It is plausibility-once.
 	
 An availability rule for for-a-screwdriver-clerk:	
 	if the player knows vent-screws and the red screwdriver is not handled:
@@ -912,6 +932,9 @@ Convenience-store-subject is a subject. It is privately-named. The printed name 
 
 Swamp-park-subject is a subject. It is privately-named. The printed name is "Swamp Park". Understand "swamp/park/town/city" as the swamp-park-subject.
 military-recruiter-subject is a subject. It is privately-named. The printed name is "military recruiter". Understand "military/recruitment/recruiter/center" as the military-recruiter-subject.
+The t-shirt-subject is a subject. It is privately-named. The printed name is "t-shirt". Understand "t-shirt" as the t-shirt-subject.
+mom-subject is a subject. It is privately-named. The printed name is "mom". Understand "mom/mother" as the mom-subject.
+clothes-subject is a subject. It is privately-named. The printed name is "clothes". Understand "clothes/clothing" as the clothes-subject.
 
 Table of Quiz Topics (continued)
 subject (a thing)	interlocutor (a person)	comment (a text)	reply (a text)
@@ -936,7 +959,11 @@ zombies	store clerk	--	"'The zombie apocalypse will start here.'"
 vampires	store clerk	--	"'Don't tell anyone, but I LARP as a vampire on weekends.'"
 pawn-shop-subject	store clerk	--	"'I've never been in there. I hear it's a dump.'"
 laundromat-subject	store clerk	--	"'Never been there. My mom does my clothes.'"
-money	store clerk	"'Do you know where I should get a few bucks?'"	"'What? Are you robbing the place? Don't hurt me!'"
+money	store clerk	"'Do you know where I could get a few bucks?'"	"'What? Are you robbing the place? Don't hurt me!'"
 military-recruiter-subject	store clerk	--	"'Bunch of conformist fascist pigs.'"
+t-shirt-subject	store clerk	"'What does your shirt say?'"	"'If you know, you know.'"
+mom-subject	store clerk	"'How's your mom?'"	"'You're not telling a joke, are you? 'Cause if you are, I'll have to get indignant and defensive about my mom.'"
+clothes-subject	store clerk	"'Tell me about your clothes.'"	"'They don't make a statement. They're just clothes.'"
+
 
 Swamp Park ends here.
