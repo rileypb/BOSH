@@ -70,7 +70,7 @@ Report plugging something into something:
 
 Book - unplugging rules
 
-The unplugging action has a thing called the socket unplugged from.
+The unplugging action has an object called the socket unplugged from.
 
 Setting action variables while unplugging:
 	if the noun is plugged into something (called S):
@@ -144,5 +144,19 @@ Carry out examining (this is the describe plug connections rule):
 		now text printed is true;
 	if text printed is true:
 		say line break.
+
+Book - Backwards Plugging
+
+Instead of plugging something into something when the noun is plug-into-able and the second noun is pluggable and (the noun is not pluggable or the second noun is not plug-into-able):
+	try plugging the second noun into the noun instead.
+
+
+Book - Putting and Attaching
+
+Instead of inserting something pluggable into something plug-into-able:
+	try plugging the noun into the second noun.
+
+Instead of tying something pluggable to something plug-into-able:
+	try plugging the noun into the second noun.
 
 Plugging ends here.

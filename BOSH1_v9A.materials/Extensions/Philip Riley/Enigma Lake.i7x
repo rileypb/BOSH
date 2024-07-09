@@ -323,6 +323,8 @@ Some shadows are scenery in Enigma Park. "Without a lantern, it's inadvisable to
 
 The obelisk is scenery in Enigma Park. Understand "monument/names/citizens" as the obelisk. "Its faux Egyptian design is incongruous adjacent to the adamantly traditional town hall. [We] [can] just make out a small crystal adornment rising from the top."
 
+The names are scenery in Enigma Park. "The names of the town's citizens lost in the Great War are inscribed on the obelisk." Understand "citizens" as names.					
+
 The adornment is scenery in Enigma Park. "From what [we] can make out, it's a clear crystal held aloft by some kind of metal fitting." Understand "crystal/ornament/decoration/fitting" as the adornment.
 Understand "beam/beams" as the adornment when beam count > 0.
 
@@ -749,7 +751,7 @@ Carry out cutting the padlock with the bolt cutters:
 	silently try opening the metal cabinet;
 
 Report cutting the padlock with the bolt cutters:
-	say "The bolt cutters make short work of the padlock.";
+	say "The bolt cutters make short work of the padlock. The cabinet is now open, revealing a power switch, set to off.";
 
 Chapter 2 - The rest of it
 
@@ -983,7 +985,7 @@ Instead of examining the Book of Utilitarianism when the doll-fly is not in the 
 
 Book 16.5 - The Doll-Fly
 
-The Rod of Hezekiah is carried by the doll-fly. The description is "A rod of blackened wood, it seems to pulse with with a vital energy." The indefinite article is "the".
+The Rod of Hezekiah is carried by the doll-fly. The description is "A rod of blackened wood, it seems to pulse with a vital energy." The indefinite article is "the".
 
 Chapter 1 - Figuring its name
 
@@ -1553,8 +1555,8 @@ After taking the light bulb when light bulb was in the hanging socket:
 After inserting the light bulb into the hanging socket:
 	say "Faraji screws the light bulb into the socket.";
 
-Instead of inserting the rusty astral resonator into the hanging socket:
-	say "The [rusty astral resonator] doesn't fit in the hanging light socket."
+Instead of inserting something into the hanging socket when the noun is not the light bulb:
+	say "[The noun] doesn't fit in the hanging light socket."
 
 The hanging socket is a scenery single item container in the workshed. The light bulb is in the hanging socket. Understand "light" as the hanging socket. 
 "[if the light bulb is in the hanging socket]The light bulb is in the socket[otherwise]The socket is empty[end if]."
@@ -1633,7 +1635,7 @@ The rickety stairs are scenery in the hidden cave. "A set of rickety stairs lead
 
 Book 23 - Portal room
 
-a circular chamber is south of hidden cave. It is in ELR. It is indoors. The circular chamber is dark.
+a circular chamber is south of hidden cave. It is in ELR. It is indoors. The circular chamber is dark. It is always-indefinite.
 "The chamber is circular, with a low ceiling. The walls are rough-hewn stone. A passage leads to the north."
 
 
@@ -2104,11 +2106,15 @@ Book 25 - Horton Family House Kitchen
 
 A door can be tried.
 
-Before opening a door:
+Before opening a door (this is the try the door on opening rule):
 	now the noun is tried;
 
-Before unlocking a door with:
+Before unlocking a door with (this is the try the door on unlocking rule):
 	now the noun is tried;
+
+The try the door on opening rule is listed before the opening doors before entering rule in the before rulebook.
+
+The try the door on unlocking rule is listed before the unlocking before opening rule in the before rulebook.
 
 The old wooden door is a closed openable locked lockable scenery door. It is west of Solvay Road Leading Out Of Town and east of Horton Family House Kitchen. The old wooden door has matching key the old copper key. 
 "A modest wooden door leads into the Horton family house. It has been fitted with a modern lock."
@@ -2134,7 +2140,7 @@ The kitchen table is a scenery supporter in Horton Family House Kitchen. "A simp
 It is unsnarkable.
 
 The logs are scenery in Horton Family House Kitchen. "A few logs are stacked beside the hearth."
-It is unsnarkable. Understand "log/firewood" as logs. 
+It is unsnarkable. Understand "log/firewood" as logs. It is plural-named.
 
 The parlor facade is a building facade. It is in Horton Family House Kitchen. It is privately-named. The printed name is "parlor". Understand "parlor" as parlor facade. "The parlor is to the south."
 	The parlor facade fronts Horton Family House Parlor.
@@ -2431,7 +2437,7 @@ The shiny astral resonator is a thing. It is privately-named. The description is
 The printed name is "[if Astral Secrets is read]shiny astral resonator[otherwise]strange, shiny, metal object[end if]".
 Understand "shiny/astral/resonator" as the shiny astral resonator when Astral Secrets is read.
 Understand "strange/shiny/metal/metallic/cylindrical/cylinder/object" as the shiny astral resonator.
-The shiny clamps are part of the shiny astral resonator. The description is "Two metal chains, each with a metal clamp, are attached to the end of the [if Astral Secrets is read]resonator[otherwise]object[end if].". Understand "metal/-- chains" as the shiny clamps. They are plural-named. They are unsnarkable.
+The shiny clamps are part of the shiny astral resonator. The description is "Two metal chains, each with a metal clamp, are attached to the end of the [if Astral Secrets is read]resonator[otherwise]object[end if].". Understand "metal/-- chains", "clamp" as the shiny clamps. They are plural-named. They are unsnarkable.
 The shiny lens is part of the shiny astral resonator. The description is "A lens is attached to the end of the [if Astral Secrets is read]resonator[otherwise]object[end if].". It is unsnarkable.
 
 After examining the Witnessing of Hezekiah:
@@ -2578,8 +2584,6 @@ After dropping the metal ladder:
 		-- sewer tunnel 2:
 			say "Faraji leans the ladder against the wall.";
 		-- sewer tunnel 3:
-			say "Faraji leans the ladder against the wall.";
-		-- astral-tunnel-elr:
 			say "Faraji leans the ladder against the wall.";
 		-- gym basement:
 			say "Faraji leans the ladder against the wall.";
@@ -2728,8 +2732,6 @@ Rule for writing a paragraph about the metal ladder:
 			say "A ladder leans against the wall.";
 		-- sewer tunnel 3:
 			say "A ladder leans against the wall.";
-		-- astral-tunnel-elr:
-			say "A ladder rests against the 'wall'.";
 		-- gym basement:
 			say "A ladder leans against the wall.";
 		-- Henry's roof:
@@ -2847,8 +2849,6 @@ Instead of climbing up the metal ladder when the metal ladder is enclosed by the
 		-- sewer tunnel 2:
 			say "Faraji climbs quickly up and down the ladder. That was fun.";
 		-- sewer tunnel 3:
-			say "Faraji climbs quickly up and down the ladder. That was fun.";
-		-- astral-tunnel-elr:
 			say "Faraji climbs quickly up and down the ladder. That was fun.";
 		-- gym basement:
 			say "Faraji climbs quickly up and down the ladder. That was fun.";
@@ -3039,7 +3039,7 @@ The extension cord is in the Bookstore Basement.
 The Ecology of Root Vegetables is in the Bookstore Basement. It is proper-named. The printed name is "[italic type]The Ecology of Root Vegetables[roman type]". Understand "green/cover/book" as The Ecology of Root Vegetables. The Ecology of Root Vegetables can be read.
 "A book with a green cover titled [italic type]The Ecology of Root Vegetables[roman type] lies on the floor here."
 
-The description of The Ecology of Root Vegetables is "A book with a green cover, titled 'The Ecology of Root Vegetables'. The author is listed as Dr. A. Zilman. The book is a comprehensive study of root vegetables. There is a whole chapter on the rutabaga, including its history, cultivation, and uses in various cultures. One strange passage details its use as a weapon against 'evil earth demons'."
+The description of The Ecology of Root Vegetables is "A book with a green cover, titled 'The Ecology of Root Vegetables'. The author is listed as Dr. A. Zilman. The book is a comprehensive study of root vegetables. There is a whole chapter on the rutabaga, including its history, cultivation, and uses in various cultures. One strange passage mentions a potential use as a weapon against 'evil earth demons'."
 
 A bricked-up-hole is a secret door. It is north of the Bookstore Basement and south of a sewer tunnel 1. It is privately-named. The printed name is "bricked-up hole in the wall". Understand "bricked-up", "bricked/up", "hole in/-- the/-- wall/--" as bricked-up-hole. It is open and not openable. "A ragged hole in the north wall, [if the location is the bookstore basement]leading into a dark space[otherwise]leading into the bookstore basement[end if]." 
 It is unsnarkable.
@@ -3091,10 +3091,10 @@ a sewer tunnel 3 is east of sewer tunnel 2. It is in ELR. It is indoors. It is p
 
 The x-coordinate of sewer tunnel 3 is 2. The y-coordinate of sewer tunnel 3 is 0.5.
 
-The astral-tunnel-elr is forth of sewer tunnel 3. It is privately-named. The printed name is "astral tunnel". It is in hyperspace. "It is featureless white, or what passes for white here. It leads back and backnorth.";
+[ The astral-tunnel-elr is forth of sewer tunnel 3. It is privately-named. The printed name is "astral tunnel". It is in hyperspace. "It is featureless white, or what passes for white here. It leads back and backnorth.";
 
 
-astral-tunnel-elr is forthsouth of the gym basement.
+astral-tunnel-elr is forthsouth of the gym basement. ]
 
 The gymnasium basement door is a closed openable lockable scenery door. It is north of sewer tunnel 3 and south of the gym basement. "A heavy metal door." 
 
@@ -3305,6 +3305,7 @@ The x-coordinate of Rolle's Department Store is 0. The y-coordinate of Rolle's D
 The table lamp is a device in Rolle's Department Store. It is privately-named. "A scuffed-up table lamp sits discarded in a corner." The description is "A table lamp, with a red enameled base and missing a shade. It's meant to plug into an outlet. It looks like it's seen better days. On the base is the branding 'Spectre'[if the table lamp is lit]. It is lit[otherwise]. It is dark[end if]." 
 It is pluggable. 
 Understand "table/-- lamp" as the table lamp. The printed name is "table lamp".
+Understand "short/power/cord" as the table lamp.
 
 Instead of examining the table lamp:
 	say "An ordinary table lamp, with a red enameled base";
@@ -3335,7 +3336,6 @@ Instead of inserting something into the table lamp:
 	try inserting the noun into the light socket instead;
 
 The red enameled base is part of the table lamp. The description is "A red enameled base, scuffed and tarnished."
-The short power cord is part of the table lamp. The description is "A power cord, a little the worse for wear, but still functional."
 
 Instead of inserting the rusty astral resonator into the light socket:
 	say "The [rusty astral resonator] doesn't fit in the table lamp."
@@ -3672,7 +3672,7 @@ Locker-examining is an action applying to one number. Understand "examine locker
 Check locker-examining:
 	if the number understood < 1 or the number understood > 100:
 		say "The lockers are numbered 1 to 100." instead;
-	say "There's nothing special about the locker.";
+	say "There's nothing special about this particular locker.";
 
 Check searching the bank of lockers:
 	say "The lockers are numbered 1 to 100. [We] [are] hardly going to try opening every locker. There must be a better way to go about this." instead;
@@ -3945,6 +3945,7 @@ Instead of answering something that when the group of lizard people is in the lo
 	otherwise if the location is in ELR:
 		say "At your word, the lizard people scream and hiss, creating a strange cloud of thick vapor. When the vapor clears, they are gone, but they have left something behind. There is [a shiny astral resonator] on the ground![run paragraph on]";
 		lb;
+		set pronouns from shiny astral resonator;
 		[ say "[italic type][bracket]Yes, run away, you stupid... lizard people![close bracket][roman type][paragraph break]"; ]
 		now the group of lizard people is in the old root cellar;
 		now the shiny astral resonator is in the location;

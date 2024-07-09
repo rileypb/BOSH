@@ -22,13 +22,22 @@ Does the player mean unplugging the plug-end:
 	if the plug-end is plugged into the electrical outlet:
 		it is very likely;
 
-Does the player mean plugging something into the plug-end:
+Does the player mean plugging something pluggable into the plug-end:
 	it is very unlikely;
 
-Does the player mean plugging the plug-end into something:
+Does the player mean plugging something plug-into-able into the plug-end:
+	it is very unlikely;
+
+Does the player mean plugging the plug-end into something pluggable:
+	it is very unlikely;
+
+Does the player mean plugging the plug-end into something plug-into-able:
 	it is very likely;
 
-Does the player mean plugging the socket-end into something:
+Does the player mean plugging the socket-end into something pluggable:
+	it is very likely;
+
+Does the player mean plugging the socket-end into something plug-into-able:
 	it is very unlikely;
 
 Does the player mean plugging the plug-end into the electrical outlet:
@@ -262,7 +271,10 @@ To maybe condense the extension cord:
 
 Instead of plugging the extension cord into something when the second noun is not the extension cord:
 	if the second noun is not plug-into-able:
-		say "Faraji can't plug the extension cord into [the second noun].";
+		if the second noun is pluggable:
+			try plugging the second noun into the extension cord;
+		otherwise:
+			say "Faraji can't plug the extension cord into [the second noun].";
 		stop the action;
 	separate the extension cord;
 	set pronouns from the socket-end;
@@ -280,7 +292,10 @@ Instead of unplugging the extension cord:
 
 Instead of plugging something into the extension cord when the noun is not the extension cord:
 	if the noun is not pluggable:
-		say "Faraji can't plug [the noun] into the extension cord.";
+		if the noun is plug-into-able:
+			try plugging the extension cord into the noun;
+		otherwise:
+			say "Faraji can't plug [the noun] into the extension cord.";
 		stop the action;
 	separate the extension cord;
 	set pronouns from the noun;

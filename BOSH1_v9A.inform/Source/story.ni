@@ -188,7 +188,7 @@ When play begins:
 		init player;
 		init office;
 		[ move the player to the Strip Mall Parking Lot South; ]
-		try unknown voice calling the blue flipphone on mysterious phone;
+		try unknown voice calling the blue flip phone on mysterious phone;
 		move klimp to the Room of Stuff;
 		move moira to the Room of Stuff;
 		now the current play mode is _normal; 
@@ -248,7 +248,7 @@ After reading a command when current play mode is picking character:
 	continue;
 	init player; 
 	init office;
-	try unknown voice calling the blue flipphone on mysterious phone;
+	try unknown voice calling the blue flip phone on mysterious phone;
 	move klimp to the Room of Stuff;
 	move moira to the Room of Stuff;
 	move the player to the Strip Mall Parking Lot South;
@@ -747,7 +747,7 @@ Rule for writing a paragraph about Margaret Chao when the location is front offi
 		say "[Player] [hand] Margaret [our] old phone. [Margaret] [tap] a few keys on [their] computer and [say] 'There! All settled.'";
 		[now the current interlocutor is margaret;]
 		now the green smartphone is nowhere;
-		now biff's mobile number reaches the blue flipphone;
+		now biff's mobile number reaches the blue flip phone;
 	otherwise:
 		say ".";
 		[make it easy to talk to Margaret.]
@@ -821,11 +821,11 @@ Instead of pulling biff's desk's drawer:
 Instead of pushing biff's desk's drawer:
 	try closing biff's desk's drawer.
 
-The blue flipphone is a phone. It is in biff's desk's drawer.
-The description of the blue flipphone is "It's a cheap blue flipphone, purchased by the Bureau as some kind of cost-saving measure. It's not even a smartphone. It's not even a good flipphone. It's not even a good bad flipphone. It's just a bad flipphone."
+The blue flip phone is a phone. It is in biff's desk's drawer.
+The description of the blue flip phone is "It's a cheap blue flip phone, purchased by the Bureau as some kind of cost-saving measure. It's not even a smartphone. It's not even a good flip phone. It's not even a good bad flip phone. It's just a bad flip phone."
 
 After taking apart the desk:
-	say "[We] [unscrew] the hex screws and [remove] the drawer. Inside, [we] find a little grey key and a blue flipphone. [We] [put] the drawer back together and [pocket] the key and the phone, being careful to leave the drawer unlocked.
+	say "[We] [unscrew] the hex screws and [remove] the drawer. Inside, [we] find a little grey key and a blue flip phone. [We] [put] the drawer back together and [pocket] the key and the phone, being careful to leave the drawer unlocked.
 	
 	They answer the phone.[paragraph break]";
 	say "'Hello?'
@@ -864,10 +864,10 @@ The hex screws are part of biff's desk's drawer. The description is "Several hex
 
 Taking apart the desk is an action applying to one thing. Understand "take apart [Biff's desk]", "take apart [Biff's desk's drawer]", "unscrew [Biff's desk]", "unscrew [Biff's desk's drawer]", "take [Biff's desk] apart", "take [Biff's desk's drawer] apart", "unscrew [hex screws]", "disassemble [Biff's desk]", "disassemble [Biff's desk's drawer]" as taking apart the desk when the location is Biff's office.
 
-Instead of opening biff's desk when the player encloses the hex wrench and the blue flipphone is not handled:
+Instead of opening biff's desk when the player encloses the hex wrench and the blue flip phone is not handled:
 	try taking apart the desk biff's desk;
 
-Instead of opening biff's desk's drawer when the player encloses the hex wrench and the blue flipphone is not handled:
+Instead of opening biff's desk's drawer when the player encloses the hex wrench and the blue flip phone is not handled:
 	try taking apart the desk biff's desk;
 
 Check taking apart the desk when the player does not enclose the hex wrench:
@@ -876,7 +876,7 @@ Check taking apart the desk when the player does not enclose the hex wrench:
 Carry out taking apart the desk:
 	now biff's desk's drawer is unlocked;
 	now the player carries the little grey key;
-	now the player carries the blue flipphone;
+	now the player carries the blue flip phone;
 	now the fake-phone is nowhere;
 
 Instead of unlocking biff's desk with the hex wrench:
@@ -956,7 +956,7 @@ To init office:
  
 Biff's mobile number is a phone number. Biff's mobile number reaches the green smartphone. The player knows Biff's mobile number.
 
-Before opening Biff's desk's drawer when biff's desk's drawer is locked and the blue flipphone is in biff's desk's drawer and the blue flipphone is ringing for the first time:
+Before opening Biff's desk's drawer when biff's desk's drawer is locked and the blue flip phone is in biff's desk's drawer and the blue flip phone is ringing for the first time:
 	now the player knows desk-locked;
 	[ activate the Table of Desk Opening Hints; ]
 	say "[We] [try] to open the desk to answer the phone, but it seems to be locked. [We] [sigh]. 'Margaret must have the key.'[paragraph break]"; 
@@ -2327,7 +2327,7 @@ Draco has portrait Figure Draco.
 Doris has portrait Figure Doris. 
 Dave has portrait Figure Pawn Owner.
 The unknown voice has portrait Figure Caller.
-The blue flipphone has portrait Figure Phone.
+The blue flip phone has portrait Figure Phone.
 Moira Zin has portrait Figure Moira.
 Minerva has portrait Figure Minerva.
 Maggie has portrait Figure Maggie. 

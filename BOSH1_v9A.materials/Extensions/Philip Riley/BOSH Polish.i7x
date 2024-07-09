@@ -98,7 +98,6 @@ large grave	--	"Freshly dug earth walls."	--
 sewer tunnel 1	--	"Damp brick walls, with a few pipes running along them."	--
 sewer tunnel 2	--	"Damp brick walls, with a few pipes running along them."	--
 sewer tunnel 3	--	"Damp brick walls, with a few pipes running along them."	--
-astral-tunnel-elr	--	"More of this same white stuff, whatever it is."	--
 gym basement	--	"White cinderblock."	--
 Henry's Roof	false	--	--
 Room of Stuff	--	"Unreachable."	--
@@ -244,11 +243,7 @@ sewer tunnel 1	sewer tunnel 2	"Faraji heads deeper into the sewer."	--
 sewer tunnel 2	sewer tunnel 1	"Faraji heads back towards the bookstore."	--
 sewer tunnel 2	sewer tunnel 3	"Faraji heads yet deeper into the sewer."	--
 sewer tunnel 3	sewer tunnel 2	"Faraji heads back towards the bookstore."	--
-sewer tunnel 3	astral-tunnel-elr	"Once again, Faraji dares to enter the astral tunnel. At least it doesn't smell."	--
-astral-tunnel-elr	sewer tunnel 3	"Faraji holds their breath and steps back into the sewer."	--
-astral-tunnel-elr	gym basement	"Faraji steps into the gym basement."	--
 gym basement	public gymnasium	"Faraji heads up the stairs to the gym."	--
-gym basement	astral-tunnel-elr	"Faraji steps back into the astral tunnel."	--
 Henry's Roof	Henry's Hot Skillet	"Faraji heads back down the stairs to the restaurant."	--
 hallway	front office	"With trepidation, Faraji ventures once more into Margaret's domain."	--
 Horton Family House Parlor	horton astral tunnel	"Faraji hesitantly steps into the astral tunnel."	--
@@ -530,7 +525,6 @@ large grave	--	"Newly-disturbed earth."
 sewer tunnel 1	--	"Concrete."
 sewer tunnel 2	--	"Concrete."
 sewer tunnel 3	--	"Concrete."
-astral-tunnel-elr	--	"The floor (ground?) is a featureless white."
 gym basement	--	"Grey concrete."
 Henry's Roof	--	"Tar paper and gravel."
 Room of Stuff	--	"Unreachable."
@@ -659,7 +653,6 @@ large grave	false	--	--	false
 sewer tunnel 1	true	"Concrete."	"The concrete is thankfully dry."	true
 sewer tunnel 2	true	"Concrete."	"The concrete is thankfully dry."	true
 sewer tunnel 3	true	"Concrete."	"The concrete is thankfully dry."	true
-astral-tunnel-elr	true	"Like everything else here, the ceiling is a featureless white."	"Like everything else here, the ceiling is a featureless white."	false
 gym basement	true	"Grey concrete."	"Grey concrete."	false
 Henry's Roof	false	--	--	false
 Room of Stuff	false	--	--	false

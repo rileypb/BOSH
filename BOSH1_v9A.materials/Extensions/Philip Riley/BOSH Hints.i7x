@@ -15,7 +15,7 @@ Hinting the hint-ringing-phone:
 		rule succeeds with result "It would seem that the phone is locked in Faraji's desk.";
 
 Activating the hint-ringing-phone:
-	if the blue flipphone is not handled and the front office is visited:
+	if the blue flip phone is not handled and the front office is visited:
 		activate;
 	otherwise:
 		deactivate;
@@ -30,7 +30,7 @@ The hint-locked-desk-endgame is an unlisted progressive hint topic. The progress
 Hinting the hint-locked-desk:
 	if the red screwdriver is handled:
 		abide by the hinting rules for the hint-locked-desk-endgame;
-	if the player does not know desk-locked or the blue flipphone is handled:
+	if the player does not know desk-locked or the blue flip phone is handled:
 		make no decision;
 	if player does not know key-is-lost:
 		rule succeeds with result "The desk is locked. Faraji should probably unlock it. Maybe someone has a key.";
@@ -40,7 +40,7 @@ Hinting the hint-locked-desk:
 		abide by the hinting rules for the hint-locked-desk-hex;
 
 Activating the hint-locked-desk:
-	if the blue flipphone is not handled:
+	if the blue flip phone is not handled:
 		activate;
 	otherwise:
 		deactivate;
@@ -413,13 +413,13 @@ hinting the hint-rusty-resonator:
 		rule succeeds with result "What the heck is an astral resonator?";
 	otherwise if mounted-shiny-resonator and mounted-makeshift-resonator:
 		now hint-rusty-resonator is progressive;
-		rule succeeds with result "Faraji should mount the rusty astral resonator somewhere, like they did with the other two resonators.";
+		rule succeeds with result "Faraji should mount [the rusty astral resonator] somewhere, like they did with the other two resonators.";
 	otherwise if mounted-makeshift-resonator:
 		now hint-rusty-resonator is progressive;
-		rule succeeds with result "Faraji should mount the rusty astral resonator somewhere, like they did with the makeshift resonator.";
+		rule succeeds with result "Faraji should mount [the rusty astral resonator] somewhere, like they did with the makeshift resonator.";
 	otherwise:
 		now hint-rusty-resonator is progressive;
-		rule succeeds with result "Faraji should mount the rusty astral resonator somewhere, like they did with the shiny resonator.";
+		rule succeeds with result "Faraji should mount [the rusty astral resonator] somewhere, like they did with the shiny resonator.";
 
 Activating the hint-rusty-resonator:
 	if the rusty astral resonator is seen and not mounted-rusty-resonator:
@@ -436,24 +436,24 @@ hinting the hint-shiny-resonator when the hint-shiny-resonator is not progressiv
 	if Astral Secrets is not read:
 		rule succeeds with result "Maybe Faraji can find something to tell them what this thing is.";
 	otherwise if not mounted-rusty-resonator and not mounted-makeshift-resonator:
+		now hint-shiny-resonator is progressive;
 		rule succeeds with result "What the heck is an astral resonator?";
-		now hint-shiny-resonator is progressive;
 	otherwise if mounted-rusty-resonator and mounted-makeshift-resonator:
-		rule succeeds with result "Faraji should mount the shiny astral resonator somewhere, like they did with the other two resonators.";
 		now hint-shiny-resonator is progressive;
+		rule succeeds with result "Faraji should mount [the shiny astral resonator] somewhere, like they did with the other two resonators.";
 	otherwise if mounted-makeshift-resonator:
-		rule succeeds with result "Faraji should mount the shiny astral resonator somewhere, like they did with the makeshift resonator.";
 		now hint-shiny-resonator is progressive;
+		rule succeeds with result "Faraji should mount [the shiny astral resonator] somewhere, like they did with the makeshift resonator.";
 	otherwise:
-		rule succeeds with result "Faraji should mount the shiny astral resonator somewhere, like they did with the rusty resonator.";
 		now hint-shiny-resonator is progressive;
+		rule succeeds with result "Faraji should mount [the shiny astral resonator] somewhere, like they did with the rusty resonator.";
 
 Activating the hint-shiny-resonator:
 	if the shiny astral resonator is seen and not mounted-shiny-resonator:
 		activate;
 	deactivate;
 
-The hint-power-shiny-resonator is a progressive hint topic. Understand "power/shiny/resonator" as the hint-power-shiny-resonator. The printed name is "power shiny resonator". The progression is {"The shiny astral resonator is on the platform, but it's not doing anything.", "The resonator needs power.", "Notice the metal cabinet next to the broadcast tower.", "Faraji should open the cabinet.", "Faraji will need the bolt cutters to open the cabinet.", "The bolt cutters are in the truck bed."}.
+The hint-power-shiny-resonator is a progressive hint topic. Understand "power/shiny/resonator" as the hint-power-shiny-resonator. The printed name is "power shiny resonator". The progression is {"[The shiny astral resonator] is on the platform, but it's not doing anything.", "The resonator needs power.", "Notice the metal cabinet next to the broadcast tower.", "Faraji should open the cabinet.", "Faraji will need the bolt cutters to open the cabinet.", "The bolt cutters are in the truck bed."}.
 
 Activating the hint-power-shiny-resonator:
 	if mounted-shiny-resonator and the power switch is switched off:
@@ -611,7 +611,7 @@ Activating the hint-makeshift-astral-resonator:
 
 The hint-makeshift-astral-resonator-witnessing is an unlisted progressive hint topic. The progression is {"Now that Faraji has the [makeshift astral resonator], what should they do with it?", "Maybe there is something that will tell Faraji what to do with it.", "The information may be cryptic in nature.", "Faraji should look for a book.", "It is in the wardrobe, upstairs in the Horton House."}.
 
-The hint-makeshift-astral-resonator-mounting is an unlisted progressive hint topic. The progression is {"Faraji must 'ascend the ladder'. Where has Faraji seen a ladder?", "There are two ladders in the town.", "One, portable, Faraji found in the fire station.", "The other is in the church, attached to the wall.", "Faraji should try going up from the church, into the steeple.", "What can Faraji do with a tripod with a telescope mounted on it?", "Faraji could look through the telescope.", "Or they could take the telescope off the tripod.", "What can you do with an empty tripod?", "Faraji should try mounting the [makeshift astral resonator] on the tripod."}.
+The hint-makeshift-astral-resonator-mounting is an unlisted progressive hint topic. The progression is {"Faraji must 'ascend the ladder'. Where has Faraji seen a ladder?", "There are two ladders in the town.", "One, portable, Faraji found in the fire station.", "The other is in the church, attached to the wall.", "Faraji should try going up from the church, into the steeple.", "What can Faraji do with a tripod with a telescope mounted on it?", "Faraji could look through the telescope.", "Or they could take the telescope off the tripod.", "What can you do with an empty tripod?", "Faraji should try mounting the [makeshift astral resonator] on the tripod.", "Then the resonator needs a source of power.", "Try plugging it into the extension cord, which is plugged into the wall."}.
 
 hinting the hint-makeshift-astral-resonator:
 	if the Witnessing of Hezekiah is not read and the Witnessing of Hezekiah is not seen:
@@ -803,7 +803,7 @@ Activating the hint-defeat-the-lizard-people:
 The hint-answer-the-phone-finally is a progressive hint topic. Understand "finally/answer/the/phone" as the hint-answer-the-phone-finally. The printed name is "answer the phone finally". The progression is {"Faraji still needs to answer the phone.", "What is this thing Daniels gave us? A wristwatch?", "Maybe it's the pawn shop owner's watch.", "Faraji should go to the pawn shop and give the watch to the owner.", "What can Faraji do with a gift card for $5?", "Faraji should go to the conveinence store and buy something.", "Like a screwdriver, maybe.", "Faraji should go to the front office and open the vent with the screwdriver.", "Faraji should use the hex wrench to open the desk.", "Faraji should answer the phone. There! Was that so hard?"}.
 
 Activating the hint-answer-the-phone-finally:
-	if the blue flipphone is not handled and the inside-the-dumpster is visited:
+	if the blue flip phone is not handled and the inside-the-dumpster is visited:
 		activate;
 	deactivate;
 

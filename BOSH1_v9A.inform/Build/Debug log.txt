@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 35654 words long.
+I've now read your source text, which is 35669 words long.
 
 
 -----------------------------------------------------
@@ -37,7 +37,7 @@ I've also read Locksmith by Emily Short, which is 4122 words long.
 I've also read Essentials by Philip Riley, which is 583 words long.
 I've also read Facts by Philip Riley, which is 178 words long.
 I've also read Phones by Philip Riley, which is 1911 words long.
-I've also read Commerce by Philip Riley, which is 187 words long.
+I've also read Commerce by Philip Riley, which is 191 words long.
 I've also read Furniture by Philip Riley, which is 82 words long.
 I've also read Third Person Narration by Philip Riley, which is 792 words long.
 I've also read Door Utils by Philip Riley, which is 44 words long.
@@ -47,7 +47,7 @@ I've also read Can't Touch This by Philip Riley, which is 168 words long.
 I've also read Compound Details by Philip Riley, which is 182 words long.
 I've also read Polish by Philip Riley, which is 89 words long.
 I've also read Hello by Philip Riley, which is 103 words long.
-I've also read BOSH Polish by Philip Riley, which is 8716 words long.
+I've also read BOSH Polish by Philip Riley, which is 8617 words long.
 I've also read New Light by Philip Riley, which is 347 words long.
 I've also read Early Declarations by Philip Riley, which is 21 words long.
 I've also read Basics by Philip Riley, which is 202 words long.
@@ -60,13 +60,13 @@ I've also read Hyperspace by Philip Riley, which is 17294 words long.
 I've also read BOSH Facts by Philip Riley, which is 193 words long.
 I've also read Swamp Park by Philip Riley, which is 8607 words long.
 I've also read Margaret by Philip Riley, which is 2618 words long.
-I've also read Enigma Lake by Philip Riley, which is 37598 words long.
+I've also read Enigma Lake by Philip Riley, which is 37616 words long.
 I've also read I Can Dig It by Philip Riley, which is 77 words long.
 I've also read BOSH Help by Philip Riley, which is 6707 words long.
 I've also read Overlook by Philip Riley, which is 763 words long.
 I've also read Gender Options by Nathanael Nerode, which is 7679 words long.
 I've also read Make Test by Philip Riley, which is 288 words long.
-I've also read BOSH Hints by Philip Riley, which is 8378 words long.
+I've also read BOSH Hints by Philip Riley, which is 8403 words long.
 I've also read Hearing by Philip Riley, which is 1220 words long.
 I've also read Improved Pushing by Philip Riley, which is 46 words long.
 I've also read PBR Common by Philip Riley, which is 109 words long.
@@ -83,10 +83,10 @@ I've also read Exit Lister by Eric Eve, which is 3510 words long.
 I've also read Tutorial by Philip Riley, which is 114 words long.
 I've also read Swimming by Philip Riley, which is 38 words long.
 I've also read Secret Doors by Gavin Lambert, which is 272 words long.
-I've also read Plugging by Philip Riley, which is 791 words long.
+I've also read Plugging by Philip Riley, which is 871 words long.
 I've also read Books by Philip Riley, which is 2475 words long.
 I've also read Container Types by Philip Riley, which is 55 words long.
-I've also read Extension Cord by Philip Riley, which is 4053 words long.
+I've also read Extension Cord by Philip Riley, which is 4128 words long.
 I've also read State Update by Philip Riley, which is 462 words long.
 I've also read Hints by Philip Riley, which is 849 words long.
 I've also read Two-Sided Doors by Philip Riley, which is 2270 words long.
@@ -154,7 +154,7 @@ Regional: CONSTANT_VNT'elr'-region(I564_elr)(I454'elr')
  == region
 Regional: CONSTANT_VNT'elr'-region(I564_elr)(I454'elr')
  == region
-Regional: CONSTANT_VNT'help area'-region(I827_help_area)(I714'help area')
+Regional: CONSTANT_VNT'help area'-region(I826_help_area)(I713'help area')
  == region
 Regional: CONSTANT_VNT'elr'-region(I564_elr)(I454'elr')
  == region
@@ -164,7 +164,7 @@ Regional: CONSTANT_VNT'elr'-region(I564_elr)(I454'elr')
  == region
 Regional: CONSTANT_VNT'elr'-region(I564_elr)(I454'elr')
  == region
-Regional: CONSTANT_VNT'help area'-region(I827_help_area)(I714'help area')
+Regional: CONSTANT_VNT'help area'-region(I826_help_area)(I713'help area')
  == region
 
 
@@ -314,9 +314,9 @@ Regional: CONSTANT_VNT'elr'-region(I564_elr)(I454'elr')
              == region
             Regional: CONSTANT_VNT'elr'-region(I564_elr)(I454'elr')
              == region
-            Regional: CONSTANT_VNT'help area'-region(I827_help_area)(I714'help area')
+            Regional: CONSTANT_VNT'help area'-region(I826_help_area)(I713'help area')
              == region
-            Regional: CONSTANT_VNT'help area'-region(I827_help_area)(I714'help area')
+            Regional: CONSTANT_VNT'help area'-region(I826_help_area)(I713'help area')
              == region
 
 
@@ -358,7 +358,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 303 files written as streams.
-CPU time: 1310 centiseconds
+CPU time: 1318 centiseconds
 
 
 That concludes the debugging log from this run of Inform.
