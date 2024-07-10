@@ -287,7 +287,7 @@ Understand "staircase/stairs/spiral" as Descending Stair.
 [Rule for writing a paragraph about the descending stair:
 	say "A spiraling staircase disappears into the ground here. It is made of the same gossamer, questionably real stuff as the ground,[if visited pillar is true] the pillar,[end if] and the readouts. You can't see past the first turn of the stairs, unfortunately.";]
 
-The Ethereal Pillar is a thing. The description is "It's not clear what the pillar is made of, but it's definitely not stone." 
+The Ethereal Pillar is a thing. It is fixed in place. The description is "It's not clear what the pillar is made of, but it's definitely not stone." 
 
 After deciding the scope of the player when the location is Featureless Hyperplane:
 	place the Ethereal Pillar in scope;
@@ -1302,10 +1302,9 @@ about the mission is a questioning quip.
 	The comment is "[We] [say], 'What's the mission?'".
 	The reply is "Doris leans back in his chair. 'I believe we still have a chance to retrieve our lost agent -- the one that left the thumb drive. He says he was at an Onondaga holy place in the 14th century. Now we need to find out where that is. Fortunately, there's a book that can help. Unfortunately, I don't have it. Fortunately, you're here to go find it. Unfortunately, the name's gotten a bit jumbled in my head. I think it was something like [italic type]New Bikers of Troy[roman type]. Or something. I'm bad with things like titles and letters and keeping things the right way [']round. But you'll find it. I know you will. Come back here when you have.'".
 	it quip-supplies Doris.
-	It follows about Savra.
 	It follows about the Dragon.
 	It follows about-time-travel.
-	[ It is sticky. ]
+	It follows Savra's not reptilian.
 
 Doris's note is a thing. The description is "It's a bunch of cryptic scribbles."
 
@@ -1617,7 +1616,7 @@ Check giving Doris's note to Christy when the player does not carry Tribes of Ne
 After giving Doris's note to Christy:
 	say "Christy reads the note and says, 'Oh, I see. I'll get right on it. And give me the book too, thanks. So, this might take me a while -- actually, could you get me a cup of coffee?'
 	
-	(Faraji has lost the note and the book)";
+	(Faraji has lost the note and the book)[line break]";
 	now the christy interjection timer is a random number from 2 to 5;
 	now Christy carries Doris's note;
 	now Christy carries Tribes of New York;

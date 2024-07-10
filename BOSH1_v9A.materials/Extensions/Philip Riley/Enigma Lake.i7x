@@ -721,6 +721,7 @@ Instead of unlocking the padlock with something:
 
 Instead of opening the padlock:
 	say text of the can't open what's locked rule response (A);
+	say line break;
 
 The broken lock is a thing. The description is "A broken padlock." Understand "padlock", "pad lock" as the broken lock.
 
@@ -1259,9 +1260,17 @@ Every turn when beam count is 3 and portal opened is false:
 	open the portal;
 	if the player is in Henry's Hot Skillet:
 		say "Something is happening outside. Faraji runs up to the roof to see. [run paragraph on]";
-	say "The obelisk itself has begun to glow. The light from the crystal at its apex grows brighter and brighter, until it's almost blinding. Shielding their eyes, Faraji watches as the space around the obelisk shimmers and distorts. The previously gentle breeze is now a gale, [if location is the steeple]screaming through the steeple[otherwise if location is the radio station roof]howling through the struts of the radio tower[otherwise]shivering the television aerial[end if]. Then, with a huge crack, a bolt of lightning strikes the crystal. One can almost sense the electricity penetrating the earth. searching for something. And then, it's found it. Below the obelisk, something has woken.";
+	if the player is in the First Utilitarian Church of Enigma Lake:
+		say "Something is happening outside. Faraji runs up to the roof to see. [run paragraph on]";
+	if the player is in the vestry:
+		say "Something is happening outside. Faraji runs up to the roof to see. [run paragraph on]";
+	say "The obelisk itself has begun to glow. The light from the crystal at its apex grows brighter and brighter, until it's almost blinding. Shielding their eyes, Faraji watches as the space around the obelisk shimmers and distorts. The previously gentle breeze is now a gale, [if location is the steeple or the location is the First Utilitarian Church of Enigma Lake or the location is the vestry]screaming through the steeple[otherwise if location is the radio station roof]howling through the struts of the radio tower[otherwise]shivering the television aerial[end if]. Then, with a huge crack, a bolt of lightning strikes the crystal. One can almost sense the electricity penetrating the earth. searching for something. And then, it's found it. Below the obelisk, something has woken.";
+	say line break;
+	continue;
 	if the player is in Henry's Hot Skillet:
 		now the player is in Henry's Roof;
+	if the player is in the vestry or the player is in the First Utilitarian Church of Enigma Lake:
+		now the player is in the steeple;
 
 Instead of searching the telescope when the content of the tripod is the telescope: [looking through]
 	if mounted-rusty-resonator and mounted-shiny-resonator:
@@ -3302,10 +3311,8 @@ The description is "Once, town department stores like this were a constant of Am
 
 The x-coordinate of Rolle's Department Store is 0. The y-coordinate of Rolle's Department Store is -2.
 
-The table lamp is a device in Rolle's Department Store. It is privately-named. "A scuffed-up table lamp sits discarded in a corner." The description is "A table lamp, with a red enameled base and missing a shade. It's meant to plug into an outlet. It looks like it's seen better days. On the base is the branding 'Spectre'[if the table lamp is lit]. It is lit[otherwise]. It is dark[end if]." 
+The table lamp is a device in Rolle's Department Store. "A scuffed-up table lamp sits discarded in a corner." The description is "A table lamp, with a red enameled base and missing a shade. It's meant to plug into an outlet. It looks like it's seen better days. On the base is the branding 'Spectre'[if the table lamp is lit]. It is lit[otherwise]. It is dark[end if]." 
 It is pluggable. 
-Understand "table/-- lamp" as the table lamp. The printed name is "table lamp".
-Understand "short/power/cord" as the table lamp.
 
 Instead of examining the table lamp:
 	say "An ordinary table lamp, with a red enameled base";
@@ -3403,7 +3410,11 @@ Description notes for the table lamp:
 
 After switching on the table lamp:
 	if the table lamp is not lit:
-		say "Faraji flips the switch on the table lamp. The bulb remains dark.";
+		say "Faraji flips the switch on the table lamp";
+		if the light bulb is in the light socket:
+			say ". The bulb remains dark.";
+		otherwise:
+			say ". Without a light bulb the lamp remains dark.";
 	otherwise:
 		continue the action;
 
@@ -4105,6 +4116,19 @@ Carry out setting the resonators:
 	now the makeshift astral resonator is plugged into the cord;
 	now the extension cord is plugged into the electrical outlet;
 	now the circuit breaker is switched on;
+	now the content of the tripod is the makeshift astral resonator;
+
+
+setting most resonators is an action out of world. Understand "set most resonators" as setting most resonators.
+
+Carry out setting most resonators:
+	now the platform supports the shiny astral resonator;
+	now the power switch is switched on;
+	now the rusty astral resonator is in the threaded socket;
+	now the clean battery is hooked up;
+	now the makeshift astral resonator is plugged into the cord;
+	now the extension cord is plugged into the electrical outlet;
+	now the circuit breaker is switched off;
 	now the content of the tripod is the makeshift astral resonator;
 
 opening the portal is an action applying to nothing. Understand "cheat open portal" as opening the portal.
