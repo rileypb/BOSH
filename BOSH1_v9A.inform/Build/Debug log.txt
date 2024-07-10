@@ -58,7 +58,7 @@ I've also read Scenery Supporters by Philip Riley, which is 179 words long.
 I've also read Simple Conversation by Philip Riley, which is 2401 words long.
 I've also read Hyperspace by Philip Riley, which is 17294 words long.
 I've also read BOSH Facts by Philip Riley, which is 193 words long.
-I've also read Swamp Park by Philip Riley, which is 8607 words long.
+I've also read Swamp Park by Philip Riley, which is 8676 words long.
 I've also read Margaret by Philip Riley, which is 2618 words long.
 I've also read Enigma Lake by Philip Riley, which is 37616 words long.
 I've also read I Can Dig It by Philip Riley, which is 77 words long.
@@ -358,7 +358,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 303 files written as streams.
-CPU time: 1318 centiseconds
+CPU time: 2419 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

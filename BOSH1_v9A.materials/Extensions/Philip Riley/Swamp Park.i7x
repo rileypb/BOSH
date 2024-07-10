@@ -716,17 +716,28 @@ Instead of moving the stacks of crates with the handtruck:
 		say "There's no point in moving the cabinets around any further.";
 
 After entering the broken washing machine:
-	say "There is a flash of light and [we] [find] [ourselves] somewhere else...";
-	now the player is in Featureless Hyperplane;
+	if inside-the-dumpster is visited:
+		say "Nothing happens. Faraji climbs out of the washing machine.";
+		now the player is in the back basement;
+	otherwise:
+		say "There is a flash of light and [we] [find] [ourselves] somewhere else...";
+		now the player is in Featureless Hyperplane;
 
 Instead of entering the strange glow:
-	say "There is a flash of light and [we] [find] [ourselves] somewhere else...";
-	now the player is in Featureless Hyperplane;
+	if inside-the-dumpster is visited:
+		say "Nothing happens. Faraji climbs out of the washing machine.";
+		now the player is in the back basement;
+	otherwise:
+		say "There is a flash of light and [we] [find] [ourselves] somewhere else...";
+		now the player is in Featureless Hyperplane;
 
 After touching the strange glow:
-	say "There is a flash of light and [we] [find] [ourselves] somewhere else...";
-	[ end the story saying "Thanks for testing my game. This is the end of Part 1."; ]
-	now the player is in Featureless Hyperplane;
+	if inside-the-dumpster is visited:
+		say "Nothing happens. Faraji climbs out of the washing machine.";
+		now the player is in the back basement;
+	otherwise:
+		say "There is a flash of light and [we] [find] [ourselves] somewhere else...";
+		now the player is in Featureless Hyperplane;
 	
 The light switch is a scenery device in the back basement. It is switched on. Understand "glow-in-the-dark", "glowing", "lights" as the light switch. 
 The description is "It's a standard glow-in-the-dark light switch."
