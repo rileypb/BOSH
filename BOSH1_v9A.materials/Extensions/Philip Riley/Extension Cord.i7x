@@ -69,7 +69,7 @@ Before printing the locale description:
 		if the player encloses the plug-end and the player does not enclose the socket-end:
 			if the socket-end is supported by something:
 				say "Faraji is holding the plug end of an extension cord, while the other end lies on [a holder of the socket-end]";
-			otherwise:
+			otherwise if the socket-end is contained by something:
 				say "Faraji is holding the plug end of an extension cord, while the other end is in [a holder of the socket-end]";
 			if the socket-end accepts something (called the plug):
 				say ". [A plug] is plugged into the socket end";
@@ -77,11 +77,14 @@ Before printing the locale description:
 		otherwise if the player encloses the socket-end and the player does not enclose the plug-end:
 			if the plug-end is supported by something:
 				say "Faraji is holding the socket end of an extension cord, while the other end lies on [a holder of the plug-end]";
-			otherwise:
+				if something (called the socket) accepts the socket-end:
+					say ". The plug end is plugged into [a socket]";
+				say ".";
+			otherwise if the plug-end is contained by something:
 				say "Faraji is holding the socket end of an extension cord, while the other end is in [a holder of the plug-end]";
-			if something (called the socket) accepts the socket-end:
-				say ". The plug end is plugged into [a socket]";
-			say ".";
+				if something (called the socket) accepts the socket-end:
+					say ". The plug end is plugged into [a socket]";
+				say ".";
 
 Rule for writing a paragraph about the extension cord:
 	say "An extension cord lies on the [if the location is indoors]floor[otherwise]ground[end if]";
@@ -109,7 +112,7 @@ Rule for writing a paragraph about plug-end:
 		otherwise:
 			say "The plug end of an extension cord is in [the holder of the extension cord]";
 		if something (called the socket) accepts the plug-end:
-			say ", one end plugged into [the socket]";
+			say ", plugged into [the socket]";
 			let holder be the holder of the plug-end;
 			if the holder is the player:
 				say " [we] [are] holding";
@@ -168,7 +171,7 @@ Rule for writing a paragraph about socket-end:
 		otherwise:
 			say "The socket end of an extension cord is in [the holder of the extension cord]";
 	if something (called the plug) is plugged into the socket-end:
-		say ", [the plug] plugged into one end";
+		say ", [the plug] plugged into it";
 		let holder be the holder of the socket-end;
 		if the holder is the player:
 			say " we are holding";
