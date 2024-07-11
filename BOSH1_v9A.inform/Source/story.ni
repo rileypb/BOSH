@@ -6,7 +6,7 @@ The story author is "Phil Riley".
 The story headline is "An Interactive Phenomenon".
 The story genre is "Science Fiction".
 The release number is 1.
-The story creation year is 2023.
+The story creation year is 2024.
 
 Include Epistemology by Eric Eve.
 Include Conversation Framework by Eric Eve. 
@@ -21,7 +21,6 @@ Include DTPM Fix by Philip Riley.
 
 Include Locksmith by Emily Short.
 
-[ Include Borrowing by Philip Riley. ]
 Include Essentials by Philip Riley. 
 Include Facts by Philip Riley.  
 Include Phones by Philip Riley. 
@@ -39,13 +38,10 @@ Include Hello by Philip Riley.
 Include BOSH Polish by Philip Riley.
  
 
-[ Include Choices by Philip Riley. ]
- 
 Include New Light by Philip Riley. 
  
 Include Early Declarations by Philip Riley.
  
-[Include Farseeing by Philip Riley.]
 Include Basics by Philip Riley.
 Include Building Facades by Philip Riley.
 Include Snarky Remarks by Philip Riley.
@@ -56,9 +52,7 @@ Include Scenery Supporters by Philip Riley.
 Include Simple Conversation by Philip Riley.
 Include Hyperspace by Philip Riley.	
 Include BOSH Facts by Philip Riley. 
-[ Include Image Strip by Philip Riley. ]
 Include Swamp Park by Philip Riley.
-[Include Conversations General by Philip Riley.]
 Include Margaret by Philip Riley. 
 Include Enigma Lake by Philip Riley. 
 Include I Can Dig It by Philip Riley.
@@ -70,7 +64,6 @@ Include Gender Options by Nathanael Nerode.
 
 Include Make Test by Philip Riley.
 
-[ Include BOSH Help by Philip Riley. ]
 Include BOSH Hints by Philip Riley.
 
 Use MAX_OBJ_PROP_COUNT of 128.
