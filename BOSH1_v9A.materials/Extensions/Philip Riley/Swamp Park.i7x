@@ -154,6 +154,14 @@ They are obstructed.
 The laundromat front door is a closed, back-locked, and front-locked scenery shop-door. Understand "glass" as the laundromat front door. It is northwest of the parking lot south and southeast of the laundromat-store. The front description is "It's a typical glass door. Taped to it is a sign that says 'Closed for renovations'." The frontside is the strip mall parking lot south. The back description is "It's a typical glass door." 
 The laundromat front door is indescribable.
 
+Before opening the laundromat front door (this is the first unlocking the laundromat front door rule):
+	If the laundromat front door is front-locked or the laundromat front door is back-locked:
+		say "(first unlocking the laundromat front door)[command clarification break]";
+		if the player encloses the large key:
+			silently try unlocking the laundromat front door with the large key;
+		otherwise:
+			say "Faraji lacks a key to the laundromat door.";
+			stop the action;
 	
 Check going northwest from the strip mall parking lot south when the player does not know break-in-to-laundromat and the laundromat front door is front-locked and the laundromat front door is back-locked: 
 	now the player knows laundromat-front-door-is-locked;

@@ -45,7 +45,7 @@ book5 is a bookstore-book.
     The title of book5 is "The Truth of the Mary Celeste".
     The author of book5 is "Drax O'Finn".
     The genre of book5 is "Historical Occult".
-    The blurb of book5 is "Veteran truth-seeker Drax O'Finn takes on the greatest mystery of the high seas in this new powerful historical treatise. The Mary Celeste has baffled historians for centuries, but Drax O'Finn is smarter than all of them, and this time he's going to prove it. And all of those PhDs can go to hell.".
+    The blurb of book5 is "Veteran truth-seeker Drax O'Finn takes on the greatest mystery of the high seas in this powerful new historical treatise. The Mary Celeste has baffled historians for centuries, but Drax O'Finn is smarter than all of them, and this time he's going to prove it. And all of those PhDs can go to hell.".
 	Understand "truth/mary/of/celeste/drax/o'finn" as book5.
 
 book6 is a bookstore-book.
