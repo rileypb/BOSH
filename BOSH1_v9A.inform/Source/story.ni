@@ -533,7 +533,7 @@ The Mothman is a subject.
 The Jersey Devil is a subject. 
 The Flatwoods Monster is a subject. 
 The Dover Demon is a subject.
-The Kelly-Hopkinsville Encounter is a subject. Understand "Kelly/Hopkinsville/goblins" as the Kelly-Hopkinsville Encounter.
+The Kelly-Hopkinsville Encounter is a subject. Understand "Kelly/Hopkinsville/goblins/goblin" as the Kelly-Hopkinsville Encounter.
 The Rendlesham Forest Incident is a subject.
 The Phoenix Lights is a subject.
 The Betty-and-Barney Hill Abduction is a subject. It is privately-named. The printed name is "Betty and Barney Hill Abduction". Understand "Betty/and/Barney/Hill/abduction" as the Betty-and-Barney Hill Abduction.
@@ -1341,12 +1341,12 @@ After printing the locale description of the BOSH Chief's office:
 The Chief's desk is a supporter in BOSH Chief's Office. It is scenery. "This desk is a beautiful assembly of smokey glass and chrome framing. The 'legs' form shelves where Klimp keeps yet more curios. One might wonder where Klimp gets the money."
 The curios are scenery in the BOSH Chief's office. The description is "The desk shelves are full of oddities and memorabilia, most notable of which is a polished orange marble dodecahedron.".
 
-Klimp's Computer is a thing on the chief's desk. It is scenery. "The computer is a sleek, modern model. It sports a screensaver of what looks like the Hopkinsville goblin." Understand "screen/saver/screensaver" as Klimp's Computer.
+Klimp's Computer is a thing on the chief's desk. It is scenery. "The computer is a sleek, modern model. It sports a screensaver of what looks like the Hopkinsville goblin." 
 
 Instead of inserting the thumb drive into Klimp's computer:
 	say "The thumb drive is too corroded to fit into the USB port." instead;
 
-The Hopkinsville goblin screensaver is a part of Klimp's Computer. The description is "The screensaver is a looping animation of the Hopkinsville goblin, a creature from the 1955 Kelly-Hopkinsville encounter. It's a little creepy."
+The Hopkinsville-goblin-screensaver is a part of Klimp's Computer. It is privately-named. The description is "The screensaver is a looping animation of the Hopkinsville goblin, a creature from the 1955 Kelly-Hopkinsville encounter. It's a little creepy." Understand "screensaver" as Hopkinsville-goblin-screensaver.
 
 The desk shelves are a supporter. They are part of the Chief's desk. They support a polished orange marble dodecahedron. The description of the polished orange marble dodecahedron is "A relic of the Chief's sacred geometry phase.". Understand "legs/shelf" as desk shelves. They are plural-named.
 They are indescribable.
