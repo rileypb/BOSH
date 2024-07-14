@@ -1225,7 +1225,7 @@ After discussing hand over the thumb drive:
 
 about Savra is a questioning quip.
 	The comment is "'Senator Savra? What does he have to with anything?' [we] [ask].".
-	The reply is "[Doris] says, 'Tell me, Agent. Do you believe in aliens? That alien species have visited this planet?'".
+	The reply is "[Doris] says, 'Tell me, Agent. Do you believe in aliens? That alien species have visited Earth?'".
 	it quip-supplies Doris.
 	It follows hand over the thumb drive;
 
