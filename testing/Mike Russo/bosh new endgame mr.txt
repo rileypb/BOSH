@@ -1,0 +1,676 @@
+Start of a transcript of
+
+The Bureau of Strange Happenings
+An Interactive Phenomenon by Phil Riley
+Release 1 / Serial number 240617 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
+Identification number: //F61EFB05-03A9-4894-B076-9E767F9163A8//
+Interpreter version 1.3.6 / VM 3.1.2 / Library serial number 080126
+Standard Rules version 3/120430 by Graham Nelson
+Epistemology version 9 by Eric Eve
+Conversation Framework version 12 by Eric Eve
+Conversation Responses version 7 by Eric Eve
+Conversational Defaults version 3 by Eric Eve
+Formatting Capture version 2/221014 by Daniel Stelzer (based on Text Capture by Eric Eve)
+Undo Output Control version 5/170902 by Erik Temple
+Gender Options version 3/210331 by Nathanael Nerode
+Exit Lister version 11 by Eric Eve
+Secret Doors by Gavin Lambert
+
+>look
+Agent Faraji is in the circular chamber. The chamber is circular, with a low ceiling. The walls are rough-hewn stone. A passage leads to the north.
+
+A shimmering portal hovers in the center of the chamber, casting a faint light over the room.
+
+>* just did the cheat
+Noted.
+
+>enter portal
+Faraji steps through the portal. The circular chamber vanishes, and...
+
+The chamber is dark and damp, smelling of earth and old vegetable matter. The walls, floor, and ceiling are packed earth. Around the walls are numerous woven baskets for storing vegetables. Light filters in from a passage to the north.
+
+Faraji finds themself in the midst of a hostile confrontation. On one side are the same group of lizard people they banished from Enigma Park; on the other, a lone bedraggled man, clutching a root vegetable and wearing a very nice watch. Despite their superior numbers, the lizard people seem to be wary of their opponent. Presumably, the bedraggled man is the Daniels that Faraji was sent to find.
+
+The lizard people turn to Faraji. "You!" one of them hisses. "You thought you could banish us, but we have returned to snatch your victory from the jaws of our defeat... or something or other. And now we are on the threshold of our greatest triumph! Soon the Dragon will be ours!"
+
+Presumably-Daniels speaks up.  "Seriously guys, you're always so over-dramatic. Besides, I've got you right where I want you. Just watch." He shakes his potato at the lizard people. As he does, you notice his right arm looks injured. 
+
+                  <<< BOSS BATTLE! >>>
+
+Daniels throws the potato at the lizard people. His hurt arm makes his throw weak, and the potato merely rolls past the lizard people. It is now within Faraji's reach.
+
+>take potato
+Taken.
+
+>i
+Faraji is carrying:
+  a potato
+  The Ecology of Root Vegetables
+  a recall button
+  a green smartphone
+
+>read ecology
+A book with a green cover, titled "The Ecology of Root Vegetables". The author is listed as Dr. A. Zilman. The book is a comprehensive study of root vegetables. There is a whole chapter on the rutabaga, including its history, cultivation, and uses in various cultures. One strange passage details its use as a weapon against "evil earth demons".
+
+The short lizard person says, "Even now, Faraji, our spies are destroying BOSH from within." The stout lizard person elbows him in the ribs and hisses, "Shut up!"
+
+>* interesting!  Not sure if that was in the original version, but a helpful cue
+Noted.
+
+>throw potato at lizards
+Faraji fires the potato at the lizard people. It hits the floor and rolls to a stop.
+
+Daniels yells rudely at the lizard people. "You're all a bunch of jerks!"
+
+The lizard people hiss in anger and turn to face Daniels. They hiss and growl at him.
+
+>take potato
+Faraji would have to get past the lizard men to do that.
+
+The lizard people turn to face Faraji. They hiss and growl at them.
+
+One of the lizard people grabs the potato.
+
+>dodge
+I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+>duck
+I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+>hide
+I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+>* would be nice to be able to defend somehow?
+Noted.
+
+>defend
+I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+>talk to daniels
+Faraji is too distracted by the lizard people to pay attention to Daniels.
+
+One of the lizard people launches the potato at Faraji. It hits them right on the foot and bounces away. It remains within Faraji's reach.
+
+Faraji takes a hit! Health: 2 hearts remaining.
+
+One of the lizard people snatches the potato from the ground.
+
+>take potato
+That seems to belong to the group of lizard people.
+
+One of the lizard people slings the potato at Faraji. It hits them right on the head and bounces away. It remains within Faraji's reach.
+
+Faraji takes a hit! Health: 1 heart remaining.
+
+Daniels yells rudely at the lizard people. "No one likes you!"
+
+The lizard people hiss in anger and turn to face Daniels. They shout, "You'll regret that!" and bare their teeth.
+
+>take potato
+Taken.
+
+One of the lizard people says, "Even if you defeat us now, Faraji, victory will be ours eventually!"
+
+>x daniels
+Daniels looks weary. He's dressed in a tattered suit, and his hair is unkempt.
+
+The lizard people hiss, spewing forth a cloud of noxious vapor. Faraji can't avoid breathing it in.
+
+Faraji collapses, defeated.
+
+              <<< FARAJI IS DEFEATED! >>>
+
+Oh no! This doesn't seem to have gone as planned. Let's see if we can get a better outcome.
+
+Agent Faraji is in the circular chamber. The chamber is circular, with a low ceiling. The walls are rough-hewn stone. A passage leads to the north.
+
+A shimmering portal hovers in the center of the chamber, casting a faint light over the room.
+
+>* oops!
+Noted.
+
+>enter portal
+Faraji steps through the portal. The circular chamber vanishes, and...
+
+The chamber is dark and damp, smelling of earth and old vegetable matter. The walls, floor, and ceiling are packed earth. Around the walls are numerous woven baskets for storing vegetables. Light filters in from a passage to the north.
+
+Faraji finds themself in the midst of a hostile confrontation. On one side are the same group of lizard people they banished from Enigma Park; on the other, a lone bedraggled man, clutching a root vegetable and wearing a very nice watch. Despite their superior numbers, the lizard people seem to be wary of their opponent. Presumably, the bedraggled man is the Daniels that Faraji was sent to find.
+
+The lizard people turn to Faraji. "You!" one of them hisses. "You thought you could banish us, but we have returned to snatch your victory from the jaws of our defeat... or something or other. And now we are on the threshold of our greatest triumph! Soon the Dragon will be ours!"
+
+Presumably-Daniels speaks up.  "Seriously guys, you're always so over-dramatic. Besides, I've got you right where I want you. Just watch." He shakes his potato at the lizard people. As he does, you notice his right arm looks injured. 
+
+                  <<< BOSS BATTLE! >>>
+
+Daniels throws the potato at the lizard people. His hurt arm makes his throw weak, and the potato merely rolls past the lizard people. It is now within Faraji's reach.
+
+The stout lizard person says, "Give up, Faraji!"
+
+>take potato
+Taken.
+
+>eat it
+That's plainly inedible.
+
+The short lizard person says, "Faraji, you are a fool!"
+
+>* probably a custom response there would be good?
+Noted.
+
+>give potato to daniels
+Daniels doesn't seem interested..
+
+Daniels yells rudely at the lizard people. "Lizard people smell like old socks!"
+
+The lizard people hiss in anger and turn to face Daniels. They hiss and growl at him.
+
+>* that one too?
+Noted.
+
+>throw potato at daniels
+Faraji throws the potato at Daniels. He catches it and looks at Faraji quizzically.
+
+Daniels throws the potato at the lizard people. His hurt arm makes his throw weak, and the potato merely rolls past the lizard people. It is now within Faraji's reach.
+
+The lizard people turn to face Faraji. Faraji sticks out their tongue at them.
+
+>undo
+Agent Faraji is in an old root cellar.
+
+>throw potato at lizards
+Faraji throws the potato at the lizard people, who in their anger at Daniels are oblivious to Faraji's action. The potato hits the tallest one in the shoulder. He (she?) hisses in pain.
+
+The lizard people take a hit! Health: 9 hearts remaining.
+
+The lizard people turn to face Faraji. One of them makes what Faraji assumes is a rude gesture for a lizard person.
+
+Daniels picks up the potato.
+
+>take potato
+That seems to belong to Daniels.
+
+Daniels throws the potato at the lizard people. His hurt arm makes his throw weak, and the potato merely rolls past the lizard people. It is now within Faraji's reach.
+
+>* I see, wait for them to face daniels
+Noted.
+
+>take potato
+Taken.
+
+Daniels yells rudely at the lizard people. "Ever notice that all lizard people are really stupid?"
+
+The lizard people hiss in anger and turn to face Daniels. Daniels sticks out his tongue at them.
+
+The tallest lizard person says, "Give us the Dragon, Faraji!"
+
+>throw potato at lizard
+Faraji fires the potato at the lizard people, who in their anger at Daniels are oblivious to Faraji's action. The potato hits one of them right in the nose. He hisses in pain.
+
+The lizard people take a hit! Health: 8 hearts remaining.
+
+Daniels picks up the potato.
+
+>z
+The lizard people make what Faraji assumes is a rude gesture for a lizard person.
+
+Daniels throws the potato at the lizard people. His hurt arm makes his throw weak, and the potato merely rolls past the lizard people. It is now within Faraji's reach.
+
+The lizard people turn to face Faraji. They hiss furiously.
+
+>take potato
+Taken.
+
+The lizard people hiss, spewing forth a cloud of noxious vapor. Faraji can't avoid breathing it in.
+
+Faraji takes a hit! Health: 2 hearts remaining.
+
+>* oops!
+Noted.
+
+>z
+The lizard people make what Faraji assumes is a rude gesture for a lizard person.
+
+Daniels yells rudely at the lizard people. "Lizard people smell like old socks!"
+
+The lizard people hiss in anger and turn to face Daniels. They shriek, "You'll pay for that!" and shake their fists.
+
+The tallest lizard person says, "You cannot defeat us, Faraji!"
+
+>throw potato at lizards
+Faraji slings the potato at the lizard people, who in their anger at Daniels are oblivious to Faraji's action. The potato hits one of them right in the nose. He hisses in pain.
+
+The lizard people take a hit! Health: 7 hearts remaining.
+
+One of the lizard people seizes the potato.
+
+>* wait, there was something we could say to them to make them run away, right?
+Noted.
+
+>say postmodernism
+Whom do you want Faraji to say that to?
+
+>lizards
+The lizard people seem to find your words amusing. They hiss, creating a strange cloud of thick vapor. Faraji feels light-headed and disoriented. When the vapor clears, they are somewhere else...
+
+Agent Faraji is at the intersection of Lake Street and Ridge Road. The intersection lies at the edge of the lake. Lake Street runs south into town, while Ridge Road heads off into the darkness east of here. A little path along the lake shore is to the west.
+
+There is an abandoned pickup truck at the side of the road.
+
+The sky clouds over, and the air grows cooler. The moon disappears behind a veil of clouds.
+
+>* erm?
+Noted.
+
+>undo
+Agent Faraji is at the intersection of Lake Street and Ridge Road.
+
+>undo
+Agent Faraji is in an old root cellar.
+
+>* was that supposed to happen?
+Noted.
+
+>z
+The lizard people shake their fists at Daniels.
+
+The lizard people turn to face Faraji. Faraji sticks out their tongue at them.
+
+>i
+Faraji is carrying:
+  The Ecology of Root Vegetables
+  a recall button
+  a green smartphone
+
+One of the lizard people flings the potato at Faraji. It hits them right on the leg and bounces away. It remains within Faraji's reach.
+
+Faraji takes a hit! Health: 1 heart remaining.
+
+One of the lizard people snatches the potato from the ground.
+
+>take potato
+That seems to belong to the group of lizard people.
+
+One of the lizard people throws the potato at Faraji. It hits them right on the head and bounces away. It remains within Faraji's reach.
+
+Faraji collapses, defeated.
+
+              <<< FARAJI IS DEFEATED! >>>
+
+Oh no! This doesn't seem to have gone as planned. Let's see if we can get a better outcome.
+
+Agent Faraji is in the circular chamber. The chamber is circular, with a low ceiling. The walls are rough-hewn stone. A passage leads to the north.
+
+A shimmering portal hovers in the center of the chamber, casting a faint light over the room.
+
+>enter portal
+Faraji steps through the portal. The circular chamber vanishes, and...
+
+The chamber is dark and damp, smelling of earth and old vegetable matter. The walls, floor, and ceiling are packed earth. Around the walls are numerous woven baskets for storing vegetables. Light filters in from a passage to the north.
+
+Faraji finds themself in the midst of a hostile confrontation. On one side are the same group of lizard people they banished from Enigma Park; on the other, a lone bedraggled man, clutching a root vegetable and wearing a very nice watch. Despite their superior numbers, the lizard people seem to be wary of their opponent. Presumably, the bedraggled man is the Daniels that Faraji was sent to find.
+
+The lizard people turn to Faraji. "You!" one of them hisses. "You thought you could banish us, but we have returned to snatch your victory from the jaws of our defeat... or something or other. And now we are on the threshold of our greatest triumph! Soon the Dragon will be ours!"
+
+Presumably-Daniels speaks up.  "Seriously guys, you're always so over-dramatic. Besides, I've got you right where I want you. Just watch." He shakes his potato at the lizard people. As he does, you notice his right arm looks injured. 
+
+                  <<< BOSS BATTLE! >>>
+
+Daniels throws the potato at the lizard people. His hurt arm makes his throw weak, and the potato merely rolls past the lizard people. It is now within Faraji's reach.
+
+>take potato
+Taken.
+
+Daniels yells rudely at the lizard people. "Gah! What is that smell?"
+
+The lizard people hiss in anger and turn to face Daniels. They shout, "You'll regret that!" and bare their teeth.
+
+One of the lizard people says, "This is a waste of time, Faraji. Tell us where the Dragon is!"
+
+>z
+The lizard people hiss furiously at Daniels.
+
+>yell at lizards
+I only understood you as far as wanting to yell.
+
+>yell 
+Faraji shouts really loud, and feels a little better.
+
+The lizard people turn to face Faraji. One of them rushes Faraji, but they scurry to a safer place.
+
+>z
+The lizard people make what Faraji assumes is a rude gesture for a lizard person.
+
+Daniels yells rudely at the lizard people. "Hey look at me! I'm a lizard person, and I'm so stupid!"
+
+The lizard people hiss in anger and turn to face Daniels. They shriek, "You'll pay for that!" and shake their fists.
+
+>throw potato at lizards
+Faraji hurls the potato at the lizard people, who in their anger at Daniels are oblivious to Faraji's action. The potato bounces off the stout one's head. He hisses in pain.
+
+The lizard people take a hit! Health: 9 hearts remaining.
+
+One of the lizard people takes the potato.
+
+>take potato
+That seems to belong to the group of lizard people.
+
+The lizard people turn to face Faraji. They hiss furiously.
+
+>hide
+I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+>daniels, yell
+
+*** Run-time problem P47 (at paragraph 618 in the source text): Phrase applied to an incompatible kind of value.
+
+Daniels has better things to do.
+
+One of the lizard people launches the potato at Faraji. It misses, and is now within Faraji's reach.
+
+One of the lizard people grabs the potato.
+
+>* oops!
+Noted.
+
+>take potato
+That seems to belong to the group of lizard people.
+
+One of the lizard people slings the potato at Faraji. It hits them right on the shoulder and bounces away. It remains within Faraji's reach.
+
+Faraji takes a hit! Health: 2 hearts remaining.
+
+One of the lizard people picks up the potato.
+
+>undo
+Agent Faraji is in an old root cellar.
+
+>z
+The lizard people hiss and growl at Faraji.
+
+One of the lizard people throws the potato at Faraji. It falls short, and is now within Faraji's reach.
+
+Daniels yells rudely at the lizard people. "Your parents liked your siblings better!"
+
+The lizard people hiss in anger and turn to face Daniels. They hiss and growl at him.
+
+>take potato
+Taken.
+
+The lizard people hiss, spewing forth a cloud of noxious vapor. Faraji can't avoid breathing it in.
+
+Faraji takes a hit! Health: 2 hearts remaining.
+
+>* hmm
+Noted.
+
+>z
+The lizard people hiss and growl at Daniels.
+
+The lizard people turn to face Faraji. They hiss and growl at them.
+
+>z
+The lizard people rush Faraji all at once, causing them to drop the potato they are carrying. The lizard people grab it and retreat.
+
+>e
+The lizard people block the way.
+
+One of the lizard people hurls the potato at Faraji. It hits them right on the arm and bounces away. It remains within Faraji's reach.
+
+Faraji takes a hit! Health: 1 heart remaining.
+
+Daniels yells rudely at the lizard people. "Ever notice that all lizard people are really stupid?"
+
+The lizard people hiss in anger and turn to face Daniels. Daniels sticks out his tongue at them.
+
+>take potato
+Taken.
+
+>throw potato at lizards
+Faraji throws the potato at the lizard people, who in their anger at Daniels are oblivious to Faraji's action. The potato bounces off the stout one's head. He hisses in pain.
+
+The lizard people take a hit! Health: 8 hearts remaining.
+
+The lizard people turn to face Faraji. They hiss furiously.
+
+One of the lizard people grabs the potato.
+
+>i
+Faraji is carrying:
+  The Ecology of Root Vegetables
+  a recall button
+  a green smartphone
+
+One of the lizard people launches the potato at Faraji. It hits them right on the leg and bounces away. It remains within Faraji's reach.
+
+Faraji collapses, defeated.
+
+              <<< FARAJI IS DEFEATED! >>>
+
+Oh no! This doesn't seem to have gone as planned. Let's see if we can get a better outcome.
+
+Agent Faraji is in the circular chamber. The chamber is circular, with a low ceiling. The walls are rough-hewn stone. A passage leads to the north.
+
+A shimmering portal hovers in the center of the chamber, casting a faint light over the room.
+
+>i
+Faraji is carrying:
+  The Ecology of Root Vegetables
+  a recall button
+  a green smartphone
+
+>x button
+A small, flat device with a black button on it.
+
+>x smartphone
+It's a pretty nice phone, only a couple of years old, but Faraji doesn't have time to play with it. They need to get to the office.
+
+>push button
+The world turns inside out, and suddenly Faraji is somewhere else.
+
+Agent Faraji is in the field office chief's office. Doris's office is a riot of color -- he's covered the white walls with posters, maps, and charts. A large desk is in the middle of the room, behind which sits Doris.
+
+Doris is sitting cross-legged in a chair, tapping his foot lazily on the desk.
+
+"Ah, Larch," Doris exclaims, standing up to shake their hand. "I've been waiting for you to pay us a visit. Did you bring the thumb drive?"
+
+Faraji can ask who he is, ask where we are, ask how to get home or ask what thumb drive.
+
+>undo
+Agent Faraji is in the circular chamber.
+
+>enter portal
+Faraji steps through the portal. The circular chamber vanishes, and...
+
+The chamber is dark and damp, smelling of earth and old vegetable matter. The walls, floor, and ceiling are packed earth. Around the walls are numerous woven baskets for storing vegetables. Light filters in from a passage to the north.
+
+Faraji finds themself in the midst of a hostile confrontation. On one side are the same group of lizard people they banished from Enigma Park; on the other, a lone bedraggled man, clutching a root vegetable and wearing a very nice watch. Despite their superior numbers, the lizard people seem to be wary of their opponent. Presumably, the bedraggled man is the Daniels that Faraji was sent to find.
+
+The lizard people turn to Faraji. "You!" one of them hisses. "You thought you could banish us, but we have returned to snatch your victory from the jaws of our defeat... or something or other. And now we are on the threshold of our greatest triumph! Soon the Dragon will be ours!"
+
+Presumably-Daniels speaks up.  "Seriously guys, you're always so over-dramatic. Besides, I've got you right where I want you. Just watch." He shakes his potato at the lizard people. As he does, you notice his right arm looks injured. 
+
+                  <<< BOSS BATTLE! >>>
+
+Daniels throws the potato at the lizard people. His hurt arm makes his throw weak, and the potato merely rolls past the lizard people. It is now within Faraji's reach.
+
+>take potato
+Taken.
+
+Daniels yells rudely at the lizard people. "Your suits fit poorly!"
+
+The lizard people hiss in anger and turn to face Daniels. They hiss and growl at him.
+
+>ask daniels about potato
+Faraji is too distracted by the lizard people to pay attention to Daniels.
+
+The lizard people turn to face Faraji. One of them rushes Faraji, but they scurry to a safer place.
+
+>x arm
+There's nothing like that nearby.
+
+>help daniels
+I only understood you as far as wanting to help.
+
+>l
+Agent Faraji is in an old root cellar. The chamber is dark and damp, smelling of earth and old vegetable matter. The walls, floor, and ceiling are packed earth. Around the walls are numerous woven baskets for storing vegetables. Light filters in from a passage to the north.
+
+Three humanoid figures are here, each with a long, scaly tail and a head that looks like a lizard's. They are dressed in smart grey suits. They seem highly agitated.
+
+Also here is Daniels.
+
+>x baskets
+The basket is woven from reeds. It's closed.
+
+>open baket
+There's nothing like that nearby.
+
+>open basket
+Faraji opens the woven basket, revealing a turnip and a rutabaga.
+
+>* aha!
+Noted.
+
+>take all
+turnip: Taken.
+rutabaga: Taken.
+
+Daniels yells rudely at the lizard people. "Gah! What is that smell?"
+
+The lizard people hiss in anger and turn to face Daniels. They retort, "Sticks and stones!" and stamp their feet.
+
+>throw rutabega at lizards
+There's nothing like that nearby.
+
+>throw rutabaga at lizards
+Faraji hurls the rutabaga at the lizard people, who in their anger at Daniels are oblivious to Faraji's action. The rutabaga strikes the leader in the head. He hisses in pain and surprise, then shrieks in terror. "No! My allergies!" The chamber fills with a white vapor. When it clears, the lizard people are nowhere to be seen.
+
+The lizard people have been KO'd!
+
+             <<< FARAJI IS VICTORIOUS! >>>.
+
+Daniels approaches Faraji. "Nice throw," he says. "Glad you came when you did. As you can see, my throwing arm is worse than useless right now.
+
+"I'm Daniels. Agent of the hyperspace field office of the Bureau of Strange Happenings and owner of the A+ Laundromat in Swamp Park, Maryland. Did Doris send you?"
+
+Faraji can tell Daniels Doris sent me, ask about the laundromat, ask how he got here or ask where we are.
+
+>yes
+Faraji says, "Yes, Doris sent me to find you."
+
+"Good old Doris," Daniels says. "Always the man with the plan."
+
+Faraji can ask about the laundromat, ask how he got here or ask where we are.
+
+>x daniels
+Daniels looks weary. He's dressed in a tattered suit, and his hair is unkempt.
+
+Faraji can ask about the laundromat, ask how he got here or ask where we are.
+
+>ask him about laundromat
+Faraji asks, "You own the laundromat? Dave's looking for his screwdriver."
+
+"Um, yeah," Daniels says. "I'm afraid I misplaced it."
+
+Faraji can ask how he got here or ask where we are.
+
+>ask him how he got here
+Faraji says, "How did you end up stranded here?"
+
+"I was hunting down Savra's minions," Daniels says, "but they caught me and sent me way back to the past. I've been stuck here ever since."
+
+Faraji can ask where we are or ask what's next.
+
+>ask him where we are
+Faraji asks, "Where are we?"
+
+"We're in an old Onondaga root cellar in upstate New York. Well not so old now, I guess. I've managed to make friends with the locals well enough, so they let me sleep in here."
+
+Faraji can ask what's next.
+
+>ask him what's next
+Faraji asks, "What do we do next?"
+
+"Doris must have given you a recall button. I can rejigger it to send me to the hyperspace office and send you back to Swamp Park. I own the laundromat, by the way. Sorry I wasn't there to greet you. Alright, give me the button."
+
+Faraji hands the recall button to Daniels. Daniels fiddles with the device for a moment, then hands it back. "There you go. You can do the honors."
+
+>push button
+Faraji is just about to push the recall button when Daniels exclaims, "Wait! I forgot to give you this." He pushes a small metal object into Faraji's hand.
+
+Faraji doesn't have time to look at object before their finger slips and pushes the button. The room spins and fades away, and Faraji finds themself back in Swamp Park.
+
+Agent Faraji is inside the dumpster. It's smelly, but at least the top is open. Assorted trash and cardboard boxes are scattered about. Thankfully, it's not too full.
+
+>i
+Faraji is carrying:
+  a wristwatch
+  a turnip
+  a potato
+  The Ecology of Root Vegetables
+  a recall button
+  a green smartphone
+
+>x watch
+A simple wristwatch. The initials "DM" are engraved on the back.
+
+>out
+Faraji climbs out of the dumpster.
+
+Agent Faraji is in the back lot. This is a small area of asphalt between the building and a chain link fence looking in on an industrial property. A door to east leads into the BOSH offices, and one to the north enters the laundromat. There is a blue dumpster here.
+
+>x me
+Agent Faraji is dressed smartly in a black suit, with neat hair and a serious expression. Inside, they are a punk rocker, a fact that they are not shy about.
+
+>e
+(first opening the BOSH back door)
+(first unlocking the BOSH back door)
+Faraji lacks a key that fits the BOSH back door.
+
+>se
+That way is obstructed by a chain link fence.
+
+>l
+Agent Faraji is in the back lot. This is a small area of asphalt between the building and a chain link fence looking in on an industrial property. A door to east leads into the BOSH offices, and one to the north enters the laundromat. There is a blue dumpster here.
+
+>n
+(first opening the laundromat back door)
+(first unlocking the laundromat back door)
+Faraji lacks a key that fits the laundromat back door.
+
+>e
+(first opening the BOSH back door)
+(first unlocking the BOSH back door)
+Faraji lacks a key that fits the BOSH back door.
+
+>* ah well, I assume things are the same from here!
+Noted.
+
+>push button
+The world turns inside out, and suddenly Faraji is somewhere else.
+
+Agent Faraji is in the field office chief's office. Doris's office is a riot of color -- he's covered the white walls with posters, maps, and charts. A large desk is in the middle of the room, behind which sits Doris.
+
+Doris is sitting cross-legged in a chair, tapping his foot lazily on the desk.
+
+"Ah, Larch," Doris exclaims, standing up to shake their hand. "I've been waiting for you to pay us a visit. Did you bring the thumb drive?"
+
+Faraji can ask who he is, ask where we are, ask how to get home or ask what thumb drive.
+
+>e
+Faraji couldn't be happier to get away from Doris's incessant chatter.
+
+Agent Faraji is in the field office hallway. The hallway is white and gleaming. Doorways lead north, south, east, west, forth, and back.
+
+>e
+Faraji uneasily steps back into Maggie's domain.
+
+Agent Faraji is at field office reception. It is a small, white (like everything else) room with a desk against one wall. An office directory is on the wall. A hallway leads west and a stairway goes up to the infinite hyperplane.
+
+[I bet they don't get much foot traffic here.]
+
+A young woman is sitting at the desk. Apparently doing nothing, she looks up from her desk and smiles at Faraji. "Hello, I'm Maggie," she says. "Welcome to the BOSH Hyperspace Field Office, Agent Faraji. Did you have a nice time getting here? I hope so. I helped design the lobby." She resumes staring at the opposite wall.
+
+>e
+Faraji can't go that way.
+
+>

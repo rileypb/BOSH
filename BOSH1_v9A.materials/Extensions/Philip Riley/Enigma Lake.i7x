@@ -1696,6 +1696,12 @@ A root-vegetable is a kind of thing.
 A root-vegetable can be out of reach or within-reach. A root-vegetable is usually within-reach.
 A rutabaga, a turnip, and a potato are root-vegetables.
 
+Instead of eating a root-vegetable:
+	say "Uncooked, [the noun] is not very appetizing.";
+
+Instead of giving something to Daniels when the group of lizard people is in the old root cellar:
+	say "Daniels is too far away for that.";
+
 The woven basket is a closed, openable scenery container in the old root cellar. "The basket is woven from reeds[if the woven basket is open]. It's open[otherwise]. It's closed[end if]." 
 Understand "baskets" as the woven basket.
 The rutabaga and the turnip are in the woven basket. 
@@ -1768,6 +1774,12 @@ To initialize the boss battle:
 	now turn countdown is 0;
 	now notable Daniels event this turn is false;
 	now notable lizard event this turn is false;
+	now Daniels is familiar;
+	now potato is familiar;
+	now rutabaga is familiar;
+	now turnip is familiar;
+	now woven basket is familiar;
+	now root vegetables are familiar;
 
 Lizard people facing us is a truth state that varies. Lizard people facing us is true.
 Turn countdown is a number that varies. Turn countdown is 0.
@@ -1792,10 +1804,10 @@ Before doing something when the location is the old root cellar and the group of
 	if act is examining action:
 		if the noun is not the group of lizard people:
 			now faraji distracted this turn is true;
-	otherwise if act is not the waiting action and act is not the throwing it at action:
+	otherwise if act is not the waiting action and act is not the throwing it at action and act is not the defending action:
 		now faraji distracted this turn is true;
 
-Instead of doing something other than examining to Daniels when the group of lizard people is in the old root cellar:
+Instead of doing something other than examining or quizzing to Daniels when the group of lizard people is in the old root cellar:
 	say "Faraji is too distracted by the lizard people to pay attention to Daniels.";
 
 Instead of doing something to a root-vegetable when the noun is out of reach:
@@ -1841,15 +1853,25 @@ Every turn when the location is the old root cellar and Daniels carries a root-v
 	now the RV is in the old root cellar;
 	now notable daniels event this turn is true;
 
+lizard-attack-this-turn is a truth state that varies. lizard-attack-this-turn is false.
+
+Last every turn rule:
+	now lizard-attack-this-turn is false.
+
 Every turn when the location is the old root cellar and the lizard people carry a root-vegetable (called RV) and the lizard people are in the old root cellar and lizard people facing us is true and notable lizard event this turn is false:
 	now the RV is in the old root cellar;
 	now notable lizard event this turn is true;
+	now lizard-attack-this-turn is true;
 	if faraji distracted this turn is true:
 		say "One of the lizard people [one of]throws[or]hurls[or]flings[or]launches[or]fires[or]slings[at random] [the RV] at Faraji. It hits them right on the [one of]head[or]shoulder[or]arm[or]leg[or]foot[at random] and bounces away. It remains within Faraji's reach.";
 		hit faraji;
+	otherwise if defending-this-turn is true:
+		say "One of the lizard people [one of]throws[or]hurls[or]flings[or]launches[or]fires[or]slings[at random] [the RV] at Faraji. They [one of]dodge[or]duck[or]dodge and weave[or]sidestep[or]jump aside[at random], and it bounces away. It remains within Faraji's reach.";
 	otherwise:
 		say "One of the lizard people [one of]throws[or]hurls[or]flings[or]launches[or]fires[or]slings[at random] [the RV] at Faraji. It [one of]misses[or]goes wide[or]falls short[or]bounces off the wall[or]hits the floor[at random], and is now within Faraji's reach.";
 
+Every turn when the location is the old root cellar and the lizard people are in the old root cellar and defending-this-turn is true and lizard-attack-this-turn is false:
+	say "Faraji [one of]spins around to avoid an attack which never comes[or]ducks to avoid an attack which never comes[or]parries an attack which never comes[or]blocks an attack which never comes[or]deflects an attack which never comes[or]evades an attack which never comes[or]protects themself from an attack which never comes[or]shields themself from an attack which never comes[or]wards off an attack which never comes[at random].";
 
 Every turn when lizard people facing us is false and the lizard people are in the old root cellar and the location is the old root cellar and notable lizard event this turn is false:
 	decrement turn countdown;
@@ -2096,7 +2118,8 @@ Instead of pushing the recall button when the player is in the old root cellar a
 	Faraji doesn't have time to look at object before their finger slips and pushes the button. The room spins and fades away, and Faraji finds themself back in Swamp Park.";
 	now the player carries the wristwatch;
 	now the current interlocutor is nothing;
-	move the player to the inside-the-dumpster.
+	move the player to the inside-the-dumpster;
+	now the recall button is nowhere;
 
 Book 24 - Lake shore west
 
@@ -3048,7 +3071,7 @@ The extension cord is in the Bookstore Basement.
 The Ecology of Root Vegetables is in the Bookstore Basement. It is proper-named. The printed name is "[italic type]The Ecology of Root Vegetables[roman type]". Understand "green/cover/book" as The Ecology of Root Vegetables. The Ecology of Root Vegetables can be read.
 "A book with a green cover titled [italic type]The Ecology of Root Vegetables[roman type] lies on the floor here."
 
-The description of The Ecology of Root Vegetables is "A book with a green cover, titled 'The Ecology of Root Vegetables'. The author is listed as Dr. A. Zilman. The book is a comprehensive study of root vegetables. There is a whole chapter on the rutabaga, including its history, cultivation, and uses in various cultures. One strange passage mentions a potential use as a weapon against 'evil earth demons'."
+The description of The Ecology of Root Vegetables is "A book with a green cover, titled 'The Ecology of Root Vegetables'. The author is listed as Dr. A. Zilman. The book is a comprehensive study of root vegetables. There is a whole chapter on the rutabaga, including its history, cultivation, and uses in various cultures. One passage mentions its potential use as a weapon against 'evil earth demons'."
 
 A bricked-up-hole is a secret door. It is north of the Bookstore Basement and south of a sewer tunnel 1. It is privately-named. The printed name is "bricked-up hole in the wall". Understand "bricked-up", "bricked/up", "hole in/-- the/-- wall/--" as bricked-up-hole. It is open and not openable. "A ragged hole in the north wall, [if the location is the bookstore basement]leading into a dark space[otherwise]leading into the bookstore basement[end if]." 
 It is unsnarkable.
@@ -3950,7 +3973,7 @@ To teleport the player:
 	now the current interlocutor is nothing;
 
 Instead of answering something that when the group of lizard people is in the location:
-	if cursed word is "" or cursed word is not the topic understood:
+	if cursed word is "" or cursed word is not the topic understood and the location is the old root cellar:
 		say "The lizard people seem to find your words amusing. They hiss, creating a strange cloud of thick vapor. Faraji feels light-headed and disoriented. When the vapor clears, they are somewhere else...";
 		teleport the player;
 	otherwise if the location is in ELR:
@@ -3963,8 +3986,10 @@ Instead of answering something that when the group of lizard people is in the lo
 		now the lizard countdown is 0;
 		now the current interlocutor is nothing;
 		now the strange shiny metal object is nowhere;
-	otherwise if the location is the old root cellar:
-		say "The lizard people laugh uproariously, in their strange hissing way. 'You thought that would work twice? Foolish human!'"
+	otherwise if the location is the old root cellar and the cursed word is the topic understood:
+		say "The lizard people laugh uproariously, in their strange hissing way. 'You thought that would work twice? Foolish human!'";
+	otherwise:
+		say "The lizard people seem to find your words amusing.";
 
 After reading a command:
 	if the player's command in lower case is the cursed word in lower case:
@@ -3980,6 +4005,16 @@ Every turn when the lizard countdown <= 0 and the group of lizard people is in t
 Instead of going when the group of lizard people is in the location:
 	say "The lizard people block the way.";
 
+Defending is an action applying to nothing. Understand "defend" as defending when the location is the old root cellar. Understand the commands "dodge", "parry", "block", "deflect", "evade", "protect", "shield", "ward", "duck" as "defend".
+
+Defending-this-turn is a truth state that varies.
+
+Last every turn rule: 
+	now defending-this-turn is false.
+
+Carry out defending:
+	now defending-this-turn is true;
+
 Doris-subject is a subject. It is privately-named. The printed name is "Doris". Understand "doris" as Doris-subject.
 Dragon-subject is a subject. It is privately-named. The printed name is "Dragon". Understand "dragon" as Dragon-subject.
 plans-subject is a subject. It is privately-named. The printed name is "plans". Understand "plans" as plans-subject.
@@ -3990,14 +4025,14 @@ group of lizard people	group of lizard people	"'Who are you?' asks Faraji.'"	"Th
 Doris-subject	group of lizard people	"'Doris sent me,' says Faraji."	"'Doris is a fool,' hisses the lizard person. 'He will not stop us.'"
 Enigma-Lake-subject	group of lizard people	"'What are you doing here?' asks Faraji."	"'We are here to stop you. We will have the Dragon,' hisses the lizard person."
 senator-savra-subject	group of lizard people	"'What do you know about Senator Savra?' asks Faraji."	"'Savra, our great leader, will have the Dragon,' hisses the lizard person."
-Dragon-subject	group of lizard people	"'Who is the Dragon?' asks Faraji."	"'The Dragon, the greatest of all, corrupted by the surface vermin,' hisses the lizard person."
+Dragon-subject	group of lizard people	"'Who is the Dragon?' asks Faraji."	"'The Greatest of All, corrupted by the surface vermin,' hisses the lizard person."
 strange shiny metal object	group of lizard people	"'What is that shiny object?' asks Faraji."	"'It is ours,' hisses the lizard person. 'You will not have it.'"
 Larch Faraji	group of lizard people	"'What do you want with me?' asks Faraji."	"'We want nothing with you,' hisses the lizard person. 'You are nothing to us.'"
 Daniels	group of lizard people	"'What do you want with Daniels?' asks Faraji."	"'Daniels will take us to the Dragon, or he will die,' hisses the lizard person."
 rutabaga	group of lizard people	"'What's with the rutabaga?' asks Faraji."	"'The rutabaga means nothing,' hisses the lizard person. 'We are certainly not afraid of it. No, definitely not. At all. Ever.'"
 turnip	group of lizard people	"'I'm going to smack you with a turnip,' says Faraji."	"'Then we will be happy, for turnips are our favorite food,' hisses the lizard person."
-potato	group of lizard people	"'I'm going to thwack you with a potato,' says Faraji."	"'We fear  no potato,' hisses the lizard person. 'It is a weak weapon.'"
-chief-huffton-klimp-subject	group of lizard people	"'What do you know about Chief Huffton Klimp?' asks Faraji."	"'Klimp is a good fr-- um, I mean enemy of the lizard people,' hisses the lizard person."
+potato	group of lizard people	"'I'm going to thwack you with a potato,' says Faraji."	"'We fear no potato,' hisses the lizard person. 'It is a weak weapon.'"
+chief-huffton-klimp-subject	group of lizard people	"'What do you know about Chief Huffton Klimp?' asks Faraji."	"'Klimp is a good fr-- um, I mean enemy of the lizard people,' hisses the tall lizard person."
 woven basket	group of lizard people	"'What's with the woven basket?' asks Faraji."	"'What?' hisses the lizard person. 'We have no interest in woven baskets.'"
 root vegetables	group of lizard people	"'What's with the root vegetables?' asks Faraji."	"'Root vegetables?' hisses the lizard person. 'We have no interest in root vegetables. Least of all rutabagas.'"
 plans-subject	group of lizard people	"'What are your plans?' asks Faraji."	"'Our plans are our own,' hisses the lizard person. 'You will not stop us.'"

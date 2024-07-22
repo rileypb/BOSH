@@ -111,7 +111,7 @@ Crediting is an action out of world. Understand "credits" as crediting.
 
 Carry out crediting:
 	say "Many thanks to the following people for their help and support in the creation of this game:[line break]";
-	say "Playtesters Max Fog and someone...[line break]";
+	say "Many thanks to my great playtesters Max Fog, Mike Russo, Tabitha, Peter Gross, and Climbingstars.";
 	say "My wife, Laura, for understanding my need to spend hundreds of hours writing something that only a couple dozen people will ever play.";
 	say paragraph break;
 	say the list of extension credits;
@@ -606,7 +606,7 @@ Book 10 - Kinds
 
 Book 11 - The Players
 
-To decide whether (actor - a person) is busy with respect to (actor2 - a person):
+[ To decide whether (actor - a person) is busy with respect to (actor2 - a person):
 	decide on whether or not actor is phoning and actor is not talking with actor2;
 
 Instead of an actor saying hello to someone when the noun is busy with respect to the actor:
@@ -619,7 +619,7 @@ Instead of asking someone for something when the noun is busy with respect to th
 	say "[The noun] is on the phone.";
 
 Instead of asking someone to try doing something when the noun is busy with respect to the actor:
-	say "[The noun] is on the phone.";
+	say "[The noun] is on the phone."; ]
 
 
 Chief Huffton Klimp is a man. The printed name of Klimp is "Chief Klimp". The description is "Huffton Klimp, or simply 'The Chief', who by his name and title should rightly be big and gruff, is a wiry guy with a thinning shock of red hair on top. Once the youngest and most devoted recruit in the Bureau, the years and his promotion to Bureau Head have not dulled his enthusiasm and idealism. He's a true believer in the existence of aliens, and he's convinced that the Bureau is the only thing standing between humanity and the alien menace. He's also convinced that the Bureau is the only thing standing between him and a comfortable retirement. He's a good guy, but he's a bit of a pain."
