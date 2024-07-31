@@ -251,7 +251,7 @@ The work schedule is scenery in the Enigma Lake town hall.
 |Thursday        Edward Alpha    |[line break]
 |Friday          Rosemary Tamsin |[line break]
 |Saturday        Mary Huff       |[line break]
-+--------------------------------+".
++--------------------------------+[variable letter spacing]".
 
 After examining the work schedule when the backpack is nowhere:
 	say "Faraji notices something behind the desk.";
@@ -282,7 +282,7 @@ Book 2 - Enigma Park
 To explore is a verb.
 
 Enigma Park is a leavable room. It is north of Enigma Lake town hall. It is unleavable. Enigma Park is in ELR. It is outdoors.
-"[first time]It's probably beautiful during the day, but tonight the deep shadows among the trees seem ominous. [We] [are] watchful and tense as [we] [explore] the park. 
+"[first time]It's probably beautiful during the day, but tonight the deep shadows among the trees seem ominous. Faraji is watchful and tense as they explore the park. 
 
 [only]The central focus of the park is a large obelisk inscribed with the names of the town's citizens lost in the Great War. Firs and maples line the paths. The town hall is to the south, and other exits are to the north, west, and east. Other egress is blocked by stone walls[park beam description]."
 
@@ -939,7 +939,7 @@ PREAMBLE is always "The text is the [italic type]Book of Utilitarianism[roman ty
 
 The verses are a list of texts that varies.
 The verses are {
-	"And the Lord said, 'The path of the righteous is beset on all sides by the inequities of the selfish and the tyranny of the lizard people. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who attempt to poison and destroy my brothers. And you will know my name is the Lord when I lay my vengeance upon thee.'",
+	"And the Lord said, 'The path of the righteous is beset on all sides by the inequities of the selfish and the tyranny of the lizard people. Blessed is he who smites the lizard people, even if only with a rutabaga.",
 	"But the Lord said to the lizard people, 'You are truly mine enemy, and I will smite you with great vengeance and furious anger. You will know my name is the Lord when I lay my vengeance upon thee.'",
 	"For thou shalt not suffer a lizard person to live, for they are an abomination unto the Lord.",
 	"And God so loved the world that he gave his only begotten son, that whosoever believeth in him should not perish, but have everlasting life. The lizard people are not included in this offer.",
@@ -1228,6 +1228,42 @@ stained-glass-window-steeples are unsnarkable.
 
 The telescope is in the tripod. The description is "A small telescope suitable for amateur astronomy[if the content of the tripod is the telescope]. It's mounted on a tripod[end if]."
 
+Instead of turning the telescope:
+	say "The telescope is fixed in place, pointing at the obelisk in the park.";
+
+Focussing is an action applying to one thing. Understand "focus [something]" as focussing.
+
+check focussing:
+	if the noun is not the telescope:
+		say "That's not something [we] can focus." instead;
+
+Carry out focussing:
+	say "The focussing ring on the telescope is jammed. Faraji can't adjust it.";
+
+Looking through it at is an action applying to one thing and one visible thing. Understand "look at [something] through [something]" as looking through it at (with nouns reversed).
+Understand "look through [something] at [something]" as looking through it at.
+
+Peering through it at is an action applying to one thing and one topic. Understand "look at [text] through [something]" as peering through it at (with nouns reversed).
+Understand "look through [something] at [text]" as peering through it at.
+
+Check looking through it at:
+	if the noun is not the telescope:
+		say "That's not something [we] can look through." instead;
+	if the second noun is the telescope:
+		say "That's just silly." instead;
+	if the second noun is the tripod:
+		say "That's just silly." instead;
+	if the second noun is not the steeple-obelisk-facade:
+		say "The telescope is fixed in place, pointing at the obelisk in the park." instead;
+
+Check peering through it at:
+	if the noun is not the telescope:
+		say "That's not something [we] can look through." instead;
+	say "The telescope is fixed in place, pointing at the obelisk in the park." instead;
+
+Carry out looking through it at:
+	try examining the second noun;
+
 To decide what number is the beam count:
 	let count be 0;
 	if mounted-rusty-resonator:
@@ -1466,14 +1502,21 @@ Understand "box/glovebox" as the glove compartment.
 The description is "The glove compartment is [if the glove compartment is open]open[otherwise]closed[end if]."
 The brass key is a key. It is in the glove compartment. The description is "A simple brass key". It is in-the-pickup.
 
+Before entering the abandoned pickup truck when the abandoned pickup truck is closed:
+	say "(first opening the abandoned pickup truck)[command clarification break]";
+	silently try opening the abandoned pickup truck;
+
+Before exiting when the player is in the abandoned pickup truck and the abandoned pickup truck is closed:
+	say "(first opening the abandoned pickup truck)[command clarification break]";
+	silently try opening the abandoned pickup truck;
 
 The truck hood is a part of the abandoned pickup truck. It is a closed openable container. The description is "The hood is slightly crumpled, as if it has been in a minor accident. It is [if the hood is open]open[otherwise]closed[end if]." Understand "bonnet" as the truck hood. 
 It is unsnarkable.
 
-Instead of doing something to something when the action requires a touchable noun and the noun is not-in-the-pickup and the player is in the abandoned pickup truck:
+Instead of doing something to something when the action requires a touchable noun and the noun is not-in-the-pickup and the noun is not the abandoned pickup truck and the player is in the abandoned pickup truck:
 	say "Faraji can't do that from inside the truck.";
 
-Instead of doing something to something when the action requires a touchable noun and the noun is in-the-pickup and the player is not in the abandoned pickup truck:
+Instead of doing something to something when the action requires a touchable noun and the noun is in-the-pickup and the noun is not the abandoned pickup truck and the player is not in the abandoned pickup truck:
 	say "Faraji can't do that from here.";
 
 The hood contains a dirty car battery. 
@@ -1500,6 +1543,9 @@ After entering the abandoned pickup truck:
 
 Instead of searching the abandoned pickup truck when the player is not in the abandoned pickup truck:
 	say "The interior of the truck is visible through [if the abandoned pickup truck is open]the open door[otherwise]the window[end if] but Faraji can't see anything much from where they are[if the glove compartment is open]. The glove compartment is open but it's impossible to see what, if anything, is in it[end if][if something is in the truck bed]. The truck bed contains [a list of things in the truck bed][end if].";
+
+Instead of driving the abandoned pickup truck:
+	try switching on the abandoned pickup truck;
 	
 Instead of switching on the abandoned pickup truck:
 	let K be the list of all keys enclosed by the player;
@@ -1530,7 +1576,7 @@ The pair of bolt cutters are in the truck bed. The description is "A pair of bol
 
 Book 20 - Lake Shore north of the park
 
-the lake shore north of the park is west of Lake at Ridge and north of Enigma Park. It is in ELR. It is outdoors. The preposition is "on". "[description of lake]. The park is to the south, while the lake stretches off to the north. A workshed is to the southeast. A road can be seen to the east."
+the lake shore north of the park is west of Lake at Ridge and north of Enigma Park. It is in ELR. It is outdoors. The preposition is "on". "[description of lake]. The park is to the south, while the lake stretches off to the north, and the shore goes west. A workshed is to the southeast. A road can be seen to the east."
 Understand "water" as the lake shore north of the park.
 
 The x-coordinate of the lake shore north of the park is 0. The y-coordinate of the lake shore north of the park is 2.
@@ -3974,7 +4020,7 @@ To teleport the player:
 
 Instead of answering something that when the group of lizard people is in the location:
 	if cursed word is "" or cursed word is not the topic understood and the location is the old root cellar:
-		say "The lizard people seem to find your words amusing. They hiss, creating a strange cloud of thick vapor. Faraji feels light-headed and disoriented. When the vapor clears, they are somewhere else...";
+		say "The lizard people seem to find your words amusing. They hiss, creating a strange cloud of thick vapor. Faraji feels light-headed and disoriented. When the vapor clears, Faraji is somewhere else...";
 		teleport the player;
 	otherwise if the location is in ELR:
 		say "At your word, the lizard people scream and hiss, creating a strange cloud of thick vapor. When the vapor clears, they are gone, but they have left something behind. There is [a shiny astral resonator] on the ground![run paragraph on]";

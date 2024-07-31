@@ -35,7 +35,7 @@ The opposite of backeast is forthwest.
 The opposite of backsouth is forthnorth.
 The opposite of backwest is fortheast.
 
-Coordinates of Pillar is always {7, 8, 9}.
+Coordinates of Pillar is always {10, 4, 9}.
 
 Hyperplane Coords is a list of numbers that varies. Hyperplane Coords is initially {3, 4, -2}.
 
@@ -100,11 +100,11 @@ this is the room description astral passages rule:
 				let C be number of entries of directions;
 				say "[if C is 1]A s[otherwise]S[end if]trange sparkly white [regarding C]passage[if C > 1]s[end if] [branch] off in [if C is 1]an impossible direction[otherwise]impossible directions[end if] from here.
 				
-				[Player's surname] [have] discovered [if C is 1]a hyperspatial tunnel[otherwise]hyperspatial tunnels[end if]! [regarding C][They] [lead] in the hyperspatial [regarding C]direction[if C > 1]s[end if] of [directions]."; 
+				[Player's surname] [have] discovered [if C is 1]a stark white hyperspatial tunnel[otherwise]some hyperspatial tunnels[end if]! [regarding C][They] [lead] in the hyperspatial [regarding C]direction[if C > 1]s[end if] of [directions]."; 
 				say "For help regarding hyperspace, enter [bold type]HELP HYPERSPACE[roman type].";
 			otherwise:
 				let C be number of entries of directions;
-				say "[if C is 1]A hyperspatial tunnel[otherwise]Hyperspatial tunnels[end if] [regarding C][lead] in the [regarding C]direction[if C > 1]s[end if] of [directions]."; 
+				say "[if C is 1]A stark white hyperspatial tunnel[otherwise]Hyperspatial tunnels[end if] [regarding C][lead] in the [regarding C]direction[if C > 1]s[end if] of [directions]."; 
 				
 Every turn:
 	now darkness witnessed is false;
@@ -160,7 +160,7 @@ It is backwest of it.
 It is back of it. It is in Hyperspace.
 "[If featureless hyperplane is not visited][We] [rub] [our] eyes as [we] [try] to take in [our] surroundings. [end if][if Descending Stair is not in Featureless Hyperplane]In addition to the usual directions of north and south and east and west, two new directions exist here: [italic type]back[roman type] and [italic type]forth[roman type]. As a result, the 'surface' [we're] standing on is in fact a three-dimensional hyperplane. Up and down still exist, and there is gravity, apparently.
 
-As far as one can see, the hyperplane extends infinitely in all six directions[otherwise]It is made of the same gossamer, questionably real stuff as the ground, the pillar, and the readouts. Faraji can't see past the first turn of the stairs, unfortunately[end if]."
+As far as one can see, the hyperplane extends infinitely in all six directions[otherwise]It is made of the same stark white, questionably real stuff as the ground, the pillar, and the mystic compass. Faraji can't see past the first turn of the stairs, unfortunately[end if]."
 
 The snarky remark is "This is the most featureless hyperplane I've ever seen."
 
@@ -264,10 +264,10 @@ Before going a direction (called D) from Featureless Hyperplane:
 		increment entry 3 of new hyperplane coords;
 	if old hyperplane coords is Coordinates of Pillar:
 		say "Faraji leaves the ethereal pillar behind.";
-	otherwise if old hyperplane coords is Staircase Coords:
+	otherwise if old hyperplane coords is Staircase Coords and D is not down:
 		say "Faraji leaves the descending stair behind.";
 	otherwise if old hyperplane coords is Staircase Coords and D is down:
-		say "Faraji descends the staircase.";
+		do nothing;
 	otherwise if new hyperplane coords is Staircase Coords:
 		say "Faraji trudges across the trackless hyperplane, and ends up somewhere else, not completely the same.";
 	otherwise if new hyperplane coords is Coordinates of Pillar:
@@ -427,7 +427,7 @@ To say symbol for (N - a number):
 	if N is 4:
 		say "b";
 	if N is -1:
-		say "⌂";
+		say "#";
 	
 To decide which real number is the distance:
 	let nsdiff be entry 1 of Coordinates of Pillar minus entry 1 of Hyperplane Coords + 0.1;
@@ -499,9 +499,9 @@ Rule for writing a paragraph about Maggie when field office reception is not vis
 	say "A young woman is sitting at the desk. Apparently doing nothing, she looks up from her desk and smiles at Faraji. 'Hello, I'm Maggie,' she says. 'Welcome to the BOSH Hyperspace Field Office, [agent]. Did you have a nice time getting here? I hope so. I helped design the lobby.' She resumes staring at the opposite wall.";
 	now Maggie is met;
 
-hyperspace-subject is a subject. It is privately-named. The printed name is "hyperspace". Understand "hyperspace" as hyperspace-subject.
-portal-to-the-past is a subject. It is privately-named. The printed name is "portal to the past". Understand "portal to the past", "past portal" as portal-to-the-past.
-auxiliary-portal is a subject. It is privately-named. The printed name is "auxiliary portal". Understand "auxiliary portal/--" as auxiliary-portal.
+hyperspace-subject is a subject. It is privately-named. The printed name is "hyperspace in general". Understand "hyperspace/in/general" as hyperspace-subject.
+portal-to-the-past is a subject. It is privately-named. The printed name is "portal to the past". Understand "portal/to/the/past" as portal-to-the-past.
+auxiliary-portal is a subject. It is privately-named. The printed name is "auxiliary portal". Understand "auxiliary/portal" as auxiliary-portal.
 doris-subject is a subject. It is privately-named. The printed name is "Doris". Understand "Doris" as doris-subject.
 christy-subject is a subject. It is privately-named. The printed name is "Christy". Understand "Christy" as christy-subject.
 minerva-subject is a subject. It is privately-named. The printed name is "Minerva". Understand "Minerva" as minerva-subject.
@@ -515,7 +515,7 @@ Table of Quiz Topics (continued)
 subject (a thing)	interlocutor (a person)	comment (a text)	reply (a text)
 reception desk	Maggie	"'Nice desk.'"	"'Thank you. It's a desk.'"
 control panel	Maggie	"'What's this?'"	"'It's a control panel. It controls things. You're not allowed to touch it.'"
-hyperspace-subject	Maggie	"[We] [ask], 'What is hyperspace?'"	"Maggie looks up without seeming to focus on anything in particular. 'It's the place that isn't quite is. It's where we are now. It's where we go when we leave here.'"
+hyperspace-subject	Maggie	"Faraji asks, 'What is hyperspace?'"	"Maggie looks up without seeming to focus on anything in particular. 'It's the place that isn't quite is. It's where we are now. It's where we go when we leave here.'"
 doris-subject	Maggie	"'Who is Doris?'"	"'Doris is the field office chief,' Maggie says dreamily. 'He's a riddle, wrapped in bacon, inside an egg. You can find him in his office, west of here.'"
 christy-subject	Maggie	"'Who is Christy?'"	"'Christy is the field office researcher. They're very good at what they do, if the way they do it is what you need. You can find them in their office, west and then south.'"
 minerva-subject	Maggie	"'Who is Minerva?'"	"'Minerva is our only field agent. She also has the only coffee maker in the office, which is a good thing, because I don't drink coffee. You can find her in her office, west and north.'"
@@ -575,15 +575,15 @@ Maggie interjection	used
 
 Book 2 - Hallway
 
-the field office hallway is west of field office reception. It is in field office area. "The hallway is white and gleaming. Doorways lead north, south, east, west, forth, and back."
+the field office hallway is west of field office reception. It is in field office area. "The hallway is white and gleaming. Doorways lead north to Minerva's office, south to Christy's office, east to the front office, west to Doris's office, forth to the portal to the past, and back to the auxiliary portal."
 Understand "hall/way/corridor" as field office hallway.
 
 
 Book 3 - Minerva's Office
 
-Minerva's office is a leavable room. It is north of the field office hallway. It is in field office area. "The office is white and gleaming. A mahogany desk is in the middle of the room. A coffee maker sits on the desk." It has egress south.
+Minerva's office is a leavable room. It is north of the field office hallway. It is in field office area. "The office is white and gleaming. A mahogany desk is in the middle of the room. A coffee maker sits on the desk. The way out is to the south." It has egress south.
 
-Minerva is a woman in Minerva's office. The initial appearance is "Minerva is sitting at her desk, typing away on her computer." 
+Minerva is a woman in Minerva's office. The initial appearance is "Minerva, a field agent, is sitting at her desk, typing away on her computer. She is dressed very professionally in a white blouse and black slacks." 
 The description is "Minerva exudes an air of competence and no-nonsense business. Her expression is serious and focused."
 
 A mahogany desk is in Minerva's office. It is scenery. The description is "The desk holds some neatly-stacked papers, a few books, and a coffee maker.".
@@ -614,13 +614,17 @@ After printing the name of a tome:
 	say "[roman type]";
 	make no decision.
 
-Advanced Temporal Mechanics is a tome on the mahogany desk. The description is "A thick, technical tome with a title that makes Faraji's head hurt."
+Advanced Temporal Mechanics is a tome on the mahogany desk. The description is "A thick, technical tome with a title that makes Faraji's head hurt. One passage reads:
+
+Upon the resolution of a non-Moebius temporal loop, the involute of the temporal vector field is equal to the sum of the involutes of the temporal vector field and the spatial vector field. This is a fundamental principle of temporal mechanics, and it is the basis for the resolution of the paradoxes that arise from the interaction of the two fields. The resulting outflux of chronon particles is a side effect of the resolution of the paradoxes, and it is a necessary part of the process of temporal loop resolution. The precise equations describing this process are as follows: [bracket]incomprehensible mathematical symbols[close bracket]."
 It is owned by Minerva. It is loanable.
 
-Theoretical Hyperspace is a tome on the mahogany desk. The description is "A graduate text in something or other."
+Theoretical Hyperspace is a tome on the mahogany desk. The description is "A graduate text in something or other. One of the more readable passages goes:
+
+The hyperspace manifold is a complex, multidimensional space that is not directly observable. It is representable as the boundary of the non-singular subsurface of the degenerate five-dimensional Gorochev hypersphere. As such it has a dimension of 4 almost everywhere, but it is not a smooth manifold. The hyperspace manifold is the basis for the theory of hyperspace, and it is the foundation of the field of hyperspace physics. The precise equations describing the hyperspace manifold are as follows: [bracket]incomprehensible mathematical symbols[close bracket]."
 It is owned by Minerva. It is loanable.
 
-White Light is a tome on the mahogany desk. The description is "A battered trade paperback by someone named Rudy Rucker."
+White Light is a tome on the mahogany desk. The description is "A battered trade paperback by someone named Rudy Rucker. Its text is protected by copyright."
 It is owned by Minerva. It is loanable.
 
 The borrowed book-minerva is an object that varies. The borrowed book-minerva is initially nothing.
@@ -761,7 +765,7 @@ about coffee is a questioning quip.
 	The printed name is "for a cup of coffee".
 	Understand "can i have a/-- coffee" as about coffee.
 	Understand "for/a/cup/of/coffee" as about coffee.
-	The comment is "[We] [say], 'I could use a coffee.'".
+	The comment is "Faraji says, 'I could use a coffee.'".
 	The reply is "Minerva looks up from her computer. 'Sure, help yourself.'".
 	it quip-supplies Minerva.
 	It is repeatable.
@@ -770,7 +774,7 @@ about coffee is a questioning quip.
 for-a-screwdriver-minerva is a questioning quip.
 	It is privately-named. The printed name is "for a screwdriver". [The true-name is "for-a-screwdriver-clerk".] Understand "for/a/screwdriver" as for-a-screwdriver-minerva.
 	It mentions the screwdriver.
-	The comment is "[We] [ask], 'Would you happen to have a screwdriver I could borrow?'".
+	The comment is "Faraji asks, 'Would you happen to have a screwdriver I could borrow?'".
 	The reply is "'No.'".
 	It quip-supplies Minerva.
 	
@@ -818,7 +822,7 @@ Instead of discussing about coffee when the cup of coffee is not off-stage:
 To pour is a verb.
 
 After discussing about coffee:
-	say "[reset LPR][We] [pour] [ourselves] a cup of coffee in a styrofoam cup from the coffee maker.";
+	say "[reset LPR][We] [pour] [ourselves] a cup of coffee in a styrofoam cup.";
 	now the player carries the cup of coffee;
 	now the hotness of the cup of coffee is 30;
 
@@ -897,7 +901,7 @@ Book 5 - Christy's Office
 
 Christy's office is a leavable room. It is south of the field office hallway. It is in field office area. "Christy has taken the initiative to paint their office a bright, cheerful orange. A large desk is in the middle of the room." It has egress north.
 
-Christy is a nonbinary in Christy's office. The initial appearance is "Christy is sitting at the desk, drawing in a sketchbook." The description is "With their short hair and wide eyes, Christy looks a bit like a lemur. They're wearing a sharp brown suit."
+Christy is a nonbinary in Christy's office. The initial appearance is "Christy, the field office researcher, is sitting at the desk, drawing in a sketchbook." The description is "With their short hair and wide eyes, Christy looks a bit like a lemur. They're wearing a sharp brown suit."
 
 Christy's desk is a scenery supporter in Christy's office. The description is "A sleek modern desk, it holds [list of things on Christy's desk with indefinite articles]." 
 
@@ -1091,7 +1095,7 @@ for-a-screwdriver-doris is a questioning quip.
 	The printed name is "for a screwdriver".
 	Understand "for/a/screwdriver" as for-a-screwdriver-doris.
 	It mentions the screwdriver.
-	The comment is "[We] [ask], 'Do you have a screwdriver?'".
+	The comment is "Faraji asks, 'Do you have a screwdriver?'".
 	The reply is "'No, I don't have a screwdriver. Do I look like I do?'".
 	it quip-supplies Doris.
 	
@@ -1102,13 +1106,13 @@ An availability rule for for-a-screwdriver-doris:
 who-are-you-doris is a questioning quip.
 	The printed name is "who he is".
 	Understand "who", "who are you", "who you are", "who is he", "who he is" as who-are-you-doris.
-	The comment is "[We] [ask] 'Who are you?'".
+	The comment is "Faraji asks, 'Who are you?'".
 	The reply is "He looks taken aback for a moment, then recovers his composure. 'Ah yes, introductions. I'm Doris, chief of the hyperspatial field office of the Bureau.'".
 	It quip-supplies Doris.
 	It stocks Doris.
 	
 about his name is a questioning quip.
-	The comment is "[We] [say], 'Tell me about your name.'".
+	The comment is "Faraji says, 'Tell me about your name.'".
 	The reply is "'None of your business,' [Doris] replies.".
 	It quip-supplies Doris.
 	It follows who-are-you-doris.
@@ -1116,14 +1120,14 @@ about his name is a questioning quip.
 where-is-this-hyperspace is a questioning quip.
 	The printed name is "where we are".
 	Understand "where", "where are we", "where we are", "where am i", "where i am", "where is this", "where this is" as where-is-this-hyperspace.
-	The comment is "[We] [look] around and [ask], 'Where are we? What is this place?'".
+	The comment is "Faraji looks around and asks, 'Where are we? What is this place?'".
 	The reply is "[Doris] [answer], 'You're in the hyperspatial field office of the Bureau of Strange Happenings. But I guess that doesn't exactly clear things up for you. Practically, your office is a branch of ours, but since you have the official recognition of the US government -- for now -- you get the glory. Besides, due to the nature of our work, we prefer to remain underground, so to speak. How's Klimp, by the way? Ah, we had some good times. But you know what they say -- what happens in Pompeii, stays in Pompeii.'".
 	It quip-supplies Doris.
 	It stocks Doris.
 
 how to get home is a questioning quip.
 	Understand "how can i/we/they/she/he get home" as how to get home.
-	The comment is "[We] [ask], 'Just how can I get home from here?'".
+	The comment is "Faraji asks, 'Just how can I get home from here?'".
 	The reply is "'Go ask Maggie; she can help you.'".
 	It quip-supplies Doris.
 	It stocks Doris.
@@ -1136,7 +1140,7 @@ klimp-is-fine is an informative quip.
 	It mentions Chief Huffton Klimp.
 	The printed name is "Klimp is fine".
 	Understand "Klimp/he is fine", "about klimp" as klimp-is-fine.
-	The comment is "[We] [say], 'He's just fine.'".
+	The comment is "Faraji says, 'He's just fine.'".
 	The reply is "'Great! Be sure to say hi for me.'".
 	It quip-supplies Doris.
 	It follows where-is-this-hyperspace.
@@ -1151,7 +1155,7 @@ we-don't-have-it is an informative quip.
 	It mentions the thumb drive.
 	The printed name is "[force pronoun for player][we] [don't] have it".
 	Understand "i/he/she/they/we/have/doesn't/don't/have/it/thumb/drive" as we-don't-have-it.
-	The comment is "[We] [shake] [our] head. 'Sorry, no.'".
+	The comment is "Faraji shakes their head. 'Sorry, no.'".
 	The reply is "'Well, you'll just have to go back and get it, won't you? We can't be fooling around when the fate of the timeline is at stake!' Doris says.".
 	it quip-supplies Doris.
 	
@@ -1161,7 +1165,7 @@ An availability rule for we-don't-have-it:
 
 what thumb drive is a questioning quip. 
 	It mentions the thumb drive.
-	The comment is "[We] [look] quizzical. 'What thumb drive?'".
+	The comment is "Faraji looks at Doris quizzically. 'What thumb drive?'".
 	The reply is "'Huh. Thought you would have found it by now. I'm almost certain it's in your Swamp Park office. Go find it and bring it here.' Doris busies himself at his desk, pointedly ignoring you.".
 	it quip-supplies Doris.
 	
@@ -1185,7 +1189,7 @@ Instead of giving the thumb drive to Doris:
 show him the thumb drive is a performative quip. 
 	It is privately-named.
 	It mentions the thumb drive.
-	The comment is "[We] [answer], 'Yes, I have it.'".
+	The comment is "Faraji answers, 'Yes, I have it.'".
 	The reply is "'Fantastic! Hand it here.'".
 	it quip-supplies Doris.
 	It rules out what thumb drive.
@@ -1202,7 +1206,7 @@ After discussing show him the thumb drive:
 	queue Doris with hand over the thumb drive;
 
 hand over the thumb drive is a performative quip.
-	The comment is "[We] [give] the thumb drive to Doris.".
+	The comment is "Faraji gives the thumb drive to Doris.".
 	Understand "hand it over", "hand him the thumb/-- drive" as hand over the thumb drive.
 	The reply is "'Great, great.' He peruses the drive. 'We lost one of our New York agents -- a guy named Daniels -- to a slingshot effect that threw him far back in time. We're always monitoring for artifacts that are out of place or anachronistic to lead us to lost agents.
 	
@@ -1224,7 +1228,7 @@ After discussing hand over the thumb drive:
 	It follows hand over the thumb drive; ]
 
 about Savra is a questioning quip.
-	The comment is "'Senator Savra? What does he have to with anything?' [we] [ask].".
+	The comment is "'Senator Savra? What does he have to with anything?' Faraji asks.".
 	The reply is "[Doris] says, 'Tell me, Agent. Do you believe in aliens? That alien species have visited Earth?'".
 	it quip-supplies Doris.
 	It follows hand over the thumb drive;
@@ -1267,7 +1271,7 @@ what-is-a-lizard-man is a questioning quip.
 	It is privately-named.
 	The printed name is "what is a lizard man".
 	Understand "what/is/a/lizard/man" as what-is-a-lizard-man.
-	The comment is "[We] [look] incredulous. 'And just what is a lizard man?'".
+	The comment is "Faraji looks incredulous. 'And just what is a lizard man?'".
 	The reply is "'Just what it sounds like. It's a bipedal, intelligent reptilian creature. Strange people. Deathly allergic to rutabagas.'".
 	It quip-supplies Doris.
 	It follows yes-aliens.
@@ -1299,7 +1303,7 @@ Savra's not reptilian is an informative quip.
 
 about the mission is a questioning quip.
 	Understand "what about the/-- mission" as about the mission.
-	The comment is "[We] [say], 'What's the mission?'".
+	The comment is "Faraji says, 'What's the mission?'".
 	The reply is "Doris leans back in his chair. 'I believe we still have a chance to retrieve our lost agent -- the one that left the thumb drive. He says he was at an Onondaga holy place in the 14th century. Now we need to find out where that is. Fortunately, there's a book that can help. Unfortunately, I don't have it. Fortunately, you're here to go find it. Unfortunately, the name's gotten a bit jumbled in my head. I think it was something like [italic type]New Bikers of Troy[roman type]. Or something. I'm bad with things like titles and letters and keeping things the right way [']round. But you'll find it. I know you will. Come back here when you have.'".
 	it quip-supplies Doris.
 	It follows about the Dragon.
@@ -1317,14 +1321,14 @@ Check giving Tribes of New York to Doris when Doris's note is not off-stage:
 A tome can be delivered.
 
 After giving Tribes of New York to Doris when Tribes of New York is not delivered and about the mission is exhausted:
-	say "'Ah, [agent], you've found it! I knew you would. Now we can find out where Daniels is. Actually, Christy can help you with that. Go see her and give her this.' He scribbles a note and hands it to you. 'She'll know what to do.'";
+	say "'Ah, [agent], you've found it! I knew you would. Now we can find out where Daniels is. Actually, Christy can help you with that. Go see her and give her this.' He scribbles a note and hands it to you with the book. 'She'll know what to do.'";
 	now doris interjection timer is a random number between 2 and 5;
 	now the player carries Doris's note;
 	now Tribes of New York is delivered;
 	now the player carries the Tribes of New York;
 
 Instead of showing Tribes of New York to Doris when Tribes of New York is not delivered:
-	say "'Ah, [agent], you've found it! I knew you would. Now we can find out where Daniels is. Actually, Christy can help you with that. Go see her and give her this.' He scribbles a note and hands it to you. 'She'll know what to do.'";
+	say "'Ah, [agent], you've found it! I knew you would. Now we can find out where Daniels is. Actually, Christy can help you with that. Go see her and give her this.' He scribbles a note and hands it to you with the book. 'She'll know what to do.'";
 	now doris interjection timer is a random number between 2 and 5;
 	now the player carries Doris's note;
 	now Tribes of New York is delivered;
@@ -1345,7 +1349,7 @@ After giving Christy's note to Doris:
 
 about the Dragon is a questioning quip.
 	Understand "what about the/-- Dragon" as about the Dragon.
-	The comment is "[We] [say], 'Who is this [']Dragon[']?'"
+	The comment is "Faraji raises an eyebrow. 'Who is this [']Dragon[']?'"
 	The reply is "Doris brings his finger to his lips. 'Classified. Need to know only[if about the mission is not exhausted]. But we should be talking about the mission instead[end if].'".
 	it quip-supplies Doris.
 	It follows hand over the thumb drive;
@@ -1355,7 +1359,7 @@ about-time-travel is a questioning quip.
 	The printed name is "about time travel".
 	Understand "about/time/travel" as about-time-travel.
 	Understand "what about time travel" as about-time-travel.
-	The comment is "Disbelievingly, [we] [ask], 'Time travel? For real?'".
+	The comment is "Disbelievingly, Faraji asks, 'Time travel? For real?'".
 	The reply is "'Yes, yes,' [Doris] responds. 'Don't get too worked up over it. It gets old fast[if about the mission is not exhausted]. But now we need to talk about the mission[end if].'".
 	it quip-supplies Doris.
 	It follows hand over the thumb drive;
@@ -1537,7 +1541,9 @@ new-bikers-subject	Doris	"'What is the New Bikers of Troy?'"	"'It's a book. It's
 hyperspace-field-office-subject	Doris	"'What is the hyperspace field office?'"	"'It's here, and yet it's not here. But, no, actually, it is here. It's a very confusing concept.'"
 chief-huffton-klimp-subject	Doris	"'So you know Klimp?' Faraji asks."	"'Huffton is a great friend of mine. In some ways, he's the best friend I've ever had. In other ways, he's the worst enemy I've ever had. It's complicated.'"
 hyperspace-subject	Doris	"'What is hyperspace?'"	"'It's a place where time and space are a little more flexible. It's a good place to keep a field office.'"
-
+portal-to-the-past	Doris	"'What is the portal to the past?'"	"'It's how we get around. It's a very useful thing. Dreadfully expensive to maintain, though.'"
+auxiliary-portal	Doris	"'What is the auxiliary portal?'"	"'It's our backup. Not as flexible as the main portal, but it gets the job done.'"
+Onondaga-subject	Doris	"'Who are the Onondaga?'"	"'They're a tribe of Native Americans. From upstate New York. Klimp has some strange ideas about them.'"
 
 
 Doris interjection timer is a number that varies. Doris interjection timer is 5.
@@ -1584,7 +1590,7 @@ Book 2 - Maggie
 for-a-screwdriver-maggie is a questioning quip.
 	It is privately-named. The printed name is "for a screwdriver". [The true-name is "for-a-screwdriver-clerk".] Understand "for/a/screwdriver" as for-a-screwdriver-maggie.
 	It mentions the screwdriver.
-	The comment is "[We] [ask], 'Would you happen to have a screwdriver I could borrow?'".
+	The comment is "Faraji asks, 'Would you happen to have a screwdriver I could borrow?'".
 	The reply is "'Oh, I'm sorry, I don't have a screwdriver. Do you?'".
 	It quip-supplies maggie.
 	
@@ -1595,8 +1601,8 @@ An availability rule for for-a-screwdriver-maggie:
 how-to-get-home-maggie is a questioning quip.
 	The printed name is "how to get home".
 	Understand "how can/do i/we/they/she/he get home" as how-to-get-home-maggie.
-	Understand "how to get home" as how-to-get-home-maggie.
-	The comment is "[We] [ask], 'How can I get home from here?'".
+	Understand "how/to/get/home" as how-to-get-home-maggie.
+	The comment is "Faraji asks, 'How can I get home from here?'".
 
 	The reply is "Maggie snaps out of her reverie. 'Oh, you're ready to go? I'll activate the auxiliary portal for you' She types rapidly on her control panel, then says 'It's all ready -- go west down the hallway and turn to the back into Portal Room 2.'"
 	
@@ -1697,7 +1703,7 @@ Christy interjection	used
 for-a-screwdriver-christy is a questioning quip.
 	It is privately-named. The printed name is "for a screwdriver". [The true-name is "for-a-screwdriver-clerk".] Understand "for/a/screwdriver" as for-a-screwdriver-christy.
 	It mentions the screwdriver.
-	The comment is "[We] [ask], 'Would you happen to have a screwdriver I could borrow?'".
+	The comment is "Faraji asks, 'Would you happen to have a screwdriver I could borrow?'".
 	The reply is "'Yes, my pencil is a screwdriver. Ha. Ha. I'm working here.'".
 	It quip-supplies Christy.
 	

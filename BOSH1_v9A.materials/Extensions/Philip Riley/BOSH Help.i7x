@@ -16,7 +16,7 @@ After taking inventory while in the Help Area for the first time:
 	if the player's command matches the text "inventory", case insensitively:
 		say "You could also just type I to take inventory.";
 
-The Bureau of Special Help is a room. "It is bare save for a bookshelf and a button on the wall marked 'Exit'. Faraji can go east or north from here."
+The Bureau of Special Help is a room. "It is bare save for a bookshelf and a button on the wall marked 'Exit'. Faraji can go east from here. There is also [if the living room door is open]an open[otherwise]a closed[end if] door to the north."
 
 The tutorial message is "You can type EXAMINE BOOKSHELF to see what's on the shelf, or PUSH BUTTON to leave help. You can also type a direction (like EAST) to move around. Type LOOK to repeat the description of the room"
 
@@ -138,15 +138,9 @@ The description is "This book will help you learn some advanced grammar (and oth
 
 BOSH Game Book is a thing. It is on the Help Shelf. The printed name is "[italic type]BOSH Game Book[roman type]". Understand "BOSH/game/book/gamebook" as BOSH Game Book.
 
-The description is "The game you are playing is 'Bureau of Strange Happenings', or BOSH for short. It is a text adventure game, a type of game where you interact with a world made of text. In BOSH, you play the role of Agent Faraji, a detective investigating strange occurrences in the United States and its territories. As Agent Faraji, you will travel to different locations, talk to characters, and solve puzzles to uncover the truth behind these strange happenings.
+The description is "The game you are playing is 'Bureau of Strange Happenings', or BOSH for short. It is a text adventure game, a type of game where you interact with a world made of text. In BOSH, you play the role of Agent Faraji, investigating strange occurrences in the United States and its territories. As Agent Faraji, you will travel to different locations, talk to characters, and solve puzzles to uncover the truth behind these strange happenings.
 
-Some notes specific to BOSH:
-
-1. The HINTS command will give you a list of available hint topics. You can then type HINT followed by the topic you want a hint on. Note that the available hints will change depending on where you are in the game. The HINTS command will bold-face the topics that have new hints available.
-
-2. You will automatically talk to characters when you enter a room with them. You can type ASK character ABOUT topic to ask a character about a particular topic. Note that not all characters will respond to all topics. The characters do tend to know about things in their immediate vicinity and within their areas of expertise.
-
-3. There are also a lot of books in the game, many of which are readable.".
+For some helpful tips for BOSH, type ABOUT."
 
 
 The help-wardrobe is a room.
@@ -235,7 +229,7 @@ The Observation Room is east of the Bureau of Special Help. "This small white ro
 A comfortable-looking viewing couch dominates the center of the observation room. Exits lead north and west."
 
 The Observation Room has a room called the window contents. The window contents is the fake-lake.
-The tutorial message is "[if the player is not on the comfortable viewing couch]You can type LOOK to repeat the description of the room. You can also EXAMINE an object to get a closer look at it. Or you can SIT ON THE COUCH[otherwise]You can STAND UP from the couch[end if]."
+The tutorial message is "[if the player is not on the comfortable viewing couch]You can type LOOK to repeat the description of the room. You can also EXAMINE an object to get a closer look at it. Or you can SIT ON THE COUCH[otherwise]You can STAND UP from the couch[end if]"
 
 The comfortable viewing couch is an enterable scenery supporter in the Observation Room. It is exposed. The description is "The couch is soft and comfortable." Understand "comfortable-looking/sofa/seat/seating" as the comfortable viewing couch.
 
@@ -326,7 +320,7 @@ Understand "steeple" as the observation window when the window contents of the o
 To say window description:
 	say ". Through the window you can see [description of the window contents of the Observation Room]"
 
-The observation window is a scenery transparent closed openable container in the Observation Room. Understand "view" as the observation window.
+The observation window is a scenery transparent closed openable container in the Observation Room. Understand "view", "viewing", "screen" as the observation window.
 
 Instead of opening the observation window:
 	say "Faraji can't open the window. It's just for looking through.";
@@ -453,24 +447,36 @@ After discussing Doctor Helpful for the book:
 	now the player carries Advanced Adventuring;
 	now Doctor Helpful for the book is not activated.
 
+Instead of giving something to Doctor Helpful:
+	say "The Doctor politely declines [the noun]. 'I don't need it, but thank you for offering.'"
+
+
+
 flowers-subject is a subject. It is privately-named. The printed name is "flowers". Understand "flowers/bloom/blooms" as flowers-subject.
 adventuring-subject is a subject. It is privately-named. The printed name is "adventuring". Understand "adventure/adventuring" as adventuring.
 commands-subject is a subject. It is privately-named. The printed name is "commands". Understand "commands/command" as commands-subject.
 elderberry juice is a subject.
 nouns are a subject.
 verbs-subject is a subject. It is privately-named. The printed name is "verbs". Understand "verbs/verb" as verbs-subject.
-Observation-Room-subject is a subject. It is privately-named. The printed name is "observation room". Understand "observation/room/window" as Observation-Room-subject.
+Observation-Room-subject is a subject. It is privately-named. The printed name is "observation room". Understand "observation/room/window/viewing/screen/view" as Observation-Room-subject.
 ornamental-garden-subject is a subject. It is privately-named. The printed name is "ornamental garden". Understand "ornamental/garden/gardens" as ornamental-garden-subject.
 Great-aunt Gertrude is a subject. Understand "great-aunt/gertrude/great/aunt" as Great-aunt Gertrude. The printed name is "Great-aunt Gertrude".
 living-room-subject is a subject. It is privately-named. The printed name is "living room". Understand "living/room" as living-room-subject.
 help-subject is a subject. It is privately-named. The printed name is "help". Understand "help" as help-subject.
 Bureau-of-Special-Help-subject is a subject. It is privately-named. The printed name is "Bureau of Special Help". Understand "bureau/special/help" as Bureau-of-Special-Help-subject.
+doctor-books is a subject. It is privately-named. The printed name is "doctor's books". Understand "doctor/doctor's/doctors/books" as doctor-books.
 
 Does the player mean quizzing someone about Bureau-of-Special-Help-subject when the location is not in Help Area:
 	it is very unlikely.
 
 Interactive-Fiction is a subject. It is privately-named. Understand "interactive/fiction" as Interactive-Fiction. The printed name is "Interactive Fiction".
 parser-based-games is a subject. It is privately-named. Understand "parser-based/games/parser/based" as parser-based-games. The printed name is "parser-based games".
+
+To say doctor-book-response:
+	if Doctor Helpful carries Advanced Adventuring:
+		say "'I've written a whole slew of books on the subject of adventuring. You should read them; they're in the room south of here. Right now I'm carrying one of them,' Doctor Helpful replies.";
+	otherwise:
+		say "'I've written a whole slew of books on the subject of adventuring. You should read them; they're in the room south of here,' Doctor Helpful replies.".
 
 Table of Quiz Topics (continued)
 subject (a thing)	interlocutor (a person)	comment (a text)	reply (a text)
@@ -503,6 +509,8 @@ help-subject	Doctor Helpful		"Faraji says, 'Can you help me?'"	"'Of course, Agen
 Bureau-of-Special-Help-subject	Doctor Helpful		"Faraji says, 'What can you tell me about the Bureau of Special Help?'"	"'We're here to help you, Agent Faraji. That's what we do,' Doctor Helpful replies."
 Interactive-Fiction	Doctor Helpful		"Faraji says, 'What can you tell me about interactive fiction?'"	"'Ah, interactive fiction. A noble pursuit. There are, broadly speaking, two kinds of interactive fiction: parser-based and choice-based. Parser-based games, like this one, allow you to type commands to interact with the world. Choice-based games, on the other hand, present you with a series of choices to make. Both are valid forms of interactive fiction, but I prefer parser-based games myself,' Doctor Helpful replies."
 parser-based-games	Doctor Helpful	"Faraji says, 'How much do you know about parser-based games?'"	"'I know quite a bit about them, actually. Parser-based games, like this one, allow you to type commands to interact with the world. They're a bit more complex than choice-based games, but they're also more flexible and immersive. I've written a whole slew of books on the subject, you know,' Doctor Helpful replies."
+living room key	Doctor Helpful	"Faraji says, 'What can you tell me about this key?'"	"'Ah, that's the key to the living room. If you haven't yet, try locking or unlocking the door with it,' Doctor Helpful replies."
+doctor-books	Doctor Helpful	"Faraji says, 'What can you tell me about your books?'"	"[doctor-book-response]"
 
 Before quizzing Doctor Helpful about adventuring-subject:
 	if Doctor Helpful carries Advanced Adventuring:
@@ -516,11 +524,11 @@ After quizzing Doctor Helpful about flowers-subject:
 	now the yellow flower is nowhere;
 
 Instead of giving Advanced Adventuring to Doctor Helpful:
-	say "Doctor Helpful accepts the book back with a smile. 'Thank you, Faraji. I hope you found it helpful.'";
+	say "Doctor Helpful accepts the book back with a smile. 'Thank you, Larch. I hope you found it helpful.'";
 	now Doctor Helpful carries Advanced Adventuring;
 
 Instead of giving the yellow flower to Doctor Helpful:
-	say "Doctor Helpful accepts the flower with a smile. 'Thank you, Faraji. It's lovely.'";
+	say "Doctor Helpful accepts the flower with a smile. 'Thank you, Larch. It's lovely.'";
 	now Doctor Helpful carries the yellow flower;
 
 BOSH Help ends here.

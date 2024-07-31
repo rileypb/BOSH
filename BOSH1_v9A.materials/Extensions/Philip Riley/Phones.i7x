@@ -125,7 +125,7 @@ Check an actor calling someone (called the callee) on something (called the call
 Understand the command "answer" as something new.
 
 Answering is an action applying to one thing. Understand "Answer [phone]" as answering.
-PIcking up is an action applying to one thing.
+Picking up is an action applying to one thing.
 Ending a call is an action applying to nothing. Understand "Hang up" as ending a call.
 Hanging up is an action applying to one thing.
 Signing off with is an action applying to one visible thing.

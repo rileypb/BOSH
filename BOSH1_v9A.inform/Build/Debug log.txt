@@ -1,5 +1,5 @@
 Debugging log of Inform 7
-Inform called as: /Applications/Inform.app_old.app/Contents/MacOS/ni -internal /Applications/Inform.app_old.app/Contents/Resources/Internal -external /Users/rileypb/Library/Inform -project /Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform -format=ulx
+Inform called as: ni -noprogress -internal /Applications/Inform.app_old.app/Contents/Resources/Internal/ -external /Users/rileypb/Library/Inform -project BOSH1_v9A.inform/
 Found language bundle 'German' (built in)
 Found language bundle 'Italian' (built in)
 Found language bundle 'English' (built in)
@@ -14,14 +14,14 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 35532 words long.
+I've now read your source text, which is 37060 words long.
 
 
 -----------------------------------------------------
 Phase II ... Semantic analysis Ia
 -----------------------------------------------------
 
-I've also read Standard Rules by Graham Nelson, which is 41225 words long.
+I've also read Standard Rules by Graham Nelson, which is 41348 words long.
 I've also read English Language by Graham Nelson, which is 2297 words long.
 I've also read Epistemology by Eric Eve, which is 1505 words long.
 I've also read Conversation Framework by Eric Eve, which is 5321 words long.
@@ -56,13 +56,13 @@ I've also read Snarky Remarks by Philip Riley, which is 235 words long.
 I've also read Followup Questions by Philip Riley, which is 248 words long.
 I've also read Scenery Supporters by Philip Riley, which is 179 words long.
 I've also read Simple Conversation by Philip Riley, which is 2401 words long.
-I've also read Hyperspace by Philip Riley, which is 17300 words long.
+I've also read Hyperspace by Philip Riley, which is 17627 words long.
 I've also read BOSH Facts by Philip Riley, which is 193 words long.
-I've also read Swamp Park by Philip Riley, which is 8746 words long.
-I've also read Margaret by Philip Riley, which is 2618 words long.
-I've also read Enigma Lake by Philip Riley, which is 38113 words long.
+I've also read Swamp Park by Philip Riley, which is 8777 words long.
+I've also read Margaret by Philip Riley, which is 2630 words long.
+I've also read Enigma Lake by Philip Riley, which is 38417 words long.
 I've also read I Can Dig It by Philip Riley, which is 77 words long.
-I've also read BOSH Help by Philip Riley, which is 6707 words long.
+I've also read BOSH Help by Philip Riley, which is 6761 words long.
 I've also read Overlook by Philip Riley, which is 763 words long.
 I've also read Gender Options by Nathanael Nerode, which is 7679 words long.
 I've also read Make Test by Philip Riley, which is 288 words long.
@@ -80,11 +80,11 @@ I've also read Complex Listing by Emily Short, which is 3410 words long.
 I've also read Options Paragraph by Philip Riley, which is 183 words long.
 I've also read Door Varieties by Philip Riley, which is 299 words long.
 I've also read Exit Lister by Eric Eve, which is 3510 words long.
-I've also read Tutorial by Philip Riley, which is 114 words long.
+I've also read Tutorial by Philip Riley, which is 117 words long.
 I've also read Swimming by Philip Riley, which is 38 words long.
 I've also read Secret Doors by Gavin Lambert, which is 272 words long.
 I've also read Plugging by Philip Riley, which is 871 words long.
-I've also read Books by Philip Riley, which is 2475 words long.
+I've also read Books by Philip Riley, which is 2486 words long.
 I've also read Container Types by Philip Riley, which is 55 words long.
 I've also read Extension Cord by Philip Riley, which is 4159 words long.
 I've also read State Update by Philip Riley, which is 462 words long.
@@ -357,8 +357,8 @@ Providing for a total heap of 65536, given requirement of 46096
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 305 files written as streams.
-CPU time: 1402 centiseconds
+Total of 311 files written as streams.
+CPU time: 1423 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

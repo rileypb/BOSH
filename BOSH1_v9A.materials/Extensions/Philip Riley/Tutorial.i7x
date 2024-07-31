@@ -9,7 +9,7 @@ After examining a thing when the tutorial message of the noun is not "" (this is
 	say "[tutorial message of the noun].";
 	continue the action.
 
-For printing the locale description when the tutorial message of the location is not "" (this is the room-tutorial rule):
+After printing the locale description of a room when the tutorial message of the location is not "" (this is the room-tutorial rule):
 	let the domain be the parameter-object;
 	if the domain is a room:
 		say "[tutorial message of the location].[paragraph break]";

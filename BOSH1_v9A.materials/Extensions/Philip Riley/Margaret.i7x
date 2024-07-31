@@ -263,6 +263,7 @@ To initiate Margaret's box routine:
 	say "[Margaret] says, 'Hey, what are you doing with those boxes, [Agent]? You don't have to worry about that -- I'll get them.' [regarding Margaret][They] takes the flattened boxes from [us] and hustles off.";
 	now Margaret carries the margaret-flattened-boxes;
 	now the biff-flattened-boxes are in the room of stuff;
+	now Margaret interjection timer is a random number from 2 to 5;
 	if the current interlocutor is Margaret:
 		now the current interlocutor is nothing;
 	add behavior throw out boxes to margaret;

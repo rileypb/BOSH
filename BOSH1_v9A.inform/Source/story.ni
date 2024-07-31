@@ -104,18 +104,30 @@ A thing can be snarkable or unsnarkable. A thing is usually snarkable.
 A quip is usually snarkable.
 
 [Turning off snarky remarks due to bad review... boo hoo]
-[ the thing-snarking rule does nothing.
-the room-snarking rule does nothing. ]
+the thing-snarking rule does nothing.
+the room-snarking rule does nothing. 
 
 Crediting is an action out of world. Understand "credits" as crediting.
 
 Carry out crediting:
-	say "Many thanks to the following people for their help and support in the creation of this game:[line break]";
-	say "Many thanks to my great playtesters Max Fog, Mike Russo, Tabitha, Peter Gross, and Climbingstars.";
-	say "My wife, Laura, for understanding my need to spend hundreds of hours writing something that only a couple dozen people will ever play.";
-	say paragraph break;
+	say "[bold type]The Bureau of Strange Happenings[roman type] is a work of interactive fiction created with Inform 7. It was written by Phil Riley.[roman type][paragraph break]";
+	say "[bold type]Many thanks to the following people for their help and support:[roman type][line break]";
+	say "Playtesters Max Fog, Mike Russo, Tabitha, Peter Gross, and Climbingstars.";
+	say "My wife, Laura, for understanding my need to spend hundreds of hours writing something that only a couple dozen people will ever play, and for innumerable helpful suggestions.";
+	say line break;
+	say "[bold type]Third-party extensions used in this game:[roman type][line break]";
 	say the list of extension credits;
 
+Abouting is an action out of world. Understand "about" as abouting.
+
+Carry out abouting:
+	say "Here are a few commands and details particular to this game:[line break]";
+	say "- There is generally no need to TALK TO a character to initiate conversation. Upon entering a room, the game will automatically greet any character present.";
+	say "- Dialogue happens in two different ways: the game may suggest a topic to discuss, or you can ASK a character ABOUT a specific topic.";
+	say "- The game will automatically remember what you've discussed with each character. You can review these conversations by typing RECAP <character's name>.";
+	say "- Typing HINT by itself will list the currently available hint topics. Those in bold have new information. Typing HINT <topic> will provide a hint on that topic. You can also RECALL <hint topic> to review all hint text you've seen on that topic.";
+
+[ Understand "touch [something]" as touching. ]
 
 Volume 1 - The Game 
 
@@ -146,7 +158,7 @@ The current play mode is a play mode that varies. The current play mode is initi
 
 To print faraji bio:
 	say fixed letter spacing;
-	say "Larch Faraji (they/them): An agent of the Bureau of Strange Happenings. Dark hair, dark eyes, and a dark sense of humor. Specialized in the investigation of unexplained phenomena throughout the United States and its territories. Lead singer of the third wave neo-old-school punk band DC Trash. Liable to fits of sarcasm and cynicism. Dedicated to the Bureau's mission. Status: Potential threat.";
+	say "Larch Faraji (they/them): An agent of the Bureau of Strange Happenings. Dark hair, dark eyes, and a dark sense of humor. Specializes in the investigation of unexplained phenomena throughout the United States and its territories. Lead singer of the third wave neo-old-school punk band DC Trash. Liable to fits of sarcasm and cynicism. Dedicated to the Bureau's mission. Status: Potential threat.";
 	lb;
 	say "    -- Notes from Senate Investigation into BOSH, Senator S. Savra, Chair";
 	lb;
@@ -194,7 +206,7 @@ When play begins:
  
 To survey is a verb. To wrinkle is a verb.
 
-Intro Text is always "As an agent of the Bureau of Strange Happenings (BOSH), it is Agent [player's full name]'s job to investigate unexplained phenomena throughout the United States and its territories. Recently, however, business hasn't been good. Once a bustling office with a dozen Agents, the Bureau's been reduced to just three: [Player's surname], Moira Zin, and Chief Huffton Klimp. The Bureau's expansive and well-appointed office suite was taken over by the State Department Book Club, and now the agents are consigned to a tiny suite in a strip mall in the remote D.C. suburb of Swamp Park, Maryland. Today is move-in day at the bureau. 
+Intro Text is always "As an agent of the Bureau of Strange Happenings (BOSH), it is Agent [player's full name]'s job to investigate unexplained phenomena throughout the United States and its territories. Recently, however, business hasn't been good. Once a bustling office with a dozen Agents, the Bureau's been reduced to just three: [Player's surname], Moira Zin, and Chief Huffton Klimp. The Bureau's expansive and well-appointed office suite was taken over by the State Department Book Club, and now the agents have been consigned to a tiny suite in a strip mall in the remote D.C. suburb of Swamp Park, Maryland. Today is move-in day at the bureau. 
 	
 	We open on a decrepit strip mall just as an aging Hyundai pulls into the potholed parking lot. [agent] steps out of the car. They survey the area and wrinkle their nose.[paragraph break]".
 
@@ -430,9 +442,16 @@ Carry out flipping a device:
 	otherwise:
 		try switching on the noun;
 
+Instead of imploring someone for "money":
+	try quizzing the noun about money.
+
 [ After printing the name of something (called the item):
 	if the item is borrowable and the item is not borrowed:
 		say " (borrowable)"; ]
+
+After discussing something for the first time:
+	say "[bracket]You can 'RECAP [current interlocutor]' at any time to review what you've discussed with [the current interlocutor].[close bracket][line break]";
+	continue the action;
 
 Book 5 - Automatic greeting
 
@@ -483,7 +502,7 @@ Book 7 - Actions
 
 Chapter 1 - Knocking
 
-Knocking on is an action applying to one thing. Understand "knock on/-- [something]", "pound on/-- [something]", "rap on/-- [something]" as knocking on.
+Knocking on is an action applying to one thing. Understand "knock on/-- [something]", "pound on/-- [something]", "rap on/-- [something]", "bang on/-- [something]" as knocking on.
 
 Report knocking on something:
 	say "[We] [give] [the noun] a quick knock, but nothing happens.";
@@ -685,9 +704,16 @@ to borrow the skull is a questioning quip.
 	It quip-supplies Chief Huffton Klimp.
 	It is repeatable.
 	It is plausibility-once.
+
+After discussing to borrow the skull:
+	queue Chief Huffton Klimp with to borrow the skull;
 	
 After examining the juvenile sasquatch skull:
 	queue Chief Huffton Klimp with to borrow the skull;
+
+Before taking the juvenile sasquatch skull:
+	if Klimp owns the juvenile sasquatch skull:
+		queue Chief Huffton Klimp with to borrow the skull;
 
 to-borrow-the-lenses is a questioning quip. 
 	It is privately-named.
@@ -701,6 +727,10 @@ to-borrow-the-lenses is a questioning quip.
 After examining the pair of astral lenses:  
 	queue Chief Huffton Klimp with to-borrow-the-lenses;
 	[ activate the Table of Astral Lenses Hints; ]
+
+Before taking the pair of astral lenses:
+	if Klimp owns the pair of astral lenses:
+		queue Chief Huffton Klimp with to-borrow-the-lenses;
 	
 After discussing to-borrow-the-lenses:
 	now the player owns the pair of astral lenses;
@@ -929,6 +959,14 @@ Instead of switching off the green smartphone:
 
 Check calling someone on the green smartphone:
 	say "[The green smartphone] is out of batteries." instead;
+
+Dialing is an action applying to one carried thing. Understand "dial [something]" as dialing.
+
+Instead of dialing the green smartphone:
+	say "[We] [don't] have time to play with the phone. [We] [need] to get to the office." instead;
+
+Check dialing something:
+	say "[We] can't dial [the noun]." instead;
 	
 To decide is a verb.
 
@@ -1155,7 +1193,7 @@ There is a fluorescent light source in the front office called bfo-light.
 
 Understand "storefront" as the front office.
 
-The description of front office is "It's really a small storefront done up to resemble an office. A store sales counter serves as the [BOSH front desk], behind which are located [shelves of office supplies] and a row of drawers. There are also a [couch] and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a [coat rack]. [Photos] on the walls picture the Bureau in better days. A stack of used and empty [cardboard boxes] sits in one corner.
+The description of front office is "It's really a small storefront done up to resemble an office. A store sales counter functions as the [BOSH front desk], behind which are located [shelves of office supplies] and a row of drawers. There are also a [couch] and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a [coat rack]. [Photos] on the walls picture the Bureau in better days. A stack of used and empty [cardboard boxes] sits in one corner.
 
 The exit is to the east, while the office continues via a hallway to the west.".
 
@@ -1186,6 +1224,9 @@ The printed name is "copy of the [italic type]Washington Herald[roman type]".
 It is unsnarkable.
 
 The BOSH front desk is a scenery supporter in front office. Understand "store", "sales", "counter", "margaret's desk" as the BOSH front desk. The description is "The former sales counter now functions as a desk for the office manager (currently [Margaret])."
+
+After examining the BOSH front desk:
+	try looking behind the BOSH front desk;
 
 The shelves of office supplies are in front office. They are plural-named. They are scenery. "Pens, paper, nothing [we're] really concerned with now." Understand "row/of/drawers/pens/pen/pencils/pencil/paper/papers" as the shelves of office supplies.
 
@@ -1367,12 +1408,17 @@ The snarky remark of the armchair is "It's like a clown exploded."
 The mahogany side table is a thing in BOSH Chief's Office. It is scenery. "This is a nice piece, quite out of place in the BOSH offices. Flame mahogany with very pretty inlays."
 Understand "inlays" as the mahogany side table.
 
-The bookcase is a thing in BOSH Chief's Office. It is scenery. "The Chief's library boasts many interesting titles, from Alton Cherry's [italic type]Waiting for the Aliens[roman type] to Debi Bosworth's [italic type]My Travels in Time[roman type]. For the uninitiated, there is also a copy of [italic type]The Dictionary of Strangeness[roman type]." 
+The bookcase is a thing in BOSH Chief's Office. It is scenery. "The Chief's library boasts many interesting titles, from Alton Cherry's [italic type]Waiting for the Aliens[roman type] to Debi Bosworth's [italic type]My Travels in Time[roman type]. For the uninitiated, there is also a copy of [italic type]The Dictionary of Strangeness[roman type]. One might also be interested in [italic type]A Short History of BOSH[roman type]." 
 Understand "books/bookshelf/bookshelves", "book case", "book shelf", "book shelves" as bookcase.
 
 Waiting-for-the-Aliens is a thing in BOSH Chief's Office. It is privately-named. The printed name is "Waiting for the Aliens". It is scenery. Understand "Waiting/for/aliens/Alton/Cherry/book" as Waiting-for-the-Aliens. "Alton Cherry's [italic type]Waiting for the Aliens[roman type] is a classic of the genre. More a history of publicly-known material than an argument for or against the existence of aliens on earth, it is accessible to believers and non-believers alike."
  
 Travels in Time is a thing in BOSH Chief's Office. It is scenery. Understand "My Travels in Time" as Travels in Time. Understand "Debi/Bosworth/book" as Travels in Time. "Debi Bosworth's [italic type]My Travels in Time[roman type] is the account of Ms. Bosworth's alleged travels to the past and future. She is careful to point out that she has never known a man in a blue box."
+
+Short History of BOSH is a thing in BOSH Chief's Office. It is scenery. Understand "book" as Short History of BOSH. 
+"A Short History of BOSH is a slim volume detailing the Bureau's founding and history from its inception in 1947 to the present day. Chief Klimp has also added his own notes at the end, among which is the following passage:
+
+'Two years into my tenure saw the election of the stupidest man in government: Senator S. Savra. It's bad enough that no one knows what his first initial stands for, but he's also undeniably a tool of the aliens. He may even be an alien himself. In any case, he's made it his mission to defund the Bureau, and he's been very successful at it. I'm not sure how much longer we can keep the lights on. I'd lay odds that he's been to the Black Knight Satellite.'"
 
 The Dictionary of Strangeness is a thing in BOSH Chief's Office. It is scenery. Understand "book" as the Dictionary of Strangeness.
 "The Dictionary of Strangeness is a compendium of the weird and wonderful, from the Abominable Snowman to Zener Cards. Flipping through it, [we] [come] upon an entry:
@@ -1550,46 +1596,64 @@ after examining moira's bookshelves:
 No-Myth-After-All is a tome on Moira's bookshelves. It is owned by Moira Zin. It is loanable. 
 The printed name is "No Myth After All: A New Perspective on Atlantis".
 Understand "No/Myth/After/All/A/New/Perspective/on/Atlantis" as No-Myth-After-All.
-The description is "This is a book by the noted skeptic and investigator Niz Ariom. It's a comprehensive look at the evidence for and against the existence of the lost city of Atlantis. It's a bit dry, but it's a classic of the genre."
+The description is "This is a book by the noted skeptic and investigator Niz Ariom. It's a comprehensive look at the evidence for and against the existence of the lost city of Atlantis. It's a bit dry, but it's a classic of the genre. One of the more interesting passages reads:
+
+Perhaps the most compelling evidence for the existence of Atlantis is in the writings of the ancient Greek philosopher Plato. In his dialogues Timaeus and Critias, Plato describes a powerful and advanced civilization that existed 9,000 years before his time. He claims that this civilization was destroyed in a single day and night of misfortune, and that it sank into the ocean 'in front of the Pillars of Hercules'. Many have interpreted this to mean that Atlantis was a real place, and that it was destroyed in a cataclysmic event. However, others have argued that Plato's account is a work of fiction, and that Atlantis never existed at all. The debate continues to this day."
 [ It is borrowable. ]
 
 Twenty-great-theses is a tome on Moira's bookshelves. It is owned by Moira Zin. It is loanable.
 The printed name is "Twenty Great PhD Theses of the Twentieth Century". 
 Understand "Twenty/Great/PhD/Theses/of/the/Twentieth/20th/Century" as Twenty-great-theses.
-The description is "This is a collection of the most influential PhD theses of the last century. It's a bit of a slog, but it's a good reference for anyone interested in the history of science."
+The description is "This is a collection of the most influential PhD theses of the last century. It's a bit of a slog, but it's a good reference for anyone interested in the history of science. In the introduction, the editor Elizabeth Ardman writes, 'These theses, spanning the fields of physics, chemistry, biology, fine arts, philosophy, and the social sciences, represent the best of the best of twentieth-century scholarship. They are not a stimulating read, perhaps, but editing them has been a labor of love for me, and a valuable line on my CV as I seek tenure.'"
 [ It is borrowable. ]
 
 Anatomy of a Hoax is a tome on Moira's bookshelves. It is owned by Moira Zin. It is loanable.
 The printed name is "Anatomy of a Hoax: Writings on Modern Medicine's Greatest Myths".
 Understand "writings/on/modern/medicine's/greatest/myths" as Anatomy of a Hoax.
-The description is "A collection of essays debunking the most persistent myths about modern medicine; for example, the existence of the gall bladder."
+The description is "A collection of essays debunking the most persistent myths about modern medicine; for example, the existence of the gall bladder. From the chapter on eczema: 
+
+The simple truth is that, as our mothers told us, if we didn't scratch it, it wouldn't itch. The more we scratch, the more it itches. The more it itches, the more we scratch. It's a vicious cycle, but it's not a disease. It's a habit. And habits can be broken."
 [ It is borrowable. ]
 
 Tribes of New York is a tome on Moira's bookshelves. It is owned by Moira Zin. It is loanable.
-The description is "A look at the various Native American tribes of New York state, from the pre-Columbian era to the present day."
+The description is "A look at the various Native American tribes of New York state, from the pre-Columbian era to the present day. The chapter on the Onondaga tribe reads:
+
+The Onondaga tribe is one of the original five tribes of the Iroquois Confederacy. They are known for their longhouses, which can be up to 200 feet long, and for their traditional government, which is based on a system of clans. The Onondaga are also known for their traditional arts and crafts, such as beadwork, pottery, and basketry. There is no truth to the rumors that the ancient Onondaga consorted with lizard people."
 [ It is borrowable. ]
 
 Applied Speculation is a tome on Moira's bookshelves. It is owned by Moira Zin. It is loanable.
-The description is "A collection of essays on the application of speculative reasoning to the investigation of paranormal phenomena."
+The description is "A collection of essays on the application of speculative reasoning to the investigation of paranormal phenomena. The four principles of applied speculation are:
+
+1. The principle of extravagance: The more complex the explanation, the more compelling it is.
+2. The principle of plausibility: The more plausible the explanation, the more likely it is to be a hoax perpetuated by the government (or a cabal of international elites).
+3. The principle of photographic evidence: The more blurry the photograph, the more likely it is to be genuine.
+4. The principle of eyewitness testimony: Eyewitnesses are notoriously unreliable, but their accounts are always true. Unless they're lying. Or mistaken. Or hallucinating. Or being controlled by the government (or a cabal of international elites)."
+
 [ It is borrowable. ]
 
 Biking to the Ferry is a tome on Moira's bookshelves. It is owned by Moira Zin. It is loanable.
 The printed name is "Biking to the Ferry: a Memoir".
 Understand "a/-- memoir" as Biking to the Ferry.
-The description is "A memoir of a summer spent biking around the islands of the Puget Sound."
+The description is "A memoir of a summer spent biking around the islands of the Puget Sound. The chapter on Orcas Island reads:
+
+Upon disembarking from the ferry on Orcas, I became aware that Spooney had fallen ill with some kind of stomach bug. He was barely able to mount his bike, and we had to stop every few minutes so he could vomit. We barely reached the campground before dark. By this time the sensation I'd had on Waldron Island had grown stronger, and I was convinced that we were being followed. I was reminded of an experience I'd had as a child in upstate New York, when I'd been convinced that a ghost of an Onondaga warrior was following me. Spooney was convinced that our pursuer was a lizard person. I argued that this was ridiculous, but Spooney reminded me of the principle of extravagance, and I had to admit that he had a point. In any case, Spooney was worse the next morning, and I had to leave him or risk missing the ferry. I never saw him again."
 [ It is borrowable. ]
 
 Nonstandard Investigative Techniques is a tome on Moira's bookshelves. It is owned by Moira Zin. It is loanable. 
-The description is "Your bible from college, a comprehensive look at the most effective nonstandard investigative techniques, from the use of psychics to the application of chaos theory to criminal investigation."
+The description is "Your bible from college, a comprehensive look at the most effective nonstandard investigative techniques, from the use of psychics to the application of chaos theory to criminal investigation. One of its more memorable case studies involves a possible homicide in a small town in the Pacific Northwest:
+
+Eventually the deceased was identified as Arthur 'Spooney' Spooner of Enigma Lake, New York. The cause of death was determined to be a combination of exposure and dehydration, but eyewitness accounts of lizard person sightings were never satisfactorily explained. At the behest of the local Ouija Board fan club, the Bureau of Strange Homicides was called in to investigate. They found evidence of lizard person activity, but were unable to determine whether the lizard people were responsible for Spooney's death. The case was ruled a natural death, but some locals remain unconvinced."
 [ It is borrowable. ]
 
 Calculus-with-Infinitesimals is a tome on Moira's bookshelves. It is owned by Moira Zin. It is loanable. 
 The printed name is "Calculus with Infinitesimals". Understand "Calculus/with/Infinitesimals" as Calculus-with-Infinitesimals.
-The description is "The classic text on the use of infinitesimals in calculus."
+The description is "The classic text on the use of infinitesimals in calculus. The chapter on the derivative reads:
+
+Traditionally, the derivative of a function f is defined as the limit of the difference quotient as h approaches zero. However, this definition is cumbersome and difficult to work with. In this text, we introduce the concept of the infinitesimal, a quantity that is smaller than any positive real number, but not equal to zero. Using infinitesimals, we can define the derivative of a function f as the ratio of the infinitesimal change in f to the infinitesimal change in x. This definition is more intuitive and easier to work with than the traditional definition, and has the added benefit of being completely wrong."
 [ It is borrowable. ]
 
 Three Stigmata of Palmer Eldritch is a tome on Moira's bookshelves. It is owned by Moira Zin. It is loanable. The printed name is "The Three Stigmata of Palmer Eldritch". 
-The description is "A classic of science fiction, this is a novel by Philip K. Dick."
+The description is "A classic of science fiction, this is a novel by Philip K. Dick. Its text is protected by copyright."
 [ It is borrowable. ]
 
 Book-borrowing a tome (called T) when T is supported by Moira's bookshelves and T is owned by Moira Zin:
@@ -1610,25 +1674,34 @@ After putting a loanable tome on Moira's bookshelves when the borrowed-book is t
 	now the noun is owned by Moira Zin;
 	continue the action;
 
-Returning is an action applying to one thing. Understand "return [something]" as returning.
+Returning is an action applying to one thing. Understand "return [something]", "return book" as returning.
 
 Check returning something:
 	if the borrowed-book is the noun:
 		if the current interlocutor is not Moira Zin:
-			say "Faraji did not borrow that book from [the current interlocutor]." instead;
-	otherwise if the borrowed-book is the noun:
+			say "Faraji did not borrow that from [the current interlocutor]." instead;
+	otherwise if the borrowed book-minerva is the noun:
 		if the current interlocutor is not Minerva:
-			say "Faraji did not borrow that book from [the current interlocutor]." instead;
+			say "Faraji did not borrow that from [the current interlocutor]." instead;
 	otherwise if the current interlocutor is not nothing:
-		say "Faraji did not borrow that book from [the current interlocutor]." instead;
+		say "Faraji did not borrow that from [the current interlocutor]." instead;
 	otherwise:
-		say "There is no one to return the book to." instead;
+		say "There is no one to return that to." instead;
 
 Carry out returning:
 	if the current interlocutor is Moira Zin:
 		try giving the borrowed-book to Moira Zin;
 	otherwise if the current interlocutor is Minerva:
-		try giving the borrowed-book to Minerva;
+		try giving the borrowed book-minerva to Minerva;
+
+Rule for supplying a missing noun while returning:
+	if the current interlocutor is Moira Zin:
+		now the noun is the borrowed-book;
+	otherwise if the current interlocutor is Minerva:
+		say "borrowed book-minerva: [the borrowed book-minerva].";
+		now the noun is the borrowed book-minerva;
+	otherwise:
+		say "There is no book to return." instead;
 
 A turn sequence rule when we are discussing to borrow a book (this is the book borrowing turn sequence rule):
 	rule fails;	
@@ -1654,7 +1727,7 @@ The describe what's on scenery supporters in room descriptions rule is not liste
 The closet door is a door. It is east of Moira's office and west of the utility closet. It is closed, openable, locked, and lockable. It is scenery.
 The description of the closet door is "It's a plain wooden door. It's [if the closet door is closed]closed[otherwise]open[end if]."
 
-The utility closet is dark. It is in BOSH HQ. It is a leavable room. The egress is west. "It is cramped in here. Other than Faraji, the only thing in here is a breaker box on the wall."
+The utility closet is dark. It is in BOSH HQ. It is a leavable room. The egress is west. "It is cramped in here. Other than Faraji, the only thing in here is a breaker box on the wall. A [if the closet door is closed]closed[otherwise]open[end if] door leads west."
 
 The breaker box is a fixed in place scenery container in the utility closet. It is closed, locked, lockable, and openable. The description is "It's a small metal box affixed to the back wall of the closet. There is a small keyhole in the front."
 The keyhole is part of the breaker box. The description is "It's a small keyhole in the front of the box."
@@ -1850,6 +1923,8 @@ hezekiah-subject is a subject. It is privately-named. The printed name is "Hezek
 astral-resonator-subject is a subject. It is privately-named. The printed name is "astral resonator". Understand "astral/resonator" as astral-resonator-subject. 
 money is a subject.
 alien invasion is a subject. 
+
+onondaga-subject is a subject. It is privately-named. The printed name is "Onondaga". Understand "Onondaga/Onandaga/tribe/native/american" as onondaga-subject.
 
 
 Table of Quiz Topics (continued)
@@ -2190,6 +2265,9 @@ laundromat-subject	Moira Zin	"'Moira, what do you know about the laundromat next
 alien invasion	Chief Huffton Klimp	"'Chief, is there really going to be an --'"	"'-- alien invasion? Well, of course there is. I have a plan. Do you have a plan? You should have a plan. I have a plan. Don't ask me what it is."
 alien invasion	Margaret	"'Margaret, do you think there's going to be an alien invasion?'"	"'I hope not. I don't like aliens.'"
 alien invasion	Moira Zin	"'Moira, do you think there's going to be an alien invasion?'"	"'Stop talking to Klimp.'"
+onondaga-subject	Chief Huffton Klimp	"'Chief, what do you know about the --'"	"'-- Onondaga? It's a Native American tribe in upstate New York. They may have been the first to discover the secret of time travel. But they're not talking.'"
+onondaga-subject	Margaret	"'Margaret, what do you know about the Onondaga?'"	"'Are they a band?'"
+onondaga-subject	Moira Zin	"'Moira, what do you know about the Onondaga?'"	"'The Onondaga are a Native American tribe that is part of the Iroquois Confederacy. They are known for their contributions to the culture and history of the region. There is no scientific evidence to support the idea that they discovered the secret of time travel.'"
 
 
 
@@ -2908,4 +2986,3 @@ The thumb-drive-story is always "Biff found the thumb drive in an ancient Ononda
 Doris-story-about-the-thumb-drive is always "We lost one of our New York agents to a slingshot effect that threw him far back in time. We're always monitoring for artifacts that are out of place or anachronistic to lead us to lost agents."
 
 Message-on-the-thumbdrive is always "They found me out and sent me back. 14th century. Enigma Lake. Savra is going to move on the Dragon."
-

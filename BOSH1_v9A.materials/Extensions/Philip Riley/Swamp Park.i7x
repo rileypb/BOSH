@@ -23,8 +23,8 @@ Swamp Park is a region.
 Chapter 1 - Strip Mall Parking Lot South
 
 The Strip Mall Parking Lot South is a room. The printed name is "south end of the strip mall parking lot". It is east of the front office. It is in Swamp Park. It is outdoors.  The preposition is "at". front office is inside from the Strip Mall Parking Lot South. Understand "end/of/the" as the Strip Mall Parking Lot South.
-The description of the Strip Mall Parking Lot South is "From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north."
-The tutorial message of the Strip Mall Parking Lot South is "Enter HELP for instructions, including information special to this game"
+The description of the Strip Mall Parking Lot South is "From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash (to the east). To the south is a swampy area separating the lot from the interstate. The parking lot continues north."
+The tutorial message of the Strip Mall Parking Lot South is "Enter HELP for, well, help. Enter ABOUT for information about this game in particular, and CREDITS for information about the people who made it. Enter HINTS for hints"
 
 Carry out helping for the first time:
 	now the tutorial message of Strip Mall Parking Lot South is "";
@@ -111,7 +111,7 @@ This is the examine hood contents rule:
 
 The examine hood contents rule is listed instead of the examine containers rule in the carry out examining rulebook.
 
-Car 2 is an automobile. It is privately-named. The printed name is "[Chief Huffton Klimp]'s Porsche". Understand "car/Klimp's/Porsche/automobile/auto/2017/911/Turbo/Cabriolet" as car 2. The initial appearance of car 2 is "Klimp's Porsche takes up two spots." It is fixed in place. The description is "Klimp drives a sleek 2017 Porsche 911 Turbo Cabriolet."
+Car 2 is an automobile. It is privately-named. The printed name is "[Chief Huffton Klimp]'s Porsche". Understand "car/Klimp's/Porsche/automobile/auto/2017/911/Turbo/Cabriolet" as car 2. The initial appearance of car 2 is "Klimp's Porsche takes up two spots." It is fixed in place. The description is "Klimp drives a sleek 2017 Porsche 911 Turbo Cabriolet. It is currently empty."
 Car 2 is an edifice.
 
 Instead of unlocking or locking or opening or closing or entering or driving car 1:
@@ -284,7 +284,7 @@ It is unsnarkable.
 	
 Book 2 - Dave's pawn shop
 	
-Dave's pawn shop is a room. It is proper-named. "This is more the seedy, gloomy stereotype of a pawn shop than the glitzy sanitized version of TV reality shows. The blinds in the windows are closed to only allow the barest slant of sunlight in, leaving the sickly fluorescent lights to illuminate the room. There is the distinct smell of cigar smoke. The glass counter is filled with a large collection of possibly valuable items. Behind it is an impressive array of firearms.
+Dave's pawn shop is a room. It is proper-named. "This is more the seedy, gloomy stereotype of a pawn shop than the glitzy, sanitized version of TV reality shows. The blinds in the windows are closed to only allow the barest slant of sunlight in, leaving the sickly fluorescent lights to illuminate the room. There is the distinct smell of cigar smoke. The glass counter is filled with a large collection of possibly valuable items. Behind it is an impressive array of firearms.
 
 The exit is northeast."
 The snarky remark of Dave's Pawn Shop is "I've known public restrooms that had better ambience."
@@ -595,7 +595,7 @@ The opening-3 is scenery in the laundromat basement. It is privately-named. The 
 The back basement is south of the laundromat basement. It is in laundromat-region.
 "The basement ends here. There is a switch on the wall, currently [if the light switch is switched on]on[otherwise]off[end if]. A doorway leads north.
 
-[if the broken washing machine is nowhere]A strange glow emanates from behind some stacks of large crates[otherwise]A old broken-down washing machine peeks out from between two stacks of crates[end if]."
+[if the broken washing machine is nowhere]A strange blue-white glow emanates from behind some stacks of large crates[otherwise]An old, broken-down washing machine peeks out from between two stacks of crates[end if]."
 
 back basement darkness is a truth state that varies. back basement darkness is false.
 
@@ -607,7 +607,7 @@ This is the special back basement darkness rule:
 	if the location is the back basement and back basement darkness is true:
 		say "[We] [can] still see a little bit, though, thanks to the glow-in-the-dark light switch on the wall";
 		if the broken washing machine is nowhere:
-			say ". There is also a strange glow emanating from behind some large dark objects.";
+			say ". There is also a strange blue-white glow emanating from behind some large dark objects.";
 		otherwise:
 			say ". Apart from that, a washing machine is revealed in the darkness by the glow emanating from its drum.";
 		now back basement darkness is false;
@@ -619,7 +619,7 @@ After printing the description of a dark room when the location is the back base
 	say "There is a glow-in-the-dark light switch on the wall here, currently [if the light switch is switched on]on[otherwise]off[end if].";
 	say line break;
 	if the broken washing machine is nowhere:
-		say "There is a strange glow emanating from behind some large dark objects.";
+		say "There is a strange blue-white glow emanating from behind some large dark objects.";
 	otherwise:
 		say "A washing machine is revealed in the darkness by the glow emanating from its drum.";
 		
@@ -662,9 +662,9 @@ Before examining the broken washing machine when the location is the back baseme
 Instead of looking behind the stacks of crates:
 	if the broken washing machine is nowhere:
 		if in darkness:
-			say "All [we] [can] see is that a strange glow emanates from behind the objects.";
+			say "All [we] [can] see is that a strange blue-white glow emanates from behind the objects.";
 		otherwise:
-			say "All [we] [can] see is that a strange glow emanates from behind the crates.";
+			say "All [we] [can] see is that a strange blue-white glow emanates from behind the crates.";
 	otherwise if in darkness:
 		say "The broken washing machine is revealed in the darkness by the glow emanating from its drum.";
 	otherwise:
@@ -716,7 +716,7 @@ Instead of pushing the stacks of crates when the handtruck is in the location:
 	
 Instead of moving the stacks of crates with the handtruck:
 	if the broken washing machine is nowhere:
-		say "Faraji moves the crates out of the way and uncovers an old front-loading washing machine. There is a strange glow inside the drum.";
+		say "Faraji moves the crates out of the way and uncovers an old front-loading washing machine. There is a strange blue-white glow inside the drum.";
 		now the broken washing machine is in the back basement;
 		now the strange glow is in the broken washing machine;
 		now the strange glow is closeby;

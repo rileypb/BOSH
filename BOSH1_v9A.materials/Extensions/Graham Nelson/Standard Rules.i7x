@@ -4256,7 +4256,7 @@ Check an actor climbing (this is the block climbing rule):
 		say "Little [are] to be achieved by that." (A);
 	stop the action.]
 
-[Sleeping is an action applying to nothing.
+Sleeping is an action applying to nothing.
 The Sleeping action translates into I6 as "Sleep".
 
 The specification of the sleeping action is
@@ -4270,7 +4270,7 @@ with some further check rules.)"
 Check an actor sleeping (this is the block sleeping rule):
 	if the actor is the player:
 		say "[We] [aren't] feeling especially drowsy." (A);
-	stop the action.]
+	stop the action.
 
 Section SR4/9 - Standard actions which happen out of world
 
@@ -4589,8 +4589,8 @@ Understand "ask [someone] for [something]" as asking it for.
 
 Understand "eat [something preferably held]" as eating.
 
-[Understand "sleep" as sleeping.
-Understand the command "nap" as "sleep".]
+Understand "sleep" as sleeping.
+Understand the command "nap" as "sleep".
 
 [Understand "climb [something]" or "climb up/over [something]" as climbing.
 Understand the command "scale" as "climb".]

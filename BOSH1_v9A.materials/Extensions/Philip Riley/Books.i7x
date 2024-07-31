@@ -2,6 +2,11 @@ Books by Philip Riley begins here.
 
 Use authorial modesty.
 
+Volume 1 - Books in general
+
+
+Volume 2 - Bookstore books
+
 A bookstore-book is a kind of thing. It is privately-named. It is undescribed.
     A bookstore-book has a text called the title.
     A bookstore-book has a text called the author.
