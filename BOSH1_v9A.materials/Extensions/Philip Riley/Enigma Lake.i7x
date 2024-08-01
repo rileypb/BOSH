@@ -242,16 +242,34 @@ After dropping the backpack:
 The red key is a key. It is inside the backpack. Understand "ELG", "gym/gymnasium key" as the red key. The description is "The letters ELG are printed on the key, labeling it the property of Enigma Lake Gymnasium.".
 
 The work schedule is scenery in the Enigma Lake town hall. 
-"[fixed letter spacing] +--------------------------------+[line break]
-|Name            Shift           |[line break]
-+--------------------------------+[line break]
-|Monday          Edward Alpha    |[line break]
-|Tuesday         Mary Huff       |[line break]
-|Wednesday       Bill Thompson   |[line break]
-|Thursday        Edward Alpha    |[line break]
-|Friday          Rosemary Tamsin |[line break]
-|Saturday        Mary Huff       |[line break]
-+--------------------------------+[variable letter spacing]".
+"[fixed letter spacing] +---------------------------------+[line break]
+|Name            Shift            |[line break]
++---------------------------------+[line break]
+|Monday          Edward Alpha     |[line break]
+|                Arthur Davenport |[line break]
+|                Margot Fenn      |[line break]
+|                Rosemary Tamsin  |[line break]
+|Tuesday         Mary Huff        |[line break]
+|                Andrew Kline     |[line break]
+|                Leonard Mink     |[line break]
+|                Pauline Nettles  |[line break]
+|Wednesday       Bill Thompson    |[line break]
+|                Harriet Underwood|[line break]
+|                Victor Xander    |[line break]
+|                Yolanda Zane     |[line break]
+|Thursday        Edward Alpha     |[line break]
+|                Arthur Davenport |[line break]
+|                Oren Fenn        |[line break]
+|                Maggie Vickers   |[line break]
+|Friday          Rosemary Tamsin  |[line break]
+|                Leonard Mink     |[line break]
+|                Zephram Nettles  |[line break]
+|                Daphne O'Leary   |[line break]
+|Saturday        Mary Huff        |[line break]
+|                Leola Root       |[line break]
+|                Thomas Sander    |[line break]
+|                Ursula Tamsin    |[line break]
++---------------------------------+[variable letter spacing]".
 
 After examining the work schedule when the backpack is nowhere:
 	say "Faraji notices something behind the desk.";
@@ -652,16 +670,24 @@ Hutz interjection	used (a truth state)
 
 The flood is a subject. 
 Enigma-Lake-subject is a subject. It is privately-named. The printed name is "Enigma Lake". Understand "Enigma/Lake" as Enigma-Lake-subject.
+Henry-subject is a subject. It is privately-named. The printed name is "Henry's Hot Skillet". Understand "Henry's/Henry/Henrys/Hot/Skillet" as Henry-subject.
+astral-resonator-subject is a subject. It is privately-named. The printed name is "astral resonator". Understand "astral/resonator/rusty/shiny/makeshift" as astral-resonator-subject.
+lizard-people-subject is a subject. It is privately-named. The printed name is "lizard people". Understand "lizard/people/lizardmen/lizardpeople" as lizard-people-subject. 
+daniels-subject is a subject. It is privately-named. The printed name is "Daniels". Understand "Daniels" as daniels-subject.
 
 Table of Quiz Topics (continued)
 subject (a thing)	interlocutor (a person)	comment (a text)	reply (a text)
-mangy cat	Hutz	"'Is that your cat?' [we] ask."	"'What does it mean to be a cat's owner?' Hutz replies."
-sledgehammer	Hutz	"'What's the sledgehammer for?' [we] ask."	"'That's the only thing left of my old friend Josef,' Hutz replies."
-plates	Hutz	"'What's with all the dirty dishes?' [we] ask."	"'What's with your ugly face?' Hutz replies."
-pile of used coffee cups	Hutz	"'Why so many coffee cups?' [we] ask."	"'I like the coffee at Henry's' Hutz replies."
-narrow bed	Hutz	"'What's with the narrow bed?' [we] ask."	"'I like to sleep on my side,' Hutz replies."
-flood	Hutz	"'Aren't you worried about the flood?' [we] ask."	"'Uh, yeah, of course I am. I'm leaving tomorrow morning,' Hutz replies."
-Enigma Lake	Hutz	"'Tell me about Enigma Lake,' [we] ask."	"'It's a lake,' Hutz replies. 'Or did you mean the town? I'll miss it. Good little town. Or rather, a crappy little town with a good diner.'"
+mangy cat	Hutz	"'Is that your cat?' Faraji asks."	"'What does it mean to be a cat's owner?' Hutz replies."
+sledgehammer	Hutz	"'What's the sledgehammer for?' Faraji asks."	"'That's the only thing left of my old friend Josef,' Hutz replies."
+plates	Hutz	"'What's with all the dirty dishes?' Faraji asks."	"'What's with your ugly face?' Hutz replies."
+pile of used coffee cups	Hutz	"'Why so many coffee cups?' Faraji asks."	"'I like the coffee at Henry's,' Hutz replies."
+narrow bed	Hutz	"'What's with the narrow bed?' Faraji asks."	"'I like to sleep on my side,' Hutz replies."
+flood	Hutz	"'Aren't you worried about the flood?' Faraji asks."	"'Uh, yeah, of course I am. I'm leaving tomorrow morning,' Hutz replies."
+Enigma Lake	Hutz	"'Tell me about Enigma Lake,' Faraji asks."	"'It's a lake,' Hutz replies. 'Or did you mean the town? I'll miss it. Good little town. Or rather, a crappy little town with a good diner.'"
+Henry-subject	Hutz	"'What's the deal with Henry's Hot Skillet?' Faraji asks."	"'Henry's? Oh, it's a diner. Good coffee. They have a good TV. I used to drink coffee and watch TV,' Hutz replies."
+astral-resonator-subject	Hutz	"'What's the deal with the astral resonator?' Faraji asks."	"'A what? I have no idea what you're talking about,' Hutz replies."
+lizard-people-subject	Hutz	"'What's the deal with the lizard people?' Faraji asks."	"'Lizard people? What are you talking about?' Hutz replies."
+daniels-subject	Hutz	"'What's the deal with Daniels?' Faraji asks."	"'Daniels? Who's Daniels?' Hutz replies."
 
 
 Book 10 - Main at Lake
@@ -680,7 +706,10 @@ Does the player mean examining the broadcast-tower:
 
 Book 11 - WGXC "Galaxy" Radio
 
-Radio Station WGXC is a leavable room. It has egress northwest. It is southeast of Main at Lake. It is in ELR. It is indoors. "This is the town radio station. A staircase runs upwards, presumably to the roof and the broadcast antenna. The exit is northwest."
+Radio Station WGXC is a leavable room. It has egress northwest. It is southeast of Main at Lake. It is in ELR. It is indoors. "This is the town radio station. An eye-catching sign over the door reads 'WGXC [']Galaxy['] Radio 1055 AM'.
+
+A staircase runs upwards, presumably to the roof and the broadcast antenna. The broadcast booth is to the south. The exit is northwest."
+
 The x-coordinate of Radio Station WGXC is 2. The y-coordinate of Radio Station WGXC is -2.
 
 The WGXC stairs are scenery in Radio Station WGXC. "The stairs run up to the roof."
@@ -688,6 +717,44 @@ Understand "staircase/stair" as WGXC stairs.
 
 Instead climbing up the WGXC stairs:
 	try going up.
+
+The broadcast-booth-facade is a building facade. It is in Radio Station WGXC. It is privately-named. The printed name is "broadcast booth". Understand "broadcast/booth" as broadcast-booth-facade. "The broadcast booth is a small room with a window looking out over the main lobby."
+	The broadcast-booth-facade fronts the broadcast booth.
+	It is enterable from Radio Station WGXC.
+
+Book 11.5 - The broadcast booth
+
+The broadcast booth is a leavable room. It is south of Radio Station WGXC. It is in ELR. It is indoors. "The broadcast booth is a small empty room, as all the broadcasting equipment has been moved out. There is an empty bin that would normally hold the records currently in rotation, and another bin marked 'trash', filled with discarded records. The exit is north."
+
+It has egress north.
+
+The x-coordinate of the broadcast booth is 2. The y-coordinate of the broadcast booth is -3.
+
+The rotation bin is a scenery container in the broadcast booth. "The bin is empty." Understand "bin" as rotation bin.
+
+The trash-bin is a scenery container in the broadcast booth. It is privately-named. The printed name is "trash bin". "The bin is filled with discarded records." Understand "trash/bin" as trash-bin.
+
+The discarded records are scenery in the trash-bin. Understand "record" as discarded records.
+
+Instead of examining the discarded records:
+	say "Faraji pulls out a 45[quotation mark] from the bin at random";
+	let the chosen record be a random record;
+	say ". It's '[the title of the chosen record]' by [the artist of the chosen record].";
+
+Instead of searching the trash-bin:
+	try examining the discarded records;
+
+A record is a kind of thing. A record has a text called the title. A record has a text called the artist. The title of a record is usually "". The artist of a record is usually "".
+
+booboo is a record. The title of booboo is "Boo boo ba-doo boo boo boo". The artist of booboo is "The Four Mouths".
+strange is a record. The title of strange is "Isn't It Strange That I Don't Love You". The artist of strange is "Patti Perry".
+lizard is a record. The title of lizard is "I'm Afraid (of Lizard People, Darling)". The artist of lizard is "The Five Spots".
+callmeonthetelephonedarling is a record. The title of callmeonthetelephonedarling is "Stop Calling Me on the Telephone, Darling". The artist of callmeonthetelephonedarling is "Deanna and the Deans".
+norbert is a record. The title of norbert is "Norbert the Narwhal". The artist of norbert is "The ABCs".
+silly is a record. The title of silly is "Silly Little Love Song". The artist of silly is "Patti Peggy".
+moron is a record. The title of moron is "I'd Never Call You a Moron". The artist of moron is "Peggy Patti".
+dragon-record is a record. The title of dragon-record is "Save the Dragon". The artist of dragon-record is "Doris Dei and the Dots".
+
 
 Book 12 - Radio Station Roof
 
@@ -1186,7 +1253,12 @@ The circuit breaker is a scenery device. "A single circuit breaker switch is mou
 
 Book 17.5 - The church basement
 
-The church basement is below the First Utilitarian Church of Enigma Lake. It is in ELR. It is indoors. It is dark. "The basement is a shock to behold after the simple church above. It's a large, open space, with walls painted with scenes of humans and lizard people in battle, with aliens and platypuses looking on in horror. There is an ornate altar at the far end of the room. The exit is up."
+The church basement is below the First Utilitarian Church of Enigma Lake. It is in ELR. It is indoors. It is dark. "The basement is a shock to behold after the simple church above. It's a large, open space, with walls painted with scenes of humans and lizard people in battle, with aliens and platypuses looking on in horror. There is an ornate altar at the far end of the room. The exit is up.
+
+It looks like the fluorescent tubes in the ceiling are burned out."
+
+The fluorescent tubes are scenery in the church basement. "The fluorescent tubes in the ceiling are burned out."
+They are far away. Understand "tube/light/lights" as the fluorescent tubes.
 
 The paintings are scenery in the church basement. "The walls are painted with scenes of humans and lizard people in battle, with aliens and platypuses looking on in horror." Understand "painting", "mural", "murals", "humans/human/lizard/people/person/aliens/alien/platypuses/platypus" as paintings.
 
@@ -1491,16 +1563,14 @@ After opening the abandoned pickup truck:
 Does the player mean taking the brass key when the player is in the abandoned pickup truck:
 	it is very likely.
 
-A thing can be in-the-pickup or not-in-the-pickup. A thing is usually not-in-the-pickup.
-
 An abandoned pickup truck is a fixed in place closed enterable openable transparent container in Lake at Ridge. 
 "There is an abandoned pickup truck at the side of the road[if the hood is open]. The hood is open[end if]." 
 The description is "The truck, a Ford F-1, is relatively new, with no sign as to why it was abandoned. The tailgate is [if the tailgate is open]down[otherwise]up[end if]. The hood is slightly crumpled, as if it has been in a minor accident[if the hood is open]. The hood is open[end if][if the bolt cutters are in the truck bed]. The truck bed contains a pair of bolt cutters[end if]."
 Understand "ford", "f-1", "door" as the abandoned pickup truck.
-The glove compartment is a scenery closed openable container in the abandoned pickup truck. It is in-the-pickup.
+The glove compartment is a scenery closed openable container in the abandoned pickup truck.
 Understand "box/glovebox" as the glove compartment.
 The description is "The glove compartment is [if the glove compartment is open]open[otherwise]closed[end if]."
-The brass key is a key. It is in the glove compartment. The description is "A simple brass key". It is in-the-pickup.
+The brass key is a key. It is in the glove compartment. The description is "A simple brass key".
 
 Before entering the abandoned pickup truck when the abandoned pickup truck is closed:
 	say "(first opening the abandoned pickup truck)[command clarification break]";
@@ -1513,10 +1583,10 @@ Before exiting when the player is in the abandoned pickup truck and the abandone
 The truck hood is a part of the abandoned pickup truck. It is a closed openable container. The description is "The hood is slightly crumpled, as if it has been in a minor accident. It is [if the hood is open]open[otherwise]closed[end if]." Understand "bonnet" as the truck hood. 
 It is unsnarkable.
 
-Instead of doing something to something when the action requires a touchable noun and the noun is not-in-the-pickup and the noun is not the abandoned pickup truck and the player is in the abandoned pickup truck:
+Instead of doing something to something when the action requires a touchable noun and (the noun is not enclosed by the abandoned pickup truck or the noun is enclosed by the truck bed) and the noun is not the abandoned pickup truck and the player is in the abandoned pickup truck:
 	say "Faraji can't do that from inside the truck.";
 
-Instead of doing something to something when the action requires a touchable noun and the noun is in-the-pickup and the noun is not the abandoned pickup truck and the player is not in the abandoned pickup truck:
+Instead of doing something to something when the action requires a touchable noun and the noun is enclosed by the abandoned pickup truck and the noun is not enclosed by the truck bed and the noun is not the abandoned pickup truck and the player is not in the abandoned pickup truck:
 	say "Faraji can't do that from here.";
 
 The hood contains a dirty car battery. 
@@ -1603,6 +1673,16 @@ The light bulb is unsnarkable.
 Understand "screw [the light bulb] in/into [the hanging socket]", "mount [the light bulb] on/onto/in/into [the hanging socket]" as inserting it into.
 Understand "screw [the rusty astral resonator] in/into [the hanging socket]", "mount [the rusty astral resonator] on/onto/in/into [the hanging socket]" as inserting it into.
 Understand "unscrew [the light bulb]" as taking when the light bulb is in the hanging socket.
+Understand "unscrew [the light bulb] from [the hanging socket]" as removing it from when the light bulb is in the hanging socket.
+
+Failing to screw it into is an action applying to two things.
+Understand "screw [something] in/into [something]" as failing to screw it into.
+
+Instead of failing to screw the rusty astral resonator into the aerial:
+	try inserting the rusty astral resonator into the threaded socket;
+
+Check failing to screw into:
+	say "Faraji can't screw [the noun] into [the second noun].";
 
 After taking the light bulb when light bulb was in the hanging socket:
 	say "Faraji unscrews the light bulb from the socket.";
@@ -1646,7 +1726,7 @@ It has matching key the iron key. Understand "heavy/metal/lock" as the equipment
 "A heavy metal cabinet with a lock. [if the equipment cabinet is open]The cabinet is open[otherwise]The cabinet is closed[end if]."
 
 
-The rusty astral resonator is in the equipment cabinet. It is privately-named. The description is "A small, rusty, metallic, cylindrical object. One end is capped with a lens, while the other terminates in a threaded base, like a light bulb.".
+The rusty astral resonator is in the equipment cabinet. It is privately-named. The description is "A small, rusty, metallic, cylindrical object. One end is capped with a lens, while the other terminates in a threaded base, like that of a light bulb.".
 The printed name is "[if Astral Secrets is read]rusty astral resonator[otherwise]strange, rusty, metal object[end if]".
 Understand "rusty/astral/resonator" as the rusty astral resonator when Astral Secrets is read.
 Understand "strange/rusty/metal/metallic/cylindrical/cylinder/object" as the rusty astral resonator.
@@ -2217,6 +2297,8 @@ The snarky remark of the kitchen chairs is "They look like they were designed by
 The kitchen table is a scenery supporter in Horton Family House Kitchen. "A simple wooden table."
 It is unsnarkable.
 
+Does the player mean doing something to the kitchen table: it is likely.
+
 The logs are scenery in Horton Family House Kitchen. "A few logs are stacked beside the hearth."
 It is unsnarkable. Understand "log/firewood" as logs. It is plural-named.
 
@@ -2267,6 +2349,9 @@ After going to the Horton Family House Parlor for the first time:
 The parlor chairs are enterable scenery supporters in the Horton Family House Parlor. "A few chairs are arranged around the room." Understand "chair" as parlor chairs.
 
 The parlor table is a scenery supporter in the Horton Family House Parlor. "A simple wooden table."
+
+Does the player mean doing something to the parlor table: it is likely.
+
 The snarky remark of the parlor table is "I wonder if there's a screwdriver under it."
 
 Instead of looking under the parlor table:
@@ -3219,7 +3304,7 @@ Instead of attacking the bell with the tuning fork:
 
 Book 33 - Henry's Hot Skillet
 
-Henry's Hot Skillet is a room. It is in ELR. It is indoors.
+Henry's Hot Skillet is a leavable room. It is in ELR. It is indoors. It has egress north.
 The description is "This is the epitome of the homey small-town diner of times gone by, except for the lack of all furniture, cooking implements, food, decor, and so on. There is a staircase leading up, and the exit is north. A pair of insulated wires hangs from the ceiling at one end of the counter[if the clean battery is on the lunch counter and the clean battery is hooked up]. The wires are attached to a battery resting on the counter[otherwise if the clean battery is on the lunch counter]. A battery rests on the counter[end if]." 
 Understand "diner/restaurant" as Henry's Hot Skillet.
 
@@ -3304,7 +3389,7 @@ The preposition is "on".
 
 The x-coordinate of Henry's Roof is -1. The y-coordinate of Henry's Roof is -2.
 
-The TV aerial antenna is scenery in Henry's Roof. "A large, metallic rooftop antenna, characterized by its array of horizontal and vertical rods designed to capture VHF (very high frequency) broadcasts. Strangely, someone has mounted a threaded socket, like that of a light bulb, on one of the rods. [if the rusty astral resonator is in the threaded socket][A rusty astral resonator] is screwed into it. [end if]A pair of insulated wires runs from the antenna and through a hole in the roof."
+The TV aerial antenna is scenery in Henry's Roof. "A large, metallic rooftop antenna, characterized by its array of horizontal and vertical rods designed to capture VHF (very high frequency) broadcasts. Strangely, someone has mounted a threaded socket, such as might hold a light bulb, on one of the rods. [if the rusty astral resonator is in the threaded socket][A rusty astral resonator] is screwed into it. [end if]A pair of insulated wires runs from the antenna and through a hole in the roof."
 
 The insulated wires are part of the TV aerial antenna. The description is "A pair of insulated wires, running from the antenna and through a hole in the roof." They are plural-named. Understand "wire" as the insulated wires.
 
@@ -3312,6 +3397,9 @@ The hole-in-the-roof is scenery in Henry's Roof. It is privately-named. The prin
 
 The threaded socket is part of the TV aerial antenna. It is a single item container. The description is "A threaded socket, like that of a light bulb, is mounted on one of the rods of the antenna." Understand "light/bulb/lightbulb" as the threaded socket.
 It is unsnarkable.
+
+Instead of inserting the rusty astral resonator into the aerial:
+	try inserting the rusty astral resonator into the threaded socket;
 
 Does the player mean inserting the rusty astral resonator into the threaded socket:
 	it is very likely.	
@@ -3336,6 +3424,7 @@ Understand "screw [the light bulb] in/into/to [the light socket]", "mount [the l
 Understand "screw [the light bulb] in/into/to [the table lamp]", "mount [the light bulb] on/onto/in/into [the table lamp]" as inserting it into.
 
 Understand "unscrew [the rusty astral resonator]", "unmount [the rusty astral resonator]" as taking.
+Understand "unscrew [the rusty astral resonator] from [the threaded socket]", "unmount [the rusty astral resonator] from [the threaded socket]" as removing it from.
 
 Check inserting something into the threaded socket:
 	if the noun is not the rusty astral resonator:
@@ -3376,7 +3465,7 @@ The town-from-Henry's-Roof is privately-named scenery in Henry's Roof. The print
 Book 35 - Rolle's Department Store
 
 Rolle's Department Store is south of Main Street 200 Block. It is in ELR. It is indoors. It is a leavable room. The egress is north. 
-The description is "Once, town department stores like this were a constant of American life. Sadly, this one is empty of everything save a number of sale posters and its gleaming floor. The exit is to the north."
+The description is "Once, town department stores like this were a constant of American life. Sadly, this one is almost empty of everything. The exit is to the north."
 
 The x-coordinate of Rolle's Department Store is 0. The y-coordinate of Rolle's Department Store is -2.
 
@@ -3402,6 +3491,7 @@ Instead of examining the table lamp:
 Understand "screw [the light bulb] in/into [the light socket]", "mount [the light bulb] on/onto/in/into [the light socket]" as inserting it into.
 Understand "screw [the rusty astral resonator] in/into [the light socket]", "mount [the rusty astral resonator] on/onto/in/into [the light socket]" as inserting it into.
 Understand "unscrew [the light bulb]" as taking when the light bulb is in the light socket.
+Understand "unscrew [the light bulb] from [the light socket]" as removing it from.
 
 Understand "screw [the light bulb] in/into [the table lamp]", "mount [the light bulb] on/onto/in/into [the table lamp]" as inserting it into.
 Understand "screw [the rusty astral resonator] in/into [the table lamp]", "mount [the rusty astral resonator] on/onto/in/into [the table lamp]" as inserting it into.
@@ -3532,7 +3622,7 @@ The big letters are scenery in Rolle's Department Store. "Big letters on the wal
 
 Book 36 - Public Gymnasium
 
-The gym door is a closed locked openable lockable scenery door. It is east of Lake Street by the gym and west of the public gymnasium. It has matching key the green key. The description is "A simple metal door, painted white. A sign on the door reads 'Public Gymnasium'."
+The gym door is a closed locked openable lockable scenery door. It is east of Lake Street by the gym and west of the public gymnasium. It has matching key the green key. The description is "A strong, institutional, double door, painted a dark green. A sign on the door reads 'Public Gymnasium'."
 
 The x-coordinate of the public gymnasium is 2. The y-coordinate of the public gymnasium is 0.
 
@@ -3556,6 +3646,11 @@ Does the player mean:
 			it is very likely;
 		if the second noun is the membership book:
 			it is very likely;
+	if the current action is looking up in:
+		if the noun is the membership book:
+			it is very likely;
+		if the second noun is the membership book:
+			it is very likely;
 
 Instead of consulting the membership book about something:
 	if the topic understood matches "william thompson" or the topic understood matches "bill thompson" or the topic understood matches "thompson" or the topic understood matches "william" or the topic understood matches "bill":
@@ -3566,6 +3661,11 @@ Instead of consulting the membership book about something:
 		now looked up locker is true;
 	otherwise:
 		say "[We] can't find that name in the membership book.";
+
+Instead of looking something up in the membership book:
+	say "[We] can't find that name in the membership book.";
+
+	
 
 The basketball court is scenery in the public gymnasium. "It's a regulation basketball court, with a shiny hardwood floor and a pair of hoops at either end. It's silent and empty." Understand "court" as the basketball court.
 
@@ -3769,6 +3869,7 @@ Book 38 - Light sources
 
 There is a fluorescent light source in Enigma Lake town hall called town hall light source.
 There is a fluorescent light source in Radio Station WGXC called radio station light source.
+There is a fluorescent light source in the broadcast booth called broadcast booth light source.
 There is a fluorescent light source in Rolle's Department Store called Rolle's light source.
 There is a fluorescent light source in Henry's Hot Skillet called Henry's light source.
 There is a fluorescent light source in Reading Room called Reading Room light source.

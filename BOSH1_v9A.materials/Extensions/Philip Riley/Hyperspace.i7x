@@ -864,7 +864,7 @@ Minerva interjection	used
 
 Book 4 - Doris's Office
 
-the field office chief's office is a leavable room. It is west of the field office hallway. It is in field office area. "Doris's office is a riot of color -- he's covered the white walls with posters, maps, and charts. A large desk is in the middle of the room, behind which sits Doris." It has egress east.
+the field office chief's office is a leavable room. It is west of the field office hallway. It is in field office area. "Doris's office is a riot of color -- he's covered the white walls with posters, maps, and charts. A large desk is in the middle of the room, behind which sits Doris. The exit is east." It has egress east.
 
 Doris is a man in the field office chief's office.
 The initial appearance is "Doris is sitting cross-legged in a chair, tapping his foot lazily on the desk."

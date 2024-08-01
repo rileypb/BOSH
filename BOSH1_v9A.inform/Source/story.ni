@@ -1279,7 +1279,7 @@ Check taking Biff's computer:
 	say "[Biff's computer] is too unwieldy to carry around." instead;
  
 Instead of examining or searching Biff's computer when the thumb drive is not seen: 
-	say "[description of biff's computer] But [we] [do] find a thumb drive and take it.";
+	say "[description of biff's computer] But [we] [do] find a thumb drive and take it. They remember receiving it in the mail last month, from (in Faraji's words) 'some crazy dude who claimed he found it in an ancient Onondaga root cellar on a farm in upstate New York.'";
 	now the player carries the thumb drive;
 	now the thumb drive is seen;
 
@@ -2883,6 +2883,18 @@ Carry out quip querying:
 		say "[the noun] is available.";
 	otherwise:
 		say "[the noun] is not available.";
+
+purging is an action applying to nothing. Understand "purge" as purging.
+
+Carry out purging:
+	repeat with X running through things carried by the player:
+		if X is a quip:
+			now X is in the Room of Quips;
+		if X is a subject:
+			now X is in the Room of Subjects;
+		if X is a hint topic:
+			now X is in the Room of Stuff;
+
 	
 Volume 2 - Test command tweak for clean transcripts
 

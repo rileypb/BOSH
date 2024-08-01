@@ -454,6 +454,7 @@ Dictionary of Strangeness	"That belongs to Chief Klimp."	"That belongs to Chief 
 Enigma Park	"That's somewhat heavy."	"[We] [push] it around a bit, but it's only fun for a moment."
 Trash	"Ugh. No."	"Ugh. No."
 Trash-boxes	"Ugh. No."	"Ugh. No."
+discarded records	"[We] [don't] need them."	"[We] [don't] need them."
 
 
 Table of Floors (continued)

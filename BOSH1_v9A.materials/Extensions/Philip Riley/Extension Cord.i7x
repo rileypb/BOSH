@@ -462,6 +462,11 @@ After dropping the plug-end:
 	maybe condense the extension cord;
 	continue the action;
 
+After unplugging the plug-end:
+	now the player carries the plug-end;
+	maybe condense the extension cord;
+	continue the action;
+
 [ After taking something when the plug-end is plugged into the noun:
 	now the player carries the plug-end;
 
