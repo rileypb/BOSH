@@ -1745,7 +1745,7 @@ Book 23 - Portal room
 The obelisk-ladder is a secret door. It is below Enigma Park and above the circular chamber. It is privately-named. It is scenery. The printed name is "ladder". Understand "ladder" as the obelisk-ladder. "A ladder leads down into the darkness below the obelisk."
 
 The circular chamber is in ELR. It is indoors. The circular chamber is dark. It is always-indefinite.
-"The chamber is circular, with a low ceiling. The walls are rough-hewn stone. A passage leads to the north and a ladder leads up to the obelisk above."
+"The walls are rough-hewn stone and the ceiling is low. A ladder leads up to the obelisk above."
 
 A door appearance rule for the obelisk-ladder:
 	rule succeeds with result whether or not the obelisk-ladder is revealed.
