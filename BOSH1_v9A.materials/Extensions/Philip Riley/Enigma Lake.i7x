@@ -848,9 +848,13 @@ Check putting something on the platform:
 
 Instead of examining the platform when the shiny astral resonator is on the platform:
 	if the power switch is switched on:
-		say "[A shiny astral resonator] is mounted on the platform, and a beam of light shoots out of it, striking the obelisk in the park. The crystal is glowing [crystal glow].";
+		say "The platform is a small, square area formed by the inward-bent bars of the broadcast tower. It's just large enough to hold a small object. There are two rings set into the back of the platform, allowing something to be attached there. 
+		
+		[A shiny astral resonator] is mounted on the platform, and a beam of light shoots out of it, striking the obelisk in the park. The crystal is glowing [crystal glow].";
 	otherwise:
-		say "[A shiny astral resonator] is mounted on the platform.";
+		say "The platform is a small, square area formed by the inward-bent bars of the broadcast tower. It's just large enough to hold a small object. There are two rings set into the back of the platform, allowing something to be attached there. 
+		
+		[A shiny astral resonator] is mounted on the platform.";
 
 Instead of examining the platform when the shiny astral resonator is not on the platform:
 	say "The platform is a small, square area formed by the inward-bent bars of the broadcast tower. It's just large enough to hold a small object. There are two rings set into the back of the platform, allowing something to be attached there.";
@@ -974,7 +978,7 @@ The x-coordinate of the First Utilitarian Church of Enigma Lake is 2. The y-coor
 
 The church stairs are scenery in First Utilitarian Church of Enigma Lake. "The stairs lead down to the basement."
 
-The church ladder is scenery in First Utilitarian Church of Enigma Lake. "The ladder leads up to the steeple."
+The church ladder is scenery in First Utilitarian Church of Enigma Lake. "The ladder leads up to the steeple. It is solidly affixed to the wall."
 
 Some religious art is scenery in First Utilitarian Church of Enigma Lake. "The best piece in the bunch is a painting of a lizard person being smote by a bolt of lightning."
 
@@ -1290,10 +1294,10 @@ To say makeshift resonator state:
 the steeple is above the First Utilitarian Church of Enigma Lake. It is in ELR. It is outdoors.
 "From here, [we] can see the obelisk in the park clearly. Someone has set up a tripod here. [if the content of the tripod is nothing]Its mount is empty[otherwise if the content of the tripod is the telescope][A telescope] is mounted on it[otherwise][makeshift resonator state][end if].
 
-Stairs lead down to the church proper."
+A ladder leads down to the church proper."
 The x-coordinate of the steeple is 2. The y-coordinate of the steeple is 1.
 
-The steeple stairs are scenery in the steeple. "The stairs lead down to the church proper."
+The steeple ladder is scenery in the steeple. "The ladder leads down to the church proper."
 
 Some stained-glass-window-steeples are scenery in the steeple. They are privately-named. The printed name is "stained glass windows". Understand "stained/glass/windows" as stained-glass-window-steeples. "The steeple is surrounded by the typical Utilitarian perfectly clear stained glass windows.".
 stained-glass-window-steeples are unsnarkable.
@@ -1420,6 +1424,8 @@ Instead of removing something from the tripod when the content of the tripod is 
 	try unmounting the noun;
 
 Mounting it on is an action applying to two things. Understand "mount [something] on/in/onto [something]" as mounting it on.
+Understand "mount [something] on/in/onto [the platform]" as inserting it into.
+Understand "mount [something] on/in/onto [the broadcast tower]" as inserting it into.
 
 Check mounting something on the tripod:
 	if the content of the tripod is something:
@@ -1586,7 +1592,7 @@ It is unsnarkable.
 Instead of doing something to something when the action requires a touchable noun and (the noun is not enclosed by the abandoned pickup truck or the noun is enclosed by the truck bed) and the noun is not the abandoned pickup truck and the player is in the abandoned pickup truck:
 	say "Faraji can't do that from inside the truck.";
 
-Instead of doing something to something when the action requires a touchable noun and the noun is enclosed by the abandoned pickup truck and the noun is not enclosed by the truck bed and the noun is not the abandoned pickup truck and the player is not in the abandoned pickup truck:
+Instead of doing something to something when the action requires a touchable noun and the noun is enclosed by the abandoned pickup truck and the noun is not enclosed by the truck bed and the noun is not the abandoned pickup truck and the noun is not the truck hood and the player is not in the abandoned pickup truck:
 	say "Faraji can't do that from here.";
 
 The hood contains a dirty car battery. 
@@ -1606,7 +1612,7 @@ After examining the dirty battery:
 	now the player knows dirty-battery;
 
 Instead of doing something to the dirty battery when the action requires a touchable noun:
-	say "With so much acid on the battery, it's probably best not to touch it with bare hands.";
+	say "With so much acid on the battery, it's probably best not to touch it with bare hands. To be honest, the battery looks like it's a lost cause anyway.";
 
 After entering the abandoned pickup truck:
 	try looking;
@@ -2330,6 +2336,10 @@ Report divining-action:
 	otherwise if the player is in the large grave and the wooden frame is nowhere:
 		say "Faraji holds the dowsing rod and walks around the grave. The rod starts to vibrate and pulling towards a spot in the dirt at the center of the grave. There must be something buried there!";
 
+Wooden beams is a backdrop. Understand "white/plaster" as wooden beams.
+
+It is in Horton Family House Kitchen, Horton Family House Parlor, and Second Floor of the Horton Family House. "The house is built of sturdy wooden beams and plaster."
+
 Book 25.1 - Horton Family House Parlor
 
 The Horton Family House Parlor is south of Horton Family House Kitchen. It is in ELR. It is indoors. "Faraji finds something creepy about this room, as if charged with the residue of strange events long past. Which is very peculiar, considering Faraji doesn't believe in ghosts. Perhaps it's the creepy doll-fly that flew out of here.
@@ -2593,7 +2603,7 @@ Horton-back-facade is a building facade. It is in Horton Graveyard. It is privat
 	It is enterable from Horton Graveyard. 
 
 The Witnessing of Hezekiah is in the wardrobe. It is proper-named. The printed name is "[italic type]The Witnessing of Hezekiah[roman type]". Understand "book" as The Witnessing of Hezekiah.  
-The description is "A small, leather-bound book, titled 'The Witnessing of Hezekiah: as told to Jeremiah Horton by Hezekiah Horton'. The book is filled with strange, cryptic passages, and is difficult to read. [We] [find] one page of particular interest. It reads, 'And lo, Hezekiah, in his wisdom, did prophesy of the impending flood and the necessity to make ready. He spoke of a sacred artifact, a resonator, bestowed with divine power, that would unveil a gateway to the ethereal realm. And he revealed the quest to find the lost astral traveler who would guide the faithful out of the coming darkness. Thus spake Hezekiah: [']First form from the wood of the ash tree a frame. Fill it with the sound of the resonant instrument, bathe it in the ghostly light, and bind it to the astral focus. Strike the frame with my Rod to create the astral resonator. Ascend the ladder and channel a mighty power through the resonator, directing it towards the crystal eye. Once thou hast done this, illuminate the eye likewise twice more, and the portal shall open, revealing the path to transcendence.[']'".
+The description is "A small, leather-bound book, titled 'The Witnessing of Hezekiah: as told to Jeremiah Horton by Hezekiah Horton'. The book is filled with strange, cryptic passages, and is difficult to read. [We] [find] one page of particular interest. It reads, 'And lo, Hezekiah, in his wisdom, did prophesy of the impending flood and the necessity to make ready. He spoke of a sacred artifact, a resonator, bestowed with divine power, that would unveil a gateway to the ethereal realm. And he revealed the quest to find the lost astral traveler who would guide the faithful out of the coming darkness. Thus spake Hezekiah: [']First form from the wood of the ash tree a frame. Put into it the resonant instrument, the ghostly source of light, and the astral focus. Strike the frame with my Rod to create the astral resonator. Ascend the ladder and channel a mighty power through the resonator, directing it towards the crystal eye. Once thou hast done this, illuminate the eye likewise twice more, and the portal shall open, revealing the path to transcendence.[']'".
 It is unsnarkable. The Witnessing of Hezekiah can be read.
 
 The shiny astral resonator is a thing. It is privately-named. The description is "A small, shiny, metallic, cylindrical object. One end is capped with a lens, while the other terminates in two shiny metal chains, each with a shiny metal clamp, as if it were designed to be attached to something.".
@@ -2608,10 +2618,10 @@ After examining the Witnessing of Hezekiah:
 
 Book 28 - Fire Station 1
 
-The garage door is a closed scenery door. It is west of Solvay Road 100 block and east of the Fire Station 1. Understand "big/red/door" as garage door. The description is "[if the location is Solvay Road 100 block]A big red door, with a sign reading 'Fire Station 1'[otherwise]It's a big red door[end if]."
+The garage door is a closed scenery door. It is west of Solvay Road 100 block and east of the Fire Station 1. Understand "big/red/door" as garage door. The description is "[if the location is Solvay Road 100 block]A big red door, with a sign reading 'Fire Station 1'[otherwise]It's a big red door[end if]. It is [if the garage door is open]open[otherwise]closed[end if]."
 It is unsnarkable.
 
-Fire Station 1 is in ELR. The printed name is "Hook and Ladder Company #1". "The fire station is a modest red brick building dating to the late 19th century. The garage door is to the east. There is a large blue button mounted on the wall."
+Fire Station 1 is in ELR. The printed name is "Hook and Ladder Company #1". "The fire station is a modest red brick building dating to the late 19th century. The garage door, [if the garage door is closed]closed[otherwise]open[end if], is to the east. There is a large blue button mounted on the wall."
 Understand "hook/and/ladder/company/#1" as Fire Station 1. 
 
 
@@ -2620,6 +2630,157 @@ The x-coordinate of the Fire Station 1 is -2. The y-coordinate of the Fire Stati
 The metal ladder is in Fire Station 1. "A ladder rests against the wall." The description is "A metal ladder, about 6 feet long. It looks sturdy and well-maintained."
 
 Part 1 - Stupid ladder tricks
+
+Leaning it against is an action applying to one carried thing and one thing. Understand "lean [the metal ladder] against/on [something]" as leaning it against. Understand the command "prop" as "lean". Understand "put [the metal ladder] against [something]" as leaning it against.
+
+Check leaning the metal ladder against:
+	let ladder loc be the convenient ladder location;
+	if ladder loc is the floor:
+		say "[The second noun] is not ideal for leaning the ladder against. Faraji might drop the ladder instead." instead;
+	if the second noun is not ladder loc:
+		say "[The second noun] is not ideal for leaning the ladder against. Faraji might have luck leaning it against [the ladder loc] instead." instead;
+		stop the action;
+
+Carry out leaning the metal ladder against:
+	silently try dropping the metal ladder;
+
+To decide what object is the convenient ladder location:
+	if the location is:
+		-- featureless hyperplane:
+			if the Ethereal Pillar is in the featureless hyperplane:
+				decide on the Ethereal Pillar;
+			otherwise:
+				decide on the floor;
+		-- field office reception:
+			decide on the walls;
+		-- field office hallway:
+			decide on the walls;
+		-- Minerva's office:
+			decide on the walls;
+		-- field office chief's office:
+			decide on the walls;
+		-- Christy's office:
+			decide on the walls;
+		-- Portal Room 1:	
+			decide on the portal to the past;
+		-- Portal Room 2:
+			decide on the auxiliary portal;
+		-- Strip Mall Parking Lot South:
+			decide on the floor;
+		-- astral-tunnel-1:
+			decide on the walls;
+		-- astral-tunnel-2:
+			decide on the walls;
+		-- astral-tunnel-3:
+			decide on the walls;
+		-- back lot:
+			decide on the dumpster;
+		-- laundromat back room:
+			decide on the walls;
+		-- laundromat basement:
+			decide on the walls;
+		-- back basement:
+			decide on the walls;
+		-- Li'l Nectarine Convenience Store:
+			decide on the shelves;
+		-- Enigma Lake town hall:
+			decide on the floor;
+		-- Main Street 200 block:
+			decide on the floor;
+		-- Main at Solvay:
+			decide on the floor;
+		-- Solvay Road leading out of town:
+			decide on the floor;
+		-- Solvay Road 100 block:
+			decide on the floor;
+		-- Enigma Park:
+			decide on the obelisk;
+		-- Lake Street by the park:
+			decide on the floor;
+		-- Lake Street by the gym:
+			decide on the floor;
+		-- Main at Lake:
+			decide on the floor;
+		-- Lake shore north of the park:
+			decide on the workshed-facade;
+		-- Rolle's department store:
+			decide on the walls;
+		-- Henry's Hot Skillet:
+			decide on the lunch counter;
+		-- Reading Room:
+			decide on the bookshelves;
+		-- Fresnel's Music:
+			decide on the counter;
+		-- Horton Family House Kitchen:	
+			decide on the walls;
+		-- Solvay-Road-by-the-lake:	
+			decide on the floor;
+		-- Lake Shore west:
+			decide on the floor;
+		-- Lake at Ridge:
+			decide on the pickup truck;
+		-- dirty shack:
+			decide on the floor;
+		-- Radio Station WGXC:
+			decide on the floor;
+		-- radio station roof:
+			decide on the broadcast tower;
+		-- public gymnasium:
+			decide on the floor;
+		-- First Utilitarian Church of Enigma Lake:
+			decide on the walls;
+		-- vestry:
+			decide on the walls;
+		-- church basement:
+			decide on the walls;
+		-- steeple:
+			decide on the walls;
+		-- workshed:
+			decide on the walls;
+		-- hidden cave:
+			decide on the walls;
+		-- circular chamber:
+			decide on the walls;
+		-- old root cellar:
+			decide on the floor;
+		-- Horton Family House Parlor:
+			decide on the walls;
+		-- Second Floor of the Horton House:
+			decide on the walls;
+		-- Horton astral tunnel:
+			decide on the walls;
+		-- Fire Station 1:
+			decide on the walls;
+		-- Horton Graveyard:
+			decide on the floor;
+		-- large grave:
+			decide on the walls;
+		-- Bookstore Basement:
+			decide on the walls;
+		-- sewer tunnel 1:
+			decide on the walls;
+		-- sewer tunnel 2:
+			decide on the walls;
+		-- sewer tunnel 3:
+			decide on the walls;
+		-- gym basement:
+			decide on the walls;
+		-- Henry's roof:
+			decide on the floor;
+		-- Biff's Office:
+			decide on the walls;
+		-- dumpster:
+			decide on the walls;
+		-- BOSH office hallway:
+			decide on the walls;
+		-- BOSH chief's office:
+			decide on the walls;
+		-- Moira's office:
+			decide on the walls;
+		-- utility closet:
+			decide on the walls;
+		-- otherwise:
+			decide on the floor;
 
 After dropping the metal ladder:
 	if the location is:
@@ -3071,7 +3232,7 @@ For state change reporting the spotlight:
 
 The blue button is scenery in the Fire Station 1. "A large blue button, mounted on the wall."
 
-Does the player mean pushing the blue button: 
+Does the player mean doing something to the blue button: 
 	it is very likely.
 
 Instead of pushing the blue button when the garage door is closed:
@@ -3305,8 +3466,21 @@ Instead of attacking the bell with the tuning fork:
 Book 33 - Henry's Hot Skillet
 
 Henry's Hot Skillet is a leavable room. It is in ELR. It is indoors. It has egress north.
-The description is "This is the epitome of the homey small-town diner of times gone by, except for the lack of all furniture, cooking implements, food, decor, and so on. There is a staircase leading up, and the exit is north. A pair of insulated wires hangs from the ceiling at one end of the counter[if the clean battery is on the lunch counter and the clean battery is hooked up]. The wires are attached to a battery resting on the counter[otherwise if the clean battery is on the lunch counter]. A battery rests on the counter[end if]." 
+The description is "This is the epitome of the homey small-town diner of times gone by, except for the lack of all furniture, cooking implements, food, decor, and so on. There is a staircase leading up, and the exit is north. A pair of insulated wires hangs from the ceiling at one end of the counter[if the clean battery is on the lunch counter and the clean battery is hooked up]. The wires are attached to a battery resting on the counter[otherwise if the clean battery is on the lunch counter]. A battery rests on the counter[end if][other counter contents]." 
 Understand "diner/restaurant" as Henry's Hot Skillet.
+
+To say other counter contents:
+	let L be the list of things on the lunch counter;
+	if the clean battery is listed in L:
+		remove the clean battery from L;
+	if the number of entries in L > 1:
+		say ". Also on the counter are [L with indefinite articles]";
+	otherwise if the number of entries in L is 1:
+		say ". Also on the counter is [L with indefinite articles]";
+
+Description notes for the clean battery:
+	if the clean battery is hooked up:
+		add "attached to wires" to the descriptive notes.
 
 The diner staircase is scenery in Henry's Hot Skillet. "A staircase leads up, probably to the roof." 
 Understand "stair/stairs", "stair case" as the diner staircase.

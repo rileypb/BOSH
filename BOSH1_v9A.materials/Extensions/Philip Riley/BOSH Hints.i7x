@@ -384,7 +384,7 @@ Activating hint-threaded-socket:
 		deactivate;
 
 
-hint-wires is a progressive hint topic. Understand "wires", "wire" as the hint-wires. The printed name is "wires". The progression is {"I wonder what was connected to the wires before.", "Faraji might look on the roof for a clue.", "It looks like the wires run from the rooftop aerial. Too bad there's no TV to hook up.", "What could Faraji connect to the wires instead?", "Faraji should have a close look at the aerial.", "It looks like there's a strange socket attached to the aerial.", "Maybe it needs power.", "Perhaps Faraji could use the wires to supply power to the aerial.", "Faraji should find a power source to connect to the wires.", "Has Faraji had a look at the abandoned truck in the northeastern part of town?", "Faraji should look under the hood of the truck.", "Maybe a battery?", "It doesn't seem like the truck battery will work.", "Faraji should look for a clean battery.", "Where else could Faraji find a battery?", "How about Faraji's car? It's parked right outside the BOSH offices.", "Faraji needs to get back to Enigma Lake and Henry's.", "Then they can connect the battery to the wires.", "ATTACH BATTERY TO WIRES"}.
+hint-wires is a progressive hint topic. Understand "wires", "wire" as the hint-wires. The printed name is "wires". The progression is {"I wonder what was connected to the wires before.", "Faraji might look on the roof for a clue.", "It looks like the wires run from the rooftop aerial. Too bad there's no TV to hook up.", "What could Faraji connect to the wires instead?", "Faraji should have a close look at the aerial.", "It looks like there's a strange socket attached to the aerial.", "Maybe it needs power.", "Perhaps Faraji could use the wires to supply power to the aerial.", "Faraji should find a power source to connect to the wires.", "Has Faraji had a look at the abandoned truck in the northeastern part of town?", "Faraji should look under the hood of the truck.", "Maybe a battery?", "It doesn't seem like the truck battery will work.", "Faraji should look for a clean battery.", "How about from Faraji's car? It's parked right outside the BOSH offices.", "Faraji needs to get back to Enigma Lake and Henry's.", "Then they can connect the battery to the wires.", "ATTACH BATTERY TO WIRES"}.
 	
 Activating hint-wires:
 	if the wires are seen and the clean battery is not hooked up:
@@ -525,7 +525,7 @@ Activating the hint-extension-cord:
 		activate;
 	deactivate;
 
-The hint-bible is a progressive hint topic. Understand "what/is/the/Book/of/Utilitarianism", "bible" as the hint-bible. The printed name is "what is the Book of Utilitarianism". The progression is {"I wonder if any of this stuff is important.", "Is there a passage that would be useful if it came true?", "What about the passage about the cursèd word?", "The cursèd word is '[cursed word] '", "Who might Faraji say that to?", "Faraji should try saying the cursèd word to the group of lizard people."}.
+The hint-bible is a progressive hint topic. Understand "what/is/the/Book/of/Utilitarianism", "bible" as the hint-bible. The printed name is "what is the Book of Utilitarianism". The progression is {"I wonder if any of this stuff is important.", "Is there a passage that would be useful if it came true?", "What about the passage about the cursèd word?", "The cursèd word is '[cursed word].'", "Who might Faraji say that to?", "Faraji should try saying the cursèd word to the group of lizard people."}.
 
 hinting the hint-bible:
 	if the Book of Utilitarianism is not read:
@@ -558,7 +558,7 @@ Activating the hint-lizard-people:
 	deactivate;
 
 The hint-wooden-frame is a progressive hint topic. Understand "wooden/frame" as the hint-wooden-frame. The printed name is "wooden frame". 
-The progression is {"What is the wooden frame for?", "The wooden frame looks like it's meant to hold specific things. But what?", "Have you read the Witnessing of Hezekiah? Find it and read it first.", "The Witnessing of Hezekiah mentions a frame formed 'from the wood of the ash tree'.", "Hezekiah also mentions 'a sacred artifact, a resonator'.", "Faraji can't proceed further if they don't know what 'a resonator' is. There is a book in town that can help.", "Perhaps, by 'a resonator', Hezekiah means an astral resonator.", "Hezekiah also mentions 'the resonant origin', 'the ghostly light', and 'the astral focus'. What might those be?", "When the proper elements are put in the frame, the astral resonator will be complete.", "Faraji must then tap it with the Rod of Hezekiah."}.
+The progression is {"What is the wooden frame for?", "The wooden frame looks like it's meant to hold specific things. But what?", "Have you read the Witnessing of Hezekiah? Find it and read it first.", "The Witnessing of Hezekiah mentions a frame formed 'from the wood of the ash tree'.", "Hezekiah also mentions 'a sacred artifact, a resonator'.", "Faraji can't proceed further if they don't know what 'a resonator' is. There is a book in town that can help.", "Perhaps, by 'a resonator', Hezekiah means an astral resonator.", "Hezekiah also mentions 'the resonant instrument', 'the ghostly light', and 'the astral focus'. What might those be?", "When the proper elements are put in the frame, the astral resonator will be complete.", "Faraji must then tap it with the Rod of Hezekiah."}.
 
 [ The hint-wooden-frame-witnessing is an unlisted progressive hint topic.
 The progression is {"The Witnessing of Hezekiah mentions a frame formed 'from the wood of the ash tree'.", "Hezekiah also mentions 'a sacred artifact, a resonator'.", "Faraji can't proceed further if they don't know what 'a resonator' is."}.
@@ -579,7 +579,7 @@ Activating the hint-wooden-frame:
 		activate;
 	deactivate;
 
-The hint-resonant-origin is a progressive hint topic. Understand "resonant/origin" as the hint-resonant-origin. The printed name is "resonant origin". The progression is {"What might the resonant origin be?", "What might be the origin of resonance?", "Maybe Faraji should look around the town some more.", "The tuning fork in the music store is a source of resonance.", "Faraji should try inserting the tuning fork into the wooden frame."}.
+The hint-resonant-origin is a progressive hint topic. Understand "resonant/instrument" as the hint-resonant-origin. The printed name is "resonant instrument". The progression is {"What might the resonant instrument be?", "What resonates?", "Maybe Faraji should look around the town some more.", "The tuning fork in the music store is a source of resonance.", "Faraji should try inserting the tuning fork into the wooden frame."}.
 
 Activating the hint-resonant-origin:
 	if the hint-wooden-frame is exhausted and the makeshift astral resonator is nowhere and the tuning fork is not in the wooden frame:
@@ -770,7 +770,7 @@ Activating the hint-hutz-get-hot-coffee:
 		activate;
 	deactivate;
 
-The hint-dowsing-rod is a progressive hint topic. Understand "dowsing/rod" as the hint-dowsing-rod. The printed name is "dowsing rod". The progression is {"A dowsing rod is a tool used to find underground water and other buried things.", "The user holds the rod and walks around until the rod moves.", "Faraji should watch carefully for the rod to vibrate.", "The rod will vibrate on its own when it's over the right spot.", "Faraji should try carrying the dowsing rod around the town.", "Perhaps somewhere in the graveyard.", "Faraji should also try the workshed."}.
+The hint-dowsing-rod is a progressive hint topic. Understand "dowsing/rod" as the hint-dowsing-rod. The printed name is "dowsing rod". The progression is {"A dowsing rod is a tool used to find underground water and other buried things.", "The user holds the rod and walks around until the rod vibrates.", "Faraji should watch carefully for the rod to vibrate.", "The rod will vibrate on its own when it's over the right spot.", "Faraji should try carrying the dowsing rod around the town.", "Perhaps somewhere in the graveyard.", "Faraji should also try the workshed."}.
 
 Activating the hint-dowsing-rod:
 	if the shiny astral resonator is handled and the trapdoor is revealed:

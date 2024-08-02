@@ -81,7 +81,7 @@ To say battery state:
 	if the clean battery is not in the Hyundai hood:
 		say ", and the battery is missing";
 
-The Hyundai hood is a part of Car 1. It is an openable closed container. The description is "The hood is [if the Hyundai hood is closed]closed[otherwise]open[battery state][end if]." Understand "accent/bonnet" as the Hyundai hood.
+The Hyundai hood is a part of Car 1. It is an openable closed container. The description is "The hood is [if the Hyundai hood is closed]closed[otherwise]open[battery state][end if]." Understand "accent/bonnet", "hood/bonnet of accent" as the Hyundai hood.
 
 The Hyundai hood is unsnarkable.
 
@@ -117,7 +117,7 @@ Car 2 is an edifice.
 Instead of unlocking or locking or opening or closing or entering or driving car 1:
 	say "[We] [don't] have the keys to Klimp's car.";
 
-The Porsche hood is a part of Car 2. It is an openable closed container. The description is "The hood is closed." Understand "bonnet/911" as the Porsche hood.
+The Porsche hood is a part of Car 2. It is an openable closed container. The description is "The hood is closed." Understand "bonnet/911", "hood/bonnet of porsche" as the Porsche hood.
 
 The Porsche hood is unsnarkable.
 

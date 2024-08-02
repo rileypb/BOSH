@@ -14,14 +14,14 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 37158 words long.
+I've now read your source text, which is 37174 words long.
 
 
 -----------------------------------------------------
 Phase II ... Semantic analysis Ia
 -----------------------------------------------------
 
-I've also read Standard Rules by Graham Nelson, which is 41348 words long.
+I've also read Standard Rules by Graham Nelson, which is 41366 words long.
 I've also read English Language by Graham Nelson, which is 2297 words long.
 I've also read Epistemology by Eric Eve, which is 1505 words long.
 I've also read Conversation Framework by Eric Eve, which is 5321 words long.
@@ -60,13 +60,13 @@ I've also read Hyperspace by Philip Riley, which is 17631 words long.
 I've also read BOSH Facts by Philip Riley, which is 193 words long.
 I've also read Swamp Park by Philip Riley, which is 8777 words long.
 I've also read Margaret by Philip Riley, which is 2630 words long.
-I've also read Enigma Lake by Philip Riley, which is 39423 words long.
+I've also read Enigma Lake by Philip Riley, which is 40365 words long.
 I've also read I Can Dig It by Philip Riley, which is 77 words long.
 I've also read BOSH Help by Philip Riley, which is 6761 words long.
 I've also read Overlook by Philip Riley, which is 763 words long.
 I've also read Gender Options by Nathanael Nerode, which is 7679 words long.
 I've also read Make Test by Philip Riley, which is 288 words long.
-I've also read BOSH Hints by Philip Riley, which is 8403 words long.
+I've also read BOSH Hints by Philip Riley, which is 8397 words long.
 I've also read Hearing by Philip Riley, which is 1220 words long.
 I've also read Improved Pushing by Philip Riley, which is 46 words long.
 I've also read PBR Common by Philip Riley, which is 109 words long.
@@ -154,7 +154,7 @@ Regional: CONSTANT_VNT'elr'-region(I564_elr)(I454'elr')
  == region
 Regional: CONSTANT_VNT'elr'-region(I564_elr)(I454'elr')
  == region
-Regional: CONSTANT_VNT'help area'-region(I844_help_area)(I730'help area')
+Regional: CONSTANT_VNT'help area'-region(I845_help_area)(I731'help area')
  == region
 Regional: CONSTANT_VNT'elr'-region(I564_elr)(I454'elr')
  == region
@@ -164,7 +164,7 @@ Regional: CONSTANT_VNT'elr'-region(I564_elr)(I454'elr')
  == region
 Regional: CONSTANT_VNT'elr'-region(I564_elr)(I454'elr')
  == region
-Regional: CONSTANT_VNT'help area'-region(I844_help_area)(I730'help area')
+Regional: CONSTANT_VNT'help area'-region(I845_help_area)(I731'help area')
  == region
 
 
@@ -314,9 +314,9 @@ Regional: CONSTANT_VNT'elr'-region(I564_elr)(I454'elr')
              == region
             Regional: CONSTANT_VNT'elr'-region(I564_elr)(I454'elr')
              == region
-            Regional: CONSTANT_VNT'help area'-region(I844_help_area)(I730'help area')
+            Regional: CONSTANT_VNT'help area'-region(I845_help_area)(I731'help area')
              == region
-            Regional: CONSTANT_VNT'help area'-region(I844_help_area)(I730'help area')
+            Regional: CONSTANT_VNT'help area'-region(I845_help_area)(I731'help area')
              == region
 
 
@@ -357,8 +357,8 @@ Providing for a total heap of 65536, given requirement of 46096
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 313 files written as streams.
-CPU time: 1362 centiseconds
+Total of 314 files written as streams.
+CPU time: 1507 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

@@ -2894,6 +2894,8 @@ Carry out purging:
 			now X is in the Room of Subjects;
 		if X is a hint topic:
 			now X is in the Room of Stuff;
+		if X is the strange shiny metal object:
+			now X is in the Room of Stuff;
 
 	
 Volume 2 - Test command tweak for clean transcripts
