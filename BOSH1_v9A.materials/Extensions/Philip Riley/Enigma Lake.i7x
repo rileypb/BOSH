@@ -302,7 +302,10 @@ To explore is a verb.
 Enigma Park is a leavable room. It is north of Enigma Lake town hall. It is unleavable. Enigma Park is in ELR. It is outdoors.
 "[first time]It's probably beautiful during the day, but tonight the deep shadows among the trees seem ominous. Faraji is watchful and tense as they explore the park. 
 
-[only]The central focus of the park is a large obelisk inscribed with the names of the town's citizens lost in the Great War. Firs and maples line the paths. The town hall is to the south, and other exits are to the north, west, and east. Other egress is blocked by stone walls[park beam description]."
+[only]The central focus of the park is a large obelisk inscribed with the names of the town's citizens lost in the Great War. Firs and maples line the paths. The town hall is to the south, and other exits are to the north, west, and east. Other egress is blocked by stone walls[park beam description][if obelisk-ladder is revealed]
+
+The obelisk has moved, revealing a ladder leading down into the ground[end if]."
+
 
 To say park beam description:
 	beam description, in the park;
@@ -1364,7 +1367,6 @@ portal opened is a truth state that varies. portal opened is false.
 
 To open the portal:
 	now portal opened is true;
-	now hidden cave is not dark;
 	now circular chamber is not dark;
 	now the ethereal portal is in the circular chamber;
 
@@ -1671,7 +1673,7 @@ The enigma-park-scenery is unsnarkable. ]
 
 Book 21 - Workshed
 
-the workshed is a leavable room. It has egress northwest. It is in ELR. It is indoors. "It is a small, weathered building, with a single door and no windows, and a creaky wooden floor. [if the light bulb is in the hanging socket]The interior is dimly lit by a single light bulb hanging from the ceiling. [otherwise]The interior is almost dark. An empty light socket hangs from the ceiling. [end if][equipment cabinet state] cabinet is in the corner. [rusty metal door state] rusty metal door leads out of the shed. [if the trapdoor is revealed]A trapdoor is in the floor, [trapdoor state].[end if]".
+the workshed is a leavable room. It has egress northwest. It is in ELR. It is indoors. "It is a small, weathered building, with a single door and no windows, and a creaky wooden floor. [if the light bulb is in the hanging socket]The interior is dimly lit by a single light bulb hanging from the ceiling. [otherwise]The interior is almost dark. An empty light socket hangs from the ceiling. [end if][equipment cabinet state] cabinet is in the corner. [rusty metal door state] rusty metal door leads out of the shed.".
 
 The light bulb is a thing. The description is "A standard 60W light bulb."
 The light bulb is unsnarkable.
@@ -1712,11 +1714,6 @@ To say equipment cabinet state:
 	otherwise:
 		say "A closed";
 
-To say trapdoor state:
-	if the trapdoor is open:
-		say "open. It leads down into darkness";
-	otherwise:
-		say "closed";
 
 To say rusty metal door state:
 	if the rusty metal door is open:
@@ -1739,46 +1736,19 @@ Understand "strange/rusty/metal/metallic/cylindrical/cylinder/object" as the rus
 The threaded base is part of the rusty astral resonator. The description is "The base is threaded, like a light bulb."
 The rusty lens is part of the rusty astral resonator. The description is "The device is capped with a lens on one end."
 
-
-The trapdoor is a secret door. It is below the workshed and above a hidden cave. It is closed and openable. "A trapdoor is in the floor[if the trapdoor is open], leading down into darkness[otherwise], closed[end if]." 
-
-A door appearance rule for the trapdoor:
-	rule succeeds with result whether or not the trapdoor is revealed.
-
-
-After going to the workshed when the trapdoor is unrevealed and the player encloses the dowsing rod:
-	say "Something [we] [are] carrying starts to vibrate.";
-	continue the action;
-
 Description notes for the dowsing rod:
-	if the location is the workshed and the trapdoor is unrevealed:
-		add "vibrating" to descriptive notes;
 	if the location is a large grave and the shiny astral resonator is nowhere:
 		add "vibrating" to descriptive notes;
 
-Instead of examining the dowsing rod when the location is the workshed and the trapdoor is unrevealed:
-	say "The dowsing rod is vibrating.";
-
-Instead of examining the floor when the location is the workshed and the trapdoor is unrevealed and the player encloses the dowsing rod:
-	say "Faraji examines the floor closely, and discovers the faint outlines of a trapdoor[if the player encloses the dowsing rod]. The vibrations cease[end if].";
-	now the trapdoor is revealed;
-
-
-Book 22 - Hidden cave
-
-a hidden cave is a room. It is in ELR. It is indoors. It is always-indefinite. It is dark.
-"The cave is dark and damp, with a low ceiling[if portal opened is true]. From the passage to the south comes enough light to see[otherwise]. A passage leads to the south[end if]. A set of rickety stairs leads up to the workshed above."
-
-The snarky remark of the hidden cave is "Perhaps there's something down here that will help me answer the phone."
-
-The rickety stairs are scenery in the hidden cave. "A set of rickety stairs leads up to the workshed above."
-
-
 Book 23 - Portal room
 
-a circular chamber is south of hidden cave. It is in ELR. It is indoors. The circular chamber is dark. It is always-indefinite.
-"The chamber is circular, with a low ceiling. The walls are rough-hewn stone. A passage leads to the north."
+The obelisk-ladder is a secret door. It is below Enigma Park and above the circular chamber. It is privately-named. It is scenery. The printed name is "ladder". Understand "ladder" as the obelisk-ladder. "A ladder leads down into the darkness below the obelisk."
 
+The circular chamber is in ELR. It is indoors. The circular chamber is dark. It is always-indefinite.
+"The chamber is circular, with a low ceiling. The walls are rough-hewn stone. A passage leads to the north and a ladder leads up to the obelisk above."
+
+A door appearance rule for the obelisk-ladder:
+	rule succeeds with result whether or not the obelisk-ladder is revealed.
 
 The ethereal portal is fixed in place. "A shimmering portal hovers in the center of the chamber, casting a faint light over the room."
 The description is "This portal seems to be natural, if that's indeed a possibility. It's a shimmering white oval, about six feet high and four feet wide. It's not clear where it leads."
@@ -2330,10 +2300,7 @@ Check divining-action:
 			say "Faraji doesn't have a dowsing rod." instead;
 
 Report divining-action:
-	if the player is in the workshed and the trapdoor is unrevealed:
-		say "Faraji holds the dowsing rod and walks around the room. The rod starts to vibrate, and Faraji notices the faint outlines of a trapdoor in the floor. The vibrations cease.";
-		now the trapdoor is revealed;
-	otherwise if the player is in the large grave and the wooden frame is nowhere:
+	if the player is in the large grave and the wooden frame is nowhere:
 		say "Faraji holds the dowsing rod and walks around the grave. The rod starts to vibrate and pulling towards a spot in the dirt at the center of the grave. There must be something buried there!";
 
 Wooden beams is a backdrop. Understand "white/plaster" as wooden beams.
@@ -2737,8 +2704,6 @@ To decide what object is the convenient ladder location:
 			decide on the walls;
 		-- workshed:
 			decide on the walls;
-		-- hidden cave:
-			decide on the walls;
 		-- circular chamber:
 			decide on the walls;
 		-- old root cellar:
@@ -2882,8 +2847,6 @@ After dropping the metal ladder:
 		-- steeple:
 			say "Faraji leans the ladder against the wall.";
 		-- workshed:
-			say "Faraji leans the ladder against the wall.";
-		-- hidden cave:
 			say "Faraji leans the ladder against the wall.";
 		-- circular chamber:
 			say "Faraji leans the ladder against the wall.";
@@ -3030,8 +2993,6 @@ Rule for writing a paragraph about the metal ladder:
 			say "A ladder rests against a wall.";
 		-- workshed:
 			say "A ladder leans against the wall.";
-		-- hidden cave:
-			say "A ladder leans against the wall.";
 		-- circular chamber:
 			say "A ladder leans against the wall.";
 		-- old root cellar:
@@ -3152,8 +3113,6 @@ Instead of climbing up the metal ladder when the metal ladder is enclosed by the
 			say "Faraji climbs quickly up and down the ladder. That was fun.";
 		-- workshed:
 			say "Faraji climbs quickly up and down the ladder. That was fun.";
-		-- hidden cave:
-			say "A ladder leans against the wall.";
 		-- circular chamber:
 			say "Faraji climbs quickly up and down the ladder. That was fun.";
 		-- Horton Family House Parlor:

@@ -770,10 +770,10 @@ Activating the hint-hutz-get-hot-coffee:
 		activate;
 	deactivate;
 
-The hint-dowsing-rod is a progressive hint topic. Understand "dowsing/rod" as the hint-dowsing-rod. The printed name is "dowsing rod". The progression is {"A dowsing rod is a tool used to find underground water and other buried things.", "The user holds the rod and walks around until the rod vibrates.", "Faraji should watch carefully for the rod to vibrate.", "The rod will vibrate on its own when it's over the right spot.", "Faraji should try carrying the dowsing rod around the town.", "Perhaps somewhere in the graveyard.", "Faraji should also try the workshed."}.
+The hint-dowsing-rod is a progressive hint topic. Understand "dowsing/rod" as the hint-dowsing-rod. The printed name is "dowsing rod". The progression is {"A dowsing rod is a tool used to find underground water and other buried things.", "The user holds the rod and walks around until the rod vibrates.", "Faraji should watch carefully for the rod to vibrate.", "The rod will vibrate on its own when it's over the right spot.", "Faraji should try carrying the dowsing rod around the town.", "Perhaps somewhere in the graveyard."}.
 
 Activating the hint-dowsing-rod:
-	if the shiny astral resonator is handled and the trapdoor is revealed:
+	if the wooden frame is handled:
 		deactivate;
 	if the dowsing rod is handled:
 		activate;

@@ -2824,15 +2824,16 @@ Carry out jumping to endgame:
 	now the extension cord is in the steeple;
 	now the extension cord is plugged into the electrical outlet;
 	now the makeshift resonator is plugged into the extension cord;
-	now the rusty resonator is in the socket;
+	now the circuit breaker is switched on;
+	now the rusty resonator is in the threaded socket;
 	now the clean battery is hooked up;
 	now the shiny resonator is on the platform;
 	now the power switch is switched on;
 	open the portal;
-	now the trapdoor is revealed;
 	now the astral lenses are nowhere;
-	now player is in the hidden cave;
+	now player is in Enigma Park;
 	now visited hyperspace is true;
+	now the obelisk-ladder is revealed;
 
 jumping to last bit is an action applying to nothing. Understand "cheat last" as jumping to last bit.
 
