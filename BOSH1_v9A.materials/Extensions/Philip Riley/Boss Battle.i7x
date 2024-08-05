@@ -8,7 +8,7 @@ The Boss Battle is a scene. The Boss Battle begins when the player is in the old
 
 player action is a kind of value. The player actions are player-attacking, player-defending, player-idling, and player-distracted.
 
-enemy action is a kind of value. The enemy actions are enemy-attacking, enemy-defending, enemy-idling, enemy-shouting, enemy-breathing and enemy-distracted.
+enemy action is a kind of value. The enemy actions are enemy-attacking, enemy-defending, enemy-idling, enemy-shouting, enemy-breathing, enemy-turning-to-face-us, and enemy-distracted.
 
 daniels action is a kind of value. The daniels actions are daniels-attacking, daniels-defending, daniels-idling, daniels-shouting, and daniels-distracted.
 
@@ -85,9 +85,34 @@ Volume - The enemy's actions
 
 Every turn during the Boss Battle:
 	[ choose an enemy action for the lizard people ]
+	[ every ten turns, the lizard people will breathe noxious vapor ]
+	[ if there is a root vegetable on the ground, there is a chance the lizards will take it. This counts as being distracted. ]
+	[ if the lizard people are facing away, there is a chance they will turn around. ]
+	[ if the lizard people are facing us and holding a root vegetable, they will attack. ]
+	[ there is a chance they will shout an insult. ]
+	[ if the lizard people are facing us, there is a chance they will defend. ]
+	[ otherwise they will idle. ]
 	if the remainder after dividing the battle turn by 10 is 0:
-		say "The lizard people hiss, spewing forth a cloud of noxious vapor. Faraji can't avoid breathing it in.";
 		now current enemy action is enemy-breathing;
+	otherwise if enemy facing is lizard people facing away and a random chance of 2 in 5 succeeds:
+		now current enemy action is enemy-turning-to-face-us;
+	otherwise if enemy facing is lizard people facing us and the lizard people are holding a root-vegetable:
+		now current enemy action is enemy-attacking;
+	otherwise if a random chance of 1 in 3 succeeds:
+		now current enemy action is enemy-shouting;
+	otherwise if a random chance of 1 in 3 succeeds:
+		now current enemy action is enemy-defending;
+	otherwise:
+		now current enemy action is enemy-idling;
+
+Volume - Daniels' actions
+
+Every turn during the Boss Battle:
+	[ choose an action for Daniels ]
+	[ every 2-5 turns, Daniels will shout an insult at the lizard people ]
+	[ if Daniels is holding a root vegetable, he will throw it at the lizard people ]
+	[ if a root vegetable is on the ground, there is a chance Daniels will pick it up. This counts as being distracted. ]
+	
 
 Volume - Resolving the turn
 
