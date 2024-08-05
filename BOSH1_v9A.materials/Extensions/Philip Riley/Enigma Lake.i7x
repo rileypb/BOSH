@@ -1789,7 +1789,6 @@ Daniels is a man in the old root cellar.
 [ "[one of]A tired-looking man sits on the floor of the cellar. He looks up as Faraji appears. 'Ah, you must be the help I was promised,' he says. 'I'm Daniels. Agent of the hyperspace field office of the Bureau of Strange Happenings and owner of the A+ Laundromat in Swamp Park, Maryland. I'm dead tired, and ready to get out of here.'[or]Daniels, ragged and dirty, sits on the floor of the cellar. He looks tired.[stopping]". ]
 The description is "Daniels looks weary. He's dressed in a tattered suit, and his hair is unkempt."
 Understand "man/agent" as Daniels. 
-The description of the rutabaga is "A large, fresh rutabaga."
 
 Rule for deciding the concealed possessions of Daniels:
 	no;
@@ -1797,6 +1796,10 @@ Rule for deciding the concealed possessions of Daniels:
 A root-vegetable is a kind of thing. 
 A root-vegetable can be out of reach or within-reach. A root-vegetable is usually within-reach.
 A rutabaga, a turnip, and a potato are root-vegetables.
+
+The description of the turnip is "A rather large, hefty turnip."
+The description of the potato is "A large, fresh potato."
+The description of the rutabaga is "A weighty rutabaga."
 
 Instead of eating a root-vegetable:
 	say "Uncooked, [the noun] is not very appetizing.";

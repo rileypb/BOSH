@@ -358,7 +358,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 314 files written as streams.
-CPU time: 1435 centiseconds
+CPU time: 1267 centiseconds
 
 
 That concludes the debugging log from this run of Inform.
