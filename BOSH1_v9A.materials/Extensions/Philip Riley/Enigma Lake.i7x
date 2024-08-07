@@ -826,7 +826,7 @@ Carry out anonymous record playing:
 	let current record be a random record on the old turntable;
 	if the power switch is switched on:
 		say "Faraji starts the turntable. The record spins, and the speakers crackle to life, playing [the title of the current record] by [the artist of the current record].";
-		say "[music description of the current record]";
+		say "[music description of the current record][line break]";
 	otherwise:
 		say "Faraaji starts the turntable, but nothing happens. There seems to be no power.";
 
@@ -4595,6 +4595,12 @@ Carry out booking:
 hurting is an action applying to nothing. Understand "cheat hurt" as hurting.
 
 Carry out hurting:
-	hit faraji;						
+	hit faraji;					
+
+eastering is an action applying to nothing. Understand "cheat easter" as eastering.
+
+Carry out eastering:
+	now the power switch is switched on;
+	now the player is in the broadcast booth;
 
 Enigma Lake ends here.
