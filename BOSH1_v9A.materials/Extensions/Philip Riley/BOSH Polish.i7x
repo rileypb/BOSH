@@ -454,7 +454,11 @@ Dictionary of Strangeness	"That belongs to Chief Klimp."	"That belongs to Chief 
 Enigma Park	"That's somewhat heavy."	"[We] [push] it around a bit, but it's only fun for a moment."
 Trash	"Ugh. No."	"Ugh. No."
 Trash-boxes	"Ugh. No."	"Ugh. No."
-discarded records	"[We] [don't] need them."	"[We] [don't] need them."
+old turntable	"It's wired into the wall."	"It's wired into the wall."
+old speakers	"They're wired into the wall."	"They're wired into the wall."
+rotation bin	"It's too heavy to lift."	"It's too heavy to move unaided."
+trash-bin	"It's too heavy to lift."	"It's too heavy to move unaided."
+
 
 
 Table of Floors (continued)

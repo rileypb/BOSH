@@ -727,36 +727,119 @@ The broadcast-booth-facade is a building facade. It is in Radio Station WGXC. It
 
 Book 11.5 - The broadcast booth
 
-The broadcast booth is a leavable room. It is south of Radio Station WGXC. It is in ELR. It is indoors. "The broadcast booth is a small empty room, as all the broadcasting equipment has been moved out. There is an empty bin that would normally hold the records currently in rotation, and another bin marked 'trash', filled with discarded records. The exit is north."
+The broadcast booth is a leavable room. It is south of Radio Station WGXC. It is in ELR. It is indoors. "The broadcast booth is a small empty room, as all the broadcasting equipment has been moved out. There is an empty bin that would normally hold the records currently in rotation, and another bin marked 'trash', filled with discarded records. An old turntable has been discarded here. A couple of old speakers have been left attached at the top of the wall. The exit is north."
 
 It has egress north.
 
 The x-coordinate of the broadcast booth is 2. The y-coordinate of the broadcast booth is -3.
 
+The old turntable is a scenery supporter in the broadcast booth. "The turntable looks old but functional. Its power and output are wired directly into the wall." It has carrying capacity 1.
+
+Old speakers are scenery in the broadcast booth. "The speakers are old and dusty, but they look like they still work."
+
 The rotation bin is a scenery container in the broadcast booth. "The bin is empty." Understand "bin" as rotation bin.
 
-The trash-bin is a scenery container in the broadcast booth. It is privately-named. The printed name is "trash bin". "The bin is filled with discarded records." Understand "trash/bin" as trash-bin.
+The trash-bin is a scenery open transparent container in the broadcast booth. It is privately-named. The printed name is "trash bin". Understand "trash/bin" as trash-bin.
 
-The discarded records are scenery in the trash-bin. Understand "record" as discarded records.
+Instead of examining the trash-bin:
+	if nothing is in the trash-bin:
+		say "The trash bin is empty.";
+	otherwise:
+		say "The trash bin is filled with discarded records, including ";
+		say "[list of things in the trash-bin].";
 
-Instead of examining the discarded records:
-	say "Faraji pulls out a 45[quotation mark] from the bin at random";
-	let the chosen record be a random record;
-	say ". It's '[the title of the chosen record]' by [the artist of the chosen record].";
+A record is a kind of thing. A record has a text called the title. A record has a text called the artist. A record has a text called the music description.
+The title of a record is usually "". The artist of a record is usually "".
+The printed name of a record is "[italic type][title][roman type] by [artist]".
+The description of a record is "It's a typical 7[quotation mark] vinyl record, with a label on one side."
 
-Instead of searching the trash-bin:
-	try examining the discarded records;
+booboo is a record. It is in the trash-bin. The title of booboo is "Boo boo ba-doo boo boo boo". The artist of booboo is "The Four Mouths". Understand "boo/ba-doo/four/mouths" as booboo.
+The music description of booboo is "'Boo boo ba-doo boo boo boo, boo boo ba-doo boo boo boo, boo boo ba-doo boo boo boo, boo boo ba-doo boo boo boo.'"
 
-A record is a kind of thing. A record has a text called the title. A record has a text called the artist. The title of a record is usually "". The artist of a record is usually "".
+strange-record is a record. It is in the trash-bin. The title of strange-record is "Isn't It Strange I Don't Love You?". The artist of strange-record is "Peggy Patti".
+Understand "Isn't/Strange/I/Don't/Love/You/Peggy/Patti" as strange-record.
+Understand "Isn't it" as strange-record.
+Understand "Isn't it strange/I/don't love you" as strange-record.
+The music description of strange-record is "'Isn't it strange I don't love you? Isn't it strange I don't care? Isn't it strange I don't want you? Isn't it strange I'm not there?'"
 
-booboo is a record. The title of booboo is "Boo boo ba-doo boo boo boo". The artist of booboo is "The Four Mouths".
-strange is a record. The title of strange is "Isn't It Strange That I Don't Love You". The artist of strange is "Patti Perry".
-lizard is a record. The title of lizard is "I'm Afraid (of Lizard People, Darling)". The artist of lizard is "The Five Spots".
-callmeonthetelephonedarling is a record. The title of callmeonthetelephonedarling is "Stop Calling Me on the Telephone, Darling". The artist of callmeonthetelephonedarling is "Deanna and the Deans".
-norbert is a record. The title of norbert is "Norbert the Narwhal". The artist of norbert is "The ABCs".
-silly is a record. The title of silly is "Silly Little Love Song". The artist of silly is "Patti Peggy".
-moron is a record. The title of moron is "I'd Never Call You a Moron". The artist of moron is "Peggy Patti".
-dragon-record is a record. The title of dragon-record is "Save the Dragon". The artist of dragon-record is "Doris Dei and the Dots".
+callmeonthetelephonedarling is a record. It is in the trash-bin. The title of callmeonthetelephonedarling is "Stop Calling Me on the Telephone, Darling". The artist of callmeonthetelephonedarling is "Deanna and the Deans".
+The music description of callmeonthetelephonedarling is "'I've got a new number, I've got a new line, I've got a new life, and you're not in mine.'".
+
+Understand "Stop/Calling/Me/on/the/Telephone/Darling/Deanna/Deans" as callmeonthetelephonedarling.
+norbert is a record. It is in the trash-bin. The title of norbert is "Norbert the Narwhal". The artist of norbert is "The ABCs".
+Understand "Norbert/the/Narwhal/ABCs" as norbert.
+The music description of norbert is "'Norbert the Narwhal, swimming in the sea, Norbert the Narwhal, happy as can be.'"
+
+silly is a record. It is in the trash-bin. The title of silly is "Silly Little Love Song". The artist of silly is "Patti Peggy".
+Understand "Silly/Little/Love/Song/Patti/Peggy" as silly.
+The music description of silly is "'You are my silly little guy, and I am your silly little girl, and we are silly together in our silly little world.'"
+
+moron is a record. It is in the trash-bin. The title of moron is "I'd Never Call You a Moron". The artist of moron is "Peggy Perry".
+Understand "I'd/Never/Call/You/a/Moron/Peggy/Perry" as moron.
+The music description of moron is "'Just because you're not so bright, doesn't mean you're not alright, and I'd never call you a moron.'"
+
+record playing is an action applying to one thing. Understand "play [something]" as record playing. 
+
+anonymous record playing is an action applying to nothing. Understand "play record" as anonymous record playing.
+
+record playing backwards is an action applying to one thing. Understand "play [something] backwards" as record playing backwards.
+
+anonymous record playing backwards is an action applying to nothing. Understand "play record backwards" as anonymous record playing backwards.
+
+Understand "play [old turntable]" as a mistake ("Put the record on the turntable and then say PLAY RECORD").
+
+To put the right record on the turntable:
+	if there is something (called the old record) on the old turntable:
+		if the old record is not the noun:
+			say "Faraji takes [the old record] off the turntable and puts [the noun] on instead. ";
+			now the player carries the old record;
+			now the noun is on the old turntable;
+		otherwise:
+			say "[The noun] is already on the turntable. ";
+	otherwise:
+		say "Faraji puts [the noun] on the turntable. ";
+		now the noun is on the old turntable;
+
+Instead of record playing:
+	if the noun is not a record:
+		say "That's not something you can play.";
+	otherwise:
+		put the right record on the turntable;
+		try anonymous record playing;
+
+Instead of record playing backwards:
+	if the noun is not a record:
+		say "That's not something you can play.";
+	otherwise:
+		put the right record on the turntable;
+		try anonymous record playing backwards;
+
+Check anonymous record playing:
+	if nothing is on the old turntable:
+		say "There's nothing on the turntable to play." instead;
+
+Check anonymous record playing backwards:
+	if nothing is on the old turntable:
+		say "There's nothing on the turntable to play." instead;
+
+Carry out anonymous record playing:
+	let current record be a random record on the old turntable;
+	if the power switch is switched on:
+		say "Faraji starts the turntable. The record spins, and the speakers crackle to life, playing [the title of the current record] by [the artist of the current record].";
+		say "[music description of the current record]";
+	otherwise:
+		say "Faraaji starts the turntable, but nothing happens. There seems to be no power.";
+
+Carry out anonymous record playing backwards:
+	let current record be a random record on the old turntable;
+	if the power switch is switched on:
+		say "Faraji starts the turntable. The record spins, and the speakers crackle to life, playing [the title of the current record] by [the artist of the current record] backwards.";
+		if the current record is strange-record:
+			say "The backwards music is eerie and unsettling, but a message can be made out clearly: 'Congratulations, you've found the secret of Enigma Lake! Well, one of them, anyway. This is just the little one. The big one is still out there. In any case, the first person to email the secret phrase WGXC 'GALAXY' RADIO ROCKS ENIGMA LAKE to rileypb@gmail.com will win a prize!'";
+		otherwise:
+			say "All Faraji can make out is a lot of gibberish.";
+	otherwise:
+		say "Faraaji starts the turntable, but nothing happens. There seems to be no power.";
 
 
 Book 12 - Radio Station Roof

@@ -112,7 +112,7 @@ Crediting is an action out of world. Understand "credits" as crediting.
 Carry out crediting:
 	say "[bold type]The Bureau of Strange Happenings[roman type] is a work of interactive fiction created with Inform 7. It was written by Phil Riley.[roman type][paragraph break]";
 	say "[bold type]Many thanks to the following people for their help and support:[roman type][line break]";
-	say "Playtesters Max Fog, Mike Russo, Tabitha, Peter Gross, and Climbingstars.";
+	say "Playtesters Max Fog, Mike Russo, Tabitha, Peter Gross, Climbingstars, and Winifred Gosling.";
 	say "My wife, Laura, for understanding my need to spend hundreds of hours writing something that only a couple dozen people will ever play, and for innumerable helpful suggestions.";
 	say line break;
 	say "[bold type]Third-party extensions used in this game:[roman type][line break]";
@@ -1376,7 +1376,9 @@ After printing the locale description of the BOSH Chief's office:
 		lb;
 		say "He turns to Faraji and grins. 'Larch! Good to see you. What do you think of the new digs? I know, I know, it's a lousy office, I could barely fit all my stuff in here.'
 
-		Faraji starts to answer, but Klimp interrupts. 'Say, you read that new article in the Journal of Kinetic Experimentation on telekinesis? It's fascinating stuff. But seriously, can you do something about that phone, or do I have to ship you off to the Black Knight Satellite?' He chuckles and goes back to his work.";
+		Faraji starts to answer, but Klimp interrupts. 'Say, you ever read Petrus Catadesmicus? Listen to this: ['][italic type]...what these near-sighted Fools took as Rituals of Cursing are in truth Rituals of Binding, the true Congelation of the Soul, the Chaining of the immaterial Soul to a material Anchor, by piercing with a Spike the written true Name of the subject, thus transfixing the Soul and holding it fast, should the Environment be appropriately Consecrated, and appropriately Deep within the Earth...[roman type][']
+		
+		'Totally wild. I don't know what it means, but it's cool, right?'";
 
 
 The Chief's desk is a supporter in BOSH Chief's Office. It is scenery. "This desk is a beautiful assembly of smokey glass and chrome framing. The 'legs' form shelves where Klimp keeps yet more curios. One might wonder where Klimp gets the money."
@@ -1926,6 +1928,8 @@ alien invasion is a subject.
 
 onondaga-subject is a subject. It is privately-named. The printed name is "Onondaga". Understand "Onondaga/Onandaga/tribe/native/american" as onondaga-subject.
 
+Petrus Catadesmicus is a subject. 
+
 
 Table of Quiz Topics (continued)
 subject (a thing)	interlocutor (a person)	comment (a text)	reply (a text)
@@ -2268,7 +2272,7 @@ alien invasion	Moira Zin	"'Moira, do you think there's going to be an alien inva
 onondaga-subject	Chief Huffton Klimp	"'Chief, what do you know about the --'"	"'-- Onondaga? It's a Native American tribe in upstate New York. They may have been the first to discover the secret of time travel. But they're not talking.'"
 onondaga-subject	Margaret	"'Margaret, what do you know about the Onondaga?'"	"'Are they a band?'"
 onondaga-subject	Moira Zin	"'Moira, what do you know about the Onondaga?'"	"'The Onondaga are a Native American tribe that is part of the Iroquois Confederacy. They are known for their contributions to the culture and history of the region. There is no scientific evidence to support the idea that they discovered the secret of time travel.'"
-
+Petrus Catadesmicus	Chief Huffton Klimp	"'Chief, what do you know about Petrus --'"	"'-- Catadesmicus? He was a monk who lived in the 12th century. He was also a time traveler. But most people don't know that he was also a vampire.'"
 
 
 
