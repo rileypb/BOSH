@@ -47,7 +47,7 @@ I've also read Can't Touch This by Philip Riley, which is 168 words long.
 I've also read Compound Details by Philip Riley, which is 182 words long.
 I've also read Polish by Philip Riley, which is 89 words long.
 I've also read Hello by Philip Riley, which is 103 words long.
-I've also read BOSH Polish by Philip Riley, which is 8666 words long.
+I've also read BOSH Polish by Philip Riley, which is 8789 words long.
 I've also read New Light by Philip Riley, which is 347 words long.
 I've also read Early Declarations by Philip Riley, which is 21 words long.
 I've also read Basics by Philip Riley, which is 202 words long.
@@ -60,7 +60,7 @@ I've also read Hyperspace by Philip Riley, which is 17631 words long.
 I've also read BOSH Facts by Philip Riley, which is 193 words long.
 I've also read Swamp Park by Philip Riley, which is 8783 words long.
 I've also read Margaret by Philip Riley, which is 2630 words long.
-I've also read Enigma Lake by Philip Riley, which is 40850 words long.
+I've also read Enigma Lake by Philip Riley, which is 40856 words long.
 I've also read I Can Dig It by Philip Riley, which is 77 words long.
 I've also read BOSH Help by Philip Riley, which is 6761 words long.
 I've also read Overlook by Philip Riley, which is 763 words long.
@@ -358,7 +358,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 319 files written as streams.
-CPU time: 1445 centiseconds
+CPU time: 1472 centiseconds
 
 
 That concludes the debugging log from this run of Inform.
