@@ -787,18 +787,18 @@ record playing backwards is an action applying to one thing. Understand "play [s
 
 anonymous record playing backwards is an action applying to nothing. Understand "play record backwards" as anonymous record playing backwards.
 
-Understand "play [old turntable]" as a mistake ("Put the record on the turntable and then say PLAY RECORD").
+Understand "play [old turntable]" as a mistake ("Put the record on the turntable and then say PLAY RECORD.").
 
 To put the right record on the turntable:
 	if there is something (called the old record) on the old turntable:
 		if the old record is not the noun:
-			say "Faraji takes [the old record] off the turntable and puts [the noun] on instead. ";
+			say "Faraji takes [the old record] off the turntable and puts [the noun] on instead.";
 			now the player carries the old record;
 			now the noun is on the old turntable;
 		otherwise:
-			say "[The noun] is already on the turntable. ";
+			say "[The noun] is already on the turntable.";
 	otherwise:
-		say "Faraji puts [the noun] on the turntable. ";
+		say "Faraji puts [the noun] on the turntable.";
 		now the noun is on the old turntable;
 
 Instead of record playing:
@@ -826,7 +826,7 @@ Check anonymous record playing backwards:
 Carry out anonymous record playing:
 	let current record be a random record on the old turntable;
 	if the power switch is switched on:
-		say "Faraji starts the turntable. The record spins, and the speakers crackle to life, playing [the title of the current record] by [the artist of the current record].";
+		say "Faraji starts the turntable. The record spins, and the speakers crackle to life, playing [italic type][the title of the current record][roman type] by [the artist of the current record].[paragraph break]";
 		say "[music description of the current record][line break]";
 	otherwise:
 		say "Faraaji starts the turntable, but nothing happens. There seems to be no power.";
@@ -834,13 +834,13 @@ Carry out anonymous record playing:
 Carry out anonymous record playing backwards:
 	let current record be a random record on the old turntable;
 	if the power switch is switched on:
-		say "Faraji starts the turntable. The record spins, and the speakers crackle to life, playing [the title of the current record] by [the artist of the current record] backwards.";
+		say "Faraji starts the turntable. The record spins, and the speakers crackle to life, playing [italic type][the title of the current record][roman type] by [the artist of the current record] backwards.[paragraph break]";
 		if the current record is strange-record:
 			say "The backwards music is eerie and unsettling, but a message can be made out clearly: 'Congratulations, you've found the secret of Enigma Lake! Well, one of them, anyway. This is just the little one. The big one is still out there. In any case, the first person to email the secret phrase WGXC [']GALAXY['] RADIO ROCKS ENIGMA LAKE to rileypb@gmail.com will win a prize!'";
 		otherwise:
 			say "All Faraji can make out is a lot of gibberish.";
 	otherwise:
-		say "Faraaji starts the turntable, but nothing happens. There seems to be no power.";
+		say "Faraji starts the turntable, but nothing happens. There seems to be no power.";
 
 
 Book 12 - Radio Station Roof
