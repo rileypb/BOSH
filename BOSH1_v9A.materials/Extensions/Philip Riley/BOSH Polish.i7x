@@ -536,6 +536,7 @@ Room of Stuff	--	"Unreachable."
 isolation booth	--	"Unreachable."
 inside-the-dumpster	--	"Garbage."
 utility closet	--	"Grey industrial carpet."
+broadcast booth	--	"Grey industrial carpet."
 
 
 Understand "dirt" as the floor when the location is large grave.
@@ -593,6 +594,16 @@ Understand "wood" as the floor when the location is Workshed.
 Understand "gravel/dirt" as the floor when the location is Hidden cave.
 Understand "gravel/dirt" as the floor when the location is circular chamber.
 Understand "surface/ground" as the floor when the location is Featureless hyperplane.
+Understand "asphalt/street/road" as the floor when the location is Lake Street by the park.
+Understand "packed/earth" as the floor when the location is old root cellar.
+Understand "newly-disturbed/earth" as the floor when the location is large grave.
+Understand "concrete" as the floor when the location is sewer tunnel 1.
+Understand "concrete" as the floor when the location is sewer tunnel 2.
+Understand "concrete" as the floor when the location is sewer tunnel 3.
+Understand "grey/gray/concrete" as the floor when the location is gym basement.
+Understand "tar/paper/gravel" as the floor when the location is Henry's Roof.
+Understand "carpet/rug" as the floor when the location is utility closet.
+Understand "carpet/rug" as the floor when the location is broadcast booth.
 
 
 Table of Ceilings (continued)

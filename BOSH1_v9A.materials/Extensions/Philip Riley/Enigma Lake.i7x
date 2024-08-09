@@ -835,7 +835,7 @@ Carry out anonymous record playing backwards:
 	if the power switch is switched on:
 		say "Faraji starts the turntable. The record spins, and the speakers crackle to life, playing [the title of the current record] by [the artist of the current record] backwards.";
 		if the current record is strange-record:
-			say "The backwards music is eerie and unsettling, but a message can be made out clearly: 'Congratulations, you've found the secret of Enigma Lake! Well, one of them, anyway. This is just the little one. The big one is still out there. In any case, the first person to email the secret phrase WGXC 'GALAXY' RADIO ROCKS ENIGMA LAKE to rileypb@gmail.com will win a prize!'";
+			say "The backwards music is eerie and unsettling, but a message can be made out clearly: 'Congratulations, you've found the secret of Enigma Lake! Well, one of them, anyway. This is just the little one. The big one is still out there. In any case, the first person to email the secret phrase WGXC [']GALAXY['] RADIO ROCKS ENIGMA LAKE to rileypb@gmail.com will win a prize!'";
 		otherwise:
 			say "All Faraji can make out is a lot of gibberish.";
 	otherwise:
