@@ -1846,10 +1846,10 @@ Instead of entering the ethereal portal:
 
 Book 23.5 - Old Root Cellar
 
-An old root cellar is a room. It is always-indefinite. "The chamber is dark and damp, smelling of earth and old vegetable matter. The walls, floor, and ceiling are packed earth. Around the walls are numerous woven baskets for storing vegetables. Light filters in from a passage to the north."
+An old root cellar is a room. It is always-indefinite. "The chamber is dark and damp, smelling of earth and old vegetable matter. The walls, floor, and ceiling are packed earth. Around the walls are some woven baskets for storing vegetables: [if the group of lizard people is in the old root cellar]a red one and a blue one nearby, and a green one near Daniels[otherwise]red, blue, and green[end if]. Light filters in from a passage to the north."
 
 Instead of looking when the location is the old root cellar and the old root cellar is unvisited:
-	say "The chamber is dark and damp, smelling of earth and old vegetable matter. The walls, floor, and ceiling are packed earth. Around the walls are numerous woven baskets for storing vegetables. Light filters in from a passage to the north.
+	say "The chamber is dark and damp, smelling of earth and old vegetable matter. The walls, floor, and ceiling are packed earth. Around the walls are some woven baskets for storing vegetables: [if the group of lizard people is in the old root cellar]a red one and a blue one nearby, and a green one near Daniels[otherwise]red, blue, and green[end if]. Light filters in from a passage to the north.
 
 Faraji finds themself in the midst of a hostile confrontation. On one side are the same [group of lizard people] they banished from Enigma Park; on the other, a lone bedraggled man, clutching a root vegetable and wearing a very nice watch. Despite their superior numbers, the lizard people seem to be wary of their opponent. Presumably, the bedraggled man is the [Daniels] that Faraji was sent to find.
 	
