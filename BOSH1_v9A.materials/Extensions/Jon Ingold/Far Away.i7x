@@ -69,12 +69,12 @@ The last distant stuff rule for a thing (called the item) when the person asked 
 	rule fails.
 
 The last distant stuff rule when reporting errors (this is the can't touch rule):
-	say far-off message, paragraph break;
+	say far-off-message, paragraph break;
 	rule fails.
 
 Section - Messages
 
-The far-off message is a text that varies. The far-off message is "[The far-off item] [are] out of reach."
+The far-off-message is a text that varies. The far-off-message is "[The far-off item] [are] out of reach."
 
 
 

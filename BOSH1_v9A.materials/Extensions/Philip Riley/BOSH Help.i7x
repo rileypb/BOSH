@@ -384,7 +384,9 @@ The tutorial message is "[if the living room door is locked]This door is locked.
 
 The living room is a room. "[if cozy sofa is not mentioned]A cozy sofa sits next to the warm fireplace[otherwise]The sofa is next to the fireplace[end if]. Doors lead south and east."
 
-The tutorial message is "You can type ASK DOCTOR ABOUT a topic to ask Doctor Helpful about a particular topic. You can ASK DOCTOR FOR an object, or GIVE an object TO DOCTOR"
+The tutorial message is "You can type ASK DOCTOR ABOUT a topic to ask Doctor Helpful about a particular topic. You can ASK DOCTOR FOR an object, or GIVE an object TO DOCTOR.
+
+You can ask that Doctor Helpful stand up by typing DOCTOR, STAND UP. You can ask him to sit down again by typing DOCTOR, SIT ON THE SOFA"
 
 The cozy sofa is an enterable scenery supporter in the living room. The description is "The sofa is soft and comfortable." Understand "soft/comfortable/couch/divan" as the cozy sofa.
 
@@ -415,7 +417,7 @@ The description is "This book will help you learn some advanced strategies for p
 Instead of examining Advanced Adventuring when Doctor Helpful carries Advanced Adventuring:
 	say "Faraji can't read the book while Doctor Helpful is holding it. They'll have to ASK DOCTOR FOR the book to borrow it. He might lend it to you, but you might have to talk to him a bit before he's willing to lend it.";
 
-Doctor Helpful is a man in the living room. He is carrying Advanced Adventuring.
+Doctor Helpful is a man on the cozy sofa. He is carrying Advanced Adventuring. 
 The description is "Doctor Helpful is a tweedy old professor with ink-stained fingers." Understand "tweedy/professor/man/doc" as Doctor Helpful. "Doctor Helpful reclines on the sofa[if Doctor Helpful carries Advanced Adventuring] reading a book[end if], looking thoughtful."
 
 ink-stained fingers is part of Doctor Helpful. The description is "Doctor Helpful's fingers are stained with ink." They are plural-named.
@@ -449,6 +451,20 @@ After discussing Doctor Helpful for the book:
 
 Instead of giving something to Doctor Helpful:
 	say "The Doctor politely declines [the noun]. 'I don't need it, but thank you for offering.'"
+
+Persuasion rule for asking Doctor Helpful to try exiting:
+	if Doctor Helpful is on the cozy sofa:
+		persuasion succeeds;
+	otherwise:
+		say "Doctor Helpful smiles and says, 'But I'm not sitting down, my dear Agent Faraji. I'm already standing.'";
+		persuasion fails.
+
+Persuasion rule for asking Doctor Helpful to try entering the cozy sofa:
+	if Doctor Helpful is not on the cozy sofa:
+		persuasion succeeds;
+	otherwise:
+		say "Doctor Helpful smiles and says, 'But I'm not standing up, my dear Agent Faraji. I'm already sitting.'";
+		persuasion fails.
 
 
 

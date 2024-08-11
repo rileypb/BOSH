@@ -13,6 +13,8 @@ Include Books by Philip Riley.
 Include Container Types by Philip Riley.
 Include Extension Cord by Philip Riley.
 Include State Update by Philip Riley.
+Include Far Away by Jon Ingold.
+Include Verbless Parse Fix by OtisTDog.
 
 Volume 1 - Some Stuff
 
@@ -1877,8 +1879,12 @@ Rule for deciding the concealed possessions of Daniels:
 	no;
 
 A root-vegetable is a kind of thing. 
-A root-vegetable can be out of reach or within-reach. A root-vegetable is usually within-reach.
-A rutabaga, a turnip, and a potato are root-vegetables.
+A root-vegetable can be out-of-reach or within-reach. A root-vegetable is usually within-reach.
+The rutabaga is a root-vegetable. A turnip is a kind of root-vegetable. A potato is a kind of root-vegetable.
+There are 100 potatoes. There are 100 turnips.
+
+The rutabaga is in the old root cellar. 
+The rutabaga is out-of-reach.
 
 The description of the turnip is "A rather large, hefty turnip."
 The description of the potato is "A large, fresh potato."
@@ -1890,10 +1896,47 @@ Instead of eating a root-vegetable:
 Instead of giving something to Daniels when the group of lizard people is in the old root cellar:
 	say "Daniels is too far away for that.";
 
-The woven basket is a closed, openable scenery container in the old root cellar. "The basket is woven from reeds[if the woven basket is open]. It's open[otherwise]. It's closed[end if]." 
-Understand "baskets" as the woven basket.
-The rutabaga and the turnip are in the woven basket. 
-Daniels carries the potato.
+The red woven basket is a closed openable scenery container in the old root cellar. "The basket is woven from reeds[if the red woven basket is open]. It's open and filled with potatoes[otherwise]. It's closed[end if]."
+The blue woven basket is a closed openable scenery container in the old root cellar. "The basket is woven from reeds[if the blue woven basket is open]. It's open and filled with turnips[otherwise]. It's closed[end if]."
+The green woven basket is a closed openable scenery container in the old root cellar. "The basket is woven from reeds[if the green woven basket is open]. It's open[otherwise]. It's closed[end if]."
+
+The dummy-potato is in the Room of Stuff. It is privately-named. The printed name is "potato". The description is "A large, fresh potato". Understand "potato" as the dummy-potato.
+The dummy-turnip is in the Room of Stuff. It is privately-named. The printed name is "turnip". The description is "A rather large, hefty turnip". Understand "turnip" as the dummy-turnip.
+
+Instead of opening the red woven basket:
+	now the red woven basket is open;
+	say "Faraji opens the red woven basket. It's filled with potatoes.";
+
+Instead of opening the blue woven basket:
+	now the blue woven basket is open;
+	say "Faraji opens the blue woven basket. It's filled with turnips.";
+
+After deciding the scope of the player when the location is the old root cellar and the red woven basket is open:
+	place the dummy-potato in scope;
+
+After deciding the scope of the player when the location is the old root cellar and the blue woven basket is open:
+	place the dummy-turnip in scope;
+
+Instead of doing something to the green woven basket when the action requires a touchable noun:
+	say "The basket is too far away for that.";
+
+Instead of taking the dummy-potato:
+	let P be a random potato not in a room;
+	now P is in the red woven basket;
+	try taking P;
+	set pronouns from P;
+
+Instead of taking the dummy-turnip:
+	let P be a random turnip not in a room;
+	now P is in the blue woven basket;
+	try taking P;
+	set pronouns from P;
+
+A rule for reaching inside the Room of Stuff when taking the dummy-potato:
+	allow access;
+
+A rule for reaching inside the Room of Stuff when taking the dummy-turnip:
+	allow access;
 
 The root vegetables are scenery in the old root cellar. "Looks like the vegetables are well-preserved."
 
@@ -1951,22 +1994,26 @@ To initialize the boss battle:
 	now lizard people health is 10;
 	now right alignment depth is 26;
 	now battle turn is 1;
-	now Daniels carries the potato;
-	now the potato is within-reach;
-	now the rutabaga is within-reach;
-	now the turnip is within-reach;
-	now the rutabaga is in the woven basket;
-	now the turnip is in the woven basket;
-	now the woven basket is closed;
+	now Daniels carries a random potato;
+	now every potato not carried by Daniels is nowhere;
+	now every potato is within-reach;
+	now the rutabaga is out-of-reach;
+	now every turnip is within-reach;
+	now every turnip is nowhere;
+	now the red woven basket is closed;
+	now the blue woven basket is closed;
+	now the green woven basket is closed;
+	now the rutabaga is in the green woven basket;
 	now Lizard people facing us is true;
 	now turn countdown is 0;
 	now notable Daniels event this turn is false;
 	now notable lizard event this turn is false;
 	now Daniels is familiar;
-	now potato is familiar;
-	now rutabaga is familiar;
-	now turnip is familiar;
-	now woven basket is familiar;
+	now every potato is familiar;
+	now the rutabaga is familiar;
+	now every turnip is familiar;
+	now red woven basket is familiar;
+	now blue woven basket is familiar;
 	now root vegetables are familiar;
 
 Lizard people facing us is a truth state that varies. Lizard people facing us is true.
@@ -1974,11 +2021,15 @@ Turn countdown is a number that varies. Turn countdown is 0.
 Notable Daniels event this turn is a truth state that varies. Notable Daniels event this turn is false.
 Notable lizard event this turn is a truth state that varies. Notable lizard event this turn is false.
 Faraji distracted this turn is a truth state that varies. Faraji distracted this turn is false.
+Faraji idling this turn is a truth state that varies. Faraji idling this turn is false.
+Defending-this-turn is a truth state that varies.
 
 After reading a command:
 	now notable Daniels event this turn is false;
 	now notable lizard event this turn is false;
-	now faraji distracted this turn is false.
+	now faraji distracted this turn is false;
+	now defending-this-turn is false;
+	now faraji idling this turn is false;
 
 To banish the lizard people for good:
 	now the lizard people are nowhere;
@@ -1994,24 +2045,63 @@ Before doing something when the location is the old root cellar and the group of
 			now faraji distracted this turn is true;
 	otherwise if act is not the waiting action and act is not the throwing it at action and act is not the defending action:
 		now faraji distracted this turn is true;
-
+[ 
 Instead of doing something other than examining or quizzing to Daniels when the group of lizard people is in the old root cellar:
-	say "Faraji is too distracted by the lizard people to pay attention to Daniels.";
+	say "Faraji is too distracted by the lizard people to pay attention to Daniels."; ]
 
-Instead of doing something to a root-vegetable when the noun is out of reach:
+Instead of doing something to a root-vegetable when the noun is out-of-reach:
 	say "Faraji would have to get past the lizard men to do that.";
+
+Before waiting when the location is the old root cellar and the group of lizard people is in the old root cellar:
+	now faraji idling this turn is true;
 
 Every turn when the location is the old root cellar and the group of lizard people is in the old root cellar:
 	if the remainder after dividing the battle turn by 10 is 0:
-		say "The lizard people hiss, spewing forth a cloud of noxious vapor. Faraji can't avoid breathing it in.";
-		hit faraji;
-		now notable lizard event this turn is true;
+		let R be a random number between 1 and 3;
+		if R is 1:
+			say "The lizard people hiss, spewing forth a cloud of noxious vapor. Faraji can't avoid breathing it in.";
+			hit faraji;
+			now notable lizard event this turn is true;
+		otherwise if R is 2:
+			let B be a random number between 1 and 2;
+			if B is 1:
+				say "The lizard people lunge for the blue basket, scooping up turnips. They spin, faster and faster, firing turnips everywhere. Faraji dodges, but one hits them in the head.";
+				hit faraji;
+				now notable lizard event this turn is true;
+				let L be the list of turnips in the location;
+				while the number of entries of L < 10:
+					let T be a random turnip not in the location;
+					now T is in the location;
+					if a random chance of 1 in 2 succeeds:
+						now T is within-reach;
+					otherwise:
+						now T is out-of-reach;
+					let L be the list of turnips in the location;
+			otherwise:
+				say "The lizard people lunge for the red basket, scooping up potatoes. They spin, faster and faster, firing potatoes everywhere. Faraji dodges, but one hits them in the head.";
+				hit faraji;
+				now notable lizard event this turn is true;
+				let L be the list of potatoes in the location;
+				while the number of entries of L < 10:
+					let T be a random potato not in the location;
+					now T is in the location;
+					if a random chance of 1 in 2 succeeds:
+						now T is within-reach;
+					otherwise:
+						now T is out-of-reach;
+					let L be the list of potatoes in the location;
+		otherwise:
+			say "The lizard people screech, and Faraji feels a wave of energy wash over them. They feel a little weaker.";
+			hit faraji;
+			now notable lizard event this turn is true;
+
+
 
 Every turn when the location is the old root cellar and notable daniels event this turn is false and the group of lizard people is in the old root cellar:
-	[ if the rutabaga is in the old root cellar and rutabaga is out of reach and a random chance of 1 in 2 succeeds:
+	[ if the rutabaga is in the old root cellar and rutabaga is out-of-reach and a random chance of 1 in 2 succeeds:
 		try Daniels taking the rutabaga;
 		now rutabaga is within-reach; ]
-	if Daniels does not carry a root-vegetable and a root-vegetable (called RV) is in the old root cellar and RV is out of reach and a random chance of 1 in 2 succeeds:
+	if Daniels does not carry a root-vegetable and a root-vegetable (called RV) is in the old root cellar and RV is out-of-reach and RV is not the rutabaga and a random chance of 2 in 3 succeeds:
 		try Daniels taking RV;
 		now RV is within-reach;
 		now notable daniels event this turn is true;
@@ -2050,7 +2140,7 @@ Every turn when the location is the old root cellar and the lizard people carry 
 	now the RV is in the old root cellar;
 	now notable lizard event this turn is true;
 	now lizard-attack-this-turn is true;
-	if faraji distracted this turn is true:
+	if faraji distracted this turn is true or faraji idling this turn is true:
 		say "One of the lizard people [one of]throws[or]hurls[or]flings[or]launches[or]fires[or]slings[at random] [the RV] at Faraji. It hits them right on the [one of]head[or]shoulder[or]arm[or]leg[or]foot[at random] and bounces away. It remains within Faraji's reach.";
 		hit faraji;
 	otherwise if defending-this-turn is true:
@@ -2142,8 +2232,9 @@ To decide whether there exists collectible stuff:
 		no;
 
 Instead of throwing a root-vegetable at the lizard people:
+	now Faraji distracted this turn is true;
 	if lizard people facing us is true:
-		say "Faraji [one of]throws[or]hurls[or]flings[or]launches[or]fires[or]slings[at random] [the noun] at the lizard people. ";
+		say "Faraji [one of]throws[or]hurls[or]flings[or]launches[or]fires[or]slings[at random] [the noun] at the lizard people, but they see it coming. ";
 		if a random number from 1 to 5 is:
 			-- 1: 
 				say "They easily dodge the flying vegetable.";
@@ -2156,7 +2247,7 @@ Instead of throwing a root-vegetable at the lizard people:
 			-- 5:
 				say "It hits the floor and rolls to a stop.";
 		now the noun is in the old root cellar;
-		now the noun is out of reach;
+		now the noun is out-of-reach;
 	otherwise if the noun is the rutabaga:
 		now the rutabaga is in the old root cellar;
 		now rutabaga is within-reach;
@@ -2179,7 +2270,7 @@ Instead of throwing a root-vegetable at the lizard people:
 		now the current interlocutor is Daniels;
 	otherwise:
 		now the noun is in the old root cellar;
-		now the noun is out of reach;
+		now the noun is out-of-reach;
 		say "Faraji [one of]throws[or]hurls[or]flings[or]launches[or]fires[or]slings[at random] [the noun] at the lizard people, who in their anger at Daniels are oblivious to Faraji's action. ";
 		if a random number from 1 to 5 is:
 			-- 1:
@@ -2189,9 +2280,9 @@ Instead of throwing a root-vegetable at the lizard people:
 			-- 3:
 				say "[The noun] bounces off the stout one's head. He hisses in pain.";
 			-- 4:
-				say "[The noun] hits one of them right in the nose. He hisses in pain.";
+				say "[The noun] hits one of them right in the back. He hisses in pain.";
 			-- 5:
-				say "[The noun] strikes the shortest one in the chest. He hisses in pain.";
+				say "[The noun] strikes the shortest one in the leg. He hisses in pain.";
 		hit lizard people;
 
 Instead of attacking the lizard people:
@@ -2206,8 +2297,64 @@ Doris sent me is an informative quip.
 	It quip-supplies Daniels.
 
 Description notes for a root-vegetable (called RV):
-	if RV is out of reach:
+	if RV is out-of-reach:
 		add "out of reach" to descriptive notes;
+
+Throwing it to is an action applying to one carried thing and one visible thing. Understand "throw [something] to [something]" as throwing it to.
+
+[ Persuasion rule for asking Daniels to try doing something:
+	persuasion succeeds; ]
+
+Persuasion rule for asking Daniels to try throwing something to Faraji when the group of lizard people is in the location:
+	now Faraji distracted this turn is true;
+	if the noun is a root-vegetable and (the noun is in the old root cellar or the noun is carried by Daniels) and the noun is out-of-reach:
+		persuasion succeeds;
+	otherwise if the noun is not a root-vegetable:
+		say "Daniels looks at you and shrugs. 'Concentrate on the battle, agent!' he shouts.";
+		persuasion fails;
+	otherwise if the noun is not carried by Daniels:
+		say "Daniels looks at you and shrugs. 'I can't throw what I don't have!' he shouts.";
+		persuasion fails;	
+	otherwise if the noun is within-reach:
+		say "Daniels looks at you and shrugs. 'I can't throw what I can't reach!' he shouts.";
+		persuasion fails;
+	otherwise:
+		say "Daniels looks at you and shrugs. 'I can't tell what you want me to do!' he shouts.";
+		persuasion fails;
+
+Persuasion rule for asking Daniels to try taking a root-vegetable when the group of lizard people is in the location:
+	now Faraji distracted this turn is true;
+	if the noun is a root-vegetable and (the noun is in the old root cellar or the noun is in the green woven basket) and the noun is out-of-reach:
+		persuasion succeeds;
+	say "Daniels looks at you and shrugs. 'I can't take what I can't reach!' he shouts.";
+	persuasion fails;
+
+Persuasion rule for asking Daniels to try opening the green woven basket when the group of lizard people is in the location:
+	now Faraji distracted this turn is true;
+	if the green woven basket is closed:
+		persuasion succeeds;
+	say "Daniels looks at you and shrugs. 'I can't open what's already open!' he shouts.";
+	persuasion fails;
+
+Instead of Daniels opening the green woven basket when the group of lizard people is in the location:
+	say "Daniels opens the green woven basket. 'Hey, there's a rutabaga in here,' he shouts.";
+	now the green woven basket is open;
+	rule succeeds;
+
+Instead of Daniels throwing a root-vegetable at Faraji when the group of lizard people is in the location:
+	say "Daniels throws [the noun] at Faraji. It's a weak throw, and [the noun] merely rolls past the lizard people. It is now within Faraji's reach.";
+	now the noun is in the old root cellar;
+	now the noun is within-reach;
+	rule succeeds;
+
+Instead of Daniels throwing a root-vegetable to Faraji when the group of lizard people is in the location:
+	say "Daniels throws [the noun] at Faraji. It's a weak throw, and [the noun] merely rolls past the lizard people. It is now within Faraji's reach.";
+	now the noun is in the old root cellar;
+	now the noun is within-reach;
+	rule succeeds;
+
+Instead of requesting Daniels for something when the group of lizard people is in the location:
+	try Daniels throwing the second noun to Faraji;
 
 Lizard interjection timer is a number that varies. Lizard interjection timer is 4.
 Lizard interjection this turn is a truth state that varies.
@@ -4338,8 +4485,8 @@ To teleport the player:
 	move the player to the target;
 	now the current interlocutor is nothing;
 
-Instead of answering something that when the group of lizard people is in the location:
-	if cursed word is "" or cursed word is not the topic understood and the location is the old root cellar:
+Instead of answering the group of lizard people that when the group of lizard people is in the location:
+	if location is not the old root cellar and (cursed word is "" or cursed word is not the topic understood):
 		say "The lizard people seem to find your words amusing. They hiss, creating a strange cloud of thick vapor. Faraji feels light-headed and disoriented. When the vapor clears, Faraji is somewhere else...";
 		teleport the player;
 	otherwise if the location is in ELR:
@@ -4373,17 +4520,14 @@ Instead of going when the group of lizard people is in the location:
 
 Defending is an action applying to nothing. Understand "defend" as defending when the location is the old root cellar. Understand the commands "dodge", "parry", "block", "deflect", "evade", "protect", "shield", "ward", "duck" as "defend".
 
-Defending-this-turn is a truth state that varies.
-
-Last every turn rule: 
-	now defending-this-turn is false.
-
 Carry out defending:
 	now defending-this-turn is true;
 
 Doris-subject is a subject. It is privately-named. The printed name is "Doris". Understand "doris" as Doris-subject.
 Dragon-subject is a subject. It is privately-named. The printed name is "Dragon". Understand "dragon" as Dragon-subject.
 plans-subject is a subject. It is privately-named. The printed name is "plans". Understand "plans" as plans-subject.
+turnip-subject is a subject. It is privately-named. The printed name is "turnip". Understand "turnip" as turnip-subject.
+potato-subject is a subject. It is privately-named. The printed name is "potato". Understand "potato" as potato-subject.
 
 Table of Quiz Topics (continued)
 subject (a thing)	interlocutor (a person)	comment (a text)	reply (a text)
@@ -4396,10 +4540,12 @@ strange shiny metal object	group of lizard people	"'What is that shiny object?' 
 Larch Faraji	group of lizard people	"'What do you want with me?' asks Faraji."	"'We want nothing with you,' hisses the lizard person. 'You are nothing to us.'"
 Daniels	group of lizard people	"'What do you want with Daniels?' asks Faraji."	"'Daniels will take us to the Dragon, or he will die,' hisses the lizard person."
 rutabaga	group of lizard people	"'What's with the rutabaga?' asks Faraji."	"'The rutabaga means nothing,' hisses the lizard person. 'We are certainly not afraid of it. No, definitely not. At all. Ever.'"
-turnip	group of lizard people	"'I'm going to smack you with a turnip,' says Faraji."	"'Then we will be happy, for turnips are our favorite food,' hisses the lizard person."
-potato	group of lizard people	"'I'm going to thwack you with a potato,' says Faraji."	"'We fear no potato,' hisses the lizard person. 'It is a weak weapon.'"
+turnip-subject	group of lizard people	"'I'm going to smack you with a turnip,' says Faraji."	"'Then we will be happy, for turnips are our favorite food,' hisses the lizard person."
+potato-subject	group of lizard people	"'I'm going to thwack you with a potato,' says Faraji."	"'We fear no potato,' hisses the lizard person. 'It is a weak weapon.'"
 chief-huffton-klimp-subject	group of lizard people	"'What do you know about Chief Huffton Klimp?' asks Faraji."	"'Klimp is a good fr-- um, I mean enemy of the lizard people,' hisses the tall lizard person."
-woven basket	group of lizard people	"'What's with the woven basket?' asks Faraji."	"'What?' hisses the lizard person. 'We have no interest in woven baskets.'"
+red woven basket	group of lizard people	"'What's with the woven basket?' asks Faraji."	"'What?' hisses the lizard person. 'We have no interest in woven baskets.'"
+blue woven basket	group of lizard people	"'What's with the woven basket?' asks Faraji."	"'What?' hisses the lizard person. 'We have no interest in woven baskets.'"
+green woven basket	group of lizard people	"'What's with the woven basket?' asks Faraji."	"'What?' hisses the lizard person. 'We have no interest in woven baskets.'"
 root vegetables	group of lizard people	"'What's with the root vegetables?' asks Faraji."	"'Root vegetables?' hisses the lizard person. 'We have no interest in root vegetables. Least of all rutabagas.'"
 plans-subject	group of lizard people	"'What are your plans?' asks Faraji."	"'Our plans are our own,' hisses the lizard person. 'You will not stop us.'"
 

@@ -73,8 +73,9 @@ Use MAX_NUM_STATIC_STRINGS of 400000.
 Use MAX_SYMBOLS of 200000.
 Use MAX_OBJECTS of 2048.
 Use MAX_DICT_ENTRIES of 20000.
-Use MAX_ARRAYS of 20000.
+Use MAX_ARRAYS of 40000.
 Use MAX_ACTIONS of 300.
+Use SYMBOLS_CHUNK_SIZE of 10000.
 
 Work Title is always "The Bureau of Strange Happenings".  
  
