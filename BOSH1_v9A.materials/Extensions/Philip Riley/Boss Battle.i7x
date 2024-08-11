@@ -12,9 +12,9 @@ enemy action is a kind of value. The enemy actions are enemy-attacking, enemy-de
 
 daniels action is a kind of value. The daniels actions are daniels-attacking, daniels-defending, daniels-idling, daniels-shouting, and daniels-distracted.
 
-current player action is a player action that varies. 
-current enemy action is an enemy action that varies.
-current daniels action is a daniels action that varies.
+current player action is a player action that varies. current player object is an object that varies. current player target is an object that varies.
+current enemy action is an enemy action that varies. current enemy object is an object that varies. current enemy target is an object that varies.
+current daniels action is a daniels action that varies. current daniels object is an object that varies. current daniels target is an object that varies.
 
 enemy facing is a kind of value. The enemy facings are lizard people facing us, and lizard people facing away.
 
@@ -43,7 +43,11 @@ Volume - The weapons
 
 A root-vegetable is a kind of thing. 
 A root-vegetable can be out of reach or within-reach. A root-vegetable is usually within-reach.
-A rutabaga, a turnip, and a potato are root-vegetables.
+A turnip is a kind of root-vegetable. A potato is a kind of root-vegetable.
+A rutabaga is a root-vegetables.
+There are 100 turnips. There are 100 potatoes.
+dummy-potato is in the Room of Stuff. It is undescribed. It is privately-named. The printed name is "potato". The description is "A large potato, like a russet." Understand "potato" as dummy-potato.
+dummy-turnip is in the Room of Stuff. It is undescribed. It is privately-named. The printed name is "turnip". The description is "A hefty purple and white turnip." Understand "turnip" as dummy-turnip.
 
 The description of the turnip is "A hefty purple and white turnip."
 
@@ -53,30 +57,67 @@ The description of the rutabaga is "A weighty rutabaga."
 
 Instead of eating a root-vegetable:
 	say "Uncooked, [the noun] is not very appetizing.";
+
+A red woven basket is a closed openable scenery container. It is in the old root cellar. The description of the woven basket is "A sturdy red woven basket, with a lid."
+
+Instead of examining the red woven basket when the red woven basket is open:
+	say "The red woven basket is filled with potatoes.";
+
+After deciding the scope of the player while taking when the red woven basket is open:
+	place the dummy-potato in scope;
 	
-The rutabaga and the turnip are in the woven basket. 
-Daniels carries the potato.
+Instead of taking the dummy-potato:
+	let P be a random potato in no room;
+	now P is in the red woven basket;
+	try taking P;
+
+A blue woven basket is a closed openable scenery container. It is in the old root cellar. The description of the blue woven basket is "A sturdy blue woven basket, with a lid."
+
+Instead of examining the blue woven basket when the blue woven basket is open:
+	say "The blue woven basket is filled with turnips.";
+
+After deciding the scope of the player while taking when the blue woven basket is open:
+	place the dummy-turnip in scope;
+
+Instead of taking the dummy-turnip:
+	let T be a random turnip in no room;
+	now T is in the blue woven basket;
+	try taking T;
+	
+[ The rutabaga and the turnip are in the woven basket.  ]
+[ Daniels carries the potato. ]
 
 Volume - The player's actions
 
+Before:
+	now current player action is player-distracted;
+	now current player object is nothing;
+	now current player target is nothing;
+	now current enemy action is enemy-distracted;
+	now current enemy object is nothing;
+	now current enemy target is nothing;
+	now current daniels action is daniels-distracted;
+	now current daniels object is nothing;
+	now current daniels target is nothing;
+
 Instead of attacking the group of lizard people with something during the Boss Battle:
 	say "Faraji doesn't want to get close enough for that.";
+	now current player action is player-distracted;
 
 Instead of attacking the group of lizard people during the Boss Battle:
 	say "Faraji doesn't want to get close enough for that.";
+	now current player action is player-distracted;
 
 Instead of throwing something at the group of lizard people during the Boss Battle:
 	now current player action is player-attacking;
+	now current player object is the noun;
+	now current player target is the group of lizard people;
 
 Instead of defending during the Boss Battle:
 	now current player action is player-defending;
 
 After waiting during the Boss Battle:
 	now current player action is player-idling;
-	say "Faraji waits for the lizard people to make a move.";
-
-After doing something other than waiting during the Boss Battle:
-	now current player action is player-distracted;
 
 Every turn during the Boss Battle:
 	say "Faraji is [current player action].";
@@ -98,21 +139,37 @@ Every turn during the Boss Battle:
 		now current enemy action is enemy-turning-to-face-us;
 	otherwise if enemy facing is lizard people facing us and the lizard people are holding a root-vegetable:
 		now current enemy action is enemy-attacking;
+		now current enemy object is a random root-vegetable carried by the lizard people;
+		now current enemy target is the player;
 	otherwise if a random chance of 1 in 3 succeeds:
 		now current enemy action is enemy-shouting;
 	otherwise if a random chance of 1 in 3 succeeds:
 		now current enemy action is enemy-defending;
 	otherwise:
 		now current enemy action is enemy-idling;
+	say "The lizard people are [current enemy action].";
+
 
 Volume - Daniels' actions
 
-Every turn during the Boss Battle:
+[ Every turn during the Boss Battle: ]
 	[ choose an action for Daniels ]
 	[ every 2-5 turns, Daniels will shout an insult at the lizard people ]
 	[ if Daniels is holding a root vegetable, he will throw it at the lizard people ]
 	[ if a root vegetable is on the ground, there is a chance Daniels will pick it up. This counts as being distracted. ]
-	
+	if a random chance of 2 in 5 succeeds:
+		now current daniels action is daniels-shouting;
+	otherwise if Daniels is holding a root-vegetable:
+		now current daniels action is daniels-attacking;
+		now current daniels object is a random root-vegetable carried by Daniels;
+		now current daniels target is the group of lizard people;
+	otherwise if there is a root-vegetable in the location and a random chance of 2 in 3 succeeds:
+		now current daniels action is daniels-taking;
+		now current daniels object is a random root-vegetable in the location;
+		now current daniels target is nothing;
+	otherwise:
+		now current daniels action is daniels-idling;
+	say "Daniels is [current daniels action].";
 
 Volume - Resolving the turn
 
@@ -155,22 +212,29 @@ To initialize the boss battle:
 	now lizard people health is 10;
 	now right alignment depth is 26;
 	now battle turn is 1;
-	now Daniels carries the potato;
-	now the potato is within-reach;
+	let P be a random potato;
+	now Daniels carries P;
+	repeat with X running through the potatoes that are not P:
+		now X is nowhere;
+	repeat with X running through potatoes:
+		now X is within-reach;
+		now X is familiar;
+	repeat with X running through the turnips:
+		now X is within-reach;
+		now X is nowhere;
+		now X is familiar;
 	now the rutabaga is within-reach;
-	now the turnip is within-reach;
-	now the rutabaga is in the woven basket;
-	now the turnip is in the woven basket;
-	now the woven basket is closed;
+	[ now the rutabaga is in the woven basket; ]
+	now the red woven basket is closed;
+	now the blue woven basket is closed;
 	now enemy facing is lizard people facing us;
 	now turn countdown is 0;
 	now notable Daniels event this turn is false;
 	now notable lizard event this turn is false;
 	now Daniels is familiar;
-	now potato is familiar;
 	now rutabaga is familiar;
-	now turnip is familiar;
-	now woven basket is familiar;
+	now red woven basket is familiar;
+	now blue woven basket is familiar;
 	now root vegetables are familiar;
 
 

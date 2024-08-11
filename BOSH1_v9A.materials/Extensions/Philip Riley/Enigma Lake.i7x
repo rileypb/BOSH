@@ -1846,7 +1846,7 @@ Instead of entering the ethereal portal:
 
 Book 23.5 - Old Root Cellar
 
-An old root cellar is a room. It is always-indefinite. "The chamber is dark and damp, smelling of earth and old vegetable matter. The walls, floor, and ceiling are packed earth. Around the walls are numerous woven baskets for storing vegetables. Light filters in from a passage to the north."
+An old root cellar is a room. It is always-indefinite. "The chamber is dark and damp, smelling of earth and old vegetable matter. The walls, floor, and ceiling are packed earth. Around the walls are numerous woven baskets for storing vegetables. Near Faraji are a blue basket and a red basket. Light filters in from a passage to the north."
 
 Instead of looking when the location is the old root cellar and the old root cellar is unvisited:
 	say "The chamber is dark and damp, smelling of earth and old vegetable matter. The walls, floor, and ceiling are packed earth. Around the walls are numerous woven baskets for storing vegetables. Light filters in from a passage to the north.
@@ -1880,9 +1880,6 @@ Rule for deciding the concealed possessions of Daniels:
 
 Instead of giving something to Daniels when the group of lizard people is in the old root cellar:
 	say "Daniels is too far away for that.";
-
-The woven basket is a closed, openable scenery container in the old root cellar. "The basket is woven from reeds[if the woven basket is open]. It's open[otherwise]. It's closed[end if]." 
-Understand "baskets" as the woven basket.
 
 The root vegetables are scenery in the old root cellar. "Looks like the vegetables are well-preserved."
 
@@ -4328,8 +4325,8 @@ strange shiny metal object	group of lizard people	"'What is that shiny object?' 
 Larch Faraji	group of lizard people	"'What do you want with me?' asks Faraji."	"'We want nothing with you,' hisses the lizard person. 'You are nothing to us.'"
 Daniels	group of lizard people	"'What do you want with Daniels?' asks Faraji."	"'Daniels will take us to the Dragon, or he will die,' hisses the lizard person."
 rutabaga	group of lizard people	"'What's with the rutabaga?' asks Faraji."	"'The rutabaga means nothing,' hisses the lizard person. 'We are certainly not afraid of it. No, definitely not. At all. Ever.'"
-turnip	group of lizard people	"'I'm going to smack you with a turnip,' says Faraji."	"'Then we will be happy, for turnips are our favorite food,' hisses the lizard person."
-potato	group of lizard people	"'I'm going to thwack you with a potato,' says Faraji."	"'We fear no potato,' hisses the lizard person. 'It is a weak weapon.'"
+[ turnip	group of lizard people	"'I'm going to smack you with a turnip,' says Faraji."	"'Then we will be happy, for turnips are our favorite food,' hisses the lizard person." ]
+[ potato	group of lizard people	"'I'm going to thwack you with a potato,' says Faraji."	"'We fear no potato,' hisses the lizard person. 'It is a weak weapon.'" ]
 chief-huffton-klimp-subject	group of lizard people	"'What do you know about Chief Huffton Klimp?' asks Faraji."	"'Klimp is a good fr-- um, I mean enemy of the lizard people,' hisses the tall lizard person."
 woven basket	group of lizard people	"'What's with the woven basket?' asks Faraji."	"'What?' hisses the lizard person. 'We have no interest in woven baskets.'"
 root vegetables	group of lizard people	"'What's with the root vegetables?' asks Faraji."	"'Root vegetables?' hisses the lizard person. 'We have no interest in root vegetables. Least of all rutabagas.'"
