@@ -314,6 +314,8 @@ To say park beam description:
 
 To beam description, in the park:
 	let bc be beam count;
+	if bc is 3:
+		now obelisk-ladder is revealed;
 	if bc > 0:
 		let sources be a list of texts;
 		if mounted-shiny-resonator:
