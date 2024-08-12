@@ -265,7 +265,7 @@ The work schedule is scenery in the Enigma Lake town hall.
 |                Maggie Vickers   |[line break]
 |Friday          Rosemary Tamsin  |[line break]
 |                Leonard Mink     |[line break]
-|                Zephram Nettles  |[line break]
+|                Zefram Cochrane  |[line break]
 |                Daphne O'Leary   |[line break]
 |Saturday        Mary Huff        |[line break]
 |                Leola Root       |[line break]
