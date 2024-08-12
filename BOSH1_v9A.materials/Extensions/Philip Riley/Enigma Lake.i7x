@@ -1902,8 +1902,15 @@ The red woven basket is a closed openable scenery container in the old root cell
 The blue woven basket is a closed openable scenery container in the old root cellar. "The basket is woven from reeds[if the blue woven basket is open]. It's open and filled with turnips[otherwise]. It's closed[end if]."
 The green woven basket is a closed openable scenery container in the old root cellar. "The basket is woven from reeds[if the green woven basket is open]. It's open[otherwise]. It's closed[end if]."
 
-The dummy-potato is in the Room of Stuff. It is privately-named. The printed name is "potato". The description is "A large, fresh potato". Understand "potato" as the dummy-potato.
+The dummy-potato is in the red woven basket. It is privately-named. It is undescribed. The printed name is "potato". The description is "A large, fresh potato". Understand "potato" as the dummy-potato.
 The dummy-turnip is in the Room of Stuff. It is privately-named. The printed name is "turnip". The description is "A rather large, hefty turnip". Understand "turnip" as the dummy-turnip.
+
+After taking the dummy-potato:
+	now the dummy-potato is in the red woven basket;
+	let P be a random potato not in a room;
+	now the player carries P;
+	set pronouns from P;
+	say "Faraji takes a potato from the red woven basket.";
 
 Instead of opening the red woven basket:
 	now the red woven basket is open;
@@ -1921,12 +1928,6 @@ After deciding the scope of the player when the location is the old root cellar 
 
 Instead of doing something to the green woven basket when the action requires a touchable noun:
 	say "The basket is too far away for that.";
-
-Instead of taking the dummy-potato:
-	let P be a random potato not in a room;
-	now P is in the red woven basket;
-	try taking P;
-	set pronouns from P;
 
 Instead of taking the dummy-turnip:
 	let P be a random turnip not in a room;
