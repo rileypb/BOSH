@@ -219,6 +219,8 @@ the block informing rule response (A) is "That doesn't seem to be a topic of con
 To say unresponsive:
 	if the current action is giving something to someone:
 		say text of the block giving rule response (A);
+	otherwise if the current interlocutor is Daniels:
+		say "Daniels just shrugs";
 	otherwise:
 		say "That doesn't seem to be a topic of conversation at the moment";
 

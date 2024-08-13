@@ -423,10 +423,10 @@ The parser clarification internal rule response (C) is "Sorry, you can only have
 the standard listing subject changes rule response (A) is "[italic type][quip-suggestion-phrase][the prepared list delimited in disjunctive style].[roman type]".
 the standard quip plausibility rule response (A) is "[italic type][quip-suggestion-phrase][the prepared list delimited in disjunctive style].[roman type]"]
 
-The parser clarification internal rule response (D) is "Whom do you want [us] to
+The parser clarification internal rule response (D) is "Whom do you want [if the noun is not the player][the noun][otherwise][us][end if] to
 		[parser command so far]?"
 
-The parser clarification internal rule response (E) is "What do you want [us] to
+The parser clarification internal rule response (E) is "What do you want [if the noun is not the player][the noun][otherwise][us][end if] to
 		[parser command so far]?"
 
 the block kissing rule response (A) is "[We] might not like that."
