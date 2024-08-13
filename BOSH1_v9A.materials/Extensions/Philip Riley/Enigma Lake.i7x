@@ -1978,8 +1978,9 @@ To hit faraji:
 		now the player is in the circular chamber;
 		now the old root cellar is unvisited;
 		now the current interlocutor is nothing;
+		collect our stuff;
 	otherwise:
-		say "[line break][bold type]Faraji takes a hit! Health: [faraji health] heart[s] remaining[roman type].";
+		say "[line break][bold type]Faraji takes a hit! Health: [faraji health] heart[s] remaining[roman type].[paragraph break]";
 
 To hit lizard people:
 	decrement lizard people health;
@@ -2157,8 +2158,8 @@ Every turn when the location is the old root cellar and the lizard people carry 
 	if faraji distracted this turn is true or faraji idling this turn is true:
 		say "One of the lizard people [one of]throws[or]hurls[or]flings[or]launches[or]fires[or]slings[at random] [the RV] at Faraji. It hits them right on the [one of]head[or]shoulder[or]arm[or]leg[or]foot[at random] and bounces away. It remains within Faraji's reach.";
 		hit faraji;
-		if a random chance of 1 in 3 succeeds:
-			say "Daniels shouts '[one of]Dodge, agent, dodge![run paragraph on][or]You have to defend yourself![run paragraph on][or]Don't just stand there![run paragraph on][or]You need to block those![run paragraph on][at random]'";
+		if a random chance of 1 in 3 succeeds and faraji health is not 0:
+			say "Daniels shouts, '[one of]Dodge, agent, dodge[or]You have to defend yourself[or]Don't just stand there[or]You need to block those[at random]!'";
 	otherwise if defending-this-turn is true:
 		say "One of the lizard people [one of]throws[or]hurls[or]flings[or]launches[or]fires[or]slings[at random] [the RV] at Faraji. They [one of]dodge[or]duck[or]dodge and weave[or]sidestep[or]jump aside[at random], and it bounces away. It remains within Faraji's reach.";
 	otherwise:
@@ -2242,13 +2243,23 @@ After taking something when the location is the old root cellar and the lizard p
 		remove the noun from collectible stuff;
 	continue the action;
 
-collectible stuff is a list of things that varies. 
+collectible stuff is a list of things that varies.
+
+permanents is a list of things that varies.  
 
 To collect our stuff:
-	while the number of entries in collectible stuff > 0:
-		let the item be entry 1 in collectible stuff;
-		remove the item from collectible stuff;
-		now Faraji carries the item;
+	repeat with item running through things enclosed by the old root cellar:
+		if the item is not listed in permanents and the item is not a root-vegetable and the item is not enclosed by the player and the item is not scenery and item is not Faraji:
+			now the player carries the item;
+
+To collect our stuff loudly:
+	let flag be false;
+	repeat with item running through things enclosed by the old root cellar:
+		if the item is not listed in permanents and the item is not a root-vegetable and the item is not enclosed by the player and the item is not scenery and item is not Faraji:
+			now the player carries the item;
+			now flag is true;
+	if flag is true:
+		say "Faraji stops and collects their belongings.[paragraph break]";
 
 To decide whether there exists collectible stuff:
 	if the number of entries in collectible stuff is greater than 0:
@@ -2281,16 +2292,12 @@ Instead of throwing a root-vegetable at the lizard people:
 		[bold type]The lizard people have been KO'd![roman type][line break]";
 		say "[fixed letter spacing]";
 		center "<<< FARAJI IS VICTORIOUS! >>>";
-		say "[variable letter spacing]";
-		say "[if there exists collectible stuff]
-
-		Faraji stops and collects their stuff[end if].
-		
-		Daniels approaches Faraji. 'Nice throw,' he says. 'Glad you came when you did. As you can see, my throwing arm is worse than useless right now.
+		say "[variable letter spacing][paragraph break]";
+		collect our stuff loudly;
+		say "Daniels approaches Faraji. 'Nice throw,' he says. 'Glad you came when you did. As you can see, my throwing arm is worse than useless right now.
 		
 		'I'm Daniels. Agent of the hyperspace field office of the Bureau of Strange Happenings and owner of the A+ Laundromat in Swamp Park, Maryland. Did Doris send you?'";
 		banish the lizard people for good;
-		collect our stuff;
 		queue Daniels with Doris sent me;
 		now the current interlocutor is Daniels;
 	otherwise:
@@ -4358,6 +4365,8 @@ Volume 4.5 - The Lizard People
 
 
 The group of lizard people is an animal. "[lizard people appearance][run paragraph on]";
+
+permanents is { Daniels, the group of lizard people, the red woven basket, the blue woven basket, the green woven basket };
 
 To say lizard people appearance:
 	if location is in ELR:
