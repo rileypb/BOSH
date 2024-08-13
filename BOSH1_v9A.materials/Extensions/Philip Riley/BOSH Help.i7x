@@ -382,7 +382,9 @@ The living room door is a closed, locked, lockable, openable scenery door. It is
 The living room door has matching key the living room key.
 The tutorial message is "[if the living room door is locked]This door is locked. You will to UNLOCK LIVING ROOM DOOR WITH the key (have you found it yet?) to open it[otherwise if the location is the living room]You can go through the door to the Bureau of Special Help[otherwise]You can go through the door to the living room[end if]"
 
-The living room is a room. "[if cozy sofa is not mentioned]A cozy sofa sits next to the warm fireplace[otherwise]The sofa is next to the fireplace[end if]. Doors lead south and east."
+The living room is a room. "[if cozy sofa is not mentioned]A cozy sofa sits next to the warm fireplace[otherwise]The sofa is next to the fireplace[end if]. Doors lead south and east[if Doctor Helpful is on the cozy sofa].
+
+[doctor description][end if]."
 
 The tutorial message is "You can type ASK DOCTOR ABOUT a topic to ask Doctor Helpful about a particular topic. You can ASK DOCTOR FOR an object, or GIVE an object TO DOCTOR.
 
@@ -392,6 +394,15 @@ The cozy sofa is an enterable scenery supporter in the living room. The descript
 
 Does the player mean entering the cozy sofa:
 	it is very likely.
+
+Does the player mean Doctor Helpful entering the cozy sofa:
+	it is very likely.
+
+Does the player mean Doctor Helpful entering Advanced Adventuring:
+	it is very unlikely.
+
+Does the player mean entering Advanced Adventuring:
+	it is very unlikely.
 
 The warm fireplace is scenery in the living room. The description is "The fireplace is warm and inviting." Understand "warm/inviting/fire/place" as the warm fireplace.
 
@@ -417,8 +428,19 @@ The description is "This book will help you learn some advanced strategies for p
 Instead of examining Advanced Adventuring when Doctor Helpful carries Advanced Adventuring:
 	say "Faraji can't read the book while Doctor Helpful is holding it. They'll have to ASK DOCTOR FOR the book to borrow it. He might lend it to you, but you might have to talk to him a bit before he's willing to lend it.";
 
+To say doctor description:
+	say "Doctor Helpful ";
+	if Doctor Helpful is on the cozy sofa:
+		say "reclines on the cozy sofa";
+	otherwise:
+		say "stands nearby";
+	if Doctor Helpful carries Advanced Adventuring:
+		say " reading a book, looking thoughtful";
+	otherwise:
+		say ", looking thoughtful";
+
 Doctor Helpful is a man on the cozy sofa. He is carrying Advanced Adventuring. 
-The description is "Doctor Helpful is a tweedy old professor with ink-stained fingers." Understand "tweedy/professor/man/doc" as Doctor Helpful. "Doctor Helpful reclines on the sofa[if Doctor Helpful carries Advanced Adventuring] reading a book[end if], looking thoughtful."
+The description is "Doctor Helpful is a tweedy old professor with ink-stained fingers." Understand "tweedy/professor/man/doc" as Doctor Helpful. "[doctor description]."
 
 ink-stained fingers is part of Doctor Helpful. The description is "Doctor Helpful's fingers are stained with ink." They are plural-named.
 

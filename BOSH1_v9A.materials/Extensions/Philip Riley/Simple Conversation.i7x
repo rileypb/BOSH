@@ -220,11 +220,11 @@ To say unresponsive:
 	if the current action is giving something to someone:
 		say text of the block giving rule response (A);
 	otherwise if the current interlocutor is Daniels:
-		say "Daniels just shrugs";
+		say "Daniels just shrugs.";
 	otherwise:
-		say "That doesn't seem to be a topic of conversation at the moment";
+		say "That doesn't seem to be a topic of conversation at the moment.";
 
-the unresponsive rule response (A) is "[unresponsive].".
+the unresponsive rule response (A) is "[unresponsive][line break]".
 
 Book 2 - Quizzing about things
 

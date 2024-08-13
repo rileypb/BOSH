@@ -2907,7 +2907,7 @@ Book 28 - Fire Station 1
 The garage door is a closed scenery door. It is west of Solvay Road 100 block and east of the Fire Station 1. Understand "big/red/door" as garage door. The description is "[if the location is Solvay Road 100 block]A big red door, with a sign reading 'Fire Station 1'[otherwise]It's a big red door[end if]. It is [if the garage door is open]open[otherwise]closed[end if]."
 It is unsnarkable.
 
-Fire Station 1 is in ELR. The printed name is "Hook and Ladder Company #1". "The fire station is a modest red brick building dating to the late 19th century. The garage door, [if the garage door is closed]closed[otherwise]open[end if], is to the east. There is a large blue button mounted on the wall."
+Fire Station 1 is in ELR. It is a leavable room. It has egress east. The printed name is "Hook and Ladder Company #1". "The fire station is a modest red brick building dating to the late 19th century. The garage door, [if the garage door is closed]closed[otherwise]open[end if], is to the east. There is a large blue button mounted on the wall."
 Understand "hook/and/ladder/company/#1" as Fire Station 1. 
 
 
