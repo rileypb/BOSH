@@ -1380,7 +1380,9 @@ After printing the locale description of the BOSH Chief's office:
 		Faraji starts to answer, but Klimp interrupts. 'Say, you ever read Petrus Catadesmicus? Here, take his book. [italic type]Liber Animarum[roman type]. Read it. Throw it away. I don't care.'";
 		now Faraji carries Liber Animarum;
 		
-Liber Animarum is carried by Chief Klimp. It is proper-named. The description is "'...what these near-sighted Fools took as Rituals of Cursing are in truth Rituals of Binding, the true Congelation of the Soul, the Chaining of the immaterial Soul to a material Anchor, by piercing with a Spike the written true Name of the subject, thus transfixing the Soul and holding it fast, should the Environment be appropriately Consecrated, and appropriately Deep within the Earth...'". The printed name is "[italic type]Liber Animarum[roman type]". Understand "book/petrus/catadesmicus" as Liber Animarum.
+Liber Animarum is carried by Chief Klimp. It is proper-named. The description is "This is a cryptic tome written by someone named Petrus Catadesmicus: 
+
+'...what these near-sighted Fools took as Rituals of Cursing are in truth Rituals of Binding, the true Congelation of the Soul, the Chaining of the immaterial Soul to a material Anchor, by piercing with a Spike the written true Name of the subject, thus transfixing the Soul and holding it fast, should the Environment be appropriately Consecrated, and appropriately Deep within the Earth...'". The printed name is "[italic type]Liber Animarum[roman type]". Understand "book/petrus/catadesmicus" as Liber Animarum.
 
 
 The Chief's desk is a supporter in BOSH Chief's Office. It is scenery. "This desk is a beautiful assembly of smokey glass and chrome framing. The 'legs' form shelves where Klimp keeps yet more curios. One might wonder where Klimp gets the money."
@@ -1932,6 +1934,7 @@ onondaga-subject is a subject. It is privately-named. The printed name is "Onond
 
 Liber-Animarum-subject is a subject. It is privately-named. The printed name is "Liber Animarum". Understand "Liber/Animarum" as Liber-Animarum-subject.
 Petrus-Catadesmicus-subject is a subject. It is privately-named. The printed name is "Petrus Catadesmicus". Understand "Petrus/Catadesmicus" as Petrus-Catadesmicus-subject.
+Liberace-subject is a subject. It is privately-named. The printed name is "Liberace". Understand "Liberace" as Liberace-subject.
 
 
 Table of Quiz Topics (continued)
@@ -2269,14 +2272,15 @@ pawn-shop-subject	Moira Zin	"'Moira, what do you know about the pawn shop next d
 laundromat-subject	Chief Huffton Klimp	"'Chief, what do you know about the --'"	"'Laundromat? I don't know. I don't do my own laundry. I have a guy for that.'"
 laundromat-subject	Margaret	"'Margaret, what do you know about the laundromat next door?'"	"'It looks dirty.'"
 laundromat-subject	Moira Zin	"'Moira, what do you know about the laundromat next door?'"	"'Hard to say. It doesn't look like a very happy place. But then, I don't think laundromats are supposed to be happy.'"
-alien invasion	Chief Huffton Klimp	"'Chief, is there really going to be an --'"	"'-- alien invasion? Well, of course there is. I have a plan. Do you have a plan? You should have a plan. I have a plan. Don't ask me what it is."
+alien invasion	Chief Huffton Klimp	"'Chief, is there really going to be an --'"	"'-- alien invasion? Well, of course there is. I have a plan. Do you have a plan? You should have a plan. I have a plan. Don't ask me what it is.'"
 alien invasion	Margaret	"'Margaret, do you think there's going to be an alien invasion?'"	"'I hope not. I don't like aliens.'"
 alien invasion	Moira Zin	"'Moira, do you think there's going to be an alien invasion?'"	"'Stop talking to Klimp.'"
 onondaga-subject	Chief Huffton Klimp	"'Chief, what do you know about the --'"	"'-- Onondaga? It's a Native American tribe in upstate New York. They may have been the first to discover the secret of time travel. But they're not talking.'"
 onondaga-subject	Margaret	"'Margaret, what do you know about the Onondaga?'"	"'Are they a band?'"
 onondaga-subject	Moira Zin	"'Moira, what do you know about the Onondaga?'"	"'The Onondaga are a Native American tribe that is part of the Iroquois Confederacy. They are known for their contributions to the culture and history of the region. There is no scientific evidence to support the idea that they discovered the secret of time travel.'"
-Petrus-Catadesmicus-subject	Chief Huffton Klimp	"'Chief, what do you know about Petrus --'"	"'-- Catadesmicus? He was a monk who lived in the 12th century. He was also a time traveler. But most people don't know that he was also a vampire.'"
+Petrus-Catadesmicus-subject	Chief Huffton Klimp	"'Chief, what do you know about Petrus --'"	"'-- Catadesmicus? He was a Renaissance occultist in the 1600s -- weird guy. He thought he was a time traveler. Wrote the Liber Animarum. Or was that Liberace? I get them confused.'"
 Liber-Animarum-subject	Chief Huffton Klimp	"'Chief, what do you know about the Liber --'"	"'-- Animarum? Do you think if I wanted to talk about it, I would have fobbed it off on you? Forget about it.'"
+Liberace-subject	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- Liberace? Not much. Doris played poker with him once. He was a sore loser. But he dressed great.'"
 
 
 Book 18.6 - Klimp Interjections
