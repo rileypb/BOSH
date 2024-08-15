@@ -1889,7 +1889,7 @@ Rule for deciding the concealed possessions of Daniels:
 A root-vegetable is a kind of thing. 
 A root-vegetable can be out-of-reach or within-reach. A root-vegetable is usually within-reach.
 The rutabaga is a root-vegetable. A turnip is a kind of root-vegetable. A potato is a kind of root-vegetable.
-There are 100 potatoes. There are 100 turnips.
+There are 10 potatoes. There are 10 turnips.
 
 The rutabaga is in the old root cellar. 
 The rutabaga is out-of-reach.
@@ -1908,13 +1908,13 @@ The red woven basket is a closed openable scenery container in the old root cell
 The blue woven basket is a closed openable scenery container in the old root cellar. "The basket is woven from reeds[if the blue woven basket is open]. It's open and filled with turnips[otherwise]. It's closed[end if]."
 The green woven basket is a closed openable scenery container in the old root cellar. "The basket is woven from reeds[if the green woven basket is open]. It's open[otherwise]. It's closed[end if]."
 
-Instead of opening the red woven basket:
+[ Instead of opening the red woven basket:
 	now the red woven basket is open;
 	say "Faraji opens the red woven basket. It's filled with potatoes.";
 
 Instead of opening the blue woven basket:
 	now the blue woven basket is open;
-	say "Faraji opens the blue woven basket. It's filled with turnips.";
+	say "Faraji opens the blue woven basket. It's filled with turnips."; ]
 
 Instead of quizzing Daniels about green woven basket when the lizard people are in the location:
 	if the green woven basket is open and the rutabaga is in the green woven basket:
@@ -2342,10 +2342,12 @@ Throwing it to is an action applying to one carried thing and one visible thing.
 
 Persuasion rule for asking Daniels to try throwing something to Faraji when the group of lizard people is in the location:
 	now Faraji distracted this turn is true;
+	now notable Daniels event this turn is true;
 	persuasion succeeds;
 
 Persuasion rule for asking Daniels to try throwing something at something when the group of lizard people is in the location:
 	now Faraji distracted this turn is true;
+	now notable Daniels event this turn is true;
 	persuasion succeeds;
 
 Instead of Daniels throwing a root-vegetable at the group of lizard people:
@@ -2360,6 +2362,7 @@ Instead of throwing something to the player when the group of lizard people is i
 Persuasion rule for asking Daniels to try throwing something at Faraji when the group of lizard people is in the location:
 	now Faraji distracted this turn is true;
 	if the noun is a root-vegetable and (the noun is in the old root cellar or the noun is carried by Daniels) and the noun is out-of-reach:
+		now notable Daniels event this turn is true;
 		persuasion succeeds;
 	otherwise if the noun is not a root-vegetable:
 		say "Daniels looks at you and shrugs. 'Concentrate on the battle, agent!' he shouts.";
@@ -2377,6 +2380,7 @@ Persuasion rule for asking Daniels to try throwing something at Faraji when the 
 Persuasion rule for asking Daniels to try taking a root-vegetable when the group of lizard people is in the location:
 	now Faraji distracted this turn is true;
 	if the noun is a root-vegetable and (the noun is in the old root cellar or the noun is in the green woven basket) and the noun is out-of-reach:
+		now notable Daniels event this turn is true;
 		persuasion succeeds;
 	say "Daniels looks at you and shrugs. 'I can't take what I can't reach!' he shouts.";
 	persuasion fails;
@@ -2384,6 +2388,7 @@ Persuasion rule for asking Daniels to try taking a root-vegetable when the group
 Persuasion rule for asking Daniels to try opening the green woven basket when the group of lizard people is in the location:
 	now Faraji distracted this turn is true;
 	if the green woven basket is closed:
+		now notable Daniels event this turn is true;
 		persuasion succeeds;
 	say "Daniels looks at you and shrugs. 'I can't open what's already open!' he shouts.";
 	persuasion fails;
