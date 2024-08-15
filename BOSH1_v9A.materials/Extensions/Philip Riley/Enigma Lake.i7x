@@ -1948,6 +1948,9 @@ The root vegetables are scenery in the old root cellar. "Looks like the vegetabl
 The passage is scenery in the old root cellar. "The passage leads to the north. From the light filtering in, it probably leads outside." Understand "light" as the passage.
 It is unsnarkable.
 
+Instead of attacking the group of lizard people with something when the group of lizard people is in the old root cellar:
+	say "One of the lizard people deftly intercepts the attack, and rips [the second noun] from Faraji's grasp.";
+	now the second noun is in the location.
 
 Chapter 1 - The Lizard People part 2
 
