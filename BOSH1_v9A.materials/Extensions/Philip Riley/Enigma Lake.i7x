@@ -1949,7 +1949,7 @@ The passage is scenery in the old root cellar. "The passage leads to the north. 
 It is unsnarkable.
 
 Instead of attacking the group of lizard people with something when the group of lizard people is in the old root cellar:
-	say "One of the lizard people deftly intercepts the attack, and rips [the second noun] from Faraji's grasp.";
+	say "One of the lizard people deftly intercepts the attack, and rips [the second noun] from Faraji's grasp, throwing it to the ground.";
 	now the second noun is in the location.
 
 Chapter 1 - The Lizard People part 2
