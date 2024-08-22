@@ -567,7 +567,7 @@ Amelia Earhart is a subject.
 The Voynich Manuscript is a subject. 
 The Shroud of Turin is a subject.
 The Holy Grail is a subject. 
-Time slips is a subject. It is privately-named. The printed name is "time slips". Understand "time slip/slips" as time slips.
+Time slips is a subject. It is privately-named. The printed name is "Time slips". Understand "time slip/slips" as time slips.
 The Ark of the Covenant is a subject.
 The Spear of Destiny is a subject. Understand "holy lance", "lance of longinus" as the Spear of Destiny.
 Alchemy is a subject. Understand "philosopher's stone" as alchemy.
@@ -580,7 +580,7 @@ Ley lines are a subject. Understand "ley line" as ley lines.
 Leyden jars are a subject. Understand "Leyden jar" as leyden jars.
 Astrology is a subject. Understand "horoscope" as astrology.   
 The Freemasons is a subject. Understand "freemason" as the Freemasons. 
-The Knights Templar is a subject.  
+The Knights Templar is a subject. Understand "templars" as the Knights Templar.
 Atlantis is a subject. Understand "lost city" as Atlantis. 
 Ancient astronauts is a subject. Understand "astronaut" as ancient astronauts. 
 Ancient Egypt is a subject. Understand "pyramid/pyramids/sphinx" as Ancient Egypt. 
@@ -593,9 +593,9 @@ Zombies is a subject. Understand "zombie" as zombies.
 Hypnosis is a subject. Understand "hypnotism" as hypnosis. 
 Invisibility is a subject. Understand "invisible" as invisibility.
 Levitation is a subject. Understand "levitate" as levitation.
-Telekinesis is a subject. Understand "telekinetic" as telekinesis.
+Telekinesis is a subject. Understand "telekinetic/power/powers" as telekinesis.
 Teleportation is a subject. Understand "teleport" as teleportation.
-aliens is a subject. Understand "UFO/UFOs" as aliens.
+aliens is a subject.
 Spontaneous human combustion is a subject. 
 The Moberly-Jourdain Incident is a subject. Understand "moberly/jourdain" as the Moberly-Jourdain Incident.
 Nikola Tesla is a subject. 
@@ -1902,7 +1902,9 @@ To start is a verb. To begin is a verb.
 
 Senator-savra-subject is a subject. The printed name is "Senator Savra". Understand "Senator/Savra" as Senator-savra-subject. Budapest is a subject. Istanbul is a subject. Pompeii is a subject. The Smithsonian Castle is a subject. House of Representatives is a subject. Kentucky is a subject. Jefferson Davis is a subject. 
 Colonel Sanders is a subject. The Confederacy is a subject. Benny Hill is a subject. Ural Mountains is a subject. The White House is a subject. The Vatican is a subject. 
-New-Order is a subject. It is privately-named. The printed name is "New Order". Understand "New Order" as New-Order. Thomas Edison is a subject. Georgia is a subject. The Georgia Guidestones is a subject.
+New-Order is a subject. It is privately-named. The printed name is "New Order". Understand "New Order" as New-Order. Thomas Edison is a subject. 
+Georgia-subject is a subject. It is privately-named. The printed name is "State of Georgia". Understand "Georgia/state" as Georgia-subject.
+The Georgia Guidestones is a subject.
 ESPN is a subject. Mark David Chapman is a subject. The Beatles is a subject. The Monkees is a subject. Blitzkrieg Bop is a subject. Dave Clark Five is a subject. The Ramones is a subject. Marxism is a subject. Understand "marxist" as marxism. Groucho Marx is a subject. Marx Brothers is a subject. Franklin Delano Roosevelt is a subject. Understand "FDR/D" as Franklin Delano Roosevelt. Harry S Truman is a subject. Japan is a subject. World War II is a subject. Understand "WWII/WW2" as World War II. Great Depression is a subject. 
 Tracy Chapman is a subject. Doogie Howser is a subject. Understand "howitzer" as Doogie Howser. 
 The Vietnam War is a subject. Neil Patrick Harris is a subject. Ronald Reagan is a subject.
@@ -1935,6 +1937,46 @@ onondaga-subject is a subject. It is privately-named. The printed name is "Onond
 Liber-Animarum-subject is a subject. It is privately-named. The printed name is "Liber Animarum". Understand "Liber/Animarum" as Liber-Animarum-subject.
 Petrus-Catadesmicus-subject is a subject. It is privately-named. The printed name is "Petrus Catadesmicus". Understand "Petrus/Catadesmicus" as Petrus-Catadesmicus-subject.
 Liberace-subject is a subject. It is privately-named. The printed name is "Liberace". Understand "Liberace" as Liberace-subject.
+
+oddities-subject is a subject. It is privately-named. The printed name is "oddities". Understand "memorabilia", "junk", "stuff", "knick-knacks", "knick knacks" as the oddities-subject.
+chief-shelves-subject is a subject. It is privately-named. The printed name is "chief's shelves". Understand "chief's/shelves" as chief-shelves-subject.
+
+pink floyd is a subject. Understand "dark/side/of/the/moon" as pink floyd.
+Bavaria is a subject. Understand "Bavarian" as Bavaria.
+Hipgnosis is a subject. 
+bread-subject is a subject. It is privately-named. The printed name is "bread". Understand "bread" as bread-subject.
+led zeppelin is a subject. 
+john bonham is a subject.
+poland is a subject.
+jimmy page is a subject.
+portugal is a subject.
+bahrain is a subject.
+maple syrup is a subject.
+canada is a subject.
+chestnuts is a subject. Understand "chestnut" as chestnuts.
+squirrels is a subject. Understand "squirrel" as squirrels.
+furniture is a subject.
+art is a subject.
+music-subject is a subject. It is privately-named. The printed name is "music". Understand "music" as music-subject.
+kangaroo is a subject. Understand "kangaroos" as kangaroo.
+office-subject is a subject. It is privately-named. The printed name is "office". Understand "office/offices" as office-subject.
+cryptozoology is a subject. 
+cryptids is a subject. Understand "cryptid" as cryptids.
+owl is a subject. Understand "owls" as owl.
+diners is a subject. Understand "diner" as diners.
+scrapple is a subject.
+lizard-people-subject is a subject. It is privately-named. The printed name is "lizard people". Understand "lizard/people/person/man/men/woman/women/lizardman/lizardmen/lizardwoman/lizardwomen" as lizard-people-subject.
+Russia-subject is a subject. It is privately-named. The printed name is "Russia". Understand "Russia" as Russia-subject.
+Earth-subject is a subject. It is privately-named. The printed name is "Earth". Understand "Earth" as Earth-subject.
+Richard-nixon-subject is a subject. It is privately-named. The printed name is "Richard Nixon". Understand "Richard/Nixon" as Richard-nixon-subject.
+Krushchev-subject is a subject. It is privately-named. The printed name is "Krushchev". Understand "Nikita/Krushchev" as Krushchev-subject.
+Mao Zedong is a subject. Understand "Chairman/Tse-tung" as Mao Zedong.
+dee-dee-ramone-subject is a subject. It is privately-named. The printed name is "Dee Dee Monkee". Understand "Dee/Dee/Ramone/Monkee" as dee-dee-ramone-subject.
+johnny-ramone-subject is a subject. It is privately-named. The printed name is "Johnny Monkee". Understand "Johnny/Ramone/Monkee" as johnny-ramone-subject.
+joey-ramone-subject is a subject. It is privately-named. The printed name is "Joey Monkee". Understand "Joey/Ramone/Monkee" as joey-ramone-subject.
+Crusades-subject is a subject. It is privately-named. The printed name is "Crusades". Understand "Crusades/crusade" as Crusades-subject.
+Pope-clement-v-subject is a subject. It is privately-named. The printed name is "Pope Clement V". Understand "Pope/Clement/V" as Pope-clement-v-subject.
+Senate-subject is a subject. It is privately-named. The printed name is "Senate". Understand "Senate" as Senate-subject.
 
 
 Table of Quiz Topics (continued)
@@ -2008,7 +2050,7 @@ Astrology	Chief Huffton Klimp	"'Chief, do you believe in horo--'"	"'scopes? Yes,
 The Freemasons	Chief Huffton Klimp	"'Chief, who are the Free--'"	"'masons? Harmless. They're harmless. They're just a bunch of guys who like to wear aprons and have secret handshakes. It's not like they have the Holy Grail or anything. That's a myth. I think.'"
 The Knights Templar	Chief Huffton Klimp	"'Chief, what can you tell me about the --'"	"'Knights Templar? Consider this -- they're not Knights at all. They're really kind of fun, you know. They're like the Freemasons, but with swords. And they have the Spear of Destiny. Or they did. Or they didn't. I can't remember.'"
 Atlantis	Chief Huffton Klimp	"'Chief, tell me about At--'"	"'lanta? It's a city in Georgia. Oh, you mean the lost city of Atlantis. It's really just a metaphor. For something. I can't remember what. But it's a metaphor. For something.'"
-Georgia	Chief Huffton Klimp	"'So what about Geor --'"	"'gia? It's the only US State that spans two continents, you know.'"
+Georgia-subject	Chief Huffton Klimp	"'So what about Geor --'"	"'gia? It's the only US State that spans two continents, you know.'"
 The Georgia Guidestones	Chief Huffton Klimp	"'Chief, what's the deal with the Georgia --'"	"'Guidestones? They may have been erected by human hands, but they were inspired by the Black Knight Satellite. I've seen the evidence.'"
 Ancient astronauts	Chief Huffton Klimp	"[We] [ask], 'Do you believe in --'"	"'ancient astronauts? I can't remember. I used to. I used to believe in them. I used to believe in them a lot. I used to believe in them so much that I thought I was one. Now, I'm not so sure.'"
 Ancient Egypt	Chief Huffton Klimp	"'Chief, what's the deal with --'"	"'Ancient Egypt? It's not there anymore. It just disappeared. It's a mystery. Now there's just a place that's called Egypt. It's not the same. It's not the same at all.'"
@@ -2124,7 +2166,7 @@ Astrology	Moira Zin	"'Moira, what's the deal with astrology?'"	"'Astrology is a 
 The Freemasons	Moira Zin	"'Moira, what's the deal with the Freemasons?'"	"'The Freemasons are a fraternal organization that traces its origins to the local fraternities of stonemasons, which from the end of the fourteenth century regulated the qualifications of masons and their interaction with authorities and clients. There is no scientific evidence to support the idea that they are a secret society that controls world events.'"
 The Knights Templar	Moira Zin	"'Moira, what's the deal with the Knights Templar?'"	"'The Knights Templar were a medieval Christian military order that was active from the 12th to the 14th centuries. They were one of the most powerful and wealthy organizations in the Middle Ages. There is no scientific evidence to support the idea that they possessed the Holy Grail.'"
 Atlantis	Moira Zin	"'Moira, what's the deal with Atlantis?'"	"'Atlantis is a mythical island that is said to have sunk into the sea. It is mentioned in the works of the ancient Greek philosopher Plato. There is no scientific evidence to support the existence of Atlantis.'"
-Georgia	Moira Zin	"'Moira, what's the deal with Georgia?'"	"'Georgia is a state in the southeastern United States. It is known for its peaches, peanuts, and pecans. It is also known for the Georgia Guidestones. There is no scientific evidence to support any supernatural explanation for them.'"
+Georgia-subject	Moira Zin	"'Moira, what's the deal with Georgia?'"	"'Georgia is a state in the southeastern United States. It is known for its peaches, peanuts, and pecans. It is also known for the Georgia Guidestones. There is no scientific evidence to support any supernatural explanation for them.'"
 Georgia Guidestones	Moira Zin	"'Moira, what's the deal with the Georgia Guidestones?'"	"'The Georgia Guidestones are a granite monument that is located in Elbert County, Georgia. They are inscribed with ten guidelines in eight modern languages and a shorter message in four ancient languages. There is no scientific evidence to support any supernatural explanation for them.'"
 Ancient astronauts	Moira Zin	"'Moira, what's the deal with ancient astronauts?'"	"'Ancient astronauts is a pseudoscientific theory that posits that intelligent extraterrestrial beings visited Earth in ancient times and influenced human culture and technology. There is no scientific evidence to support the claims of ancient astronauts.'"
 Ancient Egypt	Moira Zin	"'Moira, what's the deal with ancient Egypt?'"	"'Ancient Egypt was a civilization that was located in northeastern Africa. It was one of the world's earliest and longest-lasting civilizations. There is no scientific evidence to support any supernatural explanation for its achievements.'"
@@ -2281,6 +2323,44 @@ onondaga-subject	Moira Zin	"'Moira, what do you know about the Onondaga?'"	"'The
 Petrus-Catadesmicus-subject	Chief Huffton Klimp	"'Chief, what do you know about Petrus --'"	"'-- Catadesmicus? He was a Renaissance occultist in the 1600s -- weird guy. He thought he was a time traveler. Wrote the Liber Animarum. Or was that Liberace? I get them confused.'"
 Liber-Animarum-subject	Chief Huffton Klimp	"'Chief, what do you know about the Liber --'"	"'-- Animarum? Do you think if I wanted to talk about it, I would have fobbed it off on you? Forget about it.'"
 Liberace-subject	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- Liberace? Not much. Doris played poker with him once. He was a sore loser. But he dressed great.'"
+oddities-subject	Chief Huffton Klimp	"'Chief, what can you tell me about these' --'"	"'-- things on the shelf? They're oddities. Things that don't fit in anywhere else. Things that don't make sense. Things that make you wonder. Wonder what they're doing there.'"
+chief-shelves-subject	Chief Huffton Klimp	"'Chief, what's the deal with these' --'"	"'-- shelves? I put things on them. Things you can look at. I might even let you borrow them. But you have to ask first.'"
+pink floyd	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- Dark Side of the Moon? Pink Floyd?  It's not widely known, but Roger Waters was secretly replaced by a lizard person right after the album was released. That's why he became such a bore. In fact, just listen to Animals: what are the least favorite animals of lizard people? Pigs, dogs, and sheep. And that's what the album is about.'"
+Bavaria	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- Bavaria? Ah well, there's the rub, eh? Who really knows what goes on in Bavaria? I do. But I'm not telling. Not until I have proof. But I know it has to do with bakers. Very sinister bakers.'"
+Hipgnosis	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- Hipgnosis? They were a visual design group that created album covers for Pink Floyd, Led Zeppelin, and other bands. But they disappeared in the 1980s. Some say they were abducted by aliens. Others say they were eaten by lizard people. I say they were just tired of making album covers.'"
+bread-subject	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- bread? I don't eat bread. I'm watching my figure. But you know who knows a lot about bread? The Illuminati. Go ask them. They'll tell you all about it.'"
+led zeppelin	Chief Huffton Klimp	"'Chief, what do you think about --'"	"'-- Led Zeppelin? Ha! What *don't* I think about them? John Bonham never died. He was lost in a time slip and ended up in 15th century Poland. That's why they never replaced him. They were waiting for him to come back. But he never did. Sad, really.'"
+John Bonham	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- John Bonham? He was the drummer for Led Zeppelin. Sad story, really. Jimmy Page never got over it. He still thinks he's going to walk through the door one day. But he won't. He's in Poland. Or maybe it was Portugal. I can't remember.'"
+Jimmy Page	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- Jimmy Page? He was the guitarist for Led Zeppelin. He, Doris, and I used drink absinthe in Istanbul and talk about theoretical aspects of time travel. But then there was that incident with the lizard person in Bahrain. We haven't spoken since.'"
+Poland	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- Poland? Ah, Poland. Most people don't realize that it's not named after poles. Tracy Chapman used to live there, until she got dragged into that messy mistaken-identity business after John Lennon was allegedy killed. But that's another story.'"
+Portugal	Chief Huffton Klimp	"'Chief, what's the deal with --'"	"'-- Portugal? Ah, Portugal, the Spanish Canada. Not very good at making maple syrup, but they try. They try.'"
+Bahrain	Chief Huffton Klimp	"'Chief, what's so special about --'"	"'-- Bahrain? Ah, Bahrain. Bahrain is to the Middle East what the Middle East is to the world, if you know what I mean. But most people don't. But Peter Tork understood. Very perceptive fellow.'"
+maple syrup	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- maple syrup? Hmm, that's a tough one. I'm always suspicious of things that come from trees. Like chestnuts. And squirrels.'"
+Canada	Chief Huffton Klimp	"'Chief, have you ever been to --'"	"'-- Canada? No, never. Very dangerous place. Lots of bears.'"
+chestnuts	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- chestnuts? Do you mean like an old story? Or like the kind you roast on an open fire? Because I have a story about both. Neither of them are true.'"
+squirrels	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- squirrels? Do we have to talk about squirrels? It's painful to me. Why don't we talk about something else? Like the Freemasons. Or Istanbul?'"
+furniture	Chief Huffton Klimp	"'Chief, do you have any thoughts on --'"	"'-- furniture? The problem with furniture is that it's always there, taking up space. I mean, look at my office, it's full of the stuff. You can barely move. But I can't get rid of it. It's like a curse.'"
+art	Chief Huffton Klimp	"'Chief, what are your thoughts about --'"	"'-- art? I like art. I mean, not all of it. I like the good stuff, and I don't like the bad stuff. If you need to know whether something is good or bad, just ask me. I'll tell you.'"
+music-subject	Chief Huffton Klimp	"'Chief, what do you think about --'"	"'-- music? The last time I listened to music, I was in a car wash. It was playing on the radio. I think it was the Monkees. But it could have been the Beatles. Or the Rolling Stones. Or the Illuminati.'"
+kangaroo	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- kangaroos? I won't dignify that with an answer. But I will say this: they're not what they seem. They're not what they seem at all.'"
+office-subject	Chief Huffton Klimp	"'Chief, do you like --'"	"'-- the new office? Well, yes and no. This office is mine and it has my stuff in it, which is good. But the old office had character. And a ghost. I miss that ghost.'"
+cryptozoology	Chief Huffton Klimp	"'Chief, what's your take on crypto--'"	"'-- zoology? I don't known why we ever let animals have bitcoins in the first place. Haha! I'm just messing with you. Cryptozoology is the study of animals that may or may not exist. Like the Bugbear of Slocum Heath. Or the Monkees.'"
+cryptids	Chief Huffton Klimp	"'Chief, what do you think about --'"	"'-- cryptids? I think they're all around us. I think they're watching us. I think they're waiting for the right moment to reveal themselves. But I'm ready. I'm ready for them.'"
+owl	Chief Huffton Klimp	"'Do you know anything about --'"	"'-- owls? Who does? They're mysterious creatures. Did you know that they can turn their heads all the way around? I can't do that. Can you?'"
+diners	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- diners? I love diners. Do you know what the best name for a diner is? 'Henry's Hot Skillet.' I don't know if it exists, but it should. And it should meet a tragic end. Like all diners.'"
+scrapple	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- scrapple? Never played it. Too many letters. But you're not talking about the game, are you? You're talking about the food. Or at least, the thing that Pennsylvanians call food. No comment.'"
+lizard-people-subject	Chief Huffton Klimp	"'Chief, what do you think about --'"	"'-- lizard people? Don't believe the hype. They're not all bad. Some of them are just misunderstood. Doris gets all excited about them. But lizards are cute, don't you think?'"
+Russia-subject	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- Russia? How many Russians does it take to change a lightbulb? None. They have lightbulbs that never burn out. It's a secret. They stole the secret from Tesla. The Dave Clark Five wrote a song about it, but Krushchev wouldn't let them release it.'"
+Earth-subject	Chief Huffton Klimp	"'Chief, what are your thoughts on --'"	"'-- the Earth? It's hollow, and John Lennon is living inside it. He's waiting for the alien invasion. He's going to defeat them with his telekinetic powers. He wrote all about it in his song [']Blitzkrieg Bop.[']'"
+Richard-nixon-subject	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- Richard Nixon? Boy, he fooled everyone, didn't he? Well, except for me and Mao. Mao was smart like that. He could see through Nixon's lies. But then, Mao was a lizard person. So, you know, he had an advantage.'"
+Krushchev-subject	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- Krushchev? His fondness for cryptozoology is well known. He was convinced that the Jersey Devil was a secret weapon of the Americans. He was right, of course. But he never found out how to control it.'"
+Mao Zedong	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- Mao Zedong? Never met him. Well, I mean, I did. He spent most of his time working on his invention of the Ouija Board.'"
+dee-dee-ramone-subject	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- Dee Dee Monkee? He was the bass player for the Monkees. He also went by the name of Peter Tork.'"
+johnny-ramone-subject	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- Johnny Monkee? He was the guitarist for the Monkees. He also went by the name of Mike Nesmith.'"
+joey-ramone-subject	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- Joey Monkee? He was the singer for the Monkees. He also went by the name of Davy Jones.'"
+Crusades-subject	Chief Huffton Klimp	"'Chief, what do you know about the --'"	"'-- Crusades? Ah, the Crusades. A folly. A tragedy. A comedy of errors. But most people don't know that they were all orchestrated by time travelers. They were trying to change the course of history. But they failed. Or did they?'"
+Pope-clement-v-subject	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- Pope Clement V? How would you like to be only one of fourteen popes with the same name? That's a lot of popes. There were originally twenty-eight Pope Clements, but the other fourteen were erased from history by the Illuminati.'"
+Senate-subject	Chief Huffton Klimp	"'Chief, what do you know about the --'"	"'-- Senate? The only thing worse than the Senate is the House. And the only thing worse than the House is the Illuminati. And the only thing worse than the Illuminati is the Senate. It's a paradox. Or maybe it's a conspiracy. Or maybe it's a paradoxical conspiracy.'"
 
 
 Book 18.6 - Klimp Interjections
