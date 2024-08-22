@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 
-<Skein rootNode="node-1002">
+<Skein rootNode="node-1202">
     <generator>Inform Mac Client (Inform version )</generator>
-    <item nodeId="node-1002">
+    <item nodeId="node-1202">
         <command xml:space="preserve">BOSH1_v9A</command>
         <result xml:space="preserve">
 
@@ -21,21 +21,21 @@ or (3) Larch Faraji (they/them), lead singer of the third wave neo-old-school pu
 
 1, 2, or 3? &gt; </result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1094"></child>
-            <child nodeId="node-1074"></child>
-            <child nodeId="node-1003"></child>
+        <children><child nodeId="node-1294"></child>
+            <child nodeId="node-1274"></child>
+            <child nodeId="node-1203"></child>
         </children>
     </item>
-    <item nodeId="node-1003">
+    <item nodeId="node-1203">
         <command xml:space="preserve">gonear main street</command>
         <result xml:space="preserve">Agent Faraji is on the 200 block of Main Street. The street runs east and west from here. South is the edifice of Rolle's Department Store. North is the town hall.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1004"></child>
+        <children><child nodeId="node-1204"></child>
         </children>
     </item>
-    <item nodeId="node-1004">
+    <item nodeId="node-1204">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">Agent Faraji is in Rolle's Department Store. Once, town department stores like this were a constant of American life. Sadly, this one is empty of everything save a number of sale posters and its gleaming floor.
 
@@ -43,191 +43,191 @@ A floor waxer sits in the center of the gleaming floor.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1005"></child>
+        <children><child nodeId="node-1205"></child>
         </children>
     </item>
-    <item nodeId="node-1005">
+    <item nodeId="node-1205">
         <command xml:space="preserve">x waxer</command>
         <result xml:space="preserve">This is a bulky, heavy-duty machine with a large, round brush head, designed for durability and the ability to polish vast floor areas to a high shine.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1006"></child>
+        <children><child nodeId="node-1206"></child>
         </children>
     </item>
-    <item nodeId="node-1006">
+    <item nodeId="node-1206">
         <command xml:space="preserve">take it</command>
         <result xml:space="preserve">It's too heavy to lift.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1026"></child>
-            <child nodeId="node-1007"></child>
+        <children><child nodeId="node-1226"></child>
+            <child nodeId="node-1207"></child>
         </children>
     </item>
-    <item nodeId="node-1007">
+    <item nodeId="node-1207">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">Agent Faraji is on 200 block of Main Street. The street runs east and west from here. South is the edifice of Rolle's Department Store. North is the town hall.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1008"></child>
+        <children><child nodeId="node-1208"></child>
         </children>
     </item>
-    <item nodeId="node-1008">
+    <item nodeId="node-1208">
         <command xml:space="preserve">nw</command>
         <result xml:space="preserve">Go north to enter the town hall.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1009"></child>
+        <children><child nodeId="node-1209"></child>
         </children>
     </item>
-    <item nodeId="node-1009">
+    <item nodeId="node-1209">
         <command xml:space="preserve">ne</command>
         <result xml:space="preserve">Go north to enter the town hall.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1010"></child>
+        <children><child nodeId="node-1210"></child>
         </children>
     </item>
-    <item nodeId="node-1010">
+    <item nodeId="node-1210">
         <command xml:space="preserve">sw</command>
         <result xml:space="preserve">You can go north into the town hall, or south into Rolle's Department Store. In addition, Main Street leads east and west.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1011"></child>
+        <children><child nodeId="node-1211"></child>
         </children>
     </item>
-    <item nodeId="node-1011">
+    <item nodeId="node-1211">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">Agent Faraji is on the corner of Main and Solvay. Main Street runs east from here, while Solvay Road heads north. South of here, Henry's Hot Skillet promises all of the comforts of the mid-twentieth-century diner. A book store named The Reading Room lies to the west, while Fresnel's Music is southwest.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1012"></child>
+        <children><child nodeId="node-1212"></child>
         </children>
     </item>
-    <item nodeId="node-1012">
+    <item nodeId="node-1212">
         <command xml:space="preserve">ne</command>
         <result xml:space="preserve">Faraji can't go that way.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1013"></child>
+        <children><child nodeId="node-1213"></child>
         </children>
     </item>
-    <item nodeId="node-1013">
+    <item nodeId="node-1213">
         <command xml:space="preserve">enter town hall</command>
         <result xml:space="preserve">That's not something Faraji can enter.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1014"></child>
+        <children><child nodeId="node-1214"></child>
         </children>
     </item>
-    <item nodeId="node-1014">
+    <item nodeId="node-1214">
         <command xml:space="preserve">ne</command>
         <result xml:space="preserve">Faraji can't go that way.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1015"></child>
+        <children><child nodeId="node-1215"></child>
         </children>
     </item>
-    <item nodeId="node-1015">
+    <item nodeId="node-1215">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">Agent Faraji is on 200 block of Main Street. The street runs east and west from here. South is the edifice of Rolle's Department Store. North is the town hall.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1016"></child>
+        <children><child nodeId="node-1216"></child>
         </children>
     </item>
-    <item nodeId="node-1016">
+    <item nodeId="node-1216">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">Agent Faraji is at the intersection of Main and Lake. Main goes west, while Lake runs north. The corner of the town hall is to the northwest, although it cannot be entered there. Southeast is the entrance to WGXC "Galaxy" Radio. There is a broadcast tower on top of the building.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1017"></child>
+        <children><child nodeId="node-1217"></child>
         </children>
     </item>
-    <item nodeId="node-1017">
+    <item nodeId="node-1217">
         <command xml:space="preserve">b</command>
         <result xml:space="preserve">Faraji can't go that way.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1018"></child>
+        <children><child nodeId="node-1218"></child>
         </children>
     </item>
-    <item nodeId="node-1018">
+    <item nodeId="node-1218">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">Agent Faraji is walking on Lake Street by the gym. 
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1019"></child>
+        <children><child nodeId="node-1219"></child>
         </children>
     </item>
-    <item nodeId="node-1019">
+    <item nodeId="node-1219">
         <command xml:space="preserve">sw</command>
         <result xml:space="preserve">You can't enter the town hall from here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1020"></child>
+        <children><child nodeId="node-1220"></child>
         </children>
     </item>
-    <item nodeId="node-1020">
+    <item nodeId="node-1220">
         <command xml:space="preserve">bw</command>
         <result xml:space="preserve">Faraji can't go that way.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1021"></child>
+        <children><child nodeId="node-1221"></child>
         </children>
     </item>
-    <item nodeId="node-1021">
+    <item nodeId="node-1221">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">You can't enter the town hall from here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1022"></child>
+        <children><child nodeId="node-1222"></child>
         </children>
     </item>
-    <item nodeId="node-1022">
+    <item nodeId="node-1222">
         <command xml:space="preserve">nw</command>
         <result xml:space="preserve">You can't enter the town hall from here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1023"></child>
+        <children><child nodeId="node-1223"></child>
         </children>
     </item>
-    <item nodeId="node-1023">
+    <item nodeId="node-1223">
         <command xml:space="preserve">se</command>
         <result xml:space="preserve">Faraji can't go that way.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1024"></child>
+        <children><child nodeId="node-1224"></child>
         </children>
     </item>
-    <item nodeId="node-1024">
+    <item nodeId="node-1224">
         <command xml:space="preserve">ne</command>
         <result xml:space="preserve">Faraji can't go that way.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1025"></child>
+        <children><child nodeId="node-1225"></child>
         </children>
     </item>
-    <item nodeId="node-1025">
+    <item nodeId="node-1225">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">(first opening the gym door)
 It seems to be locked.
@@ -235,25 +235,25 @@ It seems to be locked.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1026">
+    <item nodeId="node-1226">
         <command xml:space="preserve">gonear gym</command>
         <result xml:space="preserve">Which do you mean, Lake Street by the gym, the gym basement, the gym door or the gym front desk?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1027"></child>
+        <children><child nodeId="node-1227"></child>
         </children>
     </item>
-    <item nodeId="node-1027">
+    <item nodeId="node-1227">
         <command xml:space="preserve">gonear gym front desk</command>
         <result xml:space="preserve">Agent Faraji is in the public gymnasium. There is a basketball court and a weight training area. A front desk is next to the front entrance.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1028"></child>
+        <children><child nodeId="node-1228"></child>
         </children>
     </item>
-    <item nodeId="node-1028">
+    <item nodeId="node-1228">
         <command xml:space="preserve">x desk</command>
         <result xml:space="preserve">Some kind of record book sits on the front desk.
 
@@ -261,30 +261,30 @@ On the gym front desk is a membership book.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1029"></child>
+        <children><child nodeId="node-1229"></child>
         </children>
     </item>
-    <item nodeId="node-1029">
+    <item nodeId="node-1229">
         <command xml:space="preserve">take book</command>
         <result xml:space="preserve">You hardly need it, and it might useful to someone else.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1073"></child>
-            <child nodeId="node-1030"></child>
+        <children><child nodeId="node-1273"></child>
+            <child nodeId="node-1230"></child>
         </children>
     </item>
-    <item nodeId="node-1030">
+    <item nodeId="node-1230">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">(first opening the gym door)
 It seems to be locked.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1031"></child>
+        <children><child nodeId="node-1231"></child>
         </children>
     </item>
-    <item nodeId="node-1031">
+    <item nodeId="node-1231">
         <command xml:space="preserve">showme gym door</command>
         <result xml:space="preserve">gym door - locked door
 location: in the public gymnasium
@@ -310,19 +310,19 @@ other side: Lake Street by the gym
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1032"></child>
+        <children><child nodeId="node-1232"></child>
         </children>
     </item>
-    <item nodeId="node-1032">
+    <item nodeId="node-1232">
         <command xml:space="preserve">gonear department store</command>
         <result xml:space="preserve">Which do you mean, the department store sign, Rolle's Department Store or Rolle's Department Store?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1033"></child>
+        <children><child nodeId="node-1233"></child>
         </children>
     </item>
-    <item nodeId="node-1033">
+    <item nodeId="node-1233">
         <command xml:space="preserve">rolle's</command>
         <result xml:space="preserve">(Rolle's Department Store)
 Agent Faraji is in Rolle's Department Store. Once, town department stores like this were a constant of American life. Sadly, this one is empty of everything save a number of sale posters and its gleaming floor.
@@ -331,10 +331,10 @@ A floor waxer sits in the center of the gleaming floor.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1034"></child>
+        <children><child nodeId="node-1234"></child>
         </children>
     </item>
-    <item nodeId="node-1034">
+    <item nodeId="node-1234">
         <command xml:space="preserve">x department</command>
         <result xml:space="preserve">Agent Faraji is in Rolle's Department Store. Once, town department stores like this were a constant of American life. Sadly, this one is empty of everything save a number of sale posters and its gleaming floor.
 
@@ -342,110 +342,110 @@ A floor waxer sits in the center of the gleaming floor.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1035"></child>
+        <children><child nodeId="node-1235"></child>
         </children>
     </item>
-    <item nodeId="node-1035">
+    <item nodeId="node-1235">
         <command xml:space="preserve">move waxer</command>
         <result xml:space="preserve">Faraji can't move that.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1036"></child>
+        <children><child nodeId="node-1236"></child>
         </children>
     </item>
-    <item nodeId="node-1036">
+    <item nodeId="node-1236">
         <command xml:space="preserve">x posters</command>
         <result xml:space="preserve">"50% off everything in the store!"
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1037"></child>
+        <children><child nodeId="node-1237"></child>
         </children>
     </item>
-    <item nodeId="node-1037">
+    <item nodeId="node-1237">
         <command xml:space="preserve">x waxer</command>
         <result xml:space="preserve">This is a bulky, heavy-duty machine with a large, round brush head, designed for durability and the ability to polish vast floor areas to a high shine.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1038"></child>
+        <children><child nodeId="node-1238"></child>
         </children>
     </item>
-    <item nodeId="node-1038">
+    <item nodeId="node-1238">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">Agent Faraji is on the 200 block of Main Street. The street runs east and west from here. South is the edifice of Rolle's Department Store. North is the town hall.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1039"></child>
+        <children><child nodeId="node-1239"></child>
         </children>
     </item>
-    <item nodeId="node-1039">
+    <item nodeId="node-1239">
         <command xml:space="preserve">x door</command>
         <result xml:space="preserve">There's nothing like that nearby.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1040"></child>
+        <children><child nodeId="node-1240"></child>
         </children>
     </item>
-    <item nodeId="node-1040">
+    <item nodeId="node-1240">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">Agent Faraji is on the corner of Main and Solvay. Main Street runs east from here, while Solvay Road heads north. South of here, Henry's Hot Skillet promises all of the comforts of the mid-twentieth-century diner. A book store named The Reading Room lies to the west, while Fresnel's Music is southwest.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1041"></child>
+        <children><child nodeId="node-1241"></child>
         </children>
     </item>
-    <item nodeId="node-1041">
+    <item nodeId="node-1241">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">(first opening the Skillet door)
 It seems to be locked.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1042"></child>
+        <children><child nodeId="node-1242"></child>
         </children>
     </item>
-    <item nodeId="node-1042">
+    <item nodeId="node-1242">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">Agent Faraji is on the 200 block of Main Street. The street runs east and west from here. South is the edifice of Rolle's Department Store. North is the town hall.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1043"></child>
+        <children><child nodeId="node-1243"></child>
         </children>
     </item>
-    <item nodeId="node-1043">
+    <item nodeId="node-1243">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">Agent Faraji is at the intersection of Main and Lake. Main goes west, while Lake runs north. The corner of the town hall is to the northwest, although it cannot be entered there. Southeast is the entrance to WGXC "Galaxy" Radio. There is a broadcast tower on top of the building.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1044"></child>
+        <children><child nodeId="node-1244"></child>
         </children>
     </item>
-    <item nodeId="node-1044">
+    <item nodeId="node-1244">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">Agent Faraji is walking on Lake Street by the gym. 
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1045"></child>
+        <children><child nodeId="node-1245"></child>
         </children>
     </item>
-    <item nodeId="node-1045">
+    <item nodeId="node-1245">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">Agent Faraji is walking on Lake Street by the park. 
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1046"></child>
+        <children><child nodeId="node-1246"></child>
         </children>
     </item>
-    <item nodeId="node-1046">
+    <item nodeId="node-1246">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">Agent Faraji is at the intersection of Lake Street and Ridge Road. The intersection lies at the edge of the lake. Lake Street runs south into town, while Ridge Road heads off into the darkness east of here. A little park along the lake shore is to the west.
 
@@ -453,28 +453,28 @@ There is an abandoned pickup truck at the side of the road.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1047"></child>
+        <children><child nodeId="node-1247"></child>
         </children>
     </item>
-    <item nodeId="node-1047">
+    <item nodeId="node-1247">
         <command xml:space="preserve">enter truck</command>
         <result xml:space="preserve">Faraji can't get into the closed abandoned pickup truck.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1048"></child>
+        <children><child nodeId="node-1248"></child>
         </children>
     </item>
-    <item nodeId="node-1048">
+    <item nodeId="node-1248">
         <command xml:space="preserve">open it</command>
         <result xml:space="preserve">Faraji opens the abandoned pickup truck, revealing nothing.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1049"></child>
+        <children><child nodeId="node-1249"></child>
         </children>
     </item>
-    <item nodeId="node-1049">
+    <item nodeId="node-1249">
         <command xml:space="preserve">enter truck</command>
         <result xml:space="preserve">Agent Faraji is at the intersection of Lake Street and Ridge Road. They are in the abandoned pickup truck. There is a glove compartment on the passenger side, closed.
 
@@ -482,37 +482,37 @@ The intersection lies at the edge of the lake. Lake Street runs south into town,
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1050"></child>
+        <children><child nodeId="node-1250"></child>
         </children>
     </item>
-    <item nodeId="node-1050">
+    <item nodeId="node-1250">
         <command xml:space="preserve">open glove</command>
         <result xml:space="preserve">Faraji opens the glove compartment, revealing a brass key.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1051"></child>
+        <children><child nodeId="node-1251"></child>
         </children>
     </item>
-    <item nodeId="node-1051">
+    <item nodeId="node-1251">
         <command xml:space="preserve">take key</command>
         <result xml:space="preserve">Taken.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1052"></child>
+        <children><child nodeId="node-1252"></child>
         </children>
     </item>
-    <item nodeId="node-1052">
+    <item nodeId="node-1252">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">Faraji would have to get out of the abandoned pickup truck first.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1053"></child>
+        <children><child nodeId="node-1253"></child>
         </children>
     </item>
-    <item nodeId="node-1053">
+    <item nodeId="node-1253">
         <command xml:space="preserve">out</command>
         <result xml:space="preserve">Faraji gets out of the abandoned pickup truck.
 
@@ -522,37 +522,37 @@ There is an abandoned pickup truck at the side of the road.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1054"></child>
+        <children><child nodeId="node-1254"></child>
         </children>
     </item>
-    <item nodeId="node-1054">
+    <item nodeId="node-1254">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">Agent Faraji is walking on Lake Street by the park. 
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1055"></child>
+        <children><child nodeId="node-1255"></child>
         </children>
     </item>
-    <item nodeId="node-1055">
+    <item nodeId="node-1255">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">Agent Faraji is walking on Lake Street by the gym. 
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1056"></child>
+        <children><child nodeId="node-1256"></child>
         </children>
     </item>
-    <item nodeId="node-1056">
+    <item nodeId="node-1256">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">You can't enter the town hall from here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1057"></child>
+        <children><child nodeId="node-1257"></child>
         </children>
     </item>
-    <item nodeId="node-1057">
+    <item nodeId="node-1257">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">Agent Faraji is at the intersection of Main and Lake. Main goes west, while Lake runs north. The corner of the town hall is to the northwest, although it cannot be entered there. Southeast is the entrance to WGXC "Galaxy" Radio. There is a broadcast tower on top of the building.
 
@@ -560,119 +560,119 @@ The seeming sound of sibilant speech carries on the breeze.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1058"></child>
+        <children><child nodeId="node-1258"></child>
         </children>
     </item>
-    <item nodeId="node-1058">
+    <item nodeId="node-1258">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">Agent Faraji is on the 200 block of Main Street. The street runs east and west from here. South is the edifice of Rolle's Department Store. North is the town hall.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1059"></child>
+        <children><child nodeId="node-1259"></child>
         </children>
     </item>
-    <item nodeId="node-1059">
+    <item nodeId="node-1259">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">Agent Faraji is on the corner of Main and Solvay. Main Street runs east from here, while Solvay Road heads north. South of here, Henry's Hot Skillet promises all of the comforts of the mid-twentieth-century diner. A book store named The Reading Room lies to the west, while Fresnel's Music is southwest.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1060"></child>
+        <children><child nodeId="node-1260"></child>
         </children>
     </item>
-    <item nodeId="node-1060">
+    <item nodeId="node-1260">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">(first opening the Skillet door)
 It seems to be locked.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1061"></child>
+        <children><child nodeId="node-1261"></child>
         </children>
     </item>
-    <item nodeId="node-1061">
+    <item nodeId="node-1261">
         <command xml:space="preserve">unlock door with key</command>
         <result xml:space="preserve">Faraji unlocks the Skillet door.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1062"></child>
+        <children><child nodeId="node-1262"></child>
         </children>
     </item>
-    <item nodeId="node-1062">
+    <item nodeId="node-1262">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">(first opening the Skillet door)
 Agent Faraji is in Henry's Hot Skillet. This is the epitome of the homey small-town diner of times go by, except for the lack of all furniture, cooking implements, food, decor, and so on. There is a staircase leading up. A pair of insulated wires hangs from the ceiling at one end of the counter. 
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1063"></child>
+        <children><child nodeId="node-1263"></child>
         </children>
     </item>
-    <item nodeId="node-1063">
+    <item nodeId="node-1263">
         <command xml:space="preserve">u</command>
         <result xml:space="preserve">Agent Faraji is on Henry's Roof. From here one can see much of the town, including a clear view of the obelisk in Enigma Park. There is a large TV aerial antenna jutting from the roof here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1064"></child>
+        <children><child nodeId="node-1264"></child>
         </children>
     </item>
-    <item nodeId="node-1064">
+    <item nodeId="node-1264">
         <command xml:space="preserve">x antenna</command>
         <result xml:space="preserve">A large, metallic rooftop antenna, characterized by its array of horizontal and vertical rods designed to capture VHF (very high frequency) broadcasts.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1070"></child>
-            <child nodeId="node-1065"></child>
+        <children><child nodeId="node-1270"></child>
+            <child nodeId="node-1265"></child>
         </children>
     </item>
-    <item nodeId="node-1065">
+    <item nodeId="node-1265">
         <command xml:space="preserve">take it</command>
         <result xml:space="preserve">Faraji can't take that.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1066"></child>
+        <children><child nodeId="node-1266"></child>
         </children>
     </item>
-    <item nodeId="node-1066">
+    <item nodeId="node-1266">
         <command xml:space="preserve">x enigma park</command>
         <result xml:space="preserve">There's a clear line of sight from here to the tip of the obelisk.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1067"></child>
+        <children><child nodeId="node-1267"></child>
         </children>
     </item>
-    <item nodeId="node-1067">
+    <item nodeId="node-1267">
         <command xml:space="preserve">l</command>
         <result xml:space="preserve">Agent Faraji is in Henry's Roof. From here one can see much of the town, including a clear view of the obelisk in Enigma Park. There is a large TV aerial antenna jutting from the roof here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1068"></child>
+        <children><child nodeId="node-1268"></child>
         </children>
     </item>
-    <item nodeId="node-1068">
+    <item nodeId="node-1268">
         <command xml:space="preserve">d</command>
         <result xml:space="preserve">Agent Faraji is in Henry's Hot Skillet. This is the epitome of the homey small-town diner of times go by, except for the lack of all furniture, cooking implements, food, decor, and so on. There is a staircase leading up. A pair of insulated wires hangs from the ceiling at one end of the counter. 
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1069"></child>
+        <children><child nodeId="node-1269"></child>
         </children>
     </item>
-    <item nodeId="node-1069">
+    <item nodeId="node-1269">
         <command xml:space="preserve">x wires</command>
         <result xml:space="preserve">Two insulated wires with bare ends, they probably once attached to some electrical device sitting on the counter.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1070">
+    <item nodeId="node-1270">
         <command xml:space="preserve">i</command>
         <result xml:space="preserve">Faraji is carrying:
   a brass key
@@ -680,33 +680,33 @@ Agent Faraji is in Henry's Hot Skillet. This is the epitome of the homey small-t
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1071"></child>
+        <children><child nodeId="node-1271"></child>
         </children>
     </item>
-    <item nodeId="node-1071">
+    <item nodeId="node-1271">
         <command xml:space="preserve">tie key to antenna</command>
         <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1072"></child>
+        <children><child nodeId="node-1272"></child>
         </children>
     </item>
-    <item nodeId="node-1072">
+    <item nodeId="node-1272">
         <command xml:space="preserve">attach</command>
         <result xml:space="preserve">I'm not sure what you're trying to say. I might just not recognize the words you're using.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1073">
+    <item nodeId="node-1273">
         <command xml:space="preserve">move book</command>
         <result xml:space="preserve">Faraji can't move that.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1074">
+    <item nodeId="node-1274">
         <command xml:space="preserve">3</command>
         <result xml:space="preserve">Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
 
@@ -714,29 +714,29 @@ Their Hyundai is parked nearby.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1090"></child>
-            <child nodeId="node-1087"></child>
-            <child nodeId="node-1077"></child>
-            <child nodeId="node-1075"></child>
+        <children><child nodeId="node-1290"></child>
+            <child nodeId="node-1287"></child>
+            <child nodeId="node-1277"></child>
+            <child nodeId="node-1275"></child>
         </children>
     </item>
-    <item nodeId="node-1075">
+    <item nodeId="node-1275">
         <command xml:space="preserve">x laundromat</command>
         <result xml:space="preserve">Faraji peers through the windows of the laundromat at the rows of aging machines. A sign on the door says "Closed for renovations". They turn away, unimpressed.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1076"></child>
+        <children><child nodeId="node-1276"></child>
         </children>
     </item>
-    <item nodeId="node-1076">
+    <item nodeId="node-1276">
         <command xml:space="preserve">x laundromat windows</command>
         <result xml:space="preserve">I only understood you as far as wanting to examine the A-plus laundromat.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1077">
+    <item nodeId="node-1277">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">Just like in the store this once was, the door chimes as Faraji walks in.
 
@@ -754,10 +754,10 @@ Faraji can ask about the phone exchange.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1078"></child>
+        <children><child nodeId="node-1278"></child>
         </children>
     </item>
-    <item nodeId="node-1078">
+    <item nodeId="node-1278">
         <command xml:space="preserve">ask about phone</command>
         <result xml:space="preserve">Faraji asks, "Tell me what's going on with the phones again?"
 
@@ -767,10 +767,10 @@ A phone is ringing somewhere else not too far away.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1079"></child>
+        <children><child nodeId="node-1279"></child>
         </children>
     </item>
-    <item nodeId="node-1079">
+    <item nodeId="node-1279">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">Faraji extricates themself from talking with Margaret.
 
@@ -780,10 +780,10 @@ A phone is ringing to the south.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1080"></child>
+        <children><child nodeId="node-1280"></child>
         </children>
     </item>
-    <item nodeId="node-1080">
+    <item nodeId="node-1280">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">Agent Faraji is in their office. They pause and survey the scene. It's not much -- four white walls, grey industrial carpet. Margaret has helpfully assembled Faraji's desk and chair, though how sturdily is an open question. She also took the time to put up some of Agent Faraji's office decor -- their degree in Nonstandard Investigative Techniques, an original pencil drawing of the Pitfall snake by semi-acclaimed Washington DC artist Darius 5200, and a photo of their soccer team. At the very least the wall coverings help compensate for the lack of windows. There's a disconnected landline on the desk. The office door is to the north, and there's a white metal door to the west.
 
@@ -793,10 +793,10 @@ A phone is ringing inside their desk.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1081"></child>
+        <children><child nodeId="node-1281"></child>
         </children>
     </item>
-    <item nodeId="node-1081">
+    <item nodeId="node-1281">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">(first opening the white metal door)
 It seems to be locked.
@@ -805,10 +805,10 @@ A phone is ringing inside Faraji's desk.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1082"></child>
+        <children><child nodeId="node-1282"></child>
         </children>
     </item>
-    <item nodeId="node-1082">
+    <item nodeId="node-1282">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">Agent Faraji is in the hallway. Their office is to the south, Klimp's is to the west, and Moira's is to the north. The front office is east.
 
@@ -816,10 +816,10 @@ A phone is ringing to the south, in their office.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1083"></child>
+        <children><child nodeId="node-1283"></child>
         </children>
     </item>
-    <item nodeId="node-1083">
+    <item nodeId="node-1283">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">(first opening Klimp's door)
 It seems to be locked.
@@ -828,10 +828,10 @@ A phone is ringing to the south, in Faraji's office.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1084"></child>
+        <children><child nodeId="node-1284"></child>
         </children>
     </item>
-    <item nodeId="node-1084">
+    <item nodeId="node-1284">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">(first opening Moira's door)
 It seems to be locked.
@@ -840,10 +840,10 @@ A phone is ringing to the south, in Faraji's office.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1085"></child>
+        <children><child nodeId="node-1285"></child>
         </children>
     </item>
-    <item nodeId="node-1085">
+    <item nodeId="node-1285">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">Agent Faraji is in the front office. It's really a small storefront done up to resemble an office. A store sales counter serves as a front desk, behind which are located shelves of office supplies and a row of drawers. There are also a couch and coffee table here creating a makeshift seating area. An old department store clothing rack serves as a coatrack. Photos on the walls picture the Bureau in better days. A stack of used and empty cardboard boxes sits in one corner.
 
@@ -855,10 +855,10 @@ Faraji can ask about the status of the computer or ask to unlock the backdoor.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1086"></child>
+        <children><child nodeId="node-1286"></child>
         </children>
     </item>
-    <item nodeId="node-1086">
+    <item nodeId="node-1286">
         <command xml:space="preserve">ask about backdoor</command>
         <result xml:space="preserve">Faraji asks, "Could you unlock the back door, Margaret?"
 
@@ -871,66 +871,66 @@ Faraji can ask about the status of the computer.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1087">
+    <item nodeId="node-1287">
         <command xml:space="preserve">gonear broadcast tower</command>
         <result xml:space="preserve">Agent Faraji is on the radio station roof. They can see the obelisk in the part clearly from here. The broadcast tower rises many feet above them.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1088"></child>
+        <children><child nodeId="node-1288"></child>
         </children>
     </item>
-    <item nodeId="node-1088">
+    <item nodeId="node-1288">
         <command xml:space="preserve">u</command>
         <result xml:space="preserve">Faraji is afraid of heights.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1089"></child>
+        <children><child nodeId="node-1289"></child>
         </children>
     </item>
-    <item nodeId="node-1089">
+    <item nodeId="node-1289">
         <command xml:space="preserve">climb tower</command>
         <result xml:space="preserve">Faraji is afraid of heights.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1090">
+    <item nodeId="node-1290">
         <command xml:space="preserve"> x laundromat</command>
         <result xml:space="preserve">Faraji peers through the windows of the laundromat at the rows of aging machines. A sign on the door says "Closed for renovations". They turn away, unimpressed.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1091"></child>
+        <children><child nodeId="node-1291"></child>
         </children>
     </item>
-    <item nodeId="node-1091">
+    <item nodeId="node-1291">
         <command xml:space="preserve">x windows</command>
         <result xml:space="preserve">They haven't been washed for a while. Through them you can see the sad state of the crumbling laundromat.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1092"></child>
+        <children><child nodeId="node-1292"></child>
         </children>
     </item>
-    <item nodeId="node-1092">
+    <item nodeId="node-1292">
         <command xml:space="preserve">x machine</command>
         <result xml:space="preserve">There's nothing like that nearby.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1093"></child>
+        <children><child nodeId="node-1293"></child>
         </children>
     </item>
-    <item nodeId="node-1093">
+    <item nodeId="node-1293">
         <command xml:space="preserve">x machines</command>
         <result xml:space="preserve">There's nothing like that nearby.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1094">
+    <item nodeId="node-1294">
         <command xml:space="preserve">2</command>
         <result xml:space="preserve">Agent Goldberg is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash. To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
 
@@ -938,19 +938,19 @@ Her Hyundai is parked nearby.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1095"></child>
+        <children><child nodeId="node-1295"></child>
         </children>
     </item>
-    <item nodeId="node-1095">
+    <item nodeId="node-1295">
         <command xml:space="preserve">directions</command>
         <result xml:space="preserve">Which do you mean, the north, the northeast, the northwest, the south, the southeast, the southwest, the east, the west, the up, the down, the inside, the outside, back, forth, forthnorth, fortheast, forthsouth, forthwest, backnorth, backeast, backsouth or backwest?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1096"></child>
+        <children><child nodeId="node-1296"></child>
         </children>
     </item>
-    <item nodeId="node-1096">
+    <item nodeId="node-1296">
         <command xml:space="preserve">exits</command>
         <result xml:space="preserve">The obvious exits are north, northwest, southwest, west and inside.
 
@@ -958,10 +958,10 @@ Her Hyundai is parked nearby.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1097"></child>
+        <children><child nodeId="node-1297"></child>
         </children>
     </item>
-    <item nodeId="node-1097">
+    <item nodeId="node-1297">
         <command xml:space="preserve">in</command>
         <result xml:space="preserve">Just like in the store this once was, the door chimes as Goldberg walks in.
 

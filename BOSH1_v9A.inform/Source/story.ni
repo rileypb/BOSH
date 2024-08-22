@@ -1977,6 +1977,7 @@ joey-ramone-subject is a subject. It is privately-named. The printed name is "Jo
 Crusades-subject is a subject. It is privately-named. The printed name is "Crusades". Understand "Crusades/crusade" as Crusades-subject.
 Pope-clement-v-subject is a subject. It is privately-named. The printed name is "Pope Clement V". Understand "Pope/Clement/V" as Pope-clement-v-subject.
 Senate-subject is a subject. It is privately-named. The printed name is "Senate". Understand "Senate" as Senate-subject.
+Montana-subject is a subject. It is privately-named. The printed name is "Montana". Understand "Montana/MT" as Montana-subject.
 
 
 Table of Quiz Topics (continued)
@@ -2050,7 +2051,7 @@ Astrology	Chief Huffton Klimp	"'Chief, do you believe in horo--'"	"'scopes? Yes,
 The Freemasons	Chief Huffton Klimp	"'Chief, who are the Free--'"	"'masons? Harmless. They're harmless. They're just a bunch of guys who like to wear aprons and have secret handshakes. It's not like they have the Holy Grail or anything. That's a myth. I think.'"
 The Knights Templar	Chief Huffton Klimp	"'Chief, what can you tell me about the --'"	"'Knights Templar? Consider this -- they're not Knights at all. They're really kind of fun, you know. They're like the Freemasons, but with swords. And they have the Spear of Destiny. Or they did. Or they didn't. I can't remember.'"
 Atlantis	Chief Huffton Klimp	"'Chief, tell me about At--'"	"'lanta? It's a city in Georgia. Oh, you mean the lost city of Atlantis. It's really just a metaphor. For something. I can't remember what. But it's a metaphor. For something.'"
-Georgia-subject	Chief Huffton Klimp	"'So what about Geor --'"	"'gia? It's the only US State that spans two continents, you know.'"
+Georgia-subject	Chief Huffton Klimp	"'So what about Geor --'"	"'-- gia? It's the only US State that spans two continents, you know.'"
 The Georgia Guidestones	Chief Huffton Klimp	"'Chief, what's the deal with the Georgia --'"	"'Guidestones? They may have been erected by human hands, but they were inspired by the Black Knight Satellite. I've seen the evidence.'"
 Ancient astronauts	Chief Huffton Klimp	"[We] [ask], 'Do you believe in --'"	"'ancient astronauts? I can't remember. I used to. I used to believe in them. I used to believe in them a lot. I used to believe in them so much that I thought I was one. Now, I'm not so sure.'"
 Ancient Egypt	Chief Huffton Klimp	"'Chief, what's the deal with --'"	"'Ancient Egypt? It's not there anymore. It just disappeared. It's a mystery. Now there's just a place that's called Egypt. It's not the same. It's not the same at all.'"
@@ -2361,6 +2362,7 @@ joey-ramone-subject	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-
 Crusades-subject	Chief Huffton Klimp	"'Chief, what do you know about the --'"	"'-- Crusades? Ah, the Crusades. A folly. A tragedy. A comedy of errors. But most people don't know that they were all orchestrated by time travelers. They were trying to change the course of history. But they failed. Or did they?'"
 Pope-clement-v-subject	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- Pope Clement V? How would you like to be only one of fourteen popes with the same name? That's a lot of popes. There were originally twenty-eight Pope Clements, but the other fourteen were erased from history by the Illuminati.'"
 Senate-subject	Chief Huffton Klimp	"'Chief, what do you know about the --'"	"'-- Senate? The only thing worse than the Senate is the House. And the only thing worse than the House is the Illuminati. And the only thing worse than the Illuminati is the Senate. It's a paradox. Or maybe it's a conspiracy. Or maybe it's a paradoxical conspiracy.'"
+Montana-subject	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- Montana? I once thought it didn't exist. But then I met a guy who said he was from there. He must have been telling the truth, because he knew the truth about Amelia Earhart.'"
 
 
 Book 18.6 - Klimp Interjections

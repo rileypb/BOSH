@@ -380,7 +380,7 @@ After examining the flowers when the living room key is nowhere:
 
 The living room door is a closed, locked, lockable, openable scenery door. It is south of the living room and north of the Bureau of Special Help. "The door is sturdy and wooden. [if the living room door is open]It is open[otherwise]It is closed[end if]."
 The living room door has matching key the living room key.
-The tutorial message is "[if the living room door is locked]This door is locked. You will to UNLOCK LIVING ROOM DOOR WITH the key (have you found it yet?) to open it[otherwise if the location is the living room]You can go through the door to the Bureau of Special Help[otherwise]You can go through the door to the living room[end if]"
+The tutorial message is "[if the living room door is locked]This door is locked. You will need to UNLOCK LIVING ROOM DOOR WITH the key (have you found it yet?) to open it[otherwise if the location is the living room]You can go through the door to the Bureau of Special Help[otherwise]You can go through the door to the living room[end if]"
 
 The living room is a room. "[if cozy sofa is not mentioned]A cozy sofa sits next to the warm fireplace[otherwise]The sofa is next to the fireplace[end if]. Doors lead south and east[if Doctor Helpful is on the cozy sofa].
 
