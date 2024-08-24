@@ -1607,6 +1607,8 @@ how-to-get-home-maggie is a questioning quip.
 	The reply is "Maggie snaps out of her reverie. 'Oh, you're ready to go? I'll activate the auxiliary portal for you' She types rapidly on her control panel, then says 'It's all ready -- go west down the hallway and turn to the back into Portal Room 2.'"
 	
 	it quip-supplies Maggie.
+	it is always-available.
+	it is plausibility-once.
 
 After discussing how-to-get-home-maggie:
 	now the auxiliary portal is activated;

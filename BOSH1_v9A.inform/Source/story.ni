@@ -586,7 +586,7 @@ Ancient astronauts is a subject. Understand "astronaut" as ancient astronauts.
 Ancient Egypt is a subject. Understand "pyramid/pyramids/sphinx" as Ancient Egypt. 
 Crop circles is a subject. Understand "circle" as crop circles. 
 ESP is a subject. Understand "telepathy", "extra-sensory perception" as ESP. 
-Ghosts is a subject. Understand "ghost/poltergeist/poltergeists/spirit/spirits/haunting/hauntings" as ghosts. 
+Ghosts is a subject. Understand "ghost/poltergeist/poltergeists/phantom/phantoms/specter/specters/wraith/wraiths/apparition/apparitions/spook/spooks/spirit/spirits/shade/shades/undead/haunting/hauntings" as ghosts. 
 Vampires is a subject. Understand "vampire" as vampires.
 Werewolves is a subject. Understand "werewolf" as werewolves. 
 Zombies is a subject. Understand "zombie" as zombies. 
