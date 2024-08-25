@@ -832,7 +832,7 @@ Carry out anonymous record playing:
 		say "Faraji starts the turntable. The record spins, and the speakers crackle to life, playing [italic type][the title of the current record][roman type] by [the artist of the current record].[paragraph break]";
 		say "[music description of the current record][line break]";
 	otherwise:
-		say "Faraaji starts the turntable, but nothing happens. There seems to be no power.";
+		say "Faraji starts the turntable, but nothing happens. There seems to be no power.";
 
 Carry out anonymous record playing backwards:
 	let current record be a random record on the old turntable;

@@ -2113,7 +2113,6 @@ Budapest	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'Budapest? It
 Pompeii	Chief Huffton Klimp	"'Chief, what's with you and --'"	"'Doris in Pompeii? You'll never know. The evidence was conveniently destroyed somehow."
 Bureau of Strange Happenings	Moira Zin	"'Moira, what's your view on the Bureau?'"	"'We do important work, when Klimp lets us. And when they're not cutting our budget. Why it was only last week we caught those corrupt old men trying to cheat the old lady out of her house by pretending to be ghosts.'"
 Senator-savra-subject	Moira Zin	"'Moira, what do you think of Senator Savra?'"	"'There's something not right about him. I can't put my finger on it.'"
-[Moira is very no-nonsense and will give very straight-forward definitions of these terms.]
 Time-travel	Moira Zin	"'Moira, what do you know about time travel?'"	"'It's a theoretical concept that involves moving between different points in time. It's not possible, of course. But it's a popular subject in science fiction.'"
 Astral plane	Moira Zin	"'Moira, tell me about the astral plane.'"	"'It's a plane of existence that exists beyond the physical world. It's a place where spirits and other entities reside. It's not real, of course. But it's a popular subject in the occult.'"
 Doris	Moira Zin	"'Moira, what do you know about Doris?'"	"'Doris? I don't know any Doris. Who's Doris?'"
