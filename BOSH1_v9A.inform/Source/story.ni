@@ -124,9 +124,9 @@ Abouting is an action out of world. Understand "about" as abouting.
 Carry out abouting:
 	say "Here are a few commands and details particular to this game:[line break]";
 	say "- There is generally no need to TALK TO a character to initiate conversation. Upon entering a room, the game will automatically greet any character present.";
-	say "- Dialogue happens in three different ways: the game may suggest a topic to discuss, you can ASK a character ABOUT a specific topic, or you can suggest an action to a character by typing something like ANNIE, TAKE GUN.";
+	say "- Dialogue happens in three different ways: the game may suggest a topic to discuss, you can ASK a character ABOUT a specific topic, or you can suggest an action to a character by typing something like ANNIE, GET GUN.";
 	say "- The game will automatically remember what you've discussed with each character. You can review these conversations by typing RECAP <character's name>.";
-	say "- Typing HINT by itself will list the currently available hint topics. Those in bold have new information. Typing HINT <topic> will provide a hint on that topic. You can also RECALL <hint topic> to review all hint text you've seen on that topic.";
+	say "- Typing HINT by itself will list the currently available hint topics. Those in bold have new information. Typing HINT <topic> will provide a hint on that topic. You can also RECALL <topic> to review all hint text you've seen on that topic.";
 
 [ Understand "touch [something]" as touching. ]
 
@@ -463,7 +463,7 @@ After Margaret going to a room:
 
 After going to a room:
 	if the current interlocutor is nothing:
-		repeat with P running through the people in the location:
+		repeat with P running through the visible people enclosed by the location:
 			if P is not the player and P is not an animal:
 				postpone saying hello to P;
 				continue the activity; 

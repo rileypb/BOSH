@@ -185,6 +185,7 @@ Instead of pushing the exit button:
 	now BOSH Game Book is on the Help Shelf;
 	now the Bad Luck Counter is 0;
 	now the umbrella is closed;
+	now the living room door is closed;
 	now the living room door is locked;
 	truncate the queue of Doctor Helpful to 0 entries;
 
@@ -500,8 +501,8 @@ Observation-Room-subject is a subject. It is privately-named. The printed name i
 ornamental-garden-subject is a subject. It is privately-named. The printed name is "ornamental garden". Understand "ornamental/garden/gardens" as ornamental-garden-subject.
 Great-aunt Gertrude is a subject. Understand "great-aunt/gertrude/great/aunt" as Great-aunt Gertrude. The printed name is "Great-aunt Gertrude".
 living-room-subject is a subject. It is privately-named. The printed name is "living room". Understand "living/room" as living-room-subject.
-help-subject is a subject. It is privately-named. The printed name is "help". Understand "help" as help-subject.
-Bureau-of-Special-Help-subject is a subject. It is privately-named. The printed name is "Bureau of Special Help". Understand "bureau/special/help" as Bureau-of-Special-Help-subject.
+help-subject is a subject. It is privately-named. The printed name is "help in general". Understand "help/in/general" as help-subject.
+Bureau-of-Special-Help-subject is a subject. It is privately-named. The printed name is "Bureau of Special Help". Understand "bureau/of/special/help" as Bureau-of-Special-Help-subject.
 doctor-books is a subject. It is privately-named. The printed name is "doctor's books". Understand "doctor/doctor's/doctors/books" as doctor-books.
 
 Does the player mean quizzing someone about Bureau-of-Special-Help-subject when the location is not in Help Area:
