@@ -1267,6 +1267,12 @@ Book 17 - Extension Cord
 
 The electrical outlet is in First Utilitarian Church of Enigma Lake. 
 
+Understand "stick [tuning fork] in [electrical outlet]" as inserting it into.
+
+Instead of inserting the tuning fork into the electrical outlet:
+	say "Faraji hesitates for a moment, but then pushes the tuning fork into the electrical outlet. They are killed almost instantly.";
+	end the story saying "Please be more careful with Agent Faraji's life in the future.";
+
 Does the player mean plugging something into the electrical outlet: 
 	it is very likely.
 
@@ -1941,7 +1947,7 @@ Instead of requesting Daniels for the rutabaga when the lizard people are in the
 		say "Daniels says, 'I see a rutabaga over there, but it's out of reach.'";
 
 
-Instead of doing something to the green woven basket when the action requires a touchable noun:
+Instead of doing something to the green woven basket when the action requires a touchable noun and the lizard people are in the old root cellar:
 	say "The basket is too far away for that.";
 
 Instead taking a potato when the number of entries in the list of potatoes carried by the player > 6:
@@ -2303,7 +2309,7 @@ Instead of throwing a root-vegetable at the lizard people:
 	otherwise if the noun is the rutabaga:
 		now the rutabaga is in the old root cellar;
 		now rutabaga is within-reach;
-		say "Faraji hurls the rutabaga at the lizard people, who in their anger at Daniels are oblivious to Faraji's action. The rutabaga strikes the leader in the head. He hisses in pain and surprise, then shrieks in terror. 'No! My allergies!' The chamber fills with a white vapor. When it clears, the lizard people are nowhere to be seen.
+		say "Faraji hurls the rutabaga at the lizard people, who in their anger at Daniels are oblivious to Faraji's action. The rutabaga strikes the leader in the head. It hisses in pain and surprise, then shrieks in terror. 'No! My allergies!' The chamber fills with a white vapor. When it clears, the lizard people are nowhere to be seen.
 		
 		[bold type]The lizard people have been KO'd![roman type][line break]";
 		say "[fixed letter spacing]";
@@ -2322,15 +2328,15 @@ Instead of throwing a root-vegetable at the lizard people:
 		say "Faraji [one of]throws[or]hurls[or]flings[or]launches[or]fires[or]slings[at random] [the noun] at the lizard people, who in their anger at Daniels are oblivious to Faraji's action. ";
 		if a random number from 1 to 5 is:
 			-- 1:
-				say "[The noun] strikes the leader in the head. He hisses in pain and surprise.";
+				say "[The noun] strikes the leader in the head. It hisses in pain and surprise.";
 			-- 2:
 				say "[The noun] hits the tallest one in the shoulder. He (she?) hisses in pain.";
 			-- 3:
-				say "[The noun] bounces off the stout one's head. He hisses in pain.";
+				say "[The noun] bounces off the stout one's head. It hisses in pain.";
 			-- 4:
-				say "[The noun] hits one of them right in the back. He hisses in pain.";
+				say "[The noun] hits one of them right in the back. It hisses in pain.";
 			-- 5:
-				say "[The noun] strikes the shortest one in the leg. He hisses in pain.";
+				say "[The noun] strikes the shortest one in the leg. It hisses in pain.";
 		hit lizard people;
 
 Instead of attacking the lizard people:
@@ -2542,10 +2548,12 @@ where-we-are is a questioning quip.
 what's next is a questioning quip. 
 	Understand "what's next", "what next" as what's next.
 	The comment is "Faraji asks, 'What do we do next?'". 
-	The reply is "'Doris must have given you a recall button. I can rejigger it to send me to the hyperspace office and send you back to Swamp Park. I own the laundromat, by the way. Sorry I wasn't there to greet you. Alright, give me the button.'".
+	The reply is "'Doris must have given you a recall button. I can rejigger it to send me to the hyperspace office and send you back to Swamp Park. Alright, give me the button.'".
 	It quip-supplies Daniels.
 	It follows how he got here.
 	It follows where-we-are.
+	It is repeatable.
+	It is ubiquitous.
 
 The recall button can be rejiggered.
 
@@ -2553,9 +2561,12 @@ After discussing what's next:
 	if the player encloses the recall button:
 		say "Faraji hands the recall button to Daniels. Daniels fiddles with the device for a moment, then hands it back. 'There you go. You can do the honors.'";
 		now the recall button is rejiggered;
-	otherwise:
+	otherwise if the recall button is not enclosed by the location:
 		say "Daniels' face falls. 'What? You don't have the recall button? Do you know what that means? We have no way back!' He looks around the room, then back at Faraji. 'We're stuck here.'";
-		end the story saying "Faraji is stranded in the past with Daniels."
+		end the story saying "Faraji is stranded in the past with Daniels.";
+	otherwise:
+		say "Daniels looks at Faraji. 'You have the recall button, right? No? Where are you hiding it then?'";
+		queue Daniels with what's next;
 
 Instead of pushing the recall button when the player is in the old root cellar and the recall button is not rejiggered and the group of lizard people are not in the location:
 	say "'Wait!' Daniels exclaims. Faraji stops. Daniels continues, 'Don't leave without me! I can rejigger the recall button to send me to the hyperspace office and send you back to Swamp Park. Alright, give me the button.'
@@ -4065,10 +4076,6 @@ After taking the light bulb when the light bulb was in the light socket:
 
 
 The gleaming floor is scenery in Rolle's Department Store. "Someone has polished it spotless, despite the looming destruction of the store. That's dedication."
-
-
-Does the player mean doing something to the gleaming floor: 
-	It is very likely;
 	
 The sale posters are scenery in Rolle's Department Store. "'50% off everything in the store!'"
 Understand "poster/signs/sign" as the sale posters.

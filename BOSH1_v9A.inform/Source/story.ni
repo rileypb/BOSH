@@ -505,6 +505,14 @@ Chapter 1 - Knocking
 
 Knocking on is an action applying to one thing. Understand "knock on/-- [something]", "pound on/-- [something]", "rap on/-- [something]", "bang on/-- [something]" as knocking on.
 
+Report knocking on the player:
+	say "[We] [give] [our] head a quick knock, but nothing happens.";
+	rule succeeds;
+
+Check knocking on someone when the noun is not the player:
+	say "That doesn't seem like a good idea.";
+	rule fails;
+
 Report knocking on something:
 	say "[We] [give] [the noun] a quick knock, but nothing happens.";
 	rule succeeds;
@@ -1142,7 +1150,7 @@ Understand "climb out" as exiting.
 
 Some trash is scenery in inside-the-dumpster. The description is "It's a bunch of trash. It's smelly and gross." 
 
-Some trash-boxes are scenery in inside-the-dumpster. The description is "A bunch of cardboard boxes, flattened and stacked."
+Some trash-boxes are scenery in inside-the-dumpster. They are privately-named. The description is "A bunch of cardboard boxes, flattened and stacked." Understand "cardboard/boxes" as trash-boxes. The printed name is "cardboard boxes". They are plural-named. 
  
 Section 3 - 
 

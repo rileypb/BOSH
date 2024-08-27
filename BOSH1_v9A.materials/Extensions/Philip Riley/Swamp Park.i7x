@@ -609,7 +609,7 @@ This is the special back basement darkness rule:
 		if the broken washing machine is nowhere:
 			say ". There is also a strange blue-white glow emanating from behind some large dark objects.";
 		otherwise:
-			say ". Apart from that, a washing machine is revealed in the darkness by the glow emanating from its drum.";
+			say ". Apart from that, a washing machine is revealed in the darkness by the glow emanating from its drum[if the broken washing machine is open]. The door is open[otherwise]. The door is closed[end if].";
 		now back basement darkness is false;
 
 The special back basement darkness rule is listed after the adjust light rule in the turn sequence rules.
@@ -621,9 +621,9 @@ After printing the description of a dark room when the location is the back base
 	if the broken washing machine is nowhere:
 		say "There is a strange blue-white glow emanating from behind some large dark objects.";
 	otherwise:
-		say "A washing machine is revealed in the darkness by the glow emanating from its drum.";
+		say "A washing machine is revealed in the darkness by the glow emanating from its drum[if the broken washing machine is open]. The door is open[otherwise]. The door is closed[end if].";
 		
-The broken washing machine is an enterable, closed, openable, transparent container. It is scenery. "It's a front-loading model. The inside of the drum is obscured by a shimmering curtain of light."
+The broken washing machine is an enterable, closed, openable, transparent container. It is scenery. "It's a front-loading model. The inside of the drum is obscured by a shimmering curtain of light[if the broken washing machine is open]. The door is open[otherwise]. The door is closed[end if]." 
 Understand "drum/washer" as the broken washing machine.
 
 The strange glow is scenery in the back basement. "The glow is blue-white and flickering."
