@@ -64,7 +64,7 @@ Main Street 200 block	false	--	--
 Main at Solvay	false	--	--
 Solvay Road 100 block	false	--	--
 Solvay Road leading out of town	false	--	--
-Enigma Park	true	"Waist-high stone walls line the edge of the park."	--
+Enigma Park	true	"Tall iron fences line the edge of the park."	--
 Lake Street by the park	false	--	--
 Lake Street by the gym	false	--	--
 Main at Lake	false	--	--
@@ -353,7 +353,7 @@ drawing of the Pitfall Snake	"It's good where it is."	"It's good where it is."
 dumpster	"[We] [pick] up the dumpster and [tuck] it under one arm... Just kidding."	"It's not on wheels or anything."
 electrical outlet	"Well, maybe if [we] had a screwdriver. LOL."	"How? It's attached to the wall."
 equipment cabinet	"It's affixed to the wall."	"It's affixed to the wall."
-Ethereal Pillar	"[We] try, but its etherealness makes it difficult to grasp."	"[We] try, but its etherealness makes it difficult to grasp."
+Ethereal Pillar	"[We] [try], but its etherealness makes it difficult to grasp."	"[We] [try], but its etherealness makes it difficult to grasp."
 fire facade	"Now, what would [we] do with a whole fire station?"	"[We] attempt to push the fire station around, but it's not going anywhere."
 firearms	"This isn't that kind of game."	"What's the point?"
 flashlight	"[We] need to buy it first."	"[We] need to buy it first."

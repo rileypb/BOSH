@@ -22,7 +22,7 @@ Instead of entering a building facade (called F):
 
 A leavable room is a kind of room. A leavable room has a direction called the egress. A leavable room can be unleavable.
 
-Instead of exiting when the location is a leavable room (called R):
+Instead of exiting when the location is a leavable room (called R) and the holder of the player is the location:
 	if R is unleavable:
 		say "It's unclear which direction you mean.";
 	otherwise:                                    

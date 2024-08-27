@@ -30,7 +30,7 @@ Report looking behind something when the behind description of the noun is not "
 
 Report looking behind something:
 	if hidden is not empty:
-		say "[We] [find] [hidden with indefinite articles] and [regarding the player][pull] [regarding the number of entries in hidden][them] out.";
+		say "[We] [find] [hidden with indefinite articles] behind [the noun] and [regarding the player][pull] [regarding the number of entries in hidden][them] out.";
 		
 
 

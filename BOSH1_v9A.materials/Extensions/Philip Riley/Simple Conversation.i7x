@@ -218,7 +218,7 @@ the block informing rule response (A) is "That doesn't seem to be a topic of con
 
 To say unresponsive:
 	if the current action is giving something to someone:
-		say text of the block giving rule response (A);
+		say "[The second noun] [don't] seem interested";
 	otherwise if the current interlocutor is Daniels:
 		say "Daniels just shrugs";
 	otherwise:

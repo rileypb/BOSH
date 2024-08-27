@@ -114,7 +114,7 @@ Carry out crediting:
 	say "[bold type]The Bureau of Strange Happenings[roman type] is a work of interactive fiction created with Inform 7. It was written by Phil Riley.[roman type][paragraph break]";
 	say "[bold type]Many thanks to the following people for their help and support:[roman type][line break]";
 	say "Playtesters Max Fog, Mike Russo, Tabitha, Peter Gross, Climbingstars, and Winifred Gosling.";
-	say "My wife, Laura, for understanding my need to spend hundreds of hours writing something that only a couple dozen people will ever play, and for innumerable helpful suggestions.";
+	say "My wife, Laura, for understanding my need to spend hundreds of hours writing something that only a couple of dozen people will ever play, and for innumerable helpful suggestions.";
 	say line break;
 	say "[bold type]Third-party extensions used in this game:[roman type][line break]";
 	say the list of extension credits;
@@ -464,13 +464,13 @@ After Margaret going to a room:
 After going to a room:
 	if the current interlocutor is nothing:
 		repeat with P running through the visible people enclosed by the location:
-			if P is not the player and P is not an animal:
+			if P is not the player and P is not an animal and P is not Margaret at a distance:
 				postpone saying hello to P;
 				continue the activity; 
 	otherwise if the current interlocutor is not in the location:
 		now the current interlocutor is nothing;
-	otherwise:
-		say "WARNING: The current interlocutor is not nothing. It is [the current interlocutor].";
+	[ otherwise:
+		say "WARNING: The current interlocutor is not nothing. It is [the current interlocutor]."; ]
 	continue the activity;
 	
 The postponed action is an action that varies.
@@ -491,7 +491,7 @@ After saying hello to someone (called P):
  
 Book 6 - Messages
 
-The parser error internal rule response (R) is "[if following-up is true]That doesn't seem to be a book on Moira's shelves[otherwise]I[']m not sure what you're trying to say. I might just not recognize the words you're using[end if]."
+The parser error internal rule response (R) is "[if following-up is true]That doesn't seem to be a book you can borrow[otherwise]I[']m not sure what you're trying to say. I might just not recognize the words you're using[end if]."
 
 The default sound description rule response (A) is "[Generic description of T] is [sound of T] in another room nearby."
 
@@ -612,6 +612,8 @@ bear is a subject. Understand "bear from another world", "bears" as bear.
 huge alien jellyfish is a subject. 
 John Lennon is a subject.
 Natural History Museum is a subject.
+New York City is a subject.
+Illinois is a subject.
 Kamchatka is a subject.
 Koryak people is a subject.
 Davy Jones is a subject.
@@ -1023,7 +1025,7 @@ The bosh-back-door-facade is a building facade. It is privately-named. The print
 	The bosh-back-door-facade fronts Biff's office.
 	The bosh-back-door-facade is enterable from the back lot.
 	
-The laundromat back door is a door. It is north of back lot and south of the laundromat back room. It is scenery. It is closed, locked, lockable, and openable. "An unremarkable metal door painted white. It is closed.". 	 
+The laundromat back door is a door. It is north of back lot and south of the laundromat back room. It is scenery. It is closed, locked, lockable, and openable. "An unremarkable metal door painted white. It is [if laundromat back door is closed]closed[otherwise]open[end if]." 	 
 
 Before opening the laundromat back door when the laundromat back door is locked:
 	now player knows laundromat-back-door-is-locked;
@@ -1978,7 +1980,7 @@ Crusades-subject is a subject. It is privately-named. The printed name is "Crusa
 Pope-clement-v-subject is a subject. It is privately-named. The printed name is "Pope Clement V". Understand "Pope/Clement/V" as Pope-clement-v-subject.
 Senate-subject is a subject. It is privately-named. The printed name is "Senate". Understand "Senate" as Senate-subject.
 Montana-subject is a subject. It is privately-named. The printed name is "Montana". Understand "Montana/MT" as Montana-subject.
-
+Last Train to Clarksville is a subject. 
 
 Table of Quiz Topics (continued)
 subject (a thing)	interlocutor (a person)	comment (a text)	reply (a text)
@@ -2089,6 +2091,8 @@ Travels in Time	Chief Huffton Klimp	"'Chief, what do you think of this book --'"
 Juvenile Sasquatch skull	Chief Huffton Klimp	"'Chief, what's the deal with this --'"	"'--skull? It's a juvenile Sasquatch skull. Found it myself at the Natural History Museum in New York. They have the best stuff. Hard to carry out of there, though.'" 
 Juvenile Sasquatch skull	Moira Zin	"'Moira, what do you think about Klimp's new sasquatch skull?'"	"'It certainly seems a bit fishy to me. It seems too small. I think it's a fake.'"
 Natural History Museum	Chief Huffton Klimp	"'Chief, what's the deal with the --'"	"'Natural History Museum? Great place, but why do they get to choose what's natural and what's not? Kind of presumptuous, if you ask me.'"
+New York City	Chief Huffton Klimp	"'Chief, have you ever been to --'"	"'New York? Yes, of course. I assume you're talking about the one in Illinois. I've been there. It's a nice place. But you were probably talking about the one in New York, weren't you? I've been there, too. It's a nice place. But not as nice as the one in Illinois.'"
+Illinois	Chief Huffton Klimp	"'Chief, what's the deal with --'"	"'Illinois? It's pretty much a dump, except for New York. New York, Illinois is a great place. You should visit their Natural History Museum. They have the best stuff.'"
 Kamchatka	Chief Huffton Klimp	"'Chief, where is --'"	"'Kamchatka? It's a peninsula in far eastern Russia. It was once the leading contender for most uninteresting location on Earth. But then they found those ruins. Now it's the leading contender for most interesting location on Earth.'"
 Koryak people	Chief Huffton Klimp	"'Chief, what do you know about the --'"	"'--Koryak people? They're a tribe in Russia that we're ephemerally interested in. By next month we'll have forgotten all about them.'"
 Vatican	Chief Huffton Klimp	"'Chief, what's the deal with the --'"	"'Vatican? Don't be fooled by the funny hats. They're planning an invasion of the Black Knight Satellite. I've seen the evidence.'"
@@ -2351,7 +2355,8 @@ diners	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- diners? I l
 scrapple	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- scrapple? Never played it. Too many letters. But you're not talking about the game, are you? You're talking about the food. Or at least, the thing that Pennsylvanians call food. No comment.'"
 lizard-people-subject	Chief Huffton Klimp	"'Chief, what do you think about --'"	"'-- lizard people? Don't believe the hype. They're not all bad. Some of them are just misunderstood. Doris gets all excited about them. But lizards are cute, don't you think?'"
 Russia-subject	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- Russia? How many Russians does it take to change a lightbulb? None. They have lightbulbs that never burn out. It's a secret. They stole the secret from Tesla. The Dave Clark Five wrote a song about it, but Krushchev wouldn't let them release it.'"
-Earth-subject	Chief Huffton Klimp	"'Chief, what are your thoughts on --'"	"'-- the Earth? It's hollow, and John Lennon is living inside it. He's waiting for the alien invasion. He's going to defeat them with his telekinetic powers. He wrote all about it in his song [']Blitzkrieg Bop.[']'"
+Earth-subject	Chief Huffton Klimp	"'Chief, what are your thoughts on --'"	"'-- the Earth? It's hollow, and John Lennon is living inside it. He's waiting for the alien invasion. He's going to defeat them with his telekinetic powers. He wrote all about it in his song [']Last Train to Clarksville.[']'"
+Last Train to Clarksville	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- [']Last Train to Clarksville?['] It's a song by John Lennon. It's about the train system inside the Earth. It's how he gets around. He's waiting for the alien invasion.'"
 Richard-nixon-subject	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- Richard Nixon? Boy, he fooled everyone, didn't he? Well, except for me and Mao. Mao was smart like that. He could see through Nixon's lies. But then, Mao was a lizard person. So, you know, he had an advantage.'"
 Krushchev-subject	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- Krushchev? His fondness for cryptozoology is well known. He was convinced that the Jersey Devil was a secret weapon of the Americans. He was right, of course. But he never found out how to control it.'"
 Mao Zedong	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- Mao Zedong? Never met him. Well, I mean, I did. He spent most of his time working on his invention of the Ouija Board.'"
@@ -2415,9 +2420,9 @@ Every turn:
 		say "A phone is ringing somewhere to the west.";
 	otherwise if the location is the BOSH hallway:
 		say "A phone is ringing to the south, in Faraji's office.";
-	otherwise if the location is BOSH Chief's office:
+	otherwise if the location is BOSH Chief's office and klimp's door is open:
 		say "A phone is ringing somewhere to the east."; 
-	otherwise if the location is Moira's Office:
+	otherwise if the location is Moira's Office and Moira's door is open:
 		say "A phone is ringing somewhere to the south.";
 	otherwise if the location is the back lot and the BOSH back door is open:
 		say "A phone is ringing to the east, in Faraji's office.";

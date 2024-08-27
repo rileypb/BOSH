@@ -245,7 +245,7 @@ The red key is a key. It is inside the backpack. Understand "ELG", "gym/gymnasiu
 
 The work schedule is scenery in the Enigma Lake town hall. 
 "[fixed letter spacing] +---------------------------------+[line break]
-|Name            Shift            |[line break]
+|Shift           Name             |[line break]
 +---------------------------------+[line break]
 |Monday          Edward Alpha     |[line break]
 |                Arthur Davenport |[line break]
@@ -282,9 +282,7 @@ Instead of examining the building:
 	try examining the Enigma Lake town hall;
 
 After examining the information desk when the backpack is nowhere:
-	now the player carries the backpack;
-	say "[We] [find] a backpack behind the information desk and [take] it.";
-	now the backpack is not behind the information desk;
+	try looking behind the information desk;
 	continue the action;
 
 Chapter 1 - Town Hall backdrop
@@ -304,7 +302,7 @@ To explore is a verb.
 Enigma Park is a leavable room. It is north of Enigma Lake town hall. It is unleavable. Enigma Park is in ELR. It is outdoors.
 "[first time]It's probably beautiful during the day, but tonight the deep shadows among the trees seem ominous. Faraji is watchful and tense as they explore the park. 
 
-[only]The central focus of the park is a large obelisk inscribed with the names of the town's citizens lost in the Great War. Firs and maples line the paths. The town hall is to the south, and other exits are to the north, west, and east. Other egress is blocked by stone walls[park beam description][if obelisk-ladder is revealed]
+[only]The central focus of the park is a large obelisk inscribed with the names of the town's citizens lost in the Great War. Firs and maples line the paths. The town hall is to the south, and other exits are to the north, west, and east. Other egress is blocked by iron fences[park beam description][if obelisk-ladder is revealed]
 
 The obelisk has moved, revealing a ladder leading down into the ground[end if]."
 
@@ -428,7 +426,7 @@ The description is "Solvay Road bends here, leading northwest out of town and so
 The x-coordinate of Solvay Road leading out of town is -1. The y-coordinate of Solvay Road leading out of town is 1.
 
 Horton facade is a building facade. It is in Solvay Road leading out of town. It is privately-named. The printed name is "Horton House". Understand "Horton/Family/House/Home" as Horton facade. "Horton House is an old colonial-period house. The sign by the door marks it as the oldest remaining house in the Enigma Lake area. Its builder, Hezekiah Horton, was purported to be a supernaturalist of some renown."
-	Horton facade fronts Horton Family House Kitchen.
+	Horton facade fronts the Horton Family House kitchen.
 	It is enterable from Solvay Road leading out of town.
 
 
@@ -731,7 +729,7 @@ The broadcast-booth-facade is a building facade. It is in Radio Station WGXC. It
 
 Book 11.5 - The broadcast booth
 
-The broadcast booth is a leavable room. It is south of Radio Station WGXC. It is in ELR. It is indoors. "The broadcast booth is a small empty room, as all the broadcasting equipment has been moved out. There is an empty bin that would normally hold the records currently in rotation, and another bin marked 'trash', filled with discarded records. An old turntable has been discarded here. A couple of old speakers have been left attached at the top of the wall. The exit is north."
+The broadcast booth is a leavable room. It is south of Radio Station WGXC. It is in ELR. It is indoors. "The broadcast booth is a small empty room, as all the broadcasting equipment has been moved out. There is an empty bin that would normally hold the records currently in rotation, and another bin marked 'trash', filled with discarded records. An old turntable has been left here. A couple of old speakers have been left attached at the top of the wall. The exit is north."
 
 It has egress north.
 
@@ -739,7 +737,7 @@ The x-coordinate of the broadcast booth is 2. The y-coordinate of the broadcast 
 
 The old turntable is a scenery supporter in the broadcast booth. "The turntable looks old but functional. Its power and output are wired directly into the wall." It has carrying capacity 1.
 
-Old speakers are scenery in the broadcast booth. "The speakers are old and dusty, but they look like they still work."
+The old speakers are scenery in the broadcast booth. "The speakers are old and dusty, but they look like they still work." They are plural-named.
 
 The rotation bin is a scenery container in the broadcast booth. "The bin is empty." Understand "bin" as rotation bin.
 
@@ -1060,6 +1058,15 @@ The x-coordinate of Lake Street by the park is 1. The y-coordinate of Lake Stree
 The church facade is a building facade. It is in Lake Street by the park. It is privately-named. The printed name is "First Utilitarian Church of Enigma Lake". Understand "church" as church facade. "The church is a dignified example of Gothic Revival architecture, its façade dominated by a steeply pitched roof and a slender steeple piercing the sky."
 	The church facade fronts the First Utilitarian Church of Enigma Lake.
 	It is enterable from Lake Street by the park.
+	Understand "facade" as church facade.
+
+The facade-steeple is part of the church facade. The description is "[facade steeple description]." Understand "steeple" as facade-steeple.
+
+To say facade steeple description:
+	if mounted-makeshift-resonator:
+		say "The steeple is a slender spire, rising high above the church. It is capped with a cross. A bright beam of light shoots out of the steeple, striking the obelisk in the park";
+	otherwise:
+		say "The steeple is a slender spire, rising high above the church. It is capped with a cross";
 
 Book 16 - First Utilitarian Church of Enigma Lake
 
@@ -1829,7 +1836,7 @@ Description notes for the dowsing rod:
 
 Book 23 - Portal room
 
-The obelisk-ladder is a secret door. It is below Enigma Park and above the circular chamber. It is privately-named. It is scenery. The printed name is "ladder". Understand "ladder" as the obelisk-ladder. "A ladder leads down into the darkness below the obelisk."
+The obelisk-ladder is a secret door. It is below Enigma Park and above the circular chamber. It is privately-named. It is scenery. The printed name is "ladder". Understand "obelisk/ladder" as the obelisk-ladder. "[if location is Enigma Park]A ladder leads down into the darkness below the obelisk[otherwise]A ladder leads up into the night[end if]."
 
 The circular chamber is in ELR. It is indoors. The circular chamber is dark. It is always-indefinite.
 "The walls are rough-hewn stone and the ceiling is low. A ladder leads up to the obelisk above."
@@ -2236,6 +2243,12 @@ Instead of throwing a root-vegetable at Daniels:
 	now Daniels carries the noun;
 	now the noun is out-of-reach;
 
+Implicit-lizard-attacking is an action applying to one thing.
+Understand "throw [a root-vegetable]" as implicit-lizard-attacking when the location is the old root cellar and the group of lizard people is in the location.
+
+Instead of implicit-lizard-attacking:
+	try throwing the noun at the lizard people.
+
 Instead of throwing something at when the noun is not a root-vegetable and the location is the old root cellar and the lizard people are in the location:
 	say "Faraji throws [the noun] at the lizard people. They shrug it aside.";
 	now the noun is in the old root cellar;
@@ -2340,6 +2353,11 @@ Throwing it to is an action applying to one carried thing and one visible thing.
 [ Persuasion rule for asking Daniels to try doing something:
 	persuasion succeeds; ]
 
+Persuasion rule for asking Daniels to try searching something when the group of lizard people is in the location:
+	now Faraji distracted this turn is true;
+	now notable Daniels event this turn is true;
+	persuasion succeeds;
+
 Persuasion rule for asking Daniels to try throwing something to Faraji when the group of lizard people is in the location:
 	now Faraji distracted this turn is true;
 	now notable Daniels event this turn is true;
@@ -2350,13 +2368,17 @@ Persuasion rule for asking Daniels to try throwing something at something when t
 	now notable Daniels event this turn is true;
 	persuasion succeeds;
 
+Instead of Daniels searching the green woven basket when the group of lizard people is in the location:
+	try Daniels opening the green woven basket;
+	rule succeeds;
+
 Instead of Daniels throwing a root-vegetable at the group of lizard people:
 	say "Daniels throws [the noun] at the lizard people. His hurt arm makes his throw weak, and [the noun] merely rolls past the lizard people. It is now within Faraji's reach.";
 	now the noun is in the old root cellar;
 	now the noun is within-reach;
 	rule succeeds;
 
-Instead of throwing something to the player when the group of lizard people is in the location:
+Instead of Daniels throwing something to the player when the group of lizard people is in the location:
 	try throwing the noun at Faraji;
 
 Persuasion rule for asking Daniels to try throwing something at Faraji when the group of lizard people is in the location:
@@ -2431,7 +2453,7 @@ rutabaga-asking it to take is an action applying to two things. Understand "ask 
 
 Instead of rutabaga-asking something to take something when the group of lizard people is in the location:
 	if the noun is Daniels:
-		try Daniels taking noun;
+		try Daniels taking the second noun;
 	otherwise if the noun is the group of lizard people:
 		say "The lizard people merely sneer at Faraji.";
 	otherwise:
@@ -2577,13 +2599,13 @@ The try the door on opening rule is listed before the opening doors before enter
 
 The try the door on unlocking rule is listed before the unlocking before opening rule in the before rulebook.
 
-The old wooden door is a closed openable locked lockable scenery door. It is west of Solvay Road Leading Out Of Town and east of Horton Family House Kitchen. The old wooden door has matching key the old copper key. 
+The old wooden door is a closed openable locked lockable scenery door. It is west of Solvay Road Leading Out Of Town and east of the Horton Family House Kitchen. The old wooden door has matching key the old copper key. 
 "A modest wooden door leads into the Horton family house. It has been fitted with a modern lock."
 
 Instead of unlocking the horton facade with something:
 	try unlocking the old wooden door with the second noun;
 
-Horton Family House Kitchen is a leavable room. It is in ELR. It is unleavable. It is indoors. "The house is a modest colonial-period building. Strangely, the furnishings of the house have been left in place, despite the coming flood. An open hearth is in the center of the room, with a few chairs and a table. The parlor is to the south, and a narrow staircase leads up. To the east the front door leads out to Solvay Road, while another exit leads west to the family graveyard." 
+The Horton Family House Kitchen is a leavable room. It is in ELR. It is unleavable. It is indoors. "The house is a modest colonial-period building. Strangely, the furnishings of the house have been left in place, despite the coming flood. An open hearth is in the center of the room, with a few chairs and a table. The parlor is to the south, and a narrow staircase leads up. To the east the front door leads out to Solvay Road, while another exit leads west to the family graveyard." 
 
 
 The x-coordinate of Horton Family House Kitchen is -2. The y-coordinate of Horton Family House Kitchen is 1.
@@ -2606,7 +2628,7 @@ The logs are scenery in Horton Family House Kitchen. "A few logs are stacked bes
 It is unsnarkable. Understand "log/firewood" as logs. It is plural-named.
 
 The parlor facade is a building facade. It is in Horton Family House Kitchen. It is privately-named. The printed name is "parlor". Understand "parlor" as parlor facade. "The parlor is to the south."
-	The parlor facade fronts Horton Family House Parlor.
+	The parlor facade fronts the Horton Family House parlor.
 	It is enterable from Horton Family House Kitchen.
 
 The narrow staircase is scenery in Horton Family House Kitchen. "A narrow staircase leads up."
@@ -2632,7 +2654,7 @@ Report divining-action:
 
 Wooden beams is a backdrop. Understand "white/plaster" as wooden beams.
 
-It is in Horton Family House Kitchen, Horton Family House Parlor, and Second Floor of the Horton Family House. "The house is built of sturdy wooden beams and plaster."
+It is in Horton Family House Kitchen, the Horton Family House Parlor, and the second floor of the Horton Family House. "The house is built of sturdy wooden beams and plaster."
 
 Book 25.1 - Horton Family House Parlor
 
@@ -2740,7 +2762,8 @@ with 100 blank rows.
 
 Book 25.5 - Horton Family House Second Floor
 
-The Second Floor of the Horton House is above the Horton Family House Kitchen. It is in ELR. It is indoors. "The second floor is a small, cramped space, with a single window looking out over the front yard. A small bed sits in one corner, while [if the rickety wardrobe is open]an open wardrobe fills a wall[otherwise]a closed wardrobe stands against a wall[end if]. A staircase leads down."
+The second floor of the Horton House is above the Horton Family House Kitchen. It is in ELR. It is indoors. "The second floor is a small, cramped space, with a single window looking out over the front yard. A small bed sits in one corner, while [if the rickety wardrobe is open]an open wardrobe fills a wall[otherwise]a closed wardrobe stands against a wall[end if]. A staircase leads down."
+The preposition is "on".
 
 
 The x-coordinate of the Second Floor of the Horton House is -2. The y-coordinate of the Second Floor of the Horton House is 1.
@@ -4136,7 +4159,7 @@ The basketball-ball is in the public gymnasium. It is privately-named. The print
 
 The basketball score is a number that varies. The basketball score is 0.
 
-Shooting is an action applying to one thing. Understand "shoot [something preferably held]" as shooting. Understand "shoot hoops" as shooting. Understand "shoot baskets", "play basketball", "play hoops", "play ball", "shoot" as shooting.
+Shooting is an action applying to one thing. Understand "shoot [something preferably held]" as shooting. Understand "shoot hoops" as shooting. Understand "shoot baskets/basket", "play basketball", "play hoops", "play ball", "shoot" as shooting.
 The Shooting action has a number called the points.
 
 Dribbling is an action applying to one thing. Understand "dribble [basketball-ball]" as dribbling. Understand "dribble" as dribbling. Understand the command "bounce" as "dribble".

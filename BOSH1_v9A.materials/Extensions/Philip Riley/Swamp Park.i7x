@@ -266,7 +266,7 @@ The nectarine sign is a part of the convenience-store-facade. Understand "nectar
 	
 The military-facade is an unenterable room in strip mall parking lot north. It is privately-named. The printed name is "Military Recruitment Center". Understand "military/recruitment/center" as the military-facade. "Patriotic posters paper the windows."
 
-Patriotic posters are scenery in the strip mall parking lot north. Understand "military posters", "poster/slogan/slogans" as patriotic posters. "The new slogan is 'Answer the Call!'".
+Patriotic posters are scenery in the strip mall parking lot north. Understand "military posters", "poster/slogan/slogans/windows/window" as patriotic posters. "The new slogan is 'Answer the Call!'".
 They are plural-named.
 
 Instead of entering the military-facade:
@@ -311,7 +311,7 @@ The glass counter is a supporter in Dave's pawn shop. It is scenery. "The counte
 Some jewelry is scenery in Dave's pawn shop. "[We] [don't] need any of this stuff." Understand "necklace/necklaces/ring/rings/bracelet/bracelets/watch/watches" as jewelry.
 It is obstructed.
 
-The firearms are scenery in Dave's pawn shop. "Although as an agent [we] [have] the right to carry a firearm, [we] [don't] feel the need." Understand "gun/guns/firearm/firearms" as firearms.
+The firearms are scenery in Dave's pawn shop. "Although as an agent [we] [have] the right to carry a firearm, [we] [don't] feel the need." Understand "gun/guns/firearm/arms" as firearms.
 They are far away.
 
 Instead of smelling Dave's pawn shop:
@@ -323,7 +323,7 @@ Dave's pawn shop is in Swamp Park.
 
 A man called Dave is in the pawn shop. Understand "owner" as Dave. "A man, presumably Dave, stands behind the main counter eyeing [Player]." The description is "He's dressed in polyester, as if he were still wearing last night's bowling shirt. A bit of tattoo peeks out from his open collar."
 
-The polyester shirt is part of Dave. The description is "It's not a bowling shirt, but it's damn close."
+The polyester shirt is part of Dave. The description is "It's not a bowling shirt, but it's damn close." Understand "bowling/shirt/collar" as the polyester shirt.
 
 The tattoo is part of Dave. The description is "It's hard to know what it looks like since just a bit peeks out from his collar."
 
@@ -815,12 +815,12 @@ It is unsnarkable.
 
 Some CBD oil is scenery in the convenience store. "[We] [don't] need any of this stuff." 
 
-Some antacids are scenery in the convenience store. "[We] [feel] fine for now."
+Some antacids are scenery in the convenience store. "[We] [feel] fine for now." Understand "antacid/TUMS/rolaids" as antacids.
 
 Some cigarettes are scenery in the convenience store. "[We] [have] no interest in smoking." Understand "smokes/smoke/packs/pack" as cigarettes.
 Some lottery tickets are scenery in the convenience store. "[We] [feel] no urge to gamble." Understand "scratch-off/scratch-offs/ticket" as lottery tickets.
 
-Some aisles are scenery in the Convenience Store. They are plural-named. "The aisles are cluttered with numerous stacks of unshelved items." Understand "cluttered/stacks/stack/unshelved/items" as aisles.
+Some aisles are scenery in the Convenience Store. They are plural-named. "The aisles are cluttered with numerous stacks of unshelved items." Understand "cluttered/stacks/stack/unshelved/items/aisle" as aisles.
 
 The store shelves are a thing in the Convenience Store. They are scenery. "[We] hardly [need] bread, ketchup, or potato chips." Understand "shelf" as store shelves.
 
@@ -951,7 +951,7 @@ Convenience-store-subject is a subject. It is privately-named. The printed name 
 
 Swamp-park-subject is a subject. It is privately-named. The printed name is "Swamp Park". Understand "swamp/park/town/city" as the swamp-park-subject.
 military-recruiter-subject is a subject. It is privately-named. The printed name is "military recruiter". Understand "military/recruitment/recruiter/center" as the military-recruiter-subject.
-The t-shirt-subject is a subject. It is privately-named. The printed name is "t-shirt". Understand "t-shirt" as the t-shirt-subject.
+The t-shirt-subject is a subject. It is privately-named. The printed name is "t-shirt". Understand "t-shirt/t/tee/shirt" as the t-shirt-subject.
 mom-subject is a subject. It is privately-named. The printed name is "mom". Understand "mom/mother" as the mom-subject.
 clothes-subject is a subject. It is privately-named. The printed name is "clothes". Understand "clothes/clothing" as the clothes-subject.
 

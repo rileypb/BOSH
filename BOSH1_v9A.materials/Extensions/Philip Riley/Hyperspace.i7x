@@ -131,7 +131,7 @@ Book 1 - Dropping things
 
 To vanish is a verb.
 
-Instead of dropping something when the location is the Featureless Hyperplane (this is the dropping things on hyperplane rule):
+Instead of dropping something when the location is the Featureless Hyperplane and the noun is not the mystic compass (this is the dropping things on hyperplane rule):
 	if the noun is not the mystic compass:
 		say "Faraji drops [the noun] and [they] [vanish]!";
 		now the noun is in field office Reception;
@@ -283,7 +283,7 @@ Carry out going up from Field Office Reception:
 
 
 Descending Stair is scenery. "A spiraling staircase disappears into the ground here. It is made of the same gossamer, questionably real stuff as the ground, the pillar, and the compass. Faraji can't see past the first turn of the stairs, unfortunately."
-Understand "staircase/stairs/spiral" as Descending Stair.
+Understand "staircase/stairs/spiral/spiraling/stairway" as Descending Stair.
 [Rule for writing a paragraph about the descending stair:
 	say "A spiraling staircase disappears into the ground here. It is made of the same gossamer, questionably real stuff as the ground,[if visited pillar is true] the pillar,[end if] and the readouts. You can't see past the first turn of the stairs, unfortunately.";]
 
@@ -391,7 +391,7 @@ Rule for writing a paragraph about the mystic compass:
 	
 The message is part of the Ethereal Pillar. The description is "The message is carved into the pillar as into white marble. It says 'All you need is love : love : love -Doris'".
 
-The ethereal symbols is part of the Ethereal Pillar. The description is "Under the message is a line of five ethereal symbols: o p q d b".
+The ethereal symbols is part of the Ethereal Pillar. The description is "Under the message is a line of five ethereal symbols: o p q d b". They are plural-named.
 
 
 [Rule for writing a paragraph about the Ethereal Pillar:
@@ -475,7 +475,7 @@ The reception desk is a scenery supporter in field office reception. The descrip
 
 The control panel is part of the reception desk. The description is "As Faraji leans over to examine the control panel, Maggie says 'Please don't touch that. Don't even look at it. Time to look away now.'".
 
-The ascending staircase is scenery in field office reception. The description is "The staircase leads up to the featureless hyperplane." Understand "stairs/stair/spiral" as ascending staircase.
+The ascending staircase is scenery in field office reception. The description is "The staircase leads up to the featureless hyperplane." Understand "stairs/stair/spiral/stairway/spiraling" as ascending staircase.
 
 The office directory is scenery in field office reception. The description is "The directory reads:[line break]
 Doris, Field Office Chief: WEST[line break]
@@ -1242,7 +1242,7 @@ no-aliens is an informative quip.
 	
 	[We] [look] at him unbelievingly. 'What are you talking about?'
 	
-	[Doris] shakes his head. 'I thought you would know. He's a member of a race of Earth beings more ancient than our own. [Agent], Senator Savra is a [italic type]lizard man[roman type].'".
+	[Doris] shakes his head. 'I thought you would know. He's a member of a race of Earth beings more ancient than our own. [Agent], Senator Savra is a [italic type]lizard person[roman type].'".
 	It quip-supplies Doris.
 	It follows about Savra.
 	It rules out yes-aliens.
@@ -1254,9 +1254,9 @@ yes-aliens is an informative quip.
 	The comment is "'Yes. The evidence is overwhelming,' says [player's surname].".
 	The reply is "[Doris] laughs. 'Nonsense, all of it. Get it out of your head. The whole idea is ridiculous. Senator Savra is [italic type]not[roman type] an alien.' [they] looks at [us] significiantly.
 	
-	[We] [look] at [them] unbelievingly. 'What are you talking about?'
+	[We] [look] at him unbelievingly. 'What are you talking about?'
 	
-	[Doris] shakes his head. 'I thought you would know. He's a member of a race of Earth beings more ancient than our own. [Agent], Senator Savra is a [italic type]lizard man[roman type].'".
+	[Doris] shakes his head. 'I thought you would know. He's a member of a race of Earth beings more ancient than our own. [Agent], Senator Savra is a [italic type]lizard person[roman type].'".
 	It quip-supplies Doris.
 	It follows about Savra.
 	It rules out no-aliens.
@@ -1267,11 +1267,11 @@ Instead of saying yes when yes-aliens is q-available:
 Instead of saying no when no-aliens is q-available:
 	try discussing no-aliens;
 	
-what-is-a-lizard-man is a questioning quip.
+what-is-a-lizard-person is a questioning quip.
 	It is privately-named.
-	The printed name is "what is a lizard man".
-	Understand "what/is/a/lizard/man" as what-is-a-lizard-man.
-	The comment is "Faraji looks incredulous. 'And just what is a lizard man?'".
+	The printed name is "what is a lizard person".
+	Understand "what/is/a/lizard/person" as what-is-a-lizard-person.
+	The comment is "Faraji looks incredulous. 'And just what is a lizard person?'".
 	The reply is "'Just what it sounds like. It's a bipedal, intelligent reptilian creature. Strange people. Deathly allergic to rutabagas.'".
 	It quip-supplies Doris.
 	It follows yes-aliens.
@@ -1282,7 +1282,7 @@ Savra's not reptilian is an informative quip.
 	The comment is "'But Savra isn't a reptile!'".
 	The reply is "'He's in disguise! Whatever, it doesn't matter. What matters is your mission.'"
 	It quip-supplies Doris.
-	It follows what-is-a-lizard-man.
+	It follows what-is-a-lizard-person.
 	
 [New Bikers of Troy]
 [Terrify New Books]
@@ -1469,7 +1469,7 @@ Alchemy	Doris	"'What is alchemy?'"	"'It's the original science. It's the philoso
 The Illuminati	Doris	"'What is the Illuminati?'"	"'They're a secret society. They're so secret even I don't know if I'm a member.'"
 The White House	Doris	"'What is the White House?'"	"'Um. White. House. It's a house that's white. I think it's in Washington.'"
 The New-World-Order	Doris	"'What is the New World Order?'"	"'Don't worry about it. It's not going to happen. I've got a plan.'"
-New-Order	Doris	"'What is the New Order?'"	"'It's a band. They're very good. I've got all their albums. My favorite is 'Istanbul Not Constantinople.''"
+New-Order	Doris	"'What is New Order?'"	"'It's a band. They're very good. I've got all their albums. My favorite is 'Istanbul Not Constantinople.''"
 Divining	Doris	"'What is divining?'"	"'First, get a stick. Then teach it to find water. It's a very simple process.'"
 Crystals	Doris	"'What are crystals?'"	"'According to Wikipedia, a crystal or crystalline solid is a solid material whose constituents (such as atoms, molecules, or ions) are arranged in a highly ordered microscopic structure, forming a crystal lattice that extends in all directions. I don't know what that means.'"
 Ley lines	Doris	"'What are ley lines?'"	"'Listen, it's like a big connect-the-dots book, except the dots are places and the lines are energy. It's a very simple concept.'"
@@ -1530,10 +1530,10 @@ Neil Patrick Harris	Doris	"'Do you know Neil Patrick Harris?'"	"'First off, I wa
 Ronald Reagan	Doris	"'What do you think of Ronald Reagan?'"	"'No one ever believes me, but I tell you, he once shot Ed Meese in a fit of pique. I just hied myself back to hyperspace and let them sort it out.'"
 Piltdown Man	Doris	"'Did you ever see the Piltdown Man?'"	"'I never thought it would go over so big. I was just playing a joke on Charles Dawson. He was so gullible.'"
 Davy Jones	Doris	"'Who was Davy Jones?'"	"'I'm the one who taught him how to play the tambourine. So much more talented than Mike Nesmith."
-Mike Nesmith	Doris	"'Who was Mike Nesmith?'"	"'The most evil of the Monkees. He may be a lizard person. I'm not sure.'"
+Mike Nesmith	Doris	"'Who was Mike Nesmith?'"	"'The most evil of the Monkees. He might have been a lizard person. I'm not sure.'"
 The Vatican	Doris	"'Have you ever been inside the Vatican?'"	"'I once went undercover as a Swiss Guard to protect the Pope from a lizard person diguised as a cardinal. In the end I got a commendation and a Swiss Army knife.'"
 Natural History Museum	Doris	"'What is the Natural History Museum?'"	"'What I want to know is, where's the unnatural history museum? That's what I'd like to visit.'"
-Sumeria	Doris	"'What do you know about Sumeria?'"	"'I was there. I was the one who suggested they use cuneiform. They said it was too hard to read. I said, 'That's the point.''"
+Sumeria	Doris	"'What do you know about Sumeria?'"	"'I was there. I was the one who suggested they use cuneiform. They said it was too hard to read. I said, [']That's the point.[']'"
 Dwight Eisenhower	Doris	"'You really talked to Dwight Eisenhower?'"	"'Well, in a manner of speaking. I certainly talked in his vicinity.'"
 Daniels-subject	Doris	"'Who is Daniels, anyway?'"	"'He's a field agent. This is his first mission since the unfortunate incident in Budapest.'"
 Onondaga-subject	Doris	"'Who are the Onondaga?'"	"'They're a tribe of Native Americans. From upstate New York. Daniels has been living with them in the 14th century.'"
