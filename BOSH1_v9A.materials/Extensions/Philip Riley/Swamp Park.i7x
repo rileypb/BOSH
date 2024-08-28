@@ -626,6 +626,11 @@ After printing the description of a dark room when the location is the back base
 The broken washing machine is an enterable, closed, openable, transparent container. It is scenery. "It's a front-loading model. The inside of the drum is obscured by a shimmering curtain of light[if the broken washing machine is open]. The door is open[otherwise]. The door is closed[end if]." 
 Understand "drum/washer" as the broken washing machine.
 
+The washing machine door is part of the broken washing machine. The description is "The door is [if the broken washing machine is open]open[otherwise]closed[end if]."
+
+Instead of opening the washing machine door:
+	try opening the broken washing machine.
+
 The strange glow is scenery in the back basement. "The glow is blue-white and flickering."
 It is far away.
 
@@ -716,7 +721,7 @@ Instead of pushing the stacks of crates when the handtruck is in the location:
 	
 Instead of moving the stacks of crates with the handtruck:
 	if the broken washing machine is nowhere:
-		say "Faraji moves the crates out of the way and uncovers an old front-loading washing machine. There is a strange blue-white glow inside the drum.";
+		say "Faraji moves the crates out of the way and uncovers an old front-loading washing machine. There is a strange blue-white glow inside the drum[if the broken washing machine is open]. The door is open[otherwise]. The door is closed[end if].";
 		now the broken washing machine is in the back basement;
 		now the strange glow is in the broken washing machine;
 		now the strange glow is closeby;
@@ -732,6 +737,14 @@ After entering the broken washing machine:
 		now the player is in Featureless Hyperplane;
 
 Instead of entering the strange glow:
+	if inside-the-dumpster is visited:
+		say "Nothing happens. Faraji climbs out of the washing machine.";
+		now the player is in the back basement;
+	otherwise:
+		say "There is a flash of light and [we] [find] [ourselves] somewhere else...";
+		now the player is in Featureless Hyperplane;
+
+Instead of entering the curtain of light:
 	if inside-the-dumpster is visited:
 		say "Nothing happens. Faraji climbs out of the washing machine.";
 		now the player is in the back basement;

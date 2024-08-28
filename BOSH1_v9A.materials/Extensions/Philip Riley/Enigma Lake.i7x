@@ -1480,7 +1480,6 @@ Every turn when beam count is 3 and portal opened is false:
 		say "Something is happening outside. Faraji runs up to the roof to see. [run paragraph on]";
 	say "The obelisk itself has begun to glow. The light from the crystal at its apex grows brighter and brighter, until it's almost blinding. Shielding their eyes, Faraji watches as the space around the obelisk shimmers and distorts. The previously gentle breeze is now a gale, [if location is the steeple or the location is the First Utilitarian Church of Enigma Lake or the location is the vestry]screaming through the steeple[otherwise if location is the radio station roof]howling through the struts of the radio tower[otherwise]shivering the television aerial[end if]. Then, with a huge crack, a bolt of lightning strikes the crystal. One can almost sense the electricity penetrating the earth. searching for something. And then, it's found it. Below the obelisk, something has woken.";
 	say line break;
-	continue;
 	if the player is in Henry's Hot Skillet:
 		now the player is in Henry's Roof;
 	if the player is in the vestry or the player is in the First Utilitarian Church of Enigma Lake:

@@ -1,0 +1,385 @@
+Bureau of Strange Happenings walkthrough
+8/27/2024
+
+w
+ask about phone
+ask where klimp is
+ask about moira
+w
+s
+open desk
+n
+e
+[wait for Margaret to return if she’s not there.]
+ask about desk key
+ask about computer
+ask about locked desk
+look behind desk
+x computer
+x drive
+w
+s
+x desk
+n
+e
+[wait for Margaret to return if she’s not there.]
+ask for wrench
+x vent
+ask about screwdriver
+e
+n
+e
+ask for screwdriver
+x case
+w
+s
+sw
+ask for screwdriver
+ask about owner
+ask about watch
+ne
+nw
+w
+w
+w
+ask for screwdriver
+x shelves
+x astral lenses
+borrow lenses
+wear lenses
+e
+e
+[wait for Margaret to return if she’s not there.]
+take boxes
+w
+s
+w
+wear lenses
+b
+n
+f
+open desk
+take key
+d
+s
+x crates
+move crates
+turn off light
+wear lenses
+f
+fn
+take truck
+push truck w
+push it d
+push it e
+push it bs
+push it b
+move crates with truck
+open washer
+enter it
+fn
+fn
+fn
+fn
+f
+fn
+f
+fn
+f
+fn
+f
+take compass
+x it
+s (10 times)
+e (4 times)
+b (9 times)
+d
+ask for screwdriver
+w
+w
+show him drive
+hand drive
+ask about savra
+no
+ask about lizard
+tell doris savra's not reptilian
+ask about mission
+e
+e
+ask how to get home
+w
+b
+enter portal
+yell
+ask for screwdriver
+x books
+borrow
+tribes of new york
+s
+e
+e
+nw
+w
+d
+s
+enter washer
+d
+w
+w
+give tribes to doris
+e
+s
+ask for screwdriver
+read note
+give note to christy
+n
+n
+ask for cup
+s
+s
+give cup
+z
+n
+w
+give note
+how will i find him
+ready to go
+e
+f
+enter portal
+[from now on, if you are unwillingly teleported by the lizard people, oops, better find your way back to where you were.]
+x desk
+x backpack
+open it
+take key
+x it
+s
+s
+take lamp
+n
+w
+s
+sw
+take fork
+ne
+take book
+read it
+x shelves
+d
+take all
+read ecology
+u
+e
+n
+n
+nw
+w
+ask for a screwdriver
+ask who
+why
+how
+ask for help
+take sledgehammer
+e
+e
+e
+se
+take bulb
+nw
+e
+enter truck
+open glove
+take key
+out
+x truck
+x hood
+open hood
+take battery
+take bolt cutters
+s
+e
+plug cord into outlet
+put bulb in lamp
+plug lamp into cord
+turn on lamp
+e
+move tapestry
+flip switch
+w
+d
+x altar
+read book of utilitarianism [remember the cursed word here.]
+drop lamp
+w
+[now find the lizard people wandering around.]
+say [cursed word]
+take resonator
+s
+s
+se
+u
+cut padlock
+flip switch
+x tower
+x platform
+mount resonator on platform
+d
+nw
+w
+w
+w
+d
+hit walls with sledgehammer
+n
+e
+e
+n
+open locker
+take all
+shoot basket
+look up bill thompson in book [remember the locker number here.]
+open locker [number from book]
+u
+w
+u
+w
+w
+w
+take rod
+u
+open wardrobe
+take book
+read it
+d
+s
+take book
+read it
+wear lenses
+fs
+be
+take ladder
+push button
+e
+n
+w
+w
+take shovel
+put ladder in hole
+x rod
+dig
+u
+e
+e
+e
+e
+e
+hit doll-fly [remember the name given here.]
+look up [name] in the book of weird names [remember the word given here.]
+say [word]
+l
+take rod
+x it
+take lamp
+put lamp in frame
+put fork in frame
+put lenses in frame
+tap frame with rod
+plug resonator into cord
+u
+x tripod
+take telescope
+mount resonator on tripod
+d
+w
+w
+w
+nw
+x compass [remember the number given here]
+press button
+e
+f
+type 50346596 into keypad
+b
+n
+ask for coffee
+s
+f
+enter portal
+w
+give coffee
+ask help
+e
+e
+e
+se
+open cabinet
+take resonator
+nw
+s
+s
+s
+w
+s
+x wires
+u
+x aerial
+x wires
+press button
+e
+b
+enter portal
+w
+s
+e
+e
+open accent hood
+take battery
+press button
+e
+f
+enter portal
+se
+s
+s
+s
+attach wires to battery
+u
+put resonator in socket
+d
+n
+n
+n
+e
+d
+enter portal
+[this part is tricky and random. this is a sample playthrough.]
+take potato
+ask daniels to open green basket
+ask daniels to throw rutabaga
+take rutabaga
+z
+throw rutabaga
+[if that doesn't work, try, try again. You need to hit the lizard people with the rutabaga while they're facing Daniels. Don't forget to dodge whenever the lizard people pick up a root vegetable.]
+doris sent me
+ask about laundromat
+how did you get here
+where are we
+what next
+press button
+x watch
+out
+n
+e
+se
+sw
+x gift card
+ne
+n
+e
+buy screwdriver with gift card
+w
+s
+w
+read herald
+open vent
+open desk
