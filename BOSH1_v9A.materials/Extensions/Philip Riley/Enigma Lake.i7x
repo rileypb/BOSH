@@ -14,7 +14,7 @@ Include Container Types by Philip Riley.
 Include Extension Cord by Philip Riley.
 Include State Update by Philip Riley.
 Include Far Away by Jon Ingold.
-Include Verbless Parse Fix by OtisTDog.
+[ Include Verbless Parse Fix by OtisTDog. ]
 
 Volume 1 - Some Stuff
 

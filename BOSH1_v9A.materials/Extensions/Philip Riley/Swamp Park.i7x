@@ -631,6 +631,9 @@ The washing machine door is part of the broken washing machine. The description 
 Instead of opening the washing machine door:
 	try opening the broken washing machine.
 
+Does the player mean entering the broken washing machine:
+	it is very likely.
+
 The strange glow is scenery in the back basement. "The glow is blue-white and flickering."
 It is far away.
 
