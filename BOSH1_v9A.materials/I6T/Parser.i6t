@@ -2261,9 +2261,7 @@ because we want to allow duplicates).
     #Ifdef TARGET_ZCODE;
     for (i=2 : i<INPUT_BUFFER_LEN : i++) buffer2->i = ' ';
     #Endif; ! TARGET_ZCODE
-    
-	    answer_words=Keyboard(buffer2, parse2);
-	
+    answer_words=Keyboard(buffer2, parse2);
 
     ! Conveniently, parse2-->1 is the first word in both ZCODE and GLULX.
     first_word = (parse2-->1);
