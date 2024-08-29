@@ -1872,8 +1872,12 @@ The lizard people turn to Faraji. 'You!' one of them hisses. 'You thought you co
 Presumably-Daniels speaks up.  'Seriously guys, you're always so over-dramatic. Besides, I've got you right where I want you. Just watch.' He shakes his potato at the lizard people. As he does, you notice his right arm looks injured.
 ";
 	say line break;
-	say boss battle banner;
-	say paragraph break;
+	if SCREEN_READER is false:
+		say boss battle banner;
+		say paragraph break;
+	otherwise:
+		say line break;
+		say "[bold type]Faraji health [faraji health] hearts. Lizard people health [lizard people health] hearts.[roman type]";
 	now the old root cellar is visited;
 
 To say boss battle banner:

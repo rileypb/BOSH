@@ -169,7 +169,13 @@ To print faraji bio:
 
 SKIP_PROLOGUE is a truth state that varies.
 
+SCREEN_READER is a truth state that varies. SCREEN_READER is initially false.
+
 When play begins:   
+	say "Are you using a screen reader? If so, type 'yes'. Otherwise, type 'no' to continue.";
+	if the player consents:
+		now SCREEN_READER is true;
+	say paragraph break;
 	now the story viewpoint is third person singular;
 	Repeat with S running through subjects:  
 		move S to the Room of Subjects;
