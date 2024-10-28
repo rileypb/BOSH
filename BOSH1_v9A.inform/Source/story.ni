@@ -1720,7 +1720,6 @@ Rule for supplying a missing noun while returning:
 	if the current interlocutor is Moira Zin:
 		now the noun is the borrowed-book;
 	otherwise if the current interlocutor is Minerva:
-		say "borrowed book-minerva: [the borrowed book-minerva].";
 		now the noun is the borrowed book-minerva;
 	otherwise:
 		say "There is no book to return." instead;
@@ -2349,7 +2348,7 @@ Hipgnosis	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- Hipgnosi
 bread-subject	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- bread? I don't eat bread. I'm watching my figure. But you know who knows a lot about bread? The Illuminati. Go ask them. They'll tell you all about it.'"
 led zeppelin	Chief Huffton Klimp	"'Chief, what do you think about --'"	"'-- Led Zeppelin? Ha! What *don't* I think about them? John Bonham never died. He was lost in a time slip and ended up in 15th century Poland. That's why they never replaced him. They were waiting for him to come back. But he never did. Sad, really.'"
 John Bonham	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- John Bonham? He was the drummer for Led Zeppelin. Sad story, really. Jimmy Page never got over it. He still thinks he's going to walk through the door one day. But he won't. He's in Poland. Or maybe it was Portugal. I can't remember.'"
-Jimmy Page	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- Jimmy Page? He was the guitarist for Led Zeppelin. He, Doris, and I used drink absinthe in Istanbul and talk about theoretical aspects of time travel. But then there was that incident with the lizard person in Bahrain. We haven't spoken since.'"
+Jimmy Page	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- Jimmy Page? He was the guitarist for Led Zeppelin. He, Doris, and I used to drink absinthe in Istanbul and talk about theoretical aspects of time travel. But then there was that incident with the lizard person in Bahrain. We haven't spoken since.'"
 Poland	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- Poland? Ah, Poland. Most people don't realize that it's not named after poles. Tracy Chapman used to live there, until she got dragged into that messy mistaken-identity business after John Lennon was allegedy killed. But that's another story.'"
 Portugal	Chief Huffton Klimp	"'Chief, what's the deal with --'"	"'-- Portugal? Ah, Portugal, the Spanish Canada. Not very good at making maple syrup, but they try. They try.'"
 Bahrain	Chief Huffton Klimp	"'Chief, what's so special about --'"	"'-- Bahrain? Ah, Bahrain. Bahrain is to the Middle East what the Middle East is to the world, if you know what I mean. But most people don't. But Peter Tork understood. Very perceptive fellow.'"

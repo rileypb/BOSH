@@ -1,5 +1,5 @@
 Debugging log of Inform 7
-Inform called as: /Applications/Inform.app_old.app/Contents/MacOS/ni -internal /Applications/Inform.app_old.app/Contents/Resources/Internal -external /Users/rileypb/Library/Inform -project /Users/rileypb/dev/Inform/BOSH/BOSH1_v9A.inform -format=ulx -release
+Inform called as: ni -noprogress -internal /Applications/Inform.app_old.app/Contents/Resources/Internal/ -external /Users/rileypb/Library/Inform -project BOSH1_v9A.inform/
 Found language bundle 'German' (built in)
 Found language bundle 'Italian' (built in)
 Found language bundle 'English' (built in)
@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 39945 words long.
+I've now read your source text, which is 39939 words long.
 
 
 -----------------------------------------------------
@@ -56,11 +56,11 @@ I've also read Snarky Remarks by Philip Riley, which is 235 words long.
 I've also read Followup Questions by Philip Riley, which is 248 words long.
 I've also read Scenery Supporters by Philip Riley, which is 179 words long.
 I've also read Simple Conversation by Philip Riley, which is 2410 words long.
-I've also read Hyperspace by Philip Riley, which is 17648 words long.
+I've also read Hyperspace by Philip Riley, which is 17701 words long.
 I've also read BOSH Facts by Philip Riley, which is 193 words long.
-I've also read Swamp Park by Philip Riley, which is 8954 words long.
+I've also read Swamp Park by Philip Riley, which is 9014 words long.
 I've also read Margaret by Philip Riley, which is 2679 words long.
-I've also read Enigma Lake by Philip Riley, which is 43612 words long.
+I've also read Enigma Lake by Philip Riley, which is 43658 words long.
 I've also read I Can Dig It by Philip Riley, which is 77 words long.
 I've also read BOSH Help by Philip Riley, which is 6960 words long.
 I've also read Overlook by Philip Riley, which is 763 words long.
@@ -151,21 +151,21 @@ Regional: CONSTANT_VNT'field office area'-region(I260_field_office_area)(I166'fi
  == region
 Regional: CONSTANT_VNT'hyperspace'-region(I243_hyperspace)(I149'hyperspace')
  == region
-Regional: CONSTANT_VNT'elr'-region(I557_elr)(I447'elr')
+Regional: CONSTANT_VNT'elr'-region(I565_elr)(I455'elr')
  == region
-Regional: CONSTANT_VNT'elr'-region(I557_elr)(I447'elr')
+Regional: CONSTANT_VNT'elr'-region(I565_elr)(I455'elr')
  == region
-Regional: CONSTANT_VNT'help area'-region(I862_help_area)(I746'help area')
+Regional: CONSTANT_VNT'help area'-region(I870_help_area)(I754'help area')
  == region
-Regional: CONSTANT_VNT'elr'-region(I557_elr)(I447'elr')
+Regional: CONSTANT_VNT'elr'-region(I565_elr)(I455'elr')
  == region
-Regional: CONSTANT_VNT'elr'-region(I557_elr)(I447'elr')
+Regional: CONSTANT_VNT'elr'-region(I565_elr)(I455'elr')
  == region
-Regional: CONSTANT_VNT'elr'-region(I557_elr)(I447'elr')
+Regional: CONSTANT_VNT'elr'-region(I565_elr)(I455'elr')
  == region
-Regional: CONSTANT_VNT'elr'-region(I557_elr)(I447'elr')
+Regional: CONSTANT_VNT'elr'-region(I565_elr)(I455'elr')
  == region
-Regional: CONSTANT_VNT'help area'-region(I862_help_area)(I746'help area')
+Regional: CONSTANT_VNT'help area'-region(I870_help_area)(I754'help area')
  == region
 
 
@@ -211,9 +211,9 @@ Phase XII ... Code generation
          == region
                                 0 = action. 1 = object
                                 0 = action. 1 = object
-        Regional: CONSTANT_VNT'elr'-region(I557_elr)(I447'elr')
+        Regional: CONSTANT_VNT'elr'-region(I565_elr)(I455'elr')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I557_elr)(I447'elr')
+        Regional: CONSTANT_VNT'elr'-region(I565_elr)(I455'elr')
          == region
         Regional: CONSTANT_VNT'hyperspace'-region(I243_hyperspace)(I149'hyperspace')
          == region
@@ -238,13 +238,13 @@ Phase XII ... Code generation
          == region
         Regional: CONSTANT_VNT'hyperspace'-region(I243_hyperspace)(I149'hyperspace')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I557_elr)(I447'elr')
+        Regional: CONSTANT_VNT'elr'-region(I565_elr)(I455'elr')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I557_elr)(I447'elr')
+        Regional: CONSTANT_VNT'elr'-region(I565_elr)(I455'elr')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I557_elr)(I447'elr')
+        Regional: CONSTANT_VNT'elr'-region(I565_elr)(I455'elr')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I557_elr)(I447'elr')
+        Regional: CONSTANT_VNT'elr'-region(I565_elr)(I455'elr')
          == region
 
 
@@ -266,7 +266,7 @@ Phase XII ... Code generation
 
 ==== Phase XII.11 ... Determining grammar (G2) ====
 
-Regional: CONSTANT_VNT'elr'-region(I557_elr)(I447'elr')
+Regional: CONSTANT_VNT'elr'-region(I565_elr)(I455'elr')
  == region
 
 
@@ -306,18 +306,18 @@ Regional: CONSTANT_VNT'elr'-region(I557_elr)(I447'elr')
                                             Fail: list of numbers (~) real number = nothing
                                         Fail: scene (~) number = nothing
                                         Fail: scene (~) number = nothing
-        Regional: CONSTANT_VNT'elr'-region(I557_elr)(I447'elr')
+        Regional: CONSTANT_VNT'elr'-region(I565_elr)(I455'elr')
          == region
-        Regional: CONSTANT_VNT'elr'-region(I557_elr)(I447'elr')
+        Regional: CONSTANT_VNT'elr'-region(I565_elr)(I455'elr')
          == region
                                 0 = objects valued property. 1 = object
-            Regional: CONSTANT_VNT'elr'-region(I557_elr)(I447'elr')
+            Regional: CONSTANT_VNT'elr'-region(I565_elr)(I455'elr')
              == region
-            Regional: CONSTANT_VNT'elr'-region(I557_elr)(I447'elr')
+            Regional: CONSTANT_VNT'elr'-region(I565_elr)(I455'elr')
              == region
-            Regional: CONSTANT_VNT'help area'-region(I862_help_area)(I746'help area')
+            Regional: CONSTANT_VNT'help area'-region(I870_help_area)(I754'help area')
              == region
-            Regional: CONSTANT_VNT'help area'-region(I862_help_area)(I746'help area')
+            Regional: CONSTANT_VNT'help area'-region(I870_help_area)(I754'help area')
              == region
 
 
@@ -351,15 +351,15 @@ Regional: CONSTANT_VNT'elr'-region(I557_elr)(I447'elr')
 
 ==== Phase XII.21 ... Compiling routines from predicate calculus ====
 
-Providing for a total heap of 65536, given requirement of 45328
+Providing for a total heap of 65536, given requirement of 46352
 
 
 -----------------------------------------------------
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 294 files written as streams.
-CPU time: 1579 centiseconds
+Total of 326 files written as streams.
+CPU time: 1522 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

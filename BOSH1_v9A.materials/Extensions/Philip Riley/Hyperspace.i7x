@@ -1621,6 +1621,15 @@ Check giving Doris's note to Christy when the player does not carry Tribes of Ne
 	now the christy interjection timer is a random number from 2 to 5;
 	say "Christy briefly looks at the note and says, 'I can't do anything with this. You need to bring me the book too.'" instead;
 
+Instead of showing Doris's note to Christy:
+	try giving Doris's note to Christy;
+
+Instead of giving Tribes of New York to Christy when Faraji carries Doris's note:
+	try giving Doris's note to Christy;
+
+Instead of showing Tribes of New York to Christy when Faraji carries Doris's note:
+	try giving Doris's note to Christy;
+
 After giving Doris's note to Christy:
 	say "Christy reads the note and says, 'Oh, I see. I'll get right on it. And give me the book too, thanks. So, this might take me a while -- actually, could you get me a cup of coffee?'
 	

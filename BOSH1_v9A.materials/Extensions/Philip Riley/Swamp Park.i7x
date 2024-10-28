@@ -739,7 +739,7 @@ After entering the broken washing machine:
 		say "There is a flash of light and [we] [find] [ourselves] somewhere else...";
 		now the player is in Featureless Hyperplane;
 
-Instead of entering the strange glow:
+Instead of entering the strange glow when the broken washing machine is in the back basement:
 	if inside-the-dumpster is visited:
 		say "Nothing happens. Faraji climbs out of the washing machine.";
 		now the player is in the back basement;
@@ -747,7 +747,10 @@ Instead of entering the strange glow:
 		say "There is a flash of light and [we] [find] [ourselves] somewhere else...";
 		now the player is in Featureless Hyperplane;
 
-Instead of entering the curtain of light:
+Instead of entering the strange glow when the broken washing machine is not in the back basement:
+	say "Faraji reaches out to touch the glow, but they can't reach it.";
+
+Instead of entering the curtain of light when the broken washing machine is in the back basement:
 	if inside-the-dumpster is visited:
 		say "Nothing happens. Faraji climbs out of the washing machine.";
 		now the player is in the back basement;
@@ -755,7 +758,7 @@ Instead of entering the curtain of light:
 		say "There is a flash of light and [we] [find] [ourselves] somewhere else...";
 		now the player is in Featureless Hyperplane;
 
-After touching the strange glow:
+After touching the strange glow when the broken washing machine is in the back basement:
 	if inside-the-dumpster is visited:
 		say "Nothing happens. Faraji climbs out of the washing machine.";
 		now the player is in the back basement;

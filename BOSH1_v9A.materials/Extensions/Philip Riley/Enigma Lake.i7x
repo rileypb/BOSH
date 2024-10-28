@@ -344,7 +344,7 @@ Some trees are scenery in Enigma Park. Understand "tree/fir/firs/maple/maples" a
 
 Some shadows are scenery in Enigma Park. "Without a lantern, it's inadvisable to venture into the shadows."
 
-The obelisk is scenery in Enigma Park. Understand "monument/names/citizens" as the obelisk. "Its faux Egyptian design is incongruous adjacent to the adamantly traditional town hall. [We] [can] just make out a small crystal adornment rising from the top."
+The obelisk is scenery in Enigma Park. Understand "monument" as the obelisk. "Its faux Egyptian design is incongruous adjacent to the adamantly traditional town hall. [We] [can] just make out a small crystal adornment rising from the top."
 
 The names are scenery in Enigma Park. "The names of the town's citizens lost in the Great War are inscribed on the obelisk." Understand "citizens" as names.					
 
@@ -736,6 +736,15 @@ It has egress north.
 The x-coordinate of the broadcast booth is 2. The y-coordinate of the broadcast booth is -3.
 
 The old turntable is a scenery supporter in the broadcast booth. "The turntable looks old but functional. Its power and output are wired directly into the wall." It has carrying capacity 1.
+
+Instead of switching on the old turntable:
+	if the power switch is switched on:
+		try anonymous record playing;
+	otherwise:
+		say "Faraji starts the turntable, but nothing happens. There seems to be no power.";
+
+Instead of switching off the old turntable:
+	say "It's not playing right now.";
 
 The old speakers are scenery in the broadcast booth. "The speakers are old and dusty, but they look like they still work." They are plural-named.
 
@@ -1841,7 +1850,7 @@ Description notes for the dowsing rod:
 
 Book 23 - Portal room
 
-The obelisk-ladder is a secret door. It is below Enigma Park and above the circular chamber. It is privately-named. It is scenery. The printed name is "ladder". Understand "obelisk/ladder" as the obelisk-ladder. "[if location is Enigma Park]A ladder leads down into the darkness below the obelisk[otherwise]A ladder leads up into the night[end if]."
+The obelisk-ladder is a secret door. It is below Enigma Park and above the circular chamber. It is privately-named. It is scenery. The printed name is "ladder". Understand "hidden/ladder" as the obelisk-ladder. "[if location is Enigma Park]A ladder leads down into the darkness below the obelisk[otherwise]A ladder leads up into the night[end if]."
 
 The circular chamber is in ELR. It is indoors. The circular chamber is dark. It is always-indefinite.
 "The walls are rough-hewn stone and the ceiling is low. A ladder leads up to the obelisk above."
