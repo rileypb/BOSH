@@ -56,11 +56,11 @@ I've also read Snarky Remarks by Philip Riley, which is 235 words long.
 I've also read Followup Questions by Philip Riley, which is 248 words long.
 I've also read Scenery Supporters by Philip Riley, which is 179 words long.
 I've also read Simple Conversation by Philip Riley, which is 2410 words long.
-I've also read Hyperspace by Philip Riley, which is 17811 words long.
+I've also read Hyperspace by Philip Riley, which is 17871 words long.
 I've also read BOSH Facts by Philip Riley, which is 193 words long.
 I've also read Swamp Park by Philip Riley, which is 8989 words long.
 I've also read Margaret by Philip Riley, which is 2679 words long.
-I've also read Enigma Lake by Philip Riley, which is 45203 words long.
+I've also read Enigma Lake by Philip Riley, which is 45254 words long.
 I've also read I Can Dig It by Philip Riley, which is 77 words long.
 I've also read BOSH Help by Philip Riley, which is 6960 words long.
 I've also read Overlook by Philip Riley, which is 763 words long.
@@ -358,8 +358,8 @@ Providing for a total heap of 65536, given requirement of 46352
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 316 files written as streams.
-CPU time: 670 centiseconds
+Total of 319 files written as streams.
+CPU time: 682 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

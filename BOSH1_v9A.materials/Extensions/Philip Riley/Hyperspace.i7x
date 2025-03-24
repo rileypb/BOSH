@@ -955,6 +955,11 @@ To say portal to the past interior description:
 
 The description of the portal to the past is "The portal, made of the same astral stuff this whole dimension is made of, looms over the rest of the room[portal to the past interior description]. On the right post is a control panel. A label on the top of the arch reads 'Portal to the Past.'"
 
+Pttp entering is an action applying to nothing. Understand "in" as Pttp entering when the location is Portal Room 1.
+
+Instead of pttp entering:
+	try entering the portal to the past;
+
 Rule for writing a paragraph about the portal to the past:
 	say the description of the portal to the past;
 	lb;
@@ -1072,6 +1077,11 @@ The auxiliary portal is in Portal Room 2. The auxiliary portal can be activated.
 Portal sign is part of the auxiliary portal. The description is "The sign reads 'Auxiliary Portal'." 
 
 Understand "shimmering/curtain/field/of/light" as the auxiliary portal when the auxiliary portal is activated. 
+
+aux entering is an action applying to nothing. Understand "in" as aux entering when the location is portal room 2.
+
+Instead of aux entering:
+	try entering the auxiliary portal;
 
 Instead of going inside when the location is Portal Room 2:
 	try entering the auxiliary portal;

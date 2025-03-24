@@ -1533,9 +1533,9 @@ Every turn when beam count is 3 and portal opened is false:
 	if the player is in Henry's Hot Skillet:
 		say "Something is happening outside. Faraji runs up to the roof to see. [run paragraph on]";
 	if the player is in the First Utilitarian Church of Enigma Lake:
-		say "Something is happening outside. Faraji runs up to the roof to see. [run paragraph on]";
+		say "Something is happening outside. Faraji runs up to the steeple to see. [run paragraph on]";
 	if the player is in the vestry:
-		say "Something is happening outside. Faraji runs up to the roof to see. [run paragraph on]";
+		say "Something is happening outside. Faraji runs up to the steeple to see. [run paragraph on]";
 	say "The obelisk itself has begun to glow. The light from the crystal at its apex grows brighter and brighter, until it's almost blinding. Shielding their eyes, Faraji watches as the space around the obelisk shimmers and distorts. The previously gentle breeze is now a gale, [if location is the steeple or the location is the First Utilitarian Church of Enigma Lake or the location is the vestry]screaming through the steeple[otherwise if location is the radio station roof]howling through the struts of the radio tower[otherwise]shivering the television aerial[end if]. Then, with a huge crack, a bolt of lightning strikes the crystal. One can almost sense the electricity penetrating the earth. searching for something. And then, it's found it. Below the obelisk, something has woken.";
 	say line break;
 	if the player is in Henry's Hot Skillet:
@@ -1932,6 +1932,14 @@ Instead of climbing up the obelisk-ladder when the location is the circular cham
 
 The circular chamber is in ELR. It is indoors. The circular chamber is dark. It is always-indefinite.
 "The walls are rough-hewn stone and the ceiling is low. A ladder leads up to the obelisk above."
+
+Rule for supplying a missing noun while entering when the location is the circular chamber:
+	now the noun is the ethereal portal;
+
+Portal entering is an action applying to nothing. Understand "in" as portal entering when the location is the circular chamber.
+
+Instead of portal entering:
+	try entering the ethereal portal;
 
 A door appearance rule for the obelisk-ladder:
 	rule succeeds with result whether or not the obelisk-ladder is revealed.
