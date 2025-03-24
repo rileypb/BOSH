@@ -24,7 +24,7 @@ Definition: a hint topic is exhausted:
 
 Definition: a hint topic is explored if the number of entries in its history is not 0.
 
-asking for hints about is an action out of world applying to one thing. Understand "hint [any active hint topic]" as asking for hints about. 
+asking for hints about is an action out of world applying to one thing. Understand "hint [any active hint topic]", "help [any active hint topic]" as asking for hints about. 
 
 asking for bogus hints about is an action out of world applying to one topic. Understand "hint [text]" as asking for bogus hints about.
 
@@ -74,7 +74,7 @@ To list all hints:
 	say "To recall hints about a topic, type RECALL <TOPIC>.";
 	now listing all hints is false;
 
-Listing hints is an action out of world. Understand "list hints", "hints", "hint" as listing hints.
+Listing hints is an action out of world. Understand "list hints", "hints", "hint", "help" as listing hints.
 
 Carry out listing hints:
 	list all hints.

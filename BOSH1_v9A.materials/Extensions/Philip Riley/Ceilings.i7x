@@ -88,7 +88,7 @@ Check rubbing Ceiling (this is the standard check rubbing the ceiling rule):
 		say "There is no ceiling." (B) instead;
 	
 Check attacking the Ceiling when the location is ceilinged (this is the block attacking the Ceiling rule):
-	say "[We] would just embarrass [ourselves]." (A) instead;
+	say "In most cases, attacking the ceiling is futile, one would think." (A) instead;
 	
 Check attacking the ceiling when the location is not ceilinged (this is the block attacking no ceiling rule):
 	say "There is no ceiling." (A) instead;

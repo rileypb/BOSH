@@ -144,14 +144,11 @@ The new room description heading rule does nothing when the location is the isol
   
 Ezra Gaunt is a man in the Room of Stuff. The description is "Agent Gaunt's last name describes him well. He is a perpetually worried-looking individual, a look emphasized by his thinness and his thick-rimmed glasses.".
 Petula Goldberg is a woman in the Room of Stuff. The description is "Agent Goldberg has lots of dogs, a fact which can be inferred by the inevitable fur somewhere on her person. The last front office worker at the Bureau left due to an extreme allergic reaction to Goldberg.".
-Larch Faraji is a nonbinary in the Strip Mall Parking Lot South. The third singular pronoun is singular-they-pronoun. The description is "Agent Faraji is dressed smartly in a black suit, with neat hair and a serious expression. Inside, they are a punk rocker, a fact that they are not shy about.". 
+Larch Faraji is a nonbinary in the Strip Mall Parking Lot South. The third singular pronoun is singular-they-pronoun. The description is "Agent Faraji is dressed smartly in a black suit, with neat hair and a serious expression. They are every bit the professional.".
 
 The black suit is part of Larch Faraji. The description is "A black suit, tailored to fit Faraji's slim frame.".
 
 Faraji's hair is part of Larch Faraji. The description is "Faraji's hair is dark and neatly styled.".
-
-Instead of doing something other than examining when the noun is not nothing and the noun is part of Larch Faraji:
-	say "Faraji has more important things to do.";
 
 
 Play mode is a kind of value. The play modes are _startup, _normal, and picking character.
@@ -1066,7 +1063,6 @@ Check entering the blue dumpster:
 	say "[We] [are] not yet to the point of dumpster diving." instead;
 
 Climbing up is an action applying to one thing. Understand "climb up/-- [something]" as climbing up.
-Understand "climb" as climbing up.
 
 Rule for supplying a missing noun while climbing up:
 	if the metal ladder is touchable:
@@ -1557,7 +1553,7 @@ The oddities are on the chief's shelves. They are scenery. The description is "T
 Understand "memorabilia", "junk", "stuff", "knick-knacks", "knick knacks" as the oddities.
 
 A pair of astral lenses is on the chief's shelves. It is ambiguously plural. Chief Huffton Klimp owns the pair of astral lenses. The description of the pair of astral lenses is "To all appearances an ordinary pair of glasses, the astral lenses allegedly reveal the existence of extra-dimensional pathways." The pair of astral lenses is wearable. 
-Understand "glasses/glass" as the pair of astral lenses.
+Understand "glasses/glass/lens" as the pair of astral lenses.
 
 Understand "look through [pair of astral lenses]" as a mistake ("Try wearing the astral lenses instead.").
 
@@ -2728,9 +2724,9 @@ Book 21 - Not For Release
  
 [ Include BOSH Tests by Philip Riley. ]
 
-DEBUG is false.
+DEBUG is true.
 
-SKIP_PROLOGUE is false;
+SKIP_PROLOGUE is true;
 
 AUDIT is a truth state that varies.
 AUDIT is false.
@@ -2832,12 +2828,14 @@ test part1 with "w/look behind desk/x computer/x vent/e/sw/ask for screwdriver/a
 test part2 with "f/f/f/f/f/fn/fw/fn/fn/fw/w/fn/w/take compass/x 
 it/s/s/s/s/s/s/s/e/e/e/e/e/e/e/e/b/b/b/b/b/b/b/b/b/d".
 
-test part3 with "w/w/show drive/hand drive/ask about savra/ask 
+test part3 with "w/w/show drive/hand drive/ask about dragon/ask 
 about mission/ask how to get home/e/e/ask how to get 
-home/w/b/enter portal/knock on door/x shelf/borrow/tribes/s/s/z/w/wear 
-lenses/b/n/f/d/s/enter machine/d/e/w/w/give book to doris/e/s/give 
+home/w/b/enter/wear lenses/knock on door/x shelf/borrow/tribes/s/e/e/wear 
+lenses/nw/w/d/s/enter/d/e/w/w/give tribes to doris/e/s/give 
 note to christy/n/n/ask coffee/s/s/give coffee/n/n/w/give note to 
-doris/ask how i will find him/ready/e/f/enter portal".
+doris/ask how i will find him/ready/e/f/enter".
+
+test 3parts with "test part1/test part2/test part3"
 
 test part4 with "banish/x desk/open pack/take key/s/w/sw/take/ne/w/read brown book/e/n/n/n/w/w/take hammer/ask who he is/ask why still here/ask how he can help/ask about secret/ask for help/e/read compass/press button/e/f/type 1 into 
 keypad/b/n/ask for coffee/s/f/enter portal/w/give coffee to hutz/ask if can now help them/e/e/e/se/x floor/unlock cabinet with iron key/n/nw/e/s/w/w/se/s/s/w/d/take/swing hammer at wall/n/e/e/wear lenses/f/bn/u/take key/look up thompson in record 

@@ -66,7 +66,7 @@ Check rubbing walls (this is the standard check rubbing the walls rule):
 		say "There are no walls." (B) instead;
 	
 Check attacking the walls when the location is walled (this is the block attacking the walls rule):
-	say "[We] would just embarrass [ourselves]." (A) instead;
+	say "Attacking the walls seems pointless here." (A) instead;
 	
 Check attacking the walls when the location is not walled (this is the block attacking no walls rule):
 	say "There are no walls." (A) instead;

@@ -4193,7 +4193,7 @@ Report an actor rubbing (this is the report rubbing rule):
 	otherwise:
 		say "[The actor] [rub] [the noun]." (B).
 
-[Setting it to is an action applying to one thing and one topic.
+Setting it to is an action applying to one thing and one topic.
 The Setting it to action translates into I6 as "SetTo".
 
 The specification of the setting it to action is
@@ -4207,7 +4207,7 @@ with some further check rules.)"
 Check an actor setting something to (this is the block setting it to rule):
 	if the actor is the player:
 		say "No, [we] [can't set] [regarding the noun][those] to anything." (A);
-	stop the action.]
+	stop the action.
 
 [Waving hands is an action applying to nothing.
 The Waving hands action translates into I6 as "WaveHands".
@@ -4548,8 +4548,8 @@ Understand "search [something]" as searching.
 
 Understand "wave [something]" as waving.
 
-[Understand "set [something] to [text]" as setting it to.
-Understand the command "adjust" as "set".]
+Understand "set [something] to [text]" as setting it to.
+Understand the command "adjust" as "set".
 
 Understand "pull [something]" as pulling.
 Understand the command "drag" as "pull".

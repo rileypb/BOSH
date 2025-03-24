@@ -113,7 +113,7 @@ Book 3 - Help
 Chapter 1 - The Help Command
 
 		
-Helping is an action out of world. Understand "help" as helping.
+Helping is an action out of world. [Understand "help" as helping.]
 [Carry out helping:
 	say "Welcome to [bold type][work title][roman type]. In most ways this game is similar to other works of interactive fiction but there are a few special commands you should be aware of:
 	

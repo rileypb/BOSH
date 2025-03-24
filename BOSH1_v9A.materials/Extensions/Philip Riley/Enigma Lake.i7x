@@ -238,6 +238,10 @@ Before doing something to the backpack when the backpack is worn:
 		say "You'll have to take off the backpack first.";
 		stop the action;
 
+Before doing something to something when the noun is in the backpack and the backpack is worn and the backpack is open:
+	say "You'll have to take off the backpack first.";
+	stop the action;
+
 After dropping the backpack:
 	say "You slide the backpack off your shoulders and drop it to the floor.";
 
@@ -306,6 +310,7 @@ Enigma Park is a leavable room. It is north of Enigma Lake town hall. It is unle
 
 The obelisk has moved, revealing a ladder leading down into the ground[end if]."
 
+Some fences are scenery in Enigma Park. "The iron fences are about seven feet high. They block all egress except to the north, east, south, and west."
 
 To say park beam description:
 	beam description, in the park;
@@ -380,7 +385,7 @@ the Main Street 200 block is south of Enigma Lake Town Hall. It is in ELR. It is
 The description is "The street runs east and west from here. South is the edifice of Rolle's Department Store. North is the town hall."
 The x-coordinate of the Main Street 200 block is 0. The y-coordinate of the Main Street 200 block is -1.
 
-Rolle's facade is a building facade in Main Street 200 block. It is privately-named. The printed name is "Rolle's Department Store". Understand "rolle's/rolle/department/store/shop" as Rolle's facade. "Once, town department stores like this were a constant of American life before they were gobbled up by the big box stores."
+Rolle's facade is a building facade in Main Street 200 block. It is privately-named. The printed name is "Rolle's Department Store". Understand "rolle's/rolle/department/store/shop/edifice" as Rolle's facade. "Once, town department stores like this were a constant of American life before they were gobbled up by the big box stores."
 	Rolle's facade fronts Rolle's Department Store.
 	It is enterable from Main Street 200 Block.
 
@@ -432,7 +437,7 @@ Horton facade is a building facade. It is in Solvay Road leading out of town. It
 
 Book 8 - Solvay Road by the lake
 
-The lake-backdrop is a backdrop. It is in Solvay-Road-by-the-lake, lake shore west, lake shore north of the park, and lake at ridge. It is privately-named. The printed name is "lake". Understand "lake/water", "enigma lake" as the lake-backdrop. "[description of lake]."
+The lake-backdrop is a backdrop. It is in Solvay-Road-by-the-lake, lake shore west, lake shore north of the park, and lake at ridge. It is privately-named. The printed name is "lake". Understand "lake/water", "enigma lake", "ripples/ripple" as the lake-backdrop. "[description of lake]." 
 
 Rule for supplying a missing noun while swimming when lake-backdrop is in the location:
 	now the noun is lake-backdrop;
@@ -525,6 +530,9 @@ Rule for writing a paragraph about Hutz:
 		say "[A Hutz] lies on a bed in a corner of the shack. He stirs sleepily and says 'Ah, there you are, there you are. Knew you'd be around eventually.'"
 
 The narrow bed is scenery in the dirty shack. "Clean enough, but awfully narrow, it holds [if Hutz is known]the bony figure of Hutz[otherwise][Hutz][end if], the town groundskeeper."
+
+Instead of entering the narrow bed:
+	say "[A Hutz] looks crowded enough as it is.";
 
 The sink is a scenery container in the dirty shack. "The sink is piled high with dirty dishes."
 
@@ -675,10 +683,13 @@ Hutz interjection	used (a truth state)
 
 The flood is a subject. 
 Enigma-Lake-subject is a subject. It is privately-named. The printed name is "Enigma Lake". Understand "Enigma/Lake" as Enigma-Lake-subject.
-Henry-subject is a subject. It is privately-named. The printed name is "Henry's Hot Skillet". Understand "Henry's/Henry/Henrys/Hot/Skillet" as Henry-subject.
+Henry-subject is a subject. It is privately-named. The printed name is "Henry's Hot Skillet". Understand "Henry's/Henry/Henrys/Hot/Skillet/diner" as Henry-subject.
 astral-resonator-subject is a subject. It is privately-named. The printed name is "astral resonator". Understand "astral/resonator/rusty/shiny/makeshift" as astral-resonator-subject.
 lizard-people-subject is a subject. It is privately-named. The printed name is "lizard people". Understand "lizard/people/lizardmen/lizardpeople" as lizard-people-subject. 
 daniels-subject is a subject. It is privately-named. The printed name is "Daniels". Understand "Daniels" as daniels-subject.
+TV-subject is a subject. It is privately-named. The printed name is "television". Understand "TV/television" as TV-subject.
+Dragnet is a subject. 
+Theme song is a subject. Understand "dragnet theme song" as theme song.
 
 Table of Quiz Topics (continued)
 subject (a thing)	interlocutor (a person)	comment (a text)	reply (a text)
@@ -693,6 +704,9 @@ Henry-subject	Hutz	"'What's the deal with Henry's Hot Skillet?' Faraji asks."	"'
 astral-resonator-subject	Hutz	"'What's the deal with the astral resonator?' Faraji asks."	"'A what? I have no idea what you're talking about,' Hutz replies."
 lizard-people-subject	Hutz	"'What's the deal with the lizard people?' Faraji asks."	"'Lizard people? What are you talking about?' Hutz replies."
 daniels-subject	Hutz	"'What's the deal with Daniels?' Faraji asks."	"'Daniels? Who's Daniels?' Hutz replies."
+TV-subject	Hutz	"'What's your favorite TV show?' Faraji asks."	"'I like Dragnet,' Hutz replies."
+Dragnet	Hutz	"'What's Dragnet about?' Faraji asks."	"No idea. I just like the theme song,' Hutz replies."
+Theme song	Hutz	"'What do you like about the Dragnet theme song?' Faraji asks."	"'It's loud. I like loud,' Hutz replies."
 
 
 Book 10 - Main at Lake
@@ -709,6 +723,8 @@ The broadcast-tower is scenery in Main at Lake. It is privately-named. The print
 Does the player mean examining the broadcast-tower:
 	It is very likely.
 
+The exterior radio station sign is scenery in Main at Lake. "The sign reads 'WGXC [']Galaxy['] Radio 1055 AM'."
+
 Book 11 - WGXC "Galaxy" Radio
 
 Radio Station WGXC is a leavable room. It has egress northwest. It is southeast of Main at Lake. It is in ELR. It is indoors. "This is the town radio station. An eye-catching sign over the door reads 'WGXC [']Galaxy['] Radio 1055 AM'.
@@ -716,6 +732,8 @@ Radio Station WGXC is a leavable room. It has egress northwest. It is southeast 
 A staircase runs upwards, presumably to the roof and the broadcast antenna. The broadcast booth is to the south. The exit is northwest."
 
 The x-coordinate of Radio Station WGXC is 2. The y-coordinate of Radio Station WGXC is -2.
+
+The interior radio station sign is scenery in Radio Station WGXC. "The sign reads 'WGXC [']Galaxy['] Radio 1055 AM'."
 
 The WGXC stairs are scenery in Radio Station WGXC. "The stairs run up to the roof."
 Understand "staircase/stair" as WGXC stairs.
@@ -759,6 +777,10 @@ Instead of examining the trash-bin:
 		say "The trash bin is filled with discarded records, including ";
 		say "[list of things in the trash-bin].";
 
+After taking a record for the first time:
+	say "[bracket]Faraji can PLAY <record name> to play the record on the turntable.[close bracket]";
+	continue the action;
+
 A record is a kind of thing. A record has a text called the title. A record has a text called the artist. A record has a text called the music description.
 The title of a record is usually "". The artist of a record is usually "".
 The printed name of a record is "[italic type][title][roman type] by [artist]".
@@ -793,7 +815,7 @@ record playing is an action applying to one thing. Understand "play [something]"
 
 anonymous record playing is an action applying to nothing. Understand "play record" as anonymous record playing.
 
-record playing backwards is an action applying to one thing. Understand "play [something] backwards" as record playing backwards.
+record playing backwards is an action applying to one thing. Understand "play [something] backwards/backward" as record playing backwards.
 
 anonymous record playing backwards is an action applying to nothing. Understand "play record backwards" as anonymous record playing backwards.
 
@@ -1067,7 +1089,7 @@ The x-coordinate of Lake Street by the park is 1. The y-coordinate of Lake Stree
 The church facade is a building facade. It is in Lake Street by the park. It is privately-named. The printed name is "First Utilitarian Church of Enigma Lake". Understand "church" as church facade. "The church is a dignified example of Gothic Revival architecture, its façade dominated by a steeply pitched roof and a slender steeple piercing the sky."
 	The church facade fronts the First Utilitarian Church of Enigma Lake.
 	It is enterable from Lake Street by the park.
-	Understand "facade" as church facade.
+	Understand "facade/roof" as church facade.
 
 The facade-steeple is part of the church facade. The description is "[facade steeple description]." Understand "steeple" as facade-steeple.
 
@@ -1077,6 +1099,9 @@ To say facade steeple description:
 	otherwise:
 		say "The steeple is a slender spire, rising high above the church. It is capped with a cross";
 
+The cross is scenery in Lake Street by the park. "The cross is a simple, unadorned cross, set atop the steeple of the church." It is unsnarkable.
+
+
 Book 16 - First Utilitarian Church of Enigma Lake
 
 The First Utilitarian Church of Enigma Lake is a leavable room. It has egress west. It is east of Lake Street by the Park. It is in ELR. It is indoors. "The interior is dimly lit by the stained glass windows, and the pews are arranged in neat rows facing the pulpit. A standard electrical outlet is set into the wall. To the east is the vestry. Faraji can also take a ladder up to the steeple, or stairs down to the basement. The exit is to the west."
@@ -1084,7 +1109,12 @@ The x-coordinate of the First Utilitarian Church of Enigma Lake is 2. The y-coor
 
 The church stairs are scenery in First Utilitarian Church of Enigma Lake. "The stairs lead down to the basement."
 
-The church ladder is scenery in First Utilitarian Church of Enigma Lake. "The ladder leads up to the steeple. It is solidly affixed to the wall."
+The church ladder is a building facade. It is in First Utilitarian Church of Enigma Lake. It is privately-named. The printed name is "ladder". Understand "ladder" as church ladder. "The ladder leads up to the steeple. It is solidly affixed to the wall."
+	The church ladder fronts the church steeple.
+	It is enterable from First Utilitarian Church of Enigma Lake.
+
+Instead of climbing up the church ladder:
+	try going up.
 
 Some religious art is scenery in First Utilitarian Church of Enigma Lake. "The best piece in the bunch is a painting of a lizard person being smote by a bolt of lightning."
 
@@ -1093,7 +1123,7 @@ Instead of doing something other than examining to the doll-fly:
 
 The stained glass windows are scenery in First Utilitarian Church of Enigma Lake. "As is traditional in Utilitarian churches, the stained glass windows are all plain glass, allowing the maximum amount of light to enter the building."
 
-The pews are scenery in First Utilitarian Church of Enigma Lake. "The pews are arranged in neat rows, facing the pulpit."
+The pews are scenery in First Utilitarian Church of Enigma Lake. "The pews are arranged in neat rows, facing the pulpit." Understand "rows/row/pew" as the pews.
 
 The church altar is scenery in First Utilitarian Church of Enigma Lake. "The altar is a simple wooden table, with a white cloth draped over it."
 
@@ -1106,6 +1136,8 @@ The Holy Bible is scenery on the lectern. "The Bible's cover is worn and the pag
 To read is a verb.
 
 The Book of Utilitarianism is fixed in place. It is proper-named. The printed name is "[italic type]The Book of Utilitarianism[roman type]". It is indescribable. Understand "BOU" as the Book of Utilitarianism. 
+
+ Understand "open [book of utilitarianism]" as examining.
 
 The cursed word is text that varies. The cursed word is "".
 
@@ -1337,6 +1369,10 @@ After switching off the circuit breaker when the makeshift astral resonator is i
 
 Book 17 - Vestry
 
+The vestry-facade is a building facade. It is in First Utilitarian Church of Enigma Lake. It is privately-named. The printed name is "vestry". Understand "vestry" as the vestry-facade. "The vestry is a small room to the east of the church proper."
+	The vestry-facade fronts the vestry.
+	It is enterable from First Utilitarian Church of Enigma Lake.
+
 The vestry is a leavable room. It is east of First Utilitarian Church. It has egress west. It is in ELR. It is indoors. "It's a small room, with an exit leading to the church proper to the west. A lovely tapestry hangs on the wall[if the tapestry is pushed aside]. It is pushed aside, revealing a circuit breaker[end if]."
 The x-coordinate of the vestry is 3. The y-coordinate of the vestry is 1.
 
@@ -1403,21 +1439,34 @@ To say makeshift resonator state:
 	otherwise:
 		say "[A makeshift astral resonator] is mounted on the tripod";
 
-the steeple is above the First Utilitarian Church of Enigma Lake. It is in ELR. It is outdoors.
+the church steeple is above the First Utilitarian Church of Enigma Lake. It is in ELR. It is outdoors.
 "From here, [we] can see the obelisk in the park clearly. Someone has set up a tripod here. [if the content of the tripod is nothing]Its mount is empty[otherwise if the content of the tripod is the telescope][A telescope] is mounted on it[otherwise][makeshift resonator state][end if].
 
 A ladder leads down to the church proper."
-The x-coordinate of the steeple is 2. The y-coordinate of the steeple is 1.
+The x-coordinate of the church steeple is 2. The y-coordinate of the church steeple is 1.
 
-The steeple ladder is scenery in the steeple. "The ladder leads down to the church proper."
+The steeple-ladder is a building facade. It is in the church steeple. It is privately-named. The printed name is "ladder". Understand "ladder" as steeple-ladder. "The ladder leads down to the church proper."
+	The steeple-ladder fronts the First Utilitarian Church of Enigma Lake.
+	It is enterable from the church steeple.
 
-Some stained-glass-window-steeples are scenery in the steeple. They are privately-named. The printed name is "stained glass windows". Understand "stained/glass/windows" as stained-glass-window-steeples. "The steeple is surrounded by the typical Utilitarian perfectly clear stained glass windows.".
+Instead of climbing up the steeple-ladder:
+	try going down.
+
+Some stained-glass-window-steeples are scenery in the church steeple. They are privately-named. The printed name is "stained glass windows". Understand "stained/glass/windows" as stained-glass-window-steeples. "The steeple is surrounded by the typical Utilitarian perfectly clear stained glass windows.".
 stained-glass-window-steeples are unsnarkable.
 
 The telescope is in the tripod. The description is "A small telescope suitable for amateur astronomy[if the content of the tripod is the telescope]. It's mounted on a tripod[end if]."
 
 Instead of turning the telescope:
 	say "The telescope is fixed in place, pointing at the obelisk in the park.";
+
+pointing it at is an action applying to one thing and one topic. Understand "point [something] at [text]" as pointing it at.
+
+Check pointing the something at something:
+	if the noun is not the telescope:
+		say "That's not something [we] can point." instead;
+	if the second noun is not the steeple-obelisk-facade:
+		say "The telescope is fixed in place, pointing at the obelisk in the park." instead; 
 
 Focussing is an action applying to one thing. Understand "focus [something]" as focussing.
 
@@ -1496,11 +1545,11 @@ Every turn when beam count is 3 and portal opened is false:
 
 Instead of searching the telescope when the content of the tripod is the telescope: [looking through]
 	if mounted-rusty-resonator and mounted-shiny-resonator:
-		say "The telescope is pointed at the obelisk in the park. It's a bit out of focus, but [we] can see it clearly enough. Two beams of light are focused on the obelisk from elsewhere, striking the crystal adornment at its apex. The crystal is glowing brightly.";
+		say "The telescope is pointed at the obelisk in the park. Two beams of light are focused on the obelisk from elsewhere, striking the crystal adornment at its apex. The crystal is glowing brightly.";
 	otherwise if mounted-rusty-resonator or mounted-shiny-resonator:
-		say "The telescope is pointed at the obelisk in the park. It's a bit out of focus, but [we] can see it clearly enough. A beam of light is focused on the obelisk from elsewhere, striking the crystal adornment at its apex. The crystal is glowing faintly.";
+		say "The telescope is pointed at the obelisk in the park. A beam of light is focused on the obelisk from elsewhere, striking the crystal adornment at its apex. The crystal is glowing faintly.";
 	otherwise:
-		say "The telescope is pointed at the obelisk in the park. It's a bit out of focus, but [we] can see it clearly enough.";
+		say "The telescope is pointed at the obelisk in the park.";
 
 Instead of searching the telescope:
 	say "[Our] hand is not steady enough to focus the telescope. [We] should put it on a tripod.";
@@ -1681,12 +1730,16 @@ Does the player mean taking the brass key when the player is in the abandoned pi
 
 An abandoned pickup truck is a fixed in place closed enterable openable transparent container in Lake at Ridge. 
 "There is an abandoned pickup truck at the side of the road[if the hood is open]. The hood is open[end if]." 
-The description is "The truck, a Ford F-1, is relatively new, with no sign as to why it was abandoned. The tailgate is [if the tailgate is open]down[otherwise]up[end if]. The hood is slightly crumpled, as if it has been in a minor accident[if the hood is open]. The hood is open[end if][if the bolt cutters are in the truck bed]. The truck bed contains a pair of bolt cutters[end if]."
-Understand "ford", "f-1", "door" as the abandoned pickup truck.
+The description is "The truck, a Ford F-1, is relatively new, with no sign as to why it was abandoned. The hood is slightly crumpled, as if it has been in a minor accident[if the hood is open]. The hood is open[end if][if the bolt cutters are in the truck bed]. The truck bed contains a pair of bolt cutters[end if]."
+Understand "ford", "f-1", "door", "car" as the abandoned pickup truck.
 The glove compartment is a scenery closed openable container in the abandoned pickup truck.
 Understand "box/glovebox" as the glove compartment.
 The description is "The glove compartment is [if the glove compartment is open]open[otherwise]closed[end if]."
-The brass key is a key. It is in the glove compartment. The description is "A simple brass key".
+The brass key is a key. It is in the glove compartment. The description is "A simple brass key."
+
+entering-truck is an action applying to nothing. Understand "in" as entering-truck when the location is the Lake at Ridge.
+Instead of entering-truck:
+	try entering the abandoned pickup truck;
 
 Before entering the abandoned pickup truck when the abandoned pickup truck is closed:
 	say "(first opening the abandoned pickup truck)[command clarification break]";
@@ -1696,13 +1749,43 @@ Before exiting when the player is in the abandoned pickup truck and the abandone
 	say "(first opening the abandoned pickup truck)[command clarification break]";
 	silently try opening the abandoned pickup truck;
 
+Rule for supplying a missing noun when entering and the location is the Lake at Ridge:
+	now the noun is the abandoned pickup truck;
+
 The truck hood is a part of the abandoned pickup truck. It is a closed openable container. The description is "The hood is slightly crumpled, as if it has been in a minor accident. It is [if the hood is open]open[otherwise]closed[end if]." Understand "bonnet" as the truck hood. 
 It is unsnarkable.
 
-Instead of doing something to something when the action requires a touchable noun and (the noun is not enclosed by the abandoned pickup truck or the noun is enclosed by the truck bed) and the noun is not the abandoned pickup truck and the player is in the abandoned pickup truck:
+[ Instead of doing something to something when the action requires a touchable noun and (the noun is not enclosed by the abandoned pickup truck or the noun is enclosed by the truck bed) and the noun is not the abandoned pickup truck and the player is in the abandoned pickup truck:
 	say "Faraji can't do that from inside the truck.";
 
 Instead of doing something to something when the action requires a touchable noun and the noun is enclosed by the abandoned pickup truck and the noun is not enclosed by the truck bed and the noun is not the abandoned pickup truck and the noun is not the truck hood and the player is not in the abandoned pickup truck:
+	say "Faraji can't do that from here."; ]
+
+Instead of doing something to the truck hood when the action requires a touchable noun and the player is in the abandoned pickup truck:
+	say "Faraji can't do that from inside the truck.";
+
+Instead of doing something to the truck bed when the action requires a touchable noun and the player is in the abandoned pickup truck:
+	say "Faraji can't do that from inside the truck.";
+
+Instead of doing something to the dirty car battery when the action requires a touchable noun and the player is in the abandoned pickup truck:
+	say "Faraji can't do that from inside the truck.";
+
+Instead of doing something other than switching on to something when the action requires a touchable noun and the noun is not enclosed by the abandoned pickup truck and the player is in the abandoned pickup truck:
+	say "Faraji can't do that from inside the truck.";
+
+Instead of switching on something when the noun is not the abandoned pickup truck and the player is in the abandoned pickup truck and the noun is not enclosed by the abandoned pickup truck:
+	say "Faraji can't do that from inside the truck.";
+
+Instead of doing something to something when the action requires a touchable noun and the noun is enclosed by the truck bed and the player is in the abandoned pickup truck:
+	say "Faraji can't do that from inside the truck.";
+
+Instead of doing something to the glove compartment when the action requires a touchable noun and the player is not in the abandoned pickup truck:
+	say "Faraji can't do that from here.";
+
+Instead of doing something to something when the action requires a touchable noun and the noun is enclosed by the abandoned pickup truck and the player is not in the abandoned pickup truck and the noun is not the abandoned pickup truck and the noun is not the truck bed and the noun is not the truck hood and the noun is not enclosed by the truck bed:
+	say "Faraji can't do that from here.";
+
+Instead of switching on the abandoned pickup truck when the player is not in the abandoned pickup truck:
 	say "Faraji can't do that from here.";
 
 The hood contains a dirty car battery. 
@@ -1738,27 +1821,16 @@ Instead of switching on the abandoned pickup truck:
 	if the number of entries of K is 1:
 		say "The key doesn't fit the ignition.";
 	otherwise if the number of entries of K > 1:
-		say "None of the keys [we] [have]fit the ignition.";
+		say "None of the keys [we] [have] fit the ignition.";
 	otherwise:
 		say "Even if this thing runs, [we] [don't] have the key.";
 		
 Understand "start [something]" as switching on.
 
-Understand "lower [tailgate]" as opening. Understand "raise [tailgate]" as closing.
-
 The truck bed is an open container. It is part of the abandoned pickup truck. The description is "It's a perfectly ordinary truck bed."
 It is unsnarkable.
 
-The tailgate is part of the abandoned pickup truck. It is an open, openable container. The description is "The tailgate is[if the truck bed is open] down[otherwise] up[end if]." Understand "tail/gate" as the tailgate. 
-It is unsnarkable.
-
-After doing something to the tailgate when the bolt cutters are in the truck bed:
-	if the tailgate is open:
-		say "Faraji lowers the tailgate. They notice a pair of bolt cutters in the truck bed.";
-	otherwise:
-		say "Faraji raises the tailgate and sees a pair of bolt cutters in the truck bed.";
-
-The pair of bolt cutters are in the truck bed. The description is "A pair of bolt cutters, with long handles and heavy jaws." They are ambiguously plural. 
+The pair of bolt cutters are in the truck bed. The description is "A pair of bolt cutters, with long handles and heavy jaws." They are ambiguously plural. Understand "cutter" as the pair of bolt cutters.
 
 Book 20 - Lake Shore north of the park
 
@@ -1783,7 +1855,7 @@ Book 21 - Workshed
 
 the workshed is a leavable room. It has egress northwest. It is in ELR. It is indoors. "It is a small, weathered building, with a single door and no windows, and a creaky wooden floor. [if the light bulb is in the hanging socket]The interior is dimly lit by a single light bulb hanging from the ceiling. [otherwise]The interior is almost dark. An empty light socket hangs from the ceiling. [end if][equipment cabinet state] cabinet is in the corner. [rusty metal door state] rusty metal door leads out of the shed.".
 
-The light bulb is a thing. The description is "A standard 60W light bulb."
+The light bulb is a thing. The description is "A standard 60W light bulb." 
 The light bulb is unsnarkable.
 
 Understand "screw [the light bulb] in/into [the hanging socket]", "mount [the light bulb] on/onto/in/into [the hanging socket]" as inserting it into.
@@ -1841,7 +1913,7 @@ The rusty astral resonator is in the equipment cabinet. It is privately-named. T
 The printed name is "[if Astral Secrets is read]rusty astral resonator[otherwise]strange, rusty, metal object[end if]".
 Understand "rusty/astral/resonator" as the rusty astral resonator when Astral Secrets is read.
 Understand "strange/rusty/metal/metallic/cylindrical/cylinder/object" as the rusty astral resonator.
-The threaded base is part of the rusty astral resonator. The description is "The base is threaded, like a light bulb."
+The threaded base is part of the rusty astral resonator. The description is "The base is threaded, like a light bulb." Understand "thread" as the threaded base.
 The rusty lens is part of the rusty astral resonator. The description is "The device is capped with a lens on one end."
 
 Description notes for the dowsing rod:
@@ -1850,7 +1922,13 @@ Description notes for the dowsing rod:
 
 Book 23 - Portal room
 
-The obelisk-ladder is a secret door. It is below Enigma Park and above the circular chamber. It is privately-named. It is scenery. The printed name is "ladder". Understand "hidden/ladder" as the obelisk-ladder. "[if location is Enigma Park]A ladder leads down into the darkness below the obelisk[otherwise]A ladder leads up into the night[end if]."
+The obelisk-ladder is a secret door. It is below Enigma Park and above the circular chamber. It is privately-named. It is scenery. The printed name is "ladder". Understand "hidden/ladder" as the obelisk-ladder. "[if location is Enigma Park]A ladder leads down into the darkness below the obelisk[otherwise]A ladder leads up into the night[end if]." It is open and not openable and not lockable.
+
+Instead of climbing up the obelisk-ladder when the location is Enigma Park:
+	try going down;
+
+Instead of climbing up the obelisk-ladder when the location is the circular chamber:
+	try going up;
 
 The circular chamber is in ELR. It is indoors. The circular chamber is dark. It is always-indefinite.
 "The walls are rough-hewn stone and the ceiling is low. A ladder leads up to the obelisk above."
@@ -1891,7 +1969,7 @@ Presumably-Daniels speaks up.  'Seriously guys, you're always so over-dramatic. 
 
 To say boss battle banner:
 	say "[fixed letter spacing]";
-	center "
+	say "
 /\      __    ____  ____  __ __    __  ______  __  /\[line break]
 ||     / /   / __ \/ __ \/ //_/   / / / / __ \/ /  ||[line break]
 ||    / /   / / / / / / / ,<     / / / / /_/ / /   ||[line break]
@@ -1957,7 +2035,6 @@ Instead of requesting Daniels for the rutabaga when the lizard people are in the
 		say "Daniels says, 'I don't see any rutabaga here.'";
 	otherwise if the rutabaga is in the location:
 		say "Daniels says, 'I see a rutabaga over there, but it's out of reach.'";
-
 
 Instead of doing something to the green woven basket when the action requires a touchable noun and the lizard people are in the old root cellar:
 	say "The basket is too far away for that.";
@@ -2067,9 +2144,11 @@ After reading a command:
 
 To banish the lizard people for good:
 	now the lizard people are nowhere;
+	queue Daniels with for-a-screwdriver-daniels;
 	queue Daniels with about-the-laundromat;
 	queue Daniels with how he got here;
 	queue Daniels with where-we-are;
+	queue Daniels with about-his-watch;
 	now the current interlocutor is Daniels.
 
 Before doing something when the location is the old root cellar and the group of lizard people is in the old root cellar:
@@ -2368,8 +2447,27 @@ Description notes for a root-vegetable (called RV):
 
 Throwing it to is an action applying to one carried thing and one visible thing. Understand "throw [something] to [something]" as throwing it to.
 
+Check throwing it to:
+	if the second noun is not a person:
+		say "Faraji could throw it, sure, but to what end?" instead;
+
+Carry out throwing a root-vegetable to Daniels:
+	try throwing the noun at Daniels;
+
+Instead of throwing something to someone:
+	try throwing the noun at the second noun;
+
 [ Persuasion rule for asking Daniels to try doing something:
 	persuasion succeeds; ]
+
+Persuasion rule for asking Daniels to try implicit-lizard-attacking the rutabaga:
+	now Faraji distracted this turn is true;
+	now notable Daniels event this turn is true;
+	persuasion succeeds;
+
+Instead of Daniels implicit-lizard-attacking the rutabaga:
+	try Daniels throwing the noun to Faraji;
+	rule succeeds;
 
 Persuasion rule for asking Daniels to try searching something when the group of lizard people is in the location:
 	now Faraji distracted this turn is true;
@@ -2385,6 +2483,19 @@ Persuasion rule for asking Daniels to try throwing something at something when t
 	now Faraji distracted this turn is true;
 	now notable Daniels event this turn is true;
 	persuasion succeeds;
+
+Throwing is an action applying to one thing. 
+
+Persuasion rule for asking Daniels to try throwing something when the group of lizard people is in the location:
+	now Faraji distracted this turn is true;
+	now notable Daniels event this turn is true;
+	persuasion succeeds;
+
+Instead of Daniels throwing something when the group of lizard people is in the location:
+	say "Daniels throws [the noun] at the lizard people. His hurt arm makes his throw weak, and [the noun] merely rolls past the lizard people. It is now within Faraji's reach.";
+	now the noun is in the old root cellar;
+	now the noun is within-reach;
+	rule succeeds;
 
 Instead of Daniels searching the green woven basket when the group of lizard people is in the location:
 	try Daniels opening the green woven basket;
@@ -2537,6 +2648,26 @@ Last every turn:
 
 Chapter 2 - Daniels
 
+for-a-screwdriver-daniels is a questioning quip.
+	It is privately-named. The printed name is "for a screwdriver". Understand "for/a/screwdriver" as for-a-screwdriver-daniels.
+	It mentions the screwdriver.
+	The comment is "Faraji asks, 'Would you happen to have a screwdriver I could borrow?'".
+	The reply is "'Let me see, now.' Daniels theatrically searches his ragged suit. 'Nope. No screwdriver.'".
+	It quip-supplies Daniels.
+
+about-his-watch is a questioning quip.
+	It is privately-named. The printed name is "about his watch". Understand "about/his/watch" as about-his-watch.
+	The comment is "Faraji asks, 'That's a nice watch you have there. You didn't happen to get it from a pawn shop owner, did you?'".
+	The reply is "'Oh, this old thing?' Daniels says. 'You caught me. I borrowed it and never gave it back. Can you return it for me?' He takes off the watch and hands it to you.".
+	It quip-supplies Daniels.
+
+After discussing about-his-watch:
+	now the player carries the wristwatch;
+
+Every turn when the location is the old root cellar and the player has carried the wristwatch and the player does not carry the wristwatch:
+	say "Faraji looks around as if missing something. Spying the watch, they pick it up again.";
+	now the player carries the wristwatch;
+
 about-the-laundromat is a questioning quip.
 	It is privately-named. The printed name is "about the laundromat". Understand "about/the/laundromat" as about-the-laundromat.
 	The comment is "Faraji asks, 'You own the laundromat? Dave's looking for his screwdriver.'".
@@ -2587,9 +2718,12 @@ Instead of pushing the recall button when the player is in the old root cellar a
 	now the recall button is rejiggered.
 
 Instead of pushing the recall button when the player is in the old root cellar and the group of lizard people are not in the location:
-	say "Faraji is just about to push the recall button when Daniels exclaims, 'Wait! I forgot to give you this.' He pushes a small metal object into Faraji's hand. 
-	
-	Faraji doesn't have time to look at object before their finger slips and pushes the button. The room spins and fades away, and Faraji finds themself back in Swamp Park.";
+	if the player does not carry the wristwatch:
+		say "Faraji is just about to push the recall button when Daniels exclaims, 'Wait! I forgot to give you this.' He pushes a small metal object into Faraji's hand. 
+		
+		Faraji doesn't have time to look at object before their finger slips and pushes the button. The room spins and fades away, and Faraji finds themself back in Swamp Park.";
+	otherwise:
+		say "Faraji pushes the recall button. The room spins and fades away, and Faraji finds themself back in Swamp Park.";
 	now the player carries the wristwatch;
 	now the current interlocutor is nothing;
 	move the player to the inside-the-dumpster;
@@ -2662,6 +2796,8 @@ Instead of climbing up the narrow staircase:
 
 The dowsing rod is in Horton Family House Kitchen. The description is "A simple wooden rod, about a foot long, with a forked end." Understand "simple/wooden/stick" as the dowsing rod.
 
+The last report taking rule when the noun is the dowsing rod:
+	say "[bracket]Faraji doesn't need to do anything with the dowsing rod for it to work.[close bracket][paragraph break]";
 
 Divining-action is an action applying to nothing. Understand "divine", "dowse" as divining-action.
 
@@ -2674,6 +2810,8 @@ Check divining-action:
 Report divining-action:
 	if the player is in the large grave and the wooden frame is nowhere:
 		say "Faraji holds the dowsing rod and walks around the grave. The rod starts to vibrate and pulling towards a spot in the dirt at the center of the grave. There must be something buried there!";
+	otherwise:
+		say "Faraji holds the dowsing rod and walks around a little bit. The rod doesn't seem to react to anything.";
 
 Wooden beams is a backdrop. Understand "white/plaster" as wooden beams.
 
@@ -3409,7 +3547,7 @@ Rule for writing a paragraph about the metal ladder:
 		-- otherwise:
 			say "A ladder lies on the [if location is inside]floor[otherwise]ground[end if].";
 
-Instead of climbing up the metal ladder when the metal ladder is enclosed by the location and the player does not enclose the ladder:
+Instead of climbing up the metal ladder when the metal ladder is enclosed by the location and the player does not enclose the metal ladder:
 	if the metal ladder is enclosed by the player:
 		say "Try as they might, Faraji is unable to climb the ladder while carrying it.";
 		stop;
@@ -3583,8 +3721,9 @@ Instead of closing the garage door when the garage door is open:
 
 Book 29 - Reading Room
 
-The Reading Room is west of Main at Solvay. It is a leavable room. It is in ELR. It is indoors. The egress is east. The description is "The reading room is a small, cozy space, with a number of comfortable chairs and a few tables. A sales counter is at the back of the room. Bookshelves lead back into the depths of the store. A narrow staircase leads down and the front door is east."
+The Reading Room is a room. It is a leavable room. It is in ELR. It is indoors. The egress is east. The description is "The reading room is a small, cozy space, with a number of comfortable chairs and a few tables. A sales counter is at the back of the room. Bookshelves lead back into the depths of the store. A narrow staircase leads down and the front door is east."
 
+The bookstore door is a scenery door. It is east of the Reading Room and west of Main at Solvay. "An ordinary door." It is closed and openable.
 
 The x-coordinate of the Reading Room is -2. The y-coordinate of the Reading Room is -1.
 
@@ -3603,7 +3742,7 @@ The sales counter is scenery in the Reading Room. "An ordinary sales counter.".
 It is exposed.
 
 The bookshelves are scenery in the Reading Room. 
-"The bookshelves are filled with a variety of books, from the latest bestsellers to obscure, out-of-print volumes. You choose one at random:[paragraph break][book report]".
+"The bookshelves are filled with a variety of books, from the latest bestsellers to obscure, out-of-print volumes. Faraji chooses one at random:[paragraph break][book report]".
 
 Before examining the bookshelves: 
 	if the book-index is 0:
@@ -3702,6 +3841,16 @@ It is unsnarkable.
 
 To break is a verb.
 
+Instead of attacking the walls when the location is the Bookstore Basement:
+	say "The walls are made of old, crumbling brick. Faraji could probably break through them with the right tool." instead.
+
+hammering is an action applying to one thing. Understand "hammer [something]" as hammering.
+
+Check hammering something:
+	if the player does not enclose the sledgehammer:
+		say "Faraji needs some kind of hammer." instead;
+	try attacking the noun with the sledgehammer.
+
 Attacking it with is an action applying to one thing and one carried thing. Understand "attack [something] with [something]", "break [something] with [something]", "smash [something] with [something]", "hit [something] with [something]", "strike [something] with [something]", "pound [something] with [something]", "pummel [something] with [something]", "bash [something] with [something]", "crush [something] with [something]", "destroy [something] with [something]", "demolish [something] with [something]", "wreck [something] with [something]", "shatter [something] with [something]", "splinter [something] with [something]", "crack [something] with [something]", "thump [something] with [something]", "wallop [something] with [something]", "tap [something] with [something]" as attacking it with.
 Understand "swing [something] at [something]" as attacking it with (with nouns reversed).
 
@@ -3759,9 +3908,11 @@ After opening the gymnasium basement door:
 
 Book 32 - Fresnel's Music
 
-Fresnel's Music is southwest of Main at Solvay. It is a leavable room. The egress is northeast. Fresnel's Music is in ELR. It is indoors. "The music store, like most of the town, is empty of all but a few items of little value. The exit is to the northeast."
+Fresnel's Music is a room. It is a leavable room. The egress is northeast. Fresnel's Music is in ELR. It is indoors. "The music store, like most of the town, is empty of all but a few items of little value. The exit is to the northeast."
 
 The snarky remark of Fresnel's Music is "It's like John Cage's 4[']33' in store form."
+
+The music store door is a scenery door. It is northeast of Fresnel's Music and southwest of Main at Solvay. "An ordinary door." It is closed and openable.
 
 The x-coordinate of Fresnel's Music is -2. The y-coordinate of Fresnel's Music is -2.
 
@@ -3770,7 +3921,7 @@ A tuning fork is in Fresnel's Music. "A tuning fork lies on the counter." The de
 The music store counter is a scenery supporter in Fresnel's Music. "A typical store counter, bare of most items." 
 It is exposed.
 
-Fresnel items are scenery in Fresnel's Music. "A few items of little value are scattered around the store." Understand "few/item" as Fresnel items. They are plural-named.
+Fresnel items are scenery in Fresnel's Music. They are privately-named. "A few items of little value are scattered around the store." Understand "few/item" as Fresnel items. They are plural-named. The printed name is "a few items".
 
 striking is an action applying to one thing. Understand "strike [the tuning fork]", "sound [the tuning fork]", "ring [the tuning fork]", "tap [the tuning fork]", "hit [the tuning fork]" as striking.
 Carry out striking the tuning fork:
@@ -3829,7 +3980,7 @@ Before opening the Skillet door when the Skillet door is locked:
 
 The lunch counter is a scenery supporter in Henry's Hot Skillet. "A typical mid-twentieth-century lunch counter."
 
-The wires are scenery in Henry's Hot Skillet. "Two insulated wires with bare ends, they probably once attached to some electrical device sitting on the counter[if the clean battery is hooked up]. Right now, the wires are attached to a battery resting on the counter[end if]."
+The wires are scenery in Henry's Hot Skillet. "Two insulated wires with bare ends, they probably once attached to some electrical device sitting on the counter[if the clean battery is hooked up]. Right now, the wires are attached to a battery resting on the counter[end if]." Understand "wire/wiring" as the wires.
 
 They are plural-named.
 
@@ -3901,7 +4052,7 @@ The insulated wires are part of the TV aerial antenna. The description is "A pai
 
 The hole-in-the-roof is scenery in Henry's Roof. It is privately-named. The printed name is "hole in the roof". Understand "hole in/-- the/-- roof/--" as the hole-in-the-roof. "A hole in the roof, through which a pair of insulated wires run. It's not big enough to do anything with."
 
-The threaded socket is part of the TV aerial antenna. It is a single item container. The description is "A threaded socket, like that of a light bulb, is mounted on one of the rods of the antenna." Understand "light/bulb/lightbulb" as the threaded socket.
+The threaded socket is part of the TV aerial antenna. It is a single item container. The description is "A threaded socket, like that of a light bulb, is mounted on one of the rods of the antenna." 
 It is unsnarkable.
 
 Instead of inserting the rusty astral resonator into the aerial:
@@ -3971,12 +4122,24 @@ The town-from-Henry's-Roof is privately-named scenery in Henry's Roof. The print
 Book 35 - Rolle's Department Store
 
 Rolle's Department Store is south of Main Street 200 Block. It is in ELR. It is indoors. It is a leavable room. The egress is north. 
-The description is "Once, town department stores like this were a constant of American life. Sadly, this one is almost empty of everything. The exit is to the north."
+The description is "Once, town department stores like this were a constant of American life. Sadly, this one is almost empty of everything. A lone sign hangs on the wall. The exit is to the north."
 
 The x-coordinate of Rolle's Department Store is 0. The y-coordinate of Rolle's Department Store is -2.
 
 The table lamp is a device in Rolle's Department Store. "A scuffed-up table lamp sits discarded in a corner." The description is "A table lamp, with a red enameled base and missing a shade. It's meant to plug into an outlet. It looks like it's seen better days. On the base is the branding 'Spectre'[if the table lamp is lit]. It is lit[otherwise]. It is dark[end if]." 
 It is pluggable. 
+
+Does the player mean switching on the table lamp:
+	it is very likely.
+
+Does the player mean switching off the table lamp:
+	it is very likely.
+
+To say switch state:
+	if the table lamp is switched on:
+		say " The switch is in the 'on' position";
+	otherwise:
+		say " The switch is in the 'off' position";
 
 Instead of examining the table lamp:
 	say "An ordinary table lamp, with a red enameled base";
@@ -3984,6 +4147,7 @@ Instead of examining the table lamp:
 		say ", no bulb, and no shade";
 	otherwise:
 		say ", a light bulb in the socket, but no shade";
+	say ". [switch state]";
 	say ". It looks like it's seen better days. On the base is the branding 'Spectre'";
 	if the table lamp is plugged into something (called the socket):
 		say ". It is plugged into [the socket]";
@@ -4004,10 +4168,26 @@ Understand "screw [the rusty astral resonator] in/into [the table lamp]", "mount
 
 The light socket is a single item container. It is part of the table lamp. The description is "A light socket for a light bulb." 
 
-Instead of inserting something into the table lamp:
-	try inserting the noun into the light socket instead;
+To say plug state: 
+	if the table lamp is plugged into something (called the socket):
+		say ". It is plugged into [the socket]";
+	otherwise:
+		say ". It is not plugged into anything";
 
-The red enameled base is part of the table lamp. The description is "A red enameled base, scuffed and tarnished."
+The lamp cord is part of the table lamp. The description is "A power cord for the table lamp[plug state]."
+
+The lamp switch is part of the table lamp. The description is "A switch on the base of the table lamp[switch state]."
+
+Instead of switching on the lamp switch:
+	try switching on the table lamp;
+
+Instead of inserting something into the table lamp:
+	if the noun is the socket-end or the noun is the extension cord:
+		try plugging the table lamp into the extension cord;
+	otherwise:
+		try inserting the noun into the light socket instead;
+
+The red enameled base is part of the table lamp. The description is "A red enameled base, scuffed and tarnished. It reads 'Spectre'."
 
 Instead of inserting the rusty astral resonator into the light socket:
 	say "The [rusty astral resonator] doesn't fit in the table lamp."
@@ -4124,7 +4304,7 @@ The big letters are scenery in Rolle's Department Store. "Big letters on the wal
 
 Book 36 - Public Gymnasium
 
-The gym door is a closed locked openable lockable scenery door. It is east of Lake Street by the gym and west of the public gymnasium. It has matching key the green key. The description is "A strong, institutional, double door, painted a dark green. A sign on the door reads 'Public Gymnasium'."
+The gym door is a closed locked openable lockable scenery door. It is east of Lake Street by the gym and west of the public gymnasium. It has matching key the green key. The description is "A strong institutional double door, painted a dark green. A sign on the door reads 'Public Gymnasium'."
 
 The x-coordinate of the public gymnasium is 2. The y-coordinate of the public gymnasium is 0.
 
@@ -4171,7 +4351,7 @@ Instead of looking something up in the membership book:
 
 The basketball court is scenery in the public gymnasium. "It's a regulation basketball court, with a shiny hardwood floor and a pair of hoops at either end. It's silent and empty." Understand "court" as the basketball court.
 
-The basketball hoops are scenery in the public gymnasium. "A pair of basketball hoops are mounted at either end of the court." Understand "hoop/hoops" as the basketball hoops.
+The basketball hoops are scenery in the public gymnasium. "A pair of basketball hoops are mounted at either end of the court." Understand "hoop/hoops/basket/baskets/net/nets" as the basketball hoops.
 
 The basketball-ball is in the public gymnasium. It is privately-named. The printed name is "basketball". Understand "basketball/ball" as the basketball-ball.
  "A basketball lies on the floor." The description is "A regulation basketball, well-worn but fully inflated."
@@ -4180,6 +4360,15 @@ The basketball score is a number that varies. The basketball score is 0.
 
 Shooting is an action applying to one thing. Understand "shoot [something preferably held]" as shooting. Understand "shoot hoops" as shooting. Understand "shoot baskets/basket", "play basketball", "play hoops", "play ball", "shoot" as shooting.
 The Shooting action has a number called the points.
+
+Shooting it at is an action applying to one carried thing and one thing. Understand "shoot [something preferably held] at [something]" as shooting it at.
+
+Check shooting something at something:
+	if the noun is not the basketball-ball:
+		say "Shooting is for basketballs only." instead;
+	if the second noun is not the basketball hoops:
+		say "You can't shoot the basketball at that." instead;
+	try shooting the noun;
 
 Dribbling is an action applying to one thing. Understand "dribble [basketball-ball]" as dribbling. Understand "dribble" as dribbling. Understand the command "bounce" as "dribble".
 
@@ -4886,5 +5075,10 @@ eastering is an action applying to nothing. Understand "cheat easter" as easteri
 Carry out eastering:
 	now the power switch is switched on;
 	now the player is in the broadcast booth;
+
+obelisking is an action out of world. Understand "cheat obelisk" as obelisking.
+
+Carry out obelisking:
+	now the obelisk-ladder is revealed;
 
 Enigma Lake ends here.

@@ -64,4 +64,11 @@ Report unplugging something (this is the state change reporting upon unplugging 
 
 The state change reporting upon unplugging rule is listed last in the report unplugging rules.
 
+Report inserting the light bulb into the light socket (this is the state change reporting upon inserting the light bulb into the light socket rule):
+	Repeat with item running through changed things:
+		Carry out the state change reporting activity with item;
+	truncate changed things to 0 entries;
+
+The state change reporting upon inserting the light bulb into the light socket rule is listed last in the report inserting it into rules.
+
 State Update ends here.

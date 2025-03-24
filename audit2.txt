@@ -1,0 +1,117 @@
+Start of a transcript of
+
+The Bureau of Strange Happenings
+An Interactive Phenomenon by Phil Riley
+Release 1 / Serial number 250323 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
+Identification number: //F61EFB05-03A9-4894-B076-9E767F9163A8//
+Interpreter version 1.3.7 / VM 3.1.3 / Library serial number 080126
+Standard Rules version 3/120430 by Graham Nelson
+Epistemology version 9 by Eric Eve
+Conversation Framework version 12 by Eric Eve
+Conversation Responses version 7 by Eric Eve
+Conversational Defaults version 3 by Eric Eve
+Formatting Capture version 2/221014 by Daniel Stelzer (based on Text Capture by Eric Eve)
+Undo Output Control version 5/170902 by Erik Temple
+Gender Options version 3/210331 by Nathanael Nerode
+Exit Lister version 11 by Eric Eve
+Secret Doors by Gavin Lambert
+Far Away version 5/160517 by Jon Ingold
+
+>l
+Agent Faraji is in a circular chamber. The walls are rough-hewn stone and the ceiling is low. A ladder leads up to the obelisk above.
+
+A shimmering portal hovers in the center of the chamber, casting a faint light over the room.
+
+>enter
+You must supply a noun.
+
+>* oops
+Noted.
+
+>in
+What does Faraji want to enter?
+
+>* oops
+Noted.
+
+>enter portal
+Faraji steps through the portal. The circular chamber vanishes, and...
+
+The chamber is dark and damp, smelling of earth and old vegetable matter. The walls, floor, and ceiling are packed earth. Around the walls are some woven baskets for storing vegetables: a red one and a blue one nearby, and a green one near Daniels. Light filters in from a passage to the north.
+
+Faraji finds themself in the midst of a hostile confrontation. On one side are the same group of lizard people they banished from Enigma Park; on the other, a lone bedraggled man, clutching a root vegetable and wearing a very nice watch. Despite their superior numbers, the lizard people seem to be wary of their opponent. Presumably, the bedraggled man is the Daniels that Faraji was sent to find.
+
+The lizard people turn to Faraji. "You!" one of them hisses. "You thought you could banish us, but we have returned to snatch your victory from the jaws of our defeat... or something or other. And now we are on the threshold of our greatest triumph! Soon the Dragon will be ours!"
+
+Presumably-Daniels speaks up.  "Seriously guys, you're always so over-dramatic. Besides, I've got you right where I want you. Just watch." He shakes his potato at the lizard people. As he does, you notice his right arm looks injured. 
+ /\      __    ____  ____  __ __    __  ______  __  /\
+ ||     / /   / __ \/ __ \/ //_/   / / / / __ \/ /  ||
+ ||    / /   / / / / / / / ,<      / / / / /_/ / /   ||
+ ||   / /___/ /_/ / /_/ / /| |   / /_/ / ____/_/    ||
+ ||  /_____/\____/\____/_/ |_|   \____/_/   (_)     ||
+ /\                                                 /\
+
+
+Daniels throws the potato at the lizard people. His hurt arm makes his throw weak, and the potato merely rolls past the lizard people. It is now within Faraji's reach.
+
+>take potato
+Taken.
+
+>ask daniels to open the green basket
+Daniels opens the green woven basket. "Hey, there's a rutabaga in here," he shouts.
+
+>ask him to throw rutabaga
+(Daniels first taking the rutabaga)
+Daniels throws the rutabaga at Faraji. It's a weak throw, and the rutabaga merely rolls past the lizard people. It is now within Faraji's reach.
+
+The stout lizard person says, "Give up, Faraji!"
+
+One of the lizard people looks at the nearby rutabaga and distinctly moves away from it.
+
+>take rutabaga
+Taken.
+
+>throw potato at lizard
+Faraji launches the potato at the lizard people, but they see it coming. They easily dodge the flying vegetable.
+
+One of the lizard people snatches the potato from the ground.
+
+>z
+One of the lizard people makes a grab for the red woven basket, and comes up with a potato.
+
+One of the lizard people launches the potato at Faraji. It hits them right on the shoulder and bounces away. It remains within Faraji's reach.
+
+Faraji takes a hit! Health: 2 hearts remaining.
+
+>take potato
+Taken.
+
+One of the lizard people slings the potato at Faraji. It hits them right on the leg and bounces away. It remains within Faraji's reach.
+
+Faraji takes a hit! Health: 1 heart remaining.
+
+One of the lizard people takes the potato.
+
+>dodge
+One of the lizard people flings the potato at Faraji. They sidestep, and it bounces away. It remains within Faraji's reach.
+
+Daniels yells rudely at the lizard people. "Ever notice that all lizard people are really stupid?"
+
+The lizard people hiss in anger and turn to face Daniels. They rush him, but he dodges nimbly.
+
+>throw rutabaga
+Faraji hurls the rutabaga at the lizard people, who in their anger at Daniels are oblivious to Faraji's action. The rutabaga strikes the leader in the head. It hisses in pain and surprise, then shrieks in terror. "No! My allergies!" The chamber fills with a white vapor. When it clears, the lizard people are nowhere to be seen.
+
+The lizard people have been KO'd!
+
+                <<< FARAJI IS VICTORIOUS! >>>
+
+Daniels approaches Faraji. "Nice throw," he says. "Glad you came when you did. As you can see, my throwing arm is worse than useless right now.
+
+"I'm Daniels. Agent of the hyperspace field office of the Bureau of Strange Happenings and owner of the A+ Laundromat in Swamp Park, Maryland. Did Doris send you?"
+
+Faraji can tell Daniels Doris sent me, ask about the laundromat, ask how he got here, or ask where we are.
+
+>script off
+
+End of transcript.

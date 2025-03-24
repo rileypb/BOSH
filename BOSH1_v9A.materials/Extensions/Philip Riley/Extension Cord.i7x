@@ -259,7 +259,7 @@ To maybe separate the extension cord:
 		separate the extension cord;
 
 To condense the extension cord:
-	dbg "condensing: plug-end is at [the holder of the plug-end], socket-end is at [the holder of the socket-end][line break]";
+	[ dbg "condensing: plug-end is at [the holder of the plug-end], socket-end is at [the holder of the socket-end][line break]"; ]
 	if the holder of the plug-end is the holder of the socket-end:
 		now the extension cord is in the holder of the plug-end;
 		now the plug-end is nowhere;
@@ -749,7 +749,7 @@ Carry out testing cord:
 
 
 test cord with "gonear pulpit/purloin orange extension cord/purloin wooden object/drop cord/drop object/plug it into cord".
-test outlet with "gonear pulpit/purloin orange extension cord/drop cord/plug it into outlet".
+test outlet with "gonear pulpit/purloin orange extension cord/purloin table lamp/purloin the light bulb/e/move tapestry/flip switch/w/plug cord into outlet/plug lamp into cord/turn on lamp/put bulb in lamp".
 
 test 1 with "testcord/take cord/plug it into red socket/plug machine into it";
 

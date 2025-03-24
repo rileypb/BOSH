@@ -1,0 +1,1 @@
+export PATH=/Applications/Inform_old.app/Contents/MacOS:$PATH

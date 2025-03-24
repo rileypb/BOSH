@@ -938,6 +938,8 @@ portal label is part of the portal to the past. The description is "The label re
 
 Understand "shimmering/curtain/field/of/light" as the portal to the past when the portal to the past is activated. 
 
+Rule for supplying a missing noun while entering when the location is Portal Room 1:
+	now the noun is the portal to the past;
 
 Instead of going inside when the location is Portal Room 1:
 	try entering the portal to the past;
@@ -986,7 +988,7 @@ When play begins:
 
 The spacetime control is a part of the portal to the past. The description is "A control panel is attached to the portal. It has an LED display and a keypad. [if the portal to the past is activated]The display reads '[current spacetime setting]'[otherwise]The display is dark[end if]. A large red button underneath says 'RESET'." Understand "panel" as the spacetime control.
 
-The keypad is a part of the spacetime control. The description is "A standard numeric keypad. The font on the keys is really cool and science fictiony."
+The keypad is a part of the spacetime control. The description is "A standard numeric keypad. The font on the keys is really cool and science fictiony." Understand "keyboard/pad/keys" as the keypad.
 
 The display is a part of the spacetime control. The description is "[if the portal to the past is activated]The display reads '[current spacetime setting]'[otherwise]The display is dark[end if]."
 Understand "LED/LEDs" as the display.
@@ -998,7 +1000,6 @@ Carry out pushing the reset button:
 		now the current spacetime setting is the town hall spacetime setting;
 	otherwise:
 		now the current spacetime setting is 0;
-
 
 Report pushing the reset button:
 	say "The display now reads '[current spaceTime Setting]'";
@@ -1032,7 +1033,7 @@ Carry out typing into the keypad:
 	let the input be the number understood;
 	now the current spacetime setting is the input;
 
-Report typing a number into the spacetime control:
+Report typing into the spacetime control:
 	say "The display now reads '[current spaceTime Setting]'";
 	if the portal to the past was active and the portal to the past is not active:
 		say ". The shimmering curtain in the portal fades and disappears.";
@@ -1050,6 +1051,18 @@ Report typing a number into the keypad:
 	otherwise:
 		say ". Nothing obvious happens.";
 
+Instead of setting the spacetime control to a topic:
+	if the topic understood matches "[number]":
+		try typing the number understood into the spacetime control;
+	otherwise:
+		say "The keypad only accepts numbers.";
+
+Instead of setting the keypad to a topic:
+	if the topic understood matches "[number]":
+		try typing the number understood into the spacetime control;
+	otherwise:
+		say "The keypad only accepts numbers.";
+
 Section - Portal 2
 
 Portal Room 2 is a leavable room. It is back of the field office hallway. It is in field office area. "The room is full of humming, glowing machinery, all of it attached to a large, arch-shaped portal in the middle of the room. A sign on the portal says 'Auxiliary Portal'. The exit is forth." It has egress forth.
@@ -1063,6 +1076,8 @@ Understand "shimmering/curtain/field/of/light" as the auxiliary portal when the 
 Instead of going inside when the location is Portal Room 2:
 	try entering the auxiliary portal;
 
+Rule for supplying a missing noun while entering when the location is Portal Room 2:
+	now the noun is the auxiliary portal;
 
 To say auxiliary portal interior description:
 	if the auxiliary portal is activated:
