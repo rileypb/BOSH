@@ -848,7 +848,8 @@ To say maybe insert computer muttering:
 	if biff's computer is not seen:
 		say "[paragraph break][reset LPR][We] [mutter], 'Where's my computer?'[run paragraph on]";
 
-Biff's desk is a desk in Biff's Office. Biff's desk is scenery. It is privately-named. The printed name is "[our] desk".  Understand "desk" as biff's desk. 
+Biff's desk is a desk in Biff's Office. Biff's desk is scenery. It is privately-named. The printed name is "[our] desk".  Understand "desk" as biff's desk.
+Biff's desk can be lockable. Biff's desk can be locked. Biff's desk is lockable and locked. 
 
 biff's desk's drawer is locked. Understand "desk drawer" as biff's desk's drawer.
 
@@ -903,6 +904,12 @@ Taking apart the desk is an action applying to one thing. Understand "take apart
 
 Instead of opening biff's desk when the player encloses the hex wrench and the blue flip phone is not handled:
 	try taking apart the desk biff's desk;
+
+Instead of unlocking biff's desk with something:
+	try unlocking biff's desk's drawer with the second noun;
+
+Instead of unlocking keylessly biff's desk:
+	try unlocking keylessly biff's desk's drawer;
 
 Instead of opening biff's desk's drawer when the player encloses the hex wrench and the blue flip phone is not handled:
 	try taking apart the desk biff's desk;
@@ -1001,7 +1008,11 @@ To init office:
  
 Biff's mobile number is a phone number. Biff's mobile number reaches the green smartphone. The player knows Biff's mobile number.
 
-Before opening Biff's desk's drawer when biff's desk's drawer is locked and the blue flip phone is in biff's desk's drawer and the blue flip phone is ringing for the first time:
+Opening Biff's desk's drawer is accessing.
+Unlocking Biff's desk's drawer with something is accessing.
+Unlocking keylessly Biff's desk's drawer is accessing.
+
+Before accessing when biff's desk's drawer is locked and the blue flip phone is in biff's desk's drawer and the blue flip phone is ringing for the first time:
 	now the player knows desk-locked;
 	[ activate the Table of Desk Opening Hints; ]
 	say "[We] [try] to open the desk to answer the phone, but it seems to be locked. [We] [sigh]. 'Margaret must have the key.'[paragraph break]"; 
@@ -1341,6 +1352,9 @@ The can't reach inside closed containers rule response (A) is "[if the noun is t
 Instead of unlocking the heating vent with the red screwdriver when the hex wrench is in the heating vent:
 	now the player carries the hex wrench;
 	say "[We] [unscrew] the four screws and [remove] the vent cover. [We] [take] the hex wrench from inside and [put] the cover back on.";
+
+Instead of unscrewing the heating vent with the red screwdriver when the hex wrench is in the heating vent:
+	try unlocking the heating vent with the red screwdriver;
 
 Instead of unlocking the heating vent with the red screwdriver when the hex wrench is not in the heating vent:
 	say "[We] [have] already gotten the hex wrench out of the vent.";

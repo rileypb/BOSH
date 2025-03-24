@@ -4561,7 +4561,7 @@ Understand the commands "move", "shift", "clear" and "press" as "push".
 Understand "turn [something]" as turning.
 Understand "turn [something] on" or "turn on [something]" as switching on.
 Understand "turn [something] off" or "turn off [something]" as switching off.
-Understand the commands "rotate", "twist", "unscrew" and "screw" as "turn".
+Understand the commands "rotate", "twist" as "turn".
 
 Understand "switch [something switched on]" as switching off.
 Understand "switch [something]" or "switch on [something]" or "switch [something] on" as

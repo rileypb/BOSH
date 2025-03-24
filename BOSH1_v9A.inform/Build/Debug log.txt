@@ -14,14 +14,14 @@ Reading language definition from </Applications/Inform_old.app/Contents/Resource
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 39914 words long.
+I've now read your source text, which is 40004 words long.
 
 
 -----------------------------------------------------
 Phase II ... Semantic analysis Ia
 -----------------------------------------------------
 
-I've also read Standard Rules by Graham Nelson, which is 41512 words long.
+I've also read Standard Rules by Graham Nelson, which is 41509 words long.
 I've also read English Language by Graham Nelson, which is 2297 words long.
 I've also read Epistemology by Eric Eve, which is 1505 words long.
 I've also read Conversation Framework by Eric Eve, which is 5321 words long.
@@ -58,9 +58,9 @@ I've also read Scenery Supporters by Philip Riley, which is 179 words long.
 I've also read Simple Conversation by Philip Riley, which is 2410 words long.
 I've also read Hyperspace by Philip Riley, which is 17811 words long.
 I've also read BOSH Facts by Philip Riley, which is 193 words long.
-I've also read Swamp Park by Philip Riley, which is 9014 words long.
+I've also read Swamp Park by Philip Riley, which is 8989 words long.
 I've also read Margaret by Philip Riley, which is 2679 words long.
-I've also read Enigma Lake by Philip Riley, which is 45174 words long.
+I've also read Enigma Lake by Philip Riley, which is 45203 words long.
 I've also read I Can Dig It by Philip Riley, which is 77 words long.
 I've also read BOSH Help by Philip Riley, which is 6960 words long.
 I've also read Overlook by Philip Riley, which is 763 words long.
@@ -80,7 +80,7 @@ I've also read Complex Listing by Emily Short, which is 3410 words long.
 I've also read Options Paragraph by Philip Riley, which is 183 words long.
 I've also read Door Varieties by Philip Riley, which is 299 words long.
 I've also read Exit Lister by Eric Eve, which is 3510 words long.
-I've also read Tutorial by Philip Riley, which is 117 words long.
+I've also read Tutorial by Philip Riley, which is 133 words long.
 I've also read Swimming by Philip Riley, which is 38 words long.
 I've also read Secret Doors by Gavin Lambert, which is 272 words long.
 I've also read Plugging by Philip Riley, which is 871 words long.
@@ -359,7 +359,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 316 files written as streams.
-CPU time: 679 centiseconds
+CPU time: 670 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

@@ -2681,12 +2681,12 @@ Faraji heads south along Lake Street, back into town.
 Agent Faraji is walking on Lake Street by the park. Lake Street runs north and south from here. To the west is the park, while to the east is the First Utilitarian Church of Enigma Lake.
 
 >x church
-The church is a dignified example of Gothic Revival architecture, its façade dominated by a steeply pitched roof and a slender steeple piercing the sky.
+The church is a dignified example of Gothic Revival architecture, its faï¿½ade dominated by a steeply pitched roof and a slender steeple piercing the sky.
 
 The rain falls steadily, soaking the ground.
 
 >x facade
-The church is a dignified example of Gothic Revival architecture, its façade dominated by a steeply pitched roof and a slender steeple piercing the sky.
+The church is a dignified example of Gothic Revival architecture, its faï¿½ade dominated by a steeply pitched roof and a slender steeple piercing the sky.
 
 >x steeple
 The steeple is a slender spire, rising high above the church. It is capped with a cross.
@@ -3980,7 +3980,7 @@ Faraji takes off the pair of astral lenses.
 >read utilitarianism
 The text is the Book of Utilitarianism. Faraji opens to a page at random and reads:
 
-And the Lord so hated the lizard people that he smote them with a mighty smiting, and he said the cursèd word "semantics", and the lizard people screamed and ran away like scared little children.
+And the Lord so hated the lizard people that he smote them with a mighty smiting, and he said the cursï¿½d word "semantics", and the lizard people screamed and ran away like scared little children.
 
 >u
 Agent Faraji is in the First Utilitarian Church of Enigma Lake. The interior is dimly lit by the stained glass windows, and the pews are arranged in neat rows facing the pulpit. A standard electrical outlet is set into the wall. To the east is the vestry. Faraji can also take a ladder up to the steeple, or stairs down to the basement. The exit is to the west.
