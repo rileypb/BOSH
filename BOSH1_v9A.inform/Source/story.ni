@@ -1063,6 +1063,7 @@ Check entering the blue dumpster:
 	say "[We] [are] not yet to the point of dumpster diving." instead;
 
 Climbing up is an action applying to one thing. Understand "climb up/-- [something]" as climbing up.
+Understand "climb" as climbing up. Understand "scale [something]" as climbing up.
 
 Rule for supplying a missing noun while climbing up:
 	if the metal ladder is touchable:
