@@ -702,7 +702,7 @@ klimp is familiar. [The help text of klimp is "Chief Huffton Klimp, the erstwhil
 for-a-screwdriver-klimp is a questioning quip.
 	It is privately-named. The printed name is "for a screwdriver". [The true-name is "for-a-screwdriver".] Understand "for/a/screwdriver" as for-a-screwdriver-klimp.
 	It mentions the red screwdriver.
-	The comment is "[We] [ask], 'Would you happen to have a --'".
+	The comment is "Faraji asks, 'Would you happen to have a --'".
 	The reply is "'Screwdriver you could borrow? No, no, someone stole my screwdriver collection. Probably the Illuminati.'".
 	It quip-supplies Klimp;
 	
@@ -713,7 +713,7 @@ An availability rule for for-a-screwdriver-klimp:
 to borrow the skull is a questioning quip. 
 	Understand "juvenile/sasquatch" as to borrow the skull.
 	It mentions the juvenile sasquatch skull.
-	The comment is "[We] [ask], 'Chief, mind if I borrow the skull?'". 
+	The comment is "Faraji asks, 'Chief, mind if I borrow the skull?'". 
 	The reply is "He looks pained for a moment. 'Uh, I'd rather you didn't. It's fragile.'".
 	It quip-supplies Chief Huffton Klimp.
 	It is repeatable.
@@ -729,12 +729,38 @@ Before taking the juvenile sasquatch skull:
 	if Klimp owns the juvenile sasquatch skull:
 		queue Chief Huffton Klimp with to borrow the skull;
 
+to-borrow-liber-animarum is a questioning quip. 
+	It is privately-named.
+	The printed name is "to borrow [italic type]Liber Animarum[roman type]".
+	Understand "to/borrow/the/liber/animarum" as to-borrow-liber-animarum.
+	It mentions the Liber Animarum.
+	The comment is "Faraji asks, 'Would it be okay if I borrowed [italic type]Liber Animarum[roman type]?'".
+	The reply is "'Why not? I don't understand a word of it anyway.'".
+	It quip-supplies Chief Huffton Klimp.
+	
+After examining Liber Animarum:  
+	queue Chief Huffton Klimp with to-borrow-liber-animarum;
+
+Before taking the Liber Animarum:
+	if Klimp owns the pair of astral lenses:
+		queue Chief Huffton Klimp with to-borrow-liber-animarum;
+	
+After discussing to-borrow-liber-animarum:
+	now the player owns Liber Animarum;
+	silently try taking Liber Animarum;
+	if the player carries Liber Animarum:
+		say "[We] [take] [italic type]Liber Animarum[roman type].";
+	continue the activity;
+	
+Does the player mean quizzing someone about to-borrow-liber-animarum:
+	it is very unlikely.
+
 to-borrow-the-lenses is a questioning quip. 
 	It is privately-named.
 	The printed name is "to borrow the astral lenses".
 	Understand "to/borrow/the/pair/of/astral/lenses/lens/glass/glasses" as to-borrow-the-lenses.
 	It mentions the pair of astral lenses.
-	The comment is "[We] [ask], 'Would it be okay if I borrowed the astral lenses for a while?'".
+	The comment is "Faraji asks, 'Would it be okay if I borrowed the astral lenses for a while?'".
 	The reply is "'Sure! Why don't you scout the locality for astral phenomena?'".
 	It quip-supplies Chief Huffton Klimp.
 	
@@ -1404,10 +1430,10 @@ After printing the locale description of the BOSH Chief's office:
 		lb;
 		say "He turns to Faraji and grins. 'Larch! Good to see you. What do you think of the new digs? I know, I know, it's a lousy office, I could barely fit all my stuff in here.'
 
-		Faraji starts to answer, but Klimp interrupts. 'Say, you ever read Petrus Catadesmicus? Here, take his book. [italic type]Liber Animarum[roman type]. Read it. Throw it away. I don't care.'";
-		now Faraji carries Liber Animarum;
+		Faraji starts to answer, but Klimp interrupts. 'Check out the shelves. Got some new stuff you might like.'";
+
 		
-Liber Animarum is carried by Chief Klimp. It is proper-named. The description is "This is a cryptic tome written by someone named Petrus Catadesmicus: 
+Liber Animarum is on the chief's shelves. It is owned by Chief Klimp. It is proper-named. The description is "This is a cryptic tome written by someone named Petrus Catadesmicus: 
 
 '...what these near-sighted Fools took as Rituals of Cursing are in truth Rituals of Binding, the true Congelation of the Soul, the Chaining of the immaterial Soul to a material Anchor, by piercing with a Spike the written true Name of the subject, thus transfixing the Soul and holding it fast, should the Environment be appropriately Consecrated, and appropriately Deep within the Earth...'". The printed name is "[italic type]Liber Animarum[roman type]". Understand "book/petrus/catadesmicus" as Liber Animarum.
 
@@ -1960,7 +1986,7 @@ alien invasion is a subject.
 
 onondaga-subject is a subject. It is privately-named. The printed name is "Onondaga". Understand "Onondaga/Onandaga/tribe/native/american" as onondaga-subject.
 
-Liber-Animarum-subject is a subject. It is privately-named. The printed name is "Liber Animarum". Understand "Liber/Animarum" as Liber-Animarum-subject.
+Liber-Animarum-subject is a subject. It is privately-named. The printed name is "[italic type]Liber Animarum[roman type]". Understand "Liber/Animarum" as Liber-Animarum-subject.
 Petrus-Catadesmicus-subject is a subject. It is privately-named. The printed name is "Petrus Catadesmicus". Understand "Petrus/Catadesmicus" as Petrus-Catadesmicus-subject.
 Liberace-subject is a subject. It is privately-named. The printed name is "Liberace". Understand "Liberace" as Liberace-subject.
 
@@ -1983,7 +2009,7 @@ chestnuts is a subject. Understand "chestnut" as chestnuts.
 squirrels is a subject. Understand "squirrel" as squirrels.
 furniture is a subject.
 art is a subject.
-music-subject is a subject. It is privately-named. The printed name is "music". Understand "music" as music-subject.
+music-subject is a subject. It is privately-named. The printed name is "music". Understand "music", "music industry" as music-subject.
 kangaroo is a subject. Understand "kangaroos" as kangaroo.
 office-subject is a subject. It is privately-named. The printed name is "office". Understand "office/offices" as office-subject.
 cryptozoology is a subject. 
@@ -2005,6 +2031,22 @@ Pope-clement-v-subject is a subject. It is privately-named. The printed name is 
 Senate-subject is a subject. It is privately-named. The printed name is "Senate". Understand "Senate" as Senate-subject.
 Montana-subject is a subject. It is privately-named. The printed name is "Montana". Understand "Montana/MT" as Montana-subject.
 Last Train to Clarksville is a subject. 
+water-subject is a subject. It is privately-named. The printed name is "water". Understand "water" as water-subject.
+gold-subject is a subject. It is privately-named. The printed name is "gold". Understand "gold" as gold-subject.
+lost cat is a subject.
+government-subject is a subject. It is privately-named. The printed name is "government". Understand "government" as government-subject.
+media is a subject.
+Rolling Stones is a subject.
+Mick Jagger is a subject. Understand "Mickey/Jagged" as Mick Jagger.
+Brian Jones is a subject.
+Walter Cronkite is a subject.
+Abbey Road is a subject.
+Paul McCartney is a subject.
+West Virginia is a subject.
+Pilsbury Doughboy is a subject.
+baked goods is a subject.
+Benito Mussolini is a subject.
+
 
 Table of Quiz Topics (continued)
 subject (a thing)	interlocutor (a person)	comment (a text)	reply (a text)
@@ -2059,10 +2101,10 @@ The Philadelphia Experiment	Chief Huffton Klimp	"'Chief, the --'"	"'Philadelphia
 Amelia Earhart	Chief Huffton Klimp	"'Chief, what's the deal with Amelia --'"	"'Earhart? She was murdered by the Freemasons before she even took off. I've seen the evidence.'"
 The Voynich Manuscript	Chief Huffton Klimp	"'Chief, what's the deal with the Voynich --'"	"'Manuscript? It's a hoax. I've seen the evidence. It's a hoax. But it's a good hoax. I like it.'"
 The Shroud of Turin	Chief Huffton Klimp	"'Chief, is the Shroud of --'"	"'Turin? It's really a map. I've seen the evidence. It's a map. A map to the Black Knight Satellite.'"
-The Holy Grail	Chief Huffton Klimp	"'Chief,' [we] [ask], 'is the Holy --'"	"'Grail real? Well, maybe, maybe not. It depends on what you mean by [']real.['] In any case, it was lost in a time slip."
+The Holy Grail	Chief Huffton Klimp	"'Chief,' [we] [ask], 'is the Holy --'"	"'Grail real? Well, maybe, maybe not. It depends on what you mean by [']real.['] In any case, it was lost in a time slip.'"
 Time slips	Chief Huffton Klimp	"'Chief, do time slips --'"	"'Really happen? Yes, they do. The Moberly-Jourdain Incident for example, or -- well, I can't remember the other one. I was thinking about the Jersey Devil, and its connection to the Church of Scientology.'"
 The Ark of the Covenant	Chief Huffton Klimp	"'Chief, you ever see Raiders of the Lost --'"	"Is this about the Ark of the Covenant? It's a real thing, you know. The director of the movie was a Freemason. But it's important to note that the Ark cannot melt your face off. That's a myth."
-The Spear of Destiny	Chief Huffton Klimp	"[We] [start] to ask Klimp a question when he interrupts."	"'the Spear of Destiny, right? It's a real thing. I've seen it. It's in the Vatican. But it's a fake. The real one was stolen by the Illuminati.'"
+The Spear of Destiny	Chief Huffton Klimp	"[We] [start] to ask Klimp a question when he interrupts."	"'The Spear of Destiny, right? It's a real thing. I've seen it. It's in the Vatican. But it's a fake. The real one was stolen by the Illuminati.'"
 Alchemy	Chief Huffton Klimp	"'Chief, do you know anything about --'"	"'Alchemy? Well, yes and no. It's a real thing, but it's not what you think. It's a science, but it's not a science. I used to dabble in it, back before my sacred geometry phase. Never got the hang of it.'"
 The Illuminati	Chief Huffton Klimp	"[We] [begin], 'You believe in the --'"	"'Illuminati? Of course. They're everywhere. They're in the government, in the media, in the music industry. They're in the Bureau. They're in the BOSH offices. They're in the White House. They're in the Vatican. They're in the Black Knight Satellite.' Klimp looks around. 'They're in this room... okay, maybe not this room. And hopefully not in the BOSH offices. But they're everywhere else. You don't think Margaret's Illuminati, do you?'"
 The White House	Chief Huffton Klimp	"'Do you really think the Illuminati are in the --'"	"'White House? Of course. It's at the conjunction of ley lines. Those things attract the Illuminati like flies to vinegar. Or is it honey? I can't remember.'"
@@ -2294,7 +2336,7 @@ Pompeii	Moira Zin	"'Moira, what do you know about Pompeii?'"	"'Pompeii was an an
 Vatican	Moira Zin	"'Moira, what do you know about the Vatican?'"	"'The Vatican is an independent city-state that is located within Rome, Italy. It is the spiritual and administrative center of the Roman Catholic Church. There is no scientific evidence to support the idea that it is a collective hallucination.'"
 Sumeria	Moira Zin	"'Moira, what do you know about Sumeria?'"	"'Sumeria was an ancient civilization that was located in Mesopotamia. It is considered one of the earliest known civilizations in the world. There is no scientific evidence to support the idea that it had advanced technology or contact with extraterrestrial beings.'"
 Sumeria	Margaret	"'Margaret, what do you know about Sumeria?'"	"'What? Stop confusing me with all these questions.'"
-Sumeria	Chief Huffton Klimp	"'Chief, what do you know about Sumeria?'"	"'Sumeria? Most people think of them as an ancient middle eastern civilization. But new evidence suggests that they emigrated there from Kamchatka.'"
+Sumeria	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'Sumeria? Most people think of them as an ancient middle eastern civilization. But new evidence suggests that they emigrated there from Kamchatka.'"
 Mike Nesmith	Margaret	"'Margaret, what do you know about Mike Nesmith?'"	"'He was the guy in the Monkees who wore the hat.'"
 Mike Nesmith	Chief Huffton Klimp	"'Chief, what do you know about Mike --'"	"'Nesmith? He was assassinated by the Dave Clark Five and replaced by a lizard person. The lizard person had to wear the hat to cover up its cranial ridges.'"
 Mike Nesmith	Moira Zin	"'Moira, what do you know about Mike Nesmith?'"	"'Mike Nesmith is an American musician, songwriter, actor, producer, and author. He is best known as a member of the Monkees. There is no scientific evidence to support the idea that he was assassinated by the Dave Clark Five.'"
@@ -2348,8 +2390,8 @@ alien invasion	Moira Zin	"'Moira, do you think there's going to be an alien inva
 onondaga-subject	Chief Huffton Klimp	"'Chief, what do you know about the --'"	"'-- Onondaga? It's a Native American tribe in upstate New York. They may have been the first to discover the secret of time travel. But they're not talking.'"
 onondaga-subject	Margaret	"'Margaret, what do you know about the Onondaga?'"	"'Are they a band?'"
 onondaga-subject	Moira Zin	"'Moira, what do you know about the Onondaga?'"	"'The Onondaga are a Native American tribe that is part of the Iroquois Confederacy. They are known for their contributions to the culture and history of the region. There is no scientific evidence to support the idea that they discovered the secret of time travel.'"
-Petrus-Catadesmicus-subject	Chief Huffton Klimp	"'Chief, what do you know about Petrus --'"	"'-- Catadesmicus? He was a Renaissance occultist in the 1600s -- weird guy. He thought he was a time traveler. Wrote the Liber Animarum. Or was that Liberace? I get them confused.'"
-Liber-Animarum-subject	Chief Huffton Klimp	"'Chief, what do you know about the Liber --'"	"'-- Animarum? Do you think if I wanted to talk about it, I would have fobbed it off on you? Forget about it.'"
+Petrus-Catadesmicus-subject	Chief Huffton Klimp	"'Chief, what do you know about Petrus --'"	"'-- Catadesmicus? He was a Renaissance occultist in the 1600s -- weird guy. He thought he was a time traveler. Wrote the [italic type]Liber Animarum[roman type]. Or was that Liberace? I get them confused.'"
+Liber-Animarum-subject	Chief Huffton Klimp	"'Chief, what do you know about the [italic type]Liber[roman type] --'"	"'-- [italic type]Animarum[roman type]? Can't understand a word.'"
 Liberace-subject	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- Liberace? Not much. Doris played poker with him once. He was a sore loser. But he dressed great.'"
 oddities-subject	Chief Huffton Klimp	"'Chief, what can you tell me about these' --'"	"'-- things on the shelf? They're oddities. Things that don't fit in anywhere else. Things that don't make sense. Things that make you wonder. Wonder what they're doing there.'"
 chief-shelves-subject	Chief Huffton Klimp	"'Chief, what's the deal with these' --'"	"'-- shelves? I put things on them. Things you can look at. I might even let you borrow them. But you have to ask first.'"
@@ -2391,6 +2433,22 @@ Crusades-subject	Chief Huffton Klimp	"'Chief, what do you know about the --'"	"'
 Pope-clement-v-subject	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- Pope Clement V? How would you like to be only one of fourteen popes with the same name? That's a lot of popes. There were originally twenty-eight Pope Clements, but the other fourteen were erased from history by the Illuminati.'"
 Senate-subject	Chief Huffton Klimp	"'Chief, what do you know about the --'"	"'-- Senate? The only thing worse than the Senate is the House. And the only thing worse than the House is the Illuminati. And the only thing worse than the Illuminati is the Senate. It's a paradox. Or maybe it's a conspiracy. Or maybe it's a paradoxical conspiracy.'"
 Montana-subject	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- Montana? I once thought it didn't exist. But then I met a guy who said he was from there. He must have been telling the truth, because he knew the truth about Amelia Earhart.'"
+water-subject	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- water? I don't trust it. But I drink it anyway, because it's apparently necessary for life. Did you know that?'"
+gold-subject	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- gold? Nothing, and I'm going to keep it that way. People who get into gold end up doing weird things. Like buying commemorative plates. Or collecting stamps. Or joining the Freemasons.'"
+lost cat	Chief Huffton Klimp	"'Chief, what did you mean about the --'"	"'-- lost cat? Ah, well, that was an interesting case. I wasn't in the Bureau yet. I was just six years old. But I remember it like it was yesterday. But it wasn't yesterday. At least I don't think it was. I'll have to check my notes.'"
+government-subject	Chief Huffton Klimp	"'Chief, what do you think about the --'"	"'-- government? What? Where? I've renewed my business license! I've paid my taxes! I work for the government! Why don't you just leave me alone?'"
+media	Chief Huffton Klimp	"'Chief, what do you think about the --'"	"'-- media? Walter Cronkite was a lizard person. That's all I have to say about that.'"
+Rolling Stones	Chief Huffton Klimp	"'Chief, do you listen to the --'"	"'-- Rolling Stones? No, of course not. They have a lot to answer for, that Mickey Jagged and his dirty little friends."
+Mick Jagger	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- Mickey Jagged? After he killed Brian Jones with his mind powers, I don't want to know anymore. Conversation over."
+Brian Jones	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- Brian Jones? He died too young, too young, all because he stood up to the conspiracy. Which conspiracy, I don't know, but it was a big, bad one."
+Walter Cronkite	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- Walter Cronkite? He was a lizard person. Don't ask me again.'"
+Abbey Road	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- Abbey Road? It's not actually long and winding, you know. Rather shortish, and mostly straight. But it's a good place to get run over by a car.'"
+Paul McCartney	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- Paul McCartney? He's not dead. Wait, you probably knew that. Anyway, he's not dead, but not for the reason you think you know he's not dead.'"
+West Virginia	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- West Virginia? Enough to tell you that whatever you think you know about it is wrong. It's a place of wild and wonderful deep dark secrets. And coal. Lots of coal.'"
+Pilsbury Doughboy	Chief Huffton Klimp	"'Chief, what do you know about the Pil --'"	"'-- tdown Man? What a decidedly undelicious topic. Let's talk about something else. Like baked goods.'"
+baked goods	Chief Huffton Klimp	"'Chief, do you like --'"	"'-- baked goods? Sure, but I once knew a guy who made poisoned crullers. They were baked bads.'"
+Benito Mussolini	Chief Huffton Klimp	"'Chief, what do you know about --'"	"'-- Benito Mussolini? What don't I know about him? Pretty much everything. But I do know that he was a time traveler. He went to the future and saw what would happen if he didn't invade Ethiopia. And he did it anyway.'"
+
 
 
 Book 18.6 - Klimp Interjections

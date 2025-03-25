@@ -2157,6 +2157,7 @@ To banish the lizard people for good:
 	queue Daniels with how he got here;
 	queue Daniels with where-we-are;
 	queue Daniels with about-his-watch;
+	queue Daniels with who-the-dragon-is;
 	now the current interlocutor is Daniels.
 
 Before doing something when the location is the old root cellar and the group of lizard people is in the old root cellar:
@@ -2454,6 +2455,7 @@ Description notes for a root-vegetable (called RV):
 		add "out of reach" to descriptive notes;
 
 Throwing it to is an action applying to one carried thing and one visible thing. Understand "throw [something] to [something]" as throwing it to.
+Understand "throw [something] [something]" as throwing it to (with nouns reversed).
 
 Check throwing it to:
 	if the second noun is not a person:
@@ -2499,6 +2501,23 @@ Persuasion rule for asking Daniels to try throwing something when the group of l
 	now notable Daniels event this turn is true;
 	persuasion succeeds;
 
+Persuasion rule for asking Daniels to try opening the green basket:
+	now Faraji distracted this turn is true;
+	now notable Daniels event this turn is true;
+	persuasion succeeds;
+
+Persuasion rule for asking Daniels to try opening the blue basket:
+	now Faraji distracted this turn is true;
+	now notable Daniels event this turn is true;
+	say "Daniels looks at Faraji and shrugs. 'I can't reach it!' he shouts.";
+	persuasion fails;
+
+Persuasion rule for asking Daniels to try opening the red basket:
+	now Faraji distracted this turn is true;
+	now notable Daniels event this turn is true;
+	say "Daniels looks at Faraji and shrugs. 'I can't reach it!' he shouts.";
+	persuasion fails;
+
 Instead of Daniels throwing something when the group of lizard people is in the location:
 	say "Daniels throws [the noun] at the lizard people. His hurt arm makes his throw weak, and [the noun] merely rolls past the lizard people. It is now within Faraji's reach.";
 	now the noun is in the old root cellar;
@@ -2524,16 +2543,16 @@ Persuasion rule for asking Daniels to try throwing something at Faraji when the 
 		now notable Daniels event this turn is true;
 		persuasion succeeds;
 	otherwise if the noun is not a root-vegetable:
-		say "Daniels looks at you and shrugs. 'Concentrate on the battle, agent!' he shouts.";
+		say "Daniels looks at Faraji and shrugs. 'Concentrate on the battle, agent!' he shouts.";
 		persuasion fails;
 	otherwise if the noun is not carried by Daniels:
-		say "Daniels looks at you and shrugs. 'I can't throw what I don't have!' he shouts.";
+		say "Daniels looks at Faraji and shrugs. 'I can't throw what I don't have!' he shouts.";
 		persuasion fails;	
 	otherwise if the noun is within-reach:
-		say "Daniels looks at you and shrugs. 'I can't throw what I can't reach!' he shouts.";
+		say "Daniels looks at Faraji and shrugs. 'I can't throw what I can't reach!' he shouts.";
 		persuasion fails;
 	otherwise:
-		say "Daniels looks at you and shrugs. 'I can't tell what you want me to do!' he shouts.";
+		say "Daniels looks at Faraji and shrugs. 'I can't tell what you want me to do!' he shouts.";
 		persuasion fails;
 
 Persuasion rule for asking Daniels to try taking a root-vegetable when the group of lizard people is in the location:
@@ -2541,7 +2560,7 @@ Persuasion rule for asking Daniels to try taking a root-vegetable when the group
 	if the noun is a root-vegetable and (the noun is in the old root cellar or the noun is in the green woven basket) and the noun is out-of-reach:
 		now notable Daniels event this turn is true;
 		persuasion succeeds;
-	say "Daniels looks at you and shrugs. 'I can't take what I can't reach!' he shouts.";
+	say "Daniels looks at Faraji and shrugs. 'I can't take what I can't reach!' he shouts.";
 	persuasion fails;
 
 Persuasion rule for asking Daniels to try opening the green woven basket when the group of lizard people is in the location:
@@ -2549,12 +2568,12 @@ Persuasion rule for asking Daniels to try opening the green woven basket when th
 	if the green woven basket is closed:
 		now notable Daniels event this turn is true;
 		persuasion succeeds;
-	say "Daniels looks at you and shrugs. 'I can't open what's already open!' he shouts.";
+	say "Daniels looks at Faraji and shrugs. 'I can't open what's already open!' he shouts.";
 	persuasion fails;
 
 Instead of Daniels opening the green woven basket when the group of lizard people is in the location:
 	if the green woven basket is open:
-		say "Daniels looks at you and shrugs. 'It's already open!' he shouts.";
+		say "Daniels looks at Faraji and shrugs. 'It's already open!' he shouts.";
 	otherwise if the rutabaga is in the green woven basket:
 		say "Daniels opens the green woven basket. 'Hey, there's a rutabaga in here,' he shouts.";
 	otherwise:
@@ -2580,7 +2599,10 @@ Instead of basket-asking something to something when the group of lizard people 
 	if the noun is Daniels and the second noun is the green woven basket:
 		try Daniels opening the green woven basket;
 	otherwise if the noun is Daniels:
-		say "Daniels looks at Faraji and shrugs. 'I can't open that!' he shouts.";
+		if the second noun is the red woven basket or the second noun is the blue woven basket:
+			say "Daniels looks at Faraji and shrugs. 'I can't reach it!' he shouts.";
+		otherwise:
+			say "Daniels looks at Faraji and shrugs. 'I can't open that!' he shouts.";
 	otherwise if the noun is the group of lizard people:
 		say "The lizard people merely hiss mockingly at Faraji, if indeed one can hiss mockingly.";
 	otherwise:
@@ -2694,6 +2716,23 @@ where-we-are is a questioning quip.
 	Understand "where are we", "where we are", "where"  as where-we-are.
 	The comment is "Faraji asks, 'Where are we?'". 
 	The reply is "'We're in an old Onondaga root cellar in upstate New York. Well not so old now, I guess. I've managed to make friends with the locals well enough, so they let me sleep in here.'".
+	It quip-supplies Daniels.
+
+who-the-dragon-is is a questioning quip.
+	It is privately-named. 
+	The printed name is "who the Dragon is". 
+	Understand "who/the/Dragon/is" as who-the-dragon-is.
+	The comment is "Faraji asks, 'Who is the Dragon?'".
+	The reply is "'The Dragon is the last, best hope for humanity and lizard people alike. He is the one who will bring peace between our two peoples. I was sent back in time by Savra's minions when I discovered their secret plan to kill him.'".
+	It quip-supplies Daniels.
+
+what-is-the-secret-plan is a questioning quip.
+	It is privately-named. 
+	The printed name is "what the secret plan is". 
+	Understand "what/the/secret/plan/is" as what-is-the-secret-plan.
+	The comment is "Faraji asks, 'What is the secret plan?'".
+	The reply is "'I could tell you, but it's best if that came from Doris.'".
+	It follows who-the-dragon-is.
 	It quip-supplies Daniels.
 
 what's next is a questioning quip. 

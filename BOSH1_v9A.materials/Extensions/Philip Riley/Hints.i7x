@@ -31,7 +31,7 @@ asking for bogus hints about is an action out of world applying to one topic. Un
 Check asking for bogus hints about:
 	say "There is no hint for that right now." instead;
 
-recalling hints about is an action out of world applying to one thing. Understand "recall hints/hint/-- for/-- [any explored hint topic]" as recalling hints about.
+recalling hints about is an action out of world applying to one thing. Understand "recall hints/hint/-- for/-- [any hint topic]" as recalling hints about.
 
 recalling bogus hints about is an action out of world applying to one topic. Understand "recall hint [text]" as recalling bogus hints about.
 
