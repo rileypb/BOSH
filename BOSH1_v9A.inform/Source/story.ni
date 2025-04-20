@@ -128,6 +128,9 @@ Carry out abouting:
 	say "- The game will automatically remember what you've discussed with each character. You can review these conversations by typing RECAP <character's name>.";
 	say "- Typing HINT by itself will list the currently available hint topics. Those in bold have new information. Typing HINT <topic> will provide a hint on that topic. You can also RECALL <topic> to review all hint text you've seen on that topic.";
 
+[ Rule for deciding whether all includes things enclosed by something which does not contain the player:
+	it does not. ]
+
 [ Understand "touch [something]" as touching. ]
 
 Volume 1 - The Game 
@@ -410,7 +413,7 @@ Before reading a command (this is the reset skip sounds rule):
 Book 4 - Special Tweaks
 
 the can't greet current interlocutor rule response (A) is "[We] [don't] generally talk to [ourselves].".
-the can't greet yourself rule response (A) is "[We] [don't] generally talk to [ourselves].".
+the can't greet yourself rule response (A) is "Faraji doesn't generally talk to themself.".
 [ The describe what's on scenery supporters in room descriptions rule does nothing. ]
 [the can't take what's fixed in place rule response (A) is "That can't be picked up.".]
 the can't switch on unless switchable rule response (A) is "That can't be switched on and off.".  
@@ -432,12 +435,14 @@ The parser clarification internal rule response (D) is "Whom do you want [if the
 The parser clarification internal rule response (E) is "What do you want [if the noun is not the player][the noun][otherwise][us][end if] to
 		[parser command so far]?"
 
-the block kissing rule response (A) is "[We] might not like that."
+The action processing internal rule response (H) is "The command '[parser command so far]'  needs a second noun."
+
+the block kissing rule response (A) is "Faraji might not like that."
 
 Flipping is an action applying to one thing. Understand "flip [something]" as flipping.
 
 Check flipping something when the noun is not a device:
-	say "That doesn't seem to be something [we] can flip.";
+	say "That doesn't seem to be something Faraji can flip.";
 	rule fails;
 
 Carry out flipping a device:
@@ -509,7 +514,7 @@ Chapter 1 - Knocking
 Knocking on is an action applying to one thing. Understand "knock on/-- [something]", "pound on/-- [something]", "rap on/-- [something]", "bang on/-- [something]" as knocking on.
 
 Report knocking on the player:
-	say "[We] [give] [our] head a quick knock, but nothing happens.";
+	say "Faraji gives their head a quick knock, but nothing happens.";
 	rule succeeds;
 
 Check knocking on someone when the noun is not the player:
@@ -517,11 +522,11 @@ Check knocking on someone when the noun is not the player:
 	rule fails;
 
 Report knocking on something:
-	say "[We] [give] [the noun] a quick knock, but nothing happens.";
+	say "Faraji gives [the noun] a quick knock, but nothing happens.";
 	rule succeeds;
 
 Report knocking on a door:
-	say "[We] [give] [the noun] a quick knock, but no one seems to be home.";
+	say "Faraji gives [the noun] a quick knock, but no one seems to be home.";
 	rule succeeds;
 	
 
@@ -534,12 +539,12 @@ Moira in-the-office is a scene. Moira in-the-office begins when Moira Zin is in 
 Denouement is a scene. Denouement begins when the location is inside-the-dumpster.
 Before going from the front office to the strip mall parking lot south during denouement:
 	if the copy of the Washington Herald is not handled:
-		say "[We] [trip] over a newspaper left up against the door.";
+		say "Faraji trips over a newspaper left up against the door.";
 		now the copy of the Washington Herald is in the Strip Mall Parking Lot South;
 
 Before going from the strip mall parking lot south to the front office during denouement:
 	if the copy of the Washington Herald is not handled:
-		say "[We] [trip] over a newspaper left up against the door.";
+		say "Faraji trips over a newspaper left up against the door.";
 		now the copy of the Washington Herald is in the front office;
 	
 
@@ -749,7 +754,7 @@ After discussing to-borrow-liber-animarum:
 	now the player owns Liber Animarum;
 	silently try taking Liber Animarum;
 	if the player carries Liber Animarum:
-		say "[We] [take] [italic type]Liber Animarum[roman type].";
+		say "Faraji takes [italic type]Liber Animarum[roman type].";
 	continue the activity;
 	
 Does the player mean quizzing someone about to-borrow-liber-animarum:
@@ -776,7 +781,7 @@ After discussing to-borrow-the-lenses:
 	now the player owns the pair of astral lenses;
 	silently try taking the pair of astral lenses;
 	if the player carries the pair of astral lenses:
-		say "[We] [take] the astral lenses.";
+		say "Faraji takes the astral lenses.";
 	continue the activity;
 	
 Does the player mean quizzing someone about to-borrow-the-lenses:
@@ -785,7 +790,7 @@ Does the player mean quizzing someone about to-borrow-the-lenses:
 to borrow the dodecahedron is a questioning quip. 
 	Understand "orange/marble" as to borrow the dodecahedron.
 	It mentions the polished orange marble dodecahedron.
-	The comment is "[We] [ask], 'Chief, mind if I borrow the dodecahedron?'".
+	The comment is "Faraji asks, 'Chief, mind if I borrow the dodecahedron?'".
 	The reply is "He thinks for a moment. 'Actually, I need it to keep my computer running properly. It's a long story.'".
 	It quip-supplies Chief Huffton Klimp.
 	It is repeatable.
@@ -805,9 +810,9 @@ Rule for writing a paragraph about Margaret Chao when the location is front offi
 	if front office is not visited:
 		say ", unpacking boxes and assembling an approximation of a respectable front office, all as if the Bureau isn't going to be shut down before the year is out";
 		say ". She sees [player's surname] and practically [squeal]. '[agent]! I'm sorry -- [player's forename]! How are you? I hope you don't mind -- I took the liberty of putting your desk together. I just love hex wrenches, don't you? Also, your new phone is here. I put it in your desk. Now I just need you to give me your old phone so I can deactivate it.'[paragraph break]";
-		say "'Oh, good', [we] [say]. 'Our phone downgrades have arrived from our bureaucratic betters.'";
+		say "'Oh, good', Faraji says. 'Our phone downgrades have arrived from our bureaucratic betters.'";
 		lb;
-		say "[Player] [hand] Margaret [our] old phone. [Margaret] [tap] a few keys on [their] computer and [say] 'There! All settled.'";
+		say "They hand Margaret [our] old phone. [Margaret] [tap] a few keys on [their] computer and [say] 'There! All settled.'";
 		[now the current interlocutor is margaret;]
 		now the green smartphone is nowhere;
 		now biff's mobile number reaches the blue flip phone;
@@ -860,7 +865,7 @@ Section 1 - Your Office
 
 Biff's office is a room. It is in BOSH HQ. The printed name is "[save LPR][our][restore LPR] office".
 
-"[if biff's office is not visited][We] [pause] and [survey] the scene. It's not much -- four white walls, grey industrial carpet. [Margaret] [have] helpfully assembled [our] desk and chair, though how sturdily is an open question. [Regarding Margaret][They] also took the time to put up some of Agent [Player]'s office decor -- [our] degree in Nonstandard Investigative Techniques, [EG]a trivia competition award, and a poster for [our] favorite movie: the b-movie time-travel classic The Room of Lost Time[PCG]a photo of [our] dog Pluto, and a print of [italic type]Green Pheasant[roman type] by Utagawa Hiroshige[LF]an original pencil drawing of the Pitfall snake by semi-acclaimed Washington DC artist Darius 5200, and a photo of [our] soccer team[end say]. At the very least the wall coverings help compensate for the lack of windows. The office door is to the north, and there's a white metal door to the west.[maybe insert computer muttering][otherwise]It's basically four white walls and grey carpet. There's a cheap desk and chair. In lieu of windows, there are a few things on the wall: [our] degree in Nonstandard Investigative Techniques, [EG]a trivia competition award, and a poster for [our] favorite movie[PCG]a photo of [our] dog Pluto, and a Japanese print[LF]a pencil drawing of the Pitfall snake, and a photo of [our] soccer team[end say]. The office door is to the north, and there's a white metal door to the west.[end if]"
+"[if biff's office is not visited]Faraji pauses and surveys the scene. It's not much -- four white walls, grey industrial carpet. [Margaret] [have] helpfully assembled [our] desk and chair, though how sturdily is an open question. [Regarding Margaret][They] also took the time to put up some of Agent [Player]'s office decor -- [our] degree in Nonstandard Investigative Techniques, [EG]a trivia competition award, and a poster for [our] favorite movie: the b-movie time-travel classic The Room of Lost Time[PCG]a photo of [our] dog Pluto, and a print of [italic type]Green Pheasant[roman type] by Utagawa Hiroshige[LF]an original pencil drawing of the Pitfall snake by semi-acclaimed Washington DC artist Darius 5200, and a photo of [our] soccer team[end say]. At the very least the wall coverings help compensate for the lack of windows. The office door is to the north, and there's a white metal door to the west.[maybe insert computer muttering][otherwise]It's basically four white walls and grey carpet. There's a cheap desk and chair. In lieu of windows, there are a few things on the wall: [our] degree in Nonstandard Investigative Techniques, [EG]a trivia competition award, and a poster for [our] favorite movie[PCG]a photo of [our] dog Pluto, and a Japanese print[LF]a pencil drawing of the Pitfall snake, and a photo of [our] soccer team[end say]. The office door is to the north, and there's a white metal door to the west.[end if]"
 
 
 There is a fluorescent light source in Biff's office called biffo-light.
@@ -872,7 +877,7 @@ Instead of doing something to the fake-phone:
 
 To say maybe insert computer muttering:
 	if biff's computer is not seen:
-		say "[paragraph break][reset LPR][We] [mutter], 'Where's my computer?'[run paragraph on]";
+		say "[paragraph break][reset LPR]Faraji mutters, 'Where's my computer?'[run paragraph on]";
 
 Biff's desk is a desk in Biff's Office. Biff's desk is scenery. It is privately-named. The printed name is "[our] desk".  Understand "desk" as biff's desk.
 Biff's desk can be lockable. Biff's desk can be locked. Biff's desk is lockable and locked. 
@@ -889,7 +894,7 @@ The blue flip phone is a phone. It is in biff's desk's drawer.
 The description of the blue flip phone is "It's a cheap blue flip phone, purchased by the Bureau as some kind of cost-saving measure. It's not even a smartphone. It's not even a good flip phone. It's not even a good bad flip phone. It's just a bad flip phone."
 
 After taking apart the desk:
-	say "[We] [unscrew] the hex screws and [remove] the drawer. Inside, [we] find a little grey key and a blue flip phone. [We] [put] the drawer back together and [pocket] the key and the phone, being careful to leave the drawer unlocked.
+	say "Faraji unscrews the hex screws and removes the drawer. Inside, they find a little grey key and a blue flip phone. They put the drawer back together, taking the phone and the key.
 	
 	They answer the phone.[paragraph break]";
 	say "'Hello?'
@@ -941,7 +946,7 @@ Instead of opening biff's desk's drawer when the player encloses the hex wrench 
 	try taking apart the desk biff's desk;
 
 Check taking apart the desk when the player does not enclose the hex wrench:
-	say "The screws are in there pretty tight. [We] [don't] have the right tool to get them out." instead;
+	say "The hex screws are in there pretty tight. Faraji doesn't have the right tool to get them out." instead;
 
 Carry out taking apart the desk:
 	now biff's desk's drawer is unlocked;
@@ -996,7 +1001,7 @@ The drawing of the Pitfall snake is scenery in biff's office. Understand "pencil
  
 The photo of soccer team is scenery in biff's office. Understand "Faraji's/their soccer/team" as the photo of soccer team. Understand "picture" as the photo of soccer team. "[we're] third from left in the front row."
 
-The green smartphone is a phone. It is mobile. The description is "It's a pretty nice phone, only a couple of years old, but [we] [don't] have time to play with it. [We] [need] to get to the office."
+The green smartphone is a phone. It is mobile. The description is "It's a pretty nice phone, only a couple of years old, but Faraji doesn't have time to play with it. They need to get to the office."
 
 Instead of switching on the green smartphone:
 	say "[The green smartphone] is out of batteries." instead;
@@ -1010,15 +1015,15 @@ Check calling someone on the green smartphone:
 Dialing is an action applying to one carried thing. Understand "dial [something]" as dialing.
 
 Instead of dialing the green smartphone:
-	say "[We] [don't] have time to play with the phone. [We] [need] to get to the office." instead;
+	say "Faraji doesn't have time to play with the phone. They need to get to the office." instead;
 
 Check dialing something:
-	say "[We] can't dial [the noun]." instead;
+	say "Faraji can't dial [the noun]." instead;
 	
 To decide is a verb.
 
 Check dropping the green smartphone:
-	say "[We] [decide] against leaving the phone behind." instead;
+	say "Faraji decides against leaving the phone behind." instead;
 	set pronouns from the green smartphone;
 
 To init office:
@@ -1041,7 +1046,7 @@ Unlocking keylessly Biff's desk's drawer is accessing.
 Before accessing when biff's desk's drawer is locked and the blue flip phone is in biff's desk's drawer and the blue flip phone is ringing for the first time:
 	now the player knows desk-locked;
 	[ activate the Table of Desk Opening Hints; ]
-	say "[We] [try] to open the desk to answer the phone, but it seems to be locked. [We] [sigh]. 'Margaret must have the key.'[paragraph break]"; 
+	say "Faraji tries to open the desk to answer the phone, but it seems to be locked. They sigh. 'Margaret must have the key.'[paragraph break]"; 
 	stop the action;
 	
 After opening Biff's desk's drawer for the first time:
@@ -1097,7 +1102,7 @@ Instead of closing the blue dumpster:
 	say "The dumpster has no lid.";
 
 Check entering the blue dumpster:
-	say "[We] [are] not yet to the point of dumpster diving." instead;
+	say "Faraji is not yet to the point of dumpster diving." instead;
 
 Climbing up is an action applying to one thing. Understand "climb up/-- [something]" as climbing up.
 Understand "climb" as climbing up. Understand "scale [something]" as climbing up.
@@ -1116,19 +1121,19 @@ Instead of climbing into something:
 Instead of an actor inserting biff-flattened-boxes into the blue dumpster:
 	now the biff-flattened-boxes are in the room of stuff;
 	if the actor is the player:
-		say "[We] [toss] the flattened boxes over the edge of the dumpster.";
+		say "Faraji tosses the flattened boxes over the edge of the dumpster.";
 	otherwise if the actor is in the location:
 		say "[The actor] [toss] the flattened boxes over the edge of the dumpster.";
 
 Instead of an actor inserting margaret-flattened-boxes into the blue dumpster:
 	now the margaret-flattened-boxes are in the room of stuff;
 	if the actor is the player:
-		say "[We] [toss] the flattened boxes over the edge of the dumpster.";
+		say "Faraji tosses the flattened boxes over the edge of the dumpster.";
 	otherwise if the actor is in the location:
 		say "[The actor] [toss] the flattened boxes over the edge of the dumpster.";
 
 Instead of inserting something into the blue dumpster:
-	say "At the last second, [we] [decide] against it.";
+	say "At the last second, Faraji decides against it.";
 
 Understand "throw [something] away" as inserting it into when the location is back lot.
 
@@ -1286,7 +1291,7 @@ The thumb drive is a thing in the room of stuff. The description of the thumb dr
 The snarky remark of the thumb drive is "Some crazy dude mailed this to me last month, said he found it in an ancient Onondaga root cellar on a farm in upstate New York. Claimed it was proof of time travel."
 
 To recognize is a verb.
-Some strange symbols are part of the thumb drive. The description is "The symbols on the thumb drive look like some kind of language, but none [we] [recognize]."
+Some strange symbols are part of the thumb drive. The description is "The symbols on the thumb drive look like some kind of language, but none Faraji recognizes."
 
 some cardboard boxes are scenery in front office. "There is a stack of boxes in the corner.". Understand "box" as cardboard boxes.
 
@@ -1308,18 +1313,18 @@ Check flattening the biff-flattened-boxes:
 	say "They've already been flattened." instead;
 
 Check flattening:
-	say "[We] can't flatten [regarding the noun][them]." instead;
+	say "Faraji can't flatten [regarding the noun][them]." instead;
 	
 Instead of flattening the cardboard boxes:
 	try taking the cardboard boxes;
 
 Instead of taking the cardboard boxes:
 	if the player encloses the biff-flattened-boxes:
-		say "[We] already [have] as many boxes as [we] [can] carry."; 
+		say "Faraji already has as many boxes as they can carry."; 
 	otherwise if the biff-flattened-boxes are not in the Room of Stuff:
-		say "[We] really shouldn't go scattering boxes everywhere.";
+		say "Faraji really shouldn't go scattering boxes everywhere.";
 	otherwise:
-		say "[We] [pick] up a couple of boxes and [flatten] them.[paragraph break]";
+		say "Faraji picks up a couple of boxes and flattens them.[paragraph break]";
 		now the player carries the biff-flattened-boxes;
 		if Margaret is in the location:
 			initiate Margaret's box routine;
@@ -1330,7 +1335,7 @@ Check taking Biff's computer:
 	say "[Biff's computer] is too unwieldy to carry around." instead;
  
 Instead of examining or searching Biff's computer when the thumb drive is not seen: 
-	say "[description of biff's computer] But [we] [do] find a thumb drive and take it. They remember receiving it in the mail last month, from (in Faraji's words) 'some crazy dude who claimed he found it in an ancient Onondaga root cellar on a farm in upstate New York.'";
+	say "[description of biff's computer] But Faraji does find a thumb drive and take it. They remember receiving it in the mail last month, from (in Faraji's words) 'some crazy dude who claimed he found it in an ancient Onondaga root cellar on a farm in upstate New York.'";
 	now the player carries the thumb drive;
 	now the thumb drive is seen;
 
@@ -1366,24 +1371,24 @@ Instead of searching:
 	try examining the noun;
  
 Instead of removing hex wrench from heating vent when the heating vent is closed:
-	say "[Our] fingers won't fit through the openings in the vent. [We][']ll have to open it first."; 
+	say "Faraji's fingers won't fit through the openings in the vent. They[']ll have to open it first."; 
 	
 Instead of opening the heating vent when the heating vent is locked:
 	say "The vent is held closed by four screws.";
 	now the player knows vent-screws;
 	[ activate the Table of Screwdriver Hints; ]
 	
-The can't reach inside closed containers rule response (A) is "[if the noun is the heating vent][Our] fingers won't fit through the openings in the vent. [We][']ll have to open it first[otherwise][The noun] [aren't] open[end if]."
+The can't reach inside closed containers rule response (A) is "[if the noun is the heating vent]Faraji's fingers won't fit through the openings in the vent. They[']ll have to open it first[otherwise][The noun] [aren't] open[end if]."
 
 Instead of unlocking the heating vent with the red screwdriver when the hex wrench is in the heating vent:
 	now the player carries the hex wrench;
-	say "[We] [unscrew] the four screws and [remove] the vent cover. [We] [take] the hex wrench from inside and [put] the cover back on.";
+	say "Faraji unscrews the four screws and removes the vent cover. They take the hex wrench from inside and put the cover back on.";
 
 Instead of unscrewing the heating vent with the red screwdriver when the hex wrench is in the heating vent:
 	try unlocking the heating vent with the red screwdriver;
 
 Instead of unlocking the heating vent with the red screwdriver when the hex wrench is not in the heating vent:
-	say "[We] [have] already gotten the hex wrench out of the vent.";
+	say "Faraji has already gotten the hex wrench out of the vent.";
 
 Instead of opening the heating vent:
 	say "The vent is held closed by four screws.";
@@ -1391,10 +1396,10 @@ Instead of opening the heating vent:
 
 Instead of opening the heating vent when the hex wrench is in the heating vent and the player encloses the red screwdriver:
 	now the player carries the hex wrench;
-	say "[We] [unscrew] the four screws and [remove] the vent cover. [We] [take] the hex wrench from inside and [put] the cover back on.";
+	say "Faraji unscrews the four screws and removes the vent cover. They take the hex wrench from inside and put the cover back on.";
 
 Instead of opening the heating vent when the hex wrench is not in the heating vent:
-	say "[We] [have] already gotten the hex wrench out of the vent.";
+	say "Faraji has already gotten the hex wrench out of the vent.";
 
 Unscrewing it with is an action applying to two things. Understand "unscrew [something] with [something]" as unscrewing it with. Understand the commands "loosen", "undo", "unfasten" as "unscrew".
 
@@ -1406,10 +1411,10 @@ Instead of turning the flat head screws when the player encloses the red screwdr
 
 Instead of unscrewing the flat head screws with the red screwdriver when the hex wrench is in the heating vent:
 	now the player carries the hex wrench;
-	say "[We] [unscrew] the four screws and [remove] the vent cover. [We] [take] the hex wrench from inside and [put] the cover back on.";
+	say "Faraji unscrews the four screws and removes the vent cover. Faraji takes the hex wrench from inside and puts the cover back on.";
 
 Instead of unscrewing the flat head screws with the red screwdriver when the hex wrench is not in the heating vent:
-	say "[We] [have] already gotten the hex wrench out of the vent.";
+	say "Faraji has already gotten the hex wrench out of the vent.";
 
 
 Section 5 - BOSH chief's office 
@@ -1480,7 +1485,7 @@ Short History of BOSH is a thing in BOSH Chief's Office. It is scenery. Understa
 'Two years into my tenure saw the election of the stupidest man in government: Senator S. Savra. It's bad enough that no one knows what his first initial stands for, but he's also undeniably a tool of the aliens. He may even be an alien himself. In any case, he's made it his mission to defund the Bureau, and he's been very successful at it. I'm not sure how much longer we can keep the lights on. I'd lay odds that he's been to the Black Knight Satellite.'"
 
 The Dictionary of Strangeness is a thing in BOSH Chief's Office. It is scenery. Understand "book" as the Dictionary of Strangeness.
-"The Dictionary of Strangeness is a compendium of the weird and wonderful, from the Abominable Snowman to Zener Cards. Flipping through it, [we] [come] upon an entry:
+"The Dictionary of Strangeness is a compendium of the weird and wonderful, from the Abominable Snowman to Zener Cards. Flipping through it, Faraji comes upon an entry:
 
 [random entry]"
 
@@ -1595,6 +1600,9 @@ Understand "memorabilia", "junk", "stuff", "knick-knacks", "knick knacks" as the
 
 A pair of astral lenses is on the chief's shelves. It is ambiguously plural. Chief Huffton Klimp owns the pair of astral lenses. The description of the pair of astral lenses is "To all appearances an ordinary pair of glasses, the astral lenses allegedly reveal the existence of extra-dimensional pathways." The pair of astral lenses is wearable. 
 Understand "glasses/glass/lens" as the pair of astral lenses.
+
+Does the player mean examining the pair of astral lenses:
+	it is very unlikely;
 
 Understand "look through [pair of astral lenses]" as a mistake ("Try wearing the astral lenses instead.").
 

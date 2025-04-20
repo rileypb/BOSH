@@ -405,7 +405,7 @@ Understand "strange/rusty/metal/metallic/cylindrical/cylinder/object" as hint-ru
 The printed name is "[rusty astral resonator]".
 The progression is {"Has Faraji had a look at the [rusty astral resonator]?", "Is it reminiscent of anything?", "If not, Faraji should look around some more.", "The [rusty astral resonator] has a threaded base, like a light bulb. That's probably good for mounting.", "Faraji should around for a place to screw in a threaded base like that.", "The socket in the workshed won't fit. Maybe Faraji should look elsewhere.", "Check the roof of Henry's Hot Skillet.", "There's a strange socket attached to the aerial.", "PUT RUSTY RESONATOR IN SOCKET"}.
 
-hinting the hint-rusty-resonator:
+hinting the hint-rusty-resonator when the hint-rusty-resonator is not progressive:
 	if Astral Secrets is not read:
 		rule succeeds with result "Maybe Faraji can find something to tell them what this thing is.";
 	otherwise if not mounted-shiny-resonator and not mounted-makeshift-resonator:
@@ -525,13 +525,14 @@ Activating the hint-extension-cord:
 		activate;
 	deactivate;
 
-The hint-bible is a progressive hint topic. Understand "what/is/the/Book/of/Utilitarianism", "bible" as the hint-bible. The printed name is "what is the Book of Utilitarianism". The progression is {"I wonder if any of this stuff is important.", "Is there a passage that would be useful if it came true?", "What about the passage about the cursèd word?", "The cursèd word is '[cursed word].'", "Who might Faraji say that to?", "Faraji should try saying the cursèd word to the group of lizard people."}.
+The hint-bible is a hint topic. Understand "what/is/the/Book/of/Utilitarianism", "bible" as the hint-bible. The printed name is "what is the Book of Utilitarianism". The progression is { "Is there a passage that would be useful if it came true?", "What about the passage about the cursèd word?", "The cursèd word is '[cursed word].'", "Who might Faraji say that to?", "Faraji should try saying the cursèd word to the group of lizard people."}.
 
-hinting the hint-bible:
-	if the Book of Utilitarianism is not read:
+hinting the hint-bible when the hint-bible is not progressive:
+	if the Book of Utilitarianism is not successfully read:
 		rule succeeds with result "Faraji should probably read the Book of Utilitarianism.";
 	otherwise:
 		now hint-bible is progressive;
+		rule succeeds with result "I wonder if any of this stuff is important.";
 
 Activating the hint-bible:
 	if the Book of Utilitarianism is seen and the group of lizard people is somewhere:
@@ -553,7 +554,7 @@ hinting the hint-lizard-people:
 		abide by the hinting rules for the hint-lizard-people-third;
 
 Activating the hint-lizard-people:
-	if the group of lizard people is seen and the lizard people are somewhere:
+	if the group of lizard people is seen and the lizard people are regionally in ELR:
 		activate;
 	deactivate;
 

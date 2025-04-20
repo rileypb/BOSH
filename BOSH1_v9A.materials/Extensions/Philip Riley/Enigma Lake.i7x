@@ -119,7 +119,7 @@ To describe the current weather:
 		if the current weather is cloudy:
 			say "[one of]The sky is overcast, and the moon is hidden behind the clouds[or]The clouds obscure the moon[or]The moon occasionally peeks from behind the clouds[or]The clouds obscure the stars[or]The sky is overcast[or]The moon is hidden behind the clouds[or]Clouds have gathered over the town[or]The sky is void of stars tonight[at random].";
 		if the current weather is drizzling:
-			say "[one of]The drizzle picks up a bit, and the air grows colder[or]The drizzle falls steadily, chilling the air[or]The chill of the drizzle seeps into [our] bones[or]The drizzle falls steadily, soaking the ground[or]The sad drizzle soaks [us][at random].";
+			say "[one of]The drizzle picks up a bit, and the air grows colder[or]The drizzle falls steadily, chilling the air[or]The chill of the drizzle seeps into Faraji's bones[or]The drizzle falls steadily, soaking the ground[or]The sad drizzle soaks Faraji[at random].";
 		if the current weather is raining:
 			say "[one of]The rain falls steadily, soaking the ground[or]The rain falls in a steady downpour[or]The rain falls in a steady rhythm[or]The cold rain pelts Faraji[or]Faraji shivers in the cold rain[or]Large drops of rain fall from the dark sky[at random].";
 		if the current weather is storming:
@@ -210,9 +210,17 @@ the Enigma Lake town hall is a leavable room. It is in ELR. It is unleavable. It
 The snarky remark is "Time travel should be accompanied by more fanfare."
 The x-coordinate of the Enigma Lake town hall is 0. The y-coordinate of the Enigma Lake town hall is 0.
 
-The information desk is scenery in the Enigma Lake town hall. Understand "info desk", "help desk", "front desk", "permanent/fixture" as information desk. "A work schedule is taped to the desk."
+To say information desk state:			
+	say "On [the information desk] ";
+	list the contents of the information desk, as a sentence, tersely, not listing
+		concealed items, prefacing with is/are, including contents,
+		giving brief inventory information;
 
-The bell is on the information desk. The description is "A small brass bell, used to summon the attention of the town hall staff."
+The information desk is scenery in the Enigma Lake town hall. Understand "info desk", "help desk", "front desk", "permanent/fixture" as information desk. "[if the work schedule is supported by the information desk]A work schedule is taped to the desk[otherwise if the information desk supports nothing]The desk is bare of clutter[otherwise][information desk state][end if]."
+
+The examine supporters rule does nothing when examining the information desk.
+
+[ The bell is on the information desk. The description is "A small brass bell, used to summon the attention of the town hall staff."
 
 Chiming is an action applying to one thing. Understand "ring [something]" as Chiming.
 Understand "push [bell]", "hit [bell]" as Chiming.
@@ -224,10 +232,12 @@ Instead of Chiming the bell:
 	say "Faraji rings the bell. It makes a clear, high-pitched sound.";
 
 Instead of Chiming something when the noun is not the bell:
-	say "That's not something [we] can ring.";
+	say "That's not something [we] can ring."; ]
 
 The backpack is a closed openable container. It is behind the information desk. The description is "Stitched into the fabric are the initials 'WGT'.".
 Understand "back/pack/rucksack/ruck/sack/knapsack/knap" as the backpack. It is wearable.
+
+The stitched initials are part of the backpack. The description is "The initials 'WGT' are stitched into the fabric of the backpack."
 
 Before doing something to the backpack when the backpack is worn:
 	if the current action is taking off the backpack:
@@ -247,8 +257,8 @@ After dropping the backpack:
 
 The red key is a key. It is inside the backpack. Understand "ELG", "gym/gymnasium key" as the red key. The description is "The letters ELG are printed on the key, labeling it the property of Enigma Lake Gymnasium.".
 
-The work schedule is scenery in the Enigma Lake town hall. 
-"[fixed letter spacing] +---------------------------------+[line break]
+The work schedule is on the information desk. 
+The description is "[fixed letter spacing] +---------------------------------+[line break]
 |Shift           Name             |[line break]
 +---------------------------------+[line break]
 |Monday          Edward Alpha     |[line break]
@@ -310,7 +320,10 @@ Enigma Park is a leavable room. It is north of Enigma Lake town hall. It is unle
 
 The obelisk has moved, revealing a ladder leading down into the ground[end if]."
 
-Some fences are scenery in Enigma Park. "The iron fences are about seven feet high. They block all egress except to the north, east, south, and west."
+Some iron fences are scenery in Enigma Park. "The iron fences are about seven feet high. They block all egress except to the north, east, south, and west." Understand "fence" as fences.
+
+Check climbing up the iron fences:
+	say "There are no good footholds for climbing the iron fences." instead;
 
 To say park beam description:
 	beam description, in the park;
@@ -402,11 +415,11 @@ Henry's facade is a building facade. It is in Main at Solvay. It is privately-na
 
 The neon skillet is scenery in Main at Solvay. "The neon skillet is dark and motionless."
 
-Reading-Room-Facade is a building facade. It is in Main at Solvay. It is privately-named. The printed name is "Reading Room". Understand "Reading/Room/bookstore/store" as Reading-room-facade. "The store window is dark. [We] can see rows and rows of books inside."
+Reading-Room-Facade is a building facade. It is in Main at Solvay. It is privately-named. The printed name is "Reading Room". Understand "Reading/Room/bookstore/store" as Reading-room-facade. "The store is dark. [We] can see rows and rows of books inside."
 	Reading-Room-Facade fronts the Reading Room.
 	It is enterable from Main at Solvay.
 
-Fresnel Facade is a building facade. It is in Main at Solvay. It is privately-named. The printed name is "Fresnel's Music". Understand "fresnel/fresnel's/music/store" as Fresnel Facade. "A display of brass instruments dominates the front window." 
+Fresnel Facade is a building facade. It is in Main at Solvay. It is privately-named. The printed name is "Fresnel's Music". Understand "fresnel/fresnel's/music/store" as Fresnel Facade. "The sign in the window says 'Closed for the end of the world'." 
 	Fresnel Facade fronts Fresnel's Music.
 	It is enterable from Main at Solvay.
 
@@ -786,29 +799,29 @@ The title of a record is usually "". The artist of a record is usually "".
 The printed name of a record is "[italic type][title][roman type] by [artist]".
 The description of a record is "It's a typical 7[quotation mark] vinyl record, with a label on one side."
 
-booboo is a record. It is in the trash-bin. The title of booboo is "Boo boo ba-doo boo boo boo". The artist of booboo is "The Four Mouths". Understand "boo/ba-doo/four/mouths" as booboo.
+booboo is a record. It is in the trash-bin. The title of booboo is "Boo boo ba-doo boo boo boo". The artist of booboo is "The Four Mouths". Understand "boo/ba-doo/four/mouths/record" as booboo.
 The music description of booboo is "'Boo boo ba-doo boo boo boo, boo boo ba-doo boo boo boo, boo boo ba-doo boo boo boo, boo boo ba-doo boo boo boo.'"
 
 strange-record is a record. It is in the trash-bin. The title of strange-record is "Isn't It Strange I Don't Love You?". The artist of strange-record is "Peggy Patti".
-Understand "Isn't/Strange/I/Don't/Love/You/Peggy/Patti" as strange-record.
+Understand "Isn't/Strange/I/Don't/Love/You/Peggy/Patti/record" as strange-record.
 Understand "Isn't it" as strange-record.
 Understand "Isn't it strange/I/don't love you" as strange-record.
 The music description of strange-record is "'Isn't it strange I don't love you? Isn't it strange I don't care? Isn't it strange I don't want you? Isn't it strange I'm not there?'"
 
 callmeonthetelephonedarling is a record. It is in the trash-bin. The title of callmeonthetelephonedarling is "Stop Calling Me on the Telephone, Darling". The artist of callmeonthetelephonedarling is "Deanna and the Deans".
 The music description of callmeonthetelephonedarling is "'I've got a new number, I've got a new line, I've got a new life, and you're not in mine.'".
+Understand "Stop/Calling/Me/on/the/Telephone/Darling/Deanna/Deans/record" as callmeonthetelephonedarling.
 
-Understand "Stop/Calling/Me/on/the/Telephone/Darling/Deanna/Deans" as callmeonthetelephonedarling.
 norbert is a record. It is in the trash-bin. The title of norbert is "Norbert the Narwhal". The artist of norbert is "The ABCs".
-Understand "Norbert/the/Narwhal/ABCs" as norbert.
+Understand "Norbert/the/Narwhal/ABCs/record" as norbert.
 The music description of norbert is "'Norbert the Narwhal, swimming in the sea, Norbert the Narwhal, happy as can be.'"
 
 silly is a record. It is in the trash-bin. The title of silly is "Silly Little Love Song". The artist of silly is "Patti Peggy".
-Understand "Silly/Little/Love/Song/Patti/Peggy" as silly.
+Understand "Silly/Little/Love/Song/Patti/Peggy/record" as silly.
 The music description of silly is "'You are my silly little guy, and I am your silly little girl, and we are silly together in our silly little world.'"
 
-moron is a record. It is in the trash-bin. The title of moron is "I'd Never Call You a Moron". The artist of moron is "Peggy Perry".
-Understand "I'd/Never/Call/You/a/Moron/Peggy/Perry" as moron.
+moron is a record. It is in the trash-bin. The title of moron is "I'd Never Call You a Moron". The artist of moron is "Peggy Petty".
+Understand "I'd/Never/Call/You/a/Moron/Peggy/Petty/record" as moron.
 The music description of moron is "'Just because you're not so bright, doesn't mean you're not alright, and I'd never call you a moron.'"
 
 record playing is an action applying to one thing. Understand "play [something]" as record playing. 
@@ -884,6 +897,18 @@ The x-coordinate of the radio station roof is 2. The y-coordinate of the radio s
 
 The metal cabinet is a closed, locked, openable, scenery container in the radio station roof. "The metal cabinet is attached to the foot of the broadcast tower[if the metal cabinet is locked], held shut by a padlock[otherwise if the metal cabinet is closed], closed[otherwise], hanging open. Inside it is a power switch, [power switch state][end if]." 
 
+Instead of locking the metal cabinet with something when the metal cabinet is unlocked:
+	say "The cabinet has no keyhole, and the padlock is broken.";
+
+Instead of unlocking the metal cabinet with something when the metal cabinet is locked:
+	say "You'll have to get the padlock off instead of unlocking the cabinet itself.";
+
+Instead of locking keylessly the metal cabinet when the metal cabinet is unlocked:
+	say "The cabinet has no keyhole, and the padlock is broken.";
+
+Instead of unlocking keylessly the metal cabinet when the metal cabinet is locked:
+	say "You'll have to get the padlock off instead of unlocking the cabinet itself.";
+
 To say power switch state:
 	if the power switch is switched on:
 		say "set to on";
@@ -896,8 +921,9 @@ Report opening the metal cabinet:
 
 Chapter 1 - The padlock
 
-The padlock is scenery in radio station roof. The description is "[if the metal cabinet is locked]A keyed padlock secures the cabinet shut[otherwise]A keyed padlock, attached to nothing[end if]." Understand "lock", "pad lock" as the padlock.
+The padlock is a scenery container in radio station roof. The description is "[if the metal cabinet is locked]A keyed padlock secures the cabinet shut[otherwise]A keyed padlock, attached to nothing[end if]." Understand "lock", "pad lock" as the padlock.
 
+The padlock is locked, lockable, closed, and openable.
 
 Instead of unlocking the padlock with a key:
 	say "That key doesn't fit." instead;
@@ -957,9 +983,12 @@ After switching off the power switch:
 	otherwise:
 		say "Faraji switches the power switch off. The broadcast tower's hum dies away.";
 
-The broadcast tower is scenery in the radio station roof. "A tall, steel lattice structure, rising prominently above the building. This kind of tower was designed to maximize the height for better signal transmission and reception in the era before widespread cable and satellite technology. Strangely, the bars of the tower near roof-level are bent inward to form a small platform. It's almost as if something is meant to be mounted there." Understand "radio tower", "antenna" as the broadcast tower.
+The broadcast tower is scenery in the radio station roof. "A tall, steel lattice structure, rising prominently above the building. This kind of tower was designed to maximize height for better signal transmission and reception in the era before widespread cable and satellite technology. Strangely, the bars of the tower near roof-level are bent inward to form a small platform. It's almost as if something is meant to be mounted there." Understand "radio tower", "antenna" as the broadcast tower.
 
 The platform is part of the broadcast tower. It is a supporter. It is indescribable.
+
+Check entering the platform:
+	say "The platform is far too small for Faraji." instead;
 
 Check putting something on the platform:
 	if the platform supports something that is not the noun:
@@ -1137,7 +1166,7 @@ To read is a verb.
 
 The Book of Utilitarianism is fixed in place. It is proper-named. The printed name is "[italic type]The Book of Utilitarianism[roman type]". It is indescribable. Understand "BOU" as the Book of Utilitarianism. 
 
- Understand "open [book of utilitarianism]" as examining.
+Understand "open [book of utilitarianism]" as examining.
 
 The cursed word is text that varies. The cursed word is "".
 
@@ -3752,6 +3781,9 @@ The blue button is scenery in the Fire Station 1. "A large blue button, mounted 
 Does the player mean doing something to the blue button: 
 	it is very likely.
 
+Does the player mean taking the blue button: 
+	it is very unlikely.
+
 Instead of pushing the blue button when the garage door is closed:
 	say "Faraji pushes the blue button. A klaxon sounds, and the garage door opens.";
 	now the garage door is open.
@@ -3777,8 +3809,14 @@ The x-coordinate of the Reading Room is -2. The y-coordinate of the Reading Room
 The bookstore chairs are scenery enterable supporters in the Reading Room. "A number of comfortable chairs are arranged around the room."
 Understand "chair/seats/seat" as the bookstore chairs.
 
+Report entering the bookstore chairs:
+	say "Faraji sits down in a chair. It's old and rickety, and not very comfortable.";
+	stop the action;
+		
 The bookstore tables are scenery supporters in the Reading Room. "A few tables are scattered around the room." 
 Understand "table" as the bookstore tables.
+Does the player mean examining the bookstore tables: 
+	it is very likely.
 
 The bookstore staircase is a building facade in the Reading Room. "A narrow staircase leads down."
 	It fronts the Bookstore Basement.
@@ -3807,7 +3845,7 @@ After deciding the scope of the player while taking when the location is the Rea
 		place item in scope;
 
 Instead of taking a bookstore-book:
-	say "Tsk, tsk. That would be stealing." instead;
+	say "Faraji would rather not load up on books." instead;
 
 [ Rule for reaching inside the Room of Stuff while bookstore-reading:
 	allow access;
@@ -3878,10 +3916,18 @@ The breeze is scenery in the Bookstore Basement. "An almost imperceptible breeze
 
 The extension cord is in the Bookstore Basement. 
 
+Instead of smelling when the location is the Bookstore Basement:
+	say "The basement smells musty, with a faint hint of sewage.";
+
 The Ecology of Root Vegetables is in the Bookstore Basement. It is proper-named. The printed name is "[italic type]The Ecology of Root Vegetables[roman type]". Understand "green/cover/book" as The Ecology of Root Vegetables. The Ecology of Root Vegetables can be read.
 "A book with a green cover titled [italic type]The Ecology of Root Vegetables[roman type] lies on the floor here."
 
 The description of The Ecology of Root Vegetables is "A book with a green cover, titled 'The Ecology of Root Vegetables'. The author is listed as Dr. A. Zilman. The book is a comprehensive study of root vegetables. There is a whole chapter on the rutabaga, including its history, cultivation, and uses in various cultures. One passage mentions its potential use as a weapon against 'evil earth demons'."
+
+rutabaga-subject is a subject. It is privately-named. The printed name is "rutabagas". Understand "rutabaga/rutabagas" as rutabaga-subject.
+
+Instead of looking the rutabaga-subject up in The Ecology of Root Vegetables:
+	say "The chapter on rutabagas quotes the famed supernaturalist Hezekiah Horton, who wrote, 'And yea verily, the earth demons, who are all scaly and nasty, bowed down before the rutabaga and trembled, for the Lord hath made it a weapon against them. And the rutabaga shall be a sign unto the people, and they shall know that the Lord is with them.' The book goes on to describe the rutabaga as a 'root vegetable of great power', and suggests that it can be used to ward off evil spirits. It also mentions that the rutabaga is a good source of vitamins A and C, and is low in calories. The author suggests that it can be used in a variety of dishes, including soups, stews, and casseroles.";
 
 A bricked-up-hole is a secret door. It is north of the Bookstore Basement and south of a sewer tunnel 1. It is privately-named. The printed name is "bricked-up hole in the wall". Understand "bricked-up", "bricked/up", "hole in/-- the/-- wall/--" as bricked-up-hole. It is open and not openable. "A ragged hole in the north wall, [if the location is the bookstore basement]leading into a dark space[otherwise]leading into the bookstore basement[end if]." 
 It is unsnarkable.
@@ -3965,10 +4011,15 @@ The x-coordinate of Fresnel's Music is -2. The y-coordinate of Fresnel's Music i
 
 A tuning fork is in Fresnel's Music. "A tuning fork lies on the counter." The description is "A tuning fork, used to tune musical instruments."
 
-The music store counter is a scenery supporter in Fresnel's Music. "A typical store counter, bare of most items." 
+The music store counter is a scenery supporter in Fresnel's Music. "A typical store counter." 
 It is exposed.
 
-Fresnel items are scenery in Fresnel's Music. They are privately-named. "A few items of little value are scattered around the store." Understand "few/item" as Fresnel items. They are plural-named. The printed name is "a few items".
+Fresnel items are scenery in Fresnel's Music. They are privately-named. "A few items of little value are scattered around the store." Understand "few/item/items" as Fresnel items. They are plural-named. The printed name is "a few items".
+
+striking it on is an action applying to two things. Understand "strike [the tuning fork] on [something]", "sound [the tuning fork] on [something]", "ring [the tuning fork] on [something]", "tap [the tuning fork] on [something]", "hit [the tuning fork] on [something]" as striking it on.
+
+Check striking the tuning fork on something:
+	try striking the tuning fork;
 
 striking is an action applying to one thing. Understand "strike [the tuning fork]", "sound [the tuning fork]", "ring [the tuning fork]", "tap [the tuning fork]", "hit [the tuning fork]" as striking.
 Carry out striking the tuning fork:
@@ -3990,8 +4041,8 @@ Carry out striking the tuning fork:
 		otherwise:
 			say "[line break]The tone resonates with the shiny object you are carrying.";
 
-Instead of attacking the bell with the tuning fork:
-	say "Faraji strikes the tuning fork against the bell. The two tones produce a perfect fifth, but the bell doesn't have the deep resonant overtones of the tuning fork.";
+[ Instead of attacking the bell with the tuning fork:
+	say "Faraji strikes the tuning fork against the bell. The two tones produce a perfect fifth, but the bell doesn't have the deep resonant overtones of the tuning fork."; ]
 
 Book 33 - Henry's Hot Skillet
 
@@ -4105,6 +4156,9 @@ It is unsnarkable.
 Instead of inserting the rusty astral resonator into the aerial:
 	try inserting the rusty astral resonator into the threaded socket;
 
+Instead of putting the rusty astral resonator on the aerial:
+	try inserting the rusty astral resonator into the threaded socket;
+
 Does the player mean inserting the rusty astral resonator into the threaded socket:
 	it is very likely.	
 
@@ -4139,6 +4193,12 @@ Instead of inserting the rusty astral resonator into the threaded socket when th
 	hook up the rusty resonator;
 
 Instead of inserting the rusty astral resonator into the threaded socket when the rusty resonator is hooked up:
+	say "[The rusty astral resonator] is already in the socket.";
+
+Instead of putting the rusty astral resonator on the threaded socket when the rusty resonator is not hooked up:
+	hook up the rusty resonator;
+
+Instead of putting the rusty astral resonator on the threaded socket when the rusty resonator is hooked up:
 	say "[The rusty astral resonator] is already in the socket.";
 
 After taking the rusty astral resonator when the rusty astral resonator was hooked up:
@@ -4380,6 +4440,12 @@ Does the player mean:
 			it is very likely;
 		if the second noun is the membership book:
 			it is very likely;
+	if the current action is examining:
+		if the noun is the membership book:
+			it is very likely;
+		if the second noun is the membership book:
+			it is very likely;
+	
 
 Instead of consulting the membership book about something:
 	if the topic understood matches "william thompson" or the topic understood matches "bill thompson" or the topic understood matches "thompson" or the topic understood matches "william" or the topic understood matches "bill":
@@ -4658,7 +4724,7 @@ To say lizard people appearance:
 	if location is in ELR:
 		say "Three humanoid figures are here, each with a long, scaly tail and a head that looks like a lizard's. They are dressed in smart grey suits. They are hissing loudly in what seems to be intelligent communication. One is carrying some kind of shiny metal object.";
 		if lizard countdown is 1:
-			say "[line break]They notice you and stop talking. One of them steps forward and says in a guttural hiss, [one of]'So it is one of Doris's friends. We have been expecting you. You will not hinder us[or]'Surface vermin! You will not stop us[or]'No one will be allowed to interfere with our plans. Begone[or]'Silly human. You will fail[or]'You are too late to stop us. We will have the Dragon[at random]!'[run paragraph on]";
+			say "[line break]They notice Faraji and stop talking. One of them steps forward and says in a guttural hiss, [one of]'So it is one of Doris's friends. We have been expecting you. You will not hinder us[or]'Surface vermin! You will not stop us[or]'No one will be allowed to interfere with our plans. Begone[or]'Silly human. You will fail[or]'You are too late to stop us. We will have the Dragon[at random]!'[run paragraph on]";
 	otherwise:
 		say "Three humanoid figures are here, each with a long, scaly tail and a head that looks like a lizard's. They are dressed in smart grey suits. They seem highly agitated.[run paragraph on]";
 
@@ -5072,12 +5138,12 @@ banishing is an action out of world. Understand "cheat banish" as banishing.
 
 Carry out banishing:
 	now the shiny astral resonator is carried by the player;
-	now the group of lizard people is nowhere;
+	now the group of lizard people is in the old root cellar;
 
-Before answering the doll-fly that when DEBUG is true:
+[ Before answering the doll-fly that when DEBUG is true:
 	say "The doll-fly has been banished.";
 	now the doll-fly is nowhere;
-	stop the action;
+	stop the action; ]
 
 framing is an action applying to nothing. Understand "cheat frame" as framing.
 

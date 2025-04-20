@@ -1,0 +1,3262 @@
+Start of a transcript of
+
+The Bureau of Strange Happenings
+An Interactive Phenomenon by Phil Riley
+Release 1 / Serial number 250414 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
+Identification number: //F61EFB05-03A9-4894-B076-9E767F9163A8//
+Interpreter version 0.6.1 / VM 3.1.3 / Library serial number 080126
+Standard Rules version 3/120430 by Graham Nelson
+Epistemology version 9 by Eric Eve
+Conversation Framework version 12 by Eric Eve
+Conversation Responses version 7 by Eric Eve
+Conversational Defaults version 3 by Eric Eve
+Formatting Capture version 2/221014 by Daniel Stelzer (based on Text Capture by Eric Eve)
+Undo Output Control version 5/170902 by Erik Temple
+Gender Options version 3/210331 by Nathanael Nerode
+Exit Lister version 11 by Eric Eve
+Secret Doors by Gavin Lambert
+Far Away version 5/160517 by Jon Ingold
+
+>l
+Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash (to the east). To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Their bright red Hyundai Accent is parked nearby.
+
+>x strip mall
+(the strip mall fence)
+The fence is chain link.
+
+>* weird
+Noted.
+
+>x bosh
+Faraji gazes stoically at the sad little storefront that is the new BOSH office. The sign from the previous tenant is still up: "Angel's Department Store". Margaret can be seen through the front window, in her usual manic work mode.
+
+>x sign
+Which do you mean, the department store sign, the laundromat sign, or the flashing neon sign?
+
+>department store
+It's adorned with a pair of angel's wings.
+
+>l
+Agent Faraji is at the south end of the strip mall parking lot. From here one can see just how humble BOSH's state has become: the office is to the west, between a pawn shop (to the southwest) and a run-down laundromat (to the northwest) and across from an automatic car wash (to the east). To the south is a swampy area separating the lot from the interstate. The parking lot continues north.
+
+Their bright red Hyundai Accent is parked nearby.
+
+>cheat enigma
+Agent Faraji is in the Enigma Lake town hall. The building has been cleared of furniture and other items ahead of the imminent flooding. A permanent fixture, the information desk sits near the front entrance (to the south). Taped to it is what looks to be a work schedule. There is also a back entrance onto the park to the north.
+
+>x schedule
+ +---------------------------------+
+ |Shift           Name             |
+ +---------------------------------+
+ |Monday          Edward Alpha     |
+ |                Arthur Davenport |
+ |                Margot Fenn      |
+ |                Rosemary Tamsin  |
+ |Tuesday         Mary Huff        |
+ |                Andrew Kline     |
+ |                Leonard Mink     |
+ |                Pauline Nettles  |
+ |Wednesday       Bill Thompson    |
+ |                Harriet Underwood|
+ |                Victor Xander    |
+ |                Yolanda Zane     |
+ |Thursday        Edward Alpha     |
+ |                Arthur Davenport |
+ |                Oren Fenn        |
+ |                Maggie Vickers   |
+ |Friday          Rosemary Tamsin  |
+ |                Leonard Mink     |
+ |                Zefram Cochrane  |
+ |                Daphne O'Leary   |
+ |Saturday        Mary Huff        |
+ |                Leola Root       |
+ |                Thomas Sander    |
+ |                Ursula Tamsin    |
+ +---------------------------------+
+
+Faraji notices something behind the desk.
+
+>x desk
+A work schedule is taped to the desk.
+
+On the information desk is a bell.
+
+Faraji finds a backpack behind the information desk and pulls it out.
+
+>x backpack
+Stitched into the fabric are the initials "WGT".
+
+>open backpack
+Faraji opens the backpack, revealing a red key.
+
+>take key
+Taken.
+
+>ring bell
+Faraji rings the bell. It makes a clear, high-pitched sound that quickly fades away.
+
+>take bell
+Taken.
+
+>take schedule
+Faraji doesn't need it.
+
+>* what if I do need it?
+Noted.
+
+>
+I beg your pardon?
+
+>* maybe you can untape it
+Noted.
+
+>l
+Agent Faraji is in the Enigma Lake town hall. The building has been cleared of furniture and other items ahead of the imminent flooding. A permanent fixture, the information desk sits near the front entrance (to the south). Taped to it is what looks to be a work schedule. There is also a back entrance onto the park to the north.
+
+Also here is a backpack (empty and open).
+
+>x fixture
+A work schedule is taped to the desk.
+
+>s
+Faraji exits the town hall into the cool of the evening.
+
+The clouds obscure the stars.
+
+Agent Faraji is on 200 block of Main Street. The street runs east and west from here. South is the edifice of Rolle's Department Store. North is the town hall.
+
+>x edifice
+Once, town department stores like this were a constant of American life before they were gobbled up by the big box stores.
+
+>s
+Faraji enters the open door of the department store.
+
+Agent Faraji is in Rolle's Department Store. Once, town department stores like this were a constant of American life. Sadly, this one is almost empty of everything. A lone sign hangs on the wall. The exit is to the north.
+
+A scuffed-up table lamp sits discarded in a corner.
+
+A floor waxer sits in the center of the gleaming floor.
+
+>x sign
+"50% off everything in the store!"
+
+>turn on lamp
+(the table lamp)
+Faraji flips the switch on the table lamp. Without a light bulb the lamp remains dark.
+
+>put finger in socket
+There's nothing like that nearby.
+
+>touch socket
+I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+>unplug lamp
+(the table lamp)
+It's not plugged into anything.
+
+>x waxer
+This is a bulky, heavy-duty machine with a large, round brush head, designed for durability and the ability to polish vast floor areas to a high shine.
+
+The floor waxer is currently switched off.
+
+>x brush head
+This is a bulky, heavy-duty machine with a large, round brush head, designed for durability and the ability to polish vast floor areas to a high shine.
+
+The floor waxer is currently switched off.
+
+>take waxer
+It's too heavy to lift.
+
+>turn on waxer
+Faraji flips the switch on the floor waxer. It hums to life, and the brush head begins to spin.
+
+>wax floor
+Faraji pushes the floor waxer around the room, polishing the floor to a superfluously high shine.
+
+>plug in lamp
+(the table lamp)
+You must supply a second noun.
+
+>* can this be better?
+Noted.
+
+>plug lamp into outlet
+There's nothing like that nearby.
+
+>l
+Agent Faraji is in Rolle's Department Store. Once, town department stores like this were a constant of American life. Sadly, this one is almost empty of everything. A lone sign hangs on the wall. The exit is to the north.
+
+A scuffed-up table lamp sits discarded in a corner.
+
+A floor waxer sits in the center of the gleaming floor.
+
+>unplug waxer
+That doesn't seem to be something you can unplug.
+
+>* waxer should be plugged in?
+Noted.
+
+>take lamp
+(the table lamp)
+Taken.
+
+>out
+Faraji waves goodbye to the floor waxer and heads out the door.
+
+The sad drizzle soaks Faraji.
+
+Agent Faraji is on 200 block of Main Street. The street runs east and west from here. South is the edifice of Rolle's Department Store. North is the town hall.
+
+>w
+Faraji treads the eerily quiet street westward, encountering a clump of shops.
+
+Agent Faraji is on the corner of Main and Solvay. Main Street runs east from here, while Solvay Road heads north. South of here, Henry's Hot Skillet promises all of the comforts of the mid-twentieth-century diner. A bookstore named The Reading Room lies to the west, while Fresnel's Music is southwest.
+
+To the east, some shadowy figures emerge from the radio station at Main and Lake, moving northwest.
+
+>x solvay
+Agent Faraji is on the corner of Main and Solvay. Main Street runs east from here, while Solvay Road heads north. South of here, Henry's Hot Skillet promises all of the comforts of the mid-twentieth-century diner. A bookstore named The Reading Room lies to the west, while Fresnel's Music is southwest.
+
+They see the faint trace of shadowy figures off to the east, at the intersection of Main and Lake.
+
+To the east, the shadowy figures move out of view to the southeast, from Main and Lake, into the radio station.
+
+>x hot skillet
+Henry's, the local diner, is closed, the neon skillet dark and motionless.
+
+>x henry's
+Henry's, the local diner, is closed, the neon skillet dark and motionless.
+
+>x reading room
+The store window is dark. Faraji can see rows and rows of books inside.
+
+>break window
+There's nothing like that nearby.
+
+>* missing window
+Noted.
+
+>x skillet
+Which do you mean, Henry's Hot Skillet, the Skillet door, or the neon skillet?
+
+>neon
+The neon skillet is dark and motionless.
+
+>x fresnel's
+A display of brass instruments dominates the front window.
+
+To the east, some shadowy figures emerge from the radio station at Main and Lake, moving northwest.
+
+The drizzle picks up a bit, and the air grows colder.
+
+>break window
+There's nothing like that nearby.
+
+>* oops there are no brass instruments inside
+Noted.
+
+>sw
+(first opening the music store door)
+Needing a little culture, Faraji heads into the music store.
+
+Agent Faraji is in Fresnel's Music. The music store, like most of the town, is empty of all but a few items of little value. The exit is to the northeast.
+
+A tuning fork lies on the counter.
+
+>x items
+There's nothing like that nearby.
+
+>* oops
+Noted.
+
+>x fork
+A tuning fork, used to tune musical instruments.
+
+>put fork in mouth
+There's nothing like that nearby.
+
+>take fork
+Taken.
+
+>strike fork
+Faraji strikes the tuning fork. It sounds a pure 440 Hz tone which stretches for several seconds.
+
+>strike fork on counter
+I only understood you as far as wanting to strike the tuning fork.
+
+>* this would be nice
+Noted.
+
+>l
+Agent Faraji is in Fresnel's Music. The music store, like most of the town, is empty of all but a few items of little value. The exit is to the northeast.
+
+>x counter
+A typical store counter, bare of most items.
+
+>* put a poster in here
+Noted.
+
+>ne
+Faraji leaves the music store.
+
+Faraji shivers in the cold rain.
+
+Agent Faraji is on the corner of Main and Solvay. Main Street runs east from here, while Solvay Road heads north. South of here, Henry's Hot Skillet promises all of the comforts of the mid-twentieth-century diner. A bookstore named The Reading Room lies to the west, while Fresnel's Music is southwest.
+
+>taste rain
+I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+>x rain
+Large drops of rain fall from the dark sky.
+
+>i
+Faraji is carrying:
+  a tuning fork
+  a table lamp (missing a bulb)
+  a bell
+  a red key
+  Tribes of New York
+  a recall button
+  a mystic compass
+  a pair of astral lenses
+
+>put on lenses
+Faraji puts on the pair of astral lenses.
+
+>l
+Agent Faraji is on the corner of Main and Solvay. Main Street runs east from here, while Solvay Road heads north. South of here, Henry's Hot Skillet promises all of the comforts of the mid-twentieth-century diner. A bookstore named The Reading Room lies to the west, while Fresnel's Music is southwest.
+
+The rain falls in a steady downpour.
+
+>x compass
+The mystic compass shows nothing.
+
+>remove lenses
+Faraji takes off the pair of astral lenses.
+
+The rain falls in a steady rhythm.
+
+>s
+(first opening the Skillet door)
+(first unlocking the Skillet door)
+Faraji lacks a key that fits the Skillet door.
+
+>x door
+Which do you mean, the music store door, the bookstore door, or the Skillet door?
+
+>skillet
+An old-fashioned swinging door, it reads "Henry's Hot Skillet".
+
+To the north, some shadowy figures emerge from the park at the road leading out of town, moving west.
+
+>i
+Faraji is carrying:
+  a tuning fork
+  a table lamp (missing a bulb)
+  a bell
+  a red key
+  Tribes of New York
+  a recall button
+  a mystic compass
+  a pair of astral lenses
+
+To the north, the shadowy figures move out of view to the northwest.
+
+>put on lenses
+Faraji puts on the pair of astral lenses.
+
+>strike fork
+Faraji strikes the tuning fork. It sounds a pure 440 Hz tone which stretches for several seconds.
+
+>hit fork
+Faraji strikes the tuning fork. It sounds a pure 440 Hz tone which stretches for several seconds.
+
+>bang fork
+Faraji gives the tuning fork a quick knock, but nothing happens.
+
+>ring fork
+Faraji strikes the tuning fork. It sounds a pure 440 Hz tone which stretches for several seconds.
+
+To the north, some shadowy figures come into view from the northwest, walking on the road leading out of town.
+
+>x door
+Which do you mean, the music store door, the bookstore door, or the Skillet door?
+
+>skillet
+An old-fashioned swinging door, it reads "Henry's Hot Skillet".
+
+To the north, the shadowy figures move out of view to the northwest.
+
+>l
+Agent Faraji is on the corner of Main and Solvay. Main Street runs east from here, while Solvay Road heads north. South of here, Henry's Hot Skillet promises all of the comforts of the mid-twentieth-century diner. A bookstore named The Reading Room lies to the west, while Fresnel's Music is southwest.
+
+>break skillet. door
+Which do you mean, Henry's Hot Skillet, the Skillet door, or the neon skillet?
+
+>break skillet door
+Violence isn't the answer to this one.
+
+The drizzle falls steadily, chilling the air.
+
+>s
+(first opening the Skillet door)
+(first unlocking the Skillet door)
+Faraji lacks a key that fits the Skillet door.
+
+>x window
+There's nothing like that nearby.
+
+>x henry's
+Henry's, the local diner, is closed, the neon skillet dark and motionless.
+
+>x ground
+Nicely-maintained black asphalt.
+
+>w
+(first opening the bookstore door)
+Faraji, hankering for a good book, heads into the bookstore.
+
+Agent Faraji is in the Reading Room. The reading room is a small, cozy space, with a number of comfortable chairs and a few tables. A sales counter is at the back of the room. Bookshelves lead back into the depths of the store. A narrow staircase leads down and the front door is east.
+
+A brown book titled Astral Secrets lies on the sales counter.
+
+Wearing the astral lenses in fluorescent light is blinding. They quickly remove the glasses.
+
+>take chairs
+Faraji can't take that.
+
+>take table
+(the table lamp)
+Faraji already has that.
+
+>* oops
+Noted.
+
+>take tables
+Faraji can't take that.
+
+>take all
+Astral Secrets: Taken.
+
+>* change to Faraji quickly removes
+Noted.
+
+>l
+Agent Faraji is in the Reading Room. The reading room is a small, cozy space, with a number of comfortable chairs and a few tables. A sales counter is at the back of the room. Bookshelves lead back into the depths of the store. A narrow staircase leads down and the front door is east.
+
+>x shelves
+The bookshelves are filled with a variety of books, from the latest bestsellers to obscure, out-of-print volumes. Faraji chooses one at random:
+
+The Unbearable Horror of Time by Hortense Etrange
+Genre: Horror
+
+Hortense Etrange's breakthrough novel, and also her last. The Unbearable Horror of Time is a chilling tale of time travel in the tradition of some really famous time travel stories you've probably heard of but she's never read. The author's unique style and voice will haunt you long after you've finished reading. A must-read for fans of horror, science fiction, and existential dread.
+
+>x shelves
+The bookshelves are filled with a variety of books, from the latest bestsellers to obscure, out-of-print volumes. Faraji chooses one at random:
+
+Rational Origami by Ishir? Honda
+Genre: Crafts/Philosophy
+
+Do you ever feel like your origami is just too emotional? Ishir? Honda's demystifying new book will show you how to fold paper without getting all weepy about it.
+
+>x shelves
+The bookshelves are filled with a variety of books, from the latest bestsellers to obscure, out-of-print volumes. Faraji chooses one at random:
+
+Lizard People: The Truth by Chip Flemki
+Genre: Conspiracy Theory
+
+Afraid of lizard people? With good reason! Chip Flemki reveals how many there are, where they live, and what coffee shops they frequent. Not for the faint of heart.
+
+>take lizard people
+Tsk, tsk. That would be stealing.
+
+>open book
+Which do you mean, Astral Secrets or Tribes of New York?
+
+>open lizard people book
+There's nothing like that nearby.
+
+>* hmm
+Noted.
+
+>read book
+Which do you mean, Astral Secrets or Tribes of New York?
+
+>read lizard people book
+There's nothing like that nearby.
+
+>read lizard people
+Lizard People: The Truth by Chip Flemki
+Genre: Conspiracy Theory
+
+Afraid of lizard people? With good reason! Chip Flemki reveals how many there are, where they live, and what coffee shops they frequent. Not for the faint of heart.
+
+>* allow lizard people book
+Noted.
+
+>* rationalize not reading book
+Noted.
+
+>l
+Agent Faraji is in the Reading Room. The reading room is a small, cozy space, with a number of comfortable chairs and a few tables. A sales counter is at the back of the room. Bookshelves lead back into the depths of the store. A narrow staircase leads down and the front door is east.
+
+>take all
+There is nothing there.
+
+>* there is nothing to take
+Noted.
+
+>sit in chair
+Faraji gets onto the bookstore chairs.
+
+>* haha
+Noted.
+
+>sleep
+Faraji isn't feeling especially drowsy.
+
+>punch myself
+Violence isn't the answer to this one.
+
+>d
+(first getting off the bookstore chairs)
+Faraji heads down the stairs into the basement.
+
+Agent Faraji is in the Bookstore Basement. The basement is dark and musty, with a number of shelves and boxes of books. The walls are made of old, crumbling brick. There is a faint breeze. A narrow staircase leads up.
+
+An extension cord lies on the floor.
+
+A book with a green cover titled The Ecology of Root Vegetables lies on the floor here.
+
+>smell basement
+Which do you mean, the basement stairs or the basement shelves?
+
+>stairs
+Faraji smells nothing unexpected.
+
+>* this is not right - should allow referencing bookstore basement
+Noted.
+
+>x basement
+Which do you mean, the basement stairs, the basement shelves, or the Bookstore Basement?
+
+>* here it's fine
+Noted.
+
+>smell
+Faraji smells nothing unexpected.
+
+>l
+Agent Faraji is in the Bookstore Basement. The basement is dark and musty, with a number of shelves and boxes of books. The walls are made of old, crumbling brick. There is a faint breeze. A narrow staircase leads up.
+
+An extension cord lies on the floor.
+
+A book with a green cover titled The Ecology of Root Vegetables lies on the floor here.
+
+>take all
+extension cord: Taken.
+The Ecology of Root Vegetables: Taken.
+
+>* change stealing message from before to something better
+Noted.
+
+>x brick
+The walls look as though they are crumbling with age.
+
+>x breeze
+An almost imperceptible breeze wafts through the basement, smelling faintly of sewage.
+
+>* add smell
+Noted.
+
+>read root
+A book with a green cover, titled "The Ecology of Root Vegetables". The author is listed as Dr. A. Zilman. The book is a comprehensive study of root vegetables. There is a whole chapter on the rutabaga, including its history, cultivation, and uses in various cultures. One passage mentions its potential use as a weapon against "evil earth demons".
+
+>read rutabaga chapter
+There's nothing like that nearby.
+
+>read about rutabagas
+I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+>read ecology
+A book with a green cover, titled "The Ecology of Root Vegetables". The author is listed as Dr. A. Zilman. The book is a comprehensive study of root vegetables. There is a whole chapter on the rutabaga, including its history, cultivation, and uses in various cultures. One passage mentions its potential use as a weapon against "evil earth demons".
+
+>* lookup rutabaga
+Noted.
+
+>lookup rutabaga
+I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+>look up rutabaga
+I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+>look up rutabaga in ecology
+Faraji discovers nothing of interest in The Ecology of Root Vegetables.
+
+>* allow read chapter?
+Noted.
+
+>l
+Agent Faraji is in the Bookstore Basement. The basement is dark and musty, with a number of shelves and boxes of books. The walls are made of old, crumbling brick. There is a faint breeze. A narrow staircase leads up.
+
+>plug in lamp
+(the table lamp)
+You must supply a second noun.
+
+>x lamp cord
+A power cord for the table lamp. It is not plugged into anything.
+
+>plug lamp cord into outlet
+There's nothing like that nearby.
+
+>x boxes
+The boxes are filled with old, dusty books.
+
+>x shelves
+The shelves host a smattering of books, mostly old and dusty.
+
+>x books
+The boxes are filled with old, dusty books.
+
+>take all
+There is nothing there.
+
+>u
+Faraji heads back up the stairs to the bookstore.
+
+Agent Faraji is in the Reading Room. The reading room is a small, cozy space, with a number of comfortable chairs and a few tables. A sales counter is at the back of the room. Bookshelves lead back into the depths of the store. A narrow staircase leads down and the front door is east.
+
+>x counter
+An ordinary sales counter.
+
+>look under counter
+Faraji finds nothing of interest.
+
+>get on counter
+That's not something Faraji can enter.
+
+>put lamp on counter
+(the table lamp on the sales counter)
+Putting things on the sales counter would achieve nothing.
+
+>i
+Faraji is carrying:
+  The Ecology of Root Vegetables
+  an extension cord
+  Astral Secrets
+  a tuning fork
+  a table lamp (missing a bulb)
+  a bell
+  a red key
+  Tribes of New York
+  a recall button
+  a mystic compass
+  a pair of astral lenses
+
+>read astral
+Which do you mean, Astral Secrets or the pair of astral lenses?
+
+>secrets
+A book with a plain brown cover, titled "Astral Secrets". The author is listed as Jeremiah Horton.
+
+Flipping through the book, Faraji finds a dog-eared page. The page shows a diagram of a small, metallic, cylindrical object, which is labeled "astral resonator". The text describes the resonator as a device for opening a portal through the astral plane. It goes on to describe the components of the device: a source of resonance, a source of light, and an "astral lens", which it declines to describe further. The text also mentions that the resonator is powered by a source of electricity.
+
+>* does the player mean reading the pair of astral lenses: it is very unlikely.
+Noted.
+
+>e
+Faraji heads back out into the street.
+
+The drizzle picks up a bit, and the air grows colder.
+
+Agent Faraji is on the corner of Main and Solvay. Main Street runs east from here, while Solvay Road heads north. South of here, Henry's Hot Skillet promises all of the comforts of the mid-twentieth-century diner. A bookstore named The Reading Room lies to the west, while Fresnel's Music is southwest.
+
+To the north, some shadowy figures come into view from the north, walking on the road leading out of town.
+
+>n
+Faraji heads north along the west side of the town hall.
+
+Agent Faraji is walking on Solvay Road 100 block. Solvay heads north and south. To the west is the fire station, while to the east is the side of the town hall.
+
+They see the faint trace of shadowy figures off to the north, walking on the road leading out of town.
+
+>n
+Faraji heads north, away from the town center.
+
+Agent Faraji is walking on Solvay Road leading out of town. Solvay Road bends here, leading northwest out of town and south back into town. East is the park, and to the west is Horton House. One can walk down to the lake shore to the north.
+
+Three humanoid figures are here, each with a long, scaly tail and a head that looks like a lizard's. They are dressed in smart grey suits. They are hissing loudly in what seems to be intelligent communication. One is carrying some kind of shiny metal object.
+
+They notice Faraji and stop talking. One of them steps forward and says in a guttural hiss, "So it is one of Doris's friends. We have been expecting you. You will not hinder us!"
+
+>take shiny metal object
+That seems to belong to the group of lizard people.
+
+The lizard people hiss, creating a strange cloud of thick vapor. Faraji feels light-headed and disoriented. When the vapor clears, they are somewhere else...
+
+Agent Faraji is on the radio station roof. They can see the obelisk in the park clearly from here. The broadcast tower rises many feet above them. The exit is down. A metal cabinet is attached to the foot of the tower, held shut by a padlock.
+
+>i
+Faraji is carrying:
+  The Ecology of Root Vegetables
+  an extension cord
+  Astral Secrets
+  a tuning fork
+  a table lamp (missing a bulb)
+  a bell
+  a red key
+  Tribes of New York
+  a recall button
+  a mystic compass
+  a pair of astral lenses
+
+>look up
+The rain falls steadily, soaking the ground.
+
+>x tower
+A tall, steel lattice structure, rising prominently above the building. This kind of tower was designed to maximize the height for better signal transmission and reception in the era before widespread cable and satellite technology. Strangely, the bars of the tower near roof-level are bent inward to form a small platform. It's almost as if something is meant to be mounted there.
+
+>* remove "the" height
+Noted.
+
+>i
+Faraji is carrying:
+  The Ecology of Root Vegetables
+  an extension cord
+  Astral Secrets
+  a tuning fork
+  a table lamp (missing a bulb)
+  a bell
+  a red key
+  Tribes of New York
+  a recall button
+  a mystic compass
+  a pair of astral lenses
+
+>mount lamp on platform
+(the table lamp on the platform)
+That doesn't seem to be the right thing to put there.
+
+>get on platform
+That's not something Faraji can enter.
+
+>* it's far too small
+Noted.
+
+>x platform
+The platform is a small, square area formed by the inward-bent bars of the broadcast tower. It's just large enough to hold a small object. There are two rings set into the back of the platform, allowing something to be attached there.
+
+>l
+Agent Faraji is on the radio station roof. They can see the obelisk in the park clearly from here. The broadcast tower rises many feet above them. The exit is down. A metal cabinet is attached to the foot of the tower, held shut by a padlock.
+
+>x obelisk
+The obelisk in the park is clearly visible from here. 
+
+>open padlock with key
+That key doesn't fit.
+
+>open padlock
+It seems to be locked.
+
+>* should try keys
+Noted.
+
+>open cabinet
+(first unlocking the metal cabinet)
+Faraji lacks a key that fits the metal cabinet.
+
+>* hmm not so good
+Noted.
+
+>break padlock
+Violence isn't the answer to this one.
+
+>d
+Faraji heads back down the stairs to the station.
+
+Agent Faraji is in Radio Station WGXC. This is the town radio station. An eye-catching sign over the door reads "WGXC 'Galaxy' Radio 1055 AM".
+
+A staircase runs upwards, presumably to the roof and the broadcast antenna. The broadcast booth is to the south. The exit is northwest.
+
+>x sign
+The sign reads "WGXC 'Galaxy' Radio 1055 AM".
+
+>s
+Faraji enters the broadcast booth.
+
+Agent Faraji is in the broadcast booth. The broadcast booth is a small empty room, as all the broadcasting equipment has been moved out. There is an empty bin that would normally hold the records currently in rotation, and another bin marked "trash", filled with discarded records. An old turntable has been left here. A couple of old speakers have been left attached at the top of the wall. The exit is north.
+
+>x bin
+Which do you mean, the rotation bin or the trash bin?
+
+>trash
+The trash bin is filled with discarded records, including Boo boo ba-doo boo boo boo by The Four Mouths, Isn't It Strange I Don't Love You? by Peggy Patti, Stop Calling Me on the Telephone, Darling by Deanna and the Deans, Norbert the Narwhal by The ABCs, Silly Little Love Song by Patti Peggy, and I'd Never Call You a Moron by Peggy Perry.
+
+>* paige petty
+Noted.
+
+>x telephone
+It's a typical 7" vinyl record, with a label on one side.
+
+>x all
+You can't use multiple objects with that verb.
+
+>x rotation
+The bin is empty.
+
+>l
+Agent Faraji is in the broadcast booth. The broadcast booth is a small empty room, as all the broadcasting equipment has been moved out. There is an empty bin that would normally hold the records currently in rotation, and another bin marked "trash", filled with discarded records. An old turntable has been left here. A couple of old speakers have been left attached at the top of the wall. The exit is north.
+
+>x turntable
+The turntable looks old but functional. Its power and output are wired directly into the wall.
+
+>play telephone record
+There's nothing like that nearby.
+
+>play telephone
+Faraji puts Stop Calling Me on the Telephone, Darling by Deanna and the Deans on the turntable.
+
+Faraji starts the turntable, but nothing happens. There seems to be no power.
+
+>* should work with record
+Noted.
+
+>play record
+Faraji starts the turntable, but nothing happens. There seems to be no power.
+
+>turn on turntable
+Faraji starts the turntable, but nothing happens. There seems to be no power.
+
+>take all
+There is nothing there.
+
+>take all from trash bin
+There is nothing there.
+
+>* that should work
+Noted.
+
+>l
+Agent Faraji is in the broadcast booth. The broadcast booth is a small empty room, as all the broadcasting equipment has been moved out. There is an empty bin that would normally hold the records currently in rotation, and another bin marked "trash", filled with discarded records. An old turntable has been left here. A couple of old speakers have been left attached at the top of the wall. The exit is north.
+
+>x turntable
+The turntable looks old but functional. Its power and output are wired directly into the wall.
+
+On the old turntable is Stop Calling Me on the Telephone, Darling by Deanna and the Deans.
+
+>* should i make it obvious that power is out?
+Noted.
+
+>x speakers
+The speakers are old and dusty, but they look like they still work.
+
+>* might
+Noted.
+
+>save
+Ok.
+
+>script off
+
+End of transcript.
+Start of a transcript of
+
+The Bureau of Strange Happenings
+An Interactive Phenomenon by Phil Riley
+Release 1 / Serial number 250414 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
+Identification number: //F61EFB05-03A9-4894-B076-9E767F9163A8//
+Interpreter version 0.6.1 / VM 3.1.3 / Library serial number 080126
+Standard Rules version 3/120430 by Graham Nelson
+Epistemology version 9 by Eric Eve
+Conversation Framework version 12 by Eric Eve
+Conversation Responses version 7 by Eric Eve
+Conversational Defaults version 3 by Eric Eve
+Formatting Capture version 2/221014 by Daniel Stelzer (based on Text Capture by Eric Eve)
+Undo Output Control version 5/170902 by Erik Temple
+Gender Options version 3/210331 by Nathanael Nerode
+Exit Lister version 11 by Eric Eve
+Secret Doors by Gavin Lambert
+Far Away version 5/160517 by Jon Ingold
+
+>* put design as a noun in park
+Noted.
+
+>l
+Agent Faraji is in the First Utilitarian Church of Enigma Lake. The interior is dimly lit by the stained glass windows, and the pews are arranged in neat rows facing the pulpit. A standard electrical outlet is set into the wall. To the east is the vestry. Faraji can also take a ladder up to the steeple, or stairs down to the basement. The exit is to the west.
+
+Also here is a table lamp (missing a bulb and plugged into the electrical outlet).
+
+>d
+Agent Faraji is in the dark. Some light would be nice.
+
+>* mention lamp is droppped when plugged in
+Noted.
+
+>put on lenses
+Faraji puts on the pair of astral lenses.
+
+Agent Faraji is in the church basement. The basement is a shock to behold after the simple church above. It's a large, open space, with walls painted with scenes of humans and lizard people in battle, with aliens and platypuses looking on in horror. There is an ornate altar at the far end of the room. The exit is up.
+
+It looks like the fluorescent tubes in the ceiling are burned out.
+
+>x altar
+The altar is a strange, ornate thing, more like a pagan idol than a Utilitarian altar.
+
+On the basement altar is The Book of Utilitarianism.
+
+>take all
+There is nothing there.
+
+>* oops
+Noted.
+
+>take book
+(The Book of Utilitarianism)
+Faraji tries to take the book, but a painful shock stops them.
+
+>read book
+(The Book of Utilitarianism)
+Looking at the Book of Utilitarianism through the astral lenses is unbearable. The text is a jumble of letters and colors, and the words seem to twist and writhe on the page.
+
+>l
+Agent Faraji is in the church basement. The basement is a shock to behold after the simple church above. It's a large, open space, with walls painted with scenes of humans and lizard people in battle, with aliens and platypuses looking on in horror. There is an ornate altar at the far end of the room. The exit is up.
+
+It looks like the fluorescent tubes in the ceiling are burned out.
+
+>u
+Agent Faraji is in the First Utilitarian Church of Enigma Lake. The interior is dimly lit by the stained glass windows, and the pews are arranged in neat rows facing the pulpit. A standard electrical outlet is set into the wall. To the east is the vestry. Faraji can also take a ladder up to the steeple, or stairs down to the basement. The exit is to the west.
+
+Also here is a table lamp (missing a bulb and plugged into the electrical outlet).
+
+>u
+Faraji climbs the ladder to the steeple.
+
+The sky is void of stars tonight.
+
+Agent Faraji is in the church steeple. From here, they can see the obelisk in the park clearly. Someone has set up a tripod here. A telescope is mounted on it.
+
+A ladder leads down to the church proper.
+
+They see the faint trace of shadowy figures off to the west, walking on Lake Street by the park.
+
+To the west, the shadowy figures move west, from Lake Street by the park into the park.
+
+>x obelisk
+The obelisk in the park is clearly visible from here. 
+
+To the west, the shadowy figures move east, emerging from the park to Lake Street by the park.
+
+>x shadowy figures
+Faraji can't make out much detail from this distance. They are humanoid, that much is clear.
+
+To the west, the shadowy figures move north, at the intersection of Lake Street and Ridge Road.
+
+>l
+Agent Faraji is in the church steeple. From here, they can see the obelisk in the park clearly. Someone has set up a tripod here. A telescope is mounted on it.
+
+A ladder leads down to the church proper.
+
+They see the faint trace of shadowy figures off to the northwest, at the intersection of Lake Street and Ridge Road.
+
+To the northwest, the shadowy figures move out of view to the west.
+
+>x tripod
+A tripod with a telescope mounted on it.
+
+To the northwest, some shadowy figures come into view from the west, at the intersection of Lake Street and Ridge Road.
+
+A light drizzle begins to fall, chilly in the night air.
+
+>look through telescope
+The telescope is pointed at the obelisk in the park.
+
+To the northwest, the shadowy figures move south, walking on Lake Street by the park.
+
+>point telescope northwest
+I didn't understand that sentence.
+
+>* it's mounted in place or something
+Noted.
+
+>l
+Agent Faraji is in the church steeple. From here, they can see the obelisk in the park clearly. Someone has set up a tripod here. A telescope is mounted on it.
+
+A ladder leads down to the church proper.
+
+They see the faint trace of shadowy figures off to the west, walking on Lake Street by the park.
+
+>x window
+There's nothing like that nearby.
+
+>x windows
+The steeple is surrounded by the typical Utilitarian perfectly clear stained glass windows.
+
+To the west, the shadowy figures move north, at the intersection of Lake Street and Ridge Road.
+
+>* remove windows?
+Noted.
+
+>d
+Faraji climbs back down the ladder to the church.
+
+Agent Faraji is in the First Utilitarian Church of Enigma Lake. The interior is dimly lit by the stained glass windows, and the pews are arranged in neat rows facing the pulpit. A standard electrical outlet is set into the wall. To the east is the vestry. Faraji can also take a ladder up to the steeple, or stairs down to the basement. The exit is to the west.
+
+Also here is a table lamp (missing a bulb and plugged into the electrical outlet).
+
+>e
+Faraji steps into the vestry, hoping to find some vests.
+
+Agent Faraji is in the vestry. It's a small room, with an exit leading to the church proper to the west. A lovely tapestry hangs on the wall.
+
+>x tapestry
+An intricate tapestry, depicting a scene of a medieval village. It's a bit out of place in a church, but it's lovely.
+
+>take tapestry
+Removing the tapestry from the wall might incur the wrath of God.
+
+>look behind tapestry
+Faraji pushes the tapestry aside, revealing a circuit breaker switch mounted on the wall.
+
+>flip circuit breaker switch
+Faraji switches the circuit breaker on.
+
+>turn off breaker
+Faraji switches the circuit breaker off.
+
+>flip circuit breaker switch
+Faraji switches the circuit breaker on.
+
+>reset breaker
+I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+>* add reset
+Noted.
+
+>d
+Faraji can't just dig downward.
+
+>w
+Faraji leaves the vestry and reenters the sanctuary.
+
+Agent Faraji is in the First Utilitarian Church of Enigma Lake. The interior is dimly lit by the stained glass windows, and the pews are arranged in neat rows facing the pulpit. A standard electrical outlet is set into the wall. To the east is the vestry. Faraji can also take a ladder up to the steeple, or stairs down to the basement. The exit is to the west.
+
+Also here is a table lamp (missing a bulb and plugged into the electrical outlet).
+
+>* shouldn't allow faraji to get killed when power off
+Noted.
+
+>d
+Agent Faraji is in the church basement. The basement is a shock to behold after the simple church above. It's a large, open space, with walls painted with scenes of humans and lizard people in battle, with aliens and platypuses looking on in horror. There is an ornate altar at the far end of the room. The exit is up.
+
+It looks like the fluorescent tubes in the ceiling are burned out.
+
+>remove lenses
+Faraji takes off the pair of astral lenses.
+
+It is now pitch dark in here!
+
+>u
+Agent Faraji is in the First Utilitarian Church of Enigma Lake. The interior is dimly lit by the stained glass windows, and the pews are arranged in neat rows facing the pulpit. A standard electrical outlet is set into the wall. To the east is the vestry. Faraji can also take a ladder up to the steeple, or stairs down to the basement. The exit is to the west.
+
+Also here is a table lamp (missing a bulb and plugged into the electrical outlet).
+
+>x pews
+The pews are arranged in neat rows, facing the pulpit.
+
+>look under pews
+Faraji finds nothing of interest.
+
+>u
+The drizzle falls steadily, chilling the air.
+
+Agent Faraji is in the church steeple. From here, they can see the obelisk in the park clearly. Someone has set up a tripod here. A telescope is mounted on it.
+
+A ladder leads down to the church proper.
+
+>d
+Agent Faraji is in the First Utilitarian Church of Enigma Lake. The interior is dimly lit by the stained glass windows, and the pews are arranged in neat rows facing the pulpit. A standard electrical outlet is set into the wall. To the east is the vestry. Faraji can also take a ladder up to the steeple, or stairs down to the basement. The exit is to the west.
+
+Also here is a table lamp (missing a bulb and plugged into the electrical outlet).
+
+>i
+Faraji is carrying:
+  The Ecology of Root Vegetables
+  an extension cord
+  Astral Secrets
+  a tuning fork
+  a bell
+  a red key
+  Tribes of New York
+  a recall button
+  a mystic compass
+  a pair of astral lenses
+
+>w
+Faraji leaves the silent church behind.
+
+The chill of the drizzle seeps into Faraji's bones.
+
+Agent Faraji is walking on Lake Street by the park. Lake Street runs north and south from here. To the west is the park, while to the east is the First Utilitarian Church of Enigma Lake.
+
+Three humanoid figures are here, each with a long, scaly tail and a head that looks like a lizard's. They are dressed in smart grey suits. They are hissing loudly in what seems to be intelligent communication. One is carrying some kind of shiny metal object.
+
+They notice Faraji and stop talking. One of them steps forward and says in a guttural hiss, "Silly human. You will fail!"
+
+>run
+You'll have to say which compass direction to go in.
+
+>run north
+The lizard people block the way.
+
+The lizard people hiss, creating a strange cloud of thick vapor. Faraji feels light-headed and disoriented. When the vapor clears, they are somewhere else...
+
+Agent Faraji is at the intersection of Main and Lake. Main goes west, while Lake runs north. The corner of the town hall is to the northwest, although it cannot be entered there. Southeast is the entrance to WGXC "Galaxy" Radio. There is a broadcast tower on top of the building.
+
+They see the faint trace of shadowy figures off to the north, walking on Lake Street by the park.
+
+>nw
+Faraji can't enter the town hall from here.
+
+>n
+Agent Faraji is walking on Lake Street by the gym. Lake Street runs north and south from here. To the east is the public gymnasium, while to the west is the town hall, which is not enterable from here.
+
+They see the faint trace of shadowy figures off to the north, walking on Lake Street by the park.
+
+>z
+Faraji stands around and waits.
+
+>z
+Faraji stands around and waits.
+
+To the north, the shadowy figures move out of view to the west, from Lake Street by the park, into the park.
+
+The drizzle falls steadily, soaking the ground.
+
+>n
+Agent Faraji is walking on Lake Street by the park. Lake Street runs north and south from here. To the west is the park, while to the east is the First Utilitarian Church of Enigma Lake.
+
+The chill of the drizzle seeps into their bones.
+
+>n
+Faraji head north along Lake Street, toward the lake.
+
+Agent Faraji is at the intersection of Lake Street and Ridge Road. The intersection lies at the edge of the lake. Lake Street runs south into town, while Ridge Road heads off into the darkness east of here. A little path along the lake shore is to the west.
+
+There is an abandoned pickup truck at the side of the road.
+
+They see the faint trace of shadowy figures off to the west, on the eastern end of the town's lake shore, north of the park.
+
+>x path
+The lake shore path runs off to the west.
+
+To the west, the shadowy figures move out of view to the south, from the eastern end of the town's lake shore, north of the park, into the park.
+
+>x truck
+(the abandoned pickup truck)
+The truck, a Ford F-1, is relatively new, with no sign as to why it was abandoned. The hood is slightly crumpled, as if it has been in a minor accident. The truck bed contains a pair of bolt cutters.
+
+>take cutters
+Taken.
+
+>undo
+Agent Faraji is at the intersection of Lake Street and Ridge Road.
+
+>get in truck
+(the abandoned pickup truck)
+(first opening the abandoned pickup truck)
+Faraji opens the door of the abandoned truck.
+
+Agent Faraji is at the intersection of Lake Street and Ridge Road (in the abandoned pickup truck). There is a glove compartment on the passenger side, closed.
+
+The intersection lies at the edge of the lake. Lake Street runs south into town, while Ridge Road heads off into the darkness east of here. A little path along the lake shore is to the west.
+
+>open glove compartment
+Faraji opens the glove compartment, revealing a brass key.
+
+>take keyt
+There's nothing like that nearby.
+
+>take key
+(the brass key)
+Taken.
+
+>close glove compartment
+Faraji closes the glove compartment.
+
+To the west, some shadowy figures emerge from the park at the eastern end of the town's lake shore, north of the park, moving north.
+
+>turn on ignition
+There's nothing like that nearby.
+
+>turn on truck
+(the abandoned pickup truck)
+None of the keys Faraji has fit the ignition.
+
+To the west, the shadowy figures move out of view to the south, from the eastern end of the town's lake shore, north of the park, into the park.
+
+>* add ignition as above
+Noted.
+
+>get out of truck
+I only understood you as far as wanting to get outside.
+
+>* oops
+Noted.
+
+>open hood
+Faraji must be outside the truck to open the hood.
+
+>out
+Faraji gets out of the abandoned pickup truck.
+
+Agent Faraji is at the intersection of Lake Street and Ridge Road. The intersection lies at the edge of the lake. Lake Street runs south into town, while Ridge Road heads off into the darkness east of here. A little path along the lake shore is to the west.
+
+There is an abandoned pickup truck at the side of the road.
+
+>open hood
+Faraji opens the truck hood, revealing a dirty car battery.
+
+>take battery
+With so much acid on the battery, it's probably best not to touch it with bare hands. To be honest, the battery looks like it's a lost cause anyway.
+
+>i
+Faraji is carrying:
+  a brass key
+  The Ecology of Root Vegetables
+  an extension cord
+  Astral Secrets
+  a tuning fork
+  a bell
+  a red key
+  Tribes of New York
+  a recall button
+  a mystic compass
+  a pair of astral lenses
+
+>hit battery with fork
+With so much acid on the battery, it's probably best not to touch it with bare hands. To be honest, the battery looks like it's a lost cause anyway.
+
+>take off shirt
+There's nothing like that nearby.
+
+>look under truck
+(the abandoned pickup truck)
+Faraji finds nothing of interest.
+
+>open glove
+Faraji can't do that from here.
+
+>enter
+Agent Faraji is at the intersection of Lake Street and Ridge Road (in the abandoned pickup truck). There is a glove compartment on the passenger side, closed.
+
+The intersection lies at the edge of the lake. Lake Street runs south into town, while Ridge Road heads off into the darkness east of here. A little path along the lake shore is to the west.
+
+To the west, some shadowy figures come into view from the west, on the eastern end of the town's lake shore, north of the park.
+
+>close hood
+Faraji must be outside the truck to close the hood.
+
+To the west, the shadowy figures move out of view to the west.
+
+>take cutters
+Faraji can't do that from inside the truck.
+
+To the west, some shadowy figures come into view from the west, on the eastern end of the town's lake shore, north of the park.
+
+Large drops of rain fall from the dark sky.
+
+>out
+Faraji gets out of the abandoned pickup truck.
+
+Agent Faraji is at the intersection of Lake Street and Ridge Road. The intersection lies at the edge of the lake. Lake Street runs south into town, while Ridge Road heads off into the darkness east of here. A little path along the lake shore is to the west.
+
+There is an abandoned pickup truck at the side of the road. The hood is open.
+
+They see the faint trace of shadowy figures off to the west, on the eastern end of the town's lake shore, north of the park.
+
+>z
+Faraji stands around and waits.
+
+To the west, the shadowy figures move out of view to the west.
+
+>w
+Faraji follows the lake shore west.
+
+Agent Faraji is on the lake shore north of the park. The rain falls steadily on the lake, creating ripples on the surface. The park is to the south, while the lake stretches off to the north, and the shore goes west. A workshed is to the southeast. A road can be seen to the east.
+
+They see the faint trace of shadowy figures off to the west, at the western end of the town's lake shore.
+
+To the west, the shadowy figures move out of view to the west.
+
+>enter workshed
+(first opening the rusty metal door)
+Agent Faraji is in the workshed. It is a small, weathered building, with a single door and no windows, and a creaky wooden floor. The interior is dimly lit by a single light bulb hanging from the ceiling. A closed cabinet is in the corner. An open rusty metal door leads out of the shed.
+
+>take chainsaw
+There's nothing like that nearby.
+
+>open cabinet
+(first unlocking the equipment cabinet)
+Faraji lacks a key that fits the equipment cabinet.
+
+>take light bulb
+Faraji unscrews the light bulb from the socket.
+
+>out
+The rain falls in a steady rhythm.
+
+Agent Faraji is on the lake shore north of the park. The rain falls steadily on the lake, creating ripples on the surface. The park is to the south, while the lake stretches off to the north, and the shore goes west. A workshed is to the southeast. A road can be seen to the east.
+
+To the west, some shadowy figures come into view from the south, at the western end of the town's lake shore.
+
+>e
+Faraji walks east along the lake shore until they reach a pair of roads.
+
+Agent Faraji is at the intersection of Lake Street and Ridge Road. The intersection lies at the edge of the lake. Lake Street runs south into town, while Ridge Road heads off into the darkness east of here. A little path along the lake shore is to the west.
+
+There is an abandoned pickup truck at the side of the road. The hood is open.
+
+>s
+Faraji heads south along Lake Street, back into town.
+
+Agent Faraji is walking on Lake Street by the park. Lake Street runs north and south from here. To the west is the park, while to the east is the First Utilitarian Church of Enigma Lake.
+
+The rain falls steadily, soaking the ground.
+
+>e
+Agent Faraji is in the First Utilitarian Church of Enigma Lake. The interior is dimly lit by the stained glass windows, and the pews are arranged in neat rows facing the pulpit. A standard electrical outlet is set into the wall. To the east is the vestry. Faraji can also take a ladder up to the steeple, or stairs down to the basement. The exit is to the west.
+
+Also here is a table lamp (missing a bulb and plugged into the electrical outlet).
+
+>unplug lamp
+(the table lamp)
+Faraji unplugs the table lamp from the electrical outlet.
+
+>plug in extension cord
+Faraji plugs the plug end of the extension cord into the electrical outlet.
+
+>plug lamp into cord
+(the table lamp into the socket end of the extension cord)
+Faraji plugs the table lamp into the socket end of the extension cord.
+
+>screw lightbulb into lamp
+There's nothing like that nearby.
+
+>screw light bulb into lamp
+Faraji puts the light bulb into the light socket.
+
+The table lamp is now lit.
+
+>* allow lightbulb
+Noted.
+
+>take lamp
+(the table lamp)
+Taken.
+
+>unplug lamp
+(the table lamp)
+Faraji unplugs the table lamp from the socket end of the extension cord.
+
+The table lamp is now unlit.
+
+>i
+Faraji is carrying:
+  the socket end of the extension cord (with the other end plugged into the electrical outlet)
+  a table lamp (with a bulb in the socket)
+  a brass key
+  The Ecology of Root Vegetables
+  Astral Secrets
+  a tuning fork
+  a bell
+  a red key
+  Tribes of New York
+  a recall button
+  a mystic compass
+  a pair of astral lenses
+
+>plug lamp into cord
+(the table lamp into the socket end of the extension cord)
+Faraji plugs the table lamp into the socket end of the extension cord.
+
+The table lamp is now lit.
+
+>unplug lamp
+(the table lamp)
+Faraji unplugs the table lamp from the socket end of the extension cord.
+
+The table lamp is now unlit.
+
+>plug lamp into socket
+(the table lamp into the electrical outlet)
+Faraji unplugs the plug end of the extension cord from the electrical outlet.
+
+They plug the table lamp into the electrical outlet.
+
+The table lamp is now lit.
+
+>plug cord into cord
+(the extension cord into the extension cord)
+Faraji plugs the extension cord into itself. What fun.
+
+>plug cord into sockeet
+There's nothing like that nearby.
+
+>plug cord into socket
+(the extension cord into the electrical outlet)
+Faraji unplugs the plug end of the extension cord from the socket end of the extension cord.
+
+They unplug the table lamp from the electrical outlet.
+
+The table lamp is now unlit.
+
+They plug the plug end of the extension cord into the electrical outlet.
+
+>plug lamp into cord
+(the table lamp into the extension cord)
+Faraji plugs the table lamp into the socket end of the extension cord.
+
+The table lamp is now lit.
+
+>i
+Faraji is carrying:
+  the plug end of the extension cord (with the table lamp plugged into the other end and plugged into the electrical outlet)
+  a brass key
+  The Ecology of Root Vegetables
+  Astral Secrets
+  a tuning fork
+  a bell
+  a red key
+  Tribes of New York
+  a recall button
+  a mystic compass
+  a pair of astral lenses
+
+>l
+Agent Faraji is in the First Utilitarian Church of Enigma Lake. The interior is dimly lit by the stained glass windows, and the pews are arranged in neat rows facing the pulpit. A standard electrical outlet is set into the wall. To the east is the vestry. Faraji can also take a ladder up to the steeple, or stairs down to the basement. The exit is to the west.
+
+. A table lamp is plugged into the socket end.
+
+The socket end of an extension cord lies on the floor, the table lamp plugged into it. The other end is in their hand.
+
+>* extra .
+Noted.
+
+>take lamp
+(the table lamp)
+Taken.
+
+>d
+Agent Faraji is in the church basement. The basement is a shock to behold after the simple church above. It's a large, open space, with walls painted with scenes of humans and lizard people in battle, with aliens and platypuses looking on in horror. There is an ornate altar at the far end of the room. The exit is up.
+
+It looks like the fluorescent tubes in the ceiling are burned out.
+
+>turn off lamp
+(the table lamp)
+Faraji switches the table lamp off.
+
+It is now pitch dark in here!
+
+>turn on lamp
+(the table lamp)
+Faraji switches the table lamp on.
+
+The table lamp is now lit.
+
+Agent Faraji is in the church basement. The basement is a shock to behold after the simple church above. It's a large, open space, with walls painted with scenes of humans and lizard people in battle, with aliens and platypuses looking on in horror. There is an ornate altar at the far end of the room. The exit is up.
+
+It looks like the fluorescent tubes in the ceiling are burned out.
+
+>read book
+(The Book of Utilitarianism)
+The text is the Book of Utilitarianism. Faraji opens to a page at random and reads:
+
+And the Lord so hated the lizard people that he smote them with a mighty smiting, and he said the cursèd word "teleology", and the lizard people screamed and ran away like scared little children.
+
+>* mention book on altar?
+Noted.
+
+>say teleology
+(to Faraji)
+They don't generally talk to themself.
+
+>* you say 'teleology' but nothing happens
+Noted.
+
+>turn page
+There's nothing like that nearby.
+
+>* add this
+Noted.
+
+>read book
+(The Book of Utilitarianism)
+The text is the Book of Utilitarianism. Faraji opens to a page at random and reads:
+
+And behold the Lord created the rutabaga, and the lizard people tasted of it and were repulsed, and the Lord said, "I shall smite thee with the rutabaga," and the lizard people said, "No, not the rutabaga!"
+
+>read book
+(The Book of Utilitarianism)
+The text is the Book of Utilitarianism. Faraji opens to a page at random and reads:
+
+And lo, the lizard people rebelled against the Lord, and the Lord said, "I'm not going to put up with that."
+
+>g
+(The Book of Utilitarianism)
+The text is the Book of Utilitarianism. Faraji opens to a page at random and reads:
+
+By the by, Gorm came upon the town of Armagast, and he saw that it was good, and he said, "I shall build a church here." And the Lord said, "No, don't do that, it's a bad idea." And Gorm said, "But Lord, I have already started." And the Lord said, "Well, okay, but don't say I didn't warn you."
+
+>open book
+The text is the Book of Utilitarianism. Faraji opens to a page at random and reads:
+
+And the Lord so hated the lizard people that he smote them with a mighty smiting, and he said the cursèd word "teleology", and the lizard people screamed and ran away like scared little children.
+
+>open book
+The text is the Book of Utilitarianism. Faraji opens to a page at random and reads:
+
+When Gorm learned of his wife's doings, he rent his garments and wept, and the Lord said, "Keep it together, man."
+
+>* prompt to read more
+Noted.
+
+>l
+Agent Faraji is in the church basement. The basement is a shock to behold after the simple church above. It's a large, open space, with walls painted with scenes of humans and lizard people in battle, with aliens and platypuses looking on in horror. There is an ornate altar at the far end of the room. The exit is up.
+
+It looks like the fluorescent tubes in the ceiling are burned out.
+
+>x aliens
+The walls are painted with scenes of humans and lizard people in battle, with aliens and platypuses looking on in horror.
+
+>x walls
+The walls are painted with scenes of humans and lizard people in battle, with aliens and platypuses looking on in horror. This church is really kind of weird.
+
+>x altar
+The altar is a strange, ornate thing, more like a pagan idol than a Utilitarian altar.
+
+On the basement altar is The Book of Utilitarianism.
+
+>close book
+Which do you mean, The Book of Utilitarianism, The Ecology of Root Vegetables, Astral Secrets, or Tribes of New York?
+
+>utilitarianism
+It isn't something Faraji can close.
+
+>* hmm
+Noted.
+
+>u
+Agent Faraji is in the First Utilitarian Church of Enigma Lake. The interior is dimly lit by the stained glass windows, and the pews are arranged in neat rows facing the pulpit. A standard electrical outlet is set into the wall. To the east is the vestry. Faraji can also take a ladder up to the steeple, or stairs down to the basement. The exit is to the west.
+
+>w
+The moon is hidden behind the clouds.
+
+Agent Faraji is walking on Lake Street by the park. Lake Street runs north and south from here. To the west is the park, while to the east is the First Utilitarian Church of Enigma Lake.
+
+>s
+Faraji heads south along Lake Street, towards the center of town.
+
+Agent Faraji is walking on Lake Street by the gym. Lake Street runs north and south from here. To the east is the public gymnasium, while to the west is the town hall, which is not enterable from here.
+
+To the north, some shadowy figures come into view from the west, at the intersection of Lake Street and Ridge Road.
+
+A light drizzle begins to fall, chilly in the night air.
+
+>i
+Faraji is carrying:
+  an extension cord (plugged into the electrical outlet and with the table lamp plugged into it)
+  a table lamp (with a bulb in the socket, providing light, and plugged into the extension cord)
+  a brass key
+  The Ecology of Root Vegetables
+  Astral Secrets
+  a tuning fork
+  a bell
+  a red key
+  Tribes of New York
+  a recall button
+  a mystic compass
+  a pair of astral lenses
+
+To the north, the shadowy figures move south, walking on Lake Street by the park.
+
+The drizzle stops, at least for now.
+
+>undo
+Agent Faraji is walking on Lake Street by the gym.
+
+>w
+They can't enter the town hall from here.
+
+To the north, the shadowy figures move out of view to the west.
+
+>undo
+Agent Faraji is walking on Lake Street by the gym.
+
+>undo
+Agent Faraji is walking on Lake Street by the park.
+
+>w
+Agent Faraji is in Enigma Park. The central focus of the park is a large obelisk inscribed with the names of the town's citizens lost in the Great War. Firs and maples line the paths. The town hall is to the south, and other exits are to the north, west, and east. Other egress is blocked by iron fences.
+
+>i
+Faraji is carrying:
+  an extension cord (plugged into the electrical outlet and with the table lamp plugged into it)
+  a table lamp (with a bulb in the socket, providing light, and plugged into the extension cord)
+  a brass key
+  The Ecology of Root Vegetables
+  Astral Secrets
+  a tuning fork
+  a bell
+  a red key
+  Tribes of New York
+  a recall button
+  a mystic compass
+  a pair of astral lenses
+
+>e
+Agent Faraji is walking on Lake Street by the park. Lake Street runs north and south from here. To the west is the park, while to the east is the First Utilitarian Church of Enigma Lake.
+
+>* cord should only reach to here
+Noted.
+
+>s
+Faraji heads south along Lake Street, towards the center of town.
+
+Agent Faraji is walking on Lake Street by the gym. Lake Street runs north and south from here. To the east is the public gymnasium, while to the west is the town hall, which is not enterable from here.
+
+A light drizzle begins to fall, chilly in the night air.
+
+>s
+Faraji strolls south along Lake Street to where it meets Main.
+
+Agent Faraji is at the intersection of Main and Lake. Main goes west, while Lake runs north. The corner of the town hall is to the northwest, although it cannot be entered there. Southeast is the entrance to WGXC "Galaxy" Radio. There is a broadcast tower on top of the building.
+
+>se
+Faraji enters the radio station, which is oddly quiet.
+
+Agent Faraji is in Radio Station WGXC. This is the town radio station. An eye-catching sign over the door reads "WGXC 'Galaxy' Radio 1055 AM".
+
+A staircase runs upwards, presumably to the roof and the broadcast antenna. The broadcast booth is to the south. The exit is northwest.
+
+>s
+Agent Faraji is in the broadcast booth. The broadcast booth is a small empty room, as all the broadcasting equipment has been moved out. There is an empty bin that would normally hold the records currently in rotation, and another bin marked "trash", filled with discarded records. An old turntable has been left here. A couple of old speakers have been left attached at the top of the wall. The exit is north.
+
+>play record
+Faraji starts the turntable, but nothing happens. There seems to be no power.
+
+>turn on turntable
+Faraji starts the turntable, but nothing happens. There seems to be no power.
+
+>n
+Agent Faraji is in Radio Station WGXC. This is the town radio station. An eye-catching sign over the door reads "WGXC 'Galaxy' Radio 1055 AM".
+
+A staircase runs upwards, presumably to the roof and the broadcast antenna. The broadcast booth is to the south. The exit is northwest.
+
+>u
+Faraji climbs the stairs to the roof.
+
+The rain falls in a steady downpour.
+
+Agent Faraji is on the radio station roof. They can see the obelisk in the park clearly from here. The broadcast tower rises many feet above them. The exit is down. A metal cabinet is attached to the foot of the tower, held shut by a padlock.
+
+They see the faint trace of shadowy figures off to the west, on the corner of Main and Solvay.
+
+To the west, the shadowy figures move east, on the 200 block of Main Street.
+
+>* figures could be one sentence
+Noted.
+
+>z
+Faraji stands around and waits.
+
+To the northwest, the shadowy figures move west, on the corner of Main and Solvay.
+
+>l
+Agent Faraji is on the radio station roof. They can see the obelisk in the park clearly from here. The broadcast tower rises many feet above them. The exit is down. A metal cabinet is attached to the foot of the tower, held shut by a padlock.
+
+They see the faint trace of shadowy figures off to the west, on the corner of Main and Solvay.
+
+To the west, the shadowy figures move east, on the 200 block of Main Street.
+
+>z
+Faraji stands around and waits.
+
+To the northwest, the shadowy figures move out of view to the north, from the 200 block of Main Street, into the town hall.
+
+>* use to
+Noted.
+
+>* add from to all figures movement sentences
+Noted.
+
+>l
+Agent Faraji is on the radio station roof. They can see the obelisk in the park clearly from here. The broadcast tower rises many feet above them. The exit is down. A metal cabinet is attached to the foot of the tower, held shut by a padlock.
+
+>open cabinet
+(first unlocking the metal cabinet)
+Faraji lacks a key that fits the metal cabinet.
+
+To the north, some shadowy figures emerge from the park at Lake Street by the park, moving east.
+
+>x cabinet
+The metal cabinet is attached to the foot of the broadcast tower, held shut by a padlock.
+
+To the north, the shadowy figures move out of view to the west, from Lake Street by the park, into the park.
+
+The drizzle falls steadily, soaking the ground.
+
+>take cabinet
+Faraji can't take that.
+
+>i
+Faraji is carrying:
+  an extension cord (plugged into the electrical outlet and with the table lamp plugged into it)
+  a table lamp (with a bulb in the socket, providing light, and plugged into the extension cord)
+  a brass key
+  The Ecology of Root Vegetables
+  Astral Secrets
+  a tuning fork
+  a bell
+  a red key
+  Tribes of New York
+  a recall button
+  a mystic compass
+  a pair of astral lenses
+
+>d
+Agent Faraji is in Radio Station WGXC. This is the town radio station. An eye-catching sign over the door reads "WGXC 'Galaxy' Radio 1055 AM".
+
+A staircase runs upwards, presumably to the roof and the broadcast antenna. The broadcast booth is to the south. The exit is northwest.
+
+>nw
+The drizzle falls steadily, chilling the air.
+
+Agent Faraji is at the intersection of Main and Lake. Main goes west, while Lake runs north. The corner of the town hall is to the northwest, although it cannot be entered there. Southeast is the entrance to WGXC "Galaxy" Radio. There is a broadcast tower on top of the building.
+
+The drizzle stops, at least for now.
+
+>n
+Agent Faraji is walking on Lake Street by the gym. Lake Street runs north and south from here. To the east is the public gymnasium, while to the west is the town hall, which is not enterable from here.
+
+>n
+Agent Faraji is walking on Lake Street by the park. Lake Street runs north and south from here. To the west is the park, while to the east is the First Utilitarian Church of Enigma Lake.
+
+>n
+Agent Faraji is at the intersection of Lake Street and Ridge Road. The intersection lies at the edge of the lake. Lake Street runs south into town, while Ridge Road heads off into the darkness east of here. A little path along the lake shore is to the west.
+
+There is an abandoned pickup truck at the side of the road. The hood is open.
+
+>take cutters
+Taken.
+
+>s
+Agent Faraji is walking on Lake Street by the park. Lake Street runs north and south from here. To the west is the park, while to the east is the First Utilitarian Church of Enigma Lake.
+
+>s
+Agent Faraji is walking on Lake Street by the gym. Lake Street runs north and south from here. To the east is the public gymnasium, while to the west is the town hall, which is not enterable from here.
+
+Clouds have gathered over the town.
+
+>s
+Agent Faraji is at the intersection of Main and Lake. Main goes west, while Lake runs north. The corner of the town hall is to the northwest, although it cannot be entered there. Southeast is the entrance to WGXC "Galaxy" Radio. There is a broadcast tower on top of the building.
+
+A light drizzle begins to fall, chilly in the night air.
+
+>u
+Faraji can neither climb walls nor fly.
+
+>
+I beg your pardon?
+
+>se
+Agent Faraji is in Radio Station WGXC. This is the town radio station. An eye-catching sign over the door reads "WGXC 'Galaxy' Radio 1055 AM".
+
+A staircase runs upwards, presumably to the roof and the broadcast antenna. The broadcast booth is to the south. The exit is northwest.
+
+>u
+The drizzle falls steadily, soaking the ground.
+
+Agent Faraji is on the radio station roof. They can see the obelisk in the park clearly from here. The broadcast tower rises many feet above them. The exit is down. A metal cabinet is attached to the foot of the tower, held shut by a padlock.
+
+>i
+Faraji is carrying:
+  a pair of bolt cutters
+  an extension cord (plugged into the electrical outlet and with the table lamp plugged into it)
+  a table lamp (with a bulb in the socket, providing light, and plugged into the extension cord)
+  a brass key
+  The Ecology of Root Vegetables
+  Astral Secrets
+  a tuning fork
+  a bell
+  a red key
+  Tribes of New York
+  a recall button
+  a mystic compass
+  a pair of astral lenses
+
+>cut lock
+The bolt cutters make short work of the padlock. The cabinet is now open, revealing a power switch, set to off.
+
+The drizzle picks up a bit, and the air grows colder.
+
+>undo
+Agent Faraji is on the radio station roof.
+
+>l
+Agent Faraji is on the radio station roof. They can see the obelisk in the park clearly from here. The broadcast tower rises many feet above them. The exit is down. A metal cabinet is attached to the foot of the tower, held shut by a padlock.
+
+>detach cabinet from tower
+You can't untie that from that.
+
+To the north, some shadowy figures emerge from the park at Lake Street by the park, moving east.
+
+>use bolt cutters on cabinet
+I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+>cut cabinet
+Cutting it up would achieve little.
+
+To the north, the shadowy figures move out of view to the west, from Lake Street by the park, into the park.
+
+The drizzle picks up a bit, and the air grows colder.
+
+>remove cabinet from tower
+There's nothing like that nearby.
+
+>remove cabinet
+Faraji isn't wearing the metal cabinet.
+
+To the north, some shadowy figures emerge from the park at Lake Street by the park, moving east.
+
+>cut cabinet from tower
+I only understood you as far as wanting to cut the metal cabinet.
+
+>cut cabinet with cutters
+That wouldn't be very productive.
+
+To the north, the shadowy figures move out of view to the west, from Lake Street by the park, into the park.
+
+>cut bolt
+Cutting it up would achieve little.
+
+To the north, some shadowy figures emerge from the park at Lake Street by the park, moving east.
+
+>cut lock
+The bolt cutters make short work of the padlock. The cabinet is now open, revealing a power switch, set to off.
+
+To the north, the shadowy figures move south, walking on Lake Street by the gym.
+
+>turn on switch
+(the lamp switch)
+That's already on.
+
+To the northwest, the shadowy figures move north, walking on Lake Street by the park.
+
+The chill of the drizzle seeps into Faraji's bones.
+
+>* DTPM
+Noted.
+
+>turn on power switch
+Faraji switches the power switch on. The broadcast tower begins to hum loudly.
+
+>x tower
+A tall, steel lattice structure, rising prominently above the building. This kind of tower was designed to maximize the height for better signal transmission and reception in the era before widespread cable and satellite technology. Strangely, the bars of the tower near roof-level are bent inward to form a small platform. It's almost as if something is meant to be mounted there.
+
+To the north, the shadowy figures move south, walking on Lake Street by the gym.
+
+>d
+Agent Faraji is in Radio Station WGXC. This is the town radio station. An eye-catching sign over the door reads "WGXC 'Galaxy' Radio 1055 AM".
+
+A staircase runs upwards, presumably to the roof and the broadcast antenna. The broadcast booth is to the south. The exit is northwest.
+
+>s
+Agent Faraji is in the broadcast booth. The broadcast booth is a small empty room, as all the broadcasting equipment has been moved out. There is an empty bin that would normally hold the records currently in rotation, and another bin marked "trash", filled with discarded records. An old turntable has been left here. A couple of old speakers have been left attached at the top of the wall. The exit is north.
+
+>play record
+Faraji starts the turntable. The record spins, and the speakers crackle to life, playing Stop Calling Me on the Telephone, Darling by Deanna and the Deans.
+
+"I've got a new number, I've got a new line, I've got a new life, and you're not in mine."
+
+>turn over record
+There's nothing like that nearby.
+
+>flip over record
+There's nothing like that nearby.
+
+>flip record
+There's nothing like that nearby.
+
+>x calling
+It's a typical 7" vinyl record, with a label on one side.
+
+>* justify refusing to flip record
+Noted.
+
+>i
+Faraji is carrying:
+  a broken lock
+  a pair of bolt cutters
+  an extension cord (plugged into the electrical outlet and with the table lamp plugged into it)
+  a table lamp (with a bulb in the socket, providing light, and plugged into the extension cord)
+  a brass key
+  The Ecology of Root Vegetables
+  Astral Secrets
+  a tuning fork
+  a bell
+  a red key
+  Tribes of New York
+  a recall button
+  a mystic compass
+  a pair of astral lenses
+
+>l
+Agent Faraji is in the broadcast booth. The broadcast booth is a small empty room, as all the broadcasting equipment has been moved out. There is an empty bin that would normally hold the records currently in rotation, and another bin marked "trash", filled with discarded records. An old turntable has been left here. A couple of old speakers have been left attached at the top of the wall. The exit is north.
+
+>x trash
+The trash bin is filled with discarded records, including Boo boo ba-doo boo boo boo by The Four Mouths, Isn't It Strange I Don't Love You? by Peggy Patti, Norbert the Narwhal by The ABCs, Silly Little Love Song by Patti Peggy, and I'd Never Call You a Moron by Peggy Perry.
+
+>play isn't it strange
+Faraji takes Stop Calling Me on the Telephone, Darling by Deanna and the Deans off the turntable and puts Isn't It Strange I Don't Love You? by Peggy Patti on instead.
+
+Faraji starts the turntable. The record spins, and the speakers crackle to life, playing Isn't It Strange I Don't Love You? by Peggy Patti.
+
+"Isn't it strange I don't love you? Isn't it strange I don't care? Isn't it strange I don't want you? Isn't it strange I'm not there?"
+
+>play record backward
+There's nothing like that nearby.
+
+>play record backwards
+Faraji starts the turntable. The record spins, and the speakers crackle to life, playing Isn't It Strange I Don't Love You? by Peggy Patti backwards.
+
+The backwards music is eerie and unsettling, but a message can be made out clearly: "Congratulations, you've found the secret of Enigma Lake! Well, one of them, anyway. This is just the little one. The big one is still out there. In any case, the first person to email the secret phrase WGXC 'GALAXY' RADIO ROCKS ENIGMA LAKE to rileypb@gmail.com will win a prize!"
+
+>* allow backward
+Noted.
+
+>* add a date?
+Noted.
+
+>n
+Agent Faraji is in Radio Station WGXC. This is the town radio station. An eye-catching sign over the door reads "WGXC 'Galaxy' Radio 1055 AM".
+
+A staircase runs upwards, presumably to the roof and the broadcast antenna. The broadcast booth is to the south. The exit is northwest.
+
+>nw
+The drizzle picks up a bit, and the air grows colder.
+
+Agent Faraji is at the intersection of Main and Lake. Main goes west, while Lake runs north. The corner of the town hall is to the northwest, although it cannot be entered there. Southeast is the entrance to WGXC "Galaxy" Radio. There is a broadcast tower on top of the building.
+
+They see the faint trace of shadowy figures off to the north, walking on Lake Street by the gym.
+
+To the north, the shadowy figures move north, walking on Lake Street by the park.
+
+>n
+Agent Faraji is walking on Lake Street by the gym. Lake Street runs north and south from here. To the east is the public gymnasium, while to the west is the town hall, which is not enterable from here.
+
+They see the faint trace of shadowy figures off to the north, walking on Lake Street by the park.
+
+The chill of the drizzle seeps into their bones.
+
+>n
+Agent Faraji is walking on Lake Street by the park. Lake Street runs north and south from here. To the west is the park, while to the east is the First Utilitarian Church of Enigma Lake.
+
+Three humanoid figures are here, each with a long, scaly tail and a head that looks like a lizard's. They are dressed in smart grey suits. They are hissing loudly in what seems to be intelligent communication. One is carrying some kind of shiny metal object.
+
+They notice Faraji and stop talking. One of them steps forward and says in a guttural hiss, "So it is one of Doris's friends. We have been expecting you. You will not hinder us!"
+
+>say teleology
+(to the group of lizard people)
+At your word, the lizard people scream and hiss, creating a strange cloud of thick vapor. When the vapor clears, they are gone, but they have left something behind. There is a shiny astral resonator on the ground!
+
+>undo
+Agent Faraji is walking on Lake Street by the park.
+
+>teleology
+(to the group of lizard people)
+At your word, the lizard people scream and hiss, creating a strange cloud of thick vapor. When the vapor clears, they are gone, but they have left something behind. There is a shiny astral resonator on the ground!
+
+>take
+(the shiny astral resonator)
+Taken.
+
+The drizzle stops, at least for now.
+
+>x resonator
+A small, shiny, metallic, cylindrical object. One end is capped with a lens, while the other terminates in two shiny metal chains, each with a shiny metal clamp, as if it were designed to be attached to something.
+
+A light drizzle begins to fall, chilly in the night air.
+
+>yell teleology
+I only understood you as far as wanting to yell.
+
+>s
+Agent Faraji is walking on Lake Street by the gym. Lake Street runs north and south from here. To the east is the public gymnasium, while to the west is the town hall, which is not enterable from here.
+
+>s
+Agent Faraji is at the intersection of Main and Lake. Main goes west, while Lake runs north. The corner of the town hall is to the northwest, although it cannot be entered there. Southeast is the entrance to WGXC "Galaxy" Radio. There is a broadcast tower on top of the building.
+
+Large drops of rain fall from the dark sky.
+
+>se
+Agent Faraji is in Radio Station WGXC. This is the town radio station. An eye-catching sign over the door reads "WGXC 'Galaxy' Radio 1055 AM".
+
+A staircase runs upwards, presumably to the roof and the broadcast antenna. The broadcast booth is to the south. The exit is northwest.
+
+>u
+The rain falls in a steady rhythm.
+
+Agent Faraji is on the radio station roof. They can see the obelisk in the park clearly from here. The broadcast tower, humming loudly, rises many feet above them. The exit is down. A metal cabinet is attached to the foot of the tower, hanging open. Inside it is a power switch.
+
+>clamp resonator to platform
+I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+>* allow clamp
+Noted.
+
+>x tower
+A tall, steel lattice structure, rising prominently above the building. This kind of tower was designed to maximize the height for better signal transmission and reception in the era before widespread cable and satellite technology. Strangely, the bars of the tower near roof-level are bent inward to form a small platform. It's almost as if something is meant to be mounted there.
+
+>mount resonator on platform
+Faraji pushes the shiny astral resonator onto the platform, attaching the clamps to the rings. A beam of light shoots out of it and strikes the obelisk in the park. The crystal is glowing faintly.
+
+>undo
+Agent Faraji is on the radio station roof.
+
+>x platform
+The platform is a small, square area formed by the inward-bent bars of the broadcast tower. It's just large enough to hold a small object. There are two rings set into the back of the platform, allowing something to be attached there.
+
+>clamp resonator to rings
+I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+>attach resonator to rings
+Faraji pushes the shiny astral resonator onto the platform, attaching the clamps to the rings. A beam of light shoots out of it and strikes the obelisk in the park. The crystal is glowing faintly.
+
+>x obelisk
+The obelisk in the park is clearly visible from here.  A beam of light is focused on the obelisk from here, striking the crystal adornment at its apex. The crystal is glowing faintly.
+
+>d
+Agent Faraji is in Radio Station WGXC. This is the town radio station. An eye-catching sign over the door reads "WGXC 'Galaxy' Radio 1055 AM".
+
+A staircase runs upwards, presumably to the roof and the broadcast antenna. The broadcast booth is to the south. The exit is northwest.
+
+>nw
+The drizzle falls steadily, soaking the ground.
+
+Agent Faraji is at the intersection of Main and Lake. Main goes west, while Lake runs north. The corner of the town hall is to the northwest, although it cannot be entered there. Southeast is the entrance to WGXC "Galaxy" Radio. There is a broadcast tower on top of the building.
+
+A bright beam of light shoots from the broadcast tower, striking the obelisk in the park. The crystal is glowing faintly.
+
+>n
+Agent Faraji is walking on Lake Street by the gym. Lake Street runs north and south from here. To the east is the public gymnasium, while to the west is the town hall, which is not enterable from here.
+
+A bright beam of light shoots from the broadcast tower, striking the obelisk in the park. The crystal is glowing faintly.
+
+>n
+Agent Faraji is walking on Lake Street by the park. Lake Street runs north and south from here. To the west is the park, while to the east is the First Utilitarian Church of Enigma Lake.
+
+A bright beam of light shoots from the broadcast tower, striking the obelisk in the park. The crystal is glowing faintly.
+
+>w
+Agent Faraji is in Enigma Park. The central focus of the park is a large obelisk inscribed with the names of the town's citizens lost in the Great War. Firs and maples line the paths. The town hall is to the south, and other exits are to the north, west, and east. Other egress is blocked by iron fences.
+
+A bright beam of light shoots from the broadcast tower, striking the obelisk. The crystal is glowing faintly.
+
+>x crystal
+The crystal is glowing faintly.
+
+>x tower
+There's nothing like that nearby.
+
+>x obelisk
+Its faux Egyptian design is incongruous adjacent to the adamantly traditional town hall. Faraji can just make out a small crystal adornment rising from the top.
+
+>* look at tower from elsewhere?
+Noted.
+
+>w
+Agent Faraji is walking on Solvay Road leading out of town. Solvay Road bends here, leading northwest out of town and south back into town. East is the park, and to the west is Horton House. One can walk down to the lake shore to the north.
+
+A bright beam of light shoots from the broadcast tower, striking the obelisk in the park. The crystal is glowing faintly.
+
+>nw
+Faraji heads northwest, towards the lakeshore.
+
+The mystic compass pings softly.
+
+Agent Faraji is walking on Solvay Road by the lake. Solvay Road runs by the lake shore here. It continues out of town to the northwest, while to the southeast it leads back into town. A dirty shack stands opposite the lake to the west. A path along the shore leads to the east.
+
+A bright beam of light shoots from the broadcast tower, striking the obelisk in the park. The crystal is glowing faintly.
+
+>w
+Faraji enters the dirty shack.
+
+Agent Faraji is in a dirty shack. Someone lives here, though not at all luxuriously. Plates are stacked up by the sink, and there's a pile of used paper coffee cups in the corner. The whole place stinks of cat.
+
+A stripey orange cat sits in a corner of the room, grooming itself.
+
+A bony old man lies on a bed in a corner of the shack. He stirs sleepily and says "Ah, there you are, there you are. Knew you'd be around eventually."
+
+Also here is a sledgehammer.
+
+Faraji can ask who he is.
+
+>pet cat
+The cat purrs and licks Faraji's hand.
+
+Faraji can ask who he is.
+
+>take cat
+The cat hisses and scratches Faraji.
+
+Faraji can ask who he is.
+
+>take all
+mangy cat: The cat hisses and scratches Faraji.
+sledgehammer: Taken.
+
+Faraji can ask who he is.
+
+>take cups
+Tempting, but no.
+
+Hutz says, "Something's running around out there. Something not human."
+
+Faraji can ask who he is.
+
+>who are you
+They ask, "You seem to know me, but who are you?"
+
+"Name's Hutz. I'm the town groundskeeper. Or was, I guess. Not much to keep now."
+
+[You can "RECAP bony old man" at any time to review what you've discussed with the bony old man.]
+
+Faraji can ask why he's still here.
+
+>* can ask who the man is
+Noted.
+
+>* used name hutz before we knew it
+Noted.
+
+>why are you still here
+They ask, "Why are you still here? The town is being flooded tomorrow."
+
+"Had a feeling someone might come by looking for help. And here you are." Hutz grins, showing a few teeth. "I'm not going anywhere, not yet. Not until I've done what I need to do."
+
+Faraji can ask how he can help them.
+
+>* Faraji asks
+Noted.
+
+>* use "old man" or "hutz" instead of pronoun
+Noted.
+
+>ask hutz who they are
+I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+>who are you
+I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+>* can we improve this message
+Noted.
+
+>what do you need to do
+I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+>ask what do you need to do
+I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+>about
+Here are a few commands and details particular to this game:
+- There is generally no need to TALK TO a character to initiate conversation. Upon entering a room, the game will automatically greet any character present.
+- Dialogue happens in three different ways: the game may suggest a topic to discuss, you can ASK a character ABOUT a specific topic, or you can suggest an action to a character by typing something like ANNIE, GET GUN.
+- The game will automatically remember what you've discussed with each character. You can review these conversations by typing RECAP <character's name>.
+- Typing HINT by itself will list the currently available hint topics. Those in bold have new information. Typing HINT <topic> will provide a hint on that topic. You can also RECALL <topic> to review all hint text you've seen on that topic.
+
+>* put "or" before "you" above in dialogue paragraph
+Noted.
+
+>ask about cat
+"Is that your cat?" Faraji asks.
+
+"What does it mean to be a cat's owner?" Hutz replies.
+
+Faraji can ask how he can help them.
+
+>ask about cups
+"Why so many coffee cups?" Faraji asks.
+
+"I like the coffee at Henry's," Hutz replies.
+
+Faraji can ask how he can help them.
+
+>ask how to help
+There's nothing like that nearby.
+
+>about
+Here are a few commands and details particular to this game:
+- There is generally no need to TALK TO a character to initiate conversation. Upon entering a room, the game will automatically greet any character present.
+- Dialogue happens in three different ways: the game may suggest a topic to discuss, you can ASK a character ABOUT a specific topic, or you can suggest an action to a character by typing something like ANNIE, GET GUN.
+- The game will automatically remember what you've discussed with each character. You can review these conversations by typing RECAP <character's name>.
+- Typing HINT by itself will list the currently available hint topics. Those in bold have new information. Typing HINT <topic> will provide a hint on that topic. You can also RECALL <topic> to review all hint text you've seen on that topic.
+
+>* "repeat suggestion" ?
+Noted.
+
+>l
+Agent Faraji is in a dirty shack. Someone lives here, though not at all luxuriously. Plates are stacked up by the sink, and there's a pile of used paper coffee cups in the corner. The whole place stinks of cat.
+
+A mangy orange cat peeks out from under the bed.
+
+Hutz is reclining on a narrow bed.
+
+Faraji can ask how he can help them.
+
+>ask how i can help you
+There's nothing like that nearby.
+
+>ask how you can help me
+"But how can you possibly help me?" they ask.
+
+"You're looking for the secret of Enigma Lake, are you not? The secret about to be lost forever? Something calls you here; you're searching for something, no, someone. Yes, yes, Hutz can help you."
+
+Faraji can ask about the secret of Enigma Lake or ask Hutz for help.
+
+>undo
+Agent Faraji is in a dirty shack.
+
+>l
+Agent Faraji is in a dirty shack. Someone lives here, though not at all luxuriously. Plates are stacked up by the sink, and there's a pile of used paper coffee cups in the corner. The whole place stinks of cat.
+
+A stripey orange cat sits in a corner of the room, grooming itself.
+
+Hutz is reclining on a narrow bed.
+
+Hutz puts his arm under his head. "You're the first person to come by in a long time. Stay as long as you like."
+
+Faraji can ask how he can help them.
+
+>ask how he can help them
+"But how can you possibly help me?" they ask.
+
+"You're looking for the secret of Enigma Lake, are you not? The secret about to be lost forever? Something calls you here; you're searching for something, no, someone. Yes, yes, Hutz can help you."
+
+Faraji can ask about the secret of Enigma Lake or ask Hutz for help.
+
+>undo
+Agent Faraji is in a dirty shack.
+
+>how can he help them
+"But how can you possibly help me?" they ask.
+
+"You're looking for the secret of Enigma Lake, are you not? The secret about to be lost forever? Something calls you here; you're searching for something, no, someone. Yes, yes, Hutz can help you."
+
+Faraji can ask about the secret of Enigma Lake or ask Hutz for help.
+
+>undo
+Agent Faraji is in a dirty shack.
+
+>how can you help me
+"But how can you possibly help me?" they ask.
+
+"You're looking for the secret of Enigma Lake, are you not? The secret about to be lost forever? Something calls you here; you're searching for something, no, someone. Yes, yes, Hutz can help you."
+
+Faraji can ask about the secret of Enigma Lake or ask Hutz for help.
+
+>undo
+Agent Faraji is in a dirty shack.
+
+>how can you help
+"But how can you possibly help me?" they ask.
+
+"You're looking for the secret of Enigma Lake, are you not? The secret about to be lost forever? Something calls you here; you're searching for something, no, someone. Yes, yes, Hutz can help you."
+
+Faraji can ask about the secret of Enigma Lake or ask Hutz for help.
+
+>ask about secret
+"Secret? What secret?" they ask.
+
+"Well, *I* don't know. Just kinda thought you must be searching for some kind of mystical secret, seeing that you're wandering like a fool through a town about to be flooded. But I can help you, yep."
+
+Faraji can ask Hutz for help.
+
+>ask about lake
+That doesn't seem to be a topic of conversation at the moment.
+
+Faraji can ask Hutz for help.
+
+>* make it clear by using fewer pronouns and by making it more obvious who says what
+Noted.
+
+>ask for help
+They say, "Okay, how can you help?"
+
+"Oh yes, how was I going to help? Afraid I can't remember, sorry. Can't seem to focus."
+
+>look
+Agent Faraji is in a dirty shack. Someone lives here, though not at all luxuriously. Plates are stacked up by the sink, and there's a pile of used paper coffee cups in the corner. The whole place stinks of cat.
+
+A stripey orange cat sits in a corner of the room, grooming itself.
+
+Hutz is reclining on a narrow bed.
+
+>ask about focus
+That doesn't seem to be a topic of conversation at the moment.
+
+>ask for help
+That is not a topic of conversation at the moment.
+
+>talk to hutz
+Faraji is already talking to Hutz.
+
+>ask about cups
+"Why so many coffee cups?" Faraji asks.
+
+"I like the coffee at Henry's," Hutz replies.
+
+>x cups
+A pile of used paper coffee cups. This guy must love his coffee.
+
+>* make the cups from henry's
+Noted.
+
+>* I like the coffee at Henry's. I can't think straight without my coffee.
+Noted.
+
+>* talk about coffee more
+Noted.
+
+>e
+Faraji leaves the dirty shack.
+
+Faraji is pelted by the storm.
+
+The mystic compass pings softly.
+
+Agent Faraji is walking on Solvay Road by the lake. Solvay Road runs by the lake shore here. It continues out of town to the northwest, while to the southeast it leads back into town. A dirty shack stands opposite the lake to the west. A path along the shore leads to the east.
+
+A bright beam of light shoots from the broadcast tower, striking the obelisk in the park. The crystal is glowing faintly.
+
+>s
+Trees block the way.
+
+The storm rages, the air filled with the sound of thunder and the smell of ozone.
+
+>se
+Faraji heads southeast, away from the lake.
+
+Agent Faraji is walking on Solvay Road leading out of town. Solvay Road bends here, leading northwest out of town and south back into town. East is the park, and to the west is Horton House. One can walk down to the lake shore to the north.
+
+A bright beam of light shoots from the broadcast tower, striking the obelisk in the park. The crystal is glowing faintly.
+
+>* make it so hutz obviously has more to say
+Noted.
+
+>s
+Faraji heads south toward the town center.
+
+Agent Faraji is walking on Solvay Road 100 block. Solvay heads north and south. To the west is the fire station, while to the east is the side of the town hall.
+
+A bright beam of light shoots from the broadcast tower, striking the obelisk in the park. The crystal is glowing faintly.
+
+>s
+Faraji heads south into the heart of town.
+
+Agent Faraji is on the corner of Main and Solvay. Main Street runs east from here, while Solvay Road heads north. South of here, Henry's Hot Skillet promises all of the comforts of the mid-twentieth-century diner. A bookstore named The Reading Room lies to the west, while Fresnel's Music is southwest.
+
+A bright beam of light shoots from the broadcast tower, striking the obelisk in the park. The crystal is glowing faintly.
+
+>s
+(first opening the Skillet door)
+(first unlocking the Skillet door)
+(with the brass key)
+Agent Faraji is in Henry's Hot Skillet. This is the epitome of the homey small-town diner of times gone by, except for the lack of all furniture, cooking implements, food, decor, and so on. There is a staircase leading up, and the exit is north. A pair of insulated wires hangs from the ceiling at one end of the counter.
+
+>save
+Ok.
+
+>purloin shiny resonator
+Which do you mean, astral resonator, the shiny astral resonator, the shiny astral resonator, or the power shiny resonator?
+
+>purloin shiny object
+Which do you mean, the strange shiny metal object, the shiny astral resonator, or the shiny astral resonator?
+
+>purloin strange shiny metal object
+Which do you mean, the strange shiny metal object, the shiny astral resonator, or the shiny astral resonator?
+
+>gonear radio roof
+Agent Faraji is on the radio station roof. They can see the obelisk in the park clearly from here. The broadcast tower, humming loudly, rises many feet above them. The exit is down. A metal cabinet is attached to the foot of the tower, hanging open. Inside it is a power switch. A shiny astral resonator is mounted on a platform in the tower, and a beam of light shoots out of it, striking the obelisk in the park. The crystal is glowing faintly.
+
+A bright beam of light shoots from the broadcast tower, striking the obelisk in the park. The crystal is glowing faintly.
+
+>take resonator
+Faraji removes the shiny astral resonator from the platform, and the light fades. In the distance, the beam of light fades from the obelisk. The crystal is no longer glowing.
+
+>undo
+Agent Faraji is on the radio station roof.
+
+>unclamp resonator
+I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+>* unclamp should work
+Noted.
+
+>take resonator
+Faraji removes the shiny astral resonator from the platform, and the light fades. In the distance, the beam of light fades from the obelisk. The crystal is no longer glowing.
+
+>undo
+Agent Faraji is on the radio station roof.
+
+>unmount resonator
+That's not mounted on anything.
+
+>i
+Faraji is carrying:
+  a sledgehammer
+  Stop Calling Me on the Telephone, Darling by Deanna and the Deans
+  a broken lock
+  a pair of bolt cutters
+  an extension cord (plugged into the electrical outlet and with the table lamp plugged into it)
+  a table lamp (with a bulb in the socket, providing light, and plugged into the extension cord)
+  a brass key
+  The Ecology of Root Vegetables
+  Astral Secrets
+  a tuning fork
+  a bell
+  a red key
+  Tribes of New York
+  a recall button
+  a mystic compass
+  a pair of astral lenses
+
+>* oops
+Noted.
+
+>take resonator
+Faraji removes the shiny astral resonator from the platform, and the light fades. In the distance, the beam of light fades from the obelisk. The crystal is no longer glowing.
+
+>gonear henry's
+Which do you mean, Henry's Hot Skillet, Henry's Hot Skillet, Henry's Hot Skillet, Henry's Roof, or get into Henry's?
+
+>d
+There seems to be no such object anywhere in the model world.
+
+>gonear henry's roof
+Agent Faraji is on Henry's Roof. From here one can see much of the town, including a clear view of the obelisk in Enigma Park. There is a large TV aerial jutting from the roof here.
+
+Faraji shivers in the cold rain.
+
+>d
+Faraji heads back down the stairs to the restaurant.
+
+Agent Faraji is in Henry's Hot Skillet. This is the epitome of the homey small-town diner of times gone by, except for the lack of all furniture, cooking implements, food, decor, and so on. There is a staircase leading up, and the exit is north. A pair of insulated wires hangs from the ceiling at one end of the counter.
+
+>attach resonator to wires
+Faraji would achieve nothing by this.
+
+>* could be better
+Noted.
+
+>look for coffee
+There's nothing like that nearby.
+
+>look for me
+There's nothing like that nearby.
+
+>look for wires
+There's nothing like that nearby.
+
+>n
+Large drops of rain fall from the dark sky.
+
+Agent Faraji is on the corner of Main and Solvay. Main Street runs east from here, while Solvay Road heads north. South of here, Henry's Hot Skillet promises all of the comforts of the mid-twentieth-century diner. A bookstore named The Reading Room lies to the west, while Fresnel's Music is southwest.
+
+>n
+Agent Faraji is walking on Solvay Road 100 block. Solvay heads north and south. To the west is the fire station, while to the east is the side of the town hall.
+
+>n
+Agent Faraji is walking on Solvay Road leading out of town. Solvay Road bends here, leading northwest out of town and south back into town. East is the park, and to the west is Horton House. One can walk down to the lake shore to the north.
+
+The storm rages, lightning flashing and thunder rolling.
+
+>nw
+The mystic compass pings softly.
+
+Agent Faraji is walking on Solvay Road by the lake. Solvay Road runs by the lake shore here. It continues out of town to the northwest, while to the southeast it leads back into town. A dirty shack stands opposite the lake to the west. A path along the shore leads to the east.
+
+>w
+Agent Faraji is in a dirty shack. Someone lives here, though not at all luxuriously. Plates are stacked up by the sink, and there's a pile of used paper coffee cups in the corner. The whole place stinks of cat.
+
+A stripey orange cat sits in a corner of the room, grooming itself.
+
+Hutz is reclining on a narrow bed.
+
+>ask about henry's
+"What's the deal with Henry's Hot Skillet?" Faraji asks.
+
+"Henry's? Oh, it's a diner. Good coffee. They have a good TV. I used to drink coffee and watch TV," Hutz replies.
+
+>e
+The cold rain pelts Faraji.
+
+The mystic compass pings softly.
+
+Agent Faraji is walking on Solvay Road by the lake. Solvay Road runs by the lake shore here. It continues out of town to the northwest, while to the southeast it leads back into town. A dirty shack stands opposite the lake to the west. A path along the shore leads to the east.
+
+>i
+Faraji is carrying:
+  a shiny astral resonator
+  a sledgehammer
+  Stop Calling Me on the Telephone, Darling by Deanna and the Deans
+  a broken lock
+  a pair of bolt cutters
+  an extension cord (plugged into the electrical outlet and with the table lamp plugged into it)
+  a table lamp (with a bulb in the socket, providing light, and plugged into the extension cord)
+  a brass key
+  The Ecology of Root Vegetables
+  Astral Secrets
+  a tuning fork
+  a bell
+  a red key
+  Tribes of New York
+  a recall button
+  a mystic compass
+  a pair of astral lenses
+
+>x button
+A small, flat device with a black button on it.
+
+>press button
+(first dropping extension cord)
+(also dropping the electrical outlet)
+(also dropping the table lamp)
+The world turns inside out, and suddenly Faraji is somewhere else.
+
+Agent Faraji is in the field office chief's office. Doris's office is a riot of color -- he's covered the white walls with posters, maps, and charts. A large desk is in the middle of the room, behind which sits Doris. The exit is east.
+
+Doris is sitting cross-legged in a chair, tapping his foot lazily on the desk.
+
+"Ah, Larch," Doris exclaims, standing up to shake their hand. "I've been waiting for you to pay us a visit. Did you bring the thumb drive?"
+
+Faraji can ask who he is, ask where we are, ask how to get home, or ask what thumb drive.
+
+>undo
+Agent Faraji is walking on Solvay Road by the lake.
+
+>i
+They are carrying:
+  a shiny astral resonator
+  a sledgehammer
+  Stop Calling Me on the Telephone, Darling by Deanna and the Deans
+  a broken lock
+  a pair of bolt cutters
+  an extension cord (plugged into the electrical outlet and with the table lamp plugged into it)
+  a table lamp (with a bulb in the socket, providing light, and plugged into the extension cord)
+  a brass key
+  The Ecology of Root Vegetables
+  Astral Secrets
+  a tuning fork
+  a bell
+  a red key
+  Tribes of New York
+  a recall button
+  a mystic compass
+  a pair of astral lenses
+
+>drop outlet
+There's nothing like that nearby.
+
+>i
+Faraji is carrying:
+  a shiny astral resonator
+  a sledgehammer
+  Stop Calling Me on the Telephone, Darling by Deanna and the Deans
+  a broken lock
+  a pair of bolt cutters
+  an extension cord (plugged into the electrical outlet and with the table lamp plugged into it)
+  a table lamp (with a bulb in the socket, providing light, and plugged into the extension cord)
+  a brass key
+  The Ecology of Root Vegetables
+  Astral Secrets
+  a tuning fork
+  a bell
+  a red key
+  Tribes of New York
+  a recall button
+  a mystic compass
+  a pair of astral lenses
+
+>e
+Faraji walks east along the lake.
+
+Agent Faraji is at west end of the town's lake shore. The lake stretches to the north, while the town lies to the south. Solvay Road can be seen to the west, and the shore continues to the east.
+
+>e
+Faraji heads east along the lake shore.
+
+Agent Faraji is on the lake shore north of the park. The rain falls steadily on the lake, creating ripples on the surface. The park is to the south, while the lake stretches off to the north, and the shore goes west. A workshed is to the southeast. A road can be seen to the east.
+
+>e
+Agent Faraji is at the intersection of Lake Street and Ridge Road. The intersection lies at the edge of the lake. Lake Street runs south into town, while Ridge Road heads off into the darkness east of here. A little path along the lake shore is to the west.
+
+There is an abandoned pickup truck at the side of the road. The hood is open.
+
+>s
+Agent Faraji is walking on Lake Street by the park. Lake Street runs north and south from here. To the west is the park, while to the east is the First Utilitarian Church of Enigma Lake.
+
+>press button
+(first dropping extension cord)
+(also dropping the electrical outlet)
+(also dropping the table lamp)
+The world turns inside out, and suddenly Faraji is somewhere else.
+
+Agent Faraji is in the field office chief's office. Doris's office is a riot of color -- he's covered the white walls with posters, maps, and charts. A large desk is in the middle of the room, behind which sits Doris. The exit is east.
+
+Doris is sitting cross-legged in a chair, tapping his foot lazily on the desk.
+
+"Ah, Larch," Doris exclaims, standing up to shake their hand. "I've been waiting for you to pay us a visit. Did you bring the thumb drive?"
+
+Faraji can ask who he is, ask where we are, ask how to get home, or ask what thumb drive.
+
+>undo
+Agent Faraji is walking on Lake Street by the park.
+
+>showme outlet
+electrical outlet - thing
+location: in the First Utilitarian Church of Enigma Lake
+singular-named, improper-named, unmarked for special listing; unlit, inedible, fixed in place, scenery, neuter, seen, familiar, quiet, background, feelable, closeby, snarkable, plug-into-able, near
+list grouping key: none
+printed name: "electrical outlet"
+printed plural name: none
+indefinite article: none
+most recent reference: nominal
+third singular pronoun: It-pronoun
+summary: none
+description: "A standard electrical outlet, set into the wall. The extension cord is plugged into it."
+initial appearance: none
+dark description: none
+hearability: very loud
+volume: 0.0
+price: $0
+behind description: none
+snarky remark: none
+tutorial message: none
+third-plural-pronoun: They-pronoun
+possessive: none
+portrait: Figure Null
+
+>* make sure outlet doesn't get taken or dropped
+Noted.
+
+>press button
+(first dropping extension cord)
+(also dropping the electrical outlet)
+(also dropping the table lamp)
+The world turns inside out, and suddenly Faraji is somewhere else.
+
+Agent Faraji is in the field office chief's office. Doris's office is a riot of color -- he's covered the white walls with posters, maps, and charts. A large desk is in the middle of the room, behind which sits Doris. The exit is east.
+
+Doris is sitting cross-legged in a chair, tapping his foot lazily on the desk.
+
+"Ah, Larch," Doris exclaims, standing up to shake their hand. "I've been waiting for you to pay us a visit. Did you bring the thumb drive?"
+
+Faraji can ask who he is, ask where we are, ask how to get home, or ask what thumb drive.
+
+>e
+Faraji couldn't be happier to get away from Doris's incessant chatter.
+
+Agent Faraji is in the field office hallway. The hallway is white and gleaming. Doorways lead north to Minerva's office, south to Christy's office, east to the front office, west to Doris's office, forth to the portal to the past, and back to the auxiliary portal.
+
+>n
+Faraji enters an open office door.
+
+Agent Faraji is in Minerva's office. The office is white and gleaming. A mahogany desk is in the middle of the room. A coffee maker sits on the desk. The way out is to the south.
+
+Minerva, a field agent, is sitting at her desk, typing away on her computer. She is dressed very professionally in a white blouse and black slacks.
+
+Faraji can ask for a cup of coffee.
+
+>ask for coffee
+Faraji says, "I could use a coffee."
+
+Minerva looks up from her computer. "Sure, help yourself."
+
+Faraji pours themself a cup of coffee in a styrofoam cup.
+
+>s
+Faraji leaves Minerva to her work.
+
+Agent Faraji is in the field office hallway. The hallway is white and gleaming. Doorways lead north to Minerva's office, south to Christy's office, east to the front office, west to Doris's office, forth to the portal to the past, and back to the auxiliary portal.
+
+>f
+Faraji takes a strange turn into a room labeled "Portal Room 1".
+
+Agent Faraji is in Portal Room 1. The room is full of humming, glowing machinery, all of it attached to a large, arch-shaped portal in the middle of the room. The exit is back.
+
+The portal, made of the same astral stuff this whole dimension is made of, looms over the rest of the room. Inside it is a shimmering curtain of light, leading to another time and place. On the right post is a control panel. A label on the top of the arch reads "Portal to the Past."
+
+>enter portal
+(the portal to the past)
+Faraji enters the field of light, and they are suddenly somewhere else.
+
+Agent Faraji is in the Enigma Lake town hall. The building has been cleared of furniture and other items ahead of the imminent flooding. A permanent fixture, the information desk sits near the front entrance (to the south). Taped to it is what looks to be a work schedule. There is also a back entrance onto the park to the north.
+
+Also here is a backpack (empty and open).
+
+>n
+Faraji pushes through the back door into the cool night.
+
+The storm rages, the air filled with the sound of thunder and the smell of ozone.
+
+Agent Faraji is in Enigma Park. The central focus of the park is a large obelisk inscribed with the names of the town's citizens lost in the Great War. Firs and maples line the paths. The town hall is to the south, and other exits are to the north, west, and east. Other egress is blocked by iron fences.
+
+>w
+Agent Faraji is walking on Solvay Road leading out of town. Solvay Road bends here, leading northwest out of town and south back into town. East is the park, and to the west is Horton House. One can walk down to the lake shore to the north.
+
+>n
+Faraji heads north, until they meet the lake shore.
+
+Agent Faraji is at west end of the town's lake shore. The lake stretches to the north, while the town lies to the south. Solvay Road can be seen to the west, and the shore continues to the east.
+
+>nw
+The lake lies that way.
+
+>w
+Faraji heads west to Solvay Road.
+
+The mystic compass pings softly.
+
+Agent Faraji is walking on Solvay Road by the lake. Solvay Road runs by the lake shore here. It continues out of town to the northwest, while to the southeast it leads back into town. A dirty shack stands opposite the lake to the west. A path along the shore leads to the east.
+
+>w
+Agent Faraji is in a dirty shack. Someone lives here, though not at all luxuriously. Plates are stacked up by the sink, and there's a pile of used paper coffee cups in the corner. The whole place stinks of cat.
+
+A mangy orange cat peeks out from under the bed.
+
+Hutz is reclining on a narrow bed.
+
+Hutz scratches his arm. "Wish this rain would let up. Makes one hell of a racket on the roof."
+
+>give coffee to hutz
+(the cup of coffee to Hutz)
+Hutz takes the coffee and sniffs it. "Cold," he says. "I can't drink this." He tosses the coffee into the pile of used cups.
+
+>e
+The rain falls in a steady rhythm.
+
+The mystic compass pings softly.
+
+Agent Faraji is walking on Solvay Road by the lake. Solvay Road runs by the lake shore here. It continues out of town to the northwest, while to the southeast it leads back into town. A dirty shack stands opposite the lake to the west. A path along the shore leads to the east.
+
+>x compass
+The readout of the mystic compass says "1."
+
+The rain falls steadily, soaking the ground.
+
+>press button
+The world turns inside out, and suddenly Faraji is somewhere else.
+
+Agent Faraji is in the field office chief's office. Doris's office is a riot of color -- he's covered the white walls with posters, maps, and charts. A large desk is in the middle of the room, behind which sits Doris. The exit is east.
+
+Doris is sitting cross-legged in a chair, tapping his foot lazily on the desk.
+
+Faraji can ask who he is, ask where we are, ask how to get home, or ask what thumb drive.
+
+>e
+Agent Faraji is in the field office hallway. The hallway is white and gleaming. Doorways lead north to Minerva's office, south to Christy's office, east to the front office, west to Doris's office, forth to the portal to the past, and back to the auxiliary portal.
+
+>f
+Agent Faraji is in Portal Room 1. The room is full of humming, glowing machinery, all of it attached to a large, arch-shaped portal in the middle of the room. The exit is back.
+
+The portal, made of the same astral stuff this whole dimension is made of, looms over the rest of the room. Inside it is a shimmering curtain of light, leading to another time and place. On the right post is a control panel. A label on the top of the arch reads "Portal to the Past."
+
+>x panel
+A control panel is attached to the portal. It has an LED display and a keypad. The display reads "62358234". A large red button underneath says "RESET".
+
+>press reset
+The display now reads "0". The shimmering curtain in the portal fades and disappears.
+
+>type 1
+What do you want Faraji to type that into?
+
+>keypad
+The display now reads "1". The shimmering curtain in the portal reappears.
+
+>undo
+Agent Faraji is in Portal Room 1.
+
+>use keypad to type 1
+There's nothing like that nearby.
+
+>* that's weird
+Noted.
+
+>type 1 on keypad
+The display now reads "1". The shimmering curtain in the portal reappears.
+
+>b
+Faraji steps back into the hallway.
+
+Agent Faraji is in the field office hallway. The hallway is white and gleaming. Doorways lead north to Minerva's office, south to Christy's office, east to the front office, west to Doris's office, forth to the portal to the past, and back to the auxiliary portal.
+
+>n
+Agent Faraji is in Minerva's office. The office is white and gleaming. A mahogany desk is in the middle of the room. A coffee maker sits on the desk. The way out is to the south.
+
+Minerva, a field agent, is sitting at her desk, typing away on her computer. She is dressed very professionally in a white blouse and black slacks.
+
+Faraji can ask for a cup of coffee.
+
+>ask for coffee
+Faraji says, "I could use a coffee."
+
+Minerva looks up from her computer. "Sure, help yourself."
+
+Faraji pours themself a cup of coffee in a styrofoam cup.
+
+>i
+Faraji is carrying:
+  a cup of coffee
+  a shiny astral resonator
+  a sledgehammer
+  Stop Calling Me on the Telephone, Darling by Deanna and the Deans
+  a broken lock
+  a pair of bolt cutters
+  a brass key
+  The Ecology of Root Vegetables
+  Astral Secrets
+  a tuning fork
+  a bell
+  a red key
+  Tribes of New York
+  a recall button
+  a mystic compass
+  a pair of astral lenses
+
+>x coffee
+(the cup of coffee)
+The coffee is steaming hot. It is in a paper cup.
+
+Minerva clicks her tongue. "I'm busy. What do you want?"
+
+>z
+Faraji stands around and waits.
+
+>x coffee
+(the cup of coffee)
+The coffee is steaming hot. It is in a paper cup.
+
+>z
+Faraji stands around and waits.
+
+Minerva, lost in thought, looks up. "Don't drink too much coffee. I pay for it, you know."
+
+>x coffee
+(the cup of coffee)
+The coffee is hot. It is in a paper cup.
+
+>z
+Faraji stands around and waits.
+
+>x coffee
+(the cup of coffee)
+The coffee is hot. It is in a paper cup.
+
+>z
+Faraji stands around and waits.
+
+>x coffee
+(the cup of coffee)
+The coffee is warm. It is in a paper cup.
+
+Minerva leans back. "If you're going to ask me a question, make it a good one."
+
+>z
+Faraji stands around and waits.
+
+>x coffee
+(the cup of coffee)
+The coffee is warm. It is in a paper cup.
+
+>z
+Faraji stands around and waits.
+
+Minerva sighs deeply. "If Christy is being difficult, work it out with them. I'm not a mediator."
+
+>x coffee
+(the cup of coffee)
+The coffee is warm. It is in a paper cup.
+
+>z
+Faraji stands around and waits.
+
+Minerva looks up from her computer. "Yes? Don't tell me, I know. You want to borrow a book."
+
+>x coffee
+(the cup of coffee)
+The coffee is warm. It is in a paper cup.
+
+>z
+Faraji stands around and waits.
+
+>x coffee
+(the cup of coffee)
+The coffee is warm. It is in a paper cup.
+
+>z
+Faraji stands around and waits.
+
+>x coffee
+(the cup of coffee)
+The coffee is tepid. It is in a paper cup.
+
+Minerva cocks an eyebrow. "If you're coming to me because Maggie's being weird, I can't help you."
+
+>z
+Faraji stands around and waits.
+
+>x coffee
+(the cup of coffee)
+The coffee is tepid. It is in a paper cup.
+
+>drink coffee
+(the cup of coffee)
+The coffee is cold. Faraji dumps it out.
+
+Minerva looks bothered. "What is it now?"
+
+Faraji can ask for a cup of coffee.
+
+>ask for coffee
+Faraji says, "I could use a coffee."
+
+Minerva looks up from her computer. "Sure, help yourself."
+
+Faraji pours themself a cup of coffee in a styrofoam cup.
+
+>z
+Faraji stands around and waits.
+
+>z
+Faraji stands around and waits.
+
+>z
+Faraji stands around and waits.
+
+>z
+Faraji stands around and waits.
+
+>z
+Faraji stands around and waits.
+
+>x coffee
+(the cup of coffee)
+The coffee is hot. It is in a paper cup.
+
+>z
+Faraji stands around and waits.
+
+>x coffee
+(the cup of coffee)
+The coffee is hot. It is in a paper cup.
+
+>z
+Faraji stands around and waits.
+
+>x coffee
+(the cup of coffee)
+The coffee is warm. It is in a paper cup.
+
+>drink coffee
+(the cup of coffee)
+The coffee is warm. MMMM. That's mildly satisfactory coffee.
+
+Faraji can ask for a cup of coffee.
+
+>ask for coffee
+Faraji says, "I could use a coffee."
+
+Minerva looks up from her computer. "Sure, help yourself."
+
+Faraji pours themself a cup of coffee in a styrofoam cup.
+
+>s
+Agent Faraji is in the field office hallway. The hallway is white and gleaming. Doorways lead north to Minerva's office, south to Christy's office, east to the front office, west to Doris's office, forth to the portal to the past, and back to the auxiliary portal.
+
+>f
+Agent Faraji is in Portal Room 1. The room is full of humming, glowing machinery, all of it attached to a large, arch-shaped portal in the middle of the room. The exit is back.
+
+The portal, made of the same astral stuff this whole dimension is made of, looms over the rest of the room. Inside it is a shimmering curtain of light, leading to another time and place. On the right post is a control panel. A label on the top of the arch reads "Portal to the Past."
+
+>type 62358234 into panel
+The display now reads "62358234". Nothing obvious happens.
+
+>b
+Agent Faraji is in the field office hallway. The hallway is white and gleaming. Doorways lead north to Minerva's office, south to Christy's office, east to the front office, west to Doris's office, forth to the portal to the past, and back to the auxiliary portal.
+
+>drink coffee
+The coffee is hot, but drinkable. MMMM. That's good coffee.
+
+>n
+Agent Faraji is in Minerva's office. The office is white and gleaming. A mahogany desk is in the middle of the room. A coffee maker sits on the desk. The way out is to the south.
+
+Minerva, a field agent, is sitting at her desk, typing away on her computer. She is dressed very professionally in a white blouse and black slacks.
+
+Faraji can ask for a cup of coffee.
+
+>ask for coffee
+Faraji says, "I could use a coffee."
+
+Minerva looks up from her computer. "Sure, help yourself."
+
+Faraji pours themself a cup of coffee in a styrofoam cup.
+
+>s
+Agent Faraji is in the field office hallway. The hallway is white and gleaming. Doorways lead north to Minerva's office, south to Christy's office, east to the front office, west to Doris's office, forth to the portal to the past, and back to the auxiliary portal.
+
+>f
+Agent Faraji is in Portal Room 1. The room is full of humming, glowing machinery, all of it attached to a large, arch-shaped portal in the middle of the room. The exit is back.
+
+The portal, made of the same astral stuff this whole dimension is made of, looms over the rest of the room. Inside it is a shimmering curtain of light, leading to another time and place. On the right post is a control panel. A label on the top of the arch reads "Portal to the Past."
+
+>enter portal
+(the portal to the past)
+Faraji enters the field of light, and they are suddenly somewhere else.
+
+Agent Faraji is in the Enigma Lake town hall. The building has been cleared of furniture and other items ahead of the imminent flooding. A permanent fixture, the information desk sits near the front entrance (to the south). Taped to it is what looks to be a work schedule. There is also a back entrance onto the park to the north.
+
+Also here is a backpack (empty and open).
+
+>n
+The rain falls in a steady downpour.
+
+Agent Faraji is in Enigma Park. The central focus of the park is a large obelisk inscribed with the names of the town's citizens lost in the Great War. Firs and maples line the paths. The town hall is to the south, and other exits are to the north, west, and east. Other egress is blocked by iron fences.
+
+>w
+Agent Faraji is walking on Solvay Road leading out of town. Solvay Road bends here, leading northwest out of town and south back into town. East is the park, and to the west is Horton House. One can walk down to the lake shore to the north.
+
+>nw
+The mystic compass pings softly.
+
+Agent Faraji is walking on Solvay Road by the lake. Solvay Road runs by the lake shore here. It continues out of town to the northwest, while to the southeast it leads back into town. A dirty shack stands opposite the lake to the west. A path along the shore leads to the east.
+
+>w
+Agent Faraji is in a dirty shack. Someone lives here, though not at all luxuriously. Plates are stacked up by the sink, and there's a pile of used paper coffee cups in the corner. The whole place stinks of cat.
+
+An orange cat stretches out on the bed.
+
+Hutz is reclining on a narrow bed.
+
+>x coffee
+(the cup of coffee)
+The coffee is hot. It is in a paper cup.
+
+>give coffee to hutz
+(the cup of coffee to Hutz)
+Hutz takes the coffee and sniffs it. "Cold," he says, even though the stuff is still plenty hot. "I can't drink this." He tosses the coffee into the pile of used cups.
+
+Hutz smiles sadly. "You know, I used to be a dancer, back before they bulldozed the dance hall and built the radio station."
+
+>* have hutz encourage you to get hotter coffee?
+Noted.
+
+>press button
+The world turns inside out, and suddenly Faraji is somewhere else.
+
+Agent Faraji is in the field office chief's office. Doris's office is a riot of color -- he's covered the white walls with posters, maps, and charts. A large desk is in the middle of the room, behind which sits Doris. The exit is east.
+
+Doris is sitting cross-legged in a chair, tapping his foot lazily on the desk.
+
+Faraji can ask who he is, ask where we are, ask how to get home, or ask what thumb drive.
+
+>e
+Agent Faraji is in the field office hallway. The hallway is white and gleaming. Doorways lead north to Minerva's office, south to Christy's office, east to the front office, west to Doris's office, forth to the portal to the past, and back to the auxiliary portal.
+
+>f
+Agent Faraji is in Portal Room 1. The room is full of humming, glowing machinery, all of it attached to a large, arch-shaped portal in the middle of the room. The exit is back.
+
+The portal, made of the same astral stuff this whole dimension is made of, looms over the rest of the room. Inside it is a shimmering curtain of light, leading to another time and place. On the right post is a control panel. A label on the top of the arch reads "Portal to the Past."
+
+>type 1 on panel
+The display now reads "1". Nothing obvious happens.
+
+>s
+Faraji can't go that way.
+
+>b
+Agent Faraji is in the field office hallway. The hallway is white and gleaming. Doorways lead north to Minerva's office, south to Christy's office, east to the front office, west to Doris's office, forth to the portal to the past, and back to the auxiliary portal.
+
+>f
+Agent Faraji is in Portal Room 1. The room is full of humming, glowing machinery, all of it attached to a large, arch-shaped portal in the middle of the room. The exit is back.
+
+The portal, made of the same astral stuff this whole dimension is made of, looms over the rest of the room. Inside it is a shimmering curtain of light, leading to another time and place. On the right post is a control panel. A label on the top of the arch reads "Portal to the Past."
+
+>get coffee
+There's nothing like that nearby.
+
+>ask for coffee
+There's no one here to talk to.
+
+>b
+Agent Faraji is in the field office hallway. The hallway is white and gleaming. Doorways lead north to Minerva's office, south to Christy's office, east to the front office, west to Doris's office, forth to the portal to the past, and back to the auxiliary portal.
+
+>n
+Agent Faraji is in Minerva's office. The office is white and gleaming. A mahogany desk is in the middle of the room. A coffee maker sits on the desk. The way out is to the south.
+
+Minerva, a field agent, is sitting at her desk, typing away on her computer. She is dressed very professionally in a white blouse and black slacks.
+
+Faraji can ask for a cup of coffee.
+
+>get coffee
+That belongs to Minerva.
+
+Faraji can ask for a cup of coffee.
+
+>ask for coffee
+Faraji says, "I could use a coffee."
+
+Minerva looks up from her computer. "Sure, help yourself."
+
+Faraji pours themself a cup of coffee in a styrofoam cup.
+
+>s
+Agent Faraji is in the field office hallway. The hallway is white and gleaming. Doorways lead north to Minerva's office, south to Christy's office, east to the front office, west to Doris's office, forth to the portal to the past, and back to the auxiliary portal.
+
+>f
+Agent Faraji is in Portal Room 1. The room is full of humming, glowing machinery, all of it attached to a large, arch-shaped portal in the middle of the room. The exit is back.
+
+The portal, made of the same astral stuff this whole dimension is made of, looms over the rest of the room. Inside it is a shimmering curtain of light, leading to another time and place. On the right post is a control panel. A label on the top of the arch reads "Portal to the Past."
+
+>enter portal
+(the portal to the past)
+Faraji enters the field of light, and they are suddenly somewhere else.
+
+Agent Faraji is walking on Solvay Road by the lake. Solvay Road runs by the lake shore here. It continues out of town to the northwest, while to the southeast it leads back into town. A dirty shack stands opposite the lake to the west. A path along the shore leads to the east.
+
+The drizzle falls steadily, chilling the air.
+
+>w
+Agent Faraji is in a dirty shack. Someone lives here, though not at all luxuriously. Plates are stacked up by the sink, and there's a pile of used paper coffee cups in the corner. The whole place stinks of cat.
+
+An orange cat stretches out on the bed.
+
+Hutz is reclining on a narrow bed.
+
+>give coffee to hutz
+(the cup of coffee to Hutz)
+Hutz takes the coffee and drinks it down in one gulp. "Ah, that's the stuff," he says. "Now, what can I do for you?"
+
+Faraji can ask if he can now help them.
+
+>how can you help me
+I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+>can you help me
+"Now, you've had your coffee. Can you help me?" they ask.
+
+"I found something. Something that might help you. It's in the workshed. In the cabinet. You'll need the key." At this, Hutz pulls out a rusty key ring, pulls off an iron key and hands it to them.
+
+>* make how can you help me work
+Noted.
+
+>e
+The rain falls in a steady rhythm.
+
+The mystic compass pings softly.
+
+Agent Faraji is walking on Solvay Road by the lake. Solvay Road runs by the lake shore here. It continues out of town to the northwest, while to the southeast it leads back into town. A dirty shack stands opposite the lake to the west. A path along the shore leads to the east.
+
+>e
+Agent Faraji is at west end of the town's lake shore. The lake stretches to the north, while the town lies to the south. Solvay Road can be seen to the west, and the shore continues to the east.
+
+>e
+Agent Faraji is on the lake shore north of the park. The rain falls steadily on the lake, creating ripples on the surface. The park is to the south, while the lake stretches off to the north, and the shore goes west. A workshed is to the southeast. A road can be seen to the east.
+
+>se
+Agent Faraji is in the workshed. It is a small, weathered building, with a single door and no windows, and a creaky wooden floor. The interior is almost dark. An empty light socket hangs from the ceiling. A closed cabinet is in the corner. An open rusty metal door leads out of the shed.
+
+>open cabinet
+(first unlocking the equipment cabinet)
+(with the iron key)
+Faraji opens the equipment cabinet, revealing a rusty astral resonator.
+
+>undo
+Agent Faraji is in the workshed.
+
+>unlock cabinet
+(with the iron key)
+They unlock the equipment cabinet.
+
+>undo
+Agent Faraji is in the workshed.
+
+>use key to unlock cabinet
+I'm not sure what you're trying to say. I might just not recognize the words you're using.
+
+>about
+Here are a few commands and details particular to this game:
+- There is generally no need to TALK TO a character to initiate conversation. Upon entering a room, the game will automatically greet any character present.
+- Dialogue happens in three different ways: the game may suggest a topic to discuss, you can ASK a character ABOUT a specific topic, or you can suggest an action to a character by typing something like ANNIE, GET GUN.
+- The game will automatically remember what you've discussed with each character. You can review these conversations by typing RECAP <character's name>.
+- Typing HINT by itself will list the currently available hint topics. Those in bold have new information. Typing HINT <topic> will provide a hint on that topic. You can also RECALL <topic> to review all hint text you've seen on that topic.
+
+>help
+Hints about the following topics are available:
+* Margaret Chao
+* Chief Klimp
+* Moira Zin
+* thumb drive
+* Enigma Lake
+* work schedule
+* backpack
+* threaded socket
+* wires
+* get back to BOSH
+* shiny astral resonator
+* bookstore basement
+* fire station
+* extension cord
+* what is the Book of Utilitarianism
+* thumb drive
+* getting into the gym
+(Topics in bold have new hints available. The others may have more hints later.)
+To recall hints about a topic, type RECALL <TOPIC>.
+
+>about
+Here are a few commands and details particular to this game:
+- There is generally no need to TALK TO a character to initiate conversation. Upon entering a room, the game will automatically greet any character present.
+- Dialogue happens in three different ways: the game may suggest a topic to discuss, you can ASK a character ABOUT a specific topic, or you can suggest an action to a character by typing something like ANNIE, GET GUN.
+- The game will automatically remember what you've discussed with each character. You can review these conversations by typing RECAP <character's name>.
+- Typing HINT by itself will list the currently available hint topics. Those in bold have new information. Typing HINT <topic> will provide a hint on that topic. You can also RECALL <topic> to review all hint text you've seen on that topic.
+
+>* understand 'use' as a mistake
+Noted.
+
+>* bring back help
+Noted.
+
+>open cabinet
+(first unlocking the equipment cabinet)
+(with the iron key)
+Faraji opens the equipment cabinet, revealing a rusty astral resonator.
+
+>x resonator
+(the shiny astral resonator)
+A small, shiny, metallic, cylindrical object. One end is capped with a lens, while the other terminates in two shiny metal chains, each with a shiny metal clamp, as if it were designed to be attached to something.
+
+>x rusty resonator
+A small, rusty, metallic, cylindrical object. One end is capped with a lens, while the other terminates in a threaded base, like that of a light bulb.
+
+>take resonator
+(the rusty astral resonator)
+Taken.
+
+>save
+Ok.
+
+>script off
+
+End of transcript.

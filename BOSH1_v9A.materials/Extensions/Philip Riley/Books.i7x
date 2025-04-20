@@ -206,7 +206,7 @@ book27 is a bookstore-book.
     The title of book27 is "Ice, Ice, Baby: A Critical Examination of Vanilla Ice".
     The author of book27 is "Andy Richter".
     The genre of book27 is "Music Criticism".
-    The blurb of book27 is "Who Knew? Andy Richter has ideas about Vanilla Ice. And he's not afraid to share them. A must-read for anyone who's ever thought 'I wonder what Andy Richter thinks about Vanilla Ice.'".
+    The blurb of book27 is "Who knew? Andy Richter has ideas about Vanilla Ice. And he's not afraid to share them. A must-read for anyone who's ever thought 'I wonder what Andy Richter thinks about Vanilla Ice.'".
 	understand "ice/baby/critical/examination/vanilla/andy/richter" as book27.
 
 book28 is a bookstore-book.

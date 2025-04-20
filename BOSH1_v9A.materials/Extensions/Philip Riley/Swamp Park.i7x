@@ -35,10 +35,14 @@ The Office_ is an edifice.
 Instead of entering the office_:
 	try going west;
 
-The strip mall fence is scenery in the Strip Mall Parking Lot South. "The fence is chain link." Understand "chain/link/chainlink" as the strip mall fence.
+The strip mall fence is scenery in the Strip Mall Parking Lot South. It is privately-named. "The fence is chain link." 
+The printed name of the strip mall fence is "chain link fence". Understand "chain/link/chainlink/fence" as the strip mall fence.
 	
 Margaret at a distance is a woman. She is part of the Office_.  She is privately-named. The printed name is "Margaret". The description is "Even from here one can sense [Margaret]'s irrepressible energy." Understand "Margaret/Chao" as Margaret at a distance when the location is Parking Lot South. She is female. She is not neuter.
 Margaret at a distance is obstructed.
+
+Does the player mean recapping conversation Margaret at a distance:
+	it is very unlikely;
 
 Instead of doing something to Margaret at a distance when Margaret is not in the front office:
 	say "Faraji can't see Margaret right now.";
@@ -785,7 +789,7 @@ To remove is a verb.
 
 Every turn:
 	if the location is fluorescent-lit and the player is wearing the pair of astral lenses and not in darkness:
-		say "Wearing the astral lenses in fluorescent light is blinding. [We] quickly [remove] the glasses.";
+		say "Wearing the astral lenses in fluorescent light is blinding. Faraji quickly removes the glasses.";
 		now the hyperlight is unlit;
 		now the player carries the pair of astral lenses;
 		
