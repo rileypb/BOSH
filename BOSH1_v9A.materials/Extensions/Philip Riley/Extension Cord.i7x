@@ -134,7 +134,12 @@ Rule for writing a paragraph about plug-end:
 			otherwise:
 				say ". The other end is on [the holder of the socket-end].";
 		otherwise:
-			say ". The other end[trailing text from the location to the location of the holder of the socket-end].";
+			if the location is not the location of the holder of the socket-end:
+				say ". The other end[trailing text from the location to the location of the holder of the socket-end].";
+			otherwise if something (called the plug) is plugged into the socket-end:
+				say ". [The plug] is plugged into the other end.";
+			otherwise:
+				say ". The other end is on the ground.";
 
 To say trailing text from (A - a room) to (B - a room):
 	if A is First Utilitarian Church of Enigma Lake:
@@ -162,38 +167,41 @@ To say trailing text from (A - a room) to (B - a room):
 		say " trails [the best route from A to B]";
 
 Rule for writing a paragraph about socket-end:
-	if the socket-end is in the location:
-		say "The socket end of an extension cord lies on the [if the location is indoors]floor[otherwise]ground[end if]";
+	if the holder of the socket-end is the location and the holder of the plug-end is the location:
+		now the socket-end is mentioned;
 	otherwise:
-		let holder be the holder of the socket-end;
-		if holder is a supporter:
-			say "The socket end of an extension cord lies on [the holder of the extension cord]";
+		if the socket-end is in the location:
+			say "The socket end of an extension cord lies on the [if the location is indoors]floor[otherwise]ground[end if]";
 		otherwise:
-			say "The socket end of an extension cord is in [the holder of the extension cord]";
-	if something (called the plug) is plugged into the socket-end:
-		say ", [the plug] plugged into it";
-		let holder be the holder of the socket-end;
-		if the holder is the player:
-			say " we are holding";
-		otherwise if the holder is enclosed by the player:
-			say " inside [the holder][we] [are] carrying";
-		otherwise if holder is a supporter:
-			say " on [the holder of the socket-end]";
-		otherwise if holder is a container:
-			say " in [the holder of the socket-end]"; 
-	if the player encloses the plug-end:
-		if the player carries the plug-end:
-			say ". The other end is in [our] hand.";
-		otherwise:
-			say ". The other end is in [the holder of the plug-end] [we] [are] carrying.";
-	otherwise:	
-		if the holder of the plug-end is enclosed by the location:
-			if the plug-end is contained by something:
-				say ". The other end is in [the holder of the plug-end].";
+			let holder be the holder of the socket-end;
+			if holder is a supporter:
+				say "The socket end of an extension cord lies on [the holder of the extension cord]";
 			otherwise:
-				say ". The other end is on [the holder of the plug-end].";
-		otherwise:
-			say ". The other end[trailing text from the location to the location of the holder of the plug-end].";
+				say "The socket end of an extension cord is in [the holder of the extension cord]";
+		if something (called the plug) is plugged into the socket-end:
+			say ", [the plug] plugged into it";
+			let holder be the holder of the socket-end;
+			if the holder is the player:
+				say " we are holding";
+			otherwise if the holder is enclosed by the player:
+				say " inside [the holder][we] [are] carrying";
+			otherwise if holder is a supporter:
+				say " on [the holder of the socket-end]";
+			otherwise if holder is a container:
+				say " in [the holder of the socket-end]"; 
+		if the player encloses the plug-end:
+			if the player carries the plug-end:
+				say ". The other end is in [our] hand.";
+			otherwise:
+				say ". The other end is in [the holder of the plug-end] [we] [are] carrying.";
+		otherwise:	
+			if the holder of the plug-end is enclosed by the location:
+				if the plug-end is contained by something:
+					say ". The other end is in [the holder of the plug-end].";
+				otherwise:
+					say ". The other end is on [the holder of the plug-end].";
+			otherwise:
+				say ". The other end[trailing text from the location to the location of the holder of the plug-end].";
 
 Rule for writing a paragraph about the extension cord:
 	set the locale priority of the extension cord to 0;
@@ -253,13 +261,15 @@ To separate the extension cord:
 		now the plug-end is in the holder of the extension cord;
 		now the socket-end is in the holder of the extension cord;
 		remove the extension cord from play;
+	dbg "separating: plug-end is at [the holder of the plug-end], socket-end is at [the holder of the socket-end][line break]";
 
 To maybe separate the extension cord:
+	dbg "maybe separating.";
 	if the extension cord is somewhere:
 		separate the extension cord;
 
 To condense the extension cord:
-	[ dbg "condensing: plug-end is at [the holder of the plug-end], socket-end is at [the holder of the socket-end][line break]"; ]
+	dbg "condensing: plug-end is at [the holder of the plug-end], socket-end is at [the holder of the socket-end][line break]";
 	if the holder of the plug-end is the holder of the socket-end:
 		now the extension cord is in the holder of the plug-end;
 		now the plug-end is nowhere;
@@ -269,7 +279,7 @@ To condense the extension cord:
 		say ">>> BUG <<<: Attempt to condense extension cord when ends are in different locations.";
 
 To maybe condense the extension cord:
-	if the plug-end is somewhere and the holder of the plug-end is the holder of the socket-end:
+	if the plug-end is somewhere and the holder of the plug-end is the holder of the socket-end and the socket-end accepts nothing and the plug-end is plugged into nothing:
 		condense the extension cord;
 
 Instead of plugging the extension cord into something when the second noun is not the extension cord:
@@ -453,6 +463,12 @@ Instead of taking the plug-end:
 	now the player carries the plug-end;
 	puts "[text of standard report taking rule response (A)][line break]";
 	maybe condense the extension cord;
+
+After plugging the plug-end into something when the plug-end is nowhere:
+	now the plug-end is in the holder of the second noun;
+	if the socket-end is nowhere:
+		now the socket-end is in the holder of the extension cord;
+	now the extension cord is nowhere;
 
 After inserting the plug-end into something:
 	maybe condense the extension cord;
@@ -670,6 +686,12 @@ After dropping the socket-end:
 	maybe condense the extension cord;
 	continue the action;
 
+After plugging something into the socket-end when the socket-end is nowhere:
+	now the socket-end is in the holder of the noun;
+	if the plug-end is nowhere:
+		now the plug-end is in the holder of the extension cord;
+	now the extension cord is nowhere;
+
 [ After plugging something into the socket-end:
 	now the noun is in the holder of the socket-end; ]
 
@@ -752,5 +774,24 @@ test cord with "gonear pulpit/purloin orange extension cord/purloin wooden objec
 test outlet with "gonear pulpit/purloin orange extension cord/purloin table lamp/purloin the light bulb/e/move tapestry/flip switch/w/plug cord into outlet/plug lamp into cord/turn on lamp/put bulb in lamp".
 
 test 1 with "testcord/take cord/plug it into red socket/plug machine into it";
+
+cordebugging is an action out of world. Understand "cordebug" as cordebugging.
+
+Carry out cordebugging:
+	say "EXTENSION CORD DEBUGGING[line break]";
+	say "Extension cord is in [the holder of the extension cord].";
+	say "Plug end is in [the holder of the plug-end].";
+	say "Socket end is in [the holder of the socket-end].";
+	if the plug-end is plugged into something (called the socket):
+		say "Plug end is plugged into [the socket].";
+	if the socket-end accepts something (called the plug):
+		say "Socket end accepts [the plug].";
+	if the table lamp is plugged into something (called the socket):
+		say "Table lamp is plugged into [the socket].";
+	if the outlet accepts something (called the plug):
+		say "Outlet accepts [the plug].";
+
+test setup with "gonear pews/purloin orange cord/purloin table lamp/plug in lamp".
+test cordbug with "test setup/unplug lamp/plug in extension cord/plug lamp into cord/take lamp/unplug lamp/plug lamp into cord/unplug lamp/plug lamp into socket/plug cord into cord/plug cord into outlet/plug lamp into cord/look/cordebug/take lamp/look".
 
 Extension Cord ends here.

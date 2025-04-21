@@ -3643,42 +3643,42 @@
     </dict>
     <key>520</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/plugging.i7x</string>
-        <key>Line</key><integer>71</integer>
+        <key>Line</key><integer>73</integer>
         <key>Title</key><string>Book - unplugging rules</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>521</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/plugging.i7x</string>
-        <key>Line</key><integer>92</integer>
+        <key>Line</key><integer>94</integer>
         <key>Title</key><string>Book - Default movement rules</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>522</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/plugging.i7x</string>
-        <key>Line</key><integer>124</integer>
+        <key>Line</key><integer>126</integer>
         <key>Title</key><string>Book - Appearance in inventory</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>523</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/plugging.i7x</string>
-        <key>Line</key><integer>135</integer>
+        <key>Line</key><integer>137</integer>
         <key>Title</key><string>Book - Examining</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>524</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/plugging.i7x</string>
-        <key>Line</key><integer>148</integer>
+        <key>Line</key><integer>150</integer>
         <key>Title</key><string>Book - Backwards Plugging</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>525</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/plugging.i7x</string>
-        <key>Line</key><integer>154</integer>
+        <key>Line</key><integer>156</integer>
         <key>Title</key><string>Book - Putting and Attaching</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
@@ -3720,49 +3720,49 @@
     </dict>
     <key>531</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/extension cord.i7x</string>
-        <key>Line</key><integer>201</integer>
+        <key>Line</key><integer>209</integer>
         <key>Title</key><string>Book - Definitions</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>532</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/extension cord.i7x</string>
-        <key>Line</key><integer>219</integer>
+        <key>Line</key><integer>227</integer>
         <key>Title</key><string>Book - Working with the extension cord</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>533</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/extension cord.i7x</string>
-        <key>Line</key><integer>405</integer>
+        <key>Line</key><integer>415</integer>
         <key>Title</key><string>Book - Working with the plug-end</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>534</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/extension cord.i7x</string>
-        <key>Line</key><integer>614</integer>
+        <key>Line</key><integer>630</integer>
         <key>Title</key><string>Book - Working with the socket-end</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>535</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/extension cord.i7x</string>
-        <key>Line</key><integer>706</integer>
+        <key>Line</key><integer>728</integer>
         <key>Title</key><string>Book - Updating state</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>536</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/extension cord.i7x</string>
-        <key>Line</key><integer>722</integer>
+        <key>Line</key><integer>744</integer>
         <key>Title</key><string>Book - Movement Restrictions</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>537</key><dict>
         <key>Filename</key><string>BOSH1_v9A.materials/Extensions/philip riley/extension cord.i7x</string>
-        <key>Line</key><integer>732</integer>
+        <key>Line</key><integer>754</integer>
         <key>Title</key><string>Book - Not for Release</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
