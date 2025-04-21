@@ -362,7 +362,7 @@ Some trees are scenery in Enigma Park. Understand "tree/fir/firs/maple/maples" a
 
 Some shadows are scenery in Enigma Park. "Without a lantern, it's inadvisable to venture into the shadows."
 
-The obelisk is scenery in Enigma Park. Understand "monument" as the obelisk. "Its faux Egyptian design is incongruous adjacent to the adamantly traditional town hall. [We] [can] just make out a small crystal adornment rising from the top."
+The obelisk is scenery in Enigma Park. Understand "monument/design" as the obelisk. "The monument's faux Egyptian design is incongruous adjacent to the adamantly traditional town hall. Faraji can just make out a small crystal adornment rising from the top."
 
 The names are scenery in Enigma Park. "The names of the town's citizens lost in the Great War are inscribed on the obelisk." Understand "citizens" as names.					
 
@@ -373,16 +373,16 @@ Instead of examining the adornment:
 	if beam count > 0:
 		say "The crystal is glowing [crystal glow].";
 	otherwise:
-		say "From what [we] can make out, it's a clear crystal held aloft by some kind of metal fitting.";
+		say "From what Faraji can make out, it's a clear crystal held aloft by some kind of metal fitting.";
 
 Check climbing up:
-	say "[We] can't climb that." instead;
+	say "Faraji can't climb that." instead;
 	
 Check climbing up the obelisk:
 	say "The obelisk offers no handholds adequate for climbing." instead;
 	
 Check climbing up trees:
-	say "[We] would rather not break [our] leg." instead;
+	say "Faraji would rather not break their leg." instead;
 	
 Park facade is a building facade. It is in Solvay Road leading out of town, the lake shore north of the park, Lake Street by the park, and Enigma Lake Town Hall. It is privately-named. The printed name is "Enigma Park". Understand "enigma/park" as Park facade. "[if location is Enigma Lake Town Hall]Faraji can't see much from here[otherwise]A shadowy clump of trees marks the edge of Enigma Park[end if]."
 	It is enterable from Solvay Road leading out of town.
@@ -777,7 +777,7 @@ Instead of switching on the old turntable:
 Instead of switching off the old turntable:
 	say "It's not playing right now.";
 
-The old speakers are scenery in the broadcast booth. "The speakers are old and dusty, but they look like they still work." They are plural-named.
+The old speakers are scenery in the broadcast booth. "The speakers are old and dusty, but they look like they could still work." They are plural-named.
 
 The rotation bin is a scenery container in the broadcast booth. "The bin is empty." Understand "bin" as rotation bin.
 
@@ -1340,8 +1340,11 @@ The electrical outlet is in First Utilitarian Church of Enigma Lake.
 Understand "stick [tuning fork] in [electrical outlet]" as inserting it into.
 
 Instead of inserting the tuning fork into the electrical outlet:
-	say "Faraji hesitates for a moment, but then pushes the tuning fork into the electrical outlet. They are killed almost instantly.";
-	end the story saying "Please be more careful with Agent Faraji's life in the future.";
+	if the circuit breaker is switched off:
+		say "Faraji hesitates for a moment, but then pushes the tuning fork into the electrical outlet. Nothing happens. Thank goodness the circuit breaker is off.";
+	otherwise:
+		say "Faraji hesitates for a moment, but then pushes the tuning fork into the electrical outlet. They are killed almost instantly.";
+		end the story saying "Please be more careful with Agent Faraji's life in the future.";
 
 Does the player mean plugging something into the electrical outlet: 
 	it is very likely.
@@ -1352,13 +1355,22 @@ Rule for supplying a missing second noun while plugging something into:
 	otherwise:
 		rule fails;
 		
+Before plugging the makeshift astral resonator into the electrical outlet:
+	say "(dropping [the makeshift astral resonator])[command clarification break]";
+
 After plugging the makeshift astral resonator into the electrical outlet:
 	now the makeshift astral resonator is in the location;
 	continue the action;
-		
+
+Before plugging the table lamp into the electrical outlet:
+	say "(dropping [the table lamp])[command clarification break]";
+
 After plugging the table lamp into the electrical outlet:
 	now the table lamp is in the location;
 	continue the action;
+
+Before plugging the spotlight into the electrical outlet:
+	say "(dropping [the spotlight])[command clarification break]";
 		
 After plugging the spotlight into the electrical outlet:
 	now the spotlight is in the location;
@@ -1432,6 +1444,8 @@ Instead of looking behind the tapestry:
 
 The circuit breaker is a scenery device. "A single circuit breaker switch is mounted on the wall." Understand "switch", "safety switch", "switchgear", "disconnect switch", "electrical", "electricity", "fuse switch", "overload switch" and "trip switch" as the circuit breaker. The circuit breaker is switched off.
 
+Understand "trip [circuit breaker]" as switching off. Understand "reset [circuit breaker]" as switching on.
+
 Book 17.5 - The church basement
 
 The church basement is below the First Utilitarian Church of Enigma Lake. It is in ELR. It is indoors. It is dark. "The basement is a shock to behold after the simple church above. It's a large, open space, with walls painted with scenes of humans and lizard people in battle, with aliens and platypuses looking on in horror. There is an ornate altar at the far end of the room. The exit is up.
@@ -1481,21 +1495,17 @@ The steeple-ladder is a building facade. It is in the church steeple. It is priv
 Instead of climbing up the steeple-ladder:
 	try going down.
 
-Some stained-glass-window-steeples are scenery in the church steeple. They are privately-named. The printed name is "stained glass windows". Understand "stained/glass/windows" as stained-glass-window-steeples. "The steeple is surrounded by the typical Utilitarian perfectly clear stained glass windows.".
-stained-glass-window-steeples are unsnarkable.
-
 The telescope is in the tripod. The description is "A small telescope suitable for amateur astronomy[if the content of the tripod is the telescope]. It's mounted on a tripod[end if]."
 
 Instead of turning the telescope:
 	say "The telescope is fixed in place, pointing at the obelisk in the park.";
 
-pointing it at is an action applying to one thing and one topic. Understand "point [something] at [text]" as pointing it at.
+pointing it at is an action applying to one thing and one topic. Understand "point [something] at/to/-- [text]" as pointing it at.
 
 Check pointing the something at something:
 	if the noun is not the telescope:
 		say "That's not something [we] can point." instead;
-	if the second noun is not the steeple-obelisk-facade:
-		say "The telescope is fixed in place, pointing at the obelisk in the park." instead; 
+	say "The telescope is fixed in place, pointing at the obelisk in the park." instead; 
 
 Focussing is an action applying to one thing. Understand "focus [something]" as focussing.
 
@@ -1844,6 +1854,11 @@ Instead of searching the abandoned pickup truck when the player is not in the ab
 
 Instead of driving the abandoned pickup truck:
 	try switching on the abandoned pickup truck;
+
+The ignition is a part of the abandoned pickup truck. The description is "The ignition is a standard car ignition." Understand "ignition" as the ignition.
+
+Instead of switching on the ignition:
+	try switching on the abandoned pickup truck;
 	
 Instead of switching on the abandoned pickup truck:
 	let K be the list of all keys enclosed by the player;
@@ -1885,6 +1900,7 @@ Book 21 - Workshed
 the workshed is a leavable room. It has egress northwest. It is in ELR. It is indoors. "It is a small, weathered building, with a single door and no windows, and a creaky wooden floor. [if the light bulb is in the hanging socket]The interior is dimly lit by a single light bulb hanging from the ceiling. [otherwise]The interior is almost dark. An empty light socket hangs from the ceiling. [end if][equipment cabinet state] cabinet is in the corner. [rusty metal door state] rusty metal door leads out of the shed.".
 
 The light bulb is a thing. The description is "A standard 60W light bulb." 
+Understand "lightbulb" as the light bulb.
 The light bulb is unsnarkable.
 
 Understand "screw [the light bulb] in/into [the hanging socket]", "mount [the light bulb] on/onto/in/into [the hanging socket]" as inserting it into.
