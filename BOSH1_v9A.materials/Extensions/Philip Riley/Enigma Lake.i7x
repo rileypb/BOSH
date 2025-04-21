@@ -2872,8 +2872,11 @@ Instead of climbing up the narrow staircase:
 
 The dowsing rod is in Horton Family House Kitchen. The description is "A simple wooden rod, about a foot long, with a forked end." Understand "simple/wooden/stick" as the dowsing rod.
 
-The last report taking rule when the noun is the dowsing rod:
-	say "[bracket]Faraji doesn't need to do anything with the dowsing rod for it to work.[close bracket][paragraph break]";
+Report taking rule when the noun is the dowsing rod (this is the easy dowsing rule):
+	say "Taken. [bracket]Note: Faraji doesn't need to do anything with the dowsing rod for it to work.[close bracket][paragraph break]";
+	stop the action.
+
+The easy dowsing rule is listed first in the report taking rulebook.
 
 Divining-action is an action applying to nothing. Understand "divine", "dowse" as divining-action.
 
