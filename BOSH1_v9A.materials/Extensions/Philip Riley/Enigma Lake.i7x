@@ -621,7 +621,7 @@ Instead of imploring Hutz for "help":
 	try discussing help-me;
 
 Now-can-you-help-me is a questioning quip.
-	The printed name is "if he can now help [us]".
+	The printed name is "if he can now help".
 	Understand "for help" as now-can-you-help-me.
 	Understand "can you help me/us/them/Faraji/-- now/--" as now-can-you-help-me. 
 	Understand "if he can help me/us/them/Faraji/-- now/--" as now-can-you-help-me.
@@ -1041,6 +1041,8 @@ After taking the shiny astral resonator when the shiny astral resonator was on t
 		say "Faraji removes [the shiny astral resonator] from the platform, and the light fades. In the distance, the beam of light fades from the obelisk. [if the beam count is 0]The crystal is no longer glowing[otherwise]The crystal is still glowing [crystal glow][end if].";
 	otherwise:
 		say "Faraji removes [the shiny astral resonator] from the platform.";
+
+Understand "unmount [shiny astral resonator]" as taking when the shiny astral resonator is on the platform.
 
 Understand "clamp [shiny astral resonator] to [platform]" as tying it to.
 
@@ -4115,8 +4117,23 @@ The clean battery can be hooked up.
 
 Understand "hook up [something] to [something]", "hook [something] up to [something]" as tying it to.
 
+Instead of tying the wires to the rusty astral resonator:
+	say "There's no way to attach the wires to [the rusty astral resonator].";
+
+Instead of tying the rusty astral resonator to the wires:
+	try tying the wires to the rusty astral resonator instead;
+
 Instead of tying the wires to the shiny astral resonator:
-	say "The clamps on the astral resonator won't attach securely to the wires.";
+	say "The clamps on [the shiny astral resonator] won't attach securely to the wires.";
+
+Instead of tying the shiny astral resonator to the wires:
+	try tying the wires to the shiny astral resonator instead;
+
+Instead of tying the wires to the makeshift astral resonator:
+	say "Attaching the wires to the cord from [the makeshift astral resonator] would be clumsy at best. Faraji decides to leave it alone.";
+
+Instead of tying the makeshift astral resonator to the wires:
+	try tying the wires to the makeshift astral resonator instead;
 
 Instead of putting the wires on the clean battery:
 	try tying the wires to the clean battery instead;
@@ -5263,5 +5280,13 @@ obelisking is an action out of world. Understand "cheat obelisk" as obelisking.
 
 Carry out obelisking:
 	now the obelisk-ladder is revealed;
+
+resonating is an action applying to nothing. Understand "cheat resonate" as resonating.
+
+Carry out resonating:
+	now the player carries the rusty astral resonator;
+	now the player carries the makeshift astral resonator;
+	now the player carries the shiny astral resonator;
+
 
 Enigma Lake ends here.
