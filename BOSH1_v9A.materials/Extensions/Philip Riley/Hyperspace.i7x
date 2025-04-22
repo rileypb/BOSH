@@ -1247,7 +1247,7 @@ After discussing hand over the thumb drive:
 	
 [ about Savra is a questioning quip.
 	Understand "what about Senator/-- Savra" as about Savra.
-	The comment is "'Senator Savra? What does he have to with anything?' [we] [ask].".
+	The comment is "'Senator Savra? What does he have to with anything?' Faraji asks.".
 	The reply is "[Doris] says, 'Well you've noticed he's not very friendly to the Bureau? Let's leave it at that for now. We need to talk about the mission.'".
 	it quip-supplies Doris.
 	It follows hand over the thumb drive; ]

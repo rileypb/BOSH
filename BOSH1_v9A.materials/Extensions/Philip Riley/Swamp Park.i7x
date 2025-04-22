@@ -388,7 +388,7 @@ After discussing about the laundromat owner:
 	continue the action;
 
 about the watch is a questioning quip.
-	The comment is "[We] [ask], 'What's so special about this watch?'"
+	The comment is "Faraji asks, 'What's so special about this watch?'"
 	The reply is "'It's a family heirloom. I'd like to get it back.'"
 	It quip-supplies Dave.
 	It follows about the laundromat owner.
@@ -956,7 +956,7 @@ Chapter 1 - Clerk Conversation
 for-a-screwdriver-clerk is a questioning quip.
 	It is privately-named. The printed name is "for a screwdriver". [The true-name is "for-a-screwdriver-clerk".] Understand "for/a/red/screwdriver" as for-a-screwdriver-clerk.
 	It mentions the screwdriver.
-	The comment is "[We] [ask], 'Would you happen to have a screwdriver I could borrow?'".
+	The comment is "Faraji asks, 'Would you happen to have a screwdriver I could borrow?'".
 	The reply is "'Got one to buy, not one to borrow.'".
 	It quip-supplies the clerk.
 	It is repeatable.

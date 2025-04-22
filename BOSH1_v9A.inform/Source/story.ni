@@ -124,7 +124,8 @@ Abouting is an action out of world. Understand "about" as abouting.
 Carry out abouting:
 	say "Here are a few commands and details particular to this game:[line break]";
 	say "- There is generally no need to TALK TO a character to initiate conversation. Upon entering a room, the game will automatically greet any character present.";
-	say "- Dialogue happens in three different ways: the game may suggest a topic to discuss, you can ASK a character ABOUT a specific topic, or you can suggest an action to a character by typing something like ANNIE, GET GUN.";
+	say "- Dialogue happens in three different ways: the game may suggest a topic to discuss, or you can ASK a character ABOUT a specific topic, or you can suggest an action to a character by typing something like ANNIE, GET GUN.";
+	say "- If the game suggests a topic -- e.g. '[italic type]Faraji can ask about the dog[roman type]' -- you can type 'ask about the dog'.";
 	say "- The game will automatically remember what you've discussed with each character. You can review these conversations by typing RECAP <character's name>.";
 	say "- Typing HINT by itself will list the currently available hint topics. Those in bold have new information. Typing HINT <topic> will provide a hint on that topic. You can also RECALL <topic> to review all hint text you've seen on that topic.";
 
@@ -1852,7 +1853,7 @@ about the hyperdimensional portal is an informative quip.
 for-a-screwdriver-moira is a questioning quip.
 	It is privately-named. The printed name is "for a screwdriver". [The true-name is "for-a-screwdriver".] Understand "for/a/screwdriver" as for-a-screwdriver-moira.
 	It mentions the red screwdriver.
-	The comment is "[We] [ask], 'Would you happen to have a screwdriver I could borrow?'".
+	The comment is "Faraji asks, 'Would you happen to have a screwdriver I could borrow?'".
 	The reply is "'Sorry, I don't have a screwdriver. You might try the Chief.'".
 	It quip-supplies Moira;
 	
@@ -2109,7 +2110,7 @@ The Philadelphia Experiment	Chief Huffton Klimp	"'Chief, the --'"	"'Philadelphia
 Amelia Earhart	Chief Huffton Klimp	"'Chief, what's the deal with Amelia --'"	"'Earhart? She was murdered by the Freemasons before she even took off. I've seen the evidence.'"
 The Voynich Manuscript	Chief Huffton Klimp	"'Chief, what's the deal with the Voynich --'"	"'Manuscript? It's a hoax. I've seen the evidence. It's a hoax. But it's a good hoax. I like it.'"
 The Shroud of Turin	Chief Huffton Klimp	"'Chief, is the Shroud of --'"	"'Turin? It's really a map. I've seen the evidence. It's a map. A map to the Black Knight Satellite.'"
-The Holy Grail	Chief Huffton Klimp	"'Chief,' [we] [ask], 'is the Holy --'"	"'Grail real? Well, maybe, maybe not. It depends on what you mean by [']real.['] In any case, it was lost in a time slip.'"
+The Holy Grail	Chief Huffton Klimp	"'Chief,' Faraji asks, 'is the Holy --'"	"'Grail real? Well, maybe, maybe not. It depends on what you mean by [']real.['] In any case, it was lost in a time slip.'"
 Time slips	Chief Huffton Klimp	"'Chief, do time slips --'"	"'Really happen? Yes, they do. The Moberly-Jourdain Incident for example, or -- well, I can't remember the other one. I was thinking about the Jersey Devil, and its connection to the Church of Scientology.'"
 The Ark of the Covenant	Chief Huffton Klimp	"'Chief, you ever see Raiders of the Lost --'"	"Is this about the Ark of the Covenant? It's a real thing, you know. The director of the movie was a Freemason. But it's important to note that the Ark cannot melt your face off. That's a myth."
 The Spear of Destiny	Chief Huffton Klimp	"[We] [start] to ask Klimp a question when he interrupts."	"'The Spear of Destiny, right? It's a real thing. I've seen it. It's in the Vatican. But it's a fake. The real one was stolen by the Illuminati.'"
@@ -2129,7 +2130,7 @@ The Knights Templar	Chief Huffton Klimp	"'Chief, what can you tell me about the 
 Atlantis	Chief Huffton Klimp	"'Chief, tell me about At--'"	"'lanta? It's a city in Georgia. Oh, you mean the lost city of Atlantis. It's really just a metaphor. For something. I can't remember what. But it's a metaphor. For something.'"
 Georgia-subject	Chief Huffton Klimp	"'So what about Geor --'"	"'-- gia? It's the only US State that spans two continents, you know.'"
 The Georgia Guidestones	Chief Huffton Klimp	"'Chief, what's the deal with the Georgia --'"	"'Guidestones? They may have been erected by human hands, but they were inspired by the Black Knight Satellite. I've seen the evidence.'"
-Ancient astronauts	Chief Huffton Klimp	"[We] [ask], 'Do you believe in --'"	"'ancient astronauts? I can't remember. I used to. I used to believe in them. I used to believe in them a lot. I used to believe in them so much that I thought I was one. Now, I'm not so sure.'"
+Ancient astronauts	Chief Huffton Klimp	"Faraji asks, 'Do you believe in --'"	"'ancient astronauts? I can't remember. I used to. I used to believe in them. I used to believe in them a lot. I used to believe in them so much that I thought I was one. Now, I'm not so sure.'"
 Ancient Egypt	Chief Huffton Klimp	"'Chief, what's the deal with --'"	"'Ancient Egypt? It's not there anymore. It just disappeared. It's a mystery. Now there's just a place that's called Egypt. It's not the same. It's not the same at all.'"
 Crop circles	Chief Huffton Klimp	"'Chief, do you think crop --'"	"'circles are of alien origin? Maybe. But I'm more interested in crop squares. Or crop trapezoids. Or crop dododecahedrons. Those are the real mystery. I think it's the the Illuminati. They use them to communicate with the Black Knight Satellite.'"
 ESP	Chief Huffton Klimp	"'Chief, do you believe in --'"	"'ESP? Is that like ESPN? I like ESPN. Don't really like sports, but I like ESPN. I like people discussing irrelevant things with passion. Like Senator Savra. He's like ESPN, thinks everything's a game. But I don't think that's what you meant.'"

@@ -555,7 +555,7 @@ The snarky remark of the sledgehammer is "I'm sure violence is the answer to som
 for-a-screwdriver-hutz is a questioning quip.
 	It is privately-named. The printed name is "for a screwdriver". [The true-name is "for-a-screwdriver-clerk".] Understand "for/a/screwdriver" as for-a-screwdriver-hutz.
 	It mentions the screwdriver.
-	The comment is "[We] [ask], 'Would you happen to have a screwdriver I could borrow?'".
+	The comment is "Faraji asks, 'Would you happen to have a screwdriver I could borrow?'".
 	The reply is "'No, not anymore. Got angry and threw mine in the lake one day.'".
 	It quip-supplies Hutz.
 	
@@ -565,8 +565,8 @@ An availability rule for for-a-screwdriver-hutz:
 
 Who-is-Hutz is a questioning quip.
 	The printed name is "who he is".
-	Understand "who are you", "who/he/is" as who-is-hutz.
-	The comment is "[We] [ask], 'You seem to know me, but who are you?'"
+	Understand "who are you", "who/he/man/bony/old/is" as who-is-hutz.
+	The comment is "Faraji asks, 'You seem to know me, but who are you?'"
 	The reply is "'Name's Hutz. I'm the town groundskeeper. Or was, I guess. Not much to keep now.'"
 	It quip-supplies Hutz.
 	It stocks Hutz.
@@ -578,7 +578,7 @@ After discussing who-is-hutz:
 Why-he-is-still-here is a questioning quip.
 	The printed name is "why he's still here".
 	Understand "why/he/he's/hutz/is/still/here/are/you" as why-he-is-still-here.
-	The comment is "[We] [ask], 'Why are you still here? The town is being flooded tomorrow.'"
+	The comment is "Faraji asks, 'Why are you still here? The town is being flooded tomorrow.'"
 	The reply is "'Had a feeling someone might come by looking for help. And here you are.' Hutz grins, showing a few teeth. 'I'm not going anywhere, not yet. Not until I've done what I need to do.'"
 	It quip-supplies Hutz.	
 	It follows Who-is-Hutz.
@@ -590,7 +590,7 @@ How-can-you-help-me is a questioning quip.
 	Understand "how/can/you/he/help/us/me/them/Faraji" as how-can-you-help-me.
 	Understand "how can you help me/them/Faraji/--", "how he can help me/them/Faraji/--", "how he can help me/them/Faraji/--" as how-can-you-help-me.
 	[ Understand "how/can/you/he/help/me/us/them/her/him" as how-can-you-help-me. ]
-	The comment is "'But how can you possibly help me?' [we] [ask]."
+	The comment is "'But how can you possibly help me?' Faraji asks."
 	The reply is "'You're looking for the secret of Enigma Lake, are you not? The secret about to be lost forever? Something calls you here; you're searching for something, no, someone. Yes, yes, Hutz can help you.'"
 	It quip-supplies Hutz.
 	It follows Why-he-is-still-here.
@@ -598,7 +598,7 @@ How-can-you-help-me is a questioning quip.
 What-is-the-secret is a questioning quip.
 	The printed name is "about the secret of Enigma Lake".
 	Understand "what/is/the/secret/of/enigma/lake/about" as what-is-the-secret.
-	The comment is "'Secret? What secret?' [we] [ask]."
+	The comment is "'Secret? What secret?' Faraji asks."
 	The reply is "'Well, *I* don't know. Just kinda thought you must be searching for some kind of mystical secret, seeing that you're wandering like a fool through a town about to be flooded. But I can help you, yep.'"
 	It quip-supplies Hutz.
 	It follows How-can-you-help-me.
@@ -610,7 +610,7 @@ Help-me is a performative quip.
 	Understand "about help" as help-me.
 	Understand "please/-- help me/-- please/--" as help-me.
 	The comment is "[We] [say], 'Okay, how can you help?'"
-	The reply is "'Oh yes, how was I going to help? Afraid I can't remember, sorry. Can't seem to focus.'"
+	The reply is "'Oh yes, how was I going to help? Afraid I can't remember, sorry. Can't seem to focus. I'm just so tired. Maybe if I had a cup of coffee, I could help you. But make sure it's hot -- hot enough to burn my tongue. I can't drink cold coffee, you know.'"
 	It quip-supplies Hutz.
 	It follows How-can-you-help-me.
 
@@ -626,11 +626,11 @@ Now-can-you-help-me is a questioning quip.
 	Understand "can you help me/us/them/Faraji/-- now/--" as now-can-you-help-me. 
 	Understand "if he can help me/us/them/Faraji/-- now/--" as now-can-you-help-me.
 	Understand "if/for/he/you/can/help/me/us/them/Faraji/now" as now-can-you-help-me.
-	The comment is "'Now, you've had your coffee. Can you help me?' [we] [ask]."
+	The comment is "'Now, you've had your coffee. Can you help me?' Faraji asks."
 	The reply is "'I found something. Something that might help you. It's in the workshed. In the cabinet. You'll need the key.' At this, Hutz pulls out a rusty key ring, pulls off an iron key and hands it to [us]."
 	It quip-supplies Hutz.
 
-The iron key is a key. The description is "A heavy iron key, it looks like it might fit a padlock."
+The iron key is a key. The description is "A heavy iron key."
 
 After discussing Now-can-you-help-me:
 	now the player carries the iron key;
@@ -686,13 +686,13 @@ To interject Hutz:
 
 Table of Hutz Interjections
 Hutz interjection	used (a truth state)
-"Hutz raises his head and says, 'Thinking I just might go down with the town, you know?'"	false
-"Hutz rolls over on his back. The cat jumps up and starts kneading his stomach. 'Cat doesn't care about the flood,' he says."	false
-"Hutz sits up and says, 'Never bothered to name the cat. Just call him Cat.'"	false
-"Hutz smiles sadly. 'You know, I used to be a dancer, back before they bulldozed the dance hall and built the radio station.'"	false
-"Hutz puts his arm under his head. 'You're the first person to come by in a long time. Stay as long as you like.'"	false
-"Hutz says, 'Something's running around out there. Something not human.'"	false
-"Hutz scratches his arm. 'Wish this rain would let up. Makes one hell of a racket on the roof.'"	false
+"[A Hutz] raises his head and says, 'Thinking I just might go down with the town, you know?'"	false
+"[A Hutz] rolls over on his back. The cat jumps up and starts kneading his stomach. 'Cat doesn't care about the flood,' he says."	false
+"[A Hutz] sits up and says, 'Never bothered to name the cat. Just call him Cat.'"	false
+"[A Hutz] smiles sadly. 'You know, I used to be a dancer, back before they bulldozed the dance hall and built the radio station.'"	false
+"[A Hutz] puts his arm under his head. 'You're the first person to come by in a long time. Stay as long as you like.'"	false
+"[A Hutz] says, 'Something's running around out there. Something not human.'"	false
+"[A Hutz] scratches his arm. 'Wish this rain would let up. Makes one hell of a racket on the roof.'"	false
 
 The flood is a subject. 
 Enigma-Lake-subject is a subject. It is privately-named. The printed name is "Enigma Lake". Understand "Enigma/Lake" as Enigma-Lake-subject.

@@ -75,7 +75,7 @@ After discussing for the wrench:
 for-a-screwdriver is a questioning quip.
 	It is privately-named. The printed name is "for a screwdriver". [The true-name is "for-a-screwdriver".] Understand "for/a/screwdriver" as for-a-screwdriver.
 	It mentions the red screwdriver.
-	The comment is "[if the current interlocutor is Margaret][We] [ask], 'Margaret, where's the screwdriver?'[otherwise][We] [ask], 'Would you happen to have a screwdriver I could borrow?'[end if]".
+	The comment is "[if the current interlocutor is Margaret]Faraji asks, 'Margaret, where's the screwdriver?'[otherwise]Faraji asks, 'Would you happen to have a screwdriver I could borrow?'[end if]".
 	The reply is "'Umm... I think it was in a box we had to leave behind.' [Margaret] looks embarrassed. 'What? I never thought we'd need it. This isn't a construction site after all. Maybe if Klimp had paid for the bigger UHaul...' [They] stares past [us] awkwardly.".
 	It quip-supplies Margaret.
 	It is repeatable.
@@ -92,7 +92,7 @@ After discussing for-a-screwdriver:
 to unlock the backdoor is a questioning quip. 
 	Understand "back/door" as to unlock the backdoor.
 	It mentions the BOSH back door.
-	The comment is "[We] [ask], 'Could you unlock the back door, Margaret?'".
+	The comment is "Faraji asks, 'Could you unlock the back door, Margaret?'".
 	The reply is "[if location is front office]'Sure, sure, in a minute. What do you want back there anyway? There's only a dumpster.' She pauses for a moment and mutters to herself. 'Which reminds me, I need to get these boxes broken down.' She picks up a couple and flattens them.[otherwise if back door is locked]'Sure, in a minute.'[otherwise]'It's already unlocked, silly!'[end if]".
 	It quip-supplies Margaret.
 	It is repeatable.
@@ -109,7 +109,7 @@ An availability rule for to unlock the backdoor:
 		always available;
 
 about the phone exchange is a questioning quip.
-	The comment is "[We] [ask], 'Tell me what's going on with the phones again?'".
+	The comment is "Faraji asks, 'Tell me what's going on with the phones again?'".
 	The reply is "[Margaret] looks apologetic. 'I'm sorry, I thought everyone knew. Budget cuts. They're trading in all our smart phones for cheaper models.'".
 	It quip-supplies Margaret.
 	It stocks Margaret.
@@ -117,7 +117,7 @@ about the phone exchange is a questioning quip.
 	It is plausibility-once.
 
 about the locked desk is a questioning quip.
-	The comment is "[We] [ask], 'Margaret, do you know any way to get into my desk?'".
+	The comment is "Faraji asks, 'Margaret, do you know any way to get into my desk?'".
 	The reply is "'Hmm... take it apart?'".
 	It quip-supplies Margaret.
 	It is repeatable.
@@ -132,7 +132,7 @@ klimp-whereabouts is a questioning quip.
 	It is privately-named.
 	The printed name is "where Klimp is".
 	Understand "where is Klimp", "is Klimp here", "is Klimp in the office", "has Klimp come in yet", "where klimp is" as klimp-whereabouts.
-	The comment is "[We] [ask], 'Margaret, have you seen Klimp this morning?'".
+	The comment is "Faraji asks, 'Margaret, have you seen Klimp this morning?'".
 	The reply is "[if Chief Huffton Klimp is not in BOSH Chief's Office]She shakes her head. 'He hasn't been in yet.'[otherwise]She points towards the hall. 'He's in his office.'[end if]".
 	It quip-supplies Margaret.
 	It is repeatable.
@@ -144,7 +144,7 @@ moira-whereabouts is a questioning quip.
 	It is privately-named. 
 	The printed name is "where Moira is".
 	Understand "where is Moira", "is Moira here", "is Moira in the office", "has moira come in yet", "where moira is" as moira-whereabouts.
-	The comment is "[We] [ask], 'Has Moira come in yet?'".
+	The comment is "Faraji asks, 'Has Moira come in yet?'".
 	The reply is "[if Moira Zin is not in Moira's Office]Margaret barely looks up from her work. 'Nope.'[otherwise]Margaret nods. 'I think she's working in her office.'[end if]".
 	It quip-supplies Margaret.
 	It is repeatable.
