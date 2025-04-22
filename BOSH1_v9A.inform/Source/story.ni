@@ -104,7 +104,7 @@ When play begins: now right alignment depth is 20.
 A thing can be snarkable or unsnarkable. A thing is usually snarkable.
 A quip is usually snarkable.
 
-Understand "use [text]" as a mistake ("Please be more specific in what you want do.").
+Understand "use [text]" as a mistake ("Please be more specific in what you want to do.").
 
 [Turning off snarky remarks due to bad review... boo hoo]
 the thing-snarking rule does nothing.

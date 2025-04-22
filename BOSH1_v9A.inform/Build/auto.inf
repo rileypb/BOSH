@@ -225058,7 +225058,7 @@ Constant TX_PS_1856 = "Plain, boring white drywall.";
 Constant TX_PS_100 = "Player needs to break in to laundromat.";
 Constant TX_PS_3501 = "Please be more careful with Agent Faraji's life in the future.";
 Array TX_L_3501 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_3501;
-Constant TX_PS_3493 = "Please be more specific in what you want do.";
+Constant TX_PS_3493 = "Please be more specific in what you want to do.";
 Constant TX_PS_1946 = "Please don't take the furniture, even if it is kind of... not really furniture.";
 Constant TX_PS_1358 = "Plural-you-pronoun";
 Constant TX_PS_1601 = "Plush and comfortable with a yellow and red striped design. Absolutely hideous.";
