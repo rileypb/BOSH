@@ -881,7 +881,7 @@ Carry out anonymous record playing backwards:
 	if the power switch is switched on:
 		say "Faraji starts the turntable. The record spins, and the speakers crackle to life, playing [italic type][the title of the current record][roman type] by [the artist of the current record] backwards.[paragraph break]";
 		if the current record is strange-record:
-			say "The backwards music is eerie and unsettling, but a message can be made out clearly: 'Congratulations, you've found the secret of Enigma Lake! Well, one of them, anyway. This is just the little one. The big one is still out there. In any case, the first person to email the secret phrase WGXC [']GALAXY['] RADIO ROCKS ENIGMA LAKE to rileypb@gmail.com will win a prize!'";
+			say "The backwards music is eerie and unsettling, but a message can be made out clearly: 'Congratulations, you've found the secret of Enigma Lake! Well, one of them, anyway. This is just the little one. The big one is still out there. Unfortunately since the source code has been made public, the prize is no longer available. It was going to be good, whatever it was.";
 		otherwise:
 			say "All Faraji can make out is a lot of gibberish.";
 	otherwise:
@@ -971,6 +971,12 @@ Chapter 2 - The rest of it
 The power switch is a scenery device in the metal cabinet. ["The power switch is set to [if the power switch is switched on]on[otherwise]off[end if]."]
 The power switch is indescribable.
 
+Does the player mean switching on the power switch:
+	It is very likely.
+	
+Does the player mean switching off the power switch:
+	It is very likely.
+
 After switching on the power switch:
 	if mounted-shiny-resonator:
 		say "Faraji switches the power switch on. The broadcast tower begins to hum loudly, and a beam of light shoots out of [the shiny astral resonator], striking the obelisk in the park. The crystal is glowing [crystal glow].";
@@ -1035,6 +1041,8 @@ After taking the shiny astral resonator when the shiny astral resonator was on t
 		say "Faraji removes [the shiny astral resonator] from the platform, and the light fades. In the distance, the beam of light fades from the obelisk. [if the beam count is 0]The crystal is no longer glowing[otherwise]The crystal is still glowing [crystal glow][end if].";
 	otherwise:
 		say "Faraji removes [the shiny astral resonator] from the platform.";
+
+Understand "clamp [shiny astral resonator] to [platform]" as tying it to.
 
 Instead of tying the shiny astral resonator to the rings:
 	try putting the shiny astral resonator on the platform;
@@ -1449,6 +1457,8 @@ Understand "trip [circuit breaker]" as switching off. Understand "reset [circuit
 Book 17.5 - The church basement
 
 The church basement is below the First Utilitarian Church of Enigma Lake. It is in ELR. It is indoors. It is dark. "The basement is a shock to behold after the simple church above. It's a large, open space, with walls painted with scenes of humans and lizard people in battle, with aliens and platypuses looking on in horror. There is an ornate altar at the far end of the room. The exit is up.
+
+The [italic type]Book of Utilitarianism[roman type] is on the altar.
 
 It looks like the fluorescent tubes in the ceiling are burned out."
 
@@ -4307,6 +4317,9 @@ The lamp switch is part of the table lamp. The description is "A switch on the b
 Instead of switching on the lamp switch:
 	try switching on the table lamp;
 
+Instead of flipping the lamp switch:
+	try flipping the table lamp;
+
 Instead of inserting something into the table lamp:
 	if the noun is the socket-end or the noun is the extension cord:
 		try plugging the table lamp into the extension cord;
@@ -4853,7 +4866,7 @@ Every turn when the group of lizard people is not in the location and the locati
 					otherwise if new structure is not "":
 						say "To the [dirtext], the shadowy figures move [dir], from [the pretty name of the current space] into [the new structure].";
 				otherwise:
-					say "To the [dirtext], the shadowy figures move [dir], [the preposition of the next space] [the pretty name of the next space].";
+					say "To the [dirtext], the shadowy figures move [dir], and are now [the preposition of the next space] [the pretty name of the next space].";
 			otherwise if seen at last is true:
 				if old structure is not new structure:
 					if old structure is not "" and new structure is not "":
@@ -4866,7 +4879,7 @@ Every turn when the group of lizard people is not in the location and the locati
 						say "To the [dirtext], some shadowy figures leave [the pretty name of the current space] and enter [the new structure], moving [dir].";
 						[ say "Some shadowy figures appear [from-dir the opposite of dir], entering [the new structure]."; ]
 				otherwise:
-				  	say "To the [dirtext], some shadowy figures come into view [from-dir the opposite of dir], [the preposition of the next space] [the pretty name of the next space].";
+				  	say "To the [dirtext], some shadowy figures come into view [from-dir the opposite of dir], and are now [the preposition of the next space] [the pretty name of the next space].";
 			otherwise if seen at first is true:
 				if old structure is not new structure:
 					if old structure is not "" and new structure is not "":
@@ -4906,7 +4919,7 @@ After printing the locale description of a room:
 	if the group of lizard people is in a room (called current space):
 		if the location overlooks the current space:
 			let dirtext be the heading from the location to the current space;
-			say "[We] [see] the faint trace of shadowy figures off to the [dirtext], [the preposition of the current space] [the pretty name of the current space].";
+			say "Faraji sees the faint trace of shadowy figures off to the [dirtext], [the preposition of the current space] [the pretty name of the current space].";
 
 The Room of Stuff is a room. 
 The shadowy figures are a thing in the room of stuff. The description is "Faraji can't make out much detail from this distance. They are humanoid, that much is clear."
@@ -5076,6 +5089,44 @@ To make the makeshift astral resonator:
 		say "Faraji needs to be holding the wooden frame to insert anything into it." instead;
 	if the noun is not the astral lenses and the noun is not the table lamp and the noun is not the tuning fork:
 		say "That doesn't fit into the wooden frame." instead; ]
+
+Volume 4.8 - Some backdrops
+
+radio-tower is a backdrop. "[radio tower backdrop description]."
+It is privately-named. The printed name is "radio tower". Understand "radio/broadcast/tower" as radio-tower.
+
+To say radio tower backdrop description:
+	if mounted-shiny-resonator:
+		say "A bright beam of light shoots from the radio tower, striking the crystal atop the obelisk";
+	otherwise:
+		say "The radio tower looms darkly against the sky in the southeast corner of town";
+
+When play begins: 
+	move the radio-tower backdrop to all outdoors rooms in ELR;
+
+steeple-backdrop is a backdrop. "[steeple backdrop description]."
+It is privately-named. The printed name is "steeple". Understand "steeple" as steeple-backdrop.
+
+To say steeple backdrop description:
+	if mounted-makeshift-resonator:
+		say "A bright beam of light shoots from the steeple, striking the crystal atop the obelisk";
+	otherwise:
+		say "The steeple rises from the church on the east side of town, its cross silhouetted against the sky";
+
+When play begins: 
+	move the steeple-backdrop backdrop to all outdoors rooms in ELR;
+
+henrys-backdrop is a backdrop. "[henrys backdrop description]."
+It is privately-named. The printed name is "Henry's Hot Skillet sign". Understand "henry's/hot/skillet/sign" as henrys-backdrop.
+
+To say henrys backdrop description:
+	if mounted-rusty-resonator:
+		say "A bright beam of light shoots from the Henry's sign, striking the crystal atop the obelisk";
+	otherwise:
+		say "Once a bright promise of good food, the Henry's sign now sits darkly against the southern sky";
+
+When play begins: 
+	move the henrys-backdrop backdrop to all outdoors rooms in ELR;
 
 
 Volume 5 - Polish
