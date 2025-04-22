@@ -2354,7 +2354,7 @@ After waiting when the group of lizard people is in the location and the locatio
 			if lizard people facing us is false:
 				say "The lizard people make a menacing movement towards Daniels. He backs away strategically.";
 			otherwise:
-				say "The lizard people make a menacing movement towards Faraji. They back away strategically.";
+				say "The lizard people make a menacing movement towards Faraji. Faraji backs away strategically.";
 		-- 2:
 			if lizard people facing us is false:
 				say "The lizard people hiss and growl at Daniels.";
@@ -2772,7 +2772,7 @@ where-we-are is a questioning quip.
 	The printed name is "where we are".
 	Understand "where are we", "where we are", "where"  as where-we-are.
 	The comment is "Faraji asks, 'Where are we?'". 
-	The reply is "'We're in an old Onondaga root cellar in upstate New York. Well not so old now, I guess. I've managed to make friends with the locals well enough, so they let me sleep in here.'".
+	The reply is "'We're in an old Onondaga root cellar in upstate New York. Well not so old yet, I guess. I've managed to make friends with the locals well enough, so they let me sleep in here.'".
 	It quip-supplies Daniels.
 
 who-the-dragon-is is a questioning quip.
@@ -5287,6 +5287,7 @@ Carry out resonating:
 	now the player carries the rusty astral resonator;
 	now the player carries the makeshift astral resonator;
 	now the player carries the shiny astral resonator;
+
 
 
 Enigma Lake ends here.
