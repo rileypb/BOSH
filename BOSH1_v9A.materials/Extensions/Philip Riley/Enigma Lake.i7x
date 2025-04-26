@@ -549,7 +549,7 @@ Instead of entering the narrow bed:
 
 The sink is a scenery container in the dirty shack. "The sink is piled high with dirty dishes."
 
-The sledgehammer is in the dirty shack. Understand "hammer" as sledgehammer. The description is "A heavy sledgehammer, the head of which is covered in rust."
+The sledgehammer is in the dirty shack. Understand "hammer" as sledgehammer. The description is "A heavy sledgehammer, the head of which is covered in rust. The handle has the name 'Josef' burned into it.".
 The snarky remark of the sledgehammer is "I'm sure violence is the answer to something. Let's go look."
 
 for-a-screwdriver-hutz is a questioning quip.
@@ -703,11 +703,13 @@ daniels-subject is a subject. It is privately-named. The printed name is "Daniel
 TV-subject is a subject. It is privately-named. The printed name is "television". Understand "TV/television" as TV-subject.
 Dragnet is a subject. 
 Theme song is a subject. Understand "dragnet theme song" as theme song.
+Josef is a subject. 
 
 Table of Quiz Topics (continued)
 subject (a thing)	interlocutor (a person)	comment (a text)	reply (a text)
 mangy cat	Hutz	"'Is that your cat?' Faraji asks."	"'What does it mean to be a cat's owner?' Hutz replies."
 sledgehammer	Hutz	"'What's the sledgehammer for?' Faraji asks."	"'That's the only thing left of my old friend Josef,' Hutz replies."
+Josef	Hutz	"'Who's Josef?' Faraji asks."	"'Josef? Oh, he was a friend of mine -- a lizard person, if you can believe it. Had to keep him a secret, of course. No one would understand. A Montague and Capulet thing, you know? But he was a good guy. I miss him.' Hutz sighs."
 plates	Hutz	"'What's with all the dirty dishes?' Faraji asks."	"'What's with your ugly face?' Hutz replies."
 pile of used coffee cups	Hutz	"'Why so many coffee cups?' Faraji asks."	"'I like the coffee at Henry's,' Hutz replies."
 narrow bed	Hutz	"'What's with the narrow bed?' Faraji asks."	"'I like to sleep on my side,' Hutz replies."
@@ -2726,7 +2728,7 @@ Lizard interjection	used (a truth state)
 "The tallest lizard person says, 'Give us the Dragon, Faraji!'"	false
 "One of the lizard people says, 'This is a waste of time, Faraji. Tell us where the Dragon is!'"	false
 "One of the lizard people says, 'Even if you defeat us now, Faraji, victory will be ours eventually!'"	false
-"The short lizard person says, 'Even now, Faraji, our spies are destroying BOSH from within.' The stout lizard person elbows him in the ribs and hisses, 'Shut up!'"	false
+"The short lizard person says, 'Even now, Faraji, our spies are inside BOSH, siphoning off your petty cash fund.' The stout lizard person elbows him in the ribs and hisses, 'Shut up!'"	false
 "The tallest lizard person says, 'You cannot defeat us, Faraji!'"	false
 
 Last every turn:
@@ -5020,10 +5022,10 @@ potato-subject is a subject. It is privately-named. The printed name is "potato"
 
 Table of Quiz Topics (continued)
 subject (a thing)	interlocutor (a person)	comment (a text)	reply (a text)
-group of lizard people	group of lizard people	"'Who are you?' asks Faraji.'"	"The lizard people hiss as if in laughter. 'We are the first ones and the last ones. You will all learn our names.'"
+group of lizard people	group of lizard people	"'Who are you?' asks Faraji.'"	"The lizard people hiss as if in laughter. 'We are your worst enemy. We are the lost, the oppressed, the forgotten. We are the lizard people. You will all learn our names, though I doubt you will learn to pronounce them.'"
 Doris-subject	group of lizard people	"'Doris sent me,' says Faraji."	"'Doris is a fool,' hisses the lizard person. 'He will not stop us.'"
 Enigma-Lake-subject	group of lizard people	"'What are you doing here?' asks Faraji."	"'We are here to stop you. We will have the Dragon,' hisses the lizard person."
-senator-savra-subject	group of lizard people	"'What do you know about Senator Savra?' asks Faraji."	"'Savra, our great leader, will have the Dragon,' hisses the lizard person."
+senator-savra-subject	group of lizard people	"'What do you know about Senator Savra?' asks Faraji."	"'Savra, our great hero, will have the Dragon,' hisses the lizard person."
 Dragon-subject	group of lizard people	"'Who is the Dragon?' asks Faraji."	"'The Greatest of All, corrupted by the surface vermin,' hisses the lizard person."
 strange shiny metal object	group of lizard people	"'What is that shiny object?' asks Faraji."	"'It is ours,' hisses the lizard person. 'You will not have it.'"
 Larch Faraji	group of lizard people	"'What do you want with me?' asks Faraji."	"'We want nothing with you,' hisses the lizard person. 'You are nothing to us.'"
@@ -5036,7 +5038,7 @@ red woven basket	group of lizard people	"'What's with the woven basket?' asks Fa
 blue woven basket	group of lizard people	"'What's with the woven basket?' asks Faraji."	"'What?' hisses the lizard person. 'We have no interest in woven baskets.'"
 green woven basket	group of lizard people	"'What's with the woven basket?' asks Faraji."	"'What?' hisses the lizard person. 'We have no interest in woven baskets.'"
 root vegetables	group of lizard people	"'What's with the root vegetables?' asks Faraji."	"'Root vegetables?' hisses the lizard person. 'We have no interest in root vegetables. Least of all rutabagas.'"
-plans-subject	group of lizard people	"'What are your plans?' asks Faraji."	"'Our plans are our own,' hisses the lizard person. 'You will not stop us.'"
+plans-subject	group of lizard people	"'What are your plans?' asks Faraji."	"'Our plans are our own,' hisses the lizard person. 'You will not stop us. But, actually, I've gotta say something about something that really bugs me. I mean, it's not like I'm going to tell you anything, but I just have to get this off my chest. You know how it is. It's like, 'Why do they always have to make the lizard people the bad guys?' I mean, come on! We're just trying to live our lives here. And then you humans come along and start asking all these questions. It's like, 'Can't a lizard person catch a break?' But no, you just keep poking and prodding and asking all these questions. It's really frustrating, you know? Anyway, I'm not going to tell you anything. But I just had to get that off my chest.'"
 
 Instead of pushing the recall button when the group of lizard people is in the location:
 	say "It doesn't do anything. The lizard people hiss in amusement.";

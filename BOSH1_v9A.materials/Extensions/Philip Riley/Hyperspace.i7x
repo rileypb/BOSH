@@ -381,7 +381,7 @@ Staircase coords is always {0, 0, 0}.
 
 Rule for writing a paragraph about the Ethereal Pillar:
 	now visited pillar is true;
-	say "There is an [ethereal pillar] here. A message carved into the pillar says 'All you need is love : love : love -Doris'[paragraph break]";
+	say "There is an [ethereal pillar] here. A message carved into the pillar says 'What do you need? zilch : zippo : nada -Doris'[paragraph break]";
 	say "Under that is a line of five ethereal symbols: o p q d b";
 	[say "Under that is a line of five strange symbols: ◊ ┘ ┐ ┌ └";]
 	say paragraph break;
@@ -389,7 +389,7 @@ Rule for writing a paragraph about the Ethereal Pillar:
 Rule for writing a paragraph about the mystic compass:
 	say "A mystic compass dangles from an outcropping of the pillar.";	
 	
-The message is part of the Ethereal Pillar. The description is "The message is carved into the pillar as into white marble. It says 'All you need is love : love : love -Doris'".
+The message is part of the Ethereal Pillar. The description is "The message is carved into the pillar as into white marble. It says 'What do you need? zilch : zippo : nada -Doris'".
 
 The ethereal symbols is part of the Ethereal Pillar. The description is "Under the message is a line of five ethereal symbols: o p q d b". They are plural-named.
 
@@ -1295,9 +1295,9 @@ Instead of saying no when no-aliens is q-available:
 what-is-a-lizard-person is a questioning quip.
 	It is privately-named.
 	The printed name is "what is a lizard person".
-	Understand "what/is/a/lizard/person" as what-is-a-lizard-person.
+	Understand "what/is/are/a/lizard/person/people" as what-is-a-lizard-person.
 	The comment is "Faraji looks incredulous. 'And just what is a lizard person?'".
-	The reply is "'Just what it sounds like. It's a bipedal, intelligent reptilian creature. Strange people. Deathly allergic to rutabagas.'".
+	The reply is "'Just what it sounds like. It's a bipedal, intelligent reptilian creature. Strange people. Deathly allergic to rutabagas. Humans and Lizard People have been at war for millenia, each trying to get the upper hand on the other; neither succeeding. But now we might nearly have what we need to dominate them for good: The Dragon.'".
 	It quip-supplies Doris.
 	It follows yes-aliens.
 	It follows no-aliens.
@@ -1329,7 +1329,7 @@ Savra's not reptilian is an informative quip.
 about the mission is a questioning quip.
 	Understand "what about the/-- mission" as about the mission.
 	The comment is "Faraji says, 'What's the mission?'".
-	The reply is "Doris leans back in his chair. 'I believe we still have a chance to retrieve our lost agent -- the one that left the thumb drive. He says he was at an Onondaga holy place in the 14th century. Now we need to find out where that is. Fortunately, there's a book that can help. Unfortunately, I don't have it. Fortunately, you're here to go find it. Unfortunately, the name's gotten a bit jumbled in my head. I think it was something like [italic type]New Bikers of Troy[roman type]. Or something. I'm bad with things like titles and letters and keeping things the right way [']round. But you'll find it. I know you will. Come back here when you have.'".
+	The reply is "Doris leans back in his chair. 'I believe we still have a chance to retrieve our lost agent -- the one who left the thumb drive. He says he was at an Onondaga holy place in the 14th century. Now we need to find out where that is. Fortunately, there's a book that can help. Unfortunately, I don't have it. Fortunately, you're here to go find it. Unfortunately, the name's gotten a bit jumbled in my head. I think it was something like [italic type]New Bikers of Troy[roman type]. Or something. I'm bad with things like titles and letters and keeping things the right way [']round. But you'll find it. I know you will. Come back here when you have.'".
 	it quip-supplies Doris.
 	It follows about the Dragon.
 	It follows about-time-travel.
@@ -1531,7 +1531,7 @@ UFOs	Doris	"'What are UFOs?'"	"'They're a way of getting around. I've got one in
 Ouija boards	Doris	"'What's a Ouija board?'"	"'That's the governing body of OUIJA. By the way, OUIJA stands for 'Organization of Unusual Interdimensional Journeys and Adventures.''"
 Magic 8-Ball	Doris	"'What's a Magic 8-Ball?'"	"'I used to have one of those. I asked it if it worked. It said 'Ask again later.' I never did get an answer.'"
 The Bureau of Supernatural History	Doris	"'What is the Bureau of Supernatural History?'"	"'It's a competing agency. They're not as good as we are. They don't have a Doris.'"
-aliens	Doris	"'Are aliens on Earth?'"	"'You must work for Klimp. No. There are no aliens on Earth. If there are, why hasn't anyone noticed?'"
+aliens	Doris	"'Are aliens on Earth?'"	"'You must work for Klimp. No. There are no aliens on Earth. If there were, why hasn't anyone noticed?'"
 Woonsocket	Doris	"'What is Woonsocket?'"	"'Why are you asking me about Woonsocket? It's not in Enigma Lake.'"
 Kamchatka	Doris	"'Have you ever been to Kamchatka?'"	"'Of course. I've been everywhere. Hyperspace has a lot of tentacles.'"
 Mark David Chapman	Doris	"'Have you ever met Mark David Chapman?'"	"'Once, in 1978. We were both in traffic court. I was there on some trumped-up charge about going left on a red light. Can you imagine?'"

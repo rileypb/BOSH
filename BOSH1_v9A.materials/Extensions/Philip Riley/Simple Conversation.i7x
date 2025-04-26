@@ -247,6 +247,7 @@ After quizzing someone about something when conversation available for noun / se
 				now new history entry is "[new history entry][reply entry][line break]";
 				say new history entry;
 				add "[new history entry][line break]" to the speech history of the noun;
+				break;
 
 After quizzing:
 	say "That doesn't seem to be a topic of conversation at the moment.";

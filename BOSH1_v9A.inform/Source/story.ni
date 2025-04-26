@@ -1712,7 +1712,7 @@ Upon disembarking from the ferry on Orcas, I became aware that Spooney had falle
 Nonstandard Investigative Techniques is a tome on Moira's bookshelves. It is owned by Moira Zin. It is loanable. 
 The description is "Your bible from college, a comprehensive look at the most effective nonstandard investigative techniques, from the use of psychics to the application of chaos theory to criminal investigation. One of its more memorable case studies involves a possible homicide in a small town in the Pacific Northwest:
 
-Eventually the deceased was identified as Arthur 'Spooney' Spooner of Enigma Lake, New York. The cause of death was determined to be a combination of exposure and dehydration, but eyewitness accounts of lizard person sightings were never satisfactorily explained. At the behest of the local Ouija Board fan club, the Bureau of Strange Homicides was called in to investigate. They found evidence of lizard person activity, but were unable to determine whether the lizard people were responsible for Spooney's death. The case was ruled a natural death, but some locals remain unconvinced."
+Eventually the deceased was identified as Arthur 'Spooney' Spooner of Enigma Lake, New York. The cause of death was determined to be a combination of exposure and dehydration, but eyewitness accounts of lizard person sightings were never satisfactorily explained. At the behest of the local Ouija Board fan club, the Bureau of Suspicious Homicides was called in to investigate. They found evidence of lizard person activity, but were unable to determine whether the lizard people were responsible for Spooney's death. The case was ruled a natural death, but some locals remain unconvinced."
 [ It is borrowable. ]
 
 Calculus-with-Infinitesimals is a tome on Moira's bookshelves. It is owned by Moira Zin. It is loanable. 
@@ -2808,9 +2808,9 @@ Book 21 - Not For Release
  
 [ Include BOSH Tests by Philip Riley. ]
 
-DEBUG is true.
+DEBUG is false.
 
-SKIP_PROLOGUE is true;
+SKIP_PROLOGUE is false;
 
 AUDIT is a truth state that varies.
 AUDIT is false.
