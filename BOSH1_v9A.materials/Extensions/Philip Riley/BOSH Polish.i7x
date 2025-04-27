@@ -190,7 +190,7 @@ Enigma Park	Lake shore north of the park	"Faraji leaves the park for a walk alon
 Lake Street by the park	Enigma Park	"Faraji slips into the shadows of the park."	--
 Lake Street by the park	Lake Street by the gym	"Faraji heads south along Lake Street, towards the center of town."	--
 Lake Street by the park	First Utilitarian Church of Enigma Lake	"Faraji enters the church through the open door."	--
-Lake Street by the park	Lake at Ridge	"Faraji head north along Lake Street, toward the lake."	--
+Lake Street by the park	Lake at Ridge	"Faraji heads north along Lake Street, toward the lake."	--
 Lake Street by the gym	Main at Lake	"Faraji strolls south along Lake Street to where it meets Main."	--
 Main at Lake	Main Street 200 block	"Walking west on Main Street, Faraji approaches the entrance to the town hall."	--
 Main at Lake	Lake Street by the park	"Faraji heads north along Lake Street."	--

@@ -194,6 +194,7 @@ Instead of examining the makeshift astral resonator:
 
 The wristwatch is a thing. Understand "watch" as the wristwatch. The description is "A simple wristwatch. The initials 'DM' are engraved on the back."
 Understand "DM" as the wristwatch.
+Daniels carries the wristwatch.
 
 Volume 3 - Geography
 
@@ -316,7 +317,7 @@ To explore is a verb.
 Enigma Park is a leavable room. It is north of Enigma Lake town hall. It is unleavable. Enigma Park is in ELR. It is outdoors.
 "[first time]It's probably beautiful during the day, but tonight the deep shadows among the trees seem ominous. Faraji is watchful and tense as they explore the park. 
 
-[only]The central focus of the park is a large obelisk inscribed with the names of the town's citizens lost in the Great War. Firs and maples line the paths. The town hall is to the south, and other exits are to the north, west, and east. Other egress is blocked by iron fences[park beam description][if obelisk-ladder is revealed]
+[only]The central focus of the park is a large obelisk inscribed with the names of the town's citizens lost in the Great War. Firs and maples line the paths. The town hall is to the south, and other exits are to the north, west, and east. Other egress is blocked by iron fences[park beam description][if obelisk-ladder is revealed].
 
 The obelisk has moved, revealing a ladder leading down into the ground[end if]."
 
@@ -1244,6 +1245,10 @@ The first names is a list of text that varies.
 The first names are { "Hathgar", "Pezzex", "Xapnix", "Zorax", "Grover", "Hobnop", "Bazell", "Hoozum", "Gorblax" }.
 
 To decide what text is the doll-fly-name:
+	if DEBUG is true:
+		now the secret first name of the doll-fly is "Hathgar";
+		now the secret last name of the doll-fly is "the Pitiful";
+		decide on the substituted form of "Hathgar the Pitiful";
 	sort the first names in random order;
 	sort the third name parts in random order;
 	now the secret first name of the doll-fly is entry 1 of the first names;
@@ -1921,6 +1926,10 @@ Understand "screw [the light bulb] in/into [the hanging socket]", "mount [the li
 Understand "screw [the rusty astral resonator] in/into [the hanging socket]", "mount [the rusty astral resonator] on/onto/in/into [the hanging socket]" as inserting it into.
 Understand "unscrew [the light bulb]" as taking when the light bulb is in the hanging socket.
 Understand "unscrew [the light bulb] from [the hanging socket]" as removing it from when the light bulb is in the hanging socket.
+Understand "screw [the rusty astral resonator] on/onto/in/into [aerial]", "mount [the rusty astral resonator]on/onto/in/into [aerial]" as inserting it into.
+
+Instead of inserting the rusty astral resonator into the aerial:
+	try inserting the rusty astral resonator into the threaded socket;
 
 Failing to screw it into is an action applying to two things.
 Understand "screw [something] in/into [something]" as failing to screw it into.
@@ -2006,9 +2015,17 @@ A door appearance rule for the obelisk-ladder:
 The ethereal portal is fixed in place. "A shimmering portal hovers in the center of the chamber, casting a faint light over the room."
 The description is "This portal seems to be natural, if that's indeed a possibility. It's a shimmering white oval, about six feet high and four feet wide. It's not clear where it leads."
 
+To introduce the boss battle:
+	say "Faraji finds themself in the midst of a hostile confrontation. On one side are the same group of lizard people they banished from Enigma Park; on the other, a lone bedraggled man, clutching a root vegetable and wearing a very nice watch. Despite their superior numbers, the lizard people seem to be wary of their opponent. Presumably, the bedraggled man is the Daniels that Faraji was sent to find.
+
+The lizard people turn to Faraji. 'You!' one of them hisses. 'You thought you could banish us, but we have returned to snatch your victory from the jaws of our defeat... or something or other. And now we are on the threshold of our greatest triumph! Soon the Dragon will be ours!'
+
+Presumably-Daniels speaks up.  'Seriously guys, you're always so over-dramatic. Besides, I've got you right where I want you. Just watch.' He shakes his potato at the lizard people. As he does, you notice his right arm looks injured.[paragraph break]";
+
 Instead of entering the ethereal portal:
-	say "Faraji steps through the portal. The circular chamber vanishes, and...";
+	say "Faraji steps through the portal. The circular chamber vanishes, and...[paragraph break]";
 	initialize the boss battle;
+	introduce the boss battle;
 	now the player is in the old root cellar;
 	now the current interlocutor is Daniels;
 
@@ -2016,25 +2033,20 @@ Book 23.5 - Old Root Cellar
 
 An old root cellar is a room. It is always-indefinite. "The chamber is dark and damp, smelling of earth and old vegetable matter. The walls, floor, and ceiling are packed earth. Around the walls are some woven baskets for storing vegetables: [if the group of lizard people is in the old root cellar]a red one and a blue one nearby, and a green one near Daniels[otherwise]red, blue, and green[end if]. Light filters in from a passage to the north."
 
-Instead of looking when the location is the old root cellar and the old root cellar is unvisited:
-	say "The chamber is dark and damp, smelling of earth and old vegetable matter. The walls, floor, and ceiling are packed earth. Around the walls are some woven baskets for storing vegetables: [if the group of lizard people is in the old root cellar]a red one and a blue one nearby, and a green one near Daniels[otherwise]red, blue, and green[end if]. Light filters in from a passage to the north.
-
-Faraji finds themself in the midst of a hostile confrontation. On one side are the same [group of lizard people] they banished from Enigma Park; on the other, a lone bedraggled man, clutching a root vegetable and wearing a very nice watch. Despite their superior numbers, the lizard people seem to be wary of their opponent. Presumably, the bedraggled man is the [Daniels] that Faraji was sent to find.
-	
-The lizard people turn to Faraji. 'You!' one of them hisses. 'You thought you could banish us, but we have returned to snatch your victory from the jaws of our defeat... or something or other. And now we are on the threshold of our greatest triumph! Soon the Dragon will be ours!'
-
-Presumably-Daniels speaks up.  'Seriously guys, you're always so over-dramatic. Besides, I've got you right where I want you. Just watch.' He shakes his potato at the lizard people. As he does, you notice his right arm looks injured.
-";
+Before looking when the location is the old root cellar and the old root cellar is unvisited:
 	say line break;
 	if SCREEN_READER is false:
 		say boss battle banner;
 		say paragraph break;
 	otherwise:
-		say line break;
-		say "[bold type]Faraji health [faraji health] hearts. Lizard people health [lizard people health] hearts.[roman type]";
+		say "[bold type]The boss battle begins! Faraji health [faraji health] hearts. Lizard people health [lizard people health] hearts.[roman type]";
+		say paragraph break;
 	now the old root cellar is visited;
 
 To say boss battle banner:
+	say "[bold type][bracket]The boss battle begins! Look to the top of the screen for your current health.[close bracket][roman type][line break]";
+
+[ To say boss battle banner:
 	say "[fixed letter spacing]";
 	say "
 /\      __    ____  ____  __ __    __  ______  __  /\[line break]
@@ -2045,13 +2057,15 @@ To say boss battle banner:
 /\                                                 /\[line break]"; 
 	say "[variable letter spacing]".
 
-Understand "cellar/cave/chamber" as the old root cellar.
+Understand "cellar/cave/chamber" as the old root cellar. ]
 
 
-Daniels is a man in the old root cellar. 
+Daniels is a man in the old root cellar. "Daniels looks much the worse for wear. He's dressed in a tattered suit, and his hair is unkempt[if Daniels carries the wristwatch]. He's wearing a very nice watch[end if]. He looks tired."
 [ "[one of]A tired-looking man sits on the floor of the cellar. He looks up as Faraji appears. 'Ah, you must be the help I was promised,' he says. 'I'm Daniels. Agent of the hyperspace field office of the Bureau of Strange Happenings and owner of the A+ Laundromat in Swamp Park, Maryland. I'm dead tired, and ready to get out of here.'[or]Daniels, ragged and dirty, sits on the floor of the cellar. He looks tired.[stopping]". ]
-The description is "Daniels looks weary. He's dressed in a tattered suit, and his hair is unkempt."
+The description is "Daniels looks weary. He's dressed in a tattered suit, and his hair is unkempt[if Daniels carries the wristwatch]. He's wearing a very nice watch[end if]."
 Understand "man/agent" as Daniels. 
+
+The tattered suit is worn by Daniels. The description is "A tattered suit, with a few holes and stains. It looks like it hasn't been washed in a while.".
 
 Rule for deciding the concealed possessions of Daniels:
 	no;
@@ -2074,9 +2088,10 @@ Instead of eating a root-vegetable:
 Instead of giving something to Daniels when the group of lizard people is in the old root cellar:
 	say "Daniels is too far away for that.";
 
-The red woven basket is a closed openable scenery container in the old root cellar. "The basket is woven from reeds[if the red woven basket is open]. It's open and filled with potatoes[otherwise]. It's closed[end if]."
-The blue woven basket is a closed openable scenery container in the old root cellar. "The basket is woven from reeds[if the blue woven basket is open]. It's open and filled with turnips[otherwise]. It's closed[end if]."
+The red woven basket is a closed openable scenery container in the old root cellar. "The basket is woven from reeds[if the red woven basket is open]. It's open and filled with potatoes[otherwise]. It's closed[end if]." Understand "baskets" as the red woven basket.
+The blue woven basket is a closed openable scenery container in the old root cellar. "The basket is woven from reeds[if the blue woven basket is open]. It's open and filled with turnips[otherwise]. It's closed[end if]." Understand "baskets" as the blue woven basket.
 The green woven basket is a closed openable scenery container in the old root cellar. "The basket is woven from reeds[if the green woven basket is open]. It's open[otherwise]. It's closed[end if]."
+Understand "baskets" as the green woven basket.
 
 [ Instead of opening the red woven basket:
 	now the red woven basket is open;
@@ -2106,10 +2121,10 @@ Instead of requesting Daniels for the rutabaga when the lizard people are in the
 Instead of doing something to the green woven basket when the action requires a touchable noun and the lizard people are in the old root cellar:
 	say "The basket is too far away for that.";
 
-Instead taking a potato when the number of entries in the list of potatoes carried by the player > 6:
+Instead of taking a potato when the number of entries in the list of potatoes carried by the player > 6:
 		say "Faraji can't possibly carry that many potatoes.";
 
-Instead taking a turnip when the number of entries in the list of turnips carried by the player > 6:
+Instead of taking a turnip when the number of entries in the list of turnips carried by the player > 6:
 		say "Faraji can't possibly carry that many turnips.";
 
 The root vegetables are scenery in the old root cellar. "Looks like the vegetables are well-preserved."
@@ -2258,7 +2273,7 @@ Every turn when the location is the old root cellar and the group of lizard peop
 						otherwise:
 							now T is out-of-reach;
 				otherwise:
-					say "The lizard people screech, and Faraji feels a wave of energy wash over them. They feel a little weaker.";
+					say "The lizard people screech, and Faraji feels a wave of energy wash over them. Faraji feels a little weaker.";
 					hit faraji;
 					now notable lizard event this turn is true;
 			otherwise:
@@ -2386,7 +2401,7 @@ After waiting when the group of lizard people is in the location and the locatio
 			otherwise:
 				if Faraji carries a root-vegetable that is not a rutabaga:
 					let RV be a random root-vegetable that is not a rutabaga carried by Faraji;
-					say "The lizard people rush Faraji all at once, causing them to drop [the RV] they are carrying. The lizard people grab it and retreat.";
+					say "The lizard people rush Faraji all at once, causing Faraji to drop [the RV] they are carrying. The lizard people grab it and retreat.";
 					now the group of lizard people carry the RV;
 					now notable lizard event this turn is true;
 				otherwise:
@@ -2430,13 +2445,13 @@ permanents is a list of things that varies.
 
 To collect our stuff:
 	repeat with item running through things enclosed by the old root cellar:
-		if the item is not listed in permanents and the item is not a root-vegetable and the item is not enclosed by the player and the item is not scenery and item is not Faraji:
+		if the item is not listed in permanents and the item is not a root-vegetable and the item is not enclosed by the player and the item is not scenery and item is not Faraji and the item is not enclosed by Daniels:
 			now the player carries the item;
 
 To collect our stuff loudly:
 	let flag be false;
 	repeat with item running through things enclosed by the old root cellar:
-		if the item is not listed in permanents and the item is not a root-vegetable and the item is not enclosed by the player and the item is not scenery and item is not Faraji:
+		if the item is not listed in permanents and the item is not a root-vegetable and the item is not enclosed by the player and the item is not scenery and item is not Faraji and the item is not enclosed by Daniels:
 			now the player carries the item;
 			now flag is true;
 	if flag is true:
@@ -2484,7 +2499,7 @@ Instead of throwing a root-vegetable at the lizard people:
 	otherwise:
 		now the noun is in the old root cellar;
 		now the noun is out-of-reach;
-		say "Faraji [one of]throws[or]hurls[or]flings[or]launches[or]fires[or]slings[at random] [the noun] at the lizard people, who in their anger at Daniels are oblivious to Faraji's action. ";
+		say "Faraji [one of]throws[or]hurls[or]flings[or]launches[or]fires[or]slings[at random] [the noun] at the lizard people, who are looking the other way. They don't see it coming. ";
 		if a random number from 1 to 5 is:
 			-- 1:
 				say "[The noun] strikes the leader in the head. It hisses in pain and surprise.";
@@ -2565,6 +2580,11 @@ Persuasion rule for asking Daniels to try opening the green basket:
 	now notable Daniels event this turn is true;
 	persuasion succeeds;
 
+Persuasion rule for asking Daniels to try examining the green basket:
+	now Faraji distracted this turn is true;
+	now notable Daniels event this turn is true;
+	persuasion succeeds;
+
 Persuasion rule for asking Daniels to try opening the blue basket:
 	now Faraji distracted this turn is true;
 	now notable Daniels event this turn is true;
@@ -2640,6 +2660,14 @@ Instead of Daniels opening the green woven basket when the group of lizard peopl
 	now the green woven basket is open;
 	rule succeeds;
 
+Instead of Daniels examining the green woven basket when the group of lizard people is in the location:
+	if the green woven basket is open and the rutabaga is in the green woven basket:
+		say "Daniels looks in the green woven basket. 'It's like I said, there's a rutabaga in here,' he shouts.";
+	otherwise if the green woven basket is open:
+		say "Daniels shouts, 'It's a pretty plain green woven basket. There's nothing in here.'";
+	otherwise:
+		say "Daniels looks at the green woven basket. 'It's a pretty plain green woven basket. I can't see inside it.'";
+
 Instead of Daniels throwing a root-vegetable at Faraji when the group of lizard people is in the location:
 	say "Daniels throws [the noun] at Faraji. It's a weak throw, and [the noun] merely rolls past the lizard people. It is now within Faraji's reach.";
 	now the noun is in the old root cellar;
@@ -2653,6 +2681,21 @@ Instead of Daniels throwing a root-vegetable to Faraji when the group of lizard 
 	rule succeeds;
 
 basket-asking it to is an action applying to two things. Understand "ask [something] to open [something]", "tell [something] to open [something]", "ask [something] to look in [something]", "tell [something] to look in [something]" as basket-asking it to when the location is the old root cellar and the group of lizard people is in the location.
+
+basket-examining-asking it to is an action applying to two things. Understand "ask [something] to examine [something]", "tell [something] to examine [something]", "ask [something] to look at [something]", "tell [something] to look at [something]" as basket-examining-asking it to when the location is the old root cellar and the group of lizard people is in the location.
+
+Instead of basket-examining-asking something to something when the group of lizard people is in the location:
+	if the noun is Daniels and the second noun is the green woven basket:
+		try Daniels examining the green woven basket;
+	otherwise if the noun is Daniels:
+		if the second noun is the red woven basket or the second noun is the blue woven basket:
+			say "Daniels looks at Faraji and shrugs. 'I can't reach it!' he shouts.";
+		otherwise:
+			say "Daniels looks at Faraji and shrugs. 'I can't examine that!' he shouts.";
+	otherwise if the noun is the group of lizard people:
+		say "The lizard people merely hiss mockingly at Faraji, if indeed one can hiss mockingly.";
+	otherwise:
+		say "[The noun] doesn't seem inclined to do that.";
 
 Instead of basket-asking something to something when the group of lizard people is in the location:
 	if the noun is Daniels and the second noun is the green woven basket:
@@ -2719,7 +2762,7 @@ To interject Lizard:
 		choose the row with a used of false in the Table of Lizard Interjections;
 		say "[Lizard interjection entry][line break]";
 		now used entry is true;
-		increase Lizard interjection timer by a random number from 2 to 4;
+		increase Lizard interjection timer by a random number from 1 to 3;
 
 Table of Lizard Interjections
 Lizard interjection	used (a truth state)
@@ -2730,6 +2773,22 @@ Lizard interjection	used (a truth state)
 "One of the lizard people says, 'Even if you defeat us now, Faraji, victory will be ours eventually!'"	false
 "The short lizard person says, 'Even now, Faraji, our spies are inside BOSH, siphoning off your petty cash fund.' The stout lizard person elbows him in the ribs and hisses, 'Shut up!'"	false
 "The tallest lizard person says, 'You cannot defeat us, Faraji!'"	false
+"The stout lizard person says, 'How long do you think you can keep this up, Faraji? I imagine you can keep it up for quite a while longer, but I mean, eventually, you will have to stop.'"	false
+"The leader of the lizard people says, 'Do you think we are fools, Faraji?'
+
+'Yes!' retorts Faraji.
+
+'That was a rhetorical question!' the lizard person says. 'I was not asking you to answer it.'"	false
+"'We are not afraid of these stupid root vegetables, Faraji!' the stout lizard person says. 'Well, for the most part, anyway.'"	false
+"'I detect a definite anti-reptilian bias in your actions, Faraji,' the short lizard person says."	false
+"'How many BOSH agents does it take to screw in a light bulb?' the stout lizard person asks. 'A lot, apparently!'"	false
+"'What does BOSH stand for anyway?' the tall lizard person asks. 'Big Ol' Stupid Humans?'"	false
+"'Humans are so stupid,' the short lizard person says. 'They're afraid to switch to LED light bulbs!'"	false
+"'We are not so unlike you, Faraji,' the stout lizard person says. 'We even like your human music! Like Madonna. And Neil Diamond!'"	false
+"'Even if you defeat us, Faraji, do you think you will find peace and happiness?' the tall lizard person asks. 'Do you think you will find love in this world of misery? Do you think you will find a job that pays well and has good benefits once BOSH is shut down?'"	false
+"'Who is the aggressor here, Faraji?' the stout lizard person asks. 'Can't a simple lizard person just go for a walk in the foureenth century without having potatoes thrown at them?'"	false
+"'Haha! Both Doris and Klimp are playing you for a fool, Faraji!' the short lizard person says. 'You are a pawn in their game!'"	false
+"'As the Bard once said, 'Sticks and stones may break my bones, but root vegetables will never hurt me!' the tall lizard person says."	false
 
 Last every turn:
 	if the location is the old root cellar and the group of lizard people is in the old root cellar:
@@ -2774,7 +2833,7 @@ where-we-are is a questioning quip.
 	The printed name is "where we are".
 	Understand "where are we", "where we are", "where"  as where-we-are.
 	The comment is "Faraji asks, 'Where are we?'". 
-	The reply is "'We're in an old Onondaga root cellar in upstate New York. Well not so old yet, I guess. I've managed to make friends with the locals well enough, so they let me sleep in here.'".
+	The reply is "'We're in an old Onondaga root cellar in upstate New York. Well not so old yet, I guess, considering it's the fourteenth century. I've managed to make friends with the locals well enough, so they let me sleep in here.'".
 	It quip-supplies Daniels.
 
 who-the-dragon-is is a questioning quip.
@@ -2782,7 +2841,7 @@ who-the-dragon-is is a questioning quip.
 	The printed name is "who the Dragon is". 
 	Understand "who/the/Dragon/is" as who-the-dragon-is.
 	The comment is "Faraji asks, 'Who is the Dragon?'".
-	The reply is "'The Dragon is the last, best hope for humanity and lizard people alike. He is the one who will bring peace between our two peoples. I was sent back in time by Savra's minions when I discovered their secret plan to kill him.'".
+	The reply is "'The Dragon is the last, best hope for humanity and lizard people alike. He is the one who will bring peace between our two peoples. I was sent back in time by Savra's minions when I discovered their secret plan to kill the Dragon.'".
 	It quip-supplies Daniels.
 
 what-is-the-secret-plan is a questioning quip.
@@ -2790,7 +2849,7 @@ what-is-the-secret-plan is a questioning quip.
 	The printed name is "what the secret plan is". 
 	Understand "what/the/secret/plan/is" as what-is-the-secret-plan.
 	The comment is "Faraji asks, 'What is the secret plan?'".
-	The reply is "'I could tell you, but it's best if that came from Doris.'".
+	The reply is "'I can't tell you that,' Daniels says. 'Only Doris can make that decision. But I can tell you it's really really bad."
 	It follows who-the-dragon-is.
 	It quip-supplies Daniels.
 
@@ -2827,7 +2886,7 @@ Instead of pushing the recall button when the player is in the old root cellar a
 	if the player does not carry the wristwatch:
 		say "Faraji is just about to push the recall button when Daniels exclaims, 'Wait! I forgot to give you this.' He pushes a small metal object into Faraji's hand. 
 		
-		Faraji doesn't have time to look at object before their finger slips and pushes the button. The room spins and fades away, and Faraji finds themself back in Swamp Park.";
+		Faraji doesn't have time to look at the object before their finger slips and pushes the button. The room spins and fades away, and Faraji finds themself back in Swamp Park.";
 	otherwise:
 		say "Faraji pushes the recall button. The room spins and fades away, and Faraji finds themself back in Swamp Park.";
 	now the player carries the wristwatch;
@@ -3001,6 +3060,8 @@ The incantations is a list of texts that varies.
 The incantations are { "bara ba jagal", "fooblitzky", "tuvix", "thelonium", "gravlax", "brobdingnag", "plover", "xvart", "guncho", "flibbertigibbet" }.
 
 To decide what text is the strange incantation:
+	if DEBUG is true:
+		decide on "xvart";
 	sort the first name parts in random order;
 	sort the second name parts in random order;
 	if a random chance of 1 in 2 succeeds:
@@ -3018,8 +3079,11 @@ Instead of consulting the book of weird names about something:
 	otherwise if the topic understood in lower case is not the secret name of the doll-fly in lower case:
 		say "[We] [look] up '[the topic understood]' in the book, but [find] nothing. Perhaps [we] [are] spelling it wrong.";
 	otherwise:
-		sort the incantations in random order;
-		now the incantation of the doll-fly is entry 1 of the incantations;
+		if DEBUG is true:
+			now the incantation of the doll-fly is "xvart";
+		otherwise:
+			sort the incantations in random order;
+			now the incantation of the doll-fly is entry 1 of the incantations;
 		now doll-fly-looked-up is true;
 		say "[We] [look] up [italic type][secret name of the doll-fly][roman type] in the book. Below a drawing of a doll with the head of a fly, the word [italic type][incantation of the doll-fly][roman type] is written.";
 
@@ -4777,7 +4841,7 @@ To say lizard people appearance:
 		if lizard countdown is 1:
 			say "[line break]They notice Faraji and stop talking. One of them steps forward and says in a guttural hiss, [one of]'So it is one of Doris's friends. We have been expecting you. You will not hinder us[or]'Surface vermin! You will not stop us[or]'No one will be allowed to interfere with our plans. Begone[or]'Silly human. You will fail[or]'You are too late to stop us. We will have the Dragon[at random]!'[run paragraph on]";
 	otherwise:
-		say "Three humanoid figures are here, each with a long, scaly tail and a head that looks like a lizard's. They are dressed in smart grey suits. They seem highly agitated.[run paragraph on]";
+		say "The lizard people are dressed in smart grey suits and seem highly agitated.[run paragraph on]";
 
 Understand "lizards/lizardmen/men/retiles/reptile/reptoid/figures/figure" as the group of lizard people.
 The description is "There are three of them, each one seemingly a reptilian humanoid. They are dressed in grey suits with matching ties. They are obviously of intelligence comparable to humans. They are hissing loudly in what seems to be intelligent communication[describe stance]."
@@ -5039,6 +5103,11 @@ blue woven basket	group of lizard people	"'What's with the woven basket?' asks F
 green woven basket	group of lizard people	"'What's with the woven basket?' asks Faraji."	"'What?' hisses the lizard person. 'We have no interest in woven baskets.'"
 root vegetables	group of lizard people	"'What's with the root vegetables?' asks Faraji."	"'Root vegetables?' hisses the lizard person. 'We have no interest in root vegetables. Least of all rutabagas.'"
 plans-subject	group of lizard people	"'What are your plans?' asks Faraji."	"'Our plans are our own,' hisses the lizard person. 'You will not stop us. But, actually, I've gotta say something about something that really bugs me. I mean, it's not like I'm going to tell you anything, but I just have to get this off my chest. You know how it is. It's like, 'Why do they always have to make the lizard people the bad guys?' I mean, come on! We're just trying to live our lives here. And then you humans come along and start asking all these questions. It's like, 'Can't a lizard person catch a break?' But no, you just keep poking and prodding and asking all these questions. It's really frustrating, you know? Anyway, I'm not going to tell you anything. But I just had to get that off my chest.'"
+potato-subject	Daniels	"'What's with the potato?' asks Faraji."	"'The potato is a powerful weapon in the right hands,' says Daniels."
+lizard-people-subject		Daniels	"'Who are the lizard people?' asks Faraji."	"'They are our enemies,' shouts Daniels. 'Now help me! I can't hold them off much longer!'"
+turnip-subject	Daniels	"'What's with the turnip?' asks Faraji."	"'The turnip is almost as powerful as the potato,' says Daniels."
+rutabaga-subject	Daniels	"'What's with the rutabaga?' asks Faraji."	"'The rutabaga is the most powerful weapon of all,' says Daniels. 'It is the key to defeating the lizard people.'"
+Dragon-subject	Daniels	"'What do you know about the Dragon?' asks Faraji."	"'Whoa, that's a really serious topic,' says Daniels. 'Let's wait until we're not being attacked by lizard people to talk about that.'"
 
 Instead of pushing the recall button when the group of lizard people is in the location:
 	say "It doesn't do anything. The lizard people hiss in amusement.";

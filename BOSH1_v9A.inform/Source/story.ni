@@ -540,15 +540,13 @@ Klimp in-the-office is a scene. Klimp in-the-office begins when Chief Huffton Kl
 Moira in-the-office is a scene. Moira in-the-office begins when Moira Zin is in Moira's office.
 
 Denouement is a scene. Denouement begins when the location is inside-the-dumpster.
+When denouement begins:
+	now the copy of the Washington Herald is in the strip mall parking lot south;
+
 Before going from the front office to the strip mall parking lot south during denouement:
 	if the copy of the Washington Herald is not handled:
 		say "Faraji trips over a newspaper left up against the door.";
-		now the copy of the Washington Herald is in the Strip Mall Parking Lot South;
 
-Before going from the strip mall parking lot south to the front office during denouement:
-	if the copy of the Washington Herald is not handled:
-		say "Faraji trips over a newspaper left up against the door.";
-		now the copy of the Washington Herald is in the front office;
 	
 
 Book 9 - Concepts
@@ -897,7 +895,7 @@ The blue flip phone is a phone. It is in biff's desk's drawer.
 The description of the blue flip phone is "It's a cheap blue flip phone, purchased by the Bureau as some kind of cost-saving measure. It's not even a smartphone. It's not even a good flip phone. It's not even a good bad flip phone. It's just a bad flip phone."
 
 After taking apart the desk:
-	say "Faraji unscrews the hex screws and removes the drawer. Inside, they find a little grey key and a blue flip phone. They put the drawer back together, taking the phone and the key.
+	say "Faraji unscrews the hex screws and removes the drawer. Inside, they find a little grey key and a blue flip phone. They put the desk back together, taking the phone and the key.
 	
 	They answer the phone.[paragraph break]";
 	say "'Hello?'
@@ -1086,9 +1084,9 @@ The laundromat back door is a door. It is north of back lot and south of the lau
 Before opening the laundromat back door when the laundromat back door is locked:
 	now player knows laundromat-back-door-is-locked;
 
-The description of the back lot is "This is a small area of asphalt between the building and a chain link fence looking in on an industrial property. A door to east leads into the BOSH offices, and one to the north enters the laundromat. There is a blue dumpster here."
+The description of the back lot is "This is a small area of asphalt between the building and a chain link fence looking in on an industrial property. A door to the east leads into the BOSH offices, and one to the north enters the laundromat. There is a blue dumpster here."
 
-The industrial property is scenery in the back lot. "The chain link fence looks in on a small industrial property. There's a bunch industrial-type stuff in there, but nothing interesting."
+The industrial property is scenery in the back lot. "The chain link fence looks in on a small industrial property. There's a bunch of industrial-type stuff in there, but nothing interesting."
 It is obstructed.
 
 The chain link fence is scenery in the back lot. "An ordinary chain link fence, about eight	feet high."
@@ -1198,7 +1196,7 @@ Understand "climb out" as exiting.
 
 Some trash is scenery in inside-the-dumpster. The description is "It's a bunch of trash. It's smelly and gross." 
 
-Some trash-boxes are scenery in inside-the-dumpster. They are privately-named. The description is "A bunch of cardboard boxes, flattened and stacked." Understand "cardboard/boxes" as trash-boxes. The printed name is "cardboard boxes". They are plural-named. 
+Some trash-boxes are scenery in inside-the-dumpster. They are privately-named. The description is "A bunch of flattened boxes." Understand "cardboard/boxes" as trash-boxes. The printed name is "cardboard boxes". They are plural-named. 
  
 Section 3 - 
 
@@ -1277,7 +1275,7 @@ The snarky remark of the Bureau photos is "Klimp, Ezra, Petula, and I used to go
 
 Margaret Chao is in front office.  
 
-There is a copy of the Washington Herald. The description is "The front page story is an account of the disappearance of the grandson of Senate Homeland Security Committee chairman Englund Fryes. His parents, including the Senator's son, were brutally murdered in their home, but the boy, Draco Fryes, is missing and presumed kidnapped. So far there has been no ransom demand.". 
+There is a copy of the Washington Herald. The description is "The front page story is an account of the brutal killing of the son of Senate Homeland Security Committee chairman Englund Fryes. The son and his wife were found murdered in their Marshland, Virginia home. Their son, Draco Fryes, is missing and presumed kidnapped. So far there has been no ransom demand."
 Understand "newspaper", "paper", "news" as the Washington Herald.
 The printed name is "copy of the [italic type]Washington Herald[roman type]".
 It is unsnarkable.
@@ -1386,6 +1384,12 @@ The can't reach inside closed containers rule response (A) is "[if the noun is t
 Instead of unlocking the heating vent with the red screwdriver when the hex wrench is in the heating vent:
 	now the player carries the hex wrench;
 	say "Faraji unscrews the four screws and removes the vent cover. They take the hex wrench from inside and put the cover back on.";
+
+Understand "unscrew [something]" as unscrewing it with.
+
+Rule for supplying a missing second noun while unscrewing:
+	if the location is the front office and the player encloses the red screwdriver and the noun is the heating vent:
+		now the second noun is the red screwdriver;
 
 Instead of unscrewing the heating vent with the red screwdriver when the hex wrench is in the heating vent:
 	try unlocking the heating vent with the red screwdriver;
@@ -2808,9 +2812,9 @@ Book 21 - Not For Release
  
 [ Include BOSH Tests by Philip Riley. ]
 
-DEBUG is false.
+DEBUG is true.
 
-SKIP_PROLOGUE is false;
+SKIP_PROLOGUE is true;
 
 AUDIT is a truth state that varies.
 AUDIT is false.
@@ -2906,12 +2910,10 @@ test win with "w/w/s/open desk/n/e/ask about key/ask about computer/look behind 
 
 test no-drive with "w/w/s/open desk/n/e/ask about key/ask about computer/look behind desk/w/s/x desk/open white door/n/e/ask about wrench/ask about backdoor/take boxes/w/s/z/w/z/z/open white door/knock on white door/e/z/n/e/x vent/ask for a screwdriver/n/e/n/e/ask for screwdriver/w/s/sw/ask for a screwdriver/ask about the owner/ne/w/w/w/x lenses/ask to borrow pair/wear them/e/e/take boxes/w/s/w/back/n/f/d/n/s/turn off light/wear glasses/f/fn/push truck bs/push truck back/move crates/move crates with truck/x washing machine/open it/enter it/f/f/f/f/f/fn/fw/fn/fn/fw/w/fn/w/take compass/x compass/s/s/s/s/s/s/s/e/e/e/e/e/e/e/e/b/b/b/b/b/b/b/b/b/d/w/w".
 
-test part1 with "w/look behind desk/x computer/x vent/e/sw/ask for screwdriver/ask about owner/ne/w/w/w/x lenses/ask to borrow the lenses/e/s/w/w/w/w/w/w/w/w/w/w/wear lenses/b/n/f/open desk/take key/w/e/unlock door with key/w/d/s/turn off light/wear lens/f/fn/push truck bs/push truck b/move crates with truck/open machine/enter washing".
+test part1 with "random/w/look behind desk/x computer/x vent/e/sw/ask for screwdriver/ask about owner/ne/w/w/w/x lenses/ask to borrow the lenses/e/s/w/w/w/w/w/w/w/w/w/w/wear lenses/b/n/f/open desk/take key/w/e/unlock door with key/w/d/s/turn off light/wear lens/f/fn/push truck bs/push truck b/move crates with truck/open machine/enter washing".
 
 
-test part2 with "f/f/f/f/f/fn/fw/fn/fn/fw/w/fn/w/take compass/x 
-it/s/s/s/s/s/s/s/e/e/e/e/e/e/e/e/b/b/b/b/b/b/b/b/b/d".
-
+test part2 with "fn/fn/fn/fn/f/fn/f/fn/f/fn/f/take compass/s/s/s/s/s/s/s/s/s/s/e/e/e/e/b/b/b/b/b/b/b/b/b/d".
 test part3 with "w/w/show drive/hand drive/ask about dragon/ask 
 about mission/ask how to get home/e/e/ask how to get 
 home/w/b/enter/wear lenses/knock on door/x shelf/borrow/tribes/s/e/e/wear 
@@ -2921,14 +2923,15 @@ doris/ask how i will find him/ready/e/f/enter".
 
 test 3parts with "test part1/test part2/test part3"
 
-test part4 with "banish/x desk/open pack/take key/s/w/sw/take/ne/w/read brown book/e/n/n/n/w/w/take hammer/ask who he is/ask why still here/ask how he can help/ask about secret/ask for help/e/read compass/press button/e/f/type 1 into 
-keypad/b/n/ask for coffee/s/f/enter portal/w/give coffee to hutz/ask if can now help them/e/e/e/se/x floor/unlock cabinet with iron key/n/nw/e/s/w/w/se/s/s/w/d/take/swing hammer at wall/n/e/e/wear lenses/f/bn/u/take key/look up thompson in record 
-book/d/open locker 1 with red key/u/unlock door with green key/w/w/n/w/w/unlock door with copper key/w/take rod/s/take book/fs/be/take all/press blue button/e/n/w/u/open wardrobe/take frame/d/w/take shovel/put ladder in hole/d/dig/open case/read 
-witnessing/u/take ladder/e/e/e/e/e/look up pezzex the unpalatable in weird book/say xvart/read book of utilitarianism/w/w/w/nw/w/w/nw/say teleology/take/press button/e/b/enter portal/out/s/e/e/open hood/take battery/press button/e/f/enter 
-portal/se/e/e/e/plug cord into outlet/u/put lenses in frame/put spotlight into frame/put fork into frame/plug shiny resonator into cord/plug makeshift into cord/take telescope/put makeshift into tripod/d/e/push tapestry/flip switch/w/u/x 
-obelisk/d/w/d/s/s/se/u/d/nw/n/n/n/take cutters/open truck/enter it/open glove/take key/w/out/s/s/s/se/u/cut lock with cutters/open cabinet/flip switch/put shiny resonator on platform/i/x obelisk/d/nw/n/n/n/w/se/unlock cabinet with iron key/open it/take 
-resonator/x floor/open door/open trapdoor/d/s/n/u/nw/w/s/s/s/s/unlock door with brass key/s/tie battery to wires/u/screw rusty resonator/put rusty into socket/d/n/n/n/e/n/e/w/se/d/s/enter portal/ask how he got here/ask where we are/ask what's 
-next/press button/i/get out/e/n/e/e/sw/give watch to dave/i/nw/ne/x hood/x hyundai/n/e/buy screwdriver/w/s/w/look behind desk/open vent with screwdriver/w/s/open desk with hex wrench/x desk/i/open drawer".
+test part4 with "cheat banish/x desk/open pack/take key/s/s/take lamp/n/w/sw/take/ne/w/read brown book/e/n/n/n/w/w/take hammer/ask who he is/ask why still here/ask how he can help/ask about secret/ask for help/e/read compass/press button/e/f/type 1 into 
+keypad/b/n/ask for coffee/s/f/enter portal/w/give coffee to hutz/ask if can now help them/e/e/e/se/x floor/unlock cabinet with iron key/open cabinet/take rusty resonator/take bulb/n/nw/e/s/w/w/se/s/s/w/d/take all/swing hammer at wall/n/e/e/n/u/take key/look up thompson in record 
+book/d/open locker 1 with red key/u/unlock door with green key/w/w/n/w/w/unlock door with copper key/w/take rod/s/take book/wear lenses/fs/be/take all/press blue button/e/n/w/u/open wardrobe/take witnessing/d/w/take shovel/put ladder in hole/d/dig/u/take ladder/e/e/e/e/e/look up Hathgar the pitiful in weird book/say xvart/plug cord into outlet/plug table lamp into cord/put bulb in lamp/e/push tapestry/flip switch/w/turn on lamp/d/x altar/remove lenses/read book of utilitarianism".
+
+test part5 with "u/put lamp in frame/take rod of hezekiah/put lenses in frame/put fork in frame/tap frame with rod/plug makeshift resonator into cord/u/take telescope/mount makeshift resonator on tripod/d/w/n/enter truck/open glove compartment/take key/out/take cutters/s/s/s/se/u/cut lock with cutters/flip switch/mount shiny resonator on tower/press button/e/b/enter portal/out/s/e/e/open hyundai hood/take battery/press recall/e/f/enter portal/se/s/s/s/attach wires to battery/u/mount rusty resonator on aerial".
+
+test 6parts with "test part1/test part2/test part3/test part4/test part5/test part6".
+
+test part6 with "d/n/n/n/e/d/enter portal/take potato/daniels, open green basket/daniels, throw rutabaga/take rutabaga/z/dodge/throw rutabaga/ask where we are/ask what's next/press button/out/n/e/se/read herald/sw/give watch to dave/ne/n/e/buy screwdriver with card/w/s/w/open vent/w/s/take desk apart".
 
 test part with "w/look behind desk/x computer/x vent/ask for screwdriver/e/sw/ask for a screwdriver/ask about owner/ne/w/w/w/ask for a screwdriver/x lenses/borrow lenses/e/s/z/z/z/z/z/z/z/z/z/z/z/z/z/z/z/w/wear lenses/b/n/f/d/s/turn off lights/wear lenses/f/fn/push truck bs/push it b/move boxes with truck/open drum/enter drum/f/f/f/f/f/fn/fw/fn/fn/fw/w/fn/w/take all/i/x pillar/drop it/l/x pillar/s/s/s/s/s/s/s/e/e/e/e/e/e/e/e/b/b/b/b/b/b/b/b/b/d/w/w/show him thumb/give drive/ask about savra/no/ask what isa lizard/ask about mission/ask how to get home/ask about time travel/e/e/ask how to get home/w/b/enter portal/wear lenses/knock on door/out/x books/borrow book/tribes/s/s/z/w/wear lenses/b/n/f/d/s/enter machine/d/w/w/give tribes to doris/e/s/give note to christy/n/n/ask for coffee/s/s/give coffee to christy/n/n/w/give note to doris/how will i find him/ready/e/f/enter/enter portal/s/s/take all/n/w/sw/take/ne/w/take book/read it/d/take/u/e/n/n/n/w/w/take hammer/e/se/e/s/look behind desk/open pack/take key/s/w/w/d/hit walls with hammer/n/e/e/open door/n/open locker/open locker/u/take all/look up thompson in book/d/open locker 34/u/w/w/w/n/w/w/w/take/s/x table/take book/read it/look up asdf the asdfa in the book of weird/wear lenses".
 

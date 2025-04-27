@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform_old.app/Contents/Resource
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 40865 words long.
+I've now read your source text, which is 40887 words long.
 
 
 -----------------------------------------------------
@@ -60,7 +60,7 @@ I've also read Hyperspace by Philip Riley, which is 17909 words long.
 I've also read BOSH Facts by Philip Riley, which is 193 words long.
 I've also read Swamp Park by Philip Riley, which is 9018 words long.
 I've also read Margaret by Philip Riley, which is 2679 words long.
-I've also read Enigma Lake by Philip Riley, which is 46828 words long.
+I've also read Enigma Lake by Philip Riley, which is 47668 words long.
 I've also read I Can Dig It by Philip Riley, which is 77 words long.
 I've also read BOSH Help by Philip Riley, which is 6960 words long.
 I've also read Overlook by Philip Riley, which is 763 words long.
@@ -155,7 +155,7 @@ Regional: CONSTANT_VNT'elr'-region(I565_elr)(I455'elr')
  == region
 Regional: CONSTANT_VNT'elr'-region(I565_elr)(I455'elr')
  == region
-Regional: CONSTANT_VNT'help area'-region(I890_help_area)(I774'help area')
+Regional: CONSTANT_VNT'help area'-region(I891_help_area)(I775'help area')
  == region
 Regional: CONSTANT_VNT'elr'-region(I565_elr)(I455'elr')
  == region
@@ -165,7 +165,7 @@ Regional: CONSTANT_VNT'elr'-region(I565_elr)(I455'elr')
  == region
 Regional: CONSTANT_VNT'elr'-region(I565_elr)(I455'elr')
  == region
-Regional: CONSTANT_VNT'help area'-region(I890_help_area)(I774'help area')
+Regional: CONSTANT_VNT'help area'-region(I891_help_area)(I775'help area')
  == region
 
 
@@ -345,9 +345,9 @@ Regional: CONSTANT_VNT'elr'-region(I565_elr)(I455'elr')
              == region
             Regional: CONSTANT_VNT'elr'-region(I565_elr)(I455'elr')
              == region
-            Regional: CONSTANT_VNT'help area'-region(I890_help_area)(I774'help area')
+            Regional: CONSTANT_VNT'help area'-region(I891_help_area)(I775'help area')
              == region
-            Regional: CONSTANT_VNT'help area'-region(I890_help_area)(I774'help area')
+            Regional: CONSTANT_VNT'help area'-region(I891_help_area)(I775'help area')
              == region
 
 
@@ -388,8 +388,8 @@ Providing for a total heap of 65536, given requirement of 46352
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 321 files written as streams.
-CPU time: 553 centiseconds
+Total of 322 files written as streams.
+CPU time: 554 centiseconds
 
 
 That concludes the debugging log from this run of Inform.
